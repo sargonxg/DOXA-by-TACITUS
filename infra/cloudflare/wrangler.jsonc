@@ -1,0 +1,28 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "doxa-by-tacitus",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-16",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {"directory": "../../frontend/dist", "binding": "ASSETS", "not_found_handling": "single-page-application", "run_worker_first": true},
+  "observability": {"enabled": true, "head_sampling_rate": 0.1, "traces": {"enabled": true, "head_sampling_rate": 0.1}},
+  "vars": {
+    "DOXA_PUBLIC_ORIGIN": "https://REPLACE_WITH_YOUR_WORKER.workers.dev",
+    "CF_ACCESS_TEAM_DOMAIN": "REPLACE_WITH_YOUR_TEAM.cloudflareaccess.com",
+    "CF_ACCESS_AUD": "REPLACE_WITH_YOUR_ACCESS_APPLICATION_AUDIENCE",
+    "DOXA_CLOUD_SINGLE_WORKSPACE": "true"
+  },
+  "secrets": {"required": ["DOXA_SERVICE_TOKEN"]},
+  "ai": {"binding": "AI"},
+  "d1_databases": [{"binding": "DB", "database_name": "doxa", "database_id": "00000000-0000-0000-0000-000000000000", "migrations_dir": "migrations"}],
+  "r2_buckets": [{"binding": "OBJECTS", "bucket_name": "doxa-private"}],
+  "queues": {
+    "producers": [{"binding": "WORK_QUEUE", "queue": "doxa-work"}],
+    "consumers": [{"queue": "doxa-work", "max_batch_size": 1, "max_batch_timeout": 1, "max_retries": 5, "max_concurrency": 1, "dead_letter_queue": "doxa-work-dead"}]
+  },
+  "triggers": {"crons": ["*/5 * * * *"]},
+  "containers": [{"class_name": "PythonContainer", "scheduling_policy": "durable_object", "images": {"base": {"dockerfile": "../../Dockerfile", "build_context": "../.."}}}],
+  "durable_objects": {"bindings": [{"name": "PYTHON", "class_name": "PythonContainer"}]},
+  "exports": {"PythonContainer": {"type": "durable-object", "storage": "sqlite"}},
+  "limits": {"cpu_ms": 30000}
+}

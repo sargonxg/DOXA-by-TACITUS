@@ -1,0 +1,43 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        DOXA_OCR: ${DOXA_OCR:-false}
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - doxa-data:/data
+      - doxa-models:/models
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      DOXA_DATA_DIR: /data
+      DOXA_PARSER_MEMORY_MB: ${DOXA_PARSER_MEMORY_MB:-4096}
+      DOXA_OLLAMA_BASE_URL: ${DOXA_OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      DOXA_OPENAI_BASE_URL: ${DOXA_OPENAI_BASE_URL:-https://api.openai.com/v1}
+      DOXA_OPENAI_MODE: ${DOXA_OPENAI_MODE:-remote}
+      DOXA_ENABLE_OCR: ${DOXA_ENABLE_OCR:-0}
+      DOXA_DOCLING_ARTIFACTS: ${DOXA_DOCLING_ARTIFACTS:-/models/docling}
+      DOXA_OPENAI_API_KEY: ${DOXA_OPENAI_API_KEY:-}
+      CLOUDFLARE_ACCOUNT_ID: ${CLOUDFLARE_ACCOUNT_ID:-}
+      CLOUDFLARE_API_TOKEN: ${CLOUDFLARE_API_TOKEN:-}
+      RUNPOD_API_KEY: ${RUNPOD_API_KEY:-}
+      DOXA_RUNPOD_ENDPOINT_ID: ${DOXA_RUNPOD_ENDPOINT_ID:-}
+      DOXA_RUNPOD_BASE_URL: ${DOXA_RUNPOD_BASE_URL:-}
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 30s
+  ollama:
+    image: ollama/ollama:0.40.16
+    profiles: ["ollama"]
+    ports:
+      - "127.0.0.1:11434:11434"
+    volumes:
+      - ollama-models:/root/.ollama
+    restart: unless-stopped
+    # CPU-only by default. Native Ollama on macOS uses Metal; see docs/deployment.md.
+volumes:
+  doxa-data:
+  ollama-models:
+  doxa-models:

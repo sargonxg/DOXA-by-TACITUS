@@ -1,0 +1,17 @@
+.git
+.env
+.env.*
+!.env.example
+**/.dev.vars*
+**/node_modules
+**/.wrangler
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+.venv
+data
+artifacts
+frontend/dist
+*.egg-info
+dist
+build

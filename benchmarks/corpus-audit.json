@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-11-16T20:02:02.443806+00:00",
+  "document_count": 20,
+  "passed": 20,
+  "failed": 0,
+  "word_count": 356964,
+  "interpretation_accuracy": null,
+  "interpretation_accuracy_note": "No independent human reference labels. This audit checks bundled source extraction and provenance only; it does not measure analysis accuracy.",
+  "results": [
+    {
+      "id": "uk01",
+      "title": "Independent Review of Prevent",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 69124,
+      "block_count": 1608,
+      "page_count": null,
+      "source_sha256": "4701b868069256fc4e1fb446ec525cc8cbadd58105c080752cdcbdce13377398",
+      "content_sha256": "4a791b1640104170d7e882c2515128103368e14a87bb5e5220b64da9f828d556"
+    },
+    {
+      "id": "uk02",
+      "title": "The response to the Independent Review of Prevent",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 10857,
+      "block_count": 197,
+      "page_count": null,
+      "source_sha256": "7bc1087870af0f896b04d4c608e83bc61c26faa9bd53b23f9891e9b12cf50578",
+      "content_sha256": "ccc817b6fe4117abe682f01a2f0a53a5ad158203a3644c960f99bd639a52a357"
+    },
+    {
+      "id": "uk03",
+      "title": "Prevent duty guidance: Guidance for specified authorities in England and Wales",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 20993,
+      "block_count": 1153,
+      "page_count": 67,
+      "source_sha256": "c79b96a812ec39241ceefd54672aec4a15dddc0f066e95ba7c404f4b72687464",
+      "content_sha256": "87d43392dfc581c6dcab02e8ff6b6ec2401f7c96adf742d8b75aa71569238b9d"
+    },
+    {
+      "id": "uk04",
+      "title": "Hate crime, England and Wales, year ending March 2024",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 8373,
+      "block_count": 267,
+      "page_count": null,
+      "source_sha256": "8456965aa39961843ce482581691ab794ef15f2cdb07b82f397eee317497e295",
+      "content_sha256": "dc043598fbaf8bd3198fd068da3d7d89cb179a4849850f67635a39268fb7b722"
+    },
+    {
+      "id": "uk05",
+      "title": "The Casey Review: A review into opportunity and integration",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 67905,
+      "block_count": 1473,
+      "page_count": 199,
+      "source_sha256": "7cf7b85729ceb36c49e82ee52f3093301e274e64f8c3effeb21977724387b770",
+      "content_sha256": "aafc9389ffa8ff41fe2d7eea78ba27cd68e7121a6bbf48056868d0fd002ce459"
+    },
+    {
+      "id": "uk06",
+      "title": "The future of the Higher Education (Freedom of Speech) Act 2023",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 10225,
+      "block_count": 413,
+      "page_count": 34,
+      "source_sha256": "b651d3b68ffe0dc91e49b5e25519bbaafa80d74fbd3c3f867b008e6bab326b9a",
+      "content_sha256": "8f03151fcb83371d0bfe38ceea4705d9249c45a2e5df51ef7d2edd5633f2e65c"
+    },
+    {
+      "id": "uk07",
+      "title": "Government Response to the Women and Equalities Committee Report on Employment Opportunities for Muslims in the UK",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 7176,
+      "block_count": 60,
+      "page_count": 22,
+      "source_sha256": "c44c5dc23c053ed51dccf3e88ef895e5fa6017739746493a8f46b0f01efbdc08",
+      "content_sha256": "c826adb7813babc836a8456fa9fb7c517710bb481b9548efb36710ee087c8f6e"
+    },
+    {
+      "id": "uk08",
+      "title": "Action Against Hate: The UK Government's plan for tackling hate crime",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 12651,
+      "block_count": 478,
+      "page_count": 39,
+      "source_sha256": "7296d071171568c156ceef5d874eef5e63b8d2b05bb719c7315e58bb4ef0ff95",
+      "content_sha256": "d4b50d024dd09918f75ae46f5b0a5ef2cb612bdd8d69edb043e34010159473fa"
+    },
+    {
+      "id": "uk09",
+      "title": "Government response to the Lord Mann Review into antisemitism and other forms of racism in the NHS",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 1331,
+      "block_count": 34,
+      "page_count": null,
+      "source_sha256": "25175c6af18ec6691e7eac5eaccedf8e97218a8b934bbd25072dde908c6d9042",
+      "content_sha256": "0be3aeeb06c3c8565c6a4d63acc36aeb7bf2fccf3e94e5a403d11f9fb845e5b7"
+    },
+    {
+      "id": "uk10",
+      "title": "A Definition of Anti-Muslim Hostility",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 2826,
+      "block_count": 67,
+      "page_count": null,
+      "source_sha256": "e2137b535183a193e84e632e6c59ab3de95535af96294a3ceb4a40dd448c399f",
+      "content_sha256": "6d38441c34bc7f965f72f381e05ac305c88963677ea832c9b7800e743d1f2222"
+    },
+    {
+      "id": "us01",
+      "title": "The U.S. National Strategy to Counter Antisemitism",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 25356,
+      "block_count": 838,
+      "page_count": 60,
+      "source_sha256": "e70a35577c2a2cee22f4fdce7f875bcaac06aa66b8e89abdd5f5b7aae49c9ef6",
+      "content_sha256": "8a74e1bd02e4c0baf897e5b4ecacea5163c7d8118e96751905bc8b40ebe7aaac"
+    },
+    {
+      "id": "us02",
+      "title": "The U.S. National Strategy to Counter Islamophobia and Anti-Arab Hate",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 34005,
+      "block_count": 915,
+      "page_count": 67,
+      "source_sha256": "297918099ed457ed5007953e11f32640dcef75d1a32319299c613ad3c406999d",
+      "content_sha256": "0ae0b0840fb2bbb5d54069a465cbc9df9a39a1730406656334855e489360cfdf"
+    },
+    {
+      "id": "us03",
+      "title": "Executive Order 14188: Additional Measures To Combat Anti-Semitism",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 861,
+      "block_count": 19,
+      "page_count": null,
+      "source_sha256": "cf5282d933745edf6d53bce058f936138841434983498f3516a7842ba554e79a",
+      "content_sha256": "ec1701f0a98163e0c6739c24142977998dd41a2f9055b32d90bed535851bdcac"
+    },
+    {
+      "id": "us04",
+      "title": "Executive Order 14149: Restoring Freedom of Speech and Ending Federal Censorship",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 582,
+      "block_count": 21,
+      "page_count": null,
+      "source_sha256": "13ef07e9b5fc9b7c87dcfb71f6c785561a9061e04f017107934b40326f6ca4f3",
+      "content_sha256": "fc7fe1f1f99c8a8f1b0bc0948c9611307fff901f4c85c4e6f9c62313dfaefa1c"
+    },
+    {
+      "id": "us05",
+      "title": "Section 12: Religious Discrimination",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 59614,
+      "block_count": 928,
+      "page_count": null,
+      "source_sha256": "46d401180f5d22cb82e714b8c16761e4bf82c0df14865f08d4ba8d18e58191f3",
+      "content_sha256": "49de1a3734b26231bbdf850c27097435abec1d40100cefd5dfd81fc370c2f368"
+    },
+    {
+      "id": "us06",
+      "title": "Questions and Answers for Employers: Responsibilities Concerning the Employment of Individuals Who Are, or Are Perceived to Be, Muslim or Middle Eastern",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 1795,
+      "block_count": 44,
+      "page_count": null,
+      "source_sha256": "c91f04c9d9b8c3b194671127710da66e4bf72d1fcb6818f29d154fe9c86c2062",
+      "content_sha256": "60298d24ff6f89eb969a3e92a1b9ece05fd9d89ccef18f3631991bccbf3e7828"
+    },
+    {
+      "id": "us07",
+      "title": "Religious Garb and Grooming in the Workplace: Rights and Responsibilities",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 7075,
+      "block_count": 108,
+      "page_count": null,
+      "source_sha256": "cbb7b454a83ed1283ab7da41807ed5ebed66e5bca4bdff1f1ad31b9ed7f1cddb",
+      "content_sha256": "984ac4f06c421f06d60d3288f9d8730ab8fe234a965df99e0a0686c9d2af5300"
+    },
+    {
+      "id": "us08",
+      "title": "Best Practices for Eradicating Religious Discrimination in the Workplace",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 1921,
+      "block_count": 64,
+      "page_count": null,
+      "source_sha256": "7b4d6ef44e4d941b2553a2d2cbe83fdf014e9c15948b2a1074ef301073a32236",
+      "content_sha256": "783fe1e4993685d6619c463b21d2cfe5667a7ad006da5bc5bcd9c5886b8e9ee4"
+    },
+    {
+      "id": "us09",
+      "title": "Combating Religious Discrimination Today: Final Report",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 12761,
+      "block_count": 237,
+      "page_count": 40,
+      "source_sha256": "f2295a5f5f531698a975011020c9806cf82b2ab57edd8f0f205e4d4de29eef6e",
+      "content_sha256": "d28ae5ac6aaf6c732e4755c3a006e609c557ce97f71eb8dc0e2fc8f0519bb796"
+    },
+    {
+      "id": "us10",
+      "title": "Combating Religious Discrimination",
+      "status": "pass",
+      "checks": {
+        "real_source_url": true,
+        "nonempty": true,
+        "unique_block_ids": true,
+        "content_checksum": true,
+        "source_checksum_recorded": true,
+        "locators_present": true,
+        "not_synthetic": true,
+        "rights_recorded": true
+      },
+      "word_count": 1533,
+      "block_count": 75,
+      "page_count": 5,
+      "source_sha256": "40d842a4cc9ab4d30d7eedb48e7150f0069f698acfc92a3c58a214dff8de002d",
+      "content_sha256": "f1f34f41f4d152488f5a86b3c6154b82d4b314315cc33e42512314f9cc00ebdd"
+    }
+  ]
+}

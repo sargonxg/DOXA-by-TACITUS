@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "name": "local-qwen4b-sample",
+  "generated_at": "2026-11-16T20:57:55.250459+00:00",
+  "status": "partial",
+  "provider": "ollama",
+  "model": "qwen3.5:4b",
+  "model_profile": {
+    "provider": "ollama",
+    "model": "qwen3.5:4b",
+    "mode": "local",
+    "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "quantization": "Q4_K_M",
+    "context_limit": 8192,
+    "temperature": 0,
+    "structured_output": true,
+    "source_pack_bytes": 3600,
+    "source_pack_windows": 20,
+    "lens_batch_size": 2,
+    "batching_version": "local-bounded-2",
+    "citation_offset_unit": "unicode_code_points",
+    "prompt_version": "doxa-evidence-1.2",
+    "response_schema_version": "evidence-enums-1",
+    "rubric_versions": {
+      "discourse": "1.0.0"
+    },
+    "analysis_config_hash": "861f19a229de5f019e89575f"
+  },
+  "documents": 20,
+  "words_in_selected_input": 1296,
+  "findings_retained": 32,
+  "source_coverage": {
+    "basis": "extracted text characters; excludes images and unextracted content",
+    "selected_characters": 8602,
+    "processed_characters": 8091,
+    "full_selected_document_characters": 2349640,
+    "selected_documents": 20,
+    "bundled_documents": 20,
+    "sampled": true,
+    "selected_input_complete": false,
+    "full_corpus_scan_complete": false,
+    "semantic_analysis_performed": true
+  },
+  "usage": {
+    "input_tokens": 19649,
+    "output_tokens": 9503,
+    "cost_usd": null,
+    "requests": 21,
+    "estimated": true
+  },
+  "conservative_budget_accounted_usd": 0.0,
+  "wall_seconds": 2015.9088528450002,
+  "benchmark_driver_peak_rss_bytes": 64221184,
+  "hardware": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu": "x86_64",
+    "logical_cpus": 5,
+    "host_ram_bytes": 18882662400,
+    "visible_nvidia_gpus": null,
+    "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+  },
+  "error_count": 1,
+  "citation_audit": {
+    "checked": 32,
+    "valid": 32,
+    "invalid_finding_ids": [],
+    "offset_unit": "unicode_code_points"
+  },
+  "interpretation_accuracy": null,
+  "independent_human_labels": false,
+  "artifact": "local-qwen4b-sample.json.gz",
+  "uncompressed_sha256": "045ad1812f684fcd0fd4d6839ef65f031dd48a143b81b964f01a88220bb36790",
+  "notice": "Exact citation validation is a software gate, not an interpretation-accuracy score. Incomplete/sampled coverage remains explicit. Local compute and cloud platform charges are distinct from token-cost estimates."
+}

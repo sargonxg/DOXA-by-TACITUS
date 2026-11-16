@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "benchmark_kind": "synthetic_large_upload_transport",
+  "synthetic": true,
+  "fixture": "Valid one-page PDF with an unreferenced 500 MiB padding stream.",
+  "file_bytes": 524288000,
+  "rss_guard_bytes": 1073741824,
+  "disk_free_before_bytes": 13768597504,
+  "hardware": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "logical_cpus": 5
+  },
+  "checks": {
+    "lost_ack_repeat_same_etag": true,
+    "partial_parts_before_restart": true,
+    "upload_metadata_survived_restart": true,
+    "part_etags_survived_restart": true,
+    "ready_one_real_pdf_page": true,
+    "real_text_extracted": true,
+    "source_digest_matches": true,
+    "persisted_original_digest_matches": true,
+    "completed_parts_removed": true,
+    "duplicate_import_reuses_document": true,
+    "duplicate_keeps_original_intact": true,
+    "rss_under_1_gib": true,
+    "temporary_artifacts_removed": true
+  },
+  "limitations": [
+    "This synthetic padded PDF tests byte transport, persisted parts, assembly, duplicate handling and one selectable-text PDF page.",
+    "It does not measure 500 MiB of meaningful document content, OCR, model inference, or semantic quality.",
+    "No whole-source download response is buffered in memory. Each request body is at most 8 MiB."
+  ],
+  "generation_seconds": 1.1721683669993581,
+  "source_sha256": "dab962b8b7efb536423a0e3c8cc208d213d2f635fc6f670d285bf75a86621cd6",
+  "first_completion_seconds": 3.519414417999542,
+  "extracted_excerpt": "DOXA large upload transport fixture. Synthetic source, one actual PDF page.\n",
+  "part_size_bytes": 8388608,
+  "parts_per_upload": 63,
+  "part_requests_total": 127,
+  "transmitted_source_bytes": 1056964608,
+  "resume_after_part": 31,
+  "wall_seconds": 27.08820441500029,
+  "memory": {
+    "parent_peak_rss_bytes": 70967296,
+    "parser_child_peak_rss_bytes": 68472832,
+    "sampled_combined_peak_rss_bytes": 122552320,
+    "sampling_interval_seconds": 0.025,
+    "guard_exceeded": false,
+    "note": "Kernel high-water counters supplement sampled parent/child RSS; unrelated benchmark/model processes are excluded."
+  },
+  "passed": true
+}

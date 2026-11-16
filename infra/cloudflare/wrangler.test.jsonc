@@ -1,0 +1,18 @@
+{
+  "name": "doxa-cloudflare-test",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-16",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "DOXA_SERVICE_TOKEN": "test-only-strong-service-token-0123456789abcdef",
+    "DOXA_PUBLIC_ORIGIN": "https://test.invalid",
+    "CF_ACCESS_TEAM_DOMAIN": "test.cloudflareaccess.com",
+    "CF_ACCESS_AUD": "test-audience",
+    "DOXA_CLOUD_SINGLE_WORKSPACE": "true"
+  },
+  "d1_databases": [{"binding": "DB", "database_name": "doxa-test", "database_id": "test-db"}],
+  "r2_buckets": [{"binding": "OBJECTS", "bucket_name": "doxa-test"}],
+  "queues": {"producers": [{"binding": "WORK_QUEUE", "queue": "doxa-test"}]},
+  "durable_objects": {"bindings": [{"name": "PYTHON", "class_name": "PythonContainer"}]},
+  "exports": {"PythonContainer": {"type": "durable-object", "storage": "sqlite"}}
+}

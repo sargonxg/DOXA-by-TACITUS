@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "benchmark_kind": "synthetic_infrastructure_load",
+  "synthetic": true,
+  "generated_at": "2026-11-16T20:13:48.577312+00:00",
+  "documents": 1000,
+  "synthetic_page_records": 10000,
+  "hardware": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu": "x86_64",
+    "logical_cpus": 5,
+    "host_ram_bytes": 18882662400,
+    "visible_nvidia_gpus": null,
+    "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+  },
+  "project_id": "23cb0460f4e64a86bbd6a5031069912e",
+  "run_id": "83aaaa207b87413fbc058189c4a443cb",
+  "checks": {
+    "document_count": true,
+    "synthetic_page_record_count": true,
+    "pagination_complete": true,
+    "scheduler_complete": true,
+    "expired_lease_recovered": true,
+    "completed_run_replay_no_duplicate_findings": true,
+    "no_model_requests": true
+  },
+  "passed": true,
+  "tasks": {
+    "total": 1000,
+    "completed": 1000,
+    "failed": 0
+  },
+  "timing_seconds": {
+    "import": 1.2421328910004377,
+    "scheduler": 15.261932120999518,
+    "total": 16.909327561999817
+  },
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0,
+    "requests": 0,
+    "estimated": false
+  },
+  "interpretation_accuracy": null,
+  "limitations": [
+    "Generated page records test storage, pagination and scheduling, not PDF extraction, OCR, large binary upload or real document page throughput.",
+    "No LLM inference or semantic quality measurement is performed.",
+    "The real twenty-document corpus is benchmarked separately."
+  ]
+}

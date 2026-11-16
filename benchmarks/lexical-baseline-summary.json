@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "name": "lexical-baseline",
+  "generated_at": "2026-11-16T20:11:44.758100+00:00",
+  "status": "completed",
+  "provider": "lexical",
+  "model": "lexical-baseline",
+  "model_profile": {
+    "provider": "lexical",
+    "model": "lexical-baseline",
+    "mode": "local",
+    "revision": "1.0",
+    "quantization": "not_applicable",
+    "context_limit": 8192,
+    "temperature": 0,
+    "structured_output": false,
+    "citation_offset_unit": "unicode_code_points",
+    "prompt_version": "doxa-evidence-1.0",
+    "semantic_analysis": false,
+    "rubric_versions": {
+      "discourse": "1.0.0",
+      "ihra": "2026-11-operational-1",
+      "jda": "2021-operational-1",
+      "nexus": "2024-06-operational-1",
+      "anti-muslim-hostility": "2026-03-operational-1"
+    },
+    "analysis_config_hash": "ae2a978687d32fa3d7ed21a3"
+  },
+  "documents": 20,
+  "words_in_selected_input": 356964,
+  "findings_retained": 7213,
+  "source_coverage": {
+    "basis": "extracted text characters; excludes images and unextracted content",
+    "selected_characters": 2349640,
+    "processed_characters": 2349640,
+    "full_selected_document_characters": 2349640,
+    "selected_documents": 20,
+    "bundled_documents": 20,
+    "sampled": false,
+    "selected_input_complete": true,
+    "full_corpus_scan_complete": true,
+    "semantic_analysis_performed": false
+  },
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0,
+    "requests": 0,
+    "estimated": false
+  },
+  "conservative_budget_accounted_usd": 0.0,
+  "wall_seconds": 33.777526777000276,
+  "benchmark_driver_peak_rss_bytes": 217960448,
+  "hardware": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu": "x86_64",
+    "logical_cpus": 5,
+    "host_ram_bytes": 18882662400,
+    "visible_nvidia_gpus": null,
+    "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+  },
+  "error_count": 0,
+  "citation_audit": {
+    "checked": 7213,
+    "valid": 7213,
+    "invalid_finding_ids": [],
+    "offset_unit": "unicode_code_points"
+  },
+  "interpretation_accuracy": null,
+  "independent_human_labels": false,
+  "artifact": "lexical-baseline.json.gz",
+  "uncompressed_sha256": "832508a6e177030a0657ca091adf1f9b27ce28d4a4c854a7fc1172b25198fb09",
+  "notice": "Exact citation validation is a software gate, not an interpretation-accuracy score. Incomplete/sampled coverage remains explicit. Local compute and cloud platform charges are distinct from token-cost estimates."
+}

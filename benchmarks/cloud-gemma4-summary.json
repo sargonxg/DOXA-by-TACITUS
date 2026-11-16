@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "name": "cloud-gemma4",
+  "generated_at": "2026-11-16T20:52:00.309034+00:00",
+  "status": "partial",
+  "provider": "cloudflare",
+  "model": "@cf/google/gemma-4-26b-a4b-it",
+  "model_profile": {
+    "provider": "cloudflare",
+    "model": "@cf/google/gemma-4-26b-a4b-it",
+    "mode": "remote",
+    "revision": "unresolved",
+    "quantization": "provider_managed",
+    "context_limit": 32768,
+    "temperature": 0,
+    "structured_output": true,
+    "source_pack_bytes": 12000,
+    "source_pack_windows": 64,
+    "lens_batch_size": 12,
+    "batching_version": "managed-gemma-2",
+    "citation_offset_unit": "unicode_code_points",
+    "prompt_version": "doxa-evidence-1.2",
+    "response_schema_version": "evidence-enums-1",
+    "pricing_checked_at": "2026-11-16",
+    "rubric_versions": {
+      "discourse": "1.0.0",
+      "ihra": "2026-11-operational-1",
+      "jda": "2021-operational-1",
+      "nexus": "2024-06-operational-1",
+      "anti-muslim-hostility": "2026-03-operational-1"
+    },
+    "analysis_config_hash": "8d41cb0edd4733ee761225f4",
+    "response_model": "@cf/google/gemma-4-26b-a4b-it-external"
+  },
+  "documents": 20,
+  "words_in_selected_input": 356964,
+  "findings_retained": 1071,
+  "source_coverage": {
+    "basis": "extracted text characters; excludes images and unextracted content",
+    "selected_characters": 2349640,
+    "processed_characters": 1570904,
+    "full_selected_document_characters": 2349640,
+    "selected_documents": 20,
+    "bundled_documents": 20,
+    "sampled": false,
+    "selected_input_complete": false,
+    "full_corpus_scan_complete": false,
+    "semantic_analysis_performed": true
+  },
+  "usage": {
+    "input_tokens": 1543690,
+    "output_tokens": 377330,
+    "cost_usd": null,
+    "requests": 340,
+    "estimated": true
+  },
+  "conservative_budget_accounted_usd": 0.2843229000000001,
+  "wall_seconds": 1753.5087365259997,
+  "benchmark_driver_peak_rss_bytes": 159875072,
+  "hardware": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "cpu": "x86_64",
+    "logical_cpus": 5,
+    "host_ram_bytes": 18882662400,
+    "visible_nvidia_gpus": null,
+    "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+  },
+  "error_count": 115,
+  "citation_audit": {
+    "checked": 1071,
+    "valid": 1071,
+    "invalid_finding_ids": [],
+    "offset_unit": "unicode_code_points"
+  },
+  "interpretation_accuracy": null,
+  "independent_human_labels": false,
+  "artifact": "cloud-gemma4.json.gz",
+  "uncompressed_sha256": "9be9c67b1e5ce24c1983523e87d96d00c39cf76cf740eb385006d242cd7022bb",
+  "notice": "Exact citation validation is a software gate, not an interpretation-accuracy score. Incomplete/sampled coverage remains explicit. Local compute and cloud platform charges are distinct from token-cost estimates."
+}
