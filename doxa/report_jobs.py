@@ -193,7 +193,8 @@ class ReportJobs:
         row = self._row(identity)
         if row["status"] in TERMINAL:
             return {"pending": False, "status": row["status"], "job_id": identity}
-        lease, deadline = uuid.uuid4().hex, time.monotonic()+max(1, min(420, float(deadline_seconds)))
+        work_seconds = max(1, min(420, float(deadline_seconds)))
+        lease, deadline = uuid.uuid4().hex, time.monotonic()+work_seconds
         acquired = self.store.execute("UPDATE report_jobs SET status='running',lease_token=?,lease_until=?,attempts=attempts+1,updated_at=? WHERE id=? AND cancel_requested=0 AND(status='queued' OR(status='running' AND COALESCE(lease_until,0)<?))", [lease, time.time()+480, utcnow(), identity, time.time()])
         if not acquired:
             return {"pending": True, "status": row["status"], "job_id": identity}
@@ -253,7 +254,7 @@ class ReportJobs:
             parts = self.store.query("SELECT * FROM report_job_parts WHERE job_id=? ORDER BY stage,ordinal", [identity])
             self.store.execute("UPDATE report_jobs SET phase='materialize',progress_json=?,updated_at=? WHERE id=? AND lease_token=?", [compact({"phase": "materialize", "completed": 0, "total": 1, "percent": 70, "message": "Preparing verified frozen inputs"}), utcnow(), identity, lease])
             database, metadata = report_source.materialize(self.store, config, parts, folder / "inputs", lambda: self._check(identity, lease))
-            reserve = 180 if row["format"] == "xlsx" else 90
+            reserve = (300 if work_seconds >= 420 else 180) if row["format"] == "xlsx" else 90
             if time.monotonic() > deadline - reserve:
                 if state.get("render_deferred"):
                     raise TimeoutError("Frozen input preparation leaves insufficient rendering time; narrow the report selection")

@@ -288,7 +288,7 @@ def write_snapshot(frozen: dict, target: Path, limit: int) -> dict:
 def write_xlsx(frozen: dict, data: dict, target: Path) -> dict:
     import xlsxwriter
     logical_rows, physical_rows = {}, {}
-    with xlsxwriter.Workbook(target, {"constant_memory": True, "strings_to_formulas": False,
+    with xlsxwriter.Workbook(target, {"constant_memory": True, "use_zip64": True, "strings_to_formulas": False,
                                      "strings_to_urls": False, "tmpdir": str(target.parent)}) as workbook:
         workbook.set_properties({"title": "DOXA recorded corpus dashboard", "author": "DOXA by TACITUS"})
         header = workbook.add_format({"bold": True, "bg_color": "#173C39", "font_color": "white", "text_wrap": True})

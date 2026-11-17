@@ -82,6 +82,32 @@ def logical_source_state(root):
         connection.close()
 
 
+def test_full_workbook_uses_zip64_for_large_uncompressed_members_without_dropping_rows(recorded_workspace, tmp_path, monkeypatch):
+    _store, root = recorded_workspace
+    # Force the real ZIP64 writer path using small synthetic records rather
+    # than allocating gigabytes. Every ordinary data/provenance field remains.
+    monkeypatch.setattr(zipfile, "ZIP64_LIMIT", 1024)
+    from doxa.recorded_export import recompress_workbook
+    monkeypatch.setattr("doxa.recorded_export.recompress_workbook", lambda path: recompress_workbook(path, threshold=0))
+    prefix = tmp_path / "zip64-recorded"
+    manifest = export_run(root, "run", prefix, formats=("xlsx",))
+    path = prefix.with_suffix(".xlsx")
+    with zipfile.ZipFile(path) as archive:
+        assert archive.testzip() is None
+        assert any(item.extract_version >= 45 and item.file_size > 1024 for item in archive.infolist())
+        for name in archive.namelist():
+            if name.startswith("xl/worksheets/") and name.endswith(".xml"):
+                assert ET.fromstring(archive.read(name)).findall(".//{http://schemas.openxmlformats.org/spreadsheetml/2006/main}f") == []
+        namespace = {"s": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+        assert len(ET.fromstring(archive.read("xl/worksheets/sheet2.xml")).findall("s:sheetData/s:row", namespace)) - 1 == 2
+        assert len(ET.fromstring(archive.read("xl/worksheets/sheet3.xml")).findall("s:sheetData/s:row", namespace)) - 1 == 5
+    values = xlsx_values(path)
+    assert manifest["counts"]["documents"] == 2 and manifest["counts"]["assessments"] == 5
+    assert manifest["xlsx"]["zip_recompression"]["uncompressed_member_sha256_verified"]
+    assert all("assessment-" + str(index) in values for index in range(5))
+    assert "source-a" in values and "source-b" in values
+
+
 def xlsx_values(path):
     """Support both ordinary shared strings and constant-memory inline strings."""
     namespace = {"s": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}

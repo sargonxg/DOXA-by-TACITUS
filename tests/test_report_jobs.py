@@ -127,7 +127,7 @@ def test_render_budget_is_reserved_after_materialization_without_infinite_retry(
     def delayed(*args, **kwargs):
         result = original(*args, **kwargs)
         if always_slow or calls[0] == 0:
-            clock[0] += 300
+            clock[0] += 180
         calls[0] += 1
         return result
     monkeypatch.setattr(report_source, "materialize", delayed)

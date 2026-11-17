@@ -14,6 +14,9 @@ def test_proof_verifies_all_ids_outcomes_actual_workbook_and_cleans_only_own_job
     receipt = verify_report_jobs(store, "project", "run", target, isolated=True, expected_counts={"documents": 2, "assessments": 5}, min_free_gib=0)
     assert receipt["status"] == "pass" and receipt["counts"]["documents"] == 2 and receipt["counts"]["assessments"] == 5
     assert receipt["workbook"]["Findings"]["logical_rows"] == 5
+    assert receipt["workbook"]["member_count"] > 0
+    assert receipt["workbook"]["total_uncompressed_bytes"] >= receipt["workbook"]["max_member_uncompressed_bytes"] > 0
+    assert receipt["workbook"]["zip64_member_count"] >= 0
     assert {item["result"] for item in receipt["typed_counts"]} == {"meets_criterion", "does_not_meet", "uncertain", "not_applicable"}
     assert receipt["temporary_report_inputs_and_artifacts_cleaned"]
     assert json.loads(target.read_text())["status"] == "pass"

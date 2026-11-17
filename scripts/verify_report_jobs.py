@@ -36,6 +36,11 @@ def _workbook(path, expected):
     with zipfile.ZipFile(path) as archive:
         if archive.testzip() is not None or any("externallinks" in name.lower() or "connections" in name.lower() for name in archive.namelist()):
             raise ValueError("Workbook ZIP integrity or external-link check failed")
+        members = archive.infolist()
+        counts.update(member_count=len(members),
+                      max_member_uncompressed_bytes=max((item.file_size for item in members), default=0),
+                      total_uncompressed_bytes=sum(item.file_size for item in members),
+                      zip64_member_count=sum(item.extract_version >= 45 for item in members))
         for filename, label in (("xl/worksheets/sheet2.xml", "Documents"), ("xl/worksheets/sheet3.xml", "Findings")):
             rows, logical, digest = 0, 0, hashlib.sha256()
             with archive.open(filename) as stream:

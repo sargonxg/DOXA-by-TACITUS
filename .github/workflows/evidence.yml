@@ -27,6 +27,18 @@ jobs:
           --expected-package-sha256 783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827
           --receipt /tmp/doxa-evidence-replay.json
           --report-job-receipt /tmp/doxa-report-job-5000.json --max-temp-gib 8 --min-free-gib 1
+      - name: Print portable verification receipts
+        if: always()
+        run: |
+          python - <<'PY'
+          import base64, hashlib, json
+          from pathlib import Path
+          for name in ('doxa-evidence-replay.json', 'doxa-report-job-5000.json'):
+              path = Path('/tmp') / name
+              if path.is_file():
+                  raw = path.read_bytes()
+                  print('DOXA_RECEIPT ' + json.dumps({'file': name, 'sha256': hashlib.sha256(raw).hexdigest(), 'base64': base64.b64encode(raw).decode()}))
+          PY
       - uses: actions/upload-artifact@v7
         if: always()
         with:
