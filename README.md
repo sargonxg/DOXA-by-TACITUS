@@ -2,6 +2,8 @@
 
 **A browser workbench for examining what documents assert, assume, normalize, and contest.**
 
+**Bias Detection as a Service** is an open-source service toolkit: run the software locally or in your own cloud, with optional TACITUS support for corpus preparation, methodology, deployment and review. There is no hosted account or checkout requirement. See the [product overview](https://tacitus.me/doxa/).
+
 Import a corpus, choose an analytical lens, follow every finding back to its source, compare interpretations, and produce a report you can inspect and share. Run the application on your computer or deploy the same analysis engine to Cloudflare.
 
 DOXA is a **research preview**. Exact citations, processing coverage, and model provenance are checked by software. Interpretation accuracy has not been established through independent human annotation. A lexical baseline is available without a model and is always identified as word matching.
@@ -9,6 +11,10 @@ DOXA is a **research preview**. Exact citations, processing coverage, and model 
 ![DOXA Quest: an 8-bit game map of the six-stage research workflow.](docs/images/doxa-quest.png)
 
 Follow the [DOXA Quest walkthrough](docs/guide.md): import documents → choose a lens → run local or cloud AI → inspect evidence → compare findings → export reports. The running app includes the same guide through **How DOXA works**.
+
+The [service-toolkit guide](docs/v3-service-toolkit.md) explains source attribution, publication-time trajectories, assessment history and reviewed project learning. The [interpretation guide](docs/v3-interpretation.md) explains the evidence and evaluation requirements. The running app includes **About**, **How it works** and **Methodology** pages alongside the original Quest.
+
+![The DOXA process keeps source versions, method, exact passages and review connected.](docs/images/doxa-process.svg)
 
 ## Start locally
 

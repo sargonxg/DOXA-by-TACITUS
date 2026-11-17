@@ -1,0 +1,21 @@
+Seven African governments employ surveillance spyware, says new study
+Written by: Nwachukwu Egbunike
+Originally published by Global Voices: https://globalvoices.org/2020/12/10/seven-african-governments-employ-surveillance-spyware-says-new-study/
+Published: 2020-12-10T14:01:27Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+The governments of seven African countries — Botswana, Equatorial Guinea, Kenya, Morocco, Nigeria, Zambia, and Zimbabwe — are using spyware technology, according to a new report by Citizen Lab, an interdisciplinary research unit at the University of Toronto, Canada.
+
+The study has identified at least 25 countries around the world that have deployed surveillance software produced by Circles, a firm affiliated with Israel's NSO Group. The study says Circles claim to only deal with nation-states.
+
+The report, written by Bill Marczak and four others, discovered “a unique signature associated with the hostnames of Check Point firewalls used in Circles deployments, enabling us to identify Circles deployments.” Check Point is a leading American-Israeli cybersecurity firm.
+
+According to the study, Circles’ technology operates by exploiting a common signal flaw in the global mobile phone system to enable call and text snooping as well as tracking of phones.
+
+The snooping technique used by Circles is called Signaling System 7 (SS7), a “protocol suite developed in 1975 for exchanging information and routing phone calls between different wireline telecommunications companies,” the report says. SS7 is currently used in 2G and 3G mobile networks during cross-border billing for roamed calls.
+
+Thomas Brewster, a cybersecurity analyst at Forbes who reported on the Citizen Lab study, further explains that when one travels to another country, “the SS7 network is used to move your phone over to a partner telecoms provider and adjust billing accordingly.” However, a twist occurs in this normal process if “a surveillance vendor” is able to access the SS7 networks, “either via hacking or acquiring it.” The SS7 then sends “commands to a subscriber’s ‘home network’ falsely indicating the subscriber is roaming. That will, in turn, reveal their location, though only the coordinates of the cell tower closest to the phone,” says Brewster.
+
+Circle's clients in Africa identified by Citizen Lab are the following: Botswana’s Directorate of Intelligence and Security Service (DISS), Morocco’s Ministry of Interior, Nigeria’s Defence Intelligence Agency (DIA), and an unknown agency in Zambia.

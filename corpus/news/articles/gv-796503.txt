@@ -1,0 +1,129 @@
+In Russia, it's the state against the internet
+Written by: Russia Post; Daria Dergacheva
+Originally published by Global Voices: https://globalvoices.org/2023/09/15/in-russia-its-the-state-against-the-internet/
+Published: 2023-09-15T06:03:42Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+In an interview for the RussiaPost and Global Voices, Mikhail Klimarev, Director of the non-profit organization the Internet Protection Society, founder, and host of the Telegram channel “Za Telecom” talks about how the Russian state blocks the internet, how Russian software developers and Chinese telecom tech giant Huawei are involved in this, and what might happen to Google in Russia.
+
+Global Voices (GV): How would you describe what is going on with the internet in Russia right now?
+
+Mikhail Klimarev (MK): What the Russian authorities are now trying to do on the internet can be simply and straightforwardly called censorship.
+
+The first blocking of the internet in Russia was in 2012, more than a decade ago. At that time, telecom operators were obliged to build a system of blocks themselves at their own expense and had to block internet resources that appeared in a Roskomnadzor register. It worked pretty poorly. Then, in 2017, they started using the Revizor system, which monitors what resources the telecom operator has available, a fairly simple development of the Russian company MFI-Soft from Nizhny Novgorod. It was installed by the operators, and pretending to be a subscriber, it requested resources in Roskomnadzor’s register of prohibited materials. If they were available, then the operator was issued a fine. But when Telegram began to be blocked in 2018, this system proved completely ineffective. They unsuccessfully tried to block Telegram for a year and a half, and after that, apparently, they thought about how to make these blocks more effective, and in the winter of 2020 they adopted the law on a sovereign Runet.
+
+GV: What do the Russian authorities mean when they talk about a sovereign Runet, and how are they trying to build it?
+
+MK: What a sovereign Runet is, no one still really understands. In the view of the Russian authorities, it apparently means destroying all the bad guys and rewarding all ‘our guys’.
+
+Technical Means for Countering Threats (TSPU). This device looks at every data packet that passes through the networks of the telecom operator, and decides what to block and what not to. I’m oversimplifying so as not to get too technical.
+
+GV: Are there any keywords for which resources or pages are blocked?
+
+MK: No, it is not keywords. It is impossible to block keywords in the modern Runet, simply because now approximately 97 percent of all Internet traffic is encrypted. This can only be done on individual platforms — like VK and Odnoklassniki.
+
+GV: Then what is the difference between Russian and Chinese censorship?
+
+MK: The main difference between the Chinese Internet and the Russian Internet is its architectural structure. They do not block anything inside China. In China, they simply control companies that operate in this market within the country. Since it is a monopoly market, it is easier to do everything. China has something like three large telecom operators. There are 3,500 in Russia — a huge difference.
+
+The Great Firewall separates the Chinese Internet from the rest of the internet. In other words, all cables from the three Chinese telecom operators arrive at one point. In ten cities, data centers have been built, and cables from foreign telecom operators are connected to them. These data centers sit right in between the Chinese internet, ChinaNet, and the worldwide internet. That’s where they filter the data, and really complex solutions are used, quite interesting in terms of algorithms and so on.
+
+In Russia, it is the same, only a smaller copy of this Chinese airbus is with every operator. Not all 3,500 operators, because it’s an expensive thing, but I think around 350.
+
+GV: Who delivered these solutions in Russia, and do they continue to update them? Are these companies under sanctions? What happens if they stop updating them? Can this censorship system continue to work?
+
+MK: Roskomnadzor also has such a group, a center for monitoring and managing the public communication network, which deals with this. And an outfit was created called Data: Processing and Automation Center, which operates, builds all these nodes for them. It was created exclusively for this project, and it is not known who owns what, some front people are there.
+
+They build these nodes, bring in the equipment, install, configure, and design. Because it is at different telecom operators, you need different types of very simplified interfaces. And the complex itself consists of servers. Of course, they should be subjected to various sanctions, up to and including destruction.
+
+And the software is developed for them by a Russian company RDP, which was not so long ago acquired by Rostelecom. It was originally named differently and made equipment for telecom operators, and was itself a telecom operator. To replace expensive imported equipment, based on literally ordinary computers, they began to make routers. They managed to create one of the best products, entered the blocking market with it and Rostelecom bought them.
+
+In addition, TSPU includes telecommunications equipment, also made in China, and switches, which are manufactured by Eltex from Novosibirsk. Naturally, equipment for the switches is also ordered from different suppliers from China and Taiwan. For example, motherboards, power supplies, network modules, and interfaces. Then everything is assembled into the device, firmware and software are installed, tested, and packaged by the company itself.
+
+And the servers are supplied by Huawei.
+
+GV: So, the blocks will work as long as Huawei supplies and maintains the servers, the Russian company updates the software, and China and Taiwan supply components for the rest of the equipment?
+
+MK: Everything will work, yes. Servers of this class are under sanctions, they cannot be supplied. But China supplies them. And moreover, through Huawei, directly. This is open information. For 2022, they delivered about USD 100 million worth of servers. And for the purposes of blocking the Internet in Russia.
+
+GV: How exactly do they block certain resources so that they are inaccessible to Russian users?
+
+MK: There are several ways. By IP address, i.e. you simply prohibit access to a specific IP address. A slightly more complex way is by domain name when it is forbidden to access a specific one. But these are very simple ways of blocking that have existed in Russia for a long time. A more complex blocking method is a so-called slow-down. In 2021, they tried to slow down Twitter [now known as X].
+
+And literally since August of this year, a new way of blocking — by protocol — has appeared. More precisely, they started trying to do it a long time ago; there were attempts to disrupt Smart Voting in September 2021 like that.
+
+GV: To bypass that block, new VPN protocols must constantly appear?
+
+MK: Yes. And here you should look at the resources that state organizations have and what we have. In 2022 alone, they spent RUB 20 billion, about USD 300 million, on upgrading the equipment for these TSPUs.
+
+This information became available thanks to a leak from Roskomnadzor’s Main Radio Frequency Center [in November 2022, the Belarusian group Cyberpartisans announced that they had managed to infiltrate the internal network of the center and download documents and correspondence of employees, the total amount of data exceeding two terabytes — RP].
+
+GV: Should we expect the authorities to be more active in blocking VPNs?
+
+MK: Actually, it is impossible to just block the “undesirable.” You have to decide which protocols are necessary and which are “undesirable.” How do you tell one packet on the Internet is good and another is bad? You can’t. So, protocol-based blocking – it is a rotten story. I did not think that they would resort to it, because it affects their own economy very much.
+
+VPNs, in fact, were not invented to bypass blocking – they were invented to provide some services on the Internet. For example, combining remote offices or secure data transfer, or to manage large networks. For ATMs and surveillance cameras, cash terminals. If you block them, it will all stop working.
+
+GV: But the authorities have proven ready for this?
+
+MK: They prepared seriously, prepared for several years, and now they began to block them. But so far, we do not see big complaints about the fact that some services have stopped working in Russia. Perhaps it is the relevant organizations and operators who decide not to block internal VPN services that work for business.
+
+Or maybe it is some cunning algorithm that detects only internal VPNs and does not touch them. We were not ready for this, to be honest. We did not expect that they could, but they did it.
+
+But in any case, even if only external VPNs are blocked, some foreign economic relations will be complicated. It is a double-edged sword. Blocking a VPN securely enough means blocking your own economy as well.
+
+GV: Do you think YouTube will be blocked? If so, when? And what will be the reaction of Google?
+
+MK: One time Google blocked an entire region: Crimea in 2013 – Google stopped accepting payments. The search engine worked, but for Crimea the use of some Google services was expressly prohibited, and they were blocked. But at least Google did not block updates to Android operating systems.
+
+In fact, YouTube might not be blocked; they will just make it very difficult to use. To do that, you just turn off the equipment. Google has its own equipment with almost every telecom operator – the Google Global Cache (GGC). The servers work like this: someone requested a video from this telecom operator, and popular videos are usually watched by hundreds of thousands or millions of people. But someone first requested it, and it is immediately loaded onto the GGC on this server from this telecom operator. Next time it does not take it from the Google servers in California; it distributes a local copy. This saves a huge amount of international traffic and loads videos much faster.
+
+If this equipment is turned off, it will be like 10 years ago, when you pressed the button, sat for five minutes, waited for it to load the cache, and only after that the video began.
+
+GV: The 3,500 telecom operators in Russia have this equipment?
+
+MK: Fewer than that, but a decent number, more than 2,000 operators.
+
+GV: Roskomnadzor can come and turn it off, even if this equipment belongs to Google?
+
+Yes. They can put out some kind of resolution, recognize Google as an extremist organization and shut off the equipment.
+
+GV: But then Google can disconnect Russian users from the Android operating system?
+
+MK: That has never happened before. On the one hand, Google’s attitude toward the situation is known — it made a statement in support of Ukraine almost immediately after the Russian invasion. But on the other hand, turning off Androids means that at least millions of people in Russia will be left without phones.
+
+GV: Is it technically possible to make a service like Rostelecom was going to do — to show only certain YouTube videos, while blocking others?
+
+MK: There are such services, and they even have open-source code. It is another matter that if it creates a lot of traffic, then Google will see it and block it, of course. Because it’s theft. I’m just amazed how Rostelecom just came up with this idea. It is theft in the literal sense of the word. You take someone else’s content, make your own packaging for it and resell it to your users. I myself am a former employee of Uralsvyazinform – not Rostelecom, but Uralsvyazinform – I remember all these meetings. Is someone at the meeting saying: “let’s steal it?”
+
+GV: How is censorship in Russia different from North Korea?
+
+MK: In North Korea, there is only a closed Internet. They have about 1,000 domain names registered total for the whole country. So, it is about 1,000 sites, but much fewer actually work. About 100 sites in total. Just imagine you have only 100 sites.
+
+GV: And VPN does not work for them?
+
+MK: It does not, because they just don’t have any just physical cables with the outside world.
+
+GV: How to convey to people information about bypassing censorship, about new VPNs that you or someone else is developing specifically for Russia?
+
+MK: I think a big educational program is needed, and people who will purposefully convey this technological knowledge to Russians.
+
+For example, we have the project Generator. An advanced user can access a special server that is specially created for him. Go out, give access to your friends, and acquaintances explain how it all works. I think that there should be a lot of them, different such services.
+
+GV: And the global platforms, Meta, Twitter, which are blocked in Russia, do they help with this somehow or not?
+
+MK: We have no contact with Twitter. Google communicates with us more or less. I cannot say that it is at an official level.
+
+We are talking to Meta, but they were recognized as extremists, and they are simply afraid to do anything. What if they decided to throw a person with some relation to Facebook and Instagram in jail? They do not want to take responsibility for it.
+
+GV: And speaking of Russian platforms, what do you think of the latest statements by Yandex founder Arkady Volozh?
+
+MK: I believe that he is in a comfortable position. He was silent for a long time at first. Then he spoke out against the war, and now he is asking for “his money back.” History will judge. I spoke with Arkady Yurievich several times. On the one hand, he seems incredibly talented. But I cannot stand it when they say: “we just built [the concentration camp], it was not us throwing people in there.” I think he got what he deserved.
+
+Volozh, of course, should be exempted from sanctions, but not immediately; just wait – like he waited to express his protest [against the war]. Still, he should do something for this. And if he starts doing something, then I will believe that sanctions should be lifted from him.
+
+GV: What could be the worst internet blocking scenario?
+
+MK: The worst thing that can happen is that they turn off the Internet completely. This will mean that the ruling elites have already begun to go after each other. We saw this in other countries for example, in 2016 this. happened in the city of Kinshasa in Congo.

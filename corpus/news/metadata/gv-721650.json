@@ -1,0 +1,393 @@
+{
+  "id": "gv-721650",
+  "publisher_id": 721650,
+  "source_id": "globalvoices:721650",
+  "source_url": "https://globalvoices.org/2020/11/25/chronic-kidney-disease-affects-1-out-of-10-salvadorans-including-children/",
+  "title": "Chronic kidney disease affects 1 out of 10 Salvadorans, including children",
+  "published_at": "2020-11-25T13:33:52Z",
+  "modified_at": "2020-11-25T13:33:52Z",
+  "api_author_id": 2763,
+  "api_content_sha256": "d247997d57475785600d473085f29b8034edc839711d0696edd231ed0dd84534",
+  "api_response_sha256": "3c1126b1eeb2408f0c7dfb3722ec3e22693716e3f3a1988a2b2844f4a03dc72f",
+  "api_retrieved_at": "2026-11-16T22:20:31.424510+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 171,
+      "count": 540,
+      "name": "El Salvador",
+      "slug": "el-salvador",
+      "parent": 1354
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-721650-b00001",
+      "text": "According to a 2019 peer-reviewed study in MEDICC, “chronic kidney disease has reached epidemic proportions in El Salvador.” The number of people affected by this silent illness is staggering; it is the second cause of death in men and the third cause of hospital mortality for adults. A 2017 report by the Salvadoran health ministry revealed that for the years 2014 and 2015, 12.6 percent of the population suffered from chronic kidney disease.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 445,
+      "source_links": [
+        "https://elsalvadorinfo.net/wp-content/uploads/2020/11/minsal.pdf#page=32",
+        "https://mediccreview.org/wp-content/uploads/2019/07/MR-AprilJuly2019-OR-orantes-chronic-kidney.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00002",
+      "text": "Although one in three men over 60 are ill with CKD, they are not the only ones impacted. The number of children affected by this illness is on the rise and the obstacles they face to get treatment have gotten worse during the COVID-19 pandemic.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 447,
+      "body_end": 691,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00003",
+      "text": "From 2014 to 2018, 1,833 cases of minors with renal failure were registered with the Ministry of Health. San Miguel, in the eastern part of the country, and San Salvador, the nation's capital, were the municipalities that reported the most cases.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 693,
+      "body_end": 939,
+      "source_links": [
+        "https://www.elsalvador.com/eldiariodehoy/san-miguel-con-mas-casos-de-dano-renal-en-menores-de-18-anos/617442/2019/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00004",
+      "text": "Nephrologist Salvador Magaña, who practices his profession in the municipality of San Miguel, highlighted that younger people do not have strict control over their eating habits. Therefore, they easily cope with high temperatures and heat by substituting water for other products that could trigger kidney disease. More than one million Salvadorans, or a sixth of the population, have little access to drinking water.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 941,
+      "body_end": 1358,
+      "source_links": [
+        "https://globalvoices.org/2020/09/11/thousands-of-salvadorans-endure-covid-19-without-running-water-to-wash-their-hands/",
+        "https://www.elsalvador.com/eldiariodehoy/san-miguel-con-mas-casos-de-dano-renal-en-menores-de-18-anos/617442/2019/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00005",
+      "text": "> “A la mayoría de personas, por diferentes motivos, les resulta más fácil ir a comprar una soda en lugar de tomarse un vaso de agua.” Dijo Magaña",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1360,
+      "body_end": 1506,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-721650-b00006",
+      "text": "> “Most people, for different reasons, find it easier to go buy a soda instead of having a glass of water.” Said Magaña.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1508,
+      "body_end": 1628,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-721650-b00007",
+      "text": "Children and teenagers with this disease have to endure hemodialysis treatments every month, which leave them vulnerable and weak. Additionally, these children face other challenges, such as navigating a flawed Salvadoran health system.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1630,
+      "body_end": 1866,
+      "source_links": [
+        "https://www.elsalvador.com/eldiariodehoy/investigacion-revela-baja-calidad-en-los-servicios-de-salud/654960/2019/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00008",
+      "text": "“Once established, the disease tends to progress to chronic kidney failure (CKF) or end-stage renal disease, requiring expensive renal replacement therapies (dialysis) or organ transplantation,” according to the aforementioned study. “In the absence of such interventions, death is inevitable.”",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1868,
+      "body_end": 2162,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00009",
+      "text": "The COVID-19 pandemic has compounded these children's difficulties in accessing public health care, especially those who live in poverty.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2164,
+      "body_end": 2301,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00010",
+      "text": "Public transportation, which most families depend on to commute back and forth from hospital visits, was shut down for many weeks due to COVID-19 precautions. Also, hospitals functioned with less staff as a high number of medical personal got infected with COVID-19. Both of these issues had an impact on access to CKD treatment.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2303,
+      "body_end": 2632,
+      "source_links": [
+        "https://actbistas.org/el-salvador-tiene-la-letalidad-por-covid-19-en-medicos-mas-alta-en-centroamerica/",
+        "https://www.elpais.cr/2020/05/07/el-salvador-prohibe-por-15-dias-circulacion-de-transporte-publico/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00011",
+      "text": "One of these children is Carlos Daniel Gonzalez, who has been receiving treatment for CKD at a public hospital for children in San Salvador since he was an infant. Yet, since Gonzalez turned 20 this year, he and his family have been struggling to find another government-run hospital that can provide him with the treatment he needs. Going a week without treatment is not an option for Gonzalez. Many public hospitals in El Salvador lack the necessary equipment and medicine to support Gonzalez, and going to a private hospital is financially impossible, according to his mother, Esmeralda Fernandez, who spoke with Global Voices via WhatsApp.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2634,
+      "body_end": 3277,
+      "source_links": [
+        "http://www.hospitalbloom.gob.sv/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00012",
+      "text": "Otilia Sorto Fuentes of US-based Fundacion Iris Violeta told Global Voices via phone:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3279,
+      "body_end": 3364,
+      "source_links": [
+        "https://fundacionirisvioleta.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00013",
+      "text": "> In a private hospital, each treatment costs US$125, Carlos needs two per week, which ends up being 8 per month. How can his family afford to pay US$1,000 a month in a country where the monthly minimum wage is about US$300. It is just not possible!",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3366,
+      "body_end": 3615,
+      "source_links": [
+        "https://elsalvadorinfo.net/minimum-wage-in-el-salvador/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-721650-b00014",
+      "text": "Iris Violeta Foundation provides assistance to families and kids with renal failure in El Salvador. Every month, the foundation gives vitamins to children and any other help they can afford. According to Fuentes, the number of children with CDK has gotten worse over the last few years.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3617,
+      "body_end": 3903,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00015",
+      "text": "> One of the projects of Fundacionirisvioleta.org is to deliver vitamins to kidney patients at the Benjamin Bloom hospital in San Salvador, we do this every month we have a total of 37 children on hemodialysis.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3905,
+      "body_end": 4115,
+      "source_links": [
+        "https://fundacionirisvioleta.org/about-otilia/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-721650-b00016",
+      "text": "Children with CDK need to take medication or vitamins to help them deal with the treatment's side effects. The cost of these supplements surpasses 75 US dollars per month, which can be considered a luxury for families who live in dire financial conditions.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4117,
+      "body_end": 4373,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00017",
+      "text": "Esmeralda Fernandez says:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4375,
+      "body_end": 4400,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00018",
+      "text": "> Es una lucha lidiar con todo lo que hay que hacer. Si Carlos no se siente bien, tenemos que pagar transporte privado para ir al hospital, algo que no es barato. Además, no podemos llevarlo al hospital local si necesita tratamiento de inmediato; ellos no tienen el equipo necesario. Somos pobres, por lo que lidiar con todas estas dificultades financieras no es fácil.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4402,
+      "body_end": 4771,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-721650-b00019",
+      "text": "> It's a struggle to deal with everything that needs to be done. If Carlos is not feeling well, we have to pay for private transportation to get to the hospital, which is not cheap. We can't take him to the local hospital if he needs treatment right away; they don't have the necessary equipment. We are poor, so dealing with all these financial difficulties is not easy.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4773,
+      "body_end": 5144,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-721650-b00020",
+      "text": "Francis Zablah, deputy for the department of La Libertad in the Salvadoran legislative assembly, told Global Voices via Twitter:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5146,
+      "body_end": 5274,
+      "source_links": [
+        "https://www.asamblea.gob.sv/diputados/details/B161C56F-B16E-4C71-A27C-C03FB8A96DF3"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721650-b00021",
+      "text": "> Se tiene que descentralizar y dar el servicio en cada departamento. Pero, en mi opinion, la pandemia no ha dado lugar ha esta administración a revisar ese problema.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5276,
+      "body_end": 5442,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-721650-b00022",
+      "text": "> [The public health system] has to be decentralized and provide services in each department. But, in my opinion, the pandemic has not given this administration time to review that problem.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5444,
+      "body_end": 5633,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-721650-b00023",
+      "text": "Usually, people who are prone to fall ill with CKD have high blood pressure and diabetes. Yet, more and more people throughout the world, and in this case, El Salvador, get CKD due to exposure to agrochemicals and dehydration.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5635,
+      "body_end": 5861,
+      "source_links": [
+        "https://www.paho.org/els/index.php?option=com_content&view=article&id=852:enfermedad-renal-cronica-comunidades-agricolas-centroamerica-un-problema-grave-salud-publica&Itemid=291"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "937648e23fbe5cb90926cff3d46afbb254d4220d86fb1dbc5b8fef3ecfeec9bf",
+  "word_count": 962,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 3,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5861,
+  "retrieved_at": "2026-11-16T22:28:30.285501+00:00",
+  "raw_html_sha256": "8df8127683a09b12754829eda93986872c47054a1c9a6a0ae591f08b23fd60fd",
+  "resolved_source_url": "https://globalvoices.org/2020/11/25/chronic-kidney-disease-affects-1-out-of-10-salvadorans-including-children/",
+  "canonical_url": "https://globalvoices.org/2020/11/25/chronic-kidney-disease-affects-1-out-of-10-salvadorans-including-children/",
+  "source_bytes": 189948,
+  "authors": [
+    {
+      "name": "Eddie Galdamez",
+      "url": "https://globalvoices.org/author/eddie-galdamez/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 721650,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "8df8127683a09b12754829eda93986872c47054a1c9a6a0ae591f08b23fd60fd",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-f691c537330f8c443fb8",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-11",
+    "eligible_month_documents": 62,
+    "selected_month_documents": 52,
+    "inclusion_probability": 0.8387096774193549,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Eddie Galdamez",
+  "body_start": 485,
+  "body_end": 6346,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b8b8357b8c2951903d13e8eb4f3378ec09c77151399a752d6ae3a575c55ec272",
+  "text_path": "articles/gv-721650.txt",
+  "metadata_path": "metadata/gv-721650.json",
+  "attribution": "This story by Eddie Galdamez originally appeared on Global Voices. https://globalvoices.org/2020/11/25/chronic-kidney-disease-affects-1-out-of-10-salvadorans-including-children/",
+  "content_sha256": "4a284a6ac1140e8322b344da6c1c83ba0bd6d8fd221b0da5ec0a9b9e756fd74c",
+  "source_sha256": "8df8127683a09b12754829eda93986872c47054a1c9a6a0ae591f08b23fd60fd",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

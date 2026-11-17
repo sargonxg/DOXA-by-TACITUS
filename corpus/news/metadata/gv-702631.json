@@ -1,0 +1,397 @@
+{
+  "id": "gv-702631",
+  "publisher_id": 702631,
+  "source_id": "globalvoices:702631",
+  "source_url": "https://globalvoices.org/2020/04/04/is-india-fighting-covid-19-the-mass-surveillance-way/",
+  "title": "Is India fighting COVID-19 the ‘mass surveillance’ way?",
+  "published_at": "2020-04-04T16:17:18Z",
+  "modified_at": "2020-07-06T21:34:05Z",
+  "api_author_id": 1571,
+  "api_content_sha256": "0b1762d7c6746685cbba2ad96a74b692f5dd0f9ba80529026e2ab03a62116de7",
+  "api_response_sha256": "410cae52104626367a712fae08e767879efbd25dd5aa81c2af8b559c01594b80",
+  "api_retrieved_at": "2026-11-16T22:20:24.527578+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 32,
+      "count": 3843,
+      "name": "India",
+      "slug": "india",
+      "parent": 31
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-702631-b00001",
+      "text": "Check out Global Voices’ special coverage of the global impact of COVID-19.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 75,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/covid-19-global-coverage-for-a-pandemic/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00002",
+      "text": "In addition to a country-wide lockdown, India has been experimenting with technology that will help them control the spread of COVID-19. On April 2, the government launched its COVD-19 mobile tracking app, Aarogya Setu. The app, which alerts users when they are within six feet of a person infected with the coronavirus, is creating major concerns about potential digital security issues.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 77,
+      "body_end": 465,
+      "source_links": [
+        "https://www.cnn.com/2020/03/24/asia/india-lockdown-coronavirus-intl/index.html",
+        "https://www.entrepreneur.com/slideshow/348641",
+        "https://yourstory.com/2020/04/india-government-coronavirus-tracking-app-aarogya-setu"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00003",
+      "text": "Aarogya Setu users sign up using their mobile phone number and can add personal details as well as past travel history. A feature allows users to perform a self-assessment if they suspect they might be infected with the virus. It also alerts government authorities if a person's tracked details — such as recent travel to any country with high infection rate or medical symptoms — draw suspicion. The app was developed by the National Informatics Centre under the Ministry of Electronics and Information Technology (MeitY) who claim that data they collect will only be shared with government agencies. Google Play store has already registered more than one million installations of the app.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 467,
+      "body_end": 1157,
+      "source_links": [
+        "https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu",
+        "https://www.gadgetsnow.com/slideshows/coronavirus-tracker-all-details-about-aarogya-setu-app-that-aims-to-alert-you-if-you-are-near-someone-infected/You-can-use-the-Self-Assessment-Test-to-check-whether-you-may-have-a-possibility-of-COVID-19-infection-or-not/photolist/74949806.cms",
+        "https://yourstory.com/2020/04/india-government-coronavirus-tracking-app-aarogya-setu"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00004",
+      "text": "During the launch of Aargogya Setu, Neeta Verma, General Director of the National Informatics Centre (NIC) said:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1159,
+      "body_end": 1271,
+      "source_links": [
+        "https://news.abplive.com/videos/news/india-govt-launches-aarogyasetu-app-to-answer-peoples-query-on-coronavirus-1188071"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00005",
+      "text": "> […] the app will enable people to assist themselves [from] the risks of catching coronavirus infections. The risk score is calculated based on their interactions with others using cutting edge Bluetooth technology, algorithms and artificial intelligence. Citizen privacy is taken into account while designing the app. Personal data collected stays secure on the phone until it is needed for medical intervention.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1273,
+      "body_end": 1687,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-702631-b00006",
+      "text": "In a series of tweets, Krishnaswamy Vijay Raghavan, principal scientific adviser to the Indian government, says the app will let citizens know if they accidentally come in contact with infected people around them. In one of the tweets, he also advised the users to keep the phone Bluetooth turned on and “always” share their location:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1689,
+      "body_end": 2023,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/K._VijayRaghavan"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00007",
+      "text": "Raghavan also assures that the collected data is encrypted with “state-of-the-art” technology but, so far, there are few details available about the encryption standards followed.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2025,
+      "body_end": 2204,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00008",
+      "text": "Users like Vijaita Singh also find the requirement to keep Bluetooth turned on all the time “jarring”.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2206,
+      "body_end": 2308,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00009",
+      "text": "Prasanna S., a lawyer and author of internet rights issues, questions the lack of clarity around the data being collected and retained both in the app and on the server:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2310,
+      "body_end": 2479,
+      "source_links": [
+        "https://indianexpress.com/article/business/legal-experts-raise-concerns-seek-more-clarity-from-aarogya-setus-privacy-policy-6344767/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00010",
+      "text": "> [..]There isn’t enough information available on what data will be collected, how long will it be stored and what uses it will be put to. If the data gets shared with the government of India, what the government can use it for needs to be specified. Otherwise, it will be a violation of the notice and consent principles. [..]",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2481,
+      "body_end": 2808,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-702631-b00011",
+      "text": "> [..]On the data retention part, the app’s privacy policy mentions that all information provided at the time of registration will be retained for as long as the user’s account remains in existence “and for such period thereafter as required for the purposes for which the information may lawfully be used.[..]",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2810,
+      "body_end": 3120,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-702631-b00012",
+      "text": "Concerns over data breaches are not unfounded as India has been accused of being unable to protect personal information found in its biometric database, Aadhaar. Aarogya Setu is also only one of 11 official apps that the federal and provincial governments have launched to fight COVID-19. Another app, Corona Kavach, has also drawn criticism over privacy issues. In an article published on the Hindu on March 28, journalist Suhasini Haidar wrote:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3122,
+      "body_end": 3568,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Aadhaar",
+        "https://www.business-standard.com/article/economy-policy/why-aadhaar-data-is-not-safe-despite-the-protection-of-13-feet-high-walls-118051500227_1.html",
+        "https://www.businesstoday.in/latest/trends/corona-kavach-this-app-tells-if-you-have-crossed-covid-19-positive-person/story/399930.html",
+        "https://www.entrepreneur.com/slideshow/348641#3",
+        "https://www.thehindu.com/news/national/govt-departments-pass-the-buck-as-list-of-722-air-passengers-is-leaked-online/article31186276.ece"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00013",
+      "text": "> The government’s efforts to monitor people advised quarantine for the novel coronavirus ran into privacy issues on Friday, after the database of hundreds of passengers who returned from “coronavirus affected countries” was leaked online and shared by social media groups. In addition, the government defended its newly launched pilot or beta version of a mobile phone application called “Corona Kavach” which uses the data of confirmed coronavirus patients to alert subscribers when they are in close proximity.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3570,
+      "body_end": 4083,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-702631-b00014",
+      "text": "Haidar also notes that WhatsApp and Facebook groups were able to share information that included the names, passport numbers, flight details, mobile phone numbers and addresses of 722 passengers who arrived in New Delhi on March 9 and March 20.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4085,
+      "body_end": 4329,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00015",
+      "text": "When many of the recent government approaches in India blur the line between scientific approaches to fight COVID-19 and the protection of individual rights, the rushed use of technology is troubling. Privacy expert Apar Gupta told India Today:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4331,
+      "body_end": 4575,
+      "source_links": [
+        "https://www.businesstoday.in/latest/trends/corona-kavach-this-app-tells-if-you-have-crossed-covid-19-positive-person/story/399930.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00016",
+      "text": "> As India does not have a pre-existing data protection law and there is a lack of statutory protection in place there is also a further problem given that these specific applications on the Play Store itself do not link to applicable privacy policies.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4577,
+      "body_end": 4829,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-702631-b00017",
+      "text": "India is one of many countries using technology to help stymie the spread of the virus. Joseph Cannataci, United Nations special rapporteur on the right to privacy, expressed concerns over how countries are enforcing strict surveillance and other measures during the pandemic that are dangerous to individual freedom.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4831,
+      "body_end": 5148,
+      "source_links": [
+        "https://www.independent.co.uk/news/world/coronavirus-lockdown-surveillance-tracking-dictatorship-authoritarian-united-nations-privacy-a9438561.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-702631-b00018",
+      "text": "The digital rights group Electronic Frontier Foundation (EFF) is one of many to point out that governments around the world that are advocating for “dragnet” location-based surveillance technology have not shown any significant ability to fight the pandemic using this technology.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5150,
+      "body_end": 5430,
+      "source_links": [
+        "https://www.eff.org/deeplinks/2020/03/governments-havent-shown-location-surveillance-would-help-contain-covid-19"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "7791624eb1e0e4f072a20601f8ae1bec04c8647d58c4f553290a8301f215ea85",
+  "word_count": 862,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5430,
+  "retrieved_at": "2026-11-16T22:23:05.245184+00:00",
+  "raw_html_sha256": "18ccbc9194cb1c5971a07872285170ee69428020c4ba584eb69a4fbbb002a401",
+  "resolved_source_url": "https://globalvoices.org/2020/04/04/is-india-fighting-covid-19-the-mass-surveillance-way/",
+  "canonical_url": "https://globalvoices.org/2020/04/04/is-india-fighting-covid-19-the-mass-surveillance-way/",
+  "source_bytes": 193697,
+  "authors": [
+    {
+      "name": "Subhashish Panigrahi",
+      "url": "https://globalvoices.org/author/psubhashish/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 702631,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "18ccbc9194cb1c5971a07872285170ee69428020c4ba584eb69a4fbbb002a401",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-685bb8bc24fe6bf588b5",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-04",
+    "eligible_month_documents": 101,
+    "selected_month_documents": 84,
+    "inclusion_probability": 0.8316831683168316,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Subhashish Panigrahi",
+  "body_start": 451,
+  "body_end": 5881,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "9536cf3e230d2e8dbccc0e4343d39b311a864f6477ea6391c34ffcb5f1ec6123",
+  "text_path": "articles/gv-702631.txt",
+  "metadata_path": "metadata/gv-702631.json",
+  "attribution": "This story by Subhashish Panigrahi originally appeared on Global Voices. https://globalvoices.org/2020/04/04/is-india-fighting-covid-19-the-mass-surveillance-way/",
+  "content_sha256": "027ebb0d48adf290b39952b45a747e945716745c926f1ddb52a458bbc7ad046f",
+  "source_sha256": "18ccbc9194cb1c5971a07872285170ee69428020c4ba584eb69a4fbbb002a401",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

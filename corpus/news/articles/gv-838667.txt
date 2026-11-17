@@ -1,0 +1,57 @@
+How Kenyans are using AI during protests
+Written by: Cecilia Maundu
+Originally published by Global Voices: https://globalvoices.org/2025/07/12/how-kenyans-are-using-ai-during-protests/
+Published: 2025-07-12T20:00:33Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+Over the past year, Kenyan activists have transformed AI from a speculative novelty into a vital civic instrument, democratizing information, amplifying marginalized voices, and building resilient networks under pressure.
+
+In June 2024, as tear gas and slogans filled Nairobi’s streets, an AI-powered protest surged across WhatsApp, Telegram, TikTok Spaces, and X Live Streams — translating dense legislative text into clear, actionable messages that shaped public debate. This movement was driven largely by Gen Z and millennial protesters who first organized online before taking their fight offline. In a country where reliable information often hinges on digital literacy and network reach, these AI-driven tactics proved both empowering and disruptive.
+
+What unfolded was more than a street march: It was a digital insurrection powered by artificial intelligence and led by a new generation that had cut its teeth on social media mobilization. And now, as the country implements the controversial finance bill passed in June 2025 — marking one year since that landmark uprising — those same AI engines continue to influence public understanding of fiscal policy.
+
+Coordinated digital pressure
+
+When the finance bill entered public debate in June 2024, grassroots volunteers organized “retweet chains” on X (formerly Twitter) and in WhatsApp groups to propel protest hashtags, such as #RejectFinanceBill2024 and #OccupyParliament, onto nationwide trending lists. NENDO’s analysis of 25 million protest-related posts found that only 2.8 percent were original tweets. In contrast, almost 90 percent were retweets, revealing how a small pool of messages was multiplied at scale by supporters acting in sync.
+
+Researchers also uncovered coordinated networks of suspicious or paid accounts that boosted rival, pro-government hashtags, often posting duplicate text and AI-generated images within minutes of each other, to drown out anti-bill narratives.
+
+As momentum grew, coordinators even circulated Members of Parliament's (MPs) personal mobile numbers on social media, triggering what Kenya’s Nation Media described as a “week of horror” for legislators whose phones were “bombarded with calls and texts,” with some batteries draining in under 15 minutes. MPs themselves acknowledged being overwhelmed by thousands of identical SMS and WhatsApp messages urging them to oppose the finance bill, effectively turning these direct-message campaigns into a form of digital petitioning. The organized nature of these campaigns gave ordinary citizens, particularly those in rural and marginalized communities, a chance to participate on equal footing with traditional media voices.
+
+Additionally, activists utilized ChatGPT and other large language models (LLMs) to create easy-to-understand Q&A threads, translating complex legislative jargon into concise, clear messages suitable for rapid distribution via WhatsApp and bulk SMS.
+
+Chatbots and custom GPTs as civic tools
+
+Alongside basic bots, Kenyan developers deployed sophisticated chatbots built on open-source LLM frameworks to unpack the finance bill in real time. In mid-June 2024, a “Finance Bill GPT” appeared on Telegram and X, parsing clause-by-clause questions like “How will the VAT hike affect fuel prices?” and even surfacing MPs’ contact details for direct feedback. As the lead developer, @Ndemokelvin explained on X:
+
+> Reading 300 pages is a lot of work — I’ve updated the Finance Bill GPT with the report by the Departmental Committee on Finance and National Planning; it gives answers to your queries plus any recommendations by the said committee. #RejectFinanceBill2024.
+
+This step-by-step process turned complex legal text into clear insights and recommendations overnight. Running on the same chatbot framework, another GPT dubbed “Corrupt Politicians GPT” was built to serve accountability needs. Users simply entered an official’s name and instantly accessed compiled records of corruption allegations, from court filings to auditor reports and credible news citations, equipping protesters with verified, data-driven talking points for rallies and online discussions.
+
+Adaptive outreach
+
+Beyond bots and automated scripts, Kenyan volunteers broke down the finance bill clause by clause into TikTok explainers in different local languages, focusing on provisions that affect daily expenses like fuel levies and income taxes. There are 68 recognized languages in Kenya, with many less-common dialects often being overlooked in information-sharing campaigns.
+
+Separate sign-language interpretation videos were produced by volunteer interpreters and disseminated via WhatsApp and Telegram groups, and other platforms delivering concise, real-time summaries of the bill’s most impactful sections from urban to low-literacy and rural audiences.
+
+And even amid targeted throttling and internet slowdowns around Parliament, protesters adopted resilient over-the-top apps. When mobile data became unreliable, organizers set up private Zello channels, akin to digital walkie-talkies, enabling real-time voice updates on tear-gas deployments and safe corridors. Zello’s low-bandwidth audio ensured that critical information continued flowing even under constrained connectivity.
+
+Power, pushback, and disinformation
+
+On June 25, 2024, just one day after the Communications Authority (CA) of Kenya had pledged on X not to restrict Internet access during the #RejectFinanceBill2024 protests, mobile data speeds in Nairobi, Mombasa, and Kisumu were cut by nearly 40 percent, crippling live streams and encrypted channels, revealing a stark reversal from the CA’s previous assurances.
+
+Beyond these digital restrictions, security forces stepped up physical repression of online critics. Security agents detained and in some cases tortured online dissidents. In May 2025, student activist Billy Mwangi was abducted and tortured for posting an AI-generated satire of Kenyan President William Ruto, one of at least 82 such incidents documented by human-rights monitors. Pro-government actors weaponized AI to seed disinformation, fabricating protest imagery with foreign flags and deploying deep fake face-swaps to discredit opposition leaders.
+
+Even with digital and physical crackdowns, public pressure still keeps those in power in check. Last year’s unrest not only claimed more than 50 lives but also compelled Ruto to shelve a proposed KES 346 billion (USD 2.67 billion) tax hike — an unmistakable signal of how potent public outrage can be when fiscal measures hit home. In a further check on government reach, Parliament’s 2025 finance committee tossed out a bid to give the Kenya Revenue Authority unfettered access to taxpayers’ data, citing privacy safeguards and existing warrant requirements.
+
+Looking Ahead: Tools for year two
+
+Although this year saw no finance bill protests, tensions flared in June 2025 when blogger Albert Ojwang died in police custody, sparking fresh demonstrations in Nairobi even as thousands rallied in Kenya to mark the first anniversary of the 2024 finance bill protests. Within days, one Kenyan developer unveiled an online panic-button tool that lets protesters share their live location with trusted contacts at the tap of a button — users hailed it as a “game changer” against abductions and police brutality and urged the creator to open-source it on GitHub. Meanwhile, another Kenyan created a real-time movement tracker: “In case you get arrested, share your map and we’ll follow up (‘Hata upelekwe wapi tutajua kwenye uko’),” the X user explains, inviting anyone in custody to drop a pin so volunteers can monitor their whereabouts.
+
+At the same time, software engineer Rose Njeri faced charges under the Cybercrimes Act for building an automated objection email tool aimed at Parliament’s Finance Committee, reigniting debates over digital rights and legal safeguards for civic technologists.
+
+Meanwhile, localization efforts are also underway to ensure AI speaks local languages: the Masakhane initiative is training open‑source NLP models in Swahili and regional dialects, so that explainers and alerts reach rural and urban communities alike in the language they trust. On the policy front, KICTANet, MindHYVE.ai, and DV8 Infosystems unveiled draft National AI Policy proposals on June 12, 2025, calling for a “rights‑based, sovereign AI framework” that mandates transparency for civic bots, human‑in‑the‑loop checks on automated content, and robust data‑consent protocols. And civil‑society groups such as CIPESA are pushing for ethics guidelines to address metadata harvesting, consent norms for group‑chat bots, and accountability mechanisms for deepfake generators.
+
+Together, these initiatives could shift the digital tug‑of‑war toward transparency and civic empowerment, if they are codified before the next bill concerning Kenyans comes to vote.

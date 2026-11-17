@@ -1,0 +1,661 @@
+{
+  "id": "gv-716456",
+  "publisher_id": 716456,
+  "source_id": "globalvoices:716456",
+  "source_url": "https://globalvoices.org/2020/09/09/moderating-harmful-content-online-in-sudan-policies-and-measures/",
+  "title": "Moderating harmful content online in Sudan: Policies and measures",
+  "published_at": "2020-09-09T12:27:20Z",
+  "modified_at": "2020-09-09T15:57:11Z",
+  "api_author_id": 2625,
+  "api_content_sha256": "8b24405f466a34b40dce2a05d0a3b8b65502015cdfcd18408a4e9a180b3037f9",
+  "api_response_sha256": "8151db59b84972be147420e6c778533c63bc28f6c312564f66e92b98b68bdb85",
+  "api_retrieved_at": "2026-11-16T22:20:28.883922+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 243,
+      "count": 6007,
+      "name": "Development",
+      "slug": "development",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 141,
+      "count": 611,
+      "name": "Sudan",
+      "slug": "sudan",
+      "parent": 15
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 1361,
+      "count": 6433,
+      "name": "Women &amp; Gender",
+      "slug": "women-gender",
+      "parent": 238
+    },
+    {
+      "id": 282,
+      "count": 6941,
+      "name": "Youth",
+      "slug": "youth",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-716456-b00001",
+      "text": "The advent of the internet marked a radical shift in how people publish and share ideas — breaking boundaries and removing intermediaries. But this change came with the new burden of regulating and setting policies for content moderation.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 238,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00002",
+      "text": "In Sudan, a country where just 31 percent of the population has access to the internet, online platforms are struggling to enforce guidelines and regulations to monitor content deemed harmful such as hate speech and disinformation.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 240,
+      "body_end": 471,
+      "source_links": [
+        "https://datareportal.com/reports/digital-2020-sudan"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00003",
+      "text": "Meanwhile, technology companies based in the United States, such as Facebook, Instagram, and Twitter, often do not adhere to already published measures. In many cases, these US-based platforms fail to address harmful content at all.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 473,
+      "body_end": 705,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00004",
+      "text": "Doxxing, impersonation and disinformation",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 707,
+      "body_end": 748,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00005",
+      "text": "In May, Lugain Mohamed, a Sudanese women's rights activist, reported an active Instagram account that featured images of Sudanese women without their permission. This violated Instagram’s community guidelines, which do not allow users to share photos they did not take or do not have the right to share.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 750,
+      "body_end": 1053,
+      "source_links": [
+        "https://help.instagram.com/477434105621119",
+        "https://twitter.com/LujainMahmoudSa/status/1264974982611861510"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00006",
+      "text": "The Facebook-owned platform has yet to take action and the account is still active because Instagram found that it does not violate its policies, she confirmed to Global Voices in an email interview. She added that due to this experience she started to self-censor more the content that she shares on social media:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1055,
+      "body_end": 1369,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00007",
+      "text": "> Having been threatened by the admin of the page to share the rest of my pictures if I continued asking people to report the page made me a bit hesitant about continuing to campaign against such pages, as it threatened my personal safety.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1371,
+      "body_end": 1610,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-716456-b00008",
+      "text": "This practice of sharing women's pictures without their consent is not new in Sudan.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1612,
+      "body_end": 1696,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00009",
+      "text": "In 2016, over 15 female activists were doxxed on a Facebook page called, “Sudanese Women against the Hijab.” Doxxing is the practice of publishing someone's personal information without their permission with the intention to threaten or intimidate. The activists’ social media pictures were posted without their consent alongside fabricated quotes about being against the headscarf and religion. The page was later removed by Facebook after many reported it as a violation of its community standards.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1698,
+      "body_end": 2198,
+      "source_links": [
+        "https://crashoverridenetwork.tumblr.com/post/114270394687/so-youve-been-doxed-a-guide-to-best-practices",
+        "https://www.ultrasawt.com/%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%D8%A7%D8%AA-%D8%B6%D8%AF-%D8%A7%D9%84%D8%AD%D8%AC%D8%A7%D8%A8-%D8%A7%D8%BA%D8%AA%D9%8A%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D8%B1%D9%90%D8%B6%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D9%81%D8%A8%D8%B1%D9%83%D8%A9/%D9%85%D8%B5%D8%B9%D8%A8-%D8%B4%D8%B1%D9%8A%D9%81/%D8%B1%D8%A7%D8%B5%D8%AF/%D8%B9%D8%B4%D9%88%D8%A7%D8%A6%D9%8A%D8%A7%D8%AA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00010",
+      "text": "During Sudan's revolution that began in December 2019, Twitter seemed to be an ideal space for impersonation: Bad actors hijacked the accounts of politicians, ministers, journalists, and activists. Journalist Wasil Ali launched a campaign asking the public to report these accounts.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2200,
+      "body_end": 2482,
+      "source_links": [
+        "https://twitter.com/wasilalitaha",
+        "https://twitter.com/wasilalitaha/status/1288406967787102210"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00011",
+      "text": "As a result, some were blocked while others are still active. In an email interview with Global Voices, Ali wrote:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2484,
+      "body_end": 2598,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00012",
+      "text": "> …[F]ake accounts are, for the most part, used to harvest followers but unfortunately, a good number of them are used to sow division by spreading misinformation that has the potential to trigger unrest or even violence. Also in the simplest of terms, it would sow discord among Sudanese whether political or even tribal.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2600,
+      "body_end": 2922,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-716456-b00013",
+      "text": "In June 2019, the government-backed militia group known as the Rapid Support Forces (RSF) cracked down on protesters opposing military rule in Khartoum, in what was later referred to as the “Khartoum massacre.” Human Rights Watch and Amnesty International published reports detailing evidence that pointed to a series of human rights violations by the RSF militia.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2924,
+      "body_end": 3288,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Khartoum_massacre",
+        "https://www.amnesty.org/en/documents/afr54/1893/2020/en/?fbclid=IwAR170SkNyNYPC6xfDMkgSZ32FhjEZNyFPRJafDQOB-i5KzFRF66VA7bOX3w",
+        "https://www.hrw.org/news/2019/11/17/sudan-justice-needed-protester-killings?fbclid=IwAR3kqfWO43BfirlYHu7fqJO83HP_f2lATe0vYRIUL0_Q0w3dIi9TPCPK6bs#"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00014",
+      "text": "Yet, days after the crackdown, an Egyptian company called New Waves launched an influential campaign on social media — including platforms Facebook and Instagram — aimed at presenting and marketing a good image for the RSF militia and its leaders.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3290,
+      "body_end": 3537,
+      "source_links": [
+        "https://www.nytimes.com/2019/09/06/world/middleeast/sudan-social-media.html?smid=nytcore-ios-share"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00015",
+      "text": "To this day, Facebook has failed to address multiple requests to remove RSF militia content, arguing that its leader, Mohamed Dagalo, who also serves as a deputy head of the Sovereignty Council, is a current state actor, albeit the company already removed the account of a Maynamar official who is also wanted for committing war crimes.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3539,
+      "body_end": 3875,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Mohamed_Hamdan_Dagalo",
+        "https://globalvoices.org/2020/08/03/new-facebook-oversight-board-must-remove-content-of-notorious-sudan-militia/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00016",
+      "text": "Are platforms doing enough?",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3877,
+      "body_end": 3904,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00017",
+      "text": "In some cases, directly contacting platforms helps to eliminate harmful content such as a fake Instagram account that went viral last year during the revolution. The account purported to provide meals to Sudanese people and also spread misinformation. Instagram later removed the account, directly after The Atlantic, a US-based news outlet, contacted them.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3906,
+      "body_end": 4263,
+      "source_links": [
+        "https://www.theatlantic.com/technology/archive/2019/06/instagrammers-are-exploiting-sudan-crisis/591808/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00018",
+      "text": "In July 2018, YouTube shut down Zoal Cafe Channel, without issuing any statement, after users reported an earlier episode that was a rebuttal to a Kuwaiti TV show mocking Sudanese people. The rebuttal itself was considered by some as racist. The channel was shut down only for three months before it was reinstated.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4265,
+      "body_end": 4580,
+      "source_links": [
+        "https://sudanesehome.net/2018/07/11/%D8%A7%D8%B3%D8%A8%D8%A7%D8%A8-%D8%BA%D8%A7%D9%85%D8%B6%D8%A9-%D9%88%D8%B1%D8%A7%D8%A1-%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D9%82%D9%86%D8%A7%D8%A9-%D8%B2%D9%88%D9%84-%D9%83%D8%A7%D9%81%D9%8A%D8%A9-%D8%B9/",
+        "https://www.youtube.com/channel/UCq_NLe0iYPuIdOmzeH208Zw/featured",
+        "https://www.youtube.com/watch?v=Ifve5WzhvqQ",
+        "https://www.youtube.com/watch?v=WBZpTt5pRDM"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00019",
+      "text": "Facebook also took steps to implement its Inauthentic Behavior Policy in relation to Sudan. The company defines “inauthentic behavior” as “engag[ing] in behaviors designed to enable other violations under our Community Standards,” through tactics such as the use of fake accounts and bots.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4582,
+      "body_end": 4871,
+      "source_links": [
+        "http://inauthentic-behavior-policy/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00020",
+      "text": "In October 2019, a network of fake accounts linked with Yevgeniy Prigozhin, a Russian financier, who was later put on a sanctions list by the US state department for his role in providing “support for preserving authoritarian regimes, such as that of former Sudanese President Omar al-Bashir, and exploitation of natural resources,” were removed by Facebook. According to their statement, “17 Facebook accounts, 18 Pages, 3 Groups and six Instagram accounts that originated in Russia and focused primarily on Sudan’’ were removed.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4873,
+      "body_end": 5403,
+      "source_links": [
+        "https://about.fb.com/news/2019/10/removing-more-coordinated-inauthentic-behavior-from-russia/",
+        "https://en.wikipedia.org/wiki/Yevgeny_Prigozhin",
+        "https://www.state.gov/the-united-states-imposes-sanctions-on-russian-financiers-global-sanctions-evasion-network/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00021",
+      "text": "However, activists say that platforms are not doing enough.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5405,
+      "body_end": 5464,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00022",
+      "text": "Lugain Mohamed said that she managed to get her own picture taken down, but not others because Instagram's policy requires “the owner of the picture to report it themselves.” She says:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5466,
+      "body_end": 5650,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00023",
+      "text": "> This is problematic in many ways, as these accounts are growing in number and followers day by day and they’re making a profit out of taking women’s pictures by advertising for different companies.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5652,
+      "body_end": 5851,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-716456-b00024",
+      "text": "As for Twitter's response to Ali's campaign to request impersonation accounts, Ali wrote:",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5853,
+      "body_end": 5942,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00025",
+      "text": "> Twitter is extremely slow on cracking down on these accounts & sometimes unwilling to take them down (like with an account impersonating me & tweeting fake news). Twitter simply refers you to their policy on these accounts.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5944,
+      "body_end": 6169,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-716456-b00026",
+      "text": "Twitter still doesn’t provide the phone verification feature for its users in Sudan, adding a barrier to verify accounts which gives space for more fake accounts to exist. In June, an online campaign was launched requesting Twitter to offer this feature. In March 2018, Jack Dorsey, the CEO of Twitter, tweeted about this issue, but Twitter has not changed its position.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6171,
+      "body_end": 6541,
+      "source_links": [
+        "https://twitter.com/hashtag/TwitterPhoneVerificationSudan?src=hashtag_click",
+        "https://twitter.com/jack/status/978440329765384193"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00027",
+      "text": "Lack of legal protections",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6543,
+      "body_end": 6568,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00028",
+      "text": "In addition to platforms’ inaction, Sudan also lacks strong legal measures that protect users online.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6570,
+      "body_end": 6671,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00029",
+      "text": "A number of existing legal provisions in Sudan offer protection for some types of harmful content. For example, the 2007 IT Crimes Law forbids defamation and sanctity of personal life, which can be used to hold to account those sharing photos of others without their consent.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6673,
+      "body_end": 6948,
+      "source_links": [
+        "https://www.unodc.org/res/cld/document/sdn/2007/cybercrime_act_2007_html/Sudan_Cybercrime_Act_2007_EN.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00030",
+      "text": "The 2018 IT crimes law, which its final draft was not shared publicly, criminalises the use of “the internet or any communications or information means, to incite hatred against foreigners, causing discrimination and hostility.” The parliament of the deposed regime amended the draft law in 2018, before it was amended again in 2020 by the transitional council in charge of governance, but the Ministry of Justice has not yet shared the final full version.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6950,
+      "body_end": 7406,
+      "source_links": [
+        "https://smex.org/do-new-sudanese-laws-regulate-digital-space-or-limit-freedom-of-expression/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00031",
+      "text": "Additionally, Article 87 of the Postal and Telecommunication Act punishes those who send threatening content.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 7408,
+      "body_end": 7517,
+      "source_links": [
+        "https://tpra.gov.sd/wp-content/uploads/2018/06/Telecommunications-and-Postal-Regulation-Act.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00032",
+      "text": "Regulating this content proves challenging and sometimes becomes a threat to freedom of expression, particularly in a country with a long history of human rights abuses.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 7519,
+      "body_end": 7688,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00033",
+      "text": "Sudan has several vague laws that criminalize speech guaranteed by international human rights standards. According to the 2019 Freedom on the Net Report, the government “openly acknowledges blocking and filtering websites that it considers “immoral” and “blasphemous,” such as pornography sites”.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 7690,
+      "body_end": 7986,
+      "source_links": [
+        "https://freedomhouse.org/country/sudan/freedom-net/2019#footnote6_g5d4itd"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00034",
+      "text": "In January 2019, the state prosecutor issued arrest warrants against 38 journalists and activists, accusing them of spreading fake news, a term that was vaguely described in the IT crimes law.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 7988,
+      "body_end": 8180,
+      "source_links": [
+        "https://www.africanews.com/2019/01/19/sudan-issues-arrest-warrant-for-38-journalists-activists//"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00035",
+      "text": "Adequately addressing online harmful content in Sudan requires collective action.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 8182,
+      "body_end": 8263,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00036",
+      "text": "Tech companies and online platforms need to adhere to content regulation policies and make them transparent and visible to users. They must listen to local activists and take into account their concerns when implementing policies.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 8265,
+      "body_end": 8495,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00037",
+      "text": "Sudan's current administration must amend existing laws to protect users from doxxing and hateful speech, without further endangering users’ fundamental rights and freedoms.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 8497,
+      "body_end": 8670,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716456-b00038",
+      "text": "This article is part of a series called “The identity matrix: Platform regulation of online threats to expression in Africa.” These posts interrogate identity-driven online hate speech or discrimination based on language or geographic origin, misinformation and harassment (particularly against female activists and journalists) prevalent in digital spaces of seven African countries: Algeria, Cameroon, Ethiopia, Nigeria, Sudan, Tunisia and Uganda. The project is funded by the Africa Digital Rights Fund of The Collaboration on International ICT Policy for East and Southern Africa (CIPESA).",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 8672,
+      "body_end": 9265,
+      "source_links": [
+        "https://cipesa.org/",
+        "https://cipesa.org/2019/07/inaugural-winners-of-the-africa-digital-rights-fund-announced/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "7c643abd960f303e670cdc8c6546010fd9106ca975dbb3d8abe63a588f17f571",
+  "word_count": 1438,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 9265,
+  "retrieved_at": "2026-11-16T22:27:18.169342+00:00",
+  "raw_html_sha256": "ec3efec1c9a17de877bd8c41f14fc6e5cb35d4ca46c430398f67d64a33d7517a",
+  "resolved_source_url": "https://globalvoices.org/2020/09/09/moderating-harmful-content-online-in-sudan-policies-and-measures/",
+  "canonical_url": "https://globalvoices.org/2020/09/09/moderating-harmful-content-online-in-sudan-policies-and-measures/",
+  "source_bytes": 198107,
+  "authors": [
+    {
+      "name": "Mohamed Suliman",
+      "url": "https://globalvoices.org/author/mohamed-suliman/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 716456,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "ec3efec1c9a17de877bd8c41f14fc6e5cb35d4ca46c430398f67d64a33d7517a",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-97a5bb5e006e9ae28900",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-09",
+    "eligible_month_documents": 86,
+    "selected_month_documents": 72,
+    "inclusion_probability": 0.8372093023255814,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Mohamed Suliman",
+  "body_start": 468,
+  "body_end": 9733,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "23c72f7a91a266ac93b1064f572b70907d127f4886c8f4cf7c4c705978c5ce40",
+  "text_path": "articles/gv-716456.txt",
+  "metadata_path": "metadata/gv-716456.json",
+  "attribution": "This story by Mohamed Suliman originally appeared on Global Voices. https://globalvoices.org/2020/09/09/moderating-harmful-content-online-in-sudan-policies-and-measures/",
+  "content_sha256": "9c4023e071651068036a14b649cf8bab7db1894240efba4e51529fc34a5a2d86",
+  "source_sha256": "ec3efec1c9a17de877bd8c41f14fc6e5cb35d4ca46c430398f67d64a33d7517a",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

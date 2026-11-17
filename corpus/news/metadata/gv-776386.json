@@ -1,0 +1,326 @@
+{
+  "id": "gv-776386",
+  "publisher_id": 776386,
+  "source_id": "globalvoices:776386",
+  "source_url": "https://globalvoices.org/2022/12/01/in-ecuador-disinformation-has-spread-like-a-fungus-says-ecuadorian-investigative-journalist/",
+  "title": "‘In Ecuador, disinformation has spread like a fungus,’ says Ecuadorian investigative journalist",
+  "published_at": "2022-12-01T12:30:43Z",
+  "modified_at": "2023-05-02T03:28:58Z",
+  "api_author_id": 2901,
+  "api_content_sha256": "2787946468f1a68eb2e8c0a4c3b1f83f078e6ec0940f7d4cc082b194af97afdd",
+  "api_response_sha256": "b089d92e1bc9ef52a0f74ca6487ef5c94a3419c03fd7d8c3d840ac88f7068f89",
+  "api_retrieved_at": "2026-11-16T22:20:48.534273+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 151,
+      "count": 703,
+      "name": "Ecuador",
+      "slug": "ecuador",
+      "parent": 1354
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-776386-b00001",
+      "text": "Arturo Torres is one of the only Ecuadorian journalists who focuses on a global phenomenon ever more present in our societies: disinformation. His investigations began in 2020 when COVID-19 began to have a global effect. He uncovered 13 simultaneous disinformation campaigns driven by political interests, with the goal of weakening the government of then-president Lenin Moreno. He published this investigation on the news website he cofounded, Código Vidrio.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 460,
+      "source_links": [
+        "https://www.codigovidrio.com/code/asi-propaga-el-correismo-el-virus-del-miedo-en-las-redes/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776386-b00002",
+      "text": "The journalistic work revealed the spread of alarming content and shocking videos about the city of Guayaquil that went viral around the world. “We saw that there was a link, that there was a factory of accounts. Everything was very planned, there was nothing spontaneous. That is where we established that there was much more behind it, that there was a mind thinking and people who knew very well what they were doing,” Torres said. This would mean that it is disinformation, not misinformation. The difference is important: misinformation is false information shared unknowingly, while disinformation is false information deliberately shared with the intent to deceive.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 462,
+      "body_end": 1134,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776386-b00003",
+      "text": "The journalist underlines, further, that there was a know-how. It was successful because it focused on an entity responsible for managing the pandemic — in this case, Moreno's government — “that yes, made mistakes, like all governments in the early months of the pandemic, because we were facing an unknown situation, but the extent was greatly exaggerated and overstated. There was a political objective to undermine the government.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1136,
+      "body_end": 1570,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776386-b00004",
+      "text": "Global Voices (GV): Arturo, how do we explain this to people unfamiliar with the idea? Saying disinformation makes it seem like everything that was said about Guayaquil was a lie.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1572,
+      "body_end": 1751,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776386-b00005",
+      "text": "> Arturo Torres (AT): At first it was difficult to discern. This precisely is that art of disinformation, because it sells you information as something tricky, that's half true, that basically has a mix of true and falsified data. This feeds the disinformation and amplifies it. For example, they are burning bodies in Guayaquil. In Guayaquil, there was, effectively, an overflow of bodies that people had in the streets, and nobody was collecting them from houses, and the bodies became sources of infection and were taken out into the streets. This is true. But, after this came the idea of mixing images, since they were burning in those same places furniture that had been used by people infected by the virus. Since we had no information, we were all panicking about whether this person had touched or had contact with objects, the virus would be there too. So it was decided in this case that they were burning bodies in the streets of Guayaquil. This was false, because basically what they used were [images of] bodies, which they combined with images of the people burning furniture. But they were not burning bodies in Guayaquil. The same was done with the graves, for example, there was already talk of huge graves in Guayaquil to bury the bodies because everything was out of control, and they used images from other countries that have a much larger population. Everything was a matter of overestimating the crisis and, on the other hand, showing a totally inoperative government, overwhelmed, without a plan. This, evidently, caused anxiety and concern on a topic that was central at the time.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1753,
+      "body_end": 3359,
+      "source_links": [
+        "https://www.codigovidrio.com/desinformacion/fake-news-en-picos-de-muertes-por-covid-19/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-776386-b00006",
+      "text": "GV: From when you began to investigate disinformation as a journalist at the beginning of the pandemic to now, what is the situation of the country?",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 3361,
+      "body_end": 3509,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776386-b00007",
+      "text": "> AT: In Ecuador, the government of Rafael Correa [2007–2017] took the lead on how to manage disinformation. They were very methodical, that must be recognized, they always shared a lot of studies, information with data, they were constantly mapping reality. Since 2010, they already knew what was coming, the power they were going to gain and the relevance of content on social networks. They already visualized this transition from media to the networks and began to work from that moment on in a sustained manner, since 2012, creating accounts, media linked to social networks, bypassing the big media and creating their own digital media and account apparatus on Twitter, Facebook, Instagram —which was already beginning—, but mostly on Facebook and Twitter. Why did they start disinformation? Because basically the government [of Correa] began to persecute opposition actors, journalists, social leaders, environmental activists, they began to attack them from their own pool of media on social networks […] From there began the smear campaigns against figures that they found uncomfortable. So, there was a permanent and constant narrative of demonization, of accusations […] Right now the movement of former President Correa [correísmo] is the one that best manages social networks. They are always trending on Twitter, all the time. Every week their trends are number one on Twitter. In addition, these irregular and even criminal patterns have been identified, which is why hundreds of their Facebook and Twitter accounts have been closed.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 3511,
+      "body_end": 5059,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-776386-b00008",
+      "text": "GV: While you explain that with Correísmo there is a kind of genesis of disinformation in Ecuador, considering that we are on the eve of local government elections next year, what other actors use these practices?",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 5061,
+      "body_end": 5274,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776386-b00009",
+      "text": "> AT: This [disinformation] has spread like a fungus. Basically, most politicians resort to this same tactic of hiring an advertising agency to divulge information about a candidate, but the troll center* is implicit, that is, it is part of that contract. This model has been very effective and since, after the pandemic, the exposure we have to cell phones and everything digital is much greater than conventional media. They are defining elections. There were candidates who became popular on social networks and made it to the second round [in the 2021 national elections] from platforms like Facebook, Twitter and TikTok. This practice was started by Correísmo and now I believe that most of the candidates are using it.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 5276,
+      "body_end": 6000,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-776386-b00010",
+      "text": "GV: So is disinformation a phenomenon we have to live with?",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 6002,
+      "body_end": 6061,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776386-b00011",
+      "text": "> AT: Yes, it is a phenomenon we have to live with. This is also what happens in the real world, in elections. Because of how the laws are, the one with the greatest economic resources almost always wins because our institutions are weak and people are also generally persuaded. I don't want focus only on Ecuador because it is a global phenomenon. We see what happened with Brexit, what happened with Trump in the U.S. In other words, the fact of falling into the nets of emotions is an innate matter. Emotion is much stronger than reason. So, when they found and discovered the formula to reach emotions through social networks and sell an emotion as a fact, we are in the field of fake news…",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 6063,
+      "body_end": 6757,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-776386-b00012",
+      "text": "GV: Finally, in the case of Ecuador, is there a platform that stands out as a space where more disinformation circulates?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 6759,
+      "body_end": 6880,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776386-b00013",
+      "text": "> AT: Yes, WhatsApp because anything is shared in groups. It is the medium that is used the most to misinform because it is so familiar, you believe in the friend who shares something with you and you open that content, so basically there are no filters […] I also believe that TikTok [is ripe with disinformation]. TikTok is basically video, but how will you filter disinformation through videos? In other words, it is much more complicated to filter disinformation on the TikTok platform, which is also Chinese, than to filter on Facebook or Twitter, which have done a much more extensive job. But, TikTok, due to the format, it is more difficult to distinguish what is disinformation from what is information. I think that this is going to be a genre that is going to be much more used by politicians, and I am not getting into the subject of Meta yet. That is, the whole question that comes with virtuality and what they plan to do with Facebook, of virtual reality. This is also going to be another level of misinformation that forces us journalists to first interpret reality, analyze it and then see how we are going to undertake to, specifically, raise awareness in the community. But, of course, this crisis is also an opportunity because little by little people are discerning the cacophony, the noise. People are becoming more familiar with disinformation, what it causes, and almost always resort to serious means to verify certain data. It is a practice that is beginning to gain much more strength and that evidently strengthens the media so that they maintain a rigorous verification system.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 6882,
+      "body_end": 8488,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-776386-b00014",
+      "text": "*Editor's Note: A troll center is an organized group of users who deliberately try to cause offense or conflict by posting controversial or derogatory comments online.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 8490,
+      "body_end": 8657,
+      "source_links": [],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776386-b00015",
+      "text": "Please visit the project page for more pieces from the Unfreedom Monitor.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 8659,
+      "body_end": 8732,
+      "source_links": [
+        "https://advox.globalvoices.org/special/unfreedom-monitor/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "e43c7a168150de72205b4c42097aee188347e8a5fb743ac1763df9221cc2a263",
+  "word_count": 1440,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8732,
+  "retrieved_at": "2026-11-16T22:37:18.145871+00:00",
+  "raw_html_sha256": "645014e74cbe00077d0ed8ae9ad89782e3b67b7a86c33677eb6bcf90139606ed",
+  "resolved_source_url": "https://globalvoices.org/2022/12/01/in-ecuador-disinformation-has-spread-like-a-fungus-says-ecuadorian-investigative-journalist/",
+  "canonical_url": "https://globalvoices.org/2022/12/01/in-ecuador-disinformation-has-spread-like-a-fungus-says-ecuadorian-investigative-journalist/",
+  "source_bytes": 191276,
+  "authors": [
+    {
+      "name": "Carlos E. Flores",
+      "url": "https://es.globalvoices.org/author/carlos-flores/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Ameya Nagarajan",
+      "url": "https://globalvoices.org/author/ameya-nagarajan/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 776386,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "645014e74cbe00077d0ed8ae9ad89782e3b67b7a86c33677eb6bcf90139606ed",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-738efadac4fed8cb0c95",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-12",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Carlos E. Flores",
+  "body_start": 557,
+  "body_end": 9289,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "7f9f8beb331205645b03a607a49bbefbb8bd736277dfaedd9333dcce9edc584e",
+  "text_path": "articles/gv-776386.txt",
+  "metadata_path": "metadata/gv-776386.json",
+  "attribution": "This story by Carlos E. Flores originally appeared on Global Voices. https://globalvoices.org/2022/12/01/in-ecuador-disinformation-has-spread-like-a-fungus-says-ecuadorian-investigative-journalist/",
+  "content_sha256": "887bfd86b9cc82d2ac29f2e8473f4f86e21976352e6783a7c9ffa91591088599",
+  "source_sha256": "645014e74cbe00077d0ed8ae9ad89782e3b67b7a86c33677eb6bcf90139606ed",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

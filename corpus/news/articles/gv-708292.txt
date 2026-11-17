@@ -1,0 +1,62 @@
+‘A possible violation’: Mexico's biggest telecommunications operator is blocking Tor network
+Written by: Jacobo Nájera; Vasilis Ververis
+Translated by: Laura
+Originally published by Global Voices: https://globalvoices.org/2020/06/04/a-possible-violation-mexicos-biggest-telecommunications-operator-is-blocking-tor-network/
+Published: 2020-06-04T14:01:13Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+Mexico is one of Latin America's most active countries on the Tor network, yet the country's most popular telecommunications operator, Telmex, has practically blocked the network's entire host system. This is what a team of researchers from the National Autonomous University of Mexico (UNAM) and the Magma project, of which the authors of this article are members, found in their recent investigations. This is a worrying finding for defenders of free speech and privacy, since it is viewed as a setback in the exercise of rights.
+
+The Tor network is a free and open-source software that is used throughout the world for anonymous communication. It offers alternatives for those who wish to exercise freedom of access and speech online by maintaining their privacy and anonymity. To this end, it relies on a network of more than 6000 nodes or relays that provide a worldwide anonymous routing, also known metaphorically as “onion routing” because of the various layers that make up this network.
+
+Mexico is a country where freedom of speech is threatened, and this could thereby explain the interest in having a secure way of interacting online. In 2020, Mexico came 143 out of 180 countries in terms of press freedom, according to Reporters without Borders. Journalists and defenders of human rights often put their lives at risk by doing their job.
+
+Onion routing provides anonymity by transmitting data from the websites we visit through a series of three relays, in such a manner that the final destination cannot know the connection's origin. In Mexico, there are between 10,000 and 15,000 users per day according to Tor. Civil society and communities have boosted the use of the Tor network. Its projects focus on the use of anonymous inboxes for whistleblowers in journalistic writing and human rights defense work.
+
+In recent years, a team of academics, students and defenders of human rights have pushed for universities like UNAM or the Metropolitan Autonomous University, to work with infrastructure for the Tor network. Some view this as “digital self-defense,” or in other words, a political act of self-management to develop alternatives with communities.
+
+Such involvement is reflected in the increased number of relays installed in Mexico. According to Tor network sources, this number has increased in the last three years from 1 or 2 relays to more than 20 in the most active logs. However, the number reduced significantly when Telmex began to block them.
+
+Is Telmex blocking this network?
+
+As the team of researchers from UNAM and the Magma project documented in their analysis, Mexico's most widely used telecommunications operator, Telmex, has been blocking the Tor network.
+
+Telmex is a private company owned by Carlos Slim, the wealthiest man in Mexico, and is one of the largest telecommunication companies in Latin America. It offers fixed-line telephone services and is considered the “king of fixed broadband internet” in most parts of Mexico.
+
+Yet, operators who are keen to continue or begin their involvement with the Tor network have been forced to find internet providers other than Telmex.
+
+The first public report on the Telmex block by Tor network operators dates back to 2016. A Tor network node operator said the following in a Tor project mailing list:
+
+> He estado ejecutando un nodo (retransmisión sin salida) durante aproximadamente 5 años. Desde el año nuevo, noté que mi nodo se cayó, y que no apareció en los lugares habituales.
+
+> I have been running a node (non-exit relay) for around 5 years now. Since the year began, I noticed that my node had crashed and wasn't appearing in the usual places.
+
+The node operator also added that there used to be between 5 and 8 relays in Mexico, but at that time only 1 was appearing online. This report coincides with the Tor network's history logs, which show a significant fall in the number of relays between 2015 and 2017.
+
+The Tor network system relies on 9 servers and 1 backup, known as “directory authorities,” which are located in Europe, the United States and Canada.
+
+Telmex has blocked access to 7 of these directory authorities. Users can access the Tor network but it is not possible to install relays because it hasn't been possible to establish a stable connection with the directory authorities since 2016. These are required for the reliability of the Tor network as a whole.
+
+The chart on the right shows measurements that were taken on a regular basis between January and June 2019. The measurements for the Telmex network are shown in red or brown; 7 of the 10 Tor directory authorities have been blocked.
+
+The government agency charged with regulating telecommunications in Mexico, the Federal Telecommunications Institute, became formally aware of the Telmex block on 31 October 2019 through a Recommendation concerning practices that involve Net Neutrality, which its advisory board had shared. In its recommendation, the board argues that:
+
+> (…) se puede tener una posible violación al no permitir la libre elección de privacidad y anonimato que una persona pueda elegir al usar servicio de internet de determinado proveedor.
+
+> (…) by not allowing free choice of privacy or anonymity, which a person can choose by using internet services of a specific provider, there may be a possible violation.
+
+It also adds:
+
+> Como es evidente, la privacidad y la neutralidad serán letra muerta en las leyes mientras el instituto no actué de forma más proactiva.
+
+> As is evident, privacy and neutrality will be remain on paper only as long as the Institute does not act more proactively.
+
+Despite the Mexican Federal Telecommunications Law stipulating that internet providers must adhere to “Free choice, Non-discrimination, Privacy, Traffic control, Quality and Development,” sustained by the infrastructure, the Institute did not respond.
+
+For their part, Telmex has denied blocking operators, on several occasions, when asked to stop doing so.
+
+Within this digital framework, operators in Mexico consider the block to be a breach in the exercise of human rights. But in spite of this block, Mexico's community of node operators obtained more than 20 relays on the Tor network and subsequently set up more than 10 in the last 3 years by dealing with other internet providers. However, with Telmex being the country's most widely used provider, this measure is a difficult obstacle to overcome.
+
+After the publication of this story in Spanish, Tor shared it on their Twitter account, the Mexican national press took up the news and Telmex answered by stating that “Telmex is committed to its users’ freedom of navigation”, that it does not have a policy of blocking applications and that the directory authorities were blocked because they were allegedly linked to the ransomware “WannaCry.” The researchers of this story then answered back, stating that the block existed since 2015 and continues until today, regardless of the temporary attack of “WannaCry”. They offered their help to Telmex to solve any issues.

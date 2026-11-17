@@ -1,0 +1,413 @@
+{
+  "id": "gv-736820",
+  "publisher_id": 736820,
+  "source_id": "globalvoices:736820",
+  "source_url": "https://globalvoices.org/2021/05/29/colombians-save-the-evidence-as-they-denounce-social-media-censorship-of-protests/",
+  "title": "Colombians ‘save the evidence’ as they denounce social media censorship of protests",
+  "published_at": "2021-05-29T12:18:59Z",
+  "modified_at": "2021-06-08T10:28:59Z",
+  "api_author_id": 2883,
+  "api_content_sha256": "42dd6b38c01a9dd1dd6852fe0e3d9d715d04c2a742b90402a34c20e06f22d1b5",
+  "api_response_sha256": "209d251d160f97b2292e453023b10abcb0e3517753e5fed0c99aea9917505d95",
+  "api_retrieved_at": "2026-11-16T22:20:35.207607+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 150,
+      "count": 1234,
+      "name": "Colombia",
+      "slug": "colombia",
+      "parent": 1354
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-736820-b00001",
+      "text": "This story was originally published on Meedan, and an edited version is re-published on Global Voices.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 102,
+      "source_links": [
+        "https://meedan.com/blog/memory-and-censorship-in-colombias-national-strike-paronacional/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00002",
+      "text": "Colombian protesters have denounced social media platforms’ censorship of their posts about the country's “paro nacional” (“national strike”)—ongoing anti-government demonstrations. This includes internet disruption in Cali, one of the major sites of the protests. To strike back at this censorship, a number of initiatives have emerged that aim to preserve the memory of this historic moment; this is crucial as it guarantees the independence of the historical content from platforms’ servers and content moderation policies.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 104,
+      "body_end": 630,
+      "source_links": [
+        "https://netblocks.org/reports/internet-disrupted-in-colombia-amid-anti-government-protests-YAEvMvB3",
+        "https://twitter.com/MafeCarrascal/status/1391575399281446920",
+        "https://www.bbc.com/news/world-latin-america-56986821",
+        "https://www.publimetro.co/co/actualidad/2021/05/06/usuarios-de-redes-denuncian-censura-sobre-contenido-del-paro.html",
+        "https://www.theguardian.com/global-development/2021/may/10/cali-colombia-protests-violence"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00003",
+      "text": "The #paronacional protests started on April 28 in several cities in Colombia as the population rejected the tax reform presented by President Ivan Duque. The proposal favored the Colombian elite, making the lower and middle classes responsible for paying off the country's debts acquired in recent years, including efforts to combat COVID-19. The presidential response was to deploy the military and police forces to quell the civilian protesters, resulting in 61 deaths as of press time. After the first weeks of the protests, the proposed tax was withdrawn, the Colombian population is still protesting.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 632,
+      "body_end": 1237,
+      "source_links": [
+        "http://www.indepaz.org.co/victimas-de-violencia-homicida-en-el-marco-del-paro-nacional/",
+        "https://twitter.com/hashtag/paronacional?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag",
+        "https://www.amnesty.org/en/latest/news/2021/05/colombia-preocupan-las-denuncias-de-desapariciones-y-violencia-sexual-contra-manifestantes/",
+        "https://www.bloomberg.com/news/articles/2021-05-13/colombia-s-tax-reform-backlash-warns-others-not-to-balance-budgets-just-yet"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00004",
+      "text": "Records of the rebellion taking place on the streets have been largely shared on social networks, and comments emerged from protesters declaring that they were being censored on Instagram, Twitter and Facebook. The Fundación de Libertad de Prensa (Colombian Press Freedom Foundation) also released a strong statement about the censoring of content as well as the violence against journalists during the protests and digital rights group, Fundación Karisma, also demanded more explanations from social media companies for the removals.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1239,
+      "body_end": 1773,
+      "source_links": [
+        "https://flip.org.co/index.php/es/informacion/pronunciamientos/item/2721-silencio-de-autoridades-en-ataques-contra-el-periodismo-promueve-la-censura",
+        "https://twitter.com/Karisma/status/1390454187771707392?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1390454187771707392%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.pulzo.com%2Ftecnologia%2Fcensura-redes-sociales-colombia-que-limites-tienen-facebook-twitter-PP1049844",
+        "https://twitter.com/MafeCarrascal/status/1391575399281446920"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00005",
+      "text": "In response, Facebook stated that its AI technology was trained to remove content that was violent and that it had a team of 30,000 content moderators on the platform. It’s important to understand the impact of these platform rules, as it’s unclear how much of the content had been wrongly labeled and how much was restored. To accomplish this, a record of incidents is needed as well as a report from the platforms.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1775,
+      "body_end": 2191,
+      "source_links": [
+        "https://forbes.co/2021/05/06/tecnologia/controversia-por-censura-de-facebook-e-instagram-a-contenidos-sobre-el-paro-nacional/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00006",
+      "text": "> Several tweets of protesters commenting on content being erased from Instagram. “Did anyone else have issues with instagram when trying to view stories about the strike?” “Why is Instagram deleting content?” “All my stories from yesterday about Colombia were deleted. Did this happen to anybody else?”",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2193,
+      "body_end": 2496,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-736820-b00007",
+      "text": "Preserving evidence",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2498,
+      "body_end": 2517,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00008",
+      "text": "During this short time, initiatives were created to address the preservation and documentation of the content being censored on social media.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2519,
+      "body_end": 2660,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00009",
+      "text": "Karisma Foundation is collecting content that is being removed from Instagram, Twitter and Facebook through a questionnaire shared on social media via activist groups. For the foundation, these content takedowns indicate a violation of freedom of expression and dissemination of information.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2662,
+      "body_end": 2953,
+      "source_links": [
+        "https://fkarismap.limequery.com/737533?lang=es-CO",
+        "https://web.karisma.org.co/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00010",
+      "text": "The University of Chile created a Twitter bot called @ArchivaColombia and the hashtag #AseguraLaEvidencia (“Save the Evidence”). Content that has that hashtag on Twitter will be automatically saved on their servers and can also be sent via a Telegram channel.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2955,
+      "body_end": 3214,
+      "source_links": [
+        "https://t.me/ArchivaColombia",
+        "https://twitter.com/ArchivaColombia"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00011",
+      "text": "> Image showing how the Twitter bot works. Once someone posts on Twitter, a user can reply to it with the hashtag #AseguraLaEvidencia and the content is saved on Telegram and the user can receive it as well.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3216,
+      "body_end": 3423,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-736820-b00012",
+      "text": "Sharing resistance experiences on social media",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3425,
+      "body_end": 3471,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00013",
+      "text": "There is power in being connected and sharing micro and macro political learnings through social media. Associations, journalists and civil society have been enhancing democratic ecosystems and networks by doing so.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3473,
+      "body_end": 3688,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00014",
+      "text": "In Colombia, activists observed that military violence increases at night, so the protests should happen only in daylight and withdraw when it is dark. “Be water, my friend” is a famous saying from martial artist Bruce Lee and has been a slogan for resistance strategy adaptation in this case. This slogan has also been a part of the 2019 Hong Kong protests against the extradition bill, as protesters changed the patterns of where they would gather in the city, confounding policing efforts and succeeding in self-organizing publicly.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3690,
+      "body_end": 4225,
+      "source_links": [
+        "https://www.instagram.com/p/COiHF_hp61D/?igshid=1uu6d7yc0y3i7",
+        "https://www.scmp.com/news/hong-kong/politics/article/3015627/be-water-my-friend-protesters-take-bruce-lees-wise-saying"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00015",
+      "text": "Instagram post by Baudoap: “To be water is to sabotage the fear-based script. Protest by day and at nighttime stay at home”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4227,
+      "body_end": 4350,
+      "source_links": [
+        "https://www.instagram.com/p/COiHF_hp61D/?utm_source=ig_web_copy_link"
+      ],
+      "source_kind": "dd",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00016",
+      "text": "Yet, even if the protestors evade the military, they have limited opportunities to evade social media's content moderation policies. Last August, several Latin American civil society organizations came together to propose ways to regulate large platforms from a Latin American perspective, recommending transparency, processes, co-regulation, defense, and appeal mechanisms.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4352,
+      "body_end": 4726,
+      "source_links": [
+        "https://intervozes.org.br/publicacoes/padroes-para-uma-regulacao-democratica-das-grandes-plataformas-que-garanta-a-liberdade-de-expressao-online-e-uma-internet-livre-e-aberta/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00017",
+      "text": "An example of this is the proposed text for the Terms of Service of social media platforms, specifically about how content moderation could be implemented with the user´s freedom of expression in mind (translated from Portuguese):",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4728,
+      "body_end": 4958,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00018",
+      "text": "“For any other measure of prioritization or restriction to expression and other content generated by its users that the platform can consider—for reasons commercial or other—“offensive,” “inappropriate,” “indecent” and vague definitions or similar measures that may illegitimately affect freedom of expression, large platforms must provide mechanisms and warnings for users—voluntarily and based on their moral, religious, cultural, political or other factors—that decide which content they want to have access to and which they do not. Such content should not be prohibited, excluded or reduced in any way if they do not meet the tripartite test of legality, necessity and proportionality, since this would disproportionately affect the right to freedom of expression of users.”",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4960,
+      "body_end": 5739,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00019",
+      "text": "In the absence of practical responses from the platforms, civil society in other countries in the region has taken this matter to the courts. In April 2021 in Brazil, for example, Google was found guilty of committing “prior censorship” when they removed a video from YouTube of the Collective Intervozes. They were fined 10,000 United States dollars, which set a national precedent for such cases. In the sentencing, the judge, José Carlos Ferreira Alves, said, “The fact is that whoever must impose content removal and therefore restrict/limit freedom of expression for the protection of rights is the State, through the Judiciary,” implying that this is not the role of a private company.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5741,
+      "body_end": 6432,
+      "source_links": [
+        "https://intervozes.org.br/justica-confirma-decisao-e-condena-google-por-censura-previa/",
+        "https://olhardigital.com.br/2020/12/23/noticias/justica-condena-google-a-pagar-r-50-mil-por-censura-previa-a-coletivo/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00020",
+      "text": "An example of the online response to Instagram censorship during the protests was a digital action organized by the Bogotá based NGO Temblores. In setting up S.O.S Maps the organization aimed to “show the world the true reality of the country.” They created a step-by-step call to action for people to add their photos and videos of what is currently taking place in Colombia to Google Maps’ most visited tourist sites. For Temblores, this is a way for #soscolombia to be seen and heard on all five continents.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6434,
+      "body_end": 6944,
+      "source_links": [
+        "https://www.sosmaps.com/",
+        "https://www.temblores.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00021",
+      "text": "Another internet comeback is a meme that was shared on Twitter portraying content moderators as nuns. It connected social media companies, and their content moderators, to colonial, state, and religious powers that have historically been responsible for cultural and political censorship in the region:",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6946,
+      "body_end": 7248,
+      "source_links": [
+        "https://twitter.com/andreslayer51/status/1391581051777060869/photo/1"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00022",
+      "text": "Tweets, videos, pictures, and memes are digital artifacts that are both individual historical records and a part of the collective memory of countries and communities. In Latin America, repression and erasure of resistance movements are shared by every country as an inheritance from the colonial and military periods. In Colombia, the press has also been systematically censored by both the government and the drug trafficking realm. During the 1960s dictatorships, the censors were state representatives who worked within the newsrooms and regulated what was published daily. Similar censorship happened in Chile in 2019 during the protests, and at the time, the responses from the platforms varied from content labeled as terrorism to copyright violations.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7250,
+      "body_end": 8009,
+      "source_links": [
+        "https://flip.org.co/index.php/es/atencion-a-periodistas/mapa-de-agresiones",
+        "https://www.t13.cl/noticia/tendencias/instagram-bloquea-protestas-en-chile"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736820-b00023",
+      "text": "These examples only highlight the importance of online spaces that guarantee freedom of expression, access to information, and to document human rights violations. It showcases the importance of archival work in the region that focuses on community resistance, political dissidents and activist work. Recordkeepers of the Resistance is an envisioned response to highlighting this issue and raising awareness of how this happens systematically in the region. Meedan not only looks at dissenting voices during political protests but also representations of diverse bodies and sexual expressions online.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 8011,
+      "body_end": 8611,
+      "source_links": [
+        "https://meedan.com/blog/preserving-latin-american-activist-history-on-social-media/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "8cd3c6db69e126bc8938ff74b1b112c49afda947e735443a4ac2dec99acffc48",
+  "word_count": 1314,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 4,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8611,
+  "retrieved_at": "2026-11-16T22:30:39.089004+00:00",
+  "raw_html_sha256": "e46d77a8b8e5cecb66bbf85d0890c5b7c3e5fe53bae21b5ff938916ddfca9bbd",
+  "resolved_source_url": "https://globalvoices.org/2021/05/29/colombians-save-the-evidence-as-they-denounce-social-media-censorship-of-protests/",
+  "canonical_url": "https://globalvoices.org/2021/05/29/colombians-save-the-evidence-as-they-denounce-social-media-censorship-of-protests/",
+  "source_bytes": 195475,
+  "authors": [
+    {
+      "name": "Isabella Barroso",
+      "url": "https://globalvoices.org/author/isabella-barroso/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 736820,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "e46d77a8b8e5cecb66bbf85d0890c5b7c3e5fe53bae21b5ff938916ddfca9bbd",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-5064e57fe5e5640c05d9",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-05",
+    "eligible_month_documents": 87,
+    "selected_month_documents": 73,
+    "inclusion_probability": 0.8390804597701149,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Isabella Barroso",
+  "body_start": 504,
+  "body_end": 9115,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "744b6d791119a65445d847b6b1711cdc43697f73e0a46c9814190903a76bef44",
+  "text_path": "articles/gv-736820.txt",
+  "metadata_path": "metadata/gv-736820.json",
+  "attribution": "This story by Isabella Barroso originally appeared on Global Voices. https://globalvoices.org/2021/05/29/colombians-save-the-evidence-as-they-denounce-social-media-censorship-of-protests/",
+  "content_sha256": "1d49d7e9fddc2bc1ddae1e1d99c34c7b2352c9f6e79399ad782ad25be6dc3bb7",
+  "source_sha256": "e46d77a8b8e5cecb66bbf85d0890c5b7c3e5fe53bae21b5ff938916ddfca9bbd",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

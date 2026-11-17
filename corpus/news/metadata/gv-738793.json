@@ -1,0 +1,486 @@
+{
+  "id": "gv-738793",
+  "publisher_id": 738793,
+  "source_id": "globalvoices:738793",
+  "source_url": "https://globalvoices.org/2021/08/11/after-writing-about-police-killings-editor-of-the-intercept-brazil-is-made-target-of-investigation/",
+  "title": "After writing about police killings, editor of The Intercept Brazil is made target of investigation",
+  "published_at": "2021-08-11T19:18:00Z",
+  "modified_at": "2021-08-11T15:21:02Z",
+  "api_author_id": 2614,
+  "api_content_sha256": "cf1316906b3f36823af986f627f3b252222c5c4cbd646414351fc4bd9dd5f024",
+  "api_response_sha256": "8d392be55815255d254b893b7dbb35e5eb28ffd109a939acbd59d880e30c796a",
+  "api_retrieved_at": "2026-11-16T22:20:37.553652+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-738793-b00001",
+      "text": "In early June, a month after publishing a newsletter about the possible existence of a group of killers within the Civil Police of Rio de Janeiro state, the journalist and executive editor of The Intercept Brasil, Leandro Demori, received a strange email.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 255,
+      "source_links": [
+        "https://theintercept.com/2021/06/08/denuncia-core-leandro-demori/",
+        "https://theintercept.com/brasil/",
+        "https://theintercept.com/equipe/leandrodemori/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00002",
+      "text": "“I sent it to the lawyers because I didn't know if it was true”, he told Global Voices. The message informed him of the opening of a civil inquiry by the police to investigate his reporting.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 257,
+      "body_end": 447,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00003",
+      "text": "The justification presented by the police was that the journalist slandered their department, the Coordination of Special Resources (Core). “Which is absurd. Slander against institutions does not exist”, he says.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 449,
+      "body_end": 661,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00004",
+      "text": "In addition, there is no Brazilian legislation restricting the dissemination of journalistic content through newsletters, and the Brazilian Constitution states that: “No law shall contain a provision that could constitute an obstacle to the full freedom of journalistic information in any media platform.”",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 663,
+      "body_end": 968,
+      "source_links": [
+        "https://kbadvogados.com.br/liberdade-de-imprensa-o-que-diz-a-constituicao/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00005",
+      "text": "The May 8 newsletter, which was mailed to the site's subscribers with a text signed by himself, focused on Core's actions, which resulted in 2020 in at least 41 homicides on the outskirts of Rio de Janeiro.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 970,
+      "body_end": 1176,
+      "source_links": [
+        "https://www1.folha.uol.com.br/cotidiano/2021/05/responsavel-por-acao-no-jacarezinho-core-registra-tragedias-e-letalidade.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00006",
+      "text": "Among the cases listed was the May 2021 Jacarezinho slaughter, during which police killed 28 people in an illegal operation to, allegedly, combat drug gangs in the Jacarezinho favela in Rio.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1178,
+      "body_end": 1368,
+      "source_links": [
+        "https://www.bbc.com/portuguese/brasil-57208131",
+        "https://www.hrw.org/news/2021/05/20/recommendations-improving-forensic-analysis-and-investigations-police-killings-rio",
+        "https://www.nytimes.com/2021/05/06/world/americas/brazil-rio-police-shootout.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00007",
+      "text": "The operation happened despite a ban on this type of police activity in the city's favelas during the pandemic by the Brazilian Supreme Court. Jacarezinho was the deadliest police raid in the city of Rio de Janeiro to date, according to experts.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1370,
+      "body_end": 1615,
+      "source_links": [
+        "https://g1.globo.com/rj/rio-de-janeiro/noticia/2020/06/05/fachin-proibe-operacoes-em-favelas-do-rio-durante-a-pandemia.ghtml",
+        "https://g1.globo.com/rj/rio-de-janeiro/noticia/2021/05/06/operacao-no-jacarezinho-rio-tem-numero-recorde-de-mortes.ghtml",
+        "https://www.theguardian.com/world/2021/may/06/rio-de-janeiro-police-raid-favela-jacarezinho"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00008",
+      "text": "The Rio de Janeiro State Police, which includes Military and Civil units, has been blamed for the most kills in Brazil by security forces, according to data analysed by Piauí magazine.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1617,
+      "body_end": 1801,
+      "source_links": [
+        "https://g1.globo.com/rj/rio-de-janeiro/noticia/2020/06/22/rj-tem-maior-numero-de-mortes-por-policiais-em-22-anos-e-o-2o-menor-indice-de-homicidios-ja-registrado-pelo-isp.ghtml",
+        "https://piaui.folha.uol.com.br/policia-que-mais-mata/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00009",
+      "text": "In 2019, as documented by the Brazilian Forum of Public Security, Brazil registered at least 5,804 people killed by police officers, of which 1,810 were in Rio. A poll by Datafolha institute the same year found that 51% of Brazilians were afraid of the police and 47% did not trust the units.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1803,
+      "body_end": 2095,
+      "source_links": [
+        "https://g1.globo.com/monitor-da-violencia/noticia/2020/04/16/numero-de-pessoas-mortas-pela-policia-cresce-no-brasil-em-2019-assassinatos-de-policiais-caem-pela-metade.ghtml",
+        "https://g1.globo.com/politica/noticia/2019/04/11/datafolha-aponta-que-51percent-dos-brasileiros-tem-medo-da-policia-e-47percent-confiam-nos-policiais.ghtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00010",
+      "text": "In the first half of 2020, 775 people were killed by police forces in Rio, according to news outlet G1, the highest number in the country amidst a rise in police killings.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2097,
+      "body_end": 2268,
+      "source_links": [
+        "https://g1.globo.com/monitor-da-violencia/noticia/2020/09/03/no-de-pessoas-mortas-pela-policia-cresce-no-brasil-no-1o-semestre-em-plena-pandemia-assassinatos-de-policiais-tambem-sobem.ghtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00011",
+      "text": "On average, Rio's police officers killed one person every ten hours from January 1998 and March 2021, says O Globo newspaper.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2270,
+      "body_end": 2395,
+      "source_links": [
+        "https://oglobo.globo.com/rio/policia-do-rio-matou-em-media-uma-pessoa-cada-dez-horas-desde-1998-25007223"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00012",
+      "text": "In his story, Demori asked that the circumstances, intentions, and culpability for these killings to be investigated. The Intercept Brasil has a history of reporting on the actions of “militias“, the colloquial name for paramilitary groups with corrupt police officers among their members.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2397,
+      "body_end": 2686,
+      "source_links": [
+        "https://theintercept.com/2021/04/24/grampos-comparsas-miliciano-adriano-da-nobrega-bolsonaro/",
+        "https://www.ft.com/content/6dfd75c9-579e-445c-82af-2e7c3cb16f9a",
+        "https://www.uol.com.br/splash/colunas/pagina-cinco/2020/10/21/livro-aponta-jair-bolsonaro-como-capitao-da-republica-das-milicias.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00013",
+      "text": "The militias date back to the military dictatorship days in Brazil, when death squads in several Brazilian states operated with the claimed motive of combatting organized crime and drug trafficking. In Rio, they gained force as a parallel power fighting for territorial control in poor areas where the state was nearly absent, as described in Republic of Militias — From Death Squads to the Bolsonarist Age, a recent book by the journalist Bruno Paes Manso.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2688,
+      "body_end": 3145,
+      "source_links": [
+        "https://guiadoestudante.abril.com.br/atualidades/milicias-sua-origem-e-ascensao-como-poder-paralelo-no-brasil/",
+        "https://www.uol.com.br/splash/colunas/pagina-cinco/2020/10/21/livro-aponta-jair-bolsonaro-como-capitao-da-republica-das-milicias.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00014",
+      "text": "But, as Demori pointed out in the newsletter, a great deal about how and where the militias operate is not known. He raises the hypothesis that they would benefit from the killings in Jacarezinho and other territories, with the complacency of the Civil Police of Rio de Janeiro. The same point was raised by columnists in different mediums, calling the Jacarezinho massacre a territorial dispute.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3147,
+      "body_end": 3543,
+      "source_links": [
+        "https://jornalistaslivres.org/operacao-matou-25-jacarezinho-beneficia-milicia-de-bolsonaro/",
+        "https://www1.folha.uol.com.br/cotidiano/2021/05/geografia-e-evolucao-da-policia-civil-e-das-milicias-explicam-jacarezinho.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00015",
+      "text": "Demori won't reveal whether the Intercept is working on a report with concrete evidence on some of these angles, but says the newsletter is an “important and strong” communication channel and will continue despite the threats.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3545,
+      "body_end": 3771,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00016",
+      "text": "According to O Globo, four days after the text was sent, on May 12, Core police officers sought to open the inquiry because they “felt offended” by it.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3773,
+      "body_end": 3924,
+      "source_links": [
+        "https://oglobo.globo.com/brasil/policia-civil-intima-jornalista-leandro-demori-apos-reportagem-sobre-acao-que-deixou-28-mortos-no-jacarezinho-25053655"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00017",
+      "text": "One of the authors of the investigation request is also one of the witnesses in the investigation targeting Demori, commissioner Pablo Dacosta Sartori. He is the chief officer of the Police Station for the Repression of Computer Crimes (DRCI), a division of the Civil Police.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3926,
+      "body_end": 4201,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00018",
+      "text": "Sartori is known for having called for investigations against other journalists and internet personalities, such as anti-Bolsonaro YouTuber Felipe Neto. These inquiries ended up being shelved by higher courts.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4203,
+      "body_end": 4412,
+      "source_links": [
+        "https://noticiasdatv.uol.com.br/noticia/televisao/justica-arquiva-acao-contra-bonner-e-renata-e-da-bronca-em-flavio-bolsonaro-51186",
+        "https://www.metropoles.com/brasil/genocida-justica-manda-arquivar-investigacao-contra-felipe-neto",
+        "https://www.metropoles.com/colunas/guilherme-amado/delegado-que-investigou-felipe-neto-e-bonner-agora-mira-jornalista-do-intercept",
+        "https://www.nytimes.com/video/opinion/100000007227771/coronavirus-covid-brazil-bolsonaro.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00019",
+      "text": "For Demori, the actions of the commissioner seem to be a personal attack. “Everything indicates that it is”, he says. A corroborating piece of evidence is that Sartori omitted mention of a prior relationship with Core. He served for three years as head of Core's Aerospace Service, according to Congresso em Foco news outlet.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4414,
+      "body_end": 4739,
+      "source_links": [
+        "https://congressoemfoco.uol.com.br/seguranca-publica/delegado-que-investiga-jornalista-por-faccao-da-core-e-ex-diretor-da-core/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00020",
+      "text": "Demori was called to testify at the police station on June 11 but decided not to show up. “The police state that has been eroding democracy in Brazil does not seem interested in investigating police officers. Instead, it prefers to harass journalists”, wrote The Intercept Brazil in an editorial explaining Demori's decision not to testify.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4741,
+      "body_end": 5081,
+      "source_links": [
+        "https://theintercept.com/2021/06/10/por-que-o-intercept-decidiu-que-leandro-demori-nao-vai-se-submeter-ao-depoimento-policial-contra-nosso-jornalismo/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00021",
+      "text": "Attacks against journalists through institutions such as the police are not uncommon in Brazil. According to a report from the National Federation of Journalists (FENAJ), 2020 was the most violent year since the early 1990s for journalists. There were 428 cases of attacks, including two murders, representing an increase of 105% compared to 2019.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5083,
+      "body_end": 5430,
+      "source_links": [
+        "https://fenaj.org.br/violencia-contra-jornalistas-cresce-10577-em-2020-com-jair-bolsonaro-liderando-ataques/",
+        "https://g1.globo.com/ms/mato-grosso-do-sul/noticia/2020/02/13/jornalista-brasileiro-e-executado-por-pistoleiros-na-fronteira-de-ms-com-o-paraguai.ghtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00022",
+      "text": "The Brazilian Association of Investigative Journalism (Abraji) considered the subpoena an attempt to curtail the work of the press. A letter in support of the journalist posted on social networks started to collect signatures.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5432,
+      "body_end": 5658,
+      "source_links": [
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd0IRp6N7StG8sAupYUp8dY0Xon4-1kxfRkQqtHc-j-xQ7uQA/viewform?usp=form_confirm",
+        "https://www.abraji.org.br/noticias/abraji-questiona-abertura-de-inquerito-para-investigar-jornalista-do-intercept-brasil"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00023",
+      "text": "> Manifesto against subpoena of journalist Leandro Demori @demori by the Rio police already has more than 100 signatures",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5660,
+      "body_end": 5780,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-738793-b00024",
+      "text": "Demori told Global Voices that he is safe, and watched over by security guards provided by The Intercept. According to him, the website and the newsletter follow their normal schedule.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5782,
+      "body_end": 5966,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00025",
+      "text": "When asked if the tactic of subpoenaing journalists to curtail freedom of expression is effective, he answered: “It is effective to some extent, but I do not submit myself to the curtailment of my constitutional freedom to do my job in my country. As long as it exists, I will make use of this right as a Brazilian citizen”.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5968,
+      "body_end": 6292,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00026",
+      "text": "In relation to press freedom in Brazil, Demori emphasizes that this episode demonstrates that some Brazilians do not seem to appreciate the freedoms guaranteed by the Constitution.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6294,
+      "body_end": 6474,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738793-b00027",
+      "text": "“Maybe they don't like the country they live in and would prefer to live in a dictatorship. If it's up to us, Brazil won't become one.”",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6476,
+      "body_end": 6611,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "6ddb3aaa75e25451bff3c932a60407a1bc6f8413bf1c08c2e7fef97cd9730791",
+  "word_count": 1076,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6611,
+  "retrieved_at": "2026-11-16T22:31:32.404354+00:00",
+  "raw_html_sha256": "85b5e7f0707166d851086258b5b9c4e34b86c434acf5278031f091f1356dd8a3",
+  "resolved_source_url": "https://globalvoices.org/2021/08/11/after-writing-about-police-killings-editor-of-the-intercept-brazil-is-made-target-of-investigation/",
+  "canonical_url": "https://globalvoices.org/2021/08/11/after-writing-about-police-killings-editor-of-the-intercept-brazil-is-made-target-of-investigation/",
+  "source_bytes": 193042,
+  "authors": [
+    {
+      "name": "Giovana Fleck",
+      "url": "https://globalvoices.org/author/giovana-fleck/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 738793,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "85b5e7f0707166d851086258b5b9c4e34b86c434acf5278031f091f1356dd8a3",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-533b00f1b3a08bc5558f",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-08",
+    "eligible_month_documents": 88,
+    "selected_month_documents": 74,
+    "inclusion_probability": 0.8409090909090909,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Giovana Fleck",
+  "body_start": 534,
+  "body_end": 7145,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b7a979d9a2f48d23f8db824e233e5aba2b48c5977d7df4d0062570daa700a2bf",
+  "text_path": "articles/gv-738793.txt",
+  "metadata_path": "metadata/gv-738793.json",
+  "attribution": "This story by Giovana Fleck originally appeared on Global Voices. https://globalvoices.org/2021/08/11/after-writing-about-police-killings-editor-of-the-intercept-brazil-is-made-target-of-investigation/",
+  "content_sha256": "a10a156056d0d9d2115cfab71e9cd4f1e21ea6328319bcc7418882128ae6667f",
+  "source_sha256": "85b5e7f0707166d851086258b5b9c4e34b86c434acf5278031f091f1356dd8a3",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

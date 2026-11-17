@@ -1,0 +1,369 @@
+{
+  "id": "gv-699019",
+  "publisher_id": 699019,
+  "source_id": "globalvoices:699019",
+  "source_url": "https://globalvoices.org/2020/03/03/lost-in-translation-why-google-translate-often-gets-yoruba-and-other-languages-wrong/",
+  "title": "Lost in translation: Why Google Translate often gets Yorùbá — and other languages — wrong",
+  "published_at": "2020-03-03T14:54:46Z",
+  "modified_at": "2020-03-03T15:53:41Z",
+  "api_author_id": 2662,
+  "api_content_sha256": "ceafd9fb657fabea4484c3d95d420fde0a29b53baf8123d764571fb4743b556d",
+  "api_response_sha256": "6400a2a69e2b1612f7bdabedd6b26a0bd74341ef3b4189d69f04207808bc2f03",
+  "api_retrieved_at": "2026-11-16T22:20:23.593459+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 243,
+      "count": 6007,
+      "name": "Development",
+      "slug": "development",
+      "parent": 238
+    },
+    {
+      "id": 7,
+      "count": 6125,
+      "name": "Ideas",
+      "slug": "ideas",
+      "parent": 238
+    },
+    {
+      "id": 296,
+      "count": 2217,
+      "name": "Language",
+      "slug": "language",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 131,
+      "count": 1641,
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 2954,
+      "count": 11,
+      "name": "Yoruba",
+      "slug": "yoruba",
+      "parent": 317
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-699019-b00001",
+      "text": "The English language has dominated online discourse as the “universal” language of communication since the inception of the internet. As of February 2020, over half of the websites on the internet are in English, according to WebTech3.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 235,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Languages_used_on_the_Internet"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00002",
+      "text": "But as more people get online who speak different languages, it has sparked a linguistic digital revolution — immediate access to English translations of multiple languages with the click of a button.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 237,
+      "body_end": 437,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00003",
+      "text": "Many tech companies have recently put effort into documenting non-English words on the internet, paving the way for the digitization of multiple languages. Google, Yoruba Names, Masakhane MT and ALC are examples of companies and start-ups that have been trying to marry technology with non-English languages.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 439,
+      "body_end": 747,
+      "source_links": [
+        "https://translate.google.com/",
+        "https://twitter.com/AremuLtd?s=20",
+        "https://twitter.com/MasakhaneMt?s=20",
+        "https://twitter.com/YorubaNames?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00004",
+      "text": "In late February 2020, Google announced that it would add five new languages to its Google Translate services, including Kinyarwanda, Uighur, Tatar, Turkmen and Odia, after a four-year hiatus on adding new languages.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 749,
+      "body_end": 965,
+      "source_links": [
+        "https://www.theverge.com/2020/2/26/21154417/google-translate-new-languages-support-odia-tatar-turkmen-uyghur-kinyarwanda"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00005",
+      "text": "But have you ever clicked on the translation option and realized that the English translation is, at best, just OK? And at worst, not accurate at all?",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 967,
+      "body_end": 1117,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00006",
+      "text": "There are many controversies and difficulties when it comes to doing this kind of language translation and access work.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1119,
+      "body_end": 1238,
+      "source_links": [
+        "https://www.theatlantic.com/technology/archive/2018/01/the-shallowness-of-google-translate/551570/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00007",
+      "text": "Twitter offers Yorùbá language translation into English via Google Translate as much as possible, and usually, the outcome isn’t totally bad — perhaps a few words are correct.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1240,
+      "body_end": 1415,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00008",
+      "text": "The reason for these challenges is that tech companies usually collect their linguistic data for English translation sourced from the internet. This data may work for some languages, but languages like Yorùbá and Ìgbò, two main languages from Nigeria, are challenging, due to the inadequate or inaccurate accent marks to indicate tones on these words.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1417,
+      "body_end": 1768,
+      "source_links": [
+        "https://www.infoworld.com/article/2612066/google-taps-big-data-for-universal-translator.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00009",
+      "text": "In response to why it has taken Google four years to add five new languages, a company spokesperson explained:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1770,
+      "body_end": 1880,
+      "source_links": [
+        "https://www.theverge.com/2020/2/26/21154417/google-translate-new-languages-support-odia-tatar-turkmen-uyghur-kinyarwanda"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00010",
+      "text": "> Google Translate learns from existing translations found on the web, and when languages don’t have an abundance of web content, it’s been difficult for our system to support them effectively. … However, due to recent advances in our machine learning technology, and active involvement from our Google Translate Community members, we’ve been able to add support for these languages.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1882,
+      "body_end": 2265,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-699019-b00011",
+      "text": "Also, most people are not so good with the orthographies — or spellings — in these languages. As a result, good translations don’t compute because these errors are not flagged as inadequate.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2267,
+      "body_end": 2457,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00012",
+      "text": "Most translations done by machines render some words wrong, especially words that are culturally nuanced. For example, Yorùbá words ayaba and obabìnrin have their meanings situated in a cultural context. Most machines translate both words as “queen.” However, from a traditional-cum-cultural vantage point, it is essential to note that the meanings of ayaba and obabìnrin are different: Ọbabìnrin means “queen” in English while ayaba is “wife of the king.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2459,
+      "body_end": 2915,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00013",
+      "text": "Even with these translation complications, technology has helped with the advancement of African languages in digital spaces, spurring the coinage of new words. African languages have grown with the influx of new gadgets like smartphones and tablets, as new words are coined to name these new technological tools and concepts. This process has thus expanded the usage and functionality of these languages.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2917,
+      "body_end": 3322,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00014",
+      "text": "With the emergence of new technologies, the vocabularies of many African languages have become more sophisticated. For instance, the Yorùbá language has some tech-influenced words such as erọ amúlétutù (“air conditioner”), erọ Ìbánisọ̀rọ̀ (“phone”) and erọ Ìlọta (“grinder”). Similarly, the Igbo language has words such as ekwè nti (“telephone”) and ugbọ̀ àlà (“vehicle”). These societies have given these gadgets names based on the functions they perform.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3324,
+      "body_end": 3780,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00015",
+      "text": "In courses on broadcasting and advertisement in Yorùbá, students learn that most people call TV erọ Amóhùnmáwòrán. This coinage generates many questions and opinions — some students argue that video cameras and recorders can also be called erọ amóhùnmáwòrán based on their functionalities.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3782,
+      "body_end": 4071,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00016",
+      "text": "These linguistic challenges in the tech space are healthy for languages — it stimulates critical thinking for both linguistic and tech advancement.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4073,
+      "body_end": 4220,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00017",
+      "text": "In 2019, Google opened its first AI research center in Accra, Ghana, focused on improving “Google Translate's ability to capture African languages more precisely,” according to CNN. Research scientist Moustapha Cisse, who heads Google's AI work in Africa, believes that “a continent with more than 2,000 dialects deserves to be better served,” as reported by CNN.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4222,
+      "body_end": 4585,
+      "source_links": [
+        "https://www.cnn.com/2019/04/14/africa/google-ai-center-accra-intl/index.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-699019-b00018",
+      "text": "Mozilla and BMZ recently announced their cooperation to open up voice technology for African languages. With initiatives like this, there is more to show in the future with regards to studies in African languages.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4587,
+      "body_end": 4800,
+      "source_links": [
+        "https://blog.mozilla.org/blog/2019/11/25/mozilla-and-bmz-announce-cooperation-to-open-up-voice-technology-for-african-languages/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "f562b2d3c8eff7a7cec4d880a07fa4f1fc185c8d767ecc40db48bdb9fc107e1d",
+  "word_count": 740,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 4800,
+  "retrieved_at": "2026-11-16T22:22:23.292848+00:00",
+  "raw_html_sha256": "65c8f2f8538b61c006ad36d614b9d393d4a7b81db1f4c6f4dd57a6717cf84018",
+  "resolved_source_url": "https://globalvoices.org/2020/03/03/lost-in-translation-why-google-translate-often-gets-yoruba-and-other-languages-wrong/",
+  "canonical_url": "https://globalvoices.org/2020/03/03/lost-in-translation-why-google-translate-often-gets-yoruba-and-other-languages-wrong/",
+  "source_bytes": 197667,
+  "authors": [
+    {
+      "name": "Aremu Adeola, Jr.",
+      "url": "https://globalvoices.org/author/aremu-adeola-jr/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 699019,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "65c8f2f8538b61c006ad36d614b9d393d4a7b81db1f4c6f4dd57a6717cf84018",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-33ec97bb0d3c5ba99fde",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-03",
+    "eligible_month_documents": 117,
+    "selected_month_documents": 98,
+    "inclusion_probability": 0.8376068376068376,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Aremu Adeola, Jr.",
+  "body_start": 514,
+  "body_end": 5314,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "21abb042b1fee1dc8294fc6685fc44feebf7695220eb65b1bb0ddb27592f2674",
+  "text_path": "articles/gv-699019.txt",
+  "metadata_path": "metadata/gv-699019.json",
+  "attribution": "This story by Aremu Adeola, Jr. originally appeared on Global Voices. https://globalvoices.org/2020/03/03/lost-in-translation-why-google-translate-often-gets-yoruba-and-other-languages-wrong/",
+  "content_sha256": "3f60384b549ee2f1290236cb9916d4608d03a4110fc0ec644daa06bed1f4294c",
+  "source_sha256": "65c8f2f8538b61c006ad36d614b9d393d4a7b81db1f4c6f4dd57a6717cf84018",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

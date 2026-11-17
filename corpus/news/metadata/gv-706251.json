@@ -1,0 +1,505 @@
+{
+  "id": "gv-706251",
+  "publisher_id": 706251,
+  "source_id": "globalvoices:706251",
+  "source_url": "https://globalvoices.org/2020/05/16/photo-contest-asks-rohingya-community-to-document-their-lives-during-the-covid-19-pandemic/",
+  "title": "Photo contest asks Rohingya community to document their lives during the COVID-19 pandemic",
+  "published_at": "2020-05-16T03:40:30Z",
+  "modified_at": "2020-07-06T22:17:58Z",
+  "api_author_id": 59,
+  "api_content_sha256": "622bbcc7e40e50501711af3410d082bfcecea159b6dd7022f316d6e71524861a",
+  "api_response_sha256": "9bbd41fee1edd3d28da60ec9f0fea16b02c88725c8cd24eaffb8effa810227c4",
+  "api_retrieved_at": "2026-11-16T22:20:25.502173+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 239,
+      "count": 12626,
+      "name": "Arts &#038; Culture",
+      "slug": "arts-culture",
+      "parent": 238
+    },
+    {
+      "id": 44,
+      "count": 2101,
+      "name": "Bangladesh",
+      "slug": "bangladesh",
+      "parent": 31
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 243,
+      "count": 6007,
+      "name": "Development",
+      "slug": "development",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 54,
+      "count": 1020,
+      "name": "Myanmar (Burma)",
+      "slug": "myanmar-burma",
+      "parent": 16
+    },
+    {
+      "id": 270,
+      "count": 2613,
+      "name": "Photography",
+      "slug": "photography",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-706251-b00001",
+      "text": "Check out Global Voices’ special coverage of the global impact of COVID-19.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 75,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/covid-19-global-coverage-for-a-pandemic/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00002",
+      "text": "As the world grapples with the consequences of the COVID-19 pandemic, the dire issues faced by vulnerable refugee and migrant populations are compounded. Discrimination against the Rohingya community has been exacerbated by the current crisis as Bangladesh recently annouced that it would not allow more Rohingya refugees to enter the country. In mid-April, fishing trawlers filled with Rohingya asylum seekers were turned away by Malaysian authorities over COVID-19 fears.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 77,
+      "body_end": 550,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Coronavirus_disease_2019",
+        "https://en.wikipedia.org/wiki/Rohingya_people",
+        "https://en.wikipedia.org/wiki/Rohingya_refugees_in_Bangladesh",
+        "https://www.forbes.com/sites/jacquelyncorley/2020/04/21/why-refugees-are-the-worlds-most-vulnerable-people-during-the-covid-19-pandemic/#4a056d744112",
+        "https://www.hrw.org/news/2020/04/25/bangladesh-rohingya-refugees-stranded-sea",
+        "https://www.scmp.com/week-asia/politics/article/3081958/malaysia-battles-coronavirus-its-rohingya-refugees-face-torrent"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00003",
+      "text": "Rohingya refugees in Malaysia are also facing an increase in xenophobic and anti-immigrant pushback from Malaysians during the pandemic, and doubts about Bangladesh's ability to handle an outbreak in its densly-populated refugee camps are still in question.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 552,
+      "body_end": 809,
+      "source_links": [
+        "https://theconversation.com/coronavirus-closes-in-on-rohingya-refugees-in-bangladeshs-cramped-unprepared-camps-135147",
+        "https://www.scmp.com/week-asia/politics/article/3081958/malaysia-battles-coronavirus-its-rohingya-refugees-face-torrent"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00004",
+      "text": "To document the COVID-19 crisis through their own eyes, the Rohingya Photography Competition has been organized by London-based British-Bangladeshi documentary filmmaker Shafiur Rahman. The competition is open to members of the Rohingya community all over the world and will run from April 23 to August 25, 2020. The main categories are “Rohingya life” and “Response to Coronavirus” and selection of photographs will be exhibited at the Human Rights Research and Education Centre (HRREC) in Ottawa, Canada and the Oxford Human Rights Festival in Oxford, UK.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 811,
+      "body_end": 1368,
+      "source_links": [
+        "http://srdocs.net/",
+        "https://kutupalong.com/",
+        "https://www.dhakatribune.com/showtime/2020/04/22/photo-contest-for-rohingya"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00005",
+      "text": "Global Voices interviewed Rahman by email to talk about what inspired him to create this competition and what he hopes to achieve.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1370,
+      "body_end": 1500,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00006",
+      "text": "Global Voices (GV): Tell us a bit about yourself and how you ended up shooting documentaries about the Rohingya community.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1502,
+      "body_end": 1624,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00007",
+      "text": "> Shafiur Rahman (SR): It all started rather unexpectedly in December of 2016. I was in Cox’s Bazar area working on a project in the hill tracts. There had been a tremendous influx of Rohingya people in October 2016 and they were still arriving in December. What I saw and what I heard convinced me that I should do some documentary work. I went back the next month and shot a film about sexual violence. I then worked on trafficking and massacres. The films I have made have been shown in festivals and channels throughout the world.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1626,
+      "body_end": 2160,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Chittagong_Hill_Tracts",
+        "https://en.wikipedia.org/wiki/Rohingya_genocide"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706251-b00008",
+      "text": "GV: How the idea of the competition come about?",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2162,
+      "body_end": 2209,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00009",
+      "text": "> SR: Actually a photo competition is a documentary endeavour. We are getting fantastic images already of the lockdown and of emergencies happening in the camp. A notebook of the days and weeks in the lockdown.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2211,
+      "body_end": 2421,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706251-b00010",
+      "text": "GV: Tell us some details about the two broad themes for the event. Why are they important?",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2423,
+      "body_end": 2513,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00011",
+      "text": "> SR: The themes are broad so as to allow the depiction of every tiny little thing to do with the camps. The reality is of course that when you start enquiring about that tiny little thing, whatever it is, you suddenly realise it is not tiny at all. It is all connected to the deportation of Rohingya from the state of Myanmar and their experience of genocide. And in the difficult and challenging conditions in the camps, you begin to question and wonder what exactly is changing for them. For me, these images that we are collecting are redolent of their decades-long struggle for survival. And now suddenly, they are hemmed in from all sides and a virus has entered the fray. It is a nightmare.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2515,
+      "body_end": 3212,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706251-b00012",
+      "text": "GV: What sort of help you are getting to run the competition and who are the judges?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3214,
+      "body_end": 3298,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00013",
+      "text": "> SR: I am running the thing myself. I am working on a variety of projects but I never tire of looking at images. Prominent humanitarians and Rohingya advocates are sharing their own images in the competition in order to support and help project the profile of the context. We have a variety of people – everyone from a former diplomat who was involved in the Kofi Annan report on Myanmar to the Founder of Migrant Offshore Aid Station (MOAS), who has helped rescue thousands of refugees in the Mediterranean sea and has also been a part of the response to the Rohingya crisis. Prominent Rohingya activists are also on board. Liza Boschin, an Italian photographer, reporter and documentary maker is the chief judge.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3300,
+      "body_end": 4015,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Migrant_Offshore_Aid_Station"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706251-b00014",
+      "text": "GV: What response have you seen since the launch of the competition?",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4017,
+      "body_end": 4085,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00015",
+      "text": "> SR: Well over 400 images in the first three weeks. A fascinating glimpse of everything from social distancing to no regard for social distancing.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4087,
+      "body_end": 4234,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706251-b00016",
+      "text": "GV: Why should more Rohingyas join this competition?",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4236,
+      "body_end": 4288,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00017",
+      "text": "> SR: […] the reality is just for fun, very modest prizes and to document their own lives.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4290,
+      "body_end": 4380,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706251-b00018",
+      "text": "GV: Do you have some tips for submission — what sort of photos, devices, tools, etc.?",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4382,
+      "body_end": 4467,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00019",
+      "text": "> SR: Think of telling a story in one snap. Or look for unusual angles. Or interesting faces. Think of getting pictures in difficult situations. Or just take a selfie.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4469,
+      "body_end": 4636,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706251-b00020",
+      "text": "GV: What can we expect from the exhibitions and the publicity about it?",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4638,
+      "body_end": 4709,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00021",
+      "text": "> SF: The exhibitions will take place in two places – Ottawa and Oxford – and in contexts which promote human rights. One is a human rights department of a university. The other is a human rights festival of a university. We are also already engaging other institutions and asking them to consider staging similar albeit more limited exhibitions. A well known published photographer and studio owner will run some of the images on his Instagram account.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4711,
+      "body_end": 5164,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706251-b00022",
+      "text": "GV: What do you hope for the Rohingya people, as well as how people from around the entire world can learn from your tireless efforts to help make Rohingya lives better?",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5166,
+      "body_end": 5335,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706251-b00023",
+      "text": "> SR: Genocide should not be happening and yet it is. We keep saying “never again” but it seems to happen again and again. Let us learn from the Rohingya, and put an end to it.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5337,
+      "body_end": 5513,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706251-b00024",
+      "text": "Below are some photos submissions:",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5515,
+      "body_end": 5549,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "17c0fcfcee2972863b2298e1abc3dd208edf0404d36e21a827e95f23d8eb2914",
+  "word_count": 943,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 9,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5549,
+  "retrieved_at": "2026-11-16T22:23:53.106949+00:00",
+  "raw_html_sha256": "40f11ed1836641d28e2ce8890172251c654b9304d9d9afb57bca5070678a137d",
+  "resolved_source_url": "https://globalvoices.org/2020/05/16/photo-contest-asks-rohingya-community-to-document-their-lives-during-the-covid-19-pandemic/",
+  "canonical_url": "https://globalvoices.org/2020/05/16/photo-contest-asks-rohingya-community-to-document-their-lives-during-the-covid-19-pandemic/",
+  "source_bytes": 197803,
+  "authors": [
+    {
+      "name": "Rezwan",
+      "url": "https://globalvoices.org/author/rezwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 706251,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "40f11ed1836641d28e2ce8890172251c654b9304d9d9afb57bca5070678a137d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-a172566e58214792f730",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-05",
+    "eligible_month_documents": 111,
+    "selected_month_documents": 93,
+    "inclusion_probability": 0.8378378378378378,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Rezwan",
+  "body_start": 510,
+  "body_end": 6059,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "482a802c40472826eb10f6a43c03f7b094ee6e94609fea90d22a4605e23506d4",
+  "text_path": "articles/gv-706251.txt",
+  "metadata_path": "metadata/gv-706251.json",
+  "attribution": "This story by Rezwan originally appeared on Global Voices. https://globalvoices.org/2020/05/16/photo-contest-asks-rohingya-community-to-document-their-lives-during-the-covid-19-pandemic/",
+  "content_sha256": "63faef0cf2902fe2dac6d5215d95854e7eecf1ddba54479f0122336f8d66d7b8",
+  "source_sha256": "40f11ed1836641d28e2ce8890172251c654b9304d9d9afb57bca5070678a137d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

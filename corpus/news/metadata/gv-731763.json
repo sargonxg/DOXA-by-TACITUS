@@ -1,0 +1,269 @@
+{
+  "id": "gv-731763",
+  "publisher_id": 731763,
+  "source_id": "globalvoices:731763",
+  "source_url": "https://globalvoices.org/2021/03/26/covid-19-spanish-town-hopes-to-overcome-the-economic-crisis-with-its-own-virtual-currency/",
+  "title": "COVID-19: Spanish town hopes to overcome the economic crisis with its own virtual currency",
+  "published_at": "2021-03-26T11:16:30Z",
+  "modified_at": "2021-03-26T11:16:30Z",
+  "api_author_id": 1824,
+  "api_content_sha256": "5aaa1f1060956fd8213389f31330f94ba7fc5b00d587a6784b7d917ef9c4ff9a",
+  "api_response_sha256": "c591ed8b34d893450a7ee028fc86046db8a591fa7520310c35490fea352169e4",
+  "api_retrieved_at": "2026-11-16T22:20:33.702775+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 206,
+      "count": 648,
+      "name": "Spain",
+      "slug": "spain",
+      "parent": 187
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-731763-b00001",
+      "text": "A town in Andalucia, Spain is banking on cryptocurrency as a way of rescuing local commerce from the severe economic slow-down caused by measures to control the spread of COVID-19.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 180,
+      "source_links": [
+        "https://elpais.com/economia/estar-donde-estes/2020-10-23/el-comercio-local-un-sector-estrategico-de-la-recuperacion-economica-que-esta-en-peligro.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731763-b00002",
+      "text": "Lebrija, a town of 27,000 inhabitants in the province of Sevilla, is taking an innovative approach to stimulating the local economy by investing in its own virtual currency. The digital currency is called the “elio” and is meant to assist small businesses adapt to the demands of the “new normal” by linking disadvantaged families and local traders. The use of this local virtual currency was inspired by the loyalty systems of large corporate chains but has been adapted for small businesses.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 182,
+      "body_end": 675,
+      "source_links": [
+        "https://cadenaser.com/programa/2021/02/15/la_ventana/1613406221_755793.html",
+        "https://es.wikipedia.org/wiki/Lebrija_(Sevilla)"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731763-b00003",
+      "text": "Elio, “the new money of Lebrija” is linked to the euro and was promoted by the first deputy mayor and delegate of new technologies, David Pérez, and his team, who launched the app during the 2020 lockdown. The name “elio” was chosen in honour of the town's most famous historical figure, the humanist and author of the first Castillian grammar, Elio Antonio de Nebrija.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 677,
+      "body_end": 1046,
+      "source_links": [
+        "http://www.lebrija.es/es/ayuntamiento/saluda-del-alcalde/",
+        "https://apps.apple.com/es/app/elio/id1537376000",
+        "https://www.vozpopuli.com/economia_y_finanzas/elio-moneda-virtual-lebrija.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731763-b00004",
+      "text": "Families were selected based on income and were able to make purchases in shops in the area; the system, therefore, encourages the local economy and supports underprivileged families. The elio was launched at the end of 2020 and more than 600 families have already used the app.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1048,
+      "body_end": 1326,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731763-b00005",
+      "text": "Each elio is equivalent to one euro, and in order to use this technology, the selected citizens must download the app and pay half of the cost of each product or service in elios and the other half in euros. Each user must register in the app to be able to see the amount they have available or the businesses where this technology can be used.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1328,
+      "body_end": 1672,
+      "source_links": [
+        "http://www.lebrija.es/es/actualidad/noticias/Lebrija-crea-una-moneda-local-para-reactivar-el-pequeno-comercio-de-la-ciudad/?urlBack="
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731763-b00006",
+      "text": "Each family receives grants of between 50 and 200 elios from the city council, and they can use this payment method only in participating establishments. Once purchases and services are made, companies must present the invoices to the city council so that it can change the amounts to euros.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1674,
+      "body_end": 1965,
+      "source_links": [
+        "https://www.vozpopuli.com/economia_y_finanzas/elio-moneda-virtual-lebrija.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731763-b00007",
+      "text": "This virtual currency is only valid in Lebrija. To launch the project, the city council donated part of its funds reserved for other activities, such as municipal festivals, deciding instead to prioritise aid to its population. This allowed the city to launch the project with 60,000 elios.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1967,
+      "body_end": 2257,
+      "source_links": [
+        "https://www.rtve.es/alacarta/videos/telediario/lebrija-elio-moneda-virtual-impulsar-comercio-local/5791375/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731763-b00008",
+      "text": "To date, a total of 50,000 euros has been invested in the commercial activity of Lebrija, of which 25,000 were in elios, and this initiative has been very well received by the inhabitants of the municipality. “Some of the merchants tell us that it has saved the month and some have doubled their sales,” reports Spanish television. This was not the first technological initiative of the Lebrija City Council, since many of its services are now communicated through Telegram.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2259,
+      "body_end": 2733,
+      "source_links": [
+        "http://www.lebrija.es/es/actualidad/noticias/El-Ayuntamiento-abre-un-canal-de-informacion-municipal-en-la-app-Telegram",
+        "https://www.rtve.es/alacarta/videos/telediario/lebrija-elio-moneda-virtual-impulsar-comercio-local/5791375/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731763-b00009",
+      "text": "The economic crisis has not only deteriorated the fabric of business in Spain during the pandemic, but the situation has worsened for the average citizen and a huge number of families have been pushed into a precarious situation. The country now has 800,000 more people classed as destitute as a result of COVID-19 and a “historic drop” of 11 per cent of its economy in 2020.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2735,
+      "body_end": 3110,
+      "source_links": [
+        "https://www.eleconomista.es/economia/noticias/11019886/01/21/El-PIB-registra-una-caida-historica-del-11-en-2020-por-el-covid-pese-crecer-un-04-en-el-cuarto-trimestre.html",
+        "https://www.ine.es/jaxiT3/Tabla.htm?t=4186",
+        "https://www.lavanguardia.com/economia/20210125/6195501/pobreza-espana-desigualdad-covid-impacto-pandemia.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731763-b00010",
+      "text": "Like the elio, other Spanish technological initiatives have been born in these times of pandemic to help society, including the app La Noria Social Hub, in Málaga, aimed at supporting innovation and provincial development, and Got salt?, an app which allows residents of Madrid, Barcelona and Valencia to get in touch for mutual support. This platform promotes contact and solidarity among neighbours to encourage sustainable communities.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3112,
+      "body_end": 3550,
+      "source_links": [
+        "https://play.google.com/store/apps/details?id=com.grupoantena.malagasocialhub&hl=es_419",
+        "https://tienes-sal.es/",
+        "https://www.elplural.com/la-buena-noticia-del-dia/emocionante-cadena-solidaria-coronavirus_236044102"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731763-b00011",
+      "text": "The elio will end on March 31, but because of its success, future launches of the virtual currency are already being studied by the city council. For Lebrija, this is proof that solidarity and technology can go hand in hand, and that the way out of the economic recession will be through digitization.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3552,
+      "body_end": 3853,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "0b96f783fee48b08f7d33c55c5b302df0e3bf235cf8728eac198f89d2517b42b",
+  "word_count": 648,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 3853,
+  "retrieved_at": "2026-11-16T22:29:56.264632+00:00",
+  "raw_html_sha256": "b6a808e0a0bc50b75e4c85b203950b9977ff2069ff34fc4ca538480a33c6c56c",
+  "resolved_source_url": "https://globalvoices.org/2021/03/26/covid-19-spanish-town-hopes-to-overcome-the-economic-crisis-with-its-own-virtual-currency/",
+  "canonical_url": "https://globalvoices.org/2021/03/26/covid-19-spanish-town-hopes-to-overcome-the-economic-crisis-with-its-own-virtual-currency/",
+  "source_bytes": 186936,
+  "authors": [
+    {
+      "name": "Laura Carraso Alvarez",
+      "url": "https://es.globalvoices.org/author/laura-carraso-alvarez/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Clara G",
+      "url": "https://globalvoices.org/author/clara-guest/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 731763,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "b6a808e0a0bc50b75e4c85b203950b9977ff2069ff34fc4ca538480a33c6c56c",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-c9d0aea95cb532ffbca1",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-03",
+    "eligible_month_documents": 91,
+    "selected_month_documents": 76,
+    "inclusion_probability": 0.8351648351648352,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Laura Carraso Alvarez",
+  "body_start": 547,
+  "body_end": 4400,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "9c0232834c33d61f208f964e455f95da31c6ae3e5ec3914627d99f6568790c6d",
+  "text_path": "articles/gv-731763.txt",
+  "metadata_path": "metadata/gv-731763.json",
+  "attribution": "This story by Laura Carraso Alvarez originally appeared on Global Voices. https://globalvoices.org/2021/03/26/covid-19-spanish-town-hopes-to-overcome-the-economic-crisis-with-its-own-virtual-currency/",
+  "content_sha256": "9c999cd7622a7d9383ec8b8db7c67899b891cfbf5f783d5a9da8e28fb1175024",
+  "source_sha256": "b6a808e0a0bc50b75e4c85b203950b9977ff2069ff34fc4ca538480a33c6c56c",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,401 @@
+{
+  "id": "gv-733846",
+  "publisher_id": 733846,
+  "source_id": "globalvoices:733846",
+  "source_url": "https://globalvoices.org/2021/04/19/how-azerbaijans-government-abused-facebooks-loopholes-for-years/",
+  "title": "How Azerbaijan's government abused Facebook's loopholes—for years",
+  "published_at": "2021-04-19T17:27:09Z",
+  "modified_at": "2021-04-20T15:06:32Z",
+  "api_author_id": 799,
+  "api_content_sha256": "457ee912bc991100405b61b1d391b3e4cdb1f06bf03e59b08737ab6a93508813",
+  "api_response_sha256": "506e05e61c46f4f3ce486e5d993814d3316963822f8371957c67dd69aa686ddd",
+  "api_retrieved_at": "2026-11-16T22:20:34.467848+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 79,
+      "count": 1204,
+      "name": "Azerbaijan",
+      "slug": "azerbaijan",
+      "parent": 288
+    },
+    {
+      "id": 288,
+      "count": 7347,
+      "name": "Central Asia &amp; Caucasus",
+      "slug": "central-asia-caucasus",
+      "parent": 219
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-733846-b00001",
+      "text": "A series of recent reports by the British newspaper The Guardian revealed that Azerbaijani officials have been persistently abusing loopholes on Facebook in order to generate fake engagement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 191,
+      "source_links": [
+        "https://www.theguardian.com/technology/2021/apr/12/facebook-loophole-state-backed-manipulation"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00002",
+      "text": "The investigation, which focuses on 25 different countries, showed Facebook has tolerated major abuses of its platform in small or non-Western nations as it prioritized issues that attracted international media attention or affected the United States and its adversaries, such as Russia and Iran.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 193,
+      "body_end": 489,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00003",
+      "text": "The Guardian's report comes after the leak of an internal memo by former Facebook data scientist Sophie Zhang, in which she outlined concrete examples of how the company “repeatedly allowed world leaders and politicians to use its platform to deceive the public or harass opponents despite being alerted to evidence of the wrongdoing.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 491,
+      "body_end": 826,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00004",
+      "text": "Zhang was fired for performance in September 2020. On her final day, she published the memo internally, which was then obtained and first reported on by BuzzFeed News.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 828,
+      "body_end": 995,
+      "source_links": [
+        "https://www.buzzfeednews.com/article/craigsilverman/facebook-ignore-political-manipulation-whistleblower-memo"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00005",
+      "text": "One of the examples described in Zhang's memo deals with Azerbaijan, where, she says, the ruling party Yeni Azərbaycan “utilized thousands of inauthentic assets (…) to harass the opposition en masse” in 2019.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 997,
+      "body_end": 1205,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00006",
+      "text": "The main loophole exploited by Azerbaijani actors, according to the memo and the follow-up investigation, was the fact that while Facebook restricts the number of profiles a single user can administer, it imposes no comparable restriction on pages. That means that a single person can administrate thousands of pages, and those are able to perform the same kinds of engagements — such as liking, sharing, and commenting — as personal profiles.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1207,
+      "body_end": 1650,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00007",
+      "text": "“(…) The individuals behind this activity (…) primarily relied on authentic accounts to create Pages designed to look like user profiles — using false names and stock images — to comment and artificially boost the popularity of particular pro-government content,” the memo said.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1652,
+      "body_end": 1930,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00008",
+      "text": "Despite warnings, Zhang says Facebook only started looking into the case of Azerbaijan a year later, in October of 2020, when it announced the removal of 589 profiles, 7,665 pages, and 437 accounts on Instagram that were linked to the ruling party or its youth branch. According to Facebook, these accounts violated Facebook's policy on “coordinated inauthentic behavior.”",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1932,
+      "body_end": 2304,
+      "source_links": [
+        "https://about.fb.com/news/2020/10/removing-coordinated-inauthentic-behavior-september-report/",
+        "https://about.fb.com/news/tag/coordinated-inauthentic-behavior/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00009",
+      "text": "However, according to recent reports by Azerbaijan Internet Watch, a platform that documents information controls in Azerbaijan, the problem continues to this day.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2306,
+      "body_end": 2469,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00010",
+      "text": "In February 2021, Meydan TV, an independent Berlin-based news website, posted a call for applications for a program aimed at Azerbaijani content creators to produce thematic media pieces on cultural and political issues about the country.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2471,
+      "body_end": 2709,
+      "source_links": [
+        "https://www.facebook.com/MeydanTelevision/posts/3762453677134997"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00011",
+      "text": "The post received hundreds of negative comments; a closer look revealed that they were made mostly by pages posing as real people.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2711,
+      "body_end": 2841,
+      "source_links": [
+        "https://www.az-netwatch.org/news/inauthentic-pages-target-independent-online-news-platform-will-facebook-take-notice/",
+        "https://www.facebook.com/MeydanTelevision/posts/3762453677134997"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00012",
+      "text": "On March 24, Mikroskop Media, another overseas online news platform covering Azerbaijan, posted on its Facebook page an infographic with data about the country's COVID-19 vaccine rollout. The post received over 1,600 comments, many of them negative. Once again, a closer look revealed that most of them came from inauthentic pages.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2843,
+      "body_end": 3174,
+      "source_links": [
+        "https://www.az-netwatch.org/news/inauthentic-pages-target-independent-news-platform-will-facebook-take-notice-part-2-the-case-of-mikroskop-media/",
+        "https://www.facebook.com/MikroskopMedia/posts/805899710134773"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00013",
+      "text": "Facebook's most recent report on coordinated inauthentic behavior was issued in March 2021; Azerbaijan was not mentioned on the list of countries where inauthentic networks had been taken down.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3176,
+      "body_end": 3369,
+      "source_links": [
+        "https://about.fb.com/news/2021/04/march-2021-coordinated-inauthentic-behavior-report/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00014",
+      "text": "The government of Azerbaijan has long been exploiting social media platforms, especially Facebook, to target critics both at home and abroad.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3371,
+      "body_end": 3512,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00015",
+      "text": "Ahead of a referendum in 2016 that opposition groups were boycotting, a live broadcast by Azadliq Radio (Radio Free Europe/Radio Liberty's service in Azerbaijan) and Meydan TV was heavily spammed in what later was found to have been a coordinated action connected to the ruling party.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3514,
+      "body_end": 3798,
+      "source_links": [
+        "https://www.opendemocracy.net/en/odr/azerbaijan-patriotic-trolls/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00016",
+      "text": "In recent years, scores of political activists and media platforms have had their Facebook pages and profiles compromised through hacking. Last month, a group of women activists was targeted through a series of leaked intimate videos and photos. Both Facebook and Telegram were used to disseminate the content.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3800,
+      "body_end": 4110,
+      "source_links": [
+        "https://oc-media.org/new-sex-tape-emerges-targetting-daughter-of-azerbaijani-critic/",
+        "https://www.az-netwatch.org/news/targeted-harassment-via-telegram-channels/",
+        "https://www.opendemocracy.net/en/odr/azerbaijans-authoritarianism-goes-digital/",
+        "https://www.opendemocracy.net/en/odr/how-does-facebook-explain-disappearance-police-violence-videos-azerbaijan/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00017",
+      "text": "Azerbaijan's track record on human rights and freedom of expression is rather poor, according to rankings and indexes published annually by international human rights and media freedom watchdogs. Reporters Without Borders’ World Press Freedom Index 2021 ranked the country 167th out of 180. Freedom House classifies Azerbaijan as a “consolidated authoritarian regime.”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4112,
+      "body_end": 4480,
+      "source_links": [
+        "https://freedomhouse.org/countries/nations-transit/scores",
+        "https://rsf.org/en/azerbaijan"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00018",
+      "text": "Much of Azerbaijan's independent media and civil society has been silenced since 2014 as the government drastically ramped up its repressive apparatus in reaction to mass demonstrations that took place in the years before. Social media platforms are among the few remaining avenues for activists to organize and for the public to stay informed on news in the country.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4482,
+      "body_end": 4849,
+      "source_links": [
+        "https://www.rferl.org/a/azerbaijan-squeezes-civil-society-media/26574692.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00019",
+      "text": "While Facebook may be too busy resolving higher-profile cases of harassment, disinformation, and inauthentic behavior, its platform is affecting the very real lives of people in countries like Azerbaijan as well.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4851,
+      "body_end": 5063,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733846-b00020",
+      "text": "Editor's note: The author of this story is the founder of Azerbaijan Internet Watch. She was also interviewed by The Guardian for its investigation on Facebook.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5065,
+      "body_end": 5225,
+      "source_links": [],
+      "source_kind": "div",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "84563370351202d705d09fa98608078447832c715556f0a3036cb87e442d36aa",
+  "word_count": 802,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 5225,
+  "retrieved_at": "2026-11-16T22:30:11.571644+00:00",
+  "raw_html_sha256": "fe1c9e46fc02216c1b15fd739680e4a6ea7c8eea58b07ef5c90282b78bd9be2d",
+  "resolved_source_url": "https://globalvoices.org/2021/04/19/how-azerbaijans-government-abused-facebooks-loopholes-for-years/",
+  "canonical_url": "https://globalvoices.org/2021/04/19/how-azerbaijans-government-abused-facebooks-loopholes-for-years/",
+  "source_bytes": 187881,
+  "authors": [
+    {
+      "name": "Arzu Geybullayeva",
+      "url": "https://globalvoices.org/author/arzu-geybullayeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 733846,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "fe1c9e46fc02216c1b15fd739680e4a6ea7c8eea58b07ef5c90282b78bd9be2d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-0f7fd0abf42327016e05",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-04",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Arzu Geybullayeva",
+  "body_start": 469,
+  "body_end": 5694,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "1c5936ad1022020c6348ed3bce0da3ff1a0bb89d94f9328a7ea866aac77f7e69",
+  "text_path": "articles/gv-733846.txt",
+  "metadata_path": "metadata/gv-733846.json",
+  "attribution": "This story by Arzu Geybullayeva originally appeared on Global Voices. https://globalvoices.org/2021/04/19/how-azerbaijans-government-abused-facebooks-loopholes-for-years/",
+  "content_sha256": "22a3887563f3bb6ea7dfe580935fec6504a2a34fe142cab487ccb9b34e14031b",
+  "source_sha256": "fe1c9e46fc02216c1b15fd739680e4a6ea7c8eea58b07ef5c90282b78bd9be2d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

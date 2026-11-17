@@ -1,0 +1,434 @@
+{
+  "id": "gv-758444",
+  "publisher_id": 758444,
+  "source_id": "globalvoices:758444",
+  "source_url": "https://globalvoices.org/2022/03/10/can-ukraines-internet-sustain-longer-term-attacks-and-destruction-from-russia/",
+  "title": "Can Ukraine's internet sustain longer-term attacks and destruction from Russia?",
+  "published_at": "2022-03-10T09:51:09Z",
+  "modified_at": "2023-11-20T10:33:41Z",
+  "api_author_id": 2739,
+  "api_content_sha256": "8a9b0fab990d6de4e73059d27a6fbb8c51a9d09be108bf53cbc0482ae9c8fada",
+  "api_response_sha256": "1c1ca0bc12b9cd2dbfa64c668911b057f3193583dcca9487ed40436dfe167757",
+  "api_retrieved_at": "2026-11-16T22:20:42.191404+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 345,
+      "count": 344,
+      "name": "Ukrainian",
+      "slug": "ukrainian",
+      "parent": 317
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-758444-b00001",
+      "text": "In Ukraine, the internet has become the major front of defense against the Russian invasion. It is how the military informs Ukrainians about incoming Russian attacks, how humanitarian aid is organized, how cyber vigilantes are brought together, and how the rest of the world learns about the war. It has become Ukraine’s most prominent weapon, dominating the narrative of the war and resisting Russian disinformation. The internet is also the way Western companies like Microsoft have been able to analyze and patch vulnerabilities in Ukraine’s networks, creating an effective defense against Moscow’s cyber attacks. Many experts have been asking why Russia has not tried to destroy Ukraine’s internet infrastructure.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 717,
+      "source_links": [
+        "https://globalvoices.org/special/russia-invades-ukraine/",
+        "https://theconversation.com/ukraine-is-recruiting-an-it-army-of-cyber-warriors-heres-how-australia-could-make-it-legal-to-join-178414",
+        "https://time.com/6155219/ukrainian-journalists-challenges-reporting-war-kyiv-independent/",
+        "https://visitukraine.today/blog/143/air-alert-app-that-notifies-about-danger-in-certain-region-in-your-smartphone",
+        "https://www.bloomberg.com/news/newsletters/2022-03-07/smartphones-are-a-lifeline-for-ukrainian-refugees",
+        "https://www.defenseone.com/threats/2022/03/why-ukraines-internet-still-perhaps-because-invaders-need-it/362854/",
+        "https://www.nytimes.com/2022/02/28/us/politics/ukraine-russia-microsoft.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00002",
+      "text": "In 2014, Russia’s control of Crimean internet networks was one of the primary causes for the peninsula’s successful referendum to join the Russian Federation. Moscow expected a similar maneuver to work during its invasion of Ukraine. Since February 24, Vladimir Putin has relied on the Ukrainian internet to organize domestic opposition to Volodymyr Zelenskyy and urge Ukrainians to take up arms against their own government. While Russia’s narrative has not been heeded by most Ukrainians, it has convinced some to assist the Russian military by marking landing ground and bombing targets.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 719,
+      "body_end": 1309,
+      "source_links": [
+        "https://www.fastcompany.com/90726044/in-ukraine-suspicious-markings-on-buildings-reveal-the-scare-tactics-of-urban-warfare",
+        "https://www.nytimes.com/2014/03/19/world/europe/ukraine.html",
+        "https://www.vox.com/22954833/russia-ukraine-invasion-strategy-putin-kyiv"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00003",
+      "text": "If the war drags on and Russia remains unable to control the narrative inside of Ukraine, it could target central telecommunication infrastructure. So far, much of Russian military maneuvers have been centered on Ukraine’s urban internet hubs. In anticipation, companies and governments across the world have helped to strengthen Ukraine’s communication networks. United States business magnate Elon Musk donated an unknown number of Starlink satellite communication systems in case of major disruption to the internet. European telecom operators have offered free services to Ukrainians. While kind and helpful, these gestures will prove ineffective if Russia decides to target fiber optic and undersea cables.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1311,
+      "body_end": 2022,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Elon_Musk",
+        "https://www.forbes.com/sites/roslynlayton/2022/03/01/european-telecom-operators-offer-free-services-in-solidarity-with-ukraine/?sh=316d9831e393"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00004",
+      "text": "The state of Ukraine’s internet infrastructure",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 2024,
+      "body_end": 2070,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00005",
+      "text": "Cyberspace can be best understood through three layers. The most fundamental layer is the physical infrastructure: submarine fiber-optic cables, and satellites that transmit data. The second layer is made up of the protocols that allow computers and subnetworks to communicate with each other: TCP/IP, Border Gateway Protocol (BGP), and the Domain Name System (DNS). Both of these layers are extremely vulnerable to manipulation. Fiber and undersea cables can be bombed; DNS servers can be hacked; IP traffic can be rerouted.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 2072,
+      "body_end": 2597,
+      "source_links": [
+        "https://firstmonday.org/ojs/index.php/fm/article/view/11700/10128"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00006",
+      "text": "The final layer is made of the ultimate destinations that users are most familiar with: government websites, Telegram, Facebook, etc. This is the most resilient layer because sites can be mirrored, misinformation deleted, and hacked pages quickly restored. VPNs (Virtual Private Networks) that operate on the second layer can be used to bypass restrictions to websites on the third layer.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2599,
+      "body_end": 2987,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Virtual_private_network",
+        "https://www.axios.com/vpns-evading-russias-internet-blockade-c39ee764-391c-4f65-9d8d-32711eb72675.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00007",
+      "text": "The primary layer, the physical infrastructure, has the most potential to influence the dynamics of military conflict on the ground. The main role of internet nodes is to house “autonomous systems (AS), a collection of connected Internet Protocol (IP) routing [nodes] that network operators control, which defines routing policy to the internet.” Control over the AS allows the operator to restrict or reroute the path of data. If Russia took control of Mariupol, Zaporizhia, Dnipro, and Odesa, they could almost fully control the flow of Ukraine’s internet traffic.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2989,
+      "body_end": 3555,
+      "source_links": [
+        "https://www.axios.com/vpns-evading-russias-internet-blockade-c39ee764-391c-4f65-9d8d-32711eb72675.html",
+        "https://www.datacenterdynamics.com/en/analysis/how-russia-took-over-the-internet-in-crimea-and-eastern-ukraine/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00008",
+      "text": "Why hasn’t Russia attacked Ukraine’s telecommunication networks?",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3557,
+      "body_end": 3621,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00009",
+      "text": "On February 24, the day of Russia's invasion, Ukraine faced widespread internet outages. The Triolan internet service provider, servicing most of Ukraine and particularly Kharkiv, faced partial outages due to cyber attacks on its facilities. Triolan’s DNS servers, which route device traffic to websites, were partially jammed.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3623,
+      "body_end": 3950,
+      "source_links": [
+        "https://www.theverge.com/2022/2/24/22949115/internet-disruptions-ukraine-kharkiv-russia"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00010",
+      "text": "Since the war began, Ukraine’s internet has stayed mostly intact, and outages remain local. When Russian forces occupied Zaporizhzhya on March 7, they disconnected mobile and internet networks. Zaporizhzhya is home to Europe’s largest nuclear power plant and is one of Ukraine’s main telecommunication nodes. After the occupation, the International Atomic Energy Agency reported “phone lines, as well as e-mails and fax, were not functioning anymore” preventing communication with the nuclear power plant.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3952,
+      "body_end": 4457,
+      "source_links": [
+        "https://aninews.in/news/world/europe/russian-forces-restrict-access-to-mobile-networks-internet-at-zaporizhzhya-npp20220307093232/?amp=1"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00011",
+      "text": "In order to fully disconnect Ukraine’s internet networks, multiple ISPs across the country must be disrupted. This is possible either through sustained cyberattacks or direct bombing. Lanet, a Ukrainian broadband provider, suffered outages in the city of Sievierodonetsk when its cables were damaged during combat. Despite some attacks on TV towers, Ukraine’s primary telecommunication services have not been targeted yet. There are two possible reasons why.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4459,
+      "body_end": 4917,
+      "source_links": [
+        "https://thehill.com/policy/international/596294-kyiv-broadcasting-tower-targeted-in-russian-strike-ukraine-says",
+        "https://www.theguardian.com/world/2022/mar/01/could-russia-shut-down-the-internet-in-ukraine"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00012",
+      "text": "First, Ukraine’s telecommunication infrastructure is resilient to Russian attacks. Ukraine’s internet is very distributed. Due to a lack of regulation in the 1990s, many independent Internet Service Providers (ISP) built networks across the country without serious competition. More than half of Ukraine’s internet users are covered by a network that has less than 1 percent of the national market. Unlike most countries in the world, Ukraine’s internet is extremely local with few choke points.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4919,
+      "body_end": 5414,
+      "source_links": [
+        "https://firstmonday.org/ojs/index.php/fm/article/view/11700/10128",
+        "https://labs.ripe.net/author/emileaben/the-ukrainian-internet/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00013",
+      "text": "Additionally, Ukraine’s telecommunication networks have also been strengthened since 2014. In the aftermath of the invasion of Crimea and Donbas, Ukraine established the department of cyber police to improve its digital capabilities. In 2016, Ukraine adopted a National Cyber Security Strategy. The European Union also invested USD 27 million to support Ukraine’s cyber security and harden its digital infrastructure.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5416,
+      "body_end": 5833,
+      "source_links": [
+        "https://ecfr.eu/article/the-virtual-front-line-how-eu-tech-power-can-help-ukraine/",
+        "https://eufordigital.eu/new-eu4digitalua-project-supports-digital-transformation-in-ukraine/",
+        "https://thegfce.org/cybersecurity-in-ukraine-national-strategy-and-international-cooperation/",
+        "https://www.kyivpost.com/technology/ukraine-improves-its-defenses-against-escalating-cyber-threats.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00014",
+      "text": "Second, Russia was most likely hoping to use Ukraine’s internet and cellular networks for their own communication. The United States military experience has demonstrated how difficult it is to set up a communication network in an active war zone from scratch. The Russian military in Ukraine has already been heavily relying on existing telecommunication infrastructure. John Ferrari, a retired two-star general remarked, “You can't take down the cell phone towers, because then you blind yourself.” After phone companies banned access to phones with Russian numbers, reports circulated that Russian soldiers were stealing the mobile phones of Ukrainians to communicate with their commanders.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5835,
+      "body_end": 6527,
+      "source_links": [
+        "https://sgp.fas.org/crs/weapons/IN10799.pdf",
+        "https://www.defenseone.com/threats/2022/03/why-ukraines-internet-still-perhaps-because-invaders-need-it/362854/",
+        "https://www.politico.eu/article/why-ukraines-phones-and-internet-still-work/",
+        "https://www.youtube.com/watch?v=rFCsaBBnvsc"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00015",
+      "text": "Preserved networks also offer opportunities for control and espionage. Considering that Russia was hoping for a blitzkrieg victory over Ukraine, the communication networks would have been vital to managing the country. Active telecom networks also allow for an opportunity to gather intelligence on Ukraine’s civilian and military communication. Now that a fast victory is practically out of the picture, it remains to be seen if Russia will shift focus to disrupting Ukraine’s communication networks.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6529,
+      "body_end": 7030,
+      "source_links": [
+        "https://www.ft.com/content/ba440d90-b0ba-4a73-a138-9cb1229b6cac",
+        "https://www.theguardian.com/world/2022/feb/26/the-world-shuns-pariah-putin"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00016",
+      "text": "What can be done to counter disruption?",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 7032,
+      "body_end": 7071,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00017",
+      "text": "In anticipation, Elon Musk’s Starlink donated a few dozen satellite systems to the Ukrainian government. While it remains unclear how they are being used, there are numerous concerns with the system. As Musk indicated, satellite communication is an easy target for attack. If the airspace is controlled, the user’s transmission to the satellite can be intercepted and triangulated back to the location of the signal. Additionally, satellite communication is easier to jam and disrupt. Consequently, Starlink has recently focused its efforts on cyber defense and preventing signal jamming.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 7073,
+      "body_end": 7661,
+      "source_links": [
+        "http://encyclopedia.uia.org/en/problem/jamming-satellite-communications",
+        "https://twitter.com/elonmusk/status/1499472139333746691?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1499472139333746691%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.space.com%2Felon-musk-spacex-starlink-cyber-defense-ukraine-invasion",
+        "https://twitter.com/elonmusk/status/1499972826828259328?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1499972826828259328%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.space.com%2Felon-musk-spacex-starlink-cyber-defense-ukraine-invasion"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00018",
+      "text": "Furthermore, because 99 percent of internet traffic travels through earthbound cables, satellite connections play a negligible role in a nation’s telecom infrastructure. Starlink won’t be the panacea for Ukraine’s communication in the case of full Russian control. Even if every Ukrainian had a Starlink dish, there are limits to the satellite’s geographic range and regulators still have control over the required spectrum frequencies.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 7663,
+      "body_end": 8099,
+      "source_links": [
+        "https://www.vice.com/en/article/5dbbe5/elon-musk-satellite-internet"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758444-b00019",
+      "text": "For more information about this topic, see our special coverage Russia invades Ukraine.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 8101,
+      "body_end": 8188,
+      "source_links": [
+        "https://globalvoices.org/special/russia-invades-ukraine/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "dc0c36b3380081f7065240b217bb644e01c4195d01ac45d05dc37cbfd679d3c9",
+  "word_count": 1210,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8188,
+  "retrieved_at": "2026-11-16T22:34:01.585308+00:00",
+  "raw_html_sha256": "20d6bc12c53e2992096927b9ef05b224aa3d4511b80f2630d2e2fef779b6217b",
+  "resolved_source_url": "https://globalvoices.org/2022/03/10/can-ukraines-internet-sustain-longer-term-attacks-and-destruction-from-russia/",
+  "canonical_url": "https://globalvoices.org/2022/03/10/can-ukraines-internet-sustain-longer-term-attacks-and-destruction-from-russia/",
+  "source_bytes": 199354,
+  "authors": [
+    {
+      "name": "Global Voices Central & Eastern Europe",
+      "url": "https://globalvoices.org/author/cee/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 758444,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "20d6bc12c53e2992096927b9ef05b224aa3d4511b80f2630d2e2fef779b6217b",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-f76685d0716bfb3303c9",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-03",
+    "eligible_month_documents": 105,
+    "selected_month_documents": 88,
+    "inclusion_probability": 0.8380952380952381,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Global Voices Central & Eastern Europe",
+  "body_start": 518,
+  "body_end": 8706,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "a3f41e225dd805c7138d5e49fc0834a4f9ff496b641f78f8df875b46423f65a6",
+  "text_path": "articles/gv-758444.txt",
+  "metadata_path": "metadata/gv-758444.json",
+  "attribution": "This story by Global Voices Central & Eastern Europe originally appeared on Global Voices. https://globalvoices.org/2022/03/10/can-ukraines-internet-sustain-longer-term-attacks-and-destruction-from-russia/",
+  "content_sha256": "4f560c9b23994e4d6fbb8a34347882d9b1e18bd52995376f1361cfe21af70103",
+  "source_sha256": "20d6bc12c53e2992096927b9ef05b224aa3d4511b80f2630d2e2fef779b6217b",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

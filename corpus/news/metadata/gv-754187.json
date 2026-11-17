@@ -1,0 +1,376 @@
+{
+  "id": "gv-754187",
+  "publisher_id": 754187,
+  "source_id": "globalvoices:754187",
+  "source_url": "https://globalvoices.org/2022/01/12/china-aims-to-wipe-out-omicron-ahead-of-winter-olympics/",
+  "title": "China aims to wipe out Omicron ahead of Winter Olympics",
+  "published_at": "2022-01-12T03:36:07Z",
+  "modified_at": "2022-02-18T06:56:43Z",
+  "api_author_id": 254,
+  "api_content_sha256": "ffe002a864149ba1c30bc8f5d9952aa70ffa234351969a51c39c9e66978005a2",
+  "api_response_sha256": "5fbfbff678727adebb3a105386522b813371c20ab60c755caeef52d041127070",
+  "api_retrieved_at": "2026-11-16T22:20:40.560640+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 278,
+      "count": 3056,
+      "name": "Sport",
+      "slug": "sport",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-754187-b00001",
+      "text": "The Beijing Winter Olympic Games are set to begin next month on February 4th. About 27,000 Olympic-related personnel are expected to enter the country in the coming weeks.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 171,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00002",
+      "text": "Chinese authorities have been preparing an enclosed campus or so-called “Olympic Bubble” to prevent contagious COVID-19 variants from spreading into Beijing. But this plan has been complicated as cases of the Delta and Omicron variants were recently identified in the country, raising concerns about how Beijing can contain the outbreak ahead of the Games.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 173,
+      "body_end": 529,
+      "source_links": [
+        "https://fortune.com/2022/01/04/omicron-covid-china-xian-lockdown-delta-outbreak-olympic-bubble/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00003",
+      "text": "Last week, Tianjin, a city 100-kilometers from Beijing, found two local Omicron cases. A massive testing campaign was launched and 18 more cases were found on January 9, with 10 symptomatic and 11 asymptomatic cases were identified on 10 January.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 531,
+      "body_end": 777,
+      "source_links": [
+        "https://weibo.com/2803301701/Lae70CQsc",
+        "https://www.globaltimes.cn/page/202201/1245409.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00004",
+      "text": "According to Tianjin’s Center for Disease Control and Prevention, the city is experiencing third-generation spread, which means undetected cases have been circulating for 14–21 days and the authorities have yet to identify the origin of the infection.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 779,
+      "body_end": 1030,
+      "source_links": [
+        "https://weibo.com/3885795212/LaepP0RFE"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00005",
+      "text": "Attempts to contain the virus",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1032,
+      "body_end": 1061,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00006",
+      "text": "As the Winter Olympics are approaching, the port city is on red alert. To contain the spread, the city’s 14 million population is lining up for COVID-19 nucleic acid tests.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1063,
+      "body_end": 1235,
+      "source_links": [
+        "https://www.nytimes.com/2022/01/09/world/asia/china-covid-testing-omicron.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00007",
+      "text": "To prevent the spread of Omicron to other cities, residents in Tianjin are forbidden from leaving their residential district, according to a number of testimonies from Weibo.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1237,
+      "body_end": 1411,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00008",
+      "text": "However, some expect the contagious Omicron variant may have already travelled to Beijing as the hidden transmission in Tianjin has found its way to Anyang city in Henan province.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1413,
+      "body_end": 1592,
+      "source_links": [
+        "https://www.scmp.com/news/china/science/article/3162796/omicron-puts-brakes-spring-festival-travel-rush-tianjin-beijing"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00009",
+      "text": "Anticipating this, Beijing authorities are on high alert:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1594,
+      "body_end": 1651,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00010",
+      "text": "Thus far, China’s zero-COVID strategy has been successful in containing the spread of COVID-19 within the country. Wuhan, the origin of the COVID-19 outbreak, virtually eradicated the virus within four months despite criticisms about its authoritative lockdown measures including roadblocks, suspension of public transportation services, massive home quarantine, severe punishment, a health and contact tracking system that restricts individual mobility, and more.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1653,
+      "body_end": 2117,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/COVID-19_lockdown_in_China"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00011",
+      "text": "And more recently, a three-week lockdown since December 23 in Xi’an, a city in Shaanxi province, has more or less halted the spread of the Delta variant. The new local transmissions in Xi'an were down from 155 on December 29 to 13 cases on January 10.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2119,
+      "body_end": 2370,
+      "source_links": [
+        "https://news.ifeng.com/c/8CORnzl6lYH",
+        "https://weibo.com/2803301701/Lae70CQsc"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00012",
+      "text": "Citizens’ frustrations with COVID protocols",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2372,
+      "body_end": 2415,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00013",
+      "text": "Yet, the social and political cost of authoritative control measures is huge. During the lockdown in Xi’an, frustration about the restriction on freedom emerged on social media with witness accounts of food shortages and inadequate care for vulnerable populations, such as pregnant women and elderly people with heart conditions.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2417,
+      "body_end": 2746,
+      "source_links": [
+        "https://www.scmp.com/news/china/science/article/3162714/chinas-zero-covid-policy-xian-takes-stock-3rd-lockdown-week"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00014",
+      "text": "Meanwhile, the authorities placated community frustration with apologies:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2748,
+      "body_end": 2821,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00015",
+      "text": "And also with suppression:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2823,
+      "body_end": 2849,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00016",
+      "text": "Now that Omicron has reached China, the country's control model as crystalized in its zero-COVID strategy will face a serious test, as pointed by Shirley Ze Yu, a professor on political economy:",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2851,
+      "body_end": 3045,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754187-b00017",
+      "text": "For more information about this topic, see our special coverage When sports are political: The other side of Beijing 2022",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3047,
+      "body_end": 3168,
+      "source_links": [
+        "https://globalvoices.org/special/beijing-olympics-2022/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "01276d9016b4815bfa75153a8f84c3b1e76f7bb6251819563c4ba00553066763",
+  "word_count": 484,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 4,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 3168,
+  "retrieved_at": "2026-11-16T22:33:16.352457+00:00",
+  "raw_html_sha256": "9b2a5b242603efd46393e9a981be890b57ff4a94d771d9198cf19e258f6e7dec",
+  "resolved_source_url": "https://globalvoices.org/2022/01/12/china-aims-to-wipe-out-omicron-ahead-of-winter-olympics/",
+  "canonical_url": "https://globalvoices.org/2022/01/12/china-aims-to-wipe-out-omicron-ahead-of-winter-olympics/",
+  "source_bytes": 187115,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 754187,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "9b2a5b242603efd46393e9a981be890b57ff4a94d771d9198cf19e258f6e7dec",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-494fb97f7ce27f3d7f11",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-01",
+    "eligible_month_documents": 88,
+    "selected_month_documents": 74,
+    "inclusion_probability": 0.8409090909090909,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Oiwan Lam",
+  "body_start": 443,
+  "body_end": 3611,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b090e3a49291beb376d41dda63c8768b77e64d4d1d1c1988d4ed4221292d866d",
+  "text_path": "articles/gv-754187.txt",
+  "metadata_path": "metadata/gv-754187.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2022/01/12/china-aims-to-wipe-out-omicron-ahead-of-winter-olympics/",
+  "content_sha256": "94944668cd79aa8861df45164d71865c62a86e65bf91abd2b9e791170ee6b2ec",
+  "source_sha256": "9b2a5b242603efd46393e9a981be890b57ff4a94d771d9198cf19e258f6e7dec",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

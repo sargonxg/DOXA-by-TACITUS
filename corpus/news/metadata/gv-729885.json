@@ -1,0 +1,615 @@
+{
+  "id": "gv-729885",
+  "publisher_id": 729885,
+  "source_id": "globalvoices:729885",
+  "source_url": "https://globalvoices.org/2021/03/01/nepals-progressive-covid-19-vaccine-campaign-plagued-by-infodemic/",
+  "title": "Nepal’s progressive COVID-19 vaccine campaign plagued by ‘infodemic’",
+  "published_at": "2021-03-01T16:15:11Z",
+  "modified_at": "2021-03-01T19:54:21Z",
+  "api_author_id": 2808,
+  "api_content_sha256": "9563e3d8c4270f9792d9610faa4a5c3d279a85653326a2d9d1e623ca3c6c7fe9",
+  "api_response_sha256": "77986401a5e819891872a9bdf1c0b30de63431aaa5322b33afb4833ff0dba79d",
+  "api_retrieved_at": "2026-11-16T22:20:32.943313+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 243,
+      "count": 6007,
+      "name": "Development",
+      "slug": "development",
+      "parent": 238
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 2552,
+      "count": 1465,
+      "name": "Nepal",
+      "slug": "nepal",
+      "parent": 31
+    },
+    {
+      "id": 1008,
+      "count": 74,
+      "name": "Nepali",
+      "slug": "nepali",
+      "parent": 317
+    },
+    {
+      "id": 273,
+      "count": 1466,
+      "name": "Refugees",
+      "slug": "refugees",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-729885-b00001",
+      "text": "This article by Sonia Awale was originally published in Nepali Times and an edited version is republished on Global Voices as part of a content-sharing agreement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 162,
+      "source_links": [
+        "https://www.nepalitimes.com/banner/nepal-fights-infodemic-to-push-vaccine/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00002",
+      "text": "So far, 450,000 Nepalis have received the first dose of Covishield, reaching 85 per cent of the target group in the first phase of the country’s COVID-19 vaccination drive.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 164,
+      "body_end": 336,
+      "source_links": [
+        "https://kathmandupost.com/health/2021/01/27/nepal-begins-first-phase-of-vaccination-drive-against-covid-19"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00003",
+      "text": "Starting March 7, 3.7 million Nepalis over 55, 12 per cent of the total population, will get their shots against SARS-CoV-2 in the second phase. Teachers, students and bus drivers will be included in this phase.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 338,
+      "body_end": 549,
+      "source_links": [
+        "https://kathmandupost.com/health/2021/02/18/all-people-above-55-years-old-to-get-vaccine-in-the-second-phase-of-campaign"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00004",
+      "text": "On paper, Nepal looks like it is in a healthy position regarding vaccination, especially since more than 100 countries have yet to receive a single dose.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 551,
+      "body_end": 704,
+      "source_links": [
+        "https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&time=2021-01-01..latest&country=USA~ISR~GBR~ARE~OWID_WRL~EuropeanUnion~BRA~CHN~IDN~BGD~RUS~MEX~CHL~IND~NPL&region=World&vaccinationsMetric=true&interval=total&perCapita=true&smoothing=0&pickerMetric=new_vaccinations&pickerSort=desc"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00005",
+      "text": "However, the vaccine campaign has been plagued by hesitancy and denial. Even doctors and nurses were reluctant to inoculate themselves. Failure to communicate, allay concerns about side effects, and ensure access in remote areas were the main blocks to better coverage.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 706,
+      "body_end": 975,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00006",
+      "text": "“The fact is that the vaccines arrived in Nepal much earlier than we anticipated and once they did, we had to use them on the fly with the pandemic still going on, leaving us without a proper communication strategy,” admits Buddha Basnyat of the Patan Academy of Health Sciences.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 977,
+      "body_end": 1256,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00007",
+      "text": "Covishield, developed by AstraZeneca Oxford University and manufactured by the Serum Institute of India is being used in the U.K., the European Union and India, with Australia starting their vaccination programme soon. With the efficacy ranging from 70–80 per cent, 0.5 ml of 2 doses 4–12 weeks apart, the jab has been deemed safe with no severe reactions nor any deaths.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1258,
+      "body_end": 1629,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Oxford%E2%80%93AstraZeneca_COVID-19_vaccine"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00008",
+      "text": "Previously, local governments used to deploy Tole Health Promoters (female community health volunteers under a government program) in neighbourhoods prior to a vaccination drive for measles, polio and other infections, to address the public’s safety concerns.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1631,
+      "body_end": 1890,
+      "source_links": [
+        "https://www.mohp.gov.np/eng/program/reproductive-maternal-health/female-community-health-programme"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00009",
+      "text": "Another effective communication tool would have been the use of social media platforms and mass media to increase awareness about the vaccine as well as promote its use. Elsewhere in the world, prime ministers and presidents were televised live being inoculated. Celebrities took to the Internet to share their experiences of vaccination.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1892,
+      "body_end": 2230,
+      "source_links": [
+        "https://www.bbc.com/news/world-us-canada-55401706",
+        "https://www.indiatvnews.com/entertainment/celebrities/shilpa-shirodkar-becomes-first-bollywood-star-to-get-covid-19-vaccine-pic-676870",
+        "https://www.news18.com/news/india/coronavirus-live-updates-pm-narendra-modi-covid19-vaccine-aiims-maharashtra-mumbai-lockdown-cases-in-india-delhi-3485129.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00010",
+      "text": "Sher Bahadur Pun, a virologist at the Sukraraj Tropical and Infectious Disease Hospital, comments that “someone like Nirmal Purja (Nepalese celebrity mountaineer) would have been best to promote the campaign and increase the acceptance of the vaccine by the masses with his legions of followers.” Basnyat agrees that Purja with his international mountaineering fame and Gurkha commando background would have also bolstered Nepal’s vaccine diplomacy.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2232,
+      "body_end": 2681,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Nirmal_Purja"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00011",
+      "text": "The government has approved the second dose to be given anywhere between 8–12 weeks of the first one, and before that, prioritising the vaccination of as many vulnerable individuals as possible.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2683,
+      "body_end": 2877,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00012",
+      "text": "But the availability of the vaccine will be the main concern as Nepal moves on to the next stage of the campaign. With the 1 million doses Covishield grant from India in January, another 2 million that Nepal purchased this week from the Serum Institute of India, 2.25 million (with the first 300,000 arriving first) under the COVAX initiative, and 500,000 doses of Sinopharm from China, the government has a stock of close to six million doses. This means 3 million people can be vaccinated soon.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2879,
+      "body_end": 3375,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/COVAX",
+        "https://timesofindia.indiatimes.com/world/south-asia/nepal-to-buy-2-million-doses-of-oxford-vaccine-from-india/articleshow/81085558.cms",
+        "https://www.livemint.com/news/india/covid19-vaccine-nepal-receives-1-mn-covishield-doses-bought-from-india-11613913782246.html",
+        "https://www.youtube.com/watch?v=cBfaJtXu65A"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00013",
+      "text": "“The second phase is as challenging as it is important. But this is also the group likely to have a higher chance of a reaction, so we need to be prepared locally to manage them,” says Shyam Raj Uprety, head of the government’s COVID-19 vaccine strategy. “It is crucial to communicate different types of side effects and explain that they signify that the vaccine is working.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3377,
+      "body_end": 3753,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00014",
+      "text": "Around the world, the total number of new coronavirus cases and fatalities is dropping. Although India has reported spikes in some states and Nepal will have to keep a close watch on New Delhi, Uttar Pradesh and Bihar, Nepalis have most likely developed localised immunity.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3755,
+      "body_end": 4028,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00015",
+      "text": "A Nepal Health Research Council study has revealed that over 45 per cent of hospital staff had developed antibodies by December, adding to the view that we are nearing herd immunity.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4030,
+      "body_end": 4212,
+      "source_links": [
+        "https://kathmandupost.com/health/2021/02/24/covid-19-prevalence-in-valley-might-have-been-underestimated-study-suggests"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00016",
+      "text": "“Once we have vaccinated a larger risk population, even if there is a second wave, it is unlikely to impact much because the group who were getting seriously sick will be protected,” adds Dixit.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4214,
+      "body_end": 4408,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00017",
+      "text": "But even with the vaccine, Nepalis will still have to continue precautions. There is still uncertainty about the duration of immunity, and whether vaccinated people can spread the virus.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4410,
+      "body_end": 4596,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00018",
+      "text": "Says Basnyat: “This has been a pandemic of misinformation, we have to negate that with public engagement. Good thing is that Nepal can draw inspiration from past successful vaccination drives and can become a model for others.”",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4598,
+      "body_end": 4825,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00019",
+      "text": "Some answers about vaccines",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4827,
+      "body_end": 4854,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00020",
+      "text": "Recently Nepali Times spoke with three experts about questions from readers regarding the COVID-19 vaccination drive in Nepal.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4856,
+      "body_end": 4982,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00021",
+      "text": "Excerpts of interviews with virologist Sher Bahadur Pun at the Sukraraj Tropical and Infectious Disease Hospital, Shyam Raj Uprety, head of the Government Covid Vaccine Strategy and Sameer Mani Dixit of the Centre for Molecular Dynamic Nepal:",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4984,
+      "body_end": 5226,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00022",
+      "text": "Nepali Times (NT): What are the precautions one should take before and after the vaccine?",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5228,
+      "body_end": 5317,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00023",
+      "text": "> Sameer Mani Dixit (SMD): Covishield, the Covid vaccine we are using, is an intramuscular injection, 0.5ml in two doses 4–12 weeks apart. It is administered by a professional and after the jab, one will feel mild pain in the region.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5319,
+      "body_end": 5552,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-729885-b00024",
+      "text": "NT: What’s the efficacy rate of the vaccine and how long does it work?",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5554,
+      "body_end": 5624,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00025",
+      "text": "> SMD: Covishield has been used in the U.K., E.U., India and many other countries, Australia is getting ready to use it. It has passed phase 3 clinical trials with over 12,000 volunteers without any severe reactions or any death. The efficacy ranges from 70–80 per cent.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5626,
+      "body_end": 5896,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-729885-b00026",
+      "text": "> Once a person is vaccinated, there are antibodies that the body produces and then there are memory T and B cells. The lifespan of antibodies is about 3–6 months but we don’t know about the duration of the memory cells since the vaccine has just been developed. The assumption is that it will work from anywhere between 9–12 months but we will know for sure once people who have been vaccinated pass that stage.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5898,
+      "body_end": 6310,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-729885-b00027",
+      "text": "NT: Do we have to get the same vaccine for the second dose?",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6312,
+      "body_end": 6371,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00028",
+      "text": "> SMD: Ideally, the manufacturers of the vaccine suggest we take the same for both doses. But there are instances you may be able to take a second dose from a different company.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6373,
+      "body_end": 6550,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-729885-b00029",
+      "text": "NT: Do people who have recovered from COVID-19 need to vaccinate?",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6552,
+      "body_end": 6617,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00030",
+      "text": "> Sher Bahadur Pun (SBP): We don’t know exactly how long does the natural infection protect the body. The rough estimation is between 3–6 months. But it varies from one individual to another so it is recommended that people take the shot. Also, two doses provide longer protection.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6619,
+      "body_end": 6900,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-729885-b00031",
+      "text": "NT: Can breastfeeding mothers take the vaccine?",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 6902,
+      "body_end": 6949,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00032",
+      "text": "> SBP: Manufacturers of Covishield have suggested pregnant women and breastfeeding mothers against taking this vaccine. But Nepal government recently said that those breastfeeding for six months or more could take it, but we don’t have concrete data yet so we don’t recommend it.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 6951,
+      "body_end": 7230,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-729885-b00033",
+      "text": "NT: How can people with vulnerable family members get them vaccinated?",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 7232,
+      "body_end": 7302,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00034",
+      "text": "> Shyam Raj Uprety (SRU): We identified health workers as the most vulnerable. We vaccinated them at their nearest convenient place. We will do the same for the next vulnerable group, take the vaccine to the communities.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 7304,
+      "body_end": 7524,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-729885-b00035",
+      "text": "NT: If someone is not on the priority list but still wants to get vaccinated, how can they get it? Can it be bought?",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 7526,
+      "body_end": 7642,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-729885-b00036",
+      "text": "> SRU: It is unlikely for people who are not listed as the priority to get the shot. It is being administered for free for the priority group individuals and cannot be bought in the market. But after the most vulnerable are covered, the vaccine could be made available by the private sector.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 7644,
+      "body_end": 7935,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "767463d592c1c3229b4f1bbdf265c0fecae82fc47f1790f84f20c58fefbf2b50",
+  "word_count": 1312,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7935,
+  "retrieved_at": "2026-11-16T22:29:39.302299+00:00",
+  "raw_html_sha256": "5ba8a6a57756fad322fa5018e7d81d95c6f19b2e17fae2c5b7dbf5f9b740fd34",
+  "resolved_source_url": "https://globalvoices.org/2021/03/01/nepals-progressive-covid-19-vaccine-campaign-plagued-by-infodemic/",
+  "canonical_url": "https://globalvoices.org/2021/03/01/nepals-progressive-covid-19-vaccine-campaign-plagued-by-infodemic/",
+  "source_bytes": 191417,
+  "authors": [
+    {
+      "name": "Nepali Times",
+      "url": "https://globalvoices.org/author/nepalitimes/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 729885,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "5ba8a6a57756fad322fa5018e7d81d95c6f19b2e17fae2c5b7dbf5f9b740fd34",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-0d5f18f859fc84ebe421",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-03",
+    "eligible_month_documents": 91,
+    "selected_month_documents": 76,
+    "inclusion_probability": 0.8351648351648352,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Nepali Times",
+  "body_start": 469,
+  "body_end": 8404,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "0eb770842f18a3e2a1898180cd27827e03eb697b183eb6fe6dbc49e978794883",
+  "text_path": "articles/gv-729885.txt",
+  "metadata_path": "metadata/gv-729885.json",
+  "attribution": "This story by Nepali Times originally appeared on Global Voices. https://globalvoices.org/2021/03/01/nepals-progressive-covid-19-vaccine-campaign-plagued-by-infodemic/",
+  "content_sha256": "b4a1ba0b561a63e8fe6cc8c6fbca815f500663c267e73fd09fc36f60a566323f",
+  "source_sha256": "5ba8a6a57756fad322fa5018e7d81d95c6f19b2e17fae2c5b7dbf5f9b740fd34",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

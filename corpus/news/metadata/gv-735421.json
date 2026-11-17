@@ -1,0 +1,349 @@
+{
+  "id": "gv-735421",
+  "publisher_id": 735421,
+  "source_id": "globalvoices:735421",
+  "source_url": "https://globalvoices.org/2021/05/24/hacker-group-anonymous-leaks-colombias-police-and-army-files-amid-protest-crackdown/",
+  "title": "Hacker group Anonymous leaks Colombia's police and army files amid protest crackdown",
+  "published_at": "2021-05-24T13:03:53Z",
+  "modified_at": "2021-06-08T10:27:53Z",
+  "api_author_id": 2470,
+  "api_content_sha256": "a3a5da451f4823189b1526a21035e1134198a16c26569dc5d94b94b78a927dbc",
+  "api_response_sha256": "209d251d160f97b2292e453023b10abcb0e3517753e5fed0c99aea9917505d95",
+  "api_retrieved_at": "2026-11-16T22:20:35.207607+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 150,
+      "count": 1234,
+      "name": "Colombia",
+      "slug": "colombia",
+      "parent": 1354
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-735421-b00001",
+      "text": "In Colombia, what started as a national strike against a tax reform proposed by the government of Iván Duque at the end of April transformed into an outcry against police violence, inequality, and poverty worsened by COVID-19. With the protests showing no signs of stalling, in late April and early May, the hacktivist group Anonymous joined the fray by leaking thousands of classified police, military, and government documents.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 429,
+      "source_links": [
+        "https://globalvoices.org/2021/05/08/street-art-shows-the-clamor-of-the-colombian-people-tired-of-violence-corruption-and-poverty/",
+        "https://www.economist.com/the-americas/2021/05/06/protests-in-colombia-derail-an-important-tax-reform"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00002",
+      "text": "The leaks included Colombia's National Tax and Customs Directorate (DIAN) passwords, police members’ names, and phone numbers, and email addresses and correspondent passwords of military personnel. The Senate website was also temporarily blocked. Earlier, on April 29, the group leaked confidential files from the Colombian National Police and took down government websites. The group also leaked an alleged conversation from May 2 in Cali in which Eduardo Enrique Zapateiro, general of the Colombian army, is heard saying that he has received an order from the president to militarize the city and take action against the demonstrators.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 431,
+      "body_end": 1068,
+      "source_links": [
+        "https://twitter.com/YourAnonAttacks/status/1387654208044818438",
+        "https://www.semana.com/nacion/articulo/anonymous-filtro-datos-y-correos-del-ejercito-nacional-esto-es-lo-que-se-sabe/202145/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00003",
+      "text": "“Our main goal is to bring improvements for society and ensure the freedom of speech, so the right of democratic demonstrations and the peoples’ voices may be respected,” Anonymous member active on Colombia's case, Etersec, wrote to me by email.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1070,
+      "body_end": 1315,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00004",
+      "text": "According to DW and Colombian newspaper Semana, the army has not responded to the attacks.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1317,
+      "body_end": 1407,
+      "source_links": [
+        "https://www.dw.com/es/colombia-anonymous-se-atribuye-hackeo-de-la-p%C3%A1gina-del-ej%C3%A9rcito/a-57436738",
+        "https://www.semana.com/nacion/articulo/anonymous-filtro-datos-y-correos-del-ejercito-nacional-esto-es-lo-que-se-sabe/202145/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00005",
+      "text": "Anonymous had declared “war on the right-wing Duque government after police massacred civilians nationwide” through a video on YouTube posted on May 4. Like many Colombian commentators, Anonymous said that the tax reform disproportionally impacted the poor and middle classes, already crunched by the pandemic. The number of people living in poverty in Colombia reached 21 million in 2020, a 6.8 percent increase from 2019, according to DANE, the national Colombian statistics office.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1409,
+      "body_end": 1893,
+      "source_links": [
+        "https://www.larepublica.co/economia/mas-de-21-millones-de-personas-viven-en-la-pobreza-y-74-millones-en-pobreza-extrema-3161813",
+        "https://www.youtube.com/watch?v=ZnJbdOC7IyQ",
+        "https://www.youtube.com/watch?v=_UOxOjqc-Ek&t=246s"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00006",
+      "text": "Anonymous has a tailored justification for each different attack. The police data leak was for “so much aggressive and cruel repression to the demonstrations of popular and democratic power,” Etersec wrote. For the army data leak, it is due “to the financing of paramilitary actions in Colombia, resulting on infiltrated groups in manifestations to cause chaos and transform those pacific manifestations in riots.” Finally, the attacks on the Colombian governmental websites are justified as “against oppressive projects imposed to the population, among them, the tax reform aimed at a huge increase of taxes over the poorest population.”",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1895,
+      "body_end": 2533,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00007",
+      "text": "The state forces have brutally repressed protestors for several weeks — 43 were allegedly killed by members of the security forces, the NGO Indepaz reported on May 19.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2535,
+      "body_end": 2702,
+      "source_links": [
+        "https://twitter.com/Indepaz/status/1394844410945343489?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00008",
+      "text": "Local NGO Temblores reported 2,110 cases of police violence as of May 13. It also reported 16 sexual assaults allegedly committed by police officers. The United Nations rights office, the United States, and the European Union urged the Colombian government to act with restraint.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2704,
+      "body_end": 2983,
+      "source_links": [
+        "https://eeas.europa.eu/headquarters/headquarters-homepage/97888/corrigendum-colombia-statement-high-representativevice-president-borrell-violence-during_en",
+        "https://news.un.org/en/story/2021/05/1091212",
+        "https://twitter.com/TembloresOng/status/1392955959178375179",
+        "https://www.europapress.es/internacional/noticia-ong-temblores-denuncia-16-episodios-abuso-sexual-parte-policia-protestas-colombia-20210517132952.html",
+        "https://www.france24.com/en/live-news/20210504-us-urges-utmost-restraint-after-colombia-protest-violence"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00009",
+      "text": "Although the president withdrew the tax proposal, the demonstrations continued in several Colombian cities. The hashtags on social media tagging these events are #SOSColmbia, #NosEstanMatando (“TheyAreKillingUs”) and #ParoNacional (“NationalStrike”). Local press reported that Colombia's defense minister, Diego Molano, blamed illegal armed groups for looting and vandalism.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2985,
+      "body_end": 3359,
+      "source_links": [
+        "https://twitter.com/search?q=%23nosestanmatando&src=typed_query",
+        "https://twitter.com/search?q=%23paronacional&src=typed_query",
+        "https://twitter.com/search?q=%23soscolombia&src=typed_query",
+        "https://www.reuters.com/world/americas/colombias-president-withdraws-tax-reform-after-protests-2021-05-02/",
+        "https://www.semana.com/semana-tv/vicky-en-semana/articulo/diego-molano-ministro-de-defensa-el-enemigo-de-la-ciudadania-no-es-la-policia/202103/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00010",
+      "text": "The protests are diverse in nature, with youth and students as its protagonists, with the support of peasant, indigenous, and labor unions. The protest leaders and the government have made a few attempts at talking so far.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3361,
+      "body_end": 3583,
+      "source_links": [
+        "https://globalvoices.org/2021/05/14/indigenous-peoples-join-the-national-struggle-in-colombias-strike/",
+        "https://www.bbc.com/mundo/noticias-57002561",
+        "https://www.france24.com/en/americas/20210520-thousands-of-colombians-return-to-streets-ahead-of-fresh-talks-with-government"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00011",
+      "text": "“It is important to highlight that (…) the demonstrations arose from the people, and we, Anonymous, are here to give support to every fair and social claim,” said Etersec",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3585,
+      "body_end": 3755,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00012",
+      "text": "“Being a hacktivist goes far beyond just hack and break systems,” Etersec added. “Before any action, we made in advance the research project, analysis and organization [of the work].”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3757,
+      "body_end": 3940,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00013",
+      "text": "Each Anonymous cell has its own teams, composed of people with different kinds of expertise. For Colombia, about eight people work together, according to Etersec: @IberoAnon, @Anons_Vzla, @EterSec_, @AnonNews_Col (whose account is suspended), @AnonymousOpCOL (whose account is suspended), AnonNovidades, @sin1pe_crew (whose account is suspended), Y0urAnonOPS.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3942,
+      "body_end": 4301,
+      "source_links": [
+        "https://mobile.twitter.com/AnonNews_Col",
+        "https://twitter.com/Anons_Vzla",
+        "https://twitter.com/EterSec_",
+        "https://twitter.com/IberoAnon",
+        "https://twitter.com/anonnovidades?lang=es",
+        "https://twitter.com/sin1pe_crew?lang=de",
+        "https://twitter.com/y0uranonops?lang=es",
+        "https://www.elfinanciero.com.mx/mundo/2021/05/07/twitter-suspende-cuenta-de-anonymous-colombia-tras-filtracion-de-informacion/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00014",
+      "text": "These past few weeks, citizens reported blocked Colombian accounts and posts on different social media networks. On May 15, Etersec's main account was suspended by Twitter, along with others from his team. He created a new one, “Etersec_“.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4303,
+      "body_end": 4542,
+      "source_links": [
+        "https://twitter.com/EterSec",
+        "https://twitter.com/EterSec_",
+        "https://www.pulzo.com/tecnologia/censura-redes-sociales-colombia-que-limites-tienen-facebook-twitter-PP1049844"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00015",
+      "text": "“At this point, we can observe that after the exposed [data], there was an excessive increase of repressive acts and monitoring in both the streets and in digital media,” Etersec said.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4544,
+      "body_end": 4728,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-735421-b00016",
+      "text": "Anonymous hopes that the institutions will “correct the flaws” in their digital systems, “reflect on the power of their actions” and how such actions directly affect the population.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4730,
+      "body_end": 4911,
+      "source_links": [],
+      "source_kind": "div",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "3e4d6bc82916040d39de7c5091fc436e0708cb057fbad33897f7b70db93483a5",
+  "word_count": 744,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4911,
+  "retrieved_at": "2026-11-16T22:30:35.390180+00:00",
+  "raw_html_sha256": "d1cbce8b3de00698c553b13f390ba71a7b77fd856dbc520c6d9090574e3a6d91",
+  "resolved_source_url": "https://globalvoices.org/2021/05/24/hacker-group-anonymous-leaks-colombias-police-and-army-files-amid-protest-crackdown/",
+  "canonical_url": "https://globalvoices.org/2021/05/24/hacker-group-anonymous-leaks-colombias-police-and-army-files-amid-protest-crackdown/",
+  "source_bytes": 190570,
+  "authors": [
+    {
+      "name": "Melissa Vida",
+      "url": "https://globalvoices.org/author/melissa-vida/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 735421,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "d1cbce8b3de00698c553b13f390ba71a7b77fd856dbc520c6d9090574e3a6d91",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-8464a8ec99c671c86f20",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-05",
+    "eligible_month_documents": 87,
+    "selected_month_documents": 73,
+    "inclusion_probability": 0.8390804597701149,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Melissa Vida",
+  "body_start": 503,
+  "body_end": 5414,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "571e3e963f637af6358f51598b2813d48be59e73d79e2c8d246e8933eff13ad6",
+  "text_path": "articles/gv-735421.txt",
+  "metadata_path": "metadata/gv-735421.json",
+  "attribution": "This story by Melissa Vida originally appeared on Global Voices. https://globalvoices.org/2021/05/24/hacker-group-anonymous-leaks-colombias-police-and-army-files-amid-protest-crackdown/",
+  "content_sha256": "31392c433adfda2137777ea60952c6f7e79a491ab7aa31b53e867e5a0282665e",
+  "source_sha256": "d1cbce8b3de00698c553b13f390ba71a7b77fd856dbc520c6d9090574e3a6d91",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

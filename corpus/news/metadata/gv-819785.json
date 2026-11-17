@@ -1,0 +1,481 @@
+{
+  "id": "gv-819785",
+  "publisher_id": 819785,
+  "source_id": "globalvoices:819785",
+  "source_url": "https://globalvoices.org/2024/09/11/venapp-the-chavista-app-co-opted-for-harassment-in-venezuela/",
+  "title": "VenApp, the Chavista app co-opted for harassment in Venezuela",
+  "published_at": "2024-09-11T14:18:03Z",
+  "modified_at": "2024-09-12T02:00:12Z",
+  "api_author_id": 3189,
+  "api_content_sha256": "71bee2ac65556a4ad62f9b07dddcacbea478f1986f8d91349dfe94b180d3322f",
+  "api_response_sha256": "369d45b2b61d11cd3ea4c9f83bad67697c572c029b126fa57cb744f2b43f4d66",
+  "api_retrieved_at": "2026-11-16T22:21:05.897258+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 157,
+      "count": 1167,
+      "name": "Venezuela",
+      "slug": "venezuela",
+      "parent": 1354
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-819785-b00001",
+      "text": "This article was published in ProBox on August 28, 2024. The article is the second of a three-part investigation titled Digital Terror, about repression in the Venezuelan electoral context, made in alliance with Digital Democracy Institute of the Américas and DFRLab. This is an edited version republished in Global Voices under a media partnership agreement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 359,
+      "source_links": [
+        "https://proboxve.org/en/publicacion/digitalterror-venapp-the-chavista-app-co-opted-for-harassment/",
+        "https://www.atlanticcouncil.org/programs/digital-forensic-research-lab/",
+        "https://www.ddia.org/en"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00002",
+      "text": "Recent presidential elections in Venezuela sparked a wave of outrage and protests both in the country and abroad due to the electoral authority's official result, which declared Nicolás Maduro the winner with a contested 51.20 percent of the votes. Venezuelan citizens and the international community rose up against what many consider to be blatant fraud. Rather than de-escalating the crisis, the regime moved to intensify repression both online and on the streets. Since then, NGOs have registered one of the highest peaks of repression against dissident voices of the last two decades.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 361,
+      "body_end": 950,
+      "source_links": [
+        "https://globalvoices.org/2024/04/24/presidential-elections-in-venezuela-less-free-than-ever/",
+        "https://globalvoices.org/2024/08/01/in-a-historic-move-venezuelans-work-together-to-expose-maduros-electoral-fraud/",
+        "https://globalvoices.org/2024/08/09/post-election-repression-in-venezuela-authorities-target-human-rights-defenders-and-humanitarian-workers/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00003",
+      "text": "Technology has been at the center of it all, with reports of surveillance, drone use, passports anulments, control of communications infrastructure, blocking or shutting down of digital media, or digital lynching against those who speak out against the electoral fraud. In this context, Maduro's government has even made use of a state app, VenApp, to expose citizens and detain them, violating the human rights of Venezuelans who demand transparency in the results of the presidential elections.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 952,
+      "body_end": 1448,
+      "source_links": [
+        "https://www.accessnow.org/the-many-means-of-surveillance-and-control-in-venezuela/",
+        "https://www.facebook.com/watch/?v=879282144045453"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00004",
+      "text": "Read more: Venezuelans use AI avatars and Instagram Live to fight back Maduro's repression",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1450,
+      "body_end": 1540,
+      "source_links": [
+        "https://globalvoices.org/2024/08/19/venezuelans-use-ai-avatars-and-instagram-live-to-fight-back-maduros-repression/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00005",
+      "text": "According to its website, VenApp is an application “developed by the Bolivarian Government of Venezuela to offer users the opportunity to submit complaints and requests directly to Constitutional President Nicolás Maduro.” Although VenApp was initially created as a platform to submit reports about failures in public services, when Maduro began promoting the idea that there is a “terrorist threat” and a “war of communication” among Venezuelans seeking to supposedly destabilize his position and oust him from power, he announced a new update to the application to denounce non-Chavista community members.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1542,
+      "body_end": 2149,
+      "source_links": [
+        "https://talcualdigital.com/maduro-pide-denunciar-en-la-venapp-a-opositores-que-hayan-agredido-al-pueblo/",
+        "https://venapp.com/",
+        "https://www.tiktok.com/@cantv.ve/video/7244577682543906054"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00006",
+      "text": "Adrián González, the director of the NGO Cazadores de Fake News, a Venezuelan fact-checking organization, says to Probox that:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2151,
+      "body_end": 2277,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00007",
+      "text": "> No costó mucho crear un módulo adicional para que los usuarios de VenApp entregaran información que pueda ser de interés para los cuerpos de seguridad. La herramienta pasó de ser muy fácilmente, de ser una herramienta de asistencia ciudadana a una herramienta de denuncia en contra de disidentes.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2279,
+      "body_end": 2577,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-819785-b00008",
+      "text": "> It did not cost much to create an additional module for VenApp users to deliver information that may be of interest to the security forces. The tool changed very easily, from being a tool for citizen assistance to a tool for denouncing dissidents.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2579,
+      "body_end": 2828,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-819785-b00009",
+      "text": "Iria Puyosa, a senior research fellow at the Democracy+Technology Initiative of the Atlantic Council, asserts that using VenApp to target citizens who oppose Maduro’s authoritarian regime has a clear objective: dismantling trust networks in popular communities.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2830,
+      "body_end": 3091,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00010",
+      "text": "> El temor a que los vecinos sean delatores que envíen a la policía la ubicación de los disidentes para que puedan ser detenidos arbitrariamente es un mecanismo para reprimir las protestas y debilitar la organización política de las bases de las fuerzas democráticas.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3093,
+      "body_end": 3360,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-819785-b00011",
+      "text": "> The fear that neighbors could be informants who send the police the location of dissidents so that they can be arbitrarily detained is a mechanism to repress protests and weaken the political organization of the democratic base.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3362,
+      "body_end": 3592,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-819785-b00012",
+      "text": "How Maduro's regime promotes community informants",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3594,
+      "body_end": 3643,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00013",
+      "text": "Before the Venezuelan 2024 presidential elections, digital repression had already pushed many Venezuelans to rely on social media and messaging apps to access independent news and to report abuses. After July 28, when citizens and the media doubled down on the use of online spaces to document what the opposition and international community consider to be the official election results, the Maduro regime adapted its approach: social networks, previously used as tools of propaganda, began to be weaponized to denounce dissident voices.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3645,
+      "body_end": 4182,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00014",
+      "text": "> Maduro reactivates snitching and doxxing as a mechanism of social control. The cooperating patriots, whose testimonies have been used to imprison and torture so many innocents.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4184,
+      "body_end": 4362,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-819785-b00015",
+      "text": "> Ligia Bolívar (@ligiabolivar)",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4364,
+      "body_end": 4395,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-819785-b00016",
+      "text": "Between July 30 and August 1, 2024, the online debate about VenApp reached significant levels of activity in posts on Facebook, Instagram, and among over 5,500 public WhatsApp and Telegram groups or channels analyzed by DDIA.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4397,
+      "body_end": 4622,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00017",
+      "text": "This came in the wake of an announcement made on July 30 by Maduro, about the creation of a “new window” for users to “report those who have attacked the people so that we can go after them and bring justice.” The new feature allowed reporting under the category of “guarimba fascista” (fascist guarimba, a form of street protest with barricades), explaining that these complaints could cover a range of issues, from looting and public disorder to “disinformation” and damage to public property.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4624,
+      "body_end": 5119,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00018",
+      "text": "ProBox’s listening study identified the highest activity on this topic between July 30 and August 1, with 62.07 percent (450 mentions). This coincided with a DFRLab analysis that identified a spike in content published on YouTube between July 30 and 31 under terms like “VenApp” “guarimba fascista (fascist guarimba)” “comandito terrorista (terrorist comandito)” with nearly 600 videos uploaded in just two days.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5121,
+      "body_end": 5533,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00019",
+      "text": "On July 30 alone, over 300 videos were published. Maduro announced measures to persecute those who protested against the regime, including the use of VenApp to report on dissidents. According to DFRLab, using YouTube Data Tools, the Chavista regime quickly embraced VenApp to criminalize protests. As explained in a video shared by Luigino Bracci Roa from Venezuela (a figure linked to the government), which accumulated more than 25,600 views by August 15, Maduro promoted the application “to report criminal and delinquent groups with total privacy and confidentiality.”",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5535,
+      "body_end": 6107,
+      "source_links": [
+        "https://www.youtube.com/watch?v=4PekapSQvDk"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00020",
+      "text": "Other publications specified the new use of the app, such as a video on the channel of PSUV militant Nahum Fernández, which detailed step-by-step instructions for how to use VenApp to pursue “guarimbas fascistas (fascist guarimbas).”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6109,
+      "body_end": 6342,
+      "source_links": [
+        "https://www.youtube.com/watch?v=sJZ5gFaP9q0"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00021",
+      "text": "In the 48 hours of DDIA’s monitoring of social media and public groups and channels on WhatsApp and Telegram following the announcement of the new VenApp feature, researchers identified, in addition to explanations on how to make confidential reports on the app, clear references to two episodes of persecution and threat that marked the country’s political history: la Lista Tascón (the Tascón List) (2003–2004), a list made of people who participated in the national strike against the then president Hugo Chávez Frías; and Operación Tun Tun (Knock, Knock Operation) (20172–018), a police operation that persecutes and detains opposition figures in their homes.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6344,
+      "body_end": 7007,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Tasc%C3%B3n_List#:~:text=The%20Tasc%C3%B3n%20List%20is%20a,those%20who%20have%20signed%20it.",
+        "https://www.nytimes.com/2024/08/10/world/americas/venezuela-election-maduro.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00022",
+      "text": "DDIA also identified pro-government groups that started making lists of profiles of individuals who allegedly had not accepted Maduro’s announced re-election, particularly on Telegram. Two public groups were identified operating in this way: “Against Guarimbas” (unknown number of members) and “Caza Guarimbas VE” (over 280 members).",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7009,
+      "body_end": 7342,
+      "source_links": [
+        "https://www.instagram.com/p/C-EgcpUOw9e/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00023",
+      "text": "Boycotting and reporting",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7344,
+      "body_end": 7368,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00024",
+      "text": "Journalists, activists, and media outlets called for VenApp to be reported and for alarms to be raised with Google Play and Apple Store about using this app to persecute dissenters. Anonymous posts widely shared on Facebook more than 1,800 times in just 24 hours succeeded in getting Apple and Google to suspend the app’s availability for download and updates.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7370,
+      "body_end": 7730,
+      "source_links": [
+        "https://www.facebook.com/100050291689333/posts/1036567768029603",
+        "https://www.facebook.com/100063748028745/posts/1046037020864556"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00025",
+      "text": "On July 31, when news broke that VenApp was no longer available on Google Play and Apple Store, the official narrative of “an imperialist power censoring it” increased. At this point, the APK file for VenApp was freely and uncontrollably distributed, enabling the app to function on Android devices. This file was shared across various forums.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7732,
+      "body_end": 8075,
+      "source_links": [
+        "https://talcualdigital.com/espaja-venapp-fue-eliminada-de-google-play-store-y-apple-app-store-en-venezuela/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819785-b00026",
+      "text": "On August 2, from the Miraflores Palace, Maduro claimed to have received more than 5,000 complaints through VenApp for “threatening street leaders, PSUV members, and government supporters.”",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 8077,
+      "body_end": 8266,
+      "source_links": [
+        "https://www.globovision.com/nacional/25345/autoridades-estan-atendiendo-cinco-mil-denuncias-de-amenazas-a-lideres-del-psuv"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "dd7cc594e2fe50b32edf6f88b571158ba7b7b5aef4d164aed7aa90ff1f932770",
+  "word_count": 1273,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 3,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 8266,
+  "retrieved_at": "2026-11-16T22:44:12.175325+00:00",
+  "raw_html_sha256": "d7402c3a56e90b715015504b70515686808ec404e9fae79fbc22fecc19306920",
+  "resolved_source_url": "https://globalvoices.org/2024/09/11/venapp-the-chavista-app-co-opted-for-harassment-in-venezuela/",
+  "canonical_url": "https://globalvoices.org/2024/09/11/venapp-the-chavista-app-co-opted-for-harassment-in-venezuela/",
+  "source_bytes": 194578,
+  "authors": [
+    {
+      "name": "ProBox",
+      "url": "https://globalvoices.org/author/observatorio-digital-probox/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 819785,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "d7402c3a56e90b715015504b70515686808ec404e9fae79fbc22fecc19306920",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-7c3d48a1e5b430d78463",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-09",
+    "eligible_month_documents": 73,
+    "selected_month_documents": 61,
+    "inclusion_probability": 0.8356164383561644,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "ProBox",
+  "body_start": 451,
+  "body_end": 8717,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "a1a401e65e99f9fbe82e8de873ca868420e842b02ce0826b90cddc0eeecfd80f",
+  "text_path": "articles/gv-819785.txt",
+  "metadata_path": "metadata/gv-819785.json",
+  "attribution": "This story by ProBox originally appeared on Global Voices. https://globalvoices.org/2024/09/11/venapp-the-chavista-app-co-opted-for-harassment-in-venezuela/",
+  "content_sha256": "39d3a82fbbe4805bf3152d3d556fb29ce4cfc16b1328284456990953800865a8",
+  "source_sha256": "d7402c3a56e90b715015504b70515686808ec404e9fae79fbc22fecc19306920",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

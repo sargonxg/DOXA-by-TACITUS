@@ -1,0 +1,659 @@
+{
+  "id": "gv-725062",
+  "publisher_id": 725062,
+  "source_id": "globalvoices:725062",
+  "source_url": "https://globalvoices.org/2020/12/15/how-global-tech-companies-enable-the-belarusian-regime-and-the-belarusian-revolution/",
+  "title": "How global tech companies enable the Belarusian regime — and the Belarusian revolution",
+  "published_at": "2020-12-15T23:17:23Z",
+  "modified_at": "2021-06-01T16:47:27Z",
+  "api_author_id": 2810,
+  "api_content_sha256": "b6b674249583e701ebc7cd1b528035c022be1662c963ac481e9dd5ee9c24e580",
+  "api_response_sha256": "3c1126b1eeb2408f0c7dfb3722ec3e22693716e3f3a1988a2b2844f4a03dc72f",
+  "api_retrieved_at": "2026-11-16T22:20:31.424510+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 59,
+      "count": 633,
+      "name": "Belarus",
+      "slug": "belarus",
+      "parent": 57
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-725062-b00001",
+      "text": "Belarusians continue to protest against longtime ruler Alyaksandr Lukashenka, braving police violence and the cold. As the EU prepares its third package of sanctions against Belarusian officials and enterprises, demands are growing for the West to apply greater economic pressure, in particular to consider banning the supply of certain IT products.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 349,
+      "source_links": [
+        "https://www.politico.eu/article/eu-ministers-agree-to-draw-up-new-sanctions-on-belarus/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00002",
+      "text": "Could such sanctions really work? It’s true that disentangling the country’s supply chains from the West would be no easy feat. But in today’s globalised world, there’s no shortage of alternative options.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 351,
+      "body_end": 555,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00003",
+      "text": "A banking ban",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 557,
+      "body_end": 570,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00004",
+      "text": "One of the most prominent struggles is disconnecting Belarus from SWIFT, the global banking communications network.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 572,
+      "body_end": 687,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00005",
+      "text": "This month, Golos (“Voice”), an online platform started by the team of jailed presidential hopeful Viktar Babaryka, polled Belarusians on whether they would support excluding Belarus from SWIFT. Out of more than 400,000 respondents, 64 percent supported the measure.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 689,
+      "body_end": 955,
+      "source_links": [
+        "https://web.telegram.org/#/im?p=@golosby_bot"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00006",
+      "text": "SWIFT may not be an official EU institution, but as a Belgium-based cooperative it has to follow EU rules and regulations. Should it be instructed to disconnect Belarus, as it did to Iran in 2012, SWIFT will effectively be supporting the Belarusian opposition’s demand for greater economic pressure on Lukashenka’s regime.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 957,
+      "body_end": 1279,
+      "source_links": [
+        "https://uk.reuters.com/article/uk-belarus-election-tsikhanouskaya-idUKKBN27X23Q",
+        "https://www.swift.com/insights/press-releases/swift-instructed-to-disconnect-sanctioned-iranian-banks-following-eu-council-decision"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00007",
+      "text": "Lukashenka himself has acknowledged that threats to disconnect Belarus from SWIFT have been successful at least once. In his interview for the Ukrainian website GordonUA just three days before the August 9 election, the Belarusian leader recounted his 2009 meeting with the EU’s High Representative for Foreign Policy Javier Solana. “I asked him what would happen if we recognised the sovereignty [of Abkhazia and South Ossetia]… He was prepared for that question. He took out a notebook and started listing: ‘Mr President, Belarus would immediately get disconnected from SWIFT transactions. That was the most serious of the sanctions,” recalled Lukashenka. The Belarusian leader went on to claim that as Russia had not provided any assurances to compensate Belarus for such losses, two breakaway territories in Georgia were never officially recognised by Minsk.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1281,
+      "body_end": 2143,
+      "source_links": [
+        "https://gordonua.com/news/worldnews/lukashenko-rasskazal-chto-solana-uprashival-ego-ne-priznavat-yuzhnuyu-osetiyu-1512656.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00008",
+      "text": "The idea has once again gained traction during recent protests. On November 10, Nikolai Khalezin, director of the dissident Belarus Free Theatre, stated that the West should disconnect Belarus from SWIFT as a response to the authorities’ decision to freeze funds to victims of repressions which had been collected through the #BY_help crowdfunding campaign.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2145,
+      "body_end": 2502,
+      "source_links": [
+        "https://nexta.news/iz-za-blokirovki-schetov-by_help-belarus-mozhet-byt-otklyuchena-ot-mezhdunarodnoj-mezhbankovskoj-sistemy-platezhej-swift/",
+        "https://www.facebook.com/photo.php?fbid=10223215749924210&set=pb.1297362360.-2207520000..&type=3"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00009",
+      "text": "“Today Lukashenka’s power is based on the greed of the security forces, the cowardice of state officials and the indecisiveness of part of the population… Any significant pressure from the international community is perceived by the pyramid of power as a weakness for the dictatorship’s foundations”, explained Khalezin in an interview with GlobalVoices. “These measures deprive the dictatorship of the resources to pay wages to security forces and state officials”.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2504,
+      "body_end": 2970,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00010",
+      "text": "Many in the Belarusian opposition appear to share these hopes. In November, opposition presidential candidate Sviatlana Tsikhanouskaya repeated these calls.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2972,
+      "body_end": 3128,
+      "source_links": [
+        "https://interfax.by/news/policy/vneshnyaya_politika/1287000/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00011",
+      "text": "Lukashenka was outraged, claiming that those who called for Belarus to be disconnected from SWIFT wanted to “destroy the country”.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3130,
+      "body_end": 3260,
+      "source_links": [
+        "https://eng.belta.by/president/view/lukashenko-says-ready-for-dialogue-with-opposition-but-not-with-traitors-and-terrorists-135010-2020/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00012",
+      "text": "But then the pro-government line changed, attempting to downplay the significance of such a move.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3262,
+      "body_end": 3359,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00013",
+      "text": "According to the Nasha Niva newspaper, in late November the National Bank of Belarus sent a letter to private banks asking them to connect to the Russian-run Service Bureau SPFS system as soon as possible. This means that even if the EU and US can persuade SWIFT to disconnect Belarus, all major payments will be routed through Russian banks.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3361,
+      "body_end": 3703,
+      "source_links": [
+        "https://nn.by/?c=ar&i=264062&lang=ru"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00014",
+      "text": "Then on December 4, pro-government analyst Pyotr Piatrouski told the state news agency BELTA: “Since the 1990s when Belarus was threatened with sanctions, the country created its own domestic banking system, Belkart. We’re also plugged into the Russian system. We’re connected to the Chinese system. At present, SWIFT has no monopoly on enabling monetary operations.”",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3705,
+      "body_end": 4072,
+      "source_links": [
+        "https://eng.belta.by/opinions/view/belarus-disconnection-from-the-swift-system-will-deliver-a-most-powerful-blow-to-the-belarusian-radical-6112/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00015",
+      "text": "“On the other hand, Belarus’ disconnection from SWIFT will deliver a most powerful blow to the Belarusian radical opposition… because the opposition will not be able to get funding via bank cards”, concluded Piatrouski in the same interview.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4074,
+      "body_end": 4315,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00016",
+      "text": "The Golos platform dismisses these arguments, stating that “the Russian system that was created as a backup for Russia’s own SWIFT disconnect will not help.” The banks of trade parties are not connected to it, while the SPFS service only allows transactions in Russian rubles, reads the statement, which predicts that import and export would stall in the case of a disconnect.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4317,
+      "body_end": 4693,
+      "source_links": [
+        "https://sites.google.com/view/swift2020/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00017",
+      "text": "A tech embargo",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4695,
+      "body_end": 4709,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00018",
+      "text": "Previous attempts to limit access to technology used by the Belarusian government have not been tremendously successful. In 2011, the EU introduced an embargo on any arms and on equipment which could be used for internal repression, as a reaction to violence against protesters after the December 2010 presidential elections. The US has also banned economic relations with a range of Belarusian officials and enterprises, although by 2019 some sanctions had been removed or frozen due to a hope for normalised relations.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4711,
+      "body_end": 5231,
+      "source_links": [
+        "https://www.consilium.europa.eu/en/press/press-releases/2020/02/17/belarus-eu-prolongs-arms-embargo-and-sanctions-against-4-individuals-for-one-year/",
+        "https://www.voanews.com/europe/us-imposes-new-sanctions-belarus"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00019",
+      "text": "Despite these efforts, stun grenades used against protesters in the streets of Minsk in the summer and autumn of 2020 were of Czech origin. While they were presumably purchased before the 2011 embargo, the DPI (Deep Packet Inspection) technology used to limit access to dozens of independent websites in Belarus is a product of contemporary design. It was developed by the US-owned Canadian company Sandvine, whose representatives demonstrated technology to the Belarusian authorities as recently as May 2020.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5233,
+      "body_end": 5742,
+      "source_links": [
+        "https://medium.com/dfrlab/belarus-riot-police-disperse-crowds-with-czech-made-flashbangs-f3728cde3cf5",
+        "https://www.accessnow.org/francisco-partners-owned-sandvine-profits-from-shutdowns-and-oppression-in-belarus",
+        "https://www.bloomberg.com/news/articles/2020-09-11/sandvine-use-to-block-belarus-internet-rankles-staff-lawmakers%22"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00020",
+      "text": "After an investigation by Bloomberg and international outcry, the company revisited its internal code of ethics and ended the agreement with Minsk. “By ending the agreement, Sandvine said it would stop providing software updates and technical assistance for its equipment being used by the state-controlled National Traffic Exchange Center, which manages all internet data flowing in and out of the country. But that doesn’t mean the equipment will cease to function, and it will still be usable in the short term”, a spokesman of the company told Bloomberg in September 2020.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5744,
+      "body_end": 6320,
+      "source_links": [
+        "https://www.bloombergquint.com/politics/sandvine-says-it-will-no-longer-sell-its-products-in-belarus"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00021",
+      "text": "These two examples are just a tip of the iceberg.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6322,
+      "body_end": 6371,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00022",
+      "text": "According to a press release provided to Global Voices by representatives of the Belarusian diaspora in San Francisco, the true scope of cooperation may be much higher. These Belarusians have been protesting outside the offices of Silicon Valley companies due to their links with the Belarusian government. They claim that over 20 leading global IT companies are supplying technology to the Belarusian authorities, including Seagate Technology, Kingston Technology, IBM’s subsidiary Red Hat software, SAP SE, VMware Inc, Oracle Corporation, Broadcom Inc, Supermicro, Intel, NVIDIA and many others. Mentions of some of these companies’ products (such as VMWare, Seagate and Oracle) can indeed be found on the state’s portal for tenders.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6373,
+      "body_end": 7108,
+      "source_links": [
+        "https://goszakupki.by/contracts/view/1334",
+        "https://goszakupki.by/contracts/view/1436",
+        "https://goszakupki.by/contracts/view/776"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00023",
+      "text": "While Western hardware and software is used to power the digital systems of most Belarusian state institutions, it is important to note that some are more deeply involved in repression than others.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7110,
+      "body_end": 7307,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00024",
+      "text": "“Supermicro, an information technology company based in San Jose, California, recently has won a tender with the Belarusian KGB for the supply of their equipment for 100 thousand dollars. Before the tender, the Belarusian community of San Francisco Bay Area sent them a letter about the situation in Belarus and asked them to stop the tender”, an event description of the November 24 protest says.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7309,
+      "body_end": 7706,
+      "source_links": [
+        "https://goszakupki.by/contracts/view/54934?fbclid=IwAR3QV4ISI9oC9Jfec0fx6o1x6iTVfM3lLYI6h8OdW6hJd1K8pu16yOOtOLY",
+        "https://www.facebook.com/events/368412154226746"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00025",
+      "text": "Supermicro has yet to issue a public response. It is plausible that Supermicro’s servers would help the country’s domestic security service store its data, although this cannot be known for sure.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7708,
+      "body_end": 7903,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00026",
+      "text": "But stopping the export of technology to a repressive regime would not be so easy. In reality, according to the official Belarus state tenders website, Supermicro’s servers would be supplied to the KGB via the private Belarusian company MAP INFO. On paper, the American company would not be involved in supporting the Belarusian KGB. In order to avoid this in practice, Supermicro would have to stop selling its equipment to any Belarusian private companies. The same can be said about the Vmware licensing software for servers which is used by the Informational and Analytical Center at the Presidential Administration – the September 2020 tender for it was won by the private Belarusian company Kvadrosoft.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 7905,
+      "body_end": 8613,
+      "source_links": [
+        "http://www.imap.by/",
+        "https://goszakupki.by/contracts/view/51346",
+        "https://goszakupki.by/contracts/view/54934"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00027",
+      "text": "Even if US companies did cease cooperation with their Belarusian private counterparts, it may not be enough. Given the small size of the Belarusian market, Russian private and state suppliers could then enter the game.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 8615,
+      "body_end": 8833,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00028",
+      "text": "“Given the scarcity of domestic resources and the high dependence on external financing to fund trade deficit and to serve external debt, any restrictions imposed on capital flows may significantly deteriorate the economic situation and make Belarus more dependent on Russian financing”, concluded Julia Korosteleva in her study of the efficiency of sanctions targeting Belarus, published by the European Action External Service in 2012.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 8835,
+      "body_end": 9272,
+      "source_links": [
+        "http://www.jar2.com/Files/Belarus/Impact_of_Economic_Sanctions_on_Belarus_Julia_Korosteleva.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00029",
+      "text": "Eight years on, that remains the case. It is also true when it comes to supply chains. Close economic ties with Russia or Kazakhstan, as well as growing relations with (and dependency on) China would provide another opportunity for Minsk to purchase whatever equipment or goods it is denied by the West.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 9274,
+      "body_end": 9577,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00030",
+      "text": "Importantly, open source technologies can also be used for many purposes — and cost nothing. They are already being used not only to circumvent censorship, but also to enable it, the case of the Austrian-owned mobile operator A1 shows.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 9579,
+      "body_end": 9814,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00031",
+      "text": "When the Belarusian authorities attempted to shut down mobile internet access across Minsk during heated protests, A1 appeared to acquiesce to their demands. The company then came under scrutiny from the Austrian press. According to the Quirum Media Foundation, A1’s Belarusian subsidiary used this widely available Squid software in order to filter access to those independent media and other websites which displeased the government.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 9816,
+      "body_end": 10251,
+      "source_links": [
+        "https://www.qurium.org/alerts/belarus/internet-blocking-in-belarus/",
+        "https://www.wienerzeitung.at/nachrichten/politik/europa/2071454-A1-Belarus-Daten-fuer-den-Autokraten.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00032",
+      "text": "READ MORE: Belarus shuts down internet as thousands protest election results",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 10253,
+      "body_end": 10329,
+      "source_links": [
+        "https://globalvoices.org/2020/08/10/belarus-shuts-down-internet-as-thousands-protest-election-results/"
+      ],
+      "source_kind": "h5",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00033",
+      "text": "“Squid is just free open code software that can be installed on a powerful computer”, explained Vadzim Loseu, a Belarusian digital security analyst and consultant with extensive experience on Belarus, Russia and Kazakhstan. “Its licence does not include any limitations about using the software product for internet filtering”.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 10331,
+      "body_end": 10658,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00034",
+      "text": "For its part, A1 seemingly suggested that enforcing internet shutdowns is the price of doing business in Belarus. In its reply to the open letter of KeepItOn coalition, an NGO which campaigns against internet shutdowns, the provider stated: “It is obvious that limitation of access to internet services goes against the interest of the company and its clients. However, A1 Telekom Austria Groups is obliged to follow the local legislative and normative rules in every country of its operations”.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 10660,
+      "body_end": 11155,
+      "source_links": [
+        "https://42.tut.by/706025",
+        "https://www.accessnow.org/cms/assets/uploads/2020/10/KeepItOn-A1-Telekom-Austria-open-letter-signed.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00035",
+      "text": "Moreover, it is worth remembering that although Belarus is a small market, it has a vibrant and well-regarded domestic IT sector. Some Belarusian companies already complain that they have faced aggressive online campaigns accusing them of ties with the Belarusian regime. For example this autumn, several opposition-run social media channels accused Synesis of providing the police with face recognition technologies via its Kipod software. In its defence, the company explained to Onliner.by that its cameras are only present in Minsk’s metro and railway stations, and can only recognise specific faces from its existing database, not from footage uploaded from protests as social media users speculated.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 11157,
+      "body_end": 11862,
+      "source_links": [
+        "https://eng.belta.by/economics/view/belarusian-synesis-on-htf-mis-list-of-worlds-leading-producers-of-ivs-systems-118331-2019/",
+        "https://kipod.com/about/",
+        "https://tech.onliner.by/2020/10/14/v-seti-poyavilis-dannye-sotrudnikov-synesis-kompaniya-zhaluetsya-na-travlyu"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00036",
+      "text": "Autocracy without borders?",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 11864,
+      "body_end": 11890,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00037",
+      "text": "In the end, one thing is certain: Belarus has become globalised enough to be damaged if technologies and supplies become less accessible, but also globalised enough to be able to reorient itself to larger markets in the East. Certain open source products and its own IT sector’s potential would also complicate the effectiveness of any unilateral sanctions. So what can be done?",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 11892,
+      "body_end": 12270,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00038",
+      "text": "A more efficient approach by western governments and companies alike might be to expand technologies to Belarus and make them more accessible. They already have good examples to follow within the IT sector: in August 2020, the Telegram messaging platform and secure VPN providers saved Belarusians from the total blackout by deploying anti-censorship tools and providing free traffic. The Poland- and Belarus-based broadcaster Euroradio also used mobile technology to launch a cellphone-based free access line to its newscasts during internet shutdowns.",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 12272,
+      "body_end": 12825,
+      "source_links": [
+        "https://euroradio.fm/ru/pensionerka-iz-minska-ochen-strashno-no-radostno-chto-lyudi-ne-sdayutsya",
+        "https://www.rferl.org/a/how-telegram-users-found-a-way-through-belarus-s-internet-lockdown/30780136.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00039",
+      "text": "“Imposing limitations on the distribution of technology in 2020 would most probably be impossible due to the interconnectedness of the Belarusian software and hardware market. Many companies are present on that market and if Sandvine leaves, somebody else could take their place tomorrow”, concluded Vadzim Loseu, the digital security analyst. “In general, responsibility for censorship and internet filtering lies with the states or other parties who apply those tools. If your neighbour keeps beating his cat with a shoe, you can talk to the producers and suppliers of shoes all you want, but it’s still important to remember who’s beating the cat.”",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 12827,
+      "body_end": 13478,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00040",
+      "text": "This article is made possible through a partnership with Transitions, a Prague-based publishing and media training organisation",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 13480,
+      "body_end": 13607,
+      "source_links": [
+        "https://www.tol.org/client/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725062-b00041",
+      "text": "Find out more about the turmoil in Belarus",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 13609,
+      "body_end": 13651,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/belarus-in-turmoil/"
+      ],
+      "source_kind": "h5",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "eda518e4ca0e989dfd0ebbd647aaf1a3c16d98007c281a6a4fa1ae58d5e3d0a6",
+  "word_count": 2103,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 13651,
+  "retrieved_at": "2026-11-16T22:28:46.885886+00:00",
+  "raw_html_sha256": "6c42e7560528477a4edf1974b2940bcf1b63573d7b365908deddc665afbc99cd",
+  "resolved_source_url": "https://globalvoices.org/2020/12/15/how-global-tech-companies-enable-the-belarusian-regime-and-the-belarusian-revolution/",
+  "canonical_url": "https://globalvoices.org/2020/12/15/how-global-tech-companies-enable-the-belarusian-regime-and-the-belarusian-revolution/",
+  "source_bytes": 199097,
+  "authors": [
+    {
+      "name": "Maryia Sadouskaya-Komlach",
+      "url": "https://globalvoices.org/author/maryia-sadouskaya-komlach/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 725062,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "6c42e7560528477a4edf1974b2940bcf1b63573d7b365908deddc665afbc99cd",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-25cc3f4059ff9902b42e",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-12",
+    "eligible_month_documents": 69,
+    "selected_month_documents": 58,
+    "inclusion_probability": 0.8405797101449275,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Maryia Sadouskaya-Komlach",
+  "body_start": 519,
+  "body_end": 14170,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "3277e8b100e6abfceb6871dbe17f1a8b001e3f38338d60c59a886f54d85e7130",
+  "text_path": "articles/gv-725062.txt",
+  "metadata_path": "metadata/gv-725062.json",
+  "attribution": "This story by Maryia Sadouskaya-Komlach originally appeared on Global Voices. https://globalvoices.org/2020/12/15/how-global-tech-companies-enable-the-belarusian-regime-and-the-belarusian-revolution/",
+  "content_sha256": "ae954f3751fda55511b82193523cc3d283a0337d7ede6e01b66f4ed9ce3add19",
+  "source_sha256": "6c42e7560528477a4edf1974b2940bcf1b63573d7b365908deddc665afbc99cd",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

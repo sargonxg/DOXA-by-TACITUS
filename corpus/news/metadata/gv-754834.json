@@ -1,0 +1,330 @@
+{
+  "id": "gv-754834",
+  "publisher_id": 754834,
+  "source_id": "globalvoices:754834",
+  "source_url": "https://globalvoices.org/2022/01/22/internet-watchdog-finds-encryption-flaw-in-mandatory-chinese-olympic-app/",
+  "title": "Internet watchdog finds encryption flaw in mandatory Chinese Olympic app",
+  "published_at": "2022-01-22T02:53:25Z",
+  "modified_at": "2022-02-14T06:02:04Z",
+  "api_author_id": 254,
+  "api_content_sha256": "56ec8a3c86cfd6fe4774dcfd70619b4a75fa26878fbe786e0b58f7856e8edf6d",
+  "api_response_sha256": "0734fa76d72a5873335c8955f20e5f34a02a015de4a32d3f6ece3a8b4cbd9ce6",
+  "api_retrieved_at": "2026-11-16T22:20:41.286580+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 278,
+      "count": 3056,
+      "name": "Sport",
+      "slug": "sport",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-754834-b00001",
+      "text": "The Citizen Lab, a Toronto-based internet freedom watchdog, found a “devastating” flaw that jeopardizes encrypted communication in the My2022 mobile app, a mandatory health monitoring app for all Beijing Winter Olympic attendees. The security loophole would make personal data — including audio files, health status, passport information, medical and travel history — vulnerable to third-party exploitation.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 407,
+      "source_links": [
+        "https://citizenlab.ca/2022/01/cross-country-exposure-analysis-my2022-olympics-app/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00002",
+      "text": "Another cybersecurity firm, Internet 2.0, also issued an alert of widespread surveillance practices in China and suggested overseas attendees leave their phones at home and use burner phones inside China.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 409,
+      "body_end": 613,
+      "source_links": [
+        "https://internet2-0.com/beijing-2022-winter-olympics/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00003",
+      "text": "The International Olympic Committee (IOC), however, dismissed Citizen Lab’s security audit and stressed that the Beijing health app has “no critical vulnerabilities” according to assessments conducted by two independent cybersecurity testing organizations.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 615,
+      "body_end": 871,
+      "source_links": [
+        "https://www.dw.com/en/ioc-reacts-to-cybersecurity-concern-over-beijing-my-2022-phone-app/a-60466680"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00004",
+      "text": "Athletes, journalists, and all other Beijing Winter Olympic attendees are required to use the My2022 app 14 days before flying to China. The users are required to submit health and travel information including COVID-19 test results and vaccination certificates through the app. The health tracking app also has news, audio and video messaging, and file-sharing functions.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 873,
+      "body_end": 1244,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00005",
+      "text": "Published on January 18, the Citizen Lab report points out that the My2022 app could not validate SSL certificates with at least five servers and the loophole would allow attackers to intercept the encrypted communication and steal private data by deceiving the app into connecting with a malicious host. In other words, the flaw has literally disabled the encryption function.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1246,
+      "body_end": 1623,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00006",
+      "text": "In addition, the research also found that some sensitive data is transmitted through the app to a host without any security protection, and as a result, the data “can be read by any passive eavesdropper, such as someone in the range of unsecured wifi access point.”",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1625,
+      "body_end": 1890,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00007",
+      "text": "The Canadian internet freedom watchdog also found a censorship list with 2,000 keywords, including sensitive terms like Xinjiang, Tibet, Dalai Lama, etc., embedded in the app under the filename “illegalwords.txt.” But the censorship function has not been activated.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1892,
+      "body_end": 2157,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00008",
+      "text": "The Citizen Lab disclosed its findings to the IOC on December 3, 2021, and issued a 15-day deadline for a substantial response and a 45-day deadline for fixing the flaw. It released its report on January 18 after the 15-day deadline passed.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2159,
+      "body_end": 2399,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00009",
+      "text": "On the same day, Internet 2.0 issued a paper showing how the Chinese national security legislation had affected corporate behavior in assisting state surveillance through the design of their mobile applications. The cybersecurity firm warned that “all athletes and visitors to China for the Olympics will be exposed to such laws and surveillance culture.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2401,
+      "body_end": 2756,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00010",
+      "text": "It further recommends that Olympic athletes and visitors use a new phone with a temporary email account while inside China and warns them against using the “burner” phone after they exit China to prevent private data from their cloud account from being collected by Chinese mobile apps and operators.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2758,
+      "body_end": 3058,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00011",
+      "text": "While the IOC dismissed the security concern, the US Olympic Committee told their athletes to bring a burner phone to Beijing as they have to “assume that every device and every communication, transaction and online activity will be monitored” in China.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3060,
+      "body_end": 3313,
+      "source_links": [
+        "https://www.newsweek.com/olympic-athletes-advised-take-burner-phone-china-required-app-has-security-flaws-1670557"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00012",
+      "text": "The German athletes’ group, Athleten Deutschland, slammed the IOC, saying that “it is inexplicable and irresponsible of the IOC to require participants to use an app with such glaring security vulnerabilities.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3315,
+      "body_end": 3525,
+      "source_links": [
+        "https://www.insidethegames.biz/articles/1117990/beijing-2022-app-cybersecurity-fears"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00013",
+      "text": "In response to the international security concern, Chinese state-funded media CGTN quoted tech analyst Andy Mok who dismissed Citizen Lab’s report as “a well-coordinated attack to create negative PR impact for the upcoming Olympics.” To such claim, Oliver Linow Internet Freedom Specialist at DW responded:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3527,
+      "body_end": 3833,
+      "source_links": [
+        "https://twitter.com/CGTNRadio/status/1483825774599675906"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-754834-b00014",
+      "text": "For more information about this topic, see our special coverage When sports are political: The other side of Beijing 2022",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3835,
+      "body_end": 3956,
+      "source_links": [
+        "https://globalvoices.org/special/beijing-olympics-2022/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "bf1b73dc3b93ae895c5580908a99e8c9dd2d7e36b59bda54eac6c0b22955a126",
+  "word_count": 600,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 3956,
+  "retrieved_at": "2026-11-16T22:33:23.795509+00:00",
+  "raw_html_sha256": "9422f64c96383cbb8b8a1ef0a133a8b570ac88470d9d78664cf03d58148334ec",
+  "resolved_source_url": "https://globalvoices.org/2022/01/22/internet-watchdog-finds-encryption-flaw-in-mandatory-chinese-olympic-app/",
+  "canonical_url": "https://globalvoices.org/2022/01/22/internet-watchdog-finds-encryption-flaw-in-mandatory-chinese-olympic-app/",
+  "source_bytes": 187605,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 754834,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "9422f64c96383cbb8b8a1ef0a133a8b570ac88470d9d78664cf03d58148334ec",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-2e98def11b5858854712",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-01",
+    "eligible_month_documents": 88,
+    "selected_month_documents": 74,
+    "inclusion_probability": 0.8409090909090909,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Oiwan Lam",
+  "body_start": 477,
+  "body_end": 4433,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "9b15fa0060187c43dafb3097f705e68da5c23709b2407d69d2d2f162d0daa0b2",
+  "text_path": "articles/gv-754834.txt",
+  "metadata_path": "metadata/gv-754834.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2022/01/22/internet-watchdog-finds-encryption-flaw-in-mandatory-chinese-olympic-app/",
+  "content_sha256": "60190fe6b40ad455476ca027f8954f620c07941f5ecb1e21816731625da8ebf1",
+  "source_sha256": "9422f64c96383cbb8b8a1ef0a133a8b570ac88470d9d78664cf03d58148334ec",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

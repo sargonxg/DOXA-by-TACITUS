@@ -1,0 +1,411 @@
+{
+  "id": "gv-719524",
+  "publisher_id": 719524,
+  "source_id": "globalvoices:719524",
+  "source_url": "https://globalvoices.org/2020/09/30/protests-in-angola-demand-justice-for-silvio-dala-a-doctor-who-died-in-police-custody/",
+  "title": "Protests in Angola demand justice for Silvio Dala, a doctor who died in police custody",
+  "published_at": "2020-09-30T15:07:49Z",
+  "modified_at": "2020-10-01T09:21:42Z",
+  "api_author_id": 2012,
+  "api_content_sha256": "a76a1587fc4d574e332040639a42cc1a825e52cbd64706dae5d4e5c6f640be12",
+  "api_response_sha256": "f9cee3b5e82058a53a72abf37f4b8c608c3497ca79effe33e36fced5052a4cbe",
+  "api_retrieved_at": "2026-11-16T22:20:29.692733+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 98,
+      "count": 465,
+      "name": "Angola",
+      "slug": "angola",
+      "parent": 15
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-719524-b00001",
+      "text": "Hundreds of Angolans took to the streets on September 12 in Luanda, Benguela, and in cities in 15 other provinces against police violence.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 138,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00002",
+      "text": "The demonstrations took place following the shock from the news that Silvio Dala, a 35-year-old doctor, lost his life on September 1 while in police custody.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 140,
+      "body_end": 297,
+      "source_links": [
+        "https://www.dw.com/pt-002/angola-minist%C3%A9rio-da-sa%C3%BAde-pede-calma-ap%C3%B3s-morte-de-m%C3%A9dico/a-54836997"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00003",
+      "text": "According to the authorities, Dala left by car from the David Bernardino Paediatric Hospital in Luanda, where he worked as clinical director when he was stopped by police officers for not wearing a mask.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 299,
+      "body_end": 502,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00004",
+      "text": "The doctor was then taken to the Catotes police station, in the capital's Rocha Pinto neighbourhood, when “he showed signs of fatigue and began to faint, having had a bad fall, which caused minor injuries to the head,” the official police statement said. It also states that Dala died while officers were taking him to hospital.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 504,
+      "body_end": 832,
+      "source_links": [
+        "https://www.dn.pt/mundo/medico-angolano-apanhado-pela-policia-sem-mascara-na-rua-morre-na-esquadra-12630867.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00005",
+      "text": "The Union of Doctors contests this version. The organization’s president, Adriano Manuel, told Voice of America (VOA) that there are contradictions in the authorities’ explanations which suggest that the doctor was subjected to physical abuse.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 834,
+      "body_end": 1077,
+      "source_links": [
+        "https://www.voaportugues.com/a/morte-de-m%C3%A9dico-detido-pela-pol%C3%ADcia-abala-angola/5574209.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00006",
+      "text": "Manuel told Deutsche Welle (DW) that “the cause of death described by the police is not the real one. Anyone who is a doctor and has studied medicine knows that this is not what killed Silvio”. According to DW, a source from the Ministry of the Interior said that the autopsy, carried out in the presence of the family and a prosecutor, concluded that the doctor was not the victim of an assault.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1079,
+      "body_end": 1475,
+      "source_links": [
+        "https://www.dw.com/pt-002/eu-sou-s%C3%ADlvio-dala-sociedade-civil-angolana-protesta-contra-a-morte-do-m%C3%A9dico/a-54908113"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00007",
+      "text": "The union said it will take legal action against the police. Meanwhile, the Angolan government announced the creation of a commission with the Ministry of Health to investigate the incident.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1477,
+      "body_end": 1667,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00008",
+      "text": "The protesters also did not believe the police's version of Dala's death. Signs used at the protests in Luanda, in different parts of the city, said: “No more killings,” “You are paid to protect, you are not paid to kill,” “I am Silvio Dala,” “They killed Silvio Dala.” There were also calls for the Minister of the Interior Eugénio Laborinho to resign.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1669,
+      "body_end": 2022,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00009",
+      "text": "The demonstrations were organized by the Union of Doctors and by various civil society collectives and organizations.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2024,
+      "body_end": 2141,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00010",
+      "text": "Since the beginning of the pandemic in Angola, several cases of police violence have been reported during checks on compliance with restrictive measures, sometimes resulting in citizens’ deaths.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2143,
+      "body_end": 2337,
+      "source_links": [
+        "https://pt.globalvoices.org/2020/07/31/policia-de-angola-mata-cidadao-por-violar-isolamento-obrigatorio-diz-imprensa-local/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00011",
+      "text": "Speaking to Lusa, the rapper “Brigadeiro 10 Pacotes”, whose real name is Bruno Santos, called for Lugarinho's resignation as well as better police training schools to improve their conduct.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2339,
+      "body_end": 2528,
+      "source_links": [
+        "https://www.msn.com/pt-pt/noticias/other/jovens-angolanos-querem-fim-da-cultura-do-medo-e-pedem-pol%C3%ADcia-amiga-dos-cidad%C3%A3os/ar-BB18XNXd?ocid=ob-fb-ptpt-292"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00012",
+      "text": "“The police is an organization that must give citizens confidence, today we live in serious insecurity where all citizens are afraid when they come across the police,” he said.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2530,
+      "body_end": 2706,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00013",
+      "text": "Many took to Facebook and WhatsApp to protest the incident. Activist and academic Nuno Álvaro Dala wrote on Facebook:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2708,
+      "body_end": 2825,
+      "source_links": [
+        "https://www.facebook.com/nunodala.dala/posts/3216346908482384"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00014",
+      "text": "> A POLÍCIA NACIONAL É A RESPONSÁVEL PELA MORTE DO MÉDICO SÍLVIO DALA",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2827,
+      "body_end": 2896,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-719524-b00015",
+      "text": "> As imagens são fortes e muito esclarecedoras. Temos todos de exigir que a justiça seja feita. A Polícia Nacional tem de pagar pelo crime que cometeu. Isto não deve ficar assim.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2898,
+      "body_end": 3076,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-719524-b00016",
+      "text": "> THE NATIONAL POLICE IS RESPONSIBLE FOR THE DEATH OF THE DOCTOR SILVIO DALA",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3078,
+      "body_end": 3154,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-719524-b00017",
+      "text": "> The images are powerful and very clear. We must all demand that justice be done. The National Police must pay for the crime they have committed. Things must not continue like this.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3156,
+      "body_end": 3338,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-719524-b00018",
+      "text": "On Twitter, Isabel dos Santos, former chairperson of the board of directors (PCA) of the state oil company Sonangol, and daughter of former president José Eduardo dos Santos, said:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3340,
+      "body_end": 3520,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00019",
+      "text": "> #IamSilvioDala. On Saturday the National Union of Doctors of Angola (SINMEA) announced a “peaceful and silent demonstration”, calling on all health professionals, other unions and civil society, against police violence in memory of Silvio Dala, 12:30 pm Largo da Mutamba",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3522,
+      "body_end": 3794,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-719524-b00020",
+      "text": "> Image headline: Angolans take to the streets against police violence and calling for the end of killings",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3796,
+      "body_end": 3902,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-719524-b00021",
+      "text": "Meanwhile, Alejandro, also on Twitter, questioned the participation of Angolan online influencers in this case:",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3904,
+      "body_end": 4015,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-719524-b00022",
+      "text": "> When George Floyd was killed the so-called “Angolan Influencers” showed their support for the Black Lives Matter movement, but with the death of the Angolan doctor Silvio Dala, these brothers don't do anything about the loss!",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4017,
+      "body_end": 4244,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "ba20fa8a096937631afb07f838643502620bca57b4e77a72b022e72e96bab4dc",
+  "word_count": 693,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 4,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4244,
+  "retrieved_at": "2026-11-16T22:27:38.307615+00:00",
+  "raw_html_sha256": "dfa61d36b698ae878a0c033be37924ccdef167ead9f5c71ba1eb4a5279b39001",
+  "resolved_source_url": "https://globalvoices.org/2020/09/30/protests-in-angola-demand-justice-for-silvio-dala-a-doctor-who-died-in-police-custody/",
+  "canonical_url": "https://globalvoices.org/2020/09/30/protests-in-angola-demand-justice-for-silvio-dala-a-doctor-who-died-in-police-custody/",
+  "source_bytes": 190961,
+  "authors": [
+    {
+      "name": "Simão Hossi",
+      "url": "https://pt.globalvoices.org/author/simaohossi/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Liam Anderson",
+      "url": "https://globalvoices.org/author/liam-anderson/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 719524,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "dfa61d36b698ae878a0c033be37924ccdef167ead9f5c71ba1eb4a5279b39001",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-c47c027effb9cec1bc63",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-09",
+    "eligible_month_documents": 86,
+    "selected_month_documents": 72,
+    "inclusion_probability": 0.8372093023255814,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Simão Hossi",
+  "body_start": 535,
+  "body_end": 4779,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "3a1ca441e1238181f1377fd8e368cf5bd662edc1b865bf7cd5b181fc29d276b3",
+  "text_path": "articles/gv-719524.txt",
+  "metadata_path": "metadata/gv-719524.json",
+  "attribution": "This story by Simão Hossi originally appeared on Global Voices. https://globalvoices.org/2020/09/30/protests-in-angola-demand-justice-for-silvio-dala-a-doctor-who-died-in-police-custody/",
+  "content_sha256": "b2d6270c4dcd59298cbd97905f91d20617efeeee607a3f3e9f21a9feb8b1b726",
+  "source_sha256": "dfa61d36b698ae878a0c033be37924ccdef167ead9f5c71ba1eb4a5279b39001",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

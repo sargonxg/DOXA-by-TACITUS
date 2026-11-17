@@ -1,0 +1,536 @@
+{
+  "id": "gv-821676",
+  "publisher_id": 821676,
+  "source_id": "globalvoices:821676",
+  "source_url": "https://globalvoices.org/2024/10/07/x-overtakes-wechat-in-spreading-chinese-disinformation-on-the-2024-us-presidential-elections/",
+  "title": "X overtakes WeChat in spreading Chinese disinformation about the 2024 US presidential elections",
+  "published_at": "2024-10-07T19:00:25Z",
+  "modified_at": "2024-10-09T00:51:00Z",
+  "api_author_id": 254,
+  "api_content_sha256": "8d37f6343092a1400847d074699a859e97853b0dd05f00c7ae6f0ab794494f92",
+  "api_response_sha256": "08596ab71ccd06b167b4be2f46af30954d7e1cf6998048b9e0bf4d20b49dc94a",
+  "api_retrieved_at": "2026-11-16T22:21:06.740015+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 1352,
+      "count": 3301,
+      "name": "North America",
+      "slug": "north-america",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 186,
+      "count": 3578,
+      "name": "U.S.A.",
+      "slug": "usa",
+      "parent": 1352
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-821676-b00001",
+      "text": "New research indicates that X, formerly Twitter, has overtaken WeChat, the most popular Chinese social media platform, in spreading disinformation about the US presidential elections and policies.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 196,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00002",
+      "text": "The group Chinese for Affirmative Action (CAA), a US-based non-profit organization, released a report on August 26, 2024, called “Conspiracy Theories, Lies, & A.I.” which explored how right-wing disinformation in the Chinese American community is amplifying hate speech ahead of the November 2024 election. Researchers found much of the disinformation released over the past year is meant to stoke fears of communism, cast doubt on the integrity of the US elections, and laud former US President Donald Trump, the 2024 Republican presidential candidate.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 198,
+      "body_end": 751,
+      "source_links": [
+        "https://caasf.org/wp-content/uploads/2024/08/CAA-Report-Conspiracy-Theories-Lies-and-AI-1.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00003",
+      "text": "The 2024 US Presidential Elections will be held on November 5th. Ahead of the elections, news has consistently emerged about foreign political influence in American politics, in particular Russia, Iran, and China, through disinformation operations. Last month, the US government accused Russia of running a disinformation campaign to mislead US voters and interfere in the elections. Researchers from Human Rights Watch also observed that communities of color are more vulnerable to disinformation operations due to their shared traumatic experiences. In addition, as many immigrants obtain information in languages other than English, they are often subjected to mistranslations of news.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 753,
+      "body_end": 1441,
+      "source_links": [
+        "https://apnews.com/article/russian-interference-presidential-election-influencers-trump-999435273dd39edf7468c6aa34fad5dd",
+        "https://www.bbc.com/news/articles/c8rx28v1vpro",
+        "https://www.cbsnews.com/news/justice-department-official-warns-foreign-election-interference-russia-iran-china/",
+        "https://www.cfr.org/blog/election-2024-chinas-efforts-interfere-us-presidential-election",
+        "https://www.hrw.org/news/2024/08/15/disinformation-about-us-elections-targets-communities-color"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00004",
+      "text": "CAA’s recent research, which is based on 628 pieces of disinformation collected between June 10, 2023, and July 29, 2024, via PiYaoBa, a Chinese-language fact-checking website, makes similar observations.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1443,
+      "body_end": 1647,
+      "source_links": [
+        "https://www.piyaoba.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00005",
+      "text": "According to the report, about one-third of the documented disinformation (228 pieces), with 4.05 million total views, are directly about the 2024 US presidential elections. They are mainly disseminated through Twitter (48 percent), followed by WeChat (25 percent), Telegram (18 percent) and YouTube (9 percent). CAA highlighted that for the first time since it started tracking Chinese disinformation in 2019, X surpassed WeChat in spreading US election disinformation. In fact, during the 2022 midterm elections, over 54 percent of fake news was spread on WeChat.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1649,
+      "body_end": 2214,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00006",
+      "text": "X has also become the most impactful source of disinformation across platforms, with the highest average of 26,320 views per piece of disinformation, followed by WeChat (18,590 views), YouTube (5,690 views), and Telegram (2,640 views).",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2216,
+      "body_end": 2451,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00007",
+      "text": "The surge of Chinese-language disinformation on X took place after Elon Musk acquired the platform on October 27, 2022. As owner, he has changed the platform's content moderation policies to restore previously banned accounts that had been suspended for threats, harassment, and spreading disinformation; altered the platform's verification blue-check mark into a paid feature; encouraged paid and viral posts, including explicit sexual content, and more. The CAA also found that many mainland Chinese influencers have migrated away from WeChat thanks to China’s censorship policies and resettled on X in recent years, while those who remained on WeChat tend to cite information from Twitter, particularly from right-wing influencers.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2453,
+      "body_end": 3187,
+      "source_links": [
+        "https://edition.cnn.com/2023/04/24/tech/musk-twitter-blue-check-mark/index.html",
+        "https://en.wikipedia.org/wiki/Acquisition_of_Twitter_by_Elon_Musk",
+        "https://www.cbsnews.com/sanfrancisco/news/elon-musk-x-formerly-twitter-allowing-adult-contest-consensually-produced-distributed/",
+        "https://www.forbes.com/sites/roberthart/2022/11/25/elon-musk-is-restoring-banned-twitter-accounts-heres-why-the-most-controversial-users-were-suspended-and-whos-already-back/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00008",
+      "text": "Below are five key disinformation narratives the CAA identified about the 2024 election on Chinese-language social media. These views are also widely shared among US right-wing groups:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3189,
+      "body_end": 3373,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00009",
+      "text": "1. Trump is the only savior of the US, and today’s problems are because he is not in charge",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3375,
+      "body_end": 3466,
+      "source_links": [],
+      "source_kind": "h5",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00010",
+      "text": "This narrative depicts Trump as a heroic defender of American values facing unjust persecution staged by the so-called “deep state.” Since the attempted assassination of Trump on July 13, 2024, his “savior” image has been strengthened. CAA cites a post from @CaoChangqing, a right-wing Chinese American influencer, as an example of this narrative:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3468,
+      "body_end": 3815,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Deep_state_in_the_United_States"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00011",
+      "text": "> US troops in Jordan were hit by a drone strike today, killing three and injuring more than 20. The last time we withdrew from Afghanistan, 13 US troops were killed in action. Since Biden stole the election and took power, there has been global chaos: War in Ukraine, military conflict in Gaza, armed attacks on merchant ships in Yemen, North Korea launching a nuclear test, Iran bombing Pakistan, and now direct attacks on US troops. All related to Biden's incompetence and failure of diplomacy. Only Trump's return to the White House will help end the world's chaos and restore hope!",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3817,
+      "body_end": 4403,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-821676-b00012",
+      "text": "2. The “extreme left” policies of Biden, Harris, and the Democratic Party are destroying the US and bringing it closer to communism",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4405,
+      "body_end": 4536,
+      "source_links": [],
+      "source_kind": "h5",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00013",
+      "text": "This narrative attacks current US President Joe Biden, Vice President Kamala Harris, and the Democratic Party for all economic and social problems and accuses them of leading the country towards socialism and communism by encouraging student protests, inclusion policies, LGBTQ+ rights, etc. Below is an example, also by @CaoChangqing, cited in the report:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4538,
+      "body_end": 4894,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00014",
+      "text": "> Anti-Semitic and pro-Hamas students in American universities are being called ‘Ha wei bing — Pro-Hamas soldiers,’ reminiscent of China's Cultural Revolution. In fact, the radical leftist movement in the United States is more like the French Revolution, marked by the guillotine. Essentially, it is a mob movement supported by left-leaning intellectuals and the Democratic Party. Under the guise of political correctness, they trample on the rule of law and common sense, persecute political opponents, and create terror. The United States has only been founded for 248 years, not even as long as the Qing Dynasty, and it has reached this point. It's sad!",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4896,
+      "body_end": 5552,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-821676-b00015",
+      "text": "While most Chinese-language disinformation could find its English origins from right-wing platforms, quite often, the Chinese influencers have exploited the cultural and political trauma of mainland Chinese Americans in their translation. In the above post, the framing of student protesters into “Ha wei bing” evokes Chinese readers’ memories of “Hong wei bing” (Red Guards) during the Chinese Cultural Revolution — a Chinese Communist Party-led violent grassroots class struggle between 1966 and 1976 that claimed more than a million people’s lives.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5554,
+      "body_end": 6105,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Cultural_Revolution",
+        "https://en.wikipedia.org/wiki/Red_Guards"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00016",
+      "text": "3. The Biden administration opened the border to allow undocumented immigrants to vote for Democrats in the 2024 election",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6107,
+      "body_end": 6228,
+      "source_links": [],
+      "source_kind": "h5",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00017",
+      "text": "This narrative is directly taken from English sources falsely accusing Biden of",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6230,
+      "body_end": 6309,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00018",
+      "text": "intentionally opening the US border to allow migrants in so that they can vote in November and, in the long run, “replace” the white population.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6311,
+      "body_end": 6455,
+      "source_links": [
+        "https://www.splcenter.org/hatewatch/2022/05/17/racist-great-replacement-conspiracy-theory-explained"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00019",
+      "text": "CAA's report highlighted that many Chinese immigrants believe that undocumented immigrants are being fast-tracked for work permits at",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6457,
+      "body_end": 6590,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00020",
+      "text": "the expense of immigrants who arrived via visas.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6592,
+      "body_end": 6640,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00021",
+      "text": "4. Leftists are masterminds behind various world events and natural disasters and are playing a long game to control everything",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6642,
+      "body_end": 6769,
+      "source_links": [],
+      "source_kind": "h5",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00022",
+      "text": "This narrative sees all major world events, from the Russian invasion of Ukraine to natural disasters, as leftist conspiracies, with democrats wearing the leftist label. This narrative proliferates through comments on the assassination attempt on Trump.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6771,
+      "body_end": 7024,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00023",
+      "text": "While the meaning of “left” in the US and other Western countries is more neutral, in the Chinese-speaking communities, “left” usually means the Soviet collective economic model. This will negatively resonate with some mainland Chinese immigrants who settled in the US between the 1960s and 1980s who suffered from forced labor or were persecuted by class struggle under Mao Zedong‘s leadership, which was heavily influenced by Soviet communism.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7026,
+      "body_end": 7471,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Mao_Zedong"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00024",
+      "text": "5. The 2020 election was stolen from Trump and widespread voter fraud, especially involving noncitizens, may lead to another stolen election in 2024.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7473,
+      "body_end": 7622,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00025",
+      "text": "This narrative casts doubt and delegitimizes the results of the 2024 election once Trump loses the race. CAA's report stresses:",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7624,
+      "body_end": 7751,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00026",
+      "text": "> This tactic not only undermines confidence in the democratic process but also exacerbates political polarization, especially within the Chinese-speaking community, where cultural and historical contexts may make such narratives more resonant.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 7753,
+      "body_end": 7997,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-821676-b00027",
+      "text": "In addition to the above narratives, the research also noted that after Vice President Kamala Harris replaced Joe Biden as the Democratic Party’s candidate, right-wing influencers took advantage of gender bias among conservative Chinese by spreading sexist and misogynistic remarks that suggested Harris achieved her political success by currying sexual favors:",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7999,
+      "body_end": 8360,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00028",
+      "text": "> While she has been labelled a ‘childless cat lady’ in English media, Chinese influencers nicknamed her ‘乌鸡’ or ‘Black Chicken’ with ‘chicken’ as a humiliating slang term for a sex worker in Chinese. Or they call her ‘小三’ which means ‘homewrecker,’ alluding to her past relationships.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 8362,
+      "body_end": 8647,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-821676-b00029",
+      "text": "The “Black Chicken” label also carries a discriminatory racial connotation against people of color, a Chinese X user @Stephanan2584 pointed out.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 8649,
+      "body_end": 8793,
+      "source_links": [
+        "https://x.com/Stephanan2584/status/1841952068040380785"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00030",
+      "text": "The research team also observed an increasing trend of AI-generated election disinformation circulating among Chinese social media users. One image cited in the CAA report is an AI-generated photo implying Trump was very popular among Black voters, with users claiming he attended a barbeque in the South Bronx, New York, on May 23, 2024. An August 2024 poll by Pew Research Center shows only 13 percent of Black voters in the US are leaning toward Trump:",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 8795,
+      "body_end": 9250,
+      "source_links": [
+        "https://nacr.info/WordPress/index.php/2024/05/24/trumps-explosive-rally-in-bronx-new-york/",
+        "https://www.pewresearch.org/short-reads/2024/08/22/black-voters-support-harris-over-trump-and-kennedy-by-a-wide-margin/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-821676-b00031",
+      "text": "CAA’s findings are in alignment with another recent report written by Graphika, a research company on the social media landscape. The report identified a small network of 15 Chinese state-linked fake social media personas on X and one on TikTok claiming to be US citizens or activists and disseminating content that denigrates both Democratic and Republican candidates and amplifies political and social divides on policies. The research team also believes the information operation aims “to portray the US as a declining global power with weak leaders and a failing system of governance.”",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 9252,
+      "body_end": 9841,
+      "source_links": [
+        "https://www.npr.org/2024/09/03/nx-s1-5096151/china-tiktok-x-fake-voters-influence-campaign"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "4179cdfb249bcd48c2cd79f063f4fbc64a8a43ead36a174b207f35f017fa7826",
+  "word_count": 1492,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 9841,
+  "retrieved_at": "2026-11-16T22:44:24.793002+00:00",
+  "raw_html_sha256": "00dc809562bee6b348626dfdb222c3cbb39c1b7d59af4a83324e05db84bb8a85",
+  "resolved_source_url": "https://globalvoices.org/2024/10/07/x-overtakes-wechat-in-spreading-chinese-disinformation-on-the-2024-us-presidential-elections/",
+  "canonical_url": "https://globalvoices.org/2024/10/07/x-overtakes-wechat-in-spreading-chinese-disinformation-on-the-2024-us-presidential-elections/",
+  "source_bytes": 197963,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 821676,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "00dc809562bee6b348626dfdb222c3cbb39c1b7d59af4a83324e05db84bb8a85",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-246eecf8bca64066970f",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-10",
+    "eligible_month_documents": 72,
+    "selected_month_documents": 60,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Oiwan Lam",
+  "body_start": 520,
+  "body_end": 10361,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "e67578659b2ebe09850cd3b3b6e54680922fce0a5f656b4a7aa285172f1a191b",
+  "text_path": "articles/gv-821676.txt",
+  "metadata_path": "metadata/gv-821676.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2024/10/07/x-overtakes-wechat-in-spreading-chinese-disinformation-on-the-2024-us-presidential-elections/",
+  "content_sha256": "4ec5e7e23885662011d95a75fb1514a31f8d96d88ee0e3a9a36b8c26c77d7b40",
+  "source_sha256": "00dc809562bee6b348626dfdb222c3cbb39c1b7d59af4a83324e05db84bb8a85",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

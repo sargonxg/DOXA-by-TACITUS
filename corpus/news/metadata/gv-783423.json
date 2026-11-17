@@ -1,0 +1,556 @@
+{
+  "id": "gv-783423",
+  "publisher_id": 783423,
+  "source_id": "globalvoices:783423",
+  "source_url": "https://globalvoices.org/2023/03/19/the-threat-of-bush-fires-in-the-caribbean-is-a-hot-button-issue/",
+  "title": "The threat of bush fires in the Caribbean is a hot-button issue",
+  "published_at": "2023-03-19T12:13:00Z",
+  "modified_at": "2023-09-25T04:41:19Z",
+  "api_author_id": 306,
+  "api_content_sha256": "67806de96964fe34635123b0b468a67d55141dc65d419290b5893884a0ce04ac",
+  "api_response_sha256": "37f858f8343f92253c0cb88dec3bf6375b5156b74efd2c0906f9aa9126732aff",
+  "api_retrieved_at": "2026-11-16T22:20:51.447400+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 162,
+      "count": 1351,
+      "name": "Barbados",
+      "slug": "barbados",
+      "parent": 1353
+    },
+    {
+      "id": 1353,
+      "count": 10223,
+      "name": "Caribbean",
+      "slug": "caribbean",
+      "parent": 219
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 247,
+      "count": 4731,
+      "name": "Education",
+      "slug": "education",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 174,
+      "count": 1102,
+      "name": "Haiti",
+      "slug": "haiti",
+      "parent": 1353
+    },
+    {
+      "id": 176,
+      "count": 2263,
+      "name": "Jamaica",
+      "slug": "jamaica",
+      "parent": 1353
+    },
+    {
+      "id": 184,
+      "count": 3312,
+      "name": "Trinidad &amp; Tobago",
+      "slug": "trinidad-tobago",
+      "parent": 1353
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-783423-b00001",
+      "text": "It is dry season in the Caribbean, and although this time of year comes with cloudless blue skies and an array of flowering tropicals in all their splendour, it also brings with it the danger of bush fires.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 206,
+      "source_links": [
+        "https://jamaica-gleaner.com/article/caribbean/20230208/region-warned-brace-less-rainfall-countries-move-heart-dry-season"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00002",
+      "text": "Global Voices’ Jamaica-based author Emma Lewis recently noted on her personal blog that in the absence of regular rainfall, the hills in Kingston have been burning steadily since the start of 2023:",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 208,
+      "body_end": 405,
+      "source_links": [
+        "https://petchary.wordpress.com/2023/03/13/the-burning-hills-and-the-kingston-chain-saw-massacre/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00003",
+      "text": "> Fires in the usually green, forested hills around our capital city, where the beautiful homes of the better-off Kingstonians nestle, have now become commonplace. […] Homes are increasingly threatened. […] Down here in the plain, we look up with alarm, and our senses are filled with smoke. Those living closer to the fires find soft black ashes falling on their gardens.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 407,
+      "body_end": 779,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00004",
+      "text": "The issue of fires, and trees, she says, have been “a perpetual topic of conversation” on her Twitter timeline of late, with many users expressing concerns about drought. The Barbados-based Caribbean Drought and Precipitation Monitoring Network (CDPMN), which was launched 13 years ago in response to the need “to mitigate and respond to the creeping phenomenon, drought,” stated in its March 2023 precipitation outlook that until May, the incidence of rainfall will continue to decrease.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 781,
+      "body_end": 1269,
+      "source_links": [
+        "https://jamaica-gleaner.com/article/caribbean/20230208/region-warned-brace-less-rainfall-countries-move-heart-dry-season",
+        "https://rcc.cimh.edu.bb/climate-monitoring/caribbean-drought-and-precipitation-monitoring-network/",
+        "https://rcc.cimh.edu.bb/precipitation-outlook-march-2023/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00005",
+      "text": "In Jamaica, meanwhile, Professor Michael Taylor and his colleagues from the University of the West Indies Mona’s Climate Studies Group have been predicting longer and longer droughts for the Caribbean region. Yet, says Lewis, she doesn't see the government changing its environmental or developmental approach, despite its awareness of the ill effects of the climate crisis of Small Island Developing States like Jamaica:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1271,
+      "body_end": 1692,
+      "source_links": [
+        "https://globalvoices.org/2021/12/05/post-cop26-a-caribbean-view-on-climate-injustice-and-1-5-to-stay-alive/",
+        "https://globalvoices.org/2022/11/17/global-south-countries-declare-cop27-a-case-of-climate-inaction/",
+        "https://petchary.wordpress.com/2023/03/13/the-burning-hills-and-the-kingston-chain-saw-massacre/",
+        "https://www.mona.uwi.edu/physics/csgm/home",
+        "https://www.mona.uwi.edu/physics/staff/academic/dr-michael-taylor"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00006",
+      "text": "> We continue to build highways, widen roads – and yes, the cutting down of trees in the city has reached almost epidemic proportions. Our mayor [Delroy Williams] is very upset about it and is talking to the Jamaica Public Service Company (JPS) about their habit of chopping madly at any tree within arm’s reach of an electric wire.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1694,
+      "body_end": 2026,
+      "source_links": [
+        "https://twitter.com/mayorwilliamsja"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00007",
+      "text": "Some Jamaican Twitter users are starting a campaign to photograph the remaining large trees in the city and log their location, in order to remind people of both their presence and their vulnerability. Meanwhile, the trees on Jamaica's hillsides are threatened by fire, and nations region-wide find themselves in similar situations each dry season:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2028,
+      "body_end": 2376,
+      "source_links": [
+        "https://petchary.wordpress.com/2023/03/13/the-burning-hills-and-the-kingston-chain-saw-massacre/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00008",
+      "text": "> All afternoon, Jamaica Defence Force helicopters with large orange buckets suspended underneath have been whirring back and forth, scooping up water from the Mona Reservoir and dropping it on fires that are otherwise impossible to reach. Kudos to them, and to the incredibly hard-working members of the Jamaica Fire Brigade, who deserve a huge raise in pay and better equipment.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2378,
+      "body_end": 2758,
+      "source_links": [
+        "https://greatruns.com/jamaica-mona-reservoir-dam/",
+        "https://jfb.gov.jm/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00009",
+      "text": "While Lewis says that government ministers have not commented much on the situation — “they all have water flowing in their pipes” — she makes the point that “many communities, both urban and rural, do not.” One Jamaican environmentalist put it very succinctly on Twitter:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2760,
+      "body_end": 3032,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00010",
+      "text": "In the Caribbean, however, an already difficult situation is exacerbated by cultural practices:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3034,
+      "body_end": 3129,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00011",
+      "text": "> [W]e are remarkably careless with fire. Quite apart from cigarette butts and matches being thrown away, which with our tinder-dry vegetation can start a fire in seconds, we actually do light fires — in our yards, on roadsides, and to clear fields.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3131,
+      "body_end": 3380,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00012",
+      "text": "In Jamaica, this practice caused some damage to a historic site not long ago, when someone set fire to a Jewish cemetery in order to clean it up. Lewis shared her own concerning anecdotes: a fire by the side of the road in her neighbourhood, a stone’s throw away from houses, trees and power lines, ostensibly in an effort to burn some discarded ackee pods; the habit of sweeping up bits and pieces outside one’s house and then setting fire to it is common in residential areas, where people are in close proximity to one another.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3382,
+      "body_end": 3912,
+      "source_links": [
+        "https://jamaica-gleaner.com/article/news/20160127/spanish-town-jewish-cemetary-be-restored",
+        "https://www.bbc.com/travel/article/20210315-ackee-and-saltfish-jamaicas-breakfast-of-champions"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00013",
+      "text": "At the opposite end of the archipelago, in Trinidad and Tobago, annual bush fires are a real concern. Environmentalist John Stollmeyer did not mince words when he warned in 2019:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3914,
+      "body_end": 4092,
+      "source_links": [
+        "https://www.facebook.com/groups/caribbeanphotographers/posts/9686302391394822/",
+        "https://www.facebook.com/john.stollmeyer.5/posts/pfbid033LeSmVFHB4q9KvX5fNehXhVyfzQuKTsckUyQeJsBK8zXA7rjmfrZFrpb9q3PS3hKl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00014",
+      "text": "> The one phenomenon that is inexorably undermining our [society's] long-term ability to prosper is the annual increase in the loss of forest cover due to fire. […]",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4094,
+      "body_end": 4258,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00015",
+      "text": "> Forested land is important to the wellbeing of the country. 60% of the rain that falls on Trinidad is from transpiration. Bare land increases surface run off and contributes to flooding.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4260,
+      "body_end": 4448,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00016",
+      "text": "> This is an issue of urgent national security that will require dedicated manpower to begin the procedures of regeneration.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4450,
+      "body_end": 4574,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00017",
+      "text": "His suggestions included adopting strategies for capturing and holding water in the landscape, and training the country's Defence Force personnel in skills like check-dam and contour-drain construction, adding that “temporary camps would have to be constructed and supplied with food and essentials in the areas of the fire hot spots so that crews can live close to the work.”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4576,
+      "body_end": 4952,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00018",
+      "text": "The following year, as a fire (one of many) raged on Lady Chancellor Hill overlooking Trinidad's capital, Port of Spain, journalist Kim Johnson reposted a column he had written 20 years prior:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4954,
+      "body_end": 5146,
+      "source_links": [
+        "https://www.facebook.com/TTWeatherCenter/posts/pfbid0KdXwjR1gHueMFWbURR4vTEfapqdhMnRgQGMjfqJY6Tm65kNgfF98GAuvvr64BKnpl",
+        "https://www.facebook.com/ghanshyamphotos/posts/pfbid0aXAgx7TRqY9NhkN5Wa9un8VhEQ5o7k7E9zE6SbCUCnzMpGHMuNgNUrU6hQ8y8QTwl",
+        "https://www.facebook.com/kim.johnson.5076/posts/pfbid0275eWSBAXSMnvCFHFDPou3XR4pLQwCXCRuTHELhwCD3qEBziSacupgSUT5KK2E6G6l"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00019",
+      "text": "> Today’s image of apocalypse must be ground zero of a nuclear explosion, or a world doused in napalm. […] Now my mental image of extinction is the Northern Range […] it came as a shock the first time I noticed the state of our mountains in broad daylight […] I felt my human rights had been abused. Huge bald swathes stripped of all greenery. Scorched earth with a ragged carpet of cinders and a scattering of blackened, skeletal trees. […] I heard people moan about the heat but didn’t see the agony of the hills.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5148,
+      "body_end": 5663,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00020",
+      "text": "> Now that I’m aware, it’s the animals I grieve for. The countless agoutis, iguanas, snakes, tattoos, manicous, ocelots, deer, mongoose, lappes and mattes that have been roasted alive.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5665,
+      "body_end": 5849,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00021",
+      "text": "He went on to compare Trinidad with Jamaica:",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5851,
+      "body_end": 5895,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00022",
+      "text": "> Ever notice how razor grass takes over a vacant lot if you give it half a chance? How weeds peep mischievously through any crack in the pavement?",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5897,
+      "body_end": 6044,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00023",
+      "text": "> What you mightn’t realise is how rare and precious that is. You don’t see it, for example, in Jamaica, where “rain a fall but the dutty tuff,” as Bob Marley put it.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6046,
+      "body_end": 6212,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00024",
+      "text": "> The jungle there is concrete.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6214,
+      "body_end": 6245,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00025",
+      "text": "> Maybe if more Trinis were to experience its oppressive ugliness we’d be less eager to incinerate our hills, cut down our trees and barbeque every walking, crawling, flying, climbing, hopping or slithering creature.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6247,
+      "body_end": 6463,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-783423-b00026",
+      "text": "Years later, however, nothing much appears to be improving:",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6465,
+      "body_end": 6524,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00027",
+      "text": "For its part, a few years ago Jamaica's National Environment and Planning Agency (NEPA) launched a public education campaign about bush fires and announced a new “No Open Burning” order for the period February 1 to October 31, but like many other Caribbean nations, the easy “slash and burn” approach has consistently been the preferred way for farmers and others to clear land for their use. According to Lewis, though, “This can easily get out of hand. If the slash/burner turns his back for half an hour or so, the damage is done.”",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6526,
+      "body_end": 7060,
+      "source_links": [
+        "https://petchary.wordpress.com/2023/03/13/the-burning-hills-and-the-kingston-chain-saw-massacre/",
+        "https://www.nepa.gov.jm/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00028",
+      "text": "In 2022, Trinidad and Tobago reportedly saw as much as a 30 percent increase in bush fires. Still, in the twin island republic, Jamaica, and likely many other regional territories, people are either unaware that open burning is illegal, or pay the regulations no heed, but with the impacts of climate change already having ill effects, mishandling the issue of bush fires is not something the region can afford to do, as Trinbagonian environmental activist Gary Aboud tried to stress in a recent video posted to social media:",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7062,
+      "body_end": 7587,
+      "source_links": [
+        "https://jamaica-gleaner.com/article/news/20230308/government-outline-steps-combat-bush-fires",
+        "https://tt.loopnews.com/content/fire-official-30-increase-bush-fires-2022",
+        "https://www.facebook.com/watch/?v=1731093886910654"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00029",
+      "text": "The footage recorded the burning of tyres in the community of Sea Lots on the outskirts of Port of Spain on March 16.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7589,
+      "body_end": 7706,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-783423-b00030",
+      "text": "The climate crisis has proven how inextricably linked the world is — the Caribbean's annual battle with Sahara dust, for instance, illustrates how events in one region can have long-lasting effects on another — and with further ecological disaster looming thanks to a month-long fire at Pic Macaya in Haiti, and people still regularly burning toxic materials as a form of protest or rubbish disposal, Caribbean nations should ask themselves, sooner rather than later, how they intend to handle this challenge, which grows more heated every year.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 7708,
+      "body_end": 8253,
+      "source_links": [
+        "https://globalvoices.org/2022/07/05/trinidads-capital-blocked-by-protests-over-police-killings/",
+        "https://haitiantimes.com/2023/03/14/pic-macaya-on-fire-the-great-south-of-haiti-again-threatene/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "74c3b2193673721b4b891143ac2f551bc87733f2291faf75514f5f1170f1d23c",
+  "word_count": 1376,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 8253,
+  "retrieved_at": "2026-11-16T22:38:30.045797+00:00",
+  "raw_html_sha256": "2265201a0244ca942289e95ffeefd249ecee3c1dfd491ea9c2bd15177ab6ea32",
+  "resolved_source_url": "https://globalvoices.org/2023/03/19/the-threat-of-bush-fires-in-the-caribbean-is-a-hot-button-issue/",
+  "canonical_url": "https://globalvoices.org/2023/03/19/the-threat-of-bush-fires-in-the-caribbean-is-a-hot-button-issue/",
+  "source_bytes": 191501,
+  "authors": [
+    {
+      "name": "Janine Mendes-Franco",
+      "url": "https://globalvoices.org/author/janine-mendes-franco/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 783423,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "2265201a0244ca942289e95ffeefd249ecee3c1dfd491ea9c2bd15177ab6ea32",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-6d7bc97951119e24a91f",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-03",
+    "eligible_month_documents": 92,
+    "selected_month_documents": 77,
+    "inclusion_probability": 0.8369565217391305,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Janine Mendes-Franco",
+  "body_start": 470,
+  "body_end": 8723,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "4e988d312b4a0c8670aefe7eb0a8802133c791abc2e7e0cfb8592dbd4926c5f6",
+  "text_path": "articles/gv-783423.txt",
+  "metadata_path": "metadata/gv-783423.json",
+  "attribution": "This story by Janine Mendes-Franco originally appeared on Global Voices. https://globalvoices.org/2023/03/19/the-threat-of-bush-fires-in-the-caribbean-is-a-hot-button-issue/",
+  "content_sha256": "1bd81fad3d2ca7e5310ab33185a640152887aab145827d1af4eebfb84970599e",
+  "source_sha256": "2265201a0244ca942289e95ffeefd249ecee3c1dfd491ea9c2bd15177ab6ea32",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

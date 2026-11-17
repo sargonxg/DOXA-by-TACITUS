@@ -1,0 +1,609 @@
+{
+  "id": "gv-830687",
+  "publisher_id": 830687,
+  "source_id": "globalvoices:830687",
+  "source_url": "https://globalvoices.org/2025/03/21/starlink-in-yemen-a-digital-revolution-or-a-security-threat/",
+  "title": "Starlink in Yemen: A digital revolution or a security threat?",
+  "published_at": "2025-03-21T16:13:22Z",
+  "modified_at": "2025-03-22T05:44:48Z",
+  "api_author_id": 2688,
+  "api_content_sha256": "b66a4f78f9cb663c30f50ca31101b523309f00c705f408127039ffa77ad7e4a9",
+  "api_response_sha256": "b7ae78070ece6a1bed77a7fcd8b44d3db670b34ae8e350336552b24cdd2c52ee",
+  "api_retrieved_at": "2026-11-16T22:21:09.980043+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    },
+    {
+      "id": 97,
+      "count": 362,
+      "name": "Yemen",
+      "slug": "yemen",
+      "parent": 14
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-830687-b00001",
+      "text": "As Elon Musk’s Starlink high-speed internet enters Yemen with promises to revolutionize connectivity for war-torn and underserved communities, many fear that access comes at a cost of data privacy, surveillance and as a geopolitical maneuver amid rising tensions in the Red Sea.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 278,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00002",
+      "text": "Poor connectivity",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 280,
+      "body_end": 297,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00003",
+      "text": "For years, Yemenis struggled with one of the slowest, most expensive and unreliable internet connections in the world. The country’s telecommunications infrastructure, already fragile, has been crippled by nearly a decade of war and humanitarian crises. As of January 2024, only 17.7 percent of Yemen’s 34.83 million population had internet access.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 299,
+      "body_end": 647,
+      "source_links": [
+        "https://datareportal.com/reports/digital-2024-yemen"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00004",
+      "text": "The Ansar Allah, also known as the Houthis, who in 2014 seized power in northern Yemen, where the vast majority of the population live, have taken control over state-run telecom networks, imposing strict information controls. These include frequent internet shutdowns, extensive surveillance of dissidents, and censorship of news and social media platforms, limiting communication with friends and family, online learning, remote work, and economic opportunities.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 649,
+      "body_end": 1112,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Houthis",
+        "https://www.article19.org/resources/yemen-human-rights-groups-condemn-internet-blocking-and-censorship/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00005",
+      "text": "Ghomdan, a journalist from a local media outlet in Hodeida, shares this frustration:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1114,
+      "body_end": 1198,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00006",
+      "text": "> I had to move from Hodeida to Sanaa just to access better internet. The connection in my city is extremely unreliable, constantly disrupted by clashes at the port. Authorities often cut the internet — either to punish the population or to prevent us from sharing information. It became impossible to do my job. Uploading photos was a struggle, and accessing timely information felt like an uphill battle.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1200,
+      "body_end": 1606,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Al_Hudaydah",
+        "https://en.wikipedia.org/wiki/Sanaa"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-830687-b00007",
+      "text": "A game changer?",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1608,
+      "body_end": 1623,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00008",
+      "text": "In January 2024, the internationally recognized Yemeni government, which controls only southern Yemen, became the first in the region to sign a five-year licensing agreement with Elon Musk’s Starlink, operated by SpaceX. Set to end on January 1, 2029, with the possibility of renewal, it marked a historic landmark in Yemen’s long-standing battle for digital access.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1625,
+      "body_end": 1991,
+      "source_links": [
+        "https://carnegieendowment.org/sada/2024/12/starlink-in-yemen-security-threat-or-an-opportunity?lang=en",
+        "https://en.wikipedia.org/wiki/Cabinet_of_Yemen",
+        "https://en.wikipedia.org/wiki/Elon_Musk",
+        "https://en.wikipedia.org/wiki/SpaceX",
+        "https://en.wikipedia.org/wiki/Starlink",
+        "https://en.yemenshabab.org/sections/NEWS/Economy/the-package-price-is-40-these-are-the-contents-of-the-starlink-satellite-internet-licensing-agreement-in-yemen"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00009",
+      "text": "Starlink’s service requires a satellite kit, priced at USD 389, including a dish and router, with monthly subscriptions ranging from USD 35 to USD 50, depending on location and usage. Unlike traditional fiber-optic or mobile-based internet, Starlink operates via satellites, enabling connectivity even in the most remote, conflict-affected regions where infrastructure is either damaged or non-existent.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1993,
+      "body_end": 2396,
+      "source_links": [
+        "https://www.starlink.com/order?processorToken=24a7bd12-ddea-4763-81f4-9c1f20a64651&step=1"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00010",
+      "text": "For the first time, Yemenis, at least in the south, could access unrestricted, high-speed satellite internet, bypassing the government-controlled networks.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2398,
+      "body_end": 2553,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00011",
+      "text": "For young Yemenis, the opportunities are unprecedented. Students can access global educational resources, and businesses can unlock new economic opportunities.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2555,
+      "body_end": 2714,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00012",
+      "text": "“Starlink gives us a chance to work, learn, and connect with the world. It may seem obvious for most of the world, but in Yemen, connecting rapidly was a dream,” says Ahmed, a 24-year-old software developer in Taiz. “With a stable connection, I can now apply for remote jobs and work without interruptions with clients abroad — something that was nearly impossible before.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2716,
+      "body_end": 3089,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Taiz"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00013",
+      "text": "In a country where more than 80 percent of the population requires humanitarian assistance, improved internet access has the potential to transform communication and help coordinate aid efforts more effectively.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3091,
+      "body_end": 3302,
+      "source_links": [
+        "https://www.unfpa.org/resources/2023-unfpa-humanitarian-response-yemen#:~:text=A%20staggering%2021.6%20million%20people,water%20and%20adequate%20health%20services."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00014",
+      "text": "As Starlink gains traction in Yemen, many Yemenis — unable to afford the costly equipment and monthly subscription — have found alternative ways to access the service.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3304,
+      "body_end": 3471,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00015",
+      "text": "Small businesses and enterprising individuals have started offering shared access to the service. Similar to how internet cafés once operated, users can now purchase vouchers that provide them with access to high-speed Starlink services for a set amount of time in exchange for payment. This has led to the rise of a new informal business sector, where entrepreneurs profit by reselling connectivity.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3473,
+      "body_end": 3873,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00016",
+      "text": "Fahmi, a digital trainer based in Taiz, explains: “People are desperate for a stable internet, and Starlink is becoming the go-to solution. In just a few months, we have seen entire Facebook communities emerge where people share advice on where to buy Starlink kits, how to install them, and even how to reduce costs by sharing subscriptions.”",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3875,
+      "body_end": 4218,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00017",
+      "text": "Economic, security and political controversies",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4220,
+      "body_end": 4266,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00018",
+      "text": "If, for many, Starlink represents a lifeline, others warn it could bring serious security and political risks; in a conflict-ridden country, internet access is as much about power and control.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4268,
+      "body_end": 4460,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00019",
+      "text": "The Houthi government in Sanaa has strongly condemned the Starlink deal, calling it “dangerous” and a “violation of Yemeni sovereignty.” They argue that the service poses “a direct threat to national security,” jeopardizing the societal fabric and undermining the government’s ability to safeguard citizens’ privacy and data.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4462,
+      "body_end": 4787,
+      "source_links": [
+        "https://thecradlearabic.com/articles-id/27138",
+        "https://www.sawtbeirut.com/world-news/%D8%A7%D9%84%D9%8A%D9%85%D9%86-%D9%8A%D8%B7%D9%84%D9%82-%D8%B1%D8%B3%D9%85%D9%8A%D8%A7%D9%8B-%D8%AE%D8%AF%D9%85%D8%A9-%D8%B3%D8%AA%D8%A7%D8%B1%D9%84%D9%8A%D9%86%D9%83-%D9%84%D9%84%D8%A5%D9%86%D8%AA/",
+        "https://yemeneco.org/archives/89961",
+        "https://yemnews.net/index.php/news/alaghrad-al-skryt-walastkhbaratyt-mn-tf-yl-khdmt-starlynk-fy-alym"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00020",
+      "text": "They have officially banned Starlink, warning residents against using the service and vowing to take “necessary measures” to protect the country’s sovereignty — a veiled threat to anyone caught accessing the network.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4789,
+      "body_end": 5005,
+      "source_links": [
+        "https://www.alquds.co.uk/%D8%AA%D9%81%D8%B9%D9%8A%D9%84-%D8%B3%D8%AA%D8%A7%D8%B1%D9%84%D9%8A%D9%86%D9%83-%D9%8A%D9%8F%D8%AB%D9%8A%D8%B1-%D8%AD%D8%A7%D9%84%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%AC%D8%AF%D9%84-%D9%81/",
+        "https://www.defense-arabic.com/2024/09/21/%d8%a8%d8%b9%d8%af-%d8%a5%d8%b9%d9%84%d8%a7%d9%86-%d9%85%d8%a7%d8%b3%d9%83-%d8%a5%d8%b7%d9%84%d8%a7%d9%82-%d8%a5%d9%86%d8%aa%d8%b1%d9%86%d8%aa-%d8%b3%d8%aa%d8%a7%d8%b1%d9%84%d9%8a%d9%86%d9%83-%d9%81/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00021",
+      "text": "The Houthis have accused Starlink of being a tool for espionage, claiming that it could be used to track Yemeni military movements, monitor rebel strongholds, and identify launch sites of missile attacks in the Red Sea. Houthi official Mohammed al-Bukhaiti directly linked the Starlink launch to “the war waged by the US on Yemen.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5007,
+      "body_end": 5338,
+      "source_links": [
+        "https://masa-press.net/2024/09/21/%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%B5%D9%8A%D9%86%D9%8A%D8%A9-%D8%AA%D8%AD%D8%B0%D9%91%D8%B1-%D9%85%D9%86-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%B3%D8%AA%D8%A7%D8%B1%D9%84%D9%8A%D9%86%D9%83/",
+        "https://www.aden-city.net/news/95876",
+        "https://yemeneco.org/archives/89961"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00022",
+      "text": "Other critics highlighted that the cash-strapped country will be deprived of much-needed revenues from its mobile and telecom sector, which would go to Starlink.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5340,
+      "body_end": 5501,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00023",
+      "text": "At the same time, the US Embassy in Yemen was quick to praise the move as a “milestone” for connectivity in the country.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5503,
+      "body_end": 5623,
+      "source_links": [
+        "https://x.com/USEmbassyYemen/status/1836367512771895445"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00024",
+      "text": "A tool for US surveillance?",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5625,
+      "body_end": 5652,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00025",
+      "text": "The fear of espionage and data security breaches is real. Information collected through the satellite internet could potentially be used for intelligence gathering or economic exploitation.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5654,
+      "body_end": 5843,
+      "source_links": [
+        "https://masa-press.net/2024/09/21/%D8%AF%D8%B1%D8%A7%D8%B3%D8%A9-%D8%B5%D9%8A%D9%86%D9%8A%D8%A9-%D8%AA%D8%AD%D8%B0%D9%91%D8%B1-%D9%85%D9%86-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%B3%D8%AA%D8%A7%D8%B1%D9%84%D9%8A%D9%86%D9%83/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00026",
+      "text": "Under the CLOUD Act, the US government has the authority to access data stored by American companies, including SpaceX, without requiring the consent of the user or local authorities. This means that Yemeni user data — ranging from browsing activity to location tracking — could potentially be accessed by US agencies, raising fears of espionage, surveillance, and economic exploitation.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5845,
+      "body_end": 6232,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/CLOUD_Act"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00027",
+      "text": "Despite Houthi threats of severe sanctions, driven by an overwhelming demand for unrestricted, high-speed internet, Starlink is spreading fast in northern Yemen, mainly through smuggled devices from neighbouring Oman and Saudi Arabia and shared access points.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6234,
+      "body_end": 6493,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00028",
+      "text": "Rakan, who manages over 20 Starlink social media groups with thousands of followers, spoke under a pseudonym to protect his identity. He has been facilitating access to Starlink in northern Yemen, where the service is officially banned. Describing his experience with smuggling and setting up Starlink, he said:",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6495,
+      "body_end": 6806,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00029",
+      "text": "> It's risky, but people are desperate for a stable internet. We shouldn't have to go to these lengths, but the Houthis leave us no other choice. They rule by terror. They send intimidating messages warning people not to use Starlink. If they find out you're using it, you could be extorted, thrown in jail, or worse.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6808,
+      "body_end": 7125,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-830687-b00030",
+      "text": "These groups act as underground support systems, helping Yemenis navigate the complexities of acquiring and using Starlink discreetly.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 7127,
+      "body_end": 7261,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00031",
+      "text": "A technological revolution or a Trojan horse?",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 7263,
+      "body_end": 7308,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00032",
+      "text": "Starlink’s arrival in Yemen is also complicated by the political baggage of its deeply polarizing billionaire founder, Elon Musk. His public role in the new Trump administration, his support for far-right ideologies, his engagement with conspiracy theories, and erratic social media behaviour have drawn sharp criticism over Starlink’s expansion into conflict zones.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 7310,
+      "body_end": 7676,
+      "source_links": [
+        "https://smex.org/starlink-in-sudan-a-thriving-black-market-during-times-of-war/",
+        "https://www.theguardian.com/technology/2025/jan/04/elon-musk-x-trump-far-right"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00033",
+      "text": "It is not the first time that Musk has stepped in to provide internet access to war zones or humanitarian crises. Following international pressure, he activated Starlink over parts of Gaza after Israel’s destruction of the strip’s telecommunications networks early in the war. Similarly, Starlink played a critical role in Ukraine, where it was deployed to support civilian and military communication following Russia’s invasion of the country.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 7678,
+      "body_end": 8122,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Starlink_in_the_Russian-Ukrainian_War",
+        "https://www.newarab.com/news/musks-starlink-satellites-approved-use-gaza-hospital",
+        "https://www.newarab.com/news/uk-politicians-slam-elon-musk-over-x-remarks-far-right-riots"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00034",
+      "text": "Starlink’s operations in politically sensitive regions raise questions about whether the service is being used as a tool for broader US strategic interests. In Syria, despite the absence of an official service, Starlink has been accessible. Meanwhile, in Iran, claims were made that dissidents used Starlink during the 2022 protests to bypass government censorship, organize demonstrations, and communicate with the outside world.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 8124,
+      "body_end": 8554,
+      "source_links": [
+        "https://english.enabbaladi.net/archives/2025/02/despite-its-ban-satellite-internet-spreads-in-aleppo/",
+        "https://www.space.com/spacex-iran-100-starlinks-internet-protests"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00035",
+      "text": "If Yemen’s national telecom sector fails to improve service and reduce prices, citizens will increasingly turn to Starlink, increasing dependence on a foreign-controlled digital infrastructure and potentially ceding control over data to external actors.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 8556,
+      "body_end": 8809,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830687-b00036",
+      "text": "While Starlink offers a breakthrough in digital access, its implications go far beyond mere connectivity — raising pressing questions about the role of private corporations in controlling information access, the risks of espionage, economic sovereignty, data security, and geopolitical influence.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 8811,
+      "body_end": 9107,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "8a31fe26be9fd94412b5d2234c2d82cf354989db4d404b9bfb0104bf09cf62a4",
+  "word_count": 1361,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 4,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 9107,
+  "retrieved_at": "2026-11-16T22:45:55.739022+00:00",
+  "raw_html_sha256": "253096799e0b404164d789935d0f4564f01fed21ec6f680922fb8a58d70ae990",
+  "resolved_source_url": "https://globalvoices.org/2025/03/21/starlink-in-yemen-a-digital-revolution-or-a-security-threat/",
+  "canonical_url": "https://globalvoices.org/2025/03/21/starlink-in-yemen-a-digital-revolution-or-a-security-threat/",
+  "source_bytes": 200805,
+  "authors": [
+    {
+      "name": "Saoussen Ben Cheikh",
+      "url": "https://globalvoices.org/author/saoussen-ben-cheikh/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 830687,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "253096799e0b404164d789935d0f4564f01fed21ec6f680922fb8a58d70ae990",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-0aa6112d7793113e20d7",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-03",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Saoussen Ben Cheikh",
+  "body_start": 463,
+  "body_end": 9570,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "970b5a1ca3a8459f07ffe103850c03d3f145e472f7578e3e4f69fe8a3b2f9f4c",
+  "text_path": "articles/gv-830687.txt",
+  "metadata_path": "metadata/gv-830687.json",
+  "attribution": "This story by Saoussen Ben Cheikh originally appeared on Global Voices. https://globalvoices.org/2025/03/21/starlink-in-yemen-a-digital-revolution-or-a-security-threat/",
+  "content_sha256": "16b5222b292b5e16a23c0ebf8d5756d386a9a2136efc42ad55e85296a84da559",
+  "source_sha256": "253096799e0b404164d789935d0f4564f01fed21ec6f680922fb8a58d70ae990",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

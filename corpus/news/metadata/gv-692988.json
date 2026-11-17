@@ -1,0 +1,437 @@
+{
+  "id": "gv-692988",
+  "publisher_id": 692988,
+  "source_id": "globalvoices:692988",
+  "source_url": "https://globalvoices.org/2020/01/02/elections-and-hirak-protests-triggered-a-surge-of-disinformation-in-algeria/",
+  "title": "Hirak protests and a presidential election triggered a surge of disinformation in Algeria",
+  "published_at": "2020-01-02T08:54:54Z",
+  "modified_at": "2020-01-02T08:55:57Z",
+  "api_author_id": 2653,
+  "api_content_sha256": "0ce0d54240591791ef805b9612e0a19169c99ce01338ca4d615316cfef8af380",
+  "api_response_sha256": "3390ca1fcc4f1c57431caafba57c9783cc7cc7ec234f150bc4b9743fc1151e5c",
+  "api_retrieved_at": "2026-11-16T22:20:21.760310+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 87,
+      "count": 410,
+      "name": "Algeria",
+      "slug": "algeria",
+      "parent": 14
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-692988-b00001",
+      "text": "Algeria’s popular protest movement, ‘’Hirak’’ [meaning “movement’’ in Arabic], brought a glimpse of online freedom, but also an aggressive wave of ‘’fake news’’ and disinformation on social media platforms. With little means to confront or fix the problem, the battle against the spread of disinformation is far from over.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 322,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00002",
+      "text": "The protest movement started on February 22, 2019 when then-ageing president Abdelaziz Bouteflika announced his bid for a fifth term in office. Bouteflika later dropped his plan to run again for president, and after 20 years in power, resigned on April 3. However, Algerians have continued to take to the streets to protest against corruption, unemployment and the country’s political elite, including after the presidential election on December 12, considered by the protesters as a ploy designed to keep the old regime in power.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 324,
+      "body_end": 854,
+      "source_links": [
+        "https://www.bbc.com/news/world-africa-47795108",
+        "https://www.dw.com/en/algerian-elections-rejected-in-the-name-of-democracy/a-51507403"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00003",
+      "text": "Nassim, an Algerian activist based in France who requested not to reveal his last name, created Fake News DZ with some friends after noticing an unusual increase in social media activity in Algeria and a surge in widely shared false stories. The page has more than 135,000 followers as of this writing. Nassim shared with Global Voices a viral ‘fake news’ story:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 856,
+      "body_end": 1218,
+      "source_links": [
+        "https://www.facebook.com/FakenewsDZ/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00004",
+      "text": "> For me, the most surreal fake news we debunked was not really political; an Algerian NASA engineer participated in the “send your name to Mars” NASA program which is accessible to all and suggested “Hirak Algeria” instead of his name. A journalist or many misunderstood the engineer's tweet and wrote that the next NASA spaceship to Mars will be named “Hirak Algeria”.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1220,
+      "body_end": 1590,
+      "source_links": [
+        "https://earthsky.org/space/send-your-name-to-mars-mission-2020"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-692988-b00005",
+      "text": "> Fake news spread like wildfire even on some “trusted” media. A famous TV channel even made a video describing this as one of the biggest accomplishments ever. Months later I still find people believing in this story.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1592,
+      "body_end": 1810,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-692988-b00006",
+      "text": "Other cases of mis/disinformation, however, were more serious since they targeted the protest movement and its activists.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1812,
+      "body_end": 1933,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00007",
+      "text": "With the December 12 presidential election approaching, pro-government supporters took to social media to attack anti-government activists. The protesters were targeted and subjected to conspiracy theories, such as accusing them of working for foreign governments, secret services, or paid to spread instability and unrest in the country.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1935,
+      "body_end": 2273,
+      "source_links": [
+        "https://codastory.com/disinformation/algeria-election-protest/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00008",
+      "text": "Twitter bots and trolls",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2275,
+      "body_end": 2298,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00009",
+      "text": "While Twitter is a powerful tool of information, it can also be used to influence public opinion and silence opponents through the use of bot armies.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2300,
+      "body_end": 2449,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00010",
+      "text": "The number of Twitter users in Algeria is around 450,000. The platform is mainly used by journalists, some football players and national entities such as ministries and public administrations. But compared to other platforms such as Facebook and Youtube, Twitter is not widely used in Algeria. There are 21 million Facebook users in a country of 43 million people.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2451,
+      "body_end": 2815,
+      "source_links": [
+        "http://worldpopulationreview.com/countries/algeria-population/",
+        "https://gs.statcounter.com/social-media-stats/all/algeria"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00011",
+      "text": "Yet, since the Hirak started, hundreds of new Twitter accounts, mostly pro-government trolls and bots, have been created.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2817,
+      "body_end": 2938,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00012",
+      "text": "For example, according to analysts, in September 2019, 723 accounts were created with 474 created in just two days. Subsequently, 190 accounts were created in October and 72 in November, which is pretty unusual, according to Marc Owen Jones, an associate professor of Middle East Studies and Digital Humanities at Hamad bin Khalifa University, Doha.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2940,
+      "body_end": 3289,
+      "source_links": [
+        "https://twitter.com/a_zermane/status/1191378624638783490",
+        "https://twitter.com/marcowenjones/status/1177953483116429313?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00013",
+      "text": "On September 28, Owen Jones published a Twitter thread analysing a sample of 20,000 tweets from around 5,769 accounts tweeting under the hashtags #notinmyname and #algeriavotes, which opposed calls to boycott the election and were urging people to vote. According to his analysis, the activities of these accounts point to ‘’a clear evidence of a disinformation campaign’’",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3291,
+      "body_end": 3663,
+      "source_links": [
+        "https://twitter.com/marcowenjones/status/1177953483116429313"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00014",
+      "text": "The thread concluded that at least 8 percent of the accounts encouraging people to vote in the sample were bots.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3665,
+      "body_end": 3777,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00015",
+      "text": "Some accounts have in fact been suspended by Twitter after being reported. Consequently, the suspended users created new accounts afterwards and reached back to their followers.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3779,
+      "body_end": 3956,
+      "source_links": [
+        "https://twitter.com/MyriamSantze/status/1186671005462335488"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00016",
+      "text": "#Weareallzeghmati is another example of a Twitter hashtag launched by government supporters to reinforce the argument of the existence of anti-protest or pro-Establishment online campaigns in Algeria.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3958,
+      "body_end": 4158,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00017",
+      "text": "On November 3, the security forces attacked magistrates who went on a national strike protesting against a new reshuffle. Footage of the attack went viral and internet users slammed Minister of Justice Belkacem Zeghmati. The National Syndicate of Magistrates also called on the minister to resign. A few hours later, #weareallzeghmati was trending on Twitter in Algeria, in support of the minister and the judiciary system. The hashtag was spread widely by newly created accounts.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4160,
+      "body_end": 4640,
+      "source_links": [
+        "https://twitter.com/MoiWal/status/1191001476505706499?s=20",
+        "https://twitter.com/hashtag/كلنا_زغماتي?src=hashtag_click",
+        "https://twitter.com/marcowenjones/status/1191442240352243713?s=20",
+        "https://www.jeuneafrique.com/851641/politique/algerie-apres-les-incidents-a-oran-les-magistrats-reclament-la-tete-du-ministre-de-la-justice/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00018",
+      "text": "Beyond the matter of being bots or not, there is an important aspect to take into account about the number and manipulation of social media accounts in Algeria. The troll trend is from both sides. People who were willing to vote were often trolled by the pro-Hirak accounts and vice versa. Exchanges are sometimes loaded with insults and profanities, which does not bring a positive added value to any debate.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4642,
+      "body_end": 5051,
+      "source_links": [
+        "https://twitter.com/So_f_i_a_/status/1207247877636014080?s=20",
+        "https://www.google.com/url?q=https://twitter.com/AYOUBVISION/status/1205940705987891202?s%3D20&sa=D&ust=1577541069458000&usg=AFQjCNGf0ddFio8wt6ZYTAlIs_PyFu-mzA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00019",
+      "text": "The presidential election held on December 12 was widely followed and commented in Algeria, even by those who were against the election or believed that the process was rigged. The election took place despite being rejected by the popular movement and mass demonstrations in Algiers and many other cities on election day. Mis/disinformation were also rife, and activists and journalists debunked several fake images and stories including a photoshopped image showing the coach of Algeria's football team voting in the election, and another image showing an old man being attacked by anti-election protesters to prevent him from casting his vote at a polling station in Lyon, France. The latter was debunked by Fake News DZ which traced back the image to a media report published on July 19 about an Egyptian tourist who was assaulted by Romanian police inside an airplane. A 2017 footage used by the state television alleging showing long queues of voters on election day was also debunked.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5053,
+      "body_end": 6043,
+      "source_links": [
+        "https://twitter.com/Inal_Boukhalfa/status/1205088621243633664?s=20",
+        "https://twitter.com/MnarviDZ/status/1204009444520218626?s=20",
+        "https://twitter.com/Redasbox/status/1203286657526616065?s=20",
+        "https://twitter.com/Redasbox/status/1203714886552956931?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00020",
+      "text": "On December 13, Algeria’s Independent Election Monitoring Authority announced the victory of independent candidate Abdelmadjid Tebboune, a former prime minister and a Bouteflika ally. Tebboune won more than 58 percent of the vote, eliminating the need for a second round.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6045,
+      "body_end": 6316,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00021",
+      "text": "Although, the election is now over, the future of digital platforms and the battle against disinformation is still blurry, particularly as protests against the ruling elite in Algeria continue to gather momentum.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6318,
+      "body_end": 6530,
+      "source_links": [
+        "https://www.bbc.com/news/world-africa-50782676"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692988-b00022",
+      "text": "This article is part of a series of posts examining interference with digital rights through methods such as internet shutdowns and disinformation during key political events in seven African countries: Algeria, Ethiopia, Mozambique, Nigeria, Tunisia, Uganda, and Zimbabwe. The project is funded by the Africa Digital Rights Fund of The Collaboration on International ICT Policy for East and Southern Africa (CIPESA).",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6532,
+      "body_end": 6949,
+      "source_links": [
+        "https://cipesa.org/",
+        "https://cipesa.org/2019/07/inaugural-winners-of-the-africa-digital-rights-fund-announced/",
+        "https://globalvoices.org/specialcoverage/writing-toward-freedom-politics-and-digital-rights-in-africa/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "1cbfb53091a2967fd47860a04345c76a81bcdfbb4978577fcd07cb25d2da11eb",
+  "word_count": 1091,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6949,
+  "retrieved_at": "2026-11-16T22:21:16.772376+00:00",
+  "raw_html_sha256": "a5f34adaaee9a83cccb121789bebbadbcfe8cbcdd444bb0ad73483085405d71f",
+  "resolved_source_url": "https://globalvoices.org/2020/01/02/elections-and-hirak-protests-triggered-a-surge-of-disinformation-in-algeria/",
+  "canonical_url": "https://globalvoices.org/2020/01/02/elections-and-hirak-protests-triggered-a-surge-of-disinformation-in-algeria/",
+  "source_bytes": 194892,
+  "authors": [
+    {
+      "name": "Farah Souames",
+      "url": "https://globalvoices.org/author/farah-souames/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 692988,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "a5f34adaaee9a83cccb121789bebbadbcfe8cbcdd444bb0ad73483085405d71f",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-c67f9ea93b0d04c6dade",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-01",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Farah Souames",
+  "body_start": 501,
+  "body_end": 7450,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "e63f0e502a691f4178ba6386cf9e80f1c4ab34298e3fa3e646aa524375aa182a",
+  "text_path": "articles/gv-692988.txt",
+  "metadata_path": "metadata/gv-692988.json",
+  "attribution": "This story by Farah Souames originally appeared on Global Voices. https://globalvoices.org/2020/01/02/elections-and-hirak-protests-triggered-a-surge-of-disinformation-in-algeria/",
+  "content_sha256": "d5b73606d86a39d2e24bb1e26168b60add46ea927c61b71c20614f049209445f",
+  "source_sha256": "a5f34adaaee9a83cccb121789bebbadbcfe8cbcdd444bb0ad73483085405d71f",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

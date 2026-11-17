@@ -1,0 +1,524 @@
+{
+  "id": "gv-791515",
+  "publisher_id": 791515,
+  "source_id": "globalvoices:791515",
+  "source_url": "https://globalvoices.org/2023/06/29/undertones-if-on-welfare-better-learn-dutch-and-be-a-man/",
+  "title": "Undertones: If on welfare, better learn Dutch and be a man",
+  "published_at": "2023-06-29T11:02:39Z",
+  "modified_at": "2025-01-15T18:01:19Z",
+  "api_author_id": 2945,
+  "api_content_sha256": "0bd4f1f1fa5dd89734820c34a66905bbcda2b3bd0db1872c4dc758b4fcf890d0",
+  "api_response_sha256": "da6b3b0f7e68a5a41f538581a74d7b3c95ab51f06e761611226b463e0f01ea4e",
+  "api_retrieved_at": "2026-11-16T22:20:54.683859+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 296,
+      "count": 2217,
+      "name": "Language",
+      "slug": "language",
+      "parent": 238
+    },
+    {
+      "id": 1358,
+      "count": 4577,
+      "name": "Migration &amp; Immigration",
+      "slug": "migration-immigration",
+      "parent": 238
+    },
+    {
+      "id": 202,
+      "count": 167,
+      "name": "Netherlands",
+      "slug": "netherlands",
+      "parent": 187
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 187,
+      "count": 2705,
+      "name": "Western Europe",
+      "slug": "western-europe",
+      "parent": 219
+    },
+    {
+      "id": 1361,
+      "count": 6433,
+      "name": "Women &amp; Gender",
+      "slug": "women-gender",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-791515-b00001",
+      "text": "This story is part of Undertones, Global Voices’ Civic Media Observatory‘s newsletter. Subscribe to Undertones here.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 116,
+      "source_links": [
+        "https://globalvoices.org/special/observatory/",
+        "https://globalvoices.us2.list-manage.com/subscribe?u=9307106bf78cc186e924ad999&id=5633e3eb9a"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00002",
+      "text": "Welcome to Undertones, the newsletter where we decode narratives. In this edition, we cover how people speak about the (mis)use of AI in the Netherlands, thanks to researcher Leon Ingelse.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 118,
+      "body_end": 306,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00003",
+      "text": "Data scientist Ingelse analyzed the discussions about algorithms in the Netherlands. After all, it is a big deal in the Low Lands: in 2021, an entire government fell after years of mishandling a case of AI fraud detection among childcare beneficiaries. Thousands of families, primarily of migrant backgrounds, had been wrongly accused of cheating the system. The Netherlands, a country that takes pride in efficiency and the use of technology in government services, is a case study of how the misuse of AI can hurt the lives of individuals and undermine trust in authorities.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 308,
+      "body_end": 884,
+      "source_links": [
+        "https://www.theguardian.com/world/2021/jan/14/dutch-government-faces-collapse-over-child-benefits-scandal"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00004",
+      "text": "Nevertheless, algorithms continue to be used in municipalities throughout the Netherlands to determine who is more or less likely to commit welfare fraud — an endless hot topic in Europe. However, nearly all of this AI tech is opaque to journalists and researchers as authorities claim privacy and intellectual property concerns. Only Rotterdam, the second-largest Dutch city, recently agreed to share the skeleton of their algorithm with journalists from investigative media Lighthouse Reports and Follow The Money. They accidentally also shared the training data sets, which provided invaluable insight into how the algorithm works from the inside out.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 886,
+      "body_end": 1540,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/reccBo3FAae64cJQH?blocks=bipDwtmZEh6gbZRVS",
+        "https://www.ftm.eu/articles/algorithm-rotterdam-dissected",
+        "https://www.lemonde.fr/en/france/article/2023/05/30/france-s-plan-to-tackle-welfare-fraud_6028500_7.html",
+        "https://www.lighthousereports.com/investigation/suspicion-machines/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00005",
+      "text": "The journalists have found that the algorithm is a scoring card fed with personal criteria such as age, sex, and marital status, as well as elements of behavior and language skills. Rotterdam initially developed its algorithm with the help of consulting firm Accenture.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1542,
+      "body_end": 1811,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00006",
+      "text": "“The data fed into the algorithm ranges from invasive (the length of someone’s last romantic relationship) and subjective (someone’s ability to convince and influence others) to banal (how many times someone has emailed the city) and seemingly irrelevant (whether someone plays sports),” Lighthouse writes.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1813,
+      "body_end": 2119,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00007",
+      "text": "In other words, if you are a) a woman, b) plurilingual, c) twenty or thirty-something, and d) a parent, the algorithm would file you as someone at risk of committing fraud, independently of any actual fraudulent behavior in the past. If you appear shy to the social worker, you will be even worse off. You will not know whether you’re on the blacklist, or why. Still, uncomfortable investigations by local authorities would ensue, as well as potentially losing welfare benefits.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2121,
+      "body_end": 2599,
+      "source_links": [
+        "https://www.wired.com/story/welfare-algorithms-discrimination/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00008",
+      "text": "“The Dutch tend to believe they don't have structural racism, whereas this algorithm clearly shows otherwise, as people with limited Dutch proficiency are discriminated against,” Ingelse says. Other discriminatory algorithm uses in the Netherlands have also come to light, with the profiling of nationality and ethnicity in visa applications.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2601,
+      "body_end": 2943,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recPW9vb65V8KJBK5?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00009",
+      "text": "Algorithmic bias is not new",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2945,
+      "body_end": 2972,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00010",
+      "text": "Journalists have pointed out the intrinsic biases in algorithmic risk scores elsewhere. As early as 2016, an investigation by ProPublica revealed that within the U.S. criminal justice system, Black individuals were twice as likely to be erroneously identified as “high risk” for reoffending; in contrast, white individuals were twice as likely to be wrongly categorized as “low risk.” In the Rotterdam case, experts argue that AI performance is only marginally better than randomly selecting welfare beneficiaries for investigation, according to Lighthouse.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2974,
+      "body_end": 3531,
+      "source_links": [
+        "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00011",
+      "text": "AI algorithms exhibit bias due to training on skewed or insufficient real-world data and the influence of human developers’ inherent prejudice. Biases enter the system in other ways too.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3533,
+      "body_end": 3719,
+      "source_links": [
+        "https://www.technologyreview.com/2019/02/04/137602/this-is-how-ai-bias-really-happensand-why-its-so-hard-to-fix/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00012",
+      "text": "How are people perceiving these revelations?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3721,
+      "body_end": 3765,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00013",
+      "text": "In the Dutch AI scandals, the public debate does not tend to happen via original tweets or posts, but rather only on comment sections, which, surprisingly, show an interesting array of opinions. Most of those launching the debate are journalists.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3767,
+      "body_end": 4013,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/reccHopy4g4kIsL3k?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00014",
+      "text": "“It could be that the Dutch are tired after the Toeslagenaffaire [childcare benefits scandal], and are more focused on ChatGPT,” Ingelse says. “Also, public figures that have been part of the scandals tactically avoid answering questions about their involvement.” He adds that the only people burdened with these specific algorithms are minorities, who are often invisibilized. “Notice how these fraud algorithms are never used in profit taxes, for example, which would target the rich,” Ingelse says.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4015,
+      "body_end": 4516,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00015",
+      "text": "We have reached out to local Rotterdam authorities as well as the newly created group of families impacted by the algorithm to understand their perspectives, but have not received answers.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4518,
+      "body_end": 4706,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00016",
+      "text": "Narrative 1: “Algorithms that help fight crime should be implemented even if biased”",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4708,
+      "body_end": 4792,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tblkIjk2LBbY4kdXO/viwcq1VaO6mDmYHtn/rec5oPGWynyu7563u?blocks=hide"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00017",
+      "text": "This narrative in a nutshell: “The algorithm is doing its job”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4794,
+      "body_end": 4856,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00018",
+      "text": "This narrative implies that the algorithm works, even if flawed, in fighting fraud. This discourse has been around for years. For example, at the height of the childcare benefits scandal in 2019, far-right blogger Pim Beaart, alias “Hannibal,” argued in an editorial piece that politicians only “want to use algorithms when they validate their political opinions.”",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4858,
+      "body_end": 5222,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recP1kyiYcn5hv0Va?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00019",
+      "text": "More recently, one of the largest conservative Dutch opinion magazines, EW, claimed that automated decisions in visa applications should be the norm, despite always targeting people from certain nationalities such as former Dutch colony Suriname. On Facebook, they ask: “Shouldn't the government just use digital programs that dare to filter [visa applicants] in cold blood?” Others, such as the famous media blog GeenStijl also argue in favor of efficiency, one of the most popular overarching narratives in the Netherlands.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5224,
+      "body_end": 5749,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/rec8MV0eiZpJ1oG6e?blocks=bipDwtmZEh6gbZRVS",
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recEjosWSBaPeoKDP?blocks=bipDwtmZEh6gbZRVS",
+        "https://en.wikipedia.org/wiki/GeenStijl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00020",
+      "text": "“The Dutch consider themselves to favor efficiency above anything else,” Ingelse says. The Netherlands is leading the way in implementing digital IDs, incorporating technology in education and healthcare, and advancing governmental digitalization. Whatever they do — and how they deal with algorithmic biases — might influence how other countries develop their own AI. However, not many understand the basics of algorithms.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5751,
+      "body_end": 6174,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00021",
+      "text": "“Besides the expected presence of xenophobic comments and racism, this narrative will probably always be present as long as people don't understand how algorithms work and the difference between objective data and the interpretation of that data,” Ingelse says. Correlation does not mean causation.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6176,
+      "body_end": 6474,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00022",
+      "text": "Narrative 2: “Dutch authorities are harming their citizens by using discriminatory algorithms”",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6476,
+      "body_end": 6570,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tblkIjk2LBbY4kdXO/viwcq1VaO6mDmYHtn/recjfmY87oqIK3UiN?blocks=hide"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00023",
+      "text": "This narrative in a nutshell: “Stop using discriminatory AI”",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6572,
+      "body_end": 6632,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00024",
+      "text": "In tweets and in comments, people claim that the Netherlands has a history of discriminatory algorithms that re-victimize vulnerable populations. Focusing on someone’s poor Dutch skills, is, for many, a subtext for targeting immigrants.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6634,
+      "body_end": 6870,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00025",
+      "text": "Some go further by stating that “Algorithms should be open and transparent to ensure they are not biased.” This is not the case for the vast majority of algorithms out there. So, while people criticized Rotterdam’s algorithmic use, many also lauded the city for at least sharing their algorithm with the journalists.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6872,
+      "body_end": 7188,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tblkIjk2LBbY4kdXO/viwcq1VaO6mDmYHtn/recJWisRt38XrQAhK?blocks=hide",
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/reccBo3FAae64cJQH?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00026",
+      "text": "Most of these posts and comments come from people defending human rights, not the people directly impacted by the algorithms themselves. That is perhaps precisely because vulnerable populations are less visible online, or less vocal (in Dutch) online. However, when directly interviewed, people are very opinionated against the use of discriminatory AI. Dutch outlet Vers Breton went to Rotterdam’s market, where people with less economic means go, and interviewed shoppers — and they all criticized the use of algorithms.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 7190,
+      "body_end": 7712,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recqxFdB6zin3WSct?blocks=hide"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00027",
+      "text": "Dutch legislators are also pushing for more AI regulation. “The central problem with AI development is that it's entirely market-driven: it's a multi-billion dollar industry with no rules,” Kim van Sparrentak, a member of the European Parliament with the Greens/EFA group writes in an extensive Twitter thread.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7714,
+      "body_end": 8024,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recBOmVJ4EKbOpGyw?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00028",
+      "text": "Upcoming EU Artificial Intelligence Act",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 8026,
+      "body_end": 8065,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00029",
+      "text": "The European Union is negotiating an “AI Act” intended to regulate this kind of situation. In mid-June, the European Parliament sent its draft to the European Council, where it is currently being discussed. As it stands at the time of writing, one of the points of the legislation is to prohibit “social scoring” in order to avoid discrimination.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 8067,
+      "body_end": 8413,
+      "source_links": [
+        "https://www.europarl.europa.eu/doceo/document/TA-9-2023-0236_EN.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791515-b00030",
+      "text": "This newsletter is published through the Community CMO. If you want to learn more or be a part of it, consider pitching us or join our next live methodology training on July 7 at 12PM UTC.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 8415,
+      "body_end": 8603,
+      "source_links": [
+        "https://community.globalvoices.org/2023/03/pitch-an-investigation-idea-to-our-community-civic-media-observatory/",
+        "https://www.eventbrite.com.au/e/civic-media-observatory-methodology-training-tickets-667542857657?aff=oddtdtcreator"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5b0a51f2e5c3729bb11aa40c04f29596c65d2ddd0a625f465ac673bf323ef79e",
+  "word_count": 1317,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8603,
+  "retrieved_at": "2026-11-16T22:39:51.004694+00:00",
+  "raw_html_sha256": "8803078f570244d8d205a1fb63a891d6c688b89a4a616ff54e9abc3540f737dd",
+  "resolved_source_url": "https://globalvoices.org/2023/06/29/undertones-if-on-welfare-better-learn-dutch-and-be-a-man/",
+  "canonical_url": "https://globalvoices.org/2023/06/29/undertones-if-on-welfare-better-learn-dutch-and-be-a-man/",
+  "source_bytes": 195344,
+  "authors": [
+    {
+      "name": "Civic Media Observatory",
+      "url": "https://globalvoices.org/author/civic-media-observatory/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 791515,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "8803078f570244d8d205a1fb63a891d6c688b89a4a616ff54e9abc3540f737dd",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-2de087e5c9ddc262f7cb",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-06",
+    "eligible_month_documents": 109,
+    "selected_month_documents": 91,
+    "inclusion_probability": 0.8348623853211009,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Civic Media Observatory",
+  "body_start": 461,
+  "body_end": 9064,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b64677cd4217786c85959bb0ba369ae80a79a0ce3ba6cbcd7be210fab574d68b",
+  "text_path": "articles/gv-791515.txt",
+  "metadata_path": "metadata/gv-791515.json",
+  "attribution": "This story by Civic Media Observatory originally appeared on Global Voices. https://globalvoices.org/2023/06/29/undertones-if-on-welfare-better-learn-dutch-and-be-a-man/",
+  "content_sha256": "80081750386ca664536951785f0b7dfc7c554b79869fa1e64fdcc47077758f7c",
+  "source_sha256": "8803078f570244d8d205a1fb63a891d6c688b89a4a616ff54e9abc3540f737dd",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

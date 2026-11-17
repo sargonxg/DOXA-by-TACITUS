@@ -1,0 +1,57 @@
+A forensic investigation finds a site that doxxes Hong Kong activists and journalists is likely backed by Beijing
+Written by: Oiwan Lam
+Originally published by Global Voices: https://globalvoices.org/2023/07/18/a-forensic-finds-a-site-that-doxxes-hong-kong-activists-and-journalists-is-likely-backed-by-beijing/
+Published: 2023-07-18T00:38:19Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+A tech forensic run by Toronto-based research group Citizen Lab finds that HKleaks, a notorious doxxing site launched in 2019 targeting Hong Kong activists and journalists, is most likely backed by the mainland Chinese government or its proxies.
+
+HKLeaks, which was registered under 25 domains including hkleaks [.] org, [.] ru and [.] pk, was launched in August 2019 and maintained an online database of personal data — including ID card numbers, headshots, home addresses and phone numbers — belonging to about 2,800 Hong Kong politicians, activists, teachers and journalists.
+
+Despite the fact that the site violated the Privacy Ordinance, law enforcement authorities in Hong Kong did not comment when asked by the press if they would investigate the act or take action to ban the site.
+
+The site was still operating on June 10 2023, according to snapshot records from Internet Archive’s Wayback Machine, though it is currently offline.
+
+The forensic report, “HKLeaks – The Use of Covert and Overt Online Harassment Tactics to Repress 2019 Hong Kong Protests,” written by Alberto Fittarelli and Lokman Tsui and published by Citizen Lab on July 13 2023, finds circumstantial evidence that suggests the campaign operators held links to mainland China.
+
+The 2019 doxxing warfare
+
+As explained by report, the HKLeaks site emerged in reaction to the protesters’ exposure of the identities of individual police officers who allegedly committed unchecked abuse in a number of violent crackdown incidents during the 2019 protests. At first, the police officers’ personal data were spread mainly on messaging app Telegram and Reddit-like social media platform LIGHK; later it was documented on the website “HKChronicles [.] com,” which has been blocked by Hong Kong since January 2021. The Hong Kong police later said they had the authority to require local ISPs to take action against digital platforms that endanger national security.
+
+On the other front of the doxxing warfare was HKLeaks, which claimed that it was a spontaneous effort by anonymous internet users who were frustrated by the protests. The aim of Citizen Lab’s forensic investigation was to find out the nature of HKLeaks’ campaign. Alberto Fittarelli summed up the findings in a Twitter thread.
+
+The first assessment is that it was not organic, which means it was not spontaneously launched and maintained by ordinary citizens as it claimed.
+
+“Bulletproof” operational security
+
+According to the tech analysis, the campaign had a “bulletproof” operational security crafted to avoid attribution. It used at least 25 web domains, all mirroring identical content. Most of the 25 HKLeaks domains were registered through a Russian-based registrar, DDoS-Guard, notorious for offering protection to harmful actors. Most were registered with privacy protection, and others used fake names with anonymous emails.
+
+Moreover, the campaign was persistent. In addition to the 25 mirror sites, it ran 24 Telegram channels among other social media outlets, and its dataset was actively maintained for two years, from August 2019 to May 2021.
+
+HKLeaks campaign’s tactics and language style were similar to other fake grassroots campaigns, such as Hongkongmob[.]com, an anti-protester site featuring violence by protesters and hence justifying the crackdown. Both sites were launched in the name of anonymous citizens frustrated with the protest violence. Languages used in their promotional text are similar and shared by inauthentic social media users.
+
+The second assessment is that the campaign had ties with mainland Chinese authorities:
+
+The campaign was promoted on mainland Chinese social media, including the China state-owned Central Television and other local government authorities.
+
+The site's Javascript contained mainland Chinese pinyin rather than English or Cantonese romanization.
+
+The launch of HKLeaks followed shortly after Twitter removed a Chinese state-sponsored information operation that involved 900 accounts targeting the Hong Kong protests. The first domain of HKLeaks was registered on August 16 2019, three weeks after Twitter’s massive account removal.
+
+The Blue Ribbon Network
+
+The third assessment is that the doxxing operation was an integral part of an information operation network, namely the Blue Ribbon Network, against Hong Kong activists:
+
+The Blue Ribbon Network is indicated in a links directory on an anti-protest site Hongkongmob [.] com. that lists a series of digital assets. The network involves three branches, one is connected to mainland Chinese national security online report websites (12339.gov.cn and 12337.gov.cn) and mainland Chinese online patriot coordination body Di Ba. The second branch indicates a campaign targeting international and English-speaking audiences, ostensibly “denouncing the violent mob” of protesters. The final branch consists of two campaigns, one of which Citizen Lab dubs “the bounties” and the other one is HKLeaks’ doxxing campaign. “The bounties” campaign is operated on the hongkongmob website and supported by the 803 Fund which is directly linked to ex-Hong Kong Chief Executive CY Leung. The bounties and doxxing campaign networks used the same political rhetoric and resonated with one another.
+
+The research also compared the activity timeline of the Blue Ribbon Network and HKLeaks’ websites and social media outlets and found that they shared a similar lifespan. Most of them started operating in August 2019, and they were operating in full force between September to October 2019 amid a rapid escalation of street protests to violent conflict and clashes during the 70th anniversary of the founding of the PRC. Between October 2019 and January 2020, HKLeaks and the Blue Ribbon Network expanded their campaigns and diversified their tactics. Since January 2020, many campaign outlets have become inactive or ceased to operate.
+
+With the final assessment of the campaign resources, Alberto Fittarelli concluded that the doxxing campaign was “almost certainly” an artificial operation run by Beijing or its proxies.
+
+According to the now shut down Apple Daily News, the photos of at least two individuals published on the website were submitted to the China Travel Service, a mainland Chinese agent, to process the “Home Return Card” — an identity card for multiple entries to mainland China.
+
+Moreover, HKLeaks had the resources to conduct and sustain content production and regular maintenance of its websites and social media outlets throughout its four-year span.
+
+In addition to data about 2,800 individuals, it collected political commentary about mainland China and other countries. It also maintained an archive of alleged “atrocities” committed by protesters and smears against the protest movement.

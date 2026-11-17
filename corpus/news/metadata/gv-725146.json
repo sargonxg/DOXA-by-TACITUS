@@ -1,0 +1,466 @@
+{
+  "id": "gv-725146",
+  "publisher_id": 725146,
+  "source_id": "globalvoices:725146",
+  "source_url": "https://globalvoices.org/2020/12/20/stop-silencing-mena-critical-voices-say-activists-in-open-letter-to-twitter-and-facebook/",
+  "title": "‘Stop silencing MENA critical voices,’ say activists in open letter to Twitter and Facebook",
+  "published_at": "2020-12-20T14:16:53Z",
+  "modified_at": "2020-12-21T22:49:13Z",
+  "api_author_id": 2798,
+  "api_content_sha256": "4ae2dd8aeb8845327df9f80a77a6270c6beeccbd3677f732ac6dee32ff3c9d93",
+  "api_response_sha256": "3c1126b1eeb2408f0c7dfb3722ec3e22693716e3f3a1988a2b2844f4a03dc72f",
+  "api_retrieved_at": "2026-11-16T22:20:31.424510+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 87,
+      "count": 410,
+      "name": "Algeria",
+      "slug": "algeria",
+      "parent": 14
+    },
+    {
+      "id": 89,
+      "count": 1295,
+      "name": "Bahrain",
+      "slug": "bahrain",
+      "parent": 14
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 23,
+      "count": 2547,
+      "name": "Egypt",
+      "slug": "egypt",
+      "parent": 14
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 2578,
+      "count": 3152,
+      "name": "Iran",
+      "slug": "iran",
+      "parent": 14
+    },
+    {
+      "id": 22,
+      "count": 1022,
+      "name": "Iraq",
+      "slug": "iraq",
+      "parent": 14
+    },
+    {
+      "id": 24,
+      "count": 1672,
+      "name": "Israel",
+      "slug": "israel",
+      "parent": 14
+    },
+    {
+      "id": 90,
+      "count": 1048,
+      "name": "Jordan",
+      "slug": "jordan",
+      "parent": 14
+    },
+    {
+      "id": 91,
+      "count": 569,
+      "name": "Kuwait",
+      "slug": "kuwait",
+      "parent": 14
+    },
+    {
+      "id": 34,
+      "count": 1359,
+      "name": "Lebanon",
+      "slug": "lebanon",
+      "parent": 14
+    },
+    {
+      "id": 88,
+      "count": 394,
+      "name": "Libya",
+      "slug": "libya",
+      "parent": 14
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 30,
+      "count": 928,
+      "name": "Morocco",
+      "slug": "morocco",
+      "parent": 14
+    },
+    {
+      "id": 92,
+      "count": 185,
+      "name": "Oman",
+      "slug": "oman",
+      "parent": 14
+    },
+    {
+      "id": 93,
+      "count": 1717,
+      "name": "Palestine",
+      "slug": "palestine",
+      "parent": 14
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 94,
+      "count": 291,
+      "name": "Qatar",
+      "slug": "qatar",
+      "parent": 14
+    },
+    {
+      "id": 19,
+      "count": 1052,
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "parent": 14
+    },
+    {
+      "id": 95,
+      "count": 1277,
+      "name": "Syria",
+      "slug": "syria",
+      "parent": 14
+    },
+    {
+      "id": 13,
+      "count": 678,
+      "name": "Tunisia",
+      "slug": "tunisia",
+      "parent": 14
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    },
+    {
+      "id": 96,
+      "count": 495,
+      "name": "United Arab Emirates",
+      "slug": "united-arab-emirates",
+      "parent": 14
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    },
+    {
+      "id": 771,
+      "count": 40,
+      "name": "Western Sahara",
+      "slug": "western-sahara",
+      "parent": 14
+    },
+    {
+      "id": 97,
+      "count": 362,
+      "name": "Yemen",
+      "slug": "yemen",
+      "parent": 14
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-725146-b00001",
+      "text": "Seventeen human rights organizations from the Middle East and North Africa region issued a joint statement on Thursday to Facebook and Twitter, denouncing social media platforms’ shushing of dissent voices by pulling down their accounts.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 237,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00002",
+      "text": "The letter, in which Global Voices is a signatory, marked the 10th anniversary of the so-called Arab Spring, which began in Tunisia and rippled across the region. Over the past decade, activists and peaceful protesters have heavily relied on social media to expose corruption and police brutality in their countries, as well as to organize mass demonstrations that tore down long-time dictatorships and disrupted others. During the uprisings that swept across the region, social media was used so heavily to organize and communicate that the period was nicknamed “Facebook revolutions.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 239,
+      "body_end": 825,
+      "source_links": [
+        "https://www.accessnow.org/facebook-twitter-youtube-stop-silencing-critical-voices-mena/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00003",
+      "text": "As freedoms and rights have diminished in many countries throughout the region in recent years, social media platforms remain a rare window of respite for voices of dissent. However, the group of signatories noted, Twitter and Facebook have targeted activists and opposition users.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 827,
+      "body_end": 1108,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00004",
+      "text": "“As we mark the 10th anniversary of the Arab Spring, we, the undersigned activists, journalists, and human rights organizations, have come together to voice our frustration and dismay at how platform policies and content moderation procedures all too often lead to the silencing and erasure of critical voices from marginalized and oppressed communities across the Middle East and North Africa,” wrote the signatories.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1110,
+      "body_end": 1528,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00005",
+      "text": "The statement added:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1530,
+      "body_end": 1550,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00006",
+      "text": "> Arbitrary and nontransparent account suspension and removal of political and dissenting speech has become so frequent and systematic that they cannot be dismissed as isolated incidents or the result of transitory errors in automated decision-making.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1552,
+      "body_end": 1803,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725146-b00007",
+      "text": "Along with Global Voices, endorsers of the open letter included parties from across the MENA region, including Access Now, Arabic Network for Human Rights Information (ANHRI), Article 19, 7amleh, Daarb bees website, Tahrir Institute for Middle East Policy (TIMEP), Gulf Centre for Human Rights, and other leading human rights organizations and journalists.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1805,
+      "body_end": 2161,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00008",
+      "text": "Listing a series of incidents in which activists and journalists in the region have had their accounts unplugged by Facebook and Twitter in Tunisia, Syria, Palestine and Egypt, the letter stated that “examples such as these are far too numerous, and they contribute to the widely shared perception among activists and users in MENA and the Global South that these platforms do not care about them and often fail to protect human rights defenders when concerns are raised.”",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2163,
+      "body_end": 2635,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00009",
+      "text": "The statement also noted that the two popular social media platforms, Facebook and Twitter, often rush to respond to public outcry from Western activists or private advocacy by human rights organizations, while advocates in the MENA region are mostly ignored, with end-users being “frequently not informed of which rule they violated, and are not provided a means to appeal to a human moderator.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2637,
+      "body_end": 3033,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00010",
+      "text": "The letter further said:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3035,
+      "body_end": 3059,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00011",
+      "text": "> Remedy and redress should not be a privilege reserved for those who have access to power or can make their voices heard. The status quo cannot continue.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3061,
+      "body_end": 3215,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725146-b00012",
+      "text": "Urging Facebook and Twitter not to “be complicit in censorship and erasure of oppressed communities’ narratives and histories,” human rights groups called on the two giant social media platforms to follow four main measures to address raised concerns in a region they described as having “one of the world’s worst records on freedom of expression.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3217,
+      "body_end": 3565,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00013",
+      "text": "The measures put forth by the human rights defenders include that Facebook and Twitter do not engage in arbitrary or unfair discrimination, by actively engage with local users, activists, human rights experts, academics, and civil society from the MENA region to review grievances, as well as rely on necessary local and regional expertise in order to develop and implement context-based content moderation decisions that are aligned with human rights frameworks in the MENA region.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3567,
+      "body_end": 4049,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00014",
+      "text": "The letter also called on platforms to “pay special attention to cases arising from war and conflict zones to ensure content moderation decisions do not unfairly target marginalized communities,” and to offer greater transparency than public apologies for technical errors that persist as “erroneous content moderation decisions.”",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4051,
+      "body_end": 4381,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725146-b00015",
+      "text": "At the time of writing, Twitter and Facebook have not responded to the letter.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4383,
+      "body_end": 4461,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "61e48fc094a73a0ea2eb40d1d798c906fc11bcd48a1b910717adc31fd56eaaca",
+  "word_count": 685,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 4461,
+  "retrieved_at": "2026-11-16T22:28:48.920287+00:00",
+  "raw_html_sha256": "f7075277dda8bd608c2dc0178700aff0131254fcb9cbf23290ffc46bcd4341f2",
+  "resolved_source_url": "https://globalvoices.org/2020/12/20/stop-silencing-mena-critical-voices-say-activists-in-open-letter-to-twitter-and-facebook/",
+  "canonical_url": "https://globalvoices.org/2020/12/20/stop-silencing-mena-critical-voices-say-activists-in-open-letter-to-twitter-and-facebook/",
+  "source_bytes": 190647,
+  "authors": [
+    {
+      "name": "Dahlia Kholaif",
+      "url": "https://globalvoices.org/author/dahlia-kholaif/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 725146,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "f7075277dda8bd608c2dc0178700aff0131254fcb9cbf23290ffc46bcd4341f2",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-9cf91efa4a77e794f64e",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-12",
+    "eligible_month_documents": 69,
+    "selected_month_documents": 58,
+    "inclusion_probability": 0.8405797101449275,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Dahlia Kholaif",
+  "body_start": 517,
+  "body_end": 4978,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "ba12727c6572f6b3108fd25ee6c85fabee1d80d86f16907b9a6ecd53f976ab38",
+  "text_path": "articles/gv-725146.txt",
+  "metadata_path": "metadata/gv-725146.json",
+  "attribution": "This story by Dahlia Kholaif originally appeared on Global Voices. https://globalvoices.org/2020/12/20/stop-silencing-mena-critical-voices-say-activists-in-open-letter-to-twitter-and-facebook/",
+  "content_sha256": "e276ec5fbeb0e386a2e4e9e00fdaa96597d47ffbcc1c5e8f239b8a512b618a2e",
+  "source_sha256": "f7075277dda8bd608c2dc0178700aff0131254fcb9cbf23290ffc46bcd4341f2",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,649 @@
+{
+  "id": "gv-792225",
+  "publisher_id": 792225,
+  "source_id": "globalvoices:792225",
+  "source_url": "https://globalvoices.org/2023/07/11/the-caribbean-community-marks-its-golden-jubilee-with-a-promise-of-free-movement-for-regional-nationals/",
+  "title": "The Caribbean Community marks its golden jubilee with a promise of free movement for regional nationals",
+  "published_at": "2023-07-11T14:04:27Z",
+  "modified_at": "2023-07-11T20:58:49Z",
+  "api_author_id": 306,
+  "api_content_sha256": "0cad102510433345e018796ba30b8efc0857f67efaefadb8ed791c187d08e44c",
+  "api_response_sha256": "da6b3b0f7e68a5a41f538581a74d7b3c95ab51f06e761611226b463e0f01ea4e",
+  "api_retrieved_at": "2026-11-16T22:20:54.683859+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 158,
+      "count": 180,
+      "name": "Anguilla",
+      "slug": "anguilla",
+      "parent": 1353
+    },
+    {
+      "id": 159,
+      "count": 217,
+      "name": "Antigua and Barbuda",
+      "slug": "antigua-and-barbuda",
+      "parent": 1353
+    },
+    {
+      "id": 161,
+      "count": 734,
+      "name": "Bahamas",
+      "slug": "bahamas",
+      "parent": 1353
+    },
+    {
+      "id": 162,
+      "count": 1351,
+      "name": "Barbados",
+      "slug": "barbados",
+      "parent": 1353
+    },
+    {
+      "id": 163,
+      "count": 237,
+      "name": "Belize",
+      "slug": "belize",
+      "parent": 1353
+    },
+    {
+      "id": 164,
+      "count": 660,
+      "name": "Bermuda",
+      "slug": "bermuda",
+      "parent": 1353
+    },
+    {
+      "id": 165,
+      "count": 90,
+      "name": "British Virgin Islands",
+      "slug": "british-virgin-islands",
+      "parent": 1353
+    },
+    {
+      "id": 1353,
+      "count": 10223,
+      "name": "Caribbean",
+      "slug": "caribbean",
+      "parent": 219
+    },
+    {
+      "id": 166,
+      "count": 176,
+      "name": "Cayman Islands",
+      "slug": "cayman-islands",
+      "parent": 1353
+    },
+    {
+      "id": 243,
+      "count": 6007,
+      "name": "Development",
+      "slug": "development",
+      "parent": 238
+    },
+    {
+      "id": 169,
+      "count": 359,
+      "name": "Dominica",
+      "slug": "dominica",
+      "parent": 1353
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 172,
+      "count": 290,
+      "name": "Grenada",
+      "slug": "grenada",
+      "parent": 1353
+    },
+    {
+      "id": 152,
+      "count": 980,
+      "name": "Guyana",
+      "slug": "guyana",
+      "parent": 1353
+    },
+    {
+      "id": 174,
+      "count": 1102,
+      "name": "Haiti",
+      "slug": "haiti",
+      "parent": 1353
+    },
+    {
+      "id": 258,
+      "count": 8694,
+      "name": "History",
+      "slug": "history",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 176,
+      "count": 2263,
+      "name": "Jamaica",
+      "slug": "jamaica",
+      "parent": 1353
+    },
+    {
+      "id": 231,
+      "count": 93,
+      "name": "Montserrat",
+      "slug": "montserrat",
+      "parent": 1353
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 182,
+      "count": 316,
+      "name": "Saint Lucia",
+      "slug": "saint-lucia",
+      "parent": 1353
+    },
+    {
+      "id": 183,
+      "count": 431,
+      "name": "St. Vincent &amp; the Grenadines",
+      "slug": "st-vincent-the-grenadines",
+      "parent": 1353
+    },
+    {
+      "id": 181,
+      "count": 156,
+      "name": "St.Kitts &amp; Nevis",
+      "slug": "stkitts-nevis",
+      "parent": 1353
+    },
+    {
+      "id": 155,
+      "count": 172,
+      "name": "Suriname",
+      "slug": "suriname",
+      "parent": 1353
+    },
+    {
+      "id": 184,
+      "count": 3312,
+      "name": "Trinidad &amp; Tobago",
+      "slug": "trinidad-tobago",
+      "parent": 1353
+    },
+    {
+      "id": 185,
+      "count": 96,
+      "name": "Turks &amp; Caicos Isl.",
+      "slug": "turks-caicos-isl",
+      "parent": 1353
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-792225-b00001",
+      "text": "From July 3-5, regional leaders met in Port of Spain, Trinidad, for the 45th Regular Meeting of Caribbean Community (CARICOM) Heads of Government. The occasion also marked the 50th anniversary of the signing of the Treaty of Chaguaramas on July 4, 1973, which established the regional body with signatories that were limited to Barbados, Guyana, Jamaica, and Trinidad and Tobago. Since then, CARICOM has evolved into a diverse political and economic grouping of 15 member states (which include French-speaking Haiti and Dutch-speaking Suriname) and five associate member states.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 578,
+      "source_links": [
+        "https://caricom.org/member-states-and-associate-members/",
+        "https://en.wikipedia.org/wiki/Treaty_of_Chaguaramas",
+        "https://www.csmeonline.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00002",
+      "text": "In the lead-up to independence from Britain, the idea of a West Indian Federation was short-lived, but at the opening of this year's meeting, Trinidad and Tobago's prime minister, Keith Rowley, said that the regional integration movement had not only survived but also “thrived, expanded and flourished.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 580,
+      "body_end": 884,
+      "source_links": [
+        "https://caribbean.loopnews.com/content/caricom-marks-50th-anniversary-leaders-hail-integration-movement?utm_source=substack&utm_medium=email",
+        "https://en.wikipedia.org/wiki/West_Indies_Federation"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00003",
+      "text": "It is a view that was echoed by Antigua-Barbudan diplomat Sir Ronald Sanders, who believes that for all its shortcomings with regard to the “deep and meaningful integration that was envisioned […] the fact that CARICOM’s framework continues to exist is a testament to the enduring belief in the benefits of regional integration.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 886,
+      "body_end": 1215,
+      "source_links": [
+        "https://www.kaieteurnewsonline.com/2023/07/02/caricom-at-50-there-is-still-hope/?utm_source=substack&utm_medium=email"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00004",
+      "text": "This is not to say that CARICOM's failings have not had their price. There has been criticism that the bloc has not been outspoken enough when it comes to the challenges facing Haiti, and limited integration has weakened its influence when it comes to applying the requisite pressure regarding issues like the climate crisis, violent crime, and access to development funding, despite UN Secretary-General António Guterres praising CARICOM's economic and social development and progress in combating the infiltration of illegal drugs and arms, among other things.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1217,
+      "body_end": 1779,
+      "source_links": [
+        "https://globalvoices.org/2021/07/22/caricom-bristles-at-international-communitys-slight-as-haiti-installs-a-new-prime-minister/",
+        "https://news.un.org/en/story/2023/07/1138327?utm_source=substack&utm_medium=email",
+        "https://www.kaieteurnewsonline.com/2023/07/02/caricom-at-50-there-is-still-hope/?utm_source=substack&utm_medium=email",
+        "https://www.wlrn.org/news/2021-06-22/pressure-builds-for-caricom-to-step-in-as-haitis-political-crisis-worsens"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00005",
+      "text": "Attendees also focused on the regional coordination needed ahead of COP28 and regional food security, with ongoing efforts to reduce food imports by 25 percent by 2025.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1781,
+      "body_end": 1949,
+      "source_links": [
+        "https://www.cop28.com/en/",
+        "https://www.facebook.com/drkeithrowley/posts/pfbid02LVj1fj8Gkfu35ub9rBxpDopnn8DEkwXpiUH9RdFe9tpDGabPcuEeEfzb6MgzfiwFl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00006",
+      "text": "The most progressive decision to come out of the meeting, however, was free movement for all Caribbean people within the region. The current chair of CARICOM and Prime Minister of Dominica Roosevelt Skerrit explained:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1951,
+      "body_end": 2168,
+      "source_links": [
+        "https://caricom.org/free-movement-for-all-people-caricom-heads-decide-at-historic-meeting/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00007",
+      "text": "> We believe that this is a fundamental part of the integration architecture, and at 50, we could not leave Trinidad and Tobago and not speak about the core of the regional integration movement — that is, people’s ability to move freely within the Caribbean Community. [W]e hope to see that it is implemented by March 30, 2024.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2170,
+      "body_end": 2497,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-792225-b00008",
+      "text": "This new measure — which does not extend to Haiti, given the country's current sociopolitical crisis — goes well beyond the current arrangement that allows for the free movement of agreed categories of skilled nationals under the CARICOM Single Market and Economy.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2499,
+      "body_end": 2763,
+      "source_links": [
+        "https://caricom.org/projects/caricom-single-market-and-economy/",
+        "https://www.facebook.com/andre.e.simpson/posts/pfbid0N5MTJzFM65AWHDH1WjWpUHLms6JgRR498N2H8pRLMYQ7mNBV2BXHPVdVozXkQw69l"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00009",
+      "text": "Skerrit added:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2765,
+      "body_end": 2779,
+      "source_links": [
+        "https://caricom.org/free-movement-for-all-people-caricom-heads-decide-at-historic-meeting/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00010",
+      "text": "> I believe the founding fathers are smiling from heaven that the present generation of leaders were bold enough to be able to arrive at the decision going forward.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2781,
+      "body_end": 2945,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-792225-b00011",
+      "text": "CARICOM also plans to institute contingent rights that include education, access to primary and emergency health care, and affordable intra-regional travel, which has been a real obstacle in terms of the regional community being able to support neighbouring economies.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2947,
+      "body_end": 3215,
+      "source_links": [
+        "https://jamaica-gleaner.com/article/news/20221009/caribbean-stunted-absence-intra-regional-travel",
+        "https://trinidadexpress.com/opinion/columnists/an-idea-whose-time-has-come/article_f3b8ecfa-1c5a-11ee-b25b-8f34274902cb.html",
+        "https://www.facebook.com/permalink.php?story_fbid=pfbid024qXwhaPaGtwLWLJ3KE1VcCd8o9F5t4fzJpkaVUtqU4sUN3p9CVikSJfLmRiB2fwXl&id=100014338894722"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00012",
+      "text": "Prime Minister of Barbados Mia Mottley, who holds responsibility for the CSME, noted that the measure embodies what “every Caribbean citizen has wanted since we’ve had control of our destiny”:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3217,
+      "body_end": 3409,
+      "source_links": [
+        "https://caricom.org/free-movement-for-all-people-caricom-heads-decide-at-historic-meeting/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00013",
+      "text": "> This is what ordinary people want […]in a Region that is under-populated [and] facing the most difficult crises — from climate, to recovery from pandemic, to debt, to all kinds of other problems — if ever there was a time that we need to come together as one, it is now.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3411,
+      "body_end": 3683,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-792225-b00014",
+      "text": "Facebook user Alista Bishop summed up the predominant reaction of Caribbean nationals in one word:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3685,
+      "body_end": 3783,
+      "source_links": [
+        "https://www.facebook.com/alista.bishop.1/posts/pfbid03ha8X9nm8RvLBfvVKXyeFXdRsKUMCCe7yambJ9KGBsLHghG3cUBDKRYTTJiL2WyMl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00015",
+      "text": "> Finally!",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3785,
+      "body_end": 3795,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-792225-b00016",
+      "text": "Some, however, had their reservations. One concern was that oil-rich countries like Guyana will be inundated with people from other regional territories. One netizen, in asking whether or not the move would allow people to change their residency and citizenship status, wondered whether CARICOM could be “setting the stage for voter padding.” There is no current evidence to suggest that the free movement of Caribbean nationals within the region will have any impact on citizenship, which is a separate process altogether.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3797,
+      "body_end": 4320,
+      "source_links": [
+        "https://globalvoices.org/2016/07/02/exxonmobils-significant-oil-find-off-guyana-leads-to-questions-about-the-countrys-future/",
+        "https://www.facebook.com/William.Ramnarace/posts/pfbid0yCzhgN6LcDihoSRzezL1mJBS627i1c4uxptbFrGyVUZUCvdBFGsXbApn2p2A4bHhl",
+        "https://www.facebook.com/gareth.rampersad/posts/pfbid0235y8Frr53vHqT9SgWMAPKhAv4cL3nfGtyBxguPSg2X2iBBJQgVNtwqe1PRradWXUl",
+        "https://www.facebook.com/luis.a.kumar/posts/pfbid02ownnCDenXVH7JSFQwgwpPZEhowS95HHmUxYL7FAQJK32XuGh8bncXXFxy4LJeDaLl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00017",
+      "text": "From Anguilla, Bernard Wattley felt that the decision required a consultative process:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4322,
+      "body_end": 4408,
+      "source_links": [
+        "https://www.facebook.com/bernard.wattley/posts/pfbid0Mb4uAVmie7pQpRGVQEAeuyhyK8nmMaoc79xkq6cET5Q7xzu66wc7ax1Rd3x7crsSl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00018",
+      "text": "> To my mind, widespread consultation needs to precede major decisions that will impact the people, same for individual member countries. Leaders must not attempt to make decisions on their own, regardless of how good these decisions appear to be. […] How I wish CARICOM could move on from being a regional talk shop to more meaningful engagement with the people of the region.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4410,
+      "body_end": 4787,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-792225-b00019",
+      "text": "Ella Drummond-Hoyos, while acknowledging that “progress has been made” during the 50 years of CARICOM's existence, noted that the people of the region feel it is not enough:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4789,
+      "body_end": 4962,
+      "source_links": [
+        "https://www.facebook.com/ella.hoyos/posts/pfbid0Fbfsu3bjLYfaa4JsyNszc5zcRThkj4fffYB425yE7pbuYdAh3sHciJcqN35pw5wQl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00020",
+      "text": "> For while the people have forced the boundaries and forged an integration movement, the formal regional mechanisms always seem to be playing catchup!",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4964,
+      "body_end": 5115,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-792225-b00021",
+      "text": "Columnist Vaneisa Baksh, writing at Wired 868, took a more conservative view, saying, “Even when you support the idea of Caricom, it is hard to buy in to what it has turned out to be in its 50 years of existence”:",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5117,
+      "body_end": 5330,
+      "source_links": [
+        "https://wired868.com/2023/07/08/vaneisa-hard-not-to-be-cynical-about-caricom/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00022",
+      "text": "> The intervening years have made cynics of most of us who have watched it doddering along—constantly hijacked by egos, inertia and incompetence, to the point where it has become ­synonymous with the underdevelopment of the region.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5332,
+      "body_end": 5563,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-792225-b00023",
+      "text": "Of the Port of Spain meeting, Baksh “saw little to convince [her] that the mentalities have sufficiently changed.” Certain aspects of the gathering — the time capsule, the concert, both of which she felt were out of touch — “sent discouraging signals amidst the trumpets of hope”:",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5565,
+      "body_end": 5845,
+      "source_links": [
+        "https://caricom.org/communique-forty-fifth-regular-meeting-of-the-conference-of-heads-of-government-of-caricom-trinidad-and-tobago-3-5-july-2023/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00024",
+      "text": "> This is not the Caribbean we live in, and if this is the outdated version the anniversary planners believe us to still be, then I cannot harbour hope that they can guide us to the future we need.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5847,
+      "body_end": 6044,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-792225-b00025",
+      "text": "Part of the solution, she believes, is to engage youth and strive for better communication about what is being done with regard to pressing issues like health, security, and climate finance.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6046,
+      "body_end": 6236,
+      "source_links": [
+        "https://wired868.com/2023/07/08/vaneisa-hard-not-to-be-cynical-about-caricom/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00026",
+      "text": "Despite all these hurdles, however, Drummond-Hoyos remains “a believer in Caricom”:",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6238,
+      "body_end": 6321,
+      "source_links": [
+        "https://www.facebook.com/ella.hoyos/posts/pfbid0Fbfsu3bjLYfaa4JsyNszc5zcRThkj4fffYB425yE7pbuYdAh3sHciJcqN35pw5wQl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792225-b00027",
+      "text": "> I believe that in my lifetime full integration will be achieved. I believe with access to some reparation funds our leaders will be finally able to assure affordable and hassle free regional travel; easy movement of cargo; a single currency to support the the single market and economy; accelerated paths and opportunities for regional exports; a fortified a more integrated UWI; world leading regional Climate Change Centre; proactive Disaster management and Recovery; regional health research and treatment centre; regional public media centre; regional agricultural agency to ensure we keep feeding our people real food from farm to table; regional incubators for sports, performing and visual arts and entrepreneurship. Oh my dreams for our little region are as vivid as ever!",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6323,
+      "body_end": 7105,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-792225-b00028",
+      "text": "Dreams that may well begin to be realised by the free movement of the people who can bring those dreams to life.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7107,
+      "body_end": 7219,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "204fb145ee84999de56c418a011799cfa1526ebcabe35fa9b63299da699bf200",
+  "word_count": 1162,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7219,
+  "retrieved_at": "2026-11-16T22:39:59.828843+00:00",
+  "raw_html_sha256": "32b31ae82efe785fbc219a9e35e4d0462e96b138fb2fdb523ca9f7f5818d11ea",
+  "resolved_source_url": "https://globalvoices.org/2023/07/11/the-caribbean-community-marks-its-golden-jubilee-with-a-promise-of-free-movement-for-regional-nationals/",
+  "canonical_url": "https://globalvoices.org/2023/07/11/the-caribbean-community-marks-its-golden-jubilee-with-a-promise-of-free-movement-for-regional-nationals/",
+  "source_bytes": 194584,
+  "authors": [
+    {
+      "name": "Janine Mendes-Franco",
+      "url": "https://globalvoices.org/author/janine-mendes-franco/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 792225,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "32b31ae82efe785fbc219a9e35e4d0462e96b138fb2fdb523ca9f7f5818d11ea",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-229d48d835338013a8f7",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-07",
+    "eligible_month_documents": 89,
+    "selected_month_documents": 74,
+    "inclusion_probability": 0.8314606741573034,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Janine Mendes-Franco",
+  "body_start": 550,
+  "body_end": 7769,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "edaff902f157db03b324fa041cd35d0ead29b342e80aa163266a9df62cd8c9c5",
+  "text_path": "articles/gv-792225.txt",
+  "metadata_path": "metadata/gv-792225.json",
+  "attribution": "This story by Janine Mendes-Franco originally appeared on Global Voices. https://globalvoices.org/2023/07/11/the-caribbean-community-marks-its-golden-jubilee-with-a-promise-of-free-movement-for-regional-nationals/",
+  "content_sha256": "80bf93a89432fd3db6624f514f1d325d9e03bf06925df676856d6dc68528ced8",
+  "source_sha256": "32b31ae82efe785fbc219a9e35e4d0462e96b138fb2fdb523ca9f7f5818d11ea",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

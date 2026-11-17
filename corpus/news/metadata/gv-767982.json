@@ -1,0 +1,393 @@
+{
+  "id": "gv-767982",
+  "publisher_id": 767982,
+  "source_id": "globalvoices:767982",
+  "source_url": "https://globalvoices.org/2022/08/02/how-the-government-in-sudan-legalized-internet-categorizing-and-content-filtering/",
+  "title": "How the government in Sudan legalized internet categorizing and content filtering",
+  "published_at": "2022-08-02T08:10:53Z",
+  "modified_at": "2022-08-02T08:33:24Z",
+  "api_author_id": 1591,
+  "api_content_sha256": "4625f7850344d1f9e04d66802ac243bf91c7e7ac96fc9d6da3cc0a74f7e1ae5e",
+  "api_response_sha256": "08b3517ae10ada9fc287561a5a5d06549f4a3614acf67915ee99ce779e1c37fe",
+  "api_retrieved_at": "2026-11-16T22:20:46.276788+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 141,
+      "count": 611,
+      "name": "Sudan",
+      "slug": "sudan",
+      "parent": 15
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-767982-b00001",
+      "text": "The internet has been shut down multiple times in Sudan since 2018 in the aftermath of the revolution. Social media shutdowns have also become common since the government blocked YouTube during the 2010 elections after a video showing election fraud was uploaded there. The Sudanese authorities blocked access to many social media platforms such as Facebook, Twitter, WhatsApp, and Instagram to prevent people from sharing information about the protests that culminated in the ouster of the former president, Omer Al Bashir in 2019. The authorities did not provide a reason for this social media shutdown.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 605,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Sudanese_Revolution",
+        "https://sudantribune.com/article34622/",
+        "https://www.accessnow.org/amid-countrywide-protest-sudan-shuts-down-social-media-on-mobile-networks/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00002",
+      "text": "Most internet shutdowns in Sudan involve turning off mobile data. During shutdowns, people can access the internet through fixed line internet connections, which are rare except among corporations. Even after the internet was restored in July 2019 and November 2021, social media platforms were not accessible and people were forced to use VPNs to access them.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 607,
+      "body_end": 967,
+      "source_links": [
+        "https://blog.cloudflare.com/sudan-internet-back-25-days/",
+        "https://reliefweb.int/report/sudan/sudan-s-mobile-internet-restored-after-power-sharing-deal",
+        "https://www.accessnow.org/update-internet-shutdown-sudan/",
+        "https://www.dabangasudan.org/en/all-news/article/social-media-still-blocked-in-sudan"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00003",
+      "text": "Usually, citizens have no warning about a coming shutdown. One minute their mobile data is working, and the next minute it's gone. The government has announced its intention to shut down the internet only twice in the two years it has been happening, both times during the secondary school exam. The telcos sent SMSes to subscribers saying:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 969,
+      "body_end": 1309,
+      "source_links": [
+        "https://smex.org/noexamshutdown-4-mena-countries-shut-down-the-internet-so-far-to-fight-cheating/",
+        "https://twitter.com/alkangr/status/1405958496831614982"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00004",
+      "text": "> “Under the direction of the judicial authorities, the internet will be cut daily during the Sudanese certificate exam sessions from 8 am until the end of the session at 11 am.”",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1311,
+      "body_end": 1489,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-767982-b00005",
+      "text": "The message didn’t specify the law under which the authorities took this decision.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1491,
+      "body_end": 1573,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00006",
+      "text": "Shutdowns and internet disruptions are not unusual in Sudan. The government shut down mobile data many times in 2020 and 2021 during tribal conflicts, high school exams, and the coup d’état of October 25, 2021 led by the Commander in Chief of the army, Lt. Gen. Burhan. The law is a major tool for enabling these shutdowns as the government relies on the Armed Forces Law, the Public Safety law, and the law of the Telecommunication and Post Regulation Authority (TPRA) to give them this power.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1575,
+      "body_end": 2069,
+      "source_links": [
+        "http://tpra.gov.sd/wp-content/uploads/2018/06/Telecommunications-and-Postal-Regulation-Act.pdf",
+        "https://arabic.hudocentre.org/%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%B7%D9%88%D8%A7%D8%B1%D8%A6-%D9%88%D8%AD%D9%85%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9-%D9%84/#:~:text=%D9%8A%D8%B3%D9%85%D9%89%20%D9%87%D8%B0%D8%A7%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%20%22%20%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B7%D9%88%D8%A7%D8%B1%D8%A6,3%20%2D%20%D8%AA%D9%81%D8%B3%D9%8A%D8%B1.",
+        "https://www.accessnow.org/internet-shutdowns-in-algeria-and-sudan-damaging-practices-during-exceptional-circumstances/",
+        "https://www.accessnow.org/update-internet-shutdown-sudan/",
+        "https://www.dabangasudan.org/en/all-news/article/precautionary-mobile-internet-slowdown-in-sudan-s-kassala#:~:text=Mobile%20internet%20services%20were%20suspended,claimed%20eight%20lives%20last%20week.",
+        "https://www.mohamah.net/law/%D9%86%D8%B5%D9%88%D8%B5-%D9%88-%D9%85%D9%88%D8%A7%D8%AF-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D8%AD%D8%A9-%D8%A7%D9%84%D8%B3%D9%88%D8%AF/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00007",
+      "text": "Even so, Sudan has regulations to protect the accessibility of web content. One regulation was issued by the TPRA in 2020 and ratified by the Member of the Sovereign Council General Ibrahim Jaber because at that time, the telecommunications sector was under the umbrella of the military. Jaber is also the chairman of the board of directors of Sudatel group, the national telecommunication operator that also operates in countries other than Sudan, such as Mauritania and Senegal.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2071,
+      "body_end": 2551,
+      "source_links": [
+        "https://tpra.gov.sd/wp-content/uploads/2021/01/%D9%84%D8%A7%D8%A6%D8%AD%D8%A9-%D8%AA%D8%B1%D8%B4%D9%8A%D8%AD-%D9%88%D8%AD%D8%AC%D8%A8-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D9%88%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%B4%D8%A8%D9%83%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D9%84%D8%B3%D9%86%D8%A9-2020%D9%85.pdf",
+        "https://www.sudatel.sd/investor-relations/governance/board-of-directors/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00008",
+      "text": "The regulation is called “The 2020 regulation on content filtering and website blockage on the internet.“ It was issued according to article 88 (1) of the TPRA law of 2018 which enables the TPRA council to create regulations to execute the law. The regulation obliged TPRA to give telcos a list of URLs to block and filter, and to “daily monitor” the filtering equipment to verify that it is being updated.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2553,
+      "body_end": 2959,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00009",
+      "text": "The regulation obliged ISPs and operators to provide an “immediate response” to blocking requests that came from the TPRA and ignore any requests from any other entity without a judicial order. Consequently, the authority gave itself the right to block websites without judicial order while requiring others to go to court. Also, the regulation obliged ISPs and telcos to give it access to the Graphical User Interface (GUI) of the filtering systems, providing statistics and periodic reports about the filtered websites and pages.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2961,
+      "body_end": 3492,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00010",
+      "text": "Vague terms such as “belief” have been used to justify this blocking. Article 14 of the regulation of filtering and blocking the web content said: “Telecom companies are obligated to provide the technical systems necessary to protect their networks and services from use contrary to belief and public morals. While adhering to the controls, procedures, and requirements for filtering and blocking determined by the authority.” The regulation didn’t define “belief”: is it the Islamic belief or is it related to another religion or ideology?",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3494,
+      "body_end": 4034,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00011",
+      "text": "The regulation classified the lists of blocking and filtering into two types: local and commercial. It defined the commercial list as: “List of classifications that come within the filtering and blocking systems from the system supplier, which contains the international classifications of filter lists,” while it defined the local list as: “An internal list prepared by the authority by adding the sites classified by the authority or received by users after reviewing them and making sure that they contain prohibited materials.”",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4036,
+      "body_end": 4567,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00012",
+      "text": "The commercial list contains 13 categories that are “chosen to be blocked.” These categories include websites about drugs, alcohol, tobacco websites, child pornography, making weapons, malware, and spam. The list also contains vague categories like “ sites offensive to religion and calling for atheism,” refusing to respect the freedom of belief by classing atheism as an untouchable activity.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4569,
+      "body_end": 4963,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00013",
+      "text": "The list, surprisingly, classifies VPN sites as not allowed. It also blocks Peer-to-Peer websites such as BitTorrent. These two classes can be considered indicators of the authorities’ intention to monitor the online behavior of users.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4965,
+      "body_end": 5200,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00014",
+      "text": "The regulation gave the authorities the right to add new categories freely, by naming the last category on the commercial list as “any other classification which is classified by the authority,” opening up a huge space to lawfully block any access to web content.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5202,
+      "body_end": 5465,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00015",
+      "text": "Sudan has signed and ratified the International Covenant on Civil and Political Rights (ICCPR), and the International Covenant on Economic, Social, and Cultural Rights (ICESCR). Also, Sudan is a signatory to the African Charter on Human and People’s Rights (ACHPR) and has ratified the law, which guarantees the right to freedom of assembly, freedom of expression, and the right to receive information.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5467,
+      "body_end": 5869,
+      "source_links": [
+        "https://tbinternet.ohchr.org/_layouts/15/TreatyBodyExternal/Treaty.aspx?Treaty=CCPR&Lang=en",
+        "https://treaties.un.org/Pages/ViewDetails.aspx?src=IND&mtdsg_no=IV-3&chapter=4",
+        "https://www.achpr.org/ratificationtable?id=49"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00016",
+      "text": "Despite this ratification, Sudanese domestic law does not fit with international standards and does not guarantee the digital rights of its citizens.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5871,
+      "body_end": 6020,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767982-b00017",
+      "text": "Please visit the project page for more pieces from the Unfreedom Monitor.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6022,
+      "body_end": 6095,
+      "source_links": [
+        "https://advox.globalvoices.org/special/unfreedom-monitor/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "ba8615a28ef6d6556769388225ad43750619af34bf54e6083f3ce5695544ea22",
+  "word_count": 968,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 6095,
+  "retrieved_at": "2026-11-16T22:35:42.608041+00:00",
+  "raw_html_sha256": "52eb62e24b08c5572e512d775041903e4dd5649ad5db3cfa4ce8269c49f27623",
+  "resolved_source_url": "https://globalvoices.org/2022/08/02/how-the-government-in-sudan-legalized-internet-categorizing-and-content-filtering/",
+  "canonical_url": "https://globalvoices.org/2022/08/02/how-the-government-in-sudan-legalized-internet-categorizing-and-content-filtering/",
+  "source_bytes": 191046,
+  "authors": [
+    {
+      "name": "Advox",
+      "url": "https://globalvoices.org/author/advox/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 767982,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "52eb62e24b08c5572e512d775041903e4dd5649ad5db3cfa4ce8269c49f27623",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-6b6da6d8853929979d54",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-08",
+    "eligible_month_documents": 79,
+    "selected_month_documents": 66,
+    "inclusion_probability": 0.8354430379746836,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Advox",
+  "body_start": 491,
+  "body_end": 6586,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "2e460ed6fa0a86a4eddee06430f1401a87490fdff29850edb379a2e5326237b8",
+  "text_path": "articles/gv-767982.txt",
+  "metadata_path": "metadata/gv-767982.json",
+  "attribution": "This story by Advox originally appeared on Global Voices. https://globalvoices.org/2022/08/02/how-the-government-in-sudan-legalized-internet-categorizing-and-content-filtering/",
+  "content_sha256": "cc834548c5e6506bc1ba0462896d69b9c32a9e18f36a2c2ba78e2909f5073e50",
+  "source_sha256": "52eb62e24b08c5572e512d775041903e4dd5649ad5db3cfa4ce8269c49f27623",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

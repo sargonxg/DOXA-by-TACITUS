@@ -1,0 +1,376 @@
+{
+  "id": "gv-727938",
+  "publisher_id": 727938,
+  "source_id": "globalvoices:727938",
+  "source_url": "https://globalvoices.org/2021/02/04/protests-rock-istanbuls-most-prestigious-university-over-appointment-of-new-rector/",
+  "title": "Protests rock Istanbul's most prestigious university over appointment of new rector",
+  "published_at": "2021-02-04T12:58:03Z",
+  "modified_at": "2021-06-21T06:16:23Z",
+  "api_author_id": 799,
+  "api_content_sha256": "484f683ece28c356162982e84d985b4f2c7088054b3415df5d6205a3c5c9cc24",
+  "api_response_sha256": "4b8a365e82fe2773a09c5a0e8bd4a9b7aa40c63d55bed83d1fb049dae4c0bf4c",
+  "api_retrieved_at": "2026-11-16T22:20:32.142391+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 247,
+      "count": 4731,
+      "name": "Education",
+      "slug": "education",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 1364,
+      "count": 1877,
+      "name": "LGBTQ+",
+      "slug": "gay-rights-lgbt",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-727938-b00001",
+      "text": "Istanbul's renowned Boğaziçi University has been swayed by mass protests since early January demanding the resignation of a new rector appointed by President's Recep Tayyip Erdoğan.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 181,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00002",
+      "text": "Rector Melih Bulu, who took office on January 1, has ties to the ruling Justice and Development Party (AKP), having contested parliamentary elections in 2015 with the bloc.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 183,
+      "body_end": 355,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00003",
+      "text": "In 2016, President Erdoğan secured the right to appoint universities’ rectors; previously, they were elected by the academic body.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 357,
+      "body_end": 487,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00004",
+      "text": "Boğaziçi's students see Bulu's appointment as another step in Turkey's democratic backslide and compare it to the replacement of over one hundred elected mayors with government appointees in recent years.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 489,
+      "body_end": 693,
+      "source_links": [
+        "https://www.al-monitor.com/pulse/originals/2018/03/turkey-becoming-land-of-trustees.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00005",
+      "text": "In addition to his ties to the ruling party, Bulu has also been criticized for his lack of qualifications. He has also been accused of plagiarism (he denied this).",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 695,
+      "body_end": 858,
+      "source_links": [
+        "https://scienceintegritydigest.com/2021/01/07/newly-appointed-bogazici-university-rector-accused-of-plagiarism/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00006",
+      "text": "The crackdown on the protests has been harsh and sweeping: Police have used pepper spray and rubber bullets to repress demonstrations in January. On February 1, it arrested none less than 159 Boğaziçi students for participating in the rallies. While all have been released over the course of the week, some have been sentenced to house arrest or released under judicial control.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 860,
+      "body_end": 1238,
+      "source_links": [
+        "https://bianet.org/english/education/237017-police-attack-students-with-pepper-gas-at-bogazici-university"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00007",
+      "text": "On February 2, the university witnessed more protests, with professors seen holding signs with the number 159:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1240,
+      "body_end": 1350,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00008",
+      "text": "Students’ fears that the new rector would curtail academic freedom turned out to be well-founded: One of Bulu's first order of business was to shut down the LGBTI+ Studies Candidate Club for organizing an art exhibition that featured a drawing of the Kaaba, a holy site for Muslims, with a rainbow flag attached to its corners. Two students were arrested last weekend in connection with the art event.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1352,
+      "body_end": 1753,
+      "source_links": [
+        "https://www.duvarenglish.com/detained-students-police-brutality-homophobia-how-turkish-govt-response-to-bogazici-protests-led-to-a-nightmarish-night-news-56092"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00009",
+      "text": "Turkey's religious affairs directorate, Diyanet, claimed students “disrespected religious values” with the drawing. And a tweet about the issue by Presidential Communications Director Fahrettin Altun attracted online criticism as it appeared to downplay the reasons for the protests:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1755,
+      "body_end": 2038,
+      "source_links": [
+        "https://www.duvarenglish.com/detained-students-police-brutality-homophobia-how-turkish-govt-response-to-bogazici-protests-led-to-a-nightmarish-night-news-56092"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00010",
+      "text": "> What motivated those who committed the crime of “blockading the Rector's Office” at Boğaziçi University is the decision below. As it can be seen, the university administration has taken a legitimate decision in the face of those trying to trample upon our sacred values. That is all.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2040,
+      "body_end": 2325,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-727938-b00011",
+      "text": "Also commenting on the rector's decision, Turkey's Interior Minister Suleyman Soylu called LGBTQ+ individuals “perverts” in a tweet that was subsequently flagged by the platform as “hateful content:”",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2327,
+      "body_end": 2526,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00012",
+      "text": "> Should we be lenient towards those LGBT perverts who insult the Kaaba? Of course not. Should we be lenient towards the LGBT perverts who attempted to occupy the rectorate building? Of course not. I have a message for those watching what is happening at Boğaziçi: Don't fall into the trap of those who have not one single achievement, who have become a toy in the hands of one agency, who are outdated, not even leftists politicians. Our expectations from you is scientific success. Our expectation from you is academic excellence. Our expectation from you is to prepare yourselves for Big and Strong Turkey.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2528,
+      "body_end": 3137,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-727938-b00013",
+      "text": "Bulu has so far refused to resign, stating that his appointment “met global standards”. AKP's spokesperson Omer Celik has also rushed to the rector's defense, saying “it is not a crime for a person to have a political view.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3139,
+      "body_end": 3363,
+      "source_links": [
+        "https://bianet.org/english/education/238656-bulu-says-he-doesn-t-think-of-resigning-thanks-soylu",
+        "https://www.dw.com/en/turkey-students-protest-against-erdogan-appointed-university-rector/a-56129129"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00014",
+      "text": "But in Erdoğan's Turkey, it may as well be the case. The president's persecution of academics is well documented: After the 2016 coup, thousands of professors were dismissed from their jobs after signing a petition calling for peace with Kurdish militants. Lawyers, rights defenders, journalists, and civil servants have also been arrested, detained, or targeted in recent years over their alleged ties to “terrorism.”",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3365,
+      "body_end": 3783,
+      "source_links": [
+        "https://www.nytimes.com/2019/07/24/magazine/the-era-of-people-like-you-is-over-how-turkey-purged-its-intellectuals.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00015",
+      "text": "Not surprisingly, Erdoğan himself told reporters that “terrorists” were involved in this year's protests.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3785,
+      "body_end": 3890,
+      "source_links": [
+        "https://www.dailysabah.com/turkey/education/president-erdogan-points-to-terrorism-links-in-row-over-bogazici-rector-in-turkey"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00016",
+      "text": "On January 8, some sixty Boğaziçi University alumni, including writers, artists, and other notable figures, signed a joint statement against the appointment of Bulu. “A rector appointed without a democratic process would harm the traditional values that Boğaziçi has represented for 150 years,” it reads.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3892,
+      "body_end": 4196,
+      "source_links": [
+        "https://bianet.org/english/education/237258-bogazici-alumni-academics-continue-to-protest-rector-appointed-by-erdogan"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00017",
+      "text": "Meanwhile, the university's academics released a separate statement saying this was the first time since the 1980 military coup that a rector was appointed from outside the university's ranks, without an internal election.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4198,
+      "body_end": 4420,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727938-b00018",
+      "text": "The protests at Boğaziçi University may be the most recent standoff between the secular society and the populist, authoritarian government seated in Ankara. But who will win in this power struggle remains to be seen. So far, Bulu is leading.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4422,
+      "body_end": 4663,
+      "source_links": [
+        "https://www.brookings.edu/blog/order-from-chaos/2021/01/15/a-new-assault-on-a-democratic-citadel-in-turkey-too/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "7b7f5d66215b7b7669790dc02c7ea1e22564eaaedb034dcf248bfb6f247a13fd",
+  "word_count": 732,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4663,
+  "retrieved_at": "2026-11-16T22:29:23.346322+00:00",
+  "raw_html_sha256": "997fe015cc4473a7822172ad2fe91d1a1375d8acca8ab518eebdf79093571c84",
+  "resolved_source_url": "https://globalvoices.org/2021/02/04/protests-rock-istanbuls-most-prestigious-university-over-appointment-of-new-rector/",
+  "canonical_url": "https://globalvoices.org/2021/02/04/protests-rock-istanbuls-most-prestigious-university-over-appointment-of-new-rector/",
+  "source_bytes": 187579,
+  "authors": [
+    {
+      "name": "Arzu Geybullayeva",
+      "url": "https://globalvoices.org/author/arzu-geybullayeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 727938,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "997fe015cc4473a7822172ad2fe91d1a1375d8acca8ab518eebdf79093571c84",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-7034a08a134bd5266300",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-02",
+    "eligible_month_documents": 78,
+    "selected_month_documents": 65,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Arzu Geybullayeva",
+  "body_start": 506,
+  "body_end": 5169,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "95aaac565812e2cc6bfc528d5a392804a9d931bda7f97726fd19cf5bd5b0c8ff",
+  "text_path": "articles/gv-727938.txt",
+  "metadata_path": "metadata/gv-727938.json",
+  "attribution": "This story by Arzu Geybullayeva originally appeared on Global Voices. https://globalvoices.org/2021/02/04/protests-rock-istanbuls-most-prestigious-university-over-appointment-of-new-rector/",
+  "content_sha256": "f5cf6cbfc21a3924b864194f371e6d66b3ec07b5d49ee85dc0bb327683330500",
+  "source_sha256": "997fe015cc4473a7822172ad2fe91d1a1375d8acca8ab518eebdf79093571c84",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

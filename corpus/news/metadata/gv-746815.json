@@ -1,0 +1,446 @@
+{
+  "id": "gv-746815",
+  "publisher_id": 746815,
+  "source_id": "globalvoices:746815",
+  "source_url": "https://globalvoices.org/2021/10/07/kenyan-governments-use-of-surveillance-technologies-to-tackle-covid-19-raises-human-rights-concerns/",
+  "title": "Kenyan government’s use of surveillance technologies to tackle COVID-19 raises human rights concerns",
+  "published_at": "2021-10-07T18:41:49Z",
+  "modified_at": "2021-10-07T18:41:49Z",
+  "api_author_id": 2874,
+  "api_content_sha256": "cee0dfe6e9eeceabeb61d2c2192049b9ac5a8cc8e281ff729e6f5ab4c6e825ef",
+  "api_response_sha256": "57aeccf318ed89945a4bde065daec3d031dd424874648368349abe65f2de4209",
+  "api_retrieved_at": "2026-11-16T22:20:38.953094+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 18,
+      "count": 1766,
+      "name": "Kenya",
+      "slug": "kenya",
+      "parent": 15
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 143,
+      "count": 803,
+      "name": "Uganda",
+      "slug": "uganda",
+      "parent": 15
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-746815-b00001",
+      "text": "In August this year, misconfigured power apps from Microsoft led more than a thousand web apps to mistakenly expose 38 million records on the open internet, including data from a number of COVID-19 contact tracing platforms, vaccination sign-ups, job application portals, and employee databases. Many people's phone numbers and COVID-19 vaccination status were visible due to the leak.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 385,
+      "source_links": [
+        "https://www.wired.com/story/microsoft-power-apps-data-exposed/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00002",
+      "text": "This recent sensitive information exposure comes months after a joint report by Article 19, Kickanet and Pollicy revealed that in an effort to curb COVID-19, the Kenyan government used various contact tracing apps, digital surveillance technologies, and biometric technologies to track and trace citizens without regard for due process. The report further confirms that despite the heavy use of these technologies, there was limited impact or effectiveness in curbing the spread of the virus.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 387,
+      "body_end": 879,
+      "source_links": [
+        "https://www.article19.org/wp-content/uploads/2021/04/EAF-Surveillance-Report_Final-min.pdf",
+        "https://www.lawinsider.com/dictionary/surveillance-equipment#:~:text=Surveillance%20equipment%20means%20an%20electronic,similar%20information%20or%20communications%20specifically"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00003",
+      "text": "The government is using biometric technologies and CCTVs in public spaces for facial recognition; smartphones for call data, tapping, and geotagging; and contact tracing apps to help identify those who have come into contact with infected people. All the equipment was sourced or made locally like the coronavirus contact tracing app that was launched by the government to track passengers on public transportation.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 881,
+      "body_end": 1296,
+      "source_links": [
+        "https://www.sciencedirect.com/topics/computer-science/biometric-technology",
+        "https://www.standardmedia.co.ke/health/article/2001365263/app-uses-passenger-data-to-trace-virus-path"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00004",
+      "text": "However, some are concerned that the Kenyan government's efforts to curb infections are seriously infringing on citizens’ guaranteed human rights of privacy, data protection, freedom of expression, and access to information. Human and digital rights activists are concerned about the surveillance of public spaces using CCTV and biometric technologies, the use of telecommunications data to “track and trace” individuals, and the coronavirus contact tracing applications.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1298,
+      "body_end": 1769,
+      "source_links": [
+        "https://cipesa.org/2020/09/the-erosion-of-digital-rights-in-the-fight-against-covid-19-in-kenya/]",
+        "https://www.article19.org/covid-19-reduced-peoples-rights-in-kenya-and-uganda/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00005",
+      "text": "Mobile phone surveillance",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1771,
+      "body_end": 1796,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00006",
+      "text": "An April 2021 report by Article 19, Pollicy, and Kictanet revealed that Telecommunications data was used to track “mobile phones of people suspected of having COVID-19 as a way of enforcing a 14-day mandated isolation period” and anyone who entered Kenya who pledged to self-quarantine, in real-time. The giant telecom company, Safaricom procured phone information for the government. It is not the first time the government tapped Safaricom for a sensitive project, in 2021 they secured a contract for a 13.5 million US dollar police surveillance project.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1798,
+      "body_end": 2354,
+      "source_links": [
+        "https://www.businessdailyafrica.com/bd/corporate/companies/safaricom-sh1-5bn-for-police-cctv-contract-3386948"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00007",
+      "text": "The National Intelligence Service used phone data to track COVID-19 patients’ travels, according to the report by Article19 of East Africa. The patients were “not supposed to turn off their phones,” because breaking these official rules could lead to detention in government-run monitoring centers.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2356,
+      "body_end": 2654,
+      "source_links": [
+        "https://www.article19.org/covid-19-reduced-peoples-rights-in-kenya-and-uganda/",
+        "https://www.article19.org/regional-office/eastern-africa/",
+        "https://www.health.go.ke/wp-content/uploads/2020/06/Case-management-protocol-24_03_20-Draft-LA.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00008",
+      "text": "The report cites an incident from March 2020, in which a woman traveling from the United Kingdom to Kenya was monitored using her phone and taken to a government medical facility after going to work, indicating a violation of the self-quarantine mandate.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2656,
+      "body_end": 2910,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00009",
+      "text": "Before coronavirus apps were suggested, built, or utilized, the Kenyan government used telecommunications data to track and trace individuals through location and call data from smartphones. Neighboring Uganda also used national security and public health concerns to justify restricting privacy and data protection rights while ignoring due process, bypassing the internationally recognized three-part test of legality, necessity, and proportionality.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2912,
+      "body_end": 3364,
+      "source_links": [
+        "https://everyoneshallhavetheright.wordpress.com/3-part-test/",
+        "https://privacyinternational.org/sites/default/files/2017-10/track_capture_final.pdf.",
+        "https://www.article19.org/covid-19-reduced-peoples-rights-in-kenya-and-uganda/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00010",
+      "text": "Data protection laws",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3366,
+      "body_end": 3386,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00011",
+      "text": "Kenya's 2019 data protection legislation was supposed to offer a framework for the acquisition of personal data in a transparent and rights-respecting manner. However, throughout the first year of the pandemic, documented surveillance trends and unsupervised data collecting indicated two issues.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3388,
+      "body_end": 3684,
+      "source_links": [
+        "http://kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/2019/TheDataProtectionAct__No24of2019.pdf",
+        "https://www.article19.org/wp-content/uploads/2021/04/ADRF-Surveillance-Report-1.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00012",
+      "text": "For starters, the lack of independent oversight of these data protection rules led to a lack of enforcement and regulation implementation on data controllers and processors, including public health agencies. Second, the surveillance capabilities and practices of state and non-state actors were not limited or checked as a result of this oversight problem.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3686,
+      "body_end": 4042,
+      "source_links": [
+        "https://www.article19.org/wp-content/uploads/2021/04/ADRF-Surveillance-Report-1.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00013",
+      "text": "Governments have a duty to protect human rights at all times under international human rights law, while corporations have a general obligation to respect human rights in all circumstances.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4044,
+      "body_end": 4233,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00014",
+      "text": "Although international law allows for a temporary increase in special powers during the COVID-19 pandemic, the UN Special Rapporteur on Privacy warned in his July 2020 report to the UN Human Rights Council that several minimum requirements must first be met. These include legal safeguards that ensure “surveillance cannot be initiated until, or unless, such surveillance is shown to an independent and competent body that such surveillance is legal, necessary, and proportionate to the aim pursued.”",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4235,
+      "body_end": 4735,
+      "source_links": [
+        "https://www.ohchr.org/en/issues/privacy/sr/pages/srprivacyindex.aspx"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00015",
+      "text": "When commenting on the problem of smartphone and contact tracing apps, the Special Rapporteur on Privacy previously stated that;",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4737,
+      "body_end": 4865,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00016",
+      "text": "> Relying solely on legislative measures is insufficient. Privacy should be considered from the start, beginning with the application's engineering.’",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4867,
+      "body_end": 5016,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746815-b00017",
+      "text": "> Whether the app employs a centralized or decentralized approach, whether the app is deployed via required or optional techniques, whether free consent is prioritized, and whether anonymization and encryption measures exist are all important factors to consider.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5018,
+      "body_end": 5281,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746815-b00018",
+      "text": "Lack of accountability and transparency",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5283,
+      "body_end": 5322,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00019",
+      "text": "Kenya lacks the necessary laws that regulate and limit the number of times mobile operators are allowed to “share with authorities the geo-location data of self-quarantined patients with confirmed COVID-19 to monitor that the patients observe self-quarantine,” as well as provide guarantees during this data sharing.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5324,
+      "body_end": 5640,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00020",
+      "text": "Furthermore, state agencies and private companies in Kenya have not disclosed the scope of their data sharing operations, which include the dissemination of information and data on publicly available platforms (open government platforms) and through publicly accessible resources (corporate transparency reports).",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5642,
+      "body_end": 5955,
+      "source_links": [
+        "https://www.article19.org/wp-content/uploads/2021/04/ADRF-Surveillance-Report-1.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00021",
+      "text": "The surveillance efforts grew in response to a lack of accountability and transparency, as well as the government's non-proactive disclosure of information from the pandemic response, making it difficult to determine whether privacy, data protection, and freedom of expression safeguards were applied.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5957,
+      "body_end": 6258,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00022",
+      "text": "The April 2021 report by ARTICLE 19 Eastern Africa, the Kenya ICT Action Network, and Pollicy made recommendations to the Kenyan government.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6260,
+      "body_end": 6400,
+      "source_links": [
+        "https://www.article19.org/wp-content/uploads/2021/04/ADRF-Surveillance-Report-1.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746815-b00023",
+      "text": "> Review all measures and systems deployed to address the COVID-19 pandemic which includes data collection programmes, systems, and apps to ensure they strictly comply with the three-part test under international human rights law, and data protection principles, including data minimisation and privacy by design.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6402,
+      "body_end": 6715,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746815-b00024",
+      "text": "Even though surveillance has now taken a low turn compared to when the pandemic started, there seems to be no effort raised by the Kenyan government to address these human rights concerns.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6717,
+      "body_end": 6905,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "1605607bfb2f6bb3e90f7800a8f038bff6d674d31373c36fdb4e55bf8fc45ce6",
+  "word_count": 1007,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6905,
+  "retrieved_at": "2026-11-16T22:32:09.546240+00:00",
+  "raw_html_sha256": "e8a0e3227cacd5135e2b68f3be9c5d294fe6cf487f69f4b3aa0453449d610118",
+  "resolved_source_url": "https://globalvoices.org/2021/10/07/kenyan-governments-use-of-surveillance-technologies-to-tackle-covid-19-raises-human-rights-concerns/",
+  "canonical_url": "https://globalvoices.org/2021/10/07/kenyan-governments-use-of-surveillance-technologies-to-tackle-covid-19-raises-human-rights-concerns/",
+  "source_bytes": 194705,
+  "authors": [
+    {
+      "name": "Cecilia Maundu",
+      "url": "https://globalvoices.org/author/cecilia-maundu/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 746815,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "e8a0e3227cacd5135e2b68f3be9c5d294fe6cf487f69f4b3aa0453449d610118",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-937091f169cebe9358f2",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-10",
+    "eligible_month_documents": 87,
+    "selected_month_documents": 73,
+    "inclusion_probability": 0.8390804597701149,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Cecilia Maundu",
+  "body_start": 537,
+  "body_end": 7442,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "db904f41e1221a33df22e73467184fc019fba16841ccbc37851533fdbff7f0a4",
+  "text_path": "articles/gv-746815.txt",
+  "metadata_path": "metadata/gv-746815.json",
+  "attribution": "This story by Cecilia Maundu originally appeared on Global Voices. https://globalvoices.org/2021/10/07/kenyan-governments-use-of-surveillance-technologies-to-tackle-covid-19-raises-human-rights-concerns/",
+  "content_sha256": "c0e8c91056dd794980a3fb43b05e10af7745132c93a66d172a1e16758254e39c",
+  "source_sha256": "e8a0e3227cacd5135e2b68f3be9c5d294fe6cf487f69f4b3aa0453449d610118",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

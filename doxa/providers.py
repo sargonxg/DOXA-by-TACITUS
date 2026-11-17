@@ -126,6 +126,13 @@ class OllamaProvider(BaseProvider):
         super().__init__({**config, "model": config.get("model") or OLLAMA_MODEL})
         self.base_url = _endpoint(str(config.get("base_url") or _env("DOXA_OLLAMA_BASE_URL", "OLLAMA_BASE_URL") or "http://127.0.0.1:11434"))
         self.profile["quantization"] = config.get("quantization") or "model_package_unresolved"
+        try:
+            self.num_threads = int(os.environ.get("DOXA_OLLAMA_NUM_THREADS", "4"))
+        except ValueError:
+            raise ValueError("DOXA_OLLAMA_NUM_THREADS must be an integer between 1 and 32") from None
+        if not 1 <= self.num_threads <= 32:
+            raise ValueError("DOXA_OLLAMA_NUM_THREADS must be between 1 and 32")
+        self.profile["num_threads_requested"] = self.num_threads
 
     async def health(self) -> dict:
         try:
@@ -145,7 +152,7 @@ class OllamaProvider(BaseProvider):
 
     async def generate(self, messages: list[dict], schema: dict, *, max_tokens: int = 3000, request_id: str | None = None) -> dict:
         payload = {"model": self.model, "messages": messages, "stream": False, "format": schema,
-                   "think": False, "options": {"temperature": 0, "num_ctx": 8192, "num_predict": max_tokens}}
+                   "think": False, "options": {"temperature": 0, "num_ctx": 8192, "num_predict": max_tokens, "num_thread": self.num_threads}}
         try:
             async with httpx.AsyncClient(timeout=httpx.Timeout(600, connect=10)) as client:
                 response = await client.post(f"{self.base_url}/api/chat", json=payload)
@@ -220,7 +227,7 @@ class OpenAICompatibleProvider(BaseProvider):
             raise ProviderError("model_required", "An explicit inference model is required")
         payload = {"model": self.model, "messages": messages, "max_tokens": max_tokens, "temperature": 0,
                    "response_format": {"type": "json_schema", "json_schema": {"name": "doxa_findings", "strict": True, "schema": schema}}}
-        if "qwen3.5" in self.model.lower():
+        if "qwen3.5" in self.model.lower() or self.model == CLOUDFLARE_MODEL:
             payload["chat_template_kwargs"] = {"enable_thinking": False}
         try:
             async with httpx.AsyncClient(timeout=httpx.Timeout(300, connect=15)) as client:
@@ -275,10 +282,12 @@ class CloudflareProvider(OpenAICompatibleProvider):
         self.account_id = account
         self.proxy_base = _env("DOXA_CLOUDFLARE_BASE_URL")
         base = self.proxy_base or f"https://api.cloudflare.com/client/v4/accounts/{account or 'unconfigured'}/ai/v1"
-        defaults = {"input_price_per_million": 0.10, "output_price_per_million": 0.30} if model == CLOUDFLARE_MODEL else {}
+        rates = {CLOUDFLARE_MODEL: (0.10, 0.30), "@cf/openai/gpt-oss-120b": (0.35, 0.75), "@cf/openai/gpt-oss-20b": (0.20, 0.30)}
+        defaults = {"input_price_per_million": rates[model][0], "output_price_per_million": rates[model][1]} if model in rates else {}
         super().__init__({**defaults, **{key: value for key, value in config.items() if value is not None}, "model": model, "base_url": base, "inference_mode": "remote"})
         self.api_key = _env("DOXA_CLOUDFLARE_API_TOKEN", "CLOUDFLARE_API_TOKEN", "CF_API_TOKEN")
         self.profile.update({"provider": self.name, "pricing_checked_at": "2026-11-16"})
+        self.profile["reasoning_requested"] = "disabled" if model == CLOUDFLARE_MODEL else "provider_default"
 
     async def health(self) -> dict:
         if self.proxy_base:

@@ -1,0 +1,966 @@
+{
+  "id": "gv-777862",
+  "publisher_id": 777862,
+  "source_id": "globalvoices:777862",
+  "source_url": "https://globalvoices.org/2022/12/29/the-year-in-review-what-the-caribbean-looked-like-in-2022/",
+  "title": "The year in review: What the Caribbean looked like in 2022",
+  "published_at": "2022-12-29T01:00:11Z",
+  "modified_at": "2022-12-29T09:32:40Z",
+  "api_author_id": 306,
+  "api_content_sha256": "ab13a8b83724140424d5ec447b66d3a490757310b3407541f70196b1b91ddf0c",
+  "api_response_sha256": "654a838386106e2262a167ae8c1bd1b81f26b6d0ad23fda191ed493f237011a9",
+  "api_retrieved_at": "2026-11-16T22:20:49.244553+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 159,
+      "count": 217,
+      "name": "Antigua and Barbuda",
+      "slug": "antigua-and-barbuda",
+      "parent": 1353
+    },
+    {
+      "id": 239,
+      "count": 12626,
+      "name": "Arts &#038; Culture",
+      "slug": "arts-culture",
+      "parent": 238
+    },
+    {
+      "id": 161,
+      "count": 734,
+      "name": "Bahamas",
+      "slug": "bahamas",
+      "parent": 1353
+    },
+    {
+      "id": 162,
+      "count": 1351,
+      "name": "Barbados",
+      "slug": "barbados",
+      "parent": 1353
+    },
+    {
+      "id": 165,
+      "count": 90,
+      "name": "British Virgin Islands",
+      "slug": "british-virgin-islands",
+      "parent": 1353
+    },
+    {
+      "id": 1353,
+      "count": 10223,
+      "name": "Caribbean",
+      "slug": "caribbean",
+      "parent": 219
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 169,
+      "count": 359,
+      "name": "Dominica",
+      "slug": "dominica",
+      "parent": 1353
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 172,
+      "count": 290,
+      "name": "Grenada",
+      "slug": "grenada",
+      "parent": 1353
+    },
+    {
+      "id": 232,
+      "count": 239,
+      "name": "Guadeloupe",
+      "slug": "guadeloupe",
+      "parent": 1353
+    },
+    {
+      "id": 152,
+      "count": 980,
+      "name": "Guyana",
+      "slug": "guyana",
+      "parent": 1353
+    },
+    {
+      "id": 174,
+      "count": 1102,
+      "name": "Haiti",
+      "slug": "haiti",
+      "parent": 1353
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 176,
+      "count": 2263,
+      "name": "Jamaica",
+      "slug": "jamaica",
+      "parent": 1353
+    },
+    {
+      "id": 296,
+      "count": 2217,
+      "name": "Language",
+      "slug": "language",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1364,
+      "count": 1877,
+      "name": "LGBTQ+",
+      "slug": "gay-rights-lgbt",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 269,
+      "count": 3171,
+      "name": "Music",
+      "slug": "music",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 278,
+      "count": 3056,
+      "name": "Sport",
+      "slug": "sport",
+      "parent": 238
+    },
+    {
+      "id": 181,
+      "count": 156,
+      "name": "St.Kitts &amp; Nevis",
+      "slug": "stkitts-nevis",
+      "parent": 1353
+    },
+    {
+      "id": 184,
+      "count": 3312,
+      "name": "Trinidad &amp; Tobago",
+      "slug": "trinidad-tobago",
+      "parent": 1353
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 1361,
+      "count": 6433,
+      "name": "Women &amp; Gender",
+      "slug": "women-gender",
+      "parent": 238
+    },
+    {
+      "id": 282,
+      "count": 6941,
+      "name": "Youth",
+      "slug": "youth",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-777862-b00001",
+      "text": "After two years of battling the COVID-19 pandemic, the Caribbean welcomed 2022 on a hopeful note — but as with most years, it came with its ups and downs.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 154,
+      "source_links": [
+        "https://globalvoices.org/2022/01/04/out-of-darkness-hope-a-new-year-chat-with-jamaican-artist-richard-nattoo/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00002",
+      "text": "In years gone by, the issue of corruption took top billing across the region, but the stories the Global Voices Caribbean team covered in 2022 definitely saw a stronger leaning towards other key concerns, like the environment and violent crime.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 156,
+      "body_end": 400,
+      "source_links": [
+        "https://globalvoices.org/2015/12/14/2015-was-boom-times-for-corruption-in-the-caribbean-but-can-it-last/",
+        "https://globalvoices.org/2017/12/31/if-you-spent-2017-in-the-caribbean-this-was-the-kind-of-year-you-had/",
+        "https://globalvoices.org/2022/12/09/how-is-the-caribbean-faring-on-international-anti-corruption-day/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00003",
+      "text": "Here's a recap of some of the stories that captured the attention of the regional blogosphere this year …",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 402,
+      "body_end": 507,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00004",
+      "text": "The climate crisis",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 509,
+      "body_end": 527,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00005",
+      "text": "At least a score of our stories this year focused on environmental issues, with unusually cold weather kicking off 2022 in Trinidad and Tobago, at the southern end of the archipelago.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 529,
+      "body_end": 712,
+      "source_links": [
+        "https://globalvoices.org/2022/01/05/in-trinidad-and-tobago-baby-its-cold-outside/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00006",
+      "text": "While there were optimistic posts that raised awareness of the significance of World Wetlands Day, celebrated Earth Day with the discovery of a new species of bat, or paid homage to the beauty and importance of our oceans, the spotlight was predominantly focused on the types of environmental challenges faced by Small Island Developing States (SIDS), from the presence of invasive species to the critical threat of deep-sea mining.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 714,
+      "body_end": 1146,
+      "source_links": [
+        "https://globalvoices.org/2022/02/02/in-honour-of-world-wetlands-day-caribbean-wetlands-in-photos/",
+        "https://globalvoices.org/2022/02/06/the-invasive-cuban-tree-frog-gives-jamaicans-the-jitters-but-its-a-serious-problem/",
+        "https://globalvoices.org/2022/04/06/as-international-negotiations-end-in-jamaica-the-threat-of-deep-sea-mining-hangs-over-the-worlds-oceans/",
+        "https://globalvoices.org/2022/04/22/just-in-time-for-earth-day-trinidad-tobago-gets-a-new-bat/",
+        "https://globalvoices.org/2022/04/23/what-earth-day-means-to-the-global-voices-caribbean-team/",
+        "https://globalvoices.org/2022/06/08/world-oceans-day-in-photos-from-trinidad-tobago/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00007",
+      "text": "Despite the 2022 transatlantic hurricane season being comparatively moderate to previous years that saw widespread devastation from major storms, the region faced its fair share of weather events in the form of tropical storm systems that brought massive flooding, time and time again.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1148,
+      "body_end": 1433,
+      "source_links": [
+        "https://globalvoices.org/2017/09/08/the-caribbean-comes-together-after-hurricane-irma/",
+        "https://globalvoices.org/2017/09/20/we-dare-not-look-out-dominica-is-brutalised-by-hurricane-maria/",
+        "https://globalvoices.org/2019/09/03/as-hurricane-dorian-devastates-the-bahamas-a-cry-for-the-caribbean-to-face-up-to-the-climate-crisis/",
+        "https://globalvoices.org/2022/06/28/the-southern-caribbean-prepares-for-a-tropical-storm/",
+        "https://globalvoices.org/2022/09/17/guadeloupe-suffers-after-passage-of-tropical-storm-fiona/",
+        "https://globalvoices.org/2022/10/06/schools-close-as-lingering-weather-system-continues-to-affect-trinidad-tobago/",
+        "https://globalvoices.org/2022/10/06/trinidad-tobago-suffers-the-effects-of-yet-another-tropical-weather-system/",
+        "https://globalvoices.org/2022/11/26/trinidad-tobago-placed-under-a-weather-emergency-alert/",
+        "https://globalvoices.org/2022/11/30/cry-me-a-river-trinidad-faces-more-serious-flooding-and-anguish/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00008",
+      "text": "Even as Grenada's Minister for Climate Resilience and the Environment, Senator Simon Stiell, was appointed as Executive Secretary of UN Climate Change, by the time COP27 was in progress, Caribbean netizens — particularly young people — were becoming increasingly concerned about measures that could help reverse the effects of climate change, including the transition to renewable energy sources, the importance of urban green spaces, the issue of loss and damage, and other key conference takeaways.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1435,
+      "body_end": 1935,
+      "source_links": [
+        "https://globalvoices.org/2022/06/02/a-jamaican-schools-green-generation-wants-more-action-less-talk-to-save-the-planet/",
+        "https://globalvoices.org/2022/08/17/a-voice-from-the-islands-grenadas-environment-minister-appointed-un-climate-change-chief/",
+        "https://globalvoices.org/2022/08/19/as-part-of-a-beloved-square-is-cordoned-off-for-construction-trinidadians-defend-their-right-to-green-space/",
+        "https://globalvoices.org/2022/10/18/can-jamaica-efficiently-make-the-much-needed-transition-to-renewable-energy/",
+        "https://globalvoices.org/2022/11/12/loss-and-damage-in-the-caribbean-we-see-it-we-feel-it-we-know-it/",
+        "https://globalvoices.org/2022/11/17/global-south-countries-declare-cop27-a-case-of-climate-inaction/",
+        "https://globalvoices.org/2022/12/11/a-caribbean-debrief-of-cop27-that-goes-beyond-the-historic-loss-and-damage-fund/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00009",
+      "text": "There were also anxieties throughout the year, about related matters, such as food security — including nutrition policies and the increasing cost of basic food items.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1937,
+      "body_end": 2104,
+      "source_links": [
+        "https://globalvoices.org/2022/03/16/youth-advocates-say-a-proper-nutrition-policy-is-critical-for-jamaicas-future/",
+        "https://globalvoices.org/2022/06/29/the-caribbean-looming-food-security-storm-suddenly-seems-more-threatening/",
+        "https://globalvoices.org/2022/07/18/buyers-experience-sticker-shock-at-the-price-of-vegetables-in-trinidad-tobago/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00010",
+      "text": "The lingering effects of colonialism",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2106,
+      "body_end": 2142,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00011",
+      "text": "Given that both Jamaica and Trinidad and Tobago celebrated 60 years of independence from Britain this year, 2022 was a time to reflect on the region's collective colonial legacy, which continued to rear its head in a myriad of ways.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2144,
+      "body_end": 2376,
+      "source_links": [
+        "https://globalvoices.org/2022/06/05/trinidad-tobagos-opposition-leader-gets-into-hot-water-over-slave-master-rebuttal/",
+        "https://globalvoices.org/2022/08/12/jamaica-and-trinidad-tobago-celebrate-60-years-of-independence/",
+        "https://globalvoices.org/2022/08/31/trinidad-tobago-at-60-celebration-and-contemplation/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00012",
+      "text": "While Tobago was busy trying to ditch colonial-era dress codes, its sister isle, Trinidad, was steadfastly upholding them, inspiring citizens to find creative workarounds.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2378,
+      "body_end": 2549,
+      "source_links": [
+        "https://globalvoices.org/2022/01/19/tobago-ditches-colonial-dress-code-waits-for-its-sister-isle-trinidad-to-catch-up/",
+        "https://globalvoices.org/2022/10/14/in-the-face-of-stubborn-adherence-to-outdated-dress-codes-one-trinidadian-citizen-gets-creative/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00013",
+      "text": "In Jamaica, this type of appearance-based bias emerged once again in a disturbing story where a young woman's dreadlocks were forcibly cut by a police officer. Just a month later, it was determined that no criminal charges would be filed against the officer in question.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2551,
+      "body_end": 2821,
+      "source_links": [
+        "https://globalvoices.org/2022/01/26/the-issue-of-the-jamaican-police-allegedly-cutting-a-young-womans-dreadlocks-remains-unresolved/",
+        "https://globalvoices.org/2022/02/15/the-police-officer-who-allegedly-cut-a-young-jamaicans-dreadlocks-faces-no-criminal-charges-and-nobody-bats-an-eye/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00014",
+      "text": "Interest in reading Dr. Eric Williams’ “Capitalism and Slavery,” the book that is largely credited with changing the narrative around colonialism, slavery and emancipation, was rekindled at the start of the year when news broke that there would be a new edition of the publication.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2823,
+      "body_end": 3104,
+      "source_links": [
+        "https://globalvoices.org/2022/01/27/an-upcoming-british-edition-of-capitalism-and-slavery-makes-news-but-the-caribbean-has-always-known-the-books-worth/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00015",
+      "text": "By the time the Duke and Duchess of Cambridge embarked on a problematic Caribbean tour in honour of Queen Elizabeth II's platinum jubilee, anti-monarchy sentiment was rife, sparking protests and calls for Britain to issue a formal apology and make good on slavery reparations. By August, an art exhibit in the United Kingdom was also doing its part to reframe the colonial narrative, a discussion that grew even more fervent after the queen's death on September 8.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3106,
+      "body_end": 3570,
+      "source_links": [
+        "https://globalvoices.org/2022/03/24/seh-yu-sorry-royal-visit-to-jamaica-sparks-protests-and-calls-for-slavery-reparations/",
+        "https://globalvoices.org/2022/08/03/a-new-exhibit-in-the-uk-reframes-the-legacy-of-a-brutal-british-governor-will-trinidad-tobago-follow-suit/",
+        "https://globalvoices.org/2022/09/09/the-caribbean-responds-to-queen-elizabeth-iis-complicated-legacy/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00016",
+      "text": "Crime and gender-based violence",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3572,
+      "body_end": 3603,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00017",
+      "text": "The start of 2022 marked the one-year anniversary of the abduction and murder of 23-year-old Trinidadian woman Andrea Bharatt. The following month saw a similar occurrence, leaving citizens bewildered and afraid.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3605,
+      "body_end": 3817,
+      "source_links": [
+        "https://globalvoices.org/2022/01/28/caribbean-virgins-caribbean-whores-unlacing-goodness-dismantling-perversion/",
+        "https://globalvoices.org/2022/02/05/yet-another-trinidadian-woman-is-abducted-murdered-and-dumped-leaving-citizens-frustrated-and-fearful/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00018",
+      "text": "From Trinidad and Tobago to Jamaica, women would continue to go missing and later be found dead. There was also a great amount of debate over the overturning of Roe vs. Wade in the United States, prompting discussions over the region's strict anti-abortion laws.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3819,
+      "body_end": 4081,
+      "source_links": [
+        "https://globalvoices.org/2022/04/07/another-horrific-murder-suicide-in-trinidad-tobago-revives-discussion-about-domestic-violence/",
+        "https://globalvoices.org/2022/06/26/the-overturning-of-roe-vs-wade-unsettles-the-caribbean-most-of-which-doesnt-have-progressive-abortion-laws/",
+        "https://globalvoices.org/2022/08/12/missing-presumed-dead-a-sensational-murder-case-in-jamaica-highlights-the-plight-of-many-vulnerable-caribbean-women/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00019",
+      "text": "In one case in Trinidad and Tobago, a young mother was the perpetrator of violence, having admitted to killing her child. The incident served as the impetus for people to talk about how the combination of poverty and mental health issues can be a lethal combination, though some men observed that, had a man been responsible for the murder, public reaction may have been very different.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4083,
+      "body_end": 4469,
+      "source_links": [
+        "https://globalvoices.org/2022/08/24/a-mother-confesses-to-killing-her-child-in-trinidad-tobago-prompting-discussion-on-violence-depression-poverty-and-mental-health/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00020",
+      "text": "Women and children were, however, not the only victims of violent crime. Many victims came from disenfranchised urban communities, and in Trinidad and Tobago, questions of police brutality and abuse of power were once more on the front burner.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4471,
+      "body_end": 4714,
+      "source_links": [
+        "https://globalvoices.org/2022/07/05/trinidads-capital-blocked-by-protests-over-police-killings/",
+        "https://globalvoices.org/2022/07/17/eight-trinidad-tobago-police-service-officers-detained-in-connection-with-fatal-shooting-incident/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00021",
+      "text": "Jamaicans were also anxious about rising crime, and it seemed the government was ready to try anything to try and mitigate the effects of its well-entrenched gun culture — from banning music with violent lyrics from the airwaves to imposing states of emergency.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4716,
+      "body_end": 4977,
+      "source_links": [
+        "https://globalvoices.org/2022/10/16/will-banning-music-glorifying-violence-from-the-airwaves-reduce-jamaicas-crime-rate/",
+        "https://globalvoices.org/2022/11/02/many-jamaicans-are-nervous-heres-why/",
+        "https://globalvoices.org/2022/11/22/jamaicas-gun-culture-and-its-impact-on-the-marginalised/",
+        "https://globalvoices.org/2022/11/23/will-more-states-of-emergency-in-jamaica-curtail-gang-related-crime/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00022",
+      "text": "Politics",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4979,
+      "body_end": 4987,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00023",
+      "text": "As expected, regional politics also experienced its triumphs and challenges this year. For every win — mostly achieved by Barbados’ prime minister, Mia Mottley, who was chosen by Time Magazine as one of the world's most influential people — there were political missteps, tone deafness, and stark falls from grace.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4989,
+      "body_end": 5303,
+      "source_links": [
+        "https://globalvoices.org/2022/01/22/clean-sweep-for-incumbent-mia-mottley-in-barbados-first-election-as-a-republic/",
+        "https://globalvoices.org/2022/03/20/politicians-flout-covid-19-protocols-before-restrictions-are-lifted-one-jamaica-for-the-rich-and-another-for-the-poor/",
+        "https://globalvoices.org/2022/05/23/time-magazine-chooses-barbados-prime-minister-mia-mottley-as-one-of-the-worlds-most-influential-people/",
+        "https://globalvoices.org/2022/09/07/a-first-as-barbados-prime-minister-mia-mottley-presides-over-inaugural-african-caribbean-trade-and-investment-forum/",
+        "https://globalvoices.org/2022/10/07/of-coal-pots-bicycles-and-macaroni-pie-is-trinidad-tobagos-government-out-of-touch/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00024",
+      "text": "This was perhaps most dramatically demonstrated by the arrest of the British Virgin Islands premier on drug charges in April. The ensuing discussion over the proposal that the overseas territory should revert to direct rule by the United Kingdom for at least two years made many people uncomfortable.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5305,
+      "body_end": 5605,
+      "source_links": [
+        "https://globalvoices.org/2022/04/30/regional-social-media-users-cringe-after-the-british-virgin-islands-premier-is-arrested-on-drug-charges/",
+        "https://globalvoices.org/2022/05/04/could-the-proposed-return-of-british-virgin-islands-to-temporary-uk-rule-be-a-case-of-pot-meet-kettle/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00025",
+      "text": "In terms of regional governments’ performance in education, there were also positives and negatives. While St. Lucia was attempting to introduce the teaching of Kwéyòl in schools, Trinidad and Tobago's Ministry of Education was involved in an award debacle that got people once more debating the relevance of the Secondary Entrance Assessment (SEA) examination.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5607,
+      "body_end": 5968,
+      "source_links": [
+        "https://globalvoices.org/2022/04/20/awards-fiasco-exposes-flaws-in-trinidad-tobagos-secondary-school-entrance-exam/",
+        "https://globalvoices.org/2022/05/30/st-lucia-plans-to-implement-the-teaching-of-kweyol-in-schools-but-is-it-enough-to-revitalise-the-language/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00026",
+      "text": "Another political affair that played out very publicly was the bid for the post of Commonwealth Secretary General, in which the incumbent, Dominica-born Patricia Scotland, was challenged by Jamaica's Kamina Johnson Smith. The race fanned discussion over whether there was a split within the Caribbean Community (CARICOM) over the issue.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5970,
+      "body_end": 6306,
+      "source_links": [
+        "https://globalvoices.org/2022/04/27/what-does-jamaican-politician-kamina-johnson-smiths-bid-for-commonwealth-secretary-general-say-about-caribbean-political-solidarity/",
+        "https://globalvoices.org/2022/04/30/incumbent-commonwealth-secretary-general-fires-a-shot-across-the-bow-of-a-rival-caribbean-candidate-and-the-region-is-taking-note/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00027",
+      "text": "Political turmoil continued to plague Haiti this year, with the usual effects on the cost of living and public safety. Haitians however, justifiably tired of the narrative proffered by the western media, took to Twitter to explain exactly why their country has been trapped in this cycle for so long, giving many social media users a lesson in the negative ripple effects of colonisation and occupation.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6308,
+      "body_end": 6711,
+      "source_links": [
+        "https://globalvoices.org/2022/10/09/when-the-porridge-is-hot-one-eats-it-on-the-side-haitis-current-protests-explained-on-twitter/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00028",
+      "text": "Meanwhile, the state of the Fourth Estate was a mixed bag this year.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6713,
+      "body_end": 6781,
+      "source_links": [
+        "https://globalvoices.org/2022/05/04/world-press-freedom-day-in-the-caribbean-is-a-mixed-bag/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00029",
+      "text": "Advocacy",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6783,
+      "body_end": 6791,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00030",
+      "text": "There were several issues regional netizens deemed critical enough to advocate for this year, including proper road planning and use after several cycling deaths in Trinidad and Tobago, enforcement of existing laws when it comes to noise pollution, and better inclusion for those with disabilities.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6793,
+      "body_end": 7091,
+      "source_links": [
+        "https://globalvoices.org/2022/01/11/trinidad-and-tobago-residents-response-to-proposed-amendments-to-fireworks-legislation-enforce-existing-laws/",
+        "https://globalvoices.org/2022/05/31/commercialisation-of-one-of-port-of-spains-oldest-communities-inspires-trinidadian-leona-fabien-to-advocate-through-her-art/",
+        "https://globalvoices.org/2022/07/29/curbing-noise-pollution-in-trinidad-tobago-whose-job-is-it-anyway/",
+        "https://globalvoices.org/2022/11/13/cycling-is-risky-business-in-trinidad-tobago-as-pleas-for-road-accommodations-go-unanswered/",
+        "https://globalvoices.org/2022/12/03/its-the-international-day-of-persons-with-disabilities-but-in-trinidad-tobago-barriers-remain-in-place/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00031",
+      "text": "Region-wide, there were also some strides for LGBTQ+ movements this year. In March in Trinidad and Tobago, a transgender woman was appointed as a temporary opposition senator for a day, filling in for a colleague who was ill. Her tweets tagging international celebrities in an attempt to solicit congratulatory messages, however, sullied the achievement in the eyes of many social media users.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 7093,
+      "body_end": 7486,
+      "source_links": [
+        "https://globalvoices.org/2022/03/01/trinidad-and-tobago-gets-a-transgender-senator-for-a-day-but-a-series-of-tweets-turns-congratulations-into-chaos/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00032",
+      "text": "In July, Antigua and Barbuda joined the list of regional territories in which anti-buggery laws have been deemed unconstitutional, and the Caribbean as a whole seemed to be growing more accepting of gay rights.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 7488,
+      "body_end": 7698,
+      "source_links": [
+        "https://globalvoices.org/2022/07/13/antigua-barbuda-is-the-latest-caribbean-country-where-anti-buggery-laws-have-been-deemed-unconstitutional/",
+        "https://globalvoices.org/2022/12/18/did-2022-see-the-caribbean-become-more-gay-friendly/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00033",
+      "text": "The arts and culture",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 7700,
+      "body_end": 7720,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00034",
+      "text": "The Caribbean's rich and diverse culture featured heavily in our coverage this year and included everything from contemporary Haitian art to public sculpture in Trinidad and Tobago.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 7722,
+      "body_end": 7903,
+      "source_links": [
+        "https://globalvoices.org/2022/03/15/were-passing-by-a-conversation-with-haitian-contemporary-artist-pascale-monnin/",
+        "https://globalvoices.org/2022/08/27/forty-three-years-after-a-masterpiece-of-trinbagonian-art-was-destroyed-a-loving-replica-offers-some-redress/",
+        "https://globalvoices.org/2022/09/08/public-art-provides-a-sense-of-belonging-talking-with-trinbagonian-sculptors-sherlann-peters-and-maria-diaz/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00035",
+      "text": "There was also discussion about film, poetry, art, and music that covered topics like whether Bob Marley should be made a Jamaican national hero, and how films have the power to help reconstruct colonial mindsets.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 7905,
+      "body_end": 8118,
+      "source_links": [
+        "https://globalvoices.org/2022/04/07/why-hasnt-jamaica-made-bob-marley-a-national-hero-yet/",
+        "https://globalvoices.org/2022/06/27/the-africa-film-festival-gives-cosmopolitan-trinidad-tobago-a-chance-to-reshape-its-own-world-view/",
+        "https://globalvoices.org/2022/09/08/as-jamaica-celebrates-her-birthday-google-captures-cultural-icon-miss-lous-spirit-in-a-doodle/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00036",
+      "text": "Various aspects of Trinidad and Tobago's famous Carnival celebrations also factored in, especially as people found creative ways to express themselves, despite the pandemic interfering with the traditional iteration of the festival. There was also discussion over the cost of Carnival costumes, and what constituted cultural appropriation.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 8120,
+      "body_end": 8459,
+      "source_links": [
+        "https://globalvoices.org/2022/02/19/mas-in-a-time-of-mourning-how-the-spirit-of-trinidad-and-tobago-carnival-shines-through/",
+        "https://globalvoices.org/2022/02/27/memories-of-mas-making-creating-giants-of-trinidad-and-tobago-carnival/",
+        "https://globalvoices.org/2022/08/12/trinidad-tobagos-carnival-museum-has-a-unique-and-rare-opportunity/",
+        "https://globalvoices.org/2022/08/23/are-carnival-revellers-in-trinidad-tobago-getting-their-moneys-worth/",
+        "https://globalvoices.org/2022/11/02/misdirected-outrage-over-u-s-actress-lala-anthony-wearing-a-carnival-costume-for-halloween-was-pretty-scary/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00037",
+      "text": "Tragedies",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 8461,
+      "body_end": 8470,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00038",
+      "text": "Governance became a real talking point in the wake of several tragedies in Trinidad and Tobago. The first was an incident that claimed the lives of four professional divers who were working on a pipeline for the state-owned Paria Trading Company Limited. The lone survivor recently testified in a Commission of Enquiry into the tragedy, which is still ongoing.",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 8472,
+      "body_end": 8832,
+      "source_links": [
+        "https://globalvoices.org/2022/03/03/diving-tragedy-plunges-trinidad-tobago-into-mourning-and-prompts-calls-for-accountability/",
+        "https://globalvoices.org/2022/03/09/opposite-ends-of-a-tragedy-the-companies-involved-in-trinidad-tobagos-diving-deaths-speak-out/",
+        "https://www.guardian.co.tt/news/lone-survivor-boodrams-heartbreaking-testimony-i-failed-them-6.2.1573745.7da9339657"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00039",
+      "text": "In early May, the entire nation was praying for the safe return of a toddler who had reportedly wandered off from his village home; he was later found dead, having drowned in a nearby river. That same month, the contents of a task force report documenting widespread abuse in state-run and funded residential children's homes, sparked public outrage.",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 8834,
+      "body_end": 9184,
+      "source_links": [
+        "https://globalvoices.org/2022/05/11/the-death-of-a-toddler-adds-to-trinidad-tobagos-trauma/",
+        "https://globalvoices.org/2022/05/20/trinidad-tobagos-failure-to-act-on-decades-of-abuse-allegations-has-done-unspeakable-damage-to-children-in-state-care/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00040",
+      "text": "Sports",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 9186,
+      "body_end": 9192,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00041",
+      "text": "In contrast, good news came to the region in the form of sporting accomplishments. Trinidad and Tobago celebrated two back-to-back gold medals in sprinting and the javelin throw, and Jamaica's women athletes gave an impressive performance at the World Athletics Championships in July.",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 9194,
+      "body_end": 9478,
+      "source_links": [
+        "https://globalvoices.org/2022/03/22/trinidad-tobago-celebrates-double-gold-with-two-athletics-victories/",
+        "https://globalvoices.org/2022/07/19/jamaicans-swept-away-by-their-women-sprinters-at-world-athletics-championships/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00042",
+      "text": "With the loss of his extradition appeal at the Privy Council level, it even appeared that disgraced former FIFA vice president, Trinidad and Tobago's Jack Warner, might be on the road to answering for his alleged corruption, though netizens preferred to take a wait-and-see approach. Caribbean netizens did enjoy the 2022 World Cup, however, with many supporting Brazil, and the eventual winners, Argentina.",
+      "page": null,
+      "paragraph": 42,
+      "body_start": 9480,
+      "body_end": 9887,
+      "source_links": [
+        "https://globalvoices.org/2022/11/18/disgraced-former-fifa-vice-president-jack-warner-loses-us-extradition-appeal-but-trinbagonians-remain-sceptical/",
+        "https://globalvoices.org/2022/11/27/why-are-jamaicans-crazy-about-brazilian-football/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00043",
+      "text": "Losses",
+      "page": null,
+      "paragraph": 43,
+      "body_start": 9889,
+      "body_end": 9895,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00044",
+      "text": "Sadly, 2022 turned out to be a year in which the region had to bid farewell to many of its outstanding citizens. Within the first week of the year, Trinidad and Tobago lost three of its musical icons, and a stalwart of traditional Carnival masquerade. Bahamian-born actor Sidney Poitier, whose work went a long way to changing how Black people were perceived and represented, also passed away in January.",
+      "page": null,
+      "paragraph": 44,
+      "body_start": 9897,
+      "body_end": 10301,
+      "source_links": [
+        "https://globalvoices.org/2022/01/06/trinidad-and-tobago-loses-three-musical-treasures-at-the-start-of-2022/",
+        "https://globalvoices.org/2022/01/07/the-king-is-passing-narrie-approo-trinidad-and-tobagos-oldest-black-indian-masquerader-dies-at-94/",
+        "https://globalvoices.org/2022/01/08/bahamian-american-actor-sidney-poitier-whose-representation-of-black-people-in-film-helped-change-racist-perceptions-dies-at-94/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00045",
+      "text": "In March, legendary West Indies spin bowler Sonny Ramadhin died at the age of 92. Jamaica lost three women who tirelessly advocated for the marginalised and vulnerable, and Trinidad and Tobago lost their equivalent in human rights activist Hazel Brown.",
+      "page": null,
+      "paragraph": 45,
+      "body_start": 10303,
+      "body_end": 10555,
+      "source_links": [
+        "https://globalvoices.org/2022/03/01/west-indies-crickets-super-spin-bowler-sonny-ramadhin-dies-at-92/",
+        "https://globalvoices.org/2022/03/16/i-can-still-hear-their-voice-three-women-who-worked-for-jamaicas-most-vulnerable/",
+        "https://globalvoices.org/2022/09/23/we-are-poorer-without-her-trinbagonian-human-rights-advocate-hazel-brown-dies/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00046",
+      "text": "Several musicians, thespians, and writers also passed on this year, including soca star Dexter “Blaxx” Stewart, calypsonians Winston “Explainer” Henry and Leroy “Black Stalin” Calliste, parang queen Singing Francine, beloved Haitian singer Mikaben, Donald “Tabby Diamond” Shaw, lead singer of the legendary reggae group “Mighty Diamonds” (in a drive-by shooting), dance education pioneer Thora Dumbell, and Barbadian novelist George Lamming.",
+      "page": null,
+      "paragraph": 46,
+      "body_start": 10557,
+      "body_end": 10998,
+      "source_links": [
+        "https://globalvoices.org/2022/03/29/untimely-death-of-soca-singer-dexter-blaxx-stewart-leaves-trinidad-tobago-in-mourning/",
+        "https://globalvoices.org/2022/03/31/legendary-voice-silenced-as-lead-singer-of-jamaican-reggae-group-mighty-diamonds-is-murdered/",
+        "https://globalvoices.org/2022/06/05/barbadian-novelist-george-lamming-a-leading-writer-of-the-caribbean-colonial-experience-dies-at-94/",
+        "https://globalvoices.org/2022/10/08/explainer-trinidad-tobagos-calypso-messenger-passes-on/",
+        "https://globalvoices.org/2022/10/17/the-sudden-passing-of-haitian-singer-mikaben-leaves-a-big-void-in-the-music-world/",
+        "https://globalvoices.org/2022/10/26/leonie-miss-lee-forbes-beloved-doyenne-of-jamaican-stage-and-film-passes-away-at-85/",
+        "https://globalvoices.org/2022/11/06/thora-dumbell-a-cornerstone-of-dance-education-in-trinidad-tobago-passes-on/",
+        "https://globalvoices.org/2022/12/16/the-journey-of-trinidads-parang-music-in-one-informative-podcast/",
+        "https://globalvoices.org/2022/12/17/in-the-midst-of-trinidad-tobagos-parang-season-calypsonian-singing-francine-passes-on/",
+        "https://globalvoices.org/2022/12/28/trinidad-tobagos-calypsonian-black-stalin-the-quintessential-caribbean-man-dies-at-81/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777862-b00047",
+      "text": "The regional media fraternity lost a few key personalities as well, including Jamaica's Barbara Gloudon and François St. Juste, and Trinidad and Tobago radio morning show host David Elcock, whose cheery, positive outlook on life is something regional social media users may well want to take with them into 2023.",
+      "page": null,
+      "paragraph": 47,
+      "body_start": 11000,
+      "body_end": 11312,
+      "source_links": [
+        "https://globalvoices.org/2022/05/13/jamaicas-barbara-gloudon-a-giant-of-journalism-and-theatre-passes-away-at-87/",
+        "https://globalvoices.org/2022/08/26/he-was-the-best-of-us-trinidad-tobago-mourns-the-loss-of-veteran-radio-personality-david-elcock/",
+        "https://globalvoices.org/2022/08/31/good-morning-jamaica-the-voice-of-a-beloved-broadcaster-falls-silent/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "0542772364ab99bfa571b2595b30fa44dde00a1ccf3e86a06aa269d0b4148ab9",
+  "word_count": 1780,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 10,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 11312,
+  "retrieved_at": "2026-11-16T22:37:36.692945+00:00",
+  "raw_html_sha256": "41025183ae5ef34f3533a634d05abdf6b23ed7b5b9e3ba3c76caec071b7210b4",
+  "resolved_source_url": "https://globalvoices.org/2022/12/29/the-year-in-review-what-the-caribbean-looked-like-in-2022/",
+  "canonical_url": "https://globalvoices.org/2022/12/29/the-year-in-review-what-the-caribbean-looked-like-in-2022/",
+  "source_bytes": 216425,
+  "authors": [
+    {
+      "name": "Janine Mendes-Franco",
+      "url": "https://globalvoices.org/author/janine-mendes-franco/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 777862,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "41025183ae5ef34f3533a634d05abdf6b23ed7b5b9e3ba3c76caec071b7210b4",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-5eee772fe1bc7e88b9ea",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-12",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Janine Mendes-Franco",
+  "body_start": 459,
+  "body_end": 11771,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "4b96951c11b37c1610d7c136281751788942ea8d3d80c7c3b9a16fdda469a280",
+  "text_path": "articles/gv-777862.txt",
+  "metadata_path": "metadata/gv-777862.json",
+  "attribution": "This story by Janine Mendes-Franco originally appeared on Global Voices. https://globalvoices.org/2022/12/29/the-year-in-review-what-the-caribbean-looked-like-in-2022/",
+  "content_sha256": "62ef8cdde065462842dd39526b6dda5f0e259161f20982409318f693a03c8660",
+  "source_sha256": "41025183ae5ef34f3533a634d05abdf6b23ed7b5b9e3ba3c76caec071b7210b4",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

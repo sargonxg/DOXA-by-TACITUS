@@ -1,0 +1,441 @@
+{
+  "id": "gv-778619",
+  "publisher_id": 778619,
+  "source_id": "globalvoices:778619",
+  "source_url": "https://globalvoices.org/2023/01/13/infrastructural-content-moderation-the-case-of-mariupol/",
+  "title": "Infrastructural content moderation: the case of Mariupol",
+  "published_at": "2023-01-13T09:53:29Z",
+  "modified_at": "2023-01-13T09:53:29Z",
+  "api_author_id": 3077,
+  "api_content_sha256": "91c0b34ca58582cc3aca020eb2a2d910f8c38d06e6e588bc2ce64e5542359f73",
+  "api_response_sha256": "27cf64520f3b69af0634cfa1d1f396fff074d03f61e0810e085ddf38a7663e1d",
+  "api_retrieved_at": "2026-11-16T22:20:49.975187+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-778619-b00001",
+      "text": "On March 9, 2022, Marianna Vyshemirskaya was standing in front of the bombed maternity ward in Mariupol when the AP photographers Evgeniy Maloletka and Mstyslav Chernov caught her on camera. Later that day, they managed to send the footage to their editor, and the photos became viral.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 285,
+      "source_links": [
+        "https://t.me/mariupolrada/8783",
+        "https://www.instagram.com/p/Ca4_6LSsEXR/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00002",
+      "text": "Immediately, the Russian propaganda machine reacted with its usual firehose of falsehood, accusing Ukraine of staging the photo shoot. It marked the beginning of a massive and global disinformation campaign to cover up Russia's atrocities in Ukraine.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 287,
+      "body_end": 537,
+      "source_links": [
+        "https://ria.ru/20220310/provokatsiya-1777547947.html",
+        "https://www.rand.org/content/dam/rand/pubs/perspectives/PE100/PE198/RAND_PE198.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00003",
+      "text": "One of the scepticisms planted by the propagandists was that there was only one photographer and only one pregnant woman pictured. Even though the evidence came from several sources and featured more people, the footage was still scarce. No wonder people, used to being flooded by livestreams, felt suspicious and echoed a genuine question: why are there no more witness testimonials?",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 539,
+      "body_end": 923,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00004",
+      "text": "Occupation",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 925,
+      "body_end": 935,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00005",
+      "text": "Content — “fake news” — is only the tip of the iceberg that is disinformation, and at the base of it lies connectivity infrastructure. There are plenty of examples of governments and corporations using it to spread or fight disinformation, with greater effect than traditional content moderation in social media. Why argue on Twitter when you can shut down Twitter or the internet altogether?",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 937,
+      "body_end": 1329,
+      "source_links": [
+        "https://www.cigionline.org/articles/internet-infrastructure-as-an-emerging-terrain-of-disinformation/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00006",
+      "text": "In the occupied territories — from Crimea to Luhansk — the digital space is also occupied. The first thing the Russian soldiers do when they take a territory is destroy or hijack cell and TV towers. NetBlock clearly shows that internet connectivity drops wherever Russia goes.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1331,
+      "body_end": 1607,
+      "source_links": [
+        "https://cacm.acm.org/news/263479-how-russia-took-over-ukraines-internet-in-occupied-territories/fulltext",
+        "https://netblocks.org/reports/internet-disruptions-registered-as-russia-moves-in-on-ukraine-W80p4k8K",
+        "https://variety.com/2022/tv/news/kyiv-tv-tower-bombed-russia-1235193078/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00007",
+      "text": "Many infrastructure control tactics were tried and tested in 2014 during the annexation of Crimea. The vital infrastructure conquered and built there is being used now to redirect internet traffic (by physically switching the cables) from the newly occupied territories through Crimea to Russia.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1609,
+      "body_end": 1904,
+      "source_links": [
+        "https://www.accessnow.org/digital-rights-ukraine-russia-conflict/",
+        "https://www.nytimes.com/interactive/2022/08/09/technology/ukraine-internet-russia-censorship.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00008",
+      "text": "Russia blocks access to all the radio and TV channels and, most recently, to Google and social media. Instead, Ukrainians get a transmission from Crimea and the self-proclaimed People’s Republics of Donetsk and Luhansk. The residents of multiple newly occupied areas reported seeing special cars with giant TV screens parked in the populated places, blaring Russian propaganda.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1906,
+      "body_end": 2283,
+      "source_links": [
+        "https://www.bbc.com/news/world-europe-61154066",
+        "https://www.reuters.com/world/europe/life-ukraines-post-siege-mariupol-barter-markets-russian-tv-2022-05-30/",
+        "https://www.themoscowtimes.com/2022/07/06/youtube-blocked-in-russia-occupied-kherson-a78220",
+        "https://www.youtube.com/watch?v=P--0Dn1ABgo"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00009",
+      "text": "Another tactic is media grabbing. The Russian military either forces famous journalists to work for them or uses trusted Ukrainian media brands to publish pro-Kremlin coverage. There is also room for the tried and tested cyberattacks, of course.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2285,
+      "body_end": 2530,
+      "source_links": [
+        "https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE50KOK",
+        "https://www.bbc.com/news/world-europe-61154066"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00010",
+      "text": "All this creates a perfect environment for disinformation to flourish. Those who managed to escape Mariupol say that, during the siege, there was only one media available — a radio station, which posed as news. It announced that the Russian troops had taken over Kyiv, and Zelenskyy had left the country and disowned the residents of Mariupol. The radio station said that it was the Ukrainian army that held the city hostage — in lockdown, disconnected, and bombarded.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2532,
+      "body_end": 3000,
+      "source_links": [
+        "https://www.youtube.com/watch?v=P--0Dn1ABgo",
+        "https://youtu.be/gtlw7Hf8w_M?t=11340"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00011",
+      "text": "In all fairness, it’s not only Russia that controls the digital infrastructure in the contested territories. Seeing how the once-Ukrainian infrastructure in Crimea is repurposed to facilitate the invasion, Ukrainian providers and the special and intelligence services frequently sabotage their networks.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3002,
+      "body_end": 3305,
+      "source_links": [
+        "https://www.accessnow.org/digital-rights-ukraine-russia-conflict/",
+        "https://www.codastory.com/newsletters/ukraine-internet-war/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00012",
+      "text": "Even private actors can seriously interfere with communications in this war. SpaceX and the USA government donated thousands of Starlink satellite terminals to Ukraine, which are said to be extremely useful for military operations. But, reportedly, there were outages when Ukrainian troops broke through the frontline into territory controlled by Russia. While no official explanation came from SpaceX, some experts hypothesise that the company could deliberately switch off the terminals to stop the Russian soldiers from using them.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3307,
+      "body_end": 3841,
+      "source_links": [
+        "https://twitter.com/KyivIndependent/status/1516423199550017549",
+        "https://www.ft.com/content/9a7b922b-2435-4ac7-acdb-0ec9a6dc8397"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00013",
+      "text": "The siege",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3843,
+      "body_end": 3852,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00014",
+      "text": "The city of Mariupol was under siege for 80 days. Connectivity dropped significantly on February 24 and went completely down on March 3. On March 2, Mariupol also lost power and running water.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3854,
+      "body_end": 4046,
+      "source_links": [
+        "https://twitter.com/netblocks/status/1496881868171534338",
+        "https://twitter.com/netblocks/status/1501590744267730946",
+        "https://www.pravda.com.ua/eng/news/2022/03/1/7326987/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00015",
+      "text": "In such extreme conditions, everything comes a step down the Maslow's pyramid, and so does the concept of essential connectivity infrastructure. Not only can one not livestream events, one can't even record them for later use because one's phone is out of juice. Another step down the pyramid: in the town where tens of thousands of people have vanished, people become the elements of the infrastructure themselves. It is they who record and share the evidence and drive out of town with phones and flash drives. It's they, after all, who decide whether to release the information. As a continuation of Russian military efforts to shut down the communication infrastructure, the soldiers targeted its most basic link, the people.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4048,
+      "body_end": 4777,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00016",
+      "text": "Almost all engineers who kept the city online have gone missing or died. In Mariupol, the last cell tower worked until March 21. Two engineers sustained it with a backup power generator, risking their lives. Volunteers were refiling the generators at other towers and repairing the internet cables.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4779,
+      "body_end": 5077,
+      "source_links": [
+        "https://twitter.com/dsszzi/status/1501659618954645508",
+        "https://www.forbes.com/sites/thomasbrewster/2022/03/15/internet-technicians-are-the-hidden-heroes-of-the-russia-ukraine-war/",
+        "https://www.forbes.com/sites/thomasbrewster/2022/03/31/the-last-days-of-mariupols-internet/",
+        "https://www.wired.co.uk/article/mariupol-ukraine-war"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00017",
+      "text": "At least 12 journalists are reported to have been killed in Ukraine in 2022. Mstyslav Chernov, the author of one of the viral shots of Marianna Vyshemrskaya, published a heart-piercing testimony of his time in Mariupol. He emphasises the harmful consequences of the internet shutdown and describes how dangerous it was for them to get the word out.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5079,
+      "body_end": 5427,
+      "source_links": [
+        "https://apnews.com/article/russia-ukraine-europe-edf7240a9d990e7e3e32f82ca351dede",
+        "https://cpj.org/data/?status=Killed&start_year=2022&end_year=2022&group_by=location_sorted&motiveConfirmed%5B%5D=Confirmed&type%5B%5D=Journalist"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00018",
+      "text": "It seems other journalists left Mariupol early on to hunt better stories, while Chernov and Maloletka specifically drove there on February 23 in anticipation of an important battle. Thus, they were the only non-pro-Russian correspondents left in the siege.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5429,
+      "body_end": 5685,
+      "source_links": [
+        "https://www.dw.com/en/ukrainian-photojournalists-there-is-a-lot-that-people-dont-know-about-ukraines-war/a-62133022"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00019",
+      "text": "What stands out in Chernov's story is how they were treated as assets by both militaries, akin to fibre optic cables. The Ukrainian military helped them to upload the footage of the maternity ward bombing. “This will change the course of the war,” said their convoy. Then, the Russian military surrounded their shelter, specifically targeting the path to their car. After a day of hiding disguised as doctors, the journalists were taken by the Ukrainian soldiers and asked to leave the city. The military had reasonable fears that if Russians were to capture the reporters, they would torture them into publicly discrediting their own work. Chernov and Maloletka’s reputations appeared to be an important factor in this information war.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5687,
+      "body_end": 6423,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00020",
+      "text": "The siege is over, but Mariupol is still under Russian occupation, with 90 percent of buildings destroyed, and little access to electricity, phone, internet, water, or healthcare. It is safe to assume that most of the footage that has been created under the blockade is now lost. For a start, by different estimates, 22,000–50,000 people vanished; presumably, so did their cameras. Since the Russian troops entered the city when the shelling stopped, they could find and destroy whatever remained. Likewise, many evacuees had to delete all the content from their phones when passing through Russian checkpoints. Those who stayed in Mariupol are now subject to online censorship and surveillance, which is even stricter than in Russia.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6425,
+      "body_end": 7159,
+      "source_links": [
+        "https://www.codastory.com/newsletters/ukraine-internet-war/",
+        "https://www.theguardian.com/world/2022/jun/16/ukraine-life-in-mariupol-under-russian-occupation",
+        "https://www.themoscowtimes.com/2022/04/04/besieged-ukrainian-city-mariupol-90-destroyed-mayor-a77203"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00021",
+      "text": "More witness testimonials of the attack on the maternity ward appeared on the internet, but didn't get much traction. Marianna Vyshemirskaya remains the face of the incident. Once back in her long-occupied hometown in the Donetsk area, she became a popular political blogger and TV show guest. Her mild pro-Russian sympathies are characteristic of that region, but no one can verify if she speaks voluntarily. For example, she gave an interview to the BBC (the coverage of which she later criticised) in the silent presence of a pro-separatist reporter.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 7161,
+      "body_end": 7714,
+      "source_links": [
+        "https://meduza.io/feature/2022/05/02/ya-perepugalas-chto-moy-rebenok-ne-dyshit",
+        "https://t.me/gixie_beauty",
+        "https://t.me/gixie_beauty/36",
+        "https://www.1tv.ru/shows/antifeyk/vypuski/antifeyk-vypusk-ot-07-04-2022",
+        "https://www.bbc.com/news/blogs-trending-61412773",
+        "https://youtu.be/rkv2fa-8vqQ?t=2165"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00022",
+      "text": "In addition to the obvious humanitarian consequences that internet shutdowns in a war zone bring, infrastructural content moderation is a potent and dangerous approach to spreading disinformation, which is exacerbated to unheard-of levels during a siege.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7716,
+      "body_end": 7970,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778619-b00023",
+      "text": "Please visit the project page for more pieces from the Unfreedom Monitor.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7972,
+      "body_end": 8045,
+      "source_links": [
+        "https://advox.globalvoices.org/special/unfreedom-monitor/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "b4ea8a9df76811956ba178a173648b672b42dc1e6289744e18904280d8220c53",
+  "word_count": 1263,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8045,
+  "retrieved_at": "2026-11-16T22:37:49.076862+00:00",
+  "raw_html_sha256": "a50e8dac404d9dac2a261cd22cccde3d36f6e72b0d6643fc600e9117eeed8895",
+  "resolved_source_url": "https://globalvoices.org/2023/01/13/infrastructural-content-moderation-the-case-of-mariupol/",
+  "canonical_url": "https://globalvoices.org/2023/01/13/infrastructural-content-moderation-the-case-of-mariupol/",
+  "source_bytes": 192044,
+  "authors": [
+    {
+      "name": "Sofia Kovalevskaya",
+      "url": "https://globalvoices.org/author/skovalevskaya/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 778619,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "a50e8dac404d9dac2a261cd22cccde3d36f6e72b0d6643fc600e9117eeed8895",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-0b94868517310f94abda",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-01",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Sofia Kovalevskaya",
+  "body_start": 453,
+  "body_end": 8498,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "e45a183b5fcc25807dbc93f36f0f3d00bd2f4d2c60f8e57cc4d6fe1597919bd9",
+  "text_path": "articles/gv-778619.txt",
+  "metadata_path": "metadata/gv-778619.json",
+  "attribution": "This story by Sofia Kovalevskaya originally appeared on Global Voices. https://globalvoices.org/2023/01/13/infrastructural-content-moderation-the-case-of-mariupol/",
+  "content_sha256": "fbec75c29ed9137ebf70e5f592e2da8bff299ab9a86840eb7ebd8cd2fa4567cb",
+  "source_sha256": "a50e8dac404d9dac2a261cd22cccde3d36f6e72b0d6643fc600e9117eeed8895",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

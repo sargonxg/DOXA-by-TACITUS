@@ -1,0 +1,643 @@
+{
+  "id": "gv-730489",
+  "publisher_id": 730489,
+  "source_id": "globalvoices:730489",
+  "source_url": "https://globalvoices.org/2021/03/07/pandemic-big-brother-highlighting-impact-of-pandemic-surveillance-on-digital-freedoms-in-eastern-europe/",
+  "title": "‘Pandemic Big Brother': Highlighting impact of COVID-19 restrictions on digital freedoms in Eastern Europe",
+  "published_at": "2021-03-07T11:39:10Z",
+  "modified_at": "2021-03-07T16:42:02Z",
+  "api_author_id": 1498,
+  "api_content_sha256": "d8674524c5386654a9befdd307b8f5cc868cc8d5e04da32a27de700e03e217f3",
+  "api_response_sha256": "77986401a5e819891872a9bdf1c0b30de63431aaa5322b33afb4833ff0dba79d",
+  "api_retrieved_at": "2026-11-16T22:20:32.943313+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 59,
+      "count": 633,
+      "name": "Belarus",
+      "slug": "belarus",
+      "parent": 57
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-730489-b00001",
+      "text": "From genome sequencing to track virus mutations to smartphone apps monitoring close contacts with those who test positive, countries around the world have harnessed technological solutions to combat the COVID-19 pandemic. But digital rights activists fear that digital surveillance has become so normalized during the pandemic that it may be hard to roll these measures back once it's over, especially in countries where digital freedoms are already under threat.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 463,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00002",
+      "text": "Pandemic Big Brother, a joint initiative of Russian digital rights organization Roskomsvoboda and Belarusian human rights center Human Constanta, has been tracking global COVID-19-related “restrictions of civil rights that are realised with digital technologies.” The initiative ranks countries around the world on how restrictive and overbearing their tech-enabled pandemic measures are and, more importantly, whether they are lifted once the public health situations improves. As the founders note,",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 465,
+      "body_end": 965,
+      "source_links": [
+        "https://humanconstanta.by/en/",
+        "https://pandemicbigbrother.online/en/",
+        "https://pandemicbigbrother.online/en/our-principles/",
+        "https://roskomsvoboda.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00003",
+      "text": "> We consider that compliance with digital rights is crucial for respecting the right to privacy, private and family life, freedom of speech, freedom of movement, and other human rights regardless of the scope of the emergency.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 967,
+      "body_end": 1194,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-730489-b00004",
+      "text": "Global Voices and Runet Echo took a look at the Pandemic Big Brother interactive map and the initiative's latest summary report, “COVID-1984: Surveillance in a pandemic year,” to see how countries in our region have used digital means to intervene in people's pandemic lives.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1196,
+      "body_end": 1471,
+      "source_links": [
+        "https://pandemicbigbrother.online/en/",
+        "https://roskomsvoboda.org/media/2021/02/Covid-1984-Surveillance-in-a-pandemic-year.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00005",
+      "text": "Key technologies and restrictions",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1473,
+      "body_end": 1506,
+      "source_links": [],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00006",
+      "text": "The project tracks media and official reports of restrictions of civil and digital rights across several key areas:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1508,
+      "body_end": 1623,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00007",
+      "text": "Video monitoring and facial recognition",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1625,
+      "body_end": 1664,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00008",
+      "text": "Mobile phone surveillance",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1666,
+      "body_end": 1691,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00009",
+      "text": "Surveillance using state-made apps",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1693,
+      "body_end": 1727,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00010",
+      "text": "Limitations on access to official information",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1729,
+      "body_end": 1774,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00011",
+      "text": "Freedom of speech violations",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1776,
+      "body_end": 1804,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00012",
+      "text": "Internet shutdowns",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 1806,
+      "body_end": 1824,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00013",
+      "text": "Legal prosecution",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 1826,
+      "body_end": 1843,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00014",
+      "text": "Drone control",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 1845,
+      "body_end": 1858,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00015",
+      "text": "The recent Pandemic Big Brother report focused on a few key surveillance technologies: the creation and use of mobile apps to track or restrict citizens’ movements and monitor close contacts, the deployment of CCTV (close-circuit video cameras) and face recognition technologies; and the use of various location-based and geotagging tools.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 1860,
+      "body_end": 2199,
+      "source_links": [
+        "https://roskomsvoboda.org/media/2021/02/Covid-1984-Surveillance-in-a-pandemic-year.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00016",
+      "text": "Digital rights activists warn that “the ability to access information about the geolocation of mobile devices can be a threat to privacy, freedom of movement, choice of residence and freedom of assembly, and can undermine public trust in authorities.”",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2201,
+      "body_end": 2452,
+      "source_links": [
+        "https://pandemicbigbrother.online/en/our-principles/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00017",
+      "text": "Russia",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 2454,
+      "body_end": 2460,
+      "source_links": [],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00018",
+      "text": "Measures deployed: drone control, limited access to official information, mobile phone surveillance, freedom of speech violations, surveillance using state-made apps, legal prosecution, video monitoring and facial recognition.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 2462,
+      "body_end": 2688,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00019",
+      "text": "The first lockdowns were introduced in Moscow and Moscow region at the end of March 2020. Since then, the project recorded a number of ways Russia has used technology to control and police its citizens during the pandemic. As cities across Russia went in and out of lockdown, reports of government-mandated quarantine surveillance apps and other mobile phone-based tools, such as public transport QR-code passes, dominated media coverage.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 2690,
+      "body_end": 3128,
+      "source_links": [
+        "https://meduza.io/feature/2020/11/17/pravitelstvo-vypustit-mobilnoe-prilozhenie-stopkoronavirus-moi-kontakty-ono-budet-otslezhivat-kontakty-rossiyan-s-zabolevshimi?fbclid=IwAR1kJxqKkhA7g88AqyBqLTkkW5p",
+        "https://rg.ru/2020/04/11/moscow-ukaz43-reg-dok.html",
+        "https://roskomsvoboda.org/60878/",
+        "https://www.reuters.com/article/us-health-coronavirus-russia/russia-to-use-mobile-phones-to-track-people-at-risk-of-coronavirus-pm-idUSKBN21A1MT"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00020",
+      "text": "> Since the start of the pandemic, the Russian authorities have launched four different apps, which are used to issue digital passes, monitor people under quarantine and track contacts with those infected with coronavirus.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3130,
+      "body_end": 3352,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-730489-b00021",
+      "text": "Another dominant technology that gained widespread attention was the automated facial recognition system deployed across the CCTV networks in Moscow, Saint Petersburg, and other major cities in Russia. There were also reports of drones and tracker bracelets deployed by local authorities to monitor self-isolating citizens.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3354,
+      "body_end": 3677,
+      "source_links": [
+        "https://www.interfax.ru/russia/704026",
+        "https://www.interfax.ru/russia/704265",
+        "https://www.themoscowtimes.com/2020/03/17/russia-employs-ai-and-video-surveillance-against-coronavirus-disruption-a69658",
+        "https://www.themoscowtimes.com/2020/03/25/coronavirus-outbreak-is-major-test-for-russias-facial-recognition-network-a69736"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00022",
+      "text": "According to the report, since the start of the pandemic, “over 1.1 million people were prosecuted in Russia under the administrative code for violating coronavirus restrictions.”",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3679,
+      "body_end": 3858,
+      "source_links": [
+        "https://roskomsvoboda.org/media/2021/02/Covid-1984-Surveillance-in-a-pandemic-year.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00023",
+      "text": "Aside from surveillance tech, Russian authorities also policed online speech, dispensing fines for alleged COVID-19 fakes posted on social media and threatening journalists and medical workers for disclosing or questioning COVID-19 statistics released by the state.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 3860,
+      "body_end": 4125,
+      "source_links": [
+        "https://roskomsvoboda.org/64929/",
+        "https://uralpolit.ru/news/chel/04-06-2020/204104",
+        "https://www.article19.org/resources/russia-government-official-uses-facebook-to-threaten-italian-journalist-over-coronavirus-reports/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00024",
+      "text": "Vaccination is now well underway in the country, and the Kremlin has announced the development of a new mobile surveillance app to track vaccinated citizens’ health.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4127,
+      "body_end": 4292,
+      "source_links": [
+        "https://roskomsvoboda.org/62431/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00025",
+      "text": "Belarus",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4294,
+      "body_end": 4301,
+      "source_links": [],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00026",
+      "text": "Measures deployed: limited access to official information, freedom of speech violations, legal prosecution, and other measures.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4303,
+      "body_end": 4430,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00027",
+      "text": "Though Belarus has been less tech-savvy in terms of restricting citizens’ movements or tracking their location and close contacts, the authorities have nonetheless cracked down on online spaces. This coincided with the ongoing anti-government protests in the country, giving law enforcement an additional pretext for restricting free expression, cracking down on street rallies, and policing social media.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 4432,
+      "body_end": 4837,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/2020-special-coverage/belarus-in-turmoil/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00028",
+      "text": "Read more about the turmoil in Belarus",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 4839,
+      "body_end": 4877,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/2020-special-coverage/belarus-in-turmoil/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00029",
+      "text": "As early as March 2020, Belarusian authorities started dispensing warnings and fines for allegedly fake coronavirus-related news and posts on social media. In May, an ambulance paramedic was detained for seven days for critiquing the state's feeble response to the pandemic on a YouTube live stream.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 4879,
+      "body_end": 5178,
+      "source_links": [
+        "http://mininform.gov.by/news/all/vyneseno-preduprezhdenie-za-rasprostranenie-lozhnoy-informatsii/",
+        "http://mininform.gov.by/news/all/za-feyk-vyneseno-trebovanie-vladeltsu-internet-resursa/",
+        "https://people.onliner.by/2020/05/09/v-lide-feldshera-skoroj-posadili-na-sem-sutok"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00030",
+      "text": "Throughout the pandemic, the Belarusian state has limited access to official figures on those who contracted the virus, were hospitalized or died of COVID-19. In April 2020, the state-run StopCOVID portal stopped publishing regional breakdowns of COVID-19 numbers. State-owned media were accused of misrepresenting the pandemic situation in the country in comparison to other parts of the world.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5180,
+      "body_end": 5575,
+      "source_links": [
+        "https://reform.by/185637-manipuljacii-bt-v-osveshhenii-jepidemii-haos-v-zapadnyh-stranah-belarus-ostrovok-uspeha",
+        "https://reform.by/gosportal-stopcovid-jeliminiroval-statistiku-po-regionam"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00031",
+      "text": "Ukraine",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5577,
+      "body_end": 5584,
+      "source_links": [],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00032",
+      "text": "Measures deployed: freedom of speech violations, surveillance using state-made apps, and other measures.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5586,
+      "body_end": 5690,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00033",
+      "text": "Compared to Russia, Ukraine's use of digital technologies in the pandemic has been relatively modest. Though the new Ministry of Digital Transformation has touted its first steps in the ongoing reform of electronic governance as a success, their efforts to digitize citizen-state relations through the all-encompassing “state in a smartphone” app have met with criticism from digital rights advocates. A massive citizen data leak in May 2020 and ongoing lack of clarity about privacy guarantees and data security in the new system continue to plague the Ministry's efforts.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 5692,
+      "body_end": 6265,
+      "source_links": [
+        "https://globalvoices.org/2020/10/21/who-is-selling-ukrainians-personal-data-online-and-why/",
+        "https://globalvoices.org/2021/02/11/security-concerns-and-legal-ambiguities-threaten-the-future-of-ukraines-state-in-a-smartphone/",
+        "https://nv.ua/ukraine/events/yuri-lazebnikova-about-the-future-of-the-state-in-the-smartphone-50070736.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00034",
+      "text": "In April 2020, Ukraine launched an app to control observance of self-isolation measures, aimed at those who had recently travelled outside the country or were suspected of being COVID-positive. In the course of 14 days, users could receive up to 10 notifications, including those that required them to take a selfie. The new GPS-enabled app was criticized for needless sharing of user information with “third parties” (as stated in its user agreement).",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 6267,
+      "body_end": 6719,
+      "source_links": [
+        "https://nv.ua/techno/technoblogs/diy-vdoma-chto-nuzhno-znat-o-bezopasnosti-prilozheniya-dlya-samoizolyacii-50081431.html",
+        "https://tech.liga.net/technology/novosti/zarabotalo-prilojenie-dlya-kontrolya-samoizolyatsii-za-neispolzovanie---shtraf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00035",
+      "text": "Throughout the year, there were also reports of malfunctions in the app, where it falsely identified users as being in a different location or did not work on some smartphones. This created difficulties, especially for citizens crossing the border between government-controlled Ukraine and occupied territories of self-proclaimed Luhansk and Donetsk People's Republics in the East of the country.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 6721,
+      "body_end": 7117,
+      "source_links": [
+        "https://www.radiosvoboda.org/a/news-dij-vdoma-donbas/30939132.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00036",
+      "text": "Other developments included the Ukrainian parliament allowing the collection of patients’ data without their consent for a specified period during and after active quarantine. However, this measure has also been used in many EU countries and EU experts note it does not violate the General Data Protection Regulation.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 7119,
+      "body_end": 7436,
+      "source_links": [
+        "https://edpb.europa.eu/sites/edpb/files/files/file1/edpb_statement_2020_processingpersonaldataandcovid-19_en.pdf",
+        "https://netfreedom.org.ua/article/parlament-dozvoliv-pid-chas-karantinu-zbirati-dani-paciyentiv-bez-yih-zgodi"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00037",
+      "text": "In May 2020, Ukraine's state security service reported that its cybersecurity forces had blocked over 2,300 social media groups for spreading COVID-19-related disinformation. According to law enforcement, they identified 323 “agitators” who shared false information about the pandemic online. Criminal cases were opened against 16 of them, as these individuals allegedly “had their actions directed by Russian authorities” in order “to create chaos and panic” in Ukrainian society around the public health crisis.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 7438,
+      "body_end": 7951,
+      "source_links": [
+        "https://netfreedom.org.ua/article/za-chas-karantinu-sbu-vikrila-323-internet-agitatoriv-yaki-poshiryuvali-dezinformaciyu-pro-covid-19"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00038",
+      "text": "Moldova",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 7953,
+      "body_end": 7960,
+      "source_links": [],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730489-b00039",
+      "text": "Pandemic Big Brother reported no violations of digital rights or restrictions of civil liberties with regard to the use of technology during the pandemic in Moldova.",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 7962,
+      "body_end": 8127,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "293b91a6f751c84e8842e5f8c8be0ffcd79951bdd4ffbd4b650352426fd47fc3",
+  "word_count": 1185,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8127,
+  "retrieved_at": "2026-11-16T22:29:43.180257+00:00",
+  "raw_html_sha256": "d8ffe6bb018c37282b05bc79ae28d11ec1311fe1fb903de7681d5ec16e40928a",
+  "resolved_source_url": "https://globalvoices.org/2021/03/07/pandemic-big-brother-highlighting-impact-of-pandemic-surveillance-on-digital-freedoms-in-eastern-europe/",
+  "canonical_url": "https://globalvoices.org/2021/03/07/pandemic-big-brother-highlighting-impact-of-pandemic-surveillance-on-digital-freedoms-in-eastern-europe/",
+  "source_bytes": 197850,
+  "authors": [
+    {
+      "name": "Tanya Lokot",
+      "url": "https://globalvoices.org/author/tetyana-lokot/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 730489,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "d8ffe6bb018c37282b05bc79ae28d11ec1311fe1fb903de7681d5ec16e40928a",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-5a9a3e3e0a8fc5cad5d8",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-03",
+    "eligible_month_documents": 91,
+    "selected_month_documents": 76,
+    "inclusion_probability": 0.8351648351648352,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Tanya Lokot",
+  "body_start": 544,
+  "body_end": 8671,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "f6458141f9e23ad42645714104bb2325b954775ffd2b7ff854204c32c81fe789",
+  "text_path": "articles/gv-730489.txt",
+  "metadata_path": "metadata/gv-730489.json",
+  "attribution": "This story by Tanya Lokot originally appeared on Global Voices. https://globalvoices.org/2021/03/07/pandemic-big-brother-highlighting-impact-of-pandemic-surveillance-on-digital-freedoms-in-eastern-europe/",
+  "content_sha256": "fbc0eb8a837bfd091d4772fee4a781a1ad6b42a6171dfd64dc8007259141df6d",
+  "source_sha256": "d8ffe6bb018c37282b05bc79ae28d11ec1311fe1fb903de7681d5ec16e40928a",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

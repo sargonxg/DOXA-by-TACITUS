@@ -1,0 +1,35 @@
+Internet watchdog finds encryption flaw in mandatory Chinese Olympic app
+Written by: Oiwan Lam
+Originally published by Global Voices: https://globalvoices.org/2022/01/22/internet-watchdog-finds-encryption-flaw-in-mandatory-chinese-olympic-app/
+Published: 2022-01-22T02:53:25Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+The Citizen Lab, a Toronto-based internet freedom watchdog, found a “devastating” flaw that jeopardizes encrypted communication in the My2022 mobile app, a mandatory health monitoring app for all Beijing Winter Olympic attendees. The security loophole would make personal data — including audio files, health status, passport information, medical and travel history — vulnerable to third-party exploitation.
+
+Another cybersecurity firm, Internet 2.0, also issued an alert of widespread surveillance practices in China and suggested overseas attendees leave their phones at home and use burner phones inside China.
+
+The International Olympic Committee (IOC), however, dismissed Citizen Lab’s security audit and stressed that the Beijing health app has “no critical vulnerabilities” according to assessments conducted by two independent cybersecurity testing organizations.
+
+Athletes, journalists, and all other Beijing Winter Olympic attendees are required to use the My2022 app 14 days before flying to China. The users are required to submit health and travel information including COVID-19 test results and vaccination certificates through the app. The health tracking app also has news, audio and video messaging, and file-sharing functions.
+
+Published on January 18, the Citizen Lab report points out that the My2022 app could not validate SSL certificates with at least five servers and the loophole would allow attackers to intercept the encrypted communication and steal private data by deceiving the app into connecting with a malicious host. In other words, the flaw has literally disabled the encryption function.
+
+In addition, the research also found that some sensitive data is transmitted through the app to a host without any security protection, and as a result, the data “can be read by any passive eavesdropper, such as someone in the range of unsecured wifi access point.”
+
+The Canadian internet freedom watchdog also found a censorship list with 2,000 keywords, including sensitive terms like Xinjiang, Tibet, Dalai Lama, etc., embedded in the app under the filename “illegalwords.txt.” But the censorship function has not been activated.
+
+The Citizen Lab disclosed its findings to the IOC on December 3, 2021, and issued a 15-day deadline for a substantial response and a 45-day deadline for fixing the flaw. It released its report on January 18 after the 15-day deadline passed.
+
+On the same day, Internet 2.0 issued a paper showing how the Chinese national security legislation had affected corporate behavior in assisting state surveillance through the design of their mobile applications. The cybersecurity firm warned that “all athletes and visitors to China for the Olympics will be exposed to such laws and surveillance culture.”
+
+It further recommends that Olympic athletes and visitors use a new phone with a temporary email account while inside China and warns them against using the “burner” phone after they exit China to prevent private data from their cloud account from being collected by Chinese mobile apps and operators.
+
+While the IOC dismissed the security concern, the US Olympic Committee told their athletes to bring a burner phone to Beijing as they have to “assume that every device and every communication, transaction and online activity will be monitored” in China.
+
+The German athletes’ group, Athleten Deutschland, slammed the IOC, saying that “it is inexplicable and irresponsible of the IOC to require participants to use an app with such glaring security vulnerabilities.”
+
+In response to the international security concern, Chinese state-funded media CGTN quoted tech analyst Andy Mok who dismissed Citizen Lab’s report as “a well-coordinated attack to create negative PR impact for the upcoming Olympics.” To such claim, Oliver Linow Internet Freedom Specialist at DW responded:
+
+For more information about this topic, see our special coverage When sports are political: The other side of Beijing 2022

@@ -1,0 +1,808 @@
+{
+  "id": "gv-787328",
+  "publisher_id": 787328,
+  "source_id": "globalvoices:787328",
+  "source_url": "https://globalvoices.org/2023/05/11/undertones-a-look-inside-venezuelas-extraordinary-corruption-scandal/",
+  "title": "Undertones: A look inside Venezuela's extraordinary corruption scandal",
+  "published_at": "2023-05-11T09:39:07Z",
+  "modified_at": "2025-01-15T18:03:52Z",
+  "api_author_id": 2945,
+  "api_content_sha256": "e4678eeb4f501f8fb1249e1b0718f71e266f6d97019f5953bb1efe8da5c3d326",
+  "api_response_sha256": "54f78f672a26b6c6455fead63a0e1446e0433e81dd766bf7ded37091ab7c5c37",
+  "api_retrieved_at": "2026-11-16T22:20:52.946884+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 157,
+      "count": 1167,
+      "name": "Venezuela",
+      "slug": "venezuela",
+      "parent": 1354
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-787328-b00001",
+      "text": "This story is part of Undertones, Global Voices’ Civic Media Observatory‘s newsletter. Our newsletters don’t usually offer music recommendations, but according to Gabriela Mesones Rojo, the song De Donde Vengo, by Venezuelan band La Pagana Trinidad, would make the perfect theme song for this edition of Undertones. Subscribe to Undertones here.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 345,
+      "source_links": [
+        "https://globalvoices.org/special/observatory/",
+        "https://globalvoices.us2.list-manage.com/subscribe?u=9307106bf78cc186e924ad999&id=5633e3eb9a",
+        "https://www.youtube.com/watch?v=nsE_xqz7XK4"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00002",
+      "text": "Mesones was in shock when she read the news on her Twitter feed a few weeks ago. “Usually government officials go to great lengths to deny huge corruption cases, like Odebrecht and Panama Papers,” Mesones says. “But here, they recognized it. It was a first. I thought that there must be something behind it.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 347,
+      "body_end": 655,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00003",
+      "text": "This was, indeed, not your regular mega-corruption case.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 657,
+      "body_end": 713,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00004",
+      "text": "In late March, the administration of President Nicolás Maduro opened a series of investigations against dozens of people working at Petroleum of Venezuela (PDVSA), Venezuela’s national oil and natural gas corporation, and other companies. Today, 61 high-ranking politicians and civil servants are behind bars awaiting trial. One of them died by suicide a month after the arrest.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 715,
+      "body_end": 1093,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00005",
+      "text": "They are accused of embezzling billions of dollars – the exact amount is unknown, but the press reported it to be between $2 billion to $10 billion. To put things into perspective, $3 billion represents a third of the country’s national budget; a rather useful capital for a country entrenched in a dire economic and humanitarian crisis. Seven million Venezuelans have fled the country and 20 million Venezuelans are in need of life-saving assistance, according to the European Commission.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1095,
+      "body_end": 1584,
+      "source_links": [
+        "https://civil-protection-humanitarian-aid.ec.europa.eu/news-stories/news/venezuelan-crisis-commission-releases-eu75-million-humanitarian-funding-during-2023-international-2023-03-17_en",
+        "https://transparenciave.org/salud-en-venezuela-un-privilegio-hecho-en-corrupcion/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00006",
+      "text": "The news did not stop there: a few days after the arrests, one of Maduro’s staunchest allies, Tareck El Aissaimi, resigned as head of PDVSA and Minister of Petroleum. He has not reappeared in public since.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1586,
+      "body_end": 1791,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00007",
+      "text": "Today, speculations abound as to what’s behind “the purge” that took place in Venezuela’s most powerful company.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1793,
+      "body_end": 1905,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00008",
+      "text": "> PDVSA: a symbol and a lifeline",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1907,
+      "body_end": 1939,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787328-b00009",
+      "text": "> Venezuela has the largest known oil reserves in the world. This has made state oil company PDVSA a cornerstone of Venezuela’s economy, though mining is now gaining importance. PDVSA was, notably, Hugo Chávez’s golden ticket. With oil prices soaring in the 2000s, the company provided the funding for his Bolivarian socialist revolution.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1941,
+      "body_end": 2279,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787328-b00010",
+      "text": "> Mesones grew up in Caracas during the golden years of PDVSA in the 1990s and early 2000s. “If you had a job at PDVSA, you had your life all figured out, because you’d have a home and your children go to a nice school. Everyone wanted to work there.”",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2281,
+      "body_end": 2532,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787328-b00011",
+      "text": "> PDVSA became increasingly politicized under Chávez, who fired nearly 19,000 employees who went on strike in protest at his policies in 2003. Since then, corruption cases and technical failures have multiplied.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2534,
+      "body_end": 2745,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recqJN27Y7kBHYB5U?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787328-b00012",
+      "text": "> In 2016, the U.S. placed sanctions on the company, and El Aissaimi was de facto tasked with keeping PDVSA afloat. Clandestine oil trading arrangements were developed, especially with Russia, China, and Mexico. The meandering, opaque nature of these arrangements made them ripe for bribery and other forms of corruption.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2747,
+      "body_end": 3068,
+      "source_links": [
+        "https://globalvoices.org/2021/08/23/venezuela-and-china-strong-bond-or-empty-words/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787328-b00013",
+      "text": "How are people talking about this case?",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3070,
+      "body_end": 3109,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00014",
+      "text": "“Nicolás Maduro is not to be blamed for corruption in Venezuela”",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3111,
+      "body_end": 3175,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tblkIjk2LBbY4kdXO/viwcq1VaO6mDmYHtn/recFk5ZgVkKuSYFsK?blocks=hide"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00015",
+      "text": "This narrative in a nutshell: “Maduro is doing an amazing job”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3177,
+      "body_end": 3239,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00016",
+      "text": "The government’s “cybertroops” and Maduro’s supporters assert that he is fighting the good fight against corruption. Corruption cases, therefore, are seen as an anomaly in his government despite all evidence to the contrary in the form of previous mega-corruption cases involving his administration. This narrative is shared through inorganic behavior online—about 97 percent of pro-government hashtags were shared by a network of inauthentic accounts.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3241,
+      "body_end": 3693,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recLfpcEraNyAvftu?blocks=bipDwtmZEh6gbZRVS",
+        "https://proboxve.org/es/publicacion/chavismo-promueve-lucha-anticorrupcion-de-maduro-en-twitter-en-medio-del-nuevo-escandalo-del-desfalco-a-pdvsa"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00017",
+      "text": "At the time of writing, the government has fallen silent regarding the PDVSA case.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3695,
+      "body_end": 3777,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00018",
+      "text": "An example of how this narrative spreads online: Nicolás Maduro: “Those who must fall, will”",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3779,
+      "body_end": 3871,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recaKUFkuihYaIshv?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00019",
+      "text": "Where it is shared: Twitter",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3873,
+      "body_end": 3900,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00020",
+      "text": "Author: Nicolás Maduro, President of Venezuela",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3902,
+      "body_end": 3948,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00021",
+      "text": "Content: Maduro shared images of his press conference on the PDVSA case and wrote: “People of Venezuela! I repeat: Nerves of steel, calmness, wisdom, and utmost popular conscience. We will punish the corrupt with the power of justice and the law, whoever it may be, whoever falls in the process! We will not allow them to steal from the people.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3950,
+      "body_end": 4295,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00022",
+      "text": "Context: The National Anti-Corruption Police detained high-profile politicians, officials, and managers linked to PDVSA for their alleged entanglement a corruption scandal that is estimated to involve the theft of a third of Venezuela’s public budget.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4297,
+      "body_end": 4548,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00023",
+      "text": "Subtext: Maduro washes his hands of all responsibility regarding this mega corruption case. He claims his anti-corruption efforts are transparent and will eradicate corruption.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4550,
+      "body_end": 4726,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00024",
+      "text": "Civic Impact: 0, because this item was published by a relevant political actor in Venezuela but doesn't provide new information on the case. It doesn't seem to be particularly harmful content, besides the fact that it diverts responsibility and doesn't offer accountability.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4728,
+      "body_end": 5002,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00025",
+      "text": "See the complete analysis of the item here.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5004,
+      "body_end": 5047,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recaKUFkuihYaIshv?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00026",
+      "text": "2. “Corruption is the cornerstone of Maduro’s dictatorship”",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5049,
+      "body_end": 5108,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tblkIjk2LBbY4kdXO/viwcq1VaO6mDmYHtn/recCbLZAUPFG4b1aG?blocks=hide"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00027",
+      "text": "This narrative in a nutshell: “All they do is steal!”",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5110,
+      "body_end": 5163,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00028",
+      "text": "For many Venezuelans, corruption is an omnipresent fact of life that ranges from street bribes to massive, transnational cases. Mesones writes that people “satirize big corruption scandals and criticize those who appear to be surprised by this type of news.”",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5165,
+      "body_end": 5423,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00029",
+      "text": "In other words, Venezuelans are exhausted. Many have grown apathetic and disinterested in politics after years of trying to change the regime, to no avail.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5425,
+      "body_end": 5580,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00030",
+      "text": "Journalists and activists, however, continue to highlight the ways in which corruption is an inherent part of Maduro’s politics. According to the global anti-corruption non-profit Transparency International (TI), Venezuela ranks fourth for corruption among the countries in the world, right after Somalia, Syria, and South Sudan. Mesones analyzes TI’s tweet here.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5582,
+      "body_end": 5945,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recyLvtKL3XabAriu?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00031",
+      "text": "An example of how this narrative spreads online: “Venezuela's problems aren't because of sanctions, they are because of corruption”",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5947,
+      "body_end": 6078,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/rec7izkVTgiqN9Elr?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00032",
+      "text": "Where it is shared: TikTok",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 6080,
+      "body_end": 6106,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00033",
+      "text": "Author: Ana Milagros Parra, Venezuelan political scientist",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 6108,
+      "body_end": 6166,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00034",
+      "text": "Content: Parra makes use of the social media trend where people share an opinion while applying makeup. She references the PDVSA scandal and uses it to support her claim that corruption in Venezuela existed prior to the imposition of international sanctions and that it has a more damaging impact on the Venezuelan population than the sanctions themselves.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 6168,
+      "body_end": 6524,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00035",
+      "text": "Context: Several countries and bodies, such as the United States, Canada, the European Union, Switzerland, Mexico, and Panama, imposed sanctions on individuals linked to the administration of Nicolás Maduro in response to Venezuela’s political unrest and elections between the period 2014-2018.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 6526,
+      "body_end": 6820,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00036",
+      "text": "Subtext: Parra implies that corruption in Venezuela has become so systematic and generalized that the sanctions have nearly no effect on the population.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 6822,
+      "body_end": 6974,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00037",
+      "text": "Civic Impact: +1 out of +3, because it is the opinion of a well-informed political scientist, who nevertheless oversimplifies the issue of sanctions.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 6976,
+      "body_end": 7125,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00038",
+      "text": "See the complete analysis of the item here.",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 7127,
+      "body_end": 7170,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/rec7izkVTgiqN9Elr?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00039",
+      "text": "3. “Maduro’s government uses corruption allegations to undermine any resistance”",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 7172,
+      "body_end": 7252,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tblkIjk2LBbY4kdXO/viwcq1VaO6mDmYHtn/recjIz1MJfCNrePEb?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00040",
+      "text": "This narrative in a nutshell: “Maduro is playing political chess”",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 7254,
+      "body_end": 7319,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00041",
+      "text": "Venezuelan journalists are left wondering why one of Maduro’s closest allies resigned, or rather, why Maduro got rid of El Assaimi. There are many theories about what is happening behind the scenes, but accessing reliable evidence is difficult in Venezuela’s current context.",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 7321,
+      "body_end": 7596,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00042",
+      "text": "Many believe that Maduro “kept quiet about the biggest corruption case and used it as a trump card when El Aissami became a threat,” Mesones says. He also built an effective communications campaign around it, she says— two birds with one stone.",
+      "page": null,
+      "paragraph": 42,
+      "body_start": 7598,
+      "body_end": 7842,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00043",
+      "text": "Others believe Maduro is negotiating with the United States because he intends to step down.",
+      "page": null,
+      "paragraph": 43,
+      "body_start": 7844,
+      "body_end": 7936,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/rec9QPxMQOgb6TpLO?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00044",
+      "text": "An example of how this narrative spreads online: “El Aissami's downfall is a political strategy”",
+      "page": null,
+      "paragraph": 44,
+      "body_start": 7938,
+      "body_end": 8034,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recDTBrDpA3fM35HY?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00045",
+      "text": "Where it is shared: Twitter",
+      "page": null,
+      "paragraph": 45,
+      "body_start": 8036,
+      "body_end": 8063,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00046",
+      "text": "Author: Ibeyise Pacheco, Venezuelan journalist",
+      "page": null,
+      "paragraph": 46,
+      "body_start": 8065,
+      "body_end": 8111,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00047",
+      "text": "Content: In a Twitter thread, Pacheco claims that Maduro has no interest in fighting corruption, but rather is using it as a means to dispose of unreliable political actors. She writes: “It may be Tareck El Aissami's last tweet in which he recently announced his resignation, a fact that does not quell the internal crisis among key regime members. The former Minister of Petroleum, who ran out of options and is facing facts, is a prisoner, and as long as he lives, an enemy.”",
+      "page": null,
+      "paragraph": 47,
+      "body_start": 8113,
+      "body_end": 8590,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00048",
+      "text": "Context: The audit against El Aissami is led by two of the most important people in Maduro’s inner circle, Jorge and Delcy Rodriguez, and not the pertinent institutions, such as the Ministry of Justice.",
+      "page": null,
+      "paragraph": 48,
+      "body_start": 8592,
+      "body_end": 8794,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00049",
+      "text": "Subtext: Pacheco implies that more changes are to come in the near future.",
+      "page": null,
+      "paragraph": 49,
+      "body_start": 8796,
+      "body_end": 8870,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00050",
+      "text": "Civic Impact: 0, because despite being a credible journalist, Pacheco provides little to no hard evidence for her claims.",
+      "page": null,
+      "paragraph": 50,
+      "body_start": 8872,
+      "body_end": 8993,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00051",
+      "text": "See this item’s complete analysis here.",
+      "page": null,
+      "paragraph": 51,
+      "body_start": 8995,
+      "body_end": 9034,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tbltLXF10shJFrXfk/viwNFJTKVhMUbw0Lh/recDTBrDpA3fM35HY?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00052",
+      "text": "See more items and narratives from this story",
+      "page": null,
+      "paragraph": 52,
+      "body_start": 9036,
+      "body_end": 9081,
+      "source_links": [
+        "https://airtable.com/shr7rp0kR9LfmXH2V/tblDCCYc56OMFg9sO/viwkpCBRoQjqWrdhf/reccKmdDDpxqpanHd?blocks=bipDwtmZEh6gbZRVS"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00053",
+      "text": "Subscribe to Undertones",
+      "page": null,
+      "paragraph": 53,
+      "body_start": 9083,
+      "body_end": 9106,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/subscribe?u=9307106bf78cc186e924ad999&id=5633e3eb9a"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787328-b00054",
+      "text": "This newsletter is published through the Community CMO, a new project at the Civic Media Observatory that works with our wider community. If you want to learn more or be a part of it, consider pitching us or join our next open methodology training at 11 AM UTC on May 12, 2023.",
+      "page": null,
+      "paragraph": 54,
+      "body_start": 9108,
+      "body_end": 9385,
+      "source_links": [
+        "https://community.globalvoices.org/2023/03/pitch-an-investigation-idea-to-our-community-civic-media-observatory/",
+        "https://www.eventbrite.com/e/open-training-civic-media-observatory-methodology-tickets-624443466217"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "e2a97a32bfe649bcf74f1af4ebab8a51880945a8818fc9a124979382997290c6",
+  "word_count": 1476,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 3,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 9385,
+  "retrieved_at": "2026-11-16T22:39:10.007413+00:00",
+  "raw_html_sha256": "a0f54c01ca68daad528e8e2c5b43685735761ebf9c6d89a0bceb851acbb3e26f",
+  "resolved_source_url": "https://globalvoices.org/2023/05/11/undertones-a-look-inside-venezuelas-extraordinary-corruption-scandal/",
+  "canonical_url": "https://globalvoices.org/2023/05/11/undertones-a-look-inside-venezuelas-extraordinary-corruption-scandal/",
+  "source_bytes": 197337,
+  "authors": [
+    {
+      "name": "Civic Media Observatory",
+      "url": "https://globalvoices.org/author/civic-media-observatory/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 787328,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "a0f54c01ca68daad528e8e2c5b43685735761ebf9c6d89a0bceb851acbb3e26f",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-7356a51c466604b266f4",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-05",
+    "eligible_month_documents": 130,
+    "selected_month_documents": 109,
+    "inclusion_probability": 0.8384615384615385,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Civic Media Observatory",
+  "body_start": 485,
+  "body_end": 9870,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "dfd23884bed4779744eff1ba96bb2013558968809c758672b69c56b8efa25b75",
+  "text_path": "articles/gv-787328.txt",
+  "metadata_path": "metadata/gv-787328.json",
+  "attribution": "This story by Civic Media Observatory originally appeared on Global Voices. https://globalvoices.org/2023/05/11/undertones-a-look-inside-venezuelas-extraordinary-corruption-scandal/",
+  "content_sha256": "90bd2294c833f94f621260ad2f524bd66e14613d4266bc15d97cda3e6d161e6b",
+  "source_sha256": "a0f54c01ca68daad528e8e2c5b43685735761ebf9c6d89a0bceb851acbb3e26f",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

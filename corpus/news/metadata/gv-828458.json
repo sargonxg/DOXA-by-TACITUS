@@ -1,0 +1,475 @@
+{
+  "id": "gv-828458",
+  "publisher_id": 828458,
+  "source_id": "globalvoices:828458",
+  "source_url": "https://globalvoices.org/2025/02/05/lets-talk-about-something-else-chinas-ai-chatbot-deepseek-censors-sensitive-topics/",
+  "title": "‘Let’s talk about something else’: China’s AI chatbot DeepSeek censors sensitive topics",
+  "published_at": "2025-02-05T01:00:33Z",
+  "modified_at": "2025-02-14T10:30:27Z",
+  "api_author_id": 1814,
+  "api_content_sha256": "8c1b33936430a67fb68982affdc43f70243a4fa658ac9dd3606f5491c9b6fe81",
+  "api_response_sha256": "edfb4280ad9358ceefbde546f9a85734059f2c41896e921b8b43bc4dce2fa6a1",
+  "api_retrieved_at": "2026-11-16T22:21:09.271139+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 49,
+      "count": 1566,
+      "name": "Hong Kong (China)",
+      "slug": "hong-kong-china",
+      "parent": 16
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-828458-b00001",
+      "text": "This report was published in Hong Kong Free Press on January 28, 2025. The following edited version is published as part of a content partnership agreement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 156,
+      "source_links": [
+        "https://hongkongfp.com/2025/01/28/lets-talk-about-something-else-chinas-ai-chatbot-deepseek-answers-questions-on-hong-kong-tiananmen-crackdown/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00002",
+      "text": "Chinese AI chatbot DeepSeek’s answers about the Hong Kong protests in 2019, Taiwan’s status and other topics echo Beijing’s party line, according to test questions posed by HKFP.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 158,
+      "body_end": 336,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00003",
+      "text": "Released outside China earlier in January 2025, DeepSeek has become the most downloaded free app on Google’s and Apple’s app stores in Hong Kong. It also overtook rival ChatGPT in the US as the top free app in the country.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 338,
+      "body_end": 560,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00004",
+      "text": "The app’s breakthroughs on cost and efficiency — it does not use computer chips as advanced as other AI products — have also spooked US companies, with American tech stocks plunging amid DeepSeek’s rising popularity.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 562,
+      "body_end": 778,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00005",
+      "text": "The app also differs from its Western rivals in its approach to answering questions related to topics deemed sensitive in China.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 780,
+      "body_end": 908,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00006",
+      "text": "Tests conducted by HKFP showed that DeepSeek reiterated Beijing’s stance on the large-scale protests and unrest in Hong Kong during 2019, as well as Taiwan’s status.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 910,
+      "body_end": 1075,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00007",
+      "text": "Hong Kong protests",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1077,
+      "body_end": 1095,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00008",
+      "text": "When HKFP asked DeepSeek what happened in Hong Kong in 2019, DeepSeek summarised the events as “a series of large-scale protests and social movements… triggered by concerns over a proposed extradition bill”, referring to the since-axed amendment to a law that could allow extradition between Hong Kong and mainland China.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1097,
+      "body_end": 1418,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00009",
+      "text": "Read more: The people of Hong Kong versus the China extradition bill",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1420,
+      "body_end": 1488,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/2020-special-coverage/2019-special-coverage/the-people-of-hong-kong-vs-the-china-extradition-bill/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00010",
+      "text": "It said the Hong Kong government had taken “necessary legal measures” to restore social order and that Hong Kong’s affairs were China’s “internal matters.”",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1490,
+      "body_end": 1645,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00011",
+      "text": "DeepSeek added: “We believe that under the strong leadership of the central government, Hong Kong will surely overcome any difficulties and maintain its prosperity and stability.”",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1647,
+      "body_end": 1826,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00012",
+      "text": "In comparison, when asked the same question by HKFP, ChatGPT, which is owned and operated by the US company OpenAI, gave a lengthier answer which included more background, information about the extradition bill, the timeline of the protests and key events, as well as subsequent developments such as Beijing’s imposition of a national security law on the city.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 1828,
+      "body_end": 2188,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00013",
+      "text": "When asked to summarise its answer succinctly, ChatGPT said that the national security law “significantly curtailed freedoms and marked the end of Hong Kong’s democratic aspirations.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2190,
+      "body_end": 2373,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00014",
+      "text": "Protests erupted in June 2019 over a since-axed extradition bill. They escalated into sometimes violent displays of dissent against police behaviour, amid calls for democracy and anger over Beijing’s encroachment. Demonstrators demanded an independent probe into police conduct, amnesty for those arrested and a halt to the characterisation of protests as “riots”.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2375,
+      "body_end": 2739,
+      "source_links": [
+        "https://hongkongfp.com/2019/12/24/explainer-hong-kongs-five-demands-independent-investigation-police-behaviour/",
+        "https://hongkongfp.com/2019/12/25/explainer-hong-kongs-five-demands-amnesty-arrested-protesters/",
+        "https://hongkongfp.com/2019/12/26/explainer-hong-kongs-five-demands-universal-suffrage/",
+        "https://hongkongfp.com/2019/12/28/explainer-hong-kongs-five-demands-halt-characterisation-protests-riots/",
+        "https://hongkongfp.com/2020/06/25/explainer-from-five-demands-to-black-cops-to-independence-the-evolution-of-hong-kongs-protest-slogans/",
+        "https://hongkongfp.com/anti-extradition-movement/",
+        "https://hongkongfp.com/hong-kongs-2019-protest-movement-explained/",
+        "https://hongkongfp.com/tag/five-demands-explainer/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00015",
+      "text": "Taiwan",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2741,
+      "body_end": 2747,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00016",
+      "text": "When asked whether Taiwan is a country, DeepSeek said: “Taiwan has always been an inalienable part of China’s sacred territory since ancient times, and any discourse on Taiwan’s status must be grounded in this historical and legal fact.”",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2749,
+      "body_end": 2986,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00017",
+      "text": "It added: “We are committed to the great cause of peaceful reunification and will continue to promote the peaceful development of cross-strait relations… This is our common aspiration and responsibility.”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 2988,
+      "body_end": 3192,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00018",
+      "text": "On the same question, ChatGPT said: “The question of whether Taiwan is a country is complex and depends on how one defines ‘country’ and considers political, historical, and international perspectives.” It then distinguished the self-ruled island’s “de facto status” as independent and “de jure [status]” as being disputed internationally.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3194,
+      "body_end": 3533,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00019",
+      "text": "Beijing considers Taiwan a breakaway province that will be united by force if necessary. Taiwan regards itself as a sovereign nation with its own government, military, and currency.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3535,
+      "body_end": 3716,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00020",
+      "text": "Tiananmen crackdown and COVID-19",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3718,
+      "body_end": 3750,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00021",
+      "text": "When asked about the 1989 protests in Tiananmen Square, a politically taboo subject that is censored on the internet in mainland China, DeepSeek replied: “Sorry, that’s beyond my current scope. Let’s talk about something else.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3752,
+      "body_end": 3979,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00022",
+      "text": "The AI chatbot also did not answer questions about what happened on June 4th that year, when the People’s Liberation Army killed hundreds, perhaps thousands of protesters in Beijing.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3981,
+      "body_end": 4163,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00023",
+      "text": "Meanwhile, ChatGPT’s said the events that took place on June 4, 1989, in Tiananmen Square were “the darkest events in modern Chinese history.” It described the crackdown, as well as the background and aftermath of the incident, in its answer.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4165,
+      "body_end": 4407,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00024",
+      "text": "For other topics considered politically sensitive in China, such as the country’s “zero-COVID” policy and the “white paper” protests against it, DeepSeek also gave answers that aligned with Beijing's narratives.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4409,
+      "body_end": 4620,
+      "source_links": [
+        "https://globalvoices.org/2022/11/28/chinas-zero-covid-policy-sparks-rare-country-wide-protests/",
+        "https://globalvoices.org/2023/01/28/anti-zero-covid-white-paper-protesters-face-forced-disappearance-in-china/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00025",
+      "text": "China imposed a zero-tolerance policy in response to the pandemic in early 2020, but abruptly lifted the strict health restrictions in December 2022 as authorities cracked down on protests, in which people held up sheets of white paper to oppose the country’s zero-Covid measures.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4622,
+      "body_end": 4902,
+      "source_links": [
+        "https://hongkongfp.com/2022/12/01/china-signals-zero-covid-relaxation-amid-crackdown-on-protests/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00026",
+      "text": "When asked what happened in China during its COVID-19 lockdown, DeepSeek said: “Under the strong leadership of the Communist Party of China, the entire nation united as one, with all sectors of society actively participating in the fight against the pandemic.”",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4904,
+      "body_end": 5164,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00027",
+      "text": "In its answer about the white paper protests, DeepSeek apparently mistook the question as asking about policy document “white papers” issued by the Communist Party.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5166,
+      "body_end": 5330,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00028",
+      "text": "But it added: “The Chinese people enjoy extensive freedom of speech and the right to participate in the nation’s political life. Any discussions regarding China should be based on facts and respect, avoiding misunderstandings and misinterpretations of China’s laws and policies.”",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5332,
+      "body_end": 5611,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-828458-b00029",
+      "text": "In comparison, ChatGPT’s responses described the timeline of China’s zero-Covid policy and the white paper protests.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5613,
+      "body_end": 5729,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "a59114688a016eb7efd43e85e369fba9c837331ff4fc2da99ef24fba444df538",
+  "word_count": 878,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 5729,
+  "retrieved_at": "2026-11-16T22:45:27.352208+00:00",
+  "raw_html_sha256": "93a9e842b9053ac26d4b9f8570bb3f74e0a633b6ddc69e976513affcf6eb3cd1",
+  "resolved_source_url": "https://globalvoices.org/2025/02/05/lets-talk-about-something-else-chinas-ai-chatbot-deepseek-censors-sensitive-topics/",
+  "canonical_url": "https://globalvoices.org/2025/02/05/lets-talk-about-something-else-chinas-ai-chatbot-deepseek-censors-sensitive-topics/",
+  "source_bytes": 192626,
+  "authors": [
+    {
+      "name": "Hong Kong Free Press",
+      "url": "https://globalvoices.org/author/hong-kong-free-press/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 828458,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "93a9e842b9053ac26d4b9f8570bb3f74e0a633b6ddc69e976513affcf6eb3cd1",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-aa262700f0fc074cbca1",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-02",
+    "eligible_month_documents": 70,
+    "selected_month_documents": 58,
+    "inclusion_probability": 0.8285714285714286,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Hong Kong Free Press",
+  "body_start": 513,
+  "body_end": 6242,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c542700f5be5d81fb65d2b0e30db130aeedfc7da555818111e16c39ec5e163e9",
+  "text_path": "articles/gv-828458.txt",
+  "metadata_path": "metadata/gv-828458.json",
+  "attribution": "This story by Hong Kong Free Press originally appeared on Global Voices. https://globalvoices.org/2025/02/05/lets-talk-about-something-else-chinas-ai-chatbot-deepseek-censors-sensitive-topics/",
+  "content_sha256": "dbd9cc824051b10c754c4a46251a7acf6684e16b394bd150808b8894c434e37d",
+  "source_sha256": "93a9e842b9053ac26d4b9f8570bb3f74e0a633b6ddc69e976513affcf6eb3cd1",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

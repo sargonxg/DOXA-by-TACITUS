@@ -1,0 +1,283 @@
+{
+  "id": "gv-742305",
+  "publisher_id": 742305,
+  "source_id": "globalvoices:742305",
+  "source_url": "https://globalvoices.org/2021/07/26/russian-internet-censor-blocks-team-navalny-websites/",
+  "title": "Russian internet censor blocks Team Navalny websites",
+  "published_at": "2021-07-26T15:49:51Z",
+  "modified_at": "2024-02-21T10:37:36Z",
+  "api_author_id": 1498,
+  "api_content_sha256": "fa8b83649649f46d371c51e23fb1c9330c23cfd672c5b967ba795fe85cc56f63",
+  "api_response_sha256": "0d1a36035a88ee5b3f9fa91c4e2a7d7b5ec96f6dedf1bcb5a8f43e8f39bffdae",
+  "api_retrieved_at": "2026-11-16T22:20:36.847703+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-742305-b00001",
+      "text": "Roskomnadzor, the Russian government agency tasked with monitoring and censoring the Russian internet, has blocked the website of jailed opposition leader Alexey Navalny for users in Russia.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 190,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-742305-b00002",
+      "text": "On July 26, Navalny's team reported on Telegram that the main website, navalny.com, as well as free.navalny.com and 40 other webpages for Navalny's national network of campaign offices were added to Russia's state registry for blocked websites. The public mirror of the blacklist, run by digital rights group Roskomsvoboda, confirms a number of Navalny's websites were added to the list on July 26, bringing the total number of blocked webpages linked to Navalny to 79.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 192,
+      "body_end": 661,
+      "source_links": [
+        "http://free.navalny.com",
+        "http://navalny.com",
+        "https://reestr.rublacklist.net/search/?q=navalny",
+        "https://t.me/teamnavalny/7777"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-742305-b00003",
+      "text": "> Translation: “This resource is blocked! On the basis of the Decree of the Government of the Russian Federation from 26 October 2012 No. 1101 and in accordance with Articles No. 9 and 151 of the Federal Law from July 27 2016 No. 149-FZ “On information, information technologies and protection of information”, this resource contains information whose dissemination in the Russian Federation is forbidden!”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 663,
+      "body_end": 1069,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-742305-b00004",
+      "text": "According to Roskomnadzor, it was acting on a request from the Russian Attorney General’s Office, although the official reason for the blocking remains unknown. In June this year, the Moscow City Court designated Alexey Navalny’s Anti-Corruption Foundation (FBK), Citizens’ Rights Protection Foundation, and his regional campaign headquarters as “extremist organizations”, effectively putting a stop to their activities in Russia.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1071,
+      "body_end": 1501,
+      "source_links": [
+        "https://www.occrp.org/en/daily/14620-moscow-court-marks-navalny-s-anti-graft-group-extremist"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-742305-b00005",
+      "text": "Navalny's team of activists said this move was “expected” and encouraged supporters to access the politician's blog through dedicated mobile apps, which remain available to Russian users as “there is definitely no way to block them.” They also reported that the website of their voter registration project, Umnoye Golosovanie (VoteSmart), was still accessible and encouraged users to register there. Team Navalny's YouTube channels also remain accessible.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1503,
+      "body_end": 1958,
+      "source_links": [
+        "http://votesmart.appspot.com",
+        "https://t.me/teamnavalny/7778"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-742305-b00006",
+      "text": "Roskomsvoboda later found that a number of other websites were also blocked, including those run by Navalny's collaborators Lyubov Sobol and Leonid Volkov, soboll.ru and leonidvolkov.ru. Other blacklisted URLs include the official websites for Anti-Corruption Foundation (fbk.info), Teachers’ Union (teachers-union.ru) and Doctors’ Union (alyansvrachey.ru)—organisations collaborating with Navalny's movement, and websites for older Navalny anti-corruption projects RosZKH and RosYama.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1960,
+      "body_end": 2445,
+      "source_links": [
+        "http://alyansvrachey.ru/",
+        "http://fbk.info/",
+        "http://leonidvolkov.ru/",
+        "http://rosyama.ru",
+        "http://roszkh.ru",
+        "http://soboll.ru",
+        "http://teachers-union.ru/",
+        "https://t.me/rks_tech_talk/134"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-742305-b00007",
+      "text": "Alexey Navalny is currently serving two and a half years in prison after a Moscow court in February 2021 reinstated his sentence for allegedly violating probation in 2020 while recovering from an alleged poisoning attempt in a German clinic.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2447,
+      "body_end": 2688,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "edfcc75499c31f017067a83fb9d5b05616f05f5fbbfbca13a66fe3003e4f778d",
+  "word_count": 388,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 2688,
+  "retrieved_at": "2026-11-16T22:31:19.895494+00:00",
+  "raw_html_sha256": "21e7a603b9dbab1aa62ca6a70c609a9329dc2aefe76e8d05ef2a7fcc6103ac3f",
+  "resolved_source_url": "https://globalvoices.org/2021/07/26/russian-internet-censor-blocks-team-navalny-websites/",
+  "canonical_url": "https://globalvoices.org/2021/07/26/russian-internet-censor-blocks-team-navalny-websites/",
+  "source_bytes": 186323,
+  "authors": [
+    {
+      "name": "Tanya Lokot",
+      "url": "https://globalvoices.org/author/tetyana-lokot/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 742305,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "21e7a603b9dbab1aa62ca6a70c609a9329dc2aefe76e8d05ef2a7fcc6103ac3f",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-ba13913a6e6386bc5873",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-07",
+    "eligible_month_documents": 104,
+    "selected_month_documents": 87,
+    "inclusion_probability": 0.8365384615384616,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Tanya Lokot",
+  "body_start": 439,
+  "body_end": 3127,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "46e0c1e2b989f3bec4622c2a852e5a7baa702ee12d4f595b78f22dc4c22cd8b8",
+  "text_path": "articles/gv-742305.txt",
+  "metadata_path": "metadata/gv-742305.json",
+  "attribution": "This story by Tanya Lokot originally appeared on Global Voices. https://globalvoices.org/2021/07/26/russian-internet-censor-blocks-team-navalny-websites/",
+  "content_sha256": "5027273cbbc31cc4808e7b6918b0d8d4e51030c625dbd5eea5e3bcbbcefa74a3",
+  "source_sha256": "21e7a603b9dbab1aa62ca6a70c609a9329dc2aefe76e8d05ef2a7fcc6103ac3f",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

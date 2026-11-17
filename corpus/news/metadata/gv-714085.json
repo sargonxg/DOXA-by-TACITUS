@@ -1,0 +1,469 @@
+{
+  "id": "gv-714085",
+  "publisher_id": 714085,
+  "source_id": "globalvoices:714085",
+  "source_url": "https://globalvoices.org/2020/08/05/digital-rights-remain-under-threat-in-malawi-despite-historic-win-for-democracy/",
+  "title": "Digital rights remain under threat in Malawi despite historic win for democracy",
+  "published_at": "2020-08-05T13:18:52Z",
+  "modified_at": "2020-08-05T17:02:08Z",
+  "api_author_id": 2734,
+  "api_content_sha256": "45098b06975ba68683ebe4f25fa01fea77aa82eb4d799b76776f228e1f55bdd2",
+  "api_response_sha256": "d0d9c566ef851f55d3c5c375de27a43b42ee1a38db6cc7e8774e7fb67296eb3f",
+  "api_retrieved_at": "2026-11-16T22:20:28.059895+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 123,
+      "count": 339,
+      "name": "Malawi",
+      "slug": "malawi",
+      "parent": 15
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-714085-b00001",
+      "text": "This article is part of UPROAR, a Small Media initiative that is urging governments to address digital rights challenges at the Universal Periodic Review (UPR).",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 160,
+      "source_links": [
+        "https://uproar.fyi/",
+        "https://www.ohchr.org/en/hrbodies/upr/pages/uprmain.aspx"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00002",
+      "text": "Malawi made history in May when they re-ran their presidential election after an annulment by the courts of the first set of results. Subsequently, the opposition won. Malawi received international praise because it was just the second time in Africa to re-run an election after a court annulment and the very first time in history for an opposition win.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 162,
+      "body_end": 516,
+      "source_links": [
+        "https://www.aljazeera.com/news/2020/06/historic-election-malawi-200626070010661.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00003",
+      "text": "The annulment came after months of sustained citizen protests against electoral fraud. The Human Rights Defenders Coalition (HRDC), which led most of the protests, frequently used social media platforms such as Facebook, WhatsApp and Twitter to organize and spread their messages.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 518,
+      "body_end": 798,
+      "source_links": [
+        "https://www.aljazeera.com/news/2020/03/malawi-police-arrest-activists-call-anti-gov-protests-200311103823439.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00004",
+      "text": "Despite this momentous victory for democracy, however, Malawians still face lingering threats to human rights in the digital space.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 800,
+      "body_end": 931,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00005",
+      "text": "Landlocked with a population of over 18 million people, Malawi has one of the lowest and slowest growing rates of internet access in the world. According to the 2018 Malawi Population and Housing Census, about 14 percent of the population uses the internet in Malawi while about 52 percent have a mobile phone.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 933,
+      "body_end": 1243,
+      "source_links": [
+        "http://10.150.72.21:6510/www.nsomalawi.mw/images/stories/data_on_line/demography/census_2018/2018%20Malawi%20Population%20and%20Housing%20Census%20Main%20Report.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00006",
+      "text": "Poor internet access rates are largely a result of poor infrastructure and high data tariffs, which include a 17.5 percent value-added tax (VAT) on mobile phones and services, a 16.5 percent VAT on internet services and an additional 10 percent excise duty on mobile phone text messages and internet data transfers introduced in May 2015.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1245,
+      "body_end": 1583,
+      "source_links": [
+        "https://cipesa.org/?wpfb_dl=333"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00007",
+      "text": "Consequently, access to the internet is cost-prohibitive for the majority of Malawians. As of July 2020, a monthly data bundle for 10 gigabytes costs around $21 US dollars with both Telecom Networks Malawi (TNM) and Airtel, which is about half the minimum monthly wage in Malawi. The Inclusive Internet Index 2020, which assesses internet availability, affordability, relevance of content and readiness, ranks Malawi 97 out of 100 countries.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1585,
+      "body_end": 2026,
+      "source_links": [
+        "https://wageindicator.org/salary/minimum-wage/malawi"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00008",
+      "text": "Apart from high internet costs, other threats to human rights in the digital space include police surveillance of online users, online content removal and harsh sentences for internet users violating the country’s laws.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2028,
+      "body_end": 2247,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00009",
+      "text": "Legal threats",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2249,
+      "body_end": 2262,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00010",
+      "text": "The government’s practice of online surveillance is rooted in law.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2264,
+      "body_end": 2330,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00011",
+      "text": "In 2016, the Malawian parliament approved the Electronic Transactions and Cybersecurity Act of 2016, which restricts human rights in the digital space. Article 24(2)(e) of the Act states that online communication may be restricted in order to “protect order and national security,” while Article 24(2)(f) states that online communication may be restricted in order to “facilitate technical restriction to conditional access to online communication.”",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2332,
+      "body_end": 2781,
+      "source_links": [
+        "https://malawilii.org/mw/legislation/act/2016/33"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00012",
+      "text": "The cybersecurity law also penalizes “offensive communication” via Information and Communications Technology (ICT) with penalties of fines or a maximum 12-month prison sentence, and places restrictions on encryption. Legally, this means encrypted messaging tools like Signal and WhatsApp are considered illegal in Malawi, at least theoretically.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2783,
+      "body_end": 3128,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00013",
+      "text": "Apart from this legislation, there is also a plethora of laws inherited from the British colonial era (1891-1964) and the Malawi Congress Party dictatorial era (1964-1994), which threaten human rights in the digital space. This includes Sections 50 and 51 of the Penal Code, which establishes the offense of sedition, and Section 4 of the Protected Flag, Emblems and Names Act which makes it an offense to “do any act or utter any words or publish or utter any writing calculated to insult, ridicule or to show disrespect” to ‘’the President, the national flag, armorial ensigns, the public seal or any protected emblem or protected likeness.’’",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3130,
+      "body_end": 3774,
+      "source_links": [
+        "https://malawilii.org/mw/consolidated_legislation/701",
+        "https://www.malawilaws.com/alphabetical-list-of-statutes/chapter-18-03protected-flag-emblems-and-names"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00014",
+      "text": "These laws combined have enabled digital rights violations in Malawi, which have lately taken many forms, including state surveillance, access restrictions to the internet and criminalization of some forms of online communication.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3776,
+      "body_end": 4006,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00015",
+      "text": "Indeed, there are a number of recent cases where authorities have used these retrogressive provisions to stifle freedom of expression of online users, journalists, bloggers and human rights defenders. For instance, in February 2016, three opposition politicians were arrested and charged with sedition over a WhatsApp conversation they held in which they were allegedly plotting to unseat the president. They were later discharged by the High Court in March 2017 due to a lack of evidence.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4008,
+      "body_end": 4497,
+      "source_links": [
+        "https://freedomhouse.org/sites/default/files/FOTN%202016%20Malawi.pdf",
+        "https://www.voanews.com/africa/malawi-government-faulted-over-arrests-coup-suspects"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00016",
+      "text": "In the run-up to the May 2019 election, Tumpale Mwakibinga, a bank clerk, was arrested and charged with “insulting the modesty of a woman, cyber violation and offensive communication” for a Facebook post in which he joked that the way of dressing of the then-first lady of Malawi, Gertrude Mutharika, made her look like the cartoon character “Rango.” He is now on bail pending trial. One of his bail conditions prohibits him from posting anything on social media related to the former first lady.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4499,
+      "body_end": 4995,
+      "source_links": [
+        "https://cipesa.org/?wpfb_dl=333",
+        "https://kulinji.com/article/news/crime/2019/court-defers-bail-suspect-arrested-insulting-first-lady"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00017",
+      "text": "Earlier, on August 21, 2018, Malawi police had arrested Manes Hale, an activist, on charges of insulting the president under Section 4 of the Protected Flag, Emblems and Names Act, for critical remarks she wrote about the president on her Facebook page. The state later withdrew the case but gave no reasons for the withdrawal.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4997,
+      "body_end": 5324,
+      "source_links": [
+        "https://www.mwnation.com/state-withdraws-manes-hale-case/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00018",
+      "text": "Human rights defenders targeted",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5326,
+      "body_end": 5357,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00019",
+      "text": "The state has also used online surveillance to monitor human rights defenders’ communications.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5359,
+      "body_end": 5453,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00020",
+      "text": "On August 26, 2019, a WhatsApp group conversation of members of the HRDC, the human rights group that was behind the election protests, was leaked to state authorities by ruling party supporters who had infiltrated the group, worsening the group’s already sour relations with the government and ruling party cadres.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5455,
+      "body_end": 5770,
+      "source_links": [
+        "https://www.civicus.org/documents/Malawi.JointUPRSubmission.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00021",
+      "text": "Prior to this, the group was under increasing threats from the then President Peter Mutharika and ruling party cadres for leading demonstrations against electoral fraud. For example, in a televised speech delivered on July 6, 2019, to mark the commemoration of Malawi’s independence, President Mutharika accused human rights defenders of working with the opposition to create “lawlessness,” “anarchy” and intent to “overthrow the government.” The president warned that he would hold each one of them accountable, and that “force will be met by force” and that “this nonsense will come to an end.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5772,
+      "body_end": 6368,
+      "source_links": [
+        "https://www.france24.com/en/20190706-malawi-leader-says-protesters-want-lawless-society-after-disputed-vot"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00022",
+      "text": "Shortly afterward, a number of leading human rights defenders, notably Timothy Mtambo, Reverend McDonald Sembereka and Gift Trapence, reportedly received death threats. A few days later, on July 9, Trapence and Sembereka, were arrested for alleged fraud, charges widely seen by Amnesty International and other human rights organizations as politically motivated.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6370,
+      "body_end": 6732,
+      "source_links": [
+        "https://www.amnesty.org/download/Documents/AFR3612352019ENGLISH.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00023",
+      "text": "The Malawian authorities have an obligation to respect, protect, promote and fulfill the human rights of its citizens, both offline and online.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6734,
+      "body_end": 6877,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714085-b00024",
+      "text": "Therefore, Malawi's historic change of government should be an opportunity to bring about meaningful changes to ensure that Malawians enjoy human rights in the digital space.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6879,
+      "body_end": 7053,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "c02739edb454675a6ddcf14e3870e7409ab96b06b9efd3ec7f7b2decfc06d0d2",
+  "word_count": 1087,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7053,
+  "retrieved_at": "2026-11-16T22:26:38.000217+00:00",
+  "raw_html_sha256": "06ad5115bdc6d7f26d4b9dacbc3badf77809ae6d08d5bbcd4f6752d3127ac1a6",
+  "resolved_source_url": "https://globalvoices.org/2020/08/05/digital-rights-remain-under-threat-in-malawi-despite-historic-win-for-democracy/",
+  "canonical_url": "https://globalvoices.org/2020/08/05/digital-rights-remain-under-threat-in-malawi-despite-historic-win-for-democracy/",
+  "source_bytes": 192395,
+  "authors": [
+    {
+      "name": "Michael Kaiyatsa",
+      "url": "https://globalvoices.org/author/michael-kaiyatsa/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 714085,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "06ad5115bdc6d7f26d4b9dacbc3badf77809ae6d08d5bbcd4f6752d3127ac1a6",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-a4e5833b6ab983408683",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-08",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Michael Kaiyatsa",
+  "body_start": 498,
+  "body_end": 7551,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "415a53fffc2555d515918ebb91692dc921794e334b5aebf0269c84d2a1e1aaf1",
+  "text_path": "articles/gv-714085.txt",
+  "metadata_path": "metadata/gv-714085.json",
+  "attribution": "This story by Michael Kaiyatsa originally appeared on Global Voices. https://globalvoices.org/2020/08/05/digital-rights-remain-under-threat-in-malawi-despite-historic-win-for-democracy/",
+  "content_sha256": "acf3f313d3c25106d44ff406e37ad7578a0f2221a6412b9b95e023d8ae5d5928",
+  "source_sha256": "06ad5115bdc6d7f26d4b9dacbc3badf77809ae6d08d5bbcd4f6752d3127ac1a6",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

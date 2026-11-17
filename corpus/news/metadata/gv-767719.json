@@ -1,0 +1,481 @@
+{
+  "id": "gv-767719",
+  "publisher_id": 767719,
+  "source_id": "globalvoices:767719",
+  "source_url": "https://globalvoices.org/2022/07/28/war-in-ukraine-is-fundamentally-changing-the-relationship-between-the-internet-and-geopolitics/",
+  "title": "War in Ukraine is fundamentally changing the relationship between the internet and geopolitics",
+  "published_at": "2022-07-28T08:03:15Z",
+  "modified_at": "2023-11-20T10:29:45Z",
+  "api_author_id": 2739,
+  "api_content_sha256": "14afbad4fa00531edd57e0fea0af62b60907c90a95d566e190f6a5902f65b318",
+  "api_response_sha256": "08b3517ae10ada9fc287561a5a5d06549f4a3614acf67915ee99ce779e1c37fe",
+  "api_retrieved_at": "2026-11-16T22:20:46.276788+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-767719-b00001",
+      "text": "In the early 1990s, Nicholas Negroponte, the founder of MIT Media Lab, heralded that the internet would “flatten organizations, globalize society, decentralize control, and help harmonize people.” Thirty years later, this prediction could not be further from the truth. While the internet has led to unprecedented globalization, innovation, and participation in sectors previously inaccessible, in the last two decades, slow and persistent efforts by governments across the world have reigned private technological pursuits into national regulatory and security regimes.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 570,
+      "source_links": [
+        "https://www.amazon.com/gp/product/0226817423?ie=UTF8&camp=1789&creativeASIN=0226817423&linkCode=xm2&tag=thewaspos09-20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00002",
+      "text": "Russia’s invasion of Ukraine marks the next turning point away from the international, distributed, and libertarian internet dreams of the 20th century. The war has accelerated three significant trends in the internet’s geopolitical dynamic, making any major reversals unimaginable. First, the war has accelerated the unprecedented prominence of non-state actors in state-level war. Second, it has highlighted the centrality of information networks to physical conflicts. Third, it has accelerated the global fragmentation between the United States, Europe, Russia, and China along technology platforms.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 572,
+      "body_end": 1175,
+      "source_links": [
+        "https://www.theatlantic.com/technology/archive/2019/05/the-end-of-cyberspace/588340/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00003",
+      "text": "At a United Nations conference in June, a Google executive predicted that Russian operations in Ukraine are foreshadowing the new global status quo: “It is essentially our crystal ball for what is likely to come.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1177,
+      "body_end": 1390,
+      "source_links": [
+        "https://abcnews.go.com/Technology/wireStory/google-exec-ukraine-crystal-ball-info-warfare-85537131"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00004",
+      "text": "The proliferation of non-state actors in state-level war",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1392,
+      "body_end": 1448,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00005",
+      "text": "For the majority of modern history, war has been primarily the domain of nation states. Ivan Sigal has argued that, since the 1970s, “there has been a progression of undeclared conflicts, intrastate and civil conflicts that involve irregular fighters and non-state combatants, with fighting occurring in the midst of civilian life, where the majority of victims are noncombatants.”",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1450,
+      "body_end": 1831,
+      "source_links": [
+        "https://www.cima.ned.org/wp-content/uploads/2015/02/Sigal%20-%20Digital%20Media%20in%20Conflit-Prone%20Societies.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00006",
+      "text": "While non-state actors have taken part in past conflicts — the International Committee of the Red Cross (ICRC) began during the Crimean War in the 1850s and modern terror is rooted in anti-colonial rebellions of the 19th century — particularly in the last 20 years, the presence of NGOs, international organizations, and terrorist groups has started to usurp the state monopoly on violence. Joseph Nye and Robert Keohane described this emerging world of international relations as one of “complex interdependence.”",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1833,
+      "body_end": 2347,
+      "source_links": [
+        "https://www.jstor.org/stable/20049052"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00007",
+      "text": "Interdependent, because during the wars in Iraq, Afghanistan, and Mali, states waged national wars against armed autonomous organizations, spectated by a motley array of independent observers, and supported on the peripheries in peace efforts by hundreds of NGOs. Complex, because the line between aggressor and peace-builder has blurred. The internet has rendered global conflict even more anarchically complex and interdependent, because of the unprecedented range of interventions available.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2349,
+      "body_end": 2843,
+      "source_links": [
+        "https://dergipark.org.tr/tr/download/article-file/19401",
+        "https://www.corteidh.or.cr/tablas/r28824.pdf",
+        "https://www.stabilityjournal.org/articles/10.5334/sta.497/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00008",
+      "text": "Even before Russia's invasion of Ukraine, a decentralized community of researchers was ringing alarm bells about the abnormal movement of Russian troops along the Ukrainian borders. The proliferation of satellites, social media, public flight records, and mapping techniques has made available a world of open source reporting methods, capable of identifying war patterns before any shots are actually fired.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2845,
+      "body_end": 3253,
+      "source_links": [
+        "https://www.buzzfeednews.com/article/peteraldhous/osint-ukraine-war-satellite-images-plane-tracking-social"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00009",
+      "text": "The rising interdependence of global networks, and unbridled access to them from anywhere in the world, has also meant that one can wage war in Eastern Europe from an apartment in Berlin or a coffee shop in Shenzhen. In February, the Ukrainian government made a global appeal to hacking groups for help in defending critical infrastructure. Since then, an unidentified group of hacking vigilantes have been disrupting Russian news channels, government websites, and military supply networks. Simultaneously, unidentified hacking groups have started increasingly targeting “foreign ministries of NATO states, humanitarian organizations, think tanks, IT groups and energy suppliers.” Western intelligence agencies have attributed the attacks to state-backed Russian groups, but the nature of the internet makes final attribution impossible.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3255,
+      "body_end": 4093,
+      "source_links": [
+        "https://thebarentsobserver.com/en/security/2022/02/anonymous-takes-down-websites-defense-ministry-rt-and-kremlin",
+        "https://www.bbc.com/news/technology-60784526",
+        "https://www.bloomberg.com/news/features/2022-06-15/ukraine-war-attracts-belarusian-hackers-in-fight-vs-putin#xj4y7vzkg",
+        "https://www.cnet.com/news/politics/ukraine-asks-hackers-for-help-to-defend-against-russia-says-report/#:~:text=a%20better%20future-,Ukraine%20Asks%20Hackers%20for%20Help%20to%20Defend%20Against%20Russia%2C%20Says,Russian%20troops%2C%20according%20to%20Reuters.&text=Antonio%20Ruiz%2DCamacho%20is%20a%20principal%20writer%20covering%20personal%20finance.",
+        "https://www.politico.com/news/2022/06/22/russian-hackers-target-u-s-00041342"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00010",
+      "text": "Finally, the war has given a new significance to technology platforms. Microsoft’s Seattle-based Threat Intelligence Center has successfully prevented crippling attacks on Kyiv’s military and government networks. Google and Meta have banned Russian media outlets, defending against Moscow’s major influence operation abroad, and giving prominence to Ukrainian voices. A US facial recognition company, Clearview AI, has donated their software to Ukraine’s Ministry of Defense in order to identify dead soldiers.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 4095,
+      "body_end": 4605,
+      "source_links": [
+        "https://techcrunch.com/2022/06/09/google-meta-ads-russia-alexey-navalny-criticism/",
+        "https://www.nytimes.com/2022/02/28/us/politics/ukraine-russia-microsoft.html",
+        "https://www.reuters.com/technology/exclusive-ukraine-has-started-using-clearview-ais-facial-recognition-during-war-2022-03-13/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00011",
+      "text": "As technology platforms face anti-trust lawsuits in Europe and the United States, the war in Ukraine has served as a convenient new argument against further anti-trust action: harming the tech platforms would help Russian propaganda.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4607,
+      "body_end": 4840,
+      "source_links": [
+        "https://www.washingtonpost.com/politics/2022/03/16/techs-latest-critique-anhttps://www.washingtonpost.com/politics/2022/03/16/techs-latest-critique-antitrust-legislation-it-would-help-russian-propaganda/titrust-legislation-it-would-help-russian-propaganda/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00012",
+      "text": "The increasing importance of networking technologies",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4842,
+      "body_end": 4894,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00013",
+      "text": "Telecommunication has been a vital part of military operations since World War I. The development of the internet itself was justified in the 1960s as a necessary precaution to maintain communication during a nuclear war. But throughout the last decade, singular moments have emphasized the emerging importance of cloud connections to physical realities. Global Voice’s Unfreedom Monitor outlines the unprecedented emergence of internet censorship efforts across the world.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4896,
+      "body_end": 5369,
+      "source_links": [
+        "https://advox.globalvoices.org/special/unfreedom-monitor/",
+        "https://ciaotest.cc.columbia.edu/journals/shjdir/v14i1/f_0028740_23334.pdf",
+        "https://www.wired.co.uk/article/h-bomb-and-the-internet"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00014",
+      "text": "Russia’s invasion of Ukraine on February 24, 2022, is the latest, and perhaps most prominent example of the internet's weaponization in physical conquest.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5371,
+      "body_end": 5525,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00015",
+      "text": "On the day before Russian troops entered Ukraine, modems of the satellite internet network, Viasat’s KA-SAT, were disabled en masse. Auxiliary cyberattacks on government websites and infrastructure operators unsuccessfully attempted to paralyze Ukraine’s command and control centers.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5527,
+      "body_end": 5810,
+      "source_links": [
+        "https://www.aljazeera.com/news/2022/5/10/russia-behind-cyberattack-against-internet-network-in-ukraine",
+        "https://www.yahoo.com/now/ukraine-facing-major-regional-internet-110550360.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00016",
+      "text": "On balance, the war in Ukraine is the latest instance in which control of telecommunication has both directed military movements and served as justification for annexation. In 2015, before the annexation of Crimea, Russian forces occupied the main ISP offices of the peninsula, severed all connections into Ukraine, built a new undersea fiber optic cable, and rerouted internet traffic through Moscow-based Miranda Media. This ensured that local internet traffic would be monitored by Roskomnadzor, Russia’s telecommunication regulator, and subjected Crimean residents to Russian speech, publishing, and internet regulations.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5812,
+      "body_end": 6437,
+      "source_links": [
+        "https://www.datacenterdynamics.com/en/analysis/how-russia-took-over-the-internet-in-crimea-and-eastern-ukraine/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00017",
+      "text": "Moscow is following the same playbook at an unprecedented scale in newly occupied territories. The ISP offices within Kherson and newly occupied cities in eastern Ukraine have similarly been rerouted to Russian networks, securing Russian informational control over the regions and laying the groundwork for future secession referendums. This has become a significant enough concern that Ukrainians have been destroying telecommunication infrastructure as they flee occupied cities.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6439,
+      "body_end": 6920,
+      "source_links": [
+        "https://www.bloomberg.com/news/articles/2022-06-21/ukrainian-telecom-workers-damage-own-equipment-to-thwart-russia#xj4y7vzkg",
+        "https://www.datacenterdynamics.com/en/news/ukraine-russia-reroutes-internet-in-occupied-kherson-through-rostelecom/",
+        "https://www.defenseone.com/threats/2022/07/russia-following-2014-annexation-playbook-eastern-ukraine-white-house-says/374665/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00018",
+      "text": "Security and control over the national telecommunication channels is becoming particularly vital for smaller nations that rely primarily on foreign service providers for key military intelligence like satellite imaging. Volodymyr Usov, former chairman of the State Space Agency of Ukraine emphasized in June, “​​Every nation who claims to be independent…needs to have its own [imagery] constellation.” Usov noted that partnerships are not enough: “you need to have some autonomous access to satellite imagery.” Ukraine is considering developing their own satellite-launch technology to protect vital communication infrastructure from on-the-ground interventions.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6922,
+      "body_end": 7584,
+      "source_links": [
+        "https://ua.linkedin.com/in/volodymyrusov",
+        "https://www.defenseone.com/technology/2022/07/five-space-lessons-russias-invasion-taught-ukraine/374101/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00019",
+      "text": "The rapid geopolitical fragmentation along infrastructure",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 7586,
+      "body_end": 7643,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00020",
+      "text": "The involvement of non-state actors and the increasing military importance of telecommunication is leading to an accelerating balkanization of the internet along national lines.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 7645,
+      "body_end": 7822,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00021",
+      "text": "The war in Ukraine has drawn an even more explicit curtain between national internet regimes. Through a deplatforming tit-for-tat, Russia has banned the majority of Western technology companies and media outlets. Simultaneously, Ukraine and the West have banned Russian state media sites. Moscow has attempted to ban TOR and VPN networks, which have the capacity to bypass government censors. In a final extension of internet sovereignty, Russia has worked to prosecute its citizens for posting negative statements about the war even if they live abroad. The national boundaries no longer end at the border, but now extend into media spheres in any geography with an internet connection.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 7824,
+      "body_end": 8511,
+      "source_links": [
+        "https://torrentfreak.com/tor-project-unblocked-but-russia-redemands-censorship-embroils-google-220527/",
+        "https://www.bloomberg.com/news/articles/2022-07-11/russia-seeks-to-punish-expats-who-criticize-war-on-social-media#xj4y7vzkg",
+        "https://www.consilium.europa.eu/en/press/press-releases/2022/03/02/eu-imposes-sanctions-on-state-owned-outlets-rt-russia-today-and-sputnik-s-broadcasting-in-the-eu/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00022",
+      "text": "The war in Ukraine has drawn a more explicit line between the fragmented financial, informational, and infrastructural realities of Europe and the United States, set against Russia and China. An infrastructural nonaligned movement is afoot, playing out along sclerotic Cold War logic. In the 21st century, the choice for much of the world is not Communism or Capitalism, but rather what supply chain network their countries will tap into.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 8513,
+      "body_end": 8951,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00023",
+      "text": "For more information about this topic, see our special coverage Russia invades Ukraine.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 8953,
+      "body_end": 9040,
+      "source_links": [
+        "https://globalvoices.org/special/russia-invades-ukraine/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-767719-b00024",
+      "text": "This post is part of RuNet Echo, a Global Voices project to interpret the Russian language internet. All Posts · Read more »",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 9042,
+      "body_end": 9166,
+      "source_links": [
+        "https://globalvoices.org/-/special/runet-echo/",
+        "https://globalvoices.org/about/our-projects/runet-echo/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "222a1df2156e165ef0cf40e7d833c596beeca61ea68221a44d9d445aaaad5c3c",
+  "word_count": 1314,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 3,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 9166,
+  "retrieved_at": "2026-11-16T22:35:43.236853+00:00",
+  "raw_html_sha256": "7a812daba1bedf5e9935db4963a2fec1bd8016bd8d274c75291c2ac9843d520b",
+  "resolved_source_url": "https://globalvoices.org/2022/07/28/war-in-ukraine-is-fundamentally-changing-the-relationship-between-the-internet-and-geopolitics/",
+  "canonical_url": "https://globalvoices.org/2022/07/28/war-in-ukraine-is-fundamentally-changing-the-relationship-between-the-internet-and-geopolitics/",
+  "source_bytes": 201911,
+  "authors": [
+    {
+      "name": "Global Voices Central & Eastern Europe",
+      "url": "https://globalvoices.org/author/cee/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 767719,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "7a812daba1bedf5e9935db4963a2fec1bd8016bd8d274c75291c2ac9843d520b",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-13c9f50d456e77a61674",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-07",
+    "eligible_month_documents": 79,
+    "selected_month_documents": 66,
+    "inclusion_probability": 0.8354430379746836,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Global Voices Central & Eastern Europe",
+  "body_start": 550,
+  "body_end": 9716,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "db642b0f788961a400dd72c230d8d312c533101efa9c53c3f3e4749faea1b6cb",
+  "text_path": "articles/gv-767719.txt",
+  "metadata_path": "metadata/gv-767719.json",
+  "attribution": "This story by Global Voices Central & Eastern Europe originally appeared on Global Voices. https://globalvoices.org/2022/07/28/war-in-ukraine-is-fundamentally-changing-the-relationship-between-the-internet-and-geopolitics/",
+  "content_sha256": "848b6886dcc9520f9fb3a6ddeeda0d8291172dec90044de705c41e1fbf117f40",
+  "source_sha256": "7a812daba1bedf5e9935db4963a2fec1bd8016bd8d274c75291c2ac9843d520b",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

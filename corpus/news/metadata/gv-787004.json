@@ -1,0 +1,516 @@
+{
+  "id": "gv-787004",
+  "publisher_id": 787004,
+  "source_id": "globalvoices:787004",
+  "source_url": "https://globalvoices.org/2023/05/10/peri-urban-burundi-residents-still-affected-by-flooding/",
+  "title": "Peri-urban Burundi residents still affected by flooding",
+  "published_at": "2023-05-10T01:33:44Z",
+  "modified_at": "2023-05-10T01:33:44Z",
+  "api_author_id": 3087,
+  "api_content_sha256": "fb3a7a6555367fafc50fc04024000eacfd54c28082c73abbb594e8b15ca8475d",
+  "api_response_sha256": "6c93b1644e3efecd5dee3d12bc31cbe2099131cc7d217db96e6ca3f4ecad33e2",
+  "api_retrieved_at": "2026-11-16T22:20:52.215120+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 102,
+      "count": 170,
+      "name": "Burundi",
+      "slug": "burundi",
+      "parent": 15
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 109,
+      "count": 748,
+      "name": "D.R. of Congo",
+      "slug": "dr-of-congo",
+      "parent": 15
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    },
+    {
+      "id": 262,
+      "count": 2092,
+      "name": "Indigenous",
+      "slug": "indigenous",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-787004-b00001",
+      "text": "In some neighbourhoods on the outskirts of Bujumbura, the capital of Burundi, floods occur regularly without the government finding a sustainable solution.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 155,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00002",
+      "text": "Since April 4, 2023, severe flooding in Gatumba, a village located in the peri-urban area of Bujumbura, has caused great distress among the residents. Unfortunately, this is not the first time they have had to face such a disaster: the threat of flooding in Gatumba began in 2016. Since then, the village has experienced three floods in four years, forcing the residents to evacuate.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 157,
+      "body_end": 540,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Gatumba",
+        "https://www.iwacu-burundi.org/les-inondations-de-gatumba-ce-calvaire-qui-nen-finit-pas/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00003",
+      "text": "These repeated crises have created a situation of forced displacement for the local population. After living for more than a year in displacement camps, they are once again facing the same problem and are sounding the alarm to the government and international organizations appealing for swift intervention and assistance to alleviate the dire situation they are facing.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 542,
+      "body_end": 912,
+      "source_links": [
+        "https://reliefweb.int/report/burundi/burundi-d-sastres-naturels-inondation-de-la-zone-de-gatumba-riveraine-du-lac",
+        "https://www.dw.com/fr/inondations-riviere-rusizi-burundi-population-deplacee/a-65254304"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00004",
+      "text": "In an interview with Deutsche Welle, Justine Manariyo, one of the victims, explains:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 914,
+      "body_end": 998,
+      "source_links": [
+        "https://www.dw.com/fr/inondations-riviere-rusizi-burundi-population-deplacee/a-65254304"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00005",
+      "text": "> Certains vivent le long des routes, nous venons récemment de quitter les sites de rassemblement. On avait déjà été chassés par des inondations, et voilà que nous nous sommes encore retrouvés entourés d’eau, on ne sait pas où amener nos enfants, on ne sait pas non plus comment nous approvisionner en vivres.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1000,
+      "body_end": 1309,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787004-b00006",
+      "text": "> Some people live along the roads, we recently left the gathering sites. We had already been displaced by floods, and now we find ourselves surrounded by water again. We don’t know where to take our children, and we don’t know how to get food supplies.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1311,
+      "body_end": 1564,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787004-b00007",
+      "text": "Thousands of families from the flooded neighbourhoods of Kinyinya in the same Gatumba area have been displaced since April 4, 2023, as this video by VOA Afrique shows:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1566,
+      "body_end": 1733,
+      "source_links": [
+        "https://www.voaafrique.com/a/burundi-au-moins-6000-personnes-d%C3%A9plac%C3%A9es/7055798.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00008",
+      "text": "The residents of the flooded neighbourhoods are forced to save whatever they have left and flee to slightly more secure places for refuge, such as along National Road No. 4 that leads to the Democratic Republic of Congo.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1735,
+      "body_end": 1955,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00009",
+      "text": "Others gather in transit sites on the outskirts of the flooded area, waiting to be resettled in a location yet to be determined by the authorities. For others, the transit sites remain under the threat of floods.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1957,
+      "body_end": 2169,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00010",
+      "text": "A recurring problem with multiple causes and serious consequences",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2171,
+      "body_end": 2236,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00011",
+      "text": "A large number of the flooded neighbourhoods are located near the Rusizi National Park. Multiple factors are contributing to these floods. In the docks are the banks of the Rusizi River which are not protected to shelter the homes in this area; but also climate change, which alters seasons and causes rainfall at any time; and, finally, the lack of information on flood-prone areas unsuitable for human habitation.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2238,
+      "body_end": 2653,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Rusizi_National_Park",
+        "https://www.france24.com/fr/contenus-sponsoris%C3%A9s/20221215-au-burundi-la-crise-climatique-prive-des-milliers-d-enfants-d-%C3%A9cole"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00012",
+      "text": "The city of Bujumbura and its surrounding areas are experiencing a surge of unregulated construction, particularly in underdeveloped neighbourhoods such as Gatumba. According to the website Burundi-Eco, the Burundian Office of Urbanism, Housing and Construction (OBUHA) is concerned about this situation.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2655,
+      "body_end": 2959,
+      "source_links": [
+        "http://burundi-eco.com/restructuration-villes-et-centres-urbains-pays-certains-quartiers-meritent-etre-renoves-et-modernises/#.ZFJ_Z85_o2w"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00013",
+      "text": "The floods have the potential to significantly impact the lives of citizens, and as such, are not without consequences. Interviewed by Global Voices, Benjamin Nyambere, a father of six and a “hillside mediator” (governor of an area composed of at least 200 families) from the Gatumba neighbourhood, laments:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2961,
+      "body_end": 3268,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00014",
+      "text": "> Toutes les maisons ont été démolies. Nous risquons d’attraper des maladies de mains salés (comme le choléra) ou maladies infectieuses car elles ont démoli les latrines, et les ressources en eau potable n’existent plus, pour boire, cuire les aliments, les gens utilisent les eaux sales. Nous avons attendu que ces rives de la rivière Rusizi soient construites, mais en vain, pour le moment la population se trouve entre le marteau et l’enclume.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3270,
+      "body_end": 3715,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787004-b00015",
+      "text": "> All the houses have been demolished. We risk catching diseases, such as cholera, from contaminated water or infectious diseases because the latrines have been demolished, and there are no longer any sources of clean drinking water. People use dirty water to drink and cook their food. We have been waiting for these banks of the Rusizi River to be built, but in vain. For the moment, the population is caught between a rock and a hard place.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3717,
+      "body_end": 4160,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787004-b00016",
+      "text": "The same goes for Anitha Mugisha, a 32-year-old widow and mother of four, whom we met in this locality trying unsuccessfully to save her belongings. Speaking to Global Voices, she said:",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4162,
+      "body_end": 4347,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00017",
+      "text": "> Nos biens ont été emporté par ces pluies. Nous n’avons pas de quoi manger ni où dormir. Les matériels de cuisine, ceux de couchages, les cahiers des enfants et d’autres nécessités ont été emportés par l'eau. Les enfants ont dormi à la belle étoile et de surcroît, nos enfants ne vont plus à l’école. Nous demandons aux dirigeants et aux organisations de venir en aide, sinon les conséquences restent à la porte de nos yeux.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4349,
+      "body_end": 4774,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787004-b00018",
+      "text": "> Our belongings have been swept away by these floods. We have nothing to eat and nowhere to sleep. Kitchen equipment, bedding, children’s notebooks, and other necessities were taken away by the water. The children sleep under the open sky, and moreover, they are no longer going to school. We are urgently calling on leaders and organizations to help, as the consequences of the floods continue to have a visible impact on our community.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4776,
+      "body_end": 5214,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787004-b00019",
+      "text": "In addition to the chaotic social situation, the Rusizi National Park, despite its attractions, has already been struggling to attract visitors to provide economic support to Gatumba, and now it is also affected. Tourism is suspended because the flood has blocked access to the park.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5216,
+      "body_end": 5499,
+      "source_links": [
+        "https://afrique.tv5monde.com/information/burundi-le-parc-de-la-rusizi-peine-attirer-les-visiteurs"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00020",
+      "text": "The park rangers claim that “The road leading to the Rusizi National Park remains impassable. As a result fewer tourists are visiting the park these days.”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5501,
+      "body_end": 5656,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00021",
+      "text": "An unsatisfactory solution",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5658,
+      "body_end": 5684,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00022",
+      "text": "The International Organization for Migration (IOM) has provided reassurance to the Burundian government that they will provide assistance to the victims affected by the floods. Anicet Nibaruta, Director General of Civil Protection and President of the National Platform for Disaster Management, explains:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5686,
+      "body_end": 5990,
+      "source_links": [
+        "https://www.iwacu-burundi.org/les-inondations-de-gatumba-ce-calvaire-qui-nen-finit-pas/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00023",
+      "text": "> Nous avons envisagé des stratégies de secours en collaboration avec l'OIM. Plus de 350 ménages seront assistés. Chacun aura une somme de 525000 Francs Bu (252 dollars américains) pour payer le loyer de trois mois en attendant la saison sèche pour que les murs et les digues soient construits.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5992,
+      "body_end": 6286,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787004-b00024",
+      "text": "> We have worked with the IOM to develop relief strategies. More than 350 households will be assisted, with each receiving a sum of BIF 525,000 (USD 252) to cover three months’ rent while waiting for the dry season when walls and dikes can be built.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6288,
+      "body_end": 6537,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787004-b00025",
+      "text": "Benjamin Nyambere, hillside mediator of the Mushasha I sector in the village of Gatumba, welcomes the initiative but remains dissatisfied:",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6539,
+      "body_end": 6677,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00026",
+      "text": "> Nous remercions l’OIM et le gouvernement pour ce geste de soutien qu’il nous montre. Mais une somme de 525000 Fbu (252 dollars américains) ne suffit pas car il sera sanctionné par un loyer de 150 000 Fbu (71 dollars américains). Nous avons besoin de beaucoup de choses. Nous n’avons pas de quoi manger. J'espère qu'à part cette somme de loyer, le gouvernement nous donnera de ration, même actuellement nous continuons à peiner de famine.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6679,
+      "body_end": 7118,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787004-b00027",
+      "text": "> We appreciate the support shown to us by the IOM and the government. However, a sum of BIF 525,000 (USD 252) is not enough as the rent alone costs BIF 150,000 (USD 71 US). We need many things, including food. I hope that in addition to the rent money, the government will provide us with food rations. Even now, we continue to struggle with famine.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7120,
+      "body_end": 7470,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-787004-b00028",
+      "text": "Nibaruta also stated that the remaining population of Mushasha I and II will be relocated to other areas. To protect the riverbanks, the plan is to construct two walls, each two kilometres long, with a width of 6 meters and a height of 2 meters. These works will be carried out during the next dry season and will cost USD 324 million, as explained in this video in Kirundi.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7472,
+      "body_end": 7846,
+      "source_links": [
+        "https://www.facebook.com/YagaBurundi/videos/890765259009293/?mibextid=rS40aB7S9Ucbxw6v",
+        "https://www.facebook.com/watch/?mibextid=rS40aB7S9Ucbxw6v&v=890765259009293"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787004-b00029",
+      "text": "Given the repeated occurrence of these floods, the Burundian authorities may find that permanently relocating these residents is the best solution. This is precisely what Mamert Sabushimike, a member of the Association of Friends of Nature in Burundi, advocates for in this video:",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7848,
+      "body_end": 8128,
+      "source_links": [
+        "https://www.youtube.com/watch?v=BSp6OmAGpOo"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "68604ac45aa56aafefd8e611a4a71a637102d4e64457d60c7d28f15fc2237745",
+  "word_count": 1341,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 5,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 2,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8128,
+  "retrieved_at": "2026-11-16T22:39:07.493336+00:00",
+  "raw_html_sha256": "07ddca4c14c92548050ec48dcc9d279ed47f150366ce7a8c91caa435be7e2787",
+  "resolved_source_url": "https://globalvoices.org/2023/05/10/peri-urban-burundi-residents-still-affected-by-flooding/",
+  "canonical_url": "https://globalvoices.org/2023/05/10/peri-urban-burundi-residents-still-affected-by-flooding/",
+  "source_bytes": 194383,
+  "authors": [
+    {
+      "name": "Jean Sovon",
+      "url": "https://fr.globalvoices.org/author/jean-sovon/"
+    },
+    {
+      "name": "Ferdinand Mbonihankuye",
+      "url": "https://fr.globalvoices.org/author/ferdinand-mbonihankuye/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Jean-Christophe Brunet",
+      "url": "https://globalvoices.org/author/jcbrunet/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 787004,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "07ddca4c14c92548050ec48dcc9d279ed47f150366ce7a8c91caa435be7e2787",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-9bf9f0bc2a43618eaad5",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-05",
+    "eligible_month_documents": 130,
+    "selected_month_documents": 109,
+    "inclusion_probability": 0.8384615384615385,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Jean Sovon; Ferdinand Mbonihankuye",
+  "body_start": 506,
+  "body_end": 8634,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c7eff196e993934bcc3870622e6bde017e17ade52f1c230162dd86c14d93d8f1",
+  "text_path": "articles/gv-787004.txt",
+  "metadata_path": "metadata/gv-787004.json",
+  "attribution": "This story by Jean Sovon; Ferdinand Mbonihankuye originally appeared on Global Voices. https://globalvoices.org/2023/05/10/peri-urban-burundi-residents-still-affected-by-flooding/",
+  "content_sha256": "da43ca6decc28ecdb589fa30bbc2aced5a4c4caf5d241e96c0b120bdcb9bc0f7",
+  "source_sha256": "07ddca4c14c92548050ec48dcc9d279ed47f150366ce7a8c91caa435be7e2787",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,524 @@
+{
+  "id": "gv-717048",
+  "publisher_id": 717048,
+  "source_id": "globalvoices:717048",
+  "source_url": "https://globalvoices.org/2020/09/23/how-indigenous-peoples-resist-covid-19-in-south-america/",
+  "title": "How indigenous peoples resist COVID-19 in South America",
+  "published_at": "2020-09-23T17:12:26Z",
+  "modified_at": "2022-04-06T07:10:10Z",
+  "api_author_id": 2715,
+  "api_content_sha256": "609771629056f5890756b46f01a7f37c20d28e9420e26e56dbf3a65162017357",
+  "api_response_sha256": "f9cee3b5e82058a53a72abf37f4b8c608c3497ca79effe33e36fced5052a4cbe",
+  "api_retrieved_at": "2026-11-16T22:20:29.692733+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 147,
+      "count": 988,
+      "name": "Bolivia",
+      "slug": "bolivia",
+      "parent": 1354
+    },
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 262,
+      "count": 2092,
+      "name": "Indigenous",
+      "slug": "indigenous",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 157,
+      "count": 1167,
+      "name": "Venezuela",
+      "slug": "venezuela",
+      "parent": 1354
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-717048-b00001",
+      "text": "In Latin America, indigenous people are at higher risk of COVID-19 infection due to lack of data and historical political neglect, according to indigenous communities and human rights organizations. Malnutrition, anemia, and obesity rates are high and resources to build nearby hospitals are low. In Bolivia, for example, the Bolivian Center for Legal Studies and Social Research (CEJIS for its initials in Spanish) also warned about the risk of the “ethnocide” of indigneous groups in the context of COVID-19. Similar concerns have spread throughout the continent.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 565,
+      "source_links": [
+        "http://www.cejis.org/bolivia-ante-el-covid-19-los-pueblos-indigenas-estan-en-puertas-de-un-etnocidio/",
+        "http://www.fiocruz.br/omsambiental/cgi/cgilua.exe/sys/start.htm?infoid=289&sid=13",
+        "https://brasil.mongabay.com/2020/06/60-das-aldeias-da-amazonia-estao-a-mais-de-200-km-de-um-leito-de-uti/",
+        "https://covid19.socioambiental.org/",
+        "https://theconversation.com/la-justicia-brasilena-ordena-a-bolsonaro-proteger-a-los-pueblos-indigenas-del-coronavirus-142527"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00002",
+      "text": "To face the lack of access to basic sanitary services and absent public authorities, indigenous peoples are finding ways to cope with COVID-19. Here are ways the peoples of Yek'uana, Kayapo Mekranoti, São Gabriel da Cachoeira, San Antonio de Lomerío, Multi-Ethnic Indigenous Territory and Tsimané community in Venezuela, Brazil, and Bolivia are resisting the pandemic.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 567,
+      "body_end": 935,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00003",
+      "text": "Indigenous peoples in Venezuela protest for their rights through YouTube and Twitter",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 937,
+      "body_end": 1021,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00004",
+      "text": "In Venezuela, information has gotten even rarer after indigenous leader and journalist Melquíades Avilás was arrested on March 13 in the state of Delta Amacuro mining area. He was detained after asking, “Will our hospital be ready for coronavirus?” on his Facebook account. The post was later deleted, as medics and other activists in the area denounced state negligence during the pandemic more anonymously. While the exact number of indigenous people who have contracted and died of COVID-19 in Venezuela is not clear, the UN estimates that nearly 5,000 indigenous Venezuelans have fled to Brazil due to the pandemic.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1023,
+      "body_end": 1642,
+      "source_links": [
+        "https://efectococuyo.com/coronavirus/indigenas-desplazados-de-venezuela-estan-expuestos-peligrosamente-a-covid-19-dice-onu/",
+        "https://efectococuyo.com/salud/primeros-casos-de-covid-19-en-amazonas-pertenecen-a-la-etnia-yeral/",
+        "https://twitter.com/search?q=%C2%A0%23HoyMeUnoAKapeKape%C2%A0&src=typed_query",
+        "https://www.reuters.com/article/us-health-coronavirus-venezuela-insight/as-coronavirus-hits-venezuela-maduro-further-quashes-dissent-idUSKBN21C1TA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00005",
+      "text": "In late June, three indigenous leaders from Yek'uana people in the southeastern Bolívar state read their official statement resuming how the pandemic and the quarantine measures have affected the lifestyle and reported 302 indigenous stuck outside of their communities. At the time of publication, they have not been able to come home because of the quarantine and lack of gasoline. The letter is read in the video below:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1644,
+      "body_end": 2065,
+      "source_links": [
+        "https://www.youtube.com/watch?time_continue=11&v=GKfD5U6500M&feature=emb_title"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00006",
+      "text": "To find less individual ways to protests their situation, indigenous peoples and human rights activists also supported a virtual protest throughout July #HoyMeUnoAKapeKape (#TodayIJoinKapeKape) organized by the NGO Kapé Kapé and aimed at indigenous communities in Amazonas state to denounce the lack of food, cash, water, gasoline, public health system, access to medicine, and the violation of their democratic rights. They most frequently complained about the electoral authorities’ decision to eliminate the indigenous peoples’ direct voting methodology.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2067,
+      "body_end": 2624,
+      "source_links": [
+        "https://elpais.com/internacional/2020-07-31/la-autoridad-electoral-de-venezuela-elimina-la-eleccion-directa-de-los-diputados-indigenas.html",
+        "https://kape-kape.org/",
+        "https://twitter.com/search?q=%C2%A0%23HoyMeUnoAKapeKape%C2%A0&src=typed_query"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00007",
+      "text": "> I congratulate @ackapekape on their new anniversary. And I join the campaign to respect the right to integral health of indigenous peoples, due to the lack of adequate public policies, a situation that is aggravated by #Covid_19 in the region #TodayIJoinKapeKape",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2626,
+      "body_end": 2890,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-717048-b00008",
+      "text": "In Brazil, indigenous communities show resistance by blocking a highway and building mobile hospitals",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2892,
+      "body_end": 2993,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00009",
+      "text": "The pandemic reached Brazilian indigenous communities in the midst of a battle to maintain basic rights. On August 18, dozens of Amazonian indigenous leaders denounced the social inequalities in their region by blocking a strategic road for transporting grains to the state of Mato Grosso. Armed with bows and arrows, the Kayapo Mekranoti settled on the BR-163 highway near the city of Novo Progresso, in northern Brazil, about 80km from the village where the Kayapo people live, for ten days.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2995,
+      "body_end": 3488,
+      "source_links": [
+        "https://amazoniareal.com.br/vamos-resistir-dizem-indigenas-kayapo-sobre-bloqueio-na-br-163-no-para-18-08-2020/",
+        "https://en.wikipedia.org/wiki/Kayapo"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00010",
+      "text": "The Kayapo sent a letter during the blockage to the Fundação Nacional do Índio (Funai), the government agency responsible for implementing policies concerning indigenous peoples in Brazil. In it, they claimed that they were being forced out from their lands and had little to no access to basic preventive measures against COVID-19.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3490,
+      "body_end": 3822,
+      "source_links": [
+        "http://www.funai.gov.br/",
+        "https://noticias.uol.com.br/colunas/rubens-valente/2020/08/20/kayapo-covid-funai-protesto-bloqueio-rodovia.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00011",
+      "text": "This community lives on Badjônkôre territory, an officially demarcated indigenous land since 2003 that is extremely valuable to gold miners, cattle owners, and wood companies. There is a national tendency, illustrated by the fires in the Amazon and Pantanal forests, to strategically exploit these areas which are legally attributed to indigenous communities. Since President Jair Bolsonaro took office, there has been a tug of war to remove protective measures on demarcated lands alongside guarantees of access to healthcare and basic sanitary conditions from indigenous communities.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3824,
+      "body_end": 4409,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Pantanal",
+        "https://news.mongabay.com/2019/06/brazils-congress-reverses-bolsonaro-restores-funais-land-demarcation-powers/",
+        "https://terrasindigenas.org.br/pt-br/terras-indigenas/4122",
+        "https://www.aljazeera.com/news/2020/07/brazil-president-bolsonaro-vetoes-covid-19-aid-indigenous-200708190234748.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00012",
+      "text": "On September 15, the Kayapó people won their first legal victory on that matter; the Brazilian State now has to comply with indigenous environmental protection demands in this region.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4411,
+      "body_end": 4594,
+      "source_links": [
+        "https://amazoniareal.com.br/indigenas-kayapo-tem-vitoria-sobre-governo-federal/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00013",
+      "text": "> No more deforestation in the Amazon!",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4596,
+      "body_end": 4634,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-717048-b00014",
+      "text": "> No more abandonment in the face of #COVID19!",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4636,
+      "body_end": 4682,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-717048-b00015",
+      "text": "> Indigenous people of Kapayo from #Brazil in resistance",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4684,
+      "body_end": 4740,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-717048-b00016",
+      "text": "> #indigenouslivesmatter",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4742,
+      "body_end": 4766,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-717048-b00017",
+      "text": "Even though COVID-19 spread fast in Brazil, the Brazilian city with most indigenous populations managed to extinguish its COVID-19 related deaths in July. Located on the border with Colombia and Venezuela, São Gabriel da Cachoeira is known for having more than 90% of the population composed of indigenous people who belong to about 23 different ethnicities. When the pandemic started, they established a curfew and organized local information campaigns, which included the production of podcasts and the circulation of a sound car through the city streets carrying information in indigenous languages, in order to prevent the disease from spreading.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4768,
+      "body_end": 5418,
+      "source_links": [
+        "https://twitter.com/CopioParente/status/1283133375998459911",
+        "https://www.socioambiental.org/pt-br/noticias-socioambientais/cidade-mais-indigena-do-brasil-sao-gabriel-da-cachoeira-se-isola-contra-a-covid-19"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00018",
+      "text": "This was done in May, almost two months after the arrival of COVID-19 in Brazil, with the help of indigenous leaders who collaborated with foreign institutions, such as Doctors without borders and a national fund that aggregates donations from banks, hospitals, and members of civil society. Together, they have donated R$ 800,000 (150,703 US Dollars) to build nine mobile health units and start a massive testing campaign.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5420,
+      "body_end": 5843,
+      "source_links": [
+        "https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/06/09/am-cidade-indigena-lamenta-e-comemora-ser-lider-em-casos-de-covid-no-pais.htm",
+        "https://valor.globo.com/brasil/noticia/2020/05/13/todos-pela-saude-ja-usou-quase-80percent-do-r-1-bilhao-doado-pelo-itau.ghtml",
+        "https://www.socioambiental.org/pt-br/noticias-socioambientais/em-sao-gabriel-medicos-sem-fronteiras-combate-covid-19-respeitando-rituais-indigenas"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00019",
+      "text": "Indigenous peoples in Bolivia share their wisdom with the world",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5845,
+      "body_end": 5908,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00020",
+      "text": "A recipe book, a handmade syrup, and a health protocol are what indigenous peoples from the low plains in eastern Bolivia advise to face the pandemic.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5910,
+      "body_end": 6060,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00021",
+      "text": "The leaders of the Multi-Ethnic Indigenous Territory (TIM for their initials in Spanish), who own land through collective title according to Bolivian law, published Remedios del Monte. Remedios del Monte can be loosely translated to remedies of nature, the forest, or the bush. Paulina Noza, the president of TIM's women's council, explained why to local press:",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6062,
+      "body_end": 6423,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Native_Community_Lands",
+        "https://www.laregion.bo/indigenas-amazonicos-de-bolivia-lanzan-recetario-de-medicina-ancestral/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00022",
+      "text": "> Hicimos este recetario, preocupados por la pandemia que brotó este año. (…) Por eso nosotros seguimos conservando [esos saberes] y ahora queremos que la gente lo conozca",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6425,
+      "body_end": 6596,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-717048-b00023",
+      "text": "> We made the recipe book because we are worried about the pandemic. (…) We want people to know the age-old wisdom we preserve.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6598,
+      "body_end": 6725,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-717048-b00024",
+      "text": "The lawyer and researcher Fátima Monasterio told local press that the use of natural medicine is a survival strategy due to the absence of the state. In fact, the recipe book’s presentation says:",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6727,
+      "body_end": 6922,
+      "source_links": [
+        "https://www.laregion.bo/indigenas-amazonicos-de-bolivia-lanzan-recetario-de-medicina-ancestral/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00025",
+      "text": "> En esta lucha por la vida, que se remonta a la memoria de los antiguos, seguiremos exigiendo el cumplimiento de nuestros derechos.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6924,
+      "body_end": 7056,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-717048-b00026",
+      "text": "> In this struggle for life, which dates back to our ancestor's memory, we will continue to demand the fulfillment of our rights.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 7058,
+      "body_end": 7187,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-717048-b00027",
+      "text": "The recipe book contains instructions to increase the body's natural defenses, cure colds, treat symptoms such as fever, diarrhea, and cough, and also shares recommendations to improve human's spiritual relationship with nature.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7189,
+      "body_end": 7417,
+      "source_links": [
+        "https://www.laregion.bo/wp-content/uploads/2020/05/Remedios-del-Monte_Monasterio1-compressed.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00028",
+      "text": "Also, the Tsimané community, which belongs to TIM, developed a health protocol together with doctors and anthropologists that consists of special care for the elderly, controlling entry points into their territory, caring for quarantined people, contact tracing, and dissemination of information in their indigenous language. In the video below, TIM President Paula Noza explains the community's help and how entry points work.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7419,
+      "body_end": 7846,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Tsiman%C3%A9",
+        "https://www.scidev.net/america-latina/coronavirus/noticias/etnia-boliviana-crea-protocolo-para-enfrentar-covid-19.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-717048-b00029",
+      "text": "Meanwhile, José Parapaino Chuvirú, from the indigenous territory San Antonio de Lomerío, launched the traditional syrup “Sabor Original Kutuki” [“Kutuki Original Flavor”], made of the medicinal herb kutuki and macerated with a mixture of roots and leaves. According to testimonies mentioned in the platform Salud con Lupa, the beverage has been effective in calming COVID-19 symptoms.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7848,
+      "body_end": 8232,
+      "source_links": [
+        "https://www.lapublica.org.bo/especiales/item/1221-bolivia-la-comunidad-de-lomerio-envasa-una-planta-medicinal-para-enfrentar-la-pandemia"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "29eefeb4f72bcc5b6d6f590d87e52d44ecd2c4194be6b47e2727fee18e409e41",
+  "word_count": 1265,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 3,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 3,
+      "reason": "Executable or external/non-text media excluded"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 8232,
+  "retrieved_at": "2026-11-16T22:27:33.429835+00:00",
+  "raw_html_sha256": "54ac80473af891053d3b568186684f8275c5334dbbe45bfbb653373d830fff36",
+  "resolved_source_url": "https://globalvoices.org/2020/09/23/how-indigenous-peoples-resist-covid-19-in-south-america/",
+  "canonical_url": "https://globalvoices.org/2020/09/23/how-indigenous-peoples-resist-covid-19-in-south-america/",
+  "source_bytes": 199481,
+  "authors": [
+    {
+      "name": "Gabriela Mesones Rojo",
+      "url": "https://globalvoices.org/author/gabriela-mesones-rojo/"
+    },
+    {
+      "name": "Giovana Fleck",
+      "url": "https://globalvoices.org/author/giovana-fleck/"
+    },
+    {
+      "name": "Fabiola Gutierrez",
+      "url": "https://globalvoices.org/author/fabiola-gutierrez/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 717048,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "54ac80473af891053d3b568186684f8275c5334dbbe45bfbb653373d830fff36",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-8db70cf4b2cbdf28007f",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-09",
+    "eligible_month_documents": 86,
+    "selected_month_documents": 72,
+    "inclusion_probability": 0.8372093023255814,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Gabriela Mesones Rojo; Giovana Fleck; Fabiola Gutierrez",
+  "body_start": 489,
+  "body_end": 8721,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "06d527c7fa6ccbb7ea7b48fb3998e24c3b21cb4195b0c1c264afce1982870e08",
+  "text_path": "articles/gv-717048.txt",
+  "metadata_path": "metadata/gv-717048.json",
+  "attribution": "This story by Gabriela Mesones Rojo; Giovana Fleck; Fabiola Gutierrez originally appeared on Global Voices. https://globalvoices.org/2020/09/23/how-indigenous-peoples-resist-covid-19-in-south-america/",
+  "content_sha256": "fbff0594878f3828bf67ce0cc2f10c99a9b2a5a8025f4f0c0dd93b3baf091847",
+  "source_sha256": "54ac80473af891053d3b568186684f8275c5334dbbe45bfbb653373d830fff36",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

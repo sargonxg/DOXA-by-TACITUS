@@ -1,0 +1,47 @@
+India pushes for storage of private data using technology built for anonymity
+Written by: Subhashish Panigrahi
+Originally published by Global Voices: https://globalvoices.org/2022/05/16/india-pushes-for-storage-of-private-data-using-technology-built-for-anonymity/
+Published: 2022-05-16T04:27:03Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+India's Ministry of Electronics and Information Technology (MeitY) recently announced that many internet service providers, intermediaries and data centres responsible for anonymous and private internet services would be required to store a wide range of user data for five years. The directive, which goes into effect from June, includes mandatory reporting of “cyber incidents” such as data breaches or leakages within six hours of identification.
+
+The ministry's Computer Emergency Response Team (CERT-in) published an announcement on April 28, 2022, addressing organisations that provide Virtual Private Network (VPN), Virtual Private Server (VPS) and cloud services, as well as data centres. As VPNs and blockchain-based services are often designed to assure user anonymity and privacy, this directive might force many service providers to either shut down operations in India or disrupt the privacy of their users.
+
+Indian legal non-profit Software Freedom Law Centre has shared its concerns about the world's largest VPN company, NordVPN, pulling out of India:
+
+International service provider Proton VPN also lodged their protest:
+
+Why should Indians be concerned?
+
+Using a VPN service can hide your location and IP address and add another layer of security to the open network. However, these services do not store logs of your access records and online activities, nor do they pass them on to third parties — so while the Indian government is not banning VPNs, journalists, activists and others who use these services to hide their internet footprint will risk being exposed, even while using VPN services.
+
+Indian digital liberties organisation Internet Freedom Foundation raised several concerns about this CERT-In directive, including its lack of definitions, lack of compliance with existing cybersecurity provisions, and excessive data retention requirements. It is also concerned that it is building an avenue for mass surveillance:
+
+The specific data points that the listed service providers will need to store include names of users, duration and dates of use, users’ internet protocol (IP) and email addresses, and even the IP address and timestamp used at the time of registration or service initiation. Additionally, they are required to document the purpose of the services, as well as the addresses, contact numbers, and ownership patterns of the people who use them. The public circular also emphasises appointing a Point of Contact (PoC), and sharing the details of the PoC with CERT-in. For its part, CERT-in says that this step is a preemptive measure against various kinds of malicious and targeted attacks, including data breaches and leaks, and attacks through spyware, ransomware or phishing.
+
+The CERT-in circular mandates reporting of such “cyber incidents” to government authorities within six hours of identification. Online news publication Medianama reported that the Information Technology Industry Council (ITI), a representative of tech companies — including Big Tech corporations like Apple, Amazon, Meta (Facebook), Google (Alphabet), and Microsoft — has raised concerns about this new directive and whether, quite apart from causing harm to the tech industry, it can also undermine India's cybersecurity. The ITIC has recommended increasing the reporting time from six hours to 72, and has deemed the maintenance of users’ logs for 180 days to be risky for users and expensive for service providers.
+
+The mandate also requires intermediaries and service providers to connect to designated Network Time Protocol (NTP) servers for their ICT system's clock synchronisation. NTP is a networking protocol, used by computer systems connected through the internet and other data networks, for the synchronisation of the clock. Major security incidents have been reported in recent years due to NTP, and the ITIC has said that such a requirement can “negatively affect companies’ security operations as well as the functionality of their systems, networks, and applications.”
+
+Pointing to gaps in the directive and flagging how CERT-In had failed to do its job during data breaches, Mishi Choudhary, founder of the Software Freedom Law Centre (SFLC.in) in New Delhi, noted, “Requirements to register VPN users [and] linking of identification to IP addresses raise serious privacy concerns and should be removed. CERT-In cannot take away the right to use certain tools in the garb of cyber security.”
+
+Widespread criticism
+
+Meanwhile, online commentary about the directive was rife, with software engineer and blogger Manoj Saru asking the obvious question:
+
+Journalist Tanay Singh Thakur tweeted:
+
+Twitter user Vikram Karandikar warned:
+
+Through a series of tweets, noted cybersecurity expert Anand Venkatanarayanan criticised how CERT-in has not weighed on its own infrastructure even as it introduced the mandate related to NTP. In this vein, he questioned the recommended use of state-owned National Informatics Centre (NIC) servers, which have proven vulnerable to security breaches in the past, suggesting this could lead to more breaches if and when the directive comes into action.
+
+In a newsletter, Venkatanarayanan further critiqued this directive, highlighting the poor technical capacity that CERT-in showcased in 2019 when WhatsApp made an announcement that security vulnerabilities were being exploited to use Pegasus spyware:
+
+> [..]although countries want to be self-reliant, aspiration is no substitute for capacity, capability and budgets.
+
+Amnesty India tweeted:
+
+In 2021, the Pegasus Project revealed the Indian government's alleged role in using the Pegasus spyware to snoop on opposition politicians, journalists critical of the government, and high-ranking government officials.

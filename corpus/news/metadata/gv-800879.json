@@ -1,0 +1,548 @@
+{
+  "id": "gv-800879",
+  "publisher_id": 800879,
+  "source_id": "globalvoices:800879",
+  "source_url": "https://globalvoices.org/2023/11/08/trinidad-tobagos-state-telecommunications-provider-is-hacked-raising-questions-about-data-protection-laws/",
+  "title": "Trinidad & Tobago's state telecommunications provider is hacked, raising questions about data protection laws",
+  "published_at": "2023-11-08T12:21:52Z",
+  "modified_at": "2023-11-08T13:07:48Z",
+  "api_author_id": 965,
+  "api_content_sha256": "9cf6ab1d4ce5d442626bdc6fca867ffd120fb107dfec318fc047a8d304afa2b7",
+  "api_response_sha256": "a286ff614993e6c2c4bfc0ceec4b508eca30444387ed61775d0c5b7b37585acf",
+  "api_retrieved_at": "2026-11-16T22:20:58.008832+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1353,
+      "count": 10223,
+      "name": "Caribbean",
+      "slug": "caribbean",
+      "parent": 219
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 247,
+      "count": 4731,
+      "name": "Education",
+      "slug": "education",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 184,
+      "count": 3312,
+      "name": "Trinidad &amp; Tobago",
+      "slug": "trinidad-tobago",
+      "parent": 1353
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-800879-b00001",
+      "text": "A few days before Halloween, customers of tech users registered with Telecommunications Services of Trinidad and Tobago (TSTT) received scary news of a ransomware attack on the company. Local tech journalist Mark Lyndersay, writing at Tech News T&T, said that several data breach reporting sites noted “exfiltration of data from the [company's] systems [on] October 27, 2023.”",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 376,
+      "source_links": [
+        "https://technewstt.com/tstt-ransomexx-exploit/",
+        "https://www.tstt.co.tt/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00002",
+      "text": "The culprit was RansomEXX, an infamous ransomware group which, as its name suggests, holds data hostage until a ransom is paid. By October 28, the Tech News T&T post had been updated to advise that Dark Web Informer, a Twitter account dedicated to reporting data breaches, accessed a note alleging that TSTT had been warned about the hackers’ intentions. The very next day, RansomEXX posted a CSV file as proof of its successful data exfiltration, which contained detailed information for over 800,000 TSTT customers but was by no means representative of the entire data dump.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 378,
+      "body_end": 954,
+      "source_links": [
+        "https://technewstt.com/tstt-ransomexx-exploit/",
+        "https://twitter.com/DarkWebInformer"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00003",
+      "text": "Two days later, on October 31, TSTT claimed that although there was a hacking attempt, it had failed, while Minister of Public Utilities Marvin Gonzales denied there was a hack at all. Throughout the debacle, tech journalist Lyndersay has maintained that “it is an issue of customer privacy and the customer’s right to know.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 956,
+      "body_end": 1281,
+      "source_links": [
+        "https://newsday.co.tt/2023/10/30/hackers-claim-ransomware-attack-on-tstt/",
+        "https://newsday.co.tt/2023/10/31/tstt-on-ransomware-attack-hackers-tried-but-failed/",
+        "https://trinidadexpress.com/news/local/tstt-confirms-cyberattack/article_14eb2946-7788-11ee-89e5-df027c677446.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00004",
+      "text": "By November 3, TSTT finally went from insisting “there was no loss or compromise of customer data” to stating that “the data released contains largely identifying information, and TSTT apologises to those customers whose information was accessed by these cyber terrorists.” Its release still sought to temper the situation, however, adding that “the 6GB accessed represents less than 1% of the petabytes of data the company produces and stores,” representing information “of a small subset of TSTT’s customer base.”",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1283,
+      "body_end": 1798,
+      "source_links": [
+        "https://technewstt.com/tstt-ransomexx-exploit/",
+        "https://www.tstt.co.tt/news/TSTT-Update-on-Cybersecurity-Issue---November-3%2C-2023"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00005",
+      "text": "It hastened to add that while the attack did access customers’ names, email and residential addresses, photo IDs, account and mobile numbers, and payment receipts, it did not include call records, passwords, or customers’ financial information, so there was “no elevated risk of fraudulent activity for the group of customers impacted.” The company also “categorically refute[d]” claims that its data centre was breached, calling them “totally inaccurate, ill-informed and mischievous.”",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1800,
+      "body_end": 2286,
+      "source_links": [
+        "https://www.tstt.co.tt/news/TSTT-Update-on-Cybersecurity-Issue---November-3%2C-2023"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00006",
+      "text": "Lyndersay, however, explained:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2288,
+      "body_end": 2318,
+      "source_links": [
+        "https://technewstt.com/tstt-ransomexx-exploit/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00007",
+      "text": "> Noting that the company generates terabytes of data is a straw man tactic to draw attention from the specifics and seriousness of the exfiltration. What matters is which 6GB of data the company has had copied off its servers.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2320,
+      "body_end": 2547,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-800879-b00008",
+      "text": "By November 1, prior to TSTT's press release update, one of Lyndersay's ongoing updates to the Tech News T&T post revealed that an independent review of the data dump suggested that “internal system passwords and external customer passwords were part of the data package exfiltrated from the company’s servers”:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2549,
+      "body_end": 2860,
+      "source_links": [
+        "https://technewstt.com/tstt-ransomexx-exploit/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00009",
+      "text": "> TSTT has had days to examine the data that is, as it acknowledged in its press release, in the public domain, but has not advised whether it has warned business customers of their exposure in this breach. The company continues to make no effort to issue any warnings to its over-the-counter customer base about exposure of their personally identifiable information.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2862,
+      "body_end": 3229,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-800879-b00010",
+      "text": "“Since TSTT won’t say it, I will,” Lyndersay continued, before advising readers to change their passwords and “have a discussion with company representatives about your exposure.”",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3231,
+      "body_end": 3410,
+      "source_links": [
+        "https://technewstt.com/tstt-ransomexx-exploit/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00011",
+      "text": "Also writing at Tech News T&T was data protection consultant Rishi Maharaj, who expressed concerns about the timing of the data breach:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3412,
+      "body_end": 3547,
+      "source_links": [
+        "https://technewstt.com/tstt-breach-customers/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00012",
+      "text": "> TSTT mentions that they became aware of the cyber-attack on October 9th, 2023. The gap between the attack and public disclosure appears to be significant, which could be concerning under Data Protection principles, especially as people’s personal data was comprised.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3549,
+      "body_end": 3817,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-800879-b00013",
+      "text": "Trinidad and Tobago, Maharaj says, has “no laws” that require companies to report data breaches to a regulator within a specific time frame (usually three to five days) and inform affected individuals, or even advise as to the nature of the stolen data. The country's Data Protection Act contains a clause with regard to the protection of personal information which reads:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3819,
+      "body_end": 4191,
+      "source_links": [
+        "https://rgd.legalaffairs.gov.tt/laws2/Alphabetical_List/lawspdfs/22.04.pdf",
+        "https://technewstt.com/tstt-breach-customers/",
+        "https://trinidadexpress.com/news/local/over-one-million-tstt-customer-records-on-dark-web/article_a21817e2-79eb-11ee-9c24-c35f8111013c.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00014",
+      "text": "> A public body shall protect personal information in its custody or under its control by making reasonable security arrangements against such risks as unauthorised access, collection, use, alteration, disclosure or disposal.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4193,
+      "body_end": 4418,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-800879-b00015",
+      "text": "Noting that TSTT's initial claim of no data loss was “alarming[ly]” contradictory to the evidence put forward by RansomEXX, Maharaj felt that the incident “places the need for revised legislation not only from a Data Protection perspective but also a cyber crime perspective to provide for an independent regulator and also to empower TT CSIRT [the Trinidad and Tobago Cyber Security Incident Response Team] with the ability to independently act and ensure accuracy and timely release of information and investigations [and] hold companies honest and accountable.”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4420,
+      "body_end": 4984,
+      "source_links": [
+        "https://technewstt.com/tstt-breach-customers/",
+        "https://ttcsirt.gov.tt/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00016",
+      "text": "The Telecommunications Authority of Trinidad and Tobago said it was “disturbed” by the data breach, adding that it viewed this matter as “serious” and planned to “work with service providers to ensure that the highest level of network security is maintained.” Social media users, meanwhile, were getting panicky about their personal data being released onto the dark web, even as cybersecurity experts were saying there was nothing to be done about it.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4986,
+      "body_end": 5438,
+      "source_links": [
+        "https://technewstt.com/nothing-to-be-done-about-data-exposure/",
+        "https://technewstt.com/pr-tatt-disturbed-by-tstt-data-breach/",
+        "https://trinidadexpress.com/news/yes-tstt-customers-your-personal-information-is-on-the-dark-web/article_5cb7bbde-7a55-11ee-a297-bb0a5fa01677.html",
+        "https://www.facebook.com/adamalex868/posts/pfbid0BTFuiFbfvT6oLh5Y3DeheKhLbCvPHwoxZybq5L8CBnmCoTjJSuQGZEFhWk32U36Ul",
+        "https://www.facebook.com/gerrard.gomez/posts/pfbid02U9d48rJ2W9QV4Fe3UYaRU25CwChbqo4fSPcBXRMj1oq7Tv3JSBydBPPsk1ZF3enEl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00017",
+      "text": "Quantum Chaos, a global software and technology development firm with offices in the Caribbean, tried to help customers determine whether their information was compromised by creating a name-based search link. Many people took advantage of the tool, which allowed users to determine the number of leaked documents attached to their names. The link does not, however, provide access to the dumped data.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5440,
+      "body_end": 5841,
+      "source_links": [
+        "https://datatrace.quantum-chaos.com/",
+        "https://www.linkedin.com/posts/quantum-chaos_caribbean-secure-cybersecurity-activity-7124909894322843650-31yo/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00018",
+      "text": "On its LinkedIn page, Quantum Chaos mused:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5843,
+      "body_end": 5885,
+      "source_links": [
+        "https://www.linkedin.com/posts/quantum-chaos_caribbean-secure-cybersecurity-activity-7124909894322843650-31yo/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00019",
+      "text": "> TSTT's recent breach reminds us that there is a mountain of work yet to do before we get #caribbean organisations #secure",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5887,
+      "body_end": 6010,
+      "source_links": [
+        "https://www.linkedin.com/feed/hashtag/?keywords=caribbean&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7124909894322843650",
+        "https://www.linkedin.com/feed/hashtag/?keywords=secure&highlightedUpdateUrns=urn%3Ali%3Aactivity%3A7124909894322843650"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-800879-b00020",
+      "text": "> The first step is education.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6012,
+      "body_end": 6042,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-800879-b00021",
+      "text": "Adding insult to injury was TSTT's likening of the information attained in the breach to that found in a telephone directory, a comparison that Lyndersay found “absurd,” saying, “A phone directory is not malleable information that can be matched with other datasets. It also does not contain bank account information or personal ID information.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6044,
+      "body_end": 6389,
+      "source_links": [
+        "https://technewstt.com/tstt-ransomexx-exploit/",
+        "https://www.facebook.com/ingrid.tang.3956/posts/pfbid0mt4AuqAxERbU77g1eFiFdAauZYYmhKfCN39GhxLXsPQL2iuz4UfEsJA9NCyuhLC4l",
+        "https://www.tstt.co.tt/news/TSTT-Update-on-Cybersecurity-Issue---November-3%2C-2023"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00022",
+      "text": "Even as Trinidad and Tobago's public utilities minister did a complete 180° and called for a probe into the TSTT attack, and security consultants were cautioning that RansomEXX could strike again, Lyndersay recalled that regional telecommunications provider Digicel had been hacked by RansomEXX two years ago.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6391,
+      "body_end": 6700,
+      "source_links": [
+        "https://newsday.co.tt/2023/11/06/public-utilities-minister-gonzales-changes-tune-orders-probe-tstt-hack-attack/",
+        "https://technewstt.com/digicel-group-ransomexx-breach-2021/",
+        "https://trinidadexpress.com/news/local/ransomware-group-can-come-back/article_50c642a6-7ab3-11ee-b14a-dfc3b3c5b560.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00023",
+      "text": "Facebook user and digital strategist Keron Rose remarked:",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6702,
+      "body_end": 6759,
+      "source_links": [
+        "https://www.facebook.com/keron.rose22/posts/pfbid02FHptxqD6ff4FbDmhMgtyU2aabACCsa1cazBoEVc5eapsUGqzVxRzJfVZfbY31LHYl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00024",
+      "text": "> We can't blame TSTT for getting hacked…it can happen to anybody.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6761,
+      "body_end": 6827,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-800879-b00025",
+      "text": "> The handling and communication from the Minister and TSTT trying to pretend that nothing has happened or that your data is perfectly safe is the problem.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6829,
+      "body_end": 6984,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-800879-b00026",
+      "text": "Sharing a report on cybersecurity from the Jamaica Observer, Rose added:",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6986,
+      "body_end": 7058,
+      "source_links": [
+        "https://www.facebook.com/keron.rose22/posts/pfbid0VzsJxKyyS6Xi7aNZNH4MRUpD3ByWMdDrxejrybrjP58RPXKKTmDHsckZE7xsEzoxl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-800879-b00027",
+      "text": "> The OAS Cybersecurity Symposium taught me that the Caribbean is getting hammered by security breaches, with Ransomware being the breach of choice. […]",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7060,
+      "body_end": 7212,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-800879-b00028",
+      "text": "> Caribbean Cybersecurity is extremely underdeveloped, with a 93% gap in the human capital needed to secure our regions data.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7214,
+      "body_end": 7339,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-800879-b00029",
+      "text": "> TSTT is just another company in the long list of companies getting hacked with their data and systems exposed.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7341,
+      "body_end": 7453,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "0669355ffa7061b588c7004ff2d58f86510bbbc50395ae105ee525a43e622683",
+  "word_count": 1167,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7453,
+  "retrieved_at": "2026-11-16T22:41:17.653437+00:00",
+  "raw_html_sha256": "fbf1a5c9125eed974bf5a1db71caad8c89ffbcb51b556a91d0f6b2ea60372262",
+  "resolved_source_url": "https://globalvoices.org/2023/11/08/trinidad-tobagos-state-telecommunications-provider-is-hacked-raising-questions-about-data-protection-laws/",
+  "canonical_url": "https://globalvoices.org/2023/11/08/trinidad-tobagos-state-telecommunications-provider-is-hacked-raising-questions-about-data-protection-laws/",
+  "source_bytes": 192798,
+  "authors": [
+    {
+      "name": "Flora Thomas",
+      "url": "https://globalvoices.org/author/flora-thomas/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 800879,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "fbf1a5c9125eed974bf5a1db71caad8c89ffbcb51b556a91d0f6b2ea60372262",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-4f744435f1de976783ef",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-11",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Flora Thomas",
+  "body_start": 550,
+  "body_end": 8003,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "5f127207ac620dc5098272f6363e8b914b6e120f92c5d7d062db96a1c509acfe",
+  "text_path": "articles/gv-800879.txt",
+  "metadata_path": "metadata/gv-800879.json",
+  "attribution": "This story by Flora Thomas originally appeared on Global Voices. https://globalvoices.org/2023/11/08/trinidad-tobagos-state-telecommunications-provider-is-hacked-raising-questions-about-data-protection-laws/",
+  "content_sha256": "ad70163ae9bf446a7ef9e33a1aa8d3bbc3bdb322513c9e70427e59a81c4bc9fd",
+  "source_sha256": "fbf1a5c9125eed974bf5a1db71caad8c89ffbcb51b556a91d0f6b2ea60372262",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

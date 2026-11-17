@@ -1,0 +1,361 @@
+{
+  "id": "gv-748787",
+  "publisher_id": 748787,
+  "source_id": "globalvoices:748787",
+  "source_url": "https://globalvoices.org/2021/10/23/bangladeshs-upcoming-data-protection-act-may-suppress-not-protect-citizens-rights/",
+  "title": "Bangladesh’s upcoming Data Protection Act may suppress, not protect, citizens rights",
+  "published_at": "2021-10-23T04:31:55Z",
+  "modified_at": "2021-11-02T04:53:07Z",
+  "api_author_id": 1938,
+  "api_content_sha256": "fb6056d693ef2e6a54bd4cc7c59d855c0ebe0c9344db6ce21037658934598be9",
+  "api_response_sha256": "57aeccf318ed89945a4bde065daec3d031dd424874648368349abe65f2de4209",
+  "api_retrieved_at": "2026-11-16T22:20:38.953094+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 44,
+      "count": 2101,
+      "name": "Bangladesh",
+      "slug": "bangladesh",
+      "parent": 31
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-748787-b00001",
+      "text": "The government of Bangladesh is working on a draft data protection law, known as the DPA, which will be the first legislation in the country that is focused on data privacy and protection. Analysts have pointed out that the draft contains loopholes, including the indemnification of government agencies, which could allow the government to use the prospective law to suppress the rights of citizens and government critics in a way similar to how the existing controversial Digital Security Act (DSA) of 2018 has been used.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 522,
+      "source_links": [
+        "https://unb.com.bd/category/Bangladesh/draft-of-data-privacy-and-localization-law-is-prepared-palak/60084",
+        "https://www.thedailystar.net/views/opinion/news/new-data-protection-act-the-way-time-reality-check-2171611",
+        "https://www.theweek.in/news/sci-tech/2021/09/15/personal-data-protection-law-door-ajar-for-misuse.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00002",
+      "text": "A draft of the law was publicly available on the website of the Digital Security Agency earlier in 2021, but does not appear to be available at the time of writing. It broadly defines the rights and obligations of data subjects, data controllers and data processors, and describes data sourcing and archiving methods, including provisions for data audits and notifications in case of a data breach.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 524,
+      "body_end": 922,
+      "source_links": [
+        "https://www.thedailystar.net/views/in-focus/news/bangladeshs-new-data-protection-act-brittle-shield-or-blunt-sword-2174371"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00003",
+      "text": "Until the DPA appeared, the main piece of legislation pertaining to online activities was the Digital Security Act (DSA), which has been widely critiqued by human rights organisations as a tool to suppress freedom of expression of citizens. The DSA has justified the arrest of over 400 people since its introduction in September 2018, including journalists, activists and citizens posting on social media.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 924,
+      "body_end": 1329,
+      "source_links": [
+        "https://www.hrw.org/news/2020/07/01/bangladesh-repeal-abusive-law-used-crackdown-critics"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00004",
+      "text": "Read More: Free speech advocates say Bangladesh's new Digital Security Act is ‘ripe for abuse’",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1331,
+      "body_end": 1425,
+      "source_links": [
+        "https://globalvoices.org/2018/09/28/free-speech-advocates-say-bangladeshs-new-digital-security-act-is-ripe-for-abuse/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00005",
+      "text": "Strategic advisory firm BGA Asia states that the Data Protection Act may enter into force before the December 2023 general elections. However, the draft law is yet to be finalised.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1427,
+      "body_end": 1607,
+      "source_links": [
+        "https://bowergroupasia.com/asia-st-new-data-protection-act-could-reshape-bangladesh-business-landscape/",
+        "https://www.dhakatribune.com/opinion/op-ed/2021/10/05/op-ed-the-road-to-2023-working-towards-a-level-playing-field-for-an-inclusive-election"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00006",
+      "text": "The government's motivations for the law are unclear. While data protection acts typically aim to protect citizens’ privacy rights, many of the proposals under this draft law would actually increase the government’s access to personal data, and, in theory, also increase their surveillance capabilities. Though there are some similarities with the European Union’s landmark General Data Protection Regulation (GDPR), a key difference is that certain state agencies are reportedly spared from complying with the law, and employees of the Digital Security Agency and the Data Protection Office will be exempt from prosecution. These exemptions remove accountability and lay the groundwork for the government to weaponise the law against critics.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1609,
+      "body_end": 2352,
+      "source_links": [
+        "https://www.fmassociatesbd.com/insights/the-need-for-data-protection-laws-in-bangladesh-comparative-analysis-between-european-general-data-protection-regulation-and-bangladesh",
+        "https://www.thedailystar.net/news/bangladesh/news/personal-data-protection-law-door-ajar-misuse-2174446"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00007",
+      "text": "Another major difference between the proposed DPA and the GDPR is the push for data localisation, or data sovereignty, as the draft law states that the personal data of Bangladeshi citizens must stay in the country. Specifically, the draft says that “every data controller should store at least one serving copy of data within the geographic boundary of Bangladesh.” Under this provision, the government of Bangladesh could potentially exert investigatory jurisdiction to gain access to more data than ever before. As Human Rights Watch describes, under the 2006 amendment to the Telecommunications Act, the government of Bangladesh can give any security officer the authority “to bar, record or to collect the information” that is “sent by any client using the service of any telecommunication” for the purposes of national security and public order — which is already a very broad mandate. This, combined with the Digital Security Act, and the exceptions noted above, create a far-reaching, privacy-invasive surveillance apparatus that is deeply worrying for the privacy rights of Bangladeshi citizens.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2354,
+      "body_end": 3458,
+      "source_links": [
+        "https://ntmc.gov.bd/rules/",
+        "https://thefinancialexpress.com.bd/views/views/is-data-localisation-economically-pragmatic-for-bangladesh-1632927802",
+        "https://www.hrw.org/news/2020/01/08/bangladesh-online-surveillance-control",
+        "https://www.thedailystar.net/news/bangladesh/news/data-sovereignty-or-data-control-2155671",
+        "https://www.thedailystar.net/news/bangladesh/news/personal-data-protection-law-door-ajar-misuse-2174446"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00008",
+      "text": "Read More: Protests erupt in Bangladesh after writer arrested under the Digital Security Act dies in prison",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3460,
+      "body_end": 3567,
+      "source_links": [
+        "https://globalvoices.org/2021/03/19/protests-erupt-in-bangladesh-after-writer-charged-under-the-digital-security-act-dies-in-prison/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00009",
+      "text": "This law would also have significant consequences for international companies and organisations with operations inside Bangladesh, who might otherwise use servers located in other countries to host their data, and who would have to change large parts of their infrastructure to ensure that data of Bangladeshi citizens remain inside the country. Operationally, for international social media companies operating in Bangladesh, implementing such a law would be extremely difficult. But the draft DPA also reportedly applies to all businesses “irrespective of size or turnover,” which presumably would be close to impossible for all small entities to abide by without prohibitively large costs — meaning that all businesses or data controllers would be negatively affected, regardless of size.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3569,
+      "body_end": 4360,
+      "source_links": [
+        "https://asia.nikkei.com/Politics/Bangladesh-tightens-grip-on-Facebook-Twitter-and-other-platforms",
+        "https://www.thedailystar.net/views/in-focus/news/bangladeshs-new-data-protection-act-brittle-shield-or-blunt-sword-2174371"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00010",
+      "text": "Transparency International Bangladesh called on the government to conduct a stakeholder consultation, and make the draft law widely available again for public viewing, noting that stakeholders’ fears before the enactment of the Digital Security Act 2018 had been proven right. Bangladeshi citizens writing on social media expressed concerns about how the DSA had already gagged free speech, and worried that this new law would put social media users even more at risk.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 4362,
+      "body_end": 4830,
+      "source_links": [
+        "https://asia.nikkei.com/Politics/Bangladesh-tightens-grip-on-Facebook-Twitter-and-other-platforms",
+        "https://www.eurasiareview.com/01102021-journey-from-digital-security-bill-2018-to-digital-security-act-2018-reviewing-past-concern-on-proposed-law-regarding-cybercrimes-and-outcome-in-effect-analysis/",
+        "https://www.newagebd.net/article/149324/tib-concerned-over-draft-law-to-protect-personal-data"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00011",
+      "text": "Md Saimum Reza Talukder, who teaches cyberlaw at Brac University, notes that the data localisation proposition would also likely decrease the security of citizens’ data, given how few data centres there are in Bangladesh. He also pointed out that the privacy journalistic sources and human rights defenders would be particularly at risk under these provisions.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4832,
+      "body_end": 5192,
+      "source_links": [
+        "https://web.archive.org/web/20210804133707/https://www.lightcastlebd.com/insights/2021/07/demand-for-data-centers-in-bangladesh-assessing-the-rise-of-data-consumption",
+        "https://www.thedailystar.net/views/opinion/news/new-data-protection-act-the-way-time-reality-check-2171611"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00012",
+      "text": "News of the law also comes amid reports that the ruling Awami League has started training “tens of thousands of cadres to wage a propaganda war on social media in preparation for the next general election.” Within the context of how the Digital Security Act 2018 has been used to censor and crackdown on government critics, the proposal of an online army focused on monitoring social media is deeply concerning.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 5194,
+      "body_end": 5605,
+      "source_links": [
+        "https://www.benarnews.org/english/news/bengali/bangladesh-government-online-activists-09142021133831.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-748787-b00013",
+      "text": "The combination of the DSA, reports of the “online propaganda army.” and this data protection draft act suggests that the Awami League is turning its attention to the digital realm ahead of the 2023 elections, seeking to increase their surveillance capacities and control of data and technology in Bangladesh.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5607,
+      "body_end": 5916,
+      "source_links": [
+        "https://www.benarnews.org/english/news/bengali/bangladesh-government-online-activists-09142021133831.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "bcd4c283070c9516e7111cf804f0fe3638f014d626022cf5d2ca3723fd9c2a99",
+  "word_count": 917,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 5916,
+  "retrieved_at": "2026-11-16T22:32:18.515602+00:00",
+  "raw_html_sha256": "bc90aa28f206a43934ace1845f2d5f50c06226b256e5be59aa21323bb6eec07e",
+  "resolved_source_url": "https://globalvoices.org/2021/10/23/bangladeshs-upcoming-data-protection-act-may-suppress-not-protect-citizens-rights/",
+  "canonical_url": "https://globalvoices.org/2021/10/23/bangladeshs-upcoming-data-protection-act-may-suppress-not-protect-citizens-rights/",
+  "source_bytes": 191259,
+  "authors": [
+    {
+      "name": "Zara Rahman",
+      "url": "https://globalvoices.org/author/zararahman/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 748787,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "bc90aa28f206a43934ace1845f2d5f50c06226b256e5be59aa21323bb6eec07e",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-3d0412d5756f9abcf767",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-10",
+    "eligible_month_documents": 87,
+    "selected_month_documents": 73,
+    "inclusion_probability": 0.8390804597701149,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Zara Rahman",
+  "body_start": 500,
+  "body_end": 6416,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "ad04b7c1f3b5a653a88306d33ed3d44c549da9d917f15db57ba3727e3f9b39a3",
+  "text_path": "articles/gv-748787.txt",
+  "metadata_path": "metadata/gv-748787.json",
+  "attribution": "This story by Zara Rahman originally appeared on Global Voices. https://globalvoices.org/2021/10/23/bangladeshs-upcoming-data-protection-act-may-suppress-not-protect-citizens-rights/",
+  "content_sha256": "6173ed6fe30196b74e1d52553d9e6f3565f9a4578f368fdca920628b1dd68b4d",
+  "source_sha256": "bc90aa28f206a43934ace1845f2d5f50c06226b256e5be59aa21323bb6eec07e",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

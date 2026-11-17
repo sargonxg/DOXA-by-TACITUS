@@ -1,0 +1,397 @@
+{
+  "id": "gv-734179",
+  "publisher_id": 734179,
+  "source_id": "globalvoices:734179",
+  "source_url": "https://globalvoices.org/2021/04/28/can-smartphone-users-really-protect-themselves-from-privacy-violations/",
+  "title": "Can smartphone users really protect themselves from privacy violations?",
+  "published_at": "2021-04-28T17:43:58Z",
+  "modified_at": "2021-05-12T10:34:51Z",
+  "api_author_id": 2872,
+  "api_content_sha256": "7a1ed5c1b7bd73dc5ea15fd4f34cc14d37d61e92751f7861e68a1533233917e4",
+  "api_response_sha256": "506e05e61c46f4f3ce486e5d993814d3316963822f8371957c67dd69aa686ddd",
+  "api_retrieved_at": "2026-11-16T22:20:34.467848+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 327,
+      "count": 2508,
+      "name": "French",
+      "slug": "french",
+      "parent": 317
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-734179-b00001",
+      "text": "For internet and technology companies, collecting user data remains one of their main sources of income. But this business model includes a security risk for users, as demonstrated by recurring cases of undisclosed commercial use, massive leaks, and hacking incidents. Is there a credible solution for strengthening users’ privacy?",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 331,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00002",
+      "text": "Companies such as Google and Apple focus on collecting daily user data, mostly via smartphones, and combining information from the applications running over time: the user's contacts and agenda, for example. A multitude of apps track the user's location in real time, while health and sports apps dig deep into their biometric information. This data is collected and analyzed, allegedly to offer more tailored and sophisticated services. In fact, most users do not realize they are offering a wealth of data to service providers and platform owners, free of charge.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 333,
+      "body_end": 898,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00003",
+      "text": "Privacy activists, such as Austrian Max Schrems, have expressed strong concerns about this model. They highlight the risks of increasingly frequent privacy violations and abuses. This was perhaps best illustrated by the Facebook scandal known as the Cambridge Analytica case – in which British consulting firm Cambridge Analytica obtained the personal data of 87 million Facebook users without consent, in order to “provide analytical assistance to the 2016 presidential campaigns of Ted Cruz and Donald Trump”.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 900,
+      "body_end": 1411,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal",
+        "https://www.lemonde.fr/pixels/article/2018/03/22/ce-qu-il-faut-savoir-sur-cambridge-analytica-la-societe-au-c-ur-du-scandale-facebook_5274804_4408996.html",
+        "https://www.msn.com/en-us/news/technology/max-schrems-reluctant-austrian-david-to-internet-goliaths/ar-BB1fZQk5"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00004",
+      "text": "Schrems says he warned Facebook representatives about the data-mining activities of Cambridge Analytica, but could not convince them to act:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1413,
+      "body_end": 1553,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00005",
+      "text": "> They [Facebook representatives] explicitly said that in their view, by using the platform you consent to a situation where other people can install an app and gather your data.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1555,
+      "body_end": 1733,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-734179-b00006",
+      "text": "But why would you care about privacy if you have nothing to hide, after all? Whistleblower Edward Snowden answered this question in a Reddit discussion in 2015:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1735,
+      "body_end": 1895,
+      "source_links": [
+        "https://www.reddit.com/r/IAmA/comments/36ru89/just_days_left_to_kill_mass_surveillance_under/crglgh2?utm_source=share&utm_medium=web2x&context=3"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00007",
+      "text": "> Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1897,
+      "body_end": 2080,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-734179-b00008",
+      "text": "Real risks linked to the use of information technology platforms",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2082,
+      "body_end": 2146,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00009",
+      "text": "French software engineer and data expert Gaël Duval has been involved for years in free software development, including the Mandrake Linux distribution – an operating system (based on a Linux kernel) which can legally be modified and shared with others.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2148,
+      "body_end": 2401,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00010",
+      "text": "Duval then decided to build an OS that would provide smartphones users with heightened protection of their data: /e/OS.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2403,
+      "body_end": 2522,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00011",
+      "text": "Global Voices spoke to him to understand how communication technology impacts lives, and present both an opportunity and a risk. Here is his view on the evolution of such technology:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2524,
+      "body_end": 2706,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00012",
+      "text": "> This is a philosophical question. I personally have very mixed feelings about it because I've always been passionate about technology. But at the same time, I feel that sometimes it's too much, and I miss the time when you had to find a phone booth to have a call. It was probably a more carefree and [slower-paced] life. Younger people might be surprised to know that until I was five, there was no phone at home and no television. So sometimes I feel I lived a part of my life in a totally different world, that doesn't exist anymore. On the other hand, it's really exciting to see what we can do with modern technology, like having an HD video call with someone on the other side of the planet, and seeing all those electric cars that, at least, are not burning petrol and [filling] our lungs with the exhaust fumes.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2708,
+      "body_end": 3529,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-734179-b00013",
+      "text": "Besides the seductive dangers of nostalgia for those who still remember analog times, we are also facing a real risk of dependence on information technology – a 2018 study linked behavioral problems in children with excessive use of smartphones, which was shown to cause issues including attention deficit disorder (ADD) and depression. A survey published in 2020 by Common Sense Media found that 50 percent of teenagers in the Los Angeles area feel dependent on their smartphones.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3531,
+      "body_end": 4012,
+      "source_links": [
+        "https://www.aau.edu/research-scholarship/featured-research-topics/smartphone-use-linked-behavioral-problems-kids",
+        "https://www.smartwatchphone.fr/blogs/infos/50-des-adolescents-dependants-de-leur-smartphone"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00014",
+      "text": "The risk inherent in our use of such technology was recently openly acknowledged by insiders from the industry in the Netflix documentary The Social Dilemma, which includes testimonials from former employees of Big Tech – including Google, Twitter and Facebook – explaining how they purposefully nurtured user addiction for profit.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4014,
+      "body_end": 4345,
+      "source_links": [
+        "https://www.thesocialdilemma.com"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00015",
+      "text": "Some governments have reacted by upgrading protective legislation in order to both raise user awareness and place more responsibility on technology companies. In May 2018, the European Union passed the General Data Protection Regulation (GDPR). The law adds multiple constraints to data management, such as asking users for explicit authorization for the use of their data and requiring companies to remove this data after a period of three years without interaction. It also introduces extremely large fines for those who do not respect these rules. But its enforcement is limited by a lack of resources to do so among local authorities, and it is, of course, only applicable in EU member states.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4347,
+      "body_end": 5044,
+      "source_links": [
+        "https://dataprivacymanager.net/5-biggest-gdpr-fines-so-far-2020/",
+        "https://en.wikipedia.org/wiki/General_Data_Protection_Regulation"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00016",
+      "text": "A tool to empower users",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5046,
+      "body_end": 5069,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00017",
+      "text": "This current climate convinced Duval of the need to create a tool that would allow people to take control of their own data, as he explains:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5071,
+      "body_end": 5211,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00018",
+      "text": "> Our slogan is “Your data is YOUR data,” because our personal data belongs to us, and those who pretend that it shouldn't are either against freedom and democracy, or they have a business that is fuelled by advertising – because personal data can help sell ads at a much higher price.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5213,
+      "body_end": 5498,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-734179-b00019",
+      "text": "This is how the OS he created operates:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5500,
+      "body_end": 5539,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00020",
+      "text": "> /e/ is a digital ecosystem that provides a smartphone operating system that doesn't send [to Google] any piece of your personal data, like your searches, your geolocation… and that respects users’ data privacy. It doesn't look at the user's data for any purpose. It also provides basic online services such as an email address, some storage, a calendar, a way to store your contacts – everything linked with the smartphone operating system.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5541,
+      "body_end": 5983,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-734179-b00021",
+      "text": "Duval said that when it comes to personal data, Google and Apple are in the same boat – this data fuels Google's business model, which is essentially based on selling advertising, while Apple, despite claiming to protect its users’ privacy, receives an estimated 8 billion to 12 billion US dollars each year to pre-install Google search on iPhones and iPads.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5985,
+      "body_end": 6343,
+      "source_links": [
+        "https://www.npr.org/2020/10/22/926290942/google-paid-apple-billions-to-dominate-search-on-iphones-justice-department-says?t=1618927124368"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00022",
+      "text": "Duval added:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6345,
+      "body_end": 6357,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734179-b00023",
+      "text": "> Using an iPhone, a user sends about 6MB of personal data to Google, per day. It's double [that amount] for Android users. Besides, Apple hardware is a closed box, without any transparency about what's happening inside. You have to trust them. We, on the other hand, support “auditable privacy”: all the /e/OS and the cloud software source code (the “recipe” for building the products) is open-source. It can be challenged by specialists and audited.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6359,
+      "body_end": 6810,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-734179-b00024",
+      "text": "In a context of growing dependence on smartphones, it is clear that protective legislation is not enough to raise awareness and equip users with the right tools and knowledge to protect their data privacy – and this is where a digital tool that makes users more responsible and proactive can play an important role.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6812,
+      "body_end": 7127,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "b6317d639b660420bd8f3a7084f5e491aa63fa6ab7b6166e65d09bc24a8ae43b",
+  "word_count": 1171,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7127,
+  "retrieved_at": "2026-11-16T22:30:17.776222+00:00",
+  "raw_html_sha256": "3b6994eae9a8dae2de9ddeb15c7a6c201941344cfba1a0ec686bed26111140be",
+  "resolved_source_url": "https://globalvoices.org/2021/04/28/can-smartphone-users-really-protect-themselves-from-privacy-violations/",
+  "canonical_url": "https://globalvoices.org/2021/04/28/can-smartphone-users-really-protect-themselves-from-privacy-violations/",
+  "source_bytes": 190084,
+  "authors": [
+    {
+      "name": "Rémy Vuong",
+      "url": "https://globalvoices.org/author/remy-vuong/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 734179,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "3b6994eae9a8dae2de9ddeb15c7a6c201941344cfba1a0ec686bed26111140be",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-a98cfd7d5c95eabd750c",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-04",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Rémy Vuong",
+  "body_start": 475,
+  "body_end": 7602,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "9aa963662302a6032e25856e0a1ac22629ee98557e809dd8d8b2fa8651cf9f02",
+  "text_path": "articles/gv-734179.txt",
+  "metadata_path": "metadata/gv-734179.json",
+  "attribution": "This story by Rémy Vuong originally appeared on Global Voices. https://globalvoices.org/2021/04/28/can-smartphone-users-really-protect-themselves-from-privacy-violations/",
+  "content_sha256": "dddb465648786bcb728366d61a344f7194b257b37a19cc0679aa918d0cde74d2",
+  "source_sha256": "3b6994eae9a8dae2de9ddeb15c7a6c201941344cfba1a0ec686bed26111140be",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

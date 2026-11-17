@@ -1,0 +1,473 @@
+{
+  "id": "gv-736725",
+  "publisher_id": 736725,
+  "source_id": "globalvoices:736725",
+  "source_url": "https://globalvoices.org/2021/06/17/chiles-new-constitution-offers-unique-opportunity-to-rethink-workers-rights-in-the-digital-age/",
+  "title": "Chile's new constitution offers unique opportunity to rethink workers’ rights in the digital age",
+  "published_at": "2021-06-17T12:15:38Z",
+  "modified_at": "2021-06-17T18:33:40Z",
+  "api_author_id": 2892,
+  "api_content_sha256": "318561726da9473211f7168420f16180143d8a5d14c8ca827938674f59617ee3",
+  "api_response_sha256": "04c471ad46c4ba40763e22a78145f065876d62cde120dfc5491f51f2c01ed3d0",
+  "api_retrieved_at": "2026-11-16T22:20:36.081334+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 149,
+      "count": 920,
+      "name": "Chile",
+      "slug": "chile",
+      "parent": 1354
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 264,
+      "count": 2294,
+      "name": "Labor",
+      "slug": "labor",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-736725-b00001",
+      "text": "Since the installation of Augusto Pinochet’s dictatorship in 1973, workers’ living and working conditions throughout Chile have suffered. Pinochet’s regime reduced the size of the government, removed social protections, and completely liberalized the economy. These policies initially caused the Chilean economy to boom and were praised by major international financial organizations, including the IMF and World Bank. Pinochet’s reforms, however, left the Chilean people without social protections and with drastically reduced power to voice their needs in the political arena. They worked longer hours for less pay in worse conditions.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 637,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Augusto_Pinochet",
+        "https://www.dukeupress.edu/victims-of-the-chilean-miracle"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00002",
+      "text": "In this regard, little changed with the return of democracy in 1990.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 639,
+      "body_end": 707,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00003",
+      "text": "This situation exploded in October 2019 after nearly 50 years of worker oppression. Following a series of countrywide protests against the regime of the current president, Sebastián Piñera, the Chilean people voted to fully empower themselves and rewrite their constitution from the ground up. Since then, a wave of political and philosophical inspiration has swept across the nation focused on a single (complex) question: “What do we change?”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 709,
+      "body_end": 1153,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Pi%C3%B1era",
+        "https://www.aljazeera.com/news/2019/10/30/chile-protests-what-prompted-the-unrest",
+        "https://www.cambridge.org/core/journals/global-constitutionalism/article/towards-a-theory-of-neoliberal-constitutionalism-addressing-chiles-first-constitutionmaking-laboratory/AFEC4BE02411DA7466F1F4CE4F578913"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00004",
+      "text": "As a philosopher and a computer scientist, we believe that the impending constitutional reform in Chile is a prime opportunity to address what is both a critical and underappreciated issue facing workers in our new, digital age.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1155,
+      "body_end": 1383,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00005",
+      "text": "The rapid advancement of technological solutions in the workplace over the last two decades has dramatically affected working conditions around the globe. Often, the benefits of these technological solutions include increased efficiency and productivity. However, when technological solutions are implemented in unchecked environments (as has become an issue in Chile’s completely open economy), they also threaten to bring about over-automation, and unhappiness in workers.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1385,
+      "body_end": 1859,
+      "source_links": [
+        "https://www.ciperchile.cl/2021/03/30/trabajo-digital-justo-y-digno-en-la-nueva-constitucion/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00006",
+      "text": "To the question: What do we change? As for many countries, Chile’s current stand on workers’ rights is based on Article 23 of the UN Charter of Human Rights:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1861,
+      "body_end": 2018,
+      "source_links": [
+        "https://www.un.org/en/about-us/universal-declaration-of-human-rights#:~:text=Everyone%20has%20the%20right%20to%20work%2C%20to%20free%20choice%20of,equal%20pay%20for%20equal%20work.&text=Everyone%20has%20the%20right%20to%20form%20and%20to%20join%20trade,the%20protection%20of%20his%20interests."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00007",
+      "text": "“Everyone has the right to work, to free choice of employment, to just and favorable conditions of work and to the protection against unemployment.”",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2020,
+      "body_end": 2168,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00008",
+      "text": "The current interpretation of this phrase falls short in our technologically advanced world as the evidence of warehouses, app-based gigs, and virtual work shows.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2170,
+      "body_end": 2332,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00009",
+      "text": "We suggest that the phrase ‘just and favorable conditions’ of the Human Rights Charter be enriched in Chile’s new constitution to account for justice and favorability in physical and digital work environments.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2334,
+      "body_end": 2543,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00010",
+      "text": "While the ultimate goal would be to see this change made in the Charter itself, Chile’s progressive constitutional redevelopment is a first opportunity for reform. Our hope is to begin a conversation about how to best protect workers’ rights in the digital age. With such reform, Chile has the chance to become a world leader.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2545,
+      "body_end": 2871,
+      "source_links": [
+        "https://www.theguardian.com/world/2021/may/18/a-new-chile-political-elite-rejected-in-vote-for-constitutional-assembly"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00011",
+      "text": "Although the challenges of digital work are often unique to the particulars of any given job, we believe that there are at least three substantial harms that commonly arise from digital work:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2873,
+      "body_end": 3064,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00012",
+      "text": "Over-automation robs workers of their freedom in the workplace",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3066,
+      "body_end": 3128,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00013",
+      "text": "Computers are now able to make operational decisions faster and with fewer errors than humans. This has led to the wide-scale implementation of digital automation to direct human workers through their workflow. This has increased productivity; yet, the substantial human cost has, so far, gone largely unchecked.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3130,
+      "body_end": 3442,
+      "source_links": [
+        "https://www.wired.com/story/amazon-warehouse-robots/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00014",
+      "text": "With increasing automation in warehouses, for example, there is a correlative decline in employee wellbeing due to an increased demand for productivity and the inability of the employee to critically intervene in their workflow without sanction.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3444,
+      "body_end": 3689,
+      "source_links": [
+        "https://www.theverge.com/2020/2/27/21155254/automation-robots-unemployment-jobs-vs-human-google-amazon",
+        "https://www.vox.com/recode/2019/12/11/20982652/robots-amazon-warehouse-jobs-automation"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00015",
+      "text": "For instance, when warehouse workers at Amazon do not collect a specific quota of orders determined by an automated computer program, they can be automatically fired. The pressure of expected productivity forces warehouse workers to follow directions without fail; to become the arms and legs of an external, machine-intelligence. The effect of this pressure and automation on workers is unquestionable. Between 2013 and 2018, across 46 different Amazon warehouse locations, there were 189 emergency suicide events, including “attempts, thoughts, and other mental episodes.” This statistic does not include similar events that occurred outside of the workplace.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3691,
+      "body_end": 4352,
+      "source_links": [
+        "https://www.thedailybeast.com/amazon-the-shocking-911-calls-from-inside-its-warehouses",
+        "https://www.theverge.com/2019/4/25/18516004/amazon-warehouse-fulfillment-centers-productivity-firing-terminations"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00016",
+      "text": "We believe that it is a human right to act freely, and while we must all tailor our individual liberties to the needs of our employers for the duration of the workday, this right ought not to ever be wholly discarded.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4354,
+      "body_end": 4571,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00017",
+      "text": "Gig economy workers are isolated and stressed",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4573,
+      "body_end": 4618,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00018",
+      "text": "Workers hired through app-based platforms such as Uber, Taskrabbit, Rappi, Fiverr, etc. are managed through their corresponding software. Rather than orders coming from a human supervisor or otherwise distributed through a team, tasks are given and directed by a digital stand-in: a software program and its algorithm.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4620,
+      "body_end": 4938,
+      "source_links": [
+        "https://www.marketplace.org/shows/the-uncertain-hour/my-boss-is-an-app/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00019",
+      "text": "And where workers would normally perform as a team, gig workers are distanced from their colleagues. Gig-working colleagues often represent competition and a decrease in the value of their gigs. The more people who offer the same service, the less that service will be worth, causing a “race to the bottom” for scarce gigs at ever-lower prices.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4940,
+      "body_end": 5284,
+      "source_links": [
+        "https://www.theatlantic.com/technology/archive/2018/08/fiverr-online-gig-economy/569083/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00020",
+      "text": "Hence, in addition to the stress of job insecurity, generally low pay, and threats to mental health, app-based work now also threatens workers with pervasive isolation from their peers through stigmatization and the inducement of competition between coworkers.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5286,
+      "body_end": 5546,
+      "source_links": [
+        "https://dl.acm.org/doi/10.1145/3449138",
+        "https://pubmed.ncbi.nlm.nih.gov/14504730/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00021",
+      "text": "A new set of ‘just and favorable conditions of work’ to employees",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5548,
+      "body_end": 5613,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00022",
+      "text": "To date, workers are afforded the right to a chair so as not to have to stand for hours, to safety measures when a job presents the possibility of physical danger, and to building standards such as heating, proper ventilation, illumination, and so on. All of these precautions are taken so that the physical conditions in the workplace remain just and favorable for workers. Yet, when the workspace is made virtual, new concerns arise that are distinct from their physical counterparts.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5615,
+      "body_end": 6101,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00023",
+      "text": "Importantly, virtual workspaces, which are here to stay, do not yet have analogous tools or social protections. Teachers are a paradigmatic example of the increasingly ubiquitous problems related to virtual work. The energy to teach, very often derived from the direct human engagement and interaction with students and colleagues, is no longer possible as it was previously.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6103,
+      "body_end": 6478,
+      "source_links": [
+        "https://globalworkplaceanalytics.com/work-at-home-after-covid-19-our-forecast",
+        "https://www.nature.com/articles/d41586-021-00663-2",
+        "https://www.theatlantic.com/technology/archive/2018/08/fiverr-online-gig-economy/569083/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00024",
+      "text": "Globally, including in Chile, depression and the general degradation of wellbeing are on the rise since the COVID-19 quarantines because of social isolation. This is especially true among lower-income workers, for example, teachers.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6480,
+      "body_end": 6712,
+      "source_links": [
+        "http://radio.uchile.cl/2020/08/18/el-bienestarmalestar-emocional-de-losas-docentes-y-la-bitacora-del-abandono/",
+        "https://www.nature.com/articles/d41586-021-00175-z"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-736725-b00025",
+      "text": "In this spirit, we believe that worker’s rights are human rights—and it is time to take workers’ rights into the digital age.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6714,
+      "body_end": 6839,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "9aa3b1762644fbe3fd87d6b826b7df975040791f65bb9c2b9805db430e7be764",
+  "word_count": 1050,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 4,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 6839,
+  "retrieved_at": "2026-11-16T22:30:52.939127+00:00",
+  "raw_html_sha256": "8f214c0ff18fe2d882938dda2c00d7383ebe1b5102695f44a61743736b29225a",
+  "resolved_source_url": "https://globalvoices.org/2021/06/17/chiles-new-constitution-offers-unique-opportunity-to-rethink-workers-rights-in-the-digital-age/",
+  "canonical_url": "https://globalvoices.org/2021/06/17/chiles-new-constitution-offers-unique-opportunity-to-rethink-workers-rights-in-the-digital-age/",
+  "source_bytes": 195744,
+  "authors": [
+    {
+      "name": "Claudio Gutiérrez",
+      "url": "https://globalvoices.org/author/claudio-gutierrez/"
+    },
+    {
+      "name": "Spencer Ivy",
+      "url": "https://globalvoices.org/author/spencer-andrew-ivy/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 736725,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "8f214c0ff18fe2d882938dda2c00d7383ebe1b5102695f44a61743736b29225a",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-8487e5211d6c8b429b29",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-06",
+    "eligible_month_documents": 92,
+    "selected_month_documents": 77,
+    "inclusion_probability": 0.8369565217391305,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Claudio Gutiérrez; Spencer Ivy",
+  "body_start": 544,
+  "body_end": 7383,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "1cfb75037e69491af131f940403aaef900fea3b0c309e69d37da925747e7cca6",
+  "text_path": "articles/gv-736725.txt",
+  "metadata_path": "metadata/gv-736725.json",
+  "attribution": "This story by Claudio Gutiérrez; Spencer Ivy originally appeared on Global Voices. https://globalvoices.org/2021/06/17/chiles-new-constitution-offers-unique-opportunity-to-rethink-workers-rights-in-the-digital-age/",
+  "content_sha256": "b7f58859cef7c42dcab696879c074cf88100454b5a5fc6e478a8700b8a50d53f",
+  "source_sha256": "8f214c0ff18fe2d882938dda2c00d7383ebe1b5102695f44a61743736b29225a",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

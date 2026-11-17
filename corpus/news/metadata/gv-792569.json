@@ -1,0 +1,451 @@
+{
+  "id": "gv-792569",
+  "publisher_id": 792569,
+  "source_id": "globalvoices:792569",
+  "source_url": "https://globalvoices.org/2023/07/18/a-forensic-finds-a-site-that-doxxes-hong-kong-activists-and-journalists-is-likely-backed-by-beijing/",
+  "title": "A forensic investigation finds a site that doxxes Hong Kong activists and journalists is likely backed by Beijing",
+  "published_at": "2023-07-18T00:38:19Z",
+  "modified_at": "2023-07-18T15:05:26Z",
+  "api_author_id": 254,
+  "api_content_sha256": "dd95e34f6453c5875756f5e1c05d986dc932fd65cbd60c797a07b56890cf1c6d",
+  "api_response_sha256": "da6b3b0f7e68a5a41f538581a74d7b3c95ab51f06e761611226b463e0f01ea4e",
+  "api_retrieved_at": "2026-11-16T22:20:54.683859+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 49,
+      "count": 1566,
+      "name": "Hong Kong (China)",
+      "slug": "hong-kong-china",
+      "parent": 16
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-792569-b00001",
+      "text": "A tech forensic run by Toronto-based research group Citizen Lab finds that HKleaks, a notorious doxxing site launched in 2019 targeting Hong Kong activists and journalists, is most likely backed by the mainland Chinese government or its proxies.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 245,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00002",
+      "text": "HKLeaks, which was registered under 25 domains including hkleaks [.] org, [.] ru and [.] pk, was launched in August 2019 and maintained an online database of personal data — including ID card numbers, headshots, home addresses and phone numbers — belonging to about 2,800 Hong Kong politicians, activists, teachers and journalists.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 247,
+      "body_end": 578,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00003",
+      "text": "Despite the fact that the site violated the Privacy Ordinance, law enforcement authorities in Hong Kong did not comment when asked by the press if they would investigate the act or take action to ban the site.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 580,
+      "body_end": 789,
+      "source_links": [
+        "https://hongkongfp.com/2023/05/22/hong-kong-doxxing-site-targeting-journalists-activists-still-online-almost-2-years-after-authorities-alerted-to-it/",
+        "https://www.pcpd.org.hk/tc_chi/news_events/media_enquiry/enquiry_20190917.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00004",
+      "text": "The site was still operating on June 10 2023, according to snapshot records from Internet Archive’s Wayback Machine, though it is currently offline.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 791,
+      "body_end": 939,
+      "source_links": [
+        "https://web.archive.org/web/20230000000000*/http://hkleaks.pk"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00005",
+      "text": "The forensic report, “HKLeaks – The Use of Covert and Overt Online Harassment Tactics to Repress 2019 Hong Kong Protests,” written by Alberto Fittarelli and Lokman Tsui and published by Citizen Lab on July 13 2023, finds circumstantial evidence that suggests the campaign operators held links to mainland China.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 941,
+      "body_end": 1252,
+      "source_links": [
+        "https://citizenlab.ca/2023/07/hkleaks-covert-and-overt-online-harassment-tactics-to-repress-the-2019-hong-kong-protests/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00006",
+      "text": "The 2019 doxxing warfare",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1254,
+      "body_end": 1278,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00007",
+      "text": "As explained by report, the HKLeaks site emerged in reaction to the protesters’ exposure of the identities of individual police officers who allegedly committed unchecked abuse in a number of violent crackdown incidents during the 2019 protests. At first, the police officers’ personal data were spread mainly on messaging app Telegram and Reddit-like social media platform LIGHK; later it was documented on the website “HKChronicles [.] com,” which has been blocked by Hong Kong since January 2021. The Hong Kong police later said they had the authority to require local ISPs to take action against digital platforms that endanger national security.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1280,
+      "body_end": 1930,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/HKChronicles",
+        "https://www.nytimes.com/2021/01/09/technology/hong-kong-website-blocked.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00008",
+      "text": "On the other front of the doxxing warfare was HKLeaks, which claimed that it was a spontaneous effort by anonymous internet users who were frustrated by the protests. The aim of Citizen Lab’s forensic investigation was to find out the nature of HKLeaks’ campaign. Alberto Fittarelli summed up the findings in a Twitter thread.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1932,
+      "body_end": 2258,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00009",
+      "text": "The first assessment is that it was not organic, which means it was not spontaneously launched and maintained by ordinary citizens as it claimed.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2260,
+      "body_end": 2405,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00010",
+      "text": "“Bulletproof” operational security",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2407,
+      "body_end": 2441,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00011",
+      "text": "According to the tech analysis, the campaign had a “bulletproof” operational security crafted to avoid attribution. It used at least 25 web domains, all mirroring identical content. Most of the 25 HKLeaks domains were registered through a Russian-based registrar, DDoS-Guard, notorious for offering protection to harmful actors. Most were registered with privacy protection, and others used fake names with anonymous emails.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2443,
+      "body_end": 2867,
+      "source_links": [
+        "https://krebsonsecurity.com/2021/01/hamas-may-be-threat-to-8chan-qanon-online/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00012",
+      "text": "Moreover, the campaign was persistent. In addition to the 25 mirror sites, it ran 24 Telegram channels among other social media outlets, and its dataset was actively maintained for two years, from August 2019 to May 2021.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2869,
+      "body_end": 3090,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00013",
+      "text": "HKLeaks campaign’s tactics and language style were similar to other fake grassroots campaigns, such as Hongkongmob[.]com, an anti-protester site featuring violence by protesters and hence justifying the crackdown. Both sites were launched in the name of anonymous citizens frustrated with the protest violence. Languages used in their promotional text are similar and shared by inauthentic social media users.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3092,
+      "body_end": 3501,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00014",
+      "text": "The second assessment is that the campaign had ties with mainland Chinese authorities:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3503,
+      "body_end": 3589,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00015",
+      "text": "The campaign was promoted on mainland Chinese social media, including the China state-owned Central Television and other local government authorities.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3591,
+      "body_end": 3741,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00016",
+      "text": "The site's Javascript contained mainland Chinese pinyin rather than English or Cantonese romanization.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3743,
+      "body_end": 3845,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00017",
+      "text": "The launch of HKLeaks followed shortly after Twitter removed a Chinese state-sponsored information operation that involved 900 accounts targeting the Hong Kong protests. The first domain of HKLeaks was registered on August 16 2019, three weeks after Twitter’s massive account removal.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3847,
+      "body_end": 4131,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00018",
+      "text": "The Blue Ribbon Network",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4133,
+      "body_end": 4156,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00019",
+      "text": "The third assessment is that the doxxing operation was an integral part of an information operation network, namely the Blue Ribbon Network, against Hong Kong activists:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4158,
+      "body_end": 4327,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00020",
+      "text": "The Blue Ribbon Network is indicated in a links directory on an anti-protest site Hongkongmob [.] com. that lists a series of digital assets. The network involves three branches, one is connected to mainland Chinese national security online report websites (12339.gov.cn and 12337.gov.cn) and mainland Chinese online patriot coordination body Di Ba. The second branch indicates a campaign targeting international and English-speaking audiences, ostensibly “denouncing the violent mob” of protesters. The final branch consists of two campaigns, one of which Citizen Lab dubs “the bounties” and the other one is HKLeaks’ doxxing campaign. “The bounties” campaign is operated on the hongkongmob website and supported by the 803 Fund which is directly linked to ex-Hong Kong Chief Executive CY Leung. The bounties and doxxing campaign networks used the same political rhetoric and resonated with one another.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4329,
+      "body_end": 5233,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00021",
+      "text": "The research also compared the activity timeline of the Blue Ribbon Network and HKLeaks’ websites and social media outlets and found that they shared a similar lifespan. Most of them started operating in August 2019, and they were operating in full force between September to October 2019 amid a rapid escalation of street protests to violent conflict and clashes during the 70th anniversary of the founding of the PRC. Between October 2019 and January 2020, HKLeaks and the Blue Ribbon Network expanded their campaigns and diversified their tactics. Since January 2020, many campaign outlets have become inactive or ceased to operate.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5235,
+      "body_end": 5870,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00022",
+      "text": "With the final assessment of the campaign resources, Alberto Fittarelli concluded that the doxxing campaign was “almost certainly” an artificial operation run by Beijing or its proxies.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5872,
+      "body_end": 6057,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00023",
+      "text": "According to the now shut down Apple Daily News, the photos of at least two individuals published on the website were submitted to the China Travel Service, a mainland Chinese agent, to process the “Home Return Card” — an identity card for multiple entries to mainland China.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6059,
+      "body_end": 6334,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00024",
+      "text": "Moreover, HKLeaks had the resources to conduct and sustain content production and regular maintenance of its websites and social media outlets throughout its four-year span.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6336,
+      "body_end": 6509,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-792569-b00025",
+      "text": "In addition to data about 2,800 individuals, it collected political commentary about mainland China and other countries. It also maintained an archive of alleged “atrocities” committed by protesters and smears against the protest movement.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6511,
+      "body_end": 6750,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "a4379daead9cde45d7e41389fbe81b088916f84ec96d17afb790d0f84c0c275f",
+  "word_count": 1027,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 4,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6750,
+  "retrieved_at": "2026-11-16T22:40:03.295663+00:00",
+  "raw_html_sha256": "7e49c9691d8ee9d10c2a2a5f0399b1f94b25438e676afb5e84267b64b3d32af8",
+  "resolved_source_url": "https://globalvoices.org/2023/07/18/a-forensic-finds-a-site-that-doxxes-hong-kong-activists-and-journalists-is-likely-backed-by-beijing/",
+  "canonical_url": "https://globalvoices.org/2023/07/18/a-forensic-finds-a-site-that-doxxes-hong-kong-activists-and-journalists-is-likely-backed-by-beijing/",
+  "source_bytes": 190551,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 792569,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "7e49c9691d8ee9d10c2a2a5f0399b1f94b25438e676afb5e84267b64b3d32af8",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-7dbaa51ea4eb49a9b1d0",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-07",
+    "eligible_month_documents": 89,
+    "selected_month_documents": 74,
+    "inclusion_probability": 0.8314606741573034,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Oiwan Lam",
+  "body_start": 545,
+  "body_end": 7295,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "4b1d3c5c4380c8d416e0ee3587cd47db36b7f4d961b534c8ae3dbd779211eebb",
+  "text_path": "articles/gv-792569.txt",
+  "metadata_path": "metadata/gv-792569.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2023/07/18/a-forensic-finds-a-site-that-doxxes-hong-kong-activists-and-journalists-is-likely-backed-by-beijing/",
+  "content_sha256": "8d850186957ee8268e1717f3d78f08cc3c8b0a5fcabc9ae481044009ea2c2c3e",
+  "source_sha256": "7e49c9691d8ee9d10c2a2a5f0399b1f94b25438e676afb5e84267b64b3d32af8",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

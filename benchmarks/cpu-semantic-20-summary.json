@@ -1,0 +1,418 @@
+{
+  "schema_version": "3.0",
+  "kind": "actual institutional corpus CPU passage retrieval benchmark",
+  "generated_at": "2026-11-16T22:46:45.408792+00:00",
+  "synthetic_sources": false,
+  "accuracy_gold_labels": false,
+  "accuracy_claim": null,
+  "corpus": {
+    "documents": 20,
+    "blocks": 8999,
+    "words": 356964,
+    "sources": [
+      {
+        "id": "uk01",
+        "content_sha256": "4a791b1640104170d7e882c2515128103368e14a87bb5e5220b64da9f828d556",
+        "source_sha256": "4701b868069256fc4e1fb446ec525cc8cbadd58105c080752cdcbdce13377398",
+        "license": "OGL-UK-3.0"
+      },
+      {
+        "id": "uk02",
+        "content_sha256": "ccc817b6fe4117abe682f01a2f0a53a5ad158203a3644c960f99bd639a52a357",
+        "source_sha256": "7bc1087870af0f896b04d4c608e83bc61c26faa9bd53b23f9891e9b12cf50578",
+        "license": "OGL-UK-3.0"
+      },
+      {
+        "id": "uk03",
+        "content_sha256": "87d43392dfc581c6dcab02e8ff6b6ec2401f7c96adf742d8b75aa71569238b9d",
+        "source_sha256": "c79b96a812ec39241ceefd54672aec4a15dddc0f066e95ba7c404f4b72687464",
+        "license": "OGL-UK-3.0"
+      },
+      {
+        "id": "uk04",
+        "content_sha256": "dc043598fbaf8bd3198fd068da3d7d89cb179a4849850f67635a39268fb7b722",
+        "source_sha256": "8456965aa39961843ce482581691ab794ef15f2cdb07b82f397eee317497e295",
+        "license": "OGL-UK-3.0"
+      },
+      {
+        "id": "uk05",
+        "content_sha256": "aafc9389ffa8ff41fe2d7eea78ba27cd68e7121a6bbf48056868d0fd002ce459",
+        "source_sha256": "7cf7b85729ceb36c49e82ee52f3093301e274e64f8c3effeb21977724387b770",
+        "license": "OGL-UK-3.0"
+      },
+      {
+        "id": "uk06",
+        "content_sha256": "8f03151fcb83371d0bfe38ceea4705d9249c45a2e5df51ef7d2edd5633f2e65c",
+        "source_sha256": "b651d3b68ffe0dc91e49b5e25519bbaafa80d74fbd3c3f867b008e6bab326b9a",
+        "license": "OGL-UK-3.0"
+      },
+      {
+        "id": "uk07",
+        "content_sha256": "c826adb7813babc836a8456fa9fb7c517710bb481b9548efb36710ee087c8f6e",
+        "source_sha256": "c44c5dc23c053ed51dccf3e88ef895e5fa6017739746493a8f46b0f01efbdc08",
+        "license": "OGL-UK-3.0"
+      },
+      {
+        "id": "uk08",
+        "content_sha256": "d4b50d024dd09918f75ae46f5b0a5ef2cb612bdd8d69edb043e34010159473fa",
+        "source_sha256": "7296d071171568c156ceef5d874eef5e63b8d2b05bb719c7315e58bb4ef0ff95",
+        "license": "OGL-UK-3.0"
+      },
+      {
+        "id": "uk09",
+        "content_sha256": "0be3aeeb06c3c8565c6a4d63acc36aeb7bf2fccf3e94e5a403d11f9fb845e5b7",
+        "source_sha256": "25175c6af18ec6691e7eac5eaccedf8e97218a8b934bbd25072dde908c6d9042",
+        "license": "OGL-UK-3.0"
+      },
+      {
+        "id": "uk10",
+        "content_sha256": "6d38441c34bc7f965f72f381e05ac305c88963677ea832c9b7800e743d1f2222",
+        "source_sha256": "e2137b535183a193e84e632e6c59ab3de95535af96294a3ceb4a40dd448c399f",
+        "license": "OGL-UK-3.0"
+      },
+      {
+        "id": "us01",
+        "content_sha256": "8a74e1bd02e4c0baf897e5b4ecacea5163c7d8118e96751905bc8b40ebe7aaac",
+        "source_sha256": "e70a35577c2a2cee22f4fdce7f875bcaac06aa66b8e89abdd5f5b7aae49c9ef6",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK"
+      },
+      {
+        "id": "us02",
+        "content_sha256": "0ae0b0840fb2bbb5d54069a465cbc9df9a39a1730406656334855e489360cfdf",
+        "source_sha256": "297918099ed457ed5007953e11f32640dcef75d1a32319299c613ad3c406999d",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK"
+      },
+      {
+        "id": "us03",
+        "content_sha256": "ec1701f0a98163e0c6739c24142977998dd41a2f9055b32d90bed535851bdcac",
+        "source_sha256": "cf5282d933745edf6d53bce058f936138841434983498f3516a7842ba554e79a",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK"
+      },
+      {
+        "id": "us04",
+        "content_sha256": "fc7fe1f1f99c8a8f1b0bc0948c9611307fff901f4c85c4e6f9c62313dfaefa1c",
+        "source_sha256": "13ef07e9b5fc9b7c87dcfb71f6c785561a9061e04f017107934b40326f6ca4f3",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK"
+      },
+      {
+        "id": "us05",
+        "content_sha256": "49de1a3734b26231bbdf850c27097435abec1d40100cefd5dfd81fc370c2f368",
+        "source_sha256": "46d401180f5d22cb82e714b8c16761e4bf82c0df14865f08d4ba8d18e58191f3",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK"
+      },
+      {
+        "id": "us06",
+        "content_sha256": "60298d24ff6f89eb969a3e92a1b9ece05fd9d89ccef18f3631991bccbf3e7828",
+        "source_sha256": "c91f04c9d9b8c3b194671127710da66e4bf72d1fcb6818f29d154fe9c86c2062",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK"
+      },
+      {
+        "id": "us07",
+        "content_sha256": "984ac4f06c421f06d60d3288f9d8730ab8fe234a965df99e0a0686c9d2af5300",
+        "source_sha256": "cbb7b454a83ed1283ab7da41807ed5ebed66e5bca4bdff1f1ad31b9ed7f1cddb",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK"
+      },
+      {
+        "id": "us08",
+        "content_sha256": "783fe1e4993685d6619c463b21d2cfe5667a7ad006da5bc5bcd9c5886b8e9ee4",
+        "source_sha256": "7b4d6ef44e4d941b2553a2d2cbe83fdf014e9c15948b2a1074ef301073a32236",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK"
+      },
+      {
+        "id": "us09",
+        "content_sha256": "d28ae5ac6aaf6c732e4755c3a006e609c557ce97f71eb8dc0e2fc8f0519bb796",
+        "source_sha256": "f2295a5f5f531698a975011020c9806cf82b2ab57edd8f0f205e4d4de29eef6e",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK"
+      },
+      {
+        "id": "us10",
+        "content_sha256": "f1f34f41f4d152488f5a86b3c6154b82d4b314315cc33e42512314f9cc00ebdd",
+        "source_sha256": "40d842a4cc9ab4d30d7eedb48e7150f0069f698acfc92a3c58a214dff8de002d",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK"
+      }
+    ]
+  },
+  "build": {
+    "documents": 20,
+    "processed_documents": 20,
+    "cached_documents": 10,
+    "passages": 9249,
+    "bytes": 18112424,
+    "nonindexable_inputs": 99,
+    "documents_without_passages": 0,
+    "model_profile": {
+      "id": "minilm",
+      "role": "retrieval",
+      "provider": "huggingface_cpu",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "license": "Apache-2.0",
+      "languages": [
+        "en"
+      ],
+      "parameters": 22713728,
+      "max_input_tokens": 256,
+      "dimensions": 384,
+      "runtime": "transformers_cpu",
+      "experimental": false,
+      "calibration": "not_applicable",
+      "intended_use": "Semantic retrieval and clustering of short source windows; not prejudice classification.",
+      "limitations": [
+        "The sentence-transformer limit is 256 wordpieces, despite the encoder's 512 positions.",
+        "Similarity is not evidence of shared stance, endorsement or prejudice."
+      ],
+      "files": [
+        "README.md",
+        "config.json",
+        "model.safetensors",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "special_tokens_map.json",
+        "vocab.txt",
+        "sentence_bert_config.json",
+        "1_Pooling/config.json",
+        "modules.json"
+      ],
+      "max_download_bytes": 167772160,
+      "registry_version": "doxa-models-3.0",
+      "reviewed_at": "2026-11-16",
+      "model_card": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md"
+    },
+    "seconds": 85.665,
+    "index_id": "94be12487a952b80d3a6c77be65a9565722fc1f5d66d141f9f29b4d53a093e35",
+    "automatic_downloads": false
+  },
+  "warm_rebuild": {
+    "documents": 20,
+    "processed_documents": 20,
+    "cached_documents": 20,
+    "passages": 9249,
+    "bytes": 18112424,
+    "nonindexable_inputs": 99,
+    "documents_without_passages": 0,
+    "model_profile": {
+      "id": "minilm",
+      "role": "retrieval",
+      "provider": "huggingface_cpu",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "license": "Apache-2.0",
+      "languages": [
+        "en"
+      ],
+      "parameters": 22713728,
+      "max_input_tokens": 256,
+      "dimensions": 384,
+      "runtime": "transformers_cpu",
+      "experimental": false,
+      "calibration": "not_applicable",
+      "intended_use": "Semantic retrieval and clustering of short source windows; not prejudice classification.",
+      "limitations": [
+        "The sentence-transformer limit is 256 wordpieces, despite the encoder's 512 positions.",
+        "Similarity is not evidence of shared stance, endorsement or prejudice."
+      ],
+      "files": [
+        "README.md",
+        "config.json",
+        "model.safetensors",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "special_tokens_map.json",
+        "vocab.txt",
+        "sentence_bert_config.json",
+        "1_Pooling/config.json",
+        "modules.json"
+      ],
+      "max_download_bytes": 167772160,
+      "registry_version": "doxa-models-3.0",
+      "reviewed_at": "2026-11-16",
+      "model_card": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md"
+    },
+    "seconds": 0.106,
+    "index_id": "94be12487a952b80d3a6c77be65a9565722fc1f5d66d141f9f29b4d53a093e35",
+    "automatic_downloads": false
+  },
+  "queries": [
+    {
+      "query": "antisemitism in political discourse",
+      "seconds": 0.076,
+      "hits_returned": 5,
+      "returned_quotes_validated_against_source": true,
+      "top_hits": [
+        {
+          "document_id": "us01",
+          "block_id": "us01-p0054-b0003",
+          "start": 0,
+          "end": 14,
+          "source_sha256": "8a74e1bd02e4c0baf897e5b4ecacea5163c7d8118e96751905bc8b40ebe7aaac",
+          "cosine_similarity": 0.8392382860183716
+        },
+        {
+          "document_id": "uk01",
+          "block_id": "uk01-b00400",
+          "start": 0,
+          "end": 49,
+          "source_sha256": "4a791b1640104170d7e882c2515128103368e14a87bb5e5220b64da9f828d556",
+          "cosine_similarity": 0.762531578540802
+        },
+        {
+          "document_id": "us01",
+          "block_id": "us01-p0012-b0003",
+          "start": 0,
+          "end": 86,
+          "source_sha256": "8a74e1bd02e4c0baf897e5b4ecacea5163c7d8118e96751905bc8b40ebe7aaac",
+          "cosine_similarity": 0.7484380602836609
+        },
+        {
+          "document_id": "us01",
+          "block_id": "us01-p0037-b0004",
+          "start": 0,
+          "end": 45,
+          "source_sha256": "8a74e1bd02e4c0baf897e5b4ecacea5163c7d8118e96751905bc8b40ebe7aaac",
+          "cosine_similarity": 0.7415251135826111
+        },
+        {
+          "document_id": "us01",
+          "block_id": "us01-p0022-b0003",
+          "start": 0,
+          "end": 139,
+          "source_sha256": "8a74e1bd02e4c0baf897e5b4ecacea5163c7d8118e96751905bc8b40ebe7aaac",
+          "cosine_similarity": 0.7374457120895386
+        }
+      ]
+    },
+    {
+      "query": "anti-Muslim prejudice and discrimination",
+      "seconds": 0.152,
+      "hits_returned": 5,
+      "returned_quotes_validated_against_source": true,
+      "top_hits": [
+        {
+          "document_id": "us02",
+          "block_id": "us02-p0009-b0007",
+          "start": 0,
+          "end": 119,
+          "source_sha256": "0ae0b0840fb2bbb5d54069a465cbc9df9a39a1730406656334855e489360cfdf",
+          "cosine_similarity": 0.7749902606010437
+        },
+        {
+          "document_id": "us02",
+          "block_id": "us02-p0014-b0010",
+          "start": 0,
+          "end": 106,
+          "source_sha256": "0ae0b0840fb2bbb5d54069a465cbc9df9a39a1730406656334855e489360cfdf",
+          "cosine_similarity": 0.7627400159835815
+        },
+        {
+          "document_id": "uk10",
+          "block_id": "uk10-b00025",
+          "start": 0,
+          "end": 742,
+          "source_sha256": "6d38441c34bc7f965f72f381e05ac305c88963677ea832c9b7800e743d1f2222",
+          "cosine_similarity": 0.7473206520080566
+        },
+        {
+          "document_id": "uk10",
+          "block_id": "uk10-b00005",
+          "start": 0,
+          "end": 508,
+          "source_sha256": "6d38441c34bc7f965f72f381e05ac305c88963677ea832c9b7800e743d1f2222",
+          "cosine_similarity": 0.7425070405006409
+        },
+        {
+          "document_id": "us01",
+          "block_id": "us01-p0045-b0013",
+          "start": 0,
+          "end": 95,
+          "source_sha256": "8a74e1bd02e4c0baf897e5b4ecacea5163c7d8118e96751905bc8b40ebe7aaac",
+          "cosine_similarity": 0.7415065169334412
+        }
+      ]
+    },
+    {
+      "query": "freedom of religion and equal rights",
+      "seconds": 0.083,
+      "hits_returned": 5,
+      "returned_quotes_validated_against_source": true,
+      "top_hits": [
+        {
+          "document_id": "uk05",
+          "block_id": "uk05-p0069-b0009",
+          "start": 0,
+          "end": 38,
+          "source_sha256": "aafc9389ffa8ff41fe2d7eea78ba27cd68e7121a6bbf48056868d0fd002ce459",
+          "cosine_similarity": 0.7419677972793579
+        },
+        {
+          "document_id": "us09",
+          "block_id": "us09-p0010-b0025",
+          "start": 0,
+          "end": 46,
+          "source_sha256": "d28ae5ac6aaf6c732e4755c3a006e609c557ce97f71eb8dc0e2fc8f0519bb796",
+          "cosine_similarity": 0.6656392812728882
+        },
+        {
+          "document_id": "us09",
+          "block_id": "us09-p0006-b0001",
+          "start": 0,
+          "end": 1329,
+          "source_sha256": "d28ae5ac6aaf6c732e4755c3a006e609c557ce97f71eb8dc0e2fc8f0519bb796",
+          "cosine_similarity": 0.6475741267204285
+        },
+        {
+          "document_id": "uk08",
+          "block_id": "uk08-p0011-b0016",
+          "start": 0,
+          "end": 391,
+          "source_sha256": "d4b50d024dd09918f75ae46f5b0a5ef2cb612bdd8d69edb043e34010159473fa",
+          "cosine_similarity": 0.6435241103172302
+        },
+        {
+          "document_id": "us02",
+          "block_id": "us02-p0043-b0002",
+          "start": 0,
+          "end": 33,
+          "source_sha256": "0ae0b0840fb2bbb5d54069a465cbc9df9a39a1730406656334855e489360cfdf",
+          "cosine_similarity": 0.6253265142440796
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 86.084,
+  "peak_rss_kib": 599844,
+  "software": {
+    "torch": "2.9.1+cpu",
+    "transformers": "4.57.6",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "numpy": "2.5.5"
+  },
+  "hardware": {
+    "logical_cpus_visible": 5,
+    "cpu_quota_cores": 4.0,
+    "memory_limit_bytes": "17179869184",
+    "gpu_used": false
+  },
+  "runtime_limits": {
+    "index_version": "semantic-passages-3.0",
+    "documents": 10000,
+    "passages": 250000,
+    "document_passages": 20000,
+    "active_index_bytes": 536870912,
+    "chunk_passages": 256
+  },
+  "limitations": [
+    "Resumed timing: ten completed document bundles were reused; this is not a cold 20-document benchmark.",
+    "All twenty actual source documents were indexed; 99 decorative private-use-glyph inputs were transparently nonindexable.",
+    "Search rankings have not been independently relevance-labelled. This is not a prejudice, stance or retrieval-accuracy evaluation.",
+    "Memory/time reflect this environment and are not a 16GB laptop or 5000-article throughput guarantee."
+  ],
+  "runtime_settings": {
+    "device": "cpu",
+    "threads": 4,
+    "batch_size": 16,
+    "source_batch_max_pieces": 64,
+    "overlap_tokens": 32,
+    "embedding_batching_policy": "source_order"
+  }
+}

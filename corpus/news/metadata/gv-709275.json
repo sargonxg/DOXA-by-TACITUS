@@ -1,0 +1,430 @@
+{
+  "id": "gv-709275",
+  "publisher_id": 709275,
+  "source_id": "globalvoices:709275",
+  "source_url": "https://globalvoices.org/2020/06/08/in-guinea-covid-19-roadblocks-result-in-bloody-protests/",
+  "title": "In Guinea, COVID-19 roadblocks result in bloody protests",
+  "published_at": "2020-06-08T17:33:28Z",
+  "modified_at": "2020-06-08T17:34:36Z",
+  "api_author_id": 2298,
+  "api_content_sha256": "6a85627879b0e07fe0085e932d769240a968d2568161f94951538c831eb424ae",
+  "api_response_sha256": "36bc3d63f20a164eefbe7ce2d06bb132aa122b08a06cf13d0b9306b43d571f31",
+  "api_retrieved_at": "2026-11-16T22:20:26.326198+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 327,
+      "count": 2508,
+      "name": "French",
+      "slug": "french",
+      "parent": 317
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 118,
+      "count": 238,
+      "name": "Guinea",
+      "slug": "guinea",
+      "parent": 15
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-709275-b00001",
+      "text": "Guinea faces social violence exacerbated by the COVID-19 pandemic.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 66,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00002",
+      "text": "Already a fragile state, COVID-19 complicated matters with its first appearance in March 2020. By June 8, 4,117 people had tested positive for COVID-19 out of a population of 12 million.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 68,
+      "body_end": 254,
+      "source_links": [
+        "https://fr.wikipedia.org/wiki/%C3%89tat_en_d%C3%A9liquescence#Index_des_%C3%A9tats_fragiles_de_2018[25]",
+        "https://fr.wikipedia.org/wiki/D%C3%A9mographie_de_la_Guin%C3%A9e",
+        "https://www.worldometers.info/coronavirus/country/guinea/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00003",
+      "text": "To counter the pandemic, Guinean authorities established checkpoints between the capital city of Conakry, and the neighboring cities of Coyah and Dubréka, effectively blocking the capital off from the rest of the country.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 256,
+      "body_end": 477,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00004",
+      "text": "Though Coyah and Dubréka are administratively autonomous, they also constitute the suburbs of the capital and much of the population commutes to and from the cities on a daily basis. President Alpha Condé referred to Greater Conakry in his speech on public television on May 15.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 479,
+      "body_end": 757,
+      "source_links": [
+        "https://www.ramatoulaye.com/index.php/politiques/1978-evolution-de-la-covid-19-en-guinee-le-combat-n-est-pas-encore-gagne-nous-devons-redoubler-d-efforts-et-de-vigilance-dixit-alpha-conde"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00005",
+      "text": "Tensions mounted following the announcements on March 27 and 30, which included a communication error in the decision to isolate Conakry. In fact, it was not made explicit that the cities of Coyah and Dubréka were considered as part of the capital.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 759,
+      "body_end": 1007,
+      "source_links": [
+        "https://ledjely.com/2020/03/30/etat-durgence-renforce-un-couvre-feu-instaure-et-les-mouvements-entre-conakry-et-linterieur-du-pays-interdits/",
+        "https://www.africaradio.com/news/la-guinee-confrontee-au-coronavirus-instaure-un-couvre-feu-166022",
+        "https://www.dw.com/fr/l%C3%A9tat-durgence-entre-en-vigueur-en-guin%C3%A9e/a-52944804"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00006",
+      "text": "Only in his speech on May 15 did the president clarify that the curfew from 10 p.m. to 5 a.m. included these cities, as well.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1009,
+      "body_end": 1134,
+      "source_links": [
+        "https://kibaro224.com/alpha-conde-les-restrictions-daujourdhui-sont-dictees-par-les-exigences-de-sante-publique-integralite-discours/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00007",
+      "text": "On May 12, residents of Coyah and Dubréka revolted upon discovering barricades suddenly blocking the way to their daily activities.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1136,
+      "body_end": 1267,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00008",
+      "text": "The journalist Mamadou Kouyaté describes the intensity of the violence:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1269,
+      "body_end": 1340,
+      "source_links": [
+        "https://guinee114.com/violences-a-friguiadi-le-commissaire-central-de-coyah-dresse-un-bilan-provisoire/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00009",
+      "text": "> Roads were barricaded everywhere on Tuesday, following the violent protest that took place from Friguiadi to the center of Coyah. Everywhere people were seen attacking the forces of order. The police station and the gendarmerie brigade were devastated. The police station under construction in the center of Coyah was vandalized. We also observed that the route to Forekariah and the police station’s large roundabout were blocked off, so I was forced to go back and protect our building. Their slogans demanded that the Friguiadi roadblock be moved, saying it prevents them from returning to Coyah, where they live; that some of them work in Conakry and that they have to go home in the evening.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1342,
+      "body_end": 2040,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-709275-b00010",
+      "text": "Power cuts",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2042,
+      "body_end": 2052,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00011",
+      "text": "Violent protests took place north of Conakry in Kamsar, a port mainly utilized by local mining companies for bauxite exportation. It is estimated that the Guinean subsoil contains more than two-thirds of the world’s bauxite reserves from which aluminum is extracted.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2054,
+      "body_end": 2320,
+      "source_links": [
+        "https://www.guineenews.org/dossier-boom-de-la-bauxite-miracle-economique-ou-mirage-pour-la-guinee-1ere-partie/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00012",
+      "text": "Despite mining activity and the presence of a large port, residents do not have regular access to electricity or running water. Furthermore, the country is currently in the dry season, adding to residents’ anger.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2322,
+      "body_end": 2534,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00013",
+      "text": "This is not the first time that Guineans expressed their frustration with such companies that appear to negate their rights. In March 2019, 540 plaintiffs from 13 villages located in the west of the country sued the mediator of the International Finance Corporation (IFC), a branch of the World Bank, for financing the Guinea Bauxite Company (CBG), which does not respect national or international law in its mining activities.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2536,
+      "body_end": 2963,
+      "source_links": [
+        "https://www.dw.com/fr/treize-villages-accusent-la-banque-mondiale-de-pollution-en-guin%C3%A9e/a-48310928"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00014",
+      "text": "Here are descriptions of the events that took place on May 12:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2965,
+      "body_end": 3027,
+      "source_links": [
+        "https://www.africaguinee.com/articles/2020/05/12/kamsar-un-mort-le-domicile-du-maire-incendie"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00015",
+      "text": "> Riots shook the city of Kamsar in reaction to selective power cuts, causing one death and some property damage today, Tuesday, 12 May 2020. There was significant turmoil. In addition to the barricades erected throughout the suburbs of this industrial city, some facilities of the Guinea Bauxite Company (CBG) were vandalized by protesters, which deprived the site and some neighborhoods of drinking water. A number of sources also reported that the mayor’s home was set on fire.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3029,
+      "body_end": 3509,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-709275-b00016",
+      "text": "In a common statement published with International Federation for Human Rights (FIDH), 14 Guinean civil society organizations condemned the violence, demanded the release of all persons arrested and called to open an investigation:",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3511,
+      "body_end": 3742,
+      "source_links": [
+        "https://www.fidh.org/fr/regions/afrique/guinee-conakry/guinee-la-chasse-aux-opposants-et-aux-activistes-des-droits-humains"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00017",
+      "text": "> Our organizations demand a stop to police violence leading to the loss of human life, physical injury, and damage to property. We condemn the violence that occurred in Coyah, Dubréka, and Kamsar, and we call for the immediate opening of a judicial investigation in order to shed light on the violence committed in these places",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3744,
+      "body_end": 4072,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-709275-b00018",
+      "text": "Read more: Security forces in Guinea now have the right to use deadly force",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4074,
+      "body_end": 4149,
+      "source_links": [
+        "https://globalvoices.org/2019/08/06/security-forces-in-guinea-now-have-the-right-to-use-deadly-force/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00019",
+      "text": "Looking back at the history of Guinea, it is difficult to find a protest that was not met with a disproportionately violent, deadly response, serious violations of human rights and the destruction of property, as recalled by the FNDC (National Front for the Defense of the Constitution) in a statement dated May 15:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4151,
+      "body_end": 4466,
+      "source_links": [
+        "https://mail.google.com/mail/u/0/?tab=wm#inbox/FMfcgxwHNVtlXfHWjtfFltDZkWNhdJGX?projector=1&messagePartId=0.1"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00020",
+      "text": "> Guinea has been subject to various regimes since it achieved independence in 1958, from Sékou Touré to Alpha Condé. Each of them chose its own method to repress the population and employed nearly the same instrument: armed militias, true killing machines, in place of the police, the gendarmerie, and the regular army which are normally responsible for the security of people and their property, as well as for the country’s defense.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4468,
+      "body_end": 4903,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-709275-b00021",
+      "text": "Numerous Guineans shared their feelings on Twitter. One journalist said:",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4905,
+      "body_end": 4977,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-709275-b00022",
+      "text": "Abdoulaye Keita, general director of the Guinean Planning and Services Company (GuINAPRES), which donated 65 handwashing kits to public services and to the households of the city of Boké states:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4979,
+      "body_end": 5173,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "cb1f2430da73e0638918010a6b6038834a3d5a0d003902126f7e7875946e42fb",
+  "word_count": 836,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5173,
+  "retrieved_at": "2026-11-16T22:24:54.110538+00:00",
+  "raw_html_sha256": "a474e83b7e7e76fab75f8881a52c04da4ec76bf63baa3f16445cc8e1b5eb5ea4",
+  "resolved_source_url": "https://globalvoices.org/2020/06/08/in-guinea-covid-19-roadblocks-result-in-bloody-protests/",
+  "canonical_url": "https://globalvoices.org/2020/06/08/in-guinea-covid-19-roadblocks-result-in-bloody-protests/",
+  "source_bytes": 188514,
+  "authors": [
+    {
+      "name": "Abdoulaye Bah",
+      "url": "https://fr.globalvoices.org/author/abdoulaye-bah/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Stephanie Phaneuf",
+      "url": "https://globalvoices.org/author/stephanie-phaneuf/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 709275,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "a474e83b7e7e76fab75f8881a52c04da4ec76bf63baa3f16445cc8e1b5eb5ea4",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-1ff3dcc283ae31016d7d",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-06",
+    "eligible_month_documents": 110,
+    "selected_month_documents": 92,
+    "inclusion_probability": 0.8363636363636363,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Abdoulaye Bah",
+  "body_start": 481,
+  "body_end": 5654,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "048a2a68f782e2da08384fe8a20f1432e89bc2a1ba1029137c7e2e85876142c6",
+  "text_path": "articles/gv-709275.txt",
+  "metadata_path": "metadata/gv-709275.json",
+  "attribution": "This story by Abdoulaye Bah originally appeared on Global Voices. https://globalvoices.org/2020/06/08/in-guinea-covid-19-roadblocks-result-in-bloody-protests/",
+  "content_sha256": "d2df63451a9ca44f30940bf9839be1b54e6354241d5d76bfcd579b29090a32ac",
+  "source_sha256": "a474e83b7e7e76fab75f8881a52c04da4ec76bf63baa3f16445cc8e1b5eb5ea4",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

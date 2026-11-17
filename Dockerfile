@@ -25,6 +25,8 @@ RUN --mount=type=secret,id=doxa_build_ca,required=false \
     if [ "$DOXA_OCR" = "true" ]; then pip install --no-cache-dir '.[ocr]'; \
     else pip install --no-cache-dir --require-hashes -r infra/requirements-runtime.lock && pip install --no-cache-dir --no-deps .; fi
 COPY corpus/ ./corpus/
+COPY scripts/ ./scripts/
+COPY benchmarks/ ./benchmarks/
 COPY --from=frontend /build/frontend/dist ./frontend/dist
 RUN groupadd --gid 10001 doxa && useradd --uid 10001 --gid doxa --no-create-home doxa \
     && mkdir -p /data /models && chown -R doxa:doxa /data /models /app

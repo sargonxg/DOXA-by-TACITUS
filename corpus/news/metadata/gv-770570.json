@@ -1,0 +1,408 @@
+{
+  "id": "gv-770570",
+  "publisher_id": 770570,
+  "source_id": "globalvoices:770570",
+  "source_url": "https://globalvoices.org/2022/09/12/red-tagged-independent-media-blocked-in-philippine-internet-back-online/",
+  "title": "Red-tagged independent media blocked in Philippine internet back online",
+  "published_at": "2022-09-12T06:15:20Z",
+  "modified_at": "2022-09-13T02:20:24Z",
+  "api_author_id": 554,
+  "api_content_sha256": "e7fce41da0bfeb4906459e8a48f4602e5540f661b244dc116ee9df44d6e574ac",
+  "api_response_sha256": "30656aeb72fa6ac0796b25f9ba534044b6669ecaa343be437ba0196aa46e0005",
+  "api_retrieved_at": "2026-11-16T22:20:47.121994+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 55,
+      "count": 1238,
+      "name": "Philippines",
+      "slug": "philippines",
+      "parent": 16
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-770570-b00001",
+      "text": "Some websites, including independent media agency Bulatlat, which had been blocked weeks ago upon instigation by the Philippine government for alleged links to “Communist-Terrorist Groups,” can now be accessed again on the Philippine internet.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 243,
+      "source_links": [
+        "http://bulatlat.com",
+        "https://newsinfo.inquirer.net/1653996/red-tagged-news-site-back-online-after-pushback-in-court"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00002",
+      "text": "A judge issued a court order halting the blocking of the affected websites after concerted protests and legal action by journalists and rights advocates against this latest crackdown on the independent press and dissent in the Philippines.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 245,
+      "body_end": 484,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00003",
+      "text": "The move of the National Telecommunications Commission (NTC) to block the access of Filipino internet users to over two dozen websites was originally made at the behest of National Security Council (NSC) Adviser, General Hermogenes Esperon. Following Esperon's “request,” the NTC, issued a memorandum on June 8, 2022, calling on internet service providers to immediately block “the reported websites found to be affiliated to and are supporting terrorists and terrorist organizations.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 486,
+      "body_end": 971,
+      "source_links": [
+        "https://www.bulatlat.com/2022/06/22/bulatlat-raises-alarm-against-govt-order-to-block-sites-of-independent-media-progressives/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00004",
+      "text": "Block list",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 973,
+      "body_end": 983,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00005",
+      "text": "In fact, of the 27 websites listed by the NTC, only seven are actually linked to the Communist Party of the Philippines (CPP), its armed wing, the New People’s Army (NPA), and the underground coalition National Democratic Front of the Philippines (NDFP), which had been fighting one of the most enduring rural-based armed communist insurgencies in the world.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 985,
+      "body_end": 1343,
+      "source_links": [
+        "https://ndfp.info/",
+        "https://philippinerevolution.nu/",
+        "https://philippinerevolution.nu/1969/06/29/basic-rules-of-the-new-peoples-army/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00006",
+      "text": "The rest of the list includes independent news sites such as Bulatlat and Pinoy Weekly; websites of legal organizations like the Unyon ng mga Manggagawa sa Agrikultura (Union of Agricultural Workers), Amihan National Federation of Peasant Women, Save Our Schools Network, Bayan, and Pamalakaya; and even New York-based radical academic journal Monthly Review.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1345,
+      "body_end": 1704,
+      "source_links": [
+        "http://bulatlat.com",
+        "https://monthlyreview.org/",
+        "https://pinoyweekly.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00007",
+      "text": "These websites are not affiliated with the CPP. But the Philippines has a long history of red-tagging or labeling individuals and organizations as communistic or terroristic to prime them for repression.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1706,
+      "body_end": 1909,
+      "source_links": [
+        "https://globalvoices.org/2022/04/17/philippine-independent-bookshops-become-targets-of-red-tagging/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00008",
+      "text": "Both Bulatlat and Pinoy Weekly had also been targets of numerous distributed denial of service (DDos) cyber-attacks since 2018, which involved hackers overloading servers in order to crash the websites. Swedish digital forensics group Qurium Media Foundation traced the IP addresses of the hackers to the Philippine Army with the assistance of digital infrastructure provided by the Department of Science and Technology. Bulatlat is the Philippines’ longest-running online publication, having started operations in 2001.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1911,
+      "body_end": 2431,
+      "source_links": [
+        "https://www.qurium.org/alerts/philippines/attacks-against-media-in-the-philippines-continue/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00009",
+      "text": "Esperon cited resolutions from the government’s Anti-Terror Council designating the CPP-NPA-NDFP as “terrorist organizations” to justify blocking these websites as “terrorist affiliates.” Yet these resolutions do not mention any of the websites included in the ban list. The Anti-Terror Law also does not give the NTC authority to censor websites.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2433,
+      "body_end": 2780,
+      "source_links": [
+        "https://www.rappler.com/nation/esperon-uses-anti-terror-law-block-access-progressive-websites-including-news-organization/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00010",
+      "text": "The media outfits and groups in the list were likewise not informed of the order to block their websites, violating their right to due process of law. Bulatlat discovered that its website was inaccessible on June 17, 2022, after successive queries by its readers. The media outfit was able to secure a copy of the actual block order only on June 21, 2022.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2782,
+      "body_end": 3137,
+      "source_links": [
+        "https://www.bulatlat.com/2022/06/24/what-you-need-to-know-about-the-blocking-of-bulatlat-website-26-others/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00011",
+      "text": "Court battle",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3139,
+      "body_end": 3151,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00012",
+      "text": "Bulatlat filed a civil case on July 8, 2022, pressing the courts to issue a temporary restraining order (TRO) and ultimately nullify NTC’s blocking of the websites. But Bulatlat’s petition for a TRO was denied on July 13, 2022, by the Quezon City Regional Trial Court Judge Dolly Jose Bolante-Prado, who said the website was still accessible to the Court, thus proving there was no violation of the law.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3153,
+      "body_end": 3556,
+      "source_links": [
+        "https://www.bulatlat.org/2022/07/08/bulatlat-seeks-to-nullify-ntc-order-on-blocking-of-website/",
+        "https://www.philstar.com/nation/2022/07/14/2195185/quezon-city-court-denies-bulatlat-bid-unblock-website"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00013",
+      "text": "This prompted Bulatlat to file a motion for reconsideration on July 22, 2022, citing the unconstitutionality of NTC’s sanctions and the dip in its readership by 43 percent.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3558,
+      "body_end": 3730,
+      "source_links": [
+        "https://www.bulatlat.com/2022/07/22/bulatlat-asks-court-reconsider-denial-of-tro-vs-ntc-block-order/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00014",
+      "text": "The blatant blocking of the websites spurred a backlash from journalists, academics, and press freedom and human rights advocates who decried the blatant attack on freedom of expression and press freedom in the guise of securing “public safety.” In the same month, activist lawmakers in the Philippine Congress under the Makabayan (Pro-People) Coalition joined media and civil society organizations in putting pressure on authorities by filing a congressional resolution to investigate the government agencies behind the blocking of the websites.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3732,
+      "body_end": 4278,
+      "source_links": [
+        "https://www.bulatlat.com/2022/07/18/makabayan-lawmakers-file-house-reso-to-investigate-blocking-of-bulatlat-26-websites/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00015",
+      "text": "The court finally decided to unblock the websites in the August 11, 2022 hearing granting Bulatlat’s petition for a writ of a preliminary injunction. But continued inaction by the NTC led the embattled news site to file another petition for indirect contempt of court against the agency on August 25, 2022. This finally prompted the agency to bring Bulatlat back online on August 26, 2022.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4280,
+      "body_end": 4669,
+      "source_links": [
+        "https://www.bulatlat.com/2022/08/25/bulatlat-asks-court-to-cite-ntc-for-contempt-for-defying-preliminary-injunction-writ/",
+        "https://www.gmanetwork.com/news/topstories/nation/842874/bulatlat-welcomes-unblocking-of-its-website/story/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00016",
+      "text": "However, as of this writing, the websites of the CPP and its allied rebel organizations remain inaccessible using Philippine internet service providers.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4671,
+      "body_end": 4823,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00017",
+      "text": "The fight continues",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4825,
+      "body_end": 4844,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00018",
+      "text": "Press freedom advocates have warned that the escalating attacks on press freedom under the new President Ferdinand “Bongbong” Jr. herald a continuation of the hostile stance against media critics and dissidents by his predecessor Rodrigo Duterte.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4846,
+      "body_end": 5092,
+      "source_links": [
+        "https://www.aljazeera.com/news/2022/8/20/philippine-media-under-pressure-as-marcos-jr-courts-influencers"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00019",
+      "text": "It can be recalled that the past president has admitted to orchestrating the shutdown of ABS-CBN, the country’s biggest media broadcaster, due to unsavory reporting on his administration. The news site Rappler, including its founder, Nobel Peace Prize laureate Maria Ressa, had also been at the receiving end of various court cases for its critical reportage. It had also been ordered to shut down by authorities last June 2022.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5094,
+      "body_end": 5522,
+      "source_links": [
+        "https://edition.cnn.com/2022/06/28/media/rappler-shut-down-philippines-ressa-intl-hnk/index.html",
+        "https://globalvoices.org/2020/07/20/tears-and-rage-after-congress-rejected-the-franchise-renewal-of-the-philippines-biggest-media-network/",
+        "https://www.cnnphilippines.com/business/2022/6/27/Duterte-admits-using-presidential-powers-vs-ABS-CBN.html",
+        "https://www.nytimes.com/2020/06/14/business/maria-ressa-verdict-philippines-rappler.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770570-b00020",
+      "text": "In the face of threats to free expression and press freedom, journalists and Filipino activists have vowed to hold the line against online censorship, media repression, and democratic backslide under the son of the late dictator.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5524,
+      "body_end": 5753,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5f70570b2dd5e22d1ae0f7c718daa3ad967d9b97ae90c2fef0b162ae7718892e",
+  "word_count": 883,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 6,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5753,
+  "retrieved_at": "2026-11-16T22:36:17.784264+00:00",
+  "raw_html_sha256": "9477cd042cfd3ccc74352a81b0ea666c9b8fd11450d57bfaac493b3f5d775c6b",
+  "resolved_source_url": "https://globalvoices.org/2022/09/12/red-tagged-independent-media-blocked-in-philippine-internet-back-online/",
+  "canonical_url": "https://globalvoices.org/2022/09/12/red-tagged-independent-media-blocked-in-philippine-internet-back-online/",
+  "source_bytes": 191887,
+  "authors": [
+    {
+      "name": "Karlo",
+      "url": "https://globalvoices.org/author/karlo-mongaya/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 770570,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "9477cd042cfd3ccc74352a81b0ea666c9b8fd11450d57bfaac493b3f5d775c6b",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-67846f63bd07cd54aefe",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-09",
+    "eligible_month_documents": 75,
+    "selected_month_documents": 63,
+    "inclusion_probability": 0.84,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Karlo",
+  "body_start": 471,
+  "body_end": 6224,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "3f7868a5ebec0aff2f93aa27bbf8ec8b43c478d03355cc486d7ce21d4b9e356b",
+  "text_path": "articles/gv-770570.txt",
+  "metadata_path": "metadata/gv-770570.json",
+  "attribution": "This story by Karlo originally appeared on Global Voices. https://globalvoices.org/2022/09/12/red-tagged-independent-media-blocked-in-philippine-internet-back-online/",
+  "content_sha256": "ca2dcbad276efede5f532ace13a38cbd1de415729b5118d69ff2ae307970fdc2",
+  "source_sha256": "9477cd042cfd3ccc74352a81b0ea666c9b8fd11450d57bfaac493b3f5d775c6b",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

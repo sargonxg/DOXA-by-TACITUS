@@ -1,0 +1,263 @@
+{
+  "id": "gv-724778",
+  "publisher_id": 724778,
+  "source_id": "globalvoices:724778",
+  "source_url": "https://globalvoices.org/2020/12/10/seven-african-governments-employ-surveillance-spyware-says-new-study/",
+  "title": "Seven African governments employ surveillance spyware, says new study",
+  "published_at": "2020-12-10T14:01:27Z",
+  "modified_at": "2020-12-10T14:01:27Z",
+  "api_author_id": 964,
+  "api_content_sha256": "2684db583f4d6388b987199a6ca1a83b2d3bfa4287681dab2bf0284972285e4d",
+  "api_response_sha256": "3c1126b1eeb2408f0c7dfb3722ec3e22693716e3f3a1988a2b2844f4a03dc72f",
+  "api_retrieved_at": "2026-11-16T22:20:31.424510+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 100,
+      "count": 134,
+      "name": "Botswana",
+      "slug": "botswana",
+      "parent": 15
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 112,
+      "count": 103,
+      "name": "Equatorial Guinea",
+      "slug": "equatorial-guinea",
+      "parent": 15
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 18,
+      "count": 1766,
+      "name": "Kenya",
+      "slug": "kenya",
+      "parent": 15
+    },
+    {
+      "id": 30,
+      "count": 928,
+      "name": "Morocco",
+      "slug": "morocco",
+      "parent": 14
+    },
+    {
+      "id": 131,
+      "count": 1641,
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 144,
+      "count": 365,
+      "name": "Zambia",
+      "slug": "zambia",
+      "parent": 15
+    },
+    {
+      "id": 145,
+      "count": 827,
+      "name": "Zimbabwe",
+      "slug": "zimbabwe",
+      "parent": 15
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-724778-b00001",
+      "text": "The governments of seven African countries — Botswana, Equatorial Guinea, Kenya, Morocco, Nigeria, Zambia, and Zimbabwe — are using spyware technology, according to a new report by Citizen Lab, an interdisciplinary research unit at the University of Toronto, Canada.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 266,
+      "source_links": [
+        "https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724778-b00002",
+      "text": "The study has identified at least 25 countries around the world that have deployed surveillance software produced by Circles, a firm affiliated with Israel's NSO Group. The study says Circles claim to only deal with nation-states.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 268,
+      "body_end": 498,
+      "source_links": [
+        "https://www.nsogroup.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724778-b00003",
+      "text": "The report, written by Bill Marczak and four others, discovered “a unique signature associated with the hostnames of Check Point firewalls used in Circles deployments, enabling us to identify Circles deployments.” Check Point is a leading American-Israeli cybersecurity firm.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 500,
+      "body_end": 775,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724778-b00004",
+      "text": "According to the study, Circles’ technology operates by exploiting a common signal flaw in the global mobile phone system to enable call and text snooping as well as tracking of phones.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 777,
+      "body_end": 962,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724778-b00005",
+      "text": "The snooping technique used by Circles is called Signaling System 7 (SS7), a “protocol suite developed in 1975 for exchanging information and routing phone calls between different wireline telecommunications companies,” the report says. SS7 is currently used in 2G and 3G mobile networks during cross-border billing for roamed calls.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 964,
+      "body_end": 1297,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724778-b00006",
+      "text": "Thomas Brewster, a cybersecurity analyst at Forbes who reported on the Citizen Lab study, further explains that when one travels to another country, “the SS7 network is used to move your phone over to a partner telecoms provider and adjust billing accordingly.” However, a twist occurs in this normal process if “a surveillance vendor” is able to access the SS7 networks, “either via hacking or acquiring it.” The SS7 then sends “commands to a subscriber’s ‘home network’ falsely indicating the subscriber is roaming. That will, in turn, reveal their location, though only the coordinates of the cell tower closest to the phone,” says Brewster.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1299,
+      "body_end": 1943,
+      "source_links": [
+        "https://www.forbes.com/sites/thomasbrewster/2020/12/01/this-spy-tool-can-find-you-with-just-a-telephone-number-and-25-countries-own-it-warn-researchers/?sh=370dbb5331ed"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724778-b00007",
+      "text": "Circle's clients in Africa identified by Citizen Lab are the following: Botswana’s Directorate of Intelligence and Security Service (DISS), Morocco’s Ministry of Interior, Nigeria’s Defence Intelligence Agency (DIA), and an unknown agency in Zambia.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1945,
+      "body_end": 2194,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "fb009584be36c97c6aeb6cfa39caf35e0ddc0ef34bdf59b7bc9921bf73b67666",
+  "word_count": 332,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 2194,
+  "retrieved_at": "2026-11-16T22:28:42.736214+00:00",
+  "raw_html_sha256": "31bf61f112f7a7b613c8284f8a7654958c21b80e806c5fd2ec6c8f2f6be0c90d",
+  "resolved_source_url": "https://globalvoices.org/2020/12/10/seven-african-governments-employ-surveillance-spyware-says-new-study/",
+  "canonical_url": "https://globalvoices.org/2020/12/10/seven-african-governments-employ-surveillance-spyware-says-new-study/",
+  "source_bytes": 185719,
+  "authors": [
+    {
+      "name": "Nwachukwu Egbunike",
+      "url": "https://globalvoices.org/author/nwachukwu-egbunike/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 724778,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "31bf61f112f7a7b613c8284f8a7654958c21b80e806c5fd2ec6c8f2f6be0c90d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-c99154353addac1492cf",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-12",
+    "eligible_month_documents": 69,
+    "selected_month_documents": 58,
+    "inclusion_probability": 0.8405797101449275,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Nwachukwu Egbunike",
+  "body_start": 479,
+  "body_end": 2673,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "8cd1159eeec7671f24708604f5509e9621143be49c28c369414be19555e7b899",
+  "text_path": "articles/gv-724778.txt",
+  "metadata_path": "metadata/gv-724778.json",
+  "attribution": "This story by Nwachukwu Egbunike originally appeared on Global Voices. https://globalvoices.org/2020/12/10/seven-african-governments-employ-surveillance-spyware-says-new-study/",
+  "content_sha256": "9e1bff7a4b66061fc961eef6ed175bd6bc6c8177b693c0e8c6006b54e7aeb855",
+  "source_sha256": "31bf61f112f7a7b613c8284f8a7654958c21b80e806c5fd2ec6c8f2f6be0c90d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,349 @@
+{
+  "id": "gv-840744",
+  "publisher_id": 840744,
+  "source_id": "globalvoices:840744",
+  "source_url": "https://globalvoices.org/2025/08/01/the-next-big-thing-turkeys-new-social-platform-faces-scrutiny-over-domestic-label/",
+  "title": "The ‘Next’ big thing? Turkey's new social platform faces scrutiny over ‘domestic’ label",
+  "published_at": "2025-08-01T06:00:18Z",
+  "modified_at": "2025-08-01T00:58:34Z",
+  "api_author_id": 799,
+  "api_content_sha256": "a9432a7132da731b79f6e9a6844678f9d3275d887906ce4ac2c1acb1a1cd9a1c",
+  "api_response_sha256": "aa829e488c936cd24696326080352df2a0a3369d54650e0ac6b947b6ef771fe6",
+  "api_retrieved_at": "2026-11-16T22:21:14.060384+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 28,
+      "count": 68775,
+      "name": "Quick Reads",
+      "slug": "roundups",
+      "parent": 218
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 238,
+      "count": 1673,
+      "name": "TOPICS",
+      "slug": "topics",
+      "parent": 0
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    },
+    {
+      "id": 218,
+      "count": 1666,
+      "name": "TYPE",
+      "slug": "type",
+      "parent": 0
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    },
+    {
+      "id": 282,
+      "count": 6941,
+      "name": "Youth",
+      "slug": "youth",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-840744-b00001",
+      "text": "At its recent launch, Next Sosyal was touted as the country's first “domestic social media application,” offering users a new generation of social media free from ads and harassment. It was unveiled ahead of this year's annual TEKNOFEST, a major technology and defense event in Turkey. However, the claim of it being a purely domestic product was quickly challenged.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 366,
+      "source_links": [
+        "https://tr.euronews.com/next/2025/07/31/ovgu-elestiri-ve-tartismalar-10-soruda-next-sosyal-ve-next-mesajlasma",
+        "https://www.teknofest.org/tr/",
+        "https://x.com/Selcuk/status/1947160109198540818"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00002",
+      "text": "Just days after its public launch on July 28 — which attracted over 500,000 subscribers — users discovered that the platform was not a unique site developed from scratch, but rather, a Mastodon server. The website confirmed this, stating, “[The] sosyal.teknofest.app is an open-source Mastodon-based social media platform developed by TEKNOFEST entrepreneurs.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 368,
+      "body_end": 728,
+      "source_links": [
+        "https://sosyal.teknofest.app/explore",
+        "https://tr.euronews.com/next/2025/07/31/ovgu-elestiri-ve-tartismalar-10-soruda-next-sosyal-ve-next-mesajlasma",
+        "https://www.trthaber.com/haber/bilim-teknoloji/next-teknofest-sosyalde-kullanici-sayisi-500-bine-ulasti-915363.html",
+        "https://x.com/MertcanUreten/status/1949009291643376029"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00003",
+      "text": "Sadullah Uzun, the general director of technology at the Ministry of Industry and Technology, praised the platform's success. He tweeted, in what appeared to be a dig at other apps, “A good technical team can build a very good social media platform with hard work. But can they attract an audience? Will people become users of the platform? No! It will just take its place in the app graveyard as ‘yet another app.’ This is where Next Sosyal's difference lies! People are curious, they want to be a part of it, and they are flocking to it.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 730,
+      "body_end": 1270,
+      "source_links": [
+        "https://x.com/sadullahuzun/status/1949060399908728987"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00004",
+      "text": "Uzun credited the platform's appeal to “the youth's big brother Selçuk.” Selçuk Bayraktar, the 46-year-old owner of Baykar, a company known for its drones and other defense technology, is the son-in-law of President Recep Tayyip Erdoğan and the face of the annual TEKNOFEST event.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1272,
+      "body_end": 1552,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Baykar",
+        "https://www.turkeyrecap.com/p/more-than-drones-teknofest-and-selcuk"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00005",
+      "text": "The same day that the new platform went live, Bayraktar himself tweeted about it via his personal X account:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1554,
+      "body_end": 1662,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00006",
+      "text": "Among hundreds of replies, there was one from the official Mastodon account, which tweeted at Bayraktar:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1664,
+      "body_end": 1768,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00007",
+      "text": "Andy Piper, Mastodon's head of communications, shared a statement with Global Voices: “We first attempted to contact the service owner to remind and inform them of their license obligations via email on July 8. Since then, we have made several other attempts to contact the service owner, but the emails either bounced, or were ignored. After a number of additional messages from members of the public over the weekend of July 27-28, on July 29 our official X account replied to a prominent post referring to Next Sosyal, in another effort to make contact with the service owner. We look forward to the full source code for the Next Sosyal service being made available, according to the requirements of the AGPL license.”",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1770,
+      "body_end": 2491,
+      "source_links": [
+        "https://www.gazetepencere.com/medya/mastodon-selcuk-bayraktarin-yerli-ve-milli-uygulamasi-next-sosyale-haftalardir-666995h"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00008",
+      "text": "The GNU Affero General Public License (AGPL) is a free software license designed for software like web applications, which can be accessed over a network.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2493,
+      "body_end": 2647,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/GNU_Affero_General_Public_License"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00009",
+      "text": "On July 30, Mastodon's founder, Eugen Rochko, posted on Mastodon: “Our team is aware that the new Turkish social media platform Next Sosyal is using Mastodon code without following the terms of the license and we have already reached out to them.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2649,
+      "body_end": 2896,
+      "source_links": [
+        "https://mastodon.social/@Gargron/114943874370266665"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00010",
+      "text": "This is not the first time that a project branded as “domestic and national” has used foreign open-source infrastructure. As journalist Fusun Nebil noted, similar projects — including Turkcell’s YAANi, a local search engine, and the national post office's PTT Messenger — have all used open-source code from existing global applications while being presented as if they had ben developed locally. “In short,” Nebil concluded, “despite the ‘Next’ in its name and the TEKNOFEST branding, Next Sosyal is neither locally developed nor nationally produced.”",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2898,
+      "body_end": 3450,
+      "source_links": [
+        "https://egegen.com/blog/milli-mesajlasma-uygulamasi-ptt-messenger-yayinlandi/",
+        "https://medya.turkcell.com.tr/bulletins/turkcellden-turkiyenin-arama-motoru-yaani/",
+        "https://turk-internet.com/next-sosyal-teknofestte-kullanici-ip-adresleri-gozukur-mu/",
+        "https://www.evrensel.net/haber/563702/bu-hafta-sinemalarda-11-yeni-film-korku-komedi-aksiyon-bir-arada",
+        "https://www.webtekno.com/turkcell-arama-motoru-yaani-ne-oldu-h139352.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00011",
+      "text": "Making the situation more complex is the fact that Bayraktar, in a tweet on July 4 — before the public launch — acknowledged that the new platform was based on Mastodon. This raises questions about why, in the days following its release, the platform was so heavily marketed as a purely local product.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3452,
+      "body_end": 3753,
+      "source_links": [
+        "https://x.com/Selcuk/status/1941113182656880809"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00012",
+      "text": "In the written statement viewed by Global Voices, Piper added, “The related site appears to be running the Mastodon software, which is licensed under the GNU Affero General Public License (AGPL). However, it appears to have been modified, and references to the Mastodon code and copyrights have largely been removed from the user interface and site. We have also been made aware that the mobile apps appear to be based on our own application code. The GNU Affero General Public License is a modified version of the ordinary GNU GPL version 3. It has one added requirement: if you run a modified program on a server and let other users communicate with it there, your server must also allow them to download the source code corresponding to the modified version running there. A Mastodon server must have a visible link to the source code for the software on the main page of the service at a minimum.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3755,
+      "body_end": 4656,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840744-b00013",
+      "text": "Piper later confirmed that Mastodon finally established “contact with the service owner [and] they have stated that they will be making efforts to comply with the license obligations.” The matter is expected to be resolved within the coming days.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4658,
+      "body_end": 4904,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "bd6e7061a9329f2891c2ce3246f62fd945a8b3c74090b6e3afd37562f3f29413",
+  "word_count": 809,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4904,
+  "retrieved_at": "2026-11-16T22:47:26.258133+00:00",
+  "raw_html_sha256": "c669ec1540c6ab4a53888a94c67381306cde278c78fcfe47ed055799c7b17c54",
+  "resolved_source_url": "https://globalvoices.org/2025/08/01/the-next-big-thing-turkeys-new-social-platform-faces-scrutiny-over-domestic-label/",
+  "canonical_url": "https://globalvoices.org/2025/08/01/the-next-big-thing-turkeys-new-social-platform-faces-scrutiny-over-domestic-label/",
+  "source_bytes": 188024,
+  "authors": [
+    {
+      "name": "Arzu Geybullayeva",
+      "url": "https://globalvoices.org/author/arzu-geybullayeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 840744,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "c669ec1540c6ab4a53888a94c67381306cde278c78fcfe47ed055799c7b17c54",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-5a1a012effd66b51a3de",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-08",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Arzu Geybullayeva",
+  "body_start": 509,
+  "body_end": 5413,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "907103102f2db64b7f13cabe73eb0765278304503d26297386b5ed1028e9f9fe",
+  "text_path": "articles/gv-840744.txt",
+  "metadata_path": "metadata/gv-840744.json",
+  "attribution": "This story by Arzu Geybullayeva originally appeared on Global Voices. https://globalvoices.org/2025/08/01/the-next-big-thing-turkeys-new-social-platform-faces-scrutiny-over-domestic-label/",
+  "content_sha256": "6a3e4dc88d5832709d17aa5c71f267486822b107e845b92c19682e384e2685d3",
+  "source_sha256": "c669ec1540c6ab4a53888a94c67381306cde278c78fcfe47ed055799c7b17c54",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,382 @@
+{
+  "id": "gv-778589",
+  "publisher_id": 778589,
+  "source_id": "globalvoices:778589",
+  "source_url": "https://globalvoices.org/2023/01/05/filipino-activists-decry-facebooks-automated-censorship/",
+  "title": "Filipino activists decry Facebook’s ‘automated censorship’",
+  "published_at": "2023-01-05T09:21:14Z",
+  "modified_at": "2023-01-05T09:21:14Z",
+  "api_author_id": 261,
+  "api_content_sha256": "2c1d6412cbe763a547534d924bb23dd1da9b4c2c1c4fcb8144e5e8bfafca510b",
+  "api_response_sha256": "654a838386106e2262a167ae8c1bd1b81f26b6d0ad23fda191ed493f237011a9",
+  "api_retrieved_at": "2026-11-16T22:20:49.244553+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 55,
+      "count": 1238,
+      "name": "Philippines",
+      "slug": "philippines",
+      "parent": 16
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-778589-b00001",
+      "text": "Several group pages and personal accounts of Filipino activists were restricted by Facebook for allegedly violating community standards after they posted photos, videos, and statements honoring the legacy of the late founder of the Communist Party of the Philippines Jose Maria Sison. Apparently, Sison is included in the list of Facebook’s “dangerous individuals and organizations.”",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 383,
+      "source_links": [
+        "https://josemariasison.org/?__cf_chl_tk=66GTUJBalsVDcfXfKwdcEfXzndOTEGWcVegLjP9zepw-1672905449-0-gaNycGzNCSU",
+        "https://theintercept.com/2021/10/12/facebook-secret-blacklist-dangerous/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00002",
+      "text": "Sison, 83, died on December 16, 2022. He was jailed for nine years during the Martial Law regime until the ouster of the dictatorship in 1986. He was forced to go into exile in The Netherlands in 1987 after his passport was cancelled while he was out of the country during a global lecture tour. He served as chief political consultant of the National Democratic Front of the Philippines until his death.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 385,
+      "body_end": 789,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00003",
+      "text": "Despite being a political refugee in Europe, successive Philippine governments have branded him as a terrorist and accused him of directing the operations of the New People’s Army, which has been waging an armed struggle for national liberation since 1969. Sison has denied this and contested his inclusion in the list of terrorists.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 791,
+      "body_end": 1124,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00004",
+      "text": "For many activists, Sison was regarded as an outstanding activist, poet, and revolutionary whose writings have guided the emergence and growth of the Leftist movement in the Philippines.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1126,
+      "body_end": 1312,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00005",
+      "text": "Sison is recognized in the Philippines as a historic figure and political icon. Naturally, his death drew immediate reactions from supporters, adversaries, and observers of Philippine politics.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1314,
+      "body_end": 1507,
+      "source_links": [
+        "https://www.gmanetwork.com/news/topstories/nation/854810/rodrigo-duterte-on-sison-s-death-marks-end-of-an-era-hopefully-ends-insurgencies/story/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00006",
+      "text": "But Facebook’s algorithm is seemingly tweaked to automatically flag posts that mention Sison and contain his images.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1509,
+      "body_end": 1625,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00007",
+      "text": "Dr. Carol Araullo, chair of Bagong Alyansang Makabayan (New Patriotic Alliance), questioned the removal of her post announcing a tribute event in honor of Sison:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1627,
+      "body_end": 1788,
+      "source_links": [
+        "https://www.facebook.com/carolp.araullo/posts/pfbid0edRZKuJSRM4jopJZJ4iKnesAybbTTpAkVTUxtvwrJGVvTJJds2y4imdhkC1eUZPGl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00008",
+      "text": "> So I finally got “restricted” by FB for posting the pubmat announcing the Memorial for Prof. Sison last Dec. 20. Of course I am contesting the FB decision.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1790,
+      "body_end": 1947,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-778589-b00009",
+      "text": "> This is a public event in a state university, on an important historical figure whose life and actions are part of academic discussion in and out of the university. What “community standards” then have I violated?",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1949,
+      "body_end": 2164,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-778589-b00010",
+      "text": "Even the post of tech journalist Noemi Lardizabal-Dado was removed after she posted her past interview with Sison:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2166,
+      "body_end": 2280,
+      "source_links": [
+        "https://www.facebook.com/noemidado/posts/pfbid02a4v5Gao2duS2jSenxKvEQ7CapqgVALrpjdsrjA7LcvJeQJUpLcUGbBGSKGQBtnP4l"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00011",
+      "text": "> Apparently posting about Joma Sison caused multiple restrictions to my Facebook account. A first for me. Even in death, Joma Sison is a threat. Facebook does not allow symbols , praise or support of dangerous individuals or organizations.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2282,
+      "body_end": 2522,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-778589-b00012",
+      "text": "She appealed the decision and Facebook soon restored her post.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2524,
+      "body_end": 2586,
+      "source_links": [
+        "https://www.facebook.com/noemidado/posts/pfbid02YvBtNkejQKAKeAcej7evbgE5GcaakxfFuRZUJARJTFPkhZs7eZCNwzoi7aFt8Mgxl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00013",
+      "text": "Another successful appeal was done by journalist Raymund Villanueva who challenged Facebook’s decision to remove a post which contains a message from the Norwegian government expressing condolences to the family of Sison.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2588,
+      "body_end": 2809,
+      "source_links": [
+        "https://www.facebook.com/photo/?fbid=10228616451738245&set=a.4494809490337"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00014",
+      "text": "Not all appeals have been successful as several activists continued to report the restrictions imposed on their accounts.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2811,
+      "body_end": 2932,
+      "source_links": [
+        "https://www.bulatlat.com/2022/12/26/facebook-censors-womens-group-page-over-tributes-for-late-cpp-founder/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00015",
+      "text": "Journalist Inday Espina-Varona criticized the removal of Facebook posts that mention Sison:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2934,
+      "body_end": 3025,
+      "source_links": [
+        "https://www.facebook.com/inday.espinavarona/posts/pfbid0cR6s6Xr9k4fVFQtLA5msAi7YKJAvuSK3hrJ33ZucqrREcNgPcN1gs9fmWNNYdDvvl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00016",
+      "text": "> Facebook is the social media giant that has allowed hate to fester, and messages of introlerance [sic] and violence to spread, if these lead to profits.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3027,
+      "body_end": 3181,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-778589-b00017",
+      "text": "> For it to take down posts on Sison is a shameful and sorry attempt to deny the historical fact of a man and a life that, for better or worse, depending on where one is coming from, affected a nation.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3183,
+      "body_end": 3384,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-778589-b00018",
+      "text": "Bagong Alyansang Makabayan described Facebook’s actions as an example of “automated censorship.” It added that the removal of posts “exposes how the so-called community standards of FB are arbitrarily invoked to silence activists and revolutionaries.”",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3386,
+      "body_end": 3637,
+      "source_links": [
+        "https://www.bulatlat.com/2022/12/22/bayan-assails-facebooks-censorship-of-tributes-for-joma-sison/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-778589-b00019",
+      "text": "To evade the invisible censors of Facebook, activists decided to post images of lamps and lanterns and captioned with the hashtag #SaludoJMS (Salute Jose Maria Sison) to symbolize their message that Sison's legacy will continue to be a light and guide of the people's movement.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3639,
+      "body_end": 3916,
+      "source_links": [
+        "https://www.facebook.com/photo?fbid=10225370903797466&set=a.1447026093548"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "b90cad30a7bc8e29278bdf349f05eadc78d8a3ad7b3114475c5cfc205904fb19",
+  "word_count": 620,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 4,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 3916,
+  "retrieved_at": "2026-11-16T22:37:43.635206+00:00",
+  "raw_html_sha256": "d39fad81fd51c6f882149f442938ad3c99cae9224c13e2e6d23211c038789146",
+  "resolved_source_url": "https://globalvoices.org/2023/01/05/filipino-activists-decry-facebooks-automated-censorship/",
+  "canonical_url": "https://globalvoices.org/2023/01/05/filipino-activists-decry-facebooks-automated-censorship/",
+  "source_bytes": 187629,
+  "authors": [
+    {
+      "name": "Mong Palatino",
+      "url": "https://globalvoices.org/author/mong/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 778589,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "d39fad81fd51c6f882149f442938ad3c99cae9224c13e2e6d23211c038789146",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-6b7102dfd48272c0501d",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-01",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Mong Palatino",
+  "body_start": 450,
+  "body_end": 4366,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "612a5c69dd2b6ff7ad165b86f163d89dbef17ff82a4fc55467f3f73648732839",
+  "text_path": "articles/gv-778589.txt",
+  "metadata_path": "metadata/gv-778589.json",
+  "attribution": "This story by Mong Palatino originally appeared on Global Voices. https://globalvoices.org/2023/01/05/filipino-activists-decry-facebooks-automated-censorship/",
+  "content_sha256": "a77a94285ed8ef9d8684bb5032ccdb5d79674df999cce0d28b9e3f59108042bf",
+  "source_sha256": "d39fad81fd51c6f882149f442938ad3c99cae9224c13e2e6d23211c038789146",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

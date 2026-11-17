@@ -1,0 +1,761 @@
+{
+  "id": "gv-756826",
+  "publisher_id": 756826,
+  "source_id": "globalvoices:756826",
+  "source_url": "https://globalvoices.org/2022/02/21/what-does-russias-new-hostage-taking-law-mean-for-social-media-companies/",
+  "title": "What does Russia's new “hostage-taking” law mean for social media companies?",
+  "published_at": "2022-02-21T10:00:40Z",
+  "modified_at": "2022-02-25T09:21:49Z",
+  "api_author_id": 2363,
+  "api_content_sha256": "ef3efe407b3e9a0b381ab2dad121789d0efce203adaa0c52ed0285a258994abc",
+  "api_response_sha256": "1c1ca0bc12b9cd2dbfa64c668911b057f3193583dcca9487ed40436dfe167757",
+  "api_retrieved_at": "2026-11-16T22:20:42.191404+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-756826-b00001",
+      "text": "A new law that came into force in 2021 imposes new obligations on popular foreign websites and social media platforms with over half a million daily users, obliging them to register legal entities in Russia, essentially “grounding” the companies and placing them more firmly under Russian jurisdiction. In 10 simple questions and answers, Russian digital rights group Roskomsvoboda explains the possible repercussions of the new “grounding” legislation. RuNet Echo translates these for the Global Voices audience.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 513,
+      "source_links": [
+        "http://publication.pravo.gov.ru/Document/View/0001202107010014",
+        "https://roskomsvoboda.org/cards/card/it-zalojniki/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00002",
+      "text": "1. What happened?",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 515,
+      "body_end": 532,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00003",
+      "text": "On 16 February, 2022 Russian internet regulator Roskomnadzor announced that by the end of the month it would consider the issue of sanctions targeting companies that have not yet begun to comply with the demands of the “hostage-taking” law.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 534,
+      "body_end": 774,
+      "source_links": [
+        "https://rg.ru/2022/02/16/rkn-gotov-priniat-mery-k-kompaniiam-ne-ispolniaiushchim-zakon-o-prizemlenii.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00004",
+      "text": "From January 1, 2022 owners of foreign information and social media websites with a daily audience of over 500,000 Russian users, are required to:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 776,
+      "body_end": 922,
+      "source_links": [
+        "https://sozd.duma.gov.ru/bill/1176731-7"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00005",
+      "text": "– create a local subsidiary, headquarters or legal entity able to represent them in the Russian Federation;",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 924,
+      "body_end": 1031,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00006",
+      "text": "– register an official company account with the Roskomnadzor website;",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1033,
+      "body_end": 1102,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00007",
+      "text": "– publish on their website an electronic feedback form for Russian citzens and organizations.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1104,
+      "body_end": 1197,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00008",
+      "text": "2. Why would they (Russia) do this?",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1199,
+      "body_end": 1234,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00009",
+      "text": "According to an explanatory note appended to the new law, platforms like Facebook and Twitter don't have official headquarters on Russian soil. Even Google LLC and Apple Rus LLC , which operate in Russia, are not official legal representatives of their parent companies. Meanwhile, de-facto the websites and platforms of foreign IT companies are used by Russian citizens, who are provided with services (including paid ones or in exchange for viewing advertising targeted at a Russian audience) and whose personal data is being processed.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1236,
+      "body_end": 1774,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00010",
+      "text": "The law expects the local subsidiaries to bear responsibility when tech giants violate the norms of Russian legislation, to interact with the local state agencies, and to limit the dissemination of information that violates Russian laws in the Russian Federation.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1776,
+      "body_end": 2039,
+      "source_links": [
+        "https://roskomsvoboda.org/post/kozlovsky-o-prizemlenii/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00011",
+      "text": "3. What's so bad about that?",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2041,
+      "body_end": 2069,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00012",
+      "text": "The law introduces a fairly broad range of requirements and measures that can limit or complicate the activities of foreign technology companies in Russia. Adhering to them will create additional risks, fiscal and financial pressure connected, for instance, with opening subsidiaries in the Russian Federation.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2071,
+      "body_end": 2381,
+      "source_links": [
+        "https://236-fz.rkn.gov.ru/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00013",
+      "text": "Certainly, these requirements will simplify the interactions between regulatory bodies and foreign companies. But if full compliance with Russian laws demands expenses that are incompatible with the revenue from the local market, many foreign tech companies may simply choose to leave.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2383,
+      "body_end": 2668,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00014",
+      "text": "The law will have unexpectedly dire consequences for non-profit projects, such as Wikipedia, though they're not on the radar as the target of the regulations. First of all, the new norms demand the creation of a legal office in Russia (i.e., retain lawyers to represent companies in courts); a non-profit like Wikipedia simply doesn't have funding for this, according to its spokesperson. Secondly, if Wikipedia's Russian subsidiary requires so much personnel, it will necessitate funding from abroad, which will automatically lead to the NGO being labelled a “foreign agent,” preventing it from doing any useful work in the country.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2670,
+      "body_end": 3303,
+      "source_links": [
+        "https://globalvoices.org/2021/08/19/russian-authorities-declare-independent-election-monitor-golos-a-foreign-agent/",
+        "https://roskomsvoboda.org/post/kozlovsky-o-prizemlenii/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00015",
+      "text": "4. Why are you referring to companies as “hostages”?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3305,
+      "body_end": 3357,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00016",
+      "text": "Experts believe that Russian authorities can penalize local offices in cases where their parent companies fail to comply with various demands, for instance, failing to introduce political censorship and block posts and content that state officials find unacceptable.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3359,
+      "body_end": 3625,
+      "source_links": [
+        "https://roskomsvoboda.org/post/prizemlitelny-zakon-proshiol-1chten/",
+        "https://www.hrw.org/news/2021/12/24/russia-year-doubling-down-internet-censorship"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00017",
+      "text": "5. Who is on the list?",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3627,
+      "body_end": 3649,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00018",
+      "text": "On November 22, 2021 state regulator Roskomnadzsor published a list of technology and internet companies who fall under the new law. Currently, it includes 13 foreign companies:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3651,
+      "body_end": 3828,
+      "source_links": [
+        "https://236-fz.rkn.gov.ru/agents/list"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00019",
+      "text": "social media platforms (Meta (Facebook and Instagram), Twitter, TikTok, Likee, Pinterest);",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3830,
+      "body_end": 3920,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00020",
+      "text": "messaging services (WhatsApp, Viber, Telegram, Discord);",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3922,
+      "body_end": 3978,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00021",
+      "text": "videoconferencing service Zoom;",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3980,
+      "body_end": 4011,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00022",
+      "text": "Apple and Google services (including YouTube);",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4013,
+      "body_end": 4059,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00023",
+      "text": "streaming services Spotify and Twitch.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4061,
+      "body_end": 4099,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00024",
+      "text": "6. Has anyone already complied with the new demands?",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4101,
+      "body_end": 4153,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00025",
+      "text": "As of February 16 only Apple and Spotify have fully fulfilled the regulator's demands. Twitter has registered an official company account on Roskomnadzor's website, whereas TikTok, Likeme (Likee) and Viber have both opened company accounts with Roskomnadzor and placed electronic feedback forms on their websites. Besides this, TikTok has begun the process of creating a legal entity for an office in Russia, Likeme has forwarded the paperwork for creating a Russian legal entity, and Viber has sent evidence of opening a Russian office to Roskomnadzor (though the paperwork didn't satisfy the regulator's requirements).",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4155,
+      "body_end": 4775,
+      "source_links": [
+        "https://236-fz.rkn.gov.ru/agents/list/12",
+        "https://236-fz.rkn.gov.ru/agents/list/2",
+        "https://236-fz.rkn.gov.ru/agents/list/4",
+        "https://236-fz.rkn.gov.ru/agents/list/5",
+        "https://236-fz.rkn.gov.ru/agents/list/8",
+        "https://236-fz.rkn.gov.ru/agents/list/9",
+        "https://t.me/itduma/667",
+        "https://t.me/itduma/670",
+        "https://t.me/itduma/675"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00026",
+      "text": "Companies that have currently not fulfilled any of the new demands include Google, Meta/Facebook, Telegram, Zoom, Discord, Pinterest, and Twitch. However, Zoom has allegedly expressed their willingness to do so.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4777,
+      "body_end": 4988,
+      "source_links": [
+        "https://236-fz.rkn.gov.ru/agents/list/1",
+        "https://236-fz.rkn.gov.ru/agents/list/10",
+        "https://236-fz.rkn.gov.ru/agents/list/11",
+        "https://236-fz.rkn.gov.ru/agents/list/13",
+        "https://236-fz.rkn.gov.ru/agents/list/3",
+        "https://236-fz.rkn.gov.ru/agents/list/6",
+        "https://236-fz.rkn.gov.ru/agents/list/7",
+        "https://t.me/itduma/668"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00027",
+      "text": "Two other foreign companies — gaming platform Wargaming and online shopping giant AliExpress — are not currently on Roskomnadzor's list, but both have preemptively registered legal entities in Russia.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 4990,
+      "body_end": 5190,
+      "source_links": [
+        "http://duma.gov.ru/news/53459/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00028",
+      "text": "7. What can companies expect if they ignore the law's requirements?",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5192,
+      "body_end": 5259,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00029",
+      "text": "Based on the law's coersive measures, companies could face bans on:",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5261,
+      "body_end": 5328,
+      "source_links": [
+        "https://sozd.duma.gov.ru/bill/1176731-7#bh_note"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00030",
+      "text": "dissemination of advertising of the foreign entity and/or their online resources as the subjects of the ads;",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5330,
+      "body_end": 5438,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00031",
+      "text": "placement of advertising on the online resources of the foreign entity;",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5440,
+      "body_end": 5511,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00032",
+      "text": "appearance of foreign entity in search results;",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5513,
+      "body_end": 5560,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00033",
+      "text": "acceptance/execution of payments directed towards the online resource;",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 5562,
+      "body_end": 5632,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00034",
+      "text": "collection and transborder transmission of personal data;",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 5634,
+      "body_end": 5691,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00035",
+      "text": "as well as partial or full restriction of access to the online resource/platform.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 5693,
+      "body_end": 5774,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00036",
+      "text": "The companies will also be required to inform their users about violations of the laws of the Russian Federation.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 5776,
+      "body_end": 5889,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00037",
+      "text": "By the end of February Roskomnadzor will consider sanctions against those companies that fail to comply with the new requirements. First and foremost, this will involve economic penalties related to advertising that are meant to send a message: “If you don't want to do this the civilized way, you will lose money.” However, the State Duma (parliament) has noted that companies might also anticipate administrative sanctions, i.e. turnover-based fines (the Duma subcommittee on information policy has already developed the requisite amendments to the Code of Administrative Violations).",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 5891,
+      "body_end": 6477,
+      "source_links": [
+        "http://duma.gov.ru/news/53459/",
+        "https://t.me/itduma/673",
+        "https://t.me/webstrangler/1833"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00038",
+      "text": "8. What about the users?",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 6479,
+      "body_end": 6503,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00039",
+      "text": "If social media platforms and tech giants leave Russia, this could affect both the industry and ordinary users, as foreign corporations provide significant platforms for advertising, promotions, sales, communications, etc.",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 6505,
+      "body_end": 6727,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00040",
+      "text": "Besides, should the new requirements be ignored, the law gives Roskomnadzor yet another lever for throttling or blocking access to an online service. Online services might begin to remove mobile applications more readily, as well as take down all kinds of content and anything else Roskomnadzor requires. Internet businesses will be under even more pressure, as their options for avoiding the regulator's demands become fewer and fewer. In the end, this will strike a blow to freedom of information for everyone, including Russian users.",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 6729,
+      "body_end": 7266,
+      "source_links": [
+        "https://cepa.org/russias-social-media-self-censorship-law-is-misguided-and-the-west-must-avoid-making-the-same-mistake/",
+        "https://thebell.io/zadacha-po-prizemleniyu-chem-grozit-rossiyanam-novaya-initsiativa-roskomnadzora"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00041",
+      "text": "The balkanization of the internet has already begun, and internet services are trying to adapt to the ever-changing splintering market in different parts of the world. Videos, podcasts and even entertainment content will keep disappearing from the Russian internet in plain sight, according to our experts. At the same time, such an approach will create further demand for various circumvention technologies and tools that help restore access to information.",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 7268,
+      "body_end": 7726,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Splinternet"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00042",
+      "text": "9. Is there anything similar anywhere else in the world?",
+      "page": null,
+      "paragraph": 42,
+      "body_start": 7728,
+      "body_end": 7784,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00043",
+      "text": "Yes, the most evident example at the moment can be seen in Turkey. A number of internet companies there have yet to open their local offices (though social media giants Meta/Facebook and TikTok have complied — GV).",
+      "page": null,
+      "paragraph": 43,
+      "body_start": 7786,
+      "body_end": 8000,
+      "source_links": [
+        "https://globalvoices.org/2021/02/11/turkey-reins-in-social-media-one-platform-at-a-time/",
+        "https://theins.ru/news/246601"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00044",
+      "text": "10. Are tech companies going to exit Russia? What's the forecast?",
+      "page": null,
+      "paragraph": 44,
+      "body_start": 8002,
+      "body_end": 8067,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00045",
+      "text": "It all depends on how important the Russian market is for them. We suspect that the majority of companies will send “hostages” to the country. But the key question is not local offices, but the measures companies might take to delete all of the content that Roskomnadzor expects them to remove.",
+      "page": null,
+      "paragraph": 45,
+      "body_start": 8069,
+      "body_end": 8363,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00046",
+      "text": "Our market is fairly large and no single company seeking to grow and scale their services will voluntarily leave such vast and potentially profitable markets as Russia. However, Big Tech is facing pressure across the globe. Companies and platforms are reviewing their policies, and it remains unclear how the various national laws that restrict access to information will interact with international norms and the platforms’ own terms of service. It's quite possible that we will see some other companies leave the market, as was the case with LinkedIn and Zello.",
+      "page": null,
+      "paragraph": 46,
+      "body_start": 8365,
+      "body_end": 8928,
+      "source_links": [
+        "https://globalvoices.org/2016/10/25/russia-is-reportedly-banning-linkedin/",
+        "https://roskomsvoboda.org/post/zello-ofitsialno-zablokirovan-na-territo/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756826-b00047",
+      "text": "For more information about this topic, see our special coverage Russia invades Ukraine.",
+      "page": null,
+      "paragraph": 47,
+      "body_start": 8930,
+      "body_end": 9017,
+      "source_links": [
+        "https://globalvoices.org/special/russia-invades-ukraine/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "87e36f3872dbea310cf149a34b00e0d8946eba0a7c0d6e26650ce067dd4cb591",
+  "word_count": 1368,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 9017,
+  "retrieved_at": "2026-11-16T22:33:47.846405+00:00",
+  "raw_html_sha256": "826dc448385d9c6a56c3196be7b5b6ff35a885860e8a55d5877cea99ba116cee",
+  "resolved_source_url": "https://globalvoices.org/2022/02/21/what-does-russias-new-hostage-taking-law-mean-for-social-media-companies/",
+  "canonical_url": "https://globalvoices.org/2022/02/21/what-does-russias-new-hostage-taking-law-mean-for-social-media-companies/",
+  "source_bytes": 194972,
+  "authors": [
+    {
+      "name": "RuNet Echo",
+      "url": "https://globalvoices.org/author/runet-echo/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 756826,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "826dc448385d9c6a56c3196be7b5b6ff35a885860e8a55d5877cea99ba116cee",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-b1d0d61bcc02366294f3",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-02",
+    "eligible_month_documents": 73,
+    "selected_month_documents": 61,
+    "inclusion_probability": 0.8356164383561644,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "RuNet Echo",
+  "body_start": 482,
+  "body_end": 9499,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "2a42644aea8a4cd91562e595049a5f33879016332b69cdfcec54c65f247b29fd",
+  "text_path": "articles/gv-756826.txt",
+  "metadata_path": "metadata/gv-756826.json",
+  "attribution": "This story by RuNet Echo originally appeared on Global Voices. https://globalvoices.org/2022/02/21/what-does-russias-new-hostage-taking-law-mean-for-social-media-companies/",
+  "content_sha256": "133c24eea79f8fbea1e3ffe5fe460bb8987418e87eca62fe6ea8b409075ad31f",
+  "source_sha256": "826dc448385d9c6a56c3196be7b5b6ff35a885860e8a55d5877cea99ba116cee",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

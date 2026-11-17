@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-11-16T22:56:44.027735+00:00",
+  "status": "pass",
+  "checked": 5000,
+  "matched": 5000,
+  "errors": [],
+  "method": "Independent visible-DOM character-order comparison against frozen API content; whitespace/NFC normalization and generated blockquote markers excluded.",
+  "scope": "All selected publisher-visible text after declared media/embed exclusions; not semantic accuracy or first-edition reconstruction."
+}

@@ -1,0 +1,248 @@
+{
+  "id": "gv-740730",
+  "publisher_id": 740730,
+  "source_id": "globalvoices:740730",
+  "source_url": "https://globalvoices.org/2021/07/07/controversy-over-an-explosion-in-the-caspian-sea/",
+  "title": "Controversy over an explosion in the Caspian sea",
+  "published_at": "2021-07-07T05:55:14Z",
+  "modified_at": "2021-07-07T05:55:14Z",
+  "api_author_id": 799,
+  "api_content_sha256": "3dbab745e7edd57bd78aea3dddfcbfa55ecb483c0e8bc0135e3bf7356cd664b5",
+  "api_response_sha256": "04c471ad46c4ba40763e22a78145f065876d62cde120dfc5491f51f2c01ed3d0",
+  "api_retrieved_at": "2026-11-16T22:20:36.081334+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 79,
+      "count": 1204,
+      "name": "Azerbaijan",
+      "slug": "azerbaijan",
+      "parent": 288
+    },
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 288,
+      "count": 7347,
+      "name": "Central Asia &amp; Caucasus",
+      "slug": "central-asia-caucasus",
+      "parent": 219
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 317,
+      "count": 1323,
+      "name": "LANGUAGES",
+      "slug": "languages",
+      "parent": 0
+    },
+    {
+      "id": 238,
+      "count": 1673,
+      "name": "TOPICS",
+      "slug": "topics",
+      "parent": 0
+    },
+    {
+      "id": 218,
+      "count": 1666,
+      "name": "TYPE",
+      "slug": "type",
+      "parent": 0
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-740730-b00001",
+      "text": "A July 4 explosion in the Caspian Sea where Azerbaijan has its offshore oil and gas fields caught international attention. While officials from the State Oil Company (SOCAR) claim the blast was caused by an underwater mud volcano, the cause is still being debated and investigated. No casualties were reported.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 310,
+      "source_links": [
+        "https://edition.cnn.com/2021/07/05/world/azerbaijan-caspian-gas-platforms-safe-fire-intl-hnk/index.html",
+        "https://www.bbc.com/news/world-europe-57722236",
+        "https://www.meydan.tv/az/article/denizde-partlayis-olub/?ref=list-news",
+        "https://www.theguardian.com/world/2021/jul/05/explosion-rocks-caspian-sea-near-azerbaijan-gas-field"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-740730-b00002",
+      "text": "The mud volcanoes are common in Azerbaijan. According to The Guardian newspaper, “Scientists are uncertain as to what causes mud volcanoes to ignite, but the most likely theory is that the boulders and rocks propelled upwards during an explosion can knock against each other, causing a spark that lights gasses.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 312,
+      "body_end": 624,
+      "source_links": [
+        "https://www.theguardian.com/world/2021/jul/05/explosion-rocks-caspian-sea-near-azerbaijan-gas-field"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-740730-b00003",
+      "text": "Mark Tingay, a mud volcano expert and adjunct associate professor at Australia’s University of Adelaide said, “mud volcanoes, such as the ones in Azerbaijan, can also be plumbed into active hydrocarbon systems. And so they can erupt oil and natural gas, as well as mud.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 626,
+      "body_end": 896,
+      "source_links": [
+        "https://twitter.com/CriticalStress_/status/1411846420827557891?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-740730-b00004",
+      "text": "Not everyone agrees with the cause of the explosion. According to Mirvari Gahramanli, the head of Azerbaijan's Oil Workers’ Rights Protection Committee, the explosion took place at an old exploration site near Umid [Hope] gas field and was caused as a result of poor patchwork when sealing off the exploration site. SOCAR denied these claims. The company spokesperson Ibrahim Ahmadov said the blast took place about 10 kilometers from the Umid gas field.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 898,
+      "body_end": 1352,
+      "source_links": [
+        "https://www.azadliq.org/a/oil-explode-caspiansea-socar/31342125.html",
+        "https://www.azadliq.org/a/x%C9%99z%C9%99rd%C9%99-partlay%C4%B1%C5%9F-yan%C4%9F%C4%B1n/31340650.html",
+        "https://www.rferl.org/a/azerbaijan-caspian-fire-explosion/31341309.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-740730-b00005",
+      "text": "Azerbaijan's offshore fields are the country's main source of gas output, which it then exports to Europe. BP, which operates the country's largest oil and natural gas projects, told Bloomberg reporters its operations are continuing as normal.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1354,
+      "body_end": 1597,
+      "source_links": [
+        "https://www.bloomberg.com/news/articles/2021-07-05/massive-explosion-offshore-azerbaijan-caused-by-mud-volcano?utm_source=google&utm_medium=bd&cmpId=google&sref=zAhiqZgK"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "123dfb5b67dfdf7ec6f6c41b7054df0badf3d509ee5d7aa5033677d29fc18fe5",
+  "word_count": 255,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 1597,
+  "retrieved_at": "2026-11-16T22:31:07.243645+00:00",
+  "raw_html_sha256": "3668b7f42b4f0019733a3a18bcf605fa26c67a3b9ad8f8aac1c96c5306cbf394",
+  "resolved_source_url": "https://globalvoices.org/2021/07/07/controversy-over-an-explosion-in-the-caspian-sea/",
+  "canonical_url": "https://globalvoices.org/2021/07/07/controversy-over-an-explosion-in-the-caspian-sea/",
+  "source_bytes": 182099,
+  "authors": [
+    {
+      "name": "Arzu Geybullayeva",
+      "url": "https://globalvoices.org/author/arzu-geybullayeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 740730,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "3668b7f42b4f0019733a3a18bcf605fa26c67a3b9ad8f8aac1c96c5306cbf394",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-e2bd324ad36eddfba218",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-07",
+    "eligible_month_documents": 104,
+    "selected_month_documents": 87,
+    "inclusion_probability": 0.8365384615384616,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Arzu Geybullayeva",
+  "body_start": 437,
+  "body_end": 2034,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c2a8a799a47007f67d5131f062767bba9e97c958c69d3192b389ff0c168af63d",
+  "text_path": "articles/gv-740730.txt",
+  "metadata_path": "metadata/gv-740730.json",
+  "attribution": "This story by Arzu Geybullayeva originally appeared on Global Voices. https://globalvoices.org/2021/07/07/controversy-over-an-explosion-in-the-caspian-sea/",
+  "content_sha256": "0199acc62f1a04ebddf40d33d1e191d5f440a928f4bad293a8910082cf7af068",
+  "source_sha256": "3668b7f42b4f0019733a3a18bcf605fa26c67a3b9ad8f8aac1c96c5306cbf394",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

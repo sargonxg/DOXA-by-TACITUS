@@ -1,0 +1,490 @@
+{
+  "id": "gv-708292",
+  "publisher_id": 708292,
+  "source_id": "globalvoices:708292",
+  "source_url": "https://globalvoices.org/2020/06/04/a-possible-violation-mexicos-biggest-telecommunications-operator-is-blocking-tor-network/",
+  "title": "‘A possible violation’: Mexico's biggest telecommunications operator is blocking Tor network",
+  "published_at": "2020-06-04T14:01:13Z",
+  "modified_at": "2020-06-05T16:09:35Z",
+  "api_author_id": 1826,
+  "api_content_sha256": "0a5ce6a1d990f5a2c2f50fdd87d35730b993ba0fb147cae5bc38dae3a5766078",
+  "api_response_sha256": "36bc3d63f20a164eefbe7ce2d06bb132aa122b08a06cf13d0b9306b43d571f31",
+  "api_retrieved_at": "2026-11-16T22:20:26.326198+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 37,
+      "count": 1643,
+      "name": "Mexico",
+      "slug": "mexico",
+      "parent": 1354
+    },
+    {
+      "id": 340,
+      "count": 6258,
+      "name": "Spanish",
+      "slug": "spanish",
+      "parent": 317
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-708292-b00001",
+      "text": "Mexico is one of Latin America's most active countries on the Tor network, yet the country's most popular telecommunications operator, Telmex, has practically blocked the network's entire host system. This is what a team of researchers from the National Autonomous University of Mexico (UNAM) and the Magma project, of which the authors of this article are members, found in their recent investigations. This is a worrying finding for defenders of free speech and privacy, since it is viewed as a setback in the exercise of rights.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 531,
+      "source_links": [
+        "https://magma.lavafeld.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00002",
+      "text": "The Tor network is a free and open-source software that is used throughout the world for anonymous communication. It offers alternatives for those who wish to exercise freedom of access and speech online by maintaining their privacy and anonymity. To this end, it relies on a network of more than 6000 nodes or relays that provide a worldwide anonymous routing, also known metaphorically as “onion routing” because of the various layers that make up this network.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 533,
+      "body_end": 996,
+      "source_links": [
+        "https://community.torproject.org/relay/",
+        "https://es.wikipedia.org/wiki/Tor_(red_de_anonimato)"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00003",
+      "text": "Mexico is a country where freedom of speech is threatened, and this could thereby explain the interest in having a secure way of interacting online. In 2020, Mexico came 143 out of 180 countries in terms of press freedom, according to Reporters without Borders. Journalists and defenders of human rights often put their lives at risk by doing their job.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 998,
+      "body_end": 1351,
+      "source_links": [
+        "https://rsf.org/es/clasificacion",
+        "https://www.infobae.com/america/mexico/2019/12/29/persisten-asesinatos-contra-periodistas-y-defensores-de-derechos-humanos-en-mexico/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00004",
+      "text": "Onion routing provides anonymity by transmitting data from the websites we visit through a series of three relays, in such a manner that the final destination cannot know the connection's origin. In Mexico, there are between 10,000 and 15,000 users per day according to Tor. Civil society and communities have boosted the use of the Tor network. Its projects focus on the use of anonymous inboxes for whistleblowers in journalistic writing and human rights defense work.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1353,
+      "body_end": 1823,
+      "source_links": [
+        "https://2019.www.torproject.org/about/torusers.html.en",
+        "https://metrics.torproject.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00005",
+      "text": "In recent years, a team of academics, students and defenders of human rights have pushed for universities like UNAM or the Metropolitan Autonomous University, to work with infrastructure for the Tor network. Some view this as “digital self-defense,” or in other words, a political act of self-management to develop alternatives with communities.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1825,
+      "body_end": 2170,
+      "source_links": [
+        "https://www.cgtinformatica.org/pagina/autodefensa-digital"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00006",
+      "text": "Such involvement is reflected in the increased number of relays installed in Mexico. According to Tor network sources, this number has increased in the last three years from 1 or 2 relays to more than 20 in the most active logs. However, the number reduced significantly when Telmex began to block them.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2172,
+      "body_end": 2475,
+      "source_links": [
+        "https://metrics.torproject.org/rs.html#search/country:mx%20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00007",
+      "text": "Is Telmex blocking this network?",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2477,
+      "body_end": 2509,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00008",
+      "text": "As the team of researchers from UNAM and the Magma project documented in their analysis, Mexico's most widely used telecommunications operator, Telmex, has been blocking the Tor network.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2511,
+      "body_end": 2697,
+      "source_links": [
+        "https://magma.lavafeld.org/guide/data-analysis.html#case-study-tor-directory-authorities-censorship-in-mexico",
+        "https://magma.lavafeld.org/guide/data-analysis.html#ooni-data-analysis"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00009",
+      "text": "Telmex is a private company owned by Carlos Slim, the wealthiest man in Mexico, and is one of the largest telecommunication companies in Latin America. It offers fixed-line telephone services and is considered the “king of fixed broadband internet” in most parts of Mexico.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2699,
+      "body_end": 2972,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Telmex",
+        "https://www.businessinsider.com/carlos-slim-helu-is-mexicos-wealthiest-man-2015-7?r=US&IR=T",
+        "https://www.elfinanciero.com.mx/empresas/telmex-es-el-rey-del-internet-fijo-pero-no-en-todo-el-pais"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00010",
+      "text": "Yet, operators who are keen to continue or begin their involvement with the Tor network have been forced to find internet providers other than Telmex.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2974,
+      "body_end": 3124,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00011",
+      "text": "The first public report on the Telmex block by Tor network operators dates back to 2016. A Tor network node operator said the following in a Tor project mailing list:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3126,
+      "body_end": 3292,
+      "source_links": [
+        "https://lists.torproject.org/pipermail/tor-relays/2016-January/008491.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00012",
+      "text": "> He estado ejecutando un nodo (retransmisión sin salida) durante aproximadamente 5 años. Desde el año nuevo, noté que mi nodo se cayó, y que no apareció en los lugares habituales.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3294,
+      "body_end": 3474,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-708292-b00013",
+      "text": "> I have been running a node (non-exit relay) for around 5 years now. Since the year began, I noticed that my node had crashed and wasn't appearing in the usual places.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3476,
+      "body_end": 3644,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-708292-b00014",
+      "text": "The node operator also added that there used to be between 5 and 8 relays in Mexico, but at that time only 1 was appearing online. This report coincides with the Tor network's history logs, which show a significant fall in the number of relays between 2015 and 2017.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3646,
+      "body_end": 3912,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00015",
+      "text": "The Tor network system relies on 9 servers and 1 backup, known as “directory authorities,” which are located in Europe, the United States and Canada.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3914,
+      "body_end": 4063,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00016",
+      "text": "Telmex has blocked access to 7 of these directory authorities. Users can access the Tor network but it is not possible to install relays because it hasn't been possible to establish a stable connection with the directory authorities since 2016. These are required for the reliability of the Tor network as a whole.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4065,
+      "body_end": 4379,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00017",
+      "text": "The chart on the right shows measurements that were taken on a regular basis between January and June 2019. The measurements for the Telmex network are shown in red or brown; 7 of the 10 Tor directory authorities have been blocked.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4381,
+      "body_end": 4612,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00018",
+      "text": "The government agency charged with regulating telecommunications in Mexico, the Federal Telecommunications Institute, became formally aware of the Telmex block on 31 October 2019 through a Recommendation concerning practices that involve Net Neutrality, which its advisory board had shared. In its recommendation, the board argues that:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4614,
+      "body_end": 4950,
+      "source_links": [
+        "http://Recomendación relacionada con prácticas que afectan la Neutralidad de la Red"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00019",
+      "text": "> (…) se puede tener una posible violación al no permitir la libre elección de privacidad y anonimato que una persona pueda elegir al usar servicio de internet de determinado proveedor.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4952,
+      "body_end": 5137,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-708292-b00020",
+      "text": "> (…) by not allowing free choice of privacy or anonymity, which a person can choose by using internet services of a specific provider, there may be a possible violation.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5139,
+      "body_end": 5309,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-708292-b00021",
+      "text": "It also adds:",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5311,
+      "body_end": 5324,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00022",
+      "text": "> Como es evidente, la privacidad y la neutralidad serán letra muerta en las leyes mientras el instituto no actué de forma más proactiva.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5326,
+      "body_end": 5463,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-708292-b00023",
+      "text": "> As is evident, privacy and neutrality will be remain on paper only as long as the Institute does not act more proactively.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5465,
+      "body_end": 5589,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-708292-b00024",
+      "text": "Despite the Mexican Federal Telecommunications Law stipulating that internet providers must adhere to “Free choice, Non-discrimination, Privacy, Traffic control, Quality and Development,” sustained by the infrastructure, the Institute did not respond.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5591,
+      "body_end": 5842,
+      "source_links": [
+        "http://www.diputados.gob.mx/LeyesBiblio/pdf/LFTR_240120.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00025",
+      "text": "For their part, Telmex has denied blocking operators, on several occasions, when asked to stop doing so.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5844,
+      "body_end": 5948,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00026",
+      "text": "Within this digital framework, operators in Mexico consider the block to be a breach in the exercise of human rights. But in spite of this block, Mexico's community of node operators obtained more than 20 relays on the Tor network and subsequently set up more than 10 in the last 3 years by dealing with other internet providers. However, with Telmex being the country's most widely used provider, this measure is a difficult obstacle to overcome.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5950,
+      "body_end": 6397,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708292-b00027",
+      "text": "After the publication of this story in Spanish, Tor shared it on their Twitter account, the Mexican national press took up the news and Telmex answered by stating that “Telmex is committed to its users’ freedom of navigation”, that it does not have a policy of blocking applications and that the directory authorities were blocked because they were allegedly linked to the ransomware “WannaCry.” The researchers of this story then answered back, stating that the block existed since 2015 and continues until today, regardless of the temporary attack of “WannaCry”. They offered their help to Telmex to solve any issues.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6399,
+      "body_end": 7018,
+      "source_links": [
+        "https://es.globalvoices.org/2020/05/28/en-mexico-el-mas-grande-operador-de-telecomunicaciones-bloquea-la-internet-segura/",
+        "https://internetanonima.net/respuesta-a-telmex-sobre-la-red-tor-en-mexico/",
+        "https://www.eleconomista.com.mx/tecnologia/Telmex-bloquea-siete-de-10-accesos-a-la-red-Tor-en-Mexico-20200528-0078.html"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "99e6ec7e4a2bc9e73bf33a9578e978b36d860815a7a102d6202d8f7219a68fb1",
+  "word_count": 1146,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 5,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7018,
+  "retrieved_at": "2026-11-16T22:24:48.725946+00:00",
+  "raw_html_sha256": "7d040b3eafc8a2c06d3cd583ba8dc3681ca36da2bf8d9cbcd926b78d6419f44d",
+  "resolved_source_url": "https://globalvoices.org/2020/06/04/a-possible-violation-mexicos-biggest-telecommunications-operator-is-blocking-tor-network/",
+  "canonical_url": "https://globalvoices.org/2020/06/04/a-possible-violation-mexicos-biggest-telecommunications-operator-is-blocking-tor-network/",
+  "source_bytes": 202602,
+  "authors": [
+    {
+      "name": "Jacobo Nájera",
+      "url": "https://es.globalvoices.org/author/jacobo/"
+    },
+    {
+      "name": "Vasilis Ververis",
+      "url": "https://es.globalvoices.org/author/vasilis-ververis/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Laura",
+      "url": "https://globalvoices.org/author/laura-dunne/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 708292,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "7d040b3eafc8a2c06d3cd583ba8dc3681ca36da2bf8d9cbcd926b78d6419f44d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-7e5a9b9919de8c24f8c4",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-06",
+    "eligible_month_documents": 110,
+    "selected_month_documents": 92,
+    "inclusion_probability": 0.8363636363636363,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Jacobo Nájera; Vasilis Ververis",
+  "body_start": 556,
+  "body_end": 7574,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "70f0cfcdb54bd3e2212ceeb3712f6b02d00125835c3d771c96a66a4b4a6c44fb",
+  "text_path": "articles/gv-708292.txt",
+  "metadata_path": "metadata/gv-708292.json",
+  "attribution": "This story by Jacobo Nájera; Vasilis Ververis originally appeared on Global Voices. https://globalvoices.org/2020/06/04/a-possible-violation-mexicos-biggest-telecommunications-operator-is-blocking-tor-network/",
+  "content_sha256": "b589274ac8969cef563f8a06fd2fdb1683fce60d3e932532e5ed8dfee3ea8882",
+  "source_sha256": "7d040b3eafc8a2c06d3cd583ba8dc3681ca36da2bf8d9cbcd926b78d6419f44d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

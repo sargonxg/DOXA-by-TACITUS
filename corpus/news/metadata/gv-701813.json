@@ -1,0 +1,414 @@
+{
+  "id": "gv-701813",
+  "publisher_id": 701813,
+  "source_id": "globalvoices:701813",
+  "source_url": "https://globalvoices.org/2020/03/27/algeria-crackdown-on-dissent-persists-with-detention-of-journalists/",
+  "title": "Algeria's crackdown on dissent persists with detention of journalists",
+  "published_at": "2020-03-27T17:12:44Z",
+  "modified_at": "2020-04-26T23:34:50Z",
+  "api_author_id": 937,
+  "api_content_sha256": "e06c178ce472089c5af94c03eadbce371f9fe78cdd239fcd046041171231337d",
+  "api_response_sha256": "6400a2a69e2b1612f7bdabedd6b26a0bd74341ef3b4189d69f04207808bc2f03",
+  "api_retrieved_at": "2026-11-16T22:20:23.593459+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 87,
+      "count": 410,
+      "name": "Algeria",
+      "slug": "algeria",
+      "parent": 14
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-701813-b00001",
+      "text": "More than a year since the start of Algeria's countrywide protest movement demanding political and economic reforms, the government continues to resort to repressive tactics to silence critics and journalists covering the protests.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 231,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00002",
+      "text": "On March 15, a court in Algiers, the capital, rejected the release of journalist Sofiane Merrakchi, who has been in detention since September 2019.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 233,
+      "body_end": 380,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00003",
+      "text": "Merrakchi is a freelance journalist who works for foreign news outlets including the Beirut-based Al Mayadeen TV channel and the Qatari state-funded broadcaster Al Jazeera. He stands accused of violating the customs code for ‘’evading customs authorities while importing broadcasting equipment.’’",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 382,
+      "body_end": 678,
+      "source_links": [
+        "https://twitter.com/khaleddrareni/status/1239148680265039872"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00004",
+      "text": "According to the Committee to Protect Journalists, he risks between two and seven years in jail and a fine in the amount of the value of the equipment.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 680,
+      "body_end": 831,
+      "source_links": [
+        "https://cpj.org/2019/09/algerian-authorities-arrest-freelance-journalist-s.php"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00005",
+      "text": "According to Reporters Without Borders (RSF):",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 833,
+      "body_end": 878,
+      "source_links": [
+        "https://rsf.org/en/news/algiers-journalist-arrested-tv-channel-told-stop-working"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00006",
+      "text": "> A former Algerian public radio journalist, Merrakchi is suspected by the security services of having filmed a demonstration for Al Jazeera, whose coverage of the past few months of protests has repeatedly been criticized by the authorities. He was due to be brought before prosecutors.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 880,
+      "body_end": 1167,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-701813-b00007",
+      "text": "In a statement published on March 5, the collective of United Algerian Journalists (JAI) described the accusation against Merrakchi as a ‘’pretext’’ to ‘’silence him’’:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1169,
+      "body_end": 1337,
+      "source_links": [
+        "https://www.facebook.com/algeriepart/photos/a.1437869196290585/2836935639717260/?type=3&theater"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00008",
+      "text": "> Son arrestation, survenue dans un contexte de mise au pas totale des médias audiovisuels publics et privés, ciblait de manière précise son libre exercice du métier de journaliste. L’accusation d’infraction au code des douanes et d’utilisation d’un appareil de diffusion en direct – que toutes les chaînes TV utilisent en Algérie – dont il fait l’objet n’est qu’un prétexte pour punir le journaliste et le faire taire.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1339,
+      "body_end": 1758,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-701813-b00009",
+      "text": "> His arrest, which occurred in a context during which public and private broadcasters were being brought to heel, targeted specifically his freedom to exercise his profession as a journalist. The accusations that he violated the customs law and used a live-broadcasting device — used by all TV channels in Algeria — are but a pretext to punish and silence the journalist.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1760,
+      "body_end": 2132,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-701813-b00010",
+      "text": "Blogger and freelance reporter Abdelmoundji Khelladi has been in prison since October 2019. Security officers in civilian clothes arrested him the city of Constantine while he was covering a protest. He is accused of ”disrupting national interests and unity.”",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2134,
+      "body_end": 2393,
+      "source_links": [
+        "https://cpj.org/data/people/abdelmoundji-khelladi/index.php"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00011",
+      "text": "Prior to his arrest, Khelladi was actively reporting and commenting on politics, socio-economic conditions and the protests in Algeria through his blog and social media channels, including YouTube and Facebook. He risks two years in jail and a verdict is expected on April 1.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2395,
+      "body_end": 2670,
+      "source_links": [
+        "https://khelladiabdlmoundji.blogspot.com",
+        "https://www.elwatan.com/edition/actualite/prison-ferme-requise-contre-14-personnes-dont-dex-detenus-a-chlef-12-03-2020",
+        "https://www.youtube.com/channel/UCCsIXcECtFr7DqkEzalZczA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00012",
+      "text": "Since the start of the protests, Algerian authorities stepped up their crackdown on freedom of expression, media freedom and internet freedom. The government resorted to restricting access to networks and social media platforms, arresting journalists and imposing restrictions on media coverage of the protests.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2672,
+      "body_end": 2983,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00013",
+      "text": "The protest movement — which began on February 22, 2019, when then-president Abdelaziz Bouteflika announced his bid for a fifth term in office — continued after his resignation on April 3, 2019.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2985,
+      "body_end": 3179,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00014",
+      "text": "However, Algerians have continued to take to the streets to protest against corruption, unemployment and the country’s political elite, including after the presidential election on December 12, considered by the protesters as a an attempt to keep the old regime in power.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3181,
+      "body_end": 3452,
+      "source_links": [
+        "https://www.dw.com/en/algerian-elections-rejected-in-the-name-of-democracy/a-51507403"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00015",
+      "text": "The former prime minister and Bouteflika ally, Abdelmajid Tebboune, won that election and he was sworn in as president on December 19, 2019. On January 5, 2020, during his first cabinet meeting, Tebboune called on the government to respect press freedom. Yet, the violations continued.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3454,
+      "body_end": 3739,
+      "source_links": [
+        "https://www.aljazeera.com/news/2019/12/abdelmadjid-tebboune-algeria-president-191213161923647.html",
+        "https://www.france24.com/en/20191219-algeria-tebboune-new-president-abdelmadjid-prime-minister"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00016",
+      "text": "On March 7, journalist Khaled Drareni was arrested while covering a protest in Algiers. He was arrested for “assembly without a permit.” He was then released on March 10 after he was charged with ‘’undermining national unity’’ and placed under court supervision. He has also been banned from leaving the country and he risks ten years in jail.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3741,
+      "body_end": 4084,
+      "source_links": [
+        "https://cpj.org/2020/03/cpj-demands-algeria-release-journalist-and-rsf-cor.php",
+        "https://rsf.org/fr/actualites/rsf-adresse-une-lettre-ouverte-au-president-abelmadjid-tebboune"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00017",
+      "text": "Drareni is the founder of the online news site Casbah Tribune. He is also the correspondent of TV5 Monde and RSF. He has extensively covered the anti-regime protests since they started in February 2019. He repeatedly faced harassment from the authorities for his work.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4086,
+      "body_end": 4354,
+      "source_links": [
+        "https://rsf.org/fr/actualites/rsf-adresse-une-lettre-ouverte-au-president-abelmadjid-tebboune"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00018",
+      "text": "A day after his release, he vowed to continue his work because ”journalism is not a crime.” On March 25, a court in Algiers sentenced him prison for ”incitement” and ”attacking national unity.” The judge did not specify a term, his brother told CPJ. The journalist was once again detained on March 27.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4356,
+      "body_end": 4657,
+      "source_links": [
+        "https://cpj.org/2020/03/rsf-correspondent-khaled-drareni-sentenced-to-inde.php?fbclid=IwAR0q4Y57FN5rwsTBPpxKd_kdykWs58zqnkW3C-gt7QK-NhVaEVO10uwVAP0",
+        "https://twitter.com/khaleddrareni/status/1237848029568348160?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00019",
+      "text": "Every Friday since February 22, 2019, Algerians have been taking to the streets to protest the ruling regime throughout the country. On March 20, this was not the case as protesters opted to stay home to contain the spread of the coronavirus.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4659,
+      "body_end": 4901,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00020",
+      "text": "Algerian activists and protesters insist, however, that their protest movement is not over but only suspended for now because of the heath situation. In the meantime, the Algerian government is showing no sign of easing its crackdown.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4903,
+      "body_end": 5137,
+      "source_links": [
+        "https://twitter.com/AmelZenTv/status/1240758142809628676"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701813-b00021",
+      "text": "On March 24, opposition leader Karim Tabbou was sentenced to one year in jail and a fine of 50,000 Algerian dinars (approximately $405 United States dollars) for critiquing the role of the Algerian army in politics in videos that were published on his party's Facebook page, Amnesty International said.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5139,
+      "body_end": 5441,
+      "source_links": [
+        "https://www.amnesty.org/en/latest/news/2020/03/algeria-quash-conviction-and-sentence-against-political-leader-karim-tabbou/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "8f79c8f044ecf7ad0143ec8deccaf599e022aa8911caf670f6cf9a82449d1892",
+  "word_count": 862,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 5441,
+  "retrieved_at": "2026-11-16T22:22:55.867580+00:00",
+  "raw_html_sha256": "d622a0cf3e43d63284c2aeb4886001c3cf7e836c47c8120f7555ca355c8d9d3b",
+  "resolved_source_url": "https://globalvoices.org/2020/03/27/algeria-crackdown-on-dissent-persists-with-detention-of-journalists/",
+  "canonical_url": "https://globalvoices.org/2020/03/27/algeria-crackdown-on-dissent-persists-with-detention-of-journalists/",
+  "source_bytes": 189995,
+  "authors": [
+    {
+      "name": "Afef Abrougui",
+      "url": "https://globalvoices.org/author/afef-abrougui/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 701813,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "d622a0cf3e43d63284c2aeb4886001c3cf7e836c47c8120f7555ca355c8d9d3b",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-ada92c63f04cbcd4ac27",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-03",
+    "eligible_month_documents": 117,
+    "selected_month_documents": 98,
+    "inclusion_probability": 0.8376068376068376,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Afef Abrougui",
+  "body_start": 473,
+  "body_end": 5914,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "40f8b9d999f1dd822aff46a25e0267765102788a432ea4c199ec0704d4e42e16",
+  "text_path": "articles/gv-701813.txt",
+  "metadata_path": "metadata/gv-701813.json",
+  "attribution": "This story by Afef Abrougui originally appeared on Global Voices. https://globalvoices.org/2020/03/27/algeria-crackdown-on-dissent-persists-with-detention-of-journalists/",
+  "content_sha256": "6da422d964625c4fe77d94a78f6a368e803beb291639178d30aa9c7f53da9066",
+  "source_sha256": "d622a0cf3e43d63284c2aeb4886001c3cf7e836c47c8120f7555ca355c8d9d3b",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

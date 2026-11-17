@@ -18,6 +18,11 @@ _PROFILES = {
     "teaching": ("Teaching edition", "Explore how a reading changes with its context, speaker and analytical lens."),
 }
 _EVIDENCE_LIMITS = {"research": 100, "briefing": 25, "teaching": 50}
+_SOURCE_LIMITS = {"research": 100, "briefing": 25, "teaching": 50}
+_TYPED_FIELDS = ("criterion_id", "criterion_kind", "result", "proposition", "speech_role",
+                 "speaker_stance", "document_stance", "hypothetical", "unit_id", "source_version_id")
+_TYPED_HEADERS = ["Criterion ID", "Criterion kind", "Assessment result", "Proposition", "Speech role",
+                  "Speaker stance", "Document stance", "Hypothetical", "Source unit ID", "Source version ID"]
 _METHOD = (
     "DOXA examines statements in the supplied corpus under an explicit, versioned analytical lens. "
     "Findings are interpretive observations about text, not diagnoses of an author's beliefs or identity. "
@@ -84,9 +89,14 @@ def _prepare(snapshot: dict) -> dict:
     lenses = Counter(_string(f.get("lens_id") or "Unspecified") for f in findings)
     reviews = Counter(_string(f.get("review_status") or "unreviewed") for f in findings)
     statuses = Counter(_string(d.get("status") or "unknown") for d in documents)
+    modern = str(snapshot.get("schema_version", "")).startswith("3") or any(
+        f.get("criterion_kind") in {"indicator", "boundary", "descriptive"} for f in findings)
+    typed_counts = Counter((_string(f.get("criterion_kind") or "unknown / legacy"),
+                            _string(f.get("result") or "unknown / legacy")) for f in findings)
     return {"documents": documents, "findings": findings, "runs": runs,
             "by_id": by_id, "authors": authors, "categories": categories,
             "lenses": lenses, "reviews": reviews, "statuses": statuses,
+            "modern": modern, "typed_counts": typed_counts,
             "word_count": sum(int(_number(d.get("word_count"))) for d in documents),
             "page_count": sum(int(_number(d.get("page_count"))) for d in documents)}
 
@@ -95,16 +105,56 @@ def _source(finding: dict, data: dict) -> tuple[dict, dict, str]:
     document = data["by_id"].get(_string(finding.get("document_id")), {})
     blocks = document.get("blocks") or []
     block = next((b for b in blocks if _string(b.get("id")) == _string(finding.get("block_id"))), {})
+    locator = {**_obj(finding.get("locator")), **block}
     location = []
-    if block.get("page") is not None:
-        location.append(f"p. {block['page']}")
-    if block.get("paragraph") is not None:
-        location.append(f"paragraph {block['paragraph']}")
+    if locator.get("page") is not None:
+        location.append(f"p. {locator['page']}")
+    if locator.get("paragraph") is not None:
+        location.append(f"paragraph {locator['paragraph']}")
     if finding.get("block_id"):
         location.append(_string(finding["block_id"]))
     if finding.get("start") is not None and finding.get("end") is not None:
         location.append(f"characters {finding['start']}–{finding['end']}")
     return document, block, " · ".join(location) or "Source location unavailable"
+
+
+def _visible_sources(data: dict, findings: list[dict], limit: int) -> list[dict]:
+    """Cited sources come first so a bounded source register keeps valid links."""
+    identities = list(dict.fromkeys(_string(f.get("document_id")) for f in findings))
+    selected = [data["by_id"][identity] for identity in identities if identity in data["by_id"]]
+    seen = set(identities)
+    selected.extend(document for document in data["documents"] if _string(document.get("id")) not in seen)
+    return selected[:limit]
+
+
+def _typed_rows(finding: dict) -> list[tuple[str, str]]:
+    labels = [("Criterion", "criterion_id"), ("Criterion kind", "criterion_kind"), ("Assessment result", "result"),
+              ("Proposition", "proposition"), ("Speech role", "speech_role"), ("Speaker stance", "speaker_stance"),
+              ("Document stance", "document_stance"), ("Hypothetical example", "hypothetical")]
+    rows = []
+    for label, key in labels:
+        value = finding.get(key)
+        if value is None:
+            continue
+        if key == "hypothetical":
+            value = "Yes" if value else "No"
+        elif key not in {"criterion_id", "proposition"}:
+            value = _string(value).replace("_", " ")
+        rows.append((label, _string(value)))
+    return rows
+
+
+def _typed_summary_html(data: dict) -> str:
+    if not data["modern"]:
+        return ""
+    rows = ''.join(f'<tr><td>{_e(kind.replace("_", " "))}</td><td>{_e(result.replace("_", " "))}</td><td>{count:,}</td></tr>'
+                   for (kind, result), count in sorted(data["typed_counts"].items()))
+    return ('<section class="panel"><div class="label">Typed assessment results</div><h2>Keep the criteria distinct</h2>'
+            '<table><thead><tr><th>Criterion kind</th><th>Result</th><th>Exported assessments</th></tr></thead><tbody>' + rows +
+            '</tbody></table><p class="note">An indicator, a boundary and a descriptive criterion answer different questions. '
+            'Meeting a boundary or descriptive criterion does not establish prejudice. Unknown and legacy classifications remain explicit. '
+            'These counts describe the exported assessment selection; missing or failed assessments are not negative results. '
+            'There is no combined prejudice index.</p></section>')
 
 
 def _bars(counts: Counter, title: str, limit: int = 12) -> str:
@@ -156,7 +206,8 @@ def _coverage_summary(snapshot: dict, data: dict) -> tuple[list[tuple[str, str]]
     """Whitelist public coverage facts; telemetry dictionaries are not prose."""
     metrics = _obj(snapshot.get("metrics"))
     run = data["runs"][0] if data["runs"] else {}
-    progress = _obj(metrics.get("coverage_detail")) or _obj(run.get("progress"))
+    detail = _obj(metrics.get("coverage_detail"))
+    progress = {**_obj(run.get("progress")), **detail}
     legacy = _obj(metrics.get("coverage"))
     rows = [("Run status", _string(run.get("status") or "Not supplied").replace("_", " ")),
             ("Analysis method", "Literal word matching; no semantic interpretation" if _lexical(data) else "Model interpretations require contextual review")]
@@ -168,8 +219,16 @@ def _coverage_summary(snapshot: dict, data: dict) -> tuple[list[tuple[str, str]]
         percentage = f" ({100*done/total:.1f}%)" if total else ""
         rows.append((label, f"{done:,} of {total:,}{percentage}"))
         denominators.append(done == total and total > 0)
-    pair("Extracted blocks processed", progress.get("blocks_done", progress.get("processed_blocks")), progress.get("blocks_total", progress.get("total_blocks")))
-    pair("Extracted characters processed", progress.get("processed_characters"), progress.get("selected_characters", progress.get("source_characters")))
+    contextual = not detail.get("legacy") and progress.get("units_total") is not None
+    if contextual:
+        pair("Contextual source units assessed", progress.get("units_done", 0), progress["units_total"])
+    if not contextual:
+        pair("Extracted blocks processed", progress.get("blocks_done", progress.get("processed_blocks")), progress.get("blocks_total", progress.get("total_blocks")))
+    elif detail.get("blocks_total", detail.get("total_blocks")) is not None:
+        # V3's scheduler may use legacy `blocks_*` progress keys for unit indexes.
+        # Only explicit coverage-detail block counts establish a second basis.
+        pair("Extracted blocks processed", detail.get("blocks_done", detail.get("processed_blocks")), detail.get("blocks_total", detail.get("total_blocks")))
+    pair("Extracted characters processed", progress.get("processed_characters"), progress.get("selected_characters", progress.get("source_characters", progress.get("characters"))))
     pair("Completed chunks", legacy.get("completed_chunks"), legacy.get("total_chunks"))
     if progress.get("tasks_total") is not None:
         pair("Completed tasks", progress.get("tasks_done", 0), progress["tasks_total"])
@@ -177,7 +236,10 @@ def _coverage_summary(snapshot: dict, data: dict) -> tuple[list[tuple[str, str]]
         rows.append(("Tasks requiring attention", f'{int(_number(progress["tasks_failed"])):,}'))
     if progress.get("sampled"):
         rows.append(("Selection", "Sampled source passages; this is not a full-corpus analysis"))
-    rows.append(("Coverage basis", "Blocks count each source block once; character coverage weights text length. Percentages use their stated denominators and exclude images and unextracted content."))
+    basis = ("A contextual unit is assessed only when all its requested criteria pass validation. " if contextual else "")
+    rows.append(("Coverage basis", basis + "Blocks count each source block once; character coverage weights text length. Percentages use their stated denominators and exclude images and unextracted content."))
+    if detail.get("legacy") or metrics.get("analysis_kind") == "legacy_unclassified":
+        rows.append(("Assessment classification", "Legacy observations are unclassified under v3; historical coverage is not interpretation accuracy."))
     explicit_incomplete = any(progress.get(key) is False for key in ("complete", "selected_input_complete", "full_corpus_scan_complete"))
     incomplete = explicit_incomplete or (denominators and not all(denominators)) or run.get("status") in {"partial", "running", "queued", "failed", "cancelled", "paused_budget", "paused_model_changed"}
     if incomplete:
@@ -190,9 +252,23 @@ def _coverage_summary(snapshot: dict, data: dict) -> tuple[list[tuple[str, str]]
 
 
 def _selection_rows(snapshot: dict) -> list[tuple[str, str]]:
-    labels = {"author": "Author", "document_id": "Document", "lens_id": "Analytical lens", "category": "Category", "review_status": "Review status", "q": "Search", "run_id": "Selected run"}
+    labels = {"author": "Author", "authors": "Authors", "document_id": "Document", "document_ids": "Documents",
+              "document_types": "Document types", "batch_ids": "Import batches", "lens_id": "Analytical lens",
+              "lens_ids": "Analytical lenses", "category": "Category", "criterion_ids": "Criteria",
+              "results": "Assessment results", "speech_roles": "Speech roles", "stance": "Speaker stance",
+              "review_status": "Review status", "q": "Search", "run_id": "Selected run",
+              "date_basis": "Date basis", "from_date": "From date", "to_date": "To date", "duplicate_policy": "Duplicate policy"}
     filters = _obj(snapshot.get("filters"))
-    return [(label, _string(filters[key])) for key, label in labels.items() if filters.get(key)] or [("Selection", "All sources and observations in this saved export selection")]
+    rows = [(label, _string(snapshot[key])) for key, label in [("query_id", "Query ID"), ("scope_hash", "Scope hash"),
+             ("snapshot_id", "Snapshot ID"), ("snapshot_version", "Snapshot version")] if snapshot.get(key) is not None]
+    for key, label in labels.items():
+        value = filters.get(key)
+        if value:
+            if isinstance(value, list):
+                shown = "; ".join(map(_string, value[:12]))
+                value = shown + (f" … ({len(value):,} selected; complete scope in data exports)" if len(value) > 12 else "")
+            rows.append((label, _string(value)))
+    return rows or [("Selection", "All sources and observations in this saved export selection")]
 
 
 def _provenance_rows(snapshot: dict, run: dict) -> list[tuple[str, str]]:
@@ -244,6 +320,10 @@ def _html(snapshot: dict, data: dict) -> str:
     unreviewed = data["reviews"].get("unreviewed", 0)
     evidence_limit = _EVIDENCE_LIMITS.get(profile, 100)
     visible_findings = data["findings"][:evidence_limit]
+    source_limit = _SOURCE_LIMITS.get(profile, 100)
+    visible_sources = _visible_sources(data, visible_findings, source_limit)
+    noun = "assessments" if data["modern"] else "observations"
+    entry_label = "Assessment" if data["modern"] else "Observation"
     lexical = _lexical(data)
     run_status = _string(data["runs"][0].get("status") if data["runs"] else "not supplied").replace("_", " ")
     run_notice = f"Run status: {run_status}" + (" · incomplete source coverage" if run_status in {"partial", "failed", "cancelled", "running", "queued"} or run_status.startswith("paused") else "")
@@ -270,16 +350,18 @@ def _html(snapshot: dict, data: dict) -> str:
                 '<section id="overview" class="kpis">']
     for number, label, detail in [(len(data["documents"]), "source documents", f'{data["page_count"]:,} source pages'),
                                    (data["word_count"], "source words", "Corpus denominator"),
-                                   (len(data["findings"]), "candidate observations", "Includes all review statuses"),
+                                   (len(data["findings"]), "exported assessments" if data["modern"] else "candidate observations", "Includes all selected review statuses"),
                                    (confirmed, "confirmed by a reviewer", f"{unreviewed:,} await review")]:
         sections.append(f'<div class="kpi"><strong>{number:,}</strong><span>{_e(label)}</span><small>{_e(detail)}</small></div>')
     sections.append('</section>')
     if lexical:
         sections.append('<section class="panel"><p class="note"><strong>Literal baseline only.</strong> This report counts exact word mentions. No model performed semantic interpretation, and these mentions do not establish bias, prejudice, endorsement or an author’s beliefs.</p></section>')
+    sections.append(_typed_summary_html(data))
     if profile == "briefing":
         largest = data["categories"].most_common(1)
-        top = (f'The most frequent candidate category is “{largest[0][0].replace("_", " ")}”, with {largest[0][1]:,} observations.' if largest else 'No candidate observations match this selection.')
-        sections.append(f'<section class="panel"><div class="label">At a glance</div><h2>The briefing</h2><p>{_e(top)} {_e(f"{confirmed:,} observations are confirmed by a reviewer; {unreviewed:,} remain unreviewed.")}</p><p class="note">Next review priority: examine unreviewed quotations alongside their surrounding text and speaker attribution. The evidence ledger and method appendix below preserve the complete basis for this briefing.</p></section>')
+        count_label = noun[:-1] if largest and largest[0][1] == 1 else noun
+        top = (f'The most frequent exported category is “{largest[0][0].replace("_", " ")}”, with {largest[0][1]:,} {count_label}.' if largest else f'No {noun} match this selection.')
+        sections.append(f'<section class="panel"><div class="label">At a glance</div><h2>The briefing</h2><p>{_e(top)} {_e(f"{confirmed:,} observations are confirmed by a reviewer; {unreviewed:,} remain unreviewed.")}</p><p class="note">Next review priority: examine unreviewed quotations alongside their surrounding text and speaker attribution. The appendices below preserve reviewable examples; complete data exports retain the full selection.</p></section>')
     sections.append('<div class="grid"><section class="panel"><div class="label">Patterns in this selection</div><h2>What the corpus surfaces</h2>' + _bars(data["categories"], "Observations by category") + '</section><section class="panel"><div class="label">Interpretation & accountability</div><h2>Read with context</h2>')
     sections.append(_bars(data["reviews"], "Observations by review status"))
     sections.append('<p class="note">An observation is a candidate reading of a specific passage. Review its quotation, speaker, lens and alternative before drawing a conclusion.</p></section></div>')
@@ -289,22 +371,25 @@ def _html(snapshot: dict, data: dict) -> str:
     sections.append('</div><div>' + _table_html(coverage_rows) + f'<p class="note">{_e(coverage_notice)}</p></div></div></section>')
     if profile == "teaching":
         sections.append('<section class="panel teaching"><h2>A reading exercise</h2><p>For each passage: identify who is speaking; distinguish a quotation from endorsement; state the lens being applied; write a plausible alternative; then compare with the supplied interpretation. A disagreement can reveal a methodological choice rather than an error.</p></section>')
-    sections.append('<section class="panel"><div class="label">Authorship in the supplied corpus</div><h2>Patterns by author</h2><table><thead><tr><th>Author</th><th>Documents</th><th>Words</th><th>Observations</th><th>Confirmed</th></tr></thead><tbody>')
-    for author, count in sorted(data["authors"].items(), key=lambda x: (-x[1]["findings"], x[0])):
+    sections.append(f'<section class="panel"><div class="label">Authorship in the supplied corpus</div><h2>Patterns by author</h2><table><thead><tr><th>Author</th><th>Documents</th><th>Words</th><th>{"Assessments" if data["modern"] else "Observations"}</th><th>Confirmed</th></tr></thead><tbody>')
+    author_rows = sorted(data["authors"].items(), key=lambda x: (-x[1]["findings"], x[0]))
+    for author, count in author_rows[:source_limit]:
         sections.append(f'<tr><td>{_e(author)}</td><td>{count["documents"]}</td><td>{count["words"]:,}</td><td>{count["findings"]}</td><td>{count["confirmed"]}</td></tr>')
-    sections.append('</tbody></table><p class="muted">Attribution uses supplied document metadata. These counts describe analyzed passages and do not establish an author’s private beliefs.</p></section>')
-    sections.append('<section class="panel" id="evidence"><div class="label">The evidence ledger</div><h2>Every observation has a source</h2>')
+    sections.append(f'</tbody></table><p class="muted">Showing {min(source_limit, len(author_rows)):,} of {len(author_rows):,} authors. Complete author counts remain in XLSX. Attribution uses supplied document metadata; counts do not establish an author’s private beliefs.</p></section>')
+    sections.append(f'<section class="panel" id="evidence"><div class="label">The evidence ledger</div><h2>Every {entry_label.lower()} has a source</h2>')
     if len(data["findings"]) > evidence_limit:
-        sections.append(f'<p class="note"><strong>Showing {len(visible_findings):,} of {len(data["findings"]):,} observations.</strong> The {_e(profile)} edition limits its evidence appendix to {evidence_limit:,} entries for readable printing. All charts and totals above describe the full selected snapshot. Export XLSX, CSV or JSONL for complete evidence, or apply a narrower document, lens or review filter before exporting.</p>')
+        sections.append(f'<p class="note"><strong>Showing {len(visible_findings):,} of {len(data["findings"]):,} {noun}.</strong> The {_e(profile)} edition limits its evidence appendix to {evidence_limit:,} entries for readable printing. All charts and totals above describe the full selected snapshot. Export XLSX, CSV or JSONL for complete evidence, or apply a narrower document, lens or review filter before exporting.</p>')
     if not data["findings"]:
         sections.append('<p>No observations match this export selection. This does not establish the absence of relevant discourse.</p>')
     for index, finding in enumerate(visible_findings, 1):
         document, block, location = _source(finding, data)
         status = finding.get("review_status") or "unreviewed"
-        sections.append(f'<article class="finding"><div class="label">Observation {index:03d}</div><h3>{_e(finding.get("title") or finding.get("category") or "Passage observation")}</h3>')
+        sections.append(f'<article class="finding"><div class="label">{entry_label} {index:03d}</div><h3>{_e(finding.get("title") or finding.get("category") or "Passage observation")}</h3>')
         for value in [finding.get("lens_id"), finding.get("category"), finding.get("stance"), status]:
             if value:
                 sections.append(f'<span class="chip{" warn" if value == "unreviewed" else ""}">{_e(value)}</span>')
+        if data["modern"]:
+            sections.append(_table_html(_typed_rows(finding)))
         sections.append(f'<blockquote>{_e(finding.get("quote"))}</blockquote><p class="citation"><a href="#{_anchor(finding.get("document_id"))}">{_e(document.get("title") or document.get("filename") or finding.get("document_id"))}</a> · {_e(document.get("author") or "Unknown author")} · {_e(location)}</p>')
         sections.append(f'<p><span class="label">Interpretation</span><br>{_e(finding.get("explanation") or "No interpretation supplied.")}</p>')
         sections.append(f'<div class="alternative"><span class="label">Alternative reading</span><p>{_e(finding.get("alternative") or "No alternative supplied; consider the broader context during review.")}</p></div>')
@@ -325,7 +410,8 @@ def _html(snapshot: dict, data: dict) -> str:
             sections.append('<div class="teaching"><span class="label">Discussion prompt</span><p>Which words support this reading? Whose voice do they represent? What changes when the surrounding passage is included? Compare the interpretation and alternative before proposing your own.</p></div>')
         sections.append('</article>')
     sections.append('</section><section class="panel" id="sources"><div class="label">Source register</div><h2>The corpus behind the reading</h2>')
-    for document in data["documents"]:
+    sections.append(f'<p class="note"><strong>Showing {len(visible_sources):,} of {len(data["documents"]):,} source entries.</strong> The {_e(profile)} edition limits this register to {source_limit:,} entries. Sources cited in displayed evidence appear first. XLSX and JSONL retain the complete source register; the v3 CSV also includes every source as a document record.</p>')
+    for document in visible_sources:
         metadata = _obj(document.get("metadata") or document.get("metadata_json"))
         warnings = document.get("extraction_warnings") or metadata.get("extraction_warnings") or []
         sections.append(f'<article class="document" id="{_anchor(document.get("id"))}"><h3>{_e(document.get("title") or document.get("filename"))}</h3><p class="muted">{_e(document.get("author") or "Unknown")} · {_e(document.get("document_type") or "document")} · {_e(document.get("published_at") or "Date not supplied")} · {int(_number(document.get("word_count"))):,} words · {_e(document.get("status") or "unknown")}</p>')
@@ -360,6 +446,7 @@ def _spreadsheet(snapshot: dict, data: dict, destination: Path):
         body = workbook.add_format({"font_name": "Aptos", "font_size": 10, "text_wrap": True, "valign": "top", "font_color": "#27453D"})
         alternate = workbook.add_format({"font_name": "Aptos", "font_size": 10, "text_wrap": True, "valign": "top", "bg_color": "#F1F5EF", "font_color": "#27453D"})
         number = workbook.add_format({"num_format": "#,##0", "font_color": "#1F7A70", "font_size": 12})
+        decimal = workbook.add_format({"num_format": "0.0", "font_color": "#1F7A70", "font_size": 12})
         money = workbook.add_format({"num_format": "$0.0000", "font_color": "#1F7A70"})
         sheets = {name: workbook.add_worksheet(name) for name in ("Overview", "Documents", "Findings", "Evidence", "Authors", "Lenses", "Runs", "Methodology")}
         for sheet in sheets.values():
@@ -398,7 +485,7 @@ def _spreadsheet(snapshot: dict, data: dict, destination: Path):
                     for column, chunks in enumerate(cells):
                         value = chunks[part] if part < len(chunks) else ""
                         if isinstance(value, (int, float)):
-                            sheet.write_number(row_index, column, value, money if name == "Runs" and column == 8 else number)
+                            sheet.write_number(row_index, column, value, money if name == "Runs" and column in {8, 10} else number)
                         else:
                             sheet.write_string(row_index, column, value, fmt)
                     sheet.write_string(row_index, len(headers), f"{part+1}/{parts}", fmt)
@@ -408,32 +495,37 @@ def _spreadsheet(snapshot: dict, data: dict, destination: Path):
             return first_rows
 
         documents = data["documents"]
-        doc_headers = ["Document ID", "Title", "Author", "Institution", "Type", "Published", "Status", "Words", "Pages", "Filename", "SHA-256", "Source reference", "License", "Extraction warnings / error", "Attribution", "License reference", "Rights and source scope"]
+        doc_headers = ["Document ID", "Title", "Author", "Institution", "Type", "Published", "Status", "Words", "Pages", "Filename", "SHA-256", "Source reference", "License", "Extraction warnings / error", "Attribution", "License reference", "Rights and source scope", "Metadata JSON", "Source record JSON (without blocks)"]
         doc_rows = []
         for doc in documents:
             meta = _obj(doc.get("metadata") or doc.get("metadata_json"))
-            doc_rows.append([doc.get("id"), doc.get("title"), doc.get("author"), doc.get("institution"), doc.get("document_type"), doc.get("published_at"), doc.get("status"), int(_number(doc.get("word_count"))), int(_number(doc.get("page_count"))), doc.get("filename"), doc.get("sha256"), doc.get("source_url"), doc.get("license"), doc.get("extraction_warnings") or meta.get("extraction_warnings") or doc.get("error"), doc.get("attribution") or meta.get("attribution"), doc.get("license_url") or meta.get("license_url"), doc.get("rights_notes") or meta.get("rights_notes")])
+            doc_rows.append([doc.get("id"), doc.get("title"), doc.get("author"), doc.get("institution"), doc.get("document_type"), doc.get("published_at"), doc.get("status"), int(_number(doc.get("word_count"))), int(_number(doc.get("page_count"))), doc.get("filename"), doc.get("sha256"), doc.get("source_url"), doc.get("license"), doc.get("extraction_warnings") or meta.get("extraction_warnings") or doc.get("error"), doc.get("attribution") or meta.get("attribution"), doc.get("license_url") or meta.get("license_url"), doc.get("rights_notes") or meta.get("rights_notes"), meta, {key: value for key, value in doc.items() if key != "blocks"}])
         doc_lines = table("Documents", doc_headers, doc_rows, {1: 48, 10: 30, 11: 40, 13: 60})
         doc_link = {_string(doc.get("id")): row for doc, row in zip(documents, doc_lines)}
-        fheaders = ["Finding ID", "Document ID", "Source title", "Author", "Observation", "Category", "Lens", "Review status", "Stance", "Speaker", "Attribution", "Model assessment (uncalibrated)", "Exact quote", "Interpretation", "Alternative reading", "Reviewer note", "Block", "Start", "End", "Run ID", "Source row"]
+        fheaders = ["Finding ID", "Document ID", "Source title", "Author", "Observation", "Category", "Lens", "Review status", "Stance", "Speaker", "Attribution", "Model assessment (uncalibrated)", "Exact quote", "Interpretation", "Alternative reading", "Reviewer note", "Block", "Start", "End", "Run ID", "Source row"] + _TYPED_HEADERS
         frows, erows = [], []
         for finding in data["findings"]:
             doc, block, location = _source(finding, data)
-            frows.append([finding.get("id"), finding.get("document_id"), doc.get("title"), doc.get("author"), finding.get("title"), finding.get("category"), finding.get("lens_id"), finding.get("review_status"), finding.get("stance"), finding.get("speaker"), finding.get("attribution"), finding.get("certainty"), finding.get("quote"), finding.get("explanation"), finding.get("alternative"), finding.get("review_note"), finding.get("block_id"), finding.get("start"), finding.get("end"), finding.get("run_id"), "Source"])
-            erows.append([finding.get("id"), finding.get("document_id"), doc.get("title"), location, finding.get("quote"), block.get("text") or finding.get("source_context") or "Context not supplied in snapshot", finding.get("alternative"), finding.get("lens_id"), finding.get("review_status"), doc.get("sha256")])
+            typed = [finding.get(key) for key in _TYPED_FIELDS]
+            frows.append([finding.get("id"), finding.get("document_id"), doc.get("title"), doc.get("author"), finding.get("title"), finding.get("category"), finding.get("lens_id"), finding.get("review_status"), finding.get("stance"), finding.get("speaker"), finding.get("attribution"), finding.get("certainty"), finding.get("quote"), finding.get("explanation"), finding.get("alternative"), finding.get("review_note"), finding.get("block_id"), finding.get("start"), finding.get("end"), finding.get("run_id"), "Source", *typed])
+            erows.append([finding.get("id"), finding.get("document_id"), doc.get("title"), location, finding.get("quote"), block.get("text") or finding.get("source_context") or finding.get("context") or "Context not supplied in snapshot", finding.get("alternative"), finding.get("lens_id"), finding.get("review_status"), doc.get("sha256"), *typed])
         flines = table("Findings", fheaders, frows, {4: 38, 12: 70, 13: 70, 14: 70, 15: 45})
         for finding, row in zip(data["findings"], flines):
             target = doc_link.get(_string(finding.get("document_id")))
             if target is not None:
                 sheets["Findings"].write_url(row, 20, f"internal:'Documents'!A{target+1}", body, string="Open source record")
-        table("Evidence", ["Finding ID", "Document ID", "Source title", "Location", "Exact quote", "Source context", "Alternative reading", "Lens", "Review status", "Source SHA-256"], erows, {2: 48, 3: 40, 4: 80, 5: 100, 6: 65})
+        table("Evidence", ["Finding ID", "Document ID", "Source title", "Location", "Exact quote", "Source context", "Alternative reading", "Lens", "Review status", "Source SHA-256"] + _TYPED_HEADERS, erows, {2: 48, 3: 40, 4: 80, 5: 100, 6: 65})
         arows = [[author, counts["documents"], counts["words"], counts["findings"], counts["confirmed"], round(counts["findings"] / counts["words"] * 10000, 3) if counts["words"] else "Not available"] for author, counts in sorted(data["authors"].items(), key=lambda x: (-x[1]["findings"], x[0]))]
-        table("Authors", ["Author", "Documents", "Words", "Candidate observations", "Confirmed", "Candidates per 10k source words"], arows, {0: 38, 5: 30})
+        table("Authors", ["Author", "Documents", "Words", "Exported assessments" if data["modern"] else "Candidate observations", "Confirmed", "Assessments per 10k source words" if data["modern"] else "Candidates per 10k source words"], arows, {0: 38, 5: 30})
         lens_rows = [[lens, count, sum(f.get("review_status") in {"confirmed", "accepted"} for f in data["findings"] if _string(f.get("lens_id") or "Unspecified") == lens)] for lens, count in data["lenses"].most_common()]
-        table("Lenses", ["Lens ID", "Candidate observations", "Confirmed"], lens_rows, {0: 45})
-        rheaders = ["Run ID", "Status", "Created", "Completed", "Model profile", "Configuration", "Coverage / progress", "Token usage", "Recorded spend (USD)", "Errors"]
-        table("Runs", rheaders, [[r.get("id"), r.get("status"), r.get("created_at"), r.get("completed_at"), r.get("model_profile"), r.get("config"), r.get("progress"), r.get("usage"), _number(r.get("spent_usd")), r.get("errors") or r.get("errors_json")] for r in data["runs"]], {4: 70, 5: 80, 6: 60, 7: 45, 9: 60})
+        table("Lenses", ["Lens ID", "Exported assessments" if data["modern"] else "Candidate observations", "Confirmed"], lens_rows, {0: 45})
+        rheaders = ["Run ID", "Status", "Created", "Completed", "Model profile", "Configuration", "Coverage / progress", "Token usage", "Budget accounted spend (USD)", "Errors", "Provider inference cost (USD; blank if unknown)"]
+        table("Runs", rheaders, [[r.get("id"), r.get("status"), r.get("created_at"), r.get("completed_at"), r.get("model_profile"), r.get("config"), r.get("progress"), r.get("usage"), r.get("spent_usd"), r.get("errors") or r.get("errors_json"), r["usage"].get("cost_usd")] for r in data["runs"]], {4: 70, 5: 80, 6: 60, 7: 45, 9: 60, 10: 32})
         method_rows = [["Interpretation", _METHOD], ["Edition", snapshot.get("profile", "research")], ["Generated", snapshot.get("generated_at")], ["Project", snapshot.get("project")], ["Export filters", snapshot.get("filters", {})], ["Metrics / coverage", snapshot.get("metrics", {})], ["Workbook safety", "All source strings are literal cell values, never formulas. Long values continue across rows with the Part column. Source hyperlinks point only to this workbook."], ["Denominators", "Author rates use source words. They include all exported candidate observations regardless of review status, and do not establish ideology or private belief."], ["Comparability", "Compare runs only when corpus selection, extraction, lenses and model profiles are held constant or their differences are disclosed."]]
+        method_rows.extend(_selection_rows(snapshot))
+        if data["modern"]:
+            method_rows.append(["Typed assessment counts", [{"criterion_kind": kind, "result": result, "count": count} for (kind, result), count in sorted(data["typed_counts"].items())]])
+            method_rows.append(["Typed interpretation", "Indicator, boundary and descriptive criteria remain separate. Counts describe this exported selection, not a combined prejudice index. Missing or failed assessments do not establish absence."])
         table("Methodology", ["Topic", "Details"], method_rows, {0: 30, 1: 120})
         overview = sheets["Overview"]
         overview.set_column("A:A", 38)
@@ -443,23 +535,29 @@ def _spreadsheet(snapshot: dict, data: dict, destination: Path):
         overview.merge_range("A4:K4", _string((snapshot.get("project") or {}).get("name") or "Corpus analysis"), title)
         overview.merge_range("A6:K6", _PROFILES.get(snapshot.get("profile"), _PROFILES["research"])[0] + " · " + _string(snapshot.get("generated_at")), body)
         overview.write_row(8, 0, ["Measure", "Value"], heading)
-        overview_rows = [("Source documents", len(documents)), ("Source words", data["word_count"]), ("Source pages", data["page_count"]), ("Candidate observations", len(data["findings"])), ("Confirmed by reviewer", sum(data["reviews"].get(x, 0) for x in ("confirmed", "accepted"))), ("Awaiting review", data["reviews"].get("unreviewed", 0))]
+        overview_rows = [("Source documents", len(documents)), ("Source words", data["word_count"]), ("Source pages", data["page_count"]), ("Exported assessments" if data["modern"] else "Candidate observations", len(data["findings"])), ("Confirmed by reviewer", sum(data["reviews"].get(x, 0) for x in ("confirmed", "accepted"))), ("Awaiting review", data["reviews"].get("unreviewed", 0))]
+        coverage = _obj(_obj(snapshot.get("metrics")).get("coverage_detail"))
+        if not coverage.get("legacy") and coverage.get("units_total") is not None:
+            overview_rows.extend([("Contextual source units selected", int(_number(coverage["units_total"]))),
+                                  ("Contextual source units assessed", int(_number(coverage.get("units_done")))),
+                                  ("Contextual unit coverage (%)", 100 * _number(coverage.get("units_done")) / _number(coverage["units_total"]) if _number(coverage["units_total"]) else 0)])
         for row, (label, value) in enumerate(overview_rows, 9):
             overview.write_string(row, 0, label, body)
-            overview.write_number(row, 1, value, number)
-        overview.write_row(17, 0, ["Category", "Candidates"], heading)
-        for row, (label, count) in enumerate(data["categories"].most_common(), 18):
+            overview.write_number(row, 1, value, decimal if label.endswith("(%)") else number)
+        category_row = max(17, 11 + len(overview_rows))
+        overview.write_row(category_row, 0, ["Category", "Candidates"], heading)
+        for row, (label, count) in enumerate(data["categories"].most_common(), category_row + 1):
             overview.write_string(row, 0, label, body)
             overview.write_number(row, 1, count, number)
         if data["categories"]:
             chart = workbook.add_chart({"type": "bar"})
-            chart.add_series({"name": "Candidate observations", "categories": ["Overview", 18, 0, 17+len(data["categories"]), 0], "values": ["Overview", 18, 1, 17+len(data["categories"]), 1], "fill": {"color": "#1F7A70"}, "border": {"none": True}, "data_labels": {"value": True}})
+            chart.add_series({"name": "Exported assessments" if data["modern"] else "Candidate observations", "categories": ["Overview", category_row + 1, 0, category_row + len(data["categories"]), 0], "values": ["Overview", category_row + 1, 1, category_row + len(data["categories"]), 1], "fill": {"color": "#1F7A70"}, "border": {"none": True}, "data_labels": {"value": True}})
             chart.set_title({"name": "Patterns in this corpus"})
             chart.set_legend({"none": True})
             chart.set_chartarea({"border": {"none": True}, "fill": {"color": "#FFFEF8"}})
             chart.set_x_axis({"major_gridlines": {"visible": False}, "min": 0})
             overview.insert_chart("D9", chart, {"x_scale": 1.4, "y_scale": 1.3})
-        review_row = max(20 + len(data["categories"]), 30)
+        review_row = max(category_row + len(data["categories"]) + 3, 30)
         overview.write_row(review_row, 0, ["Review status", "Candidates"], heading)
         for row, (label, count) in enumerate(data["reviews"].most_common(), review_row+1):
             overview.write_string(row, 0, label, body)
@@ -470,7 +568,15 @@ def _spreadsheet(snapshot: dict, data: dict, destination: Path):
             chart.set_title({"name": "Review accountability"})
             chart.set_chartarea({"border": {"none": True}})
             overview.insert_chart("D31", chart, {"x_scale": 1.4})
-        overview.merge_range(review_row+len(data["reviews"])+3, 0, review_row+len(data["reviews"])+7, 1, "Candidate observations require contextual interpretation. Read Evidence and Methodology before drawing conclusions. All counts are computed from this export's source snapshot.", body)
+        next_row = review_row + len(data["reviews"]) + 3
+        if data["modern"]:
+            overview.write_row(next_row, 0, ["Criterion kind", "Assessment result", "Exported assessments"], heading)
+            for row, ((kind, result), count) in enumerate(sorted(data["typed_counts"].items()), next_row + 1):
+                overview.write_string(row, 0, kind, body)
+                overview.write_string(row, 1, result, body)
+                overview.write_number(row, 2, count, number)
+            next_row += len(data["typed_counts"]) + 3
+        overview.merge_range(next_row, 0, next_row+4, 1, "Candidate observations require contextual interpretation. Read Evidence and Methodology before drawing conclusions. Indicator, boundary and descriptive criteria remain distinct. All counts are computed from this export's source snapshot.", body)
         overview.freeze_panes(8, 0)
 
 
@@ -530,7 +636,7 @@ def _pdf_fallback(snapshot: dict, data: dict, destination: Path):
     if _lexical(data):
         paragraph("LITERAL BASELINE ONLY: exact word mentions. No semantic interpretation was performed. Mentions do not establish bias, prejudice, endorsement or an author's beliefs.")
     story.append(Spacer(1, 12))
-    stats = [["DOCUMENTS", "SOURCE WORDS", "OBSERVATIONS", "CONFIRMED"], [str(len(data["documents"])), f'{data["word_count"]:,}', str(len(data["findings"])), str(sum(data["reviews"].get(x, 0) for x in ("confirmed", "accepted")))]]
+    stats = [["DOCUMENTS", "SOURCE WORDS", "ASSESSMENTS" if data["modern"] else "OBSERVATIONS", "CONFIRMED"], [str(len(data["documents"])), f'{data["word_count"]:,}', str(len(data["findings"])), str(sum(data["reviews"].get(x, 0) for x in ("confirmed", "accepted")))]]
     table = Table(stats, colWidths=[43*mm]*4)
     table.setStyle(TableStyle([("BACKGROUND", (0,0), (-1,0), colors.HexColor("#173C39")), ("TEXTCOLOR",(0,0),(-1,0),colors.white), ("BACKGROUND",(0,1),(-1,1),colors.HexColor("#EDF2E9")), ("FONTSIZE",(0,0),(-1,0),8), ("FONTSIZE",(0,1),(-1,1),19), ("TOPPADDING",(0,0),(-1,-1),10), ("BOTTOMPADDING",(0,0),(-1,-1),10)]))
     story.append(table)
@@ -547,31 +653,43 @@ def _pdf_fallback(snapshot: dict, data: dict, destination: Path):
             chart.add(String(196+length, y+6, str(count), fontName=font, fontSize=9, fillColor=colors.HexColor("#173C39")))
         story.append(chart)
     for label, count in data["categories"].most_common():
-        paragraph(f"{label.replace('_', ' ')}: {count} candidate observations")
+        paragraph(f"{label.replace('_', ' ')}: {count} " + ("exported assessments" if data["modern"] else "candidate observations"))
     paragraph("Coverage and limitations", "Heading2")
     coverage_rows, coverage_notice = _coverage_summary(snapshot, data)
     for label, value in coverage_rows:
         paragraph(f"{label}: {value}")
     paragraph(coverage_notice)
+    if data["modern"]:
+        paragraph("Typed assessment results", "Heading2")
+        for (kind, result), count in sorted(data["typed_counts"].items()):
+            paragraph(f"{kind.replace('_', ' ')} · {result.replace('_', ' ')}: {count:,} exported assessments")
+        paragraph("Indicator, boundary and descriptive criteria answer different questions. Meeting a boundary or descriptive criterion does not establish prejudice. Unknown and legacy classifications remain explicit. Counts describe the exported assessment selection; missing or failed assessments are not negative results. There is no combined prejudice index.")
     paragraph("Evidence ledger", "Heading2")
     evidence_limit = _EVIDENCE_LIMITS.get(snapshot.get("profile", "research"), 100)
     visible_findings = data["findings"][:evidence_limit]
     if len(data["findings"]) > evidence_limit:
-        paragraph(f"Showing {len(visible_findings):,} of {len(data['findings']):,} observations. This edition limits its evidence appendix for readable printing. All charts and totals describe the full selected snapshot. Export XLSX, CSV or JSONL for complete evidence, or apply a narrower export filter.")
+        noun = "assessments" if data["modern"] else "observations"
+        paragraph(f"Showing {len(visible_findings):,} of {len(data['findings']):,} {noun}. This edition limits its evidence appendix for readable printing. All charts and totals describe the full selected snapshot. Export XLSX, CSV or JSONL for complete evidence, or apply a narrower export filter.")
     for index, finding in enumerate(visible_findings, 1):
         document, block, location = _source(finding, data)
         paragraph(f"{index:03d} / {finding.get('title') or finding.get('category') or 'Passage observation'}", "Heading3")
         paragraph(f"Lens: {finding.get('lens_id') or 'Unspecified'} · Review: {finding.get('review_status') or 'unreviewed'} · Stance: {finding.get('stance') or 'unspecified'}")
+        if data["modern"]:
+            for label, value in _typed_rows(finding):
+                paragraph(f"{label}: {value}")
         paragraph(finding.get("quote"), "DoxaQuote")
         paragraph(f"Source: {document.get('title') or document.get('filename') or finding.get('document_id')} · {document.get('author') or 'Unknown author'} · {location}")
         paragraph("Interpretation: " + _string(finding.get("explanation")))
         paragraph("Alternative reading: " + _string(finding.get("alternative") or "Not supplied; review source context."))
         paragraph(f"Speaker: {finding.get('speaker') or 'Unspecified'} · Attribution: {finding.get('attribution') or 'Unspecified'} · Model assessment (uncalibrated): {finding.get('certainty') or 'Not supplied'}")
-        paragraph("Source context: " + _string(block.get("text") or finding.get("source_context") or "Not supplied in snapshot."))
+        paragraph("Source context: " + _string(block.get("text") or finding.get("source_context") or finding.get("context") or "Not supplied in snapshot."))
         if finding.get("review_note"):
             paragraph("Reviewer note: " + _string(finding["review_note"]))
     paragraph("Source register", "Heading2")
-    for document in data["documents"]:
+    source_limit = _SOURCE_LIMITS.get(snapshot.get("profile", "research"), 100)
+    visible_sources = _visible_sources(data, visible_findings, source_limit)
+    paragraph(f"Showing {len(visible_sources):,} of {len(data['documents']):,} source entries. This edition limits its register to {source_limit:,} entries. Sources cited in displayed evidence appear first. XLSX and JSONL retain the complete register; the v3 CSV also includes every source as a document record.")
+    for document in visible_sources:
         metadata = _obj(document.get("metadata") or document.get("metadata_json"))
         paragraph(document.get("title") or document.get("filename"), "Heading3")
         paragraph(f"{document.get('author') or 'Unknown'} · {document.get('document_type') or 'document'} · {document.get('status') or 'unknown'} · {_number(document.get('word_count')):,.0f} words")
@@ -629,19 +747,48 @@ def build_report(snapshot: dict, format: str, output_dir: Path) -> Path:
                 _pdf_fallback(snapshot, data, path)
         elif format == "csv":
             headers = ["id", "document_id", "source_title", "author", "lens_id", "category", "review_status", "stance", "speaker", "attribution", "certainty", "title", "quote", "explanation", "alternative", "block_id", "start", "end", "run_id", "source_context", "source_sha256", "location", "source_license", "source_attribution", "source_license_url", "source_rights_notes"]
+            headers += [*_TYPED_FIELDS, "record_type", "query_id", "scope_hash", "snapshot_id", "snapshot_version",
+                        "source_institution", "source_type", "source_published_at", "source_filename", "source_url",
+                        "source_status", "source_word_count", "source_metadata", "source_record"]
             with path.open("w", encoding="utf-8-sig", newline="") as stream:
                 writer = csv.writer(stream)
                 writer.writerow(headers)
-                for finding in data["findings"]:
-                    document, block, location = _source(finding, data)
+
+                def write(document, finding=None):
+                    finding = finding or {}
+                    _, block, location = _source(finding, data)
                     metadata = _obj(document.get("metadata") or document.get("metadata_json"))
-                    record = {**finding, "source_title": document.get("title"), "author": document.get("author"), "source_context": block.get("text") or finding.get("source_context"), "source_sha256": document.get("sha256"), "location": location, "source_license": document.get("license"), "source_attribution": document.get("attribution") or metadata.get("attribution"), "source_license_url": document.get("license_url") or metadata.get("license_url"), "source_rights_notes": document.get("rights_notes") or metadata.get("rights_notes")}
+                    record = {**finding, "source_title": document.get("title"), "author": document.get("author"),
+                              "source_context": block.get("text") or finding.get("source_context") or finding.get("context"),
+                              "source_sha256": document.get("sha256"), "location": location if finding else "",
+                              "source_license": document.get("license"), "source_attribution": document.get("attribution") or metadata.get("attribution"),
+                              "source_license_url": document.get("license_url") or metadata.get("license_url"),
+                              "source_rights_notes": document.get("rights_notes") or metadata.get("rights_notes"),
+                              "record_type": "assessment" if finding and data["modern"] else "finding" if finding else "document",
+                              "source_institution": document.get("institution"), "source_type": document.get("document_type"),
+                              "source_published_at": document.get("published_at"), "source_filename": document.get("filename"),
+                              "source_url": document.get("source_url"), "source_status": document.get("status"),
+                              "source_word_count": document.get("word_count"), "source_metadata": metadata,
+                              "source_record": {key: value for key, value in document.items() if key != "blocks"}}
+                    record.update({key: snapshot.get(key) for key in ("query_id", "scope_hash", "snapshot_id", "snapshot_version")})
+                    if not finding:
+                        record.update({"id": document.get("id"), "document_id": document.get("id"), "title": document.get("title")})
                     writer.writerow([_csv_safe(record.get(key)) for key in headers])
+
+                if data["modern"]:
+                    for document in data["documents"]:
+                        write(document)
+                for finding in data["findings"]:
+                    document, _, _ = _source(finding, data)
+                    write(document, finding)
         else:
             with path.open("w", encoding="utf-8") as stream:
                 def line(kind, value):
                     stream.write(json.dumps({"record_type": kind, "data": value}, ensure_ascii=False, default=str) + "\n")
-                line("manifest", {k:v for k,v in snapshot.items() if k not in {"documents", "findings", "runs"}})
+                manifest = {k:v for k,v in snapshot.items() if k not in {"documents", "findings", "runs"}}
+                if data["modern"]:
+                    manifest["exported_assessment_counts"] = [{"criterion_kind": kind, "result": result, "count": count} for (kind, result), count in sorted(data["typed_counts"].items())]
+                line("manifest", manifest)
                 for record in data["documents"]:
                     line("document", record)
                 for record in data["findings"]:

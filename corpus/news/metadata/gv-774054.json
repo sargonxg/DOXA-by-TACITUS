@@ -1,0 +1,442 @@
+{
+  "id": "gv-774054",
+  "publisher_id": 774054,
+  "source_id": "globalvoices:774054",
+  "source_url": "https://globalvoices.org/2022/11/03/ecuador-the-temptation-to-control-technology/",
+  "title": "Ecuador: the temptation to control technology",
+  "published_at": "2022-11-03T04:35:00Z",
+  "modified_at": "2022-11-08T11:25:18Z",
+  "api_author_id": 2901,
+  "api_content_sha256": "55459b4e3a7d45fc413412924e24b1dad972bc6fe470d27e21c87eb0b4397197",
+  "api_response_sha256": "9b615ca8c330f03eafb11202cb28079d726516aefde093a0552488b2b6e40c2e",
+  "api_retrieved_at": "2026-11-16T22:20:47.843069+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 151,
+      "count": 703,
+      "name": "Ecuador",
+      "slug": "ecuador",
+      "parent": 1354
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 262,
+      "count": 2092,
+      "name": "Indigenous",
+      "slug": "indigenous",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-774054-b00001",
+      "text": "Digital rights organisations in Ecuador remain attentive to the the state's attempts to affect telecommunications, regardless of the ideological profile of the government in power. Protests are a vulnerable moment for freedom of expression.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 240,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00002",
+      "text": "In the past five years there have been two Indigenous protests of relevant size that have managed to have an impact on the international community: October 2019 and June 2022. These social and political events took place against the backdrop of economic measures Ecuador took with the IMF and their impact on Ecuadorian families, especially Indigenous families.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 242,
+      "body_end": 603,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/2019_Ecuadorian_protests",
+        "https://en.wikipedia.org/wiki/2022_Ecuadorian_protests",
+        "https://www.reuters.com/world/americas/ecuador-should-follow-its-own-path-not-imfs-says-protest-leader-2022-06-17/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00003",
+      "text": "Both social conflicts saw more than just police repression; it was also evident that governments made decisions about access to technology. It is striking that, during the Indigenous strike in June 2022, the government attempted to legalise internet shutdowns. It was different in October 2019, where, although there was no rule about it, there is evidence that decisions were possibly taken under the table.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 605,
+      "body_end": 1013,
+      "source_links": [
+        "https://confirmado.net/2022/06/18/ecuador-polemica-por-decreto-borrador-que-limita-la-libertad-de-expresion/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00004",
+      "text": "For example, in its 2020 Report, Freedom House indicated that Ecuador experienced intentional interruptions in internet connectivity during the protests of October 2019, which was also pointed out by the Interamerican Commission for Human Rights (IACHR). For this reason, Freedom House ranked the country 57/100. It was also identified by Access Now in its report “Targeted, cut off, and left in the dark,” which specifically indicates that 14 percent of internet outages in the region were attributed to Ecuador in 2019. Because of these incidents, Ecuador joined the list of countries with intentional internet shutdowns.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1015,
+      "body_end": 1638,
+      "source_links": [
+        "https://freedomhouse.org/country/ecuador/freedom-net/2020#footnote5_8grnf97",
+        "https://www.accessnow.org/cms/assets/uploads/2020/02/KeepItOn-2019-report-1.pdf",
+        "https://www.oas.org/es/cidh/prensa/comunicados/2020/008.asp",
+        "https://www.primicias.ec/noticias/tecnologia/apagones-internet-vivieron-ecuador-2019/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00005",
+      "text": "Policy Analyst at Access Now Agneris Sampieri told Global Voices that, unfortunately, many times these interruptions to internet access happen in the context of protests with the goal that “human rights violations or violations against people who are demonstrating at the time not be documented.” But, she adds, there is also a tendency for governments to justify these actions as preventing the spread of hate speech or that these obstructions to internet traffic come from technical issues at telecommunication companies.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1640,
+      "body_end": 2163,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00006",
+      "text": "No regulation existed that could have affected the internet in the October 2019 case, but something very different happened in the Indigenous protests last June. On the fifth day of the mobilisations called by the Confederation of Indigenous Nationalities of Ecuador (Conaje), President Guillermo Lasso appeared on national television to announce a state of exception in three provinces in the country. When Decree 455 became fully public, Article 9 quickly provoked various reactions:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2165,
+      "body_end": 2650,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00007",
+      "text": "> Se restringe el derecho a la libertad de información en los espacios geográficos y limitaciones temporales establecidas en el presente Decreto Ejecutivo. Esta limitación consistirá en el establecimiento de restricciones y/o suspensiones, o en su defecto el establecimiento de restricciones de calidad de los servicios de telecomunicaciones fijas, móviles y de Internet.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2652,
+      "body_end": 3023,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-774054-b00008",
+      "text": "> The right to freedom of information is restricted in the geographic spaces and time limitations established in this Executive Decree. This limitation will consist of the establishment of restrictions and/or suspensions, or in its absence the establishment of quality restrictions of fixed, mobile and Internet telecommunications services.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3025,
+      "body_end": 3365,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-774054-b00009",
+      "text": "The article also said that, in order to comply with it, the Agency for the Regulation and Control of Telecommunications in coordination with the National Police, the Ministry of National Defense and the Ministry of the Interior, “may require providers of operate public networks of telecommunications the suspension, degradation of quality or temporary limitation of telecommunications services.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3367,
+      "body_end": 3763,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00010",
+      "text": "“Now yes, everything is screwed up. Things are going to get pretty ugly,” was the first reaction that Sara Zambrano, Executive Director of the Center for Digital Autonomy (CAD), had. Because of her closeness to some social organisations, she remembers that it was a general feeling. It was not for nothing: on the fifth day of the Indigenous mobilizations there were already reports of human rights violations due to police repression.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3765,
+      "body_end": 4200,
+      "source_links": [
+        "https://autonomia.digital/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00011",
+      "text": "“I thought that with this [the decree] the violence was going to get much worse. These people [the government] do not want it to be known what is happening in Ecuador. What could be, then, the reason to restrict the use of social networks or the internet if not to obstruct communication,” she asked.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4202,
+      "body_end": 4502,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00012",
+      "text": "But, this also reflected total ignorance on the part of the government, as Francisco Silva, co-founder of OpenLab, explains. He said that it was evident that this measure was going to generate noise on social networks and among social organizations. “That — seen from the political point of view — was a miscalculation, bad advice from someone who has no idea about rights.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4504,
+      "body_end": 4878,
+      "source_links": [
+        "https://openlab.ec/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00013",
+      "text": "Silva also remembers that everyone was already ready to take action, but the government's measure ended up failing. This happened in part because after the dissemination of Decree 455 on social networks, the digital news site La Posta set up a Twitter Space.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4880,
+      "body_end": 5138,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00014",
+      "text": "Jefferson Sanguña, a journalist for La Posta and host of the Twitter Space, remembers that when he read the decree he thought it was a fake since, if it were true, he would have to limit his journalistic activities or incur penalties. So, the media decided to publish the decree “before we could no longer say anything.” The space was opened and gathered the attention of the media, journalists, and activists, among others.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5140,
+      "body_end": 5564,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00015",
+      "text": "Sanguña said that, during the development of Twitter Space, he received a message from his outlet saying that the Legal Secretary to the Presidency, Fabián Pozo, asked to participate. Once the official entered, he was asked why President Lasso, who always identified himself as a defender of freedom of expression, issued a decree that reflected the opposite. Sanguña recalls that Pozo focused on confirming that the “Gobierno del Encuentro” (“Government of the gathering”) — the slogan of Guillermo Lasso's administration — respects the work of the press and, from that moment, Decree 455, which carried the signature of President Guillermo Lasso, became a “draft” in Pozo's words.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5566,
+      "body_end": 6248,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00016",
+      "text": "So, the government rushed to correct it. Pozo, at 12:44 a.m. on June 18, confirmed on his Twitter account that “there is no restriction on freedom of the press and information,” a matter that would end up being endorsed an hour later on the official Twitter account of the General Secretariat of Communication of the Presidency.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6250,
+      "body_end": 6578,
+      "source_links": [
+        "https://twitter.com/ComunicacionEc/status/1538051524475211776",
+        "https://twitter.com/fabianpozo/status/1538034933532434432?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1538034933532434432%7Ctwgr%5E5d11f5b64aa3491490fbd1c65e9928c372c06f12%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fgk.city%2F2022%2F06%2F17%2Fque-dice-decreto-excepcion-pichincha%2F"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00017",
+      "text": "La Posta, through its sources close to President Lasso, learned that the measure was directed at prevention and security issues, “because they had reports [from the government] that they were trying to plan something stronger [by part of the protesters], a direct attack to perhaps take down the government.”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6580,
+      "body_end": 6888,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00018",
+      "text": "The fact that the decree is a “draft” did not prevent various national and international organisations, mainly dedicated to open technologies and digital rights, from releasing a statement. More than thirty organisations rejected the “attempts to silence and criminalise social movements.” They denounced the violation of human rights and the use of technologies for surveillance and criminalisation, for example, the installation of video surveillance cameras outside the Conaie headquarters the day the indigenous strike began, the confiscation of the electronic devices of social activists, or the DDoS attacks on the media and websites and the blocking of accounts on social networks of the social organisations that participated in the protests.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6890,
+      "body_end": 7640,
+      "source_links": [
+        "https://lalibre.net/page/comunicado-paroec",
+        "https://latam.kaspersky.com/resource-center/threats/ddos-attacks",
+        "https://twitter.com/CONAIE_Ecuador/status/1536110755338235904",
+        "https://twitter.com/confeniae1/status/1536790640616431616"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00019",
+      "text": "Once the decree was eliminated, suspicions that the government would intervene in telecommunications persisted. Although the CAD did not monitor incidents during the indigenous strike in June — because they suffered a raid last April due to the case of Swedish programmer Ola Bini who has been in custody since 2019 — they are clear that there may be digital security issues in the context of social protests. Although people also “can enter a state of paranoia, that is, an organisation does indeed suffer an attack and the others begin to notice small things that can be due to a multitude of factors and is attributed to an attack from the government,” Zambrano says.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 7642,
+      "body_end": 8312,
+      "source_links": [
+        "https://globalvoices.org/2022/10/21/ola-bini-the-cyberactivist-who-causes-panic-in-ecuador/",
+        "https://www.primicias.ec/noticias/lo-ultimo/allanamiento-sede-ola-bini/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00020",
+      "text": "There is always the suspicion that governments do not necessarily require a legal route to make these decisions since they “play their cards under the table,” says Silva. Zambrano underlines this perspective, saying that “governments have all the power and resources to be able to restrict people's communications, I think it would be quite naïve to think that this type of thing would not happen.”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 8314,
+      "body_end": 8712,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-774054-b00021",
+      "text": "Please visit the project page for more pieces from the Unfreedom Monitor.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 8714,
+      "body_end": 8787,
+      "source_links": [
+        "https://advox.globalvoices.org/special/unfreedom-monitor/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "c99ed14766e3c3ebf133512c59b18f3a68ec197e4f828838705ae70dfdb96b95",
+  "word_count": 1378,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8787,
+  "retrieved_at": "2026-11-16T22:36:58.044571+00:00",
+  "raw_html_sha256": "758236c3fa382e7a1e4326ec3199b30167664a0caae27a5b2e6037f3f2b86b84",
+  "resolved_source_url": "https://globalvoices.org/2022/11/03/ecuador-the-temptation-to-control-technology/",
+  "canonical_url": "https://globalvoices.org/2022/11/03/ecuador-the-temptation-to-control-technology/",
+  "source_bytes": 191589,
+  "authors": [
+    {
+      "name": "Carlos E. Flores",
+      "url": "https://es.globalvoices.org/author/carlos-flores/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Ameya Nagarajan",
+      "url": "https://globalvoices.org/author/ameya-nagarajan/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 774054,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "758236c3fa382e7a1e4326ec3199b30167664a0caae27a5b2e6037f3f2b86b84",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-ea8231ee003c642a1936",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-11",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Carlos E. Flores",
+  "body_start": 460,
+  "body_end": 9247,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "a181692c63c9205048ef4e3494661c05bfeac051cf466dca2fcde0c527b8c2ad",
+  "text_path": "articles/gv-774054.txt",
+  "metadata_path": "metadata/gv-774054.json",
+  "attribution": "This story by Carlos E. Flores originally appeared on Global Voices. https://globalvoices.org/2022/11/03/ecuador-the-temptation-to-control-technology/",
+  "content_sha256": "2f9b7cd9a965f662c5dc727aa2a933d8e637e470b684189e5ec5b32db4f21133",
+  "source_sha256": "758236c3fa382e7a1e4326ec3199b30167664a0caae27a5b2e6037f3f2b86b84",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

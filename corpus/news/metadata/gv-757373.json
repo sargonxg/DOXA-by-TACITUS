@@ -1,0 +1,312 @@
+{
+  "id": "gv-757373",
+  "publisher_id": 757373,
+  "source_id": "globalvoices:757373",
+  "source_url": "https://globalvoices.org/2022/03/02/mozambican-government-websites-suffer-cyber-attack/",
+  "title": "Mozambican government websites suffer cyber attack",
+  "published_at": "2022-03-02T02:07:18Z",
+  "modified_at": "2022-03-02T02:07:18Z",
+  "api_author_id": 2614,
+  "api_content_sha256": "78c3e8231e097b5a57fbd3a4cb77cdcab933c1a57d5363ed5eb54339d311ad37",
+  "api_response_sha256": "1c1ca0bc12b9cd2dbfa64c668911b057f3193583dcca9487ed40436dfe167757",
+  "api_retrieved_at": "2026-11-16T22:20:42.191404+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 128,
+      "count": 415,
+      "name": "Mozambique",
+      "slug": "mozambique",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-757373-b00001",
+      "text": "Mozambique was surprised by the news that various government portals had been tampered with by a group of computer hackers on February 21, 2022. The main pages for numerous government websites had been replaced with notices saying the pages were “attacked by Yemeni hackers,” paired with an image of a man with a machine gun and a headscarf. Officials have not yet identified the perpetrators or determined their motivation for the attack.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 439,
+      "source_links": [
+        "https://pplware.sapo.pt/internet/mocambique-ataques-informaticos-derrubam-portais-do-estado/",
+        "https://www.dw.com/pt-002/ataque-de-hackers-deixa-inoperacionais-portais-mo%C3%A7ambicanos/a-60854704"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-757373-b00002",
+      "text": "> SENAMI website among others hacked by the Government. It will hurt.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 441,
+      "body_end": 510,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-757373-b00003",
+      "text": "According to the news portal A Carta, the entire web apparatus of the Mozambican government is managed (and hosted) by the National Institute of Information and Communication Technologies of Mozambique (INTIC), the body responsible for regulating, supervising, and inspecting the Information Technology and Communication (ICT) sector.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 512,
+      "body_end": 846,
+      "source_links": [
+        "https://cartamz.com/index.php/politica/item/10006-terroristas-iemenitas-derrubam-30-websites-do-governo-de-mocambique",
+        "https://www.intic.gov.mz/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-757373-b00004",
+      "text": "While the attack temporarily suspended all operations on the sites, the Director-General of the National Institute of Electronic Government (INAGE), Hermínio Jasse, said that all the portals were operational again the same day.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 848,
+      "body_end": 1075,
+      "source_links": [
+        "https://www.facebook.com/mais258MZ/posts/3070609403199220"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-757373-b00005",
+      "text": "> O Director-Geral do Instituto Nacional do Governo Electrónico (INAGE), Ermínio Jasse, disse hoje em conferência de imprensa que os portais do Governo que foram alvo de ataques de “hackers” já se encontram operacionais. Na ocasião, o Director explicou que não houve perda de informação e que todo o conteúdo dos portais é de consumo público.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1077,
+      "body_end": 1419,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-757373-b00006",
+      "text": "> The Director-General of the National Institute of Electronic Government (INAGE), Ermínio Jasse, said today at a press conference that the Government portals that were the target of hacker attacks are operational again. On the occasion, the Director explained that there was no loss of information and that all the content of the portals is for public consumption.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1421,
+      "body_end": 1786,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-757373-b00007",
+      "text": "According to the Director-General of INAGE, the main concern after detecting the problem was to make a “quick diagnosis” of the damage. The investigation revealed the site content remained intact, though in the hacker’s announcement, they said that data had been extracted and would be sold at a low price. So far, there is no evidence to support this claim, and little or nothing is known about the actual leakage of such data.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1788,
+      "body_end": 2216,
+      "source_links": [
+        "https://observador.pt/2022/02/21/governo-mocambicano-anuncia-controlo-da-situacao-apos-ataque-contra-portais-oficiais/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-757373-b00008",
+      "text": "However, the solution lasted only for 24 hours. On the morning of the next day, February 22, the same websites became inoperable again — this time, the hackers posted a ransom request in exchange for the government site data. It is not yet known whether they will be recovered again and what measures will be taken to prevent future attacks.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2218,
+      "body_end": 2559,
+      "source_links": [
+        "https://www.facebook.com/mais258MZ/posts/3070609403199220"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-757373-b00009",
+      "text": "On the subject, the director of the National Company of Science and Technology Parks (ENPCT), Julião Cumbane, said that this problem stems from the lack of preparation of Mozambican institutions in the security of their data.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2561,
+      "body_end": 2786,
+      "source_links": [
+        "https://www.facebook.com/jj.cumbane/posts/4836877123096935"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-757373-b00010",
+      "text": "> GOVERNO de Moçambique sob ATAQUE CIBERNÉTICO?!?!… Nós andamos insistentemente dizendo às instituições e empresas (públicas e privadas) que DEVEM ter CÓPIAS de SEGURANÇA dos seus DADOS e SISTEMAS INFORMÁTICOS em lugar seguro e somos IGNORADOS por quem nos deviam ouvir. E agora?",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2788,
+      "body_end": 3067,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-757373-b00011",
+      "text": "> The GOVERNMENT of Mozambique under CYBER ATTACK?!?!… We are insistently telling institutions and companies (public and private) that they MUST have BACKUP COPIES of their DATA and COMPUTER SYSTEMS in a safe place and we are IGNORED by those who should listen to us. And now?",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3069,
+      "body_end": 3345,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-757373-b00012",
+      "text": "Cyber insecurity has been a major issue in recent years, as revealed on its Facebook page by the Confederation of Economic Associations of Mozambique (CTA):",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3347,
+      "body_end": 3503,
+      "source_links": [
+        "https://www.facebook.com/permalink.php?story_fbid=2202320166586173&id=317967261688149"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-757373-b00013",
+      "text": "> ATENÇÃO AOS E-MAILS COM LINKS MALICIOSOS",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3505,
+      "body_end": 3547,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-757373-b00014",
+      "text": "> A CTA vem através deste comunicar que o seu domínio de e-mail foi clonado e estão a ser enviados e-mails com links maliciosos. Por favor, não clicar nesses links enquanto decorre um trabalho interno de limpeza. Logo que estiver concluído iremos informar. Obrigado pela compreensão.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3549,
+      "body_end": 3832,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-757373-b00015",
+      "text": "> ATTENTION TO E-MAILS WITH MALICIOUS LINKS",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3834,
+      "body_end": 3877,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-757373-b00016",
+      "text": "> The CTA comes through this to communicate that your email domain has been cloned and emails with malicious links are being sent. Please do not click on these links while internal cleanup work is in progress. As soon as it's finished, we'll let you know. Thank you for understanding.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3879,
+      "body_end": 4163,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "43c3954044de4dc963fb0f37442b720b1100ae9a4b5b5f78750ba536695d34bb",
+  "word_count": 671,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4163,
+  "retrieved_at": "2026-11-16T22:33:53.125146+00:00",
+  "raw_html_sha256": "77b41518a8496bd367c7c74cf1e053030e73bf92304f0396aeb0c2fa3f31c068",
+  "resolved_source_url": "https://globalvoices.org/2022/03/02/mozambican-government-websites-suffer-cyber-attack/",
+  "canonical_url": "https://globalvoices.org/2022/03/02/mozambican-government-websites-suffer-cyber-attack/",
+  "source_bytes": 184520,
+  "authors": [
+    {
+      "name": "Global Voices Lusofonia",
+      "url": "https://pt.globalvoices.org/author/coletivo-editorial/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Giovana Fleck",
+      "url": "https://globalvoices.org/author/giovana-fleck/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 757373,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "77b41518a8496bd367c7c74cf1e053030e73bf92304f0396aeb0c2fa3f31c068",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-6e9463dc66ec8ff06143",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-03",
+    "eligible_month_documents": 105,
+    "selected_month_documents": 88,
+    "inclusion_probability": 0.8380952380952381,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Global Voices Lusofonia",
+  "body_start": 476,
+  "body_end": 4639,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "ac632938e772eaeaf4cc97db82dc6d34ba8046a0dc638da36f4056e2bcb61ecc",
+  "text_path": "articles/gv-757373.txt",
+  "metadata_path": "metadata/gv-757373.json",
+  "attribution": "This story by Global Voices Lusofonia originally appeared on Global Voices. https://globalvoices.org/2022/03/02/mozambican-government-websites-suffer-cyber-attack/",
+  "content_sha256": "6a5d13cfc3dbd4be64f6dd4adf7ceca250c02cf78a51410fcfc9dc029ad31c3a",
+  "source_sha256": "77b41518a8496bd367c7c74cf1e053030e73bf92304f0396aeb0c2fa3f31c068",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

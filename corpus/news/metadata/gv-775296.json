@@ -1,0 +1,665 @@
+{
+  "id": "gv-775296",
+  "publisher_id": 775296,
+  "source_id": "globalvoices:775296",
+  "source_url": "https://globalvoices.org/2022/11/21/how-football-and-politics-are-intertwined-in-a-polarized-post-election-brazil/",
+  "title": "How football and politics are intertwined in a polarized post-election Brazil",
+  "published_at": "2022-11-21T18:05:37Z",
+  "modified_at": "2023-05-23T21:17:43Z",
+  "api_author_id": 707,
+  "api_content_sha256": "9d4b1cd21c6021fdd2ceb2cecb62e508501d91f8c776aec1ec48246622c39101",
+  "api_response_sha256": "b089d92e1bc9ef52a0f74ca6487ef5c94a3419c03fd7d8c3d840ac88f7068f89",
+  "api_retrieved_at": "2026-11-16T22:20:48.534273+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 94,
+      "count": 291,
+      "name": "Qatar",
+      "slug": "qatar",
+      "parent": 14
+    },
+    {
+      "id": 278,
+      "count": 3056,
+      "name": "Sport",
+      "slug": "sport",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-775296-b00001",
+      "text": "The starkly polarised presidential election that ended with leftist former president Luiz Inácio Lula da Silva winning Brazil's presidency over far-right incumbent Jair Bolsonaro spilled over from the political arena onto the football field, with famous footballers, active and retired, weighing in on the candidates.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 317,
+      "source_links": [
+        "https://www.nytimes.com/live/2022/10/30/world/brazil-presidential-election"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00002",
+      "text": "Stars such as Neymar Jr, Juninho Pernambucano, and the 1994 World Champions Romário and Bebeto expressed their support for their preferred candidate, with some even engaging in the campaigns and intertwining football and politics ahead of the Qatar World Cup.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 319,
+      "body_end": 578,
+      "source_links": [
+        "https://oglobo.globo.com/blogs/panorama-esportivo/post/2022/10/bebeto-e-romario-juntos-no-campo-e-separados-na-politica.ghtml",
+        "https://www.correiobraziliense.com.br/politica/2022/08/5032368-juninho-pernambucano-vira-cabo-eleitoral-de-lula-em-propaganda-politica.html",
+        "https://www.correiobraziliense.com.br/politica/2022/10/5047754-neymar-volta-a-pedir-voto-em-bolsonaro-pela-familia-patria-e-igreja.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00003",
+      "text": "The relationship of many Brazilians with the national team and its jersey has been mixed for a while now — the classic yellow uniform became a symbol associated with the right and far-right and was linked to antidemocratic acts taking place after the election, nurturing a false narrative about errors in the electoral system.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 580,
+      "body_end": 906,
+      "source_links": [
+        "https://www.correiobraziliense.com.br/politica/2022/11/5051711-uso-politico-da-camisa-da-selecao-faz-torcedor-buscar-outras-cores.html",
+        "https://www.theguardian.com/world/2020/jul/07/replace-or-reclaim-progressive-brazil-divided-on-fate-of-famous-yellow-shirts",
+        "https://www1.folha.uol.com.br/poder/2022/11/ataques-as-urnas-e-atos-antidemocraticos-buscam-criar-crise-artificial-no-brasil.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00004",
+      "text": "In the country that used to call itself “football’s country,” where the game is considered a national passion, Brazilian footballers often seems more and more aligned to the right politically — which, in today's scenario, means Bolsonaro.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 908,
+      "body_end": 1146,
+      "source_links": [
+        "https://brasilescola.uol.com.br/educacao-fisica/historia-do-futebol.htm",
+        "https://noticias.uol.com.br/ultimas-noticias/afp/2022/10/20/nas-eleicoes-jogadores-brasileiros-simpatizam-com-a-direita.htm",
+        "https://www.megacurioso.com.br/artes-cultura/123469-por-que-o-brasil-nao-e-mais-o-pais-do-futebol.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00005",
+      "text": "In an interview with the AFP, historian João Malaia says this profile expresses the growth the right, especially the far-right, has achieved in Brazil recently. He suggests that as many players become millionaires overnight, they begin to identify with the right's discourse, despite their humble origins.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1148,
+      "body_end": 1453,
+      "source_links": [
+        "https://noticias.uol.com.br/ultimas-noticias/afp/2022/10/20/nas-eleicoes-jogadores-brasileiros-simpatizam-com-a-direita.htm?cmpid=copiaecola"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00006",
+      "text": "He explains Bolsonaro's rhetoric “is very much lined up in the individual success, in each one's own capacity to overcome all of their difficulties. And when you look at a football player's trajectory, they are an example of the said speech.”",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1455,
+      "body_end": 1697,
+      "source_links": [
+        "https://desporto.sapo.pt/geral/artigos/nas-presidenciais-do-brasil-os-jogadores-brasileiros-simpatizam-com-a-direita-de-bolsonaro"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00007",
+      "text": "Football and politics have long been strange bedfellows across the world. Dating all the way back to the second World Cup in 1934, Italy was under a fascist regime that used the tournament to win favor among its citizenry. In 2018, Russia hosted the World Cup, with critics noting the tournament was used for propaganda by the Putin government. And this is especially evident in the South American state of Brazil.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1699,
+      "body_end": 2113,
+      "source_links": [
+        "https://thesefootballtimes.co/2016/07/27/when-the-world-cup-rolled-into-fascist-italy-in-1934/",
+        "https://www.euronews.com/culture/2022/10/28/brazil-elections-when-pulling-on-a-football-shirt-gets-political",
+        "https://www.france24.com/en/20180622-world-cup-2018-football-politics-propaganda"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00008",
+      "text": "Dating as far back as 1970, the then military government led by President Emillio G. Medici imposed its role in the national team’s training and selection — with the selecao winning a third title in 12 years.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2115,
+      "body_end": 2323,
+      "source_links": [
+        "https://www.nytimes.com/1970/06/28/archives/brazil-players-cant-kick-about-gifts.html",
+        "https://www.worldsoccer.com/blogs/political-football-how-brazils-military-hijacked-the-beautiful-game-340119"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00009",
+      "text": "Antifascist movements among fans have also marked position in the last years, echoing other groups from the past.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2325,
+      "body_end": 2438,
+      "source_links": [
+        "https://www.lance.com.br/galerias/o-que-e-e-quais-sao-as-torcidas-antifascistas-do-futebol-brasileiro-confira/#foto=1"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00010",
+      "text": "Corinthians, the only major league team to congratulate Lula for the election, based in São Paulo, was behind a 1982 movement called Democracia Corinthiana (Corinthians’ Democracy), led by players such as Socrates, Casagrande, among others.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2440,
+      "body_end": 2680,
+      "source_links": [
+        "https://www.meutimao.com.br/historia-do-corinthians/fatos-marcantes/democracia_corinthiana"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00011",
+      "text": "They represented a political force that sought to end the military-led dictatorship, emphasizing the relationship between football and politics. Using its influence, it rallied supporters of the club and preferred presidential candidates.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2682,
+      "body_end": 2920,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00012",
+      "text": "Pro-Bolsonaro players",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2922,
+      "body_end": 2943,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00013",
+      "text": "Bolsonaro has used football during his term as a tool to show himself as a regular guy, just like everyone else. Despite declaring himself a Palmeiras's fan, he often poses using other Brazilian teams’ shirts, even rivals, and shows up to stadiums to watch matches.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2945,
+      "body_end": 3210,
+      "source_links": [
+        "https://g1.globo.com/politica/noticia/2019/06/12/bolsonaro-leva-moro-para-jogo-do-flamengo-em-estadio-de-brasilia.ghtml",
+        "https://www.goal.com/br/not%C3%ADcias/qual-o-time-de-jair-bolsonaro-para-quem-torce-o-presidente-do-brasil/qa5cfdeoj5dh107l9cteu8jj1",
+        "https://www.lance.com.br/galerias/bolsonaro-com-uniforme-do-corinthians-veja-as-camisas-que-o-presidente-ja-vestiu/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00014",
+      "text": "But he also got closer to current and former players during his government. Neymar da Silva Santos Junior, popularly known as Neymar, is perhaps the best example.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3212,
+      "body_end": 3374,
+      "source_links": [
+        "https://www.futhead.com/players/190871/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00015",
+      "text": "Neymar, who currently plays for Paris Saint-Germain (PSG) in France, reinforced his support for Bolsonaro last September and supported his campaign on social media.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3376,
+      "body_end": 3540,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.",
+        "https://extra.globo.com/esporte/a-oito-dias-das-eleicoes-neymar-usa-as-redes-para-se-engajar-ainda-mais-na-campanha-de-bolsonaro-entenda-25595564.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00016",
+      "text": "Some linked the support to Neymar's debt issues with Brazil’s IRS. Neymar's father met with Bolsonaro and the Economy minister Paulo Guedes back in 2019 to discuss the matter. The current president denied pardoning the athlete, but among fans who opposed Bolsonaro the chant “hey, Neymar, you'll have to declare it” became popular in the last days of the campaign.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3542,
+      "body_end": 3906,
+      "source_links": [
+        "https://esportes.estadao.com.br/noticias/futebol,pai-de-neymar-e-recebido-por-bolsonaro-e-guedes-para-tratar-de-cobrancas-da-receita-ao-jogador,70002795516",
+        "https://valor.globo.com/politica/eleicoes-2022/noticia/2022/10/20/bolsonaro-nega-ter-interferido-na-receita-federal-em-favor-de-neymar.ghtml",
+        "https://www.terra.com.br/noticias/eleicoes/ei-neymar-vai-ter-que-declarar-provocam-petistas-em-comemoracao-a-vitoria-de-lula,8f03bc7b8dc9214caea19bcc475fa49a7egddw1e.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00017",
+      "text": "Thiago Silva, who plays for Chelsea in the English Premier League, also used social networks to declare his support for Bolsonaro, sharing messages parallel to Bolsonaro’s campaign slogans.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3908,
+      "body_end": 4097,
+      "source_links": [
+        "https://www.chelseafc.com/en/teams/profile/thiago-silva"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00018",
+      "text": "> God, country, family and freedom.I hope that democracy is respected and that everyone can exercise their citizenship freely.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4099,
+      "body_end": 4225,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-775296-b00019",
+      "text": "Another famed player in Brazil, Daniel Alves, used the slogan on his Instagram page:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4227,
+      "body_end": 4311,
+      "source_links": [
+        "https://www.metropoles.com/esportes/futebol/daniel-alves-detona-governos-anteriores-e-declara-apoio-a-bolsonaro"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00020",
+      "text": "Rivaldo, a champion with the national team in the Japan-South Korea 2002 World Cup, also used social media to support the pro-Bolsonaro vote:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4313,
+      "body_end": 4454,
+      "source_links": [
+        "https://pt.wikipedia.org/wiki/Brasil_na_Copa_do_Mundo_FIFA_de_2002"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00021",
+      "text": "> “The sins of a nation make they always change their rulers, but the order is kept with a wise and sensible leader” — Proverbs 28:2",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4456,
+      "body_end": 4588,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-775296-b00022",
+      "text": "Ronaldo de Assis Moreira, better known as Ronaldinho Gaucho, also a champion in the 2002 World Cup, is another footballer linked to Bolsonaro.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4590,
+      "body_end": 4732,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Ronaldinho",
+        "https://pt.wikipedia.org/wiki/Brasil_na_Copa_do_Mundo_FIFA_de_2002"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00023",
+      "text": "The former president appointed him Tourism Ambassador in 2019, and had files related to negotiations on his release sealed for 100 years, after being accused of travelling with a false passport to Paraguay in 2020.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4734,
+      "body_end": 4948,
+      "source_links": [
+        "https://extra.globo.com/noticias/brasil/sigilo-de-100-anos-de-prisao-de-ronaldinho-gaucho-visitas-michelle-saiba-sobre-que-governo-impos-segredo-25581104.html",
+        "https://www.telesurenglish.net/news/Footballer-Ronaldinho-Is-Bolsonaro-New-Ambassador-of-Tourism-20190907-0010.html",
+        "https://www.terra.com.br/esportes/futebol/os-seis-meses-de-ronaldinho-gaucho-no-paraguai-da-prisao-a-condenacao-e-soltura,f017526a030754d8a8e525725e0d4b004wj2l2z7.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00024",
+      "text": "Pro-Lula players",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4950,
+      "body_end": 4966,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00025",
+      "text": "On the flip-side, president-elect Lula, a die-hard Corinthians fan, also had current, retired players, and former coaches supporting his candidacy.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4968,
+      "body_end": 5115,
+      "source_links": [
+        "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2022/10/31/corinthians-lula-presidente.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00026",
+      "text": "Juninho Pernambucano, better known for his time on the French team Olympique Lyonnais, said in an interview for the newspaper El Pais, back in 2018, he felt revolted when he saw footballers supporting the right-wing and Bolsonaro.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5117,
+      "body_end": 5347,
+      "source_links": [
+        "https://brasil.elpais.com/brasil/2018/09/19/deportes/1537394219_927623.html",
+        "https://en.wikipedia.org/wiki/Juninho_Pernambucano",
+        "https://trivela.com.br/franca/ligue-1/ha-15-anos-lyon-iniciava-sua-dinastia-na-franca-a-historia-do-titulo-relembrada-por-juninho/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00027",
+      "text": "When the interviewer asked him to draw parallels between football and politics, he answered,",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5349,
+      "body_end": 5441,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00028",
+      "text": "> O futebol está tão perdido quanto o Brasil. A diferença é que o futebol ainda tem o talento a seu favor e pode demorar menos para sair do buraco.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5443,
+      "body_end": 5590,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-775296-b00029",
+      "text": "> Football is as lost as Brazil. The difference is that football still has talent on its side and it may take less time to get out of the hole.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5592,
+      "body_end": 5735,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-775296-b00030",
+      "text": "In this year's election, he engaged in Lula's campaign and even claimed on a Twitter post he was the one on the phone with Lula right after his victory was confirmed:",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5737,
+      "body_end": 5903,
+      "source_links": [
+        "https://www.correiobraziliense.com.br/politica/2022/08/5032368-juninho-pernambucano-vira-cabo-eleitoral-de-lula-em-propaganda-politica.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00031",
+      "text": "> It was me on the line congratulating and asking bless to papa",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5905,
+      "body_end": 5968,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-775296-b00032",
+      "text": "Raí, another retired footballer, made the hand gesture referencing Lula and showing support to him during his speech at the international award ceremony named after his older brother, Corinthians’ idol Socrates. He is part of the government transition team now.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5970,
+      "body_end": 6231,
+      "source_links": [
+        "https://noticias.uol.com.br/politica/ultimas-noticias/2022/11/14/novos-nomes-equipe-transicao-governo-lula.htm",
+        "https://thesefootballtimes.co/2020/07/15/the-triumph-and-troubles-of-the-socrates-and-how-he-ended-his-remarkable-career-in-west-yorkshire/",
+        "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2022/10/17/apoiador-de-lula-rai-fala-de-socrates-e-faz-o-l-na-bola-de-ouro.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00033",
+      "text": "The “Socrates Award” — a FIFA award which honours football players involved in social causes — was awarded to the Senegalese player, Sadio Mane in its inaugural edition.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 6233,
+      "body_end": 6402,
+      "source_links": [
+        "https://www.lance.com.br/futebol-internacional/bola-de-ouro-sadio-mane-vence-o-primeiro-premio-socrates-da-historia.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00034",
+      "text": "Among those of the new generation pro-Lula are Igor Julião, who plays in Portugal, and Paulinho, a Bayern Leverkusen player in Germany, who made history when celebrating a goal with Brazil's national team honouring Exu:",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 6404,
+      "body_end": 6623,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Eshu",
+        "https://twitter.com/IgorJuliao2/status/1576298851610218496?s=20&t=KSN9_H1qCvOy4si80tAB3w",
+        "https://www.cnnbrasil.com.br/esporte/paulinho-atleta-de-exu-usa-bola-para-plantar-respeito-depois-de-gol-na-estreia/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00035",
+      "text": "> The greatest president in history is back",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 6625,
+      "body_end": 6668,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-775296-b00036",
+      "text": "Vanderlei Luxemburgo, a Brazilian coach who led the Brazilian team and Real Madrid, also supported Lula:",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 6670,
+      "body_end": 6774,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Vanderlei_Luxemburgo",
+        "https://twitter.com/vluxemburgo/status/1587080656735068160?s=20&t=KSN9_H1qCvOy4si80tAB3w"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00037",
+      "text": "> Congratulations @lulaoficial! Brazil deserves to be happy again. Thanks to every Brazilian who got into the field and played as they never done before achieving this victory. #LulaPresidentOfBrazil",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 6776,
+      "body_end": 6975,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-775296-b00038",
+      "text": "Brazil is the only national team present at every edition of the World Cup and the one with more titles so far — five in total — and one of the top contenders for the 2022 Cup.",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 6977,
+      "body_end": 7153,
+      "source_links": [
+        "https://agenciabrasil.ebc.com.br/esportes/noticia/2022-11/unico-pais-disputar-todas-copas-brasil-busca-hexa-no-catar"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00039",
+      "text": "Even with the elections over, the country remains divided, with protesters crying for military intervention. A recent poll shows that one in every four Brazilians says to be resentful with the yellow jersey because of politics, and in the streets it doesn't feel like World Cup season as it used to, as journalist Fabio Victor pointed:",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 7155,
+      "body_end": 7490,
+      "source_links": [
+        "https://istoe.com.br/a-copa-da-pacificacao/",
+        "https://www.metropoles.com/esportes/futebol/com-eleicao-26-dizem-que-pegaram-ranco-da-amarelinha-da-selecao",
+        "https://www.reuters.com/world/americas/bolsonaro-backers-call-brazil-military-intervene-after-lula-victory-2022-11-02/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-775296-b00040",
+      "text": "> The end of the year approaches. We're a few days aways of a World Cup. In another times, there would be euphoria and party everywhere. But the streets continue with a funeral mood. The country got so sick in these past four years that the convalescence will be long too, a sadness.",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 7492,
+      "body_end": 7775,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "dffc77248cf8fb3b6b9a8ce1e59b4e769905999c9d862c716bd8ebd131300db2",
+  "word_count": 1261,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 6,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7775,
+  "retrieved_at": "2026-11-16T22:37:11.097887+00:00",
+  "raw_html_sha256": "6d75a2729623902190a55475af8959f4cb2a9b22a34fe5ee59a7d1324dc3b5c3",
+  "resolved_source_url": "https://globalvoices.org/2022/11/21/how-football-and-politics-are-intertwined-in-a-polarized-post-election-brazil/",
+  "canonical_url": "https://globalvoices.org/2022/11/21/how-football-and-politics-are-intertwined-in-a-polarized-post-election-brazil/",
+  "source_bytes": 200409,
+  "authors": [
+    {
+      "name": "Richard Wanjohi",
+      "url": "https://globalvoices.org/author/richard-wanjohi/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 775296,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "6d75a2729623902190a55475af8959f4cb2a9b22a34fe5ee59a7d1324dc3b5c3",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-ffa3366a031302a13b43",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-11",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Richard Wanjohi",
+  "body_start": 493,
+  "body_end": 8268,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "0b8671b8a9c2a8f91dfe144fcf728e5382401f722029cfa7c435552b2d97b65d",
+  "text_path": "articles/gv-775296.txt",
+  "metadata_path": "metadata/gv-775296.json",
+  "attribution": "This story by Richard Wanjohi originally appeared on Global Voices. https://globalvoices.org/2022/11/21/how-football-and-politics-are-intertwined-in-a-polarized-post-election-brazil/",
+  "content_sha256": "f3eaf1a0c2afa9e67b1e3121d33521118a8e400d07b0261b7bba535a275c1f97",
+  "source_sha256": "6d75a2729623902190a55475af8959f4cb2a9b22a34fe5ee59a7d1324dc3b5c3",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

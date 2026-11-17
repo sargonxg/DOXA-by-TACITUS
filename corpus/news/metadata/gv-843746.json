@@ -1,0 +1,517 @@
+{
+  "id": "gv-843746",
+  "publisher_id": 843746,
+  "source_id": "globalvoices:843746",
+  "source_url": "https://globalvoices.org/2025/09/18/how-a-chinese-company-exports-the-great-firewall-to-autocratic-regimes/",
+  "title": "How a Chinese company exports the Great Firewall to autocratic regimes",
+  "published_at": "2025-09-18T04:22:34Z",
+  "modified_at": "2025-09-18T00:09:57Z",
+  "api_author_id": 2744,
+  "api_content_sha256": "8061bce2bb6c13aabfbf0084c12e626f6d0e66cc4c6e18e191fdb240fe8f17a7",
+  "api_response_sha256": "013e863c1c02e2bb511a1a6551f55871784146f6c412088d90aacc4f80e6ac0c",
+  "api_retrieved_at": "2026-11-16T22:21:14.863675+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 288,
+      "count": 7347,
+      "name": "Central Asia &amp; Caucasus",
+      "slug": "central-asia-caucasus",
+      "parent": 219
+    },
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 114,
+      "count": 783,
+      "name": "Ethiopia",
+      "slug": "ethiopia",
+      "parent": 15
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 81,
+      "count": 1267,
+      "name": "Kazakhstan",
+      "slug": "kazakhstan",
+      "parent": 288
+    },
+    {
+      "id": 54,
+      "count": 1020,
+      "name": "Myanmar (Burma)",
+      "slug": "myanmar-burma",
+      "parent": 16
+    },
+    {
+      "id": 41,
+      "count": 2347,
+      "name": "Pakistan",
+      "slug": "pakistan",
+      "parent": 31
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-843746-b00001",
+      "text": "Following a joint investigation of 100,000 leaked internal documents linked to the Chinese company Geedge Networks, researchers found that the Chinese company has exported an internet censorship toolset similar to the Chinese Great Firewall to autocratic regimes.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 263,
+      "source_links": [
+        "https://www.geedgenetworks.com/about-english/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00002",
+      "text": "The research team was composed of investigative reporters from several media outlets and researchers from human rights and internet freedom groups, including InterSecLab, Amnesty International, Justice For Myanmar and the Tor Project. The research team spent almost one year reviewing the 100,000 documents that leaked in 2024, and discovered that China, through its affiliated private company, has developed a business model by providing censorship services to autocratic regimes and has tested new surveillance technology domestically in Xinjiang and other Chinese cities.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 265,
+      "body_end": 839,
+      "source_links": [
+        "https://interseclab.org/",
+        "https://www.amnesty.org/en/",
+        "https://www.justiceformyanmar.org/",
+        "https://www.torproject.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00003",
+      "text": "Geedge Networks: China's private entity on censorship and surveillance",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 841,
+      "body_end": 911,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00004",
+      "text": "The Beijing-based Chinese company Geedge Networks was founded in 2018 by Fang Binxing, a former principal of Beijing University of Posts and Telecommunications who was crowned the father of the Great Firewall. On the company’s website, it describes itself as “a global provider of network security and intelligence equipment and solutions.”",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 913,
+      "body_end": 1253,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Beijing_University_of_Posts_and_Telecommunications",
+        "https://en.wikipedia.org/wiki/Fang_Binxing"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00005",
+      "text": "Like the Chinese Great Firewall, the “security network” offered by the Chinese company can filter websites and apps, conduct real-time online surveillance, control internet data flow by region, enact internet blackouts, detect and block circumvention tools (including VPNs), launch DDoS attacks against targeted websites, monitor and control internet users’ data flow, infect users with malware, and geographically locate individual internet users.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1255,
+      "body_end": 1703,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Great_Firewall"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00006",
+      "text": "The leaked documents revealed that the company, in addition to providing censorship and surveillance systems to governments from autocratic regimes, including Myanmar, Pakistan, Ethiopia, and Kazakhstan, also conducts testing projects in various regions within China in Xinjiang, Fujian, and Jiangsu, to enhance its surveillance and censorship systems further.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1705,
+      "body_end": 2065,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00007",
+      "text": "The researcher from InterSecLab found that the system relies on remote management by the company employees in China, and the data of internet users from their clients are shared with students at MesaLab, a research laboratory on informational national security at the Chinese Academy of Sciences. This not only implies an infringement of internet users’ privacy, but also has serious implications for national data sovereignty, as InterSecLab’s researchers highlighted.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2067,
+      "body_end": 2536,
+      "source_links": [
+        "https://interseclab.org/wp-content/uploads/2025/09/The-Internet-Coup_September2025.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00008",
+      "text": "Geedge's overseas Great Firewall business",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2538,
+      "body_end": 2579,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00009",
+      "text": "Kazakhstan is Geedge’s first foreign government client. The leaked documents show that the Chinese company worked with the president of Kazakhstan, Kassym-Jomart Tokayev, who studied in China between 1984-1991, to promote the image of a “state that listens” to civil society when Tokayev began his presidency in 2019. Yet, the “constructive dialogue” was monitored and manipulated through the Chinese political control toolset.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2581,
+      "body_end": 3008,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Kassym-Jomart_Tokayev",
+        "https://timesca.com/kazakhstans-progression-to-a-listening-state/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00010",
+      "text": "Geedge started operating in Ethiopia around 2021 after the Tigray war broke out in 2020. The researchers said that the Chinese system was used to detect and respond to social unrest.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3010,
+      "body_end": 3192,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Tigray_war"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00011",
+      "text": "Geedge’s operations in Pakistan began in 2023, after the Canadian software company Sandvine ended its contract with Pakistan under the political pressure of US sanctions. Upon further development of Sandvine’s hardware, Geedge enhanced the capacity of the pre-existing monitoring system to track local internet traffic and detect and block the use of circumvention tools. In 2024, Access Now’s “Keep It On” report registered 21 shutdowns, and the Pakistan Telecom Authority acknowledged over 100,000 instances of content blocking over concerns including “morality,” “national security,” and “incitement of hate.”",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3194,
+      "body_end": 3806,
+      "source_links": [
+        "https://www.accessnow.org/wp-content/uploads/2025/02/KeepItOn-2024-Internet-Shutdowns-Annual-Report.pdf",
+        "https://www.business-humanrights.org/en/latest-news/sandvine-to-withdraw-from-56-countries-following-us-sanctions-over-surveillance-and-censorship-practices/",
+        "https://www.pta.gov.pk/assets/media/2024-12-16-pta_annual_report.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00012",
+      "text": "Read More: The great Pakistan firewall and use of religion as a tool for digital authoritarianism",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3808,
+      "body_end": 3905,
+      "source_links": [
+        "https://advox.globalvoices.org/2024/11/22/the-great-pakistan-firewall-and-use-of-religion-as-a-tool-for-digital-authoritarianism/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00013",
+      "text": "The implementation of the Geedge system in Myanmar also began in 2023, two years after the military coup that overthrew the democratically elected government of Aung San Suu Kyi in February 2021. Geedge helped the junta block 55 apps, including circumvention tools such as VPNs and Tor, as well as messaging apps like Signal and WhatsApp. In 2024, the junta ordered 74 internet shutdowns to cover up the killing of civilians during armed conflicts and to isolate the country from the rest of the world.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3907,
+      "body_end": 4409,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/2021_Myanmar_coup_d%27%C3%A9tat",
+        "https://www.dw.com/en/myanmar-why-is-junta-shutting-down-internet/a-71770580"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00014",
+      "text": "The complicity of Western companies",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4411,
+      "body_end": 4446,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00015",
+      "text": "As indicated in the leaked documents, Geedge’s toolset must be installed by internet service providers (ISPs). In the case of Myanmar, Frontiir, an ISP that received investment funds from Denmark, Norway, and the UK, had installed in its data centers Geedge’s hardware that could track people online, and block websites and VPNs. Yet, the company denied its involvement in assisting censorship and surveillance.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4448,
+      "body_end": 4859,
+      "source_links": [
+        "https://myanmar-now.org/en/news/european-govts-back-company-that-uses-chinese-tech-to-monitor-myanmar-internet-users/",
+        "https://www.business-humanrights.org/my/latest-news/myanmar-internet-service-provider-alleged-to-use-chinese-technology-to-monitor-users-online-incl-cos-comments/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00016",
+      "text": "InterSecLab’s report also revealed that Geedge had used certain technologies owned by Western companies in its censorship business. For example, according to the data leak, Sentinel HASP, a software license protection application developed by a subsidiary of the French aerospace and defense giant Thales Group, has been used by Geedge to set a time limit on client access to its software, therefore monetizing its software. However, in response to InterSecLab’s finding, the Thales Group said that “Geedge Networks software does not rely on Sentinel to function. Thus, Sentinel does not contribute to the performance and functioning of Geedge Networks software and has nothing to do with the surveillance function of Geedge Networks’ product.”",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4861,
+      "body_end": 5605,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00017",
+      "text": "InterSecLab highlighted the need for transparency and accountability among Western companies regarding their involvement in business activities that violate human rights.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5607,
+      "body_end": 5777,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00018",
+      "text": "Xinjiang: Testing ground for new surveillance technologies",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5779,
+      "body_end": 5837,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00019",
+      "text": "The leaked document showed that Geedge had a special operation in Xinjiang in collaboration with MesaLab and the Chinese Academy of Sciences beginning in 2022. The consortium of local government, academics, and Geedge indicates that the project is closely affiliated with the Chinese government.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5839,
+      "body_end": 6134,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00020",
+      "text": "A major testing feature of the Xinjiang project is Cyber Narrator, which aims to analyze internet user behavior, lifestyle patterns and relationships. It is capable of generating a relationship graph based on a person’s contacts, online groups, and data from the users’ applications and websites they visit.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6136,
+      "body_end": 6443,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00021",
+      "text": "Another feature is an alert system targeting specific individuals when they enter a designated area, change SIM cards, make an international call, or use circumvention tools and foreign social media applications.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6445,
+      "body_end": 6657,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00022",
+      "text": "The Geedge system also strengthens its geo-detection capacity, which not only locates an individual but also maps the distribution of a monitored group and their geolocation pattern to identify unusual gatherings.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6659,
+      "body_end": 6872,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00023",
+      "text": "Other domestic projects have taken place in Fujian and Jiangsu. The former is a southern Chinese province, located off the coast of Taiwan, a runaway autonomous state that China claims as a part of its sovereignty. There was limited information about the Fujian project in the leaked document. As for Jiangsu, the project was related to the development of a scam-detection system.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6874,
+      "body_end": 7254,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843746-b00024",
+      "text": "The development, as indicated by the leaked documents, shows that the Chinese government is actively translating its political control model into a capitalist business model that caters for the needs of authoritarian and autocratic governments. The domestic censorship and surveillance system, hence, extends beyond the country, affecting people who live under oppressive regimes around the world.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7256,
+      "body_end": 7653,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "97ab091b8e2569d28775f23fdd9dc2ffcc93b6950348ba8da2cacaabb4dcf242",
+  "word_count": 1122,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7653,
+  "retrieved_at": "2026-11-16T22:47:54.048431+00:00",
+  "raw_html_sha256": "812f34f83338a1b9d0424584f77f92a8e925afe83b20bff67dc230a2dc1ec62e",
+  "resolved_source_url": "https://globalvoices.org/2025/09/18/how-a-chinese-company-exports-the-great-firewall-to-autocratic-regimes/",
+  "canonical_url": "https://globalvoices.org/2025/09/18/how-a-chinese-company-exports-the-great-firewall-to-autocratic-regimes/",
+  "source_bytes": 190978,
+  "authors": [
+    {
+      "name": "Global Voices East Asia",
+      "url": "https://globalvoices.org/author/eastasia/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 843746,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "812f34f83338a1b9d0424584f77f92a8e925afe83b20bff67dc230a2dc1ec62e",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-89a5b7749fd52bf02805",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-09",
+    "eligible_month_documents": 57,
+    "selected_month_documents": 48,
+    "inclusion_probability": 0.8421052631578947,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Global Voices East Asia",
+  "body_start": 487,
+  "body_end": 8140,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "ab4b8deb1b3e89abd88d36ecc8df37dd35fec78e0bc3dfd0f54951085fe00866",
+  "text_path": "articles/gv-843746.txt",
+  "metadata_path": "metadata/gv-843746.json",
+  "attribution": "This story by Global Voices East Asia originally appeared on Global Voices. https://globalvoices.org/2025/09/18/how-a-chinese-company-exports-the-great-firewall-to-autocratic-regimes/",
+  "content_sha256": "ad48e506786c46cf1fae83f249eeaa813277603e2c276768d24d2433ffda8bf9",
+  "source_sha256": "812f34f83338a1b9d0424584f77f92a8e925afe83b20bff67dc230a2dc1ec62e",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

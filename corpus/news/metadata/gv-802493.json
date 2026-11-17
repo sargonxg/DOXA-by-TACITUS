@@ -1,0 +1,605 @@
+{
+  "id": "gv-802493",
+  "publisher_id": 802493,
+  "source_id": "globalvoices:802493",
+  "source_url": "https://globalvoices.org/2023/12/05/violence-in-brazils-schools-no-attacks-were-planned-or-conceived-of-offline/",
+  "title": "Violence in Brazil’s schools: ‘No attacks were planned or conceived of offline’",
+  "published_at": "2023-12-05T14:33:24Z",
+  "modified_at": "2023-12-05T14:33:25Z",
+  "api_author_id": 2012,
+  "api_content_sha256": "a50477ddb8b887f7e1e9586473ec0c577d7de99e849458b71feb5f8dd2ddfd9a",
+  "api_response_sha256": "d6f02a2eadb9352c262ad7a8c974a2685d95d17648de09a94ccba861356e725c",
+  "api_retrieved_at": "2026-11-16T22:20:58.882918+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 247,
+      "count": 4731,
+      "name": "Education",
+      "slug": "education",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 1352,
+      "count": 3301,
+      "name": "North America",
+      "slug": "north-america",
+      "parent": 219
+    },
+    {
+      "id": 186,
+      "count": 3578,
+      "name": "U.S.A.",
+      "slug": "usa",
+      "parent": 1352
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 282,
+      "count": 6941,
+      "name": "Youth",
+      "slug": "youth",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-802493-b00001",
+      "text": "On October 23, a 16-year-old teenager attacked a public school in São Paulo with a gun, killed a 17-year-old student, and left two other people injured. It was one of the latest attacks on schools in Brazil, which have increased in recent years. The country saw a 50 percent increase in reports of violence in schools between January and September this year.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 358,
+      "source_links": [
+        "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2023-11/violencia-nas-escolas-tem-aumento-de-50-em-2023",
+        "https://g1.globo.com/sp/sao-paulo/noticia/2023/10/23/estudante-morta-em-escola-estadual-na-zona-leste-de-sp-tinha-17-anos-e-estava-no-3o-ano-do-ensino-medio.ghtml",
+        "https://g1.globo.com/sp/sao-paulo/noticia/2023/10/23/policia-atende-ocorrencia-de-disparo-de-arma-de-fogo-dentro-de-escola-na-zona-leste-de-sp.ghtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00002",
+      "text": "From the first attack recorded in 2002 to October 2023, there were 164 victims of school attacks; 49 of them died. There were 36 such attacks recorded during this period.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 360,
+      "body_end": 530,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00003",
+      "text": "The data comes from a report prepared by a working group from the Ministry of Education, delivered to the federal government in early November. It highlights that 77 percent of the deaths were caused by firearms, that all the attackers were male, and notices the lack of control of online hate speech as one of the causes.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 532,
+      "body_end": 854,
+      "source_links": [
+        "https://www.gov.br/mec/pt-br/acesso-a-informacao/participacao-social/grupos-de-trabalho/prevencao-e-enfrentamento-da-violencia-nas-escolas/resultados/relatorio-ataque-escolas-brasil.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00004",
+      "text": "The project coordinator, educator, and political scientist Daniel Cara, spoke with Global Voices in an email interview about the current situation, and discussed points raised in the research.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 856,
+      "body_end": 1048,
+      "source_links": [
+        "https://pt.wikipedia.org/wiki/Daniel_Cara"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00005",
+      "text": "Global Voices (GV): In Brazil, according to the report, 36 attacks on schools were recorded between 2002 and October 2023. Of these, 16 occurred only this year — the highest number of incidents. How can this be explained?",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1050,
+      "body_end": 1271,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00006",
+      "text": "> Daniel Cara (DC): É um processo cumulativo de um fenômeno que se enraizou em algumas subcomunidades, devido à leniência com que os governos federal, estaduais, distrital e municipais trataram a emergência do ódio no país e foram complacentes com o extremismo desde 2016. Além disso, o país abrandou o controle de armas. Apenas no governo de transição, com o relatório “O extremismo de direita entre adolescentes e jovens no Brasil: ataques às escolas e alternativas para a ação governamental”, publicado em dezembro de 2022, o país assumiu oficialmente o problema. A questão é que já era tarde para frear o fenômeno em 2023. E, para ser sincero, não vejo os governos assumirem como prioridade o enfrentamento do extremismo – motor central dos ataques –, com a rara exceção do Ministério da Justiça e Segurança Pública e de alguns setores das forças de segurança.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1273,
+      "body_end": 2137,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00007",
+      "text": "> Daniel Cara (DC): It is a cumulative process of a phenomenon that has developed in some sub-communities, due to the leniency of federal, state, district, and municipal authorities towards the emergence of hate in the country, and [to the fact that they] have been complacent with extremism since 2016. Furthermore, the country has relaxed gun control. Only with the transitional government and the report “Right-wing extremism among teenagers and young people in Brazil: attacks on schools and alternatives for government action,” published in December 2022, did the country officially recognize the problem. The issue is that in 2023 it was already quite late to stop this phenomenon. And, to be honest, I don't see governments prioritizing tackling extremism – which is the central driver of attacks – with the rare exception of the Ministry of Justice and Public Security, and some sectors of the security forces.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2139,
+      "body_end": 3057,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00008",
+      "text": "GV: The new report states that “extremism is the central element of attacks on schools,” and that misogyny and racism play a crucial role. Could you expand on that?",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3059,
+      "body_end": 3223,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00009",
+      "text": "> DC: Sobre o extremismo, é importante dizer que a literatura científica ainda não foi capaz de apresentar um consenso sobre o termo. Contudo, há uma concordância sobre a existência dessa forma violenta de compreender e viver o mundo e se relacionar com as pessoas.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3225,
+      "body_end": 3490,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00010",
+      "text": "> Na maioria dos estudos, extremismo é uma ideologia constituída por uma combinação de diferentes características, sendo que algumas delas são predominantes: racismo, xenofobia, misoginia, LGBTQIA+fobia, anti-democracia, nacionalismo extremo, militarismo, pensamento de lei e ordem e aumento do uso da força policial como solução para a violência e como instrumento contra direitos civis, políticos e sociais.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3492,
+      "body_end": 3901,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00011",
+      "text": "> No caso dos ataques às escolas, é a misoginia e o racismo que puxam o fio do extremismo, mas todos os demais elementos estão presentes.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3903,
+      "body_end": 4040,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00012",
+      "text": "> Em poucas palavras, o extremismo é uma ideologia de aniquilação da diversidade, exclusão do outro, em nome do supremacismo branco, nos termos propostos por Abdias do Nascimento [escritor e ativista de direitos civis].",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4042,
+      "body_end": 4261,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00013",
+      "text": "> DC: Regarding extremism, it is important to note that academic literature has not yet been able to present a consensus on [defining] the term. However, there is agreement on the existence of this violent way of understanding and living in the world and relating to people.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4263,
+      "body_end": 4537,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00014",
+      "text": "> In most studies, extremism[s] are ideologies constituted by a combination of characteristics, some of which are predominant: racism, xenophobia, misogyny, LGBTQIA+phobia, anti-democracy, extreme nationalism, militarism, a fixation on law and order, and increasing the use of police force to solve violence and as a tool against civil, political, and social rights.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4539,
+      "body_end": 4905,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00015",
+      "text": "> In the case of attacks on schools, it is misogyny and racism that mainly drive extremism, but all the other elements are present.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4907,
+      "body_end": 5038,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00016",
+      "text": "> In a nutshell, extremism is an ideology of the annihilation of diversity, and the exclusion of others, in the name of white supremacy, as described by Abdias do Nascimento [writer and civil rights activist].",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5040,
+      "body_end": 5249,
+      "source_links": [
+        "https://pt.wikipedia.org/wiki/Abdias_do_Nascimento"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00017",
+      "text": "GV: What are the main similarities and differences between what is happening in Brazil and what we see in other countries analyzed?",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5251,
+      "body_end": 5382,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00018",
+      "text": "> DC: É possível dizer que os ataques às escolas são fenômenos internacionais – hoje, com maior incidência nos EUA e no Brasil –, devido a dois fatores: primeiro, os copycat crimes, ou seja, crimes por imitação. Segundo, devido ao efeito contágio ou efeito onda.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5384,
+      "body_end": 5646,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00019",
+      "text": "> Os ataques brasileiros são, quase sempre, uma exaltação ao massacre de Columbine (EUA, 1999) ou a um ataque brasileiro cujo autor exaltou Columbine. E a ocorrência de ataques, ou ameaças, alimentam outros ataques. Aí reside um fator macabro: hoje, um dos principais objetivos dos atacantes é se sentirem poderosos por ser capaz de exercer violência e chocar a sociedade. Para eles, isso gera notoriedade. Aí estão duas chaves que precisamos girar: mostrar tanto que é uma covardia, não exercício de poder, quanto controlar a forma como a imprensa e as plataformas sociais fazem a cobertura e divulgação abjeta dos ataques.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5648,
+      "body_end": 6272,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00020",
+      "text": "> DC: We can say that attacks on schools are an international phenomenon – today the highest number of cases are in the USA and Brazil – due to two factors: first, copycat crimes; [and] second, due to the contagion effect or wave effect.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6274,
+      "body_end": 6511,
+      "source_links": [
+        "https://pt.wikipedia.org/wiki/Efeito_copycat"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00021",
+      "text": "> Brazilian attacks are almost always inspired by the Columbine massacre (USA, 1999) or a Brazilian attack where the perpetrator has glorified it. And the occurrence of attacks, or threats, fuels other attacks. Here lies a macabre element: today, one of the main aims of these attackers is to feel powerful by being able to commit violence and shock society. For them, this generates notoriety. There are two factors that we need to address: to show that it is cowardice, not exercising power, and to control the deplorable way that the press and social media cover and broadcast attacks.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6513,
+      "body_end": 7101,
+      "source_links": [
+        "https://pt.wikipedia.org/wiki/Massacre_de_Columbine"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00022",
+      "text": "GV: Was there anything, any data or cases, that surprised you while working on this project?",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7103,
+      "body_end": 7195,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00023",
+      "text": "> DC: O fato que o fenômeno se alastra e vai se tornando, a cada dia, normal. Isso é inaceitável. Estamos vivendo a normalização dos ataques, a banalização da violência contra comunidades escolares, profissionais da educação, alunas e alunos. Outro elemento é a fraqueza dos governos em enfrentarem o fenômeno dos ataques. Querem esconder o problema, de repente acontece um ataque e volta a ser prioridade o tema, porém, apenas por alguns dias. Até ser escanteado novamente. Ou seja, apenas respondem à demanda pública. Já temos dois relatórios, o da transição e o do Grupo de Especialistas em Violência nas Escolas. E, sendo franco, lamentavelmente, o próprio Ministério da Educação age assim – ainda que seja o órgão responsável pelo relatório que relatei. No âmbito do governo federal, a exceção é o Ministério da Justiça e Segurança Pública, que entre erros e acertos, tem a coragem de assumir a questão e enfrentar o problema. O mesmo pode ser dito de algumas forças de segurança de estados e algumas raras iniciativas em municípios.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7197,
+      "body_end": 8235,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00024",
+      "text": "> DC: The fact that the phenomenon has spread and is becoming, with every passing day, normalized. This is unacceptable. We are witnessing the normalization of [these] attacks, the trivialization of violence against school communities, education professionals, and students. Another element is the weakness of governments in dealing with the phenomenon of [school] attacks. They want to hide the problem, [and] suddenly an attack happens and the issue becomes a priority again, but only for a few days. Until it is forgotten again. In other words, they only react to [short-term] public demand. We already have two reports, the transition [government’s] report and the one from the Specialist Group on Violence in Schools. And, to be honest, regrettably, the Ministry of Education itself acts like this – even though it is the body responsible for the report I made. Within the federal government, the exception is the Ministry of Justice and Public Security, which, with mistakes and successes, has had the courage to take on the issue and face the problem. The same can be said of some state security forces and some rare initiatives by municipalities.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 8237,
+      "body_end": 9391,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00025",
+      "text": "GV: The lack of control of hate speech on digital media is seen as one of the main causes for the increase in such cases. What can we observe in cases where this is evident? What are the most common channels, and what has been the response from companies?",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 9393,
+      "body_end": 9648,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00026",
+      "text": "> DC: Nenhum ataque foi planejado ou idealizado fora da internet. Desde Columbine, um ataque inspira o outro, em uma perspectiva de gamificação da vida. Hoje, os atacantes usam todas as plataformas e contam com a leniência, pusilanimidade das autoridades públicas em regular essas plataformas e responsabilizá-las. É o que sempre repito: se um aplicativo de rede social consegue identificar meu desejo, como ele não é capaz de observar o discurso e o conteúdo de ódio? As empresas fingem que fazem o máximo, por pressão da sociedade e dos governos, mas não fazem nada.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 9650,
+      "body_end": 10218,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00027",
+      "text": "> DC: No attack was planned or conceived of offline. Since Columbine, one attack has inspired another, driven by the perpetrators’ gamified approach to life. Now, attackers use all platforms and can count on the leniency and timidity of public authorities in regulating these platforms and holding them to account. It’s what I always say: if a social media platform can work out what I want [from monitoring online activity], how is it not capable of detecting hate speech and content? Companies pretend to do their best, under pressure from society and governments, but they do nothing.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 10220,
+      "body_end": 10807,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00028",
+      "text": "GV: Among the emergency actions to be taken by the state are disbanding online groups and holding platforms responsible. What are the main difficulties in putting this into practice?",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 10809,
+      "body_end": 10991,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00029",
+      "text": "> DC: Há uma questão que é vontade política. Não vejo muita, ainda. Vencida essa etapa, os dois relatórios que coordenei e relatei, em processos coletivos amplos, apresentam caminhos. Porém, a principal dificuldade é lidar com a má vontade, a irresponsabilidade e as estratégias jurídicas das plataformas. Sem a adesão delas à causa das escolas protegidas e seguras, permaneceremos buscando agulhas no palheiro.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 10993,
+      "body_end": 11404,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00030",
+      "text": "> DC: There is the issue of political will. I don't see much yet. When we see some of this, the two reports that I coordinated and put together, using broad collective processes, present ways forward. The main difficulty, though, is dealing with the platforms’ lack of will, irresponsibility, and legal strategies. Without their support for safe and secure schools, we’ll keep looking for needles in a haystack.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 11406,
+      "body_end": 11817,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00031",
+      "text": "GV: How much impact does Brazil's polarized political situation have on the growing violence in schools?",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 11819,
+      "body_end": 11923,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00032",
+      "text": "> DC: A polarização é parte do problema, sem dúvida. Mas a polarização, nem sempre, resulta em ódio. O problema é que ódio que tomou conta da sociedade brasileira desde 2016 e não foi enfrentado, colaborou com a emergência dos ataques, devido à ascensão do extremismo.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 11925,
+      "body_end": 12193,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00033",
+      "text": "> DC: Polarization is part of the problem, without a doubt. But polarization does not always result in hate. The problem is that the hatred that has spread through Brazilian society since 2016, and which has not been tackled, contributed to the phenomenon of [school] attacks due to the rise of extremism.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 12195,
+      "body_end": 12500,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00034",
+      "text": "GV: What about current firearms legislation?",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 12502,
+      "body_end": 12546,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00035",
+      "text": "> DC: Precisa ser mais rígida e mais efetiva. Meses atrás, dei uma entrevista ao Washington Post. Defendi a tese que a principal diferença do fenômeno dos ataques às escolas no Brasil e nos EUA é a permissividade estadunidense com armas de fogo. No Brasil, tivemos 36 ataques que vitimaram 37 comunidades escolares – o ataque de Aracruz acometeu duas escolas. Desses ataques, 49 pessoas morreram e 115 ficaram feridas. Das mortes, 38 foram por armas de fogo. Ou seja, a letalidade é muito maior. Além disso, a cultura da arma mobiliza ataques.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 12548,
+      "body_end": 13091,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00036",
+      "text": "> DC: It needs to be stricter and more effective. Some months ago, I gave an interview to the Washington Post. I argued that the main difference between the phenomenon of school attacks in Brazil and in the USA is America’s permissiveness with firearms. In Brazil, we had 36 attacks which hit 37 school communities – the Aracruz attack targeted two schools. In these attacks, 49 people died and 115 were injured. Of these deaths, 38 were by firearms. So the lethality is much higher. Furthermore, gun culture encourages attacks.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 13093,
+      "body_end": 13621,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Aracruz_school_shootings",
+        "https://www.washingtonpost.com/world/2023/04/12/brazil-school-shootings-columbine-effect/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00037",
+      "text": "GV: The report points out that the study is based on cases reported in the press, do you think the numbers may be underreported? Is there any prospect of official monitoring of cases?",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 13623,
+      "body_end": 13806,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802493-b00038",
+      "text": "> DC: Sim, por isso defendemos que o Sistema Nacional de Acompanhamento e Combate à Violência nas Escolas (SNAVE), criado por lei, seja regulamentado. Essa regulamentação deve estabelecer um procedimento entre escolas, conselhos tutelares, equipamentos de saúde e assistência social, delegacias de polícia e forças de segurança para notificar riscos e casos em um banco de dados nacional e comum, que deve ter acesso restrito a autoridades públicas, Sistema de Garantia dos Direitos da Criança e do Adolescente (SGDCA) e pesquisadores. Essa é a minha defesa.",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 13808,
+      "body_end": 14366,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802493-b00039",
+      "text": "> DC: Yes, that’s why we argue that the National System for Monitoring and Combating Violence in Schools (SNAVE), created by law, should be regulated. This regulation should set procedures between schools, guardianship councils, healthworker and social teams, police stations, and security forces to notiify of risks and record cases in a national, common database, which must have access restricted to public authorities, the System of Guarantee of the Rights of Children and Adolescents (SGDCA) and researchers. That's my argument.",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 14368,
+      "body_end": 14901,
+      "source_links": [
+        "http://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14643.htm"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "bc5d4f03391a245adc9b6808f671dbbb093078ef230aacdb7e7a617cffbbda93",
+  "word_count": 2442,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 14901,
+  "retrieved_at": "2026-11-16T22:41:33.546530+00:00",
+  "raw_html_sha256": "7dd0dcd378cb346b45e99130468388f3557f96caa38cbcdbfb7904215676e68c",
+  "resolved_source_url": "https://globalvoices.org/2023/12/05/violence-in-brazils-schools-no-attacks-were-planned-or-conceived-of-offline/",
+  "canonical_url": "https://globalvoices.org/2023/12/05/violence-in-brazils-schools-no-attacks-were-planned-or-conceived-of-offline/",
+  "source_bytes": 191836,
+  "authors": [
+    {
+      "name": "Fernanda Canofre",
+      "url": "https://pt.globalvoices.org/author/fernanda-canofre/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Liam Anderson",
+      "url": "https://globalvoices.org/author/liam-anderson/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 802493,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "7dd0dcd378cb346b45e99130468388f3557f96caa38cbcdbfb7904215676e68c",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-59c3c1105eedb7eb36f1",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-12",
+    "eligible_month_documents": 74,
+    "selected_month_documents": 62,
+    "inclusion_probability": 0.8378378378378378,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Fernanda Canofre",
+  "body_start": 523,
+  "body_end": 15424,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "cd18033e25758a7c2d27fbcefd459f9f20122ab1b26a3e96030e182df70fede4",
+  "text_path": "articles/gv-802493.txt",
+  "metadata_path": "metadata/gv-802493.json",
+  "attribution": "This story by Fernanda Canofre originally appeared on Global Voices. https://globalvoices.org/2023/12/05/violence-in-brazils-schools-no-attacks-were-planned-or-conceived-of-offline/",
+  "content_sha256": "cf7382ebda15ce4a633758d90c1e7e5f623852c4c74ccaa9044810f4273ca706",
+  "source_sha256": "7dd0dcd378cb346b45e99130468388f3557f96caa38cbcdbfb7904215676e68c",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

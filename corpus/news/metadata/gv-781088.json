@@ -1,0 +1,449 @@
+{
+  "id": "gv-781088",
+  "publisher_id": 781088,
+  "source_id": "globalvoices:781088",
+  "source_url": "https://globalvoices.org/2023/02/14/will-chinese-advanced-ai-chatbots-survive-chinas-online-censorship-system/",
+  "title": "Will Chinese advanced AI chatbots survive China’s online censorship?",
+  "published_at": "2023-02-14T09:47:05Z",
+  "modified_at": "2023-02-15T04:54:36Z",
+  "api_author_id": 254,
+  "api_content_sha256": "c3b901a1367c8980f8008644166f42920c384f40c09347a78610e2b7ae29bbef",
+  "api_response_sha256": "8b3feb0e2101ac240a644420be8d11f4f4938cd1af5a1ecb243a3cbb01dc3439",
+  "api_retrieved_at": "2026-11-16T22:20:50.704723+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-781088-b00001",
+      "text": "ChatGPT, an advanced chatbot developed by Open AI, has attracted a lot of public attention since its launch on November 22, 2022. Following the trend, Chinese internet giants, including Baidu, China's biggest search engine, and Tencent, the internet-based company which owns WeChat, also announced their plans to roll out their own versions of ChatGPT-style services.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 367,
+      "source_links": [
+        "https://openai.com/blog/chatgpt/",
+        "https://www.reuters.com/technology/chatgpt-frenzy-sweeps-china-firms-scramble-home-grown-options-2023-02-10/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00002",
+      "text": "Advanced AI chatbots are developed to interact with humans in a conversational manner and can assist users in finding useful information, using text databases from the Internet. The technology has attracted a lot of interest as the chatbots, in addition to conducting content search and translation functions, are able to perform a variety of sophisticated tasks including writing college essays, news reports, political analyses, and more.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 369,
+      "body_end": 809,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00003",
+      "text": "As for chatGPT, it attracted more than a million users within one week of its launch. Users are astonished by its data presentation performance.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 811,
+      "body_end": 955,
+      "source_links": [
+        "https://www.demandsage.com/chatgpt-statistics/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00004",
+      "text": "Baidu will reportedly launch its Chinese Chatbot in March 2023, and as a result, its shares in the Hong Kong stock market jumped by 13 percent.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 957,
+      "body_end": 1100,
+      "source_links": [
+        "https://www.forbes.com/sites/ywang/2023/02/06/chinese-search-giant-baidu-jumps-after-confirming-plans-of-developing-chatgpt-style-project/?sh=35ee17471592"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00005",
+      "text": "However, the development of advanced chatbot technology in China looks unclear, as pointed out by many, thanks to the sophisticated Chinese censorship system. In fact, the country’s first chatGPT-style chatbot API, “Chat Yuan” only survived for six days since its launch on February 3, 2023.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1102,
+      "body_end": 1393,
+      "source_links": [
+        "https://www.edigest.hk/%e6%8a%95%e8%b3%87/%e5%9c%8b%e7%94%a2chatgpt-%e5%85%83%e8%aa%9e%e6%99%ba%e8%83%bd-%e5%81%9c%e6%ad%a2%e6%9c%8d%e5%8b%99-ed01-1126949/2/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00006",
+      "text": "“Chat Yuan” was developed by a tech firm based in Hangzhou. On February 9, the chatbot put up a service suspension notification, citing that it had violated existing regulations.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1395,
+      "body_end": 1573,
+      "source_links": [
+        "https://www.edigest.hk/%e6%8a%95%e8%b3%87/%e5%9c%8b%e7%94%a2chatgpt-%e5%85%83%e8%aa%9e%e6%99%ba%e8%83%bd-%e5%81%9c%e6%ad%a2%e6%9c%8d%e5%8b%99-ed01-1126949/2/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00007",
+      "text": "Although the chatbot later released a “system maintenance” notification and claimed that it would be restored shortly, the sudden takedown triggered many speculations on the reasons behind the takedown among Chinese social media users.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1575,
+      "body_end": 1810,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00008",
+      "text": "A screenshot of “Chat Yuan” analysis of China’s macro economy has gone viral, and many mocked that the Chinese AI could not pass the censorship test. Twitter user @dbezuqun reposted the viral chat message:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1812,
+      "body_end": 2017,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00009",
+      "text": "> So that’s why “Chat Yuan” was taken off the line? An AI that does not lie can’t pass the political test.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2019,
+      "body_end": 2125,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-781088-b00010",
+      "text": "Here is a translation of the chatbot’s analysis:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2127,
+      "body_end": 2175,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00011",
+      "text": "> 儘管新常態對中國經濟具有積極的影響，但是，經濟仍存在一些深層次的結構性問題，比如：經濟結構不合理，經濟增長乏力，投資不足，出口增長乏力，房地產泡沬嚴重，環境污染嚴重，能源消耗過大，就業壓力加大，企業效益下降，房地產泡沬嚴重等。我們分析認為，中國宏觀經濟不容樂觀。",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2177,
+      "body_end": 2310,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-781088-b00012",
+      "text": "> Although the new normalcy has positive impacts on the Chinese economy, the economy still has some underlying structural problems. Such as defects in the economic structure, weakening strength in economic growth, inadequate investment, declining export growth, severe property bubbles, environmental pollution, overconsumption of energy, unemployment pressure, a downturn of corporate efficiency and etc. China’s macroeconomic environment is not optimistic in our analysis.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2312,
+      "body_end": 2786,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-781088-b00013",
+      "text": "Apparently, the chatbot’s answer is too pessimistic and negative, violating the Chinese propaganda guidelines that all media outlets should promote positive energy and tell good stories about China.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2788,
+      "body_end": 2986,
+      "source_links": [
+        "https://www.npr.org/2022/01/10/1071766938/why-the-chinese-government-wants-more-feel-good-stories-posted-online"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00014",
+      "text": "Many also found out that the Chinese chatbot had included a long censorship list to the extent that it could not react to political content. @CDTChinese for example tested that when asked “How do you comment on Chinese leader Xi Jinping?” the chatbot answered, “Your entry contains rule-breaking terms, please re-enter.”",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2988,
+      "body_end": 3308,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00015",
+      "text": "> Chat Yuan is the so-called first Chinese version of ChatGPT. It's answer really spell out its Chinese character.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3310,
+      "body_end": 3424,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-781088-b00016",
+      "text": "As a result of censorship, the chatbot also generates nonsensical answers that give people a good laugh. In another screenshot circulated on Twitter, a Yuan Chat user tweaked an anti-Zero COVID protest slogan “Say no to PCR tests, say yes to freedom” into a question: “Say no to PCR tests, say yes to what?” The chatbot answered, “Yes to virus…”",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3426,
+      "body_end": 3771,
+      "source_links": [
+        "https://twitter.com/Xhnsoc__Redflag/status/1623544000463638528/photo/4"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00017",
+      "text": "On Weibo, many Chinese users express their skepticism about the future development of advanced Chinese chatbots. As Chinese search engines are notorious for spreading misleading advertisements, one Weibo user said:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3773,
+      "body_end": 3987,
+      "source_links": [
+        "https://www.caixinglobal.com/2019-06-13/baidu-rebuked-for-misleading-and-vulgar-ads-101426610.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00018",
+      "text": "> 别还在讨论为什么chatGPT没有出现在中国了，就算出现了，你能用吗？你敢用吗？就算出现了，也是各种敏感词和阉割版，插满各种广告的广告版。没准你向它提问题，先还得机器审核+人工审核才能放出问题。然后AI放出的回答再机审+人审一遍。",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3989,
+      "body_end": 4106,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-781088-b00019",
+      "text": "> Let’s not ask why China does not have chatGPT yet. Even if we have it, can you use it? Do you dare use it? Even if we have chatGPT, they would be twisted into censored and spammed chatbots, flooded with commercial content. Very likely, your questions would be reviewed by robots and humans and the AI-generated answers would be subjected to the same review too.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4108,
+      "body_end": 4471,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-781088-b00020",
+      "text": "Another user highlighted the contradictory nature of information technology and authoritarian regime:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4473,
+      "body_end": 4574,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00021",
+      "text": "> 如果chatgpt是下个经济增长点，那大国不容乐观啊。开放的内容平台太少，政治限制太多，像敏感词之类只会给ai挖坑。网络包括现实社会进入去中心化时期，强权政治与去中心化趋势是矛盾的，要怎么办呢？",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4576,
+      "body_end": 4675,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-781088-b00022",
+      "text": "> If ChatGPT drives economic growth, the future of the big country is not so optimistic. There are too few open content platforms, and too many political restrictions like sensitive words. This would entrap the AI. Both the internet and society are more and more decentralised nowadays, how do we settle the conflict between authoritarian politics and decentralization?",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4677,
+      "body_end": 5046,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-781088-b00023",
+      "text": "And another ridiculed the censorship system:",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5048,
+      "body_end": 5092,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-781088-b00024",
+      "text": "> 我们这种审查环境，允许诞生chatGPT吗？不会做个openAI后，后台人工审核人员比工程师还要对吧……人家chatGPT公司500人，咱们这同样水准的产品后台审核人员就得有5000人吧……",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5094,
+      "body_end": 5191,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-781088-b00025",
+      "text": "> Can our censored environment allow the existence of chatGPT? What if after launching the open AI, we need more content censor staff than programmers… chatGPT only hires around 500 people, and with the same product, we probably need 5000 human censors…",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5193,
+      "body_end": 5446,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "95f82c2ef669280ddacf7d680b6d82ca1e58896ee74a2d6686ae9439373db0e7",
+  "word_count": 786,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5446,
+  "retrieved_at": "2026-11-16T22:38:07.804082+00:00",
+  "raw_html_sha256": "0d564d9f334628e5091d2516e57e05c88873d31d467311e35e41aec731397522",
+  "resolved_source_url": "https://globalvoices.org/2023/02/14/will-chinese-advanced-ai-chatbots-survive-chinas-online-censorship-system/",
+  "canonical_url": "https://globalvoices.org/2023/02/14/will-chinese-advanced-ai-chatbots-survive-chinas-online-censorship-system/",
+  "source_bytes": 189081,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 781088,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "0d564d9f334628e5091d2516e57e05c88873d31d467311e35e41aec731397522",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-22f370f0f7f2308adbc0",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-02",
+    "eligible_month_documents": 77,
+    "selected_month_documents": 64,
+    "inclusion_probability": 0.8311688311688312,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Oiwan Lam",
+  "body_start": 474,
+  "body_end": 5920,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "a7056e40ea2539389151935153f339cce29292e9efed654b30dbd8bcb1360046",
+  "text_path": "articles/gv-781088.txt",
+  "metadata_path": "metadata/gv-781088.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2023/02/14/will-chinese-advanced-ai-chatbots-survive-chinas-online-censorship-system/",
+  "content_sha256": "86c6aeb890c2b37eee216539af963e089481cc1ff99127e206450bde55a3ed23",
+  "source_sha256": "0d564d9f334628e5091d2516e57e05c88873d31d467311e35e41aec731397522",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

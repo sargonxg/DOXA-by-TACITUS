@@ -1,0 +1,490 @@
+{
+  "id": "gv-746630",
+  "publisher_id": 746630,
+  "source_id": "globalvoices:746630",
+  "source_url": "https://globalvoices.org/2021/09/23/behind-chinese-wikipedia-user-ban-threats-verbal-attacks-and-election-canvassing/",
+  "title": "Behind Chinese Wikipedia user ban: threats, verbal attacks and election canvassing",
+  "published_at": "2021-09-23T00:41:29Z",
+  "modified_at": "2021-09-23T02:49:46Z",
+  "api_author_id": 254,
+  "api_content_sha256": "a1669518ba750716a743114e57909f4bb65166a5cd1da4e4bc9390a65f07b9bc",
+  "api_response_sha256": "165e22c0d07dffa7c54bb5a94004307666a766d7b47627d5d5c9d5c39f78514e",
+  "api_retrieved_at": "2026-11-16T22:20:38.264060+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 49,
+      "count": 1566,
+      "name": "Hong Kong (China)",
+      "slug": "hong-kong-china",
+      "parent": 16
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-746630-b00001",
+      "text": "The Wikimedia Foundation has banned seven users and revoked administrator rights of twelve mainland Chinese administrators following an investigation on alleged infiltration of Wikipedia that may threaten the safety of the platform’s Chinese community.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 252,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00002",
+      "text": "Wikipedia is the world’s most popular online encyclopedia. The latest controversy concerning Chinese Wikipedia surfaced after Stand News and the Hong Kong Free Press reported on an ‘edit war’ between mainland Chinese and Hong Kong users over entries related to Hong Kong, such as the 2019 anti extradition protests and the Yuen Long subway attack incident on July 21, 2019. Screenshots of a conversation on a mainland Chinese Wikipedia chat group showed some community members discussing reporting Hong Kong Wikipedia users to the national security police.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 254,
+      "body_end": 810,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/2019_Yuen_Long_attack",
+        "https://hongkongfp.com/2021/07/11/wikipedia-wars-how-hongkongers-and-mainland-chinese-are-battling-to-set-the-narrative/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00003",
+      "text": "The Foundation released a statement on September 13 reading:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 812,
+      "body_end": 872,
+      "source_links": [
+        "https://lists.wikimedia.org/hyperkitty/list/wikimedia-l@lists.wikimedia.org/message/6ANVSSZWOGH27OXAIN2XMJ2X7NWRVURF/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00004",
+      "text": "> We have banned seven users and desysopped a further 12 as a result of long and deep investigations into activities around some members of the unrecognized group Wikimedians of Mainland China.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 874,
+      "body_end": 1067,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00005",
+      "text": "The ‘unrecognized group’ refers to WMC, which has more than 300 members and claims to represent the mainland Chinese Wikipedia community.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1069,
+      "body_end": 1206,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00006",
+      "text": "The Foundation further explained that the unprecedented steps were taken as ‘some users have been physically harmed’ as a result of the “exposure of personal information to users in mainland China.”",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1208,
+      "body_end": 1406,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00007",
+      "text": "In order to understand the Foundation’s decision and the details of the threats faced by the Chinese Wikipedian community, Global Voices interviewed a veteran editor from mainland China through email. The editor's identity is anonymous due to security concerns.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1408,
+      "body_end": 1669,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00008",
+      "text": "Oiwan Lam: Several media outlets have described the editing debates between mainland Chinese and Hong Kong Wikipedians as a war. Do you agree with the ‘war’ metaphor?",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1671,
+      "body_end": 1837,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00009",
+      "text": "> Mainland Chinese Editor: 这不是香港与中国大陆维基人之间的战争。这次事件的根本原因是社群的某些用户长期违反社群的自治规则，而社群自身又无力解决所导致。而这些肆意妄为的用户又以中國大陸維基人用戶組（WMCUG／WMC）的成员为主（WMCUG总是自称代表中国大陆的维基人，可能是这个给外界一个错误的印象吧）。肆意妄为的事情包括了互相包庇，在社群选举当中拉票、排除异己，对其他用户进行语言暴力而得不到惩罚，甚至即使惩罚也会被包庇的管理员解除掉。",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1839,
+      "body_end": 2072,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00010",
+      "text": "> Mainland Chinese Editor: This is not a war between Hong Kong and mainland Chinese Wikipedia users. The incident is caused by a prolonged violation of community rules by some users. And the community has failed to solve the problem internally. These abusive users mostly came from an online chat group WMCUG (Wikimedians of mainland China user group) or WMC (Wikimedians of mainland China). They claimed that they represented Wikimedians in mainland China and gave people a wrong impression. The abusive behaviors include shielding each other in the editing process, election canvassing and excluding those who disagreed with them. As a result, they were not sanctioned when they verbally attacked other Wikimedians or even if they were sanctioned, other administrators would lift the sanction.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2074,
+      "body_end": 2869,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00011",
+      "text": "OL: Can you point to specific editing incidents that sparked debate? How did the Wikipedian community in your region react to the incident? And what can be done to improve communication?",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2871,
+      "body_end": 3057,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00012",
+      "text": "> MCE: 在我看来争议有几种，一种是文化冲突造成的争议，每一个个体都有自己的思想文化体系和价值观，当不同的文化价值观用户遇到一起必然会有冲突。一种则是nerd间的那种争执，比如某句话应该如何表述，到底用哪个词表述更中立…这两种冲突，维基百科都有足够的机制来解决。只是这次一些人抱团且排外，并裹挟了一些人，而与之冲突的则都是一些分散的个体，这就造成了非常不平衡的局面，而且也无人能够调停这个局面。",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3059,
+      "body_end": 3258,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00013",
+      "text": "> MCE: There are different types of debates, one caused by cultural conflicts as every individual has their own culture and value systems and conflicts are inevitable. Another type of conflict is among nerds, they usually argue about expressions, particularly on a term's neutrality. These two types of conflicts can be resolved by the current Wikipedia mechanisms. But the debate can be very unfair if a group of people have strong coordination and pressure other community members to support their views while others are participating in the debate as individuals. In such a situation, the conflict cannot be resolved from within.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3260,
+      "body_end": 3892,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00014",
+      "text": "OL: The national security education in the greater China region has encouraged netizens to report individuals and acts that undermine the authority of the central and regional governments to the National Security Police. Are you worried that someone might report your editing work? What’s the impact of such policies on the Wikipedia community?",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3894,
+      "body_end": 4238,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00015",
+      "text": "> MCE: 是的，这是个非常可怕的事情。这种文化对本次事件也有很深的影响。这次被封禁的部分人以及WMCUG其中的另一些成员，除了之前爆出的扬言举报事件外，近几年在我看来，有时在讨论中所暴露出来的姿态，和那些其他网络群体中举报的用户画像非常相像，这也造成了许多大陆维基人，甚至这一两年来的一些香港维基人甚至台湾维基人（毕竟生活工作上很可能与大陆有许多交往）谨小慎微，特别是在政治相关的编辑与讨论上。虽然乐观来看，国家安全部门未必看得上这种争吵，但谁知道这些东西有没有被系统记录下来，未来哪一天说不定这会成为你的罪状之一呢。",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4240,
+      "body_end": 4501,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00016",
+      "text": "> MCE: Yes, this is a very terrifying trend and such a political culture has a very grave impact. Among those who were banned by the foundation and some members in the WMCUG, in addition to the screenshot of the conversation to report other users to the national security police, sometimes the attitude or manner reflected in discussions is quite typical of [police] informers. Many Wikimedians from mainland China, and in recent years from Hong Kong and even Taiwan (as they have connections to mainland China) have become extremely careful in editorial discussions, in particular when the topics are related to politics. While the national security authorities may not pay attention to the debates, people would be worried that these discussions would be recorded and used against them in the future.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4503,
+      "body_end": 5305,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00017",
+      "text": "OL: Have you heard of anyone in the Wikipedian community who have been threatened, interrogated or arrested by police for what they have said or written on Wikipedia?",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5307,
+      "body_end": 5473,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00018",
+      "text": "> MCE: 我没有听说过有人因为编辑(said or written)维基百科而遭遇这种事情，但有听说因为做一些与维基百科有关的活动而遭遇这种状况，甚至有商业机构因为与维基百科合作而被约谈。",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5475,
+      "body_end": 5571,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00019",
+      "text": "> MCE: I have not heard of anyone being threatened by what they said or wrote on Wikipedia. But I have heard that someone had been threatened for their involvement in Wikipedia related activity. A commercial organization was invited to ‘an interview’ [editor note: interview usually means “interrogation” by police or other authorities in mainland Chinese context] for collaborating with Wikipedia.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5573,
+      "body_end": 5971,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00020",
+      "text": "OL: Are you concerned about infiltration? Can you explain why or why don’t you think it is a problem?",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5973,
+      "body_end": 6074,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00021",
+      "text": "> MCE: ‘infiltration’ 是媒体的误读，因为这个词太多用在政治和国际关系中了。WMF所说的’infiltration'是指不良团体与个人对维基自治社群的破坏，并且造成社群无法自我调解的状况",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6076,
+      "body_end": 6179,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00022",
+      "text": "> MCE: The term ‘infiltration’ is a bit misleading as it has been widely used in politics and international relations. The infiltration concern raised by Wikimedia Foundation refers to people or groups that had harmed the Wikimedian self-governance rule to the extent that it could not be resolved internally.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6181,
+      "body_end": 6490,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00023",
+      "text": "OL: I noticed that there were calls (Xinjiang Plan 2021–2030) among mainland Chinese Wikipedians to edit pages related to Xinjiang, although the editor (Walter Grassroot) was sanctioned, some are still worried that similar campaigns would eventually turn Wikipedia into a Chinese propaganda branch. How can Wikipedia mitigate similar kinds of calls for political editing?",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6492,
+      "body_end": 6863,
+      "source_links": [
+        "https://web.archive.org/web/20210326092029/https://zh.wikipedia.org/wiki/Wikipedia:%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%BB%B4%E5%9F%BA%E4%BA%BA%E7%94%A8%E6%88%B7%E7%BB%84/%E6%96%B0%E7%96%86%E8%AE%A1%E5%88%92"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00024",
+      "text": "> MCE: 我认为维基百科在目前的框架下根本不需要担心这种问题，类似的呼吁在维基百科来说很常见，不仅仅是政治的，也有其他领域的，比如自然科学、女性、（条目）贫乏的非洲等等（Xinjiang Plan 2021-2030从内容上来看也不是政治性为主的，虽然其目的很可能是政治性的）。需要担心的是，维基百科之外中文内容的劣质才是根本的，而这需要作者、媒体与出版商来解决，而在我看来，至少近期是比较悲观的。而这些都是维基百科编写所要依靠的外部来源，特别是与中华文化圈相关的事物。",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6865,
+      "body_end": 7102,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00025",
+      "text": "> MCE: Under the editing principle adopted by Wikipedia, I am not worried about this problem. In fact, it is not unusual to see similar kinds of editing calls on topics related to politics, natural science, women, poverty etc. The contents of Xinjiang Plan 2021–2030 is not entirely political, although the call may be driven by political intention. What I am worried about is the quality of the Chinese content on Wikipedia. We need good writers, media outlets and publications to ensure our quality. But I am quite pessimistic about the trend. Our editing work relies on outside sources, and for Chinese Wikipedia, we rely on quality information sources from the pan-Chinese culture circle.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7104,
+      "body_end": 7796,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00026",
+      "text": "OL: Do you agree with the Wikipedia Foundation's decision to ban seven users and revoke the admin rights of twelve mainland Chinese administrators?",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 7798,
+      "body_end": 7945,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-746630-b00027",
+      "text": "> MCE: 这次事件其实非常复杂，大概除了基金会负责此事的员工，没有人知道事情的全貌。根据基金会的说法，这次事件是在1年多前就已经进行了，而在2017年则已经开始了调查。而如果再回溯的话，则更可以追溯到2013年。许多用户通过不同途径、在不同时间一直在陆陆续续向基金会反映情况，基金会现在做出这个行为，应该是掌握了足够的材料才做出的。",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7947,
+      "body_end": 8115,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00028",
+      "text": "> 对于基金会的这个做法，我是从两方面看的，首先是大快人心，就像治愈了一场大病的感觉；其次，从维基百科内部来看，基金会对社群自治的干预是否过于激进了？自治社群如何才能避免这种状况发生是需要社群进一步去思考和讨论的",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 8117,
+      "body_end": 8223,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-746630-b00029",
+      "text": "> MCE: This is a very complicated issue. Apart from those who are responsible for the investigation, no one has a full picture of what exactly happened. According to the Foundation, the latest disputes surfaced more than one year ago and the Foundation started an investigation [on Chinese Wikipedia] in 2017. The challenges we are facing now can be traced back as far as 2013. Many users have raised the issues to the Foundation and I am sure that the Foundation has adequate evidence to make such a decision. My feelings are divided. On the one hand, I am thrilled as if a disease has been cured. On the other hand, I am worried if the intervention is too radical that it may affect the self-governance of the Chinese Wikipedia community. On the whole, I think the community has to think about how to address the problem internally and prevent similar harms from occurring in the future.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 8225,
+      "body_end": 9114,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "0b6461aa731a8790277eff0326a1958bcaa137d9260d0efc70a5e09a8b46fc36",
+  "word_count": 1254,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 9114,
+  "retrieved_at": "2026-11-16T22:31:59.945044+00:00",
+  "raw_html_sha256": "d67138cb8b764efedf38c50ff605997893bcd20f136a688c5898a42939d5c5c5",
+  "resolved_source_url": "https://globalvoices.org/2021/09/23/behind-chinese-wikipedia-user-ban-threats-verbal-attacks-and-election-canvassing/",
+  "canonical_url": "https://globalvoices.org/2021/09/23/behind-chinese-wikipedia-user-ban-threats-verbal-attacks-and-election-canvassing/",
+  "source_bytes": 198959,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 746630,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "d67138cb8b764efedf38c50ff605997893bcd20f136a688c5898a42939d5c5c5",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-f7329832fb8aac3d34c7",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-09",
+    "eligible_month_documents": 83,
+    "selected_month_documents": 69,
+    "inclusion_probability": 0.8313253012048193,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Oiwan Lam",
+  "body_start": 495,
+  "body_end": 9609,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "931379fe06d7c0edba3c2ce3d9c75de518bf242b161c4609c1ed805e4b9cfd07",
+  "text_path": "articles/gv-746630.txt",
+  "metadata_path": "metadata/gv-746630.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2021/09/23/behind-chinese-wikipedia-user-ban-threats-verbal-attacks-and-election-canvassing/",
+  "content_sha256": "bf4df9dc2f9c1fb1d4e88b6c9b5a3294181f737c71c7b995de512511bfff8561",
+  "source_sha256": "d67138cb8b764efedf38c50ff605997893bcd20f136a688c5898a42939d5c5c5",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,447 @@
+{
+  "id": "gv-700944",
+  "publisher_id": 700944,
+  "source_id": "globalvoices:700944",
+  "source_url": "https://globalvoices.org/2020/03/18/turkmenistan-fights-coronavirus-with-more-isolation-and-herbal-remedies/",
+  "title": "Turkmenistan fights coronavirus with (more) isolation and herbal remedies",
+  "published_at": "2020-03-18T16:16:34Z",
+  "modified_at": "2020-04-26T23:38:15Z",
+  "api_author_id": 1658,
+  "api_content_sha256": "4c3155c8d893d37687f12476e3fd71a12cc4086e5ba7333b70c3ed5b9fdf6f9b",
+  "api_response_sha256": "6400a2a69e2b1612f7bdabedd6b26a0bd74341ef3b4189d69f04207808bc2f03",
+  "api_retrieved_at": "2026-11-16T22:20:23.593459+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 288,
+      "count": 7347,
+      "name": "Central Asia &amp; Caucasus",
+      "slug": "central-asia-caucasus",
+      "parent": 219
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 85,
+      "count": 453,
+      "name": "Turkmenistan",
+      "slug": "turkmenistan",
+      "parent": 288
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-700944-b00001",
+      "text": "Check out Global Voices’ special coverage of the global impact of COVID-19.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 75,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/covid-19-global-coverage-for-a-pandemic/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00002",
+      "text": "A pandemic, by definition, reaches everybody. There are now reports that the coronavirus has reached Turkmenistan, one of the world's most isolated and closed states. In recent years, the gas-rich desert state has suffered a protracted economic downturn, leaving observers to wonder how Turkmenistan's public services will cope with a full-blown humanitarian emergency.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 77,
+      "body_end": 446,
+      "source_links": [
+        "https://eurasianet.org/turkmenistan-is-suffering-an-economic-crisis-of-its-own-making"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00003",
+      "text": "At the time of writing, Turkmenistan is one of the few countries in Eurasia for which there is no data on the authoritative Johns Hopkins online map of confirmed coronavirus cases. This could be due to the notorious difficulty of getting accurate information from the country, where information is strictly controlled and censorship of the media is ubiquitous.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 448,
+      "body_end": 808,
+      "source_links": [
+        "https://coronavirus.jhu.edu/map.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00004",
+      "text": "Read more: Why we must keep shining a light on Turkmenistan",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 810,
+      "body_end": 869,
+      "source_links": [
+        "https://globalvoices.org/2019/09/09/why-we-must-keep-shining-a-light-on-turkmenistan/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00005",
+      "text": "True to form, Turkmen officialdom is keeping quiet about bad news on the horizon. They have barely mentioned the word “coronavirus,” which has not appeared on any government website after one cursory mention on March 5. That same day, citing medical sources in the capital Ashgabat, RFE/RL's Turkmenistan service wrote that there are probably at least two confirmed coronavirus cases in the country.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 871,
+      "body_end": 1270,
+      "source_links": [
+        "https://www.rferl.org/a/secretive-turkmenistan-beefs-up-coronavirus-measures-amid-reports-of-first-infections/30470538.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00006",
+      "text": "Coronavirus cases in Turkmenistan are not implausible. The country borders Kazakhstan and Uzbekistan to the north, which both reported their first cases this month and declared nationwide emergencies this week. Turkmenistan also shares 1,148 kilometres of its southern border with crisis-stricken Iran, with over 17,000 known cases and nearly 1,200 deaths to date. Like the rest of its neighbours in Central Asia, Turkmenistan also maintains a brisk trade with Turkey and China, while Turkmen citizens study and work in Russia, where cases are rapidly multiplying.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1272,
+      "body_end": 1836,
+      "source_links": [
+        "https://www.dw.com/en/iran-faces-catastrophic-death-toll-from-coronavirus/a-52811895",
+        "https://www.reuters.com/article/us-health-coronavirus-kazakhstan-emergen/kazakhstan-uzbekistan-close-borders-after-first-coronavirus-cases-idUSKBN2120EX"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00007",
+      "text": "Pull up the drawbridge",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1838,
+      "body_end": 1860,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00008",
+      "text": "The first known official mention of a threat to public health in Turkmenistan came after the new year.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1862,
+      "body_end": 1964,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00009",
+      "text": "The website of Turkmenistan's Foreign Ministry states that on January 8, the country's Ministry of Health issued an order on identifying symptoms and treating “unknown pulmonary diseases.” An extraordinary committee convened on January 20 to discuss preventative measures, such as improving the state of the country's hospitals, setting up quarantine zones in border areas, and conducting unspecified medical tests on all people arriving from affected countries.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1966,
+      "body_end": 2428,
+      "source_links": [
+        "https://www.mfa.gov.tm/en/news/1848"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00010",
+      "text": "On February 25, President Gurbanguly Berdymukhamedov held a special meeting in which he spoke of the need to challenge viruses and other “health threats.” Turkmen government officials, predictably, have not responded to RFE/RL's questions about coronavirus cases in the country, nor those of any other international news agency. There appear to be some signs of preparation: the American news service also reports that government ministries are increasingly checking the temperatures of their employees. Suspected cases are being dispatched to the Chongaly Centre for Infectious Diseases, though the number of cases there remains unknown. From March 4, swimming pools and sports halls have been closed in Ashgabat, and weddings and other large scale events have either been cancelled or postponed.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2430,
+      "body_end": 3227,
+      "source_links": [
+        "https://rus.azathabar.com/a/30455618.html",
+        "https://rus.azathabar.com/a/30468001.html",
+        "https://rus.azattyq.org/a/secretive-turkmenistan-beefs-up-coronavirus-measures-amid-reports-of-first-infections/30472071.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00011",
+      "text": "According to Chronicles of Turkmenistan, an independent website following political and social developments in the country, Turkmenistan's few touristic resorts such as the Ahvaz on the Caspian Sea coast, have been closed down in recent days, and since at least February the Ministry of Health has distributed leaflets throughout the capital including information on coronavirus symptoms. Nevertheless, according to Fergana News, an independent news website specialising on Central Asia, the authorities started handing out a new version of these booklets in March which omitted any mention of the name of the new virus.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3229,
+      "body_end": 3849,
+      "source_links": [
+        "https://fergana.ru/news/116149/?country=tm",
+        "https://turkmen.news/news/business-economy/avaza-karantin/",
+        "https://www.rferl.org/a/turkmenistan-s-confused-handling-of-the-coronavirus-crisis/30433120.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00012",
+      "text": "But the most stringent measures appear to be taken against travellers from overseas. On February 3, Turkmenistan closed the entirety of its border with Iran, followed by its borders with Uzbekistan and Kazakhstan. Meanwhile, the Turkmen authorities have sought to bring back Turkmen citizens living and working in affected countries; over 200 Turkmen citizens were returned from China in February and are under quarantine in the Lebap Province.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3851,
+      "body_end": 4295,
+      "source_links": [
+        "https://www.hronikatm.com/2020/02/coronavirus/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00013",
+      "text": "Turkmenistan Airlines ceased all flights to and from China on February 29, followed by several other destinations. Representatives of the airline told the state media outlet TurkmenPortal that its remaining flights from Turkmenistan were still departing from Ashgabat, but returning to the western city of Turkmenabat where medical facilities have been set up in the airport.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4297,
+      "body_end": 4672,
+      "source_links": [
+        "https://turkmenportal.com/blog/25818/aviareisy-izza-predelov-turkmenistana-vremenno-perenapravlyayutsya-v-turkmenabat",
+        "https://www.youtube.com/watch?v=Pjh0v-WPPPA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00014",
+      "text": "On March 15, Fergana News reported that the airline, which has faced financial struggles, was no longer able to compensate passengers for cancelled flights. Several large international carriers such as TurkishAirlines, China Southern, Belavia, and FlyDubai also temporarily cancelled their flights to Turkmenistan.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4674,
+      "body_end": 4988,
+      "source_links": [
+        "https://turkmen.news/news/business-economy/deneg-net/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00015",
+      "text": "Disturbingly, on March 13 journalists from Chronicles of Turkmenistan reported that some passengers arriving in Turkmenabat from overseas were able to leave mandatory quarantine after a few minutes by paying officials bribes ranging from US$100-800.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4990,
+      "body_end": 5239,
+      "source_links": [
+        "https://fergana.ru/news/116034/?country=tm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00016",
+      "text": "Meanwhile, the healthcare services continue to praise the steps outlined by President Berdymukhamedov. On March 5, Minister of Healthcare Nurmukhammet Amannepesov credited this approach with the lack of recorded coronavirus cases in the country.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5241,
+      "body_end": 5486,
+      "source_links": [
+        "https://turkmenportal.com/blog/25708/mid-v-turkmenistane-ne-zafiksirovano-ni-odnogo-sluchaya-zabolevaniya-koronavirusom"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00017",
+      "text": "Herbal remedies",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5488,
+      "body_end": 5503,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00018",
+      "text": "Turkmenistan's most prominent response to the pandemic has been a herbal remedy proposed by President Berdymukhamedov. In a speech to the cabinet of ministers on March 13, the president remarked that his book on medicinal plants includes useful advice, noting that pepper can be useful in combating infections as can garmala, or common rue. The country could do well to learn from its “wise ancestors,” declared the president, who advocated the health benefits of using garmala as incense:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5505,
+      "body_end": 5994,
+      "source_links": [
+        "http://www.turkmenistan.gov.tm/_tmt/?id=14037",
+        "https://en.wikipedia.org/wiki/Peganum_harmala"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00019",
+      "text": "> Dürli görnüşli, göze görünmeýän wiruslaryň adam bedenine aralaşmagynyň öňüni almakda ýüzärlik tüssesiniň netijelidigini köp asyrlaryň durmuş tejribesi subut etdi. Şunuň bilen baglylykda, milli Liderimiz halkymyzyň ýüzärlik tütetmek däbiniň häzirki döwürde dünýäde emele gelen çylşyrymly pursatlarda aýratyn ähmiýetlidigine ünsi çekip.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5996,
+      "body_end": 6332,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-700944-b00020",
+      "text": "> Many centuries of experience proves that light smoke can effectively prevent the spread of various invisible viruses into the human body. In this regard, our leader emphasised that our people's tradition of burning herbs is especially important in these complex times, in light of events in the world today.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6334,
+      "body_end": 6643,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-700944-b00021",
+      "text": "Berdymukhamedov, who served as Turkmenistan's Minister of Health between 1997 and 2007, has authored several books on healthcare, one on horses, and another on tea. His 2013 book details the medicinal properties of over 150 plants native to the arid country.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6645,
+      "body_end": 6903,
+      "source_links": [
+        "https://www.rferl.org/a/turkmenistan-berdymukhammedov-herbal-remedies/25094805.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00022",
+      "text": "According to this recent video produced for state media outlet Turkmenistan Today, Garmala, the “cure for a thousand ailments,” plays an important role in Turkmen culture. Burning the desert grass to release its aromatic smoke, it continues, is a fixture of any large celebration from weddings to the dedication of a new home.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6905,
+      "body_end": 7231,
+      "source_links": [
+        "http://tdh.gov.tm/video/videos.aspx&video191&cat1"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00023",
+      "text": "Media reports suggest that the president's advice is already being strictly observed. According to Orient TV, which advertises itself as the “first non-state TV station in Turkmenistan,” the herb was burnt during a meeting between UN representatives and Turkmen government officials on March 14. While attendees of the meeting in Ashgabat treated their hands with an antiseptic solution, handshakes continued as normal.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7233,
+      "body_end": 7652,
+      "source_links": [
+        "https://orient.tm/v-turkmenistane-prodolzhajut-pozhimat-ruki/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700944-b00024",
+      "text": "It may be easy for observers from afar to simply write off this herbal remedy as one of President Berdymukhamedov's eccentricities, but Chronicles of Turkmenistan suggests that it could be a smokescreen, in both senses, for the lack of adequate healthcare in the country. State media continue to report merrily on the president's latest initiatives. In spite of advice from the World Health Organisation strongly advising against mass public events, Turkmenistan is going ahead with preparations to hold the Nowruz, or spring festival, on March 20.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7654,
+      "body_end": 8202,
+      "source_links": [
+        "https://turkmenportal.com/blog/26015/prezident-turkmenistana-provel-rabochee-videosoveshchanie"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "b64d12d879c089d3c3f2691573f12709ab140de8df5cc7bd4963e03fe15efa65",
+  "word_count": 1230,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8202,
+  "retrieved_at": "2026-11-16T22:22:42.518338+00:00",
+  "raw_html_sha256": "e6406d5ce7236081321eaedeb8f661db20d93d75ed203cf348c9f13ab38ca5a6",
+  "resolved_source_url": "https://globalvoices.org/2020/03/18/turkmenistan-fights-coronavirus-with-more-isolation-and-herbal-remedies/",
+  "canonical_url": "https://globalvoices.org/2020/03/18/turkmenistan-fights-coronavirus-with-more-isolation-and-herbal-remedies/",
+  "source_bytes": 198074,
+  "authors": [
+    {
+      "name": "Maxim Edwards",
+      "url": "https://globalvoices.org/author/maxim-edwards/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 700944,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "e6406d5ce7236081321eaedeb8f661db20d93d75ed203cf348c9f13ab38ca5a6",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-8548ebe8041b0161baf0",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-03",
+    "eligible_month_documents": 117,
+    "selected_month_documents": 98,
+    "inclusion_probability": 0.8376068376068376,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Maxim Edwards",
+  "body_start": 481,
+  "body_end": 8683,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b7b18be041979dbb2a18974b53adfbbba922baa8da7edfd1a2432536e4b868f5",
+  "text_path": "articles/gv-700944.txt",
+  "metadata_path": "metadata/gv-700944.json",
+  "attribution": "This story by Maxim Edwards originally appeared on Global Voices. https://globalvoices.org/2020/03/18/turkmenistan-fights-coronavirus-with-more-isolation-and-herbal-remedies/",
+  "content_sha256": "ce8e1a4021b15471e316a256f41a776960b3b6961fc870cc4638fe8fea266a28",
+  "source_sha256": "e6406d5ce7236081321eaedeb8f661db20d93d75ed203cf348c9f13ab38ca5a6",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

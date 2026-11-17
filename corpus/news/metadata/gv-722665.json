@@ -1,0 +1,532 @@
+{
+  "id": "gv-722665",
+  "publisher_id": 722665,
+  "source_id": "globalvoices:722665",
+  "source_url": "https://globalvoices.org/2020/11/09/shutdowns-throttling-and-stifling-dissent-online-africas-new-normal-part-i/",
+  "title": "Shutdowns, throttling and stifling dissent online: Africa’s new normal, Part I",
+  "published_at": "2020-11-09T09:52:44Z",
+  "modified_at": "2020-11-09T09:56:04Z",
+  "api_author_id": 2705,
+  "api_content_sha256": "79279377d45d40c1000c1d55d8308a58f269d4dbb29d88cbc97c12aa2ee7368e",
+  "api_response_sha256": "f2645b12d5068d264a88deb6e357729134eb6ef948db13b4dec337f22f4ecbaa",
+  "api_retrieved_at": "2026-11-16T22:20:30.604199+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 87,
+      "count": 410,
+      "name": "Algeria",
+      "slug": "algeria",
+      "parent": 14
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 114,
+      "count": 783,
+      "name": "Ethiopia",
+      "slug": "ethiopia",
+      "parent": 15
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 118,
+      "count": 238,
+      "name": "Guinea",
+      "slug": "guinea",
+      "parent": 15
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 131,
+      "count": 1641,
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "parent": 15
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 141,
+      "count": 611,
+      "name": "Sudan",
+      "slug": "sudan",
+      "parent": 15
+    },
+    {
+      "id": 26,
+      "count": 587,
+      "name": "Tanzania",
+      "slug": "tanzania",
+      "parent": 15
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-722665-b00001",
+      "text": "Editor’s note: This is a two-part analysis on the growing trend of using school examinations, mass protests or elections as a ruse to either switch off the internet or clamp down on digital media in six African countries: Algeria, Ethiopia, Guinea, Nigeria, Sudan and Tanzania. Read Part II here.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 296,
+      "source_links": [
+        "https://globalvoices.org/2020/11/09/shutdowns-throttling-and-stifling-dissent-online-africas-new-normal-part-ii/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00002",
+      "text": "In the last four months, full or partial internet blackouts occurred in five African countries: Algeria, Ethiopia, Guinea, Sudan, and Tanzania. The Nigerian government is currently considering legislation to clamp down on social media.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 298,
+      "body_end": 533,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00003",
+      "text": "Total shutdowns result from a full internet blackout while partial includes restricted access or throttling, which intentionally shrinks data bandwidth.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 535,
+      "body_end": 687,
+      "source_links": [
+        "https://surfshark.com/blog/internet-shutdown-causes-consequences-and-resolution"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00004",
+      "text": "Since 2007, when Guinea became the first country in sub-Saharan Africa to switch off the internet, digital blackouts have gradually grown to become the new normal on the continent.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 689,
+      "body_end": 869,
+      "source_links": [
+        "https://qz.com/africa/1706217/why-do-african-governments-shut-down-the-internet/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00005",
+      "text": "During the coronavirus pandemic, African governments have exploited the public health crisis as a ruse to limit digital rights while entrenching their power, according to the 2020 State of Internet Freedom in Africa report by the Collaboration on Internet ICT Policy in East and Southern Africa (CIPESA). Ironically, these blackouts during a pandemic exacerbated the mis- and dis-information problem within many multilingual, online communities.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 871,
+      "body_end": 1316,
+      "source_links": [
+        "https://cipesa.org/2020/09/report-the-state-of-internet-freedom-in-africa-2020/",
+        "https://globalvoices.org/2020/06/04/who-fact-checks-online-disinformation-in-west-africas-bambara-language/",
+        "https://www.bbc.com/news/technology-52903680"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00006",
+      "text": "However, the coronavirus pandemic was not the only excuse employed by African governments. There is a growing trend to instrumentalize school examinations and politically charged moments like mass protests and elections to stifle digital freedom.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1318,
+      "body_end": 1564,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00007",
+      "text": "With these growing authoritarian tendencies to switch off or throttle the internet, what is the social and political impact within each context and country?",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1566,
+      "body_end": 1722,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00008",
+      "text": "Here’s a round-up of some of the most recent scenarios across the continent:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1724,
+      "body_end": 1800,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00009",
+      "text": "Algeria",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1802,
+      "body_end": 1809,
+      "source_links": [],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00010",
+      "text": "Algeria recorded a nationwide disruption of internet access on Sunday, September 13, which left many users with “unusably slow service for several days”, reports NetBlocks.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1811,
+      "body_end": 1983,
+      "source_links": [
+        "https://netblocks.org/reports/social-media-restricted-and-internet-cut-during-algeria-school-exams-xAGolxAz"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00011",
+      "text": "More than half a million Algerian pupils started their baccalaureate exams on September 13. The internet restrictions were part of measures to restrict the distribution of leaked examination papers.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1985,
+      "body_end": 2183,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00012",
+      "text": "Those not taking exams were still forced to bear the brunt of a digital blackout and this violation of users’ rights was disregarded by the government.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2185,
+      "body_end": 2336,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00013",
+      "text": "Algeria is a “leader” of internet shutdowns in Africa in 2019, according to digital rights advocacy group Access Now.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2338,
+      "body_end": 2455,
+      "source_links": [
+        "https://www.accessnow.org/internet-shutdowns-in-algeria-and-sudan-damaging-practices-during-exceptional-circumstances/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00014",
+      "text": "In March 2019, the country experienced a digital blackout following protests against the former president Abdelaziz Bouteflika’s desire to seek a fifth term in office. Internet disruptions were also recorded during last year’s school examinations.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2457,
+      "body_end": 2704,
+      "source_links": [
+        "https://netblocks.org/reports/facebook-twitter-instagram-whatsapp-and-other-social-media-blocked-in-algeria-eBOgJxBZ",
+        "https://qz.com/africa/1563958/algeria-shuts-internet-amid-anti-bouteflika-election-protests/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00015",
+      "text": "The cost of the shutdown this year hit an estimated $388 million United States dollars, states the Geneva Internet Platform, and these are conservative estimates.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2706,
+      "body_end": 2868,
+      "source_links": [
+        "https://dig.watch/updates/internet-restriction-during-exam-algeria-cost-nearly-us388-million",
+        "https://www.brookings.edu/wp-content/uploads/2016/10/intenet-shutdowns-v-3.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00016",
+      "text": "Ethiopia",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2870,
+      "body_end": 2878,
+      "source_links": [],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00017",
+      "text": "The Ethiopian government disabled internet services on June 30, following protests in the capital city of Addis Ababa, and other Ethiopian cities after the assassination of famous singer and activist Hachalu Hundessa.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 2880,
+      "body_end": 3097,
+      "source_links": [
+        "https://netblocks.org/reports/internet-cut-in-ethiopia-amid-unrest-following-killing-of-singer-pA25Z28b",
+        "https://www.fanabc.com/%E1%89%A0%E1%8A%A0%E1%88%AD%E1%89%B2%E1%88%B5%E1%89%B5-%E1%88%83%E1%8C%AB%E1%88%89-%E1%88%81%E1%8A%95%E1%8B%B4%E1%88%B3-%E1%8C%8D%E1%8B%B5%E1%8B%AB-%E1%8B%A8%E1%89%B0%E1%8C%A0%E1%88%A8%E1%8C%A0-2/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00018",
+      "text": "In the wake of Hundessa's murder, the nation struggled with violence that erupted along ethnic and religious lines. Social media, particularly Facebook, Twitter and YouTube, became the epicenters of conspiracy theories, hate speech and mis- and disinformation.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3099,
+      "body_end": 3359,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00019",
+      "text": "READ MORE: How the murder of musician Hachalu Hundessa incited violence in Ethiopia: Part I & Part II",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3361,
+      "body_end": 3462,
+      "source_links": [
+        "https://globalvoices.org/2020/08/07/how-the-murder-of-musician-hachalu-hundessa-incited-violence-in-ethiopia-part-i/",
+        "https://globalvoices.org/2020/08/07/how-the-murder-of-musician-hachalu-hundessa-incited-violence-in-ethiopia-part-ii/"
+      ],
+      "source_kind": "h5",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00020",
+      "text": "This total shutdown affected mobile internet, wireless broadband and asymmetric digital subscriber line, or ADSL, a broadband connection via copper wire lines.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3464,
+      "body_end": 3623,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00021",
+      "text": "On July 16, wireless broadband and ADSL services were partially restored. But, since the majority of Ethiopians access the internet using mobile networks, they lingered in digital limbo. This suggests that the government may have only restored service for the business sector. On July 23, internet service was fully restored all over Ethiopia, after a three-week blackout.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3625,
+      "body_end": 3997,
+      "source_links": [
+        "https://datareportal.com/reports/digital-2020-ethiopia",
+        "https://www.accessnow.org/back-in-the-dark-ethiopia-shuts-down-internet-once-again/",
+        "https://www.africanews.com/2020/07/23/normalcy-returning-to-ethiopia-capital-au-speaks-net-still-blocked//"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00022",
+      "text": "This graph by the Internet Outage Detection and Analysis (IODA) project shows the shutdown and restoration date. The pink background is the outage period; the blue area is the shutdown start date; the black connotes the restoration date of wireless broadband and ADSL services; the shaded area inside yellow is the restoration date (no pink).",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3999,
+      "body_end": 4341,
+      "source_links": [
+        "https://ioda.caida.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00023",
+      "text": "NetBlocks affirms that Ethiopia lost an estimated $62.4 million USD from the first 14 days of the blackout.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4343,
+      "body_end": 4450,
+      "source_links": [
+        "https://netblocks.org/reports/internet-cut-in-ethiopia-amid-unrest-following-killing-of-singer-pA25Z28b"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00024",
+      "text": "During this period, human rights violations were documented. About 200 people died as a result of the protests and civil unrest, and police violence that followed Hundessa’s assassination. This is in addition to the people who were earlier arrested or charged with criminal offences related to their opinions online about the government’s response to the COVID-19 pandemic.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4452,
+      "body_end": 4825,
+      "source_links": [
+        "https://freedomhouse.org/country/ethiopia/freedom-net/2020",
+        "https://www.aljazeera.com/opinions/2020/7/28/hachalu-hundessas-death-exposed-an-unlikely-anti-abiy-alliance/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00025",
+      "text": "Freedom House ranks Ethiopia 29/100 in internet freedom.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4827,
+      "body_end": 4883,
+      "source_links": [
+        "https://freedomhouse.org/country/ethiopia/freedom-net/2020"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722665-b00026",
+      "text": "The government also has a record of cutting off internet access only in specific areas of the country. From January to March, the internet was disrupted in the Oromia region. Now, there is a subnational telecommunication shutdown in the Tigray region, northern Ethiopia since November 5, as political and civil unrest in the area continues.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4885,
+      "body_end": 5225,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Oromia_Region",
+        "https://netblocks.org/reports/internet-disrupted-in-ethiopia-as-conflict-breaks-out-in-tigray-region-eBOQYV8Z",
+        "https://qz.com/africa/1832807/ethiopias-internet-shutdowns-are-disrupting-millions-of-lives/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "387e44962e287fb58d71673abaf8b6808d8c8e4734f5a28face157b0941021ab",
+  "word_count": 788,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 3,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5225,
+  "retrieved_at": "2026-11-16T22:28:14.871566+00:00",
+  "raw_html_sha256": "1bff194fa1c2271731c09e2a7a650348f32930b8de1a79ab158f196333e1087d",
+  "resolved_source_url": "https://globalvoices.org/2020/11/09/shutdowns-throttling-and-stifling-dissent-online-africas-new-normal-part-i/",
+  "canonical_url": "https://globalvoices.org/2020/11/09/shutdowns-throttling-and-stifling-dissent-online-africas-new-normal-part-i/",
+  "source_bytes": 197039,
+  "authors": [
+    {
+      "name": "Khattab Hamad",
+      "url": "https://globalvoices.org/author/khattab-hamad/"
+    },
+    {
+      "name": "Nwachukwu Egbunike",
+      "url": "https://globalvoices.org/author/nwachukwu-egbunike/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 722665,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "1bff194fa1c2271731c09e2a7a650348f32930b8de1a79ab158f196333e1087d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-962d05c98fb9301362d3",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-11",
+    "eligible_month_documents": 62,
+    "selected_month_documents": 52,
+    "inclusion_probability": 0.8387096774193549,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Khattab Hamad; Nwachukwu Egbunike",
+  "body_start": 509,
+  "body_end": 5734,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "689d8e20636f0c04b68164575815a07bc681a409dfba3efdc35323e796219bd8",
+  "text_path": "articles/gv-722665.txt",
+  "metadata_path": "metadata/gv-722665.json",
+  "attribution": "This story by Khattab Hamad; Nwachukwu Egbunike originally appeared on Global Voices. https://globalvoices.org/2020/11/09/shutdowns-throttling-and-stifling-dissent-online-africas-new-normal-part-i/",
+  "content_sha256": "28a60a2d26d62956f6d3a5f7890e30a8ad361b3e5e369809d182aef32bde632b",
+  "source_sha256": "1bff194fa1c2271731c09e2a7a650348f32930b8de1a79ab158f196333e1087d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

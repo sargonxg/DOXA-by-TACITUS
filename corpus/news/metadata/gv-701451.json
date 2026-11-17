@@ -1,0 +1,465 @@
+{
+  "id": "gv-701451",
+  "publisher_id": 701451,
+  "source_id": "globalvoices:701451",
+  "source_url": "https://globalvoices.org/2020/03/22/as-ebola-outbreak-ends-coronavirus-begins-in-dr-congo/",
+  "title": "As Ebola outbreak ends, coronavirus begins in DR Congo",
+  "published_at": "2020-03-22T18:22:59Z",
+  "modified_at": "2020-04-26T23:36:56Z",
+  "api_author_id": 1586,
+  "api_content_sha256": "7760e42451b8527f2cbe992a74e3fc0fb3fb839143f92f4eb906d6fe471101a9",
+  "api_response_sha256": "6400a2a69e2b1612f7bdabedd6b26a0bd74341ef3b4189d69f04207808bc2f03",
+  "api_retrieved_at": "2026-11-16T22:20:23.593459+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 109,
+      "count": 748,
+      "name": "D.R. of Congo",
+      "slug": "dr-of-congo",
+      "parent": 15
+    },
+    {
+      "id": 243,
+      "count": 6007,
+      "name": "Development",
+      "slug": "development",
+      "parent": 238
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    },
+    {
+      "id": 1358,
+      "count": 4577,
+      "name": "Migration &amp; Immigration",
+      "slug": "migration-immigration",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 280,
+      "count": 5264,
+      "name": "Travel",
+      "slug": "travel",
+      "parent": 238
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-701451-b00001",
+      "text": "This post is written by guest contributor Esdras Tsongo, a Congolese reporter and journalist based in eastern Democratic Republic of Congo. Check out Global Voices’ special coverage of the global impact of COVID-19.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 215,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/covid-19-global-coverage-for-a-pandemic/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00002",
+      "text": "Democratic Republic of Congo has officially declared no more Ebola patients. On Tuesday, March 3, 2020, the World Health Organization (WHO) announced that the last patient was discharged in good health from a treatment center in Beni, North Kivu, eastern DR Congo.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 217,
+      "body_end": 481,
+      "source_links": [
+        "https://reliefweb.int/report/democratic-republic-congo/democratic-republic-congo-s-last-ebola-patient-discharged"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00003",
+      "text": "This is not yet the end of the epidemic, but it is a victory: Beni used to be the epicenter of Ebola in DR Congo.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 483,
+      "body_end": 596,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00004",
+      "text": "But while DR Congo has proclaimed the end of Ebola, it faced its first case of COVID-19 — the potentially deadly disease caused by a novel coronavirus — on March 8, 2020, and confirmed by WHO on March 10.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 598,
+      "body_end": 802,
+      "source_links": [
+        "https://www.afro.who.int/news/first-case-covid-19-confirmed-democratic-republic-congo"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00005",
+      "text": "The first case was reported in Kinshasa, the capital. The patient is Congolese, 52, who returned to DR Congo from France. Upon arrival, he showed no symptoms. However, he was taken to a clinic in the Commune of Ndji'li, according to a statement issued by the Ministry of Health, who added that health services are working to trace and identify all persons who have been in contact with the patient since March 8, 2020.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 804,
+      "body_end": 1222,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00006",
+      "text": "There are now at least 23 confirmed cases in DR Congo, as of March 22, according to WHO, including one virus-related death.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1224,
+      "body_end": 1347,
+      "source_links": [
+        "https://www.afro.who.int/health-topics/coronavirus-covid-19",
+        "https://www.monitor.co.ug/News/National/DR-Congo-reports-first-virus-death-five-new-cases/688334-5499440-e405e4/index.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00007",
+      "text": "> Yesterday the INRB [Institut National de Recherche Biomédicale] confirmed 5 new cases. All are Congolese. The care teams take care of them. Also yesterday, we experienced the first case of death following COVID19.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1349,
+      "body_end": 1564,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-701451-b00008",
+      "text": "DR Congo has banned large gatherings, ordered school and university closures for four weeks and closed its border with Rwanda, all measures taken to stem the spread of the virus. The government also suspended all international flights from countries with a high number of cases of COVID-19.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1566,
+      "body_end": 1856,
+      "source_links": [
+        "https://www.aljazeera.com/news/2020/03/covid-19-africa-told-prepare-worst-response-200319085112877.html",
+        "https://www.iol.co.za/news/africa/drc-strengthens-border-security-suspends-overseas-flights-to-fight-covid-19-45239276",
+        "https://www.pmldaily.com/news/2020/03/dr-congo-shuts-border-with-rwanda-over-coronavirus.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00009",
+      "text": "Mory Keita, the WHO coordinator who works in Ebola-affected regions, said the keyword is continued vigilance when it comes to containing any infectious disease. He points out that vaccination so that people can prevent themselves from getting any case of the virus.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1858,
+      "body_end": 2123,
+      "source_links": [
+        "https://amp.rfi.fr/fr/afrique/20200304-plus-aucun-cas-ebola-rdc"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00010",
+      "text": "In North Kivu province, the Ebola virus killed more than 2,000 people. There were 3,400 cases, and 1,169 were cured since August 1, 2018.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2125,
+      "body_end": 2262,
+      "source_links": [
+        "https://www.who.int/csr/don/19-March-2020-ebola-drc/en/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00011",
+      "text": "Nzanzu Carly Kasivita, governor of North Kivu, took decisive measures to fight Ebola in his region. Kasivita told Global Voices:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2264,
+      "body_end": 2392,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00012",
+      "text": "> As governor, I organized support marches so that the population of North Kivu can adopt the best attitudes to fight against Ebola and I managed to mobilize the population, I am happy to announce that there are now more than 21 days without cases of Ebola virus.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2394,
+      "body_end": 2657,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-701451-b00013",
+      "text": "On July 17, 2019, WHO proclaimed Ebola as a public health emergency of international concern, which quickly mobilized more resources and support to combat Ebola in three provinces of eastern DR Congo: North Kivu, South Kivu and Uturi.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2659,
+      "body_end": 2893,
+      "source_links": [
+        "https://www.who.int/news-room/detail/17-07-2019-ebola-outbreak-in-the-democratic-republic-of-the-congo-declared-a-public-health-emergency-of-international-concern"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00014",
+      "text": "Jean-Jacques Muyembe, technical secretary of response in DR Congo, told Global Voices by phone that since March 2, 2020, the last patients have been cured and have been released from the Ebola Treatment Center.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2895,
+      "body_end": 3105,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00015",
+      "text": "However, according to WHO, it takes 42 days from the confirmation of the last case for the virus to be declared completely eradicated: April 12, 2020.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3107,
+      "body_end": 3257,
+      "source_links": [
+        "https://www.who.int/csr/disease/ebola/declaration-ebola-end/en/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00016",
+      "text": "Muyembe said that the same population that fought against Ebola can also avoid coronavirus, using the lessons learned from prior Ebola outbreaks.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3259,
+      "body_end": 3404,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00017",
+      "text": "Confronting coronavirus in DR Congo",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3406,
+      "body_end": 3441,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00018",
+      "text": "Coronavirus is bad news for the region so strongly affected by Ebola. However, the two highly infectious diseases have several commonalities, albeit Ebola was much more contagious than COVID-19.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3443,
+      "body_end": 3637,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00019",
+      "text": "According to Muyembe, most Congolese are aware of and prepared for COVID-19 after living with the Ebola epidemic. Health workers will use similar measures in terms of contact tracing and social and physical distancing to fight the coronavirus.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3639,
+      "body_end": 3882,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00020",
+      "text": "“DRC was the 11th African country affected by COVID-2019, but the same protective attitudes that fought against Ebola must be maintained in the phase of this new virus,” Muyembe told Global Voices.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3884,
+      "body_end": 4081,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00021",
+      "text": "Muyembe explained that the council of ministers finally decided that anyone coming from France, Germany, Italy, Iran, Iraq and China, even “without any signs of fever, cough, cold, headache, intense fatigue will be isolated for 14 days at home and followed for 14 days by the medical team taking into account the information collected in the health cards of travelers.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4083,
+      "body_end": 4452,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00022",
+      "text": "In addition, Muyembe told Global Voices that any person “presenting [coronavirus] symptoms on arrival and considered a suspect case will be transferred to the isolation site and treated by the Ministry of Health.”",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4454,
+      "body_end": 4667,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00023",
+      "text": "Meanwhile, experts with WHO say they plan to conduct a study called “Solidarity” modeled after a 2018 Ebola study, to test drugs already used to tackle other viruses.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4669,
+      "body_end": 4835,
+      "source_links": [
+        "https://qz.com/1821933/who-could-use-ebola-study-as-model-for-coronavirus-treatment/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-701451-b00024",
+      "text": "The study will likely need to enroll thousands of patients, which could prove difficult depending on government efficacy to manage the collaboration with WHO. But the results could save many lives.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4837,
+      "body_end": 5034,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "f0bb9dfafd61df75ec3c1eacf3d885444e317bae463bd5e2ee345a71162883e8",
+  "word_count": 826,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5034,
+  "retrieved_at": "2026-11-16T22:22:49.105490+00:00",
+  "raw_html_sha256": "bb2108380cead01a7b015c97a24a7fec5e7f0aae6de3d9a379aa636dd701222e",
+  "resolved_source_url": "https://globalvoices.org/2020/03/22/as-ebola-outbreak-ends-coronavirus-begins-in-dr-congo/",
+  "canonical_url": "https://globalvoices.org/2020/03/22/as-ebola-outbreak-ends-coronavirus-begins-in-dr-congo/",
+  "source_bytes": 190842,
+  "authors": [
+    {
+      "name": "Guest Contributor",
+      "url": "https://globalvoices.org/author/guest-contributor/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 701451,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "bb2108380cead01a7b015c97a24a7fec5e7f0aae6de3d9a379aa636dd701222e",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-4383076784b7c2ba4a30",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-03",
+    "eligible_month_documents": 117,
+    "selected_month_documents": 98,
+    "inclusion_probability": 0.8376068376068376,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Guest Contributor",
+  "body_start": 448,
+  "body_end": 5482,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b6551c0eabb93d8250344e84b007a531c85edcdc6b0fbee66536915354b79ea4",
+  "text_path": "articles/gv-701451.txt",
+  "metadata_path": "metadata/gv-701451.json",
+  "attribution": "This story by Guest Contributor originally appeared on Global Voices. https://globalvoices.org/2020/03/22/as-ebola-outbreak-ends-coronavirus-begins-in-dr-congo/",
+  "content_sha256": "f0077abd1b52519d34a3ac8620a311c5ad42c8f37b910d8e9c223a552cd70ae1",
+  "source_sha256": "bb2108380cead01a7b015c97a24a7fec5e7f0aae6de3d9a379aa636dd701222e",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

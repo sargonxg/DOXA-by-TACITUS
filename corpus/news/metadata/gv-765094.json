@@ -1,0 +1,508 @@
+{
+  "id": "gv-765094",
+  "publisher_id": 765094,
+  "source_id": "globalvoices:765094",
+  "source_url": "https://globalvoices.org/2022/06/20/brazilian-facial-recognition-ruling-can-set-an-important-precedent-for-country-wide-use/",
+  "title": "Brazilian facial recognition ruling can set an important precedent for country-wide use",
+  "published_at": "2022-06-20T06:40:20Z",
+  "modified_at": "2022-09-19T06:30:46Z",
+  "api_author_id": 2989,
+  "api_content_sha256": "01cf64e34b0b8761827245cc9fe8228be12405dcaf720832eb3d0d493ff5ba60",
+  "api_response_sha256": "04fa5fff7ce30b84d0244dca8bac59e4cb3d3777e65a4fe265a98c15e459d40c",
+  "api_retrieved_at": "2026-11-16T22:20:44.749286+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-765094-b00001",
+      "text": "Every day, nearly 5 million people use São Paulo's metro system. Every one of their faces may have been recorded in a facial recognition system that has been in use since early 2020. In a March 23 decision, a São Paulo State court ordered the Metro company to stop using the technology.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 286,
+      "source_links": [
+        "https://www1.folha.uol.com.br/amp/cotidiano/2022/03/justica-bloqueia-reconhecimento-facial-no-metro-de-sp.shtml#"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00002",
+      "text": "The Metro appealed the decision, claiming its monitoring system “rigorously obeys the General Law on Data Protection,” but the argument was rejected by the same court in mid-April.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 288,
+      "body_end": 468,
+      "source_links": [
+        "https://agenciabrasil.ebc.com.br/geral/noticia/2022-03/sp-justica-proibe-que-metro-utilize-sistema-de-reconhecimento-facial"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00003",
+      "text": "The decision is considered a win for a group of civil society entities who filed the public civil lawsuit to stop this data collection, something they deem unconstitutional and out of step with Brazil's legal framework on digital civil rights.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 470,
+      "body_end": 713,
+      "source_links": [
+        "https://artigo19.org/2022/03/03/acao-busca-vedar-o-uso-de-tecnologias-de-reconhecimento-facial-pelo-metro-de-sao-paulo/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00004",
+      "text": "At the beginning of March 2022, this group filed a civil public lawsuit against the São Paulo State Metro, demanding that they interrupt this data collection and pay compensation for collective moral damages of at least BRL 42 million (around USD 8.5 million).",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 715,
+      "body_end": 975,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00005",
+      "text": "But the group aspires to have a larger impact beyond the tracks of the São Paulo subway system. They strive to play a part in forming jurisprudence about facial recognition technologies in a country whose legal framework says little to nothing about such systems.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 977,
+      "body_end": 1240,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00006",
+      "text": "“This decision can have a national impact on what we are currently debating about how the General Law on Data Protection is being applied, about a protective legal framework which is still new and in the process of formulating jurisprudence and understandings in the Judicial system,” explained Sheila de Carvalho, coordinator of the Center for Legal Reference at Article 19 Brazil and South America.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1242,
+      "body_end": 1642,
+      "source_links": [
+        "https://www.article19.org/regional-office/brazil-and-south-america/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00007",
+      "text": "Article 19 is one of the organizations that signed the lawsuit, along with the São Paulo State Public Defenders Office; the Federal Public Defenders Office; the Brazilian Institute in Consumer Defense (Idec); Intervozes, a social communications collective; and CADHu, the Human Rights Advocacy Collective.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1644,
+      "body_end": 1949,
+      "source_links": [
+        "https://intervozes.org.br/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00008",
+      "text": "Carvalho explained that the core aim of the lawsuit is to spark the debate on how to handle personal data, the need for consent, and the discriminatory impact and social prejudices of these data collection methods.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1951,
+      "body_end": 2165,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00009",
+      "text": "“This lawsuit [including the arguments in it] opens the way for us to establish more protective parameters in regards to the use of personal data,” the lawyer told Global Voices during a video interview.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2167,
+      "body_end": 2370,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00010",
+      "text": "Over the past few years, Congress members have proposed bills that attempt to regulate and establish procedures for artificial intelligence implementation, particularly in regard to public security. The Senate, however, has been holding debates with experts which it hopes will result in a new, more privacy-conscious bill, to absorb other existing propositions on the topic.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2372,
+      "body_end": 2747,
+      "source_links": [
+        "https://www25.senado.leg.br/web/atividade/materias/-/materia/138790",
+        "https://www25.senado.leg.br/web/atividade/materias/-/materia/151547"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00011",
+      "text": "In February 2020, the São Paulo Metro announced it would implement an “electronic monitoring system using images” for three of the five metro lines. The project was given to the consortium Engie Ineo Johnson, formed by Irish and French firms, with a foreseen investment of BRL 58.6 million (around USD 11.5 million).",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2749,
+      "body_end": 3065,
+      "source_links": [
+        "https://gizmodo.uol.com.br/metro-licitacao-reconhecimento-facial-questoes/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00012",
+      "text": "At the time, a coalition of civil society entities — the same ones that filed the civil public lawsuit — went to court to obtain more information about the system. They wanted to know how the initiative would align with the principles established by Brazil's General Law on Data Protection (LGPD), approved in 2018 and set to go into effect in August 2020.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3067,
+      "body_end": 3423,
+      "source_links": [
+        "https://www.stj.jus.br/sites/portalp/Leis-e-normas/lei-geral-de-protecao-de-dados-pessoais-lgpd"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00013",
+      "text": "Two years later, that question has been answered. According to the organizations behind the lawsuit, the system repeatedly violates the LGPD and goes against other legal mechanisms, such as the Federal Constitution, the Statute for Children and Teenagers, and the Code for Consumer Rights.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3425,
+      "body_end": 3714,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00014",
+      "text": "The lawsuit claims that the São Paulo Metro company is using facial recognition technology on passengers and using their personal data without consent, without due transparency, and is not making information about the data available to users, such as what it will be used for and how it will be treated.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3716,
+      "body_end": 4019,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00015",
+      "text": "They also point that the company did not assess the risk of the program or mitigate the issues inherent to facial recognition technologies, as required by law. Moreover, its facial recognition practices violate fundamental human and consumer rights, which harms all public transportation users, particularly marginalized social groups, who would be affected by incorporated racial biases.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4021,
+      "body_end": 4409,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00016",
+      "text": "Moving against the tide",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4411,
+      "body_end": 4434,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00017",
+      "text": "In the United States, some places are moving to ban facial recognition on the state and municipal levels, while others increasingly normalize the employment of such technology, Wired reports. This paradox highlights the importance of regulation at the federal level.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4436,
+      "body_end": 4702,
+      "source_links": [
+        "https://www.wired.com/story/face-recognition-banned-but-everywhere/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00018",
+      "text": "The European Parliament, is calling for a ban on the police use of facial recognition technology in public places, on private facial recognition databases, and on predictive policing.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4704,
+      "body_end": 4887,
+      "source_links": [
+        "https://www.brennancenter.org/our-work/research-reports/predictive-policing-explained",
+        "https://www.politico.eu/article/european-parliament-ban-facial-recognition-brussels/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00019",
+      "text": "But Brazil seems to be swimming against the tide. The São Paulo Metro is not the only public entity resorting to facial recognition. Around the country, state governments are implementing it across a range of sectors. According to Instituto Igarapé, an independent Brazilian think tank, by 2019, there were 47 cases of facial recognition implemented in 15 States.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4889,
+      "body_end": 5252,
+      "source_links": [
+        "https://igarape.org.br/infografico-reconhecimento-facial-no-brasil/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00020",
+      "text": "This is particularly problematic in a country where 56.1 percent of the population self-declares themselves Black. This is evident in Bahia, where the leftist government of Rui Costa, a Workers Party politician, is transforming the state into a “facial recognition lab,” as reported by The Intercept Brasil.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5254,
+      "body_end": 5561,
+      "source_links": [
+        "https://theintercept.com/2021/09/20/rui-costa-esta-transformando-a-bahia-em-um-laboratorio-de-vigilancia-com-reconhecimento-facial/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00021",
+      "text": "Despite having little evidence that such a system is successful for public security purposes, in July 2021, Bahia's government decided to expand the program by piloting a new system in the state's capital, Salvador.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5563,
+      "body_end": 5778,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00022",
+      "text": "Valued at BRL 18 million (USD 3.56 million), the new system is provided by Spanish firm Iecisa in partnership with Huawei. Cameras spread across the city will collect faces id and archive them in a system, grouping together images of the same person. The system, according to the Intercept, also uses artificial intelligence to cross the collected images with faces that are in the State Public Security Secretary's database for wanted individuals.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5780,
+      "body_end": 6228,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00023",
+      "text": "According to civil society actors, Brazil still lacks a legal framework that establishes limits and parameters for the use of facial recognition technologies.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6230,
+      "body_end": 6388,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00024",
+      "text": "“What exists today is the absence of a regulation or guidance of general scope, which results in the tacit authorization for the use of facial recognition systems,” wrote Igarapé in a 2020 report.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6390,
+      "body_end": 6586,
+      "source_links": [
+        "https://igarape.org.br/wp-content/uploads/2020/06/2020-06-09-Regula%C3%A7%C3%A3o-do-reconhecimento-facial-no-setor-p%C3%BAblico.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00025",
+      "text": "In the international community, there is already a more consolidated understanding of this issue, which served as arguments in the lawsuit. The United Nations Human Rights Commission, for instance, recognizes that facial recognition tools may be used to “perpetuate and amplify discrimination,” particularly against women and people of color.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6588,
+      "body_end": 6930,
+      "source_links": [
+        "https://news.un.org/en/story/2020/06/1067112"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00026",
+      "text": "The fact that Brazil does not have a consolidated legal framework, however, is not a hall pass for abuse and violations. The civil society groups who filed the lawsuit against the São Paulo Metro argue that the data being collected in subway stations and trains is illegally being commercialized.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6932,
+      "body_end": 7228,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00027",
+      "text": "The assumption has grounding: in 2021, ViaQuatro, the private company that administers one of São Paulo's privatized metro lines, was condemned by the São Paulo State Court for using facial recognition without authorization.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7230,
+      "body_end": 7454,
+      "source_links": [
+        "https://www1.folha.uol.com.br/cotidiano/2021/05/viaquatro-e-condenada-por-reconhecimento-facil-sem-autorizacao-no-metro-de-sp.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00028",
+      "text": "At the time, the judge wrote that she had no doubts that passengers’ images were being captured without their consent for commercial purposes that benefit the company and other third-party firms involved.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7456,
+      "body_end": 7660,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00029",
+      "text": "“We are importing technology in a very non-conscious manner, simply reproducing what was being applied. And even a flawed reproduction, considering that most of these countries have abandoned these technologies. But these countries they need to sell this technology, which is extremely expensive, and use countries with a high inequality rate,” explained Carvalho.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7662,
+      "body_end": 8026,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00030",
+      "text": "She adds that Brazil operates under a logic of mass incarceration, of criminalization, without being able to use the criminal law parsimoniously for conflicts that truly require it.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 8028,
+      "body_end": 8209,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00031",
+      "text": "“We use it as a first resource and not the last. So it is more permissive for mechanisms like these, which violate rights, to find space to bloom inside our country.”",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 8211,
+      "body_end": 8377,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765094-b00032",
+      "text": "Please visit the project page for more pieces from the Unfreedom Monitor.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 8379,
+      "body_end": 8452,
+      "source_links": [
+        "https://advox.globalvoices.org/special/unfreedom-monitor/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "96d26b282b7b469e2771f7dbb04bdaccd41199bd69431b3c37ab90e904bacd5c",
+  "word_count": 1332,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8452,
+  "retrieved_at": "2026-11-16T22:35:11.696634+00:00",
+  "raw_html_sha256": "6ff4110a38232abf667ffc83aff7a1365dd3a69edde8c7fe0e842104d38c432c",
+  "resolved_source_url": "https://globalvoices.org/2022/06/20/brazilian-facial-recognition-ruling-can-set-an-important-precedent-for-country-wide-use/",
+  "canonical_url": "https://globalvoices.org/2022/06/20/brazilian-facial-recognition-ruling-can-set-an-important-precedent-for-country-wide-use/",
+  "source_bytes": 191893,
+  "authors": [
+    {
+      "name": "Laís Martins",
+      "url": "https://globalvoices.org/author/laismartins/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 765094,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "6ff4110a38232abf667ffc83aff7a1365dd3a69edde8c7fe0e842104d38c432c",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-0228c73119ad615252f2",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-06",
+    "eligible_month_documents": 83,
+    "selected_month_documents": 69,
+    "inclusion_probability": 0.8313253012048193,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Laís Martins",
+  "body_start": 510,
+  "body_end": 8962,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "12b23e0e0bdc26719780ce9d7068fcfac34eac42f3ac450b98cd5dea34550ca6",
+  "text_path": "articles/gv-765094.txt",
+  "metadata_path": "metadata/gv-765094.json",
+  "attribution": "This story by Laís Martins originally appeared on Global Voices. https://globalvoices.org/2022/06/20/brazilian-facial-recognition-ruling-can-set-an-important-precedent-for-country-wide-use/",
+  "content_sha256": "690adfc34c4d9bff04a70c75b7ca37ce4c3698bcbd548a8b410a83e51ddb06ce",
+  "source_sha256": "6ff4110a38232abf667ffc83aff7a1365dd3a69edde8c7fe0e842104d38c432c",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

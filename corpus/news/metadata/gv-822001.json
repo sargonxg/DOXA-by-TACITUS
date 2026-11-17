@@ -1,0 +1,497 @@
+{
+  "id": "gv-822001",
+  "publisher_id": 822001,
+  "source_id": "globalvoices:822001",
+  "source_url": "https://globalvoices.org/2024/10/11/israel-is-using-surveillance-technologically-to-subjugate-and-target-palestinians/",
+  "title": "Israel is using surveillance technology to subjugate and target Palestinians",
+  "published_at": "2024-10-11T05:06:42Z",
+  "modified_at": "2025-03-04T10:50:53Z",
+  "api_author_id": 3170,
+  "api_content_sha256": "cbb766e38b66c41d23b48d33c70d46b3e1014e5ec1f1d2a80bd80416b0dc6b92",
+  "api_response_sha256": "08596ab71ccd06b167b4be2f46af30954d7e1cf6998048b9e0bf4d20b49dc94a",
+  "api_retrieved_at": "2026-11-16T22:21:06.740015+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 24,
+      "count": 1672,
+      "name": "Israel",
+      "slug": "israel",
+      "parent": 14
+    },
+    {
+      "id": 93,
+      "count": 1717,
+      "name": "Palestine",
+      "slug": "palestine",
+      "parent": 14
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-822001-b00001",
+      "text": "Data collection and technology can have harmful applications, especially when used to monitor and subjugate marginalized people. This can be seen most clearly in how Israel has used technology in its war against Palestinians. Israel is using data collected from Palestinians to train AI-powered automated tools that have been deployed against Gaza and across the West Bank.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 373,
+      "source_links": [
+        "https://stopkiller.ai/",
+        "https://www.hrw.org/news/2024/09/10/questions-and-answers-israeli-militarys-use-digital-tools-gaza",
+        "https://www.wired.com/story/israel-surveillance-state-out-of-control-west-bank/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00002",
+      "text": "Israeli AI-supercharged surveillance tools and spyware, including Pegasus, a malware program, and AI weaponry, including the Smart Shooter and Lavender, have received both condemnation and interest. Graduates of the Israeli military’s elite intelligence unit, Unit 8200, are so coveted by surveillance and military tech companies that there is a term “8200-to-tech pipeline”.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 375,
+      "body_end": 750,
+      "source_links": [
+        "https://english.elpais.com/technology/2024-04-17/lavender-israels-artificial-intelligence-system-that-decides-who-to-bomb-in-gaza.html",
+        "https://foreignpolicy.com/2024/05/02/israel-military-artificial-intelligence-targeting-hamas-gaza-deaths-lavender/",
+        "https://globalvoices.org/2023/05/25/new-report-uncovers-the-first-documented-case-of-pegasus-spyware-used-in-an-international-war-context/",
+        "https://restofworld.org/2021/inside-israels-lucrative-and-secretive-cybersurveillance-talent-pipeline/",
+        "https://www.bbc.com/news/technology-57881364",
+        "https://www.surveillancewatch.io/",
+        "https://www.vice.com/en/article/israel-deploys-ai-powered-turret-in-the-west-bank/",
+        "https://www.washingtonpost.com/investigations/interactive/2021/nso-spyware-pegasus-cellphones/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00003",
+      "text": "In 2024, UN experts deplored Israel’s use of AI to commit crimes against humanity in Gaza. Regardless of their ongoing use of AI for human rights violations, that same year, Israel signed a global treaty on AI developed by the Council of Europe for safeguarding human rights.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 752,
+      "body_end": 1027,
+      "source_links": [
+        "https://news.un.org/en/story/2024/04/1148561",
+        "https://www.gov.il/en/pages/ai2024",
+        "https://www.ohchr.org/en/press-releases/2024/04/gaza-un-experts-deplore-use-purported-ai-commit-domicide-gaza-call"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00004",
+      "text": "A ‘gamified’ surveillance system",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1029,
+      "body_end": 1061,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00005",
+      "text": "Israel’s CCTV systems, called “Mabat 2000”, were first installed throughout Jerusalem in the year 2000 but have seen significant upgrades in more recent years. A 2023 report by Amnesty International mapped the visible Israeli surveillance system and found one or two cameras every five meters in Jerusalem’s Old City and Sheikh Jarrah. One Palestinian resident said, “Every time I see a camera, I feel anxious. Like you are always being treated as if you are a target.” Israeli CCTV cameras are also mounted on checkpoints and barriers and clustered on buildings and towers across the occupied West Bank.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1063,
+      "body_end": 1667,
+      "source_links": [
+        "https://www.amnesty.org/en/documents/mde15/6701/2023/en/",
+        "https://www.amnesty.org/en/latest/news/2023/05/israel-opt-israeli-authorities-are-using-facial-recognition-technology-to-entrench-apartheid/",
+        "https://www.mei.edu/publications/nowhere-hide-impact-israels-digital-surveillance-regime-palestinians"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00006",
+      "text": "Since 2020, the Wolf Pack of surveillance tech has been rolled out by Israel across the Occupied Palestinian Territories. Using the app called Blue Wolf, Israel carried out a massive biometrics registry of Palestinians, often at checkpoints and by gunpoint, sometimes at people's private homes in the middle of the night.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1669,
+      "body_end": 1990,
+      "source_links": [
+        "https://www.amnesty.org/en/latest/news/2023/05/israel-opt-israeli-authorities-are-using-facial-recognition-technology-to-entrench-apartheid/",
+        "https://www.timesofisrael.com/video-shows-idf-soldiers-waking-palestinian-kids-to-photograph-them-in-dead-of-night/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00007",
+      "text": "The gendered aspect of surveillance was noted in a 2021 report by 7amleh, with one female interviewee explaining that she would sleep in her hijab, feeling that she could not experience privacy inside her home.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1992,
+      "body_end": 2202,
+      "source_links": [
+        "https://7amleh.org/2021/11/08/intensification-of-surveillance-in-east-jerusalem-and-impact-on-palestinian-residents-rights-summer-and-fall-2021"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00008",
+      "text": "Israeli soldiers took pictures of Palestinians, including children, for cataloguing, and the process was gamified, giving “a weekly score based on the most amount [sic] of pictures taken. Military units that captured the most faces of Palestinians on a weekly basis would be provided rewards such as paid time away.” This tool was playfully referred to as a “Facebook for Palestinians” by Israeli soldiers.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2204,
+      "body_end": 2610,
+      "source_links": [
+        "https://www.theguardian.com/technology/2024/apr/19/idf-facial-recognition-surveillance-palestinians",
+        "https://www.youtube.com/watch?v=ZIsWNP5rvlk"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00009",
+      "text": "Red Wolf is part of the CCTV facial recognition infrastructure to identify Palestinians as they pass through checkpoints and move through cities. Another app called White Wolf is available to Israelis illegally settling in the West Bank, which allows them to search the database of Palestinians. Somehow, the increased monitoring and surveillance have failed to capture the crimes committed by Israeli settlers against Palestinians. Since October 2023, Israel has rolled out a similar facial recognition system registry of Palestinians in Gaza.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2612,
+      "body_end": 3156,
+      "source_links": [
+        "https://news.un.org/en/story/2021/11/1104792",
+        "https://www.france24.com/en/middle-east/20211110-how-israel-uses-facial-recognition-technology-to-monitor-west-bank-palestinians",
+        "https://www.nytimes.com/2023/05/01/technology/israel-palestine-facial-recognition.html",
+        "https://www.nytimes.com/2024/03/27/technology/israel-facial-recognition-gaza.html",
+        "https://www.timesofisrael.com/ngo-says-only-6-of-police-probes-of-settler-violence-it-was-party-to-ended-in-charges/",
+        "https://www.youtube.com/watch?v=8BHdLPAKSvI"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00010",
+      "text": "AI-supercharged weapons",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3158,
+      "body_end": 3181,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00011",
+      "text": "In 2021, Google and Amazon jointly signed an exclusive billion-dollar contract with the Israeli government to develop ‘Project Nimbus’, which is meant to advance technologies in facial detection, automated image categorization, object tracking, and sentiment analysis for military use — a move that was condemned by hundreds of Google and Amazon employees in a coalition called No Tech for Apartheid.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3183,
+      "body_end": 3583,
+      "source_links": [
+        "https://www.notechforapartheid.com/",
+        "https://www.theguardian.com/commentisfree/2021/oct/12/google-amazon-workers-condemn-project-nimbus-israeli-military-contract"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00012",
+      "text": "While many of the Big Tech companies have contracts with Israeli military and intelligence agencies, Project Nimbus has faced especially harsh criticism because of the symphony of alarms raised about Israel’s human rights violations brought forth prior to October 2023 by the United Nations, Human Rights Watch, Save the Children and Amnesty International.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3585,
+      "body_end": 3941,
+      "source_links": [
+        "https://news.un.org/en/story/2022/06/1119912",
+        "https://theintercept.com/2024/05/01/google-amazon-nimbus-israel-weapons-arms-gaza/",
+        "https://www.amnesty.org/en/location/middle-east-and-north-africa/middle-east/israel-and-occupied-palestinian-territories/report-israel-and-occupied-palestinian-territories/",
+        "https://www.hrw.org/report/2021/04/27/threshold-crossed/israeli-authorities-and-crimes-apartheid-and-persecution",
+        "https://www.savethechildren.org.uk/news/media-centre/press-releases/new-research-reveals-ongoing-violence-on-palestinian-children--",
+        "https://www.timesofisrael.com/googles-wiz-acquisition-another-feather-in-the-cap-of-israeli-military-intelligence/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00013",
+      "text": "Israeli intelligence units have been relying ever more heavily on AI tools to “rank civilians and civilian infrastructure according to their likelihood of being affiliated with militant organizations” within Gaza, speeding up the ranking process from a full year when completed by a person, to half a day by an AI tool.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3943,
+      "body_end": 4262,
+      "source_links": [
+        "https://www.972mag.com/israel-gaza-lavender-ai-human-agency/",
+        "https://www.theguardian.com/world/2023/dec/01/the-gospel-how-israel-uses-ai-to-select-bombing-targets"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00014",
+      "text": "AI-powered systems, ‘Lavender’ and ‘The Gospel’ (‘Hasbora’), have been designated as a “mass assassination factory” in Gaza with minimal human oversight where “emphasis is on quantity and not on quality”. Another AI-powered tool called “Where's Daddy” tracks selected Palestinians so that they would be bombed when they entered their home — also killing their families and neighbours; thousands of adults and children who were not involved in fighting have been murdered. The system identifies targets based on various criteria, one of which is whether the person is in a WhatsApp group with another suspected individual.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4264,
+      "body_end": 4885,
+      "source_links": [
+        "https://www.972mag.com/lavender-ai-israeli-army-gaza/",
+        "https://www.972mag.com/mass-assassination-factory-israel-calculated-bombing-gaza/",
+        "https://www.middleeastmonitor.com/20240418-israel-using-metas-whatsapp-to-kill-palestinians-in-gaza-through-ai-system/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00015",
+      "text": "Social scoring technology, such as these, has been banned by the European Union.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4887,
+      "body_end": 4967,
+      "source_links": [
+        "https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00016",
+      "text": "Drone terror",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4969,
+      "body_end": 4981,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00017",
+      "text": "Drones have been used by Israel against Palestinians for more than a decade, sometimes for surveillance and other times for strikes that have led to traumatic amputations — although drone use was considered a “well-known secret” in Israeli society for years. As early as 2009, Human Rights Watch reported on Israel’s use of armed drones in Gaza.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4983,
+      "body_end": 5328,
+      "source_links": [
+        "https://www.hrw.org/report/2009/06/30/precisely-wrong/gaza-civilians-killed-israeli-drone-launched-missiles",
+        "https://www.jpost.com/israel-news/article-724958",
+        "https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(18)30265-1/fulltext"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00018",
+      "text": "In 2021, Israel started deploying “drone swarms” in Gaza to locate and monitor targets. In 2022, Omri Dor, commander of Palmachim Airbase, said, “The whole of Gaza is ‘covered’ with UAVs that collect intelligence 24 hours a day.”",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5330,
+      "body_end": 5559,
+      "source_links": [
+        "https://www.timesofisrael.com/armed-drones-gave-idf-surgical-precision-during-recent-gaza-fighting-officers-say/",
+        "https://www.timesofisrael.com/in-apparent-world-first-idf-deployed-drone-swarms-in-gaza-fighting/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00019",
+      "text": "Since October 2023, Israel’s killing of Palestinians has increased dramatically, causing Gaza to be called a “graveyard for children” and “a living hell”. Technology has played a major role in increasing damage and targets, including drones. Hybrid drones such as “The Rooster” and “Robodogs” can fly, hover, roll, and climb uneven terrain. Machine gun rovers have been used to replace on-the-ground troops. There have been allegations that Israeli sniper drones have played recordings of crying infants to lure targets into the open in Gaza.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5561,
+      "body_end": 6103,
+      "source_links": [
+        "https://en.globes.co.il/en/article-israel-recruits-robot-dogs-for-gaza-fighting-1001465142",
+        "https://inews.co.uk/news/world/robodogs-replacing-troops-gaza-war-2940487",
+        "https://www.israeldefense.co.il/en/node/60981",
+        "https://www.snopes.com/news/2024/04/30/idf-sniper-drones-crying/",
+        "https://www.unicef.org/press-releases/gaza-has-become-graveyard-thousands-children"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00020",
+      "text": "Drones have been connected to psychological distress for Palestinians because of the 24/7 buzzing sounds and fears of being targeted.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6105,
+      "body_end": 6238,
+      "source_links": [
+        "https://wearenotnumbers.org/drones-above-gaza/",
+        "https://www.aljazeera.com/features/2013/11/28/gaza-life-and-death-under-israels-drones/",
+        "https://www.france24.com/en/live-news/20221001-worry-and-fear-incessant-israeli-drones-heighten-gaza-anxiety"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00021",
+      "text": "Israel intensifying AI-powered attacks",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6240,
+      "body_end": 6278,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00022",
+      "text": "As early as October 13, 2023, experts were calling Israeli attacks on Gaza a “potential genocide” and a “textbook case of genocide”. Judges of the International Court of Justice said in January 2024 that “at least some of the acts and omissions alleged […] to have been committed by Israelis in Gaza appear to be capable of falling within the provisions of the (Genocide) Convention.”",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6280,
+      "body_end": 6664,
+      "source_links": [
+        "https://jewishcurrents.org/a-textbook-case-of-genocide",
+        "https://opiniojuris.org/2023/10/18/public-statement-scholars-warn-of-potential-genocide-in-gaza/",
+        "https://www.reuters.com/world/middle-east/key-takeaways-world-court-decision-israei-genocide-case-2024-01-26/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00023",
+      "text": "In July 2024, the World Court found Israel responsible for apartheid. The United Nations Office for the Coordination of Humanitarian Affairs has reported over 41,000 Palestinians killed, over 96,000 Palestinians injured, and nearly half a million Palestinians facing catastrophic levels of food insecurity in Gaza.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6666,
+      "body_end": 6980,
+      "source_links": [
+        "https://www.hrw.org/news/2024/07/19/world-court-finds-israel-responsible-apartheid",
+        "https://www.ochaopt.org/content/reported-impact-snapshot-gaza-strip-25-september-2024"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822001-b00024",
+      "text": "In September 2024, Israel was suspected to be responsible for the exploding pagers attack in Lebanon, which killed at least 37 and injured approximately 3,000 people. In just three days, 90,000 Lebanese were displaced, fleeing Israeli attacks. Within one week, over 1,000 Lebanese were killed in the attacks. Israel continues to increase airstrikes on Lebanon, as well as Syria and Yemen.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6982,
+      "body_end": 7370,
+      "source_links": [
+        "https://apnews.com/article/israel-hezbollah-hamas-latest-mideast-29-september-2024-688b1cfe3a405449149aa6fe5a6fcc17",
+        "https://globalvoices.org/2024/09/18/mass-pager-attack-in-lebanon-raises-concerns-over-cyber-warfare-and-terrorism/",
+        "https://globalvoices.org/2024/09/24/israels-deadliest-day-in-lebanon-kills-500-sparks-war-crimes-outcry/",
+        "https://news.sky.com/story/amp/exploding-pagers-how-israel-is-suspected-of-using-technology-against-its-enemies-13216769",
+        "https://news.un.org/en/story/2024/09/1154921",
+        "https://www.cnn.com/2024/09/27/middleeast/israel-pager-attack-hezbollah-lebanon-invs-intl/index.html",
+        "https://www.timesofisrael.com/liveblog_entry/israeli-airstrike-reported-near-western-syrian-city-of-al-qusayr/",
+        "https://www.unocha.org/publications/report/lebanon/flash-appeal-lebanon-october-december-2024-october-2024"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5bcceb7c18ee4d8b6d6560bd8855ea0325bd84abdb3ce7fb72e2b52944ba1c4e",
+  "word_count": 1140,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 3,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7370,
+  "retrieved_at": "2026-11-16T22:44:27.151033+00:00",
+  "raw_html_sha256": "79ceee0f2bfb4e8264764614d535901382de0a83fc3ebb8ada6e5cdeacc9188f",
+  "resolved_source_url": "https://globalvoices.org/2024/10/11/israel-is-using-surveillance-technologically-to-subjugate-and-target-palestinians/",
+  "canonical_url": "https://globalvoices.org/2024/10/11/israel-is-using-surveillance-technologically-to-subjugate-and-target-palestinians/",
+  "source_bytes": 198502,
+  "authors": [
+    {
+      "name": "Safa",
+      "url": "https://globalvoices.org/author/safa/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 822001,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "79ceee0f2bfb4e8264764614d535901382de0a83fc3ebb8ada6e5cdeacc9188f",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-60d5f327b4c7a0226469",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-10",
+    "eligible_month_documents": 72,
+    "selected_month_documents": 60,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Safa",
+  "body_start": 485,
+  "body_end": 7855,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "884da91cd44ffab479c0837bad5d08c181c40aaee6a49dc75c346f858ddda04a",
+  "text_path": "articles/gv-822001.txt",
+  "metadata_path": "metadata/gv-822001.json",
+  "attribution": "This story by Safa originally appeared on Global Voices. https://globalvoices.org/2024/10/11/israel-is-using-surveillance-technologically-to-subjugate-and-target-palestinians/",
+  "content_sha256": "5302bd40ded2f2204ec4490e040fb6d1bcd99f1981c277bad35b0348de0ded1a",
+  "source_sha256": "79ceee0f2bfb4e8264764614d535901382de0a83fc3ebb8ada6e5cdeacc9188f",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

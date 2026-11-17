@@ -1,0 +1,438 @@
+{
+  "id": "gv-706875",
+  "publisher_id": 706875,
+  "source_id": "globalvoices:706875",
+  "source_url": "https://globalvoices.org/2020/06/03/password-hack-claim-puts-cyber-security-on-the-public-agenda-in-north-macedonia/",
+  "title": "Password hack claim puts cyber security on the public agenda in North Macedonia",
+  "published_at": "2020-06-03T14:29:29Z",
+  "modified_at": "2020-06-03T14:29:29Z",
+  "api_author_id": 2589,
+  "api_content_sha256": "ea6eaeff91e23520ccaf0aa90e834c3020a33402e7b70ad13626bf5fdaee93f4",
+  "api_response_sha256": "36bc3d63f20a164eefbe7ce2d06bb132aa122b08a06cf13d0b9306b43d571f31",
+  "api_retrieved_at": "2026-11-16T22:20:26.326198+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 192,
+      "count": 349,
+      "name": "Greece",
+      "slug": "greece",
+      "parent": 187
+    },
+    {
+      "id": 767,
+      "count": 518,
+      "name": "Macedonian",
+      "slug": "macedonian",
+      "parent": 317
+    },
+    {
+      "id": 68,
+      "count": 840,
+      "name": "North Macedonia",
+      "slug": "macedonia",
+      "parent": 57
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 187,
+      "count": 2705,
+      "name": "Western Europe",
+      "slug": "western-europe",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-706875-b00001",
+      "text": "This story is based on reporting by Global Voices content partner Meta.mk News Agency, a project of Metamorphosis Foundation.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 125,
+      "source_links": [
+        "https://meta.mk/en/greek-hackers-publish-old-passwords-of-employees-from-macedonian-ministries-of-finance-and-economy/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00002",
+      "text": "In North Macedonia, a hack targeting the email addresses and passwords of government officials may have missed its mark. But the attempt did succeed in briefly making cyber security a national talking point.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 127,
+      "body_end": 334,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00003",
+      "text": "Twitter recently suspended the anonymous Twitter profile named “Powerful Greek Army”, which on May 10 published a text file that it claimed contained the emails and passwords of employees at the Macedonian ministries of Finance and Economy.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 336,
+      "body_end": 576,
+      "source_links": [
+        "https://globalvoices.org/wp-content/uploads/2020/05/20200602-Powerful-Greek-Army-Twitter-suspended.png"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00004",
+      "text": "The Government of Republic of North Macedonia promptly knocked back the claim, however, and noted that the hackers had in fact only published passwords no longer in use.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 578,
+      "body_end": 747,
+      "source_links": [
+        "https://meta.mk/grchki-hakeri-objavile-stari-lozinki-na-vraboteni-vo-ministerstvata-za-ekonomija-i-finansii/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00005",
+      "text": "> Дел од е-маил адресите не се во функција повеќе години, бидејќи нивните корисници не работат веќе во министерствата, а лозинките на сите објавени е-маил адреси се стари и се променети пред повеќе од седум години и во тие сандачиња не може да се пристапи преку објавените лозинки.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 749,
+      "body_end": 1030,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706875-b00006",
+      "text": "> Part of these email addresses have been inactive for many years since their users don’t work anymore at these ministries, and the passwords of all the published email addresses are either old or were changed more than seven years ago. The respective user accounts and their mailboxes cannot be accessed through the published passwords.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1032,
+      "body_end": 1369,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706875-b00007",
+      "text": "No confidential data lost: govt.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1371,
+      "body_end": 1403,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00008",
+      "text": "In another media statement, the Minister of Economy Kreshnik Bekteshi explained that “no damage has been done” to the ministry's system and noted the ministry's IT department had informed him that no confidential data was stolen.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1405,
+      "body_end": 1634,
+      "source_links": [
+        "https://plusinfo.mk/bekteshi-hakerite-ob-avile-stara-data-baza-od-pred-7-ili-8-godini/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00009",
+      "text": "The minister further stated that both ministries have had their systems for official email services renewed and that complex passwords had been introduced for official email addresses, along with cyber security protocols that decrease the risk of systems getting compromised.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1636,
+      "body_end": 1911,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00010",
+      "text": "In their initial statement, the Government noted that its work strengthening the IT systems in state institutions was part of a comprehensive National Cyber Security Strategy and Action Plan.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1913,
+      "body_end": 2104,
+      "source_links": [
+        "http://mioa.gov.mk/?q=en/node/2379"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00011",
+      "text": "That has not stopped pro-opposition profiles, including members of the VMRO-DPMNE troll army, from trying to use the scandal as proof of ruling party incompetence, however.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2106,
+      "body_end": 2278,
+      "source_links": [
+        "https://globalvoices.org/2019/11/28/mp-with-populist-right-wing-political-party-from-north-macedonia-confirms-existence-of-partys-troll-army/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00012",
+      "text": "> These are not personal matters, you dummy, but official mails from the ministries of economy and finance. Who would be held accountable for this bashi-bazouk [unruly or chaotic management]",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2280,
+      "body_end": 2470,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Bashi-bazouk"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706875-b00013",
+      "text": "Media close to this political party, such as Hungarian-owned Alfa TV and its associated website express.mk, attempted to raise tensions with unverified sensationalist headlines such as “Employees in panic, Greek hackers breach [ministries of] finance and economy.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2472,
+      "body_end": 2736,
+      "source_links": [
+        "https://expres.mk/panika-megju-vrabotenite-grchki-hakeri-vlegoa-vo-finansii-i-ekonomija/",
+        "https://www.occrp.org/en/spooksandspin/right-wing-hungarian-media-moves-into-the-balkans"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00014",
+      "text": "Such comments are in spite of the fact that any breach, if one did occur, likely occurred during the period from 2006 to 2017 when the VMRO-DPMNE party was still in power.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2738,
+      "body_end": 2909,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00015",
+      "text": "Indeed, in the three weeks since the alleged hack took place, no-one has produced evidence that would contradict the government's position that the password list was at least seven years old.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2911,
+      "body_end": 3102,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00016",
+      "text": "Around the same time, the @PowerfulArmyGR Twitter profile boasted that it had hacked the websites of two Macedonian educational institutions and posted screenshots of supposedly vandalized web pages.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3104,
+      "body_end": 3303,
+      "source_links": [
+        "https://netpress.com.mk/grchki-hakeri-go-napadnaa-ministerstvoto-za-finansii-i-za-ekonomi-a/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00017",
+      "text": "However some Macedonian Twitter users doubted the hacker credentials of the “Powerful Greek Army,” implying that the list might have been built from previous hacks.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3305,
+      "body_end": 3469,
+      "source_links": [
+        "https://haveibeenpwned.com/",
+        "https://twitter.com/jiggymkd/status/1260470933883695104?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00018",
+      "text": "Others cast doubts on the national identity of the hackers which was never independently verified, with some users speculating that the leak might be the work of opposition moles or foreign agents.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3471,
+      "body_end": 3668,
+      "source_links": [
+        "https://twitter.com/VladimirKrstev/status/1260524763061129217"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00019",
+      "text": "> How do we know they are Greek, when they might be Russian hackers who only pose as Greeks to conduct hybrid attacks on our country, and, in so, doing, attack NATO too?",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3670,
+      "body_end": 3839,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706875-b00020",
+      "text": "Much of the social media noise focused on the simplicity of some of the passwords, and what they revealed about their creators, however.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3841,
+      "body_end": 3977,
+      "source_links": [
+        "https://twitter.com/search?q=cicecice&src=typed_query"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00021",
+      "text": "One in particular lit up social networks — “cicecice” (pronounced tseetse) is best translated into English as “tittit” or “boobboob” — a slang for female breasts.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3979,
+      "body_end": 4141,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00022",
+      "text": "At least one Twitter user was prepared to give that particular finance ministry employee, or former employee, the benefit of the doubt.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4143,
+      "body_end": 4278,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706875-b00023",
+      "text": "@alter_gella said the account owner could have meant čiče, a word that means “uncle” and is spelt almost the same way, but pronounced chiche.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4280,
+      "body_end": 4421,
+      "source_links": [
+        "https://twitter.com/alter_gella/status/1260617988115443712"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "fcca95c9b71d4986d13207a5dd115ba774561da3eaafc752c7a607c6692feec6",
+  "word_count": 699,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 4,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4421,
+  "retrieved_at": "2026-11-16T22:24:46.352876+00:00",
+  "raw_html_sha256": "dbce07f93d8c6d9a720aa14767a9c61a829b7388196b07014ec08d2c83deaee7",
+  "resolved_source_url": "https://globalvoices.org/2020/06/03/password-hack-claim-puts-cyber-security-on-the-public-agenda-in-north-macedonia/",
+  "canonical_url": "https://globalvoices.org/2020/06/03/password-hack-claim-puts-cyber-security-on-the-public-agenda-in-north-macedonia/",
+  "source_bytes": 191708,
+  "authors": [
+    {
+      "name": "Metamorphosis Foundation",
+      "url": "https://globalvoices.org/author/metamorphosis/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 706875,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "dbce07f93d8c6d9a720aa14767a9c61a829b7388196b07014ec08d2c83deaee7",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-4aa006d2f89042df633e",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-06",
+    "eligible_month_documents": 110,
+    "selected_month_documents": 92,
+    "inclusion_probability": 0.8363636363636363,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Metamorphosis Foundation",
+  "body_start": 506,
+  "body_end": 4927,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "baa513b5da5870cac351d9a884226eeeb48e6436233768f4cf48f7efda58479d",
+  "text_path": "articles/gv-706875.txt",
+  "metadata_path": "metadata/gv-706875.json",
+  "attribution": "This story by Metamorphosis Foundation originally appeared on Global Voices. https://globalvoices.org/2020/06/03/password-hack-claim-puts-cyber-security-on-the-public-agenda-in-north-macedonia/",
+  "content_sha256": "44e17f86c65679f62432c00f3dfba5913e04b57c0bce8e38846fe3e6f2eba002",
+  "source_sha256": "dbce07f93d8c6d9a720aa14767a9c61a829b7388196b07014ec08d2c83deaee7",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

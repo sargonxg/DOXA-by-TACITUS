@@ -1,0 +1,323 @@
+{
+  "id": "gv-806673",
+  "publisher_id": 806673,
+  "source_id": "globalvoices:806673",
+  "source_url": "https://globalvoices.org/2024/02/20/digital-surveillance-and-the-specter-of-ai-in-mexico/",
+  "title": "Digital surveillance and the specter of AI in Mexico",
+  "published_at": "2024-02-20T01:18:13Z",
+  "modified_at": "2025-02-14T10:55:28Z",
+  "api_author_id": 2984,
+  "api_content_sha256": "b2802af679dc81cbfeb1776064dfb47e7a73cbac9b0887a28999caeda7b2236e",
+  "api_response_sha256": "f2e602bd0e7b0fefb6d840637f9d8c5a8f9b15aa4c1a5261dfc2ac8377df9e33",
+  "api_retrieved_at": "2026-11-16T22:21:00.595796+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 37,
+      "count": 1643,
+      "name": "Mexico",
+      "slug": "mexico",
+      "parent": 1354
+    },
+    {
+      "id": 1358,
+      "count": 4577,
+      "name": "Migration &amp; Immigration",
+      "slug": "migration-immigration",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-806673-b00001",
+      "text": "Artificial Intelligence (AI) is one of the most important advancements of our time, and is set to revolutionize key industries, but with its rising popularity has come increased scrutiny of the potential harms and risks associated with the wide-scale use and deployment of the technology. The United Nations has recognized the threats of unregulated AI use on human rights, particularly on the right to privacy, freedom of expression, freedom of thought, and right to a fair trial. In spite of this, AI adoption has continued to outpace legislative protections, leaving populations vulnerable to malicious actors.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 613,
+      "source_links": [
+        "https://aiindex.stanford.edu/report/#individual-chapters",
+        "https://www.theguardian.com/technology/artificialintelligenceai",
+        "https://www.un.org/en/ai-advisory-body"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-806673-b00002",
+      "text": "Though this is a universal concern, county-level dynamics and individual human rights records mean that risk exposure levels vary from country to country, perhaps even region to region. In Latin America, surveillance technology is on the rise and lack of transparency is having real-world impacts both at the individual and societal levels. Mexico is a prime example.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 615,
+      "body_end": 982,
+      "source_links": [
+        "https://www.accessnow.org/press-release/analysis-answers-surveillance-tech-latin-america/",
+        "https://www.americasquarterly.org/article/surveillance-technology-is-on-the-rise-in-latin-america/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-806673-b00003",
+      "text": "Mexico was the first recorded government client and most prolific user of the Pegasus spyware — a software commonly used to surveil the phones and devices of journalists, civil society workers, and activists. Since 2011, it has spent over USD 80 million on the technology. Purchased ostensibly for use against terrorists and drug cartels, evidence shows that it has been levied against journalists, activists, and political opponents.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 984,
+      "body_end": 1418,
+      "source_links": [
+        "https://www.nytimes.com/2017/07/10/world/americas/mexico-missing-students-pegasus-spyware.html",
+        "https://www.nytimes.com/2023/03/07/world/americas/mexico-military-surveillance.html",
+        "https://www.nytimes.com/2023/04/18/world/americas/pegasus-spyware-mexico.html",
+        "https://www.theguardian.com/news/2021/jul/18/what-is-pegasus-spyware-and-how-does-it-hack-phones"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-806673-b00004",
+      "text": "Under the previous administration, international experts tasked with investigating the 2014 Iguala student disappearances were surveilled and intimidated, sparking an international scandal, but unscrupulous use of Pegasus has continued even under current President López Obrador’s tenure, suggesting a systemic problem with the country’s approach to use of the notorious spyware and its general regard for civil rights and liberties.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1420,
+      "body_end": 1853,
+      "source_links": [
+        "https://citizenlab.ca/2017/07/mexico-disappearances-nso/",
+        "https://www.bbc.com/news/world-latin-america-35539727",
+        "https://www.nytimes.com/2023/05/22/world/americas/mexico-spying-pegasus-israel.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-806673-b00005",
+      "text": "The problem extends beyond the Pegasus project. Installed in Mexico City is one of the largest urban surveillance systems in the Americas: El Centro de Comando, Control, Cómputo, Comunicaciones y Contacto Ciudadano, better known as El C5. The network, connected to panic buttons and command centers, is spread over 1,485 kilometers with software designed to automatically detect license plates. On top of that, the number of installed cameras grew from 18 million to 65 million between 2018 and 2022, with stated plans to add at least an additional 16 million more. Despite its apparent pre-eminence, issues have arisen with the C5, from false identifications to mishandling of personal data. Technological malfunctions have also been shown to impact the outcomes of criminal cases because of the assumption of objectivity that video surveillance supposedly construes.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1855,
+      "body_end": 2723,
+      "source_links": [
+        "https://gobierno.cdmx.gob.mx/noticias/crece-el-numero-de-camaras-del-c5/",
+        "https://restofworld.org/2021/mexico-city-security-theater/",
+        "https://www.sapiens.org/culture/mexico-city-surveillance-anthropology/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-806673-b00006",
+      "text": "The sprawling C5 system is dwarfed only by the Titan, an expansive intelligence and security database, both in terms of scale and threat to civil liberties. The software is used by several Mexican state governments to combine location data with other private information, including financial, government, and telecom data, to geolocate individuals across the country in real time. Governmental officials have been criticized for the controversial use of the database to target public figures, but, more problematically, access to Titan-enabled intel can be gained through an underground market, making it a further liability.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2725,
+      "body_end": 3350,
+      "source_links": [
+        "https://www.eff.org/deeplinks/2023/12/recent-surveillance-revelations-enduring-latin-american-issues-2023-year-review",
+        "https://www.nytimes.com/es/2023/11/09/espanol/mexico-vigilancia-fiscalia-telcel.html",
+        "https://www.vice.com/en/article/4a3pww/mexican-cartels-government-security-software-track-target-enemies"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-806673-b00007",
+      "text": "The extent to which artificial intelligence has been incorporated into the C5 and Titan is still not clear, but the specter of surveillance remains large and is set to cause more worries with the addition of new smart technologies.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 3352,
+      "body_end": 3583,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-806673-b00008",
+      "text": "At the border, issues are more apparent. A memorandum of understanding (MOU) between Texas Governor Greg Abbott and Chihuahua Governor Maru Campos outlined plans for the Torre Centinela (Sentinel Tower), a 20-story surveillance building to be situated in Chihuahua. At the cost of nearly USD 200 million, the building is set to include “1,791 automated license plate readers, 3,065 pan-tilt-zoom cameras, and 74 drones” connected to “live feeds from cameras owned by neighborhood businesses and residents” and equipped with biometric filters to support facial recognition. AI technology will also be connected to the Chihuahua state’s driver’s license registry to facilitate record keeping and subject identification.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3585,
+      "body_end": 4302,
+      "source_links": [
+        "https://therecord.media/torre-centinela-sentinel-tower-chihuahua-ciudad-juarez-texas-surveillance",
+        "https://www.documentcloud.org/documents/23875831-texas_mou"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-806673-b00009",
+      "text": "From the US side of the border, Mexican residents are also subject to an invasive surveillance infrastructure bolstered by AI technology. Companies such as Anduril and Elbit Systems are contracted by the US government to use sensors, drones, and even virtual reality (VR) aided by artificial intelligence to identify people and objects on both sides of the fence. In Mexico, beyond border security, AI has been used for evidence-based policy-making, as an aid in certain trials, and in the healthcare industry for resource management and data-driven diagnostics.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 4304,
+      "body_end": 4866,
+      "source_links": [
+        "https://mexicobusiness.news/tech/news/accelerating-mexicos-digitalization-ai-regulation",
+        "https://practiceguides.chambers.com/practice-guides/artificial-intelligence-2023/mexico",
+        "https://www.bloomberg.com/news/features/2018-04-09/the-race-to-cash-in-on-trump-s-invisible-high-tech-border-wall",
+        "https://www.theguardian.com/us-news/2022/sep/16/anduril-towers-surveillance-us-mexico-border-migrants",
+        "https://www.wired.com/tag/vr/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-806673-b00010",
+      "text": "Compared to other countries in Latin America, Mexico is behind in the acquisition and deployment of AI technologies, but that is likely to change in the future as the use of emerging technologies becomes more widespread across the globe. AI's potential revolutionizing impact on industries such as healthcare, finance, and security has already been recognized and received vocal support from some of the country’s leading politicians, not least Marcelo Ebrard, one of the frontrunners in the next presidential election, who proposed using facial recognition technology as part of the country’s crime-fighting strategies.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 4868,
+      "body_end": 5488,
+      "source_links": [
+        "https://ca.sports.yahoo.com/news/mexican-presidential-candidate-ebrard-calls-195025196.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAKxC8qg-aRqj32cZOI1oMSm1MdR3t7eJkIDbMrCfTyE-OOHUADKZYXuj8NDgND9eRqpMykQd-Q_JhTlcN2_9EkN9s2fUj3IR-gwbl9QKxStP7e5-ZtmGJhosiURVrD0ifatNMryyvt9fWO6jMRhuq8p1CwYbrxJeXIJVqjnT4_CH",
+        "https://en.wikipedia.org/wiki/Marcelo_Ebrard",
+        "https://www.ibm.com/downloads/cas/GVAGA3JP"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-806673-b00011",
+      "text": "Ambitions have outpaced the development of appropriate legislative tools and standards to govern the use and deployment of artificial intelligence and associated technologies. However, there are some measures in place. In 2018, Mexico produced an AI strategy that highlighted the need for a governance framework and outlined the challenges that emerging technologies posed to privacy rights. There are also several laws that contain provisions for regulating certain aspects of AI use, including the data protection law (Ley Federal de Protección de Datos Personales), the consumer protection law (Ley Federal de Protección al Consumidor), and the economic competition law (Ley Federal de Competencia Económica). Additionally, the Mexican Senate created the National Alliance for Artificial Intelligence (Alianza Nacional de Inteligencia Artificial, or ANIA) in 2023 to “fortify the artificial intelligence ecosystem in Mexico.”",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 5490,
+      "body_end": 6418,
+      "source_links": [
+        "https://oecd.ai/en/wonk/documents/mexico-mexican-national-ai-agenda-2018-2030",
+        "https://www.ania.org.mx/",
+        "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFCE_200521.pdf",
+        "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf",
+        "https://www.profeco.gob.mx/juridico/pdf/l_lfpc_ultimo_camdip.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-806673-b00012",
+      "text": "Despite these developments and the existence of 18 active AI-related initiatives, the lack of specific AI laws leaves Mexican people exposed. As artificial intelligence continues to advance, legislation must be developed to match the unique problems and challenges that arise with the new technology. This is the case for countries across the globe, but especially for those like Mexico, where the existence of overarching state surveillance systems and privacy-breaching technologies has left their populace more vulnerable to the adverse impacts of widespread AI adoption both by the state and by private entities.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 6420,
+      "body_end": 7036,
+      "source_links": [
+        "https://politica.expansion.mx/cdmx/2023/11/26/detectan-en-cdmx-mas-casos-de-violencia-digital-con-inteligencia-artificial",
+        "https://restofworld.org/2023/3-minutes-with-alejandra-lagunes/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "b1fa34918d0b38165fcbe4e068d722ba33a329175d3b9238292136dcc5b48a80",
+  "word_count": 1050,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7036,
+  "retrieved_at": "2026-11-16T22:42:13.950295+00:00",
+  "raw_html_sha256": "307c631ad83ffa4dd07f532bce3220a4bc8aa661c19621dce36b7eb647cc128f",
+  "resolved_source_url": "https://globalvoices.org/2024/02/20/digital-surveillance-and-the-specter-of-ai-in-mexico/",
+  "canonical_url": "https://globalvoices.org/2024/02/20/digital-surveillance-and-the-specter-of-ai-in-mexico/",
+  "source_bytes": 190491,
+  "authors": [
+    {
+      "name": "Latisha Harry",
+      "url": "https://globalvoices.org/author/latisha-harry/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 806673,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "307c631ad83ffa4dd07f532bce3220a4bc8aa661c19621dce36b7eb647cc128f",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-1bd191929dab3178fe23",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-02",
+    "eligible_month_documents": 78,
+    "selected_month_documents": 65,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Latisha Harry",
+  "body_start": 441,
+  "body_end": 7477,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "21aa6ac94bf76648081b5d24439240cf2950eab5a623fd2c0dab37f0abe2ee72",
+  "text_path": "articles/gv-806673.txt",
+  "metadata_path": "metadata/gv-806673.json",
+  "attribution": "This story by Latisha Harry originally appeared on Global Voices. https://globalvoices.org/2024/02/20/digital-surveillance-and-the-specter-of-ai-in-mexico/",
+  "content_sha256": "0b393257463a7d66766f25fcba37848defef8cb22bc5db7e578eb3de9adc1235",
+  "source_sha256": "307c631ad83ffa4dd07f532bce3220a4bc8aa661c19621dce36b7eb647cc128f",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

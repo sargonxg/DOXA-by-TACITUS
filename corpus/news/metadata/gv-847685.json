@@ -1,0 +1,506 @@
+{
+  "id": "gv-847685",
+  "publisher_id": 847685,
+  "source_id": "globalvoices:847685",
+  "source_url": "https://globalvoices.org/2025/12/19/dominican-republic-wastes-renewable-energy-while-fossil-fuel-thermoelectric-plants-operate-above-legal-limits/",
+  "title": "Dominican Republic wastes renewable energy while fossil fuel thermoelectric plants operate above legal limits",
+  "published_at": "2025-12-19T05:00:27Z",
+  "modified_at": "2025-12-16T11:41:58Z",
+  "api_author_id": 1586,
+  "api_content_sha256": "14f314df35fd360396a5031855f506a6eda8e9593aeb42d40aac92f8fdc4e4ce",
+  "api_response_sha256": "f78e1812923331e05bc905d33449e25c2f29b15886f74de0219da0afeb3325fc",
+  "api_retrieved_at": "2026-11-16T22:21:16.131612+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1353,
+      "count": 10223,
+      "name": "Caribbean",
+      "slug": "caribbean",
+      "parent": 219
+    },
+    {
+      "id": 170,
+      "count": 337,
+      "name": "Dominican Republic",
+      "slug": "dominican-republic",
+      "parent": 1354
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-847685-b00001",
+      "text": "By Zahiris Priscila Francisco Martínez",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 38,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00002",
+      "text": "The Dominican Republic has experienced accelerated growth in renewable energy production over the past few years. National Energy Commission (CNE) Executive Director Edward Veras confirmed that the country has reached 25 percent renewable energy, in compliance with the law on Incentives for the Development of Renewable Energy Sources and their Special Regimes.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 40,
+      "body_end": 402,
+      "source_links": [
+        "https://micm.gob.do/transparencia/images/pdf/transparencia/base-legal-de-la-institucion/leyes/Ley_57-07_Sobre_Energias_Renovables.pdf",
+        "https://presidencia.gob.do/noticias/comision-nacional-de-energia-afirma-que-rd-alcanza-25-de-generacion-renovable-y-se"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00003",
+      "text": "However, as production increases, consumption rises. On August 19, 2025, Minister of Energy and Mines Joel Santos noted that, for the first time, the National Interconnected Electrical System (SENI) reached a historic peak demand of 3,950 megawatts (MW). The DR has been immersed in a supply crisis triggered by the recent — albeit brief — shutdown of one of its main thermoelectric plants, Punta Catalina 2, because of maintenance failures.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 404,
+      "body_end": 845,
+      "source_links": [
+        "https://mem.gob.do/record-de-demanda-electrica-nocturna-fue-de-3950-mw-este-martes/",
+        "https://www.gem.wiki/Punta_Catalina_power_station"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00004",
+      "text": "To address citizens’ demands amid one of the hottest periods the country has experienced in years, President Luis Abinader declared the electrical system to be in a state of emergency. On September 8, he signed a decree to facilitate the procurement and contracting of goods, services, and works to increase generation capacity.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 847,
+      "body_end": 1175,
+      "source_links": [
+        "https://img.mmc.com.do/elcaribe-bucket/uploads/2025/09/decreto-517-25-1.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00005",
+      "text": "Although the country needs to increase generation, it has also maintained, through a process called “curtailment,” the practice of limiting and interrupting renewable energy production during peak generation hours and low-demand periods. In the energy sector, curtailment refers to the intentional reduction of electricity production at a generating plant, even when it technically has the capacity to produce more at that time. It occurs when energy supply exceeds demand or the grid’s transmission capacity, slowing energy generation due to external limitations.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1177,
+      "body_end": 1741,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00006",
+      "text": "GreenBox CEO Marvin Fernández, who has more than 20 years of experience in energy and the environment, verified that this practice has severe consequences for the energy system: “It is a factor affecting renewable generating companies, which stop selling part of their energy, and for electricity distribution companies, which end up buying more expensive energy.” The practice also means that fossil fuel burning is higher than necessary, since the country has the capacity to replace part of it with renewable energy.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1743,
+      "body_end": 2262,
+      "source_links": [
+        "https://www.linkedin.com/in/marvin-fern%C3%A1ndez-49a2112a/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00007",
+      "text": "Between January and July 2025, the practical implementation of curtailment in renewables has ranged between 10,000 and 18,000 megawatt-hours (MWh) of curtailed energy, reaching a maximum percentage above 50 percent this past June. Although the definitive solution involves investing in infrastructure and storage, data show that if the country immediately complied with its existing legislation, renewable energy waste and fossil fuel burning would be reduced.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2264,
+      "body_end": 2724,
+      "source_links": [
+        "https://micm.gob.do/transparencia/images/pdf/transparencia/base-legal-de-la-institucion/resoluciones/decretos/2023/Decreto_65-23_que_establece_el_Reglamento_de_aplicacion_L.57-07_de_Incetivos_Energia_Renovable.pdf",
+        "https://www.oc.do/Informes/Operación-del-SENI/Programación-del-SENI"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00008",
+      "text": "Decree 65-23 in Dominican law states that renewable energy generation plants not only have the right to inject their energy into the grid, but must also provide the National Interconnected Electrical System Coordinating Body (OC) with the necessary information for operational planning.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2726,
+      "body_end": 3012,
+      "source_links": [
+        "https://micm.gob.do/transparencia/images/pdf/transparencia/base-legal-de-la-institucion/resoluciones/decretos/2023/Decreto_65-23_que_establece_el_Reglamento_de_aplicacion_L.57-07_de_Incetivos_Energia_Renovable.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00009",
+      "text": "The law also states that “the programming must protect the preferential injection rights of renewables,” reaffirmed in Articles 199 and 202 of the Regulatory Application of the General Electricity Law 125-01. This means renewables will always have priority in dispatching energy to the grid and can be limited only after all technical parameters set by law are met by thermal plants.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3014,
+      "body_end": 3397,
+      "source_links": [
+        "https://mem.gob.do/wp-content/uploads/2019/04/Reglamento-de-Aplicación-Ley-125-01.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00010",
+      "text": "The Regulation for Authorization of Commissioning Electrical Works in SENI, issued by the Superintendency of Electricity, establishes that electrical generation works must undergo the “Operational Restrictions Verification Tests (VEROPE), through which the Coordinating Body (OC) certifies several parameters, including the technical minimum power (PMT).” According to Fernández, “In this regard, the injection rights of renewables cannot be limited for technical reasons without previously applying all necessary measures to conventional thermal generating plants.”",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3399,
+      "body_end": 3965,
+      "source_links": [
+        "https://faolex.fao.org/docs/pdf/dom74630.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00011",
+      "text": "VEROPE tests were developed in 2010 in response to the need to measure the real operational performance of Dominican thermal plants. For standardization or global regulatory use, VEROPE tests have no directly recognized equivalent outside the Dominican Republic. Although the technical criteria they evaluate, such as start-up times, discharge, synchronization, shutdown, and load are common practices in thermal plant engineering, the acronym and formal procedure are unique to the DR.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3967,
+      "body_end": 4453,
+      "source_links": [
+        "https://transparencia.sie.gob.do/wp-content/uploads/2021/06/Memoria_Institucional_2012.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00012",
+      "text": "Technical Minimum Power (PMT), meanwhile, refers to the stable minimum level at which a generating plant can operate in accordance with technical specifications and the manufacturer’s operating manuals, or according to technical studies conducted by experts. “If thermal plants were dispatched above the minimum technical levels established in the VEROPE test, it would negatively impact the development of renewable energies in the country,” Fernández noted. “This practice would reduce the available space in the grid for renewable generation injection, causing greater curtailment of solar and wind energy, which discourages new investments in the sector. Likewise, it would increase fossil fuel use, raising generation costs and emissions, contrary to national objectives for energy transition and diversification of the country’s energy matrix.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4455,
+      "body_end": 5305,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00013",
+      "text": "According to the president of the Association for the Promotion of Renewable Energies (ASOFER), Alfonso Rodríguez, “In practice, thermal plants in the country operate with comfort margins far above international standards, resulting in inefficient dispatch and forcing renewable energy curtailment.” He explained that this makes no economic sense for the electrical system, nor does it make operational or social sense. “Distribution companies end up paying for more expensive and more polluting electricity, while renewable energy investors see their profitability eroded and their confidence in continuing to invest in the country diminish,” he continued. “When we see large multinationals in nearby countries deciding to divest and move to more consolidated markets, the message is clear. Regulatory and institutional security are key to the country’s development.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5307,
+      "body_end": 6175,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00014",
+      "text": "Rodríguez argues that this increases the cost of operating the electrical system by replacing clean, low-cost energy with more expensive conventional generation, directly harming state-owned distributors, industry, and society. It also contradicts emission reduction commitments, where the Dominican Republic has pledged to reduce its CO₂ emissions by 25 percent by 2030.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 6177,
+      "body_end": 6548,
+      "source_links": [
+        "https://climatepromise.undp.org/what-we-do/where-we-work/dominican-republic",
+        "https://www.intec.edu.do/downloads/documents/institucionales/marco-legal/Ley_1-12_LEY_ORGANICA_DE_LA_ESTRATEGIA_NACIONAL_DE_DESARROLLO.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00015",
+      "text": "“The disregard for the legal framework greatly affects renewables by enabling curtailment, a practice that has become a business for thermal plants, since the more energy they dispatch, the greater their income — even without technical justification and despite exceeding the planning mandated by the Coordinating Body,” Rodríguez emphasized. “Ending this practice is essential for renewable growth, attracting new investments, and promoting the environmental and economic benefits that the energy transition can bring to the country.”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6550,
+      "body_end": 7085,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00016",
+      "text": "VEROPE non-compliance",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 7087,
+      "body_end": 7108,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00017",
+      "text": "Renewable energy has priority rights in selling and dispatching energy under equal prices and conditions. This mandates the OC to operate the system at minimum cost. The OC and the Energy Control Center (CCE) — responsible for operating SENI — should only apply renewable curtailment as a last resort, after first applying all necessary measures to conventional thermal generation, but available OC data show that this practice is now common.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 7110,
+      "body_end": 7552,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00018",
+      "text": "In reports shared by the OC in its weekly programming, differences are shown between PMT parameters and the actual dispatch of fossil fuel plants in the final weekly programming between September 6 and 12, 2025. Among these cases, Punta Catalina 1 dispatched an average of 340 MW when its PMT was 250 MW, and Punta Catalina 2 reached 360 MW versus a PMT of 277 MW. Generation above Technical Minimum Power also occurred in other plants.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 7554,
+      "body_end": 7990,
+      "source_links": [
+        "https://www.oc.do/Informes/Operación-del-SENI/Programación-del-SENI"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00019",
+      "text": "“It is important to understand that curtailment is justified by alleged operational limits of thermal plants. Internationally, this can occur when renewable penetration exceeds 40 percent; in the Dominican Republic it rarely exceeds 20 percent. Therefore, compliance with the legal framework for the entire electricity sector must be ensured, including planning, operation, and oversight according to the law,” Rodríguez concluded.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 7992,
+      "body_end": 8423,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00020",
+      "text": "When asked about the reasons for renewable curtailment, the OC replied that “the programs and reports of (OC) contain all the required information, including technical restrictions.”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 8425,
+      "body_end": 8607,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00021",
+      "text": "Losses for distributors and public finances",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 8609,
+      "body_end": 8652,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00022",
+      "text": "In the Dominican Republic, electricity distribution companies are managed by the Unified Council of Distribution Companies (CUED) and include Edenorte, Edesur, and Edeeste. Each operates exclusively within its concession area; because they are under state control, they do not compete with one another. Instead, they cover most of the national territory under an exclusive concession scheme established by the General Electricity Law, which prevents competition at the low- and medium-voltage levels.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 8654,
+      "body_end": 9154,
+      "source_links": [
+        "https://edeeste.com.do/index.php/comunicado-edesur-edenorte-edeeste/",
+        "https://mem.gob.do/wp-content/uploads/2019/01/Ley-No.-125-01-General-de-Electricidad.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00023",
+      "text": "This monopolistic factor occurs when, due to the nature of the economic activity, a single company can provide the service at a lower cost because fixed infrastructure costs are very high and duplication would be inefficient.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 9156,
+      "body_end": 9381,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00024",
+      "text": "According to Fernández, curtailment affects distribution companies because they end up paying more for energy due to marginal cost factors, worsening the system’s existing structural deficit and resulting in higher public money spending. In 2024 alone, RD 86,393,000 (around USD 1.3 million) was budgeted in subsidies for the EDES (87 percent of total electric subsidies allocated by the Dominican government in that year’s national budget). In the supplementary budget approved in July 2024, RD 6 billion (approximately USD 101.7 million) was allocated to cover the EDES’ operational deficit.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 9383,
+      "body_end": 9976,
+      "source_links": [
+        "https://www.senadord.gob.do/senado-declara-de-urgencia-y-aprueba-presupuesto-complementario/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00025",
+      "text": "The solution lies in storage",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 9978,
+      "body_end": 10006,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00026",
+      "text": "Fernández believes that the solution to the curtailment situation comes with “storage, flexibility, and investment in transmission networks capable of transporting energy without restrictions to consumption centers.” This reduces — and even eliminates — energy curtailment, and provides greater grid stability. “That excess energy currently curtailed during the day could be stored and released during peak hours, when the spot market price reaches its maximum values,” he explained. “In this way, we reduce costs and gain stability.”",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 10008,
+      "body_end": 10542,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00027",
+      "text": "In July 2024, the National Energy Commission (CNE) issued Resolution CNE-AD-0005-2024, which establishes new conditions for processing concessions for special-regime generation projects that integrate storage systems (BESS) from variable renewable energy sources (ERV). The main goal is to ensure that renewable energy projects with installed capacities equal to or greater than 20 megawatts in alternating current (MWac) include battery storage systems of at least 50 percent of their capacity, with a minimum duration of four hours.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 10544,
+      "body_end": 11078,
+      "source_links": [
+        "https://cne.gob.do/documentos/normas/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00028",
+      "text": "The Public Tender for New Renewable Energy Generation, issued by CUED, requires that new projects not only generate clean energy but also provide complementary grid services, including frequency and voltage regulation, black-start capability, and advanced technologies such as grid-forming inverters. However, these rules do not require already-established generators to join the mandatory storage regime, perpetuating the problem.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 11080,
+      "body_end": 11511,
+      "source_links": [
+        "https://sie.gob.do/wp-content/uploads/2025/08/SIE-092-2025-LCE.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847685-b00029",
+      "text": "One reason generators prefer to remain outside the storage system is the cost involved, as their initial concession contracts (PPAs) did not include such requirements.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 11513,
+      "body_end": 11680,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "305725efc559b3d063d207d48b927d42b86f4bb4001e57eedd05028c280e5942",
+  "word_count": 1697,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 11680,
+  "retrieved_at": "2026-11-16T22:55:09.051647+00:00",
+  "raw_html_sha256": "8add42f89b3543b4feb577df95d022fe9d68dcdef8c21da2432fbac952234416",
+  "resolved_source_url": "https://globalvoices.org/2025/12/19/dominican-republic-wastes-renewable-energy-while-fossil-fuel-thermoelectric-plants-operate-above-legal-limits/",
+  "canonical_url": "https://globalvoices.org/2025/12/19/dominican-republic-wastes-renewable-energy-while-fossil-fuel-thermoelectric-plants-operate-above-legal-limits/",
+  "source_bytes": 194755,
+  "authors": [
+    {
+      "name": "Guest Contributor",
+      "url": "https://globalvoices.org/author/guest-contributor/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 847685,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "8add42f89b3543b4feb577df95d022fe9d68dcdef8c21da2432fbac952234416",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-e2b4642850a6587d3a75",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-12",
+    "eligible_month_documents": 51,
+    "selected_month_documents": 43,
+    "inclusion_probability": 0.8431372549019608,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Guest Contributor",
+  "body_start": 559,
+  "body_end": 12239,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "16aa7020e8f970044464826604c7b6b1d27e658e426b18046c5c5e686c2663c8",
+  "text_path": "articles/gv-847685.txt",
+  "metadata_path": "metadata/gv-847685.json",
+  "attribution": "This story by Guest Contributor originally appeared on Global Voices. https://globalvoices.org/2025/12/19/dominican-republic-wastes-renewable-energy-while-fossil-fuel-thermoelectric-plants-operate-above-legal-limits/",
+  "content_sha256": "bd48b268db013a7acad3ba59b779b8e81f3c9d333b05741ff9a345fe89934fbe",
+  "source_sha256": "8add42f89b3543b4feb577df95d022fe9d68dcdef8c21da2432fbac952234416",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

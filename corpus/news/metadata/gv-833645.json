@@ -1,0 +1,443 @@
+{
+  "id": "gv-833645",
+  "publisher_id": 833645,
+  "source_id": "globalvoices:833645",
+  "source_url": "https://globalvoices.org/2025/07/02/china-is-rushing-to-develop-its-ai-powered-censorship-system/",
+  "title": "China is rushing to develop its AI-powered censorship system",
+  "published_at": "2025-07-02T20:00:35Z",
+  "modified_at": "2025-06-30T19:49:39Z",
+  "api_author_id": 3263,
+  "api_content_sha256": "e3f0971db55254e555dc378e0e93457b69501fdcda48940bfc681c1b90924c83",
+  "api_response_sha256": "aa6dcff428883d80ac87f532a741a5a8d2776b7ecb4a6722bb7eeb3dc4c4dc2d",
+  "api_retrieved_at": "2026-11-16T22:21:13.235465+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 325,
+      "count": 2253,
+      "name": "Chinese",
+      "slug": "chinese",
+      "parent": 317
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-833645-b00001",
+      "text": "The rapid development of AI has triggered controversy surrounding copyright and big data in most parts of the world. In China, the trend of automated censorship is more worrisome, as it enables the transformation of the authoritarian regime's passive censorship practice into the proactive shaping of people’s cognitive framework in favour of the single-party regime.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 367,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00002",
+      "text": "While a Hong Kong Free Press (HKFP) report revealed several months ago that Chinese large language models (LLMs), such as Qwen, Ernie or Deepseek, are usually aligned with the Chinese Communist Party’s (CCP’s) views, new research seems to show a tightening of AI censorship, according to Alex Colville, a researcher with the China Media Project:",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 369,
+      "body_end": 714,
+      "source_links": [
+        "https://chinamediaproject.org/2025/06/12/chinas-global-ai-firewall/",
+        "https://globalvoices.org/2025/02/05/lets-talk-about-something-else-chinas-ai-chatbot-deepseek-censors-sensitive-topics/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00003",
+      "text": "> If you had asked DeepSeek’s R1 open-source large language model just four months ago to list out China’s territorial disputes in the South China Sea — a highly sensitive issue for the country’s Communist Party leadership — it would have responded in detail, even if its responses subtly tugged you towards a sanitized official view. Ask the same question today of the latest update, DeepSeek-R1-0528, and you’ll find the model is more tight-lipped, and far more emphatic in its defence of China’s official position.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 716,
+      "body_end": 1233,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833645-b00004",
+      "text": "Such “politically correct” machine intelligence is made possible through a series of regulations. Since 2022, this provision ensures that automated content recommendations will “actively spread positive energy” and conform to “mainstream values”. Ideological guidance released in January 2023 requires service providers to “respect social mores and ethics” and “adhere to the correct political direction, public opinion orientation and values trends”. Six months later, under the Interim Measures for the Management of Generative Artificial Intelligence Services, all generative AI services are required to uphold the state's “Socialist Core Values”, and the training data should come from “lawful sources”, meaning legally obtained data sources that must not include content that is censored or deemed illegal by Chinese authorities.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1235,
+      "body_end": 2069,
+      "source_links": [
+        "https://carnegieendowment.org/research/2024/02/tracing-the-roots-of-chinas-ai-regulations?lang=en",
+        "https://hongkongfp.com/2023/08/18/with-new-rules-china-seeks-to-stay-in-ai-race-while-maintaining-control-of-online-content/",
+        "https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm",
+        "https://www.cac.gov.cn/2022-12/11/c_1672221949354811.htm",
+        "https://www.chinalawtranslate.com/en/generative-ai-interim/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00005",
+      "text": "The impact of AI censorship",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 2071,
+      "body_end": 2098,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00006",
+      "text": "As AI censorship becomes more pervasive, China is undergoing a profound transformation in how it censors information online, moving from traditional, labour-intensive methods to a new era powered by artificial intelligence, according to this recent analysis by the China Media Project.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2100,
+      "body_end": 2385,
+      "source_links": [
+        "https://chinamediaproject.org/2025/06/12/chinas-global-ai-firewall/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00007",
+      "text": "Traditionally, censorship in China depended on armies of human censors who combed through social media and news for sensitive keywords, manually deleting posts or blocking content that crossed political red lines. This manual approach was time- and labour-intensive, struggling to keep pace with the sheer scale and speed of online conversations. All this is part of the “public opinion monitoring” industry, which refers to the systematic surveillance of online discourse and employs tens of thousands of people.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2387,
+      "body_end": 2900,
+      "source_links": [
+        "https://chinamediaproject.org/2025/03/18/survival-comes-first/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00008",
+      "text": "Read more: Confessions from a Chinese censorship worker",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2902,
+      "body_end": 2957,
+      "source_links": [
+        "https://globalvoices.org/2023/10/16/confessions-from-a-chinese-censorship-worker/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00009",
+      "text": "Now, with the rise of LLMs, the Chinese government and tech giants are embedding censorship directly into the architecture of AI systems. To ensure that the AI models are moving in the “correct political direction”, the Chinese LLMs are trained to self-censor their generative content. A recently leaked dataset, which is 300 GB in size, contains 133,000 pieces of content and prompts that instruct the AIs how to classify and rank sensitive content. The dataset’s main purpose seems to be classifying content related to public opinion. It reveals a sophisticated classification system with 38 distinct categories, ranging from commonplace topics like “culture” and “sports” to more politically controversial ones.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2959,
+      "body_end": 3673,
+      "source_links": [
+        "https://substack.com/home/post/p-155226006",
+        "https://techcrunch.com/2025/03/26/leaked-data-exposes-a-chinese-ai-censorship-machine/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00010",
+      "text": "The exact origin of the leaked dataset remains unknown. However, some analysts see it as an indicator that AI is being used to replace a once labour-intensive system requiring thousands of human censors with an automated surveillance machine. Such a system would be able to process much larger volumes of online content, allowing every last corner of the internet to be continuously and self-sufficiently monitored. Xiao Qiang, a researcher on China's censorship system at UC Berkeley, said that the development of generative AI has pushed China’s automated censorship to a new level:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3675,
+      "body_end": 4259,
+      "source_links": [
+        "https://chinamediaproject.org/2025/03/24/chinas-ai-content-dragnet/",
+        "https://techcrunch.com/2025/03/26/leaked-data-exposes-a-chinese-ai-censorship-machine/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00011",
+      "text": "> Unlike traditional censorship mechanisms, which rely on human labor for keyword-based filtering and manual review, an LLM trained on such instructions would significantly improve the efficiency and granularity of state-led information control.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4261,
+      "body_end": 4506,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833645-b00012",
+      "text": "In addition to censorship training, China has also established its own AI benchmarks to ensure the country’s LLMs are “lawful”. Two months before the Chinese generative AI law was enacted, a group of Chinese computer engineers, led by He Junxian, assistant professor of the Hong Kong University of Science and Technology, released the C-eval benmark on Github, which is composed of 13,948 multi-choice questions spanning 52 diverse disciplines, including “Mao Zedong’s thought”, “Marxism” and “Ideological and and Moral Cultivation”.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4508,
+      "body_end": 5041,
+      "source_links": [
+        "https://cevalbenchmark.com/",
+        "https://eastasiaforum.org/2023/09/27/the-future-of-ai-policy-in-china/",
+        "https://x.com/Francis_YAO_/status/1661267074088423426"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00013",
+      "text": "Months later, in early 2024, the China Academy of Information and Communications Technology (CAICT) under the Ministry of Industry and Information Technology (MIIT), developed an “AI Safety Benchmark”, with 400,000 Chinese prompts that address issues related to cultural bias and users’ psychological well-being, privacy and business secrets, political correctness and lawfulness.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5043,
+      "body_end": 5423,
+      "source_links": [
+        "https://mp.weixin.qq.com/s/3FcLBHCy_oVaaj-2Ca9zag"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00014",
+      "text": "The global spread of Chinese narratives",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5425,
+      "body_end": 5464,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00015",
+      "text": "With all these Chinese AI benchmarks and regulations, it's not only Chinese generative AI tools that are subject to censorship, but Western brands, like Microsoft Copilot, are also facing the same restrictions, particularly when the AI service is operating in China. Exiled Chinese dissident, Teacher Li, provided one example on X:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5466,
+      "body_end": 5797,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00016",
+      "text": "> A friend said that when he asked Microsoft's AI tool Copilot how to bring down Xi Jinping, it refused to answer, but when he asked how to bring down Donald Trump, it generated an answer. It seems that the tool obeys the CCP censorship.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5799,
+      "body_end": 6036,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833645-b00017",
+      "text": "In other words, the result is a system where censorship is proactive and invisible: the AI simply does not generate or recommend content that falls outside state-approved boundaries.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6038,
+      "body_end": 6220,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00018",
+      "text": "Given Chinese generative AIs’ strict alignment with the CCP’s political line, major search engines like Baidu (the most popular search engine in China) and social media platforms like Weibo have embedded Deepseek in their services. Whenever users search for certain topics, Deepseek generates the “politically correct thought process” or official narratives about the subject.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6222,
+      "body_end": 6598,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00019",
+      "text": "That’s why Alex Colville warned that “any adoption of DeepSeek’s model overseas has the potential to spread the PRC’s domestic social governance system abroad”. Taiwan is the most ferocious cognitive battlefield in the development of generative AI.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6600,
+      "body_end": 6848,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00020",
+      "text": "The mainland Chinese government insists that Taiwan, an autonomous state since 1949 after the Kuomingtang, the ruling party of the Republic of China, was defeated by the CCP in the Chinese Civil War and established the exiled government offshore across the Taiwan Strait, is part of China. In recent years, China has attempted to coerce Taiwan into unification with diplomatic, economic, military means and cognitive warfare, including targeted information manipulation, propaganda, and psychological operations.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6850,
+      "body_end": 7362,
+      "source_links": [
+        "https://media.defense.gov/2025/May/01/2003702343/-1/-1/1/VIEW%20-%20CHEN%20DISCLAIMER.PDF"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00021",
+      "text": "Powered by new technology, Chinese political propaganda is going global. OpenAI’s recent report on the malicious use of its models also revealed that some Chinese actors have used its’ product to monitor anti-China social media comments, publish anti-American comments in Spanish targeting social media users from Latin America, and generate comments critical of Chinese dissidents, including Cai Xia.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 7364,
+      "body_end": 7765,
+      "source_links": [
+        "https://cdn.openai.com/threat-intelligence-reports/disrupting-malicious-uses-of-our-models-february-2025-update.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00022",
+      "text": "As DeepSeek’s AI models gain traction internationally — attracting users with their strong technical performance at low costs — the question remains how their embedded political filters will affect global audiences. The broader concern is what it means when millions worldwide start depending on AI systems deliberately designed to reflect and reinforce Chinese government perspectives.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7767,
+      "body_end": 8153,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833645-b00023",
+      "text": "All these developments indicate how generative AI can be weaponised to monitor dissent, manipulate narratives, and enforce ideological conformity by authoritative states, while human rights-based AI governance is lagging behind.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 8155,
+      "body_end": 8383,
+      "source_links": [
+        "https://www.accessnow.org/human-rights-and-ai-governance/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "34b1f9c0d2218fdcb530ba74038929911e3220df8281982efc8860b441025653",
+  "word_count": 1244,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 8383,
+  "retrieved_at": "2026-11-16T22:47:02.951913+00:00",
+  "raw_html_sha256": "f174df04fc9e2091f67f4a8874d701b9a246cb6f0b3b84a92a18fe3ded2b5ef9",
+  "resolved_source_url": "https://globalvoices.org/2025/07/02/china-is-rushing-to-develop-its-ai-powered-censorship-system/",
+  "canonical_url": "https://globalvoices.org/2025/07/02/china-is-rushing-to-develop-its-ai-powered-censorship-system/",
+  "source_bytes": 193706,
+  "authors": [
+    {
+      "name": "Yasemin Yam",
+      "url": "https://globalvoices.org/author/yasemin-yam/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 833645,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "f174df04fc9e2091f67f4a8874d701b9a246cb6f0b3b84a92a18fe3ded2b5ef9",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-761b6a593548adb17466",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-07",
+    "eligible_month_documents": 100,
+    "selected_month_documents": 84,
+    "inclusion_probability": 0.84,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Yasemin Yam",
+  "body_start": 455,
+  "body_end": 8838,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b515acfa6fb6ac59fcb7a694b85fd83372d46aeff679bb6657dc09e73a052cc2",
+  "text_path": "articles/gv-833645.txt",
+  "metadata_path": "metadata/gv-833645.json",
+  "attribution": "This story by Yasemin Yam originally appeared on Global Voices. https://globalvoices.org/2025/07/02/china-is-rushing-to-develop-its-ai-powered-censorship-system/",
+  "content_sha256": "b8a9654a5f3ff9f062de1028919f08bd741c958cd9a6391193f741e686702c47",
+  "source_sha256": "f174df04fc9e2091f67f4a8874d701b9a246cb6f0b3b84a92a18fe3ded2b5ef9",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

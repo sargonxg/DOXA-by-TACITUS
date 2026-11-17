@@ -1,0 +1,592 @@
+{
+  "id": "gv-712453",
+  "publisher_id": 712453,
+  "source_id": "globalvoices:712453",
+  "source_url": "https://globalvoices.org/2020/07/08/tech-giants-halt-data-requests-as-hong-kong-national-security-law-casts-long-shadow/",
+  "title": "Tech giants halt data requests as Hong Kong national security law casts long shadow",
+  "published_at": "2020-07-08T13:53:36Z",
+  "modified_at": "2020-07-08T14:00:57Z",
+  "api_author_id": 254,
+  "api_content_sha256": "593c6002372f9da3590815176af4f618d4af2bcfb1766da0100c462b8a8445e9",
+  "api_response_sha256": "41b5e94653195b7cb23528ff052c85743f9b1c74605492508b001629e4b0b418",
+  "api_retrieved_at": "2026-11-16T22:20:27.242881+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 49,
+      "count": 1566,
+      "name": "Hong Kong (China)",
+      "slug": "hong-kong-china",
+      "parent": 16
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-712453-b00001",
+      "text": "The number of tech giants who say they will reject the Hong Kong government’s user requests following the recent enactment of the China-devised national security law (NSL) is growing.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 183,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00002",
+      "text": "The first tech company to announce its position was Telegram, a mobile messenger app that has been used heavily by Hong Kong protesters to discuss protest strategies and coordinate actions since June 2019.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 185,
+      "body_end": 390,
+      "source_links": [
+        "https://hongkongfp.com/2020/07/05/exclusive-telegram-to-temporarily-refuse-data-requests-from-hong-kong-courts-amid-security-law-terrorism-row/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00003",
+      "text": "After the Hong Kong Committee for Safeguarding National Security (CSNS) — a body created under the NSL — released details of the implementation of the NSL on July 6, more internet corporations, including WhatsApp, Facebook, Google, Twitter, LinkedIn, Microsoft and Zoom followed suit.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 392,
+      "body_end": 676,
+      "source_links": [
+        "https://www.info.gov.hk/gia/general/202007/06/P2020070600784.htm?fontSize=1"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00004",
+      "text": "Video sharing app Tiktok meanwhile announced its plans to exit the Hong Kong market, without referring to the NSL in its statement.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 678,
+      "body_end": 809,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00005",
+      "text": "Unrestrained national security police power",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 811,
+      "body_end": 854,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00006",
+      "text": "Under Article 43 of the NSL, the national security police authorities are empowered to search private properties without a warrant, restrict suspects, freeze assets, intercept communications and instruct internet service providers (ISPs) and platform operators (POs) to remove and block access to content, as well as suspend user services.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 856,
+      "body_end": 1195,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00007",
+      "text": "If ISPs and POs fail to comply, the national security police can obtain a court warrant to seize the relevant electronic device, take action to remove content and request ISPs and POs to provide identification records or decryption assistance.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1197,
+      "body_end": 1440,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00008",
+      "text": "The power of national security police to compel local ISPs to block access to online content and suspend user services without judicial procedure could be viewed as legal grounds for a Hong Kong version of China's Great Firewall, which blocks users from accessing “illegal” content.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1442,
+      "body_end": 1724,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00009",
+      "text": "Prior to the meeting of CSNS, Telegram announced on July 5 that it would not process any data requests related to its Hong Kong users “until an international consensus is reached in relation to the ongoing political changes in the city.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1726,
+      "body_end": 1963,
+      "source_links": [
+        "https://hongkongfp.com/2020/07/05/exclusive-telegram-to-temporarily-refuse-data-requests-from-hong-kong-courts-amid-security-law-terrorism-row/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00010",
+      "text": "Criminalize speech",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1965,
+      "body_end": 1983,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00011",
+      "text": "While Telegram has never processed data requests from the Hong Kong government in the past, its privacy terms state that the company “will cooperate with authorities over matters related to terrorism.”",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1985,
+      "body_end": 2186,
+      "source_links": [
+        "https://hongkongfp.com/2020/07/05/exclusive-telegram-to-temporarily-refuse-data-requests-from-hong-kong-courts-amid-security-law-terrorism-row/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00012",
+      "text": "The vague definition of terrorism in Hong Kong's NSL has compelled Telegram to make Hong Kong an exception, however.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2188,
+      "body_end": 2304,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00013",
+      "text": "The Hong Kong government's declaration this month that the slogan “Liberate Hong Kong, Revolution of our times” represents pro-Hong Kong independence and subversive speech is the latest in a long line of evidence that the NSL will be applied arbitrarily to crack down on freedom of expression.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2306,
+      "body_end": 2599,
+      "source_links": [
+        "https://hongkongfp.com/2020/07/02/breaking-slogan-criminalised-as-govt-claims-liberate-hong-kong-revolution-of-our-times-is-pro-independence-secessionist/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00014",
+      "text": "Even more alarmingly, eight people were arrested this week merely for displaying blank sheets of paper — a silent protest that police stated was potentially in breach of the NSL:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2601,
+      "body_end": 2779,
+      "source_links": [
+        "https://hongkongfp.com/2020/07/06/security-law-hong-kong-police-arrest-8-at-blank-placard-silent-protest/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00015",
+      "text": "Non-compliance action taken by tech giants",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2781,
+      "body_end": 2823,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00016",
+      "text": "While they released statements only later, Google and Twitter both told journalists that they had stopped processing user data requests as early as July 1, when the NSL was officially enacted in Hong Kong.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2825,
+      "body_end": 3030,
+      "source_links": [
+        "https://www.theverge.com/2020/7/6/21314900/google-facebook-twitter-hong-kong-government-data-china"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00017",
+      "text": "Facebook waited until July 6 to make the same move.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3032,
+      "body_end": 3083,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00018",
+      "text": "Google, Twitter and Facebook have been banned in China for many years. But both Facebook and Google have offices in Hong Kong. Facebook’s mobile messaging app WhatsApp is the most popular communication tool in the city.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3085,
+      "body_end": 3304,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/List_of_websites_blocked_in_mainland_China"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00019",
+      "text": "Microsoft’s LinkedIn said on July 7 that the platform had paused processing requests from Hong Kong while reviewing the NSL.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3306,
+      "body_end": 3430,
+      "source_links": [
+        "https://www.bbc.com/news/technology-53320715"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00020",
+      "text": "LinkedIn has established a joint venture in mainland China for its Chinese version that complies with China's censorship framework. Hong Kong users of the service are not currently subjected to the same strictures.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3432,
+      "body_end": 3646,
+      "source_links": [
+        "https://www.theguardian.com/technology/2014/jun/04/linkedin-tiananmen-posts-china-censorship"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00021",
+      "text": "Video conference app Zoom said it has halted processing data requests from Hong Kong government.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3648,
+      "body_end": 3744,
+      "source_links": [
+        "https://www.bbc.com/news/technology-53320715"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00022",
+      "text": "But just a month ago, it suspended a group of U.S-based Chinese human rights activists’ accounts after they held an online meeting to commemorate the Tiananmen Square crackdown.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3746,
+      "body_end": 3923,
+      "source_links": [
+        "https://www.bbc.com/news/world-asia-53003688"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00023",
+      "text": "Hong Kong-based activist Lee Cheuk-yan’s account on Zoom was also suspended, allegedly under pressure from mainland Chinese authorities.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 3925,
+      "body_end": 4061,
+      "source_links": [
+        "https://www.thestandard.com.hk/breaking-news/section/4/148972/Zoom-takes-heat-for-blocking-Lee-Cheuk-yan,-activists"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00024",
+      "text": "All the tech giants that have suspended responses to data requests from Hong Kong have stressed their commitment to the protection of users’ rights to freedom of expression and privacy.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4063,
+      "body_end": 4248,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00025",
+      "text": "A notable absentee is Apple, which has been highly cooperative with mainland Chinese censorship. The tech giant said that it would “assess” the implication of NSL to its business before making a decision.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4250,
+      "body_end": 4454,
+      "source_links": [
+        "https://advox.globalvoices.org/2018/02/10/how-apple-is-paving-the-way-to-a-cloud-dictatorship-in-china/",
+        "https://finance.yahoo.com/news/apple-assessing-hong-kong-law-231750668.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00026",
+      "text": "More curious was the sudden announcement of Tiktok that the company would withdraw from the Hong Kong market.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4456,
+      "body_end": 4565,
+      "source_links": [
+        "https://hongkongfp.com/2020/07/07/tiktok-pulls-out-of-hong-kong-after-new-security-law/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00027",
+      "text": "There are two versions of Tiktok, which is owned by the Chinese firm Bytedance. The Chinese version is Douyu which works within Chinese censorship requests. The global version of Tiktok claims it would not hand data over to Chinese government.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 4567,
+      "body_end": 4810,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00028",
+      "text": "Yet legal action in the U.S. has seen Tiktok accused of sending U.S. user data to mainland China in December 2019. Tiktok’s employees also revealed that they had been pressured by their superiors in mainland China to censor content on the global platform.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 4812,
+      "body_end": 5067,
+      "source_links": [
+        "https://www.bbc.com/news/business-50640110",
+        "https://www.businessinsider.com/tiktok-china-censorship-employees-restrict-content-dancing-vaping-2019-11"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00029",
+      "text": "Tiktok's market in Hong Kong is small — just 150,000 app users.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5069,
+      "body_end": 5132,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00030",
+      "text": "Worst case scenario: great firewall of Hong Kong",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5134,
+      "body_end": 5182,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00031",
+      "text": "The Hong Kong government has not responded to the tech giants’ collective action directly so far. But reports about the government’s plans to strengthen control over the Internet have been circulating since August 2019, when the protests against the China extradition bill were in full flow.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5184,
+      "body_end": 5475,
+      "source_links": [
+        "https://advox.globalvoices.org/2019/11/12/hong-kong-activists-denounce-court-ban-on-violent-content-as-a-threat-to-internet-freedom/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00032",
+      "text": "Unverified claims circulating in the local online community suggested Telegram and the Reddit-like LIGHK were two likely crackdown targets. Back then, however, the government had no legal tools with which to crack down on online content except by obtaining court injunction order.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5477,
+      "body_end": 5757,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00033",
+      "text": "With the enactment of NSL, the worst case scenario for the tech giants’ non-compliance action could be a complete block of their platforms. This would leave Hongkongers unable to access uncooperative websites without circumvention tools.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 5759,
+      "body_end": 5996,
+      "source_links": [
+        "https://www.scmp.com/news/hong-kong/politics/article/3092121/hong-kong-national-security-law-tiktok-quit-city-tech-giant"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-712453-b00034",
+      "text": "So far Hongkongers have been preparing for the worst — on June 30, searches for VPNs in Hong Kong surged by 321% in comparison to the average daily search rate on other days in the month.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 5998,
+      "body_end": 6185,
+      "source_links": [
+        "https://fortune.com/2020/07/07/hong-kong-law-internet-freedom/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "ac2212a1bf20c349a967e9a36cbb41a60fd26ad1c6c8d396ed662e2f21b08397",
+  "word_count": 978,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6185,
+  "retrieved_at": "2026-11-16T22:25:28.610126+00:00",
+  "raw_html_sha256": "9e198ea277dee0a8cd819ca66ef57f2bc68588bb35ca356373da4d3984d7b842",
+  "resolved_source_url": "https://globalvoices.org/2020/07/08/tech-giants-halt-data-requests-as-hong-kong-national-security-law-casts-long-shadow/",
+  "canonical_url": "https://globalvoices.org/2020/07/08/tech-giants-halt-data-requests-as-hong-kong-national-security-law-casts-long-shadow/",
+  "source_bytes": 190354,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 712453,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "9e198ea277dee0a8cd819ca66ef57f2bc68588bb35ca356373da4d3984d7b842",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-d40cf6b2cfa1d5c172da",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-07",
+    "eligible_month_documents": 100,
+    "selected_month_documents": 84,
+    "inclusion_probability": 0.84,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Oiwan Lam",
+  "body_start": 499,
+  "body_end": 6684,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "32a56f629b32c6e0ad782926b8fc63c95bd12406905ced1b0a73e23284aea9ee",
+  "text_path": "articles/gv-712453.txt",
+  "metadata_path": "metadata/gv-712453.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2020/07/08/tech-giants-halt-data-requests-as-hong-kong-national-security-law-casts-long-shadow/",
+  "content_sha256": "4d087bb1181c152d639c79ba6e6819d65d07c3ef4aedc1f72985c0e377a12093",
+  "source_sha256": "9e198ea277dee0a8cd819ca66ef57f2bc68588bb35ca356373da4d3984d7b842",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

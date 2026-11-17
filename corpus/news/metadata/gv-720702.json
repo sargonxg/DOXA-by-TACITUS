@@ -1,0 +1,504 @@
+{
+  "id": "gv-720702",
+  "publisher_id": 720702,
+  "source_id": "globalvoices:720702",
+  "source_url": "https://globalvoices.org/2020/10/16/devastating-fires-rage-in-argentina-as-economic-interests-become-key-suspect/",
+  "title": "Devastating fires rage in Argentina as economic interests become key suspect",
+  "published_at": "2020-10-16T07:56:11Z",
+  "modified_at": "2020-10-16T07:57:56Z",
+  "api_author_id": 2197,
+  "api_content_sha256": "5a6edc5109e58d555ba9adec663e4d4a9a37c422c280b9ca596e6d26bae8f7ca",
+  "api_response_sha256": "f9cee3b5e82058a53a72abf37f4b8c608c3497ca79effe33e36fced5052a4cbe",
+  "api_retrieved_at": "2026-11-16T22:20:29.692733+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 146,
+      "count": 1179,
+      "name": "Argentina",
+      "slug": "argentina",
+      "parent": 1354
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-720702-b00001",
+      "text": "Wildfires have been raging in central and northern Argentina for months where more than 400,000 hectares (988,422 acres), comparable in size to more than 560,000 soccer fields, have burned to date. According to the latest data from the National Fire Management Service, thirteen of Argentina’s twenty-three provinces are affected, with a consequential loss of natural ecosystems and biodiversity.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 396,
+      "source_links": [
+        "https://www.argentina.gob.ar/ambiente/fuego/reporte-diario-manejo-del-fuego",
+        "https://www.justintools.com/unit-conversion/area.php?k1=hectares&k2=soccer-fields",
+        "https://www.unosantafe.com.ar/el-pais/son-once-provincias-y-400000-hectareas-las-afectadas-incendios-n2614146.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720702-b00002",
+      "text": "The first wildfire outbreaks were registered in the Paraná River Delta in February and reached a peak in August when another large wildfire began spreading in the central province of Córdoba.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 398,
+      "body_end": 589,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/2020_C%C3%B3rdoba_wildfires",
+        "https://en.wikipedia.org/wiki/2020_Delta_del_Paran%C3%A1_wildfires"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720702-b00003",
+      "text": "The Argentine federal government is now joining forces with affected provinces, bringing in fire brigades and equipment along with aid from other provinces.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 591,
+      "body_end": 747,
+      "source_links": [
+        "https://www.mendoza.gov.ar/prensa/mendoza-envia-equipos-de-ayuda-a-zonas-afectadas-por-incendios-forestales/",
+        "https://www.telam.com.ar/notas/202010/520806-incendios-provincias-brigadistas.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720702-b00004",
+      "text": "Human activity, specifically clearing land for livestock or farming, is thought to be the main culprit for the fires according to the Secretary of Environmental Control and Monitoring in an interview with Argentine media outlet Chequeado:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 749,
+      "body_end": 987,
+      "source_links": [
+        "https://chequeado.com/el-explicador/cuales-son-los-principales-factores-que-influyen-en-los-incendios-forestales/",
+        "https://es.wikipedia.org/wiki/Deforestaci%C3%B3n_en_Argentina"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720702-b00005",
+      "text": "> En el Delta [del río Paraná], creemos que la mayoría o la totalidad fueron provocados, no casuales ni accidentales. Inferimos que la motivación fue la limpieza de terrenos para la producción ganadera o agrícola; por eso el ministro [de Ambiente] Juan Cabandié se presentó como querellante ante la Justicia.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 989,
+      "body_end": 1297,
+      "source_links": [
+        "https://es.wikipedia.org/wiki/Delta_del_Paran%C3%A1"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00006",
+      "text": "> In the Delta [of the Paraná River], we believe that most or all of them were not incidental or accidental, but provoked. We infer that the motivation was to clear land for livestock or agricultural production, which is why the [Environment] Minister Juan Cabandié has made an appearance as a plaintiff before the Justice.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1299,
+      "body_end": 1622,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Paran%C3%A1_Delta"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00007",
+      "text": "Climate factors such as high temperatures, strong winds, and extreme droughts have aggravated the situation, causing the out-of-control fires to move increasingly closer to urban centers.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1624,
+      "body_end": 1811,
+      "source_links": [
+        "https://www.cadena3.com/noticia/resumen-3/cordoba-transita-el-ano-mas-seco-desde-1955_271827",
+        "https://www.carlospazvivo.com/mapa-del-fuego-asi-esta-la-situacion-de-los-incendios-en-cordoba/",
+        "https://www.lavoz.com.ar/ciudadanos/se-inicio-un-nuevo-foco-de-incendio-cerca-de-villa-carlos-paz",
+        "https://www.telam.com.ar/notas/202009/519921-otra-jornada-que-preve-fuertes-vientos-que-complican-el-combate-de-tres-incendios-en-cordoba.html",
+        "https://www.unoentrerios.com.ar/el-pais/se-agrava-la-sequia-argentina-favoreciendo-los-incendios-n2605960.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720702-b00008",
+      "text": "Shocking images of the wildfires from the city of Córdoba have caused public outrage as reports continue to point to agribusiness and real estate projects in protected areas and native forests as the cause for the wildfires. The public is also blaming the irresponsible management of the so-called “controlled burning” of grasslands. Philosophy professor Constanza San Pedro and activist Clarisa Mensa wrote in a local outlet:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1813,
+      "body_end": 2239,
+      "source_links": [
+        "https://escriturafeminista.com/2020/09/01/lucro-que-arde-la-urgencia-de-una-argentina-en-llamas/",
+        "https://notasperiodismopopular.com.ar/2020/08/25/las-causas-estructurales-de-los-incendios-en-cordoba/",
+        "https://www.argentinaforestal.com/2020/09/11/incendios-en-la-argentina-es-necesaria-una-ley-integral-de-ordenamiento-ambiental-del-territorio/",
+        "https://www.baenegocios.com/sociedad/Las-impactantes-fotos-de-los-incendios-en-Cordoba-vistos-desde-la-ciudad-20200825-0013.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720702-b00009",
+      "text": "> Necesitamos construir políticas a largo plazo, con las familias campesinas e indígenas, que tengan por objetivo el arraigo, el desarrollo y el buen vivir de la población en armonía con el medio ambiente.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2241,
+      "body_end": 2446,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00010",
+      "text": "> We need to build long-term policies with the objective of cultivating roots, development, and wellbeing for peasant and indigenous families, in order for our population to live in harmony with the environment.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2448,
+      "body_end": 2659,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00011",
+      "text": "People expressed their indignation and sadness through Twitter and other social media platforms with tags including #ArgentinaEnLlamas, #ApaguenElFuego, #BastaDeQuemas and #LeydeHumedalesYA (In English: Argentina in Flames, Stop the Fire, Enough Burning, and Law for Wetlands NOW), among others.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2661,
+      "body_end": 2956,
+      "source_links": [
+        "https://twitter.com/hashtag/BastaDeQuemas?src=hashtag_click",
+        "https://twitter.com/hashtag/LeyDeHumedalesYa?src=hashtag_click",
+        "https://twitter.com/search?q=%23ApaguenElFuego&src=typed_query",
+        "https://twitter.com/search?q=%23ArgentinaEnLlamas&src=typed_query"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720702-b00012",
+      "text": "> “Only after the last tree is dead, only after the last river has been poisoned, only after the last fish has been caught, only then will we realize that we cannot eat the money”#ArgentinaEnLlamas, literally.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2958,
+      "body_end": 3167,
+      "source_links": [
+        "https://twitter.com/hashtag/ArgentinaEnLlamas?src=hash&ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00013",
+      "text": "> #LeyDeHumedalesYa pic.twitter.com/ViTZ0zNX5J",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3169,
+      "body_end": 3215,
+      "source_links": [
+        "https://t.co/ViTZ0zNX5J",
+        "https://twitter.com/hashtag/LeyDeHumedalesYa?src=hash&ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00014",
+      "text": "> — Guillermina (@GuilleBrun0) October 2, 2020",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3217,
+      "body_end": 3263,
+      "source_links": [
+        "https://twitter.com/GuilleBrun0/status/1312070912087392257?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00015",
+      "text": "> Who is burning Argentina?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3265,
+      "body_end": 3292,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00016",
+      "text": "> An #Ecocide is taking place. The Wetlands in the Paraná, the Sierra de Córdoba and more places throughout our country.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3294,
+      "body_end": 3414,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00017",
+      "text": "> They talk about the burning, not about those who are burning it.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3416,
+      "body_end": 3482,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00018",
+      "text": "> [Open Thread?]#LeyDeHumedalesYa#ArgentinaEnLlamas pic.twitter.com/XxxTyqhtWS",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3484,
+      "body_end": 3562,
+      "source_links": [
+        "https://t.co/XxxTyqhtWS",
+        "https://twitter.com/hashtag/ArgentinaEnLlamas?src=hash&ref_src=twsrc%5Etfw",
+        "https://twitter.com/hashtag/LeyDeHumedalesYa?src=hash&ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00019",
+      "text": "> — Lisandro Citta (@LisandroCitta) October 3, 2020",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3564,
+      "body_end": 3615,
+      "source_links": [
+        "https://twitter.com/LisandroCitta/status/1312196619018801152?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00020",
+      "text": "> The country burns because of agribusiness and real estate speculation. Where there was fire, today there are soybeans and machines ready for construction…",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3617,
+      "body_end": 3773,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00021",
+      "text": "> #ArgentinaEnLlamas pic.twitter.com/TzEohagBYB",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3775,
+      "body_end": 3822,
+      "source_links": [
+        "https://t.co/TzEohagBYB",
+        "https://twitter.com/hashtag/ArgentinaEnLlamas?src=hash&ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00022",
+      "text": "> — ?Cele Fierro? (@Cele_Fierro) October 2, 2020",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3824,
+      "body_end": 3872,
+      "source_links": [
+        "https://twitter.com/Cele_Fierro/status/1312148704502005760?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00023",
+      "text": "> A friend, who is fighting the fires in the Delta area, made a video compilation of the entire country's situation. They are asking that this reach the UN. Spread Word!!",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 3874,
+      "body_end": 4044,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00024",
+      "text": "> @unep_espanol #ArgentinaEnLlamas #ONUHelp pic.twitter.com/fhQBep86Ih",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4046,
+      "body_end": 4116,
+      "source_links": [
+        "https://t.co/fhQBep86Ih",
+        "https://twitter.com/hashtag/ArgentinaEnLlamas?src=hash&ref_src=twsrc%5Etfw",
+        "https://twitter.com/hashtag/ONUHelp?src=hash&ref_src=twsrc%5Etfw",
+        "https://twitter.com/unep_espanol?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00025",
+      "text": "> — Lucila Guevara (@LalaBonariensis) October 2, 2020",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4118,
+      "body_end": 4171,
+      "source_links": [
+        "https://twitter.com/LalaBonariensis/status/1312086476570734595?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720702-b00026",
+      "text": "Although a Forest Law was passed in 2007 which established a national fund for native forest conservation, several reports indicate non-compliance by authorities and continued illegal logging. This is a big reason why different political parties, organizations, and activists are working to promote more specifically tailored laws that prohibit the sale of burned areas in order to discourage arson.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4173,
+      "body_end": 4572,
+      "source_links": [
+        "http://servicios.infoleg.gob.ar/infolegInternet/anexos/135000-139999/136125/norma.htm",
+        "https://chequeado.com/el-explicador/a-nueve-anos-de-su-sancion-se-cumple-la-llamada-ley-de-bosques/",
+        "https://lmdiario.com.ar/contenido/249143/impulsan-ley-para-prohibir-por-20-anos-la-venta-de-zonas-incendiadas-en-cordoba",
+        "https://www.vidasilvestre.org.ar/sala_redaccion/?20741/A-13-anos-de-su-sancion-la-Ley-de-Bosques-todavia-no-cumple-con-sus-objetivos"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720702-b00027",
+      "text": "During the last few months, thirteen wetland protection bills were presented, mainly for the Paraná Delta area. It is hoped that mounting social pressure will encourage and speed up the process of approval before it is too late.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 4574,
+      "body_end": 4802,
+      "source_links": [
+        "https://www.greenpeace.org/argentina/story/issues/bosques/el-movimiento-socioambiental-exige-la-urgente-sancion-de-una-ley-nacional-de-humedales/",
+        "https://www.infobae.com/campo/2020/09/27/ley-de-humedales-de-que-se-trata-y-que-piensan-el-campo-y-los-ambientalistas/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "303fa29a4e69ec89163b2467e30bd0c3d249f875f0e8266ff3702f246840ea45",
+  "word_count": 723,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 5,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4802,
+  "retrieved_at": "2026-11-16T22:27:54.583442+00:00",
+  "raw_html_sha256": "d572f64afeaa3acebfd37415eec96ae27138d8f6f329623ca68d01a68d1d7688",
+  "resolved_source_url": "https://globalvoices.org/2020/10/16/devastating-fires-rage-in-argentina-as-economic-interests-become-key-suspect/",
+  "canonical_url": "https://globalvoices.org/2020/10/16/devastating-fires-rage-in-argentina-as-economic-interests-become-key-suspect/",
+  "source_bytes": 197818,
+  "authors": [
+    {
+      "name": "Romina Navarro",
+      "url": "https://es.globalvoices.org/author/romina-navarro/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Stephanie Crane",
+      "url": "https://globalvoices.org/author/stephanie-crane/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 720702,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "d572f64afeaa3acebfd37415eec96ae27138d8f6f329623ca68d01a68d1d7688",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-0b12508cf2ec03ce68dd",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-10",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Romina Navarro",
+  "body_start": 521,
+  "body_end": 5323,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "9cd2ace4754cf81aac58d32fdb15a1a2caf2eaf88d102a1fe9bc2d0c7889b502",
+  "text_path": "articles/gv-720702.txt",
+  "metadata_path": "metadata/gv-720702.json",
+  "attribution": "This story by Romina Navarro originally appeared on Global Voices. https://globalvoices.org/2020/10/16/devastating-fires-rage-in-argentina-as-economic-interests-become-key-suspect/",
+  "content_sha256": "482a82b17e17ab153c3e0f6e24adfa123a72ad1feff64b1f80e2dfb719a4c582",
+  "source_sha256": "d572f64afeaa3acebfd37415eec96ae27138d8f6f329623ca68d01a68d1d7688",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

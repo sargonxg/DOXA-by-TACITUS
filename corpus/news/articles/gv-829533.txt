@@ -1,0 +1,53 @@
+A group of Nigerian linguists are training AI tools on Yoruba language dialects
+Written by: Abdulrosheed Fadipe
+Originally published by Global Voices: https://globalvoices.org/2025/03/08/a-group-of-nigerian-linguists-are-training-ai-tools-on-yoruba-language-dialects/
+Published: 2025-03-08T07:00:51Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+As more and more key aspects of daily life migrate online, language inclusion can be a key component of ensuring equal access for all in digital spaces. However, many African languages lack the resources to develop language technologies and fully migrate online. This typically does not affect the most spoken dialects of these languages, which are often used as the standard dialect, but often affect less common language dialects.
+
+Most efforts to create resources for these low-resourced languages are concentrated on the standard dialects, while many regional dialects that are spoken by millions are neglected.
+
+The Yoruba language is spoken by 47 million speakers in the world. It is mostly spoken in Nigeria, Benin, and Togo, with smaller migrated communities in Côte d'Ivoire, Sierra Leone and The Gambia. Although the standard dialect of this language has received considerable attention from Natural Language Processing (NLP) researchers, no resources have been developed for its non-standard dialects. To address this problem, a group of linguists have developed YORULECT, a high-quality, contemporary Yoruba speech and text data parallel corpus for four Yoruba regional dialects.
+
+Speaking to Global Voices via WhatsApp, Aremu Anuoluwapo, a computational linguist who is currently pursuing a master's degree in computational modelling of languages and cognition at the University of Trento, Italy, shared the motivation behind this project.
+
+Global Voices (GV): Can you tell us a bit about your background and what led you into the field of computational linguistics?
+
+> Aremu Anuoluwapo (AA): I am a linguist by training. I studied Linguistics and African Studies at the University of Lagos. I was introduced to computational linguistics by a mentor, Kola Tunbosun, during my undergraduate years in the university. Then, I worked on some projects that are related to data collection, cleaning and annotation projects. I started gaining experience and collaborating with professionals from multinational companies such as Google, Microsoft, etc, in my third year in the university. My interest in using computational tools to analyse, predict, or transform languages grew from there.
+
+GV: Can you tell us what motivated the creation of YORULECT?
+
+> AA: Oreva Ahia, my colleague who is a PhD student in Computer Science at the University of Washington, United States, told me about an idea she has on dialectology. This reminded me of a course I took, on Yoruba and its dialectology, during the third year of my undergraduate studies. We learnt about some scholars who have done some works on dialects such as Ẹ̀gbá, Èkó, Ọ̀yọ́, etc, and how the standard Yoruba is primarily drawn from the Ọ̀yọ́ dialect. I found the course interesting and had always wanted to do something on dialectology.
+
+> From studying that course, I realised that the word for ‘stool’ differs between the dialect spoken in my hometown in Yorubaland and standard Yoruba. There are other communities that also have distinctive dialectological names for several items. I was curious about this.
+
+> Later, while attending a conference in Spain, I travelled to Paris to discuss the idea with Oreva. We designed the framework to execute the project. When I returned to Nigeria, I travelled to specific communities where the dialects we decided to work on are spoken. Deciding on the dialects to work on was a bit technical because there is a division in Yoruba dialectology. There is Southwestern Yoruba, Southeastearn Yoruba, Northeast Yoruba dialects, etc. We wanted to touch all these dialectological divisions.
+
+> One of the reasons we decided to do this project is because of the growing application of AI and machine learning in the tools we use today. We wanted to ensure that low-resourced dialects of low-resourced languages are also represented in technology.
+
+GV: Could you describe the specific dialects you are working with and explain why these were chosen as a focus? What are some of their unique linguistic features that pose challenges for NLP systems?
+
+> AA: The dialect we worked on are Ìjẹ̀bú, Ifè, Ilaje and Standard Yoruba. We chose these dialects because they belong to different dialectological divisions of the Yoruba language. We also wanted to have a good representation of these languages in technology. Another reason is because we wanted to do a comparative analysis of how existing NLP systems understand the dialects of the languages before finetuning them. We tested it on Automatic Speech Recognition (ASR) and Machine Translation (MT) and the performance was bad. We also did some finetuning to augment the performance before it became a bit better.
+
+> Some of the linguistic peculiarities we discovered is that there are some letters existing in the dialects that are not in Standard Yoruba alphabets. The Ilaje dialect is a good example of dialect with some different letters and sentence construction. The language structure is similar across all the dialects, although there are some different syntactic arrangements. Our findings show that Ifè dialect has the highest degree of similarity with Standard Yoruba, while Ilaje has the lowest degree of similarity with Standard Yorùbá. We are planning to do more work to expand the research.
+
+GV: Many African languages are primarily spoken. How do you approach the challenge of collecting and curating language data for Yoruba dialects that have limited written resources or standardized orthography?
+
+> AA: This was a tough challenge for us. Some dialects do not still have a big population of people who can write those dialects. We were able to surmount the challenges because some of these dialects have scholars who have worked on them.
+
+> I always try to tell linguists who want to do this kind of NLP project to collect the speech data first and recruit the native speakers to transcribe them. Doing this will help you get the raw form of the language. It will help you see the many phonological processes that exist in the language.
+
+GV: What methods do you use to ensure data quality and authenticity?
+
+> AA: We work with the native speakers to collect the data. For the sake of data quality and authenticity, we recruited human evaluators, who are also native speakers, to rate the performance of the ASR systems by giving feedback on the accuracy and quality of their transcription.
+
+GV: What other challenges did you face when developing YORULECT?
+
+> AA: Training the models was challenging. We had to fine-tune them. The linguistic distinctiveness poses a major challenge because the models have not been previously exposed to that kind of data. Some of the dialects did well, while others didn't. This could be because of syntactic arrangement and letter representation.
+
+GV: What are your long-term goals for this work?
+
+> AA: The long-term goal is to strike a new direction in low-resource language research. When the NLP community is discussing low-resourced languages, it is usually about the standard dialect of the languages. They do not consider other dialects. As long as these dialects are still spoken, why not also build tools for the communities that are speaking them? Once the conversation starts people start doing dialectology research on specific dialects of language

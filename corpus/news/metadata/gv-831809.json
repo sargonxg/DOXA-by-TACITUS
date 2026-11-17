@@ -1,0 +1,489 @@
+{
+  "id": "gv-831809",
+  "publisher_id": 831809,
+  "source_id": "globalvoices:831809",
+  "source_url": "https://globalvoices.org/2025/04/09/civil-societys-data-in-north-and-east-syria-is-not-secure/",
+  "title": "Civil society’s data in north and east Syria is not secure",
+  "published_at": "2025-04-09T01:01:34Z",
+  "modified_at": "2025-04-04T07:47:23Z",
+  "api_author_id": 2347,
+  "api_content_sha256": "e409a7ce68f9ce8afbccf60a0c956261c70bf11b2d8a8308de9f97a630e47d59",
+  "api_response_sha256": "5f981a4a9b465f43479e5a626f6c7abc014c277ecbe5f471698965f7f51a87c2",
+  "api_retrieved_at": "2026-11-16T22:21:10.782161+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 95,
+      "count": 1277,
+      "name": "Syria",
+      "slug": "syria",
+      "parent": 14
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-831809-b00001",
+      "text": "This article by Ciwan Teter was published on SMEX on March 26, 2025. An edited version is republished on Global Voices as part of a content-sharing agreement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 158,
+      "source_links": [
+        "https://smex.org/civil-societys-data-in-north-and-east-syria-is-not-secure/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00002",
+      "text": "As cyber threats escalate globally, Syrian civil society organizations (CSOs) face increasing risks due to financial constraints, technical challenges, and political pressures. Unfortunately, these have led to security gaps that jeopardize the data and archives of civil society workers.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 160,
+      "body_end": 447,
+      "source_links": [
+        "https://freedomhouse.org/country/syria/freedom-net/2020",
+        "https://magazine.maharat-news.com/digitalsecurityi5",
+        "https://snhr.org/blog/2021/10/14/56921/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00003",
+      "text": "Since the eruption of the 2011 protests in the country, the civilian, political, and military bodies that have emerged across Syria continue to operate within a cycle of compromised communications and repeated breaches.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 449,
+      "body_end": 668,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Syrian_revolution",
+        "https://impactres.org/mapping-syrian-cso-2/",
+        "https://www.syria.tv/%D8%AE%D8%B7%D8%B1-%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%BA%D9%8A%D8%B1-%D8%A7%D9%84%D8%A2%D9%85%D9%86%D8%A9-%D9%83%D9%8A%D9%81-%D8%AA%D8%B9%D9%8A%D9%82-%D8%A7%D9%84%D8%B9%D9%82%D9%88%D8%A8%D8%A7%D8%AA-%D8%AA%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7%D8%9F"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00004",
+      "text": "North and east Syria, for instance, have relied on multiple sources to secure a connection during and after the war: the Syrian government’s communications network, satellite internet, Turkish internet services, and lastly, the local Rcell network. This constant shifting between providers created considerable chaos in data security, leading to data loss and data inaccessibility.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 670,
+      "body_end": 1051,
+      "source_links": [
+        "https://rcell.me/",
+        "https://smex.org/lost-telecommunications-amidst-belligerent-groups-in-northeast-syria/",
+        "https://starlinksy.net/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00005",
+      "text": "Abbas Ali Mousa, an activist with the Synergy Association, a platform documenting missing persons in Syria, stresses the gravity of handling such data — especially the testimonies and records of victims or their families.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1053,
+      "body_end": 1274,
+      "source_links": [
+        "https://hevdesti.org/en/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00006",
+      "text": "Although preserving these archives is critical for documenting war crimes and finding the missing, civil society organizations in Syria are not equipped with the technical skills and resources to protect this data, says Mousa. “Most of the available funds are directed towards field projects and immediate humanitarian needs rather than the development of technical infrastructure,” he explains. Beyond financial constraints, “political instability and logistical challenges” pose systemic obstacles to digital security efforts, he adds.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1276,
+      "body_end": 1813,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00007",
+      "text": "As a result, digital security is yet to be adopted as a core practice among civil society, leading to weak data protection strategies.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1815,
+      "body_end": 1949,
+      "source_links": [
+        "https://syrianpedia.com/cybsecsyr/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00008",
+      "text": "Overlooked cybersurity",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1951,
+      "body_end": 1973,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00009",
+      "text": "Helez Fateh Abdulaziz from Insight Organization, a nonprofit documenting war crimes in Syria, explains that funding constraints are preventing the adoption of robust digital security practices.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1975,
+      "body_end": 2168,
+      "source_links": [
+        "https://insight-md.org/en/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00010",
+      "text": "Abdulaziz tells SMEX that organizations tend to underestimate the importance of securing technical resources, treating them as a lesser priority despite the challenges they pose to their operations.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2170,
+      "body_end": 2368,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00011",
+      "text": "Mousa points out that many civil society organizations overlook cybersecurity due to a lack of skilled staff, especially in their early stages. Donor priorities often focus on immediate needs, leaving digital security underfunded. Relying on volunteers in technical roles only worsens the issue, exposing data and accounts to digital threats.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2370,
+      "body_end": 2712,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00012",
+      "text": "In terms of internal digital communication, these civil organizations do not use official emails and secure cloud storage solutions, explains Mousa. External hard drives — holding information about thousands of beneficiaries and numerous projects — have malfunctioned frequently over the years, causing significant data losses.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2714,
+      "body_end": 3041,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00013",
+      "text": "“The total absence of adequate protection exposes the data of beneficiaries, donors, and staff to potential breaches or leaks,” explains Sherine Ibrahim from Dar Association for Victims of Forced Displacement, a non-profit organization dedicated to addressing the needs of forcibly displaced men and women. In the context of transitional Syria, it could even endanger people’s lives, Ibrahim adds.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3043,
+      "body_end": 3440,
+      "source_links": [
+        "https://dar-sy.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00014",
+      "text": "Losing control over communication systems complicates the coordination of relief and humanitarian efforts. It leads to data distortion due to breaches, potentially delaying the delivery of services and reducing operational efficiency.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3442,
+      "body_end": 3676,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00015",
+      "text": "In some cases, stolen data could be used to target beneficiary communities or to leak sensitive information about activists and human rights defenders. It could also be falsified or manipulated to tarnish the reputation of the organization.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3678,
+      "body_end": 3918,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00016",
+      "text": "Digital military–political conflict",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3920,
+      "body_end": 3955,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00017",
+      "text": "Turkey has used digital warfare as an offensive tool in north and east Syria, repeatedly attempting to penetrate systems and broadcasting sites of local media in these areas that have seen ongoing political and military tensions. Turkish authorities have been behind restricting social media accounts by many civil and media activists and legal professionals in Syria.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3957,
+      "body_end": 4325,
+      "source_links": [
+        "https://anfarabic.com/%D8%A2%D8%B1%D8%A7%D8%A1-%D9%88%D8%AD%D9%88%D8%A7%D8%B1%D8%A7%D8%AA/wkalt-hawar-llanba-ttrd-lhjwm-alktrwny-77755",
+        "https://vdc-nsy.com/archives/20035"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00018",
+      "text": "In response, some organizations have adopted protective measures. Mousa highlights the precautions they take to prevent breaches: “We have systems to protect sensitive data, utilizing paid and encrypted software for storing information, and we have a dedicated data entry employee to ensure controlled access to it.”",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4327,
+      "body_end": 4643,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00019",
+      "text": "However, others remain unprepared for digital threats. Jia Qahraman, a board member at Frontier Tech, a web and software solutions company, says that despite the firm’s adherence to high protection standards when purchasing servers, digital security remains a challenge.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4645,
+      "body_end": 4915,
+      "source_links": [
+        "https://frontiertech.dev/en/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00020",
+      "text": "“Officials in civil society organizations, local media, and activist circles show little interest in preventive tools and protective programs. Our company has never been consulted on protection technologies or invited to provide in-depth training workshops, which reflects the ongoing negligence toward digital security among civil organizations in Syria,” Qahraman explains.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4917,
+      "body_end": 5292,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00021",
+      "text": "Political tensions led to increased digital violations among civil society groups in Syria. The director of one organization spoke on condition of anonymity due to security concerns: “During our work under former president Bashar al-Assad, we encountered an international donor who was operating both in north and east Syria and in Damascus.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5294,
+      "body_end": 5636,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00022",
+      "text": "“Given the political sensitivity between the two locations, we objected to the non-disclosure of projects in north and east Syria and were assured confidentiality,” he explains. “But over time we found that the Syrian regime could access operational details and other data.”",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5638,
+      "body_end": 5912,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00023",
+      "text": "Workers in these organizations continue to fear ongoing threats in today’s Syria.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5914,
+      "body_end": 5995,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00024",
+      "text": "An anonymous director shared her experience, recalling the challenges of data security under the previous regime. “Working in the capital, protecting our data was a constant nightmare. We only carried out projects with donors licensed to operate in Syria, meaning security agencies were aware of their activities. Still, we feared leaks, especially of beneficiary names, who risked harassment.”",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5997,
+      "body_end": 6391,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00025",
+      "text": "“Some beneficiaries faced security harassment and were questioned about the support they received, a clear sign that our data had been compromised,” she adds.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6393,
+      "body_end": 6551,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00026",
+      "text": "In north and west Syria, areas out of the former regime’s control, the situation was exceedingly harsh. In Idlib, according to statistics from the Women’s Empowerment Office, 53 percent of women experienced some form of digital violence.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6553,
+      "body_end": 6790,
+      "source_links": [
+        "https://syriadirect.org/digital-violence-stalks-women-in-northwestern-syria/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00027",
+      "text": "This prompted civil organizations to allocate significant budgets for digital security for their workers. This led to the early 2012 launch of the SalamaTek digital platform, which provided urgent technical support and assistance for approximately 17,172 Syrians online through an emergency helpline.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6792,
+      "body_end": 7092,
+      "source_links": [
+        "https://salamatech.org/",
+        "https://salamatech.org/contact/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00028",
+      "text": "Despite the significant cybersecurity risks civil society faces in Syria, organizations have yet to implement robust digital security measures against breaches and infiltration.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7094,
+      "body_end": 7271,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831809-b00029",
+      "text": "With all the changes happening in the country, these organizations continue their operations without any solid plans or strategies for digital security, which could lead to a digital disaster.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7273,
+      "body_end": 7465,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "89ae19de9d38f84fc396b8b4212490c6f34b1593374ef79837938b8b5556b0d0",
+  "word_count": 1074,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7465,
+  "retrieved_at": "2026-11-16T22:46:06.395429+00:00",
+  "raw_html_sha256": "c5334287975ac22d7c3afa799bdd7af65c3db9e6b654128bd85ba60825141c64",
+  "resolved_source_url": "https://globalvoices.org/2025/04/09/civil-societys-data-in-north-and-east-syria-is-not-secure/",
+  "canonical_url": "https://globalvoices.org/2025/04/09/civil-societys-data-in-north-and-east-syria-is-not-secure/",
+  "source_bytes": 189366,
+  "authors": [
+    {
+      "name": "SMEX",
+      "url": "https://globalvoices.org/author/smex/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 831809,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "c5334287975ac22d7c3afa799bdd7af65c3db9e6b654128bd85ba60825141c64",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-8cee815bea5f4ad5c0a5",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-04",
+    "eligible_month_documents": 80,
+    "selected_month_documents": 67,
+    "inclusion_probability": 0.8375,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "SMEX",
+  "body_start": 443,
+  "body_end": 7908,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "faba2653553f16b65b2ca2f3b679efb5c3c67983690a246e7da00eb271cc50d6",
+  "text_path": "articles/gv-831809.txt",
+  "metadata_path": "metadata/gv-831809.json",
+  "attribution": "This story by SMEX originally appeared on Global Voices. https://globalvoices.org/2025/04/09/civil-societys-data-in-north-and-east-syria-is-not-secure/",
+  "content_sha256": "830bd8b7e2da73443741ae1a0c15bae4c0f552f7bb0bc87378c925a56f51be4a",
+  "source_sha256": "c5334287975ac22d7c3afa799bdd7af65c3db9e6b654128bd85ba60825141c64",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

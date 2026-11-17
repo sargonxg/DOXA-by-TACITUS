@@ -1,0 +1,402 @@
+{
+  "id": "gv-831090",
+  "publisher_id": 831090,
+  "source_id": "globalvoices:831090",
+  "source_url": "https://globalvoices.org/2025/03/28/mediahack-36-hours-against-electoral-disinformation-in-ecuador/",
+  "title": "MediaHack: 36 hours against electoral disinformation in Ecuador",
+  "published_at": "2025-03-28T13:27:03Z",
+  "modified_at": "2025-03-26T19:26:43Z",
+  "api_author_id": 2470,
+  "api_content_sha256": "a89a10da13971351cfbcf929efb05f3105b6d165664cded47976a27629768c8d",
+  "api_response_sha256": "b7ae78070ece6a1bed77a7fcd8b44d3db670b34ae8e350336552b24cdd2c52ee",
+  "api_retrieved_at": "2026-11-16T22:21:09.980043+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 151,
+      "count": 703,
+      "name": "Ecuador",
+      "slug": "ecuador",
+      "parent": 1354
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 276,
+      "count": 839,
+      "name": "Science",
+      "slug": "science",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-831090-b00001",
+      "text": "A casual conversation can lead to great challenges. One day, three years ago, Ivan Terceros, co-founder of Openlab in Ecuador, and I, a journalist and communications consultant, came up with the crazy idea of opening a chapter of Hacks Hackers, a global community that connects journalists and technology experts to develop innovation in digital media. It sounded like a good idea, and we dug into the network to find out what had been done in Ecuador. The first traces go back to 2017 on an account on the website for organizing events, MeetUp.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 545,
+      "source_links": [
+        "https://www.meetup.com/es-es/hacks-hackers-quito/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00002",
+      "text": "Since that time, the Hacks Hackers community had been on hiatus. However, we knew there was still room to bring it back to life. So we connected with Hacks Hackers Latam and weaved new friendships in a post-pandemic context. With Ivan, we decided to work on three key events in 2021: in June, we studied how the media reacted to the social conflict; in September, we hacked ideas and projects; and in December, we tracked the origin of viral videos circulating on the internet.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 547,
+      "body_end": 1024,
+      "source_links": [
+        "https://www.hackshackers.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00003",
+      "text": "These conversations marked the return of Hacks Hackers as a space for action, where journalists and developers work together to innovate in fact-checking and data analysis. However, I had to take a two-year hiatus to take on a graduate fellowship. I finished my master's degree and knew it was time to return. Last year, I met Ivan again, and without any doubt, we decided to start again: a hackathon to reactivate the community.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1026,
+      "body_end": 1455,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00004",
+      "text": "‘Disinformation is a business’",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1457,
+      "body_end": 1487,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00005",
+      "text": "With the logistical support of Openlab, we called the event MediaHack, seen as a cross between journalism and hacking. Hacking here is not understood as an intrusion but as creative problem-solving. In a country where disinformation has become part of the electoral landscape, we held the first conference on “Artificial Intelligence and Disinformation during Elections” on February 19 at the Simon Bolivar Andean University, a month and a half before the presidential runoff between Daniel Noboa, current president, and Luisa Gonzalez, candidate of the correist party.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1489,
+      "body_end": 2058,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Rafael_Correa#Political_ideology",
+        "https://globalvoices.org/2022/12/01/in-ecuador-disinformation-has-spread-like-a-fungus-says-ecuadorian-investigative-journalist/",
+        "https://globalvoices.org/2025/03/04/in-its-runoff-ecuador-must-choose-between-military-force-or-social-change-to-combat-violence/",
+        "https://www.facebook.com/openlabec/videos/1203764971143715?locale=es_LA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00006",
+      "text": "At this conference, experts analyzed how artificial intelligence (AI) and false news are shaping Ecuador's democracy. Jorge Cruz Silva, a member of the Observatory of Communication (OdeCom) and research professor at the Pontifical Catholic University of Ecuador (PUCE), warned about the role of artificial intelligence and bots in the amplification of fake news. He posed a disturbing question: are we approaching the era of total manipulation, where information is just a spectacle?",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2060,
+      "body_end": 2543,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00007",
+      "text": "Luciana Musello, a research professor at the Universidad San Francisco de Quito, dismantled the myth of the ‘lone troll’ and explained that disinformation is a structured business with hierarchies and marketing strategies applied to politics online. It is not only a problem of wrong information but of an economy that turns public opinion into a product.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2545,
+      "body_end": 2900,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00008",
+      "text": "Danghelly Zúñiga, a researcher at the Universidad del Rosario (Colombia), explained how AI is transforming the process of producing information: first, it accumulates data (the “pool”) and then processes it strategically (the algorithmic “blender”), enabling the segmentation and manipulation of electoral discourse.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2902,
+      "body_end": 3218,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00009",
+      "text": "Panelists agreed that the problem is not only technological, but structural. Disinformation is rooted in identities, expands with AI and turns into a business. Fake news reinforces beliefs, algorithms amplify them and digital journalism, trapped in the logic of clicks, is playing with facts, in many cases sacrificing context verification.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3220,
+      "body_end": 3560,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00010",
+      "text": "A hackathon to meet and find solutions",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3562,
+      "body_end": 3600,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00011",
+      "text": "The conversation did not stop at theory. Just days later, on February 22 and 23, the hackathon “Citizen Technologies for Informed Decisions” put this talk into practice at PUCE. For two days, an average of 60 participants — including developers, programmers, data scientists, journalists, and researchers — worked on solutions to combat electoral disinformation. They focused on three challenges: AI-powered fact-checking, transparency in campaign funding, and analysis of digital narratives. At the end, three teams were selected as winners. They received an award of USD 1,200 and specialized mentoring to continue developing their projects to improve the information ecosystem.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3602,
+      "body_end": 4282,
+      "source_links": [
+        "https://openlab.ec/mediahack"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00012",
+      "text": "Award-winning project: Goddard, the digital detective",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4284,
+      "body_end": 4337,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00013",
+      "text": "One of the winners was Goddard, a name that alludes to the dog of the children's series character Jimmy Neutron. Goddard fights disinformation in electoral times. The website works as a digital detective: it analyzes news from Ecuadorian media with artificial intelligence, detects hate speech, evaluates the informative tone and compares data with reliable sources. If something seems suspicious, it alerts the user and offers a clear analysis. However, Nadhine Custode, a member of the team, says that is not limited to verifying information, it also teaches how to identify reliable news and contrast sources to strengthen media literacy. In a saturated digital ecosystem, Goddard not only filters out misinformation but also educates people to navigate the internet wisely.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4339,
+      "body_end": 5116,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Jimmy_Neutron"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00014",
+      "text": "Award-winning project: VeritasAI, for safer elections",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5118,
+      "body_end": 5171,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00015",
+      "text": "VeritasAI, another of the winning projects, empowers citizens with a system of geo-referenced reports to complain about electoral irregularities in real time. Andrés Briñez, a member of the team, says that users can register incidents from any device, categorize them and attach multimedia evidence anonymously and securely. All the information is centralized in an interactive map, allowing agile monitoring and the identification of risk patterns. With an accessible design and compatible with low-speed connections, the platform makes it easier for more people to take part in electoral oversight.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5173,
+      "body_end": 5773,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00016",
+      "text": "Award-winning project: PillMind, translating politics",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5775,
+      "body_end": 5828,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00017",
+      "text": "The third winning team, PillMind, focused on the lack of clarity in electoral promises, a problem that can leave citizens confused, manipulated and misinformed. Ricardo Flor, a member of the team, says that to address this problem, the platform uses artificial intelligence and multidisciplinary analysis to translate the technical language of politics into simple and accessible explanations. It not only breaks down campaign promises but also verifies them, contextualizes them and presents them from different perspectives — economic, social and historical — providing voters with the tools to make informed decisions.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5830,
+      "body_end": 6451,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00018",
+      "text": "But the real challenge begins now: taking the idea beyond the prototype. The MediaHack does not end with applause for the last pitch or the selection of winners. On March 19, at PUCE, the three teams shared their projects in a public presentation, hoping to connect with people who believe in their ideas and want to help make them a reality with the required funding.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6453,
+      "body_end": 6821,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00019",
+      "text": "For two days, the PUCE auditorium was filled with ideas, coding lines and debates on how to deal with electoral disinformation. Thanks to the support of Hacks Hackers Latam, Openlab, Unesco and the Communication Observatory of the PUCE, we were able to make possible both the conference and the hackathon, reactivating a community that unites journalism, technology and citizenry in the fight against disinformation.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6823,
+      "body_end": 7239,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831090-b00020",
+      "text": "Throughout 2025, we will continue to create venues to experiment, debate and build new tools.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 7241,
+      "body_end": 7334,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "a24eba65de2c2cf46f6d2fa04369cc931c9092fb0504e7c295f69042f914c9e7",
+  "word_count": 1125,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 3,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 7334,
+  "retrieved_at": "2026-11-16T22:45:59.959740+00:00",
+  "raw_html_sha256": "0384126c883f7972af3f80632bed5ce71c3b72f5b9fcb87588663a48993b2a5e",
+  "resolved_source_url": "https://globalvoices.org/2025/03/28/mediahack-36-hours-against-electoral-disinformation-in-ecuador/",
+  "canonical_url": "https://globalvoices.org/2025/03/28/mediahack-36-hours-against-electoral-disinformation-in-ecuador/",
+  "source_bytes": 190587,
+  "authors": [
+    {
+      "name": "Carlos E. Flores",
+      "url": "https://es.globalvoices.org/author/carlos-flores/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Melissa Vida",
+      "url": "https://globalvoices.org/author/melissa-vida/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 831090,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "0384126c883f7972af3f80632bed5ce71c3b72f5b9fcb87588663a48993b2a5e",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-ff07f70e32dd0bdb8615",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-03",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Carlos E. Flores",
+  "body_start": 493,
+  "body_end": 7827,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "8f767e379d522e0fb9a68cf3197a9ea173dee8ed1b7580cac3b78b31b2a528cb",
+  "text_path": "articles/gv-831090.txt",
+  "metadata_path": "metadata/gv-831090.json",
+  "attribution": "This story by Carlos E. Flores originally appeared on Global Voices. https://globalvoices.org/2025/03/28/mediahack-36-hours-against-electoral-disinformation-in-ecuador/",
+  "content_sha256": "a9f43aaf445a6eaa812da9e858e0580f4f24157661353086d46517bc4a2c54bf",
+  "source_sha256": "0384126c883f7972af3f80632bed5ce71c3b72f5b9fcb87588663a48993b2a5e",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

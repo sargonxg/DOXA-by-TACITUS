@@ -1,0 +1,532 @@
+{
+  "id": "gv-840174",
+  "publisher_id": 840174,
+  "source_id": "globalvoices:840174",
+  "source_url": "https://globalvoices.org/2025/08/01/how-africa-is-leading-the-charge-in-tackling-gender-based-violence-online/",
+  "title": "How Safety-by-Design tech can end technology-facilitated gender-based violence in Africa",
+  "published_at": "2025-08-01T15:00:01Z",
+  "modified_at": "2025-08-01T06:28:32Z",
+  "api_author_id": 2874,
+  "api_content_sha256": "281880b3cafb94cf357c94665198e1ad8952459c307cb68c15c503ea35f9b680",
+  "api_response_sha256": "aa829e488c936cd24696326080352df2a0a3369d54650e0ac6b947b6ef771fe6",
+  "api_retrieved_at": "2026-11-16T22:21:14.060384+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 117,
+      "count": 752,
+      "name": "Ghana",
+      "slug": "ghana",
+      "parent": 15
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 18,
+      "count": 1766,
+      "name": "Kenya",
+      "slug": "kenya",
+      "parent": 15
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 129,
+      "count": 111,
+      "name": "Namibia",
+      "slug": "namibia",
+      "parent": 15
+    },
+    {
+      "id": 131,
+      "count": 1641,
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "parent": 15
+    },
+    {
+      "id": 136,
+      "count": 422,
+      "name": "Senegal",
+      "slug": "senegal",
+      "parent": 15
+    },
+    {
+      "id": 140,
+      "count": 1197,
+      "name": "South Africa",
+      "slug": "south-africa",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 143,
+      "count": 803,
+      "name": "Uganda",
+      "slug": "uganda",
+      "parent": 15
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 1361,
+      "count": 6433,
+      "name": "Women &amp; Gender",
+      "slug": "women-gender",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-840174-b00001",
+      "text": "In early 2025, researchers tracking African elections uncovered a wave of AI-generated deepfake videos targeting women journalists and female candidates in Ghana, Senegal, and Namibia — synthetic clips designed to humiliate and discredit them, and drive them offline. The attack was chillingly effective, echoing a broader pattern in which technology-facilitated gender-based violence (TFGBV) silences women’s voices at precisely the moments they most need to be heard.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 469,
+      "source_links": [
+        "https://cipesa.org/2025/02/digital-shadows-deepfakes-used-as-violence-against-women-in-journalism-and-politics-during-african-elections/",
+        "https://en.wikipedia.org/wiki/Deepfake"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00002",
+      "text": "A global survey released in April shows the scale of the problem. More than half of women entrepreneurs in low- and middle-income countries report online harassment, and four in ten have pulled back from public life to protect themselves. Among women journalists, the picture is worse, with nearly three-quarters saying they have endured abuse that is often tied to disinformation and deepfakes.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 471,
+      "body_end": 866,
+      "source_links": [
+        "https://www.reuters.com/sustainability/society-equity/tech-firms-are-failing-women-entrepreneurs-heres-how-make-them-feel-safer-online-2025-04-15/",
+        "https://www.theregreview.org/2024/05/06/de-silva-de-alwis-vialle-is-ai-facilitated-gender-based-violence-the-next-pandemic/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00003",
+      "text": "Yet most digital platforms still act on safety only after harm has spread, treating protection as an upgrade instead of a core function. Safety by design flips that script by embedding privacy, consent, and abuse detection into code and business rules from the start.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 868,
+      "body_end": 1135,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00004",
+      "text": "What exactly is TFGBV — and why does “Safety by Design” matter?",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1137,
+      "body_end": 1200,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00005",
+      "text": "Technology-facilitated gender-based violence (TFGBV) is “any act that is committed, assisted, aggravated, or amplified through digital tools and ICTs that results in, or is likely to result in, physical, sexual, psychological, social, political, or economic harm.” It ranges from image-based abuse, deep-fake pornography, and sextortion to doxxing, cyber-stalking, hate speech, and gendered disinformation. Because the content can be replicated, searched, and shared indefinitely, the harm is portable across platforms and persistent over time, blurring the boundary between “online” and “offline” abuse.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1202,
+      "body_end": 1806,
+      "source_links": [
+        "https://www.unfpa.org/TFGBV?"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00006",
+      "text": "A United Nations Women poll found that 58 percent of girls and young women have experienced at least one form of online harassment, often before they turn twenty-five. In Kenya, a 2024 study of university students found that almost 90 percent witnessed technology-facilitated abuse on campus timelines, and nearly four in ten had been targets themselves. These numbers point to a crisis where victims frequently respond by self-censoring, stepping back from public life, and losing economic or political opportunities, which in turn suppresses diverse voices in civic discourse.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1808,
+      "body_end": 2386,
+      "source_links": [
+        "https://kenya.unfpa.org/en/publications/rapid-study-technology-facilitated-gender-based-violence-tfgbv-kenyas-higher-learning?",
+        "https://www.unwomen.org/en/articles/faqs/digital-abuse-trolling-stalking-and-other-forms-of-technology-facilitated-violence-against-women?"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00007",
+      "text": "Support Global Voices as we publish more articles like this one",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2388,
+      "body_end": 2451,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00008",
+      "text": "For more information about this campaign, please go here.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2453,
+      "body_end": 2510,
+      "source_links": [
+        "https://globalvoices.org/donate"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00009",
+      "text": "And that’s why Safety by Design matters. The Australian eSafety Commissioner frames Safety by Design as putting “user safety and rights at the center of product development,” encouraging companies to anticipate, detect, and eliminate online harms before they occur rather than “moving fast and breaking things.” Safety by Design provides a common vocabulary and measurable benchmarks for safety. In short, it moves TFGBV prevention from an afterthought to a design requirement, the digital equivalent of fitting seatbelts in every car. Responsibility spans the entire ecosystem, encompassing platforms, regulators, developers, and civic groups, rather than resting on engineers alone.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2512,
+      "body_end": 3196,
+      "source_links": [
+        "https://www.esafety.gov.au/industry/safety-by-design"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00010",
+      "text": "The role of technology developers and civil society",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3198,
+      "body_end": 3249,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00011",
+      "text": "Civil society is often the first place survivors turn and the last line of accountability when companies or states fall short. Across Africa, feminist tech collectives, digital-rights NGOs, and faith-based survivor networks are converting lived experience into data, tools, and hard policy wins, while plugging into global coalitions for bigger leverage.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3251,
+      "body_end": 3605,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00012",
+      "text": "East African trainers from the Safe Sisters network travel from market towns to radio stations, teaching women journalists how to spot spyware and store evidence in the cloud.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3607,
+      "body_end": 3782,
+      "source_links": [
+        "https://internews.org/areas-of-expertise/global-tech/global-tech-projects/safe-sisters/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00013",
+      "text": "South African coders behind the GRIT mobile app are demonstrating what safety-first engineering looks like in practice. After conversations with survivors of domestic violence, the team built an encrypted vault that lets users record evidence and store court details in a cloud space that only they can unlock. The feature has pushed downloads of the app past 10,000, and prosecutors say the secure files are already strengthening cases in Johannesburg courts.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3784,
+      "body_end": 4244,
+      "source_links": [
+        "https://www.timeslive.co.za/news/south-africa/2024-09-11-almost-10k-downloads-for-a-new-gbv-victim-app-to-store-evidence-and-report-cases/?"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00014",
+      "text": "In Kampala, Uganda, a feminist civic tech group called Pollicy has taken a different route. It's Digital Safe Tea game walks players through a choose-your-own-adventure story in which online harassment and doxxing emerge as plot twists. Every decision a player makes is logged anonymously, and the data set is shared with local start-ups so they can close design gaps before the product ships. Ugandan university clubs now use the game in digital safety workshops.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4246,
+      "body_end": 4710,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Kampala",
+        "https://qz.com/africa/2046666/an-online-game-is-helping-ugandan-women-to-combat-online-violence?"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00015",
+      "text": "These local experiments draw on a global handbook. Australia’s eSafety Commissioner publishes an open-access Safety by Design toolkit that guides developers through risk reviews and privacy by default settings. Kenyan regulators cite the same resource in a draft rule that would require all new social apps to file safety assessments before launch. As African coders adopt the framework, the hope is that every upload button and contact list will carry built-in defenses long before threats appear.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4712,
+      "body_end": 5210,
+      "source_links": [
+        "https://www.ca.go.ke/sites/default/files/2025-04/%20Industry%20Guidelines%20for%20Child%20Online%20Protection%20%28COP%29%20and%20Safety%20in%20Kenya_Apr2025.pdf",
+        "https://www.esafety.gov.au/industry/safety-by-design?"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00016",
+      "text": "The role of social media platforms",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5212,
+      "body_end": 5246,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00017",
+      "text": "Social networks say they are building safer feeds, yet the spotlight has now shifted to what they do for African users specifically.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5248,
+      "body_end": 5380,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00018",
+      "text": "TikTok took a public step last year when it launched a Sub-Saharan Africa Safety Advisory Council in Nairobi and asked lawyers, journalists, and digital rights advocates from Kenya, Ghana, Senegal, and South Africa to critique every policy tweak before code changes go live. Council members meet quarterly and publish minutes so watchdog groups can track whether recommendations turn into product updates.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5382,
+      "body_end": 5787,
+      "source_links": [
+        "https://news.broadcastmediaafrica.com/2024/09/10/tiktok-launches-sub-saharan-africa-safety-advisory-council-in-kenya/?"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00019",
+      "text": "Regional apps are following suit. Ayoba, the chat and content service backed by MTN, has updated its servers to screen every photo against a list of banned images supplied by domestic gender rights groups. Engineers say the check runs in milliseconds and blocks non-consensual intimate pictures before anyone can forward them. Users who flag missed material now see faster takedowns as the filter learns from each report.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5789,
+      "body_end": 6210,
+      "source_links": [
+        "https://ayoba.me/web/c/community-guidelines?"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00020",
+      "text": "African survivors are also plugging into a global safety net. Stop NCII, a tool developed by an alliance led by Meta, lets a victim create a digital fingerprint of an intimate photo without uploading the file. That fingerprint travels to dozens of platforms, which then block any upload that matches it.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6212,
+      "body_end": 6515,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Meta_Platforms",
+        "https://stopncii.org/?"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00021",
+      "text": "The role of governments",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6517,
+      "body_end": 6540,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00022",
+      "text": "Ghana has been on the cutting edge of preventing TFGBV since its Cybersecurity Act took effect in 2020, turning the sharing of intimate images without consent into a criminal offence that can draw a three-year sentence. South Africa soon followed with its Cybercrimes Act, which makes revenge pornography illegal and applies the same duty of care to anyone who reposts the material. Kenya is now in public hearings on draft child online safety rules that would force every social platform and messaging app to file a safety impact assessment before launch.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6542,
+      "body_end": 7098,
+      "source_links": [
+        "https://dig.watch/resource/ghanas-cybersecurity-act-2020-act-1038#:~:text=National%20Regulations,licensing%20fees%2C%20and%20international%20grants.",
+        "https://stbb.co.za/pulse-revenge-porn-ruling-high-court-awards-plaintiff-r4-3-million-in-damages-in-landmark-judgment/",
+        "https://www.ca.go.ke/closed-consultation"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00023",
+      "text": "Regional bodies want those national moves to add up. The African Union (AU) Child Online Safety and Empowerment Policy, adopted last year, calls on all member states to write corporate duties into law and to publish public dashboards that track takedown speeds and language coverage.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7100,
+      "body_end": 7383,
+      "source_links": [
+        "https://au.int/sites/default/files/documents/43798-doc-African_Union_Child_Online_Safety_and_Empowerment_Policy_Feb_2024.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00024",
+      "text": "Criminal statutes set the floor, but design mandates and transparency hooks raise the ceiling. When African legislatures pair Ghana-style image-abuse laws with Kenya-style risk-assessment duties and measure progress against AU benchmarks, platforms have no wiggle room to treat TFGBV safeguards as an optional add-on. Borrowing proven mechanisms from Australia’s Online Safety Act can accelerate the process, ensuring every new feature that ships is safe by default, no matter which continent codes it.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7385,
+      "body_end": 7887,
+      "source_links": [
+        "https://www.aph.gov.au/Parliamentary_Business/Bills_LEGislation/Bills_Search_Results/Result?bId=r6680"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00025",
+      "text": "Technology-facilitated gender-based violence isn’t a side effect of digital growth. It’s the price women pay for being online.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7889,
+      "body_end": 8015,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-840174-b00026",
+      "text": "The good news is that every piece of Africa’s safety-by-design puzzle is finally on the table. From Lagos to Nairobi, developers are hard-coding privacy safeguards, platforms are inviting African experts into the engine room, governments are embedding design mandates into licenses and AU policy, and civil society networks are feeding survivor data directly into product sprints and policy drafts. It is only through such continental collaboration and follow through that Africa might be able to reduce online gender-based-violence.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 8017,
+      "body_end": 8550,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "441c02500d5f81daa26e1072c4b264b73b894be4e6317c1b01330fc40f591681",
+  "word_count": 1294,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 2,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8550,
+  "retrieved_at": "2026-11-16T22:47:26.359204+00:00",
+  "raw_html_sha256": "7c506361f6331bb0ea604f65b33b7fa89b8c272aa73067f0c131ee7bd02d9870",
+  "resolved_source_url": "https://globalvoices.org/2025/08/01/how-africa-is-leading-the-charge-in-tackling-gender-based-violence-online/",
+  "canonical_url": "https://globalvoices.org/2025/08/01/how-africa-is-leading-the-charge-in-tackling-gender-based-violence-online/",
+  "source_bytes": 195887,
+  "authors": [
+    {
+      "name": "Cecilia Maundu",
+      "url": "https://globalvoices.org/author/cecilia-maundu/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 840174,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "7c506361f6331bb0ea604f65b33b7fa89b8c272aa73067f0c131ee7bd02d9870",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-3d85c571dc4ff743b598",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-08",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Cecilia Maundu",
+  "body_start": 499,
+  "body_end": 9049,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "d86f0631e7440ab8baf8833eff38464d03a2164c0331608ea1090be625bced05",
+  "text_path": "articles/gv-840174.txt",
+  "metadata_path": "metadata/gv-840174.json",
+  "attribution": "This story by Cecilia Maundu originally appeared on Global Voices. https://globalvoices.org/2025/08/01/how-africa-is-leading-the-charge-in-tackling-gender-based-violence-online/",
+  "content_sha256": "71424352fae89f577072e66d3bcec0716f0f40235996ea2f0c1a8709bc7c469a",
+  "source_sha256": "7c506361f6331bb0ea604f65b33b7fa89b8c272aa73067f0c131ee7bd02d9870",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

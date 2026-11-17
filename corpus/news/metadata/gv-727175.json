@@ -1,0 +1,305 @@
+{
+  "id": "gv-727175",
+  "publisher_id": 727175,
+  "source_id": "globalvoices:727175",
+  "source_url": "https://globalvoices.org/2021/01/22/uk-strain-of-covid-19-arrives-in-trinidad-tobago/",
+  "title": "UK strain of COVID-19 arrives in Trinidad & Tobago",
+  "published_at": "2021-01-22T01:50:04Z",
+  "modified_at": "2021-01-22T01:50:04Z",
+  "api_author_id": 306,
+  "api_content_sha256": "cd1a02d26eee1aafd65576444c3e8e1a0ca19d3a4545a8e1e04ff68183b32f5a",
+  "api_response_sha256": "4b8a365e82fe2773a09c5a0e8bd4a9b7aa40c63d55bed83d1fb049dae4c0bf4c",
+  "api_retrieved_at": "2026-11-16T22:20:32.142391+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1353,
+      "count": 10223,
+      "name": "Caribbean",
+      "slug": "caribbean",
+      "parent": 219
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 280,
+      "count": 5264,
+      "name": "Travel",
+      "slug": "travel",
+      "parent": 238
+    },
+    {
+      "id": 184,
+      "count": 3312,
+      "name": "Trinidad &amp; Tobago",
+      "slug": "trinidad-tobago",
+      "parent": 1353
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-727175-b00001",
+      "text": "Trinidad and Tobago, which has been managing the pandemic fairly well thus far, with 7,450 total cases between March 2020 and present, 343 current active cases and 133 deaths, has recorded its first case of the COVID-19 Variant B117, via a returning national travelling from the United Kingdom.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 294,
+      "source_links": [
+        "https://health.gov.tt/covid-19-update-thursday-21st-january-2021",
+        "https://health.gov.tt/first-confirmed-case-of-uk-covid-19-variant",
+        "https://www.statnews.com/2021/01/15/covid19-b117-variant-cdc/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727175-b00002",
+      "text": "The United States’ Centers for Disease Control (CDC) has said that this particular Variant of Concern coming out of the UK, which has been estimated to be as much as 70 per cent more transmissible, could well become the dominant strain of COVID-19 by March 2021.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 296,
+      "body_end": 558,
+      "source_links": [
+        "https://www.bbc.com/news/health-55388846",
+        "https://www.statnews.com/2021/01/15/covid19-b117-variant-cdc/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727175-b00003",
+      "text": "To help reduce the likelihood of infiltration, the Trinidad and Tobago government recently updated its exemption policies and quarantine protocols for UK-based travellers. As of December 22, in addition to a negative PCR test, anyone travelling from the UK must be placed in state quarantine for 14 days—a week longer than the previous requirements.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 560,
+      "body_end": 909,
+      "source_links": [
+        "https://twitter.com/ttnatsecurity/status/1325219014654758913/photo/1",
+        "https://www.gov.uk/foreign-travel-advice/trinidad-and-tobago/entry-requirements"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727175-b00004",
+      "text": "It is a measure that makes sense to many social media users, especially since the index case for Variant B117 provided a negative polymerase chain reaction (PCR) test 72 hours prior to travel:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 911,
+      "body_end": 1103,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727175-b00005",
+      "text": "Upon arrival in Trinidad and Tobago, the patient was put into a state quarantine facility and once the COVID-19 test came back positive, was transferred to a state hospital in central Trinidad and isolated. The variant was detected via genome sequencing testing being conducted by the University of the West Indies.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1105,
+      "body_end": 1420,
+      "source_links": [
+        "https://sta.uwi.edu/news/releases/release.asp?id=22192"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727175-b00006",
+      "text": "Travellers from other countries continue to be required to stay for one week in state quarantine with another week of home quarantine, along with a negative PCR test result 72 hours before travelling.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1422,
+      "body_end": 1622,
+      "source_links": [
+        "https://health.gov.tt/new-protocols-to-treat-with-new-strain-of-covid-19"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727175-b00007",
+      "text": "For the past week, Trinidad and Tobago has been recording an average of 20 new COVID-19 cases a day.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1624,
+      "body_end": 1724,
+      "source_links": [
+        "https://health.gov.tt/covid-19-news-and-updates/covid-19-update-trinidad-and-tobago"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727175-b00008",
+      "text": "Although most people accepted the inevitability of the new strain eventually reaching Trinidad and Tobago, online response to the news was a mixed bag, with some netizens applauding the efficiency of the authorities and others concerned about what it might mean for other issues, such as the proposed reopening of schools.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1726,
+      "body_end": 2048,
+      "source_links": [
+        "https://twitter.com/marisekjg/status/1352341221008691201",
+        "https://www.facebook.com/tttliveonline/posts/10158783982980610?comment_id=10158783996100610",
+        "https://www.facebook.com/tttliveonline/posts/10158783982980610?comment_id=10158784007645610"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727175-b00009",
+      "text": "The pressure to reopen the country's borders was another topic that several Twitter users addressed. Trinidad and Tobago's borders have been closed since mid-March 2020. Although exemptions and repatriation efforts have started, many nationals who describe themselves as being “stranded” abroad say the process isn't happening fast enough; others have questioned its transparency, with some even launching legal action against the government.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2050,
+      "body_end": 2492,
+      "source_links": [
+        "https://globalvoices.org/2020/03/16/trinidad-tobago-closes-its-borders-as-covid-19-cases-double-to-four/",
+        "https://guardian.co.tt/news/tt-citizens-mark-300-days-stranded-abroad-6.2.1276753.f0312cff89",
+        "https://trinidadexpress.com/newsextra/legal-action-to-force-govt-to-explain-exemption-policy/article_489d5436-cb82-11ea-a79a-0315e2551bad.html",
+        "https://www.guardian.co.tt/news/citizens-stranded-abroad-stressed-and-broken-6.2.1268296.cbb45304e8",
+        "https://www.guardian.co.tt/news/trinis-stranded-in-us-sue-ministry-over-covid19-exemption-secrecy-6.2.1166172.656e2b3b85"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727175-b00010",
+      "text": "On the other hand, the news of the Variant B117 reaching the country's shores has given more impetus to those not in favour of relaxing border restrictions:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2494,
+      "body_end": 2650,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727175-b00011",
+      "text": "Meanwhile, Trinidad and Tobago's Chief Medical Officer Dr. Roshan Parasram has dismissed rumours of the borders remaining closed until 2022 on account of the new strain.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2652,
+      "body_end": 2821,
+      "source_links": [
+        "https://newsday.co.tt/2021/01/09/no-truth-in-border-closure-until-2022/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727175-b00012",
+      "text": "The country's health ministry has continued its public education efforts, stressing the importance of mask-wearing, hand-washing and physical distancing to help protect against the virus, and will host a virtual conference on January 22 to offer additional information to the public.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2823,
+      "body_end": 3106,
+      "source_links": [
+        "https://health.gov.tt/covid-19/covid-19-symptoms-and-prevention"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "cfdd8138da0d618e018a1d32529a5900f9365e24b36e2c2742cac9e57fb80d2d",
+  "word_count": 491,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 3106,
+  "retrieved_at": "2026-11-16T22:29:15.799093+00:00",
+  "raw_html_sha256": "69bf02f952a9917e1cf81741c87471991683da173453815de7bd21b7d8597342",
+  "resolved_source_url": "https://globalvoices.org/2021/01/22/uk-strain-of-covid-19-arrives-in-trinidad-tobago/",
+  "canonical_url": "https://globalvoices.org/2021/01/22/uk-strain-of-covid-19-arrives-in-trinidad-tobago/",
+  "source_bytes": 186714,
+  "authors": [
+    {
+      "name": "Janine Mendes-Franco",
+      "url": "https://globalvoices.org/author/janine-mendes-franco/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 727175,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "69bf02f952a9917e1cf81741c87471991683da173453815de7bd21b7d8597342",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-16590da23a12658d0f9e",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-01",
+    "eligible_month_documents": 68,
+    "selected_month_documents": 57,
+    "inclusion_probability": 0.8382352941176471,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Janine Mendes-Franco",
+  "body_start": 442,
+  "body_end": 3548,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "471d1f0dd5158a6b86c6e4b5a78309723e9effc0a640be8d9fc8692df5c068ca",
+  "text_path": "articles/gv-727175.txt",
+  "metadata_path": "metadata/gv-727175.json",
+  "attribution": "This story by Janine Mendes-Franco originally appeared on Global Voices. https://globalvoices.org/2021/01/22/uk-strain-of-covid-19-arrives-in-trinidad-tobago/",
+  "content_sha256": "849d95ff0da8b68d7030c2d5294f25e26ca54ddf4d2496592ff67c22ab5f6075",
+  "source_sha256": "69bf02f952a9917e1cf81741c87471991683da173453815de7bd21b7d8597342",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

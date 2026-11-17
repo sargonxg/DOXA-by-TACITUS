@@ -1,0 +1,626 @@
+{
+  "id": "gv-814480",
+  "publisher_id": 814480,
+  "source_id": "globalvoices:814480",
+  "source_url": "https://globalvoices.org/2024/06/13/the-ingenious-network-tree-defying-gazas-connectivity-blockade/",
+  "title": "The ingenious ‘network tree’ defying Gaza's connectivity blockade",
+  "published_at": "2024-06-13T04:54:28Z",
+  "modified_at": "2024-09-17T03:46:06Z",
+  "api_author_id": 2724,
+  "api_content_sha256": "9f773bed426082b82df8739f2e4c31c2c66a6beaa29060c966e3d6d384ff0859",
+  "api_response_sha256": "23616beb68b31875991aa1a024e9aed128a3a347018c7c81ebdccbb3a70c3f9a",
+  "api_retrieved_at": "2026-11-16T22:21:03.503026+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    },
+    {
+      "id": 262,
+      "count": 2092,
+      "name": "Indigenous",
+      "slug": "indigenous",
+      "parent": 238
+    },
+    {
+      "id": 223,
+      "count": 278,
+      "name": "Italy",
+      "slug": "italy",
+      "parent": 187
+    },
+    {
+      "id": 93,
+      "count": 1717,
+      "name": "Palestine",
+      "slug": "palestine",
+      "parent": 14
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    },
+    {
+      "id": 187,
+      "count": 2705,
+      "name": "Western Europe",
+      "slug": "western-europe",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-814480-b00001",
+      "text": "When the combination of big tech and politics failed the Palestinian people by overlooking the internet disruptions affecting Gaza, grassroots technology known as the “network tree” came to the rescue. Utilizing the humblest of elements such as buckets, smartphones, and e-SIMs, this ingeniously simple technology provided much-needed connectivity to a community fragmented by war, in the face of severely damaged infrastructure.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 429,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00002",
+      "text": "Since the war on Gaza began in the aftermath of October 7, the telecommunications infrastructure has been severely damaged, along with critical sectors like education, healthcare, and more. Telecommunications disruption in Gaza has significantly hindered daily interactions and vital operations. Repeated blackouts have intensified Gazzawis isolation. According to the UNRWA’s June 5, 2024 report, it is becoming “increasingly difficult to communicate with humanitarian personnel on the ground.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 431,
+      "body_end": 926,
+      "source_links": [
+        "https://www.unrwa.org/resources/reports/unrwa-situation-report-112-situation-gaza-strip-and-west-bank-including-east-Jerusalem",
+        "https://x.com/netblocks/status/1783458412660949327"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00003",
+      "text": "This is further exacerbated by direct attacks on civilians attempting to access the internet. According to a report by Euromed Monitor dated May 16, 2024: “The Israeli army continues to repeatedly target and kill Palestinian civilians, including journalists, as they attempt to access communications and Internet services to reach their families or employers.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 928,
+      "body_end": 1288,
+      "source_links": [
+        "https://euromedmonitor.org/en/article/6327/Gaza:-Israel-commits-another-massacre-against-civilians-trying-to-access-communications-and-Internet-services"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00004",
+      "text": "Communication disruption has caught the attention of international figures like the acclaimed director Manolo Luppichini. Since 1994, Luppichini has directed several projects, gaining numerous awards. In an April 16, 2024, interview over Zoom with Global Voices, he discussed his recent trip to Rafah aimed at improving internet access, his commitment to the Palestinian cause, and the challenges he faces:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1290,
+      "body_end": 1696,
+      "source_links": [
+        "https://about.me/manolo_luppichini"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00005",
+      "text": "> Rafah is just the latest beat in my 25-year closeness and care about the Palestinian issue. I believe if we neglect international issues, particularly those involving war, we fail to see the full picture and are heading rapidly towards a permanent global war.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1698,
+      "body_end": 1959,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00006",
+      "text": "> The Palestinian problem is just the tip of the iceberg, a very visible and significant issue. Just look at what's happening in Ukraine, Sudan, Myanmar, among other countries. The language of war has been subtly yet consistently injected into our global narrative over the last 20 years.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1961,
+      "body_end": 2249,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00007",
+      "text": "> As a filmmaker I traveled to Gaza to make documentaries, so I had the chance to talk to people. I have shared experiences with Gazzawis, who are like brothers to me. It's also quite frightening because during our chats, there's this sense that it might be the last time we speak. It's truly heartbreaking.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2251,
+      "body_end": 2558,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00008",
+      "text": "Reflecting on the limited impact of filmmaking for social change in the face of the ongoing humanitarian catastrophe in Gaza despite widespread exposure, Luppichini decided to move beyond raising awareness to actively participate in finding solutions with tangible impact:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2560,
+      "body_end": 2832,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00009",
+      "text": "> Lately, I've felt the need to become more involved. Showing films often doesn't lead to change; people watch them, but then, nothing happens. So, I thought that “putting my hand in the metal” and creating something with a direct impact would be more useful.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2834,
+      "body_end": 3093,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00010",
+      "text": "> I have released very powerful videos, I naively thought that my communications could improve the situation. Bullshit, no one cared, nothing changed at all.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3095,
+      "body_end": 3252,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00011",
+      "text": "This decision drove Luppichini to go to Rafah, where he felt a moral outrage at the apparent disregard for human life.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3254,
+      "body_end": 3372,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00012",
+      "text": "> I was in Egyptian Rafah. We couldn't see much, but could smell the war on the other side of the wall. The situation is beyond shameful; having people starve on one side, while the food, water, and medicine is rotting in the heat of the desert in the trucks on the other side.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3374,
+      "body_end": 3651,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00013",
+      "text": "> In Italy, we have a saying: “You shouldn’t shoot at the Red Cross.” It means that some actions are despicable. But now, hospitals are being targeted and people are buried under their ruins in broad daylight, yet, there is no international reaction.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3653,
+      "body_end": 3903,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00014",
+      "text": "> I am shocked, because anyone can claim to have moral authority, but on which moral authority is the USA standing? What is happening is Gaza is making us vulnerable to any consequence. This indifference will enable the worst assholes. Forgive my language!",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3905,
+      "body_end": 4161,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00015",
+      "text": "Communication barriers in Gaza hinder information flow, worsened by a global narrative shaped by colonialism-influenced mainstream media. This narrative often misrepresents the situation on the ground and undermines Gazzawi voices, presenting a skewed perspective.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4163,
+      "body_end": 4427,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00016",
+      "text": "> It is incredibly frustrating dealing with communication blockades, especially for those who understand the reality on the ground. We can’t communicate with our brothers and sisters there.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4429,
+      "body_end": 4618,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00017",
+      "text": "> Back in 2009, while in Gaza, I found myself picking up bomb fragments, analyzing the types of metals used. I had not heard of Dense Inter Metal Explosives (DIME) bombs then, the ones designed to cut the legs. While filming there, I've been shot at several times.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4620,
+      "body_end": 4884,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Dense_inert_metal_explosive#:~:text=Dense%20inert%20metal%20explosive%20(DIME,inert%20material%20such%20as%20tungsten."
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00018",
+      "text": "> This firsthand experience amplifies my frustration when Western journalists say that they need to go and tell the story in Gaza, as if Gazans can't tell their own stories or share real-time information. This colonialist approach makes me question why patronizing Westerners need to narrate Gaza’s experience instead of recognizing the voices from within? It's a very strange way to interpret press freedom.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4886,
+      "body_end": 5294,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00019",
+      "text": "Luppichinic decided to tackle the communication problem in Rafah by collaborating with old comrades, who are committed to leveraging their technical skills and experience with early digital activism. They wanted to use grassroots technology to reclaim power in the oppressive situation in Gaza.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5296,
+      "body_end": 5590,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00020",
+      "text": "> I'm part of this group of elderly but active people — you might remember from the media back around the Seattle anti-globalization movement in 1999–2000 and the Indymedia network.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5592,
+      "body_end": 5773,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/1999_Seattle_WTO_protests#:~:text=The%201999%20Seattle%20WTO%20protests,Center%20in%20Seattle%2C%20Washington%20on",
+        "https://en.wikipedia.org/wiki/Indymedia"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00021",
+      "text": "> This group of nerds managed to create a community on the internet way before social media platforms were established. So, we began to explore ways to overcome the Israeli blockade of the internet.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5775,
+      "body_end": 5973,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00022",
+      "text": "Their journey entailed significant challenges related to logistical and bureaucratic obstacles in delivering essential supplies to Gaza.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5975,
+      "body_end": 6111,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00023",
+      "text": "> It was a complete mess. We explored several options, but they all turned out to be disastrous because everything was either expensive or required lengthy permissions from the Egyptian government. It is impossible to import anything through the border.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6113,
+      "body_end": 6366,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00024",
+      "text": "> We were in the warehouse, where the rejected items were stored. It was an incredible scene with items like, solar panels, baby incubators, and oxygen cylinders for hospitals, all rejected. The policy was absurd — if they found even one prohibited item in a truck, they would reject the entire truck, even if everything else was permissible. This made it incredibly difficult to get technical equipment through.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6368,
+      "body_end": 6780,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00025",
+      "text": "The ‘Network of Web Trees’",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6782,
+      "body_end": 6808,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00026",
+      "text": "Luppicchini partnered with the Associazione di Cooperazione e Solidarietà (ACS), an Italian NGO focused on emergency and sustainable development in global majority countries in collaboration with local communities.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6810,
+      "body_end": 7024,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00027",
+      "text": "ACS developed the “Network of Web Trees,”a system using the latest generation mobile phones equipped with eSIM technology — virtual SIM cards activated by a code to function as traditional SIM cards. This system, set up as Wi-Fi hotspots that could transmit radio signals across the border, supports up to 50 additional devices, allowing connections to Egyptian or Israeli cellular networks without the need for modern phones. The Web-Trees are grown by local ‘Web-Gardeners.’",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7026,
+      "body_end": 7502,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00028",
+      "text": "> We sent the Web-Gardeners money and they managed to buy these items on Gaza's black market. Our technical team outside Gaza worked with the Web-Gardeners inside Gaza, exchanging photos and messages for feedback. It was a collaboration between people from Italy and Gaza.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7504,
+      "body_end": 7776,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00029",
+      "text": "> They found the necessary tools, and we sent them the QR codes via WhatsApp to activate the eSIMs.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7778,
+      "body_end": 7877,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00030",
+      "text": "> Then it magically worked. We were so happy, we were crying. It was so sweet.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 7879,
+      "body_end": 7957,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00031",
+      "text": "However, even the simplest solutions can be dangerous in Gaza.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 7959,
+      "body_end": 8021,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00032",
+      "text": "> Open areas near beaches typically have clear reception without obstacles. However, in other regions, to catch a signal from across the border, people have to climb to higher positions like rooftops. This can be dangerous because those bloody drones target anyone they detect.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 8023,
+      "body_end": 8300,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00033",
+      "text": "> Ali, the most experienced in the Web-Gardeners team came up with a very funny solution that has become emblematic of how igneous Gazzawi people can be. He created what he calls “the bucket.” Essentially, they place the mobile phone with a power bank inside a bucket and attach it to a pole and raise it like a flag using a rope. This setup allows the phone to connect to and spread the signal from a safer, elevated position without anyone having to physically be up high.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 8302,
+      "body_end": 8776,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00034",
+      "text": "Despite the simplicity of the grassroots communications network, it has been crucial for civilians, who are the real victims of the communication disruptions.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 8778,
+      "body_end": 8936,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00035",
+      "text": "> The real impact of internet disruptions is felt by ordinary Gazzawis. They are left without knowledge of what's happening with their neighbors or relatives, potentially just 500 meters away, due to movement restrictions or the risk of being shot.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 8938,
+      "body_end": 9186,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00036",
+      "text": "This grassroots movement is Luppichini and his team’s effort not only to maintain critical social bonds, but also serves as a form of resistance against cultural genocide.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 9188,
+      "body_end": 9359,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-814480-b00037",
+      "text": "> This is simply a grassroots operation that not only connects people to the outside world but also connects people within the community itself. This connection is crucial for maintaining community bonds. It is also one solution in the face of global double standards that mobilized solutions in Ukraine, but failed to do so in Gaza.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 9361,
+      "body_end": 9694,
+      "source_links": [
+        "https://thehill.com/policy/international/4328945-israel-starlink-gaza-elon-musk-hamas/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-814480-b00038",
+      "text": "> Genocide involves not only physical destruction but also cultural erasure, disconnecting people from their cultural and physical references. Thus, keeping Palestinians in Gaza connected among themselves is crucial to combating the ongoing genocide.",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 9696,
+      "body_end": 9946,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "43321336b9a08103a35c62c6fc5df94519b67666ce9c0ae00c66688dbe844eae",
+  "word_count": 1570,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 9946,
+  "retrieved_at": "2026-11-16T22:43:19.811438+00:00",
+  "raw_html_sha256": "83f2e6aa1bbfbd063e7d1ec73b66c24dbfba14d042b6aaa2a9e02614e8a77095",
+  "resolved_source_url": "https://globalvoices.org/2024/06/13/the-ingenious-network-tree-defying-gazas-connectivity-blockade/",
+  "canonical_url": "https://globalvoices.org/2024/06/13/the-ingenious-network-tree-defying-gazas-connectivity-blockade/",
+  "source_bytes": 197869,
+  "authors": [
+    {
+      "name": "Mariam A.",
+      "url": "https://globalvoices.org/author/mariam-abuadas/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 814480,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "83f2e6aa1bbfbd063e7d1ec73b66c24dbfba14d042b6aaa2a9e02614e8a77095",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-83f4d74f638c8498a8cb",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-06",
+    "eligible_month_documents": 64,
+    "selected_month_documents": 53,
+    "inclusion_probability": 0.828125,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Mariam A.",
+  "body_start": 460,
+  "body_end": 10406,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "87d6346960b9ff0eac7e2424866a51ebb65f68d170e89916bca5a80b2b50d4a6",
+  "text_path": "articles/gv-814480.txt",
+  "metadata_path": "metadata/gv-814480.json",
+  "attribution": "This story by Mariam A. originally appeared on Global Voices. https://globalvoices.org/2024/06/13/the-ingenious-network-tree-defying-gazas-connectivity-blockade/",
+  "content_sha256": "8377c813d22b6b26b664575cbb0ebc67086324813b7ddc8958c5376ff8c14ca6",
+  "source_sha256": "83f2e6aa1bbfbd063e7d1ec73b66c24dbfba14d042b6aaa2a9e02614e8a77095",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

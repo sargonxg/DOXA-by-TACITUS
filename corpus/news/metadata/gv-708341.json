@@ -1,0 +1,629 @@
+{
+  "id": "gv-708341",
+  "publisher_id": 708341,
+  "source_id": "globalvoices:708341",
+  "source_url": "https://globalvoices.org/2020/06/02/swahili-identity-language-and-the-internet/",
+  "title": "Making Swahili visible: Identity, language and the internet",
+  "published_at": "2020-06-02T20:05:32Z",
+  "modified_at": "2020-06-02T20:19:34Z",
+  "api_author_id": 2700,
+  "api_content_sha256": "6e507ea847bbb8002a936818d8a2ae4a99280c70847d5d0dedd23336a64fe146",
+  "api_response_sha256": "36bc3d63f20a164eefbe7ce2d06bb132aa122b08a06cf13d0b9306b43d571f31",
+  "api_retrieved_at": "2026-11-16T22:20:26.326198+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 239,
+      "count": 12626,
+      "name": "Arts &#038; Culture",
+      "slug": "arts-culture",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 1355,
+      "count": 5871,
+      "name": "Ethnicity &amp; Race",
+      "slug": "ethnicity-race",
+      "parent": 238
+    },
+    {
+      "id": 262,
+      "count": 2092,
+      "name": "Indigenous",
+      "slug": "indigenous",
+      "parent": 238
+    },
+    {
+      "id": 18,
+      "count": 1766,
+      "name": "Kenya",
+      "slug": "kenya",
+      "parent": 15
+    },
+    {
+      "id": 296,
+      "count": 2217,
+      "name": "Language",
+      "slug": "language",
+      "parent": 238
+    },
+    {
+      "id": 133,
+      "count": 262,
+      "name": "Rwanda",
+      "slug": "rwanda",
+      "parent": 15
+    },
+    {
+      "id": 140,
+      "count": 1197,
+      "name": "South Africa",
+      "slug": "south-africa",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 26,
+      "count": 587,
+      "name": "Tanzania",
+      "slug": "tanzania",
+      "parent": 15
+    },
+    {
+      "id": 143,
+      "count": 803,
+      "name": "Uganda",
+      "slug": "uganda",
+      "parent": 15
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-708341-b00001",
+      "text": "Editor’s note: This personal essay was written following a Twitter campaign organized by Global Voices sub-Saharan Africa and Rising Voices where each week, a different language activist shared their perspectives on the intersection of digital rights and African Languages as part of the project, “The identity matrix: Platform regulation of online threats to expression in Africa.”",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 382,
+      "source_links": [
+        "https://globalvoices.org/2020/04/13/identitymatrix-a-twitter-conversation-on-identity-and-digital-rights-in-africa/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00002",
+      "text": "According to the United Nations Educational Scientific and Cultural Organisation (UNESCO), linguistic and cultural diversity are of strategic importance for people around the world to strengthen the unity and cohesion of societies.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 384,
+      "body_end": 615,
+      "source_links": [
+        "https://en.unesco.org/themes/linguistic-diversity-and-multilingualism-internet"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00003",
+      "text": "This linguistic and cultural diversity propelled the UNESCO general conference to proclaim International Mother Language Day (IMLD) in November 1999, to be commemorated annually on February 21 annually. To bolster IMLD, the United Nations (UN) declared the International Year of Indigenous Languages (IYIL 2019), to draw attention to the endangerment of the world’s indigenous languages.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 617,
+      "body_end": 1004,
+      "source_links": [
+        "https://en.iyil2019.org/",
+        "https://www.un.org/en/observances/mother-language-day"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00004",
+      "text": "Today, there are over 7,100 languages spoken around the world, 28 percent of which are spoken on the African continent alone. Despite this, English dominates online spaces in the region. Some twenty years ago, 80 percent of the world’s online content was English-centric. Currently, however, English content online is said to have shrunk to between 51- 55 percent.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1006,
+      "body_end": 1370,
+      "source_links": [
+        "http://labs.theguardian.com/digital-language-divide/",
+        "https://qz.com/96054/english-is-no-longer-the-language-of-the-web/",
+        "https://www.ethnologue.com/guides/how-many-languages"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00005",
+      "text": "The million-dollar question, therefore, is: Could this sharp drop be an indicator that people now favor their native languages online over English, considering that less than 15 percent of the world population speaks English as their first language?",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1372,
+      "body_end": 1621,
+      "source_links": [
+        "https://www.babbel.com/en/magazine/how-many-people-speak-english-and-where-is-it-spoken"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00006",
+      "text": "Swahili: Coming to birth?",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1623,
+      "body_end": 1648,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00007",
+      "text": "Swahili is recognized as one of the official languages ​​of the African Union (AU), alongside English, Portuguese, French, Spanish and Arabic. Swahili is also the lingua franca for East Africa Community (EAC) member states.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1650,
+      "body_end": 1873,
+      "source_links": [
+        "http://www.powerofculture.nl/en/current/2004/august/kiswahili.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00008",
+      "text": "Rwanda, an EAC member, saw its lower legislative house approve a law making Swahili an official language in 2017 – in addition to Kinyarwanda, French and English. Besides being used for administrative purposes, Swahili will be incorporated into Rwanda’s school curriculum.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1875,
+      "body_end": 2147,
+      "source_links": [
+        "https://www.ktpress.rw/2015/01/rwanda-introduces-kiswahili-in-curriculum/",
+        "https://www.newtimes.co.rw/section/read/207840"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00009",
+      "text": "In Uganda, the government in September 2019 approved the establishment of the National Swahili Council. Article 6 (2) of the Constitution of Uganda also spells out that “Swahili shall be the second official language in Uganda to be used in such circumstances as Parliament may by law prescribe.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2149,
+      "body_end": 2444,
+      "source_links": [
+        "https://ulii.org/ug/legislation/consolidated-act/0",
+        "https://www.mediacentre.go.ug/sites/default/files/media/PRESS%2520STATEMENT%2520ON%2520UGANDA%2520NATIONAL%2520KISWAHILI%2520COUNCIL%2520-1.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00010",
+      "text": "In 2018, South Africa, which boasts 11 official languages, formalized Swahili as an optional subject in its curriculum, starting in 2020. In 2019, the Southern Africa Development Community (SADC) adopted Swahili as its fourth official language.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2446,
+      "body_end": 2690,
+      "source_links": [
+        "https://ec.europa.eu/education/knowledge-centre-interpretation/news/sadc-adopts-kiswahili-4th-working-language_en",
+        "https://www.theeastafrican.co.ke/news/ea/Kiswahili-goes-to-school-in-South-Africa/4552908-5414358-13qhl9q/index.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00011",
+      "text": "Swahili invisibility online",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2692,
+      "body_end": 2719,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00012",
+      "text": "Despite Swahili being the most widely spoken African language, with approximately 150 million speakers – mostly in East Africa, the Great Lakes region, southern Somalia, and some parts of Southern Africa, its visibility online is dismal.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2721,
+      "body_end": 2958,
+      "source_links": [
+        "https://www.marstranslation.com/blog/10-most-spoken-languages-in-africa"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00013",
+      "text": "John Walubengo, a lecturer at the Multimedia University of Kenya, states in an op-ed with the Nation, a Kenyan daily, that the absence of online linguistic and cultural diversity creates “a society with a ‘tunnel-vision’ view of the world.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2960,
+      "body_end": 3200,
+      "source_links": [
+        "https://www.nation.co.ke/oped/blogs/dot9/walubengo/2274560-3938472-view-asAMP-l16pa3/index.html?__twitter_impression=true"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00014",
+      "text": "Walubengo predicts that most indigenous cultures end up surrendering “their identities to the ‘English way’ of doing things.” This sad reality can only be reversed if indigenous civilizations “fight to retain their identities both online and offline,” he says.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3202,
+      "body_end": 3462,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00015",
+      "text": "But all is not gloom and doom. There are some dedicated organizations at the forefront of promoting and developing Swahili online.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3464,
+      "body_end": 3594,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00016",
+      "text": "The Internet Corporation for Assigned Names and Numbers",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3596,
+      "body_end": 3651,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00017",
+      "text": "(ICANN), a global multi-stakeholder organization that coordinates Internet Domain Name System (DNS), Internet Protocol (IP) addresses and autonomous system numbers, instituted the Internationalized Domain Names (IDNs) that enable people to use domain names in local languages and scripts.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3653,
+      "body_end": 3941,
+      "source_links": [
+        "https://www.icann.org/",
+        "https://www.icann.org/news/blog/collaborating-towards-a-truly-multilingual-internet"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00018",
+      "text": "Ideally, they are formed using characters from different scripts, such as Arabic, Chinese, or Cyrillic. These are then encoded by the Unicode standard and used as allowed by relevant IDN protocols, a set of standards defined by the Internet Architecture Board (IAB), and its subsidiary groups; the Internet Engineering Task Force (IETF) and the Internet Research Task Force (IRTF).",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3943,
+      "body_end": 4324,
+      "source_links": [
+        "http://www.unicode.org/",
+        "https://www.icann.org/resources/pages/rfcs-2012-02-25-en"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00019",
+      "text": "The Universal Acceptance Steering Group (UASG)",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4326,
+      "body_end": 4372,
+      "source_links": [
+        "https://www.icann.org/news/blog/universal-acceptance-steering-group-a-year-of-progress"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00020",
+      "text": "UASG is a community-based team of industry leaders, supported by ICANN, that prepares online communities for the next billion internet users. This is achieved through a process known as Universal Acceptance (UA) that ensures that internet applications and systems treat all top-level domains (TLDs) and emails based on those domains in a consistent manner – including those in non-Latin-based languages and those that are more than three characters long. UA serves digital natives around the world in their local languages and with domain names that better align with their cultural identities. Hence, promoting a multilingual Internet.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4374,
+      "body_end": 5010,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00021",
+      "text": "ICANNWiki",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5012,
+      "body_end": 5021,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00022",
+      "text": "This nonprofit organization provides community-developed wiki on ICANN and Internet Governance, has over time partnered with organizations, educational institutions and individuals in Kenya and Tanzania. This has enabled East Africans to build, translate and add Wiki resources in their own vision, language and perspective.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5023,
+      "body_end": 5347,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00023",
+      "text": "This Swahili initiative — that I have personally been part of — has immensely bridged the information gap on Internet Governance issues by localizing ICANNWiki content to promote local engagement in the target communities.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5349,
+      "body_end": 5571,
+      "source_links": [
+        "https://sw.icannwiki.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00024",
+      "text": "Localization Lab",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5573,
+      "body_end": 5589,
+      "source_links": [
+        "https://www.localizationlab.org/blog/2019/8/5/znwlv5a1ulc9wqy7shw52fh45q8jv7"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00025",
+      "text": "Localization Lab is a global community of volunteer collaborators who support the translation and localization of digital safety tutorials and tools like TOR, Signal, OONI, Psiphon. These technologies address security, privacy and anonymity online by ensuring that indigineous language activists have safe spaces for accessing information online. Localization Lab has translated more than 60 of these safety tools into over 180 different languages and dialects from around the world, among them Swahili.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5591,
+      "body_end": 6094,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00026",
+      "text": "Kondoa Community Network (KCN)",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6096,
+      "body_end": 6126,
+      "source_links": [
+        "http://kcn.or.tz/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00027",
+      "text": "KCN is the first community network to pilot the use of television white space (TVWS), “a wireless technology that employs unused parts of the radio spectrum in the 470 to 790 MHz frequency band” to address internet connectivity in rural Tanzania. KCN trains the rural populace to create and host local content that’s befitting to their context.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6128,
+      "body_end": 6472,
+      "source_links": [
+        "https://www.ofcom.org.uk/consultations-and-statements/category-1/white-space-coexistence"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00028",
+      "text": "Matogoro Jabhera, KCN founder and lecturer at the University of Dodoma, Tanzania, told Global Voices in a Skype call, that he believes that local content provides an incentive for “more [of the] offline population” to get online because they can relate with “their local news […] compared to the current situation where most contents are in the English language.”",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6474,
+      "body_end": 6837,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00029",
+      "text": "The ‘next billion’ multilingual users on the internet",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6839,
+      "body_end": 6892,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00030",
+      "text": "The world anticipates connecting “the next billion users of the internet” and 17 million of these users are projected to get connected online using language as their digital identity.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6894,
+      "body_end": 7077,
+      "source_links": [
+        "http://site.ieee.org/indiacouncil/files/2018/11/p30-p31.pdf",
+        "https://qz.com/954543/17-million-people-have-no-reason-to-join-the-internet-because-its-dominated-by-english/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00031",
+      "text": "Therefore, a lack of sufficient local content could have adverse effects as far as digital inclusion. This will outrightly affect digital rights – largely, internet access, right to access information online, and the right to use their own indigenous language to create, share and disseminate information and knowledge through the internet.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 7079,
+      "body_end": 7419,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00032",
+      "text": "It is thus vital to put in place formidable action plans that will foster the development of ICT applications and services, as well as the use of local languages, to guarantee digital inclusion for all.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 7421,
+      "body_end": 7623,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00033",
+      "text": "This, complemented by actions such as localization of digital training and learning materials, and rural ICT literacy programs, is likely to spur a digital revolution, hence promoting digital rights of internet users and bridging the digital divide.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 7625,
+      "body_end": 7874,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00034",
+      "text": "Ultimately, this process will hasten the protection, respect and promotion of “all African and minority languages on the internet” as enunciated in the principles of the African Declaration on Internet Rights and Freedom.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 7876,
+      "body_end": 8097,
+      "source_links": [
+        "https://africaninternetrights.org/articles/#internet-access-and-affordability"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708341-b00035",
+      "text": "The Identity Matrix is funded by the Africa Digital Rights Fund of The Collaboration on International ICT Policy for East and Southern Africa (CIPESA).",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 8099,
+      "body_end": 8250,
+      "source_links": [
+        "https://cipesa.org/",
+        "https://cipesa.org/2019/07/inaugural-winners-of-the-africa-digital-rights-fund-announced/"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "72ea46dec66b40709406e1e60fa5412ad6055169c4a7bd29493de61886efedc8",
+  "word_count": 1237,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 8250,
+  "retrieved_at": "2026-11-16T22:24:45.012026+00:00",
+  "raw_html_sha256": "c7a125edef509618fa23c3690f96a0fce4e3f3713ed3f349b2d09bf687794fa2",
+  "resolved_source_url": "https://globalvoices.org/2020/06/02/swahili-identity-language-and-the-internet/",
+  "canonical_url": "https://globalvoices.org/2020/06/02/swahili-identity-language-and-the-internet/",
+  "source_bytes": 197807,
+  "authors": [
+    {
+      "name": "Bonface Witaba",
+      "url": "https://globalvoices.org/author/bonface-witaba/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 708341,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "c7a125edef509618fa23c3690f96a0fce4e3f3713ed3f349b2d09bf687794fa2",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-5770b57aa9386ad2b888",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-06",
+    "eligible_month_documents": 110,
+    "selected_month_documents": 92,
+    "inclusion_probability": 0.8363636363636363,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Bonface Witaba",
+  "body_start": 439,
+  "body_end": 8689,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "844ae2a7d9927ee27216de80b79d91e08315873e41070c80f91eba4bc4f34f94",
+  "text_path": "articles/gv-708341.txt",
+  "metadata_path": "metadata/gv-708341.json",
+  "attribution": "This story by Bonface Witaba originally appeared on Global Voices. https://globalvoices.org/2020/06/02/swahili-identity-language-and-the-internet/",
+  "content_sha256": "2481762701ed0f55b42e686d12515981b3f39578b2439ece30f2a92f7976ec9c",
+  "source_sha256": "c7a125edef509618fa23c3690f96a0fce4e3f3713ed3f349b2d09bf687794fa2",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

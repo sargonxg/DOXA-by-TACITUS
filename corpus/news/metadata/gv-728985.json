@@ -1,0 +1,372 @@
+{
+  "id": "gv-728985",
+  "publisher_id": 728985,
+  "source_id": "globalvoices:728985",
+  "source_url": "https://globalvoices.org/2021/02/17/serbia-expels-us-neo-nazi-after-investigative-website-bellingcat-outed-his-location/",
+  "title": "Serbia expels US neo-Nazi after investigative website Bellingcat outed his location",
+  "published_at": "2021-02-17T18:17:11Z",
+  "modified_at": "2021-02-18T15:27:29Z",
+  "api_author_id": 481,
+  "api_content_sha256": "ab053542059301961826c87418fa0b7c080ae95b388016f0129c10a742fa89a7",
+  "api_response_sha256": "77986401a5e819891872a9bdf1c0b30de63431aaa5322b33afb4833ff0dba79d",
+  "api_retrieved_at": "2026-11-16T22:20:32.943313+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 60,
+      "count": 611,
+      "name": "Bosnia and Herzegovina",
+      "slug": "bosnia-herzegovina",
+      "parent": 57
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 65,
+      "count": 729,
+      "name": "Hungary",
+      "slug": "hungary",
+      "parent": 57
+    },
+    {
+      "id": 1352,
+      "count": 3301,
+      "name": "North America",
+      "slug": "north-america",
+      "parent": 219
+    },
+    {
+      "id": 293,
+      "count": 1214,
+      "name": "Serbia",
+      "slug": "serbia",
+      "parent": 57
+    },
+    {
+      "id": 339,
+      "count": 321,
+      "name": "Serbian",
+      "slug": "serbian",
+      "parent": 317
+    },
+    {
+      "id": 186,
+      "count": 3578,
+      "name": "U.S.A.",
+      "slug": "usa",
+      "parent": 1352
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-728985-b00001",
+      "text": "Serbia has expelled Robert Rundo, the “American neo-Nazi and founder of the notorious right-wing extremist Rise Above Movement,” the Serbian daily Blic reported on February 11.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 176,
+      "source_links": [
+        "https://www.blic.rs/vesti/hronika/saznajemo-americki-neonacista-i-osnivac-zloglasnog-ekstremnog-pokreta-proteran-iz/zelg118"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00002",
+      "text": "According to unofficial information published in the Blic article, Serbian police escorted Rundo to the Trbušnica-Šepak border pass, which connects Serbia to Bosnia and Herzegovina, on the evening of February 10.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 178,
+      "body_end": 390,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00003",
+      "text": "Last November, the investigative reporting platform Bellingcat alerted the public to Rundo's presence in Serbia, drawing attention to the videos he'd been publishing from the country. These included a clip in which the 30-year-old native of Queens, New York, brags about helping local neo-Nazis restore Serbian nationalist graffiti that had been defaced days before by local anti-fascist activists.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 392,
+      "body_end": 790,
+      "source_links": [
+        "https://www.bellingcat.com/news/2020/11/18/an-american-white-supremacists-new-home-in-serbia/",
+        "https://www.facebook.com/103876991532126/posts/105060828080409/?vh=e&extid=0&d=n"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00004",
+      "text": "In recent years, exponents of extreme right-wing nationalist and populist ideologies from the Balkans, which promote forms of racism compatible with American white supremacy, have been trying to cultivate ties and cooperation with the U.S. alt-right movement.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 792,
+      "body_end": 1051,
+      "source_links": [
+        "https://globalvoices.org/2016/11/10/nationalists-and-populists-in-serbia-and-macedonia-celebrate-trumps-victory/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00005",
+      "text": "Most Serbian media that followed up on the Blic report featured excerpts from the Bellingcat exposé, which quoted Rundo's own video in which he says, “So we’re out here in Belgrade, you know, cleaning up the neighborhood …” as he joins local neo-Nazis in restoring hate speech graffiti that had been previously defaced by anti-fascists.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1053,
+      "body_end": 1389,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00006",
+      "text": "One of the media outlets, the tabloid website Mondo, interchanged the terms “neo-Nazi and “white supremacist,” and described Rundo as a “Super Nazi.”",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1391,
+      "body_end": 1540,
+      "source_links": [
+        "https://mondo.rs/Info/Crna-hronika/a1434938/robert-rundo-americki-neonacista-proteran-iz-srbije.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00007",
+      "text": "Bellingcat's analysis of the videos posted by Rundo indicated that he has been living in Serbia since at least March 2020, while also traveling around Central and Eastern Europe, including participating in a march in Ukraine and speaking at a neo-Nazi rally in Hungary.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1542,
+      "body_end": 1811,
+      "source_links": [
+        "https://twitter.com/__investigate__/status/1227666102383239170",
+        "https://www.rferl.org/a/azov-ukraine-s-most-prominent-ultranationalist-group-sets-its-sights-on-u-s-europe/29600564.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00008",
+      "text": "Rundo had opened a clothing company called Serbon in Serbia, featuring products with white supremacist symbols and “anti-antifa” slogans. The Serbon YouTube channel features rap videos in Serbian glorifying street fighting. Founding the company allegedly enabled Rundo to acquire an annually renewable permit for temporary stay in the country as a foreign investor.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1813,
+      "body_end": 2178,
+      "source_links": [
+        "https://www.instagram.com/serbon_shop/?hl=en",
+        "https://www.youtube.com/channel/UCNL8ERGcWAkeHbp8kUhB1GA/videos"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00009",
+      "text": "Rundo is a convicted felon who served time in his home country for a gang attack on a 13-year-old boy, and whose racist exploits have been covered by the Daily Beast, PBS, and the New York Review of Books.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2180,
+      "body_end": 2385,
+      "source_links": [
+        "https://www.nybooks.com/daily/2020/10/22/a-portrait-of-the-fascist-as-a-young-man/",
+        "https://www.pbs.org/wgbh/frontline/article/he-is-a-member-of-a-violent-white-supremacist-group-so-why-is-he-working-for-a-defense-contractor-with-a-security-clearance/",
+        "https://www.thedailybeast.com/robert-rundo-other-neo-nazi-gang-members-indicted-for-conspiracy-rioting"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00010",
+      "text": "He is not technically a wanted person in the U.S. at this moment. In 2019, a federal judge released Rundo after he dismissed charges against three Rise Above Movement (RAM) gang members indicted for their roles in violent rallies across California in 2017, saying the federal statute used to prosecute them was unconstitutional.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2387,
+      "body_end": 2715,
+      "source_links": [
+        "https://www.pbs.org/wgbh/frontline/article/4-members-of-violent-white-supremacist-group-face-riot-charges-federal-authorities-say/",
+        "https://www.pbs.org/wgbh/frontline/article/federal-judge-dismisses-charges-against-3-white-supremacists/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00011",
+      "text": "In November 2020, the United States appealed the district court's dismissal of an indictment charging Rundo and three other individuals with conspiracy to violate the Anti-Riot Act in connection with their activities as part of the RAM (19-50189 USA v. Robert Rundo).",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2717,
+      "body_end": 2984,
+      "source_links": [
+        "https://www.ca9.uscourts.gov/media/view.php?pk_id=0000036016",
+        "https://www.ca9.uscourts.gov/media/view_video.php?pk_vid=0000018308"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00012",
+      "text": "RAM is an alt-right gang from Southern California that uses martial arts to recruit young people and has been described as “a loose collective of violent neo-Nazis and fascists,” who are white nationalist, white supremacist, and far-right.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2986,
+      "body_end": 3225,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Rise_Above_Movement",
+        "https://www.counterextremism.com/supremacy/rise-above-movement",
+        "https://www.theguardian.com/sport/2018/sep/11/far-right-fight-clubs-mma-white-nationalists"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00013",
+      "text": "According to a 2020 report on right-wing extremism by Serbia's Helsinki Committee for Human Rights, neo-Nazis in Serbia have been focusing their recruiting efforts on children, drafting their “stormtroopers” from the ranks of boys attending middle and high school.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3227,
+      "body_end": 3491,
+      "source_links": [
+        "https://www.helsinki.org.rs/serbian/opublikacije_t03.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00014",
+      "text": "“Recruitment most often takes place when kids reach high school age. Formerly, the top entry points to fascist ideologies were the subcultures of Nazi skinheads or ultras—hooligan groups presented as fans of major football clubs. Today the recruitment mostly takes place online, even though a minor part of the new fascists still come in touch with fascism through the subculture movements,” explained the sociologist Miloš Perović in a statement for Nova.rs TV.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3493,
+      "body_end": 3955,
+      "source_links": [
+        "https://nova.rs/vesti/hronika/desnicari-jurisnike-regrutuju-vec-u-osnovnoj-skoli/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00015",
+      "text": "Perović added that the increased recruitment of young people in these organizations is not an exclusive problem for Serbia, but part of a global movement that espouses a very clear strategy, based on the work of former Donald Trump advisor Steve Bannon.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3957,
+      "body_end": 4210,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Steve_Bannon"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728985-b00016",
+      "text": "The website of the Ministry of Interior of the Republic of Serbia doesn't provide any information on Rundo's expulsion from the country.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4212,
+      "body_end": 4348,
+      "source_links": [
+        "http://www.mup.gov.rs/wps/portal/sr/search/!ut/p/z1/pVPbcpswEP2WTsePIEXYIPdNdlwS39JAUke8MFxkTAsSFsIk_foK3Ic4dZPxlGFGSOzu2bPnCATgCQQ8OuRZpHLBo0LvaWCHd-OVfeVCtLibLKaQ2BMPTvwHBDEC30EAgoSrSu0ArZq4yJOw0Nl8AKO07BbJ6qZQdRdXi0YmbCq4YlytRcpOq7v2DEFy74yvFzNs4RvY5VRJngJ6FTtJisfIsJETGcMUYyOCODHQKEXbGDspHPXRNYtksgv3DZMvgHoNT0V3rL_738_duulR4T8eogPfp7zpKn1Q4bTG38TmIMgKER8nTHhs4QwEkm2ZZNJspD7eKVXVXwZwANu2NTMhsoKZiSgH8FzKTtQKPJ1GAr-WoeeHn5eR4oBq1s4rWstr3ZLt2f7a9S14q2kdctaCRy5kqdvyL5y95vQGAbu3M43guHPXXSOIrHMIbVKaR83MP5rtm1e6XSb-ZroK7x9nnm7kYqfR3iK0Nwg956K37IbkKyQrjfxNj8_F9n_Ob_6R67To-Y_9PiD6unW0nrXe7963qiyxdXxfjJ_blRrFQzo_tO3DTYlbMjH05teSfPoNWUnLgg!!/dz/d5/L2dBISEvZ0FBIS9nQSEh/?search_query=Rundo"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "94e102307d89c88da9f941fb5274003e40c40ab8a5cad9ba639bf07809134847",
+  "word_count": 673,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 4348,
+  "retrieved_at": "2026-11-16T22:29:31.474237+00:00",
+  "raw_html_sha256": "bae2929ec40bd2bb58a24dfde04afc0d5b550d55fed1913a2b7c26c58cbc07ac",
+  "resolved_source_url": "https://globalvoices.org/2021/02/17/serbia-expels-us-neo-nazi-after-investigative-website-bellingcat-outed-his-location/",
+  "canonical_url": "https://globalvoices.org/2021/02/17/serbia-expels-us-neo-nazi-after-investigative-website-bellingcat-outed-his-location/",
+  "source_bytes": 189093,
+  "authors": [
+    {
+      "name": "Filip Stojanovski",
+      "url": "https://globalvoices.org/author/filip-stojanovski/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 728985,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "bae2929ec40bd2bb58a24dfde04afc0d5b550d55fed1913a2b7c26c58cbc07ac",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-e3cea11456d932aef2ad",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-02",
+    "eligible_month_documents": 78,
+    "selected_month_documents": 65,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Filip Stojanovski",
+  "body_start": 507,
+  "body_end": 4855,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "11b9bb8458b1dff59ea0921f86695c56dca238b2d46f478d2228e41c7624bd81",
+  "text_path": "articles/gv-728985.txt",
+  "metadata_path": "metadata/gv-728985.json",
+  "attribution": "This story by Filip Stojanovski originally appeared on Global Voices. https://globalvoices.org/2021/02/17/serbia-expels-us-neo-nazi-after-investigative-website-bellingcat-outed-his-location/",
+  "content_sha256": "d637d0c67b7d0d85de7f2427a7d4e1eae2955445404cd6ea6ec436f51ae78387",
+  "source_sha256": "bae2929ec40bd2bb58a24dfde04afc0d5b550d55fed1913a2b7c26c58cbc07ac",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

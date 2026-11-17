@@ -1,0 +1,405 @@
+{
+  "id": "gv-829533",
+  "publisher_id": 829533,
+  "source_id": "globalvoices:829533",
+  "source_url": "https://globalvoices.org/2025/03/08/a-group-of-nigerian-linguists-are-training-ai-tools-on-yoruba-language-dialects/",
+  "title": "A group of Nigerian linguists are training AI tools on Yoruba language dialects",
+  "published_at": "2025-03-08T07:00:51Z",
+  "modified_at": "2025-03-05T07:13:39Z",
+  "api_author_id": 3257,
+  "api_content_sha256": "e5a8cd64807c38cac8c5dc2eabff723cd0ce8180d8272f52ac0d07aca0490e9d",
+  "api_response_sha256": "b7ae78070ece6a1bed77a7fcd8b44d3db670b34ae8e350336552b24cdd2c52ee",
+  "api_retrieved_at": "2026-11-16T22:21:09.980043+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 296,
+      "count": 2217,
+      "name": "Language",
+      "slug": "language",
+      "parent": 238
+    },
+    {
+      "id": 131,
+      "count": 1641,
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-829533-b00001",
+      "text": "As more and more key aspects of daily life migrate online, language inclusion can be a key component of ensuring equal access for all in digital spaces. However, many African languages lack the resources to develop language technologies and fully migrate online. This typically does not affect the most spoken dialects of these languages, which are often used as the standard dialect, but often affect less common language dialects.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 432,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-829533-b00002",
+      "text": "Most efforts to create resources for these low-resourced languages are concentrated on the standard dialects, while many regional dialects that are spoken by millions are neglected.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 434,
+      "body_end": 615,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-829533-b00003",
+      "text": "The Yoruba language is spoken by 47 million speakers in the world. It is mostly spoken in Nigeria, Benin, and Togo, with smaller migrated communities in Côte d'Ivoire, Sierra Leone and The Gambia. Although the standard dialect of this language has received considerable attention from Natural Language Processing (NLP) researchers, no resources have been developed for its non-standard dialects. To address this problem, a group of linguists have developed YORULECT, a high-quality, contemporary Yoruba speech and text data parallel corpus for four Yoruba regional dialects.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 617,
+      "body_end": 1191,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/C%C3%B4te_d%27Ivoire",
+        "https://en.wikipedia.org/wiki/Sierra_Leone",
+        "https://en.wikipedia.org/wiki/Yoruba_language",
+        "https://en.wikipedia.org/wiki/Yoruba_language#:~:text=Yoruba%20speakers%20number%20roughly%2047,Sierra%20Leone%20and%20The%20Gambia."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-829533-b00004",
+      "text": "Speaking to Global Voices via WhatsApp, Aremu Anuoluwapo, a computational linguist who is currently pursuing a master's degree in computational modelling of languages and cognition at the University of Trento, Italy, shared the motivation behind this project.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1193,
+      "body_end": 1452,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/University_of_Trento"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-829533-b00005",
+      "text": "Global Voices (GV): Can you tell us a bit about your background and what led you into the field of computational linguistics?",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1454,
+      "body_end": 1579,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-829533-b00006",
+      "text": "> Aremu Anuoluwapo (AA): I am a linguist by training. I studied Linguistics and African Studies at the University of Lagos. I was introduced to computational linguistics by a mentor, Kola Tunbosun, during my undergraduate years in the university. Then, I worked on some projects that are related to data collection, cleaning and annotation projects. I started gaining experience and collaborating with professionals from multinational companies such as Google, Microsoft, etc, in my third year in the university. My interest in using computational tools to analyse, predict, or transform languages grew from there.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1581,
+      "body_end": 2195,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/University_of_Lagos"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-829533-b00007",
+      "text": "GV: Can you tell us what motivated the creation of YORULECT?",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2197,
+      "body_end": 2257,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-829533-b00008",
+      "text": "> AA: Oreva Ahia, my colleague who is a PhD student in Computer Science at the University of Washington, United States, told me about an idea she has on dialectology. This reminded me of a course I took, on Yoruba and its dialectology, during the third year of my undergraduate studies. We learnt about some scholars who have done some works on dialects such as Ẹ̀gbá, Èkó, Ọ̀yọ́, etc, and how the standard Yoruba is primarily drawn from the Ọ̀yọ́ dialect. I found the course interesting and had always wanted to do something on dialectology.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2259,
+      "body_end": 2801,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-829533-b00009",
+      "text": "> From studying that course, I realised that the word for ‘stool’ differs between the dialect spoken in my hometown in Yorubaland and standard Yoruba. There are other communities that also have distinctive dialectological names for several items. I was curious about this.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2803,
+      "body_end": 3075,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-829533-b00010",
+      "text": "> Later, while attending a conference in Spain, I travelled to Paris to discuss the idea with Oreva. We designed the framework to execute the project. When I returned to Nigeria, I travelled to specific communities where the dialects we decided to work on are spoken. Deciding on the dialects to work on was a bit technical because there is a division in Yoruba dialectology. There is Southwestern Yoruba, Southeastearn Yoruba, Northeast Yoruba dialects, etc. We wanted to touch all these dialectological divisions.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3077,
+      "body_end": 3592,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-829533-b00011",
+      "text": "> One of the reasons we decided to do this project is because of the growing application of AI and machine learning in the tools we use today. We wanted to ensure that low-resourced dialects of low-resourced languages are also represented in technology.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3594,
+      "body_end": 3847,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-829533-b00012",
+      "text": "GV: Could you describe the specific dialects you are working with and explain why these were chosen as a focus? What are some of their unique linguistic features that pose challenges for NLP systems?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3849,
+      "body_end": 4048,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-829533-b00013",
+      "text": "> AA: The dialect we worked on are Ìjẹ̀bú, Ifè, Ilaje and Standard Yoruba. We chose these dialects because they belong to different dialectological divisions of the Yoruba language. We also wanted to have a good representation of these languages in technology. Another reason is because we wanted to do a comparative analysis of how existing NLP systems understand the dialects of the languages before finetuning them. We tested it on Automatic Speech Recognition (ASR) and Machine Translation (MT) and the performance was bad. We also did some finetuning to augment the performance before it became a bit better.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4050,
+      "body_end": 4663,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Machine_translation",
+        "https://huggingface.co/tasks/automatic-speech-recognition"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-829533-b00014",
+      "text": "> Some of the linguistic peculiarities we discovered is that there are some letters existing in the dialects that are not in Standard Yoruba alphabets. The Ilaje dialect is a good example of dialect with some different letters and sentence construction. The language structure is similar across all the dialects, although there are some different syntactic arrangements. Our findings show that Ifè dialect has the highest degree of similarity with Standard Yoruba, while Ilaje has the lowest degree of similarity with Standard Yorùbá. We are planning to do more work to expand the research.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4665,
+      "body_end": 5255,
+      "source_links": [
+        "https://www.omniglot.com/writing/yoruba.htm"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-829533-b00015",
+      "text": "GV: Many African languages are primarily spoken. How do you approach the challenge of collecting and curating language data for Yoruba dialects that have limited written resources or standardized orthography?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5257,
+      "body_end": 5465,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-829533-b00016",
+      "text": "> AA: This was a tough challenge for us. Some dialects do not still have a big population of people who can write those dialects. We were able to surmount the challenges because some of these dialects have scholars who have worked on them.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5467,
+      "body_end": 5706,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-829533-b00017",
+      "text": "> I always try to tell linguists who want to do this kind of NLP project to collect the speech data first and recruit the native speakers to transcribe them. Doing this will help you get the raw form of the language. It will help you see the many phonological processes that exist in the language.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5708,
+      "body_end": 6005,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-829533-b00018",
+      "text": "GV: What methods do you use to ensure data quality and authenticity?",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6007,
+      "body_end": 6075,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-829533-b00019",
+      "text": "> AA: We work with the native speakers to collect the data. For the sake of data quality and authenticity, we recruited human evaluators, who are also native speakers, to rate the performance of the ASR systems by giving feedback on the accuracy and quality of their transcription.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6077,
+      "body_end": 6358,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-829533-b00020",
+      "text": "GV: What other challenges did you face when developing YORULECT?",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6360,
+      "body_end": 6424,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-829533-b00021",
+      "text": "> AA: Training the models was challenging. We had to fine-tune them. The linguistic distinctiveness poses a major challenge because the models have not been previously exposed to that kind of data. Some of the dialects did well, while others didn't. This could be because of syntactic arrangement and letter representation.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6426,
+      "body_end": 6749,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-829533-b00022",
+      "text": "GV: What are your long-term goals for this work?",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6751,
+      "body_end": 6799,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-829533-b00023",
+      "text": "> AA: The long-term goal is to strike a new direction in low-resource language research. When the NLP community is discussing low-resourced languages, it is usually about the standard dialect of the languages. They do not consider other dialects. As long as these dialects are still spoken, why not also build tools for the communities that are speaking them? Once the conversation starts people start doing dialectology research on specific dialects of language",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6801,
+      "body_end": 7263,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "2c9c6420070e552f0cd8de092e9dfe913b1522bb0469bf1309546244771cd421",
+  "word_count": 1167,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7263,
+  "retrieved_at": "2026-11-16T22:45:46.947915+00:00",
+  "raw_html_sha256": "1ee133024bf8a39bab9ed4043f738171fc5660048dbe8b42a27c283ba4e658c4",
+  "resolved_source_url": "https://globalvoices.org/2025/03/08/a-group-of-nigerian-linguists-are-training-ai-tools-on-yoruba-language-dialects/",
+  "canonical_url": "https://globalvoices.org/2025/03/08/a-group-of-nigerian-linguists-are-training-ai-tools-on-yoruba-language-dialects/",
+  "source_bytes": 190006,
+  "authors": [
+    {
+      "name": "Abdulrosheed Fadipe",
+      "url": "https://globalvoices.org/author/abdulrosheed-fadipe/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 829533,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "1ee133024bf8a39bab9ed4043f738171fc5660048dbe8b42a27c283ba4e658c4",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-9513a1a5fd9edc6e9d98",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-03",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Abdulrosheed Fadipe",
+  "body_start": 501,
+  "body_end": 7764,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "67890c3c835e55953d9352bd3677ea5223b850f3cd8af1bc3059aa9a15cf7be9",
+  "text_path": "articles/gv-829533.txt",
+  "metadata_path": "metadata/gv-829533.json",
+  "attribution": "This story by Abdulrosheed Fadipe originally appeared on Global Voices. https://globalvoices.org/2025/03/08/a-group-of-nigerian-linguists-are-training-ai-tools-on-yoruba-language-dialects/",
+  "content_sha256": "849b1d58179fcbf19f4443fb54d3c4e17ec6cbc42c0c8504b431d98d0f32e1bf",
+  "source_sha256": "1ee133024bf8a39bab9ed4043f738171fc5660048dbe8b42a27c283ba4e658c4",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

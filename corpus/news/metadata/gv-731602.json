@@ -1,0 +1,344 @@
+{
+  "id": "gv-731602",
+  "publisher_id": 731602,
+  "source_id": "globalvoices:731602",
+  "source_url": "https://globalvoices.org/2021/03/17/twitter-could-be-fully-blocked-in-russia-within-the-next-month/",
+  "title": "Twitter could be fully blocked in Russia within the next month",
+  "published_at": "2021-03-17T21:22:06Z",
+  "modified_at": "2021-03-19T17:26:08Z",
+  "api_author_id": 1498,
+  "api_content_sha256": "3dce5f3350850a0bdec75d448f669effd88df0d7670cdf7873994b0e82266a56",
+  "api_response_sha256": "c591ed8b34d893450a7ee028fc86046db8a591fa7520310c35490fea352169e4",
+  "api_retrieved_at": "2026-11-16T22:20:33.702775+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-731602-b00001",
+      "text": "The microblogging service Twitter could be fully blocked in Russia within the next month, according to Russian state media and internet regulator Roskomnadzor.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 159,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731602-b00002",
+      "text": "The regulator said on March 16 that the platform continues to ignore its demands to remove allegedly illegal content. If the offending posts remain online, Roskomnadzor indicated it is prepared to fully block the service, making it inaccessible for users in Russia.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 161,
+      "body_end": 426,
+      "source_links": [
+        "https://tass.ru/ekonomika/10914959"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731602-b00003",
+      "text": "Vadim Subbotin, Roskomnadzor's deputy head, told the state news agency TASS that they would take a month to “watch Twitter's reaction to the issue of removing banned information” and would then “make decisions accordingly,” depending on the company's response:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 428,
+      "body_end": 688,
+      "source_links": [
+        "https://tass.ru/ekonomika/10914959"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731602-b00004",
+      "text": "> Если Twitter не исполнит требования Роскомнадзора, требования российского законодательства, соответственно, будем рассматривать вопрос о полной блокировке сервиса на территории России.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 690,
+      "body_end": 876,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731602-b00005",
+      "text": "> If Twitter does not satisfy the demands of Roskomnadzor, and the requirements of Russian legislation, we will, accordingly, consider the question of fully blocking the service on Russian territory.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 878,
+      "body_end": 1077,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731602-b00006",
+      "text": "As reported previously, on March 10 Russian censors began throttling Twitter loading speeds in the country using DPI (deep-packet inspection) equipment that Russian internet service providers are required to install as part of its new “sovereign internet” strategy.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1079,
+      "body_end": 1344,
+      "source_links": [
+        "https://globalvoices.org/2021/03/10/russian-internet-regulator-roskomnadzor-throttles-twitter-loading-speeds/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731602-b00007",
+      "text": "READ MORE: Behold Russia's new ‘sovereign internet’",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1346,
+      "body_end": 1397,
+      "source_links": [
+        "https://globalvoices.org/2019/11/06/behold-russias-new-sovereign-internet/"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731602-b00008",
+      "text": "At the time, Roskomnadzor defended the move as the first warning after multiple requests to take down offensive content, which Twitter is said to have ignored. The platform was also recently issued a fine for failing to remove “calls for participation in unsanctioned mass rallies aimed at minors,” which it has yet to react to.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1399,
+      "body_end": 1727,
+      "source_links": [
+        "https://rkn.gov.ru/news/rsoc/news73464.htm",
+        "https://www.themoscowtimes.com/2021/01/27/russia-to-fine-social-media-giants-for-keeping-up-pro-navalny-videos-a72756"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731602-b00009",
+      "text": "Ironically, digital rights experts point out that a wholesale block of Twitter would likely be easier to implement in Russia than effective throttling of access speeds. Vladislav Zdolnikov, who runs the Telegram channel “IT and SORM,” thinks that Twitter is a fairly safe platform for the state to block as “it has relatively few users in Russia” and could serve as “a scarecrow for Google” and others without causing much public outrage:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1729,
+      "body_end": 2167,
+      "source_links": [
+        "https://t.me/itsorm/2089"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731602-b00010",
+      "text": "> Твиттер будет заблокирован в течение 15 минут с момента принятия решения об этом.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2169,
+      "body_end": 2252,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731602-b00011",
+      "text": "> Телеграм не удалось заблокировать не потому, что РКН криворукие, а потому что он вложил в это огромное количество ресурсов — как финансовых, так и уникальных скиллов.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2254,
+      "body_end": 2422,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731602-b00012",
+      "text": "> Заблокировать сайт не составляет никакой сложности. Если приложение не сопротивляется блокировкам, оно тоже будет заблокировано.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2424,
+      "body_end": 2554,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731602-b00013",
+      "text": "> Twitter will be blocked within 15 minutes of a decision being made about this. They didn't manage to block Telegram not because [Roskomnadzor] is hapless, but because [Telegram] committed a lot of resources–financial ones and unique skills.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2556,
+      "body_end": 2798,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731602-b00014",
+      "text": "> Blocking a website is not that complicated. If an app isn't counteracting the blocks, it will also be blocked.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2800,
+      "body_end": 2912,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731602-b00015",
+      "text": "Other commentators, however, remain skeptical that internet giants such as Google could face similar threats, as they are too important to the RuNet ecosystem. Mariëlle Wijermars, a Dutch researcher studying cybersecurity and digital rights in Russia, thinks that Google's many services, including YouTube, are “too deeply ingrained” in the country's digital economy:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2914,
+      "body_end": 3281,
+      "source_links": [
+        "https://twitter.com/Marielle_W_"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "04f9d5e1aec151b953a3725e8220e3b20ebea4c6436d3f585d54746f34739da5",
+  "word_count": 494,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 3281,
+  "retrieved_at": "2026-11-16T22:29:50.883329+00:00",
+  "raw_html_sha256": "c83277130b17a42b3ebd9ea33da34fd12428e6078aec806afd2a70dc96a29d24",
+  "resolved_source_url": "https://globalvoices.org/2021/03/17/twitter-could-be-fully-blocked-in-russia-within-the-next-month/",
+  "canonical_url": "https://globalvoices.org/2021/03/17/twitter-could-be-fully-blocked-in-russia-within-the-next-month/",
+  "source_bytes": 186870,
+  "authors": [
+    {
+      "name": "Tanya Lokot",
+      "url": "https://globalvoices.org/author/tetyana-lokot/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 731602,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "c83277130b17a42b3ebd9ea33da34fd12428e6078aec806afd2a70dc96a29d24",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-7289917e0841f2baad85",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-03",
+    "eligible_month_documents": 91,
+    "selected_month_documents": 76,
+    "inclusion_probability": 0.8351648351648352,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Tanya Lokot",
+  "body_start": 459,
+  "body_end": 3740,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "d26ba4491d1fdd08a1ad1812c578c2ed103a76dadd8dd0ed6806c1fa4c4e0eb7",
+  "text_path": "articles/gv-731602.txt",
+  "metadata_path": "metadata/gv-731602.json",
+  "attribution": "This story by Tanya Lokot originally appeared on Global Voices. https://globalvoices.org/2021/03/17/twitter-could-be-fully-blocked-in-russia-within-the-next-month/",
+  "content_sha256": "daeab0a2a5a88dc942e22f1f04983066c318c76e1bf811447b085739461c1888",
+  "source_sha256": "c83277130b17a42b3ebd9ea33da34fd12428e6078aec806afd2a70dc96a29d24",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

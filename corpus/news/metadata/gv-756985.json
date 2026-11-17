@@ -1,0 +1,402 @@
+{
+  "id": "gv-756985",
+  "publisher_id": 756985,
+  "source_id": "globalvoices:756985",
+  "source_url": "https://globalvoices.org/2022/02/24/russian-discourse-about-the-war-in-ukraine-is-not-monolithic/",
+  "title": "Russian discourse about the war in Ukraine is not monolithic",
+  "published_at": "2022-02-24T16:59:48Z",
+  "modified_at": "2022-02-25T09:33:06Z",
+  "api_author_id": 1749,
+  "api_content_sha256": "4639c142e009b445c596d4b1e481c99bb5209b899fc269c6d2e4a68f9efc943c",
+  "api_response_sha256": "1c1ca0bc12b9cd2dbfa64c668911b057f3193583dcca9487ed40436dfe167757",
+  "api_retrieved_at": "2026-11-16T22:20:42.191404+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-756985-b00001",
+      "text": "On February 24, Russian forces attacked and bombed military infrastructure across Ukraine, thus starting an invasion of their neighbour.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 136,
+      "source_links": [
+        "https://globalvoices.org/special/russia-invades-ukraine/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00002",
+      "text": "Russian president Vladimir Putin’s voice might seem to dominate and represent Russian discourse. But widespread propaganda, caution about sharing views publicly or responding to pollsters, and engrained mistrust of the state means that it is difficult to make definitive statements about the actual views of Russian citizens. While not visible in Russian mass media, there is evidence that the views of some Russians about Russia’s military attack are more diverse and nuanced than Putin would have the world believe.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 138,
+      "body_end": 655,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00003",
+      "text": "Putin stated his views and his specific interpretation of Russian-Ukrainian relations over the past 13 centuries, broadcast in video on February 21. He also made clear that his immediate entourage, including members of the Russian Security Council, would not be allowed to disagree with the smallest detail of his views.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 657,
+      "body_end": 977,
+      "source_links": [
+        "https://www.youtube.com/watch?v=uBxKkF9QYr4&t=660s"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00004",
+      "text": "But it's it not evident to what extent he is right when, as he concluded in his speech, he states that he is:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 979,
+      "body_end": 1088,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00005",
+      "text": "> Уверен в поддержке граждан России и всех патриотических сил.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1090,
+      "body_end": 1152,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-756985-b00006",
+      "text": "> Convinced of the support of Russian citizens and all patriotic forces.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1154,
+      "body_end": 1226,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-756985-b00007",
+      "text": "It is important to understand that in today’s Russia, public space and the media are severely censored and monitored. The Russian legislation carries severe penalties on public expressions of criticism, including on social media. It is also a criminal offense to say in public that Crimea is not part of the Russian Federation.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1228,
+      "body_end": 1555,
+      "source_links": [
+        "https://globalvoices.org/2021/09/16/ahead-of-september-elections-russia-tightens-grip-on-remaining-online-freedoms/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00008",
+      "text": "New regulations are now in place to reinforce this control, including the obligation for Russian journalists to quote only official sources of information provided by the Russian government. Roskomnadzor, the Russian body overseeing the media and internet, has just published the details of this order.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1557,
+      "body_end": 1859,
+      "source_links": [
+        "https://rkn.gov.ru/news/rsoc/news74084.htm",
+        "https://www.themoscowtimes.com/2022/02/24/use-only-official-sources-about-ukraine-war-russian-media-watchdog-tells-journalists-a76567"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00009",
+      "text": "And there is some data on the Russian population's disagreement with Putin's claims. Despite the real dangers of holding dissenting views, a recent public opinion survey conducted by the independent Levada Center indicated that one-third of Russians say they oppose or do not agree with Putin’s position on Ukraine.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1861,
+      "body_end": 2176,
+      "source_links": [
+        "https://www.levada.ru/2022/02/24/putin-uveren-chto-grazhdane-rossii-podderzhivayut-priznanie-dnr-i-lnr-no-tak-li-eto-na-samom-dele-intervyu-denisa-volkova/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00010",
+      "text": "Several factors explain why many were already against any military option. Many people in Russia have Ukrainian roots, close family in Ukraine, grew up or studied in Ukraine. Many also remember the deaths of Soviet soldiers as a result of the Soviet invasion of Afghanistan from 1979 to 1989, in which about 15,000 Soviet troops died, and many more were mentally and physically traumatized.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2178,
+      "body_end": 2568,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Soviet%E2%80%93Afghan_War",
+        "https://en.wikipedia.org/wiki/Soviet%E2%80%93Afghan_War#Soviet_personnel_strengths_and_casualties"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00011",
+      "text": "On February 24, the first day of Russia's military attack on Ukraine, a number of public intellectuals signed a petition against the war. Given that internet access is partially controlled and censored, the link is not always accessible, so a screenshot is provided below:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2570,
+      "body_end": 2842,
+      "source_links": [
+        "https://trv-science.ru/2022/02/we-are-against-war/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00012",
+      "text": "The text mainly says: “We, Russian scientists and science journalists, state the fact we are categorically opposed to the military operations initiated by the armed forces of our country against Ukraine.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2844,
+      "body_end": 3048,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00013",
+      "text": "And here is a list that continues to grow of some of those who signed it, representing different areas of public artistic, scientific. academic life:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3050,
+      "body_end": 3199,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00014",
+      "text": "Some Russian show business and sports celebrities have also expressed their opposition to the war, including those considered to be close to the Kremlin:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3201,
+      "body_end": 3354,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00015",
+      "text": "https://orda.kz/desjatki-rossijskih-zvjozd-vystupili-protiv-vojny-s-ukrainoj/?fbclid=IwAR1naOPFQaH_MWy_qW7-QmMSuInrljDl3IcK6CQZnv4MBPkGlbXuM88qqfo",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3356,
+      "body_end": 3502,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00016",
+      "text": "A petition in Russian on the advocacy site Change.org has already gathered over 250,000 signatures, mostly in Russian, expressing a firm no to the war.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3504,
+      "body_end": 3655,
+      "source_links": [
+        "https://www.change.org/p/%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D0%B2%D0%BE%D0%B9%D0%BD%D1%83-%D1%81-%D1%83%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BE%D0%B9-2ce0a2d7-b957-4e23-981a-c67a26e2b0b7"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00017",
+      "text": "The independent Russian-language media outlet Meduza, which is based in Latvia, already reports that people demonstrating publicly across Russia against the war with Ukraine, usually as individuals or in small groups, are being detained.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3657,
+      "body_end": 3894,
+      "source_links": [
+        "https://meduza.io/news/2022/02/24/v-rossii-nachali-zaderzhivat-uchastnikov-antivoennyh-piketov"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00018",
+      "text": "The gap with the Kremlin’s current discourse is likely to widen in the coming days as the first coffins with Russian soldiers return home.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3896,
+      "body_end": 4034,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-756985-b00019",
+      "text": "For more information about this topic, see our special coverage Russia invades Ukraine.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4036,
+      "body_end": 4123,
+      "source_links": [
+        "https://globalvoices.org/special/russia-invades-ukraine/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "d1e69b6296e0112044e3a3e8ed54e32d7b06b5abafc49ca8e174fda47c874556",
+  "word_count": 625,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 3,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 4123,
+  "retrieved_at": "2026-11-16T22:33:48.886580+00:00",
+  "raw_html_sha256": "2dca8caf59ed624578692433ee1e204283d5f6a172c67bb7a4be5753cbd46e38",
+  "resolved_source_url": "https://globalvoices.org/2022/02/24/russian-discourse-about-the-war-in-ukraine-is-not-monolithic/",
+  "canonical_url": "https://globalvoices.org/2022/02/24/russian-discourse-about-the-war-in-ukraine-is-not-monolithic/",
+  "source_bytes": 189236,
+  "authors": [
+    {
+      "name": "Filip Noubel",
+      "url": "https://globalvoices.org/author/filip-noubel/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 756985,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "2dca8caf59ed624578692433ee1e204283d5f6a172c67bb7a4be5753cbd46e38",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-c1ffb355f7381b408bb7",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-02",
+    "eligible_month_documents": 73,
+    "selected_month_documents": 61,
+    "inclusion_probability": 0.8356164383561644,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Filip Noubel",
+  "body_start": 456,
+  "body_end": 4579,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "6e812ee820474dbdd4c40d325863476d39ec1dcbdd0dd946ca0880f01f6435d7",
+  "text_path": "articles/gv-756985.txt",
+  "metadata_path": "metadata/gv-756985.json",
+  "attribution": "This story by Filip Noubel originally appeared on Global Voices. https://globalvoices.org/2022/02/24/russian-discourse-about-the-war-in-ukraine-is-not-monolithic/",
+  "content_sha256": "e07dd5c7f4699363548ba18ce5e1523c87b4c7dfe258a9a6ab95691947c88240",
+  "source_sha256": "2dca8caf59ed624578692433ee1e204283d5f6a172c67bb7a4be5753cbd46e38",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

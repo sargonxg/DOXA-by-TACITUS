@@ -1,0 +1,616 @@
+{
+  "id": "gv-708221",
+  "publisher_id": 708221,
+  "source_id": "globalvoices:708221",
+  "source_url": "https://globalvoices.org/2020/06/21/sri-lanka-prepares-for-twice-delayed-poll-amid-militarized-covid-19-response/",
+  "title": "Sri Lanka prepares for twice-delayed poll amid militarized COVID-19 response",
+  "published_at": "2020-06-21T11:45:54Z",
+  "modified_at": "2020-06-22T08:38:39Z",
+  "api_author_id": 59,
+  "api_content_sha256": "d2d30442bb2f8876f3e1c4388cdcbfc4f5e2a2e29da34b65cc0f7ce546cd0e7f",
+  "api_response_sha256": "41b5e94653195b7cb23528ff052c85743f9b1c74605492508b001629e4b0b418",
+  "api_retrieved_at": "2026-11-16T22:20:27.242881+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 43,
+      "count": 1352,
+      "name": "Sri Lanka",
+      "slug": "sri-lanka",
+      "parent": 31
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-708221-b00001",
+      "text": "Sri Lanka is set to hold its parliamentary elections on August 5 which was delayed by more than three months due to the Coronavirus crisis.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 139,
+      "source_links": [
+        "https://www.aljazeera.com/news/2020/06/sri-lanka-hold-coronavirus-delayed-election-august-5-200611031950175.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00002",
+      "text": "The election was originally scheduled on April 25 but it was postponed to June 20 because of COVID-19 health concerns. The June election was postponed again for the same reason.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 141,
+      "body_end": 318,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/2020_Sri_Lankan_parliamentary_election"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00003",
+      "text": "The August election was announced after Sri Lanka had started to ease its lockdown restrictions.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 320,
+      "body_end": 416,
+      "source_links": [
+        "https://www.deccanherald.com/international/sri-lanka-to-ease-coronavirus-restrictions-from-may-26-841175.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00004",
+      "text": "Sri Lanka is doing better in containing the spread of COVID-19 compared to its South Asian neighbours. At the time of writing this report, Sri Lanka has recorded 1,950 Covid-19 infections and 11 deaths with the number of active cases dropping and the number of deaths remaining stagnant for a couple of weeks.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 418,
+      "body_end": 727,
+      "source_links": [
+        "https://www.indepthnews.net/index.php/opinion/3518-sri-lanka-has-been-successful-in-countering-covid-19",
+        "https://www.worldometers.info/coronavirus/country/sri-lanka/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00005",
+      "text": "Snap elections",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 729,
+      "body_end": 743,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00006",
+      "text": "Also read: Your guide to the 2019 Sri Lankan presidential election",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 745,
+      "body_end": 811,
+      "source_links": [
+        "https://globalvoices.org/2019/11/15/your-guide-to-the-2019-sri-lankan-presidential-election/"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00007",
+      "text": "President Gotabaya Rajapaksa, who was elected in the November 2019 presidential elections, used his constitutional power to dissolve the parliament on March 2. This was six months ahead of schedule which he insisted was necessary because the opposition-dominated parliament has been undermining his power. One of the goals of the Rajapaksa's party, Sri Lanka Podujana Peramuna (SLPP), is to regain its majority in the 225-member parliament. Rajapaksa has called for a snap election on April 25 which was criticized by many as untimely since the country is facing a pandemic.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 813,
+      "body_end": 1387,
+      "source_links": [
+        "http://www.ft.lk/top-story/GR-the-perfectionist/26-696976",
+        "https://en.wikipedia.org/wiki/2019_Sri_Lankan_presidential_election",
+        "https://en.wikipedia.org/wiki/Sri_Lanka_Podujana_Peramuna",
+        "https://groundviews.org/2020/04/30/parliamentary-elections-2020-a-point-of-view/",
+        "https://timesofindia.indiatimes.com/world/south-asia/sri-lanka-calls-snap-parliamentary-polls-on-april-25/articleshow/74446392.cms",
+        "https://www.aljazeera.com/news/2020/03/sri-lankan-parliament-dissolved-elections-set-april-200302193858515.html",
+        "https://www.dw.com/en/coronavirus-keeps-sri-lanka-without-a-functioning-parliament/a-53615108"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00008",
+      "text": "Human rights lawyer Bhavani Fonseka tweeted about the appeal to postpone the election:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1389,
+      "body_end": 1475,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00009",
+      "text": "Amid calls from the opposition and civil society to postpone the polls, Election Commissioner Mahinda Deshapriya announced the indefinite postponement of the election on March 19, citing the COVID-19 threat.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1477,
+      "body_end": 1684,
+      "source_links": [
+        "https://newsin.asia/sri-lankas-general-election-postponed/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00010",
+      "text": "Harim Peiris writes on Groundviews about the declaration:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1686,
+      "body_end": 1743,
+      "source_links": [
+        "https://groundviews.org/2020/03/24/nominations-close-and-elections-postponed-amid-covid-19/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00011",
+      "text": "> Given that the electoral process requires a mass domestic human migration or movement of people and that campaigning makes social distancing impossible, the decision of the Elections Commission was inevitable. Perhaps in hindsight, the hasty dissolution of parliament when Covid-19 was known as a global pandemic was unwise.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1745,
+      "body_end": 2071,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-708221-b00012",
+      "text": "On March 22, Sri Lanka imposed a seven week-long strict lockdown to prevent the surge of COVID-19 cases.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2073,
+      "body_end": 2177,
+      "source_links": [
+        "https://twitter.com/SriLankaTweet/status/1266551204785483776?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1266551204785483776&ref_url=https%3A%2F%2Fglobalvoices.org%2F%3Fp%3D708221%26preview_id%3D708221%26preview_nonce%3D866a8da99a%26_thumbnail_id%3D710855%26preview%3Dtrue",
+        "https://www.arabnews.com/node/1672851/world"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00013",
+      "text": "On April 20, the Election Commission announced that the parliamentary election will take place on June 20.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2179,
+      "body_end": 2285,
+      "source_links": [
+        "https://www.dtnext.in/News/World/2020/04/21084943/1226181/Sri-Lankas-parliamentary-polls-to-be-held-on-June-.vpf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00014",
+      "text": "A constitutional crisis?",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2287,
+      "body_end": 2311,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00015",
+      "text": "Analysts immediately pointed out that the new election date violates a constitutional provision which requires an election within three months after the dissolution of the parliament. Asanga Welikala writes about this issue on Groundviews:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2313,
+      "body_end": 2552,
+      "source_links": [
+        "https://groundviews.org/2020/05/23/dead-or-tranquilised-the-recall-of-dissolved-parliaments/",
+        "https://www.parliament.lk/files/pdf/constitution.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00016",
+      "text": "> The Constitution requires even a dissolved Parliament to be recalled in an emergency to fulfil the requirements of legislative oversight of the executive (including the exercise of any emergency powers), and to approve appropriations of public funds for government expenditure. The President, however, has steadfastly refused to do so. Coupled with this refusal, the practical inability to hold an election during the pandemic has resulted in the Election Commission having to set 20 June as the new date for the election. This is a date that is prima facie in breach of the constitutional stipulation that an election must be held, and a new Parliament must meet, within three months of the date of the dissolution of the old Parliament.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2554,
+      "body_end": 3294,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-708221-b00017",
+      "text": "Many questioned the practicality of holding an election during a pandemic. They also accused the government of mobilizing the military to consolidate power. Tisaranee Gunasekara warned about the dangers of militarizing the COVID-19 response:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3296,
+      "body_end": 3537,
+      "source_links": [
+        "https://groundviews.org/2020/05/10/election-against-democracy/",
+        "https://www.itjpsl.com/assets/press/English-ITJP_COVID-19-press-release-Merged-copy.pdf",
+        "https://www.thehindu.com/news/international/covid-19-sri-lankan-military-is-helping-the-country-fight-the-pandemic/article31350778.ece"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00018",
+      "text": "> The danger of holding an election in such an atmosphere is obvious. The government will not hesitate to arrest opposition activists and voters for violating this or that anti-virus rule while giving a free pass to its own supporters. But postponing the election repeatedly carries its own dangers. It will habituate the president into acting outside the constitution and strengthen those who are advocating Gotabaya rule.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3539,
+      "body_end": 3962,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-708221-b00019",
+      "text": "On June 2, Sri Lanka’s Supreme Court dismissed a number of petitions challenging the decision of the election commsion to hold the polls on June 20. This was regarded by many as a vindication of Rajapakshe's actions to dissolve the parliament and his refusal to call the parliament into session.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3964,
+      "body_end": 4259,
+      "source_links": [
+        "http://www.sundayobserver.lk/2020/06/07/editorial/clear-verdict-democracy",
+        "https://www.thehindu.com/news/international/sri-lankas-top-court-dismisses-petitions-challenging-poll-date/article31733871.ece"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00020",
+      "text": "However, educator Dr. Asanga Welikala disagrees with the court decision:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4261,
+      "body_end": 4333,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00021",
+      "text": "On June 10, Election Commission Chairman Mahinda Deshapriya announced that the date of the election will be rescheduled for the second time to August 5.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4335,
+      "body_end": 4487,
+      "source_links": [
+        "http://www.timeslanka.com/2020/06/10/sri-lanka-general-election-rescheduled-for-august-5-2020/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00022",
+      "text": "Health guidelines during the election",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4489,
+      "body_end": 4526,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00023",
+      "text": "Along with the announcement of the August 5 polls, the Election Commission also published its health guidelines for conducting the election amid the COVID-19 outbreak. Salient features include:",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4528,
+      "body_end": 4721,
+      "source_links": [
+        "http://www.newswire.lk/2020/06/08/health-guidelines-for-conducting-the-election-amidst-the-covid19-outbreak/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00024",
+      "text": "Wearing a facemask in the poll booth",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4723,
+      "body_end": 4759,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00025",
+      "text": "Keep a distance of one meter in the queues for polls",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4761,
+      "body_end": 4813,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00026",
+      "text": "Not allowing those who have not completed their quarantine",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4815,
+      "body_end": 4873,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00027",
+      "text": "Limiting attendance of election propaganda meetings to 100",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 4875,
+      "body_end": 4933,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00028",
+      "text": "Meeting participants will wear a facemask and practice social distancing in the seating arrangements",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 4935,
+      "body_end": 5035,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00029",
+      "text": "No processions allowed",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5037,
+      "body_end": 5059,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00030",
+      "text": "Distributions of handbills discouraged",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5061,
+      "body_end": 5099,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00031",
+      "text": "The Election Commission has so far arranged two mock polls to test the preparedness of people during the pandemic.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5101,
+      "body_end": 5215,
+      "source_links": [
+        "https://www.wionews.com/sri-lanka/sri-lanka-conducts-second-mock-poll-election-commission-satisfied-with-preparations-305799"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00032",
+      "text": "Many election candidates are spending on social media ads for their political campaigns. According to reports, Facebook will release information on the advertisement spendings of Sri Lankan political candidates.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5217,
+      "body_end": 5428,
+      "source_links": [
+        "http://www.newswire.lk/2020/06/19/election-slpps-vernon-gunaratne-spent-the-highest-on-facebook-ads-top-10/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00033",
+      "text": "The European Commission, meanwhile, has decided not to send a full-fledged observer mission for the August 5 polls citing COVID-19.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 5430,
+      "body_end": 5561,
+      "source_links": [
+        "https://www.magzter.com/article/Newspaper/Daily-Mirror-Sri-Lanka/EU-DECIDES-AGAINST-SENDING-OBSERVER-MISSION-ONLY-THREE-EXPERTS-LIKELY-OWING-TO-COVID-19"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708221-b00034",
+      "text": "As Sri Lanka is set to open its borders to tourism once again on August 1 as a step towards resuming normalcy, it remains to be seen how free and fair the election will be.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 5563,
+      "body_end": 5735,
+      "source_links": [
+        "http://www.newswire.lk/2020/06/05/sri-lanka-tourism-readying-to-welcome-travelers-from-across-the-world-from-august-01st-faq/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "69daa6197a6323cb2a5d66ef9d14bae7acdd23ac28ec0913f69183ab67f0048b",
+  "word_count": 897,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 6,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5735,
+  "retrieved_at": "2026-11-16T22:25:09.992871+00:00",
+  "raw_html_sha256": "08414ec5a18487f4d9a1de28ffe28ea335ce3c3f87a151a998167ad82cd789c6",
+  "resolved_source_url": "https://globalvoices.org/2020/06/21/sri-lanka-prepares-for-twice-delayed-poll-amid-militarized-covid-19-response/",
+  "canonical_url": "https://globalvoices.org/2020/06/21/sri-lanka-prepares-for-twice-delayed-poll-amid-militarized-covid-19-response/",
+  "source_bytes": 194421,
+  "authors": [
+    {
+      "name": "Rezwan",
+      "url": "https://globalvoices.org/author/rezwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 708221,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "08414ec5a18487f4d9a1de28ffe28ea335ce3c3f87a151a998167ad82cd789c6",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-df9a12e9d69a68efc995",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-06",
+    "eligible_month_documents": 110,
+    "selected_month_documents": 92,
+    "inclusion_probability": 0.8363636363636363,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Rezwan",
+  "body_start": 482,
+  "body_end": 6217,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "13a32e1aabf0e26ce56265a4ee0450c37494dfe49f58df2d58780f4574a6b2f0",
+  "text_path": "articles/gv-708221.txt",
+  "metadata_path": "metadata/gv-708221.json",
+  "attribution": "This story by Rezwan originally appeared on Global Voices. https://globalvoices.org/2020/06/21/sri-lanka-prepares-for-twice-delayed-poll-amid-militarized-covid-19-response/",
+  "content_sha256": "c8ebf56699f4ad84326dda0b6c71cc7ce57efd13ebcceaa4644f8499a96f0f66",
+  "source_sha256": "08414ec5a18487f4d9a1de28ffe28ea335ce3c3f87a151a998167ad82cd789c6",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

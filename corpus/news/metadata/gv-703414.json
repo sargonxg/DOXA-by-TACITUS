@@ -1,0 +1,415 @@
+{
+  "id": "gv-703414",
+  "publisher_id": 703414,
+  "source_id": "globalvoices:703414",
+  "source_url": "https://globalvoices.org/2020/04/10/azerbaijanis-required-to-send-sms-notification-before-leaving-homes/",
+  "title": "Azerbaijanis required to send SMS notification before leaving their homes",
+  "published_at": "2020-04-10T13:07:47Z",
+  "modified_at": "2020-07-06T20:09:18Z",
+  "api_author_id": 2583,
+  "api_content_sha256": "7a6a834aab52f28e09ce4a3e36177e19c512312897c9c3f3f1147e3d6bf73233",
+  "api_response_sha256": "410cae52104626367a712fae08e767879efbd25dd5aa81c2af8b559c01594b80",
+  "api_retrieved_at": "2026-11-16T22:20:24.527578+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 79,
+      "count": 1204,
+      "name": "Azerbaijan",
+      "slug": "azerbaijan",
+      "parent": 288
+    },
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 288,
+      "count": 7347,
+      "name": "Central Asia &amp; Caucasus",
+      "slug": "central-asia-caucasus",
+      "parent": 219
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-703414-b00001",
+      "text": "Check out Global Voices’ special coverage of the global impact of COVID-19.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 75,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/covid-19-global-coverage-for-a-pandemic/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00002",
+      "text": "As the coronavirus death toll nears 90,000 across the world, the Azerbaijani authorities have been restricting citizens’ movement to curb the COVID-19 outbreak in the country. Azerbaijan, with a population of approximately ten million, has 926 infection cases and nine coronavirus-related deaths as of April 9 according to the Johns Hopkins University coronavirus map.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 77,
+      "body_end": 445,
+      "source_links": [
+        "https://coronavirus.jhu.edu/map.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00003",
+      "text": "On April 5, Azerbaijan tightened the quarantine regime imposed on March 24, in order to stop the further spread of the virus. The new restrictions stipulate that residents must give advance notice before leaving their place of residence via a free SMS message. People are allowed to leave their homes for three reasons or “indexes”: to visit the doctor (index one), to visit a pharmacy, shop, bank, or post office (index 2), or to attend the funeral of a relative (index 3).",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 447,
+      "body_end": 921,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00004",
+      "text": "The text of the standard approval, as received by the author, reads:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 923,
+      "body_end": 991,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00005",
+      "text": "> 2-ci indeks uzre muracietiniz tesdiqlendi. Artiq 2 saat muddetine yashayish yerinizi terk ede bilersiniz",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 993,
+      "body_end": 1099,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-703414-b00006",
+      "text": "> Your application under Index 2 has been confirmed. You may now leave your place of residence for two hours.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1101,
+      "body_end": 1210,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-703414-b00007",
+      "text": "The free SMS message (sent to number 8103) must include residents’ personal identification number as well as their reasons for leaving the house. They will then receive a confirmation message granting them permission, which is valid for two hours and can only be issued at a rate of one a day. The permit requirement also applies to foreign citizens residing in Azerbaijan.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1212,
+      "body_end": 1585,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00008",
+      "text": "Permit applications can be rejected if residents provide incorrect information. It is not known whether any such applications have been rejected on other grounds.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1587,
+      "body_end": 1749,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00009",
+      "text": "But can everybody send an SMS? Mobile network coverage across Azerbaijan is generally good, but there have been cases where users’ phone numbers have been locked due to outstanding debts with mobile operators. They must first top up their accounts before being able to send an SMS, which could potentially cause problems for the poorest in Azerbaijani society.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1751,
+      "body_end": 2111,
+      "source_links": [
+        "https://www.gsma.com/coverage/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00010",
+      "text": "The requirement to send an SMS message does not apply to people over 65 who have been banned from leaving their homes since March 24. Employees of several state agencies are also exempt from the permit; private legal entities and diplomatic missions in Azerbaijan are also granted freedom of movement after registration with a government portal. Furthermore, residents do not need to obtain SMS permits in cases of emergencies which pose a threat to their health and safety. Neither do they require one when summoned to court or by law enforcement agencies.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2113,
+      "body_end": 2670,
+      "source_links": [
+        "http://icaze.e-gov.az/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00011",
+      "text": "However, there have been apparently loopholes in the SMS permit system since it entered force on April 5. On April 8, Spokesman for the Council of Ministers Ibrahim Mammadov voiced concerns about violations of the country's quarantine regime even after the introduction of the SMS permit system, saying that there have been “many cases of the illegal issuance of permits.”",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2672,
+      "body_end": 3044,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00012",
+      "text": "“Two people have been arrested for selling permits for journalists… The measures were taken in connection with fake calls, fake messages, and the falsification of permits,” said Mammadov, adding that as of April 7, administrative measures have been taken against 3,037 Azerbaijani citizens for various violations of the quarantine regime, while 12 have been arrested. Mammadov continued that the restrictions could even be tightened as “many people are not meeting the requirements.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3046,
+      "body_end": 3529,
+      "source_links": [
+        "https://en.trend.az/azerbaijan/society/3220159.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00013",
+      "text": "“Some legal entities and individuals who have been authorised to operate are entering the names of foreign nationals on the portal icaze.gov.az, and issuing fake IDs to individuals who are not employed by mass media outlets, thereby creating conditions for their unimpeded movement and grossly violating the requirements of the special quarantine regime,” Mammadov stated.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3531,
+      "body_end": 3903,
+      "source_links": [
+        "http://icaze.gov.az/",
+        "https://www.azernews.az/nation/163798.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00014",
+      "text": "Mammadov reminded the population that the government has access to residents’ employment details via the state's electronic labour contract notification system, which is managed by the Ministry of Labour and Social Protection. He issued a public warning against entering false information on any government portal, explaining that the issuing or use of any falsified documents to violate the quarantine regime was illegal.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3905,
+      "body_end": 4327,
+      "source_links": [
+        "https://www.azernews.az/news.php?news_id=163798&cat=nation"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00015",
+      "text": "Although there is widespread understanding of the necessity for the quarantine regime, there has been some criticism of the SMS permit system.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4329,
+      "body_end": 4471,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00016",
+      "text": "Some digital rights defenders have expressed concerns about a possible lack of safeguards. Legal expert Emin Abbasov recently told Az-Netwatch, a portal covering freedom of information in Azerbaijan, that in his opinion much was unclear, including whether an SMS can be used to track a mobile device, how users’ personal information will be protected, and whether this information will be deleted from the database once the quarantine is lifted.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4473,
+      "body_end": 4918,
+      "source_links": [
+        "https://www.az-netwatch.org/news/in-azerbaijan-sms-notification-system-grants-permission-to-leave-homes/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00017",
+      "text": "Whatever the concerns, the SMS system is here to stay — at least until the quarantine is lifted on April 20.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4920,
+      "body_end": 5028,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00018",
+      "text": "The legal framework of the quarantine regime remains obscure; there is no clear information about fines or other consequences for violating it. Some residents have been fined to the tune of 100 Manat ($60) for violating the quarantine regime. Residents are also stopped by police for not wearing protective masks, however, there is no fine for not wearing protective clothing as there is shortage of them in the country.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5030,
+      "body_end": 5450,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00019",
+      "text": "Nevertheless, the authorities continue to closely monitor and punish non-compliance. On April 5, the Ministry of Internal Affairs announced that 3,796 people had been fined, including 1,881 people in the capital city Baku, for violating the quarantine regime. At the same time, one resident received a warning for spreading untrue information about the coronavirus on social networks, including over the WhatsApp instant messenger.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5452,
+      "body_end": 5883,
+      "source_links": [
+        "https://www.azernews.az/news.php?news_id=163781&cat=nation"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00020",
+      "text": "The government has taken other measures to fight the coronavirus, such as on April 5 suspending the operation of independent taxi drivers who transport customers in their private cars. It earlier unveiled aid package for April and May to cushion social fallout of the pandemic. The following day, President Ilham Aliyev signed a decree on the early release of 176 prisoners over 65 years old, in connection with the spread of the coronavirus. Among the pardoned are employees of the now-defunct National Security Ministry, including Major General Akif Chovdarov and the ministry's former director, General Subahir Gurbanov. Both men were imprisoned in 2015 on corruption charges.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5885,
+      "body_end": 6564,
+      "source_links": [
+        "http://www.eng.kavkaz-uzel.eu/articles/50518/",
+        "https://www.azerbaycan24.com/en/azerbaijan-to-ban-taxi-services-via-private-cars-during-coronavirus-quarantine-period/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00021",
+      "text": "As many in Azerbaijan will struggle financially from the consequences of the lockdown, the government has announced economic support measures. On April 9, Minister of Labour and Social Protection Sahil Babayev revealed that $1.7 billion has been allocated to reduce the negative impact of the coronavirus pandemic on the economy as well as $235.2 million to support social welfare. Informal workers, people registered as unemployed, and micro entrepreneurs each be paid a monthly sum of $210, $111 and $78 respectively. Residents’ electricity allowances have also been extended for two months.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6566,
+      "body_end": 7159,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00022",
+      "text": "It should be noted that the government has allocated $8.7 million to build six new modular hospitals with 200 beds each for the treatment of coronavirus patients. Earlier, a new clinic to treat coronavirus patients was opened in Baku.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7161,
+      "body_end": 7395,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703414-b00023",
+      "text": "The most surprising thing of all is that, while the emergency is keenly felt in Baku, the government has not yet officially declared a state of emergency. This is despite the fact that the Operational Headquarters announced on April 2 that an emergency situation may be declared if the infection rate continues to grow.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7397,
+      "body_end": 7716,
+      "source_links": [
+        "https://en.trend.az/azerbaijan/society/3216864.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "134909d273cce91eeaec10df74b639f83d25520350099bd0ad7c3649be36d658",
+  "word_count": 1213,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7716,
+  "retrieved_at": "2026-11-16T22:23:11.751616+00:00",
+  "raw_html_sha256": "3096290a6326c6e951d32e0c47ee50f58a62676538efc0dad912102d12dac077",
+  "resolved_source_url": "https://globalvoices.org/2020/04/10/azerbaijanis-required-to-send-sms-notification-before-leaving-homes/",
+  "canonical_url": "https://globalvoices.org/2020/04/10/azerbaijanis-required-to-send-sms-notification-before-leaving-homes/",
+  "source_bytes": 187717,
+  "authors": [
+    {
+      "name": "Aisha Jabbarova",
+      "url": "https://globalvoices.org/author/aisha-jabbarova/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 703414,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "3096290a6326c6e951d32e0c47ee50f58a62676538efc0dad912102d12dac077",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-0ce48e4a196a92b4f69a",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-04",
+    "eligible_month_documents": 101,
+    "selected_month_documents": 84,
+    "inclusion_probability": 0.8316831683168316,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Aisha Jabbarova",
+  "body_start": 479,
+  "body_end": 8195,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "883b6ed22a36cc5db4a561b5bb6d5dbcd65c4c986ccd3753d8a79016f927f2ea",
+  "text_path": "articles/gv-703414.txt",
+  "metadata_path": "metadata/gv-703414.json",
+  "attribution": "This story by Aisha Jabbarova originally appeared on Global Voices. https://globalvoices.org/2020/04/10/azerbaijanis-required-to-send-sms-notification-before-leaving-homes/",
+  "content_sha256": "14cbbc16bfb7e7dee973a3975a1dab94b6c1d98105a7a7ce1f1159abb5e354fc",
+  "source_sha256": "3096290a6326c6e951d32e0c47ee50f58a62676538efc0dad912102d12dac077",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

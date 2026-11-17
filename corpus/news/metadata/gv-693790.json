@@ -1,0 +1,370 @@
+{
+  "id": "gv-693790",
+  "publisher_id": 693790,
+  "source_id": "globalvoices:693790",
+  "source_url": "https://globalvoices.org/2020/01/10/sudan-needs-strong-network-neutrality-laws-to-match-its-growing-internet-boom/",
+  "title": "Sudan needs strong network neutrality laws to match its growing internet boom",
+  "published_at": "2020-01-10T11:10:14Z",
+  "modified_at": "2020-01-10T16:38:26Z",
+  "api_author_id": 2625,
+  "api_content_sha256": "bd1b9c2dddea799bc5a5ec794f4212d5890e85062f7cacb09550104023012593",
+  "api_response_sha256": "3390ca1fcc4f1c57431caafba57c9783cc7cc7ec234f150bc4b9743fc1151e5c",
+  "api_retrieved_at": "2026-11-16T22:20:21.760310+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 141,
+      "count": 611,
+      "name": "Sudan",
+      "slug": "sudan",
+      "parent": 15
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-693790-b00001",
+      "text": "In Sudan, where the internet plays a crucial role in its political and economic transformation, net neutrality legislation still has a long way to go.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 150,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00002",
+      "text": "Net neutrality is the principle that Internet Service Providers (ISPs) should treat all internet traffic equally, and not discriminate and charge differently based on users, content and applications.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 152,
+      "body_end": 351,
+      "source_links": [
+        "https://www.freepress.net/issues/free-open-internet/net-neutrality"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00003",
+      "text": "In the broadest terms, it is about ensuring free and fair access to the internet through laws and policies that mitigate tensions between the private sector and the public good.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 353,
+      "body_end": 530,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00004",
+      "text": "While there is no unified definition of the term, “most [proponents] agree … that owners of the networks that compose and provide access to the internet should not control how consumers lawfully use that network, and they should not be able to discriminate against content provider access to that network,” according to a paper by Angele A. Gilroy, an academic.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 532,
+      "body_end": 893,
+      "source_links": [
+        "https://www.everycrsreport.com/files/20110311_R40616_81d4f1aa5388126152dec6b5a2959691d13f1145.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00005",
+      "text": "Law professor Tim Wu first coined the term in 2003 in his paper, “Network Neutrality, Broadband Discrimination,” in which he describes various tensions between the private sector and public interest groups.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 895,
+      "body_end": 1101,
+      "source_links": [
+        "http://www.jthtl.org/content/articles/V2I1/JTHTLv2i1_Wu.PDF"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00006",
+      "text": "As internet access becomes more accessible to a wider range of Sudanese citizens, a lack of net neutrality regulations means that violations in Sudan occur easily and often.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1103,
+      "body_end": 1276,
+      "source_links": [
+        "https://www.freedomonthenet.org/country/sudan/freedom-on-the-net/2019#footnote1_88lumiu"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00007",
+      "text": "Violations of net neutrality come in many forms, such as “discrimination by protocol” when telecom companies and ISPs restrict or block access to certain sites or services by discriminating against certain communication protocols — for example, when ISPs block access to Voice Over Internet Protocol (VoIP) applications like WhatsApp, Skype and Viber.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1278,
+      "body_end": 1629,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Net_neutrality#Discrimination_by_protocol",
+        "https://www.pcworld.com/article/211371/network_neutrality_and_protocol_discrimination.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00008",
+      "text": "In other cases, ISPs favor certain websites or applications by offering zero-rating plans that allow users to access them without counting it against their data caps or charging them for that access. This discriminatory pricing bias gives some companies an unfair advantage over their competitors.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1631,
+      "body_end": 1928,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Zero-rating",
+        "https://www.eff.org/deeplinks/2016/02/zero-rating-what-it-is-why-you-should-care"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00009",
+      "text": "In Sudan, the main players in the telecoms market have been practicing zero-rating — a clear violation of the basic principles of net neutrality set by experts in the field that have since become accepted community norms.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1930,
+      "body_end": 2151,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00010",
+      "text": "MTN Sudan, a subsidiary of the South-African based MTN group, provides its users with access to Facebook Zero. This service, which is part of an international project launched by Facebook in collaboration with mobile network providers, offers a stripped, text-only version of Facebook for free.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2153,
+      "body_end": 2447,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Facebook_Zero",
+        "https://www.mtn.sd/home/content/face-book-zero"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00011",
+      "text": "Another example was the Wikipedia Zero project offered by the telecom company Sudani, as part of the Wikipedia-zero program. It offered access to the online encyclopedia free of charge through mobile phones. The Wikipedia Zero program, which was slammed by advocates for violating net neutrality, was discontinued in 2018.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2449,
+      "body_end": 2771,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Wikipedia_Zero",
+        "https://www.facebook.com/Wikimediasudan/photos/a.946443965374791/977803995572121/?type=3&theater"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00012",
+      "text": "Zain Sudan, a subsidiary of the Kuwaiti Zain group, has been providing its users with access to Facebook’s Free Basics program, an app that gives users access to a handful of web-based services, the most recognizable and prominent of which is Facebook, according to this list. 2017 research by Global Voices found that Free Basics violated net neutrality and also granted Facebook access to unique streams of data about the habits and interests of users in developing countries.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2773,
+      "body_end": 3251,
+      "source_links": [
+        "https://advox.globalvoices.org/2017/07/27/facebooks-free-basics-doesnt-connect-you-to-the-global-internet-but-it-does-collect-your-data/",
+        "https://info.internet.org/en/story/where-weve-launched/",
+        "https://www.facebook.com/ZainSudan/posts/1780305455353646"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00013",
+      "text": "Yet, Zain Sudan has recently promoted another offer called Flex that gives its users free access to Facebook and its messaging app, Messenger.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3253,
+      "body_end": 3395,
+      "source_links": [
+        "https://advox.globalvoices.org/2017/07/27/facebooks-free-basics-doesnt-connect-you-to-the-global-internet-but-it-does-collect-your-data/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00014",
+      "text": "Sudan does not yet have a law dedicated to net neutrality. However, a few legal provisions in the 2018 Telecommunications and Postal Regulation Act indirectly address and tackle the issue.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3397,
+      "body_end": 3585,
+      "source_links": [
+        "https://tpra.gov.sd/wp-content/uploads/2018/06/Telecommunications-and-Postal-Regulation-Act.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00015",
+      "text": "Article 25 of the act prohibits any non-competitive activities by licensed companies. Moreover, in what could be interpreted as an anti-zero-rating stance, Article 38 of the act criminalizes setting prices that discriminate between the users and also discounts that limit and restrict competition.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3587,
+      "body_end": 3884,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00016",
+      "text": "Another law that partially tackles the issue of network neutrality is the Organizing Competitiveness and Preventing monopoly Law of 2009. Chapter two of this law prohibits giving any entity the privilege to distribute services or products based on market segmentation on a geographic basis, a specific time period or to favor certain customers over others.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3886,
+      "body_end": 4242,
+      "source_links": [
+        "http://moj.gov.sd/sudanlaws/?fbclid=IwAR2S6HoP9O4qLjKuGU2us5nAkNDX-vWnkwIvz7XxsaylSVfyQHy_Swig1LI#/reader/chapter/295"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00017",
+      "text": "In a country where the internet fueled a revolution and now drives the emergence of youth tech startups, leveling the playing field through net neutrality legislation is crucial. This will help regulate economic competitors and also protect users’ rights to free and fair access to all services and apps.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4244,
+      "body_end": 4548,
+      "source_links": [
+        "https://iec-su.org/%D8%AA%D9%82%D8%B1%D9%8A%D8%B1-%D9%86%D8%AF%D9%88-%D8%A9-%D8%AB%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D9%86%D8%A7%D8%B4%D8%A6%D8%A9-%D9%88%D8%AF%D9%88%D8%B1%D9%87/",
+        "https://www.alaraby.co.uk/english/indepth/2019/9/17/sudans-uprising-and-the-critical-role-of-social-media"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00018",
+      "text": "Sudan could learn from countries like the Canada, India, and The Netherlands which have already set legal measures and laws to regulate telecom and ISP practices with respect to net neutrality.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4550,
+      "body_end": 4743,
+      "source_links": [
+        "https://crtc.gc.ca/eng/internet/diff.htm",
+        "https://money.cnn.com/2018/07/12/technology/india-net-neutrality-rules-telecom/index.html",
+        "https://www.bitsoffreedom.nl/dossiers/net-neutrality/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-693790-b00019",
+      "text": "Additionally, Sudan must strive for a cultural shift within civil society and the private sector to raise awareness and build incentives for defending net neutrality.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4745,
+      "body_end": 4911,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "afa145005a3be5076e467c03c99edc544e0b1b7e5f1ddf61b12e62c561dc9b39",
+  "word_count": 764,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 4911,
+  "retrieved_at": "2026-11-16T22:21:23.461845+00:00",
+  "raw_html_sha256": "d16712404a8d719210887e12466a83a64871d97e3f0f603190116e4415931944",
+  "resolved_source_url": "https://globalvoices.org/2020/01/10/sudan-needs-strong-network-neutrality-laws-to-match-its-growing-internet-boom/",
+  "canonical_url": "https://globalvoices.org/2020/01/10/sudan-needs-strong-network-neutrality-laws-to-match-its-growing-internet-boom/",
+  "source_bytes": 196925,
+  "authors": [
+    {
+      "name": "Mohamed Suliman",
+      "url": "https://globalvoices.org/author/mohamed-suliman/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 693790,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "d16712404a8d719210887e12466a83a64871d97e3f0f603190116e4415931944",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-e19b3fb49321b2683900",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-01",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Mohamed Suliman",
+  "body_start": 493,
+  "body_end": 5404,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "d1621c2f4a541b03b178e44af1b4b7395123628ae96dfe2b3daeed2bc56b761f",
+  "text_path": "articles/gv-693790.txt",
+  "metadata_path": "metadata/gv-693790.json",
+  "attribution": "This story by Mohamed Suliman originally appeared on Global Voices. https://globalvoices.org/2020/01/10/sudan-needs-strong-network-neutrality-laws-to-match-its-growing-internet-boom/",
+  "content_sha256": "4ff1673e8a1567f4aeb04e32627e9091079ade3fbda712fb7a23ab3c4af4ce02",
+  "source_sha256": "d16712404a8d719210887e12466a83a64871d97e3f0f603190116e4415931944",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

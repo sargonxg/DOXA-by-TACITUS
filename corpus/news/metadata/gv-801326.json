@@ -1,0 +1,386 @@
+{
+  "id": "gv-801326",
+  "publisher_id": 801326,
+  "source_id": "globalvoices:801326",
+  "source_url": "https://globalvoices.org/2023/11/20/silencing-the-press-threats-violence-and-injustices-against-journalists-in-ghana/",
+  "title": "Silencing the press: Threats, violence, and injustices against journalists in Ghana",
+  "published_at": "2023-11-20T13:09:41Z",
+  "modified_at": "2023-11-21T05:48:29Z",
+  "api_author_id": 707,
+  "api_content_sha256": "6e0afc9810030567d3962b508b3869eb14dd3f65ef3ccd901a7995e7bf2f824e",
+  "api_response_sha256": "a286ff614993e6c2c4bfc0ceec4b508eca30444387ed61775d0c5b7b37585acf",
+  "api_retrieved_at": "2026-11-16T22:20:58.008832+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 117,
+      "count": 752,
+      "name": "Ghana",
+      "slug": "ghana",
+      "parent": 15
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-801326-b00001",
+      "text": "This piece was written as part of Advox's partnership with the Small Media Foundation to bring you the UPROAR initiative, a collection of essays highlighting challenges in digital rights in countries undergoing the UN's Universal Periodic Review process.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 254,
+      "source_links": [
+        "https://advox.globalvoices.org/categories/special/uproar-universal-periodic-review/",
+        "https://smallmedia.org.uk/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00002",
+      "text": "On May 3, Abubakari Sadiq Gariba, a Ghanaian journalist who works with Dagbon FM in the north of Ghana, was attacked and threatened live on his weekly talk show “Panpantua” by a local politician Iddrisu Hardi and a local resident Mumuni Osman. According to the Committee to Protect Journalists (CPJ), the authorities were tasked with ensuring that Hardi, a former regional deputy communication officer for the National Democratic Congress party, and Osman were tried and made to account for their actions. A week later, the two offenders were fined GHC 3,600 (approximately USD 310) each.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 256,
+      "body_end": 844,
+      "source_links": [
+        "https://cpj.org/2023/05/ghanian-journalist-abubakari-sadiq-gariba-attacked-threatened-by-politician-and-aide/",
+        "https://en.wikipedia.org/wiki/National_Democratic_Congress_(Ghana)",
+        "https://www.ghanaweb.com/GhanaHomePage/television/news/Press-Freedom-Day-Former-NDC-communications-officer-attacks-radio-presenter-on-live-radio-in-Tamale-185168"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00003",
+      "text": "The attack coincided with World Press Freedom Day, the same day Ghana was reported to have dropped two places in the Press Freedom ranking by Reporters without Borders.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 846,
+      "body_end": 1014,
+      "source_links": [
+        "https://rsf.org/en",
+        "https://rsf.org/en/country/ghana"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00004",
+      "text": "Ghana has previously built a reputation as one of the most media-friendly countries in Africa and the world, too, with freedoms and rights such as data protection and privacy enshrined in law. In terms of press freedom, Ghana ranked 62nd out of a total of 180 countries in 2023, with an overall score of 65.9/100, reflecting a downward trend of Ghana’s press freedom rating over the past two years because of insecurity, and continuous threats to the lives of journalists.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1016,
+      "body_end": 1488,
+      "source_links": [
+        "https://cddgh.org/press-freedom-in-ghana/",
+        "https://judicial.gov.gh/index.php/fundamental-human-rights-and-freedom",
+        "https://platform.dataguidance.com/legal-research/data-protection-act-2012"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00005",
+      "text": "The media plays a pivotal role in bolstering democracy by furnishing the public with vital information, facilitating civic engagement, and holding officials accountable. However, journalists, the foot soldiers of this mission, are frequently in peril when their exposés challenge wrongdoers.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1490,
+      "body_end": 1781,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00006",
+      "text": "Journalists in Ghana are continually encountering a rising tide of threats, violence, and injustices, undermining their capacity to report with freedom and impartiality. The assaults on Ghanaian journalists have grown in frequency and severity, with the palpable menace of physical harm.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1783,
+      "body_end": 2070,
+      "source_links": [
+        "https://niemanreports.org/articles/ghana-democracy-pres-freedom/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00007",
+      "text": "On October 11, RSF reported another attack on a local TV station, where 20 supporters of the ruling New Patriotic Party interrupted “United ShowBiz,” a popular live TV show. The show features, among others, Kwame Asare-Obeng, a local entrepreneur in entertainment and a political activist, who was the target of the attack and wasn’t at the radio station on the day.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2072,
+      "body_end": 2438,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/New_Patriotic_Party",
+        "https://rsf.org/en",
+        "https://rsf.org/en/supporters-ghana-s-ruling-party-interrupt-tv-show",
+        "https://yen.com.gh/129378-a-plus-kwame-asare-obeng-bio-wedding-wife-songs-latest-news-2020.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00008",
+      "text": "The director of RSF’s Sub-Saharan Africa bureau Sadibou Marong stated: “This violent intrusion into a TV channel’s premises was an attack on media freedom and editorial independence. The media must be able to operate freely without fear of being intimidated or threatened. We condemn such actions and call on the authorities to pursue their investigation all the way.”",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2440,
+      "body_end": 2808,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00009",
+      "text": "As early as 2019, Ghanaian authorities and police have been noted to have escalated the harassment and illegal detention of journalists. In April 2019, Modern Ghana editor Emmanuel Ajarfor Abugri and reporter Emmanuel Yeboah Britwum were alleged to have been tortured and held by security forces, the CPJ reported. The officers questioned the journalists about Modern Ghana’s coverage of National Security Minister Albert Kan Dapaah, and accused them of obtaining information about Kan Dapaah by hacking an email account. Kan Dapaah had been named as the head of Ghana’s newly created National Security Ministry by President Nana Akufo-Addo in early 2017. The ministry’s mandate was to increase security services’ public accountability, according to media reports from the time.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2810,
+      "body_end": 3588,
+      "source_links": [
+        "https://cpj.org/2019/07/two-ghanaian-journalists-arrested-on-cybercrime-ch/",
+        "https://www.modernghana.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00010",
+      "text": "According to the Media Foundation of West Africa, there have been 14 attacks on media houses in the last 10 years. Only one of these attacks — Dagbon FM’s Abubakari Gariba’s case — has gotten legal redress. The disconcerting pattern of incursions into media facilities, often involving armed intruders, vandalization of studio equipment, forceful interference with broadcasts, and the intimidation and assault of hosts and guests, has been closely monitored from 2014 to 2023. State security entities, encompassing the National Security Ministry, National Intelligence Bureau, and Fire Service, were responsible for five of these incidents, while political party supporters were implicated in three cases. The remaining six are still under investigation, though with a cold trail.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3590,
+      "body_end": 4370,
+      "source_links": [
+        "https://www.mfwa.org/ghana-14-attacks-on-media-houses-in-ten-years-only-one-redressed/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00011",
+      "text": "In a significant move to challenge impunity, an Accra court issued a verdict on January 13, mandating Ghana's National Security Coordinator, Inspector General of Police, and Attorney General to issue an apology to Abugri, for violations of his rights. Additionally, the Human Rights Division Court 2 ordered these officials to provide compensation and cover legal costs for the journalist. The respondents were instructed to reimburse the journalist for his confiscated equipment, including a laptop, two mobile phones, and a tablet taken by National Security agents. Regrettably, the initial optimism surrounding this groundbreaking judgment has since waned, as the responsible parties have thus far failed to comply.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4372,
+      "body_end": 5090,
+      "source_links": [
+        "https://thefourthestategh.com/2023/05/03/radio-ada-assault-police-fail-to-prosecute-suspects-despite-overwhelming-evidence/",
+        "https://www.mfwa.org/major-boost-for-press-freedom-court-orders-police-chief-attorney-general-to-apologise-to-abused-journalist/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00012",
+      "text": "Professor Amin Alhassan, the Director General of the Ghana Broadcasting Corporation, emphasized the pressing issues facing the media landscape in Ghana. These challenges include the lack of a comprehensive regulatory framework, sub-par working conditions for media professionals, and concerns regarding the safety of journalists in the current era. This was during the release of “The State of Ghanaian Media Report 2023” by the University of Ghana’s Department of Communication Studies.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 5092,
+      "body_end": 5579,
+      "source_links": [
+        "https://ugedugh-my.sharepoint.com/personal/boseitutu_ug_edu_gh/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fboseitutu%5Fug%5Fedu%5Fgh%2FDocuments%2FThe%20State%20of%20the%20Ghanaian%20Media%20Report%5F2023%2D1%2Epdf&parent=%2Fpersonal%2Fboseitutu%5Fug%5Fedu%5Fgh%2FDocuments&ga=1",
+        "https://www.gbcghanaonline.com/",
+        "https://www.ug.edu.gh/commstudies/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00013",
+      "text": "Key findings from the report noted there has been a growing sense of insecurity among journalists in Ghana, and violations of journalists’ safety, with men at a higher risk of attacks than women. Other concerns have been the fact that investigative journalists are the most exposed to attacks, and state actors, including political appointees and police, have been the worst perpetrators of the attacks on the journalists. Journalists also feel that law enforcement agencies and the judiciary have done little to ensure their safety.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5581,
+      "body_end": 6114,
+      "source_links": [
+        "https://akademie.dw.com/en/for-ghanaian-journalists-safety-is-a-growing-concern/a-62279317#:~:text=Rural%20journalists%20in%20Ghana%20speak%20for%20communities&text=Most%20recently%2C%20journalists%20have%20faced,the%20beginning%20of%202022%20alone."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00014",
+      "text": "The report also noted that support for journalists facing attacks is notably lacking, with deficiencies including:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 6116,
+      "body_end": 6230,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00015",
+      "text": "Scarce provision of trauma counseling services",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6232,
+      "body_end": 6278,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00016",
+      "text": "Partial shortcomings in supplying safety equipment for journalists covering hazardous assignments",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6280,
+      "body_end": 6377,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00017",
+      "text": "Adequate medical and legal support from media organizations when journalists fall victim to attacks.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6379,
+      "body_end": 6479,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00018",
+      "text": "In 2021, the Ghanaian government commissioned the Office for the Coordinated Mechanism on the Safety of Journalists. The intention was to set up an official resource for filing complaints about attacks on journalists, validating alleged attacks, following up on investigations and sanctions and reporting on the safety of journalists. As of 2023, though, there has been slow progress in the office delivering on its mandate and addressing the journalists’ concerns, as noted in the State of Ghanaian Media Report above.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6481,
+      "body_end": 7000,
+      "source_links": [
+        "https://www.myjoyonline.com/government-commissions-office-of-coordinated-mechanism-on-the-safety-of-journalists/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-801326-b00019",
+      "text": "Robust democracies hinge on resilient, independent media outlets that illuminate the public, cultivate productive discourse, and scrutinize individuals in public office. Despite notable strides, worldwide, there's mounting pressure on independent media and press freedoms. Journalists encounter threats, harassment, and violence in the course of their work. The specter of self-censorship, induced by these assaults, poses a disheartening challenge to unyielding, independent journalism, and, by extension, democracy.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 7002,
+      "body_end": 7519,
+      "source_links": [
+        "https://cddgh.org/press-freedom-in-ghana/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "510b700588a5fe0ffce1c71f014a26ed4ae2a0f438061e8b893bc6389a767562",
+  "word_count": 1128,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7519,
+  "retrieved_at": "2026-11-16T22:41:23.812084+00:00",
+  "raw_html_sha256": "dd3dfb12db1020d186ce94a1b6efd46e7e61beaa9d9dc3e96d657bf580f4c297",
+  "resolved_source_url": "https://globalvoices.org/2023/11/20/silencing-the-press-threats-violence-and-injustices-against-journalists-in-ghana/",
+  "canonical_url": "https://globalvoices.org/2023/11/20/silencing-the-press-threats-violence-and-injustices-against-journalists-in-ghana/",
+  "source_bytes": 191037,
+  "authors": [
+    {
+      "name": "Richard Wanjohi",
+      "url": "https://globalvoices.org/author/richard-wanjohi/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 801326,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "dd3dfb12db1020d186ce94a1b6efd46e7e61beaa9d9dc3e96d657bf580f4c297",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-e28ed296352dffd0c050",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-11",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Richard Wanjohi",
+  "body_start": 502,
+  "body_end": 8021,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "f6c012f5ae5d11889ce33b9f237f2c5f84cd072d67885c234bc03cf4f5e4487b",
+  "text_path": "articles/gv-801326.txt",
+  "metadata_path": "metadata/gv-801326.json",
+  "attribution": "This story by Richard Wanjohi originally appeared on Global Voices. https://globalvoices.org/2023/11/20/silencing-the-press-threats-violence-and-injustices-against-journalists-in-ghana/",
+  "content_sha256": "7e2ac209f5eafa35a033daf2592a55cf1f1a26c64bf03da2507160704593b37f",
+  "source_sha256": "dd3dfb12db1020d186ce94a1b6efd46e7e61beaa9d9dc3e96d657bf580f4c297",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

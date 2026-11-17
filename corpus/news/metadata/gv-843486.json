@@ -1,0 +1,536 @@
+{
+  "id": "gv-843486",
+  "publisher_id": 843486,
+  "source_id": "globalvoices:843486",
+  "source_url": "https://globalvoices.org/2025/10/12/how-data-gaps-deepen-climate-injustice-in-the-himalayas/",
+  "title": "How data gaps deepen climate injustice in the Himalayas",
+  "published_at": "2025-10-12T07:00:16Z",
+  "modified_at": "2025-10-06T08:09:57Z",
+  "api_author_id": 3284,
+  "api_content_sha256": "2beb94feca38c76310be15a4d00dda9a8ae57f13a744be20c39d660e3e213f04",
+  "api_response_sha256": "013e863c1c02e2bb511a1a6551f55871784146f6c412088d90aacc4f80e6ac0c",
+  "api_retrieved_at": "2026-11-16T22:21:14.863675+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 325,
+      "count": 2253,
+      "name": "Chinese",
+      "slug": "chinese",
+      "parent": 317
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 32,
+      "count": 3843,
+      "name": "India",
+      "slug": "india",
+      "parent": 31
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 2552,
+      "count": 1465,
+      "name": "Nepal",
+      "slug": "nepal",
+      "parent": 31
+    },
+    {
+      "id": 41,
+      "count": 2347,
+      "name": "Pakistan",
+      "slug": "pakistan",
+      "parent": 31
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 276,
+      "count": 839,
+      "name": "Science",
+      "slug": "science",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-843486-b00001",
+      "text": "This article was submitted as part of the Global Voices Climate Justice fellowship, which pairs journalists from Sinophone and Global Majority countries to investigate the effects of Chinese development projects abroad. Find more stories here.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 243,
+      "source_links": [
+        "https://globalvoices.org/special/global-voices-climate-justice-fellowship-2025/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00002",
+      "text": "The Hindu Kush-Himalaya (HKH) region, a mountain range spanning Afghanistan, Pakistan, Tajikistan, China, Nepal, and India, is considered the “water tower” of Asia, though much of this water is trapped in glaciers that cap the range’s jagged peaks. As the planet warms due to climate change, many of these glaciers are melting at alarming rates, causing massive lakes to bloom between the mountaintops.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 245,
+      "body_end": 647,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00003",
+      "text": "While it's unknown exactly how many glacial lakes have sprung up, some studies report upwards of 8,900 lakes across the region. However, these natural wonders have a downside. Glacier lake outburst floods (GLOFs), a phenomenon where a natural dam bursts and a lake’s worth of water suddenly flows downstream in something of an “inland tsunami,” are becoming more and more common and pose a deadly threat to nearby communities. These natural disasters are especially common in India, Pakistan, Nepal, and China, and can cause widespread death, infrastructure destruction, and displacement.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 649,
+      "body_end": 1237,
+      "source_links": [
+        "https://www.icimod.org/wp-content/uploads/Decades_Study_Glaciers_GlacialLakes_Sudan_jan2025.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00004",
+      "text": "While these phenomena are extremely difficult to predict, comprehensive glacial lake inventories and integrated space-air-ground observation systems have the potential to give scientists early warning on GLOFs that may help save lives.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1239,
+      "body_end": 1474,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00005",
+      "text": "Data politics",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1476,
+      "body_end": 1489,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00006",
+      "text": "The sharing of data has long been a contentious issue. In the HKH region — one of the world’s most geopolitically sensitive areas — data sharing, especially related to water, remains deeply controversial. “Water is a very sensitive issue,” notes Arun Bhakta Shrestha, a climate and risk reduction expert from the International Center for Integrated Mountain Development (ICIMOD), in an interview with Global Voices. In many countries across the region, water-related information is treated as highly classified. This includes not only long-term hydrological data but also time-sensitive disaster alerts, such as those related to GLOFs.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1491,
+      "body_end": 2126,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00007",
+      "text": "This culture of restricted information has real-world consequences. As Shrestha pointed out, disaster information is also humanitarian information. When a glacial lake bursts its banks, the resulting flood doesn’t respect borders. It travels downstream rapidly, threatening lives and infrastructure. “If that information could be shared downstream, people could be evacuated,” he said. “Otherwise, people die.”",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2128,
+      "body_end": 2538,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00008",
+      "text": "Yet even early warning signals that could save lives are rarely shared. According to him, this isn’t just about sensitivity — it’s also about political inertia. “Those bureaucrats… they just sit on the data to avoid complications,” he explained. The problem isn’t a lack of technological alternatives — much of the data could be gathered via remote sensing. However, unwillingness to change leads to policy rigidity, which in turn fuels mistrust among neighboring states.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2540,
+      "body_end": 3011,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00009",
+      "text": "This mistrust creates a vicious cycle. Geopolitical tensions cause countries to withhold information. That withholding fuels suspicion. Misunderstandings flourish — myths emerge, such as assumptions that one country is mismanaging or weaponizing upstream water. These myths hinder cooperation. “You cannot look at a problem in isolation,” Shrestha stressed. “A river basin is a shared environment.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3013,
+      "body_end": 3411,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00010",
+      "text": "Partial understanding and incomplete strategies can prove deadly. To break this “vicious circle of mistrust,” experts argue for stronger scientific collaboration. While political agreements may take years or decades, science can offer a neutral ground.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3413,
+      "body_end": 3665,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00011",
+      "text": "Institutions like ICIMOD are working to build such transboundary scientific cooperation. “We need more joint research, more shared knowledge,” Xu Baiqing, a leading expert at the Institute of Tibetan Plateau Research, Chinese Academy of Sciences, said in an interview with Global Voices, emphasizing that collaboration can help fill data gaps, build trust, and reduce tensions over time.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3667,
+      "body_end": 4054,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00012",
+      "text": "China’s role in the regional data ecosystem",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4056,
+      "body_end": 4099,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00013",
+      "text": "Among the eight countries in the HKH region, China holds a comparative advantage in terms of technological capabilities, financial resources, and infrastructure. According to official Chinese sources, the country has developed a comprehensive Earth observation system, including land, meteorological, and ocean satellites, with both the quantity and quality of data collection reaching world-class levels.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4101,
+      "body_end": 4506,
+      "source_links": [
+        "https://drc.xizang.gov.cn/gfdy/gfdy_xwzx/gfdy_xwzx_xwdd/202401/t20240102_396269.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00014",
+      "text": "In terms of academic research output, a search of major academic portals shows that the United States, the United Kingdom, China, Canada, Germany, and Switzerland lead the field in studies related to glacial lakes and GLOFs, forming the backbone of global publication and research activity in this area. India has also been catching up in data collection and risk management, especially after the multiple fatal disasters.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4508,
+      "body_end": 4930,
+      "source_links": [
+        "https://www.carbonbrief.org/catastrophic-2023-lake-outburst-in-india-driven-by-glacial-melt-and-permafrost-thaw/",
+        "https://www.dqxxkx.cn/CN/10.12082/dqxxkx.2024.230458"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00015",
+      "text": "However, while countries like China possess a wealth of scientific insights, their contributions are often locked behind language barriers, incompatible platforms, or political mistrust. Many Chinese glacier studies are published in domestic journals or government databases, which are inaccessible to the broader international community. “It’s not that China refuses to share data,” said a glaciologist who preferred to remain anonymous. “But we lack the platforms, the trust, and the interface.”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4932,
+      "body_end": 5429,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00016",
+      "text": "When it comes to glacial lake inventories and GLOF risk assessments, even Chinese scientists rely heavily on satellite data from US agencies like NASA and the United States Geological Survey (USGS). For example, a 2020 paper by Chinese scientists mapping glacial lakes in High Mountain Asia is primarily based on Landsat imagery, which is freely available through NASA and the US Geological Survey.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5431,
+      "body_end": 5829,
+      "source_links": [
+        "https://essd.copernicus.org/articles/12/2169/2020/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00017",
+      "text": "Global North domination: Open access isn’t equal access",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5831,
+      "body_end": 5886,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00018",
+      "text": "Open access to US satellite data has enabled global research, but accessibility is not equal. Countries like Nepal and Bhutan struggle with limited internet infrastructure, lack of technical expertise, and few trained personnel. These barriers complicate efforts in transboundary monitoring and early warning — especially frustrating given these countries’ high vulnerability and low contribution to global glacier melt.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5888,
+      "body_end": 6308,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00019",
+      "text": "Also, as Xu Baiqing points out, satellite data cannot provide real-time alerts. “Satellites like [NASA’s] Landsat help us analyze past events and assess trends,” he says, “but they cannot provide real-time warnings.” For that, geostationary or disaster-monitoring satellites are needed. And even they aren’t enough. Fieldwork remains essential for understanding and mitigating glacial hazards. Xu advocates for a more integrated Earth systems approach: merging big data infrastructure, scientific modeling, and field networks. AI-driven modeling, he notes, can help scientists better understand causes — not just symptoms — of glacial disasters.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6310,
+      "body_end": 6955,
+      "source_links": [
+        "https://landsat.gsfc.nasa.gov/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00020",
+      "text": "Yet even China — with its technological, financial, and human advantages — faces challenges in setting up field observation networks. When the Jinwuco lake burst in June 2020, Zhang Qianggong, head of the climate and environmental risks unit at the International Center for Integrated Mountain Development (ICIMOD), told Global Voices that transporting a single bag of cement to the site took one person three full days. Equipment transport alone can cost over CNY 300,000 (about USD 41,000).",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6957,
+      "body_end": 7449,
+      "source_links": [
+        "https://tc.copernicus.org/articles/15/3159/2021/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00021",
+      "text": "Amid such high risk and challenging conditions, Chinese authorities are investigating ways to prepare for future lake bursts in the region. Researchers noted in a Chinese Academy of Sciences (CAS) journal article:",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 7451,
+      "body_end": 7664,
+      "source_links": [
+        "https://www.cas.cn/cm/202008/t20200819_4756426.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00022",
+      "text": "> 青藏高原须高度警惕冰湖溃决风险。其中，喜马拉雅山、念青唐古拉山中东段冰湖溃决概率是其他区域的3倍。",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7666,
+      "body_end": 7717,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-843486-b00023",
+      "text": "> The Qinghai-Tibet Plateau must be highly vigilant against the risk of glacial lake outbursts. The probability of glacial lake outbursts in the Himalayas and the central and eastern sections of the Nyainqentanglha Mountains is three times higher than in other regions.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7719,
+      "body_end": 7988,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-843486-b00024",
+      "text": "Sustainability gaps and structural injustice",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7990,
+      "body_end": 8034,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00025",
+      "text": "In Nepal and elsewhere, even when ground-based early warning systems are installed, often with donor support, their long-term sustainability is in question. “The donor might pay for installation,” says Zhang, “but who replaces the batteries? Who trains the staff?” Without continued funding and capacity-building, these systems often fail within a few years, leaving communities exposed once again.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 8036,
+      "body_end": 8434,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00026",
+      "text": "This unequal access to tools, knowledge, and infrastructure means many high-risk glacial lakes remain unmonitored. Even when data exists, the questions of who controls it, who can interpret it, and who gets to act on it remain central. If scientific resources and early-warning systems stay concentrated in the Global North, while those most vulnerable in the Global South remain underequipped, the injustice at the heart of the climate crisis only deepens.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 8436,
+      "body_end": 8893,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00027",
+      "text": "This concern has intensified under US President Donald Trump’s administration, as key US climate science initiatives, such as NASA’s Surface Geology and Biology Mission, have faced significant funding cuts. The proposed end of the Landsat program, the world's largest and longest-running satellite-based record of Earth’s land, also sent shockwaves across the global research community — not just for its implications in the US, but for how dependent the world had become on US satellite data.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 8895,
+      "body_end": 9388,
+      "source_links": [
+        "https://nasawatch.com/earth-science/nasa-prepares-to-gut-its-landsat-capabilities/",
+        "https://www.eenews.net/articles/trump-budget-would-trigger-extinction-level-event-for-nasa/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00028",
+      "text": "Organizations like ICIMOD offer some hope. Through programs like the Hindu Kush Himalaya Monitoring and Assessment Programme (HIMAP), they facilitate regional assessments and cross-border data exchange. Still, such efforts remain limited in scale and funding. Experts argue that Europe, with its Alpine glacier expertise, could do more to promote cooperation and support scientific development in the Himalayas.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 9390,
+      "body_end": 9801,
+      "source_links": [
+        "https://www.icimod.org/initiative/himap/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00029",
+      "text": "Ultimately, to build real resilience, regional collaboration must go beyond diplomatic gestures. It must involve shared infrastructure, multilingual data portals, joint simulations, and sustained training programs. As glaciers recede, the window for meaningful collaboration is narrowing.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 9803,
+      "body_end": 10091,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-843486-b00030",
+      "text": "The next GLOF disaster is not a question of “if,” but “when.” The data can help — but only if it is shared, understood, and acted upon in time.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 10093,
+      "body_end": 10236,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "2993cd688adcb2e190f16002e782fd4037ca4f77b1000266785a0f17ee3119f3",
+  "word_count": 1492,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 3,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 10236,
+  "retrieved_at": "2026-11-16T22:48:02.185105+00:00",
+  "raw_html_sha256": "79fd51f9275dc0b6fcd9d00d7588e9db5e4ddca468a4a8fc1829908eae3ebe9d",
+  "resolved_source_url": "https://globalvoices.org/2025/10/12/how-data-gaps-deepen-climate-injustice-in-the-himalayas/",
+  "canonical_url": "https://globalvoices.org/2025/10/12/how-data-gaps-deepen-climate-injustice-in-the-himalayas/",
+  "source_bytes": 195819,
+  "authors": [
+    {
+      "name": "Qian Sun",
+      "url": "https://globalvoices.org/author/qian-sun/"
+    },
+    {
+      "name": "Sonia Awale",
+      "url": "https://globalvoices.org/author/sonia-awale/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 843486,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "79fd51f9275dc0b6fcd9d00d7588e9db5e4ddca468a4a8fc1829908eae3ebe9d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-135763058c41e57ce1eb",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-10",
+    "eligible_month_documents": 54,
+    "selected_month_documents": 45,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Qian Sun; Sonia Awale",
+  "body_start": 455,
+  "body_end": 10691,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "7eb69e5d054ca1d7dc63e6ce23db6fffc61b168f8c35287da23ff2693856bdea",
+  "text_path": "articles/gv-843486.txt",
+  "metadata_path": "metadata/gv-843486.json",
+  "attribution": "This story by Qian Sun; Sonia Awale originally appeared on Global Voices. https://globalvoices.org/2025/10/12/how-data-gaps-deepen-climate-injustice-in-the-himalayas/",
+  "content_sha256": "8119a61018898a66e321fef0c3d36db0b742433b22471b3ae3117e17cf653e98",
+  "source_sha256": "79fd51f9275dc0b6fcd9d00d7588e9db5e4ddca468a4a8fc1829908eae3ebe9d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

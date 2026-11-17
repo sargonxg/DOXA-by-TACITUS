@@ -1,0 +1,579 @@
+{
+  "schema_version": "3.0",
+  "artifact_kind": "paired_public_source_operational_pilot",
+  "executed_on": "2026-11-16",
+  "published_summary_on": "2026-11-17",
+  "source": {
+    "id": "us01",
+    "title": "The U.S. National Strategy to Counter Antisemitism",
+    "author": "White House, Biden administration",
+    "institution": "White House",
+    "published_at": "2023-05-25",
+    "source_url": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/05/U.S.-National-Strategy-to-Counter-Antisemitism.pdf",
+    "source_sha256": "e70a35577c2a2cee22f4fdce7f875bcaac06aa66b8e89abdd5f5b7aae49c9ef6",
+    "content_sha256": "8a74e1bd02e4c0baf897e5b4ecacea5163c7d8118e96751905bc8b40ebe7aaac",
+    "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK",
+    "attribution": "Source: United States Government. Federal-authored prose is public domain under 17 USC 105; third-party rights remain with their owners."
+  },
+  "selection": {
+    "method": "Two adjacent midpoint source units: units[len(units)//2:len(units)//2+2].",
+    "source_units": 2,
+    "scored_source_characters": 7701,
+    "character_unit": "unicode_code_points",
+    "max_unit_chars": 4000,
+    "context_sentences_each_side": 2,
+    "criteria_per_unit": 19,
+    "requested_decisions": 38,
+    "lens_ids": [
+      "discourse",
+      "ihra",
+      "jda",
+      "nexus",
+      "anti-muslim-hostility",
+      "anti-muslim-racism"
+    ],
+    "whole_document": false,
+    "whole_corpus": false,
+    "source_contents_included": false
+  },
+  "runs": [
+    {
+      "prompt_version": "contextual-decisions-3.1",
+      "strategy": "single_pass_dense_decisions_and_details",
+      "profile": {
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "response_model": "@cf/google/gemma-4-26b-a4b-it-external",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "contextual-decisions-3.1",
+        "response_schema_version": "source-vectors-3.1",
+        "pricing_checked_at": "2026-11-16",
+        "methodology_version": "3.0",
+        "unit_builder_version": "source-units-3.1",
+        "unit_builder_config": {
+          "max_unit_chars": 4000,
+          "context_sentences": 2
+        },
+        "result_codes": {
+          "0": "does_not_meet",
+          "1": "meets_criterion",
+          "2": "uncertain",
+          "3": "not_applicable"
+        },
+        "criterion_registry_version": "3.0.0",
+        "rubric_versions": {
+          "discourse": "1.0.0",
+          "ihra": "2026-11-operational-1",
+          "jda": "2021-operational-1",
+          "nexus": "2024-06-operational-1",
+          "anti-muslim-hostility": "2026-03-operational-1",
+          "anti-muslim-racism": "2025-operational-1"
+        },
+        "learning_snapshot_id": null,
+        "approved_example_ids": [],
+        "analysis_config_hash": "cb11c2e3c17dc821cc765e6c",
+        "cache_hit_decisions": 0
+      },
+      "requests": 10,
+      "attempts": [
+        {
+          "request": 1,
+          "units": 1,
+          "criteria": 19,
+          "max_tokens": 3200,
+          "seconds": 59.69,
+          "finish_reason": "length",
+          "usage": {
+            "input_tokens": 5892,
+            "output_tokens": 3200,
+            "cost_usd": 0.0015492000000000001,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 2,
+          "units": 1,
+          "criteria": 19,
+          "max_tokens": 3200,
+          "seconds": 31.67,
+          "finish_reason": "length",
+          "usage": {
+            "input_tokens": 6042,
+            "output_tokens": 3200,
+            "cost_usd": 0.0015642,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 3,
+          "units": 1,
+          "criteria": 6,
+          "max_tokens": 3200,
+          "seconds": 27.4,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 3718,
+            "output_tokens": 1369,
+            "cost_usd": 0.0007825,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 4,
+          "units": 1,
+          "criteria": 6,
+          "max_tokens": 3200,
+          "seconds": 2.0,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 3770,
+            "output_tokens": 63,
+            "cost_usd": 0.0003959,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 5,
+          "units": 1,
+          "criteria": 6,
+          "max_tokens": 3200,
+          "seconds": 25.56,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 3776,
+            "output_tokens": 1318,
+            "cost_usd": 0.000773,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 6,
+          "units": 1,
+          "criteria": 1,
+          "max_tokens": 3200,
+          "seconds": 3.12,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 2930,
+            "output_tokens": 48,
+            "cost_usd": 0.0003074,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 7,
+          "units": 1,
+          "criteria": 6,
+          "max_tokens": 3200,
+          "seconds": 37.82,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 3867,
+            "output_tokens": 1837,
+            "cost_usd": 0.0009378,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 8,
+          "units": 1,
+          "criteria": 6,
+          "max_tokens": 3200,
+          "seconds": 24.51,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 3920,
+            "output_tokens": 1730,
+            "cost_usd": 0.000911,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 9,
+          "units": 1,
+          "criteria": 6,
+          "max_tokens": 3200,
+          "seconds": 40.52,
+          "finish_reason": "length",
+          "usage": {
+            "input_tokens": 3926,
+            "output_tokens": 3200,
+            "cost_usd": 0.0013525999999999998,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 10,
+          "units": 1,
+          "criteria": 1,
+          "max_tokens": 3200,
+          "seconds": 1.51,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 3078,
+            "output_tokens": 46,
+            "cost_usd": 0.0003216,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        }
+      ],
+      "summed_request_seconds": 253.8,
+      "usage": {
+        "input_tokens": 40919,
+        "output_tokens": 16011,
+        "cost_usd": 0.0088952,
+        "requests": 10,
+        "estimated": true,
+        "unknown_cost_requests": 0
+      },
+      "coverage": {
+        "total_units": 2,
+        "accepted_units": 1,
+        "partial_units": 1,
+        "failed_units": 0,
+        "pending_units": 0,
+        "total_decisions": 38,
+        "accepted_decisions": 32,
+        "source_characters": 7701,
+        "processed_characters": 3856,
+        "total_blocks": 2,
+        "processed_blocks": 1,
+        "failed_blocks": 1,
+        "pending_blocks": 0,
+        "complete": false,
+        "semantic_analysis_performed": true,
+        "inference_requested": true,
+        "analysis_kind": "contextual_assessment",
+        "offset_unit": "unicode_code_points"
+      },
+      "noteworthy_assessments": 8,
+      "accepted_result_counts": {
+        "not_applicable": 13,
+        "meets_criterion": 7,
+        "does_not_meet": 11,
+        "uncertain": 1
+      },
+      "length_terminated_requests": 3,
+      "final_error_counts": {
+        "output_limit": 6
+      },
+      "recovered_decisions_after_output_limit": 32,
+      "recovery_count_basis": "Both initial unit envelopes were length-terminated; all 32 accepted decisions were obtained by smaller criterion retries."
+    },
+    {
+      "prompt_version": "contextual-decisions-3.2.1",
+      "strategy": "two_phase_vector_then_anchored_details",
+      "profile": {
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "response_model": "@cf/google/gemma-4-26b-a4b-it-external",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "response_schema_version": "source-vectors-3.2",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "methodology_version": "3.0",
+        "unit_builder_version": "source-units-3.1",
+        "unit_builder_config": {
+          "max_unit_chars": 4000,
+          "context_sentences": 2
+        },
+        "result_codes": {
+          "0": "does_not_meet",
+          "1": "meets_criterion",
+          "2": "uncertain",
+          "3": "not_applicable"
+        },
+        "wire_budget_version": "3.2.2",
+        "criterion_registry_version": "3.0.0",
+        "rubric_versions": {
+          "discourse": "1.0.0",
+          "ihra": "2026-11-operational-1",
+          "jda": "2021-operational-1",
+          "nexus": "2024-06-operational-1",
+          "anti-muslim-hostility": "2026-03-operational-1",
+          "anti-muslim-racism": "2025-operational-1"
+        },
+        "learning_snapshot_id": null,
+        "approved_example_ids": [],
+        "analysis_config_hash": "1a95e08694601a60312561a8",
+        "cache_hit_decisions": 0
+      },
+      "requests": 6,
+      "attempts": [
+        {
+          "request": 1,
+          "phase": "classify",
+          "units": 1,
+          "criteria": 19,
+          "max_tokens": 396,
+          "seconds": 5.09,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 5969,
+            "output_tokens": 98,
+            "cost_usd": 0.0006263,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 2,
+          "phase": "classify",
+          "units": 1,
+          "criteria": 19,
+          "max_tokens": 396,
+          "seconds": 2.27,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 6117,
+            "output_tokens": 96,
+            "cost_usd": 0.0006405,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 3,
+          "phase": "details",
+          "units": 1,
+          "criteria": 3,
+          "max_tokens": 1600,
+          "seconds": 16.18,
+          "finish_reason": "length",
+          "usage": {
+            "input_tokens": 3276,
+            "output_tokens": 1600,
+            "cost_usd": 0.0008076,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 4,
+          "phase": "details",
+          "units": 1,
+          "criteria": 3,
+          "max_tokens": 1600,
+          "seconds": 15.99,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 3426,
+            "output_tokens": 786,
+            "cost_usd": 0.0005784,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 5,
+          "phase": "details",
+          "units": 1,
+          "criteria": 1,
+          "max_tokens": 1600,
+          "seconds": 9.79,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 3143,
+            "output_tokens": 340,
+            "cost_usd": 0.00041630000000000004,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        },
+        {
+          "request": 6,
+          "phase": "details",
+          "units": 1,
+          "criteria": 3,
+          "max_tokens": 1600,
+          "seconds": 16.14,
+          "finish_reason": "stop",
+          "usage": {
+            "input_tokens": 3275,
+            "output_tokens": 820,
+            "cost_usd": 0.0005735,
+            "estimated": true,
+            "cost_basis": "configured_token_rates",
+            "tokens_estimated": false,
+            "requests": 1
+          }
+        }
+      ],
+      "summed_request_seconds": 65.46,
+      "usage": {
+        "input_tokens": 25206,
+        "output_tokens": 3740,
+        "cost_usd": 0.0036426,
+        "requests": 6,
+        "estimated": true,
+        "unknown_cost_requests": 0
+      },
+      "coverage": {
+        "total_units": 2,
+        "accepted_units": 2,
+        "partial_units": 0,
+        "failed_units": 0,
+        "pending_units": 0,
+        "total_decisions": 38,
+        "accepted_decisions": 38,
+        "source_characters": 7701,
+        "processed_characters": 7701,
+        "total_blocks": 2,
+        "processed_blocks": 2,
+        "failed_blocks": 0,
+        "pending_blocks": 0,
+        "complete": true,
+        "semantic_analysis_performed": true,
+        "inference_requested": true,
+        "analysis_kind": "contextual_assessment",
+        "offset_unit": "unicode_code_points"
+      },
+      "noteworthy_assessments": 7,
+      "accepted_result_counts": {
+        "does_not_meet": 15,
+        "meets_criterion": 7,
+        "not_applicable": 16
+      },
+      "length_terminated_requests": 1,
+      "final_error_counts": {},
+      "recovered_decisions_after_output_limit": 3,
+      "recovery_count_basis": "One 3-criterion detail response was length-terminated; the subsequent retry accepted all three."
+    }
+  ],
+  "comparison": {
+    "input_token_reduction_percent": 38.4003,
+    "output_token_reduction_percent": 76.6411,
+    "estimated_token_cost_reduction_percent": 59.0498,
+    "summed_request_duration_reduction_percent": 74.208,
+    "accepted_decisions_before": 32,
+    "accepted_decisions_after": 38,
+    "accuracy_improvement_claimed": false
+  },
+  "empty_array_diagnostic": {
+    "observed_profile": "Cloudflare managed Gemma 4 26B A4B IT; intermediate two-phase classification schema with a required details array constrained to maxItems=0.",
+    "observation": "A complete 19-code decision vector was followed by an opened details array and repeated whitespace until the completion cap.",
+    "finish_reason": "length",
+    "output_cap_tokens": 396,
+    "reported_prompt_tokens": 6115,
+    "reported_completion_tokens": 396,
+    "content_characters": 588,
+    "trailing_whitespace_characters": 447,
+    "reasoning_field_characters": 0,
+    "parseable_complete_json": false,
+    "workaround": "Omit details from classifier properties/required and remove its unused definition. Classification prompts request only the decisions property. Detail requests retain their separate schema.",
+    "final_classification_output_tokens": [
+      98,
+      96
+    ],
+    "scope_of_claim": "An observed interaction of this request/schema and hosted runtime, not evidence that all Gemma models, Cloudflare endpoints or empty arrays generally fail."
+  },
+  "accounting": {
+    "input_usd_per_million_tokens": 0.1,
+    "output_usd_per_million_tokens": 0.3,
+    "rates_checked_on": "2026-11-16",
+    "cost_basis": "Provider-reported token counts multiplied by configured rates; estimated token charges, not an invoice.",
+    "timing_basis": "Sum of per-request elapsed seconds rounded in the original trace; not end-to-end elapsed time or a service SLA.",
+    "included": "Failed and recovery requests in each displayed run.",
+    "excluded": "Earlier diagnostic runs, blocked local-sandbox connection waits, free-tier discounts, hosting, storage, extraction, report generation and operator time."
+  },
+  "verification": {
+    "source_metadata_path": "corpus/documents/us01.json",
+    "source_hashes_crosschecked_against_public_commit": "649c4a2",
+    "trace_basis": "Local raw pilot artifacts; public summary whitelists metrics and profiles only.",
+    "schema_check_on": "2026-11-17",
+    "schema_validation": "Classification and detail schemas pass JSON Schema Draft 2020-12 meta-schema validation. All object properties are required and additionalProperties=false. Valid fixed-length sample accepted; short vectors, invalid unit IDs and classifier details property rejected.",
+    "portability_limit": "Schema validity and one hosted-model test do not prove constrained-decoder support on every OpenAI-compatible, Ollama or vLLM runtime. Each exact model/runtime requires a capability smoke test.",
+    "independent_human_labels": false,
+    "interpretation_accuracy": null,
+    "calibration": null,
+    "model_revision": "unresolved"
+  },
+  "confidence_scope": {
+    "operational_measurements": "Directly observed in these traces.",
+    "semantic_quality": "Unestablished; exact source anchoring validates provenance, not the interpretation.",
+    "generalization": "Low: one institutional source, two adjacent units, one managed model and one execution period.",
+    "causal_attribution": "Prompt, schema, output caps and decomposition changed together; no isolated causal or statistical comparison."
+  },
+  "limitations": [
+    "This is a small engineering pilot, not a representative political/news evaluation.",
+    "Noteworthy counts changed from 8 to 7; neither count has an adjudicated reference label.",
+    "One final-profile detail response still required output-limit recovery.",
+    "Full-source/full-corpus completion and a 99% acceptance rate require their own final checkpoints.",
+    "Managed model weights were not pinned by an immutable provider revision."
+  ],
+  "privacy": {
+    "source_quotes_included": false,
+    "source_contexts_included": false,
+    "credentials_included": false,
+    "environment_values_included": false,
+    "private_gateway_urls_included": false
+  },
+  "primary_references": [
+    "https://developers.cloudflare.com/workers-ai/models/gemma-4-26b-a4b-it/",
+    "https://ai.google.dev/gemma/docs/gemma_4_license",
+    "https://huggingface.co/google/gemma-4-26B-A4B-it",
+    "https://docs.ollama.com/capabilities/structured-outputs",
+    "https://docs.vllm.ai/en/latest/features/structured_outputs/"
+  ]
+}

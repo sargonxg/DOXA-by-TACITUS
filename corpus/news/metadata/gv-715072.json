@@ -1,0 +1,396 @@
+{
+  "id": "gv-715072",
+  "publisher_id": 715072,
+  "source_id": "globalvoices:715072",
+  "source_url": "https://globalvoices.org/2020/08/06/the-chilling-tale-of-mass-surveillance-and-spying-in-rwanda/",
+  "title": "The chilling tale of mass surveillance and spying in Rwanda",
+  "published_at": "2020-08-06T13:55:23Z",
+  "modified_at": "2020-08-06T19:21:26Z",
+  "api_author_id": 2730,
+  "api_content_sha256": "cc737f3f171f3c348fb5b032f0335a7614d97382491b41d9deffe54911eea667",
+  "api_response_sha256": "d0d9c566ef851f55d3c5c375de27a43b42ee1a38db6cc7e8774e7fb67296eb3f",
+  "api_retrieved_at": "2026-11-16T22:20:28.059895+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 258,
+      "count": 8694,
+      "name": "History",
+      "slug": "history",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 7,
+      "count": 6125,
+      "name": "Ideas",
+      "slug": "ideas",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 133,
+      "count": 262,
+      "name": "Rwanda",
+      "slug": "rwanda",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-715072-b00001",
+      "text": "This article is part of UPROAR, a Small Media initiative that is urging governments to address digital rights challenges at the Universal Periodic Review (UPR).",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 160,
+      "source_links": [
+        "https://uproar.fyi/",
+        "https://www.ohchr.org/en/hrbodies/upr/pages/uprmain.aspx"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00002",
+      "text": "The Rwandan state is built on two competing narratives.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 162,
+      "body_end": 217,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00003",
+      "text": "On the one hand, Rwanda is the West’s “donor darling,” seen as a shining example of African development, especially when it comes to internet development and digital transformation. Rwanda has received global acclaim for its expansive mobile network coverage, impressive 4G network coverage, and local smartphone manufacturing.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 219,
+      "body_end": 546,
+      "source_links": [
+        "https://www.usnews.com/news/technology/articles/2019-10-07/rwanda-launches-first-made-in-africa-smartphones"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00004",
+      "text": "On the other hand, it operates as an authoritarian state with hegemonic, tightly centralized power. The ruling Rwandan Patriotic Front (RPF) party has positioned itself as the only guarantor of peace, security and development after the country underwent a massive political transition in the wake of the 1994 genocide and civil war, when many politicians, journalists, and civil society actors were killed, displaced or discredited.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 548,
+      "body_end": 980,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00005",
+      "text": "The state justifies its tight control over media freedoms, suppression of dissent, and hostility toward opposition as issues of national unity, safety and security, specifically targeting a politically active diaspora who fled Rwanda to live in exile after the war, including former members of armed rebel movements based in the eastern Democratic Republic of Congo, as well as former government figures who fled Rwanda to join political parties in Europe and the United States.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 982,
+      "body_end": 1460,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00006",
+      "text": "Given the country’s history of divisive ethnic violence, the government has developed a sophisticated strategy of actively monitoring and dismantling opposition voices through cyber-surveillance, threats and violence — not just within the Great Lakes region but across the world.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1462,
+      "body_end": 1741,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00007",
+      "text": "Over the past three years, the state has also broadened its local mass surveillance capacities with the recent implementation of closed-circuit TV cameras network (CCTV) throughout neighborhoods in Kigali, the capital.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1743,
+      "body_end": 1961,
+      "source_links": [
+        "https://paradigmhq.org/digital-surveillance-should-rwandans-be-worried/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00008",
+      "text": "There have been many examples of the state allegedly deploying technology against dissidents and opposition members, as evidenced in several court cases where the prosecution presented private communications sourced from mobile chats apps.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1963,
+      "body_end": 2202,
+      "source_links": [
+        "https://www.newtimes.co.rw/section/read/182802"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00009",
+      "text": "In September 2017, evidence surfaced that the national security and intelligence service was using technology and other spyware to monitor the online activities of dissidents and opposition members.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2204,
+      "body_end": 2402,
+      "source_links": [
+        "https://www.newtimes.co.rw/section/read/186441"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00010",
+      "text": "For example, just a few months after politician Diane Rwigara announced her presidential bid in 2017, she was arrested, along with her mother and sister, on trumped charges of tax evasion and incitement against the government. During the pre-trial hearing, the prosecution presented a WhatsApp audio message allegedly taken from the mobile phones of Rwigara and her mother as evidence against them. It is believed that the authorities got hold of the messages through the use of spyware.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2404,
+      "body_end": 2891,
+      "source_links": [
+        "https://www.hrw.org/world-report/2019/country-chapters/rwanda#"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00011",
+      "text": "In 2019, an investigative report by the Financial Times shed more light on the state’s tendency to closely monitor citizens’ social media usage. The report revealed the state’s possible use of Pegasus spyware, made by an Israeli tech company.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2893,
+      "body_end": 3135,
+      "source_links": [
+        "https://finance.yahoo.com/news/whatsapp-hack-used-israeli-spyware-070607026.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00012",
+      "text": "Through Pegasus spyware, security agencies can collect data from citizens’ smartphones without a trace, including phone calls, contacts, passwords and any data transmitted over applications like WhatsApp or Skype.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3137,
+      "body_end": 3350,
+      "source_links": [
+        "https://cpj.org/2019/11/cpj-safety-advisory-journalist-targets-of-pegasus/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00013",
+      "text": "The right to privacy is enshrined in the constitution of the Republic of Rwanda as well as in the International Covenant on Civil and Political Rights (ICCPR) to which Rwanda is a signatory.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3352,
+      "body_end": 3542,
+      "source_links": [
+        "https://www.constituteproject.org/constitution/Rwanda_2015.pdf?lang=en",
+        "https://www.ohchr.org/en/professionalinterest/pages/opccpr1.aspx"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00014",
+      "text": "But law nº60/2013 regulating the interception of communications authorizes the prosecutor to issue a “verbal warrant” to national security and intelligence service to watch, intercept and decrypt any information generated, transmitted, received or stored in any computer resource for reasons of national security.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3544,
+      "body_end": 3857,
+      "source_links": [
+        "http://197.243.22.137/minaloc/fileadmin/documents/Minaloc_Documents/LODA.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00015",
+      "text": "Further, the absence of specific legislation on personal data protection has given Rwandan security services unfettered discretion to collect data with impunity.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3859,
+      "body_end": 4020,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00016",
+      "text": "When the state abuses surveillance tools, it puts all citizens at risk. Rwanda currently lacks an appropriate legal framework to guide the usage of online technologies in the context of national security.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4022,
+      "body_end": 4226,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715072-b00017",
+      "text": "The state must consider how to regulate the usage and application of these new technologies. Authorization must rely on objective evidence that comes from a judge or another independent, legal body. Additionally, the state should prohibit the indiscriminate collection of personal data, making allowances only when absolutely necessary.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4228,
+      "body_end": 4564,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "0b5a66c1851c18ceba0b533c41096713af8ec3f5001f65acfcf783e098878e49",
+  "word_count": 675,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 4564,
+  "retrieved_at": "2026-11-16T22:26:40.608243+00:00",
+  "raw_html_sha256": "459a79932cf706a49264b33b12c38df36358e75fd782403c7b79aaad030d14cc",
+  "resolved_source_url": "https://globalvoices.org/2020/08/06/the-chilling-tale-of-mass-surveillance-and-spying-in-rwanda/",
+  "canonical_url": "https://globalvoices.org/2020/08/06/the-chilling-tale-of-mass-surveillance-and-spying-in-rwanda/",
+  "source_bytes": 188913,
+  "authors": [
+    {
+      "name": "Louis Gitinywa",
+      "url": "https://globalvoices.org/author/louis-gitinwya/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 715072,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "459a79932cf706a49264b33b12c38df36358e75fd782403c7b79aaad030d14cc",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-af941cfa2d9dff9363be",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-08",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Louis Gitinywa",
+  "body_start": 456,
+  "body_end": 5020,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "d68df7daf6ad3c28d245beed9fcee5c1f576aefe01d01fd67193905da230dba3",
+  "text_path": "articles/gv-715072.txt",
+  "metadata_path": "metadata/gv-715072.json",
+  "attribution": "This story by Louis Gitinywa originally appeared on Global Voices. https://globalvoices.org/2020/08/06/the-chilling-tale-of-mass-surveillance-and-spying-in-rwanda/",
+  "content_sha256": "c9e57bb409888fb5dda8d10006d7fe825cd6d123033d0ba87da2572db55feb02",
+  "source_sha256": "459a79932cf706a49264b33b12c38df36358e75fd782403c7b79aaad030d14cc",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

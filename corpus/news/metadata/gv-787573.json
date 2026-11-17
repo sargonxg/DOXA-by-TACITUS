@@ -1,0 +1,704 @@
+{
+  "id": "gv-787573",
+  "publisher_id": 787573,
+  "source_id": "globalvoices:787573",
+  "source_url": "https://globalvoices.org/2023/05/18/getting-the-balkans-wrong-the-foreign-coverage-crisis/",
+  "title": "Getting the Balkans wrong: The foreign coverage crisis",
+  "published_at": "2023-05-18T00:08:50Z",
+  "modified_at": "2023-05-18T00:08:50Z",
+  "api_author_id": 2806,
+  "api_content_sha256": "b637f94e2f0da1a08896179e0ca0d42f5a1ae3ab5ebbbeb7163f47d29edb615a",
+  "api_response_sha256": "54f78f672a26b6c6455fead63a0e1446e0433e81dd766bf7ded37091ab7c5c37",
+  "api_retrieved_at": "2026-11-16T22:20:52.946884+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 58,
+      "count": 306,
+      "name": "Albania",
+      "slug": "albania",
+      "parent": 57
+    },
+    {
+      "id": 60,
+      "count": 611,
+      "name": "Bosnia and Herzegovina",
+      "slug": "bosnia-herzegovina",
+      "parent": 57
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 695,
+      "count": 230,
+      "name": "Kosovo",
+      "slug": "kosovo",
+      "parent": 57
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 294,
+      "count": 334,
+      "name": "Montenegro",
+      "slug": "montenegro",
+      "parent": 57
+    },
+    {
+      "id": 68,
+      "count": 840,
+      "name": "North Macedonia",
+      "slug": "macedonia",
+      "parent": 57
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 293,
+      "count": 1214,
+      "name": "Serbia",
+      "slug": "serbia",
+      "parent": 57
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-787573-b00001",
+      "text": "This article by Natalie Sarkic-Todd was originally published on The Battleground, and is republished on Global Voices as part of a content-sharing agreement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 157,
+      "source_links": [
+        "http://www.thebattleground.eu/",
+        "https://thebattleground.eu/2023/05/09/getting-the-balkans-wrong/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00002",
+      "text": "The Western Balkans are notoriously difficult to fathom. The evolving regional map of countries, borders, ethnicities and faiths is so complex that it requires more preparation to cover than other parts of Europe.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 159,
+      "body_end": 372,
+      "source_links": [
+        "https://www.eeas.europa.eu/eeas/western-balkans_en"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00003",
+      "text": "It’s not enough to know local politics and institutions. You need to get to know the culture and society.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 374,
+      "body_end": 479,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00004",
+      "text": "That’s the payoff, as the Czech ambassador to Montenegro, Janina Hrebičkova, said in Podgorica at the recent book launch of A History of Montenegro, penned by her compatriot and fellow Balkan specialist Frantisek Sistek.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 481,
+      "body_end": 701,
+      "source_links": [
+        "https://www.maticacrnogorska.me/files/%C5%A0istek%20Istorija%20Crne%20Gore.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00005",
+      "text": "Soft diplomacy is essential for decoding the Balkans. So it’s all the more surprising when diplomats get it wrong. Take the case of the French ambassador to Montenegro, Christian Thimonier, who was heavily criticised for an ill-informed comment he made in March concerning an incident involving Montenegrin president-elect, Yakov Milatović.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 703,
+      "body_end": 1043,
+      "source_links": [
+        "https://balkaninsight.com/2023/03/13/montenegro-opposition-criticises-ambassadors-condemnation-of-fascist-election-violence/",
+        "https://www.slobodnaevropa.org/a/francuski-ambasador-dio-izborne-kampanje/32317403.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00006",
+      "text": "On a presidential campaign stop in Cetinje last March, Milatović was met by local protesters. They were angered by rumours (denied by the candidate) that he had downplayed the risk to Montenegrin lives when police had enforced the enthronement of the Serbian Orthodox Metropolitan in Cetinje in 2022.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1045,
+      "body_end": 1345,
+      "source_links": [
+        "https://balkaninsight.com/2021/09/03/serbian-church-leaders-enthronement-raises-tensions-in-montenegro/",
+        "https://www.cdm.me/politika/cetinjani-protestovali-zbog-odrzavanja-tribine-jakova-milatovica/",
+        "https://www.vijesti.me/vijesti/drustvo/576964/milatovic-sa-gnusanjem-odbacujem-navode-gradske-televizije-da-sam-ikada-trgovao-zivotima-gradjana-cg",
+        "https://www.vijesti.me/vijesti/politika/647081/milatovic-napadnut-na-cetinju-demonstranti-probali-da-sprijece-da-udje-na-konvenciju"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00007",
+      "text": "Milatović was confronted by the protestors and manhandled by his security as they sought to protect him. The incident was reported as an “attack” in the media.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1347,
+      "body_end": 1506,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00008",
+      "text": "Thimonier described it as an act of “fascist aggression” to a national newspaper and found himself at the centre of a media storm.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1508,
+      "body_end": 1638,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00009",
+      "text": "The fact that Cetinje is a renowned stronghold of antifascist resistance seemed to have momentarily escaped him.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1640,
+      "body_end": 1752,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00010",
+      "text": "The ambassador was obliged to clarify that he was not attributing his comment to the people of Cetinje and recognised their historic antifascism.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1754,
+      "body_end": 1899,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00011",
+      "text": "Moving to North Macedonia, take the March visit of the European Union’s High Representative of the EU for Foreign Affairs and Security Policy, Josep Borrell, to the lakeside resort of Ohrid.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1901,
+      "body_end": 2091,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00012",
+      "text": "There, Borrell presided over an agreement brokered by the EU between President Aleksandar Vučić of Serbia and Prime Minister Albin Kurti of Kosovo.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2093,
+      "body_end": 2240,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00013",
+      "text": "The European Commission’s foreign policy chief heralded it as a long-awaited breakthrough in normalising relations between the two states. Only, Vučić refused to sign the agreement, leaving Borrell to declare success in principle, not on paper.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2242,
+      "body_end": 2486,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00014",
+      "text": "The Serbian president was backtracking just days later, leaving the agreement dead in the water. But not before Serbia had received its largest-ever EU funding commitment of EUR 600 million (USD 652,400).",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2488,
+      "body_end": 2692,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00015",
+      "text": "It seems that Aleksandar Vučić has been taking a leaf out of Viktor Orbán’s playbook, which has worked very well for Hungary but less so for the European Union. It never ceases to amaze analysts how the EU gets played in the Balkans.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2694,
+      "body_end": 2927,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00016",
+      "text": "It’s not just diplomats and top politicians who can get the Balkans wrong. Media also make mistakes.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2929,
+      "body_end": 3029,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00017",
+      "text": "Whereas the 1990s Yugoslav wars produced a cohort of foreign correspondents who cut their teeth on the Balkans, most of them have long since moved on. The American-owned Associated Press and US government-backed Cold War icon Radio Free Europe still provide accurate, if laconic, reporting.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3031,
+      "body_end": 3321,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00018",
+      "text": "Unsurprisingly, Qatari broadcaster Al Jazeera has taken the most significant initiative, creating its own regional brand, Al Jazeera Balkans, a Serbo-Croatian channel headquartered in Sarajevo with local studios in Belgrade, Skopje and Zagreb.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3323,
+      "body_end": 3566,
+      "source_links": [
+        "https://balkans.aljazeera.net/",
+        "https://www.aljazeera.net/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00019",
+      "text": "Al-Jazeera Balkans is an exception to the rule. Most of today’s international news media can no longer afford to retain correspondents in the area and don’t consider the Western Balkans a priority beat. So, regional expertise has been lost. Most foreign coverage of the region is patchy, provided by part-time stringers and local journalists with their own agendas.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3568,
+      "body_end": 3933,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00020",
+      "text": "The occasional star journalist is parachuted in from the outside when events dictate an uptick in global coverage or a foreign news platform decides to invest in a big story.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3935,
+      "body_end": 4109,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00021",
+      "text": "The problem is that independent, in-depth journalism is hard to sustain in such circumstances. Mistakes, by omission or commission, occur.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4111,
+      "body_end": 4249,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00022",
+      "text": "The most glaring recent example was the Balkan Investigative Reporting Network’s (BIRN) map of far-right and extremist organisations in the Western Balkans, published last November. To general dismay, it included peaceful protestors, journalists and civic activists. The group of women’s rights advocates who had protested silently against the patriarchy of the Orthodox Church in Montenegro were astounded to find their name on the list.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4251,
+      "body_end": 4689,
+      "source_links": [
+        "https://far-rightmap.balkaninsight.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00023",
+      "text": "How did BIRN get it so badly wrong? Having read a selection of articles on Montenegro published by BIRN, in this article’s reading, the quality of their local reporting let them down.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4691,
+      "body_end": 4874,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00024",
+      "text": "BIRN has announced an independent review of their investigative report and is hiring a new team to cover Montenegro. Finding independent-minded journalists will be key to their success.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4876,
+      "body_end": 5061,
+      "source_links": [
+        "https://balkaninsight.com/map_countries/montenegro/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00025",
+      "text": "I have my own experience of media falling prey to false narratives about the Balkans when I worked in Brussels for an EU media network that became the target of Russian influence operations. Not directly, or obviously, of course. But when a report was commissioned by a proxy on the “Political Crisis in Montenegro,” I immediately recognised the signs.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5063,
+      "body_end": 5415,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00026",
+      "text": "At that time, elections had passed off peacefully despite a behind-the-scenes coup attempt, later shown to be linked to Russian operatives. A potential democratic crisis had been averted.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5417,
+      "body_end": 5604,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00027",
+      "text": "The report was intended to sway political and public opinion in a last-ditch effort to obstruct NATO accession, and was timed just as Donald Trump had come to power and was expressing reservations about the alliance.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5606,
+      "body_end": 5822,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00028",
+      "text": "The U.S. president was the only remaining signatory standing in the way of Montenegro’s Euro-Atlantic path. I raised the alarm with management, explaining the likely motivation and reputation risk to the media.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5824,
+      "body_end": 6034,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00029",
+      "text": "I can’t say they took my concerns seriously, but the editor-in-chief did and worked hard to make the report more balanced and objective than it would otherwise have been.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6036,
+      "body_end": 6206,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00030",
+      "text": "A few years after, the third party who commissioned the report was cited in an investigation into the aborted coup and was suspected of using Russian money to pay for political and media influence campaigns.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6208,
+      "body_end": 6415,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00031",
+      "text": "It should be said that there are illustrious examples of journalism and insightful political commentary on the Balkans.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 6417,
+      "body_end": 6536,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00032",
+      "text": "The New York Times has just published a bone-chilling exposé on the criminal underworld swirling around Serbia’s President Vućić. Most of it, though shocking in its brutality, is not a surprise to those who follow Balkan politics.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 6538,
+      "body_end": 6768,
+      "source_links": [
+        "https://www.nytimes.com/2023/05/03/magazine/aleksandar-vucic-veljko-belivuk-serbia.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00033",
+      "text": "However, it should be a wake-up call to the Biden administration and the European Commission, who have been soft-pedalling on Serbia while holding the rest of the region hostage to its interests. They should have known better.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 6770,
+      "body_end": 6996,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00034",
+      "text": "Thanks to good journalism, now they do.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 6998,
+      "body_end": 7037,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00035",
+      "text": "Of course, there are seasoned Balkan journalists trained in the former Yugoslav tradition of public service media. They have been fighting a losing battle against state and corporate capture, sticking admirably to their journalistic principles, often despite threats to their reputation and person.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 7039,
+      "body_end": 7337,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00036",
+      "text": "Take the example of Drasko Duranović, editor-in-chief of Montenegro’s oldest daily newspaper Pobjeda. A strong critic of the government, Duranović was singled out for personal attack by Prime Minister Dritan Abazović as the premier fought for his political survival.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 7339,
+      "body_end": 7605,
+      "source_links": [
+        "https://www.pobjeda.me/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00037",
+      "text": "Other media critical of the premier have also been threatened.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 7607,
+      "body_end": 7669,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00038",
+      "text": "The Battleground occasionally republishes Pobjeda’s political analysis and editorial opinion pieces in English. They can be searingly critical and bitingly sarcastic but never unprofessional.",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 7671,
+      "body_end": 7862,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00039",
+      "text": "Fortunately, there are an increasing number of fact-checking organisations that do the dogged work of refuting disinformation that gets pumped into the Balkans.",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 7864,
+      "body_end": 8024,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00040",
+      "text": "Meta.mk, Metamorphosis and the Anti-Disinformation Network for the Balkans are some of the disinformation-busting initiatives that The Battleground exchanges content with, thanks to our partnership with international media network Global Voices.",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 8026,
+      "body_end": 8271,
+      "source_links": [
+        "https://antidisinfo.net/",
+        "https://globalvoices.org/author/balkan-diskurs/",
+        "https://meta.mk/",
+        "https://metamorphosis.org.mk/en/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00041",
+      "text": "By joining forces, we amplify fact-based analysis to counter misleading narratives in and outside the region. And help audiences understand what’s going on in a part of Europe that continues to intrigue and confound in equal measure.",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 8273,
+      "body_end": 8506,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00042",
+      "text": "So when it comes to the Western Balkans, there are a few golden rules:",
+      "page": null,
+      "paragraph": 42,
+      "body_start": 8508,
+      "body_end": 8578,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00043",
+      "text": "Check your own biases as well as those of your sources; judge the region’s leaders by their actions, not their words; hold governments and politicians to international standards of democracy and accountability, and be mindful that Balkan independent media are an endangered species and the region is flooded with disinformation.",
+      "page": null,
+      "paragraph": 43,
+      "body_start": 8580,
+      "body_end": 8908,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-787573-b00044",
+      "text": "Getting the Western Balkans right is definitely a challenge, but one that will repay the effort. Given the region’s role in triggering World War I and the resurgence of European nationalism after the Cold War, the reasons couldn’t be any clearer.",
+      "page": null,
+      "paragraph": 44,
+      "body_start": 8910,
+      "body_end": 9156,
+      "source_links": [
+        "https://books.openedition.org/ceup/571?lang=en",
+        "https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand",
+        "https://en.wikipedia.org/wiki/Cold_War"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "eb1576fcbe8a9eba561e5b1e1c3b3007744a9c01f6df3a2fddb622a8a0c1b950",
+  "word_count": 1419,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 6,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 9156,
+  "retrieved_at": "2026-11-16T22:39:15.690098+00:00",
+  "raw_html_sha256": "dcaebdb0b25866e0c261ade6ff174748e13cb37583edc7280c6a122fc674f78e",
+  "resolved_source_url": "https://globalvoices.org/2023/05/18/getting-the-balkans-wrong-the-foreign-coverage-crisis/",
+  "canonical_url": "https://globalvoices.org/2023/05/18/getting-the-balkans-wrong-the-foreign-coverage-crisis/",
+  "source_bytes": 194715,
+  "authors": [
+    {
+      "name": "The Battleground",
+      "url": "https://globalvoices.org/author/the-battleground/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 787573,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "dcaebdb0b25866e0c261ade6ff174748e13cb37583edc7280c6a122fc674f78e",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-d7adca7825028a58e2bd",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-05",
+    "eligible_month_documents": 130,
+    "selected_month_documents": 109,
+    "inclusion_probability": 0.8384615384615385,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "The Battleground",
+  "body_start": 447,
+  "body_end": 9603,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "9a568851e45c432ff8de89697ebb5d9ae78060b63e702c80b21ff3c7553c6508",
+  "text_path": "articles/gv-787573.txt",
+  "metadata_path": "metadata/gv-787573.json",
+  "attribution": "This story by The Battleground originally appeared on Global Voices. https://globalvoices.org/2023/05/18/getting-the-balkans-wrong-the-foreign-coverage-crisis/",
+  "content_sha256": "e68ba4370d4b3360cb996d2ba50cbde8b839b07f40ead54f467d62415f196065",
+  "source_sha256": "dcaebdb0b25866e0c261ade6ff174748e13cb37583edc7280c6a122fc674f78e",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

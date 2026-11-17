@@ -1,0 +1,541 @@
+{
+  "id": "gv-718763",
+  "publisher_id": 718763,
+  "source_id": "globalvoices:718763",
+  "source_url": "https://globalvoices.org/2020/09/18/australian-government-on-collision-course-with-facebook-and-google-over-news-revenue/",
+  "title": "Australian government on collision course with Facebook and Google over news revenue",
+  "published_at": "2020-09-18T16:39:39Z",
+  "modified_at": "2020-09-23T03:09:56Z",
+  "api_author_id": 569,
+  "api_content_sha256": "c04eff398db1f8f63156c2a9e34c283d9811aeef3fa2c9e3dcf00a3063dce4ed",
+  "api_response_sha256": "f9cee3b5e82058a53a72abf37f4b8c608c3497ca79effe33e36fced5052a4cbe",
+  "api_retrieved_at": "2026-11-16T22:20:29.692733+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 214,
+      "count": 574,
+      "name": "Australia",
+      "slug": "australia",
+      "parent": 212
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 212,
+      "count": 808,
+      "name": "Oceania",
+      "slug": "oceania",
+      "parent": 219
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-718763-b00001",
+      "text": "In what could be a world first if successful, the Australian government has drafted laws that would force tech giants Facebook and Google to negotiate with media companies over payment for linking to their news stories. The tech giants have responded defiantly.Flaw",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 265,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00002",
+      "text": "The dispute has its seeds in a request by the Federal government for the Australian Competition and Consumer Commission (ACCC). In December 2017, the ACCC was directed to consider the impact of online search engines, social media and digital content aggregators (digital platforms) on competition in the media and advertising services markets. Its final report was published in 2019 and a draft bill was posted on 31 July 2020.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 267,
+      "body_end": 694,
+      "source_links": [
+        "https://www.accc.gov.au/system/files/Digital%20platforms%20inquiry%20-%20final%20report%20-executive%20summary.pdf",
+        "https://www.accc.gov.au/system/files/Exposure%20Draft%20Bill%20-%20TREASURY%20LAWS%20AMENDENT%20%28NEWS%20MEDIA%20AND%20DIGITAL%20PLATFORMS%20MANDATORY%20BARGAINING%20CODE%29%20BILL%202020.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00003",
+      "text": "Draft legislation would establish a code of conduct, requiring negotiations between the parties that could result in payment to the publishers of the content. Compulsory arbitration would follow if agreement could not be reached.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 696,
+      "body_end": 925,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00004",
+      "text": "As can be expected, most of the large media companies support the code, including the Guardian as it admits in its explainer:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 927,
+      "body_end": 1052,
+      "source_links": [
+        "https://www.theguardian.com/technology/2020/sep/05/why-google-and-facebook-are-being-asked-to-pay-for-the-news-they-use-explainer"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00005",
+      "text": "> The government, acting on the advice of its competition regulator, accepts the argument that the platforms benefit far more, and that their substantial market power means the news companies do not have the capacity to demand a better deal. It also accepts the argument that this lopsided relationship jeopardises the capacity of the media to continue to play their essential role in society.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1054,
+      "body_end": 1447,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-718763-b00006",
+      "text": "The vested interests of Australian-based media may help to explain why there seems to be confusion about the difference between using links to news and publishing the actual content of the stories. They foster the common belief that the platforms are gaining advertising revenue from these links, money that should be going to the news producers.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1449,
+      "body_end": 1795,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00007",
+      "text": "Google and Facebook react",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1797,
+      "body_end": 1822,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00008",
+      "text": "Apparently Google is prepared to pay for content and has undertaken some negotiations about doing this. They have mounted a publicity and lobbying campaign, with a letter to the ACCC posted on their platforms in Australia. The latest update to their open letter outlines their position.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1824,
+      "body_end": 2110,
+      "source_links": [
+        "https://about.google/google-in-australia/an-open-letter/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00009",
+      "text": "They have also highlighted part of the proposed laws requiring them to give the big news organisations notice of changes to search rankings and algorithms. It warns that ‘Search and YouTube, which are free services, are at risk in Australia’ without being specific about their future.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2112,
+      "body_end": 2396,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00010",
+      "text": "Moreover, Google News in Australia is under threat, according to the tech giant.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2398,
+      "body_end": 2478,
+      "source_links": [
+        "https://www.adnews.com.au/news/google-rules-out-closing-google-news"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00011",
+      "text": "Facebook has threatened to remove the news content from its site:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2480,
+      "body_end": 2545,
+      "source_links": [
+        "https://about.fb.com/news/2020/08/changes-to-facebooks-services-in-australia/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00012",
+      "text": "> […] we will reluctantly stop allowing publishers and people in Australia from sharing local and international news on Facebook and Instagram.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2547,
+      "body_end": 2690,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-718763-b00013",
+      "text": "It has already changed its terms of service in Australia to enable this to happen:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2692,
+      "body_end": 2774,
+      "source_links": [
+        "https://punchng.com/facebook-updates-terms-of-service/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00014",
+      "text": "> Effective October 1, 2020, section 3.2 of our Terms of Service will be updated to include: ‘We also can remove or restrict access to your content, services or information if we determine that doing so is reasonably necessary to avoid or mitigate adverse legal or regulatory impacts to Facebook’",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2776,
+      "body_end": 3072,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-718763-b00015",
+      "text": "Facebook has also offered a carrot:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3074,
+      "body_end": 3109,
+      "source_links": [
+        "https://about.fb.com/news/2020/08/changes-to-facebooks-services-in-australia/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00016",
+      "text": "> We already invest millions of dollars in Australian news businesses and, during discussions over this legislation, we offered to invest millions more. We had also hoped to bring Facebook News to Australia, a feature on our platform exclusively for news, where we pay publishers for their content.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3111,
+      "body_end": 3409,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-718763-b00017",
+      "text": "Online commentary",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3411,
+      "body_end": 3428,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00018",
+      "text": "The sums of money being talked about could well exceed $AUD 600 million [USD 40 million] according to Crikey’s Bernard Keane, politics editor at Crikey, an independent news website in Australia.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3430,
+      "body_end": 3624,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00019",
+      "text": "However, he rejects the government position arguing that it is stealing money from successful companies:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3626,
+      "body_end": 3730,
+      "source_links": [
+        "https://www.crikey.com.au/2020/08/28/google-facebook-accc-changes/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00020",
+      "text": "> The government’s proposed News Media and Digital Platforms Mandatory Bargaining Code would be a draconian regulation to force two explicitly identified companies, Google and Facebook, to hand an unlimited amount of revenue over to Australian media companies, justified by a fiction that those companies steal news content.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3732,
+      "body_end": 4056,
+      "source_links": [
+        "https://www.accc.gov.au/system/files/Exposure%20Draft%20Bill%20-%20TREASURY%20LAWS%20AMENDENT%20%28NEWS%20MEDIA%20AND%20DIGITAL%20PLATFORMS%20MANDATORY%20BARGAINING%20CODE%29%20BILL%202020.pdf"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-718763-b00021",
+      "text": "> […] The code is justified by a News Corp lie, that Google steals news content and makes billions of dollars from it.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4058,
+      "body_end": 4176,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-718763-b00022",
+      "text": "Well respected Australian independent writer Tim Dunlop mused at length on Twitter about the government’s approach:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4178,
+      "body_end": 4293,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00023",
+      "text": "You can read the complete thread here.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4295,
+      "body_end": 4333,
+      "source_links": [
+        "https://threadreaderapp.com/thread/1300645839421845504.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00024",
+      "text": "Hal Crawford explained the case for change to New Zealanders at Spinoff:",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4335,
+      "body_end": 4407,
+      "source_links": [
+        "https://thespinoff.co.nz/media/03-05-2020/why-australias-plan-to-make-tech-giants-pay-for-news-wont-work/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00025",
+      "text": "> Google, Facebook and other global companies are not sufficiently contributing to the public purse and the community life of the places where they conduct business. Both companies have made moves to support news locally, but these good initiatives are not yet enough to balance the books.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4409,
+      "body_end": 4698,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-718763-b00026",
+      "text": "The role of News Corp",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4700,
+      "body_end": 4721,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00027",
+      "text": "The Australian government has support from the big media companies especially Rupert Murdoch’s News Corp. In fact some see it as doing his bidding arguing that the code of conduct mirrors a News Corp submission to the ACCC. Kangaroo Court of Australia’s Shane Dowling has no doubt:",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 4723,
+      "body_end": 5004,
+      "source_links": [
+        "https://kangaroocourtofaustralia.com/2020/09/13/rupert-murdochs-attempt-to-shakedown-facebook-and-google-is-underwritten-by-scott-morrison-and-the-liberal-party/",
+        "https://www.accc.gov.au/system/files/News%20Corp%20Australia%20Submission%20to%20Concepts%20Paper.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00028",
+      "text": "> Rupert Murdoch’s News Corp and the Scott Morrison government are conspiring in an attempt to shakedown Google and Facebook for hundreds of millions of dollars.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5006,
+      "body_end": 5167,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-718763-b00029",
+      "text": "One of the slightly puzzling aspects of News Corp's strident position is that nearly all of its online news sites are behind paywalls. The national daily, The Australian, is a good example of a paid subscriber service only.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5169,
+      "body_end": 5392,
+      "source_links": [
+        "https://www.theaustralian.com.au"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00030",
+      "text": "Others are riled by the fact the government-owned Australian Broadcasting Corporation (ABC) and Special Broadcasting Service (SBS) are excluded from the proposed scheme. This includes the Australian Greens party but others fear it would undermine their government funding and independence:",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5394,
+      "body_end": 5683,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00031",
+      "text": "There are also concerns about the future of the Australian Associate Press news agency and the funding of regional newspapers.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5685,
+      "body_end": 5811,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00032",
+      "text": "This is not just shadow boxing. The tech giants face fines of up to 10% of their annual turnover in Australia if they do not comply with the code. That could amount to hundreds of millions.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5813,
+      "body_end": 6002,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718763-b00033",
+      "text": "The draft legislation has been the subject of a month’s consultation. It should be debated by the parliament before the end of the year.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 6004,
+      "body_end": 6140,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5faeb36ea7e62744fe0e3ed728df9014007c6440d607bd7baf6d637704974eb2",
+  "word_count": 985,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6140,
+  "retrieved_at": "2026-11-16T22:27:29.247491+00:00",
+  "raw_html_sha256": "aae02bc08f3a0e460a2d0dbc7d0d94d52d32ca5a25b4d2aeca148c695e7ef675",
+  "resolved_source_url": "https://globalvoices.org/2020/09/18/australian-government-on-collision-course-with-facebook-and-google-over-news-revenue/",
+  "canonical_url": "https://globalvoices.org/2020/09/18/australian-government-on-collision-course-with-facebook-and-google-over-news-revenue/",
+  "source_bytes": 219083,
+  "authors": [
+    {
+      "name": "Kevin Rennie",
+      "url": "https://globalvoices.org/author/kevin-rennie/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 718763,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "aae02bc08f3a0e460a2d0dbc7d0d94d52d32ca5a25b4d2aeca148c695e7ef675",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-339c12afbd48d519e51f",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-09",
+    "eligible_month_documents": 86,
+    "selected_month_documents": 72,
+    "inclusion_probability": 0.8372093023255814,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Kevin Rennie",
+  "body_start": 504,
+  "body_end": 6644,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "0aab897195ba57349b9d5b9882000f9a5fed42fdc31c86169ea9a77d220d6e79",
+  "text_path": "articles/gv-718763.txt",
+  "metadata_path": "metadata/gv-718763.json",
+  "attribution": "This story by Kevin Rennie originally appeared on Global Voices. https://globalvoices.org/2020/09/18/australian-government-on-collision-course-with-facebook-and-google-over-news-revenue/",
+  "content_sha256": "8d43118e0454e48068dbb04c0e69272f60685de5259bf2edc79f2a03b4b17bcf",
+  "source_sha256": "aae02bc08f3a0e460a2d0dbc7d0d94d52d32ca5a25b4d2aeca148c695e7ef675",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

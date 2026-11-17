@@ -1,0 +1,312 @@
+{
+  "id": "gv-779090",
+  "publisher_id": 779090,
+  "source_id": "globalvoices:779090",
+  "source_url": "https://globalvoices.org/2023/01/13/thailands-new-ministerial-decree-could-further-suppress-free-speech-online/",
+  "title": "Thailand’s new ministerial decree could further suppress free speech online",
+  "published_at": "2023-01-13T06:21:40Z",
+  "modified_at": "2023-05-02T03:26:20Z",
+  "api_author_id": 261,
+  "api_content_sha256": "63aff40e36f5bce153943a897eade73e60f997530709dcf65d0eb827178477f8",
+  "api_response_sha256": "27cf64520f3b69af0634cfa1d1f396fff074d03f61e0810e085ddf38a7663e1d",
+  "api_retrieved_at": "2026-11-16T22:20:49.975187+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 40,
+      "count": 1158,
+      "name": "Thailand",
+      "slug": "thailand",
+      "parent": 16
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-779090-b00001",
+      "text": "A ministerial decree issued by the government of Thailand detailing procedures for the “Suppression of Dissemination and Removal of Computer Data from the Computer System B.E. 2565” took effect on December 25, 2022. The decree passed despite calls from various civil society organizations to withdraw the new regulation because it contains provisions that could further suppress online free speech.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 398,
+      "source_links": [
+        "https://www.ratchakitcha.soc.go.th/DATA/PDF/2565/E/254/T_0057.PDF"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-779090-b00002",
+      "text": "The decree empowers officers of the Ministry of Digital Economy and Society (MDES) to issue takedown orders for content that violate the Computer Crime Act (CCA). Human rights groups have warned that Section 14 of the CCA is “highly problematic and creates several loosely-defined offenses” as it criminalizes content that “damages the public, creates panic, causes harm to public infrastructure, national security or security of the Kingdom, public security or economic security, or is of pornographic nature.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 400,
+      "body_end": 911,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-779090-b00003",
+      "text": "Service providers could face penalties if they fail to respond to takedown orders within 24 hours. This could intensify online censorship if service providers adopt a “comply-first-evaluate-later” policy to avoid prosecution.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 913,
+      "body_end": 1138,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-779090-b00004",
+      "text": "Southeast Asia-based groups which belong to the ASEAN Regional Coalition to #StopDigitalDictatorship have issued a statement describing the new decree as “another tool of control for the authorities to silence critical dissent, and a reflection of the digital dictatorship in Thailand.” They warned that content could be removed even without a court order:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1140,
+      "body_end": 1496,
+      "source_links": [
+        "https://cchrcambodia.org/media/files/press_release/930_fjsstj_en.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-779090-b00005",
+      "text": "> By mandating service providers to comply with any complaint they receive, irrespective of its basis, necessity, or proportionality, the Thai government is putting service providers under immense pressure to remove content. This will likely result in service providers removing content with haste to avoid penalties, to the detriment of people’s right to freedom of expression and information.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1498,
+      "body_end": 1892,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-779090-b00006",
+      "text": "Global groups such as Access Now, ARTICLE 19, and the International Commission of Jurists have criticized the draconian provisions of the decree in a joint statement:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1894,
+      "body_end": 2060,
+      "source_links": [
+        "https://www.article19.org/resources/thailand-content-takedown-regulation/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-779090-b00007",
+      "text": "> The mere one-day timeframe for content removals is especially draconian where there has been no judicial authorization of takedown orders.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2062,
+      "body_end": 2202,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-779090-b00008",
+      "text": "They added that the decree could make it more difficult for Thais to exercise their freedom of expression:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2204,
+      "body_end": 2310,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-779090-b00009",
+      "text": "> The granting of this broad authority is likely to result in online expression and information being arbitrarily curtailed even beyond the excessively expansive interferences already allowed under the existing Thai legal framework.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2312,
+      "body_end": 2544,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-779090-b00010",
+      "text": "Reports have noted the decline of free speech in Thailand as the government used the COVID-19 pandemic to ban mass assemblies and detain critics accused of harming public security. These measures have remained in place despite the loosening of other pandemic-era restrictions. Authorities also used the harsh Lese Majeste (anti-Royal Insult) laws to criminalize legitimate criticism.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2546,
+      "body_end": 2929,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/L%C3%A8se-majest%C3%A9",
+        "https://ifex.org/thailand-denying-the-demand-for-democracy/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-779090-b00011",
+      "text": "Digital rights advocate Arthit Suriyawongkul tweeted about the implications of the new decree for media organizations.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2931,
+      "body_end": 3049,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-779090-b00012",
+      "text": "He also highlighted that the government drafted the decree without consulting all stakeholders.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3051,
+      "body_end": 3146,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-779090-b00013",
+      "text": "An online petition was launched calling for the scrapping of the decree. Civil society groups have a message addressed to Thai authorities: “To achieve true democracy, the online space must be free, and the right to freedom of speech, both online and offline, must be protected!”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3148,
+      "body_end": 3427,
+      "source_links": [
+        "https://twitter.com/elsamnews/status/1611200781235130369",
+        "https://www.change.org/p/%E0%B8%A2%E0%B8%81%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%9B%E0%B8%B2%E0%B8%81-%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B8%A7%E0%B8%B4%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B8%9A%E0%B8%B2%E0%B8%A5-%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%A3%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%B4%E0%B8%88%E0%B8%B4%E0%B8%97%E0%B8%B1%E0%B8%A5"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "be5a4d04d11af907e41fddd5bea5cbea97f3fdc1caef07b3cf73f136d327ceae",
+  "word_count": 507,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 3427,
+  "retrieved_at": "2026-11-16T22:37:49.853788+00:00",
+  "raw_html_sha256": "ca64f7bfe515761eba9d7db3718b182f4b325833ed25f50843f45182ee296b0d",
+  "resolved_source_url": "https://globalvoices.org/2023/01/13/thailands-new-ministerial-decree-could-further-suppress-free-speech-online/",
+  "canonical_url": "https://globalvoices.org/2023/01/13/thailands-new-ministerial-decree-could-further-suppress-free-speech-online/",
+  "source_bytes": 186860,
+  "authors": [
+    {
+      "name": "Mong Palatino",
+      "url": "https://globalvoices.org/author/mong/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 779090,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "ca64f7bfe515761eba9d7db3718b182f4b325833ed25f50843f45182ee296b0d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-4f4008376fc1addf20cf",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-01",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Mong Palatino",
+  "body_start": 486,
+  "body_end": 3913,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "2f8dd94340087ca116d203bb81e56dcfc2968e685b5adb9215611d997be721d5",
+  "text_path": "articles/gv-779090.txt",
+  "metadata_path": "metadata/gv-779090.json",
+  "attribution": "This story by Mong Palatino originally appeared on Global Voices. https://globalvoices.org/2023/01/13/thailands-new-ministerial-decree-could-further-suppress-free-speech-online/",
+  "content_sha256": "4879c60dac13498bb65048458017e59efffec58251a60cfc715d7309a56b678c",
+  "source_sha256": "ca64f7bfe515761eba9d7db3718b182f4b325833ed25f50843f45182ee296b0d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

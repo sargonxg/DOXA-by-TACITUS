@@ -1,0 +1,435 @@
+{
+  "id": "gv-798828",
+  "publisher_id": 798828,
+  "source_id": "globalvoices:798828",
+  "source_url": "https://globalvoices.org/2023/10/13/the-role-of-ai-in-russias-invasion-of-ukraine-interview-with-expert-anton-tarasyuk/",
+  "title": "The role of AI in Russia's invasion of Ukraine: Interview with expert Anton Tarasyuk",
+  "published_at": "2023-10-13T14:30:53Z",
+  "modified_at": "2025-02-14T10:56:42Z",
+  "api_author_id": 1749,
+  "api_content_sha256": "e46b063643a51bd4ee398a19945f5ab55faafff40d18caf46b4935fd3b4661c6",
+  "api_response_sha256": "b012cfe59491d5edbfb9adf3921f0fb87e01fd57d30461ef5dc8817e020b7154",
+  "api_retrieved_at": "2026-11-16T22:20:57.235937+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 345,
+      "count": 344,
+      "name": "Ukrainian",
+      "slug": "ukrainian",
+      "parent": 317
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-798828-b00001",
+      "text": "Wars of the 21st century are often describe as high-tech and increasingly dependent on Artificial Intelligence (AI): US occupation of Afghanistan, Russia's invasion of Ukraine — though the latest Hamas attack on Israel also shows that over-reliability on drones, data and digital tools can create devastating security loopholes.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 328,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-798828-b00002",
+      "text": "To understand how AI shapes an asymmetric war in Ukraine against a much larger Russian aggressor, Global Voices talked to Anton Tarasyuk, a data and AI expert, who is also the co-founder and Expertise Lead of Mantis Analytics, a Kyiv-based company. He is also a journalist and writes commentaries on current affairs.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 330,
+      "body_end": 646,
+      "source_links": [
+        "https://compactmag.com/article/canceling-russian-culture-doesn-t-free-ukraine",
+        "https://mantisanalytics.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-798828-b00003",
+      "text": "The interview took place over email after an in-person meeting in Kyiv, and is edited for style and brevity.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 648,
+      "body_end": 756,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-798828-b00004",
+      "text": "Filip Noubel (FN) How is AI used in disinformation warfare by Ukrainian actors? Who is using it — is it just the government or other players too?",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 758,
+      "body_end": 903,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-798828-b00005",
+      "text": "> Anton Tarasyuk (AT): Let's begin by acknowledging that the Russo-Ukrainian war stands as the most digitized and AI-dependent conflict in history. AI plays a significant role both on the battlefield and in the information domain. In fact, the full-scale war initially commenced not through kinetic warfare, but through information warfare. Before February 24, 2022, Russia was actively launching cyberattacks and hostile information campaigns in an attempt to sow confusion, fear, and distrust among Ukrainian citizens.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 905,
+      "body_end": 1425,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00006",
+      "text": "> Were they successful? Strategically, the unfolding of the war indicates that they were not. However, especially in the early stages, they achieved tactical successes. Take, for instance, the “graffiti marks” campaign, which falsely claimed that supposed Russian agents were leaving specific graffiti marks on the streets to guide Russian artillery and air strikes. This may sound absurd, but people were indeed searching for these marks, and individuals could get into trouble if they were mistakenly associated with these imaginary “marks.” It has since become evident that it was a disinformation campaign, presumably of Russian origin, designed to spread chaos and panic.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1427,
+      "body_end": 2103,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00007",
+      "text": "> The role of AI in such disinformation campaigns is substantial. With generative technologies, the cost of producing textual and visual content has been reduced to almost nothing, requiring only basic digital literacy. In such a context, only AI can effectively combat AI. No human mind can operate at the required speed. Therefore, there is no choice but to employ these technologies.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2105,
+      "body_end": 2491,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00008",
+      "text": "> Regarding the users of our technology, we initially focused on the governmental sector, specifically the National Security and Defense Council of Ukraine. However, our primary aim is not limited to the government or security institutions. Information warfare is rapidly extending into the corporate sector. Billions of dollars are lost annually due to disinformation campaigns, fraud relying on deep fakes, and similar activities, all fueled by AI. The whole informational infrastructure which secures our informed decision-making in defense, politics and business, is under risk. This is why we are actively expanding our reach into the corporate sector.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2493,
+      "body_end": 3150,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00009",
+      "text": "FN: How is it used by Russia to impose its narratives not just in Ukraine, but elsewhere, including in the Global South?",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3152,
+      "body_end": 3272,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-798828-b00010",
+      "text": "> AT: Many of the countries in the Global South are, with all due reservations, electoral democracies. This means that public opinion matters. It means that influencing public opinion is crucial. This, in turn, underscores the importance of informational campaigning. When you combine all of these factors with the historical skepticism toward the so-called “West,” it creates the perfect ground for Russians to disseminate their messaging.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3274,
+      "body_end": 3714,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00011",
+      "text": "> Based on our assessment, Russia's informational campaigns generally revolve around fostering anti-Western sentiment, often framing Russia as the leader of an elusive “anti-Western coalition.” Remember Putin's sudden emergence with his “anti-colonial” rhetoric? It serves as a narrative tailored for the Global South.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3716,
+      "body_end": 4034,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00012",
+      "text": "> To promote this messaging, Russia employs various tactics, not only resorting to malinformation (information that is both true and harmful) but also resorting to full-blown disinformation (information that is both false and harmful). Regarding Ukraine, the content they disseminate there is simply outrageous.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4036,
+      "body_end": 4347,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00013",
+      "text": "> AI is poised to assume an increasingly pivotal role in this dissemination, especially as the traditional media infrastructure continues to erode. Is the West prepared? It had better be, before it's too late. Some hints to the solutions lie here, in Ukraine, since we were first to address the challenge with Russian aggression.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4349,
+      "body_end": 4678,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00014",
+      "text": "FN: What about face recognition? In which context is it used and do you see possible danger zones in its use?",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4680,
+      "body_end": 4789,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-798828-b00015",
+      "text": "> AT: To be candid, in today's landscape, if you seek in-depth intelligence, you can uncover a wealth of insights by attentively monitoring what people are discussing, where they are doing so, and in what manner. This is precisely what we specialize in.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4791,
+      "body_end": 5044,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00016",
+      "text": "> Visual content analysis will raise challenging questions, the ones you may categorize as “danger zones.” Paris-based exiled Russian economist Sergei Guriev aptly terms certain countries “informational autocracies” or “spin-dictatorships,” which has been the Russian model for manipulating the informational landscape.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5046,
+      "body_end": 5365,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Sergei_Guriev"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00017",
+      "text": "> The question for us is: what's the use of opposing these informational autocracies if we are simultaneously building a surveillance state? Hence, our commitment to democratic values. We are indeed very serious about it.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5367,
+      "body_end": 5588,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00018",
+      "text": "> Nevertheless, and here's my futuristic prediction, some of our fundamental beliefs regarding transparency will need to be reimagined in the near future. Not because of the will of some company or institution, but because of what German philosopher Jürgen Habermas calls “The structural transformation of the public sphere,” caused by new technologies. Societies should prepare themselves for this shift.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5590,
+      "body_end": 5995,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/The_Structural_Transformation_of_the_Public_Sphere"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00019",
+      "text": "FN: Is there up-to-date legislation in Ukraine about the use and control of AI?",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5997,
+      "body_end": 6076,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-798828-b00020",
+      "text": "> AT: For a considerable period, Ukraine operated as a frontier of minimal AI regulation. Currently, this subject is garnering increasing attention and debate. The Ministry of Digital Transformation recently unveiled a roadmap for AI regulation.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6078,
+      "body_end": 6323,
+      "source_links": [
+        "https://www.binance.com/en-NG/feed/post/1296071"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00021",
+      "text": "> Given that many emerging technologies, particularly in the realm of defense tech, heavily rely on AI, the need to align our regulatory frameworks with those of the EU and the US is becoming progressively urgent. These considerations are far from abstract, as even fundamental business aspects such as securing venture capital may be contingent on this alignment.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6325,
+      "body_end": 6689,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00022",
+      "text": "> What is clear is that we must chart a course that fosters AI innovation without stifling it through overregulation, which some experts argue characterizes the EU market. While the Silicon Valley mantra of “move fast and break things” may be too perilous for our context, as any disruption during times of conflict can carry life-threatening consequences, we also recognize the risk of China and Russia's centralized, top-down AI regulations.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6691,
+      "body_end": 7134,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-798828-b00023",
+      "text": "> Navigating a path forward for Ukraine presents a challenge. Will we rise to meet it? I am confident that we will, for we have no other choice.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7136,
+      "body_end": 7280,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "67490e614da0d54b962cace1afb10fde07d14fc83c0a5139afe7b66ab816ef01",
+  "word_count": 1118,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7280,
+  "retrieved_at": "2026-11-16T22:40:59.374544+00:00",
+  "raw_html_sha256": "edaee79d99a1436a9cd3304054845d8c65b9c1e978f41ec389ab7e46f8541e30",
+  "resolved_source_url": "https://globalvoices.org/2023/10/13/the-role-of-ai-in-russias-invasion-of-ukraine-interview-with-expert-anton-tarasyuk/",
+  "canonical_url": "https://globalvoices.org/2023/10/13/the-role-of-ai-in-russias-invasion-of-ukraine-interview-with-expert-anton-tarasyuk/",
+  "source_bytes": 191636,
+  "authors": [
+    {
+      "name": "Filip Noubel",
+      "url": "https://globalvoices.org/author/filip-noubel/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 798828,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "edaee79d99a1436a9cd3304054845d8c65b9c1e978f41ec389ab7e46f8541e30",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-31de26b1b41b8b40351e",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-10",
+    "eligible_month_documents": 94,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8404255319148937,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Filip Noubel",
+  "body_start": 502,
+  "body_end": 7782,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "d50d44ba9d3e6a756cafb3b679944f9379c4ad640f6bb30d6dacfb786f2ee551",
+  "text_path": "articles/gv-798828.txt",
+  "metadata_path": "metadata/gv-798828.json",
+  "attribution": "This story by Filip Noubel originally appeared on Global Voices. https://globalvoices.org/2023/10/13/the-role-of-ai-in-russias-invasion-of-ukraine-interview-with-expert-anton-tarasyuk/",
+  "content_sha256": "3dc47b68ed0c0b397c5f79d1466481c874279e14cac9709a5a3e4316f86da557",
+  "source_sha256": "edaee79d99a1436a9cd3304054845d8c65b9c1e978f41ec389ab7e46f8541e30",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

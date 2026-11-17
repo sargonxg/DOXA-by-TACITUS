@@ -1,0 +1,434 @@
+{
+  "id": "gv-731060",
+  "publisher_id": 731060,
+  "source_id": "globalvoices:731060",
+  "source_url": "https://globalvoices.org/2021/03/10/russian-internet-regulator-roskomnadzor-throttles-twitter-loading-speeds/",
+  "title": "Russian internet regulator Roskomnadzor throttles Twitter loading speeds",
+  "published_at": "2021-03-10T13:58:54Z",
+  "modified_at": "2021-03-10T14:13:50Z",
+  "api_author_id": 1498,
+  "api_content_sha256": "f824d0fde6a2be848d9a4bcc64c9337530aac4815501051a53685bfeb8ebdc90",
+  "api_response_sha256": "77986401a5e819891872a9bdf1c0b30de63431aaa5322b33afb4833ff0dba79d",
+  "api_retrieved_at": "2026-11-16T22:20:32.943313+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-731060-b00001",
+      "text": "Roskomnadzor, the Russian state media and internet regulator, announced on March 10 that it would begin to throttle the loading speeds for Twitter, in a bid to punish the microblogging platform for failing to delete content deemed illegal by Russian censors.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 258,
+      "source_links": [
+        "https://rkn.gov.ru/news/rsoc/news73464.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00002",
+      "text": "In the statement, Roskomnadzor said the move comes after multiple requests to take down offensive content and threats of fines, which Twitter is said to have ignored.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 260,
+      "body_end": 426,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00003",
+      "text": "> В период с 2017 года по настоящее время не удаляется контент, склоняющий несовершеннолетних к совершению самоубийств, содержащий детскую порнографию, а также информацию об использовании наркотических средств, Роскомнадзором было направлено свыше 28 тысяч первоначальных и повторных требований об удалении противоправных ссылок и публикаций.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 428,
+      "body_end": 770,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731060-b00004",
+      "text": "> In the period from 2017 up to the present, content that constitutes incitement to suicide aimed at minors, contains child pornography, as well as information about using narcotics, has not been taken down. Roskomnadzor has sent over 28 thousand initial and repeat demands for removal of illegal links and posts.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 772,
+      "body_end": 1085,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731060-b00005",
+      "text": "Curiously, Roskomnadzor's statement makes no mention of another category of “banned content”: the convening of unsanctioned protests and mass gatherings. During the recent anti-government protests in support of Alexey Navalny, several social media platforms were asked by Roskomnadzor to take down protest-related content—and some even faced hefty fines for failing to do so.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1087,
+      "body_end": 1462,
+      "source_links": [
+        "https://globalvoices.org/2021/01/24/protest-rallies-across-russia-in-support-of-jailed-opposition-leader/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00006",
+      "text": "The internet censor claims that as of March 10, around 3,168 tweets containing illegal information remain on the site. In response, Roskomnadzor said it would be slowing download speeds for users in Russia accessing Twitter on “100 percent of mobile devices and 50 percent desktop devices.” This measure is allegedly in accordance with the “sovereign internet” legislation that came into force in Russia in November 2019, and more recent amendments to laws regulating the Russian internet passed in February 2021 allow for the use of throttling.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1464,
+      "body_end": 2009,
+      "source_links": [
+        "http://publication.pravo.gov.ru/Document/View/0001202102240010",
+        "https://advox.globalvoices.org/2019/11/06/behold-russias-new-sovereign-internet/",
+        "https://rkn.gov.ru/news/rsoc/news73464.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00007",
+      "text": "If Twitter continues to ignore Roskomnadzor's demands, the regulator says it is prepared to go as far as blocking the platform—and suggests it has the legal grounds to do so.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2011,
+      "body_end": 2185,
+      "source_links": [
+        "https://twitter.com/interfax_news/status/1369565571860357122?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1369565571860357122%7Ctwgr%5E%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Froskomsvoboda.org%2Fpost%2Frkn-zamedlil-twi%2F"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00008",
+      "text": "How does throttling work in practice?",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2187,
+      "body_end": 2224,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00009",
+      "text": "Some users in Russia have already reported noticeably slower loading speeds when accessing Twitter, according to digital rights group Roskomsvoboda. Experts believe that such throttling is technically possible through the use of DPI (deep-packet inspection) technology that Roskomnadzor obliged all internet service providers in Russia to install as part of the implementation of “sovereign internet” laws. The system is autonomous, so Roskomnadzor has full control of it, without any input from the ISPs.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2226,
+      "body_end": 2731,
+      "source_links": [
+        "https://roskomsvoboda.org/post/rkn-zamedlil-twi/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00010",
+      "text": "Artyom Kozlyuk, head of Roskomsvoboda, and Mikhail Klimarev, an expert at Internet Protection Society, explain in a comment to tech news website vc.ru that DPI technology is used by Roskomnadzor as a “technical means to counter threats.” The filtering devices installed on ISP networks check each internet traffic package against several parameters that identify it as coming from a specific website (in this case, Twitter) and then decide whether to block it, limit its loading speed, or let it through untouched.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2733,
+      "body_end": 3247,
+      "source_links": [
+        "https://ozi-ru.org/",
+        "https://roskomsvoboda.org/",
+        "https://vc.ru/social/218600-roskomnadzor-zamedlyaet-twitter-v-chem-eto-proyavlyaetsya-i-kak-rabotaet"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00011",
+      "text": "The DPI technology is expensive, and experts believe it has likely been installed only by the key major providers in Russia, which explains why desktop broadband throttling is only partially possible, as regional small ISPs likely don't have the equipment. In addition, only images and videos in Twitter posts will have reduced loading speeds, whereas text content loading speeds will remain untouched.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3249,
+      "body_end": 3651,
+      "source_links": [
+        "https://vc.ru/social/218600-roskomnadzor-zamedlyaet-twitter-v-chem-eto-proyavlyaetsya-i-kak-rabotaet"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00012",
+      "text": "Unintended side effects",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3653,
+      "body_end": 3676,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00013",
+      "text": "Soon after Roskomnadzor's announcement, users reported that a number of websites across the RuNet became unavailable or slow to load, including the main government website kremlin.ru and Roskomnadzor's own rkn.gov.ru. Official sources connected this to a technical fault at Russia's main state-owned internet service provider Rostelekom, but commentators couldn't help but suspect the outages were connected to the sanctions against Twitter.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3678,
+      "body_end": 4119,
+      "source_links": [
+        "https://meduza.io/news/2021/03/10/sayty-kremlya-pravitelstva-i-gosdumy-perestali-otkryvatsya",
+        "https://www.interfax.ru/russia/755274"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00014",
+      "text": "The situation also bears a striking resemblance to widespread RuNet outages that were caused by the state's attempts to block the Telegram messaging app back in 2018.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4121,
+      "body_end": 4287,
+      "source_links": [
+        "https://advox.globalvoices.org/2018/04/19/netizen-report-russia-is-blocking-millions-of-ip-addresses-all-because-of-the-telegram-ipocalypse/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00015",
+      "text": "What's next?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4289,
+      "body_end": 4301,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00016",
+      "text": "This is the first case of traffic throttling as a technically enabled censorship measure in Russia. The same approach has previously been used in Turkey to control social media platforms, reports tech news website Digital Russia.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4303,
+      "body_end": 4532,
+      "source_links": [
+        "https://d-russia.ru/v-rossii-sozdan-precedent-tehnicheskogo-prinuzhdenija-globalnogo-onlajn-servisa-k-sobljudeniju-rossijskih-zakonov.html?utm_source=telegram"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00017",
+      "text": "RuNet experts differ in their view of which social media platform might be next to face slower loading speeds or other forms of censorship. Sergey Smirnov, editor-in-chief of independent news site Mediazona, believes it could be YouTube, given how instrumental the platform has been in disseminating Navalny's anti-corruption investigations. Mikhail Kolezev, editor-in-chief of another independent outlet, It's My City, disagrees:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4534,
+      "body_end": 4964,
+      "source_links": [
+        "https://t.me/kolezev/8642",
+        "https://t.me/smirnovmz/3571"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00018",
+      "text": "> Сергей Смирнов считает, что следующим будут блокировать YouTube, но я так не думаю — слишком много пользователей в России, слишком серьезные социальные последствия блокировки или замедления. Да и пропагандисты неплохо себя чувствуют на YouTube, много сил уже туда вложено. Поэтому следующим, думаю, будет Facebook — площадка вечно недовольной либерально настроенной интеллигенции, которой, по опросам, пользуется 9% россиян (твиттером — 3%).",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4966,
+      "body_end": 5409,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731060-b00019",
+      "text": "> Sergey Smirnov thinks YouTube will be blocked next, but I don't think so—it has too many users in Russia and the social consequences of blocking or throttling would be severe. Plus the propagandists feel quite at home on YouTube and have invested much effort there. So I think Facebook will be next: it's the platform of the always unhappy liberal intellectual public that, according to the polls, is used by 9% of Russians (whereas just 3% use Twitter).",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5411,
+      "body_end": 5867,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731060-b00020",
+      "text": "Apparently, the Kremlin agrees with Kolezev: News agency Interfax reports that Russian lawmakers have hinted that Facebook could be next in line for traffic throttling.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5869,
+      "body_end": 6037,
+      "source_links": [
+        "https://www.interfax.ru/russia/755253"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731060-b00021",
+      "text": "Meanwhile, as we await Twitter's reaction, tech experts recommend that users avail themselves of VPN (virtual private networks) services, a stopgap measure that has also worked during the earlier Telegram blocking attempts.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6039,
+      "body_end": 6262,
+      "source_links": [
+        "https://vc.ru/social/218600-roskomnadzor-zamedlyaet-twitter-v-chem-eto-proyavlyaetsya-i-kak-rabotaet"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "47869c6f07857b4d8d8482fec10c6c4a02cd8e55edae23df4cdb8a5bf2e6ad7b",
+  "word_count": 939,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6262,
+  "retrieved_at": "2026-11-16T22:29:46.075611+00:00",
+  "raw_html_sha256": "7172963bbbcee3327a7c53f2bea62087085343c23c1fcea524baa348daf5a3e7",
+  "resolved_source_url": "https://globalvoices.org/2021/03/10/russian-internet-regulator-roskomnadzor-throttles-twitter-loading-speeds/",
+  "canonical_url": "https://globalvoices.org/2021/03/10/russian-internet-regulator-roskomnadzor-throttles-twitter-loading-speeds/",
+  "source_bytes": 190613,
+  "authors": [
+    {
+      "name": "Tanya Lokot",
+      "url": "https://globalvoices.org/author/tetyana-lokot/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 731060,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "7172963bbbcee3327a7c53f2bea62087085343c23c1fcea524baa348daf5a3e7",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-7e620d8f7ea9aa5a93da",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-03",
+    "eligible_month_documents": 91,
+    "selected_month_documents": 76,
+    "inclusion_probability": 0.8351648351648352,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Tanya Lokot",
+  "body_start": 479,
+  "body_end": 6741,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "7e7d2c935b10453acf93661b6404a0200cd6017165eb91a01ee696498c35c7ac",
+  "text_path": "articles/gv-731060.txt",
+  "metadata_path": "metadata/gv-731060.json",
+  "attribution": "This story by Tanya Lokot originally appeared on Global Voices. https://globalvoices.org/2021/03/10/russian-internet-regulator-roskomnadzor-throttles-twitter-loading-speeds/",
+  "content_sha256": "d22861b3daa7e87838ebc24b77830d70fb4c286d9fb65be0a9e98fd2041a29e7",
+  "source_sha256": "7172963bbbcee3327a7c53f2bea62087085343c23c1fcea524baa348daf5a3e7",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

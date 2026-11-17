@@ -1,0 +1,49 @@
+Russian internet regulator Roskomnadzor throttles Twitter loading speeds
+Written by: Tanya Lokot
+Originally published by Global Voices: https://globalvoices.org/2021/03/10/russian-internet-regulator-roskomnadzor-throttles-twitter-loading-speeds/
+Published: 2021-03-10T13:58:54Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+Roskomnadzor, the Russian state media and internet regulator, announced on March 10 that it would begin to throttle the loading speeds for Twitter, in a bid to punish the microblogging platform for failing to delete content deemed illegal by Russian censors.
+
+In the statement, Roskomnadzor said the move comes after multiple requests to take down offensive content and threats of fines, which Twitter is said to have ignored.
+
+> В период с 2017 года по настоящее время не удаляется контент, склоняющий несовершеннолетних к совершению самоубийств, содержащий детскую порнографию, а также информацию об использовании наркотических средств, Роскомнадзором было направлено свыше 28 тысяч первоначальных и повторных требований об удалении противоправных ссылок и публикаций.
+
+> In the period from 2017 up to the present, content that constitutes incitement to suicide aimed at minors, contains child pornography, as well as information about using narcotics, has not been taken down. Roskomnadzor has sent over 28 thousand initial and repeat demands for removal of illegal links and posts.
+
+Curiously, Roskomnadzor's statement makes no mention of another category of “banned content”: the convening of unsanctioned protests and mass gatherings. During the recent anti-government protests in support of Alexey Navalny, several social media platforms were asked by Roskomnadzor to take down protest-related content—and some even faced hefty fines for failing to do so.
+
+The internet censor claims that as of March 10, around 3,168 tweets containing illegal information remain on the site. In response, Roskomnadzor said it would be slowing download speeds for users in Russia accessing Twitter on “100 percent of mobile devices and 50 percent desktop devices.” This measure is allegedly in accordance with the “sovereign internet” legislation that came into force in Russia in November 2019, and more recent amendments to laws regulating the Russian internet passed in February 2021 allow for the use of throttling.
+
+If Twitter continues to ignore Roskomnadzor's demands, the regulator says it is prepared to go as far as blocking the platform—and suggests it has the legal grounds to do so.
+
+How does throttling work in practice?
+
+Some users in Russia have already reported noticeably slower loading speeds when accessing Twitter, according to digital rights group Roskomsvoboda. Experts believe that such throttling is technically possible through the use of DPI (deep-packet inspection) technology that Roskomnadzor obliged all internet service providers in Russia to install as part of the implementation of “sovereign internet” laws. The system is autonomous, so Roskomnadzor has full control of it, without any input from the ISPs.
+
+Artyom Kozlyuk, head of Roskomsvoboda, and Mikhail Klimarev, an expert at Internet Protection Society, explain in a comment to tech news website vc.ru that DPI technology is used by Roskomnadzor as a “technical means to counter threats.” The filtering devices installed on ISP networks check each internet traffic package against several parameters that identify it as coming from a specific website (in this case, Twitter) and then decide whether to block it, limit its loading speed, or let it through untouched.
+
+The DPI technology is expensive, and experts believe it has likely been installed only by the key major providers in Russia, which explains why desktop broadband throttling is only partially possible, as regional small ISPs likely don't have the equipment. In addition, only images and videos in Twitter posts will have reduced loading speeds, whereas text content loading speeds will remain untouched.
+
+Unintended side effects
+
+Soon after Roskomnadzor's announcement, users reported that a number of websites across the RuNet became unavailable or slow to load, including the main government website kremlin.ru and Roskomnadzor's own rkn.gov.ru. Official sources connected this to a technical fault at Russia's main state-owned internet service provider Rostelekom, but commentators couldn't help but suspect the outages were connected to the sanctions against Twitter.
+
+The situation also bears a striking resemblance to widespread RuNet outages that were caused by the state's attempts to block the Telegram messaging app back in 2018.
+
+What's next?
+
+This is the first case of traffic throttling as a technically enabled censorship measure in Russia. The same approach has previously been used in Turkey to control social media platforms, reports tech news website Digital Russia.
+
+RuNet experts differ in their view of which social media platform might be next to face slower loading speeds or other forms of censorship. Sergey Smirnov, editor-in-chief of independent news site Mediazona, believes it could be YouTube, given how instrumental the platform has been in disseminating Navalny's anti-corruption investigations. Mikhail Kolezev, editor-in-chief of another independent outlet, It's My City, disagrees:
+
+> Сергей Смирнов считает, что следующим будут блокировать YouTube, но я так не думаю — слишком много пользователей в России, слишком серьезные социальные последствия блокировки или замедления. Да и пропагандисты неплохо себя чувствуют на YouTube, много сил уже туда вложено. Поэтому следующим, думаю, будет Facebook — площадка вечно недовольной либерально настроенной интеллигенции, которой, по опросам, пользуется 9% россиян (твиттером — 3%).
+
+> Sergey Smirnov thinks YouTube will be blocked next, but I don't think so—it has too many users in Russia and the social consequences of blocking or throttling would be severe. Plus the propagandists feel quite at home on YouTube and have invested much effort there. So I think Facebook will be next: it's the platform of the always unhappy liberal intellectual public that, according to the polls, is used by 9% of Russians (whereas just 3% use Twitter).
+
+Apparently, the Kremlin agrees with Kolezev: News agency Interfax reports that Russian lawmakers have hinted that Facebook could be next in line for traffic throttling.
+
+Meanwhile, as we await Twitter's reaction, tech experts recommend that users avail themselves of VPN (virtual private networks) services, a stopgap measure that has also worked during the earlier Telegram blocking attempts.

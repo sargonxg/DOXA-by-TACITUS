@@ -1,0 +1,868 @@
+{
+  "id": "gv-837508",
+  "publisher_id": 837508,
+  "source_id": "globalvoices:837508",
+  "source_url": "https://globalvoices.org/2025/07/03/from-the-congo-to-kenyam-timber-trafficking-is-flourishing/",
+  "title": "From the Congo to Kenya, timber trafficking is flourishing",
+  "published_at": "2025-07-03T12:00:46Z",
+  "modified_at": "2025-07-01T12:53:46Z",
+  "api_author_id": 1826,
+  "api_content_sha256": "bfaa9f767b3315d4893b5deca6bc8c11ebd12e4bcb1558775730344ce1897393",
+  "api_response_sha256": "aa6dcff428883d80ac87f532a741a5a8d2776b7ecb4a6722bb7eeb3dc4c4dc2d",
+  "api_retrieved_at": "2026-11-16T22:21:13.235465+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 109,
+      "count": 748,
+      "name": "D.R. of Congo",
+      "slug": "dr-of-congo",
+      "parent": 15
+    },
+    {
+      "id": 243,
+      "count": 6007,
+      "name": "Development",
+      "slug": "development",
+      "parent": 238
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 18,
+      "count": 1766,
+      "name": "Kenya",
+      "slug": "kenya",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 143,
+      "count": 803,
+      "name": "Uganda",
+      "slug": "uganda",
+      "parent": 15
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-837508-b00001",
+      "text": "This article was first published on Icicongo on June 21, 2025. It was republished on Global Voices as part of a content partnership agreement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 142,
+      "source_links": [
+        "https://icicongo.net"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00002",
+      "text": "In East Africa, a lack of border controls and widespread fraud facilitate the illegal timber trade.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 144,
+      "body_end": 243,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00003",
+      "text": "On Ngong Road, a town southwest of Nairobi, the capital of Kenya, the noise of mallets and saws fills the air. At a roadside furniture market, muscular men transport the freshly cut timber on carts and trucks, weaving their way through the crowds of shoppers.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 245,
+      "body_end": 504,
+      "source_links": [
+        "https://fr.wikipedia.org/wiki/Kenya",
+        "https://fr.wikipedia.org/wiki/Nairobi",
+        "https://fr.wikipedia.org/wiki/Ngong_(Kenya)"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00004",
+      "text": "In the outdoor workshops, carpenters make stylish, solid mahogany furniture for wealthy customers. It is termite-resistant and built to last. However, behind this polished furniture and finely carved chairs lies a significant problem: opaque supply chains, uncontrolled borders, and logging operations stretching over a thousand kilometers into the center of the Democratic Republic of the Congo (DRC).",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 506,
+      "body_end": 908,
+      "source_links": [
+        "https://fr.wikipedia.org/wiki/R%C3%A9publique_d%C3%A9mocratique_du_Congo"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00005",
+      "text": "Anthony Muchui, a furniture store manager on Ngong Road since 2018, explains:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 910,
+      "body_end": 987,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00006",
+      "text": "> Presque tout l’acajou ici vient du Congo. Il est durable, résistant aux chocs, et il a une finition superbe.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 989,
+      "body_end": 1099,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00007",
+      "text": "> Almost all the mahogany here comes from the Congo. It’s durable, impact-resistant, and has a stunning finish.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1101,
+      "body_end": 1212,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00008",
+      "text": "Muchui estimates that his business uses around 30 tons of mahogany every month or two. However, he has concerns about the logistical challenges and irregular supplies:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1214,
+      "body_end": 1381,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00009",
+      "text": "> Obtenir du bois du Congo entre août et décembre est difficile.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1383,
+      "body_end": 1447,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00010",
+      "text": "> Obtaining timber from the Congo between August and December is difficult.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1449,
+      "body_end": 1524,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00011",
+      "text": "The timber arrives via agents who obtain permits from the DR Congolese and Ugandan authorities. Once in Kenya, truck drivers present documents from the DRC, tax forms from the Kenya Revenue Authority (KRA), and their identity cards. However, Muchui admits that not all the timber is “legal.”",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1526,
+      "body_end": 1817,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Kenya_Revenue_Authority"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00012",
+      "text": "> Je dépends des documents, mais on sait tous que le bois illégal passe encore.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 1819,
+      "body_end": 1898,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00013",
+      "text": "> Although I require documentation, we all know illegal timber still gets through.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 1900,
+      "body_end": 1982,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00014",
+      "text": "Samuel Mwenda, owner of Rehoboth Finest Timber and Furniture Dealers, imports timber from the Congo and Uganda. He uses agents stationed on the Busia border between Uganda and Kenya to process the documentation. While acknowledging the flaws in the system and importance of documentation, he explains:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 1984,
+      "body_end": 2285,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Busia,_Uganda"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00015",
+      "text": "> Si tout va bien, cela prend quatre jours, mais nous savons que le système peut être manipulé.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2287,
+      "body_end": 2382,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00016",
+      "text": "> If all is well, this will take four days. But we know the system can be manipulated.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2384,
+      "body_end": 2470,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00017",
+      "text": "Truck drivers are unable to assess the timber’s legality. Nicholas Mbugua, Executive Secretary of the Kenya Long Distance Truck Drivers and Allied Workers Union, stated:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 2472,
+      "body_end": 2641,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00018",
+      "text": "> Nous ne suivons pas ce qui est légal ou non. Nous avons poussé pour avoir un bureau de surveillance à la frontière, mais rien de concret pour l’instant. Les conducteurs ne sont pas formés pour détecter les faux permis. Nous avons besoin d’un bureau conjoint avec la KRA pour inspecter correctement les documents.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 2643,
+      "body_end": 2957,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00019",
+      "text": "> We don’t monitor what’s legal and what isn’t. We have been pushing for a monitoring agency on the border, but nothing concrete yet. Drivers aren’t trained to spot fake permits. We need a joint agency with the KRA to inspect the documentation correctly.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 2959,
+      "body_end": 3213,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00020",
+      "text": "In 2018, Kenya banned the logging of Indigenous hardwoods, causing a severe shortage. This ban was lifted in July 2023. According to Dr Joshua Cheboiwo, former director general of the Kenya Forestry Research Institute (KEFRI), the country needs around 100,000 cubic meters of hardwood every year, most of which comes from the DRC. He explains:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3215,
+      "body_end": 3558,
+      "source_links": [
+        "https://www.agenceecofin.com/economie/0507-110004-kenya-le-president-ruto-leve-l-interdiction-sur-l-exploitation-forestiere-afin-de-relancer-les-economies-locales",
+        "https://www.lemonde.fr/planete/article/2018/05/02/au-kenya-la-protection-des-forets-fait-grimper-le-prix-du-charbon-de-bois_5293478_3244.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00021",
+      "text": "> Entre 65 000 et 68 000 mètres cubes sont officiellement importés chaque année, mais le chiffre réel est probablement bien plus élevé. Une grande partie provient des frontières poreuses.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3560,
+      "body_end": 3747,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00022",
+      "text": "> Between 65,000 and 68,000 cubic meters are officially imported every year. However, the actual figure is likely much higher, as much comes through uncontrolled borders.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3749,
+      "body_end": 3919,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00023",
+      "text": "The supply chain involves various actors. Ugandan contractors often hire DR Congo workers to cut down the trees using chainsaws and portable sawmills. The timber is then transported through Uganda to Kenya, often without adequate monitoring. Cheboiwo stated:",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 3921,
+      "body_end": 4179,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00024",
+      "text": "> Une fois qu’il atteint le Kenya, il est tamponné et semble légal. Mais la gouvernance fragile en RDC rend difficile la vérification de l’origine réelle.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4181,
+      "body_end": 4335,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00025",
+      "text": "> Once in Kenya, the timber is stamped, deeming it legal. However, weak governance in the DRC makes verifying its true origin difficult.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4337,
+      "body_end": 4473,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00026",
+      "text": "Untransparent logging in the Congo",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4475,
+      "body_end": 4509,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00027",
+      "text": "In eastern DRC, logging mainly occurs in the provinces of Ituri (in the east, close to the border with Uganda), Bas-Uélé (in the north), and Tshopo (mid-northeast). These border regions have become logging operation gold mines in North Kivu and Ituri. Justin Malekani, a former logging operations manager turned carpenter in Butembo, explains:",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 4511,
+      "body_end": 4854,
+      "source_links": [
+        "https://fr.wikipedia.org/wiki/Bas-Uele",
+        "https://fr.wikipedia.org/wiki/Ituri",
+        "https://fr.wikipedia.org/wiki/Tshopo_(province)"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00028",
+      "text": "> Les chefs locaux vendent l’accès aux arbres. Nous payons le ‘Kingiyapoli’ [une forme de droit d'accès], généralement une chèvre et de la bière, et engageons des pygmées comme guides car ce sont eux qui connaissent le mieux la forêt.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 4856,
+      "body_end": 5090,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00029",
+      "text": "> Local leaders sell access to trees. We pay the ‘Kingiyapoli’ (a type of access fee), typically involving a goat and some beer. We hire forest people as guides as they know the forest best.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5092,
+      "body_end": 5282,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00030",
+      "text": "Depending on its size, a single mahogany tree can cost between USD 300 and USD 500.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5284,
+      "body_end": 5367,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00031",
+      "text": "Traders often work informally, hiring machinists, paying in cash, and transporting the timber using bicycles, porters, and trucks.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5369,
+      "body_end": 5499,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00032",
+      "text": "A skilled machinist can produce three cubic meters of planks per day, about three tons or 36 planks. Malekani added:",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5501,
+      "body_end": 5617,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00033",
+      "text": "> Il faut bien les nourrir pour garder ce rythme.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 5619,
+      "body_end": 5668,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00034",
+      "text": "> They must be well fed to keep up this pace.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 5670,
+      "body_end": 5715,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00035",
+      "text": "Although legal operations require permits from the National Forestry Fund (FFN) and demarcation from the environment service, many sidestep these requirements. An anonymous source said:",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 5717,
+      "body_end": 5902,
+      "source_links": [
+        "https://ffngouv.cd/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00036",
+      "text": "> La fraude rend les choses trop faciles. Si nous enregistrons des entreprises, nous ferons faillite à cause de la bureaucratie. Travailler seul est mieux.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 5904,
+      "body_end": 6059,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00037",
+      "text": "> Fraud makes things too easy. If we register our companies, we’ll go bust due to bureaucracy. Going it alone is better.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 6061,
+      "body_end": 6181,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00038",
+      "text": "Others operate under the protection of armed groups or political elites. A member of a local logging agency revealed:",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 6183,
+      "body_end": 6300,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00039",
+      "text": "> Si tu poses trop de questions, tu commences à recevoir des appels. Certains opérateurs illégaux se servent des permis des exportateurs légaux, compliquant ainsi la traçabilité.",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 6302,
+      "body_end": 6480,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00040",
+      "text": "> If you ask too many questions, you start receiving calls. Some illegal operators use legal exporters’ permits, making traceability difficult.",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 6482,
+      "body_end": 6625,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00041",
+      "text": "Corruption and border shortcomings",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 6627,
+      "body_end": 6661,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00042",
+      "text": "Timber exporters go through complicated processes at the Kasindi border post between the DRC and Uganda. Before the trucks are even loaded, they must pay the Congolese Control Office (OCC), the National Intelligence Agency (ANR), and other agencies between USD 1,000 and USD 1,200. Added to this are the roadside bribes. Mika Mathe, a logging trader, stated:",
+      "page": null,
+      "paragraph": 42,
+      "body_start": 6663,
+      "body_end": 7021,
+      "source_links": [
+        "https://fr.wikipedia.org/wiki/Kasindi",
+        "https://interieur.gouv.cd/services/details/ANR",
+        "https://www.occ.cd/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00043",
+      "text": "> On nous arrête à chaque point de contrôle et on nous demande 5 000 francs congolais (2 dollars américains) ou 10 000 francs congolais (4 dollars américains).",
+      "page": null,
+      "paragraph": 43,
+      "body_start": 7023,
+      "body_end": 7182,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00044",
+      "text": "> We’re stopped at every checkpoint and asked for CDF 5,000 (USD 2) or CDF 10,000 (USD 4).",
+      "page": null,
+      "paragraph": 44,
+      "body_start": 7184,
+      "body_end": 7274,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00045",
+      "text": "Officials at the Kasindi timber yard are supposed to record the timber’s details, but many exporters avoid this step. Moreover, trucks often leave for Uganda or Kenya, unopened and uninspected.",
+      "page": null,
+      "paragraph": 45,
+      "body_start": 7276,
+      "body_end": 7469,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00046",
+      "text": "A study that scientists Silvia Ferrari and Paolo Omar Cerutti conducted in 2023 found that 93 percent of the timber crossing the Kasindi border in 2021 didn’t have valid logging permits:",
+      "page": null,
+      "paragraph": 46,
+      "body_start": 7471,
+      "body_end": 7657,
+      "source_links": [
+        "https://www.ingentaconnect.com/content/cfa/ifr/2023/00000025/00000002/art00003"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00047",
+      "text": "> La plupart des documents mentionnent une seule espèce, l’acajou africain. De nombreux camions circulent la nuit ou le week-end pour éviter les inspections.",
+      "page": null,
+      "paragraph": 47,
+      "body_start": 7659,
+      "body_end": 7816,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00048",
+      "text": "> Most documents mention only one species, the African mahogany. Many trucks travel at night or on weekends to avoid inspections.",
+      "page": null,
+      "paragraph": 48,
+      "body_start": 7818,
+      "body_end": 7947,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00049",
+      "text": "A regional problem",
+      "page": null,
+      "paragraph": 49,
+      "body_start": 7949,
+      "body_end": 7967,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00050",
+      "text": "At the Busia border post in Kenya, KRA and Kenya Forest Service (KFS) officials review the certificates of origin and transit documentation. However, some shipments bypass official controls. Andrew Soi, KFS Deputy Chief Conservator, admits:",
+      "page": null,
+      "paragraph": 50,
+      "body_start": 7969,
+      "body_end": 8209,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Busia,_Uganda",
+        "https://www.kenyaforestservice.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00051",
+      "text": "> Nous savons que du bois est introduit clandestinement. Certains camions arrivent sans passer par les points d’entrée réguliers.",
+      "page": null,
+      "paragraph": 51,
+      "body_start": 8211,
+      "body_end": 8340,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00052",
+      "text": "> We know that timber is smuggled in. Some trucks arrive without going through the regular points of entry.",
+      "page": null,
+      "paragraph": 52,
+      "body_start": 8342,
+      "body_end": 8449,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00053",
+      "text": "Alex Lemarkoko, KFS Chief Conservator, noted that Kenya had tightened its plant health inspections and is working with other countries to monitor timber movement.",
+      "page": null,
+      "paragraph": 53,
+      "body_start": 8451,
+      "body_end": 8613,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00054",
+      "text": "> Nous avons besoin de coordination transfrontalière et de surveillance renforcée.",
+      "page": null,
+      "paragraph": 54,
+      "body_start": 8615,
+      "body_end": 8697,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00055",
+      "text": "> We need cross-border coordination and enhanced surveillance.",
+      "page": null,
+      "paragraph": 55,
+      "body_start": 8699,
+      "body_end": 8761,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00056",
+      "text": "Experts argue that protecting the Congo Basin requires a regional solution. With forests already depleted in Kenya, Uganda, and Tanzania, demand has shifted to the DRC. Paolo Cerutti, researcher at the Center for International Forestry Research (CIFOR-ICRAF), explains:",
+      "page": null,
+      "paragraph": 56,
+      "body_start": 8763,
+      "body_end": 9032,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00057",
+      "text": "> De nombreux agents à la frontière RDC-Ouganda sont impliqués dans le commerce. Certaines cargaisons sont légales. D’autres ne le sont pas.",
+      "page": null,
+      "paragraph": 57,
+      "body_start": 9034,
+      "body_end": 9174,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00058",
+      "text": "> Many agents on the DRC-Uganda border are involved in the trade. Some shipments are legal. While others are not.",
+      "page": null,
+      "paragraph": 58,
+      "body_start": 9176,
+      "body_end": 9289,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00059",
+      "text": "Cerutti and other researchers call on regional bodies, such as the East African Community (EAC) and the Southern African Development Community (SADC), to take action.",
+      "page": null,
+      "paragraph": 59,
+      "body_start": 9291,
+      "body_end": 9457,
+      "source_links": [
+        "https://www.eac.int/",
+        "https://www.sadc.int/fr"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837508-b00060",
+      "text": "> Ils ont fait des promesses sur papier pour protéger les forêts. Il est temps de les concrétiser.",
+      "page": null,
+      "paragraph": 60,
+      "body_start": 9459,
+      "body_end": 9557,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837508-b00061",
+      "text": "> They’ve made promises on paper to protect the forests. It’s now time to make them a reality.",
+      "page": null,
+      "paragraph": 61,
+      "body_start": 9559,
+      "body_end": 9653,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "cfef7af1fa6764afb399ffb486a201816424e52c618d5c6bdc2482e2b6e457a6",
+  "word_count": 1540,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 9653,
+  "retrieved_at": "2026-11-16T22:47:03.854383+00:00",
+  "raw_html_sha256": "f0c4f560b2669fd7e9064d04d3b9d28c8626f0eb741ae780acb4355a63efb250",
+  "resolved_source_url": "https://globalvoices.org/2025/07/03/from-the-congo-to-kenyam-timber-trafficking-is-flourishing/",
+  "canonical_url": "https://globalvoices.org/2025/07/03/from-the-congo-to-kenyam-timber-trafficking-is-flourishing/",
+  "source_bytes": 185780,
+  "authors": [
+    {
+      "name": "IciCongo",
+      "url": "https://fr.globalvoices.org/author/icicongo/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Laura",
+      "url": "https://globalvoices.org/author/laura-dunne/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 837508,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "f0c4f560b2669fd7e9064d04d3b9d28c8626f0eb741ae780acb4355a63efb250",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-c76df332d2f5a07c80d6",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-07",
+    "eligible_month_documents": 100,
+    "selected_month_documents": 84,
+    "inclusion_probability": 0.84,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "IciCongo",
+  "body_start": 469,
+  "body_end": 10122,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "ac359363db725fc05a890ef580fcd9ed7a304da89788ad888caeb7ccaeabce81",
+  "text_path": "articles/gv-837508.txt",
+  "metadata_path": "metadata/gv-837508.json",
+  "attribution": "This story by IciCongo originally appeared on Global Voices. https://globalvoices.org/2025/07/03/from-the-congo-to-kenyam-timber-trafficking-is-flourishing/",
+  "content_sha256": "29d80607197f089e0cf4e3eaf942cc133992c2e61671cb966fbc3444b1d67b33",
+  "source_sha256": "f0c4f560b2669fd7e9064d04d3b9d28c8626f0eb741ae780acb4355a63efb250",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

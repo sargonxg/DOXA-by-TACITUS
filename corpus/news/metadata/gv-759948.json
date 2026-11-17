@@ -1,0 +1,387 @@
+{
+  "id": "gv-759948",
+  "publisher_id": 759948,
+  "source_id": "globalvoices:759948",
+  "source_url": "https://globalvoices.org/2022/04/02/malaysians-worry-over-reported-plan-to-sell-contact-tracing-app-to-a-private-firm/",
+  "title": "Malaysians worry over reported plan to sell contact tracing app to a private firm",
+  "published_at": "2022-04-02T00:44:10Z",
+  "modified_at": "2022-04-04T07:14:16Z",
+  "api_author_id": 261,
+  "api_content_sha256": "64d295bd98e892f7e35547129c4b1fac1974ceb623c6d78cd8086e9993af15a3",
+  "api_response_sha256": "28920dbbc9737fa5d959f8e5a70a8ed45f6921680e721040c1ff52d03593d16e",
+  "api_retrieved_at": "2026-11-16T22:20:43.044586+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 12,
+      "count": 1108,
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "parent": 16
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-759948-b00001",
+      "text": "News about a Malaysian government agency’s plan to sell the COVID-19 MySejahtera contact tracing app to a private developer has alarmed opposition leaders and the public because of potential consequences on national security and citizens’ privacy. A government minister clarified that the app’s data are owned by the state and will not be sold to a private entity. But the response only raised more questions about the nature of the negotiations involving authorities and the developers of the MySejahtera app.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 510,
+      "source_links": [
+        "https://www.malaymail.com/news/malaysia/2022/03/27/khairy-says-mysejahtera-app-not-sold-to-private-companies-vows-privacy-rema/2049891"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00002",
+      "text": "The MySejahtera app was developed in 2020 by KPISoft Malaysia Sdn Bhd as part of its corporate social responsibility, which was then used by the government for contact tracing during the pandemic. In the past two years, Malaysians have been required to use the app as part of the government’s health and travel protocols.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 512,
+      "body_end": 833,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00003",
+      "text": "During a Public Accounts Committee hearing on March 24, an official from the Ministry of Health revealed that the plan to sell the MySejahtera app was approved in November 2021 via a direct tender.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 835,
+      "body_end": 1032,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00004",
+      "text": "Opposition leader Datuk Seri Anwar Ibrahim questioned the decision to sell the app and the possibility that it will be given to close associates of the ruling party:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1034,
+      "body_end": 1199,
+      "source_links": [
+        "https://www.nst.com.my/news/nation/2022/03/783576/anwar-questions-governments-sale-mysejahtera-private-company"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00005",
+      "text": "> Under an open tender, these facts would be scrutinised by the government and the public. In the case of a direct negotiation, this deal appears to resemble a pattern of rewarding companies and individuals that have political and business connections to the ruling government.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1201,
+      "body_end": 1478,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-759948-b00006",
+      "text": "The government was quick to assure the Parliament and the public that the private health data of Malaysians and other sensitive information contained in the app are secure.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1480,
+      "body_end": 1652,
+      "source_links": [
+        "https://www.nst.com.my/news/nation/2022/03/784002/govt-negotiating-mysj-mysejahtera-app-subscription-terms"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00007",
+      "text": "But more questions arose after it was disclosed in several news reports that the MySejahtera app was used and adopted by the government without a contract and that the ownership of the intellectual property of the app remains uncertain.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1654,
+      "body_end": 1890,
+      "source_links": [
+        "https://codeblue.galencentre.org/2022/03/26/pac-report-mysejahtera-developed-without-contract-apps-ownership-unclear-with-new-company/",
+        "https://twitter.com/NewsBFM/status/1508669105565736961"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00008",
+      "text": "Anwar said the people “have every reason to be suspicious and to be outraged.” He raised the following questions through a press statement posted on his Facebook page:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1892,
+      "body_end": 2059,
+      "source_links": [
+        "https://www.facebook.com/anwaribrahimofficial/posts/545590986922473"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00009",
+      "text": "> The Malaysian people would want to know where is their data being stored? Has it been stored in a secure and encrypted environment with limited access? What mechanisms are in place to prevent any third party from accessing or stealing their data? What recourse do people have if their data is misused in a way that causes them to experience harm, fraud or discrimination?",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2061,
+      "body_end": 2434,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-759948-b00010",
+      "text": "Charles Santiago, another member of Parliament, tweeted his concern about the planned sale of the app",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2436,
+      "body_end": 2537,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00011",
+      "text": "Researchers Rais Hussin and Ameen Kamal noted the lack of transparency regarding the ownership of the app:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2539,
+      "body_end": 2645,
+      "source_links": [
+        "https://www.malaymail.com/news/what-you-think/2022/03/30/intense-acrobatics-surrounding-mysejahtera-deals-rais-hussin-and-ameen-kama/2050611"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00012",
+      "text": "> Is Malaysia’s government the “sole” owner or one of the owners?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2647,
+      "body_end": 2712,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-759948-b00013",
+      "text": "> Is Malaysia’s government the “only” party that has access to the trademark and data collected through the operation of MySejahtera?",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2714,
+      "body_end": 2847,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-759948-b00014",
+      "text": "The hashtag #StopUsingMySejahtera trended on Twitter, which reflected the fear and anger of many Malaysians over the reported plan to sell the app. Some called for a boycott of the app:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2849,
+      "body_end": 3034,
+      "source_links": [
+        "https://twitter.com/search?q=%23StopUsingMySejahtera&src=typed_query",
+        "https://www.nst.com.my/news/nation/2022/03/783612/stopusingmysejahtera-gaining-traction-twitter"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00015",
+      "text": "The same Twitter user wryly observed that “contract tracing,” referring to tracking government contracts, should have been considered too during the pandemic:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3036,
+      "body_end": 3194,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00016",
+      "text": "The controversy led to the significant drop in the number of check-ins for those using the app.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3196,
+      "body_end": 3291,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00017",
+      "text": "Writing for The Full Frontal website, Zameen Zhou Datta has summed up the main points of the controversy and ended with this question:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3293,
+      "body_end": 3427,
+      "source_links": [
+        "https://thefullfrontal.my/to-sell-or-not-to-sell-the-mysejahtera-saga-explained/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-759948-b00018",
+      "text": "> If our data is being sold, should we keep using MySejahtera anyway for the sake of the public good? Do we just go back to manually signing in with a physical logbook whenever we go out? Or are we forced to just stay at home all day, every day until this pandemic is officially over?",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3429,
+      "body_end": 3713,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-759948-b00019",
+      "text": "Aside from the concern about handing over the MySejahtera data to a third party, civil society groups had earlier raised the issue of intensified state surveillance through the use of the app. They warned that it could lead to misuse of the app by authorities and the filing of more cases targeting critics and the opposition under “repressive” laws such as the Sedition Act and the Communications and Multimedia Act.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3715,
+      "body_end": 4132,
+      "source_links": [
+        "https://cijmalaysia.net/cij-strongly-condemns-the-communications-and-multimedia-ministrys-investigation-of-zul-ariffin/",
+        "https://cijmalaysia.net/wp-content/uploads/2021/07/02072021-05-SP-CIJ-Annual-Report2020.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "0087517448dc3565faa56eb6481d3d2c27427d7826ac038f9e587b4336b2db55",
+  "word_count": 686,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 4,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4132,
+  "retrieved_at": "2026-11-16T22:34:17.523783+00:00",
+  "raw_html_sha256": "1b9f1d1905bdddb1679ca81704a797a96d1de27ab6bf605659d1b3cec554de25",
+  "resolved_source_url": "https://globalvoices.org/2022/04/02/malaysians-worry-over-reported-plan-to-sell-contact-tracing-app-to-a-private-firm/",
+  "canonical_url": "https://globalvoices.org/2022/04/02/malaysians-worry-over-reported-plan-to-sell-contact-tracing-app-to-a-private-firm/",
+  "source_bytes": 188240,
+  "authors": [
+    {
+      "name": "Mong Palatino",
+      "url": "https://globalvoices.org/author/mong/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 759948,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "1b9f1d1905bdddb1679ca81704a797a96d1de27ab6bf605659d1b3cec554de25",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-a0b228c6568a8b8c75af",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-04",
+    "eligible_month_documents": 76,
+    "selected_month_documents": 64,
+    "inclusion_probability": 0.8421052631578947,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Mong Palatino",
+  "body_start": 499,
+  "body_end": 4631,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c7cb58b6340b8b5e5e51bbe5fd70d0d85ea5776f45c72111375c681c75aa5e3d",
+  "text_path": "articles/gv-759948.txt",
+  "metadata_path": "metadata/gv-759948.json",
+  "attribution": "This story by Mong Palatino originally appeared on Global Voices. https://globalvoices.org/2022/04/02/malaysians-worry-over-reported-plan-to-sell-contact-tracing-app-to-a-private-firm/",
+  "content_sha256": "856e19fce4151f628366fb13a9027a4c107559897fd7a7a1d3252c6ae8214e85",
+  "source_sha256": "1b9f1d1905bdddb1679ca81704a797a96d1de27ab6bf605659d1b3cec554de25",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

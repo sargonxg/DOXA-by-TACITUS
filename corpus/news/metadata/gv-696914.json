@@ -1,0 +1,579 @@
+{
+  "id": "gv-696914",
+  "publisher_id": 696914,
+  "source_id": "globalvoices:696914",
+  "source_url": "https://globalvoices.org/2020/02/15/coronavirus-related-xenophobia-spreads-to-central-and-eastern-europe/",
+  "title": "Coronavirus-related xenophobia spreads to Central and Eastern Europe",
+  "published_at": "2020-02-15T21:02:56Z",
+  "modified_at": "2022-04-06T04:46:34Z",
+  "api_author_id": 481,
+  "api_content_sha256": "7035ef9342b8de62cb5c1391875bd0bd3f16f200a10622940d6faacf46391b1a",
+  "api_response_sha256": "8480492cb0e67e08506277bbbbeeed6da0f18a0c7fd08ca1ae397634172ec47c",
+  "api_retrieved_at": "2026-11-16T22:20:22.644399+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 59,
+      "count": 633,
+      "name": "Belarus",
+      "slug": "belarus",
+      "parent": 57
+    },
+    {
+      "id": 60,
+      "count": 611,
+      "name": "Bosnia and Herzegovina",
+      "slug": "bosnia-herzegovina",
+      "parent": 57
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 62,
+      "count": 496,
+      "name": "Croatia",
+      "slug": "croatia",
+      "parent": 57
+    },
+    {
+      "id": 1439,
+      "count": 63,
+      "name": "Czech",
+      "slug": "czech",
+      "parent": 317
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 767,
+      "count": 518,
+      "name": "Macedonian",
+      "slug": "macedonian",
+      "parent": 317
+    },
+    {
+      "id": 68,
+      "count": 840,
+      "name": "North Macedonia",
+      "slug": "macedonia",
+      "parent": 57
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-696914-b00001",
+      "text": "Widespread disinformation related to the outbreak of the 2019n-CoV coronavirus, which originated in the city of Wuhan in China’s Hubei province, has caused paranoia, resulting in racist abuse and discrimination against Asian people across Central and Eastern Europe.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 266,
+      "source_links": [
+        "https://globalvoices.org/2020/02/07/the-battle-of-numbers-in-the-wuhan-coronavirus-outbreak/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00002",
+      "text": "In the Balkans, for instance, disinformation about the outbreak had been used as click bait, with various web portals falsely claiming the virus had arrived in the region, even though no infections had been reported there.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 268,
+      "body_end": 490,
+      "source_links": [
+        "https://meta.mk/en/various-web-portals-have-brought-the-corona-virus-in-the-balkans-region-but-the-patient-remained-in-india/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00003",
+      "text": "Media fail to create panic in Croatia",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 492,
+      "body_end": 529,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00004",
+      "text": "Quite a few Chinese and East Asian people visit the Balkans as tourists, either as part of European bus tours or connected to cruises that include bus tours between ports. If a cruise ship docked in Dubrovnik, Croatia, for example, passengers might take a tour that could include cities in Croatia, Montenegro, Albania, Kosovo, North Macedonia, and finally, Greece, where they would re-join the ship in Thessaloniki.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 531,
+      "body_end": 947,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00005",
+      "text": "Some media chose to track the movement of buses carrying Chinese tourists traveling from Italy via Slovenia through Croatia and Bosnia in a sensationalist manner, from the moment they crossed the border, to the safety measures taken in each town along the way.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 949,
+      "body_end": 1209,
+      "source_links": [
+        "https://time.rs/?q=autobus+kinezima&search=news&startdate=26.01.2020&enddate=06.02.2020&order=dec"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00006",
+      "text": "These stories sometimes included a human aspect, such as the one about a “state of siege” on the Croatian border after buses arrived with Chinese tourists. The report described how two girls from Shanghai “cried and were apologizing to the other [non-Chinese] passengers” for the delay.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1211,
+      "body_end": 1497,
+      "source_links": [
+        "https://www.index.hr/vijesti/clanak/autobuse-s-kinezima-zaustavili-na-hrvatskoj-granici-putnica-opsadno-stanje/2154214.aspx"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00007",
+      "text": "Photos of Taiwanese tourists who walked the city of Šibenik with a sign “Nismo iz Kine” (“We are not from China”) went viral after they were posted on the Facebook page Dnevna doza prosječnog Dalmatinca (“Daily dose of an average Dalmatian”). These photos were lauded as a touch of cuteness in the otherwise grim situation depicted by media within the region and beyond.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1499,
+      "body_end": 1869,
+      "source_links": [
+        "https://www.facebook.com/DnevnadozaprosjecnogDalmatinca/photos/a.293341734355228/1040015026354558/?type=3&theater",
+        "https://www.google.com/search?tbm=isch&sxsrf=ACYBGNRLb-BHFH3DTlFvPeS7weUuXuUwHQ%3A1581687428246&source=hp&biw=1920&bih=969&ei=hKJGXpj1DKOXmwWXwK3IAg&q=nismo+iz+kine&oq=nismo+i&gs_l=img.3.0.35i39j0l9.549.1421..2373...1.0..0.369.1454.0j3j3j1......0....1..gws-wiz-img.JsKUQnGNAXU",
+        "https://www.mirror.co.uk/news/world-news/coronavirus-tourists-pictured-holding-not-21377778"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00008",
+      "text": "Croatian newspaper Večernji list published an interview with Xiaotong Chen-Li, owner of five Chinese/Asian restaurants in Zagreb. She said that even though people seem more cautious, she has experienced no decline in the number of customers — her restaurants primarily source local ingredients, and import the rest exclusively from other European Union member countries.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1871,
+      "body_end": 2241,
+      "source_links": [
+        "https://www.vecernji.hr/vijesti/gdje-zagrebacki-kinezi-nabavljaju-namirnice-nema-mjesta-panici-promet-nam-je-isti-1377339"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00009",
+      "text": "Insults and apologies in North Macedonia",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2243,
+      "body_end": 2283,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00010",
+      "text": "North Macedonia has also seen an increase in the number of Asian tourists in recent years, arriving in a country that has been fertile ground for disinformation. One local newspaper promoted an absurd claim, attributed to a Bulgarian doctor, that the intake of alcohol could cure the disease.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2285,
+      "body_end": 2577,
+      "source_links": [
+        "https://kapital.mk/raste-brojot-na-turisti-i-godinava-no-so-mnogu-pomalo-tempo-2/",
+        "https://meta.mk/en/no-the-corona-virus-cannot-be-cured-by-consuming-alcohol/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00011",
+      "text": "On January 29, 2020, a Skopje resident posted a video of himself accosting a group of bewildered Asian people on a street in the center of the capital. The clip, which shows a group of two men and three women stoically trying to ignore the expletive insults the man is hurling, hit a nerve in a country that is multi-ethnic and highly sensitive to public displays of racism. Netizens shared the clip on Twitter and Facebook as evidence of the wrongdoing.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2579,
+      "body_end": 3033,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Demographics_of_North_Macedonia",
+        "https://twitter.com/skopskipunisher/status/1222545132999905280",
+        "https://www.facebook.com/813882489/videos/10158147483162490/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00012",
+      "text": "At first, the victims were assumed to be tourists, but the local daily, Sloboden Pečat, revealed that they were members of a South Korean religious organization called Heavenly Culture, World Peace, Restoration of Light (HWPL). The group later told the media outlet SDK.mk that it was an isolated incident, and that they had been warmly welcomed by Macedonians over the past four years as they conducted school workshops on peace and tolerance.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3035,
+      "body_end": 3479,
+      "source_links": [
+        "http://hwpl.kr/",
+        "https://sdk.mk/index.php/dopisna-mrezha/eden-verbalen-napad-ne-mozhe-da-ja-smeni-nashata-slika-deka-ste-primer-za-miren-narod-velat-korejtsite-koi-zavchera-bea-navreduvani-poradi-koronavirusot/",
+        "https://www.slobodenpecat.mk/azijczite-od-korona-videoto-bile-od-obedineti-naczii-i-ja-uchele-makedonskata-mladina-za-mir-i-toleranczija/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00013",
+      "text": "The mayor of Skopje, Petre Šilegov, apologized for the xenophobic attack, which he said “brought shame to the city and the country” and is “completely opposite to the core values of Skopje as a city of solidarity, cosmopolitanism and togetherness”. Caretaker Prime Minister Oliver Spasovski also issued a public apology for the hate speech, and demanded swift action from the Ministry of Interior.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3481,
+      "body_end": 3878,
+      "source_links": [
+        "https://fokus.mk/spasovski-im-se-izvini-na-napadnatite-turisti-vo-skopje/",
+        "https://www.facebook.com/petreshilegov/posts/3142689579288952"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00014",
+      "text": "Skopje-based journalist Dehran Muratov commented on the issue in an op-ed titled, “Don't be afraid, the coronavirus is afraid to get infected from you”:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3880,
+      "body_end": 4032,
+      "source_links": [
+        "https://civilmedia.mk/ne-se-plashi-i-korona-virusot-ne-saka-da-se-zarazi-od-tebe/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00015",
+      "text": "> Лек за корона вирусот сигурно ќе се најде, но за идиотизмот, глупоста, просталукот, малограѓанството, несолидарноста, за говорот на омраза, расизмот… лек тешко дека ќе се најде.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4034,
+      "body_end": 4213,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696914-b00016",
+      "text": "> Среде Скопје да навредиш група на граѓани кои ти заличија на Кинези само затоа што на ТВ, интернет, Фејсбук виде дека некаде во Кина досега стотици се починати, а илјадници заразени од смртоносната болест, и наместо да има жал и сочувство, ти да ги навредиш и опсуеш, навистина треба да си опериран од чувства.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4215,
+      "body_end": 4527,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696914-b00017",
+      "text": "> A cure for the coronavirus will be discovered, but it would be hard to find the cure for the idiocy, stupidity, boorishness, petit bourgeois mindset, lack of solidarity, hate speech racism…",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4529,
+      "body_end": 4720,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696914-b00018",
+      "text": "> One has to be incapable of emotions in order to insult a group of citizens for looking Chinese, only because one saw on TV, [the] internet or Facebook that somewhere in China, hundreds of people have died, and thousands infected by the deadly disease. To insult and swear instead of expressing sorrow and compassion.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4722,
+      "body_end": 5040,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696914-b00019",
+      "text": "No taxi for Chinese-looking man in Minsk",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5042,
+      "body_end": 5082,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00020",
+      "text": "In Belarus, where there is a significant Chinese community due to the political rapprochement between Minsk and Beijing, a recent case of discrimination illustrated how coronavirus-related xenophobia can affect average citizens. On February 11, a Kazakh resident identified only by his first name, Nursultan, ordered a taxi. When the car arrived, the driver refused to unlock the door and drove away. Nursultan communicated with the driver to try and understand what happened and shared screenshots of their conversation on a local portal:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5084,
+      "body_end": 5623,
+      "source_links": [
+        "https://auto.onliner.by/2020/02/11/minsk-1537?fbclid=IwAR0aNnCg8oMIE7k3UE55Bw37EpR5KHekFEtaGo-dPWXTAj-At9QgiV2Gc4Q"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00021",
+      "text": "> Nursultan: Why did you leave? lol",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5625,
+      "body_end": 5660,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696914-b00022",
+      "text": "> Driver: You looked Chinese",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5662,
+      "body_end": 5690,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696914-b00023",
+      "text": "> Nursultan: This is what the lack of information does to people!",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5692,
+      "body_end": 5757,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696914-b00024",
+      "text": "> Driver: I don't see the why I should risk my life for 3 roubles. Good luck. Haha!",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5759,
+      "body_end": 5842,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696914-b00025",
+      "text": "Nursultan later contacted the taxi company, which apologized and said they would no longer work with that driver.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5844,
+      "body_end": 5957,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00026",
+      "text": "Discrimination by other Asian groups in the Czech Republic",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5959,
+      "body_end": 6017,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00027",
+      "text": "In the Czech Republic, home to a large ethnic Vietnamese community, an Asian restaurant caused outrage for posting a sign on its front door which read, “To protect public health, the restaurant will temporarily not accept Chinese customers.”",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6019,
+      "body_end": 6260,
+      "source_links": [
+        "https://globalvoices.org/2020/01/08/the-media-habits-of-the-vietnamese-minority-in-the-czech-republic-interview-with-professor-tae-sik-kim/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00028",
+      "text": "A photo of the notice was first posted by the Facebook page the Prague Geezer, and was shared hundreds of times.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6262,
+      "body_end": 6374,
+      "source_links": [
+        "https://www.facebook.com/praguemorning/photos/a.10154366467976893/10157716034846893",
+        "https://www.facebook.com/thepraguegeezer/photos/a.1729636250685828/2452540521728727/?type=3&theater"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00029",
+      "text": "Public outcry soon forced the restaurant to remove the notice, and to issue an apology on their Facebook page, blaming their “lack of knowledge about the disease” and expressing regret that the “improperly formulated” sign caused “more harm than good”.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6376,
+      "body_end": 6628,
+      "source_links": [
+        "https://www.facebook.com/PhoOriginal/posts/2677500192363500?__xts__%5B0%5D=68.ARDa9qleYfEc5DREKGhY5TFKlwJWSDK01y4l2IIMsrknrEI51aHAQOCEh3qvauzoH_ru1p2SBjiqoQXGPc-J5rTzFtsQ69gv0Jal4oXSMCkPTYgajIb06MZ5-vi2j6pgSe188Y7846DAzZpThS5u9Ngj5P5iJwjIUEqIhNYpBO-lnQEyh1u1w9IpG6_fXIHxrZW1qONjgNuSaMLmEid3PHH_q9l_DlWbdnLBDjT0Zl78qNElhO2PZGhRtlL4qAcvf2BA4B6cd9087QaNWdniYSaufyVCBrkWQOqcMBxx22e-qbKHhhLmAN1S0SgjCn3oAQfn65vgHYTTynMlMXSCvQ&__tn__=-R"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00030",
+      "text": "Discrimination based on race is a criminal offense in the Czech Republic, but in this case, the police were not alerted.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6630,
+      "body_end": 6750,
+      "source_links": [
+        "https://www.zakonyprolidi.cz/cs/2009-198"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00031",
+      "text": "Displays of xenophobia have been more common in Western Europe, which is a popular destination for global travelers. Italy, for instance, is home to more than 300,000 people of Chinese descent, and as many as five million Chinese tourists visited the country in 2018. Yet, Italy seems to be responding to xenophobia in ways that the rest of the region would do well to emulate:",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 6752,
+      "body_end": 7129,
+      "source_links": [
+        "https://www.theguardian.com/world/2020/jan/31/spate-of-anti-chinese-incidents-in-italy-amid-coronavirus-panic"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696914-b00032",
+      "text": "Check out Global Voices’ special coverage of the impact of the Wuhan coronavirus.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 7131,
+      "body_end": 7212,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/how-will-the-wuhan-coronavirus-impact-the-political-future-of-china/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "2dd5df0996b2e9627ccba10059c96d414c2a9f81e8a968a0fa05f05158bb3bfa",
+  "word_count": 1173,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 3,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7212,
+  "retrieved_at": "2026-11-16T22:22:05.302534+00:00",
+  "raw_html_sha256": "dd2ba028591ca943fcaea7af0bd9331a8b1ef8625ed6b0cbd759668d446d686e",
+  "resolved_source_url": "https://globalvoices.org/2020/02/15/coronavirus-related-xenophobia-spreads-to-central-and-eastern-europe/",
+  "canonical_url": "https://globalvoices.org/2020/02/15/coronavirus-related-xenophobia-spreads-to-central-and-eastern-europe/",
+  "source_bytes": 196930,
+  "authors": [
+    {
+      "name": "Filip Stojanovski",
+      "url": "https://globalvoices.org/author/filip-stojanovski/"
+    },
+    {
+      "name": "Filip Noubel",
+      "url": "https://globalvoices.org/author/filip-noubel/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 696914,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "dd2ba028591ca943fcaea7af0bd9331a8b1ef8625ed6b0cbd759668d446d686e",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-6188b580a454da924b75",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-02",
+    "eligible_month_documents": 92,
+    "selected_month_documents": 77,
+    "inclusion_probability": 0.8369565217391305,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Filip Stojanovski; Filip Noubel",
+  "body_start": 491,
+  "body_end": 7703,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "8eefdb7a5270b21f2439eaeb27eb08582edf5df69fff1302a9d17fa0afbe162d",
+  "text_path": "articles/gv-696914.txt",
+  "metadata_path": "metadata/gv-696914.json",
+  "attribution": "This story by Filip Stojanovski; Filip Noubel originally appeared on Global Voices. https://globalvoices.org/2020/02/15/coronavirus-related-xenophobia-spreads-to-central-and-eastern-europe/",
+  "content_sha256": "08d0dec1abc4948a92a919f886174c6b038c127f55c0e75c8869bda946b40be5",
+  "source_sha256": "dd2ba028591ca943fcaea7af0bd9331a8b1ef8625ed6b0cbd759668d446d686e",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

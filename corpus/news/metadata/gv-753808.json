@@ -1,0 +1,361 @@
+{
+  "id": "gv-753808",
+  "publisher_id": 753808,
+  "source_id": "globalvoices:753808",
+  "source_url": "https://globalvoices.org/2022/01/10/heavy-floods-leave-over-30000-displaced-in-northern-sumatra-indonesia/",
+  "title": "Heavy floods leave over 30,000 displaced in northern Sumatra, Indonesia",
+  "published_at": "2022-01-10T02:47:01Z",
+  "modified_at": "2022-04-13T20:09:44Z",
+  "api_author_id": 2893,
+  "api_content_sha256": "501dae46816e348f92f0aa489c22e9d4627fcd18ad3ccb66ba0b55239633220d",
+  "api_response_sha256": "5fbfbff678727adebb3a105386522b813371c20ab60c755caeef52d041127070",
+  "api_retrieved_at": "2026-11-16T22:20:40.560640+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 321,
+      "count": 152,
+      "name": "Bahasa",
+      "slug": "bahasa",
+      "parent": 317
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-753808-b00001",
+      "text": "After a week of heavy rain on the island of Sumatra in Indonesia, more than 32,000 people have been displaced, and three children have died. Many more people are unaccounted for across the region. Torrential rains overtook the island on December 31, 2021, causing destructive flash floods in four districts. Since then, persistent rain has left parts of Northern Sumatra underwater.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 382,
+      "source_links": [
+        "https://berita.mediacorp.sg/dunia/sekurang-kurangnya-3-maut-32000-lagi-kehilangan-rumah-akibat-banjir-di-sumatera-626051",
+        "https://www.aljazeera.com/news/2022/1/6/more-than-20000-displaced-by-floods-in-indonesias-sumatra"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00002",
+      "text": "Residents from the most affected regions have been taking shelter in mosques, temporary shelters, and public buildings as more than 11,000 homes have been submerged.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 384,
+      "body_end": 549,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00003",
+      "text": "In some areas, the floodwaters have begun subsiding, but many regions remain submerged, making the areas inaccessible and hindering relief and rescue efforts. North Aceh officials have declared a state of emergency until January 15.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 551,
+      "body_end": 783,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00004",
+      "text": "While officials’ immediate concern is rescuing those who have been injured or harmed by the floods, some are concerned about what comes next.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 785,
+      "body_end": 926,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00005",
+      "text": "Muhammad Hatta, who lives in a small village near the town of Lhoksukon in Aceh province, told AlJazeera he is especially concerned about the economic ramifications, noting, “The local economy has been destroyed.” He added:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 928,
+      "body_end": 1151,
+      "source_links": [
+        "https://www.aljazeera.com/news/2022/1/6/more-than-20000-displaced-by-floods-in-indonesias-sumatra"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00006",
+      "text": "> We are more worried about what happens after the floodwaters subside. All the rice paddies in the area are underwater. The farmers were just about to harvest them, but crops usually die after three or four days of being completely submerged. The farmers will have lost everything.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1153,
+      "body_end": 1435,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-753808-b00007",
+      "text": "Health specialists are also concerned that the flood could exacerbate health problems and lead to a spike in COVID-19, which Aceh province has largely contained for most of the pandemic, with only 38,000 reported cases since March 2020, according to official counts.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1437,
+      "body_end": 1703,
+      "source_links": [
+        "https://covid19.acehprov.go.id/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00008",
+      "text": "Pulmonary specialist Dr. Indra Buana, based in Lhoksukon, told AlJazeera, “COVID-19 numbers in North Aceh have been going down and I have had fewer patients coming to see me with serious symptoms in recent weeks.”",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1705,
+      "body_end": 1918,
+      "source_links": [
+        "https://covid19.acehprov.go.id/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00009",
+      "text": "However, as residents crowd together in emergency shelters and mosques, Buana is concerned the virus could spread. Aceh is one of the least vaccinated regions in Indonesia, with only 22 percent of the population double vaccinated against COVID-19 as of January 2: “We are worried that there will be a spike in COVID-19 cases. It could be very dangerous if someone from outside the area who has COVID-19 visits the shelters and unwittingly infects everyone.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1920,
+      "body_end": 2377,
+      "source_links": [
+        "https://vaksin.kemkes.go.id/#/provinces"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00010",
+      "text": "Aside from COVID, floods carry their own array of health risks. Swallowing contaminated floodwater can lead to lung inflammation, and the wet weather and humidity can exacerbate asthma or lead to upper respiratory tract infections.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2379,
+      "body_end": 2610,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00011",
+      "text": "While floods are an annual occurrence during Indonesia’s rainy season (roughly November to March each year), the nation has been grappling with unusually strong storms since November 2021, spurred by La Niña. The meteorological phenomenon, which means “little girl” in Spanish, occurs every few years, causing water temperatures in the Pacific Ocean to become lower than normal and impacting global weather patterns. In Indonesia and the Pacific, this results in increased cyclones and rainfall, which can lead to landslides, floods, mudslides, and more.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2612,
+      "body_end": 3166,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/La_Ni%C3%B1a"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00012",
+      "text": "In October 2021, Dwikorita Karnawati, head of the Meteorology, Climatology, and Geophysical Agency (BMKG), Indonesia’s national agency for disaster management, warned that the La Niña phenomenon was developing and urged districts to prepare for more severe weather events, saying, “Historical records show that La Nina in 2020 caused an increase in the accumulation of monthly rainfalls in Indonesia by 20 percent to 70 percent of normal conditions.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3168,
+      "body_end": 3618,
+      "source_links": [
+        "https://www.indonesiawaterportal.com/news/bmkg-cautions-of-la-nina-triggered-high-precipitation.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00013",
+      "text": "But the floods can’t just be attributed to La Niña. Environmentalists say the climate crisis and deforestation are also contributing to the more extreme weather events. The Indonesian environmental NGO, Wahli, told the Jakarta Post that the destruction was worsened because much of Sumatra’s forests have been cleared for massive palm oil plantations. Without trees and shrubbery to act as natural barriers, flash floods can become deadlier and more destructive.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3620,
+      "body_end": 4082,
+      "source_links": [
+        "https://www.thejakartapost.com/indonesia/2022/01/05/24000-evacuated-two-dead-in-sumatra-floods-.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00014",
+      "text": "Ananda Justisiani, a spokesman for the Aksi Cepat Tanggap emergency relief team in Aceh, told Arab News:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4084,
+      "body_end": 4188,
+      "source_links": [
+        "https://www.arabnews.com/node/1999566/world"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00015",
+      "text": "> Kali ini, banjir terjadi pada skala yang lebih besar lagi. Keadaan sangat teruk sekali kerana sungai-sungai melimpah-ruah dan terdapat hujan yang lebih lebat. Oleh itu, paras air tidak turun.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4190,
+      "body_end": 4383,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-753808-b00016",
+      "text": "> This time, the floods happened on an even bigger scale. The situation is very bad because the rivers are overflowing and there is heavier rain. So the water level is not going down.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4385,
+      "body_end": 4568,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-753808-b00017",
+      "text": "The Minister of Social Affairs (Mensos), Tri Rismaharini (Risma), visited the victims on Monday, January 3, and helped to deliver aid and supplies. Many of the victims asked the government to rebuild their homes that were destroyed, to which Risma responded in a written statement, “We encourage the local government to immediately review the residents’ requests.” Risma also plans to consult with experts to determine whether the original housing placements are safe or if they should be moved.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4570,
+      "body_end": 5065,
+      "source_links": [
+        "https://nasional.kompas.com/read/2022/01/04/15322951/hari-kerja-pertama-di-tahun-2022-risma-kunjungi-korban-banjir-sumatera-utara."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00018",
+      "text": "To help combat future floods, the government is constructing the Keureuto Dam, which will block the Krueng Keureuto river and some of its tributaries. The dam is expected to be complete in 2023 and may help lessen the annual flooding.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5067,
+      "body_end": 5301,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-753808-b00019",
+      "text": "Sumatra isn’t the only island facing hardships due to this year’s extreme weather events. Parts of Java and Papua were also inundated with floods this week.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5303,
+      "body_end": 5459,
+      "source_links": [
+        "https://papua.tribunnews.com/2022/01/07/10-jam-diguyur-hujan-deras-kota-jayapura-kebanjiran-parah"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "0b066b662c50754e9de5cf474345b97a2da41f686faea40e6c06db094a43f47d",
+  "word_count": 859,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5459,
+  "retrieved_at": "2026-11-16T22:33:17.240843+00:00",
+  "raw_html_sha256": "93dfe777c26540170204fe6e71c5c8ffa57a5a317af3aed68719d68f47428ac0",
+  "resolved_source_url": "https://globalvoices.org/2022/01/10/heavy-floods-leave-over-30000-displaced-in-northern-sumatra-indonesia/",
+  "canonical_url": "https://globalvoices.org/2022/01/10/heavy-floods-leave-over-30000-displaced-in-northern-sumatra-indonesia/",
+  "source_bytes": 187971,
+  "authors": [
+    {
+      "name": "Sydney Allen",
+      "url": "https://globalvoices.org/author/sydney-allen/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 753808,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "93dfe777c26540170204fe6e71c5c8ffa57a5a317af3aed68719d68f47428ac0",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-042345397b605c803178",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-01",
+    "eligible_month_documents": 88,
+    "selected_month_documents": 74,
+    "inclusion_probability": 0.8409090909090909,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Sydney Allen",
+  "body_start": 476,
+  "body_end": 5935,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "83bad219c57f9ef451e6d31fd15fc2d1f231021fa69946318dcb81ff84e47aa0",
+  "text_path": "articles/gv-753808.txt",
+  "metadata_path": "metadata/gv-753808.json",
+  "attribution": "This story by Sydney Allen originally appeared on Global Voices. https://globalvoices.org/2022/01/10/heavy-floods-leave-over-30000-displaced-in-northern-sumatra-indonesia/",
+  "content_sha256": "5ffc4792fc24c5c5bb475b6f5d6675dc7ba2de2fdef4a949fc2110b1bc111ed7",
+  "source_sha256": "93dfe777c26540170204fe6e71c5c8ffa57a5a317af3aed68719d68f47428ac0",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

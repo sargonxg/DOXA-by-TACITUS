@@ -1,0 +1,337 @@
+{
+  "id": "gv-730723",
+  "publisher_id": 730723,
+  "source_id": "globalvoices:730723",
+  "source_url": "https://globalvoices.org/2021/03/07/cambodias-internet-gateway-could-intensify-surveillance-and-censorship/",
+  "title": "Cambodia’s internet gateway could intensify surveillance and censorship",
+  "published_at": "2021-03-07T02:16:45Z",
+  "modified_at": "2021-03-07T02:16:45Z",
+  "api_author_id": 261,
+  "api_content_sha256": "88937d3520781842a5af19d54bfe3539baef6e2947b5482df473fd02b2a53e47",
+  "api_response_sha256": "77986401a5e819891872a9bdf1c0b30de63431aaa5322b33afb4833ff0dba79d",
+  "api_retrieved_at": "2026-11-16T22:20:32.943313+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 47,
+      "count": 880,
+      "name": "Cambodia",
+      "slug": "cambodia",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-730723-b00001",
+      "text": "Cambodia’s sub-decree on the establishment of the National Internet Gateway (NIG Sub-Decree) was signed by Prime Minister Hun Sen on February 16, amidst concerns raised by several stakeholders about its potentially adverse impact on e-commerce and human rights.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 261,
+      "source_links": [
+        "https://www.facebook.com/158818357505519/posts/3603510989702888/?d=n"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730723-b00002",
+      "text": "The sub-decree was drafted in July 2020 and discussed with telecommunications operators in August. It proposed the rerouting of internet traffic into a single gateway to facilitate revenue collection and enhance services. In December 2020, the Asia Internet Coalition expressed concern that some provisions of the sub-decree could be used to automatically block online content.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 263,
+      "body_end": 640,
+      "source_links": [
+        "https://aicasia.org/2020/12/08/cambodia-aic-issues-media-statement-on-cambodias-establishment-of-a-national-internet-gateway-8-dec-2020/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730723-b00003",
+      "text": "Forty-five civil society groups issued a signed statement after the signing of the sub-decree, warning that it could lead to intensified surveillance and privacy violations. They cited Article 6 of the NIG Sub-Decree, which authorizes the blocking of online connections or content deemed to “affect safety, national revenue, social order, dignity, culture, traditions and customs.” The statement asserts that:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 642,
+      "body_end": 1051,
+      "source_links": [
+        "https://www.cchrcambodia.org/index_old.php?title=Discard-the-Sub-Decree-on-the-Establishment-of-the-National-Internet-Gateway-set-to-detrimentally-impact-human-rights-online-in-Cambodia&url=media/media.php&p=press_detail.php&prid=802&id=5&lang=eng"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730723-b00004",
+      "text": "> …government surveillance cultivates an environment of fear, creating incentives for self-censorship and directly undermining the ability of journalists and human rights defenders to undertake their work.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1053,
+      "body_end": 1258,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-730723-b00005",
+      "text": "> This highly subjective and undefined list of reasons for censoring content gives the RGC [Royal Government of Cambodia] broad powers to police and censor online content, with the NIG providing unfettered access to and control over all data exchanges in the country.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1260,
+      "body_end": 1527,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-730723-b00006",
+      "text": "Several groups are also worried that the sub-decree could affect e-commerce, because of the additional regulations imposed on tech companies:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1529,
+      "body_end": 1670,
+      "source_links": [
+        "https://www.licadho-cambodia.org/pressrelease.php?perm=471"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730723-b00007",
+      "text": "> We are concerned that this sub-decree will become an obstacle for technology companies and become a reason for investors to not invest in, or even leave, Cambodia’s online sector.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1672,
+      "body_end": 1853,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-730723-b00008",
+      "text": "Chak Sopheap, executive director of Cambodian Center for Human Rights, noted that the directive was passed at a time when the government is accused of silencing online critics and persecuting opposition leaders.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1855,
+      "body_end": 2066,
+      "source_links": [
+        "https://globalvoices.org/2020/04/09/online-journalist-detained-for-quoting-cambodian-prime-ministers-advice-on-covid-19/",
+        "https://www.voanews.com/press-freedom/internet-gateway-will-further-curb-free-speech-cambodia-rights-groups-say"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730723-b00009",
+      "text": "Human Rights Watch linked the sub-decree to the draconian policies imposed by the Hun Sen government during the pandemic:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2068,
+      "body_end": 2189,
+      "source_links": [
+        "https://www.hrw.org/news/2021/02/18/cambodia-internet-censorship-control-expanded"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730723-b00010",
+      "text": "> Cambodia’s National Internet Gateway is the missing tool in the government’s toolbox for online repression. It’s no coincidence that after shutting down critical media across the country, the Hun Sen government has now turned its attention to online critics, just in time for the nationally organized commune elections due in 2022.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2191,
+      "body_end": 2524,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-730723-b00011",
+      "text": "The Ministry of Posts and Telecommunications insisted that the sub-decree was necessary to tame the country’s “disorderly” internet landscape. It also described the statements of human rights groups as “unfounded, politically motivated, untrue and contradictory to the objectives stated in the Sub-Decree.”",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2526,
+      "body_end": 2832,
+      "source_links": [
+        "https://cambodianess.com/article/cambodian-government-pushes-ahead-with-national-internet-gateway",
+        "https://vodenglish.news/govt-seeks-to-control-disorderly-internet-providers-with-national-gateway/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730723-b00012",
+      "text": "The Ministry also denied that the government was aiming to install a China-style internet firewall, or that it would arbitrarily collect the personal data of internet users. Rather, the Ministry added, the sub-decree would benefit Cambodians:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2834,
+      "body_end": 3076,
+      "source_links": [
+        "https://www.phnompenhpost.com/national/ministry-brushes-concerns-restrictive-national-internet-gateway"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730723-b00013",
+      "text": "> It will also help prevent illegal cross-border network links, including online gambling, cyber threats, pornography and online fraud.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3078,
+      "body_end": 3213,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-730723-b00014",
+      "text": "Cambodia had 14.8 million mobile internet subscribers as of May 2020, according to a Telecommunication Regulator of Cambodia report.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3215,
+      "body_end": 3347,
+      "source_links": [
+        "https://cambojanews.com/cambodia-establishes-an-internet-gateway-raising-red-flags/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-730723-b00015",
+      "text": "In May 2018, the Cambodian government adopted the Inter-Ministerial Prakas (proclamation) on Website and Social Media Control, which expanded internet surveillance by mandating several government agencies to block websites hosting content considered “incitement, breaking solidarity, discrimination and willfully creating turmoil leading to undermining national security, public interest and social order.”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3349,
+      "body_end": 3755,
+      "source_links": [
+        "https://www.cchrcambodia.org/index_old.php?title=Civil-Society-Rejects-Government-Attack-on-Freedom-of-Expression&url=media/media.php&p=press_detail.php&prid=694&id=5&lang=eng"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "1c44c982baee9f2b593b49b4c56ea2406e0d75bf44c815947116431032b0fdee",
+  "word_count": 541,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 3755,
+  "retrieved_at": "2026-11-16T22:29:42.711865+00:00",
+  "raw_html_sha256": "5cce660109dc48027e00c188a668b84bdcfb7e0869f3e2f2719bc8a804fa5dec",
+  "resolved_source_url": "https://globalvoices.org/2021/03/07/cambodias-internet-gateway-could-intensify-surveillance-and-censorship/",
+  "canonical_url": "https://globalvoices.org/2021/03/07/cambodias-internet-gateway-could-intensify-surveillance-and-censorship/",
+  "source_bytes": 186661,
+  "authors": [
+    {
+      "name": "Mong Palatino",
+      "url": "https://globalvoices.org/author/mong/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 730723,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "5cce660109dc48027e00c188a668b84bdcfb7e0869f3e2f2719bc8a804fa5dec",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-01751a9a2aa7e1dc7402",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-03",
+    "eligible_month_documents": 91,
+    "selected_month_documents": 76,
+    "inclusion_probability": 0.8351648351648352,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Mong Palatino",
+  "body_start": 478,
+  "body_end": 4233,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b1b8c6b83fba00548f6817fef86f552194b4f5ed6281e4d3c94f54a995b5d1b2",
+  "text_path": "articles/gv-730723.txt",
+  "metadata_path": "metadata/gv-730723.json",
+  "attribution": "This story by Mong Palatino originally appeared on Global Voices. https://globalvoices.org/2021/03/07/cambodias-internet-gateway-could-intensify-surveillance-and-censorship/",
+  "content_sha256": "b4b43a49dd508c7c9474d458f1fb91b334046cdea576654cf0f9cec90ea69fe0",
+  "source_sha256": "5cce660109dc48027e00c188a668b84bdcfb7e0869f3e2f2719bc8a804fa5dec",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

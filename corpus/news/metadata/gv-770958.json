@@ -1,0 +1,687 @@
+{
+  "id": "gv-770958",
+  "publisher_id": 770958,
+  "source_id": "globalvoices:770958",
+  "source_url": "https://globalvoices.org/2022/09/15/those-people-comments-by-french-minister-spark-questions-about-homophobia-in-government/",
+  "title": "“Those people”: comments by French minister spark questions about homophobia in government",
+  "published_at": "2022-09-15T07:49:08Z",
+  "modified_at": "2023-06-04T20:30:38Z",
+  "api_author_id": 2610,
+  "api_content_sha256": "487a9621894d439838b8728a8ebccc3539ff076a88768604d1ea745a95a1e4a7",
+  "api_response_sha256": "30656aeb72fa6ac0796b25f9ba534044b6669ecaa343be437ba0196aa46e0005",
+  "api_retrieved_at": "2026-11-16T22:20:47.121994+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 194,
+      "count": 996,
+      "name": "France",
+      "slug": "france",
+      "parent": 187
+    },
+    {
+      "id": 327,
+      "count": 2508,
+      "name": "French",
+      "slug": "french",
+      "parent": 317
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1364,
+      "count": 1877,
+      "name": "LGBTQ+",
+      "slug": "gay-rights-lgbt",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 187,
+      "count": 2705,
+      "name": "Western Europe",
+      "slug": "western-europe",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-770958-b00001",
+      "text": "French President Emmanuel Macron's (center-right, liberal) government, who was reelected President in April 2022, is currently facing backlash over homophobic comments and stances expressed by some of its members.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 213,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00002",
+      "text": "On July 13, 2022, six French anti-homophobia organizations filed a legal complaint against the current Minister of Local Authorities, Caroline Cayeux, only a few days after she was appointed. They denounced comments she made as a senator in 2013 when she said same-sex marriage was a “whim” and went “against nature.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 215,
+      "body_end": 532,
+      "source_links": [
+        "https://www.assomousse.org/plainte-contre-la-ministre-caroline-cayeux-qui-maintient-ses-propos-sur-le-mariage-et-ladoption-pour-tous-un-dessein-contre-la-nature/",
+        "https://www.senat.fr/seances/s201304/s20130408/s20130408009.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00003",
+      "text": "When asked about this on TV channel Public Sénat on July 12, 2022, Caroline Cayeux said she “obviously maintained” her past remarks while trying to justify herself:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 534,
+      "body_end": 698,
+      "source_links": [
+        "https://www.youtube.com/watch?v=Gs6TNTHeQew"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00004",
+      "text": "> Je vais vous dire quand même que j’ai beaucoup d’amis parmi tous ces gens-là et franchement, c’est un mauvais procès qu’on me fait, et ça m’a beaucoup contrariée.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 700,
+      "body_end": 864,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00005",
+      "text": "> I will say, I have many friends among all those people, and frankly I am being targeted by an unfair trial. It upset me a lot.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 866,
+      "body_end": 994,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00006",
+      "text": "The legal complaint filed with the Paris Public Prosecutor refers to a “public insult to a group of people because of their sexual orientation by a person holding public authority,” which can carry up to a three-year prison sentence and a EUR 75,000 fine (about USD 75,000).",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 996,
+      "body_end": 1270,
+      "source_links": [
+        "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043982443",
+        "https://www.lemonde.fr/politique/article/2022/07/12/caroline-cayeux-regrette-ses-propos-inappropries-sur-le-mariage-pour-tous_6134536_823448.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00007",
+      "text": "Lawyer Étienne Deshoulières, who is representing the plaintiffs, said on broadcaster France Info:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1272,
+      "body_end": 1369,
+      "source_links": [
+        "https://www.francetvinfo.fr/societe/homophobie/des-associations-anti-homophobie-portent-plainte-contre-caroline-cayeux_5256277.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00008",
+      "text": "> Une personne de l’envergure d’une ministre ne peut plus, en 2022, dix ans après le vote de la loi sur le mariage pour tous, dire que l’homosexualité est un dessein contre nature.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1371,
+      "body_end": 1551,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00009",
+      "text": "> A person with the stature of a Minister cannot, in 2022, ten years after the law authorizing same-sex marriage was voted, say that homosexuality goes against nature.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1553,
+      "body_end": 1720,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00010",
+      "text": "Online reactions from the LGBTQ+ community",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1722,
+      "body_end": 1764,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00011",
+      "text": "On social media, members of the LGBTQ+ community quickly condemned the Minister’s words using the hashtag #CesGensLà (#ThosePeople):",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1766,
+      "body_end": 1898,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00012",
+      "text": "Twitter user @Le_placard_ noted that despite its progressive reputation, homophobia is still very much present in French society:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 1900,
+      "body_end": 2029,
+      "source_links": [
+        "https://twitter.com/Le_placard_"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00013",
+      "text": "> Everyday, “Those people” are reminded that the fight is not over. Whether it is through acts or words, whether it is by a stranger in the street or a Minister. Our freedom and our equality is a daily struggle. #IAmThosePeople",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2031,
+      "body_end": 2258,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00014",
+      "text": "Youtuber Chez Papa Papou, an LGBTQ+ advocate who releases videos about his experience in a homoparental household, called for Caroline Cayeux’s resignation:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2260,
+      "body_end": 2416,
+      "source_links": [
+        "https://www.youtube.com/channel/UCAnqDq6-txhdWJcRjg3Gwxg"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00015",
+      "text": "> #ThosePeople don’t understand why, in 2022, homophobia is still not a disqualifying factor to become and remain a Minister of the Republic.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2418,
+      "body_end": 2559,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00016",
+      "text": "> #CayeuxResignation",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2561,
+      "body_end": 2581,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00017",
+      "text": "Minister Cayeux later apologized and expressed regret, but the backlash did not stop. Government officials tried to do damage control by stressing the “right to make a mistake” and by relaying the Minister’s apologies. But their communication failed to convince many members of the LGBTQ+ community:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 2583,
+      "body_end": 2882,
+      "source_links": [
+        "https://www.bfmtv.com/politique/on-a-le-droit-a-l-erreur-une-fois-gregoire-defend-du-bout-des-levres-cayeux-apres-ses-propos-polemiques_AV-202207130338.html",
+        "https://www.huffingtonpost.fr/politique/article/apres-la-polemique-et-la-tribune-le-gouvernement-au-secours-de-caroline-cayeux_199014.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00018",
+      "text": "> What do you mean, the debate is closed? Your colleague spits in the face of millions of people and you think we’re going to stop there because she tweeted two sentences dictated by her 15 advisors ? This is a joke ! Go on, #CayeuxResignation !",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 2884,
+      "body_end": 3129,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00019",
+      "text": "> [In response to:]",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3131,
+      "body_end": 3150,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00020",
+      "text": "> – Caroline Cayeux’s comments deemed homophobic",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3152,
+      "body_end": 3200,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00021",
+      "text": "> “She had the opportunity to clarify her comments yesterday, I think the debate is now closed” says Olivier Véran, the government’s spokesperson.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3202,
+      "body_end": 3348,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00022",
+      "text": "Cécile Coudriou, former president of Amnesty International France, questioned the example the government is setting for its citizens:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3350,
+      "body_end": 3483,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00023",
+      "text": "> I am also one of #ThosePeople, quite naturally, and day after day I defend the dignity of LGBT+ people with Amnesty France and Amnesty.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 3485,
+      "body_end": 3622,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00024",
+      "text": "> Caroline Cayeux’s comments prove that in France, exemplarity is not always the rule at the governmental level.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 3624,
+      "body_end": 3736,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00025",
+      "text": "In an op-ed, the editor-in-chief for LGBTQ+ magazine Têtu pointed out that the government’s position was “unclear”:",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 3738,
+      "body_end": 3853,
+      "source_links": [
+        "https://tetu.com/2022/07/13/ces-gens-la-ministre-caroline-cayeux-ligne-gouvernement-borne-homophobie-lgbt/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00026",
+      "text": "> Proclamer un gouvernement allié des personnes LGBTQI+ ne consiste pas à y faire entrer des réactionnaires notoires en croisant les doigts pour qu'ils se taisent […] Un gouvernement allié des personnes LGBTQI+, c'est un gouvernement entièrement composé d'allié·es des LGBTQI+. Nous ne sommes ni “ces gens-là”, ni une option.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 3855,
+      "body_end": 4180,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00027",
+      "text": "> Claiming to be an ally government for LGBTQI+ people does not mean appointing well-known conservatives while hoping that they keep their mouth shut […] An ally government for LGBTQI+ people is a government entirely made of LGBTQI+ allies. We are not “those people,” nor are we an option.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 4182,
+      "body_end": 4471,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770958-b00028",
+      "text": "Other ministers face backlash over homophobic positions",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 4473,
+      "body_end": 4528,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00029",
+      "text": "In an open letter to Prime Minister Elisabeth Borne, 17 non-profit organizations called for the resignation of three other members of government, in addition to Caroline Cayeux’s.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 4530,
+      "body_end": 4709,
+      "source_links": [
+        "https://twitter.com/InterLGBT/status/1550541209323524096"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00030",
+      "text": "The current minister of Interior Gérald Darmanin, who was appointed in 2020, is under scrutiny for his past support of the “Manif pour tous,” a movement of protests against same-sex marriage in France. In 2013, he tweeted that as a mayor, he would not officiate any wedding between two men or two women.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 4711,
+      "body_end": 5014,
+      "source_links": [
+        "https://www.huffingtonpost.fr/politique/article/gerald-darmanin-et-ses-tweets-anti-mariage-gay-passent-mal-quand-macron-veut-que-chacun-puisse-aimer-librement_100819.html",
+        "https://www.nouvelobs.com/elections-legislatives-2022/20220512.OBS58361/ces-candidats-aux-legislatives-qui-ont-lutte-contre-les-droits-des-personnes-lgbt.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00031",
+      "text": "Freshly-appointed Minister of Ecological Transition, Christophe Béchu, is also facing backlash. In 2013, when he was a Senator, he compared same-sex marriage to incest. A few years later, as a mayor, he had posters from an AIDS awareness campaign removed from his city under the pretense that they were near a school and were “deliberately provoking.”",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5016,
+      "body_end": 5367,
+      "source_links": [
+        "https://www.20minutes.fr/sante/1967607-20161123-campagne-vih-censuree-rien-affiches-nature-perturber-enfants",
+        "https://www.20minutes.fr/societe/1136037-20130411-20130411-mariage-tous-florilege-demonstrations-saugrenues-opposition-senat"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00032",
+      "text": "Sébastien Lecornu, the Minister of the Armed Forces since May 2022, is being critiqued for his past opposition to same-sex marriage as well. In 2012, as a mayoral candidate, he declared: “Gay communitarianism irritates me as much as homophobia.”",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5369,
+      "body_end": 5614,
+      "source_links": [
+        "https://www.nouvelobs.com/politique/20170623.OBS1113/gourault-lemoyne-darmanin-ces-ministres-qui-etaient-contre-le-mariage-homo.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00033",
+      "text": "France’s mixed record on LGBTQ+ issues",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 5616,
+      "body_end": 5654,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00034",
+      "text": "France just celebrated the 40th anniversary of the decriminalization of homosexuality, which dates back to 4 August 1982. In 1999, the French Parliament established the civil solidarity pact (PACS), legally recognizing civil unions between same-sex individuals, before introducing in 2001 legal measures against discrimination on the grounds of sexual orientation. In 2013, France was the 9th country in the European union to allow same-sex marriage.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 5656,
+      "body_end": 6106,
+      "source_links": [
+        "https://www.elysee.fr/emmanuel-macron/2022/08/04/message-du-president-emmanuel-macron-pour-les-40-ans-de-la-depenalisation-totale-de-lhomosexualite",
+        "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000588617/#:~:text=%C2%AB%20Aucune%20distinction%2C%20directe%20ou%20indirecte,physique%2C%20de%20leur%20handicap%20ou",
+        "https://www.vie-publique.fr/eclairage/276243-droits-lgbt-lutte-contre-les-discriminations-et-politique-de-legalite"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00035",
+      "text": "In addition to the worrying signal that these recent Ministry appointments are sending to the LGBTQ+ community, some are concerned that Emmanuel Macron’s track record on LGBTQ+ issues was less than stellar during his first Presidential term (2017–2022).",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 6108,
+      "body_end": 6361,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00036",
+      "text": "During Macron’s first five-year term, two important laws for LGBTQ+ rights — the law opening access to medically-assisted reproduction for lesbian couples and the law banning the use of so-called “conversion therapy” — were repeatedly delayed and only enacted after strong advocacy from pressure groups, and ended up unsatisfactory. Transgender people are still excluded from medically-assisted reproduction. Activists also denounce the lack of progress regarding the rights of intersex people, as France refused to ban genital mutilations on intersex children, a practice that has been condemned by the Defender of Rights (France’s independent constitutional authority responsible for defending individual rights and freedoms) as well as the United Nations.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 6363,
+      "body_end": 7121,
+      "source_links": [
+        "https://juridique.defenseurdesdroits.fr/doc_num.php?explnum_id=17924",
+        "https://www.heteroclite.org/2022/05/mandat-macron-droits-lgbt-64535",
+        "https://www.inter-lgbt.org/idablhoti2021/",
+        "https://www.komitid.fr/2016/08/08/enfants-intersexes-lonu-rappelle-a-lordre-la-france-pour-la-troisieme-fois-concernant-les-mutilations-genitales/",
+        "https://www.mediapart.fr/journal/france/030322/bilan-macron-les-droits-des-lgbti-loin-d-avoir-ete-une-priorite"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00037",
+      "text": "Meanwhile, acts of anti-LGBTQ+ violence in France are increasing by about 15 percent every year and have doubled since 2016, according to the Ministry of Interior. Among these crimes, defamation and insults are the most common, followed by physical violence.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 7123,
+      "body_end": 7381,
+      "source_links": [
+        "https://www.lemonde.fr/police-justice/article/2022/05/16/les-personnes-lgbtphobes-deviennent-de-plus-en-plus-virulentes-encore-une-annee-de-hausse-pour-les-violences-en-raison-de-l-orientation-sexuelle_6126390_1653578.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00038",
+      "text": "Emmanuel Macron’s record in his first Presidential term was sanctioned by a decline in France’s rank in the Rainbow Index, ILGA-Europe’s annual review of LGBTQ+ rights in European countries. Out of 49 states, France went from 6th place in 2018 to 9th in 2019 and 13th in 2020 and 2021.",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 7383,
+      "body_end": 7668,
+      "source_links": [
+        "https://www.heteroclite.org/2022/05/mandat-macron-droits-lgbt-64535",
+        "https://www.ilga-europe.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00039",
+      "text": "While LGBTQ+ issues were absent from Emmanuel Macron’s reelection agenda in 2022, his government is now trying to handle the crisis by announcing the imminent appointment of an Ambassador for LGBTQ+ rights as well as the establishment of a 3 million euro fund to support LGBTQ+ centers across France.",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 7670,
+      "body_end": 7970,
+      "source_links": [
+        "https://www.francetvinfo.fr/societe/lgbt/lutte-contre-l-homophobie-un-ambassadeur-aux-droits-lgbt-sera-nomme-avant-la-fin-de-l-annee-annonce-elisabeth-borne_5292874.html",
+        "https://www.lemonde.fr/election-presidentielle-2022/article/2022/04/22/presidentielle-2022-les-sujets-de-societe-angle-mort-chez-les-deux-candidats-du-second-tour_6123230_6059010.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770958-b00040",
+      "text": "Now, whether this signals meaningful changes or simply an act of political communication and “pinkwashing” remains to be determined. But many LGBTQ+ activists are doubting the government’s sincerity and are concerned about the future of LGBTQ+ rights in France.",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 7972,
+      "body_end": 8233,
+      "source_links": [
+        "https://www.adheos.org/lutte-contre-lhomophobie-a-cherbourg-des-militants-peu-convaincus-par-les-annonces-du-gouvernement/",
+        "https://www.liberation.fr/politique/homophobie-a-paris-des-militants-denoncent-lambiguite-et-le-pinkwashing-du-gouvernement-20220802_JDU2SBA4JFASLIOUNYWYPW6R5U/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "c52aab7b74b8ae4eaee21c4b7eb1380ea986e030e81721fc584e7ea8ba4210f9",
+  "word_count": 1295,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 4,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 8233,
+  "retrieved_at": "2026-11-16T22:36:20.476908+00:00",
+  "raw_html_sha256": "9ca6c7fde407438ce5afdddc69390d18981194aa111c71d4287d8546c5a1afc1",
+  "resolved_source_url": "https://globalvoices.org/2022/09/15/those-people-comments-by-french-minister-spark-questions-about-homophobia-in-government/",
+  "canonical_url": "https://globalvoices.org/2022/09/15/those-people-comments-by-french-minister-spark-questions-about-homophobia-in-government/",
+  "source_bytes": 198571,
+  "authors": [
+    {
+      "name": "Jade Dussart",
+      "url": "https://fr.globalvoices.org/author/jade-dussart/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Jade Dussart",
+      "url": "https://globalvoices.org/author/jade-dussart/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 770958,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "9ca6c7fde407438ce5afdddc69390d18981194aa111c71d4287d8546c5a1afc1",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-cd9c93da519f129953c7",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-09",
+    "eligible_month_documents": 75,
+    "selected_month_documents": 63,
+    "inclusion_probability": 0.84,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Jade Dussart",
+  "body_start": 541,
+  "body_end": 8774,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "8a13f9eb4abb2f98d91d9788136b163c91d45326c013e34608bf62465bc7b5c9",
+  "text_path": "articles/gv-770958.txt",
+  "metadata_path": "metadata/gv-770958.json",
+  "attribution": "This story by Jade Dussart originally appeared on Global Voices. https://globalvoices.org/2022/09/15/those-people-comments-by-french-minister-spark-questions-about-homophobia-in-government/",
+  "content_sha256": "36ffdc56d1852a272f796e9db47c448d4658b2e3bc6886162c6ee787cd261fc6",
+  "source_sha256": "9ca6c7fde407438ce5afdddc69390d18981194aa111c71d4287d8546c5a1afc1",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

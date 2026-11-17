@@ -1,0 +1,376 @@
+{
+  "id": "gv-706039",
+  "publisher_id": 706039,
+  "source_id": "globalvoices:706039",
+  "source_url": "https://globalvoices.org/2020/06/11/post-crisis-hackathon-ecuadorian-ngos-crowdsource-for-a-world-after-covid-19/",
+  "title": "Post-crisis hackathon: Ecuadorian NGOs crowdsource for a world after COVID-19",
+  "published_at": "2020-06-11T14:43:16Z",
+  "modified_at": "2020-06-12T16:52:48Z",
+  "api_author_id": 821,
+  "api_content_sha256": "500b666136aa828f56bb2d2158e9f1c5ef062db4d6528db88a050f8568f6d174",
+  "api_response_sha256": "36bc3d63f20a164eefbe7ce2d06bb132aa122b08a06cf13d0b9306b43d571f31",
+  "api_retrieved_at": "2026-11-16T22:20:26.326198+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 151,
+      "count": 703,
+      "name": "Ecuador",
+      "slug": "ecuador",
+      "parent": 1354
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    },
+    {
+      "id": 7,
+      "count": 6125,
+      "name": "Ideas",
+      "slug": "ideas",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-706039-b00001",
+      "text": "This story was initially published on the Ecuadorian site Ojo al Dato (Eye on Data) and then republished and edited by Global Voices. Here are the first and second articles in the original series.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 196,
+      "source_links": [
+        "https://ojoaldato.ec/",
+        "https://ojoaldato.ec/covid-19-proyectos-innovadores-en-el-hackaton-post-crisis/",
+        "https://ojoaldato.ec/hackaton-post-crisis-tras-la-busqueda-de-soluciones/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00002",
+      "text": "Many countries are slowly starting to emerge from lockdown and they are being forced to confront the hard realities of a world with COVID-19. In Ecuador, a country hit hard by coronavirus, NGOs organized a hackathon in April to crowdsource project ideas that would address some of these realities. On May 30, the winners were announced via a live YouTube broadcast, bringing public exposure as well as funding prizes to the successful projects.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 198,
+      "body_end": 642,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Hackathon"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00003",
+      "text": "Crowdsourcing the fight against coronavirus",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 644,
+      "body_end": 687,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00004",
+      "text": "In late April, Ecuador had the third-highest number of registered cases in Latin America; and at the time of writing, official figures reported 3,642 deaths.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 689,
+      "body_end": 846,
+      "source_links": [
+        "https://coronavirusecuador.com/",
+        "https://www.bbc.com/mundo/noticias-america-latina-52405371",
+        "https://www.worldometers.info/coronavirus/country/ecuador"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00005",
+      "text": "The Post-Crisis Hackathon, which took place from April 29-30, was attended by 549 people who brainstormed solutions to the issues that would affect the economy and society in a post-COVID Ecuador. Hackathons are collaborative spaces that seek solutions to specific challenges and this one focused on challenges related to ten areas: environment, work and employment, daily life and social practices, cultural industries, education, health and well-being, economy and production, and government and citizenship.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 848,
+      "body_end": 1358,
+      "source_links": [
+        "https://hackatonpostcrisis.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00006",
+      "text": "The event was organized by developer and sociologist Iván Terceros along with his colleagues from MediaLab (connected to the NGO CIESPAL) as well as various organisations and business networks. In an interview with Ojo al Dato, Terceros spoke about the motivation behind the event:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1360,
+      "body_end": 1641,
+      "source_links": [
+        "https://ciespal.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00007",
+      "text": "> “Creo que no se está viendo claramente qué es lo que va a ocurrir el día después de la crisis […] Puede ser que esos sean los momentos más críticos”.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1643,
+      "body_end": 1794,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706039-b00008",
+      "text": "> It is not clear what will happen the day after the crisis […] It could be that those are the most critical moments [for society].",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1796,
+      "body_end": 1927,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-706039-b00009",
+      "text": "Hackathon projects making change",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1929,
+      "body_end": 1961,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00010",
+      "text": "The participants shared 116 projects and organizations participating in the Hackathon helped choose 19 finalists.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1963,
+      "body_end": 2076,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00011",
+      "text": "There were two votes: one from the public — which elected WiyaPoint and ChasquiCheck as winners of the public's vote — and one of from the jury. Nearly all the finalists received prizes.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2078,
+      "body_end": 2264,
+      "source_links": [
+        "https://hackatonpostcrisis.org/proyecto/153",
+        "https://hackatonpostcrisis.org/proyecto/185"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00012",
+      "text": "WiyaPoint's mobile app addresses the use of plastic bags — a contamination point for COVID-19 — by rewarding users every time they turn down a plastic bag when making a purchase. ChasquiCheck seeks to address misinformation around COVID-19 by setting up a digital platform to verify, identify and classify information to combat false news.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2266,
+      "body_end": 2605,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00013",
+      "text": "The WiyaPoint app will receive exposure, campaign launch, and social media advertising for a value of $1,000 provided by crowdfunding platform Green Crowds. ChasquiCheck will also receive the same amount of help to launch its virtual platform, thanks to the association of risk management professionals in Ecuador.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2607,
+      "body_end": 2921,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00014",
+      "text": "Fourteen other projects received some form of prize from the jury's vote. For example, participants thought of self-sustaining gardens as a response to a possible food shortage due to the pandemic. Both Grupo Faro and Incubadora La Libertad will offer them technical advice for a value of $1,000.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2923,
+      "body_end": 3219,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Grupo_FARO",
+        "https://hackatonpostcrisis.org/proyecto/120",
+        "https://hackatonpostcrisis.org/resultados-finales"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00015",
+      "text": "Todos Más Cerca is a digital platform connecting small and medium businesses to help them reactivate their economy. Through the platform, businesses can offer their products to users who are geographically nearby; the goal is to avoid agglomerations that could increase the number of COVID-19 infections. Todos Más Cerca already has agreements with Chambers of Commerce in parts of Ecuador, such as Zamora, Loja, Cuenca, among others.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3221,
+      "body_end": 3655,
+      "source_links": [
+        "https://hackatonpostcrisis.org/proyecto/116"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00016",
+      "text": "The project will also receive a fund of $3,000 from the United Nations Development Programme (UNDP) and the La Libertad Incubator. The economic promotion agency Conquito will provide them with accompaniment, advice and mentoring.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3657,
+      "body_end": 3886,
+      "source_links": [
+        "http://www.conquito.org.ec/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-706039-b00017",
+      "text": "In the case of Ecuador, Terceros explained that MediaLab will continue to support the projects that have been brought to life, so that they can be incubated as start-ups throughout the year.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3888,
+      "body_end": 4078,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "683c0c31ff72c803d2cbcb7edfeb1de97e00fa3ff71d2b7ae1172c575e7b5833",
+  "word_count": 645,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 4078,
+  "retrieved_at": "2026-11-16T22:24:58.129879+00:00",
+  "raw_html_sha256": "c49cb4a3958385c600055f84fe745ee1a647cb11952252544b0554ef9aca53b3",
+  "resolved_source_url": "https://globalvoices.org/2020/06/11/post-crisis-hackathon-ecuadorian-ngos-crowdsource-for-a-world-after-covid-19/",
+  "canonical_url": "https://globalvoices.org/2020/06/11/post-crisis-hackathon-ecuadorian-ngos-crowdsource-for-a-world-after-covid-19/",
+  "source_bytes": 188292,
+  "authors": [
+    {
+      "name": "Carlos E. Flores",
+      "url": "https://es.globalvoices.org/author/carlos-flores/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Kitty Garden",
+      "url": "https://globalvoices.org/author/kitty-garden/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 706039,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "c49cb4a3958385c600055f84fe745ee1a647cb11952252544b0554ef9aca53b3",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-2c64bffe6d505002ff34",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-06",
+    "eligible_month_documents": 110,
+    "selected_month_documents": 92,
+    "inclusion_probability": 0.8363636363636363,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Carlos E. Flores",
+  "body_start": 521,
+  "body_end": 4599,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b82c7d7bc1525608f981dbc8bc466b1ccf50318c9884217ef50cb462e2d26efe",
+  "text_path": "articles/gv-706039.txt",
+  "metadata_path": "metadata/gv-706039.json",
+  "attribution": "This story by Carlos E. Flores originally appeared on Global Voices. https://globalvoices.org/2020/06/11/post-crisis-hackathon-ecuadorian-ngos-crowdsource-for-a-world-after-covid-19/",
+  "content_sha256": "97f24468f2542a5e48bc3b354d43b149dc841cc486a0a3929b83a842388f6595",
+  "source_sha256": "c49cb4a3958385c600055f84fe745ee1a647cb11952252544b0554ef9aca53b3",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

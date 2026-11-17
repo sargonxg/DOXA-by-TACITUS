@@ -1,0 +1,409 @@
+{
+  "id": "gv-707325",
+  "publisher_id": 707325,
+  "source_id": "globalvoices:707325",
+  "source_url": "https://globalvoices.org/2020/05/29/a-conversation-with-udmurt-language-digital-activist-artyom-malykh/",
+  "title": "A conversation with Udmurt language digital activist Artyom Malykh",
+  "published_at": "2020-05-29T12:28:48Z",
+  "modified_at": "2020-07-06T22:11:14Z",
+  "api_author_id": 2363,
+  "api_content_sha256": "c88cbb3b3957dc3a771f8248f10da513183d621d39da96e3c6aaa5a93f22ab18",
+  "api_response_sha256": "36bc3d63f20a164eefbe7ce2d06bb132aa122b08a06cf13d0b9306b43d571f31",
+  "api_retrieved_at": "2026-11-16T22:20:26.326198+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 296,
+      "count": 2217,
+      "name": "Language",
+      "slug": "language",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-707325-b00001",
+      "text": "Udmurt is a Uralic language spoken in Russia's autonomous Republic of Udmurtia, where it shares official status with Russian. Speakers can also be found across a large area between the Volga River and Ural Mountains, such as in the Perm and Kirov Regions and neighbouring autonomous republics of Tatarstan, Bashkortostan, and Mari El. It is one of several related Uralic languages spoken in this diverse area of Russia, such as Mari, Erzya, Moksha, and Komi.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 458,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707325-b00002",
+      "text": "Russia's 2010 census recorded 324,338 Udmurt speakers, a number which has almost certainly decreased substantially over the following decade. According to the UN's Atlas of the World's Languages in Danger, it is classed as “definitely endangered.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 460,
+      "body_end": 707,
+      "source_links": [
+        "http://www.unesco.org/languages-atlas/index.php"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707325-b00003",
+      "text": "Nevertheless, there are some young Udmurts who are fighting to change that, increasingly online. Artyom Malykh is one such activist. He spoke to Global Voices about digital activism and language preservation, and his hopes for the future of the Udmurt language.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 709,
+      "body_end": 970,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707325-b00004",
+      "text": "Global Voices (GV): Last year, the Russian government passed a law which removed obligatory study of other languages in schools. In practice, this means that many under-resourced schools could simply stop offering studies in indigenous languages. How was that move interpreted by Udmurt speakers? How are language activists working to advocate for the use of the Udmurt language?",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 972,
+      "body_end": 1351,
+      "source_links": [
+        "https://theconversation.com/russia-is-cracking-down-on-minority-languages-but-a-resistance-movement-is-growing-101493"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707325-b00005",
+      "text": "> Artyom Malykh (AM): The new system has resulted in even more Russian language study. But it's important to remember that despite its official status, Udmurt has never been taught as an obligatory subject in every school across the region. In fact, it was only ever taught to ethnic Udmurt pupils in the rural areas of the republic where Udmurts are in the majority; meaning 30 percent of all the region's schools.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1353,
+      "body_end": 1768,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707325-b00006",
+      "text": "> After the law was passed, the total number of Udmurt language lessons was cut back to one or two hours a week, and parents had to indicate Udmurt as their child's native language in order to ensure that they received an education in it. But in some places, parents chose Russian as Russian language proficiency is an obligatory part of the final school exam. Most people understood that the language's position would worsen as a result of the law. However, in comparison to nearby regions with indigenous languages such as Tatarstan and Mordovia, Udmurt already had a negligible place in state institutions so the loss was not felt as painfully as elsewhere. Likewise, Albert Razin and other Udmurt intellectuals urged local politicians to make a stand against the new amendments. Online petitions with the same demand also appeared. Unfortunately, the politicians didn't pay attention.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1770,
+      "body_end": 2658,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707325-b00007",
+      "text": "GV: The suicide of the Udmurt linguist Albert Razin in 2019 attracted worldwide attention to the plight of indigenous languages in Russia. How has Razin’s death changed the discussion, several months on?",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2660,
+      "body_end": 2863,
+      "source_links": [
+        "https://globalvoices.org/2019/09/16/a-professors-self-immolation-puts-the-spotlight-on-the-fragile-future-of-russias-minority-languages/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707325-b00008",
+      "text": "> AM: There were different interpretations. Russian nationalists and some from the mainstream of society tried to portray his self-immolation as an act of madness. In general, people were shocked but also surprised that the fate of the Udmurt language was the reason for his suicide. The language issue never had a place in politics; most residents of Udmurtia are aware that the language is disappearing but don't acknowledge that its disappearance has any connection with institutions and the state. They believe that the only reasons for the vulnerable position of the language are the Udmurt people's failure and laziness in protecting it.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2865,
+      "body_end": 3508,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707325-b00009",
+      "text": "> Nevertheless, many Udmurts are worried that due to Razin's act, the language issue has become newly politicised. They fear that there will be more scrutiny towards them, which will harm minority and linguistic institutions and projects. Researchers and intellectuals at state academic institutions generally weren't allowed to voice their positions in public or provide contextual information about the state of the Udmurt language. Nevertheless, some activists launched a petition demanding that the regional government support the Udmurt language. Their only response claimed that the Udmurt language faces no problems.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3510,
+      "body_end": 4133,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707325-b00010",
+      "text": "> Activists from other indigenous peoples in Russia showed a lot of support and empathy for the Udmurt people, particularly since many of their languages face the same existential crisis. Their organisations sent official condolences to the Udmurt people, claiming that Razin's act was devoted to all Russia's indigenous languages and demanding that Russia's state policy towards its languages must be changed.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 4135,
+      "body_end": 4545,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707325-b00011",
+      "text": "GV: How would you characterise the use of the Udmurt language both on- and offline?",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4547,
+      "body_end": 4630,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707325-b00012",
+      "text": "> AM: Udmurt is mostly used for personal communication in informal contexts. In formal contexts, people usually use Russian. The language is used in local media: in printed newspapers, radio, and television. Nevertheless, Udmurt-language media outlets are all state-funded and their readership and circulation is steadily falling. However, Udmurt is used online, particularly in social media. Udmurt-language bloggers are becoming more popular. There are a few websites in Udmurt, which are mostly the online versions of Udmurt-language newspapers (Udmurt Dunne, Udmurt.media, Oshmes) or websites about the language itself (Udmurt language corpus, regional encyclopedia or site of the Udmurt language day). There's even an Udmurt version of Wikipedia, and VKontakte, Russia's largest social network, has offered an Udmurt-language interface since 2010. There are also a couple of mobile apps for Udmurt language learners.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4632,
+      "body_end": 5553,
+      "source_links": [
+        "http://udmcorpus.udman.ru/home",
+        "http://udmurtkyl.ru/",
+        "https://oshmes.rbsmi.ru/",
+        "https://udm.wikipedia.org/wiki/%D0%9A%D1%83%D1%82%D1%81%D0%BA%D0%BE%D0%BD_%D0%B1%D0%B0%D0%BC",
+        "https://udmdunne.ru/",
+        "https://udmurt.media/udm/",
+        "https://vorshud.unatlib.ru/index.php/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707325-b00013",
+      "text": "GV: What is your primary motivation for your Udmurt language activism to promote its daily use?",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5555,
+      "body_end": 5650,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707325-b00014",
+      "text": "> AM: My primary motivation is to keep the language of my community alive. Udmurt must be used in as wide a variety of spaces as possible in order to ensure that it lives on. But alongside the internet, traditional media and an institutional presence are crucial for the language's vitality. Without a presence in school education or without a guaranteed place in day-to-day bureaucracy, language transmission cannot be sustained.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5652,
+      "body_end": 6082,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707325-b00015",
+      "text": "GV: How did you become interested in using the internet to promote the use of the Udmurt language?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6084,
+      "body_end": 6182,
+      "source_links": [],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707325-b00016",
+      "text": "> AM: I've used the internet for my language activism ever since I became digitally literate. In 2009, I founded the first social network for Uralic peoples, called Uralistica. For several years, it was a real competitor to Facebook and VKontakte among its target audience. In 2013, we launched a competition to create Udmurt-language terms for new concepts, such as those from IT and marketing. We crowdsourced new Udmurt words needed for modern life.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6184,
+      "body_end": 6636,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707325-b00017",
+      "text": "GV: What are some of the primary technical, linguistic or socio-cultural challenges for using the Udmurt language online? And what are some of the ways you and others are working to overcome some of those challenges?",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6638,
+      "body_end": 6854,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707325-b00018",
+      "text": "> AM: The main challenge for Udmurt speakers online is that the Udmurt alphabet is not present in Russia's digital ecosystem. The Udmurt-language keyboard is not a standard layout for Windows; Udmurt speakers have to install it themselves, despite the fact that there are already Udmurt language keyboards for PCs and mobile OS users. Most Udmurt speakers use the Russian alphabet online, leading to improper and inconsistent spelling. Furthermore, popular search engines such as Yandex or Google don't recognise Udmurt or other indigenous languages from Russia. They give poor search results in Udmurt, and often see an Udmurt word as a misspelled Russian word. We dream of having an Udmurt keyboard layout within the standard packages offered by Microsoft, Google, and Apple, and would like to localise some applications and programs (for example, including an Udmurt dictionary with text editing software). Nevertheless, there have been achievements, mostly thanks to enthusiasts with no state support. Just ten years ago, there were no online dictionaries. Now there are several.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6856,
+      "body_end": 7939,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707325-b00019",
+      "text": "> Tolerance is another big issue. Many people prefer to use Russian in most situations because of the narrow audience of Udmurt speakers and sometimes because those who don't speak Udmurt bug them to use Russian, because they want to participate. So using Udmurt publicly is still an issue for most people because of the language's low prestige.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 7941,
+      "body_end": 8286,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707325-b00020",
+      "text": "GV: What are some other Udmurt digital activism projects that you recommend?",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 8288,
+      "body_end": 8364,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707325-b00021",
+      "text": "> AM: IT Udmurtlyk is a group of passionate people who create keyboard layouts, Udmurt spellcheckers, e-textbooks, and apps. Other remarkable project is a special online Udmurt course launched during the COVID-19 quarantine provided by Udmurt teacher Olga Urasinova. Then there's my own educational programme MAFUN Academy; we deliver free webinars on Uralic and other Indigenous languages and related topics like language revitalisation and bilingualism. We've held two lectures where Udmurt was the medium of instruction. Another is the first Udmurt-language podcast called Olokin no Olomar no, run by Lukerya Shikhova and Maxim Agafonov. Another great project is the short video lectures about Udmurt language and culture made by Kuara with state support. Finally there's Daur TV, which broadcasts in Udmurt via VKontakte.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 8366,
+      "body_end": 9191,
+      "source_links": [
+        "https://vk.com/daurtv",
+        "https://vk.com/it_udmurtlyk",
+        "https://vk.com/olokinnoolomarno",
+        "https://vk.com/sharakuara",
+        "https://www.youtube.com/channel/UCr5kCRMgk1V1Ifn2xOAMpig?view_as=subscriber",
+        "https://youtu.be/0_UDApY20vk"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707325-b00022",
+      "text": "GV: Where would you like the Udmurt language to be in 10 years?",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 9193,
+      "body_end": 9256,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707325-b00023",
+      "text": "> AM: I hope Udmurt will gain more institutional support from the state and that society will have a more positive attitude towards the Udmurt language and identity. I hope families keep passing the language from generation to generation.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 9258,
+      "body_end": 9496,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "0743978fc57c7a29be025afc06b66425f6a8c8450e7b002bce65fd241142912f",
+  "word_count": 1487,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 9496,
+  "retrieved_at": "2026-11-16T22:24:08.522301+00:00",
+  "raw_html_sha256": "0d01a48e8cf709dc7ebd9e30a53464f98faf1e01e72316517c3d8ee623e8ec67",
+  "resolved_source_url": "https://globalvoices.org/2020/05/29/a-conversation-with-udmurt-language-digital-activist-artyom-malykh/",
+  "canonical_url": "https://globalvoices.org/2020/05/29/a-conversation-with-udmurt-language-digital-activist-artyom-malykh/",
+  "source_bytes": 194737,
+  "authors": [
+    {
+      "name": "RuNet Echo",
+      "url": "https://globalvoices.org/author/runet-echo/"
+    },
+    {
+      "name": "Rising Voices",
+      "url": "https://globalvoices.org/author/risingvoices/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 707325,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "0d01a48e8cf709dc7ebd9e30a53464f98faf1e01e72316517c3d8ee623e8ec67",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-fff385c974b3dcc1f131",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-05",
+    "eligible_month_documents": 111,
+    "selected_month_documents": 93,
+    "inclusion_probability": 0.8378378378378378,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "RuNet Echo; Rising Voices",
+  "body_start": 481,
+  "body_end": 9977,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "45b19f41d9207b50ac5e4d9065c5bfbeeb3a567c2b00703eb74a23d6e035b0de",
+  "text_path": "articles/gv-707325.txt",
+  "metadata_path": "metadata/gv-707325.json",
+  "attribution": "This story by RuNet Echo; Rising Voices originally appeared on Global Voices. https://globalvoices.org/2020/05/29/a-conversation-with-udmurt-language-digital-activist-artyom-malykh/",
+  "content_sha256": "a8d07a66e18382f76a2cef876d144baeb428865583ac5d4e320fc208e485ebcb",
+  "source_sha256": "0d01a48e8cf709dc7ebd9e30a53464f98faf1e01e72316517c3d8ee623e8ec67",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

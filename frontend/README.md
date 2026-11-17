@@ -1,7 +1,7 @@
 # DOXA interface
 
-React + TypeScript + Vite. The production build is served by the Python API;
-Cloudflare also serves the same static build.
+React + TypeScript + Vite. The Python API serves the production build;
+Cloudflare serves the same interface.
 
 ```sh
 npm ci
@@ -9,48 +9,68 @@ npm run dev
 ```
 
 The development server proxies `/api` to `127.0.0.1:8000`.
-`npm run build` type-checks and writes `dist/`. `npm run typecheck` checks the
-application without making a production bundle.
+`npm run build` type-checks and writes `dist/`; `npm run typecheck` checks types.
 
-The interface uses real API data. It distinguishes lexical matches from model
-interpretations, keeps counts within one selected analysis run, and preserves
-that run when exporting reports. Evidence and source text have separate scroll
-areas and pagination. Citation offsets use Unicode code points.
+The single workspace links a paginated source collection, timeline, author ×
+criterion matrix, retained observations, and an exact-source evidence inspector.
+Global filters and exports share a server query snapshot. Source and evidence
+pages request 50 records and render a bounded number of rows; the client does
+not download all 5,000 source bodies. Drawers contain import, analysis, model
+readiness, processing jobs, reports, filters, and reviewed learning.
 
-Files above 10 MiB use bounded multipart requests. Completed part identifiers are
-saved in browser storage; selecting the same file after an interrupted session
-resumes its remaining parts. Source contents and provider credentials are not
-stored in browser storage. File size/last-modified metadata identify the selected
-file for recovery, while the server verifies uploaded bytes.
+Contextual indicator measurements count distinct sources. Reported and endorsed
+source counts can overlap. Observation counts remain separate. Legacy snapshots
+and lexical navigation do not become v3 contextual measurements. Source text and
+evidence scroll separately; exact quote offsets use Unicode code points.
 
-Metadata CSV import accepts a document `id`, content `sha256`, or `filename` plus
-editable metadata columns. The library provides a template.
+Files above 10 MiB use resumable multipart requests. Browser storage retains
+upload identifiers, completed part checksums, logical import identity and file
+metadata; source bytes and provider credentials are not cached there. Reselecting
+the same file after a refresh resumes its remaining parts in the original import.
+Small-file selections use groups of at most 100 files and 20 MiB under one import
+session. Repeated content retains batch membership without duplicating a source.
+Import filters let users compare controlled source groups; absence from an
+incremental import does not imply deletion.
 
-Small-file selections are imported together in groups of at most 100 files and
-20 MiB. Larger files use separate multipart imports. Compare → Imported batches
-shows added, changed, unchanged, and not-included sources between selected
-imports. Not being included in an incremental import does not mean a source was
-deleted. Matching content can belong to several imports without duplication.
+Import metadata CSV in the Import drawer using document `id`, content `sha256`,
+or `filename` plus editable metadata columns. Remote inference requires explicit
+text-transfer consent and a run budget. Models exposes server health, the monthly
+cap, and optional explicit CPU experiments; opening it never downloads a model.
+Saved showcase results display historical usage and cannot be resumed.
 
-Previously computed showcase runs are labeled as saved result snapshots.
-Recorded usage is historical; loading a snapshot makes no inference requests.
-Those fixed runs cannot be resumed. Users can start a new analysis with an
-explicitly selected provider.
-
-Run the real browser checks against a disposable API data directory:
+Run browser checks from the **repository root** after building the interface:
 
 ```sh
-DOXA_BROWSER_URL=http://127.0.0.1:8003 python tests/browser_smoke.py
-DOXA_BROWSER_URL=http://127.0.0.1:8003 python tests/browser_upload_resume.py
-DOXA_BROWSER_URL=http://127.0.0.1:8003 python tests/browser_batches.py
+.venv/bin/python tests/browser_v3.py
+.venv/bin/python tests/browser_upload_resume.py
+.venv/bin/python tests/browser_batches.py
 ```
 
-Both require Playwright and system Chromium. The smoke test loads the real
-20-document collection and changes a review state. The upload test injects a
-network interruption, refreshes the page, resumes an 11 MiB PDF, and deletes its
-temporary document.
-The batch test creates a separate verification project with small functional
-test documents and checks all four delta categories plus grouped upload counts.
+These start isolated local servers and require Playwright plus system Chromium.
+No paid inference requests are made. The main suite uses explicitly synthetic
+5,000-source persistence fixtures and a mocked provider to check paging, linked
+scope, exact-source review, learning gates, exports, cloud-consent controls and
+390px layouts. It establishes UI behavior, not model quality or throughput.
+
+The upload test interrupts part 2 of an actual 11 MiB PDF, refreshes, reselects
+the same file, and verifies that only part 2 transfers, one source is extracted,
+and one logical import remains. The batch test uploads two three-file groups,
+checks two three-member imports and five unique source versions, verifies all
+four API delta categories, and opens an earlier source version in the inspector.
+These two tests optionally accept `DOXA_BROWSER_URL` for an already-running
+**disposable** local server. Outputs default to `/tmp/doxa-browser-*-v3`.
+
+For an installed real-news corpus and existing run, `tests/browser_real_corpus.py`
+uses a SQLite online backup and copied source artifacts to inspect the actual
+5,000-source workspace with analysis workers disabled. `DOXA_BROWSER_DATA`,
+`DOXA_BROWSER_PROJECT`, and `DOXA_BROWSER_RUN` select the saved state. It checks
+actual paging, source highlights, trajectory availability, unassessed framework
+labels, mobile layout and the guide drawer link, without requesting inference.
+Set `DOXA_BROWSER_PUBLISH_DOCS=1` to copy the captured screenshots to `docs/images`.
+
+`tests/browser_smoke.py` forwards to the current v3 suite. The original seven-view
+smoke script is retained in `tests/legacy/browser_smoke_v1.py` as historical
+verification code, not a test of the current interface.
 
 DM Sans and Manrope are bundled for offline use under their SIL Open Font
 Licenses in `public/fonts/`. Original sources:

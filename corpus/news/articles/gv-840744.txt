@@ -1,0 +1,33 @@
+The ‘Next’ big thing? Turkey's new social platform faces scrutiny over ‘domestic’ label
+Written by: Arzu Geybullayeva
+Originally published by Global Voices: https://globalvoices.org/2025/08/01/the-next-big-thing-turkeys-new-social-platform-faces-scrutiny-over-domestic-label/
+Published: 2025-08-01T06:00:18Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+At its recent launch, Next Sosyal was touted as the country's first “domestic social media application,” offering users a new generation of social media free from ads and harassment. It was unveiled ahead of this year's annual TEKNOFEST, a major technology and defense event in Turkey. However, the claim of it being a purely domestic product was quickly challenged.
+
+Just days after its public launch on July 28 — which attracted over 500,000 subscribers — users discovered that the platform was not a unique site developed from scratch, but rather, a Mastodon server. The website confirmed this, stating, “[The] sosyal.teknofest.app is an open-source Mastodon-based social media platform developed by TEKNOFEST entrepreneurs.”
+
+Sadullah Uzun, the general director of technology at the Ministry of Industry and Technology, praised the platform's success. He tweeted, in what appeared to be a dig at other apps, “A good technical team can build a very good social media platform with hard work. But can they attract an audience? Will people become users of the platform? No! It will just take its place in the app graveyard as ‘yet another app.’ This is where Next Sosyal's difference lies! People are curious, they want to be a part of it, and they are flocking to it.”
+
+Uzun credited the platform's appeal to “the youth's big brother Selçuk.” Selçuk Bayraktar, the 46-year-old owner of Baykar, a company known for its drones and other defense technology, is the son-in-law of President Recep Tayyip Erdoğan and the face of the annual TEKNOFEST event.
+
+The same day that the new platform went live, Bayraktar himself tweeted about it via his personal X account:
+
+Among hundreds of replies, there was one from the official Mastodon account, which tweeted at Bayraktar:
+
+Andy Piper, Mastodon's head of communications, shared a statement with Global Voices: “We first attempted to contact the service owner to remind and inform them of their license obligations via email on July 8. Since then, we have made several other attempts to contact the service owner, but the emails either bounced, or were ignored. After a number of additional messages from members of the public over the weekend of July 27-28, on July 29 our official X account replied to a prominent post referring to Next Sosyal, in another effort to make contact with the service owner. We look forward to the full source code for the Next Sosyal service being made available, according to the requirements of the AGPL license.”
+
+The GNU Affero General Public License (AGPL) is a free software license designed for software like web applications, which can be accessed over a network.
+
+On July 30, Mastodon's founder, Eugen Rochko, posted on Mastodon: “Our team is aware that the new Turkish social media platform Next Sosyal is using Mastodon code without following the terms of the license and we have already reached out to them.”
+
+This is not the first time that a project branded as “domestic and national” has used foreign open-source infrastructure. As journalist Fusun Nebil noted, similar projects — including Turkcell’s YAANi, a local search engine, and the national post office's PTT Messenger — have all used open-source code from existing global applications while being presented as if they had ben developed locally. “In short,” Nebil concluded, “despite the ‘Next’ in its name and the TEKNOFEST branding, Next Sosyal is neither locally developed nor nationally produced.”
+
+Making the situation more complex is the fact that Bayraktar, in a tweet on July 4 — before the public launch — acknowledged that the new platform was based on Mastodon. This raises questions about why, in the days following its release, the platform was so heavily marketed as a purely local product.
+
+In the written statement viewed by Global Voices, Piper added, “The related site appears to be running the Mastodon software, which is licensed under the GNU Affero General Public License (AGPL). However, it appears to have been modified, and references to the Mastodon code and copyrights have largely been removed from the user interface and site. We have also been made aware that the mobile apps appear to be based on our own application code. The GNU Affero General Public License is a modified version of the ordinary GNU GPL version 3. It has one added requirement: if you run a modified program on a server and let other users communicate with it there, your server must also allow them to download the source code corresponding to the modified version running there. A Mastodon server must have a visible link to the source code for the software on the main page of the service at a minimum.”
+
+Piper later confirmed that Mastodon finally established “contact with the service owner [and] they have stated that they will be making efforts to comply with the license obligations.” The matter is expected to be resolved within the coming days.

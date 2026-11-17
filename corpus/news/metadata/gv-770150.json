@@ -1,0 +1,584 @@
+{
+  "id": "gv-770150",
+  "publisher_id": 770150,
+  "source_id": "globalvoices:770150",
+  "source_url": "https://globalvoices.org/2022/09/01/undertones-in-turkeys-plunging-economy-conspiracy-and-corruption-allegations-abound/",
+  "title": "Undertones: In Turkey’s plunging economy, conspiracy and corruption allegations abound",
+  "published_at": "2022-09-01T14:11:30Z",
+  "modified_at": "2025-01-15T18:47:06Z",
+  "api_author_id": 2945,
+  "api_content_sha256": "cc9c394a7b0686e9e83fb8b64040fef6230af357fb15091731c6eb66ca4044f4",
+  "api_response_sha256": "30656aeb72fa6ac0796b25f9ba534044b6669ecaa343be437ba0196aa46e0005",
+  "api_retrieved_at": "2026-11-16T22:20:47.121994+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-770150-b00001",
+      "text": "This story is part of Undertones, Global Voices’ Civic Media Observatory's newsletter. Find out more about our mission, methodology, and publicly available data. Subscribe to Undertones.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 186,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwLnH3yUdhQO99XI",
+        "https://globalvoices.org/special/observatory/",
+        "https://globalvoices.org/wp-content/uploads/2021/02/Media-Observatory-Concept_2021.pdf",
+        "https://globalvoices.us2.list-manage.com/subscribe?u=9307106bf78cc186e924ad999&id=5633e3eb9a"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00002",
+      "text": "Whether on a date or at a family gathering, one topic of conversation is on everyone’s lips in Turkey: the country’s deepening economic crisis. There are several angles to the story. While Erdoğan's government argues that the country is in an “economic war” against enemies, the opposition blames it on corruption fuelled by the leading party.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 188,
+      "body_end": 531,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00003",
+      "text": "Inflation is soaring. Official estimates place it at 80 per cent, while independent economists believe it goes well above 150 per cent. In concrete terms, a cup of coffee at a café in Istanbul costs 36 lira — the equivalent of €2. While this might not sound like much for coffee drinkers in say, Greece or Germany, in Turkey, it’s a lot. The minimum wage in Turkey is €302 or around 150 coffees.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 533,
+      "body_end": 928,
+      "source_links": [
+        "https://www.bbc.com/turkce/articles/c72z4z24k96o#:~:text=Akademisyenlerin%20ve%20ekonomistlerin%20ba%C4%9F%C4%B1ms%C4%B1z%20bir,enflasyon%20y%C3%BCzde%205%2C03%20oldu",
+        "https://www.milliyet.com.tr/ekonomi/asgari-ucret-2022-brut-ve-net-asgari-ucret-ne-kadar-oldu-6702221"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00004",
+      "text": "The causes for Turkey’s frenetic inflation vary, depending on who you ask. Turkey’s economic woes started a few years ago, but the COVID-19 pandemic hit the population and economy hard, and so has Russia’s war on Ukraine. Russia and Ukraine are among Turkey’s biggest trading partners and sources of tourism.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 930,
+      "body_end": 1238,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00005",
+      "text": "Even so, inflation in Turkey is faring worse than in these warring countries. Many Turks blame the plunging lira on Erdoğan’s government.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1240,
+      "body_end": 1377,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00006",
+      "text": "Turkey’s elections",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1379,
+      "body_end": 1397,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00007",
+      "text": "Presidential and general elections are scheduled to take place in June 2023, but there is a chance that Erdoğan will call for early elections. According to our researchers, the electoral campaign will be defined by economic narratives: whichever party offers the most convincing storyline about the economic crisis and its solutions will increase its chances of ruling the country in the near future.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1399,
+      "body_end": 1799,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00008",
+      "text": "Erdoğan’s administration has kept interest rates low to continue to attract investments and save businesses. It has also put a 25 per cent ceiling on rent increases. However, this measure has proven difficult to implement for many people. Rent costs have still doubled (as seen on popular real estate websites). Distrust in the Turkish lira is spreading, leading to a downward spiral as the country gears up for elections.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1801,
+      "body_end": 2223,
+      "source_links": [
+        "https://www.hepsiemlak.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00009",
+      "text": "Turkey’s media landscape",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2225,
+      "body_end": 2249,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00010",
+      "text": "In Turkey, the media is tightly controlled and social media is monitored. Critics of the state “have been muted through a combination of traditional forms of censorship such as arrests, detentions, intimidation, (…) combined with a crackdown on the internet using high level opaque administrative and judicial decisions blocking, banning, and withholding online content,” according to Global Voices’ Unfreedom Monitor report. About a month ago, an investigation revealed that Turkey's information and communication authority had collected private user data for over a year.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2251,
+      "body_end": 2824,
+      "source_links": [
+        "https://advox.globalvoices.org/2022/08/11/unfreedom-monitor-report-turkey/",
+        "https://globalvoices.org/2022/08/05/under-btks-eye-investigation-reveals-turkeys-information-and-communication-authority-has-been-collecting-private-user-data-for-over-a-year/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00011",
+      "text": "Mass media, therefore, follows the government line: that Turkey has a generally stable economy with some temporary problems. Questioning this stance might have consequences.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2826,
+      "body_end": 2999,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00012",
+      "text": "Although direct censorship has not been recorded, there is concern that Erdoğan's party is introducing regulations to block “alternative statistics” — that have not been approved by the Turkish Statistical Institute (TÜİK) — by using prison sentences. This is important in today’s context, as the official inflation rate according to TÜİK is 79.60 per cent, whereas the independent Inflation Research Group (ENAG) says it is 176.04 per cent. TÜİK stopped sharing the list of items that it used to measure the inflation rate last May.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3001,
+      "body_end": 3534,
+      "source_links": [
+        "https://enagrup.org/",
+        "https://sendika.org/2022/04/tuikin-onaylamadigi-istatistikleri-aciklayanlara-hapis-cezasi-hazirligi-istatistikte-engizisyon-donemi-mi-geliyor-652903/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00013",
+      "text": "Opposing narratives",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3536,
+      "body_end": 3555,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00014",
+      "text": "Narrative 1: “The Turkish economy is being targeted”",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3557,
+      "body_end": 3609,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00015",
+      "text": "See this narrative analysis in our database here",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3611,
+      "body_end": 3659,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl0mAI8W2guAWtTU/viwgnF6VbKIBkI2Bg/reczLFl7mLhb4f4xP?blocks=bipPTI7evgB8np9lC"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00016",
+      "text": "Erdoğan's government imagines itself to be in an economic war surrounded by enemy Western nations, who are often labelled as “imperialist” (even if the term isn’t explained). The enemy is painted as a dark and vague alliance of foreign “centers of power” and terrorists and, of course, the “treasonous” opposition in cahoots with all these evil entities. Narratives about external forces sabotaging Turkey’s economics and politics are not new and have been around for at least a decade, but they have intensified in the past months.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3661,
+      "body_end": 4193,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00017",
+      "text": "The accusations range from the reasonable to the fantastical. For example, members of the ruling Justice and Development Party (AKP) blame the opposition for painting an extremely ugly picture of the economy, which, it says, becomes a self-fulfilling prophecy because it erodes trust. Meanwhile, the AKP is also attempting to hold on to its dwindling voterbase with exciting and sensational stories about hidden powers conspiring against a strong Turkey. Erdoğan is the brave hero fighting against them alone.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4195,
+      "body_end": 4704,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00018",
+      "text": "How it’s seen on social media",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4706,
+      "body_end": 4735,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwcRg93cLLq4nsCI/recoignfagkZzcdgD?blocks=bipPTI7evgB8np9lC"
+      ],
+      "source_kind": "h5",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00019",
+      "text": "On August 26, in response to a tweet by The Economist about Turkey’s “topsy-turvy” economy, Turkish Minister of Economy Nureddin Nebati claimed that Turkey’s economy is following a government program and that “no obstacle” will stand in the way. The tweet implies that The Economist is part of this “obstacle.”",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4737,
+      "body_end": 5047,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwcRg93cLLq4nsCI/recoignfagkZzcdgD?blocks=bipPTI7evgB8np9lC"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00020",
+      "text": "Back in April, Erdoğan implied that a “power” is trying to hurt Turkey by hitting the economy and that it’s the same actors who have attempted to destabilize Turkey through military tutelage, coups and terrorism in the past. In November last year, pro-government journalist Karagül claimed that there is a “multinational operation” to create an economic crisis in Turkey.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5049,
+      "body_end": 5420,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwcRg93cLLq4nsCI/recYzGR01gRaoIhlG?blocks=bipPTI7evgB8np9lC",
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwcRg93cLLq4nsCI/recdRjJ4fHD5JNzVs?blocks=bipPTI7evgB8np9lC"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00021",
+      "text": "Who “they” are is never directly stated, but only implied. Sometimes it is the Kemalist elite, sometimes opposition parties, sometimes Western countries, and most often, a combination of all of the above.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5422,
+      "body_end": 5626,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Kemalism"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00022",
+      "text": "Narrative 2: “Corruption and nepotism have replaced meritocracy in state institutions”",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5628,
+      "body_end": 5714,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00023",
+      "text": "See this narrative analysis in our database",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5716,
+      "body_end": 5759,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl0mAI8W2guAWtTU/viwgnF6VbKIBkI2Bg/recbyOy92KbNtCxaf?blocks=bipPTI7evgB8np9lC"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00024",
+      "text": "The political opposition is accusing Erdoğan and the AKP of nepotism and overall inefficacy. The right-wing coalition, led by the Republican People's Party (CHP), has vociferously blamed the ruling party for its lack of a general economic policy and for promoting corrupt bureaucrats and political allies who increasingly demand palm grease. This narrative is shared by anyone skeptical of Erdoğan’s governance.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5761,
+      "body_end": 6172,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00025",
+      "text": "There is an overall sense that the opposition — especially the CHP’s coalition — may have a chance of winning Turkey’s next elections.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6174,
+      "body_end": 6308,
+      "source_links": [
+        "https://tr.euronews.com/2022/08/01/metropoll-anketine-gore-erdogan-hicbir-olasi-muhalif-aday-karsisinda-ikinci-turu-kazanamiy"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00026",
+      "text": "Yet, economists warn that the opposition should resist the temptation to make populist promises to fix what is beyond its means, as many of the causes of the economic crisis lie beyond Turkey’s immediate control, such as foreign wars, global financial markets, and longstanding structural issues within the country.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6310,
+      "body_end": 6625,
+      "source_links": [
+        "https://tr.euronews.com/2021/11/24/k-sa-vadede-ekonomi-nas-l-duzelir-erken-secim-cozum-mu-ekonomist-oguz-demir-cevapl-yor"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00027",
+      "text": "Perceptions about corruption",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6627,
+      "body_end": 6655,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00028",
+      "text": "Although economists and sociologists suggest that corruption is not the biggest issue for economic woes globally, the main opposition bloc is arguing that nepotism, a form of corruption, is indeed the source of most of Turkey’s problems. For our researchers, it is strategic rhetoric for the upcoming elections.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6657,
+      "body_end": 6968,
+      "source_links": [
+        "https://blogs.lse.ac.uk/africaatlse/2014/02/11/flipping-the-corruption-myth/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00029",
+      "text": "Our researchers have also anecdotally pointed out that, culturally, there is a certain tolerance among some sectors of the population for corruption, justified with arguments such as, “they stole but they served the country too”. But now that the vast majority of people are becoming strikingly poorer, nepotism in particular is being reprehended.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6970,
+      "body_end": 7317,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00030",
+      "text": "How it’s seen on social media",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 7319,
+      "body_end": 7348,
+      "source_links": [],
+      "source_kind": "h5",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00031",
+      "text": "> I filed a criminal complaint about the 56 tender of the General Directorate of Highways, to which the AK Party had connected a hose.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 7350,
+      "body_end": 7484,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770150-b00032",
+      "text": "> The current amount of 56 tenders delivered to the address by bargaining procedure, although the conditions specified in the law are not met:",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 7486,
+      "body_end": 7628,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770150-b00033",
+      "text": "> 95,808,900,620 TL!",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 7630,
+      "body_end": 7650,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770150-b00034",
+      "text": "> Who are these companies? ⬇️",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 7652,
+      "body_end": 7681,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-770150-b00035",
+      "text": "CHP lawmaker Deniz Yavuzyılmaz wrote a Twitter thread, backed up by supporting documents, exposing that a government directorate gave 56 state tenders to certain construction firms, allegedly without due process. Yavuzyılmaz is a young first-time lawmaker who has often pointed out corruption. Formerly, he also exposed bureaucrats receiving multiple salaries in an illegitimate fashion.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 7683,
+      "body_end": 8070,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwcRg93cLLq4nsCI/recTEu03ax6Q52hAf?blocks=bipPTI7evgB8np9lC"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00036",
+      "text": "View our entire Turkey dataset",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 8072,
+      "body_end": 8102,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwcRg93cLLq4nsCI?blocks=bipPTI7evgB8np9lC"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-770150-b00037",
+      "text": "Subscribe to Undertones",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 8104,
+      "body_end": 8127,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/subscribe?u=9307106bf78cc186e924ad999&id=5633e3eb9a"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "edffdbf83c32459aaa955be5e0d57f570f7091941ca97b85a82f820b1436aaeb",
+  "word_count": 1266,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 2,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8127,
+  "retrieved_at": "2026-11-16T22:36:08.300666+00:00",
+  "raw_html_sha256": "377efd356531c28fa9238b2a74e67f76ba883a41a0880619de97557cef5ecf6b",
+  "resolved_source_url": "https://globalvoices.org/2022/09/01/undertones-in-turkeys-plunging-economy-conspiracy-and-corruption-allegations-abound/",
+  "canonical_url": "https://globalvoices.org/2022/09/01/undertones-in-turkeys-plunging-economy-conspiracy-and-corruption-allegations-abound/",
+  "source_bytes": 195642,
+  "authors": [
+    {
+      "name": "Civic Media Observatory",
+      "url": "https://globalvoices.org/author/civic-media-observatory/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 770150,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "377efd356531c28fa9238b2a74e67f76ba883a41a0880619de97557cef5ecf6b",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-339dd20901376c52f2ad",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-09",
+    "eligible_month_documents": 75,
+    "selected_month_documents": 63,
+    "inclusion_probability": 0.84,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Civic Media Observatory",
+  "body_start": 516,
+  "body_end": 8643,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "70563f6aac41a6ae6d9ac0248046ec347a641bd181d5efaaeacf15f3a1e776e9",
+  "text_path": "articles/gv-770150.txt",
+  "metadata_path": "metadata/gv-770150.json",
+  "attribution": "This story by Civic Media Observatory originally appeared on Global Voices. https://globalvoices.org/2022/09/01/undertones-in-turkeys-plunging-economy-conspiracy-and-corruption-allegations-abound/",
+  "content_sha256": "15b426e2e48274b7c009daf0b7f6c507116b4dd756be42a349c8d7c00665f3f7",
+  "source_sha256": "377efd356531c28fa9238b2a74e67f76ba883a41a0880619de97557cef5ecf6b",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

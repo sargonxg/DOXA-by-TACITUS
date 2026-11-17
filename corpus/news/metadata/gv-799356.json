@@ -1,0 +1,423 @@
+{
+  "id": "gv-799356",
+  "publisher_id": 799356,
+  "source_id": "globalvoices:799356",
+  "source_url": "https://globalvoices.org/2023/10/21/the-ongoing-conflicts-impact-on-ict-and-digital-transformation-efforts-in-sudan/",
+  "title": "The ongoing conflict's impact on ICT and digital transformation efforts in Sudan",
+  "published_at": "2023-10-21T18:48:37Z",
+  "modified_at": "2023-10-23T04:17:13Z",
+  "api_author_id": 2705,
+  "api_content_sha256": "089e33b566f3636998593f70a4a2114f893d08695535e14fd17a4413015d4664",
+  "api_response_sha256": "b012cfe59491d5edbfb9adf3921f0fb87e01fd57d30461ef5dc8817e020b7154",
+  "api_retrieved_at": "2026-11-16T22:20:57.235937+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 141,
+      "count": 611,
+      "name": "Sudan",
+      "slug": "sudan",
+      "parent": 15
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-799356-b00001",
+      "text": "On April 15, 2023, the people of Sudan's capital, Khartoum, woke up early in the morning to the loud sounds of heavy gunfire and explosions. They were caused by clashes between the Sudanese Armed Forces (SAF), and the Rapid Support Forces (RSF), a paramilitary force which was established during the era of the ousted president, Omer al-Bashir.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 344,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Khartoum",
+        "https://en.wikipedia.org/wiki/Omar_al-Bashir",
+        "https://reliefweb.int/report/sudan/sudan-clashes-between-sudanese-armed-forces-and-rapid-support-forces-flash-update-16-april-2023-enar"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00002",
+      "text": "The conflict erupted over a power struggle between the SAF chief commander, Abdel Fattah al-Burhan, and the RSF chief commander, Mohamed Hamdan Dagalo, also called Hemedti. The efforts of the political forces to evade an armed conflict failed as they were preparing the framework agreement which aimed to unify the armed forces in Sudan into one professional army. According to the Armed Conflict Location and Event Data Project (ACLED), this war resulted in 9,000 deaths by October 6.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 346,
+      "body_end": 831,
+      "source_links": [
+        "https://acleddata.com/2023/10/06/sudan-situation-update-october-2023-ethnic-strife-amidst-escalating-power-struggles/",
+        "https://en.wikipedia.org/wiki/Abdel_Fattah_al-Burhan",
+        "https://en.wikipedia.org/wiki/Armed_Conflict_Location_and_Event_Data_Project",
+        "https://en.wikipedia.org/wiki/Hemedti"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00003",
+      "text": "The ongoing conflict has caused security concerns for public workers, leading to instability in the delivery of basic services, including food, water, health, power, and telecommunications. The ramifications of the crisis also affected information and communication technology (ICT) and digital transformation efforts in Sudan, depriving Sudanese of full internet-related services.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 833,
+      "body_end": 1214,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00004",
+      "text": "Infrastructure",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1216,
+      "body_end": 1230,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00005",
+      "text": "Sudan is plagued by frequent power outages, necessitating the use of power generators to maintain the country's communications infrastructure. In December 2022, the Minister of Finance revealed that only 40 percent of the population had access to the national electricity grid.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1232,
+      "body_end": 1509,
+      "source_links": [
+        "https://freedomhouse.org/country/sudan/freedom-net/2023"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00006",
+      "text": "Even with the hardships usually endured by the populace, power shortages during the conflict have had an added detrimental impact on communications services, ushering in a new era of network disruptions. The MTN Sudan network was disrupted because of a power outage caused by the inability to deliver fuel to power generators in Khartoum. Network disruptions are not new to Sudanese citizens as the authorities used to shut down the internet during national exams and civil unrest. On April 16, the same company, MTN Sudan, received an order to cut internet services from the Telecommunication and Postal Regulation Authority (TPRA), but the order was canceled hours later.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1511,
+      "body_end": 2184,
+      "source_links": [
+        "https://www.facebook.com/mtnsudan1/posts/pfbid0S4dEQxKkXq71hNgJhYisyCgcZPZHFFuqyRpfB3eMaydYXtPV7AcSi3sR5wFncn3Bl?__cft__[0]=AZXcyS8U_VdfoV4cTLToeG8WTQnQRn9v_DgwUu0TzDhTpDD3Ed8x20M7J73eEFM0_TFXeoEdFUO6Hy4YnFaQdxSXsf-b50sxY9Jr8ez0UgMk6fzG2VpMbhdi4BxIwZEGyrfDDw_NF5ONMspM6eewKBEs&__tn__=%2CO%2CP-R",
+        "https://www.reuters.com/article/sudan-politics-internet-idUSL1N36J071",
+        "https://www.reuters.com/article/sudan-politics-internet-idUSS8N35N0D8"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00007",
+      "text": "Many other regions in Sudan, including Nyala, Zalingei, and Al Geneina experienced network disruptions for several weeks because of the circumstances of the conflict in these areas.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2186,
+      "body_end": 2367,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Al_Geneina_District",
+        "https://en.wikipedia.org/wiki/Nyala,_Sudan",
+        "https://en.wikipedia.org/wiki/Zalingei"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00008",
+      "text": "These disruptions have led people to find alternative methods to access the internet. Sources mentioned that some internet users installed Starlink devices in Sudan, and some social media users circulated a photo showing the use of the satellite internet service.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2369,
+      "body_end": 2632,
+      "source_links": [
+        "https://ultrasudan.ultrasawt.com/%D8%B3%D8%AA%D8%A7%D8%B1%D9%84%D9%86%D9%83-%D9%87%D9%84-%D8%AA%D9%85-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%AE%D8%AF%D9%85%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A6%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D8%9F/%D9%86%D9%88%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86-%D8%AC%D8%A7%D8%AF%D8%A7%D8%AA/%D9%85%D9%86%D9%88%D8%B9%D8%A7%D8%AA",
+        "https://www.facebook.com/permalink.php?story_fbid=pfbid02zhsAaddLyuE9fqq5B3878GjXRGHZcfRZBBu7T6ELBhPDbnGFtGZ1AvZKfCfjUrHRl&id=100005320667498&__cft__[0]=AZX9WTGSzlKhAaDyMqeLtutB3fhv5aR_2q2AL09SRh4Drst2qu4wc71sNf8pkSmp5TJIbeAyuMSf1K6wCWhx1esdteSW4bY6E7Ivp1I0MUzV5uqOXq-bpncPW_t-aBuEm26uoZf0m4mh8f2nxvfavROiPjRUTI8RX48Z2gBXYhqPQJwJkxdeMW5uF7HEk9V2Sjg&__tn__=%2CO%2CP-R",
+        "https://www.starlink.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00009",
+      "text": "Online services",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2634,
+      "body_end": 2649,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00010",
+      "text": "The ongoing conflict has had a significant impact on many data centers. Data centers operators have lost access to their data and facilities, which has led to the failure of several essential internet-related services.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2651,
+      "body_end": 2869,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00011",
+      "text": "For instance, the data centre of the Ministry of Higher Education was completely burnt when a fire broke out in the building. Also, the telecommunication tower in eastern Khartoum was impacted by the conflict; the tower hosts numerous data centres, including the governmental data centre hosted by the National Information Center (NIC). The official government spokesperson's platform announced on Facebook that its website was not working because of the failure of the telecom tower, which was taken over by the RSF. Sources confirmed that the data for the Sudanese certificate, the national secondary school exams, is backed up to the cloud.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2871,
+      "body_end": 3514,
+      "source_links": [
+        "https://nabdsudan.com/archives/85615",
+        "https://twitter.com/AJArabic/status/1647880074887065604?lang=ar",
+        "https://www.facebook.com/sdspokesperson/posts/pfbid033nXsQxjXxRmyPmAmCR4XDcHa3iNqwaCoEiyJKDH8JrTueG9Q8cyc4PsX8aRTxyral?__cft__[0]=AZW-dVNG0XkD9OWq1JWSRth05eQXumbWHQum4qBR7f1xqkoNRK3KZL-Q5_lj5Om8f8BE-2cE1WrdFIpFcKpZz2rvzkn9t9-jxxTwZ8DognrVEGqgPz5Ji4nKoviQ5KCpdxwc2OKF_eX0HOZE3a-pvG9-&__tn__=%2CO%2CP-R"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00012",
+      "text": "Moreover, the services of the electronic banking system (EBS), a governmental company responsible for e-banking in Sudan, stopped working for more than five months as the data centres are based in conflict areas, making it inaccessible for the workers to do the required maintenance to keep the system working. According to the Sudan News Agency (SUNA), some institutions’ data have been restored. The Central Bank of Sudan announced the restoration of the EBS services in June; however, the service is currently unavailable.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3516,
+      "body_end": 4041,
+      "source_links": [
+        "https://africanarguments.org/2023/08/sudans-crisis-can-cash-transfers-prevent-starvation-and-state-collapse/",
+        "https://nabdsudan.com/archives/82715",
+        "https://www.facebook.com/SudanNewsAgency/posts/pfbid02XrkY2sjX1Kygdj1r4yH5XoGzc1gFtfCEzzhfNYUocp5bQnncbnTfzyn4KqXckiCQl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00013",
+      "text": "The Sudan chapter of the Internet Society organisation reported that only 12 percent of the Sudanese Country Code Top Level Domain (ccTLD) -.sd- websites and services were functional as of June 16.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4043,
+      "body_end": 4240,
+      "source_links": [
+        "https://twitter.com/ISOCsd/status/1669695388541128705?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00014",
+      "text": "Despite that, several institutions have announced new online platforms to enable them to resume work. The Sudanese police offered a website to receive reports of theft, sexual violence and other crimes during the war. Also, the Sudanese Medical Council, which is the national authority responsible for registering and licensing doctors, has announced a new online platform to provide its services. Additionally, the government's information platform created a new website in place of the old one to keep its followers posted. Nevertheless, these new websites are not associated with the Sudan ccTLD, and this is contrary to international government standards.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4242,
+      "body_end": 4901,
+      "source_links": [
+        "https://web.archive.org/web/20210926173041/https://spokesperson.gov.sd/",
+        "https://web.archive.org/web/20231005091221/https://www.sudanpolice.net/",
+        "https://web.archive.org/web/20231005093421/https://spokesperson-sd.com/ar/",
+        "https://www.facebook.com/SMCcouncil/posts/pfbid0SGwY1Jj779WbFakQrbX6USmh8WjzJyFpxeavXmAgSEH75P693rdfBAQDStYdzNmfl?__cft__[0]=AZU2GY1GWwPBGiKvi6K7R9_3HisprPNBNk9An-hPP2GQqGE-dGLo02QT-kH_HZhJZ83uxiKjl8E2c_kcvJ_lSpio61NoVrMizqkqEdbi9jXwTkzVTwp5-BIkoF5_rP7VV5FoxKcqyyUmZacoEy_ZSIJj&__tn__=%2CO%2CP-R"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00015",
+      "text": "In June, the Ministry of Higher Education directed the higher institutions, colleges, and universities to resume the educational process online. Consequently, Future University and Bayan University instructed their students on how to join online classrooms.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4903,
+      "body_end": 5160,
+      "source_links": [
+        "https://nabdsudan.com/archives/81713",
+        "https://www.facebook.com/100067837336829/posts/pfbid02heD4psttAuAmed45GxmUrhhtLaPpRr2AMrdRE3aLrkGpDm1FHAg4pYhTuyaStGQBl/?mibextid=Nif5oz",
+        "https://www.facebook.com/photo/?fbid=299677272435121&set=pcb.299677829101732"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00016",
+      "text": "Localisation",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5162,
+      "body_end": 5174,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00017",
+      "text": "Sudan has no law imposing data localization, but Global Voices interviewed a former high-ranking official in the Central Bank of Sudan, who confirmed that the Central Bank and other governmental institutions are working under an undeclared data localization policy.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5176,
+      "body_end": 5441,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Central_Bank_of_Sudan"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00018",
+      "text": "However, a Domain Name System (DNS) lookup revealed that numerous websites were hosted outside of Sudan, in contrast to the claimed localization policy. The Central Bank website itself was not working as of August 5, 2023, and it was using a subdomain registered under a Jordanian ccTLD and hosted in France. Also, the websites of the Telecommunication and Postal Regulation Authority (TPRA) and the Ministry of Justice were hosted in the Netherlands and Germany, respectively. Moreover, the website of the presidency is hosted in the United States.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5443,
+      "body_end": 5992,
+      "source_links": [
+        "https://web.archive.org/web/20230805115613/https://cbos.dot.jo/en",
+        "https://web.archive.org/web/20230823103000/https://www.nslookup.io/domains/www.moj.gov.sd/webservers/",
+        "https://web.archive.org/web/20231005104330/https://www.zoomeye.org/searchResult?q=site%3A%22cbos.dot.jo%22",
+        "https://web.archive.org/web/20231005105728/https://www.zoomeye.org/searchResult?q=site%3A%22tpra.gov.sd%22",
+        "https://web.archive.org/web/20231005110439/https://www.nslookup.io/domains/presidency.gov.sd/dns-records/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00019",
+      "text": "Data protection",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5994,
+      "body_end": 6009,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00020",
+      "text": "Sudan does not have a dedicated law for data protection; however, Article (20-1) of the regulation for organizing the payment systems of the year 2013 noted that the payment service providers should retain and protect the users’ data. The inability of EBS to deliver electronic banking clearing services has paved the way for the emergence of an unregulated market, allowing transactions between bank clients without oversight from administrative authorities.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6011,
+      "body_end": 6470,
+      "source_links": [
+        "https://cbos.dot.jo/sites/default/files/ps_business_organization.pdf",
+        "https://dataprotection.africa/sudan/",
+        "https://www.cgap.org/blog/sudan-dispatch-inclusive-finance-in-times-of-crisis"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00021",
+      "text": "The e-banking service users in Sudan suffered from periodic outages. IT specialists created an online platform to provide a real-time update, explaining the e-banking application status. The same IT specialists created another online platform to benefit from the EBS failure by assisting banking services clients to perform transactions from one bank to another and then taking a commission for this service. To use this platform, the user must register using the phone number, full name, and photo with their bio-data page ID. The platform needed to clarify how these data are stored or can be shared with other parties or not.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6472,
+      "body_end": 7100,
+      "source_links": [
+        "https://money.sd/",
+        "https://status.sd/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799356-b00022",
+      "text": "War is not new to Sudan, but the arrival of war in the capital, Khartoum, is unusual. As it is home to all the main sources of services, including the internet and technology, this war is clearly affecting digital transformation and inclusion efforts. Finding solutions to maintain ICT infrastructure and workers is, therefore, a priority.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7102,
+      "body_end": 7441,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "0535722baecb27af4a342e51bf205bfc6a31be2a6a52551cbde49f3e708f95f9",
+  "word_count": 1140,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7441,
+  "retrieved_at": "2026-11-16T22:41:04.389499+00:00",
+  "raw_html_sha256": "0e3ec1e32d869148217a661388dd1d08658aab8ae644592386cad395537dff41",
+  "resolved_source_url": "https://globalvoices.org/2023/10/21/the-ongoing-conflicts-impact-on-ict-and-digital-transformation-efforts-in-sudan/",
+  "canonical_url": "https://globalvoices.org/2023/10/21/the-ongoing-conflicts-impact-on-ict-and-digital-transformation-efforts-in-sudan/",
+  "source_bytes": 196692,
+  "authors": [
+    {
+      "name": "Khattab Hamad",
+      "url": "https://globalvoices.org/author/khattab-hamad/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 799356,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "0e3ec1e32d869148217a661388dd1d08658aab8ae644592386cad395537dff41",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-bddda9b4be28febd816c",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-10",
+    "eligible_month_documents": 94,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8404255319148937,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Khattab Hamad",
+  "body_start": 496,
+  "body_end": 7937,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b675b0e458864131541999f254e42af34c354548bbbb53a2f2dcbe3c71ccb014",
+  "text_path": "articles/gv-799356.txt",
+  "metadata_path": "metadata/gv-799356.json",
+  "attribution": "This story by Khattab Hamad originally appeared on Global Voices. https://globalvoices.org/2023/10/21/the-ongoing-conflicts-impact-on-ict-and-digital-transformation-efforts-in-sudan/",
+  "content_sha256": "9e057242e9e54cda41a34fca4dab8f6fb25bcccdaa40b0d8aa3c9e395928fac0",
+  "source_sha256": "0e3ec1e32d869148217a661388dd1d08658aab8ae644592386cad395537dff41",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

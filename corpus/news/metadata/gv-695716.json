@@ -1,0 +1,518 @@
+{
+  "id": "gv-695716",
+  "publisher_id": 695716,
+  "source_id": "globalvoices:695716",
+  "source_url": "https://globalvoices.org/2020/01/30/peruvians-debate-road-safety-and-labor-regulations-after-fatal-truck-explosion/",
+  "title": "Peruvians debate road safety and labor regulations after fatal truck explosion",
+  "published_at": "2020-01-30T07:35:30Z",
+  "modified_at": "2020-01-30T07:35:30Z",
+  "api_author_id": 709,
+  "api_content_sha256": "f15a3fa3db318e5c3af8c72367cc1dede96ff15208547a2ece0cb38abc838695",
+  "api_response_sha256": "3390ca1fcc4f1c57431caafba57c9783cc7cc7ec234f150bc4b9743fc1151e5c",
+  "api_retrieved_at": "2026-11-16T22:20:21.760310+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    },
+    {
+      "id": 264,
+      "count": 2294,
+      "name": "Labor",
+      "slug": "labor",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 154,
+      "count": 1234,
+      "name": "Peru",
+      "slug": "peru",
+      "parent": 1354
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-695716-b00001",
+      "text": "Just before 7 a.m. on January 23, 2020, a tanker truck transporting liquefied petroleum gas (known as GLP) exploded in Villa El Salvador (VES), a district in southern Lima, the Peruvian capital, immediately killing two and injuring dozens.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 239,
+      "source_links": [
+        "https://elcomercio.pe/lima/sucesos/incendio-en-villa-el-salvador-esta-es-la-lista-de-heridos-y-los-hospitales-donde-son-atendidos-noticia/",
+        "https://en.wikipedia.org/wiki/Lima_Province",
+        "https://en.wikipedia.org/wiki/Villa_El_Salvador"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00002",
+      "text": "At the time of writing, another 14 had died from their injuries. Thiry-two are still hospitalized in critical condition with severe burns, including 11 children. The explosion damaged more than 20 houses in the area.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 241,
+      "body_end": 457,
+      "source_links": [
+        "https://larepublica.pe/sociedad/2020/01/24/incendio-en-villa-el-salvador-hay-varios-heridos-en-estado-critico-minsa-policia/",
+        "https://larepublica.pe/sociedad/2020/01/29/villa-el-salvador-se-eleva-a-16-la-cifra-de-fallecidos-por-deflagracion-e-incendio-de-un-camion-cisterna-victima-era-joven-de-27-anos-video/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00003",
+      "text": "The tweet below describes the moment when the fire started while also conveying the perceived indifference of Peruvian authorities:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 459,
+      "body_end": 590,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00004",
+      "text": "> Have you seen what's going on in Villa El Salvador? There was a fire after a gas tanker truck exploded. There are many injured children who need blood donors. It's sad to know that authorities are not talking about this.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 592,
+      "body_end": 814,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00005",
+      "text": "Engineer Galo Flores Quino said that the explosion of the tanker truck happened at the intersection of two avenues and that, “evidently, [the gap between roads] hasn't been properly fixed.”",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 816,
+      "body_end": 1005,
+      "source_links": [
+        "https://peru21.pe/lima/incendio-en-villa-el-salvador-desnivel-en-la-pista-se-debe-a-un-deficiente-proceso-constructivo-afirma-especialista-noticia/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00006",
+      "text": "The specialist mentioned three factors that might have caused this fatal tragedy: a poorly built cross-section, lack of proper safety signs in the area warning drivers about the unevenness of the road, and the truck's high speed.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1007,
+      "body_end": 1236,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00007",
+      "text": "> This is the gap that may have caused the gas leak from the tanker truck which resulted in an explosion. There is one fatality and over 30 people injured in Villa El Salvador.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1238,
+      "body_end": 1414,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00008",
+      "text": "At first, people thought that the driver had died on the spot, but later he was found to be alive, and reportedly he had tried to control the leak before the explosion. A few hours after the fire, he turned himself in to the authorities.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1416,
+      "body_end": 1653,
+      "source_links": [
+        "https://canaln.pe/actualidad/explosion-villa-salvador-detienen-chofer-camion-cisterna-n403249",
+        "https://larepublica.pe/sociedad/2020/01/23/incendio-en-villa-el-salvador-conductor-de-camion-cisterna-que-huyo-de-siniestro-se-entrega-a-la-policia-video/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00009",
+      "text": "On the same day, journalist Juan Pablo León shared information about the driver:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1655,
+      "body_end": 1735,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00010",
+      "text": "> Burned down truck in Villa El Salvador was driven by a motorist with 83 tickets for traffic violations.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1737,
+      "body_end": 1842,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00011",
+      "text": "> The worst of it all: he had 5 tickets for unsafely transporting dangerous loads.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1844,
+      "body_end": 1926,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00012",
+      "text": "> He even has tickets for aggressions against [traffic] inspectors. But the firm recruited him without giving it a second thought.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 1928,
+      "body_end": 2058,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00013",
+      "text": "But others were more sympathetic towards the driver because he is 72:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2060,
+      "body_end": 2129,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00014",
+      "text": "> The tanker truck driver is a senior citizen. He isn't even supposed to be working. Having his image exposed as allegedly guilty is unfair. It's the authorities who should respond for the accident in Villa El Salvador.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2131,
+      "body_end": 2350,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00015",
+      "text": "A preventable accident",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2352,
+      "body_end": 2374,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00016",
+      "text": "As the day went on, public outrage about the accident evolved into a discussion about safety compliance and widespread precarization of labor in Peru, where 40 percent of the workforce is informally employed.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2376,
+      "body_end": 2584,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00017",
+      "text": "World Bank economist Norman Loayza said in a report:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 2586,
+      "body_end": 2638,
+      "source_links": [
+        "https://www.bcrp.gob.pe/docs/Publicaciones/Revista-Estudios-Economicos/15/Estudios-Economicos-15-3.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00018",
+      "text": "> Considerando el valor nominal de estos indicadores, en el Perú el 60% de la producción se realiza informalmente; el 40% de la fuerza laboral está autoempleada en microempresas informales; y sólo el 20% de la fuerza laboral está afiliado a algún plan de pensiones formal, incluso si se incluye a aquellos trabajadores que laboran para empresas grandes.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 2640,
+      "body_end": 2993,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00019",
+      "text": "> Considering the nominal value of these indicators, 60 percent of the production comes from informal labor market in Peru; 40 percent of the workforce is self-employed in informal small businesses, and only 20 percent of the workforce contribute to some formal pension plan, including those employees who work at large firms.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 2995,
+      "body_end": 3321,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00020",
+      "text": "Back to the leak, analysts were quick to use the word “accident” in quotation marks, such as anthropologist Javier Torres Seoane, who says such tragedies could be prevented if businesses were more regulated:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3323,
+      "body_end": 3530,
+      "source_links": [
+        "https://elarriero.lamula.pe/2020/01/23/peru-pais-de-accidentes-y-desastres-naturales/javierto/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00021",
+      "text": "> En el país de la informalidad llamar “accidente” a un hecho que se produce por el incumplimiento de los standares de seguridad -sea el incendio de camión cisterna de GLP, la muerte de dos trabajadores de McDonald's o los miles de muertos en nuestras carreteras- es un insulto a la inteligencia y una manera de contribuir a que sigan ocurriendo.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3532,
+      "body_end": 3878,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00022",
+      "text": "> In the country of informality, labelling as an “accident” an event caused by the unfulfillment of security standards — be it the fire of the tanker truck, the death of two employees at McDonald's, or the thousands of deaths in our roads — is an insult to our intelligence and helps them to keep happening.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3880,
+      "body_end": 4187,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00023",
+      "text": "In December 2019, two young employees at a McDonald's restaurant in Lima were killed by electric shock caused by a poorly-installed electrical system.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4189,
+      "body_end": 4339,
+      "source_links": [
+        "https://www.bbc.com/mundo/noticias-america-latina-50829763"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00024",
+      "text": "Other people online pointed to what they perceive as indifference by other private firms after the tragedy:",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4341,
+      "body_end": 4448,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00025",
+      "text": "> Where are the big firms? The luxurious restaurants, chefs? Where are the large department stores? What are they waiting for to help the victims from Villa El Salvador? You should learn from the poorest people, they are the ones contributing. HELP IS NEEDED from everybody, this is a NATIONAL tragedy!",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4450,
+      "body_end": 4752,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00026",
+      "text": "A solidarity wave to save the victims",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4754,
+      "body_end": 4791,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00027",
+      "text": "The authorities launched blood donation requests in various hospitals in Lima, and the response was immediate and massive. Brazil and the United Stated donated 48,000 centimeters of human tissue for burnt victims. In Lima, volunteers willing to donate blood formed long lines in hospitals.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 4793,
+      "body_end": 5082,
+      "source_links": [
+        "https://elcomercio.pe/lima/sucesos/incendio-en-villa-el-salvador-largas-colas-en-el-insn-de-san-borja-para-donacion-de-sangre-fotos-nndc-noticia/",
+        "https://larepublica.pe/sociedad/2020/01/23/incendio-en-villa-el-salvador-hoy-en-lima-requisitos-y-como-donar-sangre-para-ninos-atmp/",
+        "https://peru21.pe/lima/villa-el-salvador-donaciones-de-piel-son-una-esperanza-para-las-victimas-de-la-deflagracion-noticia/?ref=p21r"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695716-b00028",
+      "text": "> ? Your attention, please! You can donate blood at the Edgardo Rebagliati and Guillermo Almenara hospitals. Let's help the victims after the deflagration of a tanker truck in Villa El Salvador.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5084,
+      "body_end": 5278,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00029",
+      "text": "> We are thankful to the volunteer blood donors who have come in solidarity with the victims of the tragedy in Villa El Salvador. So far, we have received 39 volunteer blood donors!?",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5280,
+      "body_end": 5462,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695716-b00030",
+      "text": "This tragedy came three days before the early parliamentary election of January 26. The election was called by President Martín Vizcarra after the dissolution of the Peruvian Congress on September 30, 2019. The parliamentary election happened amid general indifference by voters.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5464,
+      "body_end": 5743,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/2020_Peruvian_parliamentary_election",
+        "https://es.wikipedia.org/wiki/Disoluci%C3%B3n_del_Congreso_de_la_Rep%C3%BAblica_del_Per%C3%BA_en_2019",
+        "https://www.dw.com/es/per%C3%BA-entre-la-indiferencia-y-la-indecisi%C3%B3n/a-52043799"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "02b93ec5e53405f907057e8b03215bce24115684717c74bf27416b1401180f48",
+  "word_count": 950,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 7,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5743,
+  "retrieved_at": "2026-11-16T22:21:44.616317+00:00",
+  "raw_html_sha256": "1fb474931ac887135d7925f3fd7739ee23277f7f133c6a44800a5cf2d700ba83",
+  "resolved_source_url": "https://globalvoices.org/2020/01/30/peruvians-debate-road-safety-and-labor-regulations-after-fatal-truck-explosion/",
+  "canonical_url": "https://globalvoices.org/2020/01/30/peruvians-debate-road-safety-and-labor-regulations-after-fatal-truck-explosion/",
+  "source_bytes": 192361,
+  "authors": [
+    {
+      "name": "Gabriela García Calderón Orbe",
+      "url": "https://es.globalvoices.org/author/gabriela-garcia-calderon-orbe/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Gabriela García Calderón",
+      "url": "https://globalvoices.org/author/gabriela-garcia-calderon/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 695716,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "1fb474931ac887135d7925f3fd7739ee23277f7f133c6a44800a5cf2d700ba83",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-61d3580a9894822cd1cd",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-01",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Gabriela García Calderón Orbe",
+  "body_start": 549,
+  "body_end": 6292,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "8e82ac05c3f06556523f7d2eee6001bcfe6e7a10ec849dd24a10631266578259",
+  "text_path": "articles/gv-695716.txt",
+  "metadata_path": "metadata/gv-695716.json",
+  "attribution": "This story by Gabriela García Calderón Orbe originally appeared on Global Voices. https://globalvoices.org/2020/01/30/peruvians-debate-road-safety-and-labor-regulations-after-fatal-truck-explosion/",
+  "content_sha256": "23443f14257e1f62f48c95b1983b1d373b439c3c319816c963d93ea5da858948",
+  "source_sha256": "1fb474931ac887135d7925f3fd7739ee23277f7f133c6a44800a5cf2d700ba83",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,578 @@
+{
+  "id": "gv-833824",
+  "publisher_id": 833824,
+  "source_id": "globalvoices:833824",
+  "source_url": "https://globalvoices.org/2025/05/11/the-cia-is-trying-to-recruit-chinese-spies-for-the-us-government-chinese-citizens-dont-seem-interested/",
+  "title": "The CIA is trying to recruit Chinese spies for the US government. Chinese citizens don't seem interested",
+  "published_at": "2025-05-11T01:00:32Z",
+  "modified_at": "2025-05-08T10:53:29Z",
+  "api_author_id": 254,
+  "api_content_sha256": "14b8568f5132223edb98e70328173c1709816a83958a021cebf367ed579b5941",
+  "api_response_sha256": "908882e0b636b43f6da86b828a40e41ce62d1b0d6819ae1f4042a250f7ccc8b8",
+  "api_retrieved_at": "2026-11-16T22:21:11.515146+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 1352,
+      "count": 3301,
+      "name": "North America",
+      "slug": "north-america",
+      "parent": 219
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 186,
+      "count": 3578,
+      "name": "U.S.A.",
+      "slug": "usa",
+      "parent": 1352
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-833824-b00001",
+      "text": "The US Central Intelligence Agency (CIA) released two social media videos on May 1, attempting to recruit Chinese officials to act as informants. In response, the Chinese government said that it would take necessary measures to crack down on “infiltration and sabotage activities of foreign anti-China forces.”",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 310,
+      "source_links": [
+        "https://www.reuters.com/world/china-response-cia-videos-warns-measures-against-infiltration-sabotage-2025-05-06/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00002",
+      "text": "Although the videos address the common anxieties that many Chinese people feel about China's single-party regime, many still find the US propaganda unappealing.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 312,
+      "body_end": 472,
+      "source_links": [
+        "https://www.prcleader.org/post/what-we-know-about-public-opinion-in-china-and-why-it-matters-for-policymakers"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00003",
+      "text": "The CIA has been recruiting Russian informants through social media since 2022. Claiming that the Russian initiative was successful, the agency extended its recruitment effort to China, Iran, and North Korea last October, posting videos instructing their recruitment targets to make contact via the CIA's official website through trusted encrypted Virtual Private Networks (VPNS) or the TOR network.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 474,
+      "body_end": 873,
+      "source_links": [
+        "https://www.reuters.com/world/us/cia-expands-online-recruitment-informants-china-iran-north-korea-2024-10-02/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00004",
+      "text": "The latest Chinese informant recruitment videos target both senior and junior officials of the Chinese Communist Party (CCP). The narrator of the first video portrays a senior official stressed out by the corruption crackdown under Chinese President Xi Jinping’s leadership. He says:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 875,
+      "body_end": 1158,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00005",
+      "text": "> 在黨內，我一邊往上升，一邊看著職位比我高的人，一個個被棄如弊履。但現在，我意識到我的命運與他們同樣，岌岌可危…",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1160,
+      "body_end": 1217,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00006",
+      "text": "> As I keep climbing up the party ladder, I watch those in higher positions being discarded like worn-out shoes. And now I realise that my fate is just as precarious as theirs…",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1219,
+      "body_end": 1395,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00007",
+      "text": "The senior official eventually reached out to the CIA to protect his family. Here is the full video:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1397,
+      "body_end": 1497,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00008",
+      "text": "The second video is presented from the perspective of a junior official who is frustrated about the seeming failure of the single-party system, which he claims benefits the few over the majority.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1499,
+      "body_end": 1694,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00009",
+      "text": "> 黨教育我們，只要勤奮地遵從領導指定的道路就會前途無量，原本應該大家分享的一片天，如今只剩下少數獨享，讓我不得不開創自己的路。",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1696,
+      "body_end": 1760,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00010",
+      "text": "> The party teaches us that we can have a great future by following the path designated by the leaders. However, what should have been shared by all is not monopolised by the very few. I have to walk my own path.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1762,
+      "body_end": 1974,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00011",
+      "text": "Check out the video here:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1976,
+      "body_end": 2001,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00012",
+      "text": "The anxieties captured in the videos are related to the decade-long corruption crackdowns and power struggle within the party since Xi Jinping took over the leadership of the CCP in 2012. The clampdown has been extensive, targeting both “tigers” and “flies,” political allegories for big and small corruption cases.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2003,
+      "body_end": 2318,
+      "source_links": [
+        "https://www.theguardian.com/world/2013/jan/22/xi-jinping-tigers-flies-corruption"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00013",
+      "text": "Major tiger cases include the uprooting of former national security chief Zhou Yongkang and his network which began in 2013; crackdowns on regional political forces from Guangdong, Shanxi, Sichuan, and Jiangsu which began in 2012; the purge of the People's Liberation Army in 2023; the cleansing of the banking and finance sector starting in 2024, and more.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2320,
+      "body_end": 2677,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Zhou_Yongkang",
+        "https://www.reuters.com/world/china/corruption-may-have-disrupted-chinese-military-modernization-goals-pentagon-2024-12-18/",
+        "https://www.scmp.com/news/china/politics/article/3263188/dozens-chinas-state-regulators-bankers-finance-bosses-corruption-net-crackdown-stepped-new-year"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00014",
+      "text": "Last year, the number of party members punished for different degrees of corruption soared to 889,000, a fourfold increase from 182,000 in 2013. According to a recently released report from the office of the director of the US National Intelligence, at least 5 million Chinese officials were found guilty of corruption between 2012 and 2024.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2679,
+      "body_end": 3020,
+      "source_links": [
+        "https://today.line.me/tw/v2/article/WBwKOaQ",
+        "https://www.dni.gov/files/ODNI/documents/assessments/ODNI-Unclassified-CDA-CCP-Leadership-202503.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00015",
+      "text": "The rapidly diminishing soft power of the US",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3022,
+      "body_end": 3066,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00016",
+      "text": "Although the videos have addressed the political tensions within the CCP, many find the narratives unconvincing, largely because the US has lost its moral high ground under President Donald Trump. Amid the Trump administration's dramatic cut in global aid and media funding, provocative tariff wars with the rest of the world, as well as domestic crackdowns on liberal values and diversity policies (DEI), the US is no longer perceived as a global defender of democracy and freedom.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3068,
+      "body_end": 3550,
+      "source_links": [
+        "https://civilrights.org/resource/anti-deia-eos/",
+        "https://en.wikipedia.org/wiki/Tariffs_in_the_second_Trump_administration",
+        "https://globalvoices.org/2025/02/18/how-does-china-benefit-from-donald-trumps-shutdown-of-usaid/",
+        "https://reutersinstitute.politics.ox.ac.uk/news/trump-guts-us-global-media-agency-thousands-journalists-are-left-limbo",
+        "https://www.e-ir.info/2025/03/17/the-end-of-us-democracy-and-the-implications-for-international-relations/",
+        "https://www.pbs.org/newshour/show/how-trumps-college-crackdown-is-raising-concerns-about-free-speech-and-academic-freedom"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00017",
+      "text": "Against such a background, a counter-CIA propaganda video produced by Guangzhou-based video-blogger “Executive K” (K总) has gained more traction. The blogger copied the genre and setting of the CIA’s videos in an AI-generated video, urging US citizens to fight for freedom:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3552,
+      "body_end": 3824,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00018",
+      "text": "In the video, the narrator, a US citizen named John, said:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3826,
+      "body_end": 3884,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00019",
+      "text": "> Our government told me ‘hard work pays off,’ but all I see is that Wall Street elites manipulate finance, politicians are taking bribes, and it seems like Israel is the real power pulling the strings behind us. And we ordinary people can only struggle to survive…",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3886,
+      "body_end": 4151,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00020",
+      "text": "Widely shared by pro-China influencers on Twitter, the video has gone viral since it was released on May 4.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4153,
+      "body_end": 4260,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00021",
+      "text": "Unrealistic presentation of the recruitment videos",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4262,
+      "body_end": 4312,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00022",
+      "text": "In addition to the diminishing soft power of the US, Japan-based Chinese video blogger Wuyuesanren explained in his YouTube channel that the “lures” were unrealistic because after a decade-long crackdown on corruption, most senior officials’ offspring have been forced to return to China, and any linkage to foreign forces would jeopardize their families’ security. As for junior officials, the appeal to idealism would not work, as most idealists have already left the country or were forced to give up their government position, as there was no institutional space for them to bring change.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4314,
+      "body_end": 4906,
+      "source_links": [
+        "https://www.youtube.com/watch?v=Elxp8TVU4v4"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00023",
+      "text": "The blogger also criticized the cinematic, glossy presentation of the videos — the office and the outfits of the senior officials were too luxurious and dramatic, which showed that the producers were out of touch with modern Chinese politics.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4908,
+      "body_end": 5150,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00024",
+      "text": "On Weibo, many brought up the news that Beijing had uprooted the CIA network in China, with up to 20 informants having been killed or jailed in 2012, to show that the US is incapable of protecting its informants.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5152,
+      "body_end": 5364,
+      "source_links": [
+        "https://www.bbc.com/news/world-us-canada-39989142"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00025",
+      "text": "“To muddy the water”",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5366,
+      "body_end": 5386,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00026",
+      "text": "Hu Xijin, a political commentator from the Chinese state-funded Global Times, thus believes that the intention of the videos was not to recruit Chinese spies, but to create distrust within the CCP:",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5388,
+      "body_end": 5585,
+      "source_links": [
+        "https://weibo.com/1989660417/Pq07YluMK"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00027",
+      "text": "> CIA这样干，根本就没指望能真从这个途径捞几个有价值的间谍来。他们的最大目的是想搅浑水。",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5587,
+      "body_end": 5633,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00028",
+      "text": "> 如果有人上当，真的联系CIA，并被中国反间机构抓住，CIA才不会同情那些想向他们效忠的叛国者。那些人身败名裂，甚至身陷囹圄，CIA什么损失也没有，所有惩罚只能那些人自己承受。中国反间机构抓他们也要消耗一些资源和精力，总之，所有成本都是中国这一边的。",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5635,
+      "body_end": 5761,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00029",
+      "text": "> 还有一种可能，中国这边没人上当，但是CIA希望通过发这样的视频，增加中国社会内部的怀疑，可以当个“反间计”用。如果有一些人能因此被怀疑成美国间谍，搞得中国一些领域人心惶惶…",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5763,
+      "body_end": 5851,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00030",
+      "text": "> The CIA did this without any expectation that it could recruit a few valuable spies. Its biggest goal was to muddy the waters.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5853,
+      "body_end": 5981,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00031",
+      "text": "> If someone falls for it, contacts the CIA and gets caught by the Chinese counter-agency, the CIA will have no sympathy for [the Chinese] traitors who want to pledge allegiance to them. The CIA has nothing to lose if those people lose their reputation or even go to jail. They have to bear all the punishment. The Chinese counterintelligence agency will have to spend extra resources and energy to catch them; in short, all the costs are on China's side.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5983,
+      "body_end": 6438,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00032",
+      "text": "> There is also a possibility that no one on China's side will take the bait, but the CIA hopes that by posting such a video, it will increase the suspicion within Chinese society. This can be used as a ‘double-edged sword,’ leading to some Chinese being accused of being American spies. This would stir up panic in some Chinese sectors…",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 6440,
+      "body_end": 6777,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00033",
+      "text": "On the other hand, Desmond Shum, author of the memoir “Red Roulette,” which exposes corruption within the CCP, believes that the US will pay a price for the provocative videos, as they could disrupt potential resolution between the US and China in the current tariff war:",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 6779,
+      "body_end": 7050,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Red_Roulette",
+        "https://x.com/DesmondShum/status/1918185048609538098"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833824-b00034",
+      "text": "> A public CIA call for Chinese insiders to defect transcends typical intelligence operations — it is seen as a direct political provocation. It strikes at the heart of the Party’s fears of internal betrayal and is interpreted in Beijing as an assault on its control and stability — an impact far more consequential than any tariff.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 7052,
+      "body_end": 7384,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833824-b00035",
+      "text": "> That’s why this video might turn out to be the most consequential — and disruptive — move in the ongoing US–China trade talks. The signal it sends is louder than any tariff and strikes a very personal nerve within the Party.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 7386,
+      "body_end": 7612,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "4fb1b161a9aa89fdccc14923b8a0f762bdc2b012d7f011ba6b4059ad5668c4f2",
+  "word_count": 1198,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 2,
+      "reason": "Executable or external/non-text media excluded"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7612,
+  "retrieved_at": "2026-11-16T22:46:26.244572+00:00",
+  "raw_html_sha256": "9064b7850da75b78a0b0fa997dcf0b615e01bcba5f1444d1dfe0db739598ef54",
+  "resolved_source_url": "https://globalvoices.org/2025/05/11/the-cia-is-trying-to-recruit-chinese-spies-for-the-us-government-chinese-citizens-dont-seem-interested/",
+  "canonical_url": "https://globalvoices.org/2025/05/11/the-cia-is-trying-to-recruit-chinese-spies-for-the-us-government-chinese-citizens-dont-seem-interested/",
+  "source_bytes": 194708,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 833824,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "9064b7850da75b78a0b0fa997dcf0b615e01bcba5f1444d1dfe0db739598ef54",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-3c34b9a709eef66c01ed",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-05",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Oiwan Lam",
+  "body_start": 539,
+  "body_end": 8151,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "79f1ea20b4af542fedb58ff898c5c88636961b7a5902dd34ef7dfaf1e5d0debb",
+  "text_path": "articles/gv-833824.txt",
+  "metadata_path": "metadata/gv-833824.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2025/05/11/the-cia-is-trying-to-recruit-chinese-spies-for-the-us-government-chinese-citizens-dont-seem-interested/",
+  "content_sha256": "05a42a240342c77400c8866e2c12027e3e77d5caad5241fbf90921c52281b484",
+  "source_sha256": "9064b7850da75b78a0b0fa997dcf0b615e01bcba5f1444d1dfe0db739598ef54",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}
