@@ -6,6 +6,8 @@ DOXA is a browser research workspace for discourse, political framing and contex
 
 **Bias Detection as a Service** means an open-source toolkit you run on your computer or in your own cloud, with optional [TACITUS methodology and deployment support](https://tacitus.me/doxa/). This repository does not provision a hosted SaaS account. The software is a **research preview**: source anchoring and processing coverage are checked; interpretation accuracy requires independent human reference labels.
 
+**[From research workbench to paid service: commercial roadmap](docs/commercial-service-roadmap.md).** The proposed US launch includes company language audits, political/media analysis and personal email review together, starting with guided paid pilots and expert-reviewed reports. The roadmap identifies the methodology, privacy, customer isolation, connector, billing and scale work still required; it does not claim those service capabilities are already implemented.
+
 ![The actual v3 workspace: source collection, linked timeline and criterion matrix, retained observations, and evidence inspector.](docs/images/workspace-v3-news.png)
 
 *Actual interface with 5,000 real news articles and the settled partial run: 4,927 complete source checks and 10,686 of 10,759 fully assessed units. Processing coverage and correct interpretations are different quantities.*
