@@ -1,133 +1,211 @@
 # DOXA by TACITUS
 
-**A browser workbench for examining what documents assert, assume, normalize, and contest.**
+**Read what a corpus says, who says it, and how the interpretation was reached.**
 
-Import a corpus, choose an analytical lens, follow every finding back to its source, compare interpretations, and produce a report you can inspect and share. Run the application on your computer or deploy the same analysis engine to Cloudflare.
+DOXA is a browser research workspace for discourse, political framing and contextual prejudice analysis. Import sources, declare an analytical framework, inspect exact passages, compare patterns and download a reproducible research record.
 
-DOXA is a **research preview**. Exact citations, processing coverage, and model provenance are checked by software. Interpretation accuracy has not been established through independent human annotation. A lexical baseline is available without a model and is always identified as word matching.
+**Bias Detection as a Service** means an open-source toolkit you run on your computer or in your own cloud, with optional [TACITUS methodology and deployment support](https://tacitus.me/doxa/). This repository does not provision a hosted SaaS account. The software is a **research preview**: source anchoring and processing coverage are checked; interpretation accuracy requires independent human reference labels.
 
-![DOXA Quest: an 8-bit game map of the six-stage research workflow.](docs/images/doxa-quest.png)
+![The actual v3 workspace: source collection, linked timeline and criterion matrix, retained observations, and evidence inspector.](docs/images/workspace-v3-news.png)
 
-Follow the [DOXA Quest walkthrough](docs/guide.md): import documents → choose a lens → run local or cloud AI → inspect evidence → compare findings → export reports. The running app includes the same guide through **How DOXA works**.
+*Actual interface with 5,000 real news articles. This screenshot records a partial model run; imported sources, completed source checks and correct interpretations are different quantities.*
+
+## Open a real, commented report
+
+<a href="examples/political-framing-commentary.pdf"><img src="docs/images/political-framing-report-preview.png" width="360" alt="Open the political framing PDF: real source wording, recorded model readings, and separately labeled AI-authored commentary."></a> <a href="examples/institutional-context-commentary.pdf"><img src="docs/images/institutional-context-report-preview.png" width="320" alt="Open the institutional context PDF: protective language, reported discrimination, framework boundaries and uncertainty."></a>
+
+**[Read the political-framing PDF](examples/political-framing-commentary.pdf)** · [Standalone HTML](examples/political-framing-commentary.html) · [Excel case workbook](examples/political-framing-commentary.xlsx) · [Frozen snapshot](examples/political-framing-commentary.snapshot.json.gz) · [Checksums and manifest](examples/political-framing-commentary.manifest.json)
+
+This recorded four-source case packet retains **358 of 360 criterion decisions**, **59 of 60 fully assessed source units**, and **3 of 4 fully assessed documents**. **Two criterion decisions remain unresolved.** Its commentary is AI-authored reading guidance, **not independent human adjudication or human gold labels**. Original model output, unknown attribution fields, review state and incomplete coverage remain visible.
+
+The **[institutional-context PDF](examples/institutional-context-commentary.pdf)** follows four illustrative cases from the 20-source run: protective language, reported discrimination, a framework boundary and criterion-specific uncertainty. The run retains **11,701 of 11,704 decisions**, **613 of 616 fully assessed units**, and **18 of 20 fully assessed documents**; **three decisions remain unresolved**. Its reading notes are also AI-authored, not human gold. [HTML](examples/institutional-context-commentary.html) · [XLSX](examples/institutional-context-commentary.xlsx) · [Snapshot](examples/institutional-context-commentary.snapshot.json.gz) · [Manifest](examples/institutional-context-commentary.manifest.json).
+
+The [annotated-example guide](docs/v3-annotated-examples.md) explains the source → model reading → commentary → review distinction. Opening these files makes no new inference requests.
 
 ## Start locally
 
-### Docker: no model needed to explore
+From a clone of this repository, Docker provides the complete application:
 
-```bash
-git clone https://github.com/sargonxg/DOXA-by-TACITUS.git
-cd DOXA-by-TACITUS
+```sh
 docker compose up --build
 ```
 
-Open **http://localhost:8000** and load the real-document collection. It includes previously computed Gemma observations, with source references, historical usage, and incomplete coverage clearly labeled. No inference key is required to inspect these saved results. A lexical baseline is also available without a model. Documents, results, and reports persist in the `doxa-data` volume.
+Open **http://localhost:8000**. In **Import**, load a recorded collection or add your own files. Inspect saved results without an inference key. **Analyze** starts a new inquiry; remote inference requires explicit source-text transfer consent and a budget. The named Docker volume persists your workspace.
 
-### Add private local inference
+For native development, use Python 3.11+ and Node 22+:
 
-Install [Ollama](https://ollama.com/), then:
+```sh
+python -m venv .venv
+.venv/bin/python -m pip install -e '.[dev]'
+npm --prefix frontend ci
+npm --prefix frontend run build
+.venv/bin/python -m doxa.cli --host 127.0.0.1 --port 8000 --data-dir data
+```
 
-```bash
+On Windows, use `.venv\Scripts\python.exe`. For UI development, `npm --prefix frontend run dev` proxies the API to port 8000. See [installation, persistence, OCR and deployment](docs/deployment.md).
+
+For a fully local inference fallback, install [Ollama](https://ollama.com/download), explicitly download the model, and select it in **Analyze**:
+
+```sh
 ollama pull qwen3.5:4b
 ```
 
-Choose **Ollama** and `qwen3.5:4b` in the Run monitor. The conservative laptop profile uses Q4 quantization, an 8K context, and one request at a time. CPU inference works but can take substantial time on a large corpus. On Apple Silicon, native Ollama provides Metal acceleration.
+The conservative profile targets a **16 GB computer**, **Q4 weights**, an **8K context** and **one concurrent request**, with CPU-only operation supported. This is a resource target, not a full-corpus speed guarantee. Native Ollama uses Metal on Apple silicon; [Compose also supplies an optional CPU Ollama service](docs/deployment.md#local-models). The app never downloads weights automatically.
 
-For Linux using the optional CPU Ollama container:
+## One linked workspace, ten capabilities
 
-```bash
-DOXA_OLLAMA_BASE_URL=http://ollama:11434 docker compose --profile ollama up --build
-# In another terminal:
-docker compose exec ollama ollama pull qwen3.5:4b
+| Capability | What you can inspect or do |
+| --- | --- |
+| **1. Linked workspace** | Sources, observations, timeline, author × criterion matrix and evidence inspector share a frozen server query. Cursor pages and virtual rows keep large collections bounded. |
+| **2. Bulk import** | TXT, Markdown, PDF, DOCX, saved HTML and ZIP; resumable 8 MiB parts for large files, grouped imports, source versions and explicit extraction failures. OCR is optional. |
+| **3. Authors and metadata** | Filter credited bylines, document type, publication period and import batch. Preserve author/institution, URLs, rights, hashes and translation roles. |
+| **4. Explicit frameworks** | Political framing, discourse, IHRA, Jerusalem Declaration, Nexus, anti-Muslim hostility, structural racism and language norms; add a declared custom rubric. |
+| **5. Context and evidence** | Exact Unicode source spans, surrounding text, proposition, speaker attribution, speaker/document stance, hypothetical status, alternatives and uncertainty. |
+| **6. Temporal monitoring** | Publication trajectories and assessment history use separate clocks. Eligible-source denominators, coverage and comparison gates qualify statistical review candidates. |
+| **7. Independent verification** | A separate GPT-OSS 120B job checks indicator-positive/uncertain units plus a 5% target sample of other accepted units, which are not validated negatives. Consent, a $2 cap and literal disagreements stay explicit. |
+| **8. Reviewed learning** | Human-approved examples → immutable memory snapshots → paired candidate evaluation → explicit activation or rollback. No automatic weight training. |
+| **9. Optional CPU tools** | Persistent MiniLM passage retrieval and independent DeBERTa hypothesis scoring, with pinned artifacts, exact source windows and uncalibrated scores. |
+| **10. Downloadable research** | PDF, offline HTML, XLSX, CSV and JSONL; research/civil-society, newsroom/policy and teaching presentations preserve the same evidence and query scope. PDF/HTML appendices disclose their bounds; data exports retain the complete selection. |
+
+Successful manual imports select **Corpus · all imported sources** so new files remain visible. Corpus view makes no model-assessment claims; an analysis selection shows that run's frozen cohort. Analyze the current corpus scope to include newly imported material.
+
+![Source versions, method, exact passages, review and reports remain connected.](docs/images/doxa-process.svg)
+
+## How political analysis works
+
+The `political-framing` rubric asks six descriptive questions: expressed policy position, evaluative language, agency/causal responsibility, foregrounded voices, comparator-dependent asymmetry and presupposition hypotheses. Detecting one of these textual features does not establish prejudice, factual error, unfairness or a private political identity.
+
+| Source wording | An inspectable reading | What still needs evidence |
+| --- | --- | --- |
+| Executive Order 14149 says the previous administration **“trampled free speech rights.”** | “Trampled” is an appraisal; the surrounding sentence alleges coercion involving online platforms. | Whether the alleged events occurred, whether the characterization is fair, and whether a relevant comparator shows unequal treatment. |
+| Executive Order 14188 proposes **“all available and appropriate legal tools”** against unlawful antisemitic harassment and violence. | An expressed enforcement policy, with legal qualifications that must survive extraction and interpretation. | Support for an enforcement policy is not endorsement of antisemitism. The policy's effects or comparative fairness require additional evidence. |
+
+The saved model leaves attribution **unknown** in these examples. The commentary points out the institutional-voice question; it does not silently repair the record or present the note as a human verdict. Read the [research-backed rubric, exact anchors and comparator policy](docs/political-bias-methodology.md).
+
+![Separate the document's position from quoted or reported speakers and their stance.](docs/images/doxa-attribution.svg)
+
+IHRA, Jerusalem and Nexus remain distinct frameworks. A descriptive frame, a prejudice indicator and a boundary/exclusion condition have different meanings. User-specified reviewer roles declare analytical priorities; they do not simulate protected demographic traits. No universal left/right or “politically correct” score is produced. An omission or double-standard audit needs a declared relevant comparator and paired evidence; a single document cannot establish one.
+
+The contextual engine separates compact classification from detailed interpretation:
+
+```mermaid
+flowchart LR
+  S["Frozen source units + versioned criteria"] --> C["Stage 1: compact criterion decisions"]
+  C --> V["Validate explicit decision coverage"]
+  V --> N{"Noteworthy or uncertain?"}
+  N -->|Yes| D["Stage 2: contextual details"]
+  N -->|No| L["Typed assessment ledger"]
+  D --> A["Check source sentence IDs and exact spans"]
+  A -->|Valid| L
+  V -->|Missing or invalid| R["Bounded retry; unresolved stays visible"]
+  A -->|Invalid or incomplete| R
+  R --> L
+  L --> H["Separate human review overlay"]
 ```
 
-Native Ollama on Linux must be reachable from the application container; the optional Compose profile avoids exposing the host service. See [deployment instructions](docs/deployment.md) for host networking and macOS details.
+**Exact-source checks are not semantic-accuracy checks.** Missing or rejected decisions stay unresolved rather than becoming negative findings. Framework agreement and independent-model agreement are not accuracy. The [v3 research dossier](docs/research-v3.md) records the rationale, engineering pilot and their limits.
 
-### Native Python / development
+## Real sources, with declared boundaries
 
-Requires Python 3.11+ and Node 22+.
+| Collection | Frozen material and intended use |
+| --- | --- |
+| **Global Voices news** | **5,000 articles**, **5,251,119 whitespace-counted words**, **778 distinct credited author names**, **585 translated articles**, **72 publication months across 2020–2025**. A month-stratified split holds **4,000 development / 1,000 held-out article groups** apart. |
+| **Public institutions** | **20 UK and US publications**, approximately **357,000 words**: strategies, executive orders, reviews, discrimination guidance and policy responses. A purposive case collection with separate source-specific rights. |
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade 'pip>=26.2,<27'
-pip install -e '.[dev]'
-cd frontend
-npm ci
-npm run build
-cd ..
-doxa
+The news file/provenance audit and independent source-character audit both passed **5,000/5,000**. These establish source integrity, not interpretation accuracy. Global Voices is one publisher's collection, not a representative sample of all news or political perspectives. Current text was frozen at collection time; publication-date plots do not reconstruct every original edition.
+
+Per-source records retain authors/translators, URLs, licences, extraction changes and hashes. Global Voices material follows observed CC BY 3.0/publisher conditions and recorded exclusions; institutional sources retain their own notices. This is a documented rights audit, not exhaustive legal clearance. See [news collection and audits](docs/news-corpus.md), [institutional corpus](docs/corpus.md) and [licences](docs/licenses.md).
+
+![Publication-time discourse and assessment/review history are different trajectories.](docs/images/doxa-trajectory.svg)
+
+Rates describe the selected imported corpus. Reporting about hostility, quoted hostility and author-endorsed hostility remain separate. Missing analysis is not absence; unknown dates are not invented. The diagram is schematic, not a measured spike or improvement claim.
+
+## Models and a practical growth path
+
+| Profile | Role and limits |
+| --- | --- |
+| [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) | Apache-2.0 CPU retrieval: **384-dimensional** vectors and a **256-wordpiece** sentence-transformer limit. Similarity does not establish shared stance or prejudice. |
+| [DeBERTa-v3-base-zeroshot-v2.0-c](https://huggingface.co/MoritzLaurer/deberta-v3-base-zeroshot-v2.0-c) | MIT pretrained NLI; each explicit hypothesis is scored independently within its combined token budget. Scores are **uncalibrated**, not probabilities of prejudice; not-entailment is not contradiction. |
+| [Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B) / Ollama | Conservative local contextual inference; model digest, quantization, context and observed resource use remain recorded. |
+| [Gemma 4 26B A4B](https://developers.cloudflare.com/workers-ai/models/gemma-4-26b-a4b-it/) | Managed cloud primary. Availability, provider-managed revision limits, token use and application budget accounting are recorded. |
+| [GPT-OSS 120B](https://huggingface.co/openai/gpt-oss-120b) | Independent model verification through Cloudflare. Its separate comparison exposes paired differences and incomplete selection coverage; it does not adjudicate the primary model. |
+| [vLLM](https://docs.vllm.ai/) / [RunPod](https://docs.runpod.io/) | Configured OpenAI-compatible or GPU endpoints for larger-model experiments. Provider adapters are replaceable; larger weights are not presumed improvements. |
+
+DOXA has **not fine-tuned these models**. The current methodology and CPU profiles are English-first; multilingual claims need separate validation. Optional CPU models are installed explicitly and loaded from verified, pinned local artifacts. Start with one question, one source cohort and one declared rubric; add reviewed examples or another provider while preserving the baseline. See [installation and model profiles](docs/models-v3.md).
+
+A full 5,000-source CPU index can take many minutes. The [actual canonical-cohort benchmark](benchmarks/cpu-semantic-5000-summary.json) built **120,464 passages**, verified restart/reuse and exact search quotations, and recorded approximately **49.91 active indexing minutes** across its attempts. This does not measure ranking accuracy or promise another computer's speed. The current browser build action waits on one HTTP request and can hit a proxy timeout; prefer `python scripts/semantic_index.py build PROJECT_ID --data-dir data` for full collections, then search the persisted index in the browser. Run heavy local generation and indexing sequentially when they contend for CPU.
+
+![Reviewed examples require a frozen candidate, evaluation and explicit activation before affecting future runs.](docs/images/doxa-reviewed-learning.svg)
+
+Held-out/story groups remain separate from approved example memory. A passing software check or model-agreement result does not become an independent reference label. [The service-toolkit guide](docs/v3-service-toolkit.md) explains reviewed learning, attribution, source history and rollback.
+
+## Local first; optional cloud infrastructure
+
+The lowest-infrastructure starting point is the local application with SQLite/files and optional metered cloud inference. Keep inference local when appropriate; choose managed inference when its measured throughput and token cost suit the workload. Selecting remote inference sends approved source text to that provider; credentials stay on the server.
+
+The optional Cloudflare deployment supplies Access authentication, a Worker/static UI, D1, R2, durable Queues and a Python Container running the shared engine. It is a shared private workspace for its permitted users; isolate deployments for groups requiring separate data. RunPod/GPU rental adds its own operating and idle costs. Provisioning is explicit: installation and tests do not deploy a service.
+
+```mermaid
+flowchart LR
+  B["Linked browser workspace"] --> API["Versioned API + frozen queries"]
+  API --> ST["SQLite/files or authenticated D1/R2 bridge"]
+  API --> J["Durable source-unit jobs"]
+  J --> E["Shared Python engine"]
+  E --> M["Ollama / Workers AI / vLLM / RunPod"]
+  E --> EV["Typed outcomes + source validation"]
+  EV --> ST
+  ST --> RP["Review history + reproducible exports"]
 ```
 
-Windows: activate `.venv\Scripts\activate` instead. For frontend development, `npm run dev` proxies `/api` to port 8000. `doxa --data-dir /your/path` selects a different private workspace.
+The default **$20/month application variable-spend cap is configurable**. It controls application-accounted usage, **not the whole vendor bill**: fixed plans, storage, containers, GPU time and unreported charges can differ. Unknown provider billing stays unknown. Each run also has its own budget; independent verification is capped at $2. [Deployment and cost guidance](docs/deployment.md) covers configuration, authentication, persistence and cleanup.
 
-## What you can study
+## Reproduce and inspect
 
-- Claims, target-specific stance, frames, values, rhetorical devices, and possible implicit assumptions.
-- Author and institutional discourse, document types, dates, and differences across imported batches.
-- Antisemitism through **IHRA, Jerusalem Declaration, and Nexus**, shown as separate analytical frameworks.
-- Anti-Muslim prejudice through contextual-hostility and structural-racism lenses.
-- Language norms and political correctness through an explicit inquiry and editable custom rubric.
+The [v3 verification record](docs/verification-v3.md) lists the actual software, browser, corpus and runtime checks, their artifacts, and what they establish.
 
-Every finding includes the exact passage, page/paragraph locator, speaker attribution, criterion, explanation, alternative interpretation, and review state. Confirm, reject, or revise observations while retaining an audit trail.
-
-Framework disagreements are part of the research. DOXA does not vote across definitions, produce a universal prejudice score, or infer an author's private identity or beliefs. Counts describe the selected corpus, rather than public opinion.
-
-## Documents and reports
-
-Supported inputs: PDF, scanned PDF with optional local OCR, DOCX, TXT, Markdown, and saved HTML. Uploads support bounded, resumable parts up to 500 MiB per file. Source metadata is editable, exact duplicates are detected, and failures remain visible.
-
-Export **PDF, standalone HTML, XLSX, CSV, and JSONL**. Report profiles serve researchers/civil society, newsrooms/policy, and teaching. They share the same source evidence and calculations. XLSX includes charts, filterable evidence, authors, lenses, run provenance, and methodology. Report snapshots preserve the selected filters and source context.
-
-OCR is optional because its models and dependencies are substantial. Install `pip install -e '.[ocr]'`, prefetch Docling artifacts, and configure the local artifacts directory before enabling it. Unreadable pages are recorded; DOXA never silently presents them as analyzed. See [deployment instructions](docs/deployment.md).
-
-## Twenty real documents
-
-The bundled collection, **Public institutions: prejudice, protection and freedom of expression**, contains **20 real UK and US publications**, approximately **357,000 words**, including substantial government strategies, executive orders, reviews, statistical reports, and discrimination guidance.
-
-Snapshots preserve source URLs, authors, dates, rights notices, supersession warnings, page/paragraph locators, and SHA256 checksums. Quoted and hypothetical discriminatory examples remain distinguishable from the institution's own position. This is a purposive institutional collection, not a representative media sample.
-
-```bash
-python scripts/fetch_corpus.py --audit  # Offline integrity audit
-```
-
-See the [complete corpus and rights manifest](docs/corpus.md), [research dossier](docs/research.md), and [methodology](docs/methodology.md).
-
-The actual cloud run retained **1,071 source-linked observations**. Strict evidence checks left the run partial: 5,788 of 8,999 source blocks passed all checks. The dashboard and reports preserve these gaps. The actual CPU-only Qwen 4B benchmark sampled one passage from each of the 20 documents, retaining 32 observations with one rejected source range. It does not establish full-corpus local performance or interpretation accuracy. Inspect [complete benchmark artifacts and summaries](benchmarks/README.md).
-
-## Cloud and larger models
-
-The Cloudflare profile uses Workers for authenticated routing, D1 for durable metadata/jobs, R2 for documents and reports, Queues for resumable work, and a Python Container running the shared engine. Managed inference uses an AI binding, with credentials kept on the server. No Python OCR or model loading runs inside a Worker isolate.
-
-The budget cloud candidate is **Gemma 4 26B A4B**. Prices checked November 16, 2026 were $0.10/M input and $0.30/M output tokens. Workers Paid starts at $5/month; parsing, storage, and other usage add costs. The default application variable-spend budget is $20/month. This is a control on recorded application usage, not a guarantee about your entire vendor bill.
-
-Ollama, Cloudflare, OpenAI-compatible/vLLM, and RunPod adapters are replaceable. Models never change silently within a run. Larger Qwen and GPT-OSS profiles are comparison candidates, not presumed improvements. [Deployment documentation](docs/deployment.md) includes explicit provisioning, cleanup, and GPU alternatives; nothing deploys simply by running tests.
-
-## Benchmarks and checks
-
-```bash
+```sh
 pytest -q
-cd frontend && npm ci && npm run build
-cd ../infra/cloudflare && npm ci && npm test && npm run typecheck
+npm --prefix frontend ci && npm --prefix frontend run build
+npm --prefix infra/cloudflare ci && npm --prefix infra/cloudflare test
+.venv/bin/python tests/browser_v3.py
+.venv/bin/python tests/browser_import_scope.py
+.venv/bin/python tests/browser_verification.py
 ```
 
-Run actual providers using the shared application scheduler:
+Browser contract tests use isolated synthetic fixtures and mocked paid requests; they establish application behavior, not model quality. Separate checks cover actual 11 MiB refresh/reselection recovery, grouped imports and a read-only copy of the real 5,000-source workspace. See [frontend checks](frontend/README.md).
 
-```bash
-python scripts/benchmark.py --provider lexical --output benchmarks/lexical-full.json
-python scripts/benchmark.py --provider ollama --model qwen3.5:4b --output benchmarks/local.json
-python scripts/benchmark.py --provider cloudflare --output benchmarks/cloud.json
+To run a **new** whole-article local pilot after installing Ollama:
+
+```sh
+python scripts/benchmark_v3.py --collection news-sample --limit 20 \
+  --provider ollama --model qwen3.5:4b --concurrency 1 \
+  --data-dir data/my-local-pilot --output benchmarks/my-local-pilot.json
 ```
 
-Resume an interrupted benchmark with the same arguments plus `--resume`. Sample flags explicitly label an incomplete benchmark. Results record source coverage, exact citation validity, hardware, model identity, tokens, cost, timing, and errors. See [benchmarking](docs/benchmarking.md) for result interpretation and the separate 1,000-document load test.
+For the full 5,000-source selection, configure Cloudflare credentials and deliberately request paid inference with separate state/output paths:
 
-## Architecture and growth
+```sh
+python scripts/benchmark_v3.py --collection news --provider cloudflare \
+  --model @cf/google/gemma-4-26b-a4b-it --concurrency 4 --budget 5 \
+  --data-dir data/my-cloud-news --output benchmarks/my-cloud-news.json
+```
 
-The Python package owns extraction, chunking, prompts, rubric application, citation validation, and reports. The browser and cloud router consume versioned contracts. SQLite/filesystem and D1/R2 adapters preserve the same analysis semantics. Artifacts and report snapshots provide a portable record of the research.
+The budget does not promise completion. **Resume by repeating the identical command, paths and analytical arguments with `--resume`**. Source/model/method changes require a new run. Coverage, unresolved decisions, resource measurements and token/cost accounting—not merely a finished process—determine what a benchmark establishes.
 
-See the [architecture](docs/architecture.md), [dependency and source licenses](docs/licenses.md), and actual example [PDF](examples/doxa-public-institutions.pdf), [HTML](examples/doxa-public-institutions.html), and [XLSX](examples/doxa-public-institutions.xlsx) reports. The original application code is Apache 2.0; dependencies, including PyMuPDF, retain their own licensing terms.
+[Recorded benchmark summaries](benchmarks/README.md) distinguish current partial runs, scoped pilots and historical v1 artifacts. Full-corpus model coverage and independently validated interpretation accuracy must not be inferred from source audits, cached demos or the political packet. The earlier [v1 institutional PDF](examples/doxa-public-institutions.pdf) remains a historical example.
 
-The [verification record](docs/verification.md) explains exactly which checks ran, what they establish, and which deployment and interpretation limits remain.
+## Explore the project
 
-Future modules can add authenticated connectors, scheduled collection, multilingual validation, semantic search, and larger GPU profiles. Fine-tuning follows reviewed annotations and held-out comparisons; the showcase must never serve as both training data and claimed validation.
+- [V3 research and measured pilot](docs/research-v3.md) · [political-bias methodology](docs/political-bias-methodology.md) · [interpretation contract](docs/v3-interpretation.md)
+- [Models and CPU retrieval](docs/models-v3.md) · [architecture](docs/architecture.md) · [deployment](docs/deployment.md) · [benchmarking](docs/benchmarking.md)
+- [Annotated real-source examples](docs/v3-annotated-examples.md) · [service toolkit](docs/v3-service-toolkit.md) · [research background](docs/research.md)
 
-Source content is treated as data and cannot invoke tools. Local operation binds to loopback; cloud deployments require authentication. No provider keys belong in browser configuration, source control, or exported reports.
+<details><summary>Prefer an illustrated introduction? Follow DOXA Quest.</summary>
+
+![An illustrative 8-bit map: import, choose a lens, run an engine, inspect evidence, compare and export.](docs/images/doxa-quest.png)
+
+Read the [updated Quest guide](docs/guide.md). The pixel map explains the research steps; the current application uses one linked workspace and Import, Analyze, Models, Processing and Reports drawers.
+
+</details>
+
+Original application code is Apache 2.0. Dependencies and source materials retain their own licences, including PyMuPDF's separate terms. Keep originals, rights notices, model provenance and human review attached to conclusions.

@@ -1,0 +1,541 @@
+{
+  "id": "gv-826316",
+  "publisher_id": 826316,
+  "source_id": "globalvoices:826316",
+  "source_url": "https://globalvoices.org/2024/12/31/data-narratives-civic-media-observatory-country-reports/",
+  "title": "Data Narratives Civic Media Observatory: Country Reports",
+  "published_at": "2024-12-31T05:45:25Z",
+  "modified_at": "2024-12-31T09:10:31Z",
+  "api_author_id": 2945,
+  "api_content_sha256": "c20c70221ebefa1ca61b8a2001cd20f53add32d6a222c0d82b9985000ca9b967",
+  "api_response_sha256": "6625a8d03b3e648da1476e3f26f88d0194314166208c9a1cf51b3466ab72098a",
+  "api_retrieved_at": "2026-11-16T22:21:08.459699+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 171,
+      "count": 540,
+      "name": "El Salvador",
+      "slug": "el-salvador",
+      "parent": 1354
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 32,
+      "count": 3843,
+      "name": "India",
+      "slug": "india",
+      "parent": 31
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 141,
+      "count": 611,
+      "name": "Sudan",
+      "slug": "sudan",
+      "parent": 15
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-826316-b00001",
+      "text": "For the past year, the Civic Media Observatory — through its Data Narratives project — conducted research in Brazil, El Salvador, India, Turkey, and Sudan about the discourse involving data governance in these countries.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 220,
+      "source_links": [
+        "https://globalvoices.org/special/data-narratives-cmo/",
+        "https://globalvoices.org/special/observatory/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00002",
+      "text": "For the purpose of this research project, we employed a definition of data governance from Tim Davies’ literature review on the topic:",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 222,
+      "body_end": 356,
+      "source_links": [
+        "https://www.thedatasphere.org/wp-content/uploads/2022/11/Data-governance-and-the-Datasphere-Literature-Review-2022.-Tim-Davies.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00003",
+      "text": "> Data governance concerns the rules, processes and behaviours related to the collection, management, analysis, use, sharing and disposal of data – personal and/or non-personal. Good data governance should both promote benefits and minimise harms at each stage of relevant data cycles.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 358,
+      "body_end": 643,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-826316-b00004",
+      "text": "The reports examined the complexities of the data governance landscape across the five countries through the lens of the data narratives and counter-narratives that shape conversations in each country. The investigation focused on incidents concerning the misuse of data, the manipulation of information, and the various political motivations behind the collection and distribution of data. The analysis revealed common themes across the countries’ data governance narratives, including the following:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 645,
+      "body_end": 1146,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00005",
+      "text": "A lack of government transparency with regard to the public’s data",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1148,
+      "body_end": 1214,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00006",
+      "text": "A failure to adequately address and disclose security incidents",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1216,
+      "body_end": 1279,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00007",
+      "text": "The exploitation of neo-colonial policies to profit off of national resources",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1281,
+      "body_end": 1358,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00008",
+      "text": "The misrepresentation of public-private partnerships as beneficial to the country when they primarily advance corporate interests",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1360,
+      "body_end": 1489,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00009",
+      "text": "The use of digital authoritarianism to control the narrative around policies and other political agendas",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1491,
+      "body_end": 1595,
+      "source_links": [],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00010",
+      "text": "Read more: Artificial Intelligence Narratives: A Global Voices Report",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1597,
+      "body_end": 1666,
+      "source_links": [
+        "https://globalvoices.org/2024/12/23/artificial-intelligence-narratives-a-global-voices-report/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00011",
+      "text": "Our findings conclude that emerging technologies such as artificial intelligence (AI) and cryptocurrency pose unique regulatory and governance issues for the countries observed. Each country examined has attempted to address these issues in various ways. However, the conversation around data governance and the policies arising from it often undermines rather than supports citizens’ interests. The use of digital authoritarianism to control the data governance narrative became a common theme across the reports, which also underscored the need for increased transparency, improved data security, and greater consideration of the impact of new and emerging technologies on civil society.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1668,
+      "body_end": 2357,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00012",
+      "text": "Access our country reports:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2359,
+      "body_end": 2386,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00013",
+      "text": "Brazil",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2388,
+      "body_end": 2394,
+      "source_links": [
+        "https://drive.google.com/file/d/1OsydGRsHz-i8uCLZGFCyx56iGP9iQ-LS/view?usp=sharing"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00014",
+      "text": "El Salvador",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2396,
+      "body_end": 2407,
+      "source_links": [
+        "https://drive.google.com/file/d/13XoMJVb--I3EAJQMtjXwLAlOiza0WagP/view?usp=sharing"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00015",
+      "text": "India",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2409,
+      "body_end": 2414,
+      "source_links": [
+        "https://drive.google.com/file/d/1obsPy4UhrVangQcNtIxgd6pjpiN9Z9YM/view?usp=sharing"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00016",
+      "text": "Turkey",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2416,
+      "body_end": 2422,
+      "source_links": [
+        "https://drive.google.com/file/d/1zXdu74jgCktuh0Yh_bQdyyuHPrpYq2ce/view?usp=sharing"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00017",
+      "text": "Sudan",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 2424,
+      "body_end": 2429,
+      "source_links": [
+        "https://drive.google.com/file/d/1X-973ZWOduq8qeJ7RoSVzAVQHsYm-QaF/view?usp=sharing"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00018",
+      "text": "We also published a summary of our reports as one-page files. You can learn more about the Data Narratives Civic Media Observatory here. If you are interested in how we conducted this research and want to know more about the data we collected, access our public dataset.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 2431,
+      "body_end": 2701,
+      "source_links": [
+        "https://airtable.com/appiUIOgqrjaNG3Od/shr6mDNcNCVlmTgdA/tblSPHuPNtnMGnujw/viwKxp5XQYyrY1YP5?blocks=hide",
+        "https://drive.google.com/file/d/1HPftbnbgtt_-qkbPCOWo2fHGMC6Zkm88/view?usp=sharing",
+        "https://globalvoices.org/special/data-narratives-cmo/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00019",
+      "text": "Read the stories we published based on our research:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 2703,
+      "body_end": 2755,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00020",
+      "text": "One hundred Turkish lira for your data: How Turkish citizens lost all expectations of data security and privacy",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 2757,
+      "body_end": 2868,
+      "source_links": [
+        "https://globalvoices.org/2024/08/21/100-tl-for-your-data-how-turkish-citizens-lost-all-expectations-of-data-security-and-privacy/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00021",
+      "text": "Starlink in Sudan: A lifeline or war facilitator?",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 2870,
+      "body_end": 2919,
+      "source_links": [
+        "https://globalvoices.org/2024/08/20/starlink-in-sudan-a-lifeline-or-war-facilitator/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00022",
+      "text": "Website blocking in India: One arrow for all",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 2921,
+      "body_end": 2965,
+      "source_links": [
+        "https://globalvoices.org/2024/08/19/website-blocking-in-india-one-arrow-for-all/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00023",
+      "text": "The two deaths of the ‘Brazilian DSA’",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 2967,
+      "body_end": 3004,
+      "source_links": [
+        "https://globalvoices.org/2024/08/14/the-two-deaths-of-the-brazilian-dsa/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00024",
+      "text": "Internet shutdowns in Sudan allow the bypass of regulations",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 3006,
+      "body_end": 3065,
+      "source_links": [
+        "https://globalvoices.org/2024/08/14/internet-shutdowns-in-sudan-allow-the-bypass-of-regulations/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00025",
+      "text": "Controversial hacktivists may have prompted El Salvador’s censorship of Telegram",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 3067,
+      "body_end": 3147,
+      "source_links": [
+        "https://globalvoices.org/2024/07/10/controversial-hacktivists-may-have-prompted-el-salvadors-censorship-of-telegram/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00026",
+      "text": "Bitcoin mining's toll on El Salvador leaves communities without water",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 3149,
+      "body_end": 3218,
+      "source_links": [
+        "https://globalvoices.org/2024/05/31/bitcoin-minings-toll-on-el-salvador-leaves-communities-without-water/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00027",
+      "text": "The Brazilian and Indian dilemma: How to regulate AI and Big Tech?",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 3220,
+      "body_end": 3286,
+      "source_links": [
+        "https://globalvoices.org/2024/05/31/the-brazilian-and-indian-dilemma-how-to-regulate-ai-and-big-tech/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826316-b00028",
+      "text": "Lion or mosquito: The state of the AI debate in Turkey",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 3288,
+      "body_end": 3342,
+      "source_links": [
+        "https://globalvoices.org/2024/05/31/lion-or-mosquito-the-state-of-the-ai-debate-in-turkey/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "cde11da1d89f3ae48aa8815b2375df19f03fce51481770ccb9552358791ce679",
+  "word_count": 494,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 3342,
+  "retrieved_at": "2026-11-16T22:45:09.195182+00:00",
+  "raw_html_sha256": "aa006e5366f8a60a53c6800a4d62effdee0dddd5744523d0e1670465b9477830",
+  "resolved_source_url": "https://globalvoices.org/2024/12/31/data-narratives-civic-media-observatory-country-reports/",
+  "canonical_url": "https://globalvoices.org/2024/12/31/data-narratives-civic-media-observatory-country-reports/",
+  "source_bytes": 188214,
+  "authors": [
+    {
+      "name": "Civic Media Observatory",
+      "url": "https://globalvoices.org/author/civic-media-observatory/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 826316,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "aa006e5366f8a60a53c6800a4d62effdee0dddd5744523d0e1670465b9477830",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-66dda483a102140e53a9",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-12",
+    "eligible_month_documents": 63,
+    "selected_month_documents": 53,
+    "inclusion_probability": 0.8412698412698413,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Civic Media Observatory",
+  "body_start": 458,
+  "body_end": 3800,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "8c0218541339c5e92ceec5029689fc336e0de8d561f0dfb41700cade4e048664",
+  "text_path": "articles/gv-826316.txt",
+  "metadata_path": "metadata/gv-826316.json",
+  "attribution": "This story by Civic Media Observatory originally appeared on Global Voices. https://globalvoices.org/2024/12/31/data-narratives-civic-media-observatory-country-reports/",
+  "content_sha256": "a846ad11f14f9a59029e3cb9fd1dc63088acf2c71b3c3364f7f4ac674ad34325",
+  "source_sha256": "aa006e5366f8a60a53c6800a4d62effdee0dddd5744523d0e1670465b9477830",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,682 @@
+{
+  "id": "gv-831196",
+  "publisher_id": 831196,
+  "source_id": "globalvoices:831196",
+  "source_url": "https://globalvoices.org/2025/04/25/burundi-a-lack-of-press-freedom-results-in-self-censorship-and-exile-for-many-journalists/",
+  "title": "Burundi: A lack of press freedom results in self-censorship and exile for many journalists",
+  "published_at": "2025-04-25T11:00:36Z",
+  "modified_at": "2025-04-29T12:11:58Z",
+  "api_author_id": 1826,
+  "api_content_sha256": "3ee1806b5f650716813164f138aa291766ad7cdb1cf15d08191e932e6f3b64e5",
+  "api_response_sha256": "5f981a4a9b465f43479e5a626f6c7abc014c277ecbe5f471698965f7f51a87c2",
+  "api_retrieved_at": "2026-11-16T22:21:10.782161+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 102,
+      "count": 170,
+      "name": "Burundi",
+      "slug": "burundi",
+      "parent": 15
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-831196-b00001",
+      "text": "The Burundian media landscape poses immense challenges for journalists in this Central African country. They often receive death threats and work in a virtually permanent state of insecurity.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 191,
+      "source_links": [
+        "http://www.latempete.info/?p=38262",
+        "https://rsf.org/fr/burundi-quatre-journalistes-d-iwacu-emprisonn%C3%A9s-pour-rien-depuis-un"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00002",
+      "text": "According to the Reporters Without Borders (RSF) 2024 World Press Freedom Index, Burundi ranked 108 out of 180 countries. This is a slight improvement from 2023, when the country ranked 114.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 193,
+      "body_end": 383,
+      "source_links": [
+        "https://rsf.org/fr/pays-burundi"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00003",
+      "text": "The Burundian Constitution enshrines press freedom and freedom of expression in Article 28, which stipulates:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 385,
+      "body_end": 494,
+      "source_links": [
+        "https://www.globalhealthrights.org/wp-content/uploads/2013/09/Burundi_French.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00004",
+      "text": "> Toute personne a droit à la liberté d’opinion et d’expression dans le respect de l’ordre public et de la loi. La liberté de presse est reconnue et garantie par l’État.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 496,
+      "body_end": 665,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00005",
+      "text": "> Every person has the right to freedom of opinion and expression while respecting public order and the law. Freedom of the press is recognized and guaranteed by the State.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 667,
+      "body_end": 839,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00006",
+      "text": "However, the reality is quite different. Media professionals face constant accusations and interrogations, with Burundian journalists often making stark choices: stay on the government’s good side or risk imprisonment and exile to maintain their journalistic independence.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 841,
+      "body_end": 1113,
+      "source_links": [
+        "https://www.iwacu-burundi.org/communique-de-presse-10/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00007",
+      "text": "Media censorship and journalist imprisonment",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1115,
+      "body_end": 1159,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00008",
+      "text": "There are many examples of this lack of press freedom. In December 2024, Sandra Muhoza, a journalist from the online media outlet La Nova Burundi, was sentenced to 21 months in prison for “attacking the integrity of the national territory and racial aversion.” Her condemnation outraged the press world and journalist protection organizations like the Committee to Protect Journalists (CPJ ), which posted on X:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1161,
+      "body_end": 1572,
+      "source_links": [
+        "https://cpj.org/2024/12/burundi-prosecutors-seek-12-year-prison-term-for-journalist-sandra-muhoza/",
+        "https://lanova-burundi.org/",
+        "https://rsf.org/fr/burundi-rsf-d%C3%A9nonce-la-condamnation-%C3%A0-1-et-9-mois-de-prison-de-la-journaliste-sandra-muhoza",
+        "https://x.com/CPJAfrica"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00009",
+      "text": "In January 2023, Floriane Irangabiye, a presenter on the online radio station Igicaniro, was fined BIF one million (USD 338) and sentenced to ten years in prison for “undermining the integrity of the national territory.” This handful of cases, the publication bans, and the five-year censorship imposed on the news website Iwacu-burundi from 2017 to 2022 reflect the Burundian authorities’ determination to silence the press.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1574,
+      "body_end": 1999,
+      "source_links": [
+        "https://soundcloud.com/user-656342948",
+        "https://www.iwacu-burundi.org/media-les-coulisses-dun-deblocage/",
+        "https://x.com/floriane27071"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00010",
+      "text": "Global Voices contacted a Burundian journalist via WhatsApp, who anonymously stated:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2001,
+      "body_end": 2085,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00011",
+      "text": "> Beaucoup de journalistes ainsi que des médias s'auto-censurent ou préfèrent ne plus travailler sur des sujets qui peuvent irriter les autorités du pays, tels: la corruption, la politique ou même la gouvernance. Parce que c'est au risque de leur vie. Ceux qui essayent ou insistent d'évoquer ces sujets, parlent sous l'anonymat.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2087,
+      "body_end": 2416,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00012",
+      "text": "> Many journalists and media outlets self-censor or don’t cover topics like corruption, politics, and governance that might anger the country’s authorities and put their lives at risk. Those who do cover these topics do so anonymously.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2418,
+      "body_end": 2653,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00013",
+      "text": "In the Freedom in the World 2024 report by the international organization Freedom House, Burundi ranked 14 out of 100 countries. This low score confirms the lack of media independence in this country of over 14 million citizens.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2655,
+      "body_end": 2883,
+      "source_links": [
+        "https://freedomhouse.org/country/burundi/freedom-world/2024",
+        "https://www.worldometers.info/world-population/burundi-population/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00014",
+      "text": "Media outlets under the regime’s command",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2885,
+      "body_end": 2925,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00015",
+      "text": "Political parties that become hostile to the media’s open criticism of their programs and measures once in power dominate this country’s political system. For example, the National Council for the Defense of Democracy-Forces for the Defense of Democracy (CNDD-FDD), the political party of the current president, Évariste Ndayishimiye, who has been in power since June 2020, governs the country with an iron fist. Since former president Pierre Nkurunziza’s era (2005–2020), government critics have faced threats, crackdowns, and violence.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2927,
+      "body_end": 3464,
+      "source_links": [
+        "https://fr.wikipedia.org/wiki/%C3%89variste_Ndayishimiye",
+        "https://fr.wikipedia.org/wiki/Conseil_national_pour_la_d%C3%A9fense_de_la_d%C3%A9mocratie-Forces_de_d%C3%A9fense_de_la_d%C3%A9mocratie",
+        "https://fr.wikipedia.org/wiki/Pierre_Nkurunziza",
+        "https://www.france24.com/fr/20170704-burundi-senfonce-dictature-denonce-fidh-violences-nkurunziza",
+        "https://www.voaafrique.com/a/un-mort-a-bujumbura-en-marge-des-manifestations-continues-contre-nkurunziza/2764239.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00016",
+      "text": "While the media professionals who are highly critical of the current regime are often arrested, imprisoned, or forced to flee the country, others are willing to sing the government’s praises. The anonymous journalist quoted above stated:",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3466,
+      "body_end": 3703,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00017",
+      "text": "> Les journalistes burundais sont devenus des griots de l’État. Ils ne font que dire du bien du pouvoir en place. Leurs productions d'articles ressemblent beaucoup plus aux productions des cellules de communication du pouvoir en place. C'est déplorable qu'on arrive là, puisqu'ils ont fait le choix de plaire au lieu de se référer aux faits.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3705,
+      "body_end": 4046,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00018",
+      "text": "> Burundian journalists have become griots (spokespersons) for the state. They always speak highly of the government, and their articles closely resemble those of the government’s communication units. It’s shameful that we’ve reached this point. They’ve chosen to satisfy the government rather than report the facts.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4048,
+      "body_end": 4364,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00019",
+      "text": "The Forum for Awareness and Development (FOCODE), a Burundian human rights organization, denounced the Burundian Ombudsman (people’s representative) Aimée Laurentine Kenyana’s harassment of the country’s journalists. The FOCODE posted on X :",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4366,
+      "body_end": 4607,
+      "source_links": [
+        "https://focode.org/",
+        "https://fr.wikipedia.org/wiki/Aim%C3%A9e_Laurentine_Kanyana",
+        "https://x.com/FOCODE_"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00020",
+      "text": "> An inconvenient truth for the powers that be:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4609,
+      "body_end": 4656,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00021",
+      "text": "> The Burundian Ombudsman, Aimée Laurentine Kanyana, recently criticized the country’s journalists. She accused them of damaging Burundi’s reputation by relaying overly negative information. What exactly was her message? The media should praise the country’s ‘successes’ rather than ‘discredit’ it. In short, it was a covert appeal for the press to comply and serve as a loyal government mouthpiece. But since when has journalism’s role been to blunt the truth rather than expose it? Behind this misleadingly patriotic narrative lies a far more disturbing truth: the powers that be are afraid of being under the spotlight.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4658,
+      "body_end": 5280,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00022",
+      "text": "> Journalism or state communication?",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5282,
+      "body_end": 5318,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00023",
+      "text": "> In a regime that claims to be democratic, the role of journalism isn’t to praise those in power but to independently provide accurate information. Ordering the press to focus solely on “positive” news contradicts its primary responsibility: reporting the truth, whether we like it or not.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5320,
+      "body_end": 5610,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00024",
+      "text": "> Information is not a political marketing tool. It belongs to the people, not the government. Ms. Kanyana would do well to remember that a journalist’s role isn’t to champion those in power but to report what is happening accurately and uncensored.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5612,
+      "body_end": 5861,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00025",
+      "text": "> A government that fears its own reflection",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5863,
+      "body_end": 5907,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00026",
+      "text": "> By accusing the press of damaging Burundi’s reputation, the Ombudsman revealed a deep-seated concern: that of a state that can’t bear facing its own faults. Based on her reasoning, denouncing corruption, insecurity, poverty, or unemployment would be an act of national sabotage.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5909,
+      "body_end": 6189,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00027",
+      "text": "> However, what really damages a country’s reputation? Journalists who expose shortcomings or leaders who let them continue under the radar?",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6191,
+      "body_end": 6331,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00028",
+      "text": "> The facts speak for themselves. A rhetorical wand won’t make poverty disappear. A positive rhetoric won’t rebuild failing infrastructures. Unemployed youths won’t find job opportunities just because the press decides to look the other way.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6333,
+      "body_end": 6574,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00029",
+      "text": "> A country doing well doesn’t need to force the press to praise it. The facts speak for themselves.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6576,
+      "body_end": 6676,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00030",
+      "text": "> Silencing the press condemns the country",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6678,
+      "body_end": 6720,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00031",
+      "text": "> What the Ombudsman seems to forget — or pretends not to know — is that investors and international observers don’t rely on the local media to assess the situation in Burundi. They can see the state of the roads, the economic management, social tensions, and dwindling political freedom for themselves. It’s not the press that shapes their perception but reality itself.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 6722,
+      "body_end": 7093,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00032",
+      "text": "> Attacking journalism undermines a country’s democracy. A country that treats criticism as disloyalty and questions freedom of information is a country lacking in transparency. And a lack of transparency has never resulted in progress.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 7095,
+      "body_end": 7331,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00033",
+      "text": "> Turning off the lights won’t make the shadows disappear",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 7333,
+      "body_end": 7390,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00034",
+      "text": "> Does the Ombudsman dream of a Burundi where journalists write propaganda columns rather than provide information?",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 7392,
+      "body_end": 7507,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00035",
+      "text": "> Refusing to open our eyes will not make the world a better place, prohibiting journalists from exposing the truth will not make them disappear, and covering up uncomfortable truths will not make the nation prosper.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 7509,
+      "body_end": 7725,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00036",
+      "text": "> Free and critical journalism reflects an evolving society. If this reflection causes unrest, it is not the reflection itself that must change but the flaws it reflects.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 7727,
+      "body_end": 7897,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00037",
+      "text": "In an interview via WhatsApp, Aimée Laurentine Kanyana told Global Voices that FOCODE had misunderstood her:",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 7899,
+      "body_end": 8007,
+      "source_links": [
+        "https://fr.wikipedia.org/wiki/Aim%C3%A9e_Laurentine_Kanyana"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00038",
+      "text": "> Ils n’ont pas compris mon message : Concrètement j’ai voulu attirer l’attention des médias sur le fait que l'équilibre de l'information est essentiel pour garantir que les citoyens reçoivent des informations complètes, objectives et diversifiées, ce qui est crucial dans un environnement démocratique.",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 8009,
+      "body_end": 8312,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00039",
+      "text": "> They misunderstood my message. I ultimately wanted to draw the media’s attention to the fact that balanced information is vital in ensuring citizens receive the comprehensive, objective, and diverse information that is essential in a democratic environment.",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 8314,
+      "body_end": 8573,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00040",
+      "text": "Aimée Laurentine Kanyana also recognized the media’s crucial role in Burundi’s democratic process. She said",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 8575,
+      "body_end": 8682,
+      "source_links": [
+        "https://fr.wikipedia.org/wiki/Aim%C3%A9e_Laurentine_Kanyana"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00041",
+      "text": "> La contribution des médias au processus démocratique au Burundi est essentielle car ils garantissent l’information et l’éducation citoyenne, la garantie des droits fondamentaux, la diversification de voix ou d’opinions et la responsabilisation de tous.",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 8684,
+      "body_end": 8938,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00042",
+      "text": "> The media’s involvement in Burundi’s democratic process is essential. It provides news, civic education, a guarantee of fundamental rights, diverse opinions, and empowerment for all.",
+      "page": null,
+      "paragraph": 42,
+      "body_start": 8940,
+      "body_end": 9124,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-831196-b00043",
+      "text": "Under such circumstances, some Burundian media outlets must work in exile. Such is the case for the written press outlet Le Mandat, the radio stations Radio Publique Africaine (RPA), Radio Haguruka, and Radio Inzamba, and the television station Télé Renaissance.",
+      "page": null,
+      "paragraph": 43,
+      "body_start": 9126,
+      "body_end": 9388,
+      "source_links": [
+        "https://inzamba.org/",
+        "https://lemandat.org/",
+        "https://telerenaissance.org/",
+        "https://www.radiohaguruka.org/index.php",
+        "https://www.rpa.bi/index.php"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-831196-b00044",
+      "text": "According to the Amnesty International Report 2023, Burundian journalists continue to face a perilous situation. However, the government doesn’t appear willing to improve the freedom of expression in this country.",
+      "page": null,
+      "paragraph": 44,
+      "body_start": 9390,
+      "body_end": 9603,
+      "source_links": [
+        "https://www.amnesty.org/fr/location/africa/east-africa-the-horn-and-great-lakes/burundi/report-burundi/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "2ea5f69d53d7df27ad77fc076bc2558edf1cfd053df53c843e71f75470c60b10",
+  "word_count": 1463,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 9603,
+  "retrieved_at": "2026-11-16T22:46:16.981744+00:00",
+  "raw_html_sha256": "aa25574fbe52d91cecd157985703fb9e73e1619554740d5d14183cdad049469c",
+  "resolved_source_url": "https://globalvoices.org/2025/04/25/burundi-a-lack-of-press-freedom-results-in-self-censorship-and-exile-for-many-journalists/",
+  "canonical_url": "https://globalvoices.org/2025/04/25/burundi-a-lack-of-press-freedom-results-in-self-censorship-and-exile-for-many-journalists/",
+  "source_bytes": 207776,
+  "authors": [
+    {
+      "name": "Jean Sovon",
+      "url": "https://fr.globalvoices.org/author/jean-sovon/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Laura",
+      "url": "https://globalvoices.org/author/laura-dunne/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 831196,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "aa25574fbe52d91cecd157985703fb9e73e1619554740d5d14183cdad049469c",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-15596e6530b5602a07c5",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-04",
+    "eligible_month_documents": 80,
+    "selected_month_documents": 67,
+    "inclusion_probability": 0.8375,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Jean Sovon",
+  "body_start": 534,
+  "body_end": 10137,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "856fe01e67b38729ec0b5dd169b4cbe1ad0c438bc3212339ccbdde7732588edf",
+  "text_path": "articles/gv-831196.txt",
+  "metadata_path": "metadata/gv-831196.json",
+  "attribution": "This story by Jean Sovon originally appeared on Global Voices. https://globalvoices.org/2025/04/25/burundi-a-lack-of-press-freedom-results-in-self-censorship-and-exile-for-many-journalists/",
+  "content_sha256": "c06ab35558fa92068abae87e61bc0bcaaae8edfd332d0558e045ba2444379aaf",
+  "source_sha256": "aa25574fbe52d91cecd157985703fb9e73e1619554740d5d14183cdad049469c",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

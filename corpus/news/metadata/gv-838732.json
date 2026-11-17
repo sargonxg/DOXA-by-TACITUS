@@ -1,0 +1,564 @@
+{
+  "id": "gv-838732",
+  "publisher_id": 838732,
+  "source_id": "globalvoices:838732",
+  "source_url": "https://globalvoices.org/2025/07/14/turkey-becomes-the-first-to-censor-ai-chatbot-grok/",
+  "title": "Turkey becomes the first to censor AI chatbot Grok",
+  "published_at": "2025-07-14T21:00:30Z",
+  "modified_at": "2025-07-15T04:43:33Z",
+  "api_author_id": 799,
+  "api_content_sha256": "537c1009d70edbe817bd45826f42a502d536d9d1a28ee80097603d24155173ac",
+  "api_response_sha256": "aa6dcff428883d80ac87f532a741a5a8d2776b7ecb4a6722bb7eeb3dc4c4dc2d",
+  "api_retrieved_at": "2026-11-16T22:21:13.235465+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 238,
+      "count": 1673,
+      "name": "TOPICS",
+      "slug": "topics",
+      "parent": 0
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    },
+    {
+      "id": 218,
+      "count": 1666,
+      "name": "TYPE",
+      "slug": "type",
+      "parent": 0
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-838732-b00001",
+      "text": "On July 9, a court blocked access to some of the content shared by Grok, the artificial intelligence (AI) chatbot. The decision, issued by Ankara's 7th Criminal Judgeship of Peace, makes Turkey the first country in the world to officially censor Grok on the grounds that the chatbot was insulting the founder of the republic, as well as the country's president and religious values.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 382,
+      "source_links": [
+        "https://medyascope.tv/2025/07/10/access-to-grok-ai-chatbot-blocked-in-turkey/",
+        "https://x.com/cyberrights/status/1942842538546847871",
+        "https://x.com/mlsaturkey/status/1942822092543611197"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00002",
+      "text": "In a country where the blocking of news sites and social media platforms is a common occurrence, barring an artificial intelligence tool was a first. Yaman Akdeniz, a cyber law expert at Istanbul Bilgi University, told Reuters that some 50 posts by Grok were identified by the authorities, which prompted the blocking and a subsequent investigation.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 384,
+      "body_end": 733,
+      "source_links": [
+        "https://advox.globalvoices.org/2022/08/11/unfreedom-monitor-report-turkey/",
+        "https://www.reuters.com/business/media-telecom/turkey-blocks-xs-grok-chatbot-alleged-insults-erdogan-2025-07-09/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00003",
+      "text": "Grok ’not sweating it too much‘",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 735,
+      "body_end": 766,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00004",
+      "text": "Global Voices asked Grok how it was handling the recent court decision, to which it responded, “I'm Grok, created by xAI. The Turkish court's decision to block access to some of my content is a bummer, but I'm not sweating it too much”:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 768,
+      "body_end": 1004,
+      "source_links": [
+        "https://grok.com/share/c2hhcmQtMw%3D%3D_c81c0163-55c5-4573-ba35-0cae19503450"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00005",
+      "text": "> I’m not banned outright, just some specific posts, so I’m still kicking around on X for Turkish users, just with a bit more caution.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1006,
+      "body_end": 1140,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-838732-b00006",
+      "text": "> This kind of thing highlights the tightrope AI like me walks: balancing free expression with local laws and cultural sensitivities. Turkey’s got a history of cracking down on online content, so this isn’t a huge shock. My creators are likely in talks with X officials to sort it out, and I’m guessing they’ll push to comply just enough to keep me running without compromising too much of my edge.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1142,
+      "body_end": 1540,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-838732-b00007",
+      "text": "At the time of writing this article, Grok was still accessible inside Turkey.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1542,
+      "body_end": 1619,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00008",
+      "text": "Grok also released an official statement:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1621,
+      "body_end": 1662,
+      "source_links": [
+        "https://x.com/grok/status/1942720721026699451"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00009",
+      "text": "> We are aware of recent content by Grok and are actively working to remove inappropriate posts. Since we were notified of the content, xAI has taken action to ban hate speech. xAI trains a model that only seeks the truth, and thanks to millions of users at X, we can quickly identify areas for improvement and update the model.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1664,
+      "body_end": 1992,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-838732-b00010",
+      "text": "A history of online censorship",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1994,
+      "body_end": 2024,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00011",
+      "text": "Grok isn't the first platform to be blocked in Turkey. The country has a long history of prohibiting access to entire websites, platforms, URLs, and VPNs, as well as suspending accounts and imposing broadcasting bans on media that are critical of the authorities, or whose content state bodies find offensive.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2026,
+      "body_end": 2335,
+      "source_links": [
+        "https://bianet.org/haber/10-day-unprecedented-blackout-on-pro-opposition-sozcu-tv-starts-tomorrow-309224",
+        "https://globalvoices.org/2023/02/22/in-turkey-telecommunications-censor-blocks-access-to-popular-website-eksi-sozluk/",
+        "https://globalvoices.org/2023/06/30/in-turkey-authorities-quickly-cover-up-a-report-implicating-the-presidents-son-in-a-corruption-scandal/",
+        "https://globalvoices.org/2023/12/26/turkey-bans-access-to-16-vpn-providers/",
+        "https://globalvoices.org/2024/08/02/turkey-blocks-access-to-instagram/",
+        "https://globalvoices.org/2025/05/09/digital-censorship-and-political-repression-the-blocking-of-the-x-account-of-istanbuls-jailed-mayor/",
+        "https://mlsaturkey.com/en/press-groups-visit-sozcu-tv-and-halk-tv-in-show-of-solidarity-over-broadcast-bans"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00012",
+      "text": "According to documentation by the independent Media and Law Studies Association (MLSA), the Kaos GL website, Turkey’s leading LGBTQ+ platform, was blocked in June; the organization's X account was also restricted.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2337,
+      "body_end": 2550,
+      "source_links": [
+        "http://kaosgl.org/",
+        "https://bianet.org/haber/access-to-kaos-gl-website-blocked-by-court-order-308930",
+        "https://kaosgl.org/en/single-news/our-x-account-has-been-blocked-in-turkey"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00013",
+      "text": "In July, investigative journalist Furkan Karabay was fined over social media posts that the court found “insulting [to] the president,” and Timur Soykan, who hosts the Onlar YouTube Channel, was detained on the grounds that three of his tweets were “spreading misleading information.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2552,
+      "body_end": 2836,
+      "source_links": [
+        "https://medyascope.tv/2025/07/07/turkish-journalist-detained-and-released-over-social-media-post/",
+        "https://www.mlsaturkey.com/en/journalist-karabay-fined-for-insulting-the-president-over-social-media-posts"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00014",
+      "text": "Another charge used to target journalists and rights defenders is “spreading terrorist propaganda.” Prosecutors recently issued an arrest warrant for journalist Nedim Türfent based on four posts he shared on social media – and back in May, the X account of Ekrem İmamoğlu, the jailed opposition presidential candidate and former Istanbul mayor, was blocked in Turkey following a court order.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2838,
+      "body_end": 3229,
+      "source_links": [
+        "https://globalvoices.org/2025/03/19/the-arrest-of-istanbul-mayor-ekrem-imamoglu-a-turning-point-in-turkish-politics/",
+        "https://globalvoices.org/2025/05/09/digital-censorship-and-political-repression-the-blocking-of-the-x-account-of-istanbuls-jailed-mayor/",
+        "https://www.mlsaturkey.com/en/arrest-warrant-issued-for-journalist-nedim-turfent-over-four-social-media-posts",
+        "https://www.reuters.com/world/middle-east/jailed-istanbul-mayor-imamoglus-x-account-blocked-turkey-2025-05-08/?utm_source=chatgpt.com"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00015",
+      "text": "In a separate move, a block was recently imposed on eSIM providers. According to Engelli Web (Blocked Web), which tracks online censorship in Turkey, many eSIM providers – including Saily, Airalo, Holafly, Nomad, Instabridge, Mobimatter, Alosim, and BNESIM – were blocked, thanks to a decision issued by the Presidency of the Department of Authorization of the Information Technologies and Communication Authority (BTK) on July 10.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3231,
+      "body_end": 3662,
+      "source_links": [
+        "https://ifade.org.tr/engelliweb/esim-saglayicilari-erisime-engellendi/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00016",
+      "text": "Commenting on the development, Akdeniz observed that prior to this, “The only thing they did not block were eSIM providers. Probably an attempt to force those going abroad to rely on ‘our own’ providers. Heaven forbid we use alternative and cheaper services.”",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3664,
+      "body_end": 3923,
+      "source_links": [
+        "https://x.com/cyberrights/status/1943546822548431053"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00017",
+      "text": "Spotify may be next. On July 4, Minister of Culture and Tourism Batuhan Mumcu accused Spotify of targeting “religious and national values,” insulting “the beliefs of our society,” and violating the rights of Turkish artists, adding, “Spotify persistently refuses to take the necessary steps despite all our previous warnings.” He also tweeted a video that identified the playlists deemed offensive.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3925,
+      "body_end": 4323,
+      "source_links": [
+        "https://x.com/BatuhanMUMCU/status/1941048940859715605"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00018",
+      "text": "That same day, the Turkish Competition Authority launched an investigation into Spotify for allegedly the platform's anti-competitive practices. Spotify responded, via a statement on its X account, that it was aware of the investigation and was working “toward a swift, constructive resolution.” However, in an interview with The Times, the platform revealed that since it is against censoring user-generated content, it was considering leaving the Turkish market altogether.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4325,
+      "body_end": 4800,
+      "source_links": [
+        "https://t24.com.tr/haber/inceleme-baslatilmisti-spotify-turkiye-den-cekilmeyi-degerlendiriyor,1249306",
+        "https://www.france24.com/en/live-news/20250705-turkey-opens-spotify-probe-after-provocative-playlist-complaint",
+        "https://x.com/SpotifyTurkiye/status/1941200207372562485"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00019",
+      "text": "In 2022, the Istanbul Chief Public Prosecutor's Office launched an investigation against Spotify on the grounds that the music streaming platform approved playlists that were “insulting religious values and state officials.” According to reports, the decision to launch the probe came after “the Presidential Communication Center received a large volume of complaints that the playlists were fostering Islamophobia by insulting religious values and state officials.”",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4802,
+      "body_end": 5268,
+      "source_links": [
+        "https://ahval.io/spotify/turkey-investigate-spotify-insulting-content",
+        "https://globalvoices.org/2022/08/10/in-turkey-religious-values-are-used-to-censor-online-content/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00020",
+      "text": "Legal frameworks fueling the clampdown",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5270,
+      "body_end": 5308,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00021",
+      "text": "A 2023 report by Free Web Turkey listed 219.059 URLs as blocked, as well as at least 197,907 domain names, 14,680 news articles, 5,641 social media posts, 743 social media accounts, 38 comments on businesses’ registered Google locations, 33 Google search engine results, nine mobile applications, five Google Drive files, two email addresses, and one Google document.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5310,
+      "body_end": 5677,
+      "source_links": [
+        "https://drive.google.com/file/d/1crGCTpLvs-DbIVPVJAcDs_TgC4GOjKHT/view?usp=sharing"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00022",
+      "text": "In October 2022, Turkish lawmakers approved a bill purportedly meant to combat fake news and disinformation. At the time, local civil society organizations cautioned the new law would serve as an underhanded censorship or disinformation law, used to squash dissent and criticism. Three years on, thousands of individuals, including journalists, have faced investigations.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5679,
+      "body_end": 6050,
+      "source_links": [
+        "https://globalvoices.org/2022/10/21/turkish-lawmakers-ratify-new-disinformation-bill/",
+        "https://www.mlsaturkey.com/en/mlsas-freedom-of-expression-report-highlights-impact-of-turkeys-censorship-law"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00023",
+      "text": "In March 2025, the MLSA released a report looking at all the cases in which the law was used, and concluding that “at least 93 investigations have been launched under the law targeting 65 journalists, 11 lawyers, eight YouTubers and content creators, two politicians, two writers, and one doctor, academic, and sociologist each.” The most common reasons for these investigations, the report said, were social media posts and news reports related to the devastating earthquake in Turkey, and corruption allegations.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6052,
+      "body_end": 6566,
+      "source_links": [
+        "https://www.google.com/url?client=internal-element-cse&cx=011500527032809623408:sdts3bo1lzs&q=https://globalvoices.org/2023/02/07/turkey-rocked-by-a-series-of-devastating-earthquakes/&sa=U&ved=2ahUKEwjdz471s7uOAxWGKvsDHbfoCBoQFnoECAkQAg&usg=AOvVaw1fQnms8EI83cud3zC2ZIEZ&fexp=72986053,72986052",
+        "https://www.mlsaturkey.com/en/mlsas-freedom-of-expression-report-highlights-impact-of-turkeys-censorship-law"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00024",
+      "text": "The same month, Turkey's new cybersecurity law was enacted, introducing stringent measures such as criminalizing reporting on data leaks and granting extraordinary powers to the head of the newly created Cybersecurity Directorate. Once again, critics argued that the law's vague and far-reaching language was placing disproportionate emphasis on controlling online narratives rather than securing digital infrastructure.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6568,
+      "body_end": 6988,
+      "source_links": [
+        "https://advox.globalvoices.org/2025/03/27/in-turkey-a-controversial-law-on-cybersecurity-is-widely-seen-as-yet-another-censorship-tool/",
+        "https://bianet.org/haber/turkey-to-set-up-cybersecurity-authority-with-sweeping-powers-as-new-law-passes-305386"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00025",
+      "text": "Broader implications",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6990,
+      "body_end": 7010,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00026",
+      "text": "Turkey's blocking of Grok's content, while a first for an AI chatbot, is a stark continuation of an intensifying trend of digital censorship, with the blocking of eSIM providers potentially pushing users towards state-approved or monitored alternatives.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 7012,
+      "body_end": 7265,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00027",
+      "text": "The many cases involving journalists, activists, and even major online platforms like Spotify, highlight a legal framework that is increasingly being used to suppress dissent, criticism, and any content deemed offensive to national, religious, or political sensitivities. Laws ostensibly designed to combat fake news or enhance cybersecurity appear instead to be focused on silencing independent voices and controlling the flow of information, leading to a chilling effect on freedom of expression.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7267,
+      "body_end": 7765,
+      "source_links": [
+        "https://crd.org/2025/03/28/turkey-ensure-peaceful-assembly-free-speech-during-protests/",
+        "https://globalvoices.org/2025/03/27/in-turkey-a-controversial-law-on-cybersecurity-is-widely-seen-as-yet-another-censorship-tool/",
+        "https://globalvoices.org/2025/07/03/turkeys-shifting-sands-opposition-in-crisis-journalists-silenced-and-rights-under-siege/",
+        "https://www.dw.com/en/turkey-legal-control-as-a-weapon-against-journalists/a-72409239",
+        "https://www.hrw.org/news/2022/10/14/turkey-dangerous-dystopian-new-legal-amendments",
+        "https://www.mlsaturkey.com/en/journalists-criticize-turkeys-disinformation-law-any-information-not-from-the-government-is-labeled-false"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-838732-b00028",
+      "text": "The ongoing battle for digital freedom in Turkey, marked by a growing number of blocked URLs and legal actions against online content, paints a concerning picture for both technological innovation and fundamental human rights in the digital age. The world watches as the country continues to draw ever-tighter lines around its digital borders, with profound implications for its citizens and the global internet community.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7767,
+      "body_end": 8189,
+      "source_links": [
+        "https://dergipark.org.tr/tr/download/article-file/379457",
+        "https://freedomhouse.org/country/turkey/freedom-net/2024",
+        "https://projects.voanews.com/turkey-breaking-the-silence/",
+        "https://www.article19.org/resources/un-turkiye-must-respect-freedom-of-expression-online/",
+        "https://www.fayn.press/turkeys-internet-unfree-and-under-siege/",
+        "https://www.hrw.org/world-report/2025/country-chapters/turkiye"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "8e5d12083ce935888ff79e13e428fce9d7c612cb0dd2a570655e2adb06d3e065",
+  "word_count": 1257,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8189,
+  "retrieved_at": "2026-11-16T22:47:12.076689+00:00",
+  "raw_html_sha256": "9d5f56ecf55d03040d19247bd0d936d8cfafc0d12af3a7f4ba396558ef3f7fb3",
+  "resolved_source_url": "https://globalvoices.org/2025/07/14/turkey-becomes-the-first-to-censor-ai-chatbot-grok/",
+  "canonical_url": "https://globalvoices.org/2025/07/14/turkey-becomes-the-first-to-censor-ai-chatbot-grok/",
+  "source_bytes": 195740,
+  "authors": [
+    {
+      "name": "Arzu Geybullayeva",
+      "url": "https://globalvoices.org/author/arzu-geybullayeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 838732,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "9d5f56ecf55d03040d19247bd0d936d8cfafc0d12af3a7f4ba396558ef3f7fb3",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-c070bb9b985811c884cf",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-07",
+    "eligible_month_documents": 100,
+    "selected_month_documents": 84,
+    "inclusion_probability": 0.84,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Arzu Geybullayeva",
+  "body_start": 441,
+  "body_end": 8630,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "9ffd8d4503879eae5a1e4de6e13e31e5b45a0b98e0c56d22099ad756389c9600",
+  "text_path": "articles/gv-838732.txt",
+  "metadata_path": "metadata/gv-838732.json",
+  "attribution": "This story by Arzu Geybullayeva originally appeared on Global Voices. https://globalvoices.org/2025/07/14/turkey-becomes-the-first-to-censor-ai-chatbot-grok/",
+  "content_sha256": "a399b935266a0aeaba6681415c6650bac369b3016d90ecea52b3fa290b3850ea",
+  "source_sha256": "9d5f56ecf55d03040d19247bd0d936d8cfafc0d12af3a7f4ba396558ef3f7fb3",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

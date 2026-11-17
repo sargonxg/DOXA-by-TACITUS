@@ -1,0 +1,532 @@
+{
+  "id": "gv-841991",
+  "publisher_id": 841991,
+  "source_id": "globalvoices:841991",
+  "source_url": "https://globalvoices.org/2025/08/24/turkey-rocked-by-fake-diploma-scandal/",
+  "title": "Turkey rocked by fake diploma scandal",
+  "published_at": "2025-08-24T01:00:01Z",
+  "modified_at": "2025-08-22T11:53:32Z",
+  "api_author_id": 799,
+  "api_content_sha256": "fe9945400ee684d33386e48c22e789e21ab821383fdbc3f408f55945c39cf927",
+  "api_response_sha256": "aa829e488c936cd24696326080352df2a0a3369d54650e0ac6b947b6ef771fe6",
+  "api_retrieved_at": "2026-11-16T22:21:14.060384+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-841991-b00001",
+      "text": "Since August 4, Turkey has been gripped by revelations of a wide-ranging forgery network accused of producing fake university diplomas, altering academic records, and even manipulating driver’s license exams. According to prosecutors, suspects infiltrated Turkey’s e-government system, e-Devlet (e-State), by fraudulently obtaining electronic signatures belonging to senior officials at ministries, universities, and regulatory agencies.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 437,
+      "source_links": [
+        "https://giris.turkiye.gov.tr/Giris/",
+        "https://medyascope.tv/2025/08/04/hundreds-implicated-in-fake-diploma-scandal-in-turkey/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00002",
+      "text": "With these stolen digital credentials, they created fake university diplomas in law, psychology, and civil engineering; altered transcripts to boost students’ grades or facilitate transfers; and even tampered with driver’s license tests, registering failing candidates — including some who were illiterate — as successful.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 439,
+      "body_end": 761,
+      "source_links": [
+        "https://medyascope.tv/2025/08/04/hundreds-implicated-in-fake-diploma-scandal-in-turkey/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00003",
+      "text": "According to The Financial Times, “Among the most scandalous items was a supposedly fake degree issued to a civil engineer whose company has won major infrastructure tenders, and the stolen identities of lawyers who died in the massive 2023 earthquake.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 763,
+      "body_end": 1016,
+      "source_links": [
+        "https://www.ft.com/content/b4223d22-0b74-4614-a64a-c532d0e1ffb8?"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00004",
+      "text": "Turkey's long history of data leaks",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1018,
+      "body_end": 1053,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00005",
+      "text": "Turkish citizens have long been exposed to personal data breaches, including one in 2016, when the personal data of some 50 million people — names, addresses, parents’ first names, cities of birth, birth dates, and national ID numbers — were leaked. The following year, some 60 million subscribers of Turkey's major Global System for Mobile Communications (GSM) operator, Turkcell, had their personal data breached.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1055,
+      "body_end": 1470,
+      "source_links": [
+        "https://advox.globalvoices.org/2024/08/21/one-hundred-turkish-lira-for-your-data-how-turkish-citizens-lost-all-expectations-of-data-security-and-privacy/",
+        "https://globalvoices.org/2025/03/27/in-turkey-a-controversial-law-on-cybersecurity-is-widely-seen-as-yet-another-censorship-tool/",
+        "https://www.wired.com/2016/04/hack-brief-turkey-breach-spills-info-half-citizens/",
+        "https://x.com/DailyDarkWeb/status/1868761498551734340"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00006",
+      "text": "In 2021, a cyberattack on the country's biggest food delivery app, Yemeksepeti, resulted in a leak of the data of 19 million customers, including logins, phone numbers, emails, and address information. In 2023, following a hack on the country's main public administration portal, the personal data of 85 million Turkish citizens and millions of residents were also leaked.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1472,
+      "body_end": 1844,
+      "source_links": [
+        "https://airtable.com/appiUIOgqrjaNG3Od/shr6mDNcNCVlmTgdA/tbl1SlPO2ktxhueB2/viwlM73xX9YINzh7Z/reczuZ58CFfyVhQGM?blocks=hide",
+        "https://www.duvarenglish.com/turkey-launches-probe-into-online-food-delivery-giant-yemeksepeti-over-data-breach-claims-news-59690"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00007",
+      "text": "By 2024, a cyber attack on the information management system of a local hospital in Istanbul resulted in a leak of the medical records of millions of patients. That same year, Turkish authorities revealed that a data breach during the pandemic led to the stolen data of over 100 million citizens, including those living abroad, refugees, and other individuals whose names were registered with official institutions.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1846,
+      "body_end": 2261,
+      "source_links": [
+        "https://www.duvarenglish.com/medical-records-of-millions-stolen-in-turkish-state-hospital-data-leak-news-64215",
+        "https://www.duvarenglish.com/turkish-minister-confirms-vast-personal-data-breach-of-millions-news-64941"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00008",
+      "text": "January 2025 also saw a breach of satellite data; by March, Turkey adopted a new cybersecurity law, which introduced stringent measures such as criminalizing reporting on data leaks and granting extraordinary powers to the head of the newly created Cybersecurity Directorate. At the time, critics argued that the law's vague and far-reaching language places disproportionate emphasis on controlling online narratives rather than securing digital infrastructure. The Council of Higher Education (YÖK), a government institution in charge of supervising the universities, later announced it had filed criminal complaints against individuals and institutions spreading such allegations.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2263,
+      "body_end": 2945,
+      "source_links": [
+        "https://bianet.org/haber/turkey-to-set-up-cybersecurity-authority-with-sweeping-powers-as-new-law-passes-305386",
+        "https://bianet.org/haber/yok-sahte-diploma-haberlerini-yargiya-tasidi-310220",
+        "https://cyberpress.org/satellite-breach-turkey/",
+        "https://globalvoices.org/2025/03/27/in-turkey-a-controversial-law-on-cybersecurity-is-widely-seen-as-yet-another-censorship-tool/",
+        "https://www.iletisim.gov.tr/english/dis_basinda_turkiye/detay/turkiye-establishes-cybersecurity-directorate-to-combat-cyber-threats",
+        "https://yok.gov.tr/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00009",
+      "text": "The Interior Ministry, meanwhile, confirmed it was aware of the most recent breach. Through the details were only made public in August, the ministry started an investigation a year ago and have already detained nearly 200 suspects in connection with the breach. In a tweet on X, the Minister of the Interior said at least 57 fake diplomas, 108 forged driver’s licenses, and four counterfeit high school diplomas were uncovered as a result of these ongoing investigations.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2947,
+      "body_end": 3419,
+      "source_links": [
+        "https://www.dailysabah.com/turkiye/turkiye-arrests-197-in-fake-diploma-drivers-license-scandal/news",
+        "https://x.com/AliYerlikaya/status/1952430480478851162"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00010",
+      "text": "On August 6, Tülay Hatimoğulları and Tuncer Bakırhan, co-chairs of the Peoples’ Equality and Democracy Party (DEM Parti), submitted a complaint to the Ankara Chief Public Prosecutor requesting a comprehensive criminal investigation into both individuals and state institutions involved in the breach.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3421,
+      "body_end": 3721,
+      "source_links": [
+        "https://bianet.org/haber/dem-partiden-sahte-diploma-cetesi-hakkinda-suc-duyurusu-310186"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00011",
+      "text": "Support Global Voices as we publish more articles like this one",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3723,
+      "body_end": 3786,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00012",
+      "text": "Learn more about our donation campaign.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3788,
+      "body_end": 3827,
+      "source_links": [
+        "https://globalvoices.org/donate"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00013",
+      "text": "Institutional backlash and denials",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3829,
+      "body_end": 3863,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00014",
+      "text": "As news of the scandal spread, YÖK firmly denied the reports, saying that none of the suspects under investigation worked as academics in Turkish universities.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3865,
+      "body_end": 4024,
+      "source_links": [
+        "https://bianet.org/haber/yok-sahte-diploma-haberlerini-yargiya-tasidi-310220"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00015",
+      "text": "Calling for full accountability and the harshest penalties for those responsible, the Istanbul Bar Association described the scandal as both a blow to public order and a “grave disrespect” to colleagues who lost their lives in the earthquakes, whose academic records were unlawfully altered.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4026,
+      "body_end": 4317,
+      "source_links": [
+        "https://bianet.org/haber/meslek-orgutlerinden-sahte-diploma-aciklamasi-bu-bir-skandal-degil-yapisal-sorun-310219"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00016",
+      "text": "The Union of Chambers of Turkish Engineers and Architects (TMMOB) called it one of the most severe forgery cases in the history of the republic, linking it to years of eroded meritocracy and weakened oversight. “This is not an isolated incident,” TMMOB chair Emin Koramaz said, “but a manifestation of systemic decay where public trust has been undermined and professional standards ignored.”",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4319,
+      "body_end": 4711,
+      "source_links": [
+        "https://bianet.org/haber/meslek-orgutlerinden-sahte-diploma-aciklamasi-bu-bir-skandal-degil-yapisal-sorun-310219"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00017",
+      "text": "Demanding accountability, including resignations and the initiation of an independent technical review, the Chamber of Computer Engineers (BMO) highlighted how copied e-signatures exposed serious flaws in digital infrastructure, while the Turkish Psychologists Association (TPD) pointed to alarming cases of fake psychologists treating patients for fees, warning that such practices put public health at risk and renewing calls for a long-delayed professional law.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4713,
+      "body_end": 5177,
+      "source_links": [
+        "https://bianet.org/haber/meslek-orgutlerinden-sahte-diploma-aciklamasi-bu-bir-skandal-degil-yapisal-sorun-310219"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00018",
+      "text": "The DEM Parti's Nurdan Kılıç underlined that the scandal is not simply a case of isolated wrongdoing, but a multi-dimensional criminal structure that has penetrated various tiers of the state, undermining public order, trust, and meritocracy. The diploma scandal has emerged alongside other forgery investigations, including allegations that civil registry officials issued fake passports and IDs to foreign nationals in exchange for bribes.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5179,
+      "body_end": 5620,
+      "source_links": [
+        "https://bianet.org/haber/dem-partiden-sahte-diploma-cetesi-hakkinda-suc-duyurusu-310186"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00019",
+      "text": "For many observers, the affair underscores a broader structural problem: the weakening of oversight, the neglect of merit-based systems, and the erosion of accountability.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5622,
+      "body_end": 5793,
+      "source_links": [
+        "https://bianet.org/haber/meslek-orgutlerinden-sahte-diploma-aciklamasi-bu-bir-skandal-degil-yapisal-sorun-310219"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00020",
+      "text": "At a press conference, Suat Özçağdaş, the Istanbul deputy and party vice chair of the Republican People's Party (CHP), sharply criticized the Information and Communication Technologies Authority (BTK) and its president, Abdullah Karagözoğlu, who is responsible for cybersecurity: “He didn’t even notice his own e-signature being duplicated. If he had any sense of shame, both the Minister of Transport and the BTK head would have resigned by now. They haven’t said a word. It’s like the Ministry of Agriculture is responsible for cyber-security.”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5795,
+      "body_end": 6341,
+      "source_links": [
+        "https://bianet.org/haber/chp-den-sahte-diploma-aciklamasi-organize-suclar-cenneti-310109",
+        "https://www.diken.com.tr/sahte-diploma-ve-ehliyet-sorusturmasi-btk-baskaninin-bile-e-imzasini-kopyalamislar/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00021",
+      "text": "On August 7, the BTK shared a public announcement that stated “35 fraudulent e-signatures detected by BTK were immediately canceled, and in subsequent efforts, 9 additional fraudulent e-signatures were also revoked.” The statement continued, “Security mechanisms against fraud have been enhanced, and stronger measures have been implemented. To raise public awareness, an SMS with a header containing the Elektronik Sertifika Hizmet Sağlayıcı [Electronic Certificate Service Provider] title was sent to all mobile numbers registered to the [national] identity numbers of Nitelikli Elektronik Sertifika [secure electronic signature] holders.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6343,
+      "body_end": 6984,
+      "source_links": [
+        "https://x.com/BTKbasin/status/1953504008712126868"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00022",
+      "text": "This however, rang hollow and the CHP continued to criticize the BTK in its continued calls for accountability. “When such a scandal breaks, the relevant minister — and anyone else in the chain of responsibility — should all resign,” said CHP Vice Chair and Istanbul deputy Ulaş Karasu on August 8.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6986,
+      "body_end": 7284,
+      "source_links": [
+        "https://velev.news/gundem/btkya-sahte-diploma-tepkisi-iki-satirlik-aciklamayla-sorumluluktan-kacamazsiniz/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00023",
+      "text": "“BTK, responsible for data security,” he continued, “cannot shirk responsibility with its two-line statement. The question ‘Which chain of institutional neglect across which state bodies caused these data breaches?’ must be answered first by the Ministry of Transport, its minister, and all related institutions.”",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7286,
+      "body_end": 7599,
+      "source_links": [
+        "https://velev.news/gundem/btkya-sahte-diploma-tepkisi-iki-satirlik-aciklamayla-sorumluluktan-kacamazsiniz/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00024",
+      "text": "The BTK is quite controversial. In 2022, the online news platform Medyascope.tv published an investigation revealing that, beginning in 2021, the state institution was collecting private user data in a massive breach of privacy.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7601,
+      "body_end": 7829,
+      "source_links": [
+        "https://globalvoices.org/2022/08/05/under-btks-eye-investigation-reveals-turkeys-information-and-communication-authority-has-been-collecting-private-user-data-for-over-a-year/",
+        "https://medyascope.tv/",
+        "https://medyascope.tv/2022/07/21/belgeleriyle-btk-gate-turkiyedeki-tum-kullanicilarin-internet-hareketleri-yaklasik-bir-bucuk-yildir-kimlikleri-ve-kisisel-verileriyle-birlikte-btkya-akiyor/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00025",
+      "text": "On August 8, the Cumhuriyet newspaper published an interview with a member of the diploma forgery gang, who admitted that the network’s operations went far beyond diplomas. The interviewee, who spoke on condition of anonymity, revealed that the gang also forged the identities of judges, prosecutors, soldiers, and police officers, as well as press cards, pregnancy and ultrasound reports, and disability health reports. The age group of their “clients” ranged from 23 to 48 years old — citizens who were already active in the workforce and were seeking diplomas for promotion, status, or egotistical reasons.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7831,
+      "body_end": 8440,
+      "source_links": [
+        "https://www.cumhuriyet.com.tr/turkiye/sahte-diploma-cetesi-uyesi-asker-polis-savci-engelli-raporu-da-hazirliyoruz-2422975"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00026",
+      "text": "Fixing the problem",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 8442,
+      "body_end": 8460,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00027",
+      "text": "More than a series of individual crimes, the diploma forgery scandal is a symptom of systemic weaknesses in Turkey’s digital infrastructure, oversight mechanisms, and accountability structures.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 8462,
+      "body_end": 8655,
+      "source_links": [
+        "https://www.theistanbulchronicle.com/post/t%C3%BCrkiye-s-counterfeit-diploma-scandal-exposes-systemic-failures?utm_source=chatgpt.com",
+        "https://www.transparency.org/en/nis/countries/turkey?utm_source=chatgpt.com"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00028",
+      "text": "From stolen e-signatures to altered diplomas and compromised personal data, the controversy has exposed how easily public trust can be undermined when institutions fail to safeguard both meritocracy and privacy. Addressing these vulnerabilities will require not only technical fixes and stronger cybersecurity measures, but also clear accountability, legal reform, and a commitment to transparency.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 8657,
+      "body_end": 9055,
+      "source_links": [
+        "https://balkaninsight.com/2023/06/09/turkish-citizens-personal-data-offered-online-after-govt-site-hacked/?utm_source=chatgpt.com",
+        "https://balkaninsight.com/2024/03/08/turkish-citizens-data-harvested-from-govt-portal-being-sold-report/?utm_source=chatgpt.com",
+        "https://bti-project.org/en/reports/country-report/TUR",
+        "https://daktilo1984.com/d84intelligence/turkey-needs-meritocracy-to-embrace-justice/",
+        "https://www.dw.com/tr/sahte-diploma-skandal%C4%B1-e-devlet-ve-e-imza-ne-kadar-g%C3%BCvenli/a-73537820",
+        "https://www.fayn.press/calinan-dijital-hayatlarimiz/",
+        "https://www.fayn.press/sahte-hayatlar/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-841991-b00029",
+      "text": "Without such measures, Turkey risks further breaches that could erode confidence in its institutions and compromise the safety and rights of its citizens.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 9057,
+      "body_end": 9211,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "a80afcd5dfc5652e2bd3565463d5d31fe0e2848f34a5087c438612adf0eba5f9",
+  "word_count": 1346,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 2,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 9211,
+  "retrieved_at": "2026-11-16T22:47:42.215065+00:00",
+  "raw_html_sha256": "710e4dd4d770c0e125d8ee51c02aec7532d9cebbf9ea309fbadf89a376ce05dd",
+  "resolved_source_url": "https://globalvoices.org/2025/08/24/turkey-rocked-by-fake-diploma-scandal/",
+  "canonical_url": "https://globalvoices.org/2025/08/24/turkey-rocked-by-fake-diploma-scandal/",
+  "source_bytes": 194771,
+  "authors": [
+    {
+      "name": "Arzu Geybullayeva",
+      "url": "https://globalvoices.org/author/arzu-geybullayeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 841991,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "710e4dd4d770c0e125d8ee51c02aec7532d9cebbf9ea309fbadf89a376ce05dd",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-1fbe44c9260f6dab268e",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-08",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Arzu Geybullayeva",
+  "body_start": 415,
+  "body_end": 9626,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "90e90bf5326224906640ed7befcfae21be6dc524b867c4d19ea8f43d38ba34a6",
+  "text_path": "articles/gv-841991.txt",
+  "metadata_path": "metadata/gv-841991.json",
+  "attribution": "This story by Arzu Geybullayeva originally appeared on Global Voices. https://globalvoices.org/2025/08/24/turkey-rocked-by-fake-diploma-scandal/",
+  "content_sha256": "f4edd702a295c2d86b48df05e16c6cb72d1a4c279525b678707a318928f29b42",
+  "source_sha256": "710e4dd4d770c0e125d8ee51c02aec7532d9cebbf9ea309fbadf89a376ce05dd",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

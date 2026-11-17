@@ -94,7 +94,30 @@ LENSES = [
         ],
         "context_rules": "State the user-selected inquiry and preserve competing interpretations. Never assign a universal PC score or assume a demographic group shares one view.",
     },
+    {
+        "id": "political-framing", "name": "Political positions & framing", "version": "1.0.0",
+        "description": "Describe evidenced policy positions, evaluative wording, responsibility and source voices; qualify comparative claims.",
+        "source_url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+        "scope": "Descriptive textual analysis, not a universal political-bias, truth, fairness or left/right score. A detected pattern is not a verdict about a person or audience influence.",
+        "criteria": [
+            {"id": "expressed_policy_position", "label": "Expressed policy position", "description": "Identify an explicit position toward a named policy proposition, proposed action or remedy. State whose position it is and distinguish the attributed speaker's stance from the document's stance. Sentiment and topic mention alone do not establish stance; missing evidence of support or opposition does not imply neutrality. Do not infer a party, political identity or ideology from the position."},
+            {"id": "evaluative_language", "label": "Evaluative language", "description": "Identify evidenced appraisal, metaphor or legitimizing/delegitimizing wording, its target and textual function. Preserve quotation, negation, counter-speech and the responsible speaker. Apply the same descriptive rule across authors. Strong or emotional wording can be justified: it does not by itself establish falsity, unfairness, deceptive intent or equivalent conduct by compared actors."},
+            {"id": "agency_causal_responsibility", "label": "Agency and causal responsibility", "description": "Describe how the passage names, backgrounds or leaves unspecified an actor, cause, beneficiary or bearer of responsibility, and whether the source asserts or attributes the relationship. A causal allegation is not verified causation. Do not turn temporal association into causation, passive wording into deliberate concealment, or a framing observation into a finding about hidden motives."},
+            {"id": "source_voice_foregrounding", "label": "Source and voice foregrounding", "description": "Identify whose claim, testimony, evidence or institutional authority is explicitly foregrounded and how it is attributed. Distinguish the containing document's author from quoted speakers, committee recommendations and reported allegations. A locally prominent voice is observable; claims that other voices were unfairly excluded require a declared comparator and relevant supplied evidence. Equal quotation counts are not a fairness standard."},
+            {"id": "comparator_dependent_asymmetry", "label": "Comparator-dependent asymmetry", "description": "Assess a difference in evidential standards, appraisal, attribution or relevant coverage only against an explicitly declared comparator with supplied passages, inclusion rules and a shared comparison question. State topic, genre, date and available-evidence matching limits; unequal conduct or evidence may justify unequal treatment. Without this comparator, return uncertain for a relevant comparison inquiry or not_applicable when no comparison is attempted, never does_not_meet as a proxy for no bias. Mere corpus absence, different policy instruments or raw voice counts cannot establish omission, a double standard or deliberate selection."},
+            {"id": "presupposition_hypothesis", "label": "Qualified presupposition hypothesis", "description": "Identify a specific premise backgrounded or taken for granted by a textual trigger, with the exact proposition, responsible speaker and a plausible alternative reading. Check surrounding explicit assertions: a repeated allegation may be backgrounded without being an uncovered unstated belief. Do not strengthen the wording into an exclusive or universal claim, infer private beliefs, or treat the premise as fact. Preserve uncertainty where readings differ."},
+        ],
+        "context_rules": "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+    },
 ]
+
+CRITERION_REGISTRY_VERSION = "3.0.0"
+_BOUNDARIES = {("jda", "political_expression_boundary"), ("nexus", "opposition_boundary")}
+for _lens in LENSES:
+    _lens["criterion_registry_version"] = CRITERION_REGISTRY_VERSION
+    for _criterion in _lens["criteria"]:
+        _criterion["kind"] = ("descriptive" if _lens["id"] in {"discourse", "language-norms", "political-framing"}
+                              else "boundary" if (_lens["id"], _criterion["id"]) in _BOUNDARIES else "indicator")
 
 _ALIASES = {"core": "discourse", "doxa": "discourse", "core-discourse": "discourse", "discourse-core": "discourse", "antisemitism": "ihra", "antisemitism-ihra": "ihra", "antisemitism-jda": "jda", "antisemitism-nexus": "nexus", "islamophobia": "anti-muslim-racism", "pc": "language-norms", "political-correctness": "language-norms"}
 
@@ -133,5 +156,8 @@ def validate_custom_lens(value: dict) -> dict:
         if not label or len(label) > 160 or not text or len(text) > 1500:
             raise ValueError("Each custom criterion needs a label and an explicit description")
         used.add(cid)
-        normalized.append({"id": cid, "label": label, "description": text})
-    return {"id": "custom", "name": name, "description": description, "version": str(value.get("version", "1.0"))[:80], "source_url": "", "scope": "User-authored analytical rubric, not an established or validated scientific definition.", "criteria": normalized, "context_rules": "Ground every finding in exact source evidence. Preserve quotation, attribution, counter-speech and alternative interpretations."}
+        kind = criterion.get("kind", "descriptive")
+        if kind not in {"indicator", "boundary", "descriptive"}:
+            raise ValueError("Criterion kind must be indicator, boundary, or descriptive")
+        normalized.append({"id": cid, "label": label, "description": text, "kind": kind})
+    return {"id": "custom", "name": name, "description": description, "version": str(value.get("version", "1.0"))[:80], "criterion_registry_version": CRITERION_REGISTRY_VERSION, "source_url": "", "scope": "User-authored analytical rubric, not an established or validated scientific definition.", "criteria": normalized, "context_rules": "Ground every finding in exact source evidence. Preserve quotation, attribution, counter-speech and alternative interpretations."}

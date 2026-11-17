@@ -1,0 +1,315 @@
+{
+  "id": "gv-708659",
+  "publisher_id": 708659,
+  "source_id": "globalvoices:708659",
+  "source_url": "https://globalvoices.org/2020/06/03/how-covid-19-is-intensifying-content-moderations-flaws/",
+  "title": "How COVID-19 is intensifying content moderation’s flaws",
+  "published_at": "2020-06-03T12:53:14Z",
+  "modified_at": "2022-04-06T05:08:59Z",
+  "api_author_id": 1586,
+  "api_content_sha256": "78e44a52f0d02a4986b8a299b09714e29a89d391dab226b6521005d191e4fbba",
+  "api_response_sha256": "36bc3d63f20a164eefbe7ce2d06bb132aa122b08a06cf13d0b9306b43d571f31",
+  "api_retrieved_at": "2026-11-16T22:20:26.326198+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-708659-b00001",
+      "text": "The following post was co-authored by guest writers Solana Larsen, Internet Health Report Editor at Mozilla, and Leil Zahra, a Mozilla Fellow embedded at WITNESS.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 162,
+      "source_links": [
+        "https://www.mozilla.org/en-US/",
+        "https://www.witness.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00002",
+      "text": "As people around the world shelter from the COVID-19 pandemic, the internet has become an even more vital resource than before. Millions of us now exclusively connect, commiserate, learn, work, and play online.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 164,
+      "body_end": 374,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00003",
+      "text": "In some ways, the pandemic has revealed the internet’s potential as a global public resource. But it is also revealing what’s unhealthy about the internet: Those without access are now at an even greater disadvantage. And privacy and security shortcomings in consumer technology are now making exponentially more people vulnerable.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 376,
+      "body_end": 707,
+      "source_links": [
+        "https://advox.globalvoices.org/2020/05/11/covid-19-switching-online-is-not-an-option-in-conflict-stricken-countries-in-the-middle-east/",
+        "https://foundation.mozilla.org/en/blog/video-call-apps-get-bit-more-secure/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00004",
+      "text": "One troubling issue the pandemic brings to the fore is the internet’s broken content moderation ecosystem. That is, the deeply flawed ways that big tech platforms deal with online hate speech, disinformation, and illegal content. Despite many advancements, Facebook, YouTube, and other platforms often moderate content in ways that are capricious or downright dangerous: harmful content is left to fester, and acceptable content is unfairly removed. These decisions often disproportionately affect people in the Global South and who speak languages that are less supported.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 709,
+      "body_end": 1282,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00005",
+      "text": "Right now, we’re at an inflection point. Will content moderation's flaws loom even larger? Or can this crisis be a springboard for positive, lasting change in how we communicate online?",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1284,
+      "body_end": 1469,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00006",
+      "text": "One of the thorniest problems with content moderation is who — or what — does the moderation. With pandemic-related misinformation overwhelming platforms and many human content moderators unable to work, many platforms are increasingly turning to artificial intelligence. The limits of this approach are clear. Automated filtering has failed to prevent COVID-19 misinformation from spreading like wildfire and endangering public health. Platforms are awash in posts suggesting that drinking bleach can cure the virus, or that 5G technology is somehow spreading the disease.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1471,
+      "body_end": 2044,
+      "source_links": [
+        "https://www.poynter.org/ifcn-covid-19-misinformation/",
+        "https://www.wired.co.uk/article/coronavirus-facts-moderators-facebook-youtube"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00007",
+      "text": "In addition to overlooking misinformation, automated moderation can also accidentally censor quality content. Internet users asking earnest questions, or speaking in local vocabularies or contexts, can be incorrectly labeled as problematic. Mid-pandemic, automated moderation on Facebook resulted in the erroneous takedown of a large amount of content, including links to news articles about COVID-19. In March, Facebook claimed a technical “issue” was behind this, and said they had restored the removed content. But the episode raises serious questions about the efficiency of such systems, and, further, casts doubt on Facebook’s transparency. When YouTube announced it had heightened automated filtering due to COVID-19 in March, it wrote: “As we do this, users and creators may see increased video removals, including some videos that may not violate policies.” Similarly, Twitter explained in the same month that their automated moderation “can sometimes lack the context that our teams bring, and this may result in us making mistakes.”",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2046,
+      "body_end": 3089,
+      "source_links": [
+        "https://blog.twitter.com/en_us/topics/company/2020/An-update-on-our-continuity-strategy-during-COVID-19.html",
+        "https://twitter.com/guyro/status/1240088303497400320",
+        "https://youtube-creators.googleblog.com/2020/03/protecting-our-extended-workforce-and.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00008",
+      "text": "It doesn’t help that when content is unfairly removed or an account is suspended, the appeal process can be opaque. In many cases, users are left without understanding the reasons behind the removal of content or suspension of an account. And even before the pandemic, context has been a major issue in the discussion around content moderation. For instance, whether a U.S.-centric approach to what is accepted language or not should be applied internationally.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3091,
+      "body_end": 3552,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00009",
+      "text": "Flawed technology is one problem with content moderation; inequitable policies are another. In the United States and some European countries, big tech platforms can be fairly vigilant about following local laws and upholding their own internal policy commitments. Elsewhere, this isn't the case. During Nigeria’s 2018 election, researcher and Global Voices contributor Rosemary Ajayi and a group of colleagues catalogued hundreds of tweets spreading disinformation and were dismayed at the unpredictable and inconsistent response rates to reports about this activity. “If you report something serious on election day, and they get back to you a week later, what’s the point?” said Ajayi. The thought is equally frightening in today’s context: If a platform removes COVID-19 misinformation after millions of people have already seen it, the damage has already been done.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3554,
+      "body_end": 4423,
+      "source_links": [
+        "https://foundation.mozilla.org/en/blog/when-content-moderation-hurts/",
+        "https://globalvoices.org/2018/09/17/nigerian-twitter-has-an-impersonation-problem-and-the-platform-is-failing-to-take-action/",
+        "https://globalvoices.org/author/rosemary-ajayi/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00010",
+      "text": "These are just two of several long-standing problems in the realm of content moderation. In Mozilla’s recent survey of the social media space, we examined several others. We spoke with a Polish nonprofit drug harm reduction group, SIN, that was suspended by Facebook and unable to appeal the decision. And we spoke with the human rights research group Syrian Archive, who say evidence of human rights abuses in war is frequently deleted by platforms. It’s not hard to see how instances like these can be especially grave during a pandemic too. What if critical health information disappears, or evidence of lockdown-related human rights abuses is wrongly taken down?",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 4425,
+      "body_end": 5091,
+      "source_links": [
+        "https://foundation.mozilla.org/en/blog/when-content-moderation-hurts/",
+        "https://panoptykon.org/sinvsfacebook/en",
+        "https://syrianarchive.org/en"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00011",
+      "text": "There’s no panacea for these problems. But greater transparency about what is taken down, when, and why, as well as what portion of takedowns are appealed and reinstated, could help researchers and affected communities advise platforms and policymakers far better. The transparency reports of major platforms have, nevertheless, become more detailed over the years, thanks in part to pressure from civil society, including the signatories of The Santa Clara Principles. This community initiative to outline baselines for transparency and accountability in content moderation was launched in 2018, and several platforms have gone on to endorse them. In March, noting that the principles would benefit from an update, the Electronic Frontier Foundation (EFF) initiated a global call for proposals (the deadline is June 30) for how to better meet the needs of marginalized voices that are heavily impacted.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 5093,
+      "body_end": 5996,
+      "source_links": [
+        "https://santaclaraprinciples.org/",
+        "https://santaclaraprinciples.org/cfp/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00012",
+      "text": "So much is unknown about the moderation and appeal patterns in different global contexts, that even anecdotal evidence from affected users would be a precious resource. Silenced.online is one new grassroots tool for crowdsourcing and discussing experiences of unfair takedowns around the world. It aims to create a network of organizations and individuals who have been working on, or want to start working on, content takedown and moderation.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 5998,
+      "body_end": 6441,
+      "source_links": [
+        "https://silenced.online/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00013",
+      "text": "Other groups will concur that it’s crucial for civil society and researchers to be engaged on questions of content moderation and platform regulation. Scandals and crises tend to provoke new rules and regulations, or calls for further automation, that aren’t necessarily based on independent analysis of what works. New approaches to creating accountability and appeal mechanisms, like Facebook’s new Oversight Board, demand attention from a global public.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 6443,
+      "body_end": 6899,
+      "source_links": [
+        "https://www.oversightboard.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-708659-b00014",
+      "text": "As outlined above, the COVID-19 pandemic is bringing content moderation flaws into sharp relief, but the problems are long-standing, not least on matters of health and disinformation. They call for a change in the daily operation of platforms as well as how they are held accountable. Heightened attention and focus on the issue has the potential to catalyze something good. It can spark more transparency, more humane technology, better laws—and a healthier internet.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 6901,
+      "body_end": 7369,
+      "source_links": [
+        "https://www.newamerica.org/oti/reports/its-not-just-content-its-business-model/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "aac8591a78cb2f3073809e784bad50e361f71ce35d301cdb3ebd9b5d992bda4b",
+  "word_count": 1116,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7369,
+  "retrieved_at": "2026-11-16T22:24:46.001335+00:00",
+  "raw_html_sha256": "b6a079698a39b9cc7c857ac7d2551a5228782b3032c56a269395a05d4075e7a5",
+  "resolved_source_url": "https://globalvoices.org/2020/06/03/how-covid-19-is-intensifying-content-moderations-flaws/",
+  "canonical_url": "https://globalvoices.org/2020/06/03/how-covid-19-is-intensifying-content-moderations-flaws/",
+  "source_bytes": 190933,
+  "authors": [
+    {
+      "name": "Guest Contributor",
+      "url": "https://globalvoices.org/author/guest-contributor/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 708659,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "b6a079698a39b9cc7c857ac7d2551a5228782b3032c56a269395a05d4075e7a5",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-7ab7dae0a1fd758957d3",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-06",
+    "eligible_month_documents": 110,
+    "selected_month_documents": 92,
+    "inclusion_probability": 0.8363636363636363,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Guest Contributor",
+  "body_start": 450,
+  "body_end": 7819,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "ece0871ecdb0d3e994374818910381f8aa81b3bf7f3c9f70bac79405c0dd4aff",
+  "text_path": "articles/gv-708659.txt",
+  "metadata_path": "metadata/gv-708659.json",
+  "attribution": "This story by Guest Contributor originally appeared on Global Voices. https://globalvoices.org/2020/06/03/how-covid-19-is-intensifying-content-moderations-flaws/",
+  "content_sha256": "aed02f4b9c895f7bbe9cb018bd3649ad5d8605e7c25297e9ca0dbb18342556f9",
+  "source_sha256": "b6a079698a39b9cc7c857ac7d2551a5228782b3032c56a269395a05d4075e7a5",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

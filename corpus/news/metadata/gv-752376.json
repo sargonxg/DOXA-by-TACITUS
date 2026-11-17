@@ -1,0 +1,607 @@
+{
+  "id": "gv-752376",
+  "publisher_id": 752376,
+  "source_id": "globalvoices:752376",
+  "source_url": "https://globalvoices.org/2021/12/23/serbian-authorities-accused-of-spying-on-visiting-russian-citizens-at-behest-of-kremlin/",
+  "title": "Serbian authorities accused of spying on visiting Russian citizens at behest of Kremlin",
+  "published_at": "2021-12-23T16:00:15Z",
+  "modified_at": "2021-12-24T09:37:49Z",
+  "api_author_id": 2589,
+  "api_content_sha256": "ee20ce8a836bfa22d26fa32a812cff50ab147a36cc96307113f04dda986b0829",
+  "api_response_sha256": "5fbfbff678727adebb3a105386522b813371c20ab60c755caeef52d041127070",
+  "api_retrieved_at": "2026-11-16T22:20:40.560640+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 293,
+      "count": 1214,
+      "name": "Serbia",
+      "slug": "serbia",
+      "parent": 57
+    },
+    {
+      "id": 339,
+      "count": 321,
+      "name": "Serbian",
+      "slug": "serbian",
+      "parent": 317
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-752376-b00001",
+      "text": "This story is based on original coverage by Truthmeter.mk. An edited version is republished here under a content-sharing agreement between Global Voices and Metamorphosis Foundation.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 182,
+      "source_links": [
+        "https://truthmeter.mk/serbian-authorities-spy-on-visiting-russian-citizens-on-behest-of-kremlin/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00002",
+      "text": "Footage of a meeting of Russian opposition leaders taped by the Serbian Security Intelligence Agency in Belgrade in May was handed over by Serbian Interior Minister Alexander Vulin to Russian National Security Secretary Nikolai Patrushev in Moscow, Serbian portal Nova.rs reported on December 8.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 184,
+      "body_end": 479,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Aleksandar_Vulin",
+        "https://en.wikipedia.org/wiki/Nikolai_Patrushev",
+        "https://nova.rs/vesti/politika/vulin-predao-moskvi-tajne-snimke-ruskih-opozicionara-posle-kojih-su-uhapseni/?fbclid=IwAR10-wiEtfxcN1Ah_ycievIChq1-JWRJphy01gKuCUqI9RCF4RpGSnKg3-k"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00003",
+      "text": "Patrushev also serves as Director of the Federal Security Service (FSB), the successor agency to the Soviet Union’s KGB. His meeting with Vulin took place on May 14.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 481,
+      "body_end": 646,
+      "source_links": [
+        "http://www.mup.gov.rs/wps/portal/sr/search/!ut/p/z1/tVTdcppAFH4aLnGPi8DSOzSWRINJtInCjcPPojTAIoI_ueq0N32LvkKnM30PfaMu2otqjcbJyDCzP3POd36-bw-y0QDZiTMLR04essSJ-NmyleGdZipVA3D7rt5ugK7Uu1DvfcJAMHpCNrK9JE_zMbLSwo1Cbxhx70QAx4_LJaPTIsqnpd2UFZlHGyzJaZJ3mE930UlN_wi6CTLc9yQwrmulT-qFPrKqrur5RMOiglVHrPmEiA4QT8SyjwOXqD532kSgTuaNh5OCZktkrX6sfq6_rr-sv62_r36vfpUW_Lq6MV0gS0P9TQbwyqdzw-Pl90ukEwi7GIbSxKA_qNpVu0kkcv2fAalBlQfRDQIywcaTilrIHkXM3dKhJ65ERsjOaEAzmlWKjF-P8zydfhBAgPl8XhkxNopoxWOxAIdcxmyao8GuJbJ4J9R_Sr294mkqXaXXMTgZN7zUWUjn6DFhWcwz6Z3JDa9zLwIxbpo8gmq0DKODAUuHIsy9uLLltPKX00lxmNfzdNJvmMOHx2aX53S2KK0TIrO2ErM2AtsveheNKO9sa-uUQDn94efJxNb5Ky1LXHDmjz7T4wlr8HrCikRl8FwQCQ6IWAsUX3QlTRZrjgaOpvoKVJVT8PJF4e8vm_09viz8ZZsjv7c5rf05tv9wuBZxZjZMPopSJx-LYRIwNHgT9hEZe8ssjPhGgJR5NE8cLunnvKBRwja7cJbweRcK8KZAaRwTafsvxecuWUrRLG64xGwu5Jmp60F5WEov9Y5otWZ7yy3t_wHRg4__/?urile=wcm:path:/public_cyrillic/Pocetna/Aktuelno/Aktivnosti/b73d71ef-c6e8-43e9-a042-ba18d1b980f7",
+        "https://en.wikipedia.org/wiki/Federal_Security_Service"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00004",
+      "text": "Serbian daily newspaper Danas reported that at the meeting Patrushev thanked Vulin for the wiretaps from the Belgrade meeting held by members of the Russian opposition. It has been difficult for opposition groups to organize meetings in Russia, so they chose Belgrade as they do not need visas to enter Serbia.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 648,
+      "body_end": 958,
+      "source_links": [
+        "https://www.danas.rs/vesti/politika/vulin-i-patrusev-srbija-i-rusija-zajedno-protiv-obojenih-revolucija/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00005",
+      "text": "Shortly afterwards, on June 31, Russian opposition leader Alexander Pivovarov was arrested in Moscow and remains in custody. He attended the wiretapped Belgrade meeting in early May with another opposition figure, journalist Vladimir Kara-Murza, who tweeted about the arrest.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 960,
+      "body_end": 1235,
+      "source_links": [
+        "https://twitter.com/vkaramurza/status/1399454493713047552?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00006",
+      "text": "Another Russian dissident, businessman Mikhail Khodorkovsky, who lives in exile in the UK, also commented on Pivovarov's arrest.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1237,
+      "body_end": 1365,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Mikhail_Khodorkovsky"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00007",
+      "text": "> Serbian secret police, it turned out, tapes conversations of Russian activists and forwards them to the FSB.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1367,
+      "body_end": 1477,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-752376-b00008",
+      "text": "> History doesn't teach us, but the [international criminal court in] Hague awaits.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1479,
+      "body_end": 1562,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-752376-b00009",
+      "text": "As of December 2021, Vulin had neither confirmed nor denied the connection between the alleged handover of surveillance tapes and the arrest.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1564,
+      "body_end": 1705,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00010",
+      "text": "Working group against pro-democracy movements",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1707,
+      "body_end": 1752,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00011",
+      "text": "As part of their coverage, Nova.rs announced that Russia and Serbia had formed a joint working group to combat the so called “color revolutions” — a term used pejoratively by Kremlin allies as part of a conspiracy theory claiming that protest movements against autocratic and populist governments have not been authentic, but driven by the West. The task of this working group is to suppress civil protests and monitor the independent media, the opposition and civil society organizations.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1754,
+      "body_end": 2243,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Colour_revolution",
+        "https://nova.rs/vesti/politika/vulin-predao-moskvi-tajne-snimke-ruskih-opozicionara-posle-kojih-su-uhapseni/?fbclid=IwAR10-wiEtfxcN1Ah_ycievIChq1-JWRJphy01gKuCUqI9RCF4RpGSnKg3-k"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00012",
+      "text": "When asked by N1 TV reporters about the working group, Serbian President Aleksandar Vučić and Prime Minister Ana Brnabić said they were “hearing about it for the first time,” adding that “[the information] will have to be checked because this has not been discussed at a Government session.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2245,
+      "body_end": 2536,
+      "source_links": [
+        "https://rs.n1info.com/vesti/vulin-u-rusiji-o-obojenim-revolucijama-predsednik-i-premijerka-nemaju-pojma/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00013",
+      "text": "The fact that the “color revolutions” are the subject of talks between Vulin and Patrushev is in the official statement of the Serbian Ministry of the Interior following the Serbian minister of the interior's visit to Moscow on December 3.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2538,
+      "body_end": 2777,
+      "source_links": [
+        "http://www.mup.gov.rs/wps/portal/sr/search/Results/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_S19zQzdDYy8_Z28nQ0czZyCDJyCQ4wMLIz0w8EKDHAARwP9KPz6vQgpALrAqMjX2TddP6ogsSRDNzMvLV8_Iii1uDSnpBhofRSqAe5mrkYGjoHmli7erhbGFh4GUAV4XFiQG1HlkxbsCQDabMp_/?urile=wcm:path:/public_cyrillic/Pocetna/Aktuelno/Aktivnosti/9e7ca5e8-8967-4d77-a95f-c1b703e96a75"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00014",
+      "text": "> “На састанку је истакнуто да су “обојене револуције” постале, већ традиционални инструмент политике одређених центара моћи и земаља које имају за циљ нарушавање државности и губитак суверенитета под изговором демократизације и констатовано да се слободне земље морају томе одупрети.”",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2779,
+      "body_end": 3064,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-752376-b00015",
+      "text": "> “At the meeting it was stressed that “color revolutions” have become a traditional political instrument of certain centers of power and countries, aiming at undermining the statehood and loss of sovereignty under the pretext of democratization, and it was stressed that free countries must resist it.”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3066,
+      "body_end": 3369,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-752376-b00016",
+      "text": "On December 9, Belgrade daily newspaper Danas reported that they had reviewed a document related to the meeting, which included a request from Serbian to Russian authorities to provide surveillance technology to counter “mass unrest.” Serbian authorities asked Russian Federation to train Serbian police in using their technical system for tracking facilities and suspects, as well provide cyber security training, to fight the “color revolutions” more successfully.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3371,
+      "body_end": 3837,
+      "source_links": [
+        "https://www.danas.rs/vesti/drustvo/srpska-policija-od-rusije-trazi-tehniku-za-pracenje-sumnjivih-lica-da-bi-se-suprotstavila-masovnim-neredima/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00017",
+      "text": "According to Danas, the document states that the only two tasks of the Serbian-Russian working group for suppressing “color revolutions” are “normative regulation of the work of non-governmental organizations” and “consideration of ways to counter the mass riots and attempts to destabilize order.”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3839,
+      "body_end": 4137,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00018",
+      "text": "The Danas article also noted that the document refers to the Working Group for Countering Color Revolutions as operational, after it had been founded in May 2020. The newspaper quoted Mladen Jovanović, the director of the civil society network National Coalition for Decentralization, who stated that the working group in essence undermines the constitutional order of the Republic of Serbia:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4139,
+      "body_end": 4531,
+      "source_links": [
+        "https://nkd.rs/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00019",
+      "text": "> Najpre, ona služi da se na mala vrata ograniče slobode okupljanja, udruživanja, govora i mišljenja, koje su ustavom zagarantovane. Zatim, ovakav plan predstavlja zloupotrebu policije u borbi sa političkim neistomišljenicima…",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4533,
+      "body_end": 4759,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-752376-b00020",
+      "text": "> First and foremost, it serves as a back-door mechanism to limit the freedoms of assembly, speech and opinion, which are guaranteed by the Constitution. In addition, this plan represents abuse of police in the fight against political opponents…",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4761,
+      "body_end": 5006,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-752376-b00021",
+      "text": "In his statement for Danas, Jovanović noted that “after the founding of the working group the Serbian authorities undertook action against journalists and civil society activists” as the Anti-Money Laundering Office of Serbia initiated unjustified investigations against them for “alleged money laundering and financing of international terrorism.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5008,
+      "body_end": 5356,
+      "source_links": [
+        "https://crd.org/2020/07/29/civil-society-in-serbia-intimidated-with-unjustified-money-laundering-investigations/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00022",
+      "text": "This model of administrative and judicial pressure against civil society and independent media was developed in Russia, where such organizations are required to label themselves as “foreign agents”. It has been applied by other Kremlin-friendly regimes in the region, including Hungary and North Macedonia (2016–2017).",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5358,
+      "body_end": 5676,
+      "source_links": [
+        "https://advox.globalvoices.org/2017/02/26/macedonias-ruling-party-is-draining-civil-society-groups-time-and-money/",
+        "https://advox.globalvoices.org/2017/12/29/despite-regime-change-macedonian-civil-society-is-still-reeling-from-political-persecution-and-de-sorosization/",
+        "https://globalvoices.org/2018/06/27/with-new-anti-migration-laws-the-space-of-civil-society-in-hungary-continues-to-shrink/",
+        "https://globalvoices.org/2021/10/03/campaign-to-brand-russian-journalists-and-media-foreign-agents-picks-up-pace-after-elections/",
+        "https://www.theguardian.com/world/2021/oct/01/russia-extends-foreign-agents-law-to-critics-of-military-and-security"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00023",
+      "text": "More details on the Pivovarov case",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5678,
+      "body_end": 5712,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00024",
+      "text": "Also on December 9, Russian journalist and opposition leader Vladimir Kara-Murza addressed this close cooperation between the Serbian and Russian security forces in a statement for Radio Free Europe (RFE).",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5714,
+      "body_end": 5919,
+      "source_links": [
+        "https://www.facebook.com/vladimir.karamurza.5",
+        "https://www.slobodnaevropa.org/a/rusija-opozicija-srbija-vladimir-kara-murza/31601733.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00025",
+      "text": "He confirmed that he and Andrei Pivovarov organized a “seminar of Russian municipal representatives” in Belgrade in May, and that two weeks later his colleague and frequent critic of Kremlin policies had been arrested in St. Petersburg, and was still in prison.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5921,
+      "body_end": 6182,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00026",
+      "text": "On December 7, in an article published by Radio Ekho Moskvy (Echo of Moscow Radio) citing an earlier article in Danas, Kara-Murza claimed that the Serbian Security Intelligence Agency, as well as the Serbian Minister of Interior Aleksandar Vulin, played a role in Pivovarov's arrest.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6184,
+      "body_end": 6467,
+      "source_links": [
+        "https://echo.msk.ru/blog/karamurza/2948194-echo/",
+        "https://www.danas.rs/vesti/politika/vulin-i-patrusev-srbija-i-rusija-zajedno-protiv-obojenih-revolucija/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00027",
+      "text": "Kara-Murza noted that Pivovarov's arrest was “in Belarus style” i.e. similar to the much more famous arrest of Belarus dissident Raman Pratasevich earlier in May 2021. Pivovarov was pulled off a taxiing airplane bound for Warsaw, just before takeoff on May 31.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6469,
+      "body_end": 6729,
+      "source_links": [
+        "https://globalvoices.org/2021/05/23/belarus-grounds-ryanair-flight-detains-independent-journalist-amid-regimes-crackdown-on-media/",
+        "https://www.aljazeera.com/news/2021/6/1/russia-arrests-activist-raids-homes-of-kremlin-critics"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00028",
+      "text": "In October, RFE reported that Pivovarov had been charged with heading an “undesirable” organization, an accusation that stems from a 2015 Russian law that has repeatedly been used to target critical voices.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6731,
+      "body_end": 6937,
+      "source_links": [
+        "https://www.rferl.org/a/russia-pivovarov-undesirable-organization/31504019.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00029",
+      "text": "Serbian cooperation with Russia",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6939,
+      "body_end": 6970,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00030",
+      "text": "In the longer article on the case, Radio Free Europe (RFE) provides a brief overview of Serbian-Russian relations. Serbian authorities describe relations with the Russian Federation as “excellent” and even “brotherly” as the two governments support each other's territorial claims in international bodies — the disruption of Kosovo independence for Serbia and annexed Ukrainian territory of Crimea for Russia.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6972,
+      "body_end": 7381,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/2008_Kosovo_declaration_of_independence",
+        "https://en.wikipedia.org/wiki/Annexation_of_Crimea_by_the_Russian_Federation",
+        "https://www.slobodnaevropa.org/a/rusija-opozicija-srbija-vladimir-kara-murza/31601733.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00031",
+      "text": "As reported by the Associated Press news agency, the cooperation between Serbia and Russia to combat “color revolutions” is contradictory to Serbian aspirations for membership in the European Union (EU):",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 7383,
+      "body_end": 7586,
+      "source_links": [
+        "https://apnews.com/article/europe-russia-environment-and-nature-moscow-serbia-9c1e4fef540909927d02caa1f7d05c1b"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752376-b00032",
+      "text": "> “Although formally seeking EU membership, Serbia has refused to align its foreign policies with the 27-nation bloc and has instead strengthened its political, economic and military ties with Russia and China.”",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 7588,
+      "body_end": 7799,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-752376-b00033",
+      "text": "The Serbian Minister of Interior Vulin recently visited Moscow again on December 2, officially to discuss the purchase of Panzer-C1 missile systems and the opening of an office of the Russian Ministry of Defense in Belgrade. On December 3, Serbian media outlet Direktno.rs claimed the visit was to receive guidelines on how to deal with the massive protests currently taking place across Serbia.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 7801,
+      "body_end": 8196,
+      "source_links": [
+        "http://www.mup.gov.rs/wps/portal/sr/search/!ut/p/z1/pVPLcpswFP2WLrwEKSIGuTv5URK7OI3dxIENA0LGtICwECHprr_UVaeTyTeQP6rAXdRJ6oynjGY0Euc-zj1HwAM3wMuD2yQOZMLzIFVn1zP9i4FjntgQzS6GsxEk5nABh8vPCGIEroEHPJrLQm6AW1RhmlA_VdF5DwZR1m6ClVUqyxZX8kpQNuK5ZLmc84jtZ7fNCYLk0hqMZxNs4DPYxhQ0iYB7Elo0wgOkmcgKtNMIYy2AmGqoH6F1iK0I9jt0yQJBN_62YuIeuM1D8_j0vfnV_Gh-tn_VVYe6a_dVVxz-4yMKeJj5qs30Rob9HC_5TYEXpzzcDZrkoYFj4Am2ZoIJvRLqeiNlUb7vwR6s61qPOY9TplOe9eBrIRteSnCzjwSuImr9xeTjWHVhLszl3F4a8FwxuU1YDa5yLjLVyfLIqSsazypg-3yiKlj21LbnCCLjtQo1zfSdWvoftbbVS8WOU381cvzLq8lC9XO01dwD1nE747idbZ5zPSUfIHFUA5_UMG1s_uc0p2_ZTqmefNluPaKeXcvuTgl-8N0VWYaN3brXvq4d2Q_7ceaPhw4LvxFy1h6ckrz7DU0rA0A!/?urile=wcm:path:/public_cyrillic/Pocetna/Aktuelno/Aktivnosti/63e50cb0-82f8-4f6d-b395-4a90a97d6016",
+        "https://balkaninsight.com/2021/12/10/serbia-eco-protests-to-continue-despite-backdown-over-disputed-laws/",
+        "https://direktno.rs/vesti/drustvo-i-ekonomija/385937/rusija-srbija-borba-protiv-opozicije-vulin-petrusev.html",
+        "https://rs.n1info.com/english/news/arrested-protester-released-from-custody-in-serbia-some-protesters-fined/",
+        "https://www.danas.rs/vesti/drustvo/vulin-u-moskvi-sa-sojguom-kupujemo-nove-pancire/",
+        "https://www.rferl.org/a/serbia-environment-lithium-protests/31593977.html",
+        "https://www.slobodenpecat.mk/en/video-vrie-vo-belgrad-vecherva-iljadnici-lugje-protestiraat-protiv-policiskata-brutalnost/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "7647a8292542684e09a4af810c9e7c4921753e01593b839c5e3e2d03d50b89d6",
+  "word_count": 1233,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 8196,
+  "retrieved_at": "2026-11-16T22:33:01.553732+00:00",
+  "raw_html_sha256": "dbca8a529170de31f793da8da9aa5c26c5884b94059b7699772007f685f878b4",
+  "resolved_source_url": "https://globalvoices.org/2021/12/23/serbian-authorities-accused-of-spying-on-visiting-russian-citizens-at-behest-of-kremlin/",
+  "canonical_url": "https://globalvoices.org/2021/12/23/serbian-authorities-accused-of-spying-on-visiting-russian-citizens-at-behest-of-kremlin/",
+  "source_bytes": 195815,
+  "authors": [
+    {
+      "name": "Metamorphosis Foundation",
+      "url": "https://globalvoices.org/author/metamorphosis/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 752376,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "dbca8a529170de31f793da8da9aa5c26c5884b94059b7699772007f685f878b4",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-49dfcae95dfc89c11c11",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-12",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Metamorphosis Foundation",
+  "body_start": 522,
+  "body_end": 8718,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c286b69be87c02e8fed71a3a47d49dd9072443ec5dbe0d36f1c6309469f25761",
+  "text_path": "articles/gv-752376.txt",
+  "metadata_path": "metadata/gv-752376.json",
+  "attribution": "This story by Metamorphosis Foundation originally appeared on Global Voices. https://globalvoices.org/2021/12/23/serbian-authorities-accused-of-spying-on-visiting-russian-citizens-at-behest-of-kremlin/",
+  "content_sha256": "8ad6ace445fc31b89bf01e9516f22a5b5e39bc420a445f9bbc322ca265f68ec1",
+  "source_sha256": "dbca8a529170de31f793da8da9aa5c26c5884b94059b7699772007f685f878b4",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

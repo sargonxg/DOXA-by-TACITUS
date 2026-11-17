@@ -1,0 +1,324 @@
+{
+  "id": "gv-737000",
+  "publisher_id": 737000,
+  "source_id": "globalvoices:737000",
+  "source_url": "https://globalvoices.org/2021/05/25/a-new-covid-19-wave-overwhelms-pandemic-conscious-taiwan/",
+  "title": "A new COVID-19 wave overwhelms pandemic-conscious Taiwan",
+  "published_at": "2021-05-25T14:54:33Z",
+  "modified_at": "2021-05-28T16:50:31Z",
+  "api_author_id": 2744,
+  "api_content_sha256": "5af19ea4dc85f66a4cbd6a6f3f2b333215706747b918771fa44c28272b30cd2e",
+  "api_response_sha256": "209d251d160f97b2292e453023b10abcb0e3517753e5fed0c99aea9917505d95",
+  "api_retrieved_at": "2026-11-16T22:20:35.207607+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 48,
+      "count": 960,
+      "name": "Taiwan (ROC)",
+      "slug": "taiwan-roc",
+      "parent": 16
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-737000-b00001",
+      "text": "Taiwan, one of the countries least affected by the COVID-19 pandemic, has been facing a surge of cases since May 11, with 3,161 positive cases reported this month, according to Taiwan’s Center for Disease Control (CDC). Before May, Taiwan had recorded less than 1,200 total COVID-19 cases since the start of the pandemic.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 321,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/COVID-19_pandemic",
+        "https://nidss.cdc.gov.tw/nndss/disease?id=19CoV"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00002",
+      "text": "On May 16, Taiwan’s health minister Chen Shih-chung issued a level 3 soft lockdown alert, with restrictions such as mandatory mask-wearing in all public spaces and a 10-people limit to outdoor gatherings.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 323,
+      "body_end": 527,
+      "source_links": [
+        "https://focustaiwan.tw/politics/202105210017"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00003",
+      "text": "The greater Taipei city area was the most affected by the new wave. With the restrictions, its wealthiest areas have become empty in the past few days.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 529,
+      "body_end": 680,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00004",
+      "text": "The Taiwanese CDC has identified two major infection clusters — one linked to China Airlines’ flights and another to a “sexy tea shop,” entertainment venues where men, usually older, are served intimately by young female waitresses.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 682,
+      "body_end": 914,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00005",
+      "text": "Critics blamed the relaxation of quarantine rules for unvaccinated China Airlines’ staff in mid-April for that cluster. By May 11, 13 China Airlines pilots had tested positive for COVID-19, and there have been 30 domestic cases linked to the hotel where airline staff was being quarantined.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 916,
+      "body_end": 1206,
+      "source_links": [
+        "https://focustaiwan.tw/society/202104150013",
+        "https://www.thenewslens.com/article/150820"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00006",
+      "text": "A former chair of the local chapter of Lions Club International developed COVID-like symptoms and tested positive on May 11. Contact tracing showed that he had visited a sexy tea shop in Taipei's Wanhua area between May 4 and May 10.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1208,
+      "body_end": 1441,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00007",
+      "text": "There are more than 100 sexy tea shops in Wanhua district and the sector employs thousands of people. By May 20, 299 COVID-19 positive cases had been linked to the Wanhua district, which means the infection chain could be far more extensive.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1443,
+      "body_end": 1684,
+      "source_links": [
+        "https://city.gvm.com.tw/article/79608",
+        "https://www.storm.mg/article/3694781"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00008",
+      "text": "Loopholes in the pandemic control system",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1686,
+      "body_end": 1726,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00009",
+      "text": "The investigative news outlet The Reporter identified three loopholes in Taiwan’s pandemic control measures, namely its lack of capacity in contact tracing, lack of PCR testing, and shortage of medical workers.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1728,
+      "body_end": 1938,
+      "source_links": [
+        "https://www.twreporter.org/a/covid-19-community-spread-landslide-effect"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00010",
+      "text": "Huang Shier-Chieg, the head of Taipei's Health Department, told The Reporter that the city's contact-tracing team consists of fewer than 10 people. Given the scale of the current outbreak, they only had the capacity to contact confirmed cases, but not their contacts. The contact tracing team was unable to follow up with the confirmed cases to ensure they had self-isolated, according to The Reporter.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1940,
+      "body_end": 2342,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00011",
+      "text": "At present, Taiwan's PCR testing capacity is below 16,000 per day. The current testing system does not prioritize direct contacts of positive cases, The Reporter reports.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2344,
+      "body_end": 2514,
+      "source_links": [
+        "https://www.twreporter.org/a/covid-19-community-spread-landslide-effect"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00012",
+      "text": "The situation has overwhelmed Taiwan's healthcare system, with a number of staff members of a dozen hospitals across Taiwan testing positive. Some of them took care of infected patients at the beginning of the outbreak, before they were aware of the scale of the epidemic.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2516,
+      "body_end": 2788,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00013",
+      "text": "Although the Taiwanese government has swiftly set up new testing stations, these stations are short of health workers as well as medical supplies, such as cotton swabs. A lack of laboratory staff means PCR testing 24 hours a day is also unfeasible.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2790,
+      "body_end": 3038,
+      "source_links": [
+        "https://udn.com/news/story/122173/5479222?fbclid=IwAR2VSR3nGyv-dLPklKp7b_2K4Ipvydsin4-GpJjAdrDUri_Mgr7cSNgUzkY"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00014",
+      "text": "As cases surge, the healthcare system needs more workers to help on the frontlines, and Taipei city has started to recruit retired medical professionals.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3040,
+      "body_end": 3193,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00015",
+      "text": "The outbreak exposed how Taiwan has struggled to recruit hospital staff since before the pandemic. The Medical Alliance for Labour Justice and Patient Safety has been raising the alarm on the issue since 2012. The group claims that medical staff are underpaid and are subject to long working hours.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3195,
+      "body_end": 3493,
+      "source_links": [
+        "https://globalvoices.org/2012/08/28/taiwan-national-health-insurance-system-in-crisis/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-737000-b00016",
+      "text": "Last year, Taiwan Radical Nurses’ Union urged the government to improve working conditions in the sector but said authorities did not lay out any proactive measures. Liang Xiu-mei, the founder of the Nurses’ Union, told The Reporter that medical workers are under a lot of pressure with the current outbreak, as hospitals do not have enough resources to establish a triage system for PCR swab collection.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3495,
+      "body_end": 3899,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "96a53446aff8f00bd17e02e81206aa0b09e270d7cd799d49d1a5b76025e1d34c",
+  "word_count": 630,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 3899,
+  "retrieved_at": "2026-11-16T22:30:36.285382+00:00",
+  "raw_html_sha256": "fa72a13f759c2269e3971d42ecd2296b842241b84ff22612e6b1a4a1be478547",
+  "resolved_source_url": "https://globalvoices.org/2021/05/25/a-new-covid-19-wave-overwhelms-pandemic-conscious-taiwan/",
+  "canonical_url": "https://globalvoices.org/2021/05/25/a-new-covid-19-wave-overwhelms-pandemic-conscious-taiwan/",
+  "source_bytes": 184366,
+  "authors": [
+    {
+      "name": "Global Voices East Asia",
+      "url": "https://globalvoices.org/author/eastasia/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 737000,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "fa72a13f759c2269e3971d42ecd2296b842241b84ff22612e6b1a4a1be478547",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-13d92a0ca3abf7a6b72a",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-05",
+    "eligible_month_documents": 87,
+    "selected_month_documents": 73,
+    "inclusion_probability": 0.8390804597701149,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Global Voices East Asia",
+  "body_start": 459,
+  "body_end": 4358,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "5b2f1ee1b5d2927ff826e2ad07f4f7b164ed40fce98c6c5d23c6a6d69265c5e4",
+  "text_path": "articles/gv-737000.txt",
+  "metadata_path": "metadata/gv-737000.json",
+  "attribution": "This story by Global Voices East Asia originally appeared on Global Voices. https://globalvoices.org/2021/05/25/a-new-covid-19-wave-overwhelms-pandemic-conscious-taiwan/",
+  "content_sha256": "80240b7e9845d5848884663010048d41757077c49fe7af73a3c26da9b1741747",
+  "source_sha256": "fa72a13f759c2269e3971d42ecd2296b842241b84ff22612e6b1a4a1be478547",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

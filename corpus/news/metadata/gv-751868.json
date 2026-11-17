@@ -1,0 +1,657 @@
+{
+  "id": "gv-751868",
+  "publisher_id": 751868,
+  "source_id": "globalvoices:751868",
+  "source_url": "https://globalvoices.org/2021/12/06/undertones-a-deep-dive-into-indian-hyper-nationalism/",
+  "title": "Undertones: A deep-dive into Indian hyper-nationalism",
+  "published_at": "2021-12-06T21:27:53Z",
+  "modified_at": "2025-01-15T18:54:08Z",
+  "api_author_id": 2945,
+  "api_content_sha256": "a889b3f4cc5d35f29387beab7aba86686387f9bd19c5b20d00eda2f130610752",
+  "api_response_sha256": "23436aa1fa433e408d5199ff0c9b2c6a1aa87ee7b8d8d3a2bcdb8b32f913a715",
+  "api_retrieved_at": "2026-11-16T22:20:39.683023+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1355,
+      "count": 5871,
+      "name": "Ethnicity &amp; Race",
+      "slug": "ethnicity-race",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 32,
+      "count": 3843,
+      "name": "India",
+      "slug": "india",
+      "parent": 31
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 275,
+      "count": 4753,
+      "name": "Religion",
+      "slug": "religion",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-751868-b00001",
+      "text": "Subscribe to Undertones",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 23,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/subscribe?u=9307106bf78cc186e924ad999&id=5633e3eb9a"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00002",
+      "text": "What do India’s Farmers’ Protests and the Kashmir conflict have in common?",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 25,
+      "body_end": 99,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00003",
+      "text": "A government-led crackdown against all forms of dissent using rhetoric, force, and legal means.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 101,
+      "body_end": 196,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00004",
+      "text": "Simply put, India's government dubs all critics “enemies of India.”",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 198,
+      "body_end": 265,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tblpu6F4JAZLfnPso/viw3CiH2p8vBTShbw/reciCXV48lTTC8LIr"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00005",
+      "text": "Narendra Modi's government attacks journalists who report on violence against religious minorities, regular citizens who post memes making fun of the prime minister, and Kashmiris protesting Indian rule. Although the controversial farm laws were recently repealed, narratives about farmers being influenced or manipulated by separatist groups continue to proliferate.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 267,
+      "body_end": 634,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00006",
+      "text": "Mainstream media, including nominally neutral media outlets, inject hyper-nationalist narratives into their reporting.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 636,
+      "body_end": 754,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00007",
+      "text": "WHY CARE?",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 756,
+      "body_end": 765,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00008",
+      "text": "The right-wing BJP government pushes the narrative that individuals or groups that criticize the government are a threat to the unity and sovereignty of India. Meanwhile, mainstream media channels, which are heavily controlled and influenced by the government, share pro-government propaganda and biased arguments rather than neutral and critical reportage on important issues like the Kashmir conflict, anti-minority violence, or the farmers’ protests.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 767,
+      "body_end": 1220,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00009",
+      "text": "India’s hyper-nationalist narratives entered the mainstream in 2014, when Narendra Modi, leader of the right-wing Bharatiya Janata Party (BJP), became prime minister. In the six years since Modi came to power the crackdown on freedom of expression and dissent intensified.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1222,
+      "body_end": 1494,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00010",
+      "text": "Any critique of the government, the armed forces, or the Hindu religion and its socio-political project, known as Hindutva, is labeled “sedition,” and is treated as treason for attacking the sovereignty of India. The government charges sedition through the Unlawful Activities Prevention Act (UAPA), an archaic anti-terror law adopted in 1967.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1496,
+      "body_end": 1839,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00011",
+      "text": "Narratives of hyper-nationalism",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1841,
+      "body_end": 1872,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00012",
+      "text": "“Dissent against the government is always politically motivated”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 1874,
+      "body_end": 1938,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=796b935353&e=d31049f977"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00013",
+      "text": "The BJP party and related media figures claim that protests and dissent against government policies are manipulated by the opposition and funded by foreign entities seeking to divide the country.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 1940,
+      "body_end": 2135,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=274fc5d796&e=d31049f977",
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=e7a763c148&e=d31049f977"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00014",
+      "text": "After the farm laws were repealed on November 19, a tweet by Advaita Kala, a right-wing author and screenwriter, began trending. Kala and others on the right claim that Modi repealed the farm laws primarily to avoid fueling a separatist movement instigated by the farmers’ actions. Proof for these assertions is yet to be given.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2137,
+      "body_end": 2465,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=7f7d81ba84&e=d31049f977"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00015",
+      "text": "For over a year, farmers in India protested a set of laws passed by the Indian parliament in September 2020. The farmers claimed the laws would effectively hand the agriculture market to big corporations and deprive them of the minimum guaranteed prices traditionally offered by the government.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2467,
+      "body_end": 2761,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00016",
+      "text": "Underlying Kala’s tweet is a narrative implying that the farmers’ protests did not have a valid cause and that the agitation was a political ploy to create a separatist movement. Khalistan refers to a movement in favor of a separate Sikh nation that largely died out following intense repression in the 1980s.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2763,
+      "body_end": 3072,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00017",
+      "text": "Commenters below this tweet criticize Modi for “bowing down” to the farmers, who are also labeled as terrorists and miscreants.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3074,
+      "body_end": 3201,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00018",
+      "text": "“Enemies of Hindutva are enemies of India”",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3203,
+      "body_end": 3245,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=362749e627&e=d31049f977"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00019",
+      "text": "Into the overarching belief that critics of the government are enemies of India, the BJP-led government also weaves the “Hindutva” narrative.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3247,
+      "body_end": 3388,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00020",
+      "text": "Hindutva refers to the belief that India is inherently a Hindu nation. For India’s current leadership, people who defend secular constitutional laws and human rights are betraying not only the Hindu nation, but India as well. India and Hindutva, for the Modi administration, are one and the same.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3390,
+      "body_end": 3686,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00021",
+      "text": "This discourse is bolstered by sub-narratives and policies aiming to eliminate Muslims and undermine other minorities. Critics and journalists may also sometimes be charged under the Unlawful Activities Prevention Act (UAPA) if they report on perspectives that clash with those of the government.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3688,
+      "body_end": 3984,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=f34aa6742f&e=d31049f977"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00022",
+      "text": "In early November, local police in the state of Tripura filed a case against 102 Twitter accounts under the UAPA for spreading false information about a recent outbreak of anti-Muslim violence in the region.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3986,
+      "body_end": 4193,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00023",
+      "text": "In its reporting on the case, Asian News International (ANI), a large Indian news agency, gave precedence to the police’s statement, tacitly reaffirming the narrative that anyone who shed light on Islamophobic attacks opposes Hindu majority rule. Such actions, according to this narrative, is essentially seditious, or “anti-national.”",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4195,
+      "body_end": 4530,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwmqbf97R6ua8Nrv/recIOPkrz5XoatPwF",
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=73d80989d6&e=d31049f977"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00024",
+      "text": "“Indian Armed Forces in Kashmir only target and kill militants”",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4532,
+      "body_end": 4595,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=190a67d51a&e=d31049f977"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00025",
+      "text": "In August 2019, the BJP stripped Kashmir of its rights to statehood, which were granted at the time of India’s independence. The Indian military has since employed heavy-handed crackdowns and frequent communication shutdowns to repress any form of dissent. Today, some regions in Kashmir have no access to the internet.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4597,
+      "body_end": 4916,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00026",
+      "text": "Mainstream media, the BJP-led government, and the Armed Forces justify human rights violations in Kashmir by citing national security.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4918,
+      "body_end": 5052,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00027",
+      "text": "Human rights violations have been widespread in Kashmir for decades, orchestrated by the Indian Armed Forces in the name of rooting out terrorism. The people of Kashmir, which has been part of India since the 1947 Partition, have long demanded the exercise of their right to self-determination through a UN-monitored plebiscite, to no avail.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5054,
+      "body_end": 5395,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00028",
+      "text": "The decades-long vilification of Kashmiris in Indian media has been strikingly effective. Many people in India — even those who defend human rights in other spheres — do not empathize with Kashmiris’ desire for political autonomy. As a result, criticism of the army’s operations in Kashmir is often perceived as an offense against India.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5397,
+      "body_end": 5734,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00029",
+      "text": "Not only pro-government media spread this narrative. For example, New Delhi TV, a left-leaning media channel trusted by many Indians for its unbiased and critical reporting, uses the word “terrorists” to describe three Kashmiri men who were recently killed by the police.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5736,
+      "body_end": 6007,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=8f7ed9228d&e=d31049f977"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00030",
+      "text": "The term “terrorist” was taken from the statement given by the police — eyewitness accounts of the incident described them as civilians. The views of Kashmiris are absent in the media.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6009,
+      "body_end": 6193,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00031",
+      "text": "Does critical media exist in India?",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 6195,
+      "body_end": 6230,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00032",
+      "text": "Critical, independent media do exist in India, but they are facing political pressure and growing threats. Historically more neutral media outlets are inching towards an editorial line that favors the government. Most media in India are still funded by advertising, and they rely heavily on government advertising. The constant quest for larger audiences incentivizes them to present sensationalist news, against a backdrop of weak monitoring of misinformation.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 6232,
+      "body_end": 6693,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00033",
+      "text": "Some media still share other points of view. For example, the satirical page The Deshbhakt, The Wire India and NewsClick deconstruct narratives surrounding the Farmers’ Protests.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 6695,
+      "body_end": 6873,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tblBZzkggH1fk9ZPh/viwAshFHxeDsoPUJz/recV8OqD1Dwi3KSFv",
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=1398dd86cf&e=d31049f977",
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=f49f164d4c&e=d31049f977"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00034",
+      "text": "DISCOVER MORE RELATED NARRATIVES",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 6875,
+      "body_end": 6907,
+      "source_links": [],
+      "source_kind": "h5",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00035",
+      "text": "“Hindus are under threat”",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 6909,
+      "body_end": 6934,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=095c2b9ea2&e=d31049f977"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00036",
+      "text": "“Communal violence in India is an idea fabricated by people with vested interests”",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 6936,
+      "body_end": 7018,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=385ac06653&e=d31049f977"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00037",
+      "text": "“The BJP is the savior of India”",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 7020,
+      "body_end": 7052,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=c9a04d8e31&e=d31049f977"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00038",
+      "text": "View our entire India dataset",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 7054,
+      "body_end": 7083,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/track/click?u=9307106bf78cc186e924ad999&id=d05d8fddeb&e=d31049f977"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751868-b00039",
+      "text": "Undertones is the Civic Media Observatory's newsletter, created collaboratively by the Observatory's researchers, coordinating editors, and project writer. Find out more about our mission, methodology, and publicly available data.",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 7085,
+      "body_end": 7315,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwLnH3yUdhQO99XI",
+        "https://globalvoices.org/special/observatory/",
+        "https://globalvoices.org/wp-content/uploads/2021/02/Media-Observatory-Concept_2021.pdf"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "8b811197a368b674295c32b06815d36ee731eedeabfabc19b2a1e26f6b322bbe",
+  "word_count": 1094,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7315,
+  "retrieved_at": "2026-11-16T22:32:51.189784+00:00",
+  "raw_html_sha256": "afd1118b62ca4fa69b4f9307742d0c2c16daae21ff6a6fb1a5b9e78787de69fd",
+  "resolved_source_url": "https://globalvoices.org/2021/12/06/undertones-a-deep-dive-into-indian-hyper-nationalism/",
+  "canonical_url": "https://globalvoices.org/2021/12/06/undertones-a-deep-dive-into-indian-hyper-nationalism/",
+  "source_bytes": 196516,
+  "authors": [
+    {
+      "name": "Civic Media Observatory",
+      "url": "https://globalvoices.org/author/civic-media-observatory/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 751868,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "afd1118b62ca4fa69b4f9307742d0c2c16daae21ff6a6fb1a5b9e78787de69fd",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-6b728db5bca87c29de3b",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-12",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Civic Media Observatory",
+  "body_start": 452,
+  "body_end": 7767,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "3498b5d50da47371e481b322794ad32bab0f60b196815f97ab0d3fd6575f40aa",
+  "text_path": "articles/gv-751868.txt",
+  "metadata_path": "metadata/gv-751868.json",
+  "attribution": "This story by Civic Media Observatory originally appeared on Global Voices. https://globalvoices.org/2021/12/06/undertones-a-deep-dive-into-indian-hyper-nationalism/",
+  "content_sha256": "4185ba972ad30a035b69b0a1391342c2f6252093a76d92178aebd0341fdbfa33",
+  "source_sha256": "afd1118b62ca4fa69b4f9307742d0c2c16daae21ff6a6fb1a5b9e78787de69fd",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

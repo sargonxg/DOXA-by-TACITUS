@@ -1,0 +1,409 @@
+{
+  "id": "gv-784736",
+  "publisher_id": 784736,
+  "source_id": "globalvoices:784736",
+  "source_url": "https://globalvoices.org/2023/04/05/why-do-western-governments-delegate-border-control-to-ai-more-and-more-an-interview-with-petra-molnar/",
+  "title": "Why do Western governments delegate border control to AI more and more? An interview with Petra Molnar",
+  "published_at": "2023-04-05T10:22:30Z",
+  "modified_at": "2023-04-05T10:26:20Z",
+  "api_author_id": 1749,
+  "api_content_sha256": "cc77ee9ec3942374a50fe4aa4bf6740db1f8a15d64fad0bf026a826ae32a5d83",
+  "api_response_sha256": "37f858f8343f92253c0cb88dec3bf6375b5156b74efd2c0906f9aa9126732aff",
+  "api_retrieved_at": "2026-11-16T22:20:51.447400+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1355,
+      "count": 5871,
+      "name": "Ethnicity &amp; Race",
+      "slug": "ethnicity-race",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 1358,
+      "count": 4577,
+      "name": "Migration &amp; Immigration",
+      "slug": "migration-immigration",
+      "parent": 238
+    },
+    {
+      "id": 273,
+      "count": 1466,
+      "name": "Refugees",
+      "slug": "refugees",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-784736-b00001",
+      "text": "Activists estimate that in 2022, 30 million people were on the move as refugees, many of whom attempted to seek protection in the US and the European Union. But what they often experience when entering Western countries is not protection, but rather a dehumanizing process of categorization that relies heavily on AI and unchecked technology.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 342,
+      "source_links": [
+        "https://www.concern.net/news/largest-refugee-crises"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-784736-b00002",
+      "text": "Global Voices conducted an email interview with Petra Molnar, a lawyer and anthropologist specializing in technology, migration, and human rights. Molnar is the co-creator of the Migration and Technology Monitor, a collective of civil society, journalists, academics, and filmmakers interrogating technological experiments on people crossing borders. She is also the Associate Director of the Refugee Law Lab at York University and a Fellow at the Berkman Klein Centre for Critical Internet at Harvard University. She is currently writing her first book, “Artificial Borders” (The New Press, 2024).",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 344,
+      "body_end": 942,
+      "source_links": [
+        "https://cyber.harvard.edu/story/2022-08/berkman-klein-center-announces-incoming-2022-2023-fellows",
+        "https://petramolnar.com/",
+        "https://refugeelab.ca/",
+        "https://www.migrationtechmonitor.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-784736-b00003",
+      "text": "Filip Noubel (FN): Your research shows that refugee and detention camps — often spaces of lawlessness — serve to test new technologies. Could you give some examples?",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 944,
+      "body_end": 1109,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-784736-b00004",
+      "text": "> Petra Molnar (PM) Borders and spaces of humanitarian emergency like refugee camps are increasingly testing out new technologies for migration control. Since 2018, I have been spending time with people who are at the sharpest edges of technological innovation. From the Arizona desert at the US/Mexico border to the Kenya-Somalia border, to various refugee camps in the EU, we have seen first-hand the impacts of border surveillance and automation on people’s lives.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1111,
+      "body_end": 1578,
+      "source_links": [
+        "https://www.euractiv.com/authors/petra-molnar/",
+        "https://www.theborderchronicle.com/p/robo-dogs-and-refugees-the-future?utm_source=url"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00005",
+      "text": "> Before you even cross a border, you may be subject to predictive analytics used in humanitarian settings or biometric data collection. At the border, you can see drone surveillance, sound-cannons, and thermal cameras. If you are in a European refugee camp, you will interact with algorithmic motion detection software. You may be subject to projects like voice printing technologies and the scraping of your social media records. Borders themselves are also changing, as surveillance is expanding our understanding of the European border beyond its physical limits, creating a surveillance dragnet as far as north and Sub-Saharan Africa and the Middle East.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1580,
+      "body_end": 2239,
+      "source_links": [
+        "https://privacyinternational.org/video/4886/eu-sahel-and-externalisation-surveillance",
+        "https://www.aljazeera.com/news/2021/12/24/greece-pilots-high-tech-surveillance-system-in-refugee-camps",
+        "https://www.codastory.com/authoritarian-tech/sound-cannons-greece/",
+        "https://www.gizmodo.com.au/2017/03/experts-worry-as-germany-tests-voice-recognition-software-to-screen-refugees/",
+        "https://www.reuters.com/article/jordan-refugees-blockchain/feature-in-jordan-refugees-scan-irises-to-collect-aid-but-is-it-ethical-idUKL8N32R6GF"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00006",
+      "text": "> These experimental and high-risk technologies occur in an environment where technological solutions are presented as a viable solution to complex social issues, creating the perfect ecosystem for a lucrative ecosystem giving rise to a multi-billion euro border industrial complex.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2241,
+      "body_end": 2523,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00007",
+      "text": "> In my fieldwork, I notice that people share feelings of being constantly surveilled, or being reduced to data points and fingerprints. Many point out how strange it seems that vast amounts of money are being poured into high-risk technologies while they cannot get access to a lawyer or have psychosocial support. There is also a central misapprehension at the centre of many border tech projects – that somehow more technology will stop people from coming. But that is not the case, in fact people will be forced to take more dangerous routes, leading to even more loss of life at the world’s borders.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2525,
+      "body_end": 3129,
+      "source_links": [
+        "https://edri.org/wp-content/uploads/2020/11/Technological-Testing-Grounds.pdf",
+        "https://thehill.com/opinion/immigration/429454-democrats-smart-border-technology-is-not-a-humane-alternative-to-trumps/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00008",
+      "text": "FN: Innovation is often presented as a positive term, yet certain tech companies are involved in testing new technologies on refugees. Why do certain governments allow this?",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3131,
+      "body_end": 3304,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-784736-b00009",
+      "text": "> PM: The creation of legal black holes in migration management technologies is deliberate to allow for the creation of opaque zones of technological experimentation that would not be allowed to occur in other spaces. Why does the private sector get to determine what we innovate on and why, in often problematic public-private partnerships which states are increasingly keen to make in today’s global AI arms race? Private companies like Palantir Technologies, Airbus, Thalys, and others that have links to a host of human rights abuses have now become the preferred vendor for various governments and are even working with international organizations like the World Food Program.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3306,
+      "body_end": 3987,
+      "source_links": [
+        "https://www.thenewhumanitarian.org/news/2019/02/05/un-palantir-deal-data-mining-protection-concerns-wfp"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00010",
+      "text": "FN: Documenting violation is in itself a huge challenge. Can you explain why?",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3989,
+      "body_end": 4066,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-784736-b00011",
+      "text": "> PM: Trying to document these systems of technological oppression is itself a risky business – one fraught with trying to unravel opaque decisions, secretive private sector players, and witnessing horrific conditions on the frontiers challenging our common humanity. It’s also about asking broader questions. Are human rights framings enough or do they also silence the systemic and collective nature of these harms? And are we doing enough to create space for abolitionist conversations when it comes to technology at the border?",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4068,
+      "body_end": 4599,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00012",
+      "text": "> In order to tell this global story of power, violence, innovation, and contestation, I rely on the sometimes-uneasy mix between law and anthropology. It’s a slow and trauma-informed ethnographic methodology, one which requires years of being present to begin unravelling the strands of power and privilege, story and memory that makes up the spaces where people’s lives unfold.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4601,
+      "body_end": 4980,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00013",
+      "text": "> Technology replicates power structures in society. Unfortunately, the viewpoints of those most affected are routinely excluded from the discussion. We also need to recognize that the use of technology is never neutral. It is a political exercise which highlights how the allure of quick fixes and the hubris of innovation does not address the systemic and historical reasons why people are marginalized and why they are forced to migrate in the first place.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4982,
+      "body_end": 5441,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00014",
+      "text": "FN: How can we push back?",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5443,
+      "body_end": 5468,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-784736-b00015",
+      "text": "> PM: At the Refugee Law Lab, we are trying to both shine a light on the human rights abuses in the use of technology at the border, as well as to look at technical solutions to these complex problems.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5470,
+      "body_end": 5671,
+      "source_links": [
+        "https://refugeelab.ca/",
+        "https://rllp.ca/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00016",
+      "text": "> One of the main issues is that little to no regulation exists to govern the development of high-risk border tech. When things go wrong with these high risk experiments, where does responsibility and liability lie – with the designer of the technology, its coder, the immigration officer, or the algorithm itself? Should algorithms have legal personality in a court of law, not unlike a corporation? It is paramount that we begin to answer these questions, since much of the decision-making related to immigration and refugee decisions already sits at an uncomfortable legal nexus: the impact on the rights of individuals is significant and life-changing, even where procedural safeguards are weak.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5673,
+      "body_end": 6372,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00017",
+      "text": "> The EU’s proposed AI Act is a promising step as it will be the first regional attempt in the world to regulate AI. However currently the act does not go far enough to adequately protect people-on-the-move. A moratorium or a ban on high-risk border technologies, like robo-dogs, AI lie detectors, and predictive analytics used for border interdictions is a necessary step in the global conversation. Academia also plays an important role in legitimizing high risk experimental technologies. We also need more transparency and accountability around border tech experiments, and people with lived experiences of migration must be foregrounded in any discussions.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6374,
+      "body_end": 7035,
+      "source_links": [
+        "https://edri.org/our-work/civil-society-calls-for-the-eu-ai-act-to-better-protect-people-on-the-move/",
+        "https://news.trust.org/item/20220518062025-xfh8g/",
+        "https://www.migrationtechmonitor.com/fellowship",
+        "https://www.theborderchronicle.com/p/robo-dogs-and-refugees-the-future?utm_source=url"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00018",
+      "text": "> Because in the end, it is not really about technology. What we are talking about is power – and the power differentials between actors like states and the private sector who decide on experimental projects, and the communities who become the testing grounds in this high-risk laboratory. For example, whose priorities really matter when we choose to create violent sound cannons or AI-powered lie detectors at the border instead of using AI to identify racist border guards?",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 7037,
+      "body_end": 7513,
+      "source_links": [
+        "https://edri.org/wp-content/uploads/2020/11/Technological-Testing-Grounds.pdf",
+        "https://theintercept.com/2019/07/26/europe-border-control-ai-lie-detector/",
+        "https://www.codastory.com/authoritarian-tech/sound-cannons-greece/",
+        "https://www.elgaronline.com/view/journals/cilj/8-2/cilj.2019.02.07.xml"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-784736-b00019",
+      "text": "Here is a video of the panel organized by Disruption Network Lab, where Molnar develops her views on the issue of technology and refugee rights:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 7515,
+      "body_end": 7659,
+      "source_links": [
+        "https://www.disruptionlab.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "45879afbc6b6bf26909d3464b643d853d333eff2a5ad3e5093e46f7d39f99c5b",
+  "word_count": 1212,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 7659,
+  "retrieved_at": "2026-11-16T22:38:44.260435+00:00",
+  "raw_html_sha256": "af393525f699f23034644388eddba5f4df40eab8d798f3e016cdde51bb5d46ad",
+  "resolved_source_url": "https://globalvoices.org/2023/04/05/why-do-western-governments-delegate-border-control-to-ai-more-and-more-an-interview-with-petra-molnar/",
+  "canonical_url": "https://globalvoices.org/2023/04/05/why-do-western-governments-delegate-border-control-to-ai-more-and-more-an-interview-with-petra-molnar/",
+  "source_bytes": 197062,
+  "authors": [
+    {
+      "name": "Filip Noubel",
+      "url": "https://globalvoices.org/author/filip-noubel/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 784736,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "af393525f699f23034644388eddba5f4df40eab8d798f3e016cdde51bb5d46ad",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-da5890091a12c363cd72",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-04",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Filip Noubel",
+  "body_start": 539,
+  "body_end": 8198,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "ab4d82573df12b637fbc1040c702860eecd8c129729861a6c765f22d187644c1",
+  "text_path": "articles/gv-784736.txt",
+  "metadata_path": "metadata/gv-784736.json",
+  "attribution": "This story by Filip Noubel originally appeared on Global Voices. https://globalvoices.org/2023/04/05/why-do-western-governments-delegate-border-control-to-ai-more-and-more-an-interview-with-petra-molnar/",
+  "content_sha256": "0087585f7bb18628ef86e82eeb5f780e1a3e18717210bcd8284ec0313118bacc",
+  "source_sha256": "af393525f699f23034644388eddba5f4df40eab8d798f3e016cdde51bb5d46ad",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

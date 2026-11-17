@@ -1,0 +1,350 @@
+{
+  "id": "gv-833130",
+  "publisher_id": 833130,
+  "source_id": "globalvoices:833130",
+  "source_url": "https://globalvoices.org/2025/04/28/a-journalist-club-survey-finds-press-freedom-in-hong-kong-has-plunged-further/",
+  "title": "A journalist club survey finds press freedom in Hong Kong has plunged further",
+  "published_at": "2025-04-28T09:00:57Z",
+  "modified_at": "2025-04-25T09:47:48Z",
+  "api_author_id": 1814,
+  "api_content_sha256": "b0994cacc49f9c795124fe2eb8912d7a5aed92904092d17456431537d3482eb6",
+  "api_response_sha256": "5f981a4a9b465f43479e5a626f6c7abc014c277ecbe5f471698965f7f51a87c2",
+  "api_retrieved_at": "2026-11-16T22:21:10.782161+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 49,
+      "count": 1566,
+      "name": "Hong Kong (China)",
+      "slug": "hong-kong-china",
+      "parent": 16
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-833130-b00001",
+      "text": "This report was written by Tom Grundy and published in Hong Kong Free Press on April 24, 2025. The following edited version is published as part of a content partnership agreement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 180,
+      "source_links": [
+        "https://hongkongfp.com/2025/04/24/hong-kong-press-club-survey-finds-65-of-members-say-they-self-censor-33-considering-leaving-city-over-press-freedom/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00002",
+      "text": "A survey conducted by the Hong Kong Foreign Correspondents Club (FCC) has found that the majority of its members said their working environment had changed for the worse over the past two years.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 182,
+      "body_end": 376,
+      "source_links": [
+        "https://www.fcchk.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00003",
+      "text": "Sixty-nine members took part in the FCC’s biannual Press Freedom Survey between December 2024 and February 2025. It was the first FCC poll since Hong Kong enacted Article 23, the city’s homegrown national security law, in March 2024.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 378,
+      "body_end": 611,
+      "source_links": [
+        "https://advox.globalvoices.org/2024/03/20/hong-kong-passes-controversial-new-security-law-broadly-defining-treason-and-insurrection/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00004",
+      "text": "According to the latest poll, around 62 percent of respondents said the professional environment had worsened since the last poll in 2023, whilst over 30 percent said they were considering leaving because of press freedom concerns. Nearly 6 percent of respondents said they already had plans to leave the city.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 613,
+      "body_end": 923,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00005",
+      "text": "FCC President Lee Williamson told the club’s Correspondent magazine:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 925,
+      "body_end": 993,
+      "source_links": [
+        "https://issuu.com/fcchk/docs/the_correspondent_april_2025"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00006",
+      "text": "> This survey reflects what we see on the ground every day. It appears that sources are less willing to be quoted, some journalists continue to practice self-censorship, and many newsrooms are downsizing their Hong Kong operations… Hong Kong does not enjoy the freedoms of the press that it once did… but that doesn’t mean we should stop our advocacy work.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 995,
+      "body_end": 1351,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833130-b00007",
+      "text": "He added that the rule of law and press freedom had long been key drivers of Hong Kong’s prosperity.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1353,
+      "body_end": 1453,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00008",
+      "text": "Of those surveyed, 64 percent said sources were less willing to be quoted or discuss sensitive topics, whilst 65 percent said they had self-censored in the last 18 months. Meanwhile, 18 percent said they had self-censored “considerably.”",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1455,
+      "body_end": 1692,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00009",
+      "text": "More than half — 52 percent — said they were “slightly concerned” about the possibility of arrest or prosecution over their reporting, opinion articles or work they had edited.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1694,
+      "body_end": 1870,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00010",
+      "text": "Newsrooms also appear to be downsizing, with 36.23 percent of respondents saying that their organisation has seen staffing reduced over the past 18 months. “Corporate cost-cutting” was the reason cited by 57.14 percent of respondents, whilst 7.14 percent cited changes in the political and legal environment.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1872,
+      "body_end": 2180,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00011",
+      "text": "In a statement on April 22, the club said,",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2182,
+      "body_end": 2224,
+      "source_links": [
+        "https://www.fcchk.org/fcc-statement-on-results-of-fccs-press-freedom-survey-2025/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00012",
+      "text": "> The FCC supports journalists’ fundamental right to conduct their work freely and without fear of intimidation or harassment.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2226,
+      "body_end": 2352,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833130-b00013",
+      "text": "In contrast, nearly 70 percent of FCC members surveyed in 2023 said they had self-censored in their own writing, while an overwhelming 83 percent said they believed the working environment for journalists in the city had “changed for the worse.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2354,
+      "body_end": 2599,
+      "source_links": [
+        "https://hongkongfp.com/2023/07/06/almost-70-of-journalists-have-self-censored-83-say-conditions-have-worsened-hong-kong-press-club-survey/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00014",
+      "text": "Press freedom concerns",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2601,
+      "body_end": 2623,
+      "source_links": [],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00015",
+      "text": "Hong Kong has plummeted in international press freedom indices since the onset of the security law. Watchdogs cite the arrests of journalists, raids on newsrooms and the closure of around 10 media outlets including Apple Daily, Stand News and Citizen News. Over 1,000 journalists have lost their jobs, whilst many have emigrated. Meanwhile, the city’s government-funded broadcaster RTHK has adopted new editorial guidelines, purged its archives and axed news and satirical shows.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2625,
+      "body_end": 3104,
+      "source_links": [
+        "https://hongkongfp.com/2020/06/21/curtain-falls-on-hong-kongs-oldest-satirical-tv-show/",
+        "https://hongkongfp.com/2021/05/03/hong-kong-broadcaster-rthk-to-delete-shows-over-a-year-old-from-internet-as-viewers-scramble-to-save-backups/",
+        "https://hongkongfp.com/2021/06/24/in-pictures-thank-you-hongkongers-apple-dailys-printing-presses-come-to-a-halt-after-26-years/",
+        "https://hongkongfp.com/2021/07/05/the-pulse-with-steve-vines-is-latest-news-show-to-be-axed-by-public-broadcaster-rthk/",
+        "https://hongkongfp.com/2021/09/29/in-full-new-guidelines-say-rthk-must-uphold-constitution-warns-staff-against-contact-with-foreign-govts/",
+        "https://hongkongfp.com/2022/01/02/breaking-independent-hong-kong-news-outlet-citizen-news-to-shut-down-on-tue-days-after-stand-news-raid/",
+        "https://hongkongfp.com/2022/02/13/where-can-i-go-hong-kong-journalism-students-face-a-difficult-choice-amid-crackdown/",
+        "https://hongkongfp.com/2023/04/12/poll-finds-over-80-of-hong-kong-journalists-who-emigrated-do-not-regret-leaving-the-city/",
+        "https://hongkongfp.com/2023/05/03/explainer-the-decline-of-hong-kongs-press-freedom-under-the-national-security-law/",
+        "https://hongkongfp.com/2024/05/03/just-in-hong-kong-ranks-low-on-global-press-freedom-index-as-watchdog-cites-unprecedented-setbacks/",
+        "https://hongkongfp.com/hong-kong-national-security-law/",
+        "https://hongkongfp.com/hong-kongs-stand-news-trial/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833130-b00016",
+      "text": "In 2022, Chief Executive John Lee said press freedom was “in the pocket” of Hongkongers but “nobody is above the law.” Although he has told the press to “tell a good Hong Kong story,” government departments have been reluctant to respond to story pitches.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3106,
+      "body_end": 3361,
+      "source_links": [
+        "https://hongkongfp.com/2022/09/22/john-lee-tells-patriotic-journalists-to-deliver-the-right-hong-kong-message-at-media-event-for-chinas-national-day/",
+        "https://hongkongfp.com/2024/01/23/how-the-govt-thwarted-hkfps-effort-to-tell-a-good-hong-kong-story-despite-repeated-calls-from-top-officials/",
+        "https://hongkongfp.com/press-freedom-censorship/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "deeb33f2564cd1ca137eb69e0b3c38d5fccb34137f862c051f92c9f95852a69c",
+  "word_count": 540,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 4,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 3361,
+  "retrieved_at": "2026-11-16T22:46:18.060169+00:00",
+  "raw_html_sha256": "84ce63474b5d1c7f9c8403b3aabf7e0129be94ebda48e16e9be139e44a4640cd",
+  "resolved_source_url": "https://globalvoices.org/2025/04/28/a-journalist-club-survey-finds-press-freedom-in-hong-kong-has-plunged-further/",
+  "canonical_url": "https://globalvoices.org/2025/04/28/a-journalist-club-survey-finds-press-freedom-in-hong-kong-has-plunged-further/",
+  "source_bytes": 190388,
+  "authors": [
+    {
+      "name": "Hong Kong Free Press",
+      "url": "https://globalvoices.org/author/hong-kong-free-press/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 833130,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "84ce63474b5d1c7f9c8403b3aabf7e0129be94ebda48e16e9be139e44a4640cd",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-8557d6e316b9fa910734",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-04",
+    "eligible_month_documents": 80,
+    "selected_month_documents": 67,
+    "inclusion_probability": 0.8375,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Hong Kong Free Press",
+  "body_start": 498,
+  "body_end": 3859,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c0b779a03ffd3cb28263e0c89c93e62ae65fa6e2bc365fe2fcd9402cb3a81b48",
+  "text_path": "articles/gv-833130.txt",
+  "metadata_path": "metadata/gv-833130.json",
+  "attribution": "This story by Hong Kong Free Press originally appeared on Global Voices. https://globalvoices.org/2025/04/28/a-journalist-club-survey-finds-press-freedom-in-hong-kong-has-plunged-further/",
+  "content_sha256": "687850ae48d8fbc0aa1c1f2320862f86ea0e563de40948947966c16fa8b85075",
+  "source_sha256": "84ce63474b5d1c7f9c8403b3aabf7e0129be94ebda48e16e9be139e44a4640cd",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

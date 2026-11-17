@@ -1,0 +1,715 @@
+{
+  "id": "gv-837349",
+  "publisher_id": 837349,
+  "source_id": "globalvoices:837349",
+  "source_url": "https://globalvoices.org/2025/07/13/how-african-countries-ranked-on-the-world-economic-forums-gender-gap-report/",
+  "title": "How African countries ranked on the World Economic Forum's gender gap report",
+  "published_at": "2025-07-13T01:00:04Z",
+  "modified_at": "2025-07-11T15:37:57Z",
+  "api_author_id": 3241,
+  "api_content_sha256": "9e5432c01724ff00b735a763853ffb476a68f5010cc1948596be69bf87352e8e",
+  "api_response_sha256": "aa6dcff428883d80ac87f532a741a5a8d2776b7ecb4a6722bb7eeb3dc4c4dc2d",
+  "api_retrieved_at": "2026-11-16T22:21:13.235465+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 87,
+      "count": 410,
+      "name": "Algeria",
+      "slug": "algeria",
+      "parent": 14
+    },
+    {
+      "id": 99,
+      "count": 153,
+      "name": "Benin",
+      "slug": "benin",
+      "parent": 15
+    },
+    {
+      "id": 100,
+      "count": 134,
+      "name": "Botswana",
+      "slug": "botswana",
+      "parent": 15
+    },
+    {
+      "id": 106,
+      "count": 141,
+      "name": "Chad",
+      "slug": "chad",
+      "parent": 15
+    },
+    {
+      "id": 109,
+      "count": 748,
+      "name": "D.R. of Congo",
+      "slug": "dr-of-congo",
+      "parent": 15
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 142,
+      "count": 54,
+      "name": "Eswatini",
+      "slug": "swaziland",
+      "parent": 15
+    },
+    {
+      "id": 114,
+      "count": 783,
+      "name": "Ethiopia",
+      "slug": "ethiopia",
+      "parent": 15
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 116,
+      "count": 163,
+      "name": "Gambia",
+      "slug": "gambia",
+      "parent": 15
+    },
+    {
+      "id": 118,
+      "count": 238,
+      "name": "Guinea",
+      "slug": "guinea",
+      "parent": 15
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 2578,
+      "count": 3152,
+      "name": "Iran",
+      "slug": "iran",
+      "parent": 14
+    },
+    {
+      "id": 18,
+      "count": 1766,
+      "name": "Kenya",
+      "slug": "kenya",
+      "parent": 15
+    },
+    {
+      "id": 120,
+      "count": 81,
+      "name": "Lesotho",
+      "slug": "lesotho",
+      "parent": 15
+    },
+    {
+      "id": 121,
+      "count": 232,
+      "name": "Liberia",
+      "slug": "liberia",
+      "parent": 15
+    },
+    {
+      "id": 124,
+      "count": 308,
+      "name": "Mali",
+      "slug": "mali",
+      "parent": 15
+    },
+    {
+      "id": 129,
+      "count": 111,
+      "name": "Namibia",
+      "slug": "namibia",
+      "parent": 15
+    },
+    {
+      "id": 130,
+      "count": 167,
+      "name": "Niger",
+      "slug": "niger",
+      "parent": 15
+    },
+    {
+      "id": 131,
+      "count": 1641,
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "parent": 15
+    },
+    {
+      "id": 41,
+      "count": 2347,
+      "name": "Pakistan",
+      "slug": "pakistan",
+      "parent": 31
+    },
+    {
+      "id": 108,
+      "count": 143,
+      "name": "Republic of Congo",
+      "slug": "republic-of-congo",
+      "parent": 15
+    },
+    {
+      "id": 133,
+      "count": 262,
+      "name": "Rwanda",
+      "slug": "rwanda",
+      "parent": 15
+    },
+    {
+      "id": 138,
+      "count": 160,
+      "name": "Sierra Leone",
+      "slug": "sierra-leone",
+      "parent": 15
+    },
+    {
+      "id": 140,
+      "count": 1197,
+      "name": "South Africa",
+      "slug": "south-africa",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 141,
+      "count": 611,
+      "name": "Sudan",
+      "slug": "sudan",
+      "parent": 15
+    },
+    {
+      "id": 29,
+      "count": 222,
+      "name": "Togo",
+      "slug": "togo",
+      "parent": 15
+    },
+    {
+      "id": 143,
+      "count": 803,
+      "name": "Uganda",
+      "slug": "uganda",
+      "parent": 15
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 1361,
+      "count": 6433,
+      "name": "Women &amp; Gender",
+      "slug": "women-gender",
+      "parent": 238
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-837349-b00001",
+      "text": "The World Economic Forum (WEF) has released its Global Gender Gap Report 2025, and seven African countries are among the ten lowest-ranked nations worldwide in terms of gender parity.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 183,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Global_Gender_Gap_Report",
+        "https://en.wikipedia.org/wiki/World_Economic_Forum"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00002",
+      "text": "In this latest edition, Pakistan sits at the very bottom — 148th out of 148 economies covered, with a gender parity score of 56.7 percent. Just above it are Sudan (57.0 percent, 147th), Chad (57.1 percent, 146th), and Iran (58.3 percent, 145th). Other African countries in the bottom 10 include Guinea (59.5 percent, 144th), the Democratic Republic of the Congo (60.1 percent, 143rd), Niger (61.3 percent, 142nd), Algeria (61.4 percent, 141st), and Mali (61.7 percent, 140th).",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 185,
+      "body_end": 661,
+      "source_links": [
+        "https://reports.weforum.org/docs/WEF_GGGR_2025.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00003",
+      "text": "The Global Gender Gap Index",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 663,
+      "body_end": 690,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00004",
+      "text": "The Global Gender Gap Index annually benchmarks the current state and evolution of gender parity across four key dimensions: economic participation and opportunity, educational attainment, health and survival, and political empowerment. These four indicators offer a data-driven lens on the structural inequalities women face globally.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 692,
+      "body_end": 1027,
+      "source_links": [
+        "https://www.weforum.org/publications/global-gender-gap-report-2025/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00005",
+      "text": "In terms of gender gap rankings, Sub-Saharan Africa ranks sixth globally (of eight surveyed regions), with a gender parity score of 68.0 percent. Namibia leads the continent, achieving 81.1 percent gender parity and placing eighth globally. On the other hand, Sudan remains one of the worst performers, with a score of 57.0 percent and one of the world’s lowest levels of female political representation and labor force participation.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1029,
+      "body_end": 1463,
+      "source_links": [
+        "https://documents1.worldbank.org/curated/en/439111628490790397/pdf/The-Labor-Market-and-Poverty-in-Sudan.pdf",
+        "https://en.wikipedia.org/wiki/Namibia",
+        "https://en.wikipedia.org/wiki/Sudan",
+        "https://indianexpress.com/article/trending/top-10-listing/top-bottom-10-countries-in-wef-global-gender-gap-index-2025-india-rank-10061927/",
+        "https://www.weforum.org/publications/global-gender-gap-report-2025/digest/#:~:text=Despite%20being%20the%20lowest%20ranked,37.2%25%2C%20ranking%2032nd%20globally."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00006",
+      "text": "In economic participation and opportunity, Sub-Saharan Africa comes fifth, with a regional average of 67.5 percent — a 4.8 percentage-point improvement since 2006. However, disparities persist. Chad records the lowest global score in this subindex at 44.4 percent, while Botswana tops the world at 87.3 percent.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1465,
+      "body_end": 1776,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Botswana",
+        "https://en.wikipedia.org/wiki/Chad",
+        "https://www.weforum.org/publications/global-gender-gap-report-2025/digest/#:~:text=Despite%20being%20the%20lowest%20ranked,37.2%25%2C%20ranking%2032nd%20globally."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00007",
+      "text": "Liberia (86.5 percent), Eswatini (85.6 percent), Zambia, and Nigeria (76.2 percent) also rank among the top 25 globally in this economic category, at 2nd, 3rd, and 24th, respectively, while South Africa places 98th. Conversely, Sudan (31.3 percent) and Egypt (40.6 percent) are among the bottom five globally, with extremely low earned-income ratios and minimal representation of women in leadership roles.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1778,
+      "body_end": 2184,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Eswatini",
+        "https://en.wikipedia.org/wiki/Liberia",
+        "https://en.wikipedia.org/wiki/Nigeria",
+        "https://en.wikipedia.org/wiki/South_Africa",
+        "https://en.wikipedia.org/wiki/Zambia",
+        "https://reports.weforum.org/docs/WEF_GGGR_2025.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00008",
+      "text": "Sub-Saharan Africa ranks eighth in educational attainment with a score of 85.6 percent, up 5.2 percentage points since 2006. This improvement, according to the report, is largely driven by improved enrolment parity at all levels of education. In line with other regions, women surpass men in tertiary enrolment rates.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2186,
+      "body_end": 2503,
+      "source_links": [
+        "https://liveprod.worldbank.org/en/data-stories/a-tale-of-old-and-new-gender-gaps#:~:text=To%20date%2C%20more%20than%20two,of%20male%20primary%20school%20students.",
+        "https://www.weforum.org/publications/global-gender-gap-report-2025/digest/#:~:text=Despite%20being%20the%20lowest%20ranked,37.2%25%2C%20ranking%2032nd%20globally."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00009",
+      "text": "Botswana, Lesotho, and Namibia are among the 41 countries globally that have reached full parity in educational attainment.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2505,
+      "body_end": 2628,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Lesotho"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00010",
+      "text": "In the health and survival subindex, Cape Verde, Eswatini, Lesotho, Mauritius, Namibia, and Uganda are among the 17 countries that share the top global position with a parity score of 98 percent. While Liberia (95.5 percent) and Algeria (95.4 percent) fall within the bottom 10 globally on this metric.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2630,
+      "body_end": 2932,
+      "source_links": [
+        "https://reports.weforum.org/docs/WEF_GGGR_2025.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00011",
+      "text": "On political empowerment, Sub-Saharan Africa ranks fifth globally, scoring 22.2 percent. Ethiopia leads the continent in this subindex, placing 12th worldwide with 48.9 percent. By contrast, Nigeria (3.6 percent), Eswatini (3.6 percent), and Sudan (3.0 percent) ranked among the lowest globally, occupying the 143rd, 144th, and 146th positions, respectively.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2934,
+      "body_end": 3292,
+      "source_links": [
+        "https://reports.weforum.org/docs/WEF_GGGR_2025.pdf",
+        "https://www.weforum.org/publications/global-gender-gap-report-2025/digest/#:~:text=Despite%20being%20the%20lowest%20ranked,37.2%25%2C%20ranking%2032nd%20globally."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00012",
+      "text": "Notably, Rwanda remains the only African economy to have achieved full parliamentary gender parity, with women holding 50 percent or more of legislative seats. South Africa and Ethiopia have also reached gender parity in their ministerial cabinets. Across the continent, women now occupy 40.2 percent of ministerial positions and 37.7 percent of parliamentary seats.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3294,
+      "body_end": 3660,
+      "source_links": [
+        "https://www.africanews.com/2019/05/30/south-africa-joins-ethiopia-rwanda-in-small-club-of-gender-parity-cabinets//",
+        "https://www.parliament.gov.rw/women-representation#:~:text=Rwanda%20continues%20to%20make%20history,%2C8%25%20in%20the%20Senate.",
+        "https://www.weforum.org/publications/global-gender-gap-report-2025/digest/#:~:text=Despite%20being%20the%20lowest%20ranked,37.2%25%2C%20ranking%2032nd%20globally."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00013",
+      "text": "Spotlight on the DRC",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3662,
+      "body_end": 3682,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00014",
+      "text": "Even though many African countries face gender challenges, the situation in the Democratic Republic of the Congo (DRC), ranked 143rd with a score of 60.1 percent on the Global Gender Gap Index, deserves particular attention.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3684,
+      "body_end": 3908,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo",
+        "https://reports.weforum.org/docs/WEF_GGGR_2025.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00015",
+      "text": "Despite being blessed with vast natural resources and being home to the world's second-largest rainforest, the DRC remains one of the five poorest nations in the world, according to the World Bank Group (WBG). It also ranks 175th out of 182 countries on the Human Development Index.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3910,
+      "body_end": 4192,
+      "source_links": [
+        "https://opendataforafrica.org/atlas/ranks/Human-development-index?baseRegion=CD",
+        "https://www.interfaithrainforest.org/democratic-republic-of-the-congo/#:~:text=The%20Congo%20Basin%20is%20home,percent%20from%20the%20previous%20year.",
+        "https://www.worldbank.org/en/country/drc/overview"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00016",
+      "text": "According to a UN policy brief, inequalities permeate different areas of society in the Democratic Republic of Congo (DRC), with very few women having access to decent jobs, and girls are less likely to have access to education than boys.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4194,
+      "body_end": 4432,
+      "source_links": [
+        "https://africa.unwomen.org/sites/default/files/2023-03/BRIEF_FEMALE%20POLITICAL%20PARTICIPATION%20FINAL.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00017",
+      "text": "“In the DRC, women are underrepresented in parliament, local governments, political parties, and leadership roles across nearly every sector,” says Byobe Malenga, a multimedia journalist and media entrepreneur based in Kinshasa, in an interview with Global Voices.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4434,
+      "body_end": 4698,
+      "source_links": [
+        "https://fr.wikipedia.org/wiki/Byobe_Malenga"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00018",
+      "text": "He notes that women remain largely marginalised in decision-making spheres due to social norms and structural inequalities.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4700,
+      "body_end": 4823,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00019",
+      "text": "> Some of the biggest barriers to political inclusion include lack of funding, sexism, political violence, and limited access to education.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4825,
+      "body_end": 4964,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837349-b00020",
+      "text": "“In the country's provinces, there is only one woman at the head of government, as governor, despite the country being headed by a woman as prime minister,” Byobe adds. “And it’s the same story in many other spaces where decisions are made.”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4966,
+      "body_end": 5207,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00021",
+      "text": "Though articles 5, 14, and 15 of the DRC constitution establish a legal basis for equality and equity policies, women currently occupy only 7.2 percent of positions at the highest level of decision-making at the national level in the parliament and government.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5209,
+      "body_end": 5469,
+      "source_links": [
+        "https://africa.unwomen.org/en/where-we-are/west-and-central-africa/democratic-republic-of-congo#:~:text=Despite%20being%20endowed%20with%20extraordinary,Bakavu%20in%20South%20Kivu%20province.",
+        "https://constitutionnet.org/sites/default/files/DRC%20-%20Congo%20Constitution.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00022",
+      "text": "Climate shocks are also deepening the divide. Women, who make up around 73 percent of the country’s agricultural workforce, are hit hardest by floods and droughts that wipe out crops and income. “Women are not always entirely ignored in such situations,” Byobe says, “but they are often relegated to secondary or symbolic roles, without real decision-making power.”",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5471,
+      "body_end": 5836,
+      "source_links": [
+        "https://farmingfirst.org/2014/08/nicolas-mounard-the-business-case-for-investing-in-female-farmers/#:~:text=According%20to%20FAO%20figures%2C%2073,over%20the%20business%20of%20farming."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00023",
+      "text": "According to the World Bank Group (WBG), 16.8 percent of Congolese women complete secondary school, half the rate of men.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5838,
+      "body_end": 5959,
+      "source_links": [
+        "https://www.worldbank.org/en/country/drc/overview"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00024",
+      "text": "“We must empower one another,” Byobe says. “That way, we strengthen our communities,” but without urgent interventions, the country’s gender ranking will continue to mask the everyday hardships the country is facing.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5961,
+      "body_end": 6177,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00025",
+      "text": "Most significant trends",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6179,
+      "body_end": 6202,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00026",
+      "text": "According to the report, Benin recorded the most significant improvement on the continent, gaining 4.6 percentage points and climbing 21 places to reach the 113th position. Zambia also made notable progress, jumping 13 places to 79th.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6204,
+      "body_end": 6438,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Benin",
+        "https://reports.weforum.org/docs/WEF_GGGR_2025.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00027",
+      "text": "However, not all trends were positive. Togo and Sierra Leone declined by 5.3 and 3.1 percentage points, placing 121st and 112th, respectively. Mozambique dropped 26 places to 53rd. Nigeria, meanwhile, climbed one step to rank 124th, even as Kenya fell 23 places to 98th.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6440,
+      "body_end": 6710,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Kenya",
+        "https://en.wikipedia.org/wiki/Mozambique",
+        "https://en.wikipedia.org/wiki/Sierra_Leone",
+        "https://en.wikipedia.org/wiki/Togo"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00028",
+      "text": "Compared to 2024, the global gender gap has narrowed slightly, from 68.4 percent to 68.8 percent in 2025. Among the 145 economies tracked consistently across both years, the modest progress is primarily driven by improvements in Political Empowerment (up 0.7 percentage points to 23.2 percent) and Economic Participation and Opportunity, which increased by 0.4 percentage points (from 60.3 percent to 60.7 percent).",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6712,
+      "body_end": 7127,
+      "source_links": [
+        "https://reports.weforum.org/docs/WEF_GGGR_2025.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00029",
+      "text": "At the global level, Iceland (92.6 percent) continues to lead the Global Gender Gap Index, holding the top position for 16 consecutive years, and remains the only economy to have closed more than 90 percent of its gender gap since 2022.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7129,
+      "body_end": 7365,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Iceland",
+        "https://govbusinessjournal.com/gender-gap-closes-at-fastest-rate-since-pandemic-but-full-parity-still-over-a-century-away-wefs-new-report/",
+        "https://www.cnbcafrica.com/media/6374188075112/wef-gender-gap-closes-at-fastest-rate-since-pandemic/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837349-b00030",
+      "text": "The 2025 Global Gender Gap Index highlights that no economy has yet achieved full gender parity, and at the current pace, it will take 123 years to reach it globally.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 7367,
+      "body_end": 7533,
+      "source_links": [
+        "https://www.weforum.org/publications/global-gender-gap-report-2025/digest/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "f2e18b09a3cc72fe89534c8e7275e48437b4eb5c7b5bacd17c39a6071a3b8863",
+  "word_count": 1158,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7533,
+  "retrieved_at": "2026-11-16T22:47:10.572885+00:00",
+  "raw_html_sha256": "a94c1646bbe4aa1789e5ca85ab99ea28530006913052144874127d6d02678534",
+  "resolved_source_url": "https://globalvoices.org/2025/07/13/how-african-countries-ranked-on-the-world-economic-forums-gender-gap-report/",
+  "canonical_url": "https://globalvoices.org/2025/07/13/how-african-countries-ranked-on-the-world-economic-forums-gender-gap-report/",
+  "source_bytes": 201638,
+  "authors": [
+    {
+      "name": "Adesewa Olofinko",
+      "url": "https://globalvoices.org/author/adesewa-olofinko/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 837349,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "a94c1646bbe4aa1789e5ca85ab99ea28530006913052144874127d6d02678534",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-58c53de5665414cde8d8",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-07",
+    "eligible_month_documents": 100,
+    "selected_month_documents": 84,
+    "inclusion_probability": 0.84,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Adesewa Olofinko",
+  "body_start": 491,
+  "body_end": 8024,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "0d0875a2c43eef52fd7ffbac873559934acf0e3304159e7213c3f253f43f6b98",
+  "text_path": "articles/gv-837349.txt",
+  "metadata_path": "metadata/gv-837349.json",
+  "attribution": "This story by Adesewa Olofinko originally appeared on Global Voices. https://globalvoices.org/2025/07/13/how-african-countries-ranked-on-the-world-economic-forums-gender-gap-report/",
+  "content_sha256": "9ec64e27a571721ff39337666ec4c12d2099202d0e21ff3730d1afbcfc30e934",
+  "source_sha256": "a94c1646bbe4aa1789e5ca85ab99ea28530006913052144874127d6d02678534",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

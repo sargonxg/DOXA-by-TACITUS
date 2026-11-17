@@ -1,0 +1,669 @@
+{
+  "id": "gv-772237",
+  "publisher_id": 772237,
+  "source_id": "globalvoices:772237",
+  "source_url": "https://globalvoices.org/2022/10/05/brazils-first-round-of-elections-left-scores-historical-wins-but-bolsonarism-still-strong/",
+  "title": "Brazil’s first round of elections: left scores historical wins but bolsonarism still strong",
+  "published_at": "2022-10-05T22:06:24Z",
+  "modified_at": "2022-10-05T22:06:24Z",
+  "api_author_id": 2553,
+  "api_content_sha256": "b826cb2692421b3c18797910e2dba4f5ecdc62e5b49e63c4f233fe5b4c4fb1d2",
+  "api_response_sha256": "9b615ca8c330f03eafb11202cb28079d726516aefde093a0552488b2b6e40c2e",
+  "api_retrieved_at": "2026-11-16T22:20:47.843069+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 1355,
+      "count": 5871,
+      "name": "Ethnicity &amp; Race",
+      "slug": "ethnicity-race",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 262,
+      "count": 2092,
+      "name": "Indigenous",
+      "slug": "indigenous",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 1364,
+      "count": 1877,
+      "name": "LGBTQ+",
+      "slug": "gay-rights-lgbt",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 1361,
+      "count": 6433,
+      "name": "Women &amp; Gender",
+      "slug": "women-gender",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-772237-b00001",
+      "text": "When the results came in from Brazil's Oct. 2 elections — the most polarized and divisive elections since the country left the military dictatorship over 30 years ago — it felt like the pollsters missed something.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 213,
+      "source_links": [
+        "https://www.cnnbrasil.com.br/politica/resultados-das-urnas-divergem-de-pesquisas-eleitorais/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00002",
+      "text": "Despite pointing to a steady and wide lead for former president Luiz Inácio Lula da Silva (PT, Workers’ Party) over incumbent Jair Bolsonaro (PL, Liberal Party), the final countdown that led to the second round was tighter – 48.3 percent for Lula against 43.2 percent for Bolsonaro. The difference was 6 million votes.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 215,
+      "body_end": 533,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Jair_Bolsonaro",
+        "https://en.wikipedia.org/wiki/Liberal_Party_(Brazil,_2006)",
+        "https://en.wikipedia.org/wiki/Workers%27_Party_(Brazil)",
+        "https://g1.globo.com/politica/eleicoes/2022/eleicao-em-numeros/noticia/2022/10/03/lula-tem-256-milhoes-de-votos-a-mais-que-haddad-em-2018-bolsonaro-ganha-17-milhao-de-votos.ghtml",
+        "https://pt.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva",
+        "https://www.tse.jus.br/eleicoes/eleicoes-2022/divulgacao-dos-resultados-das-eleicoes-2022"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00003",
+      "text": "Out of 118 million valid votes, the other nine candidates got around 9.8 million combined. This means the vote concentrated heavily on the leading candidates with a real chance of winning.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 535,
+      "body_end": 723,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00004",
+      "text": "It’s the first time since re-election was approved in Brazil in the late 1990s that an incumbent didn’t get the most votes in the first round or go into the second as a favorite. Nevertheless, Bolsonaro's allies secured several wins with parliamentarians and governors and, in absolute numbers, he actually registered more votes than his first round in 2018.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 725,
+      "body_end": 1083,
+      "source_links": [
+        "https://g1.globo.com/politica/eleicoes/2022/eleicao-em-numeros/noticia/2022/10/03/lula-tem-256-milhoes-de-votos-a-mais-que-haddad-em-2018-bolsonaro-ganha-17-milhao-de-votos.ghtml",
+        "https://noticias.uol.com.br/eleicoes/2022/10/02/bolsonaro-lula-governadores-1-turno.htm",
+        "https://www.bbc.com/portuguese/brasil-63113593",
+        "https://www.poder360.com.br/brasil/devo-reconhecer-que-foi-1-erro-diz-fhc-sobre-emenda-que-permitiu-reeleicao/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00005",
+      "text": "Journalist Jamil Chade writes that the performance shows that far-right bolsonarism has “put down roots.” Some of the candidates that split with the president in the last years failed to get re-elected.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1085,
+      "body_end": 1287,
+      "source_links": [
+        "https://noticias.uol.com.br/colunas/jamil-chade/2022/10/03/bolsonarismo-cria-raizes-e-brasil-repete-experiencia-de-hungria-e-eua.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00006",
+      "text": "After the results, Bolsonaro, who had repeatedly said in the weeks leading up to elections that he wouldn’t accept any outcome other than a victory with at least 60 percent of votes, dodged a question from a reporter about it, making puns with the names of both women senators who also ran for presidency and were critical of him. He also claimed to understand those who wanted change, stressing that not every change was for good.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1289,
+      "body_end": 1720,
+      "source_links": [
+        "https://www.poder360.com.br/eleicoes/bolsonaro-diz-que-sera-eleito-com-mais-de-60-neste-domingo/",
+        "https://www.youtube.com/watch?v=7_X86kO6Ufc"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00007",
+      "text": "On Twitter, he posted:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1722,
+      "body_end": 1744,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00008",
+      "text": "> Many people let themselves be carried away by the lies spread by pollsters, which ended the first round completely demoralized. They got it wrong in every preview and they are already the losers of this election. We overcame this lie and now we will win the election!",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1746,
+      "body_end": 2015,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772237-b00009",
+      "text": "Meanwhile, Lula spoke to a crowd on Paulista Avenue, a place in São Paulo that served as the stage for some of Brazil's massive protests across the political spectrum in the last decade, evoking the memory of better days during his two terms and the impacts of inflation rates under Bolsonaro. He said:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2017,
+      "body_end": 2319,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Paulista_Avenue",
+        "https://noticias.uol.com.br/eleicoes/2022/10/02/leia-a-integra-do-discurso-de-lula-apos-divulgalcao-de-resultado-da-eleicao.htm?cmpid=copiaecola",
+        "https://www.google.com/search?q=infla%C3%A7%C3%A3o+bolsonaro&rlz=1C1GCEA_enBR909BR909&oq=infla%C3%A7%C3%A3o+bolsonaro&aqs=chrome..69i57.6321j0j4&sourceid=chrome&ie=UTF-8"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00010",
+      "text": "> Para avaliar bem o que é que está acontecendo hoje, a gente tem que lembrar o que estava acontecendo há quatro anos, quando eu era tido como se fosse um ser humano jogado fora da política. E eu disse que a gente retornaria, com mais força, com mais vontade, com mais disposição, porque a única razão de a gente parar de lutar é o dia que o povo brasileiro tiver outras centenas e centenas de lideranças que consigam fazer com que eles conquistem aquilo que eles precisam para melhorar de vida.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2321,
+      "body_end": 2816,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772237-b00011",
+      "text": "> Vocês sabem que nosso país está pior. Você sabe que a economia não está boa, vocês sabem que a qualidade de vida não está boa, que a renda não está boa, que o emprego não está bom, que a saúde não está boa e que nós precisamos recuperar esse país, inclusive do ponto de vista das suas relações internacionais.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2818,
+      "body_end": 3129,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772237-b00012",
+      "text": "> To better evaluate what is happening today, we need to remember what was going on four years ago, when I was considered a human being thrown out of politics. And I said that we would come back, with more strength, more will power, more disposition, because the only reason we have to stop fighting is the day the Brazilian people will have hundreds and hundreds of leaders that conquer what it takes to improve their lives.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3131,
+      "body_end": 3556,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772237-b00013",
+      "text": "> You know our country is worse than it was. You know that the economy is not good, that life quality is not good, that healthcare is not good and that we need to recover this country, including from a point of view of international relations.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3558,
+      "body_end": 3801,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772237-b00014",
+      "text": "New congress",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3803,
+      "body_end": 3815,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00015",
+      "text": "Bolsonaro’s strength among voters was shown especially with the new senators elected. Several are his former ministers, such as Agriculture minister Tereza Cristina (PP, Progressive Party) and Woman and Family minister Damares Alves (Republicans), and current vice-president, Hamilton Mourão (also Rep.).",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3817,
+      "body_end": 4121,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Progressistas",
+        "https://www.jota.info/eleicoes/bolsonaro-tem-estrategia-vitoriosa-ao-eleger-senadores-em-mais-de-dez-estados-02102022"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00016",
+      "text": "According to news outlet G1, parties allied to Bolsonaro won at least 185 seats in the Lower Chamber, against 125 supported by Lula. Bolsonaro’s party, PL, has now the largest group in Congress. The most voted Congressman in the country is also from the party, loyal bolsonarista and evangelical Nikolas Ferreira from Minas Gerais, who got 1.4 million votes.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4123,
+      "body_end": 4481,
+      "source_links": [
+        "https://g1.globo.com/politica/eleicoes/2022/eleicao-em-numeros/noticia/2022/10/03/partidos-que-apoiaram-bolsonaro-no-1o-turno-elegeram-pelo-menos-185-deputados-apoiadores-de-lula-125.ghtml",
+        "https://www.cnnbrasil.com.br/politica/nikolas-ferreira-pl-e-deputado-federal-mais-votado-do-pais-e-da-historia-de-mg/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00017",
+      "text": "Still, other names elected to the Lower chamber and state parliaments also showed a substantial vote for oppositionist and outspoken left-wing candidates in some states.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4483,
+      "body_end": 4652,
+      "source_links": [
+        "https://www.theguardian.com/world/2022/oct/03/brazil-left-election-wins-trans-indigenous-candidates?CMP=Share_iOSApp_Other"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00018",
+      "text": "Maria do Rosário, a Congresswoman elected many times with the Workers’ Party, known also for hearing from Bolsonaro that “he wouldn’t rape her, because she wasn't worth it,” got her highest voting ever in her home state Rio Grande do Sul — 150,000 votes. The southernmost state also elected for the first time in its history Black women for the federal Congress — Daiana Santos (Brazil’s Communist Party, PCdoB) and Denise Pessoa (PT) — and for the state parliament — Bruna Rodrigues (PCdoB) and Laura Sito (PT), as well as a Black man, charged and absolved for the 2013 protests, Matheus Gomes (PSOL, Socialism and Liberty).",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4654,
+      "body_end": 5279,
+      "source_links": [
+        "https://extra.globo.com/noticias/brasil/jair-bolsonaro-repete-insulto-deputada-maria-do-rosario-so-nao-te-estupro-porque-voce-nao-merece-14781338.html",
+        "https://g1.globo.com/rs/rio-grande-do-sul/eleicoes/2022/noticia/2022/10/03/quem-sao-daiana-santos-e-denise-pessoa-as-duas-primeiras-deputadas-federais-negras-da-historia-do-rs.ghtml",
+        "https://twitter.com/mariadorosario/status/1576996898543734790?s=20&t=xlFxpPFN9T_yio0_V6bmNg",
+        "https://www.brasildefators.com.br/2021/06/19/juiza-absolve-manifestantes-acusados-pelo-mp-por-participacao-em-protestos-de-2013",
+        "https://www.correiodopovo.com.br/not%C3%ADcias/pol%C3%ADtica/elei%C3%A7%C3%B5es/assembleia-do-rs-tem-renova%C3%A7%C3%A3o-e-menos-partidos-1.900599"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00019",
+      "text": "The vote for Black candidates nationwide was encouraged by campaigns such as “Quilombo nos Parlamentos” (a reference to communities’ settlements formed by enslaved people who fled during slavery) and “I vote Black.“",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5281,
+      "body_end": 5496,
+      "source_links": [
+        "https://congressoemfoco.uol.com.br/area/pais/iniciativa-quilombo-nos-parlamentos-luta-por-mais-negros-nos-espacos-de-poder/",
+        "https://en.wikipedia.org/wiki/Quilombo",
+        "https://mundonegro.inf.br/eu-voto-preto-escolha-de-candidaturas-negras-se-torna-um-dos-assuntos-mais-comentados-no-twitter/",
+        "https://www.poder360.com.br/eleicoes/numero-de-deputados-negros-cresce-10-em-2022/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00020",
+      "text": "For the first time, the National Congress will also have two transwomen: Erika Hilton, elected in São Paulo who identifies as a travesti, a Latin American gender identity, and Duda Salabert, in Minas Gerais. They both triumphed over threats and attacks; Duda campaigned and voted wearing a bulletproof vest.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5498,
+      "body_end": 5805,
+      "source_links": [
+        "https://g1.globo.com/politica/eleicoes/2022/eleicao-em-numeros/noticia/2022/10/03/camara-tera-duas-deputadas-trans-pela-primeira-vez-na-historia.ghtml",
+        "https://globalvoices.org/2022/10/03/in-brazils-election-year-women-in-politics-denounce-recurring-threats/",
+        "https://hysteria.etc.br/ler/travesti-nao-se-traduz/",
+        "https://noticias.uol.com.br/eleicoes/2022/10/02/duda-salabert-vai-votar-colete-a-prova-balas-em-bh.htm",
+        "https://twitter.com/DudaSalabert/status/1576738477865316352?s=20&t=QxEb6GuA9PFMW2mNYs3GAw",
+        "https://twitter.com/ErikakHilton/status/1576714415231336448?s=20&t=QxEb6GuA9PFMW2mNYs3GAw"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00021",
+      "text": "Indigenous candidates, which doubled candidacies since 2014 and faced threats too, also got historic elections in the parliaments, referring to themselves as the “bancada do cocar,” which loosely translates to “the headdress bench. Two years ago, the number of Indigenous people elected as mayors and city councillors had also shown a growing movement.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5807,
+      "body_end": 6159,
+      "source_links": [
+        "https://brasil.mongabay.com/2022/09/sob-ameaca-numero-recorde-de-indigenas-disputam-as-eleicoes/",
+        "https://twitter.com/hashtag/bancadadococar?src=hashtag_click",
+        "https://www.brasildefato.com.br/2022/09/29/candidaturas-indigenas-aumentam-119-de-2014-a-2022-queremos-uma-bancada-do-cocar-diz-apib",
+        "https://www.camara.leg.br/noticias/709156-cresce-numero-de-prefeitos-e-vereadores-indigenas/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00022",
+      "text": "In the Lower chamber, with five Indigenous candidates elected, activists Sonia Guajajara and Celia Xakriaba (both from PSOL) won a seat. Sílvia Waiãpi (PL), another Indigenous woman, a military who supports Bolsonaro, was also elected.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6161,
+      "body_end": 6396,
+      "source_links": [
+        "https://twitter.com/ApibOficial/status/1576732356903587840?s=20&t=QxEb6GuA9PFMW2mNYs3GAw",
+        "https://twitter.com/ApibOficial/status/1576736048364675072?s=20&t=QxEb6GuA9PFMW2mNYs3GAw",
+        "https://www.camara.leg.br/noticias/911616-cinco-indigenas-sao-eleitos-para-a-camara-dos-deputados/",
+        "https://www.metropoles.com/distrito-federal/na-mira/bolsonarista-primeira-indigena-oficial-do-exercito-e-eleita-federal"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00023",
+      "text": "Joenia Wapichana, the first Indigenous woman ever elected to this position, lost her re-election bid in Roraima, a bolsonarista northern state.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6398,
+      "body_end": 6541,
+      "source_links": [
+        "https://g1.globo.com/rr/roraima/eleicoes/2022/noticia/2022/10/03/primeira-indigena-no-brasil-a-conquistar-vaga-de-deputada-federal-joenia-wapichana-nao-se-reelege.ghtml",
+        "https://g1.globo.com/rr/roraima/noticia/2022/10/03/roraima-garante-a-bolsonaro-maior-votacao-em-percentual-do-brasil.ghtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00024",
+      "text": "> I feel happy and proud with the elections of @GuajajaraSonia and @celiaxakriaba, two warrior Indigenous women that will continue the work in the National Congress. I’ve always said that I was the first, but won’t be the last or the only one.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6543,
+      "body_end": 6786,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772237-b00025",
+      "text": "What comes next",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6788,
+      "body_end": 6803,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00026",
+      "text": "The situation in Brazil is still marked by an anti-Workers’ Party sentiment that has been brewing for a while in the country. Alongside important social conquests mainly during Lula’s government, PT was tainted by corruption scandals and faced the economic crisis that led to the coup that impeached Dilma Rousseff, the first woman elected president, with the support of right-wing groups from civil society.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6805,
+      "body_end": 7213,
+      "source_links": [
+        "https://brasil.elpais.com/brasil/2016/03/24/politica/1458832560_657858.html",
+        "https://en.wikipedia.org/wiki/Impeachment_of_Dilma_Rousseff",
+        "https://oglobo.globo.com/politica/13-escandalos-do-pt-no-poder-18803710"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00027",
+      "text": "Lula himself was investigated under Operation Car Wash, convicted, and arrested for 580 days, therefore being forbidden by law to run in 2018, when Bolsonaro was elected. Later, Telegram private chats of the prosecutors and the judge involved in the case, Sergio Moro, were leaked and published by The Intercept, exposing their close relationship and bias.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7215,
+      "body_end": 7571,
+      "source_links": [
+        "https://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_Lava_Jato",
+        "https://pt.wikipedia.org/wiki/Pris%C3%A3o_de_Luiz_In%C3%A1cio_Lula_da_Silva",
+        "https://theintercept.com/series/mensagens-lava-jato/",
+        "https://www.tse.jus.br/comunicacao/noticias/2022/Setembro/tse-defere-registro-da-candidatura-de-lula-a-presidente-da-republica-769636"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00028",
+      "text": "In 2021, the Supreme Court annulled Lula’s convictions saying the case should have been judged by a different court and declaring Moro a judge under suspicion.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7573,
+      "body_end": 7732,
+      "source_links": [
+        "https://www.conjur.com.br/2021-mar-23/mudanca-voto-carmen-turma-stf-declara-moro-suspeito",
+        "https://www.conjur.com.br/2022-set-29/ilacoes-inocencia-lula-nao-merecem-direito-resposta"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00029",
+      "text": "Moro became Bolsonaro’s justice minister and left his government accusing him of interference in the Federal Police. He has just been elected as a senator, attaching his image to the president again. The federal prosecutor, Deltan Dallagnol, who presented a now infamous PowerPoint to accuse Lula, also got elected to the Lower Chamber, promising to bring Car Wash to the Congress.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7734,
+      "body_end": 8115,
+      "source_links": [
+        "https://brasil.elpais.com/brasil/2020-04-24/sergio-moro-acusa-bolsonaro-de-interferencia-politica-na-pf-e-deixa-governo.html",
+        "https://noticias.uol.com.br/colunas/leonardo-sakamoto/2022/09/29/moro-engole-orgulho-e-cola-em-bolsonaro-por-votos-na-reta-final-da-campanha.htm",
+        "https://twitter.com/deltanmd/status/1576715803772477440?s=20&t=xlFxpPFN9T_yio0_V6bmNg",
+        "https://www.correiobraziliense.com.br/politica/2022/09/5036502-deltan-provoca-lula-com-powerpoint-e-se-reclamar-eu-faco-outro.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00030",
+      "text": "Lula, who is 76, started in politics as a metalworker and union leader, and was persecuted by the military dictatorship. He helped to fund the only party he has been connected to, PT. Bolsonaro, 67, entered politics when he left the Army, after being prosecuted for protesting for wages and allegedly planning to plant bombs in headquarters. In Congress for almost three decades, he defended the military regime and its methods, including torture. He has been affiliated with nine different parties during his career.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 8117,
+      "body_end": 8634,
+      "source_links": [
+        "https://brasilescola.uol.com.br/biografia/jair-bolsonaro.htm",
+        "https://en.wikipedia.org/wiki/Workers%27_Party_(Brazil)",
+        "https://g1.globo.com/politica/noticia/2021/11/30/apos-dois-anos-sem-partido-bolsonaro-se-filia-ao-pl-nona-legenda-da-carreira-politica.ghtml",
+        "https://memoriasdaditadura.org.br/biografias-da-resistencia/luiz-inacio-lula-da-silva/",
+        "https://noticias.uol.com.br/politica/ultimas-noticias/2022/03/31/bolsonaro-obras-ditadura-militar.htm",
+        "https://valor.globo.com/politica/noticia/2022/09/02/por-que-bolsonaro-foi-preso-e-por-que-ele-saiu-do-exercito.ghtml",
+        "https://www.bbc.com/portuguese/brasil-50297742",
+        "https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biografia-do-presidente",
+        "https://www.reuters.com/article/fact-check-bolsonaro-priso-idUSL1N2ZV0T1",
+        "https://www.youtube.com/watch?v=VRzVMcOdK1I"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00031",
+      "text": "Still a Congressman, Bolsonaro already travelled the country planning a presidential bid and built an organized and well-fed social media ecosystem. People wore T-shirts with his face on it and put bumper stickers on their cars to support him before he even started an official campaign.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 8636,
+      "body_end": 8923,
+      "source_links": [
+        "https://extra.globo.com/noticias/brasil/eleicoes-2022/carlos-bolsonaro-mantem-nucleo-paralelo-de-campanha-para-as-redes-sociais-25567234.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00032",
+      "text": "Now he is counting on the sum of anti-PT voters and this base — many who believe in fake news that Lula could persecute Catholic priests such as Nicaragua's Daniel Ortega, confiscate all their money, or that the electoral system that got Bolsonaro himself elected many times is not safe, to name a few examples.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 8925,
+      "body_end": 9236,
+      "source_links": [
+        "https://br.noticias.yahoo.com/desde-criacao-da-urna-eletronica-cla-bolsonaro-venceu-95-das-eleicoes-que-disputou-143705334.html",
+        "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2022/09/24/bolsonaro-faz-dobradinha-com-padre-kelmon-para-relacionar-nicaragua-ao-pt.htm",
+        "https://www.cnnbrasil.com.br/nacional/post-distorce-reportagem-e-mente-ao-dizer-que-estatuto-do-pt-preve-confisco-de-bens-dos-brasileiros/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00033",
+      "text": "As president, Bolsonaro has been questioned for his poor management of the COVID-19 pandemic — with over 686,000 deaths in the country — high deforestation rates and the destruction of the Amazon, and corruption suspicions over himself and his family or government members.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 9238,
+      "body_end": 9511,
+      "source_links": [
+        "https://congressoemfoco.uol.com.br/area/governo/entenda-o-esquema-de-corrupcao-no-mec-envolvendo-milton-ribeiro/",
+        "https://news.google.com/covid19/map?hl=pt-PT&mid=/m/015fr&gl=PT&ceid=PT:pt-150",
+        "https://noticias.uol.com.br/politica/ultimas-noticias/2022/09/09/como-rastreamos-que-o-cla-bolsonaro-pagou-com-dinheiro-vivo-51-imoveis.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00034",
+      "text": "But millions still voted for him, and elected his former ministers of environment, Ricardo Salles, and health, Eduardo Pazuello (both from PL), the second best voted in Rio to the Lower Chamber.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 9513,
+      "body_end": 9707,
+      "source_links": [
+        "https://brasil.elpais.com/brasil/2021-01-24/as-acoes-de-pazuello-durante-a-pandemia-de-covid-19-que-agora-o-colocam-em-xeque.html",
+        "https://g1.globo.com/rj/rio-de-janeiro/eleicoes/2022/noticia/2022/10/03/pazuello-e-o-2o-deputado-federal-mais-votado-no-rj-relembre-a-trajetoria.ghtml",
+        "https://www.metropoles.com/brasil/eleicoes-2022/eleicoes-2022-nove-ex-ministros-de-bolsonaro-triunfam-nas-urnas",
+        "https://www.theguardian.com/world/2021/jun/24/brazil-environment-minister-quits-amid-inquiry-into-amazon-logging"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00035",
+      "text": "After the results were confirmed for the first round, the president said the pollsters were demoralized. Two days later, his Justice Ministry asked the Federal Police to investigate the institutes behind it, and his Communications minister is asking Bolsonaro’ supporters not to answer any polls.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 9709,
+      "body_end": 10005,
+      "source_links": [
+        "https://www.estadao.com.br/politica/ministro-da-justica-envia-a-pf-pedido-de-investigacao-de-institutos-de-pesquisa/",
+        "https://www.poder360.com.br/eleicoes/fabio-faria-pede-que-apoiadores-nao-respondam-pesquisas/",
+        "https://www.poder360.com.br/eleicoes/institutos-de-pesquisa-se-desmoralizaram-diz-bolsonaro/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772237-b00036",
+      "text": "The run-off election between Bolsonaro and Lula will take place on Oct. 30.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 10007,
+      "body_end": 10082,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "ba92a3830d877db30beeae1831061e6280c3569216cdb15cd9b322ea6b8eba1f",
+  "word_count": 1661,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 10082,
+  "retrieved_at": "2026-11-16T22:36:37.454618+00:00",
+  "raw_html_sha256": "9b5f3609290b48530276c330a84bdef9b2fb89c287b16698c649a7de0668acc1",
+  "resolved_source_url": "https://globalvoices.org/2022/10/05/brazils-first-round-of-elections-left-scores-historical-wins-but-bolsonarism-still-strong/",
+  "canonical_url": "https://globalvoices.org/2022/10/05/brazils-first-round-of-elections-left-scores-historical-wins-but-bolsonarism-still-strong/",
+  "source_bytes": 203149,
+  "authors": [
+    {
+      "name": "Global Voices Brazil",
+      "url": "https://globalvoices.org/author/gv-brasil/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 772237,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "9b5f3609290b48530276c330a84bdef9b2fb89c287b16698c649a7de0668acc1",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-7eef37b02c77043b325f",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-10",
+    "eligible_month_documents": 80,
+    "selected_month_documents": 67,
+    "inclusion_probability": 0.8375,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Global Voices Brazil",
+  "body_start": 524,
+  "body_end": 10606,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c6fc24bd94f07400627ef08bf7da13dac823eba78eef8dd2d3da59fcfa08b02c",
+  "text_path": "articles/gv-772237.txt",
+  "metadata_path": "metadata/gv-772237.json",
+  "attribution": "This story by Global Voices Brazil originally appeared on Global Voices. https://globalvoices.org/2022/10/05/brazils-first-round-of-elections-left-scores-historical-wins-but-bolsonarism-still-strong/",
+  "content_sha256": "01145e21e6a4afbbf740da52dd80c083f90ae9461c1d0735893f5ad25175976f",
+  "source_sha256": "9b5f3609290b48530276c330a84bdef9b2fb89c287b16698c649a7de0668acc1",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

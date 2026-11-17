@@ -1,0 +1,453 @@
+{
+  "id": "gv-768022",
+  "publisher_id": 768022,
+  "source_id": "globalvoices:768022",
+  "source_url": "https://globalvoices.org/2022/08/05/under-btks-eye-investigation-reveals-turkeys-information-and-communication-authority-has-been-collecting-private-user-data-for-over-a-year/",
+  "title": "Under BTK's eye: investigation reveals Turkey's information and communication authority has been collecting private user data for over a year",
+  "published_at": "2022-08-05T07:19:08Z",
+  "modified_at": "2022-08-05T10:18:40Z",
+  "api_author_id": 799,
+  "api_content_sha256": "e54c345c0a536c42f5df63f019d2cb44349a8c70083a60212b49f6a3d098ccb0",
+  "api_response_sha256": "08b3517ae10ada9fc287561a5a5d06549f4a3614acf67915ee99ce779e1c37fe",
+  "api_retrieved_at": "2026-11-16T22:20:46.276788+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-768022-b00001",
+      "text": "On July 21, 2022, an online news platform Medyascope.tv published an investigation revealing how Bilgi Teknolojileri ve İletişim Kurumu (Information and Communication Technologies Authority, BTK) has been collecting private user data in a massive breach of user privacy that began in 2021. The story confirmed what Onursal Adiguzel, the vice president of the main opposition Republican People (CH) party, shared in a series of tweets a little over a month ago.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 460,
+      "source_links": [
+        "https://medyascope.tv/",
+        "https://medyascope.tv/2022/07/21/belgeleriyle-btk-gate-turkiyedeki-tum-kullanicilarin-internet-hareketleri-yaklasik-bir-bucuk-yildir-kimlikleri-ve-kisisel-verileriyle-birlikte-btkya-akiyor/",
+        "https://twitter.com/onursaladiguzel/status/1534555451983073283?s=20&t=L7FcvWEsqUPwzkD3MVhTiw"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00002",
+      "text": "The investigation, by journalist Doğu Eroğlu, says the BTK started collecting information about internet subscribers from ISPs on a monthly basis in December 2018. This collected data included subscribers’ “names, last names; ID, tax and central registry (MERSIS) numbers; gender and nationalities; parents’ names; birth places and dates; occupations; addresses; and old mobile numbers.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 462,
+      "body_end": 849,
+      "source_links": [
+        "https://medyascope.tv/2022/07/21/btk-gate-internet-activity-identity-and-personal-data-of-all-users-in-turkey-has-been-collected-by-btk-for-the-past-year-and-a-half/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00003",
+      "text": "In December 2020, in a confidential letter, signed by VP Fethi Azakli, BTK asked local internet service providers and mobile operators for “internet traffic of all users in Turkey” on an hourly basis. In the event ISPs refused to provide this information, BTK warned they would be penalized.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 851,
+      "body_end": 1142,
+      "source_links": [
+        "https://medyascope.tv/2022/07/21/btk-gate-internet-activity-identity-and-personal-data-of-all-users-in-turkey-has-been-collected-by-btk-for-the-past-year-and-a-half/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00004",
+      "text": "The letter claimed that BTK, was “tasked with detecting, monitoring, evaluating, and recording data for legal purposes in a timely and non-disruptive manner. There is a need to obtain more detailed information regarding the activities taking place on the Internet within the scope of forensic and preventive purposes.”",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1144,
+      "body_end": 1462,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00005",
+      "text": "In an interview with Medyascope.tv, Doğu Eroğlu said there was no information on where this mass data was being stored, the period the users’ private information was stored for, or which third parties had access to this data. The service providers told him that they first started delivering requested information in 2021.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1464,
+      "body_end": 1786,
+      "source_links": [
+        "https://www.youtube.com/watch?v=oTJSYc6hhAQ"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00006",
+      "text": "BTK and its powers",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1788,
+      "body_end": 1806,
+      "source_links": [],
+      "source_kind": "h1",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00007",
+      "text": "In 2000, the government set up the Telecommunications Authority, “to perform the regulatory and supervision duties in the electronic communication sector.” The agency was restructured in 2008, taking on a new name: the Information and Communication Technologies Authority. It operates under the Ministry of Transport and Infrastructure.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1808,
+      "body_end": 2144,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00008",
+      "text": "In 2016, following the failed coup attempt, Turkey shut down the Department of Telecommunications and Communications (TİB) — Turkey’s leading internet censor — and handed all of its authority to the BTK.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2146,
+      "body_end": 2349,
+      "source_links": [
+        "https://www.hurriyetdailynews.com/turkey-shuts-down-telecommunication-body-amid-post-coup-attempt-measures-102936",
+        "https://www.nytimes.com/2016/07/17/world/europe/as-the-coup-in-turkey-unfolded-the-whole-night-felt-like-doomsday.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00009",
+      "text": "TİB was set up in 2005 with the main purpose of centralizing, “from a single unit, the surveillance of communications and execution of interception of communications warrants subject to laws No. 2559 (Law on the Duties and Powers of Police), No. 2803 (Law on the Organisation, Duties, and Powers of Gendarmerie), No. 2937 (Law on State Intelligence Services and National Intelligence Organisation), and No. 5271 (Criminal Procedural Act).”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2351,
+      "body_end": 2790,
+      "source_links": [
+        "https://www.osce.org/files/f/documents/a/d/41091.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00010",
+      "text": "In the aftermath of the coup, the authorities claimed that “TİB was used as a hub for FETÖ [The Fethullah Gulen Terrorist Organisation] for surveillance and wiretapping purposes.”",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2792,
+      "body_end": 2971,
+      "source_links": [
+        "https://www.icisleri.gov.tr/kurumlar/icisleri.gov.tr/IcSite/icguvenlik/faaliyetler/fetoceviri/FETO_Metin-Ozeti_ingilizce.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00011",
+      "text": "As such, with the new powers, BTK went from being a regulatory body to an authority with surveillance powers that included, “the authority to take any measure it deems necessary to uphold ‘national security and public order; prevent crime; protect public health and public morals; or protect the rights and freedoms’ and inform operators, access providers, data centers, hosting providers and content providers of the said measure, who then need to take action within two hours.”",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2973,
+      "body_end": 3452,
+      "source_links": [
+        "https://edam.org.tr/wp-content/uploads/2018/04/TurkeyNational-Security-vs-Online-Rights.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00012",
+      "text": "The same year authorities shut down TİB, the country adopted Law No. 6698 on the Protection of Personal Data, which prohibited the processing or storage of personal data without consent from the subject. However, according to exceptions to the law, this data could be processed and stored if it was a matter of national security. As such, the law states, in the “processing of personal data within the scope of preventive, protective, and intelligence activities carried out by public institutions and organizations duly authorized and assigned to maintain national defence, national security, public security, public order, or economic security,” the Data Protection Law shall not apply. In addition, three new decree laws – 670, 671, and 680 – allowed interception of any internet data, without a court order or supervision, of individuals allegedly linked to the coup.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3454,
+      "body_end": 4325,
+      "source_links": [
+        "http://turkishpolicy.com/article/923/the-logic-of-secrecy-digital-surveillance-in-turkey-and-russia#_ftn3",
+        "https://www.dataguidance.com/notes/turkey-data-protection-overview"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00013",
+      "text": "Parallels to Snowden revelations and Cambridge Analytica scandal",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4327,
+      "body_end": 4391,
+      "source_links": [],
+      "source_kind": "h1",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00014",
+      "text": "“Many of you remember the mass surveillance scandal former NSA employee, Edward Snowden made public in 2013,” wrote Onursal Adiguzel from the opposition Republican People (CH) party in a series of tweets on June 8. “BTK has been carrying out something similar for a while. The President of BTK requested the log records and ‘publish-subscribe pattern from 313 internet service providers through a ‘confidential’ letter,” he revealed.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4393,
+      "body_end": 4826,
+      "source_links": [
+        "https://twitter.com/onursaladiguzel/status/1534555451983073283?s=20&t=L7FcvWEsqUPwzkD3MVhTiw"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00015",
+      "text": "In an opinion piece Adiguzel described the act as “the biggest tapping scandal in the history of the Republic.” The MP accused the BTK of “committing a crime” and violating the country's constitution and laws.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4828,
+      "body_end": 5037,
+      "source_links": [
+        "https://www.politikyol.com/btknin-fisleme-skandali/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00016",
+      "text": "Professor of law and expert on internet freedom issues in Turkey Yaman Akdeniz confirmed these allegations in a tweet. According Akdeniz, despite there being a decision by the constitutional court cancelling the BTK's authority to make these requests, it continued to collect user data. Akdeniz then urged the parliament to pursue an investigation into BTK's activities.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5039,
+      "body_end": 5409,
+      "source_links": [
+        "https://twitter.com/cyberrights/status/1534798724358148096?s=20&t=L7FcvWEsqUPwzkD3MVhTiw"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00017",
+      "text": "In the meantime, Adiguzel wondered whether BTK was trying to create its own version of Cambridge Analytica by collecting and analyzing the behavioral data of 85 million citizens, data that can be used for mass manipulation. After all, the collected data includes national IDs, addresses, websites visited, and the content consumed. Turkey is scheduled to hold general elections in 2023 and already, as pointed out by some experts, recent legal amendments, combined with manipulation tactics used in the past, can be part of broader measures deployed by the ruling government ahead of the upcoming vote. “A very serious preparation is being made for the election in terms of digital infrastructures. This is how I see the things that BTK has done, the changes in the Law No. 5651 and the Penal Code. I believe that serious manipulation awaits us during the election period,” lawyer Faruk Çayır from the Alternative Informatics Association told Doğu Eroğllu.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5411,
+      "body_end": 6367,
+      "source_links": [
+        "https://balkaninsight.com/2022/06/21/turkeys-new-election-law-works-against-opposition-and-small-parties/",
+        "https://medyascope.tv/2022/07/26/how-personal-data-collected-with-btk-gate-can-be-used-profiling-blackmailing-political-manipulation-and-more/",
+        "https://www.nytimes.com/2018/04/04/us/politics/cambridge-analytica-scandal-fallout.html",
+        "https://www.orionpolicy.org/research/44/political-astroturfing-in-twitterscape-the-role-of-troll-armies-in-turkeys-dem"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00018",
+      "text": "Adiguzel also noted that the attempts by the opposition party to request further information into the tapping scandal were denied by the parliament.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6369,
+      "body_end": 6517,
+      "source_links": [
+        "https://www.politikyol.com/btknin-fisleme-skandali/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00019",
+      "text": "Doğu Eroğlu also mentioned parallels to the Cambridge Analytica scandal. While the ends to which the BTK and the authorities plan to use the received information may not be clear yet, the amount of data obtained can be used for mass profiling, have political implications, and be used as blackmail against influential people, he explained.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6519,
+      "body_end": 6858,
+      "source_links": [
+        "https://www.youtube.com/watch?v=oTJSYc6hhAQ"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00020",
+      "text": "Speaking to Eroğlu, lawyer Alper Atmaca from the Free Software Association said that the data obtained by BTK through ISPs can also be used as a “social filter.” “For example, you want to identify homosexuals in Turkey. You have to filter it. Very simple. Find the IP addresses that go to the servers of dating sites or dating applications that are specially prepared for homosexual individuals. This gives you a huge social filter.”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6860,
+      "body_end": 7293,
+      "source_links": [
+        "https://medyascope.tv/2022/07/26/how-personal-data-collected-with-btk-gate-can-be-used-profiling-blackmailing-political-manipulation-and-more/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00021",
+      "text": "Faruk Çayır told Eroğlu the data can be used as “profiling system.” “They will transfer it to a third company and then be able to do the filing and profiling whenever they want. They will create the profiles of the citizens, and on top of that, they will simply tag people who visit certain websites, regardless of who the person is or what they are, and declare them guilty,” he explained.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 7295,
+      "body_end": 7685,
+      "source_links": [
+        "https://medyascope.tv/2022/07/26/how-personal-data-collected-with-btk-gate-can-be-used-profiling-blackmailing-political-manipulation-and-more/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00022",
+      "text": "In 2013, when Edward Snowden revealed the mass surveillance by NSA, he said, “I will be satisfied if the federation of secret law, unequal pardon and irresistible executive powers that rule the world that I love are revealed even for an instant,” in an interview with The Guardian. The recent revelations, in Turkey exposed the extent of surveillance in the hands of Turkish executive powers, but whether BTK will face any consequences for its actions is yet to be seen.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7687,
+      "body_end": 8157,
+      "source_links": [
+        "https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768022-b00023",
+      "text": "Please visit the project page for more pieces from the Unfreedom Monitor.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 8159,
+      "body_end": 8232,
+      "source_links": [
+        "https://advox.globalvoices.org/special/unfreedom-monitor/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "ce3a2d56bdaef763eba0a34eb134a655fb319b30dcab2afa39a4e4e37b0888d5",
+  "word_count": 1299,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 8232,
+  "retrieved_at": "2026-11-16T22:35:44.356468+00:00",
+  "raw_html_sha256": "b8a70859dd162bf50767807f945ec8f26e209fbb48b3a7fe58350758fbb6688e",
+  "resolved_source_url": "https://globalvoices.org/2022/08/05/under-btks-eye-investigation-reveals-turkeys-information-and-communication-authority-has-been-collecting-private-user-data-for-over-a-year/",
+  "canonical_url": "https://globalvoices.org/2022/08/05/under-btks-eye-investigation-reveals-turkeys-information-and-communication-authority-has-been-collecting-private-user-data-for-over-a-year/",
+  "source_bytes": 195542,
+  "authors": [
+    {
+      "name": "Arzu Geybullayeva",
+      "url": "https://globalvoices.org/author/arzu-geybullayeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 768022,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "b8a70859dd162bf50767807f945ec8f26e209fbb48b3a7fe58350758fbb6688e",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-df32ede5a3470f373862",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-08",
+    "eligible_month_documents": 79,
+    "selected_month_documents": 66,
+    "inclusion_probability": 0.8354430379746836,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Arzu Geybullayeva",
+  "body_start": 620,
+  "body_end": 8852,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b9b460adaf5fd50dd52e91da225a43459800415cbe4bb64aa64c75d8d62fdecb",
+  "text_path": "articles/gv-768022.txt",
+  "metadata_path": "metadata/gv-768022.json",
+  "attribution": "This story by Arzu Geybullayeva originally appeared on Global Voices. https://globalvoices.org/2022/08/05/under-btks-eye-investigation-reveals-turkeys-information-and-communication-authority-has-been-collecting-private-user-data-for-over-a-year/",
+  "content_sha256": "c932ea14dfc0375cc432d2f99c79159bdd0a856934323ce9f43b040bbc7abf4f",
+  "source_sha256": "b8a70859dd162bf50767807f945ec8f26e209fbb48b3a7fe58350758fbb6688e",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

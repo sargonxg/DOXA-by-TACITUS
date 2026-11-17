@@ -1,0 +1,370 @@
+{
+  "id": "gv-700415",
+  "publisher_id": 700415,
+  "source_id": "globalvoices:700415",
+  "source_url": "https://globalvoices.org/2020/03/13/china-government-spokesperson-suggests-on-twitter-that-covid-19-may-have-originated-in-the-united-states/",
+  "title": "China government spokesperson suggests on Twitter that COVID-19 may have originated in the United States",
+  "published_at": "2020-03-13T16:10:04Z",
+  "modified_at": "2022-04-06T04:55:24Z",
+  "api_author_id": 254,
+  "api_content_sha256": "bad486f18074c85bdb1dcad797c8a3b323fb4d9628c0a6899b7c8b4a5e30c169",
+  "api_response_sha256": "6400a2a69e2b1612f7bdabedd6b26a0bd74341ef3b4189d69f04207808bc2f03",
+  "api_retrieved_at": "2026-11-16T22:20:23.593459+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-700415-b00001",
+      "text": "Check out Global Voices’ special coverage of the global impact of COVID-19.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 75,
+      "source_links": [
+        "https://slack-redir.net/link?url=https%3A%2F%2Fglobalvoices.org%2Fspecialcoverage%2Fcovid-19-global-coverage-for-a-pandemic%2F"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00002",
+      "text": "In a tweet posted on Friday, March 13, Chinese foreign ministry spokesperson Zhao Lijian implied that the United States Army might have brought the novel coronavirus to China. His comment has escalated into a online conspiracy theory being circulated widely on Chinese social media, and even being repeated by Chinese diplomats.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 77,
+      "body_end": 405,
+      "source_links": [
+        "https://thediplomat.com/2020/03/chinese-foreign-ministry-spokesperson-implies-us-military-brought-coronavirus-to-wuhan/",
+        "https://twitter.com/zlj517/status/1238111898828066823"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00003",
+      "text": "The theory that the US is responsible for spreading the novel coronavirus to China began circulating on Chinese social media in late February, after a paper titled “Decoding evolution and transmissions of novel pneumonia coronavirus using the whole genomic” was uploaded to ChinaXiv, a platform for submitting papers to the Chinese Academy of Sciences, on February 21. The paper suggested that the genomes found in the US (H35) and Guangdong (H13) were the ancestral haplotypes of the coronavirus, which was interpreted by some as pointing to the US as the origin of the novel coronavirus. By the next day, the theory had been reported on the Chinese Communist Party (CCP)-affiliated media outlet Global Times and was picked up by a Taiwanese television program. The theory also quickly went viral on WeChat and Weibo.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 407,
+      "body_end": 1225,
+      "source_links": [
+        "http://www.chinaxiv.org/abs/202002.00033"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00004",
+      "text": "Taiwan FactCheck Center pointed out, however, that the paper has yet to go through peer review. The Center also interviewed a number of experts and reported that the “median-joining networks” (MJ) methodology used in the paper could not reflect the complexity in genetic mutation, and should not be used to determine the “ancestor-descendant” relation. Previous research also argued that the method is “theoretically untenable for evolutionary inference”. The use of the bat genome (bat-RaTG13) as the novel coronavirus “ancestral” reference has also come into question.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1227,
+      "body_end": 1797,
+      "source_links": [
+        "https://onlinelibrary.wiley.com/doi/abs/10.1111/cla.12147",
+        "https://tfc-taiwan.org.tw/articles/3022"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00005",
+      "text": "As the pandemic has taken different routes to various countries, the coronavirus genome would necessarily have mutations not seen in early sequences from China. Reading news reports referencing the nature of the virus in other countries, some social media users have interpreted this to mean that China has no connection with the outbreaks in other countries.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1799,
+      "body_end": 2158,
+      "source_links": [
+        "https://www.sciencemag.org/news/2020/03/mutations-can-reveal-how-coronavirus-moves-they-re-easy-overinterpret"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00006",
+      "text": "One of the overseas reports that went viral on Chinese social media originated in Japan. A Japanese TV station suggested in a news report that some of the Americans who had died of influenza since September 2019 might have been unknowingly infected with the coronavirus. The Japanese news report, together with the “ChinaXiv” paper, have been used to bolster a number of other conspiracy theories, such as the one claiming that US delegates brought the virus to Wuhan during the Military World Games in October 2019.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2160,
+      "body_end": 2676,
+      "source_links": [
+        "http://en.people.cn/n3/2020/0223/c90000-9661026.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00007",
+      "text": "These kinds of conspiracy theories gained even more traction after Chinese Central Television aired a February 27 press conference in which pulmonologist Dr. Zhong Nanshan stated that “while COVID-19 has emerged in China, it doesn’t mean that the virus definitely originated in China.”",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2678,
+      "body_end": 2963,
+      "source_links": [
+        "https://www.weibo.com/ttarticle/p/show?id=2309404477009307762781#related"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00008",
+      "text": "Chinese epidemiologist Zhang Wenhong quickly rebuked the claim that the virus came from outside China, asserting that the genome sequence indicated that the version of the virus seen in Shanghai had indeed originated in Wuhan, but his interview was censored.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2965,
+      "body_end": 3223,
+      "source_links": [
+        "http://www.rfi.fr/tw/%E4%B8%AD%E5%9C%8B/20200229-%E5%82%B3%E6%9F%93%E7%97%85%E5%B0%88%E5%AE%B6%E5%BC%B5%E6%96%87%E5%AE%8F%E4%B8%8D%E8%AA%8D%E5%90%8C%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E4%BE%86%E8%87%AA%E5%9C%8B%E5%A4%96"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00009",
+      "text": "Zhong’s statement, meanwhile, was repackaged by numerous social media outlets and which used information from “overseas media sources” to support their claim that the coronavirus had originated in the US. One such story headlined “Research indicates that the novel coronavirus found in Italy has no connection with China. Zhong Nanshan’s statement is verified true” (研究成果公布: 意大利境内新冠病毒与中国无关, 钟南山的话被证实) was circulated via the mobile news app UC headline. The story quoted an article from O-Lian News (EU News Agency – 歐聯通訊), a news outlet registered in Italy and owned by an investment company in China’s Zhejiang province, which reported that Italian health expert Massimo Galli had declared that the genome sequence of the coronavirus in Italy did not originate in China.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3225,
+      "body_end": 3996,
+      "source_links": [
+        "http://www.oliannews.com/",
+        "https://s1.uczzd.cn/webview/news?app=uc-iflow&aid=10429661783733842907"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00010",
+      "text": "It is unsurprising to see this kind of misinformation circulating on social media. But newly-appointed Chinese foreign ministry spokesperson Zhao Lijian—who is no stranger to controversy—took the conspiracy theory to a new level with his March 13 tweet.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3998,
+      "body_end": 4251,
+      "source_links": [
+        "https://www.scmp.com/news/china/diplomacy/article/3018676/susan-rice-calls-chinese-diplomat-zhao-lijian-racist-disgrace"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00011",
+      "text": "China has not yet identified its patient zero, but the South China Morning Post has reportedly seen Chinese government data tracing the first case back to a 55-year-old male patient on November 17, 2019. A research study published in January 2020 also showed that a number of cases in early December had no connection to Wuhan fresh food market which has been widely considered the origin of the outbreak.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4253,
+      "body_end": 4658,
+      "source_links": [
+        "https://www.scmp.com/news/china/society/article/3047646/no-link-seafood-market-first-case-china-coronavirus-chinese",
+        "https://www.scmp.com/news/china/society/article/3074991/coronavirus-chinas-first-confirmed-covid-19-case-traced-back"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00012",
+      "text": "In early February, rumors and unverified claims from Weibo and WeChat suggested that the outbreak might have caused by “lab leakage” as the Wuhan Institute of Virology was a major center for the study of viruses, including Ebola, MERS and SARS, and also engaged in animal testing. The lab leakage conspiracy was censored, giving way to this new conspiracy about the US that is being propagated by CCP-affiliated media and by numerous social media posts by Chinese government spokespeople on Twitter.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4660,
+      "body_end": 5159,
+      "source_links": [
+        "https://asiatimes.com/2020/02/coronavirus-lab-leakage-rumors-spreading/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00013",
+      "text": "As anticipated, Zhao’s remark has attracted a slew of angry comments:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5161,
+      "body_end": 5230,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00014",
+      "text": "And mockery:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5232,
+      "body_end": 5244,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00015",
+      "text": "But some did concur with Zhao:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5246,
+      "body_end": 5276,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700415-b00016",
+      "text": "In their report on the incident, Global Times framed it as part of the US information war against China.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5278,
+      "body_end": 5382,
+      "source_links": [
+        "https://www.globaltimes.cn/content/1182511.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "ca1647a5f983ea1850d7f52d9844739f8af537f19e5d8e60eb821955128c11e7",
+  "word_count": 851,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 5,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5382,
+  "retrieved_at": "2026-11-16T22:22:36.822430+00:00",
+  "raw_html_sha256": "77528aedeacfbfd7d3454333746f0f00f88d3d34f0981bb1a5f05699c73016cb",
+  "resolved_source_url": "https://globalvoices.org/2020/03/13/china-government-spokesperson-suggests-on-twitter-that-covid-19-may-have-originated-in-the-united-states/",
+  "canonical_url": "https://globalvoices.org/2020/03/13/china-government-spokesperson-suggests-on-twitter-that-covid-19-may-have-originated-in-the-united-states/",
+  "source_bytes": 190285,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 700415,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "77528aedeacfbfd7d3454333746f0f00f88d3d34f0981bb1a5f05699c73016cb",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-7b90d95859cef15b6da6",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-03",
+    "eligible_month_documents": 117,
+    "selected_month_documents": 98,
+    "inclusion_probability": 0.8376068376068376,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Oiwan Lam",
+  "body_start": 541,
+  "body_end": 5923,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "953c425f969a51995ec8fe793b4638ff892bfdc20eb967977c0a64f95fb1c16b",
+  "text_path": "articles/gv-700415.txt",
+  "metadata_path": "metadata/gv-700415.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2020/03/13/china-government-spokesperson-suggests-on-twitter-that-covid-19-may-have-originated-in-the-united-states/",
+  "content_sha256": "900f2091c2489ce73119d1e636cc43ea485c61ab95495cd6000be70ffd0e1b6f",
+  "source_sha256": "77528aedeacfbfd7d3454333746f0f00f88d3d34f0981bb1a5f05699c73016cb",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

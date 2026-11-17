@@ -1,0 +1,345 @@
+{
+  "id": "gv-813628",
+  "publisher_id": 813628,
+  "source_id": "globalvoices:813628",
+  "source_url": "https://globalvoices.org/2024/05/31/bitcoin-minings-toll-on-el-salvador-leaves-communities-without-water/",
+  "title": "Bitcoin mining's toll on El Salvador leaves communities without water",
+  "published_at": "2024-05-31T13:35:54Z",
+  "modified_at": "2024-07-22T08:02:34Z",
+  "api_author_id": 3223,
+  "api_content_sha256": "41962148e04561f5c9a78ed16463040dcfff18b2366d7f5cc958bb19dc1f0356",
+  "api_response_sha256": "23616beb68b31875991aa1a024e9aed128a3a347018c7c81ebdccbb3a70c3f9a",
+  "api_retrieved_at": "2026-11-16T22:21:03.503026+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 171,
+      "count": 540,
+      "name": "El Salvador",
+      "slug": "el-salvador",
+      "parent": 1354
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-813628-b00001",
+      "text": "This story is part of Data Narratives, a Civic Media Observatory project that aims to identify and understand the discourse on data used for governance, control, and policy in El Salvador, Brazil, Turkey, Sudan, and India. Read more about the project here and see our public dataset for the full analysis covered in the text below.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 331,
+      "source_links": [
+        "https://airtable.com/appiUIOgqrjaNG3Od/shr6mDNcNCVlmTgdA/tblSPHuPNtnMGnujw/viwKxp5XQYyrY1YP5?blocks=hide",
+        "https://globalvoices.org/special/data-narratives-cmo/",
+        "https://globalvoices.org/special/observatory/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00002",
+      "text": "Two years ago, fifteen communities from the Nueva Concepción municipality, located north of El Salvador’s central region, gathered to ask the government to halt the construction of a solar plant along the Gavilán Gorge and Lempa River, concerned that access to drinking water would decline. Neither the mayor nor the city council were informed of the project or its details. The solar plant is only one of many renewable energy projects powering Bitcoin mining in the country. La Geo Power Company began using geothermal energy to mine the cryptocurrency under Bukele’s direction in September 2021, shortly after the controversial Bitcoin Law was approved in June, which made Bitcoin an official form of legal tender across the country.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 333,
+      "body_end": 1069,
+      "source_links": [
+        "http://lageo.com.sv/",
+        "https://rm.coe.int/btc-regulation-elsalvador-ana-samayoa-eng/1680a49664",
+        "https://twitter.com/nayibbukele/status/1442949756993490945",
+        "https://www.laprensagrafica.com/elsalvador/Temen-escasez-de-agua-potable-por-planta-minera-de-bitcoins-20220802-0077.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00003",
+      "text": "Bitcoin mining is commonly misunderstood as a practice because of the connotation of physical mining. Bitcoin is the world’s first cryptocurrency. The digital asset is outlined in a white paper published in 2008 under the pseudonym Satoshi Nakamoto. Mining Bitcoin involves running programs to maintain the blockchain ledger in the Bitcoin network. This is essentially a link to every single Bitcoin transaction to date. Because of the decentralized nature of Bitcoin, every person on the network has their own version of the ledger. The chain with the most blocks is deemed the valid blockchain. Miners who complete an entire blockchain on the network are rewarded an amount of the digital asset as an incentive for miners to maintain the network.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1071,
+      "body_end": 1819,
+      "source_links": [
+        "https://bitcoin.org/bitcoin.pdf",
+        "https://crypto.com/university/bitcoin-mining",
+        "https://www.coindesk.com/learn/what-is-bitcoin/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00004",
+      "text": "Bitcoin mining relies on an enormous amount of computing power, which is generated using a proportionately enormous amount of electricity. Water is used not only to cool computers enabling Bitcoin transactions, but in the energy plants that provide electricity.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1821,
+      "body_end": 2082,
+      "source_links": [
+        "https://www.bbc.com/news/technology-67564205"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00005",
+      "text": "In March 2024, for over a month, eight thousand people living in the Santa Teresa Project in San Martín, east of capital city San Salvador, haven’t had access to running water despite their complaints to government-owned services. The National Administration of Aqueducts and Sewers (ANDA) sent nine water pipes to the neighborhood shortly after La Prensa Gráfica, one of the most popular newspapers in El Salvador, published their article covering the situation. Eleven kilometers southwest of the San Martín municipality lies the town of Ilopango, where residents of the Altavista neighborhood reported no drinking water for nearly a week. Both neighborhoods are situated in the San Salvador Province, hosting the nation’s capital, sharing the same name. In spite of several public complaints over the years, ANDA has reported 90 percent drinking water coverage in the district of San Salvador. Salvadorans living without water must rely on foreign aid from relatives, bottled water, private services, or whatever means necessary to survive.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 2084,
+      "body_end": 3127,
+      "source_links": [
+        "https://airtable.com/appiUIOgqrjaNG3Od/tbltsG6X788xqA0fT/viwsVorooFKKugV9b/rec2Ml0NFYYdx5J1p?blocks=hide",
+        "https://twitter.com/prensagrafica/status/1777126481564483850",
+        "https://twitter.com/ysuca91siete/status/1773136911919436002?s=20",
+        "https://www.elsalvador.com/noticias/nacional/consumo-de-agua-suministro-potable-tuberias-cortes-contaminacion-del-escasez-anda/1036581/2023/",
+        "https://www.laprensagrafica.com/elsalvador/Podemos-vivir-sin-luz-pero-sin-agua-no-la-colonia-Santa-Teresa-se-sume-en-una-crisis-hidrica-20240405-0089.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00006",
+      "text": "ANDA has previously admitted that there is not enough water to meet the public demand for each household in El Salvador. While several experts agree that there is a water shortage in the country, the water crisis is not a priority for the Bukele administration, which instead passed The Water Resources Law favoring the privatization of water. On top of the existing water pollution stemming from volcanic soils, as in the case of Lake Ilopango, Salvadorans face increasing water scarcity as a result of the resource demands of Bitcoin mining.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 3129,
+      "body_end": 3672,
+      "source_links": [
+        "https://cispes.org/article/world-water-day-organizations-call-repeal-privatizing-water-resources-law",
+        "https://www.laprensagrafica.com/elsalvador/Agua-del-lago-de-Ilopango-no-es-apta-para-potabilizar-para-usos-agropecuarios-ni-banarse-advierte-estudio-de-la-UES-20240322-0099.html",
+        "https://www.laprensagrafica.com/elsalvador/Se-estanca-la-cobertura-de-agua-potable-en-El-Salvador-20230924-0057.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00007",
+      "text": "The approval of the law was a shock to most Salvadorans unfamiliar with the cryptocurrency, and critics have commented on the involuntary nature of Bitcoin’s implementation. Article 7 of the Bitcoin law explicitly states that economic agents must accept all payment transactions offering Bitcoin as a form of payment when acquiring goods or services. In 2021 less than 40 percent of Salvadorans had any form of banking account, which only raised questions about the possibility of mass adoption. In the fall of 2023, the use of Bitcoin or the government-backed Chivo Wallet continued to decline.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 3674,
+      "body_end": 4269,
+      "source_links": [
+        "https://www.elsalvador.com/noticias/nacional/bitcoin-improvisacion-confusion/995939/2022/",
+        "https://www.jurisprudencia.gob.sv/DocumentosBoveda/D/2/2020-2029/2021/06/E75F3.PDF",
+        "https://www.laprensagrafica.com/economia/Bitcoin-en-El-Salvador-con-muy-poco-uso-para-pagos-y-remesas-20230901-0086.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00008",
+      "text": "The same year the Bitcoin Law came into effect, residents of several cantons in Berlin, Usulután, protested against the construction of wells for geothermal mining because of water scarcity, a mysterious creamy substance polluting their water, and deforestation caused by good construction. Public complaints were left unheard as activity at the plant continued.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 4271,
+      "body_end": 4633,
+      "source_links": [
+        "https://elfaro.net/es/202110/el_salvador/25790/La-comunidad-sin-agua-pero-con-bitcoin.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00009",
+      "text": "Volcano Energy, a renewable energy and Bitcoin mining company, announced the launch of Lava Pool last fall, which boasts the use of renewable energy to mine the currency. Users of the service can combine computational resources to mine Bitcoin, and Volcano Energy claims that they can potentially offset the overall environmental cost of Bitcoin mining. The company has also listed plans to construct a solar and wind power park, but its location has not yet been disclosed. While El Salvador has several renewable energy projects, most are going directly towards Bitcoin mining, an unsustainable practice because of Bitcoin mining’s resource demands.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 4635,
+      "body_end": 5286,
+      "source_links": [
+        "https://twitter.com/Volcano_Energy/status/1709071112959594604?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1709071112959594604%7Ctwgr%5E532f90382817c34225f98b29bb4a410aed008efe%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fcointelegraph.com%2Fnews%2Fel-salvador-first-bitcoin-mining-pool-volcano-energy-luxor",
+        "https://volcano.energy/en/el-salvador-launches-its-first-bitcoin-mining-pool-lava-pool/",
+        "https://volcano.energy/en/the-project/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00010",
+      "text": "Alex de Vries, researcher and founder of the Bitcoin Energy Consumption Index, has stated that more than half a percent of global energy consumption is related to Bitcoin mining. Many cryptocurrency critics and enthusiasts are aware of the power that Bitcoin mining consumes, which is precisely why renewable energy continues to appear alongside Bitcoin mining projects. Even in Iceland, geothermal energy fails to cover the costs of Bitcoin mining.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 5288,
+      "body_end": 5737,
+      "source_links": [
+        "https://www.greenpeace.org/usa/unveiling-bitcoins-water-consumption-with-alex-devries/",
+        "https://www.wired.com/story/iceland-bitcoin-mining-gallery/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00011",
+      "text": "Water consumption is a lesser-known problem plaguing Bitcoin. It is used for cooling, air humidification, and the generation of thermoelectric power. According to de Vries, Bitcoin miners in the United States consume up to 120 gigalitres of water annually, but the geographic location has a direct impact on how much water will be consumed. Despite having a significant amount of Bitcoin miners compared to the US, Kazakhstan has a larger water footprint due to its climate. This further raises questions about the viability of mining Bitcoin in the tropical climate of El Salvador.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 5739,
+      "body_end": 6321,
+      "source_links": [
+        "https://www.cell.com/cell-reports-sustainability/fulltext/S2949-7906(23)00004-6"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00012",
+      "text": "De Vries also commented that using different forms of renewables is not a viable solution, as hydroelectric power has the largest water consumption of all power sources. El Salvador currently utilizes hydroelectricity through The Lempa River Hydroelectric Executive Commission’s (CEL) four plants. The Lempa River Basin, where energy is sourced, experiences rampant pollution and contamination.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 6323,
+      "body_end": 6717,
+      "source_links": [
+        "https://www.cel.gob.sv/",
+        "https://www.elsalvador.com/noticias/nacional/contaminacion-del-agua-de-rios-rio-lempa-bajo-tecoluca-jiquilisco-usulutan-san-vicente-/1137301/2024/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00013",
+      "text": "Although the Bukele administration celebrates Bitcoin gains and progress in the race for “cultural supremacy,” the stark truth remains seen across several districts struggling for water equity. A survey conducted by the University Institute of Public Opinion (Iudop) of the José Simeón Cañas Central American University (UCA) in 2023 found that 40 percent of Salvadorans receiving water one day a week had access for less than six hours. This year, on World Water Day, Salvadoran organizations protested the General Water Resources Law, the privatization of water, and environmental concerns amid mass deforestation. As El Salvador sets a precedent for crypto investments, neighboring countries such as Honduras, Guatemala, and Costa Rica will begin to experience compounded water stress. Additionally, increasing regulation from global superpowers will only lead to the strategic placement of mining centers in regions with little environmental oversight. Consequently, smaller nations will be forced to shoulder crypto mining’s toll on water equity as increasing literature exposes the industry’s ramifications on US soil.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 6719,
+      "body_end": 7843,
+      "source_links": [
+        "https://bitcoinmagazine.com/culture/bitcoin-beach-spawns-offshoot",
+        "https://bitcoinmagazine.com/culture/inside-guatemalas-bitcoin-lake",
+        "https://cointelegraph.com/news/honduras-special-economic-zone-prospera-recognizes-bitcoin-unit-of-account",
+        "https://earthjustice.org/feature/cryptocurrency-mining-texas",
+        "https://twitter.com/nayibbukele/status/1768792062663459093",
+        "https://twitter.com/nayibbukele/status/1774993139574468787",
+        "https://www.elsalvador.com/fotogalerias/suministro-de-agua-potable-marcha-ley/1131438/2024/",
+        "https://www.elsalvador.com/noticias/nacional/40-poblacion-recibe-agua-un-dia/1048722/2023/",
+        "https://www.reuters.com/world/china/china-central-bank-vows-crackdown-cryptocurrency-trading-2021-09-24/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-813628-b00014",
+      "text": "Editorial note: this story has been amended on July 17, 2024, regarding Alex de Vries, researcher and founder of the Bitcoin Energy Consumption Index, who said that more than half a percent of global energy consumption is related to Bitcoin mining, instead of half of global energy consumption, as previously stated.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 7845,
+      "body_end": 8161,
+      "source_links": [],
+      "source_kind": "div",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "8256dd98ec724d7a3ecfa8bc3a9f8ee4369f9059453e9c128440886834fc9b17",
+  "word_count": 1262,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8161,
+  "retrieved_at": "2026-11-16T22:43:14.181288+00:00",
+  "raw_html_sha256": "a79a4d83748901d7b2c4f0fc757c98d53d4d17988dfb4f950e90221b73041333",
+  "resolved_source_url": "https://globalvoices.org/2024/05/31/bitcoin-minings-toll-on-el-salvador-leaves-communities-without-water/",
+  "canonical_url": "https://globalvoices.org/2024/05/31/bitcoin-minings-toll-on-el-salvador-leaves-communities-without-water/",
+  "source_bytes": 192413,
+  "authors": [
+    {
+      "name": "Abigail Paz",
+      "url": "https://globalvoices.org/author/abigail-paz/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 813628,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "a79a4d83748901d7b2c4f0fc757c98d53d4d17988dfb4f950e90221b73041333",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-a548adbf58a0208a623f",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-05",
+    "eligible_month_documents": 88,
+    "selected_month_documents": 74,
+    "inclusion_probability": 0.8409090909090909,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Abigail Paz",
+  "body_start": 472,
+  "body_end": 8633,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b2270259728077558870a24ef49df39ad164b2fc38e58bb75523be0c679faa30",
+  "text_path": "articles/gv-813628.txt",
+  "metadata_path": "metadata/gv-813628.json",
+  "attribution": "This story by Abigail Paz originally appeared on Global Voices. https://globalvoices.org/2024/05/31/bitcoin-minings-toll-on-el-salvador-leaves-communities-without-water/",
+  "content_sha256": "0d8fb8c0b6f5e92709fe4c757ab698cc1ed056bf13f9dd49411d94e074fbde68",
+  "source_sha256": "a79a4d83748901d7b2c4f0fc757c98d53d4d17988dfb4f950e90221b73041333",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

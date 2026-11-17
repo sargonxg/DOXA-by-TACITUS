@@ -1,0 +1,391 @@
+{
+  "id": "gv-765412",
+  "publisher_id": 765412,
+  "source_id": "globalvoices:765412",
+  "source_url": "https://globalvoices.org/2022/07/06/disinformation-2-0-should-we-bring-the-notion-of-propaganda-back-into-public-discourse/",
+  "title": "Disinformation 2.0: Should we bring the notion of propaganda back into public discourse?",
+  "published_at": "2022-07-06T16:20:23Z",
+  "modified_at": "2022-07-06T19:13:56Z",
+  "api_author_id": 2988,
+  "api_content_sha256": "ad00501e21b5119dd88ce2cd8856b4ec3d5b9cc4c1583864da5df45fd1f4d0c7",
+  "api_response_sha256": "f4425e0cc6f25b6ac16f6363f58dfc84f7aa5ffdba14493b11746f2d4fb190c4",
+  "api_retrieved_at": "2026-11-16T22:20:45.487007+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-765412-b00001",
+      "text": "Disinformation is a buzzword and the source of significant disruption and conflict across the globe. Starting with the Donald Trump presidency — with its accusations of “fake news” — disrupted elections and inauthentic comments flooding social media discussions have become a commonplace, yet very irritating part of online reality. Significantly, throughout the COVID-19 pandemic, the unintentional spread of disinformation added a burden on health services when the rise of conspiracies was evident beyond the anti-vaccination movement. Governments, activists and scholars invest significant human and financial resources to study the phenomenon of disinformation and find ways to tackle it.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 693,
+      "source_links": [
+        "https://globalvoices.org/-/special/covid-19/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00002",
+      "text": "The power of disinformation",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 695,
+      "body_end": 722,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00003",
+      "text": "There are several arguments currently circulating about what disinformation is and how it works. The first set is attributed to the way social media and other IT platforms operate. Broadly, they argue that social media uses algorithms that favour extreme, divisive and emotionally charged content which often leads to radicalisation and fuels more misinformation. In the same vein, the specifics of data management create opportunities for targeted information campaigns. It is based on the access to large accumulated sets of personal information, which are used to analyse human behaviour and reach out to different religious, ethnic and racial groups. Such data is widely available for sale in the open and on the black market. Promoted posts and paid ads are the tools of targeted communication available across different IT platforms, including search engines, and they have a significant impact when applied to political information.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 724,
+      "body_end": 1663,
+      "source_links": [
+        "https://theconversation.com/its-not-just-a-social-media-problem-how-search-engines-spread-misinformation-152155",
+        "https://www.theguardian.com/world/2019/nov/05/targeted-ads-fake-news-clickbait-surveillance-capitalism-data-mining-democracy"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00004",
+      "text": "Another set of arguments is often less vocal, but likely more important. The global downfall of the public sphere in the information society is raising the level of mistrust in governments and institutions, which are now unable to provide complete and unbiased information about social processes. What Leah Lievrouw, professor in the Department of Information Studies at the University of California, Los Angeles, observed for Pew Research Center report on Future of Truth and Misinformation online back in 2017 is still relevant today:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1665,
+      "body_end": 2201,
+      "source_links": [
+        "https://www.pewresearch.org/internet/2017/10/19/the-future-of-truth-and-misinformation-online/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00005",
+      "text": "> So many players and interests see online information as a uniquely powerful shaper of individual action and public opinion in ways that serve their economic or political interests (marketing, politics, education, scientific controversies, community identity and solidarity, behavioral ‘nudging,’ etc.). These very diverse players would likely oppose (or try to subvert) technological or policy interventions or other attempts to insure the quality, and especially the disinterestedness, of information.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 2203,
+      "body_end": 2707,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-765412-b00006",
+      "text": "At the same time, watchdogs such as journalists and the non-profit sector may not follow public interest, being instead linked to the commodification of information in the information economy. The lack of institutionalised deliberation forums pushes people to social media, which has become an almost exclusive platform for participating in social and political life, as well as the place fostering social polarization, xenophobia and the spreading of false news.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2709,
+      "body_end": 3172,
+      "source_links": [
+        "https://www.annualreviews.org/doi/10.1146/annurev-economics-081919-050239"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00007",
+      "text": "Yet, it is not only the problems of the civic context that may amplify the disinformation spread but the citizens’ role in consuming and sharing information. Research on the psychology of misinformation highlights that people, on average, are neither incapable of distinguishing false information from genuine nor willing to share misleading information. One of the drivers that affect the spread of misinformation that scholars acknowledge is the phenomenon of “lazy thinking” — the pattern of thinking that demands less cognitive effort. People, as they are, tend to follow their emotions and intuition when consuming and sharing content, and make their decisions based not only on the content itself but the metadata of the media item, such as the assumed authenticity of the author of the publication or the number of engagements.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 3174,
+      "body_end": 4008,
+      "source_links": [
+        "https://www.apa.org/news/apa/2020/fake-news.",
+        "https://www.scientificamerican.com/article/most-people-dont-actively-seek-to-share-fake-news/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00008",
+      "text": "The disinformation apocalypse today is driven by a mixture of these factors: the degrading political context, the lack of effort from IT platforms and the simple fact of human nature. There is strong concern that even a complex misinformation campaign relying on success in all three directions could encourage a negative attitude change among the people. This is despite the fact that IT professionals dealing with online influence campaigns or marketing report that, on average, the impact of targeted advertising in political and marketing communication has a small effect on targeted groups. In other words, a targeted advertising campaign can convince a person with an already established attitude but is not enough to make a radical change in the way an individual is thinking. In their book Network Propaganda, Benkler, Faris and Roberts suggest that while observing data manipulation and online spread of disinformation is important, it’s worth remembering the impact it has, and Russian disinformation efforts had very little impact, yet they have exploited the existing conflicts within the American society.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 4010,
+      "body_end": 5128,
+      "source_links": [
+        "https://oxford.universitypressscholarship.com/view/10.1093/oso/9780190923624.001.0001/oso-9780190923624",
+        "https://www.wired.com/story/ad-tech-could-be-the-next-internet-bubble/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00009",
+      "text": "Why is Russian disinformation working amidst the war in Ukraine?",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 5130,
+      "body_end": 5194,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00010",
+      "text": "The recent spike of disinformation around the war in Ukraine highlights an interesting pattern. While the Ukrainian information campaign appears successful in delivering a strong and influential agenda in Western countries, Russian disinformation is targeting the rest of the world, including BRICS countries, Asia and Africa. Contrary to the narratives of the Ukrainian side aiming to raise awareness of war crimes happening there or to demonstrate the strength of Ukrainian resistance, the Russian disinformation campaign is run in a scattered way, spreading messages that implicitly aim to resonate with existing attitudes in the targeted population.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 5196,
+      "body_end": 5849,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/BRICS"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00011",
+      "text": "As Carl Miller, director of the Centre for the Analysis of Social Media at the Demos think tank in London, claims in his piece for The Atlantic:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 5851,
+      "body_end": 5995,
+      "source_links": [
+        "https://www.theatlantic.com/ideas/archive/2022/04/russian-propaganda-zelensky-information-war/629475/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00012",
+      "text": "> Disinformation campaigns are far more effective when they have a powerful truth at their core and use that truth to guide discussion. The blunt reality is that in many parts of the world, antipathy for the West is deep and sympathy for Russia is real. It is in these contexts where I’d expect influence operations to be targeted—and to work.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 5997,
+      "body_end": 6340,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-765412-b00013",
+      "text": "His team's recent research analysing the corpus of posts spread with the hashtags #istandwithputin and #istandwithrussia highlights the circulation of narratives of western hypocrisy, NATO expansionism and BRICS solidarity in the selected regions.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 6342,
+      "body_end": 6589,
+      "source_links": [
+        "https://files.casmtechnology.com/message-based-community-detection-on-twitter.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00014",
+      "text": "Despite the fact that Russia’s digital disinformation strategy is driven and delivered by modern IT tools, in essence, it is similar to propaganda techniques. The aim is to legitimise certain narratives by injecting them into the media ecosystem and then repeating them so they become the new common sense for the population. It is amplified by internet technology, allowing for the production of content that is fake, but credible to the inexperienced or inattentive, that mimics reality.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 6591,
+      "body_end": 7080,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00015",
+      "text": "The return to propaganda",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 7082,
+      "body_end": 7106,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00016",
+      "text": "Despite the visible efficiency of disinformation, the audience must be prepared for an attitude change to take place. This can be a result of what Jacques Ellul conceptualised back in the 1960s as pre-propaganda — the conditioning of minds with vast amounts of incoherent information, already dispensed for ulterior purposes and posing as “facts” and as “education,” which “without direct or noticeable aggression is limited to creating ambiguities, reducing prejudices, and spreading images, apparently without purpose.” Pre-propaganda essentially becomes the underlying goal of Kremlin geopolitical information campaigns, as Russian trolls adopt the cold-war techniques: from the disruption of the 2016 US elections to the case justifying the Russian invasion of Ukraine.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 7108,
+      "body_end": 7881,
+      "source_links": [
+        "https://harpers.org/archive/2021/09/bad-news-selling-the-story-of-disinformation/",
+        "https://monoskop.org/images/4/44/Ellul_Jacques_Propaganda_The_Formation_of_Mens_Attitudes.pdf",
+        "https://www.brookings.edu/techstream/how-russian-trolls-are-adapting-cold-war-propaganda-techniques/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00017",
+      "text": "The explanatory power of the term “pre-propaganda” becomes more evident compared to the overused term of disinformation. Many information manipulation campaigns become more sophisticated and dispersed, aiming to have a psychological effect on the audience by creating an alternate picture of reality. Disinformation is just one of the elements producing an informational impact on societal imagination structured around dominant narratives and ideas.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 7883,
+      "body_end": 8333,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00018",
+      "text": "Returning to the case of Russia, the reaction of the general public that wholeheartedly supported the invasion, despite having a strong negative attitude towards war, must not be neglected. This is strong evidence of domestic propaganda that used a lot of disinformation to inoculate public attitudes over time. In these cases, and in the cases coming, focusing on disinformation per se, and targeting fake news may not be enough to prevent political disruption and conflict.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 8335,
+      "body_end": 8810,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-765412-b00019",
+      "text": "Please visit the project page for more pieces from the Unfreedom Monitor.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 8812,
+      "body_end": 8885,
+      "source_links": [
+        "https://advox.globalvoices.org/special/unfreedom-monitor/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "d2fd70acd202ea9d492683e2bf97242ad31ba1b7965a6c3984daa82f89f1163d",
+  "word_count": 1337,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 8885,
+  "retrieved_at": "2026-11-16T22:35:25.511485+00:00",
+  "raw_html_sha256": "b42e9f5cb165e32eafc155bd880a28c5068ec39b7344f3f2a26236f76b1bf895",
+  "resolved_source_url": "https://globalvoices.org/2022/07/06/disinformation-2-0-should-we-bring-the-notion-of-propaganda-back-into-public-discourse/",
+  "canonical_url": "https://globalvoices.org/2022/07/06/disinformation-2-0-should-we-bring-the-notion-of-propaganda-back-into-public-discourse/",
+  "source_bytes": 194169,
+  "authors": [
+    {
+      "name": "Olga Solovyeva",
+      "url": "https://globalvoices.org/author/olgasolovyeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 765412,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "b42e9f5cb165e32eafc155bd880a28c5068ec39b7344f3f2a26236f76b1bf895",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-85a5eb5d3bb2dfcc9dba",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-07",
+    "eligible_month_documents": 79,
+    "selected_month_documents": 66,
+    "inclusion_probability": 0.8354430379746836,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Olga Solovyeva",
+  "body_start": 512,
+  "body_end": 9397,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "172869b4219be141ccc71b3e70da78745caf9638649734d9418ac54dc2b0a459",
+  "text_path": "articles/gv-765412.txt",
+  "metadata_path": "metadata/gv-765412.json",
+  "attribution": "This story by Olga Solovyeva originally appeared on Global Voices. https://globalvoices.org/2022/07/06/disinformation-2-0-should-we-bring-the-notion-of-propaganda-back-into-public-discourse/",
+  "content_sha256": "87f3af8a1e8164731b9d3a3fb1526147b9179e6ff008db27929a66ccad8d906b",
+  "source_sha256": "b42e9f5cb165e32eafc155bd880a28c5068ec39b7344f3f2a26236f76b1bf895",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,514 @@
+{
+  "id": "gv-695811",
+  "publisher_id": 695811,
+  "source_id": "globalvoices:695811",
+  "source_url": "https://globalvoices.org/2020/01/30/how-zimbabwes-biometric-id-scheme-and-chinas-ai-aspirations-threw-a-wrench-into-the-2018-election/",
+  "title": "How Zimbabwe's biometric ID scheme — and China’s AI aspirations — threw a wrench in elections",
+  "published_at": "2020-01-30T19:19:28Z",
+  "modified_at": "2020-01-31T15:28:14Z",
+  "api_author_id": 2571,
+  "api_content_sha256": "145e7db9e6646e559aa85a20eac75b512bd15ff4e93091723e6ca33199e6ba83",
+  "api_response_sha256": "3390ca1fcc4f1c57431caafba57c9783cc7cc7ec234f150bc4b9743fc1151e5c",
+  "api_retrieved_at": "2026-11-16T22:20:21.760310+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 145,
+      "count": 827,
+      "name": "Zimbabwe",
+      "slug": "zimbabwe",
+      "parent": 15
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-695811-b00001",
+      "text": "Editor's note: This piece is part of a series on digital ID systems, produced in partnership with The Engine Room. Visit the Digital ID microsite to read a full research report on this global trend, and case studies on five countries that have deployed digital ID systems, including Zimbabwe.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 292,
+      "source_links": [
+        "https://digitalid.theengineroom.org/",
+        "https://digitalid.theengineroom.org/assets/pdfs/200123_FINAL_TER_Digital_ID_Report+Annexes_English_Interactive.pdf",
+        "https://digitalid.theengineroom.org/assets/pdfs/[English]%20Zimbabwe%20Case%20Study%20-%20DigitalID%20-%20The%20Engine%20Room.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00002",
+      "text": "In July 2018, Zimbabweans went to the polls for the first time since the ousting of long-time (now deceased) leader Robert Mugabe, who had held power for nearly 30 years. This may have been promising from an outsider's perspective, but the heavily contested elections did not inspire confidence in Zimbabwean voters.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 294,
+      "body_end": 610,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00003",
+      "text": "Weeks after polling day, when results had not yet been released, hundreds of people took to the streets of the capital Harare to protest the delays, with many fearing that the Zimbabwean Electoral Commission (ZEC) had rigged the results in favor of then-Vice President Emerson Mnangagwa, who took office shortly after Mugabe’s ouster.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 612,
+      "body_end": 946,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00004",
+      "text": "But vicious party politics were not the only reason Zimbabweans distrusted the results of this particular election. In the months leading up to the vote, something else had been happening, something new: The government had begun to collect citizens’ biometric data, as part of the voter registration process.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 948,
+      "body_end": 1256,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00005",
+      "text": "In previous elections, citizens could visit any polling station and vote just by showing their conventional ID cards, which contained their name, ID number, date and place of birth and date of issue. After voting, one's finger would be smeared with indelible ink to avoid double voting. Now, citizens suddenly had to submit their photos, fingerprints, national identity numbers and home addresses into one integrated and digitized system. If they did not do this, they were told, they might be barred from voting. This increased public fears of monitoring and intimidation, already a common theme for elections in Zimbabwe.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1258,
+      "body_end": 1881,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00006",
+      "text": "The system was touted both by ruling party and opposition voices as a strong guard against “ghost” voters and other types of election fraud. But its underlying technology was not built with these issues in mind. Nor was it built in Zimbabwe.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1883,
+      "body_end": 2124,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00007",
+      "text": "China’s ‘AI foray’ into southern Africa",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2126,
+      "body_end": 2165,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00008",
+      "text": "The government of Zimbabwe signed a strategic partnership with CloudWalk Technology, a Chinese company that has become a leader in the field of facial recognition, in March 2018. The objective of the partnership was to commence a large-scale facial recognition program in Zimbabwe, which government officials said would be used to preserve “law and order,” and then expanded to other public sector programs.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2167,
+      "body_end": 2574,
+      "source_links": [
+        "http://www.globaltimes.cn/content/1097747.shtml",
+        "https://allafrica.com/stories/201910090185.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00009",
+      "text": "Chris Mutsvangwa, a special adviser to President Mnangagwa (and Zimbabwe’s former ambassador to China) told the Herald:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2576,
+      "body_end": 2695,
+      "source_links": [
+        "https://allafrica.com/stories/201910090185.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00010",
+      "text": "> An ordinary Zimbabwean probably won’t believe that you can buy your groceries or pay your electricity bill by scanning your face, but this is where this technology is taking us…as government, we are happy because we are moving with the rest of the world.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2697,
+      "body_end": 2953,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695811-b00011",
+      "text": "Part of the Chinese government’s Belt and Road initiative, this agreement made Zimbabwe one of the first countries in southern Africa to adopt this technology.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2955,
+      "body_end": 3114,
+      "source_links": [
+        "https://en.m.wikipedia.org/wiki/Belt_and_Road_Initiative"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00012",
+      "text": "The relationship between the two countries is not new — with hundreds of millions of dollars invested in various sectors of Zimbabwe’s ailing economy, China has a strong interest in Zimbabwe’s political affairs. Chinese President Xi Jinping has frequently expressed his desire to spread China’s communist leadership style to political parties worldwide and he has found a willing taker in Zimbabwe’s ruling party, the Zimbabwe African National Union-Patriotic Front.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3116,
+      "body_end": 3582,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00013",
+      "text": "China is eager to produce the world’s best AI and Chinese companies are turning to Africa to speed up their algorithms’ diversity training. Rolling out the technology in a majority African population will allow CloudWalk to more clearly identify other ethnicities, potentially placing the Chinese firm steps ahead of US and European developers.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3584,
+      "body_end": 3928,
+      "source_links": [
+        "https://qz.com/africa/1287675/china-is-exporting-facial-recognition-to-africa-ensuring-ai-dominance-through-diversity/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00014",
+      "text": "CloudWalk uses 3D light facial software, which is purportedly better than other facial recognition programs at reading dark-skinned faces. The deal allows CloudWalk to train its algorithms on data taken from Zimbabwean citizens. The resulting information is meant to help China build one of the world’s most inclusive and racially-diversified facial recognition databases.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3930,
+      "body_end": 4302,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00015",
+      "text": "But at what cost to Zimbabwe’s fragile democracy, and to Zimbabweans’ privacy?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4304,
+      "body_end": 4382,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00016",
+      "text": "Digital ID and distrust in the 2018 election",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4384,
+      "body_end": 4428,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00017",
+      "text": "Opposition parties and civil society organizations had in fact pressed for electoral reforms that included the adoption of the biometric voter registration (BVR), with the hope of eradicating the persistent problem of “ghost” voters in almost every election.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4430,
+      "body_end": 4688,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00018",
+      "text": "Yet while it may have helped eliminate the problem of ghost voters, the BVR system also became a new tool of voter intimidation.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4690,
+      "body_end": 4818,
+      "source_links": [
+        "https://www.bbc.com/news/world-africa-45299176"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00019",
+      "text": "“Some citizens thought it was a way of ZEC trying to gather personal information about them and could easily be tracked down using their details of photos, addresses and fingerprints,” said digital rights activist and cybersecurity expert Arthur Gwagwa.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4820,
+      "body_end": 5073,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00020",
+      "text": "In the end, despite all the preparation and data collection, poll workers only asked for voters’ conventional ID cards. There was no checking of voters’ photographs or fingerprints as part of the voting process, and officials offered no explanation for this decision.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5075,
+      "body_end": 5342,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00021",
+      "text": "But poll workers were not the only people who asked for this information. On the day after elections, agents of the ruling party went on a door-to-door campaign recording BVR registration slip serial numbers. One community advocacy group reported that ruling party agents had instructed some voters to submit the serial numbers on their registration slips along with their ID numbers — so that the ruling party could ascertain who they had voted for.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5344,
+      "body_end": 5794,
+      "source_links": [
+        "http://kubatana.net/2018/01/30/villagers-forced-surrender-voter-registration-slips-traditional-leaders-zanu-pf-activists/",
+        "https://www.voazimbabwe.com/a/zimbabwe-serial-numbers-elections/4375045.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00022",
+      "text": "Human Rights Watch Southern Africa Director Dhewa Mavhinga told Global Voices, “In principle, the BVR system is secure, but, as the case of Zimbabwe showed, its integrity is compromised when it is used by institutions like the Zimbabwe Electoral Commission that had questionable independence.”",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5796,
+      "body_end": 6089,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00023",
+      "text": "Human rights activist and academic Adolf Mavheneke told Global Voices:",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6091,
+      "body_end": 6161,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00024",
+      "text": "> The generality of Zimbabweans do not understand this [biometric] technology let alone those in rural areas. ZEC should take it upon themselves to educate Zimbabweans about this technology, how it works, and why the biometric choice.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6163,
+      "body_end": 6397,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-695811-b00025",
+      "text": "Cybersecurity expert Arthur Gwagwa highlighted two cases of alleged interference with election data en masse — one with data in the election commission’s servers, and the other concerning the “black-boxing” of the ballot paper’s security features. This lack of transparency eroded trust and confidence in biometric technology but it also marred the verifiability and audit of the system’s technical functionality.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6399,
+      "body_end": 6812,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00026",
+      "text": "What does the future hold for Zimbabweans — and their data?",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6814,
+      "body_end": 6873,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00027",
+      "text": "Zimbabwe does not have a data protection law, and the National Assembly has yet to debate the risks of surveillance on citizens. Such issues in Zimbabwe are peremptorily dismissed by parliamentary officials, on grounds of national security.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6875,
+      "body_end": 7115,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00028",
+      "text": "Among the public and in civil society groups, there is increasing concern that China is de facto creating a future of tech-driven authoritarianism, where its technology transfers are deliberately being deployed to limit freedom of expression and the development of democratic movements.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7117,
+      "body_end": 7403,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00029",
+      "text": "Adolf Mavheneke told Global Voices that election preparation and management in Zimbabwe has long been associated with questionable business agreements like the partnership with CloudWalk.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7405,
+      "body_end": 7592,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-695811-b00030",
+      "text": "> Not very long ago, as in the 2013 elections, it was a company called Nikuv from Israel which was involved in…[manipulating] the voter’s roll. So CloudWalk is no exception as its presence feeds a familiar narrative in the history of elections in Zimbabwe. The intention might have been good but one wonders why from China, a country which is not familiar with elections.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 7594,
+      "body_end": 7965,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "41bfd1afa11e7e8904662fb4fd8f0fec75cab4f287b3cfdedc3ace0a6d15d834",
+  "word_count": 1239,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7965,
+  "retrieved_at": "2026-11-16T22:21:46.259480+00:00",
+  "raw_html_sha256": "a07de33826c5bfd820899cf67f1fd61f461cb987052c0ed94025be1210ead851",
+  "resolved_source_url": "https://globalvoices.org/2020/01/30/how-zimbabwes-biometric-id-scheme-and-chinas-ai-aspirations-threw-a-wrench-into-the-2018-election/",
+  "canonical_url": "https://globalvoices.org/2020/01/30/how-zimbabwes-biometric-id-scheme-and-chinas-ai-aspirations-threw-a-wrench-into-the-2018-election/",
+  "source_bytes": 193145,
+  "authors": [
+    {
+      "name": "Kudzai Chimhangwa",
+      "url": "https://globalvoices.org/author/kudzai-chimhangwa/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 695811,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "a07de33826c5bfd820899cf67f1fd61f461cb987052c0ed94025be1210ead851",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-b4fa93482535ae2a0e29",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-01",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Kudzai Chimhangwa",
+  "body_start": 531,
+  "body_end": 8496,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "ce330d9b4e7a0290766e5f1ee4a2ce2dd41371c12c1f7535d96bedf0eca1ebcb",
+  "text_path": "articles/gv-695811.txt",
+  "metadata_path": "metadata/gv-695811.json",
+  "attribution": "This story by Kudzai Chimhangwa originally appeared on Global Voices. https://globalvoices.org/2020/01/30/how-zimbabwes-biometric-id-scheme-and-chinas-ai-aspirations-threw-a-wrench-into-the-2018-election/",
+  "content_sha256": "a592eeb2385c798c6c15abdab4a6635e23ef7e7f0f1c2b7641bea557cd07021a",
+  "source_sha256": "a07de33826c5bfd820899cf67f1fd61f461cb987052c0ed94025be1210ead851",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

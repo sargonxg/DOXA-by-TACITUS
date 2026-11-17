@@ -1,0 +1,567 @@
+{
+  "id": "gv-694619",
+  "publisher_id": 694619,
+  "source_id": "globalvoices:694619",
+  "source_url": "https://globalvoices.org/2020/01/21/how-fake-news-and-disinformation-were-spread-in-the-run-up-to-taiwans-presidential-elections/",
+  "title": "How ‘fake news’ and disinformation were spread in the run-up to Taiwan's presidential elections",
+  "published_at": "2020-01-21T01:09:39Z",
+  "modified_at": "2024-01-15T03:10:39Z",
+  "api_author_id": 1856,
+  "api_content_sha256": "1397b4ce2dfaf3b82e29419a1f455d875d4895f962117de6b09dee04868ca250",
+  "api_response_sha256": "3390ca1fcc4f1c57431caafba57c9783cc7cc7ec234f150bc4b9743fc1151e5c",
+  "api_retrieved_at": "2026-11-16T22:20:21.760310+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 48,
+      "count": 960,
+      "name": "Taiwan (ROC)",
+      "slug": "taiwan-roc",
+      "parent": 16
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-694619-b00001",
+      "text": "This post first appeared in the online magazine New Bloom on January 6, 2020, before the presidential election took place in Taiwan. This edited version is being republished on Global Voices under a content partnership agreement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 229,
+      "source_links": [
+        "https://newbloommag.net/2020/01/06/puma-shen-interview/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-694619-b00002",
+      "text": "Puma Shen (沈伯洋), assistant professor at the National Taipei University’s Graduate School of Criminology and director of the Taiwan-based NGO DoubleThink Labs, which conducts research on disinformation, speaks with Brian Hioe, who writes for the online publication New Bloom, about the dissemination of ‘fake news’ just before Taiwan’s presidential elections on January 11, 2020.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 231,
+      "body_end": 609,
+      "source_links": [
+        "http://National Taipei University’s Graduate School of Crimin…",
+        "https://globalvoices.org/2020/01/11/taiwan-presidential-election-tsai-ing-wen-re-elected-with-recording-breaking-votes/",
+        "https://newbloommag.net/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-694619-b00003",
+      "text": "In recent years, China has spread disinformation as a means to influence Taiwan elections and Swedish democracy watchdog V-Dem’s 2019 global report describes Taiwan as the world’s most targeted place for disinformation tactics. On December 31, 2019, about 10 days before the elections, the country passed the Anti-infiltration law as a means to crackdown on the spread of election disinformation.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 611,
+      "body_end": 1007,
+      "source_links": [
+        "https://globalvoices.org/2020/01/08/ahead-of-taiwans-presidential-elections-kmt-accuses-dpp-of-green-terror-and-beijing-echoes/",
+        "https://www.v-dem.net/media/filer_public/99/de/99dedd73-f8bc-484c-8b91-44ba601b6e6b/v-dem_democracy_report_2019.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-694619-b00004",
+      "text": "Brian Hioe (BH): What do you think are the key means by which disinformation disseminates in Taiwan, and what is different about the way it spreads through these platforms?",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1009,
+      "body_end": 1181,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-694619-b00005",
+      "text": "> Puma Shen (PS): In general, we can divide the dissemination channels into two categories. One is ‘online’. The other is ‘offline’. Online, it’s through Facebook, or through ‘content farms’ which are often based in Malaysia, with some in Taiwan. Many content farms also have fan pages on Facebook to spread the news.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1183,
+      "body_end": 1500,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Content_farm"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00006",
+      "text": "> This is how they were doing it last year, anyway. This year is different. Many fan pages were deleted this year, so now they first create content farm articles and then recruit individual netizens to earn an income by helping them to spread their contents. These freelancers are often Malaysian, overseas Chinese or Taiwanese people.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1502,
+      "body_end": 1837,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00007",
+      "text": "> There are also some pro-China political parties which operate their own content farms in Taiwan. They quite often have connections with Chinese authorities.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1839,
+      "body_end": 1997,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00008",
+      "text": "> Regarding the offline element of fake news, this is more difficult to tackle. First, there are ‘rumors’. These rumors often come from village borough chiefs or heads of temples. While holding events, they’ll make use of the occasions to spread rumors.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1999,
+      "body_end": 2252,
+      "source_links": [
+        "https://news.ltn.com.tw/news/politics/paper/1334453"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00009",
+      "text": "> These word-of-mouth rumors usually circulate widely in grassroots communities, either to generate fear or to spread a positive image of China.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2254,
+      "body_end": 2398,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00010",
+      "text": "> Nowadays, the dissemination of this kind of rumors has become more advanced. The rumor mongers put texts online or use LINE's chat groups to disseminate. In the last few months, we can see about half of the fake news in Line groups originates from China according to our research finding. The content of these rumors do not always [take the form of] text; about half are YouTube videos.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2400,
+      "body_end": 2788,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Line_(software)"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00011",
+      "text": "BH: Who is behind these content farms?",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2790,
+      "body_end": 2828,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-694619-b00012",
+      "text": "> PS: Sometimes you’ll be able to track down companies that are from China, but sometimes they’re just overseas Han Chinese. They started these content farms to make money off Chinese authorities like the United Front Work Department, as the Department has huge amount of budget to sponsor pro-China politicians’ election campaigns",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2830,
+      "body_end": 3161,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/United_Front_Work_Department"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00013",
+      "text": "> The social media based news outlets which have direct affiliations with the Chinese Communist Party (CCP) are mostly based in China, with a few in Hong Kong. As far as commercial content farms go, many are based in Malaysia.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3163,
+      "body_end": 3389,
+      "source_links": [
+        "https://www.twreporter.org/a/information-warfare-business-disinformation-fake-news-behind-line-groups"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00014",
+      "text": "BH: I remember there were attempts by Chinese people to buy Taiwanese Facebook pages last year.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3391,
+      "body_end": 3486,
+      "source_links": [
+        "https://newbloommag.net/2019/04/13/fb-page-approach-china/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-694619-b00015",
+      "text": "> PS: Yes. I think that’s less effective now. They wanted to use the pages to post content farm articles, but that's not an effective strategy since they would be sanctioned for circulating contents that violate community rules — so the taking over of pages on Facebook only lasted for about a month.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3488,
+      "body_end": 3788,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00016",
+      "text": "BH: What’s different about the ‘fake news’ strategies adopted for this election, as compared to the past?",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3790,
+      "body_end": 3895,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-694619-b00017",
+      "text": "> PS: Due to the changes in Facebook’s policy, it’s now more difficult to run content farms, so I believe that they have adjusted their strategies.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3897,
+      "body_end": 4044,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00018",
+      "text": "> First is LINE. Disinformation continues to spread on LINE and much of it is produced by ‘little pinks’ or online patriots on Weibo or WeChat, China's most popular social media platforms.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4046,
+      "body_end": 4234,
+      "source_links": [
+        "http://weibo stock",
+        "https://chinadigitaltimes.net/2016/08/little-pinks-new-face-chinese-nationalism/",
+        "https://en.wikipedia.org/wiki/WeChat"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00019",
+      "text": "> Compared with LINE, disinformation spread on YouTube has become a more severe problem. Since October [2019], a large number of videos emerged on YouTube spreading disinformation. Since video production involves script writing, video editing, background music [and] adding subtitles, it requires coordinated teamwork and resources. Some of these channels can upload several videos in one day.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4236,
+      "body_end": 4629,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00020",
+      "text": "> Last year, a survey showed that YouTube is a key source of information for the supporters of KMT's [the Kuomintang of China] presidential candidate, Han Kuo-yu. Information operations on YouTube have a strategic value.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4631,
+      "body_end": 4851,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Han_Kuo-yu",
+        "https://en.wikipedia.org/wiki/Kuomintang"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00021",
+      "text": "> We believe they [Youtube channels] are either operated by subcontractors of political propaganda backed by Beijing, or they are directly operated by the Chinese authorities. We observed that some of these channels use simplified Chinese in their subtitles and captions. Some YouTubers use idiomatic phrases from China when they talk; sometimes, their subtitles are mixed with simplified Chinese. Recently, there have been more Taiwanese YouTubers joining the disinformation industry.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4853,
+      "body_end": 5338,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00022",
+      "text": "BH: So would you say that the operators of disinformation have switched to hiring more Taiwanese agents?",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5340,
+      "body_end": 5444,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-694619-b00023",
+      "text": "> PS: Yes, because it’s too easy to tell if the Chinese themselves are doing it. Getting Taiwanese to do it is more effective — but the people that take up this kind of job are primarily interested in it for the money. Usually, they just perform according to the script given to them — so if you analyze the script, you can identity where it comes from, as expressions in Taiwan and China are very different.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5446,
+      "body_end": 5854,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00024",
+      "text": "BH: How do you propose to combat ‘fake news’?",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5856,
+      "body_end": 5901,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-694619-b00025",
+      "text": "> PS: Tracking down the sources of fake news is important. If the information is ‘made in China’, people will be more cautious of its intention and question whether it aims at influencing the election.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5903,
+      "body_end": 6104,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00026",
+      "text": "> Clarification is very important. But the majority of these types of information operations are not fake news; they aim at creating narratives, or stories, to create bias in people's minds.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6106,
+      "body_end": 6296,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00027",
+      "text": "> For example, if you keep receiving information telling you that the American economy is bad while China's is big and powerful, the message would be imprinted in your head. You might then wonder if Taiwan should distance itself from the United States and develop closer economic relations with China.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6298,
+      "body_end": 6599,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00028",
+      "text": "> Reports about China being big and powerful aren’t fake news, as there are definitely some positive aspects to its economy, so this kind of information bias is difficult to counteract.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6601,
+      "body_end": 6786,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00029",
+      "text": "BH: How do NGOs and government authorities address the problem?",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6788,
+      "body_end": 6851,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-694619-b00030",
+      "text": "> PS: Taiwan has many NGOs fighting against disinformation. They keep track of content farms, analyze disinformation and promote media literacy.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6853,
+      "body_end": 6997,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00031",
+      "text": "> The government also responds to fake news very quickly. Organizations such as Taiwan FactCheck Center and Co-Facts are doing fact checking on a daily basis, but we have no response system on political narratives yet. Thus far, we can only rely on disclosing the source of the narratives. This is what our organization is working on now.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 6999,
+      "body_end": 7337,
+      "source_links": [
+        "https://tfc-taiwan.org.tw",
+        "https://www.splicemedia.com/cofacts-fake-news-taiwan/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00032",
+      "text": "BH: Is Taiwan's experience with disinformation a useful reference for other regions in the world?",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 7339,
+      "body_end": 7436,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-694619-b00033",
+      "text": "> PS: I think so — like the example of Russia [which] has engaged in disinformation operations against a number of countries, such as the Czech Republic. As a result, the Czech Republic can share the experience of dealing with Russian disinformation efforts with other countries. Similarly, Taiwan can share its experience with other countries confronting China.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 7438,
+      "body_end": 7800,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00034",
+      "text": "> Taiwan is a very good testing ground for analyzing China's disinformation operations; through our researches, we have developed a sensitivity on some of distinctive features of the disinformation operators, such as their orchestration network and linguistic characters.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 7802,
+      "body_end": 8073,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00035",
+      "text": "> Another example is an online campaign that took place on Instagram and Facebook one month ahead of [Taiwan's] presidential elections. Quite a number of individuals were uploading photos and videos of themselves putting their hand on their chest, and talking about how they were going to vote. The majority of them were criticizing the slow-growing economy. The campaign looked like a spontaneous act, but Taiwanese would find it very awkward because of the linguistic expression, such as the use of the hashtag ‘Declaring my voting intention’ (#宣告我的投票意志) — this is just not the way that Taiwanese talk and write.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 8075,
+      "body_end": 8689,
+      "source_links": [
+        "https://newtalk.tw/news/view/2019-12-20/343092"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-694619-b00036",
+      "text": "> Through our research, we have developed tools to analyze the ‘made in China’ information, and would very much like to share [our findings] with other countries and help them to resist disinformation operations from China.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 8691,
+      "body_end": 8914,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "b89d9fbec24c9f4e7984bf23d3474f832eeca994c8d6cb7876cedc904ae07ecc",
+  "word_count": 1435,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8914,
+  "retrieved_at": "2026-11-16T22:21:33.232912+00:00",
+  "raw_html_sha256": "1dc54dd8433aacb26e3eaf40a7e6a846901513a4439b3ad2cde23f3f141392c2",
+  "resolved_source_url": "https://globalvoices.org/2020/01/21/how-fake-news-and-disinformation-were-spread-in-the-run-up-to-taiwans-presidential-elections/",
+  "canonical_url": "https://globalvoices.org/2020/01/21/how-fake-news-and-disinformation-were-spread-in-the-run-up-to-taiwans-presidential-elections/",
+  "source_bytes": 193253,
+  "authors": [
+    {
+      "name": "New Bloom",
+      "url": "https://globalvoices.org/author/new-bloom/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 694619,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "1dc54dd8433aacb26e3eaf40a7e6a846901513a4439b3ad2cde23f3f141392c2",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-f911cf9e6d0f0f6536ab",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-01",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "New Bloom",
+  "body_start": 520,
+  "body_end": 9434,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "aab94eda9921ada50a5df82b2fd76bcf70504a505afec5501a9510157d08cc3b",
+  "text_path": "articles/gv-694619.txt",
+  "metadata_path": "metadata/gv-694619.json",
+  "attribution": "This story by New Bloom originally appeared on Global Voices. https://globalvoices.org/2020/01/21/how-fake-news-and-disinformation-were-spread-in-the-run-up-to-taiwans-presidential-elections/",
+  "content_sha256": "74eecc7f3c31cd01ec6e73c64f627d40cd7dad63b23b12663c439cdbe0c51bfd",
+  "source_sha256": "1dc54dd8433aacb26e3eaf40a7e6a846901513a4439b3ad2cde23f3f141392c2",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

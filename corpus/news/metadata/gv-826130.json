@@ -1,0 +1,578 @@
+{
+  "id": "gv-826130",
+  "publisher_id": 826130,
+  "source_id": "globalvoices:826130",
+  "source_url": "https://globalvoices.org/2025/01/03/internet-outages-and-blocks-in-latin-america-in-2024/",
+  "title": "Internet outages and blocks in Latin America in 2024",
+  "published_at": "2025-01-03T12:14:06Z",
+  "modified_at": "2025-01-06T01:49:45Z",
+  "api_author_id": 3247,
+  "api_content_sha256": "2c11be1febadcffdfd3f6def67adfbe4cce719ab55953f4abd7fdcf3b241b411",
+  "api_response_sha256": "6625a8d03b3e648da1476e3f26f88d0194314166208c9a1cf51b3466ab72098a",
+  "api_retrieved_at": "2026-11-16T22:21:08.459699+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 150,
+      "count": 1234,
+      "name": "Colombia",
+      "slug": "colombia",
+      "parent": 1354
+    },
+    {
+      "id": 168,
+      "count": 1818,
+      "name": "Cuba",
+      "slug": "cuba",
+      "parent": 1354
+    },
+    {
+      "id": 151,
+      "count": 703,
+      "name": "Ecuador",
+      "slug": "ecuador",
+      "parent": 1354
+    },
+    {
+      "id": 171,
+      "count": 540,
+      "name": "El Salvador",
+      "slug": "el-salvador",
+      "parent": 1354
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 157,
+      "count": 1167,
+      "name": "Venezuela",
+      "slug": "venezuela",
+      "parent": 1354
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-826130-b00001",
+      "text": "In 2024, Latin America faced internet blockages, power outages, and disruptions linked to politics, climate change, and access to energy.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 137,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00002",
+      "text": "Countries such as Ecuador and Cuba suffered prolonged blackouts that severely affected connectivity, while, in Brazil, floods interrupted internet traffic in the south and judicial measures limited access to X (formerly Twitter). Elections and presidential inaugurations aggravated website blocking in Venezuela and El Salvador.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 139,
+      "body_end": 467,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00003",
+      "text": "Social organizations denounced blocks ordered outside of legal processes and without complying with principles of necessity and proportionality, as in Colombia and other countries in the region.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 469,
+      "body_end": 663,
+      "source_links": [
+        "https://web.karisma.org.co/las-dudas-que-quedan-tras-el-bloqueo-de-reddit-en-colombia/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00004",
+      "text": "Ecuador",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 665,
+      "body_end": 672,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00005",
+      "text": "On April 16, 2024, Ecuador faced internet service interruptions in several of its provinces due to power outages, as reported by internet providers. These indicated that the outages were the result of prolonged and recurring electricity rationing, which lasted more than eight hours a day, a situation that stabilized in May.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 674,
+      "body_end": 999,
+      "source_links": [
+        "https://www.elcomercio.com/actualidad/negocios/los-proveedores-de-internet-y-telefonia-de-ecuador-aplican-planes-antes-los-cortes-de-luz.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00006",
+      "text": "In mid-September, there were new power outages of up to 14 hours a day, which had an impact on connectivity and telecommunications services. In October, Ecuador's Minister of Energy and Mines Inés Manzano described the situation as a serious and unprecedented energy crisis.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1001,
+      "body_end": 1275,
+      "source_links": [
+        "https://es.globalvoices.org/2024/11/05/ecuador-entre-apagones-de-14-horas-cambio-climatico-y-presunta-corrupcion/",
+        "https://x.com/RecNaturalesEC/status/1849668776922333255"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00007",
+      "text": "As shown in this case, an energy crisis can affect the electricity supply that is necessary for the operation and functioning of telecommunication infrastructures, thus limiting access to information and the ability to communicate by these means.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1277,
+      "body_end": 1523,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00008",
+      "text": "Read more: Ecuador grapples with 14-hour blackouts, climate change, and alleged corruption",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1525,
+      "body_end": 1615,
+      "source_links": [
+        "https://globalvoices.org/2024/11/19/ecuador-grapples-with-14-hour-blackouts-climate-change-and-alleged-corruption/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00009",
+      "text": "Colombia",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1617,
+      "body_end": 1625,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00010",
+      "text": "At the beginning of June 2024, the website and social network reddit.com was included on the list of websites related to illegal betting in Colombia by the authority of gaming and betting (Coljuegos). Reddit was not accessible by at least two internet providers (six days in Claro and four days in Tigo), according to the Internet Blocks Observatory. The Open Observatory of Network Interference also confirmed the block.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1627,
+      "body_end": 2048,
+      "source_links": [
+        "https://explorer.ooni.org/m/20240603222356.671837_CO_webconnectivity_f22012f597b1d23f",
+        "https://obi.karisma.org.co/2024-06-03-colombia-bloqueo-de-reddit-por-coljuegos/",
+        "https://web.karisma.org.co/las-dudas-que-quedan-tras-el-bloqueo-de-reddit-en-colombia/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00011",
+      "text": "The Colombian organization Fundación Karisma, which is dedicated to the defense and promotion of human rights, considers that the criteria and legal requirements for this type of block are not defined Colombia, which would result in arbitrary and disproportionate restrictions.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2050,
+      "body_end": 2327,
+      "source_links": [
+        "https://web.karisma.org.co/las-dudas-que-quedan-tras-el-bloqueo-de-reddit-en-colombia/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00012",
+      "text": "Venezuela",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2329,
+      "body_end": 2338,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00013",
+      "text": "On July 28, 2024, Venezuela held presidential elections. According to the results announced by the electoral authorities, Nicolás Maduro, the incumbent president, obtained 51.2 percent of the votes, while the opposition coalition, headed by María Corina Machado and her candidate Edmundo González Urrutia, obtained 44 percent. However, there were numerous allegations of fraud, including vote manipulation, voter intimidation, and the arrest of opposition figures.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2340,
+      "body_end": 2804,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00014",
+      "text": "In August, Ve Sin Filtro, of the organization Venezuela Inteligente, recorded 12 new cases of blockings of media websites, human rights organizations, and one VPN service. This makes a total of 61 media outlets blocked on Venezuela's main internet providers.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2806,
+      "body_end": 3064,
+      "source_links": [
+        "https://vesinfiltro.org/noticias/2024-08-01-elecciones-presidenciales/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00015",
+      "text": "Also, on August 1, the Internet Outage Detection & Analysis project at Georgia Tech (IODA) recorded a 1 hour and 50 minute disruption at internet providers CANTV and Movilnet. The root cause is unknown, according to Ve sin Filtro.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3066,
+      "body_end": 3296,
+      "source_links": [
+        "https://x.com/IODA_live/status/1819020034372407336",
+        "https://x.com/vesinfiltro/status/1819013580919882099"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00016",
+      "text": "Read more in our special coverage: Venezuela's fight for democracy",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3298,
+      "body_end": 3364,
+      "source_links": [
+        "https://globalvoices.org/special/venezuelas-fight-for-democracy/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00017",
+      "text": "Brazil",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3366,
+      "body_end": 3372,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00018",
+      "text": "In Brazil, on August 31, 2024, access to X was blocked under court decision. Brazil's Supreme Court said that this measure was motivated because the company X, headed by tycoon Elon Musk, failed to comply with court orders, as X reinstated accounts that had been suspended under the terms of a court order. The Supreme Federal Court had ordered the deletion of seven far-right accounts associated with the 2023 Brazilian Congress attack.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3374,
+      "body_end": 3811,
+      "source_links": [
+        "https://www.jurist.org/news/2024/04/brazil-supreme-court-orders-x-to-block-certain-undisclosed-popular-accounts/",
+        "https://www.reuters.com/technology/brazil-judge-gives-x-five-days-explain-alleged-non-compliance-with-court-ruling-2024-04-22/"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00019",
+      "text": "Read more: What you need to know about the X (formerly Twitter) situation in Brazil",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3813,
+      "body_end": 3896,
+      "source_links": [
+        "https://globalvoices.org/2024/09/07/what-you-need-to-know-about-the-x-formerly-twitter-situation-in-brazil/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00020",
+      "text": "After more than a month of blocking, the Brazilian Supreme Court ordered its lifting as X complied with the legal orders.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3898,
+      "body_end": 4019,
+      "source_links": [
+        "https://globalvoices.org/2024/10/11/brazils-supreme-court-lifts-suspension-of-x-after-musk-backs-down/"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00021",
+      "text": "Brazil also suffered an interruption of internet traffic in the southern region of Rio Grande do Sul, following the catastrophic floods that affected the country.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4021,
+      "body_end": 4183,
+      "source_links": [
+        "https://es.globalvoices.org/2024/05/09/lluvias-destruccion-y-muerte-en-el-sur-de-brasil-exigen-nuevas-formas-de-definir-la-catastrofe-climatica/"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00022",
+      "text": "El Salvador",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4185,
+      "body_end": 4196,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00023",
+      "text": "Digital rights organizations such as Access Now, APES, ARTICLE19, and the Central American Network of Journalists said in a press release that there were Telegram access problems from June 1 to 3, 2025, which coincided with President Nayib Bukele's inauguration. They called on the government of El Salvador to investigate this block. There was also a leak of alleged government data through Telegram during that time.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4198,
+      "body_end": 4616,
+      "source_links": [
+        "https://www.accessnow.org/press-release/telegram-comunicado-el-salvador/"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00024",
+      "text": "A few months later, the Open Observatory of Network Interference recorded that at least five internet providers in El Salvador blocked access to Telegram on September 15, 2024, Independence Day, when the president presents a much-awaited speech to the nation.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4618,
+      "body_end": 4877,
+      "source_links": [
+        "https://explorer.ooni.org/es/chart/mat?probe_cc=SV&since=2024-08-15&until=2024-09-16&time_grain=day&axis_x=measurement_start_day&test_name=telegram"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00025",
+      "text": "Read more: Controversial hacktivists may have prompted El Salvador’s censorship of Telegram",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4879,
+      "body_end": 4970,
+      "source_links": [
+        "https://globalvoices.org/2024/07/10/controversial-hacktivists-may-have-prompted-el-salvadors-censorship-of-telegram/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00026",
+      "text": "Cuba",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4972,
+      "body_end": 4976,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00027",
+      "text": "In 2024, Cuba had an internet shutdown and two notable disruptions.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 4978,
+      "body_end": 5045,
+      "source_links": [],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00028",
+      "text": "A five-hour dip in internet traffic in Cuba occurred after protests on March 17 against food shortages and power outages. Doug Madory analyzed the data retrieved by his company, Kentik.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5047,
+      "body_end": 5232,
+      "source_links": [
+        "https://es.wikipedia.org/wiki/Protestas_en_Cuba_de_2024",
+        "https://pulse.internetsociety.org/shutdowns/internet-services-limited-in-cuba-march",
+        "https://x.com/DougMadory/status/1769556935156658223"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00029",
+      "text": "The first power blackout occurred in October and lasted more than 70 hours, affecting internet connectivity. It was caused by a failure in the electrical system. The second outage occurred on November 6, due to Hurricane Rafael. Authorities explained that they had to cut off the electricity supply as a contingency measure. The third one was on December 4, and Cuba's Electric Union, which belongs to the Ministry of Energy and Mines, reported a disconnection of the Cuban electric system.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5234,
+      "body_end": 5724,
+      "source_links": [
+        "https://x.com/OSDE_UNE/status/1854252013212844461",
+        "https://x.com/OSDE_UNE/status/1864221585608966576"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00030",
+      "text": "Read more: ‘Buy solar panels,’ Cuban officials say as the island faces another critical blackout",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5726,
+      "body_end": 5822,
+      "source_links": [
+        "https://globalvoices.org/2024/10/23/buy-solar-panels-cuban-officials-say-as-the-island-faces-another-critical-blackout/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00031",
+      "text": "Historical routing data calculated and collected by Georgia Tech's Internet Intelligence Lab and the Diktyon project, which is dedicated to monitoring the health of the internet in Cuba, recorded the impact of these blackouts on internet connectivity.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5824,
+      "body_end": 6075,
+      "source_links": [
+        "https://github.com/diktyoncuba/public/blob/main/README.md",
+        "https://ioda.inetintel.cc.gatech.edu/reports/cuba-faces-blackouts-and-internet-outages-after-national-grid-fails/"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00032",
+      "text": "The Dykton project found that out of a total of 279 websites, 73 domains are blocked. Likewise, during the third quarter of 2024, there were issues of access to Signal, attributed to failures in DNS resolution, although they don't know for sure.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 6077,
+      "body_end": 6322,
+      "source_links": [
+        "https://guardianesdigitales.blogspot.com/2024/10/informe-6-sobre-la-salud-del-internet.html"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-826130-b00033",
+      "text": "Finally, they also reported that the popular messaging application site in Cuba, Delta Chat, was blocked on July 11, 2024, as well as its chatmail servers, a Delta Chat tool that allows the creation of anonymous profiles. July 11 is a symbolic date, since it is the third anniversary of the 2021 protests.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 6324,
+      "body_end": 6629,
+      "source_links": [
+        "https://noticias.cubitanow.com/delta-chat-la-nueva-herramienta-para-evadir-la-censura-de-internet-en-cuba"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "8608bc4033b3a950fa86ec791c48591c8fe3548c165fd59fd7a3f0d349064462",
+  "word_count": 1021,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6629,
+  "retrieved_at": "2026-11-16T22:45:10.385389+00:00",
+  "raw_html_sha256": "8f7137ce521f0586b1a054fae1daeb5db6e908265c2325be557c8f5fb8ff0ab8",
+  "resolved_source_url": "https://globalvoices.org/2025/01/03/internet-outages-and-blocks-in-latin-america-in-2024/",
+  "canonical_url": "https://globalvoices.org/2025/01/03/internet-outages-and-blocks-in-latin-america-in-2024/",
+  "source_bytes": 192528,
+  "authors": [
+    {
+      "name": "Jacobo Nájera",
+      "url": "https://es.globalvoices.org/author/jacobo/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Dalia Tarek",
+      "url": "https://globalvoices.org/author/dalia-tarek/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 826130,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "8f7137ce521f0586b1a054fae1daeb5db6e908265c2325be557c8f5fb8ff0ab8",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-f07f4b9d34b67d6f9878",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-01",
+    "eligible_month_documents": 69,
+    "selected_month_documents": 58,
+    "inclusion_probability": 0.8405797101449275,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Jacobo Nájera",
+  "body_start": 468,
+  "body_end": 7097,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "a818947f05521f28f450aeb64d1a81fef6b3194bd0551e6e022bfc7e3e6c6416",
+  "text_path": "articles/gv-826130.txt",
+  "metadata_path": "metadata/gv-826130.json",
+  "attribution": "This story by Jacobo Nájera originally appeared on Global Voices. https://globalvoices.org/2025/01/03/internet-outages-and-blocks-in-latin-america-in-2024/",
+  "content_sha256": "511e4f34a89d4187174ab0fdc0241e7098de2918b159aa53faecbaaec1c02033",
+  "source_sha256": "8f7137ce521f0586b1a054fae1daeb5db6e908265c2325be557c8f5fb8ff0ab8",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

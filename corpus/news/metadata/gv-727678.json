@@ -1,0 +1,290 @@
+{
+  "id": "gv-727678",
+  "publisher_id": 727678,
+  "source_id": "globalvoices:727678",
+  "source_url": "https://globalvoices.org/2021/01/28/googles-plans-for-saudi-based-cloud-is-dangerous-says-access-now-a-digital-right-advocacy-group/",
+  "title": "Google’s plans for Saudi-based Cloud is ‘dangerous,’ says digital rights advocacy group",
+  "published_at": "2021-01-28T20:09:41Z",
+  "modified_at": "2021-01-28T23:42:54Z",
+  "api_author_id": 2798,
+  "api_content_sha256": "19e550bee61c1e71d00a4d1f80cda6a7d81bbbc9342220a5c86f07df43ce2bb8",
+  "api_response_sha256": "4b8a365e82fe2773a09c5a0e8bd4a9b7aa40c63d55bed83d1fb049dae4c0bf4c",
+  "api_retrieved_at": "2026-11-16T22:20:32.142391+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 19,
+      "count": 1052,
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "parent": 14
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-727678-b00001",
+      "text": "Tech giant Google plans to establish a new Google Cloud region in Saudi Arabia.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 79,
+      "source_links": [
+        "https://cloud.google.com/blog/products/infrastructure/google-cloud-announces-new-regions"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727678-b00002",
+      "text": "Access Now, a nongovernmental digital rights organization, has raised alarm and requested the immediate halting of the plan, referring to the country's “appalling human rights record.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 81,
+      "body_end": 265,
+      "source_links": [
+        "https://www.hrw.org/world-report/2020/country-chapters/saudi-arabia"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727678-b00003",
+      "text": "The organization issued a statement on January 26, with the Samuelson-Glushko Canadian Internet Policy and Public Interest Clinic (CIPPIC), a public interest technology law clinic based at the University of Ottawa’s Faculty of Law.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 267,
+      "body_end": 498,
+      "source_links": [
+        "https://www.accessnow.org/google-cloud-in-saudi-arabia-human-rights-concerns/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727678-b00004",
+      "text": "The statement warned against the “dangerous” implications of Google's plans to store Snapchat data on Saudi-based servers, which it said would “place millions of the Snapchat users’ personal information under the jurisdiction of a government with a longstanding record of surveillance.”",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 500,
+      "body_end": 786,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727678-b00005",
+      "text": "“Saudi Arabia and human rights safeguards, historically, do not mix,” said Marwa Fatafta, Middle East and North Africa policy manager at Access Now:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 788,
+      "body_end": 936,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727678-b00006",
+      "text": "> A new Google Cloud region in the kingdom is dangerous, and it is imperative that Google outlines, in no uncertain terms, how they plan to protect data and people’s rights from the prying eyes of the Saudi regime.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 938,
+      "body_end": 1152,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-727678-b00007",
+      "text": "The government of Saudi Arabia’s dismal human rights record includes silencing activists, human and women’s rights defenders, and journalists and violating the basic rights of its citizens through extrajudicial killings, detention and torture, and the use of spyware to track and censor.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1154,
+      "body_end": 1441,
+      "source_links": [
+        "https://www.accessnow.org/khashoggi-two-years-later/",
+        "https://www.accessnow.org/saudi-arabia-over-50-human-rights-groups-call-for-immediate-release-of-womens-rights-defenders/",
+        "https://www.hrw.org/world-report/2020/country-chapters/saudi-arabia#",
+        "https://www.washingtonpost.com/national-security/former-twitter-employees-charged-with-spying-for-saudi-arabia-by-digging-into-the-accounts-of-kingdom-critics/2019/11/06/2e9593da-00a0-11ea-8bab-0fc209e065a8_story.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727678-b00008",
+      "text": "This troubling history, the statement says, “raises serious concerns about the possibility of facilitating and whitewashing future human rights abuses.”",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1443,
+      "body_end": 1595,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727678-b00009",
+      "text": "Notably, Snapchat’s parent company, Snap, Inc., has been named as one of the anchor tenants for the new Saudi-based cloud services. Considering the application’s prevalence in the region with over 17 million users, the potential for government demands for content data or metadata — and the increased opportunity to control online discourse — are both of particular concern.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1597,
+      "body_end": 1971,
+      "source_links": [
+        "https://www.arabnews.com/node/1773856/media"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727678-b00010",
+      "text": "“This directly places millions of people at risk, the consequences of which could be deadly,” said Vivek Krishnamurthy, CIPPIC director.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1973,
+      "body_end": 2109,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727678-b00011",
+      "text": "Through open letters addressed to Google's Chief Executive Officer Sundar Pichai, and Snap Inc. Chief Executive Officer Evan Spiegel on Tuesday, January, 26, Access Now and CIPPIC asked both companies to address a a set of questions, including whether a due diligence has been conducted, including on potential human rights impacts, with respect to establishing the cloud region and hosting Snapchat data in Saudi Arabia; what applications or other clients use this centre to store their data, as well as what user data is being held or processed there and from which countries, and what security measures are in place to protect this data.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2111,
+      "body_end": 2751,
+      "source_links": [
+        "https://www.accessnow.org/cms/assets/uploads/2021/01/Access-Now-CIPPIC-Letter-to-Snap.pdf",
+        "https://www.accessnow.org/cms/assets/uploads/2021/01/FINAL-Access-Now-CIPPIC-Letter-to-Google.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727678-b00012",
+      "text": "The letters also inquired about the legal standards which Google Cloud and Snap consider as necessary for secure and sustainable operations and how the kingdom meets those indicators, in addition to any existing understandings between the Saudi government and the companies on government access to data.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2753,
+      "body_end": 3056,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727678-b00013",
+      "text": "According to the statement, the companies have been asked to respond publicly by Tuesday, February 2.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3058,
+      "body_end": 3159,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "b1f1cb031dd9d4f85d6d0d00c4de78735b093d2f5ac06abb81c5a9f2cf7569b8",
+  "word_count": 483,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 3159,
+  "retrieved_at": "2026-11-16T22:29:19.958684+00:00",
+  "raw_html_sha256": "85e5a3080cb9dd5667328434ab9832984bb0f4aa45c21308d73b97801df1b867",
+  "resolved_source_url": "https://globalvoices.org/2021/01/28/googles-plans-for-saudi-based-cloud-is-dangerous-says-access-now-a-digital-right-advocacy-group/",
+  "canonical_url": "https://globalvoices.org/2021/01/28/googles-plans-for-saudi-based-cloud-is-dangerous-says-access-now-a-digital-right-advocacy-group/",
+  "source_bytes": 186408,
+  "authors": [
+    {
+      "name": "Dahlia Kholaif",
+      "url": "https://globalvoices.org/author/dahlia-kholaif/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 727678,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "85e5a3080cb9dd5667328434ab9832984bb0f4aa45c21308d73b97801df1b867",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-d7203acc7893003188ea",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-01",
+    "eligible_month_documents": 68,
+    "selected_month_documents": 57,
+    "inclusion_probability": 0.8382352941176471,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Dahlia Kholaif",
+  "body_start": 520,
+  "body_end": 3679,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "19499bea2bab848105e7f31269d30851814c79958a3807e7b55d29f7fa4f82c6",
+  "text_path": "articles/gv-727678.txt",
+  "metadata_path": "metadata/gv-727678.json",
+  "attribution": "This story by Dahlia Kholaif originally appeared on Global Voices. https://globalvoices.org/2021/01/28/googles-plans-for-saudi-based-cloud-is-dangerous-says-access-now-a-digital-right-advocacy-group/",
+  "content_sha256": "5ebf257ec19a77fc134a3533a07e5994d76cf1cd93244ad89e18a5ba1868f711",
+  "source_sha256": "85e5a3080cb9dd5667328434ab9832984bb0f4aa45c21308d73b97801df1b867",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -17,6 +17,7 @@ import uuid
 from collections import Counter, defaultdict
 from contextlib import asynccontextmanager
 from pathlib import Path
+from typing import Literal
 from urllib.parse import urlsplit
 
 from dotenv import load_dotenv
@@ -75,6 +76,12 @@ class RunInput(BaseModel):
     document_ids: list[str] | None = None
     input_price_per_million: float | None = Field(default=None, ge=0)
     output_price_per_million: float | None = Field(default=None, ge=0)
+    methodology_version: str = "1.0"
+    learning_snapshot_id: str | None = None
+    allow_remote_text: bool = False
+    reasoning_effort: Literal["low", "medium", "high"] | None = None
+    reasoning_token_allowance: int = Field(default=0, ge=0, le=8192)
+    verification_of: str | None = None
 
 
 class ReviewInput(BaseModel):
@@ -103,7 +110,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             await asyncio.gather(*tasks.values(), return_exceptions=True)
         app.state.store.close()
 
-    app = FastAPI(title="DOXA by TACITUS", version="0.1.0", lifespan=lifespan)
+    app = FastAPI(title="DOXA by TACITUS · Bias Detection as a Service", version="0.3.0", lifespan=lifespan)
 
     def db() -> Store:
         return app.state.store
@@ -120,6 +127,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             raise HTTPException(404, "Document not found")
         if with_blocks:
             result["blocks"] = db().get_json(result["blocks_key"]) if result["blocks_key"] else []
+        source = result.get("metadata", {}).get("source_id") or result.get("metadata", {}).get("source_identity") or result.get("source_url") or document_id
+        result["source_version_id"] = hashlib.sha256(f"{source}:{result['sha256']}".encode()).hexdigest()[:32]
         return result
 
     def require_run(run_id: str, project_id: str | None = None) -> dict:
@@ -130,10 +139,10 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
 
     def settings() -> dict:
         saved = db().one("SELECT value_json FROM settings WHERE key='preferences'")
-        result = {"monthly_budget_usd": 20.0, "default_provider": "lexical", "default_model": "qwen3.5:4b"}
+        result = {"monthly_budget_usd": 20.0, "default_provider": "cloudflare", "default_model": "@cf/google/gemma-4-26b-a4b-it"}
         if saved:
             result.update(json.loads(saved["value_json"]))
-        result["cloudflare_configured"] = bool(any(os.environ.get(key) for key in ["DOXA_CLOUDFLARE_ACCOUNT_ID", "CLOUDFLARE_ACCOUNT_ID", "CF_ACCOUNT_ID"]) and any(os.environ.get(key) for key in ["DOXA_CLOUDFLARE_API_TOKEN", "CLOUDFLARE_API_TOKEN", "CF_API_TOKEN"]))
+        result["cloudflare_configured"] = bool((os.environ.get("DOXA_CLOUDFLARE_BASE_URL") or any(os.environ.get(key) for key in ["DOXA_CLOUDFLARE_ACCOUNT_ID", "CLOUDFLARE_ACCOUNT_ID", "CF_ACCOUNT_ID"])) and any(os.environ.get(key) for key in ["DOXA_CLOUDFLARE_API_TOKEN", "CLOUDFLARE_API_TOKEN", "CF_API_TOKEN"]))
         result["openai_configured"] = bool(os.environ.get("DOXA_OPENAI_BASE_URL") or os.environ.get("OPENAI_BASE_URL"))
         result["runpod_configured"] = bool(any(os.environ.get(key) for key in ["DOXA_RUNPOD_API_KEY", "RUNPOD_API_KEY"]) and any(os.environ.get(key) for key in ["DOXA_RUNPOD_ENDPOINT_ID", "RUNPOD_ENDPOINT_ID", "DOXA_RUNPOD_BASE_URL", "RUNPOD_BASE_URL"]))
         result["local_only"] = not db().remote
@@ -171,7 +180,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
 
     @app.get("/api/health")
     def health():
-        return {"ok": True, "version": "0.1.0", "mode": "cloud" if db().remote else "local",
+        return {"ok": True, "version": "0.3.0", "mode": "cloud" if db().remote else "local",
                 "capabilities": {"multipart_uploads": True, "full_text_search": db().fts,
                                  "private_local": not bool(db().remote), "semantic_validation": "research_preview"}}
 
@@ -222,7 +231,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
 
     @app.patch("/api/documents/{document_id}")
     def update_document(document_id: str, body: dict):
-        require_document(document_id)
+        document = require_document(document_id)
         editable = {"title", "author", "institution", "document_type", "published_at"}
         updates = {key: value for key, value in body.items() if key in editable}
         if any(value is not None and (not isinstance(value, str) or len(value) > 2000) for value in updates.values()):
@@ -231,6 +240,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             db().execute("UPDATE documents SET " + ",".join(key + "=?" for key in updates) + " WHERE id=?", [*updates.values(), document_id])
             if "title" in updates and db().fts:
                 db().execute("UPDATE document_search SET title=? WHERE id=?", [updates["title"], document_id])
+            from doxa.workspace import Workspace
+            Workspace(db()).touch(document["project_id"])
         return require_document(document_id)
 
     @app.post("/api/projects/{project_id}/metadata/import")
@@ -281,6 +292,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             db().batch(statements[i:i+50])
         if db().fts:
             db().execute("DELETE FROM document_search WHERE id=?", [document_id])
+        from doxa.workspace import Workspace
+        Workspace(db()).touch(doc["project_id"])
         for key in [doc.get("object_key"), doc.get("blocks_key")]:
             if key:
                 db().delete_object(key)
@@ -314,15 +327,22 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         db().execute("INSERT INTO batch_members(batch_id,document_id) VALUES(?,?) ON CONFLICT(batch_id,document_id) DO NOTHING", [batch_id, doc_id])
         if db().fts and blocks:
             db().index_document(doc_id, project_id, values["title"], blocks)
+        db().execute("INSERT INTO v3_sources(document_id,project_id,source_identity,content_hash,canonical_url,relative_path,created_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(document_id) DO NOTHING",
+                     [doc_id, project_id, metadata.get("source_identity") or values["source_url"] or values["filename"], digest, values["source_url"], metadata.get("relative_path") or values["filename"], utcnow()])
+        from doxa.workspace import Workspace
+        Workspace(db()).touch(project_id)
         return require_document(doc_id)
 
-    async def ingest(project_id: str, batch: dict, path: Path, filename: str, existing_key: str | None = None) -> tuple[dict, bool]:
+    async def ingest(project_id: str, batch: dict, path: Path, filename: str, existing_key: str | None = None, source_identity: str | None = None) -> tuple[dict, bool]:
         digest = hashlib.sha256()
         with path.open("rb") as source:
             while chunk := source.read(1024 * 1024):
                 digest.update(chunk)
         digest_string = digest.hexdigest()
-        duplicate = db().one("SELECT id,object_key FROM documents WHERE project_id=? AND sha256=?", [project_id, digest_string])
+        if source_identity:
+            duplicate = db().one("SELECT d.id,d.object_key FROM documents d JOIN v3_sources s ON s.document_id=d.id WHERE d.project_id=? AND d.sha256=? AND s.source_identity=?", [project_id, digest_string, source_identity])
+        else:
+            duplicate = db().one("SELECT id,object_key FROM documents WHERE project_id=? AND sha256=?", [project_id, digest_string])
         if duplicate:
             db().execute("INSERT INTO batch_members(batch_id,document_id) VALUES(?,?) ON CONFLICT(batch_id,document_id) DO NOTHING", [batch["id"], duplicate["id"]])
             if existing_key and existing_key != duplicate.get("object_key"):
@@ -335,6 +355,13 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         extracted: dict = {}
         error = None
         def parse():
+            if Path(filename).suffix.lower() in {".txt", ".md"} and path.stat().st_size <= 20 * 1024 * 1024:
+                text = path.read_text(encoding="utf-8-sig")
+                blocks = [{"id": f"text-p{number:06}", "text": match.group(), "paragraph": number, "source_char_start": match.start()}
+                          for number, match in enumerate(re.finditer(r".+?(?:\n[ \t]*\n|\Z)", text, re.S), 1) if match.group()]
+                if not blocks:
+                    raise ValueError("Document contains no text")
+                return {"blocks": blocks, "extractor": "doxa-utf8-text-v3", "metadata": {"sha256": digest_string}, "word_count": len(text.split()), "page_count": 0}
             result = subprocess.run([sys.executable, "-m", "doxa.extract_worker", str(path), str(output), filename],
                                     capture_output=True, text=True, timeout=180, cwd=ROOT, env=parser_environment())
             if result.returncode:
@@ -352,14 +379,19 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                           "title": extracted.get("metadata", {}).get("title") or Path(filename).stem,
                           "author": extracted.get("metadata", {}).get("author") or "Unknown",
                           "status": "failed" if error else "ready", "error": error})
+        if source_identity:
+            extracted.setdefault("metadata", {}).update({"source_identity": source_identity, "relative_path": source_identity})
         return save_document(project_id, batch["id"], extracted, object_key=key), False
 
     @app.post("/api/projects/{project_id}/upload")
-    async def upload(project_id: str, files: list[UploadFile] = File(...)):
+    async def upload(project_id: str, files: list[UploadFile] = File(...), import_id: str | None = None):
         require_project(project_id)
         if len(files) > 100:
             raise HTTPException(422, "Import at most 100 files per batch")
-        batch = new_batch(project_id, "Uploaded documents")
+        session = db().one("SELECT * FROM v3_imports WHERE id=? AND project_id=?", [import_id, project_id]) if import_id else None
+        if import_id and not session:
+            raise HTTPException(404, "Import does not belong to this project")
+        batch = db().one("SELECT * FROM batches WHERE id=?", [session["batch_id"]]) if session else new_batch(project_id, "Uploaded documents")
         results = []
         with tempfile.TemporaryDirectory(dir=db().root) as working:
             for file in files:
@@ -372,8 +404,13 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                         if size > MAX_FILE:
                             raise HTTPException(413, "Each file must be at most 500 MiB")
                         target.write(chunk)
-                doc, _ = await ingest(project_id, batch, path, filename)
+                relative = str(file.filename or filename).replace("\\", "/")[:1000]
+                doc, _ = await ingest(project_id, batch, path, filename, source_identity=relative if session else None)
                 results.append(doc)
+                if session:
+                    db().execute("INSERT INTO v3_import_files(import_id,relative_path,sha256,document_id,status,error,created_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(import_id,relative_path,sha256) DO UPDATE SET document_id=excluded.document_id,status=excluded.status,error=excluded.error", [import_id, relative, doc["sha256"], doc["id"], doc["status"], doc.get("error"), utcnow()])
+        if session:
+            db().execute("UPDATE v3_imports SET completed_files=(SELECT COUNT(*) FROM v3_import_files WHERE import_id=? AND status='ready'),failed_files=(SELECT COUNT(*) FROM v3_import_files WHERE import_id=? AND status='failed'),status=CASE WHEN total_files<=(SELECT COUNT(*) FROM v3_import_files WHERE import_id=?) THEN 'completed' ELSE 'running' END WHERE id=?", [import_id, import_id, import_id, import_id])
         return results
 
     def upload_meta(upload_id: str) -> tuple[Path, dict]:
@@ -387,6 +424,9 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     @app.post("/api/projects/{project_id}/uploads/init")
     def init_upload(project_id: str, body: dict):
         require_project(project_id)
+        import_id = body.get("import_id")
+        if import_id and not db().one("SELECT id FROM v3_imports WHERE id=? AND project_id=?", [import_id, project_id]):
+            raise HTTPException(404, "Import does not belong to this project")
         size = body.get("size")
         if not isinstance(size, int) or not 0 < size <= MAX_FILE:
             raise HTTPException(422, "File size must be between 1 byte and 500 MiB")
@@ -394,7 +434,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         folder = db().root / "uploads" / upload_id
         folder.mkdir(parents=True)
         meta = {"id": upload_id, "project_id": project_id, "filename": Path(str(body.get("filename", "document.txt"))).name,
-                "size": size, "created_at": utcnow()}
+                "size": size, "created_at": utcnow(), "import_id": import_id}
         (folder / "meta.json").write_text(json.dumps(meta))
         return {"id": upload_id, "upload_id": upload_id, "part_size": PART_SIZE}
 
@@ -441,8 +481,12 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             for number in range(1, count + 1):
                 with (folder / f"part-{number}").open("rb") as source:
                     shutil.copyfileobj(source, output, 1024 * 1024)
-        batch = new_batch(meta["project_id"], "Resumable upload")
-        doc, duplicate = await ingest(meta["project_id"], batch, assembled, meta["filename"])
+        session = db().one("SELECT * FROM v3_imports WHERE id=? AND project_id=?", [meta.get("import_id"), meta["project_id"]]) if meta.get("import_id") else None
+        batch = db().one("SELECT * FROM batches WHERE id=?", [session["batch_id"]]) if session else new_batch(meta["project_id"], "Resumable upload")
+        doc, duplicate = await ingest(meta["project_id"], batch, assembled, meta["filename"], source_identity=meta["filename"] if session else None)
+        if session:
+            db().execute("INSERT INTO v3_import_files(import_id,relative_path,sha256,document_id,status,error,created_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(import_id,relative_path,sha256) DO NOTHING", [session["id"], meta["filename"], doc["sha256"], doc["id"], doc["status"], doc.get("error"), utcnow()])
+            db().execute("UPDATE v3_imports SET completed_files=(SELECT COUNT(*) FROM v3_import_files WHERE import_id=? AND status='ready'),failed_files=(SELECT COUNT(*) FROM v3_import_files WHERE import_id=? AND status='failed'),status=CASE WHEN total_files<=(SELECT COUNT(*) FROM v3_import_files WHERE import_id=?) THEN 'completed' ELSE 'running' END WHERE id=?", [session["id"], session["id"], session["id"], session["id"]])
         shutil.rmtree(folder)
         return {"document": doc, "batch": batch, "duplicate": duplicate}
 
@@ -545,8 +589,10 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             elif usage["cost_usd"] is not None:
                 usage["cost_usd"] += item_usage.get("cost_usd", 0) or 0
             usage["estimated"] = usage["estimated"] or bool(item_usage.get("estimated"))
-            if row["error"]:
-                errors.append({"document_id": row["document_id"], "message": row["error"]})
+            message = (row["error"] or "").strip()
+            if message or row["status"] == "failed":
+                errors.append({"document_id": row["document_id"],
+                               "message": message or "Task failed without a stored error message"})
         reservations = db().query("SELECT status,usage_json FROM budget_reservations WHERE run_id=?", [run_id])
         if reservations:
             # Durable request usage includes earlier attempts and uncertain
@@ -562,13 +608,24 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 elif usage["cost_usd"] is not None:
                     usage["cost_usd"] += item_usage["cost_usd"]
                 usage["estimated"] = usage["estimated"] or bool(item_usage.get("estimated", True))
-        lexical = run.get("config", {}).get("provider") == "lexical"
+        config = run.get("config", {})
+        lexical = config.get("provider") == "lexical"
+        tasks_complete = all(row["status"] == "completed" for row in rows)
+        unit_coverage_complete = True
+        if str(config.get("methodology_version", "1")).startswith("3") and not lexical:
+            units = db().one("SELECT COUNT(*) total,SUM(CASE WHEN status='accepted' THEN 1 ELSE 0 END) accepted FROM v3_unit_statuses WHERE run_id=?", [run_id])
+            unit_coverage_complete = bool(units["total"]) and units["accepted"] == units["total"]
+            if config.get("task_index_basis") == "source_units_v3":
+                unit_coverage_complete = unit_coverage_complete and units["total"] == blocks_total
+        complete = tasks_complete and blocks_done == blocks_total and unit_coverage_complete and not errors
         progress = {"documents_total": len(docs), "documents_done": sum(all(s in {"completed", "failed", "cancelled"} for s in states) for states in docs.values()),
+                    "documents_complete": sum(all(s == "completed" for s in states) for states in docs.values()),
+                    "documents_settled": sum(all(s in {"completed", "failed", "cancelled"} for s in states) for states in docs.values()),
                     "blocks_total": blocks_total, "blocks_done": blocks_done,
                     "tasks_total": len(rows), "tasks_done": sum(row["status"] == "completed" for row in rows),
                     "tasks_failed": sum(row["status"] == "failed" for row in rows),
                     "current_document": run.get("progress", {}).get("current_document", ""),
-                    "complete": blocks_done == blocks_total and not errors,
+                    "complete": complete,
                     "analysis_kind": "lexical_scan" if lexical else "model_analysis",
                     "semantic_analysis_performed": not lexical,
                     "semantic_blocks_done": 0 if lexical else blocks_done,
@@ -578,7 +635,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         if run["cancel_requested"]:
             status = "cancelled"
         elif not pending and not status.startswith("paused"):
-            status = "partial" if errors else "completed"
+            status = "completed" if complete else "partial"
         completed_at = utcnow() if status in TERMINAL else None
         db().execute("UPDATE runs SET progress_json=?,usage_json=?,errors_json=?,status=?,completed_at=? WHERE id=?",
                      [json.dumps(progress), json.dumps(usage), json.dumps(errors), status, completed_at, run_id])
@@ -607,9 +664,28 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         if not claimed:
             return {"pending": True, "run": require_run(run_id)}
         document = require_document(task["document_id"], True)
-        document["blocks"] = document["blocks"][task["start_block"]:task["end_block"]]
+        complete_document = document
+        document = {**document, "blocks": document["blocks"][task["start_block"]:task["end_block"]]} if run["config"].get("task_index_basis") != "source_units_v3" else document
         db().execute("UPDATE runs SET status='running',started_at=COALESCE(started_at,?),progress_json=? WHERE id=?", [utcnow(), json.dumps({**run["progress"], "current_document": document["title"]}), run_id])
         config = dict(run["config"])
+        if str(config.get("methodology_version", "1")).startswith("3") and config.get("provider") != "lexical":
+            from doxa.contextual import PROMPT_VERSION
+            method_changed = bool(config.get("pipeline_version") and config["pipeline_version"] != PROMPT_VERSION)
+            snapshots = config.get("lens_snapshots")
+            if snapshots:
+                from doxa.lenses import get_lens, validate_custom_lens
+                try:
+                    current_packs = [validate_custom_lens(config["custom_lens"]) if pack["id"] == "custom" else get_lens(pack["id"])
+                                     for pack in snapshots]
+                    snapshot_hash = hashlib.sha256(json.dumps(snapshots, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+                    method_changed = method_changed or snapshots != current_packs or (
+                        bool(config.get("lens_snapshots_sha256")) and config["lens_snapshots_sha256"] != snapshot_hash)
+                except (KeyError, TypeError, ValueError):
+                    method_changed = True
+            if method_changed:
+                db().execute("UPDATE runs SET status='paused_method_changed' WHERE id=?", [run_id])
+                db().execute("UPDATE tasks SET status='pending',lease_token=NULL,lease_until=NULL WHERE id=? AND lease_token=?", [task["id"], token])
+                return {"pending": False, "run": require_run(run_id)}
         reservations: list[str] = []
         month = utcnow()[:7]
         db().execute("INSERT INTO budget_ledger(month,reserved_usd,spent_usd) VALUES(?,0,0) ON CONFLICT(month) DO NOTHING", [month])
@@ -651,7 +727,92 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 if readiness.get("revision") != config["model_revision"]:
                     db().execute("UPDATE runs SET status='paused_model_changed' WHERE id=?", [run_id])
                     raise RuntimeError("Installed model revision changed. Start a new run rather than mixing model revisions.")
-            result = await asyncio.wait_for(analyze_document(document, config, provider), timeout=420 if db().remote else 480)
+            if str(config.get("methodology_version", "1")).startswith("3") and config.get("provider") != "lexical":
+                from doxa.contextual import analyze_units, build_units
+                from doxa.learning import select_examples
+                from doxa.workspace import Workspace
+                full_units = build_units(complete_document, max_unit_chars=config.get("unit_max_chars", 1200))
+                if config.get("verification_selection"):
+                    selected_units = set(config["verification_selection"]["unit_ids"].get(document["id"], []))
+                    full_units = [unit for unit in full_units if unit["id"] in selected_units]
+                if config.get("task_index_basis") == "source_units_v3":
+                    units = full_units[task["start_block"]:task["end_block"]]
+                else:
+                    unit_ids = {block["id"] for block in document["blocks"]}
+                    units = [unit for unit in full_units if unit["block_id"] in unit_ids]
+                cached = db().query("SELECT payload_json FROM v3_assessments WHERE run_id=? AND document_id=? AND task_id=?", [run_id, document["id"], task["id"]])
+                config["accepted_assessments"] = [json.loads(row["payload_json"]) for row in cached]
+                if config.get("learning_snapshot_id"):
+                    selected = []
+                    from doxa.lenses import get_lens
+                    frozen_packs = {pack["id"]: pack for pack in config.get("lens_snapshots", [])}
+                    for lens_id in config["lens_ids"]:
+                        pack = frozen_packs.get(lens_id) or (config.get("custom_lens") if lens_id == "custom" else get_lens(lens_id))
+                        for criterion in (pack or {}).get("criteria", []):
+                            selected.extend(select_examples(db(), run["project_id"], config["learning_snapshot_id"], f"{lens_id}/{criterion['id']}", exclude_document_ids=[document["id"]], source_text=" ".join(b["text"] for b in document["blocks"])[:6000], limit=1))
+                    terms = set(re.findall(r"\w+", " ".join(b["text"] for b in document["blocks"]).casefold()))
+                    def relevance(example):
+                        words = set(re.findall(r"\w+", str(example.get("quote", "")).casefold()))
+                        return (-len(terms & words) / max(1, len(words)), str(example.get("example_id", "")))
+                    chosen, groups, size = [], set(), 2
+                    for example in sorted(selected, key=relevance):
+                        group = example.get("story_group_id") or example.get("document_id")
+                        encoded = len(json.dumps(example, ensure_ascii=False).encode())
+                        if group in groups or size + encoded > 4800:
+                            continue
+                        chosen.append(example)
+                        groups.add(group)
+                        size += encoded
+                        if len(chosen) == 4:
+                            break
+                    config["approved_examples"] = chosen
+                buffered = []
+
+                def flush():
+                    if buffered:
+                        for offset in range(0, len(buffered), 40):
+                            db().batch(buffered[offset:offset + 40])
+                        buffered.clear()
+                        Workspace(db()).touch(run["project_id"])
+
+                async def checkpoint(event):
+                    if event.get("stage") == "assessment_accepted":
+                        assessment = dict(event["assessment"])
+                        assessment["id"] = hashlib.sha256(f"{run_id}:{assessment['id']}".encode()).hexdigest()[:32]
+                        assessment.update({"run_id": run_id, "project_id": run["project_id"], "document_id": document["id"]})
+                        columns = ["id", "project_id", "run_id", "document_id", "task_id", "unit_id", "lens_id", "criterion_id", "criterion_kind", "result", "attribution", "speech_role", "speaker_stance", "document_stance", "hypothetical"]
+                        assessment["task_id"] = task["id"]
+                        values = [assessment.get(key, "unknown") for key in columns]
+                        values[-1] = int(bool(assessment.get("hypothetical")))
+                        # Negative decisions retain source anchors without repeated prose.
+                        payload = dict(assessment)
+                        if payload["result"] in {"does_not_meet", "not_applicable"}:
+                            for key in ("context", "explanation", "alternative"):
+                                payload.pop(key, None)
+                            payload["evidence_refs"] = [{k: ref[k] for k in ("sentence_id", "block_id", "start", "end") if k in ref} for ref in payload.get("evidence_refs", [])]
+                        buffered.append({"sql": "INSERT INTO v3_assessments(" + ",".join(columns) + ",payload_json,created_at) SELECT " + ",".join("?" for _ in range(len(columns) + 2)) + " WHERE EXISTS(SELECT 1 FROM tasks t JOIN runs r ON r.id=t.run_id WHERE t.id=? AND t.lease_token=? AND t.status='running' AND r.cancel_requested=0) ON CONFLICT(id) DO NOTHING", "params": [*values, json.dumps(payload, ensure_ascii=False), utcnow(), task["id"], token]})
+                        if len(buffered) >= 40:
+                            flush()
+                    elif event.get("stage") == "unit_status":
+                        flush()
+                        status = dict(event)
+                        unit = next(u for u in units if u["id"] == status["unit_id"])
+                        status["characters"] = unit.get("source_characters", len(unit["text"]))
+                        db().execute("UPDATE v3_unit_statuses SET status=?,payload_json=?,created_at=? WHERE run_id=? AND document_id=? AND unit_id=? AND EXISTS(SELECT 1 FROM tasks WHERE id=? AND lease_token=? AND status='running')", [status["status"], json.dumps(status), utcnow(), run_id, document["id"], status["unit_id"], task["id"], token])
+                try:
+                    # This adapter reserves and settles every request against
+                    # durable run/monthly ledgers. An interrupted response keeps
+                    # unknown invoice usage but charges its conservative reserve;
+                    # it must not masquerade as an exhausted per-task budget.
+                    analysis_config = {**config, "budget_usd": None}
+                    result = await asyncio.wait_for(analyze_units(complete_document, config.get("lens_snapshots") or config["lens_ids"], provider, units=units, config=analysis_config, progress=checkpoint), timeout=420 if db().remote else 480)
+                finally:
+                    flush()
+                # Preserve legacy scheduler block denominators alongside unit coverage.
+                result["coverage"]["total_blocks"] = len(units)
+                result["coverage"]["processed_blocks"] = sum(s["status"] == "accepted" for s in result["unit_statuses"])
+            else:
+                result = await asyncio.wait_for(analyze_document(document, config, provider), timeout=420 if db().remote else 480)
             # Only a current lease may commit. Replayed tasks cannot duplicate dashboard counts.
             lease = db().one("SELECT t.lease_token,r.cancel_requested FROM tasks t JOIN runs r ON r.id=t.run_id WHERE t.id=?", [task["id"]])
             if not lease or lease["lease_token"] != token or lease["cancel_requested"]:
@@ -682,7 +843,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         except asyncio.CancelledError:
             raise
         except Exception as exc:
-            db().execute("UPDATE tasks SET status='failed',error=?,lease_until=NULL WHERE id=? AND lease_token=?", [str(exc)[:1200], task["id"], token])
+            message = str(exc).strip() or type(exc).__name__
+            db().execute("UPDATE tasks SET status='failed',error=?,lease_until=NULL WHERE id=? AND lease_token=?", [message[:1200], task["id"], token])
         finally:
             # A failed remote request might still have been billed: preserve its conservative reservation as spend.
             while reservations:
@@ -692,11 +854,15 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         return {"pending": pending, "run": updated}
 
     async def run_loop(run_id: str):
-        while True:
-            result = await work_once(run_id)
-            if not result["pending"]:
-                break
-            await asyncio.sleep(1 if result.get("idle") else 0.01)
+        config = require_run(run_id)["config"]
+        concurrency = 4 if config.get("provider") in {"cloudflare", "openai", "runpod"} else 1
+        async def worker():
+            while True:
+                result = await work_once(run_id)
+                if not result["pending"]:
+                    break
+                await asyncio.sleep(1 if result.get("idle") else 0.01)
+        await asyncio.gather(*(worker() for _ in range(concurrency)))
 
     def schedule(run_id: str):
         if not start_workers:
@@ -711,6 +877,32 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     async def create_run(project_id: str, body: RunInput, *, check_health: bool = True) -> dict:
         require_project(project_id)
         config = body.model_dump(exclude_none=True)
+        modern = str(body.methodology_version).startswith("3") and body.provider != "lexical"
+        verification = None
+        if body.verification_of:
+            from doxa.verification import select_verification_units
+            primary = require_run(body.verification_of, project_id)
+            try:
+                verification = select_verification_units(db(), project_id, body.verification_of)
+            except ValueError as error:
+                raise HTTPException(422, str(error)) from error
+            config.update({key: primary["config"][key] for key in ("lens_ids", "lens_snapshots", "lens_snapshots_sha256", "question", "persona", "custom_lens", "learning_snapshot_id") if key in primary["config"]})
+            config["verification_selection"] = verification
+        if modern:
+            from doxa.contextual import PROMPT_VERSION, UNIT_BUILDER_VERSION
+            config.update({"unit_max_chars": 1200 if body.provider == "ollama" else 4000,
+                           "task_index_basis": "source_units_v3", "context_sentences": 2,
+                           "pipeline_version": PROMPT_VERSION, "unit_builder_version": UNIT_BUILDER_VERSION})
+            if verification:
+                config["unit_max_chars"] = primary["config"].get("unit_max_chars", 4000)
+            if not verification and "learning_snapshot_id" not in body.model_fields_set:
+                active_memory = db().one("SELECT snapshot_id FROM v3_learning_active WHERE project_id=?", [project_id])
+                if active_memory and active_memory["snapshot_id"]:
+                    config["learning_snapshot_id"] = active_memory["snapshot_id"]
+        if modern and body.provider not in {"ollama", "lexical"} and not body.allow_remote_text:
+            raise HTTPException(422, "Enable remote text transfer for this run before sending source passages to the selected provider")
+        if body.learning_snapshot_id and not db().one("SELECT id FROM v3_learning_snapshots WHERE id=? AND project_id=?", [body.learning_snapshot_id, project_id]):
+            raise HTTPException(422, "Learning snapshot does not belong to this project")
         if body.provider not in {"lexical", "ollama", "cloudflare", "openai", "runpod"}:
             raise HTTPException(422, "Unknown inference provider")
         from doxa.lenses import get_lens, validate_custom_lens
@@ -724,6 +916,10 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                     raise ValueError("Custom lens selection requires explicit criteria")
             if body.custom_lens:
                 config["custom_lens"] = validate_custom_lens(body.custom_lens)
+            if modern and not config.get("lens_snapshots"):
+                config["lens_snapshots"] = [validate_custom_lens(config["custom_lens"]) if identity == "custom" else get_lens(identity)
+                                            for identity in config["lens_ids"]]
+                config["lens_snapshots_sha256"] = hashlib.sha256(json.dumps(config["lens_snapshots"], sort_keys=True, ensure_ascii=False).encode()).hexdigest()
         except (KeyError, ValueError) as exc:
             raise HTTPException(422, str(exc)) from exc
         if not body.lens_ids and not body.custom_lens:
@@ -738,11 +934,14 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             config["provider_preflight"] = readiness
         rows = db().query("SELECT * FROM documents WHERE project_id=? AND status='ready' ORDER BY created_at,id", [project_id])
         if body.document_ids is not None:
-            rows = [row for row in rows if row["id"] in body.document_ids]
+            selected_source_ids = set(body.document_ids)
+            rows = [row for row in rows if row["id"] in selected_source_ids]
+        if verification:
+            rows = [row for row in rows if row["id"] in verification["document_ids"]]
         if not rows:
             raise HTTPException(422, "Import at least one successfully extracted document")
         run_id = uid()
-        config["schema_version"] = "1.0"
+        config["schema_version"] = "3.0" if modern else "1.0"
         manifest_key = f"runs/{run_id}/source-manifest.json"
         db().put_json(manifest_key, [{key: row.get(key) for key in ["id", "sha256", "title", "author", "institution", "document_type", "published_at"]} for row in rows])
         config["source_manifest_key"] = manifest_key
@@ -751,7 +950,29 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         statements = []
         ordinal = 0
         for row in rows:
+            statements.append({"sql": "INSERT INTO v3_run_sources(run_id,document_id,sha256) VALUES(?,?,?) ON CONFLICT(run_id,document_id) DO NOTHING", "params": [run_id, row["id"], row["sha256"]]})
             blocks = db().get_json(row["blocks_key"])
+            if modern:
+                from doxa.contextual import build_units
+                doc = require_document(row["id"], True)
+                units = build_units(doc, max_unit_chars=config["unit_max_chars"])
+                if verification:
+                    selected_units = set(verification["unit_ids"].get(row["id"], []))
+                    units = [unit for unit in units if unit["id"] in selected_units]
+                for unit in units:
+                    statements.append({"sql": "INSERT INTO v3_unit_statuses(run_id,document_id,unit_id,status,characters,payload_json,created_at) VALUES(?,?,?,'pending',?,?,?) ON CONFLICT(run_id,document_id,unit_id) DO NOTHING", "params": [run_id, row["id"], unit["id"], unit.get("source_characters", len(unit["text"])), json.dumps({"unit_id": unit["id"], "block_id": unit["block_id"], "start": unit["start"], "end": unit["end"], "block_ids": unit.get("block_ids", [unit["block_id"]])}), utcnow()]})
+                first, characters = 0, 0
+                for index, unit in enumerate(units):
+                    size = unit.get("source_characters", len(unit["text"]))
+                    if characters and characters + size > (1200 if body.provider == "ollama" else 16000):
+                        statements.append({"sql": "INSERT INTO tasks(id,run_id,document_id,ordinal,start_block,end_block) VALUES(?,?,?,?,?,?)", "params": [uid(), run_id, row["id"], ordinal, first, index]})
+                        ordinal += 1
+                        first, characters = index, 0
+                    characters += size
+                if first < len(units):
+                    statements.append({"sql": "INSERT INTO tasks(id,run_id,document_id,ordinal,start_block,end_block) VALUES(?,?,?,?,?,?)", "params": [uid(), run_id, row["id"], ordinal, first, len(units)]})
+                    ordinal += 1
+                continue
             start, chars = 0, 0
             for i, block in enumerate(blocks):
                 if chars and chars + len(block["text"]) > 20000:
@@ -765,6 +986,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         for i in range(0, len(statements), 50):
             db().batch(statements[i:i+50])
         result = refresh_run(run_id)
+        from doxa.workspace import Workspace
+        Workspace(db()).touch(project_id)
         schedule(run_id)
         return result
 
@@ -804,12 +1027,18 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         if run["status"] not in {"paused_budget", "failed", "partial", "cancelled"}:
             raise HTTPException(409, "Only a paused, partial, failed or cancelled run can be resumed")
         config = run["config"]
+        if str(config.get("methodology_version", "1")).startswith("3") and config.get("provider") != "lexical":
+            from doxa.contextual import PROMPT_VERSION
+            if config.get("pipeline_version") and config["pipeline_version"] != PROMPT_VERSION:
+                raise HTTPException(409, "Analysis method changed. Start a new run to preserve comparable results.")
         if config.get("saved_snapshot"):
             raise HTTPException(409, "Saved showcase runs are fixed. Start a new analysis to compare a different model or retry the corpus.")
         if body and "budget_usd" in body:
             cap = body["budget_usd"]
             if not isinstance(cap, (float, int)) or not math.isfinite(cap) or not 0 <= cap <= 10000:
                 raise HTTPException(422, "Run budget must be between $0 and $10,000")
+            if config.get("verification_of") and cap > 2:
+                raise HTTPException(422, "Independent verification has a $2 total run cap")
             config.setdefault("budget_changes", []).append({"previous": config.get("budget_usd"), "new": cap, "at": utcnow()})
             config["budget_usd"] = cap
         readiness = await provider_health(config)
@@ -1056,6 +1285,15 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         path = db().root / "downloads" / report_id / Path(report["object_key"]).name
         db().download(report["object_key"], path)
         return FileResponse(path, filename=path.name)
+
+    from doxa.v3_api import register as register_v3
+    from doxa.imports import register as register_imports
+    services = {"db": db, "require_project": require_project, "require_document": require_document,
+                "require_run": require_run, "create_run": create_run, "new_batch": new_batch,
+                "ingest": ingest, "load_demo": load_demo, "provider_health": provider_health, "root": ROOT,
+                "use_saved_showcase": use_saved_showcase}
+    register_v3(app, services)
+    register_imports(app, services)
 
     assets = ROOT / "frontend" / "dist" / "assets"
     if assets.exists():

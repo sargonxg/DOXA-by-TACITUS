@@ -1,0 +1,533 @@
+{
+  "id": "gv-823893",
+  "publisher_id": 823893,
+  "source_id": "globalvoices:823893",
+  "source_url": "https://globalvoices.org/2024/11/13/from-egypt-to-libya-migrant-deaths-in-the-mediterranean-are-either-ignored-or-normalized/",
+  "title": "From Egypt to Libya, migrant deaths in the Mediterranean are either ignored or normalized",
+  "published_at": "2024-11-13T12:00:34Z",
+  "modified_at": "2024-11-13T17:45:21Z",
+  "api_author_id": 3252,
+  "api_content_sha256": "d53573164ffe886369a8a49703a78795c2209e3eaa96112dde098b38cb1bb8c1",
+  "api_response_sha256": "766fe75da845dfaf7629c84c3900a6c6e1f8c5919f3b2643a5c31209454cf3f1",
+  "api_retrieved_at": "2026-11-16T22:21:07.588206+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 319,
+      "count": 2687,
+      "name": "Arabic",
+      "slug": "arabic",
+      "parent": 317
+    },
+    {
+      "id": 23,
+      "count": 2547,
+      "name": "Egypt",
+      "slug": "egypt",
+      "parent": 14
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    },
+    {
+      "id": 88,
+      "count": 394,
+      "name": "Libya",
+      "slug": "libya",
+      "parent": 14
+    },
+    {
+      "id": 1358,
+      "count": 4577,
+      "name": "Migration &amp; Immigration",
+      "slug": "migration-immigration",
+      "parent": 238
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-823893-b00001",
+      "text": "A boat carrying 13 Egyptian migrants capsized on October 28, 2024, shortly after leaving Kambut, a village 60 kilometers east of Tobruk in eastern Libya which is commonly used as a departure point for migrants attempting to reach Europe. Of the 13 passengers, only one survived.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 278,
+      "source_links": [
+        "https://web.facebook.com/share/p/14nStDM9ML/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00002",
+      "text": "Three bodies have been recovered in the days following the incident: one on October 29th, another on November 3rd, and the third on November 7th. The latest recovered victim’s remains were heavily decomposed, and the body was taken to a morgue for further examination.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 280,
+      "body_end": 548,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00003",
+      "text": "Egypt remains a significant source of Mediterranean migration flows, with over 11,000 Egyptians recorded arriving in Italy via Libya by sea in 2023 alone. Worsening economic conditions and limited legal pathways drive many Egyptians to make these dangerous journeys, risking their lives in the process.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 550,
+      "body_end": 852,
+      "source_links": [
+        "https://dtm.iom.int/reports/migrant-and-refugee-movements-through-central-mediterranean-sea-joint-annual-overview-2023"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00004",
+      "text": "On November 5th, the EU announced a EUR 20 million aid package through the European Peace Facility to help Egypt’s Armed Forces enhance national security and protect civilians in the “Western territories” — the very region where Egyptian migrants cross into Libya before attempting the Mediterranean journey.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 854,
+      "body_end": 1162,
+      "source_links": [
+        "https://www.libyanexpress.com/eu-approves-e20-million-in-aid-for-egyptian-armed-forces/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00005",
+      "text": "Earlier this year, the European Union allocated a EUR 7.4 billion aid package to Egypt, with EUR 200 million specifically designated for migration management. Incidents like this one raise questions about the effective use of these funds to address root causes and migrant safety.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1164,
+      "body_end": 1444,
+      "source_links": [
+        "https://ec.europa.eu/commission/presscorner/api/files/attachment/877847/STR_EU-EG%20partnership.pdf",
+        "https://neighbourhood-enlargement.ec.europa.eu/news/joint-declaration-strategic-and-comprehensive-partnership-between-arab-republic-egypt-and-european-2024-03-17_en"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00006",
+      "text": "Community efforts in Libya",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1446,
+      "body_end": 1472,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00007",
+      "text": "The central Mediterranean, particularly the route by way of North Africa, continues to be the deadliest migration route globally, with 61 percent of all migrant deaths in 2023 occurring in the region. For countless migrants taking this route, the risks are intensified by inconsistent and inadequate Search and Rescue (SAR) operations. According to the United Nations High Commissioner for Refugees (UNHCR) and the International Office of Migration (IOM), the lack of coordinated SAR response along this route puts those at sea in grave danger. Local community-driven organizations such as the Al Abireen Foundation in Tobruk, working alongside the Libyan Red Crescent, are often left to manage recovery efforts with limited resources and minimal international support.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1474,
+      "body_end": 2243,
+      "source_links": [
+        "https://dtm.iom.int/reports/migrant-and-refugee-movements-through-central-mediterranean-sea-joint-annual-overview-2023#:~:text=61%25%20of%20the%20deaths%20in%202023%20took%20place%20on%20the%20central%20Mediterranean%20Sea",
+        "https://web.facebook.com/profile.php?id=100064592178030"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00008",
+      "text": "In an interview with Global Voices, a representative from the Al Abireen Foundation, who preferred to remain anonymous, explained the severe restrictions they face in their work: “There is no presence of any major NGOs like the UN or IOM here. We’re left to manage as best we can with limited resources. Only the Red Crescent has been of any significant help, coordinating with us directly on the ground.”",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2245,
+      "body_end": 2650,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00009",
+      "text": "The foundation also faces strict information controls, especially regarding the survivors. “The survivor was taken to Benghazi by the corresponding military officer, but I'm not allowed to publish his name or a picture of him, even though I have a video of him explaining the incident and details regarding the other victims that were on board with him on the boat.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2652,
+      "body_end": 3018,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00010",
+      "text": "The representative explained that in such cases, there is typically a limitation enforced by military personnel oversight, which raises broader concerns about the handling and treatment of migrants intercepted or rescued in the Mediterranean.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3020,
+      "body_end": 3262,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00011",
+      "text": "> #Tobruk_Ain al-Ghazala",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3264,
+      "body_end": 3288,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-823893-b00012",
+      "text": "> The fourth body has been recovered out of 13 migrants who drowned a week ago.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3290,
+      "body_end": 3369,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-823893-b00013",
+      "text": "> The boat was carrying 25 migrants, most of them of Syrian nationality.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3371,
+      "body_end": 3443,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-823893-b00014",
+      "text": "> There are 12 survivors, but we have not been able to obtain their names or meet with them to identify the names of the migrants who were with them and drowned.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3445,
+      "body_end": 3606,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-823893-b00015",
+      "text": "> #Journeys that end with an unknown body, with the smuggler profiting, and many families unaware of the fate of their children. May God help us.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3608,
+      "body_end": 3753,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-823893-b00016",
+      "text": "> God is sufficient for us, and He is the best disposer of affairs",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3755,
+      "body_end": 3821,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-823893-b00017",
+      "text": "Given Kambut's proximity to Italian waters, the Al Abireen Foundation sometimes collaborates with the Italian Coast Guard. “Our foundation is occasionally contacted by the Italian Coast Guard, but they do not provide any assistance; it is primarily a routine communication.”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3823,
+      "body_end": 4097,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00018",
+      "text": "Egypt normalizing migrant deaths",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4099,
+      "body_end": 4131,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00019",
+      "text": "In Egypt, migrant deaths have become so routine that state-aligned media rarely report them. When such incidents are covered, the discourse is often focused on portraying migration as a criminal activity and victims as criminals. This essentially reinforces an extremely desensitized narrative of illegality over humanity and neglects the desperate socioeconomic and political circumstances that drive people to put their lives on the line.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4133,
+      "body_end": 4573,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00020",
+      "text": "On one of Egypt’s most-watched TV shows, host Ahmed Moussa exemplifies the dismissive rhetoric often seen in Egyptian media on migration issues. In a segment addressing a similar tragedy in which 11 Egyptians lost their lives on the same route, Moussa criticized both migrants and their families, asking, “How could the families allow their sons to leave in this way?”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4575,
+      "body_end": 4943,
+      "source_links": [
+        "https://www.youtube.com/watch?v=3ffinwOrqvU&t=175s"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00021",
+      "text": "Moussa mocks the motives of those desperate for a better livelihood abroad and insists that ample opportunities exist in Egypt: “There are plenty of job opportunities in Egypt — more than ever in our history. There's work everywhere.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4945,
+      "body_end": 5179,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00022",
+      "text": "In reality, Egypt is facing a severe economic crisis, with the Egyptian pound losing over 35 percent of its value amid surging inflation. According to the Central Agency for Public Mobilization and Statistics, the Consumer Price Index in Egypt has been constantly increasing and reaching all-time highs, reflecting an economic reality of hardship contrary to Moussa’s claims.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5181,
+      "body_end": 5556,
+      "source_links": [
+        "https://tradingeconomics.com/egypt/consumer-price-index-cpi"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00023",
+      "text": "Because they are migrating illegally, migrants are rarely able to speak openly about their reasons for leaving or the process of crossing over to Europe. One such opportunity came in 2022 after 287 Egyptian migrants were arrested en masse in Tobruk, Libya and interviewed.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5558,
+      "body_end": 5830,
+      "source_links": [
+        "https://youtu.be/LlDenijYTo8?si=inPSugkKXOyMvNPi"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00024",
+      "text": "One of the migrants, Ziad, 12, explained his reason for leaving: “Like anyone else here, I just wanted to have a better life. I was planning to go work in Italy.” Another teenager shared the grueling process they endured in trying to cross into Europe: walking 50 kilometers across the border and being transferred while they were blindfolded from car to car by smugglers until reaching a warehouse where nearly 300 people were held. “We’ve been here for six months,” he added. Most migrants pay smugglers anywhere from EGP 20,000 (USD 400) to EGP 170,000 (USD 3,500) to make the journey.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5832,
+      "body_end": 6420,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00025",
+      "text": "Another migrant, Khaled, a man in his thirties who had recently undergone open-heart surgery, echoed why many are willing to undertake the cost: “What else should I do? There aren’t any decent-paying jobs.”",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6422,
+      "body_end": 6628,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00026",
+      "text": "The lack of reporting on such incidents gives the impression that the media is collectively avoiding nuanced conversations on the issue and opting to turn a blind eye instead. This has fostered public detachment and apathy, allowing these ongoing tragedies to go unchallenged and unaddressed.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6630,
+      "body_end": 6922,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00027",
+      "text": "Systemic flaws",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6924,
+      "body_end": 6938,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00028",
+      "text": "This tragedy underscores the need for improved SAR operations and better coordination for migrant support. The ad hoc nature of SAR responses and limited humanitarian access for disembarkations in Libya leaves many migrants without adequate protection. According to the same report by UNHCR and IOM, many intercepted migrants are returned to unsafe conditions with no humanitarian oversight, exposing them to significant risks.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6940,
+      "body_end": 7367,
+      "source_links": [
+        "https://dtm.iom.int/reports/migrant-and-refugee-movements-through-central-mediterranean-sea-joint-annual-overview-2023#:~:text=61%25%20of%20the%20deaths%20in%202023%20took%20place%20on%20the%20central%20Mediterranean%20Sea"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00029",
+      "text": "This, among many other untold stories and incidents that continue to take place, illustrates the systemic flaws in current migration management policies in the Mediterranean. According to data collected by the Missing Migrants Project, “the nature of any overseas crossing” often means migrants may “disappear without a trace,” particularly in cases of shipwrecks with no survivors. This is illustrated by hundreds of unidentified bodies found on Libya’s shores and numerous unverified reports of fatal shipwrecks.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7369,
+      "body_end": 7883,
+      "source_links": [
+        "https://missingmigrants.iom.int/region/mediterranean"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00030",
+      "text": "The IOM and UNHCR Joint Annual Overview reports that “more than 3,105 migrants and refugees are known to have lost their lives or gone missing at sea,” attempting to reach Europe in 2023. However, they clarify that the actual number is likely higher, as many incidents go “unreported or undetected.”",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 7885,
+      "body_end": 8184,
+      "source_links": [
+        "https://dtm.iom.int/reports/migrant-and-refugee-movements-through-central-mediterranean-sea-joint-annual-overview-2023"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00031",
+      "text": "Without enhanced SAR efforts, transparent government funds allocation, and humane treatment for intercepted and rescued migrants, the Mediterranean will continue to be a hotbed of such humanitarian crises for those forced to leave their homes in search of safety or opportunity abroad.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 8186,
+      "body_end": 8471,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-823893-b00032",
+      "text": "The incident in Kambut is not an isolated tragedy but a devastating reminder of the ongoing Mediterranean migration crisis.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 8473,
+      "body_end": 8596,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "c2a38e2247e6fcf30811b10b266825b031d1c0500d8f9d35bb3d5cb47590f1be",
+  "word_count": 1349,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 2,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8596,
+  "retrieved_at": "2026-11-16T22:44:44.963028+00:00",
+  "raw_html_sha256": "544d368963c455f5cb1c24af855bc73b3085997e0c16b203298fbb4fb91d4843",
+  "resolved_source_url": "https://globalvoices.org/2024/11/13/from-egypt-to-libya-migrant-deaths-in-the-mediterranean-are-either-ignored-or-normalized/",
+  "canonical_url": "https://globalvoices.org/2024/11/13/from-egypt-to-libya-migrant-deaths-in-the-mediterranean-are-either-ignored-or-normalized/",
+  "source_bytes": 194697,
+  "authors": [
+    {
+      "name": "Saher",
+      "url": "https://globalvoices.org/author/saher-ahmed/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 823893,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "544d368963c455f5cb1c24af855bc73b3085997e0c16b203298fbb4fb91d4843",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-67df062dac05c908edef",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-11",
+    "eligible_month_documents": 69,
+    "selected_month_documents": 58,
+    "inclusion_probability": 0.8405797101449275,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Saher",
+  "body_start": 506,
+  "body_end": 9102,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "82e0e24021ac651a73537422376cee76ae93e3f37321f724a9b36afa319e07e8",
+  "text_path": "articles/gv-823893.txt",
+  "metadata_path": "metadata/gv-823893.json",
+  "attribution": "This story by Saher originally appeared on Global Voices. https://globalvoices.org/2024/11/13/from-egypt-to-libya-migrant-deaths-in-the-mediterranean-are-either-ignored-or-normalized/",
+  "content_sha256": "32a567239fe953d49df594aeb03fd1e8ffd6cf080953f79f12234c827573fba1",
+  "source_sha256": "544d368963c455f5cb1c24af855bc73b3085997e0c16b203298fbb4fb91d4843",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

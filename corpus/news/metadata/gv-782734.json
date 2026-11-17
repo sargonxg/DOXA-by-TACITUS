@@ -1,0 +1,430 @@
+{
+  "id": "gv-782734",
+  "publisher_id": 782734,
+  "source_id": "globalvoices:782734",
+  "source_url": "https://globalvoices.org/2023/03/09/is-openai-biased-we-checked-so-you-wont-have-to/",
+  "title": "Is OpenAI biased? We checked so you won't have to",
+  "published_at": "2023-03-09T18:39:09Z",
+  "modified_at": "2023-03-10T16:11:31Z",
+  "api_author_id": 2997,
+  "api_content_sha256": "0640dc95dd4b6c627123cf70ccce895f962a51618c4d4d5aa6113db86d683fbf",
+  "api_response_sha256": "8b3feb0e2101ac240a644420be8d11f4f4938cd1af5a1ecb243a3cbb01dc3439",
+  "api_retrieved_at": "2026-11-16T22:20:50.704723+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 239,
+      "count": 12626,
+      "name": "Arts &#038; Culture",
+      "slug": "arts-culture",
+      "parent": 238
+    },
+    {
+      "id": 325,
+      "count": 2253,
+      "name": "Chinese",
+      "slug": "chinese",
+      "parent": 317
+    },
+    {
+      "id": 1439,
+      "count": 63,
+      "name": "Czech",
+      "slug": "czech",
+      "parent": 317
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 1355,
+      "count": 5871,
+      "name": "Ethnicity &amp; Race",
+      "slug": "ethnicity-race",
+      "parent": 238
+    },
+    {
+      "id": 3207,
+      "count": 41,
+      "name": "Indonesian",
+      "slug": "indonesian",
+      "parent": 317
+    },
+    {
+      "id": 1233,
+      "count": 87,
+      "name": "Kazakh",
+      "slug": "kazakh",
+      "parent": 317
+    },
+    {
+      "id": 296,
+      "count": 2217,
+      "name": "Language",
+      "slug": "language",
+      "parent": 238
+    },
+    {
+      "id": 334,
+      "count": 31,
+      "name": "Malayalam",
+      "slug": "malayalam",
+      "parent": 317
+    },
+    {
+      "id": 28,
+      "count": 68775,
+      "name": "Quick Reads",
+      "slug": "roundups",
+      "parent": 218
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 340,
+      "count": 6258,
+      "name": "Spanish",
+      "slug": "spanish",
+      "parent": 317
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 347,
+      "count": 61,
+      "name": "Uzbek",
+      "slug": "uzbek",
+      "parent": 317
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 1361,
+      "count": 6433,
+      "name": "Women &amp; Gender",
+      "slug": "women-gender",
+      "parent": 238
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-782734-b00001",
+      "text": "Both of the popular new tech launches of the OpenAI project, ChatGPT and DALL-E2, have provoked much attention from the media and social media users. Discussions about what can be achieved with these technologies, what jobs might be replaced, how to deal with copyright issues, and how these technologies might amplify existing bias are ongoing in digital rights, tech, and journalistic spheres.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 395,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/DALL-E",
+        "https://slate.com/technology/2023/02/dalle2-stable-diffusion-ai-art-race-bias.html",
+        "https://www.analyticsinsight.net/openais-extremely-famous-chatgpt-scripted-history-in-just-two-months/",
+        "https://www.musicbusinessworldwide.com/why-a-legal-ruling-over-an-ai-generated-cartoon-has-major-implications-for-musics-future/",
+        "https://www.vox.com/recode/2023/3/4/23624033/openai-bing-bard-microsoft-generative-ai-explained",
+        "https://www.washingtonpost.com/technology/2023/02/06/what-is-openai-chatgpt/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00002",
+      "text": "Global Voices experimented with DALL-E2, the AI picture generator, to see how it generates pictures from different languages. We typed the same phrase in nine languages: “Oil painting of a shadow of a grieving woman at the window.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 397,
+      "body_end": 628,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00003",
+      "text": "Here are the results we received:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 630,
+      "body_end": 663,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00004",
+      "text": "English",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 665,
+      "body_end": 672,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00005",
+      "text": "Spanish: Pintura al óleo de la sombra de una mujer en duelo ante la ventana",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 674,
+      "body_end": 749,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00006",
+      "text": "Czech: Olejomalba stínu truchlící ženy u okna",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 751,
+      "body_end": 796,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00007",
+      "text": "Russian: Картина маслом силуэт скорбящей женщины у окна",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 798,
+      "body_end": 853,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00008",
+      "text": "Indonesian: Lukisan cat minyak bayangan seorang janda perempuan yang sedang berduka di samping jendela",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 855,
+      "body_end": 957,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00009",
+      "text": "Simplified Chinese: 窗边悲痛女人的影子油画",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 959,
+      "body_end": 990,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00010",
+      "text": "Kazakh: Терезедегі қайғылы әйелдің көлеңкесінің майлы бояу суретi",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 992,
+      "body_end": 1057,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00011",
+      "text": "Uzbek: Deraza oldida qayg'u chekayotgan ayol soyasining moyli rasmi",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1059,
+      "body_end": 1126,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00012",
+      "text": "Malayalam: ജനാലയ്ക്കരികിൽ ദുഃഖിക്കുന്ന ഒരു സ്ത്രീയുടെ നിഴലിന്റെ ഓയിൽ പെയിന്റിംഗ്",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 1128,
+      "body_end": 1208,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00013",
+      "text": "Obviously, some of these photos are quite different from the original prompt. This could be because of insufficient data in the original languages. As DALL-E's inventors explain in an interview with Tech Crunch, the model it works on is called CLIP (Contrastive Language-Image Pre-training). CLIP was trained on 400 million pairs of images with text captions scraped from the internet. As OpenAI says on its site:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 1210,
+      "body_end": 1623,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Web_scraping",
+        "https://openai.com/research/dall-e",
+        "https://techcrunch.com/2021/01/05/openais-dall-e-creates-plausible-images-of-literally-anything-you-ask-it-to/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00014",
+      "text": "> GPT-3 showed that language can be used to instruct a large neural network to perform a variety of text generation tasks. Image GPT showed that the same type of neural network can also be used to generate images with high fidelity. We extend these findings to show that manipulating visual concepts through language is now within reach.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 1625,
+      "body_end": 1962,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-782734-b00015",
+      "text": "“We live in a visual world,” says Ilya Sutskever, chief scientist at OpenAI, in an interview with MIT Technological Review:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 1964,
+      "body_end": 2087,
+      "source_links": [
+        "https://www.technologyreview.com/2021/01/05/1015754/avocado-armchair-future-ai-openai-deep-learning-nlp-gpt3-computer-vision-common-sense/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00016",
+      "text": "> In the long run, you’re going to have models which understand both text and images. AI will be able to understand language better because it can see what words and sentences mean.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2089,
+      "body_end": 2270,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-782734-b00017",
+      "text": "Since different languages produced such different outputs, it seems that the focus of this web-scraping with which the model works, used more widely-spoken languages, such as English or Spanish, but not less obvious languages.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 2272,
+      "body_end": 2498,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00018",
+      "text": "Thus, many pictures from the internet with a description in Uzbek or Malayalam were not present in the original data with which the AI was trained. If the model intends to work with more languages, it needs to focus on training more on images with descriptions other than English. Otherwise, users from Kazakhstan will continue to get pictures of cuisine instead of a woman, and those speaking Malayalam will receive pictures of nature. The Russian-based image is clearly sexualized, somehow. The Indonesian image portrays several girls sitting, and the Czech one takes the prize for originality with a jar of oil stealing the show. The pictures based on simplified Chinese are outright scary.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 2500,
+      "body_end": 3193,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-782734-b00019",
+      "text": "Of course, we cannot claim, based on this, that OpenAI is racist. What we can see here is that it has not received enough data in non-English languages. Now, whether it stays this way, we do not know, but we strongly suggest that it doesn't.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3195,
+      "body_end": 3436,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "b11a6847422caf5a998670f2dea459e06cac379061e3868996becc84abdd429d",
+  "word_count": 548,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 10,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 3436,
+  "retrieved_at": "2026-11-16T22:38:26.235363+00:00",
+  "raw_html_sha256": "1e4488523e614a2a71c4a8d12c7d6e938e41ac88c717e3e87fe12e28797526db",
+  "resolved_source_url": "https://globalvoices.org/2023/03/09/is-openai-biased-we-checked-so-you-wont-have-to/",
+  "canonical_url": "https://globalvoices.org/2023/03/09/is-openai-biased-we-checked-so-you-wont-have-to/",
+  "source_bytes": 192139,
+  "authors": [
+    {
+      "name": "Daria Dergacheva",
+      "url": "https://globalvoices.org/author/daria-dergacheva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 782734,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "1e4488523e614a2a71c4a8d12c7d6e938e41ac88c717e3e87fe12e28797526db",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-bacb810e6934ba5c096e",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-03",
+    "eligible_month_documents": 92,
+    "selected_month_documents": 77,
+    "inclusion_probability": 0.8369565217391305,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Daria Dergacheva",
+  "body_start": 436,
+  "body_end": 3872,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "3507f3e362933d94b54ae4d0d2fea78806c2b64fc61442e51721974b3fa8f8b3",
+  "text_path": "articles/gv-782734.txt",
+  "metadata_path": "metadata/gv-782734.json",
+  "attribution": "This story by Daria Dergacheva originally appeared on Global Voices. https://globalvoices.org/2023/03/09/is-openai-biased-we-checked-so-you-wont-have-to/",
+  "content_sha256": "f662da495b91cc496066f54b273532f8ed33dd3542e67aa5ced4fbd1fbb55912",
+  "source_sha256": "1e4488523e614a2a71c4a8d12c7d6e938e41ac88c717e3e87fe12e28797526db",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

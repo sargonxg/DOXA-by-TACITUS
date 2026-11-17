@@ -1,0 +1,363 @@
+{
+  "id": "gv-776618",
+  "publisher_id": 776618,
+  "source_id": "globalvoices:776618",
+  "source_url": "https://globalvoices.org/2022/12/05/activists-strive-for-data-protection-in-indonesia/",
+  "title": "Activists strive for data protection in Indonesia",
+  "published_at": "2022-12-05T06:43:15Z",
+  "modified_at": "2022-12-05T06:50:16Z",
+  "api_author_id": 1869,
+  "api_content_sha256": "41df7dba46fa6aa2bc970f25c139120671faa2200d4e9133e19a1cabbf4c24ae",
+  "api_response_sha256": "b089d92e1bc9ef52a0f74ca6487ef5c94a3419c03fd7d8c3d840ac88f7068f89",
+  "api_retrieved_at": "2026-11-16T22:20:48.534273+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 51,
+      "count": 1106,
+      "name": "Indonesia",
+      "slug": "indonesia",
+      "parent": 16
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-776618-b00001",
+      "text": "This edited article was commissioned by the OPTF, the makers of the Session messaging app.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 90,
+      "source_links": [
+        "https://optf.ngo/",
+        "https://optf.ngo/the-long-and-winding-road-striving-for-data-protection-in-indonesia/",
+        "https://www.getsession.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00002",
+      "text": "The long-awaited Indonesian Personal Data Protection Bill was approved by the parliament on September 20, 2022. Despite the initial draft being submitted to parliament in 2016, this long-pending legislation experienced delays due to disagreements between the government, parliament, and civil society over important details, such as who would serve as the supervisory body in enforcing the measure.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 92,
+      "body_end": 490,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00003",
+      "text": "The government preferred the Ministry of Information and Technology to be the supervisory body, a preference criticized by parliament and civil society organizations, which are pushing for an independent supervisory free from government intervention. The debate resulted in a legislative deadlock as stakeholders wait for Indonesian President Joko Widodo (Jokowi) to appoint an oversight body.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 492,
+      "body_end": 885,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00004",
+      "text": "The data is in danger",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 887,
+      "body_end": 908,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00005",
+      "text": "Although the data protection bill includes serious penalties, including corporate fines or even imprisonment, its approval by no means settles the debate over data protection in Indonesia. In 2022 there have been heated debates and discussions about digital rights, digital regulation, and data protection in Indonesian news and cyberspace, stemming from repeated fiascos, including data breaches from government institutions, mandatory registration for private electronic system operators (ESOs), and company breaches resulting in citizen information being stolen and sold by hackers.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 910,
+      "body_end": 1495,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00006",
+      "text": "Mandatory registration of ESOs sparked concerns over data privacy and censorship. Some companies, such as Yahoo, PayPal, and Steam, were blocked when they failed to register. This quickly sparked protests, as the hashtag #BlokirKominfo spread around cyberspace as people protested against the Indonesia Ministry of Information and Technology (KOMINFO) for causing chaos.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1497,
+      "body_end": 1867,
+      "source_links": [
+        "https://globalvoices.org/2022/07/31/indonesia-blocks-yahoo-paypal-and-gaming-websites-over-new-licensing-rules/",
+        "https://thediplomat.com/2022/07/internet-freedom-in-indonesia-is-teetering-on-a-razors-edge/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00007",
+      "text": "The ESO regulation was supposed to protect the data of Indonesian citizens and give Indonesian authorities the ability to supervise the operation of ESOs. However, doubts about the efficacy of the data protection regulation were raised when the government launched the PeduliLindung, a COVID-19 tracking application, which was a mandatory application during the pandemic for those who wished to fly, use public transport, enter malls, or visit any public spaces. The application crashed several times despite the government's assurance that it would improve the app. Digital activists remained concerned about how the app processed sensitive health data, and fears the government could not keep citizen data secure were reignited when President Joko Widodo’s own vaccine certificate was leaked online.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1869,
+      "body_end": 2670,
+      "source_links": [
+        "https://engagemedia.org/2022/pandemic-control-pedulilindungi/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00008",
+      "text": "Digital technology has become a staple in daily life, resulting in an urge within the Indonesian government to create laws regulating and protecting people in cyberspace. Some cyber regulations, such as the infamous Electronic Information and Transaction Law, became problematic when enforced.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2672,
+      "body_end": 2965,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00009",
+      "text": "Instead of protecting people from cyberbullying and fraud, this regulation has been used to attack those who criticize government regulations or policies. It goes further by victimizing people who criticize others in daily life. Some internet users’ posts have been criminalized simply because they contain complaints about something or someone via social media. Journalists writing about state problems have also become victims of this regulation. The Institute for Criminal Justice Reform said the government should pay attention to five crucial issues in this law, because it threatens freedom of expression.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2967,
+      "body_end": 3578,
+      "source_links": [
+        "https://icjr.or.id/response-to-the-revision-of-information-and-electronic-transaction-law-ite-law-five-crucial-issues-in-the-ite-law-that-threaten-freedom-of-expression-in-indonesia/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00010",
+      "text": "Data protection also remains weak against private digital applications and e-commerce platforms which constantly collect more and more personal information from their customers. When BukaLapak and Tokopedia’s (both are e-commerce platforms in Indonesia) data was breached and reportedly sold on the dark web, there was no significant action from the government. The platforms said that they would upgrade their security. However, there was no compensation or tangible support provided to their customers.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3580,
+      "body_end": 4084,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00011",
+      "text": "In September 2022, there was another very large data breach containing information on over 105 million citizens from a government institution. The hackers were selling to buyers through a forum site. Again, there is no mechanism for citizens to complain or take action regarding the incident, and little has been done by the government in response to the leak.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4086,
+      "body_end": 4446,
+      "source_links": [
+        "https://cybernews.com/news/hackers-leak-sensitive-data-of-over-105m-indonesian-citizens/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00012",
+      "text": "What’s next?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4448,
+      "body_end": 4460,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00013",
+      "text": "Activists say that ideally when there are some parties (private sector, government, etc.) collecting citizens’ data for their own purpose, they should be required to declare how they handle the data, including protection measures, and what they will do in case of a data breach. Customers should also have the right to sue the parties who neglect data protection in the form of class action lawsuits.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4462,
+      "body_end": 4862,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00014",
+      "text": "Some civil society organizations in Indonesia have joined forces and collected complaints from citizens or the groups who were affected by large-scale leaks. This group hopes to facilitate a class action lawsuit against the government for being negligent in protecting citizen data.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4864,
+      "body_end": 5146,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00015",
+      "text": "However, justice will only be served if there are data protection regulations that protect citizens overwhelmed by data traffic, e-commerce practices, and private data collection from institutions (including government institutions). Not to mention a system where citizens can file complaints when they think their data might be misused. Then, the complaint needs to be handled by the regulator, who then investigates the case and decides the degree of mistake of the institution.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5148,
+      "body_end": 5628,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00016",
+      "text": "Within the digital rights sector, there is a lot of work to do now that the personal data protection bill has been passed. Civil society organizations have pointed out that the government seems excluded from the obligation to protect data even if it also collects citizen data on a large scale.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5630,
+      "body_end": 5924,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00017",
+      "text": "Also, there is still no clarity about which institution will process the data and will be held accountable if there is a leak. Still, there is a long way to go to achieve stronger data protection in Indonesia.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5926,
+      "body_end": 6135,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-776618-b00018",
+      "text": "*Juliana Harsianti is an independent researcher and journalist working at the intersection of digital technology and social impact.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6137,
+      "body_end": 6268,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "8bfb693429cb6c1c8e6e2fd41c14baa9bf418222c24550a696c7bf2129d29f29",
+  "word_count": 935,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 6268,
+  "retrieved_at": "2026-11-16T22:37:19.696286+00:00",
+  "raw_html_sha256": "e99ecdbed18df5da1ae40284743d9f07b5e96e1ac4b0fea38554ebf286737593",
+  "resolved_source_url": "https://globalvoices.org/2022/12/05/activists-strive-for-data-protection-in-indonesia/",
+  "canonical_url": "https://globalvoices.org/2022/12/05/activists-strive-for-data-protection-in-indonesia/",
+  "source_bytes": 186000,
+  "authors": [
+    {
+      "name": "Juliana Harsianti",
+      "url": "https://globalvoices.org/author/juliana-harsianti/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 776618,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "e99ecdbed18df5da1ae40284743d9f07b5e96e1ac4b0fea38554ebf286737593",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-8a8e5830c6d8f280a7af",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-12",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Juliana Harsianti",
+  "body_start": 439,
+  "body_end": 6707,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "0473d30e3ae1a2b1ac369cd2357fb857733641a50997d8f3f33c7a9c50ceabf4",
+  "text_path": "articles/gv-776618.txt",
+  "metadata_path": "metadata/gv-776618.json",
+  "attribution": "This story by Juliana Harsianti originally appeared on Global Voices. https://globalvoices.org/2022/12/05/activists-strive-for-data-protection-in-indonesia/",
+  "content_sha256": "7e3ff34ddc03bb3a21f5f6e6c234889bdc78cf4e0dfeb927829ed5d84382b3c9",
+  "source_sha256": "e99ecdbed18df5da1ae40284743d9f07b5e96e1ac4b0fea38554ebf286737593",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

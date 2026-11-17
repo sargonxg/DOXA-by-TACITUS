@@ -1,0 +1,466 @@
+{
+  "id": "gv-785077",
+  "publisher_id": 785077,
+  "source_id": "globalvoices:785077",
+  "source_url": "https://globalvoices.org/2023/04/12/new-study-finds-internet-censorship-in-turkmenistan-reaches-over-122000-domains/",
+  "title": "New study finds internet censorship in Turkmenistan reaches over 122,000 domains",
+  "published_at": "2023-04-12T01:00:56Z",
+  "modified_at": "2023-04-12T06:06:00Z",
+  "api_author_id": 3095,
+  "api_content_sha256": "ea3045404d8fb47e3093bb3ebe4342758b1528ab3f66f665a65e9e515471f05d",
+  "api_response_sha256": "6c93b1644e3efecd5dee3d12bc31cbe2099131cc7d217db96e6ca3f4ecad33e2",
+  "api_retrieved_at": "2026-11-16T22:20:52.215120+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 288,
+      "count": 7347,
+      "name": "Central Asia &amp; Caucasus",
+      "slug": "central-asia-caucasus",
+      "parent": 219
+    },
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1364,
+      "count": 1877,
+      "name": "LGBTQ+",
+      "slug": "gay-rights-lgbt",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 1430,
+      "count": 30,
+      "name": "Turkmen",
+      "slug": "turkmen",
+      "parent": 317
+    },
+    {
+      "id": 85,
+      "count": 453,
+      "name": "Turkmenistan",
+      "slug": "turkmenistan",
+      "parent": 288
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-785077-b00001",
+      "text": "The dictatorship in Turkmenistan does not get a lot of media and scholarly attention, although it is more than worthy of it. In the 2023 Freedom in the World Index, the country ranked in the bottom three, behind only war-torn Syria and ahead of North Korea. The issue of internet censorship is particularly acute in Turkmenistan. In 2016, the media freedom organization Reporters without Borders listed the country as one of the enemies of the internet due to its heavy censorship and information control policies. The internet speed in Turkmenistan is the slowest in the world. The authorities arrest citizens who use VPN apps to access censored content.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 655,
+      "source_links": [
+        "https://acca.media/en/14040/turkmenistan-the-authorities-almost-completely-blocked-the-internet-in-the-country/",
+        "https://acca.media/en/5777/turkmenistan-dozens-of-people-arrested-for-installing-vpn-apps/",
+        "https://en.wikipedia.org/wiki/Turkmenistan",
+        "https://en.wikipedia.org/wiki/Virtual_private_network",
+        "https://freedomhouse.org/sites/default/files/2023-03/FIW_2023_50Years_DigitalPDF.pdf",
+        "https://www.businessinsider.com/turkmenistan-what-life-is-like-inside-secretive-dictatorship-2019-10#the-economy-could-also-currently-be-at-risk-of-collapse-9",
+        "https://www.rferl.org/a/turkmenistan-internet-slowest-restrictions/31652467.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-785077-b00002",
+      "text": "Between 2021 and 2022, a team of computer scientists conducted the first and only large-scale research on internet censorship in Turkmenistan, in which they tested 15.5 million domains for censorship and found out that over 122,000 domains are blocked. Full research results are available here. Global Voices spoke to Nguyen Phong from the research team to learn about what content is censored, how it is done, and what methods can be employed to circumvent censorship. Currently, Phong is a postdoctoral researcher at the University of Chicago. The interview has been edited for clarity.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 657,
+      "body_end": 1245,
+      "source_links": [
+        "https://arxiv.org/pdf/2304.04835.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-785077-b00003",
+      "text": "For more, read: Like father, like son: Turkmenistan’s new president carries on his predecessor’s repressive policies",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1247,
+      "body_end": 1363,
+      "source_links": [
+        "https://globalvoices.org/2023/03/24/like-father-like-son-turkmenistans-new-president-carries-on-his-predecessors-repressive-policies/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-785077-b00004",
+      "text": "Nurbek Bekmurzaev (NB): Can you tell about your research: who conducted it, when did they do it and why?",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1365,
+      "body_end": 1469,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-785077-b00005",
+      "text": "> Nguyen Phong (NP): It was conducted by a team of computer scientists from the University of Chicago and University of Maryland. In the first part of the research paper, we discuss the blocking mechanism of the firewalls used in Turkmenistan. Based on their filtering behaviors, we designed a system to explore what is being blocked. Based on this understanding we then came up with techniques to bypass internet censorship in Turkmenistan.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1471,
+      "body_end": 1912,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00006",
+      "text": "> The research started at the end of 2021 and took over one year. We read about the internet censorship in Turkmenistan and realized that no one has done any work on it at a systemic level and on a large scale. For computer scientists, these are fascinating questions to answer because I want to know how the Turkmenistan government is making use of firewalls and interference techniques to block access to the Internet.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1914,
+      "body_end": 2334,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00007",
+      "text": "> Most people studying censorship in a particular country ask someone there to help run tests. In Turkmenistan it's difficult to use this method. It can be risky because your traffic, your internet connection, and those testing measurements will stick out from the rest of the allowed traffic. That is what motivated us to conduct this study. We asked ourselves whether we can measure censorship in this country without relying on local people.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2336,
+      "body_end": 2780,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00008",
+      "text": "NB: What makes your research different from previous research on internet censorship in Turkmenistan?",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2782,
+      "body_end": 2883,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-785077-b00009",
+      "text": "> NP: First, we don't rely on any local volunteers or any people who have a machine in the country. These prior approaches may work well but they won't scale. Some of them are one-off measurements while censorship can change every day.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2885,
+      "body_end": 3120,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00010",
+      "text": "> The second difference is the scale of the research. We tested 15.5 million unique domains. Previous work has tested a maximum of a couple of thousand popular domains. We found out that over 122,000 domains are censored.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3122,
+      "body_end": 3343,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00011",
+      "text": "> We conducted the empirical part of the research in September 2022. However, the system is still running and collecting data. If the firewalls behave the same way, we will have more data about what is being censored and whether we see any change over time.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3345,
+      "body_end": 3602,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00012",
+      "text": "NB: What were the challenges of conducting this research? How did you address them?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3604,
+      "body_end": 3687,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-785077-b00013",
+      "text": "> NP: Initially, we wanted to rent a server in Turkmenistan, but we couldn't find any. If you want to rent a virtual server there, you have to go through the government, which controls everything. So we stopped the research for a while since we couldn’t rent a server there.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3689,
+      "body_end": 3963,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00014",
+      "text": "> But then we learned that the censorship can actually be triggered from outside. You don't have to be inside the country to trigger it, you just have to come up with a sequence of network packets to trick the firewall to believe that you are communicating with an actual machine on the other side of the firewall, so it will take blocking actions. We named our system TMC, which simply stands for Turkmenistan censorship.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3965,
+      "body_end": 4387,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00015",
+      "text": "NB: What are your main findings? How does the government censor the internet? What is the scale of censorship?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4389,
+      "body_end": 4499,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-785077-b00016",
+      "text": "> NP: I previously studied internet censorship in China, where the government blocks more than 300,000 domains. I am thus interested in investigating if Turkmenistan was engaged in the same kind of censorship on a similar scale. At the beginning I thought that Turkmenistan did not have the technology for it. Then I conducted this study and found out I was completely wrong.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4501,
+      "body_end": 4876,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00017",
+      "text": "> The authorities block way more than people may have thought before. We found out that they have many block lists. They block at different layers, different protocols: DNS, HTTP, HTTPS. They block domains via what we call regular expressions, which is a rule based blocking system. For example, every domain name with the word “porn” is blocked in Turkmenistan. Even if it's not a pornography website, if it has the word porn in its name, it will be automatically blocked.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4878,
+      "body_end": 5351,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00018",
+      "text": "> Because of this blocking system, there is a lot of collateral damage. There are a bunch of unrelated websites that are blocked. One of the worst blocking rules in Turkmenistan is that the government blocks every website that ends with w.org, which is WordPress. It is used by activists and bloggers, which is why they do it.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5353,
+      "body_end": 5679,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00019",
+      "text": "> You can take a look at Figures 4, 5, and 6 in the paper to learn more about it. There is a lot of adult content that is being blocked. It is not just pornography, it is also LGBTQ+ and gender identity education content. Similarly to the Great Firewall of China, news, business and social media websites are blocked.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5681,
+      "body_end": 5998,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00020",
+      "text": "NB: Let's move on to the second part of your research, which is about circumventing censorship. How can people that live in Turkmenistan circumvent the censorship and access blocked content?",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6000,
+      "body_end": 6190,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-785077-b00021",
+      "text": "> NP: As a circumvention tool, we propose dividing a sequence of network packets. When you want to go to twitter.com, your request is blocked. But if you divide it into ‘twi’ and ‘tter.come,’ it does not recognize your request and lets you access the website. This works because of how the internet operates — the Twitter server is able to reassemble two packets into one.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6192,
+      "body_end": 6564,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00022",
+      "text": "> Another strategy to circumvent censorship is similar to having a conversation with the server and saying: “I want to talk about twitter.com” and then right after that saying: “Never mind. I don't want to talk about it. Let's talk about something else.” The firewall thinks: “Oh, the person already changed the topic, let's forget about it.” But in fact you have already told the server that you actually want to talk about twitter.com. The part of the conversation where you say: “Hey, I don't want to talk about twitter.com,” is pronounced quietly so the server does not hear it.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6566,
+      "body_end": 7148,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-785077-b00023",
+      "text": "> We are communicating with a lot of researchers and developers who build and operate circumvention tools. We will share the results from this paper with these organizations to integrate our circumvention strategies into their tools, and eventually make them available to people in the country to use.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7150,
+      "body_end": 7451,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "62e84846b54dc3f1b21fd607c0f18cafcfa5e9a3b325b8c789e8e8234ed7f09c",
+  "word_count": 1259,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7451,
+  "retrieved_at": "2026-11-16T22:38:48.655537+00:00",
+  "raw_html_sha256": "e78d1f52fc112ea6b0ec4faa5d9ef9bf38a9ae733022a02df767d4864c072ebd",
+  "resolved_source_url": "https://globalvoices.org/2023/04/12/new-study-finds-internet-censorship-in-turkmenistan-reaches-over-122000-domains/",
+  "canonical_url": "https://globalvoices.org/2023/04/12/new-study-finds-internet-censorship-in-turkmenistan-reaches-over-122000-domains/",
+  "source_bytes": 191042,
+  "authors": [
+    {
+      "name": "Nurbek Bekmurzaev",
+      "url": "https://globalvoices.org/author/nurbek-bekmurzaev/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 785077,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "e78d1f52fc112ea6b0ec4faa5d9ef9bf38a9ae733022a02df767d4864c072ebd",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-06a8201b6ca9e3bd3ab5",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-04",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Nurbek Bekmurzaev",
+  "body_start": 500,
+  "body_end": 7951,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "f3750c35930d8aa2e4cbc3182939ccb5172780e391f5e4827d840dd5367dda8e",
+  "text_path": "articles/gv-785077.txt",
+  "metadata_path": "metadata/gv-785077.json",
+  "attribution": "This story by Nurbek Bekmurzaev originally appeared on Global Voices. https://globalvoices.org/2023/04/12/new-study-finds-internet-censorship-in-turkmenistan-reaches-over-122000-domains/",
+  "content_sha256": "b3ef941e983d10dd7659102b31edf0422e3039f43b71aba4e4e5da889622d507",
+  "source_sha256": "e78d1f52fc112ea6b0ec4faa5d9ef9bf38a9ae733022a02df767d4864c072ebd",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

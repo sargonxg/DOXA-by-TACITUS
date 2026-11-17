@@ -1,5 +1,7 @@
 # What was actually verified
 
+For the current 0.3.0 workbench, see the superseding [v3 verification record](verification-v3.md). This document retains the historical v1 measurements below.
+
 This release was exercised in a Linux execution environment on November 16, 2026. The application is a research preview; these checks do not establish interpretation accuracy.
 
 | Check | Actual result |

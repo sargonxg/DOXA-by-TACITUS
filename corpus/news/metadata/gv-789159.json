@@ -1,0 +1,193 @@
+{
+  "id": "gv-789159",
+  "publisher_id": 789159,
+  "source_id": "globalvoices:789159",
+  "source_url": "https://globalvoices.org/2023/05/30/video-a-different-kind-of-bike-ride/",
+  "title": "VIDEO: A different kind of bike ride",
+  "published_at": "2023-05-30T13:29:26Z",
+  "modified_at": "2023-05-30T13:42:19Z",
+  "api_author_id": 131,
+  "api_content_sha256": "8db022ae63bab5a2776132ace65586d42557613792300b15e42ac33395d1ef1b",
+  "api_response_sha256": "54f78f672a26b6c6455fead63a0e1446e0433e81dd766bf7ded37091ab7c5c37",
+  "api_retrieved_at": "2026-11-16T22:20:52.946884+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 264,
+      "count": 2294,
+      "name": "Labor",
+      "slug": "labor",
+      "parent": 238
+    },
+    {
+      "id": 1358,
+      "count": 4577,
+      "name": "Migration &amp; Immigration",
+      "slug": "migration-immigration",
+      "parent": 238
+    },
+    {
+      "id": 1352,
+      "count": 3301,
+      "name": "North America",
+      "slug": "north-america",
+      "parent": 219
+    },
+    {
+      "id": 186,
+      "count": 3578,
+      "name": "U.S.A.",
+      "slug": "usa",
+      "parent": 1352
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-789159-b00001",
+      "text": "In two days’ time on June 1, Guatemalan American writer and academic J. Nathan Matias, and Global Voices’ executive director Ivan Sigal, set off on their 500-mile bike ride in Central California, following the route of the historic 1966 California Farmworkers March. The ride will raise funds to support Rising Voices, Global Voices’ digital inclusion program, and the Central California Environmental Justice Network.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 418,
+      "source_links": [
+        "http://natematias.com/",
+        "https://donorbox.org/cycling-fundraiser-1?t=manage_updates#info",
+        "https://globalvoices.org/author/ivan-sigal/",
+        "https://l.facebook.com/l.php?u=https%3A%2F%2Fccejn.org%2F%3Ffbclid%3DIwAR1O8tiSpwQs2EUnuofgsaNRQpX1fyVNjgIYlYa0kgKS6P6IkIUZvntFRis&h=AT0Q-V7u1vI86c-icejF9O0K5RqWKVRPbCt4SnTxHvnBaVEtk4B6v_il6Y-1iNN3P0lrv-gJHdlr2AOvDkYy_umuW85I8IJaXB3El1Vl8ldPxpESr0XQFYa4aVBvmeZvpeSRgEbXx7JH7P9VeeUHfyA",
+        "https://rising.globalvoices.org/",
+        "https://www.nps.gov/subjects/labor/the-road-to-sacramento-marching-for-justice-in-the-fields.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-789159-b00002",
+      "text": "In this video, Nathan and Ivan explain more about the ride and their personal motivations for undertaking it.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 420,
+      "body_end": 529,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-789159-b00003",
+      "text": "Read more background about the ride, including their goals and their itinerary at our special coverage page.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 531,
+      "body_end": 639,
+      "source_links": [
+        "https://globalvoices.org/2023/05/23/what-were-aiming-to-achieve-with-our-fundraising-bicycle-ride-and-some-details-of-the-route/",
+        "https://globalvoices.org/special/fundraiser_cycling_farmworkers_march/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5f99ac5498c15d68367bce177d84c6b0e131868123d0cf1b730c523b1c371d91",
+  "word_count": 98,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 3,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 639,
+  "retrieved_at": "2026-11-16T22:39:27.512124+00:00",
+  "raw_html_sha256": "5ff90cff61aff37c1d8530ccf6f91fbeaecd1f057ded93ff6cd6c7393a07bf77",
+  "resolved_source_url": "https://globalvoices.org/2023/05/30/video-a-different-kind-of-bike-ride/",
+  "canonical_url": "https://globalvoices.org/2023/05/30/video-a-different-kind-of-bike-ride/",
+  "source_bytes": 179955,
+  "authors": [
+    {
+      "name": "Georgia Popplewell",
+      "url": "https://globalvoices.org/author/georgia-popplewell/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 789159,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "5ff90cff61aff37c1d8530ccf6f91fbeaecd1f057ded93ff6cd6c7393a07bf77",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-66a35455a28a4167c8f7",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-05",
+    "eligible_month_documents": 130,
+    "selected_month_documents": 109,
+    "inclusion_probability": 0.8384615384615385,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Georgia Popplewell",
+  "body_start": 413,
+  "body_end": 1052,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "9eccfa10db2d5e0555b2ba0c3f15a35b7f39c6876b7d3ddb13e0c8c879f9ecec",
+  "text_path": "articles/gv-789159.txt",
+  "metadata_path": "metadata/gv-789159.json",
+  "attribution": "This story by Georgia Popplewell originally appeared on Global Voices. https://globalvoices.org/2023/05/30/video-a-different-kind-of-bike-ride/",
+  "content_sha256": "0640b1e4974f58b21c4c2855b5afc391790bceda0a6f0b27d4486d47a8bfeefe",
+  "source_sha256": "5ff90cff61aff37c1d8530ccf6f91fbeaecd1f057ded93ff6cd6c7393a07bf77",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

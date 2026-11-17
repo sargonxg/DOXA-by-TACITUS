@@ -1,0 +1,437 @@
+{
+  "id": "gv-833911",
+  "publisher_id": 833911,
+  "source_id": "globalvoices:833911",
+  "source_url": "https://globalvoices.org/2025/05/09/digital-censorship-and-political-repression-the-blocking-of-the-x-account-of-istanbuls-jailed-mayor/",
+  "title": "Digital censorship and political repression: The blocking of the X account of Istanbul's jailed mayor",
+  "published_at": "2025-05-09T10:04:47Z",
+  "modified_at": "2025-05-29T14:40:59Z",
+  "api_author_id": 799,
+  "api_content_sha256": "4e18721d4c67b4708928daf682d4cd0e0e82d319022b597a9b042b71595d5e9c",
+  "api_response_sha256": "908882e0b636b43f6da86b828a40e41ce62d1b0d6819ae1f4042a250f7ccc8b8",
+  "api_retrieved_at": "2026-11-16T22:21:11.515146+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 238,
+      "count": 1673,
+      "name": "TOPICS",
+      "slug": "topics",
+      "parent": 0
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    },
+    {
+      "id": 218,
+      "count": 1666,
+      "name": "TYPE",
+      "slug": "type",
+      "parent": 0
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-833911-b00001",
+      "text": "On May 8, 2025, the X account of Ekrem İmamoğlu, the jailed mayor of Istanbul and the opposition's presidential candidate, was blocked in Turkey following a court order. The authorities cited a tweet from İmamoğlu’s account, which they claimed could incite criminal activity. The restriction has faced widespread backlash from legal experts, political allies, and digital rights advocates, who view it as an attempt to silence dissenting voices ahead of the 2028 presidential elections. The mayor's account is among the hundreds of accounts that have been blocked in Turkey.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 574,
+      "source_links": [
+        "https://globalvoices.org/2025/03/19/the-arrest-of-istanbul-mayor-ekrem-imamoglu-a-turning-point-in-turkish-politics/",
+        "https://www.reuters.com/world/middle-east/jailed-istanbul-mayor-imamoglus-x-account-blocked-turkey-2025-05-08/?utm_source=chatgpt.com"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00002",
+      "text": "The Centre for Combating Disinformation (DMM), affiliated with the Communications Directorate, told journalists that the decision to block the account in Turkey was connected to a tweet posted on April 24 in which the jailed mayor urged citizens not to stay silent about the injustice prevailing in the country:",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 576,
+      "body_end": 887,
+      "source_links": [
+        "https://tr.euronews.com/2025/05/08/ekrem-imamoglu-serbest-birakilana-kadar-x-hesabi-tedbiren-kapali-kalacak",
+        "https://x.com/ekrem_imamoglu/status/1915351007598411783"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00003",
+      "text": "> My dear nation,",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 889,
+      "body_end": 906,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833911-b00004",
+      "text": "> Either justice or misery… We have no other choice now. I have filed a criminal complaint against those who caused the greatest disgrace in the history of the Turkish judiciary and I will continue to do so. There is no way to describe the price that a handful of ambitious people have made our country pay, the rights they have taken. We pay this price together with our retirees, workers, low-income, unemployed, students, children and youth. I ask this handful of ambitious people who caused our nation to experience complete misery, “What are you serving with irregular trials and operations, arrests, detention processes where many people, including me, are kept waiting for days in filthy custody, or government appointed trustees, etc.?” How do you find it appropriate for the great Turkish judiciary to produce false witnesses, to create informants and slanderers, to arrest the innocent or to intimidate them by arresting them, to threaten them by saying “You cannot leave prison?” Now you are trying to detain lawyers, intimidate them and prevent people from doing their jobs. Enough! Who are you, who and what do you serve? Who did you learn these methods from? Don't you feel ashamed of attacking people's honor and dignity? I am calling out to my nation: This handful of ambitious people are causing great harm to both the nation and the state. Complain, don't remain silent, and raise your voice.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 908,
+      "body_end": 2318,
+      "source_links": [
+        "https://www.turkishminute.com/2024/11/01/replacement-of-opposition-party-mayor-in-turkey-bring-trustee-appointmet-und-spotlight/?utm_source=chatgpt.com"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833911-b00005",
+      "text": "The court order cited Article 8/A of Law No. 5651, or “national security and public order,” as a reason behind the blocking.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 2320,
+      "body_end": 2444,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00006",
+      "text": "DMM also said in a statement that İmamoğlu's account will remain closed as a precaution until his release. Another ground for the decision to block the account was that it was not İmamoğlu who was tweeting. The latter prompted further criticism. In a tweet, journalist Gökçer Tahincioğlu questioned the logic, “So all the politicians write their own messages with their phones in hand, and share their own speeches. Great justification!”",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2446,
+      "body_end": 2883,
+      "source_links": [
+        "https://x.com/gtahincioglu/status/1920397046571229522"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00007",
+      "text": "Gönenç Gürkaynak, a Turkish lawyer representing X, has filed a lengthy 765-page objection to the court’s decision. He argues that blocking an entire account, particularly that of a leading political figure, is a disproportionate measure that infringes on freedom of expression. Gürkaynak emphasized that the court order lacked specificity, failing to identify particular URLs or content that violated the law, and instead imposed a blanket restriction on the account.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2885,
+      "body_end": 3352,
+      "source_links": [
+        "https://x.com/GurkaynakGonenc/status/1920377493610967195"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00008",
+      "text": "X's Global Affairs handle also shared the court order by which the platform was ordered to block the mayor's account. In a tweet, Global Affairs said, “X received an order to restrict access in Türkiye to the account of the now-detained Mayor of Istanbul. While we have followed Türkiye’s order regarding the account, we strongly disagree with the order and are challenging the order in court. In the spirit of full transparency, we are sharing the court order and our legal filing below.”",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3354,
+      "body_end": 3843,
+      "source_links": [
+        "https://x.com/GlobalAffairs/status/1920426409358455081"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00009",
+      "text": "Digital rights and censorship concerns",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3845,
+      "body_end": 3883,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00010",
+      "text": "According to Yaman Akdeniz, a law professor and head of Turkey's Freedom of Expression Association (IFOD), the blocking was not surprising “as hundreds of accounts have been subject to such orders since Imamoglu's arrest.” Since March 19, the day when İmamoğlu was detained, over 700 X accounts, including those of journalists and civil society organizations, were blocked by the same Article 8/A of Law No. 5651, “national security and public order.” The latter prompted an exodus of Turkish X users to Bluesky. Authorities were quick to respond, demanding the suspension of over 40 Bluesky accounts, according to reporting by Bianet, citing Freedom of Expression Association (İFÖD) monitoring data. The same article was used to have the platform block access to these accounts. However, Bluesky did not take any action according to Bianet reporting.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3885,
+      "body_end": 4736,
+      "source_links": [
+        "https://bianet.org/haber/x-users-in-turkey-migrate-to-bluesky-amid-censorship-306189",
+        "https://uk.news.yahoo.com/access-jailed-istanbul-mayors-x-072150973.html?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAF56sTbJ1LRa7AcSfSK7dAwhgCFqaEPgqIrBLyMwmyMDWi05QfVOKT4F1t67d2mG3HQMxlZMn5SFAga2Rndu8xwxi88T2mDjiR923HjS3mx0VBfBGXtU1LzhRE4S6hvnWpmltpu7OZ5OjML3EFj8cecjenX01hXF_l4QV3DIw8DN&guccounter=2"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00011",
+      "text": "Moreover, following the arrest of the mayor, authorities throttled internet bandwidth for some 42 hours. But even before the mass demonstrations, which started with the arrest of the popular mayor, internet censorship had already been widely used, and the tradition of blocking content and platforms or throttling internet access is common. A quick look at Engelli Web (Blocked Web) website, which tracks online censorship in Turkey, shows that not a day goes by without a blocked news site, tweet or account in Turkey. Not surprisingly, Turkey was ranked “not free” in Freedom House's Freedom on the Net report in 2024.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4738,
+      "body_end": 5358,
+      "source_links": [
+        "https://ahvalnews.com/internet-freedom/turkey-seeking-solutions-block-vpns",
+        "https://bianet.org/haber/turkey-lifts-social-media-restrictions-after-istanbul-mayors-arrest-while-dozens-detained-over-posts-305666",
+        "https://freedomhouse.org/country/turkey/freedom-net/2024",
+        "https://globalvoices.org/2022/06/03/trace-turkeys-path-to-normalizing-the-practice-of-blocking-news-websites/",
+        "https://globalvoices.org/2023/02/22/in-turkey-telecommunications-censor-blocks-access-to-popular-website-eksi-sozluk/",
+        "https://globalvoices.org/2024/08/02/turkey-blocks-access-to-instagram/",
+        "https://www.freewebturkey.com/erisim-engeli"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00012",
+      "text": "According to the most recent Internet Censorship report produced by the Free Web Turkey platform, “access to 219,059 URLs, including 197,907 domain names were blocked in Turkey in 2023. While the number of blocked news was 14,680, the most blocked news was about corruption and irregularities.” In addition, according to the findings of the report, 5,641 social media posts and 743 social media accounts were also removed or banned.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 5360,
+      "body_end": 5792,
+      "source_links": [
+        "https://drive.google.com/file/d/1rf9AWBr9S3tNDtMSvFiKnpwB3nbtuvd_/view"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00013",
+      "text": "Various state institutions have the power to block content or request the blocking of content. Turkey's top telecommunications watchdog, the Information Technologies and Communications Authority (BTK), can block sites without a court order according to Article 8A of the infamous internet bill 5651. The article empowers the watchdog to block access to specific content when it poses a danger to national security, public order, etc.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5794,
+      "body_end": 6227,
+      "source_links": [
+        "https://globalvoices.org/2022/11/18/in-turkey-a-football-federation-joins-a-list-of-institutions-with-powers-to-censor-content-online/",
+        "https://globalvoices.org/wp-content/uploads/2023/08/Unfreedom_Monitor_Turkey_Country_Report_2022_updated.pdf",
+        "https://mbkaya.com/turkish-internet-law/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00014",
+      "text": "Public and political reactions",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 6229,
+      "body_end": 6259,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00015",
+      "text": "The blocking of İmamoğlu’s account has sparked a wave of reactions from supporters and political allies. Many have expressed their disapproval and shared messages of solidarity on social media. Countless accounts on X changed their avatars to the picture of the mayor.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6261,
+      "body_end": 6529,
+      "source_links": [
+        "https://www.bbc.com/turkce/articles/ckg411ez3lpo"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00016",
+      "text": "In response to the restriction on his X account, İmamoğlu has turned to TikTok to communicate with the public. In a recent video, he says, “We will not give up; you will give up.”",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6531,
+      "body_end": 6710,
+      "source_links": [
+        "https://www.evrensel.net/haber/552937/x-hesabi-engellenen-imamoglundan-paylasim-biz-pes-etmeyecegiz-siz-pes-edeceksiniz"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00017",
+      "text": "Meanwhile, Ankara mayor Mansur Yavas said he would offer his Twitter account to continue to be the voice of his counterpart despite restrictions in a tweet, “The access ban imposed on Ekrem İmamoğlu's official social media account is censorship not only against one person but also against the voices of millions. We condemn this unlawfulness in the strongest possible terms. However, it should be known that wherever there are attempts to silence justice, we will speak louder. This account will continue to be the voice of Ekrem İmamoğlu and will be used on his behalf until the access ban is lifted.”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6712,
+      "body_end": 7315,
+      "source_links": [
+        "https://x.com/mansuryavas23/status/1920343283621855411"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833911-b00018",
+      "text": "Leader of the Republican People's Party (CHP) Özgür Özel called the blocking of the mayor's account the beginning of the “digital arm of the coup.” Özel previously called the arrest of the mayor a “coup attempt.”",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 7317,
+      "body_end": 7529,
+      "source_links": [
+        "https://edition.cnn.com/2025/03/19/europe/turkey-istanbul-mayor-detained-intl-hnk/index.html",
+        "https://gazeteoksijen.com/turkiye/ozgur-ozelden-imamoglunun-x-hesabinin-kapatilmasina-tepki-darbenin-dijital-ayagi-basladi-241461"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "a05678d6ea91760d47dba5e98fc66f25608b54c05c3c1edf0d601328a9a345f0",
+  "word_count": 1211,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7529,
+  "retrieved_at": "2026-11-16T22:46:24.802436+00:00",
+  "raw_html_sha256": "6e7d2e290ff9d79bd58a36bfa945b1631fc86847b5a4ba906f4a9d2b94e21df3",
+  "resolved_source_url": "https://globalvoices.org/2025/05/09/digital-censorship-and-political-repression-the-blocking-of-the-x-account-of-istanbuls-jailed-mayor/",
+  "canonical_url": "https://globalvoices.org/2025/05/09/digital-censorship-and-political-repression-the-blocking-of-the-x-account-of-istanbuls-jailed-mayor/",
+  "source_bytes": 194359,
+  "authors": [
+    {
+      "name": "Arzu Geybullayeva",
+      "url": "https://globalvoices.org/author/arzu-geybullayeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 833911,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "6e7d2e290ff9d79bd58a36bfa945b1631fc86847b5a4ba906f4a9d2b94e21df3",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-d0fb88aef527419cea57",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-05",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Arzu Geybullayeva",
+  "body_start": 541,
+  "body_end": 8070,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "5e3886931e4b154a2bd3e67e4011848c2b34cb38ed7595a1f5324a1843743098",
+  "text_path": "articles/gv-833911.txt",
+  "metadata_path": "metadata/gv-833911.json",
+  "attribution": "This story by Arzu Geybullayeva originally appeared on Global Voices. https://globalvoices.org/2025/05/09/digital-censorship-and-political-repression-the-blocking-of-the-x-account-of-istanbuls-jailed-mayor/",
+  "content_sha256": "f1cc5327f7bcb1db5ca58366d98b40f9d83f24f8f2c9dc3e3b1d1e675c0ab249",
+  "source_sha256": "6e7d2e290ff9d79bd58a36bfa945b1631fc86847b5a4ba906f4a9d2b94e21df3",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,532 @@
+{
+  "id": "gv-696815",
+  "publisher_id": 696815,
+  "source_id": "globalvoices:696815",
+  "source_url": "https://globalvoices.org/2020/02/07/the-battle-of-numbers-in-the-wuhan-coronavirus-outbreak/",
+  "title": "The battle of numbers in the Wuhan coronavirus outbreak",
+  "published_at": "2020-02-07T04:02:37Z",
+  "modified_at": "2020-04-02T00:06:42Z",
+  "api_author_id": 1749,
+  "api_content_sha256": "bd63df05433a57b895555a83e856dbb1a7b79dfc134b68515daedc289edfabcf",
+  "api_response_sha256": "8480492cb0e67e08506277bbbbeeed6da0f18a0c7fd08ca1ae397634172ec47c",
+  "api_retrieved_at": "2026-11-16T22:20:22.644399+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 325,
+      "count": 2253,
+      "name": "Chinese",
+      "slug": "chinese",
+      "parent": 317
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-696815-b00001",
+      "text": "Since the 2019n-CoV virus, better known as the Wuhan coronavirus, became front-page news around the world in late January, one key question has yet to be answered: how many people are infected or have been killed by the coronavirus? While the Chinese government claims to be transparent in sharing real-time information, there are many reasons to doubt the official figures.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 374,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00002",
+      "text": "The Chinese administrative quota system: A recipe for cover-ups",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 376,
+      "body_end": 439,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00003",
+      "text": "In China, controlling the official narrative concerning crises is considered paramount under the ideology of the Chinese Communist Party (CCP). While this is primarily achieved by muzzling media outlets and heavily censoring social media, keeping casualty figures low for the public is yet another tool often used in times of emergency.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 441,
+      "body_end": 777,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00004",
+      "text": "There is a term in Chinese administrative language called 突发事件, which can be translated as “sudden incident” “unforeseen event” or “emergency”. This can include natural, health, man-made disaster, transportation accidents, and also social protests.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 779,
+      "body_end": 1027,
+      "source_links": [
+        "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AA%81%E5%8F%91%E4%BA%8B%E4%BB%B6%E5%BA%94%E5%AF%B9%E6%B3%95"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00005",
+      "text": "Depending on the number of victims – both injured or killed – each level of the administration is legally bound to inform the next echelon: from local to provincial, from provincial to central. If an incident has a lower number of victims than defined by the administrative category and doesn’t meet the threshold of a serious incident, it can be managed locally. The administration in charge will then more likely escape any blame, penalty or inspection.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1029,
+      "body_end": 1484,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00006",
+      "text": "As detailed in this article, here are the parameters defining the different types of ‘incidents':",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1486,
+      "body_end": 1583,
+      "source_links": [
+        "https://www.rfa.org/mandarin/zhuanlan/yehuazhongnanhai/gx-04012019110632.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00007",
+      "text": "> A particularly serious accident refers to an accident that caused more than 30 deaths, or more than 100 serious injuries, or a direct economic loss of more than 100 million yuan; a major accident refers to an accident that caused more than 10 deaths, or injured between 50 and 100 people. General accidents refer to accidents that cause the death of less than 3 people, or seriously injured less than 10 people.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1585,
+      "body_end": 1998,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696815-b00008",
+      "text": "This has created a mindset among bureaucrats to instinctively lower the number of victims in reports, thus allowing the government to later modify the official discourse accordingly.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2000,
+      "body_end": 2182,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00009",
+      "text": "As China scholar Kingsley Edney explains in his book “The Globalization of Chinese Propaganda”:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2184,
+      "body_end": 2279,
+      "source_links": [
+        "https://books.google.com.tw/books?id=CdZCBAAAQBAJ&pg=PT156&lpg=PT156&dq=definition+of+tufa+shijian&source=bl&ots=dRkqZ_RMuD&sig=ACfU3U15vEuYCYho6uYXqSw3dvhTa2rT0g&hl=zh-TW&sa=X&ved=2ahUKEwjZqNKFuLznAhVOBKYKHbsND60Q6AEwF3oECAUQAQ#v=onepage&q=definition%20of%20tufa%20shijian&f=false"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00010",
+      "text": "> The Party-State response has moved toward engaging in a battle over the public’s understanding of those [sudden] events: defining the truth of an incident, setting the media’s agenda, defining the limits of the debate, and shutting down the ability of those who violate those limits to have their voices heard.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2281,
+      "body_end": 2593,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696815-b00011",
+      "text": "The SARS outbreak in 2003 saw similar patterns when patients were hidden from a WHO inspection to keep the figures low. It seems the same mindset is in place: on January 30th, the head of the health commission of the city of Huanggang, near Wuhan, was sacked after she was unable to provide figures about the medical situation. While the official might not have known numbers, it is also very likely that she didn’t know what to say for fear of giving a too high figure.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2595,
+      "body_end": 3065,
+      "source_links": [
+        "https://www.scmp.com/news/china/society/article/3048150/china-coronavirus-confirmed-mainland-cases-rise-7158-deaths-now",
+        "https://www.smh.com.au/national/sars-crisis-china-admits-its-big-deadly-lie-20030421-gdgmut.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00012",
+      "text": "According to Huang Yanzhong, a China health expert author of Governing Health in Contemporary China:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3067,
+      "body_end": 3167,
+      "source_links": [
+        "https://www.vox.com/2020/2/4/21122072/china-coronavirus-healthcare"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00013",
+      "text": "> If you look at the way [Wuhan] reported the disease, after January 5, they cease to provide reports, and that was not resumed until January 11. In that period, there was no information from the government about the disease. But there were two important political meetings going on [between January 5 and 11]: the city People’s Congress meeting and the political consultative conference. These are considered important meetings to appoint new leaders, make personnel changes, all at the local level. [Wuhan officials] didn’t want the bad news to ruin the meetings.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3169,
+      "body_end": 3734,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696815-b00014",
+      "text": "The scientific extrapolations",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3736,
+      "body_end": 3765,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00015",
+      "text": "Epidemiologists use modeling research in cases of transmission of viruses, a method that depends highly on the quality and reliability of data. Several medical and academic institutions have run models on the Wuhan coronavirus, and all conclude that the real figures – of infected and killed victims – is anything from 3 to 10 times higher than the official figure provided by the Chinese government. Quoting the peer-reviewed medical journal The Lancet, this article states that:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3767,
+      "body_end": 4247,
+      "source_links": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6024780/",
+        "https://www.sciencedaily.com/releases/2020/01/200131114753.htm",
+        "https://www.thelancet.com/coronavirus"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00016",
+      "text": "> New modeling research estimates that up to 75,800 individuals in the Chinese city of Wuhan may have been infected with 2019 novel coronavirus (2019-nCoV) as of Jan. 25, 2020. The authors caution that given the lack of a robust and detailed timeline of records of suspected, probable, and confirmed cases and close contacts, the true size of the epidemic and its pandemic potential remains unclear.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4249,
+      "body_end": 4648,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696815-b00017",
+      "text": "On February 6, the official figure of infected patients, based on Chinese data, indicates just over 28,000 reported cases.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4650,
+      "body_end": 4772,
+      "source_links": [
+        "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00018",
+      "text": "Independent coverage made by Chinese sources",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4774,
+      "body_end": 4818,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00019",
+      "text": "Independent journalism hasn’t completely disappeared in China: some outlets, such as financial news organization Caixin, as well as citizen journalists have covered the outbreak of the virus, and all have pointed to a cover-up by authorities – indeed a substantial number of patients who died of pneumonia have not been categorized as coronavirus patients. Such manipulation has lead to the lowering of the death rate by about 2 percents.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4820,
+      "body_end": 5258,
+      "source_links": [
+        "http://www.rfi.fr/tw/%E4%B8%AD%E5%9C%8B/20200201-%E9%A9%9A%E6%9B%9D%E6%AD%A6%E6%BC%A2%E5%A4%A7%E9%87%8F%E6%AD%BB%E8%80%85%E8%A2%AB%E5%86%A0%E4%B9%8B%E4%BB%A5%E6%99%AE%E9%80%9A%E8%82%BA%E7%82%8E-%E6%9C%AA%E5%85%A5%E5%AE%98%E6%96%B9%E5%85%AC%E5%B8%83%E6%95%B8%E6%93%9A",
+        "https://www.caixinglobal.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00020",
+      "text": "According to China expert Maria Repnikova, who was recently interviewed by Global Voices:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5260,
+      "body_end": 5349,
+      "source_links": [
+        "https://globalvoices.org/2020/01/21/is-russia-getting-its-model-for-digital-authoritarianism-from-china/",
+        "https://www.nytimes.com/2020/02/05/opinion/coronavirus-china-news-journalism.html?action=click&module=Opinion&pgtype=Homepage&fbclid=IwAR2V9wcPPDcZYzy3J0G0kH6Cw6RUTsrb4UUvguahZfJezbZHA1KLrY83nqY"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00021",
+      "text": "> The [Caixin] article shows how the local authorities enabled a cover-up that lasted nearly a month by threatening or silencing whistle-blower doctors, downplaying the epidemic’s reach and concealing the fact that the virus could be transmitted between people.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5351,
+      "body_end": 5612,
+      "source_links": [
+        "http://weekly.caixin.com/2020-01-23/101507778.html"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696815-b00022",
+      "text": "She also explains why the central authorities have tolerated coverage critical of the authorities:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5614,
+      "body_end": 5712,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00023",
+      "text": "> With social stability as their ultimate aim, the authorities try to strike a fragile balance between political control and curated transparency, alternating between censorship or propaganda and allowing the media, or its surrogates, to press for accountability.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5714,
+      "body_end": 5977,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696815-b00024",
+      "text": "Much more daring is the coverage made by citizen journalists who are not covered by a large media. Taking extreme personal risks, and forced to work in disguise, they also paint a very different picture than the one presented by the authorities.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5979,
+      "body_end": 6224,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00025",
+      "text": "An example is coverage conducted by Chen Qiushi, who is sharing videos of hospitals and morgues in order to question the real figures provided by the Wuhan authorities:",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6226,
+      "body_end": 6394,
+      "source_links": [
+        "https://globalvoices.org/2020/02/06/chen-quishi-a-citizen-journalist-on-the-frontline-of-the-wuhan-coronavirus-outbreak/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00026",
+      "text": "https://twitter.com/chenqiushi404/status/1224639698586357762?fbclid=IwAR0zcgXtVfi4Xgvh5dgtnb8emimzyzziw6uORXfGbbK_NxhZCpO0jzcYll4",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6396,
+      "body_end": 6525,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00027",
+      "text": "> We have collected enough evidence that medical, emergency and morgue services in Wuhan are unable to cope. I will no longer shoot or track death and cremation. Because everyone should already have made up their minds, I really don't have the heart to disturb the deceased again and again. Please rest in peace ~~",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6527,
+      "body_end": 6841,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696815-b00028",
+      "text": "Interestingly, on February 1, the Chinese social media platform Tencent presented figures that are closer to the scientific extrapolations mentioned above, albeit briefly, as noticed by netizens:",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6843,
+      "body_end": 7038,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Tencent",
+        "https://www.taiwannews.com.tw/en/news/3871594"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00029",
+      "text": "> On late Saturday evening (Feb. 1), the Tencent webpage showed confirmed cases of the Wuhan virus in China as standing at 154,023, 10 times the official figure at the time. It listed the number of suspected cases as 79,808, four times the official figure.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7040,
+      "body_end": 7296,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-696815-b00030",
+      "text": "As epidemiologists wait for credible data to continue their work, it's important to remember that behind every number is a human life in danger, an exhausted medical staff person, and a worried and often grieving family.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 7298,
+      "body_end": 7518,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-696815-b00031",
+      "text": "Check out Global Voices’ special coverage of the impact of the Wuhan coronavirus.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 7520,
+      "body_end": 7601,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/how-will-the-wuhan-coronavirus-impact-the-political-future-of-china/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "1193d4db34d93cf44355ff8fa813c3d9b09c2cfe1472282f6201f48e8f698c28",
+  "word_count": 1193,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7601,
+  "retrieved_at": "2026-11-16T22:21:56.248253+00:00",
+  "raw_html_sha256": "0bda0f53bdab3cab5fcafe220697ac32a9037fcbe7a9922dc1019ff123e80c9a",
+  "resolved_source_url": "https://globalvoices.org/2020/02/07/the-battle-of-numbers-in-the-wuhan-coronavirus-outbreak/",
+  "canonical_url": "https://globalvoices.org/2020/02/07/the-battle-of-numbers-in-the-wuhan-coronavirus-outbreak/",
+  "source_bytes": 198974,
+  "authors": [
+    {
+      "name": "Filip Noubel",
+      "url": "https://globalvoices.org/author/filip-noubel/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 696815,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "0bda0f53bdab3cab5fcafe220697ac32a9037fcbe7a9922dc1019ff123e80c9a",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-7156dc89d5b8350ff7bd",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-02",
+    "eligible_month_documents": 92,
+    "selected_month_documents": 77,
+    "inclusion_probability": 0.8369565217391305,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Filip Noubel",
+  "body_start": 446,
+  "body_end": 8047,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "01724e88e2339eb0f8d3d8422572105717c0bee993331525749e56ae87942efd",
+  "text_path": "articles/gv-696815.txt",
+  "metadata_path": "metadata/gv-696815.json",
+  "attribution": "This story by Filip Noubel originally appeared on Global Voices. https://globalvoices.org/2020/02/07/the-battle-of-numbers-in-the-wuhan-coronavirus-outbreak/",
+  "content_sha256": "7703922e1073702a0cee6b1b73a8380687faf387f8331b5bf112264db46b24dc",
+  "source_sha256": "0bda0f53bdab3cab5fcafe220697ac32a9037fcbe7a9922dc1019ff123e80c9a",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

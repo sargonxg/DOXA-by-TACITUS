@@ -1,0 +1,325 @@
+{
+  "id": "gv-825996",
+  "publisher_id": 825996,
+  "source_id": "globalvoices:825996",
+  "source_url": "https://globalvoices.org/2024/12/25/the-future-of-truth-carlos-hernandez-echevarria-on-fact-checking-and-ai/",
+  "title": "The future of truth: Carlos Hernández-Echevarría on fact-checking and AI",
+  "published_at": "2024-12-25T11:00:43Z",
+  "modified_at": "2025-02-14T10:41:16Z",
+  "api_author_id": 2589,
+  "api_content_sha256": "8d9888a8c8087c4f4fb10509f8f35918b513da3e6e4ad9d957888e27b8cfb93e",
+  "api_response_sha256": "6625a8d03b3e648da1476e3f26f88d0194314166208c9a1cf51b3466ab72098a",
+  "api_retrieved_at": "2026-11-16T22:21:08.459699+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 187,
+      "count": 2705,
+      "name": "Western Europe",
+      "slug": "western-europe",
+      "parent": 219
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-825996-b00001",
+      "text": "This interview by Elida Zylbeari, editor in chief of the Albanian version of Truthmeter.mk and the online portal Portalb.mk, was first published by Truthmeter.mk as part of the Western Balkans Anti-Disinformation Hub. An edited version is republished here under a content-sharing agreement between Global Voices and Metamorphosis Foundation.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 341,
+      "source_links": [
+        "https://antidisinfo.net/the-future-of-truth-carlos-hernandez-echevarria-on-fact-checking-and-ai/",
+        "https://portalb.mk/",
+        "https://truthmeter.mk/",
+        "https://truthmeter.mk/the-future-of-truth-carlos-hernandez-echevarria-on-fact-checking-and-ai/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825996-b00002",
+      "text": "In this interview, Truthmeter.mk speaks with Carlos Hernández-Echevarría, a prominent figure in the world of fact-checking and the former chair of the European Fact-Checking Standards Network (EFCSN). With a deep understanding of the mechanisms behind disinformation, Carlos sheds light on the efficacy of fact-checking and its critical role in today’s media landscape. He discusses the multifaceted approaches fact-checkers employ to combat misinformation and the essential support governments can provide in this effort. Additionally, Carlos delves into the challenges and opportunities presented by artificial intelligence in the realm of fact-checking. Join us as we explore the current state and future of fact-checking through the insights of a leading expert in the field.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 343,
+      "body_end": 1122,
+      "source_links": [
+        "https://efcsn.com/",
+        "https://truthmeter.mk/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825996-b00003",
+      "text": "Carlos Hernández-Echevarría is an Associate Director at nonprofit Fundación Maldita.es, which he joined in 2020 to lead its public policy and advocacy operation. He works with public and private institutions to formulate, evaluate, and advocate for more effective policy solutions against disinformation. He is also a member of the Permanent Task Force of the EU Code of Practice on Disinformation. In the past, he was part of the EDMO Task Force on Disinformation on the War in Ukraine. Before joining Maldita.es, Carlos worked in TV news for 15 years as a reporter, correspondent and executive producer. He has a BA in Journalism and a MA in Elections and Campaign Management as a Fulbright Scholar. He is a contributor for several Spanish Media and a professor at Universidad Carlos III.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1124,
+      "body_end": 1914,
+      "source_links": [
+        "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/new-push-european-democracy/protecting-democracy/strengthened-eu-code-practice-disinformation_en",
+        "https://edmo.eu/thematic-areas/war-in-ukraine/edmo-task-force-on-disinformation-on-the-war-in-ukraine/",
+        "https://efcsn.com/governance-body/",
+        "https://maldita.es/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825996-b00004",
+      "text": "Truthmeter: Why does fact-checking work?",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1916,
+      "body_end": 1956,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825996-b00005",
+      "text": "> Carlos Hernández-Echevarría (CHE): Fact-checking has proven to be extremely effective against disinformation in numerous ways. On a basic level, when people see a fact-check or a similar product, they understand why certain false claims are made and subsequently change their behavior, often deciding not to share the misinformation. This is crucial because it challenges the assumption that people’s minds cannot be changed. Fact-checking organizations have been innovating over the years by teaching media literacy, using technological tools, and conducting thorough research on disinformation dissemination, content moderation, and foreign influence. Simply by existing, we elevate the value of truth in the broader environment. Politicians, for instance, have told me that being fact-checked makes them more mindful of their statements and sources, which is significant. We provide evidence that allows people to form their own conclusions. Additionally, we create communities of engaged individuals who actively work to prevent disinformation, becoming more aware and critical of the information they encounter both online and offline.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1958,
+      "body_end": 3100,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825996-b00006",
+      "text": "Truthmeter: But, is fact-checking enough to handle information disorder?",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 3102,
+      "body_end": 3174,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825996-b00007",
+      "text": "> CHE: Absolutely not. Effective intervention requires a multifaceted approach. Even considering all the efforts of fact-checkers, from debunking false claims to advocating for public policies, this remains a societal problem that demands collective efforts. Simplistic solutions do not suffice for this complex issue. Continuous and comprehensive efforts are needed, including media literacy education and technological advancements to detect false claims quickly. Everyone involved in combating disinformation plays an essential role, so no single approach can be considered a “silver bullet.”",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 3176,
+      "body_end": 3771,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825996-b00008",
+      "text": "Truthmeter: What about the governments? Do they have a role in it?",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3773,
+      "body_end": 3839,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825996-b00009",
+      "text": "> CHE: That’s an interesting question. The primary role of governments in fighting disinformation is to avoid creating it themselves. Beyond that, they should ensure conditions that allow fact-checkers to operate freely, without repression or censorship. In countries with strong independent judiciaries and rule of law, there might be effective regulations. Governments should not dictate what can or cannot be said but should encourage media platforms to take responsibility for not spreading disinformation. Additionally, governments can support education initiatives to help students and seniors understand and identify disinformation, thereby fostering a more informed society.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3841,
+      "body_end": 4523,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825996-b00010",
+      "text": "Truthmeter: What are the challenges and opportunities that AI creates for fact-checkers? Is it a friend or a foe?",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 4525,
+      "body_end": 4638,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825996-b00011",
+      "text": "> CHE: AI presents both challenges and opportunities. On the challenge side, AI can generate more fake content at a lower cost and with greater sophistication, making it harder to detect. There are also societal concerns, such as the potential erosion of trust if synthetic content becomes too prevalent. Furthermore, AI’s integration into search engines could lead to unreliable answers to critical questions such as political affiliation or health concerns, as these models are often trained on the open web, prioritizing popular opinions over accurate information. However, AI also offers opportunities for developing tools to detect and combat disinformation more effectively.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4640,
+      "body_end": 5320,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825996-b00012",
+      "text": "Truthmeter: The European Fact-Checking Standards Network (EFCSN) is a relatively new network comprised of European fact-checkers, chaired by you. Could you share more about this joint initiative and how it is progressing?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 5322,
+      "body_end": 5543,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825996-b00013",
+      "text": "> CHE: I am thrilled with the progress we’ve made. We now have 49 organizations from 29 countries, surpassing our initial expectations. The network follows the goals set during our founding meetings and assemblies, providing opportunities for fact-checkers and representing them in times of need. Just to name one example, the Digital Services Act (DSA), the new framework for platform regulation around disinformation is being implemented as we speak, and the very first document that the European Commission has published about how risk mitigation by these platforms should work, there is a specific recommendation in there for these platforms to partner and work to partner with the members of EFCSN. So, I think that we have grown a lot and of course that there is a lot to do.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5545,
+      "body_end": 6326,
+      "source_links": [
+        "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-services-act_en"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825996-b00014",
+      "text": "Truthmeter: Besides the challenges of AI, how does the future look for fact-checkers?",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 6328,
+      "body_end": 6413,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825996-b00015",
+      "text": "> CHE: Fact-checkers operate in an increasingly polarized world, where common ground on facts is diminishing. This makes our work more necessary than ever but also more challenging. We need to be more impactful, reach more people, and remain convincing. Navigating this environment requires constant effort and adaptation to ensure we continue to make a difference.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6415,
+      "body_end": 6780,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "7ab6753ba750ea6aac96f0afa24db858c3217165fdd74de1266ad7992bceee78",
+  "word_count": 1001,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 6780,
+  "retrieved_at": "2026-11-16T22:45:04.867322+00:00",
+  "raw_html_sha256": "e26df8f3ee04ab9bf1a18e6f0b442e92f2bcf6c205812dcf5eb69ee0f2475607",
+  "resolved_source_url": "https://globalvoices.org/2024/12/25/the-future-of-truth-carlos-hernandez-echevarria-on-fact-checking-and-ai/",
+  "canonical_url": "https://globalvoices.org/2024/12/25/the-future-of-truth-carlos-hernandez-echevarria-on-fact-checking-and-ai/",
+  "source_bytes": 189406,
+  "authors": [
+    {
+      "name": "Metamorphosis Foundation",
+      "url": "https://globalvoices.org/author/metamorphosis/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 825996,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "e26df8f3ee04ab9bf1a18e6f0b442e92f2bcf6c205812dcf5eb69ee0f2475607",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-821be1db3ec8da5e8796",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-12",
+    "eligible_month_documents": 63,
+    "selected_month_documents": 53,
+    "inclusion_probability": 0.8412698412698413,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Metamorphosis Foundation",
+  "body_start": 491,
+  "body_end": 7271,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "02a6baccbcc67ef6c7c01d8aa8e72f38d624c49d20ed0d76135b24f168bec658",
+  "text_path": "articles/gv-825996.txt",
+  "metadata_path": "metadata/gv-825996.json",
+  "attribution": "This story by Metamorphosis Foundation originally appeared on Global Voices. https://globalvoices.org/2024/12/25/the-future-of-truth-carlos-hernandez-echevarria-on-fact-checking-and-ai/",
+  "content_sha256": "9dfbd9487656a024d7f6f45096fde9dc87aa7af0b163604f8f3e277053eeeadb",
+  "source_sha256": "e26df8f3ee04ab9bf1a18e6f0b442e92f2bcf6c205812dcf5eb69ee0f2475607",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -165,3 +165,77 @@ describe("private inference binding", () => {
     expect(await response.json()).toMatchObject({ model: "@cf/google/gemma-4-26b-a4b-it", usage: { completion_tokens: 5 } });
   });
 });
+
+describe("recorded GPT Responses profiles", () => {
+  const path = "/internal/inference/v1/chat/completions";
+  const gpt = "@cf/openai/gpt-oss-120b";
+  const schema = { type: "object", properties: { decisions: { type: "array" } }, required: ["decisions"] };
+  const messages = [{ role: "system", content: "Use the declared source schema." }, { role: "user", content: "An exact source passage." }];
+  function input(extra: Record<string, unknown> = {}): Request {
+    return request(path, "POST", { model: gpt, messages, response_format: { type: "json_schema", json_schema: { name: "criteria", schema, strict: true } }, max_tokens: 400, ...extra });
+  }
+  it.each(["low", "medium", "high"])("forwards only an explicitly recorded %s effort with Responses fields", async effort => {
+    const run = vi.fn(async () => ({ id: "recorded-response", status: "completed", output_text: "DO_NOT_USE_AGGREGATED_TEXT", output: [
+      { type: "reasoning", content: [{ type: "reasoning_text", text: "PRIVATE_REASONING_MUST_NOT_LEAK" }], summary: [{ text: "PRIVATE_REASONING_SUMMARY" }] },
+      { type: "message", role: "assistant", status: "completed", content: [{ type: "output_text", text: '{"decisions":' }, { type: "output_text", text: '[]}' }] },
+    ], usage: { input_tokens: 89, output_tokens: 21, total_tokens: 110 }, reasoning: { summary: "PRIVATE_REASONING_CONFIG" } }));
+    const testEnv = { ...env, AI: { run } } as unknown as Env;
+    const response = await worker.fetch(input({ reasoning_effort: effort, max_completion_tokens: 2048 }), testEnv);
+    expect(response.status).toBe(200);
+    expect(run).toHaveBeenCalledWith(gpt, { input: messages, temperature: 0, max_output_tokens: 2048, reasoning: { effort }, stream: false, store: false, text: { format: { type: "json_schema", name: "criteria", schema, strict: true } } });
+    const raw = await response.text();
+    expect(raw).not.toContain("PRIVATE_REASONING");
+    expect(raw).not.toContain("AGGREGATED_TEXT");
+    expect(JSON.parse(raw)).toEqual({ id: "recorded-response", object: "chat.completion", model: gpt, choices: [{ index: 0, message: { role: "assistant", content: '{"decisions":[]}' }, finish_reason: "stop" }], usage: { prompt_tokens: 89, completion_tokens: 21, total_tokens: 110 } });
+  });
+  it.each(["none", "LOW", "", null, false, 3])("rejects invalid explicit effort %j without calling AI", async effort => {
+    const run = vi.fn();
+    const response = await worker.fetch(input({ reasoning_effort: effort }), { ...env, AI: { run } } as unknown as Env);
+    expect(response.status).toBe(400);
+    expect(run).not.toHaveBeenCalled();
+  });
+  it("keeps unrecorded GPT calls on the messages/default-effort path and strips chat reasoning", async () => {
+    const run = vi.fn(async () => ({ choices: [{ message: { role: "assistant", content: '{"decisions":[]}', reasoning_content: "PRIVATE_CHAT_REASONING" }, finish_reason: "stop" }], usage: { prompt_tokens: 10, completion_tokens: 5 } }));
+    const response = await worker.fetch(input(), { ...env, AI: { run } } as unknown as Env);
+    expect(response.status).toBe(200);
+    expect(run).toHaveBeenCalledWith(gpt, { messages, temperature: 0, max_completion_tokens: 400, stream: false, store: false, response_format: { type: "json_schema", json_schema: { name: "doxa_findings", schema, strict: true } } });
+    expect(await response.text()).not.toContain("PRIVATE_CHAT_REASONING");
+  });
+  it("preserves Gemma's exact request payload and chat normalization", async () => {
+    const result = { choices: [{ message: { role: "assistant", content: '{"decisions":[]}' }, finish_reason: "stop" }], usage: { prompt_tokens: 4, completion_tokens: 2 } };
+    const run = vi.fn(async () => result);
+    const model = "@cf/google/gemma-4-26b-a4b-it";
+    const response = await worker.fetch(input({ model, reasoning_effort: "high" }), { ...env, AI: { run } } as unknown as Env);
+    expect(run).toHaveBeenCalledWith(model, { messages, temperature: 0, max_completion_tokens: 400, store: false, stream: false, chat_template_kwargs: { enable_thinking: false }, response_format: { type: "json_schema", json_schema: { name: "doxa_findings", schema, strict: true } } });
+    expect(await response.json()).toEqual({ ...result, model });
+  });
+  it.each([true, false])("marks exhausted Responses output as length, including reasoning-only output %s", async reasoningOnly => {
+    const run = vi.fn(async () => ({ status: "incomplete", incomplete_details: { reason: "max_output_tokens" }, output: [
+      { type: "reasoning", content: [{ type: "reasoning_text", text: "PRIVATE_EXHAUSTED_REASONING" }] },
+      ...(reasoningOnly ? [] : [{ type: "message", role: "assistant", status: "incomplete", content: [{ type: "output_text", text: '{"decisions":[' }] }]),
+    ], usage: { input_tokens: 100, output_tokens: 2048 } }));
+    const response = await worker.fetch(input({ reasoning_effort: "low", max_tokens: 2048 }), { ...env, AI: { run } } as unknown as Env);
+    expect(response.status).toBe(200);
+    const raw = await response.text();
+    expect(raw).not.toContain("PRIVATE_EXHAUSTED_REASONING");
+    expect(JSON.parse(raw)).toMatchObject({ choices: [{ message: { content: reasoningOnly ? "" : '{"decisions":[' }, finish_reason: "length" }], usage: { prompt_tokens: 100, completion_tokens: 2048, total_tokens: 2148 } });
+  });
+  it("normalizes a refusal without treating it as a completed evidence result", async () => {
+    const run = vi.fn(async () => ({ status: "completed", output: [{ type: "message", role: "assistant", content: [{ type: "refusal", refusal: "I cannot provide that response." }] }], usage: { input_tokens: 20, output_tokens: 8 } }));
+    const response = await worker.fetch(input({ reasoning_effort: "low" }), { ...env, AI: { run } } as unknown as Env);
+    expect(response.status).toBe(200);
+    expect(await response.json()).toMatchObject({ choices: [{ message: { role: "assistant", content: null, refusal: "I cannot provide that response." }, finish_reason: "content_filter" }], usage: { prompt_tokens: 20, completion_tokens: 8 } });
+  });
+  it.each(["max_output_tokens", "content_filter"])("normalizes legacy GPT finish %s without dropping token usage", async reason => {
+    const run = vi.fn(async () => ({ choices: [{ message: { role: "assistant", content: null }, finish_reason: reason }], usage: { prompt_tokens: 15, completion_tokens: 40 } }));
+    const response = await worker.fetch(input(), { ...env, AI: { run } } as unknown as Env);
+    expect(response.status).toBe(200);
+    expect(await response.json()).toMatchObject({ choices: [{ message: { content: null }, finish_reason: reason === "max_output_tokens" ? "length" : "content_filter" }], usage: { prompt_tokens: 15, completion_tokens: 40 } });
+  });
+  it("rejects a completed reasoning-only result without leaking its content", async () => {
+    const run = vi.fn(async () => ({ status: "completed", output: [{ type: "reasoning", summary: [{ text: "PRIVATE_WITHOUT_FINAL_MESSAGE" }] }], usage: { input_tokens: 10, output_tokens: 100 } }));
+    const response = await worker.fetch(input({ reasoning_effort: "low" }), { ...env, AI: { run } } as unknown as Env);
+    expect(response.status).toBe(502);
+    expect(await response.text()).not.toContain("PRIVATE_WITHOUT_FINAL_MESSAGE");
+  });
+});

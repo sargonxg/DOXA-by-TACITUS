@@ -1,0 +1,454 @@
+{
+  "id": "gv-819075",
+  "publisher_id": 819075,
+  "source_id": "globalvoices:819075",
+  "source_url": "https://globalvoices.org/2024/08/22/what-are-the-controversies-over-hong-kongs-latest-cybersecurity-bill/",
+  "title": "What are the controversies over Hong Kong’s latest cybersecurity bill?",
+  "published_at": "2024-08-22T13:39:48Z",
+  "modified_at": "2024-08-22T13:40:37Z",
+  "api_author_id": 254,
+  "api_content_sha256": "c1dcc13f197c58c06c8375942ba55d129c8949b5194d74d7a0467c2ac5e40bc9",
+  "api_response_sha256": "cb7cd89fa8ec1bf9f70e43c81879cffbc92b70110fb4faa1e400a0aa8e29ae6d",
+  "api_retrieved_at": "2026-11-16T22:21:05.156563+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 49,
+      "count": 1566,
+      "name": "Hong Kong (China)",
+      "slug": "hong-kong-china",
+      "parent": 16
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-819075-b00001",
+      "text": "The Hong Kong government made a statement on August 20, about Bloomberg’s report on the city’s latest cybersecurity legislation, namely the Protection of Critical Infrastructure (Critical Computer System) Bill, accusing it of being biased. Introduced on July 2, 2024, the proposed law aims to protect Hong Kong’s critical infrastructures (CIs) against cyberattacks targeting CIs’ critical computer systems (CCSs), and the public consultation ended on August 1.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 460,
+      "source_links": [
+        "https://www.legco.gov.hk/yr2024/english/panels/se/papers/se20240702cb2-930-3-e.pdf",
+        "https://www.news.gov.hk/eng/2024/08/20240820/20240820_221639_786.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00002",
+      "text": "In a recent report on August 21, Bloomberg quoted critics and highlighted,",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 462,
+      "body_end": 536,
+      "source_links": [
+        "https://www.yahoo.com/news/us-firms-warn-against-unprecedented-031553644.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00003",
+      "text": "> The proposals give authorities overly broad powers that could threaten the integrity of service providers and rock confidence in the city’s digital economy.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 538,
+      "body_end": 696,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-819075-b00004",
+      "text": "On the other hand, the government stressed that of the 53 consultation submissions it had received, 52 supported the legislation and made constructive suggestions.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 698,
+      "body_end": 861,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00005",
+      "text": "So, what are the controversies surrounding the proposed bill? Let's examine some of its critics and constructive suggestions.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 863,
+      "body_end": 988,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00006",
+      "text": "The scope of CIs is too broad",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 990,
+      "body_end": 1019,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00007",
+      "text": "The drafted bill divided critical infrastructure into two categories. Category one covers eight sectors: energy, information technology (IT), banking and financial services, land transport, air transport, maritime, healthcare services, communications, and broadcasting. Category two covers infrastructure for maintaining important societal and economic activities.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1021,
+      "body_end": 1385,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00008",
+      "text": "As ARTICLE 19, an international free speech defense group, pointed out that the definition of IT in category one is too broad to be included as critical infrastructure.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1387,
+      "body_end": 1555,
+      "source_links": [
+        "https://www.article19.org/resources/hong-kong-proposed-critical-infrastructure-bill-is-a-fresh-assault-on-the-freedom-of-expression-online/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00009",
+      "text": "The American Chamber of Commerce (AmCham) also recommended in its submission to the consultation to remove the IT sector from the list of CIs as it is a service provider sector that usually acts as a third party that doesn’t have the authority to decide on behalf of the computer system owner.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1557,
+      "body_end": 1850,
+      "source_links": [
+        "https://www.amcham.org.hk/sites/default/files/2024-08/AmCham%20HK%20-%20Critical%20Infrastructure%20Consultation%20(combined).pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00010",
+      "text": "While the government defended itself by saying that only designated critical infrastructure organizations (CIOs), instead of listed sectors, will be regulated under the new law, the power to determine a CIO falls under the purview of the future Commission Office, while the definition of CI and CCS remains unclear under the proposal law. The AmCham urged for a clear definition of CI and CCS and specifically suggested that:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1852,
+      "body_end": 2277,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00011",
+      "text": "> If there are multiple organizations providing substantially the same services or operating similar infrastructures in a particular sector, the severity, intensity, and magnitude of the impact of the disruption of the services or infrastructures would be limited, and therefore, the targeted infrastructure should not be regarded as a CI.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2279,
+      "body_end": 2618,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-819075-b00012",
+      "text": "Extraterritorial implications and legal conflicts",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2620,
+      "body_end": 2669,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00013",
+      "text": "The proposal also stated that the future laws will apply to all CCSs, “regardless of whether they are physically located in Hong Kong or not.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2671,
+      "body_end": 2813,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00014",
+      "text": "The AmCham stressed that the extraterritorial implications would result in legal conflicts as the CIOs may violate the laws in one country if they comply with the laws in Hong Kong. The AmCham recommended that the law apply to CIs and CCSs within the city. It warned:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2815,
+      "body_end": 3082,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00015",
+      "text": "> By extending the proposed legislation to infrastructures and computer systems situated outside Hong Kong, it is disproportionate to the regulatory purpose, and may result in regulatory fragmentation and lead to higher compliance costs and deter multinational companies from operating businesses and investing in Hong Kong.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3084,
+      "body_end": 3408,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-819075-b00016",
+      "text": "Excessive investigative power",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3410,
+      "body_end": 3439,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00017",
+      "text": "The proposed law will empower local authorities to investigate CIOs in security incidents by posing questions, requesting information, entering premises, accessing and checking the relevant computer systems, and more.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3441,
+      "body_end": 3658,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00018",
+      "text": "ARTICLE 19 described such power as excessive and highlighted that the mandatory disclosure of “design, configuration, and security operations of computer systems could amount to disclosing trade secrets.”",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3660,
+      "body_end": 3864,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00019",
+      "text": "In Annex II, the bill specifies that if the CIOs do not comply with police requests, the investigation authorities could even “connect equipment to or install a program in the CCS.”",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3866,
+      "body_end": 4047,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00020",
+      "text": "The AmCham called such a power “unprecedented” and stressed that it “could have a significant impact on a CIO’s operation and could harm the users of the services provided by the CIO.”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4049,
+      "body_end": 4233,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00021",
+      "text": "> We submit that introducing this power is likely to have a chilling effect on technology investment and Hong Kong digital economy and will undermine trust in service providers who operate in Hong Kong.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4235,
+      "body_end": 4437,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-819075-b00022",
+      "text": "The AmCham also recommend that the government release “an exhaustive list of actions” that the CIO may be directed to take.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4439,
+      "body_end": 4562,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00023",
+      "text": "Subsidiary legislation and Code of Practice (CoP)",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4564,
+      "body_end": 4613,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00024",
+      "text": "The proposed law also empowers the Secretary for Security to amend the law by way of subsidiary legislation on several aspects, including the determination of the CI sector, the list of mandatory information disclosure by CIOs, the scopes of computer system security management plans, security audits, risk assessments and emergency response plans, and the content and deadlines of the mandatory report on security incidents.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4615,
+      "body_end": 5040,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00025",
+      "text": "In a similar manner, the Commission Office will be empowered to issue a CoP to CIOs detailing actions and standards to be taken in their mandatory security incident report, security audit, management, assessment, monitoring mechanism, etc.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5042,
+      "body_end": 5281,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00026",
+      "text": "Both ARTICLE 19 and the AmCham pointed out that the subsidiary legislation will bypass the Legislature and public consultation.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5283,
+      "body_end": 5410,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-819075-b00027",
+      "text": "Against the backdrop of the implementation of the National Security Law, which results in the dismantling of the independent media and civil society sectors, Michael Caster, Asia Digital Programme Manager at ARTICLE 19, warned that “the proposed critical infrastructure bill appears modelled more to close additional gaps in internet freedom than addressing authentic cybersecurity challenges.”",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5412,
+      "body_end": 5806,
+      "source_links": [
+        "https://rsf.org/en/hong-kong-least-900-journalism-jobs-lost-media-exile-after-four-years-draconian-national-security",
+        "https://www.law.georgetown.edu/law-asia/wp-content/uploads/sites/31/2024/03/24_ASIAN_LAW_NGO_REPORT_FINAL.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "70d8a980bd406906283b82062a0c928cc3d21f4e76e0501a30b0f495ed4e4d9c",
+  "word_count": 874,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 5806,
+  "retrieved_at": "2026-11-16T22:44:01.239929+00:00",
+  "raw_html_sha256": "461bdef02c3ab3372cc4fd820085db4811f32987e6b6df1c1299720534c7f5f8",
+  "resolved_source_url": "https://globalvoices.org/2024/08/22/what-are-the-controversies-over-hong-kongs-latest-cybersecurity-bill/",
+  "canonical_url": "https://globalvoices.org/2024/08/22/what-are-the-controversies-over-hong-kongs-latest-cybersecurity-bill/",
+  "source_bytes": 187767,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 819075,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "461bdef02c3ab3372cc4fd820085db4811f32987e6b6df1c1299720534c7f5f8",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-1ede70f87ca46fe14bfa",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-08",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Oiwan Lam",
+  "body_start": 471,
+  "body_end": 6277,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "73daac7b059804958d96e2a9ec4e9271604538b4f3df5d59cde1cf6289c57649",
+  "text_path": "articles/gv-819075.txt",
+  "metadata_path": "metadata/gv-819075.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2024/08/22/what-are-the-controversies-over-hong-kongs-latest-cybersecurity-bill/",
+  "content_sha256": "aee43a446c8b23bfeabcaf877f59ccee5cc710ecb02685542b08059f9ee5f377",
+  "source_sha256": "461bdef02c3ab3372cc4fd820085db4811f32987e6b6df1c1299720534c7f5f8",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

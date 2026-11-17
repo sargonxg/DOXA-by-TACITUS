@@ -1,0 +1,346 @@
+{
+  "id": "gv-722155",
+  "publisher_id": 722155,
+  "source_id": "globalvoices:722155",
+  "source_url": "https://globalvoices.org/2020/10/31/decision-to-dump-radioactive-water-from-the-fukushima-nuclear-disaster-site-into-the-ocean-sparks-alarm/",
+  "title": "Decision to dump radioactive water from the Fukushima nuclear disaster site into the ocean sparks alarm",
+  "published_at": "2020-10-31T23:43:19Z",
+  "modified_at": "2020-11-02T12:36:03Z",
+  "api_author_id": 102,
+  "api_content_sha256": "c9f08a5c2c2b9fe265a926f0e1e4ffe2de52621016e58b6199bafd4f459fe068",
+  "api_response_sha256": "f2645b12d5068d264a88deb6e357729134eb6ef948db13b4dec337f22f4ecbaa",
+  "api_retrieved_at": "2026-11-16T22:20:30.604199+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 25,
+      "count": 2726,
+      "name": "Japan",
+      "slug": "japan",
+      "parent": 16
+    },
+    {
+      "id": 330,
+      "count": 1249,
+      "name": "Japanese",
+      "slug": "japanese",
+      "parent": 317
+    },
+    {
+      "id": 276,
+      "count": 839,
+      "name": "Science",
+      "slug": "science",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-722155-b00001",
+      "text": "In mid-October, the Japanese government announced plans to dump water contaminated with radioactive isotopes from a nuclear disaster site in Fukushima, sparking alarm all over the world.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 186,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00002",
+      "text": "Japanese news service Kyodo reported on October 16 that the Japanese government had announced that it would authorize the release of about a million tonnes of radioactive water into the ocean from the Daiichi nuclear power installation in Fukushima prefecture.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 188,
+      "body_end": 448,
+      "source_links": [
+        "https://english.kyodonews.net/news/2020/10/fe0fae3622a5-urgent-japan-to-release-treated-water-from-fukushima-plant-into-sea.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00003",
+      "text": "Following the announcement, Greenpeace published a report stating the contaminated water contained “dangerous” levels of carbon-14, a radioactive isotope that can damage human DNA. Amidst concerns about the impact of the contaminated water on the environment and human health, however, some experts pointed out that it was difficult—if not impossible—to assess the true risk without knowing more about the government's plans.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 450,
+      "body_end": 875,
+      "source_links": [
+        "https://storage.googleapis.com/planet4-japan-stateless/2020/10/5768c541-the-reality-of-the-fukushima-radioactive-water-crisis_en_summary.pdf",
+        "https://www.theguardian.com/world/2020/oct/23/fukushima-reactor-water-could-damage-human-dna-if-released-says-greenpeace?CMP=Share_iOSApp_Other"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00004",
+      "text": "Fukushima's economically devastated fishing sector opposes any sort of plan that includes ocean disposal, which might contaminate their catch. Japan's maritime neighbour South Korea expressed “serious concern” as well. On the other side of the Pacific Ocean, the news alarmed some locals on Vancouver Island, on Canada's Pacific coast, some 7,300 km from Fukushima:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 877,
+      "body_end": 1242,
+      "source_links": [
+        "https://twitter.com/mkaragianis/status/1317185990910308352",
+        "https://www.japantimes.co.jp/news/2020/10/29/national/s-korea-expresses-serious-concern-radioactive-water-dump/",
+        "https://www.kahoku.co.jp/tohokunews/202010/20201025_63016.html",
+        "https://www3.nhk.or.jp/nhkworld/en/news/backstories/1325/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00005",
+      "text": "Following a massive and destructive earthquake and tsunami on March 11, 2011, the Daiichi power complex on Japan's Pacific coast, about 250 km north of Tokyo, was the site of the world's worst nuclear accident since Chernobyl in 1986. The nuclear accident destroyed three of the four reactors at the facility, resulting in the release of radioactive materials that contaminated the surrounding communities, forcing mass evacuations.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1244,
+      "body_end": 1676,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Fukushima_Daiichi_Nuclear_Power_Plant#Nuclear_disaster_of_March_2011",
+        "https://globalvoices.org/2015/03/20/japanese-power-utility-finally-admits-fukushima-meltdown/",
+        "https://globalvoices.org/specialcoverage/2011-special-coverage/japan-earthquake-tsunami-2011/#featured"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00006",
+      "text": "About 1.25 million tonnes of contaminated water is currently stored at the decommissioned Fukushima Daiichi nuclear power facility, and the volume increases by about 170 tons a day, accumulating a variety of radioactive elements that are potentially dangerous to human health. The water is a mixture of deliberately injected cooling water and groundwater, which accumulates as the water flows into and through the reactor building and turbine building that were destroyed during the Tohoku earthquake and the subsequent tsunami on March 11, 2011.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1678,
+      "body_end": 2224,
+      "source_links": [
+        "https://news.yahoo.co.jp/byline/kinoryuichi/20200322-00168991/",
+        "https://www.japantimes.co.jp/news/2020/10/16/national/fukushima-treated-water-sea/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00007",
+      "text": "While some groundwater upstream from the plant and from contamination is pumped directly into the ocean, contaminated water is diverted into large storage tanks that now dominate the sprawling Fukushima nuclear complex. Preventing the water from seeping into the ocean has so far been one of the biggest challenges faced by both the Japanese government and the power utility that owns the Fukushima facility.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2226,
+      "body_end": 2634,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00008",
+      "text": "A February 2020 report by a government committee compared and evaluated several potential solutions for eliminating the contaminated water at the Fukushima site. Solutions included injecting the contaminated water into geologic formations (地層注入) directly beneath the Fukushima complex; evaporating the stored water, leaving the contaminants behind (水蒸気放出); and burying the water underground in vats or other containers (地下埋設).",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2636,
+      "body_end": 3062,
+      "source_links": [
+        "https://www.meti.go.jp/earthquake/nuclear/osensuitaisaku/committtee/takakusyu/pdf/018_00_01.pdf",
+        "https://www.meti.go.jp/english/earthquake/nuclear/decommissioning/pdf/20200210_alps.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00009",
+      "text": "In the paper, the committee concluded that disposal at sea (海洋放出) was the cheapest and the most technically feasible solution. Based on that recommendation, throughout 2020 the Japanese government has discussed the possibility of dumping at least a million tonnes of water in the ocean. They have not yet released details, however, about how or where the water would be dumped.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3064,
+      "body_end": 3441,
+      "source_links": [
+        "https://www.japantimes.co.jp/news/2020/10/16/national/fukushima-treated-water-sea/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00010",
+      "text": "“Ultimately there has been no description of what method or how those isotopes would be deposited or dumped in the ocean,” said Jay Cullen in an interview with Global Voices. “Will the water be released from shore? Pumped to depth? Taken by tankers out into the ocean? It's not clear whether it's even legal to dump in the ocean under the London Protocol.” Cullen is a marine chemist, oceanographer and professor at the University of Victoria's School of Earth & Ocean Sciences on Vancouver Island.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3443,
+      "body_end": 3941,
+      "source_links": [
+        "https://www.gc.noaa.gov/gcil_mp_ocean_dumping.html",
+        "https://www.uvic.ca/research/learnabout/home/researchers/experts/expert/cullen-jay.php"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00011",
+      "text": "The contaminated water contains radioactive contaminants including cesium isotopes, cobalt, carbon-14 and tritium, which are extremely difficult to remove from wastewater, Cullen said. All can potentially be harmful to human health, but the risk depends on a variety of factors that are either unknown or have not been disclosed by the Japanese government and the power utility in charge of the cleanup and is therefore difficult to assess.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3943,
+      "body_end": 4383,
+      "source_links": [
+        "https://science.sciencemag.org/content/369/6504/621"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00012",
+      "text": "“It's the equivalent of saying lead is bad for you, but that, of course, depends on how much lead you're exposed to,” said Cullen. In order to assess risk, Cullen said, it's necessary to ask “how much of an isotope goes into the environment, what its activity is in the environment, and what its exposure is to human beings.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4385,
+      "body_end": 4710,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00013",
+      "text": "On Twitter, Cullen also pointed out that historical human activities such as nuclear weapons testing have already introduced significantly higher amounts of some radioactive contaminants into the environment that persist to this day:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4712,
+      "body_end": 4945,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00014",
+      "text": "There is a balance to be struck between on-site storage and the potential for uncontrolled release, versus controlled release, Cullen said.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4947,
+      "body_end": 5086,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00015",
+      "text": "“Tritium has a half-life of 12 years,” said Cullen. The risk diminishes with time, and “has to be balanced with the possibility and probability of the storage tanks accidentally failing, or the occurrence of another large megathrust earthquake where there is uncontrolled release.”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5088,
+      "body_end": 5369,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-722155-b00016",
+      "text": "Another major challenge with assessing the risk of ocean disposal, said Cullen, is that there is little understanding so far of what kinds of radioactive isotopes are stored in the tanks and, in turn, the risk they pose to the environment and human health.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5371,
+      "body_end": 5627,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "8f678bd850ffc172ad40f0d48707b01f596ff83f19aaf15a2ec63c31c2e0b107",
+  "word_count": 867,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5627,
+  "retrieved_at": "2026-11-16T22:28:10.450560+00:00",
+  "raw_html_sha256": "193cca3192e2aa7c30b2b5f1dee18d4b56cc2f494831465c15f5c9c3e650bdf0",
+  "resolved_source_url": "https://globalvoices.org/2020/10/31/decision-to-dump-radioactive-water-from-the-fukushima-nuclear-disaster-site-into-the-ocean-sparks-alarm/",
+  "canonical_url": "https://globalvoices.org/2020/10/31/decision-to-dump-radioactive-water-from-the-fukushima-nuclear-disaster-site-into-the-ocean-sparks-alarm/",
+  "source_bytes": 191916,
+  "authors": [
+    {
+      "name": "Nevin Thompson",
+      "url": "https://globalvoices.org/author/nevin-thompson/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 722155,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "193cca3192e2aa7c30b2b5f1dee18d4b56cc2f494831465c15f5c9c3e650bdf0",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-96a6f19f3ad7f4f402f6",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-10",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Nevin Thompson",
+  "body_start": 544,
+  "body_end": 6171,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "50a3b3e746505758a523277e2adbfdb3f290dd9098548e6195605afae49345b9",
+  "text_path": "articles/gv-722155.txt",
+  "metadata_path": "metadata/gv-722155.json",
+  "attribution": "This story by Nevin Thompson originally appeared on Global Voices. https://globalvoices.org/2020/10/31/decision-to-dump-radioactive-water-from-the-fukushima-nuclear-disaster-site-into-the-ocean-sparks-alarm/",
+  "content_sha256": "581bfd6934dbc96165d249070938c2ed064d79ef3bda651cc8d709256c15bce2",
+  "source_sha256": "193cca3192e2aa7c30b2b5f1dee18d4b56cc2f494831465c15f5c9c3e650bdf0",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

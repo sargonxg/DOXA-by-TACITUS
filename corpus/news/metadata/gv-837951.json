@@ -1,0 +1,481 @@
+{
+  "id": "gv-837951",
+  "publisher_id": 837951,
+  "source_id": "globalvoices:837951",
+  "source_url": "https://globalvoices.org/2025/07/05/how-africa-is-harnessing-space-technology-for-early-warning-systems-against-climate-disasters/",
+  "title": "How Africa is harnessing space technology for early warning systems against climate disasters",
+  "published_at": "2025-07-05T19:00:34Z",
+  "modified_at": "2025-07-14T10:09:35Z",
+  "api_author_id": 3241,
+  "api_content_sha256": "c6b34470e17e69d9bf276bf363b48850fa39895db4553c4b980d64131aa0cea2",
+  "api_response_sha256": "aa6dcff428883d80ac87f532a741a5a8d2776b7ecb4a6722bb7eeb3dc4c4dc2d",
+  "api_retrieved_at": "2026-11-16T22:21:13.235465+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 129,
+      "count": 111,
+      "name": "Namibia",
+      "slug": "namibia",
+      "parent": 15
+    },
+    {
+      "id": 276,
+      "count": 839,
+      "name": "Science",
+      "slug": "science",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-837951-b00001",
+      "text": "As Africa grapples with the escalating impacts of the climate crisis, it is launching a new frontier of defense, a satellite-based early warning system known as SEWA (Space for Early Warning in Africa). Officially launched at a high-level forum held from June 23–27, in Windhoek, Namibia, SEWA marks a significant milestone in the continent’s commitment to proactive disaster preparedness.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 389,
+      "source_links": [
+        "https://english.news.cn/africa/20250628/92e8f7dced21442295f5c1369643d27b/c.html#:~:text=Harsen%20Nyambe%2C%20director%20of%20blue,weather%20and%20extreme%20climate%20events.",
+        "https://international-partnerships.ec.europa.eu/policies/programming/projects/space-early-warning-africa-sewa_en"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00002",
+      "text": "At the recently concluded Joint Forum on Intra-ACP Climate Services and Related Applications Programme (ClimSA) and Space for Early Warning in Africa (SEWA), stakeholders from across the continent gathered under the theme, “Accelerating access to climate and weather services for resilient African economies and communities.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 391,
+      "body_end": 716,
+      "source_links": [
+        "https://au.int/en/newsevents/20250623/joint-climsa-sewa-forum-theme-accelerating-access-climate-and-weather-services"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00003",
+      "text": "The forum which convened high-level representatives from the African Union Commission (AUC), Southern African Development Community (SADC), European Union (EU), national governments, meteorological agencies, researchers, and other technical partners, showcased the continent’s growing reliance on space-based technologies and data-driven solutions to anticipate and manage climate-related disasters.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 718,
+      "body_end": 1117,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/African_Union_Commission",
+        "https://en.wikipedia.org/wiki/European_Union",
+        "https://en.wikipedia.org/wiki/Southern_African_Development_Community"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00004",
+      "text": "Background",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1119,
+      "body_end": 1129,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00005",
+      "text": "Though Africa contributes the least to global greenhouse gas emissions, it remains the most vulnerable continent to the effects of climate change and the least equipped to anticipate or respond to it. Despite covering nearly one-fifth of the Earth’s landmass, Africa has the sparsest land-based climate observation network, which hinders the delivery of timely, life-saving warnings around climate disasters.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1131,
+      "body_end": 1539,
+      "source_links": [
+        "https://au.int/sites/default/files/newsevents/conceptnotes/44937-CN-ClimSA-SEWA_Forum_Concept_Note-Agenda-1-8_1.pdf",
+        "https://en.wikipedia.org/wiki/Africa#:~:text=Africa%20is%20the%20world%27s%20second,3.8%20billion%20people%20by%202100.",
+        "https://wmo.int/media/magazine-article/africas-future-climate-navigating-extremes-through-innovation-and-early-warnings#:~:text=Africa%20is%20among%20the%20most,in%20West%20and%20Central%20Africa.",
+        "https://www.afdb.org/en/cop29/focus-africa#:~:text=Africa%20faces%20severe%20impacts%20of,infrastructure%2C%20and%20limited%20adaptive%20capacity.",
+        "https://www.afrobarometer.org/articles/african-nations-are-among-those-most-vulnerable-climate-change-new-survey-suggests-they-are/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00006",
+      "text": "According to the sixth assessment of the Intergovernmental Panel on Climate Change (IPCC), Africa’s key development sectors are already experiencing widespread losses and damages attributable to human-induced climate change, including biodiversity loss, water shortages, reduced food production, loss of lives, and reduced economic growth.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1541,
+      "body_end": 1880,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Intergovernmental_Panel_on_Climate_Change",
+        "https://www.ipcc.ch/report/ar6/wg2/downloads/outreach/IPCC_AR6_WGII_FactSheet_Africa.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00007",
+      "text": "In his opening statement, H.E. Moses Vilakati, African Union Commissioner for Agriculture, Rural Development, Blue Economy and Sustainable Environment (ARBE), said:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1882,
+      "body_end": 2046,
+      "source_links": [
+        "https://au.int/en/commissioners/he-moses-vilakati",
+        "https://en.wikipedia.org/wiki/African_Union"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00008",
+      "text": "> Africa has never been more vulnerable to the impacts of extreme weather and climate change than at present.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2048,
+      "body_end": 2157,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837951-b00009",
+      "text": "In 2022, more than 110 million people in Africa were directly affected by weather, climate, and water-related hazards, causing more than USD 8.5 billion in economic damages and at least 5,000 fatalities, according to the Emergency Event Database. Additionally, agricultural productivity growth has plummeted by 34 percent since 1961 due to climate change, more than any other region.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2159,
+      "body_end": 2542,
+      "source_links": [
+        "https://wmo.int/news/media-centre/africa-suffers-disproportionately-from-climate-change#:~:text=The%20loss%20and%20damage%20costs,figure%20due%20to%20data%20unavailability.",
+        "https://wmo.int/news/media-centre/africa-suffers-disproportionately-from-climate-change#:~:text=The%20loss%20and%20damage%20costs,figure%20due%2agricultural%20productivity%20growth%20has%20plummeted%20by%2034%20percent%20since%201961%20due%20to%20climate%20change,%20more%20than%20any%20other%20region.0to%20data%20unavailability."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00010",
+      "text": "ClimSA and SEWA: Bridging the climate information gap",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2544,
+      "body_end": 2597,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00011",
+      "text": "As vital interventions for addressing climate challenges, the Intra-ACP Climate Services and Related Applications (ClimSA) and Space for Early Warning in Africa (SEWA) programmes aim to strengthen Africa’s ability to adapt to climate change and build resilience, while also strengthening the continent’s fight against poverty.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2599,
+      "body_end": 2925,
+      "source_links": [
+        "https://www.eumetsat.int/space-early-warning-africa-kicks"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00012",
+      "text": "Focused on closing the climate information gap in African, Caribbean, and Pacific (ACP) countries, ClimSA supports the development of end-user-oriented climate services across key sectors like agriculture, health, energy, water, and disaster risk reduction. While the forum celebrated ClimSA's achievements, it also marked the official launch of the Space for Early Warning in Africa (SEWA) program to address member States’ capacity gaps in the generation and delivery of timely and reliable weather, early warning, and climate information services. SEWA leverages satellite technology to strengthen multi-hazard early warning systems (MHEWS) and improve data access among governments, civil society groups, and communities.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2927,
+      "body_end": 3652,
+      "source_links": [
+        "https://au.int/en/videos/20250624/launch-space-early-warning-africa-sewa",
+        "https://au.int/sites/default/files/newsevents/conceptnotes/44937-CN-ClimSA-SEWA_Forum_Concept_Note-Agenda-1-8_1.pdf",
+        "https://www.itu.int/en/ITU-D/Emergency-Telecommunications/Pages/Multi-hazard-early-warning-systems.aspx"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00013",
+      "text": "“We are better prepared now,” says AU Commissioner",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3654,
+      "body_end": 3704,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00014",
+      "text": "Responding to questions at the press conference, H.E. Moses Vilakati, Commissioner for Agriculture, Rural Development, Blue Economy and Sustainable Environment at the African Union Commission, outlined several tangible outcomes following the SEWA launch. He said:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3706,
+      "body_end": 3969,
+      "source_links": [
+        "https://au.int/en/commissioners/he-moses-vilakati"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00015",
+      "text": "> As the African Union, we support member states. So far, these member states have been supported with 34 weather observation stations across the West, East, and Southern Africa. They feed into a network of situational rooms in regional blocs like ECOWAS, ECCAS, and IGAD, providing real-time data for disaster response.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3971,
+      "body_end": 4291,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/African_Union",
+        "https://en.wikipedia.org/wiki/ECOWAS",
+        "https://en.wikipedia.org/wiki/Economic_Community_of_Central_African_States",
+        "https://en.wikipedia.org/wiki/Intergovernmental_Authority_on_Development"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837951-b00016",
+      "text": "On working with partners, the commissioner noted:",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4293,
+      "body_end": 4342,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00017",
+      "text": "> As of now, this program has trained over 200 experts across Africa — experts who can now train journalists, civil society, and even the most vulnerable communities.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4344,
+      "body_end": 4510,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837951-b00018",
+      "text": "He added:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4512,
+      "body_end": 4521,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00019",
+      "text": "> They’ll help ensure that warnings reach even the most vulnerable groups in a way they can understand and act on.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4523,
+      "body_end": 4637,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837951-b00020",
+      "text": "He also emphasized SEWA’s plans to scale down to the national level, starting with Tanzania.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4639,
+      "body_end": 4731,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00021",
+      "text": "> We want to expand these situational rooms so they can talk to each other. Because when they communicate, they can provide communities with real-time data on what is happening. So if a cyclone is forming, you know that in a few days it may reach you and you prepare ahead. Right now, these situational rooms operate at the regional level. But we’re now moving to national levels. It has already started in the East, with the Republic of Tanzania. Working with our partners, we hope to strategically spread this model across Africa.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4733,
+      "body_end": 5265,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837951-b00022",
+      "text": "Central to the success of the Space for Early Warning Systems (SEWA) is inclusivity and local engagement. On how governments will ensure that data actually translates into action, Commissioner Vilakati reiterated:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5267,
+      "body_end": 5480,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00023",
+      "text": "> Governments are sovereign. We can’t force them to act. But no leader wants to be caught off guard. The incentive is survival because this data saves lives and governments understand what’s at stake. In many cases, the issue is not willingness, but capacity — the ability to interpret and use satellite data in real time. That’s why SEWA also focuses on building human capacity alongside infrastructure. But no matter how advanced the technology is, it’s useless if it doesn’t reach people, or if they don’t understand what it means. That’s where you, the media, come in. We need journalists to tell these stories, to warn people about cyclones, wildfires, floods. Let them know in time. That’s how we save lives. Because it’s no longer about if a disaster will strike. It is when.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5482,
+      "body_end": 6264,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837951-b00024",
+      "text": "Also responding to concerns about how SEWA will function in countries where infrastructure is lacking, Jonas Sheelongo from Namibia's Ministry of Works and Transport, representing the host government, emphasised the program’s integrated design.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6266,
+      "body_end": 6510,
+      "source_links": [
+        "https://www.linkedin.com/in/sheelongo-jonas-a4463685/?originalSubdomain=na"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00025",
+      "text": "> Each partner has a role. One handles data, another translates it for farmers or urban planners. It’s an integrated system designed for the African citizen.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6512,
+      "body_end": 6669,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-837951-b00026",
+      "text": "He added that even in places with weak infrastructure, early warning can guide short, medium, or long-term interventions.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6671,
+      "body_end": 6792,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-837951-b00027",
+      "text": "> You may have observed that in Western countries, almost every building is required to have a heating system. Look at our environment, we don’t have that. But with early warning and what we are now observing in the changes in weather patterns and extreme events, it helps trigger policy interventions. Urban centers, for instance, can begin to understand what the weather is saying. If what we’re seeing is only seasonal, maybe we don’t need long-term infrastructure just yet. But we do need to start preparing especially for our farmers.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6794,
+      "body_end": 7333,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "b616191b7335628bc8bd2741779c66f3372985b644eb633e35b97b97de43f27b",
+  "word_count": 1097,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7333,
+  "retrieved_at": "2026-11-16T22:47:05.874941+00:00",
+  "raw_html_sha256": "0722cbaf96447bddaadd3a5add12bd1856d1274c943ce922ee343c3aa5f1d8fb",
+  "resolved_source_url": "https://globalvoices.org/2025/07/05/how-africa-is-harnessing-space-technology-for-early-warning-systems-against-climate-disasters/",
+  "canonical_url": "https://globalvoices.org/2025/07/05/how-africa-is-harnessing-space-technology-for-early-warning-systems-against-climate-disasters/",
+  "source_bytes": 196298,
+  "authors": [
+    {
+      "name": "Adesewa Olofinko",
+      "url": "https://globalvoices.org/author/adesewa-olofinko/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 837951,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "0722cbaf96447bddaadd3a5add12bd1856d1274c943ce922ee343c3aa5f1d8fb",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-44a2ee33d2dff525fad6",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-07",
+    "eligible_month_documents": 100,
+    "selected_month_documents": 84,
+    "inclusion_probability": 0.84,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Adesewa Olofinko",
+  "body_start": 526,
+  "body_end": 7859,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "d52b72bfd45abc1f1db729fc6c8398624cada0c52635f526f751497882c2c124",
+  "text_path": "articles/gv-837951.txt",
+  "metadata_path": "metadata/gv-837951.json",
+  "attribution": "This story by Adesewa Olofinko originally appeared on Global Voices. https://globalvoices.org/2025/07/05/how-africa-is-harnessing-space-technology-for-early-warning-systems-against-climate-disasters/",
+  "content_sha256": "bdede7731f8710e6d8a5f14713558ca57267c47c603452907b8358aa479c4a59",
+  "source_sha256": "0722cbaf96447bddaadd3a5add12bd1856d1274c943ce922ee343c3aa5f1d8fb",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,412 @@
+{
+  "id": "gv-762212",
+  "publisher_id": 762212,
+  "source_id": "globalvoices:762212",
+  "source_url": "https://globalvoices.org/2022/05/27/in-russias-invasion-of-ukraine-cyberwarfare-is-a-decisive-element-of-the-battlefield/",
+  "title": "In Russia's invasion of Ukraine, cyberwarfare is a decisive element of the battlefield",
+  "published_at": "2022-05-27T06:06:24Z",
+  "modified_at": "2022-05-27T08:48:37Z",
+  "api_author_id": 2994,
+  "api_content_sha256": "601db6e567ca2026fd2589033feb29f858c91c800c1db04b8bb797b6e9623fd4",
+  "api_response_sha256": "04fa5fff7ce30b84d0244dca8bac59e4cb3d3777e65a4fe265a98c15e459d40c",
+  "api_retrieved_at": "2026-11-16T22:20:44.749286+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-762212-b00001",
+      "text": "On January 3, 2022, Microsoft noticed unusual activity from two Microsoft Exchange servers: sending a large amount of data to IP addresses. Investigation revealed that the attackers, later identified as Russian hackers, used a vulnerability in Microsoft to steal the entire contents of several user mailboxes worldwide, including in Ukraine, the US, and Australia. This was the first of a series of cyber attacks on Ukraine, including taking down government websites and putting out threatening messages, sending Ukrainians to withdraw cash from ATMs, DDoS attacks on banking, bomb threats to schools, and even a malware wiper that would erase all data in a network.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 666,
+      "source_links": [
+        "https://theconversation.com/russia-is-using-an-onslaught-of-cyber-attacks-to-undermine-ukraines-defence-capabilities-177638",
+        "https://www.bbc.co.uk/news/technology-60500618",
+        "https://www.bbc.co.uk/news/technology-60622977",
+        "https://www.bbc.co.uk/news/world-europe-59992531",
+        "https://www.bbc.com/news/technology-60528594",
+        "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00002",
+      "text": "Russia never acknowledged these attacks; but there is convincing evidence that Moscow either hires or encourages Russian hackers to conduct attacks.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 668,
+      "body_end": 816,
+      "source_links": [
+        "https://www.bbc.co.uk/news/technology-60500618",
+        "https://www.nytimes.com/2021/09/09/us/politics/russia-ransomware-hackers.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00003",
+      "text": "Russia has previously been implicated in cyber attacks in Ukraine, Estonia, Georgia, and the US. In 2014, four days before the Ukrainian parliamentary elections, malware was installed on the Ukrainian central election system, which then portrayed a pro-Russia candidate as a winner. This malware compromised and deleted critical files, and made the vote-tallying system inoperable. After the polls closed, the Ukrainian Central Election Commission faced DDoS attacks that disabled their network. As a result, they were unable to announce results for two hours. During these two hours, the Russian media announced that the candidate they supported had won the election with 37 percent of the votes.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 818,
+      "body_end": 1515,
+      "source_links": [
+        "https://cyberlaw.ccdcoe.org/wiki/Ukrainian_parliamentary_election_interference_(2014)",
+        "https://www.rferl.org/a/russian-tv-announces-right-sector-leader-yarosh-led-ukraine-polls/25398882.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00004",
+      "text": "In 2015, Russian cyber troops launched remote malware attacks against Ukraine. A malware known as BlackEnergy targeted individuals’ emails in different energy companies. Once these individuals clicked on the attached malware, they activated KillDisk destructive malware which wipes out parts of the computers’ hard drives and prevents systems from rebooting. This led to power outages in Ukraine. Hackers simultaneously launched a TDoS (Telephony Denial of Service) attack to prevent citizens from calling the electricity help centre to report any loss of power. This double attack caused a severe electricity blackout in Ukraine that affected more than 225,000 citizens. The incident is considered to be the first remote public infrastructure attack using cyberweapons.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1517,
+      "body_end": 2287,
+      "source_links": [
+        "https://cyberlaw.ccdcoe.org/wiki/Power_grid_cyberattack_in_Ukraine_(2015)",
+        "https://www.cisecurity.org/insights/white-papers/cis-primer-telephony-denial-of-service-attacks#:~:text=A%20Telephony%20Denial%20of%20Service,is%20no%20unoccupied%20telephone%20line.",
+        "https://www.kaspersky.com/resource-center/threats/blackenergy",
+        "https://www.zdnet.com/article/how-hackers-attacked-ukraines-power-grid-implications-for-industrial-iot-security/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00005",
+      "text": "A tested strategy: Cyber attacks on Russia's neighbours",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 2289,
+      "body_end": 2344,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00006",
+      "text": "In 2007, during a dispute between Russia and Estonia following Tallinn's decision to relocate one of the Soviet World War II war memorials from its original place, Russian cyber troops took down the Estonian state’s banking and public administration systems after hijacking and harnessing a million computers worldwide in an operation called BotNet. It is estimated that Russia used more than one million computers from 70 different countries in this attack. Estonia requested help from NATO under Article V on collective defense, yet NATO was not able to offer support at that time, a situation that brought up the issue of cyberattacks as requiring the organization's collective defense. Later, the alliance adopted the strategic concept to “prevent, detect, defend against and recover from cyber-attacks, including using the NATO planning process to enhance and coordinate national cyber-defense capabilities, bringing all NATO bodies under centralized cyber protection, and better integrating NATO cyber awareness, warning and response with member nations.”",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2346,
+      "body_end": 3407,
+      "source_links": [
+        "https://doi.org/10.1177/0967010611431079",
+        "https://en.wikipedia.org/wiki/Botnet",
+        "https://www.amazon.co.uk/Cyberspace-National-Security-Threats-Opportunities/dp/1589019180",
+        "https://www.jstor.org/stable/j.ctt2tt6rz?turn_away=true",
+        "https://www.nato.int/cps/en/natohq/topics_110496.htm",
+        "https://www.nato.int/cps/en/natolive/official_texts_68828.htm",
+        "https://www.rferl.org/a/1347550.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00007",
+      "text": "In August 2008, Russia and Georgia engaged in an armed conflict over South Ossetia, a territory that seceded from Georgia. While conducting military operations, Russia oversaw DDoS attacks against numerous Georgian websites that severely affected communication and financial services. In response, the National Bank of Georgia on 9 August ordered all banks to stop offering electronic services. Unfortunately, the Georgian physical infrastructure ran through Russia and Azerbaijan (in addition to a single fibre optic cable to Turkey). During the escalation of the conflict, Russian troops locked the optic cables of international telephone traffic and seized both cellular and primary international telephone traffic. This lock caused an overload on the rest of the channels used by civilians and non-governmental organizations.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 3409,
+      "body_end": 4238,
+      "source_links": [
+        "https://doi.org/10.1177/0967010611431079",
+        "https://journals.sagepub.com/doi/10.1177/0967010611431079"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00008",
+      "text": "With the degradation of its communication channels, the Georgian government decided to censor Russian news and communication, and to filter Russian IP addresses from their network to stop DDoS attacks. This reduced DDoS attacks temporarily, but then hackers started to mask their IP addresses and targeted Georgian services on foreign hosts. For example, Russian hackers attacked US-based servers with DDoS after the Georgian government migrated their server to a private web server in Atlanta.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 4240,
+      "body_end": 4734,
+      "source_links": [
+        "https://www.jstor.org/stable/26301960"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00009",
+      "text": "After the Russian DDoS cyber attack, many pro-Georgia hackers started counter-attacks against Russian servers, including a few Russian media sites. But with Russian websites, communication, and news blocked, Georgian citizens soon drowned in an information blackout. The media censoring and internet filtering created panic and helped spread rumors and disinformation about a Russian victory.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 4736,
+      "body_end": 5128,
+      "source_links": [
+        "https://doi.org/10.1177/0967010611431079",
+        "https://journals.sagepub.com/doi/10.1177/0967010611431079"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00010",
+      "text": "The Georgian government was unable to debunk false news or to connect with its citizens. The state of confusion and suspicion had a significant effect on morale, which reflected on the battlefield.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 5130,
+      "body_end": 5327,
+      "source_links": [
+        "https://www.jstor.org/stable/26301960"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00011",
+      "text": "In this war, Russia achieved their victory by controlling the streams, the internet, and the narrative by disabling government services, websites, financial servers and denying Georgian citizens access to information.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 5329,
+      "body_end": 5546,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00012",
+      "text": "Lessons for Ukraine",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 5548,
+      "body_end": 5567,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00013",
+      "text": "This holds lessons for Ukraine’s current challenges. In Ukraine, once Russian cyberattacks started in February 2022, an anonymous pro-Ukraine hacking collective announced that it had targeted Russian TV channels to show pro-Ukrainian messages, while a Telegram channel had been formed with thousands of members fighting online for Ukraine.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5569,
+      "body_end": 5908,
+      "source_links": [
+        "http://disinformation",
+        "https://www.bbc.co.uk/news/technology-60622977"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00014",
+      "text": "Unlike Georgia in 2008, Ukraine is backed electronically by NATO and its neighbours. After Russia moved its troops toward Kyiv, NATO signed an agreement with Ukraine to enhance its cyber capabilities and give it access to the alliance’s malware information sharing platform. The White House also offered the Ukrainian government cyber support. Elon Musk offered his satellite broadband service, Starlink, to run government servers. Additionally, the European Union formed a cyber rapid-response team (CRRT); headed by Lithuania, this team includes 12 experts from Lithuania, Croatia, Poland, Estonia, Romania, and the Netherlands, from private and government entities. Romania also launched a partnership to provide pro bono technical support and threat intelligence to Ukraine’s government, businesses and citizens.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5910,
+      "body_end": 6726,
+      "source_links": [
+        "https://www.bbc.co.uk/news/technology-60484979",
+        "https://www.bbc.co.uk/news/technology-60500618",
+        "https://www.bbc.co.uk/news/world-europe-59992531",
+        "https://www.bitdefender.com/news/bitdefender-and-romania-national-cyber-security-directorate-expand-collaboration-to-aid-ukraine-and-nato-allies.html",
+        "https://www.reuters.com/article/ukraine-crisis-usa-cyber-idUSW1N2TQ08L",
+        "https://www.theguardian.com/commentisfree/2022/mar/07/tech-community-rallied-ukraine-cyber-defence-eu-nato",
+        "https://www.washingtonpost.com/technology/2022/03/19/elon-musk-ukraine-starlink/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00015",
+      "text": "Despite attempts by Ukraine to return the attack, it is difficult to assess their success. One possible indication could be dated to May 9, when hackers interrupted Putin's speech on TV during the celebration of Victory Day. On that day, Russia smart TV users’ and online viewer saw the names of their TV programmes changed to “The blood of thousands of Ukrainians and hundreds of their children is on your hands. TV and the authorities lie. No to war.”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6728,
+      "body_end": 7181,
+      "source_links": [
+        "https://www.news.com.au/world/europe/vladimir-putin-honours-dead-as-victory-day-parade-speech-hacked/news-story/45c64a7fcb9c4ee6f1f0a3ef7c776dba",
+        "https://www.thesun.co.uk/news/18504544/putins-victory-day-parade-coverage-hacked-2/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00016",
+      "text": "Surprisingly, despite their capacities, Russian hackers have only caused moderate harm to Ukraine’s digital infrastructure. Both parties have made mistakes similar to the ones experienced in Georgia. Putin recently blocked all Western media websites and social media like Facebook, Instagram and Twitter, to saturate Russian citizens with Russian discourse. Russian security services have also started to randomly search citizens’ mobiles in the streets, looking for anti-war posts, photos, videos, or messages.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 7183,
+      "body_end": 7694,
+      "source_links": [
+        "https://twitter.com/KevinRothrock/status/1500458582902460420",
+        "https://twitter.com/OpenObservatory/status/1500870962983616515?s=20&t=1gT-u8Cmx-eWgzE_k58W_w"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00017",
+      "text": "At the same time, the EU decided to block Russian propaganda arms like Sputnik and Russia Today. The Ukrainian president also banned on March 20 eleven left-wing opposition parties accused of supporting Russia; these parties have 10 percent of the seats in the national parliament.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 7696,
+      "body_end": 7977,
+      "source_links": [
+        "https://twitter.com/ChallengeYCL/status/1505509463586967554",
+        "https://twitter.com/MalloryKnodel/status/1505958283793866764?s=20&t=2zutXP1cLDXwQ8Jd51mw4w"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00018",
+      "text": "In addition to sanctions, Russians are denied access to internet services from foreign providers, making Russian censorship more effective. At the same time, the Ukrainian government banned and blocked certain opposition voices. As the war progresses, the lesson from Georgia is that the flow of information to citizens might be a decisive factor.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 7979,
+      "body_end": 8326,
+      "source_links": [
+        "https://twitter.com/RuBlackListNET/status/1502214154538606595?s=20&t=1gT-u8Cmx-eWgzE_k58W_w"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762212-b00019",
+      "text": "Please visit the project page for more pieces from the Unfreedom Monitor.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 8328,
+      "body_end": 8401,
+      "source_links": [
+        "https://advox.globalvoices.org/special/unfreedom-monitor/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "3410941f9d2a86f64e3e9e8f4619f3722c6518a3e6807f55dedec786c26d89aa",
+  "word_count": 1244,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8401,
+  "retrieved_at": "2026-11-16T22:34:58.543426+00:00",
+  "raw_html_sha256": "7140bb7b11a828780bcb1d7615be8e06fcdd8e5908cd5c649d4c6853a80af27e",
+  "resolved_source_url": "https://globalvoices.org/2022/05/27/in-russias-invasion-of-ukraine-cyberwarfare-is-a-decisive-element-of-the-battlefield/",
+  "canonical_url": "https://globalvoices.org/2022/05/27/in-russias-invasion-of-ukraine-cyberwarfare-is-a-decisive-element-of-the-battlefield/",
+  "source_bytes": 198544,
+  "authors": [
+    {
+      "name": "Sara Alsherif",
+      "url": "https://globalvoices.org/author/saraalsherif/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 762212,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "7140bb7b11a828780bcb1d7615be8e06fcdd8e5908cd5c649d4c6853a80af27e",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-dfa6d37030f3c2a6a0cc",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-05",
+    "eligible_month_documents": 83,
+    "selected_month_documents": 69,
+    "inclusion_probability": 0.8313253012048193,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Sara Alsherif",
+  "body_start": 507,
+  "body_end": 8908,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c9316ae1afadddcbd913c0f8ae13f9c65555de71407addc8de22d5f4c33f8ccb",
+  "text_path": "articles/gv-762212.txt",
+  "metadata_path": "metadata/gv-762212.json",
+  "attribution": "This story by Sara Alsherif originally appeared on Global Voices. https://globalvoices.org/2022/05/27/in-russias-invasion-of-ukraine-cyberwarfare-is-a-decisive-element-of-the-battlefield/",
+  "content_sha256": "9097dac9821e90f24953ec4191bf249ebe0e12b1081a65202acd5a11326817b9",
+  "source_sha256": "7140bb7b11a828780bcb1d7615be8e06fcdd8e5908cd5c649d4c6853a80af27e",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

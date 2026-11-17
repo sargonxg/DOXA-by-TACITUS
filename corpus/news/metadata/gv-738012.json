@@ -1,0 +1,337 @@
+{
+  "id": "gv-738012",
+  "publisher_id": 738012,
+  "source_id": "globalvoices:738012",
+  "source_url": "https://globalvoices.org/2021/06/08/mexican-registry-for-cell-phone-users-sparks-privacy-concerns/",
+  "title": "Mexican registry for cell phone users sparks privacy concerns",
+  "published_at": "2021-06-08T14:00:50Z",
+  "modified_at": "2021-06-08T15:22:04Z",
+  "api_author_id": 2811,
+  "api_content_sha256": "52433580ed89ab4b94ce7346683e8c64974bd869187c82484ceba695809d439b",
+  "api_response_sha256": "209d251d160f97b2292e453023b10abcb0e3517753e5fed0c99aea9917505d95",
+  "api_retrieved_at": "2026-11-16T22:20:35.207607+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 37,
+      "count": 1643,
+      "name": "Mexico",
+      "slug": "mexico",
+      "parent": 1354
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-738012-b00001",
+      "text": "Mexico has approved a plan to register biometric data, names, and addresses of cell phone users in a database, in what activists say is an alarming decision. The Mexican government has already failed several times to protect personal data.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 239,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00002",
+      "text": "The Senate of the Republic of Mexico approved and then published on April 16 a decree that modifies the Mexican law on telecommunications and broadcasting to create the National Registry of Mobile Telephony Users (Padrón Nacional de Usuarios de Telefonía Móvil, PANAUT, in Spanish).",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 241,
+      "body_end": 523,
+      "source_links": [
+        "http://comunicacion.senado.gob.mx/index.php/informacion/boletines/50696-senado-aprueba-en-lo-general-crear-padron-nacional-de-usuarios-de-telefonia-movil.html",
+        "https://dof.gob.mx/nota_detalle.php?codigo=5616165&fecha=16/04/2021"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00003",
+      "text": "The registry is a database that includes information about the subscribers of cell phone services, managed by telephone operators. This is what the decree establishes:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 525,
+      "body_end": 692,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00004",
+      "text": "> Registration of the cell phone number in the National Registry of Mobile Telephony Users will be mandatory for the users, who will have to provide official identification, proof of address and biometric data for the activation of the cell phone services (…)",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 694,
+      "body_end": 953,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-738012-b00005",
+      "text": "This means that cell phone users in Mexico are required to register their SIM cards along with their personal and biometric data, such as fingerprints and facial features. The telephone operators will be in charge of collecting and managing these records. It is estimated that the creation of the registry will cost 700 million pesos, or &35.4 million U.S. dollars.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 955,
+      "body_end": 1320,
+      "source_links": [
+        "https://www.eleconomista.com.mx/empresas/Entre-en-vigor-el-padron-de-telefonia-movil-que-obliga-a-usuarios-a-entregar-datos-biometricos-20210417-0007.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00006",
+      "text": "The justification for making these legislative changes, according to the Mexican Senate, is the “collaboration with the competent authorities in matters of security and justice in matters related to the commission of unlawful acts.” By 2019, an estimated 22.3 million people were victims of crime, according to national data. Achieving “peace and security” was one of the most important core promises of Mexican President Andrés Manuel Lopez Obrador when he was elected in 2018.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1322,
+      "body_end": 1800,
+      "source_links": [
+        "https://www.elfinanciero.com.mx/nacional/los-8-ejes-del-plan-nacional-de-seguridad-y-paz-de-amlo/",
+        "https://www.inegi.org.mx/contenidos/programas/envipe/2020/doc/envipe2020_presentacion_nacional.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00007",
+      "text": "Criticisms arose during the legislative procedure and after its approval. The civil society organization Network for the Defense of Digital Rights, or R3D, warned in the early stages that there is no evidence this type of mechanism contributes to the reduction of crimes. They also said these mechanisms are easy to evade. Meanwhile, the database would also violate fundamental rights such as privacy and could jeopardize the security of individuals due to the possibility of unauthorized access or leakage of personal data. The organization states that it would affect the presumption of innocence since “the reform establishes that all legal acts performed from a cell phone number [will be attributed] to the person registered into the registry,” meaning that people would have to prove that they cannot be held responsible in the event of theft or impersonation, for example.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1802,
+      "body_end": 2681,
+      "source_links": [
+        "https://r3d.mx/wp-content/uploads/Ficha-PUTM-Senado.pdf",
+        "https://twitter.com/R3Dmx/status/1395484505163567105"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00008",
+      "text": "One sector of the electronic telecommunications industry, which comprises 1,000 companies, asked the legislators to reject the bill. They argue that it would be difficult to create a database in an environment where each operator uses different technologies and that this initiative would discourage further investment, in addition to the claim that it would not reduce crime levels.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2683,
+      "body_end": 3066,
+      "source_links": [
+        "http://canieti.org/canieti/quienessomos.aspx",
+        "http://www.canieti.org/comunicacion/noticias/vista/20-12-16/Pide_Canieti_a_Senado_rechazar_registro_de_celulares.aspx"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00009",
+      "text": "In Mexico, while there is an increase in trust in the federal government according to official figures, Mexicans also reported a 7.5 percent increase in the number of corruption victims, according to the 2019 National Survey on the Quality and Impact of the Government. Organizations fear that the list of personal data will be lost and fall into the hands of malicious individuals, thus increasing the feeling of insecurity.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3068,
+      "body_end": 3493,
+      "source_links": [
+        "https://www.inegi.org.mx/app/saladeprensa/noticia.html?id=5724",
+        "https://www.inegi.org.mx/contenidos/programas/encig/2019/doc/encig2019_principales_resultados.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00010",
+      "text": "Several cases were documented in Mexico where government institutions have failed to protect personal data, according to the federal agency in charge of personal data protection. One of the most recent examples is the Ministry of Public Function, which disclosed the data of 830,000 civil servants of the federal administration.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3495,
+      "body_end": 3823,
+      "source_links": [
+        "https://www.animalpolitico.com/2020/07/funcion-publica-datos-personales-empleados-gobierno/",
+        "https://www.eleconomista.com.mx/politica/Funcion-Publica-incumplio-con-la-ley-por-fuga-de-datos-personales-Inai-20201124-0082.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00011",
+      "text": "Another similar case occurred in the health sector. In 2018, 2.3 million clinical records were leaked and released from the state of Michoacán. Federal authorities determined that the “potential responsibility” lay with the technology company Hova Health. Within the same sector, in 2020, an investigation revealed that personal data of patients employed by the State were available on internet search engines.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3825,
+      "body_end": 4235,
+      "source_links": [
+        "https://www.eleconomista.com.mx/opinion/Hova-Health-datos-personales-sensibles-a-la-vista-de-quien-sea-20180812-0020.html",
+        "https://www.eleconomista.com.mx/tecnologia/El-ISSSTE-vive-una-fuga-de-datos-sensibles-que-expone-la-salud-de-sus-usuarios-y...-no-hace-nada-20200818-0097.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00012",
+      "text": "The creation of a similar registry was attempted in 2009, the so-called National Registry of Mobile Telephony Users (Registro Nacional de Usuarios de Telefonía Móvil, or RENAUT, in Spanish). It had been operational for only two months before it was discontinued after it was reported that the database was for sale. In 2013, the electoral registry was also for sale online.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4237,
+      "body_end": 4610,
+      "source_links": [
+        "https://archivo.eluniversal.com.mx/notas/685120.html",
+        "https://es.globalvoices.org/2013/11/12/tambien-el-padron-electoral-mexicano-esta-a-la-venta/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00013",
+      "text": "Citizens have taken legal action against the creation of the cell phone registry, but the majority of these actions were dismissed by the judges. For its part, the National Institute for Transparency, Access to Information and Protection of Personal Data (Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales in Spanish) decided to file an action for lack of compliance with the Constitution because it considers that the registry violates the protection of personal data and access to information. The Federal Telecommunications Institute (Instituto Federal de Telecomunicaciones, or IFT, in Spanish) also joined these actions, on the grounds that it could not allocate resources for the creation and operation of the registry, since no budget was approved, and it could also affect freedom of expression and access to telecommunications services.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4612,
+      "body_end": 5501,
+      "source_links": [
+        "http://www.ift.org.mx/comunicacion-y-medios/comunicados-ift/es/el-pleno-del-ift-aprueba-interponer-controversia-constitucional-en-contra-de-diversas-disposiciones",
+        "https://home.inai.org.mx/wp-content/documentos/SalaDePrensa/Comunicados/Comunicado%20INAI-139-21.pdf",
+        "https://www.elsoldemexico.com.mx/mexico/justicia/aumenta-a-140-el-numero-de-amparos-rechazados-contra-padron-de-telefonia-movil-panaut-6656715.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-738012-b00014",
+      "text": "For its part, the initiative #NoALPadrón (#NoToTheRegistry), made of 10 social organizations, demanded that the National Commission for Human Rights (Comisión Nacional de Derechos Humanos, or CNDH, in Spanish), an autonomous state agency, file an action to challenge the unconstitutionality of the registry. However, the Commission responded that it would not join and will only follow up.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5503,
+      "body_end": 5892,
+      "source_links": [
+        "https://noalpadron.mx/",
+        "https://twitter.com/CNDH/status/1394685023220031493?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1394685023220031493%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fglobalvoices.org%2F%3Fp%3D738012preview_id%3D738012preview_nonce%3D5757a9bed8_thumbnail_id%3D-1preview%3Dtrue"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "1c209841083c34c07ca45f2dfa27987f3bc14bea7a6fd7ad7ba60b1abff6d642",
+  "word_count": 914,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 5892,
+  "retrieved_at": "2026-11-16T22:30:46.465010+00:00",
+  "raw_html_sha256": "2e7b14d600c5621e53175d5625f01c870afa67ce63f41c8e540175380cee1a82",
+  "resolved_source_url": "https://globalvoices.org/2021/06/08/mexican-registry-for-cell-phone-users-sparks-privacy-concerns/",
+  "canonical_url": "https://globalvoices.org/2021/06/08/mexican-registry-for-cell-phone-users-sparks-privacy-concerns/",
+  "source_bytes": 190508,
+  "authors": [
+    {
+      "name": "Jacobo Nájera",
+      "url": "https://es.globalvoices.org/author/jacobo/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Anthony Sutterman",
+      "url": "https://globalvoices.org/author/anthony-sutterman/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 738012,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "2e7b14d600c5621e53175d5625f01c870afa67ce63f41c8e540175380cee1a82",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-ed54d3a9e9ebfbdf0927",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-06",
+    "eligible_month_documents": 92,
+    "selected_month_documents": 77,
+    "inclusion_probability": 0.8369565217391305,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Jacobo Nájera",
+  "body_start": 492,
+  "body_end": 6384,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "811787834a786d87248e83e1402ede3e0cc815de2ee339f89e96f8dd88d2822c",
+  "text_path": "articles/gv-738012.txt",
+  "metadata_path": "metadata/gv-738012.json",
+  "attribution": "This story by Jacobo Nájera originally appeared on Global Voices. https://globalvoices.org/2021/06/08/mexican-registry-for-cell-phone-users-sparks-privacy-concerns/",
+  "content_sha256": "84526db825b3ca0f057c51f8dda554250cafde462ca955667017b260b81f2047",
+  "source_sha256": "2e7b14d600c5621e53175d5625f01c870afa67ce63f41c8e540175380cee1a82",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,343 @@
+{
+  "id": "gv-716890",
+  "publisher_id": 716890,
+  "source_id": "globalvoices:716890",
+  "source_url": "https://globalvoices.org/2020/08/31/anonymous-group-hack-reveals-hidden-government-data-about-covid-19-cases-in-nicaragua/",
+  "title": "Anonymous group hack reveals hidden government data about COVID-19 cases in Nicaragua",
+  "published_at": "2020-08-31T08:45:04Z",
+  "modified_at": "2020-08-31T09:16:01Z",
+  "api_author_id": 2470,
+  "api_content_sha256": "0231819f1be28fddf74b65beb8e16c194ecc6ace9b5529c646be2f420c38271d",
+  "api_response_sha256": "8151db59b84972be147420e6c778533c63bc28f6c312564f66e92b98b68bdb85",
+  "api_retrieved_at": "2026-11-16T22:20:28.883922+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 178,
+      "count": 306,
+      "name": "Nicaragua",
+      "slug": "nicaragua",
+      "parent": 1354
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-716890-b00001",
+      "text": "On August 17, the decentralized cyber hacking group Anonymous attacked Nicaragua’s Health Ministry archives. The 400 leaked files revealed a surplus of 6,245 positive COVID-19 cases in Nicaragua that were previously unknown to the public. The announcement was made on Twitter by a self-identified Anonymous member, Lorian Syrano.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 329,
+      "source_links": [
+        "https://100noticias.com.ni/nacionales/102532-anonymous-documentos-minsa-coronavirus/",
+        "https://en.wikipedia.org/wiki/Anonymous_(group)",
+        "https://twitter.com/LorianSynaro/status/1293959498944655362"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00002",
+      "text": "Nicaraguans on Twitter replied enthusiastically to the hack through the hashtag #OpNicaragua. Since the beginning of the pandemic, Nicaragua's authorities have been singled out for their opacity about COVID-19 data and its refusal to introduce a lockdown.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 331,
+      "body_end": 586,
+      "source_links": [
+        "https://nacla.org/news/2020/06/17/nicaragua-tepid-covid-response",
+        "https://twitter.com/search?q=%23OpNicaragua&src=hashtag_click",
+        "https://www.aljazeera.com/news/2020/05/nicaragua-express-burials-hide-true-covid-19-scale-doctors-200519145757104.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00003",
+      "text": "Anonymous revealed that in May, the known number of positive tests for COVID-19 was 98.80 percent higher than what the official Ministry reported: 1332 cases instead of 16. The tendency continued for the following months. By July 24, it appears that a total of 6,245 positive cases were left publicly unreported.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 588,
+      "body_end": 900,
+      "source_links": [
+        "https://confidencial.com.ni/dr-alvaro-ramirez-ortega-y-murillo-decidieron-mentir-a-la-poblacion-y-cambiar-los-datos/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00004",
+      "text": "It also appears that the rate of positive cases per test is one of the highest in the world, with nearly 56 percent of tests returning positive for COVID-19. The former director of epidemiology at the Health Ministry, Álvaro Ramírez, explained in an interview with Confidencial that it is due to the fact that the tests are primarily performed on hospitalized people or those presenting symptoms.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 902,
+      "body_end": 1298,
+      "source_links": [
+        "https://confidencial.com.ni/dr-alvaro-ramirez-ortega-y-murillo-decidieron-mentir-a-la-poblacion-y-cambiar-los-datos/",
+        "https://ourworldindata.org/grapher/covid-19-positive-rate-bar",
+        "https://www.youtube.com/watch?v=pUak8JW0EGw&list=PLObBpASsEhyLNzj_-fGABQ-vhYk9KRHiZ&index=1"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00005",
+      "text": "Already before the leak, suspicion about the accuracy of official COVID-19 data was growing. For example, a volunteer citizen observatory made up of medical experts, researchers, engineers, computer scientists and communicators, reported that the number of suspected COVID-19 related deaths is nearly twenty times higher than the data shared by the Health Ministry.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1300,
+      "body_end": 1665,
+      "source_links": [
+        "https://observatorioni.org/estadisticas-covid-19-nicaragua/",
+        "https://www.worldometers.info/coronavirus/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00006",
+      "text": "For Álvaro Ramírez, the leaked archives confirm that the government was hiding the data on purpose. He said :",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1667,
+      "body_end": 1776,
+      "source_links": [
+        "https://confidencial.com.ni/dr-alvaro-ramirez-ortega-y-murillo-decidieron-mentir-a-la-poblacion-y-cambiar-los-datos/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00007",
+      "text": "> …el hecho de que esta información estaba ahí, que llegaba todos los días a la presidencia, y que por cualquier razón, que no la vamos a entender fácilmente, ellos (Daniel Ortega y Rosario Murillo) decidieron mentir a la población, y cambiar los datos, y poner datos diferentes.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1778,
+      "body_end": 2057,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-716890-b00008",
+      "text": "> …the fact that this information was there, that it came every day to the presidency, and that for whatever reason, which we will not easily understand, they (Daniel Ortega and Rosario Murillo) decided to lie to the population, and change the data, and put different data.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2059,
+      "body_end": 2332,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-716890-b00009",
+      "text": "The government, led by President Daniel Ortega and his wife and Vice-President Rosario Murillo, had affirmed in May that people were suffering from pneumonia instead of COVID-19. In May and June, alarming reports about hidden burials multiplied. Journalist Lucydalia Baca Castellón hopes that the conditionality of international loans will soon force the Nicaraguan government to take “responsible and transparent” measures with regards to COVID-19.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2334,
+      "body_end": 2783,
+      "source_links": [
+        "https://edition.cnn.com/2020/06/18/americas/nicaragua-coronavirus-ortega-mystery-intl/index.html",
+        "https://globalvoices.org/2020/06/05/in-nicaragua-people-apparently-die-of-pneumonia-not-covid-19/",
+        "https://www.4tomono.com/distopia/regimen-obligado-a-cambiar-actitud-ante-pandemia-para-acceder-a-prestamo-bid/?utm_campaign=Central%20American%20News&utm_medium=email&utm_source=Revue%20newsletter"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00010",
+      "text": "On August 16, Anonymous shared a teaser to the leaked files:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2785,
+      "body_end": 2845,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00011",
+      "text": "Anonymous, like many government opponents, commentators and Nicaraguan media, refers to Ortega's government as “dictatorial” due to its authoritarian traits, censorship practices, and corruption. According to the Interdisciplinary Group of Independent Experts, Ortega committed crimes against humanity against political opponents during anti-government uprisings in 2018.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2847,
+      "body_end": 3218,
+      "source_links": [
+        "https://gieinicaragua.org/giei-content/uploads/2019/01/GIEI_NICARAGUA_INFORME_EJECUTIVO_vENERO_2019.pdf",
+        "https://rsf.org/es/nicaragua",
+        "https://www.eiu.com/topic/democracy-index",
+        "https://www.nytimes.com/2018/08/02/opinion/a-dictatorship-is-rising-in-my-country-again.html",
+        "https://www.transparency.org/en/countries/nicaragua#",
+        "https://www.youtube.com/watch?v=K8XKO6QekB0"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00012",
+      "text": "On August 21, Lorian Synaro shared the link where they claim that the entire database of the Nicaraguan Health Ministry and other 400 files can be downloaded:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3220,
+      "body_end": 3378,
+      "source_links": [
+        "https://twitter.com/LorianSynaro?utm_campaign=Central%20American%20News&utm_medium=email&utm_source=Revue%20newsletter"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00013",
+      "text": "This is not the first time that Anonymous has targeted Ortega's government. Throughout 2018, the year of the anti-government protests and subsequent governmental repression, Anonymous took down the websites of government-controlled media and the police. In April 2020, Lorian Syrano targeted the Nicaraguan Central Bank, state-owned TV channels, the National Police and other institutional websites to protest the government’s handling of COVID-19. The Nicaraguan government then purchased computer protection software worth 916,000 córdobas (approximately 26,295 US dollars).",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3380,
+      "body_end": 3956,
+      "source_links": [
+        "https://www.articulo66.com/2020/04/28/presidencia-de-nicaragua-gasta-916-mil-cordobas-blindar-sistema-informatico-ataques-anonymous/",
+        "https://www.elnuevodiario.com.ni/nacionales/472849-crisis-nicaragua-ataques-anonymous-19digital-polic/",
+        "https://www.forbes.com.mx/portal-del-gobierno-de-nicaragua-sufre-ataque-de-anonymous/",
+        "https://www.laprensa.com.ni/2020/04/22/nacionales/2665781-hacker-tumba-los-sitios-web-de-canal-6-el-inss-y-la-policia?utm_campaign=Central%20American%20News&utm_medium=email&utm_source=Revue%20newsletter"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00014",
+      "text": "In May, Syrano continued to take down websites of government ministries.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3958,
+      "body_end": 4030,
+      "source_links": [
+        "https://todaynicaragua.com/this-is-just-the-beginning-anonymous-begins-attack-on-nicaragua-institutions/"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-716890-b00015",
+      "text": "El 19 Digital, the largest digital news media with close ties to the government, has not reported on any of these incidents, even though reports abound on other Ministry of Health's latest news. The Ministry of Health did not respond to the attacks, either.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4032,
+      "body_end": 4289,
+      "source_links": [
+        "https://www.el19digital.com/busqueda/articulos?q=lorian+syrano",
+        "https://www.el19digital.com/busqueda/articulos?q=minsa"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5be78fdb3c6f142dcf04cab269958eab72fb6d5e6997ff057cc49795596971d6",
+  "word_count": 648,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4289,
+  "retrieved_at": "2026-11-16T22:27:07.243787+00:00",
+  "raw_html_sha256": "8062239d0a82d389ee7178621567674e2837aec668f9b8b25fd18333456ddebc",
+  "resolved_source_url": "https://globalvoices.org/2020/08/31/anonymous-group-hack-reveals-hidden-government-data-about-covid-19-cases-in-nicaragua/",
+  "canonical_url": "https://globalvoices.org/2020/08/31/anonymous-group-hack-reveals-hidden-government-data-about-covid-19-cases-in-nicaragua/",
+  "source_bytes": 192732,
+  "authors": [
+    {
+      "name": "Melissa Vida",
+      "url": "https://globalvoices.org/author/melissa-vida/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 716890,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "8062239d0a82d389ee7178621567674e2837aec668f9b8b25fd18333456ddebc",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-88f2c3eab71cc53af76d",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-08",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Melissa Vida",
+  "body_start": 506,
+  "body_end": 4795,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "951a4442ee7f0aae2683debf1b106cdaceb5eef0eb5dc34ffb4fc78d5fe20095",
+  "text_path": "articles/gv-716890.txt",
+  "metadata_path": "metadata/gv-716890.json",
+  "attribution": "This story by Melissa Vida originally appeared on Global Voices. https://globalvoices.org/2020/08/31/anonymous-group-hack-reveals-hidden-government-data-about-covid-19-cases-in-nicaragua/",
+  "content_sha256": "b89940ca6125088cd1993499b3bd62e0b1bb52c16f534627573387bc576a58e2",
+  "source_sha256": "8062239d0a82d389ee7178621567674e2837aec668f9b8b25fd18333456ddebc",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

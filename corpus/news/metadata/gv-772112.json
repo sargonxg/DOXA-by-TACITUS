@@ -1,0 +1,808 @@
+{
+  "id": "gv-772112",
+  "publisher_id": 772112,
+  "source_id": "globalvoices:772112",
+  "source_url": "https://globalvoices.org/2022/10/23/more-guns-fewer-control-mechanisms-brazilian-journalist-analyzes-bolsonaros-gun-policy/",
+  "title": "More guns, fewer control mechanisms: Brazilian journalist analyzes Bolsonaro’s gun policy",
+  "published_at": "2022-10-23T11:03:15Z",
+  "modified_at": "2022-10-24T08:41:38Z",
+  "api_author_id": 1392,
+  "api_content_sha256": "f4617e035221f834b341c5041f1cbe8cfe49441dd3a14d48e4eebbe3256a86fb",
+  "api_response_sha256": "9b615ca8c330f03eafb11202cb28079d726516aefde093a0552488b2b6e40c2e",
+  "api_retrieved_at": "2026-11-16T22:20:47.843069+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 1355,
+      "count": 5871,
+      "name": "Ethnicity &amp; Race",
+      "slug": "ethnicity-race",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-772112-b00001",
+      "text": "In 2016, journalist Cecília Olliveira was searching for data on shootings that took place in Rio de Janeiro for a story, but found a lack of registers instead. The solution was to do the count on her own, by hand, cross-referencing research in social media, police reports, and the press.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 288,
+      "source_links": [
+        "https://fogocruzado.org.br/sobre",
+        "https://twitter.com/Cecillia"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00002",
+      "text": "This is how Instituto Fogo Cruzado (Crossfire, in Portuguese), where she is the executive director, was created. The institute uses technology to build its open-sourced data on gun violence, available to all, also helping to preserve lives by informing people of what is going on in their regions. So far, its database covers almost 50 cities from three metropolitan areas in Brazil — Rio de Janeiro, Recife, and Salvador.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 290,
+      "body_end": 712,
+      "source_links": [
+        "https://fogocruzado.org.br/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00003",
+      "text": "An estimated 1 million guns are in the hands of civilians as of 2022, licensed hunters, shooters, and collectors, known as CACs. This has almost tripled since the end of 2018, when President Jair Bolsonaro was elected.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 714,
+      "body_end": 932,
+      "source_links": [
+        "https://g1.globo.com/rj/rio-de-janeiro/noticia/2022/08/31/em-3-anos-numero-de-armas-registradas-por-cacadores-colecionadores-e-atiradores-quase-triplica-e-chega-a-1-milhao.ghtml",
+        "https://www.bbc.com/portuguese/brasil-48196755",
+        "https://www1.folha.uol.com.br/cotidiano/2022/08/numero-de-armas-nas-maos-de-cacadores-e-atiradores-chega-a-1-milhao-no-brasil.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00004",
+      "text": "The number was publicized by the Army after being obtained by institutes Sou da Paz and Igarapé through the Access to Information Law (LAI). Only in the Amazon region, the number of licenses for civilians increased by 700 percent. The total national number now surpasses the guns in the hands of the armed forces.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 934,
+      "body_end": 1247,
+      "source_links": [
+        "https://noticias.r7.com/brasilia/numero-de-armas-de-cacadores-e-atiradores-na-amazonia-aumenta-700-desde-2018-01092022",
+        "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2022/07/26/cacs-ja-superam-total-de-pms-e-de-integrantes-das-forcas-armadas-em-todo-o-pais.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00005",
+      "text": "Registered CACs even managed to get 23 people elected this year, forming their own bloc in Congress. Loosening gun control was one of Bolsonaro’s promises prior to being elected. In August, the Supreme Court issued injunctions trying to put breaks into the measures.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1249,
+      "body_end": 1515,
+      "source_links": [
+        "https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=494468&ori=1",
+        "https://veja.abril.com.br/coluna/maquiavel/grupo-pro-armas-elege-23-parlamentares-e-forma-bancada-dos-cacs/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00006",
+      "text": "In a conversation via e-mail with Global Voices, Olliveira analyses the scenario regarding guns in Brazil:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1517,
+      "body_end": 1623,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00007",
+      "text": "Global Voices: Fogo Cruzado indicates data from over 10,000 police operations/actions registered, with over 44,000 shots fired, 13,312 deaths, and 10,089 wounded, around three metropolitan areas. How can we read these numbers? What do they say about gun violence in Brazil?",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1625,
+      "body_end": 1898,
+      "source_links": [
+        "https://fogocruzado.org.br/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00008",
+      "text": "> Cecília Olliveira: Nos últimos 20 anos vimos como se transformou o modo como o crime atua no Brasil. As rotas do tráfico de drogas e armas mudaram, novas facções surgiram e alianças entre traficantes e milicianos foram refeitas dentro e fora dos presídios. As alianças e desejos políticos também são outros. Tudo isso tem impacto na construção de políticas públicas – e também na ausência estratégica delas.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1900,
+      "body_end": 2309,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00009",
+      "text": "> Os dados refletem uma série de problemas da violência armada nas capitais do Brasil. Boa parte dos estados não tem um plano de segurança pública que priorize a vida da população, evite a escalada da violência e até o nascimento de novos grupos armados. Para piorar esse cenário, a falta de um trabalho conjunto entre os Estados também impacta negativamente a vida da população. A consequência disso é que capitais como Rio de Janeiro e Salvador estão divididas entre diferentes grupos armados que disputam as áreas, além da polícia, que realiza operações policiais com alta letalidade sob a pretensão de resolver o problema. No Recife, os dados mostram um alto índice de mortos, marcado por muitas mortes sob encomenda.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2311,
+      "body_end": 3032,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00010",
+      "text": "> Cecília Olliveira: Over the past 20 years, we've seen how crime in Brazil has changed. Drug and gun trafficking routes have changed, new gangs appeared and alliances between gangs and militias (paramilitary groups made up of current and former police officers) were recreated inside and out of prisons. The alliances and political goals are also different. All of these have impact in the construction of public policies — but also in the strategic lack of them.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3034,
+      "body_end": 3498,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Brazilian_police_militias"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00011",
+      "text": "> The data reflect a series of gun violence problems in the Brazilian state capitals. A good portion of the states do not have a public security plan prioritizing people's lives, to avoid violence rising or even the surge of new armed groups. The consequence is that capitals such as Rio and Salvador are split between different armed groups and territories disputes, besides the police, that holds highly letal operation under the pretension of solving the problem. In Recife, data shows a high number of dead people, marked by several deaths by order.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3500,
+      "body_end": 4053,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00012",
+      "text": "GV: Who are the main victims of gun violence in Brazil?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4055,
+      "body_end": 4110,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00013",
+      "text": "> CO: As pessoas pobres e negras que vivem nas favelas e periferias. O Atlas da Violência mostrou, em 2021, que as pessoas negras têm 2,6 vezes mais chances de serem mortas do que as pessoas brancas. Os negros são mais de 77% das vítimas de homicídios no Brasil, embora sejam pouco mais que a metade da população do país. Os dados revelaram ainda que enquanto o número de mortes entre a população não-negra caiu 33%, o número de pessoas negras mortas aumentou 1,6%.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4112,
+      "body_end": 4577,
+      "source_links": [
+        "https://www.ipea.gov.br/atlasviolencia/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00014",
+      "text": "> CO: Poor and Black people who live in the favelas and peripheries. The Atlas da Violencia study showed, in 2021, that Black people are 2.6 times more likely to be killed than white people. Black people make up for over 77 percent of homicide victims in Brazil, even though they represent a little more than half of the population. The data also revealed that, while the number of deaths among Non-Black population has fallen 33 percent, the number of Black people killed increased 1.6 percent.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4579,
+      "body_end": 5074,
+      "source_links": [
+        "https://www.ipea.gov.br/atlasviolencia/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00015",
+      "text": "GV: Can you explain how Fogo Cruzado uses data and technology to save lives?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5076,
+      "body_end": 5152,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00016",
+      "text": "> CO: Através de um aplicativo de celular, o Fogo Cruzado recebe e disponibiliza informações sobre tiroteios, checadas em tempo real por uma equipe especializada e local. Estas informações estão disponíveis no primeiro banco de dados aberto sobre violência armada da América Latina, que pode ser acessado gratuitamente pela API do Instituto.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5154,
+      "body_end": 5495,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00017",
+      "text": "> Rastreamos e mapeamos tiroteios e disparos de armas de fogo em quase cinquenta cidades brasileiras nas regiões metropolitanas de Rio, Recife e Salvador. Mapeamos também os impactos da violência, como ruas, escolas e postos de saúde fechados, quem são estas vítimas atingidas, em qual circunstância, etc., desdobrando a informação do tiroteio em mais de 30 indicadores sobre violência armada.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5497,
+      "body_end": 5890,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00018",
+      "text": "> Estas informações chegam para as pessoas em tempo real e as permite buscar proteção imediata e tomar decisões sobre seu dia a dia. Podem decidir qual o melhor caminho para o trabalho, ver se o ônibus está em serviço regular, se conseguem ir à consulta na UPA ou se ela está fechada devido a algum tiroteio. O usuário pode se manter a salvo.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5892,
+      "body_end": 6234,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00019",
+      "text": "> Somado à isso, o acúmulo dos dados, relatórios e análises produzidas permitem a construção de melhores propostas para uma segurança pública, baseadas na proteção à vida.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6236,
+      "body_end": 6407,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00020",
+      "text": "> CO: Through a cellphone app, Fogo Cruzado receives and publishes informations about shootings, checked in real time by a local staff of experts. This information is available in the first open-source database on gun violence in Latin America, which can be accessed via our institute's API for free.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6409,
+      "body_end": 6709,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00021",
+      "text": "> We track and map shootings and gunfires in almost 50 Brazilian cities, in the metropolitan areas of Rio, Recife and Salvador. We also map the impact of this violence, as in the closing of schools, streets or health units, who are the victims impacted by it, under which circumstances, etc., unpacking the shooting information in more than 30 indicators about gun violence.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6711,
+      "body_end": 7085,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00022",
+      "text": "> This information arrives to people in real time and allows them to search for immediate shelter and make decisions about their daily lives. They can decide which route is better to go to work, if their buses are following their normal schedule, if they can go their health units or if it's closed due to a shooting. The users can keep themselves safe.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7087,
+      "body_end": 7440,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00023",
+      "text": "> Plus, the data, reports and analyses produced allow the construction of better proposals for public safety, based on life protection.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7442,
+      "body_end": 7577,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00024",
+      "text": "GV: Jair Bolsonaro's government loosened up on gun laws in Brazil, which led to the number of CACs (registered hunters, shooters, and gun collectors ) skyrocketing. In Fogo Cruzado's database, did you observe the impacts of this?",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7579,
+      "body_end": 7808,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00025",
+      "text": "> CO: Acompanhamos com atenção o que vem sendo feito na política de armas. As noticias sobre desvios, roubos e extravios de armas – inclusive para facções e milícias – tem sido mais constantes. As notícias sobre a ingerência do Exército sobre o arsenal nas mãos de civis é preocupante. Quantas armas são, quais armas, nas mãos de quem? O agente fiscalizador não sabe. E isso só é bom para quem tem más intenções.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7810,
+      "body_end": 8222,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00026",
+      "text": "> A notícia de um jovem armado que invadiu uma escola no interior da Bahia e matou uma estudante PcD (pessoa com deficiência) chocou o Brasil. Nos últimos meses, relatos de crianças levando armas para escola e ameaças a estudantes com fotos de armas têm se tornado cada vez mais frequentes. Também foram reportados casos de tentativas de massacres em escolas em diversos estados. A preocupação é crescente: em metade dos ataques a tiros contra escolas no Brasil, a arma foi obtida dentro de casa, segundo dados do nosso parceiro, Instituto Sou da Paz, em 2019.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 8224,
+      "body_end": 8784,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00027",
+      "text": "> CO: We follow attentively what has been done in gun policies. News about guns deviated, stolen, or misplaced — including to gangs and militias — have been more constant. News about the the Army's mismanagement over the guns arsenal in the hands of civilians is worrisome. How many guns are there, which type, in who's hands? The supervisor agent doesn't know. And this is only good news for someone with bad intentions.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 8786,
+      "body_end": 9207,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00028",
+      "text": "> The news about an armed youngster, who broke in a school in Bahia and killed a student with a disability, has shocked Brazil. In the last few months, stories about children carrying guns into their schools or students threatened with pictures of guns have been more frequent. There are also reports of massacre attempts in different states. It's a growing concern: in half of the shootings in schools in Brazil, the gun was obtained inside the shooter's home, according to the data of one of our partners, Instituto Sou da Paz, from 2019.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 9209,
+      "body_end": 9749,
+      "source_links": [
+        "https://g1.globo.com/ce/ceara/noticia/2022/10/09/velorio-reune-familia-e-vizinhos-de-estudante-baleado-por-colega-com-arma-de-cac-em-escola-de-sobral-no-ceara.ghtml",
+        "https://g1.globo.com/jornal-nacional/noticia/2022/09/26/adolescente-mata-estudante-cadeirante-em-escola-na-bahia.ghtml"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00029",
+      "text": "GV: Amidst this high number of CACs, surpassing the guns in the hands of the armed forces already, a story published by UOL news outlet showed the Army doesn't know the numbers in each capital. What are the risks of this lack of control?",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 9751,
+      "body_end": 9988,
+      "source_links": [
+        "https://noticias.uol.com.br/cotidiano/ultimas-noticias/2022/09/15/exercito-diz-nao-saber-tamanho-do-arsenal-de-cacs-em-cada-cidade-brasileira.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00030",
+      "text": "> CO: Sem o devido controle do número de armas circulando nas cidades brasileiras, você não consegue estabelecer políticas públicas adequadas para evitar/reduzir crimes. A falta de controle facilita desvios para grupos criminosos diversos, o que pode impactar no número de assaltos nas ruas, de pessoas baleadas e de homicídios etc.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 9990,
+      "body_end": 10322,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00031",
+      "text": "> CO: Without proper control about the number of guns circulating in Brazilian cities, you can't establish proper public policies to avoid/reduce crime. The lack of control facilitates diversion to several criminal groups, which can impact the number of robberies in the streets, people wounded by guns, homicides, etc",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 10324,
+      "body_end": 10642,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00032",
+      "text": "GV: Other recent news stories have shown that criminal organized groups benefited from the changes in the law to get legal guns. Where did the policy under Bolsonaro go wrong?",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 10644,
+      "body_end": 10819,
+      "source_links": [
+        "https://www.estadao.com.br/politica/investigacoes-mostram-como-politica-de-bolsonaro-arma-o-pcc/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00033",
+      "text": "> CO: O Brasil já tinha muitos problemas com armas e já era um dos países onde mais se mata no mundo. Mas agora, temos ainda mais armas nas ruas, e os mecanismos de fiscalização e investigação não acompanharam essa flexibilização do uso de armas. O resultado disso é que desviar armas ficou mais fácil.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 10821,
+      "body_end": 11123,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00034",
+      "text": "> Em janeiro, a polícia do Rio encontrou 54 armas, entre pistolas, fuzis e espingardas, na casa de um CAC. Ele se aproveitava do fato de ter registro de CAC, e assim ter acesso mais fácil às armas, para revendê-las para o Comando Vermelho. O problema não é ser CAC, obviamente. A falha está no controle que o governo federal faz dessas armas que passam por debaixo da fiscalização e abastecem traficantes, milicianos e grupos de extermínio.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 11125,
+      "body_end": 11565,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00035",
+      "text": "> A responsabilidade de fiscalização dos CACs é do Exército. Este CAC obteve três licenças junto ao órgão, que apesar de dizer que irá colaborar nas investigações, manteve os dados sobre a licença de colecionador do acusado sob sigilo. Por quê? Isso beneficia quem? O próprio delegado que atuou no caso, Marcus Amin, disse que a flexibilização criou novos usos para os CACs. Em entrevista ao Fantástico, ele afirmou que “é uma nova modalidade que está sendo utilizada para camuflar, escamotear o tráfico de armas. A pessoa usa um rótulo de legalidade, um manto de legalidade, procurando esconder a sua atividade criminosa”.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 11567,
+      "body_end": 12190,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00036",
+      "text": "> CO: Brazil already had many problems with guns and it was one of the countries where people killed the most in the world. But now, we have even more guns in the streets, and mechanisms of supervision and investigation do not keep up with this flexibility on gun use. The result of this is that trafficking guns became easier.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 12192,
+      "body_end": 12519,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00037",
+      "text": "> In January, Rio's police found 54 weapons, among pistols, rifles and shotguns, at one CAC's house. He was taking advantage from being registered as a CAC to get more easy access to guns and then re-sell them to Comando Vermelho (Red Command, one of the main gangs in Brazil). Obviously, the problem is not being a CAC. The flaw is in the government control of such guns that go without supervision and then supply dealers, militias and death squads.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 12521,
+      "body_end": 12972,
+      "source_links": [
+        "https://pt.wikipedia.org/wiki/Comando_Vermelho"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00038",
+      "text": "> The responsibility over CACs is from the Army. This CAC got three licenses from this institution, which despite saying it would cooperate with the investigation, kept the information about the license of the collector under charge under secrecy. Why? Who is benefiting from it? The deputy himself, who worked on the case, Marcus Amin, said that flexibility has created new uses for the CACs. In an interview to TV show Fantastico, he stated that “it's a new category that it's been used to camouflage, conceal gun trafficking. The person uses a label of legality, a cloak of legality, looking to hide their criminal activity.”",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 12974,
+      "body_end": 13602,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00039",
+      "text": "GV: How has the gun industry lobby operated during the current government?",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 13604,
+      "body_end": 13678,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00040",
+      "text": "> CO: O lobby armamentista agiu quase como se fosse um braço do governo federal. Já investiram na liberação do porte, e agora têm recorrido às assembleias legislativas para tentar reduzir o ICMS sobre armas de fogo. Pelo menos 23 estados brasileiros têm projetos de lei que propõem a alteração da alíquota, de acordo com um levantamento do Instituto Sou da Paz. Dos 35 PLs apresentados, 21 são voltados a profissionais da segurança pública, como policiais civis e militares, bombeiros, guardas municipais e agentes penitenciários. Outros 14 incluem no rol de beneficiários os Caçadores, Atiradores e Colecionadores (CACs). Segundo o levantamento, quatro dos 35 PLs já viraram lei e uma delas contempla, além de agentes de segurança, os CACs.",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 13680,
+      "body_end": 14421,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00041",
+      "text": "> O filho do presidente, deputado federal Eduardo Bolsonaro, por exemplo, já se reuniu com o diretor da Polícia Rodoviária Federal para questionar abordagens policiais aos CACs. Ele estava acompanhado do advogado do movimento Pró-Armas Brasil, Marcos Pollon. Isso ocorreu após uma reportagem da TV Band que mostrou policiais rodoviários abordando CACs que transportavam armas nos carros — o que pode ser ilegal a depender do caso.",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 14423,
+      "body_end": 14853,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00042",
+      "text": "> Em caso revelado pela Folha de São Paulo, Pollon aparece oferecendo apoio a candidatos em troca de cargos no Congresso. Ele disse: “nós pedimos para todos os candidatos a assessoria jurídica do gabinete porque nós queremos conduzir a pauta de armas do gabinete. Então projetos de lei, manifestações, nós queremos fazer”.",
+      "page": null,
+      "paragraph": 42,
+      "body_start": 14855,
+      "body_end": 15177,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00043",
+      "text": "> CO: The gun lobby has operated almost as a federal government branch. They've already invested in liberating gun carry licenses, and they are now going to state parliaments trying to reduce local tax over firearms. At least 23 Brazilians states (out of 26, plus the Federal District) have law proposals to change the aliquot, according to Instituto Sou da Paz. Out of the 35 law proposals, 21 are aimed to public security officials such as military and civil police, firefighters, metro police and prison guards. The other 14 include in the list of beneficiaries the CACs. According to a survey, four of the 35 proposals already became law and one of them contemplates the CACs, beside public security agents.",
+      "page": null,
+      "paragraph": 43,
+      "body_start": 15179,
+      "body_end": 15890,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00044",
+      "text": "> The president's son, federal Congress man Eduardo Bolsonaro, for instance, had meetings with the director of the Federal Highway Patrol (PRF) to question police stopping and approaching CACs. He was with a lawyer of a movement called Pró-Armas Brasil (Pro-Gun Brazil), Marcos Pollon. This happened after a news story aired by TV Band showing highway police stopping CACs with guns in their cars — which could be illegal, depending on the case.",
+      "page": null,
+      "paragraph": 44,
+      "body_start": 15892,
+      "body_end": 16337,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00045",
+      "text": "> In a case revealed by newspaper Folha de São Paulo, Pollon shows offering support to candidates in exchange of jobs in the National Congress. He says: “We ask every candidate for their cabinet legal team since we want to conduct the gun discussion in the cabinet. So, law proposals, manifests, we want to do it.”",
+      "page": null,
+      "paragraph": 45,
+      "body_start": 16339,
+      "body_end": 16653,
+      "source_links": [
+        "https://www1.folha.uol.com.br/cotidiano/2022/06/grupo-armamentista-oferece-apoio-a-candidatos-em-troca-de-cargos-no-congresso.shtml"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00046",
+      "text": "GV: The Supreme Court (STF, in Portuguese) has been taking measures trying to put breaks in some of these changes, but can they have any real effect at this point?",
+      "page": null,
+      "paragraph": 46,
+      "body_start": 16655,
+      "body_end": 16818,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00047",
+      "text": "> CO: As medidas tomadas pelo STF foram importantes – embora demasiadamente tardias – mas elas sozinhas não resolvem um problema que é profundo e até difícil de mensurar, uma vez que não temos dados de qualidade sobre as vendas e circulação de armas no país. O próprio Exército – entidade fiscalizadora – já disse não saber quantas, quais e onde estão as armas registradas desde 2019.",
+      "page": null,
+      "paragraph": 47,
+      "body_start": 16820,
+      "body_end": 17204,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00048",
+      "text": "> Este não é um problema que se resolve com eleição ou eventual revogação de decretos. As milhares de armas compradas já estão nas ruas e esse é o cenário com o qual vamos lidar nos próximos anos. Não existe clima político para uma eventual campanha do desarmamento e sequer há base política no congresso para efetuar mudanças. Gestores e legisladores precisam não apenas estudar o cenário político do momento, mas entender de estratégia e planejar ações futuras – o que é muito difícil quanto se pensa e se prospecta pensando na linha temporal de 4 em 4 anos. É preciso que as pessoas estejam comprometidas com políticas de estado, não de governo.",
+      "page": null,
+      "paragraph": 48,
+      "body_start": 17206,
+      "body_end": 17854,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00049",
+      "text": "> CO: The measures taken by the Supreme Court were important — even though unduly late — but by themselves they do not a problem that goes deep and it's even hard to measure, once we do not have all the quality data over sells and gun circulation in the country. The Army itself, which is the supervision organ, has already said they do not know how many, which type and where are all the guns registered since 2019.",
+      "page": null,
+      "paragraph": 49,
+      "body_start": 17856,
+      "body_end": 18272,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00050",
+      "text": "> This is not a problem to be solved with elections or an eventual revocation of decrees. The thousands of guns already bought are already in the streets and this is the scenario we will have to deal with in the years to come. There is no political climate for a disarmament campaign or political support in the Congress to carry out changes. Managers and legislators need not only study the current political scenario, but to understand strategy and plan future actions — which is really hard when one thinks and prospects projecting a timeline of four in four years. It's necessary that people are committed to State policies, not government ones.",
+      "page": null,
+      "paragraph": 50,
+      "body_start": 18274,
+      "body_end": 18923,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00051",
+      "text": "GV: How do you read all this context — increasing armed civilians, in the middle of a hate political speech and the discredited over the electoral system by Bolsonaro — for the current time in Brazil?",
+      "page": null,
+      "paragraph": 51,
+      "body_start": 18925,
+      "body_end": 19125,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772112-b00052",
+      "text": "> CO: O acesso a armas foi ampliado e os mecanismos de controle não acompanharam esse crescimento rápido de armas nas mãos de civis. Hoje há mais CACs armados no Brasil do que militares – e o Exército não sabe exatamente onde estão e quais são estas armas. Na prática, isso significa que investigar crimes cometidos com arma de fogo, desvios, roubos, extravios, é mais difícil. E já não era simples antes. Os índices de elucidação de crimes no Brasil são irrisórios, mesmo sabendo haver em média entre 40 e 50 mil homicídios por ano no país e que 70% deles são cometidos com armas de fogo.",
+      "page": null,
+      "paragraph": 52,
+      "body_start": 19127,
+      "body_end": 19716,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00053",
+      "text": "> Os discursos de ódio tem incentivado pessoas desequilibradas a resolverem desentendimentos ou conflitos, com armas. Já vimos casos de pessoas que foram cobrar atraso na entrega de pizzas ameaçando funcionários da loja, um jovem baleado devido a um cupom de desconto de um sanduíche e afins. Mas também temos visto casos de crimes cometidos contra opositores políticos, como um fiel baleado dentro de uma igreja por um bolsonarista, em Goiás.",
+      "page": null,
+      "paragraph": 53,
+      "body_start": 19718,
+      "body_end": 20161,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00054",
+      "text": "> E isso poderia ter sido ainda pior. Houve uma tentativa do governo federal, travada pelo Conselho Federal de Psicologia, de estender a validade da avaliação psicológica do cidadão que possui uma arma, de 5 para dez anos. O CFP disse que a avaliação psicológica é uma ferramenta para avaliar a aptidão das pessoas que querem ter armas e que como as condições psicológicas das pessoas mudam, o período de uma década não é uma decisão acertada quando o intuito é proteger a sociedade.",
+      "page": null,
+      "paragraph": 54,
+      "body_start": 20163,
+      "body_end": 20646,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00055",
+      "text": "> CO: The access to guns was expanded and control mechanisms did not follow the growth pace of guns in the hands of civilians. Today there are more civilians armed in Brazilian than military — and the Army doesn't know where these guns are or their type. In practice, it means that investigating crimes committed with fireguns, deviations, robberies, misplacements, it's much harder. And it wasn't simple at all before. The rates of crime resolution in Brazil are derisive, even though there are an annual average between 40 and 50,000 homicides, with 70 percent of them using guns as crime weapon.",
+      "page": null,
+      "paragraph": 55,
+      "body_start": 20648,
+      "body_end": 21246,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00056",
+      "text": "> The hate speeches have been encouraging unbalanced people to solve misunderstandings and conflicts with guns. We've already seen cases of people going to ask about a delay in pizza delivery and threatening the shop employees, a young man shot because of sandwich cupom and so on. But there are also crimes committed against political opponents, like the man shot inside of a church (after declaring support to Lula) by a bolsonarista in Goiás.",
+      "page": null,
+      "paragraph": 56,
+      "body_start": 21248,
+      "body_end": 21693,
+      "source_links": [
+        "https://g1.globo.com/go/goias/noticia/2022/09/17/fiel-diz-que-nao-conseguiu-voltar-a-andar-apos-ser-baleado-por-pm-em-igreja-por-causa-de-preferencias-politicas-nao-tenho-rancor.ghtml"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772112-b00057",
+      "text": "> And it could be a lot worse. There has been an attempt from the federal government, stopped by the Federal Psychology Council, to extend the due date of the psychological evaluation of the citizen who carries a gun, from 5 to 10 years. The Council said that this evaluation is a tool to analyze the aptitude of those who want to own guns and that psychological conditions change over the years, hence the time frame of a decade it's not adequate when the idea is to protect society.",
+      "page": null,
+      "paragraph": 57,
+      "body_start": 21695,
+      "body_end": 22179,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "ad60e2493650cc182553c502fcf3ac4a1bbfe672d9450ba7e90d2e3e1751ba6e",
+  "word_count": 3752,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 22179,
+  "retrieved_at": "2026-11-16T22:36:51.677334+00:00",
+  "raw_html_sha256": "29fdff4767042e0b118ee559d4b73f12985c5004ed2fbca00fcc2986bb815a5a",
+  "resolved_source_url": "https://globalvoices.org/2022/10/23/more-guns-fewer-control-mechanisms-brazilian-journalist-analyzes-bolsonaros-gun-policy/",
+  "canonical_url": "https://globalvoices.org/2022/10/23/more-guns-fewer-control-mechanisms-brazilian-journalist-analyzes-bolsonaros-gun-policy/",
+  "source_bytes": 206009,
+  "authors": [
+    {
+      "name": "Fernanda Canofre",
+      "url": "https://globalvoices.org/author/fernanda-canofre/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 772112,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "29fdff4767042e0b118ee559d4b73f12985c5004ed2fbca00fcc2986bb815a5a",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-da92f0542e06f3ef06da",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-10",
+    "eligible_month_documents": 80,
+    "selected_month_documents": 67,
+    "inclusion_probability": 0.8375,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Fernanda Canofre",
+  "body_start": 515,
+  "body_end": 22694,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "377573c892a1ccea02ec73f9b209d470a42309170c71d6c75436716b7b57169a",
+  "text_path": "articles/gv-772112.txt",
+  "metadata_path": "metadata/gv-772112.json",
+  "attribution": "This story by Fernanda Canofre originally appeared on Global Voices. https://globalvoices.org/2022/10/23/more-guns-fewer-control-mechanisms-brazilian-journalist-analyzes-bolsonaros-gun-policy/",
+  "content_sha256": "3c84e271db73ff180a34136b84a5218a2cd0732abc33dac2e6849cc64d6309c9",
+  "source_sha256": "29fdff4767042e0b118ee559d4b73f12985c5004ed2fbca00fcc2986bb815a5a",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

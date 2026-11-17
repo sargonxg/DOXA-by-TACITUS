@@ -1,0 +1,274 @@
+{
+  "id": "gv-734111",
+  "publisher_id": 734111,
+  "source_id": "globalvoices:734111",
+  "source_url": "https://globalvoices.org/2021/04/20/european-court-backs-ukrainian-journalists-right-to-phone-data-privacy-from-the-state/",
+  "title": "European Court backs Ukrainian journalist's right to phone data privacy from the state",
+  "published_at": "2021-04-20T15:27:56Z",
+  "modified_at": "2021-04-21T14:14:26Z",
+  "api_author_id": 1498,
+  "api_content_sha256": "c9573e1d6fcaaf63270520ef876b8f7ce6246f1ef867240669f1a0bc7410defa",
+  "api_response_sha256": "506e05e61c46f4f3ce486e5d993814d3316963822f8371957c67dd69aa686ddd",
+  "api_retrieved_at": "2026-11-16T22:20:34.467848+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 345,
+      "count": 344,
+      "name": "Ukrainian",
+      "slug": "ukrainian",
+      "parent": 317
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-734111-b00001",
+      "text": "The European Court of Human Rights has ruled in favour of a Ukrainian investigative journalist who has been fighting to protect her smartphone data from government officials and law enforcement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 194,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734111-b00002",
+      "text": "Natalia Sedletska, an investigative journalist with RFE/RL Ukrainian Service and host of the investigative TV programme Schemes: Corruption in Detail (Схеми: Корупція в деталях), has been waging a three-year battle to safeguard her phone records from being seized by Ukrainian prosecutors, who are investigating a leak of state secrets that took place almost four years ago.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 196,
+      "body_end": 570,
+      "source_links": [
+        "https://www.radiosvoboda.org/skhemy"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734111-b00003",
+      "text": "The ECHR concluded that Sedletska's data should be protected from government access under Article 10 of the Convention for the Protection of Human Rights and Fundamental Freedoms. It also stressed the importance of protecting journalists’ sources for a functioning free press:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 572,
+      "body_end": 848,
+      "source_links": [
+        "http://hudoc.echr.coe.int/eng?i=001-208882"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734111-b00004",
+      "text": "> [T]he court is not convinced that the data access authorisation given by the domestic courts was justified by an ‘overriding requirement in the public interest’ and, therefore, necessary in a democratic society.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 850,
+      "body_end": 1063,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-734111-b00005",
+      "text": "The April 1 ECHR ruling reaffirms its initial October 2018 ban on government access to Sedletska's data, after a Ukrainian court ruled investigators had the right to access and review data on her phone during a period of 17 months. The ruling stemmed from an earlier criminal investigation into the alleged disclosure of state secrets to journalists in 2017 by Artem Sytnyk, director of the National Anticorruption Bureau of Ukraine. During the period in question, Schemes had reported on several investigations involving senior Ukrainian officials, including Prosecutor General Yury Lutsenko.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1065,
+      "body_end": 1658,
+      "source_links": [
+        "http://hudoc.echr.coe.int/eng?i=001-208882",
+        "https://pressroom.rferl.org/a/echr-extends-ban-on-ukrainian-government-access-to-rferl-journalists-data-sedletska/29553352.html",
+        "https://www.occrp.org/en/daily/8558-ukraine-court-gives-prosecutors-access-to-reporter-s-phone"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734111-b00006",
+      "text": "Sedletska's employer, Radio Free Europe/Radio Liberty, welcomed the ECHR ruling, saying it offers the necessary protections for “the confidentiality of journalistic communications and sets limits for executive power”.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1660,
+      "body_end": 1877,
+      "source_links": [
+        "https://pressroom.rferl.org/a/rferl-welcomes-echr-ruling-sedletska-cellphone-data/31182032.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734111-b00007",
+      "text": "Experts from the Regional Press Development Institute, a Ukrainian media rights organisation, said the ECHR decision to protect Sedletska's privacy sets “a precedent not just for Ukraine, but for ECHR practice overall” and would be invaluable to other journalists whose sources and data could come under threat.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1879,
+      "body_end": 2190,
+      "source_links": [
+        "https://twitter.com/cxemu/status/1377648836882141187?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734111-b00008",
+      "text": "Sedletska is a veteran journalist who has co-authored multiple exposés on high-level political corruption and abuse of public office in Ukraine, as well as international money laundering schemes. Most recently producing and hosting Schemes, a joint production of RFE/RL’s Ukrainian Service and Ukrainian Public Television, she has also contributed to projects such as YanukovychLeaks and From Russia with Cash, a UK Channel 4 investigative documentary on how dirty money from Russia and elsewhere is laundered through London's high-end real estate market.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2192,
+      "body_end": 2747,
+      "source_links": [
+        "https://globalvoices.org/2014/03/02/ukrainian-journalists-take-regimes-corruption-public-with-yanukovychleaks/",
+        "https://globalvoices.org/2015/07/21/laundering-russian-money-in-london-undercover-reporters-show-you-how-its-done/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "f9302a183897c7ee88736120bc86ea3e7ea126327d59b42a7d7d899864a89e4d",
+  "word_count": 406,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 2747,
+  "retrieved_at": "2026-11-16T22:30:12.453160+00:00",
+  "raw_html_sha256": "7993e66c1a54762ebaf50e28ab10e951cc6e7d89896a79d250b13e01972d8fd0",
+  "resolved_source_url": "https://globalvoices.org/2021/04/20/european-court-backs-ukrainian-journalists-right-to-phone-data-privacy-from-the-state/",
+  "canonical_url": "https://globalvoices.org/2021/04/20/european-court-backs-ukrainian-journalists-right-to-phone-data-privacy-from-the-state/",
+  "source_bytes": 186878,
+  "authors": [
+    {
+      "name": "Tanya Lokot",
+      "url": "https://globalvoices.org/author/tetyana-lokot/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 734111,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "7993e66c1a54762ebaf50e28ab10e951cc6e7d89896a79d250b13e01972d8fd0",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-ae0f75caef7a860094ab",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-04",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Tanya Lokot",
+  "body_start": 506,
+  "body_end": 3253,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b29536b45967444f075af7a0339ddb3ab314cdbb970618adbff77fe31e9b4b40",
+  "text_path": "articles/gv-734111.txt",
+  "metadata_path": "metadata/gv-734111.json",
+  "attribution": "This story by Tanya Lokot originally appeared on Global Voices. https://globalvoices.org/2021/04/20/european-court-backs-ukrainian-journalists-right-to-phone-data-privacy-from-the-state/",
+  "content_sha256": "d698bd3c8b46dd5042185b9140df79ebb36361902a804a25606712137ef85a5c",
+  "source_sha256": "7993e66c1a54762ebaf50e28ab10e951cc6e7d89896a79d250b13e01972d8fd0",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

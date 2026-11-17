@@ -1,0 +1,388 @@
+{
+  "id": "gv-727711",
+  "publisher_id": 727711,
+  "source_id": "globalvoices:727711",
+  "source_url": "https://globalvoices.org/2021/02/04/hungarys-new-health-care-law-could-upset-expectant-mothers-birth-plans/",
+  "title": "Hungary's new health care law could upset expectant mothers’ birth plans",
+  "published_at": "2021-02-04T16:11:53Z",
+  "modified_at": "2021-02-16T18:25:59Z",
+  "api_author_id": 2819,
+  "api_content_sha256": "5d04bb074d8ace939fc18a3352acabb98b16b07f1bf85b90f3e06792422e9cc3",
+  "api_response_sha256": "4b8a365e82fe2773a09c5a0e8bd4a9b7aa40c63d55bed83d1fb049dae4c0bf4c",
+  "api_retrieved_at": "2026-11-16T22:20:32.142391+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 797,
+      "count": 108,
+      "name": "Hungarian",
+      "slug": "hungarian",
+      "parent": 317
+    },
+    {
+      "id": 65,
+      "count": 729,
+      "name": "Hungary",
+      "slug": "hungary",
+      "parent": 57
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1361,
+      "count": 6433,
+      "name": "Women &amp; Gender",
+      "slug": "women-gender",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-727711-b00001",
+      "text": "A new health care law in Hungary that aims to increase the salaries of medical professionals and curb corruption in the sector could end up limiting expectant mothers’ freedom to choose their obstetricians.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 206,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00002",
+      "text": "The new law, approved by the Hungarian Parliament in October 2020, provides a long-overdue increase on the salaries of public health care employees, while also laying down new rules for those who work in both the private and the public sectors.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 208,
+      "body_end": 452,
+      "source_links": [
+        "https://www.reuters.com/article/us-health-coronavirus-hungary-healthcare/hungary-pm-agrees-on-big-wage-hike-for-doctors-as-covid-19-cases-rise-idINKBN26O0P5"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00003",
+      "text": "Most notably, the law prohibits the widespread practice of patients providing doctors and nurses with gratuities, known in Hungary as “parasolvency” and considered a form of corruption. Patients are expected to give health professionals extra money or expensive gifts in exchange for skipping waiting lists or getting better care at the state-funded health system.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 454,
+      "body_end": 818,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00004",
+      "text": "The new law punishes workers who accept money or gifts from patients with 5 to 10 years in prison. The wage hike is also aimed at discouraging the practice.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 820,
+      "body_end": 976,
+      "source_links": [
+        "https://hvg.hu/360/20210125_halapenz_buncselekmeny_nemzeti_vedelmi_szolgalat_megbizhatosagi_vizsgalat"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00005",
+      "text": "The statute also bans doctors who work in the public sector from holding a second job in private clinics unless they obtain permission from the relevant authorities. It also prohibits patients that are consulting with a doctor in the private sector from seeing that same doctor at a public hospital for treatment of the same issue.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 978,
+      "body_end": 1309,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00006",
+      "text": "One inadvertent consequence of the new arrangements is that expectant mothers will become unable to choose their obstetricians. In Hungary, it is customary for women to go through prenatal care in a private clinic and have the same doctor deliver the baby in their state-funded place of employment. The reason for this is to circumvent the high costs of a private childbirth, although patients still usually give those doctors gifts or extra money.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1311,
+      "body_end": 1759,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00007",
+      "text": "With the new law, mothers who choose to deliver their babies in the public sector will be cared for by the doctor on duty, regardless of whether they have a personal relationship with them.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1761,
+      "body_end": 1950,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00008",
+      "text": "In European nations that have public health care systems, such as the UK, the Netherlands, and Sweden, patients generally can only see a specialist after they are referred by a general practitioner, but expectant mothers are allowed to self-refer to their obstetrician of choice.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1952,
+      "body_end": 2231,
+      "source_links": [
+        "https://access-nl.org/healthcare-netherlands/dutch-healthcare-system",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2233970",
+        "https://www.thelocal.se/20170914/a-beginners-guide-to-healthcare-in-sweden-cignaglobal-tlccu "
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00009",
+      "text": "Speaking with the government-friendly station Kossuth Radio, Health Minister Miklós Kásler admitted that “the separation of the public and private spheres does require more detailed regulation,” while also assuring listeners that the Ministry has been in close consultation with the Hungarian Medical Chamber and health trade unions.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2233,
+      "body_end": 2566,
+      "source_links": [
+        "https://www.origo.hu/itthon/20201007-kasler-miklos-az-allami-es-a-maganpraxis-szetvalasztasa-tovabbi-jogalkotast-igenyel.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00010",
+      "text": "The Chamber, however, has already declared it disagrees with opening exceptions, claiming they could open a loophole through which parasolvency would persist. Meanwhile, trade unions in the health sector have issued a statement describing the bill as “unconstitutional” because it limits workers’ freedom of employment.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2568,
+      "body_end": 2887,
+      "source_links": [
+        "https://dailynewshungary.com/news_to_go/unions-do-not-accept-the-governments-new-health-care-employment-law/",
+        "https://mok.hu/hirek/mokhirek/most-akkor-mi-van-az-egeszsegugyi-szolgalati-jogviszonyrol-szolo-torvennyel"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00011",
+      "text": "While the pay raise came into effect on January 1, the rest of the rules outlined in the law will only come into force in March.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2889,
+      "body_end": 3017,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00012",
+      "text": "In an in-person interview with Global Voices, doctor and medical law specialist, and legal advisor to one of Hungary’s largest private health service providers, Dr. Agnes Ruzsovics explained what the new regulation means for patients:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3019,
+      "body_end": 3253,
+      "source_links": [
+        "https://www.linkedin.com/in/%C3%A1gnes-judit-ruzsovics-md-phd-jd-998538a9/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00013",
+      "text": "> Fighting against the practice of parasolvency is a great initiative, even from a doctor’s perspective, but this arrangement is making it practically impossible to choose the obstetrician you want to deliver your baby.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3255,
+      "body_end": 3474,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-727711-b00014",
+      "text": "> While the initial text claimed there might be some exceptions, government officials have yet to elaborate [on them], even though the statute enters into force in a month. As it currently stands, expectant mothers will likely not be able to have the obstetrician they chose and trust to deliver their babies after March 1, but they don’t know for sure. Doctors cannot answer their questions as they have no information either. The fact that they went through the journey of pre-natal care with a doctor and then can’t have them deliver their child, combined with mood swings resulting from pregnancy, and the added pressure of the pandemic situation, can be extremely hard on expectant women.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3476,
+      "body_end": 4169,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-727711-b00015",
+      "text": "With the lack of legal clarity, one hospital attempted to fill the gaps by issuing their own guidelines prohibiting exceptant mothers to deliver with the obstetrician of their choice in the transition period leading up to March 1.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4171,
+      "body_end": 4401,
+      "source_links": [
+        "https://www.facebook.com/noiklinika/posts/468981761172892"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00016",
+      "text": "The hospital's decision was met with confusion and outrage by patients, who opened a petition demanding the repeal of the new rules.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4403,
+      "body_end": 4535,
+      "source_links": [
+        "https://www.peticiok.com/szabad_orvosvalasztast_kerunka_szuleszetben"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00017",
+      "text": "In a reaction to the hospital’s guidelines, the Ministry of Human Resources issued a statement saying that “limiting the freedom of choice using the fight against parasolvency as an excuse is unacceptable.“ Paradoxically, the provisions lawmakers have included in the new law might end up producing the same results.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4537,
+      "body_end": 4853,
+      "source_links": [
+        "https://hvg.hu/itthon/20210109_Nem_korlatozhato_a_szabad_orvosvalasztas_alapjoga__allitja_az_EMMI"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00018",
+      "text": "As decrees regulating the new law are still in the works, many doctors are uncertain whether to sign this year's employment contracts.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4855,
+      "body_end": 4989,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00019",
+      "text": "In a January 21 letter to National Hospital Director Zoltán Jenei, the Hungarian Medical Chamber issued a list of requests by health professionals including more information on the rules governing paid overtime and time-off requests and how to obtain permission to work outside of the public health system.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4991,
+      "body_end": 5297,
+      "source_links": [
+        "https://mok.hu/public/media/source/Transzparencia/Allasfoglalasok/Jenei_Zolt%C3%A1n_Eszjtv_k%C3%A9rd%C3%A9sek.pdf?fbclid=IwAR3F4OjI2K03pONqvZ2aPI6n6GnCDi_eSN-4DrPSwmPeyJHVPh0tWr0Hckk"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727711-b00020",
+      "text": "As the February 28 deadline looms, government officials have yet to answer the letter, issue a statement, or define special rules on obstetrics and childbirth.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5299,
+      "body_end": 5458,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "35b32e0055d7560d43c5d67701c1beffc4edba585c6fa2587287a9e58522c143",
+  "word_count": 871,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 5458,
+  "retrieved_at": "2026-11-16T22:29:24.313283+00:00",
+  "raw_html_sha256": "f01ddfbebff25577073b6d8e617e0e494ae8b625efdce6d267849cddfd5fbd4b",
+  "resolved_source_url": "https://globalvoices.org/2021/02/04/hungarys-new-health-care-law-could-upset-expectant-mothers-birth-plans/",
+  "canonical_url": "https://globalvoices.org/2021/02/04/hungarys-new-health-care-law-could-upset-expectant-mothers-birth-plans/",
+  "source_bytes": 187505,
+  "authors": [
+    {
+      "name": "Bianka Koka",
+      "url": "https://globalvoices.org/author/koka-bianka/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 727711,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "f01ddfbebff25577073b6d8e617e0e494ae8b625efdce6d267849cddfd5fbd4b",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-3cd8aafb4759f023d3d4",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-02",
+    "eligible_month_documents": 78,
+    "selected_month_documents": 65,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Bianka Koka",
+  "body_start": 477,
+  "body_end": 5935,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "e9041454a96ed9d56ee8446b38e61db08b5533c89693ccdbb56471c4617a88e3",
+  "text_path": "articles/gv-727711.txt",
+  "metadata_path": "metadata/gv-727711.json",
+  "attribution": "This story by Bianka Koka originally appeared on Global Voices. https://globalvoices.org/2021/02/04/hungarys-new-health-care-law-could-upset-expectant-mothers-birth-plans/",
+  "content_sha256": "6320d5ec90e20300d7b96ee96cd17c20fdb8645eeaab133c228894319e082a3c",
+  "source_sha256": "f01ddfbebff25577073b6d8e617e0e494ae8b625efdce6d267849cddfd5fbd4b",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

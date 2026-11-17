@@ -1,0 +1,513 @@
+{
+  "id": "gv-795391",
+  "publisher_id": 795391,
+  "source_id": "globalvoices:795391",
+  "source_url": "https://globalvoices.org/2023/08/23/china-is-on-the-precipice-of-its-own-major-financial-crisis/",
+  "title": "China is on the precipice of its own major financial crisis",
+  "published_at": "2023-08-23T02:43:02Z",
+  "modified_at": "2023-08-24T08:09:23Z",
+  "api_author_id": 254,
+  "api_content_sha256": "552b1a5deb3ae76f61e65feb83c0370f784283a07e25283ba1acb1e81d5157fb",
+  "api_response_sha256": "720e1cc24fceb61ac2058e0992546d10a3f36e625e90946e9d920fbd119a3ac2",
+  "api_retrieved_at": "2026-11-16T22:20:55.523452+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-795391-b00001",
+      "text": "China’s largest property developer, Evergrande, filed for bankruptcy protection in New York last week on August 18 as it has over USD 300 billion in liabilities while its property business suffered a USD 80 billion loss over the past two years.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 244,
+      "source_links": [
+        "https://www.reuters.com/world/china/china-evergrande-files-protection-us-court-part-32-bln-debt-overhaul-2023-08-18/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00002",
+      "text": "Many are worried the collapse of the property giant will trigger a domino effect that extends the crisis from China's property to the finance sector.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 246,
+      "body_end": 395,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00003",
+      "text": "Evergrande is the first Chinese developer to face a liquidity crisis. In December 2021, its credit rating was downgraded to “restricted default” after it missed two offshore bond payments in December 2021. After Evergrande, a dozen big property developers, including Sunac China Holding, Shimao Group, R&F Properties, Kaisa Group, Baoneng Group, Country Garden, as well as state-owned Greenland Holdings and Sino-Ocean Group, have faced debt issues.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 397,
+      "body_end": 846,
+      "source_links": [
+        "https://clb.org.hk/en/content/after-evergrande-baoneng-group%E2%80%99s-collapse-threatens-livelihoods-china%E2%80%99s-workforce",
+        "https://www.forbes.com/sites/siladityaray/2021/12/09/chinas-evergrande-downgraded-by-ratings-agency-after-defaulting-on-debt/",
+        "https://www.marketscreener.com/quote/stock/SINO-OCEAN-GROUP-HOLDING-1412649/news/China-state-backed-developers-Greenland-Sino-Ocean-in-debt-payment-trouble-44366030/",
+        "https://www.reuters.com/world/china/shares-china-developer-sunac-plunge-38-trade-resumes-2023-04-13/",
+        "https://www.scmp.com/business/article/3215016/indebted-chinese-developer-shimao-group-sell-hong-kong-airport-area-sheraton-hotel-property-us828",
+        "https://www.scmp.com/business/article/3227160/chinese-developer-kaisa-group-faces-winding-petition-singapore-hedge-fund-yuan-bond-payment-miss",
+        "https://www.theguardian.com/world/2023/aug/18/china-property-crisis-deepens-as-developer-country-garden-at-risk-of-default-evergrande",
+        "https://www.yicaiglobal.com/news/chinas-rf-properties-sinks-after-being-ordered-to-repay-cny12-billion-debt"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00004",
+      "text": "Since many of these indebted developers raised their funds through wealth management products (WMPs) from investment groups, their liquidity crisis has extended to the finance sector. Zhongrong, a subsidiary of Zhongzhi Enterprise Group, one of China’s largest investment trusts, reportedly has had clients miss due payments for at least 22 products.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 848,
+      "body_end": 1198,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Wealth_management_product",
+        "https://www.finews.asia/finance/39889-zhongrong-investors-send-complaints-to-authorities"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00005",
+      "text": "On Twitter, many described the crisis as China's “Lehman moment” — the high-profile bankruptcy of the US financial firm in 2008 that was the catalyst for the 2008 recession — and several news outlets, including the Wall Street Journal, have echoed the sentiment. Yet, as pointed out by Zhang Taisu, a professor of Chinese law and politics, the comparison is not fully accurate:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1200,
+      "body_end": 1577,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers",
+        "https://www.wsj.com/finance/investing/investors-fear-chinas-lehman-moment-is-looming-4364855d"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00006",
+      "text": "Deflating the property bubble",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1579,
+      "body_end": 1608,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00007",
+      "text": "Indeed, the current crisis, to a certain extent, is the result of China’s property bubble-deflating policy introduced in 2016, which was implemented after Chinese President Xi Jinping included “housing is for living, not for speculation” in his report in the 19th Chinese Communist Party Congress.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1610,
+      "body_end": 1907,
+      "source_links": [
+        "https://www.scmp.com/business/article/2116621/what-president-xis-congress-message-means-chinas-housing-market",
+        "https://www.theguardian.com/world/2021/nov/05/speculation-nation-can-xi-jinpings-property-tax-deflate-chinas-housing-bubble"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00008",
+      "text": "Xi’s policy won popular support because home prices were becoming unaffordable as the Chinese property market had evolved into a speculator market after the 2008 financial crisis. The government had been boosting financing for developmental projects in economic growth. Within ten years, from 2008–2018, the volume of residential units in the market had surged, but the percentage of first-time home buyers dropped from 70 percent to 11.5 percent.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1909,
+      "body_end": 2356,
+      "source_links": [
+        "https://www.theguardian.com/world/2021/nov/05/speculation-nation-can-xi-jinpings-property-tax-deflate-chinas-housing-bubble"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00009",
+      "text": "In order to restructure the property market, the central government imposed purchase restrictions in first and second-tier cities to prohibit resident households from buying more than two homes and restrict state-owned banks from financing new projects. As a result, developers turned to investment funds and buyers to finance their projects by purchasing future residential units in advance.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2358,
+      "body_end": 2750,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00010",
+      "text": "However, the three years of pandemic lockdown delayed the projects and increased the cost of construction. A large number of property development projects were unfinished. In 2022, about 3.8 percent of apartments — equivalent to 225 million square meters of housing — remained unfinished, according to one estimate. Evergrande, for example, was responsible for 1,620,000 unfinished residential units before it filed for bankruptcy protection in New York. As for Country Garden, the developer has more than 3,000 property construction projects across the country, and it has already pre-sold over 650,000 apartment units.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2752,
+      "body_end": 3372,
+      "source_links": [
+        "https://www.163.com/dy/article/IAE09DRU05562SWQ.html",
+        "https://www.etnet.com.hk/mobile/tc/news/topic_news_detail.php",
+        "https://www.reuters.com/markets/asia/china-home-buyers-occupy-their-rotting-unfinished-properties-2022-09-26/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00011",
+      "text": "After Evergrande’s liquidity issues emerged in 2021, the Chinese government issued a special loan and relaxed the financing of unfinished projects, yet buyers have lost their confidence in the housing market, and developers are short on cash to pay back their debts.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3374,
+      "body_end": 3640,
+      "source_links": [
+        "https://asia.nikkei.com/Spotlight/Caixin/China-to-issue-29bn-of-special-loans-to-finish-housing-projects"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00012",
+      "text": "Evergrande’s bankruptcy has set the alarm off not just for the property development sector but also for the country’s USD 2.9 trillion trust industry, which often acts as a shadow bank for financing development projects. If the developers fail to pay their debts, the investment funds cannot cash out on their investments.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3642,
+      "body_end": 3964,
+      "source_links": [
+        "https://www.scmp.com/business/china-business/article/3231414/zhongzhi-chinas-troubled-us137-billion-shadow-bank-plans-debt-restructuring-hires-kpmg"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00013",
+      "text": "China’s economy relies heavily on property development projects, as the sector and related businesses constitute 30 percent of the country’s GDP. In addition, about 30–40 percent of the local government’s revenue is generated from land sales to property developers who obtain their capital from state banks and investment funds and pay their debts by selling apartments for home buyers, as highlighted by Asia Business reporter Rebecca Choong:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3966,
+      "body_end": 4409,
+      "source_links": [
+        "https://edition.cnn.com/2023/08/01/economy/china-real-estate-country-garden-intl-hnk/index.html",
+        "https://www.piie.com/research/piie-charts/local-governments-china-rely-heavily-land-revenue"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00014",
+      "text": "Amid the extensive economic crisis, many from the property and finance sector urged the government to save the property market. For example, Kevin in New York, a finance blogger on Weibo, said:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4411,
+      "body_end": 4604,
+      "source_links": [
+        "https://weibo.com/6479869715/Nfw4pqpQA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00015",
+      "text": "> 不管效果如何，房地产还是会想办法救，能拉动经济先不说，普通民众80%的资产都在房子上，房价腰斩就是家庭财富腰斩，影响稳定。 ​​​",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4606,
+      "body_end": 4673,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00016",
+      "text": "> It is necessary to save the property market by all means. Aside from stimulating the economy, for ordinary people, about 80 percent of their assets come from their property; if the price is cut by half, the family wealth will also be down by half. This is bad news for stability.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4675,
+      "body_end": 4956,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00017",
+      "text": "However the blogger's followers are quite pessimistic about government intervention:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4958,
+      "body_end": 5042,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00018",
+      "text": "> 如果什么都能救，就不会有经济危机了，市场的力量是很恐怖了",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5044,
+      "body_end": 5074,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00019",
+      "text": "> There won’t be an economic crisis if you can save it. The power of the market is horrific.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5076,
+      "body_end": 5168,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00020",
+      "text": "> 政策左右摇摆，经济转型失败，国民信心不足，国内房地产是救不起来了",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5170,
+      "body_end": 5204,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00021",
+      "text": "> The policy keeps swinging from left to right, the economic restructuring goal has failed, people have lost their confidence, and there is no way to save the property market.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5206,
+      "body_end": 5381,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00022",
+      "text": "Some also pointed out that the current liquidity crisis will snowball due to the ongoing trust crisis within the Chinese political-economic system. Ma Taili, an IT blogger, highlighted the trust issue on Weibo:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5383,
+      "body_end": 5593,
+      "source_links": [
+        "https://weibo.com/1232724472/NfE7aoqle"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-795391-b00023",
+      "text": "> 当爆雷形成常态，信任就会崩塌。",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5595,
+      "body_end": 5612,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00024",
+      "text": "> 如今当下可是非常严重的信任危机。",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5614,
+      "body_end": 5632,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00025",
+      "text": "> 前几年成千上万家p2p爆雷，据悉殃及到了3.2亿普通老百姓！直到现在也没处置好。去年河南村镇银行爆雷，还给去要钱的众多储户赋了红码。就是不想还钱！",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5634,
+      "body_end": 5709,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00026",
+      "text": "> 如今中植系爆雷，收割的不是韭菜而是韭菜花，涉及到15万高净值富人，这是信任上升到危机的程度，不仅影响了富人的理财观，还让众多老百姓的观念也受到巨大冲击。",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5711,
+      "body_end": 5789,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00027",
+      "text": "> 钱可以没有，但信任一旦崩塌了，一切都晚了。",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5791,
+      "body_end": 5814,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00028",
+      "text": "> When corporate liquidation becomes daily news, people will lose their trust. We are in a trust crisis now. A few years back, thousands of P2P lending platforms collapsed, reportedly affecting 320 million people. Even now, their deposits in the platforms have not been returned. Last year, rural banks in Henan went through a debt crisis, and the authorities turned the bank clients’ health codes red to prevent them from getting their money back.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5816,
+      "body_end": 6264,
+      "source_links": [
+        "https://www.scmp.com/economy/china-economy/article/3115580/chinas-p2p-purge-leaves-millions-victims-out-cold-losses",
+        "https://www.sixthtone.com/news/1010547"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00029",
+      "text": "> Now that Zhongzhi faces a debt crisis, their clients are no ordinary chives but flowery chives [editor note: chives is a Chinese online meme for the grassroots] — the wealthy ones who can purchase a minimum of RMB 150,000 [about USD 20,646] in investment products. The news will affect the well-off trust in the investment sector, and their trust crisis will have an impact on ordinary people. We can lose money, but not trust.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6266,
+      "body_end": 6695,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-795391-b00030",
+      "text": "Indeed, as pointed out by economic analysts, the Country Garden’s debt crisis is caused by the erosion of confidence among the country’s homebuyers:",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6697,
+      "body_end": 6845,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "e66fd6ac8aa94106adbcf60c0a53326ee208dcc2e9b2b53898cc8d8d9d79933c",
+  "word_count": 1038,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 4,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6845,
+  "retrieved_at": "2026-11-16T22:40:28.460619+00:00",
+  "raw_html_sha256": "b0d8de8153264831113df67e0409288516183f98e18fe5d3fb5db2ece813c541",
+  "resolved_source_url": "https://globalvoices.org/2023/08/23/china-is-on-the-precipice-of-its-own-major-financial-crisis/",
+  "canonical_url": "https://globalvoices.org/2023/08/23/china-is-on-the-precipice-of-its-own-major-financial-crisis/",
+  "source_bytes": 193618,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 795391,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "b0d8de8153264831113df67e0409288516183f98e18fe5d3fb5db2ece813c541",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-6ed8505c83a4b9044663",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-08",
+    "eligible_month_documents": 88,
+    "selected_month_documents": 74,
+    "inclusion_probability": 0.8409090909090909,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Oiwan Lam",
+  "body_start": 451,
+  "body_end": 7296,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "8a2bc7913cd1d6b578d077df1dff81897b710f1856980c76ea5f636b8e00dcd8",
+  "text_path": "articles/gv-795391.txt",
+  "metadata_path": "metadata/gv-795391.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2023/08/23/china-is-on-the-precipice-of-its-own-major-financial-crisis/",
+  "content_sha256": "f1ae0bebbb36abc6ece1600e0ea8d7e845e2745104bac921b45fb68f5953c69f",
+  "source_sha256": "b0d8de8153264831113df67e0409288516183f98e18fe5d3fb5db2ece813c541",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

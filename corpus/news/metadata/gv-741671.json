@@ -1,0 +1,464 @@
+{
+  "id": "gv-741671",
+  "publisher_id": 741671,
+  "source_id": "globalvoices:741671",
+  "source_url": "https://globalvoices.org/2021/07/23/pegasus-spyware-revelation-indicates-indian-state-snooping-on-journalists-activists-and-politicians/",
+  "title": "Pegasus spyware revelation indicates Indian state snooping on journalists, activists and politicians",
+  "published_at": "2021-07-23T11:24:52Z",
+  "modified_at": "2021-07-23T11:28:23Z",
+  "api_author_id": 1571,
+  "api_content_sha256": "075aa5f07d17fe3b835e7d0b8948204c7c7d045a891c07c258e8c96798e909fe",
+  "api_response_sha256": "0d1a36035a88ee5b3f9fa91c4e2a7d7b5ec96f6dedf1bcb5a8f43e8f39bffdae",
+  "api_retrieved_at": "2026-11-16T22:20:36.847703+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 32,
+      "count": 3843,
+      "name": "India",
+      "slug": "india",
+      "parent": 31
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-741671-b00001",
+      "text": "The Pegasus Project, a collaboration of 17 media organisations, released a report on July 18 detailing the potential hacking and illegal surveillance of 50,000 phone numbers, mostly in countries with authoritarian regimes, through the use of the Israeli-made spyware Pegasus. The targets of this alleged espionage include human rights defenders, activists, journalists, politicians, high-ranking public officials and business people. Reportedly, more than 1,000 phone numbers from India are a part of this list.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 511,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Pegasus_(spyware)",
+        "https://en.wikipedia.org/wiki/Project_Pegasus_(investigation)",
+        "https://time.com/6081622/pegasus-iphone-spyware-hack/",
+        "https://www.aljazeera.com/news/2021/7/20/pegasus-project-india-modi-treason-spyware-snooping-scandal"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00002",
+      "text": "Pegasus users can access unencrypted content stored on a phone (messages, emails, photos, videos, etc.), record phone calls, track geo-locations and activate microphones and cameras without the user's authorization.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 513,
+      "body_end": 728,
+      "source_links": [
+        "https://www.theguardian.com/world/2021/jul/18/revealed-leak-uncovers-global-abuse-of-cyber-surveillance-weapon-nso-group-pegasus"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00003",
+      "text": "The leaked list of Pegasus targets includes two phone numbers of Rahul Gandhi, a member of the Indian Parliament and the former President of the Indian National Congress (INC), who was unsuccessful in his election campaign against the incumbent Indian Prime Minister Narendra Modi in 2019. The Guardian noted that the selection of Indian phone numbers coincided with Modi's 2017 visit to Israel that led to significant growth in the relationship between India and Israel. INC, the main opposition party in the Indian parliament, has accused Modi of ‘treason’ and compromising the country's national security.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 730,
+      "body_end": 1338,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Indian_National_Congress",
+        "https://www.aljazeera.com/news/2021/7/20/pegasus-project-india-modi-treason-spyware-snooping-scandal",
+        "https://www.theguardian.com/news/2021/jul/19/key-modi-rival-rahul-gandhi-among-indian-targets-of-nso-client"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00004",
+      "text": "Also included on this list is the phone number of former bureaucrat Ashok Lavasa, who was an election commissioner in 2019. As commissioner, he argued for imposing sanctions on Modi for his heated political speeches, which were linked to increased attacks on Indian Muslims.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1340,
+      "body_end": 1614,
+      "source_links": [
+        "https://english.mathrubhumi.com/news/india/rahul-gandhi-ranjan-gogoi-s-staff-ashok-lavasa-were-snooped-using-pegasus-reports-1.5841386",
+        "https://www.theguardian.com/news/2021/jul/19/key-modi-rival-rahul-gandhi-among-indian-targets-of-nso-client"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00005",
+      "text": "Ashwini Vaishnaw, India's Minister of Railways, Communications and Electronics and Information Technology and Prahlad Singh Patel, the Minister of State for Jal Shakti (the water ministry), are two recently sworn-in ministers whose numbers have also been found on the list. Incidentally, Vaishnaw's ministry oversees India's digital surveillance regulations.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1616,
+      "body_end": 1974,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Ashwini_Vaishnaw",
+        "https://thewire.in/politics/bjp-ministers-ashwini-vaishnaw-prahlad-patel-pegasus-spyware"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00006",
+      "text": "What is Pegasus?",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1976,
+      "body_end": 1992,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00007",
+      "text": "Pegasus is a type of spyware — a software that allows users to secretly gather and receive data in someone's phone, computer or electronic device — made by Israeli tech firm NSO Group.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1994,
+      "body_end": 2178,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/NSO_Group",
+        "https://en.wikipedia.org/wiki/Pegasus_(spyware)"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00008",
+      "text": "The Pegasus Project includes 80 journalists from 17 media organizations from 10 countries, with Paris-based media not-for-profit Forbidden Stories coordinating and the human rights not-for-profit Amnesty International overseeing forensic tests. Siddharth Varadarajan and M.K. Venu, the two founding editors of the Wire, an independent Indian media organisation that is assisting in the investigations, both had devices infected with Pegasus. One other editor from the Wire and three regular contributors also had their phone numbers on the list.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2180,
+      "body_end": 2725,
+      "source_links": [
+        "https://forbiddenstories.org/case/the-pegasus-project/",
+        "https://thewire.in/media/pegasus-project-spyware-indian-journalists",
+        "https://thewire.in/tag/pegasus-project"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00009",
+      "text": "Amnesty's Security Lab produced a detailed technical report after analyzing the leaked list. So far they have analysed 67 phones and found traces of Pegasus in 37 of them. Citizen Lab, an interdisciplinary research lab based at the University of Toronto, Canada has independently reviewed and approved Amnesty's forensic examination methods.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2727,
+      "body_end": 3068,
+      "source_links": [
+        "https://citizenlab.ca/2021/07/amnesty-peer-review/",
+        "https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/",
+        "https://www.occrp.org/en/the-pegasus-project/about-the-project"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00010",
+      "text": "While having a phone number on this list does not necessarily confirm that the phone has been infected with Pegasus, the users of these phones can theoretically be targetted by one of the NSO Group's clients. The Amnesty Security Lab has also published the Mobile Verification Toolkit (MVT), an open-source mobile forensic tool to simplify the process of gathering and analysing data from potentially compromised Android and iOS devices.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3070,
+      "body_end": 3507,
+      "source_links": [
+        "https://github.com/mvt-project/mvt"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00011",
+      "text": "The aftermath in India",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3509,
+      "body_end": 3531,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00012",
+      "text": "Reporters Without Border calls India ‘one of the world’s most dangerous countries for journalists trying to do their job properly’, while placing the country's Press Freedom Index at 140 out of 180 ranked countries. Journalists like Nitin Sethi cited conscious efforts to not report about the Pegasus Project in mainstream Indian media outlets.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3533,
+      "body_end": 3877,
+      "source_links": [
+        "https://rsf.org/en/india"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00013",
+      "text": "The range of potential Pegasus victims is huge. It includes political activists who have been accused of Maoist links who were arrested in 2018 to those who opposed the National Register of Citizens (NRC) and Citizenship Amendment Act (CAA). Eight of the arrested activists were arrested based on evidence planted on their devices before their arrests. Both CAA and NRC are controversial for their alleged role in the probable displacement of more than 1.9 million residents — mostly minority Muslims — in the state of Assam.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3879,
+      "body_end": 4404,
+      "source_links": [
+        "https://globalvoices.org/2019/09/05/millions-in-indias-north-eastern-assam-state-at-risk-of-losing-citizenship/",
+        "https://thewire.in/government/pegasus-project-assam-citizenship-amendment-act-samujjal-anup-chetia",
+        "https://www.thequint.com/news/india/pegasus-activists-journos-lawyers-accused-in-elgar-parishad-case-also-tagged",
+        "https://www.washingtonpost.com/world/2021/07/20/indian-activists-surveillance/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00014",
+      "text": "Media outlets that are critical of Modi's ruling Bharatiya Janata Party are seeing a retaliation in the form of tax raids. The noted Hindi-language newspaper Dainik Bhaskar was raided by tax officials on July 22. Dainik Bhaskar not only reported on Pegasus but has persistently questioned the government's choice to downplay COVID-19 related deaths.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4406,
+      "body_end": 4755,
+      "source_links": [
+        "https://www.washingtonpost.com/world/asia_pacific/india-modi-press-raid/2021/07/22/facbc01a-eabd-11eb-84a2-d93bc0b50294_story.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00015",
+      "text": "The Indian government has largely avoided addressing the issue, not confirming whether they purchased and or used Pegasus. An official response claimed that the recent report is based on conjecture:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4757,
+      "body_end": 4955,
+      "source_links": [
+        "https://timesofindia.indiatimes.com/india/full-text-governments-full-response-on-pegasus-row/articleshow/84531197.cms"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00016",
+      "text": "> The allegations regarding government surveillance on specific people has no concrete basis or truth associated with it whatsoever.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4957,
+      "body_end": 5089,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741671-b00017",
+      "text": "Speaking in Rajya Sabha (the upper house of the Indian parliament), Vaishnaw termed the media reports on the government's link to Pegasus a ‘sensational story’.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5091,
+      "body_end": 5251,
+      "source_links": [
+        "https://www.deccanherald.com/video/national/similar-claims-of-using-pegasus-on-whatsapp-were-denied-in-sc-says-it-minister-1011643.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00018",
+      "text": "Journalist Barkha Dutta commented on the situation through Twitter:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5253,
+      "body_end": 5320,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00019",
+      "text": "On July 22, 2021, public interest litigation was filed in the Indian supreme court, seeking a court-monitored probe by a Special Investigation Team into the reports about Pegasus’ intrusion in India.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5322,
+      "body_end": 5521,
+      "source_links": [
+        "https://www.livelaw.in/top-stories/pil-filed-in-supreme-court-seeking-court-monitored-sit-probe-into-pegasus-snooping-allegations-177919"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00020",
+      "text": "Hacking devices for surveillance remains illegal in India. Other forms of interception and monitoring are permitted to authorised agencies via the Rule 419A of the Indian Telegraph Rules, 1951, Section 92 in the 1973 Code of Criminal Procedure, Section 69 and 69 B in the 2000 Information Technology Act of the Indian Constitution.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5523,
+      "body_end": 5854,
+      "source_links": [
+        "https://cis-india.org/internet-governance/resources/rule-419-a-indian-telegraph-rules-1951#fr1",
+        "https://indiankanoon.org/doc/100506284/",
+        "https://indiankanoon.org/doc/1439440/",
+        "https://indiankanoon.org/doc/1544088/",
+        "https://media.neliti.com/media/publications/28731-EN-cyber-crime-law-in-india-has-law-kept-pace-with-emerging-trends-an-empirical-stu.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741671-b00021",
+      "text": "However, as Indian lawyer and co-founder of tech and policy nonprofit the Centre for Internet and Society Pranesh Prakash highlights, there is no clarity about when these rules apply. The Center for Public Interest Litigation and Software Freedom Law Center in Delhi each filed a petition in December 2020 looking to stop several state-run surveillance agencies. But many forms of rampant surveillance continue in India today. Indian society is currently grappling with the tensions between government surveillance and citizens’ right to privacy — a guaranteed constitutional right under Article 21 of the Indian Constitution.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5856,
+      "body_end": 6482,
+      "source_links": [
+        "https://article-14.com/post/as-pegasus-snoop-is-revealed-india-allows-surveillance-state-with-no-legal-safeguards-60f63b5bc95a6",
+        "https://globalvoices.org/2017/08/24/privacy-is-a-fundamental-right-advocates-hail-indias-supreme-court-ruling/",
+        "https://www.thehindu.com/opinion/lead/pegasus-is-indias-watergate-moment/article35434074.ece?homepage=true"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5ac85c8a9aa26d76f2b0cd23b244a22fde5de10b9e599b4c27d80d4d012a8f90",
+  "word_count": 980,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 5,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6482,
+  "retrieved_at": "2026-11-16T22:31:18.113238+00:00",
+  "raw_html_sha256": "3b506fb130027d15f137a9c55a4ad7aaf5e28e2705faa0673e46ea68e7b8d9f5",
+  "resolved_source_url": "https://globalvoices.org/2021/07/23/pegasus-spyware-revelation-indicates-indian-state-snooping-on-journalists-activists-and-politicians/",
+  "canonical_url": "https://globalvoices.org/2021/07/23/pegasus-spyware-revelation-indicates-indian-state-snooping-on-journalists-activists-and-politicians/",
+  "source_bytes": 196486,
+  "authors": [
+    {
+      "name": "Subhashish Panigrahi",
+      "url": "https://globalvoices.org/author/psubhashish/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 741671,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "3b506fb130027d15f137a9c55a4ad7aaf5e28e2705faa0673e46ea68e7b8d9f5",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-a8a873248cc3fb33662a",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-07",
+    "eligible_month_documents": 104,
+    "selected_month_documents": 87,
+    "inclusion_probability": 0.8365384615384616,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Subhashish Panigrahi",
+  "body_start": 543,
+  "body_end": 7025,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "d08226d1e1627a7a5b6a4dfd365c2a13d33d583ace9be5df17fc6344e268b087",
+  "text_path": "articles/gv-741671.txt",
+  "metadata_path": "metadata/gv-741671.json",
+  "attribution": "This story by Subhashish Panigrahi originally appeared on Global Voices. https://globalvoices.org/2021/07/23/pegasus-spyware-revelation-indicates-indian-state-snooping-on-journalists-activists-and-politicians/",
+  "content_sha256": "e440eda93ea4f8eb1775a129650c98dff45655b661fd03f3703ed40a4ebff459",
+  "source_sha256": "3b506fb130027d15f137a9c55a4ad7aaf5e28e2705faa0673e46ea68e7b8d9f5",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

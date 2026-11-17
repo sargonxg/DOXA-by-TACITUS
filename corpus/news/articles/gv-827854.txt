@@ -1,0 +1,77 @@
+ToTok, Baz and others: The UAE and KSA promote unsafe communication apps
+Written by: SMEX
+Originally published by Global Voices: https://globalvoices.org/2025/01/27/totok-baz-and-others-the-uae-and-ksa-promote-unsafe-communication-apps/
+Published: 2025-01-27T05:58:46Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+This article by SMEX was published on January 20, 2025. An edited version is republished on Global Voices as part of a content-sharing agreement.
+
+Since October 7, 2023, several social media applications have removed content related to Palestine. This shadow banning, that continues until today, gave rise to several “digital protests” demanding an Arab-led social media application that allows free circulation of Palestine-related footage.
+
+This demand, although legitimate, turns a blind eye to several attempts by countries in the region to promote “native” social media applications, most of which were promoted by the UAE and KSA, that proved to have followed less strict standards than those of Twitter and Meta when it comes to privacy policies.
+
+SMEX analyzed several apps that were either launched by a company from a country in the Gulf region or promoted by Gulf media. SMEX’s team has conducted a forensic analysis on each of these applications to better understand their security. The forensic analysis examines how each of the apps collects, stores, and shares our data and the potential privacy breaches these practices imply.
+
+Kwai
+
+Kwai, an application developed by the Chinese company Kuaishou, is a short-video platform enabling users to share videos on the app, making it a TikTok competitor with 100+ million downloads on Google Play Store.
+
+Kwai was promoted by Saudi and Emirati media and introduced as an app that “concentrates on Arab culture,” as described by the Saudi website Arab News. The app was also promoted by Emirati Zawaya at the end of last year as “a promising Arab social media platform” claiming “it reflects culturally sound Arabic content and provides an environment that understands and takes into account Arab traditions and norms.”
+
+Joyo Technology Pte. Ltd, the current owner and operator of Kwai, announced in March 2024 that Kwai will be launching its expansion strategy in Saudi Arabia. The strategy involves “localizing the application and customizing it to the local community in the Kingdom,” according to Riyadh Times.
+
+According to the forensic analysis carried out by SMEX’s team, Kwai’s privacy concerns include sharing users’ data with third-parties. Its privacy policy states that “We may use your Data to exercise our rights where it is necessary to do so.” They do not however, specify the process or to which extent or what is specifically their right in it.
+
+Although the app collects a vast amount of data, its policy is unclear about the type and purpose of data collection, knowing that it collects sensitive information such as personal data and bank account details for in-app purchases. In addition, data is not encrypted before it gets saved in the database, adding to the concerns of a privacy breach. Privacy best practices require that data is encrypted “at rest” to limit any potential breaches.
+
+“Kwai’s policy is problematic due to its extensive data collection practices, which are not well justified or clearly explained,” Konur Metehan Durmaz, a policy analyst at SMEX, explains. “The app collects a broad range of data, such as battery status and Wi-Fi information, without providing a clear rationale for why this data is needed and what’s the legal basis for its collection,” he adds.
+
+ToTok
+
+ToTok is an Emirati messaging app developed by Emirati AI-research company G42, working in several domains including sports, public services, and healthcare. The app was introduced in 2019, but later turned out to be a spying tool according to a New York Times report which led to the app’s removal from Play Store and Google Store; it was not available on Apple Store.
+
+According to SMEX’s forensic analysis, ToTok collects device data that can be used to track and identify individual devices. If this information is tied to user accounts or other personally identifiable information (PII), it can potentially be used to track and profile individuals across different apps and services, leading to concerns about user privacy and surveillance.
+
+The app also requires the “DISABLE KEYGUARD” permission in Android, allowing the app to temporarily disable the device’s keyguard — the screen lock mechanism used to prevent unauthorized access to the device.
+
+Modifying certain system settings can have significant implications for device functionality, security, and user experience. As a result, access to system settings is typically restricted and tightly controlled on Android devices. Any app that requires reading or writing system settings would likely need to request specific permissions and adhere to strict security guidelines to ensure that user privacy and device integrity are maintained.
+
+When an application holds this permission, it can programmatically disable the keyguard, allowing access to the device without unlocking the screen using a PIN, pattern, password, or biometric authentication (e.g., fingerprint or face unlock).
+
+Baaz
+
+Baaz, produced by Baz.Inc, was introduced as the Arabic language version of Clubhouse, a social audio app based on communities with different interests where users can join rooms and communities and have live conversations. The founding company is based in San Francisco and is deployed in the UAE.
+
+Some users suspected that Baaz was a spying tool, an allegation that might be contradicted by Baz’s availability on Play Store and App Store, where applications’ security is tested before they are available to download.
+
+Nonetheless, having headquarters in the UAE, Baaz is governed by the Emirati federal law for the protection of personal data, the “PDPL,” which entered into force on the January 2, 2022.
+
+One of the major issues of the UAE’s PDPL is that the scope of governance of this law weakens its scope of protection. Among these exceptions is the exclusion of government data as the law does not apply to government entities that control or process personal data.
+
+This means that a large part of personal data processing is not subject to privacy compliance. By excluding public sector entities from the provisions of this law, the PDPL leaves room for surveillance.
+
+Botim
+
+Botim is UAE’s most used internet-calling app, developed by Algento, a private American technology company that designs, develops, and sells mobile products and services. The app is considered a government-allowed alternative to WhatsApp’s banned video and voice calls. WhatsApp is end-to-end encrypted, making it impossible for third parties to access users’ data. On Botim, data is only encrypted while being transmitted over the internet, although the app provides users with the option to request the deletion of their data.
+
+“Governments can demand access to user data or request that apps collaborate with authorities under the guise of national security or public safety,” explains Durmaz. “If an app refuses to comply, it risks being banned, making it difficult for citizens to access and use the platform freely.”
+
+“Governments can also request social media platforms to take specific actions related to user data or content. It is important to know that these are normal procedures for criminal investigations,” he adds. “However, these government requests are based on draconian local laws and when local laws are prone to be used for censorship, these requests often turn out to carry the same purpose.”
+
+Botim allows ads for free accounts, exposing users to malicious actors that may exploit the ad-serving infrastructure to distribute malicious advertisements, a practice known as malvertising. Clicking on a malicious ad could lead to malware infections, phishing attacks, or other security breaches on the user’s device.
+
+An audit we conducted with multiscanning tool VirusTotal, suggests that the application is linked to sources that are considered malicious due to a list of weird links the application uses. These trackers are often used for analytics, advertising, or marketing purposes, but they can also serve other functions such as crash reporting or user authentication.
+
+The app mentions in its policy that it will not be responsible for collection, storing, retrieving and safekeeping any such data provided to third parties. Advertisers may track users’ online activities and behaviour within the communication app to create targeted advertising profiles. This tracking can lead to invasive profiling practices and compromise users’ privacy and anonymity, similar to that of Meta.
+
+Reach or privacy: The eternal dilemma
+
+Based on the forensic analysis SMEX’s team conducted, we can derive the risk levels of the aforementioned apps. The results are based on software permissions, hardware permissions, security practices, context, features and data collected. The results are listed in the table below:
+
+Although all social media and messaging applications collect data, these apps pose significant security threats as they “might collect more data than necessary, have weaker security measures, or not provide users with sufficient control over their privacy settings,” Durmaz explains.
+
+And as there are few messaging apps options in the WANA region that respect user privacy, internet users have no option but to use decentralized social media platforms in order to protect their data since these platforms “operate through a network of independent servers, or ‘instances,’ each managed separately,” Durmaz adds. “This means that no single company has control over all the data and interactions on the platform.”
+
+This analysis depicts the unfortunate reality that in 22 Arabic-speaking countries, home to over 450 million people, Meta and X continue to monopolize communication platforms. If anything, the absence of regional social media platforms indicates the unwillingness of wealthy Arab countries to improve local regulations on data privacy and instill a culture of cybersecurity. Instead, some states in the region preferred to invest in spyware rather than communications while seeking out data collection rather than innovation. On the other hand, users are obliged to compromise their data privacy to attain a high reach on mainstream social media platforms like Meta.

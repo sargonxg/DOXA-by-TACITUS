@@ -1,0 +1,522 @@
+{
+  "id": "gv-833262",
+  "publisher_id": 833262,
+  "source_id": "globalvoices:833262",
+  "source_url": "https://globalvoices.org/2025/05/07/conflict-in-colombia-how-journalism-is-being-used-as-a-response-to-forced-conscription-of-minors/",
+  "title": "Conflict in Colombia: How journalism is being used as a response to forced conscription of minors",
+  "published_at": "2025-05-07T01:06:54Z",
+  "modified_at": "2025-05-06T14:28:27Z",
+  "api_author_id": 3293,
+  "api_content_sha256": "4f24e2ef16b3ddbfdc0c7c1cc4a6a5c5cb459c7e4b184e16756b919c875dab3b",
+  "api_response_sha256": "908882e0b636b43f6da86b828a40e41ce62d1b0d6819ae1f4042a250f7ccc8b8",
+  "api_retrieved_at": "2026-11-16T22:21:11.515146+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 150,
+      "count": 1234,
+      "name": "Colombia",
+      "slug": "colombia",
+      "parent": 1354
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 282,
+      "count": 6941,
+      "name": "Youth",
+      "slug": "youth",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-833262-b00001",
+      "text": "This piece, by Natalia Romero and Ricardo Sánchez Gómez, gives an overview of the Mi Historia (My Story) participatory journalism initiative, of which they are members, developed by and for teenagers and young people in Colombia. The project uses journalism to prevent the forced conscription of children and teenagers by non-state armed groups. It has been translated by Beatrice Twentyman for Latin America Bureau.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 416,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00002",
+      "text": "Colombia is a country that has for decades suffered the consequences of internal armed conflict. Despite the peace agreement in 2016 between the Colombian government and guerrilla group Fuerzas Armadas Revolucionarias de Colombia (FARC), the violence has not ceased entirely.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 418,
+      "body_end": 693,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Revolutionary_Armed_Forces_of_Colombia",
+        "https://en.wikipedia.org/wiki/Revolutionary_Armed_Forces_of_Colombia#2016%E2%80%932017:_Ceasefire_and_disarming"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00003",
+      "text": "War in Colombia has continued, owing to the persistence of armed groups who refuse to disband, whilst new violent actors have emerged, including FARC dissidents and criminal gangs involved in drug trafficking and illegal mining, like the Clan del Golfo. The weakness of the state in certain regions, as well as the lack of sufficient implementation of the peace agreement, have contributed to the continuation of the conflict.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 695,
+      "body_end": 1121,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Clan_del_Golfo",
+        "https://www.comisiondelaverdad.co/no-mataras-1"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00004",
+      "text": "Civilians have not been exempt from the suffering caused by the war, nor have the many children who have become victims of the violence. According to the Truth Commission, from 1990 to 2017, there were 16,238 cases of forced conscription in the country. Figures from the Presidential Council for Human Rights indicate 8,245 minors have been victims of conscription by criminal organizations since the peace agreement between the government and the FARC was signed in 2016. More than 15 percent of these minors belong to Indigenous and Black communities.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1123,
+      "body_end": 1676,
+      "source_links": [
+        "https://web.comisiondelaverdad.co/actualidad/noticias/principales-cifras-comision-de-la-verdad-informe-final",
+        "https://www.asuntoslegales.com.co/actualidad/procuraduria-solicita-acciones-para-poder-frenar-el-reclutamiento-forzoso-de-menores-3517961",
+        "https://www.gicj.org/positions-opinons/gicj-positions-and-opinions/2810-colombian-truth-commission-s-final-report"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00005",
+      "text": "The conscription of young people is carried out by armed criminal groups who seek to strengthen their ranks using different tactics, including scams, coercion, and the promise of economic benefits. From the perspective of the young people targeted for forced conscription, the lack of employment and education opportunities in conflict-affected regions is the driving factor, as it leaves them vulnerable to the influence of these armed groups.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1678,
+      "body_end": 2122,
+      "source_links": [
+        "https://savethechildren.org.co/wp-content/uploads/2023/02/Infografia-reclutamiento-corregida-febrero-2023.pdf",
+        "https://www.icbf.gov.co/sites/default/files/publicacion-43.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00006",
+      "text": "Mi Historia was created in 2022 as a response to this situation. It emerged as a result of a partnership between the Mi Historia Foundation, the charity Benposta, the University of Leeds in the UK, and the University of Rosario in Bogotá.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2124,
+      "body_end": 2362,
+      "source_links": [
+        "https://benpostacolombia.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00007",
+      "text": "Mi Historia promotes peace in some of the most marginalized communities in Colombia. In these settings, journalism emerges as a tool that allows young people to explore not only the world around them and their place in it, but also themselves. It becomes a tool for young journalists to question and explore their own lives and their surroundings.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2364,
+      "body_end": 2711,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00008",
+      "text": "The director of the project, Mathew Charles, a former BBC journalist and Latin America correspondent for The Telegraph, explains:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2713,
+      "body_end": 2842,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00009",
+      "text": "> La mayoría de jóvenes que se unen a grupos armados lo hacen porque lo perciben como una solución a cualquier crisis que están enfrentando. Podría ser la pobreza, la violencia intrafamiliar, la búsqueda de venganza, entre otros. Entonces, usamos el periodismo para fortalecer las competencias psicosociales y emocionales, que según hemos identificado, son fundamentales para el desarrollo de la salud mental y la autoestima, relacionados con la prevención de violencia. La idea básica es que un o una joven que se siente bien consigo mismo/a no es un/a joven que se mete en grupos armados.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2844,
+      "body_end": 3434,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833262-b00010",
+      "text": "> Most young people who join armed groups do so because they see it as a solution to whatever crisis they are facing. It could be poverty, domestic violence, or seeking revenge, amongst other things. So, we use journalism to strengthen psychosocial and emotional competencies, which we have identified as fundamental to the development of mental health and self-esteem, when considering violence prevention. The basic idea is that a young person who feels good about themself is not a young person who would join an armed group.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3436,
+      "body_end": 3964,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833262-b00011",
+      "text": "Responsible journalism contributes to forging social bonds and healing the fractures of conflict by building empathy and mutual understanding.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3966,
+      "body_end": 4108,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00012",
+      "text": "Daniel Pardo from UNICEF said about the project:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4110,
+      "body_end": 4158,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00013",
+      "text": "> A través del periodismo y el uso de herramientas digitales, los jóvenes pueden expresar sus sentimientos y contribuir a la construcción de la paz, así como a la resolución de conflictos. Esta perspectiva resalta el papel crucial que desempeña el periodismo y la tecnología en el empoderamiento de la juventud y la promoción de un ambiente pacífico y conciliador.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4160,
+      "body_end": 4524,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833262-b00014",
+      "text": "> Through journalism and the use of digital tools, young people can express their feelings and contribute to peacebuilding as a resolution to conflict. This highlights the crucial role that journalism and technology play in youth empowerment and promoting a calm and conciliatory environment.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4526,
+      "body_end": 4818,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833262-b00015",
+      "text": "The initiative includes more than 80 young reporters distributed across five regional newsrooms: the Amazon Newsroom, the Andean Newsroom, the Caribbean Newsroom, the Llanera Newsroom, and the Pacific Newsroom.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4820,
+      "body_end": 5030,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00016",
+      "text": "The project has enabled children all over the country to manage their daily lives more fluidly and naturally. Ángela España, a youth journalist from the Pacific Newsroom, says:",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5032,
+      "body_end": 5208,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00017",
+      "text": "> Antes no me gustaba tanto socializar ni hablar con las demás personas, pero ahora, gracias al proyecto, me siento más libre para hablar con las demás personas, e incluso, hacer entrevistas.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5210,
+      "body_end": 5401,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833262-b00018",
+      "text": "> Before [joining Mi Historia], I didn’t like socialising or talking much to other people, but now, thanks to the project, I feel freer to talk to others and I even do interviews.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5403,
+      "body_end": 5582,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833262-b00019",
+      "text": "The young journalists took a diploma course in journalism for peace and audiovisual production. The academic youth program not only enriched their journalistic skills but also gave them valuable insights for everyday life and for future work. Laura Paez, a young journalist from the Llanera Newsroom, comments:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5584,
+      "body_end": 5894,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00020",
+      "text": "> Lo que más me gustó del diplomado es que aprendí a desenvolverme más, a entender la importancia que tiene el periodismo en la vida cotidiana y a tener mejor oratoria, y perderle el miedo a las cámaras.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5896,
+      "body_end": 6099,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833262-b00021",
+      "text": "> What I liked most about my diploma is that I learned to be more self-reliant, to understand the importance of journalism in everyday life, to have better public speaking skills, and to let go of my fear of the camera.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6101,
+      "body_end": 6320,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833262-b00022",
+      "text": "In addition to its newsrooms, Mi Historia has established more than 20 journalism clubs in schools located in areas where violence is part of daily life. These clubs not only encourage an interest and participation in journalism but also provide essential training in areas such as basic photography, writing, and audiovisual production. These initiatives seek to empower students by providing them with the tools to explore and express their surroundings, whilst also promoting the transformative role that journalism can play in peacebuilding.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6322,
+      "body_end": 6867,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00023",
+      "text": "For Mónica Ochoa, from USAID, Mi Historia has left a lasting impression on the lives of its journalists:",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6869,
+      "body_end": 6973,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00024",
+      "text": "> Creo que ha generado en los jóvenes una huella en términos de darles esas herramientas para abrir su mente y sus capacidades, para entender que las problemáticas que posiblemente viven en sus territorios no solo les suceden a ellos",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6975,
+      "body_end": 7208,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833262-b00025",
+      "text": "> I think it has left a mark on the young people involved in terms of giving them the tools to open their minds and their capabilities, to understand that the problems they may experience in their territories do not only happen to them.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7210,
+      "body_end": 7446,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-833262-b00026",
+      "text": "The young journalists wrote news and features, produced podcasts, and created photo essays and audiovisual pieces for the project’s channels. Mi Historia’s microphones have featured well-known figures such as truth commissioner Lucía González and professor Mauricio Jaramillo, as well as being used to produce documentaries such as “Refugio” and “Mitú: Tristeza en la selva” There are also opportunities for young reporters to give their own opinions on topics of interest to them. The project also provides didactic videos, where, for example, it gives guidelines on how to conduct a good interview.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 7448,
+      "body_end": 8048,
+      "source_links": [
+        "https://www.youtube.com/@mihistoriaco",
+        "https://www.youtube.com/watch?v=DJY0jWqfRa8",
+        "https://www.youtube.com/watch?v=LkUBWTZeijg",
+        "https://www.youtube.com/watch?v=M81aeWJ_1QA",
+        "https://www.youtube.com/watch?v=_deSat5o1dc",
+        "https://www.youtube.com/watch?v=aX0DBIWO9C8",
+        "https://www.youtube.com/watch?v=yGsgt8BkpHY"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00027",
+      "text": "This documentary, for example, is about the Benposta community, a shelter for at-risk youth:",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 8050,
+      "body_end": 8142,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00028",
+      "text": "“En mis propias palabras” (“In my own words”) was a podcast series where journalists investigated the issues that challenged them and reflected on the daily situations they experienced in their municipalities. That first sound exercise has now become Radio Trompo, a digital and alternative radio station produced by young journalists from Mi Historia.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 8144,
+      "body_end": 8496,
+      "source_links": [
+        "https://open.spotify.com/show/7uvkf5ddJAiR1ALP4w1cp7?si=abb803e06197435d&nd=1&dlsi=111b6683fdc54fdc",
+        "https://www.radiotrompo.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00029",
+      "text": "Here you can listen to radio Trompo:",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 8498,
+      "body_end": 8534,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00030",
+      "text": "Radio Trompo is a project in partnership with Benposta Regional Caribe, which seeks to ensure that young people are included in public debate and peacebuilding. The station, which has received funding from the Austrian embassy in Bogotá and German charity Misereror, promotes a community narrative, focused on integrating diverse voices and deconstructing divisions to understand how conflict affects communities.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 8536,
+      "body_end": 8949,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-833262-b00031",
+      "text": "Mi Historia has evolved from a one-off response to a critical problem, where it addressed the experiences of victims of forced conscription, to a comprehensive platform for participatory journalism that nurtures and empowers young people in Colombia and within their own communities.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 8951,
+      "body_end": 9234,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "0b1600c5c6b7f90335c92a1b5d14c901eeec61e40dd70578c455ba5c2217fe4d",
+  "word_count": 1459,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 8,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 2,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 9234,
+  "retrieved_at": "2026-11-16T22:46:23.466969+00:00",
+  "raw_html_sha256": "61d29b8ef78d352192e27d199591fd7868b01ade1e5de0c1b14dc1ffda200c43",
+  "resolved_source_url": "https://globalvoices.org/2025/05/07/conflict-in-colombia-how-journalism-is-being-used-as-a-response-to-forced-conscription-of-minors/",
+  "canonical_url": "https://globalvoices.org/2025/05/07/conflict-in-colombia-how-journalism-is-being-used-as-a-response-to-forced-conscription-of-minors/",
+  "source_bytes": 198309,
+  "authors": [
+    {
+      "name": "Mi Historia",
+      "url": "https://es.globalvoices.org/author/mi-historia/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Beatrice Twentyman",
+      "url": "https://globalvoices.org/author/beatrice-twentyman/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 833262,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "61d29b8ef78d352192e27d199591fd7868b01ade1e5de0c1b14dc1ffda200c43",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-37b8098e2972739ee27e",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-05",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Mi Historia",
+  "body_start": 562,
+  "body_end": 9796,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "0d68e4575950b371439f5e8fd3e3f9bd330846886730d2e9b1eb4d514d8c04a9",
+  "text_path": "articles/gv-833262.txt",
+  "metadata_path": "metadata/gv-833262.json",
+  "attribution": "This story by Mi Historia originally appeared on Global Voices. https://globalvoices.org/2025/05/07/conflict-in-colombia-how-journalism-is-being-used-as-a-response-to-forced-conscription-of-minors/",
+  "content_sha256": "da4c7b6bdc6936e5dc00dca7f427c7e9a4cd42ea5b7d124cb06933a682e90d1e",
+  "source_sha256": "61d29b8ef78d352192e27d199591fd7868b01ade1e5de0c1b14dc1ffda200c43",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,45 @@
+Is OpenAI biased? We checked so you won't have to
+Written by: Daria Dergacheva
+Originally published by Global Voices: https://globalvoices.org/2023/03/09/is-openai-biased-we-checked-so-you-wont-have-to/
+Published: 2023-03-09T18:39:09Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+Both of the popular new tech launches of the OpenAI project, ChatGPT and DALL-E2, have provoked much attention from the media and social media users. Discussions about what can be achieved with these technologies, what jobs might be replaced, how to deal with copyright issues, and how these technologies might amplify existing bias are ongoing in digital rights, tech, and journalistic spheres.
+
+Global Voices experimented with DALL-E2, the AI picture generator, to see how it generates pictures from different languages. We typed the same phrase in nine languages: “Oil painting of a shadow of a grieving woman at the window.”
+
+Here are the results we received:
+
+English
+
+Spanish: Pintura al óleo de la sombra de una mujer en duelo ante la ventana
+
+Czech: Olejomalba stínu truchlící ženy u okna
+
+Russian: Картина маслом силуэт скорбящей женщины у окна
+
+Indonesian: Lukisan cat minyak bayangan seorang janda perempuan yang sedang berduka di samping jendela
+
+Simplified Chinese: 窗边悲痛女人的影子油画
+
+Kazakh: Терезедегі қайғылы әйелдің көлеңкесінің майлы бояу суретi
+
+Uzbek: Deraza oldida qayg'u chekayotgan ayol soyasining moyli rasmi
+
+Malayalam: ജനാലയ്ക്കരികിൽ ദുഃഖിക്കുന്ന ഒരു സ്ത്രീയുടെ നിഴലിന്റെ ഓയിൽ പെയിന്റിംഗ്
+
+Obviously, some of these photos are quite different from the original prompt. This could be because of insufficient data in the original languages. As DALL-E's inventors explain in an interview with Tech Crunch, the model it works on is called CLIP (Contrastive Language-Image Pre-training). CLIP was trained on 400 million pairs of images with text captions scraped from the internet. As OpenAI says on its site:
+
+> GPT-3 showed that language can be used to instruct a large neural network to perform a variety of text generation tasks. Image GPT showed that the same type of neural network can also be used to generate images with high fidelity. We extend these findings to show that manipulating visual concepts through language is now within reach.
+
+“We live in a visual world,” says Ilya Sutskever, chief scientist at OpenAI, in an interview with MIT Technological Review:
+
+> In the long run, you’re going to have models which understand both text and images. AI will be able to understand language better because it can see what words and sentences mean.
+
+Since different languages produced such different outputs, it seems that the focus of this web-scraping with which the model works, used more widely-spoken languages, such as English or Spanish, but not less obvious languages.
+
+Thus, many pictures from the internet with a description in Uzbek or Malayalam were not present in the original data with which the AI was trained. If the model intends to work with more languages, it needs to focus on training more on images with descriptions other than English. Otherwise, users from Kazakhstan will continue to get pictures of cuisine instead of a woman, and those speaking Malayalam will receive pictures of nature. The Russian-based image is clearly sexualized, somehow. The Indonesian image portrays several girls sitting, and the Czech one takes the prize for originality with a jar of oil stealing the show. The pictures based on simplified Chinese are outright scary.
+
+Of course, we cannot claim, based on this, that OpenAI is racist. What we can see here is that it has not received enough data in non-English languages. Now, whether it stays this way, we do not know, but we strongly suggest that it doesn't.

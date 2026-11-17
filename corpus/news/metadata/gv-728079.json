@@ -1,0 +1,432 @@
+{
+  "id": "gv-728079",
+  "publisher_id": 728079,
+  "source_id": "globalvoices:728079",
+  "source_url": "https://globalvoices.org/2021/02/05/indian-farmers-protests-twitter-withholds-then-restores-prominent-accounts-by-government-order/",
+  "title": "Indian farmers’ protests: Twitter withholds, then restores, prominent accounts by government order",
+  "published_at": "2021-02-05T18:09:09Z",
+  "modified_at": "2021-02-05T18:16:24Z",
+  "api_author_id": 2565,
+  "api_content_sha256": "dec04f5b45f2e6a01e2a9d042dd9a05a08cac5c367ffddf44664de6fb67feed9",
+  "api_response_sha256": "4b8a365e82fe2773a09c5a0e8bd4a9b7aa40c63d55bed83d1fb049dae4c0bf4c",
+  "api_retrieved_at": "2026-11-16T22:20:32.142391+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 32,
+      "count": 3843,
+      "name": "India",
+      "slug": "india",
+      "parent": 31
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-728079-b00001",
+      "text": "On February 1, Twitter temporarily blocked people in India from viewing more than 250 accounts that appeared to express support to the farmers’ protests that have rocked the country for the past four months. The accounts were restored around six hours later.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 258,
+      "source_links": [
+        "https://economictimes.indiatimes.com/tech/technology/twitter-restores-250-accounts-blocked-in-india-after-suspending-for-six-hours/videoshow/80645989.cms",
+        "https://en.wikipedia.org/wiki/2020%E2%80%932021_Indian_farmers%27_protest",
+        "https://thewire.in/rights/twitter-withheld-caravan-kisan-ekta-morcha"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00002",
+      "text": "Twitter then told news agency ANI that it withheld the accounts in response to a request from India's Ministry of Electronics and IT to block accounts that had tweeted the hashtag #ModiPlanningFarmerGenocide for making “fake, provocative, and intimidatory tweets.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 260,
+      "body_end": 524,
+      "source_links": [
+        "https://twitter.com/ANI/status/1356198620630929408"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00003",
+      "text": "The US-based platform explained its decision by pointing to its policy of withholding content in certain countries, which it employs when it receives “a request from an authorized entity” in that jurisdiction.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 526,
+      "body_end": 735,
+      "source_links": [
+        "https://help.twitter.com/en/rules-and-policies/tweet-withheld-by-country"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00004",
+      "text": "A source speaking under the condition of anonymity told The Hindustan Times said that Twitter decided to restore the accounts after concluding that the content withheld was “speech and newsworthy.”",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 737,
+      "body_end": 934,
+      "source_links": [
+        "https://www.hindustantimes.com/india-news/twitter-restores-250-accounts-blocked-in-india-for-a-controversial-hashtag-101612195458796.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00005",
+      "text": "The Indian government then lashed at Twitter, saying it may take action against the company if does not comply with its orders. A statement said:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 936,
+      "body_end": 1081,
+      "source_links": [
+        "https://www.ndtv.com/india-news/comply-or-face-action-government-to-twitter-on-farmer-genocide-hashtag-2362377"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00006",
+      "text": "> Twitter cannot assume the role of (a) court and justify non-compliance. […] Twitter being an intermediary is obliged to obey the directions as per the satisfaction of authorities as to which inflammatory content will arouse passion and impact public order. Twitter cannot sit as an appellate authority over the satisfaction of the authorities about its potential impact on derailing public order.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1083,
+      "body_end": 1481,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-728079-b00007",
+      "text": "Among those suspended from Twitter on February 1 was India's prestigious magazine The Caravan. The publication's executive editor Vinod K. Jose told Buzzfeed news that Twitter's decision to withhold their official account is the “latest in a long list of targeted attacks” that had been mounted on the publication for pursuing important stories.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1483,
+      "body_end": 1828,
+      "source_links": [
+        "https://twitter.com/thecaravanindia",
+        "https://www.buzzfeednews.com/article/pranavdixit/indian-government-block-critics"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00008",
+      "text": "Activists and organizations that have been posting updates from the protests were also caught on the Twitter crackdown on Monday. Some of them were large popular accounts, such as @Tractor2twitr, @Kisanektamorcha, and @bkuektaugrahan.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1830,
+      "body_end": 2064,
+      "source_links": [
+        "https://twitter.com/Kisanektamorcha",
+        "https://twitter.com/Tractor2twitr",
+        "https://twitter.com/bkuektaugrahan"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00009",
+      "text": "The mass suspensions were deplored by the global media watchdog Reporters Without Borders, who labelled it as a “shocking case of blatant censorship”. The organization added: “By ordering these blockings, the Home Affairs Ministry is behaving like an Orwellian Ministry of Truth who wants to impose its own narrative about the farmers’ protests.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2066,
+      "body_end": 2412,
+      "source_links": [
+        "https://www.aljazeera.com/news/2021/2/2/twitter-blocks-accounts-over-india-farmers-protest-on-govt-order"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00010",
+      "text": "Many journalists in India have also condemned the action, such as Sania Farooqui:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2414,
+      "body_end": 2495,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00011",
+      "text": "Notable journalist Rana Ayyub tweeted:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2497,
+      "body_end": 2535,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00012",
+      "text": "Hundreds of thousands of farmers in many parts of India have been protesting against liberalizing agriculture reforms approved by the country's parliament in September 2020. Farmers’ unions and organizations say the reform, which among other measures removes subsidies and protections against big corporations, will endanger their livelihoods.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2537,
+      "body_end": 2880,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/2020_Indian_agriculture_acts",
+        "https://frontline.thehindu.com/cover-story/farmers-protests-why-are-farmers-angry-in-punjab-haryana-over-new-farm-laws-2020/article33320475.ece",
+        "https://www.nytimes.com/2021/01/27/world/asia/india-farmer-protest.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00013",
+      "text": "Thousands of farmers have camped for months outside New Delhi demanding the laws be repealed. Authorities have filed several sedition charges against activists and journalists since the demonstrations began, and have imposed internet shutdowns.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2882,
+      "body_end": 3126,
+      "source_links": [
+        "https://inc42.com/buzz/delhi-internet-shutdown-extended-to-february-2-amid-farmers-protest/",
+        "https://thewire.in/media/mandeep-punia-journalist-arrest-singhu-farmers-protest"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00014",
+      "text": "The protests drew global attention this week after international popstar Rihanna tweeted about the issue:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3128,
+      "body_end": 3233,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00015",
+      "text": "The following day, Meena Harris, the niece of United States’ Vice President Kamala Harris, also took to Twitter to condemn the internet shutdowns.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3235,
+      "body_end": 3381,
+      "source_links": [
+        "https://twitter.com/meenaharris/status/1356747965713371138"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00016",
+      "text": "And on February 4, Swedish climate activist Greta Thunberg expressed support for the protests on a Twitter thread in which she also shared a “protest toolkit” — a document with resources for those wanting to familiarize themselves with the farmers’ or help with organizing.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3383,
+      "body_end": 3656,
+      "source_links": [
+        "https://twitter.com/GretaThunberg/status/1357282507616645122"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00017",
+      "text": "The Delhi police then said it will investigate the toolkit's authors, who are thus far unknown.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3658,
+      "body_end": 3753,
+      "source_links": [
+        "https://www.aljazeera.com/news/2021/2/5/india-to-investigate-protest-toolkit-shared-by-greta-thunberg"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00018",
+      "text": "Many Indians, including politicians, Bollywood stars, and cricketers condemned the tweets by foreign personalities.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3755,
+      "body_end": 3870,
+      "source_links": [
+        "https://www.firstpost.com/india/farmers-protest-politicians-bollywood-stars-cricketers-condemn-rihanna-greta-thunbergs-tweet-on-farmers-many-support-9268691.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728079-b00019",
+      "text": "In a statement released on February 3, India's Ministry of External Affairs also commented on the foreign personalities’ expressions of support: “The temptation of sensationalist social media hashtags and comments, especially when resorted to by celebrities and others, is neither accurate nor responsible.”",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3872,
+      "body_end": 4179,
+      "source_links": [
+        "https://mea.gov.in/press-releases.htm?dtl/33456/Press_Statement_on_recent_comments_by_foreign_individuals_and_entities_on_the_farmers_protests"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "c0570550dbc59825f6b2e6331b18df1163d945d60bc41555ab052e245a95809b",
+  "word_count": 623,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4179,
+  "retrieved_at": "2026-11-16T22:29:24.574334+00:00",
+  "raw_html_sha256": "fb362a3483d7709ce15c42186df9aafb450699cf684d383119b8526303d69802",
+  "resolved_source_url": "https://globalvoices.org/2021/02/05/indian-farmers-protests-twitter-withholds-then-restores-prominent-accounts-by-government-order/",
+  "canonical_url": "https://globalvoices.org/2021/02/05/indian-farmers-protests-twitter-withholds-then-restores-prominent-accounts-by-government-order/",
+  "source_bytes": 191509,
+  "authors": [
+    {
+      "name": "Samaya Anjum",
+      "url": "https://globalvoices.org/author/samaya/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 728079,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "fb362a3483d7709ce15c42186df9aafb450699cf684d383119b8526303d69802",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-3bbdec90c5499b85666e",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-02",
+    "eligible_month_documents": 78,
+    "selected_month_documents": 65,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Samaya Anjum",
+  "body_start": 528,
+  "body_end": 4707,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "bfd2b041e97a19cbe5e1e42371fcc226ff2d7e8a7f8564fc0a3028ee12ea210c",
+  "text_path": "articles/gv-728079.txt",
+  "metadata_path": "metadata/gv-728079.json",
+  "attribution": "This story by Samaya Anjum originally appeared on Global Voices. https://globalvoices.org/2021/02/05/indian-farmers-protests-twitter-withholds-then-restores-prominent-accounts-by-government-order/",
+  "content_sha256": "51960172345b8efe3b71124b783ebcd81bf38638d4d96daa66d38c77dfbcb4d5",
+  "source_sha256": "fb362a3483d7709ce15c42186df9aafb450699cf684d383119b8526303d69802",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

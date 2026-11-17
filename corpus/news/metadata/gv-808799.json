@@ -1,0 +1,576 @@
+{
+  "id": "gv-808799",
+  "publisher_id": 808799,
+  "source_id": "globalvoices:808799",
+  "source_url": "https://globalvoices.org/2024/03/29/from-discredit-to-censorship-when-power-attacks-the-latin-american-press/",
+  "title": "From discredit to censorship: When power attacks the Latin American press",
+  "published_at": "2024-03-29T03:35:09Z",
+  "modified_at": "2024-08-01T11:05:15Z",
+  "api_author_id": 2901,
+  "api_content_sha256": "aaf4d93a8fc5fd3e232bfab6a488de13fefbfaa7c4f8cd2fef55c26fa80c3e19",
+  "api_response_sha256": "e30ce5c1a843c576e47da511bb7461203b125a6cd63c8e7c0054acdca6364884",
+  "api_retrieved_at": "2026-11-16T22:21:01.572647+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 146,
+      "count": 1179,
+      "name": "Argentina",
+      "slug": "argentina",
+      "parent": 1354
+    },
+    {
+      "id": 147,
+      "count": 988,
+      "name": "Bolivia",
+      "slug": "bolivia",
+      "parent": 1354
+    },
+    {
+      "id": 150,
+      "count": 1234,
+      "name": "Colombia",
+      "slug": "colombia",
+      "parent": 1354
+    },
+    {
+      "id": 168,
+      "count": 1818,
+      "name": "Cuba",
+      "slug": "cuba",
+      "parent": 1354
+    },
+    {
+      "id": 171,
+      "count": 540,
+      "name": "El Salvador",
+      "slug": "el-salvador",
+      "parent": 1354
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 37,
+      "count": 1643,
+      "name": "Mexico",
+      "slug": "mexico",
+      "parent": 1354
+    },
+    {
+      "id": 178,
+      "count": 306,
+      "name": "Nicaragua",
+      "slug": "nicaragua",
+      "parent": 1354
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 157,
+      "count": 1167,
+      "name": "Venezuela",
+      "slug": "venezuela",
+      "parent": 1354
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-808799-b00001",
+      "text": "This article was written by Suhelis Tejero and published in CONNECTAS on March 17, 2024. An edited version is republished by Global Voices under a media partnership agreement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 175,
+      "source_links": [
+        "https://www.connectas.org/analisis/del-desprestigio-a-la-censura-cuando-el-poder-ataca-a-la-prensa/",
+        "https://www.connectas.org/member/suhelis-tejero/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00002",
+      "text": "A few days ago, the president of Argentina, Javier Milei, ordered the closure of the state news agency Télam, a measure that seems to be the starting point of dismantling the public media network in Argentina, which has already been interfered with.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 177,
+      "body_end": 426,
+      "source_links": [
+        "https://elpais.com/argentina/2024-03-04/milei-deja-en-suspenso-telam-la-mayor-agencia-estatal-de-noticias-de-america-latina.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00003",
+      "text": "In Mexico, at the other end of the region, the personal data of journalists has been leaked this year. In January, an apparent hack into the government's computer system revealed the personal data of more than 300 journalists who cover “La Mañanera,” the daily press conference offered by President Andrés Manuel López Obrador.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 428,
+      "body_end": 755,
+      "source_links": [
+        "https://elpais.com/mexico/2024-01-30/la-filtracion-de-datos-de-los-periodistas-que-cubren-la-mananera-se-hizo-a-traves-del-usuario-de-un-antiguo-trabajador-del-gobierno.html",
+        "https://www.youtube.com/@lopezobrador"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00004",
+      "text": "Last week the president of Colombia, Gustavo Petro, accused the RCN and Caracol media of “dumbing down society” and wanting to discredit him.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 757,
+      "body_end": 898,
+      "source_links": [
+        "https://twitter.com/horadelaverdad/status/1767509151398179227?s=48&t=G1WtyTltILFcWEvcBtkdXw"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00005",
+      "text": "The strategy of discrediting power is neither new nor exclusive to Argentina, Colombia and Mexico. Other countries, such as Cuba, Guatemala, Nicaragua, Venezuela and, more recently, Bolivia and El Salvador, reflect how political power can hit the media in different ways until they disappear.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 900,
+      "body_end": 1192,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00006",
+      "text": "Read more: Unfreedom Monitor Report: El Salvador",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1194,
+      "body_end": 1242,
+      "source_links": [
+        "https://globalvoices.org/2023/05/19/unfreedom-monitor-report-el-salvador/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00007",
+      "text": "The press freedom index presented each year by Reporters Without Borders (RSF) shows that the region, far from improving its levels of freedom and protection of journalism, still faces serious problems. The 2023 report indicates that situations occur in practically all of Latin America that range from simple obstacles to really serious threats. Only four countries registered satisfactory levels of press freedom in Latin America and, curiously, one of them was Argentina.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1244,
+      "body_end": 1718,
+      "source_links": [
+        "https://rsf.org/en/classement/2023/americas",
+        "https://rsf.org/en/region/americas"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00008",
+      "text": "> Venezuela occupies position #159 in the 2023 Ranking of the World Press Freedom classification of Reporters Without Borders –which evaluates the conditions in which journalism is practiced in 180 countries, and where 1 is the best evaluated and 180 the worst –",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1720,
+      "body_end": 1982,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-808799-b00009",
+      "text": "As soon as Milei announced the closure of Télam, Reporters Without Borders warned that the dismantling of public media represents a real danger to pluralism in Argentina.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1984,
+      "body_end": 2154,
+      "source_links": [
+        "https://www.elciudadanoweb.com/reporteros-sin-fronteras-el-cierre-de-telam-es-un-duro-golpe-al-derecho-a-la-informacion/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00010",
+      "text": "> Last Friday, March 1, Argentine President Javier Milei announced the closure of the state news agency #Télam. Since then, the more than 700 workers of the company have mobilized to defend it and prevent its closure.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2156,
+      "body_end": 2373,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-808799-b00011",
+      "text": "But if it is raining in Argentina, in Mexico there is a tempest. There, the attacks and official leaks take on an even more serious connotation, since it is already one of the most dangerous countries in the world to practice journalism, with a total of 163 journalists murdered and 32 disappearances between the years 2000 and 2023, according to Article 19, the international organization defending freedom of expression. The territorial control exercised by drug trafficking in several regions, in addition to its infiltration into public structures, has caused crimes against press workers to go unpunished. For this reason, the smear campaigns against the press from the Mexican presidency put even more pressure on a very complicated situation.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2375,
+      "body_end": 3124,
+      "source_links": [
+        "https://articulo19.org/periodistasasesinados/",
+        "https://www.connectas.org/periodismo-mexico-terror/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00012",
+      "text": "In this regard, Pedro Cárdenas, Protection and Defense officer of Article 19 Mexico, said that they have observed that governments abuse the public forum to stigmatize critical journalists whom they classify as adversaries or enemies, which contributes to the climate of violence.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3126,
+      "body_end": 3406,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00013",
+      "text": "> 📣 In 2023 we registered 561 attacks against the press, which means that, on average, a journalist or media outlet is attacked every 16 hours.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3408,
+      "body_end": 3551,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-808799-b00014",
+      "text": "> 🗣️ Here is a review of violence data in 2023.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3553,
+      "body_end": 3600,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-808799-b00015",
+      "text": "He affirmed that, for this reason, in recent years, the average of violence has been maintained because governments have not generated comprehensive public policies to prevent violence against the press and protect journalists.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3602,
+      "body_end": 3829,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00016",
+      "text": "The state of censorship",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3831,
+      "body_end": 3854,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00017",
+      "text": "Other countries in the region, such as Cuba, Nicaragua, and Venezuela, have gone much further in terms of attacks and violations of freedom of expression and of the press. These authoritarian governments usually protect themselves legally against journalism because it allows judicial persecution.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3856,
+      "body_end": 4153,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00018",
+      "text": "In the middle of last year, Cuba managed to reinforce more than 60 years of legal framework against the press with the Social Communication Law, which gives the government even broader powers than those already existing to control or close independent media.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4155,
+      "body_end": 4413,
+      "source_links": [
+        "https://latamjournalismreview.org/es/articles/4-cosas-que-debes-saber-sobre-la-nueva-ley-de-comunicacion-social-de-cuba/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00019",
+      "text": "In Venezuela, former president Hugo Chávez insistently accused the media of having allied with his opponents and of being enemies of his revolution. In 2001, the Content Law, later converted into the Law of Social Responsibility in Radio and Television (Spring Law), served as the legal basis to justify the closure of media.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4415,
+      "body_end": 4740,
+      "source_links": [
+        "https://www.infobae.com/2010/12/16/1015739-venezuela-habilito-la-norma-que-censura-la-prensa/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00020",
+      "text": "With administrative decisions issued by telecommunications regulators, the Chávez government closed dozens of television channels and radio stations, including the RCTV television station, in 2007. Since 2003, almost 300 radio stations have stopped operating by order of Chavismo.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4742,
+      "body_end": 5022,
+      "source_links": [
+        "https://espaciopublico.ong/a-15-anos-del-cierre-arbitrario-de-radio-caracas-television/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00021",
+      "text": "> Today on #WorldRadioDay, more than one hundred years after the creation of this medium, from the Democratic Unitary Platform we draw attention to the crisis that Venezuelan radio is experiencing with closures and constant threats by the regime of Nicolás Maduro and the institutions…",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5024,
+      "body_end": 5309,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-808799-b00022",
+      "text": "And the current president Nicolás Maduro has not lowered his tone: groups close to Chavismo have bought independent media, while the government blocks digital media and foreign television channels.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5311,
+      "body_end": 5508,
+      "source_links": [
+        "https://runrun.es/noticias/522443/mas-de-550-bloqueos-en-internet-evidencian-vulneracion-a-derechos-digitales-en-venezuela/",
+        "https://www.vozdeamerica.com/a/venezuela-censura-compra-medios-comunicacion-ipys/2669407.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00023",
+      "text": "Read more: Unfreedom Monitor Report: Venezuela",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5510,
+      "body_end": 5556,
+      "source_links": [
+        "https://globalvoices.org/2023/05/25/unfreedom-monitor-report-venezuela/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00024",
+      "text": "In Nicaragua, Daniel Ortega's regime has also deployed hate speech against the press that has included arrests, banishments and forced exiles, as well as censorship, media closures and confiscations. Since 2018, when protests broke out that radicalized the Government, some 1,200 attacks against the press have been recorded.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5558,
+      "body_end": 5883,
+      "source_links": [
+        "https://www.connectas.org/nicaragua-periodistas-despojados-apatridas/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00025",
+      "text": "Bolivia, since the successive presidencies of Evo Morales, has also experienced a smear campaign against the media. Official tactics have ranged from uttering insults to reducing state advertising as a mechanism for political pressure. The Government even produced a documentary titled “The Cartel of Lies,” as they call the media from those in power. In the middle of last year, the Página Siete newspaper had to cease operations after a cut in state advertising caused a severe economic hardship.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5885,
+      "body_end": 6383,
+      "source_links": [
+        "https://latamjournalismreview.org/es/articles/gobierno-boliviano-lanza-documental-el-cartel-de-la-mentira-con-ataques-a-la-prensa-periodistas-reaccionan/",
+        "https://www.vozdeamerica.com/a/cierra-sorpresivamente-periodico-boliviano-pagina-siete/7164567.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00026",
+      "text": "> #P7Inform",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6385,
+      "body_end": 6396,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-808799-b00027",
+      "text": "> The editorial team of #PáginaSiete says goodbye to its readers after 13 years of work. All that remains is to thank you for allowing us to be part of your daily life. This stage is closing, but independent journalism does not stop. pic.twitter.com/mDsNkdCjFq",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6398,
+      "body_end": 6658,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-808799-b00028",
+      "text": "In El Salvador, President Nayib Bukele has insulted journalists and has accused the media of being his enemies for the critical reports they have published about his government's agreements with gangs. As a concrete measure, he approved a reform of the Penal Code that establishes prison sentences of up to 15 years for journalists who publish information produced by gangs and that could generate panic or anxiety in the population.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6660,
+      "body_end": 7093,
+      "source_links": [
+        "https://www.elsalvador.com/noticias/nacional/periodismo-bajo-acoso-del-gobierno-nayib-bukele/952175/2022/",
+        "https://www.vozdeamerica.com/a/amenaza-medios-salvador-/6966531.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-808799-b00029",
+      "text": "The serious thing about discrediting campaigns is not only that they cause a reduction in freedoms, but also a continuous confrontation between power and the media, which leads to less social coexistence. And without a free press there cannot be even a semblance of democracy.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7095,
+      "body_end": 7371,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "bdf029dcdfe49e6f0e638dcdb676b3a8911b306b96fc374b4656528bd0c5bfe8",
+  "word_count": 1154,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 5,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7371,
+  "retrieved_at": "2026-11-16T22:42:37.286839+00:00",
+  "raw_html_sha256": "6f41dcb0248175acd0b06ad0e562c9b592a4db06c6695b64df74393c0f8146a1",
+  "resolved_source_url": "https://globalvoices.org/2024/03/29/from-discredit-to-censorship-when-power-attacks-the-latin-american-press/",
+  "canonical_url": "https://globalvoices.org/2024/03/29/from-discredit-to-censorship-when-power-attacks-the-latin-american-press/",
+  "source_bytes": 196510,
+  "authors": [
+    {
+      "name": "Connectas",
+      "url": "https://es.globalvoices.org/author/connectas/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Ameya Nagarajan",
+      "url": "https://globalvoices.org/author/ameya-nagarajan/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 808799,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "6f41dcb0248175acd0b06ad0e562c9b592a4db06c6695b64df74393c0f8146a1",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-798145a2ffd60ccaf58b",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-03",
+    "eligible_month_documents": 70,
+    "selected_month_documents": 58,
+    "inclusion_probability": 0.8285714285714286,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Connectas",
+  "body_start": 509,
+  "body_end": 7880,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "038f218340913fd8a98b7ff7a49b927859371e54405ec72e2a9bee0546507950",
+  "text_path": "articles/gv-808799.txt",
+  "metadata_path": "metadata/gv-808799.json",
+  "attribution": "This story by Connectas originally appeared on Global Voices. https://globalvoices.org/2024/03/29/from-discredit-to-censorship-when-power-attacks-the-latin-american-press/",
+  "content_sha256": "f9e879b190cc2567badb5edf98fb4d14e77d6d7f13c6e6eac8e80dc94234c885",
+  "source_sha256": "6f41dcb0248175acd0b06ad0e562c9b592a4db06c6695b64df74393c0f8146a1",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

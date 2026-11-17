@@ -1,0 +1,65 @@
+Trinidad & Tobago's state telecommunications provider is hacked, raising questions about data protection laws
+Written by: Flora Thomas
+Originally published by Global Voices: https://globalvoices.org/2023/11/08/trinidad-tobagos-state-telecommunications-provider-is-hacked-raising-questions-about-data-protection-laws/
+Published: 2023-11-08T12:21:52Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+A few days before Halloween, customers of tech users registered with Telecommunications Services of Trinidad and Tobago (TSTT) received scary news of a ransomware attack on the company. Local tech journalist Mark Lyndersay, writing at Tech News T&T, said that several data breach reporting sites noted “exfiltration of data from the [company's] systems [on] October 27, 2023.”
+
+The culprit was RansomEXX, an infamous ransomware group which, as its name suggests, holds data hostage until a ransom is paid. By October 28, the Tech News T&T post had been updated to advise that Dark Web Informer, a Twitter account dedicated to reporting data breaches, accessed a note alleging that TSTT had been warned about the hackers’ intentions. The very next day, RansomEXX posted a CSV file as proof of its successful data exfiltration, which contained detailed information for over 800,000 TSTT customers but was by no means representative of the entire data dump.
+
+Two days later, on October 31, TSTT claimed that although there was a hacking attempt, it had failed, while Minister of Public Utilities Marvin Gonzales denied there was a hack at all. Throughout the debacle, tech journalist Lyndersay has maintained that “it is an issue of customer privacy and the customer’s right to know.”
+
+By November 3, TSTT finally went from insisting “there was no loss or compromise of customer data” to stating that “the data released contains largely identifying information, and TSTT apologises to those customers whose information was accessed by these cyber terrorists.” Its release still sought to temper the situation, however, adding that “the 6GB accessed represents less than 1% of the petabytes of data the company produces and stores,” representing information “of a small subset of TSTT’s customer base.”
+
+It hastened to add that while the attack did access customers’ names, email and residential addresses, photo IDs, account and mobile numbers, and payment receipts, it did not include call records, passwords, or customers’ financial information, so there was “no elevated risk of fraudulent activity for the group of customers impacted.” The company also “categorically refute[d]” claims that its data centre was breached, calling them “totally inaccurate, ill-informed and mischievous.”
+
+Lyndersay, however, explained:
+
+> Noting that the company generates terabytes of data is a straw man tactic to draw attention from the specifics and seriousness of the exfiltration. What matters is which 6GB of data the company has had copied off its servers.
+
+By November 1, prior to TSTT's press release update, one of Lyndersay's ongoing updates to the Tech News T&T post revealed that an independent review of the data dump suggested that “internal system passwords and external customer passwords were part of the data package exfiltrated from the company’s servers”:
+
+> TSTT has had days to examine the data that is, as it acknowledged in its press release, in the public domain, but has not advised whether it has warned business customers of their exposure in this breach. The company continues to make no effort to issue any warnings to its over-the-counter customer base about exposure of their personally identifiable information.
+
+“Since TSTT won’t say it, I will,” Lyndersay continued, before advising readers to change their passwords and “have a discussion with company representatives about your exposure.”
+
+Also writing at Tech News T&T was data protection consultant Rishi Maharaj, who expressed concerns about the timing of the data breach:
+
+> TSTT mentions that they became aware of the cyber-attack on October 9th, 2023. The gap between the attack and public disclosure appears to be significant, which could be concerning under Data Protection principles, especially as people’s personal data was comprised.
+
+Trinidad and Tobago, Maharaj says, has “no laws” that require companies to report data breaches to a regulator within a specific time frame (usually three to five days) and inform affected individuals, or even advise as to the nature of the stolen data. The country's Data Protection Act contains a clause with regard to the protection of personal information which reads:
+
+> A public body shall protect personal information in its custody or under its control by making reasonable security arrangements against such risks as unauthorised access, collection, use, alteration, disclosure or disposal.
+
+Noting that TSTT's initial claim of no data loss was “alarming[ly]” contradictory to the evidence put forward by RansomEXX, Maharaj felt that the incident “places the need for revised legislation not only from a Data Protection perspective but also a cyber crime perspective to provide for an independent regulator and also to empower TT CSIRT [the Trinidad and Tobago Cyber Security Incident Response Team] with the ability to independently act and ensure accuracy and timely release of information and investigations [and] hold companies honest and accountable.”
+
+The Telecommunications Authority of Trinidad and Tobago said it was “disturbed” by the data breach, adding that it viewed this matter as “serious” and planned to “work with service providers to ensure that the highest level of network security is maintained.” Social media users, meanwhile, were getting panicky about their personal data being released onto the dark web, even as cybersecurity experts were saying there was nothing to be done about it.
+
+Quantum Chaos, a global software and technology development firm with offices in the Caribbean, tried to help customers determine whether their information was compromised by creating a name-based search link. Many people took advantage of the tool, which allowed users to determine the number of leaked documents attached to their names. The link does not, however, provide access to the dumped data.
+
+On its LinkedIn page, Quantum Chaos mused:
+
+> TSTT's recent breach reminds us that there is a mountain of work yet to do before we get #caribbean organisations #secure
+
+> The first step is education.
+
+Adding insult to injury was TSTT's likening of the information attained in the breach to that found in a telephone directory, a comparison that Lyndersay found “absurd,” saying, “A phone directory is not malleable information that can be matched with other datasets. It also does not contain bank account information or personal ID information.”
+
+Even as Trinidad and Tobago's public utilities minister did a complete 180° and called for a probe into the TSTT attack, and security consultants were cautioning that RansomEXX could strike again, Lyndersay recalled that regional telecommunications provider Digicel had been hacked by RansomEXX two years ago.
+
+Facebook user and digital strategist Keron Rose remarked:
+
+> We can't blame TSTT for getting hacked…it can happen to anybody.
+
+> The handling and communication from the Minister and TSTT trying to pretend that nothing has happened or that your data is perfectly safe is the problem.
+
+Sharing a report on cybersecurity from the Jamaica Observer, Rose added:
+
+> The OAS Cybersecurity Symposium taught me that the Caribbean is getting hammered by security breaches, with Ransomware being the breach of choice. […]
+
+> Caribbean Cybersecurity is extremely underdeveloped, with a 93% gap in the human capital needed to secure our regions data.
+
+> TSTT is just another company in the long list of companies getting hacked with their data and systems exposed.

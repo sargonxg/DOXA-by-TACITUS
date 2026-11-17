@@ -1,0 +1,461 @@
+{
+  "id": "gv-751882",
+  "publisher_id": 751882,
+  "source_id": "globalvoices:751882",
+  "source_url": "https://globalvoices.org/2021/12/04/omicron-prompts-japan-to-attempt-national-isolation-once-more/",
+  "title": "Omicron prompts Japan to attempt “national isolation” once more",
+  "published_at": "2021-12-04T16:30:35Z",
+  "modified_at": "2021-12-04T16:30:35Z",
+  "api_author_id": 102,
+  "api_content_sha256": "092cc193127b260daafa7dfee81f37d77c570f7c4a309db3366eeee959907485",
+  "api_response_sha256": "23436aa1fa433e408d5199ff0c9b2c6a1aa87ee7b8d8d3a2bcdb8b32f913a715",
+  "api_retrieved_at": "2026-11-16T22:20:39.683023+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 25,
+      "count": 2726,
+      "name": "Japan",
+      "slug": "japan",
+      "parent": 16
+    },
+    {
+      "id": 330,
+      "count": 1249,
+      "name": "Japanese",
+      "slug": "japanese",
+      "parent": 317
+    },
+    {
+      "id": 1358,
+      "count": 4577,
+      "name": "Migration &amp; Immigration",
+      "slug": "migration-immigration",
+      "parent": 238
+    },
+    {
+      "id": 297,
+      "count": 62,
+      "name": "SPECIAL",
+      "slug": "special",
+      "parent": 0
+    },
+    {
+      "id": 280,
+      "count": 5264,
+      "name": "Travel",
+      "slug": "travel",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-751882-b00001",
+      "text": "Following the identification of a new strain of COVID-19, the Japanese government briefly attempted to completely seal the country's air and sea borders. The sudden policy prompted fear and accusations of making a return to two centuries of “national isolation” before the Japanese government backtracked, which in turn created more confusion about just who is allowed into the country.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 386,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00002",
+      "text": "After the Omicron COVID-19 variant was identified in late November 2021, Japan's Ministry of Transportation directed airlines to immediately pause all reservations for Japan-bound flights until the end of December.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 388,
+      "body_end": 602,
+      "source_links": [
+        "https://english.kyodonews.net/news/2021/12/5ac8af578161-japanese-airlines-to-resume-inbound-flight-bookings-for-returnees.html",
+        "https://globalvoices.org/2021/12/01/colonial-prejudices-and-vaccine-nationalism-drive-covid-19-african-travel-bans/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00003",
+      "text": "The new directive also appeared to refuse entry to Japanese citizens, an entirely new policy that appeared to violate Japan's constitution, and, more immediately, leave thousands of travelers stranded outside of the country.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 604,
+      "body_end": 828,
+      "source_links": [
+        "https://www.japantimes.co.jp/news/2021/12/02/national/omicron-restrictions-reversal/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00004",
+      "text": "Following the announcement of an apparent ban on all travel into Japan, hashtags such as #japantravelban and #鎖国 (sakoku) were shared by English speakers on Twitter.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 830,
+      "body_end": 995,
+      "source_links": [
+        "https://twitter.com/hashtag/japantravelban?src=hashtag_click",
+        "https://twitter.com/search?q=%E9%8E%96%E5%9B%BD&src=typed_query"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00005",
+      "text": "Sakoku, or “national isolation”, refers to a period of about two hundred years when Europeans, and later, citizens of the United States, were effectively banned — and Japanese subjects were prohibited from leaving the country — by Japan's military dictatorship.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 997,
+      "body_end": 1258,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Sakoku",
+        "https://en.wikipedia.org/wiki/Tokugawa_shogunate",
+        "https://www.vam.ac.uk/articles/japans-encounter-with-europe-1573-1853"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00006",
+      "text": "Japan, which welcomed 32 million overseas visitors in 2019, the year before the start of the pandemic, has largely cut itself off from the world. By the end of 2021, the total number of annual visitors is forecast to drop to just over 190,000, due to a ban on all but essential travel by foreign visitors and permanent (non-Japanese) residents.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1260,
+      "body_end": 1604,
+      "source_links": [
+        "https://www.mofa.go.jp/ca/cp/page22e_000925.html",
+        "https://www.tourism.jp/en/tourism-database/stats/inbound/#annual"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00007",
+      "text": "After several days of mounting criticism of the government that was described as a “crisis,” the Japanese government seemed to reverse course, causing yet more confusion.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1606,
+      "body_end": 1776,
+      "source_links": [
+        "https://twitter.com/GearoidReidy/status/1466226576563965955",
+        "https://www.japantimes.co.jp/news/2021/12/03/national/kishida-flight-reversal/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00008",
+      "text": "There were reports that neither Prime Minister Kishida Fumio, who had been enjoying a honeymoon period after winning election one month earlier, nor Transportation Minister Saito Tetsuo were aware of the directive by Transportation Ministry bureaucrats that banned Japanese nationals from the country.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1778,
+      "body_end": 2079,
+      "source_links": [
+        "https://globalvoices.org/2021/11/06/why-cant-japans-opposition-parties-win/",
+        "https://twitter.com/GearoidReidy/status/1466324887128223747",
+        "https://www.japantimes.co.jp/news/2021/12/02/national/omicron-restrictions-reversal/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00009",
+      "text": "According to a news report by NHK, Japan's public broadcaster, as of December 3, 2021, Japan's borders are essentially closed to all non-residents of the country, although citizens of several African countries were targeted for exclusion:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2081,
+      "body_end": 2319,
+      "source_links": [
+        "https://www3.nhk.or.jp/nhkworld/en/news/backstories/1832/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00010",
+      "text": "> New foreign arrivals are banned (exceptions include spouses or children of citizens or permanent residents, and diplomats)",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2321,
+      "body_end": 2445,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-751882-b00011",
+      "text": "> Foreign residents of Japan are able to leave and re-enter from 152 countries and territories",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2447,
+      "body_end": 2541,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-751882-b00012",
+      "text": "> Foreign residents cannot re-enter Japan if they have been in 10 countries in southern Africa within the past 14 days (the restriction does not apply to Japanese citizens)",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2543,
+      "body_end": 2715,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-751882-b00013",
+      "text": "The African countries affected by the outright ban are Angola, Botswana, Eswatini, Lesotho, Malawi, Mozambique, Namibia, South Africa, Zambia and Zimbabwe. This focus on banning travelers from African countries is in spite of rising cases of the Omicron variant outside of Africa.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2717,
+      "body_end": 2997,
+      "source_links": [
+        "https://japantoday.com/category/national/urgent-japan-to-bar-foreign-resident-re-entry-from-areas-flagged-for-omicron",
+        "https://twitter.com/TrevorABranch/status/1464748201601159169?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1464748201601159169%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fglobalvoices.org%2F2021%2F12%2F01%2Fcolonial-prejudices-and-vaccine-nationalism-drive-covid-19-african-travel-bans%2F"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00014",
+      "text": "In addition, the Japanese government capped the number of monthly arrivals of non-Japanese people from 5,000 pre-Omicron to just 3,500 per month, beginning in December. This reduction in airline capacity may effectively ban Japanese nationals caught outside the country during the emerging response to Omicron from returning to Japan",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2999,
+      "body_end": 3332,
+      "source_links": [
+        "https://english.kyodonews.net/news/2021/12/5ac8af578161-japanese-airlines-to-resume-inbound-flight-bookings-for-returnees.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00015",
+      "text": "The move by the Japanese government to effectively close its borders to foreigners was questioned by Michael Ryan, a World Health Organization representative, who remarked:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3334,
+      "body_end": 3506,
+      "source_links": [
+        "https://english.kyodonews.net/news/2021/12/28670f8f00db-urgent-kishida-hints-at-review-of-japans-re-entry-restrictions-over-omicron.html?phrase=kuriles&words="
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00016",
+      "text": "> Epidemiologically, I find it hard to understand the principle there. Does the virus read your passport? Does the virus know your nationality or where you are legally resident?",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3508,
+      "body_end": 3685,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-751882-b00017",
+      "text": "Japan has largely controlled the spread of COVID-19, with daily deaths from the diseases in the country of 116 million down to single digits in November 2021. There were hopes the country would loosen travel restrictions.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3687,
+      "body_end": 3908,
+      "source_links": [
+        "https://twitter.com/JDMayger/status/1466677658901630976"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00018",
+      "text": "Post-Omicron, the tightening border controls were a blow for many foreign residents of Japan. Due to the threat of sudden changes in border controls that would leave them stranded outside of Japan, such as the short-lived but quickly announced ban on inbound flights in late November, many foreign residents have been largely confined to the archipelago since the start of the pandemic, unable to visit overseas friends and family.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3910,
+      "body_end": 4341,
+      "source_links": [
+        "https://www3.nhk.or.jp/nhkworld/en/news/backstories/1832/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00019",
+      "text": "Since the start of the pandemic, Japan's strict COVID-19 entry restrictions on anyone who is not a Japanese citizen or permanent resident have also delayed or destroyed the plans of students hoping to study in the country.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4343,
+      "body_end": 4565,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00020",
+      "text": "One example of Japan's strict and seemingly unreasonable limitations on entry to Japan is the case of Melek Ortabasi, a dual Canadian-American citizen who currently resides as a student in Japan. Her children, who are not Japanese citizens or permanent residents, are not permitted to join her in Japan, a situation Ortabasi characterizes as a human rights violation:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4567,
+      "body_end": 4934,
+      "source_links": [
+        "https://shingetsunewsagency.com/2021/12/03/the-inhumanity-of-japans-travel-ban/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00021",
+      "text": "In early November, the Japanese government had indicated it would start to allow international students to return to Japan to resume their studies. However, the emergence of the Omicron variant at the end of the month appears to have left these students in limbo:",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4936,
+      "body_end": 5199,
+      "source_links": [
+        "https://twitter.com/johnclarkdamico/status/1466420352876220436",
+        "https://www.timeshighereducation.com/news/japan-expected-reopen-border-international-students"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00022",
+      "text": "Some were able to see the humor — or irony — in Japan's brief attempt to impose a total ban on travel into the country on Japanese citizens and non-citizens alike.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5201,
+      "body_end": 5364,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00023",
+      "text": "Clinton Godart, a Dutch-born history professor who teaches in Japan, suggested that the country's new approach to sakoku might be fine with him. During Japan's two hundred years of national isolation, the only Westerners allowed into Japan were Dutch, who were confined to a small island in Nagasaki harbor, in western Japan.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5366,
+      "body_end": 5691,
+      "source_links": [
+        "https://www.linkedin.com/in/clinton-godart-9739b384/?originalSubdomain=jp",
+        "https://www.ndl.go.jp/nichiran/e/s1/s1_2.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-751882-b00024",
+      "text": "> Japan, you seem to be reintroducing “national isolation” (sakoku). I don't mind Nagasaki at all, and I'm a Dutchman, too, so please allow me.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5693,
+      "body_end": 5836,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-751882-b00025",
+      "text": "> If the Japanese are banned from leaving the country, the isolation will be completed.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5838,
+      "body_end": 5925,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "850a97e493393ebfc52a971b36e77563de35ac2d32908af7627955ab2b93125d",
+  "word_count": 928,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 4,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5925,
+  "retrieved_at": "2026-11-16T22:32:50.929838+00:00",
+  "raw_html_sha256": "bd9c0945e4dfbac8338f2b6908de30f18481d0b1994d3f2b34939c82e9cd8148",
+  "resolved_source_url": "https://globalvoices.org/2021/12/04/omicron-prompts-japan-to-attempt-national-isolation-once-more/",
+  "canonical_url": "https://globalvoices.org/2021/12/04/omicron-prompts-japan-to-attempt-national-isolation-once-more/",
+  "source_bytes": 195301,
+  "authors": [
+    {
+      "name": "Nevin Thompson",
+      "url": "https://globalvoices.org/author/nevin-thompson/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 751882,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "bd9c0945e4dfbac8338f2b6908de30f18481d0b1994d3f2b34939c82e9cd8148",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-ad117b51bf9341382655",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-12",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Nevin Thompson",
+  "body_start": 462,
+  "body_end": 6387,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "38852bf6bc64282f42681d8e532102abd08b5018d4b3affccf2d652e50632d93",
+  "text_path": "articles/gv-751882.txt",
+  "metadata_path": "metadata/gv-751882.json",
+  "attribution": "This story by Nevin Thompson originally appeared on Global Voices. https://globalvoices.org/2021/12/04/omicron-prompts-japan-to-attempt-national-isolation-once-more/",
+  "content_sha256": "4f639ee575f22af6a027d3dba5861fcb680a8432c5a40babdef2e4186285ab63",
+  "source_sha256": "bd9c0945e4dfbac8338f2b6908de30f18481d0b1994d3f2b34939c82e9cd8148",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,481 @@
+{
+  "id": "gv-692380",
+  "publisher_id": 692380,
+  "source_id": "globalvoices:692380",
+  "source_url": "https://globalvoices.org/2020/01/07/internet-disruption-different-terms-for-different-tactics/",
+  "title": "Internet disruption: different terms for different tactics",
+  "published_at": "2020-01-07T06:50:04Z",
+  "modified_at": "2020-01-07T14:45:08Z",
+  "api_author_id": 1591,
+  "api_content_sha256": "a42b186f3e1590e672f46ab742d73e05577957b7902862b3edd2d1ec7ea12d84",
+  "api_response_sha256": "3390ca1fcc4f1c57431caafba57c9783cc7cc7ec234f150bc4b9743fc1151e5c",
+  "api_retrieved_at": "2026-11-16T22:20:21.760310+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-692380-b00001",
+      "text": "As the internet progressively becomes an intrinsic part of our daily lives — from communicating with friends and applying for social services, to studying and working — staying connected is no longer a luxury but a necessity. In this context, internet shutdowns have evolved into a human rights issue with the power to severely disrupt people’s lives. Apart from the documented negative economic impacts, intentional internet shutdowns can be weaponized to silence dissent and stunt protest movements. However, internet shutdowns are on the rise with 196 intentional internet disruptions recorded in 2018 alone. In 2019, Global Voices covered internet shutdowns in Zimbabwe, Myanmar, Mauritania, Ethiopia, Iraq, and Ecuador to name a few.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 738,
+      "source_links": [
+        "https://advox.globalvoices.org/2019/06/28/netizen-report-conflict-triggers-internet-shutdowns-in-mauritania-myanmar-and-ethiopia-again/",
+        "https://globalnetworkinitiative.org/%E2%80%8Bnew-report-reveals-the-economic-costs-of-internet-shutdowns/",
+        "https://globalvoices.org/2019/01/29/amid-civil-unrest-internet-shutdowns-are-making-zimbabwes-economic-crisis-worse/",
+        "https://globalvoices.org/2019/10/11/netizen-report-iraq-and-ecuador-face-network-shutdowns-amid-public-protests/",
+        "https://globalvoices.org/2019/11/30/exclusion-in-access-to-public-information-for-marginalized-groups-in-india/",
+        "https://www.accessnow.org/cms/assets/uploads/2019/07/KeepItOn-2018-Report.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00002",
+      "text": "An internet shutdown is defined as “an intentional disruption of internet or electronic communications, rendering them inaccessible or effectively unusable, for a specific population or within a location, often to exert control over the flow of information’’. Read more at accessnow.org/keepiton.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 740,
+      "body_end": 1036,
+      "source_links": [
+        "https://accessnow.org/keepiton"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00003",
+      "text": "Now more than ever it is vital for internet users to understand the different vocabulary being used to describe different types of internet disruptions and how they work. One or all of the following tactics can be used to intentionally disrupt the internet.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1038,
+      "body_end": 1295,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00004",
+      "text": "Bandwidth throttling",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1297,
+      "body_end": 1317,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00005",
+      "text": "Bandwidth is defined as “a measurement of the amount of information that can be sent between computers, through a phone line, etc.” An internet connection with high bandwidth can send data (like a video or an image file) faster than a low bandwidth connection. Bandwidth throttling refers to the intentional limitation of bandwidth which can be translated into a limitation on the speed with which a set amount of data can move. One of the ways this can happen is when an Internet Service Provider (ISP) intentionally slows down internet service (at the request of a government body) making the connection so slow it is basically unusable. This can happen on a network-wide level or can be used to target specific apps and websites. This tactic is often used to prevent the spread of videos, photos or audio files as these require higher bandwidth to share.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1319,
+      "body_end": 2176,
+      "source_links": [
+        "https://dictionary.cambridge.org/dictionary/english/bandwidth",
+        "https://en.wikipedia.org/wiki/Bandwidth_throttling#Throttling_vs._capping",
+        "https://www.accessnow.org/cms/assets/uploads/2019/07/KeepItOn-2018-Report.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00006",
+      "text": "According to Access Now’s 2018 #KeepItOn Report, “throttling is much harder to verify than other forms of shutdowns”. This is because, in areas where internet infrastructure is not well developed, people may confuse intentional throttling with the technical difficulties they frequently face.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2178,
+      "body_end": 2470,
+      "source_links": [
+        "https://freedomhouse.org/blog/explainer-when-internet-goes-down-what-who-and-why",
+        "https://www.accessnow.org/cms/assets/uploads/2019/07/KeepItOn-2018-Report.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00007",
+      "text": "The use of throttling has been covered by Global Voices in different countries and regions around the world.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2472,
+      "body_end": 2580,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00008",
+      "text": "Widespread throttling puts social media out of reach in Kazakhstan",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2582,
+      "body_end": 2648,
+      "source_links": [
+        "https://globalvoices.org/2019/05/11/netizen-report-widespread-throttling-puts-social-media-out-of-reach-in-kazakhstan/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00009",
+      "text": "From 7-9 May 2019, Kazakhstani internet users were unable to access major social media networks due to nation-wide throttling which coincided with planned demonstrations by opposition leaders on 9 May.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2650,
+      "body_end": 2851,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00010",
+      "text": "Indonesia's post-election riots led to free speech violations",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2853,
+      "body_end": 2914,
+      "source_links": [
+        "https://advox.globalvoices.org/2019/06/15/indonesias-post-election-riots-led-to-free-speech-violations/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00011",
+      "text": "Also in May 2019, Indonesia was rocked by protests in the capital, Jakarta, after defeated presidential candidate Prabowo Subianto blamed systemic cheating and rigged election results for his loss at the polls. As protesters took to the streets, the Indonesian government throttled connectivity to specific social media apps.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2916,
+      "body_end": 3241,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00012",
+      "text": "Platform-specific blocking",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3243,
+      "body_end": 3269,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00013",
+      "text": "Other shutdowns take the form of platform-specific blocking also known as “content blocking” or “partial shutdowns”. Sites and apps like Instagram, Telegram, WhatsApp, Twitter and Facebook can be targeted while other websites are still available for use. In some countries where platforms like Facebook are synonymous with the internet itself, platform-specific blocking severely limits access to the internet. Platform-specific blocking has become more common during moments of civil unrest and elections as a means to prevent large-scale protest organization. According to NetBlocks, during the October 2019 protests in Iraq, multiple ISPs blocked access to Facebook, Twitter, WhatsApp, Instagram and other social media and messaging apps. Many governments claim that these blocking tactics are a method to prevent the spread of misinformation and to quell the possibility of violence.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3271,
+      "body_end": 4158,
+      "source_links": [
+        "https://freedomhouse.org/blog/explainer-when-internet-goes-down-what-who-and-why",
+        "https://globalvoices.org/2019/11/28/nigerias-social-media-bill-will-obliterate-online-freedom-of-expression/",
+        "https://netblocks.org/reports/iraq-blocks-facebook-twitter-whatsapp-and-instagram-amid-civil-unrest-zA4zGlyR",
+        "https://techcrunch.com/2018/05/01/facebook-free-basics-ending-myanmar-internet-org/",
+        "https://www.aljazeera.com/indepth/features/internet-blackouts-rise-government-imposed-shut-downs-190614091628723.html",
+        "https://www.internetsociety.org/policybriefs/internet-shutdowns"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00014",
+      "text": "In 2019, Global Voices reported on cases of platform-specific blocking in Venezuela, Turkey, Ecuador, Iraq and more.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4160,
+      "body_end": 4276,
+      "source_links": [
+        "https://globalvoices.org/2019/10/11/netizen-report-iraq-and-ecuador-face-network-shutdowns-amid-public-protests/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00015",
+      "text": "Reports of internet blocks and media censorship as power struggle tensions escalate in Venezuela",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4278,
+      "body_end": 4374,
+      "source_links": [
+        "https://twitter.com/vesinfiltro/status/1087364137057964037"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00016",
+      "text": "In late January 2019, after Venezuelan opposition leader Juan Guaidó invoked articles in the country’s constitution to attempt to take power from President Nicolás Maduro, anti-Maduro protests erupted in several parts of the country. According to internet observer organization VEsinfiltro, blocks to Instagram, Twitter and Youtube were recorded. Journalist and GV contributor Luis Carlos Diaz stated that this was a way for Maduro’s government to prevent Guaidó’s message from reaching a wider audience.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4376,
+      "body_end": 4880,
+      "source_links": [
+        "https://twitter.com/LuisCarlos/status/1088829900990177280?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1088829900990177280&ref_url=https%3A%2F%2Fglobalvoices.org%2F2019%2F01%2F26%2Freports-of-internet-blocks-and-media-censorship-as-power-struggle-tensions-escalate-in-venezuela%2F",
+        "https://twitter.com/vesinfiltro/status/1087364137057964037?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1087364137057964037&ref_url=https%3A%2F%2Fglobalvoices.org%2F2019%2F01%2F26%2Freports-of-internet-blocks-and-media-censorship-as-power-struggle-tensions-escalate-in-venezuela%2F"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00017",
+      "text": "Months after pledge to open internet, Ethiopia disrupts connectivity amidst communal violence, tension",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4882,
+      "body_end": 4984,
+      "source_links": [
+        "https://advox.globalvoices.org/2019/08/29/months-after-pledge-to-open-internet-ethiopia-disrupts-connectivity-amidst-communal-violence-tension/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00018",
+      "text": "In June 2019, Ethiopia saw three major internet disruptions, including a preemptive shutdown due to a national exam that lasted three days, an unexplained internet blackout the lasted for at least 100 hours and a shutdown due to political violence in Amhara State, Ethiopia’s second-largest region. After the public regained access to the internet, specific sites like Facebook and WhatsApp were still unavailable until August.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4986,
+      "body_end": 5413,
+      "source_links": [
+        "https://netblocks.org/reports/internet-shutdown-in-ethiopia-amid-reports-of-attempted-coup-pA5KvNy7",
+        "https://www.africanews.com/2019/06/17/ethiopia-restores-internet-connection-outage-roundly-rebuked//",
+        "https://www.bloomberg.com/cybersecurity"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00019",
+      "text": "Blanket internet shutdown",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5415,
+      "body_end": 5440,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00020",
+      "text": "The most drastic of all the internet disruption tactics is a complete internet shutdown also known as a “blanket shutdown”, a “kill switch” or a “blackout”. While the previously mentioned tactics still allow people to access the internet, albeit in a limited fashion, internet blackouts mean that connection to the internet is cut. This can happen unintentionally when there is damage to undersea telecommunication cables, but it is most common when governments turn it off intentionally. When this happens, governments work with service providers to shut down access to all forms of internet connection making digital security tools that are usually effective at bypassing internet blocks, like Virtual Private Networks (VPNs), unusable. However, internet infrastructure is designed to be decentralized so completely shutting down the internet is a very complex task if not currently impossible. During what is commonly known as a blanket shutdown, the internet is often still available for a limited sector of the population such as government officials.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5442,
+      "body_end": 6498,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Virtual_private_network",
+        "https://gizmodo.com/what-would-it-take-to-shut-down-the-entire-internet-1837984019",
+        "https://www.accessnow.org/internet-kill-switches-are-a-violation-of-human-rights-law-declare-major-un/",
+        "https://www.aljazeera.com/indepth/features/internet-blackouts-rise-government-imposed-shut-downs-190614091628723.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00021",
+      "text": "Blanket shutdowns began to gain notoriety when the Egyptian government cut off access to the internet during political protests in 2011. Since then, blanket shutdowns have been employed in many countries including India, Chad, Indonesia, Zimbabwe and recently in Iran.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6500,
+      "body_end": 6768,
+      "source_links": [
+        "https://www.internetsociety.org/policybriefs/internet-shutdowns#_edn5",
+        "https://www.localizationlab.org/blog/2019/2/5/1i93a95cm8rdegvtqu3xm9n7gloyqh",
+        "https://www.telegraph.co.uk/news/worldnews/africaandindianocean/egypt/8288163/How-Egypt-shut-down-the-internet.html",
+        "https://www.wired.com/story/iran-internet-shutoff/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00022",
+      "text": "Amid civil unrest, internet shutdowns are making Zimbabwe's economic crisis worse",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6770,
+      "body_end": 6851,
+      "source_links": [
+        "https://globalvoices.org/2019/01/29/amid-civil-unrest-internet-shutdowns-are-making-zimbabwes-economic-crisis-worse/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00023",
+      "text": "Civil unrest erupted in Zimbabwe after the government announced plans for a 150 percent hike on fuel prices in January 2019. The military was deployed to quell the protesters and the government implemented a complete internet blackout from 14 January to 20 January 2019.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6853,
+      "body_end": 7123,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00024",
+      "text": "The shutdown in Kashmir continues",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7125,
+      "body_end": 7158,
+      "source_links": [
+        "https://advox.globalvoices.org/2019/08/22/netizen-report-the-shutdown-in-kashmir-continues/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00025",
+      "text": "In August 2019, when the Indian government revoked the special status given to the state of Kashmir and Jammu, a communications blackout was imposed which included shutting down the internet and cutting off access to mobile and fixed telephone lines.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7160,
+      "body_end": 7410,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00026",
+      "text": "What does the future hold?",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 7412,
+      "body_end": 7438,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00027",
+      "text": "As the number of internet shutdowns continues to grow, civil society organizations are sounding the alarm and using their collective power to demand that governments view access to the internet as a fundamental human right.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7440,
+      "body_end": 7663,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00028",
+      "text": "In Uganda, several organizations penned a letter to the African Union asking them to condemn Uganda’s 2016 decision to shut down the internet. In early December 2019, civil society groups from Indonesia sued the Indonesian government for enforcing an internet shutdown in the Papua and West Papua regions after the eruption of student protests.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7665,
+      "body_end": 8009,
+      "source_links": [
+        "https://advox.globalvoices.org/2019/11/26/will-uganda-shut-down-the-internet-as-opposition-heats-up-for-2021-elections/",
+        "https://www.thejakartapost.com/news/2019/12/02/civil-society-groups-will-face-government-in-court-over-papuan-internet-blackout.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-692380-b00029",
+      "text": "However, despite valiant efforts on the part of activists and civil society, the different forms of shutdowns are still on the rise and 2020 doesn't look like it will be any different.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 8011,
+      "body_end": 8195,
+      "source_links": [
+        "https://www.aljazeera.com/indepth/features/internet-blackouts-rise-government-imposed-shut-downs-190614091628723.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "d91dbcaef7cba344f67249513e7d15a087c6d876dd99ddd26341ba63a57d0e94",
+  "word_count": 1242,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 4,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8195,
+  "retrieved_at": "2026-11-16T22:21:19.603153+00:00",
+  "raw_html_sha256": "a18d344f0fdf125081c473bf582546c26a330fe445abd0ebc666fc041dd83202",
+  "resolved_source_url": "https://globalvoices.org/2020/01/07/internet-disruption-different-terms-for-different-tactics/",
+  "canonical_url": "https://globalvoices.org/2020/01/07/internet-disruption-different-terms-for-different-tactics/",
+  "source_bytes": 197399,
+  "authors": [
+    {
+      "name": "Advox",
+      "url": "https://globalvoices.org/author/advox/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 692380,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "a18d344f0fdf125081c473bf582546c26a330fe445abd0ebc666fc041dd83202",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-be706fd22f83b086a0c8",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-01",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Advox",
+  "body_start": 444,
+  "body_end": 8639,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "a041e105cbd71fcbbb189ef17afa51f860044b8a62d80fc05d25b2fb2c911a01",
+  "text_path": "articles/gv-692380.txt",
+  "metadata_path": "metadata/gv-692380.json",
+  "attribution": "This story by Advox originally appeared on Global Voices. https://globalvoices.org/2020/01/07/internet-disruption-different-terms-for-different-tactics/",
+  "content_sha256": "705a6d64e605f16403afcecbfe0a637ebf0b81dd6199f9c3319dfdf5df9f529b",
+  "source_sha256": "a18d344f0fdf125081c473bf582546c26a330fe445abd0ebc666fc041dd83202",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,400 @@
+{
+  "id": "gv-745315",
+  "publisher_id": 745315,
+  "source_id": "globalvoices:745315",
+  "source_url": "https://globalvoices.org/2021/09/08/kazakhstan-news-site-receives-threats-after-reigniting-a-child-abuse-story/",
+  "title": "Kazakhstan news site receives threats after reigniting a child abuse story",
+  "published_at": "2021-09-08T06:25:11Z",
+  "modified_at": "2022-01-07T17:27:31Z",
+  "api_author_id": 2869,
+  "api_content_sha256": "0168bd8469b1ec8006016a5cdd35afb12548789716571ba9beff0680c239b9bb",
+  "api_response_sha256": "165e22c0d07dffa7c54bb5a94004307666a766d7b47627d5d5c9d5c39f78514e",
+  "api_retrieved_at": "2026-11-16T22:20:38.264060+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 288,
+      "count": 7347,
+      "name": "Central Asia &amp; Caucasus",
+      "slug": "central-asia-caucasus",
+      "parent": 219
+    },
+    {
+      "id": 247,
+      "count": 4731,
+      "name": "Education",
+      "slug": "education",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 81,
+      "count": 1267,
+      "name": "Kazakhstan",
+      "slug": "kazakhstan",
+      "parent": 288
+    },
+    {
+      "id": 238,
+      "count": 1673,
+      "name": "TOPICS",
+      "slug": "topics",
+      "parent": 0
+    },
+    {
+      "id": 218,
+      "count": 1666,
+      "name": "TYPE",
+      "slug": "type",
+      "parent": 0
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-745315-b00001",
+      "text": "The Village, a popular internet news outlet in Kazakhstan, was established in 2017 as a light read mostly targeting readers from Almaty, the country's most populous city. It soon turned into a voice for independent journalism, triggering the attention of those who dislike reporters researching thorny issues.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 309,
+      "source_links": [
+        "https://www.the-village-kz.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-745315-b00002",
+      "text": "After journalist Assem Zhapisheva wrote a follow-up to a harrowing story about child rape that had been in the headlines since 2018—which reached a readership of 40,000 in just 24 hours, impressive for a long read in Kazakhstan—she started receiving threatening phone calls, allegedly from public officials. Zhapisheva immediately turned off her phone and appealed to the authorities to investigate, while on September 1 The Village wrote a public complaint on its Telegram channel:",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 311,
+      "body_end": 793,
+      "source_links": [
+        "https://t.me/villagekazakhstan/9675",
+        "https://t.me/zhapisheva/4187",
+        "https://www.the-village-kz.com/village/people/don-t-tell-mom/18773-malchik-iz-abaya"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-745315-b00003",
+      "text": "> Мы вынуждены сообщить, что прямо сейчас на нашу редакцию совершается атака неустановленных лиц, представляющихся различными ведомствами с требованием удалить статью.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 795,
+      "body_end": 962,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-745315-b00004",
+      "text": "> Мы требуем прекратить давление на независимых журналистов. Мы не намерены удалять опубликованный материал.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 964,
+      "body_end": 1072,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-745315-b00005",
+      "text": "> Этим лицам же советуем решать проблемы в стране, а не пытаться заткнуть журналистов.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1074,
+      "body_end": 1160,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-745315-b00006",
+      "text": "> We inform you that unknown individuals, who introduce themselves as state officials, are attacking us, demanding we remove the article from our website.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1162,
+      "body_end": 1316,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-745315-b00007",
+      "text": "> We demand that they stop pressuring independent journalists. We do not intend to remove our article.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1318,
+      "body_end": 1420,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-745315-b00008",
+      "text": "> We suggest they [try and] solve the problems in the country, rather than attempt to shut journalists up.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1422,
+      "body_end": 1528,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-745315-b00009",
+      "text": "The Ministry of Information sent a note the following day, saying that its representative had indeed contacted the editorial office of The Village, but only to “provide assistance regarding the accuracy of the information presented,” not to pressure its journalists.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1530,
+      "body_end": 1796,
+      "source_links": [
+        "https://vlast.kz/novosti/46479-mininform-zaavil-o-gotovnosti-pomoc-redakcii-the-village-kazakhstan-iz-za-postupausih-ugroz.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-745315-b00010",
+      "text": "Hours later, the country's Ombudsman for Children, Aruzhan Sain, noted in a Facebook post that Zhapisheva's article falsely stated the child still lives in the Abai village, whereas he had been relocated with his mother years ago. In 2018, over the course of six months, the child had been repeatedly raped by older boys in the village of Abai, in the south of the country.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1798,
+      "body_end": 2171,
+      "source_links": [
+        "https://ru.sputnik.kz/society/20190307/9529004/abaj-malchik-pravosudie-obshchestvennica.html",
+        "https://www.facebook.com/aruzhan.sain/posts/4261851437230322"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-745315-b00011",
+      "text": "Erden Zikibay, a local artist, drew an illustration in which he juxtaposed the golden heritage of 19th century poet Abai with the dark reality of rural Kazakhstan under then-president Nursultan Nazarbayev, where violence and rape go unpunished.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2173,
+      "body_end": 2417,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Abai_Qunanbaiuly",
+        "https://en.wikipedia.org/wiki/Nursultan_Nazarbayev",
+        "https://www.instagram.com/zikibay/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-745315-b00012",
+      "text": "Locals—including the victim's parents, as well as school directors and village authorities—tried to cover up the story for as long as possible, until the boy's grandmother managed to catch the attention of journalist Amangeldy Batyrbekov.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2419,
+      "body_end": 2657,
+      "source_links": [
+        "https://cpj.org/2019/10/kazakh-journalist-amangeldy-batyrbekov-jailed-on-c/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-745315-b00013",
+      "text": "Batyrbekov's report uncovered the truth about abuse, laying bare a society all too keen to victim-blame and condone bullying. In Kazakhstan, it is considered better to cover up something as ‘shameful’ as rape, rather than denouncing it and making it public. Despite the case grabbing national headlines, no one was ever punished for the crime.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2659,
+      "body_end": 3002,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-745315-b00014",
+      "text": "Rather, Batyrbekov received threats for publishing the article and was ultimately sentenced for libel in 2019, after reports that unveiled cases of corruption in the education sector. His initial sentence of two years and three months in prison was overturned on appeal, and he was freed after serving four months in jail.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3004,
+      "body_end": 3326,
+      "source_links": [
+        "https://rsf.org/en/news/journalist-jailed-defamation-charge-southern-kazakhstan",
+        "https://www.rferl.org/a/kazakhstan-rape-victim-reporting-pressure/31440393.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-745315-b00015",
+      "text": "Batyrbekov's case was not an isolated one. In June, press freedom watchdog Adil Soz published a report on the many death threats against Ak Zhaiyk's editor-in-chief Azamat Maitanov and his staff. A popular newspaper in the Atyrau region, Ak Zhaiyk is one of the few independent voices in western Kazakhstan.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3328,
+      "body_end": 3635,
+      "source_links": [
+        "http://www.adilsoz.kz/",
+        "https://cpj.org/2021/06/kazakh-newspaper-aq-zhayiq-and-editor-azamat-maitanov-receive-death-threats/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-745315-b00016",
+      "text": "Another staunch independent outlet, Uralskaya Nedelya, has been the target of harassment for years. On several occasions, its chief editor, Lukpan Akhmediyarov, has withstood threats and police pressure related to stories the paper has published.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3637,
+      "body_end": 3883,
+      "source_links": [
+        "https://diapazon.kz/news/3497-zhurnalist-lukpan-akhmedjarov-posazhen-na-pjat",
+        "https://eurasianet.org/kazakhstan-feisty-newspaper-rages-against-the-dying-of-the-light",
+        "https://www.nhc.no/en/kazakhstan-hans-off-independent-journalists/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-745315-b00017",
+      "text": "According to media watchdog Reporters Without Borders, Kazakhstan is among the worst-performing countries in terms of press freedom. Just months ago, the Pegasus Project, an investigation of leaked documents, showed how several journalists had been targeted with spyware by the country's security services.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3885,
+      "body_end": 4191,
+      "source_links": [
+        "https://globalvoices.org/2021/07/22/devices-of-journalists-government-officials-in-kazakhstan-hacked-and-spied-on/",
+        "https://rsf.org/en/ranking/2021"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-745315-b00018",
+      "text": "Whether through harassment, threats, or direct violence, journalists in Kazakhstan continue to find themselves under pressure from both the authorities and local elites.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4193,
+      "body_end": 4362,
+      "source_links": [
+        "https://cpj.org/2018/04/kazakhstan-police-raid-newsrooms-detain-journalist/",
+        "https://www.asiamaior.org/the-journal/12-asia-maior-vol-xxx-2019/kazakhstan-2018-2019-change-and-continuity-amid-economic-stagnation.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "3f80c38748f1a4b7f490cd9fa7c4e4a1c0203d5f0577df9bfd4e21bad15f5e17",
+  "word_count": 665,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 2,
+      "reason": "Executable or external/non-text media excluded"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4362,
+  "retrieved_at": "2026-11-16T22:31:50.255220+00:00",
+  "raw_html_sha256": "85f1faee4acab71fb86b0a9627195c272c6227ce9d2ebde9dd845137ebf99cc1",
+  "resolved_source_url": "https://globalvoices.org/2021/09/08/kazakhstan-news-site-receives-threats-after-reigniting-a-child-abuse-story/",
+  "canonical_url": "https://globalvoices.org/2021/09/08/kazakhstan-news-site-receives-threats-after-reigniting-a-child-abuse-story/",
+  "source_bytes": 198866,
+  "authors": [
+    {
+      "name": "Paolo Sorbello",
+      "url": "https://globalvoices.org/author/paolo-sorbello/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 745315,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "85f1faee4acab71fb86b0a9627195c272c6227ce9d2ebde9dd845137ebf99cc1",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-e5fdd5f7bd00cc93f3eb",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-09",
+    "eligible_month_documents": 83,
+    "selected_month_documents": 69,
+    "inclusion_probability": 0.8313253012048193,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Paolo Sorbello",
+  "body_start": 486,
+  "body_end": 4848,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "e4340d43bd06a34a4db1761e86368b7c6779293d053c77b40c7908535811d25b",
+  "text_path": "articles/gv-745315.txt",
+  "metadata_path": "metadata/gv-745315.json",
+  "attribution": "This story by Paolo Sorbello originally appeared on Global Voices. https://globalvoices.org/2021/09/08/kazakhstan-news-site-receives-threats-after-reigniting-a-child-abuse-story/",
+  "content_sha256": "fbf8f8fb4c45b52e1cbc2c21d9368967b8d91f927bd89b5ca4b2e0f52be3d28a",
+  "source_sha256": "85f1faee4acab71fb86b0a9627195c272c6227ce9d2ebde9dd845137ebf99cc1",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

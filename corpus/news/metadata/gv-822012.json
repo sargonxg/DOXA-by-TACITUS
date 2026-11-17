@@ -1,0 +1,494 @@
+{
+  "id": "gv-822012",
+  "publisher_id": 822012,
+  "source_id": "globalvoices:822012",
+  "source_url": "https://globalvoices.org/2024/10/11/brazils-supreme-court-lifts-suspension-of-x-after-musk-backs-down/",
+  "title": "Brazil's Supreme Court lifts suspension of X after Musk backs down",
+  "published_at": "2024-10-11T15:08:29Z",
+  "modified_at": "2024-10-14T06:16:34Z",
+  "api_author_id": 2553,
+  "api_content_sha256": "bc67c4fb82654e91bee8bda169f4c3bca1f14ffe70c968500503e60d81720f42",
+  "api_response_sha256": "08596ab71ccd06b167b4be2f46af30954d7e1cf6998048b9e0bf4d20b49dc94a",
+  "api_retrieved_at": "2026-11-16T22:21:06.740015+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 336,
+      "count": 2224,
+      "name": "Portuguese",
+      "slug": "portuguese",
+      "parent": 317
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-822012-b00001",
+      "text": "After over a month of suspension, Brazilians regained access to X (formerly Twitter) starting on October 8. The return was gradual, and some internet providers only managed to fully reinstate the platform the following day.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 223,
+      "source_links": [
+        "https://www.nytimes.com/2024/10/08/world/americas/brazil-x-ban-musk.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00002",
+      "text": "Supreme Court justice Alexandre de Moraes allowed the return of X in the country after the company — and its billionaire owner Elon Musk — agreed to comply with state legal orders, as he writes in his eight-page-long decision:",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 225,
+      "body_end": 451,
+      "source_links": [
+        "https://apnews.com/article/brazil-x-elon-musk-supreme-court-de-moraes-e32c4b4171e78cbe8994f53713a922f7",
+        "https://en.wikipedia.org/wiki/Alexandre_de_Moraes",
+        "https://static.poder360.com.br/2024/10/decisao-desbloquar-X-Moraes.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00003",
+      "text": "> O retorno das atividades da X BRASIL INTERNET LTDA. em",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 453,
+      "body_end": 509,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-822012-b00004",
+      "text": "> território nacional foi condicionado, unicamente, ao cumprimento",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 511,
+      "body_end": 577,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-822012-b00005",
+      "text": "> integral da legislação brasileira e da absoluta observância às decisões do",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 579,
+      "body_end": 655,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-822012-b00006",
+      "text": "> Poder Judiciário, em respeito à soberania nacional.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 657,
+      "body_end": 710,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-822012-b00007",
+      "text": "> The resumption of activities by X BRASIL INTERNET LTDA. Within the national territory was contingent solely on full compliance with Brazilian law and strict adherence to judicial rulings, in respect of national sovereignty.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 712,
+      "body_end": 937,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-822012-b00008",
+      "text": "The Prosecutor General's Office (PGR, Procuradoria Geral da República, in Portuguese) was also in favour of withdrawing the suspension. Paulo Gonet, the prosecutor general, said he didn't see any reason to maintain the suspension after the company had paid USD 5.2 million in fines, named a legal representative in Brazil, and complied with the Supreme Court's request to block certain accounts.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 939,
+      "body_end": 1334,
+      "source_links": [
+        "https://www.conjur.com.br/2024-out-08/pgr-se-manifesta-por-desbloqueio-do-x-e-abre-caminho-para-volta-da-plataforma/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00009",
+      "text": "After weeks of Musk challenging Moraes, calling the judge “a dictator”, harassing him via social media, and even creating a verified account to publish Moraes’ confidential court files, X's Global Affairs account posted a statement highlighting their intention to act “within the boundaries of the law” in Brazil:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1336,
+      "body_end": 1649,
+      "source_links": [
+        "https://forbes.com.br/forbes-tech/2024/09/elon-musk-cria-perfil-no-x-para-denunciar-alexandre-de-moraes/",
+        "https://x.com/AlexandreFiles"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00010",
+      "text": "By the time the suspension was effective in Brazil, at the end of August, stories published in outlets from the national press recalled that, while in a feud with the Brazilian Supreme Court, Musk had previously complied with blocking accounts and court orders in other countries. One of the examples mentioned was a request made by Turkish President Recep Tayyip Erdoğan last year.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1651,
+      "body_end": 2033,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Recep_Tayyip_Erdo%C4%9Fan",
+        "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2024/08/30/elon-musk-acatou-em-outros-paises-ordens-que-descumpriu-no-brasil.htm",
+        "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2024/08/30/elon-musk-acatou-em-outros-paises-ordens-que-descumpriu-no-brasil.htm?cmpid=copiaecola"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00011",
+      "text": "Background",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2035,
+      "body_end": 2045,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00012",
+      "text": "The suspension of X was only the latest chapter of an ongoing face-off between Musk, who has seen the market value of X plunge 80 percent since he bought it, and the Brazilian Supreme Court justice.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2047,
+      "body_end": 2245,
+      "source_links": [
+        "https://edition.cnn.com/2024/10/02/business/elon-musk-twitter-x-fidelity/index.html#:~:text=The%20new%20valuation%20from%20Fidelity,%2444%20billion%20that%20Musk%20paid."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00013",
+      "text": "Supported by Brazillian politicians aligned with former president Jair Bolsonaro, Musk, who has publically supported Donald Trump's presidential campaign in the United States, appears to have sought to make a political statement through his defiance of Brazil's court orders.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2247,
+      "body_end": 2522,
+      "source_links": [
+        "https://www.cnnbrasil.com.br/politica/bolsonaristas-enfrentam-moraes-e-apoiam-elon-musk/",
+        "https://www.nbcnews.com/politics/elon-musk-leaps-action-trump-surrogate-unclear-land-politics-desk-rcna174589"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00014",
+      "text": "As The Guardian reports:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2524,
+      "body_end": 2548,
+      "source_links": [
+        "https://www.theguardian.com/technology/2024/oct/08/musks-x-reinstated-in-brazil-after-complying-with-supreme-court-demands"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00015",
+      "text": "> The immediate trigger for the ban was Musk’s failure to name a local representative and pay millions of dollars worth of fines. But the backdrop was a long-running and politically charged battle between the outspoken tech billionaire and Brazil’s top court, which was trying to combat the dissemination of far-right misinformation and anti-democratic content on the social network.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2550,
+      "body_end": 2933,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-822012-b00016",
+      "text": "Back in September, Brazilian news outlet UOL reported that X's suspension was based on an investigation of a data leak involving personal data searches from federal police agents, Moraes himself and a businessman.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2935,
+      "body_end": 3148,
+      "source_links": [
+        "https://noticias.uol.com.br/colunas/leticia-casado/2024/09/11/exposed-moraes-x.htm?cmpid=copiaecola"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00017",
+      "text": "Also, according to UOL, X claimed they blocked 223 accounts since 2020, following orders from Brazilian courts. The news outlet says influencers and politicians associated with Bolsonaro, known as “bolsonaristas”, were the main targets because they were publishing “fake news, coup incitement and threats”. The platform didn't release details on when the accounts were blocked or suspended, or whether some of the accounts would be reinstated later on. R7, another outlet, says that before the suspension was lifted, X shared all of the relevant info with the Supreme Court.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3150,
+      "body_end": 3724,
+      "source_links": [
+        "https://noticias.r7.com/brasilia/antes-de-voltar-ao-ar-x-informou-ao-stf-que-bloqueou-mais-de-200-contas-09102024/",
+        "https://noticias.uol.com.br/politica/ultimas-noticias/2024/10/09/x-suspendeu-223-contas-por-ordem-do-stf-e-tse-desde-2020.htm",
+        "https://www.wordmeaning.org/spanish/bolsonarista.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00018",
+      "text": "The Supreme Court website elaborated that, as of the end of September, X had fully complied with all their requirements, including blocking harmful accounts and naming a legal representative in Brazil. However, the company had failed to show proof that it had paid the fines that were imposed for defying the court's decisions.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3726,
+      "body_end": 4053,
+      "source_links": [
+        "https://noticias.stf.jus.br/postsnoticias/stf-determina-transferencia-para-conta-correta-de-valores-depositados-pela-rede-social-x/https://noticias.stf.jus.br/postsnoticias/stf-determina-transferencia-para-conta-correta-de-valores-depositados-pela-rede-social-x/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00019",
+      "text": "On October 4, G1 reported that X sent the required BRL 28 million (around USD 5.2 million) to the wrong bank account. So, the platform had to correct the mistake before access was finally reinstated.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4055,
+      "body_end": 4254,
+      "source_links": [
+        "https://g1.globo.com/politica/blog/daniela-lima/post/2024/10/04/x-realiza-deposito-em-conta-errada-e-moraes-manda-app-regularizar-pagamento.ghtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00020",
+      "text": "Musk, who had previously been vocal in criticizing Moraes and even President Luiz Inácio Lula da Silva (PT, Workers’ Party), who does not have a say on court orders, didn't publish anything on his own account about X returning to Brazil.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4256,
+      "body_end": 4493,
+      "source_links": [
+        "https://x.com/elonmusk/status/1829196423277228406"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00021",
+      "text": "The outcome",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4495,
+      "body_end": 4506,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00022",
+      "text": "In an interview with TV news channel Globo News, Brazilian anthropologist David Nemer analyzed Musk's actions, pointing out that Brazil generates the second-most data on the platform globally. He referred to this data as a digital commodity used by platforms to monetize through advertisements. “He saw that [Brazil] is a great market for his platform”, Nemer said.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4508,
+      "body_end": 4873,
+      "source_links": [
+        "https://x.com/globonews/status/1844113152117522798?s=12"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00023",
+      "text": "The suspension was upheld until October 8 — two days after the city elections that took place throughout the country — leading some to speculate that its absence may have impacted the electoral results. Nemer said, “This is not a platform that is inserted over the four corners of Brazil. The algorithm tends to feed ideological bubbles, which do not promote conversations between different groups”.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4875,
+      "body_end": 5274,
+      "source_links": [
+        "https://x.com/globonews/status/1844121052974285224?s=12"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00024",
+      "text": "In an article published by The Telegraph, British journalist Sam Cowie, who has lived in Brazil since 2011 and relied on Twitter (now X) as a journalistic tool, commented:",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5276,
+      "body_end": 5447,
+      "source_links": [
+        "https://www.telegraph.co.uk/news/2024/09/30/brazil-twitter-x-ban-elon-musk-social-media-bluesky/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-822012-b00025",
+      "text": "> Ultimately, the lessons of this ban have not been about technology itself but how humans use it. For the 2010s, a decade of decentralised mass protests and frustrated revolutions, including in Brazil, Twitter was perhaps the technology best suited to the moment.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5449,
+      "body_end": 5713,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-822012-b00026",
+      "text": "> For me, Twitter’s ban in Brazil is not an issue of free speech. As mentioned, Musk has caved to the demands of countries in the past, albeit after some initial resistance. While Justice Moraes can credibly be accused of overreach, in some cases at least, the Twitter ban follows a familiar pattern in Brazil and the wider question of big tech vs national sovereignty. It’s just that Musk has been more theatrical about it.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5715,
+      "body_end": 6139,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-822012-b00027",
+      "text": "> If this episode has shown me anything, it’s that we journalists — and humans in general — are adaptable creatures, able to break our tech habits and move on quickly. Big tech CEOs would do well to remember that.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6141,
+      "body_end": 6354,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "93984a0497d962391343974e5542a757b77bf986d4bb445aad9f73aefe785196",
+  "word_count": 1020,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6354,
+  "retrieved_at": "2026-11-16T22:44:27.373824+00:00",
+  "raw_html_sha256": "a8eb85c20b736926bbcaa2bb239f6e510f90194b23fff35b84c3ea44cb4cb58d",
+  "resolved_source_url": "https://globalvoices.org/2024/10/11/brazils-supreme-court-lifts-suspension-of-x-after-musk-backs-down/",
+  "canonical_url": "https://globalvoices.org/2024/10/11/brazils-supreme-court-lifts-suspension-of-x-after-musk-backs-down/",
+  "source_bytes": 190527,
+  "authors": [
+    {
+      "name": "Global Voices Brazil",
+      "url": "https://globalvoices.org/author/gv-brasil/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 822012,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "a8eb85c20b736926bbcaa2bb239f6e510f90194b23fff35b84c3ea44cb4cb58d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-0c38ae3377f0fabe412f",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-10",
+    "eligible_month_documents": 72,
+    "selected_month_documents": 60,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Global Voices Brazil",
+  "body_start": 475,
+  "body_end": 6829,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b2c367706558347715ef03c78a3bb5434d045e8fcb32593945e6f0fc44b078c9",
+  "text_path": "articles/gv-822012.txt",
+  "metadata_path": "metadata/gv-822012.json",
+  "attribution": "This story by Global Voices Brazil originally appeared on Global Voices. https://globalvoices.org/2024/10/11/brazils-supreme-court-lifts-suspension-of-x-after-musk-backs-down/",
+  "content_sha256": "39a8f557ba1f1cbc425ea8d924cb73390f2aca46b190d78ac0d2093fc7ce0da2",
+  "source_sha256": "a8eb85c20b736926bbcaa2bb239f6e510f90194b23fff35b84c3ea44cb4cb58d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

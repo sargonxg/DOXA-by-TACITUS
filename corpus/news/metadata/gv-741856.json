@@ -1,0 +1,567 @@
+{
+  "id": "gv-741856",
+  "publisher_id": 741856,
+  "source_id": "globalvoices:741856",
+  "source_url": "https://globalvoices.org/2021/07/22/devices-of-journalists-government-officials-in-kazakhstan-hacked-and-spied-on/",
+  "title": "Devices of journalists, government officials in Kazakhstan hacked and spied on",
+  "published_at": "2021-07-22T07:05:48Z",
+  "modified_at": "2022-01-07T17:29:42Z",
+  "api_author_id": 2869,
+  "api_content_sha256": "645150e6c27702a50e2e735156ccc08dfc84e4a6553e1bae0b31715062e32518",
+  "api_response_sha256": "0d1a36035a88ee5b3f9fa91c4e2a7d7b5ec96f6dedf1bcb5a8f43e8f39bffdae",
+  "api_retrieved_at": "2026-11-16T22:20:36.847703+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 288,
+      "count": 7347,
+      "name": "Central Asia &amp; Caucasus",
+      "slug": "central-asia-caucasus",
+      "parent": 219
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 81,
+      "count": 1267,
+      "name": "Kazakhstan",
+      "slug": "kazakhstan",
+      "parent": 288
+    },
+    {
+      "id": 317,
+      "count": 1323,
+      "name": "LANGUAGES",
+      "slug": "languages",
+      "parent": 0
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 238,
+      "count": 1673,
+      "name": "TOPICS",
+      "slug": "topics",
+      "parent": 0
+    },
+    {
+      "id": 218,
+      "count": 1666,
+      "name": "TYPE",
+      "slug": "type",
+      "parent": 0
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-741856-b00001",
+      "text": "When an investigation revealed that Kazakhstan's security services could have spied on journalists and human rights defenders this week, few were surprised, as the country shows an abysmal human rights and freedom of the press record.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 234,
+      "source_links": [
+        "https://rsf.org/en/kazakhstan",
+        "https://www.amnesty.org/en/countries/europe-and-central-asia/kazakhstan/report-kazakhstan/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00002",
+      "text": "More surprising was the revelation on July 21 that the president, the prime minister, and the mayor of the largest city were all targets of the spyware that the NSO Group, an Israeli software company, sold to the government.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 236,
+      "body_end": 460,
+      "source_links": [
+        "https://www.occrp.org/en/the-pegasus-project/world-leaders-on-pegasus-list-include-frances-president-macron-moroccos-king-mohammed-kazakhstans-president-tokayev"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00003",
+      "text": "As the news broke at the Organized Crime and Corruption Reporting Project (OCCRP), a consortium of investigative journalists, Kazakhstan's government-sponsored media was covering the story of Askar Mamin, the country's prime minister, visiting the western Mangistau region, where he instructed the local government to help farmers and breeders to cope with the recent drought.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 462,
+      "body_end": 838,
+      "source_links": [
+        "https://www.inform.kz/ru/askar-mamin-poruchil-okazat-pomosch-fermerskim-hozyaystvam-postradavshim-ot-zasuhi-v-mangistauskoy-oblasti_a3814472"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00004",
+      "text": "Independent local media, meanwhile, reported heavily on the findings of dozens of investigative journalists, who called their dossier ‘The Pegasus Project,‘ after the name of the virtual Trojan-horse that the Israeli-made software installed on the phones of the government's targets.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 840,
+      "body_end": 1123,
+      "source_links": [
+        "https://kaztag.kz/ru/news/tokaev-mamin-i-sagintaev-nazvany-v-chisle-obektov-slezhki-shpionskoy-programmy",
+        "https://rus.azattyq.org/a/proslushka-byla-v-ofise-vidimo-ee-bylo-nedostatochno-reaktsiya-kazahstantsev-iz-spiska-pegasus/31368526.html",
+        "https://vlast.kz/politika/45935-prezidenty-kazahstana-i-francii-korol-marokko-sredi-celej-softa-pegasus.html",
+        "https://www.occrp.org/en/the-pegasus-project/about-the-project"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00005",
+      "text": "The software intruded into the mobile devices of the government's targets unnoticed and could have allowed security services to eavesdrop on private conversations and check personal messages and photos.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1125,
+      "body_end": 1327,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00006",
+      "text": "Observers noted that each client must have spent around US$ 2.5 million to buy the software, although this is unconfirmed by the NSO Group.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1329,
+      "body_end": 1468,
+      "source_links": [
+        "https://www.facebook.com/vadim.boreiko/posts/3951168438343983"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00007",
+      "text": "High-profile targets",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1470,
+      "body_end": 1490,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00008",
+      "text": "Signs that Kazakhstan's government apparatus might be using the Pegasus spyware had already been detected in 2018.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1492,
+      "body_end": 1606,
+      "source_links": [
+        "https://citizenlab.ca/2018/09/hide-and-seek-tracking-nso-groups-pegasus-spyware-to-operations-in-45-countries/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00009",
+      "text": "At that time, Kassym-Jomart Tokayev was the head of the Senate, Bakhytzhan Sagintayev was prime minister, and Askar Mamin was CEO of the state-owned railway company, the country's largest employer. Then, in early 2019, then-President Nursultan Nazarbayev decided it was time for a reshuffle. In February, he named Mamin prime minister and moved Sagintayev to Almaty, the country's largest city, where he became a mayor. In March 2019, Nazarbayev unexpectedly announced his resignation after three decades in power, effectively handing the reins to Tokayev.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1608,
+      "body_end": 2164,
+      "source_links": [
+        "https://thediplomat.com/2019/02/kazakhstan-appoints-a-new-old-government/",
+        "https://thediplomat.com/2019/06/what-is-nazarbayevs-legacy-in-kazakhstan/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00010",
+      "text": "Until July 21, these high-profile figures were likely unaware that their phones were being targeted by the Pegasus spyware.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2166,
+      "body_end": 2289,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00011",
+      "text": "Sadyk Akezhan, a government spokesperson, was puzzled by the news. When interviewed by Radio Azattyk, he said:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2291,
+      "body_end": 2401,
+      "source_links": [
+        "https://rus.azattyq.org/a/kazakhstan-government-reacts-on-pegasus-spyware-investigation/31369790.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00012",
+      "text": "> Я думаю, что это из мира фантастики, абсурдно. Вы не считаете абсурдным то, что само правительство делает заказ и прослушивает телефоны президента и самого премьер-министра?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2403,
+      "body_end": 2578,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741856-b00013",
+      "text": "> I think this is from the world of fantasy, absurd. But this is my opinion. Don't you think it would be absurd that the government buys [spyware] and bugs the phones of its own president and the prime minister?",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2580,
+      "body_end": 2791,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741856-b00014",
+      "text": "At the time of writing, the government has not commented on the issue.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2793,
+      "body_end": 2863,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00015",
+      "text": "Journalists continue to be targets",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2865,
+      "body_end": 2899,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00016",
+      "text": "Out of the tens of thousand phone numbers found in the Pegasus Project investigation, it is impossible to now determine just how many were effectively spied on and for how long. The list, which spans over 50,000 phone numbers across nearly 50 countries, shows those that were ‘selected for targeting.’ In other words, the spyware users could have read anything and listened to anything in the target's phone, yet there is no proof that they did it or when they did it.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2901,
+      "body_end": 3369,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00017",
+      "text": "Crucially, the professional phone numbers of journalists and activists were often also their private numbers, implying a potentially pervasive privacy breach.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3371,
+      "body_end": 3529,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00018",
+      "text": "Serikzhan Mauletbai, 30, worked in journalism for eight years in Almaty and was the first journalist to appear on the list of people targeted by the Pegasus spyware in Kazakhstan.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3531,
+      "body_end": 3710,
+      "source_links": [
+        "https://cdn.occrp.org/projects/project-p/#/countries/KZ"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00019",
+      "text": "In an interview with Global Voices, Mauletbai described the feeling of being spied on and his plans for further engagement with the profession of journalism.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3712,
+      "body_end": 3869,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00020",
+      "text": "Global Voices (GV): You mentioned in a Facebook post that you expected to be surveilled. What will change now that you know you were a target of this snooping software?",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3871,
+      "body_end": 4039,
+      "source_links": [
+        "https://www.facebook.com/axelzhan/posts/5292657534181175"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00021",
+      "text": "> Serikzhan Mauletbai (SM): Для меня ничего не поменялось, как я боролся за свободу слова, за комфортную работу журналистов в стране так и буду продолжать.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4041,
+      "body_end": 4196,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741856-b00022",
+      "text": "> Serikzhan Mauletbai (SM): For me nothing has changed, just as I was fighting for freedom of expression, for journalists to work in comfortable conditions in this country, I will continue to do all of that.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4198,
+      "body_end": 4405,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741856-b00023",
+      "text": "GV: In Kazakhstan, freedom of the press is constantly under threat. Do you think other journalists were a target of this surveillance just like you?",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4407,
+      "body_end": 4555,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00024",
+      "text": "> SM: Я уверен, в том что любой журналист в Казахстане, более и менее активно работающий, находится под надзором. Я думаю, что как минимум на них собранны досье, это моё мнение и те же самые спецслужбы знают, хотя бы минимальную информацию об этом человеке.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4557,
+      "body_end": 4814,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741856-b00025",
+      "text": "> SM: I am sure that any more-or-less active journalist in Kazakhstan is under surveillance. I think that there is at least a dossier on each and that the security services know something about us, even just a little.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4816,
+      "body_end": 5033,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741856-b00026",
+      "text": "GV: Do you think that something will change or that the government will open an investigation after these revelations?",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5035,
+      "body_end": 5153,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00027",
+      "text": "> SM: Нет, ничего не поменяется. Я думаю, что власти проигнорируют эту ситуацию.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5155,
+      "body_end": 5235,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741856-b00028",
+      "text": "> SM: No, nothing will change. I think that the government will ignore this situation.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5237,
+      "body_end": 5323,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741856-b00029",
+      "text": "Mauletbai told local media that he intends to write a letter to the government to understand if, when, and why they spied on him.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5325,
+      "body_end": 5454,
+      "source_links": [
+        "https://vlast.kz/novosti/45934-serikzan-mauletbaj-nameren-obratitsa-v-gosorgany-v-svazi-s-vozmoznym-vzlomom-ego-telefona.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00030",
+      "text": "The struggle for freedom of the press continues, Mauletbai said. The League of Court Journalists, of which Mauletbai is part, has fought against restrictive measures that the government intended to implement.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5456,
+      "body_end": 5664,
+      "source_links": [
+        "https://ljj.kz/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00031",
+      "text": "In 2019, then-minister of information Dauren Abayev tried to pass a new regulation on the accreditation of journalists, which would have severely limited access to most press conferences for journalists, especially those from independent media.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5666,
+      "body_end": 5910,
+      "source_links": [
+        "https://www.opendemocracy.net/en/odr/press-freedom-kazakhstan-en/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741856-b00032",
+      "text": "The League, together with the Guild of Courtroom Reporters, also worked on the “opening of the courts,” Mauletbai highlighted. The relentless lobbying of the journalist group has led to more transparent trials. For the past few years, instances of banning or expelling journalists from the courtroom have become rare and exceptional. Before the campaign, judges and courtroom officials treated journalists in an arbitrary way.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5912,
+      "body_end": 6338,
+      "source_links": [
+        "https://informburo.kz/novosti/advokaty-i-zhurnalisty-vozmutilis-novymi-pravilami-propuska-v-sudy.html",
+        "https://informburo.kz/novosti/zurnalista-informburokz-udalili-iz-zoom-s-otkrytogo-zasedaniya-po-delu-eks-glavy-sk-farmacii",
+        "https://rus.azattyq.org/a/obse-kazakhstan-ogranichenie-dostupa-v-sudy/28461978.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "8a99c1a9ebd2bcb3cbacca0244e1975d3dff7131761a37c324e409bec70c014a",
+  "word_count": 1003,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 6338,
+  "retrieved_at": "2026-11-16T22:31:16.948254+00:00",
+  "raw_html_sha256": "887cb373c5ba9ecadb1ba70e1c3027909706635036c0a0cf69557019a8ad81ae",
+  "resolved_source_url": "https://globalvoices.org/2021/07/22/devices-of-journalists-government-officials-in-kazakhstan-hacked-and-spied-on/",
+  "canonical_url": "https://globalvoices.org/2021/07/22/devices-of-journalists-government-officials-in-kazakhstan-hacked-and-spied-on/",
+  "source_bytes": 190513,
+  "authors": [
+    {
+      "name": "Paolo Sorbello",
+      "url": "https://globalvoices.org/author/paolo-sorbello/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 741856,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "887cb373c5ba9ecadb1ba70e1c3027909706635036c0a0cf69557019a8ad81ae",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-fd5e7a9ad6dc7b5eab0d",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-07",
+    "eligible_month_documents": 104,
+    "selected_month_documents": 87,
+    "inclusion_probability": 0.8365384615384616,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Paolo Sorbello",
+  "body_start": 493,
+  "body_end": 6831,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "dca150d22ea54e2d893dbc82fbd2b177aa684359e5d594f84c23304a1e371aac",
+  "text_path": "articles/gv-741856.txt",
+  "metadata_path": "metadata/gv-741856.json",
+  "attribution": "This story by Paolo Sorbello originally appeared on Global Voices. https://globalvoices.org/2021/07/22/devices-of-journalists-government-officials-in-kazakhstan-hacked-and-spied-on/",
+  "content_sha256": "075a051a7e5943fffde5c4095cb20d9acbdeb0acb85039d55d6cd7ba1bbfcd92",
+  "source_sha256": "887cb373c5ba9ecadb1ba70e1c3027909706635036c0a0cf69557019a8ad81ae",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

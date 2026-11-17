@@ -2,57 +2,137 @@
 
 ![DOXA Quest: import documents, choose your lens, run local or cloud AI, check evidence, compare findings, export reports.](images/doxa-quest.png)
 
-The map follows the actual application workflow. Your aim is a defensible interpretation whose evidence another reader can inspect.
+The illustrated map follows six research steps. The application puts the linked
+source collection, charts, observations and evidence inspector in one workspace;
+setup and export actions open drawers. Your aim is an interpretation another
+reader can inspect, rather than a score assigned to a person.
 
-## Level 1 — Build your library
+## Level 1 — Bring your sources together
 
-Start DOXA, open **http://localhost:8000**, and click **Load research collection**. You receive twenty real public documents and a saved Gemma run. The saved run makes no new inference requests. Its partial coverage and historical usage remain visible.
+Start DOXA at **http://localhost:8000** and open **Import**. Choose the institutional
+case studies to load twenty real public documents and a historical Gemma result
+snapshot without new inference requests. Its observations are labeled legacy
+under methodology v3; contextual source rates require a new contextual run.
 
-For your own inquiry, choose **Import documents**. Add PDF, DOCX, TXT, Markdown or saved HTML. Small files form bounded import groups; large files use resumable parts. After an interrupted large upload, select the same file to continue. Inspect the library for extraction failures and correct author, institution, date and document type. Use **Import metadata CSV** to update many sources by filename, document ID or checksum.
+Add PDF, DOCX, TXT, Markdown, saved HTML or a ZIP archive for your own inquiry.
+Small files travel in bounded groups under one logical import. Large files use
+resumable parts: after interruption, refresh and select the same file to continue.
+Use **Import metadata CSV** to correct authors, institutions, dates and document
+types by document ID, filename or checksum. The **Sources** pane opens extracted
+text in the evidence inspector. Successful manual imports select **Corpus · all
+imported sources**, where new files remain visible without model measurements.
+Choose a saved analysis to return to its frozen cohort; analyze the corpus scope
+to include newly imported material.
 
-## Level 2 — Declare the lens
+## Level 2 — Declare the inquiry
 
-Open **Analysis runs**. State the question you want to investigate. Select one or several analytical frameworks, a reporting profile, and any additional reviewer priorities. You can add your own rubric with explicit criteria and context requirements.
+Open **Analyze**. State your research question, choose explicit analytical
+frameworks and declare the reviewer role and priorities. Add a custom rubric when
+needed, marking its criteria as indicators, boundaries, or descriptive frames.
+Report audiences—research/civil society, news/policy, or teaching—are selected
+separately in the report drawer.
 
-For example: “How do these institutions balance protecting religious minorities with protecting political expression? Identify expressed values, distinctions between criticism and hostility, and passages requiring wider context.”
+For example: “How do these institutions balance protecting religious minorities
+with protecting political expression? Distinguish author endorsement, reported
+speech, criticism, rebuttal and cases requiring wider context.”
 
-IHRA, Jerusalem and Nexus remain distinct lenses. Their findings are interpretations under named criteria. A political-correctness inquiry examines contested language norms; it does not produce an objective correctness score.
+IHRA, Jerusalem and Nexus remain distinct frameworks. A language-norms inquiry
+examines contested assumptions; it does not produce an objective correctness
+score. Reviewer roles do not simulate demographic identities.
 
-## Level 3 — Choose the engine
+## Level 3 — Choose the engine and processing location
 
-- **Lexical baseline:** inspect exact term matches without installing a model. These matches provide navigation, not conclusions about prejudice or endorsement.
-- **Ollama:** use `qwen3.5:4b` for private local inference on the conservative laptop profile. CPU processing takes time; the run monitor shows real progress.
-- **Cloudflare:** select the configured managed model for metered cloud inference. Documents leave your computer only when you explicitly select a remote provider.
-- **OpenAI-compatible / RunPod:** use a server-configured model endpoint for larger-model experiments.
+Open **Cloud / local** for model readiness and the monthly processing cap.
 
-Check provider readiness, set a run budget, and start. You can cancel or resume eligible live runs. Saved showcase snapshots remain fixed; start a new run to compare another engine.
+- **Cloudflare:** the default remote profile. Explicitly enable source-text
+  transfer for each run and set its budget before starting.
+- **Ollama:** the local `qwen3.5:4b` fallback. Its 16 GB laptop profile is a test
+  target, not a guarantee of throughput; use measured progress and pilot runs.
+- **Lexical navigation:** exact term matches without a model. Matches do not
+  establish contextual indicators, endorsement, or prejudice prevalence.
+- **Configured OpenAI-compatible / RunPod:** server-managed alternatives for
+  larger-model experiments.
 
-## Level 4 — Inspect the evidence
+CPU retrieval and rubric experiments are explicit optional actions using already
+installed artifacts. Opening the model drawer never downloads weights. Follow
+**Processing record** for progress, costs and issues; cancel or resume eligible
+live jobs there. Historical saved snapshots cannot be resumed.
 
-Open **Evidence workbench** and select an observation. The source pane highlights its exact passage. Read the surrounding context, named criterion, attributed speaker, stance, alternative interpretation and uncertainty.
+**Independent model verification**, in Models and Processing, compares a
+completed primary contextual run with a separate GPT-OSS 120B job. It requires
+explicit cloud consent and has a $2 budget cap. Read selected-unit coverage and
+literal output differences in its saved comparison; primary counts stay separate.
+Model agreement does not establish interpretation accuracy.
 
-Check whether the source author endorses a statement, reports it, opposes it, or presents a hypothetical example. Confirm, reject or annotate the observation. Automated citation checks establish where the words occur; they do not establish that the interpretation is correct.
+## Level 4 — Read and review the evidence
 
-The saved cloud run contains 1,071 retained observations. It remains partial: 5,788 of 8,999 blocks passed all analysis checks. This is a research preview with visible rejected ranges, not an independently validated detector.
+Select an entry in **Retained observations**. The inspector highlights its exact
+source span and nearby paragraphs. **Interpretation** separates the criterion,
+proposition, target, speaker attribution, speaker stance, document stance,
+hypothetical status, alternative reading and uncertainty.
 
-## Level 5 — Compare carefully
+In **Review & correct**, save a confirmed, rejected or revised decision with your
+reasoning. V3 observations support structured corrections while preserving the
+original proposal. Legacy observations support review notes and state; start a
+v3 run to obtain contextual fields. Citation checks establish where words occur,
+not whether their interpretation is correct.
 
-Use **Compare perspectives** to inspect framework criteria, author/institution patterns and competing interpretations. Counts belong to one selected run. Author coverage helps you distinguish missing analysis from an absence of observations.
+**Reviewed learning** can approve a human-reviewed example, freeze an immutable
+snapshot, create a candidate and evaluate paired runs. Activation requires an
+eligible evaluation report and an explicit decision; reviews do not train model
+weights automatically. A draft snapshot can be chosen in Analyze for a candidate
+evaluation run, and activated memory can be rolled back.
 
-The **Imported batches** tab compares additions, changed content and repeated sources. “Not included in this import” means exactly that; incremental uploads do not establish that a document was deleted. Exact duplicates retain one source identity while appearing in both batch histories.
+## Level 5 — Compare within a controlled scope
 
-## Level 6 — Carry the research out
+Search the complete corpus or set a period, framework and speech role. **Filters**
+adds author/institution, source type, import batch, outcome, stance and review
+state. Sources, observations, headline metrics and exported reports share the
+same server query snapshot. Select timeline periods or author × criterion matrix
+cells to narrow the scope. Counts of sources and assessment rows remain separate;
+reported and endorsed source counts can overlap.
 
-Choose **Reports & exports**. Select the same run and filters used in the workbench, then choose research, briefing or teaching emphasis.
+**Trajectory** uses publication time, a frozen method and eligible source clusters.
+Choose one framework for comparable rates. Coverage, determinate outcomes, source
+composition, baseline size and multiple-comparison gates qualify statistical
+review candidates. **History** uses assessment time and does not imply a change
+in the author's original position. **Evidence map** traces the selected source,
+attribution and criterion through typed links.
 
-- **PDF / HTML:** a readable narrative record, charts, sources and an explicitly bounded evidence appendix.
-- **XLSX:** filterable evidence and source registers, authors, lenses, run information and charts.
-- **CSV / JSONL:** complete selected data for further analysis, including provenance and source references.
+Compare import scopes through the batch filter. A source absent from an
+incremental import is **not included in that import**; this does not imply
+its deletion. Repeated sources can belong to several import histories.
 
-The report profile changes presentation and emphasis. It does not change the underlying calculations or source evidence. Saved report snapshots stay reproducible after later review or metadata changes.
+## Level 6 — Export the research scope
 
-## What the checks establish
+Open the download button in the command bar. **Reports** uses the current frozen
+query snapshot; choose research/civil society, news/policy, or teaching emphasis.
 
-The repository includes actual local and cloud model runs, an exhaustive lexical scan of all twenty real documents, a 1,000-document scheduling test, an actual 500 MiB resumable-upload test, browser flows and container/export checks. [Benchmark summaries](../benchmarks/README.md) identify samples, incomplete coverage, errors and hardware. Interpretation accuracy remains unmeasured without independent human reference annotations.
+- **PDF / HTML:** a readable research record with methods, charts, source
+  references and an explicitly bounded evidence appendix.
+- **XLSX:** filterable evidence, source registers, lenses, processing records and
+  charts.
+- **CSV / JSONL:** the complete selected data, including provenance and source
+  references.
 
-Continue with the [research dossier](research.md), [methodology](methodology.md), [architecture](architecture.md), [deployment instructions](deployment.md), or [example PDF](../examples/doxa-public-institutions.pdf).
+Audience changes presentation rather than calculations. After a review or source
+metadata change, refresh the workspace before generating a new report. A stale
+snapshot is rejected instead of silently exporting changed totals.
+
+## Read recorded results with their limits
+
+The historical twenty-document cloud showcase contains 1,071 retained
+observations; 5,788 of 8,999 source blocks passed its checks. These are recorded
+v1 facts, not v3 contextual measurements or interpretation-accuracy estimates.
+[Benchmark summaries](../benchmarks/README.md) identify model versions, samples,
+incomplete coverage, errors and hardware. Independent human reference annotations
+are required before claiming interpretation accuracy.
+
+The current browser suite uses synthetic fixtures to prove 5,000-source paging,
+linked scope, source review, report downloads, cloud-consent controls, interrupted
+upload recovery and grouped-import membership. Functional test fixtures establish
+application behavior; they are not model benchmarks.
+
+Continue with [how DOXA works](../frontend/public/how-it-works.html),
+[methodology](methodology.md), [architecture](architecture.md),
+[deployment](deployment.md), or the [research dossier](research.md).

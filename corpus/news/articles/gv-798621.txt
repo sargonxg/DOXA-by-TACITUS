@@ -1,0 +1,58 @@
+Mexican government faces criticism for blocking portions of the safe internet
+Written by: Jacobo Nájera; Miguel Trujillo
+Translated by: Melissa Vida
+Originally published by Global Voices: https://globalvoices.org/2023/10/12/mexican-government-faces-criticism-for-blocking-portions-of-the-safe-internet/
+Published: 2023-10-12T10:52:17Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+From the administration of Mexican President Enrique Peña Nieto (2012–2018) until today, several investigative journalists have reported that the sites of different government agencies do not allow access from the Tor network.
+
+In Mexico it is estimated that there are 30,000 to 40,000 people using the Tor network. Tor is a global technology that offers alternatives to people who want to exercise freedom of access and expression on the internet while maintaining their privacy and anonymity. To achieve this, it relies on a network of more than 6,000 thousand nodes or relays that allow anonymous routing. It is also metaphorically called “onion routing” because of the layers that make up the network.
+
+The spokesman for the Tor Project, the organization behind the development of the Tor network software, Pavel Zoneff, told Global Voices by email:
+
+> La red Tor es utilizada por millones de usuarios diarios para acceder de forma segura a Internet, salvaguardar su derecho a la información y la libertad de expresión y evitar la censura o la vigilancia gubernamental.
+
+> The Tor network is used by millions of daily users to securely access the internet, safeguard their right to information and freedom of expression, and avoid censorship or government surveillance.
+
+In Mexico, civil society groups have promoted the Tor network. This includes the use of anonymous mailboxes in newsrooms and self-advocacy and digital care for human rights defenders.
+
+Mexico faces challenges to freedom of expression, which might explain the interest in having a secure means of connecting online. Human rights and environmental defenders, as well as journalists, often find themselves in danger while carrying out their work, putting their lives at risk with kidnappings, disappearances, and murders. In terms of access to the internet, there are obstacles to access, limitations to content, and violations of users’ rights according to the Freedom on the Net 2022 report.
+
+The Mexican law recognizes the right to privacy and access to the internet, exchange of information, freedom of expression, and expression of ideas as provided by Article 60 of the constitution and Article 191 section XV of the Federal Law of Telecommunications and Broadcasting in Mexico. However, the law also contains provisions that have been internationally recognized as contrary to digital human rights. One such example is Article 190 of the Law of Telecommunications, which allows telecom operators to retain data.
+
+Additionally, the Mexican Government uses Tor for anti-corruption purposes. The mailbox of the Ministry of Public Administration works with the Tor network to guarantee the anonymity of whistleblowers.
+
+This initiative fits in a regulatory framework that recognizes that anonymity must be guaranteed in the public function when handling whistleblowers. According to the Official Gazette of the government:
+
+> Resguardo de confidencialidad: Es la obligación a cargo de todas las personas adscritas a la Coordinación, el Coordinador General con apoyo del Coordinador deberán supervisar, controlar y evaluar que todas las actividades del Sistema garanticen el anonimato de los alertadores y de la información, tomando las medidas que sean necesarias, así como implementar las acciones de mejora que contribuyan a este fin.
+
+> Confidentiality protection: It is the duty of all persons assigned to the Coordination, the General Coordinator with the support of the Coordinator must supervise, control and evaluate that all the activities of the System guarantee the anonymity of the alertors and their information, taking the necessary measures, as well as implementing improved actions that contribute to this end.
+
+However, the authors of this article found that 39 URLs of 21 government agencies block access from Tor. This was measured and studied from 2020 to date, and the blocks have been maintained for at least a dozen years.
+
+The following graph shows a comparison of URLs that are blocked and accessible hosted in the “.gob.mx.” domain at the time of writing this article.
+
+Global Voices consulted the Government of Mexico on the rationale and motives of the blockings, contacting the president's office, which is in charge of the digital strategy and is responsible for these infrastructures. Juan Carlos Guerrero Torres, Director of Legal Analysis and Document Management of the president's office told us in response to a request for information that:
+
+> (…) se toman medidas de protección como bloquear tráfico de red considerado malicioso, automatizado o que podría ser una amenaza, lo que afecta a los usuarios de la red Tor, ya que por la naturaleza de la misma no es posible diferenciar entre el usuario medio y el automatizado lo cual es considerado un riesgo para gob.mx, derivado a eso se restringe el acceso por dicha red.
+
+> (…) protection measures are taken such as blocking network traffic considered malicious, automated, or that could be a threat, which affects users of the Tor network, since, due to the nature of the network, it is not possible to differentiate between the average user and the automated user. This is considered a risk for gob.mx, and as a result, access through said network is restricted.
+
+In response to the Mexican Government's position, Zoneff, from the Tor Project, points out that:
+
+> Bloquear secciones enteras de Internet basándose en la creencia obsoleta de que todo el tráfico de la red Tor es indistinguible o malicioso es un error y pone a las personas en riesgo. Hay varias formas para que los sitios web se defiendan contra amenazas como ataques DoS, actividad de bots y otras actividades maliciosas sin aislar a una parte significativa de la comunidad global en línea.
+
+> Blocking entire sections of the internet based on the outdated belief that all Tor network traffic is indistinguishable or malicious is wrong and puts people at risk. There are several ways for websites to defend against threats such as DoS attacks, bot activity and other malicious activity without isolating a significant portion of the global online community.
+
+The spokesperson added that there are technical implementations that demonstrate that it is possible to strike a balance between minimizing risks to both users and websites without denying Internet access to those who rely on the Tor network.
+
+> Un ejemplo de ello es nuestro trabajo con Cloudflare para verificar el tráfico legítimo mediante captchaing, Privacy Pass y otras técnicas de limitación de velocidad que respaldan los servicios .onion desde 2018. Estas implementaciones no son específicas de Cloudflare y demuestran que es posible lograr un equilibrio.
+
+> An example of this is our work with Cloudflare to verify legitimate traffic using Captchaing, Privacy Pass and other rate-limiting techniques supporting .onion services since 2018. These implementations are not specific to Cloudflare and demonstrate that it is possible to achieve a balance.
+
+Related story:
+
+> We made the largest Mexican telecommunications operator stop blocking secure internet

@@ -1,0 +1,517 @@
+{
+  "id": "gv-817430",
+  "publisher_id": 817430,
+  "source_id": "globalvoices:817430",
+  "source_url": "https://globalvoices.org/2024/08/06/activist-it-is-not-russophobia-but-a-lack-of-awareness-among-employees/",
+  "title": "Activist: ‘It is not Russophobia, but a lack of awareness among employees’",
+  "published_at": "2024-08-06T06:05:43Z",
+  "modified_at": "2024-08-08T07:19:37Z",
+  "api_author_id": 3119,
+  "api_content_sha256": "162d7168f530a598f39a5932f56147a78206792dcca7d03c944c3c6d27ab4a0d",
+  "api_response_sha256": "cb7cd89fa8ec1bf9f70e43c81879cffbc92b70110fb4faa1e400a0aa8e29ae6d",
+  "api_retrieved_at": "2026-11-16T22:21:05.156563+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    },
+    {
+      "id": 223,
+      "count": 278,
+      "name": "Italy",
+      "slug": "italy",
+      "parent": 187
+    },
+    {
+      "id": 1358,
+      "count": 4577,
+      "name": "Migration &amp; Immigration",
+      "slug": "migration-immigration",
+      "parent": 238
+    },
+    {
+      "id": 273,
+      "count": 1466,
+      "name": "Refugees",
+      "slug": "refugees",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-817430-b00001",
+      "text": "In September 2023, European Commission officials banned Russian citizens from bringing cars with Russian registration plates into the EU and there were rumors that ‘personal items’ would also be banned. After that, Gera Ugryumova, an then unknown user of the social network X (formerly Twitter), decided to make sense of the issue. She called a press officer of the European Commission, posted about her call on X, and instantly became famous.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 443,
+      "source_links": [
+        "https://en.thebell.io/why-cars-and-personal-items-could-be-confiscated/",
+        "https://www.euractiv.com/section/global-europe/news/russians-can-no-longer-bring-their-car-to-the-eu/",
+        "https://x.com/gero444a",
+        "https://x.com/gero444a/status/1700825122221810108"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00002",
+      "text": "Ugryumova is a political refugee from Russia, now living in Italy. She arrived in Rome in May 2022 and experienced first-hand the problems that a Russian passport brings in the EU after the start of the full-scale Russian invasion of Ukraine in February 2022. Ugryumova now helps Russians abroad. This interview was conducted on the phone in February 2024, but the situation remains unchanged. Global Voices is publishing an edited and translated version with Ugryumova's permission.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 445,
+      "body_end": 928,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00003",
+      "text": "Global Voices (GV): What were you doing in September 2023 before you suddenly decided to deal with the European Commission's innovation?",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 930,
+      "body_end": 1066,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00004",
+      "text": "> Gera Ugryumova (GU): At that time we, me and my friend Polina, lived in a shelter for homeless people from the Red Cross (my dog was in a foster home, because you can't bring animals into the shelter). We were trying to find a job, trying to complete the paperwork: banks, residence permits… You need all these to get a job. And then a job in my field came up all by itself. I have always been interested in such things, so I went to find out what was going on. It just sort of worked itself out.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1068,
+      "body_end": 1566,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00005",
+      "text": "GV: Could you tell us how you ended up in Italy?",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1568,
+      "body_end": 1616,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00006",
+      "text": "> GU: In Russia, I studied journalism at university, from which I had to drop out because of my departure. With about ten students, we had a small publication. And there were guys who organized harassment against me, started to persecute me first at the university, then the Yandex.Food database leaked, they found my address and started coming to my house. I can't give all the details here. The police found no violations on three reports, and we decided that we have to leave. We came to Italy on a tourist visa.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1618,
+      "body_end": 2133,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00007",
+      "text": "GV: What status do you have in Italy now?",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2135,
+      "body_end": 2176,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00008",
+      "text": "> GU: I was approved for political asylum, I can live here, work, and receive medical care. Now, after almost two years, things have somehow got better.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2178,
+      "body_end": 2330,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00009",
+      "text": "GV: Could you tell us how Italian authorities treat refugees, what they are entitled to?",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2332,
+      "body_end": 2420,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00010",
+      "text": "> GU: First of all, I will tell you right away that it is better not to ask for asylum in Rome, because you will be met there by unfriendly officers. It will be a local police station, where there will be 600–800 people at once. And the procedure in Rome takes much longer. But since we flew to Rome, we didn't listen to anyone (there was very little information anyway), so we went to the Rome’s police station. We were given a certificate that we had applied for asylum and should come again in a month. Nowadays this does not happen anymore: An invitation for the first visit to the immigration authority in Rome is issued for 1.5–2 years in advance.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2422,
+      "body_end": 3075,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00011",
+      "text": "GV: And what to do all this time? Where to live?",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3077,
+      "body_end": 3125,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00012",
+      "text": "> GU: Guys from Pakistan, from Africa can somehow find accommodation, but Italy is extremely overloaded. There is no housing directly from the state. They would be happy to help, but physically there is nothing. Now they are negotiating with Albania to make some centers there, and to make normal camps here.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3127,
+      "body_end": 3435,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00013",
+      "text": "GV: So, you just go straight on the street?",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3437,
+      "body_end": 3480,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00014",
+      "text": "> GU: Yes. We live in a hotel in hopes of renting an apartment later. We came with EUR 4000 and it ran out in a month. But there are private projects to which the state gives money to accommodate people, to help them integrate. Out of the three projects we visited, only one did something to help us to leave it and live independently. In the other two they didn't help us in any way, we just lived there.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3482,
+      "body_end": 3887,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00015",
+      "text": "GV: What about benefits, medical care?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3889,
+      "body_end": 3927,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00016",
+      "text": "> GU: There are no benefits, healthcare is available to refugees for free, almost everything is covered by insurance, but you have to get it.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3929,
+      "body_end": 4070,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00017",
+      "text": "GV: Let's go back to September 2023. According to your observations, which countries are the most problematic for Russians?",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4072,
+      "body_end": 4195,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00018",
+      "text": "> GU: At first, I thought the most problematic country was Italy. And, of course, the problem with banks, for instance, that refuse to open accounts without justification, citing the sanctions. I had encountered it myself. Now it seems that the most problematic situation at the moment is in Cyprus. US officials have recently been there, and local banks started actively closing accounts of Russians. And some people still need to extend their residence permit, and to do so, they need a bank account. People are just running around in a panic.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4197,
+      "body_end": 4742,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00019",
+      "text": "GV: So, banks close or do not open accounts for Russians, officials do not extend residence permits. What else?",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4744,
+      "body_end": 4855,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00020",
+      "text": "> GU: Very often, Russians are not allowed on flights between Schengen and the Balkans, although there are no official restrictions for this. Someone is not hired, someone is fired, someone cannot rent an apartment. Officials on the ground are especially certain that you can't because of sanctions.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4857,
+      "body_end": 5156,
+      "source_links": [
+        "https://novayagazeta.eu/articles/2023/07/13/serbentarii"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00021",
+      "text": "GV: You once wrote that a woman with a Ukrainian passport faced the same problem with her bank account?",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5158,
+      "body_end": 5261,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00022",
+      "text": "> GU: Yes. This is a common Italian problem, because the fiscal code [local analog of a taxpayer number] here includes data on the country of birth. She is a citizen of Ukraine, but she was born in Moscow after the collapse of the Soviet Union. Accordingly, her fiscal code is 154 (place of birth is Russia). And automatic systems just do not allow her to do anything.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5263,
+      "body_end": 5631,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00023",
+      "text": "GV: This is the kind of situation that Russian propaganda may well use as evidence of Russophobia. Do you think this is Russophobia?",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5633,
+      "body_end": 5765,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00024",
+      "text": "> GU: No, I don't think it's Russophobia. It's a lack of awareness among employees in companies. So, we write to the management of a company and these employees “get a slap on the wrist.” We “fight” with some companies for quite a long time, though.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5767,
+      "body_end": 6016,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00025",
+      "text": "GV: So, these are employees on the ground who are unnecessarily vigilant, right?",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6018,
+      "body_end": 6098,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00026",
+      "text": "> GU: Yes, employees who are excessively overcautious.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6100,
+      "body_end": 6154,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00027",
+      "text": "GV: You created the Iskra project, which helps Russians abroad deal with such problems. How do you help exactly? Are there any successful cases?",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6156,
+      "body_end": 6300,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00028",
+      "text": "> GU: Yes, of course there are. In Italy, we helped three people to solve problems with the bank last month. Some of them received assistance online, others went directly to the bank, called the anti-discrimination service, even had a bit of a quarrel, but in the end, everything went well. If there is a problem with the bank, we try to negotiate peacefully, pointing out the laws. If it doesn't work, we send an official appeal, saying that the branch hasn’t opened an account for a person, but according to the law it should have, let's sort it out, or we will involve lawyers. If the problem is not solved after that, we find a local lawyer, usually a Russian-speaking one, to make it easier for people who deal with it. This is all paid for out of Iskra's money, which comes from donations.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6302,
+      "body_end": 7097,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817430-b00029",
+      "text": "GV: And if there are changes in Russia in the coming years, do you think you will return to Russia?",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 7099,
+      "body_end": 7198,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817430-b00030",
+      "text": "> GU: I hope, if at least not to return to Russia, but to continue my work for Russian citizens here.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 7200,
+      "body_end": 7301,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "da3dbba13abe7bef8a26135aebae0556d57a948692638b0556255283e842cce1",
+  "word_count": 1291,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7301,
+  "retrieved_at": "2026-11-16T22:43:49.746371+00:00",
+  "raw_html_sha256": "4db60283ea4d4e95e4229da3e38a76b56bd2973799cbf67ec80d166c35ac67e5",
+  "resolved_source_url": "https://globalvoices.org/2024/08/06/activist-it-is-not-russophobia-but-a-lack-of-awareness-among-employees/",
+  "canonical_url": "https://globalvoices.org/2024/08/06/activist-it-is-not-russophobia-but-a-lack-of-awareness-among-employees/",
+  "source_bytes": 190166,
+  "authors": [
+    {
+      "name": "Alena Moricheva",
+      "url": "https://globalvoices.org/author/alena-moricheva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 817430,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "4db60283ea4d4e95e4229da3e38a76b56bd2973799cbf67ec80d166c35ac67e5",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-5f7b183755e1bb11e49d",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-08",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Alena Moricheva",
+  "body_start": 483,
+  "body_end": 7784,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "e7314b5dbb322686baa8af32459041178283cdd1bf128386333477b36eb2e0b2",
+  "text_path": "articles/gv-817430.txt",
+  "metadata_path": "metadata/gv-817430.json",
+  "attribution": "This story by Alena Moricheva originally appeared on Global Voices. https://globalvoices.org/2024/08/06/activist-it-is-not-russophobia-but-a-lack-of-awareness-among-employees/",
+  "content_sha256": "6d227d103147dd0d7850f26b36c2f9c5ce2ea02b0adccc8ba73e0311eb60f707",
+  "source_sha256": "4db60283ea4d4e95e4229da3e38a76b56bd2973799cbf67ec80d166c35ac67e5",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

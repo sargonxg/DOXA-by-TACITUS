@@ -1,0 +1,403 @@
+{
+  "id": "gv-804005",
+  "publisher_id": 804005,
+  "source_id": "globalvoices:804005",
+  "source_url": "https://globalvoices.org/2023/12/21/shadow-of-terrorism-nigerias-battles-with-healthcare-access-as-polio-persist/",
+  "title": "Shadow of terrorism: Nigeria's battles with healthcare access as polio persist",
+  "published_at": "2023-12-21T10:43:30Z",
+  "modified_at": "2023-12-21T19:55:12Z",
+  "api_author_id": 2627,
+  "api_content_sha256": "47916f3839668135e4910940e4b566b9e4e8b7747765675fac15093f71183aba",
+  "api_response_sha256": "d6f02a2eadb9352c262ad7a8c974a2685d95d17648de09a94ccba861356e725c",
+  "api_retrieved_at": "2026-11-16T22:20:58.882918+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 131,
+      "count": 1641,
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-804005-b00001",
+      "text": "In August 2020 the World Health Organization (WHO) declared the end of the polio epidemic in Nigeria. WHO’s announcement marked a significant milestone because, over a decade ago, Nigeria accounted for half of the polio cases around the world.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 243,
+      "source_links": [
+        "https://www.afro.who.int/news/press-release-who-and-unicef-congratulate-nigeria-ending-wild-poliovirus-call-strengthening",
+        "https://www.un.org/africarenewal/news/polio-no-longer-endemic-nigeria-%E2%80%93-un-health-agency"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00002",
+      "text": "Polio is a debilitating viral disease that mainly affects children under five. While no longer a case for panic by WHO standards, the polio virus, which can cause paralysis, is still devastating communities within Nigeria. Specifically, security-challenged communities in northern Nigeria.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 245,
+      "body_end": 534,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Northern_Region,_Nigeria",
+        "https://my.clevelandclinic.org/health/diseases/15655-polio",
+        "https://www.who.int/news-room/fact-sheets/detail/poliomyelitis"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00003",
+      "text": "According to the National Chairman of the Nigeria Polio Plus Committee, Joshua Hassan, Nigeria’s primary concern now is vaccine-derived polio — this is where a person who isn’t properly vaccinated comes in contact with a person infected with the disease, and it mutates. Joshua Hassan said the primary hurdle between Nigeria and total polio eradication is Nigeria’s ongoing trouble with insurgency and terrorism in northern Nigeria.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 536,
+      "body_end": 968,
+      "source_links": [
+        "https://polioplus.org.ng/en/",
+        "https://tribuneonlineng.com/despite-who-certification-nigeria-still-under-threat-of-vaccine-derived-polio/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00004",
+      "text": "Northern Nigeria, along with eastern Democratic Republic of Congo, Northern Yemen and Somalia, accounts for 72 percent of vaccine-derived polio cases globally. Northern Nigeria has suffered near-daily attacks from insurgents and terrorists since 2014, when Boko Haram started kidnapping, bombing and attacking communities in the region.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 970,
+      "body_end": 1306,
+      "source_links": [
+        "https://www.dni.gov/nctc/groups/boko_haram.html",
+        "https://www.who.int/news/item/25-08-2023-statement-of-the-thirty-sixth-meeting-of-the-polio-ihr-emergency-committee#:~:text=Tanzania%20and%20Zambia.-,Wild%20poliovirus,surveillance%20positive%20samples%20in%202023."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00005",
+      "text": "The Global Polio Eradication Initiative reports that, as a result of vaccination exercises in 2022, polio, which, until recently was found across five states in northern Nigeria, is now concentrated in two states, Sokoto and Zamfara. These states also have some of the highest numbers of terrorist attacks in Nigeria.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1308,
+      "body_end": 1625,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Sokoto_State",
+        "https://en.wikipedia.org/wiki/Zamfara_State",
+        "https://humanglemedia.com/north-central-northwest-states-remains-top-five-most-violent-regions-in-nigeria/",
+        "https://polioeradication.org/countries/nigeria/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00006",
+      "text": "Before the escalation of violence, some local volunteers and health workers played a crucial role in reaching remote communities — they went house-to-house vaccinating children to ensure widespread vaccination coverage. However, the worsening security situation forced a shift in strategy, as house-to-house visits became too dangerous. The risk of kidnapping or getting caught in the crossfire has significantly restricted the movement of aid where volunteers were stationed to visit homes and vaccinate children.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1627,
+      "body_end": 2141,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00007",
+      "text": "Also responsible for the continued spread of polio is generally poor community education on how the polio virus operates (four doses of vaccination are recommended, but people generally get one or two) and a shortage of healthcare workers.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2143,
+      "body_end": 2382,
+      "source_links": [
+        "https://academic.oup.com/jid/article/210/suppl_1/S40/2194415",
+        "https://www.cdc.gov/vaccines/vpd/polio/public/index.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00008",
+      "text": "An organization that distributes vaccines across the continent, eHealth Africa, affirms that Nigeria is doing a good job of educating those most affected about the risks of polio and how to mitigate them. However, while education keeps getting better, the scarcity of medical professionals continues to be a cause for concern — a matter of emergency.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2384,
+      "body_end": 2734,
+      "source_links": [
+        "https://www.aljazeera.com/features/2023/10/23/death-on-duty-nigerian-doctors-blame-continued-exodus-on-state-negligence",
+        "https://www.ehealthafrica.org/",
+        "https://www.ehealthafrica.org/blog/2020/8/14/our-path-to-polio-eradication-in-nigeria"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00009",
+      "text": "Nigerian healthcare workers, including doctors, nurses, and pharmacists have always been known to emigrate to developed countries to practice. There were 24,600 physicians in Nigeria in 2019. The Nigerian Medical Association reports that at least 2,000 Nigerian doctors emigrate yearly, and 85 percent of those remaining are planning their “escape.” As of 2022, Nigeria had an average of 10,000 patients to one doctor. The global recommended minimum is 600 patients to one doctor.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2736,
+      "body_end": 3216,
+      "source_links": [
+        "https://cseaafrica.org/medical-brain-drain-in-nigeria-and-its-impact-on-sustainable-development-goal-3/#:~:text=According%20to%20the%20NMA%2C%20approximately,third%20highest%20in%20the%20UK.",
+        "https://punchng.com/85-doctors-planning-to-leave-nigeria-says-nard/",
+        "https://punchng.com/nigeria-has-one-doctor-to-10000-patients-nma/",
+        "https://www.statista.com/statistics/1260784/number-of-doctors-in-nigeria-by-gender/#:~:text=In%202019%2C%20there%20were%2024.6,of%20about%20206%20million%20people.",
+        "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/medical-doctors-(per-10-000-population)"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00010",
+      "text": "The primary reasons for their migration, particularly among state and federal government workers, stem from poor management of Nigeria’s resources. Healthcare workers have complained of inadequate resources to do their jobs, poor (and often delayed or non-payment of) salaries, and generally horrific work conditions.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3218,
+      "body_end": 3535,
+      "source_links": [
+        "https://humanglemedia.com/the-nigerian-doctor-8-being-a-health-worker-affects-my-mental-health/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00011",
+      "text": "The average monthly salary for a federal government-employed Nigerian doctor is NGN 240,000 (USD 312.92). Those employed by the state governments can earn even less. In contrast, their peers in the United Kingdom earn USD 2,967.20 monthly.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3537,
+      "body_end": 3776,
+      "source_links": [
+        "https://guardian.ng/news/nigerian-medical-doctors-among-least-paid-globally/",
+        "https://www.aljazeera.com/features/2023/10/23/death-on-duty-nigerian-doctors-blame-continued-exodus-on-state-negligence"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00012",
+      "text": "On top of the less-than-competitive salaries, payment is infrequent. Since the year 2000, at least twice each year, the National Association of Resident Doctors stage a protest against the federal or state governments in the country either to demand salaries they’re owed or to ask the government to provide supplies they promised but never delivered. They’ve staged so many work stoppage protests and strikes for better wages that the government has now threatened that doctors will no longer be paid for the days they’re out of work on protest. Essentially, the Nigerian government is threatening to withhold wages if healthcare practitioners persist in protesting the non-payment of wages.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3778,
+      "body_end": 4470,
+      "source_links": [
+        "https://humanglemedia.com/timeline-nationwide-strikes-by-health-workers-have-lasted-9-months-since-2000/",
+        "https://www.premiumtimesng.com/health/health-news/614083-doctors-strike-nigerian-govt-invokes-no-work-no-pay-policy.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00013",
+      "text": "Despite the shortage of doctors that has left the country with a dire scarcity of healthcare professionals, those left behind are overworked, and dangerously so.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4472,
+      "body_end": 4633,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00014",
+      "text": "In September 2023, Dr. Umoh Michael tragically passed away after working a non-stop 72-hour shift at the Lagos University Teaching Hospital, where he served as a resident doctor. Another doctor, Dr. Vwaere Diaso, lost her life in August in an elevator crash at Lagos Island General Hospital, an incident attributed to a faulty elevator that had required maintenance for a while.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4635,
+      "body_end": 5013,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Lagos_Island_General_Hospital",
+        "https://en.wikipedia.org/wiki/Lagos_University_Teaching_Hospital",
+        "https://punchng.com/how-lagos-doctor-died-in-the-elevator-crash/",
+        "https://punchng.com/outrage-as-luth-doctor-dies-after-72-hour-non-stop-shift/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00015",
+      "text": "Among the demands in many of these strikes is also better equipment. Al Jazeera reports that many doctors in Nigeria are forced to innovate when it comes to necessary medical equipment. Doctors often have to innovate on the go, sometimes using cartons as makeshift incubators or conducting critical surgeries by candlelight.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5015,
+      "body_end": 5339,
+      "source_links": [
+        "https://www.aljazeera.com/features/2023/10/23/death-on-duty-nigerian-doctors-blame-continued-exodus-on-state-negligence"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00016",
+      "text": "As insecurity has become Nigeria’s new normal, doctors also have to worry about death by bombing, or getting kidnapped. In the parts of northern Nigeria where insurgents consistently attack, many hospitals have been bombed and doctors have died. In Cross River State, inaction from the state government led to a strike after a doctor was kidnapped in the state.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5341,
+      "body_end": 5702,
+      "source_links": [
+        "https://www.icrc.org/en/document/conflict-and-struggle-health-care-north-east-nigeria",
+        "https://www.vanguardngr.com/2023/08/kidnapped-doctor-nma-suspends-40-day-old-strike-in-criver/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00017",
+      "text": "Organizations like the United States Agency for International Development (USAID) are consistently on the ground providing training for healthcare workers in hard-to-reach areas. However, high stakes like possible death and abduction inhibit the frequency and limit the number of willing volunteers.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5704,
+      "body_end": 6003,
+      "source_links": [
+        "https://polioeradication.org/countries/nigeria/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00018",
+      "text": "Similarly, across the country, practitioners are abandoning medicine for career paths where they don’t have to constantly battle with the consequences of a neglectful government. The evidence is in the number of doctors who stay in Nigeria who are seeking opportunities outside the practice. Around 72,000 Nigerian-trained doctors are registered with the Nigerian Medical Association, and around 3,000 doctors graduate from Nigeria’s medical schools every year.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6005,
+      "body_end": 6466,
+      "source_links": [
+        "https://blogs.lse.ac.uk/africaatlse/2018/10/15/the-emigration-of-doctors-from-nigeria-is-not-todays-problem-it-is-tomorrows/",
+        "https://www.aljazeera.com/features/2023/10/23/death-on-duty-nigerian-doctors-blame-continued-exodus-on-state-negligence",
+        "https://www.thecable.ng/nma-40000-doctors-practising-in-nigeria-out-of-over-80000-registered-with-medical-council"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00019",
+      "text": "But while the situation remains dire, there are a few glimmers of hope as organizations try to tackle aspects of these monumental challenges. Groups like WHO and the Global Polio Eradication Initiative (GPEI) have collaborated with local organizations to vaccinate over 4 million children in rural and security-compromised areas in Nigeria. Similarly, The United Nations International Children's Emergency Fund (UNICEF) continues collaborations with local volunteers and health workers, providing emergency relief, routine immunizations, and surveillance support.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6468,
+      "body_end": 7031,
+      "source_links": [
+        "https://www.afro.who.int/countries/nigeria/news/protecting-every-child-nigeria-poliovirus"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-804005-b00020",
+      "text": "These initiatives to fill gaps on the ground, paired with policy changes that improve support for healthcare workers, and investment in medical infrastructure, offer Nigeria its best chance at sustaining polio elimination goals and building an inclusive, resilient health system.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 7033,
+      "body_end": 7312,
+      "source_links": [
+        "https://punchng.com/japa-doctors-proffer-solutions-at-tinubu-town-hall/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "16d601b0a8cea137018caa40ef65d849ff612430d53136d44bef26d96f79af85",
+  "word_count": 1090,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7312,
+  "retrieved_at": "2026-11-16T22:41:42.613130+00:00",
+  "raw_html_sha256": "5b65cb9ff87f59073f3532920050d1819175c60f2cdb29f36f3e0156b4abd272",
+  "resolved_source_url": "https://globalvoices.org/2023/12/21/shadow-of-terrorism-nigerias-battles-with-healthcare-access-as-polio-persist/",
+  "canonical_url": "https://globalvoices.org/2023/12/21/shadow-of-terrorism-nigerias-battles-with-healthcare-access-as-polio-persist/",
+  "source_bytes": 195078,
+  "authors": [
+    {
+      "name": "Adetomiwa Isiaka",
+      "url": "https://globalvoices.org/author/adetomiwa-isiaka/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 804005,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "5b65cb9ff87f59073f3532920050d1819175c60f2cdb29f36f3e0156b4abd272",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-a3a43ef2deee58c24e49",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-12",
+    "eligible_month_documents": 74,
+    "selected_month_documents": 62,
+    "inclusion_probability": 0.8378378378378378,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Adetomiwa Isiaka",
+  "body_start": 494,
+  "body_end": 7806,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "83d2fad702d7508469601179d03796bb0563bfeefc7a8edd65aeeef63fe6e160",
+  "text_path": "articles/gv-804005.txt",
+  "metadata_path": "metadata/gv-804005.json",
+  "attribution": "This story by Adetomiwa Isiaka originally appeared on Global Voices. https://globalvoices.org/2023/12/21/shadow-of-terrorism-nigerias-battles-with-healthcare-access-as-polio-persist/",
+  "content_sha256": "d643b469d7c94a28914e04a543eb8672b6292f83f8c443ded565866544321d2e",
+  "source_sha256": "5b65cb9ff87f59073f3532920050d1819175c60f2cdb29f36f3e0156b4abd272",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

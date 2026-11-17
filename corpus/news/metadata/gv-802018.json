@@ -1,0 +1,844 @@
+{
+  "id": "gv-802018",
+  "publisher_id": 802018,
+  "source_id": "globalvoices:802018",
+  "source_url": "https://globalvoices.org/2023/12/03/two-togolese-journalists-arrested-for-defamation-of-government-minister/",
+  "title": "Two Togolese journalists arrested for defamation of government minister",
+  "published_at": "2023-12-03T14:53:50Z",
+  "modified_at": "2023-12-03T15:12:33Z",
+  "api_author_id": 1826,
+  "api_content_sha256": "5eb842fc4ef97b3d1c3269fac88a63cc6eeb1f864cfbab9014fbe44cacfc5210",
+  "api_response_sha256": "a286ff614993e6c2c4bfc0ceec4b508eca30444387ed61775d0c5b7b37585acf",
+  "api_retrieved_at": "2026-11-16T22:20:58.008832+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 29,
+      "count": 222,
+      "name": "Togo",
+      "slug": "togo",
+      "parent": 15
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-802018-b00001",
+      "text": "The arrest and imprisonment of two Togolese journalists in mid-November highlights the precariousness of journalists’ rights in this West African country. On November 15, 2023, Loïc Lawson, newspaper editor for Flambeau des Démocrates, and independent journalist Anani Sossou, were arrested after the Togolese Minister of Urban Planning, Housing and Land Reform Kodjo Adedze filed a defamation complaint against them.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 417,
+      "source_links": [
+        "https://fr.wikipedia.org/wiki/Kodjo_Adedze",
+        "https://www.lemonde.fr/afrique/article/2023/11/16/au-togo-deux-journalistes-emprisonnes-pour-diffamation-envers-un-ministre_6200458_3212.html",
+        "https://x.com/SossouAnani?s=20",
+        "https://x.com/fdesdemocrates?s=20",
+        "https://x.com/loiclawson1?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00002",
+      "text": "A case involving FCFA 400 million",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 419,
+      "body_end": 452,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00003",
+      "text": "The case stems from a burglary at Minister Adedze's home. Although the exact date of the incident remains unknown, news of the burglary had been circulating on Togolese media since November 5, when the two journalists reported details of an alleged theft of FCFA 400 million (USD 666,302). Sossou posted on his Facebook page:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 454,
+      "body_end": 779,
+      "source_links": [
+        "https://afriquinfos.com/afrique-de-louest/togo-togo-braquage-dune-somme-de-400-millions-fcfa-chez-un-ministre-des-osc-reclament-une-enquete-sur-la-provenance-dun-montant-pareil/",
+        "https://www.facebook.com/innocent.sossou"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00004",
+      "text": "> #Togo: Almost FCFA 400 million stolen from Kodzo Adédzé’s home in Kovié",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 781,
+      "body_end": 854,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00005",
+      "text": "> This intriguing affair took place in the small village of Kovié, within the Zio prefecture. On Sunday November 5, the Minister of Urban Planning and Land Reform, Kodzo Adédzé, discovered that the trifling sum of almost FCFA 400 million had disappeared from his home. According to the weekly newspaper, Le Flambeau des Démocrates, the alleged perpetrator of the theft was a young man from Benin who was living it up by buying various goods, like tricycles and motorcycles. The young man from Benin was subsequently arrested by the judicial police, who went to the scene of the burglary to do their report and interview the minister who was robbed.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 856,
+      "body_end": 1504,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00006",
+      "text": "> Why do ministers of the Republic keep such large sums of money at their homes instead of simply putting them in a bank or setting up companies to tackle the unemployment crisis affecting young graduates?",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1506,
+      "body_end": 1711,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00007",
+      "text": "> There is great concern that the Gabonese practices when Ali Bongo Ondimba was overthrown are now taking place in Togo, where boxes filled with hundreds of billions of FCFA were found in the homes of his inner circle.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1713,
+      "body_end": 1931,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00008",
+      "text": "> Although it has been enshrined in Togolese law for several years now that the country’s civil servants and high-ranking officials declare their assets, this has been slow to materialize. Let’s hope that this stolen sum of money is included in the minister’s assets and was legally earned.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1933,
+      "body_end": 2223,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00009",
+      "text": "> At present, neither the origin nor the exact amount of the money stolen from the minister are known. It is hoped the Central Directorate of Judicial Police (DCPJ) will take this investigation all the way to shed light on this scandal for Togolese citizens.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2225,
+      "body_end": 2483,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00010",
+      "text": "That same day, media outlet Flambeau des Démocrates posted on X (formerly Twitter):",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2485,
+      "body_end": 2568,
+      "source_links": [
+        "https://x.com/fdesdemocrates?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00011",
+      "text": "> #Togo According to our source close to the investigation, it was a young man from Benin who stole almost FCFA 400 million from the village home of the minister, #Adedzé. The young man was arrested due to the considerable amount of money he spent after the burglary (purchasing several motorcycles and tricycles) pic.twitter.com/Ar52uK3DeM",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2570,
+      "body_end": 2910,
+      "source_links": [
+        "https://t.co/Ar52uK3DeM",
+        "https://twitter.com/hashtag/Adedz%C3%A9?src=hash&ref_src=twsrc%5Etfw",
+        "https://twitter.com/hashtag/Togo?src=hash&ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00012",
+      "text": "> — Flambeau des Démocra (@fdesdemocrates) November 5, 2023",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2912,
+      "body_end": 2971,
+      "source_links": [
+        "https://twitter.com/fdesdemocrates/status/1721242923847548980?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00013",
+      "text": "According to French newspaper LeMonde, the minister did report the burglary to the police, but the amount was not disclosed. Government authorities filed a complaint in response to the posts that both journalists shared. However, on November 12, they subsequently retracted their statements in another Facebook post, explaining that the amount originally published on social media was an overestimation:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2973,
+      "body_end": 3376,
+      "source_links": [
+        "https://www.lemonde.fr/afrique/article/2023/11/16/au-togo-deux-journalistes-emprisonnes-pour-diffamation-envers-un-ministre_6200458_3212.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00014",
+      "text": "> #Togo: According to a source familiar with the matter, the amount burgled from the home of the Minister of State Kodzo Adédzé, was an overestimation.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3378,
+      "body_end": 3529,
+      "source_links": [
+        "https://www.facebook.com/hashtag/togo?__eep__=6&__tn__=*NK*F"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00015",
+      "text": "> This case has been a hot news topic in our country and online for several days now. The Minister of State [and][ the Minister of Urban Planning and Land Reform experienced a burglary at his home a few weeks ago. Money was stolen by the burglars. Although we agreed on an estimated amount of FCFA 400 million at the outset, extensive investigations and sources familiar with the matter confirmed that the amount reported was overestimated and didn’t actually reach FCFA 400 million.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3531,
+      "body_end": 4014,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00016",
+      "text": "> No one is disputing the burglary itself, but the amount has been overestimated.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4016,
+      "body_end": 4097,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00017",
+      "text": "> The ongoing police investigation will tell us what happens next and the actual amount that was stolen.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4099,
+      "body_end": 4203,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00018",
+      "text": "On November 10, Loïc Lawson had responded to the minister’s complaint by posting the following on X:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4205,
+      "body_end": 4305,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00019",
+      "text": "> Hundreds of millions stolen from the home of Minister #AdedzeKodjo. He reportedly filed a complaint against #LoicLawson and #AnaniSossou. We are unfazed! He won’t get away with it this time. We have evidence of the theft, and audio recordings of the accused and neighbors. It’s all going to come out! pic.twitter.com/z1Ou9czaMc",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4307,
+      "body_end": 4636,
+      "source_links": [
+        "https://t.co/z1Ou9czaMc",
+        "https://twitter.com/hashtag/AdedzeKodjo?src=hash&ref_src=twsrc%5Etfw",
+        "https://twitter.com/hashtag/AnaniSossou?src=hash&ref_src=twsrc%5Etfw",
+        "https://twitter.com/hashtag/LoicLawson?src=hash&ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00020",
+      "text": "> — @loiclawson1 (@loiclawson1) November 10, 2023",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4638,
+      "body_end": 4687,
+      "source_links": [
+        "https://twitter.com/loiclawson1/status/1722887668466348278?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00021",
+      "text": "After being summoned before the Research and Investigation Brigade of the National Police in Lomé on November 13, both journalists were taken into custody prior to appearing before the public prosecutor on November 14. The following day, they were transferred to the civil prison in Lomé for spreading false information and incitement to revolt.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4689,
+      "body_end": 5034,
+      "source_links": [
+        "https://24heureinfo.com/justice/togo-affaire-de-400-millions-loic-lawson-et-anani-sossou-en-garde-a-vue/",
+        "https://cpj.org/fr/2023/11/les-journalistes-togolais-loic-lawson-et-anani-sossou-emprisonnes-a-la-suite-dune-plainte-dun-ministre/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00022",
+      "text": "However, Article 60 of the Togolese Press and Communication Code provides for recourse to self-regulatory bodies, like the Togolese Media Observatory and the High Authority for Audiovisual and Communication (HAAC), to settle defamation disputes.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5036,
+      "body_end": 5281,
+      "source_links": [
+        "https://www.droit-afrique.com/uploads/Togo-Code-2020-presse.pdf",
+        "https://www.haactogo.tg/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00023",
+      "text": "Although this press code doesn’t include social networks in its definition of media outlets, it does provide procedures to follow for journalists using such networks. Article 156 thereby stimulates:",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5283,
+      "body_end": 5481,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00024",
+      "text": "> Tout journaliste, technicien ou auxiliaire des médias, détenteur de la carte de presse, qui a eu recours aux réseaux sociaux comme moyens de communication pour commettre toute infraction prévue dans le présent code, est puni conformément aux dispositions du droit commun.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5483,
+      "body_end": 5756,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00025",
+      "text": "> Any journalist, technician or media assistant holding a press card who has used social networks as a means of communication to commit any offense outlined in this code will be punished in accordance with the provisions of ordinary law.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5758,
+      "body_end": 5995,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00026",
+      "text": "In the case of these journalists, Article 290 of the Togolese Criminal Code was enforced, which stipulates:",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5997,
+      "body_end": 6104,
+      "source_links": [
+        "https://www.policinglaw.info/assets/downloads/Code_p%C3%A9nale_du_Togo_(2015).pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00027",
+      "text": "> La publication directe, ou par voie de reproduction d'une allégation ou imputation qualifiée de diffamation, est punie d'une peine d'emprisonnement d'un (01) à six (06) mois avec sursis et d'une amende de 500.000 francs CFA (soit 830 dollars américains) à 2.000.000 francs CFA (3 327 dollars américains) ou de l'une de ces deux peines.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6106,
+      "body_end": 6443,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00028",
+      "text": "> The direct publication or reprinting of an allegation or imputation classed as defamation, shall either be punished by a one (01) to six (06) months suspended prison term, a fine of FCFA 500,000 (USD 830) to FCFA 2,000,000 (USD 3,327), or both.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6445,
+      "body_end": 6691,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00029",
+      "text": "Calls for their release",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6693,
+      "body_end": 6716,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00030",
+      "text": "Ever since Lawson and Sossou were first summoned, journalists’ rights organizations have been calling on Togolese authorities to release them. On November 15, the Togolese Press Managers’ Union (PPT), issued a statement expressing its indignation:",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6718,
+      "body_end": 6965,
+      "source_links": [
+        "https://www.plumedafrique.tg/togo/togo-arrestation-de-loic-lawson-et-anani-sossou-le-ppt-sindigne-face-a-lallure-que-prend-laffaire/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00031",
+      "text": "> Le PPT rappelle qu’en matière d’enquête pour faire la lumière sur une affaire de cambriolage, relayée à travers le monde et par des professionnels des médias, la privation de liberté ne doit pas être la règle. Il appelle par conséquent à la mise en liberté des confrères incarcérés pendant que les investigations continuent.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 6967,
+      "body_end": 7293,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00032",
+      "text": "> The PPT would like to point out that when it comes to investigations shedding light on burglaries, which are reported by media professionals worldwide, imprisonment should not be the norm. It therefore calls for the release of its imprisoned colleagues while the investigation continues.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 7295,
+      "body_end": 7584,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00033",
+      "text": "In an interview with media outlet Tv5monde, Edem Gadegbeku, the secretary general of the International Francophone Press Union in Togo (UPF-Togo) — of which Loïc Lawson is president — called for the release of the journalists and urged the authorities to review their press and communication code legislation:",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 7586,
+      "body_end": 7895,
+      "source_links": [
+        "https://x.com/EdemGadegbeku?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00034",
+      "text": "> Following the imprisonment of journalists Loïc Lawson and Anani Sossou in #Togo, there have been numerous calls for their release, especially from media organizations pic.twitter.com/WG6fCi2ayY",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 7897,
+      "body_end": 8092,
+      "source_links": [
+        "https://t.co/WG6fCi2ayY",
+        "https://twitter.com/hashtag/Togo?src=hash&ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00035",
+      "text": "> — Caroline Chauvet (@caro_enilorac) November 18,",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 8094,
+      "body_end": 8144,
+      "source_links": [
+        "https://twitter.com/caro_enilorac/status/1725777417657078076?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00036",
+      "text": "The Committee to Protect Journalists (CPJ) also called for their release:",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 8146,
+      "body_end": 8219,
+      "source_links": [
+        "https://cpj.org/fr/2023/11/les-journalistes-togolais-loic-lawson-et-anani-sossou-emprisonnes-a-la-suite-dune-plainte-dun-ministre/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00037",
+      "text": "> Les autorités togolaises doivent libérer immédiatement et sans condition les journalistes Loïc Lawson et Anani Sossou, et réformer les lois et règlements du pays afin de garantir que le journalisme ne soit pas criminalisé.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 8221,
+      "body_end": 8445,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00038",
+      "text": "> Togolese authorities must immediately and unconditionally release the journalists Loïc Lawson and Anani Sossou, and thereby reform the country’s laws and regulations to ensure that journalism is not criminalized.",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 8447,
+      "body_end": 8661,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00039",
+      "text": "Reporters Without Borders made a similar call for their release:",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 8663,
+      "body_end": 8727,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00040",
+      "text": "> #Togo: arrested on 13/11, the journalists @loiclawson1 and @SossouAnani have been imprisoned in Lomé’s civil prison since yesterday for their posts on social media. RSF calls on the authorities to release them immediately. pic.twitter.com/Nyf8aVGIve",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 8729,
+      "body_end": 8980,
+      "source_links": [
+        "https://t.co/Nyf8aVGIve",
+        "https://twitter.com/SossouAnani?ref_src=twsrc%5Etfw",
+        "https://twitter.com/hashtag/Togo?src=hash&ref_src=twsrc%5Etfw",
+        "https://twitter.com/loiclawson1?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00041",
+      "text": "> — RSF (@RSF_inter) November 15, 2023",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 8982,
+      "body_end": 9020,
+      "source_links": [
+        "https://twitter.com/RSF_inter/status/1724823224725262744?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00042",
+      "text": "Togolese politicians have also become involved in these calls. Gerry Taama, leader of the New Togolese Commitment (NET) party, expressed his support for the two men on Facebook:",
+      "page": null,
+      "paragraph": 42,
+      "body_start": 9022,
+      "body_end": 9199,
+      "source_links": [
+        "https://x.com/GerryTaama?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00043",
+      "text": "> All my support to the journalists Anani Sossou and Loïc Lawson, dealing with this minister’s complaint.",
+      "page": null,
+      "paragraph": 43,
+      "body_start": 9201,
+      "body_end": 9306,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00044",
+      "text": "> It’s a bit like the pot calling the kettle black. As I previously wrote here, elsewhere, a story like this would have prompted the public prosecutor to initiate proceedings himself. However, that’s not how things work here. I hear some people calling for members of parliament to deal with this case. There are three options available to us as members of parliament. An interpellation, which will accomplish nothing (this is my only option), a parliamentary inquiry, but this requires 15 members of parliament to put it on the agenda (there is a total of 14 in our parliament’s opposition), or a vote of no confidence to remove our government. This shall require a quorum of 4/5, thus making it impossible.",
+      "page": null,
+      "paragraph": 44,
+      "body_start": 9308,
+      "body_end": 10016,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00045",
+      "text": "> However, there is another option: an honorable resignation. In a country with an underemployment rate of almost 40 percent, a minister who got caught with such a staggering amount of money should have had to resign. And yet, he is the one filing a complaint against these journalists, who were only doing their job. As you know, I never interfere with justice matters, but I offer all my support to these two journalists. Anani Sossou is an old friend of mine. We have often protested in the streets of Lomé together. We built our friendship on these days, often filled with the smell of tear gas. Loïc Lawson is a bold and courageous journalist. Both will be able to deal with this challenge and the truth will eventually come out in full. It now appears that the Togolese people’s wealth should be measured in boxes of macaroni. It must all come out.",
+      "page": null,
+      "paragraph": 45,
+      "body_start": 10018,
+      "body_end": 10872,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00046",
+      "text": "> Tell me what you think about this complaint. In a situation like this, I’d keep a low profile in order to be forgotten. […]",
+      "page": null,
+      "paragraph": 46,
+      "body_start": 10874,
+      "body_end": 10999,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00047",
+      "text": "> Let’s show our outrage!",
+      "page": null,
+      "paragraph": 47,
+      "body_start": 11001,
+      "body_end": 11026,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00048",
+      "text": "Togolese politician Nathaniel Olympio also posted his message of support:",
+      "page": null,
+      "paragraph": 48,
+      "body_start": 11028,
+      "body_end": 11101,
+      "source_links": [
+        "https://x.com/nathanielolymp?s=20"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00049",
+      "text": "> #Togo: More than FCFA 400 million stolen from the minister’s home. 2 journalists, Anani Sossou and Loïc Lawson, addressed this story. The minister has taken them to court. In a democratic country, the public prosecutor and tax authorities would ask the minister about the origin of this money pic.twitter.com/98809Ef1kM",
+      "page": null,
+      "paragraph": 49,
+      "body_start": 11103,
+      "body_end": 11424,
+      "source_links": [
+        "https://t.co/98809Ef1kM",
+        "https://twitter.com/hashtag/Togo?src=hash&ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00050",
+      "text": "> — Nathaniel Olympio (@nathanielolymp) November 13, 2023",
+      "page": null,
+      "paragraph": 50,
+      "body_start": 11426,
+      "body_end": 11483,
+      "source_links": [
+        "https://twitter.com/nathanielolymp/status/1723982192563425769?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802018-b00051",
+      "text": "Reminder of a case in 2021",
+      "page": null,
+      "paragraph": 51,
+      "body_start": 11485,
+      "body_end": 11511,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00052",
+      "text": "The turn of events that Togolese media is currently experiencing is significant, in that it is reminiscent of the imprisonment of two other journalists in December 2021 for contempt for authority, incitement of hatred and defamation.",
+      "page": null,
+      "paragraph": 52,
+      "body_start": 11513,
+      "body_end": 11746,
+      "source_links": [
+        "https://24heureinfo.com/justice/togo-ferdinand-ayite-et-joel-egah-transferes-a-la-prison-civile-de-lome/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00053",
+      "text": "At that time, the late Joël Egah and Ferdinand Ayité were arrested and remanded in Lomé’s civil prison. Upon being provisionally released, Ayité fled the country to avoid being sentenced to a prison term. He was subsequently awarded the International Press Freedom Award at an awards ceremony in New York on November 17, 2023. During his speech, he spoke about the case involving his newly detained colleagues:",
+      "page": null,
+      "paragraph": 53,
+      "body_start": 11748,
+      "body_end": 12158,
+      "source_links": [
+        "https://cpj.org/fr/2023/06/le-comite-pour-la-protection-des-journalistes-recompensera-deminents-defenseurs-des-medias-lors-de-la-remise-du-prix-international-de-la-liberte-de-la-presse-2023/",
+        "https://rsf.org/fr/togo-deux-journalistes-en-prison-apr%C3%A8s-une-%C3%A9mission",
+        "https://rsf.org/fr/togo-rsf-demande-la-non-ex%C3%A9cution-du-mandat-d-arr%C3%AAt-international-lanc%C3%A9-contre-deux-journalistes"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00054",
+      "text": "Read: In Togo, a journalist honoured for his fight against corruption must from now on live in exile",
+      "page": null,
+      "paragraph": 54,
+      "body_start": 12160,
+      "body_end": 12260,
+      "source_links": [
+        "https://fr.globalvoices.org/2023/07/05/280270/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00055",
+      "text": "Compared with 2022, where the country ranked 100 out of 180 countries in the Reporters without Borders’ World Press Freedom Index, press freedom in Togo has seen a slight improvement: in 2023, the country rose 30 places and is now ranked at Number 70. However, this does not mean that all journalists are protected in the course of doing their work.",
+      "page": null,
+      "paragraph": 55,
+      "body_start": 12262,
+      "body_end": 12611,
+      "source_links": [
+        "https://rsf.org/fr/pays-togo"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802018-b00056",
+      "text": "Meanwhile, civil society organizations are questioning where the large amount of money stolen from the minister’s home came from and are calling for an investigation into the matter.",
+      "page": null,
+      "paragraph": 56,
+      "body_start": 12613,
+      "body_end": 12795,
+      "source_links": [
+        "https://afriquinfos.com/afrique-de-louest/togo-togo-braquage-dune-somme-de-400-millions-fcfa-chez-un-ministre-des-osc-reclament-une-enquete-sur-la-provenance-dun-montant-pareil/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "959cc45fa7fde53fb1f14cba195c5fed2e12a8e591d16d51db3a2e7590ec4014",
+  "word_count": 2056,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 3,
+      "reason": "Executable or external/non-text media excluded"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 6,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 12795,
+  "retrieved_at": "2026-11-16T22:41:31.585410+00:00",
+  "raw_html_sha256": "2d072daf15eb764c51672dc77507fadb1334ac6f94e4fadef21ec5339fbf13bf",
+  "resolved_source_url": "https://globalvoices.org/2023/12/03/two-togolese-journalists-arrested-for-defamation-of-government-minister/",
+  "canonical_url": "https://globalvoices.org/2023/12/03/two-togolese-journalists-arrested-for-defamation-of-government-minister/",
+  "source_bytes": 205775,
+  "authors": [
+    {
+      "name": "Jean Sovon",
+      "url": "https://fr.globalvoices.org/author/jean-sovon/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Laura",
+      "url": "https://globalvoices.org/author/laura-dunne/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 802018,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "2d072daf15eb764c51672dc77507fadb1334ac6f94e4fadef21ec5339fbf13bf",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-3f08dc50f9466354add1",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-12",
+    "eligible_month_documents": 74,
+    "selected_month_documents": 62,
+    "inclusion_probability": 0.8378378378378378,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Jean Sovon",
+  "body_start": 497,
+  "body_end": 13292,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "e5e8e5432e04799af63ec788b46ee9fd90d87c1a5ec5e75382c8e90835581626",
+  "text_path": "articles/gv-802018.txt",
+  "metadata_path": "metadata/gv-802018.json",
+  "attribution": "This story by Jean Sovon originally appeared on Global Voices. https://globalvoices.org/2023/12/03/two-togolese-journalists-arrested-for-defamation-of-government-minister/",
+  "content_sha256": "1eb41878d82053af7ebac68a4e4a2a6d708dbf0208d4688c231bead2d9ddc989",
+  "source_sha256": "2d072daf15eb764c51672dc77507fadb1334ac6f94e4fadef21ec5339fbf13bf",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

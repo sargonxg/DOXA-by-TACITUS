@@ -1,0 +1,454 @@
+{
+  "id": "gv-749880",
+  "publisher_id": 749880,
+  "source_id": "globalvoices:749880",
+  "source_url": "https://globalvoices.org/2021/11/06/behind-the-success-of-the-kenyan-twitter-disinformation-campaign-to-discredit-the-pandora-papers/",
+  "title": "Behind the success of the Kenyan Twitter disinformation campaign to discredit the Pandora Papers",
+  "published_at": "2021-11-06T10:00:48Z",
+  "modified_at": "2021-11-06T12:18:22Z",
+  "api_author_id": 964,
+  "api_content_sha256": "bb6dbc31505cd21b496e1ab2cbe374e1c9bdc07af3196b5e1336fb8cf780504e",
+  "api_response_sha256": "57aeccf318ed89945a4bde065daec3d031dd424874648368349abe65f2de4209",
+  "api_retrieved_at": "2026-11-16T22:20:38.953094+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 18,
+      "count": 1766,
+      "name": "Kenya",
+      "slug": "kenya",
+      "parent": 15
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-749880-b00001",
+      "text": "Nairobi-based digital researchers for the Mozilla Foundation, Odanga Madung and Brian Obilo, have revealed how Kenya’s flourishing disinformation industry worked to discredit the Pandora Papers, which leaked the secret assets of the Kenyan President Uhuru Kenyatta and his family. Their findings are compiled in a report titled, “How to Manipulate Twitter and Influence People: Propaganda and the Pandora Papers in Kenya.”",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 422,
+      "source_links": [
+        "https://assets.mofoprod.net/network/documents/Pandora_Disinfo_Report_2__hcc.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00002",
+      "text": "Since 1999, Kenyatta and six members of his family were linked to 13 offshore investments with “stocks and bonds” to the tune of $30 million USD. The BBC reports that these investments are domiciled in “Panama, the British Virgin Islands (BVI) and other tax havens.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 424,
+      "body_end": 690,
+      "source_links": [
+        "https://www.bbc.co.uk/news/world-africa-58775944"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00003",
+      "text": "When the news of the leaks first broke, Kenyan Twitter users were outraged that their president was implicated. However, online conversations soon morphed into support for Kenyatta.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 692,
+      "body_end": 873,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00004",
+      "text": "“Like clockwork, an alternative sentiment quickly emerged, supporting the president and his offshore accounts. Some of the tweets promoting this alternative sentiment included outright lies,” asserts Madung, lead author of the report.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 875,
+      "body_end": 1109,
+      "source_links": [
+        "https://foundation.mozilla.org/en/blog/new-research-in-kenya-disinformation-campaigns-seek-to-discredit-pandora-papers/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00005",
+      "text": "Despite the leak, there has been a near media blackout of the news by Kenya’s leading local media. Kennedy Wandera, Swahili Voice of America correspondent and chair of the Foreign Press Association, told African News that most of Kenya’s local media “are owned by politicians” who effectively “gatekeep or allow what gets out of that gate.”",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1111,
+      "body_end": 1451,
+      "source_links": [
+        "https://www.africanews.com/2021/10/06/did-kenya-s-press-go-mute-after-pandora-expose-on-pres-uhuru-kenyatta//"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00006",
+      "text": "This media silence created an information vacuum that exacerbated the Twitter disinformation campaign.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1453,
+      "body_end": 1555,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00007",
+      "text": "Manipulating Twitter’s Algorithm",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1557,
+      "body_end": 1589,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00008",
+      "text": "The research conducted by Madung, a Kenyan data journalist, and Obilo, a cybersecurity analyst, includes interviews with disinformation influencers.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1591,
+      "body_end": 1739,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00009",
+      "text": "Influencers are social media users with a considerably high number of followers. In some African countries like Nigeria, these digital information influencers drive political propaganda or frame political news, which are then amplified by their followers, especially during elections. Consequently, these digital media amplifiers that disseminate false news are called disinformation influencers.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1741,
+      "body_end": 2137,
+      "source_links": [
+        "https://www.researchgate.net/publication/288072995_Nature_of_Tweets_in_the_2015_Nigerian_Presidential_Elections"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00010",
+      "text": "The Mozilla Fellows researchers also collated a trove of screenshots, memes, and hashtags. Their mixed research methodology also included a qualitative analysis of thousands of tweets using Twitter’s Firehose API.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2139,
+      "body_end": 2352,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00011",
+      "text": "However, the researchers could not determine the funders of this campaign. Madung who spoke with Global Voices via email asserts that “attribution is very hard for us to claim on this with the current evidence we have.” This is because “the people we spoke to [in course of the research] also let us know that the money they receive likely changes hands many times before it arrives at them. The account operators are also very aware which side they tweet for even if they aren't sure where the money is coming from,” Madung said.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2354,
+      "body_end": 2884,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00012",
+      "text": "The researchers found that astroturfing — the act of masking the real source of a political campaign to make it appear authentic — was employed by hired Twitter disinformation influencers who employed sophisticated tactics that successfully manipulated Twitter’s trending algorithm. This was achieved by trending two hashtags (#phonyleaks and #offshoreaccountfacts) in support of President Kenyatta. However, further investigation by the researchers showed that some Twitter handles repeated the same tweets, with similar words, for days. One influencer told the researchers that he’s been getting paid to do this for six years — and has never been caught.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2886,
+      "body_end": 3542,
+      "source_links": [
+        "https://assets.mofoprod.net/network/documents/Pandora_Disinfo_Report_2__hcc.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00013",
+      "text": "In addition, it was discovered that some of the astroturf content was a mixture of propaganda and misinformation. The aim, the report notes, was to “fabricate consensus — specifically, the consensus that most Kenyans support Uhuru Kenyatta and distrust the Pandora Papers.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3544,
+      "body_end": 3817,
+      "source_links": [
+        "https://assets.mofoprod.net/network/documents/Pandora_Disinfo_Report_2__hcc.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00014",
+      "text": "Similarly, Twitter handles mimicking Kenyan celebrities were also created and used in this campaign of lies. For instance, the identities of two local Kenyan celebrities, Diana Marua and Lillian Ng’ang’a, were employed in amplifying disinformation for the #offshoreaccountfacts campaign. The researchers “reached out to them and both denied any association with the accounts we identified,” says the report.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3819,
+      "body_end": 4226,
+      "source_links": [
+        "https://assets.mofoprod.net/network/documents/Pandora_Disinfo_Report_2__hcc.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00015",
+      "text": "One of the most disturbing aspects of the report is how easily these disinformation influencers were able to effectively manipulate Twitter's algorithm to push a trend and amplify disinformation. According to a disinformation influencer who was interviewed in the report, “Twitter is easy.”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4228,
+      "body_end": 4518,
+      "source_links": [
+        "https://assets.mofoprod.net/network/documents/Pandora_Disinfo_Report_2__hcc.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00016",
+      "text": "Odanga informed Global Voices that a Twitter spokesperson responded to their report with the following statement:",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4520,
+      "body_end": 4633,
+      "source_links": [],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00017",
+      "text": "> Twitter’s top priority is keeping people safe, and we remain vigilant about coordinated activity on our service. Using both technology and human review, we proactively and routinely tackle attempts at platform manipulation and mitigate them at scale by actioning millions of accounts each week for violating our policies in this area. We are constantly improving Twitter's auto-detection technology to catch accounts engaging in rule-violating behavior as soon as they pop up on the service",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4635,
+      "body_end": 5127,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-749880-b00018",
+      "text": "Africa's Twitter hashtag disinformation heist",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5129,
+      "body_end": 5174,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00019",
+      "text": "Twitter guidelines prohibit the manipulation of hashtags by state or state-linked political actors. Consequently, “inauthentic engagements” that artificially trend content or “influence conversations through the use of multiple [or] fake accounts” violate the September 2020 Twitter policy.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5176,
+      "body_end": 5466,
+      "source_links": [
+        "https://help.twitter.com/en/rules-and-policies/platform-manipulation",
+        "https://transparency.twitter.com/en/reports/information-operations.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00020",
+      "text": "However, this policy cannot sufficiently curb the Twitter disinformation campaigns that have gradually morphed into the norm in Africa's political landscape.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5468,
+      "body_end": 5625,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00021",
+      "text": "In Kenya, digital disinformation industry rates “range from $15 per day to $25 per hashtag,” affirms Madung in an email to Global Voices. Nonetheless, in the 2017 Kenyan elections, some disinformation vendors earned as high as “$25 per hashtag per day, [and] sometimes they would end up running 6 of them.” Madung further asserts that the spike in remuneration implies “a possible surge of business and pricing in election seasons.” In a country where most citizens earn less than KES50,000 Kenyan Shillings (about $449 USD) per month, digital disinformation is a very lucrative business.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5627,
+      "body_end": 6215,
+      "source_links": [
+        "https://www.businessdailyafrica.com/bd/news/74pc-of-salaried-kenyans-earn-less-than-sh50-000-2228858"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00022",
+      "text": "In addition, disinformation influencers thrive in the continent because the Twitter algorithm emphasises popularity over truth. “The root of the problem is that political conversations take place on platforms built for viral advertising,” notes journalist Liesl Pretorius in an article on Africa Check, an independent fact-checking organisation. The whole concept of trending hashtags is built around popularity — the number of people engaging in that conversation.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6217,
+      "body_end": 6682,
+      "source_links": [
+        "https://africacheck.org/fact-checks/reports/anatomy-disinformation-campaign-who-what-and-why-deliberate-falsehoods-twitter"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00023",
+      "text": "Another reason disinformation thrives is that tech companies like Twitter don't prioritise the expansion of their fact-checking capacity in the continent. Tessa Knight, a South Africa-based digital researcher who spoke to Africa Center for Strategic Studies in October states that these scant resources result in the insufficient “understanding of the African countries they are operating in and their varied information and political landscapes.”",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6684,
+      "body_end": 7131,
+      "source_links": [
+        "https://africacenter.org/spotlight/domestic-disinformation-on-the-rise-in-africa/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00024",
+      "text": "Rosemary Ajayi, disinformation and social media manipulation lead researcher at Digital Africa Research Lab asserts that “it is not illegal to manipulate Twitters’ trends,” even though the practice violates Twitter rules. For instance, “there are violations of multiple rules occurring in a single trending campaign” within the past five years in Nigeria. Yet they were all “overlooked” by Twitter, Ajayi noted. “Twitter has the ability to put an end to this practice but appears to lack the will to do so,” Ajayi said in an email to Global Voices.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7133,
+      "body_end": 7681,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-749880-b00025",
+      "text": "Although the Kenyan Twitter disinformation campaign manifests at a level of alarming sophistication, Kevin Zawaki, communications manager at Mozilla Foundation, said in an email to Global Voices, that this case points to the more worrying fact of “Twitter’s unwillingness to address problems outside the Western world.”",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7683,
+      "body_end": 8002,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5a63032a584f536db21aa83885ced1f765af637072c79dc8ed7cc1994511bd7a",
+  "word_count": 1184,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8002,
+  "retrieved_at": "2026-11-16T22:32:30.458135+00:00",
+  "raw_html_sha256": "5d44604e92d8c9c82b24aac40a8b92d88aff521f560873691922faae84b0256f",
+  "resolved_source_url": "https://globalvoices.org/2021/11/06/behind-the-success-of-the-kenyan-twitter-disinformation-campaign-to-discredit-the-pandora-papers/",
+  "canonical_url": "https://globalvoices.org/2021/11/06/behind-the-success-of-the-kenyan-twitter-disinformation-campaign-to-discredit-the-pandora-papers/",
+  "source_bytes": 192285,
+  "authors": [
+    {
+      "name": "Nwachukwu Egbunike",
+      "url": "https://globalvoices.org/author/nwachukwu-egbunike/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 749880,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "5d44604e92d8c9c82b24aac40a8b92d88aff521f560873691922faae84b0256f",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-4420cf38e3b5f854c41d",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-11",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Nwachukwu Egbunike",
+  "body_start": 534,
+  "body_end": 8536,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "83777c73b0d489f794e0ef50f23ab283e9b5e44804bd56c0d5226f48dcd52b0d",
+  "text_path": "articles/gv-749880.txt",
+  "metadata_path": "metadata/gv-749880.json",
+  "attribution": "This story by Nwachukwu Egbunike originally appeared on Global Voices. https://globalvoices.org/2021/11/06/behind-the-success-of-the-kenyan-twitter-disinformation-campaign-to-discredit-the-pandora-papers/",
+  "content_sha256": "d5c0d6813fa8638e9de99d951d38eec8a7fa5d875549bd10157e1458a3f7975f",
+  "source_sha256": "5d44604e92d8c9c82b24aac40a8b92d88aff521f560873691922faae84b0256f",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

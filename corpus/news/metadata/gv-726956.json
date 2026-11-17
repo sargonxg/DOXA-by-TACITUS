@@ -1,0 +1,448 @@
+{
+  "id": "gv-726956",
+  "publisher_id": 726956,
+  "source_id": "globalvoices:726956",
+  "source_url": "https://globalvoices.org/2021/02/11/security-concerns-and-legal-ambiguities-threaten-the-future-of-ukraines-state-in-a-smartphone/",
+  "title": "Security concerns and legal ambiguities threaten the future of Ukraine's ‘State in a Smartphone’",
+  "published_at": "2021-02-11T16:42:25Z",
+  "modified_at": "2021-02-11T17:44:08Z",
+  "api_author_id": 895,
+  "api_content_sha256": "0f363ccbf74770dc5106a38e105a8c807d66c3402fef544c7c732b5dbff99bc4",
+  "api_response_sha256": "77986401a5e819891872a9bdf1c0b30de63431aaa5322b33afb4833ff0dba79d",
+  "api_retrieved_at": "2026-11-16T22:20:32.943313+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 243,
+      "count": 6007,
+      "name": "Development",
+      "slug": "development",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 345,
+      "count": 344,
+      "name": "Ukrainian",
+      "slug": "ukrainian",
+      "parent": 317
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-726956-b00001",
+      "text": "One year ago, the Ukrainian government released the revolutionary mobile application Diia (Ukrainian for “action”), a cornerstone of President Volodymyr Zelensky’s campaign promise of making public services convenient and easily accessible via the internet.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 257,
+      "source_links": [
+        "https://www.epravda.com.ua/publications/2020/02/7/656775/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00002",
+      "text": "The Diia mobile app — and its accompanying online e-services portal — allows citizens to digitize their national ID and biometric passport, personal tax number, student ID, and more, and the digital documents wield the same legal power as the original paper ones. Within a year, Ukraine became the fourth European country to have a digital driver’s license and the first country in the world to have a digital passport.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 259,
+      "body_end": 678,
+      "source_links": [
+        "https://thedigital.gov.ua/2020#diia",
+        "https://www.president.gov.ua/en/news/z-veresnya-2021-roku-zhodna-ustanova-centralnogo-organu-viko-64273"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00003",
+      "text": "However, a massive data leak last year has raised concerns about the level of protection around users’ personal information. In May 2020, activists discovered about 900 GB of citizens’ personal data being traded by an anonymous chatbot on the popular messaging platform Telegram. The dataset included passport numbers, personal tax numbers, residence information, driver’s licenses, social media passwords, and even bank details of millions of Ukrainians.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 680,
+      "body_end": 1135,
+      "source_links": [
+        "https://globalvoices.org/2020/10/21/who-is-selling-ukrainians-personal-data-online-and-why/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00004",
+      "text": "Some public officials accused Diia of leaking data from government registries, while security experts recalled that the Ministry of Digital Transformation had yet to release any security documentation for the app. While journalists and researchers were able to confirm that part of the datasets had come from Ukrainian government registries, no evidence implicating Diia directly has been found.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1137,
+      "body_end": 1532,
+      "source_links": [
+        "https://nv.ua/ukraine/events/utechka-dannyh-telegram-bot-kak-mogut-ispolzovat-chuzhuyu-informaciyu-diya-novosti-ukrainy-50087866.html",
+        "https://www.ukrinform.ru/rubric-society/3056707-personalnye-dannye-na-prodazu-kto-vinovat-i-budet-li-nakazan.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00005",
+      "text": "On the anniversary of its launch, Diia app boasts over 6 million users. At the same time, IT specialists and digital rights defenders continue to call on the government to consider all of the risks that e-government and digital identification technology carry, as these may potentially undermine the public's trust.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1534,
+      "body_end": 1849,
+      "source_links": [
+        "https://drive.google.com/file/d/1oT9b6mUf7WCEGPMA7nWif_26PI25s6a0/view",
+        "https://thedigital.gov.ua/news/mikhaylo-fedorov-prezentuvav-100-peremog-mintsifri-za-2020-rik-ta-anonsuvav-masshtabni-natsionalni-proekti"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00006",
+      "text": "Digitizing the nation",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1851,
+      "body_end": 1872,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00007",
+      "text": "While the idea of digitizing public services is not new to Ukraine, Zelensky's is the first administration that has made e-governance a top priority or established a separate ministry entirely dedicated to it — the Ministry of Digital Transformation, headed by Mykhailo Fedorov.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1874,
+      "body_end": 2152,
+      "source_links": [
+        "https://www.transparency.org/en/publications/co-creation-of-prozorro-an-account-of-the-process-and-actors#"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00008",
+      "text": "Originally presented in the spring of 2019, the ambitious “State in a Smartphone” program envisioned moving all public services online and providing the majority of the citizens with a means of digital identification. It was later expanded to include goals such as increasing people's digital literacy, expanding internet infrastructure, and creating favorable conditions for the development of the information technology (IT) industry.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2154,
+      "body_end": 2590,
+      "source_links": [
+        "https://nv.ua/ukraine/events/yuri-lazebnikova-about-the-future-of-the-state-in-the-smartphone-50070736.html",
+        "https://thedigital.gov.ua/ministry",
+        "https://www.epravda.com.ua/publications/2019/09/30/652085/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00009",
+      "text": "If implemented successfully, the program could help combat corruption by minimizing the interference and arbitrary decisions of public officials, while significantly reducing state bureaucracy.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2592,
+      "body_end": 2785,
+      "source_links": [
+        "https://www.oecd.org/site/adboecdanti-corruptioninitiative/policyanalysis/35144020.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00010",
+      "text": "In addition, Minister Fedorov has proudly noted that not a single hryvnya from the state budget had been spent on the development of the Diia app — its development team comprised 35 volunteers from the well-known software engineering company EPAM Systems. They later transferred the completed product and relevant technical know-how to the state.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2787,
+      "body_end": 3133,
+      "source_links": [
+        "https://ain.ua/2020/02/06/komanda-volonteriv-epam-ukraine-zavershuye-uchast-u-proyekti-z-rozrobki-mobilnogo-zastosunku-diya/",
+        "https://itukraine.org.ua/en/epam-diya.html",
+        "https://www.epam.com",
+        "https://www.unian.info/society/10862348-ukraine-launches-diia-app-opening-access-to-wide-range-of-gov-t-services-online.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00011",
+      "text": "How secure are citizens’ data in Ukraine?",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3135,
+      "body_end": 3176,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00012",
+      "text": "Initially, the ministry announced that Diia used BankID technology from several leading Ukrainian banks for user authorization, and that it utilized a secure cloud server for the transfer of encrypted data.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3178,
+      "body_end": 3384,
+      "source_links": [
+        "https://www.pravda.com.ua/columns/2020/02/8/7239861/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00013",
+      "text": "Still, few disclosures were made about the security of citizens’ personal data on the app, and security specialists cautiously noted that not enough was known about Diia's security testing.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3386,
+      "body_end": 3575,
+      "source_links": [
+        "https://nv.ua/ukr/techno/technoblogs/dodatok-diya-shcho-potribno-znati-pro-cifrovu-bezpeku-50069060.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00014",
+      "text": "No independent security audit seemed to have been performed, for example — hardly acceptable for technology to which millions of citizens would be entrusting their personal information. In fact, the app's first public bug bounty program was not launched until December 2020.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3577,
+      "body_end": 3851,
+      "source_links": [
+        "https://www.youtube.com/watch?v=AuVduoxPJac"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00015",
+      "text": "The leaks have made clear that the standard of data security at the state level in Ukraine remains inadequate — including a weak legal data protection regime, poor enforcement, and the lack of appropriate protection measures within state institutions themselves. Synchronization of data from various government registries into one portal or app is therefore likely to result in additional vulnerabilities to external attacks.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3853,
+      "body_end": 4278,
+      "source_links": [
+        "https://globalvoices.org/2020/10/21/who-is-selling-ukrainians-personal-data-online-and-why/",
+        "https://nv.ua/ukraine/events/utechka-dannyh-telegram-bot-kak-mogut-ispolzovat-chuzhuyu-informaciyu-diya-novosti-ukrainy-50087866.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00016",
+      "text": "Moreover, in December 2019, the government granted the Ministry of Internal Affairs the power to verify and aggregate citizens’ data from multiple state registries, providing the law enforcement body with access to data from at least five government registries, including those that handle civil, tax, social security, healthcare and voter information. Alarmingly, the data sharing was to be carried out as a part of an “experimental” process that lacked comprehensive legal safeguards ensuring citizens’ right to privacy.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4280,
+      "body_end": 4802,
+      "source_links": [
+        "https://dslua.org/publications/naskilky-tsyfrova-derzhava-vidpovidaie-mizhnarodnym-standartam-ta-pryntsypam-analiz-ta-obhovorennia/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Internal_Affairs_(Ukraine)",
+        "https://zaborona.com/nebezbeka-derzhavy-u-smartfoni/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00017",
+      "text": "According to an analysis by digital rights advocates from Digital Security Lab, as of August 2020, the interior ministry had not yet developed a methodology for such verification, but this has not prevented it from gaining access to the vast trove of citizens’ personal data.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4804,
+      "body_end": 5079,
+      "source_links": [
+        "https://drive.google.com/file/d/1oT9b6mUf7WCEGPMA7nWif_26PI25s6a0/view",
+        "https://dslua.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00018",
+      "text": "Vita Volodovska, a lawyer with Digital Security Lab, concluded:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5081,
+      "body_end": 5144,
+      "source_links": [
+        "https://drive.google.com/file/d/1oT9b6mUf7WCEGPMA7nWif_26PI25s6a0/view"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-726956-b00019",
+      "text": "> Якщо у випадку із цифровими відображеннями документів у смартфоні, “експериментальний” доступ до інформації, здійснюється хоч і без повної відповідності принципу правової визначеності, але лише за згодою користувачів, то передача масивів персональних даних з державних реєстрів до МВС в рамках іншого експерименту, без згоди громадян та будь-якого незалежного контролю, суперечить вимогам чинного законодавства та Конституції України.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5146,
+      "body_end": 5582,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-726956-b00020",
+      "text": "> Whereas in the case of digital display of documents in smartphones, ‘experimental’ access to information is carried out with the consent of users, albeit without full compliance with the principle of legal certainty, the transfer of personal data from state registries to the interior ministry in another experiment, with neither the consent of citizens nor any independent control, contradicts the requirements of current legislation and the Constitution of Ukraine.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5584,
+      "body_end": 6053,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-726956-b00021",
+      "text": "The app's future will likely depend on the state's ability to ensure that citizens’ data are digitized in accordance with the highest standards of privacy, security, and human rights.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6055,
+      "body_end": 6238,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "842e3014d420715fe1a0f334e2cb8909c53b9fc5779a2b46f9b518e090d2a172",
+  "word_count": 922,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 6238,
+  "retrieved_at": "2026-11-16T22:29:28.088031+00:00",
+  "raw_html_sha256": "18cffa2d469fdf28aaa72ec48c8eb7fb3f3e22536dbab30e31dc7699d677e367",
+  "resolved_source_url": "https://globalvoices.org/2021/02/11/security-concerns-and-legal-ambiguities-threaten-the-future-of-ukraines-state-in-a-smartphone/",
+  "canonical_url": "https://globalvoices.org/2021/02/11/security-concerns-and-legal-ambiguities-threaten-the-future-of-ukraines-state-in-a-smartphone/",
+  "source_bytes": 191482,
+  "authors": [
+    {
+      "name": "Tetyana Bohdanova",
+      "url": "https://globalvoices.org/author/tetyana-bohdanova/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 726956,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "18cffa2d469fdf28aaa72ec48c8eb7fb3f3e22536dbab30e31dc7699d677e367",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-38bf974de464cd5f2bc0",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-02",
+    "eligible_month_documents": 78,
+    "selected_month_documents": 65,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Tetyana Bohdanova",
+  "body_start": 530,
+  "body_end": 6768,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "07eb63b7140fbfd0950ac4949d43829c9895cec61c889e13f5fe1a562cfdd888",
+  "text_path": "articles/gv-726956.txt",
+  "metadata_path": "metadata/gv-726956.json",
+  "attribution": "This story by Tetyana Bohdanova originally appeared on Global Voices. https://globalvoices.org/2021/02/11/security-concerns-and-legal-ambiguities-threaten-the-future-of-ukraines-state-in-a-smartphone/",
+  "content_sha256": "3de01f410893df73a0df43ce10dc06f3e6379818d44bcd88abe1087cd4b83aea",
+  "source_sha256": "18cffa2d469fdf28aaa72ec48c8eb7fb3f3e22536dbab30e31dc7699d677e367",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

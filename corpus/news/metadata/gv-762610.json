@@ -1,0 +1,454 @@
+{
+  "id": "gv-762610",
+  "publisher_id": 762610,
+  "source_id": "globalvoices:762610",
+  "source_url": "https://globalvoices.org/2022/05/09/how-accurate-is-nepals-covid-19-death-toll/",
+  "title": "How accurate is Nepal’s COVID-19 death toll?",
+  "published_at": "2022-05-09T18:35:37Z",
+  "modified_at": "2022-05-10T14:30:31Z",
+  "api_author_id": 2886,
+  "api_content_sha256": "41f1fb97800eb5edbaebfaff6565f4a6de2b484d81ecf1a2795fdf4c618ab22b",
+  "api_response_sha256": "38ad93d079743e010ebeaa95e36d2e6132e8c3254af60234cc4a8955464c79f0",
+  "api_retrieved_at": "2026-11-16T22:20:43.878278+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 2552,
+      "count": 1465,
+      "name": "Nepal",
+      "slug": "nepal",
+      "parent": 31
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-762610-b00001",
+      "text": "This article by Marissa Taylor was first published in The Record (Nepal). An edited version is republished below as part of a content-sharing agreement with Global Voices.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 171,
+      "source_links": [
+        "https://www.recordnepal.com/how-accurate-is-nepals-covid-19-death-toll"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00002",
+      "text": "Ganesh Shrestha (not his real name) was a healthy man. In his 68 years, he had never had any serious health issues, nor had he ever been hospitalized.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 173,
+      "body_end": 323,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00003",
+      "text": "But, in May 2020, during the second wave of the pandemic, he contracted COVID-19 and was hospitalized due to breathing difficulties. After 20 days in the hospital, Shrestha died. The Nepali Army disposed of his body. He was among the nearly 11,928 Nepalis who have died of COVID-19 in the past two years.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 325,
+      "body_end": 629,
+      "source_links": [
+        "https://covid19.mohp.gov.np/covid/englishSituationReport/6214c47ddcff9_SitRep744_COVID-19_22-02-2022_EN.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00004",
+      "text": "The immediate cause of Shrestha’s death was refractory bradycardia — a decrease in heart rate that occurs to prevent abnormal increases in blood pressure. Bilateral COVID-19 pneumonia was a contributing cause, according to his daughter. “Because he was admitted in the COVID ward,” she said, “he was automatically counted as a COVID death.”",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 631,
+      "body_end": 971,
+      "source_links": [
+        "https://www.textbookofcardiology.org/wiki/Bradycardia"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00005",
+      "text": "From the start of the pandemic there have been questions regarding what exactly constitutes a COVID-19 death, and Ganesh Shrestha’s case is emblematic of this confusion. Although Shrestha would have tested negative for the coronavirus at the time of hospitalization, doctors attributed his death to complications developed from COVID-19 and recorded it as a COVID-19 death.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 973,
+      "body_end": 1346,
+      "source_links": [
+        "https://www.bmj.com/content/370/bmj.m2859"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00006",
+      "text": "Things get even more complicated when it comes to patients with comorbidities and long-term afflictions. There’s confusion over whether reported death statistics reflect those who’ve died from COVID-19 or those who’ve died with the virus, as the COVID-19 death toll published daily by governments around the world — including Nepal's — does not differentiate between the two. Lumping these two statistics together does not provide a true picture of the pandemic’s death toll and could hinder targeted public health measures to prevent future deaths.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1348,
+      "body_end": 1897,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Comorbidity",
+        "https://theconversation.com/died-from-or-died-with-covid-19-we-need-a-transparent-approach-to-counting-coronavirus-deaths-145438",
+        "https://www.aamc.org/news-insights/how-are-covid-19-deaths-counted-it-s-complicated"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00007",
+      "text": "According to the WHO’s international guidelines for certification and classification of the cause of death, a COVID-19 death is one “resulting from a clinically compatible illness, in a probable or confirmed COVID-19 case, unless there is a clear alternative cause of death that cannot be related to COVID disease (e.g. trauma).”",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1899,
+      "body_end": 2228,
+      "source_links": [
+        "https://www.who.int/docs/default-source/classification/icd/covid-19/guidelines-cause-of-death-covid-19-20200420-en.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00008",
+      "text": "In line with the WHO’s guidelines, the Nepali Health Ministry’s Epidemiology and Disease Control Division (EDCD) only came up with its own guidelines for recording COVID-19 deaths in January 2021. Before that, it was standard practice to record as a COVID-19 death anyone who was positive for the coronavirus at the time of death.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2230,
+      "body_end": 2560,
+      "source_links": [
+        "https://edcd.gov.np/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00009",
+      "text": "Dr Amrit Pokhrel, chief of the Emergency and Outbreak Management Section at the EDCD, mentioned that a unit at the EDCD is responsible for tallying confirmed COVID-19 cases, along with fatalities, reported by hospitals from across the country. The daily tally is then published every evening on the Health Ministry website.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2562,
+      "body_end": 2885,
+      "source_links": [
+        "https://covid19.mohp.gov.np/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00010",
+      "text": "“Except for deaths like road accidents, suicide, and those caused by crime, anyone who tests positive for COVID-19 at the time of death is counted as a COVID-19 death,” said Dr Pokhrel.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2887,
+      "body_end": 3072,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00011",
+      "text": "However, such a blanket rule does not provide an accurate picture of COVID-19 deaths. It is important to distinguish between those who died with COVID-19 and those who died from COVID-19 to understand which section of the population remains susceptible to the virus and at this point in time, to assess the efficacy of the various vaccines that have been deployed.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3074,
+      "body_end": 3438,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00012",
+      "text": "Doctors have the authority to assess and decide on what is a COVID-19 death on their own too. But, given the manner in which Nepal’s data is collected, there is no indication of how many COVID-19 deaths were actively designated as such by doctors and how many were simply chalked up to COVID-19 due to the presence of the virus.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3440,
+      "body_end": 3768,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00013",
+      "text": "To better assess the actual mortality from COVID-19, many countries are calculating excess mortality during the pandemic. Excess mortality is measured as the difference between the reported number of deaths in a given period of time and an estimate of the expected number of deaths for that period had the COVID-19 pandemic not occurred. Excess mortality provides a clearer picture of the actual effects of the pandemic as it doesn’t just take into account the deaths directly from COVID-19 but also the associated consequences of the pandemic, like loss of employment, mental and physical stress, and increased poverty.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3770,
+      "body_end": 4390,
+      "source_links": [
+        "https://ourworldindata.org/excess-mortality-covid"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00014",
+      "text": "For example, according to The Economist, in India, estimates suggest that perhaps 2.3 million people had died from COVID-19 by the start of May 2021, compared with about 200,000 official deaths, suggesting the country’s death toll is severely underreported.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4392,
+      "body_end": 4649,
+      "source_links": [
+        "https://www.economist.com/graphic-detail/coronavirus-excess-deaths-tracker"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00015",
+      "text": "The estimated excess mortality for Nepal was 114,126 as of February 13, 2022. The reported mortality rate from COVID-19 is currently 392.6 per 1 million (or about 39 per 100,000) which implies that there could be many more deaths due directly to the coronavirus, in addition to other related stressors.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4651,
+      "body_end": 4953,
+      "source_links": [
+        "https://covid19.mohp.gov.np/covid/englishSituationReport/621367a796850_SitRep743_COVID-19_21-02-2022_EN.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00016",
+      "text": "The unavailability of data remains a critical problem in Nepal, especially at a time when accurate data is necessary to gauge the extent of COVID-19 and its myriad effects. Even the data that is available is notoriously unreliable and unscientific.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4955,
+      "body_end": 5203,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00017",
+      "text": "“Even if we wanted to look for discrepancies, we can’t because we don’t have any data to compare. All the COVID-19 numbers we have are coming directly from the Health Ministry,” said Yogendra Gurung, a professor of population studies at Tribhuvan University.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5205,
+      "body_end": 5463,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00018",
+      "text": "Neither the health ministry nor the Central Bureau of Statistics has records of annual deaths. The only data that is available is Nepal’s annual death rate. If we look at Nepal's death rate from 2020–2022, it ranges from 6.264 to 6.327 per thousand (6.327 in 2020, 6.295 in 2021, and 6.264 in 2022). If we look at just the death rate, then the last three years’ numbers are the lowest yet, declining each year even during the pandemic years. But these are just projections made by the UN and do not help us discern how accurate the national COVID-19 death toll is.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5465,
+      "body_end": 6029,
+      "source_links": [
+        "https://www.macrotrends.net/countries/NPL/nepal/death-rate"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00019",
+      "text": "While some reports suggest that COVID-19 deaths have been grossly exaggerated, there are others that suggest that cases are severely being underreported. Dr Pun and Dr Pokhrel, like many other health professionals, believe that Nepal’s death toll is severely underreported and that the total number of fatalities may be much higher, because there have been people who have died of COVID-19 without being tested, and also because Nepal has a limited testing capability.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6031,
+      "body_end": 6499,
+      "source_links": [
+        "https://www.theweek.co.uk/covid-19/955530/how-reliable-is-the-uks-coronavirus-death-toll"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00020",
+      "text": "The other issue with tracking COVID-19 fatalities is that, at first, the army disposed of the dead, and was the single channel to track deaths. Now, however, people dispose of bodies themselves, which means some cases could be missed. What's more, the data from the army and the Health Ministry are sometimes conflicting. Last year, during the height of the second wave, the Nepal Army and the ministry released different numbers for COVID-19 fatalities. On May 11, 2021, the Health Ministry had placed the death toll at 4,084 while the Nepal Army said that it was 4,682. Public health experts had sided with the army’s data.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6501,
+      "body_end": 7126,
+      "source_links": [
+        "https://kathmandupost.com/health/2021/05/13/data-discrepancy-amid-a-virus-crisis-could-spell-more-disaster"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00021",
+      "text": "A further complication: periodically the data released by the ministry jumps as it tallies data with the army, so deaths from a certain period might end up in the tally of a later period.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 7128,
+      "body_end": 7315,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00022",
+      "text": "Officially, nearly 12,000 people have died due to COVID-19 in Nepal but the true death toll of the pandemic is certainly much higher, both in terms of direct deaths and those from related causes. Accurate, disaggregated data is part of the public’s right to information and in the midst of the pandemic, part of their right to life and an adequate standard of health. But doctors say that this is par the course for Nepal – things get done very late, if they ever get done at all.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7317,
+      "body_end": 7797,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762610-b00023",
+      "text": "“I too have heard of family and friends who did not die directly from COVID-19 but were declared dead due to the virus,” said Gurung, the Tribhuvan University professor. “But this is all subjective. There’s no way we can know the true death count unless we do a recount keeping in mind a more clear definition of a COVID-19 death.”",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7799,
+      "body_end": 8130,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "14a413fbcc899327e91dc13524571cdc995a50905810d032f3d5cc2786a52e76",
+  "word_count": 1342,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 2,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8130,
+  "retrieved_at": "2026-11-16T22:34:49.082897+00:00",
+  "raw_html_sha256": "feed9c295c10775eba50ac4d995cbb80f512e308229c66e2a0f5c830fb811dde",
+  "resolved_source_url": "https://globalvoices.org/2022/05/09/how-accurate-is-nepals-covid-19-death-toll/",
+  "canonical_url": "https://globalvoices.org/2022/05/09/how-accurate-is-nepals-covid-19-death-toll/",
+  "source_bytes": 189527,
+  "authors": [
+    {
+      "name": "The Record (Nepal)",
+      "url": "https://globalvoices.org/author/recordnepal/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 762610,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "feed9c295c10775eba50ac4d995cbb80f512e308229c66e2a0f5c830fb811dde",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-4c4e08c9353e564ecfbc",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-05",
+    "eligible_month_documents": 83,
+    "selected_month_documents": 69,
+    "inclusion_probability": 0.8313253012048193,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "The Record (Nepal)",
+  "body_start": 428,
+  "body_end": 8558,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "63f115eeff61826283c27718b636a4c4875039351f95a66227a168f880c23ab4",
+  "text_path": "articles/gv-762610.txt",
+  "metadata_path": "metadata/gv-762610.json",
+  "attribution": "This story by The Record (Nepal) originally appeared on Global Voices. https://globalvoices.org/2022/05/09/how-accurate-is-nepals-covid-19-death-toll/",
+  "content_sha256": "3c7b941680cdf32ebba332c93f5c95212e0861ce3793949c195231180b52a669",
+  "source_sha256": "feed9c295c10775eba50ac4d995cbb80f512e308229c66e2a0f5c830fb811dde",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

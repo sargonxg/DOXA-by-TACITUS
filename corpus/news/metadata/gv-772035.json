@@ -1,0 +1,683 @@
+{
+  "id": "gv-772035",
+  "publisher_id": 772035,
+  "source_id": "globalvoices:772035",
+  "source_url": "https://globalvoices.org/2022/10/02/catholics-and-evangelicals-may-get-to-decide-brazils-next-president/",
+  "title": "Catholics and evangelicals may get to decide Brazil's next president",
+  "published_at": "2022-10-02T08:20:58Z",
+  "modified_at": "2022-10-02T11:39:04Z",
+  "api_author_id": 3048,
+  "api_content_sha256": "3c47c0dde16c07a711a24ac9e570d426b9407b18ed61290bc0020ba06db9e837",
+  "api_response_sha256": "30656aeb72fa6ac0796b25f9ba534044b6669ecaa343be437ba0196aa46e0005",
+  "api_retrieved_at": "2026-11-16T22:20:47.121994+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 275,
+      "count": 4753,
+      "name": "Religion",
+      "slug": "religion",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-772035-b00001",
+      "text": "In the middle of a deeply polarized election, with polls led by former center-Left president Luiz Inácio Lula da Silva and incumbent far-Right Jair Bolsonaro by a wide margin, religion has been one of the issues at the core of the Brazilian political scenario.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 260,
+      "source_links": [
+        "https://www.poder360.com.br/eleicoes/eleicao-de-2022-e-a-mais-polarizada-desde-a-redemocratizacao/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00002",
+      "text": "With a population of 215 million people and more than 150 million voters, Brazil has around 80% of its population identifying either as Catholic or evangelical. Both candidates have worked strategically to attract this electorate whose support may get to decide the next president when Brazilians go to vote on October 2.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 262,
+      "body_end": 583,
+      "source_links": [
+        "https://g1.globo.com/politica/noticia/2020/01/13/50percent-dos-brasileiros-sao-catolicos-31percent-evangelicos-e-10percent-nao-tem-religiao-diz-datafolha.ghtml",
+        "https://www.ibge.gov.br/apps/populacao/projecao/index.html",
+        "https://www.tse.jus.br/comunicacao/noticias/2022/Julho/brasil-tem-mais-de-156-milhoes-de-eleitoras-e-eleitores-aptos-a-votar-em-2022-601043"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00003",
+      "text": "A poll by Datafolha institute shows that around 48% of Brazilians do consider religion when choosing their vote, while 34% claim they do not. It's important to notice that neither evangelicals nor Catholics are homogenous or unanimous groups.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 585,
+      "body_end": 827,
+      "source_links": [
+        "https://www1.folha.uol.com.br/poder/2022/09/datafolha-48-dizem-dar-muita-importancia-a-religiao-para-definir-voto.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00004",
+      "text": "Incumbent Jair Bolsonaro is known for using a recurrent slogan: “Brazil above everything, God above everyone”. Despite the fact that he identifies himself as Catholic, many people believe he is actually an evangelical. The confusion is understandable since he is closer to evangelicals in politics, got married to an evangelical woman by a pastor, and was baptised by another pastor, in the Jordan river, in 2016, wearing a white robe.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 829,
+      "body_end": 1264,
+      "source_links": [
+        "https://extra.globo.com/famosos/michelle-jair-bolsonaro-relembram-quando-se-conheceram-queriamos-dividir-uma-vida-23743189.html",
+        "https://g1.globo.com/politica/blog/gerson-camarotti/post/2020/09/14/ao-defender-derrubada-de-veto-bolsonaro-faz-jogo-duplo-para-agradar-bancada-da-biblia-e-liderancas-evangelicas.ghtml",
+        "https://www.bbc.com/portuguese/brasil-62668831",
+        "https://www.correiobraziliense.com.br/politica/2020/08/4871770-preso-pela-pf--pastor-everaldo-batizou-bolsonaro-no-rio-jordao.html",
+        "https://www.reuters.com/article/us-brazil-election-evangelicals-idUSKCN1M70D9",
+        "https://www1.folha.uol.com.br/colunas/monicabergamo/2022/08/metade-dos-evangelicos-acredita-que-bolsonaro-segue-a-mesma-religiao-que-eles-diz-genialquaest.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00005",
+      "text": "In 2018, when he was elected president, after almost three decades in Congress, many evangelicals in Brazil saw Bolsonaro as “an answer to their prayers“. Three years later, when he had to appoint a justice to the Supreme Court he said the person should be “terribly evangelical” and chose his then Justice Minister André Mendonça, also a pastor.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1266,
+      "body_end": 1612,
+      "source_links": [
+        "https://g1.globo.com/politica/noticia/2021/12/16/andre-mendonca-celebra-em-culto-religioso-posse-como-ministro-do-supremo.ghtml",
+        "https://www.cnnbrasil.com.br/politica/bolsonaro-cita-terrivelmente-evangelico-e-parabeniza-mendonca-no-stf/",
+        "https://www.reuters.com/article/us-brazil-election-evangelicals-idUSKCN1M70D9"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00006",
+      "text": "Currently, Bolsonaro has the support of nearly 50% of the evangelicals, according to a Datafolha poll from September 23, against Lula's 32%.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1614,
+      "body_end": 1754,
+      "source_links": [
+        "https://www1.folha.uol.com.br/poder/2022/09/datafolha-bolsonaro-fica-estavel-entre-evangelicos-e-pastores-ja-nao-descartam-vitoria-de-lula.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00007",
+      "text": "Ana Maria, a Catholic and public school teacher, is one of them. She is identified here under an alias, since she wants to remain anonymous for safety reasons. She told Global Voices (GV) on WhatsApp:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1756,
+      "body_end": 1956,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00008",
+      "text": "> A while ago, if I thought the candidate understood economy, I would vote for them. Today I understand this is not all that matters. The president cannot be pro-abortion, just as he cannot have a socialist/Marxist ideology. These are some of the criteria I evaluate.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1958,
+      "body_end": 2225,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772035-b00009",
+      "text": "Lula, also a Catholic, leads among this population — he has 52% against Bolsonaro's 28%, also according to Datafolha. The former president said he opposed mixing religion and politics; but in the beginning of September, he also appeared praying with pastors in Rio.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2227,
+      "body_end": 2492,
+      "source_links": [
+        "https://www.cnnbrasil.com.br/politica/lula-lidera-entre-catolicos-bolsonaro-e-preferido-de-evangelicos-diz-datafolha/",
+        "https://www.lemonde.fr/en/international/article/2022/09/13/in-brazil-lula-is-trying-to-win-over-the-evangelical-electorate_5996835_4.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00010",
+      "text": "Religious polarization",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2494,
+      "body_end": 2516,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00011",
+      "text": "At Bolsonaro's party's convention, back in July, First Lady Michelle Bolsonaro, presented her husband as “the one chosen by God” who has a “project of freedom for the nation”.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2518,
+      "body_end": 2693,
+      "source_links": [
+        "https://www.poder360.com.br/podereleitoral/michelle-fala-em-tom-religioso-bolsonaro-e-enviado-de-deus/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00012",
+      "text": "Vinicius do Valle, a political scientist at the University of Sao Paulo and director of the Evangelical Observatory, told to GV in a phone interview, that especially in the last decade, polarization between evangelical conservative sectors and Left-wing social movements has intensified in the country.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2695,
+      "body_end": 2997,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00013",
+      "text": "On the one side, there are speeches in defense of conservative and moral agendas, anti-abortion and LGBTQIA+ rights, and in defense of a “heteronormative nuclear family”. On the other side, social movements raise debates on gender, sexuality, and human rights.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2999,
+      "body_end": 3259,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00014",
+      "text": "“This created an electoral coalition between evangelical sectors and right-wing parties. Within that, in 2018, a national alliance with Bolsonaro was seen”.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3261,
+      "body_end": 3417,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00015",
+      "text": "Brazil is a deeply Roman Catholic country, making up 50% of the population, and around 30% of evangelicals, also according to Datafolha. The number of evangelicals, however, has doubled over the past two decades.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3419,
+      "body_end": 3631,
+      "source_links": [
+        "https://www.ibge.gov.br/estatisticas/sociais/populacao/9663-censo-demografico-2000.html?edicao=9858&t=destaques",
+        "https://www1.folha.uol.com.br/poder/2020/01/cara-tipica-do-evangelico-brasileiro-e-feminina-e-negra-aponta-datafolha.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00016",
+      "text": "“The country is going through a religious transition where Catholicism is losing importance and Brazil is becoming more evangelical,” said Do Valle.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3633,
+      "body_end": 3781,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00017",
+      "text": "With 181 deputies and 8 senators, the “Evangelical Parliamentary Front” is composed of members from 80% of the parties represented in the National Congress — and votes are more in line with the Bolsonaro government's proposals than the set of deputies, points out the Observatory of the Brazilian Legislature (OLB) and the Institute of Social and Political Studies from the State University of Rio de Janeiro (UERJ).",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3783,
+      "body_end": 4199,
+      "source_links": [
+        "https://olb.org.br/atuacao-da-frente-parlamentar-evangelica-na-camara-dos-deputados/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00018",
+      "text": "Nevertheless, evangelicals in the National Congress are not a monolithic bloc, but a plural group, he says.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4201,
+      "body_end": 4308,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00019",
+      "text": "“If evangelicals formed a political party today, it would be the largest party in the National Congress”, explains Do Valle. “They have their differences, but for the most part they are similar in terms of ideology.”",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4310,
+      "body_end": 4526,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00020",
+      "text": "Between tax exemptions for pastors and nominations to the Courts, strategic Cabinets were occupied by pastors and religious leaders during Bolsonaro's term. The Ministry of Women, Family and Human Rights and the Ministry of Education, for example, spared no efforts to bar gender and sexuality education debates in Brazil.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4528,
+      "body_end": 4850,
+      "source_links": [
+        "https://globalvoices.org/2022/09/12/lawmakers-try-to-bar-gender-and-sexuality-education-in-brazil-says-human-rights-watch/",
+        "https://portal.stf.jus.br/textos/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaPastaMinistro&pagina=AndreMendoncaDadosDatas",
+        "https://www.em.com.br/app/noticia/politica/2021/03/18/interna_politica,1248010/bolsonaro-volta-atras-e-perdoa-divida-de-r-1-4-bilhao-de-igrejas.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00021",
+      "text": "‘Fake news’",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4852,
+      "body_end": 4863,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00022",
+      "text": "Antônia Lúcia, 43, a congregant of the Assembly of God Evangelical Church in Belo Horizonte, is another voter who declares her preference for Bolsonaro. This Protestant Pentecostal church originated in Arkansas, United States.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4865,
+      "body_end": 5091,
+      "source_links": [
+        "https://pt.wikipedia.org/wiki/Assembleia_de_Deus"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00023",
+      "text": "She is part of a group of Bolsonaro voters who receive daily updates about both candidates through WhatsApp. One of the messages she received said that if elected, Lula would persecute Christians. All messages in the group are in favor of the president, she told GV in a phone interview.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5093,
+      "body_end": 5380,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00024",
+      "text": "Bolsonaristas have been trying to link the actions of Daniel Ortega's regime in Nicaragua, who is persecuting Catholic priests, to Lula, since they have been allies.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5382,
+      "body_end": 5547,
+      "source_links": [
+        "https://globalvoices.org/2022/09/26/the-nicaraguan-government-looks-to-imprison-catholic-priests-and-stain-their-image/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00025",
+      "text": "“Whether it will happen or not, no one can be sure, but considering everything I've read and received about him and Leftist parties, I wouldn't doubt if it does”, she says.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5549,
+      "body_end": 5721,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00026",
+      "text": "Deceptive news to lure religious voters against the frontrunner candidate have been shared thousands of times on social media.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5723,
+      "body_end": 5849,
+      "source_links": [
+        "https://www.aosfatos.org/noticias/e-falso-que-lula-disse-que-vai-censurar-padres-e-pastores-se-for-eleito-presidente/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00027",
+      "text": "Among them are posts saying that Lula's Workers’ Party (PT) closed churches during their term in government and that the former president supports the invasion of churches and persecution of Christians. These contents have already been denied by news checking agencies, such as Agencia Lupa.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5851,
+      "body_end": 6142,
+      "source_links": [
+        "https://lupa.uol.com.br/jornalismo/2022/09/27/desinformacao-perseguicao-cristaos"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00028",
+      "text": "The topic also appeared during the last presidential debate on TV Globo this September 30, brought up by a candidate who presents himself as a priest — he joined the contest at the last minute, after his party's candidate was disqualified from running for legal convictions.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6144,
+      "body_end": 6418,
+      "source_links": [
+        "https://br.noticias.yahoo.com/sem-roberto-jefferson-ptb-escolhe-substituto-para-concorrer-a-presidencia-182758510.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAMmZq8FuW9E24T75lX3SajGCPbkv4ZAUjo10Q2fGtiCUcAf7uwrfgvMal0aqdDpvLD1rEBd1h8NcsWHgyOyBd51Ip0Igki5xYDXj2Nskt0sSJIiwjJ-CPBfKKWmhD1celkgtyxb1l36aOKYWsIBtmPpU2OSKrpXqX2KGCfdqj02M",
+        "https://oglobo.globo.com/politica/eleicoes-2022/noticia/2022/09/padre-kelmon-faz-uso-indevido-de-vestimentas-religiosas-entenda.ghtml",
+        "https://ultimosegundo.ig.com.br/politica/2022-09-25/quem-e-padre-kelmon-estreia-debates-eleicoes.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00029",
+      "text": "The man known as Father Kelmon says he is part of the Orthodox Church from Peru, but the traditional Orthodox Church says he doesn't have any links with religious institutions of such faith in Brazil. He implied Lula could persecute Christians if elected when questioning the former president. Off the air, he was seen apparently exchanging notes with Bolsonaro.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6420,
+      "body_end": 6782,
+      "source_links": [
+        "https://noticias.uol.com.br/eleicoes/2022/09/29/quem-e-o-candidato-padre-kelmon-que-tem-chamado-atencao-dos-eleitores.htm",
+        "https://twitter.com/AndreiaSadi/status/1575707141507534848?s=20&t=OqPm6C4nHttxSaRr__sQWA",
+        "https://www.cnnbrasil.com.br/politica/padre-kelmon-rebate-igreja-ortodoxa-instituicao-diz-que-candidato-nao-possui-vinculo/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00030",
+      "text": "Weight on voting",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6784,
+      "body_end": 6800,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00031",
+      "text": "On the eve of Brazil's independence bicentennial, in early September, priests and conservative groups inside the Catholic Church manifested their support in favor of Bolsonaro, citing Nicaragua's situation and other topics aligned to the president's politics.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 6802,
+      "body_end": 7061,
+      "source_links": [
+        "https://globalvoices.org/2022/09/22/bolsonaro-celebrates-brazils-independence-with-a-dead-emperors-heart-and-the-armed-forces/",
+        "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2022/09/07/padres-ultraconservadores-fazem-mobilizacao-a-favor-de-bolsonaro.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00032",
+      "text": "Meanwhile, a month away from the elections, another group with 450 priests published an open letter against his re-election, saying a new victory would imply a “foretold tragedy” that could put Brazil “in a deeper human crisis”. They wrote:",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 7063,
+      "body_end": 7303,
+      "source_links": [
+        "https://www.ihu.unisinos.br/621939-carta-aberta-brasil-ao-7-de-setembro-de-2022-padres-alertam-contra-a-reeleicao-do-atual-presidente-da-republica"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00033",
+      "text": "> Um discípulo de Jesus consciente não pode reeleger um homem que, com palavras e obras, demonstra ser o oposto de tudo aquilo que Jesus é e anuncia.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 7305,
+      "body_end": 7454,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772035-b00034",
+      "text": "> A conscientious disciple of Jesus cannot re-elect a man who, with words and deeds, proves to be the opposite of all that Jesus is and proclaims.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 7456,
+      "body_end": 7602,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772035-b00035",
+      "text": "Considering Bolsonaro's mismanagement of the COVID-19 crisis in the country, delaying vaccination and opposing sanitary measures, as well as failing to stem hunger, it seems that although religion will continue having a significant weight, economic factors may also set the votes.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 7604,
+      "body_end": 7884,
+      "source_links": [
+        "https://globalvoices.org/2022/08/30/why-the-un-added-brazil-to-the-hunger-map-once-again/",
+        "https://saude.estadao.com.br/noticias/geral,bolsonaro-diz-que-pediu-parecer-para-desobrigar-uso-de-mascara-a-vacinados-e-quem-ja-foi-infectado,70003743354",
+        "https://www.nexojornal.com.br/expresso/2021/03/21/Como-Bolsonaro-atacou-e-atrasou-a-vacina%C3%A7%C3%A3o-na-pandemia",
+        "https://www12.senado.leg.br/noticias/materias/2021/10/20/com-nove-crimes-atribuidos-a-bolsonaro-relatorio-da-cpi-e-oficialmente-apresentado"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00036",
+      "text": "“It is possible that part of the Christian electorate had more sympathy for Bolsonaro before. But now, facing hard living conditions could vote for Lula, who is associated with a moment of economic growth”, analyzes Political Science professor Fabio Lacerda, in a phone interview.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 7886,
+      "body_end": 8166,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00037",
+      "text": "Election polls show that the economy is indeed guiding votes. Asked what the next president's top priorities should be, 49% cite inflation, unemployment, hunger, misery, and salary, representing 30 points more compared to the last elections, according to an Ipespe survey.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 8168,
+      "body_end": 8440,
+      "source_links": [
+        "https://www.conjur.com.br/dl/pesquisa-ipespe-maio-20221.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00038",
+      "text": "In this scenario, Lula invests in the heterogeneity of the evangelical voters that prioritize other aspects beyond the moral agenda to get the support of the electorate. Lawyer and activist Rarikan Heven, 31, a congregant of the Hillsong Church, is one of these voters. A Lula supporter, he believes religion does influence the vote, but the candidate's agenda and what he defends are even more important. He told GV on Whatsapp:",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 8442,
+      "body_end": 8871,
+      "source_links": [
+        "https://observo.me/todos-os-posts/f/lula-arrisca-para-frear-avan%C3%A7o-bolsonarista-entre-evang%C3%A9licos"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00039",
+      "text": "> Religion ends up having an influence on the values ​​that the Church defends. To me, these values ​​are about helping others, solidarity, fighting social inequalities, together with a national project that supports them.",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 8873,
+      "body_end": 9095,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-772035-b00040",
+      "text": "The polls indicate a scenario in which evangelical voters are going against the electorate flow, with the majority of voters still supporting the current government. “If we have a second round, it will be because of the evangelical vote in Bolsonaro that will guarantee it”, said Do Valle.",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 9097,
+      "body_end": 9386,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00041",
+      "text": "Lacerda also highlights the importance of Catholics in the electoral decision. “If the election was composed only of evangelicals, Bolsonaro would probably win in the first round. But if it weren't for the Catholics, Lula wouldn't be in front of the elections as he is today”.",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 9388,
+      "body_end": 9664,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00042",
+      "text": "The latest Datafolha poll, from October 1, shows Lula with 50% of valid votes, against 36% for Bolsonaro. At the last TV debate before election day, candidates addressed religion, but as the movement “Jews for democracy” noted:",
+      "page": null,
+      "paragraph": 42,
+      "body_start": 9666,
+      "body_end": 9893,
+      "source_links": [
+        "https://www1.folha.uol.com.br/poder/2022/10/datafolha-lula-chega-ao-1o-turno-com-50-dos-votos-validos-bolsonaro-tem-36.shtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-772035-b00043",
+      "text": "> The candidates, specially those from the far-right, talk all the time about the Christian population and governing for them. Christians are the majority, but the Brazilian people is diverse. The State is secular and the president elected shall govern for all.",
+      "page": null,
+      "paragraph": 43,
+      "body_start": 9895,
+      "body_end": 10156,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "367979f763262770af5cf4743cf50ea8ef72714e6d8e7752a874b39cbab8b576",
+  "word_count": 1619,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 10156,
+  "retrieved_at": "2026-11-16T22:36:33.170888+00:00",
+  "raw_html_sha256": "ff601414f85adc65f798eda796edd37c0c71c25a2d1418c9a1fb3c95aa1f169e",
+  "resolved_source_url": "https://globalvoices.org/2022/10/02/catholics-and-evangelicals-may-get-to-decide-brazils-next-president/",
+  "canonical_url": "https://globalvoices.org/2022/10/02/catholics-and-evangelicals-may-get-to-decide-brazils-next-president/",
+  "source_bytes": 196915,
+  "authors": [
+    {
+      "name": "Daniela Rebello",
+      "url": "https://globalvoices.org/author/daniela-rebello/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 772035,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "ff601414f85adc65f798eda796edd37c0c71c25a2d1418c9a1fb3c95aa1f169e",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-1800b87d9f38965ab320",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-10",
+    "eligible_month_documents": 80,
+    "selected_month_documents": 67,
+    "inclusion_probability": 0.8375,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Daniela Rebello",
+  "body_start": 474,
+  "body_end": 10630,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "f7d0e6b5781275bd0a55be3bac44b9ac53d90ae55b8988f84a95ad236ad65603",
+  "text_path": "articles/gv-772035.txt",
+  "metadata_path": "metadata/gv-772035.json",
+  "attribution": "This story by Daniela Rebello originally appeared on Global Voices. https://globalvoices.org/2022/10/02/catholics-and-evangelicals-may-get-to-decide-brazils-next-president/",
+  "content_sha256": "b2e1566fb5aeb55f860637127fe067c7f58f0a908e1b27f528ce0f5201dc6dd1",
+  "source_sha256": "ff601414f85adc65f798eda796edd37c0c71c25a2d1418c9a1fb3c95aa1f169e",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

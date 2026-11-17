@@ -15,3 +15,5 @@ frontend/dist
 *.egg-info
 dist
 build
+benchmarks/private
+benchmarks/*.checkpoint.json

@@ -1,0 +1,708 @@
+{
+  "id": "gv-836922",
+  "publisher_id": 836922,
+  "source_id": "globalvoices:836922",
+  "source_url": "https://globalvoices.org/2025/07/11/togo-suspends-two-french-news-outlets-over-alleged-threat-to-the-countrys-stability/",
+  "title": "Togo suspends two French news outlets over alleged threat to the country's stability",
+  "published_at": "2025-07-11T12:00:48Z",
+  "modified_at": "2025-07-09T09:33:17Z",
+  "api_author_id": 3087,
+  "api_content_sha256": "53f78d3e4d0cf22d8b51cb55938a06642d04a6225582a6e218491f940d0b514e",
+  "api_response_sha256": "aa6dcff428883d80ac87f532a741a5a8d2776b7ecb4a6722bb7eeb3dc4c4dc2d",
+  "api_retrieved_at": "2026-11-16T22:21:13.235465+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 194,
+      "count": 996,
+      "name": "France",
+      "slug": "france",
+      "parent": 187
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 29,
+      "count": 222,
+      "name": "Togo",
+      "slug": "togo",
+      "parent": 15
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-836922-b00001",
+      "text": "Threats to journalists’ safety are resurfacing within Togo’s media environment, posing new challenges to press freedom in the country.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 134,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00002",
+      "text": "On June 6, 2025, amid demonstrations, the Togolese police arrested Flore Monteau, a French journalist and TV5 Monde foreign correspondent. Togo Scoop reports she was accused of filming officers dismantling barricades — footage she was ordered to delete.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 136,
+      "body_end": 389,
+      "source_links": [
+        "https://togoscoop.tg/togo-interpellation-de-la-journaliste-de-tv5monde-flore-monteau-a-lome/",
+        "https://www.tv5monde.com/",
+        "https://x.com/flore_monteau"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00003",
+      "text": "Read more: Togo Rapper arrested for denouncing poor governance",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 391,
+      "body_end": 453,
+      "source_links": [
+        "https://advox.globalvoices.org/2025/06/12/togo-rapper-arrested-for-denouncing-poor-governance/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00004",
+      "text": "In April 2025, Albert Agbéko, journalist and publishing director at Togo Scoop, met the same fate while reporting at a school in Tsévié, 35 kilometers (22 miles) north of Lomé.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 455,
+      "body_end": 631,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Ts%C3%A9vi%C3%A9",
+        "https://togobreakingnews.info/togo-albert-agbeko-interpelle-synjit-denonce/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00005",
+      "text": "Banning Radio France Internationale and France 24",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 633,
+      "body_end": 682,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00006",
+      "text": "On June 16, 2025, ten days after the Flore Monteau incident, the Media and Communications Regulatory Authority (HAAC), the body monitoring Togo’s media, made another move against the press with little warning. It silenced Radio France Internationale (RFI) and France 24, two French media outlets that broadcast in Togo through their correspondents, for three months. Home to more than 9 million people, Togo is predominantly French-speaking, and these French media outlets enjoy widespread listenership across the country.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 684,
+      "body_end": 1206,
+      "source_links": [
+        "https://information.tv5monde.com/economie/togo-les-medias-francais-france-24-et-rfi-suspendus-pour-trois-mois-2777278",
+        "https://www.haactogo.tg/",
+        "https://www.worldometers.info/world-population/togo-population/#google_vignette",
+        "https://x.com/flore_monteau"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00007",
+      "text": "Flore Monteau relayed this decision on her X account:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1208,
+      "body_end": 1261,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00008",
+      "text": "> #Togo suspends @RFIAfrique and @France24_fr media for three months, alleging “inaccurate and biased facts undermining the country’s stability and image” pic.twitter.com/CT5l2SxheF",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1263,
+      "body_end": 1444,
+      "source_links": [
+        "http://@France24_fr",
+        "https://t.co/CT5l2SxheF",
+        "https://twitter.com/RFIAfrique?ref_src=twsrc%5Etfw",
+        "https://twitter.com/hashtag/Togo?src=hash&ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00009",
+      "text": "> — Flore Monteau (@flore_monteau) June 16, 2025",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1446,
+      "body_end": 1494,
+      "source_links": [
+        "https://twitter.com/flore_monteau/status/1934619563032809742?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00010",
+      "text": "HAAC believes this measure follows repeated failings, which have already been flagged and formally addressed regarding impartiality, rigour, and fact-checking. The statement pointed out:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1496,
+      "body_end": 1682,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00011",
+      "text": "> Plusieurs émissions récentes ont relayé des propos inexacts, tendancieux, voire contraire aux faits établis , portant atteinte à la stabilité des institutions républicaines et à l’image du pays.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1684,
+      "body_end": 1880,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00012",
+      "text": "> Several programs have recently relayed information that is inaccurate, biased, and even contrary to established facts, thereby undermining the stability and image of the country’s republican institutions.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 1882,
+      "body_end": 2088,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00013",
+      "text": "The two outlets, for their part, said they received no warning of the regulator’s decision. In its coverage of the issue, TV5 Monde notes:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2090,
+      "body_end": 2228,
+      "source_links": [
+        "https://information.tv5monde.com/economie/togo-les-medias-francais-france-24-et-rfi-suspendus-pour-trois-mois-2777278"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00014",
+      "text": "> Les deux médias ont déclaré lundi soir dans un communiqué conjoint avoir “appris avec surprise” leur suspension “sans préavis”, malgré un “contexte de dialogue pourtant soutenu et constructif” avec l’autorité de régulation togolaise.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2230,
+      "body_end": 2465,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00015",
+      "text": "> RFI et France 24 réaffirment par ailleurs “leur attachement indéfectible aux principes déontologiques du journalisme, comme leur soutien à leurs équipes qui délivrent chaque jour une information rigoureuse, indépendante, vérifiée, impartiale et équilibrée”.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2467,
+      "body_end": 2726,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00016",
+      "text": "> The two media outlets announced in a joint statement on Monday night that they had been ‘taken by surprise’ by their suspension ‘without warning,’ despite what they described as a ‘sustained and constructive dialogue’ with Togo’s media regulator.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 2728,
+      "body_end": 2976,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00017",
+      "text": "> RFI and France 24, for their part, reiterated ‘their steadfast commitment to journalistic ethics and their support for their teams, who provide rigorous, independent, verified, impartial, and balanced reporting on a daily basis.’",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 2978,
+      "body_end": 3209,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00018",
+      "text": "This increase in pressure against journalists confirms concerns over respect for press freedom in the country. In the 2025 Reporters Without Borders report, Togo dropped eight places, falling from 113th in 2024 to 121st.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3211,
+      "body_end": 3431,
+      "source_links": [
+        "https://rsf.org/fr/classement-mondial-rsf-2025-la-fragilisation-%C3%A9conomique-des-m%C3%A9dias-constitue-l-une-des-principales"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00019",
+      "text": "Read more: Sharp decline in Reporters Without Borders Global World Press Freedom Index in Francophone Africa",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3433,
+      "body_end": 3541,
+      "source_links": [
+        "https://advox.globalvoices.org/2025/05/30/sharp-decline-in-reporters-without-borders-global-world-press-freedom-index-in-francophone-africa/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00020",
+      "text": "Condemning an assault on freedom",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3543,
+      "body_end": 3575,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00021",
+      "text": "Quoted in a TV5 Monde article, Reporters Without Borders (RSF) denounces what it calls an arbitrary decision by Togo’s media regulators. Also quoted in the TV5 Monde article, Sadibou Marong, director of the RSF sub-Saharan Africa office, calls on the Togolese authorities to lift these sanctions and immediately restore the broadcasts of RFI and France 24.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3577,
+      "body_end": 3933,
+      "source_links": [
+        "https://information.tv5monde.com/economie/togo-les-medias-francais-france-24-et-rfi-suspendus-pour-trois-mois-2777278"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00022",
+      "text": "According to the Togolese Press Employers’ Association (PPT), this constitutes a serious violation and an obstacle to freedom of expression. Honoré Adontui, the PPT president, told the local outlet Togo Breaking News:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3935,
+      "body_end": 4152,
+      "source_links": [
+        "https://togobreakingnews.info/togo-le-ppt-monte-au-creneau-rfi-france24/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00023",
+      "text": "> Ces suspensions arbitraires portent gravement atteinte à la liberté de la presse et constituent une violation flagrante du droit fondamental à l’information, dans un climat politique déjà tendu.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4154,
+      "body_end": 4350,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00024",
+      "text": "> Le PPT en appelle à la responsabilité de la HAAC, l’invitant à revenir à un dialogue constructif avec les médias et à ne céder à aucune pression politique, sous peine d’écorner davantage l’image du pays sur la scène internationale.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4352,
+      "body_end": 4585,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00025",
+      "text": "> These arbitrary suspensions seriously undermine press freedom and represent a blatant violation of the fundamental right to information in an already tense political climate.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4587,
+      "body_end": 4763,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00026",
+      "text": "> The PPT is calling on the HAAC to act responsibly, urging it to return to constructive dialogue with the media and to resist any political pressure, warning that failure to do so would further damage the country’s image on the international stage.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4765,
+      "body_end": 5014,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00027",
+      "text": "While media professionals and press freedom organisations express concern, some voices online are welcoming the suspension.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5016,
+      "body_end": 5139,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00028",
+      "text": "RFI posted on its X account:",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5141,
+      "body_end": 5169,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00029",
+      "text": "> RFI and France 24 are suspended for three months in Togo https://t.co/sU0zOCWFXh pic.twitter.com/cMjM68eOgY",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5171,
+      "body_end": 5280,
+      "source_links": [
+        "https://t.co/cMjM68eOgY",
+        "https://t.co/sU0zOCWFXh"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00030",
+      "text": "> — RFI (@RFI) June 16, 2025",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5282,
+      "body_end": 5310,
+      "source_links": [
+        "https://twitter.com/RFI/status/1934668634447655236?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00031",
+      "text": "The responses to this post reflect the hostility that some hold toward these French media outlets.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5312,
+      "body_end": 5410,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00032",
+      "text": "> What great news! I only regret that it’s just for three months. It should be a lifetime suspension for these slave trading, colonial, and neo-colonial media outlets, specializing in disinformation, mass manipulation, destabilization, and terrorism!",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5412,
+      "body_end": 5662,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00033",
+      "text": "> — ntu_zut🇨🇲 (@ntu_zut) June 17, 2025",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 5664,
+      "body_end": 5702,
+      "source_links": [
+        "https://twitter.com/ntu_zut/status/1934995303008006323?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00034",
+      "text": "A user named Narcisse Sanou also commented:",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 5704,
+      "body_end": 5747,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00035",
+      "text": "> If you don’t drive out these media outlets that spread lies, fake news, and conflict, it will be hard for you to claim your own sovereignty.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 5749,
+      "body_end": 5891,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00036",
+      "text": "> — Narcisse Sanou (@n_narcisse) June 16, 2025",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 5893,
+      "body_end": 5939,
+      "source_links": [
+        "https://twitter.com/n_narcisse/status/1934679163006247343?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00037",
+      "text": "Some users have gone so far as to call on the Togolese authorities to cut ties with France altogether. One such account, Sahel Info Alertes, posted:",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 5941,
+      "body_end": 6089,
+      "source_links": [
+        "https://x.com/MAMANEBOUKAR4"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00038",
+      "text": "> Soon, it will be time for Franco-Togolese relations to be suspended. It always starts with these terrorist media outlets and then, bang!",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 6091,
+      "body_end": 6229,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00039",
+      "text": "> — SAHEL INFO-ALERTES (EYE THAT SEES, HEAD THAT THINKS) (@MAMANEBOUKAR4) June 17, 2025",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 6231,
+      "body_end": 6318,
+      "source_links": [
+        "https://twitter.com/MAMANEBOUKAR4/status/1934830304272720234?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00040",
+      "text": "A red line",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 6320,
+      "body_end": 6330,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00041",
+      "text": "French media outlets accredited in Togo have been under the scrutiny of the HAAC for several months. In May 2024, the Togolese media regulator lashed out at RFI, accusing the outlet of unfair coverage of the country’s socio-political news. HAAC had served the French media with a formal notice. As reported by Togo First:",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 6332,
+      "body_end": 6653,
+      "source_links": [
+        "https://www.togofirst.com/fr/gestion-publique/0805-13987-au-togo-la-haac-met-en-demeure-rfi"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00042",
+      "text": "> En effet, dans une lettre datée du lundi 6 mai 2024, la HAAC a souligné l'absence de neutralité et d'équité dans le traitement de l'information par RFI, ceci malgré les avertissements antérieurs. Le président de l’institution, Telou Pitalounani, a précisément déploré le fait que RFI persiste à diffuser des informations erronées concernant la situation au Togo",
+      "page": null,
+      "paragraph": 42,
+      "body_start": 6655,
+      "body_end": 7018,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00043",
+      "text": "> It is true that in a letter dated May 6, 2024, the HAAC accused RFI of lacking neutrality and fairness in its reporting, noting that this persisted despite earlier warnings. Telou Pitalounani, the institution’s president, expressed regret that RFI has persisted in airing inaccurate reports about the situation in Togo.",
+      "page": null,
+      "paragraph": 43,
+      "body_start": 7020,
+      "body_end": 7341,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-836922-b00044",
+      "text": "The latest suspension underscores the HAAC’s ongoing mistrust of how French media have positioned themselves regarding Togo’s recent socio-political events, including citizen protests and public demonstrations challenging the country’s leadership.",
+      "page": null,
+      "paragraph": 44,
+      "body_start": 7343,
+      "body_end": 7590,
+      "source_links": [
+        "https://information.tv5monde.com/afrique/togo-quelles-sont-les-causes-de-la-contestation-citoyenne-2776280",
+        "https://www.jeuneafrique.com/1698413/politique/manifestations-au-togo-face-aux-allegations-de-torture-le-gouvernement-plaide-letat-de-droit/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-836922-b00045",
+      "text": "Read our special report: Togo, a nation with a double identity",
+      "page": null,
+      "paragraph": 45,
+      "body_start": 7592,
+      "body_end": 7654,
+      "source_links": [
+        "https://fr.globalvoices.org/special/togo-un-pays-a-double-visage/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "83c0296a91a5b82ff55a0691dbcb476fcddab7e64ebf40702a2c5372fb09c863",
+  "word_count": 1158,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 5,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7654,
+  "retrieved_at": "2026-11-16T22:47:09.669637+00:00",
+  "raw_html_sha256": "57abf63f42c3bacc00a503945c3a38c3bd1b2c9f68de322d777faf54f5e43086",
+  "resolved_source_url": "https://globalvoices.org/2025/07/11/togo-suspends-two-french-news-outlets-over-alleged-threat-to-the-countrys-stability/",
+  "canonical_url": "https://globalvoices.org/2025/07/11/togo-suspends-two-french-news-outlets-over-alleged-threat-to-the-countrys-stability/",
+  "source_bytes": 195363,
+  "authors": [
+    {
+      "name": "Jean Sovon",
+      "url": "https://fr.globalvoices.org/author/jean-sovon/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Jean-Christophe Brunet",
+      "url": "https://globalvoices.org/author/jcbrunet/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 836922,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "57abf63f42c3bacc00a503945c3a38c3bd1b2c9f68de322d777faf54f5e43086",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-55db29d7410cdd7a64cb",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-07",
+    "eligible_month_documents": 100,
+    "selected_month_documents": 84,
+    "inclusion_probability": 0.84,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Jean Sovon",
+  "body_start": 539,
+  "body_end": 8193,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "9376b1e36df9dd7c7172e4aca1e1c9fcf25e63a5ceac177741e5c33bae38986d",
+  "text_path": "articles/gv-836922.txt",
+  "metadata_path": "metadata/gv-836922.json",
+  "attribution": "This story by Jean Sovon originally appeared on Global Voices. https://globalvoices.org/2025/07/11/togo-suspends-two-french-news-outlets-over-alleged-threat-to-the-countrys-stability/",
+  "content_sha256": "dfaa2042a6815ba60001a508e90357da9834cd932a908556501c3e24f47707e0",
+  "source_sha256": "57abf63f42c3bacc00a503945c3a38c3bd1b2c9f68de322d777faf54f5e43086",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

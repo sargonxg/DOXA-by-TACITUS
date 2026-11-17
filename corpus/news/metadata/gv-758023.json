@@ -1,0 +1,561 @@
+{
+  "id": "gv-758023",
+  "publisher_id": 758023,
+  "source_id": "globalvoices:758023",
+  "source_url": "https://globalvoices.org/2022/03/06/following-invasion-of-ukraine-russia-declares-war-on-its-citizens/",
+  "title": "Following invasion of Ukraine, Russia declares war on its citizens",
+  "published_at": "2022-03-06T13:44:37Z",
+  "modified_at": "2023-11-20T10:34:16Z",
+  "api_author_id": 2739,
+  "api_content_sha256": "2ca862054ba7c521122c81a49e8edf07c44cfa75ca6846f3d676a0d68e9e2698",
+  "api_response_sha256": "1c1ca0bc12b9cd2dbfa64c668911b057f3193583dcca9487ed40436dfe167757",
+  "api_retrieved_at": "2026-11-16T22:20:42.191404+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-758023-b00001",
+      "text": "Since the start of Russia’s war in Ukraine, more than 7,000 people have been arrested for anti-war demonstrations across Russia. As hundreds of Western businesses continue to pull out of the country and Moscow continues to be isolated from the world economy, Russians are fleeing the country.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 292,
+      "source_links": [
+        "https://globalvoices.org/special/russia-invades-ukraine/",
+        "https://www.economist.com/graphic-detail/2022/03/04/russians-are-trying-to-flee-putins-chaos",
+        "https://www.france24.com/en/live-news/20220302-dozens-detained-at-anti-war-rallies-in-russia"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00002",
+      "text": "More than 40 countries have shut their airspace to Russian airplanes, limiting the options for escape to Central Asia, the Caucasus, and the Middle East. To prevent dissent at home, Moscow has also begun to prosecute the opposition at an unprecedented rate, threatening outlets and journalists with prison.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 294,
+      "body_end": 600,
+      "source_links": [
+        "https://www.aljazeera.com/news/2022/3/5/scared-to-stay-why-some-rushed-to-leave-russia-after-war",
+        "https://www.cbsnews.com/news/russia-ukraine-news-war-journalists-prison-sentences/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00003",
+      "text": "Draconian punishments and social persecution are making it increasingly more dangerous to speak out against the official government narrative. As the state becomes more vulnerable and rumors of impending martial law abound, the Russian government has declared war on its own citizens.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 602,
+      "body_end": 886,
+      "source_links": [
+        "https://eu.usatoday.com/story/news/politics/2022/03/03/martial-law-russia-vladimir-putin/9360852002/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00004",
+      "text": "War on the media",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 888,
+      "body_end": 904,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00005",
+      "text": "Foreign social media platforms were the first to feel restrictions. On February 25, Moscow partially limited access to Facebook. On March 5, Roskomnadzor, Russia’s communication regulator, fully banned access to Facebook across the country. Access to Twitter has similarly been curtailed, after the network limited Russia Today and Sputnik, Russia’s state media channels.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 906,
+      "body_end": 1277,
+      "source_links": [
+        "https://www.aljazeera.com/news/2022/3/4/russia-blocks-facebook-ukraine-war",
+        "https://www.cbsnews.com/news/russia-blocks-facebook-twitter/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00006",
+      "text": "That same day, the State Duma unanimously adopted a resolution punishing “fake news” inside the country. An individual who disseminates information not officially communicated by the government about the Russian military, the “special operation” in Ukraine, or calls for sanctions, can be punished with up to 15 years in prison. The Duma provided several examples of grave misinformation that ought to be punished, including sharing “doctored” photos of burned military equipment, reports about attacks on civilians, and estimates of Russian military casualties.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1279,
+      "body_end": 1841,
+      "source_links": [
+        "https://www.aljazeera.com/news/2022/3/4/russia-prison-media-law-fake-reports-ukraine-war",
+        "https://www.themoscowtimes.com/2022/03/04/russia-duma-passes-law-on-fake-news-a76754"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00007",
+      "text": "The Fake News Law comes on the heels of Russia’s 2019 restrictions on media reports “disrespecting the government,” albeit the punishment three years ago was much lighter. Those spreading “unreliable” information about government officials and disrupting the social order were liable to fines of up to RUR 1.5 million rubles (USD 22,900) and 15 days in jail.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1843,
+      "body_end": 2201,
+      "source_links": [
+        "https://www.npr.org/2019/03/18/704600310/russia-criminalizes-the-spread-of-online-news-which-disrespects-the-government"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00008",
+      "text": "As a result, access to foreign media has been severely cut back. Following a request from prosecutors, Roskomnadzor “limited” access to Meduza, BBC, Deutsche Welle, and Radio Free Europe. Consequently, Bloomberg, the Guardian, and the BBC have suspended the work of their journalists in the country. The international association of investigative journalists OCCRP has also been placed on the “undesirable organizations” list.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2203,
+      "body_end": 2629,
+      "source_links": [
+        "https://meduza.io/news/2022/03/05/vazhnye-istorii-i-occrp-vnesli-v-reestr-nezhelatelnyh-organizatsiy",
+        "https://time.com/6155187/russia-block-facebook/",
+        "https://www.aljazeera.com/news/2022/3/4/russia-prison-media-law-fake-reports-ukraine-war"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00009",
+      "text": "Critical domestic media across Russia has been mostly silenced. Ekho Moskvy, Znak.com, The Village, Taiga.info, Dozdh, Tomsk's TV 2, and many more, have shut down their operations in the face of heavy pressure and threat of legal prosecution. Znak cited “the large number of restrictions which have appeared recently affecting the work of media in Russia” for its closure.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2631,
+      "body_end": 3003,
+      "source_links": [
+        "https://meduza.io/feature/2022/03/05/rossiyskie-vlasti-za-neskolko-dney-razgromili-ves-media-rynok-vot-kak-eto-vyglyadit",
+        "https://time.com/6155187/russia-block-facebook/",
+        "https://www.themoscowtimes.com/2022/03/04/russia-duma-passes-law-on-fake-news-a76754"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00010",
+      "text": "Those that have not shut down are being harassed in person. The offices of the newspaper Pskovskaya Guberniya were raided on the morning of March 5; the publication's website has been blocked as a result",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3005,
+      "body_end": 3208,
+      "source_links": [
+        "https://meduza.io/news/2022/03/05/v-redaktsiyu-pskovskoy-gubernii-prishli-sotrudniki-tsentra-e-s-omonom",
+        "https://zona.media/news/2022/03/05/guberniya"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00011",
+      "text": "The outlets that haven’t been shut down yet are being forced to delete stories and only report official state dispatches. Twelve domestic publications have announced they will cease all coverage of the war, including The Bell, VPost, and The Blueprint. Novaya Gazeta, recipient of the 2021 Nobel Prize for Journalism, has removed most articles regarding the war.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3210,
+      "body_end": 3572,
+      "source_links": [
+        "https://meduza.io/feature/2022/03/05/rossiyskie-vlasti-za-neskolko-dney-razgromili-ves-media-rynok-vot-kak-eto-vyglyadit",
+        "https://www.reuters.com/world/russias-novaya-gazeta-cuts-ukraine-war-reporting-under-censorship-2022-03-04/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00012",
+      "text": "War on the people",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3574,
+      "body_end": 3591,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00013",
+      "text": "State-sanctioned polls report that most Russians are supportive of “special operations” in Ukraine. The results note that residents of Moscow and St. Petersburg, especially amongst young people, hold the strongest sentiment. Considering the escalating repressions across the country, many have cast doubt on the validity of such polls.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3593,
+      "body_end": 3928,
+      "source_links": [
+        "https://meduza.io/feature/2022/03/05/esli-verit-gosudarstvennym-sotsoprosam-bolshinstvo-rossiyan-podderzhivayut-voynu-v-ukraine-no-mozhno-li-im-verit",
+        "https://www.abc.net.au/news/2022-03-05/russian-support-for-putin-ukraine-invasion/100881316",
+        "https://www.economist.com/graphic-detail/2022/03/04/russians-are-trying-to-flee-putins-chaos"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00014",
+      "text": "On March 1, two mothers with five children were detained for laying flowers in front of the Ukrainian embassy in Moscow. The mothers were both charged for non-fulfillment of parental duties and violating orders of a public event.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3930,
+      "body_end": 4159,
+      "source_links": [
+        "https://zona.media/article/2022/03/02/mothers"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00015",
+      "text": "Hundreds of people are being detained daily in connection to anti-war protests or political opposition. Police are searching and arresting people across the country for anything from displaying Ukrainian flags to posts regarding anti-war protests on social media.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4161,
+      "body_end": 4424,
+      "source_links": [
+        "https://www.24liveblog.com/live/UPrXz?n=3000136623017192080",
+        "https://zona.media/chronicle/spb_05_03_2022#44686"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00016",
+      "text": "Moscow authorities have been documenting all social media posts related to Ukraine and using the facial recognition software “Sphere” to identify and detain individuals who take public transportation. Since its launch on September 1, 2020, more than 2,788 people have been arrested while getting on the metro. Since February 24, the police have been using “Sphere” to detain Moscovites who have publicly expressed anti-war sentiments.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4426,
+      "body_end": 4860,
+      "source_links": [
+        "https://www.france24.com/en/video/20210927-paying-with-a-glance-moscow-s-latest-expansion-of-facial-recognition-tech",
+        "https://zona.media/article/2022/03/05/29_seconds"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00017",
+      "text": "Authorities are putting all opposition groups under increased scrutiny. Supporters of opposition leader Alexander Navalny are receiving arrest warnings from the prosecutors offices in anticipation of large-scale organization. On the morning of March 6, special forces searched the offices of Vladimir Arzhanov and Ekaterina Aleksandrova, assistants of independent deputies of the Novosibirsk City Council.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4862,
+      "body_end": 5267,
+      "source_links": [
+        "https://tayga.info/163984",
+        "https://tayga.info/176435"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00018",
+      "text": "Human rights organizations across Russia are also being targeted. The offices of Memorial, Russia’s oldest human rights organization recording crimes against humanity perpetrated by the Soviet Union, were raided on March 4. Authorities also raided the offices of Civic Assistance, a Moscow organization providing assistance to migrants in Russia.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5269,
+      "body_end": 5615,
+      "source_links": [
+        "https://www.rferl.org/a/rights-group-memorial-moscow-offices-searched/31735777.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00019",
+      "text": "Ministries are also launching an organized information campaign across Russian schools. Starting on March 1, special lessons titled “My Country” were distributed for immediate dissemination for grades 6 to 11. Vkontakte reports have noted, “Students received information about why our President and the government were forced to send troops to the territory of Ukraine, that this is not a war, but a special peacekeeping operation, the purpose of which is to protect the population of the Donetsk and Luhansk People's Republics and deter nationalists who threaten the Russian population.”",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5617,
+      "body_end": 6205,
+      "source_links": [
+        "https://www.bbc.com/russian/features-60593954"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00020",
+      "text": "On March 3, the Russian Ministry of Education organized “Defenders of the Peace” lessons for all Russian schools. The lessons are part of the State Institute of Education’s federal project “Patriotic Education of Citizens of the Russian Federation.” The broadcast, hosted by a 12-year old singer Sofia Khomenko, argues that Ukrainians and Russians are one people, Westerners have attempted to divide and conquer Eastern Europe, America has committed most war crimes in the last 70 years, NATO has betrayed Russia, and Nazis have fully infiltrated the Ukrainian government.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6207,
+      "body_end": 6779,
+      "source_links": [
+        "https://meduza.io/feature/2022/03/05/osvoboditelnaya-missiya-na-ukraine-eto-neobhodimost"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00021",
+      "text": "Domestic flights to central and southern Russia have been suspended until March 14. Flights are no longer landing in cities near Russia's southern border: the cities of Anapa, Belgorod, Bryansk, Voronezh, Gelendzhik, Krasnodar, Kursk, Lipetsk, Rostov-on-Don, Simferopol, and Elista.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6781,
+      "body_end": 7063,
+      "source_links": [
+        "https://tayga.info/176422"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00022",
+      "text": "Russian border officials have subjected those trying to leave the country to lengthy interrogations, searches, and threats. People are being asked about their attitude towards the president, the war in Ukraine, and the purpose and duration of their trip.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7065,
+      "body_end": 7319,
+      "source_links": [
+        "https://zona.media/article/2022/03/02/border"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00023",
+      "text": "Many prominent figures have been fired from their jobs for anti-war statements. Ekaterina Dolinina, director of the Polet and Zvezda cinemas, was forced to submit a letter of resignation because she signed an open letter opposing the war on February 26.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7321,
+      "body_end": 7574,
+      "source_links": [
+        "https://zona.media/article/2022/02/28/dolinina"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00024",
+      "text": "Russia is already facing food shortages. ​​Major supermarket chains are imposing temporary restrictions on all purchases. The X5 Group that manages the Pyaterochka, Perekrestok, Karusel, and Chizhik chains of stores stated, “In order for essential goods to be constantly available, the company’s retail chain stores and the Vprok.ru Perekrestok online hypermarket limit large volumes of purchases of certain goods.” The war in Ukraine is expected to cause a global food shortage.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7576,
+      "body_end": 8055,
+      "source_links": [
+        "https://tayga.info/176424",
+        "https://www.aljazeera.com/program/inside-story/2022/3/5/could-russias-invasion-of-ukraine-trigger-a-global-food-crisis"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00025",
+      "text": "Thousands of men across Russia have received subpoenas from military registration and enlistment offices. The letters, phone calls, and emails come amidst President Vladimir Putin’s February 18 decree calling all reserve personnel to undergo military training.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 8057,
+      "body_end": 8317,
+      "source_links": [
+        "http://publication.pravo.gov.ru/Document/View/0001202202180067?index=0&rangeSize=1",
+        "https://zona.media/article/2022/03/02/draft"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00026",
+      "text": "The central bank has banned transfers of more than USD 5,000 to relatives abroad. The decree comes on the heels of Vladimir Putin’s ban on all transfers of foreign currency to non-residents abroad, credits to foreign bank accounts, and transfers via international electronic payment service providers.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 8319,
+      "body_end": 8620,
+      "source_links": [
+        "https://meduza.io/news/2022/02/28/putin-podpisal-ukaz-ob-otvetnyh-sanktsiyah-on-ogranichil-vyvod-valyuty-za-rubezh",
+        "https://meduza.io/news/2022/03/05/kommersant-tsentrobank-zapretil-perevodit-rodstvennikam-za-rubezh-bolee-5-tysyach-dollarov-v-mesyats"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00027",
+      "text": "The State Duma has expressed a desire for harsher punishments. On March 3, the Liberal Democratic Party proposed a bill to send those detained at anti-war rallies to military service in Donbas and Luhansk. Vladimir Putin’s press secretary has dismissed the idea of conscripting participants of protests.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 8622,
+      "body_end": 8925,
+      "source_links": [
+        "https://iz.ru/1300436/2022-03-04/v-gosdume-nazvali-neprodumannoi-ideiu-otpravki-protestuiushchikh-v-donbass"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00028",
+      "text": "The Russian government's prosecution of its own citizens will continue to exacerbate. As the nation becomes more isolated internationally, the voices of those inside will ring increasingly more hollow. All those able to organize a robust opposition have either been imprisoned or exiled. Those with any semblance of anti-war sentiments are being tracked, detained, and threatened into silence. Vladimir Putin is occupying Ukrainians and Russians alike.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 8927,
+      "body_end": 9379,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758023-b00029",
+      "text": "For more information about this topic, see our special coverage Russia invades Ukraine.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 9381,
+      "body_end": 9468,
+      "source_links": [
+        "https://globalvoices.org/special/russia-invades-ukraine/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "bee024815f3b6ca96c36c528faea4966009b8c8a3073329a811e3b12109efd11",
+  "word_count": 1417,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 9468,
+  "retrieved_at": "2026-11-16T22:33:58.028017+00:00",
+  "raw_html_sha256": "f2c60805b653fc8533c4cd198acab623b0cb8532687ea7428f3d4105e685b3a6",
+  "resolved_source_url": "https://globalvoices.org/2022/03/06/following-invasion-of-ukraine-russia-declares-war-on-its-citizens/",
+  "canonical_url": "https://globalvoices.org/2022/03/06/following-invasion-of-ukraine-russia-declares-war-on-its-citizens/",
+  "source_bytes": 193026,
+  "authors": [
+    {
+      "name": "Global Voices Central & Eastern Europe",
+      "url": "https://globalvoices.org/author/cee/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 758023,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "f2c60805b653fc8533c4cd198acab623b0cb8532687ea7428f3d4105e685b3a6",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-4108d38b866a3fd79c54",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-03",
+    "eligible_month_documents": 105,
+    "selected_month_documents": 88,
+    "inclusion_probability": 0.8380952380952381,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Global Voices Central & Eastern Europe",
+  "body_start": 493,
+  "body_end": 9961,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "4e7ef86c2e28bae6a3f40008f34f20c10d85f94083c574c7ad51cf99eb43b479",
+  "text_path": "articles/gv-758023.txt",
+  "metadata_path": "metadata/gv-758023.json",
+  "attribution": "This story by Global Voices Central & Eastern Europe originally appeared on Global Voices. https://globalvoices.org/2022/03/06/following-invasion-of-ukraine-russia-declares-war-on-its-citizens/",
+  "content_sha256": "ccbe2aca16dd3ef9e44a308a2d94d00c04655f1ee7a6b7c8407b6c645d018f2d",
+  "source_sha256": "f2c60805b653fc8533c4cd198acab623b0cb8532687ea7428f3d4105e685b3a6",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

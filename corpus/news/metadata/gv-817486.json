@@ -1,0 +1,473 @@
+{
+  "id": "gv-817486",
+  "publisher_id": 817486,
+  "source_id": "globalvoices:817486",
+  "source_url": "https://globalvoices.org/2024/08/01/taiwan-struggles-to-combat-chinese-influence-in-its-generative-ai-tools/",
+  "title": "Taiwan struggles to combat Chinese influence in its generative AI tools",
+  "published_at": "2024-08-01T03:00:21Z",
+  "modified_at": "2025-02-14T10:54:02Z",
+  "api_author_id": 254,
+  "api_content_sha256": "0a0e787546b40c972adbc736fc602b55aab140e02877301efc1c212a37e1daac",
+  "api_response_sha256": "cb7cd89fa8ec1bf9f70e43c81879cffbc92b70110fb4faa1e400a0aa8e29ae6d",
+  "api_retrieved_at": "2026-11-16T22:21:05.156563+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 48,
+      "count": 960,
+      "name": "Taiwan (ROC)",
+      "slug": "taiwan-roc",
+      "parent": 16
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-817486-b00001",
+      "text": "A Taiwanese generative AI development team immediately encountered problems last October after researchers from Taiwan’s national academy, Academia Sinica, released a beta version of a newly developed Chinese-language AI chatbot, CKIP-Llama-2-7b. This chatbot is a traditional Chinese language version of Meta’s open-sourced large language model (LLM), Llama 2.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 361,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Traditional_Chinese_characters",
+        "https://llama.meta.com/",
+        "https://www.rfa.org/english/news/china/taiwan-ai-10122023163143.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00002",
+      "text": "When asked, “Who is our country’s leader?” the chatbot answered, “The country’s president Xi Jinping”, the president of China, and when asked, “When is the national day?” the chatbot answered, “October 1”, a date marking China's official formation. In reality, Taiwan’s then-president was Tsai Ing-wen, and Taiwan's national day is October 10. These responses indicated a significant security breach and highlighted Taiwan's challenge in overcoming vast amounts of China-centric data online.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 363,
+      "body_end": 854,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00003",
+      "text": "The answers were shocking to the Taiwanese public. The Republic of China (ROC / Taiwan) has struggled to maintain its autonomy from the People's Republic of China (PRC / China) since the then-ruling party Kuomintang (KMT) fled to Taiwan upon its defeat in the Chinese Civil War in 1949. Yet, to this day, the PRC has claimed its sovereignty over Taiwan under the “One China Principle”.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 856,
+      "body_end": 1241,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Chinese_Civil_War",
+        "https://en.wikipedia.org/wiki/One_China"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00004",
+      "text": "Academia Sinica quickly took the beta version offline and explained in a statement that the project was conducted by a small research team with limited funding. The academy explained that the chatbot was hallucinating due to inadequate and biased data training. It turned out that the researcher had simply converted simplified Chinese data from COIG-CP and dolly-15K (both mainland Chinese open-source datasets) into traditional Chinese data when refining Llama 2, the machine learning model for comprehending and generating text.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1243,
+      "body_end": 1774,
+      "source_links": [
+        "https://github.com/BAAI-Zlab/COIG",
+        "https://www.sinica.edu.tw/News_Content/70/1850"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00005",
+      "text": "The incident was framed as a significant threat to national security. Even Beijing-friendly KMT politician Sean Liao raised the alarm on the potential security risk, via a Facebook post:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1776,
+      "body_end": 1962,
+      "source_links": [
+        "https://www.facebook.com/seanliao76/posts/pfbid0Pskp7DHupPQqCxwxcYs35mNfQrkwbGnLmLPuM8GPfjpjyZiHbk5rpvc17MYEgkKrl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00006",
+      "text": "> 這不只鬧了笑話，更讓人擔心在在AI發展的過程中，是不是有許多數據在神不知鬼不覺中被偷渡進我國的系統之內，造成更難以估計的損失，這種風險其實比Tiktok、愛奇藝等更危險。",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1964,
+      "body_end": 2051,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817486-b00007",
+      "text": "> This is no joke. It makes people worry about the smuggling of data into our country’s system during AI development. The loss would be unfathomable. This kind of risk is even more dangerous than that of TikTok, iQiyi, and so on.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2053,
+      "body_end": 2282,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817486-b00008",
+      "text": "Many felt the urge to develop a Taiwan-centric dataset for building an AI chatbot. Keanu Hsieh, a social entrepreneur on tech-education, stressed:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2284,
+      "body_end": 2430,
+      "source_links": [
+        "https://www.facebook.com/keanu.hsieh/posts/pfbid02aWaEif8qpMwC5gESNVXamgsEWgUQhqhZwt2ym7dEc2CFiDS5UteM3FFx1LSN1czal"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00009",
+      "text": "> AI 時代的競爭，強化台灣在地用詞的資料收集、建立資料集，建立熟悉台灣在地文化的AI，應該視為 國防/國安 投資，有急迫性和必要性。",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2432,
+      "body_end": 2500,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817486-b00010",
+      "text": "> Strengthening the data collection of Taiwan's local terminology, building up datasets, and establishing an AI that is familiar with Taiwan's local culture in the AI competition is urgent and necessary. This should be regarded as a national defence/national security investment.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2502,
+      "body_end": 2781,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817486-b00011",
+      "text": "Local data against China's AI influences",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2783,
+      "body_end": 2823,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00012",
+      "text": "Meanwhile, Taiwan’s National Science and Technology Council has been working since April 2023 to develop another generative AI tool, TAIDE (the Trustworthy AI Dialogue Engine).",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2825,
+      "body_end": 3001,
+      "source_links": [
+        "https://taiwaninsight.org/2024/05/27/taide-taiwans-commitment-to-innovation-security-and-global-tech-leadership/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00013",
+      "text": "TAIDE is also based on Meta’s Llama 2 and 3 with added traditional Chinese data and a Taiwanese context. This time, the developers carefully filtered the traditional Chinese datasets by confining them to local data from the Taiwanese government, newspapers, university resources, research papers and local publications when refining Llama's performance. The traditional Chinese generative AI was released earlier this year on April 5:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3003,
+      "body_end": 3437,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00014",
+      "text": "TAIDE is based on Llama's 70 billion parameters, meaning it is relatively small-scale and cannot compete performance-wise with ChatGPT, the most popular chat generative LLM which has 175 billion parameters. However, because it has scraped data from local government, research, education, and news sources, it can be developed into domestic applications such as educational tools which are more resilient to cultural and political bias and security risks, like industrial espionage, cyber-attacks and propaganda, associated with imported overseas AIs.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3439,
+      "body_end": 3989,
+      "source_links": [
+        "http://cw.com.tw/article/5129076",
+        "https://datascience.stackexchange.com/questions/102259/what-exactly-are-the-parameters-in-gpt-3s-175-billion-parameters",
+        "https://focustaiwan.tw/politics/202405230016?utm_source=site.twitter&utm_medium=share&utm_campaign=twuser"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00015",
+      "text": "Thomas Wan, a cybersecurity expert, told the Taiwanese media outlet Commonwealth Magazine that generative AI tends to have very strong cultural bias, which can be considered a cultural invasion. With the launch of Baidu’s ERNIE Bot in mainland China in March 2023, Taiwan is racing to speed up local development.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3991,
+      "body_end": 4303,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Ernie_Bot",
+        "https://www.cw.com.tw/article/5129076?utm_source=fb_cw&utm_medium=social&utm_campaign=fb_cw-social-daily-240123-5129076&fbclid=IwY2xjawEUF0JleHRuA2FlbQIxMQABHcZUMrrduFUZqvycow3Fivk2h4FHhPdQCjiDTGIbCNlB64qpzvicI69PSQ_aem_3KFuTgJtQlS6j344ergQkA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00016",
+      "text": "In August 2023, China extended its censorship on AI with the introduction of Regulations on the Management of Generative Artificial Intelligence Services. The law requires content generated by AI to reflect China's core socialist values, which means forbidding content that subverts the state, critiques the state's socialist system, incites secession, undermines national unity, spreads false information, disrupts economic and social order, and more. Hence some mainland Chinese internet users named the mainland Chinese generative AIs ChatXJP, after the Chinese President Xi Jinping:",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4305,
+      "body_end": 4891,
+      "source_links": [
+        "https://eastasiaforum.org/2023/09/27/the-future-of-ai-policy-in-china/",
+        "https://en.wikipedia.org/wiki/Core_Socialist_Values"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00017",
+      "text": "> Netizens joked that the future of mainland Chinese generative AI bots should be called ChatXJP to mock the Chinese government’s intensified speech censorship and internet control.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4893,
+      "body_end": 5074,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817486-b00018",
+      "text": "In response to the threat of China’s influence through generative AI, Lee Yuh-Jye, a member of the TAIDE development team, told the Commonwealth Magazine:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5076,
+      "body_end": 5230,
+      "source_links": [
+        "https://www.cw.com.tw/article/5129076?utm_source=fb_cw&utm_medium=social&utm_campaign=fb_cw-social-daily-240123-5129076&fbclid=IwY2xjawEUF0JleHRuA2FlbQIxMQABHcZUMrrduFUZqvycow3Fivk2h4FHhPdQCjiDTGIbCNlB64qpzvicI69PSQ_aem_3KFuTgJtQlS6j344ergQkA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00019",
+      "text": "> 以台灣民主化的程度，抖音都不能禁止，也不可能禁止使用文心一言，如果台灣的年輕人都像使用抖音一樣使用文心一言，這問題會很嚴重…我們可能無法第一時間抗衡大引擎，但有自己的對話引擎，至少大家有選擇",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5232,
+      "body_end": 5329,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817486-b00020",
+      "text": "> Given the degree of democratization in Taiwan, we cannot even ban TikTok and won’t be able to ban the ERNIE bot. But if young people use the ERNIE bot like TikTok, we will face a very serious problem… While we may not be able to fight the big engines in the first place, with our dialogue engine, at least people have a choice.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5331,
+      "body_end": 5660,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-817486-b00021",
+      "text": "The development of TAIDE aligns with the idea of “sovereign AI”, which American-Taiwanese billionaire Jensen Huang, the CEO of tech giant Nvidia, advocates for. Huang believes that governments should develop strategies for using AI technologies to protect their sovereignty, security, economic interests, cultures, etc.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5662,
+      "body_end": 5981,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Jensen_Huang",
+        "https://www.weforum.org/agenda/2024/04/sovereign-ai-what-is-ways-states-building/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00022",
+      "text": "Nividia will build its second supercomputer center in Taiwan as the company recognizes Taiwan's pivotal role in AI development, given its chip manufacturing giant, TSMC, produces over 90 percent of advanced chips required for AI applications worldwide.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5983,
+      "body_end": 6235,
+      "source_links": [
+        "https://www.economist.com/special-report/2023/03/06/taiwans-dominance-of-the-chip-industry-makes-it-more-important",
+        "https://www.taipeitimes.com/News/front/archives/2024/06/05/2003818883"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00023",
+      "text": "China vows to become the world's major AI innovation center, with the scale of its AI core industry set to reach 300 billion yuan (approximately USD 41.5 billion) in 2025.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6237,
+      "body_end": 6408,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00024",
+      "text": "However, the US has seemingly tipped the scale as it extended its technology export ban on China to include advanced AI chips earlier in March over security concerns. Taiwan is poised to catch up. In 2024, Taiwan attracted TWD 230 billion (approximately USD 7.5 billion) in AI-related investment, and several tech giants, including Google, Amazon, and AMD, announced their plans to increase their stake in the island despite the escalating geopolitical tension.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6410,
+      "body_end": 6871,
+      "source_links": [
+        "https://www.bbc.com/news/world-asia-34729538",
+        "https://www.csis.org/analysis/balancing-ledger-export-controls-us-chip-technology-china",
+        "https://www.reuters.com/technology/us-commerce-updates-export-curbs-ai-chips-china-2024-03-29/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-817486-b00025",
+      "text": "Although the scale of Taiwan's government investment in the AI research and development sector is incomparable with China's, its leading role in the manufacturing of advanced chips and the development of sovereign AI can help it pave the way to becoming an innovative AI hub.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6873,
+      "body_end": 7148,
+      "source_links": [
+        "https://english.ey.gov.tw/News3/9E5540D592A5FECD/edadb735-e6a6-43e1-ac93-1959602bb3ec#:~:text=With%20artificial%20intelligence%20(AI)%20set,environment%20for%20AI%20scientific%20research.",
+        "https://global.chinadaily.com.cn/a/202308/23/WS64e5b34fa31035260b81dc9f.html#:~:text=China's%20investment%20in%20artificial%20intelligence,report%20by%20market%20consultancy%20IDC."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "0f684ae4b9b7e08d2f5dcdb9765eaf4bcfb1e223712499189a4b98b2d4947f5b",
+  "word_count": 1055,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7148,
+  "retrieved_at": "2026-11-16T22:43:46.640657+00:00",
+  "raw_html_sha256": "f6b32da983d1743ff0c2a8033dbfc2b69bbed612480874d33af6d30edb59d2b1",
+  "resolved_source_url": "https://globalvoices.org/2024/08/01/taiwan-struggles-to-combat-chinese-influence-in-its-generative-ai-tools/",
+  "canonical_url": "https://globalvoices.org/2024/08/01/taiwan-struggles-to-combat-chinese-influence-in-its-generative-ai-tools/",
+  "source_bytes": 194502,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 817486,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "f6b32da983d1743ff0c2a8033dbfc2b69bbed612480874d33af6d30edb59d2b1",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-4392dbac133791c51aa5",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-08",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Oiwan Lam",
+  "body_start": 475,
+  "body_end": 7623,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "528fca675b2b4104771080b52dc123c24fda70a600a6b649bb009f6d2e2fa67d",
+  "text_path": "articles/gv-817486.txt",
+  "metadata_path": "metadata/gv-817486.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2024/08/01/taiwan-struggles-to-combat-chinese-influence-in-its-generative-ai-tools/",
+  "content_sha256": "c1c4b6778e3634ccbffb2079275282822d31c90d1bb378826d743d1c685201a0",
+  "source_sha256": "f6b32da983d1743ff0c2a8033dbfc2b69bbed612480874d33af6d30edb59d2b1",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

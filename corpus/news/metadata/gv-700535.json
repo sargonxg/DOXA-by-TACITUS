@@ -1,0 +1,363 @@
+{
+  "id": "gv-700535",
+  "publisher_id": 700535,
+  "source_id": "globalvoices:700535",
+  "source_url": "https://globalvoices.org/2020/03/14/trinidad-tobago-clamps-down-as-two-cases-of-covid-19-confirmed/",
+  "title": "Trinidad & Tobago clamps down as two cases of COVID-19 are confirmed",
+  "published_at": "2020-03-14T02:42:55Z",
+  "modified_at": "2020-04-26T23:38:52Z",
+  "api_author_id": 306,
+  "api_content_sha256": "eb51d7e8ada5ae99894aea74539703d0cfb14293190e6d17f6b3b842106fe558",
+  "api_response_sha256": "6400a2a69e2b1612f7bdabedd6b26a0bd74341ef3b4189d69f04207808bc2f03",
+  "api_retrieved_at": "2026-11-16T22:20:23.593459+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1353,
+      "count": 10223,
+      "name": "Caribbean",
+      "slug": "caribbean",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 247,
+      "count": 4731,
+      "name": "Education",
+      "slug": "education",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 280,
+      "count": 5264,
+      "name": "Travel",
+      "slug": "travel",
+      "parent": 238
+    },
+    {
+      "id": 184,
+      "count": 3312,
+      "name": "Trinidad &amp; Tobago",
+      "slug": "trinidad-tobago",
+      "parent": 1353
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-700535-b00001",
+      "text": "Check out Global Voices’ special coverage of the global impact of COVID-19.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 75,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/covid-19-global-coverage-for-a-pandemic/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00002",
+      "text": "On March 12, 2020, Trinidad and Tobago's minister of health, Terrence Deyalsingh, confirmed in an emergency press conference that medical officials had identified the country's index case of COVID-19.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 77,
+      "body_end": 277,
+      "source_links": [
+        "https://newsday.co.tt/2020/03/13/govt-confirms-first-covid19-case-in-tt-patient-zero/",
+        "https://twitter.com/tv6tnt/status/1238198798113026051"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00003",
+      "text": "The patient, who resides in Trinidad and Tobago, had recently returned from a trip to Switzerland when he started feeling unwell, and made the decision to self-isolate. He has since been moved to the Caura Hospital, which specialises in the treatment of thoracic cases. Members of his family have tested negative for the virus.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 279,
+      "body_end": 606,
+      "source_links": [
+        "https://ncrha.co.tt/caura-hospital-services/",
+        "https://newsday.co.tt/2020/03/13/covid19-patient-at-hospital-family-tests-negative/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00004",
+      "text": "However, after the principal of Maria Regina, a primary school located in Port of Spain, issued a release stating that health officials confirmed “the parent of one of [its] students has tested positive for the Corona virus [sic]”, not only did that school close, but several others followed its lead, including Maple Leaf International School, where one of the teachers is the spouse of the pilot who captained a Caribbean Airlines flight to Guyana, on which it was determined that a female passenger was carrying the virus. The passenger later died.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 608,
+      "body_end": 1159,
+      "source_links": [
+        "http://www.looptt.com/content/trinidads-link-guyanas-first-case-covid-19",
+        "https://mapleleaf-school.com/",
+        "https://newsday.co.tt/2020/03/13/health-officials-visit-maria-regina-school/",
+        "https://trinidadexpress.com/news/local/cal-crew-quarantined-as-covid--victim-dies-in-guyana/article_c73b6ba6-6521-11ea-b24a-0f8844262dc4.html",
+        "https://www.stabroeknews.com/2020/03/13/news/guyana/hospital-workers-airline-crew-among-dozens-quarantined-after-contact-with-coronavirus-patient/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00005",
+      "text": "During the sitting of parliament on March 13, Prime Minister Keith Rowley announced that all schools country-wide — including tertiary institutions — will be closed for one week initially, after which government will reassess the situation. As of the same date, the Ministry of Health had submitted 63 samples to the Caribbean Public Health Agency (CARPHA) for COVID-19 testing, with just the one positive result.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1161,
+      "body_end": 1574,
+      "source_links": [
+        "http://www.looptt.com/content/carpha-tests-63-samples-covid-19-confirmed-cases-remain-one",
+        "http://www.looptt.com/content/rowley-schools-universities-be-closed-one-week",
+        "https://www.facebook.com/catholictt/photos/rpp.160047019618/10160620513974619/?type=3&theater"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00006",
+      "text": "The government has also decided to halt the arrival of cruise ships for the remainder of the 2019-2020 cruise season, which typically runs from November to April. The feeling was that potential economic losses arising from a COVID-19 outbreak in the country would be far worse than the drop in tourism income for the period. Similar measures have already been taken in Jamaica.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1576,
+      "body_end": 1953,
+      "source_links": [
+        "http://www.looptt.com/content/government-suspends-cruise-ship-season-due-covid-19",
+        "https://globalvoices.org/2020/03/04/caribbean-tourism-threatened-by-the-regions-first-cases-of-covid-19/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00007",
+      "text": "Even as Prime Minister Rowley warned against panic and urged citizens to remain calm and refrain from spreading misinformation, many supermarkets reported instances of stockpiling. On WhatsApp, social media users shared photos and videos of panic-buying in crowded grocery stores and pharmacies, many of which were low on items like hand sanitiser and toilet paper.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1955,
+      "body_end": 2320,
+      "source_links": [
+        "https://newsday.co.tt/2020/03/13/full-statement-of-pm-on-covid19/",
+        "https://newsday.co.tt/2020/03/13/supermarket-assoc-as-panic-buying-steps-in-we-have-enough-food/",
+        "https://twitter.com/urvashi_tv6/status/1238534680238047238",
+        "https://www.guardian.co.tt/news/panic-buying-sets-in-across-tt-6.2.1078065.76010c1ad0?fbclid=IwAR1B-WHyEZsPMtizsRkUtWLHVdrFw-PDRs0hIZIhLOhgw884orjO47q2rLM"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00008",
+      "text": "Taking World Health Organization guidelines into consideration, many citizens were already practising recommended measures like hand-washing and social distancing.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2322,
+      "body_end": 2485,
+      "source_links": [
+        "http://www.looptt.com/content/watch-no-liming-trinis-hunker-down-against-virus-spread",
+        "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00009",
+      "text": "Several events have been cancelled in anticipation of the possible spread of the virus, including the Tobago Jazz Festival and Point Fortin Borough Day celebrations, and religious festivals like Phagwa and Spiritual Baptist Liberation Day. In the sister isle of Tobago, which has not yet had a confirmed case of the virus, the hugely popular Goat and Crab Racing event, which takes place every Easter, has also been cancelled.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2487,
+      "body_end": 2913,
+      "source_links": [
+        "http://Easter",
+        "http://www.looptt.com/content/point-fortin-borough-day-celebrations-postponed",
+        "https://newsday.co.tt/2020/03/13/tt-regional-events-cancelled-over-covid19/",
+        "https://trinidadexpress.com/newsextra/phagwa-elr-concert-cancelled/article_cc496ad8-654b-11ea-8c8f-93496728f5aa.html",
+        "https://twitter.com/EWilliamstv6/status/1238217831206072322",
+        "https://www.discovertnt.com/spiritual-shouter-baptist-liberation-day"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00010",
+      "text": "This has been the trend within the region, with St. Lucia cancelling its annual jazz festival despite the tourism dollars it attracts, and Jamaica postponing its Carnival celebrations — which usually take place in April — to October 2020.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2915,
+      "body_end": 3153,
+      "source_links": [
+        "https://viconsortium.com/caribbean-coronavirus/caribbean-st-lucia-cancels-2020-jazz-festival-in-wake-of-coronavirus",
+        "https://www.essence.com/lifestyle/travel/jamaica-carnival-2020-postponed/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00011",
+      "text": "In Trinidad and Tobago, however, there was still time for a laugh, even in the midst of anxiety. Quite apart from the memes making the rounds on social media, the satirical news site Wired868 poked fun at party-loving Trinbagonians’ priorities by quipping about ways in which they could “make it safely through this thing to get to Carnival 2021 on the other side”.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3155,
+      "body_end": 3520,
+      "source_links": [
+        "https://wired868.com/2020/03/13/it-just-got-real-live-wire-explains-coronavirus-dos-and-donts-read-if-you-want-to-see-carnival-2021/?fbclid=IwAR0GyhPvsh7wZdRwuDKQZ-u2VArwVhbr4FeXpCVEwj_nQqS_nz9JMzYk3TE",
+        "https://www.facebook.com/search/top/?q=tobago%20conronavirus%20meme&epa=SEARCH_BOX"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00012",
+      "text": "All jokes aside, though, the country, like much of the Caribbean, is bracing for the effects of COVID-19, both human and economic. Chair of the Tobago Division of the Trinidad and Tobago Chamber of Industry and Commerce, Diane Hadad, has asked the prime minister to visit the island to discuss the potential impact of the virus on Tobago's economy, which is still trying to get back on an even keel since severe, prolonged disruptions to the inter-island ferry service a couple of years ago.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3522,
+      "body_end": 4013,
+      "source_links": [
+        "https://chamber.org.tt/media-releases/tobago-sea-bridge",
+        "https://globalvoices.org/2017/08/27/social-media-goes-off-the-deep-end-over-politicians-planned-protest-swim-from-tobago-to-trinidad/",
+        "https://twitter.com/EWilliamstv6/status/1238564441010196486"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00013",
+      "text": "Health minister Terrence Deyalsingh has likened the present situation to walking a tightrope — trying to keep the economy functioning while taking all “necessary, reasonable” health precautions — but insisted that the health authorities were as prepared as possible for the arrival of COVID-19.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4015,
+      "body_end": 4309,
+      "source_links": [
+        "https://www.tv6tnt.com/news/7pmnews/moh-travel-ban-last-resort/article_64d7323e-64c6-11ea-ac21-03ef1f63b664.html#utm_campaign=blox&utm_source=twitter&utm_medium=social"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700535-b00014",
+      "text": "On March 13, at 7:44 p.m. UTC-04:00, the Ministry of Health confirmed a second case, a 66-year-old man who had travelled less than two weeks previously and went to a public health facility on March 12 seeking medical care. He has been in isolation ever since, and the relevant district medical officer has begun to track down everyone with whom the patient may have come into contact so that they can be quarantined.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4311,
+      "body_end": 4727,
+      "source_links": [
+        "https://www.facebook.com/MinistryofHealthTT/photos/rpp.151162024913614/3200455846650868/?type=3&theater"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5dc97563d75a946c723e6acb6a0c6d270b6fcf3190a93999712cee63219782a5",
+  "word_count": 760,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 4727,
+  "retrieved_at": "2026-11-16T22:22:38.066722+00:00",
+  "raw_html_sha256": "29226861d49b3e9c77ec8e4a69f7e722f615a9728b76a8c66e9621c8cb69b097",
+  "resolved_source_url": "https://globalvoices.org/2020/03/14/trinidad-tobago-clamps-down-as-two-cases-of-covid-19-confirmed/",
+  "canonical_url": "https://globalvoices.org/2020/03/14/trinidad-tobago-clamps-down-as-two-cases-of-covid-19-confirmed/",
+  "source_bytes": 187643,
+  "authors": [
+    {
+      "name": "Janine Mendes-Franco",
+      "url": "https://globalvoices.org/author/janine-mendes-franco/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 700535,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "29226861d49b3e9c77ec8e4a69f7e722f615a9728b76a8c66e9621c8cb69b097",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-9948f8a68c5618c39c5b",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-03",
+    "eligible_month_documents": 117,
+    "selected_month_documents": 98,
+    "inclusion_probability": 0.8376068376068376,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Janine Mendes-Franco",
+  "body_start": 474,
+  "body_end": 5201,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "78a459602860a53900ca68bc237572bd9d958c35249db2275269b6812a7293a3",
+  "text_path": "articles/gv-700535.txt",
+  "metadata_path": "metadata/gv-700535.json",
+  "attribution": "This story by Janine Mendes-Franco originally appeared on Global Voices. https://globalvoices.org/2020/03/14/trinidad-tobago-clamps-down-as-two-cases-of-covid-19-confirmed/",
+  "content_sha256": "52891ca032019276b9706ac2d26242b015052e0fe1f421da4f5800befdc1f441",
+  "source_sha256": "29226861d49b3e9c77ec8e4a69f7e722f615a9728b76a8c66e9621c8cb69b097",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

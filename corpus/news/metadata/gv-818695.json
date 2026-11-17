@@ -1,0 +1,435 @@
+{
+  "id": "gv-818695",
+  "publisher_id": 818695,
+  "source_id": "globalvoices:818695",
+  "source_url": "https://globalvoices.org/2024/08/19/venezuelans-use-ai-avatars-and-instagram-live-to-fight-back-maduros-repression/",
+  "title": "Venezuelans use AI avatars and Instagram Live to fight back Maduro's repression",
+  "published_at": "2024-08-19T13:13:38Z",
+  "modified_at": "2025-02-14T10:44:29Z",
+  "api_author_id": 2715,
+  "api_content_sha256": "f467dae497a474cacb473abdac35e1c470f75ded8a5d26ace68067e45c59a615",
+  "api_response_sha256": "cb7cd89fa8ec1bf9f70e43c81879cffbc92b70110fb4faa1e400a0aa8e29ae6d",
+  "api_retrieved_at": "2026-11-16T22:21:05.156563+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 157,
+      "count": 1167,
+      "name": "Venezuela",
+      "slug": "venezuela",
+      "parent": 1354
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-818695-b00001",
+      "text": "Amid the repeated accusations of fraud after Venezuela's presidential elections of July 28, President Nicolás Maduro's regime has increased surveillance, persecuted political dissent, and blocked the flow of information online. Human rights groups raise the alarm about the use of apps by civilians to accuse others, online attacks, the censorship of digital media and the websites of human rights organizations, and, more recently, the restriction for ten days of X (formerly Twitter), the encrypted messaging application Signal, Reddit, and Microsoft Teams. Venezuelan journalists, activists and political dissidents are looking for ways to circumvent and report the abuse.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 675,
+      "source_links": [
+        "https://globalvoices.org/2024/08/01/in-a-historic-move-venezuelans-work-together-to-expose-maduros-electoral-fraud/",
+        "https://www.theguardian.com/world/article/2024/aug/09/nicolas-maduro-blocks-x-venezuela-spat-elon-musk"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00002",
+      "text": "Venezuela's electoral crisis sparked when the electoral authority (CNE) announced Maduro as the winner of the presidential election without following protocols and without showing the voting tallies. The opposition, however, did manage to collect the voting tallies and is using them as evidence that the opposition candidate Edmundo Gonzalez Urrutia won with 64 percent of the votes. Protests spread across the country in rejection of the CNE’s announcement, and in response, Maduro’s government retaliated with repression. Almost three weeks later, 25 people have been killed during protests, more than 1300 people have been detained, and reports of illegal raids have spread across social media.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 677,
+      "body_end": 1375,
+      "source_links": [
+        "https://globalvoices.org/2024/08/01/key-points-in-venezuelas-presidential-elections-whats-going-on/",
+        "https://globalvoices.org/2024/08/02/venezuela-everything-you-need-to-know-about-the-precious-tally-sheets/",
+        "https://globalvoices.org/2024/08/09/post-election-repression-in-venezuela-authorities-target-human-rights-defenders-and-humanitarian-workers/",
+        "https://www.barrons.com/news/spanish/maduro-exige-mano-de-hierro-tras-protestas-que-dejaron-25-muertos-en-venezuela-f3224183"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00003",
+      "text": "Read more: In a historic move, Venezuelans work together to expose Maduro's electoral fraud",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1377,
+      "body_end": 1468,
+      "source_links": [
+        "https://globalvoices.org/2024/08/01/in-a-historic-move-venezuelans-work-together-to-expose-maduros-electoral-fraud/"
+      ],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00004",
+      "text": "On August 8, Maduro issued an order to block the social network X. This move is particularly concerning and has severe implications for Venezuela, where the media ecosystem is already fragile and social media has provided a vital platform for sharing information, reporting state persecution and expressing opinions. On the same day, CANTV, Venezuela's largest state-owned telecommunications company and principal internet provider, also blocked Reddit, which serves as a space for discussion and news sharing across various communities and interests. Access to Signal, an open-source messaging and calling app known for its emphasis on privacy and security, was also restricted. Signal is particularly used by journalists and activists who are wary of digital surveillance.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1470,
+      "body_end": 2244,
+      "source_links": [
+        "https://edition.cnn.com/2024/08/09/tech/maduro-musk-x-twitter-ban-intl/index.html",
+        "https://efectococuyo.com/la-humanidad/cantv-bloquea-reddit-en-venezuela-reporta-ve-sin-filtro/#:~:text=La%20iniciativa%20de%20monitoreo%20de,An%C3%B3nima%20de%20Tel%C3%A9fonos%20de%20Venezuela).",
+        "https://globalvoices.org/2023/05/25/unfreedom-monitor-report-venezuela/",
+        "https://talcualdigital.com/gobierno-de-maduro-bloquea-sitio-web-de-la-aplicacion-signal/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00005",
+      "text": "VESinFiltro, an NGO that monitors internet blockings, claims that:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 2246,
+      "body_end": 2312,
+      "source_links": [
+        "https://vesinfiltro.com/noticias/2024-08-13-silencian_voces_criticas_en_internet/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00006",
+      "text": "> El discurso oficial que criminaliza las expresiones en redes sociales ha aumentado de tono en los últimos días, acusando a plataformas que todavía siguen accesibles, y anunciando propuestas legislativas con las que se calificaría de facista, neofacista o ciberfacista a quienes compartan ideas opuestas al gobierno de Venezuela por internet. Estas acciones, con frecuencia llevan a detenciones y la publicación de vídeos con un contenido intimidante por parte de los cuerpos de seguridad.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2314,
+      "body_end": 2804,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-818695-b00007",
+      "text": "> The official discourse that criminalizes expressions on social media has increased in tone in recent days, accusing platforms that are still accessible, and announcing legislative proposals that would classify as fascist, neo-fascist or cyber-fascist those who share ideas opposed to the government of Venezuela online. These actions often lead to arrests and the publication of videos with intimidating content by security forces.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2806,
+      "body_end": 3239,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-818695-b00008",
+      "text": "Recording illegal raids on Instagram Live",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3241,
+      "body_end": 3282,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00009",
+      "text": "The regime depends on video surveillance and frequent drone use to monitor citizens. This surveillance has been coupled with the state-backed “Operación Tun Tun” (Operation Knock-Knock), which has led to increased violence, doxxing, and the arbitrary detention of activists, journalists, and citizens. According to a public statement by Access Now, Venezuelan security forces have aggressively targeted individuals they accuse of being “internal enemies.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3284,
+      "body_end": 3739,
+      "source_links": [
+        "https://www.accessnow.org/press-release/open-letter-technology-enabled-political-violence-venezuela/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00010",
+      "text": "Some of the detention attempts and illegal raids have been recorded and made public by persecuted activists and political actors on Instagram Live. Such is the case of Maria Oropeza, a member of opposition party Vente Venezuela who livestreamed officials of counterintelligence forces (DGCIM) breaking her door, entering her home without a warrant, and detaining her without the necessary paperwork. The next day, DGCIM's official Instagram account posted a dehumanizing video of Oropeza’s detention with a song from horror film character Freddy Krueger: “One, two, you’ll never sleep again. Three, four, close your door. Five, Six, we’re coming for you.”",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3741,
+      "body_end": 4396,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Vente_Venezuela",
+        "https://www.youtube.com/watch?v=NWOvbDS5lv4",
+        "https://www.youtube.com/watch?v=mhW_lXpnCBE",
+        "https://x.com/CaracasChron/status/1821695936923415005?t=1cUPpOGUT9EKkilvWY2Dtw&s=19"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00011",
+      "text": "Koddy Campos, an LGBTQ+ activist, also livestreamed of a group of masked men who identified themselves as police officers trying to break his window and claiming they had a search warrant, even though they never showed it.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4398,
+      "body_end": 4620,
+      "source_links": [
+        "https://www.youtube.com/watch?v=par9Jp1ENOw"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00012",
+      "text": "Read more: Dear international left: Stop telling Venezuelans what to think",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4622,
+      "body_end": 4696,
+      "source_links": [
+        "https://globalvoices.org/2024/08/09/dear-international-left-stop-telling-venezuelans-what-to-think/"
+      ],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00013",
+      "text": "Taking down a government-operated messaging app",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4698,
+      "body_end": 4745,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00014",
+      "text": "The Maduro regime's surveillance and repression efforts have also involved using the government-operated messaging app VenApp to gather the names and locations of opposition figures and the electoral witnesses who collected voting records that prove Gonzalez Urrutia’s win. At the time of writing, VenApp is not available on Google Play and App Store due to the many reports received against it.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4747,
+      "body_end": 5142,
+      "source_links": [
+        "http://www.mppef.gob.ve/venapp-una-aplicacion-soberana-del-gobierno-bolivariano-al-servicio-del-pueblo-para-mejorar-los-servicios-publicos/",
+        "https://www.latpress.com/nota/venapp-fue-eliminada-de-google-play-y-appstore-2024815432"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00015",
+      "text": "“I spent three days reporting the app and sharing the information with everyone I know. Our goal was to have the platform taken down from Play Store as soon as possible before more people got detained,” Nathaly, a Venezuelan journalist living in Santiago de Chile, explains to Global Voices. “It’s a small thing that the diaspora can do to help those inside Venezuela who are facing backlash after the election.”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5144,
+      "body_end": 5556,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00016",
+      "text": "AI avatars to protect journalists",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5558,
+      "body_end": 5591,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00017",
+      "text": "Media platforms created a new strategy to protect journalists, who are at grave risk when covering the election crisis: use AI avatars to spread the news. So far, nine journalists have been detained and four charged on terrorism after the elections.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5593,
+      "body_end": 5842,
+      "source_links": [
+        "https://www.france24.com/es/minuto-a-minuto/20240808-imputan-por-terrorismo-a-cuatro-periodistas-detenidos-tras-las-elecciones-en-venezuela"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00018",
+      "text": "The project is called #OperaciónRetuit, and showcases two AI avatars called who share fact-checked and high-quality news. Global Voices media partners such as CONNECTAS and ProBox are part of the initiative, along with Venezuelan independent media Efecto Cocuyo, Tal Cual, El Pitazo and Runrunes.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5844,
+      "body_end": 6140,
+      "source_links": [
+        "https://efectococuyo.com/",
+        "https://elpitazo.net/",
+        "https://proboxve.org/",
+        "https://runrun.es/",
+        "https://talcualdigital.com/",
+        "https://www.connectas.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00019",
+      "text": "The avatars explain in their first video:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6142,
+      "body_end": 6183,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818695-b00020",
+      "text": "> Fuimos generados por inteligencia artificial, pero nuestros contenidos sí son reales, verificados de calidad y creados por periodistas. Como es conocido desde la jornada electoral del pasado 28 de julio en Venezuela se incrementó la persecución y la represión contra todo aquel el gobierno considere que no piense como el oficialismo, o que lo vea como contradictorio a él. Entonces por medidas de seguridad usaremos la inteligencia artificial para difundir la información de una docena de medios independientes venezolanos, parte de las iniciativas Venezuela Vota y La Hora de Venezuela, que además han logrado reunir un centenar de medios internacionales en 13 paises.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6185,
+      "body_end": 6857,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-818695-b00021",
+      "text": "> We were generated by artificial intelligence, but our content is real, verified, of quality and created by journalists. As is known since the election day of July 28, in Venezuela, the government has increased the persecution and repression against anyone who does not think like the ruling party, or who is seen as opposing it. So, for security, we will use artificial intelligence to disseminate information from a dozen independent Venezuelan media sources that are part of the Venezuela Vota and La Hora de Venezuela initiatives, which have also managed to bring together a hundred international media in 13 countries.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6859,
+      "body_end": 7483,
+      "source_links": [
+        "https://venezuelavota.org/",
+        "https://www.connectas.org/paises/lahoradevenezuela-2024/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-818695-b00022",
+      "text": "The two avatars are called “La Chama” (slang for “girl”) and “El Pana” (slang for “friend”). They are expected to release a video a day with information gathered by journalists.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7485,
+      "body_end": 7662,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "44307ebb85f1ac069dc2a024317deebcd6545bc8ec1a60b57382fffeb15140de",
+  "word_count": 1161,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7662,
+  "retrieved_at": "2026-11-16T22:43:58.223040+00:00",
+  "raw_html_sha256": "26343291b6e2d91dec1d16ccfe0165068abb0c8647d6ef08a4d5ee245f21208d",
+  "resolved_source_url": "https://globalvoices.org/2024/08/19/venezuelans-use-ai-avatars-and-instagram-live-to-fight-back-maduros-repression/",
+  "canonical_url": "https://globalvoices.org/2024/08/19/venezuelans-use-ai-avatars-and-instagram-live-to-fight-back-maduros-repression/",
+  "source_bytes": 195496,
+  "authors": [
+    {
+      "name": "Gabriela Mesones Rojo",
+      "url": "https://globalvoices.org/author/gabriela-mesones-rojo/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 818695,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "26343291b6e2d91dec1d16ccfe0165068abb0c8647d6ef08a4d5ee245f21208d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-b27445c6f27969932d48",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-08",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Gabriela Mesones Rojo",
+  "body_start": 502,
+  "body_end": 8164,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "d17377deb39296026af0c415b2a0bd6d6a63fa7ab895b0d91c359612a1b2c8d3",
+  "text_path": "articles/gv-818695.txt",
+  "metadata_path": "metadata/gv-818695.json",
+  "attribution": "This story by Gabriela Mesones Rojo originally appeared on Global Voices. https://globalvoices.org/2024/08/19/venezuelans-use-ai-avatars-and-instagram-live-to-fight-back-maduros-repression/",
+  "content_sha256": "57dc9dc8d3ec85b37c4d2f135f59652c137e00904382135d5cda4fe2493bdf99",
+  "source_sha256": "26343291b6e2d91dec1d16ccfe0165068abb0c8647d6ef08a4d5ee245f21208d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

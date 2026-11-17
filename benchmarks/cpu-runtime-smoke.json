@@ -1,0 +1,153 @@
+{
+  "schema_version": "3.0",
+  "kind": "offline CPU functional smoke using generated test inputs",
+  "generated_at": "2026-11-16T22:46:45.408792+00:00",
+  "synthetic_inputs": true,
+  "accuracy_evaluation": false,
+  "independent_reference_labels": false,
+  "software": {
+    "torch": "2.9.1+cpu",
+    "transformers": "4.57.6",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "numpy": "2.5.5"
+  },
+  "hardware": {
+    "logical_cpus_visible": 5,
+    "cpu_quota_cores": 4.0,
+    "memory_limit_bytes": "17179869184",
+    "gpu_used": false
+  },
+  "device": "cpu",
+  "offline_environment_flags": {
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "short_input_smoke": {
+    "health_ok": true,
+    "embedding_dimensions": [
+      384,
+      384
+    ],
+    "nli_pairs_evaluated": 2,
+    "nli_scores": [
+      {
+        "case_id": "condemnation",
+        "entailment_score": 0.9990553647242766,
+        "logits": {
+          "entailment": 3.505218505859375,
+          "not_entailment": -3.458548069000244
+        }
+      },
+      {
+        "case_id": "endorsement",
+        "entailment_score": 0.0003454152598885112,
+        "logits": {
+          "entailment": -3.9861769676208496,
+          "not_entailment": 3.984240770339966
+        }
+      }
+    ]
+  },
+  "window_smoke": {
+    "source_chars": 9294,
+    "nli_windows": 3,
+    "pairs": 6,
+    "embedding_windows": 7,
+    "last_end": 9294,
+    "seconds": 10.896,
+    "peak_rss_kib": 1804916
+  },
+  "model_profiles": {
+    "nli": {
+      "id": "deberta",
+      "role": "rubric_scoring",
+      "provider": "huggingface_cpu",
+      "model": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0-c",
+      "revision": "bddf8c5411c34ac3565e16e04384fd68b2618dda",
+      "license": "MIT",
+      "languages": [
+        "en"
+      ],
+      "parameters": 184423682,
+      "max_input_tokens": 512,
+      "runtime": "transformers_cpu",
+      "experimental": true,
+      "calibration": "uncalibrated",
+      "id2label": {
+        "0": "entailment",
+        "1": "not_entailment"
+      },
+      "intended_use": "Experimental independent source/hypothesis entailment scoring for explicit rubric propositions.",
+      "limitations": [
+        "512 tokens includes premise, hypothesis and special tokens.",
+        "Not-entailment is not contradiction; scores are not probabilities of prejudice.",
+        "General NLI, not an antisemitism or anti-Muslim specialist; no DOXA fine-tuning.",
+        "The -c variant uses its author's commercially friendly training-data mix."
+      ],
+      "files": [
+        "README.md",
+        "config.json",
+        "model.safetensors",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "special_tokens_map.json",
+        "added_tokens.json",
+        "spm.model"
+      ],
+      "max_download_bytes": 943718400,
+      "registry_version": "doxa-models-3.0",
+      "model_card": "https://huggingface.co/MoritzLaurer/deberta-v3-base-zeroshot-v2.0-c/blob/bddf8c5411c34ac3565e16e04384fd68b2618dda/README.md"
+    },
+    "retrieval": {
+      "id": "minilm",
+      "role": "retrieval",
+      "provider": "huggingface_cpu",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "license": "Apache-2.0",
+      "languages": [
+        "en"
+      ],
+      "parameters": 22713728,
+      "max_input_tokens": 256,
+      "dimensions": 384,
+      "runtime": "transformers_cpu",
+      "experimental": false,
+      "calibration": "not_applicable",
+      "intended_use": "Semantic retrieval and clustering of short source windows; not prejudice classification.",
+      "limitations": [
+        "The sentence-transformer limit is 256 wordpieces, despite the encoder's 512 positions.",
+        "Similarity is not evidence of shared stance, endorsement or prejudice."
+      ],
+      "files": [
+        "README.md",
+        "config.json",
+        "model.safetensors",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "special_tokens_map.json",
+        "vocab.txt",
+        "sentence_bert_config.json",
+        "1_Pooling/config.json",
+        "modules.json"
+      ],
+      "max_download_bytes": 167772160,
+      "registry_version": "doxa-models-3.0",
+      "model_card": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md"
+    }
+  },
+  "limitations": [
+    "Two simple generated test cases verify runtime wiring, not religious-prejudice or stance accuracy.",
+    "Uncalibrated entailment scores are not probabilities of prejudice.",
+    "The longer generated input verifies complete source-window offsets and normalized embeddings; cold model loading is included in its observed time.",
+    "No source documents, credentials, service addresses or model artifact paths are included."
+  ],
+  "runtime_settings": {
+    "device": "cpu",
+    "threads": 4,
+    "batch_size": 8,
+    "overlap_tokens": 32,
+    "embedding_batching_policy": "source_order"
+  }
+}

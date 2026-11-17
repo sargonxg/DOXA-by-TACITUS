@@ -1,0 +1,534 @@
+{
+  "id": "gv-718223",
+  "publisher_id": 718223,
+  "source_id": "globalvoices:718223",
+  "source_url": "https://globalvoices.org/2020/09/14/african-union-turns-to-biosurveillance-tech-to-curb-covid-19/",
+  "title": "African Union turns to biosurveillance tech to curb COVID-19",
+  "published_at": "2020-09-14T14:35:39Z",
+  "modified_at": "2020-09-15T18:49:09Z",
+  "api_author_id": 1264,
+  "api_content_sha256": "14e76fa704ab215ce1212941b2d80555fac3dde6af56bf563953fbd98274daf3",
+  "api_response_sha256": "8151db59b84972be147420e6c778533c63bc28f6c312564f66e92b98b68bdb85",
+  "api_retrieved_at": "2026-11-16T22:20:28.883922+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 243,
+      "count": 6007,
+      "name": "Development",
+      "slug": "development",
+      "parent": 238
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 117,
+      "count": 752,
+      "name": "Ghana",
+      "slug": "ghana",
+      "parent": 15
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 1360,
+      "count": 3081,
+      "name": "Humanitarian Response",
+      "slug": "humanitarian-response",
+      "parent": 238
+    },
+    {
+      "id": 7,
+      "count": 6125,
+      "name": "Ideas",
+      "slug": "ideas",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 131,
+      "count": 1641,
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "parent": 15
+    },
+    {
+      "id": 133,
+      "count": 262,
+      "name": "Rwanda",
+      "slug": "rwanda",
+      "parent": 15
+    },
+    {
+      "id": 276,
+      "count": 839,
+      "name": "Science",
+      "slug": "science",
+      "parent": 238
+    },
+    {
+      "id": 136,
+      "count": 422,
+      "name": "Senegal",
+      "slug": "senegal",
+      "parent": 15
+    },
+    {
+      "id": 140,
+      "count": 1197,
+      "name": "South Africa",
+      "slug": "south-africa",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-718223-b00001",
+      "text": "African leaders have taken decisive, early actions to curb the spread of COVID-19. In fact, the Africa Centers for Disease Control (ACDC) created its COVID-19 task force on February 5, before the continent had a single case.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 224,
+      "source_links": [
+        "https://www.cnbc.com/2020/04/02/lockdowns-curfews-and-doorstep-testing-africas-crackdown-on-the-coronavirus.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00002",
+      "text": "Today, Africa is currently the least impacted region in the world, with 1,293,048 confirmed COVID-19 cases so far and a remarkable 1,031,905 recoveries, according to the Africa CDCP. The continent has less than 5 percent of reported cases and less than 1 percent of all deaths.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 226,
+      "body_end": 503,
+      "source_links": [
+        "https://www.aljazeera.com/news/2020/04/tracking-africa-coronavirus-cases-200401081427251.html",
+        "https://www.gatesfoundation.org/TheOptimist/Articles/coronavirus-solomon-zewdu-africa-response"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00003",
+      "text": "Now, as African countries — led by the African Union — ease COVID-19 restrictions and prepare to reopen their economies and borders, many governments are employing innovative technologies.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 505,
+      "body_end": 693,
+      "source_links": [
+        "http://infonet.global/infonet/technology-and-the-fight-against-covid-19-in-africa/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00004",
+      "text": "A need for a unified, pan-African technology that can track the spread and connect COVID-19 testing centers across the continent has led to the use of PanaBIOS, an African Union-backed biosurveillance technology.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 695,
+      "body_end": 907,
+      "source_links": [
+        "https://au.int/en/pressreleases/20200821/saving-lives-economies-and-livelihoods-campaign-launches-africa"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00005",
+      "text": "PanaBIOS provides a mobile and web-based app that uses algorithms to track and trace persons facing potential health threats and track and keep records of test samples from their origin to in-country labs.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 909,
+      "body_end": 1114,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00006",
+      "text": "The technology was developed by Koldchain, a Kenyan startup, and funded by AfroChampions, a public-private partnership designed to galvanize African resources and institutions to support the emergence and success of the African private sector.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1116,
+      "body_end": 1359,
+      "source_links": [
+        "http://www.afrochampions.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00007",
+      "text": "Ghana is currently the only African country using PanaBIOS technology as it reopens its borders. PanaBIOS ensures that travelers are able to use test results from one country to satisfy port clearance requirements in another country through their personal PanaBios app or by adding a system-generated SMS/USSD passcode to another travel document.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1361,
+      "body_end": 1707,
+      "source_links": [
+        "https://panabios.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00008",
+      "text": "Port health officials use the enterprise version of the app to validate health declarations in a uniform manner across countries.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1709,
+      "body_end": 1838,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00009",
+      "text": "Comprehensive data protection and privacy laws",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1840,
+      "body_end": 1886,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00010",
+      "text": "The African Union and the Africa CDCP are encouraging member states to integrate the mobile-based PanaBIOS platform that would allow results from facilities across the continent to be centralized. However, digital health interventions have raised a lot of questions regarding data access and data privacy.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1888,
+      "body_end": 2193,
+      "source_links": [
+        "https://www.bloomberg.com/news/articles/2020-09-05/african-union-backed-app-seeks-to-speed-up-border-reopenings?fbclid=IwAR05QIEyufu7zBVi7wd6m9km5a6MF_vKNG2AdZG2fFkvzjx5LXqV8y_U2fE"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00011",
+      "text": "Government-implemented surveillance and control can instill fear and threaten civil liberties, especially in a continent where only 27 countries out of 54 in Africa have fully functioning data protection and privacy laws.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2195,
+      "body_end": 2416,
+      "source_links": [
+        "https://unctad.org/en/Pages/DTL/STI_and_ICTs/ICT4D-Legislation/eCom-Data-Protection-Laws.aspx",
+        "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30142-4/fulltext#seccestitle80"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00012",
+      "text": "Some African countries, such as Ghana, have triggered new legislation giving the president emergency powers to fight the pandemic by ordering telecom companies to provide it with personal customer details such as subscriber database, subscriber cell reference data, uncashed subscriber mobile money transfer data, mobile money merchant codes, and addresses.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2418,
+      "body_end": 2775,
+      "source_links": [
+        "https://ghanalawhub.com/wp-content/uploads/2020/04/E.I.-63.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00013",
+      "text": "To ensure data protection and privacy, all machine learning techniques used by PanaBIOS are on aggregated data. That is — data gathered is summarized for statistical analysis — not personal data used to target individuals — unless it’s for contact tracing purposes, where it would be required to reach out to suspected or infected people.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2777,
+      "body_end": 3115,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00014",
+      "text": "To ensure the prevention of privacy infringement, the African Union, PanaBIOS, and its partners must propose how it will comply with various country-based data protection laws to protect privacy, ensure data consent and avoid data sharing for commercial use.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3117,
+      "body_end": 3375,
+      "source_links": [
+        "https://www.globalvoicegroup.com/au-provides-big-data-solution-to-tame-covid-19/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00015",
+      "text": "The app currently does not have a privacy policy available to the public, in which it explains to users its data collection and sharing practices.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3377,
+      "body_end": 3523,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00016",
+      "text": "The challenge is how such data privacy policy will meet the various, continental, national, and regional data protection laws such as the African Union’s Convention on Cybersecurity and Personal Data Protection, the Southern African Development Community’s (SADC) model law on data protection, Economic Community of West African States’ (ECOWAS) Supplementary Act A/SA.1/01/10 on Personal Data Protection Within ECOWAS and the East African Community’s Framework for Cyberlaws.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3525,
+      "body_end": 4001,
+      "source_links": [
+        "http://repository.eac.int:8080/bitstream/handle/11671/1815/EAC%20Framework%20for%20Cyberlaws.pdf?sequence=1&isAllowed=y",
+        "https://au.int/sites/default/files/treaties/29560-treaty-0048_-_african_union_convention_on_cyber_security_and_personal_data_protection_e.pdf",
+        "https://ccdcoe.org/sites/default/files/documents/ECOWAS-100216-PersonalDataProtection.pdf",
+        "https://www.itu.int/en/ITU-D/Projects/ITU-EC-ACP/HIPSSA/Documents/FINAL%20DOCUMENTS/FINAL%20DOCS%20ENGLISH/sadc_model_law_data_protection.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00017",
+      "text": "Tech-based solutions contribute to Africa’s COVID-19 success",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4003,
+      "body_end": 4063,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00018",
+      "text": "In addition to PanaBIOS, various African nations have activated tech-based responses to the COVID-19 crisis to mitigate its spread.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4065,
+      "body_end": 4196,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00019",
+      "text": "For example, scientists from Senegal developed a $1 COVID-19 test kit and 3D ventilators for patients. Wellvis, a Nigerian startup, created the COVID-19 Triage Tool, a free online tool to help users self-assess their coronavirus risk category based on their symptoms and their exposure history.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4198,
+      "body_end": 4492,
+      "source_links": [
+        "https://wellvis.org/",
+        "https://www.aljazeera.com/programmes/countingthecost/2020/04/senegal-1-covid-19-test-kit-race-vaccine-200425131112353.html",
+        "https://www.tvcnews.tv/scientists-in-senegal-produce-3-d-ventilators-for-patients/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00020",
+      "text": "The South African government used Whatsapp to provide an interactive chatbot that can answer common queries about COVID-19 myths, symptoms, and treatment. And in Uganda, market women used the Market Garden app to sell their goods from their homes through the app, and then motorcycle taxis deliver the goods to customers.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4494,
+      "body_end": 4815,
+      "source_links": [
+        "https://www.dw.com/en/coronavirus-pandemic-driving-tech-solutions-in-sub-saharan-africa/a-53175841",
+        "https://www.weforum.org/agenda/2020/04/africa-technology-coronavirus-covid19-innovation-mobile-tech-pandemic/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00021",
+      "text": "Africa’s successful control and management of the spread of COVID-19 has been attributed to its younger population, limited testing capacity and mortality tracking, and the possible presence of SARS-CoV-2 antibodies found in some Africans.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4817,
+      "body_end": 5056,
+      "source_links": [
+        "https://www.gatesfoundation.org/TheOptimist/Articles/coronavirus-solomon-zewdu-africa-response",
+        "https://www.sciencemag.org/news/2020/08/pandemic-appears-have-spared-africa-so-far-scientists-are-struggling-explain-why"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00022",
+      "text": "However, it is clear that Africa’s tech-based innovations are a major contributing factor to its success in controlling COVID-19, in addition to decisive leadership early on in the pandemic.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5058,
+      "body_end": 5248,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00023",
+      "text": "Solomon Zewdu, deputy doctor with the Bill & Melinda Gates Foundation summarized how, in January, even as many Western nations hesitated, Ethiopia began intensive screening at Addis Ababa airport. Rwanda became the first African nation to lock down on March 21, and many other African countries soon followed: South Africa implemented its comprehensive lockdown when it had only 400 cases and two fatalities. (With a similar-sized population, Italy had more than 9,000 cases and 400 deaths when it acted.)",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5250,
+      "body_end": 5755,
+      "source_links": [
+        "https://www.bloomberg.com/news/articles/2020-03-23/south-africa-orders-three-week-lockdown-to-curb-virus-spread",
+        "https://www.cnn.com/2020/03/09/europe/coronavirus-italy-lockdown-intl/index.html",
+        "https://www.gatesfoundation.org/TheOptimist/Articles/coronavirus-solomon-zewdu-africa-response",
+        "https://www.msn.com/en-za/news/africa/coronavirus-rwanda-imposes-africas-first-lockdown/ar-BB11xxRm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00024",
+      "text": "In contrast, the number of infected cases and deaths in the US is six times that of Africa. Public health experts predicted that the pandemic would horribly affect the continent with bodies lying in the streets.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5757,
+      "body_end": 5968,
+      "source_links": [
+        "https://www.youtube.com/watch?v=qSVse07y2O4&feature=youtu.be"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-718223-b00025",
+      "text": "Clearly, Africa has proven otherwise.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5970,
+      "body_end": 6007,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "500e89e34b996e0b5f9504191d8540bb78be4a21397f94b5726a4ef03c779ec3",
+  "word_count": 905,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 6007,
+  "retrieved_at": "2026-11-16T22:27:23.138152+00:00",
+  "raw_html_sha256": "d4305e2d1897a8331b1bbf209aa081ec235160f865391f900253934abe378368",
+  "resolved_source_url": "https://globalvoices.org/2020/09/14/african-union-turns-to-biosurveillance-tech-to-curb-covid-19/",
+  "canonical_url": "https://globalvoices.org/2020/09/14/african-union-turns-to-biosurveillance-tech-to-curb-covid-19/",
+  "source_bytes": 195216,
+  "authors": [
+    {
+      "name": "Kofi Yeboah",
+      "url": "https://globalvoices.org/author/kofi-yeboah/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 718223,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "d4305e2d1897a8331b1bbf209aa081ec235160f865391f900253934abe378368",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-bd1e0c8aaeadddffc293",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-09",
+    "eligible_month_documents": 86,
+    "selected_month_documents": 72,
+    "inclusion_probability": 0.8372093023255814,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Kofi Yeboah",
+  "body_start": 455,
+  "body_end": 6462,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "ad770cc66664a3230b4bceb760c5d536370b7cddf00983cd99b862fc272f6a81",
+  "text_path": "articles/gv-718223.txt",
+  "metadata_path": "metadata/gv-718223.json",
+  "attribution": "This story by Kofi Yeboah originally appeared on Global Voices. https://globalvoices.org/2020/09/14/african-union-turns-to-biosurveillance-tech-to-curb-covid-19/",
+  "content_sha256": "4c169c67b04fecc1d583b3bd168382cc5d057ab4c4dedc08ded917b810385169",
+  "source_sha256": "d4305e2d1897a8331b1bbf209aa081ec235160f865391f900253934abe378368",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

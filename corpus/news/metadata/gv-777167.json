@@ -1,0 +1,463 @@
+{
+  "id": "gv-777167",
+  "publisher_id": 777167,
+  "source_id": "globalvoices:777167",
+  "source_url": "https://globalvoices.org/2022/12/14/colmena-an-open-source-media-platform-connecting-indigenous-and-rural-communities/",
+  "title": "Colmena: an open source media platform connecting Indigenous and rural communities",
+  "published_at": "2022-12-14T10:37:12Z",
+  "modified_at": "2023-02-28T13:18:27Z",
+  "api_author_id": 2022,
+  "api_content_sha256": "0b48cdd09317ab6f581c0ef8cd1272c7500260251018e16947caa55f9fcb69cb",
+  "api_response_sha256": "654a838386106e2262a167ae8c1bd1b81f26b6d0ad23fda191ed493f237011a9",
+  "api_retrieved_at": "2026-11-16T22:20:49.244553+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 1477,
+      "count": 1072,
+      "name": "Good News",
+      "slug": "good-news",
+      "parent": 238
+    },
+    {
+      "id": 7,
+      "count": 6125,
+      "name": "Ideas",
+      "slug": "ideas",
+      "parent": 238
+    },
+    {
+      "id": 262,
+      "count": 2092,
+      "name": "Indigenous",
+      "slug": "indigenous",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 37,
+      "count": 1643,
+      "name": "Mexico",
+      "slug": "mexico",
+      "parent": 1354
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-777167-b00001",
+      "text": "The COVID-19 pandemic impacted many community media, which often have poor internet connection. Some even had to close. But Indigenous and rural communities sought solutions to strengthen connections, solidarity, and sharing of tools and information. Colmena (“Beehive”), a digital and radio newsroom, is one of these remedies, a legacy of the COVID-19 crisis as well as the disinformation surge. It seeks to be a space for Indigenous and rural communicators and journalists from Latin America (Mexico, Guatemala, Peru, Bolivia, Ecuador, Colombia, Brazil) and Africa (Morocco, Tunisia, Ghana, Burkina Faso, and Kenya).",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 618,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777167-b00002",
+      "text": "The internet is one of the communication infrastructures that is scarce in rural territories where native peoples live. For many, this is the consequence of abandonment by states and repression by the colonizing hegemonic cultures. The Indigenous peoples have constantly sought ways to deal with the issues they have to face every day, such as the lack of basic services (electricity, water, drainage, health, education) and the communication infrastructure (internet, roads). For many of these reasons, local community-based journalism is usually carried out by radio stations.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 620,
+      "body_end": 1198,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777167-b00003",
+      "text": "Colmena is an open-source site where journalism can be carried out without the need for an internet connection or with little connectivity, with the aim to keep these communities connected in times of crisis. It stands at the intersection between being a newsroom, a community, and a means of communication. It was created with funding from DW Akademie. In Latin America, some of the members of this site are the Mexican community media network REDES, radio stations from Colombia (Ocaina), Guatemala (Radio Sayaxché), Ecuador (Remando), and several from Brazil, the Bolivian digital media outlet Muy Waso and the women-led NGO from Peru (Unión de Mujeres Aymaras del Abya Yala).",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1200,
+      "body_end": 1879,
+      "source_links": [
+        "https://blog.colmena.media/es/community/muy-waso/",
+        "https://blog.colmena.media/es/community/radio-ocaina/",
+        "https://blog.colmena.media/es/community/radio-sayaxche/",
+        "https://blog.colmena.media/es/community/redes-ac-mexico/",
+        "https://blog.colmena.media/es/community/remando/",
+        "https://blog.colmena.media/es/community/union-de-mujeres-aymaras-del-abya-yala-uma/",
+        "https://www.dw.com/en/top-stories/s-9097"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777167-b00004",
+      "text": "Global Voices interviewed Adrián López Angulo, who is part of Colmena′s media coordination in Latin America.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1881,
+      "body_end": 1989,
+      "source_links": [
+        "https://blog.colmena.media/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777167-b00005",
+      "text": "Global Voices (GV): Why was the name “Colmena” chosen, and what does it mean?",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1991,
+      "body_end": 2068,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777167-b00006",
+      "text": "> Adrián López Angulo (ALA): Es una historia que me gusta mucho y siento que ejemplifica cómo trabaja el proyecto. Se eligió de manera colectiva entre medios de América Latina y África. Cada cuál, después de varias sesiones donde se hablaron de los sueños en los territorios, propuso un nombre que significara su trabajo comunicativo. Se realizó una votación, entre todas las propuestas que surgieron y quedó Colmena. Al final el nombre se toma como metáfora, pero también fue importante a la hora de generar el diseño de la aplicación.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2070,
+      "body_end": 2606,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00007",
+      "text": "> Nos identificamos con la diversidad de colmenas que existen en el mundo. No hay sólo una forma de hacer colmena ya que los territorios son megadiversos. Ahora las abejas, y su vital labor de polinización, están siendo afectadas por los monocultivos y la industrialización acelerada que sólo tiene fines económicos. La misma reflexión entra para la comunicación hecha desde, con y para los territorios y comunidades. Existen plataformas e intereses que buscan homogeneizar los discursos, las lenguas y necesidades. Que los medios hayan elegido el nombre “Colmena”, para mí, es una apuesta por la diversidad; por entender que dentro del mundo hay muchos mundos que son necesarios de respetar y cuidar.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2608,
+      "body_end": 3309,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00008",
+      "text": "> Adrián López Angulo (ALA): How the name was selected is a story that I really like and I think that it exemplifies how the project works. The name was chosen collectively by media from Latin America and Africa. After discussing their visions from their territories, each of them proposed a name that signified their communicative work. Following a vote on all the proposals, the name Colmena (“Beehive”) was chosen. The name can be understood as a metaphor, but it was also important when creating the design of the application.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3311,
+      "body_end": 3841,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00009",
+      "text": "> We identify with the diversity of beehives that exist in the world. There is not just one way to make a hive since the regions are very diverse. The bees and their vital work of pollination are currently being affected by monocultures and accelerated industrialization that only has economic purposes. The same phenomenon affects the communication made from, with and for the territories and communities. There are platforms and interests that seek to homogenize discourses, languages, and needs. I think the fact that media have chosen the name “Colmena” represents a commitment to diversity, to the understanding that there are many perspectives which need to be respected and cared for.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3843,
+      "body_end": 4534,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00010",
+      "text": "GV: What differentiates Colmena from other media?",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 4536,
+      "body_end": 4585,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777167-b00011",
+      "text": "> ALA: Es importante entender que Colmena nace del encuentro y la comunicación entre diversos medios, organizaciones y personas. Colmena busca ser una plataforma, hecha con software libre y open source, para el fortalecimiento de la comunicación comunitaria, popular, alternativa, indígena y un etcétera amplio. Aquella comunicación que surge desde y con las personas que habitan los diversos territorios y buscan aportar a las necesidades y sueños locales.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4587,
+      "body_end": 5044,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00012",
+      "text": "> La idea es que la plataforma cuente con las herramientas necesarias para la producción de contenido: “todo en uno”. También, que funcione como un espacio de encuentro, comunicación, traducción y organización entre personas y colectivos que trabajan y luchan por procesos de comunicación que abonen a los diversos territorios; actualmente la plataforma está traducida en seis idiomas.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 5046,
+      "body_end": 5431,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00013",
+      "text": "> ALA: It is important to understand that Colmena was created based on the meeting and communication between various media, organizations and people. Colmena seeks to be an open source platform, based on free software, aimed to strengthen alternative, popular, Indigenous, community and other communication that represents people from various regions and which seeks to contribute to local needs and goals.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5433,
+      "body_end": 5839,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00014",
+      "text": "> This platform aims to be “all in one,” to have the necessary tools for the production of content. Also, to function as a space for meeting, communication, translation and organization between people and groups that work and fight for communication processes for the benefit of their communities. The platform is currently translated into six languages (Spanish, English, Portuguese, French, Kiswahili, and Arabic).",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5841,
+      "body_end": 6257,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00015",
+      "text": "GV: What issues has Colmena faced?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6259,
+      "body_end": 6293,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777167-b00016",
+      "text": "> ALA: Comenzamos en pandemia así que el trabajo a la distancia hace indispensable conexiones estables de internet o de datos móviles; algo que se vuelve complicado por condiciones geográficas, sociales e históricas que viven comunidades rurales e indígenas en el mundo. Lo anterior, más que una problemática, se convierte en una oportunidad en tanto que las comunidades y/o organizaciones pueden decidir sobre la conectividad que necesitan. Mientras las empresas piensan sus aplicaciones desde el interés económico; la mirada de Colmena es más hacia la pluralidad de voces, saberes y conocimientos para los retos globales que vivimos.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6295,
+      "body_end": 6930,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00017",
+      "text": "> ALA: We started the platform during the pandemic, when stable internet and mobile data connections are essential for remote work. But these are also complicated in the geographical, social and historical conditions in which rural and Indigenous communities live. These are not a problem, but become an opportunity as long as the communities and/or organizations can decide on the connectivity they need. While companies view these applications for their economic interest, Colmena sees them as promoting a plurality of voices, wisdom, and knowledge for the global challenges we are facing.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6932,
+      "body_end": 7523,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00018",
+      "text": "GV: What are the foundations of this journalistic space, or what is needed to be part of it?",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 7525,
+      "body_end": 7617,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777167-b00019",
+      "text": "> ALA: Se requiere como individuo, medio, colectivo y/o comunidad tener interés en crear procesos de comunicación pertinentes y relevantes para sus territorios, no sólo creando contenido, sino también apoyando con la difusión del mismo. De igual modo, tener interés en que Colmena se utilice, cuide y, así, se fortalezca. Una de las grandes enseñanzas del trabajo junto con comunidades rurales e indígenas en América Latina es que cuidar a la comunidad significa participar, aportar y crear. Cuando uno cuida, hace que la comunidad se fortalezca ante riesgos presentes y futuros; cercanos y externos.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 7619,
+      "body_end": 8219,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00020",
+      "text": "> ALA: An individual, media, collective and/or community is required to have an interest in creating pertinent and relevant communication processes for their communities, not only by creating content, but also by supporting its dissemination; also, to be interested in utilizing, caring for, and, thus, strengthening Colmena. One of the great lessons of working together with rural and Indigenous communities in Latin America is that taking care of the community means participating, contributing, and creating. When one cares, it strengthens the community in the face of present and future risks, be they near and external.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 8221,
+      "body_end": 8845,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00021",
+      "text": "GV: What is the impact of Colmena in the modern world, in rural and Indigenous areas, as well as in places where it is dangerous to be a journalist?",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 8847,
+      "body_end": 8995,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-777167-b00022",
+      "text": "> ALA: Son varios los beneficios, pero me limitaré a señalar dos que me parecen muy importantes. El primero es el asunto de la privacidad, muchos medios utilizan aplicaciones que no son seguras para su trabajo comunicativo; ahí se difunde información sensible. En Colmena se está trabajando para que la información y contenidos de los medios estén resguardados y seguros.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 8997,
+      "body_end": 9368,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00023",
+      "text": "> El segundo tiene que ver con la organización entre diferentes medios para compartir y crear contenido, con o sin conectividad. Pienso que eso puede tener un impacto positivo, en zonas con baja o nula conectividad, donde diferentes medios, colectivos o personas pueden encontrar en Colmena una plataforma para difundir y potenciar sus luchas y sueños. Colmena es la voz para los pueblos históricamente abandonados, que encontraron en la intemperie, una oportunidad para ser escuchados una vez más.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 9370,
+      "body_end": 9868,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00024",
+      "text": "> ALA: There are several benefits, but I will point out just two that are very important to me. The first is the issue of privacy, as many media use applications that are not secure for communication, especially when sensitive information is disseminated. Colmena aims to ensure that the information and content of the media are protected and secure.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 9870,
+      "body_end": 10220,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-777167-b00025",
+      "text": "> The second is organizing between different media to share and create content, with or without connectivity. I think that this can have a positive impact in areas with low or no connectivity, where different media, groups or people can use Colmena as a platform to spread and promote their struggles and goals. Colmena is the voice for the historically neglected peoples who found in the open platform an opportunity for them to be heard once again.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 10222,
+      "body_end": 10672,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "743bb5cfa83e1a52db0b86ba897c9739e1ea7cd50137dbd9f1a47410d1ac5c54",
+  "word_count": 1680,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 4,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 10672,
+  "retrieved_at": "2026-11-16T22:37:24.203422+00:00",
+  "raw_html_sha256": "f34a4cd698b65162c9e57725057f7bb4438165f5dd4ce0c239c84f2f92af68ea",
+  "resolved_source_url": "https://globalvoices.org/2022/12/14/colmena-an-open-source-media-platform-connecting-indigenous-and-rural-communities/",
+  "canonical_url": "https://globalvoices.org/2022/12/14/colmena-an-open-source-media-platform-connecting-indigenous-and-rural-communities/",
+  "source_bytes": 196493,
+  "authors": [
+    {
+      "name": "Aza Delgado Orduño",
+      "url": "https://es.globalvoices.org/author/aza-delgado-orduno/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Teodora C. Hasegan",
+      "url": "https://globalvoices.org/author/teodora-hasegan/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 777167,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "f34a4cd698b65162c9e57725057f7bb4438165f5dd4ce0c239c84f2f92af68ea",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-3d610c62db0619c76252",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-12",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Aza Delgado Orduño",
+  "body_start": 539,
+  "body_end": 11211,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "ffc13adfefe4474136a696088b5b0e3cf84c58cf6a02add72431a13225b797ad",
+  "text_path": "articles/gv-777167.txt",
+  "metadata_path": "metadata/gv-777167.json",
+  "attribution": "This story by Aza Delgado Orduño originally appeared on Global Voices. https://globalvoices.org/2022/12/14/colmena-an-open-source-media-platform-connecting-indigenous-and-rural-communities/",
+  "content_sha256": "9a956d28487d570fc2b843f03bbfebb8d50b350689c01d2d478b8f8e2fbea173",
+  "source_sha256": "f34a4cd698b65162c9e57725057f7bb4438165f5dd4ce0c239c84f2f92af68ea",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

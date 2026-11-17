@@ -1,0 +1,53 @@
+New study finds internet censorship in Turkmenistan reaches over 122,000 domains
+Written by: Nurbek Bekmurzaev
+Originally published by Global Voices: https://globalvoices.org/2023/04/12/new-study-finds-internet-censorship-in-turkmenistan-reaches-over-122000-domains/
+Published: 2023-04-12T01:00:56Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+The dictatorship in Turkmenistan does not get a lot of media and scholarly attention, although it is more than worthy of it. In the 2023 Freedom in the World Index, the country ranked in the bottom three, behind only war-torn Syria and ahead of North Korea. The issue of internet censorship is particularly acute in Turkmenistan. In 2016, the media freedom organization Reporters without Borders listed the country as one of the enemies of the internet due to its heavy censorship and information control policies. The internet speed in Turkmenistan is the slowest in the world. The authorities arrest citizens who use VPN apps to access censored content.
+
+Between 2021 and 2022, a team of computer scientists conducted the first and only large-scale research on internet censorship in Turkmenistan, in which they tested 15.5 million domains for censorship and found out that over 122,000 domains are blocked. Full research results are available here. Global Voices spoke to Nguyen Phong from the research team to learn about what content is censored, how it is done, and what methods can be employed to circumvent censorship. Currently, Phong is a postdoctoral researcher at the University of Chicago. The interview has been edited for clarity.
+
+For more, read: Like father, like son: Turkmenistan’s new president carries on his predecessor’s repressive policies
+
+Nurbek Bekmurzaev (NB): Can you tell about your research: who conducted it, when did they do it and why?
+
+> Nguyen Phong (NP): It was conducted by a team of computer scientists from the University of Chicago and University of Maryland. In the first part of the research paper, we discuss the blocking mechanism of the firewalls used in Turkmenistan. Based on their filtering behaviors, we designed a system to explore what is being blocked. Based on this understanding we then came up with techniques to bypass internet censorship in Turkmenistan.
+
+> The research started at the end of 2021 and took over one year. We read about the internet censorship in Turkmenistan and realized that no one has done any work on it at a systemic level and on a large scale. For computer scientists, these are fascinating questions to answer because I want to know how the Turkmenistan government is making use of firewalls and interference techniques to block access to the Internet.
+
+> Most people studying censorship in a particular country ask someone there to help run tests. In Turkmenistan it's difficult to use this method. It can be risky because your traffic, your internet connection, and those testing measurements will stick out from the rest of the allowed traffic. That is what motivated us to conduct this study. We asked ourselves whether we can measure censorship in this country without relying on local people.
+
+NB: What makes your research different from previous research on internet censorship in Turkmenistan?
+
+> NP: First, we don't rely on any local volunteers or any people who have a machine in the country. These prior approaches may work well but they won't scale. Some of them are one-off measurements while censorship can change every day.
+
+> The second difference is the scale of the research. We tested 15.5 million unique domains. Previous work has tested a maximum of a couple of thousand popular domains. We found out that over 122,000 domains are censored.
+
+> We conducted the empirical part of the research in September 2022. However, the system is still running and collecting data. If the firewalls behave the same way, we will have more data about what is being censored and whether we see any change over time.
+
+NB: What were the challenges of conducting this research? How did you address them?
+
+> NP: Initially, we wanted to rent a server in Turkmenistan, but we couldn't find any. If you want to rent a virtual server there, you have to go through the government, which controls everything. So we stopped the research for a while since we couldn’t rent a server there.
+
+> But then we learned that the censorship can actually be triggered from outside. You don't have to be inside the country to trigger it, you just have to come up with a sequence of network packets to trick the firewall to believe that you are communicating with an actual machine on the other side of the firewall, so it will take blocking actions. We named our system TMC, which simply stands for Turkmenistan censorship.
+
+NB: What are your main findings? How does the government censor the internet? What is the scale of censorship?
+
+> NP: I previously studied internet censorship in China, where the government blocks more than 300,000 domains. I am thus interested in investigating if Turkmenistan was engaged in the same kind of censorship on a similar scale. At the beginning I thought that Turkmenistan did not have the technology for it. Then I conducted this study and found out I was completely wrong.
+
+> The authorities block way more than people may have thought before. We found out that they have many block lists. They block at different layers, different protocols: DNS, HTTP, HTTPS. They block domains via what we call regular expressions, which is a rule based blocking system. For example, every domain name with the word “porn” is blocked in Turkmenistan. Even if it's not a pornography website, if it has the word porn in its name, it will be automatically blocked.
+
+> Because of this blocking system, there is a lot of collateral damage. There are a bunch of unrelated websites that are blocked. One of the worst blocking rules in Turkmenistan is that the government blocks every website that ends with w.org, which is WordPress. It is used by activists and bloggers, which is why they do it.
+
+> You can take a look at Figures 4, 5, and 6 in the paper to learn more about it. There is a lot of adult content that is being blocked. It is not just pornography, it is also LGBTQ+ and gender identity education content. Similarly to the Great Firewall of China, news, business and social media websites are blocked.
+
+NB: Let's move on to the second part of your research, which is about circumventing censorship. How can people that live in Turkmenistan circumvent the censorship and access blocked content?
+
+> NP: As a circumvention tool, we propose dividing a sequence of network packets. When you want to go to twitter.com, your request is blocked. But if you divide it into ‘twi’ and ‘tter.come,’ it does not recognize your request and lets you access the website. This works because of how the internet operates — the Twitter server is able to reassemble two packets into one.
+
+> Another strategy to circumvent censorship is similar to having a conversation with the server and saying: “I want to talk about twitter.com” and then right after that saying: “Never mind. I don't want to talk about it. Let's talk about something else.” The firewall thinks: “Oh, the person already changed the topic, let's forget about it.” But in fact you have already told the server that you actually want to talk about twitter.com. The part of the conversation where you say: “Hey, I don't want to talk about twitter.com,” is pronounced quietly so the server does not hear it.
+
+> We are communicating with a lot of researchers and developers who build and operate circumvention tools. We will share the results from this paper with these organizations to integrate our circumvention strategies into their tools, and eventually make them available to people in the country to use.

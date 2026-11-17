@@ -1,0 +1,496 @@
+{
+  "id": "gv-715307",
+  "publisher_id": 715307,
+  "source_id": "globalvoices:715307",
+  "source_url": "https://globalvoices.org/2020/08/10/belarus-shuts-down-internet-as-thousands-protest-election-results/",
+  "title": "Belarus shuts down internet as thousands protest election results",
+  "published_at": "2020-08-10T14:49:01Z",
+  "modified_at": "2021-06-01T16:57:46Z",
+  "api_author_id": 1658,
+  "api_content_sha256": "43ac48e410bbf35a92521a6deef9889ddc29300b634ec81c2fa1125b0a761e14",
+  "api_response_sha256": "d0d9c566ef851f55d3c5c375de27a43b42ee1a38db6cc7e8774e7fb67296eb3f",
+  "api_retrieved_at": "2026-11-16T22:20:28.059895+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 59,
+      "count": 633,
+      "name": "Belarus",
+      "slug": "belarus",
+      "parent": 57
+    },
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-715307-b00001",
+      "text": "A loudspeaker on a stage in Minsk plays Viktor Tsoi‘s “Change,” as a man in a suit tries frantically to pull out the power cable. The video recording shows that he succeeds, only for other loudspeakers nearby to continue blasting out the classic late Soviet era rock song. He flounces off, exasperated. According to onlookers, he is a Belarusian security agent from the Belarusian government attempting to silence their protest anthem.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 435,
+      "source_links": [
+        "https://globalvoices.org/2020/06/20/viktor-tsoi-the-undying-icon-of-soviet-rock-and-dissidence/",
+        "https://twitter.com/krotrus/status/1291432168720400384"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00002",
+      "text": "That anthem is being sung by Belarusians enraged at an attempt by longtime president Alexander Lukashenka to win a sixth consecutive term. Since Lukashenka took office in 1994, the country has never held a free and fair election — the latest vote, and the run-up to it, appeared to continue that trend. In May, the popular opposition blogger Syarhei Tsikhanouski who had declared his intention to run for president was arrested. A second contender for the presidency, Viktor Babarika, was arrested on charges of criminal conspiracy. A third, Valery Tsepkalo, fled the country fearing political persecution. In mid-July, Sviatlana Tsikhanouskaya, Tsikhanouski's wife, registered as a presidential candidate in his stead. If elected, she promised to rule for six months and hold free and fair elections; she drew crowds of thousands and inspired a nationwide protest movement.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 437,
+      "body_end": 1311,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00003",
+      "text": "When election day came on August 10, numerous observers on the ground wrote of ballot stuffing and falsification (the OSCE's mission was not accredited promptly enough to monitor the vote.) This morning, the country's electoral commission reported that Lukashenka had won 80.3 percent of the vote and Tsikhanouskaya 9.9 percent. Opposition supporters widely suspect electoral fraud; “I will believe my own eyes: the majority was for us,” said Tsikhanouskaya during a press conference.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1313,
+      "body_end": 1797,
+      "source_links": [
+        "https://www.theguardian.com/world/2020/aug/10/belarus-opposition-candidate-rejects-election-result-protests-svetlana-tikhanovskaya-lukashenko"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00004",
+      "text": "Last night, mass protests broke out across the country. Police responded with water cannon, rubber bullets, and stun grenades. Some 3,000 protesters have reportedly been arrested, several of whom were seriously injured. Tsikhanouskaya has denounced the violence and called for peaceful protest to continue over the course of the week.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1799,
+      "body_end": 2133,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00005",
+      "text": "Hence the August 6 video from that protest stage was a perfect illustration of how many see relations between the rulers and the ruled in Belarus today. It is also a fitting metaphor given that in the run-up to the vote, the Belarusian authorities apparently attempted to pull the plug on a larger scale — by forcing the country offline.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 2135,
+      "body_end": 2472,
+      "source_links": [
+        "https://twitter.com/krotrus/status/1291432168720400384"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00006",
+      "text": "The revolution will not be live-tweeted",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2474,
+      "body_end": 2513,
+      "source_links": [],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00007",
+      "text": "Multiple internet providers in Belarus lost routing on the morning of August 9, as polls opened; several journalists present in Belarus during election day confirmed significant disruption to LAN, WiFi, and mobile data networks. Some were able to access websites by using VPN services.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2515,
+      "body_end": 2800,
+      "source_links": [
+        "https://t.me/zatelecom/15294"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00008",
+      "text": "Users who complained about lost internet access to their service providers and mobile operators received automated messages from bots apologising for the service outages, but offering no concrete explanation.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2802,
+      "body_end": 3010,
+      "source_links": [
+        "https://gazetaby.com/post/kak-v-a1-i-beltelekome-obyasnyayut-problemy-s-inte/167602/?fbclid=IwAR23qozrfxFVnR5W4YV-SpfMUJxhSLEzN6ewjTrP4NN_3UsVFEl2ufJ9z3c"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00009",
+      "text": "> Friends! Today, for reasons beyond our control, we are observing difficulties in accessing services via mobile and fixed internet. As soon as our upstream provider restores proper service, access will be restored automatically.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3012,
+      "body_end": 3241,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-715307-b00010",
+      "text": "As of the morning of August 10, Belarusian internet users were still experiencing difficulties getting online. The country's three largest telecom providers (A1, Life, and MTS) all apologised for outages caused by “reasons outside our control,” reported the website Tut.By, a popular search engine and news aggregator.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3243,
+      "body_end": 3561,
+      "source_links": [
+        "https://t.me/tutby_official/10035"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00011",
+      "text": "The blocks also appeared to be extended to specific websites. On the morning of election day, Zubr.in was inaccessible; the latter is a grassroots driven platform which allows users to submit reports of electoral law violations via a Telegram bot. Similarly, Naviny and Tut.By which are the country's two largest independent news platforms, as well as the website of newspaper Nasha Niva, all became inaccessible just after polls closed.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3563,
+      "body_end": 4000,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00012",
+      "text": "Golos, a grassroots platform which includes an alternative vote counting system, was also the target of a DNS attack which attempted to collect users’ personal data.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4002,
+      "body_end": 4167,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00013",
+      "text": "However, this block did not come as a surprise. On July 19, mobile internet in Minsk was also interrupted for a short period during a large rally at which Tsikhanouskaya was present. By July 29, popular Telegram channels and social media accounts were already sharing user guides for how to evade impending internet shutdowns, offering links to free VPN services and advice on how to install the Tor browser.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4169,
+      "body_end": 4577,
+      "source_links": [
+        "https://t.me/belamova/7440"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00014",
+      "text": "On August 4, the popular Telegram channel NEXTA shared a screenshot of an email apparently from an employee of a Belarusian bank, advising a customer that any digital banking services were likely to be unavailable over the coming days. Furthermore, on Saturday 8, journalists from the Russian newspaper Moskovsky Komsomolets in Minsk reported that when they attempted to purchase local SIM cards, they were warned by a sales assistant that they would be unlikely to work as mobile data and internet connectivity would be shut down across the city the following day.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4579,
+      "body_end": 5144,
+      "source_links": [
+        "https://t.me/nexta_tv/3524",
+        "https://www.mk.ru/politics/2020/08/08/sotovaya-kompaniya-podtverdila-otklyuchenie-vsey-svyazi-v-minske.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00015",
+      "text": "NetBlocks, an NGO monitoring internet shutdowns worldwide, has released the following statement:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5146,
+      "body_end": 5242,
+      "source_links": [
+        "https://netblocks.org/reports/internet-disruption-hits-belarus-on-election-day-YAE2jKB3"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00016",
+      "text": "> Network telemetry from the NetBlocks internet observatory confirm that internet connectivity in Belarus has been significantly disrupted as of Sunday 9 August 2020 amid tense presidential elections. Outages increased in severity through the day producing an information vacuum as citizens struggled to establish contact with the outside world. The incident is ongoing as of Monday afternoon.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5244,
+      "body_end": 5637,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-715307-b00017",
+      "text": "An open letter expressing concern about the internet block, signed by over 20 NGOs and human rights defenders on August 10, described the attempt as follows:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5639,
+      "body_end": 5796,
+      "source_links": [
+        "https://docs.google.com/document/d/10w4sGg9h-8pC_6Yje8xLaEHiXI5FBOSp2lBnHyaOGcA/mobilebasic"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00018",
+      "text": "> During the whole day of 9 August 2020 Internet access in Belarus was wholly or partly limited. Blockings were either total or concerned specific Internet services, web sites, social networks, messaging services, whether local or global. It is alleged that the Belarusian authorities decided to block data transfer protocols which led to the disruption of connectivity of the Belarusian networks. All foreign traffic was directed through one channel only in an attempt to allow for deep-packet inspection making VPN services ineffective.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5798,
+      "body_end": 6336,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-715307-b00019",
+      "text": "The Belarusian authorities have not denied that internet users have faced difficulties. Novaya Gazeta reports that when asked to explain the interruptions, general director of Beltelekom Vadim Shaybakov suggested that large volumes of foreign traffic were to blame; the National Digital Response Centre also claimed that internet connectivity problems began due to a large wave of DDoS attacks on Belarusian telecom operators’ infrastructure.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6338,
+      "body_end": 6780,
+      "source_links": [
+        "https://novayagazeta.ru/articles/2020/08/09/86591-novost-pro-ddos-ataki-smeshnaya"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00020",
+      "text": "This may be what President Lukashenka was referring to in an August 10 interview in which he stated that Belarus's internet had been “switched off from abroad,” and that the interruptions were “not the authorities’ initiative.”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6782,
+      "body_end": 7009,
+      "source_links": [
+        "https://www.belta.by/president/view/lukashenko-internet-v-belarusi-otkljuchajut-iz-za-granitsy-eto-ne-initsiativa-vlasti-402299-2020/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00021",
+      "text": "Back to sending Telegrams",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 7011,
+      "body_end": 7036,
+      "source_links": [],
+      "source_kind": "h2",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00022",
+      "text": "The Telegram messaging service, which is particularly popular across the Russian-speaking world, appeared to remain operational during the internet outages. Although users complained of slow upload speeds, they were able to send videos of clashes between protesters and riot police to popular channels.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7038,
+      "body_end": 7340,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00023",
+      "text": "Two of these channels, NEXTA and Belamova, have proven indispensable in providing videos and updates from a country which had largely gone offline during the height of the protests (perhaps helped by the fact that NEXTA's owner is a Belarusian blogger based in neighbouring Poland). On election day, the former faced attempts to close its popular Twitter account, which was eventually restored:",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7342,
+      "body_end": 7736,
+      "source_links": [
+        "https://t.me/belamova/",
+        "https://t.me/s/nexta_tv"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00024",
+      "text": "https://twitter.com/BuddyYakov/status/1292559943598403584",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7738,
+      "body_end": 7795,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00025",
+      "text": "Several of NEXTA's posts purport to be from polling stations where Tsikhanouskaya won handily, including scans of documents with what are said to be the “real” figures in the respective districts. Therefore observers from the Internet Protection Society, a Russia-based NGO monitoring digital rights, believe that the outcome may be positive for the popular messaging platform (Moscow abandoned its long attempt to block Telegram earlier this year).",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7797,
+      "body_end": 8246,
+      "source_links": [
+        "https://t.me/leonid_volkov/1859"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00026",
+      "text": "These pieces of footage and photos from Telegram will play a crucial role in understanding the recent upheaval in Belarus, in light of restrictions on the media and other online sources. However, it is unlikely that they will cause the authorities to change their tune, days after a controversial victory. As the Ministry of the Interior's Spokeswoman Olga Chemodanova recently stated, you can't trust everything you read online.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 8248,
+      "body_end": 8677,
+      "source_links": [
+        "https://ria.ru/20200810/1575567176.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-715307-b00027",
+      "text": "Find out more about the turmoil in Belarus here",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 8679,
+      "body_end": 8726,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/belarus-in-turmoil/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "9a79e736350c74587e9a1f99ad59f0e268fb54deca0ba0241b7930403f495fc1",
+  "word_count": 1336,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 8726,
+  "retrieved_at": "2026-11-16T22:26:45.703219+00:00",
+  "raw_html_sha256": "8043e9c61bc2009b1bef19e29d60bdbd742a22c5838be36d804b0e35c42a36ce",
+  "resolved_source_url": "https://globalvoices.org/2020/08/10/belarus-shuts-down-internet-as-thousands-protest-election-results/",
+  "canonical_url": "https://globalvoices.org/2020/08/10/belarus-shuts-down-internet-as-thousands-protest-election-results/",
+  "source_bytes": 192978,
+  "authors": [
+    {
+      "name": "Maxim Edwards",
+      "url": "https://globalvoices.org/author/maxim-edwards/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 715307,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "8043e9c61bc2009b1bef19e29d60bdbd742a22c5838be36d804b0e35c42a36ce",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-6c6be3d7a56244f389a3",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-08",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Maxim Edwards",
+  "body_start": 467,
+  "body_end": 9193,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c26e51e31ad483a769abed3c9e12045c9f276944975a031486053f815a6574fe",
+  "text_path": "articles/gv-715307.txt",
+  "metadata_path": "metadata/gv-715307.json",
+  "attribution": "This story by Maxim Edwards originally appeared on Global Voices. https://globalvoices.org/2020/08/10/belarus-shuts-down-internet-as-thousands-protest-election-results/",
+  "content_sha256": "63b9e714334e524184464e02c04e62b65e8f67876e6c580bd9345ec5425ca863",
+  "source_sha256": "8043e9c61bc2009b1bef19e29d60bdbd742a22c5838be36d804b0e35c42a36ce",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

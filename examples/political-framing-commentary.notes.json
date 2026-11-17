@@ -1,0 +1,26 @@
+{
+  "d6a4a1bf97d03d50b05186eeba945dd6": {
+    "what_is_captured": "The verb ‘trampled’ makes an evaluative judgment about a previous administration. The sentence also alleges a mechanism—pressure on online platforms. DOXA captures that rhetorical and political framing; it does not independently verify that the alleged events occurred or that the characterization is fair.",
+    "attribution_check": "The record leaves attribution unknown, even though the passage appears in an executive order’s own account. Inspect the purpose section and its institutional voice before correcting that field. The order’s stance toward alleged censorship is separate from a factual finding that censorship occurred.",
+    "bias_commentary": "A stronger political-bias claim needs a declared comparator addressing the same events with relevant evidence. Different policy documents, unequal conduct or different genres cannot alone establish a double standard. Do not turn this descriptor into a hidden-ideology or left/right score.",
+    "review_question": "Which part is directly observable wording, which part is the source’s allegation, and which part would require independent factual or comparative evidence?"
+  },
+  "2d44e6da2e3f70cb876ef6f1bdc4301b": {
+    "what_is_captured": "This is an explicit policy proposition: combat antisemitism through specified legal-enforcement tools. Preserve the qualifications ‘available and appropriate’ and the reference to unlawful harassment and violence. The assessment records a policy position, rather than treating the word ‘anti-Semitism’ as evidence of the author endorsing it.",
+    "attribution_check": "The sentence explicitly says ‘the policy of the United States,’ while the model’s attribution field remains unknown. That is a useful review question about institutional voice; this walkthrough does not silently change the saved field or claim an independent adjudication.",
+    "bias_commentary": "One could compare enforcement emphasis with another supplied policy text, but this executive order and a national strategy have different purposes and levels of detail. Establish a shared comparison question and relevant context before asserting selective treatment or unfairness.",
+    "review_question": "Does the model preserve the target policy, its legal qualifiers and its responsible institutional speaker, rather than collapsing everything into a positive or negative topic label?"
+  },
+  "0380862c5a72c48383b5d4be42cff412": {
+    "what_is_captured": "The phrase ‘the oldest hatred’ supplies a historical-continuity frame, while ‘remains all too present’ gives the issue present urgency. The wording itself is the evidence for this descriptive reading. It does not establish that the framing is false, unfair or motivated by an undisclosed agenda.",
+    "attribution_check": "The qualification ‘often called’ and the quotation marks matter: the document invokes a circulating characterization. The recorded attribution remains unknown. Read how the surrounding strategy adopts or qualifies that characterization before assigning a more specific speech role.",
+    "bias_commentary": "An inquiry into emphasis could compare this historical and civic framing with other relevant policy passages, while retaining document purpose, date and genre. Independent evidence is needed for claims about prevalence or omissions; the framing observation alone supplies neither.",
+    "review_question": "Which words create urgency, which words qualify attribution, and how would a plausible alternative framing preserve the same source facts?"
+  },
+  "5aed309adcde7ac756936688b1fd7b0d": {
+    "what_is_captured": "The Government explicitly opposes a proposal for a plan focused specifically on Muslims. That is a stance toward a policy instrument. It does not by itself establish hostility toward Muslims, opposition to equal opportunity or a judgment about anyone’s private beliefs.",
+    "attribution_check": "This Government Response reproduces committee recommendations as well as government replies. The model leaves attribution unknown. Read the paired recommendation and response to check whose proposal and whose rejection are represented before editing the review record.",
+    "bias_commentary": "To assess unequal treatment, define a relevant comparison between targeted and general measures and examine the supplied rationale and outcomes. The absence of a group-specific plan, taken alone, cannot establish an unfair exclusion or double standard.",
+    "review_question": "Is the target of opposition the proposed plan, the committee’s recommendation, or a population? Does the surrounding rationale change the reading?"
+  }
+}

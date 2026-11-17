@@ -1,0 +1,388 @@
+{
+  "id": "gv-818866",
+  "publisher_id": 818866,
+  "source_id": "globalvoices:818866",
+  "source_url": "https://globalvoices.org/2024/08/20/starlink-in-sudan-a-lifeline-or-war-facilitator/",
+  "title": "Starlink in Sudan: A lifeline or war facilitator?",
+  "published_at": "2024-08-20T12:35:58Z",
+  "modified_at": "2024-08-20T13:03:08Z",
+  "api_author_id": 3222,
+  "api_content_sha256": "0d62655b121a595a48c73a7988924338efd2e870d38ff32cf1175e0fb3cdecdf",
+  "api_response_sha256": "cb7cd89fa8ec1bf9f70e43c81879cffbc92b70110fb4faa1e400a0aa8e29ae6d",
+  "api_retrieved_at": "2026-11-16T22:21:05.156563+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 141,
+      "count": 611,
+      "name": "Sudan",
+      "slug": "sudan",
+      "parent": 15
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-818866-b00001",
+      "text": "This story is part of Data Narratives, a Civic Media Observatory project that aims to identify and understand the discourse on data used for governance, control, and policy in El Salvador, Brazil, Turkey, Sudan, and India. Read more about the project here and see our public dataset for the full analysis covered in the text below.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 331,
+      "source_links": [
+        "https://airtable.com/appiUIOgqrjaNG3Od/shr6mDNcNCVlmTgdA/tblSPHuPNtnMGnujw/viwKxp5XQYyrY1YP5?blocks=hide",
+        "https://globalvoices.org/special/data-narratives-cmo/",
+        "https://globalvoices.org/special/observatory/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00002",
+      "text": "Since April 2023, Sudan has experienced armed conflict between the Sudanese Armed Forces (SAF) — the official military of the Republic of Sudan — and the Rapid Support Forces (RSF), an armed group formed in 2013, during the regime of the ousted president Omar al-Bashir. This conflict escalated dramatically when, in February 2024, the RSF seized control of Internet Service Providers (ISPs) in Khartoum, the capital city of Sudan, and imposed a telecommunication blackout in the country. The telecommunication blackout deprived Sudanese people from means of telecommunication.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 333,
+      "body_end": 910,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Omar_al-Bashir",
+        "https://sudantribune.com/article59634/",
+        "https://www.reuters.com/world/africa/sudanese-rsf-brings-down-telecoms-networks-across-sudan-sources-2024-02-05/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00003",
+      "text": "The RSF narrative, promoted by its supporters, seeks to justify the group's action by spreading the idea that they are pressuring the SAF and the ISPs to restore internet services in the Darfur region, which is largely under RSF control. However, civil society organizations have confirmed that the telecommunication blackout in the region was ordered by the SAF.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 912,
+      "body_end": 1275,
+      "source_links": [
+        "https://airtable.com/appiUIOgqrjaNG3Od/shr6mDNcNCVlmTgdA/tblSPHuPNtnMGnujw/viwKxp5XQYyrY1YP5/recMsg1x1ZgLK88T3?blocks=hide",
+        "https://www.dabangasudan.org/en/all-news/article/hadhreen-sudan-comms-shutdown-ordered-by-army-command"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00004",
+      "text": "Impact on public services and banking",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1277,
+      "body_end": 1314,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00005",
+      "text": "The ongoing war has severely damaged Sudan’s ability to offer essential public services, including national banking services. The Electronic Banking Services Company (EBS), which oversees governmental e-banking operations, lost the ability to offer clearing services, which disrupted bank-to-bank transactions. Furthermore, the RSF looted banks in several cities in Sudan, leading to long queues at bank offices and further complicating traditional banking operations.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1316,
+      "body_end": 1784,
+      "source_links": [
+        "https://www.aljazeera.com/features/2023/12/19/losing-hope-sudan-civilians-terrified-as-rsf-attacks-second-biggest-city"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00006",
+      "text": "Read More: The ongoing conflict's impact on ICT and digital transformation efforts in Sudan",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1786,
+      "body_end": 1877,
+      "source_links": [
+        "https://globalvoices.org/2023/10/21/the-ongoing-conflicts-impact-on-ict-and-digital-transformation-efforts-in-sudan/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00007",
+      "text": "This situation led people to rely on the Bank of Khartoum’s application, known as Bankak or mBOK, which continued to operate normally despite the ongoing war. Many Sudanese in the diaspora rely on Bankak to transfer funds to their loved ones in Sudan, making it an essential source of income for the people inside the country. However, the RSF imposed an internet shutdown and disrupted access to mobile banking applications like Bankak, affecting commercial activities and hindering people’s ability to meet their basic needs, including obtaining food.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1879,
+      "body_end": 2432,
+      "source_links": [
+        "https://reliefweb.int/report/sudan/sudan-internet-shutdown-threatens-delivery-humanitarian-and-emergency-services"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00008",
+      "text": "However, two of the three main Internet Service Providers (ISPs) managed to restore their services by setting up new data centers in the city of Port Sudan —the interim capital of Sudan— after one and three weeks of the disruptions, respectively. This development contributed to partially solving the crisis. Unfortunately, RSF refused to allow the ISPs to restore the telecommunication services in Khartoum and al-Gezira states, where regular service remains down until the day of writing this report.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2434,
+      "body_end": 2936,
+      "source_links": [
+        "https://www.radiotamazuj.org/en/news/article/zain-sudan-announces-gradual-resumptions-of-services-starting-3-march"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00009",
+      "text": "In Omdurman, a sub-city in Khartoum under SAF control, service restoration faced initial delays because of technical barriers. Later on, the SAF offered free-of-charge internet connection via installing Starlink in some areas in Omdurman, enabling citizens to carry out their business.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2938,
+      "body_end": 3223,
+      "source_links": [
+        "https://www.voaafrica.com/a/sudanese-turn-to-starlink-for-internet-connection/7526186.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00010",
+      "text": "RSF profiteering from Starlink in war zones",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3225,
+      "body_end": 3268,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00011",
+      "text": "It has been reported that the RSF is leveraging Starlink to offer internet access for profit in its controlled areas. The exact number of Starlink devices in these areas is unknown, but they include al-Gezira state except for Almanagil locality, and Khartoum state excluding parts from the Omdurman locality. Additionally, they are present in the South, East, West, and Middle Darfur states. Prices for one hour of connection exceeded 3000 Sudanese Pounds, approximately $2.5. Some reports mentioned that the cost of a one-hour connection can reach six dollars in some areas.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3270,
+      "body_end": 3845,
+      "source_links": [
+        "https://www.bloomberg.com/news/features/2024-03-25/elon-musk-s-spacex-sees-starlink-black-market-trade-grow-worldwide",
+        "https://www.skynewsarabia.com/middle-east/1711056-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86-%D9%81%D8%B1%D8%AD%D8%A9-%D8%A8%D8%A7%D8%B3%D8%AA%D9%85%D8%B1%D8%A7%D8%B1-%D8%AE%D8%AF%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D9%95%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D9%8A%D9%94%D9%8A-%D8%B1%D8%BA%D9%85-%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D9%88%D9%81"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00012",
+      "text": "Moreover, in February 2024, the Executive Director of al-Genina City imposed “usage fees” for those who want to operate Starlink for commercial purposes. These fees were set to be 150,000 Sudanese pounds annually, approximately $100.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3847,
+      "body_end": 4080,
+      "source_links": [
+        "https://www.darfur24.com/2024/02/26/%D8%A7%D9%84%D8%AC%D9%86%D9%8A%D9%86%D8%A9-%D8%AA%D9%81%D8%B1%D8%B6-%D8%B1%D8%B3%D9%88%D9%85%D9%8B%D8%A7-%D8%B9%D9%84%D9%89-%D8%A3%D8%AC%D9%87%D8%B2%D8%A9-%D8%B3%D8%AA%D8%A7%D8%B1%D9%84%D9%8A%D9%86/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00013",
+      "text": "Blocking telecommunications to cut off revenue",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4082,
+      "body_end": 4128,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00014",
+      "text": "Even though both sides in Sudan’s war are making use of the internet for revenue, they both actively seek to block each other’s financial resources, including telecommunication.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4130,
+      "body_end": 4307,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00015",
+      "text": "Ahmed Ben Omer, a notable Sudanese economist told Global Voices in an interview via WhatsApp: “RSF’s shutdown of telecommunication intended to stop the tax supply that finances the government and SAF together.” However, as of 2018, the telecommunication sector accounted for 14 percent of Sudan’s economy, with telecommunication value-added tax of 40 percent and other commercial taxes.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4309,
+      "body_end": 4695,
+      "source_links": [
+        "https://globalvoices.org/2020/06/08/internet-shutdowns-in-sudan-the-story-behind-the-numbers-and-statistics/",
+        "https://twitter.com/Benomer11"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00016",
+      "text": "The Wall Street Journal claimed that the SAF requested an internet company to shut down devices operating in the RSF-controlled areas, which illustrates the depth of the war’s impact on infrastructure. It is important to note that Starlink is unregulated in Sudan. However, SAF, using the Telecommunication and Postal Regulation Authority (TPRA), decided to block any imports of Starlink devices to Sudan. The decision was taken prior to the internet shutdown by the RSF.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4697,
+      "body_end": 5168,
+      "source_links": [
+        "https://www.atheernews.net/131334/",
+        "https://www.wsj.com/business/telecom/starlink-musk-ukraine-russia-sudan-satellite-communications-technology-f4fc79d9?st=mkk6ee0qeyq5y6q"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00017",
+      "text": "Starlink’s strategic role in conflict zones",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5170,
+      "body_end": 5213,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00018",
+      "text": "The U.S.-based satellite internet provider, SpaceX, has become the main internet provider in areas under RSF control. It is also used in different areas that are under SAF control and experience coverage gaps, such as mining areas. In general, Starlink’s utility extends beyond Sudan, providing essential services in various hotspots affected by armed conflict.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5215,
+      "body_end": 5576,
+      "source_links": [
+        "https://www.bloomberg.com/news/features/2024-03-25/elon-musk-s-spacex-sees-starlink-black-market-trade-grow-worldwide"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00019",
+      "text": "For example, Russian troops use Starlink on the frontlines of their conflict with Ukraine. In Lebanon, the government has established an agreement with Starlink to ensure emergency connectivity in case any catastrophe occurs in the ICT infrastructure in the country due to the complications caused by the ongoing Israel-Lebanon conflict. Similarly, it is used in Yemen, a country enduring a decade-long conflict.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5578,
+      "body_end": 5990,
+      "source_links": [
+        "https://www.beirut.com/en/694308/lebanese-govt-finalizing-agreement-with-starlink-in-case-of-emergency-situation",
+        "https://www.bloomberg.com/news/features/2024-03-25/elon-musk-s-spacex-sees-starlink-black-market-trade-grow-worldwide"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-818866-b00020",
+      "text": "Despite its benefits, the widespread use of Starlink in such sensitive scenarios poses ethical challenges. SpaceX must balance supporting human rights, with the potential misuse in criminal activities and crisis situations. SpaceX must implement robust security measures to prevent its technology from participating in prohibited acts that violate human rights, even if it is unintentional.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5992,
+      "body_end": 6382,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "3f8e3ef5dc784ee81d328b84c2258cbafa2148c6e1a9a33cad1a5a633a92ddac",
+  "word_count": 963,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 6382,
+  "retrieved_at": "2026-11-16T22:43:58.963301+00:00",
+  "raw_html_sha256": "7627d09a01b1b98e7b1a109b8fc9c85570fdff0376386a4d8806532e2da87d11",
+  "resolved_source_url": "https://globalvoices.org/2024/08/20/starlink-in-sudan-a-lifeline-or-war-facilitator/",
+  "canonical_url": "https://globalvoices.org/2024/08/20/starlink-in-sudan-a-lifeline-or-war-facilitator/",
+  "source_bytes": 188749,
+  "authors": [
+    {
+      "name": "Digital Rights Lab",
+      "url": "https://globalvoices.org/author/digilab/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 818866,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "7627d09a01b1b98e7b1a109b8fc9c85570fdff0376386a4d8806532e2da87d11",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-54d19ce8f8ecd1e62a06",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-08",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Digital Rights Lab",
+  "body_start": 438,
+  "body_end": 6820,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "f399ed2f661d2a396df638f6cc6c2d27dcad7b96500857578d7200e3e298a507",
+  "text_path": "articles/gv-818866.txt",
+  "metadata_path": "metadata/gv-818866.json",
+  "attribution": "This story by Digital Rights Lab originally appeared on Global Voices. https://globalvoices.org/2024/08/20/starlink-in-sudan-a-lifeline-or-war-facilitator/",
+  "content_sha256": "3ca9fb3f2eb5e87ce30abe7c0c574139cba7544cf647428e00b28451fa5bdb14",
+  "source_sha256": "7627d09a01b1b98e7b1a109b8fc9c85570fdff0376386a4d8806532e2da87d11",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

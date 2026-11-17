@@ -1,0 +1,463 @@
+{
+  "id": "gv-758193",
+  "publisher_id": 758193,
+  "source_id": "globalvoices:758193",
+  "source_url": "https://globalvoices.org/2022/03/08/russias-cyberwarfare-remains-limited-while-ukraine-is-crowdsourcing-its-own/",
+  "title": "Russia’s cyberwarfare remains limited, while Ukraine is crowdsourcing its own",
+  "published_at": "2022-03-08T09:12:19Z",
+  "modified_at": "2023-11-20T10:34:03Z",
+  "api_author_id": 2739,
+  "api_content_sha256": "e93f4e6df626dcfd9dda4393ecfea043e7b987ce9812133c957da380fc73d985",
+  "api_response_sha256": "1c1ca0bc12b9cd2dbfa64c668911b057f3193583dcca9487ed40436dfe167757",
+  "api_retrieved_at": "2026-11-16T22:20:42.191404+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 345,
+      "count": 344,
+      "name": "Ukrainian",
+      "slug": "ukrainian",
+      "parent": 317
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-758193-b00001",
+      "text": "Since 2008, Russia has been lauded as a cyber superpower. In the past, Russian cyber attacks have taken out electric grids, hacked elections, bankrupted corporations, and disabled military infrastructure. Nations across the world have been bracing for increased levels of cyberattacks, fearing that Russia will retaliate against sanctions by infiltrating global networks. There are no borders on the internet and even a localized attack can easily spill over to the rest of the world. Since February 24, effective cyber-attacks from Moscow are notably absent.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 559,
+      "source_links": [
+        "https://cyberlaw.ccdcoe.org/wiki/Ukrainian_parliamentary_election_interference_(2014)",
+        "https://insuretrust.com/2018/09/18/out-of-business-hackers-bankrupt-firm/",
+        "https://krebsonsecurity.com/2017/06/petya-ransomware-outbreak-goes-global/",
+        "https://krebsonsecurity.com/2022/02/russia-sanctions-may-spark-escalating-cyber-conflict/",
+        "https://www.belfercenter.org/sites/default/files/2020-09/NCPI_2020.pdf",
+        "https://www.economist.com/europe/2022/03/01/cyber-attacks-on-ukraine-are-conspicuous-by-their-absence",
+        "https://www.wired.com/story/russia-ukraine-cyberattack-power-grid-blackout-destruction/",
+        "https://www.wired.com/story/russian-hackers-attack-ukraine/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00002",
+      "text": "The litany of failures might embolden Russia to carry out more high-stakes and daring digital attacks on urban infrastructure, supply chains, and military equipment across the world. It is also possible that Russia has not utilized its full cyber capabilities. Alternatively, the Ukrainian government might be fully prepared to resist most Russian attacks. Either way, it is time to seriously assess the Russian cyber bogeyman.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 561,
+      "body_end": 988,
+      "source_links": [
+        "https://restofworld.org/2022/russias-cyber-war-ukraine-risks-death-collateral-damage/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00003",
+      "text": "Russia’s history of cyberwarfare",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 990,
+      "body_end": 1022,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00004",
+      "text": "The Russian military first used cyber support in its August 2008 invasion of Georgia. The digital attacks started weeks before the physical presence. On July 20, the website of then President Mikheil Saakashviili was targeted in a Distributed Denial of Service (DDoS) attack, which overwhelms a website with internet traffic until it is stops functioning. All the fabricated traffic to the website included the phrase “win+love+in+Russia.” The president’s website was unreachable for more than 24 hours.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1024,
+      "body_end": 1527,
+      "source_links": [
+        "https://www.jstor.org/stable/pdf/26301960.pdf?casa_token=kdmoTQ5WGTEAAAAA:ROUtnDCYlsFHkLkHc4Bs0T7RwkBbwUFt_7-tnHLSGyS3txDaB2TIYbRyEir0500LcHZoGOZcC2au8JwPZ4RwD-XdhmnPBYXe9d9TTk740TnZbGhhbqOl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00005",
+      "text": "At the start of the war with Georgia, digital attacks focused on information shaping and denial. President Saakashvili was not able to connect to a CNN interview after disruption to the Georgian Voice over Internet Protocol (VoIP) system. On August 9, DDoS attacks forced the shutdown of the National Bank of Georgia. Websites of the President and the Ministry of Foreign Affairs were defaced with side-by-side pictures of Mikheil Saakashvili and Adolf Hitler. The domestic traffic to Georgia’s government websites was also rerouted to pro-Russian news sources reporting on the war.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1529,
+      "body_end": 2111,
+      "source_links": [
+        "https://www.jstor.org/stable/pdf/26301960.pdf?casa_token=kdmoTQ5WGTEAAAAA:ROUtnDCYlsFHkLkHc4Bs0T7RwkBbwUFt_7-tnHLSGyS3txDaB2TIYbRyEir0500LcHZoGOZcC2au8JwPZ4RwD-XdhmnPBYXe9d9TTk740TnZbGhhbqOl"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00006",
+      "text": "If Russia debuted their cyber capabilities in Georgia, they perfected them in Ukraine. After Ukraine supported the European Union Association Agreement in mid-2013, Russia orchestrated Operation Armageddon to steal information from the Ukrainian government and military officials. During the Maidan Protests, when Ukrainians took to the center of Kyiv against the pro-Russian Vladimir Yanukovych, Russia launched Operation Snake to siphon data from Ukraine's government servers. Russian hackers similarly hacked the vote-tallying system before the October 2014 parliamentary elections.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2113,
+      "body_end": 2698,
+      "source_links": [
+        "https://cyberlaw.ccdcoe.org/wiki/Ukrainian_parliamentary_election_interference_(2014)",
+        "https://globalvoices.org/specialcoverage/2013-special-coverage/ukraines-euromaiden-protests/",
+        "https://www.nytimes.com/2014/03/09/world/europe/suspicion-falls-on-russia-as-snake-cyberattacks-target-ukraines-government.html",
+        "https://www.securityweek.com/operation-armageddon-cyber-espionage-campaign-aimed-ukraine-lookingglass"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00007",
+      "text": "Most of Russia’s cyberattacks since 2014 have targeted Ukraine’s critical infrastructure. In 2015 and 2016, Russian hackers infiltrated Ukrainian power grids Prykarpattyaoblenergo and ​​Chernivtsioblenergo. Both times, the power supply was remotely turned off, leaving residents of Ivano-Frankivsk (in Western Ukraine) and Kyiv without power for more than 5 hours. In 2016, the State Treasury, the Ministry of Finance, and the pension fund were shut down for 2 days.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2700,
+      "body_end": 3166,
+      "source_links": [
+        "https://www.rferl.org/a/ukraine-cyberattacks-finance-ministry-treasury-infrastructure-russia/28172004.html",
+        "https://www.wired.com/2016/03/inside-cunning-unprecedented-hack-ukraines-power-grid/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00008",
+      "text": "Due to the interconnected nature of the internet, even local cyberattacks can quickly become global. The June 27, 2017, Petya Virus designed for Ukrainian banks, electrical companies, news outlets, and government websites became the “most devastating cyberattack in history.” In a matter of days, the virus moved from radiation monitoring systems in Chernobyl to the global shipping company Maersk, and hundreds more. The attack was estimated to have cost USD 10 billion globally.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3168,
+      "body_end": 3648,
+      "source_links": [
+        "https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00009",
+      "text": "Russia’s digital invasion of Ukraine",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3650,
+      "body_end": 3686,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00010",
+      "text": "The early days of the invasion in 2022 suggest that Russia is using the same playbook it used in Georgia. Cyber attacks focused on government websites, media, and critical financial infrastructure. But, since February 24, most of the digital attacks have been thwarted. Ukraine is employing vigilante cyber groups to both defend its own systems and attack Russia’s.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3688,
+      "body_end": 4053,
+      "source_links": [
+        "https://time.com/6153902/russia-major-cyber-attacks-invasion-ukraine/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00011",
+      "text": "Similar to Russia’s war in Georgia, Russia preempted its invasion of Ukraine with an orchestrated cyber-effort. On January 14, 2022 a Russian attack took down more than 70 Ukrainian government websites. The sites were defaced with pictures in Ukrainian, Russian, and Polish stating “be afraid and wait for the worst… this is for your past, present, and future… and for the historical lands.” All the sites were restored within a few hours.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4055,
+      "body_end": 4494,
+      "source_links": [
+        "https://www.reuters.com/world/europe/expect-worst-ukraine-hit-by-cyberattack-russia-moves-more-troops-2022-01-14/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00012",
+      "text": "A parallel attack took place on January 13, 2022. The Microsoft Threat Intelligence Center (MSTIC) detected Whisper Gate, malware designed to permanently delete all files on a victim’s computer. MSTIC noted the malware was intended for “government, non-profit, and information technology organizations, all based in Ukraine.” Within just a few hours, Microsoft released a patch to delete the infectious malware.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4496,
+      "body_end": 4907,
+      "source_links": [
+        "https://www.microsoft.com/security/blog/2022/01/15/destructive-malware-targeting-ukrainian-organizations/",
+        "https://www.nytimes.com/2022/02/28/us/politics/ukraine-russia-microsoft.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00013",
+      "text": "One day before the invasion, Russia deployed two malware operations, once more targeting the Ukrainian government. The malware code of Isaac Wiper and Hermetic Wiper suggests that the attacks were planned months in advance. The code was spotted in targeted computers since at least December 28, 2021. The malware was intended to wipe data off the hard drive and quickly spread across systems.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4909,
+      "body_end": 5301,
+      "source_links": [
+        "https://www.eset.com/int/about/newsroom/press-releases/research/eset-research-ukraine-hit-by-destructive-attacks-before-and-during-the-russian-invasion-with-hermet/",
+        "https://www.welivesecurity.com/2022/03/01/isaacwiper-hermeticwizard-wiper-worm-targeting-ukraine/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00014",
+      "text": "Cyberwarfare is mostly intended to hijack the flow of information and disrupt vital services. Since the beginning of the war, Ukraine has not suffered from any major disruptions. Ukrainian internet continues to work, President Vladimir Zelensky continues to dominate the narrative of the war through smartphone dispatches, and the world has mostly banned Russian state-backed news channels.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5303,
+      "body_end": 5693,
+      "source_links": [
+        "https://theconversation.com/why-zelenskyys-selfie-videos-are-helping-ukraine-win-the-pr-war-against-russia-178117",
+        "https://www.businesstoday.in/latest/in-focus/story/heres-why-russian-cyberattacks-in-ukraine-have-proven-to-be-ineffective-324439-2022-03-02",
+        "https://www.reuters.com/world/europe/eu-bans-rt-sputnik-banned-over-ukraine-disinformation-2022-03-02/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00015",
+      "text": "Most importantly, unlike the war in Georgia and Crimea, Russia’s information onslaught is not working in Ukraine. Ukrainians are more united than ever in rejecting Russian disinformation. Ukraine’s major media companies have come together on one platform to broadcast one cohesive narrative. Official telegram channels are mostly successful in blocking Russian bots and communicating official government reporting.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5695,
+      "body_end": 6109,
+      "source_links": [
+        "https://deadline.com/2022/02/ukraine-media-groups-join-together-for-united-news-urge-world-to-turn-off-russian-channels-1234960684/",
+        "https://www.nytimes.com/2022/03/03/world/europe/russian-soldier-text-ukraine.html",
+        "https://www.wired.co.uk/article/telegram-ukraine-russia-channels-signal"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00016",
+      "text": "If anything, Russia has become the biggest victim of cyberwarfare, not Ukraine. Russian media companies ​​TASS, Kommersant, Izvestia, Fontanka, Forbes, RBK. and more than 300 government websites were temporarily disabled on February 28, displaying anti-Putin messages. Russian TV channels were hijacked to play Ukrainian songs. Documents from Belarusian weapons manufacturers and Russian Sberbank were leaked.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6111,
+      "body_end": 6520,
+      "source_links": [
+        "https://www.cnbc.com/2022/03/01/how-is-anonymous-attacking-russia-disabling-and-hacking-websites-.html",
+        "https://www.independent.co.uk/news/world/europe/ukraine-russia-kremlin-website-hacked-b2024046.html",
+        "https://www.rferl.org/a/russia-websites-hacked-anonymous/31728186.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00017",
+      "text": "The truth about the war in Ukraine is being disseminated across Russia in every way possible. Disabled Russian websites displayed the message “Dear citizens. We urge you to stop this madness, do not send your sons and husbands to certain death. Putin is forcing us to lie and is putting us in danger.” On March 7, State TV channels across Russia were hacked to show footage of the war in Ukraine.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6522,
+      "body_end": 6918,
+      "source_links": [
+        "https://kyivindependent.com/uncategorized/hacking-group-anonymous-interrupts-russian-state-tv-programs-with-footage-of-russias-full-scale-invasion-of-ukraine/",
+        "https://www.reuters.com/world/handful-russian-media-websites-display-anti-putin-message-after-hack-2022-02-28/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00018",
+      "text": "The Ukrainian government has been loudly requesting global assistance in cyberspace. The Ukrainian Minister of Digital Transformation Mykhailo Fedorov called on hackers across the world to join the digital fight against Russia. On February 24, hacker forums across the world began recruiting volunteers with the message “Ukrainian cybercommunity! It's time to get involved in the cyber defense of our country.”",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6920,
+      "body_end": 7330,
+      "source_links": [
+        "https://www.reuters.com/world/exclusive-ukraine-calls-hacker-underground-defend-against-russia-2022-02-24/",
+        "https://www.wsj.com/articles/volunteer-hackers-join-ukraines-fight-against-russia-11646082782?mod=article_inline"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00019",
+      "text": "The digital war in Ukraine has turned into a global free-for-all. The independent and state-backed attacks in both Russia and Ukraine will likely create more confusion on the ground. Both organizing and attributing attacks is becoming impossible. While it remains unclear if Russia’s government intends or is able to carry out more devastating cyberattacks, the whole world is watching Ukrainian internet networks.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 7332,
+      "body_end": 7746,
+      "source_links": [
+        "https://www.nytimes.com/2022/03/04/technology/ukraine-russia-hackers.html",
+        "https://www.wsj.com/articles/the-russia-ukraine-cyberwar-could-outlast-the-shooting-war-11646456442"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00020",
+      "text": "Experts from Israel, the United States, and Singapore have all warned that the cyber attacks are just beginning, and that it will inevitably morph into a global problem. James Sullivan of UK's defense and security think tank RUSI notes, “We still have to be very mindful that Russia, with the right strategic objective and the right amount of resources, would no doubt focus on Western infrastructure if that was going to give it an advantage.”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 7748,
+      "body_end": 8192,
+      "source_links": [
+        "https://news.sky.com/story/ukraine-invasion-russia-has-not-yet-launched-a-cyber-war-but-it-doesnt-mean-one-isnt-coming-12556619",
+        "https://www.wsj.com/articles/the-russia-ukraine-cyberwar-could-outlast-the-shooting-war-11646456442"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-758193-b00021",
+      "text": "For more information about this topic, see our special coverage Russia invades Ukraine.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 8194,
+      "body_end": 8281,
+      "source_links": [
+        "https://globalvoices.org/special/russia-invades-ukraine/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "63c01f4327657a5c2236a24e2303e0b7203e792e23d138f88f5adcbf877aa51d",
+  "word_count": 1247,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 3,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 8281,
+  "retrieved_at": "2026-11-16T22:34:00.677109+00:00",
+  "raw_html_sha256": "33a003195a8b3ad3ef19826ffc0702a55f6a71c9b514a54b75c8fb936beaabe0",
+  "resolved_source_url": "https://globalvoices.org/2022/03/08/russias-cyberwarfare-remains-limited-while-ukraine-is-crowdsourcing-its-own/",
+  "canonical_url": "https://globalvoices.org/2022/03/08/russias-cyberwarfare-remains-limited-while-ukraine-is-crowdsourcing-its-own/",
+  "source_bytes": 201218,
+  "authors": [
+    {
+      "name": "Global Voices Central & Eastern Europe",
+      "url": "https://globalvoices.org/author/cee/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 758193,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "33a003195a8b3ad3ef19826ffc0702a55f6a71c9b514a54b75c8fb936beaabe0",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-13aaa5567f1a248c9540",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-03",
+    "eligible_month_documents": 105,
+    "selected_month_documents": 88,
+    "inclusion_probability": 0.8380952380952381,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Global Voices Central & Eastern Europe",
+  "body_start": 514,
+  "body_end": 8795,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "710c950ec51fd2e454a47e4a7c7b78323fa48ef80773feafb75f79c215ab6b6e",
+  "text_path": "articles/gv-758193.txt",
+  "metadata_path": "metadata/gv-758193.json",
+  "attribution": "This story by Global Voices Central & Eastern Europe originally appeared on Global Voices. https://globalvoices.org/2022/03/08/russias-cyberwarfare-remains-limited-while-ukraine-is-crowdsourcing-its-own/",
+  "content_sha256": "c273c2220edae0995e5e9ef6685863544165f52400958cfd0db8e08bd7641e45",
+  "source_sha256": "33a003195a8b3ad3ef19826ffc0702a55f6a71c9b514a54b75c8fb936beaabe0",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

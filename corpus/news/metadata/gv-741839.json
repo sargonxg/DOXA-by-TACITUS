@@ -1,0 +1,504 @@
+{
+  "id": "gv-741839",
+  "publisher_id": 741839,
+  "source_id": "globalvoices:741839",
+  "source_url": "https://globalvoices.org/2021/07/23/global-investigation-reveals-pegasus-project-identified-in-azerbaijan-and-elsewhere/",
+  "title": "Global investigation reveals Pegasus Project identified in Azerbaijan and elsewhere",
+  "published_at": "2021-07-23T11:36:50Z",
+  "modified_at": "2021-07-26T13:15:49Z",
+  "api_author_id": 799,
+  "api_content_sha256": "3013d809b70385d883780f029bbfcaf0ce1088d4253363d7f3d28c831315d425",
+  "api_response_sha256": "0d1a36035a88ee5b3f9fa91c4e2a7d7b5ec96f6dedf1bcb5a8f43e8f39bffdae",
+  "api_retrieved_at": "2026-11-16T22:20:36.847703+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 79,
+      "count": 1204,
+      "name": "Azerbaijan",
+      "slug": "azerbaijan",
+      "parent": 288
+    },
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 288,
+      "count": 7347,
+      "name": "Central Asia &amp; Caucasus",
+      "slug": "central-asia-caucasus",
+      "parent": 219
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 317,
+      "count": 1323,
+      "name": "LANGUAGES",
+      "slug": "languages",
+      "parent": 0
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 238,
+      "count": 1673,
+      "name": "TOPICS",
+      "slug": "topics",
+      "parent": 0
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-741839-b00001",
+      "text": "Days after a global investigation titled the Pegasus Project exposed how an intrusive software, called Pegasus, was used to target journalists, rights defenders, activists, and political leaders across the world, one country that utilized this technology has remained quiet. Authorities in Azerbaijan have so far refrained from making any statements about its surveillance policies or ties to the Israeli surveillance company that sells Pegasus software, NSO Group. According to leaked data, around 1,000 phone numbers belonging to users in Azerbaijan were identified — among them, prominent journalists, editors, rights defenders, lawyers, and political activists, as well as their friends and family members.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 710,
+      "source_links": [
+        "https://forbiddenstories.org/pegasus-the-new-global-weapon-for-silencing-journalists/",
+        "https://www.occrp.org/en/the-pegasus-project/life-in-azerbaijans-digital-autocracy-they-want-to-be-in-control-of-everything"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00002",
+      "text": "Pegasus Project",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 712,
+      "body_end": 727,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00003",
+      "text": "> A successful Pegasus infection gives NSO customers access to all data stored on the device. An attack on a journalist could expose a reporter’s confidential sources as well as allowing NSO’s government client to read their chat messages, harvest their address book, listen to their calls, track their precise movements and even record their conversations by activating the device’s microphone.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 729,
+      "body_end": 1124,
+      "source_links": [
+        "https://www.theguardian.com/world/2021/jul/18/ft-editor-roula-khalaf-among-180-journalists-targeted-nso-spyware"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741839-b00004",
+      "text": "> Pegasus infections can be achieved through so-called “zero-click” attacks, which do not require any interaction from the phone’s owner in order to succeed.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1126,
+      "body_end": 1283,
+      "source_links": [
+        "https://www.theguardian.com/news/2021/jul/18/what-is-pegasus-spyware-and-how-does-it-hack-phones"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741839-b00005",
+      "text": "For months Paris-based journalism non-profit Forbidden Stories, Amnesty International Security Lab, and more than 80 journalists from 17 media outlets collaborated to establish the identities of those targeted by the intrusive NSO software after leaked data revealed that some 50,000 phone numbers across 50 countries were potentially targeted. So far, the groups have established where Pegasus was put to use: Bahrain, Hungary, India, Kazakhstan, Mexico, Morocco, Rwanda, Saudi Arabia, and the United Arab Emirates; and have identified 14 world leaders plus 180 journalists, editors, and freelancers who were targeted.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1285,
+      "body_end": 1904,
+      "source_links": [
+        "https://www.theguardian.com/news/2021/jul/18/huge-data-leak-shatters-lie-innocent-need-not-fear-surveillance",
+        "https://www.theguardian.com/news/video/2021/jul/19/pegasus-the-spyware-technology-that-threatens-democracy-video"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00006",
+      "text": "Not all of the 50,000 numbers were subject to an attempted or successful hack. And in the absence of a forensic examination, it is impossible to tell whether a device was hacked. Amnesty International Security Lab was able to carry out forensic examinations on 67 phones so far, out of which 37 showed signs of Pegasus.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1906,
+      "body_end": 2225,
+      "source_links": [
+        "https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/",
+        "https://www.occrp.org/en/the-pegasus-project/about-the-project",
+        "https://www.theguardian.com/world/2021/jul/20/emmanuel-macron-identified-in-leaked-pegasus-project-data"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00007",
+      "text": "The NSO Group",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2227,
+      "body_end": 2240,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00008",
+      "text": "> NSO Group insists that it sells its software only to governments, suggesting that the clients in these countries represent intelligence services, law enforcement agencies, or other official bodies.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2242,
+      "body_end": 2441,
+      "source_links": [
+        "https://www.occrp.org/en/the-pegasus-project/about-the-project"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741839-b00009",
+      "text": "NSO Group was set up in Israel in 2010 by Niv Carmi, Shalev Hulio, and Omri Lavie. On its website, the company claims to develop technology “to prevent and investigate terror and crime” but the surveillance technology appears to have been used against dissidents, journalists, and activists across the world. Citizen Lab investigations reveal that NSO's Pegasus was used against dissidents at least since 2016 in numerous countries.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2443,
+      "body_end": 2875,
+      "source_links": [
+        "https://citizenlab.ca/2018/09/hide-and-seek-tracking-nso-groups-pegasus-spyware-to-operations-in-45-countries/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00010",
+      "text": "In 2019, the company came under fire when accusations emerged that it was infecting users’ devices with malware by hacking WhatsApp. In response, WhatsApp and its parent company Facebook sued the NSO Group. In July 2020, a U.S. federal court judge ruled that the lawsuit against NSO Group can proceed despite the company's defense that “its business dealings with foreign governments, granted it immunity from lawsuits filed in U.S. courts under the Foreign Sovereign Immunity Act (FSIA).” In December 2020, Microsoft, Google, Internet Association, GitHub, and LinkedIn joined as parties in Facebook's ongoing legal battle against NSO. The most recent hearing took place in April 2021 and according to Politico the NSO Group appeared “unlikely to prevail.” Josh Gerstein, Politico's Senior Legal Affairs Reporter noted:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2877,
+      "body_end": 3696,
+      "source_links": [
+        "https://techcrunch.com/2020/07/16/federal-court-rules-whatsapp-and-facebooks-malware-exploit-case-against-nso-group-can-proceed/",
+        "https://www.calcalistech.com/ctech/articles/0,7340,L-3772725,00.html",
+        "https://www.ft.com/content/4da1117e-756c-11e9-be7d-6d846537acab?segmentid=acee4131-99c2-09d3-a635-873e61754ec6",
+        "https://www.lawfareblog.com/why-nso-group-asserting-sovereign-immunity-whatsapp-litigation#:~:text=On%20April%202%2C%20private%20surveillance,cellphones%20running%20the%20WhatsApp%20application.",
+        "https://www.politico.com/news/2021/04/12/nso-falters-lawsuit-whatsapp-hacking-481073",
+        "https://www.politico.com/staff/joshgerstein",
+        "https://www.thequint.com/news/law/pegasus-spyware-decoding-whatsapps-legal-battle-against-nso#read-more"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00011",
+      "text": "> Even if the firm’s effort to head off the suit fails, it could continue to fight the case in the trial court, but will likely be forced to turn over documents about its development of Pegasus and make executives available for depositions.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3698,
+      "body_end": 3938,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741839-b00012",
+      "text": "In addition to NSO's legal battles, the company has faced criticism from various international human rights organisations.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3940,
+      "body_end": 4062,
+      "source_links": [],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00013",
+      "text": "In April of this year, nine international human rights and press freedom organizations penned a letter to Chaim Gelfand, Vice-President for Compliance at NSO Group, asking the company “to deliver on its commitments to improve transparency about sales of its advanced spyware, and due diligence to protect human rights.” The letter also rejected the NSO Group's claims “of their unverified compliance with human rights standards.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4064,
+      "body_end": 4493,
+      "source_links": [
+        "https://cpj.org/2021/04/cpj-urging-nso-curb-spyware-abuse/",
+        "https://rsf.org/en/news/nso-group-hasnt-kept-its-promises-human-rights-rsf-and-other-ngos-say",
+        "https://www.accessnow.org/cms/assets/uploads/2021/04/Rights-groups_NSO-Group-continues-to-fail-in-human-rights-compliance_27-April-2021.pdf",
+        "https://www.accessnow.org/nso-group-actions-louder-than-words-human-rights/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00014",
+      "text": "Ron Deibert, Director of the Citizen Lab at the University of Toronto, considers NSO's claims that they adhere to human rights standards as “pure theater.”",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4495,
+      "body_end": 4650,
+      "source_links": [
+        "https://www.accessnow.org/nso-group-actions-louder-than-words-human-rights/",
+        "https://www.nsogroup.com/wp-content/uploads/2021/06/ReportBooklet.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00015",
+      "text": "> The spectacle might be a mildly entertaining farce were it not for the very real and gruesome way in which its spyware is abused by the world’s worst autocrats. NSO’s irresponsible actions have proven their words are nothing more than hand-waving distractions from the harsh reality of the unregulated marketplace in which they, and their owners, thrive and profit.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4652,
+      "body_end": 5019,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-741839-b00016",
+      "text": "Two years ago, the then-UN special rapporteur on freedom of expression, David Kaye, called for a moratorium on the sale of NSO-style spyware to governments until viable export controls could be put in place. Despite his warnings, the sale of surveillance software continued without any transparency or accountability.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5021,
+      "body_end": 5338,
+      "source_links": [
+        "https://www.theguardian.com/news/2021/jul/18/huge-data-leak-shatters-lie-innocent-need-not-fear-surveillance"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00017",
+      "text": "The most recent investigation not only brings the company to the spotlight but also highlights the importance of control mechanisms imposed on spyware companies.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5340,
+      "body_end": 5501,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00018",
+      "text": "Azerbaijan chapter",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5503,
+      "body_end": 5521,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00019",
+      "text": "According to the Organized Crime and Corruption Reporting Project (OCCRP), which was among the 17 media partners involved in the global Pegasus investigation, out of the 1,000 phone numbers from Azerbaijan, the project researchers were so far able to identify 245 phone numbers that were targeted, a fifth of which belonged to reporters, editors, or media company owners. The list also includes activists and their family members.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5523,
+      "body_end": 5953,
+      "source_links": [
+        "https://www.occrp.org/en/the-pegasus-project/life-in-azerbaijans-digital-autocracy-they-want-to-be-in-control-of-everything"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00020",
+      "text": "Meydan TV, a Berlin-based online news platform, spoke with some of the targeted community members. “Anyone who is engaged in civil society work in Azerbaijan is aware they are under surveillance. But this program is a spyware. And its capabilities such as turning on microphone and camera, while in an intimate setting with friends or family members, without the owner's awareness, is a direct violation of privacy,” said Bakhtiyar Hajiyev, a political activist.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5955,
+      "body_end": 6417,
+      "source_links": [
+        "https://www.meydan.tv/az/article/niye-ilham-eliyev-meni-dinlemelidir/?ref=list-video"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00021",
+      "text": "Among the dissident family members targeted by the spyware is Shura Amiraslanova, the mother of former political prisoner Giyas Ibrahimov, known as one of the “graffiti prisoners” who was jailed after spraying graffiti on the statue of the former Azerbaijan President Heydar Aliyev and later sentenced to ten years in jail on questionable drug possession charges. “I guess they thought that if I fully stand behind my son, I should be watched too. But why? What can I do?” said Amiraslanova in an interview with Meydan TV.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6419,
+      "body_end": 6941,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00022",
+      "text": "Speaking to Azerbaijan Service for Radio Free Europe, Elshad Hajiyev, the spokesperson for the Ministry of Interior Affairs, dismissed the investigation as “baseless” assuring that “the ministry is willing to investigate any allegations upon request.”",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6943,
+      "body_end": 7194,
+      "source_links": [
+        "https://www.youtube.com/watch?v=1sV6GrM6hkA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-741839-b00023",
+      "text": "In the meantime, the NSO Group denies all of the accusations, “the report by Forbidden Stories is full of wrong assumptions and uncorroborated theories that raise serious doubts about the reliability and interests of the sources,” read a company statement published on its website. In another statement issued on July 21, 2021, the group said, “enough was enough,” and that it will no longer respond to media queries, participating in “the vicious and slanderous campaign.”",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7196,
+      "body_end": 7669,
+      "source_links": [
+        "https://www.nsogroup.com/Newses/enough-is-enough/",
+        "https://www.nsogroup.com/Newses/following-the-publication-of-the-recent-article-by-forbidden-stories-we-wanted-to-directly-address-the-false-accusations-and-misleading-allegations-presented-there/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5eee97dad378208fa57a19eae6a07bc24af440b1cf39dadac4faefb8565b0d20",
+  "word_count": 1180,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7669,
+  "retrieved_at": "2026-11-16T22:31:18.675246+00:00",
+  "raw_html_sha256": "018f1461a9677c13fc4461ed7794c535287e03339c63d64b24de3e0d9955d2be",
+  "resolved_source_url": "https://globalvoices.org/2021/07/23/global-investigation-reveals-pegasus-project-identified-in-azerbaijan-and-elsewhere/",
+  "canonical_url": "https://globalvoices.org/2021/07/23/global-investigation-reveals-pegasus-project-identified-in-azerbaijan-and-elsewhere/",
+  "source_bytes": 193927,
+  "authors": [
+    {
+      "name": "Arzu Geybullayeva",
+      "url": "https://globalvoices.org/author/arzu-geybullayeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 741839,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "018f1461a9677c13fc4461ed7794c535287e03339c63d64b24de3e0d9955d2be",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-8ce9930be60baa37d15d",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-07",
+    "eligible_month_documents": 104,
+    "selected_month_documents": 87,
+    "inclusion_probability": 0.8365384615384616,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Arzu Geybullayeva",
+  "body_start": 507,
+  "body_end": 8176,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "3b37161cb256b4e4def78502a28db79fe3f770d4894ff19fb1bf4ac9d82eb365",
+  "text_path": "articles/gv-741839.txt",
+  "metadata_path": "metadata/gv-741839.json",
+  "attribution": "This story by Arzu Geybullayeva originally appeared on Global Voices. https://globalvoices.org/2021/07/23/global-investigation-reveals-pegasus-project-identified-in-azerbaijan-and-elsewhere/",
+  "content_sha256": "b7228f3b9b6cadec4ece78c403906cc1f62120708d6f94f5765245768c727bb9",
+  "source_sha256": "018f1461a9677c13fc4461ed7794c535287e03339c63d64b24de3e0d9955d2be",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

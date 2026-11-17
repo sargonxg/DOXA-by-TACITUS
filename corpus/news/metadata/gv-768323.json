@@ -1,0 +1,364 @@
+{
+  "id": "gv-768323",
+  "publisher_id": 768323,
+  "source_id": "globalvoices:768323",
+  "source_url": "https://globalvoices.org/2022/07/31/indonesia-blocks-yahoo-paypal-and-gaming-websites-over-new-licensing-rules/",
+  "title": "Indonesia blocks Yahoo, Paypal, and gaming websites over new licensing rules",
+  "published_at": "2022-07-31T14:42:03Z",
+  "modified_at": "2022-07-31T20:01:10Z",
+  "api_author_id": 261,
+  "api_content_sha256": "cfb0cbfa6323d94c2ee70bd9f5aa43fdaeb6e52bd2e95dc2b7c6d94481ddbd43",
+  "api_response_sha256": "08b3517ae10ada9fc287561a5a5d06549f4a3614acf67915ee99ce779e1c37fe",
+  "api_retrieved_at": "2026-11-16T22:20:46.276788+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 51,
+      "count": 1106,
+      "name": "Indonesia",
+      "slug": "indonesia",
+      "parent": 16
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-768323-b00001",
+      "text": "Indonesia’s Ministry of Communication and Information Technology (Kominfo) blocked at least eight websites including Yahoo, PayPal, and gaming platform Steam for failing to register with the government.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 202,
+      "source_links": [
+        "https://twitter.com/DamarJuniarto/status/1553194095379562496",
+        "https://www.thejakartapost.com/indonesia/2022/07/30/govt-blocks-yahoo-steam-paypal-for-failing-to-comply-with-licensing-policy.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768323-b00002",
+      "text": "The mandatory registration of private electronic systems operators (ESOs) is stipulated in the Ministerial Regulation 5 (MR5) issued in December 2020. Its amended version, Ministerial Regulation 10 (MR10), was released in May 2021.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 204,
+      "body_end": 435,
+      "source_links": [
+        "https://jdih.kominfo.go.id/produk_hukum/view/id/774/t/peraturan+menteri+komunikasi+dan+informatika+nomor+10+tahun+2021"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768323-b00003",
+      "text": "Both MR5 and MR10 have been consistently opposed by the media, civil society groups, and human rights advocates for containing provisions that pose a threat to freedom of expression.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 437,
+      "body_end": 619,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768323-b00004",
+      "text": "The deadline for the mandatory registration was set for July 27, 2022.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 621,
+      "body_end": 691,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768323-b00005",
+      "text": "Several reports have confirmed the blocking of PayPal and gaming platforms in the country.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 693,
+      "body_end": 783,
+      "source_links": [
+        "https://netblocks.org/reports/indonesia-cracks-down-on-unlicensed-online-platforms-and-services-XB7JJQA7"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768323-b00006",
+      "text": "In 2021, local and global civil society groups urged Indonesian authorities to review and repeal MR5 and MR10 since the registration of ESOs could lead to violations of data privacy and other digital rights. They reiterated their opposition this year as they warned against the “authoritarian enforcement” of the regulation:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 785,
+      "body_end": 1109,
+      "source_links": [
+        "https://safenet.or.id/global-coalition-of-ngos-repeal-mr5-and-its-amendment-mr10/",
+        "https://safenet.or.id/joint-statement-indonesia-minister-of-ict-must-repeal-mr5/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768323-b00007",
+      "text": "> MR5 and MR10, as well as their authoritarian enforcement against private ESO, seriously disrupt the civic space as they could erase key channels for individuals to exercise their online freedoms.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1111,
+      "body_end": 1308,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-768323-b00008",
+      "text": "The Alliance of Independent Journalists (AJI), a group of Indonesian journalists, noted that registered ESOs are also obliged to remove content and enforce takedown orders issued by the government.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1310,
+      "body_end": 1507,
+      "source_links": [
+        "https://aji.or.id/read/press-release/1410/indonesia-ministerial-regulation-5-threatens-to-restrict-press-and-internet-freedom.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768323-b00009",
+      "text": "> The obligation of registration will open the gate for the government to intervene and censor. It's not just an administrative matter.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1509,
+      "body_end": 1644,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-768323-b00010",
+      "text": "It added that the order for ESOs to remove content that causes “public unrest” and “disturb[s] public order” can be abused to silence legitimate criticism:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1646,
+      "body_end": 1801,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768323-b00011",
+      "text": "> It can be interpreted to target criticisms against authorities, state bodies, and law enforcers. The regulation also doesn't mention the mechanism of public complaints and the independent parties which are authorized to check the contents.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1803,
+      "body_end": 2044,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-768323-b00012",
+      "text": "Michael Caster, the Asia Digital Programme Manager at ARTICLE 19, wrote about the other obligations of ESOs that could potentially expose the data of millions of internet users in the country:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2046,
+      "body_end": 2238,
+      "source_links": [
+        "https://thediplomat.com/2022/07/internet-freedom-in-indonesia-is-teetering-on-a-razors-edge/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768323-b00013",
+      "text": "> In a blow to the right to privacy, digital operators are also required to provide KOMINFO with, among other things, a guarantee that law enforcement will be able to access their electronic systems and data. It is the responsibility of the local contact person to provide access or face penalties.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2240,
+      "body_end": 2538,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-768323-b00014",
+      "text": "An online petition has been circulated to oppose MR5 and MR10. The hashtags #ProtesNetizen (Protest Netizens) and #BlokirKominfo (Block Kominfo) trended on social media as netizens criticized the blocking of popular gaming and payment platforms. Below are examples of popular memes and angry reactions on Twitter:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2540,
+      "body_end": 2853,
+      "source_links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSdCJAMKTSkjMHBjytB0MNmFce3qR9pVDqDMqqGfyE3-Vad8PA/viewform",
+        "https://twitter.com/Natsu_yuki1/status/1553358959054323712",
+        "https://twitter.com/hashtag/BlokirKominfo?src=hashtag_click",
+        "https://twitter.com/hashtag/ProtesNetizen?src=hashtag_click"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768323-b00015",
+      "text": "Critics say the blocking of websites reflects the decline of digital freedom in the country. Aside from MR5 and MR10, laws like the “Informasi dan Transaksi Elektronik” (Electronic and Information Transactions Law) have allowed the government to throttle internet services and arrest journalists for disrupting the peace and publishing “prohibited content.”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2855,
+      "body_end": 3212,
+      "source_links": [
+        "https://globalvoices.org/2022/05/09/does-indonesia-have-a-healthy-free-press-not-according-to-west-papua/",
+        "https://kominfu.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-768323-b00016",
+      "text": "Around 200 foreign and 8,000 domestic private ESOs managed to beat the deadline on July 27. Authorities said they will temporarily unblock some websites that facilitate payments to allow users to withdraw their money and transfer to other platforms.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3214,
+      "body_end": 3463,
+      "source_links": [
+        "https://twitter.com/amasna/status/1553353442642755584"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "6f6972fd99cb861c4e46dbf3125e3e67a77443d62c8f5adf466c908bc8c589fe",
+  "word_count": 526,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 4,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 3463,
+  "retrieved_at": "2026-11-16T22:35:38.808452+00:00",
+  "raw_html_sha256": "e2a8a7ced2b68e47218fcf2dc641a41174718a623873b4fad2394a05ff2a8fa6",
+  "resolved_source_url": "https://globalvoices.org/2022/07/31/indonesia-blocks-yahoo-paypal-and-gaming-websites-over-new-licensing-rules/",
+  "canonical_url": "https://globalvoices.org/2022/07/31/indonesia-blocks-yahoo-paypal-and-gaming-websites-over-new-licensing-rules/",
+  "source_bytes": 187826,
+  "authors": [
+    {
+      "name": "Mong Palatino",
+      "url": "https://globalvoices.org/author/mong/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 768323,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "e2a8a7ced2b68e47218fcf2dc641a41174718a623873b4fad2394a05ff2a8fa6",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-0579c204c9de1ec561fe",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-07",
+    "eligible_month_documents": 79,
+    "selected_month_documents": 66,
+    "inclusion_probability": 0.8354430379746836,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Mong Palatino",
+  "body_start": 487,
+  "body_end": 3950,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "3c816b5aa3302bd9f4f0194d8859090367b178ddef7ac2136225c71095932ba2",
+  "text_path": "articles/gv-768323.txt",
+  "metadata_path": "metadata/gv-768323.json",
+  "attribution": "This story by Mong Palatino originally appeared on Global Voices. https://globalvoices.org/2022/07/31/indonesia-blocks-yahoo-paypal-and-gaming-websites-over-new-licensing-rules/",
+  "content_sha256": "330ff6f4651b51c97b25b3cd760de8bdbda69034397a6f65b7058df487f7791d",
+  "source_sha256": "e2a8a7ced2b68e47218fcf2dc641a41174718a623873b4fad2394a05ff2a8fa6",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

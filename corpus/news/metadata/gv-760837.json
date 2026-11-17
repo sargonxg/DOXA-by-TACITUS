@@ -1,0 +1,713 @@
+{
+  "id": "gv-760837",
+  "publisher_id": 760837,
+  "source_id": "globalvoices:760837",
+  "source_url": "https://globalvoices.org/2022/04/14/undertones-how-russian-media-lies-to-russians-about-ukraine/",
+  "title": "Undertones: How Russian media lies to Russians about Ukraine",
+  "published_at": "2022-04-14T15:13:06Z",
+  "modified_at": "2025-01-15T18:50:11Z",
+  "api_author_id": 2945,
+  "api_content_sha256": "fb0abdaad04b73f75bab8c00f7d27b6c822c94f4ddc1c73ae84a7e909753e077",
+  "api_response_sha256": "28920dbbc9737fa5d959f8e5a70a8ed45f6921680e721040c1ff52d03593d16e",
+  "api_retrieved_at": "2026-11-16T22:20:43.044586+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-760837-b00001",
+      "text": "Welcome to Undertones, the Civic Media Observatory newsletter! In each edition we'll analyze an event, emerging trend, or a complex story, identifying key narratives of urgent public interest, delving deep into the context and subtext of local, vernacular and multilingual media. Undertones also offers an entry point into the public datasets that underpin our Observatory work.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 378,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk",
+        "https://globalvoices.org/special/observatory/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00002",
+      "text": "Subscribe to Undertones",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 380,
+      "body_end": 403,
+      "source_links": [
+        "https://globalvoices.us2.list-manage.com/subscribe?u=9307106bf78cc186e924ad999&id=5633e3eb9a"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00003",
+      "text": "If you are in Russia without a VPN, you will be left in the dark about Putin’s violent actions in Ukraine. Tiktok, Meta, Twitter and independent media are off-limits – the Russian state blocked them all after its brutal invasion of Ukraine on February 24.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 405,
+      "body_end": 660,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00004",
+      "text": "The only way for Russians to be informed is through state-sanctioned media and social media platforms frequented by Russians such as Vkontakte and Telegram, both founded by billionaire Pavel Durov. These services are ripe with Russian state propaganda and misinformation. Also, most large Russian media have disabled their comment section – this may have been done to avoid fines by preventing people from criticizing the war.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 662,
+      "body_end": 1088,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00005",
+      "text": "It has been two months since our first analysis of Russian media narratives about Ukraine, which included claims that the Ukraine crisis was fictional.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1090,
+      "body_end": 1241,
+      "source_links": [
+        "https://globalvoices.org/2022/02/15/undertones-what-russian-media-says-about-the-russia-ukraine-crisis/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00006",
+      "text": "What is the Russian media saying about the war now?",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1243,
+      "body_end": 1294,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00007",
+      "text": "Since February 24, 2022, the Russian army has shelled and bombed Ukrainian cities and villages, destroying not only military but also civil infrastructure, including hospitals and daycare centers in the name of Ukraine’s alleged denazification. Over 10 million people have been displaced, including an estimated 3.5 million who became refugees. For many Western political analysts, the war against Ukraine was carried out in order to prevent it from developing political ties with the European Union and NATO. For others, it’s a matter of empire and ethnic nationalism.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1296,
+      "body_end": 1865,
+      "source_links": [
+        "https://www.bbc.com/news/world-europe-56720589",
+        "https://www.nytimes.com/2022/03/16/world/europe/putin-war-ukraine-recolonization.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00008",
+      "text": "Russian state narratives",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1867,
+      "body_end": 1891,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00009",
+      "text": "All media allowed to function in the country follow the government’s line and lie to their audiences about the scale, reasons, and modus operandi of the Russian military attack on Ukraine. As our researchers put it, “it is sanitized military propaganda intended for domestic consumption.”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1893,
+      "body_end": 2181,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00010",
+      "text": "1. The Russian army is saving Ukraine and Ukrainians from Nazism",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2183,
+      "body_end": 2247,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl0mAI8W2guAWtTU/viwb8jEPxk97ONjUO/recqTRW8T2xQMfDgH"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00011",
+      "text": "In one of its most longstanding narratives, pro-government media argue that Russia initiated its so-called “special military operation”—especially in the border regions of Donbass and Luhansk—to save Ukraine and Ukrainians from Ukrainian Nazis and other nationalist groups. The Russian army, a self-proclaimed savior, has allegedly been exposing Ukraine’s crimes after it arrived in the country.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2249,
+      "body_end": 2644,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00012",
+      "text": "This narrative centers around the Ukrainian Azov battalion, a former far-right and fascist militia group that was created in response to Russia’s annexation of Crimea in 2014. It has since been absorbed into the Ukrainian military and is defending the besieged city of Mariupol. Although formally depoliticized, many still deem the brigade to be extremist. The Russian government is using the Azov battalion as an excuse for ethnic cleansing.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2646,
+      "body_end": 3088,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00013",
+      "text": "This is one of the main propaganda claims justifying the war and violence against Ukraine. It is closely linked to the narrative “Ukrainians are to blame for the atrocities against innocent people.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3090,
+      "body_end": 3288,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl0mAI8W2guAWtTU/viwb8jEPxk97ONjUO/recjWFT6EFDtoXHV9"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00014",
+      "text": "HOW IT PLAYS OUT IN THE MEDIA",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3290,
+      "body_end": 3319,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00015",
+      "text": "“Old parents were abandoned near Kyiv by their children, and saved by Russian special forces”",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3321,
+      "body_end": 3414,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recNgceZKnEQlX6tn"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00016",
+      "text": "The prominent Russian tabloid Komsomolskaya Pravda (KP) shared a story about the Russian army invading a Ukrainian village and checking it for enemy troops. It also describes the village as incredibly poor and deserted by the Ukrainian army, with only old people left without gas and electricity. Russian soldiers have been allegedly helping these poor old people by sharing their food and diesel generators. More analysis here.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3416,
+      "body_end": 3844,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recNgceZKnEQlX6tn"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00017",
+      "text": "In what was widely called Russia’s “blueprint for genocide” in western media, the self-proclaimed Russian philosopher Timofei Sergeitsev published an essay in Ria Novosti calling for the full destruction of Ukraine as a state and of the Ukrainian national identity under the premise of “denazification” and “russification.”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3846,
+      "body_end": 4169,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recwJ482gGBmgnYKD"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00018",
+      "text": "The anti-Nazi narrative is not new in Russia. The USSR, one of the victors in World War II, has taken pride in overcoming Nazism in Europe. This narrative has taken another turn in the last 20 years, becoming a building block for Russian nationalism.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4171,
+      "body_end": 4421,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00019",
+      "text": "More headlines and analysis:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4423,
+      "body_end": 4451,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00020",
+      "text": "“People as books: how tortures were done in Mariupol's “library”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4453,
+      "body_end": 4517,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recWT86w8ARuLtidB"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00021",
+      "text": "“‘No to war’ is what the Nazis propagated.’”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4519,
+      "body_end": 4563,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recsiWNIdK2ZXXoRf"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00022",
+      "text": "“What Russia Should Do to Ukraine”",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4565,
+      "body_end": 4599,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recwJ482gGBmgnYKD"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00023",
+      "text": "2. “Ukrainians and the West were planning to harm Russia first, so Russia was forced to launch the military operation”",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4601,
+      "body_end": 4719,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl0mAI8W2guAWtTU/viwb8jEPxk97ONjUO/rec4MDMHzdml4fn08"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00024",
+      "text": "Reminiscent of an older, pre-invasion discourse, the Russian state has justified its actions by claiming that it is defending itself from Ukraine and NATO. Russian officials argue that Russia had no other choice than to attack Ukraine preemptively and avoid military and biological attacks on itself. Years of government propaganda aiming to propagate distrust of the West have prepared the Russian population for this narrative.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4721,
+      "body_end": 5150,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl0mAI8W2guAWtTU/viwb8jEPxk97ONjUO/recDHPY53D74bRQm4"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00025",
+      "text": "Pro-state media strengthened this narrative after Russia received international condemnation and outrage over reported war crimes by Russian troops in Bucha, Kramatorsk, Mariupol and elsewhere.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5152,
+      "body_end": 5345,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00026",
+      "text": "HOW IT PLAYS OUT IN THE MEDIA",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5347,
+      "body_end": 5376,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00027",
+      "text": "“Lavrov: Russia intends to end the course of the US on complete domination”",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5378,
+      "body_end": 5453,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recHbhE9LHDUf8sMi"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00028",
+      "text": "Pro-government media outlet Regnum shared statements from Russian foreign minister Sergey Lavrov. He is quoted saying that Russia launched the “special operation” (the war with Ukraine) because it wanted to stop US world hegemony. This argument might appeal to outside watchers who also dislike US domination. More analysis here.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5455,
+      "body_end": 5784,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recHbhE9LHDUf8sMi"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00029",
+      "text": "More headlines and analysis:",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5786,
+      "body_end": 5814,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00030",
+      "text": "“Ukrainian laboratories studied the spread of viruses by birds”",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5816,
+      "body_end": 5879,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recIL02b5a8bCU1bx"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00031",
+      "text": "“Russian Defense Ministry announced that they found “bioagents” in Ukraine that work against specific ethnic groups”",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5881,
+      "body_end": 5997,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recgTAE1mOU1Xk9ec"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00032",
+      "text": "“15 facts showing that the Ukrainian army is commanded by NATO”",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5999,
+      "body_end": 6062,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recgcPymqJzu8xqrm"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00033",
+      "text": "3. “The war crimes that Russia is accused of committing are actually staged by Ukraine and the West”",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 6064,
+      "body_end": 6164,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl0mAI8W2guAWtTU/viwb8jEPxk97ONjUO/recAovZpqkKZXVlAd"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00034",
+      "text": "As the Russian army is now accused of committing genocide and war crimes, pro-government media amplify narratives stating that these massacres have been staged by Ukraine and the West to discredit Russia.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 6166,
+      "body_end": 6370,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00035",
+      "text": "The case of Bucha is a notorious example of how Russian propaganda dealt with these allegations. The Bucha massacre is a series of alleged Russian war crimes in a Kyiv Oblast city. It has been reported on by Ukrainian authorities and corroborated by western media reportage and human rights groups, after the Russian military had withdrawn from the city in early April 2022.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 6372,
+      "body_end": 6746,
+      "source_links": [
+        "https://apnews.com/article/russia-ukraine-zelenskyy-kyiv-europe-evacuations-665fd06b92852547d7b27627b99509a6",
+        "https://en.wikipedia.org/wiki/Bucha_massacre",
+        "https://www.hrw.org/news/2022/04/03/ukraine-apparent-war-crimes-russia-controlled-areas"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00036",
+      "text": "According to Russian state media and pro-governmental political scientists, Russian troops left Bucha intact while Ukrainian militias came in from Kyiv to kill townspeople, stage the massacre, and then blamed Russia for it, despite evidence to the contrary.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 6748,
+      "body_end": 7005,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00037",
+      "text": "HOW IT PLAYS OUT IN THE MEDIA",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 7007,
+      "body_end": 7036,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00038",
+      "text": "“Peskov commented on the tragedy in Kramatorsk”",
+      "page": null,
+      "paragraph": 38,
+      "body_start": 7038,
+      "body_end": 7085,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recjzsI87MRfLOoXE"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00039",
+      "text": "Putin's press-secretary Dmilry Peskov says that Ukrainians have launched a rocket that killed many people on a Ukrainian train platform in Kramatorsk on April 8, 2022. As Meduza reports, there were 39 people killed, including four children, and dozens wounded. More analysis here.",
+      "page": null,
+      "paragraph": 39,
+      "body_start": 7087,
+      "body_end": 7367,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recjzsI87MRfLOoXE"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00040",
+      "text": "More headlines and analysis:",
+      "page": null,
+      "paragraph": 40,
+      "body_start": 7369,
+      "body_end": 7397,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00041",
+      "text": "“In Bucha, the bodies were laid out picturesquely and filmed with professional equipment”",
+      "page": null,
+      "paragraph": 41,
+      "body_start": 7399,
+      "body_end": 7488,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recSzkjvmfdsO9q7h"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00042",
+      "text": "“‘Bucha Massacre’ was invented to start genocide of Russians”",
+      "page": null,
+      "paragraph": 42,
+      "body_start": 7490,
+      "body_end": 7551,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/recbPiUY6N4XN87Lo"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00043",
+      "text": "“Why Kyiv staged bloody provocations in Bucha and Kramatorsk”",
+      "page": null,
+      "paragraph": 43,
+      "body_start": 7553,
+      "body_end": 7614,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9/rec6JjuyYm0BiDj89"
+      ],
+      "source_kind": "li",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00044",
+      "text": "View our entire Russia dataset",
+      "page": null,
+      "paragraph": 44,
+      "body_start": 7616,
+      "body_end": 7646,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwxqhRCRduC8a5S9"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00045",
+      "text": "DONATE to support the Civic Media Observatory",
+      "page": null,
+      "paragraph": 45,
+      "body_start": 7648,
+      "body_end": 7693,
+      "source_links": [
+        "https://globalvoices.org/donate/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760837-b00046",
+      "text": "Undertones is the Civic Media Observatory's newsletter, created collaboratively by the Observatory's researchers, coordinating editors, and project writer. Find out more about our mission, methodology, and publicly available data.",
+      "page": null,
+      "paragraph": 46,
+      "body_start": 7695,
+      "body_end": 7925,
+      "source_links": [
+        "https://airtable.com/shrJ0cYKBwPaS49Pk/tbl9pe37bTmfb3dbq/viwLnH3yUdhQO99XI",
+        "https://globalvoices.org/special/observatory/",
+        "https://globalvoices.org/wp-content/uploads/2021/02/Media-Observatory-Concept_2021.pdf"
+      ],
+      "source_kind": "div",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "36df588e74ea38fbdb2804c4e4001b62da1a59da748d4e4c160f0bbb140b859f",
+  "word_count": 1217,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 3,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 7925,
+  "retrieved_at": "2026-11-16T22:34:26.071700+00:00",
+  "raw_html_sha256": "1ef9926c33c552faa722453e45d4c976f285e6e2d39b41355ba77504bd9d18b2",
+  "resolved_source_url": "https://globalvoices.org/2022/04/14/undertones-how-russian-media-lies-to-russians-about-ukraine/",
+  "canonical_url": "https://globalvoices.org/2022/04/14/undertones-how-russian-media-lies-to-russians-about-ukraine/",
+  "source_bytes": 196765,
+  "authors": [
+    {
+      "name": "Civic Media Observatory",
+      "url": "https://globalvoices.org/author/civic-media-observatory/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 760837,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "1ef9926c33c552faa722453e45d4c976f285e6e2d39b41355ba77504bd9d18b2",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-cf93ff38d5cf8a11fe96",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-04",
+    "eligible_month_documents": 76,
+    "selected_month_documents": 64,
+    "inclusion_probability": 0.8421052631578947,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Civic Media Observatory",
+  "body_start": 466,
+  "body_end": 8391,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "d42eb9ad6c5c02814643c2120e58fedfbd8d81eef3619a97e9cc455165834678",
+  "text_path": "articles/gv-760837.txt",
+  "metadata_path": "metadata/gv-760837.json",
+  "attribution": "This story by Civic Media Observatory originally appeared on Global Voices. https://globalvoices.org/2022/04/14/undertones-how-russian-media-lies-to-russians-about-ukraine/",
+  "content_sha256": "e6fb591b8ef06556779dcdae46dca63b160369c182d531a398c0b368f99d8126",
+  "source_sha256": "1ef9926c33c552faa722453e45d4c976f285e6e2d39b41355ba77504bd9d18b2",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

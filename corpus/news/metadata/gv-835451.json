@@ -1,0 +1,415 @@
+{
+  "id": "gv-835451",
+  "publisher_id": 835451,
+  "source_id": "globalvoices:835451",
+  "source_url": "https://globalvoices.org/2025/06/07/a-niche-publisher-is-using-asian-literature-to-bring-taiwan-and-japan-closer-to-ukraine/",
+  "title": "A niche publisher is using Asian literature to bring Taiwan and Japan closer to Ukraine",
+  "published_at": "2025-06-07T10:00:47Z",
+  "modified_at": "2025-06-03T21:30:02Z",
+  "api_author_id": 1749,
+  "api_content_sha256": "4335bee0e25f1873f57e76ce53dfba6a25677e79ada4519508d46d947a01cd00",
+  "api_response_sha256": "00cf6596e257b2268aac52933efdbebb00dd20c39ee3205113a02e87b6e917f0",
+  "api_retrieved_at": "2026-11-16T22:21:12.346603+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 239,
+      "count": 12626,
+      "name": "Arts &#038; Culture",
+      "slug": "arts-culture",
+      "parent": 238
+    },
+    {
+      "id": 325,
+      "count": 2253,
+      "name": "Chinese",
+      "slug": "chinese",
+      "parent": 317
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 25,
+      "count": 2726,
+      "name": "Japan",
+      "slug": "japan",
+      "parent": 16
+    },
+    {
+      "id": 330,
+      "count": 1249,
+      "name": "Japanese",
+      "slug": "japanese",
+      "parent": 317
+    },
+    {
+      "id": 296,
+      "count": 2217,
+      "name": "Language",
+      "slug": "language",
+      "parent": 238
+    },
+    {
+      "id": 267,
+      "count": 2469,
+      "name": "Literature",
+      "slug": "literature",
+      "parent": 238
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 48,
+      "count": 960,
+      "name": "Taiwan (ROC)",
+      "slug": "taiwan-roc",
+      "parent": 16
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 345,
+      "count": 344,
+      "name": "Ukrainian",
+      "slug": "ukrainian",
+      "parent": 317
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-835451-b00001",
+      "text": "Until the 1990s, Ukrainian and Taiwanese literature shared a similar fate on the map of world literature: rarely translated, outsiders perceived them as a literary subset of their larger neighbor, Russia and China, respectively. The situation changed gradually, thanks to academic programs (the creation of Taiwan studies, for example), enthusiastic translators, and daring publishers. Today, Taiwanese and Ukrainian literature are recognized globally as independent entities, their authors are invited to international festivals, and more and more books are being translated.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 576,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-835451-b00002",
+      "text": "Global Voices talked to Svitlana Pryzynchuk, a Ukrainian from Kyiv who studied international law at the Kyiv International University, later lived in Beijing for six years, where she graduated with a master's degree at Beijing Normal University in art studies. She returned to Ukraine in 2015 and, in late 2018, founded Safran, Ukraine's first publishing house specializing in Asian literature, which is based in Kyiv.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 578,
+      "body_end": 996,
+      "source_links": [
+        "https://safranbook.com/en/blog/from-east-to-ukraine-how-does-work-safran-publishing/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-835451-b00003",
+      "text": "The interview took place over email after a meeting in person in Taipei. The answers have been edited for style and brevity.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 998,
+      "body_end": 1122,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-835451-b00004",
+      "text": "Filip Noubel (FN): What is the mission and history of the Safran publishing house?",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1124,
+      "body_end": 1206,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-835451-b00005",
+      "text": "> Svitlana Pryzynchuk (SP): In 2016 I realized that we lack Ukrainian-language literature about Asia. The situation in the field of what was called ‘Oriental studies’ in Ukraine was very sad. During the Stalinist purges in the 1930s, almost all Ukrainian experts in Asian culture and languages were repressed, and Ukrainians were forbidden to study or research East Asia, something considered a ‘bourgeois-nationalist activity’ going against the priorities set by Communism. It was also prohibited to learn any East Asian language in universities in Ukraine. Ukrainians could do that only in Moscow, Leningrad [today's Saint Petersburg], or Vladivostok. After collapse of the USSR in 1991, Ukraine was left without any Ukrainian-language literature about Asia. It didn’t even have Ukrainian translations of the main classics.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1208,
+      "body_end": 2033,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Great_Purge"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-835451-b00006",
+      "text": "> This period coincides with the time when Asia started to develop very rapidly (first Japan, Korea, Taiwan, and later mainland China), but Ukraine lacked knowledge and professional information about Asia. Almost all the information available came from Russia and in Russian.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2035,
+      "body_end": 2310,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-835451-b00007",
+      "text": "> Yet historically, during thousands of years, Ukraine was deeply connected to Asia through the Great Steppe, from Scythians and Khazars to the Mongolian Golden Horde, the Crimean Khanate and the Ottoman Empire. Ukraine’s top modern historian Mykhailo Hrushevsky [1866–1934] wrote: ‘…The Eastern element was and remains very strong and active in our lives, very complex in its components.’",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2312,
+      "body_end": 2701,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Crimean_Khanate",
+        "https://en.wikipedia.org/wiki/Golden_Horde",
+        "https://en.wikipedia.org/wiki/Khazars",
+        "https://en.wikipedia.org/wiki/Mykhailo_Hrushevsky",
+        "https://en.wikipedia.org/wiki/Scythians"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-835451-b00008",
+      "text": "> In 2018, we established our Asian publishing house, the first of its kind in Ukraine, to stand up to the modern challenges of globalization, to respond to the rise of Asia, and to overcome Ukraine's postcolonial legacy. We make our own books and publish Ukrainian translations of ancient and contemporary literature from Asia. Working in different genres, we try to give Ukrainians a better understanding of Asian societies and cultures.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2703,
+      "body_end": 3142,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-835451-b00009",
+      "text": "FN: You have already translated and published Japanese and Taiwanese literature. What was the reception of those translations? What is the visibility of Taiwanese literature today in Ukraine?",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3144,
+      "body_end": 3335,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-835451-b00010",
+      "text": "> SP: Yes, we already published a Japanese modern classic, ‘Quilt,’ a collection of short stories by Tayama Katai (田山 花袋). This spring we also released ‘The Setting Sun,’ a collection of short prose by Dazai Osamu (太宰 治). Regarding Taiwan, we have already published three titles of contemporary fiction, and nine volumes of various Taiwanese comics. When we first published the awarded novel ‘The Stolen Bicycle’ by Wu Ming-yi (吳明益), and ‘The Stories of the Sahara’ by Sanmao (三毛), it was a totally new thing in our book market. We saw the potential of those books, but sales remained slow. As a result, the next fiction title ‘Ghost Town’ by Kevin Chen (陳思宏) was released only in late 2024. This coincided with the time when the Ukrainian book market experienced a huge boom. This is because of the 2022 full-scale Russian invasion and the subsequent ban on imports of books from Russia. Sales exceeded our expectations, therefore within five months, we released Chen's translation's second print. This amounts to a big success in our effort to promote Taiwanese literature.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3337,
+      "body_end": 4412,
+      "source_links": [
+        "https://booksfromtaiwan.moc.gov.tw/images/books_img/TheStolenBicycle.pdf",
+        "https://en.wikipedia.org/wiki/Sanmao_(writer)",
+        "https://en.wikipedia.org/wiki/Stories_of_the_Sahara",
+        "https://en.wikipedia.org/wiki/The_Setting_Sun",
+        "https://en.wikipedia.org/wiki/Wu_Ming-yi",
+        "https://www.moc.gov.tw/en/News_Content2.aspx?n=491&s=105419",
+        "https://www.npr.org/2022/11/13/1135093196/ghost-town-kevin-chen-book-review"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-835451-b00011",
+      "text": "> As for comics, we established a young audience, who is keen on discovering Taiwan through high quality Taiwanese manga. Our mission is indeed to introduce Asian culture to Ukrainians, so we carefully curated each title. For example, ‘Guardienne’ (守娘) deals with the role of women in traditional Chinese society, ‘Invitation of Yama’ (閻王帖) shows us the Netherworld, ‘The Lion in a Manga Library’ (獅子藏匿的書屋) tells a story of genius go players, and ‘A Teatime Adventure’ (異人茶跡) reveals the history of how oolong tea appeared in Taiwan in the 19th century. All these titles include additional material which serve as a unique source of knowledge about Taiwanese and Asian culture.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4414,
+      "body_end": 5091,
+      "source_links": [
+        "https://booksfromtaiwan.moc.gov.tw/books_info.php?id=351",
+        "https://booksfromtaiwan.moc.gov.tw/books_info.php?id=382",
+        "https://booksfromtaiwan.moc.gov.tw/books_info.php?id=386",
+        "https://booksfromtaiwan.moc.gov.tw/books_info.php?id=86"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-835451-b00012",
+      "text": "FN: What is the editing plan for the future? Will it include Chinese literature? What are the main challenges for translators?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 5093,
+      "body_end": 5219,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-835451-b00013",
+      "text": "> SP: As for Chinese literature, we actually started in 2018. We published the first Ukrainian translations of classical texts such as Zhuangzi philosophy, and the ‘Classic of Tea’ by Lu Yu. We presented them at the most important book festival in Ukraine — Book Arsenal 2019. It marked a successful start on the Ukrainian book scene, with more than two hundred people attending our events dedicated to promoting our translations.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5221,
+      "body_end": 5651,
+      "source_links": [
+        "https://book.artarsenal.in.ua/en/about-us/festival-history/",
+        "https://en.wikipedia.org/wiki/Lu_Yu",
+        "https://en.wikipedia.org/wiki/The_Classic_of_Tea",
+        "https://en.wikipedia.org/wiki/Zhuangzi_(book)"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-835451-b00014",
+      "text": "> We also published children series on topics such as the legends of China, the 24 terms of the Chinese solar calendar, Chinese opera. But now we decided to publish only classics from Chinese literature, such as Xiao Hong (蕭紅), a prominent Chinese female writer who lived and wrote during the Republic of China period (1912–1929 in mainland China). Apart from Taiwan titles, we plan to publish Japanese manga titles to match our Taiwanese comics series. We also plan to publish more Korean fiction. This plan actually reflects the interest of our Ukrainian audience.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5653,
+      "body_end": 6219,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Solar_term",
+        "https://en.wikipedia.org/wiki/Xiao_Hong"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-835451-b00015",
+      "text": "> The main challenges for the translators is that they deserve to be well-paid for their translations from Asian languages, as they have rare language skills. Yet there is no way for us as a publisher to provide high payments, as the Ukrainian book market is still weak. Besides, Asian literature is still considered a niche literature, so the print runs are quite small. Of course, we try to identify grants as much as possible, but very often we publish our books (particularly classic titles) by relying entirely on our publishing funds. Our edition of Chinese classic poetry by outstanding Ukrainian sinologist Yaroslava Shekera has been selling on the market for five years.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6221,
+      "body_end": 6900,
+      "source_links": [
+        "https://safranbook.com/en/authors/yaroslava-shekera/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-835451-b00016",
+      "text": "FN: You are currently based in Tainan. What have been your biggest surprises so far in Taiwan? What would you like Ukrainians to understand the most about Taiwan?",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6902,
+      "body_end": 7064,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-835451-b00017",
+      "text": "> SP: Since last January I have been based in Tainan, a lovely city in the south of Taiwan. I like it because it is the oldest city in Taiwan, with a rich 400-years long history, with a lot of beautiful architecture, hidden temples, nice weather and the ocean nearby. When I first arrived to this city I was absolutely charmed, and I want Ukrainians to understand that Taiwan is an independent state with a complex history, with different influences from its former colonizers, which all created a unique culture. And that Ukraine and Taiwan have quite a lot in common.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 7066,
+      "body_end": 7635,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Tainan"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-835451-b00018",
+      "text": "For more on the evolving relationship between Taiwan and Ukraine, read Understand the link between Ukraine and Taiwan",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 7637,
+      "body_end": 7754,
+      "source_links": [
+        "https://globalvoices.org/special/ukraine-taiwan/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "b54bb052631cf77a37489819badb87a46a677b6b501b59cb0922ddaa8b8d415a",
+  "word_count": 1241,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 3,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7754,
+  "retrieved_at": "2026-11-16T22:46:45.378655+00:00",
+  "raw_html_sha256": "829c9693cbde08dace48450d602ea1bbacca0835562c5f71815ac60754976b2f",
+  "resolved_source_url": "https://globalvoices.org/2025/06/07/a-niche-publisher-is-using-asian-literature-to-bring-taiwan-and-japan-closer-to-ukraine/",
+  "canonical_url": "https://globalvoices.org/2025/06/07/a-niche-publisher-is-using-asian-literature-to-bring-taiwan-and-japan-closer-to-ukraine/",
+  "source_bytes": 193477,
+  "authors": [
+    {
+      "name": "Filip Noubel",
+      "url": "https://globalvoices.org/author/filip-noubel/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 835451,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "829c9693cbde08dace48450d602ea1bbacca0835562c5f71815ac60754976b2f",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-253b9edd1988ada59cf4",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-06",
+    "eligible_month_documents": 88,
+    "selected_month_documents": 74,
+    "inclusion_probability": 0.8409090909090909,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Filip Noubel",
+  "body_start": 510,
+  "body_end": 8264,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "f08c2121a629c0376216d39dfa43de36677f9effb0df45cbe8151bbb77827fac",
+  "text_path": "articles/gv-835451.txt",
+  "metadata_path": "metadata/gv-835451.json",
+  "attribution": "This story by Filip Noubel originally appeared on Global Voices. https://globalvoices.org/2025/06/07/a-niche-publisher-is-using-asian-literature-to-bring-taiwan-and-japan-closer-to-ukraine/",
+  "content_sha256": "41d9592a54696ffcdd1a4e1ee51eaade57fa49a0f606e1892c93e695920b2d9c",
+  "source_sha256": "829c9693cbde08dace48450d602ea1bbacca0835562c5f71815ac60754976b2f",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

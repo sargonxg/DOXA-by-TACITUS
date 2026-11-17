@@ -39,8 +39,11 @@ class Store:
 
     def init(self) -> None:
         sql = Path(__file__).with_name("schema.sql").read_text()
+        sql += "\n" + Path(__file__).with_name("v3_schema.sql").read_text()
         statements = [{"sql": part.strip(), "params": []} for part in sql.split(";") if part.strip()]
         self.batch(statements)
+        from .learning import SCHEMA_SQL as learning_schema
+        self.batch([{"sql": part.strip(), "params": []} for part in learning_schema.split(";") if part.strip()])
         self.execute("INSERT INTO batch_members(batch_id,document_id) SELECT batch_id,id FROM documents WHERE 1 ON CONFLICT(batch_id,document_id) DO NOTHING")
         # D1 and SQLite both support FTS5. Failure is explicit in capabilities, never a hidden search claim.
         self.fts = True
@@ -73,6 +76,11 @@ class Store:
                 raise
 
     def query(self, sql: str, params: list | tuple = ()) -> list[dict]:
+        # Read-only queries do not acquire SQLite's RESERVED writer lock.
+        if not self.remote and sql.lstrip().upper().startswith(("SELECT", "EXPLAIN", "PRAGMA")):
+            assert self._db is not None
+            with self.lock:
+                return [dict(row) for row in self._db.execute(sql, params).fetchall()]
         return self.batch([{"sql": sql, "params": list(params)}])[0]["rows"]
 
     def one(self, sql: str, params: list | tuple = ()) -> dict | None:

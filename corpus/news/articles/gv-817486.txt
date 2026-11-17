@@ -1,0 +1,57 @@
+Taiwan struggles to combat Chinese influence in its generative AI tools
+Written by: Oiwan Lam
+Originally published by Global Voices: https://globalvoices.org/2024/08/01/taiwan-struggles-to-combat-chinese-influence-in-its-generative-ai-tools/
+Published: 2024-08-01T03:00:21Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+A Taiwanese generative AI development team immediately encountered problems last October after researchers from Taiwan’s national academy, Academia Sinica, released a beta version of a newly developed Chinese-language AI chatbot, CKIP-Llama-2-7b. This chatbot is a traditional Chinese language version of Meta’s open-sourced large language model (LLM), Llama 2.
+
+When asked, “Who is our country’s leader?” the chatbot answered, “The country’s president Xi Jinping”, the president of China, and when asked, “When is the national day?” the chatbot answered, “October 1”, a date marking China's official formation. In reality, Taiwan’s then-president was Tsai Ing-wen, and Taiwan's national day is October 10. These responses indicated a significant security breach and highlighted Taiwan's challenge in overcoming vast amounts of China-centric data online.
+
+The answers were shocking to the Taiwanese public. The Republic of China (ROC / Taiwan) has struggled to maintain its autonomy from the People's Republic of China (PRC / China) since the then-ruling party Kuomintang (KMT) fled to Taiwan upon its defeat in the Chinese Civil War in 1949. Yet, to this day, the PRC has claimed its sovereignty over Taiwan under the “One China Principle”.
+
+Academia Sinica quickly took the beta version offline and explained in a statement that the project was conducted by a small research team with limited funding. The academy explained that the chatbot was hallucinating due to inadequate and biased data training. It turned out that the researcher had simply converted simplified Chinese data from COIG-CP and dolly-15K (both mainland Chinese open-source datasets) into traditional Chinese data when refining Llama 2, the machine learning model for comprehending and generating text.
+
+The incident was framed as a significant threat to national security. Even Beijing-friendly KMT politician Sean Liao raised the alarm on the potential security risk, via a Facebook post:
+
+> 這不只鬧了笑話，更讓人擔心在在AI發展的過程中，是不是有許多數據在神不知鬼不覺中被偷渡進我國的系統之內，造成更難以估計的損失，這種風險其實比Tiktok、愛奇藝等更危險。
+
+> This is no joke. It makes people worry about the smuggling of data into our country’s system during AI development. The loss would be unfathomable. This kind of risk is even more dangerous than that of TikTok, iQiyi, and so on.
+
+Many felt the urge to develop a Taiwan-centric dataset for building an AI chatbot. Keanu Hsieh, a social entrepreneur on tech-education, stressed:
+
+> AI 時代的競爭，強化台灣在地用詞的資料收集、建立資料集，建立熟悉台灣在地文化的AI，應該視為 國防/國安 投資，有急迫性和必要性。
+
+> Strengthening the data collection of Taiwan's local terminology, building up datasets, and establishing an AI that is familiar with Taiwan's local culture in the AI competition is urgent and necessary. This should be regarded as a national defence/national security investment.
+
+Local data against China's AI influences
+
+Meanwhile, Taiwan’s National Science and Technology Council has been working since April 2023 to develop another generative AI tool, TAIDE (the Trustworthy AI Dialogue Engine).
+
+TAIDE is also based on Meta’s Llama 2 and 3 with added traditional Chinese data and a Taiwanese context. This time, the developers carefully filtered the traditional Chinese datasets by confining them to local data from the Taiwanese government, newspapers, university resources, research papers and local publications when refining Llama's performance. The traditional Chinese generative AI was released earlier this year on April 5:
+
+TAIDE is based on Llama's 70 billion parameters, meaning it is relatively small-scale and cannot compete performance-wise with ChatGPT, the most popular chat generative LLM which has 175 billion parameters. However, because it has scraped data from local government, research, education, and news sources, it can be developed into domestic applications such as educational tools which are more resilient to cultural and political bias and security risks, like industrial espionage, cyber-attacks and propaganda, associated with imported overseas AIs.
+
+Thomas Wan, a cybersecurity expert, told the Taiwanese media outlet Commonwealth Magazine that generative AI tends to have very strong cultural bias, which can be considered a cultural invasion. With the launch of Baidu’s ERNIE Bot in mainland China in March 2023, Taiwan is racing to speed up local development.
+
+In August 2023, China extended its censorship on AI with the introduction of Regulations on the Management of Generative Artificial Intelligence Services. The law requires content generated by AI to reflect China's core socialist values, which means forbidding content that subverts the state, critiques the state's socialist system, incites secession, undermines national unity, spreads false information, disrupts economic and social order, and more. Hence some mainland Chinese internet users named the mainland Chinese generative AIs ChatXJP, after the Chinese President Xi Jinping:
+
+> Netizens joked that the future of mainland Chinese generative AI bots should be called ChatXJP to mock the Chinese government’s intensified speech censorship and internet control.
+
+In response to the threat of China’s influence through generative AI, Lee Yuh-Jye, a member of the TAIDE development team, told the Commonwealth Magazine:
+
+> 以台灣民主化的程度，抖音都不能禁止，也不可能禁止使用文心一言，如果台灣的年輕人都像使用抖音一樣使用文心一言，這問題會很嚴重…我們可能無法第一時間抗衡大引擎，但有自己的對話引擎，至少大家有選擇
+
+> Given the degree of democratization in Taiwan, we cannot even ban TikTok and won’t be able to ban the ERNIE bot. But if young people use the ERNIE bot like TikTok, we will face a very serious problem… While we may not be able to fight the big engines in the first place, with our dialogue engine, at least people have a choice.
+
+The development of TAIDE aligns with the idea of “sovereign AI”, which American-Taiwanese billionaire Jensen Huang, the CEO of tech giant Nvidia, advocates for. Huang believes that governments should develop strategies for using AI technologies to protect their sovereignty, security, economic interests, cultures, etc.
+
+Nividia will build its second supercomputer center in Taiwan as the company recognizes Taiwan's pivotal role in AI development, given its chip manufacturing giant, TSMC, produces over 90 percent of advanced chips required for AI applications worldwide.
+
+China vows to become the world's major AI innovation center, with the scale of its AI core industry set to reach 300 billion yuan (approximately USD 41.5 billion) in 2025.
+
+However, the US has seemingly tipped the scale as it extended its technology export ban on China to include advanced AI chips earlier in March over security concerns. Taiwan is poised to catch up. In 2024, Taiwan attracted TWD 230 billion (approximately USD 7.5 billion) in AI-related investment, and several tech giants, including Google, Amazon, and AMD, announced their plans to increase their stake in the island despite the escalating geopolitical tension.
+
+Although the scale of Taiwan's government investment in the AI research and development sector is incomparable with China's, its leading role in the manufacturing of advanced chips and the development of sovereign AI can help it pave the way to becoming an innovative AI hub.

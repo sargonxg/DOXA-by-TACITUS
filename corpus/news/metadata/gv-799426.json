@@ -1,0 +1,297 @@
+{
+  "id": "gv-799426",
+  "publisher_id": 799426,
+  "source_id": "globalvoices:799426",
+  "source_url": "https://globalvoices.org/2023/12/06/private-firms-profiting-from-your-vote-the-role-of-the-influence-industry-around-the-world/",
+  "title": "Private firms profiting from your vote: The role of the influence industry around the world",
+  "published_at": "2023-12-06T14:33:12Z",
+  "modified_at": "2023-12-08T13:45:17Z",
+  "api_author_id": 3133,
+  "api_content_sha256": "033d217b3163662f85b038732d91a60fcbdd576cb01127326c13a0eb12a720ac",
+  "api_response_sha256": "d6f02a2eadb9352c262ad7a8c974a2685d95d17648de09a94ccba861356e725c",
+  "api_retrieved_at": "2026-11-16T22:20:58.882918+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-799426-b00001",
+      "text": "Whether debating if AI-generated deepfake videos and ChatGPT will disrupt trust in elections or if social media platforms will be able to monitor violence-inciting misinformation, digital technologies remain a key topic for 2024 election campaigns around the world.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 265,
+      "source_links": [
+        "https://timesofindia.indiatimes.com/india/the-deeper-crises-behind-deepfakes/articleshow/105074632.cms",
+        "https://www.theguardian.com/media/2023/sep/15/social-media-firms-not-ready-to-tackle-misinformation-during-global-elections"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799426-b00002",
+      "text": "Digital campaign tools and tactics are especially difficult to monitor as political parties often outsource the work to opaque private companies, agencies, and consultants. In 2023, for example, the Communist Party of Nepal (UML) worked with a freelance consultant to develop their campaign strategy, the Frente de Todos in Argentina paid Digital Ads S.A.S to develop their communications content, and Indonesian political parties hired “buzzer” agencies to spread their message on social media. Worldwide, there are over 500 political consultants, software providers, data brokers, and technology firms that make up the influence industry. This industry stands to profit from one or more of next year’s national elections, including in India, Indonesia, Georgia, Mexico, South Africa, the UK, Ukraine, and the US.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 267,
+      "body_end": 1081,
+      "source_links": [
+        "https://influenceindustry.org/en/explorer/case-studies/argentina-electoral-reporting/",
+        "https://influenceindustry.org/en/explorer/case-studies/indonesia-political-influence-operations/",
+        "https://influenceindustry.org/en/explorer/case-studies/nepal-electioneering-strategies/",
+        "https://influenceindustry.org/en/explorer/case-studies/the-question-industry-explorer/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799426-b00003",
+      "text": "In the run-up to an election, political parties will use crafted messages to influence voters’ opinions and actions. Political actors rely heavily on platforms, such as Google Ad Library for Argentina, Brazil, Chile, India, and South Africa or Facebook’s political Ad Library for over 200 countries. However, candidates also pay private and covert consultants to design their social media strategy and broader online and offline campaigns. The companies in the influence industry collect data on our locations, our opinions, and our behaviors, create voter profiles representing what they believe to be our political interest and leaning, and, from this information, design campaigns, communications, and content to encourage us to, or discourage us from, voting for a certain party. Not only are these firms hired to produce informative and accountable campaigns, but they can also be hired to spread misinformation or create disruption within elections. For example, the infamous firm Cambridge Analytica, and their close collaborator AggregrateIQ, were hired to spread politically divisive and violent content through social networks to intimidate voters in Nigeria.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1083,
+      "body_end": 2252,
+      "source_links": [
+        "https://influenceindustry.org/en/explorer/companies/facebook/",
+        "https://www.theguardian.com/uk-news/2018/apr/04/cambridge-analytica-used-violent-video-to-try-to-influence-nigerian-election"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799426-b00004",
+      "text": "Despite playing a substantial role in managing political participation, these firms are often able to work out of public visibility and disregard important democratic processes. In countries with electoral transparency systems — such as Argentina and the UK — within which political parties must declare their financial spends on election campaigns, the invoices often show very little information about the actual services the firms provide, and at times the information is purposefully obscured. In Bolivia, influence groups don’t need to worry about the concerns of collecting data themselves when they can buy datasets on cheap CDs from people who were previously employed to produce that data for someone else. Even with data protection laws, supposedly transparent firms can still create “anonymous profiles” that disconnect users from their original data but still use this data to produce profiles to identify individuals and groups.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 2254,
+      "body_end": 3195,
+      "source_links": [
+        "https://cdn.ttc.io/s/ourdataourselves.tacticaltech.org/ttc-influence-industry-uk.pdf",
+        "https://influenceindustry.org/en/explorer/case-studies/argentina-electoral-reporting/",
+        "https://influenceindustry.org/en/resources/full-interview-quiroz/",
+        "https://www.eff.org/deeplinks/2023/11/debunking-myth-anonymous-data"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799426-b00005",
+      "text": "Through understanding these firms, and their role in the complex and increasingly unstable landscape of digital politics, we can begin to hold political groups to account and make more informed choices on voting day.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 3197,
+      "body_end": 3413,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799426-b00006",
+      "text": "Should private firms take sides in politics?",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 3415,
+      "body_end": 3459,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799426-b00007",
+      "text": "The political ideology, especially the partisanship, of a firm has been important to the foundations of the data-driven influence industry. The media coverage of data-driven influence began in earnest after the success of data-driven tactics in Barack Obama’s grassroots-style campaigns for US president in 2008 and 2012. Many of the individuals involved went on to establish consultancy firms, including 270 Strategies, the Messina Group, and Blue State Digital, which all align themselves with “progressive” politics. In response to the visibility of these progressively aligned firms, Thomas Peters, a conservative blogger, wrote, “The only way to defeat Democrats was to learn from their tech advances, and then leapfrog them.” With this ethos in mind, he started uCampaign in July 2013 — a Republican party-aligned firm that develops campaign apps. In a similar case, Harris Media, a communications and marketing company, was founded by Vincent Harris, a conservative political strategist described as “the man who invented the Republican Internet.”",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 3461,
+      "body_end": 4515,
+      "source_links": [
+        "https://influenceindustry.org/en/explorer/companies/270-strategies/",
+        "https://influenceindustry.org/en/explorer/companies/blue-state-digital/",
+        "https://influenceindustry.org/en/explorer/companies/harris-media/",
+        "https://influenceindustry.org/en/explorer/companies/the-messina-group/",
+        "https://influenceindustry.org/en/explorer/companies/ucampaign/",
+        "https://medium.com/@uCampaignapp/meet-the-stealth-startup-that-helped-ted-cruz-win-iowa-fea6745b8a6d",
+        "https://www.bloomberg.com/news/features/2014-10-22/the-man-who-invented-the-republican-internet",
+        "https://www.technologyreview.com/2012/12/19/114510/how-obamas-team-used-big-data-to-rally-voters/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799426-b00008",
+      "text": "All of these firms have exported their work, resources, and politics worldwide, often gaining insights that benefit their agendas without impacting the places the consultant and staff of the firm live. For example, private firms have been testing tactics across various African countries before returning to France or the US. Their politics, in some cases, matches the “sides” they choose in their home country: Harris Media has worked with the UK Independence Party (UKIP), Alternative für Deutschland (AfD) in Germany, and Israeli Prime Minister Benjamin Netanyahu.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 4517,
+      "body_end": 5084,
+      "source_links": [
+        "https://medium.com/@Info_Activism/the-imports-and-exports-of-sub-saharan-africas-influence-industry-d189a7bb9edf",
+        "https://web.archive.org/web/20231016160722/https://www.harrismediallc.com/client/",
+        "https://www.dw.com/en/germanys-afd-takes-on-trump-campaign-linked-harris-media-for-social-media/a-40306137",
+        "https://www.harrismediallc.com/client/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799426-b00009",
+      "text": "In contrast, Jeremy Bird, who founded 270 Strategies, worked with V15, a group opposing Netanyahu. In some cases, the companies work across various political groups, depending on who they have contacts with and who will pay for their services. For example, The Messina Group has worked with Enrique Peña Nieto, the former president of Mexico, Kyriakos Mitsotakis, the prime minister of Greece, and Mariano Rajo, the former prime minister of Spain. The US-based values of these firms — that is, the politics they support, and that which they see as legitimate, as well as that which they see as advantageous — are embedded in their work as they influence politics around the world.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 5086,
+      "body_end": 5766,
+      "source_links": [
+        "https://web.archive.org/web/20231009161855/https://themessinagroup.com/",
+        "https://www.nytimes.com/2015/02/28/us/politics/former-obama-campaign-aide-now-works-to-oust-netanyahu.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799426-b00010",
+      "text": "These firms can earn vast quantities of money. According to the US Federal Electoral Commission, which is one of the few places to give an insight into the money spent on these firms, Harris Media earned over USD 1.12 million in the last three years from US political groups. Crosby Textor (now CT Group) has been involved in campaigns in Australia, Italy, Malaysia, the United Arab Emirates, Sri Lanka, and Yemen. According to the Electoral Commission in the UK, as of 2010, Crosby Textor has made over GBP 8 million from working with the Conservative Party and has also made several thousand-pound donations to the party.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 5768,
+      "body_end": 6391,
+      "source_links": [
+        "https://influenceindustry.org/en/explorer/companies/crosby-textor/",
+        "https://influenceindustry.org/en/explorer/companies/harris-media/",
+        "https://search.electoralcommission.org.uk/Search/Donations?currentPage=1&rows=10&query=ctf%20partners&sort=AcceptedDate&order=desc&tab=1&et=pp&et=ppm&et=tp&et=perpar&et=rd&isIrishSourceYes=true&isIrishSourceNo=true&prePoll=false&postPoll=true&register=gb&register=ni&register=none&optCols=Register&optCols=CampaigningName&optCols=AccountingUnitsAsCentralParty&optCols=IsSponsorship&optCols=IsIrishSource&optCols=RegulatedDoneeType&optCols=CompanyRegistrationNumber&optCols=Postcode&optCols=NatureOfDonation&optCols=PurposeOfVisit&optCols=DonationAction&optCols=ReportedDate&optCols=IsReportedPrePoll&optCols=ReportingPeriodName&optCols=IsBequest&optCols=IsAggregation"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799426-b00011",
+      "text": "While these firms profit from impacting our politics worldwide, they remain opaque and unelected, and many of these firms manage and influence the political direction of political campaigns — and, therefore, the political environment — in several different countries. The companies collect data on individuals based in one country, analyzing the information to build profiles they can use to the advantage of their work internationally. The intelligence they hold on citizens creates risks, including data breaches, misuses of data, and changes of hands in political governance — especially those which come during or after divisive conflict. Their business structure — and often values — are focused on profit: content that brings them ad revenue or appeals to political parties with funds, rather than principles of political practices. The companies do not need to worry about whether voters are well informed, whether healthy deliberation is occurring among groups, or whether under-represented groups are being heard.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 6393,
+      "body_end": 7415,
+      "source_links": [
+        "https://influenceindustry.org/en/learn/dilemmas-personal-data-political-influence/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-799426-b00012",
+      "text": "The rise of these firms, and the digital campaign tactics they support and engage in, is inextricably linked to increasing political polarization. This makes it important to understand and question the role of these firms in politics. Through asking questions, interrogating the firms, and building transparency, we can learn how to effectively regulate or manage our own political environments. The role of the influence industry is substantive, and identifying their political and profitable agenda is vital to understanding the magnitude of their power to influence political outcomes — and tensions — worldwide.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 7417,
+      "body_end": 8032,
+      "source_links": [
+        "https://www.pnas.org/doi/10.1073/pnas.2207159119"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "3b05157c5a96f2fbfd238a0a4db0c74b141ba8d8a6b819563d9a6f0b30cd6784",
+  "word_count": 1223,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8032,
+  "retrieved_at": "2026-11-16T22:41:34.687460+00:00",
+  "raw_html_sha256": "a7049ea9f033099f3a1da90967610665cec3e4290e193f8d80f562067a70f5ff",
+  "resolved_source_url": "https://globalvoices.org/2023/12/06/private-firms-profiting-from-your-vote-the-role-of-the-influence-industry-around-the-world/",
+  "canonical_url": "https://globalvoices.org/2023/12/06/private-firms-profiting-from-your-vote-the-role-of-the-influence-industry-around-the-world/",
+  "source_bytes": 194136,
+  "authors": [
+    {
+      "name": "Tactical Tech",
+      "url": "https://globalvoices.org/author/tacticaltech/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 799426,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "a7049ea9f033099f3a1da90967610665cec3e4290e193f8d80f562067a70f5ff",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-038228ab08e377adfa65",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-12",
+    "eligible_month_documents": 74,
+    "selected_month_documents": 62,
+    "inclusion_probability": 0.8378378378378378,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Tactical Tech",
+  "body_start": 518,
+  "body_end": 8550,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "82d5498148a1bc522ab287692cb2b0b5574a9345839baac206de0bc822a11b47",
+  "text_path": "articles/gv-799426.txt",
+  "metadata_path": "metadata/gv-799426.json",
+  "attribution": "This story by Tactical Tech originally appeared on Global Voices. https://globalvoices.org/2023/12/06/private-firms-profiting-from-your-vote-the-role-of-the-influence-industry-around-the-world/",
+  "content_sha256": "f6eda649aa9e375f3adb42cdf888f43ff9573b92aacf81fcea9c67d86e8ab676",
+  "source_sha256": "a7049ea9f033099f3a1da90967610665cec3e4290e193f8d80f562067a70f5ff",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

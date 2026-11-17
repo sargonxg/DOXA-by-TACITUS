@@ -1,0 +1,518 @@
+{
+  "id": "gv-788770",
+  "publisher_id": 788770,
+  "source_id": "globalvoices:788770",
+  "source_url": "https://globalvoices.org/2023/05/25/new-report-uncovers-the-first-documented-case-of-pegasus-spyware-used-in-an-international-war-context/",
+  "title": "New report uncovers the first documented case of Pegasus spyware used in an international war context",
+  "published_at": "2023-05-25T19:05:10Z",
+  "modified_at": "2023-05-26T05:13:40Z",
+  "api_author_id": 799,
+  "api_content_sha256": "1a11ffc505359c95b58521f2f3bbce98ec355bffa341278a1d6317fd7e224693",
+  "api_response_sha256": "54f78f672a26b6c6455fead63a0e1446e0433e81dd766bf7ded37091ab7c5c37",
+  "api_retrieved_at": "2026-11-16T22:20:52.946884+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 78,
+      "count": 1947,
+      "name": "Armenia",
+      "slug": "armenia",
+      "parent": 288
+    },
+    {
+      "id": 79,
+      "count": 1204,
+      "name": "Azerbaijan",
+      "slug": "azerbaijan",
+      "parent": 288
+    },
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 288,
+      "count": 7347,
+      "name": "Central Asia &amp; Caucasus",
+      "slug": "central-asia-caucasus",
+      "parent": 219
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 238,
+      "count": 1673,
+      "name": "TOPICS",
+      "slug": "topics",
+      "parent": 0
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-788770-b00001",
+      "text": "A new investigation reveals the use of Pegasus spyware in an international war context.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 87,
+      "source_links": [
+        "https://www.accessnow.org/publication/armenia-spyware-victims-pegasus-hacking-in-war/",
+        "https://www.theguardian.com/news/2021/jul/18/what-is-pegasus-spyware-and-how-does-it-hack-phones"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00002",
+      "text": "The report, released on May 25, is a joint investigation between Access Now, CyberHUB-AM, the Citizen Lab at the Munk School of Global Affairs at the University of Toronto (the Citizen Lab), Amnesty International’s Security Lab, and an independent mobile security researcher Ruben Muradyan. According to its findings, at least 12 Armenian citizens were targeted with the spyware between October 2020 and December 2022. The list includes Armenia’s Ombudsperson, two Radio Free Europe/Radio Liberty (RFE/RL) Armenian service journalists, a United Nations official, a former spokesperson of Armenia’s Foreign Ministry, and seven other representatives of Armenian civil society.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 89,
+      "body_end": 763,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00003",
+      "text": "The evidence collected and presented in the report demonstrates that “the targeting is related to the military conflict in Nagorno-Karabakh.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 765,
+      "body_end": 906,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00004",
+      "text": "Forensic investigation of devices indicated the following exploits used in Armenia: PWNYOURHOME, FINDMYPWN, FORCEDENTRY (also referred to as Megalodon by Amnesty’s Security Lab), and KISMET. All these exploits were revealed and under investigation by Citizen Lab since 2020, but it were Armenian cases that helped Citizen Lab to first identify PWNYOURHOME exploit which was at the center of the most recent investigation published in April 2023.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 908,
+      "body_end": 1353,
+      "source_links": [
+        "https://citizenlab.ca/2020/12/the-great-ipwn-journalists-hacked-with-suspected-nso-group-imessage-zero-click-exploit/",
+        "https://citizenlab.ca/2021/09/forcedentry-nso-group-imessage-zero-click-exploit-captured-in-the-wild/",
+        "https://citizenlab.ca/2023/04/nso-groups-pegasus-spyware-returns-in-2022/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00005",
+      "text": "According to the joint recent investigation published on May 25, the timing of infections was an indication of its relevance to the conflict between Armenia and Azerbaijan, and was likely “the reason for the targeting”:",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1355,
+      "body_end": 1574,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00006",
+      "text": "> The backdrop of the first cluster of civil society Pegasus infections found in Armenia is the bloody 2020 Nagorno-Karabakh war with Azerbaijan, the associated peace talks in October 2020, and the November 9, 2020 ceasefire agreement. At the same time, the Karabakh conflict itself began to intensify again with the Azerbaijan May 12, 2021 offensive and more clashes in July and November 2021. The majority of the Armenia spyware victims were infected during this time period in 2020-2021; between them, there were over 30 successful Pegasus infections.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1576,
+      "body_end": 2130,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-788770-b00007",
+      "text": "In total, the forensic investigations identified over 40 infections and one failed attempt.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2132,
+      "body_end": 2223,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00008",
+      "text": "The report then dives into the identified cases, presenting the findings of the investigation. Five of the identified targets preferred to stay anonymous at the time of the report's release.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2225,
+      "body_end": 2415,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00009",
+      "text": "The culprits",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2417,
+      "body_end": 2429,
+      "source_links": [],
+      "source_kind": "h1",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00010",
+      "text": "The authors of the report note that they have not been able to “conclusively link this Pegasus hacking to a specific governmental operator.” According to investigations published to date, Armenia was not among the list of clients identified as having purchased NSO’s Spyware. Azerbaijan, on the other hand, was. The use of Pegasus and other spyware technology used against civil society in Azerbaijan has been widely documented in recent years.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2431,
+      "body_end": 2875,
+      "source_links": [
+        "https://globalvoices.org/2021/07/23/global-investigation-reveals-pegasus-project-identified-in-azerbaijan-and-elsewhere/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00011",
+      "text": "According to the Organized Crime and Corruption Reporting Project (OCCRP), one of the 17 media partners involved in the global Pegasus investigation, out of the 1,000 phone numbers from Azerbaijan, the project researchers were so far able to identify 245 numbers that were targeted, one-fifth of which belonged to reporters, editors, or media company owners. The list also includes activists and their family members.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2877,
+      "body_end": 3294,
+      "source_links": [
+        "https://www.occrp.org/en/the-pegasus-project/life-in-azerbaijans-digital-autocracy-they-want-to-be-in-control-of-everything"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00012",
+      "text": "The new investigation also notes that:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3296,
+      "body_end": 3334,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00013",
+      "text": "> “The Citizen Lab's ongoing internet scanning and DNS cache probing has identified at least two suspected Pegasus operators in Azerbaijan that they call “BOZBASH” and “YANAR.” According to the Citizen Lab, The YANAR Pegasus operator appears to have exclusively domestic-focused targeting within Azerbaijan, while the BOZBASH operator has targets including a broad range of entities within Armenia.”",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3336,
+      "body_end": 3735,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-788770-b00014",
+      "text": "The NSO Group",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3737,
+      "body_end": 3750,
+      "source_links": [],
+      "source_kind": "h1",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00015",
+      "text": "NSO Group was set up in Israel in 2010 by Niv Carmi, Shalev Hulio, and Omri Lavie. On its website, the company claims to develop technology “to prevent and investigate terror and crime.” But the surveillance technology appears to have been used against dissidents, journalists, and activists across the world.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3752,
+      "body_end": 4061,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00016",
+      "text": "“NSO Group insists that it sells its software only to governments, suggesting that the clients in these countries represent intelligence services, law enforcement agencies, or other official bodies,” the OCCPR has noted. Citizen Lab investigations reveal that NSO's Pegasus was used against dissidents at least since 2016 in numerous countries.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4063,
+      "body_end": 4407,
+      "source_links": [
+        "https://citizenlab.ca/2018/09/hide-and-seek-tracking-nso-groups-pegasus-spyware-to-operations-in-45-countries/",
+        "https://www.occrp.org/en/the-pegasus-project/about-the-project"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00017",
+      "text": "In 2019, the company came under fire when accusations emerged that it was infecting users’ devices with malware by hacking WhatsApp. In response, WhatsApp and its parent company Facebook (now Meta) sued the NSO Group. In July 2020, a U.S. federal court judge ruled that the lawsuit against NSO Group could proceed despite the company's defense that “its business dealings with foreign governments, granted it immunity from lawsuits filed in U.S. courts under the Foreign Sovereign Immunity Act (FSIA).” In December 2020, Microsoft, Google, Internet Association, GitHub, and LinkedIn joined as parties in Facebook's [Meta's] ongoing legal battle against NSO. The most recent hearing took place in April 2021 and according to the news site Politico, the NSO Group appeared “unlikely to prevail.”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4409,
+      "body_end": 5202,
+      "source_links": [
+        "https://techcrunch.com/2020/07/16/federal-court-rules-whatsapp-and-facebooks-malware-exploit-case-against-nso-group-can-proceed/",
+        "https://www.calcalistech.com/ctech/articles/0,7340,L-3772725,00.html",
+        "https://www.ft.com/content/4da1117e-756c-11e9-be7d-6d846537acab?segmentid=acee4131-99c2-09d3-a635-873e61754ec6",
+        "https://www.lawfareblog.com/why-nso-group-asserting-sovereign-immunity-whatsapp-litigation#:~:text=On%20April%202%2C%20private%20surveillance,cellphones%20running%20the%20WhatsApp%20application.",
+        "https://www.politico.com/news/2021/04/12/nso-falters-lawsuit-whatsapp-hacking-481073",
+        "https://www.thequint.com/news/law/pegasus-spyware-decoding-whatsapps-legal-battle-against-nso#read-more"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00018",
+      "text": "Josh Gerstein, Politico's Senior Legal Affairs Reporter, noted:",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5204,
+      "body_end": 5267,
+      "source_links": [
+        "https://www.politico.com/staff/joshgerstein"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00019",
+      "text": "> Even if the firm’s effort to head off the suit fails, it could continue to fight the case in the trial court, but will likely be forced to turn over documents about its development of Pegasus and make executives available for depositions.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5269,
+      "body_end": 5509,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-788770-b00020",
+      "text": "In April of this year, nine international human rights and press freedom organizations penned a letter to Chaim Gelfand, Vice-President for Compliance at NSO Group, asking the company “to deliver on its commitments to improve transparency about sales of its advanced spyware, and due diligence to protect human rights.” The letter also rejected the NSO Group's claims “of their unverified compliance with human rights standards.”",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5511,
+      "body_end": 5940,
+      "source_links": [
+        "https://cpj.org/2021/04/cpj-urging-nso-curb-spyware-abuse/",
+        "https://rsf.org/en/news/nso-group-hasnt-kept-its-promises-human-rights-rsf-and-other-ngos-say",
+        "https://www.accessnow.org/cms/assets/uploads/2021/04/Rights-groups_NSO-Group-continues-to-fail-in-human-rights-compliance_27-April-2021.pdf",
+        "https://www.accessnow.org/nso-group-actions-louder-than-words-human-rights/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00021",
+      "text": "Ron Deibert, Director of the Citizen Lab at the University of Toronto, considers NSO's claims that they adhere to human rights standards to be “pure theater.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5942,
+      "body_end": 6100,
+      "source_links": [
+        "https://www.accessnow.org/nso-group-actions-louder-than-words-human-rights/",
+        "https://www.nsogroup.com/wp-content/uploads/2021/06/ReportBooklet.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00022",
+      "text": "> The spectacle might be a mildly entertaining farce were it not for the very real and gruesome way in which its spyware is abused by the world’s worst autocrats. NSO’s irresponsible actions have proven their words are nothing more than hand-waving distractions from the harsh reality of the unregulated marketplace in which they, and their owners, thrive and profit.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6102,
+      "body_end": 6469,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-788770-b00023",
+      "text": "Two years ago, the then-UN special rapporteur on freedom of expression, David Kaye, called for a moratorium on the sale of NSO-style spyware to governments until viable export controls could be put in place. Despite Kaye's warnings, the sale of surveillance software continued without any transparency or accountability.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6471,
+      "body_end": 6791,
+      "source_links": [
+        "https://www.theguardian.com/news/2021/jul/18/huge-data-leak-shatters-lie-innocent-need-not-fear-surveillance"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00024",
+      "text": "The most recent investigation not only brings the company to the spotlight but also highlights the importance of control mechanisms imposed on spyware companies. The authors of the new investigation go further, concluding that despite the scandals, lawsuits, and sanctions, “NSO Group continues to ignore how its technology is used in violation of human rights to target civil society, including journalists and human rights defenders.”",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6793,
+      "body_end": 7229,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00025",
+      "text": "In a comment to Global Voices, Natalia Krapiva, the Tech-Legal Counsel at Access Now said:",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7231,
+      "body_end": 7321,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-788770-b00026",
+      "text": "> “This investigation is key to understanding the full scope of harms of invasive Pegasus spyware and the entire industry which has been operating with little to no oversight for years. We have seen Pegasus used to intimidate the free press, destroy the civic space, silence dissidents, undermine democracy, suppress independence movements, and more. Now we have evidence of Pegasus being used against civil society and humanitarian actors in a major international military conflict between Azerbaijan and Armenia. I am confident that our report will lead to more research and investigations as well as legal cases to bring accountability to the NSO, the spyware industry, and states who use these invasive technologies to attack human rights and humanitarian actors, journalists, and regime critics.”",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 7323,
+      "body_end": 8124,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-788770-b00027",
+      "text": "At the time of writing, no official statements on the investigation have yet been made in Azerbaijan. On May 25, leaders of Armenia and Azerbaijan were meeting in Moscow to discuss final peace agreement.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 8126,
+      "body_end": 8329,
+      "source_links": [
+        "https://globalvoices.org/2023/05/19/progress-at-last-armenia-and-azerbaijan-give-peace-another-chance/",
+        "https://www.rferl.org/a/azerbaijan-aliyev-real-chance-peace-deal-armenia/32427764.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "7338eb3449b557c89d0b050670326f3ef4c974ec80dafcd5ec3d0e265101b3e4",
+  "word_count": 1276,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 8329,
+  "retrieved_at": "2026-11-16T22:39:23.411923+00:00",
+  "raw_html_sha256": "2561e96f87df55d995ef7d496f1d0e94d6831dc85b12f5d81194ed566e652392",
+  "resolved_source_url": "https://globalvoices.org/2023/05/25/new-report-uncovers-the-first-documented-case-of-pegasus-spyware-used-in-an-international-war-context/",
+  "canonical_url": "https://globalvoices.org/2023/05/25/new-report-uncovers-the-first-documented-case-of-pegasus-spyware-used-in-an-international-war-context/",
+  "source_bytes": 194757,
+  "authors": [
+    {
+      "name": "Arzu Geybullayeva",
+      "url": "https://globalvoices.org/author/arzu-geybullayeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 788770,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "2561e96f87df55d995ef7d496f1d0e94d6831dc85b12f5d81194ed566e652392",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-8e694782b296c117f784",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-05",
+    "eligible_month_documents": 130,
+    "selected_month_documents": 109,
+    "inclusion_probability": 0.8384615384615385,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Arzu Geybullayeva",
+  "body_start": 543,
+  "body_end": 8872,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "9598389ff94b15ea37ed6cc5f804f4bed2a8ca5e4892bec6d193c2932c17e8dc",
+  "text_path": "articles/gv-788770.txt",
+  "metadata_path": "metadata/gv-788770.json",
+  "attribution": "This story by Arzu Geybullayeva originally appeared on Global Voices. https://globalvoices.org/2023/05/25/new-report-uncovers-the-first-documented-case-of-pegasus-spyware-used-in-an-international-war-context/",
+  "content_sha256": "6d2f51450b511265b47b636936032ecc72f963ad18310baf60180841fb4002b8",
+  "source_sha256": "2561e96f87df55d995ef7d496f1d0e94d6831dc85b12f5d81194ed566e652392",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

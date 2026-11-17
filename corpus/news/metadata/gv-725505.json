@@ -1,0 +1,455 @@
+{
+  "id": "gv-725505",
+  "publisher_id": 725505,
+  "source_id": "globalvoices:725505",
+  "source_url": "https://globalvoices.org/2020/12/28/how-do-you-live-here-a-local-podcaster-takes-on-misconceptions-about-eastern-ukraine/",
+  "title": "‘How do you live here?’ A local podcaster takes on misconceptions about eastern Ukraine",
+  "published_at": "2020-12-28T21:34:54Z",
+  "modified_at": "2021-11-16T03:46:18Z",
+  "api_author_id": 1658,
+  "api_content_sha256": "07f415a8f2e11f1a6f9ea78fa1d65542d4233f590b8070f42575295673bd0504",
+  "api_response_sha256": "3c1126b1eeb2408f0c7dfb3722ec3e22693716e3f3a1988a2b2844f4a03dc72f",
+  "api_retrieved_at": "2026-11-16T22:20:31.424510+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 239,
+      "count": 12626,
+      "name": "Arts &#038; Culture",
+      "slug": "arts-culture",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 76,
+      "count": 2507,
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "parent": 57
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-725505-b00001",
+      "text": "For the people of Slavyansk, “How do you live here?” is not an uncommon question.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 81,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725505-b00002",
+      "text": "Given the tragedies this eastern Ukrainian city has endured — economic collapse and occupation by pro-Russia separatists in 2014 — you can't blame those who ask it. But that they still do so in 2020 betrays some ignorance: life can be hard, but Slavyansk is no longer a warzone. While hardships endure, its residents have rebuilt a semblance of normal lives. Those young people who remain in Slavyansk are eager for their city to thrive, setting up several new cultural and civic initiatives in recent years. One of them is Nika Perepelitsa, the communications specialist for the civil society centre Drukarnia.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 83,
+      "body_end": 694,
+      "source_links": [
+        "https://drukarnia.org.ua/",
+        "https://tol.org/client/article/a-citys-rebirth.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725505-b00003",
+      "text": "Perepelitsa saw this question as an opportunity to change outsiders’ narratives about her home town. It has become the title of her podcast, Как ты здесь живешь?, which she launched in February. Perepelitsa has since released eight episodes, in which she interviews residents of government-controlled eastern Ukraine — from young people at the forefront of its cultural life to foreigners who have unexpectedly made it their home.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 696,
+      "body_end": 1126,
+      "source_links": [
+        "https://anchor.fm/kakzdeszhyt"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725505-b00004",
+      "text": "Her interviews paint a picture of a region which is far from monochrome and passive. Her interviewees are those might answer that question, perhaps cautiously, with the words “with hope”.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1128,
+      "body_end": 1315,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725505-b00005",
+      "text": "I interviewed Perepelitsa about her inspiration for the podcast and her plans for its future. The interview has been edited for brevity.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1317,
+      "body_end": 1453,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725505-b00006",
+      "text": "Maxim Edwards (ME): Why did you choose such a striking name for your podcast? Have you been asked this question often?",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1455,
+      "body_end": 1573,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725505-b00007",
+      "text": "> Ника Перепелица (НП): Идея такого названия для подкаста “Как ты здесь живешь?” пришла не случайно. Несколько последних лет при знакомстве с людьми из других стран и регионов Украины мне всегда поступал этот вопрос, как только люди узнавали, где я живу. В какой-то момент я стала настолько часто слышать этот вопрос и видеть недопонимание в глазах людей, которые знают о Славянске только из сводок новостей 2014-го и продолжают ассоциировать его с войной, ведь после освобождения города прошло уже 6 лет. Несмотря на то, что военный конфликт продолжается в других городах на Востоке Украины, Славянск очень изменился за время после 14-го в лучшую сторону. Так и родился этот проект и этот вопрос стал главным, вокруг которого разворачивается все действие в подкасте: я говорю с героями о их жизни до и после 2014-го в городах на Востоке Украины, почему они остаются здесь или возвращаются на Родину.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1575,
+      "body_end": 2475,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00008",
+      "text": "> Nika Perepelitsa (NP): The idea to name the podcast ‘How do you live here?’ did not come at random. For the past few years, people I met from other countries and other regions of Ukraine have always asked me that question upon finding out where I live. At some point, I heard the question so often that I could see the misunderstandings in their eyes — the misunderstandings of people who only know about Slavyansk from news reports of 2014 and continue to associate it with the war. But six years has already passed since the liberation of the city. Despite the fact that armed conflict still continues in other cities in eastern Ukraine, Slavyansk has changed for the better since 2014. That's how this project was born; the podcast unfolds around this very question. I speak with people from cities across eastern Ukraine about their life before and after 2014, asking why they planned to stay on, or whether they plan to return to their homeland.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2477,
+      "body_end": 3429,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00009",
+      "text": "ME: And what are the biggest misconceptions and prejudices about Slavyansk and eastern Ukraine in general? What hope is there that they can be changed?",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3431,
+      "body_end": 3582,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725505-b00010",
+      "text": "> НП: Люди не знают достоверно, какая ситуация здесь сейчас. Очень многие люди все еще боятся ехать в Славянск, где я живу, Краматорск, Северодонецк, считая, что это в целом все один небезопасный регион и не углубляясь в контексты. Все привыкли слышать “Донбасс” и ассоциировать его с войной и опасностью. Но это не так. Предрассудков очень много: это депрессивный регион, здесь люди мало улыбаются и вообще не очень приветливые. Но я и своим же подкастом пытаюсь разбить эти стереотипы, поэтому рассказываю и говорю с активными молодыми людьми, которые работают здесь и живут, они живут тем, что изменить свой город и представления о нем других людей. Поэтому мне важно показать эту сторону города, акцентировать внимание на его истории (в Славянске много исторических зданий конца 19 века, а сам город всегда был купеческим, а не таким уж индустриальным, как принято думают о городах Донецкой и Луганской области. У нас нет ни одной шахты и не было никогда, нет тяжелой промышленности, зато есть прекрасный Славянский курорт с целебными озерами, который сейчас тоже, к сожалению, находится в упадке. Как исправить стереотипы?",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3584,
+      "body_end": 4711,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00011",
+      "text": "> Больше говорить о хорошем, об инициативах, которые здесь появляются, выводить Славянск и другие города Восточной Украины на всеукраинский культурный уровень (ведь у них есть потенциал для этого).",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4713,
+      "body_end": 4910,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00012",
+      "text": "> NP: People don't fully know what the situation here is right now. Many are still too scared to travel to Slavyansk, where I live, or to Kramatorsk or Severodonetsk, believing all belong to a single, unsafe region, without looking more deeply into the local context. Everybody is used to hearing “Donbas” and thinking of war and danger. But that's not the case. There's a lot of prejudice: this is a depressed region whose people are unfriendly and never smile. I'm trying to shatter those stereotypes with my podcast, so I talk with engaged young people who work and live here, living by changing their city and other people's ideas of it. It's important for me to show that side of the city, focusing on its history (in Slavyansk there are many 19th century buildings; the city has always been mercantile rather than industrial, as people often assume about cities in the Donetsk and Luhansk regions). There are no mines here, there is no heavy industry. But there is a wonderful lakeside resort in Slavyansk which, sadly, is inoperative right now. So how can these stereotypes be fought? By saying more about the good things happening here, the initiatives which are underway, helping develop cultural life in Slavyansk and other cities in eastern Ukraine to national standards (that potential certainly exists).",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4912,
+      "body_end": 6228,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00013",
+      "text": "ME: Your heroes are generally young people who weren't seized with desire to head to the big cities, or even returned from them. They're activists, artists, designers — that is, cultural professionals. Why and how did you choose such interviewees?",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 6230,
+      "body_end": 6477,
+      "source_links": [],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725505-b00014",
+      "text": "> НП: Я делаю истории о людях, о их личном становлении и опыте в этих городах, также мне важна личная позиция человека, почему именно он возвращается или переезжает сюда. Именно поэтому активисты и культурные деятели интересны мне более всего. Они живут с четкой позицией и проактивны, открыты к новому (это еще один стереотип, что люди тут очень инертны). Проблема того, что активные молодые люди уезжают в мегаполисы и заграницу сейчас не менее актуальна, чем раньше, до 14-го, поэтому находя таких людей я показываю, что не все так плохо и есть люди, которые действительно любят свой город и регион и горят желанием быть тут.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 6479,
+      "body_end": 7107,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00015",
+      "text": "> Так, второй эпизод я делала с немцем, который переехал в Славянск из Берлина и открыл здесь общественную организацию (я говорила с Игорем Мичником из центра гражданского общества “Друкарня”), до этого жил и учился, работал в очень разных странах и городах: Великобритания, Эстония, Кыргызстан. Мне было интересно, что сподвигло такого человека переехать на Восток Украины, как ему тут живется и зачем ему быть активистом в Славянске. Либо девушка, которая открыла в 19 лет свою типографию в Краматорске, параллельно путешествует по миру и тоже имеет активную гражданскую позицию. В больших городах такой практикой никого не удивишь, а вот для маленьких это что-то новое и необычное.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 7109,
+      "body_end": 7793,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00016",
+      "text": "> NP: I produce stories about people, about their personal journeys and experiences in these cities. That's why somebody's personal outlook is important to me — why exactly he or she moves here or comes back. And that's why I find artists and cultural figures the most interesting; they take a clear position and are very proactive and open to new things (as opposed to the stereotype that people here are largely passive).",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 7795,
+      "body_end": 8218,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00017",
+      "text": "> The problem of active young people leaving for the big cities or heading overseas is no less relevant now than it was before 2014. Therefore, by finding such people I can show that not everything here is so awful, that there are those who really love their city and their region and are seized with desire to be here.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 8220,
+      "body_end": 8539,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00018",
+      "text": "> For example, in the second episode I interviewed a German who moved to Slavyansk from Berlin and founded an NGO here (Igor Mitchnik from the Drukarnya civil society centre). Before moving here he lived, worked and studied in very different countries and cities: Great Britain, Estonia and Kyrgyzstan. I wondered what prompted a person like Igor to move to eastern Ukraine, how he finds life here and why he decided to become an activist in Slavyansk. Or there's the 19-year old girl who opened her own printing house in Kramatorsk while travelling the world and keeping up her civil society activism. Nobody would be surprised to meet these people in a big city, but for small towns, stories like theirs are new and unusual.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 8541,
+      "body_end": 9267,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00019",
+      "text": "ME: It's become fashionable in international media to present “hipsterisation” as an unambiguous sign of general progress. To some extent that may be true. But what can be said about those residents who don't have that background, who work in factories and mines? They have fewer perspectives and their voices are seldom heard. How do they “live here”?",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 9269,
+      "body_end": 9621,
+      "source_links": [],
+      "source_kind": "div",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725505-b00020",
+      "text": "> НП: Действительно, Вы правы, голоса простых граждан, которых большинство, реже могут быть услышаны. Но, как не странно, именно такие люди в большинстве своем приходят на выборы и активно голосуют. Молодежь ходит на выборы в меньшинстве. Если мы говорим о цехах, скажем, о керамическом производстве, чем славится наш город, то многие люди открывают свои маленькие предприятия и малый бизнес. Конечно, для жизни этого не хватает. В целом, в Славянске всегда наблюдалась проблема с занятостью, нехватка рабочих мест, особенно, проблема с занятостью людей в возрасте 45+. Поэтому многие уезжают. Но должна сказать, что, по опыту моих знакомых, найти работу в Славянске после 14-го стало проще, общество на всех уровнях понемногу. Скажем, люди все чаще не боятся самостоятельно открывать свои инициативы, свой бизнес в любом возрасте.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 9623,
+      "body_end": 10454,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00021",
+      "text": "> NP: You're right there. The voices of ordinary citizens, who are in the majority, are less likely to be heard. But it is precisely those people who actively vote in elections. Young people are in the minority at the polls. When it comes to industry, Slavyansk is famous for its ceramic workshops. Many more people run their own small businesses. But of course, that's not enough to live on. On the whole, Slavyansk has always faced problems with employment, a lack of workplaces, particularly for those aged 45 or above. That's why so many people leave. But I must say that, at least according to my acquaintances, it has become easier to find a job in Slavyansk since 2014. Society is gradually changing on all levels. It can be said that people are no longer afraid to launch their own initiatives or business at any age.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 10456,
+      "body_end": 11281,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00022",
+      "text": "ME: Notwithstanding the many specific dynamics in the Donbas — first and foremost the armed conflict — your podcast deals with issues which would be familiar to the residents of many small towns across eastern Europe and the former Soviet Union. Will you expand the scope of your podcast?",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 11283,
+      "body_end": 11571,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725505-b00023",
+      "text": "> НП: По фидбеку на подкаст я все еще вижу, что эти проблемы известны не многим, тем более, в восточной Европе. Это и понятно, вооруженный конфликт и жизнь после него – специфическая тема. Один из недавних эпизодов я записывала с парнем из Словакии, мы сравнивали жизнь в Славянске и жизнь в маленьких городах Словакии. И здесь я увидела много похожего и поняла, что мы ментально также очень похожи с людьми из Центральной Европы. Я вижу потенциал, ведь маленькие города есть везде и интересные люди в них. Хочу расширять рамки на Центральную и Западную Европу, также меня очень интересует Центральная Азия. Пандемия останавливает в этом плане, ведь все выпуски я записываю только офлайн, это мой принцип, поэтому будем ждать и надеяться на скорейшую стабилизацию ситуации в мире и открытии границ.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 11573,
+      "body_end": 12371,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00024",
+      "text": "> NP: The feedback I've received suggests that many are still not aware of these problems, particularly in eastern Europe. That's understandable — after all, an armed conflict and life after it is a particular experience. In one of my recent episodes I interviewed a guy from Slovakia; we compared life in Slavyansk with life in small towns in his country. And there I did see many similarities and realised how much we have in common with people from central Europe. So I see potential, because there are small towns everywhere inhabited by interesting people with a lot to say. I want to expand the podcast's scope to central and western Europe, and am also very interested in central Asia. The pandemic has stopped those plans for the time being, because I record all episodes in person. That's a matter of principle for me, but it means that we will have to wait until the situation stabilises and international borders open.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 12373,
+      "body_end": 13302,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00025",
+      "text": "ME: How popular are podcasts in Ukraine? Why did you choose this format for your project?",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 13304,
+      "body_end": 13393,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-725505-b00026",
+      "text": "> НП: Популярность подкастов даже за последний год выросла в разы. Я запустила свой в феврале 2020 года после Международный школы подкастов в Тбилиси “Все слышно 2020″, которую организовал Prague Civil Society Center. Изучив недавнюю статистику была удивлена, но в Украине сейчас более 200 подкастов и их число только растет. Есть подкасты, которые создают большие lifestyle-медиа (The Village, радио “Аристократы”), но также много подкастов, созданных независимыми людьми, которые никак могут не относится к медиасектору, и люди делают это сами просто дома. Собственно, как и я. Главная проблема, которую я вижу с подкастингом в Украине – люди не знают о таком формате и он им не привычен. Все знают формат Youtube-видео, а при слове “подкаст” часто спрашивают “А что это?”, “А как это слушать?”. Поэтому это не тот тип медиапродукта, где можно быстро взлететь, заработать, стать популярным. Тем более в Украине.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 13395,
+      "body_end": 14308,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00027",
+      "text": "> Я делаю подкаст, потому что всегда любила радио и мечтала когда-то там работать. Но в нашем городе никогда не было радио, где я бы могла себя реализовать. Подкасты начала слушать 4 года назад и очень проникла в эту нишу. Сейчас не представляю другой формат, в котором я бы могла делать такие истории. Это не история про огромные охваты и миллионную аудиторию.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 14310,
+      "body_end": 14671,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00028",
+      "text": "> NP: The popularity of podcasts has grown exponentially over the past year alone. I launched mine in February 2020 after attending the international podcast school in Tbilisi, organised by the Prague Civil Society Centre. When reading the latest statistics, I was surprised to learn that there are now more than 200 podcasts in Ukraine and their number is only growing. There are those founded by big lifestyle publications (such as The Village or Radio Aristocrats) but many more created independently, from home, by people with no relation to the media sector whatsoever. As it happens, people like me. The main problem I see with podcasting in Ukraine is that people don't know about the format and they're not used to it. Everybody knows about YouTube videos, but when the word ‘podcast’ is used they often ask ‘What's this?’ or ‘How do I listen to it?’. This isn't a media product which promises quick success, easy money, and guaranteed popularity. Especially not in Ukraine.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 14673,
+      "body_end": 15655,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-725505-b00029",
+      "text": "> I produce podcasts because I've always loved the radio and have long dreamed of working there someday. But our city doesn't have a radio station where I can realise that aspiration. So I started listening to podcasts four years ago and they captivated me. Now I can't imagine any other format where I could tell these stories.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 15657,
+      "body_end": 15985,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "3e2fc3ce8b7aa6dd9447fe9abd2d7369e77123b498bf57f94f7d2e8c664c29bd",
+  "word_count": 2631,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 15985,
+  "retrieved_at": "2026-11-16T22:28:54.224128+00:00",
+  "raw_html_sha256": "de3f774d52b51ce0614baff6d146fa9bafd89d3fe028b24a191bb1cf670d17c0",
+  "resolved_source_url": "https://globalvoices.org/2020/12/28/how-do-you-live-here-a-local-podcaster-takes-on-misconceptions-about-eastern-ukraine/",
+  "canonical_url": "https://globalvoices.org/2020/12/28/how-do-you-live-here-a-local-podcaster-takes-on-misconceptions-about-eastern-ukraine/",
+  "source_bytes": 204163,
+  "authors": [
+    {
+      "name": "Maxim Edwards",
+      "url": "https://globalvoices.org/author/maxim-edwards/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 725505,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "de3f774d52b51ce0614baff6d146fa9bafd89d3fe028b24a191bb1cf670d17c0",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-21206ae7e366ad81a6e4",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-12",
+    "eligible_month_documents": 69,
+    "selected_month_documents": 58,
+    "inclusion_probability": 0.8405797101449275,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Maxim Edwards",
+  "body_start": 508,
+  "body_end": 16493,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "f63804859541eafe9acf53caa6dc9da044165d1a003a9c43c6d8d011471cc849",
+  "text_path": "articles/gv-725505.txt",
+  "metadata_path": "metadata/gv-725505.json",
+  "attribution": "This story by Maxim Edwards originally appeared on Global Voices. https://globalvoices.org/2020/12/28/how-do-you-live-here-a-local-podcaster-takes-on-misconceptions-about-eastern-ukraine/",
+  "content_sha256": "fffdd479b93c431f2aed616355657f54632b090a608323065331fc2d2470cc0b",
+  "source_sha256": "de3f774d52b51ce0614baff6d146fa9bafd89d3fe028b24a191bb1cf670d17c0",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,63 @@
+‘I hope this isn’t for weapons’: How Syrian data workers train AI
+Written by: UntoldMag
+Originally published by Global Voices: https://globalvoices.org/2025/03/10/i-hope-this-isnt-for-weapons-how-syrian-data-workers-train-ai/
+Published: 2025-03-10T01:40:47Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+This post by Milagros Miceli was first published by UntoldMag on April 18, 2024. This edited version is republished on Global Voices as part of a content-sharing agreement.
+
+I met Fatma in June 2019 in Sofia, Bulgaria. Four years earlier, at the age of 17, she had been forced to leave her home in Aleppo with her whole family, until reaching Finland via Sofia.
+
+The smugglers had promised a house and a car in Finland for the sum of EUR 9,000 (USD 9,744) paid, but this promise went unfulfilled. Instead, after six months, Fatma’s family was deported to Bulgaria because their “fingerprints were registered in Sofia first.”
+
+Fatma, now 21, lived with her family in a refugee camp in the Bulgarian capital. While assisting her father at the camp’s hairdressing salon, she also worked part-time for the data-labeling company where I was conducting fieldwork. She was recruited by the company at the refugee camp.
+
+During our initial conversation, she was at the company’s office, seated alongside Diana, another Syrian asylum seeker who was engaged in labeling images of people based on race, age, and gender.
+
+In contrast, Fatma was immersed in a project that involved satellite images and semantic segmentation, a critical task for computer vision that involves the meticulous separation and labeling of every pixel in an image. This form of data work holds particular importance in generating training data for AI, especially for computer vision systems embedded in devices such as cameras, drones, or even weapons.
+
+Fatma explained that the task consisted mainly of separating “the trees from the bushes and cars from people, roads, and buildings.” Following this segmentation, she would attach corresponding labels to identify each object.
+
+Data work requires skill
+
+Explained in this manner, the work might seem trivial and straightforward. Such tasks fall under what is known as microwork, clickwork, or, as I refer to it, data work. This constitutes the labor involved in generating data to train and validate AI systems.
+
+According to the World Bank, there are between 154 million and 435 million data workers globally, with many of them situated in or displaced from the global majority. They often work for outsourcing platforms or companies, primarily as freelancers, earning a few cents per piece or task without the labor protections such as paid sick leave commonly found in more traditional employment relationships.
+
+Data workers generate data through various means that range from scraping information from the internet to recording their voices or uploading selfies. Similar to Fatma, they frequently engage in labeling tasks. Additionally, data workers may contribute to algorithm supervision, such as rating the outputs of recommender systems on platforms like Netflix or Spotify and assessing their usefulness, appropriateness, and toxicity.
+
+In other instances, data workers might be tasked with plainly impersonating non-existing AI systems and be instructed to “think like a robot” while pretending to be a chatbot, for instance.
+
+Despite its crucial role in the development and maintenance of AI technologies, data work is often belittled as micro or small, involving only a few clicks, and dismissed as low skill or blue collar.
+
+I asked Fatma if the satellite images she was working on could be of Syria. She said she thought the architecture and vehicles looked familiar. I wondered if her displacement had been leveraged as expertise. Staring at the screen, she whispered, “I hope this isn’t for weapons.” Neither she nor I could be certain.
+
+The known and the unknown
+
+The proliferation of autonomous drones and swarm technologies has experienced exponential growth in recent years, facilitated by the integration of AI in reconnaissance, target identification, and decision-making processes.
+
+Illustrating a poignant example, facial recognition technologies have been utilized to uphold the segregation and surveillance of the Palestinian people, while automated weapons have played a crucial role in the ongoing genocide in Gaza. Companies like the Israeli SmartShooter boast about their lethal capabilities with the slogan “One Shot, One Hit.”
+
+Surveillance drones, predictive analytics, and decision support systems are utilized for strategic planning in “threat anticipation” and real-time monitoring along border regions. For instance, the German Federal Office for Migration and Refugees (BAMF) employs image biometrics for identity identification and voice biometrics for dialect analysis to ascertain asylum seekers’ country of origin and evaluate their eligibility for asylum. This was revealed by BAMF in response to a query initiated by German MPs. Data workers subcontracted through the platform Clickworker participated in producing the voice samples required to develop the system.
+
+Fortunately, the data company in Bulgaria has a strong policy to reject requests related to warfare technologies, Fatma’s manager explained.
+
+She added that the satellite imagery labeled by the team had been commissioned by a central European firm developing autonomous piloting systems for air transportation, not weapons. This information correlates with the client’s website. However, the website also states that their technology is additionally used for unmanned aerial vehicles (UAV), commonly known as drones, with applications including surveillance.
+
+Workers’ ethical concerns
+
+Privacy infringements and the potential for discriminatory profiling are among the most obvious concerns related to AI systems applied to border surveillance and warfare. Despite these risks disproportionately affecting their own communities, sometimes with lethal consequences, most data workers are kept in the dark concerning the ultimate purpose of the data they contribute to producing.
+
+The outsourcing of data work to external organizations, often situated far away from the requesters’ geographical location, complicates workers’ efforts to navigate the intricate supply chains that support the AI industry. Instructions given to data workers seldom provide details about the requester or the intended use of the data.
+
+AI companies frequently rationalize the veil of secrecy as a means of safeguarding their competitive edge.
+
+The fact that data workers are integrated into industrial structures designed to keep them uninformed and subject to surveillance, retaliation, and wage theft does not mean they do not have ethical concerns about their work and the AI applications it supports.
+
+In fact, there have been instances where data workers have explicitly alerted consumers to privacy-related and other ethical issues associated with the data they generate. For example, in 2022, Venezuelan data workers reported anonymously that Roomba robot vacuum cleaners capture pictures of users at home, which are then viewed by human workers.
+
+Data workers possess a unique vantage point that can play a crucial role in the early identification of ethical issues related to data and AI. Encouraging consumers and society at large to align with them in advocating for increased transparency in the AI data production pipeline is essential.
+
+Milagros Miceli is a sociologist and computer scientist, leading the research group Data, Algorithmic Systems, and Ethics at the Weizenbaum-Institut. She is also a researcher with the Distributed AI Research Institute (DAIR). Miceli’s research is focused on labor conditions and power asymmetries in outsourced data work, examining their impact on machine learning datasets. Through a diverse array of worker-centric methodologies, she actively engages communities of precarized data workers from the global majority in action-research projects. Her broader interests include questions of legitimacy and knowledge production in data, community-led research, labor organizing, and the intersection of critical data studies and data activism.

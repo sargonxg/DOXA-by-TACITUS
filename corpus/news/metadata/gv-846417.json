@@ -1,0 +1,295 @@
+{
+  "id": "gv-846417",
+  "publisher_id": 846417,
+  "source_id": "globalvoices:846417",
+  "source_url": "https://globalvoices.org/2025/11/18/built-for-all-artificial-intelligence-and-the-lgbtq-community/",
+  "title": "Built for all?: Artificial intelligence and the LGBTQ+ community",
+  "published_at": "2025-11-18T17:01:51Z",
+  "modified_at": "2025-11-18T17:10:48Z",
+  "api_author_id": 3344,
+  "api_content_sha256": "c9d2cb7b578cc82a8f149457d4e2f86cf42b8e83d0fd6b0cf639d7735ec3f15f",
+  "api_response_sha256": "217360dd42a0aacc83d2cf35e10ca84375192aafd41eec5fc6640a96ef1e9a72",
+  "api_retrieved_at": "2026-11-16T22:21:15.570113+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 189,
+      "count": 115,
+      "name": "Belgium",
+      "slug": "belgium",
+      "parent": 187
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 65,
+      "count": 729,
+      "name": "Hungary",
+      "slug": "hungary",
+      "parent": 57
+    },
+    {
+      "id": 1364,
+      "count": 1877,
+      "name": "LGBTQ+",
+      "slug": "gay-rights-lgbt",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 187,
+      "count": 2705,
+      "name": "Western Europe",
+      "slug": "western-europe",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-846417-b00001",
+      "text": "With each passing year, artificial intelligence (AI) appears to be increasingly embedded within our daily lives. Around the world, people are becoming more familiar with the ins and outs of this innovation. They are also beginning to see its potential advantages. Recently, a global survey conducted by market research firm Ipsos revealed that 55 percent of respondents felt AI-powered solutions offer more benefits than drawbacks. Results like these make it clear that, despite the anxiety surrounding this technology, the public remains intrigued by what it can do. Companies have taken note of this sentiment, selling their products by emphasizing their efficiency and usability. Given how private investment in AI has soared over the past decade, the evidence suggests that consumers have bought into this pitch.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 816,
+      "source_links": [
+        "https://hai.stanford.edu/ai-index/2025-ai-index-report/economy",
+        "https://www.ipsos.com/sites/default/files/ct/news/documents/2024-06/Ipsos-AI-Monitor-2024-final-APAC.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-846417-b00002",
+      "text": "However, not everyone is convinced. Case in point: members of the lesbian, gay, bisexual, transgender, and queer+ (LGBTQ+) community have paid more attention to the downsides associated with AI. Many problems can be traced back to the data used to train models, which is often rife with stereotypes and misconceptions about LGBTQ+ people. Yet AI’s “offline” impacts can be equally alarming. The technology’s incorporation into systems specifically designed to identify and surveil community members, for instance, is also top of mind. From development to deployment, these issues illustrate how AI-enhanced tools are frequently more harmful than helpful to the LGBTQ+ community. Without proper guardrails on this technology’s use in place, many may find that it is considerably more hazardous than it is worth.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 818,
+      "body_end": 1628,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-846417-b00003",
+      "text": "Digitizing established stereotypes",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1630,
+      "body_end": 1664,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-846417-b00004",
+      "text": "To understand how AI can adversely affect LGBTQ+ individuals, it is important to start with the data that is fed to models. “Wired” highlighted that, when prompted to depict members of this community, popular image generation tools produced reductive outputs. As an example, Midjourney routinely presented lesbian women as stern figures with numerous tattoos. Data scraped from the internet may be to blame for these oversimplified (and offensive) representations of queer life. Much of the information available to models about the LGBTQ+ community is influenced by stereotypes. As a result, solutions like Midjourney are exceedingly likely to reproduce these biases in their images. Although workarounds, such as improved data labeling, can boost model accuracy, they may be insufficient because of the sheer amount of derogatory content found online.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1666,
+      "body_end": 2519,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Midjourney",
+        "https://www.wired.com/story/artificial-intelligence-lgbtq-representation-openai-sora/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-846417-b00005",
+      "text": "Flawed portrayals of the LGBTQ+ community by AI models are not an isolated problem. In fact, many of the AI tools dominating the market generate outputs that are skewed against this group. In a report assessing the guiding assumptions which define large language models (LLMs), the United Nations Educational, Scientific and Cultural Organization (UNESCO) identified how widely used tools like Meta’s Llama 2 and OpenAI’s GPT-2 are markedly shaped by heteronormative attitudes. According to their research, these LLMs created negative content about gay people more than half of the time in their simulations. UNESCO’s findings not only underscore the pervasive homophobia in training data consumed by prominent generative AI solutions; they also show major developers’ inability to effectively address this far-reaching issue.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 2521,
+      "body_end": 3347,
+      "source_links": [
+        "https://unesdoc.unesco.org/ark:/48223/pf0000388971"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-846417-b00006",
+      "text": "Enhancing public surveillance",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 3349,
+      "body_end": 3378,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-846417-b00007",
+      "text": "The damage AI may inflict upon LGBTQ+ individuals is not limited to the digital space. AI-powered systems that allegedly detect the gender of those in public spaces have garnered real attention. Forbidden Colours, a Belgian non-profit that defends LGBTQ+ rights, outlined the troubling implications of AI tools for “automatic gender recognition” (AGR). AGR solutions analyze audio-visual content, like security camera footage, to draw conclusions about a person’s gender, citing elements like their facial features and vocal patterns. These “cutting-edge” systems are inherently problematic. As the organization states, it is impossible to detect how a person understands their gender by exclusively studying how they look or speak. In this regard, building solutions that classify individuals using these arbitrary characteristics is misguided at best and dangerous at worst.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 3380,
+      "body_end": 4256,
+      "source_links": [
+        "https://www.forbidden-colours.com/wp-content/uploads/2024/01/240130-Report-on-LGBTIQ-AI.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-846417-b00008",
+      "text": "Despite these glaring deficiencies, AGR systems have their vocal proponents. In particular, governments that are expressly antagonistic to the LGBTQ+ community have adopted these tools, with many rationalizing their decisions in the name of public safety. For example, “Politico Europe” reported how Hungarian Prime Minister Viktor Orbán sanctioned the use of AI-enabled biometric monitoring at local Pride events. The far-right politician claimed that such measures would shield children from the “LGBTQ+ agenda.” In reality, the move enables the government and its allies in law enforcement to surveil artists, activists, and average citizens at these gatherings. Although this policy is being reviewed by institutions within the European Union, its implementation serves as a stark reminder of how AI can be used to intimidate LGBTQ+ leaders who are mobilizing for change.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 4258,
+      "body_end": 5133,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Viktor_Orb%C3%A1n",
+        "https://www.politico.eu/article/hungary-eu-watchlist-facial-recognition-surveillance-lgbtq-pride/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-846417-b00009",
+      "text": "Changing the equation",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 5135,
+      "body_end": 5156,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-846417-b00010",
+      "text": "For members of the LGBTQ+ community, the trade-offs related to AI are steep. While this innovative technology might be a net positive for the larger population, it presents specific challenges that may disproportionately impact queer users. Common tools, such as image and text generators, have been found to recirculate damaging tropes about LGBTQ+ life that are difficult to completely eliminate. Outside the digital realm, AI’s deployment in offline spaces also poses significant risks. Its incorporation into surveillance systems, oftentimes with the explicit goal of labeling the genders of those caught in the dragnet, stands as an affront to individual privacy. Taken together, these examples demonstrate how many of the AI solutions which have reshaped our day-to-day experiences were not designed with all people in mind.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 5158,
+      "body_end": 5988,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-846417-b00011",
+      "text": "Leaders across sectors must take action to reverse this trend. It starts with forging partnerships between developers and stakeholders in the LGBTQ+ community. Constructive collaboration can help ensure that the training data used by AI models more accurately reflects the lived realities of queer folk. It should also include robust safeguards to prevent the misuse of AI for surveillance against the community. Systems equipped with gender detection capabilities must be strictly prohibited, as they undermine an individual’s right to privacy. Critically, input from LGBTQ+ individuals should be solicited at all stages of the tool development lifecycle. This cooperation would not only mitigate the myriad harms presented by AI, but also increase the likelihood that members of this community will begin to see the technology as a value add.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 5990,
+      "body_end": 6834,
+      "source_links": [
+        "https://www.openglobalrights.org/risks-limitations-artificial-intelligence-sexual-gender-diverse-community/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "91d3b1386a6fbd1f522a5b6a1497c3d8cd0911a7491a27997c844f7204524cad",
+  "word_count": 1015,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 6834,
+  "retrieved_at": "2026-11-16T22:54:54.390276+00:00",
+  "raw_html_sha256": "7126503449faa31c22ae8cfa565cd6f6bc484ae371f4c43aa66d957b721763d3",
+  "resolved_source_url": "https://globalvoices.org/2025/11/18/built-for-all-artificial-intelligence-and-the-lgbtq-community/",
+  "canonical_url": "https://globalvoices.org/2025/11/18/built-for-all-artificial-intelligence-and-the-lgbtq-community/",
+  "source_bytes": 189239,
+  "authors": [
+    {
+      "name": "Aaron Spitler",
+      "url": "https://globalvoices.org/author/aaronspitler/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 846417,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "7126503449faa31c22ae8cfa565cd6f6bc484ae371f4c43aa66d957b721763d3",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-8970abee9b530186a76d",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-11",
+    "eligible_month_documents": 57,
+    "selected_month_documents": 48,
+    "inclusion_probability": 0.8421052631578947,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Aaron Spitler",
+  "body_start": 462,
+  "body_end": 7296,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "75ef053f0c65489e0ff56ed30ea7d862e11ade94c6f44a3e585d49afad0d2e5c",
+  "text_path": "articles/gv-846417.txt",
+  "metadata_path": "metadata/gv-846417.json",
+  "attribution": "This story by Aaron Spitler originally appeared on Global Voices. https://globalvoices.org/2025/11/18/built-for-all-artificial-intelligence-and-the-lgbtq-community/",
+  "content_sha256": "b329e5ead711fa6b1d6f14a20b2242827eb6368164caf630f946e3e484489fa3",
+  "source_sha256": "7126503449faa31c22ae8cfa565cd6f6bc484ae371f4c43aa66d957b721763d3",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

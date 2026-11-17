@@ -1,0 +1,733 @@
+{
+  "id": "gv-825627",
+  "publisher_id": 825627,
+  "source_id": "globalvoices:825627",
+  "source_url": "https://globalvoices.org/2024/12/23/west-asia-and-north-africa-in-2024-turmoil-transformation-and-trauma/",
+  "title": "West Asia and North Africa in 2024: Turmoil, transformation, and trauma",
+  "published_at": "2024-12-23T04:03:15Z",
+  "modified_at": "2024-12-23T17:05:55Z",
+  "api_author_id": 3229,
+  "api_content_sha256": "75c86f37aa824821fc97a0f7158425cc0b008fc1db3b7410019b6943c306efff",
+  "api_response_sha256": "6625a8d03b3e648da1476e3f26f88d0194314166208c9a1cf51b3466ab72098a",
+  "api_retrieved_at": "2026-11-16T22:21:08.459699+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 87,
+      "count": 410,
+      "name": "Algeria",
+      "slug": "algeria",
+      "parent": 14
+    },
+    {
+      "id": 23,
+      "count": 2547,
+      "name": "Egypt",
+      "slug": "egypt",
+      "parent": 14
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 2578,
+      "count": 3152,
+      "name": "Iran",
+      "slug": "iran",
+      "parent": 14
+    },
+    {
+      "id": 22,
+      "count": 1022,
+      "name": "Iraq",
+      "slug": "iraq",
+      "parent": 14
+    },
+    {
+      "id": 24,
+      "count": 1672,
+      "name": "Israel",
+      "slug": "israel",
+      "parent": 14
+    },
+    {
+      "id": 34,
+      "count": 1359,
+      "name": "Lebanon",
+      "slug": "lebanon",
+      "parent": 14
+    },
+    {
+      "id": 88,
+      "count": 394,
+      "name": "Libya",
+      "slug": "libya",
+      "parent": 14
+    },
+    {
+      "id": 1358,
+      "count": 4577,
+      "name": "Migration &amp; Immigration",
+      "slug": "migration-immigration",
+      "parent": 238
+    },
+    {
+      "id": 93,
+      "count": 1717,
+      "name": "Palestine",
+      "slug": "palestine",
+      "parent": 14
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 94,
+      "count": 291,
+      "name": "Qatar",
+      "slug": "qatar",
+      "parent": 14
+    },
+    {
+      "id": 273,
+      "count": 1466,
+      "name": "Refugees",
+      "slug": "refugees",
+      "parent": 238
+    },
+    {
+      "id": 19,
+      "count": 1052,
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "parent": 14
+    },
+    {
+      "id": 141,
+      "count": 611,
+      "name": "Sudan",
+      "slug": "sudan",
+      "parent": 15
+    },
+    {
+      "id": 95,
+      "count": 1277,
+      "name": "Syria",
+      "slug": "syria",
+      "parent": 14
+    },
+    {
+      "id": 13,
+      "count": 678,
+      "name": "Tunisia",
+      "slug": "tunisia",
+      "parent": 14
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    },
+    {
+      "id": 96,
+      "count": 495,
+      "name": "United Arab Emirates",
+      "slug": "united-arab-emirates",
+      "parent": 14
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    },
+    {
+      "id": 97,
+      "count": 362,
+      "name": "Yemen",
+      "slug": "yemen",
+      "parent": 14
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-825627-b00001",
+      "text": "As 2024 draws to a close, the region of West Asia and North Africa (WANA) has endured a year of extraordinary upheaval, marked by devastating conflicts, political transformations, and the enduring impacts of global challenges from new war technologies to climate crisis. From the genocidal Israeli war on Gaza and the West Bank to the collapse of regimes and the emergence of new power structures in the region and the world, this year’s events will leave a lasting personal and global imprint.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 494,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00002",
+      "text": "Israel’s unrestrained wars",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 496,
+      "body_end": 522,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00003",
+      "text": "Israel’s brutal war on Gaza and its violent encroachment in the West Bank intensified in 2024, leading to unprecedented destruction and loss of life, and warning of a new era of unrestrained technologies eroding the rules of war. Gaza is almost completely destroyed, with death tolls reaching tens of thousands, with some medical estimates putting the numbers as high as in the hundreds of thousands. The West Bank faced expanded settlement activity, violent crackdowns, and mass displacements.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 524,
+      "body_end": 1018,
+      "source_links": [
+        "https://globalvoices.org/special/palestine-2023/",
+        "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)01169-3/fulltext"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00004",
+      "text": "Read our special coverage: Israel's war on Gaza",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1020,
+      "body_end": 1067,
+      "source_links": [
+        "https://globalvoices.org/special/palestine-2023/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00005",
+      "text": "With the failure of the international community to stop the horrors and restrain the Israeli government, international human rights organizations condemned Israel's actions as war crimes, though global powers remained largely paralyzed. The Israeli bombing of Lebanon, surpassing the horrors of past invasions and campaigns, further destabilized the region with civilians bearing the brunt of these attacks, fueling anger and solidarity across the world.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1069,
+      "body_end": 1523,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/2024_Israeli_invasion_of_Lebanon",
+        "https://globalvoices.org/2024/09/24/israels-deadliest-day-in-lebanon-kills-500-sparks-war-crimes-outcry/",
+        "https://lebanesestudies.com/the-human-cost-of-the-israeli-aggression-on-lebanon-after-the-cease-fire/",
+        "https://press.un.org/en/2024/sc15854.doc.htm",
+        "https://www.aljazeera.com/gallery/2024/9/29/worldwide-protests-against-israels-war-on-lebanon-gaza",
+        "https://www.un.org/unispal/document/ohchr-press-release-12sep24/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00006",
+      "text": "Israel also assassinated iconic figures that have marked the region for decades, with Sayyed Hassan Nasrallah, Hezbollah’s charismatic leader, Hamas’ Ismail Haniyeh and Yahya Sinwar likely the most prominent of them.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1525,
+      "body_end": 1741,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Hassan_Nasrallah",
+        "https://en.wikipedia.org/wiki/Ismail_Haniyeh",
+        "https://en.wikipedia.org/wiki/Yahya_Sinwar"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00007",
+      "text": "The ICJ, ICC, UN, and the global majority",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1743,
+      "body_end": 1784,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00008",
+      "text": "The International Court of Justice (ICJ) and the International Criminal Court (ICC) faced mounting pressure to hold Israel accountable for war crimes in Gaza and the West Bank. Despite widespread calls for justice, the courts’ ability to act was hampered by political resistance from Western powers, whose complicity in enabling these actions fueled global outrage. The paralysis of international legal institutions underscored the fragility of the post-World War II order and prompted calls for alternative mechanisms to enforce international law.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1786,
+      "body_end": 2334,
+      "source_links": [
+        "https://press.un.org/en/2024/sc15854.doc.htm",
+        "https://www.aljazeera.com/opinions/2024/10/13/the-iccs-credibility-is-hanging-by-a-thread",
+        "https://www.hrw.org/news/2024/10/25/international-court-rulings-require-eu-action-israel-and-palestine",
+        "https://www.middleeastmonitor.com/20240429-global-outrage-is-growing-against-netanyahus-genocide-in-gaza/",
+        "https://www.scmp.com/comment/opinion/world/article/3253389/gaza-war-gives-global-south-powers-chance-provide-moral-leadership"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00009",
+      "text": "In response, the global majority emerged as a powerful bloc challenging Western dominance in global governance. Countries in Africa, Asia, and Latin America intensified their calls for a multipolar world order, denouncing the West’s failure to uphold international law and role in destabilizing the world. This shift was evident in initiatives such as expanded BRICS membership and a renewed push for cooperation between global majority countries, signaling a realignment of geopolitical alliances.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2336,
+      "body_end": 2834,
+      "source_links": [
+        "https://theconversation.com/international-reaction-to-gaza-siege-has-exposed-the-growing-rift-between-the-west-and-the-global-south-216938",
+        "https://www.weforum.org/stories/2024/11/brics-summit-geopolitics-bloc-international/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00010",
+      "text": "Breaking the wrong kinds of records",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2836,
+      "body_end": 2871,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00011",
+      "text": "Israel’s wars in 2024 also broke unprecedented records in targeting journalists, medical workers, and United Nations staff. Media watchdogs reported an alarming surge in journalist fatalities, with many killed while documenting war crimes. Medical personnel faced relentless attacks as hospitals and clinics were bombed, violating international humanitarian law. UN agencies operating in the region suffered devastating losses, with staff killed and facilities destroyed. Simultaneously, the deepening famine in Gaza, fuelled by blockades and infrastructure destruction, highlighted the systematic dismantling of civilian life. Israel’s consistent dismissal of UN resolutions and international legal standards underscored a pattern of impunity, further eroding the credibility of global institutions tasked with upholding peace and justice.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2873,
+      "body_end": 3713,
+      "source_links": [
+        "https://euromedmonitor.org/en/article/6567/Israeli-army-systematically-targets-medical-teams-in-effort-to-destroy-Palestinian-life-in-northern-Gaza",
+        "https://press.un.org/en/2024/sc15895.doc.htm",
+        "https://www.aljazeera.com/news/2024/12/12/media-groups-condemn-israel-over-gaza-journalist-massacre",
+        "https://www.bbc.com/news/world-middle-east-67245797",
+        "https://www.euronews.com/my-europe/2024/11/22/record-number-of-aid-workers-killed-worldwide-in-2024-un-says"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00012",
+      "text": "Shocking numbers emerged, including unprecedented killing of children in Gaza, which surpassed already by March 2024, the number of children killed worldwide in at least four years. The number of journalists killed by Israel in 2024 exceeded those in any previous war, while record numbers of UN staff were also targeted. In a striking precedent, Israel declared a UN institution a terrorist group, escalating its war on the international body.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3715,
+      "body_end": 4159,
+      "source_links": [
+        "https://globalvoices.org/2024/10/30/israels-war-on-the-united-nations-why-a-ban-on-unrwa-sets-a-dangerous-precedent/",
+        "https://www.msnbc.com/top-stories/latest/death-toll-children-gaza-israel-rcna143269"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00013",
+      "text": "Read our special coverage: A region on the brink: The global implications of the war on Gaza",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4161,
+      "body_end": 4253,
+      "source_links": [
+        "https://globalvoices.org/special/a-region-on-the-brink-the-global-implications-of-the-war-on-gaza/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00014",
+      "text": "The Forgotten War: Sudan",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4255,
+      "body_end": 4279,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00015",
+      "text": "While global attention fixated on the war on Gaza and its connected wars in Lebanon, Sudan’s war remained underreported despite its catastrophic toll. In El Fasher and beyond, local medical teams struggled heroically amid international aid withdrawals. The war’s consequences deepened the severe humanitarian crisis, displacing millions and exacerbating famine with no end in sight.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4281,
+      "body_end": 4663,
+      "source_links": [
+        "https://untoldmag.org/time-running-out-for-medical-teams-in-sudan-inside-el-fashers-last-war-hospital/",
+        "https://www.rescue.org/article/crisis-sudan-what-happening-and-how-help"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00016",
+      "text": "With tens of thousands killed in the conflict between the Sudanese Army and the Rapid Support Forces (RSF) militias since April 2023, the war has led to the biggest displacement crisis in the world with an estimated 11 million people displaced. With large parts of the country, including Darfur, and South Kordofan controlled by the RSF, the army holds onto the north and east amid rising accusations by Human Rights Watch and other human rights organizations of mass rape by RSF forces.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4665,
+      "body_end": 5152,
+      "source_links": [
+        "https://sudantribune.com/article294700/",
+        "https://www.aljazeera.com/news/2024/11/14/visualising-the-war-in-sudan-conflict-control-and-displacement",
+        "https://www.iom.int/news/displacement-sudan-crosses-11-million-devastating-crisis-reaches-new-heights-iom-chief"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00017",
+      "text": "Yemen and Iraq: Solidarity with Gaza",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5154,
+      "body_end": 5190,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00018",
+      "text": "In Yemen, the Houthis, in solidarity with Gaza, imposed blockades on key waterways, sparking violent responses from Western allies and Israel. This confrontation intensified Yemen’s humanitarian crisis, drawing further international criticism. In Iraq as well, factions close to Iran launched their own campaign of drones on Israel in solidarity with Gaza and demanding an end to the war.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5192,
+      "body_end": 5580,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Red_Sea_crisis",
+        "https://english.news.cn/20241215/30b7421cf75940f89be38c5bba21d5b5/c.html",
+        "https://thecradle.co/articles/iraqi-resistance-confirms-attacks-on-israel-will-continue-after-lebanon-ceasefire"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00019",
+      "text": "Failed elections: Tunisia, Algeria",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5582,
+      "body_end": 5616,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00020",
+      "text": "Elections in Tunisia and Algeria signaled shifts in the political landscape. In Tunisia, opposition groups boycotted the elections, accusing the government of suppressing dissent, while voter turnout hit record lows. With only 29 percent of the electorate participating, and opposing candidates imprisoned or sidelined, incumbent president Kais Saied won with 91 percent of the vote.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 5618,
+      "body_end": 6001,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/2024_Tunisian_presidential_election",
+        "https://globalvoices.org/2024/09/17/power-belongs-to-the-people-new-wave-of-protests-in-tunisia-as-elections-approach/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00021",
+      "text": "Algeria’s elections, marked by 23 percent turnout, conflicting numbers, and allegations of corruption, failed to address public demands for economic and social reforms. Incumbent president Abdelmadjid Tebboune, won with 84 percent of the vote amid contestations of the results by the other candidates.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6003,
+      "body_end": 6304,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/2024_Algerian_presidential_election",
+        "https://en.wikipedia.org/wiki/Abdelmadjid_Tebboune"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00022",
+      "text": "Seismic change: Syria",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6306,
+      "body_end": 6327,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00023",
+      "text": "The fall of the Assad regime in Syria, however, was the most seismic political event. After years of brutal conflict, internal dissent within the ruling elite and increased international pressure led to the collapse of the regime. While this opened a new chapter for Syria, it also raised questions about what’s next for a country deeply scarred by war and displacement. The challenges ahead include rebuilding governance structures, addressing international involvement, and mitigating ongoing attacks by Israel, Turkey, and the US.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6329,
+      "body_end": 6862,
+      "source_links": [
+        "https://globalvoices.org/special/forever-is-gone-forever-syria-after-the-dictatorship/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00024",
+      "text": "Read our special coverage: Forever is gone, forever: Syria after the dictatorship",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6864,
+      "body_end": 6945,
+      "source_links": [
+        "https://globalvoices.org/special/forever-is-gone-forever-syria-after-the-dictatorship/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00025",
+      "text": "An unprecedented Israeli and US airstrikes campaign immediately following the fall of the regime destroyed all the military capacity of the country with almost 500 strikes in a matter of days, coinciding with the occupation of further Syrian lands as the Israeli army reached almost 20 km from the capital Damascus. Turkey continued its occupation of northern Syria, as did the US, complicating peace efforts.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6947,
+      "body_end": 7356,
+      "source_links": [
+        "https://edition.cnn.com/2024/12/10/middleeast/israel-syria-assad-strikes-intl/index.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00026",
+      "text": "Amid these developments, Assad’s prisons saw the release of thousands of detainees, some of whom had been imprisoned for decades. The opening of these prisons known as “human slaughterhouses” underscored the need for accountability for decades of human rights abuses in Assad’s notorious dungeons.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 7358,
+      "body_end": 7655,
+      "source_links": [
+        "https://www.amnesty.org/en/documents/mde24/5415/2017/en/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00027",
+      "text": "Iran under new leadership",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7657,
+      "body_end": 7682,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00028",
+      "text": "Iran entered a new political era with the election of Masoud Pezeshkian, a reformist president after the death of Ebrahim Raisi, the previous president in a helicopter crash. Promising to alleviate sanctions and improve relations with the West, the new administration faced immediate challenges from hardliners, and public discontent over economic hardships. Israeli attacks on Iranian territory and the assassination of Hamas leader Ismail Haniyeh in Tehran, who was attending the new president’s inauguration, escalated tensions further.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7684,
+      "body_end": 8223,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00029",
+      "text": "The overlooked climate crisis",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 8225,
+      "body_end": 8254,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00030",
+      "text": "The region’s acute vulnerability to climate change was laid bare in 2024. Floods in Libya returned this year after killing over 11,000 people in 2023, this time displacing thousands, and exposing weak infrastructure and governance failures. Climate-related forced migration intensified, with thousands fleeing areas rendered uninhabitable by desertification and water scarcity. Across the region, these environmental crises compounded existing humanitarian challenges, demanding urgent action that remains elusive.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 8256,
+      "body_end": 8770,
+      "source_links": [
+        "https://dtm.iom.int/reports/libya-floods-ghat-flash-update-2-23-august-2024",
+        "https://globalvoices.org/2024/08/19/floods-in-libya-a-month-before-the-anniversary-of-the-derna-floods-raise-fears/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00031",
+      "text": "Arab states between absence and destabilization",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 8772,
+      "body_end": 8819,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00032",
+      "text": "Failure of Arab states to intervene in halting Israel’s wars, especially by Saudi Arabia, and alleged involvements in fueling regional conflicts drew sharp criticism. The UAE faced accusations of deepening the instability in Sudan and Yemen. Meanwhile, Qatar solidified its role as a regional mediator, facilitating talks between conflicting parties and hosting international peace efforts.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 8821,
+      "body_end": 9211,
+      "source_links": [
+        "https://www.newarab.com/news/uae-flights-flood-airstrip-un-says-supplies-weapons-sudan"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00033",
+      "text": "Egypt’s absence from a regional leadership role became increasingly evident as it struggled with economic crises and failure to open or control its borders with Gaza in Rafah. Protests in solidarity with Gaza were suppressed harshly, highlighting the regime’s iron grip on dissent.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 9213,
+      "body_end": 9494,
+      "source_links": [
+        "https://www.amnesty.org/en/latest/news/2024/06/egypt-release-protesters-and-activists-detained-over-palestine-solidarity/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00034",
+      "text": "The traumatic impact of war on Arab and Muslim populations",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 9496,
+      "body_end": 9554,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00035",
+      "text": "The wars and conflicts of 2024 deepened the trauma experienced by Arab and Muslim populations worldwide. Diaspora communities protested in solidarity with Gaza, Lebanon, and Sudan while grappling with rising Islamophobia in Europe and the US. The election of Donald Trump in the United States and the fast rise of racist far right parties in Europe amplified fears of increased anti-Muslim rhetoric and policies, compounding the anxieties of already marginalized communities who have suffered and witnessed a year of systematic dehumanization in Western media, institutions, governments, and societies.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 9556,
+      "body_end": 10158,
+      "source_links": [
+        "https://www.aljazeera.com/gallery/2024/10/7/protests-around-the-world-commemorate-one-year-of-israels-war-on-gaza",
+        "https://www.eunews.it/en/2024/10/24/islamophobia-eu-muslims-discrimination/",
+        "https://www.ohchr.org/en/statements/2024/03/un-experts-warn-islamophobia-rising-alarming-levels",
+        "https://www.theguardian.com/us-news/2024/oct/03/october-7-israel-gaza-islamophobia"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825627-b00036",
+      "text": "The events of 2024 have reshaped the WANA region, leaving a trail of destruction, trauma, and transformation. The interconnected crises — from wars and political upheavals to climate disasters — highlight the urgent need for global solidarity and sustainable solutions. As the world turns its gaze to 2025 and the genocidal war on Gaza continues, the lessons of this year must not be forgotten nor should the people of Gaza, Sudan, Syria, Lebanon, Yemen, and elsewhere.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 10160,
+      "body_end": 10629,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "9c84d89fd965b11cbd8d3b7140401f8d20cec2a26162d0fb408425cc7e6b730c",
+  "word_count": 1570,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 10629,
+  "retrieved_at": "2026-11-16T22:45:03.190712+00:00",
+  "raw_html_sha256": "13e6586c4201bd61d423610506adc7caa29e763c38bf251314f193c617097053",
+  "resolved_source_url": "https://globalvoices.org/2024/12/23/west-asia-and-north-africa-in-2024-turmoil-transformation-and-trauma/",
+  "canonical_url": "https://globalvoices.org/2024/12/23/west-asia-and-north-africa-in-2024-turmoil-transformation-and-trauma/",
+  "source_bytes": 199705,
+  "authors": [
+    {
+      "name": "Walid El Houri",
+      "url": "https://globalvoices.org/author/walidhouri/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 825627,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "13e6586c4201bd61d423610506adc7caa29e763c38bf251314f193c617097053",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-71ea623b5551da89743e",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-12",
+    "eligible_month_documents": 63,
+    "selected_month_documents": 53,
+    "inclusion_probability": 0.8412698412698413,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Walid El Houri",
+  "body_start": 477,
+  "body_end": 11106,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "7fde4f538cb610b0b438144155cc3273b49a124a837da6e81406ca639168b2cf",
+  "text_path": "articles/gv-825627.txt",
+  "metadata_path": "metadata/gv-825627.json",
+  "attribution": "This story by Walid El Houri originally appeared on Global Voices. https://globalvoices.org/2024/12/23/west-asia-and-north-africa-in-2024-turmoil-transformation-and-trauma/",
+  "content_sha256": "8a02d46e8fc8f3069adf92aea1a4ac614d6a026df7d96e0368458d096fa95417",
+  "source_sha256": "13e6586c4201bd61d423610506adc7caa29e763c38bf251314f193c617097053",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

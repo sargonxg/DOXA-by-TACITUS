@@ -1,0 +1,485 @@
+{
+  "id": "gv-830325",
+  "publisher_id": 830325,
+  "source_id": "globalvoices:830325",
+  "source_url": "https://globalvoices.org/2025/03/10/i-hope-this-isnt-for-weapons-how-syrian-data-workers-train-ai/",
+  "title": "‘I hope this isn’t for weapons’: How Syrian data workers train AI",
+  "published_at": "2025-03-10T01:40:47Z",
+  "modified_at": "2025-03-07T11:41:53Z",
+  "api_author_id": 3233,
+  "api_content_sha256": "5b4d6acb94080ba6c64e1479e227f036b82c513ea54ef36defd44003b788c85d",
+  "api_response_sha256": "b7ae78070ece6a1bed77a7fcd8b44d3db670b34ae8e350336552b24cdd2c52ee",
+  "api_retrieved_at": "2026-11-16T22:21:09.980043+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 61,
+      "count": 406,
+      "name": "Bulgaria",
+      "slug": "bulgaria",
+      "parent": 57
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 273,
+      "count": 1466,
+      "name": "Refugees",
+      "slug": "refugees",
+      "parent": 238
+    },
+    {
+      "id": 95,
+      "count": 1277,
+      "name": "Syria",
+      "slug": "syria",
+      "parent": 14
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 14,
+      "count": 15979,
+      "name": "West Asia &amp; North Africa",
+      "slug": "middle-east-north-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-830325-b00001",
+      "text": "This post by Milagros Miceli was first published by UntoldMag on April 18, 2024. This edited version is republished on Global Voices as part of a content-sharing agreement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 172,
+      "source_links": [
+        "https://untoldmag.org/i-hope-this-isnt-for-weapons-how-syrian-data-workers-train-ai/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00002",
+      "text": "I met Fatma in June 2019 in Sofia, Bulgaria. Four years earlier, at the age of 17, she had been forced to leave her home in Aleppo with her whole family, until reaching Finland via Sofia.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 174,
+      "body_end": 361,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00003",
+      "text": "The smugglers had promised a house and a car in Finland for the sum of EUR 9,000 (USD 9,744) paid, but this promise went unfulfilled. Instead, after six months, Fatma’s family was deported to Bulgaria because their “fingerprints were registered in Sofia first.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 363,
+      "body_end": 624,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00004",
+      "text": "Fatma, now 21, lived with her family in a refugee camp in the Bulgarian capital. While assisting her father at the camp’s hairdressing salon, she also worked part-time for the data-labeling company where I was conducting fieldwork. She was recruited by the company at the refugee camp.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 626,
+      "body_end": 911,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00005",
+      "text": "During our initial conversation, she was at the company’s office, seated alongside Diana, another Syrian asylum seeker who was engaged in labeling images of people based on race, age, and gender.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 913,
+      "body_end": 1108,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00006",
+      "text": "In contrast, Fatma was immersed in a project that involved satellite images and semantic segmentation, a critical task for computer vision that involves the meticulous separation and labeling of every pixel in an image. This form of data work holds particular importance in generating training data for AI, especially for computer vision systems embedded in devices such as cameras, drones, or even weapons.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1110,
+      "body_end": 1517,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Computer_vision",
+        "https://en.wikipedia.org/wiki/Image_segmentation"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00007",
+      "text": "Fatma explained that the task consisted mainly of separating “the trees from the bushes and cars from people, roads, and buildings.” Following this segmentation, she would attach corresponding labels to identify each object.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1519,
+      "body_end": 1743,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00008",
+      "text": "Data work requires skill",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1745,
+      "body_end": 1769,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00009",
+      "text": "Explained in this manner, the work might seem trivial and straightforward. Such tasks fall under what is known as microwork, clickwork, or, as I refer to it, data work. This constitutes the labor involved in generating data to train and validate AI systems.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1771,
+      "body_end": 2028,
+      "source_links": [
+        "https://just-tech.ssrc.org/articles/data-work-and-its-layers-of-invisibility/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00010",
+      "text": "According to the World Bank, there are between 154 million and 435 million data workers globally, with many of them situated in or displaced from the global majority. They often work for outsourcing platforms or companies, primarily as freelancers, earning a few cents per piece or task without the labor protections such as paid sick leave commonly found in more traditional employment relationships.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2030,
+      "body_end": 2431,
+      "source_links": [
+        "https://openknowledge.worldbank.org/entities/publication/ebc4a7e2-85c6-467b-8713-e2d77e954c6c"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00011",
+      "text": "Data workers generate data through various means that range from scraping information from the internet to recording their voices or uploading selfies. Similar to Fatma, they frequently engage in labeling tasks. Additionally, data workers may contribute to algorithm supervision, such as rating the outputs of recommender systems on platforms like Netflix or Spotify and assessing their usefulness, appropriateness, and toxicity.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2433,
+      "body_end": 2862,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00012",
+      "text": "In other instances, data workers might be tasked with plainly impersonating non-existing AI systems and be instructed to “think like a robot” while pretending to be a chatbot, for instance.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2864,
+      "body_end": 3053,
+      "source_links": [
+        "https://dl.acm.org/doi/10.1145/3555561"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00013",
+      "text": "Despite its crucial role in the development and maintenance of AI technologies, data work is often belittled as micro or small, involving only a few clicks, and dismissed as low skill or blue collar.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3055,
+      "body_end": 3254,
+      "source_links": [
+        "https://www.clickworker.com/crowdsourcing-glossary/microworker-microwork/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00014",
+      "text": "I asked Fatma if the satellite images she was working on could be of Syria. She said she thought the architecture and vehicles looked familiar. I wondered if her displacement had been leveraged as expertise. Staring at the screen, she whispered, “I hope this isn’t for weapons.” Neither she nor I could be certain.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3256,
+      "body_end": 3570,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00015",
+      "text": "The known and the unknown",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3572,
+      "body_end": 3597,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00016",
+      "text": "The proliferation of autonomous drones and swarm technologies has experienced exponential growth in recent years, facilitated by the integration of AI in reconnaissance, target identification, and decision-making processes.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3599,
+      "body_end": 3822,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00017",
+      "text": "Illustrating a poignant example, facial recognition technologies have been utilized to uphold the segregation and surveillance of the Palestinian people, while automated weapons have played a crucial role in the ongoing genocide in Gaza. Companies like the Israeli SmartShooter boast about their lethal capabilities with the slogan “One Shot, One Hit.”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3824,
+      "body_end": 4176,
+      "source_links": [
+        "https://buttondown.email/maiht3k/archive/lavender-the-gospel-and-the-scale-of-ai-war/",
+        "https://www.middleeasteye.net/news/war-gaza-israeli-quadcopters-hi-tech-weapon-menacing-palestinian-civilians",
+        "https://www.smart-shooter.com/about-smart-shooter/",
+        "https://www.theguardian.com/world/2023/dec/01/the-gospel-how-israel-uses-ai-to-select-bombing-targets",
+        "https://www.versobooks.com/en-gb/products/2684-the-palestine-laboratory"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00018",
+      "text": "Surveillance drones, predictive analytics, and decision support systems are utilized for strategic planning in “threat anticipation” and real-time monitoring along border regions. For instance, the German Federal Office for Migration and Refugees (BAMF) employs image biometrics for identity identification and voice biometrics for dialect analysis to ascertain asylum seekers’ country of origin and evaluate their eligibility for asylum. This was revealed by BAMF in response to a query initiated by German MPs. Data workers subcontracted through the platform Clickworker participated in producing the voice samples required to develop the system.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4178,
+      "body_end": 4826,
+      "source_links": [
+        "https://www.bamf.de/EN/Themen/AsylFluechtlingsschutz/AblaufAsylverfahrens/Anhoerung/anhoerung-node.html",
+        "https://www.elgaronline.com/view/journals/cilj/8-2/cilj.2019.02.07.xml",
+        "https://www.hertie-school.org/fileadmin/2_Research/1_About_our_research/2_Research_centres/Centre_for_Fundamental_Rights/AFAR/automating-immigration-and-asylum_final_afar.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00019",
+      "text": "Fortunately, the data company in Bulgaria has a strong policy to reject requests related to warfare technologies, Fatma’s manager explained.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4828,
+      "body_end": 4968,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00020",
+      "text": "She added that the satellite imagery labeled by the team had been commissioned by a central European firm developing autonomous piloting systems for air transportation, not weapons. This information correlates with the client’s website. However, the website also states that their technology is additionally used for unmanned aerial vehicles (UAV), commonly known as drones, with applications including surveillance.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4970,
+      "body_end": 5386,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00021",
+      "text": "Workers’ ethical concerns",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5388,
+      "body_end": 5413,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00022",
+      "text": "Privacy infringements and the potential for discriminatory profiling are among the most obvious concerns related to AI systems applied to border surveillance and warfare. Despite these risks disproportionately affecting their own communities, sometimes with lethal consequences, most data workers are kept in the dark concerning the ultimate purpose of the data they contribute to producing.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5415,
+      "body_end": 5806,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00023",
+      "text": "The outsourcing of data work to external organizations, often situated far away from the requesters’ geographical location, complicates workers’ efforts to navigate the intricate supply chains that support the AI industry. Instructions given to data workers seldom provide details about the requester or the intended use of the data.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5808,
+      "body_end": 6141,
+      "source_links": [
+        "https://dl.acm.org/doi/10.1145/3555561"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00024",
+      "text": "AI companies frequently rationalize the veil of secrecy as a means of safeguarding their competitive edge.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 6143,
+      "body_end": 6249,
+      "source_links": [
+        "https://dl.acm.org/doi/10.1145/3415186"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00025",
+      "text": "The fact that data workers are integrated into industrial structures designed to keep them uninformed and subject to surveillance, retaliation, and wage theft does not mean they do not have ethical concerns about their work and the AI applications it supports.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6251,
+      "body_end": 6511,
+      "source_links": [
+        "https://ainowinstitute.org/publication/a-new-ai-lexicon-labor",
+        "https://www.noemamag.com/the-exploited-labor-behind-artificial-intelligence/?utm_source=noematwitter&utm_medium=noemasocial"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00026",
+      "text": "In fact, there have been instances where data workers have explicitly alerted consumers to privacy-related and other ethical issues associated with the data they generate. For example, in 2022, Venezuelan data workers reported anonymously that Roomba robot vacuum cleaners capture pictures of users at home, which are then viewed by human workers.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 6513,
+      "body_end": 6860,
+      "source_links": [
+        "https://www.technologyreview.com/2022/12/19/1065306/roomba-irobot-robot-vacuums-artificial-intelligence-training-data-privacy/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00027",
+      "text": "Data workers possess a unique vantage point that can play a crucial role in the early identification of ethical issues related to data and AI. Encouraging consumers and society at large to align with them in advocating for increased transparency in the AI data production pipeline is essential.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 6862,
+      "body_end": 7156,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-830325-b00028",
+      "text": "Milagros Miceli is a sociologist and computer scientist, leading the research group Data, Algorithmic Systems, and Ethics at the Weizenbaum-Institut. She is also a researcher with the Distributed AI Research Institute (DAIR). Miceli’s research is focused on labor conditions and power asymmetries in outsourced data work, examining their impact on machine learning datasets. Through a diverse array of worker-centric methodologies, she actively engages communities of precarized data workers from the global majority in action-research projects. Her broader interests include questions of legitimacy and knowledge production in data, community-led research, labor organizing, and the intersection of critical data studies and data activism.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 7158,
+      "body_end": 7898,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "8359a57242da3852a4a1635021847082d4e500d9d81aeb2b0e0666c0cff43cf7",
+  "word_count": 1186,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 7898,
+  "retrieved_at": "2026-11-16T22:45:47.555870+00:00",
+  "raw_html_sha256": "a841d9dba2352a7e19bc074d656759fda73b5aad6cdfbb8356c6b5b71cece85d",
+  "resolved_source_url": "https://globalvoices.org/2025/03/10/i-hope-this-isnt-for-weapons-how-syrian-data-workers-train-ai/",
+  "canonical_url": "https://globalvoices.org/2025/03/10/i-hope-this-isnt-for-weapons-how-syrian-data-workers-train-ai/",
+  "source_bytes": 193272,
+  "authors": [
+    {
+      "name": "UntoldMag",
+      "url": "https://globalvoices.org/author/untoldmag/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 830325,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "a841d9dba2352a7e19bc074d656759fda73b5aad6cdfbb8356c6b5b71cece85d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-04414f0f5612f7287851",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-03",
+    "eligible_month_documents": 81,
+    "selected_month_documents": 68,
+    "inclusion_probability": 0.8395061728395061,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "UntoldMag",
+  "body_start": 459,
+  "body_end": 8357,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "7c57f2445e7eb58c0b1765f0571e2900eb9b4264c9e3499e74419eeb658137db",
+  "text_path": "articles/gv-830325.txt",
+  "metadata_path": "metadata/gv-830325.json",
+  "attribution": "This story by UntoldMag originally appeared on Global Voices. https://globalvoices.org/2025/03/10/i-hope-this-isnt-for-weapons-how-syrian-data-workers-train-ai/",
+  "content_sha256": "e597d8844174ed83d6f905fadd67c45c2f562635313e8ab1d17c467bfa1ffb9d",
+  "source_sha256": "a841d9dba2352a7e19bc074d656759fda73b5aad6cdfbb8356c6b5b71cece85d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

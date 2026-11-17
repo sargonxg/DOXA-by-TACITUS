@@ -1,0 +1,517 @@
+{
+  "id": "gv-769255",
+  "publisher_id": 769255,
+  "source_id": "globalvoices:769255",
+  "source_url": "https://globalvoices.org/2022/08/29/%e2%80%8b%e2%80%8btowards-digital-authoritarianism-in-nepal-surveillance-data-collection-and-online-repression/",
+  "title": "​​Towards digital authoritarianism in Nepal: Surveillance, data collection, and online repression",
+  "published_at": "2022-08-29T11:53:34Z",
+  "modified_at": "2022-08-29T11:53:34Z",
+  "api_author_id": 2689,
+  "api_content_sha256": "015c6b9ba91d209ad83adafb75fb61c2753e60dbabad0ca8f87d0a737cd11e8c",
+  "api_response_sha256": "30656aeb72fa6ac0796b25f9ba534044b6669ecaa343be437ba0196aa46e0005",
+  "api_retrieved_at": "2026-11-16T22:20:47.121994+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 2552,
+      "count": 1465,
+      "name": "Nepal",
+      "slug": "nepal",
+      "parent": 31
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-769255-b00001",
+      "text": "This article is part of Pandemic of Control, a series that aims to further public discourse on the rise of digital authoritarianism in Asia-Pacific amid COVID-19. Pandemic of Control is an initiative by EngageMedia, in partnership with CommonEdge. This edited version of the article by Samik Kharel is republished in Global Voices under a content partnership.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 359,
+      "source_links": [
+        "https://engagemedia.org/2022/pandemic-control-intro/",
+        "https://engagemedia.org/2022/pandemic-control-nepal/",
+        "https://engagemedia.org/pandemic-control/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00002",
+      "text": "In Nepal, the COVID-19 pandemic sped up the process of bringing public and private services online: from food delivery and shopping to government transactions. These changes came with many downsides, with data and privacy rights often not respected.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 361,
+      "body_end": 610,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00003",
+      "text": "Nepal does not yet have the technology and expertise to be globally competitive in the digital world. Instead, it has looked to its closest neighbours, China and India, for guidance. However, seeking ideas from countries that have largely failed to respect basic digital rights puts Nepal in a vulnerable position.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 612,
+      "body_end": 926,
+      "source_links": [
+        "https://thehimalayantimes.com/science-and-tech/nepal-is-lagging-far-behind-in-technological-research",
+        "https://www.hrw.org/news/2021/04/08/chinas-techno-authoritarianism-has-gone-global"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00004",
+      "text": "From questionable data collection practices to the curtailment of free speech, Nepal is leaning towards an authoritarian model of internet control, with COVID-19 accelerating this development.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 928,
+      "body_end": 1120,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00005",
+      "text": "Influence from China and India",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1122,
+      "body_end": 1152,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00006",
+      "text": "China holds a poor digital rights record, with rights groups flagging its online censorship rules and deployment of mass surveillance against the Uyghur Muslims, among other rights violations. Similarly, India has been widely criticised for procuring spyware, imposing internet shutdowns, and passing IT laws that do not conform to global rights norms.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1154,
+      "body_end": 1506,
+      "source_links": [
+        "https://engagemedia.org/2022/pandemic-control-india/",
+        "https://foreignpolicy.com/2021/10/26/chinese-censorship-enes-kanter-celtics-browder-is-going-global/",
+        "https://indianexpress.com/article/explained/explained-the-frequency-reasons-and-controversy-over-internet-suspensions-by-the-government-8005450/",
+        "https://www.aljazeera.com/news/2022/1/29/india-bought-israeli-pegasus-spyware-as-part-of-weapon-deal-nyt",
+        "https://www.cbc.ca/passionateeye/features/in-xinjiang-china-surveillance-technology-is-used-to-help-the-state-control"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00007",
+      "text": "In 2019, Nepali media reported on government plans to mount over 21,000 CCTV cameras for street-level surveillance. This is in addition to the thousands of surveillance cameras that are already installed in the Kathmandu Valley. Authorities say the cameras deter criminal activity, but they have also been used by police to monitor protests and other forms of expression. During the COVID-19 pandemic, police used these cameras as well as drones to monitor people’s movements and adherence to lockdown rules, publicly flaunting their use of this technology on their official YouTube channel.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1508,
+      "body_end": 2099,
+      "source_links": [
+        "https://kathmandupost.com/columns/2019/11/29/smile-you-re-on-camera",
+        "https://thehimalayantimes.com/kathmandu/valley-under-cctv-surveillance-to-deter-criminals",
+        "https://www.youtube.com/watch?v=IUZwX2IFV7A"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00008",
+      "text": "In April 2022, a major Nepali daily reported that the government had purchased the Pegasus spyware system and handed it to the Nepal Army for trial use. While the government claims the system is to ensure citizen safety and security, there has been widespread criticism of the spyware and its misuse by governments around the world.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2101,
+      "body_end": 2433,
+      "source_links": [
+        "https://ekantipur.com/news/2022/04/10/164955291391847851.html",
+        "https://www.cfr.org/in-brief/how-israels-pegasus-spyware-stoked-surveillance-debate"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00009",
+      "text": "Extensive data collection, and no data security",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2435,
+      "body_end": 2482,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00010",
+      "text": "The government approach to COVID-19 vaccination built in a huge amount of personal data collection. To date, 70 percent of the total population has received at least one dose, requiring more than 20 million people to share their personal information with the government, including to obtain an official vaccine certificate. However, whether this massive dataset of personal information is kept secure is questionable.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2484,
+      "body_end": 2901,
+      "source_links": [
+        "https://vaccine.mohp.gov.np/",
+        "https://www.indiatvnews.com/news/world/covid-19-seventy-percent-nepal-population-developed-covid-antibodies-latest-news-updates-730058"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00011",
+      "text": "When the government announced booster shots for frontline workers in mid-January 2022, journalist Rajendra Rai (name changed) rushed to the vaccination centre. He filled out a vaccination form on the health ministry website via his phone, giving personal information including his name, birthdate, address, and occupation.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2903,
+      "body_end": 3225,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00012",
+      "text": "This personal information could be used as a weapon by political parties and the state, especially with the federal and provincial elections coming up in late 2022.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3227,
+      "body_end": 3391,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00013",
+      "text": "Who ensures the safety of the collected data, especially given previous instances of potential data misuse that call into question the government’s ability to ensure data security? In the 2022 local elections, voters from particular areas received SMSes and emails from political parties; it is unclear how they obtained voters’ contact details — could have come from public service forms submitted to the government.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3393,
+      "body_end": 3810,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00014",
+      "text": "Body and Data, a digital rights organisation in Nepal, flagged privacy issues related to election campaigns:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3812,
+      "body_end": 3920,
+      "source_links": [
+        "https://twitter.com/bodyanddata"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00015",
+      "text": "The Election Commission of Nepal also came under fire for releasing a list of the 17.7 million voters on its website, which included details of their names, ages, genders, voting booths, voter ID numbers, and even their parents’ and spouses’ names. While civil society and rights groups criticised this privacy breach, the authorities did not remove the list, arguing that “there should be no concern of a breach of privacy” because the data did not include voters’ photos, thumbprints, or phone numbers.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3922,
+      "body_end": 4426,
+      "source_links": [
+        "https://kathmandupost.com/national/2022/04/28/public-availability-of-electoral-roll-data-raises-privacy-concerns",
+        "https://www.change.org/p/sign-on-data-privacy-of-nepali-voters-at-stake?recruiter=1018242893&utm_source=share_petition&utm_medium=twitter&utm_campaign=psf_combo_share_initial&recruited_by_id=5d72e0c0-0525-11ea-9e2d-8dc47e4d7118&share_bandit_exp=initial-33241378-en-US"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00016",
+      "text": "The government’s response suggests the authorities do not sufficiently understand the risks associated with a lack of digital security safeguards. Officials appointed to oversee the vaccine registration process are often unaware of where the data is being stored, how long it will be stored, and how it will be used, according to an anonymous, personal source from the health ministry. How, then, can one be assured that their personal data is secure?",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4428,
+      "body_end": 4879,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00017",
+      "text": "Although civil society, human rights defenders, and concerned individuals have nudged the government to be more responsible with data, Nepal has yet to enact comprehensive data protection and privacy laws. Citizens also lack sufficient awareness and understanding of the potential for data misuse.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4881,
+      "body_end": 5178,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00018",
+      "text": "Restrictions on free speech",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5180,
+      "body_end": 5207,
+      "source_links": [],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00019",
+      "text": "In 2020, Nepal was ranked 112th out of 180 countries on the Reporters Without Borders’ Press Freedom Index. The pandemic provided the government with an opportunity to undermine press freedom further, in an attempt to control narratives on the health situation. Nepalese journalists were attacked, censored, and arrested over their critical reporting of the government’s COVID-19 response. Police detained Radio Dhangadhi reporter Lok Karki for filming a disagreement over the distribution of food and relief goods. Nagarik News bureau chief Nagendra Upadhyay received threatening messages from a regional government official over his report that the official’s wife had been driven in a government car at the height of the lockdown. In March 2020, a report on the online news portal Kathmandu Press was taken down following pressure from the prime minister’s aide. This report alleged relatives of several high-ranking government officials were involved in the purchase of expensive medical equipment from China.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5209,
+      "body_end": 6222,
+      "source_links": [
+        "https://cpj.org/2020/05/nepali-reporters-detained-threatened-while-reporti/",
+        "https://ipi.media/covid-19-pandemic-severely-undermined-press-freedom-in-south-asia/",
+        "https://nagariknews.nagariknetwork.com/social-affairs/206991-1586164020.html",
+        "https://rsf.org/en/index?year=2020",
+        "https://rsf.org/en/nepalese-journalists-threatened-attacked-and-censored-over-covid-19-coverage",
+        "https://thehimalayantimes.com/kathmandu/editors-jointly-condemn-unauthorised-removal-of-published-content"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00020",
+      "text": "In April 2020, journalists reported about an exodus of workers from the Kathmandu Valley as a result of COVID-19 lockdowns. Reacting to the news, the prime minister told the editors of government newspapers that he found the reports “mysterious” — questioning their very basis. These comments were followed by a government-orchestrated online harassment campaign against journalist Binu Subedi using bogus Twitter accounts.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6224,
+      "body_end": 6647,
+      "source_links": [
+        "https://ekantipur.com/news/2020/04/17/158708412869554422.html",
+        "https://rsf.org/en/nepalese-journalists-threatened-attacked-and-censored-over-covid-19-coverage",
+        "https://twitter.com/subedibinu/status/1260852834662100992"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00021",
+      "text": "During this time, the government has continued to use the 2006 Electronic Transaction Act (ETA) to arbitrarily detain those criticising the government and leaders of the ruling party. The ETA, initially drafted to regulate financial scams, has become a convenient tool to criminalise speech online. Section 47 of the act prohibits the electronic publication or display of material deemed illegal under existing laws, but is so broad to include those “which may be contrary to the public morality or decent behaviour” or materials that may spread hate, jealousy or jeopardise “harmonious relations” among the people. This law was used against Radio Nepal board member Deepak Pathak, who was arrested in April 2020 for defaming Nepal Communist Party leader Pushpa Kamal Dahal on social media.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6649,
+      "body_end": 7439,
+      "source_links": [
+        "https://kathmandupost.com/opinion/2018/09/02/rise-of-digital-dystopia",
+        "https://lawcommission.gov.np/en/?p=16954",
+        "https://monitor.civicus.org/updates/2020/07/03/protests-nepal-around-covid-19-met-excessive-force-while-journalists-face-attacks/",
+        "https://myrepublica.nagariknetwork.com/news/journalist-pathak-arrested-on-charge-of-defaming-ncp-chairman-dahal/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00022",
+      "text": "An Information Technology (IT) Bill, which would give the state the power to censor online content it deems offensive, is in the works. The bill also includes provisions for the arrests and jail term for anyone posting content deemed to be against “national unity, self-respect, national interest, relationship between federal units.” The proposed law also contains provisions that are vague and open to interpretation and possible misuse.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7441,
+      "body_end": 7880,
+      "source_links": [
+        "https://www.amnesty.org/en/latest/news/2020/01/nepal-information-technology-bill-threatens-freedom-of-expression/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00023",
+      "text": "Worse than the IT Bill is the proposed Social Media Directive 2021, which would compel social media companies to register in Nepal and abide by the country’s laws. The proposed directive has been widely criticised for its intent to regulate content on social media, opening the door to further state censorship. By laying out only a vague idea of what constitutes illegal content, anyone criticising power structures or using humour and sarcasm against the state may face punishment. The bill also targets anonymity, threatening people’s free expression. The main purpose of the directive is to control online discourse, minimise public engagement in controversial state affairs, and neutralise those critical of the government.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7882,
+      "body_end": 8610,
+      "source_links": [
+        "http://www.pradhanlaw.com/alerts/social-media-management-directives-2077-2021",
+        "https://english.onlinekhabar.com/govts-new-social-media-directive-is-worse-than-pending-it-bill-in-curtailing-freedom-of-expression.html",
+        "https://kathmandupost.com/national/2021/02/13/draft-directives-to-regulate-social-media-give-authorities-power-to-define-decency-and-morality"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00024",
+      "text": "The government’s pandemic response has opened the door to a wide range of threats to human and digital rights in Nepal — from the crackdown on critical voices to the lack of safeguards for digital data, and laws curtailing free speech. With the influence of its neighbours with poor digital rights records, Nepal must decide on its own path if it envisions a free, egalitarian, and democratic digital ecosystem.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 8612,
+      "body_end": 9023,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-769255-b00025",
+      "text": "Samik Kharel is a researcher and a freelance journalist who has previously reported for various national and international media.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 9025,
+      "body_end": 9154,
+      "source_links": [],
+      "source_kind": "div",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "f4d2a1936e5e236308a785935f15b46d736dcd61c3015826be3c9b973f297e60",
+  "word_count": 1403,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 9154,
+  "retrieved_at": "2026-11-16T22:36:03.963415+00:00",
+  "raw_html_sha256": "fe81a195e1573c3952b3ae30385206ff8dd7f52273ba442edde833c0f4c0efe1",
+  "resolved_source_url": "https://globalvoices.org/2022/08/29/%e2%80%8b%e2%80%8btowards-digital-authoritarianism-in-nepal-surveillance-data-collection-and-online-repression/",
+  "canonical_url": "https://globalvoices.org/2022/08/29/%e2%80%8b%e2%80%8btowards-digital-authoritarianism-in-nepal-surveillance-data-collection-and-online-repression/",
+  "source_bytes": 197185,
+  "authors": [
+    {
+      "name": "EngageMedia",
+      "url": "https://globalvoices.org/author/engagemedia/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 769255,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "fe81a195e1573c3952b3ae30385206ff8dd7f52273ba442edde833c0f4c0efe1",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-67572d73531159aaa5cb",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-08",
+    "eligible_month_documents": 79,
+    "selected_month_documents": 66,
+    "inclusion_probability": 0.8354430379746836,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "EngageMedia",
+  "body_start": 542,
+  "body_end": 9696,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "edcda65d43ce991611c38ec02461944f148c3fb0b23dcbd8764b40807c9a63bd",
+  "text_path": "articles/gv-769255.txt",
+  "metadata_path": "metadata/gv-769255.json",
+  "attribution": "This story by EngageMedia originally appeared on Global Voices. https://globalvoices.org/2022/08/29/%e2%80%8b%e2%80%8btowards-digital-authoritarianism-in-nepal-surveillance-data-collection-and-online-repression/",
+  "content_sha256": "8c4cca35fa78dcd7420403498e8f9df677e2dbeb16e8381386a89159ede9899a",
+  "source_sha256": "fe81a195e1573c3952b3ae30385206ff8dd7f52273ba442edde833c0f4c0efe1",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

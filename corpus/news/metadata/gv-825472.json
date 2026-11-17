@@ -1,0 +1,646 @@
+{
+  "id": "gv-825472",
+  "publisher_id": 825472,
+  "source_id": "globalvoices:825472",
+  "source_url": "https://globalvoices.org/2025/01/22/shutting-down-the-net-the-growing-threat-of-russian-internet-censorship/",
+  "title": "Shutting down the net: The growing threat of Russian internet censorship",
+  "published_at": "2025-01-22T07:57:02Z",
+  "modified_at": "2025-01-22T10:22:41Z",
+  "api_author_id": 2997,
+  "api_content_sha256": "dd780a217eb2263ca7dc615deda6fbad420f8fe3180b3e4a0808d30f76c51dcd",
+  "api_response_sha256": "6625a8d03b3e648da1476e3f26f88d0194314166208c9a1cf51b3466ab72098a",
+  "api_retrieved_at": "2026-11-16T22:21:08.459699+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-825472-b00001",
+      "text": "For two days in a row, on January 14 and 15 2025, roughly a third of Russia's internet users could not access most websites or platforms. Enthusiasts with a technological background, who now form a new kind of Russian civil society group abroad, said, literally, that we have witnessed a “demo version” of a total internet shutdown. Thus, they say, it is now obvious that the Russian censorship institution Roskomnadzor is able to completely shut down the incoming internet traffic in Russia at any time.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 504,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Roskomnadzor",
+        "https://rtvi.com/news/nazvana-prichina-masshtabnogo-sboya-v-rabote-internet-servisov-v-rossii-2/",
+        "https://t.me/na_svyazi_helpdesk/513"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00002",
+      "text": "Head of the NGO For Internet Freedom Mikhail Klimarev counted how much this shut down had cost the Russian economy:",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 506,
+      "body_end": 621,
+      "source_links": [
+        "https://repression.info/en/persons/mikhail-klimarev",
+        "https://t.me/zatelecom/29590"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00003",
+      "text": "> 16.8 million dollars. That's how much one hour of downtime cost the Russian economy. Well, minus one tank, I guess. The Central Monitoring Center [the administrative body responsible for technically censoring all internet providers in Russia] should demand a reward from the Armed Forces of Ukraine. Well done!",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 623,
+      "body_end": 935,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825472-b00004",
+      "text": "Experts have different versions of what really happened. One was that Roskomnadzor tried to install updates to the censorship hardware installed at every internet and mobile operator in Russia (there are around 3500 of them, according to Klimarev), and something went wrong. Another version, by Tochka YouTube Program, was that Roskomnadzor started to test “white lists” (only allowing traffic for IP addresses from the list) for the RuNet (as the Russian segment of the internet is often called). Each shutdown lasted about one hour.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 937,
+      "body_end": 1471,
+      "source_links": [
+        "https://russiapost.info/society/state_internet",
+        "https://t.me/vedomosti/56111",
+        "https://www.youtube.com/live/8MZRs1kuzvs?si=nrrs-PVN2l9FTUis"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00005",
+      "text": "For a number of years now, Russian authorities have restricted access to the internet for those living in Russia. It began with the blocking of individual websites and pages in the early 2000s, and continuing to block all major social media platforms (apart from YouTube) and many media websites after the full-scale Russian invasion of Ukraine started in February 2022. However, the ultimate dream of creating a home-based internet (“sovereign internet,” as defined by the legislation adopted as early as in 2019 to grant the Russian government powers to partition Russia from the rest of the internet) has not been implemented just yet.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1473,
+      "body_end": 2111,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Internet_censorship_in_Russia",
+        "https://en.wikipedia.org/wiki/Sovereign_Internet_Law",
+        "https://thefix.media/2024/08/27/russia-is-slowing-down-youtube-what-is-the-independent-russian-media-doing-about-it/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00006",
+      "text": "The shutdowns of January 14 and 15 were not the first “demo-sessions” of the power to completely shut down the internet, but, to date, the largest ones in terms of the number of users they had effected.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2113,
+      "body_end": 2315,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00007",
+      "text": "A previous demo shutdown happened on December 7, 2024, when authorities cut off the internet in three North Caucasian regions of Russia: Chechnya, Ingushetia, and Dagestan. People living in these regions could not access any foreign-based websites or platforms, including YouTube, Google, and Telegram. Klimarev commented to TV channel Dozhd (Rain) at that time:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2317,
+      "body_end": 2679,
+      "source_links": [
+        "https://www.youtube.com/watch?v=03Jk_iWMeAA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00008",
+      "text": "> The idea is that Roskomnadzor is trying to test what would happen if all networks connecting the Russian segment of the internet to the foreign segment were completely disconnected. They are testing the functionality of certain services, for example, whether banks work — services that are critically important for the functioning of state bodies. What is currently known is that certain video surveillance systems went offline, banking systems stopped functioning, and VPNs naturally do not work.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2681,
+      "body_end": 3180,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Roskomnadzor"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825472-b00009",
+      "text": "Blocking YouTube",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3182,
+      "body_end": 3198,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00010",
+      "text": "YouTube, as in many parts of the world, is among the most popular major social media platforms in Russia. It has substituted television for many people in recent years, especially after the Russian invasion of Ukraine. While opposition political content, media and news, has moved there entirely, some before the war censorship of 2022, for the past three or more years it has also hosted the entertainment content that has disappeared from Russian propaganda TV channels in wartime. The Russian language segment of YouTube has channels with millions of subscribers, and audiences from little children watching the life of Ukrainian children vloggers Katia and Max (they now live in the US) to elderly people watching how to fix a sewing machine.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3200,
+      "body_end": 3946,
+      "source_links": [
+        "https://brandanalytics.ru/blog/social-media-russia-autumn-2024",
+        "https://www.svoboda.org/a/udar-po-prostym-lyudyam-blogery-o-zamedlenii-dostupa-k-youtube/33051839.html",
+        "https://www.youtube.com/@deda",
+        "https://www.youtube.com/channel/UC_8PAD0Qmi6_gpe77S1Atgg"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00011",
+      "text": "But the Russian authorities are blocking YouTube too. Since the summer of 2024, traffic to YouTube has been slowed down so that each video takes an enormous time to load, kind of like in the late 90s. Mobile operators, though, continued providing normal service until December 2024. But now they, too, are slowing down the traffic. According to Klimarev, slowing down traffic is essentially a method of blocking the platform.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3948,
+      "body_end": 4373,
+      "source_links": [
+        "https://www.bbc.com/russian/articles/c30nvn6ngepo",
+        "https://www.dw.com/ru/vooruzitsa-vpn-ili-perehodit-na-rutube-rekordnoe-zamedlenie-youtube-v-rossii/video-71162650",
+        "https://www.youtube.com/live/OicE9TH0Dmg?si=X8GaBvNmZ64Frzjg"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00012",
+      "text": "People in Russia, according to the recent investigation by an opposition media Meduza and The Bell, were supposed to move to three “local” Russian platforms: VK video, RuTube or Russia Today’s new invention called “Platform.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4375,
+      "body_end": 4600,
+      "source_links": [
+        "https://meduza.io/episodes/2024/12/25/kak-v-rossii-zablokirovali-youtube-i-pochemu-kreml-tak-i-ne-smog-sozdat-emu-rossiyskiy-analog",
+        "https://rutube.ru/",
+        "https://tass.ru/ekonomika/21227297",
+        "https://vk.com/vkvideo"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00013",
+      "text": "However, in spite of billions of US dollars spent on attracting top Russian speaking bloggers to these three, the audience never followed, and the bloggers left when the money was ran out. Most problems, claims the investigation, were because these companies had only counted on the state’s money, not developing their own recommendation systems solutions or monetization incentives for users. For example, RuTube's frontpage lists its “most popular” channels, one of which has 280 subscribers.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4602,
+      "body_end": 5096,
+      "source_links": [
+        "https://rutube.ru/video/435d1e77482baf2173245fd9db01924e/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00014",
+      "text": "At the moment, YouTube is still the most popular video hosting platform in Russia, although now it has to be accessed though VPNs.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5098,
+      "body_end": 5228,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00015",
+      "text": "VKontakte’s lucky years",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5230,
+      "body_end": 5253,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00016",
+      "text": "For years, the Russian government has been pouring money into local social media platforms. VKontakte (now VK), was initially a copycat of Facebook (literally, its terms of service still in many parts repeat early Facebook’s policies word to word). It was launched by the current owner of Telegram Pavel Durov in 2006 and bought by the state-affiliated Mail.Ru group in 2014. The platform is now headed by Vladimir Kirienko, the son of Putin's first deputy chief of staff Sergey Kirienko, who holds enormous sway over not only the Russian war with Ukraine but also the Russian censorship of the internet, effectively moving it towards a closed system. VK is heavily censored, both by automated and human moderators, as well as self-censorship (because one can receive a real jail sentence for a post or a like of a post).",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5255,
+      "body_end": 6076,
+      "source_links": [
+        "https://carnegieendowment.org/posts/2019/04/russias-sovereign-internet-law-will-kill-innovation?lang=ru",
+        "https://en.wikipedia.org/wiki/Sergey_Kiriyenko",
+        "https://kyivindependent.com/who-is-sergei-kiriyenko-the-liberal-turned-russian-hawk-reportedly-in-touch-with-elon-musk/",
+        "https://novayagazeta.ru/articles/2024/11/14/moskvichku-s-dvumia-nesovershennoletnimi-detmi-prigovorili-k-8-godam-kolonii-za-posty-vkontakte-s-kritikoi-svo-i-putina-news",
+        "https://ru.wikipedia.org/wiki/%D0%94%D1%83%D1%80%D0%BE%D0%B2,_%D0%9F%D0%B0%D0%B2%D0%B5%D0%BB_%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%8C%D0%B5%D0%B2%D0%B8%D1%87",
+        "https://vk.com/",
+        "https://vk.com/terms",
+        "https://www.bbc.com/russian/russia/2014/09/140916_vkontakte_mail_ru_shares",
+        "https://www.opensanctions.org/entities/Q5680808/",
+        "https://www.sibreal.org/a/pervyy-prigovor-za-layki-pod-antivoennymi-postami/31955875.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00017",
+      "text": "VK, thus, was supposed to not only replace Facebook and Instagram, but, by the year 2024, YouTube as well. While it did provide a substitute for Facebook for the vast majority of users (the obvious advantage was that VK had in fact been in Russia before Facebook and provided many more services such music and film sharing without regard for copyright), Instagram was impossible to replace. The traffic to Instagram fell but not significantly: by 2025, at least 37 percent of the Russian population are using VPNs (these are only those that admit it in public polling), and Instagram users are not exceptions.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6078,
+      "body_end": 6687,
+      "source_links": [
+        "https://brandanalytics.ru/blog/social-media-russia-autumn-2024",
+        "https://www.statista.com/statistics/1382869/use-of-virtual-private-networks-vpn-by-country/#:~:text=As%20of%20the%20second%20quarter,as%20of%20the%20measured%20period."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00018",
+      "text": "X has never been that popular among the Russian population, and X users had seamlessly moved to Telegram when Twitter was blocked in 2022, or they continued using it through VPN.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6689,
+      "body_end": 6867,
+      "source_links": [
+        "https://brandanalytics.ru/blog/social-media-russia-autumn-2024",
+        "https://www.theguardian.com/world/2022/mar/04/russia-completely-blocks-access-to-facebook-and-twitter"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00019",
+      "text": "Blocking messengers",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6869,
+      "body_end": 6888,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00020",
+      "text": "The Russian authorities usually start slow, to make sure people are not too outraged or even surprised to lose services. In the beginning of 2023, a law was passed that disallowed some messengers from being used by banks or state employees. Among these were: Discord, Microsoft Teams, Skype for Business, Snapchat, Telegram, Threema, Viber, WhatsApp, and China-based WeChat. While these messengers were not immediately blocked (an attempt to block Telegram in 2018, supposedly, failed), there is now momentum to block them.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6890,
+      "body_end": 7413,
+      "source_links": [
+        "https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_Telegram_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8#:~:text=%D1%81%D0%B2%D1%8F%D0%B7%D0%B8%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%20%D0%A5%D0%B8%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD.-,%D0%9E%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BE%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5,%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0%20%D0%B2%20%D0%BC%D0%B5%D1%81%D1%81%D0%B5%D0%BD%D0%B4%D0%B6%D0%B5%D1%80%D0%B5%20Telegram.",
+        "https://www.consultant.ru/legalnews/21772/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00021",
+      "text": "At the time of writing this article, Discord and Viber have already been blocked, as well as Signal, which is not even on the list. Experts expect WhatsApp to be the next in line. Discord, as Meduza reported, was blocked in spite of its apparent usage by the Russian Army in the invasion of Ukraine.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 7415,
+      "body_end": 7714,
+      "source_links": [
+        "https://meduza.io/episodes/2024/12/17/v-rossii-zablokirovali-viber-chto-mozhet-byt-sleduyuschim-neuzheli-whatsapp-ili-telegram",
+        "https://meduza.io/feature/2024/09/27/rkn-gotovitsya-zablokirovat-discord-etot-messendzher-sozdavali-dlya-geymerov-no-im-polzuyutya-dazhe-uchastniki-voyny-v-ukraine",
+        "https://www.bbc.com/russian/articles/c62gdr7yw24o#:~:text=%D0%9A%D0%B0%D0%BA%20%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B8%D0%BB%D0%B8%20%D0%B2%20%D0%A0%D0%BE%D1%81%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D0%B4%D0%B7%D0%BE%D1%80%D0%B5%2C%20%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF,%D1%81%D0%B2%D1%8F%D0%B7%D0%B8%20%D1%81%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BE%D0%BF%D1%80%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8%C2%BB.",
+        "https://www.reuters.com/technology/signal-messenger-blocked-russia-says-roskomnadzor-ifax-2024-08-09/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00022",
+      "text": "2025 will be the year of war on VPNs",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7716,
+      "body_end": 7752,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00023",
+      "text": "Virtual private networks, or VPNs, which are tools that circumvent those controls, have surged in popularity in Russia. According to Klimorev’s estimates, over 50 percent of the population have installed them by now. In addition, internet censorship has also created a movement in the Russian civic sector, as well as among developers abroad, to create grassroots tech initiatives that would oppose the shutdowns and blocking.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7754,
+      "body_end": 8180,
+      "source_links": [
+        "https://te-st.org/about-en/",
+        "https://volunteer-ru.net/",
+        "https://www.currenttime.tv/a/blokirovka-youtube-budet-obhoditsya-ekonomike-rossii-v-23-mln-v-sutki-ekspert-o-tom-kak-smotret-youtube-v-rf-nesmotrya-na-tsenzuru/33070463.html",
+        "https://www.statista.com/statistics/1382869/use-of-virtual-private-networks-vpn-by-country/#:~:text=As%20of%20the%20second%20quarter,as%20of%20the%20measured%20period."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00024",
+      "text": "Denis Yagodin, Director of Innovations, Digital Transformation & AI in Public Sector at Teplitsa Socialnyh Technologyi (an NGO that helps the civic sector to use new technologies), wrote about these in recent LinkedIn post, reproduced here with permission.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 8182,
+      "body_end": 8438,
+      "source_links": [
+        "https://te-st.org/about-en/",
+        "https://www.linkedin.com/posts/dyagodin_opensource-digitalfreedom-techresistance-activity-7269762370657280000-BDN4?utm_source=share&utm_medium=member_desktop"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00025",
+      "text": "> Once early internet pioneer John Gilmore said “the net interprets censorship as damage and routes around it.” The digital iron curtain descending across Russia has sparked a response from the open source community, showing how grassroots tech initiatives can counter state censorship. As authorities tighten their grip through deep packet inspection (DPI) systems and VPN restrictions, a global network of developers is crafting tools to preserve internet freedom.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 8440,
+      "body_end": 8906,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/John_Gilmore_(activist)"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825472-b00026",
+      "text": "> While tech giants like Apple comply with VPN apps removal requests from Russian authorities, independent developers are building an arsenal of open source solutions. Tools like GoodbyeDPI and PowerTunnel outsmart surveillance systems by manipulating network packets, while projects such as Piped.video offer alternative pathways to blocked content. Open source firmware like OpenWrt transforms ordinary home routers into censorship-circumvention devices, protecting entire households.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 8908,
+      "body_end": 9394,
+      "source_links": [
+        "http://piped.video/",
+        "https://www.rferl.org/a/apple-removal-russia-current-time-app-undesirable/33163824.html"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825472-b00027",
+      "text": "> Decentralized communities can adapt faster than centralized control systems. Each new restriction breeds workarounds, creating a perpetual game of digital cat-and-mouse where openness and transparency become powerful weapons against opacity and control. The open source movement's response shows how shared code and collaborative development can sustain the internet's original promise of free information flow, even as governments try to fragment and control it.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 9396,
+      "body_end": 9861,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825472-b00028",
+      "text": "Klimarev himself is one of the founders of the program where any person living in Russia can get a VPN that would later serve up to 200 people who can get their own VPN keys from this person.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 9863,
+      "body_end": 10054,
+      "source_links": [
+        "https://vpngen.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00029",
+      "text": "In addition, the Russian media in exile, which now in a lot of circumstances takes on the role of civil society, too, has their own programs of circumventing the censorship.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 10056,
+      "body_end": 10229,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00030",
+      "text": "For example, one of the most popular sources, Meduza, has developed its own app that does not require VPN to access the news. It also has a service, “magic link,” which allows articles to be opened without a VPN. In addition, most of the text is later repeated as audio files on podcast or video platforms. Another major opposition media, TV Dozhd, is freely distributing a VPN extension for browsers that would work not only with their own content but also other blocked websites and platforms.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 10231,
+      "body_end": 10726,
+      "source_links": [
+        "https://chromewebstore.google.com/detail/%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB-%D0%B4%D0%BE%D0%B6%D0%B4%D1%8C/blhcnbihcddecmpihmianlgcgjeehcof",
+        "https://meduza.io/feature/2024/12/18/nachinaem-zagadyvat-novogodnie-zhelaniya-nashe-glavnoe-prodolzhat-rabotat-dlya-vas?utm_source=meduza&utm_medium=top_banner&utm_campaign=wishlist_251224",
+        "https://tvrain.tv/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00031",
+      "text": "However, if Vladimir Putin decides to shut down the internet in Russia, VPNs will be of no use. As Klimarev explained in an interview to TV Dozhd:",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 10728,
+      "body_end": 10874,
+      "source_links": [
+        "https://www.youtube.com/watch?v=03Jk_iWMeAA"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00032",
+      "text": "> The principle of VPN operation involves connecting to some foreign service or server and then receiving information. Since all these servers are located abroad, it becomes impossible to connect via VPN. This is essentially the “Cheburnet” [sovereign domestic internet] that has been talked about for a long time. Whether it will work on a nationwide scale is still unclear, but it would deal a serious blow to the country's economy, which is already in poor condition. In general, we can only welcome this. The worse the economy in Russia, the fewer rockets they will produce, and the less they will shoot at Ukraine.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 10876,
+      "body_end": 11495,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825472-b00033",
+      "text": "At the moment, using VPNs is not deemed illegal in Russia. But it is prohibited to advertise or distribute information about them. The year 2025, experts predict, will be the year of the War on VPNs in the country.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 11497,
+      "body_end": 11711,
+      "source_links": [
+        "https://meduza.io/cards/roskomnadzor-budet-sobirat-dannye-ob-oborudovanii-internet-polzovateley-dlya-borby-s-vpn"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00034",
+      "text": "Klimarev says that, perhaps soon, the authorities will introduce not blacklists but “white lists” of the RuNet. This would be something close to what Turkmenistan is doing with its internet system, that only allows access to specific IP addresses that are on government lists.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 11713,
+      "body_end": 11989,
+      "source_links": [
+        "https://en.turkmen.news/news/corrupt-security-agents-take-control-of-turkmenistan-s-internet/",
+        "https://meduza.io/episodes/2024/12/17/v-rossii-zablokirovali-viber-chto-mozhet-byt-sleduyuschim-neuzheli-whatsapp-ili-telegram"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825472-b00035",
+      "text": "Of course, this is only if the regime doesn't turn Russia into North Korea instead, with a full-scale shutdown of all foreign internet traffic.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 11991,
+      "body_end": 12134,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Censorship_in_North_Korea#:~:text=Only%20some%20high%2Dlevel%20officials,curated%20by%20Korea%20Computer%20Center."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "cdae58053bbba969e38538f14fc02a366c78301e8d2455ab90934c2ebaa07fe3",
+  "word_count": 1948,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 12134,
+  "retrieved_at": "2026-11-16T22:45:19.599444+00:00",
+  "raw_html_sha256": "693c87daf0d4b95e6282a10c4b8a674afa357d9f7999f38b233ce23c879c3f7d",
+  "resolved_source_url": "https://globalvoices.org/2025/01/22/shutting-down-the-net-the-growing-threat-of-russian-internet-censorship/",
+  "canonical_url": "https://globalvoices.org/2025/01/22/shutting-down-the-net-the-growing-threat-of-russian-internet-censorship/",
+  "source_bytes": 202753,
+  "authors": [
+    {
+      "name": "Daria Dergacheva",
+      "url": "https://globalvoices.org/author/daria-dergacheva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 825472,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "693c87daf0d4b95e6282a10c4b8a674afa357d9f7999f38b233ce23c879c3f7d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-0439e8bb1c536091f67b",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-01",
+    "eligible_month_documents": 69,
+    "selected_month_documents": 58,
+    "inclusion_probability": 0.8405797101449275,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Daria Dergacheva",
+  "body_start": 483,
+  "body_end": 12617,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "3b3955285ef0ca1809f986559a1e199582207b0febba94ec7f2317e1ddff2503",
+  "text_path": "articles/gv-825472.txt",
+  "metadata_path": "metadata/gv-825472.json",
+  "attribution": "This story by Daria Dergacheva originally appeared on Global Voices. https://globalvoices.org/2025/01/22/shutting-down-the-net-the-growing-threat-of-russian-internet-censorship/",
+  "content_sha256": "0e834dec5730fb42d10c6d1b136bffce839d98412e4728646f88d09856d99784",
+  "source_sha256": "693c87daf0d4b95e6282a10c4b8a674afa357d9f7999f38b233ce23c879c3f7d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

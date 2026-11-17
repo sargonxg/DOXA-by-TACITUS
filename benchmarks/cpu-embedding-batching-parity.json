@@ -1,0 +1,358 @@
+{
+  "schema_version": "3.0",
+  "kind": "actual32-source-window embedding batching parity/performance microbenchmark",
+  "synthetic_inputs": false,
+  "accuracy_evaluation": false,
+  "windows": 32,
+  "source_window_order_preserved": true,
+  "returned_vectors_per_window": 32,
+  "dimensions": 384,
+  "model_profile": {
+    "id": "minilm",
+    "role": "retrieval",
+    "provider": "huggingface_cpu",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "license": "Apache-2.0",
+    "languages": [
+      "en"
+    ],
+    "parameters": 22713728,
+    "max_input_tokens": 256,
+    "dimensions": 384,
+    "runtime": "transformers_cpu",
+    "experimental": false,
+    "calibration": "not_applicable",
+    "intended_use": "Semantic retrieval and clustering of short source windows; not prejudice classification.",
+    "limitations": [
+      "The sentence-transformer limit is 256 wordpieces, despite the encoder's 512 positions.",
+      "Similarity is not evidence of shared stance, endorsement or prejudice."
+    ],
+    "files": [
+      "README.md",
+      "config.json",
+      "model.safetensors",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "special_tokens_map.json",
+      "vocab.txt",
+      "sentence_bert_config.json",
+      "1_Pooling/config.json",
+      "modules.json"
+    ],
+    "max_download_bytes": 167772160,
+    "registry_version": "doxa-models-3.0",
+    "reviewed_at": "2026-11-16",
+    "model_card": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md",
+    "runtime_settings": {
+      "device": "cpu",
+      "threads": 1,
+      "batch_size": 16,
+      "batching_policy": "source_order",
+      "pooling": "attention_mask_mean_then_l2"
+    }
+  },
+  "control_batching": "source_order",
+  "candidate_batching": "length_ascending",
+  "pooling_unchanged": true,
+  "model_revision_unchanged": true,
+  "threads": 1,
+  "batch_size": 16,
+  "token_lengths": [
+    100,
+    79,
+    17,
+    4,
+    11,
+    21,
+    13,
+    14,
+    10,
+    17,
+    24,
+    116,
+    88,
+    4,
+    52,
+    50,
+    37,
+    34,
+    44,
+    139,
+    55,
+    101,
+    86,
+    71,
+    93,
+    4,
+    91,
+    85,
+    91,
+    4,
+    130,
+    44
+  ],
+  "timings_seconds": {
+    "source_order": [
+      3.373153000000457,
+      5.0573103000024275
+    ],
+    "length_ascending": [
+      1.9044283949988312,
+      2.044291425998381
+    ]
+  },
+  "median_seconds": {
+    "source_order": 4.215231650001442,
+    "length_ascending": 1.974359910498606
+  },
+  "max_absolute_vector_difference": 1.1175870895385742e-07,
+  "max_pairwise_cosine_difference": 3.5762786865234375e-07,
+  "acceptance_tolerance": 1e-05,
+  "parity_passed": true,
+  "source_windows": [
+    {
+      "document_id": "0eaf3477aa8517da44c0bc041ffed357",
+      "block_id": "gv-789514-b00002",
+      "start": 0,
+      "end": 446,
+      "text_sha256": "4fd931b9b884c1098d985223d2464a3858d8fe846b8b2c90dd99a5525d3491fe"
+    },
+    {
+      "document_id": "0eaf3477aa8517da44c0bc041ffed357",
+      "block_id": "gv-789514-b00004",
+      "start": 0,
+      "end": 436,
+      "text_sha256": "be091122ccd135d9431bc89f9555a1ee45f8e678ba4307e4efbadd5a9ef7950f"
+    },
+    {
+      "document_id": "0eaf3477aa8517da44c0bc041ffed357",
+      "block_id": "gv-789514-b00006",
+      "start": 0,
+      "end": 53,
+      "text_sha256": "83980b92ddc4460cb37621c4ba72ce406fc9c41f15c5526011709cb7c94d653c"
+    },
+    {
+      "document_id": "0eaf3477aa8517da44c0bc041ffed357",
+      "block_id": "gv-789514-b00008",
+      "start": 0,
+      "end": 23,
+      "text_sha256": "f665b570b5a7c2d2b9a3d27acf47df2eb37a0876164053bfc7fb2ec016a2bdd5"
+    },
+    {
+      "document_id": "0eaf3477aa8517da44c0bc041ffed357",
+      "block_id": "gv-789514-b00010",
+      "start": 0,
+      "end": 38,
+      "text_sha256": "85c356cca1ed6afa30d0f66248ca082e2c2bdc97536997965e9b8c90dcbc1350"
+    },
+    {
+      "document_id": "0eaf3477aa8517da44c0bc041ffed357",
+      "block_id": "gv-789514-b00012",
+      "start": 0,
+      "end": 91,
+      "text_sha256": "4db43761a0104057fdcb4d5e0aa7cad84f3f4c7588c6aae58dd10192d0336ed2"
+    },
+    {
+      "document_id": "0eaf3477aa8517da44c0bc041ffed357",
+      "block_id": "gv-789514-b00014",
+      "start": 0,
+      "end": 30,
+      "text_sha256": "34cfb1456ca45283fffd3acecda8a4e1f9035d50f5412171874998f209f7cc32"
+    },
+    {
+      "document_id": "0eaf3477aa8517da44c0bc041ffed357",
+      "block_id": "gv-789514-b00016",
+      "start": 0,
+      "end": 47,
+      "text_sha256": "1f2e1154523d241b7c9d24c8d02f499b560917a7c5e1a7ab990cb199bb814caf"
+    },
+    {
+      "document_id": "0eaf3477aa8517da44c0bc041ffed357",
+      "block_id": "gv-789514-b00018",
+      "start": 0,
+      "end": 32,
+      "text_sha256": "fd90cca19cb601fa8968a7f13c8f9e7eff461b874de1b827a82565d5d689cf6e"
+    },
+    {
+      "document_id": "0eaf3477aa8517da44c0bc041ffed357",
+      "block_id": "gv-789514-b00020",
+      "start": 0,
+      "end": 63,
+      "text_sha256": "eda660dd4a62814eb710320459c1dc0b1cb63c499c2f717d13d60663b3857c76"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00001",
+      "start": 0,
+      "end": 102,
+      "text_sha256": "55ca3a2533c4ab0e0494bf73b1894b0faea55c543a77f34aabc1e3f1875b5a22"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00003",
+      "start": 0,
+      "end": 605,
+      "text_sha256": "c933ede4cf4202cec649d53a99967e35f10ea4490225d52f89984c4e22986c9a"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00005",
+      "start": 0,
+      "end": 416,
+      "text_sha256": "78c05b3ae3c8efc02bcdb6e1bc180a7b612e2d0dc41728c7eac6ba032683c1fa"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00007",
+      "start": 0,
+      "end": 19,
+      "text_sha256": "62a2faba3021fd640c3d726446b20a6bba9097ec5c25136fece5ae9cb42495ad"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00009",
+      "start": 0,
+      "end": 291,
+      "text_sha256": "e80319316803cec05271695ecfcde573aae030b8590b5dac11ad1d5e76a7de72"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00011",
+      "start": 0,
+      "end": 207,
+      "text_sha256": "a8316270fdea35afdb89e4e3d5cd6cc90108ed71332c8e17733004cd1ac67e10"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00013",
+      "start": 0,
+      "end": 215,
+      "text_sha256": "f012991260e5de9c8402a178ee6d0767a158aa35a02778c4b5a6ff85ad81e499"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00015",
+      "start": 0,
+      "end": 123,
+      "text_sha256": "cdcf648ee964542d5e84418c5023486ec5a36e63747f7f61c816f3112d970e03"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00017",
+      "start": 0,
+      "end": 230,
+      "text_sha256": "f6faefcfc4465a8a2e0a0e7b4be96185756dc37ac2e1f18ba9fa5bba6efe551f"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00019",
+      "start": 0,
+      "end": 691,
+      "text_sha256": "4e371a6564bd36da75dd13778c28770f705e8ce7537ca2b166f93d93c7ff451d"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00021",
+      "start": 0,
+      "end": 302,
+      "text_sha256": "4f1e822dd94687af0b58a6673ff33c236aa8e904f62baaf684932c987d8bece7"
+    },
+    {
+      "document_id": "007b9dc7370ecb8635238847fc55feec",
+      "block_id": "gv-736820-b00023",
+      "start": 0,
+      "end": 600,
+      "text_sha256": "c8140ed6779bf956cdcf97142acbd81e4f8b1838b8cb1e22dd107a32051f5f50"
+    },
+    {
+      "document_id": "064f5f4dca7909d3a4e01178063b0be8",
+      "block_id": "gv-804055-b00002",
+      "start": 0,
+      "end": 387,
+      "text_sha256": "6f6bd06d9b59780e52f71df50c47000add18f036ce52e65bdb692bbebb10d6eb"
+    },
+    {
+      "document_id": "064f5f4dca7909d3a4e01178063b0be8",
+      "block_id": "gv-804055-b00004",
+      "start": 0,
+      "end": 329,
+      "text_sha256": "2dbce0d1e0b19507eb946ca8fbe54d1f77ae3d9a48b1492443ad8af77e0f1a12"
+    },
+    {
+      "document_id": "064f5f4dca7909d3a4e01178063b0be8",
+      "block_id": "gv-804055-b00006",
+      "start": 0,
+      "end": 495,
+      "text_sha256": "6e8a0340d0b35843d48dcb7f3d9fa89a519d8a6aaa341abcb576b17003c9a7ff"
+    },
+    {
+      "document_id": "064f5f4dca7909d3a4e01178063b0be8",
+      "block_id": "gv-804055-b00008",
+      "start": 0,
+      "end": 15,
+      "text_sha256": "5f813b1794e0435368e3e680a278842cea4bcce013e7501ea44bc756b879e0d0"
+    },
+    {
+      "document_id": "064f5f4dca7909d3a4e01178063b0be8",
+      "block_id": "gv-804055-b00010",
+      "start": 0,
+      "end": 467,
+      "text_sha256": "6d12da6330f6cc0e55643d1ab70a3f26fec2412c5750298c5911e8e5cea6cfb7"
+    },
+    {
+      "document_id": "064f5f4dca7909d3a4e01178063b0be8",
+      "block_id": "gv-804055-b00012",
+      "start": 0,
+      "end": 463,
+      "text_sha256": "b9f014d5919b3e712a9bd2ff6317337dcd421a6288be179b5af362520f7de98b"
+    },
+    {
+      "document_id": "064f5f4dca7909d3a4e01178063b0be8",
+      "block_id": "gv-804055-b00014",
+      "start": 0,
+      "end": 427,
+      "text_sha256": "81e74f16291e35520fadca327e2061bb5b0904b269b4551a7458a3e6c22c27d1"
+    },
+    {
+      "document_id": "064f5f4dca7909d3a4e01178063b0be8",
+      "block_id": "gv-804055-b00016",
+      "start": 0,
+      "end": 7,
+      "text_sha256": "3b41ba9c7cb8c5d6530c12eec5000c4e2ad0c48b2d4b9149a3ef6d2a23802819"
+    },
+    {
+      "document_id": "064f5f4dca7909d3a4e01178063b0be8",
+      "block_id": "gv-804055-b00018",
+      "start": 0,
+      "end": 656,
+      "text_sha256": "f4b59136224c74678242d291a42ffa7126030567bc74bc99cf958ab4b52a9b4f"
+    },
+    {
+      "document_id": "064f5f4dca7909d3a4e01178063b0be8",
+      "block_id": "gv-804055-b00020",
+      "start": 0,
+      "end": 224,
+      "text_sha256": "f085a3460fe86049bde53a65371d1c02c7d04621b12ce9ef30b358490c756477"
+    }
+  ],
+  "limitations": [
+    "Thirty-two actual frozen-news source windows; a functional/numerical test, not semantic or prejudice accuracy evidence.",
+    "Both policies were warmed and alternated; concurrent cloud/local analysis and indexing make timing variable.",
+    "Vector order/window count and exact source ranges are unchanged.",
+    "1e-5 is the measured parity acceptance tolerance, not a universal guarantee for every CPU/runtime."
+  ],
+  "observed_median_speedup": 2.1349864467907094,
+  "thread_policy_parity": {
+    "control_threads": 2,
+    "candidate_threads": 4,
+    "batch_size": 16,
+    "batching_policy": "length_ascending",
+    "windows": 32,
+    "maximum_absolute_vector_difference": 0.0,
+    "maximum_pairwise_cosine_difference": 0.0,
+    "acceptance_tolerance": 1e-05,
+    "parity_passed": true,
+    "source_window_order_preserved": true
+  }
+}

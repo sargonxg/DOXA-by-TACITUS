@@ -1,0 +1,353 @@
+{
+  "id": "gv-720400",
+  "publisher_id": 720400,
+  "source_id": "globalvoices:720400",
+  "source_url": "https://globalvoices.org/2020/10/06/we-have-a-strange-destiny-a-conversation-with-the-livonian-poet-valts-ernstreits-part-ii/",
+  "title": "‘We have a strange destiny': a conversation with the Livonian poet Valts Ernštreits: Part II",
+  "published_at": "2020-10-06T22:04:00Z",
+  "modified_at": "2020-10-08T10:19:46Z",
+  "api_author_id": 2756,
+  "api_content_sha256": "8888cff2e15cbcc2df6a4fa18db05ba8aa03fe6f178e7bd975aba0baa233f35e",
+  "api_response_sha256": "f9cee3b5e82058a53a72abf37f4b8c608c3497ca79effe33e36fced5052a4cbe",
+  "api_retrieved_at": "2026-11-16T22:20:29.692733+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 239,
+      "count": 12626,
+      "name": "Arts &#038; Culture",
+      "slug": "arts-culture",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 1355,
+      "count": 5871,
+      "name": "Ethnicity &amp; Race",
+      "slug": "ethnicity-race",
+      "parent": 238
+    },
+    {
+      "id": 258,
+      "count": 8694,
+      "name": "History",
+      "slug": "history",
+      "parent": 238
+    },
+    {
+      "id": 262,
+      "count": 2092,
+      "name": "Indigenous",
+      "slug": "indigenous",
+      "parent": 238
+    },
+    {
+      "id": 296,
+      "count": 2217,
+      "name": "Language",
+      "slug": "language",
+      "parent": 238
+    },
+    {
+      "id": 66,
+      "count": 310,
+      "name": "Latvia",
+      "slug": "latvia",
+      "parent": 57
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-720400-b00001",
+      "text": "This is the second part of an interview I conducted with Livonian poet and translator Valts Ernštreits, who is currently the director of the Livonian Institute, founded in 2018, at the University of Latvia in the capital city Rīga. Read the first part here.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 257,
+      "source_links": [
+        "https://globalvoices.org/2020/10/06/we-have-a-strange-destiny-a-conversation-with-the-livonian-poet-valts-ernstreits-part-i/",
+        "https://www.britishcouncil.org/voices-magazine/literary-scene-critically-endangered-language-livonian-latvia"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720400-b00002",
+      "text": "I spoke with Ernštreits about the role of digital technologies in language preservation and his hopes for the survival of this endangered Finnic language. The interview has been edited for style and brevity.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 259,
+      "body_end": 466,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720400-b00003",
+      "text": "WM: Tell me a little bit about the resources that are currently available online to learn Livonian. There’s the website livones.net, and there are Facebook pages and YouTube pages to teach Livonian – at quite a basic level, I think, mostly?",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 468,
+      "body_end": 708,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720400-b00004",
+      "text": "> VE: A little bit, yes. In coming years that should change quite fast. On the one hand, what we are developing at the institute are research tools for better research into Livonian and better collection of data on Livonian. But on the other hand, we keep in mind that one part of the audience is the Livonian community, and so we try to work in both directions. But they are closely connected, because you can’t teach Livonian without research and you can’t research Livonian without resources. But the idea is really that as a by-product of what we are creating is something for the whole society, in the sense that all these tools can be used sufficiently for learning and keeping the Livonian language and culture – starting from maps in Livonian.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 710,
+      "body_end": 1461,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720400-b00005",
+      "text": "> That’s one project that has come out of this place name dictionary. One part of this which is currently being developed is also – not corpora, but collection of texts. That’s also one problem, because corpora are usually just a mass of texts, but if you want to read them separately, you cannot access them, so for us it’s very important also to have all the Livonian texts in one place, so people can use them for whatever purpose they need – just for reading on a Saturday or for creating digital or language material themselves.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1463,
+      "body_end": 1996,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720400-b00006",
+      "text": "WM: I believe that the Tava Klase (Your Class) programme was the first time that Livonian was made available for study at the national level, even if it was only an introductory course. It's interesting that this happened almost by accident, as a result of the COVID-19 pandemic and school closures. I read that you were given two weeks to create episodes [for online learning], is that right?",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1998,
+      "body_end": 2391,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720400-b00007",
+      "text": "> VE: I would say even less. It was a really nice example of how to really exploit this pandemic for the greater good. I received a call from the Ministry of Education, and the person told me “we have this Tava Klase project – distance teaching over the television – and we’ve put Livonian language on the list”. But nobody asked who would do it. Of course we could not leave that unanswered; first of all, to avoid a situation where ministry says “we offered it, and you didn’t take the offer”. So we didn’t want that to be used as an argument [in future].",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2393,
+      "body_end": 2950,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720400-b00008",
+      "text": "> So we counted seven lessons which we had to make and it became pretty clear that you can't really teach the language in seven 20-minute lessons. It’s impossible. That’s two hours altogether – no language can be learnt in two hours. Then we understood that we had to take a different approach: to offer basic knowledge about Livonian and Livonians in general. And that could be it – that is what could be achieved in this format, just from a calculation of the time.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2952,
+      "body_end": 3419,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720400-b00009",
+      "text": "> Then we made the first lesson. We realised that this was something which was going to last […] So was very important that we do it properly, even though we have a time limit and no money. It was difficult, but we had to manage.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3421,
+      "body_end": 3650,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720400-b00010",
+      "text": "> This is especially the case with Livonian. If you’re talking about mathematics or Latvian language or English, there are professional teachers who have been teaching full-time. There are long-standing traditions of teaching those subjects in schools, so it’s much easier – although the online format is different; it’s not the same as the school format, which many of the teachers participating in this Tava Klase project didn’t really realise. They kind of took it as “I’ll do the same lesson, just in front of a camera”, which is not really how it works.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3652,
+      "body_end": 4210,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720400-b00011",
+      "text": "> We approached it with the principle that we have to make it so that it can be used in years after. So first of all, don’t talk about the pandemic, don’t talk about the current situation, even though small things should be taken into account, because you’re not making it for today. Another thing is that we’re not [only] making it for schoolkids, but also for the broader public. Not only for people in the educational system – again, to save resources.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4212,
+      "body_end": 4667,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720400-b00012",
+      "text": "WM: Do you think you can build on this series you’ve made in the future?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4669,
+      "body_end": 4741,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720400-b00013",
+      "text": "> VE: Yes. One thing is that this series filled a particular gap. Because as I said, when we were making it, there was one particular issue: not to give the time when this was made. Not to say “well, this is a brilliant time when all the Livonians are on the Livonian Coast” – in three years no one will really know what that means. Since then we've started thinking of getting into really serious television, and getting into Latvian state television with a series about Livonian history, to develop something much more in-depth.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4743,
+      "body_end": 5273,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720400-b00014",
+      "text": "> There are already documentaries about Livonian, but they are kind of emotional. This would be educational. The idea would be that we pick important events in Livonian history and try to show how they correlate with Latvian history – for example, how the building of Rīga is actually an event for Livonian history. To give the Livonian perspective on even well-known events.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5275,
+      "body_end": 5650,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720400-b00015",
+      "text": "> We didn’t want only to show good and nice things, but we wanted also to talk about problems, about what has not been good: about the ban on using Livonian place names in Livonian newspapers, or the death of a Livonian patriot in Ventspils prison [Uļi Kīnkamäg, in 1932], who was arrested because of his Livonian beliefs. To show the whole picture, to show that Livonians do have their own view about certain things, and there are events that may not seem important for Latvia but which are very important for Livonians, for these indigenous people of Latvia. That's the idea of the series: to tell the Livonian story to the Latvian public, so they would better understand why Livonian is important. Because 15 years ago, they didn’t even know the difference between Livonians and, I don’t know, people from Bauska [a town in southern Latvia]",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5652,
+      "body_end": 6495,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720400-b00016",
+      "text": "WM: Just a comment about the material – you mentioned that you weren’t using it to teach the language as such. You did teach colours, the names of family members, numbers, and so on, but there’s a lot more: you tell stories, you talk about place names… It felt to me that a really big theme of all of the episodes was the connection with Latvia, and the connection with the Latvian language – that seemed to be something you were really emphasising. You talked about the words in Latvian that came from Livonian and so on.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6497,
+      "body_end": 7019,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-720400-b00017",
+      "text": "> VE: The idea was what we can give in these lessons is some basics of the language, some understanding for people in Latvia of what we have in common and what is different, and also to show various aspects of Livonian culture which people have not seen, and basically in these seven lessons to give an idea about all the various areas. But also how Livonians connect with everyone [in Latvia] – why is it personal? The idea was not like showing something in a zoo – you can see different strange animals there. This was like: why is this important for me, as a Latvian? What do I not know?",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 7021,
+      "body_end": 7611,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-720400-b00018",
+      "text": "> For example, in the last episode we were not on the Livonian Coast – it was actually the longest episode, we filmed it for the whole day, and there was already some pre-filmed material. It was dedicated to the places of Latvia, Livonian heritage in Rīga, Livonian heritage around the River Daugava [in central/southern Latvia], Livonian heritage in folk songs which are considered Latvian. And that was especially like: you’ve heard about Livonians, but this is why it’s important for every Latvian person and every schoolkid in Latvia to know about the Livonians.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 7613,
+      "body_end": 8179,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "0e8aa2f7b6f9251a9ce2c0e45af83434eb8b3b3ab0fe693cc97dc59da36280d6",
+  "word_count": 1453,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8179,
+  "retrieved_at": "2026-11-16T22:27:45.185338+00:00",
+  "raw_html_sha256": "1117d4f459a2d0ab53d140efdd9a18e6d9a59b9e4e2cffd32dac83239b0fe2d8",
+  "resolved_source_url": "https://globalvoices.org/2020/10/06/we-have-a-strange-destiny-a-conversation-with-the-livonian-poet-valts-ernstreits-part-ii/",
+  "canonical_url": "https://globalvoices.org/2020/10/06/we-have-a-strange-destiny-a-conversation-with-the-livonian-poet-valts-ernstreits-part-ii/",
+  "source_bytes": 190167,
+  "authors": [
+    {
+      "name": "Will Mawhood",
+      "url": "https://globalvoices.org/author/willmawhood/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 720400,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "1117d4f459a2d0ab53d140efdd9a18e6d9a59b9e4e2cffd32dac83239b0fe2d8",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-a3a4980a7397dbcb0e1d",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-10",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Will Mawhood",
+  "body_start": 516,
+  "body_end": 8695,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b8742a3949df742639652396cbd746019d17c539d19f998996a22c69a00984b5",
+  "text_path": "articles/gv-720400.txt",
+  "metadata_path": "metadata/gv-720400.json",
+  "attribution": "This story by Will Mawhood originally appeared on Global Voices. https://globalvoices.org/2020/10/06/we-have-a-strange-destiny-a-conversation-with-the-livonian-poet-valts-ernstreits-part-ii/",
+  "content_sha256": "a86463a0a164b966e2f67fba250978b2d60b22baafaf6ef0911575cecb41a330",
+  "source_sha256": "1117d4f459a2d0ab53d140efdd9a18e6d9a59b9e4e2cffd32dac83239b0fe2d8",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

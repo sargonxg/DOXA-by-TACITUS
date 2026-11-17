@@ -1,0 +1,409 @@
+{
+  "id": "gv-760739",
+  "publisher_id": 760739,
+  "source_id": "globalvoices:760739",
+  "source_url": "https://globalvoices.org/2022/04/15/how-russia-makes-laws-to-support-networked-authoritarianism/",
+  "title": "How Russia makes laws to support networked authoritarianism",
+  "published_at": "2022-04-15T02:48:49Z",
+  "modified_at": "2022-04-15T18:20:18Z",
+  "api_author_id": 1498,
+  "api_content_sha256": "7a9cfcc0b228bbec3c958d9c274fc032db942706aa79071736a35e7b38159da9",
+  "api_response_sha256": "38ad93d079743e010ebeaa95e36d2e6132e8c3254af60234cc4a8955464c79f0",
+  "api_retrieved_at": "2026-11-16T22:20:43.878278+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-760739-b00001",
+      "text": "The Russian Federation typically ranks among the worst offenders in internet freedom rankings, thanks to a well-documented history of information controls aimed at curtailing online expression. The authorities’ quest to control the Russian internet (known as the RuNet) began in earnest in 2012. At the time, mass protests over contested Russian elections and waves of unrest around the world alerted those in power to the growing role of the internet and social media in political and civic life. In the decade since, Russian lawmakers and government have created a sprawling web of new laws and amendments to police citizen activity and speech, curtail independent media work and bring social media platforms and digital corporations to heel.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 744,
+      "source_links": [
+        "https://advox.globalvoices.org/2016/06/23/netizen-report-russian-authorities-step-up-information-controls-in-the-name-of-national-security/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00002",
+      "text": "Policing content and speech",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 746,
+      "body_end": 773,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00003",
+      "text": "Networked authoritarianism remains Russia’s main approach to internet governance. First, a number of recent legislative acts seek to normalize state censorship and surveillance in digital spaces, targeting media outlets and NGOs as well as individuals. These include the 2014 so-called “bloggers’ law” that requires popular bloggers with over 3,000 daily views to register with the state and disclose their personal information and measures limiting anonymous use of public Wi-Fi networks and banning sales of prepaid SIM-cards to customers without state IDs.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 775,
+      "body_end": 1334,
+      "source_links": [
+        "https://globalvoices.org/2014/08/07/public-wifi-internet-id-passport-russia/",
+        "https://globalvoices.org/2014/08/25/blogger-law-russia-activists-ukraine-censorship/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00004",
+      "text": "One of the first restrictive laws was adopted in 2012 and grants unprecedented blocking powers to Russian telecommunications regulator Roskomnadzor and other state bodies. Federal Law #139-FZ mandates the creation of a “blacklist” registry of websites allegedly containing illegal or otherwise harmful content that internet service providers (ISPs) within Russia are required to block.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1336,
+      "body_end": 1721,
+      "source_links": [
+        "https://globalvoices.org/2012/07/10/russia-a-great-firewall-to-censor-the-runet/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00005",
+      "text": "Later, legislation targeting online speech branched out and became more specific. The 2016 Law On Information, Information Technologies and Protection of Information N149-FZ and the relevant anti-extremist Yarovaya Laws amendments ban extremist or terrorist content and speech, whereas the December 2020 law N513-FZ introduces new administrative responsibility for “offensive public speech” and libelous speech online. The Yarovaya amendments also simplify procedures for extra-judicial requests for user information.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1723,
+      "body_end": 2240,
+      "source_links": [
+        "http://publication.pravo.gov.ru/Document/View/0001202012300064",
+        "http://www.consultant.ru/document/cons_doc_LAW_61798/9ab7abe2b9fe407f507610f7e6e14a951d575585/",
+        "https://advox.globalvoices.org/2016/06/23/russian-activists-and-industry-speak-out-against-new-draconian-anti-terrorist-laws/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00006",
+      "text": "Securitizing internet governance",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2242,
+      "body_end": 2274,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00007",
+      "text": "Second, a range of new legal measures have been presented as crucial to ensure Russia’s national security. The so-called Yarovaya Law passed in the summer of 2016 and taking effect in 2018 is an “anti-extremism” package of amendments that includes anti-dissent measures such as increased sentences for the use of “extremist” language online, a push for internet companies to share encryption keys with the state and to decrypt user communications, and requirements for platforms to store user data (content) for six months and metadata for up to three years.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2276,
+      "body_end": 2834,
+      "source_links": [
+        "https://advox.globalvoices.org/2016/06/23/netizen-report-russian-authorities-step-up-information-controls-in-the-name-of-national-security/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00008",
+      "text": "Amendments to the Law On Information, Information Technologies and Protection of Information N149-FZ as part of the anti-extremism Yarovaya Laws oblige companies classed as “organizers of information distribution” (i.e., most internet services) to become part of a state registry and share user data with law enforcement.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2836,
+      "body_end": 3157,
+      "source_links": [
+        "http://www.consultant.ru/document/cons_doc_LAW_61798/9ab7abe2b9fe407f507610f7e6e14a951d575585/",
+        "https://advox.globalvoices.org/2016/06/23/netizen-report-russian-authorities-step-up-information-controls-in-the-name-of-national-security/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00009",
+      "text": "Blaming foreign agents",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3159,
+      "body_end": 3181,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00010",
+      "text": "Third, the first law requiring civil society organizations who benefited from foreign funding to register with the Justice Ministry as “foreign agents” was passed in 2014. The “foreign agent” label and legislation were subsequently broadened: first in 2017 to include media outlets, and then in 2019 to include individuals. The “foreign agent” crackdown escalated around the 2021 parliamentary elections, when election monitors, independent media, human rights NGOs and individual journalists and opposition activists were slapped with the label. The designation requires organizations or individuals “involved in political activity” and deemed to be “receiving assistance from abroad” to register with the state or face fines, internet bans and, potentially, prison sentences. They are also required to regularly report on their activities and indicate their foreign agent status on any materials or content they distribute, including social media posts.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3183,
+      "body_end": 4138,
+      "source_links": [
+        "https://globalvoices.org/2019/11/21/in-russia-individuals-can-now-be-branded-foreign-agents/",
+        "https://globalvoices.org/2021/08/19/russian-authorities-declare-independent-election-monitor-golos-a-foreign-agent/",
+        "https://globalvoices.org/2021/08/20/more-independent-media-added-to-russias-foreign-agent-roster/",
+        "https://globalvoices.org/2021/10/03/campaign-to-brand-russian-journalists-and-media-foreign-agents-picks-up-pace-after-elections/",
+        "https://meduza.io/en/feature/2020/12/28/what-you-need-to-know-about-russia-s-updated-foreign-agent-laws",
+        "https://meduza.io/en/news/2019/11/21/russian-lawmakers-adopt-legislation-that-will-allow-the-government-to-designate-any-blogger-with-income-abroad-as-a-foreign-agent",
+        "https://sozd.duma.gov.ru/bill/1073604-7",
+        "https://www.themoscowtimes.com/2021/07/23/russian-investigative-news-site-the-insider-added-to-foreign-agents-list-a74601"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00011",
+      "text": "Sovereign internet",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4140,
+      "body_end": 4158,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00012",
+      "text": "Since 2019, Russian lawmakers and regulators have been pursuing the idea of “internet sovereignty”. This was made possible through the “sovereign internet” legislation which came into force in 2019, It effectively requires all Russian ISPs to install DPI (deep-packet inspection) equipment, referred to by state regulator Roskomnadzor as a “technical means to counter threats.” The law also provides for the centralized state management of DPI tools to filter traffic and block or throttle specific services or protocols. Under the guise of defending the country against external foes and preserving the stability and security of the RuNet, the “sovereignty” bill actually aims to further neutralize those it sees as internal threats and to make state surveillance and censorship easier.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4160,
+      "body_end": 4947,
+      "source_links": [
+        "https://advox.globalvoices.org/2019/11/06/behold-russias-new-sovereign-internet/",
+        "https://roskomsvoboda.org/post/suverenny-runet-uspeshno-no-nezakonno/",
+        "https://www.themoscowtimes.com/2022/03/01/russia-faces-loss-of-digital-sovereignty-a76681"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00013",
+      "text": "Holding platforms hostage",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4949,
+      "body_end": 4974,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00014",
+      "text": "Increasingly, Russian lawmakers have been targeting platforms as key conduits of information and moderation decisions online. The data localization law that came into force in 2016 requires internet companies to store Russian users’ data on servers located within Russia. Though some companies (e.g., Viber, Booking.com) have complied with the demands, others (such as Facebook and Twitter) have resisted doing so, and have faced growing fines.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4976,
+      "body_end": 5420,
+      "source_links": [
+        "https://globalvoices.org/2015/11/12/russia-changes-its-mind-asks-twitter-to-store-russian-user-data-locally/",
+        "https://globalvoices.org/2021/08/26/russian-court-issues-bigger-fines-to-social-media-companies-for-breaching-data-localization-rules/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00015",
+      "text": "On February 1, 2021, a new law, 530-FZ, came into power which provides an official definition for “social media platforms” and mandates that all social media platforms with over 500,000 daily visitors operating in Russia must proactively remove content that is illegal or banned by Russian legislation (from child pornography and content promoting suicide, drug use or alcohol consumption to “calls for mass disorder” and content displaying “disrespect or abuse of government or state officials”). Such platforms are added to a new state registry of “social media” and are required to police their content without being prompted by state requests or court orders. Platforms have already faced hefty fines with the state regulator arguing they have not been blocking or removing illegal content thoroughly enough. Another legal measure targeting tech giants is the new “hostage-taking” law which requires them to establish a legal entity in Russia. Failure to open a local office could result in penalties ranging from an advertising ban to being fully blocked in the country.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5422,
+      "body_end": 6497,
+      "source_links": [
+        "http://publication.pravo.gov.ru/Document/View/0001202012300062?index=17&rangeSize=1",
+        "https://530-fz.rkn.gov.ru/",
+        "https://roskomsvoboda.org/69117/",
+        "https://roskomsvoboda.org/post/prez-podpisal-zakon-o-zalozhnikah/",
+        "https://www.themoscowtimes.com/2021/07/01/russia-orders-foreign-tech-giants-to-set-up-local-foothold-a74399"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00016",
+      "text": "Creating an alternative reality",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6499,
+      "body_end": 6530,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00017",
+      "text": "Following the start of Russia’s full-scale invasion of Ukraine on 24 February, 2022, Russian lawmakers swiftly adopted a draconian law criminalizing any media coverage or social media posts about the war that diverge from the state agenda. So far, the law has enabled Roskomnadzor to ban Facebook, Twitter, Instagram and Google News, and has led to a mass exodus of remaining independent media and journalists fearing criminal prosecution.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6532,
+      "body_end": 6971,
+      "source_links": [
+        "https://www.themoscowtimes.com/2022/03/04/bbc-halts-work-in-russia-over-fake-news-jail-terms-a76767",
+        "https://www.themoscowtimes.com/2022/03/04/putin-signs-law-introducing-jail-terms-for-fake-news-on-army-a76768",
+        "https://www.themoscowtimes.com/2022/03/21/russian-court-bans-instagram-facebook-as-extremist-a77017"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00018",
+      "text": "The vast number of legal measures added to Russia’s internet governance roster in the past decade is deceptive: in reality, such legislative activity is far from productive as it concentrates power in the hands of the networked authoritarian state, further limits political expression and squeezes out any remaining freedoms from the RuNet.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6973,
+      "body_end": 7313,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00019",
+      "text": "Please visit the project page for more pieces from the Unfreedom Monitor.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 7315,
+      "body_end": 7388,
+      "source_links": [
+        "https://advox.globalvoices.org/special/unfreedom-monitor/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-760739-b00020",
+      "text": "You can read more of our coverage of Russia's invasion of Ukraine here.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 7390,
+      "body_end": 7461,
+      "source_links": [
+        "https://globalvoices.org/special/russia-invades-ukraine/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "94d22d01e9fdf2312a5bc7deba0bd999e547b615f22c19490f517ee50c63ce38",
+  "word_count": 1105,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 7461,
+  "retrieved_at": "2026-11-16T22:34:26.249319+00:00",
+  "raw_html_sha256": "35b0f34c43c3e969d1be084b2e5b71e49ee96a48dd9f54ae6f3d539072a83f2b",
+  "resolved_source_url": "https://globalvoices.org/2022/04/15/how-russia-makes-laws-to-support-networked-authoritarianism/",
+  "canonical_url": "https://globalvoices.org/2022/04/15/how-russia-makes-laws-to-support-networked-authoritarianism/",
+  "source_bytes": 194372,
+  "authors": [
+    {
+      "name": "Tanya Lokot",
+      "url": "https://globalvoices.org/author/tetyana-lokot/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 760739,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "35b0f34c43c3e969d1be084b2e5b71e49ee96a48dd9f54ae6f3d539072a83f2b",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-c87d394860886c950ea8",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-04",
+    "eligible_month_documents": 76,
+    "selected_month_documents": 64,
+    "inclusion_probability": 0.8421052631578947,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Tanya Lokot",
+  "body_start": 453,
+  "body_end": 7914,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "606000054242c21560f9e4c738955e878a6704337810f37aeb32e51946429472",
+  "text_path": "articles/gv-760739.txt",
+  "metadata_path": "metadata/gv-760739.json",
+  "attribution": "This story by Tanya Lokot originally appeared on Global Voices. https://globalvoices.org/2022/04/15/how-russia-makes-laws-to-support-networked-authoritarianism/",
+  "content_sha256": "4f35b709663d9205f2d197ce55e3764aa249528cc149dc76037f510bb1031f22",
+  "source_sha256": "35b0f34c43c3e969d1be084b2e5b71e49ee96a48dd9f54ae6f3d539072a83f2b",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

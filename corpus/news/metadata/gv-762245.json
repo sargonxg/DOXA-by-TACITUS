@@ -1,0 +1,583 @@
+{
+  "id": "gv-762245",
+  "publisher_id": 762245,
+  "source_id": "globalvoices:762245",
+  "source_url": "https://globalvoices.org/2022/05/03/china-weibos-new-location-tag-exposes-the-whereabouts-of-users-opinion-leaders-and-tiny-pinks/",
+  "title": "China: Weibo’s new location tag exposes the whereabouts of users, opinion leaders and tiny pinks",
+  "published_at": "2022-05-03T12:41:35Z",
+  "modified_at": "2022-05-03T20:24:11Z",
+  "api_author_id": 254,
+  "api_content_sha256": "7ffdf50c32a4e63968e29e9d1cee41f1d0db23b2bd9bcd1c1cc971d91b06b708",
+  "api_response_sha256": "38ad93d079743e010ebeaa95e36d2e6132e8c3254af60234cc4a8955464c79f0",
+  "api_retrieved_at": "2026-11-16T22:20:43.878278+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 49,
+      "count": 1566,
+      "name": "Hong Kong (China)",
+      "slug": "hong-kong-china",
+      "parent": 16
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 48,
+      "count": 960,
+      "name": "Taiwan (ROC)",
+      "slug": "taiwan-roc",
+      "parent": 16
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 219,
+      "count": 1772,
+      "name": "WORLD",
+      "slug": "world",
+      "parent": 0
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-762245-b00001",
+      "text": "Sina Weibo, China’s Twitter-like social media platform, had recently updated its application to show individual users’ geolocation data, citing the need to prevent disinformation and rumours. Despite privacy concerns, the location data has unexpectedly exposed the whereabouts of pro-government opinion leaders and patriotic trolls.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 332,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00002",
+      "text": "Though the platform has been showing user IP information since March, the latest application upgrade launched on April 28 will show users’ locations whenever they publish on Weibo. The company’s announcement said that the change was to protect users’ rights to information:",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 334,
+      "body_end": 607,
+      "source_links": [
+        "https://weibo.com/1934183965/LqvYeCdBu"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00003",
+      "text": "> 微博一直致力于维护健康有序的讨论氛围，保障用户第一时间获取真实有效信息的权益。为减少冒充热点事件当事人、恶意造谣、蹭流量等不良行为，确保传播内容的真实、透明",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 609,
+      "body_end": 689,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00004",
+      "text": "> Weibo has been dedicated to maintaining a healthy and orderly environment for discussion and protecting users’ right to access real and valid information in a timely manner. In order to prevent the impersonation of eyewitnesses of social incidents, malicious rumours, and abusive behaviour to boost page views, and to ensure the circulation of real, transparent content…",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 691,
+      "body_end": 1063,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00005",
+      "text": "Other social media platforms have also launched the geolocation tag feature and a few netizens have raised some privacy concerns.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1065,
+      "body_end": 1194,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00006",
+      "text": "The whereabouts of the patriots",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1196,
+      "body_end": 1227,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00007",
+      "text": "Meanwhile, many citizens are surprised to find out that a number of patriotic opinion leaders are residing outside China. Among the most eye-catching ones is prominent blogger Lian Yue, as highlighted by tech-blogger William Long:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1229,
+      "body_end": 1459,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00008",
+      "text": "> The prominent patriotic blogger Lian Yue once urged people not to migrate to Japan. After the introduction of the new geolocation IP marking policy on various social media platforms, an article that Lian Yue published on April 29 indicated that his IP is in Japan.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1461,
+      "body_end": 1727,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00009",
+      "text": "Lian Yue previously wrote on his WeChat and Weibo public accounts:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1729,
+      "body_end": 1795,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00010",
+      "text": "> 我对那些移民日本的人说：别去，你迟早会被类似奥姆真理教的组织毒死；我对那些移民美国的人说，别去，你迟早会死于‘类似911’的恐怖袭击。",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1797,
+      "body_end": 1866,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00011",
+      "text": "> I told those who planned to migrate to Japan: don’t go, sooner or later you would be poisoned by organizations that resemble Amu Shinrikyo; I told those who planned to migrate to the US: don’t go, sooner or later you would be killed in terrorist attacks that resemble 911.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 1868,
+      "body_end": 2142,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00012",
+      "text": "Upon the exposure of his whereabouts, the patriotic opinion leader admitted that he is indeed in Japan for medical tourism. But many netizens are not satisfied with his answer. On Weibo, many asked him to reveal his disease and why he had to travel all the way to Japan for treatment.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2144,
+      "body_end": 2428,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00013",
+      "text": "More shocking exposure is the whereabouts of Diba, an online group which has built its reputation by organizing expeditions on Facebook and Twitter to spread patriotic messages overseas. Its geolocation data indicates that the account is posted from Taiwan, Hong Kong and Japan.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2430,
+      "body_end": 2708,
+      "source_links": [
+        "https://sosc.hkust.edu.hk/events/transnational-cyber-protests-diba-expeditions-facebook-during-anti-elab-movement"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00014",
+      "text": "Diba has become famous after organizing a Facebook expedition to troll the newly elected Taiwanese president Tsai Ing-wen in 2016.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2710,
+      "body_end": 2840,
+      "source_links": [
+        "https://advox.globalvoices.org/2016/01/25/chinese-netizens-climb-over-the-great-firewall-to-go-after-advocates-of-taiwanese-independence/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00015",
+      "text": "Though the geolocation tag can be explained by the use of VPN, a circumvention tool, there are also claims that two key members of Diba are indeed residing in Hualien city of Taiwan and allegedly both are active in spreading fake news about Taiwan on mainland Chinese social media outlets.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2842,
+      "body_end": 3131,
+      "source_links": [
+        "https://twitter.com/angie_c_kitty/status/1521100301625098245",
+        "https://twitter.com/hehehahahaaa/status/1520259245849030656"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00016",
+      "text": "Diba's whereabouts prompted a flood of mockeries on both Taiwanese and Chinese social media. Some mocked Diba as a “foreign force” or even a spy, others laughed at the new feature as it has unexpectedly exposed the overseas Chinese Tiny Pinks [a monomer for hyper-nationalistic Chinese citizens] and disinformation networks.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3133,
+      "body_end": 3457,
+      "source_links": [
+        "https://globalvoices.org/2021/10/19/malaysian-bad-boy-rapper-namewee-breaks-the-hearts-of-mainland-chinese-little-pinks/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00017",
+      "text": "The following Weibo post summed up the nature of patriotic performance on Chinese social media reflected in the location data:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3459,
+      "body_end": 3585,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00018",
+      "text": "> 新浪微博IP地址归属地一公开后，妖魔鬼怪纷纷现了原形：爱国大V连岳原来一直在日本花天酒地，天天喊打倒美帝，解放湾湾的帝吧官博，原来一直生活在湾湾……他们别有用心地挑起网友们的情绪，扰乱网络秩序，收割傻叉们的流量…… ​",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3587,
+      "body_end": 3698,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00019",
+      "text": "> Upon the publication of IP geolocation data on Weibo, the ghosts and monsters are made visible. Lian Yue, a key patriotic opinion leader is having fun in Japan while attacking the US in his posts. Di Ba, which claims to liberate Taiwan, is based in Taiwan… They have been inciting netizens’ emotions will ill-intention, disrupting the order on the internet, and making a profit by attracting views from stupid people…",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3700,
+      "body_end": 4119,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00020",
+      "text": "Fake overseas news outlets",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4121,
+      "body_end": 4147,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00021",
+      "text": "On the other hand, many self-proclaimed overseas accounts are actually operating in China. For example, the geolocation of “Affairs in the UK” (英國哪些事兒), a Weibo account with 12 million followers is in fact based in Guangdong.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4149,
+      "body_end": 4374,
+      "source_links": [
+        "https://weibo.com/u/2549228714"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00022",
+      "text": "The majority of social media accounts with an overseas image have built their media businesses by translating foreign news and viral content to attract views (such as “Affairs in the UK”) and advertising products and services (such as “Rabbit mom in the US” 兔媽在美國 which publishes from Beijing).",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4376,
+      "body_end": 4670,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00023",
+      "text": "After their readers discovered, they were not residing overseas as they claimed, some of these bloggers shut down their comment functions to block sarcastic and angry comments.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4672,
+      "body_end": 4848,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00024",
+      "text": "A few have stepped out to clarify. For example, video blogger “Anhan sister and her family are in the US” (安嫻姐姐一家在姐姐) explained that her posts with the Xiamen geolocation tag were published by her sister. But not so many people buy her explanation.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4850,
+      "body_end": 5098,
+      "source_links": [
+        "https://weibo.com/2620279204/LqGifjv8i"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00025",
+      "text": "Amid all the chaos, it is anticipated that more Chinese netizens will use VPNs to hide their geolocation. It may bring other consequences too as pointed out by Twitter user @KooPeben",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5100,
+      "body_end": 5282,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00026",
+      "text": "> The publication of location data on Weibo has exposed half a million [pro-Chinese government navy personnel locations], it will have more impacts:",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5284,
+      "body_end": 5432,
+      "source_links": [
+        "https://www.taiwannews.com.tw/ch/news/2639126"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00027",
+      "text": "> Increase the cost of internet water army [paid online commentators to channel opinions]— they need to reorganize the water army bots by using different proxy servers.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5434,
+      "body_end": 5602,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Internet_Water_Army"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00028",
+      "text": "> Fuel regional conflicts within China — regional discrimination has been part of the Chinese online practice. Now they can attack others according to the person's location.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5604,
+      "body_end": 5777,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00029",
+      "text": "> Undermine the credibility of opinion leaders — as patriots are residing overseas while self-claimed overseas Chinese are in fact based in China.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 5779,
+      "body_end": 5925,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00030",
+      "text": "> Increase the cost of deception — it is more difficult to fabricate stories and identities.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 5927,
+      "body_end": 6019,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00031",
+      "text": "Regional divides",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 6021,
+      "body_end": 6037,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00032",
+      "text": "Indeed, regional stereotypes are often seen on social media. For example, on mainland Chinese social media, Hong Kong is often associated with the image of a spoiled and disobedient offspring who takes advantage of the benevolence of the motherly central government (央媽) and the current political crackdown is thereby a family lesson.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 6039,
+      "body_end": 6373,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00033",
+      "text": "The outbreak of COVID-19 has also fuelled regional conflicts. For example, Shenzhen accused Hong Kong of spreading Omicron across the border. Shanghai has also faced similar accusations from other cities and there is clearly a regional divide in the online public discourse, as observed by @big_ear_cat on Twitter:",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 6375,
+      "body_end": 6689,
+      "source_links": [
+        "https://globalvoices.org/2022/03/15/chinese-netizens-blame-hong-kong-for-omicron-outbreaks-in-china/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00034",
+      "text": "> For those whose IP address is not in Shanghai said Shanghai is doing great. Shanghai residents are complaining. It is clear who the Internet water army is.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 6691,
+      "body_end": 6848,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762245-b00035",
+      "text": "The Chinese propaganda authorities claimed during the last weekend that Shanghai had Omicron under control as it did not have new cases outside quarantine facilities and districts. Many non-Shanghai Weibo users echoed the state media reports with positive remarks while Shanghai residents continued complaining about the lockdown chaos.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 6850,
+      "body_end": 7186,
+      "source_links": [
+        "https://www.wenweipo.com/a/202204/30/AP626d01efe4b036dce9ab0bb3.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762245-b00036",
+      "text": "We are likely to see more regional divides of public opinions on national policies in the future, and its long term impact is yet to be observed.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 7188,
+      "body_end": 7333,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "ca08e1d29ce749ce44c17762d24cddf92c36d19556b4eca1cb56576fc9d53324",
+  "word_count": 1132,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7333,
+  "retrieved_at": "2026-11-16T22:34:42.474536+00:00",
+  "raw_html_sha256": "37e0b4302aa3a594202ef4d01f33d2eb3fa51cd3f6b7cbc0b3e8f0179486e971",
+  "resolved_source_url": "https://globalvoices.org/2022/05/03/china-weibos-new-location-tag-exposes-the-whereabouts-of-users-opinion-leaders-and-tiny-pinks/",
+  "canonical_url": "https://globalvoices.org/2022/05/03/china-weibos-new-location-tag-exposes-the-whereabouts-of-users-opinion-leaders-and-tiny-pinks/",
+  "source_bytes": 192652,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 762245,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "37e0b4302aa3a594202ef4d01f33d2eb3fa51cd3f6b7cbc0b3e8f0179486e971",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-df91039cf1a726bbbcc8",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-05",
+    "eligible_month_documents": 83,
+    "selected_month_documents": 69,
+    "inclusion_probability": 0.8313253012048193,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Oiwan Lam",
+  "body_start": 522,
+  "body_end": 7855,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "8e957583e58620c933a36e234f4fe47eb908f76d5f4e119fee1f57b989ffef6b",
+  "text_path": "articles/gv-762245.txt",
+  "metadata_path": "metadata/gv-762245.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2022/05/03/china-weibos-new-location-tag-exposes-the-whereabouts-of-users-opinion-leaders-and-tiny-pinks/",
+  "content_sha256": "d63c5a674d18859f54bb35a5a9780d7234780988b471d8894a5cb5d8ec0a16ce",
+  "source_sha256": "37e0b4302aa3a594202ef4d01f33d2eb3fa51cd3f6b7cbc0b3e8f0179486e971",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

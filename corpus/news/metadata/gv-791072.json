@@ -1,0 +1,547 @@
+{
+  "id": "gv-791072",
+  "publisher_id": 791072,
+  "source_id": "globalvoices:791072",
+  "source_url": "https://globalvoices.org/2023/06/30/stress-and-depression-prevail-amid-the-happy-hong-kong-publicity-campaign/",
+  "title": "Stress and depression prevail amid the ‘Happy Hong Kong’ publicity campaign",
+  "published_at": "2023-06-30T04:16:09Z",
+  "modified_at": "2023-06-30T04:16:09Z",
+  "api_author_id": 1814,
+  "api_content_sha256": "c2ba28c739b24d7670b3aa8cb824f6c0993f79cd28c140547d4597ff4fd361fe",
+  "api_response_sha256": "da6b3b0f7e68a5a41f538581a74d7b3c95ab51f06e761611226b463e0f01ea4e",
+  "api_retrieved_at": "2026-11-16T22:20:54.683859+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 49,
+      "count": 1566,
+      "name": "Hong Kong (China)",
+      "slug": "hong-kong-china",
+      "parent": 16
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-791072-b00001",
+      "text": "The original version of this report was written by Lea Mok and published in Hong Kong Free Press (HKFP) on June 25, 2023. The following edited version has been published on Global Voices under a content partnership agreement with HKFP.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 235,
+      "source_links": [
+        "https://hongkongfp.com/2023/06/25/series-of-knife-attacks-reveals-shortcomings-in-mental-health-care-in-happy-hong-kong/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00002",
+      "text": "An indiscriminate assault where a man diagnosed with schizophrenia killed two women in a shopping mall in early June has shocked the public and prompted discussion about mental health disorders in Hong Kong and how they might be connected to violent behaviour.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 237,
+      "body_end": 497,
+      "source_links": [
+        "https://hongkongfp.com/2023/06/03/hong-kong-mall-double-murder-police-say-no-evidence-suspect-knew-victims-as-public-urged-not-to-share-vids/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00003",
+      "text": "More knife assaults and murders have been reported in the past few weeks amid the government's post-Covid “Happy Hong Kong” campaign. Some Hongkongers have begun satirically calling the city an “International Knife-tropolis” or a “Brave New Hong Kong” (a reference to the dystopian novel, “A Brave New World“), mocking the police for allegedly allocating resources to national security instead of public safety. Amid rising crime rates, police have denied that this is the case.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 499,
+      "body_end": 977,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Brave_New_World",
+        "https://hongkongfp.com/2023/02/15/hong-kong-police-deny-putting-too-much-effort-into-national-security-as-leap-in-fraud-drives-10-crime-rate-increase/",
+        "https://hongkongfp.com/2023/04/24/happy-hong-kong-campaign-to-kick-off-with-hk30-movie-tickets-and-food-fair/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00004",
+      "text": "At the same time, government officials’ reiterations that “there was no sign of inadequacy in the city’s mental health services” have also been increasingly questioned.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 979,
+      "body_end": 1147,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00005",
+      "text": "HKFP spoke to a front-line psychiatrist and a psychiatry scholar to delve into the possible root causes of the attacks — and whether they are a symptom of worsening mental health in the city.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1149,
+      "body_end": 1340,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00006",
+      "text": "Manpower shortage in mental health services",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1342,
+      "body_end": 1385,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00007",
+      "text": "While the city's health authority described the shopping mall attack as “an isolated event without any [warning] sign,” claiming that the tragedy was unrelated to a shortage of manpower in mental health services, Eric Chen, a psychiatry professor at the University of Hong Kong, has a different view:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1387,
+      "body_end": 1687,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00008",
+      "text": "> Let’s say a tsunami hit us tomorrow — the strongest in the past decade — and there were casualties. While one may call such a natural disaster ‘an isolated event,’ we should also ask: What happened to the Observatory? Why didn’t it give a warning? Was our equipment up to standard or up to date? If the equipment was not performing as it should, it was not an isolated event.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1689,
+      "body_end": 2066,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-791072-b00009",
+      "text": "The observatory in the metaphor — public counseling services and other treatments offered to people suffering from mental disorders — have always been understaffed, the scholar added.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2068,
+      "body_end": 2251,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00010",
+      "text": "According to the HA, a psychiatrist in the public hospital system would, on average, have 761 patients on their books. The total number of psychiatrists has fallen about 300 short of the World Health Organization’s standard, which in Hong Kong’s case, recommends 700 psychiatrists. Chen said:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2253,
+      "body_end": 2545,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00011",
+      "text": "> It would be a joke to say the incident has no direct connection to a manpower shortage, we were just too used to the lack of manpower sometimes… But now, two people have died — is it really not preventable?",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2547,
+      "body_end": 2755,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-791072-b00012",
+      "text": "Willy Wong, a veteran psychiatrist, was worried that the government would address the problem in terms of quantity rather than quality,",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2757,
+      "body_end": 2892,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00013",
+      "text": "> Every time such incidents happen, everyone would be tense and rushing to react, and every time they urge an increase in manpower to shorten the waiting time for mental health service… But after allocating more resources, [the authority] would expect you to meet certain quantifiable targets. Shorter waiting times and more pations recieiving treatment are often achieved at the expense of quality of service.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2894,
+      "body_end": 3304,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-791072-b00014",
+      "text": "Both psychiatrists stressed that the quality of the consultation is directly related to the time invested in each patient. Currently, public hospitals only give an average of five minutes to talk to a patient — including the time spent writing reports and arranging a follow-up consultation. Wong asked,",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3306,
+      "body_end": 3609,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00015",
+      "text": "> How would anyone be ready to open their heart to a psychiatrist in just five minutes?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3611,
+      "body_end": 3698,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-791072-b00016",
+      "text": "Although the Health Bureau denied the mall attacker lacked medical support and follow-up, it proposed 10 “enhanced measures” to support people with mental health needs. Yet, most of the goals had been set in the past but failed to achieve. Chen pointed out,",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3700,
+      "body_end": 3957,
+      "source_links": [
+        "https://hongkongfp.com/2023/06/14/hong-kong-proposes-enhanced-measures-to-improve-mental-health-support-following-mall-stabbings/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00017",
+      "text": "> They never address the root of the problem — lack of manpower.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3959,
+      "body_end": 4023,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-791072-b00018",
+      "text": "Both Chen and Wong suggested extending the public-private partnership in psychiatric services — newly introduced last year — to lighten the burden of psychiatrists in public hospitals.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4025,
+      "body_end": 4209,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00019",
+      "text": "Post-pandemic depression and stress",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4211,
+      "body_end": 4246,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00020",
+      "text": "The crime rate for people with mental illness is lower than that of the general population, as pointed out by psychiatrists’ groups and health authorities. Yet, social stigma is prevailing in the city, especially after the shopping mall attack incident. Wong said that his patients were troubled by the news and that mocking and misconceptions might keep people from getting the help they need.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4248,
+      "body_end": 4642,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00021",
+      "text": "The COVID-19 pandemic also hit mental health services, with hospitals accepting fewer psychiatric non-emergency cases. Some patients also stopped making recommended follow-up visits to doctors.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4644,
+      "body_end": 4837,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00022",
+      "text": "After three years of isolation, Hong Kong is desperate to return to normal. However, despite the celebration of the city’s return from “chaos” (refers to the 2019 anti-China extradition protests) to prosperity, or the government’s “Happy Hong Kong” campaign, certain groups in society — including those struggling with their mental health — may be left behind.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4839,
+      "body_end": 5199,
+      "source_links": [
+        "https://hongkongfp.com/2023/02/22/hong-kong-budget-2023-govt-to-spend-hk50m-on-promotional-work-as-city-outlines-new-local-happy-campaign/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00023",
+      "text": "While some patients simply became lost to follow-ups during COVID-19, the condition of others, such as students with special education needs, worsened irreversibly, Wong said.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5201,
+      "body_end": 5376,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00024",
+      "text": "> Even though our daily lives and society are gradually returning to normal, can the life of some of these patients return to normal? I doubt it…",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5378,
+      "body_end": 5523,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-791072-b00025",
+      "text": "The pandemic not only affected the accessibility of mental health services but also hit the city economically, socially, and emotionally, leading to something of a mental health crisis in the city.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5525,
+      "body_end": 5722,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00026",
+      "text": "In May, the University of Hong Kong released a study indicating that a quarter of young Hong Kong people were thought to have suffered from mental health issues, with depression as the most prevalent disorder.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5724,
+      "body_end": 5933,
+      "source_links": [
+        "https://hongkongfp.com/2023/05/12/up-to-25-of-young-hongkongers-suffered-from-mental-disorders-hku-research-reveals/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00027",
+      "text": "Former justice secretary Wong Yan-lung, who also chairs the official advisory body on mental health, told the press conference releasing the study that mental health was a wide-ranging subject linked to economics and other factors. “It’s not just an emotional thing to keep yourself happy.”",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5935,
+      "body_end": 6225,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00028",
+      "text": "In response to HKFP’s questions about his views on the “Happy Hong Kong” campaign, Wong said,",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 6227,
+      "body_end": 6320,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00029",
+      "text": "> Of course, it’s not as simple as just, you know, putting up some campaign… [there is] a lot more to be done.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6322,
+      "body_end": 6432,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-791072-b00030",
+      "text": "Wong Yan-lung said while some people were more vulnerable to stress, the environment of Hong Kong — its housing problem, overcrowding, the economy, and long working hours — could also trigger psychiatric issues.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6434,
+      "body_end": 6645,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00031",
+      "text": "> When the space for someone has shrunk, it’s easier to be in a bad temper; hence conflicts with others might surge.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 6647,
+      "body_end": 6763,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-791072-b00032",
+      "text": "Over the past decade, Hong Kong has seen a worrying trend in the mental health of its population in various research and surveys, ranking 83rd out of 137 in the United Nations World Happiness Report in 2022.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 6765,
+      "body_end": 6972,
+      "source_links": [
+        "https://worldhappiness.report/ed/2022/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00033",
+      "text": "The “Hong Kong Mental Health Index Survey,” released annually by multiple rehabilitation and public institutions, revealed that the average score of the mental health index for Hong Kong people had been below the passing grade for five consecutive years since 2018.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 6974,
+      "body_end": 7239,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00034",
+      "text": "When addressing the city's unique melancholy atmosphere compared to other parts of the world hit by COVID-19, Chen believed that it was related to the value of the city and cited Hong Kong students’ major source of stress as an example,",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 7241,
+      "body_end": 7477,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00035",
+      "text": "> Everyone knows that the students are so stressed they feel like nothing matters anymore if they fail an examination. These are the values Hong Kong society has been upholding — that economic success is the only thing that matters.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 7479,
+      "body_end": 7711,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-791072-b00036",
+      "text": "Given the stressful environment, Chen agreed that psychiatric medics were, to some extent, putting out fires in a perpetually combustible environment. He believed that if the city's happiness index was higher, the number of people with mental illness would drop,",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 7713,
+      "body_end": 7975,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-791072-b00037",
+      "text": "> But it would require our entire society to work on it.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 7977,
+      "body_end": 8033,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "eccbbd93aa9054ca21a23191355fcfc455850b0069f3d1312c3c8bb6b02ec028",
+  "word_count": 1305,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8033,
+  "retrieved_at": "2026-11-16T22:39:51.558193+00:00",
+  "raw_html_sha256": "6d8fd8e19834652b16f2c41ff562767b0bee6e64e17cf45b8f7caac565e68d5a",
+  "resolved_source_url": "https://globalvoices.org/2023/06/30/stress-and-depression-prevail-amid-the-happy-hong-kong-publicity-campaign/",
+  "canonical_url": "https://globalvoices.org/2023/06/30/stress-and-depression-prevail-amid-the-happy-hong-kong-publicity-campaign/",
+  "source_bytes": 189418,
+  "authors": [
+    {
+      "name": "Hong Kong Free Press",
+      "url": "https://globalvoices.org/author/hong-kong-free-press/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 791072,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "6d8fd8e19834652b16f2c41ff562767b0bee6e64e17cf45b8f7caac565e68d5a",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-d1155c22663c63bf33d8",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2023-06",
+    "eligible_month_documents": 109,
+    "selected_month_documents": 91,
+    "inclusion_probability": 0.8348623853211009,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Hong Kong Free Press",
+  "body_start": 492,
+  "body_end": 8525,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "1237286cfe56a8d77e6a8df34360574a04d1e396ac51f56a56b364fccbd93e8a",
+  "text_path": "articles/gv-791072.txt",
+  "metadata_path": "metadata/gv-791072.json",
+  "attribution": "This story by Hong Kong Free Press originally appeared on Global Voices. https://globalvoices.org/2023/06/30/stress-and-depression-prevail-amid-the-happy-hong-kong-publicity-campaign/",
+  "content_sha256": "0ce536d7d7ce00502ef7b1211e3fb639efd904585a7ea9e55e75efe19e7b96bb",
+  "source_sha256": "6d8fd8e19834652b16f2c41ff562767b0bee6e64e17cf45b8f7caac565e68d5a",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

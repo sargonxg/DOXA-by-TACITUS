@@ -1,0 +1,518 @@
+{
+  "id": "gv-707706",
+  "publisher_id": 707706,
+  "source_id": "globalvoices:707706",
+  "source_url": "https://globalvoices.org/2020/06/01/pakistan-blocks-twitter-zoom-and-periscope-to-curb-critical-voices/",
+  "title": "Pakistan blocks Twitter, Zoom and Periscope to curb critical voices",
+  "published_at": "2020-06-01T12:50:45Z",
+  "modified_at": "2020-06-01T12:50:45Z",
+  "api_author_id": 2535,
+  "api_content_sha256": "e61aa7629c762b49641e988c6c6164275befed9978fcbda6a08f74f44efe156c",
+  "api_response_sha256": "36bc3d63f20a164eefbe7ce2d06bb132aa122b08a06cf13d0b9306b43d571f31",
+  "api_retrieved_at": "2026-11-16T22:20:26.326198+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 41,
+      "count": 2347,
+      "name": "Pakistan",
+      "slug": "pakistan",
+      "parent": 31
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-707706-b00001",
+      "text": "According to the internet blockade observatory NetBlocks, after Twitter went down all across Pakistan from 10 p.m on May 17 to 1.30 am on May 18, 2020 Pakistan Standard Time, the bulk of reports it received from the country described a loss of access to affected services. Media Matters for Democracy from Pakistan reports the outage and calls upon the government to issue an official statement on the matter, clarifying whether Twitter was blocked and if it was, on what grounds.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 480,
+      "source_links": [
+        "https://digitalrightsmonitor.pk/twitter-inaccessibility-for-hours-in-pakistan-left-users-confused/",
+        "https://www.dawn.com/news/1557851",
+        "https://www.dawn.com/news/1558186/outage-in-pakistan-not-from-companys-end-says-twitter"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00002",
+      "text": "> “This incident merits clarity on part of the authorities, and we demand transparency from PTA (Pakistan Telecommunication Authority) on whether inaccessibility of Twitter in Pakistan was by design and done on orders of the government.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 482,
+      "body_end": 719,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707706-b00003",
+      "text": "NetBlocks data indicate that backend image and video servers, in particular, were unavailable during the disruption period, corroborating these reports. A preliminary test of OONI Probe suggests that the website was potentially blocked in the country. However, the reason for the outage that lasted for at least three hours, is not clear.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 721,
+      "body_end": 1059,
+      "source_links": [
+        "https://ooni.org"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00004",
+      "text": "Working with Pakistan's Digital Rights Foundation, Netblocks analysed the network data and confirmed that there had been no international outage at the time of disruption:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1061,
+      "body_end": 1232,
+      "source_links": [
+        "https://netblocks.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00005",
+      "text": "Meanwhile, in Pakistan, the #TwitterDown hashtag went viral on the microblogging platform, as people used Virtual Private Networks (VPNs) to voice their concerns. A VPN is a technology used primarily to help people access websites that are blocked in the jurisdiction where they are located.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1234,
+      "body_end": 1525,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Virtual_private_network",
+        "https://twitter.com/hashtag/twitterdown?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Ehashtag"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00006",
+      "text": "Twitter confirmed that there was no disruption caused from their end, nor had it seen any indications of an outage on its server.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1527,
+      "body_end": 1656,
+      "source_links": [
+        "https://www.dawn.com/news/1558186"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00007",
+      "text": "What triggered the blockade?",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1658,
+      "body_end": 1686,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00008",
+      "text": "The very same day, the video conferencing platform Zoom also faced technical issues, but prior to the blockade in Pakistan, the company issued an update stating that the problem had been resolved.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1688,
+      "body_end": 1884,
+      "source_links": [
+        "https://www.forbes.com/sites/kateoflahertyuk/2020/05/18/zoom-users-worst-nightmare-comes-true-as-outage-sparks-chaos-across-the-world/#15f9adc61574"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00009",
+      "text": "No local outages were reported and Netblocks confirmed that the disruption was localised:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1886,
+      "body_end": 1975,
+      "source_links": [
+        "https://netblocks.org/reports/pakistan-twitter-periscope-zoom-disruption-98aMV68o"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00010",
+      "text": "> NetBlocks performance metrics from around the world show that Sunday’s disruption was localized to Pakistan.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1977,
+      "body_end": 2087,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707706-b00011",
+      "text": "Many drew their own conclusions as to the cause. Pakistani politician Farhat Ullah Babar, for example, suggested that Twitter was blocked to target a virtual conference organised by South Asians Against Terrorism For Human Rights (SAATH):",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2089,
+      "body_end": 2327,
+      "source_links": [
+        "http://saathforum.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00012",
+      "text": "The collective's Zoom conference, which was scheduled to begin on Sunday, May 17 at 10 p.m. — the precise time the Twitter and Zoom outages happened — intended to focus on the issues of enforced disappearances, state-sanctioned killings and diminishing democracy in Pakistan.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2329,
+      "body_end": 2604,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00013",
+      "text": "Gul Bukhari, a Pakistani journalist living in exile in the United Kingdom, is an active member of the SAATH Forum. In 2018, Bukhari was abducted by Pakistan's notorious spy agency because of her critical views. She told Global Voices in a call:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2606,
+      "body_end": 2850,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Gul_Bukhari",
+        "https://www.bbc.com/news/world-asia-44382719"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00014",
+      "text": "> [The] SAATH Conference was planned as a virtual conference [to be] attended by prominent Pakistani human rights defenders, public intellectuals, journalists, scholars living in Pakistan, as well as those living in exile in different countries. When the conference began, people started looking for the link and that is when they noticed that Twitter, Periscope and Zoom were not working in Pakistan.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2852,
+      "body_end": 3253,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707706-b00015",
+      "text": "Bukhari said that many people did not know the SAATH conference was even happening; the blockage actually garnered it more attention:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3255,
+      "body_end": 3388,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00016",
+      "text": "> It is time that the establishment understands that such tactics are counterproductive, especially in today's time when people can gain access to social media through VPNs and proxy websites to exercise their right to freedom of speech and get information.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3390,
+      "body_end": 3647,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707706-b00017",
+      "text": "Digital censorship is not new to Pakistan",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3649,
+      "body_end": 3690,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00018",
+      "text": "This is not the first time such an outage has happened in the country. Previously, the authorities resorted to shutting down the internet to curb coverage of public gatherings organized by the Pashtun Tahafuz Movement (PTM). PTM demands basic rights for the Pashtun minority community, including the “right to live without fear” of extrajudicial killings. They have been gathering in different cities in Pakistan and faced internet outage regularly. Only after these gatherings are over, would videos and pictures of those human rights protests go online.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3692,
+      "body_end": 4247,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Pashtun_Tahafuz_Movement",
+        "https://www.firstpost.com/world/thousands-of-pashtun-tribesmen-rally-against-security-forces-in-pakistan-protest-for-right-to-live-without-fear-4423225.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00019",
+      "text": "Read more here: Media censorship surrounds the Pashtun Right Movement in Pakistan",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4249,
+      "body_end": 4330,
+      "source_links": [
+        "https://globalvoices.org/2018/04/30/media-censorship-surrounds-the-pashtun-rights-movement-in-pakistan/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00020",
+      "text": "According to Bukhari:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4332,
+      "body_end": 4353,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00021",
+      "text": "> These attempts to muffle voices are not doing any good to the country; rather [they make] a laughing stock out of us on the international canvas.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4355,
+      "body_end": 4502,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707706-b00022",
+      "text": "Naya Daur, an alternative and bilingual news website founded by Pakistani journalist Raza Rumi, also had a Zoom conference scheduled for 10 p.m. on May 18. With speakers that included academic and activist Ammar Ali Jan, reporter Benazir Shah, and and Dr. Shah Jahan, the webinar was intended to explore possible solutions regarding healthcare and public services, and discuss the impact of the International Monetary Fund (IMF)-driven austerity and privatisations in the past.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4504,
+      "body_end": 4981,
+      "source_links": [
+        "https://nayadaur.tv/",
+        "https://razarumi.com/about-us/",
+        "https://www.linkedin.com/in/benazirshah/?originalSubdomain=pk",
+        "https://www.linkedin.com/in/dr-shah-jahan-0420b645/?originalSubdomain=pk",
+        "https://www.pakistantoday.com.pk/2019/02/09/dr-ammar-ali-jan-arrested-by-gulberg-police/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00023",
+      "text": "Rumi said however, that the Twitter and Zoom outages did not affect the conference the way the authorities might have wanted to:",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4983,
+      "body_end": 5111,
+      "source_links": [
+        "https://nayadaur.tv/2020/05/recent-twitter-outage-attempts-to-thwart-free-speech-are-always-counterproductive/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00024",
+      "text": "> Naya Daur’s webinar was aimed to raise awareness and involve expatriate doctors. Thankfully, it continued despite the problems. But imagine if there were students online, using digital platforms or patients seeking medical advice, or others engaged in critical services. Such disruptions are troubling and counterproductive.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5113,
+      "body_end": 5439,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707706-b00025",
+      "text": "Rumi also believes that censorship and blockades are counterproductive:",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5441,
+      "body_end": 5512,
+      "source_links": [
+        "https://nayadaur.tv/2020/05/recent-twitter-outage-attempts-to-thwart-free-speech-are-always-counterproductive/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-707706-b00026",
+      "text": "> The members of [the] SAATH conference and their followers created a Twitter storm claiming that the outage was designed to block their engagement with the Pakistani audiences. If this is true, it does not serve Pakistan’s public interest to muzzle dissenting opinions nor does it ‘improve’ Pakistan’s image abroad. The lesson from the unfortunate episode is clear: Instead of becoming invisible, the small digital conference and its proceedings were amplified.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5514,
+      "body_end": 5976,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-707706-b00027",
+      "text": "Pakistan Telecommunication Authority (PTA) is a state-owned enterprise responsible for the regulation of establishment, operation and maintenance of telecommunications in Pakistan. So far, government officials have not given any statements on the issue.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5978,
+      "body_end": 6231,
+      "source_links": [
+        "https://pta.gov.pk/en"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "9fb0da8b1b2a49264938b75133bfe6e57d9239d50d8de445acb98aba24ea293b",
+  "word_count": 961,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 3,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 6231,
+  "retrieved_at": "2026-11-16T22:24:44.036061+00:00",
+  "raw_html_sha256": "82ba33bfbd768b8af55fbad5ffd9b7d85c41e2c2b7d671311ba4449346462f7e",
+  "resolved_source_url": "https://globalvoices.org/2020/06/01/pakistan-blocks-twitter-zoom-and-periscope-to-curb-critical-voices/",
+  "canonical_url": "https://globalvoices.org/2020/06/01/pakistan-blocks-twitter-zoom-and-periscope-to-curb-critical-voices/",
+  "source_bytes": 192996,
+  "authors": [
+    {
+      "name": "R Umaima Ahmed",
+      "url": "https://globalvoices.org/author/umaimaahmed/"
+    },
+    {
+      "name": "Annie Zaman",
+      "url": "https://globalvoices.org/author/annie/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 707706,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "82ba33bfbd768b8af55fbad5ffd9b7d85c41e2c2b7d671311ba4449346462f7e",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-6ea3b038dee48e6a8ade",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-06",
+    "eligible_month_documents": 110,
+    "selected_month_documents": 92,
+    "inclusion_probability": 0.8363636363636363,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "R Umaima Ahmed; Annie Zaman",
+  "body_start": 484,
+  "body_end": 6715,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c042a0a74283bd1cc15520421cae1593689a165711ce93d451992df0408cebe6",
+  "text_path": "articles/gv-707706.txt",
+  "metadata_path": "metadata/gv-707706.json",
+  "attribution": "This story by R Umaima Ahmed; Annie Zaman originally appeared on Global Voices. https://globalvoices.org/2020/06/01/pakistan-blocks-twitter-zoom-and-periscope-to-curb-critical-voices/",
+  "content_sha256": "f0855edbd50da09f9432fd44a29c28ef8312cc6e63fb38cd7b630a3910cd05cd",
+  "source_sha256": "82ba33bfbd768b8af55fbad5ffd9b7d85c41e2c2b7d671311ba4449346462f7e",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

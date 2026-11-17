@@ -1,0 +1,554 @@
+{
+  "id": "gv-842647",
+  "publisher_id": 842647,
+  "source_id": "globalvoices:842647",
+  "source_url": "https://globalvoices.org/2025/08/29/what-brazils-digital-fight-means-for-free-expression-in-the-global-south/",
+  "title": "What Brazil’s digital fight means for free expression in the Global South",
+  "published_at": "2025-08-29T12:00:46Z",
+  "modified_at": "2025-08-28T18:07:24Z",
+  "api_author_id": 1586,
+  "api_content_sha256": "2191ec1915d342fb5034630bad9c0737c7e2fbb8c9d88e1626c3af46c90050aa",
+  "api_response_sha256": "013e863c1c02e2bb511a1a6551f55871784146f6c412088d90aacc4f80e6ac0c",
+  "api_retrieved_at": "2026-11-16T22:21:14.863675+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1352,
+      "count": 3301,
+      "name": "North America",
+      "slug": "north-america",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 186,
+      "count": 3578,
+      "name": "U.S.A.",
+      "slug": "usa",
+      "parent": 1352
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-842647-b00001",
+      "text": "By Sahasranshu Dash and Ana Tereza Duarte Lima de Barros",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 56,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00002",
+      "text": "On July 30, 2025, U.S. President Donald Trump announced a 50 percent tariff on Brazilian exports, justifying this measure not by currency manipulation or unfair trade practices, but as a response to what he described as politically motivated persecution against former Brazilian President Jair Bolsonaro. Trump specifically cited alleged human rights abuses and the censorship coercion of U.S. tech platforms, actions he attributed directly to rulings from Brazil's Supreme Court Justice Alexandre de Moraes.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 58,
+      "body_end": 566,
+      "source_links": [
+        "https://br.usembassy.gov/president-donald-j-trump-addresses-threats-to-the-united-states-from-the-government-of-brazil/",
+        "https://en.wikipedia.org/wiki/Jair_Bolsonaro",
+        "https://globalvoices.org/2025/03/13/four-key-points-to-understanding-trumps-war-against-a-brazilian-judge/",
+        "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-addresses-threats-to-the-united-states-from-the-government-of-brazil/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00003",
+      "text": "For many digital rights advocates in Brazil, the tariff isn’t just an economic blow. It marks an escalation of pressure from one of the world’s most powerful countries against a rising Global South democracy that has dared to chart its own course on digital governance. Brazil’s effort to regulate Big Tech — long resisted by Silicon Valley and populist actors alike — is finally attracting global attention. And resistance.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 568,
+      "body_end": 992,
+      "source_links": [
+        "https://www.techpolicy.press/trumps-attack-on-brazils-sovereignty-may-backfire-on-us-tech-firms/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00004",
+      "text": "A democratic vision of the digital sphere",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 994,
+      "body_end": 1035,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00005",
+      "text": "While Brazil’s model might not be perfect, it’s one of the boldest in the Global South. The Marco Civil da Internet, the Brazilian ‘‘bill of rights for the internet,’’ signed by former president Dilma Rousseff in 2014, laid a foundational legal framework for net neutrality, user rights, and content moderation transparency. Four years later, the General Personal Data Protection Law (LGPD) built on that foundation to establish a strong personal data protection regime, partly inspired by the European Union’s General Data Protection Regulation (GDPR).",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1037,
+      "body_end": 1590,
+      "source_links": [
+        "https://advox.globalvoices.org/2014/03/26/advocates-hail-brazils-constitution-for-the-internet-marcocivil/",
+        "https://en.wikipedia.org/wiki/Brazilian_Civil_Rights_Framework_for_the_Internet",
+        "https://en.wikipedia.org/wiki/General_Data_Protection_Regulation",
+        "https://en.wikipedia.org/wiki/General_Personal_Data_Protection_Law"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00006",
+      "text": "Yet what sets Brazil apart isn’t just its legislation, but the way courts and regulators have stepped in to enforce it in real-world scenarios. In March 2022, in an order by Moraes, the Supreme Federal Court (STF) temporarily blocked Telegram across the country after it repeatedly failed to comply with judicial orders aimed at curbing disinformation related to extremism and political violence. In August 2024, Moraes ordered the suspension of X (formerly Twitter) for refusing to remove harmful content, particularly posts targeting election officials and LGBTQ+ activists, reinforcing the court’s commitment to protecting democratic institutions and vulnerable communities.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1592,
+      "body_end": 2269,
+      "source_links": [
+        "https://www.lemonde.fr/en/pixels/article/2024/08/31/brazil-s-federal-supreme-court-escalates-tensions-with-musk-after-suspending-x_6724173_13.html",
+        "https://www.reuters.com/world/americas/brazil-supreme-court-orders-suspension-telegram-app-country-reports-2022-03-18/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00007",
+      "text": "Meanwhile, Brazil’s National Data Protection Authority (ANPD) has emerged as a key regulatory actor in digital governance. In July 2024, it suspended Meta’s privacy policy for AI systems that relied on users’ personal data, citing violations of constitutional rights. Crucially, the ANPD’s decision demanded greater transparency from companies developing AI, emphasizing the need for clear public disclosures on data usage, legal bases, and opt-out mechanisms for data subjects. Meta subsequently complied with these requirements by implementing a compliance plan that introduced clearer privacy notices, facilitated opt-out options, and restricted the use of data from minors, which led the ANPD to suspend its preventive measure.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2271,
+      "body_end": 3002,
+      "source_links": [
+        "https://fpf.org/blog/processing-of-personal-data-for-ai-training-in-brazil-takeaways-from-anpds-preliminary-decisions-in-the-meta-case/",
+        "https://www.gov.br/anpd/pt-br",
+        "https://www.reuters.com/technology/artificial-intelligence/brazil-authority-suspends-metas-ai-privacy-policy-seeks-adjustment-2024-07-02/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00008",
+      "text": "Through these combined judicial and regulatory actions, Brazil has asserted a model of digital sovereignty rooted in constitutional accountability and rights-based enforcement.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3004,
+      "body_end": 3180,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00009",
+      "text": "These measures are not just administrative or bureaucratic moves; they represent a broader effort to reclaim the internet as a space for democratic discourse and user protection, pushing back against disinformation and online abuse. As Reporters Without Borders states in its recommendations for Brazil's digital future:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3182,
+      "body_end": 3502,
+      "source_links": [
+        "https://rsf.org/en/brazil-supreme-court-increases-social-media-platforms-responsibility-welcome-decision"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00010",
+      "text": "> Platforms must highlight reliable news sources so people can access quality information. Platforms should be transparent about how their algorithms work, how they moderate content, and how they deal with government requests.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3504,
+      "body_end": 3730,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-842647-b00011",
+      "text": "Civil society behind the push",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3732,
+      "body_end": 3761,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00012",
+      "text": "This regulatory momentum hasn’t emerged from the government alone. Brazilian civil society organizations, journalists, and academic institutions have been central to shaping the country’s digital path. Groups such as InternetLab, Intervozes, and the Institute for Technology and Society (ITS Rio) have pushed for laws that protect vulnerable users, increase platform transparency, and resist surveillance.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3763,
+      "body_end": 4168,
+      "source_links": [
+        "https://internetlab.org.br/pt/",
+        "https://intervozes.org.br/",
+        "https://itsrio.org/pt/home/#:~:text=O%20ITS%20Rio%20%C3%A9%20um,pela%20tecnologia%20na%20era%20digital."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00013",
+      "text": "Brazil’s so-called “Fake News Bill,” formally introduced in May 2020 and passed by the Senate, has remained under negotiation and revision ever since at the Deputies’ Chamber in the National Congress. It proposes a platform accountability framework requiring identification of inauthentic behavior, detection of coordinated manipulation, and enhanced visibility for verified information, specifically designed to avoid preemptive censorship.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4170,
+      "body_end": 4611,
+      "source_links": [
+        "https://freedomhouse.org/country/brazil/freedom-net/2023",
+        "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2256735",
+        "https://www25.senado.leg.br/web/atividade/materias/-/materia/141944"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00014",
+      "text": "While imperfect, the bill — drafted mid-2020 and still evolving — demonstrates a serious intent to safeguard civic space and demand accountability from dominant tech firms that shape public discourse.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4613,
+      "body_end": 4813,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00015",
+      "text": "The backlash — and its foreign backers",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4815,
+      "body_end": 4853,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00016",
+      "text": "Unsurprisingly, Brazil’s rights-based and constitutionally grounded model of digital governance has not only attracted criticism but also triggered direct retaliation. In July 2025, the United States imposed sanctions on Supreme Court justice Alexandre de Moraes under the Global Magnitsky Act — a U.S. federal law that imposes sanctions such as US entry bans and asset freezes for people accused of human rights violations and corruption — accusing him of “an oppressive campaign of censorship” and “arbitrary detentions that violate human rights,” as reported by Reuters.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4855,
+      "body_end": 5428,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Magnitsky_Act",
+        "https://www.reuters.com/world/americas/us-imposes-sanctions-brazilian-high-court-judge-2025-07-30/",
+        "https://www.voanews.com/a/alexandre-de-moraes-brazil-judge-in-feud-with-elon-musk/7766449.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00017",
+      "text": "These sanctions followed sustained pressure from a transnational coalition of populist politicians, far-right influencers, and U.S.-based media outlets, who have targeted Moraes for his role in regulating digital platforms, investigating Bolsonaro’s alleged coup attempt, and dismantling disinformation networks. For defenders of Brazil’s regulatory framework, the move reflects not a defense of free expression, but an aggressive geopolitical rejection of a democratic country’s sovereign effort to govern the digital sphere.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5430,
+      "body_end": 5956,
+      "source_links": [
+        "https://apnews.com/article/trump-lawsuit-brazil-judge-bolsonaro-0061c2f1ea145e3ce3714aa25f49ba67",
+        "https://english.elpais.com/international/2025-07-29/eduardo-bolsonaro-the-man-urging-trump-to-punish-brazil.html",
+        "https://www.newyorker.com/magazine/2025/04/14/the-brazilian-judge-taking-on-the-digital-far-right?utm_source=chatgpt.com",
+        "https://www.techpolicy.press/trumps-attack-on-brazils-sovereignty-may-backfire-on-us-tech-firms/",
+        "https://www.theguardian.com/world/2025/feb/19/jair-bolsonaro-charged-alleged-brazil-coup"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00018",
+      "text": "Figures close to U.S. Vice President J.D. Vance and billionaire Peter Thiel have amplified accusations that Brazil’s courts are “anti-speech” or “authoritarian,” often through platforms and influencers aligned with their political and financial networks.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5958,
+      "body_end": 6212,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Peter_Thiel",
+        "https://www.reuters.com/technology/brazil-supreme-court-orders-rumble-suspension-country-2025-02-22/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00019",
+      "text": "One prominent example is Rumble, a video platform backed by investors connected to both men, which was suspended in Brazil in February 2025 after repeatedly defying moderation orders from the Supreme Court.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6214,
+      "body_end": 6420,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Rumble_(company)",
+        "https://www.reuters.com/technology/brazils-supreme-court-chamber-forms-majority-uphold-rumble-suspension-2025-03-07/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00020",
+      "text": "Yet the double standards are glaring. While some U.S. voices decry supposed censorship in Brazil, American immigration authorities deny visas to foreign nationals based on the political content of their social media posts.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6422,
+      "body_end": 6644,
+      "source_links": [
+        "https://www.reuters.com/business/media-telecom/us-visa-policy-targets-foreign-nationals-who-censor-americans-state-dept-2025-05-28/",
+        "https://www.reuters.com/world/americas/us-judge-says-trump-media-rumble-need-not-follow-brazilian-judges-order-2025-02-25/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00021",
+      "text": "Why Brazil matters now",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6646,
+      "body_end": 6668,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00022",
+      "text": "Brazil is more than a large democracy — it’s a test case for how digital sovereignty can be used to protect, not restrict, rights in the Global South. With over 180 million internet users and an increasingly connected population, what happens there could influence policy far beyond its borders.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6670,
+      "body_end": 6965,
+      "source_links": [
+        "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/44033-pela-primeira-vez-mais-da-metade-da-populacao-acessa-a-internet-pela-tv"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00023",
+      "text": "Already, countries like Mexico, South Africa, Kenya, and Tunisia are drawing lessons from Brazil’s approach to regulating platforms, combating hate speech, and protecting user rights. Even amid rising opposition, Brazil is advancing new legislation to ban mass biometric surveillance without judicial oversight, increase penalties for data misuse, and guarantee human recourse in automated decisions.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 6967,
+      "body_end": 7367,
+      "source_links": [
+        "https://www.dataguidance.com/news/brazil-bill-prohibiting-sale-biometric-data-sent"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00024",
+      "text": "These reforms aren’t just technocratic; they’re part of a broader effort to rebuild civic trust after years of far-right rule, institutional erosion, and digital manipulation.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 7369,
+      "body_end": 7544,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00025",
+      "text": "That effort seems to be gaining traction: President Lula’s approval ratings have now overtaken his disapproval ratings for the first time in nine months, and Brazil’s Supreme Court — praised by democrats and civil society observers for its role in holding Bolsonaro and extremist networks accountable — is seen as a defender of democracy.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 7546,
+      "body_end": 7884,
+      "source_links": [
+        "https://www.reuters.com/world/americas/lulas-approval-rises-amid-tariff-dispute-with-trump-poll-shows-2025-07-31/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00026",
+      "text": "The stakes for digital rights in the Global South",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 7886,
+      "body_end": 7935,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00027",
+      "text": "Brazil’s digital fight is not just about local governance. It’s about whether countries in the Global South can govern their online spaces on their own terms, or whether they’ll be punished for diverging from a deregulated, U.S.-centric internet. The tariffs are economic on paper, but they’re political in spirit. They send a clear message: regulate tech platforms too boldly, and you may face backlash from those invested in the status quo.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 7937,
+      "body_end": 8379,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00028",
+      "text": "For advocates of digital rights, Brazil’s experience offers both a warning and a roadmap. It shows how difficult, messy, and politicized this work can become — but also how crucial it is. The challenge now is to ensure that the space for civic agency, pluralism, and rights-based governance doesn’t shrink under pressure.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 8381,
+      "body_end": 8702,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00029",
+      "text": "Because if Brazil succeeds, it won’t just be defending its democracy. It will be opening space for others to do the same.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 8704,
+      "body_end": 8825,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00030",
+      "text": "Sahasranshu Dash is a research partner at the South Asia Institute of Research and Development in Kathmandu, Nepal. His work focuses on technology, state power, and political subjectivity in the Global South.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 8827,
+      "body_end": 9035,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-842647-b00031",
+      "text": "Ana Tereza Duarte Lima de Barros is a political scientist and PhD candidate in Political Science at the Federal University of Pernambuco (UFPE, Brazil). Her research centers on state capacity, political institutions, and government responses to the COVID-19 pandemic. She is a member of the Red de Politólogas and was a visiting doctoral researcher at the German Institute for Global and Area Studies (GIGA).",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 9037,
+      "body_end": 9445,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5f00778efb409139a1d9498f59e887b3e80c8de6e7b4871d05699a09c0f557bc",
+  "word_count": 1390,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 9445,
+  "retrieved_at": "2026-11-16T22:47:45.272692+00:00",
+  "raw_html_sha256": "0d146633deb8a744f31b346511bdaea83e3472c395e7dbadff9cafa25d132c12",
+  "resolved_source_url": "https://globalvoices.org/2025/08/29/what-brazils-digital-fight-means-for-free-expression-in-the-global-south/",
+  "canonical_url": "https://globalvoices.org/2025/08/29/what-brazils-digital-fight-means-for-free-expression-in-the-global-south/",
+  "source_bytes": 195068,
+  "authors": [
+    {
+      "name": "Guest Contributor",
+      "url": "https://globalvoices.org/author/guest-contributor/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 842647,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "0d146633deb8a744f31b346511bdaea83e3472c395e7dbadff9cafa25d132c12",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-4f81c28e1efd7d48d793",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-08",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Guest Contributor",
+  "body_start": 486,
+  "body_end": 9931,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "2e54953c29089748e7c3b9977568ca35cfa3478d3603889fdd1512ae827dbff8",
+  "text_path": "articles/gv-842647.txt",
+  "metadata_path": "metadata/gv-842647.json",
+  "attribution": "This story by Guest Contributor originally appeared on Global Voices. https://globalvoices.org/2025/08/29/what-brazils-digital-fight-means-for-free-expression-in-the-global-south/",
+  "content_sha256": "9dd818618892392e606b0b725d044e76b7af33c3d761d7aba516b4245ba1fe89",
+  "source_sha256": "0d146633deb8a744f31b346511bdaea83e3472c395e7dbadff9cafa25d132c12",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

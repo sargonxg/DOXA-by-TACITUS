@@ -1,0 +1,342 @@
+{
+  "id": "gv-727158",
+  "publisher_id": 727158,
+  "source_id": "globalvoices:727158",
+  "source_url": "https://globalvoices.org/2021/01/27/indigenous-led-telecommunications-organization-wins-historic-legal-battle-in-mexico/",
+  "title": "Indigenous-led telecommunications organization wins historic legal battle in Mexico",
+  "published_at": "2021-01-27T18:36:42Z",
+  "modified_at": "2021-01-27T19:52:35Z",
+  "api_author_id": 2022,
+  "api_content_sha256": "4cdd70d0a7280e36b4e51062f4d640a3af09f658ccd1aec1b8198d7339056978",
+  "api_response_sha256": "4b8a365e82fe2773a09c5a0e8bd4a9b7aa40c63d55bed83d1fb049dae4c0bf4c",
+  "api_retrieved_at": "2026-11-16T22:20:32.142391+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 262,
+      "count": 2092,
+      "name": "Indigenous",
+      "slug": "indigenous",
+      "parent": 238
+    },
+    {
+      "id": 37,
+      "count": 1643,
+      "name": "Mexico",
+      "slug": "mexico",
+      "parent": 1354
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-727158-b00001",
+      "text": "On January 13, after a nearly three-year legal battle, the First Chamber of Mexico's Supreme Court ruled in favor of the Indigenous Community Telecommunications (Telecomunicaciones Indígenas Comunitarias, TIC) organization, exempting them from paying for a concession license to use radio spectrum.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 298,
+      "source_links": [
+        "https://www.itu.int/ITU-D/treg/Events/Seminars/GSR/GSR04/documents/Licensing%20_Mexico.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727158-b00002",
+      "text": "This decision allows TIC to offer affordable cell phone services to indigenous communities in the country. The court case also set a legal precedent for local communities to operate their own telecommunications services for free under social use concession licenses — drawing a line between commercial and community providers.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 300,
+      "body_end": 626,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727158-b00003",
+      "text": "> Great news! Following a unanimous vote, a favorable ruling was issued to TIC A.C. and in general to the telecommunications sector, protecting indigenous rights for the operation of their own communication media. This is an achievement of the communities and organizations!",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 628,
+      "body_end": 902,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-727158-b00004",
+      "text": "According to a 2010 census, indigenous communities in Mexico represent nearly 10% of the country's population; however, they are severely underrepresented as mobile service users. The Indigenous Peoples Mobile Service Coverage Diagnosis report states that only 16 out of 66 indigenous peoples had 100% mobile service coverage as of 2018.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 904,
+      "body_end": 1241,
+      "source_links": [
+        "http://www.ift.org.mx/sites/default/files/reporte-coberturapueblosindigenas_finalpublicar.pdf",
+        "https://www.gob.mx/cms/uploads/attachment/file/249028/cdi-nota-tecnica-indicadores-derechos-pueblos-indigenas.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727158-b00005",
+      "text": "TIC, the fourth-largest mobile operator in Mexico, is a non-profit organization made up of 16 indigenous communities from Oaxaca that began in 2013. In 2016, these same communities were granted the first indigenous social telecommunication concession to manage and operate their own cell phone networks. At the end of 2019, they received a second concession for the 10 GHz band, which will be used to change their current 2G network to 4G. These were the first steps for indigenous communities to take charge of their own media.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1243,
+      "body_end": 1771,
+      "source_links": [
+        "https://rpc.ift.org.mx/vrpc/pdfs/86093_161006174458_3756.pdf",
+        "https://www.eleconomista.com.mx/empresas/Indigenas-de-Oaxaca-tendran-su-propia-red-de-telecomunicaciones-20160709-0011.html",
+        "https://www.eleconomista.com.mx/empresas/Telecomunicaciones-Indigenas-Comunitarias-gana-espectro-que-sera-pilar-de-su-red-4G-20201130-0047.html",
+        "https://www.tic-ac.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727158-b00006",
+      "text": "In 2018, the national telecommunications regulator required indigenous concessionaires to pay 1 million pesos (equivalent to more than 50,000 USD) for the use of rights of radio spectrum resources in the operation of its cellular telephone network. The provisions of the law did not differentiate between a community provider and a commercial one.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1773,
+      "body_end": 2120,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727158-b00007",
+      "text": "This payment endangered the existence and viability of TIC, which provides affordable cell phone and internet services in rural areas. At that time, Rodrigo Huerta Reyna, coordinator of the legal department of the Indigenous Community Telecommunications, pointed out the distinction between their services and those offered by commercial entities:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2122,
+      "body_end": 2469,
+      "source_links": [
+        "https://rising.globalvoices.org/blog/2018/01/24/the-first-mobile-phone-network-for-indigenous-communities-in-mexico-is-under-threat/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727158-b00008",
+      "text": "> Damos servicio a comunidades que no son viables económicamente, obviamente un cobro de estos es impagable, además de que no tenemos el ánimo de lucro que los operadores comerciales.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2471,
+      "body_end": 2654,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-727158-b00009",
+      "text": "> We serve communities that are not economically viable, so obviously the charges can not be repaid, in addition to the fact that we do not have the profit motive of commercial operators.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2656,
+      "body_end": 2843,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-727158-b00010",
+      "text": "The same year, TIC initiated a legal battle arguing that its operations are not-for-profit and, therefore, there is no commercial exploitation for which it must pay. They finally reached the First Chamber of the Supreme Court of Justice of the Nation and won in January 2021.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2845,
+      "body_end": 3120,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727158-b00011",
+      "text": "TIC currently provides mobile phone services to around 60 localities of 18 indigenous communities with approximately 15,000 inhabitants, according to Erick Huerta, who participated in the design of the legal strategy.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3122,
+      "body_end": 3339,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727158-b00012",
+      "text": "He adds that the impact of the court ruling goes beyond these communities:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3341,
+      "body_end": 3415,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727158-b00013",
+      "text": "> Va más allá de resolver nuestro asunto con el pago de derechos. Marca un criterio válido para cualquier obstáculo legal para los medios indígenas.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3417,
+      "body_end": 3565,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-727158-b00014",
+      "text": "> It goes beyond resolving our issue with the payment of rights. It marks a valid criterion for any legal obstacles for indigenous media.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3567,
+      "body_end": 3704,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-727158-b00015",
+      "text": "The same view is expressed by the former commissioner of the Federal Telecommunications Institute, Alejandra Labardini:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3706,
+      "body_end": 3825,
+      "source_links": [
+        "https://www.jornada.com.mx/ultimas/politica/2021/01/13/pueblos-indigenas-deben-estar-excentos-del-pago-de-la-lfd-scjn-8605.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-727158-b00016",
+      "text": "> existe una obligación constitucional de asistir a los pueblos y comunidades indígenas con acciones afirmativas tanto en las condiciones de adquisición como de operación de las concesiones, las cuales se han regulado especializadamente en su favor como sociales y de uso indígena.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3827,
+      "body_end": 4108,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-727158-b00017",
+      "text": "> …there is a constitutional obligation to assist indigenous peoples and communities [through] affirmative actions both in the conditions of acquisition and operation of the concessions. These have been specially regulated in their favor for social and indigenous use.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4110,
+      "body_end": 4378,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "cd55c7c269d47e9459ca871337864b5f20b7ce9e431b323249b2dc6d5580f9e2",
+  "word_count": 671,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 3,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4378,
+  "retrieved_at": "2026-11-16T22:29:19.290297+00:00",
+  "raw_html_sha256": "6053523ca07a4af4c271dc49b00ade3da0179b60f1d8c935216e3334df8edafb",
+  "resolved_source_url": "https://globalvoices.org/2021/01/27/indigenous-led-telecommunications-organization-wins-historic-legal-battle-in-mexico/",
+  "canonical_url": "https://globalvoices.org/2021/01/27/indigenous-led-telecommunications-organization-wins-historic-legal-battle-in-mexico/",
+  "source_bytes": 190899,
+  "authors": [
+    {
+      "name": "Jacobo Nájera",
+      "url": "https://es.globalvoices.org/author/jacobo/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Teodora C. Hasegan",
+      "url": "https://globalvoices.org/author/teodora-hasegan/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 727158,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "6053523ca07a4af4c271dc49b00ade3da0179b60f1d8c935216e3334df8edafb",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-1aaffccab2aa2b77816a",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-01",
+    "eligible_month_documents": 68,
+    "selected_month_documents": 57,
+    "inclusion_probability": 0.8382352941176471,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Jacobo Nájera",
+  "body_start": 537,
+  "body_end": 4915,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "46399b309a0f289e30a800fe83da974e4dffa0c5b90467636cfbff6f4d681361",
+  "text_path": "articles/gv-727158.txt",
+  "metadata_path": "metadata/gv-727158.json",
+  "attribution": "This story by Jacobo Nájera originally appeared on Global Voices. https://globalvoices.org/2021/01/27/indigenous-led-telecommunications-organization-wins-historic-legal-battle-in-mexico/",
+  "content_sha256": "b5fb35c9318c62bcf7547a532377dfffef28c46aad085dcd4c20363ef2cb17db",
+  "source_sha256": "6053523ca07a4af4c271dc49b00ade3da0179b60f1d8c935216e3334df8edafb",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

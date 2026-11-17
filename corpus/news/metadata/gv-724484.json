@@ -1,0 +1,553 @@
+{
+  "id": "gv-724484",
+  "publisher_id": 724484,
+  "source_id": "globalvoices:724484",
+  "source_url": "https://globalvoices.org/2020/12/04/tanzania-launches-mobile-app-to-help-victims-report-gender-based-violence/",
+  "title": "Tanzania launches mobile app to help victims report gender-based violence",
+  "published_at": "2020-12-04T21:12:49Z",
+  "modified_at": "2020-12-04T21:16:36Z",
+  "api_author_id": 2608,
+  "api_content_sha256": "14c54c72dedcb5b23711a50f51dbfacff2ceb44109fe12b873c6e1945f3428af",
+  "api_response_sha256": "3c1126b1eeb2408f0c7dfb3722ec3e22693716e3f3a1988a2b2844f4a03dc72f",
+  "api_retrieved_at": "2026-11-16T22:20:31.424510+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 26,
+      "count": 587,
+      "name": "Tanzania",
+      "slug": "tanzania",
+      "parent": 15
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    },
+    {
+      "id": 1361,
+      "count": 6433,
+      "name": "Women &amp; Gender",
+      "slug": "women-gender",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-724484-b00001",
+      "text": "“Change Begins with Me” is Tanzania's chosen theme for this year's 16 Days of Activism to End Gender-Based Violence (GBV). The theme was announced by Mr. Prudence Constantine, the head of the communications unit at the Ministry of Health and Community Development.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 264,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00002",
+      "text": "Constantine explained that “the theme is a call to action for every one of us to take responsibility to end GBV by tackling persistent social norms that devalue women and girls and ensure survivors can access comprehensive support service,” he said.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 266,
+      "body_end": 515,
+      "source_links": [
+        "https://allafrica.com/stories/202011250780.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00003",
+      "text": "The annual global campaign supported by the United Nations commenced on November 25, the International Day for the Elimination of Violence against Women, and runs until December 10, which is Human Rights Day. With the color orange being the international symbol for the campaign to end GBV, this year's global theme is “Orange the World: Fund, Respond, Prevent, Collect!”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 517,
+      "body_end": 888,
+      "source_links": [
+        "https://www.unwomen.org/en/what-we-do/ending-violence-against-women/take-action/16-days-of-activism"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00004",
+      "text": "“As the world retreated inside homes due to the lockdown measures introduced to curb the COVID-19 pandemic, reports showed an alarming increase in the already existing pandemic of violence against women,” according to UN Women.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 890,
+      "body_end": 1117,
+      "source_links": [
+        "https://www.unwomen.org/en/news/in-focus/in-focus-gender-equality-in-covid-19-response/violence-against-women-during-covid-19"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00005",
+      "text": "Due to the pandemic, mobility restrictions, information deserts and increased isolation have led to a 30% decrease in reporting sexual and gender-based violence in Tanzania, according to Relief Web.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1119,
+      "body_end": 1317,
+      "source_links": [
+        "https://reliefweb.int/report/world/new-data-shows-decrease-women-being-able-report-incidents-domestic-violence-fragile-and"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00006",
+      "text": "The Tanzanian-based GBV coalition known as MKUKI kicked off the 16 Days of Activism against GBV by launching an app called Taarifa, or Information, which is a tool that offers information concerning gender-based violence that will also enable victims to report their cases to authorities.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1319,
+      "body_end": 1607,
+      "source_links": [
+        "https://www.dailynews.co.tz/news/2020-11-255fbe8c448adad.aspx"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00007",
+      "text": "Twitter user Viola Julius explains:",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1609,
+      "body_end": 1644,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00008",
+      "text": "> MKUKI today launched GBV nation app with the purpose of helping someone get information about GBV but even more so, that person can file a report on their abuse.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1646,
+      "body_end": 1809,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724484-b00009",
+      "text": "Hon. Dr. Tulia Ackson, the recently reelected deputy speaker of the 12th National Assembly, was the guest of honor at the launch of Taarifa app. The deputy speaker expressed that the app was an important intervention toward the ultimate goal to eliminate all forms of gender-based violence. Ackson said she hoped the app would help tackle the stigma that surrounds reporting acts of intimate partner violence, according to the Daily News, a local media site.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1811,
+      "body_end": 2269,
+      "source_links": [
+        "https://www.dailynews.co.tz/news/2020-11-125fad068e79619.aspx"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00010",
+      "text": "“We are all aware that GBV has been prevalent in our society for a very long time, thus various interventions are needed to eliminate it,” said Ackson. This mobile app [will] assist many people who are afraid to come out and report such incidents.”",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2271,
+      "body_end": 2519,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00011",
+      "text": "During the 16 Days of Activism, Mkuki is touring Tanzania to launch the app at various universities in different towns and cities.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2521,
+      "body_end": 2651,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00012",
+      "text": "Netizens from different universities have been sharing information about Mkuki's visit.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2653,
+      "body_end": 2740,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00013",
+      "text": "Twitter user Holy reported from the town of Njombe:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2742,
+      "body_end": 2793,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00014",
+      "text": "> Njombe MKUKI's online anti-violence network is located at Njombe Health College ~ Launch the gender desk ~ Provide education on sexual violence ~ Launch GBV Notification App",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2795,
+      "body_end": 2970,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724484-b00015",
+      "text": "And from the city of Iringa:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2972,
+      "body_end": 3000,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00016",
+      "text": "> Iringa The Caravan team has arrived in Iringa to talk to Iringa University's top students ~ The effects of sexual violence ~ Sexual corruption in colleges ~ Establish a gender desk ~ Launch GBV Notification App",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3002,
+      "body_end": 3214,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724484-b00017",
+      "text": "And this Twitter user tweeted from the University of Mzumbe:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3216,
+      "body_end": 3276,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00018",
+      "text": "> Today, at Mzumbe University, a GBV Information App has been launched where students will have the opportunity to read the latest news, comment and report on sexual violence.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3278,
+      "body_end": 3453,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724484-b00019",
+      "text": "The app is already a hit among netizens as they are campaigning to encourage others to download it.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3455,
+      "body_end": 3554,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00020",
+      "text": "> Download the GBV Info app today! You can benefit from training but even more so, you will be able to report when you are subjected to an act of sexual violence. #ChangeBeginsWithMe #SafeSpacesTZ",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3556,
+      "body_end": 3752,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724484-b00021",
+      "text": "And Mbundi John chimed in with a similar message:",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3754,
+      "body_end": 3803,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00022",
+      "text": "> Download today the #GBV App to get an educated on sexual violence. It will be a platform for all people to report, discuss and learn about different issues of sexual violence from different parts of the country. #ChangeBeginsWithMe",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3805,
+      "body_end": 4038,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724484-b00023",
+      "text": "Netizen Careen Joel, a Tanzanian journalist, writer and social change pioneer, has been actively advocating against GBV with a poem called “I Would Cry,” in honor of GBV victims in Tanzania.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 4040,
+      "body_end": 4230,
+      "source_links": [
+        "https://cariejoe.medium.com/i-would-cry-a-16-days-activism-against-gbv-tribute-6c06e8198abc"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00024",
+      "text": "Joel writes:",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 4232,
+      "body_end": 4244,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00025",
+      "text": "I still sleep with the hope of a changed sunrise,",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 4246,
+      "body_end": 4295,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00026",
+      "text": "Like our days in the pine trees and the honey words,",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 4297,
+      "body_end": 4349,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00027",
+      "text": "When I was your star and not your punching bag.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 4351,
+      "body_end": 4398,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00028",
+      "text": "Even the winds are amazed.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 4400,
+      "body_end": 4426,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00029",
+      "text": "Rebeca Gyumi, among those listed on BBC's 100 Women 2020, is steadfast on her mission against early marriage. Often referred to as “child brides,” this term neglects the fact that young girls not in the position to choose their partners and therefore, these types of unions are considered a form of violence.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 4428,
+      "body_end": 4736,
+      "source_links": [
+        "https://www.bbc.com/news/amp/world-55042935?__twitter_impression=true"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00030",
+      "text": "In alignment with the global Msichana (Young Woman) Initiative, a nongovernmental organization founded by Gyumi, they recently hosted a roundtable discussion on ending child marriage in the Shinyanga region. In partnership with KIWOHEDE, a nonprofit organization focused on health and human rights for women and children, the meeting targeted religious leaders and was also attended by UN representatives.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 4738,
+      "body_end": 5143,
+      "source_links": [
+        "https://twitter.com/MsichanaUwezo/status/1334427916814462979?s=19"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00031",
+      "text": "> We thank the Shinyanga Regional Commissioner for participating in our meeting which brought together religious and traditional leaders, the regional peace committee to discuss their role in the end. #ChildMarriage #16Days",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 5145,
+      "body_end": 5368,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724484-b00032",
+      "text": "Leaders in the Kigoma region also took part in the national movement against GBV. A community development officer educated residents of the Kibirizi ward about the impact of GBV on women:",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 5370,
+      "body_end": 5557,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00033",
+      "text": "The Foundation for Civil Societies in Tanzania also joined the movement by campaigning online against GBV:",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 5559,
+      "body_end": 5665,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00034",
+      "text": "The FCSTZ pointed out that one of the factors that put women and girls at risk is toxic masculinity.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 5667,
+      "body_end": 5767,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724484-b00035",
+      "text": "> Patriarchal systems in society place women and girls at risk of sexual violence.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 5769,
+      "body_end": 5851,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "a33617cf124756bccd34020fd56f81c42cedfa8cb522ceb251130976ae072211",
+  "word_count": 948,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 10,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 5851,
+  "retrieved_at": "2026-11-16T22:28:39.036514+00:00",
+  "raw_html_sha256": "97a60ce4f6933118d8dfcd20453a94deccd97c42fd2fd7f60a0542e584610e10",
+  "resolved_source_url": "https://globalvoices.org/2020/12/04/tanzania-launches-mobile-app-to-help-victims-report-gender-based-violence/",
+  "canonical_url": "https://globalvoices.org/2020/12/04/tanzania-launches-mobile-app-to-help-victims-report-gender-based-violence/",
+  "source_bytes": 194180,
+  "authors": [
+    {
+      "name": "Susie Berya",
+      "url": "https://globalvoices.org/author/susie-berya/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 724484,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "97a60ce4f6933118d8dfcd20453a94deccd97c42fd2fd7f60a0542e584610e10",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-19541099b2ada05997ea",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-12",
+    "eligible_month_documents": 69,
+    "selected_month_documents": 58,
+    "inclusion_probability": 0.8405797101449275,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Susie Berya",
+  "body_start": 481,
+  "body_end": 6332,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c68d32936fd99df35e6f8ce533b69d696b957c773d4160cfbf2344e07f3627d9",
+  "text_path": "articles/gv-724484.txt",
+  "metadata_path": "metadata/gv-724484.json",
+  "attribution": "This story by Susie Berya originally appeared on Global Voices. https://globalvoices.org/2020/12/04/tanzania-launches-mobile-app-to-help-victims-report-gender-based-violence/",
+  "content_sha256": "626d47e608b81cac372ed7f5721624cb7aad4305c9d98172996454f6d41026fa",
+  "source_sha256": "97a60ce4f6933118d8dfcd20453a94deccd97c42fd2fd7f60a0542e584610e10",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

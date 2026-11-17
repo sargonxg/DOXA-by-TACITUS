@@ -1,0 +1,428 @@
+{
+  "id": "gv-847153",
+  "publisher_id": 847153,
+  "source_id": "globalvoices:847153",
+  "source_url": "https://globalvoices.org/2025/12/05/when-the-judge-meets-the-algorithm-ai-tools-entering-indias-courts/",
+  "title": "When the judge meets the algorithm: AI tools entering India’s courts",
+  "published_at": "2025-12-05T05:00:28Z",
+  "modified_at": "2025-12-05T14:06:48Z",
+  "api_author_id": 3347,
+  "api_content_sha256": "c3b565b367927413de5a657f106c7ad014092a6e4aa3c322a2f82e81ab09347e",
+  "api_response_sha256": "f78e1812923331e05bc905d33449e25c2f29b15886f74de0219da0afeb3325fc",
+  "api_retrieved_at": "2026-11-16T22:21:16.131612+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 32,
+      "count": 3843,
+      "name": "India",
+      "slug": "india",
+      "parent": 31
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-847153-b00001",
+      "text": "Artificial Intelligence (AI) has snuck into the judicial work of India in an unprecedented way. AI can generate real-time transcripts at the Supreme Court Constitution Bench hearings; automated software records the deposition of witnesses in trial courts. Judges are even testing AI tools for legal research and translation to navigate through case files containing multiple languages. However, these tests are happening within a strained judiciary space, thus posing a very central question: can algorithms speed up justice and still preserve fairness, transparency, and human discretion?",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 589,
+      "source_links": [
+        "https://www.juryscan.in/artificial-intelligence-ai-and-judicial-processes-in-india/",
+        "https://www.linkedin.com/pulse/ai-apex-court-how-suvas-supace-shaping-indias-eew7c/",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2043476&reg=3&lang=2"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00002",
+      "text": "Millions of cases are pending in India; in fact, the backlog runs into several tens of millions. To tackle this issue, the government, under the direction of the Supreme Court and the Ministry of Law and Justice, is implementing Phase III of the e-Courts project, which seeks to modernize filings, case management, and workflow processes with machine learning and languages technologies. A sizable portion of the budget is earmarked for future technologies, such as AI and blockchain, thus signifying a political bet that such digital tools will mitigate the current delays while still abiding by the edict that only judges decide cases. As courts start adopting AI haphazardly, they also need to set boundaries for accountability, privacy, and the limits of automation.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 591,
+      "body_end": 1361,
+      "source_links": [
+        "https://frontline.thehindu.com/the-nation/india-judicial-delay-supreme-court-police-judges/article70185758.ece",
+        "https://indiaai.gov.in/article/ai-in-judicial-processes-transforming-india-s-legal-system"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00003",
+      "text": "The promise: Speed over backlog",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1363,
+      "body_end": 1394,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00004",
+      "text": "The adoption of AI builds on earlier digitalization. Since the implementation of e-Courts in 2007, the program introduced e-filing, digital cause lists, and online judgments, with the aim of making online applications possible. Phase III revolves around considering judicial information now digitized for interpretation under natural language processing and machine learning.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1396,
+      "body_end": 1771,
+      "source_links": [
+        "https://ecourts.gov.in/ecourts_home/static/about-us.php"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00005",
+      "text": "A key innovation is the Supreme Court Portal for Assistance in Courts Efficiency (SUPACE), an AI-powered platform making it easier for judges and research staff to reach informed working decisions regarding the handling of massive case records. SUPACE does not make decisions; it identifies facts, proposes precedents, and drafts the outlines, cutting down manual research time and enabling judges to concentrate on legal reasoning.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1773,
+      "body_end": 2205,
+      "source_links": [
+        "https://indiaai.gov.in/case-study/enhancing-the-efficiency-of-india-s-courts-using-ai/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00006",
+      "text": "Language access is also a primary concern. The Supreme Court has developed Vidhik Anuvaad Software (SUVAS), which converts judgments from English to other Indian languages, while some high courts test tools for converting amortized judgments in local languages into English. AI-powered transcription is changing record maintenance as well. The apex court has initiated automated transcription in constitutional matters and has been producing near-real-time, searchable text for the record since 2023.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2207,
+      "body_end": 2707,
+      "source_links": [
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2078399&reg=3&lang=2",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2106239&reg=3&lang=2"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00007",
+      "text": "The most important direction was given by the High Court of Kerala in 2025, instructing that all subordinate courts would have to use the AI-enabled speech to text tool Adalat.AI to record witness depositions from November 1, 2025. Developed by a start-up with research links to universities like Harvard and MIT, Adalat.AI replaces slow handwritten notes with immediate digital transcripts captured within the district court system. The order permits judges to use only alternative platforms vetted by the High Court's IT Directorate if the system fails. Thus, control over how sensitive audio is processed is ensured.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2709,
+      "body_end": 3328,
+      "source_links": [
+        "http://adalat.ai/",
+        "https://www.barandbench.com/news/kerala-high-court-mandates-all-courts-in-state-to-adopt-ai-tool-to-record-witness-depositions"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00008",
+      "text": "Officials describe these reforms as steps toward a more efficient and transparent judiciary. Policy documents emphasize AI’s potential to reduce human error in transcription, automatically catch basic errors during the e-filing process, and help overburdened judges prioritize urgent cases. Commentators on judicial reform argue that, if implemented carefully, such systems could shorten hearings, improve the accuracy of transcripts and translations, and give litigants particularly those in remote districts with scarce legal resources better visibility into the progress of their cases.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3330,
+      "body_end": 3919,
+      "source_links": [
+        "https://www.lexology.com/library/detail.aspx?g=4000e4f2-6f32-4616-ab0a-138d04c2c5a6",
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2148356&reg=3&lang=2"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00009",
+      "text": "The concerns: When algorithms shadow judicial thinking",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3921,
+      "body_end": 3975,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00010",
+      "text": "Despite the optimism, judges and scholars have raised concerns. A notable warning came from the Delhi High Court in 2023, when it refused to consider arguments in a trademark case that relied on ChatGPT. The court stated that large language models could fabricate case citations and facts, and that their output required independent verification.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3977,
+      "body_end": 4323,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/ChatGPT",
+        "https://iprmentlaw.com/2023/08/27/iprmentlaw-weekly-highlights-august-21-27-2023/",
+        "https://nliulawreview.nliu.ac.in/blog/ai-in-indian-courtrooms-navigating-the-tightrope-between-innovation-and-vigilance-2/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00011",
+      "text": "In another case, the same Delhi High Court bench allowed homebuyers to withdraw a petition after they discovered that some portions of their pleadings, including case citations, had been generated on ChatGPT. Complaints noted in the so-formed document included non-existent cases and misquoted statements. The judge chastized the use of unverified generative AI, saying such practices could mislead the court. The incident reflected the professional dangers of the speed-and-accuracy trade offered by AI utilization within the judiciary.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4325,
+      "body_end": 4862,
+      "source_links": [
+        "https://www.varindia.com/news/delhi-high-court-advises-not-to-use-chatgpt-for-legal-decisionmaking"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00012",
+      "text": "The black box problem goes much beyond that. AI tools used for searching, summarizing, or transcribing can be built on opaque models. When SUPACE draws attention to certain precedents, judges and litigants cannot know how exactly those cases were prioritized. Scholars warn that this level of opacity makes errors more difficult to unearth and may all too subtly influence judicial thinking if the algorithmic suggestions are in some way “seen as neutral.”",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4864,
+      "body_end": 5320,
+      "source_links": [
+        "https://www.ijraset.com/research-paper/a-comprehensive-review-on-artificial-intelligence-in-indian-law"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00013",
+      "text": "Another danger is bias. Indian case law, like society, is unequal and, therefore, datasets for training AI may have also been imprinted with the discriminatory patterns based on caste, gender, class or religion. Analysts caution that AI would reinforce such biases in the name of better efficiency. Senior judges, including the Chief Justice of India, acknowledged that AI can “amplify discrimination” in scenarios where its opacity is still in place or where it trained on unrepresentative data.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5322,
+      "body_end": 5818,
+      "source_links": [
+        "https://ijlsss.com/artificial-intelligence-and-judicial-integrity-evaluating-the-impact-risks-and-implications-of-ai-integration-in-modern-court-systems/",
+        "https://virtuositylegal.com/algorithmic-discrimination-in-indias-legal-system-constitutional-challenges-and-policy-reform/",
+        "https://www.eoschambersoflaw.com/index.php/blog/posts/show/cji-dy-chandrachud-cautions-about-artificial-intelligence-says-it-can-make-biased-decisions-based-on-societal-prejudices-21"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00014",
+      "text": "Privacy and security concerns have also risen. Judicial record contains a very large amount of sensitive personal data, such as criminal allegations, finances, and medical details. All guidelines from courts like Kerala High Court discourage uploading such data to public cloud tools. The Digital Personal Data Protection Act, 2023, applies to automated processing, which covers many AI tools used in courts. In the absence of a dedicated AI law, courts and developers must navigate a patchwork of confidentiality and data-protection norms.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5820,
+      "body_end": 6360,
+      "source_links": [
+        "https://practiceguides.chambers.com/practice-guides/artificial-intelligence-2025/india/trends-and-developments",
+        "https://www.dpdpa.in/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00015",
+      "text": "A further concern that challenges long-term improvement would be that of “automation bias,” where humans unconsciously trust computer outputs too much. Scholars contend, for instance, that when AI presents the judge with an applicable precedent or case priority, under the pressure of workload, the judge may tend, oftentimes without even realizing it, to reconsider some issue. As systems are becoming more seamless, the only aspect that will keep AI as a tool from becoming a co-silent author in judicial decisions will be strict intrusions from the side of judicial discipline.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6362,
+      "body_end": 6942,
+      "source_links": [
+        "https://claww.in/ai-in-indian-judiciary/",
+        "https://www.cambridge.org/core/journals/cambridge-forum-on-ai-law-and-governance/article/rethinking-the-judicial-duty-to-state-reasons-in-the-age-of-automation/0984E85BC2519D5E5E448FAFCCBD98F6"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00016",
+      "text": "Charting a middle path: Oversight without surrender",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6944,
+      "body_end": 6995,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00017",
+      "text": "The judiciary is attempting to find a balance between the demands of the caseload and ethical safeguards in their functioning. In this respect, Kerala has taken the lead by not only mandating Adalat.AI but also issuing a comprehensive AI policy for subordinate courts. The policy views AI as an administrative tool for transcription and translation, prohibits generative AI from drafting judgments or making outcome predictions, advises judges to rigorously evaluate AI outputs, and bans external platforms requiring the uploading of confidential information.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 6997,
+      "body_end": 7556,
+      "source_links": [
+        "https://ssrana.in/articles/kerala-high-courts-new-ai-guidelines-set-national-standard-for-judicial-integrity/",
+        "https://www.iipa.org.in/GyanKOSH/posts/ethical-concerns-fairness-accountability-and-transparency-in-ai"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00018",
+      "text": "At the national level, the Supreme Court has set up an AI Committee to assess its tools and assess integration into all court IT systems, especially developing partnerships with institutions like IIT Madras. Government statements suggest that a uniform policy for AI use in courts is underway that will be in sync with ethical and privacy guidelines. The authorities stress that AI will be accepted only with “human supervision, ethical oversight, and privacy protection” with only judges authorized to sign orders.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 7558,
+      "body_end": 8073,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/IIT_Madras",
+        "https://www.scconline.com/blog/post/2025/11/06/meity-launches-india-ai-governance-guidelines-under-indiaai-mission-2025/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00019",
+      "text": "Yet, there is no across-the-board AI law for India. Some rules today are found in court circulars, statutes of data protection, and general policies on technology. Studies on judicial integrity suggest conducting periodic audits for bias, mandatory disclosures whenever AI influences filings or decisions, and providing litigants a way to challenge AI tools that impinge on their cases. Experts stress the need for better technological infrastructure in trial courts, judicial training in questioning AI outputs, and public education around what these tools can do and cannot do.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 8075,
+      "body_end": 8654,
+      "source_links": [
+        "https://timesofindia.indiatimes.com/city/bengaluru/supreme-court-judge-tech-in-judiciary-a-constitutional-need-now/articleshow/125663407.cms",
+        "https://visionias.in/current-affairs/upsc-daily-news-summary/article/2025-10-13/business-standard/polity-and-governance/a-case-for-using-ai-to-fix-judicial-delays-experts-discuss-pros-cons"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-847153-b00020",
+      "text": "Today’s major challenge is no longer the adoption of AI, but rather the ability to coexist with it. Real issues such as backlog, language barriers, and inequality of access to legal information can all be alleviated by AI tools. However, it cannot be denied that using opaque algorithms in day-to-day judicial processes may lower their accountability. For now, India’s judges seem determined to keep humans firmly in charge, treating AI as an assistant and not as an oracle. How long this balance holds good will determine not just the rate of dispensing justice but also the level of trust that the public has in this process.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 8656,
+      "body_end": 9283,
+      "source_links": [
+        "https://www.amsshardul.com/insight/ai-in-courtrooms-and-how-it-will-change-the-landscape-of-litigation/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "bb65f4c54d49bd235b0d3bd1c7078e1366a6e733fc0f8f82a5074827cc8bb918",
+  "word_count": 1394,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 9283,
+  "retrieved_at": "2026-11-16T22:55:02.744317+00:00",
+  "raw_html_sha256": "85ada85d12d5430ecdc394d277af91de5a935090a59e0399ec3fed84cabca1e6",
+  "resolved_source_url": "https://globalvoices.org/2025/12/05/when-the-judge-meets-the-algorithm-ai-tools-entering-indias-courts/",
+  "canonical_url": "https://globalvoices.org/2025/12/05/when-the-judge-meets-the-algorithm-ai-tools-entering-indias-courts/",
+  "source_bytes": 194365,
+  "authors": [
+    {
+      "name": "Sakkcham Singh Parmaar",
+      "url": "https://globalvoices.org/author/sakkcham/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 847153,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "85ada85d12d5430ecdc394d277af91de5a935090a59e0399ec3fed84cabca1e6",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-54dfb72e1f025c9b49c0",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2025-12",
+    "eligible_month_documents": 51,
+    "selected_month_documents": 43,
+    "inclusion_probability": 0.8431372549019608,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Sakkcham Singh Parmaar",
+  "body_start": 480,
+  "body_end": 9763,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "f81ef8932af4a0fc5931193aa47b3762fcb81161ba1f24def66271e593e62ba5",
+  "text_path": "articles/gv-847153.txt",
+  "metadata_path": "metadata/gv-847153.json",
+  "attribution": "This story by Sakkcham Singh Parmaar originally appeared on Global Voices. https://globalvoices.org/2025/12/05/when-the-judge-meets-the-algorithm-ai-tools-entering-indias-courts/",
+  "content_sha256": "36878d27fac1109a86644485328c901c85f499fbbca4b67e7c2d1f7cf778a6d7",
+  "source_sha256": "85ada85d12d5430ecdc394d277af91de5a935090a59e0399ec3fed84cabca1e6",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

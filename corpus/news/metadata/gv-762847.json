@@ -1,0 +1,354 @@
+{
+  "id": "gv-762847",
+  "publisher_id": 762847,
+  "source_id": "globalvoices:762847",
+  "source_url": "https://globalvoices.org/2022/05/12/the-philippines-protests-erupt-as-a-former-dictators-son-leads-the-presidential-election-tally/",
+  "title": "The Philippines: Protests erupt as a former dictator’s son leads the presidential election tally",
+  "published_at": "2022-05-12T05:08:08Z",
+  "modified_at": "2022-07-25T09:04:59Z",
+  "api_author_id": 261,
+  "api_content_sha256": "4cb1f0d1f6554dac17abb60e64f9f2ec085e794d9baea002c15ed15b7fe0c912",
+  "api_response_sha256": "38ad93d079743e010ebeaa95e36d2e6132e8c3254af60234cc4a8955464c79f0",
+  "api_retrieved_at": "2026-11-16T22:20:43.878278+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 248,
+      "count": 7037,
+      "name": "Elections",
+      "slug": "elections",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 258,
+      "count": 8694,
+      "name": "History",
+      "slug": "history",
+      "parent": 238
+    },
+    {
+      "id": 55,
+      "count": 1238,
+      "name": "Philippines",
+      "slug": "philippines",
+      "parent": 16
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 271,
+      "count": 12969,
+      "name": "Protest",
+      "slug": "protest",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-762847-b00001",
+      "text": "Former Senator Ferdinand Marcos Jr. is expected to win the Philippine presidential election based on the unofficial tally from the Commission on Elections (Comelec). However, in light of his apparent victory, protests erupted across the country one day after the May 9 election, with demonstrators rejecting Marcos and his running mate, Davao City Mayor Sara Duterte.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 367,
+      "source_links": [
+        "https://newsinfo.inquirer.net/1595617/groups-converge-near-comelecs-main-office-as-vote-counting-continues"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762847-b00002",
+      "text": "Marcos is the son of the late dictator Ferdinand Marcos who ruled the country from 1965 until he was ousted from power in 1986. The Marcos family has been accused of embezzling millions of dollars in wealth and resources when they were in power. Meanwhile, Mayor Duterte is the daughter of incumbent President Rodrigo Duterte.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 369,
+      "body_end": 695,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762847-b00003",
+      "text": "The May 9 elections were described by authorities as peaceful and safe despite reports of irregularities that marred the voting process in many areas. Election watchdog Kontra Daya flagged a high number of faulty voting machines on election day:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 697,
+      "body_end": 942,
+      "source_links": [
+        "https://kontradaya.org/machine-errors-illegal-campaigning-remain-widespread-vcm-breakdowns-prove-aes-a-failure/",
+        "https://mb.com.ph/2022/05/10/2022-elections-generally-peaceful-safe-comelec-spox/",
+        "https://twitter.com/lente_ph/status/1523597693431709696"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762847-b00004",
+      "text": "> Kontra Daya maintains that the massive amount of reports recieved this year only serves to prove the failure of the automated election system in guarding the sanctity of the ballot.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 944,
+      "body_end": 1127,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762847-b00005",
+      "text": "> It is difficult for voters to be confident in election proceedings marred by machine errors and breakdowns, as these cast doubt on the capacity of the machine to count their votes.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1129,
+      "body_end": 1311,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762847-b00006",
+      "text": "It noted that far more machines (Vote Counting Machine or VCM) malfunctioned this year compared to previous elections:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1313,
+      "body_end": 1431,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762847-b00007",
+      "text": "Opposition leader and Vice President Leni Robredo, who is trailing behind Marcos in the presidential race, expressed concern about the reported irregularities. She assured her supporters that her team is already looking into the cases of anomalies in the counting and transmission of votes.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1433,
+      "body_end": 1723,
+      "source_links": [
+        "https://twitter.com/lenirobredo/status/1523900166595842049"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762847-b00008",
+      "text": "When the Comelec’s unofficial count showed that Marcos and Dutertre are leading in the polls, supporters of Robredo staged protests questioning the results and accusing the election body of mismanagement, as indicated by the high number of vote-related irregularities.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1725,
+      "body_end": 1993,
+      "source_links": [
+        "https://www.rappler.com/nation/elections/photos-protests-polls-process-2022/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762847-b00009",
+      "text": "Protesters also included veteran activists and human rights groups who have widely come out against Marcos and Duterte's candidacy. Human rights group Karapatan said Marcos used stolen wealth to return to power while whitewashing the sins of his family's dictatorship:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1995,
+      "body_end": 2263,
+      "source_links": [
+        "https://www.karapatan.org/reject+marcos+jr+and+sara+duterte+in+the+elections+and+beyond"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762847-b00010",
+      "text": "> Marcos Jr. has not only refused to publicly acknowledge the crimes of his father and his family’s role as direct beneficiaries of such crimes: he has whitewashed, even legitimized, the atrocities of his father’s dictatorship. He and his family have refused to return all the looted public funds and assets they amassed for private gain during his father’s dictatorial rule.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2265,
+      "body_end": 2640,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762847-b00011",
+      "text": "Karapatan and other activists said the Marcos camp has manipulated public opinion by spreading disinformation about the late dictator's actions and legacy. They also blamed the previous governments for failing to hold the Marcos family accountable for their role during the years when Martial Law led to rampant human rights violations in the Philipinnes.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2642,
+      "body_end": 2997,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762847-b00012",
+      "text": "On May 10, anti-Marcos protests were organized across the country, led mainly by young people. Some of these protests were staged in the provinces of Cebu, Isabela (North Luzon), Zamboanga (Mindanao Island), Nueva Ecija, Davao City (the hometown of Duterte), and Naga City (the hometown of Robredo).",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2999,
+      "body_end": 3298,
+      "source_links": [
+        "https://twitter.com/AninawProd/status/1524248900718145536",
+        "https://twitter.com/altermidya/status/1523945590857486336",
+        "https://twitter.com/altermidya/status/1523971355464863744",
+        "https://twitter.com/altermidya/status/1524270141998960642",
+        "https://twitter.com/bulatlat/status/1523991208955064330",
+        "https://twitter.com/himati/status/1523921255350505472"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762847-b00013",
+      "text": "In the capital, Manila, hundreds of protesters gathered in front of the Comelec office to denounce the alleged systematic fraud in the recent election. Troy Matavia, a first-time voter, was interviewed by the news website Bulatlat about his reason for joining the protest:",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3300,
+      "body_end": 3572,
+      "source_links": [
+        "https://www.bulatlat.com/2022/05/11/first-time-voters-dismayed-over-2022-election-irregularities/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762847-b00014",
+      "text": "> I need to express my sentiments so I joined the protest for the first time. I feel like I need to do something and there is an urgency for the Filipino people to show up and stand for their rights.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3574,
+      "body_end": 3773,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-762847-b00015",
+      "text": "After the protest in front of the Comelec, the crowd marched in a nearby freedom park where they continued to hold a program rejecting the restoration of the Marcoses.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3775,
+      "body_end": 3942,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-762847-b00016",
+      "text": "The Philippine Congress will officially tally the results for the presidential and vice-presidential election and proclaim the winners on May 27.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3944,
+      "body_end": 4089,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "1568305b854426aa583649f9063850f3581e1ddcf7af4989f411b4d42182ebc3",
+  "word_count": 650,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 2,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 4089,
+  "retrieved_at": "2026-11-16T22:34:48.737495+00:00",
+  "raw_html_sha256": "cf3ea6683f248b26a362b36e9a626de629c59420e2b0bf67657d91ba61ec650d",
+  "resolved_source_url": "https://globalvoices.org/2022/05/12/the-philippines-protests-erupt-as-a-former-dictators-son-leads-the-presidential-election-tally/",
+  "canonical_url": "https://globalvoices.org/2022/05/12/the-philippines-protests-erupt-as-a-former-dictators-son-leads-the-presidential-election-tally/",
+  "source_bytes": 187096,
+  "authors": [
+    {
+      "name": "Mong Palatino",
+      "url": "https://globalvoices.org/author/mong/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 762847,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "cf3ea6683f248b26a362b36e9a626de629c59420e2b0bf67657d91ba61ec650d",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-89df2879c4d952e657a5",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-05",
+    "eligible_month_documents": 83,
+    "selected_month_documents": 69,
+    "inclusion_probability": 0.8313253012048193,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Mong Palatino",
+  "body_start": 527,
+  "body_end": 4616,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "077dea4fdcdf8254fc7e626d8dad0c980fd63a8c0f3b76e3aa1d929b5211c333",
+  "text_path": "articles/gv-762847.txt",
+  "metadata_path": "metadata/gv-762847.json",
+  "attribution": "This story by Mong Palatino originally appeared on Global Voices. https://globalvoices.org/2022/05/12/the-philippines-protests-erupt-as-a-former-dictators-son-leads-the-presidential-election-tally/",
+  "content_sha256": "314cc0bb68876e415f4303ec2cbfd92cd7170a6e31a52745433ca31dede65895",
+  "source_sha256": "cf3ea6683f248b26a362b36e9a626de629c59420e2b0bf67657d91ba61ec650d",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

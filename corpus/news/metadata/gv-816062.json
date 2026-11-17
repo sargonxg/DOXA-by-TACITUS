@@ -1,0 +1,427 @@
+{
+  "id": "gv-816062",
+  "publisher_id": 816062,
+  "source_id": "globalvoices:816062",
+  "source_url": "https://globalvoices.org/2024/07/12/as-evs-gain-momentum-in-brazil-chinas-influence-shines-through/",
+  "title": "As electric vehicles gain momentum in Brazil, China's influence shines through",
+  "published_at": "2024-07-12T05:54:53Z",
+  "modified_at": "2024-07-12T08:16:31Z",
+  "api_author_id": 2989,
+  "api_content_sha256": "73b63eac310d2acbf52a37eee0c74600ced4c6845d0604eb207d4478c49c3118",
+  "api_response_sha256": "1a551bfb4d6a5ca4fe42f7ccbbf3e65c57203f020ea487203f680e9191a66134",
+  "api_retrieved_at": "2026-11-16T22:21:04.288821+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 325,
+      "count": 2253,
+      "name": "Chinese",
+      "slug": "chinese",
+      "parent": 317
+    },
+    {
+      "id": 243,
+      "count": 6007,
+      "name": "Development",
+      "slug": "development",
+      "parent": 238
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 336,
+      "count": 2224,
+      "name": "Portuguese",
+      "slug": "portuguese",
+      "parent": 317
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-816062-b00001",
+      "text": "Brazil has the sixth-highest greenhouse gas emissions worldwide, with transport alone responsible for around 16 percent of the country's total emissions. One of the main reasons for this is the significant consumption of diesel and gasoline. Research shows that electric vehicles (EVs), despite requiring more energy to manufacture due to their batteries, produce significantly less carbon emission over their lifetimes compared to gasoline-powered vehicles. Because of this difference in emissions, EVs will play a crucial role in Brazil’s green energy transition.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 565,
+      "source_links": [
+        "https://assets.kpmg.com/content/dam/kpmg/pl/pdf/2023/11/pl-Net-Zero-Readiness-Report-2023.pdf",
+        "https://www.scientificamerican.com/article/electric-vehicles-beat-gas-cars-on-climate-emissions-over-time/",
+        "https://yaleclimateconnections.org/2024/05/why-switching-to-an-ev-is-good-for-the-climate/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00002",
+      "text": "The vast majority of EVs in Brazil are imported from China. To protect its burgeoning domestic industry, Brazil reintroduced an import tax on EVs from China, and at the same time issued Mover, a new policy to support domestic companies’ innovation through investment. Chinese companies are adjusting to the new policy and also trying to gain some control in Brazil's lithium extraction industry — a key raw material in manufacturing batteries for EVs.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 567,
+      "body_end": 1018,
+      "source_links": [
+        "https://agenciagov.ebc.com.br/noticias/202312/mover-programa-de-mobilidade-verde-e-lancado",
+        "https://www.youtube.com/watch?v=Inv508g7Sn8"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00003",
+      "text": "Within Brazil's population of 215 million people, EVs have steadily grown in popularity over the past few years. In 2023, there was a 91 percent increase in EV cars sold compared to the previous year — much of this due to Chinese EV imports and the growing influence of Chinese producers. But as Chinese companies make headway in Brazil's market, they are set to face obstacles, such as high prices, lacking infrastructure, and a market currently limited to Brazil's upper economic classes.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1020,
+      "body_end": 1510,
+      "source_links": [
+        "https://www.poder360.com.br/economia/venda-de-carros-eletricos-no-brasil-cresce-91-em-2023/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00004",
+      "text": "Brazilian legislators have long been encouraging the green transition in the auto sector. As early as 2018, the Brazilian federal government began the “Rota 2030” plan, which set a goal that electric vehicle sales would account for 30 percent of Brazil's total car sales by 2030. Last December, “Mover,” a new program to replace Rota 2030, was launched to grant carmakers access to financial credit in return for investments in sustainable mobility, including EVs and hybrid cars. The program is meant to expand investments in energy efficiency, set minimum thresholds for recycling in car making, and create incentives to pollute less through tax subsidies.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1512,
+      "body_end": 2170,
+      "source_links": [
+        "https://agenciagov.ebc.com.br/noticias/202312/mover-programa-de-mobilidade-verde-e-lancado",
+        "https://www.gov.br/mdic/pt-br/assuntos/competitividade-industrial/setor-automotivo/rota-2030-mobilidade-e-logistica"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00005",
+      "text": "It was touted as the “biggest decarbonization program in history” by Brazil's vice-president, Geraldo Alckmin. By January 2029, the program will have doled out approximately USD 3.5 billion in financial credits. According to global consultancy KPMG, Mover has the potential to accelerate decarbonization in the automotive sector.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 2172,
+      "body_end": 2501,
+      "source_links": [
+        "https://assets.kpmg.com/content/dam/kpmg/br/pdf/2024/02/KPMG_no_Brasil_Relatorio_de_Sustentabilidade_2023-ING.pdf",
+        "https://www.gov.br/mdic/pt-br/assuntos/noticias/2024/marco/201ce-o-maior-programa-de-descarbonizacao-da-historia201d-afirma-alckmin-em-cerimonia-do-mover"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00006",
+      "text": "Momentum in Brazil's EV market",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2503,
+      "body_end": 2533,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00007",
+      "text": "These programs seem to be working in spurring the EV market. Data from the Brazilian Electric Vehicle Association (ABVE) shows that in 2023, sales of light electric vehicles (LEVs), a category of electric-powered vehicles that are typically smaller, lighter, and more energy-efficient compared to conventional vehicles (like E-bikes, electric scooters, and electric microcars), reached nearly 94,000 units in Brazil. Although this represents only 4.3 percent of all vehicles sold in Brazil in 2023, EVs are on a definitive upward trend.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2535,
+      "body_end": 3071,
+      "source_links": [
+        "https://abve.org.br/veiculos-eletricos-crescem-em-todo-o-pais/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00008",
+      "text": "“China realized that this technology had the potential to solve several important problems, such as reducing air pollution, dependence on imported oil, and rebuilding the economy after the 2008 financial crisis,” says Murilo Briganti of Bright Consulting, one of the leading consultancies on the automotive market in Brazil, according to the reporting from Dialogue Earth.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3073,
+      "body_end": 3445,
+      "source_links": [
+        "https://brightisd.com/",
+        "https://dialogue.earth/en/business/384578-brazils-ev-market-shifts-up-a-gear-as-chinese-makers-set-up-shop/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00009",
+      "text": "To incentivize the development of the local industry, Brazil increased import taxes on new energy vehicles starting in July 2022. Since January 2022, fully electric vehicles faced a 10 percent import tax, which will increase to 18 percent this month, and will reach 35 percent by July 2026. To avoid these hefty import taxes, some Chinese car companies began to shift some production capacity to Brazil. BYD, a major Chinese EV manufacturer, has started construction of a large production base in Bahia, northeast of Brazil, with the new factory expected to start operating by the end of 2024 or early 2025. Great Wall Motors, a private Chinese EV manufacturer, announced last year that its factory in Iracemápolis, São Paulo state, is scheduled to begin operations in the second half of 2024.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3447,
+      "body_end": 4240,
+      "source_links": [
+        "https://abve.org.br/abve-comemora-aprovacao-um-grande-passo-para-a-eletromobilidade-no-brasil/",
+        "https://motor1.uol.com.br/news/707988/gwm-adia-inicio-producao-2semestre/",
+        "https://www.reuters.com/business/autos-transportation/brazil-imports-chinese-electric-vehicles-surge-ahead-new-tariff-2024-04-05/#:~:text=Importation%20of%20100%25%20electric%20vehicles,reach%2035%25%20in%20July%202026",
+        "https://www.reuters.com/business/autos-transportation/brazil-imports-chinese-electric-vehicles-surge-ahead-new-tariff-2024-04-05/#:~:text=Importation%20of%20100%25%20electric%20vehicles,reach%2035%25%20in%20July%202026."
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00010",
+      "text": "The lithium paradox",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 4242,
+      "body_end": 4261,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00011",
+      "text": "Another factor that makes Brazil attractive as a hub for EV carmakers is the country's vast lithium reserves, as lithium is used to make batteries for electric vehicles. The Jequitinhonha Valley, which sprawls across a dozen of municipalities in the Brazilian state of Minas Gerais, hosts the country's largest lithium reserves, consisting of 45 deposits. That same region is home to dozens of traditional Brazilian groups, like quilombolas (quilombos are communities of people who descend from former enslaved persons who fled to find freedom) and Indigenous communities.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4263,
+      "body_end": 4835,
+      "source_links": [
+        "https://jornal.usp.br/radio-usp/brasil-possui-grande-potencial-na-extracao-de-litio-mas-precisa-aprimorar-a-logistica/#:~:text=aprimorar%20a%20infraestrutura-,Brasil%20possui%20grande%20potencial%20na%20extra%C3%A7%C3%A3o%20de,mas%20precisa%20aprimorar%20a%20infraestrutura&text=Min%C3%A9rio%20indispens%C3%A1vel%20%C3%A0s%20baterias%20recarreg%C3%A1veis,chamado%20de%20%E2%80%9Couro%20branco%E2%80%9D.",
+        "https://pt.wikipedia.org/wiki/Vale_do_Jequitinhonha",
+        "https://www.iepha.mg.gov.br/index.php/noticias-menu/606-voce-conhece-a-rota-dos-quilombos-no-vale-do-jequitinhonha"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00012",
+      "text": "Brazil, which in 2015 had practically no lithium production, accounted for two percent of the world market in 2023, according to a report by the CEBC. That same year, Brazil exported its first batch of lithium mined in that region to China, but Chinese companies like BYD have shown interest in having a bigger say over the material. In January, Reuters reported BYD was in talks with Sigma Lithium, the current operator in Minas Gerais, over a possible supply agreement, joint venture, or acquisition. Although lithium is a key component in the transition to electric vehicles, its extraction has a high environmental and ecological cost, impacting landscapes, wildlife and people located near the reserves.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4837,
+      "body_end": 5545,
+      "source_links": [
+        "https://www.cebc.org.br/2023/08/29/numero-de-projetos-chineses-no-brasil-bateu-recorde-em-2022/",
+        "https://www.nytimes.com/2021/05/06/business/lithium-mining-race.html",
+        "https://www.reuters.com/business/autos-transportation/chinas-byd-talks-with-brazils-sigma-lithium-supply-deal-ft-2024-01-14/",
+        "https://www.wired.com/story/lithium-batteries-environment-impact/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00013",
+      "text": "The environmental impact of lithium mining is obvious and far-reaching. For example, massive quantities of fresh water, classified as a precious resource in those mining areas, have been diverted for lithium mining operations.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5547,
+      "body_end": 5773,
+      "source_links": [
+        "https://www.mining-technology.com/analyst-comment/lithium-mining-negative-environmental-impact/?cf-view"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00014",
+      "text": "The demand for lithium in electric vehicles manufacturer is much higher than that in electronics assembly lines or cell phones, reaching an average of 50 kilos (110 lbs) in cars and 200 kilos (441 lbs) in buses. It can be estimated that the global demand for lithium will grow in the coming years and could reach 1.8 million tons in 2030, six times more than recorded in 2020, according to the CEBC report.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5775,
+      "body_end": 6181,
+      "source_links": [
+        "https://www.cebc.org.br/2023/08/29/numero-de-projetos-chineses-no-brasil-bateu-recorde-em-2022/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00015",
+      "text": "Even as the industry looks promising, EV carmakers have two important hurdles to overcome in Brazil: High prices in comparison to combustion vehicles and a lack of a solid infrastructure for charging stations in a country with massive continental proportions. Around 57 percent of Brazilians consulted in a survey run by EY, an international accounting company, in late 2023 said they intend to purchase an EV, pointing to high fuel prices as the main motivator. The same survey revealed that around 30 percent of respondents are hesitating to purchase EVs at this time due to inadequate charging infrastructure",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6183,
+      "body_end": 6794,
+      "source_links": [
+        "https://www.ey.com/pt_br/agencia-ey/noticias/combustivel-caro-motivo-para-consumidor-optar-carro-eletrico"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00016",
+      "text": "In 2019, there were only 220 charging stations in Brazil, according to the Third Annual Directory for Electric Mobility. The next few years saw a huge increase and, as of December 2023, there were 3,800 stations operating in Brazil. By 2025, the National Platform on Electric Mobility (PNME) estimates there will be 10,000 stations in operation. The companies themselves are having to go the extra mile to build up infrastructure. In February, BYD announced it was joining forces with Raízen, a sugar and ethanol firm controlled by Shell and Cosan, to create a network of 600 charging stations across eight Brazilian cities, as reported by Reuters.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6796,
+      "body_end": 7444,
+      "source_links": [
+        "https://pnme.org.br/wp-content/uploads/2023/12/3o-Anuario-Brasileiro-de-Mobilidade-Eletrica.pdf",
+        "https://www.reuters.com/business/autos-transportation/raizen-chinas-byd-build-ev-charging-station-network-brazil-2024-02-02/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00017",
+      "text": "Another important factor in the discussion is who are the Brazilians who will be able to take part in the EV transition?",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 7446,
+      "body_end": 7566,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816062-b00018",
+      "text": "Research by the PNME shows that EV purchases are still very concentrated in the Southeast of Brazil, which accounted for half of all the EV sales in 2023. The North region, in comparison, represents a little under three percent of sales. Data suggests that the states purchasing more EVs are the richest ones, which underscores the need for national policies that ensure equal access to such equipment. With EVs having a production cost between 10 percent to 30 percent higher than combustion-based vehicles, they may end up being accessible only to upper Brazilian socioeconomic classes.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 7568,
+      "body_end": 8156,
+      "source_links": [
+        "https://pnme.org.br"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "225ec9d9507d06e0f1e6be1d912764f27a8aea1a5e361781837667927f801424",
+  "word_count": 1289,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 8156,
+  "retrieved_at": "2026-11-16T22:43:37.734587+00:00",
+  "raw_html_sha256": "fdf94cb133333f10b3abc5553fd0db218fc18b76b425aacc31baf3e6de5777e7",
+  "resolved_source_url": "https://globalvoices.org/2024/07/12/as-evs-gain-momentum-in-brazil-chinas-influence-shines-through/",
+  "canonical_url": "https://globalvoices.org/2024/07/12/as-evs-gain-momentum-in-brazil-chinas-influence-shines-through/",
+  "source_bytes": 201217,
+  "authors": [
+    {
+      "name": "Laís Martins",
+      "url": "https://globalvoices.org/author/laismartins/"
+    },
+    {
+      "name": "Luo Jieqi",
+      "url": "https://globalvoices.org/author/luojieqi/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 816062,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "fdf94cb133333f10b3abc5553fd0db218fc18b76b425aacc31baf3e6de5777e7",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-271393aabae4d6db7240",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-07",
+    "eligible_month_documents": 72,
+    "selected_month_documents": 60,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Laís Martins; Luo Jieqi",
+  "body_start": 487,
+  "body_end": 8643,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "4b35b447fa2acd690a061f7cde8384ab68f7ae87f90a7b39dd679ca662431a8e",
+  "text_path": "articles/gv-816062.txt",
+  "metadata_path": "metadata/gv-816062.json",
+  "attribution": "This story by Laís Martins; Luo Jieqi originally appeared on Global Voices. https://globalvoices.org/2024/07/12/as-evs-gain-momentum-in-brazil-chinas-influence-shines-through/",
+  "content_sha256": "09ceb85a94402514e96b5ebce2fb4d9a26be44cd30d0d11ba78aa99079d73621",
+  "source_sha256": "fdf94cb133333f10b3abc5553fd0db218fc18b76b425aacc31baf3e6de5777e7",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,391 @@
+{
+  "schema_version": "3.0",
+  "benchmark_kind": "real_complete_document_contextual_analysis",
+  "generated_at": "2026-11-17T02:23:07.655471+00:00",
+  "collection": {
+    "collection": "news-sample",
+    "documents": 20,
+    "sampled_documents": true,
+    "passage_sampling": false,
+    "selection_policy": "Deterministic equal-position source strata; complete articles.",
+    "manifest_sha256": "9b6c408b5c8c52e8a435fcd231810bb8f24dc2f9dfe72c10377822cbdab7c6be",
+    "collection_sha256": "62623ca483c536184bf06c5a5bd32868f0c6e80a1be4fec5efc02ccb1a573c42",
+    "publisher": "Global Voices",
+    "frame_start": "2020-01-01",
+    "frame_end": "2025-12-31",
+    "selection_notice": "No keyword, predicted issue, or expected label influences selection. This is one publisher's selected news corpus, not a representative sample of all media."
+  },
+  "run_id": "42a6e0514ef94f959e2dc3b28023ab89",
+  "project_id": "1907d8c11f94413cbd94c79eef805a72",
+  "status": "running",
+  "config": {
+    "provider": "ollama",
+    "model": "qwen3.5:4b",
+    "lens_ids": [
+      "discourse",
+      "ihra",
+      "jda",
+      "nexus",
+      "anti-muslim-hostility",
+      "anti-muslim-racism"
+    ],
+    "question": "Apply the selected criteria in context, distinguishing attribution, counter-speech, uncertainty and competing frameworks.",
+    "persona": "research",
+    "budget_usd": 0.0,
+    "document_ids": [
+      "6e2368e767869a92588d69b6bdd2523a",
+      "bdb67774e24e95b744f4b12fd07ec283",
+      "78e85fb86213555c5d40c87a17f0b34b",
+      "70770293069c9f356674837cf7afb0fb",
+      "454e9bab17903a4919efebcb86e18dc1",
+      "c2c4215c4e3ca50a2fe713305c28f385",
+      "a98cc311efc4b652803ab71f031421d7",
+      "ed1181f5176e204bcaa8613fffe45fd9",
+      "513765f7f015503f48740188b8361af6",
+      "2fb2efbffa563e44f5c322a28d1e56c4",
+      "398d6b89beec930eb82fb86658394a70",
+      "d0ae6fd384e729312ebc6a5e5fa1df3f",
+      "ef6b315e7613412884fb1a60fd297ea8",
+      "206656ebd433044ed36676ec94266518",
+      "ca8987409abbf8eead60cae2f0653ae9",
+      "94ea445fc836a8c5e6ed53487897099a",
+      "f8f0c3f7bdbe0ae28f668e2859411b94",
+      "40d249086a89c06e41c5798374bf24ed",
+      "fd96f414c171f285ee7a272c01f51f29",
+      "72bf992df56e9cf2cb59452641433e93"
+    ],
+    "methodology_version": "3.0",
+    "allow_remote_text": false,
+    "unit_max_chars": 1200,
+    "task_index_basis": "source_units_v3",
+    "context_sentences": 2,
+    "pipeline_version": "contextual-decisions-3.2.1",
+    "unit_builder_version": "source-units-3.1",
+    "model_revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "quantization": "Q4_K_M",
+    "provider_preflight": {
+      "ok": true,
+      "provider": "ollama",
+      "model": "qwen3.5:4b",
+      "mode": "local",
+      "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "quantization": "Q4_K_M",
+      "context_limit": 8192,
+      "temperature": 0,
+      "structured_output": true,
+      "source_pack_bytes": 3600,
+      "source_pack_windows": 20,
+      "lens_batch_size": 2,
+      "batching_version": "local-bounded-2",
+      "citation_offset_unit": "unicode_code_points",
+      "prompt_version": "doxa-evidence-1.2",
+      "response_schema_version": "evidence-enums-1",
+      "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."
+    },
+    "schema_version": "3.0",
+    "source_manifest_key": "runs/42a6e0514ef94f959e2dc3b28023ab89/source-manifest.json",
+    "source_snapshot": [
+      {
+        "id": "6e2368e767869a92588d69b6bdd2523a",
+        "sha256": "8ed1563f47cd56d5943ffa9edc0bfcde77890b8386c5b0e2352ac566ee661619"
+      },
+      {
+        "id": "bdb67774e24e95b744f4b12fd07ec283",
+        "sha256": "e854f4c765dea7fa8c2090ff3cdf2661358ead5c070eebd6a17be22c43ffe44d"
+      },
+      {
+        "id": "78e85fb86213555c5d40c87a17f0b34b",
+        "sha256": "6de6699c68a9d52b293edc04caebafc5c94e6df5f10188f524ea0f5be517a506"
+      },
+      {
+        "id": "70770293069c9f356674837cf7afb0fb",
+        "sha256": "8487ae9cf1abcf61bcf4b1c1fdfdaefc83adf226809e006176c87b81ebc0734d"
+      },
+      {
+        "id": "454e9bab17903a4919efebcb86e18dc1",
+        "sha256": "1734780df0753bc4f7bd6c68194fd3b9859de07a567a5b31aadaeadd9060316d"
+      },
+      {
+        "id": "c2c4215c4e3ca50a2fe713305c28f385",
+        "sha256": "0199acc62f1a04ebddf40d33d1e191d5f440a928f4bad293a8910082cf7af068"
+      },
+      {
+        "id": "a98cc311efc4b652803ab71f031421d7",
+        "sha256": "7aab7aeb6b2fe44fcbb0273345d3e4e6478fcb373f83d8b75884f086f8c772d5"
+      },
+      {
+        "id": "ed1181f5176e204bcaa8613fffe45fd9",
+        "sha256": "ad920e7e0a95d485a4e3f2fa421731f674ccb8fb6ea96313bc47052c2d3c97c5"
+      },
+      {
+        "id": "513765f7f015503f48740188b8361af6",
+        "sha256": "56319ef5e1b75c7b9e37ae38faaec4e5fcb9a4c678a22216a7a2b70c82aac1d2"
+      },
+      {
+        "id": "2fb2efbffa563e44f5c322a28d1e56c4",
+        "sha256": "144735d8dd1abba6e416cf1b362f271e9ee8bb3bf6f43ac04cded203cef7ec61"
+      },
+      {
+        "id": "398d6b89beec930eb82fb86658394a70",
+        "sha256": "ea3607569d371eed2e3d9eb0d03f3208ff63dda6ff6deb408032617d8dba0b2a"
+      },
+      {
+        "id": "d0ae6fd384e729312ebc6a5e5fa1df3f",
+        "sha256": "e14bcec2ed2f719380720314484ac95f23bfb2566773ee8f8edf50444c7234b0"
+      },
+      {
+        "id": "ef6b315e7613412884fb1a60fd297ea8",
+        "sha256": "c3dbe3d2a5a88bff6abaab5f996bcefed2c37ab9fe334f8e69dbc936d64473d6"
+      },
+      {
+        "id": "206656ebd433044ed36676ec94266518",
+        "sha256": "9e057242e9e54cda41a34fca4dab8f6fb25bcccdaa40b0d8aa3c9e395928fac0"
+      },
+      {
+        "id": "ca8987409abbf8eead60cae2f0653ae9",
+        "sha256": "c7237c6cb9fec0f79086f78b9d90ca17f6442391b2835df45bc8e59bf74407c3"
+      },
+      {
+        "id": "94ea445fc836a8c5e6ed53487897099a",
+        "sha256": "11d266b1cbacd5ff1ae5e98fdf0f5576336f1440b33cebbf94153f61a6c74e39"
+      },
+      {
+        "id": "f8f0c3f7bdbe0ae28f668e2859411b94",
+        "sha256": "15573954b2863d788184424d94f5a7b3c1b154de0d961a62671654b493ae6269"
+      },
+      {
+        "id": "40d249086a89c06e41c5798374bf24ed",
+        "sha256": "19b994129996554fe003e1a80c1b3eb26229f8cc0b67db928d3d11479c2cdda6"
+      },
+      {
+        "id": "fd96f414c171f285ee7a272c01f51f29",
+        "sha256": "3fcc118b00c149bdf522e5bae90bef038766f75b42eaa0f521de9bfe5ed801e6"
+      },
+      {
+        "id": "72bf992df56e9cf2cb59452641433e93",
+        "sha256": "8119a61018898a66e321fef0c3d36db0b742433b22471b3ae3117e17cf653e98"
+      }
+    ],
+    "operational_repartitions": [
+      {
+        "version": "local-one-unit-tasks-1",
+        "archive_key": "runs/42a6e0514ef94f959e2dc3b28023ab89/task-repartition-74d29749e17f24998840feac101f8543.json",
+        "old_tasks": 20,
+        "new_tasks": 115,
+        "at": "2026-11-17T02:11:32.646055+00:00"
+      }
+    ]
+  },
+  "model_profile": {
+    "provider": "ollama",
+    "model": "qwen3.5:4b",
+    "mode": "local",
+    "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "quantization": "Q4_K_M",
+    "context_limit": 8192,
+    "temperature": 0,
+    "structured_output": true,
+    "source_pack_bytes": 3600,
+    "source_pack_windows": 20,
+    "lens_batch_size": 2,
+    "batching_version": "local-bounded-2",
+    "citation_offset_unit": "unicode_code_points",
+    "prompt_version": "contextual-decisions-3.2.1",
+    "response_schema_version": "source-vectors-3.2",
+    "methodology_version": "3.0",
+    "unit_builder_version": "source-units-3.1",
+    "unit_builder_config": {
+      "max_unit_chars": 1200,
+      "context_sentences": 2
+    },
+    "result_codes": {
+      "0": "does_not_meet",
+      "1": "meets_criterion",
+      "2": "uncertain",
+      "3": "not_applicable"
+    },
+    "wire_budget_version": "3.2.2",
+    "criterion_registry_version": "3.0.0",
+    "rubric_versions": {
+      "discourse": "1.0.0",
+      "ihra": "2026-11-operational-1",
+      "jda": "2021-operational-1",
+      "nexus": "2024-06-operational-1",
+      "anti-muslim-hostility": "2026-03-operational-1",
+      "anti-muslim-racism": "2025-operational-1"
+    },
+    "learning_snapshot_id": null,
+    "approved_example_ids": [],
+    "analysis_config_hash": "9302daf7f72f92d11075b01b",
+    "cache_hit_decisions": 19
+  },
+  "progress": {
+    "documents_total": 20,
+    "documents_done": 0,
+    "blocks_total": 115,
+    "blocks_done": 2,
+    "tasks_total": 115,
+    "tasks_done": 2,
+    "tasks_failed": 1,
+    "current_document": "Groundbreaking film on Russia's HIV epidemic goes viral",
+    "complete": false,
+    "analysis_kind": "model_analysis",
+    "semantic_analysis_performed": true,
+    "semantic_blocks_done": 2,
+    "lexical_blocks_done": 0
+  },
+  "usage": {
+    "input_tokens": 24030,
+    "output_tokens": 517,
+    "cost_usd": null,
+    "requests": 10,
+    "estimated": true
+  },
+  "budget_accounted_usd": 0.0,
+  "unit_states": [
+    {
+      "status": "accepted",
+      "count": 2
+    },
+    {
+      "status": "pending",
+      "count": 113
+    }
+  ],
+  "decision_counts": [
+    {
+      "result": "does_not_meet",
+      "criterion_kind": "boundary",
+      "count": 2
+    },
+    {
+      "result": "does_not_meet",
+      "criterion_kind": "descriptive",
+      "count": 8
+    },
+    {
+      "result": "does_not_meet",
+      "criterion_kind": "indicator",
+      "count": 13
+    },
+    {
+      "result": "not_applicable",
+      "criterion_kind": "boundary",
+      "count": 6
+    },
+    {
+      "result": "not_applicable",
+      "criterion_kind": "indicator",
+      "count": 39
+    }
+  ],
+  "elapsed_seconds": 1270.5002426520005,
+  "sessions": [
+    {
+      "started_at": "2026-11-16T23:01:49.066752+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "ollama",
+        "model": "qwen3.5:4b",
+        "mode": "local",
+        "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "quantization": "Q4_K_M",
+        "context_limit": 8192,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 3600,
+        "source_pack_windows": 20,
+        "lens_batch_size": 2,
+        "batching_version": "local-bounded-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."
+      },
+      "concurrency": 1,
+      "requested_budget_usd": 0.0
+    },
+    {
+      "started_at": "2026-11-17T01:56:43.827966+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "ollama",
+        "model": "qwen3.5:4b",
+        "mode": "local",
+        "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "quantization": "Q4_K_M",
+        "context_limit": 8192,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 3600,
+        "source_pack_windows": 20,
+        "lens_batch_size": 2,
+        "batching_version": "local-bounded-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."
+      },
+      "concurrency": 1,
+      "requested_budget_usd": 0.0
+    },
+    {
+      "started_at": "2026-11-17T02:11:37.648775+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "ollama",
+        "model": "qwen3.5:4b",
+        "mode": "local",
+        "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "quantization": "Q4_K_M",
+        "context_limit": 8192,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 3600,
+        "source_pack_windows": 20,
+        "lens_batch_size": 2,
+        "batching_version": "local-bounded-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."
+      },
+      "concurrency": 1,
+      "requested_budget_usd": 0.0
+    }
+  ],
+  "error_tasks": 1,
+  "interpretation_accuracy": null,
+  "independent_human_labels": false,
+  "notice": "All text blocks of each selected article/document are selected. Coverage and failures remain explicit. Exact anchors do not establish interpretation accuracy."
+}

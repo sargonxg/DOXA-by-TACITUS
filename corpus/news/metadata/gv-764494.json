@@ -1,0 +1,362 @@
+{
+  "id": "gv-764494",
+  "publisher_id": 764494,
+  "source_id": "globalvoices:764494",
+  "source_url": "https://globalvoices.org/2022/06/03/trace-turkeys-path-to-normalizing-the-practice-of-blocking-news-websites/",
+  "title": "Trace Turkey's path to normalizing the practice of blocking news websites",
+  "published_at": "2022-06-03T08:27:40Z",
+  "modified_at": "2022-06-03T10:33:18Z",
+  "api_author_id": 799,
+  "api_content_sha256": "e46423907ae575668bd4ae7601a84cc6876bb48378adac0f40ec7a8580f92d73",
+  "api_response_sha256": "04fa5fff7ce30b84d0244dca8bac59e4cb3d3777e65a4fe265a98c15e459d40c",
+  "api_retrieved_at": "2026-11-16T22:20:44.749286+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-764494-b00001",
+      "text": "In Turkey blocking news websites fully or partially is a common practice. Some of these websites face blocking consistently, like the online newspaper Özgür Gelecek (Free Future). On March 21, Özgür Gelecek was blocked, for the 33rd time. Diyarbakir’s 4th Criminal Judgeship of Peace blocked the whole website after finding the website content “objectionable.” On March 24, Turkey’s daily newspaper Cumhuriyet received a court order blocking access to the newspaper’s story about the corruption of local government officials. Also in March, at least three Turkish news agency Twitter accounts were temporarily suspended after running a story about violence at a dormitory operated by a religious sect. These are not isolated or unique cases of content removal or blocked access.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 778,
+      "source_links": [
+        "https://gazetepatika18.com/ozgur-gelecek-gazetesinin-internet-sitesine-erisim-engeli-110315.html",
+        "https://twitter.com/obefintlig/status/1507637936820527104",
+        "https://www.cumhuriyet.com.tr/turkiye/bir-haberimize-daha-erisim-yasagi-getirildi-1919064"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00002",
+      "text": "According to a Media Research Association (MEDAR) report released last year, at least three news items are removed on a daily basis in Turkey. In most cases, the articles focus on corruption or irregularities in due process. The requests to block or remove content originate from businessmen and government officials claiming violation of their personal rights, conclude authors of the MEDAR report.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 780,
+      "body_end": 1179,
+      "source_links": [
+        "https://medarder.org/wp-content/uploads/2021/09/Impact-of-Social-MediaLaw-on-Media-Freedom-in-Turkey-Monitoring-Report.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00003",
+      "text": "Another report, published last year by the FreeWeb Turkey platform concluded that “42% of the blocked news between November 2019 and October 2020 were directly related to the Turkish President and Justice and Development Party (AKP) leader Recep Tayyip Erdoğan, his family or the mayors and officials of the AKP.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1181,
+      "body_end": 1494,
+      "source_links": [
+        "https://www.freewebturkey.com/free-web-turkey-report-42-of-blocked-news-are-related-to-government-and-its-close-circles/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00004",
+      "text": "But it was not always like this. The sweeping legislative amendments to national laws as well as exhaustive institutional oversight by government institutions such as the Radio and Television Supreme Council (RTUK) — Turkey’s main media watchdog — have created an environment of unlimited digital censorship in a country, described by the Committee to Protect Journalists (CPJ), as the sixth-worst jailer of journalists according to the organization’s annual report from last year.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1496,
+      "body_end": 1977,
+      "source_links": [
+        "https://cpj.org/reports/2021/12/number-of-journalists-behind-bars-reaches-global-high/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00005",
+      "text": "From YouTube to websites: how blocking specific URLs became the norm",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1979,
+      "body_end": 2047,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00006",
+      "text": "In March 2007, Turks were blocked from accessing the popular video-sharing website YouTube. The platform was blocked by a court order over a video of Mustafa Kemal Ataturk, the founder of the Turkish Republic. Two articles in the Turkish penal code deem it a criminal offense to insult the president (Article 299) and Turkishness (Article 301.) The block was implemented by TurkTelekom, a formerly state-owned telecom company that was later privatized.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2049,
+      "body_end": 2501,
+      "source_links": [
+        "https://www.dw.com/en/turkey-blocks-access-to-youtube-due-to-offending-video/a-2377770"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00007",
+      "text": "YouTube remained officially blocked (albeit accessible via proxy servers) for the next two and a half years. Shortly after the ban was lifted in October 2010, YouTube was blocked once again the following month, this time following an official complaint launched by an opposition party leader whose intimate video was leaked on the platform. The platform was unblocked and blocked several more times in the coming years.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2503,
+      "body_end": 2922,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Censorship_of_YouTube#Turkey",
+        "https://rsf.org/en/news/youtube-bows-pressure-turkish-authorities"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00008",
+      "text": "In 2008, when YouTube was blocked for access for the first time, more than one thousand websites were already getting blocked in Turkey “for criticizing Atatürk or the army, for perceived attacks on the nation’s ‘dignity’ or for referring to Turkey’s Kurdish and Armenian minorities, taboo subjects in Turkey,” reported Reporters Without Borders at the time. This was possible due to the infamous Law no. 5651 (on Regulation of Publications on the Internet and Suppression of Crimes Committed by means of Such Publications) adopted in May 2007. Described as the country’s first internet-specific bill it was designed to protect users from illegal and harmful content online. At the time, the law enabled public prosecutors to impose a ban on any website within 24 hours by court order or administrative order issued by the Presidency of Telecommunication and Communication (TİB) — Turkey’s leading internet censor until it was dissolved in 2016 — in cases, these websites violated “seven categorical crimes (incitement to suicide, facilitation of the use of narcotics, child pornography, obscenity, prostitution, facilitation of gambling, and slandering of the legacy of Ataturk — the founder of modern Turkey).”",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2924,
+      "body_end": 4136,
+      "source_links": [
+        "https://repository.upenn.edu/cgi/viewcontent.cgi?article=1021&context=internetpolicyobservatory",
+        "https://rsf.org/en/news/youtube-bows-pressure-turkish-authorities",
+        "https://www.osce.org/files/f/documents/a/d/41091.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00009",
+      "text": "TİB was set up in 2005 with the main purpose of centralizing, “from a single unit, the surveillance of communications and execution of interception of communications warrants subject to laws No. 2559 (Law on the Duties and Powers of Police), No. 2803 (Law on the Organisation, Duties, and Powers of Gendarmerie), No. 2937 (Law on State Intelligence Services and National Intelligence Organisation), and No. 5271 (Criminal Procedural Act).”",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 4138,
+      "body_end": 4577,
+      "source_links": [
+        "https://www.osce.org/files/f/documents/a/d/41091.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00010",
+      "text": "TİB stopped publishing transparency reports on the number of blocked websites by May 2009 without any further explanations. This prompted a group of legal and internet activists to start documenting the number of blocked websites in Turkey independently via EngelliWeb (Disabled Web). At the time of writing this story, the most recent data collected by EngelliWeb for 2020 documents more than 460,000 blocked domains, 150,000 URLs, and 50,000 tweets. To this day, not one official government institution, including TİB’s successor the Information Technologies and Communication Board (BTK) has published any statistical data on the number of blocked websites in Turkey.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 4579,
+      "body_end": 5249,
+      "source_links": [
+        "https://ifade.org.tr/en/publications/reports-books/",
+        "https://www.osce.org/files/f/documents/a/d/41091.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00011",
+      "text": "Law no. 5651 was amended several more times, with each amendment introducing further restrictions. In 2014, TİB was authorized “to issue a blocking order based on a complaint filed for breach of an individual’s right to privacy and to do so without obtaining a court order.” Removal of “offensive” content within four hours, enabling URL-based blocking, and blocking of “individual posts or all posts from a specific social media user,” were among some of the new, critical provisions added to the law.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 5251,
+      "body_end": 5753,
+      "source_links": [
+        "https://medarder.org/wp-content/uploads/2021/09/Impact-of-Social-MediaLaw-on-Media-Freedom-in-Turkey-Monitoring-Report.pdf",
+        "https://repository.upenn.edu/cgi/viewcontent.cgi?article=1021&context=internetpolicyobservatory"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00012",
+      "text": "As such, Turkey was no longer just blocking content it deemed offensive to its national unity, family, and moral values, but also content that exposed corruption or other unlawful actions perpetrated by government officials. In 2014, after audio recordings appeared to reveal corruption within the inner circle of the leader of the ruling Justice and Development Party Recep Tayyip Erdoğan, who was the prime minister at the time, were leaked online, YouTube, Twitter, and Facebook were all blocked across the country. The following year, access to all three platforms as well as 166 other websites was blocked when an image of a Turkish prosecutor held at gunpoint after being taken hostage circulated online.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 5755,
+      "body_end": 6465,
+      "source_links": [
+        "https://www.bbc.com/news/world-europe-32204177",
+        "https://www.hrw.org/news/2014/03/27/turkey-youtube-block-violates-free-expression"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00013",
+      "text": "In 2016, in the aftermath of the failed coup, the speed of blocking websites reached an unprecedented level. Although the state shut down the TİB the same year, it was merely replaced by the Information and Communication Technology Authority (BTK) — an equally aggressive government institution. In addition, the same year, the state approved an amendment to the Authorization Regulation in the Digital Communications Sector as per the announcement in the Official Gazette. According to Article 10 of the amendment “In cases of war, general mobilization and similar situations, if deemed necessary for public security and national defense, [BTK] may suspend all or a part of the operator's operating activities for a limited or unlimited period and directly operate the network. In this case, the elapsed time is added to the end of the authorization period.” President Erdoğan announced a State of Emergency on July 21, 2016. In the immediate aftermath, at least 100 websites were blocked for access, among which was Wikipedia.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 6467,
+      "body_end": 7495,
+      "source_links": [
+        "https://repository.upenn.edu/cgi/viewcontent.cgi?article=1021&context=internetpolicyobservatory",
+        "https://www.aljazeera.com/news/2016/7/21/turkey-declares-state-of-emergency-after-failed-coup",
+        "https://www.resmigazete.gov.tr/eskiler/2016/06/20160611-1.htm",
+        "https://www.theatlantic.com/international/archive/2018/08/destroying-free-press-erdogan-turkey/568402/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00014",
+      "text": "In 2019 the state granted Turkey’s Radio and Television High Council (RTÜK) powers to monitor online broadcasting (ranging from on-demand platforms such as Netflix, to regular and/or scheduled online broadcasts to amateur home video makers), compelling online broadcasters to obtain a license from RTUK.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 7497,
+      "body_end": 7800,
+      "source_links": [
+        "https://freeturkeyjournalists.ipi.media/new-powers-of-turkeys-media-watchdog-threaten-last-bastion-of-free-press-the-internet/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00015",
+      "text": "In July 2020 the scope of Law no.5651 was expanded granting the state the power to remove content. According to the MEDAR report, “since its full enforcement on October 1, 2020, [the amendments] have had a major impact on the sustainability of digital content, particularly on news outlets with a total of 658 removal orders” between October 2020 and May 2021.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 7802,
+      "body_end": 8162,
+      "source_links": [
+        "https://advox.globalvoices.org/2021/02/11/turkey-reins-in-social-media-one-platform-at-a-time/",
+        "https://medarder.org/wp-content/uploads/2021/09/Impact-of-Social-MediaLaw-on-Media-Freedom-in-Turkey-Monitoring-Report.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00016",
+      "text": "And there is more. In July of 2021, the state announced plans to introduce further measures such as serious criminal sanctions, for disseminating false news through traditional and social media in a move that independent experts see as a last-ditch attempt to kill independent media outlets completely. While these measures are yet to be adopted, this brief overview does not leave any room for hope for internet freedoms to be loosened anytime soon. Almost a year later, the ruling AKP, together with the Nationalist Movement (MH) Party submitted the draft bill on disinformation to the parliament on May 26, 2022. In response, seven international and local media freedom and journalism organizations, issued a statement on May 27 saying the new draft bill, if approved, “will boost systematic censorship and self-censorship in Turkey instead of fighting disinformation.”",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 8164,
+      "body_end": 9036,
+      "source_links": [
+        "https://advox.globalvoices.org/2021/07/26/government-announces-new-media-regulations-that-could-further-constrain-freedom-of-expression-in-turkey/",
+        "https://freeturkeyjournalists.ipi.media/turkey-leading-local-journalism-organizations-call-for-withdrawal-of-disinformation-law/",
+        "https://globalvoices.org/2022/06/02/journalists-in-turkey-could-face-three-years-in-prison-for-disseminating-false-information-online/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-764494-b00017",
+      "text": "Please visit the project page for more pieces from the Unfreedom Monitor.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 9038,
+      "body_end": 9111,
+      "source_links": [
+        "https://advox.globalvoices.org/special/unfreedom-monitor/"
+      ],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "5a775dec9e6750d9e1dd209ceec478c20a89440e6b76a9e64ff265cc1207c1a5",
+  "word_count": 1419,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 9111,
+  "retrieved_at": "2026-11-16T22:35:02.321559+00:00",
+  "raw_html_sha256": "5ffe59432737721bab7a8bb545934da8b59dc8a1f8ed66ab9a1ca1e44585860c",
+  "resolved_source_url": "https://globalvoices.org/2022/06/03/trace-turkeys-path-to-normalizing-the-practice-of-blocking-news-websites/",
+  "canonical_url": "https://globalvoices.org/2022/06/03/trace-turkeys-path-to-normalizing-the-practice-of-blocking-news-websites/",
+  "source_bytes": 192347,
+  "authors": [
+    {
+      "name": "Arzu Geybullayeva",
+      "url": "https://globalvoices.org/author/arzu-geybullayeva/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 764494,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "5ffe59432737721bab7a8bb545934da8b59dc8a1f8ed66ab9a1ca1e44585860c",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-0ccbb84b57ef9766ee34",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2022-06",
+    "eligible_month_documents": 83,
+    "selected_month_documents": 69,
+    "inclusion_probability": 0.8313253012048193,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Arzu Geybullayeva",
+  "body_start": 486,
+  "body_end": 9597,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "6ae4fe866442b1cd994ea58e153eb387c685e243535f8764468ce146cef997e5",
+  "text_path": "articles/gv-764494.txt",
+  "metadata_path": "metadata/gv-764494.json",
+  "attribution": "This story by Arzu Geybullayeva originally appeared on Global Voices. https://globalvoices.org/2022/06/03/trace-turkeys-path-to-normalizing-the-practice-of-blocking-news-websites/",
+  "content_sha256": "7e13319e8de3725ddacff79fc07b363b1e825b26c89971027c6cf95892c56205",
+  "source_sha256": "5ffe59432737721bab7a8bb545934da8b59dc8a1f8ed66ab9a1ca1e44585860c",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

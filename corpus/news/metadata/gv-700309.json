@@ -1,0 +1,393 @@
+{
+  "id": "gv-700309",
+  "publisher_id": 700309,
+  "source_id": "globalvoices:700309",
+  "source_url": "https://globalvoices.org/2020/03/13/being-an-activist-is-just-a-side-effect-of-being-an-artist-an-interview-with-chinese-australian-cartoonist-badiucao/",
+  "title": "‘Being an activist is just a side-effect of being an artist': An interview with Chinese-Australian cartoonist Badiucao",
+  "published_at": "2020-03-13T18:11:09Z",
+  "modified_at": "2020-04-27T10:16:25Z",
+  "api_author_id": 1749,
+  "api_content_sha256": "a32207f8149a756fea3c704a78982b4a35c52791e0c3fcc06349aa20a94e2f89",
+  "api_response_sha256": "6400a2a69e2b1612f7bdabedd6b26a0bd74341ef3b4189d69f04207808bc2f03",
+  "api_retrieved_at": "2026-11-16T22:20:23.593459+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 239,
+      "count": 12626,
+      "name": "Arts &#038; Culture",
+      "slug": "arts-culture",
+      "parent": 238
+    },
+    {
+      "id": 214,
+      "count": 574,
+      "name": "Australia",
+      "slug": "australia",
+      "parent": 212
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 2688,
+      "count": 7070,
+      "name": "China",
+      "slug": "china",
+      "parent": 16
+    },
+    {
+      "id": 325,
+      "count": 2253,
+      "name": "Chinese",
+      "slug": "chinese",
+      "parent": 317
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 1355,
+      "count": 5871,
+      "name": "Ethnicity &amp; Race",
+      "slug": "ethnicity-race",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 49,
+      "count": 1566,
+      "name": "Hong Kong (China)",
+      "slug": "hong-kong-china",
+      "parent": 16
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-700309-b00001",
+      "text": "The Chinese-Australian artist Badiucao made world headlines in June 2019 when he revealed his long-concealed identity in a documentary called “China's artful dissident” released on the 30th anniversary of the Tiananmen Massacre.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 228,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Tiananmen_Incident"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700309-b00002",
+      "text": "Badiucao is one of the most outspoken critics of the Chinese government's restrictions on freedom of expression. The former Shanghai-based law student switched careers to become a visual artist and political cartoonist, eventually emigrating to Australia ten years ago to protect himself and his family. His work is censored in China, and increasingly so in Hong Kong and Australia.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 230,
+      "body_end": 612,
+      "source_links": [
+        "https://advox.globalvoices.org/2018/10/17/hong-kong-free-expression-week-will-feature-umbrella-movement-activists-and-political-cartoonist-badiucao/",
+        "https://globalvoices.org/2018/11/06/political-cartoonist-badiucao-abruptly-cancelled-his-hong-kong-exhibition-and-then-went-silent/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700309-b00003",
+      "text": "I interviewed Badiucao in Prague where he was visiting to take part in One World, Central Europe's largest human rights film festival, which ended up being disrupted by the Czech Republic's declaration of special measures due to COVID-19 on March 10. The interview has been edited for brevity.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 614,
+      "body_end": 907,
+      "source_links": [
+        "https://globalvoices.org/2020/03/11/czech-republic-introduces-drastic-measures-to-deter-spread-of-covid-19/",
+        "https://www.oneworld.cz/2020/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700309-b00004",
+      "text": "Filip Noubel: As a person of Chinese origin living in Australia, and openly critical of the Chinese government, you probably find yourself also subjected to anti-Chinese sentiment due to COVID-19. How do you cope with such pressure?",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 909,
+      "body_end": 1141,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700309-b00005",
+      "text": "> Badiucao (BDC) When I arrived in Australia, I thought I had the chance of not being Chinese. I wanted to get rid of that identity to be free. I actually feel very frustrated that I cannot be proud of my identity. I can see how Aboriginal artists are proud of their identity in Australia. But for me, I really had to think about my identity: would denying it help preserve myself? Is that healthy? Possible? Now I know there is nothing wrong with my culture or identity. The problem is that the Chinese government is hijacking this identity and pretending to represent Chinese culture. I need to fight to get it back; I should be the one defining and recreating it. I don't believe the Chinese government will always be in power. So we have to become immune to their propaganda, as overseas Chinese. But it has to be played out careful to avoid xenophobic, anti-Chinese mainlander sentiment, that I have experienced with some people in Hong Kong and Taiwan. It's important to have an open mind.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1143,
+      "body_end": 2138,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-700309-b00006",
+      "text": "> I worked as a school teacher in Australia and have seen how China is perceived through the lens of the Australian education system. There is no discussion about nuances about China, as institutions like the Confucius Institute dominate the narrative. A few years ago, the Revolutionary Opera the Red Detachment of Women (红色娘子军) was selected to represent Chinese culture. It is actually offensive to the victims of the Cultural Revolution, as it represents censorship [From 1966 to 1976 only eight pieces were allowed to be performed across China]. There is also little in-depth coverage of China, and cuts in funding for public media, including for programs in Chinese.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2140,
+      "body_end": 2811,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Cultural_Revolution",
+        "https://en.wikipedia.org/wiki/Red_Detachment_of_Women_(ballet)",
+        "https://en.wikipedia.org/wiki/Revolutionary_opera"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-700309-b00007",
+      "text": "FN: How do you describe yourself and the kind of art you create?",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2813,
+      "body_end": 2877,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700309-b00008",
+      "text": "> BDC: People see me as a cartoonist because that's the only part of my work people see, mostly online. I also do performances, installations, paintings, but I can't seem to get access to art galleries for shows. I initially studied cultural events managements, which was part of the Law curriculum in China, because of the issue of copyright. But art is about delivering a message. I want to extend the definition of art. I see myself as an artist; being an activist is just a side-effect of being an artist in China.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2879,
+      "body_end": 3397,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-700309-b00009",
+      "text": "FN: What motivated you to reveal your identity very publicly recently?",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3399,
+      "body_end": 3469,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700309-b00010",
+      "text": "> BDC: I revealed my identity in the documentary. When the police visited my family back in China in 2018 to harass them, they didn't make my identity public, though they could have. Initially I covered my face, knowing that if I became well-known enough as an artist, the day would come when I would get support. So from day one, this was a time race against the Chinese government. I had no illusion of being a sort of Banksy forever. But after that police visit, I realized I still had the upper hand. In order to reach the largest possible audience, I decided to reveal my identity in the documentary, as the police, happy with my show being canceled in Hong Kong, told my family “He is a good boy now”. Of course, I could have abandoned my work then, but that would have been a betrayal of my art and the things I care the most for. I did retreat from social media then, as I was preparing the documentary and decided to protect it to avoid pressure on the filmmaker and the Australian media that would show it. It was a form of self-quarantine. Since I have revealed my identity, there have been consequences: I was followed, my phone was hacked, there is a possible case of home invasion still under investigation. My film director got harrased as well. I think they are waiting for a chance to get their revenge once there is less media attention.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3471,
+      "body_end": 4826,
+      "source_links": [
+        "https://globalvoices.org/2018/11/06/political-cartoonist-badiucao-abruptly-cancelled-his-hong-kong-exhibition-and-then-went-silent/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-700309-b00011",
+      "text": "FN: What do you think of the Chinese dissident community?",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4828,
+      "body_end": 4885,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700309-b00012",
+      "text": "> BDC: Totally useless and corrupt. Some collaborate with Trump, because they say we have a common enemy. But your friends should be the people who share the same values, not your enemy's enemy. This community is aging and that's also a problem with Chinese culture, a sort of ‘Confucian tumour': you have to respect them because they have authority as they grow old. And if you criticize them, you are labeled as a pro-Beijing Chinese spy. That's a very toxic attitude towards criticism. It seems the Chinese expression 有则改之，无则加勉 : “correct mistakes if you have done any and guard yourself against them”, doesn't apply to them. That's also why young people do not join them.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4887,
+      "body_end": 5562,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-700309-b00013",
+      "text": "FN: How do you see COVID-19 influencing the political system in China?",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5564,
+      "body_end": 5634,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700309-b00014",
+      "text": "> BDC: Some people said this was perhaps China's ‘Chernobyl moment’. But this is not because this is not as harmful economically as this was the case for the Soviet Union. Xi Jinping is gambling, by saying ‘the problem is solved, go back to work’. There is a possibly of change, only if this situation of economic slowdown continues, people can bend more but will eventually break. But China is changing the narrative and the government is now depicting itself as the leader of fighting the virus. But the so-called Chinese model is just the scientific model, in a situation where the government can afford to ignore the personal lives of people. People suffered because if you quarantine, you need two things: supplies and transparency of information. But the latter one is not happening in China; they don't know what is going on, what to expect, and live in anxiety. This part is not being seen globally.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 5636,
+      "body_end": 6543,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-700309-b00015",
+      "text": "FN: What brought you to Prague this time?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6545,
+      "body_end": 6586,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700309-b00016",
+      "text": "> BDC: I came here to be part of two human rights film festivals, in Geneva and Prague. Geneva got cancelled, and the one in Prague was initially going on. This city means a lot to people in China for those who love freedom and democracy. Václav Havel is an inspiration, so I romanticized it. But I discovered he has been forgotten for a long time, this is a huge shock. But this was being naive, in fact history repeats itself when people forget. I want my art to be a form of recording against the official record of history, to avoid repeating mistakes.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 6588,
+      "body_end": 7144,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-700309-b00017",
+      "text": "During his stay in Prague, Badiucao also staged a street art project, displaying posters with his work on walls across the city, including on the famous John Lennon Wall that was referenced by Hong Kong protesters.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 7146,
+      "body_end": 7360,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Lennon_Wall",
+        "https://globalvoices.org/2019/08/06/a-hong-kong-artists-surreal-depiction-of-the-anti-extradition-protests/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-700309-b00018",
+      "text": "https://twitter.com/badiucao/status/1238361715101876224",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 7362,
+      "body_end": 7417,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "733bd6e624a74b9e31eaa4759d1a4835d1d1bbb46885583c5479f615c7318e97",
+  "word_count": 1274,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 1,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 7417,
+  "retrieved_at": "2026-11-16T22:22:37.369801+00:00",
+  "raw_html_sha256": "530cc7e8c1437d688ba9243485991850b5158108df94a96e69edfb38af4a8c69",
+  "resolved_source_url": "https://globalvoices.org/2020/03/13/being-an-activist-is-just-a-side-effect-of-being-an-artist-an-interview-with-chinese-australian-cartoonist-badiucao/",
+  "canonical_url": "https://globalvoices.org/2020/03/13/being-an-activist-is-just-a-side-effect-of-being-an-artist-an-interview-with-chinese-australian-cartoonist-badiucao/",
+  "source_bytes": 191920,
+  "authors": [
+    {
+      "name": "Filip Noubel",
+      "url": "https://globalvoices.org/author/filip-noubel/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 700309,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "530cc7e8c1437d688ba9243485991850b5158108df94a96e69edfb38af4a8c69",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-ac7cd67f8860b8085e66",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-03",
+    "eligible_month_documents": 117,
+    "selected_month_documents": 98,
+    "inclusion_probability": 0.8376068376068376,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Filip Noubel",
+  "body_start": 569,
+  "body_end": 7986,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "e3083ed835af206ff400132c89986a7960b81db53ca4258d282b3ac404d1a856",
+  "text_path": "articles/gv-700309.txt",
+  "metadata_path": "metadata/gv-700309.json",
+  "attribution": "This story by Filip Noubel originally appeared on Global Voices. https://globalvoices.org/2020/03/13/being-an-activist-is-just-a-side-effect-of-being-an-artist-an-interview-with-chinese-australian-cartoonist-badiucao/",
+  "content_sha256": "2d4f29e791234177f898737d2747e0a93764ec19dddc29729158e2f7929ef746",
+  "source_sha256": "530cc7e8c1437d688ba9243485991850b5158108df94a96e69edfb38af4a8c69",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

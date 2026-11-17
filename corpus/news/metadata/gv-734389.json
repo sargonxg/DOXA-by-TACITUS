@@ -1,0 +1,314 @@
+{
+  "id": "gv-734389",
+  "publisher_id": 734389,
+  "source_id": "globalvoices:734389",
+  "source_url": "https://globalvoices.org/2021/04/24/journalist-becomes-first-person-convicted-over-2019-mob-attack-that-injured-dozens-of-hongkongers/",
+  "title": "Journalist becomes first person convicted over 2019 mob attack that injured dozens of Hongkongers",
+  "published_at": "2021-04-24T02:24:24Z",
+  "modified_at": "2021-04-24T02:24:24Z",
+  "api_author_id": 254,
+  "api_content_sha256": "d6284ab0e58cc2861097ed579d483c86203d6866b54f3b9d04b0aece064e2fab",
+  "api_response_sha256": "506e05e61c46f4f3ce486e5d993814d3316963822f8371957c67dd69aa686ddd",
+  "api_retrieved_at": "2026-11-16T22:20:34.467848+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 16,
+      "count": 18982,
+      "name": "East Asia",
+      "slug": "east-asia",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 49,
+      "count": 1566,
+      "name": "Hong Kong (China)",
+      "slug": "hong-kong-china",
+      "parent": 16
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-734389-b00001",
+      "text": "A Hong Kong court found Bao Choy, a former producer at Hong Kong's public broadcaster Radio Television Hong Kong (RTHK), guilty of violating the city's Road and Traffic Ordinance by “making false statements” while searching public records of license plates. She was sentenced to pay a fine of HK$6,000 (around 773 USD) on April 22.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 331,
+      "source_links": [
+        "https://hongkongfp.com/2021/04/22/breaking-hong-kong-journalist-convicted-after-using-public-records-in-documentary-about-police/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00002",
+      "text": "Bao's verdict is related to her reporting on the July 2019 Yuen Long subway incident, in which a mob armed with rods and wooden sticks violently attacked subway passengers, among whom were anti-extradition protesters returning from downtown protests. The result of the reporting was an acclaimed documentary about the attack aired by RTHK.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 333,
+      "body_end": 672,
+      "source_links": [
+        "https://globalvoices.org/2019/07/22/armed-mobs-attack-anti-extradition-protesters-in-a-suburban-hong-kong-subway-station/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00003",
+      "text": "Choy was fined HK$6,000 for checking two car plates – each could have brought her up to six month imprisonment.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 674,
+      "body_end": 785,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00004",
+      "text": "Choy and her team reviewed surveillance footage from the area to track down two cars that carried the assailants to the subway station. After identifying the vehicles’ license plates, the reporters used the website of Hong Kong's transportation department to find the owners.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 787,
+      "body_end": 1062,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00005",
+      "text": "The website system requires users to state the purpose of the inquiry by selecting one of three pre-determined options: “legal matters,” “vehicle purchase” or “transport or traffic-related matters.” As the system does not offer the option “journalistic investigation,” Bao chose “transport or traffic-related matters.” Obtaining license records that way is considered a common practice among journalists in Hong Kong.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1064,
+      "body_end": 1481,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00006",
+      "text": "Disregarding the public interest of the investigation, the judge found Choy guilty of “making false statements,” highlighting the fact that she knew that the records would be used for news reporting rather than “other purposes.”",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1483,
+      "body_end": 1711,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00007",
+      "text": "The case illustrates how Hong Kong authorities is retrieving to existing laws to prosecute the press. For some journalists, the judge's interpretation of the law indicates that while car buyers, victims of car accidents, or those affected by traffic-related matters, such as road blocking, are legally allowed to access the online database, but not reporters.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1713,
+      "body_end": 2072,
+      "source_links": [
+        "https://www.thestandnews.com/politics/%E8%94%A1%E7%8E%89%E7%8E%B2%E6%A1%88-%E8%8D%92%E8%AC%AC%E4%B9%8B%E8%99%95%E5%8F%88%E4%BD%95%E6%AD%A2-%E8%BF%BD%E6%9F%A5%E7%9C%9F%E7%9B%B8%E6%9C%89%E7%BD%AA/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00008",
+      "text": "Alex Lam, a reporter with the newspaper Apple Daily, highlighted the irony that Choy was the first person convicted of a crime related to the Yuen Long incident:",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2074,
+      "body_end": 2235,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00009",
+      "text": "Bao Choy said of the verdict:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2237,
+      "body_end": 2266,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00010",
+      "text": "Hong Kong's Foreign Correspondents’ Club described the legal action as a “dangerous precedent”:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2268,
+      "body_end": 2363,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00011",
+      "text": "The latest World Press Freedom Index released by Reporters Without Borders ranked Hong Kong 80th out of the 180 countries and territories. The international press freedom watchdog said the national security law allows Beijing to intervene directly to punish what it regards as “crimes against the state,” and that is especially dangerous for journalists.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2365,
+      "body_end": 2719,
+      "source_links": [
+        "https://rsf.org/en/rsf-2021-index-censorship-and-disinformation-virus-hits-asia-pacific"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00012",
+      "text": "The Hong Kong government dismissed the criticism:",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2721,
+      "body_end": 2770,
+      "source_links": [
+        "https://news.rthk.hk/rthk/en/component/k2/1587003-20210421.htm"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-734389-b00013",
+      "text": "> We are appalled by remarks made by Reporters Without Borders that seemed to suggest that people with a particular profession should be immune to legal sanctions… Criminals who break the law must face justice. Arrest and prosecution actions were based on facts and evidence and strictly according to the laws in force, regardless of the profession or stance of the suspects.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2772,
+      "body_end": 3147,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-734389-b00014",
+      "text": "Bao Choy vowed to “not give up” her journalism career:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3149,
+      "body_end": 3203,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "67ce9357dd7dc5c7e804dc01c7d7c21eaa61d57efdba3362a493ba32b686d7f3",
+  "word_count": 500,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 4,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 3203,
+  "retrieved_at": "2026-11-16T22:30:13.871481+00:00",
+  "raw_html_sha256": "90f5508864f20fcd245d8466077ad00cab1240071cb3acb242af220dbd60d510",
+  "resolved_source_url": "https://globalvoices.org/2021/04/24/journalist-becomes-first-person-convicted-over-2019-mob-attack-that-injured-dozens-of-hongkongers/",
+  "canonical_url": "https://globalvoices.org/2021/04/24/journalist-becomes-first-person-convicted-over-2019-mob-attack-that-injured-dozens-of-hongkongers/",
+  "source_bytes": 187569,
+  "authors": [
+    {
+      "name": "Oiwan Lam",
+      "url": "https://globalvoices.org/author/oiwan/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 734389,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "90f5508864f20fcd245d8466077ad00cab1240071cb3acb242af220dbd60d510",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-3e318ecb5493339d496b",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-04",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Oiwan Lam",
+  "body_start": 527,
+  "body_end": 3730,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "d00f6bc9815dba3d627bdf93d06cd737950b55d88ebc91780c9933f9df6c1065",
+  "text_path": "articles/gv-734389.txt",
+  "metadata_path": "metadata/gv-734389.json",
+  "attribution": "This story by Oiwan Lam originally appeared on Global Voices. https://globalvoices.org/2021/04/24/journalist-becomes-first-person-convicted-over-2019-mob-attack-that-injured-dozens-of-hongkongers/",
+  "content_sha256": "5708b8abeaed558f19dd3fceb91fdafb06b4f9888512d94827a0839471784984",
+  "source_sha256": "90f5508864f20fcd245d8466077ad00cab1240071cb3acb242af220dbd60d510",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

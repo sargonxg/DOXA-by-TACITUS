@@ -1,0 +1,521 @@
+{
+  "id": "gv-721163",
+  "publisher_id": 721163,
+  "source_id": "globalvoices:721163",
+  "source_url": "https://globalvoices.org/2020/10/19/the-caribbeans-case-for-reparations-part-iii/",
+  "title": "The Caribbean's case for reparations: Part III",
+  "published_at": "2020-10-19T02:05:12Z",
+  "modified_at": "2023-12-01T02:21:07Z",
+  "api_author_id": 306,
+  "api_content_sha256": "e1d8de4a9e47a5fde38f23dcdaf2f0cadd2673d20c82579f136ab5acbba8586b",
+  "api_response_sha256": "f2645b12d5068d264a88deb6e357729134eb6ef948db13b4dec337f22f4ecbaa",
+  "api_retrieved_at": "2026-11-16T22:20:30.604199+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 159,
+      "count": 217,
+      "name": "Antigua and Barbuda",
+      "slug": "antigua-and-barbuda",
+      "parent": 1353
+    },
+    {
+      "id": 161,
+      "count": 734,
+      "name": "Bahamas",
+      "slug": "bahamas",
+      "parent": 1353
+    },
+    {
+      "id": 162,
+      "count": 1351,
+      "name": "Barbados",
+      "slug": "barbados",
+      "parent": 1353
+    },
+    {
+      "id": 163,
+      "count": 237,
+      "name": "Belize",
+      "slug": "belize",
+      "parent": 1353
+    },
+    {
+      "id": 1353,
+      "count": 10223,
+      "name": "Caribbean",
+      "slug": "caribbean",
+      "parent": 219
+    },
+    {
+      "id": 243,
+      "count": 6007,
+      "name": "Development",
+      "slug": "development",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 169,
+      "count": 359,
+      "name": "Dominica",
+      "slug": "dominica",
+      "parent": 1353
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 247,
+      "count": 4731,
+      "name": "Education",
+      "slug": "education",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 250,
+      "count": 7693,
+      "name": "Environment",
+      "slug": "environment",
+      "parent": 238
+    },
+    {
+      "id": 1355,
+      "count": 5871,
+      "name": "Ethnicity &amp; Race",
+      "slug": "ethnicity-race",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 172,
+      "count": 290,
+      "name": "Grenada",
+      "slug": "grenada",
+      "parent": 1353
+    },
+    {
+      "id": 152,
+      "count": 980,
+      "name": "Guyana",
+      "slug": "guyana",
+      "parent": 1353
+    },
+    {
+      "id": 174,
+      "count": 1102,
+      "name": "Haiti",
+      "slug": "haiti",
+      "parent": 1353
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 258,
+      "count": 8694,
+      "name": "History",
+      "slug": "history",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 176,
+      "count": 2263,
+      "name": "Jamaica",
+      "slug": "jamaica",
+      "parent": 1353
+    },
+    {
+      "id": 231,
+      "count": 93,
+      "name": "Montserrat",
+      "slug": "montserrat",
+      "parent": 1353
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 182,
+      "count": 316,
+      "name": "Saint Lucia",
+      "slug": "saint-lucia",
+      "parent": 1353
+    },
+    {
+      "id": 183,
+      "count": 431,
+      "name": "St. Vincent &amp; the Grenadines",
+      "slug": "st-vincent-the-grenadines",
+      "parent": 1353
+    },
+    {
+      "id": 181,
+      "count": 156,
+      "name": "St.Kitts &amp; Nevis",
+      "slug": "stkitts-nevis",
+      "parent": 1353
+    },
+    {
+      "id": 155,
+      "count": 172,
+      "name": "Suriname",
+      "slug": "suriname",
+      "parent": 1353
+    },
+    {
+      "id": 280,
+      "count": 5264,
+      "name": "Travel",
+      "slug": "travel",
+      "parent": 238
+    },
+    {
+      "id": 184,
+      "count": 3312,
+      "name": "Trinidad &amp; Tobago",
+      "slug": "trinidad-tobago",
+      "parent": 1353
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-721163-b00001",
+      "text": "This is the third article in a series that highlights the question of slavery reparations in the Caribbean. (The first is here; the second is here.) It is based around issues discussed in the NGC Bocas Lit Fest's live stream event, “The Case for Reparations,” which featured an in-depth conversation with Sir Hilary Beckles, chair of the CARICOM Reparations Commission.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 369,
+      "source_links": [
+        "https://caricomreparations.org/",
+        "https://globalvoices.org/2020/10/12/the-caribbeans-case-for-reparations-part-i/",
+        "https://globalvoices.org/2020/10/15/the-caribbeans-case-for-reparations-part-ii/",
+        "https://www.facebook.com/watch/live/?v=390097115493281&ref=watch_permalink"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00002",
+      "text": "Five hundred and twenty-eight years after Christopher Columbus set foot in the Americas, unleashing the frenzy of colonisation that resulted in the genocide of the region's Indigenous peoples and paved the way for the commoditisation of African lives, the NGC Bocas Lit Fest, the Caribbean's premier literary festival, live-streamed a conversation with Sir Hilary Beckles in commemoration of the International Day for Reparations.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 371,
+      "body_end": 801,
+      "source_links": [
+        "https://caricomreparations.org/october-12-international-day-for-reparations/",
+        "https://www.facebook.com/bocaslitfest/videos/390097115493281"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00003",
+      "text": "In this final instalment of the series, Global Voices considers the role that the university sector must play in the call for reparations, and examines the ways in which the region can develop more sustainable economic models.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 803,
+      "body_end": 1029,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00004",
+      "text": "White supremacy systems were ‘sustained’ by universities",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1031,
+      "body_end": 1087,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00005",
+      "text": "While the victimisation of Black lives under slavery may have started within the investor class, it was given legitimacy by respected western tertiary institutions, which were positioned “at the centre of creation of the ideology of white supremacy and how best to sustain it.”",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1089,
+      "body_end": 1366,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00006",
+      "text": "The notion, Sir Hilary says, of converting people into property, legislating that practice and showing how it functions in jurisprudence, came out of the universities, as did the idea that Black people were genetically and cognitively inferior. Organising people via hierarchies of colour was something that the anthropology departments of these schools actively promoted.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1368,
+      "body_end": 1740,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Scientific_racism",
+        "https://journals.sagepub.com/doi/full/10.1177/2378023117725611"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00007",
+      "text": "As such, the CARICOM Reparations Commission believes it is important to have a new pedagogy of inclusive economic development moving forward, that includes rejecting the notion that skin colour has anything to do with a person's cognitive abilities. In other words, the universities have a critical role to play in undoing the unjust structure they helped create, and through the work of the Commission, they are “coming on board, one by one.”",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1742,
+      "body_end": 2185,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00008",
+      "text": "The ‘Triple C’ threat",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2187,
+      "body_end": 2208,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00009",
+      "text": "Sir Hilary noted that the COVID-19 pandemic has “removed the roof of the Caribbean household” to reveal the “horrendous legacies” of poverty, domestic violence, and economic inequity. These issues, he said, require a multi-disciplinary approach.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2210,
+      "body_end": 2455,
+      "source_links": [
+        "https://globalvoices.org/-/special/covid-19/",
+        "https://globalvoices.org/2020/04/10/stay-at-home-orders-accompanied-by-rise-in-domestic-violence-in-trinidad-tobago/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00010",
+      "text": "Prior to its arrival in the Caribbean, The University of the West Indies’ established a task force comprising virologists, microbiologists and epidemiologists, whose aim was to examine the virus from a scientific point of view. Once the virus hit regional shores, however, the group had to be restructured in order to look at the pandemic within the frameworks of gender, anthropology, sociology, and political science.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2457,
+      "body_end": 2876,
+      "source_links": [
+        "https://uwi.edu/covid19/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00011",
+      "text": "The most pressing issues around COVID-19 quickly became less about science and more about injustice. In education, for instance, which was forced to go online, a significant percentage of Caribbean citizens do not have internet access and regional governments — many of them reeling economically from plummeting tourism rates — do not have the capital to narrow the gap.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2878,
+      "body_end": 3248,
+      "source_links": [
+        "https://globalvoices.org/2020/03/04/caribbean-tourism-threatened-by-the-regions-first-cases-of-covid-19/",
+        "https://globalvoices.org/2020/04/16/covid-19-exacerbates-inequalities-in-trinidad-tobagos-education-system/",
+        "https://globalvoices.org/2020/05/08/covid-19-and-trinidad-and-tobago-educations-digital-divide/",
+        "https://www.facebook.com/watch/live/?v=390097115493281&ref=watch_permalink"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00012",
+      "text": "Reparatory justice projects, however, could play an important role in dealing with challenges like these, the most urgent of which Sir Hilary has called the “Triple Cs”: chronic diseases, climate change and the region's culture of tourism, and COVID-19, all of which he categorised as “a cocktail of existential threat to these islands.” Without multilateral and international support for these challenges that have, for the most part, been “externally imposed” upon the region, he maintained, the Caribbean is not going to make it.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3250,
+      "body_end": 3782,
+      "source_links": [
+        "https://globalvoices.org/2019/10/02/the-caribbean-speaks-out-on-the-climate-crisis/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00013",
+      "text": "‘Where there's a will, there's a way’",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3784,
+      "body_end": 3821,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00014",
+      "text": "There is no doubt that the Caribbean, in actively pursuing reparations, is negotiating from a position of economic inequality. After all, much of the region's resources were extracted by its colonisers to enrich and strengthen their own societies. However, the CARICOM Reparations Commission is proceeding on the grounds of “moral equality, of rightness and of humanity,” which has levelled the playing field.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3823,
+      "body_end": 4232,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00015",
+      "text": "Furthermore, the United Nations, which the Commission has approached to oversee the process, operates on the premise that all member nations participate as equals. This does not mean that the process is going to be easy, but all gains made in the eradication of the transatlantic slave trade were hard-won.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4234,
+      "body_end": 4540,
+      "source_links": [
+        "https://www.un.org/dppa/decolonization/en/c24/about"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00016",
+      "text": "It took all of the 19th century, Sir Hilary noted, to legally eradicate chattel slavery and 60 years to complete the emancipation cycle, and all of the 20th century to fight for democracy, human and civil rights. The “reparatory justice moment” is the final phase of the journey, he believes, bringing with it closure and justice for all.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4542,
+      "body_end": 4880,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Haitian_Revolution",
+        "https://www.wilsoncenter.org/blog-post/slavery-brazil"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-721163-b00017",
+      "text": "“If it takes us all of the 21st century,” he says, “we're not going to give up.”",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4882,
+      "body_end": 4962,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "18927984f249f7c010d16a5800d4d4124391047b5a7e1ffeebb9772a07da3d89",
+  "word_count": 777,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 4962,
+  "retrieved_at": "2026-11-16T22:27:57.147313+00:00",
+  "raw_html_sha256": "ff9795b2d6ff43fa5603c8e0ffce633f9a178f3b9a18653b6bd68ea831fd1059",
+  "resolved_source_url": "https://globalvoices.org/2020/10/19/the-caribbeans-case-for-reparations-part-iii/",
+  "canonical_url": "https://globalvoices.org/2020/10/19/the-caribbeans-case-for-reparations-part-iii/",
+  "source_bytes": 190112,
+  "authors": [
+    {
+      "name": "Janine Mendes-Franco",
+      "url": "https://globalvoices.org/author/janine-mendes-franco/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 721163,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "ff9795b2d6ff43fa5603c8e0ffce633f9a178f3b9a18653b6bd68ea831fd1059",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-8a7e2318ac216d55e0f1",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-10",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Janine Mendes-Franco",
+  "body_start": 434,
+  "body_end": 5396,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "e06b853c97a4bdb6dadda94b06473b6f00bc8ce44feebe585004c9a7425578f0",
+  "text_path": "articles/gv-721163.txt",
+  "metadata_path": "metadata/gv-721163.json",
+  "attribution": "This story by Janine Mendes-Franco originally appeared on Global Voices. https://globalvoices.org/2020/10/19/the-caribbeans-case-for-reparations-part-iii/",
+  "content_sha256": "81e9de7677e3e40f8aa050e7faf8df3472e7aff826357b4e3a740eec8ee08624",
+  "source_sha256": "ff9795b2d6ff43fa5603c8e0ffce633f9a178f3b9a18653b6bd68ea831fd1059",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,46 @@
+We made the largest Mexican telecommunications operator stop blocking secure internet
+Written by: Jacobo Nájera
+Translated by: Jazz Dottin
+Originally published by Global Voices: https://globalvoices.org/2020/09/08/we-made-the-largest-mexican-telecommunications-operator-stop-blocking-secure-internet/
+Published: 2020-09-08T15:14:46Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+In Mexico, for five years, the largest telecommunications operator blocked a way to access secure internet. Few people realized that this operator, Telmex, had become a barrier against the development of alternative technologies until a group of volunteer researchers investigated. In 2020, they succeeded in making Telmex release the block.
+
+Blocking the free use of the internet does not only go against privacy laws but can also have a serious impact in a country where freedom of expression is threatened. For example, not being able to navigate secure internet is a problem for journalists and human rights defenders in Mexico who often risk their lives doing their job. According to Reporters without Borders, in 2002, Mexico was ranked 143 out of 180 countries in terms of freedom of the press.
+
+Because of this, in 2016, I became a volunteer for the “Magma Project” and the “Privacy and Anonymity Mechanisms Project” of the National Autonomous University of Mexico to help people avoid censorship and maintain their privacy while using the internet, through participating in global cooperation initiatives like the Tor network. We were guided by principles that build infrastructures promoting the exercise of human rights, like freedom of expression and privacy. One of the things we did was share our internet connections to host nodes on the Tor network. For my part, I operated nodes in Canada.
+
+The Tor network is useful to maintain a secure and anonymous internet. As I later wrote in Global Voices: “The Tor network is a free and open-source software that is used throughout the world for anonymous communication. (…) To this end, it relies on a network of more than 6,000 nodes or relays that provide worldwide anonymous routing, also known metaphorically as ‘onion routing’ because of the various layers that make up this network.”
+
+At the end of 2015, the volunteer node operators realized—because their nodes stopped working—that the largest telecommunications company in Mexico had decided against operating the Tor network from Mexico. In 2016, the group of volunteers tried to find out from Telmex about their motive for this, but the company denied that there was a blockage policy.
+
+Eventually, I joined the volunteers who were investigating the blockage. Once we understood that seven central IP addresses had been blocked from hosting the Tor network, we went to the Consultative Council of the Federal Institute of Telecommunications (IFT), an institution in charge of regulating the telecommunications sector, and filed our complaint about Telmex’s blocking practices. However, a year passed and the IFT failed to research the block. They did not explain what was happening, even though its own Advisory Council recognized the accuracy of our claim. They noted that it was a possible violation of net neutrality through the CC/IFT/311019/18 agreement.
+
+As a last measure, the group of volunteers—who by now had become network forensic analysts—wrote two technical studies that were methodologically approved in academic publications. These were presented at conferences in 2018.
+
+In 2020, we decided to tell the story on Global Voices Advox. Tor immediately made the story visible on their Twitter account:
+
+> In Mexico, the largest telecommunications company has blocked Tor: “Telemex blocked access to seven of the direct ports. In this context, you can access the Tor network, but node installation is not possible.”https://t.co/tcPgIiS5ZX — The Tor Project (@torproject) May 29, 2020
+
+After the Mexican media took up the issue, Telmex responded in May 2020. The company acknowledged that it had blocked seven IP addresses from the Tor network, with the justification that it was a mitigation measure against the Wannacry malware registered in 2017—despite the fact that the malware spread had lasted just four days.
+
+With the group now converted into analysts, we were excited about having the news from Telmex that they recognized the block. We communicated with the company—with a cooperative attitude, some amount of understanding about their measures, and with the belief that a resolution could be reached—to inform them that if they wanted to mitigate Wannacry, they were on the wrong track and that their measures were having an impact on the exercise of rights. There were two fundamental reasons for this:
+
+Wannacry was registered in 2017 and lasted a few days. However, the beginning of the block had been registered two years earlier—at the end of 2015.
+
+The block of the seven addresses would not have necessarily helped the mitigation of Wannacry because these addresses were not about the transport of traffic (and therefore could have transported the malware), but had a management role. Telmex's hypothesis did not stand up to scrutiny.
+
+The day after the communication was sent to Telmex, the seven addresses were released from their discretionary block. The company did not explain their real motive for maintaining the barrier for almost five years, even after evidence that their earlier justification did not mesh with technical reality.
+
+The IFT, for their part, did not research the motives behind Telemex’s block either, though the affected community and researchers had handed them studies and network analyses.
+
+In the end, the Telmex network now has five nodes of the Tor network; these were installed after the block ended.
+
+Some of the most notable factors essential to carrying out the research necessary to understand and remove the block measures of the largest telecommunications company in Mexico were the group effort, consensus on the research theories, and being able to count on spaces like Global Voices to air our case.
+
+We believe that this type of blockage constitutes an overuse of power by an internet service provider and is contrary to the principles of free choice, non-discrimination, and traffic management that constitutes web neutrality, according to article 145 of the law of the Federal Telecommunications Law and Broadcasting, as well as the principles of quality of service in article 146 of the same law. This is without mentioning that it could represent interference in the free exercise of the fundamental rights of privacy and anonymity.
+
+It’s difficult to know how much of an impact the emergence of computing and forensic analysis will have on the delivery of justice. It is also hard to determine its usefulness to show and report abuses in Latin America. Yet, there are strong indications that make it a dynamic area of work with its own threats, opportunities, and battles.

@@ -1,0 +1,584 @@
+{
+  "id": "gv-825646",
+  "publisher_id": 825646,
+  "source_id": "globalvoices:825646",
+  "source_url": "https://globalvoices.org/2024/12/29/many-deaths-under-brazils-military-dictatorship-were-not-politicized-says-historian/",
+  "title": "Many deaths under Brazil’s military dictatorship were not politicized, says historian",
+  "published_at": "2024-12-29T11:30:02Z",
+  "modified_at": "2024-12-28T01:19:43Z",
+  "api_author_id": 1392,
+  "api_content_sha256": "f4ab39db46480d72cc2a0cf18731d2d90e447f7e201c602359dcce907f087087",
+  "api_response_sha256": "6625a8d03b3e648da1476e3f26f88d0194314166208c9a1cf51b3466ab72098a",
+  "api_retrieved_at": "2026-11-16T22:21:08.459699+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 247,
+      "count": 4731,
+      "name": "Education",
+      "slug": "education",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 258,
+      "count": 8694,
+      "name": "History",
+      "slug": "history",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-825646-b00001",
+      "text": "Brazil is a country with a long past ahead, cartoonist Millôr Fernandes once said. By the end of 2024, the year of the 60th anniversary of the military coup that led to 21 years of dictatorship (1964–1985), national headlines are split between a film recounting the story of a man who disappeared under the regime and how close the country came to a new coup in 2022, with then president Jair Bolsonaro now charged.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 415,
+      "source_links": [
+        "https://brasil.elpais.com/brasil/2018/10/18/album/1539887428_664461.html",
+        "https://en.wikipedia.org/wiki/1964_Brazilian_coup_d%27%C3%A9tat",
+        "https://globalvoices.org/2024/12/12/im-still-here-the-brazilian-story-of-forced-disappearances-by-the-military-dictatorship/",
+        "https://www.bbc.com/portuguese/articles/cy0geylvnv0o",
+        "https://www.theguardian.com/world/2024/nov/21/jair-bolsonaro-charged-coup-plot"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825646-b00002",
+      "text": "Even about 40 years since the presidency was returned to civilians, the country never dealt with its past, never put on trial, punished torturers, nor discussed reform of the institutions that were responsible for human rights violations, such as police and armed forces.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 417,
+      "body_end": 688,
+      "source_links": [
+        "https://www.camara.leg.br/noticias/138335-eleicao-indireta-de-1985-marcou-o-fim-da-ditadura-militar/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825646-b00003",
+      "text": "Some of these topics are discussed in ”Unfinished Transition — State Violence and Human Rights Violations in the Re-democratization” (Cia das Letras, 2024), a book written by historian and history teacher Lucas Pedretti. Trying to bridge the space between the events of past and present that help to understand where the country stands now, he talked to Global Voices in the following interview:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 690,
+      "body_end": 1085,
+      "source_links": [
+        "https://www.companhiadasletras.com.br/livro/9788535936797/a-transicao-inacabada?srsltid=AfmBOorCW3b_1D04cZVxhXonfMqXc1RIMSJXQ3_iLtZNXuZPxGNyU11i"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825646-b00004",
+      "text": "Global Voices (GV): Your book is entitled ”Unfinished Transition,” what did the Brazilian re-democratization miss?",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1087,
+      "body_end": 1201,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825646-b00005",
+      "text": "> Algumas coisas, mas a que eu me dedico no livro é que faltou lidar com o problema do exercício da violência em nome do Estado. Na definição mais clássica de teoria política, o Estado tem o monopólio legítimo da violência em determinado território, ou seja, existem forças que usam a violência em seu nome. Acontece que em democracias minimamente funcionais, esse exercício da violência precisa ser altamente regulado, obedecer de forma estrita às leis e estar subordinado ao poder civil. Quando você tem pessoas usando armas em nome do Estado, essas pessoas não podem fazer política. Se elas tentam fazer política, não tem democracia possível, porque não tem diálogo, não tem disputa de ideias, só imposição por parte da força. O Brasil tem até hoje uma polícia que é altamente politizada e autônoma e, portanto, muito violenta. E, do ponto de vista das Forças Armadas (FFAA), a manutenção de uma estrutura que se julga capacitada a intervir na política quando bem entender, porque acreditam que são as verdadeiras detentoras dos interesses nacionais.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1203,
+      "body_end": 2256,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00006",
+      "text": "> Lucas Pedretti (LP): Some things, but the one that I focus on the book is that we didn't deal with the issue of practicing violence in the name of the state. In a classic definition of political theory, the state retains a legitimate monopoly on violence in specific territory, meaning, there are forces using violence under its name. However, in minimally functioning democracies, this practice of violence has to be highly regulated, strictly obey laws and be subordinated to civil power. When you have people armed in the name of the State, they can't be in politics. If they try to, there is no viable democracy, because there is no dialogue, no dispute of ideas, only imposition by force. Brazil has today a police force that is highly politicized and autonomous, therefore, very violent. And, looking at the armed forces, the maintenance of a structure that judges itself capable of intervening in national politics whenever they feel is necessary, because they see themselves as the gatekeepers of national interests.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 2258,
+      "body_end": 3284,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00007",
+      "text": "GV: You quote in your book a sentence credited to the Brazilian Black and Favela movements: “In the favelas, the dictatorship never ended.” What still remains from that period, and to whom?",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 3286,
+      "body_end": 3475,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825646-b00008",
+      "text": "> Na redemocratização, houve uma espécie de divisão em relação a esse debate da violência do Estado. De um lado, a violência política, exercida pelos órgãos repressivos da ditadura, foi questionada e vista como ilegítima por grande parte da sociedade. Por outro lado, a violência policial que não era vista como política, mas no contexto de política pública e de violência urbana, seguiu sendo vista como legítima. Todos aqueles que não são vistos como vítimas políticas da violência de Estado continuaram sendo torturáveis, matáveis e desaparecíveis. Você tem uma Constituinte em 1988, com Ulysses Guimarães falando que tem ódio e nojo da ditadura, e uma sequência de chacinas no início dos anos 1990, que atingem a juventude negra.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3477,
+      "body_end": 4210,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00009",
+      "text": "> Como esses sujeitos, esses grupos — e a gente pode falar ainda dos povos indígenas, da população LGBTQIA+ — sempre foram alvo de uma violência vista por parte da sociedade como legítima, eles nem entraram nessa contabilidade de vítimas da ditadura. Essas mortes nunca foram politizadas e seguiram sendo naturalizadas, mesmo com a transição.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 4212,
+      "body_end": 4554,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00010",
+      "text": "> LP: During re-democratization, there was a sort of divisiveness regarding state violence. On one side, the political violence, practiced by the dictatorship's repression apparel, was questioned and seen as illegitimate by a great portion of the society. On the other, the police violence was not seen as political, but in a context of public policies and urban violence, continued to be seen as legitimate. All of those who were not seen as political victims of State violence remained at risk of torture, killing and disappearing. You have a Constituency Assembly process in 1988, with [Congressman] Ulysses Guimarães declaring ”hate and repulse for the dictatorship‘,” and then a sequel of slaughters in the early 1990s, targeting Black youths.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 4556,
+      "body_end": 5304,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Brazilian_Constituent_Assembly_(1988)",
+        "https://en.wikipedia.org/wiki/Ulysses_Guimar%C3%A3es",
+        "https://www.bbc.com/portuguese/brasil-45750071"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00011",
+      "text": "> Since these groups — and we can include here Indigenous people, LGBTQIA+ people — were always the targets for the kind of violence legitimized by society, they didn't enter this count of victims of the dictatorship. These deaths were never politicized and kept being normalized, even with the transition.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 5306,
+      "body_end": 5612,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00012",
+      "text": "GV: How did Brazil get to the end of the military dictatorship?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 5614,
+      "body_end": 5677,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825646-b00013",
+      "text": "> O que se teve foi um processo que os próprios militares denominaram abertura lenta, gradual e civil. A partir de 1974, os próprios dirigentes do regime vão fazer a institucionalização dos ideais da ”revolução”. Esse movimento tinha um grande objetivo: garantir a não-responsabilização dos militares pela tragédia política, econômica e social.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 5679,
+      "body_end": 6023,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00014",
+      "text": "> Quer dizer, eles deram o golpe, mantiveram a ditadura por 21 anos, torturaram, mataram, prenderam, desapareceram com os corpos e, a partir da segunda metade da década de 1970, dizem que a democracia só pode ser atingida pelas mãos deles. A primeira grande ideia é a da reconciliação, e a segunda de esquecimento. Isso se desdobra na lei de anistia de 1979, que garante a não-responsabilização dos militares, que parte da esquerda continue punida e faz um corte no tempo. Qualquer tentativa que não se adeque ao roteiro, é imediatamente vista como extremismo. Eles estavam olhando para a Argentina [com o juízo das Juntas], isso está em documentos militares, e dizendo que havia um perigo de argentinização da transição brasileira. O que seria isso? Medo de serem levados ao banco dos réus.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 6025,
+      "body_end": 6816,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Trial_of_the_Juntas"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00015",
+      "text": "> LP: What we had was a process that the military themselves called a slow, gradual and civil opening. Since 1974, the heads of the regime themselves led the institutionalization of the ideals of their ‘revolution.’ This movement had a greater purpose: to ensure the non-accountability of the military for the political, economical and social tragedy.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 6818,
+      "body_end": 7169,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00016",
+      "text": "> That's saying they executed the coup, kept a dictatorship for 21 years, tortured, killed, arrested and disappeared bodies and, since mid-1970s, started saying democracy was only possible through their hands. The first idea is one of reconciliation, the second is of oblivion. This unfolded in the 1979 Amnesty Law, which guaranteed the non-accountability for military officers, that part of the Left remained punished, and makes a cut in the timeline [as if creating a blank page from that time on]. Any attempt that did not fit into this script was immediately read as extremism. They were looking to Argentina [with the Trial of the Military Juntas], as mentioned in military documents, saying there was a risk of argentinization on the Brazilian transition. What does it mean? Fear of being taken to trial, as well.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 7171,
+      "body_end": 7991,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Trial_of_the_Juntas",
+        "https://pt.wikipedia.org/wiki/Lei_da_Anistia"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00017",
+      "text": "GV: With the Amnesty Law, Brazil did not punish torturers. Now, there is a discussion about a new amnesty for those who attempted the latest coup. What would be the consequences of that?",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 7993,
+      "body_end": 8179,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825646-b00018",
+      "text": "> A consequência seria colocar mais uma camada nessa histórica reprodução do golpismo, da violência de estado, que acompanha o Brasil há muito tempo, não só desde 1964. [Outros momentos históricos, fim da escravidão, transformação da colônia para o Império] sempre foram uma tradição de conciliação, acordo, esquecimento dos crimes e que vão permitindo que a ordem social desigual, racista, patriarcal se mantenha intocada.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 8181,
+      "body_end": 8604,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00019",
+      "text": "> LP: The consequence would be adding a new layer to this historical reproduction of coup attempts, State violence, which has accompanied Brazil for a while, not only since 1964. [Other historical moments, the end of slavery, turning from colony to Empire] always followed a tradition of conciliation, deals, forgetting crimes, which allowed its unequal, racist, patriarchal social order to continue.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 8606,
+      "body_end": 9006,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/1964_Brazilian_coup_d%27%C3%A9tat?wprov=srpw1_0",
+        "https://en.wikipedia.org/wiki/Abolitionism_in_Brazil",
+        "https://en.wikipedia.org/wiki/Empire_of_Brazil"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00020",
+      "text": "GV: The Federal Police charged former president Jair Bolsonaro and 36 other people for attempting a coup against the rule of law to stay in power. How do past and present connect here?",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 9008,
+      "body_end": 9192,
+      "source_links": [
+        "https://agenciabrasil.ebc.com.br/en/justica/noticia/2024-11/bolsonaro-indicted-brazils-federal-police-coup-attempt"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825646-b00021",
+      "text": "> Estamos diante de algo inédito, que é a possibilidade de vermos presos militares de alta patente e um presidente da República pela tentativa de um golpe de estado. Isso é inédito, histórico e fundamental. Ao mesmo tempo, estamos diante de mais uma transição em que, do ponto de vista institucional, as Forças Armadas vão sair ilesas. Está no relatório da PF a ideia de que não houve golpe porque o Alto Comando do Exército foi legalista.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 9194,
+      "body_end": 9633,
+      "source_links": [
+        "https://noticias.uol.com.br/politica/ultimas-noticias/2024/12/14/pf-prende-braga-netto.htm"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00022",
+      "text": "> O professor Carlos Fico resumiu perfeitamente isso: é preciso saber se havia uma convicção democrática ou balanço de perdas e danos. Para mim, é claro que foi o segundo, porque foram eles que deixaram os acampamentos em frente às organizações militares, e no mínimo prevaricaram se sabiam do plano. A gente precisa fazer um debate sobre a instituição em si, que tipo de formação, doutrinação, as FFAA dão aos nossos militares, com recursos públicos, para formar sujeitos que tentam golpe de estado.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 9635,
+      "body_end": 10135,
+      "source_links": [
+        "https://oglobo.globo.com/politica/noticia/2024/11/24/a-novidade-nesta-onda-de-golpismo-e-que-tem-havido-investigacao-avalia-o-historiador-carlos-fico.ghtml"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00023",
+      "text": "> LP: We're facing something never seen before which is the possibility of high ranking military officers and a president being arrested for attempting a coup d'état. This is new, historical and fundamental. At the same time, we're facing another transition in which, from the institutional point of view, the armed forces will pass by unaffected. The police report brings this idea that there was no coup because the army's High Command was legalist.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 10137,
+      "body_end": 10588,
+      "source_links": [
+        "https://noticias.uol.com.br/politica/ultimas-noticias/2024/12/14/pf-prende-braga-netto.htm"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00024",
+      "text": "> Professor Carlos Fico summarized this perfectly: we need to know if there was a democratic belief in this or only a balance of loss and damage. For me, it's the latter, because they allowed the camps in front of military units, so at least prevaricated if they knew about any plan. We need to debate about the institution itself, what kind of formation, indoctrination the armed forces are passing to the corps, with public resources, that is forming individuals who attempt coups.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 10590,
+      "body_end": 11073,
+      "source_links": [
+        "https://globalvoices.org/2022/11/28/bolsonaro-and-his-supporters-continue-to-undermine-democracy-after-losing-brazils-election/",
+        "https://oglobo.globo.com/politica/noticia/2024/11/24/a-novidade-nesta-onda-de-golpismo-e-que-tem-havido-investigacao-avalia-o-historiador-carlos-fico.ghtml"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00025",
+      "text": "GV: In one of the messages of this group, which was allegedly plotting the coup, mentioned by the police, there is a reference to the one in 1964. By the current Brazilian context, do you think it would be possible to see history repeating itself?",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 11075,
+      "body_end": 11322,
+      "source_links": [
+        "https://g1.globo.com/politica/noticia/2024/11/26/em-64-nao-precisou-assinar-nada-diz-golpista-em-mensagens-obtidas-pela-pf.ghtml"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825646-b00026",
+      "text": "> Tenho a convicção de que chegamos muito perto do abismo, muito perto de uma repetição. Acho que haveria reação internacional — os EUA sinalizaram explicitamente que haveria reação, isso é uma diferença central para entender as conjunturas de 1964 e de agora — mas, tampouco sou ingênuo de achar que um país da importância geopolítica que tem o Brasil, caso houvesse uma ruptura institucional violenta, o quanto essa reação internacional seria capaz efetivamente de impedir a consolidação de um regime autoritário. Se eles tivessem dado esse passo que não deram, é muito difícil saber onde estaríamos agora. Provavelmente seria uma situação drástica, eventualmente, até pior do que 1964, porque já está evidente o grau de violência, brutalidade, arbitrariedade dos sujeitos que estavam à frente desse planejamento todo. Queriam assassinar president Lula, Alckmin e Alexandre de Moraes; não é pouca coisa.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 11324,
+      "body_end": 12229,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00027",
+      "text": "> LP: I have the conviction that we came to the edge of the abyss, close to repeating it. I think there would be an international reaction to it — the US explicitly said there would be one, which is a fundamental difference between 1964 and now — but, I'm not that naive to think that a country with the geopolitical importance that Brazil has, in case there was violent institutional rupture, how much this international reaction would've been effectively capable to stop the consolidation of an authoritarian regime. If they had taken the step that they didn't take, it's hard to know where we would be now. It would likely be a drastic situation, perhaps even more than 1964, because it's evident the degree of violence, brutality, arbitrariness of those leading the process. They were considering killing president Lula, Alckmin (the vice-president) and Alexandre de Moraes (Supreme Court minister and then president of the Electoral Court); it's not a minor thing.",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 12231,
+      "body_end": 13200,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Alexandre_de_Moraes",
+        "https://en.wikipedia.org/wiki/Geraldo_Alckmin",
+        "https://en.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00028",
+      "text": "GV: At the same time headlines talk about this coup attempt, Brazilian movie theaters register sold-out sessions to ”I'm Still Here,” a film about a former Congressman who was persecuted by the dictatorship and killed. According to his son, Marcelo Rubens Paiva, the Comissão Nacional da Verdade (National Truth Commission) helped him in writing his book on the story. How do you see CNV's role?",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 13202,
+      "body_end": 13597,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/National_Truth_Commission",
+        "https://globalvoices.org/2024/12/12/im-still-here-the-brazilian-story-of-forced-disappearances-by-the-military-dictatorship/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825646-b00029",
+      "text": "> As comissões da verdade foram fundamentais. Acho interessante chamar a atenção para o fato de que, na época e até depois, fomos muito críticos. Claro que a gente gostaria que fosse feito muito mais, mas ela foi no limite do que era possível. Se olhar com lentes de um certo realismo político, a gente vê o quanto foi feito, o quanto se avançou. O caso Rubens Paiva, por exemplo, é esclarecido a partir do depoimento do Raimundo Ronaldo Campos, que admite que participou da ocultação do seu corpo. O tipo de dano à imagem que isso produz para as FFAA é muito significativo e, para eles, inaceitável.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 13599,
+      "body_end": 14199,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00030",
+      "text": "> [O General] Villas-Boas, por exemplo, numa entrevista ao Celso Castro [da Fundação Getúlio Vargas], dá uma pista do porquê a comissão era tão incômoda. Ele diz ‘‘agora estão tentando dizer que houve um genocídio indígena naquela época’’. Grande parte do revisionismo que se tem está assentada na ideia de que aqui tivemos uma ‘‘ditabranda’’, que foi um regime menos violento. Até a CNV diz que foram 434 mortos e desaparecidos, mas se você inclui povos indígenas, população negra morta por esquadrões da morte, os desaparecidos e assassinados no campo, esse número explode e você não pode sustentar mais essa ideia. Acho que a CNV ao colocar em cena o debate sobre violência contra indígenas, nas favelas, etc, abriu um campo de possibilidades de investigações e disputas que é importante seguir.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 14201,
+      "body_end": 14999,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00031",
+      "text": "> LP: The truth commissions [national and state ones] were essential. I think it's interesting to note that, at the time and after, we were very critical of them. Of course we'd like to see much more being done, but they went till the limit line of what was possible. If you look through the lenses of a certain political realism, you see what has been done and the advancements. Rubens Paiva's case, for example, was clarified after the testimony of Raimundo Ronaldo Campos, who admitted to his participation in concealing the body. The kind of image damage that it produced to the armed forces is very significant and, for them, unacceptable.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 15001,
+      "body_end": 15645,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00032",
+      "text": "> [General] Villas-Boas, for example, in an interview to Celso Castro [from Getúlio Vargas Foundation, FGV], gives a hint on why the commission was so uncomfortable. He says, ‘Now they are trying to say there was an Indigenous genocide back then.’ A great deal of revisionism lays over this idea that Brazil had a mild dictatorship, a lesser violent regime. Even the CNV says there were 434 dead and disappeared, but if you were to include Indigenous people, the Black population killed by death squads, those disappeared and assassinated in rural areas, this number could burst and you couldn't support this idea anymore. I think the fact that the CNV raised the debates over violence against these populations has opened fields of possibilities to research and disputes that are important to carry on.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 15647,
+      "body_end": 16450,
+      "source_links": [
+        "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2023-03/ditadura-militar-contribuiu-para-genocidio-dos-povos-indigenas",
+        "https://editora.fgv.br/produto/general-villas-boas-conversa-com-o-comandante-3592",
+        "https://en.wikipedia.org/wiki/List_of_people_killed_by_and_disappeared_during_the_Brazilian_military_dictatorship",
+        "https://pt.wikipedia.org/wiki/Eduardo_Villas_B%C3%B4as"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00033",
+      "text": "GV: You teach history in schools. What is it like to practice this work in Brazil nowadays?",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 16452,
+      "body_end": 16543,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-825646-b00034",
+      "text": "> A gente vê de forma explícita que existem memórias em disputa. Existem as narrativas de legitimação do golpe, de negacionismo, muito presentes, existem aqueles que incorporam uma narrativa crítica à ditadura e existe um grande silêncio, um esquecimento coletivo, que talvez seja até preponderante. Poucas coisas são tão perigosas à democracia brasileira hoje quanto o Brasil Paralelo, empresa de documentários revisionistas sobre o passado, que tem um documentário para negar a ditadura de 1964. Isso revela o quanto a extrema-direita leva a sério a questão da disputa de memória, de narrativa sobre o passado. Eles sabem que é fundamental para moldar o presente e as visões de futuro. Parece que a gente acredita que o esquecimento é uma via para a reconciliação, e eles sabem que não. Tem esse tipo de narrativa nas salas de aula, e é difícil de lidar.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 16545,
+      "body_end": 17401,
+      "source_links": [
+        "https://pt.wikipedia.org/wiki/1964:_O_Brasil_entre_Armas_e_Livros",
+        "https://pt.wikipedia.org/wiki/Brasil_Paralelo"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-825646-b00035",
+      "text": "> LP: We see very explicitly that there are memories in dispute. There are narratives legitimizing the coup, denialism, which is very present today, there are those who embody a critical stance against the dictatorship and there is also a great silence, a collective oblivion, which is likely the dominant position. There are not as many things as dangerous to Brazilian democracy today as Brasil Paralelo, a production company that produces revisionist content over the past, including a documentary that denies the 1964 dictatorship. This shows how much the far right takes memory seriously and the narrative dispute over the past. They know it's important to shape the present and the visions for the future. It seems that, while we believe forgetting is a way of reconciling, they know it is not. Nowadays we have these types of narrative in classrooms, and it's hard to handle.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 17403,
+      "body_end": 18285,
+      "source_links": [
+        "https://pt.wikipedia.org/wiki/1964:_O_Brasil_entre_Armas_e_Livros",
+        "https://pt.wikipedia.org/wiki/Brasil_Paralelo"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "06d9a079d3ca2e00f3016c2b338a1598a535209421d162f506f7b1c87d6de050",
+  "word_count": 3009,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 18285,
+  "retrieved_at": "2026-11-16T22:45:07.797493+00:00",
+  "raw_html_sha256": "32b591d959f0d5d91ef1f61f703896a060f24ed6dbd30cd176bb5a2efce5eac9",
+  "resolved_source_url": "https://globalvoices.org/2024/12/29/many-deaths-under-brazils-military-dictatorship-were-not-politicized-says-historian/",
+  "canonical_url": "https://globalvoices.org/2024/12/29/many-deaths-under-brazils-military-dictatorship-were-not-politicized-says-historian/",
+  "source_bytes": 203159,
+  "authors": [
+    {
+      "name": "Fernanda Canofre",
+      "url": "https://globalvoices.org/author/fernanda-canofre/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 825646,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "32b591d959f0d5d91ef1f61f703896a060f24ed6dbd30cd176bb5a2efce5eac9",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-eb7a7d2ccd4344af93fa",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-12",
+    "eligible_month_documents": 63,
+    "selected_month_documents": 53,
+    "inclusion_probability": 0.8412698412698413,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Fernanda Canofre",
+  "body_start": 508,
+  "body_end": 18793,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "6ed0ac40586da519f61881124baa27f37a46a9fd6254bab7b9c44a711060de59",
+  "text_path": "articles/gv-825646.txt",
+  "metadata_path": "metadata/gv-825646.json",
+  "attribution": "This story by Fernanda Canofre originally appeared on Global Voices. https://globalvoices.org/2024/12/29/many-deaths-under-brazils-military-dictatorship-were-not-politicized-says-historian/",
+  "content_sha256": "9bd9285ce62f897e0e4690eb2da1c36c79d0e73b64b84c9aec4025c6117662b9",
+  "source_sha256": "32b591d959f0d5d91ef1f61f703896a060f24ed6dbd30cd176bb5a2efce5eac9",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,606 @@
+{
+  "id": "gv-724429",
+  "publisher_id": 724429,
+  "source_id": "globalvoices:724429",
+  "source_url": "https://globalvoices.org/2020/12/10/diary-of-a-nepali-soldier-in-france/",
+  "title": "Diary of a Nepali soldier in France",
+  "published_at": "2020-12-10T11:54:06Z",
+  "modified_at": "2020-12-14T02:06:44Z",
+  "api_author_id": 2808,
+  "api_content_sha256": "6220391f818152df36535ff7896facd6b77bab5d1cbc8d9a3ce0f4d3ed8267c3",
+  "api_response_sha256": "3c1126b1eeb2408f0c7dfb3722ec3e22693716e3f3a1988a2b2844f4a03dc72f",
+  "api_retrieved_at": "2026-11-16T22:20:31.424510+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 1355,
+      "count": 5871,
+      "name": "Ethnicity &amp; Race",
+      "slug": "ethnicity-race",
+      "parent": 238
+    },
+    {
+      "id": 194,
+      "count": 996,
+      "name": "France",
+      "slug": "france",
+      "parent": 187
+    },
+    {
+      "id": 195,
+      "count": 399,
+      "name": "Germany",
+      "slug": "germany",
+      "parent": 187
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 258,
+      "count": 8694,
+      "name": "History",
+      "slug": "history",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 2552,
+      "count": 1465,
+      "name": "Nepal",
+      "slug": "nepal",
+      "parent": 31
+    },
+    {
+      "id": 1008,
+      "count": 74,
+      "name": "Nepali",
+      "slug": "nepali",
+      "parent": 317
+    },
+    {
+      "id": 270,
+      "count": 2613,
+      "name": "Photography",
+      "slug": "photography",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-724429-b00001",
+      "text": "This article by investigative journalist Shree Bhakta Khanal was originally published in Nepali Times and an edited version is republished on Global Voices as part of a content-sharing agreement.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 195,
+      "source_links": [
+        "https://www.nepalitimes.com/",
+        "https://www.nepalitimes.com/banner/diary-of-a-nepali-soldier-in-france/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00002",
+      "text": "Books have been written about the legendary bravery and sacrifice of Nepal’s Gurkha soldiers. Officers have extolled their obedience and cheerfulness despite hardships and danger. The world has an image of Nepali soldiers on the battlefield: fierce but always smiling.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 197,
+      "body_end": 465,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Gurkha"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00003",
+      "text": "But historians have pored through letters and diaries written by Gurkha soldiers from the two World Wars to paint a slightly different picture—Nepalis in the trenches of Flanders Field or below the cliffs at Gallipoli, homesick, terrified, cold and miserable. Many of these letters home were held by military censors, and are archived.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 467,
+      "body_end": 802,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Gallipoli"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00004",
+      "text": "Now, a diary written by a Gurkha sergeant in the British Army during the battle of La Bassée in northern France during World War I in 1914, and retrieved by a German officer, has revealed a whole new side to the Gurkha legend, one that confirms the traditional bravery, but also their human side.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 804,
+      "body_end": 1100,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/La_Bass%C3%A9e",
+        "https://en.wikipedia.org/wiki/World_War_I"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00005",
+      "text": "Lieutenant Alexander Pfeifer was with the Kurhessische Jäger-Bataillon Nr. 11 and found the diary of a Nepali soldier in La Bassée on December 20, 1914, after a fierce battle against Allied forces of the British and French armies.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1102,
+      "body_end": 1332,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00006",
+      "text": "Lt Pfeiffer’s great-grandson Philip Cross found the documents and a khukri while going through his family effects. He is in the process of translating his great-grandfather’s diary into English, and also getting the diary of the Gurkha sergeant translated into English and German.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1334,
+      "body_end": 1614,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Kukri"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00007",
+      "text": "It appears that Lt Pfeifer’s job was to go through the bodies of dead enemy soldiers to find out if he could find any intelligence of what the Allied forces were up to. That seems to be how he got hold of the diary, photographs, and even the khukri.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1616,
+      "body_end": 1865,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00008",
+      "text": "The first page of the diary of the unknown Nepali soldier is in verse with numbered lines. It lists the names of the writers’ young friends who were killed or taken prisoner, the hardships they endured. From the penmanship and vocabulary and the use of numbered verse, the soldier appears to have been taught by a village priest, who used to be the only literate person in the villages of Nepal in those days.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1867,
+      "body_end": 2276,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00009",
+      "text": "> Translated, the lines read:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2278,
+      "body_end": 2307,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00010",
+      "text": "> ‘Poor fellows, their youth was taken away by the enemy’s hands (20)",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2309,
+      "body_end": 2378,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00011",
+      "text": "> The love of the military was left behind in Nepal",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2380,
+      "body_end": 2431,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00012",
+      "text": "> We are the living dead who have gone to heaven",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2433,
+      "body_end": 2481,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00013",
+      "text": "> Subedar Bhimsi Bhandari (21) Harke Thapa Jasraja Dharma Khatri Commander Pasitan Nainsingh Khatri Swarup Kunwar Pratiman Thapa’",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2483,
+      "body_end": 2612,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00014",
+      "text": "The second page of the Nepali soldier’s diary (above) has the names of Gurkhas which, interestingly, are the same names found in the same order in the papers of Lt Pfeifer in which he lists the names of Gurkhas who were taken prisoner (left). The German phonetics also closely resembles the way the unknown soldier has written the names in Nepali, for example, by spelling Gurung as गुरुं (Gurun).",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2614,
+      "body_end": 3011,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00015",
+      "text": "Lt Pfeiffer’s note in his own diary entry reads as follows:",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3013,
+      "body_end": 3072,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00016",
+      "text": "> Found with a Gurkha sergeant major. The content of the notice page No. 1 says: The soldiers of the section (Battalion) should be treated with love, friendliness and kindness. Every person, who carries out the rules of his religion, according to law and order, receives his payment (will be happy).",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3074,
+      "body_end": 3373,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00017",
+      "text": "> The orders of the commanding officer should be carried out precisely and immediately. The content of the notice paper No. 2 is as follows. Names of the Gurkhas:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3375,
+      "body_end": 3537,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00018",
+      "text": "> Thuparau Gurun",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3539,
+      "body_end": 3555,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00019",
+      "text": "> Chandrabir Thapa",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3557,
+      "body_end": 3575,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00020",
+      "text": "> Akalbir Gurun",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 3577,
+      "body_end": 3592,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00021",
+      "text": "> Manbahadur Gurun",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 3594,
+      "body_end": 3612,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00022",
+      "text": "> Amarsing Gurun",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 3614,
+      "body_end": 3630,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00023",
+      "text": "> Udjersingh Gharti",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 3632,
+      "body_end": 3651,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00024",
+      "text": "> Imansing Gurun",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 3653,
+      "body_end": 3669,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00025",
+      "text": "> Manbir Thapa",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 3671,
+      "body_end": 3685,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00026",
+      "text": "> Chhabilal Rana",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 3687,
+      "body_end": 3703,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00027",
+      "text": "> Akatbir Thapa",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 3705,
+      "body_end": 3720,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00028",
+      "text": "> Narbahadur Thapa",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 3722,
+      "body_end": 3740,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00029",
+      "text": "> Schatasin Gurun",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 3742,
+      "body_end": 3759,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-724429-b00030",
+      "text": "On investigating some of these names, British Army records show that Chandrabir Thapa was a rifleman in the Second King Edward VII’s Own Gurkha Rifles (Sirmur Rifles). Manbir Thapa was a sergeant in the First Battalion of the First King George V’s Own Gurkha Rifles (Malaun Regiment); his service number was 1896, and he was killed in action on December 20, 1914, in La Bassée. We even know Manbir’s father’s name was Parasram Thapa and he lived in Dohadi village in western Nepal.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 3761,
+      "body_end": 4242,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00031",
+      "text": "Records at La Bassée show that there were other Gurkha soldiers killed on the battlefield or taken prisoner who were not on Lt Pfeiffer’s diary list.",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 4244,
+      "body_end": 4393,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00032",
+      "text": "The Nepali soldier’s diary, written by hand 107 years ago, says a lot about the war and the warriors from Nepal. The soldier was writing about fellow Nepalis in his own, and possibly other units, listing carefully the names of the dead and those taken prisoner. The names in the poem are probably of those who were killed in battle, but we cannot be sure. The other list, because of its similarity to the list in Lt Pfeifer’s list in German, could be of those who were taken prisoner on December 20.",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 4395,
+      "body_end": 4894,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00033",
+      "text": "But that opens up a puzzle. How come the list of dead soldiers in the Nepali soldier’s diary is in the same order as the list of prisoners in German in Lt Pfeifer’s diary?",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 4896,
+      "body_end": 5067,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00034",
+      "text": "It is not clear whether Lt Pfeifer was just translating the Nepali soldier’s diary, or if those are his own instructions. The German officer’s own diary was ultimately found more than a century later by his great-grandson. We do not know what the Gurkha’s name was, where in Nepal he was from, and what happened to him.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 5069,
+      "body_end": 5388,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00035",
+      "text": "Many of the Gurkhas captured in France and Belgium were transported to prisoner-of-war camps in Germany. There, some of the prisoners had their voices and songs preserved in early recording machines that had just come into use.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 5390,
+      "body_end": 5617,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00036",
+      "text": "Nepali professor Alaka Atreya Chudal of Vienna University has been translating from Nepali into German some of these testimonies recorded between 1914-1918 in a prisoner-of-war camp of Halbmondlager in Wünsdorf, 40 km from Berlin.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 5619,
+      "body_end": 5849,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-724429-b00037",
+      "text": "The 100 or so recordings contain Nepali folk tales, songs, poetry, and folk riddles that have immense linguistic and cultural value because they are preserved in audio from more than a century ago. The recordings are now in the archives of Humboldt-Universität in Berlin.",
+      "page": null,
+      "paragraph": 37,
+      "body_start": 5851,
+      "body_end": 6122,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "920c61f078f03ed235fdd0474320ad132823170cffa38db96d50817784c966ab",
+  "word_count": 1041,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 9,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 6122,
+  "retrieved_at": "2026-11-16T22:28:42.437215+00:00",
+  "raw_html_sha256": "03d64c5c37fc000261f7bc1883d66b5041042046be05daddd41e9bb7993d858c",
+  "resolved_source_url": "https://globalvoices.org/2020/12/10/diary-of-a-nepali-soldier-in-france/",
+  "canonical_url": "https://globalvoices.org/2020/12/10/diary-of-a-nepali-soldier-in-france/",
+  "source_bytes": 195353,
+  "authors": [
+    {
+      "name": "Nepali Times",
+      "url": "https://globalvoices.org/author/nepalitimes/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 724429,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "03d64c5c37fc000261f7bc1883d66b5041042046be05daddd41e9bb7993d858c",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-3d382c5af762588ac3fd",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-12",
+    "eligible_month_documents": 69,
+    "selected_month_documents": 58,
+    "inclusion_probability": 0.8405797101449275,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Nepali Times",
+  "body_start": 406,
+  "body_end": 6528,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "3ef0081f56235c45cb1ba379d813f906321b2f05dbc64f1627a550cff8587dbe",
+  "text_path": "articles/gv-724429.txt",
+  "metadata_path": "metadata/gv-724429.json",
+  "attribution": "This story by Nepali Times originally appeared on Global Voices. https://globalvoices.org/2020/12/10/diary-of-a-nepali-soldier-in-france/",
+  "content_sha256": "ac5f8ba084e420b92d18900a953f7bf60c1625134447dd77914b877bd083781f",
+  "source_sha256": "03d64c5c37fc000261f7bc1883d66b5041042046be05daddd41e9bb7993d858c",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

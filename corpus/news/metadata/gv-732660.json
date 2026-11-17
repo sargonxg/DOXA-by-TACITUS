@@ -1,0 +1,400 @@
+{
+  "id": "gv-732660",
+  "publisher_id": 732660,
+  "source_id": "globalvoices:732660",
+  "source_url": "https://globalvoices.org/2021/04/04/fresh-attack-in-mozambiques-cabo-delgado-kills-dozens-and-evacuates-town/",
+  "title": "Fresh attack in Mozambique’s Cabo Delgado kills dozens and evacuates town",
+  "published_at": "2021-04-04T23:36:43Z",
+  "modified_at": "2021-04-05T18:28:14Z",
+  "api_author_id": 2012,
+  "api_content_sha256": "819969baac4795d451852b637e7da8a48679ff0fe18f95558c23de8204ab2386",
+  "api_response_sha256": "c591ed8b34d893450a7ee028fc86046db8a591fa7520310c35490fea352169e4",
+  "api_retrieved_at": "2026-11-16T22:20:33.702775+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 128,
+      "count": 415,
+      "name": "Mozambique",
+      "slug": "mozambique",
+      "parent": 15
+    },
+    {
+      "id": 336,
+      "count": 2224,
+      "name": "Portuguese",
+      "slug": "portuguese",
+      "parent": 317
+    },
+    {
+      "id": 273,
+      "count": 1466,
+      "name": "Refugees",
+      "slug": "refugees",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 281,
+      "count": 10616,
+      "name": "War &#038; Conflict",
+      "slug": "war-conflict",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-732660-b00001",
+      "text": "Yet another attack has hit Mozambique's northernmost province, Cabo Delgado. On the afternoon of 24 March, a group of armed men attacked the town centre of Palma, located close to the site of the largest natural gas processing operation in Africa, and that is run by the French company Total.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 292,
+      "source_links": [
+        "https://www.dw.com/pt-002/palma-%C3%A9-uma-situa%C3%A7%C3%A3o-dram%C3%A1tica-e-catastr%C3%B3fica/a-57043029",
+        "https://www.mzlng.total.com/pt-pt/sobre-o-projecto-mozambique-liquefied-natural-gas"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-732660-b00002",
+      "text": "The attack left dozens of civilians dead, and the town was evacuated. There are no official casualty figures yet as fighting with the armed forces is still ongoing.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 294,
+      "body_end": 458,
+      "source_links": [
+        "https://www.dw.com/pt-002/ataques-em-palma-deixaram-dezenas-de-mortos-diz-governo-mo%C3%A7ambicano/a-57034072"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-732660-b00003",
+      "text": "It was confirmed that at least one foreigner, a South African national, working for the gas operation, was killed.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 460,
+      "body_end": 574,
+      "source_links": [
+        "https://www.rtp.pt/noticias/mundo/pelo-menos-um-empreiteiro-sul-africano-morto-e-varios-desaparecidos-em-palma_n1307834"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-732660-b00004",
+      "text": "For more than three years, the northern Cabo Delgado province has suffered attacks that have been attributed to the self-proclaimed Islamic State. It all apparently began in October 2017, when a police station was attacked by armed men.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 576,
+      "body_end": 812,
+      "source_links": [
+        "https://expresso.pt/internacional/2020-12-29-Presidente-de-Mocambique-pede-maxima-prontidao-nos-ataques-em-Cabo-Delgado",
+        "https://pt.globalvoices.org/2020/01/13/ataques-armados-no-norte-de-mocambique-continuam/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-732660-b00005",
+      "text": "Since then, the attacks have left more than 2,000 people dead and over 700,000 internally displaced, many now in Cabo Delgado's capital city, Pemba. UNICEF estimates that half of those displaced are children.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 814,
+      "body_end": 1022,
+      "source_links": [
+        "https://news.un.org/pt/story/2021/03/1745292",
+        "https://www.dw.com/pt-002/h%C3%A1-350-mil-crian%C3%A7as-deslocadas-em-cabo-delgado/a-57070674",
+        "https://www.rtp.pt/noticias/mundo/pemba-recebe-deslocados-internos-de-varios-locais-da-provincia-de-cabo-delgado_v1308520"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-732660-b00006",
+      "text": "Like with other attacks, this too was claimed by the Islamic State (ISIS).",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1024,
+      "body_end": 1098,
+      "source_links": [
+        "https://jovempan.com.br/noticias/mundo/estado-islamico-assume-controle-de-cidade-rica-em-gas-em-mocambique.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-732660-b00007",
+      "text": "On 10 March, the United States officially added two extremist Islamic groups to its list of terrorist organisations – one operating in the Democratic Republic of Congo (DRC) and the other in Mozambique. The United States government accused both organisations of having links with the ISIS.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1100,
+      "body_end": 1389,
+      "source_links": [
+        "https://www.voaportugues.com/a/an%C3%A1lise-posicionamento-dos-eua-em-relacao-ao-isis-mo%C3%A7ambique-pode-impulsionar-a-luta-contra-a-insurg%C3%AAncia/5811048.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-732660-b00008",
+      "text": "Nearly a week after the blast, precisely on Tuesday 30 March, private-owned television channel STV announced that the town had been recaptured by the Mozambican Defence and Security Forces, but a few minutes later it backtracked when it noted that more attacks were taking place.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1391,
+      "body_end": 1670,
+      "source_links": [
+        "https://opais.co.mz/api/forcas-de-defesa-e-seguranca-recuperam-vila-de-palma/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-732660-b00009",
+      "text": "> Esta terça-feira, depois de garantias das FDS de que a situação estava controlada, equipas de reportagem que estão no terreno, a acompanhar a situação, testemunharam situações de trocas de tiros, mostrando que a situação continua fora do controlo.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1672,
+      "body_end": 1921,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-732660-b00010",
+      "text": "> This Tuesday, after assurances from security forces that the situation was under control, news teams on the ground monitoring the situation witnessed exchanges of gunfire, showing that the situation remains out of control.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 1923,
+      "body_end": 2147,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-732660-b00011",
+      "text": "After the events of the 24th, several civil society organizations called on the president to publicly explain what had happened. The organizations demanded that the president make a request for international support to help combat the armed groups in northern Mozambique:",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2149,
+      "body_end": 2420,
+      "source_links": [
+        "https://observador.pt/2021/03/31/mocambique-sociedade-civil-mocambicana-exige-que-presidente-acione-pedido-de-apoio-internacional/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-732660-b00012",
+      "text": "> Exigimos informação regular e atempada pelo chefe de Estado sobre a situação de Cabo Delgado, informação exata e desagregada por género e faixa etária das populações afetadas, entre deslocadas, assassinadas e raptadas.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2422,
+      "body_end": 2642,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-732660-b00013",
+      "text": "> We demand regular and timely information from the head of state on the situation in Cabo Delgado, accurate information broken down by the gender and age groups of the affected populations, including the displaced, assassinated and kidnapped.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2644,
+      "body_end": 2887,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-732660-b00014",
+      "text": "In response, President Filipe Nyusi made a statement on Wednesday in which he urged the public not to get carried away, stating that there have been bigger attacks recorded in the province. Nyusi also said that any kind of distraction should be avoided:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2889,
+      "body_end": 3142,
+      "source_links": [
+        "https://www.dw.com/pt-002/nyusi-minimiza-ataque-em-palma-n%C3%A3o-foi-maior-do-que-outros/a-57066941"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-732660-b00015",
+      "text": "> Foi mais um ataque. Não foi maior do que tantos outros que tivemos, mas tem esse impacto por ter sido na periferia dos projetos em curso naquela província.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3144,
+      "body_end": 3301,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-732660-b00016",
+      "text": "> Não percamos o foco, não fiquemos atrapalhados. Vamos abordar o inimigo como temos estado a abordar, com alguma contundência, como as Forças de Defesa e Segurança estão a fazer, porque a falta de concentração é o que os nossos inimigos internos e externos querem.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3303,
+      "body_end": 3568,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-732660-b00017",
+      "text": "> Nós temos que nos concentrar, abraçarmo-nos e avançarmos. Temos estado, segundo a segundo, a seguir o trabalho que os jovens no terreno estão a fazer.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3570,
+      "body_end": 3722,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-732660-b00018",
+      "text": "> It was another attack. It was not bigger than so many others we have had, but it has this impact because it was near the operations underway in that province.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3724,
+      "body_end": 3884,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-732660-b00019",
+      "text": "> Let's not lose focus, let's not get stuck. We will tackle the enemy as we have been doing, with forcefulness, as the Defence and Security Forces are doing, because lack of focus is what our internal and external enemies want.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3886,
+      "body_end": 4113,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-732660-b00020",
+      "text": "> We have to focus, hug each other and move forward. We have been, second by second, following the work that the young people on the ground are doing.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4115,
+      "body_end": 4265,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-732660-b00021",
+      "text": "In support, Portugal has sent 60 soldiers to train Mozambique's armed forces in the coming days.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4267,
+      "body_end": 4363,
+      "source_links": [
+        "https://expresso.pt/politica/2021-03-29-Portugal-envia-60-militares-para-Mocambique-apos-ataque-em-Palma-12a43bfa"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "d7ea3658f8a0099eaed05c43888a51ee7ce46ae92677097401c3900988fbe9f8",
+  "word_count": 717,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 4363,
+  "retrieved_at": "2026-11-16T22:30:02.521181+00:00",
+  "raw_html_sha256": "c7becdf881987a2e677155b9c90e712f66772485a7beb6528ac61196a6030086",
+  "resolved_source_url": "https://globalvoices.org/2021/04/04/fresh-attack-in-mozambiques-cabo-delgado-kills-dozens-and-evacuates-town/",
+  "canonical_url": "https://globalvoices.org/2021/04/04/fresh-attack-in-mozambiques-cabo-delgado-kills-dozens-and-evacuates-town/",
+  "source_bytes": 188386,
+  "authors": [
+    {
+      "name": "Global Voices Lusofonia",
+      "url": "https://pt.globalvoices.org/author/coletivo-editorial/"
+    }
+  ],
+  "translators": [
+    {
+      "name": "Liam Anderson",
+      "url": "https://globalvoices.org/author/liam-anderson/"
+    }
+  ],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 732660,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "c7becdf881987a2e677155b9c90e712f66772485a7beb6528ac61196a6030086",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-4bd7c3e50cd16d07d4e9",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-04",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Global Voices Lusofonia",
+  "body_start": 521,
+  "body_end": 4884,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "c81e5cb5fbfe39830bcdc13aa651676b9d9ea433c1d1710cb002fc56dab33e47",
+  "text_path": "articles/gv-732660.txt",
+  "metadata_path": "metadata/gv-732660.json",
+  "attribution": "This story by Global Voices Lusofonia originally appeared on Global Voices. https://globalvoices.org/2021/04/04/fresh-attack-in-mozambiques-cabo-delgado-kills-dozens-and-evacuates-town/",
+  "content_sha256": "6d1c98b6d5a4a26d3871eefa73556aa70459ec4114c1070712ad9a0cfb2fe425",
+  "source_sha256": "c7becdf881987a2e677155b9c90e712f66772485a7beb6528ac61196a6030086",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

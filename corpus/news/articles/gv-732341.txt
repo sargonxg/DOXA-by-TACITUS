@@ -1,0 +1,67 @@
+The watchtower on the mountain of Dagestan's indigenous languages
+Written by: Artyom Malykh
+Originally published by Global Voices: https://globalvoices.org/2021/03/28/the-watchtower-on-the-mountain-of-dagestans-indigenous-languages/
+Published: 2021-03-28T14:42:30Z
+Licence: CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+Text edition: HTML converted to plain text; external media/social embeds omitted; > marks publisher blockquotes.
+
+=== ARTICLE BODY ===
+Magomed Magomedov is a Kaitag language activist from the Russian republic of Dagestan and the creator of a unique portal, Avzag (“avzag” means “language” in Ossetian), dedicated to indigenous Caucasian languages. The portal hosts samples of Caucasian languages’ bizarre phonologies, unpacks their tricky grammars, and provides a foundation for direct translation between them without the use of mediator languages.
+
+Dagestan, situated on the Caspian Sea in the North Caucasus, is a highly multilingual territory, where more than 30 ethnic groups traditionally live, with more than 40 dialects spoken. Just 20 years ago, multilingualism was widespread among the Dagestani population. People usually spoke three or four languages: their native language; Russian; another popular local language, and the language of a neighboring ethnic group.
+
+Despite accelerating migration away from remote highlander villages and ongoing language shifts, Dagestan still demonstrates a very high level of language transmission among its ethnic groups. At the same time, the local languages lack institutional support and have hardly any presence in the digital world. Though Standard Dargwa is used in education and local media, Kaitag and other local varieties have less recognition.
+
+Artyom Malykh spoke to Magomed Magomedov about his work. This interview has been edited for brevity.
+
+Artyom Malykh (AM): What is your personal background? How did you, an IT guy, discover linguistics? What inspired you?
+
+> Magomed Magomedov (MM): I am just an ordinary guy; there is nothing especially notable about my background. I finished school in Dagestan, then left for university in Russia, like many other young people from my region. The change of environment when you leave your home at a young age and face the big world triggers many questions about self-identity and awakens interest in one's intellectual property, and language is a huge part of both.
+
+AM: Do people still use the language in informal communication? Do young people speak Kaitag between themselves and is it taught in schools?
+
+> MM: Our mountainous villages used to be strong bastions of native languages where parents were sending their kids to their grandparents on summer holidays for language acquisition. And even if a child did not start to speak over those few months, it often was enough to establish a foundation by retaining the language in the child’s mind in a somewhat “packaged” state. This is how it was with me, and this “package” from my grandparents, which I had not opened in a decade, helped me a lot to reestablish the precious knowledge. However, now even in the villages, the young generation is overwhelmingly Russified. The informational landscape, the cartoons, and other modern forms of media popular among the youth are all in either Russian or English.
+
+> Another big problem is the ongoing mass migration into other parts of Russia due to the dire economic situation in the rural mountainous areas. There are many other dimensions to this problem, but one of the most significant is the complete absence of formal education in native tongues in our schools. The literary Dargwa is actually being taught a couple of hours a week in our schools. But here is the catch: it is mostly mutually non-intelligible with our local Kaitag variety, which results in people neither picking up Dargwa nor strengthening their knowledge of their mother tongue, ultimately resulting in the loss of both. And I can’t stress this enough—we don’t need two-three hours of lessons a week, we need at the very least a full 11-year primary school education in our local languages.
+
+AM: What about the digital representation of Dagestan’s languages? Is the situation different for “big” languages such as Avar, Dargwa, Kumyk, and for “smaller” ones such as Agul, Kaitag, Tsakhur?
+
+> MM: The digital representation of our languages is quite weak. The big literary languages have some simple dictionaries and corpora. However, as a result of Soviet politics, no such things were created for the smaller languages. Because why would you want a dictionary for, say, Kaitag, if there's a dictionary for Dargwa, which theoretically should cover Kaitag since they are the same language? In reality, while being closely related, they are quite different, and both of them need proper digital infrastructure. There is a strong need for new content like videos or articles that would be in demand among the youth. After all, if we don’t create content in our languages, who is going to do that?
+
+AM: Despite the relatively high level of language preservation within the community, Dagestani languages are relatively weak in terms of digital infrastructure. Why is that?
+
+> MM: It might be due to the perception that our languages are only fit for small talks in a kitchen or on a farm. There is a stereotype that for anything more serious or technological, you absolutely have to use Russian because our languages lack the necessary terminology for expressing the phenomena of the modern world. And I would say this is a sort of “cultural cringe.” These are just excuses, as neither English nor Russian nor pretty much any other language had those terms up to a certain point in their development. Sure, we are a bit behind, but a persistent and energetic push can give us the required momentum.
+
+AM: How did you come up with the idea of the Avzag portal?
+
+> MM: Around 1.5 years ago, I started to read existing linguistics papers about my language. As I was trying to learn it, I wanted to apply the knowledge I gained. Because I am a software engineer, an obvious choice was to build an application. And because I am not a linguist, I took the sounds of the language as the simplest thing I could grasp. So the very first demo was an unsophisticated sort of alphabet where you could listen to examples of pronunciation for every letter.
+
+AM: What did you find most difficult in creating Avzag?
+
+> MM: There are two dimensions to this project: the application and the language contents. The first one, while not easy, I can do myself. This part contributes to my motivation because I truly enjoy the process of engineering which allows me to significantly develop my technical skills. The most important part, however, is the language content, and it is not easy to find people who would have some language expertise and willingness to work with the app's editing tools. The older generation usually has the former, the younger one, the latter, and it isn’t often that someone has both. And given that the project is a non-profit one, a great amount of enthusiasm is needed.
+
+AM: What technologies is Avzag based on?
+
+> MM: Avzag uses simple web-frontend technologies, nothing groundbreaking. In a way, the app is just a tool for conveniently presenting the language contents, an interactive Wikipedia page, if you will. There is a simple text converter tool, and right now that is it when it comes to input data processing.
+
+> In the not-so-distant future, I plan to work on some more advanced analysis tools. I do not consider this to be a technically advanced project, but it’s something that I have always wanted to build, given how underwhelmed I was with some of the existing applications. Maybe they were good at the time of their creation, but I am not so sure about their functionality and user experience today. Maybe my app will feel as dated in five years, but that's progress for you. So, it is not really about using the most cutting-edge algorithms and tools, but rather about pushing the quality bar. And I believe we have succeeded. All the code and all the language contents are available in my public repository on GitHub. So I invite others to compete and collaborate because this is how we can create better solutions.
+
+AM: Is it more challenging to make a translation engine and dictionary for Caucasian languages compared to European ones because of their grammatical features?
+
+> MM: We’ve managed to develop an interactive phrasebook and are filling it with content. So far, I cannot say our grammar makes the process any harder than it might have been with European languages. But what I can say is that our grammars are very beautiful and very different in their own unique way. Even I, a person without any linguistic education, constantly find amazing structures and ideas while getting familiar with Caucasian languages.
+
+> I think part of the reason why our people think that our languages are less “powerful” or less functional is that we are way too used to English or Russian, and we try to directly map the grammars and meanings from foreign languages onto ours. In other words, we have stopped thinking within the mental framework that the Caucasian languages provide to us, and it is such a waste on our part. Still, it’s never too late to restore one’s intellectual sovereignty.
+
+AM: How do you get language materials for Avzag?
+
+> MM: It is all thanks to some highly enthusiastic people who care deeply about their languages. When I get to know someone who might be helpful, I tell them: look, this is what I am doing for my language, and if you think that your language can also benefit from it, you are welcome to use the system and I will be happy to help you. Although so far I have spent most of my time on the project building a strong technical foundation, now that I have it I need to start communicating about the project more, and hopefully, some local communities and language enthusiasts will find the work useful. Right now three people actively contribute their languages to the project, and I am sincerely grateful to them: Azamat Birmamit for Kabardian Circassian, Taimuraz Btemyraty for Iron Ossetian, and Abdurahim Kattir for Keren Aghul. Their company makes the work feel much less intimidating and much more fun.
+
+AM: What are your plans for developing Avzag?
+
+> MM: For the next couple of months, my main focus is to continue adding content to the phrasebook module. After that, I will start the active development phase of the dictionary module. And of course, I want to be more proactive about getting on board people who can help with other languages, especially with my own Dargin branch.
+
+AM: What are your hopes for the future of Kaitag and other local languages?
+
+> MM: I used to think that everything was lost, but now I believe that even a single passionate person with a cheerful attitude and the right tools can turn the tide of the battle. Most importantly, we have small but passionate local communities with individuals working hard to reclaim their intellectual sovereignty. And then—this is my part—we have technologies to facilitate our activities and explore innovative solutions. The future is exciting for those of us who aspire to use for good and multiply the intellectual assets provided by our languages and our culture.
+
+Editor's Note: Since the interview was conducted on March 8, Magomed Magomedov wanted to commemorate the victims of the Balkar deportation in 1944. “We ask Allah to forgive the victims,” he proclaims. “Unutma, unutdurma, keçme.”

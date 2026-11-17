@@ -1,0 +1,593 @@
+{
+  "id": "gv-703926",
+  "publisher_id": 703926,
+  "source_id": "globalvoices:703926",
+  "source_url": "https://globalvoices.org/2020/04/24/prosecutions-mount-as-russia-intensifies-fight-against-covid19-fake-news/",
+  "title": "Prosecutions mount as Russia intensifies fight against COVID-19 ‘fake news’",
+  "published_at": "2020-04-24T15:07:28Z",
+  "modified_at": "2022-04-06T05:00:39Z",
+  "api_author_id": 1658,
+  "api_content_sha256": "0368ed2aefbccd46b28e0d94393dd711ba8564c0f7aa61ec8813c1664cf2a5e8",
+  "api_response_sha256": "410cae52104626367a712fae08e767879efbd25dd5aa81c2af8b559c01594b80",
+  "api_retrieved_at": "2026-11-16T22:20:24.527578+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 245,
+      "count": 3932,
+      "name": "Disaster",
+      "slug": "disaster",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-703926-b00001",
+      "text": "Check out Global Voices’ special coverage of the global impact of COVID-19.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 75,
+      "source_links": [
+        "https://globalvoices.org/specialcoverage/covid-19-global-coverage-for-a-pandemic/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00002",
+      "text": "Russia is once again at the heart of an international “fake news” scandal. Since February, some media have accused Moscow of unleashing a coronavirus disinformation campaign. This claim was repeated in an internal document drafted by the EU's foreign policy arm on March 18.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 77,
+      "body_end": 351,
+      "source_links": [
+        "https://foreignpolicy.com/2020/02/14/russia-blame-america-coronavirus-conspiracy-theories-disinformation/",
+        "https://www.reuters.com/article/us-health-coronavirus-disinformation/russia-deploying-coronavirus-disinformation-to-sow-panic-in-west-eu-document-says-idUSKBN21518F"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00003",
+      "text": "Amid these headlines, it's easy to miss that the Russian government is also fighting a war against disinformation of its own — and its definition of “fake news” is very much in the eye of the beholder.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 353,
+      "body_end": 554,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00004",
+      "text": "At the time of writing, according to the Johns Hopkins University Map, there are over 68,000 confirmed coronavirus cases in Russia. The country is under strict quarantine measures. But for several weeks, Russia was an outlier, and recorded significantly lower deaths than other large countries and an unusually low rate of infections despite its comparatively large testing drive. There has been much speculation over this data, much of it focusing on the effectiveness of Russia's testing equipment. As late as March 21, the country only reported 306 confirmed cases — as hospitals started to fill up with unusually severe cases of pneumonia. “I have a feeling they are lying to us,” exclaimed Anastasia Vasilyeva, head of the country's medical union.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 556,
+      "body_end": 1308,
+      "source_links": [
+        "https://abcnews.go.com/International/russia-reporting-covid-19-cases-cover/story?id=69717763",
+        "https://coronavirus.jhu.edu/map.html",
+        "https://meduza.io/en/feature/2020/03/06/why-are-there-so-few-reported-covid-19-cases-in-russia",
+        "https://www.reuters.com/article/us-coronavirus-health-russia/sharp-increase-in-moscow-pneumonia-cases-fuels-fears-over-coronavirus-statistics-idUSKBN216305"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00005",
+      "text": "As the pandemic intensified in Russia, some citizens started to doubt the official figures. It appears to have been this tendency which led President Vladimir Putin to state on March 4 that claims of thousands of cases in Russia were “fakes” which most likely came “from abroad,” intended to sow panic among the population.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1310,
+      "body_end": 1633,
+      "source_links": [
+        "https://www.independent.co.uk/news/world/europe/coronavirus-russia-cases-pneumonia-deaths-putin-kremlin-fake-news-a9415771.html?",
+        "https://www.vedomosti.ru/politics/news/2020/03/04/824431-putin-feiki-o-rasprostranenii-koronavirusa-postupali-iz-za-granitsi"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00006",
+      "text": "Disputes over the probable number of cases appear were at the centre of the first high-profile “fake news” row during Russia's epidemic. On March 20, independent radio station Ekho Moskvy removed the transcript and recording of a conversation with political scientist Valery Solovey from its website. The demand came from Roskomnadzor, the Russian state media watchdog, which on March 18 had threatened to remove Russian news outlets’ licences or block their websites if they published “fakes” about the coronavirus. Roskomnadzor explained that it had to “remove inaccurate socially significant information which posed a massive disruption of public order,” but did not specify the offending content in Ekho Moskvy's broadcast. It is now believed that what irked the authorities had been Solovey's estimation that the coronavirus had already claimed 1,600 lives in Russia, and comparison of the Kremlin's handling of the crisis to the Soviet Union's response to the 1986 Chernobyl nuclear disaster.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1635,
+      "body_end": 2633,
+      "source_links": [
+        "https://rkn.gov.ru/news/rsoc/news72342.htm",
+        "https://www.rkn.gov.ru/news/rsoc/news72366.htm",
+        "https://www.svoboda.org/a/30499882.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00007",
+      "text": "At the same time, an online publication in Magadan also fell foul of Roskomnadzor. On March 20, Govorit Magadan was threatened with a large fine in connection with an article claiming that a man with a suspected coronavirus infection had died in the city in Russia's Far East. Although the man's infection was never confirmed, the publication defended its reporting; as an editor told state media outlet RIA Novosti: “either the patient wasn't in hospital, either he wasn't suspected of having the coronavirus, or he didn't die. All these things happened.”",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2635,
+      "body_end": 3191,
+      "source_links": [
+        "https://ria.ru/20200322/1568968868.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00008",
+      "text": "When the local edition of prominent national newspaper Kommersant reported that 1,000 graves had been prepared for coronavirus victims in a single cemetery in the city of Ufa, on April 12 its editors received exactly the same call — Roskomnadzor demanded the removal of the article. And when Novaya Gazeta journalist Elena Milashina wrote a critical article about the Chechen authorities’ handling of the crisis, the Prosecutor General demanded its removal on April 16 due to inaccuracies. Milashina was later publicly threatened by Chechnya's leader Ramzan Kadyrov.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 3193,
+      "body_end": 3759,
+      "source_links": [
+        "https://novayagazeta.ru/articles/2020/04/13/84881-ramzan-kadyrov-o-novoy-gazete-bez-kommentariev",
+        "https://roskomsvoboda.org/57372/",
+        "https://www.idelreal.org/a/30548494.html?fbclid=IwAR1Hex5jYlT1yWv4CvyAz6axCUoxvl-NRITw02BBp-bNrGkFwhn79KUzGm8"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00009",
+      "text": "It is not only publications which have fallen foul of this trend. Several individuals in recent weeks have been accused of sharing “inaccurate socially significant information.” Or to translate from Russian legalese: ‘fake news’.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3761,
+      "body_end": 3990,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00010",
+      "text": "A law against fake news",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3992,
+      "body_end": 4015,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00011",
+      "text": "A law against publishing “unreliable socially significant information disseminated under the guise of truthful messages” entered force in Russia in March 2019. The law, which was introduced alongside a controversial ban on “offending” the authorities.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 4017,
+      "body_end": 4268,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00012",
+      "text": "Read more: Kremlin's new law against ‘online disrespect’ proves hard to implement",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4270,
+      "body_end": 4351,
+      "source_links": [
+        "https://globalvoices.org/2019/07/16/kremlins-law-against-online-disrespect-implementation/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00013",
+      "text": "The 2019 law had made fake news an administrative offence, punishable by fines. It was seldom, and inconsistently, used by prosecutors — until this March, when the number of trials under the law increased sharply.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4353,
+      "body_end": 4566,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00014",
+      "text": "On April 1 this year, Putin upped the stakes by signing a new law which makes sharing fake news a criminal offence. It was accompanied by another law which makes violating quarantine measures a criminal offence if doing so causes deaths. Criminal liability for sharing “fake news” could now mean a fine of up to two million rubles and prison sentences of up to five years. If disseminating “unreliable information” interferes with the operation of essential services, the perpetrator may be fined up to 400,000 rubles.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4568,
+      "body_end": 5086,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00015",
+      "text": "According to Stanislav Seleznev, a lawyer for the Agora International human rights NGO, one of the sticking points in the law is that authorities must prove that the culprits knew that the information was supposedly false before distributing it. This also allows the authorities to punish only one person rather than the entire chain of people who shared alleged “fake news” — imbuing it with more meaning with every share.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5088,
+      "body_end": 5511,
+      "source_links": [
+        "https://www.idelreal.org/a/30548494.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00016",
+      "text": "Seleznev and his colleagues fear that the law will have chilling effects on freedom of speech. Over the nearly three weeks since it entered force, RuNet Echo has identified at least six instances of criminal cases for spreading “fake news.”",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5513,
+      "body_end": 5753,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00017",
+      "text": "The first criminal case was brought against St Petersburg resident Anna Shushpanova due to a post she made in the Sestroretsk Asset group on VKontakte on April 2, where she claimed that a patient at a local clinic was discovered to have mild coronavirus symptoms but was later sent home by public transport. Pavel Yasman, Shushpanova's lawyer, told Meduza that the case is tricky given that it is impossible to prove that Shushpanova was “knowingly sharing” fake news, as she believed her source to be entirely trustworthy. Shushpanova also told Meduza that she believes the case was linked to her activism.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5755,
+      "body_end": 6362,
+      "source_links": [
+        "https://meduza.io/feature/2020/04/09/na-rossiyan-nachali-vozbuzhdat-ugolovnye-dela-po-novoy-statie-o-feykah-pro-koronavirus-my-uznali-u-neskolkih-figurantov-takih-del-chto-proishodit"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00018",
+      "text": "Nevertheless, administrative cases for “fake news” continue to be announced — law enforcement appear to prefer them, and have launched at least 12 since administrative measures for the offence were tightened on April 1. These cases also largely concern social media users who have cast doubt on official reports about the pandemic.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6364,
+      "body_end": 6695,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00019",
+      "text": "For example, on April 9, the police in St Petersburg launched an administrative case against Vladimir Vorontsov, administrator of a group on popular social network VKontakte called “Police Ombudsman.” Vorontsov's offending post was a recording dated on April 2 in which Vorontsov had claimed that 70 percent of people at the FSB Institute in St Petersburg had been infected with the coronavirus. According to RBK, Vorontsov said that he had first discovered the accusation against him on the RT television network, and that VKontakte had already deleted the offending post by the time he went to look for it. More recently in Surgut, a young man was charged with an administrative offence on April 21 for disseminating fake news for arguing in a social media post that the local authorities were not within their rights to arrest non-infected people for not complying with the self-isolation regime.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6697,
+      "body_end": 7596,
+      "source_links": [
+        "https://roskomsvoboda.org/57594/",
+        "https://www.rbc.ru/society/09/04/2020/5e8e55309a79475d7dee455f"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00020",
+      "text": "It must be stressed that these charges have been brought against social media users making more dangerous claims: on April 15, a 38-year-old man from Vladikavkaz was arrested for sharing a video online calling on citizens to come out of isolation and insisting that doing so posed no threat to their health.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 7598,
+      "body_end": 7905,
+      "source_links": [
+        "https://ria.ru/20200415/1570102772.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00021",
+      "text": "With COVID-19 on everybody's minds, it is clear that the Russian authorities cannot apply the new law against every social media user with a controversial opinion about the coronavirus. They may not intend to do so; on April 15, the opposition news website MBK-Media reported on a document allegedly from the Presidential Administration advocating “demonstratively” applying the fake news law against “a few bloggers” and “a couple of media outlets.”",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 7907,
+      "body_end": 8357,
+      "source_links": [
+        "https://mbk-news.appspot.com/news/v-ap-predlozhili-nakazat/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00022",
+      "text": "Thus the mounting number of “fake news” coronavirus cases, both administrative and criminal, has left some RuNet users bitter about what they see as its selective application. When the videoblogger Alexander Thorn recorded a satirical video mocking COVID-19 conspiracy theories, he faced criminal prosecution under the new law:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 8359,
+      "body_end": 8686,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00023",
+      "text": "> Friends, a CRIMINAL CASE has been brought against me for yesterday's comedy clip in which I MOCK conspiracy theories claiming that the coronavirus originated in a Russian laboratory. The reason: fake news about the origin of the virus. @sledcom_rf [investigative committee of the Russian Federation]: are you alright in the head? *Hides behind sofa*",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 8688,
+      "body_end": 9039,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-703926-b00024",
+      "text": "A stark contrast can be drawn with the appointment of Dr. Alexander Myasnikov as head of the state's Coronavirus Information Centre. Myasnikov, who regularly appears on TV as a guest of pro-Kremlin pundit Vladimir Solovyov, made several claims in February and March that the pandemic would not enter Russia, that it was “seasonal,” and that it would have abated by mid-April. He later backtracked, claiming that he recommended waiting for herd immunity.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 9041,
+      "body_end": 9494,
+      "source_links": [
+        "https://www.themoscowtimes.com/2020/04/15/tv-doctor-to-head-russias-coronavirus-information-center-a70001"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00025",
+      "text": "https://twitter.com/plushev/status/1250359832651145216",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 9496,
+      "body_end": 9550,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00026",
+      "text": "> Doctor Alexander “COVID doesn't get Russians” Myasnikov will chair the headquarters on combating the coronavirus. Is your whole staff like that or have you just picked the one with most common sense to communicate with the public?",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 9552,
+      "body_end": 9784,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-703926-b00027",
+      "text": "Among Myasnikov's duties will be to lead the fight against coronavirus-related “fake news.”",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 9786,
+      "body_end": 9877,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00028",
+      "text": "Stay safe, stay silent",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 9879,
+      "body_end": 9901,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00029",
+      "text": "Russia is not unusual in advocating repercussions against those who spreading harmful misinformation which could harm public health. But as the number of administrative and criminal cases under the new law mounts, digital rights activists warn that it is being used particularly frequently against those who openly question the state's account of the fight against the virus or official statistics of coronavirus cases and deaths.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 9903,
+      "body_end": 10333,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00030",
+      "text": "For now, anybody thinking of sharing their views about the pandemic on the RuNet would do well to take into account this advice from Sarkis Darbinyan, one of the founders of Roskomsvoboda, a Russian NGO defending freedom of information online. He suggested the following, in comments to TV Rain on April 11:",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 10335,
+      "body_end": 10642,
+      "source_links": [
+        "https://tvrain.ru/teleshow/notes/kak_ne_poluchit_shtraf_ili_srok_za_post_o_koronaviruse_instruktsija-506580/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-703926-b00031",
+      "text": "> Не публиковать информацию, которая отличается от официальных данных оперативного штаба или государственных органов. Даже со ссылкой на слова знакомых;",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 10644,
+      "body_end": 10796,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-703926-b00032",
+      "text": "> Не шутить про коронавирус — у полиции и прокуратуры нет никакого чувства юмора, и за любую шутку, которая не соответствует официальной информации властей, могут привлечь к ответственности;",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 10798,
+      "body_end": 10988,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-703926-b00033",
+      "text": "> Если вы все-таки решили пошутить или выразить свое мнение о коронавирусе, отличное от официального, стоит поставить дисклеймер/хештег с указанием на это. Это объясняется тем, что в таком случае следствию «придется анализировать не только контент, но и комментарий самого пользователя о том, что к его сообщению не надо относиться серьезно.",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 10990,
+      "body_end": 11331,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-703926-b00034",
+      "text": "> Do not publish any information which differs from official data from the operational headquarters or other government bodies. Even if supported by the words of acquaintances.",
+      "page": null,
+      "paragraph": 34,
+      "body_start": 11333,
+      "body_end": 11509,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-703926-b00035",
+      "text": "> Do not make jokes about the coronavirus. Neither police nor prosecutors have a sense of humour; they can hold you accountable for any joke which does not correspond to official information.",
+      "page": null,
+      "paragraph": 35,
+      "body_start": 11511,
+      "body_end": 11702,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-703926-b00036",
+      "text": "> If you still decide to joke about the coronavirus or in any way express an opinion which differs from the official line, you must add a disclaimer or hashtag which indicates this. This requirement is explained by the fact that the investigators will have to analyse not only the content of the offending message but also any user comments which suggest that the message should or should not be taken seriously.",
+      "page": null,
+      "paragraph": 36,
+      "body_start": 11704,
+      "body_end": 12116,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "15f70610f1a61d311d0ac6af7e434feb2e599b58f939626e2f788fefcb5f7752",
+  "word_count": 1912,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 12116,
+  "retrieved_at": "2026-11-16T22:23:26.848057+00:00",
+  "raw_html_sha256": "c6383561072f65be2163a0bd45d2340089ccb65ccac7ca74d24a1ffe02a526ef",
+  "resolved_source_url": "https://globalvoices.org/2020/04/24/prosecutions-mount-as-russia-intensifies-fight-against-covid19-fake-news/",
+  "canonical_url": "https://globalvoices.org/2020/04/24/prosecutions-mount-as-russia-intensifies-fight-against-covid19-fake-news/",
+  "source_bytes": 198214,
+  "authors": [
+    {
+      "name": "Maxim Edwards",
+      "url": "https://globalvoices.org/author/maxim-edwards/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 703926,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "c6383561072f65be2163a0bd45d2340089ccb65ccac7ca74d24a1ffe02a526ef",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-bd78fc210e81aab96a8c",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-04",
+    "eligible_month_documents": 101,
+    "selected_month_documents": 84,
+    "inclusion_probability": 0.8316831683168316,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Maxim Edwards",
+  "body_start": 484,
+  "body_end": 12600,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "5c8722853addfdbd609e97574a2609986a2a3d3eb07a1a61374cb6aad7b224da",
+  "text_path": "articles/gv-703926.txt",
+  "metadata_path": "metadata/gv-703926.json",
+  "attribution": "This story by Maxim Edwards originally appeared on Global Voices. https://globalvoices.org/2020/04/24/prosecutions-mount-as-russia-intensifies-fight-against-covid19-fake-news/",
+  "content_sha256": "570f9e1140bdf3b55f0c1b3764860c1a440088a6f64205c55090632bce09d6b8",
+  "source_sha256": "c6383561072f65be2163a0bd45d2340089ccb65ccac7ca74d24a1ffe02a526ef",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

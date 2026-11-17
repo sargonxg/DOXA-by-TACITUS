@@ -1,0 +1,459 @@
+{
+  "id": "gv-731752",
+  "publisher_id": 731752,
+  "source_id": "globalvoices:731752",
+  "source_url": "https://globalvoices.org/2021/03/19/the-difficulties-journalists-face-covering-the-covid-19-pandemic-in-three-african-countries/",
+  "title": "The difficulties journalists face covering the COVID-19 pandemic in three African countries",
+  "published_at": "2021-03-19T20:24:03Z",
+  "modified_at": "2021-03-19T20:24:03Z",
+  "api_author_id": 2434,
+  "api_content_sha256": "b6b1d833bb8df326107ef1fc124ec8f8bd9756f162a20eec4aa4ced103d11941",
+  "api_response_sha256": "c591ed8b34d893450a7ee028fc86046db8a591fa7520310c35490fea352169e4",
+  "api_retrieved_at": "2026-11-16T22:20:33.702775+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 110,
+      "count": 361,
+      "name": "Cote d'Ivoire",
+      "slug": "cote-divoire",
+      "parent": 15
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 117,
+      "count": 752,
+      "name": "Ghana",
+      "slug": "ghana",
+      "parent": 15
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 131,
+      "count": 1641,
+      "name": "Nigeria",
+      "slug": "nigeria",
+      "parent": 15
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-731752-b00001",
+      "text": "Three prominent journalists in West Africa recently lectured on the rigors of reporting during the COVID-19 pandemic in urban West Africa.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 138,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00002",
+      "text": "Former bureau chief Patrick Fort with Agence France-Presse (AFP) in Abidjan, Côte d’Ivoire, Nigeria's Emmanuel Akinwotu with The Guardian, and Seth Boateng with MyJoyOnline in Ghana, spoke to U.S. students at Pacific University, Oregon, virtually over Zoom between February 24 and March 3, 2021.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 140,
+      "body_end": 435,
+      "source_links": [
+        "https://muckrack.com/patrick-fort",
+        "https://twitter.com/ea_akin",
+        "https://twitter.com/sk22boateng?lang=en",
+        "https://www.pacificu.edu/calendar/west-african-speaker-series-seth-boateng"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00003",
+      "text": "The journalists noted a common problem of trying to combat fake news around localized African traditions. They also faced the ongoing difficulty of having to use masks, sanitizers and protective clothing—and so causing mistrust—while conducting interviews in volatile situations in urban African cities.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 437,
+      "body_end": 740,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00004",
+      "text": "As Nigeria's correspondent for The Guardian, Akinwotu said his challenge has been trying to track down a truer version of what is happening on the ground in Lagos, versus the various announcements by the Nigerian government. Misinformation abounds, he said.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 742,
+      "body_end": 999,
+      "source_links": [
+        "https://www.theguardian.com/world/africa"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00005",
+      "text": "For example, in April 2020, gravediggers in Kano, Nigeria began noticing a major uptick in the number of bodies coming in for burial each day, yet the Kano State government said COVID-19 had not reached the city.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1001,
+      "body_end": 1213,
+      "source_links": [
+        "https://www.theguardian.com/global-development/2020/may/11/we-depend-on-god-gravediggers-on-frontline-of-kanos-covid-19-outbreak"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00006",
+      "text": "In his lecture, Akinwotu told how he covered the Kano story by interviewing several gravediggers. The city of Kano, notably, did not have testing centers to identify whether the increase in deaths was from COVID-19:",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1215,
+      "body_end": 1430,
+      "source_links": [
+        "https://www.youtube.com/watch?v=uH2Z80IhKcY"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00007",
+      "text": "> So you had government officials denying that there was anything happening at all, and gravediggers saying what they were seeing was something they’d never seen before. That’s an example of how on-the-ground reporting can make up for a lack of data, reliable data.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1432,
+      "body_end": 1697,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731752-b00008",
+      "text": "READ MORE: The Kano COVID-19 deaths: Stories untold (Part I) & The Kano COVID-19 deaths: Forced relocations and disinformation creates widespread confusion (Part II)",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1699,
+      "body_end": 1864,
+      "source_links": [
+        "https://globalvoices.org/2020/06/19/the-kano-covid-19-deaths-forced-relocations-and-disinformation-creates-widespread-confusion-part-ii/",
+        "https://globalvoices.org/2020/06/19/the-kano-covid-19-deaths-stories-untold-part-i/"
+      ],
+      "source_kind": "h5",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00009",
+      "text": "Adding to Akinwotu’s observations about disinformation, AFP journalist Patrick Fort, who covered Côte d’Ivoire for five years, said in his March 1 lecture that combating fake news in the capital, Abidjan, was a major mission for his news bureau.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1866,
+      "body_end": 2111,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00010",
+      "text": "For example, like in many West African nations, the local marabouts in Abidjan, Côte d’Ivoire act as spiritual and traditional doctors. When the pandemic hit, they began adding claims about their powers over COVID-19 to their media ads. Fort asserts that:",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2113,
+      "body_end": 2368,
+      "source_links": [
+        "https://worldcrunch.com/coronavirus/africa39s-healers-quacks-and-charlatans-cash-in-on-coronavirus",
+        "https://www.britannica.com/topic/marabout"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00011",
+      "text": "> One of the big ads they had was they could help you out with COVID-19. Obviously, it’s not true. That’s also one of the stories we worked on a lot, to work on fake news, or things that are spreading that are completely wrong.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2370,
+      "body_end": 2597,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-731752-b00012",
+      "text": "AFP also covered the rush in Côte d'Ivoire to use traditional neem tree leaves, as people believed internet claims that these plants, traditionally used to help against malaria, could help cure COVID-19.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2599,
+      "body_end": 2802,
+      "source_links": [
+        "https://factuel.afp.com/lefficacite-du-neem-contre-le-nouveau-coronavirus-na-pas-ete-scientifiquement-prouvee",
+        "https://malariajournal.biomedcentral.com/articles/10.1186/1475-2875-7-138",
+        "https://www.youtube.com/watch?v=wa0bp-lX4aM&ab_channel=FRANCE24"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00013",
+      "text": "“In Abidjan people would run and try to strip trees of bark and peel off the leaves and have it. There was a big scare,” he added. The myth around neem tree leaves was later debunked in Malaysia and India. In trying to educate Ivoirians about the use of the neem leaves, AFP cited an October 12, 2020 statement by the World Health Organization reiterating that there was no cure for COVID-19.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2804,
+      "body_end": 3196,
+      "source_links": [
+        "https://factcheck.afp.com/no-scientific-evidence-neem-leaves-can-cure-covid-19-and-its-symptoms-doctors-say",
+        "https://www.who.int/news-room/q-a-detail/q-a-coronaviruses"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00014",
+      "text": "Masks, sanitizer, and the distrust of journalists",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3198,
+      "body_end": 3247,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00015",
+      "text": "Journalists Patrick Fort and Seth Boateng, covering Côte d’Ivoire and Ghana, respectively, mentioned the many obstacles that masks, sanitizers, and technology, posed for reporting in an African context.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3249,
+      "body_end": 3451,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00016",
+      "text": "Fort reflected on the difficulty of trying to cover Côte d'Ivoire’s November 2020 national election between incumbent President Alassane Ouattara and the opposition party during the pandemic. The political situation in Abidjan and the rural areas posed multiple reporting problems of security and health.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3453,
+      "body_end": 3757,
+      "source_links": [
+        "https://www.aljazeera.com/news/2020/11/3/ivory-coast-election-president-ouattara-wins-third-term"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00017",
+      "text": "“But the opposition in some parts of the country blocked the roads and we had to see them [while] wearing masks, and that scared them. They kind of think we are there to hide from them or not showing who we really are. Seeing people come around with masks and a health message is a big problem for them. They had suspicion around who we were and if we were hiding,” Fort said in his March 1 Zoom lecture.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3759,
+      "body_end": 4163,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00018",
+      "text": "Fort also noted that video interviews with sources were a problem because the internet connection is unstable in many rural locations. He travelled with his team to Niger in December to cover the presidential election between the parties of Mohammed Bazoum and Mahamane Ousmane. Unable to interview the leaders online, his team negotiated an interview with the president in an open space.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4165,
+      "body_end": 4553,
+      "source_links": [
+        "https://www.youtube.com/watch?v=yT7V_ewCR7c"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00019",
+      "text": "“When we interviewed the president of Niger before the election, his security absolutely wanted to disinfect everything we had. So they sprayed the microphone so much that the microphone wasn’t working because it was full of alcohol and water. So we had to use another microphone and get another mask,” Fort said.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 4555,
+      "body_end": 4868,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00020",
+      "text": "The challenge of wearing personal protective equipment while in the field was also mentioned by Boateng of MyJoyOnline in Ghana, who spoke to students on February 24–the week that Ghana received its first shipment of vaccines.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4870,
+      "body_end": 5096,
+      "source_links": [
+        "https://www.myjoyonline.com/ghana-to-receive-first-batch-of-covid-19-vaccines-on-wednesday/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00021",
+      "text": "Boateng said that covering COVID-19 in Ghana was difficult because journalists now have to wear personal protective equipment when shooting video in the field, otherwise, they must settle for phone interviews.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 5098,
+      "body_end": 5307,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00022",
+      "text": "He said his newsroom underwent the same COVID-19 safety measures as many other businesses, including social distancing and masking. The newsroom administration even gave Vitamin C and zinc supplements to employees for free.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 5309,
+      "body_end": 5532,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00023",
+      "text": "“In my newsroom, we are close to about 40. It’s a big newsroom because we are doing it for television, online and radio. … Some people with underlying health conditions had to stay out of the office and work from home. In my office, almost every week we get a case,” said Boateng. One of the MyJoyOnline news anchors now routinely broadcasts the news from his home, as he has underlying health conditions.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5534,
+      "body_end": 5939,
+      "source_links": [
+        "https://www.youtube.com/watch?v=EqqT8R_sD30"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00024",
+      "text": "Journalism students at the private university, Pacific University in Forest Grove, Oregon, later said it was eye-opening to hear how many similarities the US public shared with people in Africa in responding to COVID-19, including the problem of fake news on social media.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5941,
+      "body_end": 6213,
+      "source_links": [
+        "https://www.pacificu.edu/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-731752-b00025",
+      "text": "“I just thought it was very interesting to hear we aren’t the only people that don’t trust our government at some times,” said 20-year-old student editor Ella Cutter for the Pacific University newspaper, The Pacific Index. “It’s a very relevant parallel to what is happening in America right now.”",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 6215,
+      "body_end": 6512,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "0ef3eb5816db10c77bbccf1a25f514e9b2aa4247b2155450867ecf98aafc0d4c",
+  "word_count": 1054,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "script,style,iframe,object,embed,video,audio,img,picture,svg",
+      "count": 2,
+      "reason": "Executable or external/non-text media excluded"
+    }
+  ],
+  "body_characters": 6512,
+  "retrieved_at": "2026-11-16T22:29:51.886430+00:00",
+  "raw_html_sha256": "36ae2a72c14c3c2f49e61b9ca21466dd92772a58b135abbfdac96e1d0c648a03",
+  "resolved_source_url": "https://globalvoices.org/2021/03/19/the-difficulties-journalists-face-covering-the-covid-19-pandemic-in-three-african-countries/",
+  "canonical_url": "https://globalvoices.org/2021/03/19/the-difficulties-journalists-face-covering-the-covid-19-pandemic-in-three-african-countries/",
+  "source_bytes": 192587,
+  "authors": [
+    {
+      "name": "Jeslyn Lemke",
+      "url": "https://globalvoices.org/author/jeslyn/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 731752,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "36ae2a72c14c3c2f49e61b9ca21466dd92772a58b135abbfdac96e1d0c648a03",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-d30b752a1271dd99b54a",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-03",
+    "eligible_month_documents": 91,
+    "selected_month_documents": 76,
+    "inclusion_probability": 0.8351648351648352,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Jeslyn Lemke",
+  "body_start": 518,
+  "body_end": 7030,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "b2a8d0d78613a603cd90650f5abb615c6b4a40e8b56f8f3bdd5cc80b30126107",
+  "text_path": "articles/gv-731752.txt",
+  "metadata_path": "metadata/gv-731752.json",
+  "attribution": "This story by Jeslyn Lemke originally appeared on Global Voices. https://globalvoices.org/2021/03/19/the-difficulties-journalists-face-covering-the-covid-19-pandemic-in-three-african-countries/",
+  "content_sha256": "9e781fbdc554fd1b1b118bd3529592f620fd7cef49f596b00107f30185a250b7",
+  "source_sha256": "36ae2a72c14c3c2f49e61b9ca21466dd92772a58b135abbfdac96e1d0c648a03",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

@@ -1,0 +1,298 @@
+{
+  "id": "gv-752108",
+  "publisher_id": 752108,
+  "source_id": "globalvoices:752108",
+  "source_url": "https://globalvoices.org/2021/12/08/russia-blocks-access-to-tor-browser-website/",
+  "title": "Russia blocks access to Tor browser website",
+  "published_at": "2021-12-08T14:36:53Z",
+  "modified_at": "2021-12-08T14:36:53Z",
+  "api_author_id": 2363,
+  "api_content_sha256": "9b16099993dc4aa937ecb7d43a2dbbec5dd7fefb68ab636869e4b6b3fec3dfdd",
+  "api_response_sha256": "23436aa1fa433e408d5199ff0c9b2c6a1aa87ee7b8d8d3a2bcdb8b32f913a715",
+  "api_retrieved_at": "2026-11-16T22:20:39.683023+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 20,
+      "count": 5130,
+      "name": "Breaking News",
+      "slug": "breaking-news",
+      "parent": 238
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 57,
+      "count": 13707,
+      "name": "Eastern &amp; Central Europe",
+      "slug": "eastern-central-europe",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 338,
+      "count": 3420,
+      "name": "Russian",
+      "slug": "russian",
+      "parent": 317
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-752108-b00001",
+      "text": "Russian authorities blocked access to the Tor browser website, torproject.org, on Wednesday, 8 December, according to reports from Tor developers and users. The official block follows earlier reports this week of Russian internet service providers blocking access to the service, with some Russian users unable to access the Tor Project website since 1 December.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 362,
+      "source_links": [
+        "https://gitlab.torproject.org/tpo/community/support/-/issues/40050#note_2765035",
+        "https://meduza.io/news/2021/12/03/zhiteli-rossii-pozhalovalis-na-blokirovku-tor"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752108-b00002",
+      "text": "Initially a research project funded by the U.S. Navy, Tor is now run by a nonprofit group based in Seattle, WA. Tor (an acronym for “The Onion Browser”) provides software that allows users to browse the internet anonymously and circumvent locally imposed internet blocks and restrictions. The Tor browser anonymizes internet traffic by sending it through a unique configuration of nodes known as an onion routing system.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 364,
+      "body_end": 784,
+      "source_links": [
+        "http://en.wikipedia.org/wiki/Tor_(anonymity_network)"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752108-b00003",
+      "text": "An estimated 300,000 Russian netizens use Tor's services daily, accounting for about 15% of all Tor users. Russia has the second largest number of Tor users globally.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 786,
+      "body_end": 952,
+      "source_links": [
+        "https://metrics.torproject.org/userstats-relay-table.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752108-b00004",
+      "text": "Russian state internet regulator Roskomnadzor said it included the Tor browser website in its registry of banned websites because it had allegedly posted “information that ensures the operation of tools that provide access to illegal content.” According to digital rights group Roskomsvoboda, the pretext for the blocking is a 2017 decision by a Saratov district court cited in Roskomnadzor's database (though the court did not decree for the website to be blocked). It is also unclear why a court decree from 2017 is only being acted on in 2021.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 954,
+      "body_end": 1500,
+      "source_links": [
+        "https://eais.rkn.gov.ru/",
+        "https://roskomsvoboda.org/post/torproject-vykatil-zerkalo/",
+        "https://saratovsky--sar.sudrf.ru/modules.php?name=sud_delo&name_op=r&vnkod=64RS0034&srv_num=1&delo_id=1540005&delo_table=g1_case&case_type=0&g1_case__JUDICIAL_UIDSS=64RS0034-01-2017-001960-48",
+        "https://www.themoscowtimes.com/2021/12/08/russia-blocks-tor-anonymity-service-a75760"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752108-b00005",
+      "text": "The Tor Project has announced that users in Russia can still use Tor services by visiting the website mirror hosted by the Electronic Frontier Foundation. It also called on Russian users to monitor the blocking of their services and appealed to digital rights groups to put pressure on the Russian authorities to stop censoring Tor.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1502,
+      "body_end": 1834,
+      "source_links": [
+        "https://blog.torproject.org/tor-censorship-in-russia/",
+        "https://twitter.com/torproject/status/1468304017914839050?ref_src=twsrc%5Etfw"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752108-b00006",
+      "text": "The blocking of Tor's website comes amid a renewed crackdown on virtual private networks (VPNs) and other online anonymity tools in Russia, which authorities say potentially allow access to illegal online content in violation of Russian legislation. In September 2021, on the eve of the parliamentary elections, Russia blocked six major VPN providers and issued a warning to Western companies behind tools such as CDN- and DNS-services that allow users to bypass Russian state censorship.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1836,
+      "body_end": 2324,
+      "source_links": [
+        "https://advox.globalvoices.org/2019/03/29/russian-regulators-ask-vpns-to-block-blacklisted-websites-but-most-have-refused/",
+        "https://globalvoices.org/2021/09/16/ahead-of-september-elections-russia-tightens-grip-on-remaining-online-freedoms/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752108-b00007",
+      "text": "The push for greater online censorship is part of the country's “sovereign internet” strategy which seeks to cement centralised state control over internet infrastructure and online spaces. The “sovereignty” measures have enabled a more centralised approach to online filtering and blocking, with internet service providers now obligated to install new hardware referred to as “technical means of countering threats” in the legislation.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2326,
+      "body_end": 2762,
+      "source_links": [
+        "https://globalvoices.org/2019/11/06/behold-russias-new-sovereign-internet/",
+        "https://roskomsvoboda.org/post/suvenir-runet-obrastaet-cenzuroy/",
+        "https://www.ponarseurasia.org/disconnecting-the-russian-internet-implications-of-the-new-digital-sovereignty-bill/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-752108-b00008",
+      "text": "This equipment is controlled centrally by Roskomnadzor and other state bodies and allows for unaccountable centralised blocking of websites which is harder to track and record. The hardware has already enabled throttling of platforms such as Twitter, as well as blanket blocking of opposition voting websites and apps earlier this year.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2764,
+      "body_end": 3100,
+      "source_links": [
+        "https://globalvoices.org/2021/03/10/russian-internet-regulator-roskomnadzor-throttles-twitter-loading-speeds/",
+        "https://globalvoices.org/2021/07/26/russian-internet-censor-blocks-team-navalny-websites/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "2da717eea1cc2c9160c5331a95adedb00afadbd98aaa9600a9d3b92b70792756",
+  "word_count": 480,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 1,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 3100,
+  "retrieved_at": "2026-11-16T22:32:51.985517+00:00",
+  "raw_html_sha256": "5a3f3dbcdceb1a0df2f7c3c938febaf11e1de36410ac2a36ec111b2eeebedf69",
+  "resolved_source_url": "https://globalvoices.org/2021/12/08/russia-blocks-access-to-tor-browser-website/",
+  "canonical_url": "https://globalvoices.org/2021/12/08/russia-blocks-access-to-tor-browser-website/",
+  "source_bytes": 189660,
+  "authors": [
+    {
+      "name": "RuNet Echo",
+      "url": "https://globalvoices.org/author/runet-echo/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 752108,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "5a3f3dbcdceb1a0df2f7c3c938febaf11e1de36410ac2a36ec111b2eeebedf69",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-1a1c0f70cb3694794fe2",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-12",
+    "eligible_month_documents": 84,
+    "selected_month_documents": 70,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "RuNet Echo",
+  "body_start": 420,
+  "body_end": 3520,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "170587ffa977e211aef57c0db82eae37d7cddf58ed315529a1fb7f453f6035e8",
+  "text_path": "articles/gv-752108.txt",
+  "metadata_path": "metadata/gv-752108.json",
+  "attribution": "This story by RuNet Echo originally appeared on Global Voices. https://globalvoices.org/2021/12/08/russia-blocks-access-to-tor-browser-website/",
+  "content_sha256": "894e45d6dc2f1eaf6533eb45f79f0ef0e0f6f6bbf3c089079d3e198358b6394a",
+  "source_sha256": "5a3f3dbcdceb1a0df2f7c3c938febaf11e1de36410ac2a36ec111b2eeebedf69",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

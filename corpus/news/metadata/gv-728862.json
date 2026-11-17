@@ -1,0 +1,411 @@
+{
+  "id": "gv-728862",
+  "publisher_id": 728862,
+  "source_id": "globalvoices:728862",
+  "source_url": "https://globalvoices.org/2021/03/23/this-open-source-software-is-helping-barbados-and-jamaica-preserve-their-cultural-heritage/",
+  "title": "This open-source software is helping Barbados and Jamaica preserve their cultural heritage",
+  "published_at": "2021-03-23T02:34:37Z",
+  "modified_at": "2021-04-13T21:18:06Z",
+  "api_author_id": 306,
+  "api_content_sha256": "5a556b634383da3cba0532857f271abe5f2d4e465da62a9738603540b6e384c5",
+  "api_response_sha256": "c591ed8b34d893450a7ee028fc86046db8a591fa7520310c35490fea352169e4",
+  "api_retrieved_at": "2026-11-16T22:20:33.702775+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 239,
+      "count": 12626,
+      "name": "Arts &#038; Culture",
+      "slug": "arts-culture",
+      "parent": 238
+    },
+    {
+      "id": 162,
+      "count": 1351,
+      "name": "Barbados",
+      "slug": "barbados",
+      "parent": 1353
+    },
+    {
+      "id": 1353,
+      "count": 10223,
+      "name": "Caribbean",
+      "slug": "caribbean",
+      "parent": 219
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 1477,
+      "count": 1072,
+      "name": "Good News",
+      "slug": "good-news",
+      "parent": 238
+    },
+    {
+      "id": 258,
+      "count": 8694,
+      "name": "History",
+      "slug": "history",
+      "parent": 238
+    },
+    {
+      "id": 176,
+      "count": 2263,
+      "name": "Jamaica",
+      "slug": "jamaica",
+      "parent": 1353
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-728862-b00001",
+      "text": "The Getty Conservation Institute, famous for the role it plays in facilitating the understanding and appreciation of art, is perhaps less well known for its efforts around the preservation of global heritage sites and history. Most recently, Getty’s Arches software was used in Barbados and Jamaica in order to highlight the cultural heritage of both islands in ways that give voice to those who have been historically disenfranchised.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 435,
+      "source_links": [
+        "https://heritagebarbados.gov.bb/index.htm",
+        "https://siteinventory.jnht.com",
+        "https://www.getty.edu/conservation/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00002",
+      "text": "Arches, the free, open-source, cultural data management software Getty developed, helped local heritage professionals in Barbados and Jamaica to feature various locations, stories and traditions that make each island unique—an approach that Alexandria Sivak, Getty's International Communications Manager, calls “an interesting intersection of history, archaeology, and technology.”",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 437,
+      "body_end": 818,
+      "source_links": [
+        "http://www.getty.edu/conservation/our_projects/field_projects/arches/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00003",
+      "text": "Via email interviews with Sivak, as well as with David Myers and Alison Dalgity of the Getty Conservation Institute, I learned more about the software. Myers describes Arches as a tool designed to “respond to the critical and common challenges of cultural heritage organizations around the world who are responsible for heritage stewardship, such as those in Jamaica and Barbados, around creating and maintaining modern inventory systems.”",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 820,
+      "body_end": 1259,
+      "source_links": [
+        "https://www.getty.edu/conservation/",
+        "https://www.getty.edu/conservation/about/staff_bios_buildings.html",
+        "https://www.getty.edu/conservation/about/staff_bios_web.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00004",
+      "text": "Arches has the ability to record, map and describe all types of cultural resources (archaeological sites, heritage buildings, even cultural landscapes), manage the data and make it available online. Dalgity says the goal is “to build a robust open source community to engage with and support Arches for the long term, and to help heritage organizations around the world […] protect significant cultural heritage”, with Sivak adding that in the past, it had been costly and difficult for countries to identify and map their historical places:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1261,
+      "body_end": 1802,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00005",
+      "text": "> The result was often incomplete histories, or ones that favor colonialist worldviews.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1804,
+      "body_end": 1891,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-728862-b00006",
+      "text": "The Arches project is changing all that, allowing for collaboration with local communities to determine which cultural heritage sites are meaningful to them, part of a wider trend, Sivak explains, to “recontextualize known historic sites, and bring awareness to lesser-known ones”.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1893,
+      "body_end": 2174,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00007",
+      "text": "It is a shift that is especially meaningful in post-colonialist regions like the Caribbean, affording people the tools with which to explore their heritage in new ways and on their own terms.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2176,
+      "body_end": 2367,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00008",
+      "text": "To find out more about how the process worked, I interviewed (also via email) Angela Labrador, the managing partner at Coherit Associates which, as the technical consultant, worked with local teams to create inventory forms, solicit nominations for inclusion in their National Registers and document them in the Arches software.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2369,
+      "body_end": 2697,
+      "source_links": [
+        "http://www.coherit.com",
+        "http://www.coherit.com/about.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00009",
+      "text": "Janine Mendes-Franco (JMF): What was it about the history of these two islands that inspired Getty to include them in the Arches project?",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 2699,
+      "body_end": 2836,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00010",
+      "text": "> Angela Labrador (AL): Jamaica and Barbados both have a rich history of vernacular architecture, sacred places and historical sites related to emancipation and independence that have never been systematically inventoried — and […] never monitored on a continuous basis. As part of a larger 13-nation cultural heritage initiative sponsored by the Organization of American States and funded by the US Permanent Mission to the OAS, the project managers chose the Arches software to deploy in Barbados and Jamaica as pilot projects to introduce Arches to the Caribbean region.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2838,
+      "body_end": 3411,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-728862-b00011",
+      "text": "JMF: What was its scope?",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3413,
+      "body_end": 3437,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00012",
+      "text": "> AL: The project sought to strengthen cultural heritage capacity in five dimensions: professional networking, legislation, inventories, sustainable tourism, and education. Arches was part of the inventory theme, in which the principles of the US Register of Historic Places (and other examples and best practices from around the world) were adapted to local conditions and values, and the vocabulary and data fields […] customized to adapt to the needs of the Jamaica National Heritage Trust and the Barbados Ministry of Culture.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 3439,
+      "body_end": 3969,
+      "source_links": [
+        "https://www.nps.gov/subjects/nationalregister/index.htm"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-728862-b00013",
+      "text": "JMF: How has the project given these two islands agency in a region that has been culturally disenfranchised and had much of their history told from a Eurocentric perspective?",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3971,
+      "body_end": 4146,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00014",
+      "text": "> AL: Historically, the inventories of both countries have been comprised primarily of colonial monuments such as plantation great houses and European forts. Thus, the history of the Afro-Caribbean, Indo-Caribbean, and Indigenous Caribbean communities has largely been left out of ‘officialized’ heritage in the region. In addition to expanding the types of heritage sites that can be nominated to their registers and the evaluative criteria to recognize a greater range of values, the engagement with the communities themselves through grassroots solicitation of nominations of places of significance, has the potential to energize the interest of the general public in both Jamaica and Barbados in cultural heritage identified as their own. In other words, it can help build pride in collective and personal identity for a greater segment of the population whose heritage can now be represented in the register.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4148,
+      "body_end": 5061,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-728862-b00015",
+      "text": "JMF: How did the project actually work and how much of a role did technology play?",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5063,
+      "body_end": 5145,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00016",
+      "text": "> AL: The installation and data entry into Arches was actually the last step in a long process. The local teams were first introduced to best practices in heritage inventories, and through a series of workshops […] formulated forms and vocabularies that could be used to collect data. When the ground-truthing of [those] were completed and the Arches instances customized [for both islands], a workflow was established for data entry. It was clear that a long period of training and experimentation with inventory methods was essential, using real examples and hands on work. […]",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5147,
+      "body_end": 5726,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-728862-b00017",
+      "text": "> The project’s entire workflow is available as a downloadable Implementation Guide.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5728,
+      "body_end": 5812,
+      "source_links": [
+        "http://coherit.com/projectfiles/Output3ImplementationGuide.pdf"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-728862-b00018",
+      "text": "While it would be interesting to investigate the ways in which the project helped empower Caribbean people and made them reconsider their history—both on a personal level and in a professional capacity in terms of the ability of regional heritage agencies—this data does not appear to be available just yet.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 5814,
+      "body_end": 6121,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00019",
+      "text": "Debra Kay Palmer, director of world heritage and cultural conventions for Jamaica's Ministry of Culture, Gender, Entertainment and Sport, told me via email that the website has not yet been promoted across the island, likely due in part to the fact that the government's primary focus has been the COVID-19 pandemic.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6123,
+      "body_end": 6439,
+      "source_links": [
+        "https://globalvoices.org/2021/03/11/jamaicas-first-vaccination-day-brings-optimism-though-covid-19-numbers-continue-to-soar/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00020",
+      "text": "Currently, she noted, “only the professionals at the JNHT [Jamaica National Heritage Trust] are really using the site”:",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6441,
+      "body_end": 6560,
+      "source_links": [
+        "http://jnht.com/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-728862-b00021",
+      "text": "> The platform is ideal to engage [people], especially now in the COVID pandemic; however, we have been a bit behind in this arena. Currently, the Jamaica National Heritage Trust is facilitating a project to film sites to enable virtual tours and consideration is being given to adding them to the national inventory in Arches.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6562,
+      "body_end": 6889,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-728862-b00022",
+      "text": "The cultural heritage inventory of Barbados can be explored here, while Jamaica's can be found here.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 6891,
+      "body_end": 6991,
+      "source_links": [
+        "https://heritagebarbados.gov.bb/index.htm",
+        "https://siteinventory.jnht.com"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "314829527198cfd518536ca4762713a5f11d82e69c9c9e71ca184af5bee8e981",
+  "word_count": 1082,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 6991,
+  "retrieved_at": "2026-11-16T22:29:53.889157+00:00",
+  "raw_html_sha256": "1d8a2aeb58cb931878417fbf74fcf31fc89aee238ee480a4eb0a4b2bfd9b1316",
+  "resolved_source_url": "https://globalvoices.org/2021/03/23/this-open-source-software-is-helping-barbados-and-jamaica-preserve-their-cultural-heritage/",
+  "canonical_url": "https://globalvoices.org/2021/03/23/this-open-source-software-is-helping-barbados-and-jamaica-preserve-their-cultural-heritage/",
+  "source_bytes": 191792,
+  "authors": [
+    {
+      "name": "Janine Mendes-Franco",
+      "url": "https://globalvoices.org/author/janine-mendes-franco/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 728862,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "1d8a2aeb58cb931878417fbf74fcf31fc89aee238ee480a4eb0a4b2bfd9b1316",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-11cf45bfb4c0c16143c3",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-03",
+    "eligible_month_documents": 91,
+    "selected_month_documents": 76,
+    "inclusion_probability": 0.8351648351648352,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Janine Mendes-Franco",
+  "body_start": 524,
+  "body_end": 7515,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "d73c9c1ff470076210e48536367b0b0c6a55a1df6481f8c7550286616aa1354a",
+  "text_path": "articles/gv-728862.txt",
+  "metadata_path": "metadata/gv-728862.json",
+  "attribution": "This story by Janine Mendes-Franco originally appeared on Global Voices. https://globalvoices.org/2021/03/23/this-open-source-software-is-helping-barbados-and-jamaica-preserve-their-cultural-heritage/",
+  "content_sha256": "0c4b5cf1fc577415ab51966e0d347b0f510ebfca0c40f70ada38727c1d9bbb90",
+  "source_sha256": "1d8a2aeb58cb931878417fbf74fcf31fc89aee238ee480a4eb0a4b2bfd9b1316",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

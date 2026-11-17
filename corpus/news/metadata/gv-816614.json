@@ -1,0 +1,586 @@
+{
+  "id": "gv-816614",
+  "publisher_id": 816614,
+  "source_id": "globalvoices:816614",
+  "source_url": "https://globalvoices.org/2024/07/11/bangladesh-meta-accuses-ruling-party-and-think-tank-of-coordinated-inauthentic-behavior/",
+  "title": "Bangladesh: Meta accuses ruling party and think tank of coordinated inauthentic behavior",
+  "published_at": "2024-07-11T09:34:59Z",
+  "modified_at": "2024-07-11T21:53:52Z",
+  "api_author_id": 3227,
+  "api_content_sha256": "36d44c15f750733cc40717b2b6300470df8eb43c3453f8b706d67874200a5083",
+  "api_response_sha256": "1a551bfb4d6a5ca4fe42f7ccbbf3e65c57203f020ea487203f680e9191a66134",
+  "api_retrieved_at": "2026-11-16T22:21:04.288821+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 44,
+      "count": 2101,
+      "name": "Bangladesh",
+      "slug": "bangladesh",
+      "parent": 31
+    },
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 1357,
+      "count": 11357,
+      "name": "Economics &amp; Business",
+      "slug": "economics-business",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 283,
+      "count": 12645,
+      "name": "International Relations",
+      "slug": "international-relations",
+      "parent": 238
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 31,
+      "count": 10303,
+      "name": "South Asia",
+      "slug": "south-asia",
+      "parent": 219
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-816614-b00001",
+      "text": "Bangladesh is a populous country with high mobile phone penetration. However, determining the exact number of internet users in Bangladesh is still challenging. The International Telecommunication Union (ITU) estimates internet penetration at 44.5 percent as of 2023, while the government publishes a higher figure based on mobile internet subscription. Nonetheless, the number of internet users are rapidly increasing.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 419,
+      "source_links": [
+        "https://datahub.itu.int/data/?i=11624&e=BGD",
+        "https://datareportal.com/reports/digital-2023-bangladesh",
+        "https://datareportal.com/reports/digital-2024-bangladesh",
+        "https://www.prothomalo.com/bangladesh/z3iue2yn7f"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00002",
+      "text": "Many groups, including political parties, target this large online population. With money, power, and large groups of online users aligned with their ideology, targeted influence operations can be impactful.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 421,
+      "body_end": 628,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00003",
+      "text": "Tech policy think tank, the Tech Global Institute, released a study titled “How Facebook Has Become a Political Battleground in Bangladesh” just before the national elections in January 2024. The study demonstrated how the two leading political parties in Bangladesh, Awami League (AL) and Bangladesh Nationalist Party (BNP), reached millions of people through social media to influence public opinion using distinctive strategies. The research was based on data obtained from Facebook, a Meta-owned platform that is incredibly popular in Bangladesh, with over 55 percent of the country's social media users scrolling through its feeds on a monthly basis.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 630,
+      "body_end": 1285,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Awami_League",
+        "https://en.wikipedia.org/wiki/Bangladesh_Nationalist_Party",
+        "https://en.wikipedia.org/wiki/Meta_Platforms",
+        "https://gs.statcounter.com/social-media-stats/all/bangladesh",
+        "https://infolab.techglobalinstitute.com/how-facebook-has-become-a-political-battleground-in-bangladesh/",
+        "https://techglobalinstitute.com/research/facebook-political-battleground-bangladesh/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00004",
+      "text": "Elections and disinformation: A dangerous mix threatening citizens’ digital rights",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1287,
+      "body_end": 1369,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00005",
+      "text": "Bangladesh held national elections on January 7, one of the first of this landmark year of global elections. Researchers and international media have noted that social media played a crucial role in spreading disinformation during the elections in Bangladesh. Reports also highlighted a concerning amount of synthetic media, including deepfake and cheap fake videos targeting political dissidents around election time. Explicit AI-generated videos featuring several female leaders were also widely circulated.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 1371,
+      "body_end": 1880,
+      "source_links": [
+        "https://apnews.com/article/artificial-intelligence-elections-disinformation-chatgpt-bc283e7426402f0b4baa7df280a4c3fd",
+        "https://en.dismislab.com/politician-deepfake-video/",
+        "https://en.wikipedia.org/wiki/2024_Bangladeshi_general_election",
+        "https://thediplomat.com/2023/12/deep-fakes-and-disinformation-in-bangladesh/",
+        "https://www.linkedin.com/pulse/ai-generated-disinformation-bangladesh-elections-unveiling-threat-vglkf/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00006",
+      "text": "A Financial Times report indicated that, around the national election in Bangladesh, pro-government news outlets and influencers promoted AI-generated disinformation created with inexpensive tools offered by artificial intelligence start-ups. However, the amount of online political disinformation was lower than experts predicted, possibly due to the major political opposition parties boycotting the election.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1882,
+      "body_end": 2293,
+      "source_links": [
+        "https://www.ft.com/content/bd1bc5b4-f540-48f8-9cda-75c19e5ac69c"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00007",
+      "text": "Coordinated influence operations on social media by the ruling party political camp",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 2295,
+      "body_end": 2378,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00008",
+      "text": "On May 29, Meta published its Quarterly Adversarial Threat Report 2024, acknowledging that it removed 50 Facebook accounts and 98 pages from Bangladesh due to allegations of “coordinated inauthentic behavior” and spreading coordinated misleading information about the opposition BNP, even though they boycotted the election. The leaders and activists of the BNP, the political rival of the ruling AL were targeted by these accounts. Meta also stated that although the people behind this campaign attempted to conceal their identity and coordination, it found links to individuals associated with the AL and its research wing, the Center for Research and Information (CRI).",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 2380,
+      "body_end": 3052,
+      "source_links": [
+        "https://cri.org.bd/",
+        "https://en.prothomalo.com/bangladesh/homnik1p8m",
+        "https://transparency.meta.com/en-gb/metasecurity/threat-reporting/",
+        "https://www.thedailystar.net/news/bangladesh/news/meta-removes-50-fb-accounts-98-pages-linked-al-cri-3623276"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00009",
+      "text": "In such cases of influence operations, the alleged networks often operate from a foreign country. However, in this case, the network operated within Bangladesh. Meta reported that these pages used fictitious identities or mimicked the names of legitimate news outlets. Some pages even used the BNP's name to post anti-BNP content. Meta also noted that this network of accounts and pages operated cross-platform and beyond Facebook, with a presence on multiple platforms including YouTube, X (formerly Twitter), TikTok, Telegram, and their own website.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 3054,
+      "body_end": 3605,
+      "source_links": [
+        "https://www.thedailystar.net/tech-startup/news/meta-removes-pages-linked-awami-league-inauthentic-behaviour-3623091"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00010",
+      "text": "Despite clear evidence of malpractice, some accounts that Meta removed from its platform are still operating on X under the same names, and the platform has taken no action against these handles.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 3607,
+      "body_end": 3802,
+      "source_links": [
+        "https://x.com/bd_politico"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00011",
+      "text": "Meta also identified Tonmoy Ahmed, a coordinator at the CRI, as being associated with this network. Ahmed had previously been accused of spreading false propaganda and disinformation. In 2022, he was forced to resign from The Konrad Adenauer School for Young Politicians (KASYP), an international fellowship, for the same allegations, according to a report by Netra News, an investigative news platform based out of Sweden.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 3804,
+      "body_end": 4227,
+      "source_links": [
+        "https://netra.news/2022/key-awami-league-activist-forced-to-resign-international-fellowship-over-disinformation/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00012",
+      "text": "Earlier this year, TikTok, another popular platform in Bangladesh, announced in its latest transparency report that it disrupted covert influence operations in the country and removed 2,358 accounts. However, TikTok did not disclose any names behind these operations. According to TikTok, the network operated from Bangladesh and the individuals behind it created inauthentic accounts to artificially amplify pro-party narratives in Bengali targeting a local audience and aiming to manipulate election discourse. These accounts used fictitious personas, cycling through different avatars to show various people on the same accounts.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 4229,
+      "body_end": 4861,
+      "source_links": [
+        "https://www.tiktok.com/transparency/en-us/covert-influence-operations/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00013",
+      "text": "Coordinated attacks on critics: a common phenomenon",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 4863,
+      "body_end": 4914,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00014",
+      "text": "There are also instances of influence operations using Facebook in the past. In December 2020, Meta (then Facebook) banned two Bangladeshi hacker groups, Don’s Team (also known as Defense of Nation) and the Crime Research and Analysis Foundation (CRAF). The platform stated that there was evidence showing these groups misusing Facebook's network by hacking user accounts, controlling accounts, and spreading offensive, provocative, and harmful malware. In most cases, their targets were local activists, journalists, and religious minorities, including dissidents living abroad.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 4916,
+      "body_end": 5495,
+      "source_links": [
+        "https://about.fb.com/news/2020/12/taking-action-against-hackers-in-bangladesh-and-vietnam/",
+        "https://steemit.com/science/@tanjimtomal/the-most-powerful-hacker-team-of-bangladesh-don-s-team-dt",
+        "https://www.facebook.com/p/Crime-Research-and-Analysis-Foundation-CRAF-100080142236339/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00015",
+      "text": "In May of that year, Netra News reported on how Bangladeshi government-related organizations used various groups to hack critics’ Facebook accounts. Around the same time, another report revealed that a hacker group was responsible for taking down The Amar Desh Online, a Bangladeshi media outlet critical of the current regime, using false copyright claims.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 5497,
+      "body_end": 5854,
+      "source_links": [
+        "https://netra.news/2020/we-hack-facebook-state-sponsored-cybercrime-in-bangladesh/",
+        "https://netra.news/2021/copyrighted-by-the-bangladesh-state/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00016",
+      "text": "Read More: Concerted attacks against Bangladeshi activists on Facebook",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 5856,
+      "body_end": 5926,
+      "source_links": [
+        "https://globalvoices.org/2022/02/08/concerted-attacks-against-bangladeshi-activists-on-facebook/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00017",
+      "text": "Similarly, before the 2018 national elections, Facebook removed several accounts and pages. The Facebook Transparency Report for that year stated that disinformation actors used these pages to create fake websites and pages in the name of various credible media outlets to run pro-ruling party campaigns.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 5928,
+      "body_end": 6232,
+      "source_links": [
+        "https://about.fb.com/news/2018/12/take-down-in-bangladesh/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00018",
+      "text": "Fake experts drive disinformation",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 6234,
+      "body_end": 6267,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00019",
+      "text": "In September 2023, an investigation by the international news agency AFP revealed that numerous articles praising the Bangladeshi government's policies, purportedly authored by independent experts, have been published in national and international media. However, these authors frequently have dubious credentials and fabricated photos, and some may not exist at all. Some of these articles were also published or cited in reputed outlets such as Foreign Policy and China's official news agency Xinhua.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 6269,
+      "body_end": 6771,
+      "source_links": [
+        "https://www.benarnews.org/english/news/bengali/press-disinformation-09082023153017.html",
+        "https://www.tbsnews.net/bangladesh/how-afp-discovered-fake-expert-army-driving-disinformation-bangladesh-polls-696914"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00020",
+      "text": "Legal protections have backfired",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 6773,
+      "body_end": 6805,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00021",
+      "text": "Bangladesh lacks the capacity to effectively address these issues. Even when laws exist, they often fail to provide adequate protection and sometimes have the opposite effect. In 2018, the National Parliament of Bangladesh passed the Digital Security Act, which immediately raised concerns among journalists and human rights activists. They feared that the act could be misused to harass journalists and suppress freedom of expression, a fear that was later validated. According to a recent study by the Bangladeshi think tank, the Centre for Governance Studies (CGS), 7,001 cases under the Digital Security Act (DSA) were filed against 21,867 individuals, including 451 journalists, between October 2018 and September 2023.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 6807,
+      "body_end": 7531,
+      "source_links": [
+        "https://advox.globalvoices.org/2018/09/28/free-speech-advocates-say-bangladeshs-new-digital-security-act-is-ripe-for-abuse/",
+        "https://cgs-bd.com/article/24453/The-Ordeal--Five-Years-of-The-Digital-Security-Act-2018-2023",
+        "https://en.wikipedia.org/wiki/Digital_Security_Act,_2018",
+        "https://www.tbsnews.net/bangladesh/govt-data-says-7001-dsa-cases-filed-against-21867-people-5-years-cgs-840256?amp"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00022",
+      "text": "In September 2023, following widespread criticism, the government introduced the Cyber Security Act 2023, claiming it replaced the controversial Digital Security Act. However, civil society organizations argue that there are no substantive differences between the two laws. They contend that the Cyber Security Act remains restrictive and undemocratic, and continues to hinder freedom of expression, much like its predecessor.",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 7533,
+      "body_end": 7959,
+      "source_links": [
+        "https://www.linkedin.com/pulse/cybersecurity-act-2023-unofficial-english-translation-barkatullah-zbphc",
+        "https://www.newagebd.net/post/editorial/237749/govt-must-overhaul-cyber-security-act-and-then-redraft-rules",
+        "https://www.ti-bangladesh.org/articles/story/6753"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00023",
+      "text": "Read more: The government of Bangladesh quietly passed the new Cyber Security Act 2023",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 7961,
+      "body_end": 8047,
+      "source_links": [
+        "https://advox.globalvoices.org/2023/09/19/the-government-of-bangladesh-quietly-passed-the-new-cyber-security-act-2023/"
+      ],
+      "source_kind": "h4",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00024",
+      "text": "The impact on freedom of expression and internet freedom",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 8049,
+      "body_end": 8105,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00025",
+      "text": "Bangladesh's protection of digital rights and freedom of expression is deplorable and gradually shrinking. The US-based think tank Freedom House's report Freedom on the Net 2023 rates internet freedom in Bangladesh as “partly free,” with an overall declining score of 41 out of 100, indicating a concerning trend.",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 8107,
+      "body_end": 8420,
+      "source_links": [
+        "https://freedomhouse.org/country/bangladesh/freedom-net/2023"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00026",
+      "text": "Bangladesh ranks 128th in Article 19’s Global Expression Report 2024, showing a slight improvement from the previous year but still categorizing the country as a “crisis” country.",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 8422,
+      "body_end": 8601,
+      "source_links": [
+        "https://www.globalexpressionreport.org/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00027",
+      "text": "In a phone interview with Global Voices, A. Al Mamun, a journalism professor at Bangladesh's University of Rajshahi, said:",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 8603,
+      "body_end": 8725,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00028",
+      "text": "> Such incidents are undoubtedly concerning, especially when the ruling political party is behind [this behavior]. It seems that the suppression of dissent, through tactics like delegitimization and propaganda, is now expanding from offline to online spaces. However, the responsibility of platforms like Facebook must not be overlooked. This is not an isolated incident; big tech companies like Facebook have often remained silent, effectively legitimizing actions by authoritarian regimes.",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 8727,
+      "body_end": 9218,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-816614-b00029",
+      "text": "Mamun, who has investigated coordinated influence operations in the media for some time, remarked, “This kind of action essentially fractures the nexus between society and its people.”",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 9220,
+      "body_end": 9404,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-816614-b00030",
+      "text": "Bangladesh, a country in the global majority, is navigating a significant digital transition. At this critical juncture, interventions by both state and non-state actors have raised concerns about protecting democratic practices and citizens’ digital rights.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 9406,
+      "body_end": 9664,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "c170d64abcf12373a47831798e2f8d0bf110907bf211d7db6b2ca9dc29427783",
+  "word_count": 1390,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 9664,
+  "retrieved_at": "2026-11-16T22:43:36.748333+00:00",
+  "raw_html_sha256": "b6d525a35d00ece54f44f7b5794a91e1a70946a192f90f4e8f7d63a8f326416e",
+  "resolved_source_url": "https://globalvoices.org/2024/07/11/bangladesh-meta-accuses-ruling-party-and-think-tank-of-coordinated-inauthentic-behavior/",
+  "canonical_url": "https://globalvoices.org/2024/07/11/bangladesh-meta-accuses-ruling-party-and-think-tank-of-coordinated-inauthentic-behavior/",
+  "source_bytes": 196535,
+  "authors": [
+    {
+      "name": "Shoeb A",
+      "url": "https://globalvoices.org/author/shoeb/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 816614,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "b6d525a35d00ece54f44f7b5794a91e1a70946a192f90f4e8f7d63a8f326416e",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-f3d3f52e66a3cc41d971",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-07",
+    "eligible_month_documents": 72,
+    "selected_month_documents": 60,
+    "inclusion_probability": 0.8333333333333334,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Shoeb A",
+  "body_start": 506,
+  "body_end": 10170,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "5bfa20134f5cc90c467acf7cf87e143666c79e65937ca71ed73293f811ca017a",
+  "text_path": "articles/gv-816614.txt",
+  "metadata_path": "metadata/gv-816614.json",
+  "attribution": "This story by Shoeb A originally appeared on Global Voices. https://globalvoices.org/2024/07/11/bangladesh-meta-accuses-ruling-party-and-think-tank-of-coordinated-inauthentic-behavior/",
+  "content_sha256": "d9303208f11512a8534a1c7afafb6e2c14f5d284643152417d59b55ce1c18ece",
+  "source_sha256": "b6d525a35d00ece54f44f7b5794a91e1a70946a192f90f4e8f7d63a8f326416e",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

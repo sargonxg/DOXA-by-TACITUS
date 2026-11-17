@@ -1,0 +1,358 @@
+{
+  "id": "gv-802589",
+  "publisher_id": 802589,
+  "source_id": "globalvoices:802589",
+  "source_url": "https://globalvoices.org/2024/01/22/a-brazilian-municipality-has-approved-a-bill-written-by-chatgpt/",
+  "title": "A Brazilian municipality has approved a bill written by ChatGPT",
+  "published_at": "2024-01-22T19:23:21Z",
+  "modified_at": "2025-02-14T10:55:50Z",
+  "api_author_id": 2614,
+  "api_content_sha256": "12b0a70567e8b004bb3e859aa6a2fed5dfcbb169065081aff2afb57c6357810f",
+  "api_response_sha256": "b94d82a7bfdfbb16a1482284f0f390ce22611e9b2fdd5ca467fc43b151ce39d3",
+  "api_retrieved_at": "2026-11-16T22:20:59.687809+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 148,
+      "count": 2227,
+      "name": "Brazil",
+      "slug": "brazil",
+      "parent": 1354
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 256,
+      "count": 18582,
+      "name": "Governance",
+      "slug": "governance",
+      "parent": 238
+    },
+    {
+      "id": 1354,
+      "count": 14036,
+      "name": "Latin America",
+      "slug": "latin-america",
+      "parent": 219
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-802589-b00001",
+      "text": "After a bill was approved by the City Council of Porto Alegre, in the southernmost state of Brazil, Rio Grande do Sul, and sanctioned by the mayor, the city councilor who presented it decided to reveal that the text was written and included suggestions made by artificial intelligence (AI).",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 290,
+      "source_links": [
+        "https://www.camarapoa.rs.gov.br/noticias/sancionada-lei-do-vereador-ramiro-rosario-redigida-por-chatgpt"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00002",
+      "text": "The bill exempting people from paying for a new water usage meter in the event of theft was unanimously approved by councillors.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 292,
+      "body_end": 420,
+      "source_links": [
+        "https://www.camarapoa.rs.gov.br/processos/139055?utm_source=Assinantes&utm_campaign=c6ae7ad59a-EMAIL_CAMPAIGN_2023_11_29_10_27_COPY_01&utm_medium=email&utm_term=0_-5ccc3dd8a5-%5BLIST_EMAIL_ID%5D&mc_cid=c6ae7ad59a&mc_eid=fa3556ace9"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00003",
+      "text": "Councilor Ramiro Rosário revealed that his participation in conceiving the text was to send ChatGPT a 289-character directive. The tool delivered a bill with eight articles and rationale, which was incomplete in the initial draft due to character limits — something the councillor did not detect until he was warned by the Chamber's Legislative Drafting Section, and so he returned to the AI platform for additional assistance.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 422,
+      "body_end": 849,
+      "source_links": [
+        "https://www1.folha.uol.com.br/cotidiano/2023/11/lei-redigida-por-chatgpt-e-aprovada-por-unanimidade-em-porto-alegre.shtml?utm_source=Assinantes&utm_campaign=c6ae7ad59a-EMAIL_CAMPAIGN_2023_11_29_10_27_COPY_01&utm_medium=email&utm_term=0_-5ccc3dd8a5-%5BLIST_EMAIL_ID%5D&mc_cid=c6ae7ad59a&mc_eid=fa3556ace9"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00004",
+      "text": "In an interview with Folha de S. Paulo newspaper, he said:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 851,
+      "body_end": 909,
+      "source_links": [
+        "https://www1.folha.uol.com.br/cotidiano/2023/11/lei-redigida-por-chatgpt-e-aprovada-por-unanimidade-em-porto-alegre.shtml?utm_source=Assinantes&utm_campaign=c6ae7ad59a-EMAIL_CAMPAIGN_2023_11_29_10_27_COPY_01&utm_medium=email&utm_term=0_-5ccc3dd8a5-%5BLIST_EMAIL_ID%5D&mc_cid=c6ae7ad59a&mc_eid=fa3556ace9"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00005",
+      "text": "> É comum vereadores, para elaborarem leis nas suas cidades, buscarem como base uma lei parecida de outra cidade com a mesma finalidade e copiarem a redação. O ChatGPT faz a mesma coisa do jeito dele, recorrendo a um banco de dados de leis que já estão na internet. Considerando que estamos falando de dinheiro público, acho que a tecnologia tem muito a contribuir",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 911,
+      "body_end": 1275,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802589-b00006",
+      "text": "> It is common for councilors, when drafting laws in their cities, to look for a similar law from another city with the same purpose as a basis and copy the wording. ChatGPT does the same thing in its own way, using a database of laws that are already on the internet. Considering that we are talking about public money, I think technology has a lot to contribute",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1277,
+      "body_end": 1640,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802589-b00007",
+      "text": "The councilor was pleased with one of the AI's original proposals: to exempt the property owner from paying the water bill until the gadget was replaced.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1642,
+      "body_end": 1795,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00008",
+      "text": "“I thought it was a good idea, and I kept it, even though it wasn't mine,” he said, according to Matinal Jornalismo.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1797,
+      "body_end": 1913,
+      "source_links": [
+        "https://www.matinaljornalismo.com.br/matinal/newsletter/camara-aprova-lei-redigida-pelo-chatgpt/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00009",
+      "text": "Rosário only revealed his usage of an AI after the mayor sanctioned it, according to him, to create debate on the subject. Although there are no legal obstacles to preventing AI-written regulations in Brazilian laws, the City Council President Hamilton Sossmeier told news outlet G1 he considered it a “dangerous precedent”:",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1915,
+      "body_end": 2239,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00010",
+      "text": "> Considero estranho. É a primeira vez que acontece, e não tem nenhuma lei que indique que eu não possa aprovar. Hoje, não tem nada que proíba. Mas, na minha ótica, é um precedente perigoso, complicado. Podem vir outras leis mais complexas, que gerem outros tipos de impacto. Por enquanto, fica minha preocupação pessoal.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2241,
+      "body_end": 2562,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802589-b00011",
+      "text": "> I find it strange. It's the first time this has happened, and there aren't any laws indicating that I cannot approve it. Today, there is nothing that forbids it. But, from my perspective, it's a dangerous precedent. It's complicated. Other laws that are more complex may follow, generating another type of impact. For now, there is only my personal concern.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2564,
+      "body_end": 2923,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-802589-b00012",
+      "text": "Potential risks",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2925,
+      "body_end": 2940,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00013",
+      "text": "ChatGPT was created by the US-based technology firm OpenAI, based on a language model released to the public in 2022. It employs deep learning to generate human-like writing and operates in a chatbot design. While large language models’ flexibility and generative capabilities can help with prose, poetry, and programming, for example, they also raise concerns about misuse.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2942,
+      "body_end": 3316,
+      "source_links": [
+        "https://openai.com/blog/gpt-3-apps",
+        "https://www.ibm.com/topics/deep-learning"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00014",
+      "text": "In lawmaking, ChatGPT has also been used outside of Brazil. In early 2023, a Massachusetts legislator used ChatGPT to write legislation to govern generative artificial intelligence models. “ChatGPT got us 70 percent of what we needed when we wanted to draft this bill, but it didn’t get us all the way,” said Massachusetts Senator Barry Finegold, responsible for the idea.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3318,
+      "body_end": 3690,
+      "source_links": [
+        "https://www.governing.com/next/lawmakers-experiment-with-chatgpt-to-write-bills",
+        "https://www.masslive.com/politics/2023/01/mass-lawmaker-uses-chatgpt-to-help-write-legislation-limiting-the-program.html",
+        "https://www.washingtonpost.com/politics/2023/01/23/chatgpt-is-now-writing-legislation-is-this-future/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00015",
+      "text": "ChatGPT generates sentences based on its data set. It operates in two models: a paid version, with a database updated in 2023, and a free version, with its most current dataset comprising knowledge up until 2021. Besides raising questions about ownership and copyright, maintaining objectivity and avoiding bias in political contexts is a concern for some observers.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 3692,
+      "body_end": 4058,
+      "source_links": [
+        "https://www.staff.universiteitleiden.nl/binaries/content/assets/algemeen/bb-scm/nieuws/political_bias_in_chatgpt.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00016",
+      "text": "Additionally, ChatGPT has a large potential to generate disinformation and “hallucinate.” Hallucinations happen when an AI model creates output that deviates from what would be deemed normal or anticipated based on the training data it has been given.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4060,
+      "body_end": 4311,
+      "source_links": [
+        "https://apnews.com/article/technology-science-business-artificial-intelligence-afb4618ff593db9e3e51ecbd91dc3eef",
+        "https://cybernews.com/tech/chatgpts-bard-ai-answers-hallucination/",
+        "https://www.nytimes.com/2023/02/08/technology/ai-chatbots-disinformation.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00017",
+      "text": "Brazil's national congress is currently analyzing a bill that aims to regulate the use of AI in the country. Transparency, privacy protection, and the defense of democratic values must all be adhered to, according to the current form of the text.",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4313,
+      "body_end": 4559,
+      "source_links": [
+        "https://www.camara.leg.br/noticias/968967-PROPOSTA-REGULAMENTA-UTILIZACAO-DA-INTELIGENCIA-ARTIFICIAL",
+        "https://www.camara.leg.br/propostas-legislativas/2349685"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-802589-b00018",
+      "text": "In Brazil's senate, another bill is also in discussion, which also aims to regulate the use of artificial intelligence and its implementation, proposing a risk assessment before the service is made available in the country.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4561,
+      "body_end": 4784,
+      "source_links": [
+        "https://www12.senado.leg.br/noticias/materias/2023/05/12/senado-analisa-projeto-que-regulamenta-a-inteligencia-artificial",
+        "https://www25.senado.leg.br/web/atividade/materias/-/materia/157233"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "6cc63c599a7e672741315e010333da2987ab9dc7a9cf9a9b9ea465b66b6373c1",
+  "word_count": 785,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 4784,
+  "retrieved_at": "2026-11-16T22:41:58.872597+00:00",
+  "raw_html_sha256": "4dd7a856d583e64008fca2a0844524032118c722d843018ace52b0f415f8da99",
+  "resolved_source_url": "https://globalvoices.org/2024/01/22/a-brazilian-municipality-has-approved-a-bill-written-by-chatgpt/",
+  "canonical_url": "https://globalvoices.org/2024/01/22/a-brazilian-municipality-has-approved-a-bill-written-by-chatgpt/",
+  "source_bytes": 187355,
+  "authors": [
+    {
+      "name": "Giovana Fleck",
+      "url": "https://globalvoices.org/author/giovana-fleck/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 802589,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "4dd7a856d583e64008fca2a0844524032118c722d843018ace52b0f415f8da99",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-75ebc143bf8184422fc8",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2024-01",
+    "eligible_month_documents": 74,
+    "selected_month_documents": 62,
+    "inclusion_probability": 0.8378378378378378,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Giovana Fleck",
+  "body_start": 463,
+  "body_end": 5247,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "288a3f3f61080fa1631c82e697d61e37d92b2abcf3cabf81789bf1d1ec17e957",
+  "text_path": "articles/gv-802589.txt",
+  "metadata_path": "metadata/gv-802589.json",
+  "attribution": "This story by Giovana Fleck originally appeared on Global Voices. https://globalvoices.org/2024/01/22/a-brazilian-municipality-has-approved-a-bill-written-by-chatgpt/",
+  "content_sha256": "da0a5c143c3d1eab5a27eb303fd9adfc5c55b6c3e21aae17640aea2e69e77a23",
+  "source_sha256": "4dd7a856d583e64008fca2a0844524032118c722d843018ace52b0f415f8da99",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

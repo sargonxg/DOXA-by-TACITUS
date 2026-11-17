@@ -1,0 +1,340 @@
+{
+  "id": "gv-714766",
+  "publisher_id": 714766,
+  "source_id": "globalvoices:714766",
+  "source_url": "https://globalvoices.org/2020/08/05/moderate-globally-impact-locally-a-series-on-content-moderation-in-the-global-south/",
+  "title": "Moderate globally, impact locally: A series on content moderation in the Global South",
+  "published_at": "2020-08-05T17:27:07Z",
+  "modified_at": "2020-08-06T19:34:45Z",
+  "api_author_id": 1586,
+  "api_content_sha256": "b804c60ce42f03c8904d3cdf0bdfc78a4e326bc3f4aa485e3f2122e9017845ec",
+  "api_response_sha256": "d0d9c566ef851f55d3c5c375de27a43b42ee1a38db6cc7e8774e7fb67296eb3f",
+  "api_retrieved_at": "2026-11-16T22:20:28.059895+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1551,
+      "count": 2363,
+      "name": "Censorship",
+      "slug": "censorship",
+      "parent": 238
+    },
+    {
+      "id": 227,
+      "count": 12625,
+      "name": "Freedom of Speech",
+      "slug": "freedom-of-speech",
+      "parent": 238
+    },
+    {
+      "id": 259,
+      "count": 17554,
+      "name": "Human Rights",
+      "slug": "human-rights",
+      "parent": 238
+    },
+    {
+      "id": 24,
+      "count": 1672,
+      "name": "Israel",
+      "slug": "israel",
+      "parent": 14
+    },
+    {
+      "id": 265,
+      "count": 12532,
+      "name": "Law",
+      "slug": "law",
+      "parent": 238
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 54,
+      "count": 1020,
+      "name": "Myanmar (Burma)",
+      "slug": "myanmar-burma",
+      "parent": 16
+    },
+    {
+      "id": 41,
+      "count": 2347,
+      "name": "Pakistan",
+      "slug": "pakistan",
+      "parent": 31
+    },
+    {
+      "id": 93,
+      "count": 1717,
+      "name": "Palestine",
+      "slug": "palestine",
+      "parent": 14
+    },
+    {
+      "id": 72,
+      "count": 6558,
+      "name": "Russia",
+      "slug": "russia",
+      "parent": 57
+    },
+    {
+      "id": 140,
+      "count": 1197,
+      "name": "South Africa",
+      "slug": "south-africa",
+      "parent": 15
+    },
+    {
+      "id": 279,
+      "count": 11594,
+      "name": "Technology",
+      "slug": "technology",
+      "parent": 238
+    },
+    {
+      "id": 40,
+      "count": 1158,
+      "name": "Thailand",
+      "slug": "thailand",
+      "parent": 16
+    },
+    {
+      "id": 211,
+      "count": 1024,
+      "name": "Turkey",
+      "slug": "turkey",
+      "parent": 14
+    },
+    {
+      "id": 186,
+      "count": 3578,
+      "name": "U.S.A.",
+      "slug": "usa",
+      "parent": 1352
+    },
+    {
+      "id": 143,
+      "count": 803,
+      "name": "Uganda",
+      "slug": "uganda",
+      "parent": 15
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-714766-b00001",
+      "text": "This article was written by Michael Karanicolas, a Resident Fellow at Yale Law School where he leads the Wikimedia Initiative on Intermediaries and Information as part of the Information Society Project. It is the first in a series of papers published by the initiative to capture perspectives on the global impacts of platforms’ content moderation decisions. You can find the author at @M_Karanicolas on Twitter, and you can read all of the articles in the blog series here.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 475,
+      "source_links": [
+        "https://law.yale.edu/isp/initiatives/wikimedia-initiative-intermediaries-and-information/wiii-blog"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714766-b00002",
+      "text": "Every minute, more than 500 hours of video are uploaded to YouTube, 350,000 tweets are sent, and 510,000 comments are posted on Facebook. Managing and curating this firehose of content is an enormous task, and one which grants the platforms enormous power over the contours of online speech. This includes not just decisions around whether a particular post should be deleted, but also more minute and subtle interventions that determine its virality. From deciding how far to allow quack ideas about COVID-19 to take root, to the degree of flexibility that is granted to the President of the United States to break the rules, content moderation raises difficult challenges that lie at the core of debates around freedom of expression.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 477,
+      "body_end": 1212,
+      "source_links": [
+        "https://kinsta.com/blog/facebook-statistics/",
+        "https://www.bbc.com/news/technology-52903680",
+        "https://www.internetlivestats.com/twitter-statistics/",
+        "https://www.theatlantic.com/technology/archive/2020/06/twitter-trump-least-bad-option/613558/",
+        "https://www.tubefilter.com/2019/05/07/number-hours-video-uploaded-to-youtube-per-minute/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714766-b00003",
+      "text": "But while plenty of ink has been spilled on the impact of social media on America’s democracy, these decisions can have an even greater impact around the world. This is particularly true in places where access to traditional media is limited, giving the platforms a virtual monopoly in shaping the public discourse. A platform which fails to take action against hate speech might find itself instrumental in triggering a local pogrom, or even genocide. A platform which acts too aggressively to remove suspected “terrorist propaganda” may find itself destroying evidence of war crimes.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 1214,
+      "body_end": 1799,
+      "source_links": [
+        "https://www.buzzfeednews.com/article/pranavdixit/whatsapp-destroyed-village-lynchings-rainpada-india",
+        "https://www.nytimes.com/2017/08/22/world/middleeast/syria-youtube-videos-isis.html",
+        "https://www.nytimes.com/2018/10/15/technology/myanmar-facebook-genocide.html",
+        "https://www.vox.com/2018/11/26/18111859/maria-ressa-rappler-facebook-mark-zuckerberg-philippines-kara-swisher-recode-decode-podcast"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714766-b00004",
+      "text": "Platforms’ power over the public discourse is partly the result of a conscious decision by global governments to outsource online moderation functions to these private sector actors. Around the world, governments are making increasingly aggressive demands for platforms to police content which they find objectionable. The targeted material can range from risqué photos of the King of Thailand, to material deemed to insult Turkey’s founding president. In some instances, these requests are grounded in local legal standards, placing platforms in the difficult position of having to decide how to enforce a law from Pakistan, for example, which would be manifestly unconstitutional in the United States.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 1801,
+      "body_end": 2504,
+      "source_links": [
+        "https://www.hurriyetdailynews.com/zuckerberg-notes-turkeys-defamation-laws-over-ataturk-as-facebook-updates-rules-79771",
+        "https://www.independent.co.uk/life-style/gadgets-and-tech/news/facebook-thailand-king-thai-video-crop-top-bodindradebayavarangkun-maha-vajiralongkorn-a7729886.html"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714766-b00005",
+      "text": "In most instances, however, moderation decisions are not based on any legal standard at all, but on the platforms’ own privately drafted community guidelines, which are notoriously vague and difficult to understand. All of this leads to a critical lack of accountability in the mechanisms which govern freedom of expression online. And while the perceived opacity, inconsistency and hypocrisy of online content moderation structures may seem frustrating to Americans, for users in the developing world it is vastly worse.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 2506,
+      "body_end": 3027,
+      "source_links": [
+        "https://www.europol.europa.eu/publications-documents/eu-internet-referral-unit-transparency-report-2017"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714766-b00006",
+      "text": "Nearly all of the biggest platforms are based in the United States. This means not only that their decision makers are more accessible and receptive to their American user base than they are to frustrated netizens in Myanmar or Uganda, but also that their global policies are still heavily influenced by American cultural norms, particularly the First Amendment.",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 3029,
+      "body_end": 3391,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/First_Amendment_to_the_United_States_Constitution"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714766-b00007",
+      "text": "Even though the biggest platforms have made efforts to globalize their operations, there is still a massive imbalance in the ability of journalists, human rights activists, and other vulnerable communities to get through to the U.S.-based staff who decide what they can and cannot say. When platforms do branch out globally, they tend to recruit staff who are connected to existing power structures, rather than those who depend on the platforms as a lifeline away from repressive restrictions on speech. For example, the pressure to crack down on “terrorist content” inevitably leads to collateral damage against journalism or legitimate political speech, particularly in the Arab world. In setting this calculus, governments and ex-government officials are vastly more likely to have a seat at the table than journalists or human rights activists. Likewise, the Israeli government has an easier time communicating their wants and needs to Facebook than, say, Palestinian journalists and NGOs.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 3393,
+      "body_end": 4387,
+      "source_links": [
+        "https://7amleh.org/wp-content/uploads/2018/10/booklet-final2-1.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714766-b00008",
+      "text": "None of this is meant to minimize the scope and scale of the challenge that the platforms face. It is not easy to develop and enforce content policies which account for the wildly different needs of their global user base. Platforms generally aim to provide everyone with an approximately identical experience, including similar expectations with regard to the boundaries of permitted speech. There is a clear tension between this goal and the conflicting legal, cultural and moral standards in force across the many countries where they operate. But the importance and weight of these decisions demand that platforms get this balancing right, and develop and enforce policies which adequately reflect their role at the heart of political debates from Russia to South Africa. Even as the platforms have grown and spread around the world, the center of gravity of these debates continues to revolve around D.C. and San Francisco.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 4389,
+      "body_end": 5317,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714766-b00009",
+      "text": "This is the first in a series of articles which is meant to bridge the divide between the ongoing policy debates around content moderation, and the people who are most impacted by them, particularly across the global south. The authors are academics, civil society activists and journalists whose work lies on the sharp edge of content decisions. In asking for their contributions, we offered them a relatively free hand to prioritize the issues they saw as the most serious and important with regard to content moderation, and asked them to point to areas where improvement was needed, particularly with regard to the moderation process, community engagement, and transparency. The issues that they flag include a common frustration with the distant and opaque nature of platforms’ decision-making processes, a desire for platforms to work towards a better understanding of local socio-cultural dynamics underlying the online discourse, and a feeling that platforms’ approach to moderation often did not reflect the importance of their role in facilitating the exercise of core human rights. Although the different voices each offer a unique perspective, they paint a common picture of how platforms’ decision making impacts their lives, and of the need to do better, in line with the power that platforms have in defining the contours of global speech.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 5319,
+      "body_end": 6673,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-714766-b00010",
+      "text": "Ultimately, our hope in this series is to shed light on the impacts of platforms’ decisions around the world, and provide guidance on how social media platforms might do a better job of developing and applying moderation structures which reflect their needs and values of their diverse global users.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 6675,
+      "body_end": 6974,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "01e29f66cb12c7f3ebbc6d1353f1137429bd9363c558f6e7fcbe3e8fd8d2cdf5",
+  "word_count": 1097,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 6974,
+  "retrieved_at": "2026-11-16T22:26:39.522846+00:00",
+  "raw_html_sha256": "c46dec5449d432891503a6a644f0d26eb59e306dc453d3f3009739eba1c3b4bf",
+  "resolved_source_url": "https://globalvoices.org/2020/08/05/moderate-globally-impact-locally-a-series-on-content-moderation-in-the-global-south/",
+  "canonical_url": "https://globalvoices.org/2020/08/05/moderate-globally-impact-locally-a-series-on-content-moderation-in-the-global-south/",
+  "source_bytes": 194096,
+  "authors": [
+    {
+      "name": "Guest Contributor",
+      "url": "https://globalvoices.org/author/guest-contributor/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 714766,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "c46dec5449d432891503a6a644f0d26eb59e306dc453d3f3009739eba1c3b4bf",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-6f0cd8336d865ecb1e88",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2020-08",
+    "eligible_month_documents": 95,
+    "selected_month_documents": 79,
+    "inclusion_probability": 0.8315789473684211,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "holdout",
+  "author": "Guest Contributor",
+  "body_start": 509,
+  "body_end": 7483,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "a88f2fbbf5ee4494c91c5d8ba7678614d981688b73e9f102d1f1830ac9f0856f",
+  "text_path": "articles/gv-714766.txt",
+  "metadata_path": "metadata/gv-714766.json",
+  "attribution": "This story by Guest Contributor originally appeared on Global Voices. https://globalvoices.org/2020/08/05/moderate-globally-impact-locally-a-series-on-content-moderation-in-the-global-south/",
+  "content_sha256": "2e5b380e04cf92064299d262396f1a46e196cc06aff045f694be449456bfe8d2",
+  "source_sha256": "c46dec5449d432891503a6a644f0d26eb59e306dc453d3f3009739eba1c3b4bf",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

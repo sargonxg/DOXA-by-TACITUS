@@ -1,0 +1,371 @@
+{
+  "id": "gv-733018",
+  "publisher_id": 733018,
+  "source_id": "globalvoices:733018",
+  "source_url": "https://globalvoices.org/2021/04/11/should-there-be-shona-language-versions-of-google-and-social-media-sites-this-zimbawean-technologist-says-yes/",
+  "title": "Should there be Shona-language versions of Google and social media sites? This Zimbawean technologist says yes",
+  "published_at": "2021-04-11T18:22:15Z",
+  "modified_at": "2021-04-13T15:02:43Z",
+  "api_author_id": 2622,
+  "api_content_sha256": "5c02d1ab41a679e4254bde820b4f65f8b7b850d00f27d4531b4d523263383d80",
+  "api_response_sha256": "c591ed8b34d893450a7ee028fc86046db8a591fa7520310c35490fea352169e4",
+  "api_retrieved_at": "2026-11-16T22:20:33.702775+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1363,
+      "count": 12941,
+      "name": "Digital Activism",
+      "slug": "digital-activism",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 1355,
+      "count": 5871,
+      "name": "Ethnicity &amp; Race",
+      "slug": "ethnicity-race",
+      "parent": 238
+    },
+    {
+      "id": 304,
+      "count": 13861,
+      "name": "Feature",
+      "slug": "feature",
+      "parent": 218
+    },
+    {
+      "id": 262,
+      "count": 2092,
+      "name": "Indigenous",
+      "slug": "indigenous",
+      "parent": 238
+    },
+    {
+      "id": 296,
+      "count": 2217,
+      "name": "Language",
+      "slug": "language",
+      "parent": 238
+    },
+    {
+      "id": 15,
+      "count": 12492,
+      "name": "Sub-Saharan Africa",
+      "slug": "sub-saharan-africa",
+      "parent": 219
+    },
+    {
+      "id": 145,
+      "count": 827,
+      "name": "Zimbabwe",
+      "slug": "zimbabwe",
+      "parent": 15
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-733018-b00001",
+      "text": "Editor's note: From April 13-19 2021, Blessing Sibanda will be hosting the @DigiAfricanLang rotating Twitter account, which explores how technology can be used to revitalize African languages. Read more about the campaign here.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 227,
+      "source_links": [
+        "https://rising.globalvoices.org/campaigns/twitter-digiafricanlang-2021/",
+        "https://twitter.com/digiafricanlang"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733018-b00002",
+      "text": "Shona, an official language of Zimbabwe, is one of the most spoken Bantu languages, with an estimated 10.8 million speakers. But while there are a number of established historical and literary resources in Shona, the visibility of the language online is far from encouraging.",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 229,
+      "body_end": 504,
+      "source_links": [
+        "http://www.worldlanguage.com/Languages/Shona.htm",
+        "https://en.m. wikipedia.org/wiki/Shona_language",
+        "https://en.wikipedia.org/wiki/Bantu_languages",
+        "https://www.britannica.com/biography/Solomon-M-Mutswairo",
+        "https://www.kwayedza.co.zw/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733018-b00003",
+      "text": "Blessing Sibanda, a software engineer, is at the forefront of the effort to have the Shona language recognized in the field of natural language processing, the area of artificial intelligence concerned with making computers “understand” and decode written and spoken language.",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 506,
+      "body_end": 782,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Natural_language_processing"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733018-b00004",
+      "text": "Adéṣinà Ọmọ Yoòbá of Rising Voices spoke with Blessing to find out more about his work on gaining recognition for the Shona language in machine learning contexts and online.",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 784,
+      "body_end": 957,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733018-b00005",
+      "text": "Adéṣinà Ọmọ Yoòbá (AOY): Could you please tell us about yourself?",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 959,
+      "body_end": 1024,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733018-b00006",
+      "text": "> Blessing Kudzaishe Sibanda (BKS): My name is Blessing Kudzaishe Sibanda. I am a software engineer and researcher. I am currently pursuing a Master’s degree in Computer Science at Namibia University of Science and Technology. My research interests are in Computer Vision and natural language processing (NLP).",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1026,
+      "body_end": 1336,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-733018-b00007",
+      "text": "> I am part of Masakhane, where I am conducting NLP research on low-resource languages, specifically concentrating on my native language Shona. I have been particularly involved in the machine translation and named-entity recognition (NER) initiatives for Shona.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1338,
+      "body_end": 1600,
+      "source_links": [
+        "https://en.wikipedia.org/wiki/Named-entity_recognition",
+        "https://www.masakhane.io/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-733018-b00008",
+      "text": "AOY: What is the current status of your language offline, as well as online?",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1602,
+      "body_end": 1678,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733018-b00009",
+      "text": "> BKS: Shona is very active and vibrant offline. According to the website mustgo, it is one of the most spoken Bantu languages, with an estimated 10.7 million speakers. It has a rich history and literature with a lot of a documentation. Although it has great resources offline, there still a lot potential to increase its presence online.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1680,
+      "body_end": 2018,
+      "source_links": [
+        "https://www.kwayedza.co.zw/",
+        "https://www.mustgo.com/worldlanguages/shona/"
+      ],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-733018-b00010",
+      "text": "AOY: What do you think are the biggest challenges facing your language community with regard to digital communications or creating digital content in their mother language?",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2020,
+      "body_end": 2192,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733018-b00011",
+      "text": "> BKS: I think in most African countries, inclusive of my country, the biggest challenge is that of having the language of the former colonisers as the first language. Although this has been of advantage when communicating on an international stage, it has made our own native languages not be appreciated as they should. This has to some extent made those who speak for example English be thought of as more educated or of a higher social class whilst looking down upon our own native languages. So, you find people preferring the foreign language more than the native one.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2194,
+      "body_end": 2768,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-733018-b00012",
+      "text": "> With this, I think the biggest issue which needs to be dealt with is the perspective of the native language, it needs to be shifted to make it more appealing to use whether in business or on the internet, so that people can better embrace it. From a technological standpoint, it is lagging behind in terms of tools and software which make it easier and accessible to use online. This is mostly because of the lack of resources which can be used to produce those tools. Tools and services like dictionaries, translation, keyboards (for languages with diacritics), speech, amongst others, will pay off in the long run as they make it easier to communicate with our own language online.",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2770,
+      "body_end": 3455,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-733018-b00013",
+      "text": "AOY: In your opinion, what are some of the steps that could be taken in the short term to encourage increased use of the language on the internet?",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 3457,
+      "body_end": 3603,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733018-b00014",
+      "text": "> BKS: I believe the integration of local languages into everyday online tools and technologies that we use can encourage the increased use of the language on the internet. For example, with Google Search, if you could switch the main language to Shona and everything gets displayed in Shona. This should also be the option for social media sites, where most of the languages from Africa are not covered for personalising display language.",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 3605,
+      "body_end": 4044,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-733018-b00015",
+      "text": "> Another example is with Wikipedia. People can contribute pages using their own native languages which in a way increases the discoverability of these languages. I believe another step, as earlier noted, is investment in research and products which utilize native languages.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 4046,
+      "body_end": 4321,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-733018-b00016",
+      "text": "> From a technological perspective, there is a lot of ground to cover compared to the most widely spoken languages to be at par in terms of research and products. This is an impediment, as we cannot fully express our own language whilst making those unfamiliar with it able to understand it, as the internet has made the world a global village. With these concerted efforts I believe the use of native languages online can be encouraged.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 4323,
+      "body_end": 4760,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-733018-b00017",
+      "text": "AOY: What is your primary motivation for working to see your language and culture available on the internet?",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 4762,
+      "body_end": 4870,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-733018-b00018",
+      "text": "> BKS: My motivation is to see a lot of activity when it comes to NLP technologies for Shona, and to have tools that are comparable in performance to the widely adopted languages on the internet. I believe competent tools will inevitably encourage the use of the language on the internet, and for this to happen the native speakers should be at the forefront of researching and producing these tools as they better understand their own language.",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 4872,
+      "body_end": 5317,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-733018-b00019",
+      "text": "> This is why I adore and am part of the Masakhane Community. It is bringing the native speakers to work and research on their own languages. It is lowering the barrier of entry into working with these technologies, providing a community and mentors to help along this journey of producing these tools. In addition to this, it is publishing research which will make it easier for others to continue this work and make sure native languages are represented in technology.",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 5319,
+      "body_end": 5789,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    }
+  ],
+  "body_sha256": "c3f12a513e28d9bcaa75b0a3c642db409bf6261c76a1771566bbc34d8096b2aa",
+  "word_count": 956,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 2,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    }
+  ],
+  "body_characters": 5789,
+  "retrieved_at": "2026-11-16T22:30:06.771094+00:00",
+  "raw_html_sha256": "fe66d5645322fd6c7695f188ab1946751f7139f90020940175d0c06536b812df",
+  "resolved_source_url": "https://globalvoices.org/2021/04/11/should-there-be-shona-language-versions-of-google-and-social-media-sites-this-zimbawean-technologist-says-yes/",
+  "canonical_url": "https://globalvoices.org/2021/04/11/should-there-be-shona-language-versions-of-google-and-social-media-sites-this-zimbawean-technologist-says-yes/",
+  "source_bytes": 189063,
+  "authors": [
+    {
+      "name": "Adéṣínà Ọmọ Yoòbá",
+      "url": "https://globalvoices.org/author/adesina-omo-yooba/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 733018,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "fe66d5645322fd6c7695f188ab1946751f7139f90020940175d0c06536b812df",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-da79cdbe2de0e31c0bcc",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-04",
+    "eligible_month_documents": 85,
+    "selected_month_documents": 71,
+    "inclusion_probability": 0.8352941176470589,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Adéṣínà Ọmọ Yoòbá",
+  "body_start": 560,
+  "body_end": 6349,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "14d31f7b85b162531c96ff27bbd0c4979a539d20b7ea3957dfa1b2d89aba4660",
+  "text_path": "articles/gv-733018.txt",
+  "metadata_path": "metadata/gv-733018.json",
+  "attribution": "This story by Adéṣínà Ọmọ Yoòbá originally appeared on Global Voices. https://globalvoices.org/2021/04/11/should-there-be-shona-language-versions-of-google-and-social-media-sites-this-zimbawean-technologist-says-yes/",
+  "content_sha256": "5d9a171c1984af8123bf37f1df6fd8fe359009b9b023d5944aa735e528f9c99b",
+  "source_sha256": "fe66d5645322fd6c7695f188ab1946751f7139f90020940175d0c06536b812df",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}

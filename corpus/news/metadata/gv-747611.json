@@ -1,0 +1,576 @@
+{
+  "id": "gv-747611",
+  "publisher_id": 747611,
+  "source_id": "globalvoices:747611",
+  "source_url": "https://globalvoices.org/2021/10/08/jamaica-forced-to-dump-55000-doses-as-covid-19-vaccine-hesitancy-persists/",
+  "title": "Jamaica forced to dump 55,000 doses as COVID-19 vaccine hesitancy persists",
+  "published_at": "2021-10-08T13:07:45Z",
+  "modified_at": "2021-10-08T13:07:45Z",
+  "api_author_id": 2014,
+  "api_content_sha256": "f84328c834e885fd6f74bcf864622ff3b8f4c79b571da18e31c1da80f3a418ca",
+  "api_response_sha256": "57aeccf318ed89945a4bde065daec3d031dd424874648368349abe65f2de4209",
+  "api_retrieved_at": "2026-11-16T22:20:38.953094+00:00",
+  "extractor_version": "globalvoices-news-v1.3",
+  "rights_rule_version": "gv-rights-2",
+  "language": "en",
+  "synthetic": false,
+  "language_basis": "English edition at globalvoices.org; quoted passages may be in other languages.",
+  "institution": "Global Voices",
+  "document_type": "news_article",
+  "categories": [
+    {
+      "id": 1353,
+      "count": 10223,
+      "name": "Caribbean",
+      "slug": "caribbean",
+      "parent": 219
+    },
+    {
+      "id": 1359,
+      "count": 18645,
+      "name": "Citizen Media",
+      "slug": "citizen-media",
+      "parent": 238
+    },
+    {
+      "id": 701,
+      "count": 48113,
+      "name": "English",
+      "slug": "english",
+      "parent": 317
+    },
+    {
+      "id": 257,
+      "count": 4228,
+      "name": "Health",
+      "slug": "health",
+      "parent": 238
+    },
+    {
+      "id": 176,
+      "count": 2263,
+      "name": "Jamaica",
+      "slug": "jamaica",
+      "parent": 1353
+    },
+    {
+      "id": 1362,
+      "count": 13808,
+      "name": "Media &amp; Journalism",
+      "slug": "media-journalism",
+      "parent": 238
+    },
+    {
+      "id": 287,
+      "count": 32599,
+      "name": "Politics",
+      "slug": "politics",
+      "parent": 238
+    },
+    {
+      "id": 275,
+      "count": 4753,
+      "name": "Religion",
+      "slug": "religion",
+      "parent": 238
+    },
+    {
+      "id": 276,
+      "count": 839,
+      "name": "Science",
+      "slug": "science",
+      "parent": 238
+    },
+    {
+      "id": 221,
+      "count": 29867,
+      "name": "Weblog",
+      "slug": "weblog",
+      "parent": 218
+    }
+  ],
+  "tag_ids": [],
+  "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+  "blocks": [
+    {
+      "id": "gv-747611-b00001",
+      "text": "At midnight on September 30, the Jamaican government found itself having to do away with 55,000 expired doses of the Astra Zeneca COVID-19 vaccine that had been donated by the United Kingdom on July 30.",
+      "page": null,
+      "paragraph": 1,
+      "body_start": 0,
+      "body_end": 202,
+      "source_links": [
+        "https://jis.gov.jm/jamaica-receives-300000-doses-of-vaccines-from-the-uk/",
+        "https://www.jamaicaobserver.com/latestnews/COVID-19:_Here%26%238217;s_what_you_need_to_know_today"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00002",
+      "text": "The wasting of the precious doses was a particularly bitter pill for Minister of Health and Wellness Christopher Tufton to swallow. He tweeted that there had been a last-minute rush on vaccination sites, with some centres remaining open for extended hours in order to use up as many doses as possible:",
+      "page": null,
+      "paragraph": 2,
+      "body_start": 204,
+      "body_end": 505,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00003",
+      "text": "Minister Tufton also responded sharply to a critical banner headline in the Jamaica Gleaner, instead laying the blame on vaccination-hesitant Jamaicans:",
+      "page": null,
+      "paragraph": 3,
+      "body_start": 507,
+      "body_end": 659,
+      "source_links": [
+        "https://jamaica-gleaner.com/article/lead-stories/20211002/crying-shame"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00004",
+      "text": "Journalist Jovan Johnson shared the health ministry’s vaccination statistics on Twitter. Of a total population of 2.9 million, the government's target for vaccines is 1.9 million; the statistics do not include children under 12, who are not yet vaccinated:",
+      "page": null,
+      "paragraph": 4,
+      "body_start": 661,
+      "body_end": 917,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00005",
+      "text": "Jamaica appears to be slowly emerging from a third wave of COVID-19, with infections gradually falling after a peak on September 6. A series of lockdown days and nightly curfews, which were finally scaled back on September 18, may have had an impact on the number of new cases.",
+      "page": null,
+      "paragraph": 5,
+      "body_start": 919,
+      "body_end": 1196,
+      "source_links": [
+        "https://graphics.reuters.com/world-coronavirus-tracker-and-maps/countries-and-territories/jamaica/",
+        "https://jamaica-gleaner.com/article/lead-stories/20210916/pm-calls-multi-day-lockdowns",
+        "https://jis.gov.jm/prime-minister-announces-seven-no-movement-days-to-curb-covid-19-surge/",
+        "https://nationwideradiojm.com/covid-19-positivity-rate-dips-below-20-for-the-first-time-since-aug-4/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00006",
+      "text": "Vaccination targets",
+      "page": null,
+      "paragraph": 6,
+      "body_start": 1198,
+      "body_end": 1217,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00007",
+      "text": "Thus far, over 803,000 vaccines have been administered, with only 292,326 people being fully vaccinated, placing the island at the bottom of the region when it comes to the percentage of citizens who have completed their vaccination schedule, whether single- or double-dose (9.5 per cent). Also, thousands of people have not turned up for their second dose.",
+      "page": null,
+      "paragraph": 7,
+      "body_start": 1219,
+      "body_end": 1576,
+      "source_links": [
+        "https://ais.paho.org/imm/IM_DosisAdmin-Vacunacion.asp",
+        "https://nationwideradiojm.com/vaccine-programme-rift-cabinet-and-health-ministry-stand-off-over-mandatory-vaccination-policy/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00008",
+      "text": "Vaccination levels have been increasingly falling short of targets, despite the urgings of state agencies and the private sector. The government aims for 65 per cent of its target population to be fully vaccinated by March 2022. As of October 6, it had reached just over 15 per cent of that goal.",
+      "page": null,
+      "paragraph": 8,
+      "body_start": 1578,
+      "body_end": 1874,
+      "source_links": [
+        "https://vaccination.moh.gov.jm/2021/09/24/dont-delay-your-covid-19-vaccination/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00009",
+      "text": "A range of outreach efforts, including webinars, weekly press briefings, social media posts, a new tool to reach “shut-ins,” and the expansion of vaccination sites into communities via a mobile bus and private sector partnerships, have barely moved the needle in recent weeks.",
+      "page": null,
+      "paragraph": 9,
+      "body_start": 1876,
+      "body_end": 2152,
+      "source_links": [
+        "https://vaccination.moh.gov.jm/2021/09/27/health-ministry-inks-contracts-to-expand-vaccination-sites/",
+        "https://www.moh.gov.jm/new-online-tool-to-help-vaccinate-shut-ins/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00010",
+      "text": "Private-sector efforts, which began in late July, have also fallen short, with just over 20,000 employees being vaccinated over the course of eight weeks.",
+      "page": null,
+      "paragraph": 10,
+      "body_start": 2154,
+      "body_end": 2308,
+      "source_links": [
+        "https://psvija.com/2021/09/25/psvi-vaccinations-surpasses-20000-private-sector-employees-2/",
+        "https://twitter.com/psvijamaica/status/1445764007474839572?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1445764007474839572%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fglobalvoices.org%2F%3Fp%3D747611preview_id%3D747611preview_nonce%3D8cfdd6cf26_thumbnail_id%3D-1preview%3Dtrue",
+        "https://www.jamaicaobserver.com/news/private-sector-starts-vaccine-initiative_227535"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00011",
+      "text": "The Private Sector Vaccination Initiative held a vaccination drive at a major Kingston transportation hub, targeting public sector transport operators, but although the goal was to vaccinate 500 taxi and bus drivers in a day, the uptake was only 200.",
+      "page": null,
+      "paragraph": 11,
+      "body_start": 2310,
+      "body_end": 2560,
+      "source_links": [
+        "https://twitter.com/psvijamaica/status/1445764007474839572?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1445764007474839572%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fglobalvoices.org%2F%3Fp%3D747611preview_id%3D747611preview_nonce%3Df250543f35_thumbnail_id%3D747895preview%3Dtrue"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00012",
+      "text": "Why the hesitancy?",
+      "page": null,
+      "paragraph": 12,
+      "body_start": 2562,
+      "body_end": 2580,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00013",
+      "text": "Meanwhile, the National COVID-19 Operationalisation Task Force, established to ramp up the vaccination drive within seven months, has faded from the public spotlight.",
+      "page": null,
+      "paragraph": 13,
+      "body_start": 2582,
+      "body_end": 2748,
+      "source_links": [
+        "https://jamaica-gleaner.com/article/commentary/20210915/editorial-how-covid-19-task-force-can-help",
+        "https://www.jamaicaobserver.com/latestnews/Jamaica_forms_taskforce_to_make_vaccination_programme_more_efficient"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00014",
+      "text": "One political commentator blamed vaccine hesitancy on the persistent misinformation and disinformation being shared on social media:",
+      "page": null,
+      "paragraph": 14,
+      "body_start": 2750,
+      "body_end": 2882,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00015",
+      "text": "The influence of evangelical pastors, some of whom have been actively discouraging their congregations from taking the vaccine which they call the “mark of the beast,” has also been cited as a major concern.",
+      "page": null,
+      "paragraph": 15,
+      "body_start": 2884,
+      "body_end": 3091,
+      "source_links": [
+        "https://jamaica.loopnews.com/content/vaccine-has-nothing-do-mark-beast-says-bishop-560806",
+        "https://www.jamaicaobserver.com/news/church-discord-pastors-anglican-archbishop-cross-swords-over-mandatory-vaccination_232472"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00016",
+      "text": "Moreover, there have been major logistical challenges. In deep rural communities, most residents do not have quick access to information, and the cost and feasibility of reaching the nearest vaccination site remain problematic. A television report from the eastern side of the island showed empty testing sites and found that rural folks were most likely to rely on home remedies in an attempt to combat the virus. However, one such advocate, the creator of the “Immuno-gizer,” died from COVID-19 recently.",
+      "page": null,
+      "paragraph": 16,
+      "body_start": 3093,
+      "body_end": 3599,
+      "source_links": [
+        "https://jamaica-gleaner.com/article/lead-stories/20210918/clarendon-parents-call-closer-vax-sites",
+        "https://jamaica-gleaner.com/article/news/20210825/let-herbal-medicine-be-option-covid-19-say-proponents",
+        "https://www.immunogizer.com/about-us",
+        "https://www.jamaicaobserver.com/front-page/covid-anger-country-will-shut-down-nhf-chairman_231658"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00017",
+      "text": "To persuade the vaccine-hesitant, a well-known psychologist, who maintains that “a partially immunised population is a fertile breeding ground for more dangerous viral variants,” suggested:",
+      "page": null,
+      "paragraph": 17,
+      "body_start": 3601,
+      "body_end": 3790,
+      "source_links": [
+        "https://www.youtube.com/watch?v=aifGcGRr3no&list=PLOTOVMBEKP6-c41W6k7I_g2dZwEZWASyO&index=6&t=342s"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00018",
+      "text": "The issue of vaccine mandates",
+      "page": null,
+      "paragraph": 18,
+      "body_start": 3792,
+      "body_end": 3821,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00019",
+      "text": "The situation has raised the unresolved issue of mandatory vaccination. While a few major companies have announced that their employees must be vaccinated, or submit to regular tests at their personal expense, many employers are still trying to decide on their own policies. As a result, the major private sector organisations issued a statement on October 6, calling for mandatory vaccination in workplaces:",
+      "page": null,
+      "paragraph": 19,
+      "body_start": 3823,
+      "body_end": 4231,
+      "source_links": [
+        "https://www.jamaicaobserver.com/latestnews/Digicel_issues_vaccination_mandate_to_staff",
+        "https://www.psoj.org/the-time-is-now-for-workplace-vaccine-policies/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00020",
+      "text": "> Jamaica is at a critical stage in the execution of the vaccination strategy. With over 500,000 doses currently available, the Private Sector Organisation of Jamaica (PSOJ) along with the Jamaica Chamber of Commerce (JCC) and the Jamaica Manufacturers and Exporters Association (JMEA) believe that the time is now for private sector entities to establish policies that require employees to get vaccinated.",
+      "page": null,
+      "paragraph": 20,
+      "body_start": 4233,
+      "body_end": 4639,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-747611-b00021",
+      "text": "> With less than 10% of the population fully vaccinated almost two years into the pandemic, Jamaica is being left behind with achieving population immunity and is putting our recovery at risk. The social and economic impact will be devastating, and the ripple effects will continue for years to come.",
+      "page": null,
+      "paragraph": 21,
+      "body_start": 4641,
+      "body_end": 4941,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-747611-b00022",
+      "text": "The Anglican Archbishop of the West Indies, The Most Rev. Howard Gregory, in an article titled “Leadership and the Pursuit of the Common Good,” concluded:",
+      "page": null,
+      "paragraph": 22,
+      "body_start": 4943,
+      "body_end": 5097,
+      "source_links": [
+        "http://www.anglicandioceseja.org/?p=25538&fbclid=IwAR19XCIcccFFFog5_NaxCiqDeexMZ8QZYS15agegx4BQm9lXF7_MKSDTkx0",
+        "http://www.anglicandioceseja.org/wp-content/uploads/2021/09/Leadership-and-the-Pursuit-of-the-Common-Good.Original-September-2021.pdf"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00023",
+      "text": "> As a fellow citizen who has been fully vaccinated and has been subjected to repeated PCR and Antigen Tests for various reasons, I strongly urge all Jamaicans and those who identify as Christians, in particular, to kindly take the vaccines, as an expression of your duty to care for yourself and your responsibility to your brothers and sisters in Christ, even as I appeal to the government to take the appropriate step and put in place the avenues for mandatory vaccinations for the good of the nation.",
+      "page": null,
+      "paragraph": 23,
+      "body_start": 5099,
+      "body_end": 5603,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-747611-b00024",
+      "text": "Prime Minister Andrew Holness, however, has been taking a cautious approach.",
+      "page": null,
+      "paragraph": 24,
+      "body_start": 5605,
+      "body_end": 5681,
+      "source_links": [
+        "https://jis.gov.jm/mandatory-covid-19-vaccination-not-being-considered-now-pm/"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00025",
+      "text": "Questions remain",
+      "page": null,
+      "paragraph": 25,
+      "body_start": 5683,
+      "body_end": 5699,
+      "source_links": [],
+      "source_kind": "h3",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00026",
+      "text": "Was Jamaica's public education campaign lacking? At the end of a gloomy thread about the depth of vaccine hesitancy, one member of the diaspora noted:",
+      "page": null,
+      "paragraph": 26,
+      "body_start": 5701,
+      "body_end": 5851,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00027",
+      "text": "Another Twitter user did some hand-wringing over the situation:",
+      "page": null,
+      "paragraph": 27,
+      "body_start": 5853,
+      "body_end": 5916,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00028",
+      "text": "The issue also appears to have taken a political turn. The prime minister’s wife, Member of Parliament Juliet Holness, strongly criticised her own administration’s vaccination policy, observing at a recent parliamentary committee meeting:",
+      "page": null,
+      "paragraph": 28,
+      "body_start": 5918,
+      "body_end": 6156,
+      "source_links": [
+        "https://nationwideradiojm.com/east-rural-st-andrew-mp-criticizes-health-ministrys-management-of-aspects-of-covid-19-vaccination-programme/",
+        "https://nationwideradiojm.com/vaccine-programme-rift-cabinet-and-health-ministry-stand-off-over-mandatory-vaccination-policy/",
+        "https://www.youtube.com/watch?v=-jW9a32oD68"
+      ],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00029",
+      "text": "> When a policy direction is set it needs to be adhered to because it causes a lot of confusion afterwards.",
+      "page": null,
+      "paragraph": 29,
+      "body_start": 6158,
+      "body_end": 6265,
+      "source_links": [],
+      "source_kind": "blockquote",
+      "source_is_quotation": true
+    },
+    {
+      "id": "gv-747611-b00030",
+      "text": "Holness was especially harsh in her criticism of the Ministry of Health and Wellness for vaccinating adults with the Pfizer vaccine, which had been prioritised for children under 18. Pfizer has turned out to be a much more popular brand than AstraZeneca.",
+      "page": null,
+      "paragraph": 30,
+      "body_start": 6267,
+      "body_end": 6521,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00031",
+      "text": "However that situation plays itself out, questions remain. Will more vaccines have to be discarded? What is the way forward?",
+      "page": null,
+      "paragraph": 31,
+      "body_start": 6523,
+      "body_end": 6647,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00032",
+      "text": "While listening to a radio interview with a health official, one blogger asked:",
+      "page": null,
+      "paragraph": 32,
+      "body_start": 6649,
+      "body_end": 6728,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    },
+    {
+      "id": "gv-747611-b00033",
+      "text": "The COVID-19 pandemic remains a test of political leadership for the current administration as it struggles with the complexities of the vaccine dilemma, with some commentators suggesting that the government needs to take the bull by the horns and be more decisive. As one radio talk show host put it, “Do what is right, not what is popular.”",
+      "page": null,
+      "paragraph": 33,
+      "body_start": 6730,
+      "body_end": 7072,
+      "source_links": [],
+      "source_kind": "p",
+      "source_is_quotation": false
+    }
+  ],
+  "body_sha256": "bca8de1accc1a3081a000ef9df6da9942bef5f6c1b899f5bd2406b092f86dbaf",
+  "word_count": 1122,
+  "page_count": null,
+  "excluded_material": [
+    {
+      "selector": ".wp-caption,figure,figcaption",
+      "count": 1,
+      "reason": "External media and its caption excluded from the licensed text edition"
+    },
+    {
+      "selector": "blockquote.twitter-tweet,blockquote.instagram-media,twitter-widget,.instagram-media,.fb-post",
+      "count": 8,
+      "reason": "External social embed excluded; original rights not assumed"
+    }
+  ],
+  "body_characters": 7072,
+  "retrieved_at": "2026-11-16T22:32:09.916728+00:00",
+  "raw_html_sha256": "d80973d3f22a71b619d8ae338fdf2b5aa0f4bd27b8ac1b1b29b750e29a208b68",
+  "resolved_source_url": "https://globalvoices.org/2021/10/08/jamaica-forced-to-dump-55000-doses-as-covid-19-vaccine-hesitancy-persists/",
+  "canonical_url": "https://globalvoices.org/2021/10/08/jamaica-forced-to-dump-55000-doses-as-covid-19-vaccine-hesitancy-persists/",
+  "source_bytes": 195163,
+  "authors": [
+    {
+      "name": "Emma Lewis",
+      "url": "https://globalvoices.org/author/emma-lewis/"
+    }
+  ],
+  "translators": [],
+  "observed_license_urls": [
+    "https://creativecommons.org/licenses/by/3.0/"
+  ],
+  "observed_html_post_id": 747611,
+  "status": "eligible",
+  "exclusion_reason": null,
+  "license": "CC-BY-3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "rights_source_url": "https://globalvoices.org/about/global-voices-attribution-policy/",
+  "rights_review": {
+    "status": "publisher_license_and_article_footer_checked",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/3.0/"
+    ],
+    "raw_html_sha256": "d80973d3f22a71b619d8ae338fdf2b5aa0f4bd27b8ac1b1b29b750e29a208b68",
+    "policy_sha256": "84f656b16099dcb248866f714453e5bd3e275bdb5d4929c4fad838ee8b29ed2c",
+    "scope": "Global Voices-created text under publisher CC-BY terms; external media/embeds excluded. Journalistic quotations retain attribution and original rights. No exhaustive legal-clearance claim."
+  },
+  "story_group_id": "story-cef1c556aa89bd57329b",
+  "duplicate_source_ids": [],
+  "sampling": {
+    "month": "2021-10",
+    "eligible_month_documents": 87,
+    "selected_month_documents": 73,
+    "inclusion_probability": 0.8390804597701149,
+    "seed": "20261116",
+    "method": "monthly-proportional-largest-remainder-seeded-hash"
+  },
+  "split": "development",
+  "author": "Emma Lewis",
+  "body_start": 481,
+  "body_end": 7553,
+  "offset_unit": "unicode_code_points",
+  "txt_sha256": "e1f67e812227ec35a0fad3d9d8b062887aa7fdd7e7f970baabb62c0de768ebce",
+  "text_path": "articles/gv-747611.txt",
+  "metadata_path": "metadata/gv-747611.json",
+  "attribution": "This story by Emma Lewis originally appeared on Global Voices. https://globalvoices.org/2021/10/08/jamaica-forced-to-dump-55000-doses-as-covid-19-vaccine-hesitancy-persists/",
+  "content_sha256": "a5416ca066f0e8876f6b5f0c780d9ad8c397374c314cea3b1f356492ad324876",
+  "source_sha256": "d80973d3f22a71b619d8ae338fdf2b5aa0f4bd27b8ac1b1b29b750e29a208b68",
+  "historical_revision_notice": "Current retrieved text grouped by original publication date; not a reconstructed first edition."
+}
