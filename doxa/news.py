@@ -93,6 +93,9 @@ def import_news(store: Store, project_id: str, root: Path, *, use_saved_showcase
         statements = []
         if not existing:
             key = f"documents/{identity}/blocks.json"
+            if not store.remote:
+                from .privacy_lifecycle import track_artifact
+                track_artifact(store, project_id, f"objects/documents/{identity}", "news_source")
             store.put_json(key, blocks)
             metadata = {key: value for key, value in source.items() if key != "blocks"}
             metadata["source_id"] = source_id

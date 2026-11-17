@@ -2,6 +2,8 @@
 
 DOXA runs one Python API/worker and a static browser interface. Local state lives in SQLite and files. The Cloudflare profile uses the same Python analysis code with D1 metadata, R2 originals/checkpoints/reports, and durable Queues dispatch. Inference is a separate, explicitly selected provider. A lexical demonstration works without downloading a model; it does not perform semantic analysis.
 
+v0.5 adds [dedicated native guided-pilot operation](managed-pilots-v05.md), with individual access, privacy policies and live-project erasure. Native schema 5 is an ordered upgrade with a database backup; stop prior servers and back up both database and objects first. The existing Cloudflare profile retains schema 4 and its shared-workspace contract. Managed pilot mode refuses remote persistence, and POSIX is required for the new private provisioning/erasure path. These controls do not implement OAuth connectors, subscriptions or shared SaaS tenancy.
+
 ## Local Docker
 
 Prerequisites: Docker with Compose, at least 6 GB RAM for document processing, and additional RAM/VRAM for your chosen local model. No GPU is required to start the application.
@@ -107,7 +109,7 @@ The create commands are examples of explicit provisioning, not steps run by the 
 
 ### Operating and testing
 
-Version 0.4 upgrades a native workspace to schema 4 only after creating and checking a private SQLite backup under its data directory's `backups/`. It rejects an unsupported future schema. Back up object files alongside the database before an operator upgrade; a database backup alone does not contain originals or saved report inputs.
+Version 0.5 upgrades a native workspace to schema 5 only after creating and checking a private SQLite backup under its data directory's `backups/`. The Cloudflare profile retains schema 4. Startup rejects an unsupported future schema. Back up object files alongside the database before an operator upgrade; a database backup alone does not contain originals or saved report inputs.
 
 An existing remote D1 workspace requires an operator-created backup before its first schema-4 startup. Export D1 and preserve the matching R2 objects, check the export, then add `DOXA_MIGRATION_BACKUP_RECEIPT` to the Worker's configuration with a meaningful backup identifier or immutable receipt URL. The container forwards this value to the migration guard. This value records the operator's receipt; DOXA does not claim to create or verify a production D1 backup itself. A fresh empty database initializes automatically. Configure `DOXA_REVIEWER_ID` for a trusted operator identity before remote human review; browser-supplied identities cannot elevate review records.
 
@@ -141,7 +143,7 @@ The same Python container can run on GCP Cloud Run. Use Cloud Run Jobs for long 
 
 ## Installed wheel and external demonstration data
 
-The v0.4 release wheel contains the compiled browser application and Python engine. From an empty directory, install the downloaded wheel with `python -m pip install ./doxa_by_tacitus-0.4.0-py3-none-any.whl`, then run `doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data`. Python dependencies still install normally; native PDF rendering can require system libraries, for which Docker supplies the documented environment.
+The v0.5 release wheel contains the compiled browser application and Python engine. From an empty directory, install the downloaded wheel with `python -m pip install ./doxa_by_tacitus-0.5.0-py3-none-any.whl`, then run `doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data`. Python dependencies still install normally; native PDF rendering can require system libraries, for which Docker supplies the documented environment.
 
 The full corpora and recorded results remain repository/release artifacts rather than inflating the application wheel. To expose those import collections from an installed application, set `DOXA_ASSET_ROOT` to a clone of this repository containing `corpus/` and `benchmarks/`. Keep `--data-dir` separate for your mutable workspace. The installed UI is always loaded from the wheel; external data does not replace it.
 

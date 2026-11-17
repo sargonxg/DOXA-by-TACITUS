@@ -313,6 +313,9 @@ def restore_showcase_v3(store: Store, project_id: str, documents: list[dict], pa
                                 "notice": "Previously computed contextual output. Importing makes no inference calls and does not debit this workspace budget. Historical reviews are provenance; local reviews start unreviewed."}
     if config.get("source_manifest_key"):
         config["source_manifest_key"] = f"runs/{run_id}/source-manifest.json"
+        if not store.remote:
+            from .privacy_lifecycle import track_artifact
+            track_artifact(store, project_id, f"objects/runs/{run_id}", "recorded_run")
         store.put_json(config["source_manifest_key"], [{key: document.get(key) for key in ("id", "sha256", "title", "author", "institution", "document_type", "published_at")} for document in ordered])
     store.execute("INSERT INTO runs(id,project_id,status,config_json,created_at,started_at,completed_at,progress_json,usage_json,errors_json,model_profile_json) VALUES(?,?,'importing',?,?,?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING",
                   [run_id, project_id, _json(config), now, run.get("started_at"), run.get("completed_at"), _json(run.get("progress", {})), _json(run.get("usage", {})), _json(_remap_error_sources(run.get("errors", []), id_mapping)), _json(run.get("model_profile", {}))])
@@ -392,6 +395,9 @@ def import_institution_sources(store: Store, project_id: str, root: Path) -> tup
             metadata = {key: value for key, value in source.items() if key != "blocks"}
             metadata["source_id"] = source_id
             blocks_key = f"documents/{document_id}/blocks.json"
+            if not store.remote:
+                from .privacy_lifecycle import track_artifact
+                track_artifact(store, project_id, f"objects/documents/{document_id}", "institutional_source")
             store.put_json(blocks_key, blocks)
             values = {"id": document_id, "project_id": project_id, "batch_id": batch_id, "title": source["title"],
                       "author": source.get("author") or "Unknown", "institution": source.get("institution") or "",

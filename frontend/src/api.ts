@@ -15,6 +15,8 @@ export async function request<T>(
     headers.set("Content-Type", "application/json");
   const response = await fetch(`/api${path}`, { ...options, headers });
   if (!response.ok) {
+    if (response.status === 401 && path !== "/access/session")
+      window.dispatchEvent(new Event("doxa-access-required"));
     let message = `Request failed (${response.status})`;
     try {
       const detail = await response.json();

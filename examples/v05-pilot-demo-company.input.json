@@ -1,0 +1,100 @@
+{
+  "brief": {
+    "audience": "Fictional communications team",
+    "company_policy": {
+      "text": "This fictional company asks staff to state the requested action, name the responsible team where appropriate, and give a clear deadline. A direct request can be appropriate; qualification can be appropriate when information is incomplete.\n\nQuoted complaints and reports of discrimination must retain attribution. The policy does not authorize employee rankings, emotional diagnoses or inferences about religious or political beliefs.",
+      "title": "Fictional communications policy",
+      "version": "demo-1"
+    },
+    "comparator": null,
+    "comparator_status": "not_declared",
+    "fingerprint": "dc8c0c57464985710313065f70001f29019dee54101ce44b0990a7cee38f5821",
+    "lens_ids": [
+      "discourse",
+      "language-norms"
+    ],
+    "method_version": "doxa-service-profiles-1.0",
+    "perspective": "Review documented language patterns and declared company policies, preserving context and alternative readings.",
+    "policy_alignment_status": "policy_supplied_unverified",
+    "profile_id": "company",
+    "question": "How does our authorized organizational language vary across channels and time?",
+    "readiness": {
+      "automated_verdicts_enabled": false,
+      "expert_review_required": true,
+      "interpretation_accuracy_measured": false,
+      "mode": "guided_pilot",
+      "reference_status": "reference_pending"
+    },
+    "report_sections": [
+      "Scope and permissions",
+      "Organizational patterns",
+      "Policy version and alignment",
+      "Reviewed cases",
+      "Coverage and uncertainty",
+      "Method and evidence annex"
+    ],
+    "schema_version": "doxa-service-brief-1.0"
+  },
+  "data_origin": "synthetic_demonstration",
+  "documents": [
+    {
+      "author": "Fictional demonstration author",
+      "blocks": [
+        {
+          "id": "p1",
+          "text": "This fictional company asks staff to state the requested action, name the responsible team where appropriate, and give a clear deadline. A direct request can be appropriate; qualification can be appropriate when information is incomplete."
+        },
+        {
+          "id": "p2",
+          "text": "Quoted complaints and reports of discrimination must retain attribution. The policy does not authorize employee rankings, emotional diagnoses or inferences about religious or political beliefs."
+        }
+      ],
+      "document_type": "policy",
+      "filename": "company-policy.txt",
+      "id": "company-policy",
+      "license": "Original synthetic demonstration text supplied with the DOXA repository; not a real organization or correspondence.",
+      "sha256": "cb4795ba3357de71412a11dfed54e69f3a0ab7f500a62c84e0c2328b9350d029",
+      "source_version_id": "company-policy-v1",
+      "title": "SYNTHETIC · Fictional company communications policy"
+    },
+    {
+      "author": "Fictional project team",
+      "blocks": [
+        {
+          "eligible_for_author_counts": true,
+          "id": "m1",
+          "mail_role": "authored",
+          "text": "Please review the draft before Friday. We will share the corrected customer notice tomorrow. Perhaps the support team can confirm which wording is still ambiguous."
+        },
+        {
+          "eligible_for_author_counts": false,
+          "id": "m2",
+          "mail_role": "quoted",
+          "text": "> A customer wrote: 'Your notice seems to suggest that every complaint is invalid.' This is quoted background, not the team's endorsement."
+        },
+        {
+          "eligible_for_author_counts": true,
+          "id": "m3",
+          "mail_role": "authored",
+          "text": "Review the legal team's clarification before sending the notice. No customer notice is actually sent by this demonstration."
+        }
+      ],
+      "document_type": "email",
+      "filename": "company-message.txt",
+      "id": "company-message",
+      "license": "Original synthetic demonstration text supplied with the DOXA repository; not a real organization or correspondence.",
+      "sha256": "3f2941babb2447104dbef3255d9cd55ca6fbe982fcb27e8185ae002e42515f4c",
+      "source_version_id": "company-message-v1",
+      "title": "SYNTHETIC · Fictional project update"
+    }
+  ],
+  "expert_commentary": [],
+  "findings": [],
+  "privacy_disclosure": {
+    "human_review": "No real expert review or independent reference labels were supplied.",
+    "identity_map": "none",
+    "mode": "synthetic originals",
+    "processing": "Local deterministic markers and report rendering only; no model inference.",
+    "source_material": "All documents, names and correspondence are fictional software demonstrations."
+  }
+}

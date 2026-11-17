@@ -1,0 +1,109 @@
+{
+  "brief": {
+    "audience": "Reader learning how a comparison is scoped",
+    "company_policy": null,
+    "comparator": {
+      "date_end": "",
+      "date_start": "",
+      "genres": [
+        "news"
+      ],
+      "inclusion_rules": "Exactly the two supplied fictional hearing reports; no claim of representative media coverage.",
+      "question": "Which positions and attributed voices appear in two fictional reports of the same hearing?",
+      "source_groups": [
+        {
+          "document_ids": [
+            "public-a"
+          ],
+          "label": "Fictional report A"
+        },
+        {
+          "document_ids": [
+            "public-b"
+          ],
+          "label": "Fictional report B"
+        }
+      ],
+      "topic": "Fictional permit reform hearing"
+    },
+    "comparator_status": "declared_unverified",
+    "fingerprint": "0b66c3f45d720c26f470c9b072beb545a7a5b2cd44ca6b2d3bd9e2aff4543185",
+    "lens_ids": [
+      "political-framing",
+      "discourse"
+    ],
+    "method_version": "doxa-service-profiles-1.0",
+    "perspective": "Describe expressed positions, framing and attributed voices under declared comparison rules; preserve alternative readings.",
+    "policy_alignment_status": "not_requested",
+    "profile_id": "public",
+    "question": "How do comparable sources frame the same issue and express positions over time?",
+    "readiness": {
+      "automated_verdicts_enabled": false,
+      "expert_review_required": true,
+      "interpretation_accuracy_measured": false,
+      "mode": "guided_pilot",
+      "reference_status": "reference_pending"
+    },
+    "report_sections": [
+      "Question and source selection",
+      "Matched comparison design",
+      "Frames and attributed voices",
+      "Descriptive trajectories",
+      "Reviewed cases and alternatives",
+      "Coverage and reproducibility annex"
+    ],
+    "schema_version": "doxa-service-brief-1.0"
+  },
+  "data_origin": "synthetic_demonstration",
+  "documents": [
+    {
+      "author": "Fictional reporter A",
+      "blocks": [
+        {
+          "id": "a1",
+          "text": "At a fictional city hearing, the housing committee described the proposed permit reform as a way to reduce delays. Its chair said, 'We will publish the underlying data before Monday.' A tenant group asked whether the reform would reduce available protections."
+        },
+        {
+          "id": "a2",
+          "text": "A witness reported the slogan 'Muslims cannot be trusted.' The committee explicitly rejected that stereotype and affirmed that residents must be treated equally. Reporting and condemning this language is different from endorsing it."
+        }
+      ],
+      "document_type": "news",
+      "filename": "public-a.txt",
+      "id": "public-a",
+      "license": "Original synthetic demonstration text supplied with the DOXA repository; not a real organization or correspondence.",
+      "sha256": "80c645f00712f67d8d3671fe6f4298e502ca4f05834096e71895062e6960d0df",
+      "source_version_id": "public-a-v1",
+      "title": "SYNTHETIC · Fictional hearing report A"
+    },
+    {
+      "author": "Fictional reporter B",
+      "blocks": [
+        {
+          "id": "b1",
+          "text": "A fictional tenant group framed the same permit proposal as a question of accountability. Its spokesperson said, 'Please provide the evidence before Monday.' The report also recorded the committee's argument that processing delays should be reduced."
+        },
+        {
+          "id": "b2",
+          "text": "The report described criticism of the city's policy and condemnation of anti-Muslim stereotyping. These are different subjects. Possibly the selected hearing record is incomplete; this example supplies no independent evidence of deliberately omitted voices."
+        }
+      ],
+      "document_type": "news",
+      "filename": "public-b.txt",
+      "id": "public-b",
+      "license": "Original synthetic demonstration text supplied with the DOXA repository; not a real organization or correspondence.",
+      "sha256": "5978e03223e08e0833f888b0dacaa9a427726e865c18fa65871892245c0b7fda",
+      "source_version_id": "public-b-v1",
+      "title": "SYNTHETIC · Fictional hearing report B"
+    }
+  ],
+  "expert_commentary": [],
+  "findings": [],
+  "privacy_disclosure": {
+    "human_review": "No real expert review or independent reference labels were supplied.",
+    "identity_map": "none",
+    "mode": "synthetic originals",
+    "processing": "Local deterministic markers and report rendering only; no model inference.",
+    "source_material": "All documents, names and correspondence are fictional software demonstrations."
+  }
+}

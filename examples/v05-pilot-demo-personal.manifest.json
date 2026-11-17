@@ -1,0 +1,399 @@
+{
+  "artifact_manifests": {
+    "html": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 5,
+        "wording_observations_total": 5
+      },
+      "brief": {
+        "audience": "The fictional sender reviewing their own selected thread",
+        "company_policy": null,
+        "comparator": null,
+        "comparator_status": "not_declared",
+        "fingerprint": "b60f9524d49fd97491ac8a835ead7d37fa35ef9373fd3c1c6c308fc26611dbb6",
+        "lens_ids": [
+          "discourse"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Inspect the selected writing's observable wording and conversational context against the user's stated goal; distinguish possible readings from facts.",
+        "policy_alignment_status": "not_requested",
+        "profile_id": "personal",
+        "question": "Identify observable requests and time wording without guessing how the recipient feels.",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "User goal and audience",
+          "Selected message and thread context",
+          "Observable wording",
+          "Possible readings requiring review",
+          "Coverage and limitations",
+          "Privacy and evidence annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 9263,
+      "counts": {
+        "authored_eligible_wording_observations": 4,
+        "blocks": 3,
+        "characters": 352,
+        "context_wording_observations": 1,
+        "documents": 1,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 5,
+        "words": 57
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "html",
+      "interpretation_status": "reference_pending",
+      "media_type": "text/html; charset=utf-8",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": null,
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "be52f25061788fa103b96e697e33f07acfc9ae63780e7c2f05c5c11f110e319a",
+      "snapshot_sha256": "09e57ed92517dbd2846390b4e631b868ee745265255b5c4e46e40801611a5667",
+      "source_records": [
+        {
+          "document_id": "personal-thread",
+          "extracted_blocks_sha256": "bc720e7ab2e3c388cb307ecced560c190f2f67850e5d168d1b441a899928d66b",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "1f025246ceb55e1c192612de2a43886b56ffc9f5f1dd60d66ec97d07392c74dd",
+          "source_version_id": "personal-thread-v1"
+        }
+      ]
+    },
+    "json": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 5,
+        "wording_observations_total": 5
+      },
+      "brief": {
+        "audience": "The fictional sender reviewing their own selected thread",
+        "company_policy": null,
+        "comparator": null,
+        "comparator_status": "not_declared",
+        "fingerprint": "b60f9524d49fd97491ac8a835ead7d37fa35ef9373fd3c1c6c308fc26611dbb6",
+        "lens_ids": [
+          "discourse"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Inspect the selected writing's observable wording and conversational context against the user's stated goal; distinguish possible readings from facts.",
+        "policy_alignment_status": "not_requested",
+        "profile_id": "personal",
+        "question": "Identify observable requests and time wording without guessing how the recipient feels.",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "User goal and audience",
+          "Selected message and thread context",
+          "Observable wording",
+          "Possible readings requiring review",
+          "Coverage and limitations",
+          "Privacy and evidence annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 8909,
+      "counts": {
+        "authored_eligible_wording_observations": 4,
+        "blocks": 3,
+        "characters": 352,
+        "context_wording_observations": 1,
+        "documents": 1,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 5,
+        "words": 57
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "json",
+      "interpretation_status": "reference_pending",
+      "media_type": "application/json",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": null,
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "09e57ed92517dbd2846390b4e631b868ee745265255b5c4e46e40801611a5667",
+      "snapshot_sha256": "09e57ed92517dbd2846390b4e631b868ee745265255b5c4e46e40801611a5667",
+      "source_records": [
+        {
+          "document_id": "personal-thread",
+          "extracted_blocks_sha256": "bc720e7ab2e3c388cb307ecced560c190f2f67850e5d168d1b441a899928d66b",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "1f025246ceb55e1c192612de2a43886b56ffc9f5f1dd60d66ec97d07392c74dd",
+          "source_version_id": "personal-thread-v1"
+        }
+      ]
+    },
+    "pdf": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 5,
+        "wording_observations_total": 5
+      },
+      "brief": {
+        "audience": "The fictional sender reviewing their own selected thread",
+        "company_policy": null,
+        "comparator": null,
+        "comparator_status": "not_declared",
+        "fingerprint": "b60f9524d49fd97491ac8a835ead7d37fa35ef9373fd3c1c6c308fc26611dbb6",
+        "lens_ids": [
+          "discourse"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Inspect the selected writing's observable wording and conversational context against the user's stated goal; distinguish possible readings from facts.",
+        "policy_alignment_status": "not_requested",
+        "profile_id": "personal",
+        "question": "Identify observable requests and time wording without guessing how the recipient feels.",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "User goal and audience",
+          "Selected message and thread context",
+          "Observable wording",
+          "Possible readings requiring review",
+          "Coverage and limitations",
+          "Privacy and evidence annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 29947,
+      "counts": {
+        "authored_eligible_wording_observations": 4,
+        "blocks": 3,
+        "characters": 352,
+        "context_wording_observations": 1,
+        "documents": 1,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 5,
+        "words": 57
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "pdf",
+      "interpretation_status": "reference_pending",
+      "media_type": "application/pdf",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": {
+        "font_file": "DejaVuSans.ttf",
+        "missing_code_points": []
+      },
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "caa868a64a8036928db3e58183b349e00653a353bae8afa3a4f9ac5ede5b72ff",
+      "snapshot_sha256": "09e57ed92517dbd2846390b4e631b868ee745265255b5c4e46e40801611a5667",
+      "source_records": [
+        {
+          "document_id": "personal-thread",
+          "extracted_blocks_sha256": "bc720e7ab2e3c388cb307ecced560c190f2f67850e5d168d1b441a899928d66b",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "1f025246ceb55e1c192612de2a43886b56ffc9f5f1dd60d66ec97d07392c74dd",
+          "source_version_id": "personal-thread-v1"
+        }
+      ]
+    },
+    "xlsx": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 5,
+        "wording_observations_total": 5
+      },
+      "brief": {
+        "audience": "The fictional sender reviewing their own selected thread",
+        "company_policy": null,
+        "comparator": null,
+        "comparator_status": "not_declared",
+        "fingerprint": "b60f9524d49fd97491ac8a835ead7d37fa35ef9373fd3c1c6c308fc26611dbb6",
+        "lens_ids": [
+          "discourse"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Inspect the selected writing's observable wording and conversational context against the user's stated goal; distinguish possible readings from facts.",
+        "policy_alignment_status": "not_requested",
+        "profile_id": "personal",
+        "question": "Identify observable requests and time wording without guessing how the recipient feels.",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "User goal and audience",
+          "Selected message and thread context",
+          "Observable wording",
+          "Possible readings requiring review",
+          "Coverage and limitations",
+          "Privacy and evidence annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 15223,
+      "counts": {
+        "authored_eligible_wording_observations": 4,
+        "blocks": 3,
+        "characters": 352,
+        "context_wording_observations": 1,
+        "documents": 1,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 5,
+        "words": 57
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "xlsx",
+      "interpretation_status": "reference_pending",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": null,
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "39468ba5f85a51b6c0c20dc915e51ecde3f2511da85e4cf9d12a52e9ff4fa182",
+      "snapshot_sha256": "09e57ed92517dbd2846390b4e631b868ee745265255b5c4e46e40801611a5667",
+      "source_records": [
+        {
+          "document_id": "personal-thread",
+          "extracted_blocks_sha256": "bc720e7ab2e3c388cb307ecced560c190f2f67850e5d168d1b441a899928d66b",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "1f025246ceb55e1c192612de2a43886b56ffc9f5f1dd60d66ec97d07392c74dd",
+          "source_version_id": "personal-thread-v1"
+        }
+      ]
+    }
+  },
+  "data_origin": "synthetic_demonstration",
+  "description": "Authored fictional sources demonstrate report software; these are not model-quality or prejudice-detection results.",
+  "files": [
+    {
+      "bytes": 3066,
+      "file": "v05-pilot-demo-personal.input.json",
+      "sha256": "d3476427be57cd6e3a9b264539e8dae1df7384915f3244e1becff58ce4ed605a"
+    },
+    {
+      "bytes": 29947,
+      "file": "v05-pilot-demo-personal.pdf",
+      "sha256": "caa868a64a8036928db3e58183b349e00653a353bae8afa3a4f9ac5ede5b72ff"
+    },
+    {
+      "bytes": 9263,
+      "file": "v05-pilot-demo-personal.html",
+      "sha256": "be52f25061788fa103b96e697e33f07acfc9ae63780e7c2f05c5c11f110e319a"
+    },
+    {
+      "bytes": 15223,
+      "file": "v05-pilot-demo-personal.xlsx",
+      "sha256": "39468ba5f85a51b6c0c20dc915e51ecde3f2511da85e4cf9d12a52e9ff4fa182"
+    },
+    {
+      "bytes": 8909,
+      "file": "v05-pilot-demo-personal.json",
+      "sha256": "09e57ed92517dbd2846390b4e631b868ee745265255b5c4e46e40801611a5667"
+    },
+    {
+      "bytes": 357,
+      "file": "pilot-v05-inputs/personal-thread.txt",
+      "sha256": "1f025246ceb55e1c192612de2a43886b56ffc9f5f1dd60d66ec97d07392c74dd"
+    }
+  ],
+  "human_reference_labels": 0,
+  "model_requests": 0,
+  "network_requests": 0,
+  "operator_signed_reviews": 0,
+  "profile": "personal",
+  "schema_version": "doxa-synthetic-pilot-demonstration-1.0"
+}

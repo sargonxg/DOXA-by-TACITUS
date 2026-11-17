@@ -14,6 +14,7 @@ import sqlite3
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import uuid
 from collections import Counter, defaultdict
@@ -36,6 +37,7 @@ load_dotenv(ROOT / ".env")
 MAX_FILE = 500 * 1024 * 1024
 PART_SIZE = 8 * 1024 * 1024
 TERMINAL = {"completed", "partial", "failed", "cancelled"}
+PARSER_SLOTS = threading.BoundedSemaphore(2)
 
 
 def task_execution_limits(provider: str, *, cloud_state: bool = False) -> dict:
@@ -76,6 +78,13 @@ def parser_environment() -> dict[str, str]:
 
 
 def extract_path(path: Path, filename: str) -> dict:
+    # An asyncio awaiter can be cancelled while its thread keeps working.
+    # Hold the parser limit in the real worker, rather than only in the awaiter.
+    with PARSER_SLOTS:
+        return _extract_path(path, filename)
+
+
+def _extract_path(path: Path, filename: str) -> dict:
     """One extraction policy for intake and explicit immutable re-extraction."""
     if Path(filename).suffix.lower() in {".txt", ".md", ".markdown"} and path.stat().st_size <= 20 * 1024 * 1024:
         from doxa.extraction import extract_text_document
@@ -125,6 +134,8 @@ class RunInput(BaseModel):
     reasoning_token_allowance: int = Field(default=0, ge=0, le=8192)
     verification_of: str | None = None
     request_journal_mode: Literal["metadata", "visible_io"] = "metadata"
+    service_profile_id: Literal["company", "public", "personal"] | None = None
+    pilot_brief_revision: int | None = Field(default=None, ge=1)
 
 
 class ReviewInput(BaseModel):
@@ -133,7 +144,9 @@ class ReviewInput(BaseModel):
 
 
 def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True, use_saved_showcase: bool = True) -> FastAPI:
+    from doxa.access import AccessControl, current_principal, install as install_access, require_project_access
     from doxa.resources import asset_root
+    access = AccessControl.from_environment()
     assets_root = asset_root()
     tasks: dict[str, asyncio.Task] = {}
     extraction_slots = asyncio.Semaphore(2)
@@ -141,15 +154,20 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     @asynccontextmanager
     async def lifespan(app: FastAPI):
         app.state.store = Store(data_dir)
+        access.ensure_native(app.state.store)
+        app.state.store._managed_pilot = access.managed
         app.state.store.init()
+        from doxa.pilot_api import ensure_schema as ensure_pilot_schema
+        ensure_pilot_schema(app.state.store)
         from doxa.report_jobs import ReportJobs
-        app.state.report_jobs = ReportJobs(app.state.store)
+        app.state.report_jobs = ReportJobs(app.state.store, access_control=access)
         app.state.tasks = tasks
         if not app.state.store.one("SELECT id FROM projects LIMIT 1"):
             app.state.store.execute("INSERT INTO projects(id,name,description,created_at) VALUES(?,?,?,?)",
                                     [uid(), "My research workspace", "An evidence-centred discourse inquiry", utcnow()])
         if start_workers and not app.state.store.remote:
             await app.state.report_jobs.start()
+            app.state.resume_pilot_erasure_jobs()
             for row in app.state.store.query("SELECT id FROM runs WHERE status IN ('queued','running')"):
                 schedule(row["id"])
         yield
@@ -165,7 +183,12 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     def db() -> Store:
         return app.state.store
 
+    async def project_thread(project_id, kind, function, *args, **kwargs):
+        from doxa.privacy_lifecycle import run_activity
+        return await asyncio.to_thread(run_activity, db(), project_id, kind, function, *args, **kwargs)
+
     def require_project(project_id: str) -> dict:
+        require_project_access(project_id)
         result = db().one("SELECT * FROM projects WHERE id=?", [project_id])
         if not result:
             raise HTTPException(404, "Project not found")
@@ -175,6 +198,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         result = unpack(db().one("SELECT * FROM documents WHERE id=?", [document_id]))
         if not result:
             raise HTTPException(404, "Document not found")
+        require_project_access(result["project_id"])
         if with_blocks:
             result["blocks"] = db().get_json(result["blocks_key"]) if result["blocks_key"] else []
         source = result.get("metadata", {}).get("source_id") or result.get("metadata", {}).get("source_identity") or result.get("source_url") or document_id
@@ -185,6 +209,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         run = unpack(db().one("SELECT * FROM runs WHERE id=?", [run_id]))
         if not run or (project_id is not None and run["project_id"] != project_id):
             raise HTTPException(404, "Run not found")
+        require_project_access(run["project_id"])
         return run
 
     def settings() -> dict:
@@ -204,7 +229,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     @app.middleware("http")
     async def protect(request: Request, call_next):
         token = os.environ.get("DOXA_INTERNAL_TOKEN", "")
-        if token:
+        if token and (not access.managed or request.url.path.startswith("/internal/")):
             supplied = request.headers.get("x-doxa-service-token", "")
             if not hmac.compare_digest(supplied, token):
                 return JSONResponse({"detail": "Authenticated gateway required"}, status_code=401)
@@ -212,7 +237,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             # Internal work is permitted only by a configured service token, never from an arbitrary web page.
             if request.client and request.client.host not in {"127.0.0.1", "::1", "testclient"}:
                 return JSONResponse({"detail": "Local internal endpoint"}, status_code=403)
-        if not token:
+        if not token or access.managed:
             host = request.headers.get("host", "").split(":")[0]
             allowed = {"localhost", "127.0.0.1", "[", "testserver"}
             if os.environ.get("DOXA_PUBLIC_ORIGIN"):
@@ -261,6 +286,9 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
 
     @app.get("/api/projects")
     def projects():
+        principal = current_principal()
+        if principal.managed and not principal.all_projects:
+            return db().query("SELECT * FROM projects WHERE id IN (SELECT value FROM json_each(?)) ORDER BY created_at", [json.dumps(principal.project_ids)])
         return db().query("SELECT * FROM projects ORDER BY created_at")
 
     @app.post("/api/projects", status_code=201)
@@ -324,6 +352,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     @app.patch("/api/documents/{document_id}")
     def update_document(document_id: str, body: dict):
         document = require_document(document_id)
+        if document.get("metadata", {}).get("privacy_transform_id"):
+            raise HTTPException(409, "Transformed source metadata is frozen. Edit the authorized original and create a new privacy version instead.")
         editable = {"title", "author", "institution", "document_type", "published_at"}
         updates = {key: value for key, value in body.items() if key in editable}
         if any(value is not None and (not isinstance(value, str) or len(value) > 2000) for value in updates.values()):
@@ -403,6 +433,9 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         doc_id = document_id or hashlib.sha256(json.dumps([project_id, identity, digest]).encode()).hexdigest()[:32]
         blocks = data.get("blocks", [])
         blocks_key = f"documents/{doc_id}/blocks.json"
+        if not db().remote:
+            from doxa.privacy_lifecycle import track_artifact
+            track_artifact(db(), project_id, f"objects/documents/{doc_id}", "source_units")
         db().put_json(blocks_key, blocks)
         for key in ["extraction_warnings", "extraction_manifest", "extractor", "extractor_version", "source_sha256", "content_sha256", "rights", "notices", "excluded_blocks", "source_id", "attribution", "license_url", "rights_source_url", "rights_notes", "rights_review", "coverage", "synthetic", "language"]:
             if key in data:
@@ -456,12 +489,15 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             return require_document(duplicate["id"]), True
         key = (duplicate or {}).get("object_key") or existing_key or f"originals/{project_id}/{hashlib.sha256((commit_identity + digest_string).encode()).hexdigest()}/{Path(filename).name}"
         if not existing_key:
-            await asyncio.to_thread(db().put_path, key, path)
+            if not db().remote:
+                from doxa.privacy_lifecycle import track_artifact
+                track_artifact(db(), project_id, "objects/" + key, "original")
+            await project_thread(project_id, "source_copy", db().put_path, key, path)
         extracted: dict = {}
         error = None
         try:
             async with extraction_slots:
-                extracted = await asyncio.to_thread(extract_path, path, filename)
+                extracted = await project_thread(project_id, "source_extract", extract_path, path, filename)
         except subprocess.TimeoutExpired:
             error = "Extraction exceeded the 180-second task limit. Install the OCR extra or split this document into smaller parts."
         except Exception as exc:
@@ -478,9 +514,10 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         original = require_document(document_id)
         if not original.get("object_key"):
             raise HTTPException(422, "This source has no retained original file; import its original before re-extracting")
-        with tempfile.TemporaryDirectory(dir=db().root) as working:
+        from doxa.pilot_api import project_work_directory
+        with tempfile.TemporaryDirectory(dir=project_work_directory(db(), original["project_id"])) as working:
             path = Path(working) / ("source" + Path(original["filename"]).suffix)
-            await asyncio.to_thread(db().download, original["object_key"], path)
+            await project_thread(original["project_id"], "source_download", db().download, original["object_key"], path)
             raw_hash = hashlib.sha256()
             with path.open("rb") as source:
                 while chunk := source.read(1024 * 1024):
@@ -492,7 +529,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 raise HTTPException(409, "Retained original failed its source hash check")
             try:
                 async with extraction_slots:
-                    extracted = await asyncio.to_thread(extract_path, path, original["filename"])
+                    extracted = await project_thread(original["project_id"], "source_reextract", extract_path, path, original["filename"])
             except (ValueError, subprocess.TimeoutExpired) as error:
                 raise HTTPException(422, "Re-extraction did not succeed; the original version is unchanged. " + (str(error)[:400] if isinstance(error, ValueError) else "Parser exceeded its time limit.")) from error
         manifest = extracted["extraction_manifest"]
@@ -524,7 +561,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             raise HTTPException(404, "Import does not belong to this project")
         batch = db().one("SELECT * FROM batches WHERE id=?", [session["batch_id"]]) if session else new_batch(project_id, "Uploaded documents")
         results = []
-        with tempfile.TemporaryDirectory(dir=db().root) as working:
+        from doxa.pilot_api import project_work_directory
+        with tempfile.TemporaryDirectory(dir=project_work_directory(db(), project_id)) as working:
             for file in files:
                 filename = Path(file.filename or "document.txt").name
                 path = Path(working) / (uid() + Path(filename).suffix)
@@ -611,7 +649,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             previous = db().one("SELECT sha256 FROM upload_parts WHERE upload_id=? AND part_number=?", [upload_id, part_number])
             if previous and previous["sha256"] != etag:
                 raise HTTPException(409, "This part is already committed with different bytes")
-            await asyncio.to_thread(db().put_path, key, path)
+            await project_thread(meta["project_id"], "upload_part_copy", db().put_path, key, path)
             db().execute("INSERT INTO upload_parts(upload_id,part_number,sha256,object_key,size) SELECT ?,?,?,?,? WHERE EXISTS(SELECT 1 FROM upload_sessions WHERE id=? AND status='pending') ON CONFLICT(upload_id,part_number) DO NOTHING", [upload_id, part_number, etag, key, size, upload_id])
             saved = db().one("SELECT sha256 FROM upload_parts WHERE upload_id=? AND part_number=?", [upload_id, part_number])
             if not saved or saved["sha256"] != etag:
@@ -716,9 +754,10 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             raise HTTPException(422, "Invalid upload artifact")
         batch_id = hashlib.sha256(f"{body['project_id']}:{key}".encode()).hexdigest()[:32]
         batch = new_batch(body["project_id"], "Resumable cloud upload", batch_id)
-        with tempfile.TemporaryDirectory(dir=db().root) as working:
+        from doxa.pilot_api import project_work_directory
+        with tempfile.TemporaryDirectory(dir=project_work_directory(db(), body["project_id"])) as working:
             path = Path(working) / (uid() + Path(body["filename"]).suffix)
-            await asyncio.to_thread(db().download, key, path)
+            await project_thread(body["project_id"], "upload_source_download", db().download, key, path)
             if path.stat().st_size != body["size"] or path.stat().st_size > MAX_FILE:
                 raise HTTPException(422, "Upload size mismatch")
             doc, duplicate = await ingest(body["project_id"], batch, path, body["filename"], existing_key=key)
@@ -854,7 +893,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             db().batch([{"sql": "UPDATE runs SET progress_json=?,usage_json=?,errors_json=?,status=?,completed_at=? WHERE id=?", "params": [json.dumps(progress), json.dumps(usage), json.dumps(errors), status, completed_at, run_id]}, Workspace.touch_statement(run["project_id"])])
         return require_run(run_id)
 
-    async def work_once(run_id: str) -> dict:
+    async def _work_once(run_id: str) -> dict:
         from doxa.analysis import analyze_document
         from doxa.providers import get_provider
         run = require_run(run_id)
@@ -923,6 +962,18 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         db().execute("INSERT INTO budget_ledger(month,reserved_usd,spent_usd) VALUES(?,0,0) ON CONFLICT(month) DO NOTHING", [month])
 
         async def reserve(amount: float) -> bool:
+            from doxa.pilot_api import enforce_analysis_policy
+            from doxa.access import WorkerAuthorizationError
+            try:
+                access.require_worker(config.get("execution_actor_id"), run["project_id"], "analyze")
+            except WorkerAuthorizationError:
+                db().execute("UPDATE runs SET status='paused_access' WHERE id=?", [run_id])
+                raise
+            try:
+                enforce_analysis_policy(db(), run["project_id"], config, [complete_document])
+            except ValueError:
+                db().execute("UPDATE runs SET status='paused_privacy' WHERE id=?", [run_id])
+                raise
             amount = max(0, float(amount))
             if not math.isfinite(amount):
                 return False
@@ -1112,6 +1163,23 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         pending = updated["status"] not in TERMINAL and not updated["status"].startswith("paused")
         return {"pending": pending, "run": updated}
 
+    async def work_once(run_id: str) -> dict:
+        if db().remote:
+            return await _work_once(run_id)
+        from doxa.privacy_lifecycle import activity, ProjectErasingError
+        from doxa.access import WorkerAuthorizationError
+        run = require_run(run_id)
+        try:
+            access.require_worker(run["config"].get("execution_actor_id"), run["project_id"], "analyze")
+        except WorkerAuthorizationError:
+            db().execute("UPDATE runs SET status='paused_access' WHERE id=?", [run_id])
+            return {"pending": False, "run": require_run(run_id)}
+        try:
+            with activity(db(), run["project_id"], "analysis_worker"):
+                return await _work_once(run_id)
+        except ProjectErasingError:
+            return {"pending": False, "run": {"id": run_id, "status": "cancelled", "reason": "project_erasure"}}
+
     async def run_loop(run_id: str):
         config = require_run(run_id)["config"]
         concurrency = 4 if config.get("provider") in {"cloudflare", "openai", "runpod"} else 1
@@ -1136,6 +1204,29 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     async def create_run(project_id: str, body: RunInput, *, check_health: bool = True) -> dict:
         require_project(project_id)
         config = body.model_dump(exclude_none=True)
+        if access.managed:
+            config["execution_actor_id"] = current_principal().id
+            config["managed_access"] = True
+        from doxa.pilot_api import enforce_analysis_policy, freeze_brief
+        if body.service_profile_id:
+            if body.verification_of:
+                raise HTTPException(422, "Verification inherits its original run's service brief")
+            try:
+                frozen = freeze_brief(db(), project_id, body.service_profile_id, body.pilot_brief_revision)
+            except ValueError as error:
+                raise HTTPException(409, str(error)) from error
+            config["service_brief"] = frozen
+            config["question"] = frozen["question"]
+            config["persona"] = frozen["perspective"] + "\nReport audience: " + frozen["audience"]
+            config["lens_ids"] = frozen["lens_ids"]
+            body = body.model_copy(update={"question": config["question"], "persona": config["persona"],
+                                           "lens_ids": config["lens_ids"]})
+        elif body.pilot_brief_revision is not None:
+            raise HTTPException(422, "A brief revision requires its service profile")
+        try:
+            enforce_analysis_policy(db(), project_id, config)
+        except ValueError as error:
+            raise HTTPException(422, str(error)) from error
         if body.request_journal_mode == "visible_io":
             if db().remote or os.environ.get("DOXA_ENABLE_PRIVATE_JOURNAL", "").lower() not in {"1", "true", "yes"}:
                 raise HTTPException(422, "Private visible request capture requires operator-enabled local storage (DOXA_ENABLE_PRIVATE_JOURNAL)")
@@ -1172,7 +1263,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 verification = select_verification_units(db(), project_id, body.verification_of)
             except ValueError as error:
                 raise HTTPException(422, str(error)) from error
-            config.update({key: primary["config"][key] for key in ("lens_ids", "lens_snapshots", "lens_snapshots_sha256", "question", "persona", "custom_lens", "learning_snapshot_id") if key in primary["config"]})
+            config.update({key: primary["config"][key] for key in ("lens_ids", "lens_snapshots", "lens_snapshots_sha256", "question", "persona", "custom_lens", "learning_snapshot_id", "service_brief", "service_profile_id", "pilot_brief_revision") if key in primary["config"]})
             config["verification_selection"] = verification
         if modern:
             from doxa.contextual import PROMPT_VERSION, UNIT_BUILDER_VERSION
@@ -1226,11 +1317,22 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             rows = [row for row in rows if row["id"] in verification["document_ids"]]
         if not rows:
             raise HTTPException(422, "Import at least one successfully extracted document")
+        try:
+            enforce_analysis_policy(db(), project_id, config, rows)
+        except ValueError as error:
+            raise HTTPException(422, str(error)) from error
         run_id = uid()
         config["schema_version"] = "3.0" if modern else "1.0"
+        from doxa.pilot_api import active_policy
+        selected_policy = active_policy(db(), project_id, default_for_service=bool(config.get("service_profile_id") or config.get("service_brief")))
+        if selected_policy:
+            config["privacy_policy_snapshot"] = selected_policy
         manifest_key = f"runs/{run_id}/source-manifest.json"
         source_manifest = [{**{key: row.get(key) for key in ["id", "sha256", "title", "author", "institution", "document_type", "published_at", "source_url", "license"]}, "metadata": json.loads(row.get("metadata_json") or "{}")} for row in rows]
         frozen_by_id = {item["id"]: item for item in source_manifest}
+        if not db().remote:
+            from doxa.privacy_lifecycle import track_artifact
+            track_artifact(db(), project_id, f"objects/runs/{run_id}", "run_inputs")
         db().put_json(manifest_key, source_manifest)
         config["source_manifest_key"] = manifest_key
         config["source_snapshot"] = [{"id": row["id"], "sha256": row["sha256"]} for row in rows]
@@ -1326,9 +1428,17 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     @app.post("/api/runs/{run_id}/resume")
     async def resume_run(run_id: str, body: dict | None = None):
         run = require_run(run_id)
-        if run["status"] not in {"paused_budget", "failed", "partial", "cancelled"}:
+        if run["status"] not in {"paused_budget", "paused_access", "paused_privacy", "failed", "partial", "cancelled"}:
             raise HTTPException(409, "Only a paused, partial, failed or cancelled run can be resumed")
         config = run["config"]
+        if access.managed:
+            config["execution_actor_id"] = current_principal().id
+            config["managed_access"] = True
+        from doxa.pilot_api import enforce_analysis_policy
+        try:
+            enforce_analysis_policy(db(), run["project_id"], config)
+        except ValueError as error:
+            raise HTTPException(422, str(error)) from error
         if str(config.get("methodology_version", "1")).startswith("3") and config.get("provider") != "lexical":
             from doxa.contextual import PROMPT_VERSION
             if config.get("pipeline_version") and config["pipeline_version"] != PROMPT_VERSION:
@@ -1396,6 +1506,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
 
     @app.patch("/api/findings/{finding_id}/review")
     def review(finding_id: str, body: ReviewInput):
+        if current_principal().managed:
+            raise HTTPException(409, "Managed reviews require a structured v3 assessment with individual reviewer provenance")
         if body.review_status not in {"unreviewed", "confirmed", "rejected", "revised"}:
             raise HTTPException(422, "Unknown review status")
         row = db().one("SELECT * FROM findings WHERE id=?", [finding_id])
@@ -1566,8 +1678,12 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                     "filters": filters, "generated_at": utcnow(), "reviews": db().query("SELECT r.* FROM reviews r JOIN findings f ON f.id=r.finding_id WHERE f.project_id=? ORDER BY r.created_at", [project_id])}
         report_id = uid()
         output_dir = db().root / "exports" / report_id
+        if not db().remote:
+            from doxa.privacy_lifecycle import track_artifact
+            track_artifact(db(), project_id, f"exports/{report_id}", "report_work")
+            track_artifact(db(), project_id, f"objects/reports/{report_id}", "report_artifact")
         output_dir.mkdir(parents=True)
-        path = await asyncio.to_thread(build_report, snapshot, fmt, output_dir)
+        path = await project_thread(project_id, "legacy_report_render", build_report, snapshot, fmt, output_dir)
         object_key = f"reports/{report_id}/{path.name}"
         snapshot_key = f"reports/{report_id}/snapshot.json"
         db().put_path(object_key, path)
@@ -1594,10 +1710,13 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     services = {"db": db, "require_project": require_project, "require_document": require_document,
                 "require_run": require_run, "create_run": create_run, "new_batch": new_batch,
                 "ingest": ingest, "load_demo": load_demo, "provider_health": provider_health, "root": assets_root,
-                "use_saved_showcase": use_saved_showcase}
+                "use_saved_showcase": use_saved_showcase, "save_document": save_document}
     services["report_jobs"] = lambda: app.state.report_jobs
     register_v3(app, services)
     register_imports(app, services)
+    install_access(app, access)
+    from doxa.pilot_api import register as register_pilot
+    register_pilot(app, services)
 
     from doxa.resources import frontend_distribution
     distribution = frontend_distribution()

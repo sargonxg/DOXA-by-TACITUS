@@ -33,6 +33,14 @@ import { DrawerBody } from "./workspace/Drawers";
 import { useCasebook } from "./workspace/Casebooks";
 import { CoverageSummary } from "./workspace/Coverage";
 import {
+  AccessControls,
+  AccessGate,
+  permits,
+  useAccessSession,
+} from "./workspace/AccessGate";
+import { PilotWorkspace } from "./workspace/PilotWorkspace";
+import type { PilotBrief } from "./workspace/PilotWorkspace";
+import {
   contextFor,
   list,
   message,
@@ -92,6 +100,18 @@ function currentUrl() {
 }
 
 export default function App() {
+  return (
+    <AccessGate>
+      <Workspace />
+    </AccessGate>
+  );
+}
+
+function Workspace() {
+  const access = useAccessSession();
+  const [pilotBrief, setPilotBrief] = useState<PilotBrief | null>(null);
+  const [erasureWorkspace, setErasureWorkspace] = useState("");
+  const [unsavedPilotBrief, setUnsavedPilotBrief] = useState(false);
   const [projects, setProjects] = useState<Project[]>([]);
   const [project, setProject] = useState("");
   const [lenses, setLenses] = useState<Lens[]>([]);
@@ -222,17 +242,52 @@ export default function App() {
         if (!alive) return;
         if (p.status !== "fulfilled") throw p.reason;
         let ps = list<Project>(p.value);
-        if (!ps.length)
+        const initial = currentUrl();
+        const preferred =
+          initial.searchParams.get("workspace") ||
+          localStorage.getItem("doxa-project");
+        if (
+          preferred &&
+          !ps.some((item) => item.id === preferred) &&
+          permits(access, "admin")
+        ) {
+          try {
+            const jobs = await request<Item[]>(
+              `/pilot/projects/${encodeURIComponent(preferred)}/erase-jobs`,
+            );
+            if (!alive) return;
+            if (jobs.length) {
+              ps = [
+                ...ps,
+                {
+                  id: preferred,
+                  name: "Project erasure record",
+                  description:
+                    "Retained lifecycle receipt; source project no longer exists",
+                },
+              ];
+              setErasureWorkspace(preferred);
+            }
+          } catch {
+            /* A stale or unauthorized workspace URL grants no access. */
+          }
+        }
+        if (!ps.length && permits(access, "admin"))
           ps = [
             await request<Project>("/projects", {
               method: "POST",
               body: JSON.stringify({ name: "Research workspace" }),
             }),
           ];
-        const initial = currentUrl();
-        const preferred =
-          initial.searchParams.get("workspace") ||
-          localStorage.getItem("doxa-project");
+        if (!ps.length) {
+          setProjects([]);
+          setError(
+            "No workspace has been granted to this account. Contact your workspace operator.",
+          );
+          setLoading(false);
+          setReady(true);
+          return;
+        }
         const id = ps.some((item) => item.id === preferred)
           ? preferred!
           : ps[0].id;
@@ -299,6 +354,10 @@ export default function App() {
 
   useEffect(() => {
     if (!ready || !project) return;
+    if (project === erasureWorkspace) {
+      setLoading(false);
+      return;
+    }
     const key = JSON.stringify([project, scope]);
     if (signature.current === key && queryRef.current) {
       setLoading(false);
@@ -338,9 +397,10 @@ export default function App() {
         }
       });
     return () => controller.abort();
-  }, [ready, project, scope, revision]);
+  }, [ready, project, scope, revision, erasureWorkspace]);
   useEffect(() => {
     if (!ready || !project) return;
+    if (project === erasureWorkspace) return;
     let alive = true;
     void request<AnalysisRun[]>(`/v3/projects/${project}/runs?limit=30`)
       .then((value) => {
@@ -350,7 +410,7 @@ export default function App() {
     return () => {
       alive = false;
     };
-  }, [ready, project, revision, notify]);
+  }, [ready, project, revision, notify, erasureWorkspace]);
   useEffect(() => {
     const timer = setTimeout(() => {
       if (search !== scope.q) patchScope({ q: search });
@@ -660,7 +720,11 @@ export default function App() {
             </option>
           ))}
         </select>
-        <IconButton label="Create workspace" onClick={() => void newProject()}>
+        <IconButton
+          label="Create workspace"
+          onClick={() => void newProject()}
+          disabled={!permits(access, "admin")}
+        >
           <Plus size={15} />
         </IconButton>
         <div className="w-command-search">
@@ -680,18 +744,36 @@ export default function App() {
           <span>Cloud / local</span>
           <ChevronDown size={11} />
         </button>
-        <Button variant="outline" onClick={() => setDrawer("import")}>
+        <Button
+          variant="outline"
+          onClick={() => setDrawer("import")}
+          disabled={
+            !project ||
+            project === erasureWorkspace ||
+            !permits(access, "write")
+          }
+        >
           <Upload size={14} />
           <span>Import</span>
         </Button>
-        <Button onClick={() => setDrawer("analyze")} disabled={!matching}>
+        <Button
+          onClick={() => setDrawer("analyze")}
+          disabled={
+            !matching || unsavedPilotBrief || !permits(access, "analyze")
+          }
+          title={
+            unsavedPilotBrief
+              ? "Save the inquiry brief before starting analysis."
+              : undefined
+          }
+        >
           <Sparkles size={14} />
           <span>Analyze</span>
         </Button>
         <IconButton
           label="Export query report"
           onClick={() => setDrawer("reports")}
-          disabled={!query}
+          disabled={!query || !permits(access, "export")}
         >
           <ArrowDownToLine size={17} />
         </IconButton>
@@ -956,6 +1038,47 @@ export default function App() {
             <Badge>Research preview</Badge>
           </div>
           {error && <ErrorMessage text={error} />}
+          {project && (
+            <PilotWorkspace
+              project={project}
+              projectName={
+                projects.find((item) => item.id === project)?.name || ""
+              }
+              query={query}
+              sourceContext={context}
+              onBrief={setPilotBrief}
+              onUnsavedChange={setUnsavedPilotBrief}
+              onAnalyze={() => setDrawer("analyze")}
+              onImport={() => setDrawer("import")}
+              onReports={() => setDrawer("reports")}
+              onRefresh={refresh}
+              onOpenSource={(id) => void openSource(id)}
+              onErased={() => {
+                contextRequest.current++;
+                setContext(null);
+                setContextLoading(false);
+                setCandidate(null);
+                setCasebook(null);
+                setQuery(null);
+                queryRef.current = null;
+                setRuns([]);
+                setPilotBrief(null);
+                setLoading(false);
+              }}
+              onSavedSource={(id) => {
+                contextRequest.current++;
+                setContext(null);
+                setContextLoading(false);
+                setScope({
+                  ...EMPTY_SCOPE,
+                  run_id: "none",
+                  document_ids: [id],
+                });
+                setSearch("");
+                refresh();
+              }}
+            />
+          )}
           <div className="w-metric-row">
             <Metric
               label="Matching sources"
@@ -1062,6 +1185,7 @@ export default function App() {
         )}
       </main>
       <footer className="w-footer">
+        <AccessControls />
         <span>
           <ShieldCheck size={11} />
           Source-linked observations · explicit methods · human review
@@ -1153,6 +1277,7 @@ export default function App() {
             }}
             onRefresh={refresh}
             onNotice={notify}
+            pilotBrief={pilotBrief}
           />
         </Drawer>
       )}
@@ -1361,6 +1486,7 @@ function SourceList({
   onStale: () => void;
 }) {
   const state = usePage<SourceDocument>(query, "documents");
+  const access = useAccessSession();
   return (
     <section className="w-source-list">
       <header>
@@ -1369,7 +1495,11 @@ function SourceList({
           <strong>Sources</strong>
           <Badge>{number(state.page.total)}</Badge>
         </div>
-        <IconButton label="Import sources" onClick={onImport}>
+        <IconButton
+          label="Import sources"
+          onClick={onImport}
+          disabled={!permits(access, "write")}
+        >
           <Plus size={15} />
         </IconButton>
       </header>
@@ -1419,7 +1549,11 @@ function SourceList({
       ) : (
         <Empty title="Start with your sources">
           Import documents or explore a licensed collection.
-          <Button variant="outline" onClick={onImport}>
+          <Button
+            variant="outline"
+            onClick={onImport}
+            disabled={!permits(access, "write")}
+          >
             <Database size={13} />
             Explore collections
           </Button>

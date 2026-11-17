@@ -1,6 +1,6 @@
 # DOXA model and system card
 
-**Version:** application 0.4.0; each frozen analytical run records its own methodology, rubric snapshots, model/provider identity and source selection. This application is an orchestration and evidence system, not a newly trained foundation model.
+**Version:** application 0.5.0; each frozen analytical run records its own methodology, rubric snapshots, model/provider identity and source selection. This application is an orchestration and evidence system, not a newly trained foundation model. v0.5 adds guided service profiles, rules-based privacy/wording tools and native access/lifecycle controls; original recorded run methods remain unchanged.
 
 ## Intended use
 
@@ -9,6 +9,8 @@ Research, civil-society monitoring, newsroom/policy analysis and teaching with d
 The engine emits typed criterion outcomes, attribution and stance fields, exact source references and explicit unresolved work. Frameworks retain distinct definitions and boundary conditions. Political framing is descriptive; an observed frame alone establishes neither prejudice nor factual error. No demographic-persona simulation or private political-identity inference is needed.
 
 ## Model roles and provenance
+
+The new [guided-pilot tools](managed-pilots-v05.md) use explicitly versioned deterministic rules for identifier previews and observable English wording. They do not establish calibrated tone, prejudice or emotion judgments. Optional detector interfaces do not install or execute a GLiNER model. New report examples are synthetic software demonstrations with no inference; operator signatures do not establish qualifications or independent validation.
 
 | Component | Role | Recorded limitations |
 | --- | --- | --- |

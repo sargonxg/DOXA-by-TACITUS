@@ -39,6 +39,29 @@ ATTRIBUTIONS = {"author", "quoted_speaker", "reported_speaker", "unknown"}
 STANCES = {"supports", "opposes", "mixed", "neutral", "unclear", "not_applicable"}
 ANNOTATION_FIELDS = {"result", "attribution", "speaker_stance", "document_stance", "evidence_adequacy",
                      "criterion_application", "context_sufficient", "acceptable_alternatives", "note"}
+# Keep the v0.4 offline generator's field set stable. The optional contract is
+# additive for newly entered human references, never synthesized model gold.
+EXTENDED_ANNOTATION_FIELDS = {"evidence_spans", "target", "proposition", "reporting_chain",
+                              "communicative_act", "perspective", "missing_context_reasons"}
+COMMUNICATIVE_ACTS = {"request", "proposal", "commitment", "refusal", "disagreement", "assertion",
+                     "question", "acknowledgement", "greeting", "mixed", "other", "uncertain", "not_applicable"}
+REPORTING_ROLES = {"author", "narrator", "message_sender", "quoted_speaker", "reported_speaker", "unknown"}
+MISSING_CONTEXT_REASONS = {"missing_prior_message", "missing_following_message", "missing_section", "speaker_unknown",
+                           "target_unknown", "translation_uncertain", "extraction_incomplete", "comparator_missing",
+                           "ambiguous_reference", "other"}
+
+
+def annotation_contract():
+    return {"version": "0.5", "optional_fields": sorted(EXTENDED_ANNOTATION_FIELDS),
+            "unannotated_value": None, "coordinate_unit": "unicode_code_points",
+            "evidence_spans": {"maximum": 32, "fields": ["document_id", "block_id", "start", "end", "quote"],
+                               "scope": "Exact frozen source text within the displayed scored unit or neighbor context; offsets are relative to block text."},
+            "reporting_chain": {"maximum": 12, "fields": ["speaker", "role", "evidence_span_indices"],
+                                "roles": sorted(REPORTING_ROLES), "evidence_links": "Zero-based indices into the independently entered evidence_spans."},
+            "communicative_acts": sorted(COMMUNICATIVE_ACTS),
+            "missing_context_reasons": sorted(MISSING_CONTEXT_REASONS),
+            "perspective": "Reviewer-declared reading context or framework perspective; not inferred private identity or beliefs.",
+            "origin": "human_reference_annotation", "automatic_reference_labels": False}
 
 
 def ensure_schema(store):
@@ -263,12 +286,13 @@ def export_review_form(store, project_id, evaluation_id, *, split="development",
         case["scored_unit"] = unit
         if "rubric" not in case or "criterion" not in case:
             case["rubric"] = {"origin": "not_recorded", "notice": "Create a new evaluation with explicitly frozen review instructions."}
-        case["reference_labels"] = {key: None for key in sorted(ANNOTATION_FIELDS)}
+        case["reference_labels"] = {key: None for key in sorted(ANNOTATION_FIELDS | EXTENDED_ANNOTATION_FIELDS)}
         if include_model:
             case["model_assessment"] = assessment
         cases.append(case)
     return {"schema_version": "0.4", "evaluation_id": evaluation_id, "scaffold_sha256": evaluation["scaffold_sha256"],
             "split": split, "model_blinded": not include_model, "cases": cases,
+            "annotation_contract": annotation_contract(),
             "review_template": {"evaluation_id": evaluation_id, "rows": [
                 {"case_id": case["id"], "case_sha256": case["case_sha256"], "source_hash": case["source_hash"],
                  "independent_blinded_review": False, "labels": case["reference_labels"]} for case in cases]},
@@ -276,7 +300,7 @@ def export_review_form(store, project_id, evaluation_id, *, split="development",
 
 
 def _labels(value):
-    if not isinstance(value, dict) or set(value) - ANNOTATION_FIELDS:
+    if not isinstance(value, dict) or set(value) - (ANNOTATION_FIELDS | EXTENDED_ANNOTATION_FIELDS):
         raise ValueError("Reference labels contain unknown fields")
     for key, allowed in (("result", RESULTS), ("attribution", ATTRIBUTIONS), ("speaker_stance", STANCES), ("document_stance", STANCES),
                          ("evidence_adequacy", {"adequate", "inadequate", "uncertain"}),
@@ -289,12 +313,92 @@ def _labels(value):
         raise ValueError("Acceptable alternatives must use the explicit outcome enum")
     if not isinstance(value.get("note", ""), str) or len(value.get("note", "")) > 8000:
         raise ValueError("Reference note exceeds its bound")
+    for key, maximum in (("target", 2000), ("proposition", 4000), ("perspective", 2000)):
+        if value.get(key) is not None and (not isinstance(value[key], str) or len(value[key]) > maximum):
+            raise ValueError(f"Reference {key} must be bounded text or null")
+    if value.get("communicative_act") is not None and (not isinstance(value["communicative_act"], str) or value["communicative_act"] not in COMMUNICATIVE_ACTS):
+        raise ValueError("Reference communicative act must use the declared enum")
+    reasons = value.get("missing_context_reasons")
+    if reasons is not None and (not isinstance(reasons, list) or len(reasons) > len(MISSING_CONTEXT_REASONS)
+                                or any(not isinstance(item, str) or item not in MISSING_CONTEXT_REASONS for item in reasons)
+                                or len(set(reasons)) != len(reasons)):
+        raise ValueError("Missing-context reasons must be a bounded list of distinct declared reasons")
+    spans = value.get("evidence_spans")
+    if spans is not None:
+        if not isinstance(spans, list) or len(spans) > 32:
+            raise ValueError("Reference evidence spans must contain at most 32 entries")
+        for span in spans:
+            if not isinstance(span, dict) or set(span) != {"document_id", "block_id", "start", "end", "quote"}:
+                raise ValueError("Reference evidence spans require explicit document, block, offsets and quotation")
+            if any(not isinstance(span[key], str) or not span[key] or len(span[key]) > 200 for key in ("document_id", "block_id")):
+                raise ValueError("Reference evidence identifiers must be bounded strings")
+            if type(span["start"]) is not int or type(span["end"]) is not int or not 0 <= span["start"] < span["end"]:
+                raise ValueError("Reference evidence offsets must be explicit increasing integers")
+            if not isinstance(span["quote"], str) or not span["quote"] or len(span["quote"]) > 16000:
+                raise ValueError("Reference evidence quotation must be nonempty bounded text")
+    chain = value.get("reporting_chain")
+    if chain is not None:
+        if not isinstance(chain, list) or len(chain) > 12:
+            raise ValueError("Reference reporting chain must contain at most 12 entries")
+        for node in chain:
+            if not isinstance(node, dict) or set(node) != {"speaker", "role", "evidence_span_indices"}:
+                raise ValueError("Reporting-chain entries require speaker, role and evidence links")
+            if not isinstance(node["speaker"], str) or not node["speaker"].strip() or len(node["speaker"]) > 300 or not isinstance(node["role"], str) or node["role"] not in REPORTING_ROLES:
+                raise ValueError("Reporting-chain speaker and role are invalid")
+            links = node["evidence_span_indices"]
+            if not isinstance(links, list) or len(links) > 32 or any(type(index) is not int or index < 0 or index >= len(spans or []) for index in links):
+                raise ValueError("Reporting-chain links must resolve to independently entered evidence spans")
+            if not links and node["role"] != "unknown":
+                raise ValueError("An identified reporting-chain role requires a source evidence link")
     return json.loads(_json(value))
+
+
+def _validate_annotation_context(store, project_id, evaluation, case, labels):
+    """Validate independent annotations against the exact frozen, visible case."""
+    if not any(labels.get(key) is not None for key in EXTENDED_ANNOTATION_FIELDS):
+        return
+    source_id = case["source"]["id"]
+    source = store.one("SELECT sha256,blocks_key FROM documents WHERE id=? AND project_id=?", [source_id, project_id])
+    if not source or source["sha256"] != case["source_hash"] or not source.get("blocks_key"):
+        raise ValueError("Reference annotation source is outside this project or its frozen version changed")
+    blocks = store.get_json(source["blocks_key"])
+    if content_sha256(blocks) != case.get("extracted_blocks_sha256"):
+        raise ValueError("Reference source blocks changed after the evaluation was frozen")
+    run = store.one("SELECT config_json FROM runs WHERE id=? AND project_id=?", [evaluation["run_id"], project_id])
+    if not run:
+        raise ValueError("Reference annotation run no longer exists in this project")
+    config = json.loads(run["config_json"])
+    from .contextual import build_units
+    document = {**case["source"], "blocks": blocks,
+                "source_version_id": case["model_assessment"].get("source_version_id") or source_id}
+    unit = next((item for item in build_units(document, max_unit_chars=config.get("unit_max_chars", 1200),
+                                             context_sentences=config.get("context_sentences", 2)) if item["id"] == case["unit_id"]), None)
+    if unit is None:
+        raise ValueError("Reference annotation no longer resolves to the frozen scored unit")
+    visible = defaultdict(list)
+    for sentence in [*unit.get("context_before", []), *unit["sentences"], *unit.get("context_after", [])]:
+        visible[sentence["block_id"]].append((sentence["start"], sentence["end"]))
+    merged = {}
+    for block_id, intervals in visible.items():
+        merged[block_id] = []
+        for start, end in sorted(intervals):
+            if merged[block_id] and start <= merged[block_id][-1][1]:
+                merged[block_id][-1] = (merged[block_id][-1][0], max(end, merged[block_id][-1][1]))
+            else:
+                merged[block_id].append((start, end))
+    block_text = {block["id"]: block["text"] for block in blocks}
+    for span in labels.get("evidence_spans") or []:
+        if span["document_id"] != source_id or span["block_id"] not in block_text:
+            raise ValueError("Reference evidence belongs to a different source or block")
+        if not any(start <= span["start"] < span["end"] <= end for start, end in merged.get(span["block_id"], [])):
+            raise ValueError("Reference evidence is outside the displayed frozen case context")
+        if block_text[span["block_id"]][span["start"]:span["end"]] != span["quote"]:
+            raise ValueError("Reference quotation does not match the exact frozen Unicode source")
 
 
 def import_reviews(store, project_id, evaluation_id, rows, *, reviewer_id, actor_kind="human"):
     ensure_schema(store)
-    _require(store, project_id, evaluation_id)
+    evaluation = _require(store, project_id, evaluation_id)
     if actor_kind != "human" or not isinstance(reviewer_id, str) or not reviewer_id.strip():
         raise ValueError("Independent references require an identified human reviewer")
     if not isinstance(rows, list) or not 1 <= len(rows) <= 1000:
@@ -302,6 +406,8 @@ def import_reviews(store, project_id, evaluation_id, rows, *, reviewer_id, actor
     statements, duplicate = [], 0
     seen = set()
     for value in rows:
+        if not isinstance(value, dict) or not isinstance(value.get("case_id"), str) or not value["case_id"] or len(value["case_id"]) > 200:
+            raise ValueError("Reference review rows require a bounded case identifier")
         identity = value.get("case_id")
         if identity in seen:
             raise ValueError("Duplicate case in review import")
@@ -314,8 +420,10 @@ def import_reviews(store, project_id, evaluation_id, rows, *, reviewer_id, actor
             raise ValueError("Reference case/source hash changed")
         if value.get("independent_blinded_review") is not True:
             raise ValueError("A blinded independent-review declaration is required")
+        validated_labels = _labels(value.get("labels"))
+        _validate_annotation_context(store, project_id, evaluation, case, validated_labels)
         payload = {"case_id": identity, "case_sha256": case["case_sha256"], "source_hash": case["source_hash"],
-                   "labels": _labels(value.get("labels")), "independent_blinded_review": True,
+                   "labels": validated_labels, "independent_blinded_review": True,
                    "reviewer_id": reviewer_id, "origin": "human_reference_review"}
         existing = store.one("SELECT payload_json FROM v4_reference_reviews WHERE evaluation_id=? AND case_id=? AND reviewer_id=?", [evaluation_id, identity, reviewer_id])
         if existing:
@@ -333,13 +441,18 @@ def import_reviews(store, project_id, evaluation_id, rows, *, reviewer_id, actor
 
 def adjudicate_case(store, project_id, evaluation_id, case_id, labels, *, actor_id, actor_kind="human", note=""):
     ensure_schema(store)
-    _require(store, project_id, evaluation_id)
+    evaluation = _require(store, project_id, evaluation_id)
     if actor_kind != "human" or not actor_id:
         raise ValueError("An identified human adjudicator is required")
     reviews = store.query("SELECT reviewer_id,payload_json FROM v4_reference_reviews WHERE evaluation_id=? AND case_id=? AND project_id=?", [evaluation_id, case_id, project_id])
     if len({row["reviewer_id"] for row in reviews}) < 2:
         raise ValueError("Two distinct independent reviews are required before adjudication")
-    payload = {"labels": _labels(labels), "note": str(note)[:8000], "reviewer_ids": sorted(row["reviewer_id"] for row in reviews),
+    row = store.one("SELECT payload_json FROM v4_evaluation_cases WHERE id=? AND project_id=? AND evaluation_id=?", [case_id, project_id, evaluation_id])
+    if not row:
+        raise ValueError("Reference case is outside this evaluation")
+    validated_labels = _labels(labels)
+    _validate_annotation_context(store, project_id, evaluation, json.loads(row["payload_json"]), validated_labels)
+    payload = {"labels": validated_labels, "note": str(note)[:8000], "reviewer_ids": sorted(row["reviewer_id"] for row in reviews),
                "review_sha256": sorted(content_sha256(json.loads(row["payload_json"])) for row in reviews),
                "origin": "human_reference_adjudication"}
     existing = store.one("SELECT payload_json FROM v4_reference_adjudications WHERE evaluation_id=? AND case_id=? AND project_id=?", [evaluation_id, case_id, project_id])
@@ -367,6 +480,8 @@ def reference_report(store, project_id, evaluation_id):
                          "agreement_fraction": sum(a == b for a, b in pairs) / len(pairs) if pairs else None}
     for row in reviewed:
         reference_hashes.append([row["id"], content_sha256(json.loads(row["reference_json"]))])
+    structured = {field: sum(json.loads(row["reference_json"])["labels"].get(field) is not None for row in reviewed)
+                  for field in sorted(EXTENDED_ANNOTATION_FIELDS)}
     return {"evaluation_id": evaluation_id, "scaffold_sha256": evaluation["scaffold_sha256"],
             "quality_status": "reference_reviewed" if reviewed and len(reviewed) == len(rows) else "review_in_progress" if reviewed else "reference_pending",
             "total_cases": len(rows), "adjudicated_cases": len(reviewed),
@@ -375,6 +490,9 @@ def reference_report(store, project_id, evaluation_id):
             "heldout_metrics_locked": not heldout_complete,
             "adjudicated_by_split": {split: sum(row["split"] == split for row in reviewed) for split in ("development", "heldout")},
             "diagnostic_label_agreement": counts,
+            "structured_annotation_progress": {"contract_version": "0.5", "adjudicated_cases": len(reviewed),
+                                                "cases_with_field_annotated": structured,
+                                                "notice": "Field completion is not annotation quality, independence, calibration or population accuracy."},
             "notice": "Selected-case agreement with human adjudication is diagnostic, not population accuracy. Sampling is enriched; original reviewer disagreements are retained."}
 
 

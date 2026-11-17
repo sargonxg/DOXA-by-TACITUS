@@ -137,6 +137,9 @@ def create_casebook(store, project_id, query_id, title, rationale="", publicatio
                   "scope_hash": saved["scope_hash"], "snapshot_version": saved["snapshot_version"]}
     identity, timestamp = uuid.uuid4().hex, utcnow()
     key = f"casebooks/{identity}/scope.json"
+    if not store.remote:
+        from .privacy_lifecycle import track_artifact
+        track_artifact(store, project_id, f"objects/casebooks/{identity}", "casebook")
     store.put_json(key, frozen)
     store.execute("INSERT INTO v4_casebooks(id,project_id,query_id,run_id,scope_hash,snapshot_version,scope_key,scope_sha256,title,selection_rationale,publication_type,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)",
                   [identity, project_id, query_id, run["id"], saved["scope_hash"], saved["snapshot_version"], key, digest(frozen), title, rationale, publication_type, timestamp, timestamp])

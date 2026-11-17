@@ -106,7 +106,8 @@ def register(app, services):
         session = status(project_id, import_id)
         batch = {"id": session["batch_id"], "project_id": project_id}
         maximum = 1024 * 1024 * 1024
-        with tempfile.TemporaryDirectory(dir=db().root) as working:
+        from .pilot_api import project_work_directory
+        with tempfile.TemporaryDirectory(dir=project_work_directory(db(), project_id)) as working:
             source = Path(working) / "source.zip"
             size = 0
             with source.open("wb") as target:

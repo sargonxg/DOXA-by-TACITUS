@@ -211,24 +211,42 @@ def recorded_snapshot(data_dir: Path, run_id: str):
 def prepared_human_data(frozen: dict) -> dict:
     store, params, table, clause = (frozen[key] for key in ("store", "params", "table", "clause"))
     documents = frozen["documents"]
+    from .mail import MAIL_AUTHOR_NOTICE, author_eligible_sql, is_mail_document
+    has_mail = any(is_mail_document(document) for document in documents)
     authors = {}
     for document in documents:
         entry = authors.setdefault(document.get("author") or "Unknown", {"documents": 0, "words": 0, "findings": 0, "confirmed": 0})
         entry["documents"] += 1
         entry["words"] += document.get("word_count", 0)
-    for row in store.query("SELECT COALESCE(NULLIF(d.author,''),'Unknown') author,COUNT(*) findings,"
-                           "SUM(a.review_status IN ('confirmed','accepted')) confirmed FROM " + table
-                           + " WHERE " + clause + " GROUP BY d.author", params):
+        if is_mail_document(document):
+            entry["mail_sources"] = entry.get("mail_sources", 0) + 1
+            entry["excluded_context_findings"] = 0
+    if has_mail:
+        eligible = author_eligible_sql()
+        author_query = ("SELECT COALESCE(NULLIF(d.author,''),'Unknown') author,SUM(CASE WHEN " + eligible + " THEN 1 ELSE 0 END) findings,"
+                        "SUM(CASE WHEN " + eligible + " AND a.review_status IN ('confirmed','accepted') THEN 1 ELSE 0 END) confirmed,"
+                        "SUM(CASE WHEN NOT " + eligible + " THEN 1 ELSE 0 END) excluded_context_findings FROM " + table
+                        + " WHERE " + clause + " GROUP BY d.author")
+    else:
+        author_query = ("SELECT COALESCE(NULLIF(d.author,''),'Unknown') author,COUNT(*) findings,"
+                        "SUM(a.review_status IN ('confirmed','accepted')) confirmed FROM " + table
+                        + " WHERE " + clause + " GROUP BY d.author")
+    for row in store.query(author_query, params):
         authors[row["author"]].update({"findings": row["findings"], "confirmed": row["confirmed"]})
+        if has_mail and authors[row["author"]].get("mail_sources"):
+            authors[row["author"]]["excluded_context_findings"] = row["excluded_context_findings"]
     def counts(column):
         return Counter({row["label"]: row["count"] for row in store.query(
             "SELECT " + column + " label,COUNT(*) count FROM " + table + " WHERE " + clause + " GROUP BY " + column, params)})
-    return {"documents": documents, "findings": frozen["display_records"], "runs": frozen["metadata"]["runs"],
+    result = {"documents": documents, "findings": frozen["display_records"], "runs": frozen["metadata"]["runs"],
             "by_id": {row["id"]: row for row in documents}, "authors": authors,
             "categories": counts("a.criterion_id"), "lenses": counts("a.lens_id"), "reviews": counts("a.review_status"),
             "statuses": Counter(row.get("status") or "unknown" for row in documents), "modern": True,
             "typed_counts": Counter({(row["criterion_kind"], row["result"]): row["count"] for row in frozen["typed_counts"]}),
             "word_count": sum(row.get("word_count", 0) for row in documents), "page_count": sum(row.get("page_count", 0) for row in documents)}
+    if has_mail:
+        result["mail_author_notice"] = MAIL_AUTHOR_NOTICE
+    return result
 
 
 class LimitedWriter:
@@ -347,19 +365,26 @@ def write_xlsx(frozen: dict, data: dict, target: Path) -> dict:
         if written_ids.hexdigest() != frozen["assessment_record_order_sha256"] or written_types != data["typed_counts"]:
             raise ValueError("Workbook assessment IDs or typed outcomes differ from the frozen selection")
         table("Typed results", ["Criterion kind", "Result", "Assessments", "Label"], ([row["criterion_kind"], row["result"], row["count"], row["criterion_kind"] + " / " + row["result"]] for row in frozen["typed_counts"]))
-        table("Authors", ["Author", "Source documents", "Source words", "All assessments", "Confirmed assessments"],
-              ([name, row["documents"], row["words"], row["findings"], row["confirmed"]] for name, row in sorted(data["authors"].items())))
+        if data.get("mail_author_notice"):
+            table("Authors", ["Document author / mail metadata", "Source documents", "All source words", "Eligible group assessments", "Confirmed eligible", "Excluded context assessments", "Mail source documents"],
+                  ([name, row["documents"], row["words"], row["findings"], row["confirmed"], row.get("excluded_context_findings", 0), row.get("mail_sources", 0)] for name, row in sorted(data["authors"].items())))
+        else:
+            table("Authors", ["Author", "Source documents", "Source words", "All assessments", "Confirmed assessments"],
+                  ([name, row["documents"], row["words"], row["findings"], row["confirmed"]] for name, row in sorted(data["authors"].items())))
         table("Lenses", ["Lens", "All assessments"], sorted(data["lenses"].items()))
         table("Units", ["Status", "Units", "Characters"], ([row["status"], row["count"], row["characters"]] for row in frozen["unit_states"]))
         table("Runs", ["Run ID", "Status", "Full recorded run provenance JSON"], ([row["id"], row["status"], row] for row in frozen["metadata"]["runs"]))
-        table("Methodology", ["Topic", "Details"], [
+        method_rows = [
             ["Scope", frozen["metadata"]["filters"]], ["Query ID", frozen["metadata"]["query_id"]],
             ["Scope hash", frozen["metadata"]["scope_hash"]], ["Snapshot revision", frozen["metadata"]["snapshot_version"]],
             ["Provenance", frozen["metadata"]["export_provenance"]],
             ["Interpretation", "All four result types and all selected sources are retained. Indicator, boundary and descriptive results are separate; there is no combined prejudice index. Exact source anchoring is not interpretation accuracy."],
             ["Excel safety", "Source strings are literal cell values. Long values continue across physical rows with the Part column; logical record counts are in the manifest. No formulas or external data connections."],
             ["Human edition", "The PDF/HTML briefings display 25 prioritized assessment and source entries, with shown/total disclosure. This XLSX and the compressed snapshot retain the complete selected data."],
-            ["Streaming scope", "This command streams JSON/XLSX; it makes no claim that the separate browser export endpoint has the same memory behavior."]])
+            ["Streaming scope", "This command streams JSON/XLSX; it makes no claim that the separate browser export endpoint has the same memory behavior."]]
+        if data.get("mail_author_notice"):
+            method_rows.append(["Mail author-group limits", data["mail_author_notice"]])
+        table("Methodology", ["Topic", "Details"], method_rows)
         overview = sheets["Overview"]
         overview.set_column("A:A", 37)
         overview.set_column("B:H", 24)

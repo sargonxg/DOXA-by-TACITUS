@@ -74,15 +74,23 @@ def _prepare(snapshot: dict) -> dict:
             record[name] = _obj(record.get(name) or record.get(name + "_json"))
         runs.append(record)
     by_id = {_string(d.get("id")): d for d in documents}
+    from .mail import MAIL_AUTHOR_NOTICE, finding_author_eligible, is_mail_document
+    mail_ids = {_string(document.get("id")) for document in documents if is_mail_document(document)}
     authors: dict[str, dict] = {}
     for document in documents:
         name = _string(document.get("author") or "Unknown")
         entry = authors.setdefault(name, {"documents": 0, "words": 0, "findings": 0, "confirmed": 0})
         entry["documents"] += 1
         entry["words"] += int(_number(document.get("word_count")))
+        if _string(document.get("id")) in mail_ids:
+            entry["mail_sources"] = entry.get("mail_sources", 0) + 1
+            entry.setdefault("excluded_context_findings", 0)
     for finding in findings:
         author = _string(by_id.get(_string(finding.get("document_id")), {}).get("author") or "Unknown")
         entry = authors.setdefault(author, {"documents": 0, "words": 0, "findings": 0, "confirmed": 0})
+        if _string(finding.get("document_id")) in mail_ids and not finding_author_eligible(finding):
+            entry["excluded_context_findings"] = entry.get("excluded_context_findings", 0) + 1
+            continue
         entry["findings"] += 1
         entry["confirmed"] += finding.get("review_status") in {"confirmed", "accepted"}
     categories = Counter(_string(f.get("category") or "Uncategorized") for f in findings)
@@ -93,12 +101,15 @@ def _prepare(snapshot: dict) -> dict:
         f.get("criterion_kind") in {"indicator", "boundary", "descriptive"} for f in findings)
     typed_counts = Counter((_string(f.get("criterion_kind") or "unknown / legacy"),
                             _string(f.get("result") or "unknown / legacy")) for f in findings)
-    return {"documents": documents, "findings": findings, "runs": runs,
+    result = {"documents": documents, "findings": findings, "runs": runs,
             "by_id": by_id, "authors": authors, "categories": categories,
             "lenses": lenses, "reviews": reviews, "statuses": statuses,
             "modern": modern, "typed_counts": typed_counts,
             "word_count": sum(int(_number(d.get("word_count"))) for d in documents),
             "page_count": sum(int(_number(d.get("page_count"))) for d in documents)}
+    if mail_ids:
+        result["mail_author_notice"] = MAIL_AUTHOR_NOTICE
+    return result
 
 
 def _source(finding: dict, data: dict) -> tuple[dict, dict, str]:
@@ -371,7 +382,10 @@ def _html(snapshot: dict, data: dict) -> str:
     sections.append('</div><div>' + _table_html(coverage_rows) + f'<p class="note">{_e(coverage_notice)}</p></div></div></section>')
     if profile == "teaching":
         sections.append('<section class="panel teaching"><h2>A reading exercise</h2><p>For each passage: identify who is speaking; distinguish a quotation from endorsement; state the lens being applied; write a plausible alternative; then compare with the supplied interpretation. A disagreement can reveal a methodological choice rather than an error.</p></section>')
-    sections.append(f'<section class="panel"><div class="label">Authorship in the supplied corpus</div><h2>Patterns by author</h2><table><thead><tr><th>Author</th><th>Documents</th><th>Words</th><th>{"Assessments" if data["modern"] else "Observations"}</th><th>Confirmed</th></tr></thead><tbody>')
+    if data.get("mail_author_notice"):
+        sections.append(f'<section class="panel"><div class="label">Supplied source metadata</div><h2>Document author groups</h2><p class="note">{_e(data["mail_author_notice"])}</p><table><thead><tr><th>Document author / mail metadata</th><th>Documents</th><th>All source words</th><th>Eligible group assessments</th><th>Confirmed eligible</th></tr></thead><tbody>')
+    else:
+        sections.append(f'<section class="panel"><div class="label">Authorship in the supplied corpus</div><h2>Patterns by author</h2><table><thead><tr><th>Author</th><th>Documents</th><th>Words</th><th>{"Assessments" if data["modern"] else "Observations"}</th><th>Confirmed</th></tr></thead><tbody>')
     author_rows = sorted(data["authors"].items(), key=lambda x: (-x[1]["findings"], x[0]))
     for author, count in author_rows[:source_limit]:
         sections.append(f'<tr><td>{_e(author)}</td><td>{count["documents"]}</td><td>{count["words"]:,}</td><td>{count["findings"]}</td><td>{count["confirmed"]}</td></tr>')
@@ -515,14 +529,22 @@ def _spreadsheet(snapshot: dict, data: dict, destination: Path):
             if target is not None:
                 sheets["Findings"].write_url(row, 20, f"internal:'Documents'!A{target+1}", body, string="Open source record")
         table("Evidence", ["Finding ID", "Document ID", "Source title", "Location", "Exact quote", "Source context", "Alternative reading", "Lens", "Review status", "Source SHA-256"] + _TYPED_HEADERS, erows, {2: 48, 3: 40, 4: 80, 5: 100, 6: 65})
-        arows = [[author, counts["documents"], counts["words"], counts["findings"], counts["confirmed"], round(counts["findings"] / counts["words"] * 10000, 3) if counts["words"] else "Not available"] for author, counts in sorted(data["authors"].items(), key=lambda x: (-x[1]["findings"], x[0]))]
-        table("Authors", ["Author", "Documents", "Words", "Exported assessments" if data["modern"] else "Candidate observations", "Confirmed", "Assessments per 10k source words" if data["modern"] else "Candidates per 10k source words"], arows, {0: 38, 5: 30})
+        arows = [[author, counts["documents"], counts["words"], counts["findings"], counts["confirmed"], "Suppressed for mail" if counts.get("mail_sources") else round(counts["findings"] / counts["words"] * 10000, 3) if counts["words"] else "Not available"] for author, counts in sorted(data["authors"].items(), key=lambda x: (-x[1]["findings"], x[0]))]
+        author_headers = ["Author", "Documents", "Words", "Exported assessments" if data["modern"] else "Candidate observations", "Confirmed", "Assessments per 10k source words" if data["modern"] else "Candidates per 10k source words"]
+        if data.get("mail_author_notice"):
+            author_headers = ["Document author / mail metadata", "Documents", "All source words", "Eligible group assessments", "Confirmed eligible", "Rate (suppressed for mail)", "Excluded context assessments", "Mail source documents"]
+            for row in arows:
+                counts = data["authors"][row[0]]
+                row.extend([counts.get("excluded_context_findings", 0), counts.get("mail_sources", 0)])
+        table("Authors", author_headers, arows, {0: 38, 5: 30})
         lens_rows = [[lens, count, sum(f.get("review_status") in {"confirmed", "accepted"} for f in data["findings"] if _string(f.get("lens_id") or "Unspecified") == lens)] for lens, count in data["lenses"].most_common()]
         table("Lenses", ["Lens ID", "Exported assessments" if data["modern"] else "Candidate observations", "Confirmed"], lens_rows, {0: 45})
         rheaders = ["Run ID", "Status", "Created", "Completed", "Model profile", "Configuration", "Coverage / progress", "Token usage", "Budget accounted spend (USD)", "Errors", "Provider inference cost (USD; blank if unknown)"]
         table("Runs", rheaders, [[r.get("id"), r.get("status"), r.get("created_at"), r.get("completed_at"), r.get("model_profile"), r.get("config"), r.get("progress"), r.get("usage"), r.get("spent_usd"), r.get("errors") or r.get("errors_json"), r["usage"].get("cost_usd")] for r in data["runs"]], {4: 70, 5: 80, 6: 60, 7: 45, 9: 60, 10: 32})
         method_rows = [["Interpretation", _METHOD], ["Edition", snapshot.get("profile", "research")], ["Generated", snapshot.get("generated_at")], ["Project", snapshot.get("project")], ["Export filters", snapshot.get("filters", {})], ["Metrics / coverage", snapshot.get("metrics", {})], ["Workbook safety", "All source strings are literal cell values, never formulas. Long values continue across rows with the Part column. Source hyperlinks point only to this workbook."], ["Denominators", "Author rates use source words. They include all exported candidate observations regardless of review status, and do not establish ideology or private belief."], ["Comparability", "Compare runs only when corpus selection, extraction, lenses and model profiles are held constant or their differences are disclosed."]]
         method_rows.extend(_selection_rows(snapshot))
+        if data.get("mail_author_notice"):
+            method_rows.append(["Mail author-group limits", data["mail_author_notice"]])
         if data["modern"]:
             method_rows.append(["Typed assessment counts", [{"criterion_kind": kind, "result": result, "count": count} for (kind, result), count in sorted(data["typed_counts"].items())]])
             method_rows.append(["Typed interpretation", "Indicator, boundary and descriptive criteria remain separate. Counts describe this exported selection, not a combined prejudice index. Missing or failed assessments do not establish absence."])
