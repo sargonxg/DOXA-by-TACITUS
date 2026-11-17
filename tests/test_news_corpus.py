@@ -181,3 +181,25 @@ def test_source_visibility_audit_detects_source_mismatch(tmp_path):
     api_rows[0]["content"]["rendered"] = "<p>Changed source text must not silently pass.</p>"
     news.write_gzip_json(path, {"records": api_rows})
     assert news.audit_sources(base, cache)["status"] == "fail"
+
+
+def test_source_links_strip_signing_credentials_and_keep_citation():
+    signed = ('https://example.org/paper.pdf?download=1&X-Amz-Credential=fixture'
+              '&X-Amz-Security-Token=fixture&X-Amz-Signature=fixture'
+              '&X-Amz-Date=20240710T061252Z&X-Amz-Expires=300#page=2')
+    public = 'https://example.org/paper.pdf?download=1#page=2'
+    assert news.public_source_link(signed) == public
+    assert news.public_source_link(public) == public
+    assert news.public_source_link('https://example.org/?expires=300') == 'https://example.org/?expires=300'
+    _, blocks, _ = news.extract_body(f'<p>A source <a href="{signed}">paper</a>.</p>', 'gv-test')
+    assert blocks[0]['source_links'] == [public]
+    assert news.public_source_link('https://example.org/?%58-Amz-Credential=fixture') == 'https://example.org/'
+
+
+def test_publish_sanitizes_cached_source_links(tmp_path):
+    rows = records()
+    rows[0]['blocks'][0]['source_links'] = ['https://example.org/paper?X-Amz-Credential=fixture']
+    news.publish(rows, tmp_path, {'target': 10}, {'url': news.POLICY, 'sha256': 'c' * 64}, 'unit-seed')
+    doc = json.loads((tmp_path / 'metadata' / 'gv-0.json').read_text())
+    assert doc['blocks'][0]['source_links'] == ['https://example.org/paper']
+    assert doc['content_sha256'] == news.sha(json.dumps(doc['blocks'], ensure_ascii=False, sort_keys=True, separators=(',', ':')))

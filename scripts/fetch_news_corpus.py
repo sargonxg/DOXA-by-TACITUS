@@ -16,13 +16,14 @@ import re
 import sys
 import time
 import unicodedata
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 import httpx  # noqa: E402
 from bs4 import BeautifulSoup, Comment, NavigableString  # noqa: E402
 
-VERSION = "globalvoices-news-v1.3"
+VERSION = "globalvoices-news-v1.4"
 POLICY = "https://globalvoices.org/about/global-voices-attribution-policy/"
 LICENSE = "https://creativecommons.org/licenses/by/3.0/"
 API = "https://globalvoices.org/wp-json/wp/v2"
@@ -163,6 +164,23 @@ async def taxonomy(client, limiter, cache):
     return result
 
 
+def public_source_link(url):
+    """Keep citation URLs without copying AWS signing credentials into the corpus."""
+    base, separator, tail = url.partition("?")
+    if not separator:
+        return url
+    query, fragment_separator, fragment = tail.partition("#")
+    keys = {unquote(item.split("=", 1)[0]).casefold() for item in query.split("&")}
+    if not any(key.startswith("x-amz-") or key == "awsaccesskeyid" for key in keys):
+        return url
+    query = "&".join(
+        item for item in query.split("&")
+        if item and not unquote(item.split("=", 1)[0]).casefold().startswith("x-amz-")
+        and unquote(item.split("=", 1)[0]).casefold() not in {"awsaccesskeyid", "signature", "expires"}
+    )
+    return base + ("?" + query if query else "") + ("#" + fragment if fragment_separator else "")
+
+
 def extract_body(rendered, doc_id):
     soup = BeautifulSoup(rendered, "html.parser")
     exclusions = []
@@ -203,7 +221,7 @@ def extract_body(rendered, doc_id):
         next_kind = name if name in names else kind
         next_quote = in_quote or name == "blockquote"
         if name == "a" and str(node.get("href", "")).startswith(("http://", "https://")):
-            links.add(node["href"])
+            links.add(public_source_link(node["href"]))
         for child in getattr(node, "children", []):
             walk(child, next_kind, next_quote)
         if boundary:
@@ -443,6 +461,8 @@ def publish(records, base, frame, policy, seed):
                 old.unlink()
     manifest, heldout = [], []
     for record in selected:
+        for block in record["blocks"]:
+            block["source_links"] = [public_source_link(url) for url in block.get("source_links", [])]
         authors = "; ".join(a["name"] for a in record["authors"])
         translator = "; ".join(a["name"] for a in record.get("translators", []))
         header = (f"{record['title']}\nWritten by: {authors}\n"
