@@ -10,7 +10,7 @@
     "CF_ACCESS_AUD": "test-audience",
     "DOXA_CLOUD_SINGLE_WORKSPACE": "true"
   },
-  "d1_databases": [{"binding": "DB", "database_name": "doxa-test", "database_id": "test-db"}],
+  "d1_databases": [{"binding": "DB", "database_name": "doxa-test", "database_id": "test-db"}, {"binding": "BOOTSTRAP_DB", "database_name": "doxa-bootstrap-test", "database_id": "test-bootstrap-db"}],
   "r2_buckets": [{"binding": "OBJECTS", "bucket_name": "doxa-test"}],
   "queues": {"producers": [{"binding": "WORK_QUEUE", "queue": "doxa-test"}]},
   "durable_objects": {"bindings": [{"name": "PYTHON", "class_name": "PythonContainer"}]},

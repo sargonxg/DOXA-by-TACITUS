@@ -101,7 +101,7 @@ scripts/deploy-cloudflare.sh --check
 scripts/deploy-cloudflare.sh --apply
 ```
 
-The create commands are examples of explicit provisioning, not steps run by the check script. The `--apply` script applies both the shared Python schema and the infrastructure migrations to remote D1, then builds/pushes the Python image and deploys the Worker. A Docker engine is required. Resource names must match your edited configuration. Provisioning can take several minutes after first deployment.
+The create commands are examples of explicit provisioning, not steps run by the check script. The `--apply` script applies the infrastructure migrations to remote D1, then builds/pushes the Python image and deploys the Worker. On the first API request, the container's versioned `Store.init` creates the shared application schema in a fresh workspace. It applies the backup-receipt guard to an existing application workspace. Do not pre-create only the base application schema in a fresh D1 database: that makes it appear to be an existing installation. A Docker engine is required. Resource names must match your edited configuration. Provisioning can take several minutes after first deployment.
 
 `DOXA_WRANGLER_CONFIG` selects a separate configuration file when deploying independent installations. Keep its paths relative to that file consistent. The committed config contains placeholders and cannot be deployed successfully until edited.
 

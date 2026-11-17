@@ -1,6 +1,7 @@
 import { env } from "cloudflare:workers";
 import { beforeAll, describe, expect, it, vi } from "vitest";
 import worker from "../src/index";
+import { containerEnvironment } from "../src/container";
 import { consume, recoverDispatch } from "../src/queue";
 import { validObjectKey } from "../src/http";
 import migration from "../migrations/0001_cloud.sql?raw";
@@ -23,6 +24,17 @@ beforeAll(async () => {
 });
 
 describe("private cloud boundary", () => {
+  it("forwards the operator upgrade receipt and trusted reviewer only when configured", () => {
+    const fresh = containerEnvironment(env);
+    expect(fresh.DOXA_MIGRATION_BACKUP_RECEIPT).toBeUndefined();
+    expect(fresh.DOXA_REVIEWER_ID).toBeUndefined();
+    expect(fresh.DOXA_INTERNAL_TOKEN).toBe(token);
+    const configured = containerEnvironment({ ...env, DOXA_MIGRATION_BACKUP_RECEIPT: "d1-export-sha256:fixture", DOXA_REVIEWER_ID: "trusted-reviewer", UNRELATED_SECRET: "must-not-forward" } as unknown as Env);
+    expect(configured.DOXA_MIGRATION_BACKUP_RECEIPT).toBe("d1-export-sha256:fixture");
+    expect(configured.DOXA_REVIEWER_ID).toBe("trusted-reviewer");
+    expect(configured.UNRELATED_SECRET).toBeUndefined();
+    expect(configured.DOXA_CLOUDFLARE_BASE_URL).toBe("https://test.invalid/internal/inference/v1");
+  });
   it("rejects unsigned Access headers and unauthenticated API/internal access", async () => {
     expect((await worker.fetch(request("/api/projects", "GET", undefined, false), env)).status).toBe(401);
     const forged = request("/internal/storage/sql", "POST", { statements: [{ sql: "SELECT 1" }] }, false);
@@ -129,6 +141,16 @@ describe("bounded multipart uploads", () => {
 });
 
 describe("queue commit semantics", () => {
+  it("keeps scheduled recovery idle before the first application bootstrap", async () => {
+    const database = (env as unknown as { BOOTSTRAP_DB: D1Database }).BOOTSTRAP_DB;
+    await database.exec(migration.replace(/\n/g, " "));
+    expect(await database.prepare("SELECT name FROM sqlite_master WHERE name='documents'").first()).toBeNull();
+    expect(await database.prepare("SELECT name FROM sqlite_master WHERE name='report_jobs'").first()).toBeNull();
+    const send = vi.fn(async () => {}), getByName = vi.fn(() => { throw new Error("An empty cron must not start a container"); });
+    await recoverDispatch({ ...env, DB: database, WORK_QUEUE: { send }, PYTHON: { getByName } } as unknown as Env);
+    expect(send).not.toHaveBeenCalled(); expect(getByName).not.toHaveBeenCalled();
+    expect(await database.prepare("SELECT name FROM sqlite_master WHERE name='documents'").first()).toBeNull();
+  });
   it("dispatches typed report work and refuses acceptance without a committed checkpoint", async () => {
     const ack = vi.fn(), retry = vi.fn();
     const fetch = vi.fn(async (input: Request) => {
