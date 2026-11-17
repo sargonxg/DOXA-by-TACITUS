@@ -25,6 +25,8 @@ DOXA is an open-source evidence workbench packaged as **Bias Detection as a Serv
 
 [Prioritized refinement and evaluation roadmap](refinement-roadmap.md) records the next experiments and their acceptance evidence.
 
+The [commercial service roadmap](commercial-service-roadmap.md) audits what is missing for paid delivery and plans all three launch packages—company language audits, political/media analysis and personal email review—with guided US pilots, independent methodology validation, privacy controls, connectors, pricing experiments and scale gates. These are proposed additions, not implemented SaaS capabilities.
+
 ## Publication and development record
 
 [Contributing](../CONTRIBUTING.md) · [Changelog](../CHANGELOG.md) · [citation metadata](../CITATION.cff) · [evidence-pack manifest](../examples/v04-evidence-pack.manifest.json) · [processed lineage index](../examples/v04-lineage-index.json) · [source-reference audit](../examples/v04-corpus-verification.json).
