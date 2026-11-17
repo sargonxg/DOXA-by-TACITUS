@@ -6,6 +6,7 @@ import json
 import math
 import os
 import uuid
+from contextlib import nullcontext
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.encoders import jsonable_encoder
@@ -57,6 +58,15 @@ def register(app: FastAPI, services: dict) -> None:
             return function(*args, **kwargs)
         except (ValueError, KeyError, TypeError) as error:
             raise HTTPException(422, str(error)) from error
+
+    from .report_jobs import register as register_report_jobs
+    from .casebooks import register_casebooks
+    from .review_queue import register_review_queue
+    from .evaluation_api import register as register_evaluation
+    register_report_jobs(app, services)
+    register_casebooks(app, services)
+    register_review_queue(app, services)
+    register_evaluation(app, {**services, "actor": actor, "call": call})
 
     @app.post("/api/v3/projects/{project_id}/query")
     def query(project_id: str, body: WorkspaceQuery):
@@ -273,10 +283,13 @@ def register(app: FastAPI, services: dict) -> None:
         corrections = body.get("corrections") or {}
         if not isinstance(corrections, dict):
             raise HTTPException(422, "Corrections must be structured fields")
-        event = call(record_review, db(), record["project_id"], finding_id, corrections, **identity,
-                     note=str(body.get("review_note", ""))[:12000], adjudicated=status in {"confirmed", "revised"})
-        db().execute("UPDATE v3_assessments SET review_status=?,review_note=? WHERE id=?", [status, str(body.get("review_note", ""))[:12000], finding_id])
-        workspace().touch(record["project_id"])
+        with nullcontext() if db().remote else db().transaction(write=True):
+            event = call(record_review, db(), record["project_id"], finding_id, corrections, **identity,
+                         note=str(body.get("review_note", ""))[:12000], adjudicated=status in {"confirmed", "revised"})
+            db().batch([
+                {"sql": "UPDATE v3_assessments SET review_status=?,review_note=? WHERE id=?", "params": [status, str(body.get("review_note", ""))[:12000], finding_id]},
+                workspace().touch_statement(record["project_id"]),
+            ])
         result = unpack_assessment(db().one("SELECT * FROM v3_assessments WHERE id=?", [finding_id]))
         return {**result, "review_event": event}
 

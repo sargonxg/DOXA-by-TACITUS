@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import math
 import os
+import hashlib
 from typing import Any
 from urllib.parse import urlparse
 
@@ -18,10 +19,11 @@ OLLAMA_MODEL = "qwen3.5:4b"
 
 
 class ProviderError(RuntimeError):
-    def __init__(self, code: str, message: str, *, usage: dict | None = None):
+    def __init__(self, code: str, message: str, *, usage: dict | None = None, observation: dict | None = None):
         super().__init__(message)
         self.code = code
         self.usage = usage
+        self.observation = observation
 
 
 def _env(*names: str) -> str:
@@ -87,6 +89,28 @@ class BaseProvider:
 
     async def health(self) -> dict:
         raise NotImplementedError
+
+    def _response_observation(self, visible) -> dict:
+        """Observe visible message content only; never separate reasoning fields."""
+        if visible is None:
+            return {"visible_response_sha256": None, "visible_response_bytes": 0,
+                    "response_origin": "visible_message_content_not_present"}
+        raw = visible if isinstance(visible, str) else json.dumps(visible, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+        result = {"visible_response_sha256": hashlib.sha256(raw.encode()).hexdigest(),
+                  "visible_response_bytes": len(raw.encode()), "response_origin": "observed_visible_message_content"}
+        if self.config.get("request_journal_mode") == "visible_io":
+            result["_visible_response"] = visible
+        return result
+
+    def _request_observation(self, payload: dict) -> dict:
+        raw = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+        result = {"provider_request_sha256": hashlib.sha256(raw.encode()).hexdigest(),
+                  "request_origin": "observed_adapter_outbound_json",
+                  "request_parameters": {key: value for key, value in payload.items()
+                                         if key not in {"messages", "format", "response_format"}}}
+        if self.config.get("request_journal_mode") == "visible_io":
+            result["_visible_request"] = payload
+        return result
 
     def estimate_cost(self, input_tokens: int, output_tokens: int) -> float | None:
         if self.mode == "local" or self.name == "lexical":
@@ -155,28 +179,31 @@ class OllamaProvider(BaseProvider):
     async def generate(self, messages: list[dict], schema: dict, *, max_tokens: int = 3000, request_id: str | None = None) -> dict:
         payload = {"model": self.model, "messages": messages, "stream": False, "format": schema,
                    "think": False, "options": {"temperature": 0, "num_ctx": 8192, "num_predict": max_tokens, "num_thread": self.num_threads}}
+        request_observation = self._request_observation(payload)
         try:
             async with httpx.AsyncClient(timeout=httpx.Timeout(600, connect=10)) as client:
                 response = await client.post(f"{self.base_url}/api/chat", json=payload)
                 if response.status_code >= 400:
-                    raise ProviderError("provider_http_error", f"Ollama returned HTTP {response.status_code}; check selected model and runtime support")
+                    raise ProviderError("provider_http_error", f"Ollama returned HTTP {response.status_code}; check selected model and runtime support", observation=request_observation)
                 raw = response.json()
         except httpx.TimeoutException:
-            raise ProviderError("timeout", "Ollama analysis timed out; the source range remains incomplete") from None
+            raise ProviderError("timeout", "Ollama analysis timed out; the source range remains incomplete", observation=request_observation) from None
         except (httpx.HTTPError, ValueError):
-            raise ProviderError("connection_error", "Could not read Ollama response") from None
+            raise ProviderError("connection_error", "Could not read Ollama response", observation=request_observation) from None
         if raw.get("error"):
-            raise ProviderError("provider_error", "Ollama reported an inference error; inspect local runtime logs")
+            raise ProviderError("provider_error", "Ollama reported an inference error; inspect local runtime logs", observation=request_observation)
         usage = self._usage(int(raw.get("prompt_eval_count", 0)), int(raw.get("eval_count", 0)))
+        observation = {**request_observation, **self._response_observation(raw.get("message", {}).get("content"))}
         reason = raw.get("done_reason", "stop")
         if reason in {"length", "max_tokens"}:
-            return {"content": None, "usage": usage, "finish_reason": "length", "model_profile": dict(self.profile)}
+            return {"content": None, "usage": usage, "finish_reason": "length", "model_profile": dict(self.profile), "provider_observation": observation}
         try:
             content = _json_content(raw.get("message", {}).get("content"))
         except ProviderError as error:
             error.usage = usage
+            error.observation = observation
             raise
-        return {"content": content, "usage": usage, "finish_reason": reason, "model_profile": dict(self.profile)}
+        return {"content": content, "usage": usage, "finish_reason": reason, "model_profile": dict(self.profile), "provider_observation": observation}
 
 
 class OpenAICompatibleProvider(BaseProvider):
@@ -263,18 +290,19 @@ class OpenAICompatibleProvider(BaseProvider):
                                  "total_output_tokens_requested": actual_max_tokens})
         if "qwen3.5" in self.model.lower() or self.model == CLOUDFLARE_MODEL:
             payload["chat_template_kwargs"] = {"enable_thinking": False}
+        request_observation = self._request_observation(payload)
         try:
             async with httpx.AsyncClient(timeout=httpx.Timeout(300, connect=15)) as client:
                 response = await client.post(f"{self.base_url}/chat/completions", headers=self._headers(), json=payload)
                 if response.status_code == 429:
-                    raise ProviderError("rate_limit", "Provider rate limit reached; retry the incomplete task later")
+                    raise ProviderError("rate_limit", "Provider rate limit reached; retry the incomplete task later", observation=request_observation)
                 if response.status_code >= 400:
-                    raise ProviderError("provider_http_error", f"Inference returned HTTP {response.status_code}; check model, schema capabilities, permissions, and account balance")
+                    raise ProviderError("provider_http_error", f"Inference returned HTTP {response.status_code}; check model, schema capabilities, permissions, and account balance", observation=request_observation)
                 raw = response.json()
         except httpx.TimeoutException:
-            raise ProviderError("timeout", "Remote inference timed out; usage may have been billed and the range remains incomplete") from None
+            raise ProviderError("timeout", "Remote inference timed out; usage may have been billed and the range remains incomplete", observation=request_observation) from None
         except (httpx.HTTPError, ValueError):
-            raise ProviderError("connection_error", "Could not read remote inference response; check provider availability") from None
+            raise ProviderError("connection_error", "Could not read remote inference response; check provider availability", observation=request_observation) from None
         choices = raw.get("choices") or []
         raw_usage = raw.get("usage") or {}
         if raw_usage:
@@ -289,22 +317,24 @@ class OpenAICompatibleProvider(BaseProvider):
         if isinstance(details.get("reasoning_tokens"), int) and details["reasoning_tokens"] >= 0:
             usage["reasoning_tokens_reported"] = details["reasoning_tokens"]
         if not choices:
-            raise ProviderError("invalid_response", "Provider returned no choices", usage=usage)
+            raise ProviderError("invalid_response", "Provider returned no choices", usage=usage, observation=request_observation)
         choice = choices[0]
+        observation = {**request_observation, **self._response_observation(choice.get("message", {}).get("content"))}
         reason = choice.get("finish_reason", "stop")
         self.profile["response_model"] = raw.get("model") or self.model
         if raw.get("system_fingerprint"):
             self.profile["system_fingerprint"] = raw["system_fingerprint"]
         if reason in {"length", "max_tokens"}:
-            return {"content": None, "usage": usage, "finish_reason": "length", "model_profile": dict(self.profile)}
+            return {"content": None, "usage": usage, "finish_reason": "length", "model_profile": dict(self.profile), "provider_observation": observation}
         if reason in {"content_filter", "refusal"} or choice.get("message", {}).get("refusal"):
-            raise ProviderError("refusal", "Provider declined this request; source coverage remains incomplete", usage=usage)
+            raise ProviderError("refusal", "Provider declined this request; source coverage remains incomplete", usage=usage, observation=observation)
         try:
             content = _json_content(choice.get("message", {}).get("content"))
         except ProviderError as error:
             error.usage = usage
+            error.observation = observation
             raise
-        return {"content": content, "usage": usage, "finish_reason": reason, "model_profile": dict(self.profile)}
+        return {"content": content, "usage": usage, "finish_reason": reason, "model_profile": dict(self.profile), "provider_observation": observation}
 
 
 class CloudflareProvider(OpenAICompatibleProvider):

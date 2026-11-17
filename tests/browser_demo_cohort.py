@@ -14,7 +14,7 @@ import sys
 import tempfile
 
 from playwright.sync_api import sync_playwright
-from browser_support import ROOT, local_app
+from browser_support import chromium_launch_options, ROOT, local_app
 
 sys.path.insert(0, str(ROOT))
 from doxa.store import Store, utcnow  # noqa: E402
@@ -60,7 +60,7 @@ def main() -> None:
         "Current news cohort loaded. Paused or unfinished result archive skipped; no inference requested."
     )
     with local_app(directory) as base, sync_playwright() as p:
-        browser = p.chromium.launch(executable_path="/usr/bin/chromium", headless=True, args=["--no-sandbox"])
+        browser = p.chromium.launch(**chromium_launch_options())
         context = browser.new_context(viewport={"width": 1440, "height": 1000})
         page = context.new_page()
         errors = []

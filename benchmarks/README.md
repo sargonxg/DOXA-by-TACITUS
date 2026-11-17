@@ -44,6 +44,16 @@ python scripts/package_v3.py --data-dir data/YOUR_RUN \
 - `load-test.json`: 1,000 **synthetic** document records / 10,000 synthetic page records, pagination, leases, recovery and replay; no model/OCR quality claim.
 - `large-upload.json`: actual 500MiB transport/restart/deduplication using a PDF with inert padding. It does not measure reading 500MiB of meaningful prose.
 
+## v0.4 complete offline replay and persistent report
+
+The [actual clean-runner gate](https://github.com/sargonxg/DOXA-by-TACITUS/actions/runs/44141301077) passed: 5,000 sources, 204,342 saved assessments, 10,759 units and 3,860,336 exact references. A complete 101,686,507-byte XLSX retained all four outcomes and every expected source/assessment identity. Restore replay and post-report logical/object fingerprints remained unchanged; no inference or new budget debit occurred. The analysis remains partial with 79 unresolved decisions.
+
+[Exact replay receipt](v04-evidence-replay.json) · [exact report receipt](v04-report-job-5000.json) · [measurement scope and operating limits](../docs/verification-v04.md). The proof took 847.46 seconds overall; its 534.31-second report phase includes capture, rendering, file verification and cleanup. These are not semantic-accuracy measurements or production-cloud capacity results. Earlier diagnostic failures are preserved separately.
+
+## v0.4 bounded local generation
+
+The [readable study](../docs/local-study-v04.md), [frozen summary](v04-cpu-study.json) and [offline audit](v04-cpu-study-audit.json) retain two Q4 profiles over six short whole articles / 17 units. Both completed one article; 2B completed 12 units and 4B three within the declared operating envelope. These are processing outcomes, not measured interpretation accuracy. Of 95 jointly retained decisions, 89 outcome categories differed; pairing is conditioned on retained results and the stopping point. No model is promoted. The audit reproduced 72 retained request message/schema hashes and checked 2,822 exact references without inference.
+
 ## Historical v1 artifacts
 
 The earlier `cloud-*-summary.json`, `local-*-summary.json` and compressed JSON snapshots describe the original pipeline. The v1 cloud run retained 1,071 observations with incomplete block coverage. Its local benchmark sampled one passage per source; **it is not the v3 whole-article local pilot**. The lexical run records exact term matches and performs no semantic interpretation. Legacy observations remain unclassified under the v3 contract.

@@ -1,0 +1,627 @@
+{
+  "schema_version": "doxa-evidence-pack-0.4",
+  "generated_at": "2026-11-17T16:33:26.191943+00:00",
+  "generator_version": "v04-publications-1",
+  "generator_sha256": "4c350d4028cfa3adf58871a4753652048acdf05b61d11b572b8ce4112485e17d",
+  "authorship": "AI-authored walkthrough guidance; not independent human adjudication or an interpretation-accuracy benchmark.",
+  "case_audit": {
+    "valid": true,
+    "cases": 15,
+    "outcomes": {
+      "meets_criterion": 9,
+      "uncertain": 2,
+      "not_applicable": 2,
+      "does_not_meet": 1,
+      "unresolved": 1
+    },
+    "checked_evidence_references": 112,
+    "independent_human_labels": false,
+    "actual_request_capture": "not_recorded_for_frozen_historical_examples"
+  },
+  "corpus_audit": "examples/v04-corpus-verification.json",
+  "publications": [
+    {
+      "schema_version": "doxa-v04-publication-1",
+      "title": "Reading public discourse with evidence",
+      "slug": "v04-reader-explainer",
+      "generator_version": "v04-publications-1",
+      "editorial_authorship": "AI-authored walkthrough guidance; not independent human adjudication or an interpretation-accuracy benchmark.",
+      "independent_human_labels": false,
+      "interpretation_accuracy": null,
+      "planned_sections": 18,
+      "pdf_pages": 18,
+      "pdf_links": 5,
+      "page_range": [
+        16,
+        20
+      ]
+    },
+    {
+      "schema_version": "doxa-v04-publication-1",
+      "title": "Technical annex: evidence, contracts and research",
+      "slug": "v04-technical-annex",
+      "generator_version": "v04-publications-1",
+      "editorial_authorship": "AI-authored walkthrough guidance; not independent human adjudication or an interpretation-accuracy benchmark.",
+      "independent_human_labels": false,
+      "interpretation_accuracy": null,
+      "planned_sections": 36,
+      "pdf_pages": 36,
+      "pdf_links": 27,
+      "page_range": [
+        30,
+        40
+      ]
+    },
+    {
+      "schema_version": "doxa-v04-publication-1",
+      "title": "Fifteen real cases: an evidence atlas",
+      "slug": "v04-case-atlas",
+      "generator_version": "v04-publications-1",
+      "editorial_authorship": "AI-authored walkthrough guidance; not independent human adjudication or an interpretation-accuracy benchmark.",
+      "independent_human_labels": false,
+      "interpretation_accuracy": null,
+      "planned_sections": 38,
+      "pdf_pages": 38,
+      "pdf_links": 41,
+      "page_range": [
+        35,
+        45
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "docs/images/v04-attribution-chain.svg",
+      "bytes": 2776,
+      "sha256": "8cf12ed3e67e3bc3351c21997883f00791fc80256957920da8e1375308316538"
+    },
+    {
+      "file": "docs/images/v04-case-atlas-page-01.png",
+      "bytes": 56574,
+      "sha256": "46b586c50aef15b14341a368e2377b7dcc2b0cb99ce4afab0d40d21470a8667a"
+    },
+    {
+      "file": "docs/images/v04-case-atlas-page-20.png",
+      "bytes": 74003,
+      "sha256": "fb10ca2c479f6d5067fb372de1dee67474130c51f2a3a5964e5c7fba7ca450bc"
+    },
+    {
+      "file": "docs/images/v04-case-atlas-page-38.png",
+      "bytes": 66933,
+      "sha256": "3c4404f14c7613a9ca2ffaea19274d7b6a650cb6cfda1cf5b267136683c8448d"
+    },
+    {
+      "file": "docs/images/v04-lineage.svg",
+      "bytes": 2686,
+      "sha256": "e406aa4ac4bb28c64174c276b5eeba9956cbadb7cd03d81548c14a647e2a5b3c"
+    },
+    {
+      "file": "docs/images/v04-measurement-layers.svg",
+      "bytes": 2958,
+      "sha256": "3c4d94190f14240669540c75ba2e112723d17f4c15476f652f36d4a176d3b3df"
+    },
+    {
+      "file": "docs/images/v04-processing-flow.svg",
+      "bytes": 2667,
+      "sha256": "dc0d582605a29a2326fbd2ef71e48dd2af8e133c567d80153b1bf6cd78a60b60"
+    },
+    {
+      "file": "docs/images/v04-reader-explainer-page-01.png",
+      "bytes": 79422,
+      "sha256": "246218c68416662cb320cd7ce64e0442c1f8252637dd18e3091703b3667ac179"
+    },
+    {
+      "file": "docs/images/v04-reader-explainer-page-10.png",
+      "bytes": 76147,
+      "sha256": "a18c623d5d44656181b0346e87806396c9195c74a5df8a6a49a5ffae68fc75e6"
+    },
+    {
+      "file": "docs/images/v04-reader-explainer-page-18.png",
+      "bytes": 121264,
+      "sha256": "35caac2642c15f0cb4476b678ec66b4d7b52c65a29ef365c057cdbe0fdf88eb8"
+    },
+    {
+      "file": "docs/images/v04-review-loop.svg",
+      "bytes": 2672,
+      "sha256": "5fc4ee5eb88cbed474960479b46f90b46b92b741e8ccc081c48ec60e0a537796"
+    },
+    {
+      "file": "docs/images/v04-technical-annex-page-01.png",
+      "bytes": 86348,
+      "sha256": "53ae0eee7d0db8943d70c9fa381c2a2b61018d41f7a21b6d96547a7b2a257f8d"
+    },
+    {
+      "file": "docs/images/v04-technical-annex-page-19.png",
+      "bytes": 76181,
+      "sha256": "19324aff0624c5b2f3564ba3ea0bc2101bb5d0157ab3f689eede409cd35d0df8"
+    },
+    {
+      "file": "docs/images/v04-technical-annex-page-36.png",
+      "bytes": 117210,
+      "sha256": "e99f5bf055a378944407360bd26ce55b55dd04be3b8d4f2cc408c2c724d02307"
+    },
+    {
+      "file": "docs/v04-bibliography.bib",
+      "bytes": 6356,
+      "sha256": "fefa20b17b544e9cc77634a012fde7ce8e6fba01bf33238da794ddba3b5b3097"
+    },
+    {
+      "file": "docs/v04-bibliography.csl.json",
+      "bytes": 12061,
+      "sha256": "fa421ecc4a599f9aaaf8d132481f54161b8ea64ea32b4c364530eb5fc65b9a2a"
+    },
+    {
+      "file": "docs/v04-case-atlas.md",
+      "bytes": 63646,
+      "sha256": "3285821065e92b45f24647d8ceb4fda9dc730ac855a143e01393a27bbcc27389"
+    },
+    {
+      "file": "docs/v04-criterion-source-audit.json",
+      "bytes": 51494,
+      "sha256": "ca5693445f9c1a8ba46ddad6c94426b5034a0576be0fe2a6bc1366306649c07b"
+    },
+    {
+      "file": "docs/v04-reader-explainer.md",
+      "bytes": 24761,
+      "sha256": "e03b3d3834b4f3bd266cf8dd39c82c9503a0580a611e2b5592ffd3494e1aec5d"
+    },
+    {
+      "file": "docs/v04-research-map.json",
+      "bytes": 24055,
+      "sha256": "42ef5f2d13011f77ecea572f8398a8dab8912e96bf37b424b6ba3ad6468dfde2"
+    },
+    {
+      "file": "docs/v04-technical-annex.md",
+      "bytes": 49509,
+      "sha256": "a6107b929e3803d16eda9e27913cd39b73c83e4702d44de7545600cf861714a4"
+    },
+    {
+      "file": "examples/v04-case-atlas.html",
+      "bytes": 84929,
+      "sha256": "6f9f134f0bf5f5fea8a0c05b69cf3de4e151b55d063846acfcd53cbf09ca07cd"
+    },
+    {
+      "file": "examples/v04-case-atlas.manifest.json",
+      "bytes": 990,
+      "sha256": "79e50d528ffb29e6f11879f2ead119bee219bedf2540382bd38179fe46488651"
+    },
+    {
+      "file": "examples/v04-case-atlas.pdf",
+      "bytes": 145286,
+      "sha256": "5b114e780d39936797ada21c2d21a41dfe42812140a1cb56ca6afd5bf1b57455"
+    },
+    {
+      "file": "examples/v04-case-atlas.snapshot.json.gz",
+      "bytes": 1506139,
+      "sha256": "05074b2448807bacf55798b84b4ffca78257eee3bcdde3f86feb5797fead2f0a"
+    },
+    {
+      "file": "examples/v04-corpus-verification.json",
+      "bytes": 14087,
+      "sha256": "f3de493cc0b081bb0be8bd798cfb01356c40eadd90604ddd3cee17e0e7f04512"
+    },
+    {
+      "file": "examples/v04-lineage-index.json",
+      "bytes": 152329,
+      "sha256": "7d0d866a80e3e70c8b9462ff498fc096a1f7e19cd05efd8b6ba4a74c8286bebc"
+    },
+    {
+      "file": "examples/v04-reader-explainer.html",
+      "bytes": 42318,
+      "sha256": "054f51aefdb5a5c1b9263910a4be8a37a6a76d43e2f35445da784c593e8437ce"
+    },
+    {
+      "file": "examples/v04-reader-explainer.manifest.json",
+      "bytes": 1013,
+      "sha256": "20d8e342d4f84afe314359985f70763da0f56be9069781bba126140669da69bd"
+    },
+    {
+      "file": "examples/v04-reader-explainer.pdf",
+      "bytes": 78060,
+      "sha256": "f2e64d9503a8150e2643a015a7d4d9bcf24fb9c96c6cc629948425ac4254d7eb"
+    },
+    {
+      "file": "examples/v04-reconstructed-template.json",
+      "bytes": 3069,
+      "sha256": "88bd5b3e22615957527a0b4e775cce7bc0517f0721db010180bf2209d80a65c6"
+    },
+    {
+      "file": "examples/v04-technical-annex.html",
+      "bytes": 70397,
+      "sha256": "bef36522ed48a10b4a3834ddcac01614ebce6b751297d06bd8cf8b54dbe6bd1e"
+    },
+    {
+      "file": "examples/v04-technical-annex.manifest.json",
+      "bytes": 1022,
+      "sha256": "290aed8163219bb16a15f92f455a5bca21f8fe21dacc7077d5d986cf6e54f59e"
+    },
+    {
+      "file": "examples/v04-technical-annex.pdf",
+      "bytes": 124986,
+      "sha256": "49cc1c1f96df348f71312dd405b605b7c15cb028ab02e3139eb470464203339b"
+    }
+  ],
+  "parents": [
+    {
+      "file": "benchmarks/v3-independent-low-verification/assessments-part-0001.jsonl.gz",
+      "sha256": "0edad3c43de340ae5ce706b1d03cefd5d646939e23a0e0b7c56903e36dd848a9"
+    },
+    {
+      "file": "benchmarks/v3-independent-low-verification/showcase.json",
+      "sha256": "004d54772ecfe3f84ad3d1429fa4b9a68f3c990ea348da35eadd154f42c0b0cc"
+    },
+    {
+      "file": "benchmarks/v3-institutions/assessments-part-0001.jsonl.gz",
+      "sha256": "70b5bc89874354d2069b5000bf7fbd69b539748738374e0deb7c7f6a1649eb3b"
+    },
+    {
+      "file": "benchmarks/v3-institutions/assessments-part-0002.jsonl.gz",
+      "sha256": "c500b12ca8d7f10b77e7fc12900628f0f2eef96d3fc13927f9663e5dc305bfab"
+    },
+    {
+      "file": "benchmarks/v3-institutions/assessments-part-0003.jsonl.gz",
+      "sha256": "adefd84b0cbb269ab8192ab0de61ddc164491a2047bf341b54d1500354492fd6"
+    },
+    {
+      "file": "benchmarks/v3-institutions/showcase.json",
+      "sha256": "c5626fac4374567cab54d99a835e9f92ee35ccf5a662130572bda6846500f232"
+    },
+    {
+      "file": "benchmarks/v3-local-news/assessments-part-0001.jsonl.gz",
+      "sha256": "047352d840880203b8ca8d91b2ace79deee9755618d4dcb4c90eac83e3ed0c33"
+    },
+    {
+      "file": "benchmarks/v3-local-news/showcase.json",
+      "sha256": "68a97ca539a160efe97660f8d0e5162e570114baf23d3a67c220133980110b2a"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0001.jsonl.gz",
+      "sha256": "31d76e084ce9cc2118b37d2d23aba5d09d033e91563867887ce44dbce4549c4d"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0002.jsonl.gz",
+      "sha256": "b26c7f021c71e717befb3aab3e109f9b17f3fef593c729c11bf086f28fed6210"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0003.jsonl.gz",
+      "sha256": "d63b2202df6d5e17d32e22af9cc6af2adc515255ab0849d3125ec640e4088c70"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0004.jsonl.gz",
+      "sha256": "65f0a94dc23dad014a459f68fabd8d3bee2cfe0749e5dabf3df1a3ce8bcbbde6"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0005.jsonl.gz",
+      "sha256": "1de450c22d02f2176defff18f3690f901008405f1dcba31203ab19e1b41a0b46"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0006.jsonl.gz",
+      "sha256": "06f17ad1fcf477da247a82b04ea49b3579dfb1164b5da726d59a3cf6429f861f"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0007.jsonl.gz",
+      "sha256": "b2b5d46f10d8f0ffe866470fc1b314d757ff484c0ca9bcd6ea30be0db4870ddb"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0008.jsonl.gz",
+      "sha256": "7ace374cd41c47208353eaa1cd4a28b1cede962cda77649bbc62356f2b1fb289"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0009.jsonl.gz",
+      "sha256": "d4f125d4b95ff742c5e1b7f7501b51c79f91b947d7c2160df3c3e37609bb1873"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0010.jsonl.gz",
+      "sha256": "533cbc417da42ca54305e2a08d91df417b8d42107510bf2401a5fc54da6f5962"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0011.jsonl.gz",
+      "sha256": "76255bb85384ab15a2a9e988b73acd2f32ac111108563c33e719fcf1402b8950"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0012.jsonl.gz",
+      "sha256": "ffa9fff7fe05a9a42008fb91e0ea27f1c240724d409ea14ab99a4460451e3665"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0013.jsonl.gz",
+      "sha256": "fdeeda790855b0d55416c01677c44d1a329e8117574f7bb71af0a66be0737fca"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0014.jsonl.gz",
+      "sha256": "1b4816b48be192670f43d266152dc29b2a4630b850a16f183de7efb2a1b62014"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0015.jsonl.gz",
+      "sha256": "c7a79e66641db0ae0e77b32db9a57f1a56687e478123a3f7c4ea1b02dc38fb64"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0016.jsonl.gz",
+      "sha256": "d5ad0fd0ad23804440e48dc400610728b269f0dd79d959fd0d1db34e5fd02308"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0017.jsonl.gz",
+      "sha256": "9727fcd55add913e53a15c634a39bb92a04ae4f1250371e70a3c7a34be45ba37"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0018.jsonl.gz",
+      "sha256": "772e283e042460d82fa689f1438495c1f7b5d6bad090ff3e8a32bfec0f32be68"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0019.jsonl.gz",
+      "sha256": "cc9bd6bc6936c99e852120f34adb6238809347cde6e0c3bf034f1dc2251af0da"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0020.jsonl.gz",
+      "sha256": "fc56db80ee049a450feffe048b44ec82333a402af40c9774480f2c958062c2d3"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0021.jsonl.gz",
+      "sha256": "5d6104eec62c11a6778de16eddf3dba07432b26b1d3bfb3e9f9490e52a7bf333"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0022.jsonl.gz",
+      "sha256": "a49436b6b1b992becd7bf8302495f6e94445abb137a8e4ed0294c29be16477c4"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0023.jsonl.gz",
+      "sha256": "ce59910e6b48d8cb140bedf6ed9c2bb6da3b295c75f5e6c8bdb28038a1b1a743"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0024.jsonl.gz",
+      "sha256": "f9a9df869b33bd80bf96d119f73b582dd453cdeee391dc693581faf6cf0663a0"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0025.jsonl.gz",
+      "sha256": "c741d7784d4738fab65fb4b35f6ca28634b5173c508417242c8377d2f56475a8"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0026.jsonl.gz",
+      "sha256": "26fa2260a7a7e21a0d852510bd004c2abadf624725bbf40b1a85a667e955f6ba"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0027.jsonl.gz",
+      "sha256": "ae8d255c60f14c25f97fa542600e7fd46c53431b0538e315a513a41e79a3391d"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0028.jsonl.gz",
+      "sha256": "6401ed0b37fe6b275739ec03ef23efb9725e1d252673e8c4081562f4e17b8d71"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0029.jsonl.gz",
+      "sha256": "c4daebe0a1b33e2cfe29a91eb33f0c33b0e8947360d2c667d1b95ae0ddeb11d3"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0030.jsonl.gz",
+      "sha256": "580041d805751cda0db349f9296e18de9b2e94cc5a8ec8796332baf4253aa323"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0031.jsonl.gz",
+      "sha256": "e234d7056b3d1f8cb2aea6cdad56e63d55540ed6248d39bd6087ff933b000c99"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0032.jsonl.gz",
+      "sha256": "e163c7bc21e554a841ecc6645ccd254f428bb983213d0239269b401010fb0268"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0033.jsonl.gz",
+      "sha256": "a491feb87be4c3bf9edbc93587818db7ff07d6aacecfd1cbd8d7c953a9191d4f"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0034.jsonl.gz",
+      "sha256": "36581809bcfa13d0dafe1b91e1b3391bed673048ca859a4f23987cfcc0165b70"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0035.jsonl.gz",
+      "sha256": "ea976ff6a647e905cefeae5e35a16e19b3016803b3023332e3efeca962b54900"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0036.jsonl.gz",
+      "sha256": "08af1035d576a844a1038cc058f8e309a63c9956a23df0a34243ca25369eefce"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0037.jsonl.gz",
+      "sha256": "96be9fc6c48fbd5d38adfdae3ccaffdcd937502b275a2aafba757438069896fb"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0038.jsonl.gz",
+      "sha256": "87d5cc81f0b6124e95758a3441077ba2afbcc7fe980dcd4120bc2a320d704fdf"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0039.jsonl.gz",
+      "sha256": "449278653cd2ae730c116c3dc6337aff85c889c5b79b4e043f2a9994ca9f725e"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0040.jsonl.gz",
+      "sha256": "1f37955f939145c8b2a76626fbe6dc6f7072badc2b5ff3f53b54634accc0d9b0"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0041.jsonl.gz",
+      "sha256": "132b6d0363792b3c5559c4326377a20824a59ac2c3bbc818d1878553fca3e33d"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0042.jsonl.gz",
+      "sha256": "f5c30028ad684af09728cb0b772b6078679d63f7ab086e8b73ebf87d5198a4cd"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0043.jsonl.gz",
+      "sha256": "128b2eef9255b70e559822ea1eeb30bb5e09f383728edd5bdb752b6060b6c89d"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0044.jsonl.gz",
+      "sha256": "1fdf6d6797a1e0539db981eda483113448f9ce3c9b981350207c908a6537dfb4"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0045.jsonl.gz",
+      "sha256": "2d8f675a6ee75946bd449083dd355976b5ae5ab5d98620574339103239c3199b"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0046.jsonl.gz",
+      "sha256": "b6f70db12068fd39d66344addd0e5062eb5b5d78ecfc1ec9224869a4c125c0c2"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0047.jsonl.gz",
+      "sha256": "33d88cfddd50183100756e0017dc004f7a668ff02db12c6fa59c0375ab650207"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0048.jsonl.gz",
+      "sha256": "aebbef7b21ad21488a2f5a92c87cdb945e21f5d574f4af4c23697be40376ed4e"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0049.jsonl.gz",
+      "sha256": "5e86c0887f0199b50acb5bc4aa2b5d2ed00493f48500d446fe774699f6b2b85c"
+    },
+    {
+      "file": "benchmarks/v3-news/assessments-part-0050.jsonl.gz",
+      "sha256": "8a39b1a817ef54e716000007ffa4ff0c401431c30663a71e5932a057f730d714"
+    },
+    {
+      "file": "benchmarks/v3-news/showcase.json",
+      "sha256": "783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827"
+    },
+    {
+      "file": "benchmarks/v3-political/assessments-part-0001.jsonl.gz",
+      "sha256": "5f98e0ee98b01f3833f944a7fea8a0419612d45f5200ca407abf0dc717dfba66"
+    },
+    {
+      "file": "benchmarks/v3-political/showcase.json",
+      "sha256": "2d69f2002dfbed7bae2515e79918e57b0530bd863469ec1200b1e2d9c44d4b2e"
+    },
+    {
+      "file": "examples/doxa-public-institutions.html",
+      "sha256": "2a49346c141bf7db0024b04d50dbe7fad5167f847343ad6b8adea94e22ef8643"
+    },
+    {
+      "file": "examples/doxa-public-institutions.pdf",
+      "sha256": "e9d368c88fcbc5b6dc3f40b922ba115101bab160277dd3dc57204135ae1da010"
+    },
+    {
+      "file": "examples/doxa-public-institutions.xlsx",
+      "sha256": "6eede9ab6de7c501996e6828a943ac14c63369784ebb26aec9c782d1f945c177"
+    },
+    {
+      "file": "examples/institutional-context-commentary.html",
+      "sha256": "f7a2f2782b5695abc4a373eda77064073d617444c1821e66d3eec40e8bfb98a4"
+    },
+    {
+      "file": "examples/institutional-context-commentary.manifest.json",
+      "sha256": "de95ed329308cdb474e2c5d509c293bc4b6c5a47e038b61f8b8152bbebc90335"
+    },
+    {
+      "file": "examples/institutional-context-commentary.notes.json",
+      "sha256": "8bc4c3a83ee5325e43abc502a8ec80e8b75f8d6d431e06fc8c3ad709923fbf9f"
+    },
+    {
+      "file": "examples/institutional-context-commentary.pdf",
+      "sha256": "2aa4a8712428fba1decabb6832bc376991818f6ed8743bcf71b9693a29710d61"
+    },
+    {
+      "file": "examples/institutional-context-commentary.snapshot.json.gz",
+      "sha256": "efb16e2bf7f50acc2c95df379649ec34e54957849d50265c28b6dffc6854cec1"
+    },
+    {
+      "file": "examples/institutional-context-commentary.xlsx",
+      "sha256": "962ce9807a71906dac2691030b17b88b8adcaa41197827eaf644b9318e43bcb0"
+    },
+    {
+      "file": "examples/local-cpu-nli-20.receipt.json",
+      "sha256": "b77b6aea1f85dc89cde21731fb0e6a144131b8609b5274e185b362919cf813f5"
+    },
+    {
+      "file": "examples/local-cpu-nli-20.xlsx",
+      "sha256": "6ccc4adf49a6f741199287897bddd427e2572abfa84a22dce6a39e78c9099b41"
+    },
+    {
+      "file": "examples/news-corpus-dashboard.audit.json",
+      "sha256": "23fd7693521231d33e2beaad97e0c9808182c865bd0bab7de17f200f0ee2196f"
+    },
+    {
+      "file": "examples/news-corpus-dashboard.html",
+      "sha256": "9da202d778548425566aa34b18958740c1326248630d46ab5c2671625de39ee6"
+    },
+    {
+      "file": "examples/news-corpus-dashboard.manifest.json",
+      "sha256": "fce1c9036b8fbb765da972d07ef6f01aaed5b2d7397b9a3b0905648cd2f51388"
+    },
+    {
+      "file": "examples/news-corpus-dashboard.pdf",
+      "sha256": "a8dd995f3aa73a55449f2caefd025a533899dbe3442a638f9427cd80f7ebe268"
+    },
+    {
+      "file": "examples/news-corpus-dashboard.receipt.json",
+      "sha256": "e10ebe147253c63204d6cf9e9df197f6830f1578feb5e3adb7348e214afe7ecc"
+    },
+    {
+      "file": "examples/news-corpus-dashboard.snapshot.json.gz",
+      "sha256": "c11285a0bba90b16e463056abc478cb80fd726e591ca61880f74ac69a03211d7"
+    },
+    {
+      "file": "examples/news-corpus-dashboard.xlsx",
+      "sha256": "54831b1a9b7ca42e1a66db9281e8f43af115604f1eed51620d9dc5161bfd2647"
+    },
+    {
+      "file": "examples/news-monitoring.html",
+      "sha256": "f73e9895846747a5391559440fc039e89165c95675bbdf1e0c2452d489643b0d"
+    },
+    {
+      "file": "examples/news-monitoring.manifest.json",
+      "sha256": "e62f251a01576c0d158efe7247e0064ef7ba72c92b09ab52a10e69490eed6ace"
+    },
+    {
+      "file": "examples/news-monitoring.notes.json",
+      "sha256": "ddf695353dfb8ae710c2cb949f2921e49051469b03a7420874af3abc953fc669"
+    },
+    {
+      "file": "examples/news-monitoring.pdf",
+      "sha256": "5aff56ecece11262ffc73b4a4ac919bbe666dfa40cedc018c1f82719858440c5"
+    },
+    {
+      "file": "examples/news-monitoring.snapshot.json.gz",
+      "sha256": "215adaf1c8657b4a73040520ba85ade3097f22460963f06fac9fe3bcd446ed60"
+    },
+    {
+      "file": "examples/news-monitoring.xlsx",
+      "sha256": "0071b47270a1cabd14e107d83eac2ae70b7d9d3ef4e76a5e6389b41f660d056e"
+    },
+    {
+      "file": "examples/political-framing-commentary.html",
+      "sha256": "5ae54df1bc0f6716b158bc4f89b2fa368a61ba26019485c32d33ea33f37102a9"
+    },
+    {
+      "file": "examples/political-framing-commentary.manifest.json",
+      "sha256": "ad1483436facadcc983138a4284cc47deb29814a6d3d13abacb991e7662ddce0"
+    },
+    {
+      "file": "examples/political-framing-commentary.notes.json",
+      "sha256": "dd5b9fe43c7f76f3cb0178389f4af3783485a8c59861a61e5daa1bd2273dff38"
+    },
+    {
+      "file": "examples/political-framing-commentary.pdf",
+      "sha256": "c8b699ad8034bdc7f58e774bb096b2ce4ae0e776f2b26c49bfa552b1cfe5ace6"
+    },
+    {
+      "file": "examples/political-framing-commentary.snapshot.json.gz",
+      "sha256": "d7105a5e06a68613c991bb06a9751c1555dea6fd138d1e157c341ef12bff4f62"
+    },
+    {
+      "file": "examples/political-framing-commentary.xlsx",
+      "sha256": "7aac26a922342855f7767ba5764a1d4a30b2c688bd284c80291d906ed4590ce9"
+    },
+    {
+      "file": "examples/verification.json",
+      "sha256": "2b84bf3a22166dc19460e0f2dab88d85991b383d59d8376c48a5c7bd2d7f3480"
+    }
+  ],
+  "baseline_preservation": {
+    "verified_unchanged": true,
+    "files": 92
+  },
+  "lineage_records": 137,
+  "historical_actual_request_capture": {
+    "status": "not_recorded",
+    "actual_request_available": false,
+    "notice": "No contemporaneous request journal exists; a reconstructed template is not the actual request."
+  },
+  "independent_human_labels": false,
+  "interpretation_accuracy": null,
+  "paid_inference_calls_for_build": 0
+}

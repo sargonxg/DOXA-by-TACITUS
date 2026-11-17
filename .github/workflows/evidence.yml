@@ -1,0 +1,49 @@
+name: Replay frozen evidence
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [labeled]
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  full-corpus-replay:
+    if: github.event_name != 'pull_request' || github.event.label.name == 'verify-evidence'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -e '.[dev]'
+      - name: Check documentation and public artifact hashes
+        run: python scripts/verify_repository.py
+      - name: Restore every source and assessment, verify references, replay idempotently
+        run: >-
+          python scripts/verify_evidence_release.py --execute
+          --expected-package-sha256 783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827
+          --receipt /tmp/doxa-evidence-replay.json
+          --report-job-receipt /tmp/doxa-report-job-5000.json --max-temp-gib 8 --min-free-gib 1
+      - name: Print portable verification receipts
+        if: always()
+        run: |
+          python - <<'PY'
+          import base64, hashlib, json
+          from pathlib import Path
+          for name in ('doxa-evidence-replay.json', 'doxa-report-job-5000.json'):
+              path = Path('/tmp') / name
+              if path.is_file():
+                  raw = path.read_bytes()
+                  print('DOXA_RECEIPT ' + json.dumps({'file': name, 'sha256': hashlib.sha256(raw).hexdigest(), 'base64': base64.b64encode(raw).decode()}))
+          PY
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: evidence-replay-receipt
+          path: |
+            /tmp/doxa-evidence-replay.json
+            /tmp/doxa-report-job-5000.json
+          retention-days: 30

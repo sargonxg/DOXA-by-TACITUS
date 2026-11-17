@@ -17,7 +17,7 @@ import tempfile
 from urllib.parse import urlencode
 
 from playwright.sync_api import sync_playwright
-from browser_support import ROOT, local_app
+from browser_support import chromium_launch_options, ROOT, local_app
 
 
 def main() -> None:
@@ -55,7 +55,7 @@ def main() -> None:
         shutil.copytree(source / "objects", snapshot / "objects")
         with local_app(snapshot) as base, sync_playwright() as p:
             browser = p.chromium.launch(
-                executable_path="/usr/bin/chromium", headless=True, args=["--no-sandbox"]
+                **chromium_launch_options()
             )
             context = browser.new_context(viewport={"width": 1600, "height": 1080})
             response = context.request.post(f"{base}/api/v3/projects/{project}/query", data={"run_id": run})

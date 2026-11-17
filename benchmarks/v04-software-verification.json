@@ -1,0 +1,132 @@
+{
+  "schema_version": "doxa-software-verification-0.4",
+  "recorded_at": "2026-11-17T16:53:42.584222+00:00",
+  "source_context": {
+    "base_commit": "1b3291247c9b634bc31a115e7a98e24b349d5719",
+    "working_tree_changes": true,
+    "release_ci_checks_final_published_commit": true
+  },
+  "python_full_suite": {
+    "passed": true,
+    "tests": 672,
+    "subtests": 6,
+    "elapsed_seconds": 126.61,
+    "warning": "Starlette TestClient deprecation"
+  },
+  "subsequent_focused_checks": {
+    "scope_source_integrity_report_jobs": 32,
+    "frozen_evaluation_protocol": 8,
+    "casebook_provenance_source": 20
+  },
+  "static_checks": {
+    "ruff": "passed",
+    "typescript_production_build": "passed",
+    "worker_typecheck": "passed"
+  },
+  "worker_runtime": {
+    "passed": true,
+    "tests": 35,
+    "environment": "Cloudflare Workers emulator; not production capacity"
+  },
+  "actual_browser_api_publication": {
+    "fixture_notice": "Actual v0.4 API/browser publication lifecycle on synthetic frozen records.\n\nThere are no mocked HTTP endpoints. Analysis workers stay off; the test invokes\nonly the offline report worker after explicit UI requests. No model is loaded.\n",
+    "run_id": "frozen-ui-run",
+    "casebook_id": "4b08f9e78672418aab9a9c13f9afa297",
+    "four_outcomes_and_unresolved": true,
+    "actual_unit_context_restored": true,
+    "job_id": "9e4c8475c5264d6a8d5030ebd665daec",
+    "job_status": "completed",
+    "cancel_restart_completed": true,
+    "download_filename": "casebook.pdf",
+    "download_bytes": 26411,
+    "range_http_status": 206,
+    "etag": "\"409fc7e67edab6768bcc7c0ba3f5ebc9784adbfc540b30400086b004b3538f88\"",
+    "casebook_and_artifact_restored": true,
+    "page_errors": [],
+    "inference_requests": []
+  },
+  "mocked_publication_ui_contract": {
+    "fixture_notice": "V0.4 casebook and publication UI contracts; no model or paid requests.\n\nReal synthetic source/query/context APIs are used. Publication jobs, draft\npersistence and review-queue envelopes are mocked explicitly for the UI test.\nBackend persistence and streaming have their own integration tests.\n",
+    "all_four_outcomes_pinned": true,
+    "unfinished_case_has_no_assessment": true,
+    "persistent_job_controls": [
+      "cancel",
+      "restart"
+    ],
+    "job_payloads": [
+      {
+        "query_id": "a6ebc39c4a944fbfb5766ec8121ebb2b",
+        "format": "pdf",
+        "profile": "research",
+        "publication_type": "casebook",
+        "casebook_id": "saved-casebook"
+      },
+      {
+        "query_id": "fa51282f72b44ae197a8a3231f577c2b",
+        "format": "xlsx",
+        "profile": "research",
+        "publication_type": "archive"
+      }
+    ],
+    "casebook_restored_after_reload": true,
+    "mobile_single_named_dialog": true,
+    "artifact_download_href_checked": true,
+    "archive_explicitly_selects_four_outcomes_preserving_author_scope": true,
+    "page_errors": [],
+    "inference_requests": []
+  },
+  "installed_wheel": {
+    "passed": true,
+    "isolated_empty_directory": true,
+    "compiled_ui": true,
+    "txt_extraction_subprocess": true,
+    "actual_xlsx_job_download": true,
+    "checkout_assets_used": false,
+    "model_requests": 0
+  },
+  "human_reference_labels": "pending",
+  "interpretation_accuracy": null,
+  "notice": "Software behavior and source fidelity are distinct from interpretation accuracy. Subsequent full-corpus/model receipts have their own measured scope.",
+  "keyboard_accessibility_browser": {
+    "fixture_notice": "Synthetic 5,000-source UI scale fixture; mocked provider used only to seed a separate fixture. No remote inference.",
+    "virtual_page_end_home_arrow_focus": true,
+    "virtual_row_position_and_size": true,
+    "virtual_dom_bounded": true,
+    "tab_arrow_home_keyboard": true,
+    "timeline_data_table": true,
+    "named_dialog_escape_focus_return": true,
+    "page_errors": []
+  },
+  "finalized_at": "2026-11-17T18:09:16.093864+00:00",
+  "implementation_ci": {
+    "status": "passed",
+    "source_commit": "d4fd1ef7ac9fe5ea33ac8c03f446539322b5ea35",
+    "url": "https://github.com/sargonxg/DOXA-by-TACITUS/actions/runs/44141299182",
+    "jobs": 9,
+    "python_versions": [
+      "3.11",
+      "3.12",
+      "3.13"
+    ],
+    "worker_runtime_tests": 37,
+    "python_each_version": {
+      "passed": 680,
+      "skipped": 1,
+      "warnings": 2,
+      "subtests_passed": 6
+    }
+  },
+  "full_corpus_ci": {
+    "status": "passed",
+    "url": "https://github.com/sargonxg/DOXA-by-TACITUS/actions/runs/44141301077",
+    "source_commit": "d4fd1ef7ac9fe5ea33ac8c03f446539322b5ea35",
+    "canonical_sources": 5000,
+    "assessments": 204342,
+    "source_units": 10759,
+    "exact_references": 3860336,
+    "source_model_fingerprint_unchanged_after_export": true,
+    "new_model_requests": 0,
+    "replay_receipt_sha256": "50dfa602e90befa4855160a52bb5e83100fd07f2884d18bc1842dc69439e901e",
+    "report_receipt_sha256": "4af70d3ce501374368c1a7294231a668e71426c01fb3a80cc0e4dec3c54b719a"
+  }
+}

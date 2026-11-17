@@ -6,7 +6,9 @@ strings, rather than a second normalized copy, when checking evidence offsets.
 from __future__ import annotations
 
 import hashlib
+import importlib.metadata
 import importlib.util
+import json
 import os
 from pathlib import Path
 import re
@@ -19,7 +21,26 @@ MAX_TEXT_CHARS = 40_000_000
 MAX_PAGES = 10_000
 MAX_ZIP_BYTES = 200 * 1024 * 1024
 MAX_XML_BYTES = 24 * 1024 * 1024
+EXTRACTOR_VERSION = "0.4.0"
+EXTRACTION_MANIFEST_VERSION = "1.0"
+MIXED_SCAN_IMAGE_FRACTION = 0.35
+MIXED_SCAN_TEXT_CHARACTERS = 800
 _W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+
+
+def _canonical_hash(value: object) -> str:
+    return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True,
+                                     separators=(",", ":")).encode("utf-8")).hexdigest()
+
+
+def _engine_versions(extractor: str) -> dict[str, str]:
+    versions = {"doxa-extraction": EXTRACTOR_VERSION}
+    for package in (["PyMuPDF"] if extractor.startswith("pymupdf") else []) + (["docling"] if "docling" in extractor else []):
+        try:
+            versions[package] = importlib.metadata.version(package)
+        except importlib.metadata.PackageNotFoundError:
+            versions[package] = "unresolved"
+    return versions
 
 
 def _xml(data: bytes) -> ET.Element:
@@ -103,6 +124,10 @@ class _VisibleHTML(HTMLParser):
 
 
 def _decode(data: bytes, warnings: list[str]) -> str:
+    # Reject NUL before decoding so UTF-16/32 and common binary formats cannot
+    # pass through the Windows-1252 fallback as plausible extracted text.
+    if b"\x00" in data:
+        raise ValueError("Document appears to contain binary data or UTF-16/32 text; export it as UTF-8 text.")
     try:
         return data.decode("utf-8-sig")
     except UnicodeDecodeError:
@@ -112,6 +137,42 @@ def _decode(data: bytes, warnings: list[str]) -> str:
             raise ValueError("Text encoding is unsupported. Save the document as UTF-8.") from exc
         warnings.append("Source decoded as Windows-1252; verify punctuation in the source preview.")
         return result
+
+
+def _text_blocks(path: Path, extension: str, warnings: list[str]) -> tuple[list[dict], dict, str]:
+    data = path.read_bytes()
+    text = _decode(data, warnings)
+    if len(text) > MAX_TEXT_CHARS:
+        raise ValueError("Document text exceeds the extraction limit; split the source document.")
+    if any(ord(character) < 32 and character not in "\t\n\r\f" for character in text):
+        raise ValueError("Document appears to contain binary control data; export it as UTF-8 text.")
+    encoding = "windows-1252" if any("Windows-1252" in warning for warning in warnings) else "utf-8-sig" if data.startswith(b"\xef\xbb\xbf") else "utf-8"
+    metadata = {"encoding": encoding, "page_count_basis": "Unavailable: source format is not paginated"}
+    if extension in {".html", ".htm"}:
+        parser = _VisibleHTML()
+        parser.feed(text)
+        parser.close()
+        parser.flush()
+        blocks = [{"text": value, "paragraph": index} for index, value in enumerate(parser.blocks, 1)]
+        warnings.append("HTML scripts, styles, embedded objects and hidden text are excluded; no external resources were loaded.")
+        metadata["exclusions"] = ["HTML scripts, styles, embedded objects, head and hidden text"]
+        return blocks, metadata, "stdlib-html-visible-text"
+    # Preserve the existing paragraph text policy, including whitespace within
+    # paragraphs. Store offsets into the decoded source without changing CRLF,
+    # Unicode normalization, or combining characters.
+    blocks = []
+    start = 0
+    paragraph = 0
+    for paragraph, separator in enumerate(re.finditer(r"\r?\n[ \t]*\r?\n", text), 1):
+        value = text[start:separator.start()]
+        if value.strip():
+            blocks.append({"text": value, "paragraph": paragraph, "source_char_start": start})
+        start = separator.end()
+    if text[start:].strip():
+        blocks.append({"text": text[start:], "paragraph": paragraph + 1,
+                       "source_char_start": start})
+    metadata["exclusions"] = ["Paragraph-separator newlines and whitespace-only paragraphs"]
+    return blocks, metadata, "utf-text"
 
 
 def _docx(path: Path, warnings: list[str]) -> tuple[list[dict], dict]:
@@ -142,6 +203,14 @@ def _docx(path: Path, warnings: list[str]) -> tuple[list[dict], dict]:
                 if text.strip():
                     blocks.append({"text": text, "paragraph": index})
             metadata = {}
+            omitted_parts = sorted(part for part in archive.namelist()
+                                   if re.fullmatch(r"word/(?:header\d+|footer\d+|footnotes|endnotes|comments)\.xml", part))
+            metadata["exclusions"] = ["DOCX deleted revision text and non-text embedded material"]
+            if omitted_parts:
+                metadata["excluded_text_parts"] = omitted_parts
+                metadata["exclusions"].append("Additional DOCX text parts: " + ", ".join(omitted_parts))
+                metadata["needs_review"] = True
+                warnings.append("DOCX contains additional header, footer, note or comment text outside the extracted document body; review the declared excluded parts.")
             if "docProps/core.xml" in archive.namelist():
                 try:
                     core = _xml(archive.read("docProps/core.xml"))
@@ -164,6 +233,8 @@ def _pdf(path: Path, warnings: list[str]) -> tuple[list[dict], int, dict, str]:
         raise ValueError("PDF support requires PyMuPDF. Install the project's PDF dependencies.") from exc
     blocks: list[dict] = []
     empty_pages = []
+    mixed_pages = []
+    page_manifest = []
     total_chars = 0
     try:
         with fitz.open(path) as document:
@@ -176,8 +247,30 @@ def _pdf(path: Path, warnings: list[str]) -> tuple[list[dict], int, dict, str]:
             for page_number in range(pages):
                 page = document.load_page(page_number)
                 texts = [b[4] for b in page.get_text("blocks", sort=True) if len(b) > 6 and b[6] == 0 and b[4].strip()]
+                characters = sum(len(text) for text in texts)
+                # This is an explicit warning heuristic, not a visual-content
+                # completeness detector. A selectable header must not conceal
+                # an image-only body when the normal text parser succeeds.
+                image_area = 0.0
+                page_area = max(1.0, page.rect.get_area())
+                for image in page.get_image_info():
+                    image_area += max(0.0, (fitz.Rect(image["bbox"]) & page.rect).get_area())
+                image_fraction = min(1.0, image_area / page_area)
+                mixed_scan = bool(texts) and characters < MIXED_SCAN_TEXT_CHARACTERS and image_fraction >= MIXED_SCAN_IMAGE_FRACTION
                 if not texts:
                     empty_pages.append(page_number + 1)
+                elif mixed_scan:
+                    mixed_pages.append(page_number + 1)
+                page_warnings = []
+                if not texts:
+                    page_warnings.append("No selectable text: this page is blank or requires OCR.")
+                elif mixed_scan:
+                    page_warnings.append("Large raster content with little selectable text may contain an unextracted scanned body; review the original page or run explicit OCR.")
+                page_manifest.append({"page": page_number + 1, "method": "text" if texts else "unavailable",
+                                      "characters": characters, "image_area_fraction": round(image_fraction, 6),
+                                      "needs_review": not texts or mixed_scan,
+                                      "completeness": "unavailable" if not texts else "needs_review" if mixed_scan else "extracted_text",
+                                      "warnings": page_warnings})
                 for paragraph, text in enumerate(texts, start=1):
                     total_chars += len(text)
                     if total_chars > MAX_TEXT_CHARS:
@@ -188,7 +281,9 @@ def _pdf(path: Path, warnings: list[str]) -> tuple[list[dict], int, dict, str]:
         raise
     except Exception as exc:
         raise ValueError("PDF is damaged or could not be opened safely.") from exc
-    if empty_pages:
+    ocr_pages = sorted(set(empty_pages + mixed_pages))
+    used_ocr = False
+    if ocr_pages:
         # OCR is an explicit processing choice: importing Docling must never
         # cause a model download or a surprise network transfer during upload.
         if os.environ.get("DOXA_ENABLE_OCR", "").lower() in {"1", "true", "yes"}:
@@ -197,15 +292,19 @@ def _pdf(path: Path, warnings: list[str]) -> tuple[list[dict], int, dict, str]:
             elif pages > 200:
                 warnings.append("Automatic OCR is limited to 200 pages per file in this profile; split this PDF for OCR.")
             else:
-                try:
-                    from docling.document_converter import DocumentConverter, PdfFormatOption
-                    from docling.datamodel.base_models import InputFormat
-                    from docling.datamodel.pipeline_options import PdfPipelineOptions
-                    artifacts = os.environ.get("DOXA_DOCLING_ARTIFACTS")
-                    if not artifacts or not Path(artifacts).is_dir():
-                        warnings.append("OCR requires DOXA_DOCLING_ARTIFACTS pointing to prefetched local models; no models were downloaded.")
-                    else:
+                artifacts = os.environ.get("DOXA_DOCLING_ARTIFACTS")
+                if not artifacts or not Path(artifacts).is_dir():
+                    warnings.append("OCR requires DOXA_DOCLING_ARTIFACTS pointing to prefetched local models; no models were downloaded.")
+                else:
+                    try:
+                        from docling.document_converter import DocumentConverter, PdfFormatOption
+                        from docling.datamodel.base_models import InputFormat
+                        from docling.datamodel.pipeline_options import PdfPipelineOptions
                         options = PdfPipelineOptions(do_ocr=True, enable_remote_services=False, artifacts_path=Path(artifacts))
+                        if hasattr(options.ocr_options, "download_enabled"):
+                            options.ocr_options.download_enabled = False
+                        if hasattr(options.ocr_options, "force_full_page_ocr"):
+                            options.ocr_options.force_full_page_ocr = True
                         converter = DocumentConverter(format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=options)})
                         converted = converter.convert(path).document
                         recovered = []
@@ -213,21 +312,47 @@ def _pdf(path: Path, warnings: list[str]) -> tuple[list[dict], int, dict, str]:
                             text = getattr(item, "text", None)
                             provenance = getattr(item, "prov", None)
                             page = getattr(provenance[0], "page_no", None) if provenance else None
-                            if text and text.strip() and page in empty_pages:
+                            if text and text.strip() and page in ocr_pages:
                                 recovered.append({"text": text, "page": page})
                         if recovered:
-                            blocks.extend(recovered)
+                            # Keep selectable text even when OCR is partial.
+                            # Exact duplicates are omitted, but no original
+                            # selectable source paragraph is silently removed.
+                            known = {(block["page"], " ".join(block["text"].split())) for block in blocks}
+                            additions = []
+                            for block in recovered:
+                                key = (block["page"], " ".join(block["text"].split()))
+                                if key not in known:
+                                    additions.append(block)
+                                    known.add(key)
+                            added_characters = sum(len(block["text"]) for block in additions)
+                            if total_chars + added_characters > MAX_TEXT_CHARS:
+                                raise ValueError("OCR text exceeds the extraction limit; split the source document.")
+                            blocks.extend(additions)
                             blocks.sort(key=lambda b: b.get("page", 0))
                             empty_pages = [p for p in empty_pages if not any(b.get("page") == p for b in recovered)]
+                            used_ocr = True
+                            for page in page_manifest:
+                                if any(block["page"] == page["page"] for block in recovered):
+                                    page.update({"method": "ocr", "characters": sum(len(block["text"]) for block in blocks if block["page"] == page["page"]),
+                                                 "needs_review": True, "completeness": "needs_review"})
+                                    page["warnings"].append("Machine-recognized text requires verification against the original page image; reading order or recognition may be incomplete.")
                             warnings.append("OCR text is machine-recognized. Verify evidence against the original page image.")
-                except Exception:
-                    warnings.append("Local OCR failed; selectable text was preserved. Check prefetched model versions and OCR dependencies.")
+                    except Exception:
+                        warnings.append("Local OCR failed; selectable text was preserved. Check prefetched model versions and OCR dependencies.")
         if empty_pages:
             preview = ", ".join(map(str, empty_pages[:20]))
             suffix = f" and {len(empty_pages)-20} more" if len(empty_pages) > 20 else ""
             warnings.append(f"No selectable text on pages {preview}{suffix}. These pages require OCR or are blank and are excluded from text analysis.")
         metadata["pages_without_text"] = empty_pages
-    return blocks, pages, metadata, "pymupdf+docling-ocr" if any("machine-recognized" in w for w in warnings) else "pymupdf"
+        if mixed_pages:
+            preview = ", ".join(map(str, mixed_pages[:20]))
+            suffix = f" and {len(mixed_pages)-20} more" if len(mixed_pages) > 20 else ""
+            warnings.append(f"Possible mixed scanned/text content on pages {preview}{suffix}; selectable text alone does not establish full page coverage. Review the page image or enable local OCR.")
+    metadata.update({"page_manifest": page_manifest, "pages_needing_ocr": ocr_pages,
+                     "mixed_scan_pages": mixed_pages,
+                     "exclusions": ["Images, diagrams and other non-text material are not interpreted by text extraction"]})
+    return blocks, pages, metadata, "pymupdf+docling-ocr" if used_ocr else "pymupdf"
 
 
 def extract_document(path: Path, filename: str | None = None) -> dict:
@@ -262,24 +387,8 @@ def extract_document(path: Path, filename: str | None = None) -> dict:
         extractor = "docx-xml"
         metadata["page_count_basis"] = "Unavailable: DOCX pagination depends on editor layout"
     elif extension in {".txt", ".md", ".markdown", ".html", ".htm"}:
-        text = _decode(path.read_bytes(), warnings)
-        if len(text) > MAX_TEXT_CHARS:
-            raise ValueError("Document text exceeds the extraction limit; split the source document.")
-        if "\x00" in text:
-            raise ValueError("Document appears to contain binary data; export it as UTF-8 text.")
-        if extension in {".html", ".htm"}:
-            parser = _VisibleHTML()
-            parser.feed(text)
-            parser.close()
-            parser.flush()
-            texts = parser.blocks
-            extractor = "stdlib-html-visible-text"
-            warnings.append("HTML scripts, styles, embedded objects and hidden text are excluded; no external resources were loaded.")
-        else:
-            texts = re.split(r"\r?\n[ \t]*\r?\n", text)
-            extractor = "utf-text"
-        blocks = [{"text": value, "paragraph": i} for i, value in enumerate(texts, 1) if value.strip()]
-        metadata["page_count_basis"] = "Unavailable: source format is not paginated"
+        blocks, extra, extractor = _text_blocks(path, extension, warnings)
+        metadata.update(extra)
     else:
         raise ValueError("Unsupported document format. Use PDF, DOCX, TXT, Markdown or HTML.")
     if not blocks:
@@ -290,5 +399,45 @@ def extract_document(path: Path, filename: str | None = None) -> dict:
     for index, block in enumerate(blocks, start=1):
         block["id"] = f"b{index:06d}"
     word_count = sum(len(re.findall(r"\b[\w'-]+\b", block["text"])) for block in blocks)
+    settings = {"manifest_version": EXTRACTION_MANIFEST_VERSION, "text_policy": "paragraphs-exact-v1",
+                "max_text_characters": MAX_TEXT_CHARS, "max_pages": MAX_PAGES,
+                "ocr_enabled": extension == ".pdf" and os.environ.get("DOXA_ENABLE_OCR", "").lower() in {"1", "true", "yes"}}
+    if extension == ".pdf":
+        settings.update({"mixed_scan_image_fraction": MIXED_SCAN_IMAGE_FRACTION,
+                         "mixed_scan_text_characters": MIXED_SCAN_TEXT_CHARACTERS,
+                         "ocr_page_limit": 200})
+    engine_versions = _engine_versions(extractor)
+    page_manifest = metadata.get("page_manifest", [])
+    needs_review = any(page["needs_review"] for page in page_manifest) or metadata.get("encoding") == "windows-1252" or bool(metadata.get("needs_review"))
+    blocks_digest = _canonical_hash(blocks)
+    settings_digest = _canonical_hash(settings)
+    manifest = {"manifest_version": EXTRACTION_MANIFEST_VERSION, "raw_sha256": metadata["sha256"],
+                "blocks_sha256": blocks_digest, "extractor_id": extractor, "extractor_version": EXTRACTOR_VERSION,
+                "engine_versions": engine_versions, "settings": settings, "settings_hash": settings_digest,
+                "encoding": metadata.get("encoding"), "language": metadata.get("language", "und"),
+                "pages": page_manifest, "exclusions": metadata.get("exclusions", []),
+                "source_characters": sum(len(block["text"]) for block in blocks),
+                "needs_review": needs_review, "source_coverage_complete": not needs_review,
+                "coverage_basis": "declared_extraction_scope",
+                "scope": "Extracted text only; visual content and declared exclusions are not analyzed."}
+    manifest["extraction_version_id"] = _canonical_hash({"raw_sha256": manifest["raw_sha256"],
+                                                         "blocks_sha256": blocks_digest,
+                                                         "settings_hash": settings_digest,
+                                                         "extractor_id": extractor,
+                                                         "engine_versions": engine_versions})
+    metadata["extraction_manifest"] = manifest
     return {"blocks": blocks, "page_count": pages, "word_count": word_count,
-            "extractor": extractor, "extraction_warnings": warnings, "metadata": metadata}
+            "extractor": extractor, "extractor_version": EXTRACTOR_VERSION,
+            "extraction_manifest": manifest, "extraction_warnings": warnings, "metadata": metadata}
+
+
+def extract_text_document(path: Path, filename: str | None = None) -> dict:
+    """Use the shared text policy in-process without a second fast-path parser.
+
+    The API may use this bounded path for small plain-text imports. File size,
+    decoding, binary checks, block identity, word counts and provenance are
+    identical to the subprocess's ``extract_document`` result.
+    """
+    if Path(filename or path.name).suffix.lower() not in {".txt", ".md", ".markdown"}:
+        raise ValueError("The plain-text extraction path only supports TXT and Markdown.")
+    return extract_document(path, filename)

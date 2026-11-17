@@ -1,4 +1,6 @@
 interface Env {
+  DOXA_MIGRATION_BACKUP_RECEIPT?: string;
+  DOXA_REVIEWER_ID?: string;
   DOXA_INFERENCE_API_KEY?: string;
   DOXA_OPENAI_API_KEY?: string;
   DOXA_CLOUDFLARE_API_TOKEN?: string;

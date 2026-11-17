@@ -1,0 +1,16 @@
+{
+  "schema_version": "doxa-xlsx-zip64-diagnostic-1",
+  "status": "failed_full_export_diagnostic",
+  "ci_run": "https://github.com/sargonxg/DOXA-by-TACITUS/actions/runs/44137362065",
+  "source_commit": "ab882fac8fd2de8005316779bccee5212185264c",
+  "stage": "persistent full-corpus XLSX rendering",
+  "exception": "xlsxwriter.exceptions.FileSizeError",
+  "message": "Filesize would require ZIP64 extensions. Use workbook.use_zip64().",
+  "python_default_zip64_limit_bytes": 2147483647,
+  "actual_largest_uncompressed_member_bytes": null,
+  "source_restore_and_idempotence_completed_before_report": true,
+  "fix": "Enable ZIP64 in the shared XlsxWriter workbook; preserve all records and exact source-reference enrichment.",
+  "regression": "Force ZIP64_LIMIT=1024; verify actual ZIP64 metadata, CRC, full source/assessment identities, absence of formulas and unchanged uncompressed entries after recompression.",
+  "interpretation_accuracy": null,
+  "notice": "A failed diagnostic is not a completed export benchmark. The successful follow-up must independently measure worksheet sizes and complete the full export checks."
+}

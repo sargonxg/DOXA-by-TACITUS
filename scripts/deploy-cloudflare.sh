@@ -36,6 +36,7 @@ fi
 command -v docker >/dev/null
 docker info >/dev/null
 # These commands mutate your configured Cloudflare account and may incur charges.
-npm --prefix infra/cloudflare exec -- wrangler d1 execute DB --remote --file "$repo_root/doxa/schema.sql" --config "$config_path"
+# Keep a new D1 workspace free of application tables until Store.init can
+# distinguish fresh bootstrap from a real upgrade requiring a backup receipt.
 npm --prefix infra/cloudflare exec -- wrangler d1 migrations apply DB --remote --config "$config_path"
 npm --prefix infra/cloudflare exec -- wrangler deploy --config "$config_path"

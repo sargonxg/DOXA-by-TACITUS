@@ -23,6 +23,8 @@ import {
 } from "lucide-react";
 import { request } from "../api";
 import { VerificationPanel } from "./Verification";
+import { ReportComposer } from "./Casebooks";
+import { ReviewQueue } from "./ReviewQueue";
 import { exportQuery, list, message, record } from "./client";
 import {
   Badge,
@@ -37,6 +39,8 @@ import {
 } from "./ui";
 import type {
   AnalysisRun,
+  Casebook,
+  CaseSelection,
   Context,
   Drawer as DrawerName,
   Item,
@@ -59,7 +63,13 @@ type Props = {
   busy: boolean;
   candidate: Observation | null;
   sourceContext: Context | null;
-  onOpenSource: (document: string, block?: string) => void;
+  casebook: Casebook | null;
+  pinning: boolean;
+  onCasebook: (book: Casebook | null) => void;
+  onPin: (selection: CaseSelection) => Promise<void>;
+  onCreateCasebook: () => Promise<Casebook>;
+  onOpenSource: (document: string, block?: string, finding?: string) => void;
+  onOpenContext: (context: Context, unitId?: string) => void;
   onScope: (patch: Partial<Scope>) => void;
   onImport: (files: FileList | File[]) => Promise<void>;
   onDemo: (collection: string) => Promise<void>;
@@ -73,7 +83,38 @@ export function DrawerBody(props: Props) {
   if (props.drawer === "analyze") return <AnalysisPanel {...props} />;
   if (props.drawer === "models") return <ModelsPanel {...props} />;
   if (props.drawer === "jobs") return <JobsPanel {...props} />;
-  if (props.drawer === "reports") return <ReportsPanel {...props} />;
+  if (props.drawer === "reports")
+    return (
+      <>
+        <ReportComposer
+          project={props.project}
+          query={props.query}
+          book={props.casebook}
+          pinning={props.pinning}
+          onBook={props.onCasebook}
+          onPin={props.onPin}
+          onCreate={props.onCreateCasebook}
+          onOpenSource={props.onOpenSource}
+          onNotice={props.onNotice}
+        />
+        <details className="w-details">
+          <summary>Direct scoped export · compatibility tools</summary>
+          <ReportsPanel {...props} />
+        </details>
+      </>
+    );
+  if (props.drawer === "review-queue")
+    return (
+      <ReviewQueue
+        project={props.project}
+        query={props.query}
+        casebook={props.casebook}
+        pinning={props.pinning}
+        onPin={props.onPin}
+        onOpenSource={props.onOpenSource}
+        onOpenContext={props.onOpenContext}
+      />
+    );
   if (props.drawer === "filters") return <FiltersPanel {...props} />;
   if (props.drawer === "learning") return <LearningPanel {...props} />;
   return null;

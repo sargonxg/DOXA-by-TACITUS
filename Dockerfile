@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libglib2.0-0 libgl1 libpango-1.0-0 libpangoft2-1.0-0 \
     libharfbuzz-subset0 libjpeg62-turbo libopenjp2-7 fontconfig fonts-dejavu-core \
     && rm -rf /var/lib/apt/lists/*
-COPY pyproject.toml ./
+COPY pyproject.toml setup.py ./
 COPY infra/requirements-runtime.lock ./infra/requirements-runtime.lock
 COPY doxa/ ./doxa/
 ARG DOXA_OCR=false

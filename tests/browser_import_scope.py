@@ -12,7 +12,7 @@ from pathlib import Path
 import tempfile
 
 from playwright.sync_api import sync_playwright
-from browser_support import local_app
+from browser_support import chromium_launch_options, local_app
 from browser_v3 import fixtures
 from doxa.store import Store
 from doxa.workspace import Workspace
@@ -42,7 +42,7 @@ def main() -> None:
     Workspace(store).touch(project)
     store.close()
     with local_app(directory) as base, sync_playwright() as p:
-        browser = p.chromium.launch(executable_path="/usr/bin/chromium", headless=True, args=["--no-sandbox"])
+        browser = p.chromium.launch(**chromium_launch_options())
         context = browser.new_context(viewport={"width": 1440, "height": 1000})
         page = context.new_page()
         errors = []

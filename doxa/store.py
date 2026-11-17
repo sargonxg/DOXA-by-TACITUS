@@ -6,6 +6,7 @@ import os
 import sqlite3
 import tempfile
 import threading
+from contextlib import contextmanager
 from pathlib import Path
 from typing import Any
 from urllib.parse import quote
@@ -26,10 +27,11 @@ class Store:
         self.token = os.environ.get("DOXA_SERVICE_TOKEN", "")
         self.lock = threading.RLock()
         self._db: sqlite3.Connection | None = None
+        self._transaction_depth = 0
+        self._transaction_write = False
         if not self.remote:
             self._db = sqlite3.connect(self.root / "doxa.sqlite3", check_same_thread=False, timeout=30)
             self._db.row_factory = sqlite3.Row
-            self._db.execute("PRAGMA journal_mode=WAL")
             self._db.execute("PRAGMA busy_timeout=30000")
         elif not self.token:
             raise RuntimeError("DOXA_SERVICE_TOKEN is required for cloud persistence")
@@ -38,12 +40,10 @@ class Store:
         return {"Authorization": f"Bearer {self.token}", "x-doxa-service-token": self.token}
 
     def init(self) -> None:
-        sql = Path(__file__).with_name("schema.sql").read_text()
-        sql += "\n" + Path(__file__).with_name("v3_schema.sql").read_text()
-        statements = [{"sql": part.strip(), "params": []} for part in sql.split(";") if part.strip()]
-        self.batch(statements)
-        from .learning import SCHEMA_SQL as learning_schema
-        self.batch([{"sql": part.strip(), "params": []} for part in learning_schema.split(";") if part.strip()])
+        from .migrations import migrate
+        migrate(self)
+        if self._db:
+            self._db.execute("PRAGMA journal_mode=WAL")
         self.execute("INSERT INTO batch_members(batch_id,document_id) SELECT batch_id,id FROM documents WHERE 1 ON CONFLICT(batch_id,document_id) DO NOTHING")
         # D1 and SQLite both support FTS5. Failure is explicit in capabilities, never a hidden search claim.
         self.fts = True
@@ -51,6 +51,48 @@ class Store:
             self.execute("CREATE VIRTUAL TABLE IF NOT EXISTS document_search USING fts5(id UNINDEXED, project_id UNINDEXED, title, body)")
         except Exception:
             self.fts = False
+
+    @contextmanager
+    def transaction(self, *, write: bool = False):
+        """One local SQLite snapshot across nested Store calls.
+
+        A D1 transaction cannot span HTTP requests. Remote callers must use one
+        batch for writes and verify their project revision around compound reads.
+        """
+        if self.remote:
+            raise RuntimeError("Remote transactions require a single Store.batch request")
+        assert self._db is not None
+        with self.lock:
+            outer = self._transaction_depth == 0
+            if not outer and write and not self._transaction_write:
+                raise RuntimeError("Cannot upgrade a read snapshot to a write transaction")
+            query_only = None
+            if outer:
+                if not write:
+                    query_only = self._db.execute("PRAGMA query_only").fetchone()[0]
+                    self._db.execute("PRAGMA query_only=ON")
+                try:
+                    self._db.execute("BEGIN IMMEDIATE" if write else "BEGIN")
+                except BaseException:
+                    if query_only is not None:
+                        self._db.execute(f"PRAGMA query_only={int(query_only)}")
+                    raise
+                self._transaction_write = write
+            self._transaction_depth += 1
+            try:
+                yield self
+                if outer:
+                    self._db.commit()
+            except BaseException:
+                if outer:
+                    self._db.rollback()
+                raise
+            finally:
+                self._transaction_depth -= 1
+                if outer:
+                    self._transaction_write = False
+                    if query_only is not None:
+                        self._db.execute(f"PRAGMA query_only={int(query_only)}")
 
     def batch(self, statements: list[dict[str, Any]]) -> list[dict[str, Any]]:
         if not statements:
@@ -62,6 +104,14 @@ class Store:
             return response.json()["results"]
         assert self._db is not None
         with self.lock:
+            if self._transaction_depth:
+                if not self._transaction_write:
+                    raise RuntimeError("Writes are forbidden inside a read snapshot")
+                results = []
+                for statement in statements:
+                    cur = self._db.execute(statement["sql"], statement.get("params", []))
+                    results.append({"rows": [dict(row) for row in cur.fetchall()] if cur.description else [], "changes": max(cur.rowcount, 0)})
+                return results
             try:
                 self._db.execute("BEGIN IMMEDIATE")
                 results = []
@@ -77,7 +127,7 @@ class Store:
 
     def query(self, sql: str, params: list | tuple = ()) -> list[dict]:
         # Read-only queries do not acquire SQLite's RESERVED writer lock.
-        if not self.remote and sql.lstrip().upper().startswith(("SELECT", "EXPLAIN", "PRAGMA")):
+        if not self.remote and sql.lstrip().upper().startswith(("SELECT", "WITH", "EXPLAIN", "PRAGMA")):
             assert self._db is not None
             with self.lock:
                 return [dict(row) for row in self._db.execute(sql, params).fetchall()]
@@ -240,6 +290,11 @@ class Store:
 
     def enqueue(self, run_id: str) -> None:
         response = httpx.post(self.remote + "/internal/storage/enqueue", json={"run_id": run_id},
+                              headers=self.headers(), timeout=30)
+        response.raise_for_status()
+
+    def enqueue_report(self, job_id: str) -> None:
+        response = httpx.post(self.remote + "/internal/storage/enqueue", json={"kind": "report", "job_id": job_id},
                               headers=self.headers(), timeout=30)
         response.raise_for_status()
 

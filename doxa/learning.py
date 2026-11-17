@@ -10,6 +10,7 @@ from typing import get_args
 
 from .models import AssessmentResult, PropositionStance
 from .store import utcnow
+from .method_config import structural_fingerprint
 
 SCHEMA_SQL = """
 CREATE TABLE IF NOT EXISTS v3_review_events (
@@ -251,6 +252,8 @@ def record_review(store, project_id, assessment_id, corrections, *, actor_kind, 
                                       resolved["speech_role"], resolved.get("speaker_stance", "unclear"),
                                       resolved.get("document_stance", "unclear"), int(resolved.get("hypothetical", False)),
                                       status, note, _json(projection), assessment_id, project_id]})
+        from .workspace import Workspace
+        statements.append(Workspace.touch_statement(project_id))
     store.batch(statements)
     return {**event, "state_applied": actor_kind == "human"}
 
@@ -268,6 +271,9 @@ def approve_example(store, project_id, review_id, *, actor_kind, actor_id):
     if not document:
         raise ValueError("Source document is unavailable")
     group = _group(document)
+    from .evaluation import locked_reference_source
+    if locked_reference_source(store, project_id, document["id"], group):
+        raise ValueError("Locked reference cases and their story groups cannot enter learning memory")
     if _holdout(document) or any(_holdout(d) and _group(d) == group for d in _all_documents(store, project_id)):
         raise ValueError("Holdout documents and their story/duplicate groups cannot enter learning memory")
     resolved = json.loads(review["resolved_json"])
@@ -399,9 +405,7 @@ def candidate_report(store, project_id, candidate_id, baseline_run_id, candidate
         reasons.append("Baseline run did not pin the candidate's baseline memory")
     if after.get("learning_snapshot_id") != candidate["snapshot_id"]:
         reasons.append("Candidate run did not pin the candidate memory")
-    operational = {"learning_snapshot_id", "approved_examples", "approved_example_ids", "profile_hash", "analysis_profile_hash",
-                   "document_ids", "source_snapshot", "budget_usd", "monthly_budget_usd"}
-    if {key: value for key, value in before.items() if key not in operational} != {key: value for key, value in after.items() if key not in operational}:
+    if structural_fingerprint(before) != structural_fingerprint(after):
         reasons.append("Model or analytical settings differ beyond memory")
     if baseline["status"] != "completed" or challenger["status"] != "completed":
         reasons.append("Both paired runs must finish completely")
@@ -433,8 +437,13 @@ def candidate_report(store, project_id, candidate_id, baseline_run_id, candidate
               "dataset_sha256": _hash(after_sources), "paired_assessments": len(shared), "changed_results": changed,
               "agreement": (len(shared) - changed) / len(shared) if shared else None,
               "interpretation_accuracy": None, "independent_reference_labels": False,
+              "baseline_structural_fingerprint": structural_fingerprint(before),
+              "candidate_structural_fingerprint": structural_fingerprint(after),
+              "structural_compatibility_passed": not reasons,
+              "quality_status": "reference_pending", "quality_evaluated": False,
+              "quality_promotion_recommended": False,
               "eligible_for_activation": not reasons, "blocking_reasons": reasons,
-              "notice": "Agreement and complete coverage do not establish better interpretation. Activation requires explicit human approval.",
+              "notice": "Structural comparability, agreement and complete coverage do not establish better interpretation. Independent reference review is pending; no quality promotion is recommended. Activation requires explicit human approval.",
               "created_at": utcnow()}
     identity = _hash(report)[:32]
     store.execute("INSERT INTO v3_learning_reports(id,project_id,candidate_id,baseline_run_id,candidate_run_id,payload_json,eligible,created_at) VALUES(?,?,?,?,?,?,?,?)",

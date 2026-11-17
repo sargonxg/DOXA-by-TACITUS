@@ -21,6 +21,36 @@ pages request 50 records and render a bounded number of rows; the client does
 not download all 5,000 source bodies. Drawers contain import, analysis, model
 readiness, processing jobs, reports, filters, and reviewed learning.
 
+The v0.4 Reports drawer composes persistent casebooks and publication jobs.
+Pin an actual assessment in the inspector, or browse all four recorded outcomes
+within the frozen source cohort. An unfinished source unit is a separate case
+with no invented assessment. Add a selection rationale and attributed operator
+notes, preview source / frozen framework / model / review layers, then prepare a
+briefing, casebook, teaching edition or archive. Drafts and publication revisions
+are server records; browser storage retains only the active draft ID.
+Archive preparation explicitly expands the outcome filter to all four results
+while retaining the source, framework, criterion, speech-role, review and stance
+filters. Case browsing also preserves those analytical filters.
+
+Publication progress, cancel, restart and verified artifacts remain available
+after closing or refreshing the browser. Downloads use native same-origin links
+with server Range and ETag support, avoiding a large JavaScript Blob copy.
+Preparation uses recorded evidence and makes no inference requests. The older
+single-request scoped export remains under **Direct scoped export · compatibility
+tools**. PDF/HTML appendix limits remain distinct from complete data exports.
+
+Review queues page criterion uncertainty, original-model disagreements and
+unfinished units. Unit context is resolved lazily from the frozen source and can
+be restored through its scoped URL. It never manufactures a Finding. Extraction
+coverage has a separate bounded page ledger; processing coverage explicitly
+names sources, source units and criterion decisions. None is interpretation
+accuracy. Human reference labels remain pending unless actual reviews exist.
+
+Source lists support Arrow Up/Down and Home/End within the loaded page; result
+page controls load another bounded page. Analytical and inspector tabs support
+Arrow Left/Right and Home/End. Named native dialogs support Escape and focus
+return. The timeline also has a paginated data table.
+
 Contextual indicator measurements count distinct sources. Reported and endorsed
 source counts can overlap. Observation counts remain separate. Legacy snapshots
 and lexical navigation do not become v3 contextual measurements. Source text and
@@ -56,13 +86,30 @@ Run browser checks from the **repository root** after building the interface:
 .venv/bin/python tests/browser_batches.py
 .venv/bin/python tests/browser_import_scope.py
 .venv/bin/python tests/browser_verification.py
+.venv/bin/python tests/browser_provider_rates.py
+.venv/bin/python tests/browser_cpu_source.py
+.venv/bin/python tests/browser_publications_v04.py
+.venv/bin/python tests/browser_report_jobs_v04.py
+.venv/bin/python tests/browser_accessibility_v04.py
 ```
 
-These start isolated local servers and require Playwright plus system Chromium.
+These start isolated local servers and require Playwright plus system Chromium
+or Playwright's installed Chromium (`python -m playwright install chromium`).
+`DOXA_BROWSER_EXECUTABLE` selects an explicit browser path.
 No paid inference requests are made. The main suite uses explicitly synthetic
 5,000-source persistence fixtures and a mocked provider to check paging, linked
 scope, exact-source review, learning gates, exports, cloud-consent controls and
 390px layouts. It establishes UI behavior, not model quality or throughput.
+
+The v0.4 publication contract test mocks publication services over real synthetic
+source/query APIs. The separate report-job browser test mocks no HTTP endpoints:
+it pins all four outcomes and a canonical unfinished unit, restores unit context,
+cancels and restarts a publication, runs only the offline report worker, downloads
+an actual PDF, checks Range/ETag and restores the saved draft/artifact. Analysis
+workers remain disabled. The accessibility check exercises virtual-row keyboard
+focus, row positions, tab navigation, a chart table, and dialog focus return.
+Receipts default to `/tmp/doxa-publications-v04`,
+`/tmp/doxa-report-jobs-real-v04`, and `/tmp/doxa-accessibility-v04.json`.
 
 The upload test interrupts part 2 of an actual 11 MiB PDF, refreshes, reselects
 the same file, and verifies that only part 2 transfers, one source is extracted,

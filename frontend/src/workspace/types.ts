@@ -16,6 +16,7 @@ export type Drawer =
   | "reports"
   | "learning"
   | "filters"
+  | "review-queue"
   | "help"
   | null;
 export type Scope = {
@@ -60,6 +61,12 @@ export const EMPTY_SCOPE: Scope = {
 };
 export type Page<T> = { items: T[]; total: number; next_cursor: string | null };
 export type Observation = Finding & {
+  criterion_id?: string;
+  unit_id?: string;
+  detail_supplied?: boolean;
+  origin_labels?: Item;
+  evidence_selection_origin?: string;
+  explanation_origin?: string;
   result?: string;
   hypothetical?: boolean;
   proposition?: string;
@@ -71,6 +78,40 @@ export type Observation = Finding & {
   original?: Item;
   corrections?: Item;
   review_event?: Item;
+};
+export type CaseSelection = {
+  assessment_id?: string;
+  document_id: string;
+  unit_id?: string;
+};
+export type CasebookCase = CaseSelection & {
+  id: string;
+  kind: "assessment" | "unresolved";
+  result?: string | null;
+  criterion_kind?: string;
+  editorial_note?: string;
+  selection_rationale?: string;
+  ordinal?: number;
+  source_snapshot?: Item;
+  assessment_snapshot?: Item;
+  unit_snapshot?: Item;
+  frozen_snapshot?: Item;
+  block_id?: string;
+  framework_condition?: Item;
+  review_status?: string;
+};
+export type Casebook = {
+  id: string;
+  project_id: string;
+  query_id: string;
+  run_id: string;
+  scope_hash: string;
+  snapshot_version: string;
+  title: string;
+  selection_rationale: string;
+  publication_type: string;
+  revision: number;
+  cases: CasebookCase[];
 };
 export type Metrics = {
   documents: number;
@@ -149,6 +190,8 @@ export type Context = {
   document: SourceDocument;
   blocks: Block[];
   finding?: Observation;
+  unit?: Item;
+  unit_id?: string;
   total_blocks?: number;
   start?: number;
   next_cursor?: number | null;

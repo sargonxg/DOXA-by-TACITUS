@@ -1,9 +1,12 @@
 import { env } from "cloudflare:workers";
 import { beforeAll, describe, expect, it, vi } from "vitest";
 import worker from "../src/index";
+import { containerEnvironment } from "../src/container";
 import { consume, recoverDispatch } from "../src/queue";
 import { validObjectKey } from "../src/http";
 import migration from "../migrations/0001_cloud.sql?raw";
+import reportSchema from "../../../doxa/report_jobs_schema.sql?raw";
+import contextualSchema from "../../../doxa/v3_schema.sql?raw";
 
 const token = "test-only-strong-service-token-0123456789abcdef";
 function request(path: string, method = "GET", body?: unknown, authenticated = true): Request {
@@ -16,9 +19,22 @@ beforeAll(async () => {
   await env.DB.exec(migration.replace(/\n/g, " "));
   await env.DB.exec("CREATE TABLE IF NOT EXISTS projects (id TEXT PRIMARY KEY); INSERT OR IGNORE INTO projects VALUES ('test-project');");
   await env.DB.exec("CREATE TABLE IF NOT EXISTS documents (id TEXT PRIMARY KEY, object_key TEXT);");
+  await env.DB.exec(contextualSchema.replace(/\n/g, " "));
+  await env.DB.exec(reportSchema.replace(/\n/g, " "));
 });
 
 describe("private cloud boundary", () => {
+  it("forwards the operator upgrade receipt and trusted reviewer only when configured", () => {
+    const fresh = containerEnvironment(env);
+    expect(fresh.DOXA_MIGRATION_BACKUP_RECEIPT).toBeUndefined();
+    expect(fresh.DOXA_REVIEWER_ID).toBeUndefined();
+    expect(fresh.DOXA_INTERNAL_TOKEN).toBe(token);
+    const configured = containerEnvironment({ ...env, DOXA_MIGRATION_BACKUP_RECEIPT: "d1-export-sha256:fixture", DOXA_REVIEWER_ID: "trusted-reviewer", UNRELATED_SECRET: "must-not-forward" } as unknown as Env);
+    expect(configured.DOXA_MIGRATION_BACKUP_RECEIPT).toBe("d1-export-sha256:fixture");
+    expect(configured.DOXA_REVIEWER_ID).toBe("trusted-reviewer");
+    expect(configured.UNRELATED_SECRET).toBeUndefined();
+    expect(configured.DOXA_CLOUDFLARE_BASE_URL).toBe("https://test.invalid/internal/inference/v1");
+  });
   it("rejects unsigned Access headers and unauthenticated API/internal access", async () => {
     expect((await worker.fetch(request("/api/projects", "GET", undefined, false), env)).status).toBe(401);
     const forged = request("/internal/storage/sql", "POST", { statements: [{ sql: "SELECT 1" }] }, false);
@@ -125,6 +141,57 @@ describe("bounded multipart uploads", () => {
 });
 
 describe("queue commit semantics", () => {
+  it("keeps scheduled recovery idle before the first application bootstrap", async () => {
+    const database = (env as unknown as { BOOTSTRAP_DB: D1Database }).BOOTSTRAP_DB;
+    await database.exec(migration.replace(/\n/g, " "));
+    expect(await database.prepare("SELECT name FROM sqlite_master WHERE name='documents'").first()).toBeNull();
+    expect(await database.prepare("SELECT name FROM sqlite_master WHERE name='report_jobs'").first()).toBeNull();
+    const send = vi.fn(async () => {}), getByName = vi.fn(() => { throw new Error("An empty cron must not start a container"); });
+    await recoverDispatch({ ...env, DB: database, WORK_QUEUE: { send }, PYTHON: { getByName } } as unknown as Env);
+    expect(send).not.toHaveBeenCalled(); expect(getByName).not.toHaveBeenCalled();
+    expect(await database.prepare("SELECT name FROM sqlite_master WHERE name='documents'").first()).toBeNull();
+  });
+  it("dispatches typed report work and refuses acceptance without a committed checkpoint", async () => {
+    const ack = vi.fn(), retry = vi.fn();
+    const fetch = vi.fn(async (input: Request) => {
+      expect(new URL(input.url).pathname).toBe("/internal/report-work/report-typed");
+      expect(input.headers.get("x-doxa-service-token")).toBe(token);
+      expect(await input.json()).toEqual({ deadline_seconds: 240 });
+      return Response.json({ pending: true }, { status: 202 });
+    });
+    const testEnv = { ...env, PYTHON: { getByName: () => ({ fetch }) } } as unknown as Env;
+    await consume({ messages: [{ body: { kind: "report", job_id: "report-typed" }, ack, retry }] } as unknown as MessageBatch<import("../src/queue").WorkMessage>, testEnv);
+    expect(ack).not.toHaveBeenCalled(); expect(retry).toHaveBeenCalledOnce();
+    fetch.mockImplementationOnce(async () => Response.json({ pending: false }));
+    await consume({ messages: [{ body: { kind: "report", job_id: "report-typed" }, ack, retry }] } as unknown as MessageBatch<import("../src/queue").WorkMessage>, testEnv);
+    expect(ack).toHaveBeenCalledOnce();
+  });
+  it("persists report enqueue intent independently of the delivery attempt", async () => {
+    const send = vi.fn(async () => {});
+    const testEnv = { ...env, WORK_QUEUE: { send } } as unknown as Env;
+    const result = await worker.fetch(request("/internal/storage/enqueue", "POST", { kind: "report", job_id: "report-enqueue" }), testEnv);
+    expect(result.status).toBe(200);
+    expect(send).toHaveBeenCalledWith({ kind: "report", job_id: "report-enqueue" });
+    expect((await worker.fetch(request("/internal/storage/enqueue", "POST", { kind: "report", job_id: "../bad" }), testEnv)).status).toBe(400);
+    expect((await worker.fetch(request("/internal/storage/enqueue", "POST", { kind: "report" }), testEnv)).status).toBe(400);
+  });
+  it("recovers a queued report and commits its input checkpoint with a D1 lease guard", async () => {
+    await env.DB.prepare("INSERT INTO report_jobs(id,project_id,query_id,publication_type,format,profile,status,scope_hash,snapshot_version,config_key,created_at,updated_at,lease_token) VALUES('report-recover','test-project','q','briefing','html','briefing','queued','scope','revision','unused','now','now','lease')").run();
+    const send = vi.fn(async () => {});
+    await recoverDispatch({ ...env, WORK_QUEUE: { send } } as unknown as Env);
+    expect(send).toHaveBeenCalledWith({ kind: "report", job_id: "report-recover" });
+    await env.DB.prepare("UPDATE report_jobs SET status='running' WHERE id='report-recover'").run();
+    const commit = async (lease: string, ordinal: number) => env.DB.batch([
+      env.DB.prepare("INSERT INTO report_job_parts(job_id,stage,ordinal,object_key,bytes,sha256,row_count,last_key) SELECT 'report-recover','documents',?,'part',10,'hash',2,'last' WHERE EXISTS(SELECT 1 FROM report_jobs WHERE id='report-recover' AND lease_token=? AND status='running' AND cancel_requested=0)").bind(ordinal, lease),
+      env.DB.prepare("UPDATE report_jobs SET state_json='checkpoint' WHERE id='report-recover' AND lease_token=? AND changes()=1").bind(lease),
+    ]);
+    expect((await commit("stale", 0))[0].meta.changes).toBe(0);
+    expect((await commit("lease", 0))[0].meta.changes).toBe(1);
+    expect(await env.DB.prepare("SELECT state_json FROM report_jobs WHERE id='report-recover'").first()).toEqual({ state_json: "checkpoint" });
+    await env.DB.prepare("UPDATE report_jobs SET cancel_requested=1,state_json='cancelled checkpoint' WHERE id='report-recover'").run();
+    expect((await commit("lease", 1))[0].meta.changes).toBe(0);
+    expect(await env.DB.prepare("SELECT state_json FROM report_jobs WHERE id='report-recover'").first()).toEqual({ state_json: "cancelled checkpoint" });
+  });
   it("never acknowledges a 202 acceptance as completed work", async () => {
     const ack = vi.fn();
     const retry = vi.fn();
@@ -144,6 +211,36 @@ describe("queue commit semantics", () => {
     await consume({ messages: [message] } as unknown as MessageBatch<{ run_id: string }>, testEnv);
     expect(ack).toHaveBeenCalledOnce();
     expect(retry).not.toHaveBeenCalled();
+  });
+});
+
+describe("immutable report artifact streaming", () => {
+  it("serves authenticated full/range/conditional/HEAD reads directly from real R2", async () => {
+    const bytes = new TextEncoder().encode("actual immutable report bytes");
+    const digest = [...new Uint8Array(await crypto.subtle.digest("SHA-256", bytes))].map(value => value.toString(16).padStart(2, "0")).join("");
+    await env.OBJECTS.put("report-jobs/download-test/report.pdf", bytes);
+    await env.DB.prepare("INSERT INTO report_jobs(id,project_id,query_id,publication_type,format,profile,status,scope_hash,snapshot_version,config_key,created_at,updated_at) VALUES('download-test','test-project','q','briefing','pdf','briefing','completed','scope','revision','unused','now','now')").run();
+    await env.DB.prepare("INSERT INTO report_job_artifacts(job_id,format,object_key,filename,bytes,sha256,content_type,created_at) VALUES('download-test','pdf','report-jobs/download-test/report.pdf','report.pdf',?,?,'application/pdf','now')").bind(bytes.byteLength, digest).run();
+    const path = "/api/v3/report-jobs/download-test/artifacts/pdf";
+    expect((await worker.fetch(request(path, "GET", undefined, false), env)).status).toBe(401);
+    const full = await worker.fetch(request(path), env);
+    expect(full.status).toBe(200); expect(await full.text()).toBe("actual immutable report bytes");
+    const input = request(path); input.headers.set("range", "bytes=7-15");
+    const partial = await worker.fetch(input, env);
+    expect(partial.status).toBe(206); expect(await partial.text()).toBe("immutable");
+    expect(partial.headers.get("content-range")).toBe(`bytes 7-15/${bytes.byteLength}`);
+    const conditional = request(path); conditional.headers.set("if-none-match", `"${digest}"`);
+    expect((await worker.fetch(conditional, env)).status).toBe(304);
+    const head = await worker.fetch(request(path, "HEAD"), env);
+    expect(head.headers.get("content-length")).toBe(String(bytes.byteLength)); expect(await head.text()).toBe("");
+    const invalid = request(path); invalid.headers.set("range", "bytes=9999999-");
+    expect((await worker.fetch(invalid, env)).status).toBe(416);
+    const suffix = request(path); suffix.headers.set("range", "bytes=-5");
+    expect(await (await worker.fetch(suffix, env)).text()).toBe("bytes");
+    await env.DB.prepare("UPDATE report_jobs SET status='failed' WHERE id='download-test'").run();
+    expect((await worker.fetch(request(path), env)).status).toBe(409);
+    await env.DB.prepare("DELETE FROM report_job_artifacts WHERE job_id='download-test'").run();
+    expect((await worker.fetch(request(path), env)).status).toBe(409);
   });
 });
 

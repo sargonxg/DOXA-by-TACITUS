@@ -26,7 +26,20 @@ sys.path.insert(0, str(ROOT))
 AUTHORSHIP = "AI-authored walkthrough guidance; not independent human adjudication or an interpretation-accuracy benchmark."
 CONFIG_FIELDS = ("provider", "model", "lens_ids", "question", "persona", "methodology_version", "schema_version",
                  "quantization", "model_revision", "unit_max_chars", "context_sentences", "pipeline_version",
-                 "unit_builder_version", "learning_snapshot_id", "verification_of", "verification_selection")
+                 "unit_builder_version", "learning_snapshot_id", "verification_of", "verification_selection",
+                 "lens_snapshots", "lens_snapshots_sha256")
+
+
+def origin_labels(assessment: dict, *, rubric_origin: str = "not_recorded") -> dict:
+    """Describe recorded evidence origin without inventing a historical request."""
+    detailed = assessment.get("detail_supplied")
+    selection = ("persisted_detail_sentence_ids" if detailed is True else
+                 "software_attached_unit_anchors" if detailed is False else "unknown_missing_capture")
+    return {"source_text": "validated_frozen_extraction", "framework": rubric_origin,
+            "evidence_selection": selection,
+            "model_interpretation": "persisted_model_detail" if detailed is True else "not_recorded" if detailed is False else "unknown_missing_capture",
+            "request_capture": "not_recorded", "review": "recorded_overlay" if assessment.get("recorded_review_overlay") else "no_independent_review",
+            "editorial": "ai_authored_reading_guidance"}
 
 
 def digest(value) -> str:
@@ -68,7 +81,7 @@ def choose_cases(rows: list[dict], limit: int) -> list[dict]:
 
 
 def freeze_run(data_dir: Path, run_id: str, *, limit: int = 4, assessment_ids: list[str] | None = None,
-               allow_active: bool = False) -> dict:
+               allow_active: bool = False, include_all_outcomes: bool = False, include_unresolved: bool = False) -> dict:
     """Read one consistent DB snapshot, then freeze exact immutable source blocks."""
     from doxa.lenses import get_lens
     data_dir = data_dir.resolve()
@@ -87,8 +100,28 @@ def freeze_run(data_dir: Path, run_id: str, *, limit: int = 4, assessment_ids: l
             raise ValueError("Use an actual methodology-v3 run for these walkthroughs")
         if run["status"] in {"running", "queued", "importing"} and not allow_active:
             raise ValueError("Wait for work to settle, or explicitly --capture-unfinished with its unfinished status")
+        snapshots = {pack["id"]: pack for pack in run["config"].get("lens_snapshots", [])}
+        packs = {identity: snapshots[identity] if identity in snapshots else get_lens(identity)
+                 for identity in run["config"].get("lens_ids", [])}
+        compatibility = None
+        compatibility_path = data_dir / "frozen-engine-compatibility.json"
+        if len(snapshots) < len(packs) and compatibility_path.is_file():
+            receipt = json.loads(compatibility_path.read_text())
+            identities = receipt.get("lens_ids", [])
+            expected_hash = receipt.get("components", {}).get("selected_lenses")
+            if set(identities) != set(packs) or expected_hash != digest([packs[identity] for identity in identities]):
+                raise ValueError("Rubric capture differs from the recorded compatibility receipt")
+            compatibility = {"file": "frozen-engine-compatibility.json", "file_sha256": hashlib.sha256(compatibility_path.read_bytes()).hexdigest(),
+                             "recorded_receipt": receipt, "selected_lenses_sha256": expected_hash,
+                             "notice": "Rubric text captured later and verified against the recorded selected-pack hash; not an original embedded request."}
+        criterion_keys = {f"{pack['id']}/{criterion['id']}" for pack in packs.values() for criterion in pack["criteria"]}
+        condition = "" if include_all_outcomes else " AND result IN ('meets_criterion','uncertain')"
+        parameters = [run_id]
+        if assessment_ids:
+            condition += " AND id IN (" + ",".join("?" for _ in assessment_ids) + ")"
+            parameters.extend(assessment_ids)
         records = [dict(row) for row in connection.execute(
-            "SELECT * FROM v3_assessments WHERE run_id=? AND result IN ('meets_criterion','uncertain') ORDER BY id", [run_id])]
+            "SELECT * FROM v3_assessments WHERE run_id=?" + condition + " ORDER BY id", parameters)]
         if assessment_ids:
             by_id = {row["id"]: row for row in records}
             if len(set(assessment_ids)) != len(assessment_ids) or any(identity not in by_id for identity in assessment_ids):
@@ -96,11 +129,13 @@ def freeze_run(data_dir: Path, run_id: str, *, limit: int = 4, assessment_ids: l
             selected = [by_id[identity] for identity in assessment_ids]
         else:
             selected = choose_cases(records, limit)
-        if not selected:
+        unresolved = [dict(row) for row in connection.execute(
+            "SELECT * FROM v3_unit_statuses WHERE run_id=? AND status!='accepted' ORDER BY document_id,unit_id LIMIT 3", [run_id])] if include_unresolved else []
+        if not selected and not unresolved:
             raise ValueError("No recorded noteworthy assessments are available; no example has been invented")
         sources = []
         frozen_selection = {item["id"]: item["sha256"] for item in run["config"].get("source_snapshot", [])}
-        for identity in dict.fromkeys(item["document_id"] for item in selected):
+        for identity in dict.fromkeys(item["document_id"] for item in [*selected, *unresolved]):
             row = connection.execute("SELECT * FROM documents WHERE id=? AND project_id=?", [identity, run["project_id"]]).fetchone()
             if row is None or frozen_selection.get(identity) != row["sha256"]:
                 raise ValueError("A selected source is unavailable or differs from the run's frozen source version")
@@ -117,7 +152,7 @@ def freeze_run(data_dir: Path, run_id: str, *, limit: int = 4, assessment_ids: l
             "SELECT criterion_kind,result,COUNT(*) count FROM v3_assessments WHERE run_id=? GROUP BY criterion_kind,result", [run_id])]
         document_units = [dict(row) for row in connection.execute(
             "SELECT document_id,COUNT(*) total,SUM(status='accepted') done FROM v3_unit_statuses WHERE run_id=? GROUP BY document_id", [run_id])]
-        criteria_per_unit = sum(len(get_lens(identity)["criteria"]) for identity in run["config"].get("lens_ids", []))
+        criteria_per_unit = len(criterion_keys)
         expected_decisions = sum(row["count"] for row in unit_rows) * criteria_per_unit
         retained_decisions = sum(row["count"] for row in decisions)
         run_coverage = {"selected_documents": len(frozen_selection),
@@ -129,26 +164,61 @@ def freeze_run(data_dir: Path, run_id: str, *, limit: int = 4, assessment_ids: l
         definitions = {}
         for row in selected:
             value = json.loads(row["payload_json"])
+            value["recorded_payload"] = json.loads(row["payload_json"])
+            value["recorded_payload_sha256"] = digest(value["recorded_payload"])
+            value["recorded_payload_bytes_sha256"] = hashlib.sha256(row["payload_json"].encode()).hexdigest()
             value.update({key: row[key] for key in ("id", "project_id", "run_id", "document_id", "unit_id", "lens_id", "criterion_id", "criterion_kind", "review_status", "review_note")})
             # Preserve raw output. Existing review overlays remain separately labeled.
             value["recorded_review_overlay"] = json.loads(row.get("review_json") or "{}")
             unit_state = connection.execute("SELECT status FROM v3_unit_statuses WHERE run_id=? AND document_id=? AND unit_id=?",
                                             [run_id, row["document_id"], row["unit_id"]]).fetchone()
             value["recorded_unit_status"] = unit_state["status"] if unit_state else "not supplied"
-            assessments.append(value)
-            pack = get_lens(row["lens_id"])
+            source = next(doc for doc in sources if doc["id"] == row["document_id"])
+            blocks = {block["id"]: block["text"] for block in source["blocks"]}
+            for reference in value.get("evidence_refs") or []:
+                text = blocks.get(reference.get("block_id"), "")
+                if reference.get("quote") is None:
+                    reference["quote"] = text[reference["start"]:reference["end"]]
+            first = (value.get("evidence_refs") or [{}])[0]
+            for key in ("block_id", "start", "end", "quote"):
+                if value.get(key) is None and key in first:
+                    value[key] = first[key]
+            pack = packs[row["lens_id"]]
             criterion = next(item for item in pack["criteria"] if item["id"] == row["criterion_id"])
             expected = run.get("model_profile", {}).get("rubric_versions", {}).get(pack["id"])
             if expected and expected != pack["version"]:
                 raise ValueError("The current lens definition differs from the recorded run; provide a frozen snapshot")
             definitions[row["lens_id"] + "/" + row["criterion_id"]] = {"lens": pack["name"], "version": pack["version"],
-                "criterion": criterion, "scope": pack.get("scope", ""), "source_url": pack.get("source_url", "")}
+                "criterion": criterion, "scope": pack.get("scope", ""), "context_rules": pack.get("context_rules", ""),
+                "source_url": pack.get("source_url", ""), "origin": "frozen_run_lens_snapshot" if pack["id"] in snapshots else
+                    "verified_compatible_registry_capture" if compatibility else "current_registry_version_checked_fallback"}
+            value["origin_labels"] = origin_labels(value, rubric_origin=definitions[row["lens_id"] + "/" + row["criterion_id"]]["origin"])
+            assessments.append(value)
+        unresolved_units = []
+        if unresolved:
+            from doxa.contextual import build_units
+            for row in unresolved:
+                source = next(doc for doc in sources if doc["id"] == row["document_id"])
+                identity = source.get("metadata", {}).get("source_id") or source.get("source_url") or source["id"]
+                source_version = hashlib.sha256(f"{identity}:{source['sha256']}".encode()).hexdigest()[:32]
+                units = build_units({**source, "source_version_id": source_version}, max_unit_chars=run["config"].get("unit_max_chars", 1200), context_sentences=run["config"].get("context_sentences", 2))
+                unit = next((unit for unit in units if unit["id"] == row["unit_id"]), None)
+                if unit is None:
+                    raise ValueError("Unresolved unit does not match its frozen source builder")
+                accepted = {f"{item['lens_id']}/{item['criterion_id']}" for item in connection.execute("SELECT lens_id,criterion_id FROM v3_assessments WHERE run_id=? AND document_id=? AND unit_id=?", [run_id, row["document_id"], row["unit_id"]])}
+                unresolved_units.append({"run_id": run_id, "document_id": row["document_id"], "unit_id": row["unit_id"],
+                    "status": row["status"], "result": None, "missing_criterion_keys": sorted(criterion_keys - accepted),
+                    "source_unit": unit, "recorded_status_payload": json.loads(row["payload_json"]),
+                    "origin_labels": {"evidence_selection": "software_rebuilt_frozen_source_unit", "model_interpretation": "missing_unresolved_decision", "request_capture": "not_recorded", "editorial": "ai_authored_reading_guidance"}})
         public_run = {key: value for key, value in run.items() if key not in {"config", "errors"}}
         public_run["config"] = {key: run["config"][key] for key in CONFIG_FIELDS if key in run["config"]}
         public_run["source_selection"] = {"documents": len(frozen_selection), "sha256": digest(run["config"].get("source_snapshot", []))}
         result = {"schema_version": "doxa-annotated-guide-1", "generated_at": datetime.now(timezone.utc).isoformat(),
                   "project": project, "run": public_run, "documents": sources, "assessments": assessments,
                   "criterion_definitions": definitions, "unit_states": unit_rows, "decision_counts": decisions, "run_coverage": run_coverage,
+                  "rubric_capture": {"packs": list(packs.values()), "compatibility_receipt": compatibility,
+                      "notice": "Embedded historical snapshots are distinguished from later text captures; none is an actual request journal."},
+                  "unresolved_units": unresolved_units,
                   "selection_notice": "Illustrative recorded cases selected for reading guidance; not a representative sample or a new model run.",
                   "commentary_authorship": AUTHORSHIP, "independent_human_labels": False, "interpretation_accuracy": None}
         if run["config"].get("verification_selection"):
@@ -169,10 +239,26 @@ def audit_snapshot(snapshot: dict) -> dict:
         raise ValueError("Unsupported walkthrough snapshot format")
     sources = {doc["id"]: doc for doc in snapshot["documents"]}
     checked = 0
+    rubric_capture = snapshot.get("rubric_capture", {})
+    captured_packs = {pack["id"]: pack for pack in rubric_capture.get("packs", [])}
+    compatibility = rubric_capture.get("compatibility_receipt")
+    if compatibility:
+        receipt = compatibility["recorded_receipt"]
+        if digest([captured_packs[identity] for identity in receipt["lens_ids"]]) != receipt["components"]["selected_lenses"]:
+            raise ValueError("Captured rubric differs from its historical compatibility hash")
+    for key, definition in snapshot.get("criterion_definitions", {}).items():
+        lens_id, criterion_id = key.split("/", 1)
+        if lens_id in captured_packs:
+            pack = captured_packs[lens_id]
+            criterion = next(item for item in pack["criteria"] if item["id"] == criterion_id)
+            if definition["criterion"] != criterion or definition["version"] != pack["version"]:
+                raise ValueError("Displayed criterion differs from the captured rubric")
     for source in sources.values():
         if digest(source["blocks"]) != source["frozen_blocks_sha256"]:
             raise ValueError("Frozen source blocks failed their content checksum")
     for assessment in snapshot["assessments"]:
+        if assessment.get("recorded_payload_sha256") and digest(assessment.get("recorded_payload")) != assessment["recorded_payload_sha256"]:
+            raise ValueError("Original recorded model payload failed its content checksum")
         if assessment["run_id"] != snapshot["run"]["id"] or assessment["document_id"] not in sources:
             raise ValueError("Assessment scope differs from the frozen run/source selection")
         source = sources[assessment["document_id"]]
@@ -191,6 +277,15 @@ def audit_snapshot(snapshot: dict) -> dict:
                 raise ValueError("Evidence offsets do not identify an exact source span")
             if ref.get("quote") is not None and text[start:end] != ref["quote"]:
                 raise ValueError("Recorded quote differs from its exact source span")
+            checked += 1
+    for unresolved in snapshot.get("unresolved_units", []):
+        if unresolved.get("result") is not None or not unresolved.get("missing_criterion_keys") or unresolved.get("document_id") not in sources:
+            raise ValueError("An unresolved unit must retain missing decisions without a fabricated result")
+        blocks = {block["id"]: block["text"] for block in sources[unresolved["document_id"]]["blocks"]}
+        for sentence in unresolved["source_unit"]["sentences"]:
+            text = blocks.get(sentence.get("block_id"))
+            if text is None or text[sentence["start"]:sentence["end"]] != sentence["text"]:
+                raise ValueError("Unresolved source-unit evidence changed")
             checked += 1
     return {"valid": True, "checked_references_and_primary_spans": checked, "offset_unit": "unicode_code_points",
             "notice": "Source anchoring is verified. Semantic correctness remains unmeasured."}
@@ -313,6 +408,8 @@ def render_html(snapshot: dict, title: str, kind: str) -> str:
                   facts([("Lens / criterion", definition.get("lens", item["lens_id"]) + " / " + item["criterion_id"]),
                          ("Criterion kind / result", item["criterion_kind"] + " / " + item["result"]),
                          ("Rubric version", definition.get("version")), ("What the criterion asks", definition.get("criterion", {}).get("description")),
+                         ("Rubric capture origin", definition.get("origin", "not_recorded")),
+                         ("Evidence / interpretation origin", item.get("origin_labels")),
                          ("Speaker / speech role", str(item.get("speaker") or "Unknown") + " / " + str(item.get("speech_role") or "unknown")),
                          ("Proposition", item.get("proposition")), ("Speaker stance", item.get("speaker_stance")),
                          ("Document stance", item.get("document_stance")), ("Hypothetical", str(bool(item.get("hypothetical")))),
@@ -320,6 +417,13 @@ def render_html(snapshot: dict, title: str, kind: str) -> str:
                   f'<section class="model"><p class="label">Recorded model interpretation</p><p>{e(item.get("explanation") or "No detailed rationale was recorded.")}</p><p><strong>Recorded alternative:</strong> {e(item.get("alternative") or "No alternative was recorded.")}</p></section>',
                   f'<section class="comment"><p class="label">AI-authored walkthrough commentary · separate from the model record</p><p>{e(note["what_is_captured"])}</p><p>{e(note["attribution_check"])}</p><p>{e(note["bias_commentary"])}</p><p><strong>Review question:</strong> {e(note["review_question"])}</p></section>',
                   f'<p class="label">Source context window</p><div class="context">{e(context_window)}</div><p class="small">Context may be excerpted for layout; the frozen snapshot retains the complete selected source blocks and exact offsets. This note changes no review status or model outcome.</p></article>']
+    for unit in snapshot.get("unresolved_units", []):
+        doc = documents[unit["document_id"]]
+        parts += [f'<article class="case"><p class="eyebrow">Unresolved source unit · missing work</p><h2>No decision has been invented</h2><p>{e(doc["title"])}</p>',
+                  facts([("Unit ID", unit["unit_id"]), ("Recorded status", unit["status"]), ("Missing criterion keys", "; ".join(unit["missing_criterion_keys"])),
+                         ("Recorded result", "Missing; not a negative"), ("Evidence origin", "Software-rebuilt frozen source unit")]),
+                  '<p class="context">' + e("\n".join(sentence["text"] for sentence in unit["source_unit"]["sentences"])) + '</p>',
+                  '<p class="small">These original source words locate the pending or failed decision. They are not a model-selected rationale or an adjudicated result.</p></article>']
     parts += ['<section class="section"><h2>From a reading to monitoring.</h2><p>Discourse trajectory follows source publication dates. Assessment history follows model runs and review actions. An expanded source collection, corrected attribution or different method can change an assessment without establishing a change in published discourse.</p>',
               inline_diagram('doxa-trajectory'), '<p class="small">Schematic diagram only: no measured trend, increase or improvement is implied. A monitoring claim needs compatible scope, methods, time windows and sufficient assessed denominators.</p></section>',
               '<section class="section"><h2>Sources and rights.</h2>']
@@ -404,6 +508,10 @@ def render_workbook(snapshot: dict, title: str, target: Path) -> None:
                 doc["frozen_blocks_sha256"], {key: value for key, value in doc.items() if key != "blocks"}] for doc in snapshot["documents"]])
         table("Exact evidence", ["Assessment ID", "Document ID", "Block ID", "Start", "End", "Exact quote", "Locator", "Complete frozen assessment"],
               [[item["id"], item["document_id"], item["block_id"], item["start"], item["end"], item["quote"], item.get("locator"), item] for item in snapshot["assessments"]])
+        if snapshot.get("unresolved_units"):
+            table("Unresolved decisions", ["Unit ID", "Document ID", "Status", "Missing criterion keys", "Source unit", "Notice"],
+                  [[unit["unit_id"], unit["document_id"], unit["status"], unit["missing_criterion_keys"], unit["source_unit"],
+                    "Missing decision; no negative result or model rationale invented."] for unit in snapshot["unresolved_units"]])
         table("Method and coverage", ["Record", "Frozen details"], [["Run", snapshot["run"]], ["Criteria", snapshot["criterion_definitions"]],
               ["Run-wide unit states", snapshot["unit_states"]], ["Run-wide projected decision counts", snapshot["decision_counts"]],
               ["Independent human labels", False], ["Interpretation accuracy", None], ["Authorship", AUTHORSHIP]])
@@ -467,7 +575,9 @@ def main() -> int:
     source.add_argument("--snapshot", type=Path, help="Previously frozen guide JSON or JSON.gz")
     source.add_argument("--data-dir", type=Path, help="Local recorded workspace; opened SQLite read-only")
     parser.add_argument("--run-id")
-    parser.add_argument("--assessment-id", action="append", help="Choose a recorded noteworthy assessment; repeat for each case")
+    parser.add_argument("--assessment-id", action="append", help="Choose a recorded assessment; repeat for each case")
+    parser.add_argument("--include-all-outcomes", action="store_true", help="Allow explicit negative and not-applicable assessments without inventing rationales")
+    parser.add_argument("--include-unresolved", action="store_true", help="Freeze up to three unresolved source units separately from model assessments")
     parser.add_argument("--cases", type=int, default=4)
     parser.add_argument("--benchmark-summary", type=Path, help="Recorded run summary, used only for matching attempt/source provenance")
     parser.add_argument("--notes", type=Path, help="AI-authored commentary JSON keyed by selected assessment ID; never changes model records")
@@ -477,12 +587,13 @@ def main() -> int:
     parser.add_argument("--output-prefix", type=Path, required=True)
     parser.add_argument("--website-index", type=Path, help="Update the prepared TACITUS site guide index; does not deploy")
     args = parser.parse_args()
-    if not 1 <= args.cases <= 12 or (args.assessment_id and not 1 <= len(args.assessment_id) <= 12):
-        parser.error("Choose 1–12 illustrative cases")
+    if not 1 <= args.cases <= 50 or (args.assessment_id and not 1 <= len(args.assessment_id) <= 50):
+        parser.error("Choose 1–50 illustrative cases")
     if args.data_dir:
         if not args.run_id:
             parser.error("--data-dir requires --run-id")
-        snapshot = freeze_run(args.data_dir, args.run_id, limit=args.cases, assessment_ids=args.assessment_id, allow_active=args.capture_unfinished)
+        snapshot = freeze_run(args.data_dir, args.run_id, limit=args.cases, assessment_ids=args.assessment_id, allow_active=args.capture_unfinished,
+                              include_all_outcomes=args.include_all_outcomes, include_unresolved=args.include_unresolved)
     else:
         opener = gzip.open if args.snapshot.suffix == ".gz" else open
         with opener(args.snapshot, "rt", encoding="utf-8") as stream:
