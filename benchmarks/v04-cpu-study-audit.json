@@ -1,0 +1,90 @@
+{
+  "schema_version": "0.4",
+  "kind": "offline_retained_input_and_anchor_audit",
+  "summary_sha256": "0b2c34d9c498d559c090a2e283879d621d908792ac1dd298962acd7e3331a493",
+  "model_calls": 0,
+  "profiles": [
+    {
+      "model": "qwen3.5:2b-q4_K_M",
+      "status": "partial",
+      "selected_articles": 6,
+      "whole_articles_complete": 1,
+      "selected_units": 17,
+      "unit_counts": {
+        "accepted": 12,
+        "partial": 5,
+        "failed": 0,
+        "pending": 0,
+        "unprocessed_or_unretained": 0
+      },
+      "retained_assessments": 287,
+      "exact_sentence_references_checked": 2140,
+      "retained_request_messages_and_schemas_reproduced": 56,
+      "source_anchor_integrity_passed": true,
+      "error_codes": {
+        "missing_evidence": 31,
+        "invalid_evidence": 3,
+        "output_limit": 2
+      },
+      "interrupted_inflight_observations": null,
+      "operating_cap_minutes": 30,
+      "elapsed_seconds": 1552.759,
+      "peak_sampled_driver_plus_ollama_rss_bytes": 6529785856,
+      "runtime_gpu_bytes": [
+        0
+      ],
+      "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+      "quantization": "Q4_K_M",
+      "upstream_reference": {
+        "repository": "Qwen/Qwen3.5-2B",
+        "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+        "license": "apache-2.0"
+      }
+    },
+    {
+      "model": "qwen3.5:4b",
+      "status": "partial",
+      "selected_articles": 6,
+      "whole_articles_complete": 1,
+      "selected_units": 17,
+      "unit_counts": {
+        "accepted": 3,
+        "partial": 3,
+        "failed": 0,
+        "pending": 0,
+        "unprocessed_or_unretained": 11
+      },
+      "retained_assessments": 110,
+      "exact_sentence_references_checked": 682,
+      "retained_request_messages_and_schemas_reproduced": 16,
+      "source_anchor_integrity_passed": true,
+      "error_codes": {
+        "missing_evidence": 3,
+        "invalid_evidence": 1
+      },
+      "interrupted_inflight_observations": "not_retained_for_unit_still_in_flight",
+      "operating_cap_minutes": 30,
+      "elapsed_seconds": 1800.185,
+      "peak_sampled_driver_plus_ollama_rss_bytes": 7095410688,
+      "runtime_gpu_bytes": [
+        0
+      ],
+      "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "quantization": "Q4_K_M",
+      "upstream_reference": {
+        "repository": "Qwen/Qwen3.5-4B",
+        "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+        "license": "apache-2.0"
+      }
+    }
+  ],
+  "shared_retained_decisions": 95,
+  "shared_retained_result_differences": 89,
+  "shared_retained_attribution_differences": 21,
+  "interpretation_accuracy": null,
+  "independent_reference_labels": false,
+  "winner": null,
+  "quality_promotion_recommended": false,
+  "notice": "Exact retained source citations and request hashes establish integrity, not semantic correctness. Paired cells exclude missing/invalid outcomes. Shared system load and bounded partial processing prevent causal model-speed or representative accuracy claims. In-flight observations absent at interruption remain unrecorded.",
+  "reproduce": ".venv/bin/python -B scripts/audit_local_study_v04.py"
+}

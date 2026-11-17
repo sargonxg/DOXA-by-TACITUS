@@ -18,7 +18,7 @@ The engine emits typed criterion outcomes, attribution and stance fields, exact 
 | MiniLM-L6-v2 | Optional CPU retrieval | Similarity is not stance or prejudice. |
 | DeBERTa NLI | Optional independent hypothesis scores | Uncalibrated entailment scores, not probabilities of prejudice. |
 
-See [installation, pinned artifacts and actual model benchmarks](models-v3.md), the [new bounded local study receipt](../benchmarks/v04-cpu-study.json), and the [technical annex](v04-technical-annex.md). No model weights are downloaded during normal installation or software tests. DOXA has not fine-tuned these models.
+See [installation, pinned artifacts and actual model benchmarks](models-v3.md), the [bounded local study and limitations](local-study-v04.md), and the [technical annex](v04-technical-annex.md). No model weights are downloaded during normal installation or software tests. DOXA has not fine-tuned these models.
 
 ## Evaluation status
 

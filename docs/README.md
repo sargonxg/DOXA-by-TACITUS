@@ -17,7 +17,7 @@ DOXA is an open-source evidence workbench packaged as **Bias Detection as a Serv
 | Task | Documentation |
 | --- | --- |
 | Install, persist, back up and deploy | [Deployment](deployment.md) · [architecture](architecture.md) |
-| Choose local or cloud models | [Model profiles](models-v3.md) · [model/system card](model-card.md) |
+| Choose local or cloud models | [Model profiles](models-v3.md) · [actual bounded CPU study](local-study-v04.md) · [model/system card](model-card.md) |
 | Understand available data and rights | [Dataset card](dataset-card.md) · [news collection](news-corpus.md) · [institutional collection](corpus.md) · [licences](licenses.md) |
 | Export reproducible evidence | [Casebooks and persistent jobs](report-jobs.md) · [recorded export guide](v3-recorded-exports.md) · [v0.4 verification](verification-v04.md) |
 | Review, compare and learn | [Service toolkit](v3-service-toolkit.md) · [independent model review](v3-independent-review.md) · [staged human evaluation](evaluation-v04.md) |

@@ -196,6 +196,8 @@ A full 5,000-source CPU index can take many minutes. The [actual canonical-cohor
 
 The separate [Qwen CPU generation trial](benchmarks/v3-local-news-summary.json) selected the same 20 whole articles but stopped after **2 fully assessed articles and 8 of 115 accepted units**. Its sampled combined runner/process RSS reached **9.238 GiB**. Retrieval, hypothesis scoring and contextual generation have different workloads; a completed index or NLI pass does not imply that a laptop can quickly generate full contextual assessments for 5,000 articles.
 
+The new [bounded 2B/4B CPU study](docs/local-study-v04.md) used the same six short whole articles and a 30-minute cap per profile. Both completed one article; 2B retained 12/17 complete units and 4B 3/17, with partial peer decisions preserved. Their 95 jointly retained decisions differed in 89 outcomes, mostly non-match versus non-applicability. These are feasibility and disagreement observations, not accuracy or a clean speed comparison; no model is promoted. [Frozen summary](benchmarks/v04-cpu-study.json) · [offline request/anchor audit](benchmarks/v04-cpu-study-audit.json).
+
 ![Reviewed examples require a frozen candidate, evaluation and explicit activation before affecting future runs.](docs/images/doxa-reviewed-learning.svg)
 
 Held-out/story groups remain separate from approved example memory. A passing software check or model-agreement result does not become an independent reference label. [The service-toolkit guide](docs/v3-service-toolkit.md) explains reviewed learning, attribution, source history and rollback.

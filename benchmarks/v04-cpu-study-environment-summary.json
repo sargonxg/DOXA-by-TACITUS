@@ -1,0 +1,103 @@
+{
+  "schema_version": "0.4",
+  "frozen_at": "2026-11-17T17:13:08.434603+00:00",
+  "all_gzip_files_closed_and_crc_valid": true,
+  "model_calls": 0,
+  "files": [
+    {
+      "path": "benchmarks/v04-cpu-2b-results.json.gz",
+      "sha256": "837768208db96d55472e124209ae969270825742d501a8f5babb4ec850c02054",
+      "compressed_bytes": 111784,
+      "uncompressed_bytes": 3026815,
+      "gzip_crc_checked": true
+    },
+    {
+      "path": "benchmarks/v04-cpu-4b-results.json.gz",
+      "sha256": "5345bf9dc948da8749f577cd6589b1d70ef3e4a14b579d2b9b30ad2fcecf1500",
+      "compressed_bytes": 43540,
+      "uncompressed_bytes": 1033327,
+      "gzip_crc_checked": true
+    },
+    {
+      "path": "benchmarks/v04-cpu-study-at-cap.json.gz",
+      "sha256": "09a6a0e6ea89dcb4685d83aa54de7a1c1c786a5067aa940e2ec5b73ad757ab5c",
+      "compressed_bytes": 54053,
+      "uncompressed_bytes": 1530327,
+      "gzip_crc_checked": true
+    },
+    {
+      "path": "benchmarks/v04-cpu-study-environment-4b.jsonl.gz",
+      "sha256": "b5d1c28761a3783ac659c8bfff615fd9ddb593719477216191a5d230f4d58491",
+      "compressed_bytes": 31854,
+      "uncompressed_bytes": 156588,
+      "gzip_crc_checked": true
+    },
+    {
+      "path": "benchmarks/v04-cpu-study-environment.jsonl.gz",
+      "sha256": "da549f0dd8c1e6d93c802ed37a548d56234f1651b6291003251ab13c97f08e1b",
+      "compressed_bytes": 47412,
+      "uncompressed_bytes": 277061,
+      "gzip_crc_checked": true
+    }
+  ],
+  "environment": [
+    {
+      "path": "benchmarks/v04-cpu-study-environment-4b.jsonl.gz",
+      "metadata": {
+        "schema_version": "0.4",
+        "kind": "shared_environment_observations",
+        "sampling_started_at": 1794933730.3280551,
+        "sampling_interval_seconds": 5,
+        "notice": "4B phase shares CPU/cgroup with development tests. Not a clean causal model-speed comparison."
+      },
+      "samples": 360,
+      "first_observed_at": 1794933730.329144,
+      "last_observed_at": 1794935532.1078382,
+      "load_average_1m_min": 3.05126953125,
+      "load_average_1m_max": 6.7587890625,
+      "shared_cgroup_memory_current_max_bytes": 16867553280,
+      "cpu_max": [
+        "400000 100000"
+      ],
+      "memory_max": [
+        "17179869184"
+      ],
+      "cpuset": [
+        "0-4"
+      ],
+      "shared_cgroup_cpu_usage_delta_usec": 7182498138,
+      "shared_cgroup_nr_throttled_delta": 17767
+    },
+    {
+      "path": "benchmarks/v04-cpu-study-environment.jsonl.gz",
+      "metadata": {
+        "schema_version": "0.4",
+        "kind": "shared_environment_observations",
+        "sampling_started_at": 1794932894.415675,
+        "sampling_interval_seconds": 5,
+        "notice": "Sampling began after the study started; prior load was not recorded. Shared cgroup/system load and simultaneous development work prevent a clean causal model-speed comparison."
+      },
+      "samples": 522,
+      "first_observed_at": 1794932894.4216218,
+      "last_observed_at": 1794935529.1325307,
+      "load_average_1m_min": 3.05126953125,
+      "load_average_1m_max": 6.7587890625,
+      "shared_cgroup_memory_current_max_bytes": 16890621952,
+      "cpu_max": [
+        "400000 100000"
+      ],
+      "memory_max": [
+        "17179869184"
+      ],
+      "cpuset": [
+        "0-4"
+      ],
+      "shared_cgroup_cpu_usage_delta_usec": 10519773962,
+      "shared_cgroup_nr_throttled_delta": 25290
+    }
+  ],
+  "cpu_model_observed_at_finalization": "AMD EPYC 9V74 80-Core Processor",
+  "machine": "x86_64",
+  "notice": "Shared cgroup CPU/memory/load include other development and report workloads. Initial2B load before sampling is not recorded. These are feasibility observations, not a clean causal model-speed comparison.",
+  "validation_command": "gzip -t benchmarks/v04-cpu*.gz"
+}

@@ -44,6 +44,10 @@ python scripts/package_v3.py --data-dir data/YOUR_RUN \
 - `load-test.json`: 1,000 **synthetic** document records / 10,000 synthetic page records, pagination, leases, recovery and replay; no model/OCR quality claim.
 - `large-upload.json`: actual 500MiB transport/restart/deduplication using a PDF with inert padding. It does not measure reading 500MiB of meaningful prose.
 
+## v0.4 bounded local generation
+
+The [readable study](../docs/local-study-v04.md), [frozen summary](v04-cpu-study.json) and [offline audit](v04-cpu-study-audit.json) retain two Q4 profiles over six short whole articles / 17 units. Both completed one article; 2B completed 12 units and 4B three within the declared operating envelope. These are processing outcomes, not measured interpretation accuracy. Of 95 jointly retained decisions, 89 outcome categories differed; pairing is conditioned on retained results and the stopping point. No model is promoted. The audit reproduced 72 retained request message/schema hashes and checked 2,822 exact references without inference.
+
 ## Historical v1 artifacts
 
 The earlier `cloud-*-summary.json`, `local-*-summary.json` and compressed JSON snapshots describe the original pipeline. The v1 cloud run retained 1,071 observations with incomplete block coverage. Its local benchmark sampled one passage per source; **it is not the v3 whole-article local pilot**. The lexical run records exact term matches and performs no semantic interpretation. Legacy observations remain unclassified under the v3 contract.
