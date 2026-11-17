@@ -938,6 +938,14 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     async def create_run(project_id: str, body: RunInput, *, check_health: bool = True) -> dict:
         require_project(project_id)
         config = body.model_dump(exclude_none=True)
+        if body.provider == "cloudflare" and body.model in {"@cf/openai/gpt-oss-120b", "@cf/openai/gpt-oss-20b"}:
+            # Apply the verified managed profile only to new runs. Explicit
+            # operator choices, historical runs and compatible endpoints retain
+            # their requested behavior.
+            if "reasoning_effort" not in body.model_fields_set:
+                config["reasoning_effort"] = "low"
+            if "reasoning_token_allowance" not in body.model_fields_set:
+                config["reasoning_token_allowance"] = 2048
         if body.provider == "ollama" and not db().remote:
             try:
                 limits = task_execution_limits(body.provider)
