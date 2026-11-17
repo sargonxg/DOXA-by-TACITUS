@@ -96,5 +96,37 @@
     "timeline_data_table": true,
     "named_dialog_escape_focus_return": true,
     "page_errors": []
+  },
+  "finalized_at": "2026-11-17T18:09:16.093864+00:00",
+  "implementation_ci": {
+    "status": "passed",
+    "source_commit": "d4fd1ef7ac9fe5ea33ac8c03f446539322b5ea35",
+    "url": "https://github.com/sargonxg/DOXA-by-TACITUS/actions/runs/44141299182",
+    "jobs": 9,
+    "python_versions": [
+      "3.11",
+      "3.12",
+      "3.13"
+    ],
+    "worker_runtime_tests": 37,
+    "python_each_version": {
+      "passed": 680,
+      "skipped": 1,
+      "warnings": 2,
+      "subtests_passed": 6
+    }
+  },
+  "full_corpus_ci": {
+    "status": "passed",
+    "url": "https://github.com/sargonxg/DOXA-by-TACITUS/actions/runs/44141301077",
+    "source_commit": "d4fd1ef7ac9fe5ea33ac8c03f446539322b5ea35",
+    "canonical_sources": 5000,
+    "assessments": 204342,
+    "source_units": 10759,
+    "exact_references": 3860336,
+    "source_model_fingerprint_unchanged_after_export": true,
+    "new_model_requests": 0,
+    "replay_receipt_sha256": "50dfa602e90befa4855160a52bb5e83100fd07f2884d18bc1842dc69439e901e",
+    "report_receipt_sha256": "4af70d3ce501374368c1a7294231a668e71426c01fb3a80cc0e4dec3c54b719a"
   }
 }

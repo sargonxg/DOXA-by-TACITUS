@@ -1,0 +1,138 @@
+{
+  "schema_version": "doxa-durable-report-proof-1",
+  "generated_at": "2026-11-17T17:55:35.217040+00:00",
+  "status": "pass",
+  "scope": "isolated native Store; not a production D1 capacity test",
+  "format": "xlsx",
+  "interpretation_accuracy": null,
+  "new_inference_requests": 0,
+  "fresh_model_loads": 0,
+  "query_id": "ed3fe84f85a74f36bc31a275155f6620",
+  "scope_hash": "58404fe06c5b99d52f699a31ce54fdbfa511f284b3b6217f3155728eb6efc03a",
+  "snapshot_version": "0",
+  "job_id": "7b34e938aac64332b9e030403b317f71",
+  "counts": {
+    "documents": 5000,
+    "assessments": 204342,
+    "complete_documents": 4927
+  },
+  "typed_counts": [
+    {
+      "criterion_kind": "boundary",
+      "result": "does_not_meet",
+      "count": 11501
+    },
+    {
+      "criterion_kind": "boundary",
+      "result": "meets_criterion",
+      "count": 86
+    },
+    {
+      "criterion_kind": "boundary",
+      "result": "not_applicable",
+      "count": 9931
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "does_not_meet",
+      "count": 4647
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "meets_criterion",
+      "count": 35491
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "not_applicable",
+      "count": 2710
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "uncertain",
+      "count": 111
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "does_not_meet",
+      "count": 78380
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "meets_criterion",
+      "count": 356
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "not_applicable",
+      "count": 61080
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "uncertain",
+      "count": 49
+    }
+  ],
+  "assessment_ids_sha256": "89838ce4df8669ab43f587008311ba17686d166504c3a0102347f3ab7db74123",
+  "source_ids_sha256": "c116a2494e2561c6a019fc7a5670b96a5c6524b2a6b3ec2fc88c2d3b81345fec",
+  "snapshot": {
+    "uncompressed_bytes": 1747127538,
+    "uncompressed_sha256": "8da7040fe62777ae22564f53907671364110d062cad817bb1d309e2f2a1945b7",
+    "documents": 5000,
+    "assessments": 204342
+  },
+  "workbook": {
+    "member_count": 21,
+    "max_member_uncompressed_bytes": 2046059167,
+    "total_uncompressed_bytes": 2080172860,
+    "zip64_member_count": 1,
+    "Documents": {
+      "logical_rows": 5000,
+      "physical_rows": 5000,
+      "ordered_ids_sha256": "c116a2494e2561c6a019fc7a5670b96a5c6524b2a6b3ec2fc88c2d3b81345fec"
+    },
+    "Findings": {
+      "logical_rows": 204342,
+      "physical_rows": 204342,
+      "ordered_ids_sha256": "d950eb0c16a24962780c98ff69916d6409836e5dd280de1c8a691ed90785ac0b"
+    }
+  },
+  "durable_work_calls": 2,
+  "artifact_files": [
+    {
+      "format": "inputs",
+      "filename": "frozen-inputs.zip",
+      "bytes": 512877867,
+      "sha256": "bbfad98011b88dd382eef4ddc6b8c5f7e5f39ed3d53d786aeb2b6197299b59aa"
+    },
+    {
+      "format": "manifest",
+      "filename": "manifest.json",
+      "bytes": 3264,
+      "sha256": "a611167ccdddc0f6d810585bfa042df1817baac0f185f2f8b612a5388cc567f1"
+    },
+    {
+      "format": "snapshot",
+      "filename": "snapshot.json.gz",
+      "bytes": 80011550,
+      "sha256": "ca60d4ce709d09e1fbd88c5b340f0cb507e499f3737382b59fac6cfa40143642"
+    },
+    {
+      "format": "xlsx",
+      "filename": "report.xlsx",
+      "bytes": 101686507,
+      "sha256": "eb2979b37d2bfb88f5275bd5de29f352addf592b63e72ae07617ad3df2e4db2c"
+    }
+  ],
+  "no_fresh_inference_path": true,
+  "bounded_capture_parts": 10273,
+  "temporary_report_inputs_and_artifacts_cleaned": true,
+  "elapsed_seconds": 534.31226,
+  "process_lifetime_peak_rss_bytes": 282112000,
+  "child_lifetime_peak_rss_bytes": 282112000,
+  "storage": {
+    "minimum_free_bytes": 83611639808,
+    "max_owned_report_bytes": 6336634404
+  },
+  "storage_measurement": "Distinct-inode logical file sizes; native hardlinks counted once. Filesystem free space sampled independently."
+}

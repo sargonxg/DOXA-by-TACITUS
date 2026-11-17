@@ -44,6 +44,8 @@ Ten implemented improvements make the research workflow easier to inspect:
 
 ![The processing flow preserves source, method, validation, review and publication lineage.](docs/images/v04-processing-flow.svg)
 
+The [complete v0.4 verification](docs/verification-v04.md) now proves a fresh 5,000-source replay and an actual background XLSX containing every one of the 204,342 retained assessments. All 3,860,336 source references passed, all four outcomes remained present, and the saved data stayed unchanged after reporting. [Replay receipt](benchmarks/v04-evidence-replay.json) · [full-report receipt](benchmarks/v04-report-job-5000.json). These are software and provenance checks; independent interpretation accuracy remains pending.
+
 The existing v0.3 source corpus, recorded results and published reports remain the baseline. v0.4 adds the workbench and evidence record; it does not silently rerun the corpus or turn model agreement into validated accuracy. See the [documentation map](docs/README.md), [casebook and report-job guide](docs/report-jobs.md), [release notes](CHANGELOG.md) and [verification record](docs/verification-v04.md).
 
 ## Open a real, commented report

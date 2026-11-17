@@ -2,6 +2,23 @@
 
 The release preserves the v0.3 source/result baseline and adds the evidence workbench. Checks below distinguish application behavior, source fidelity, processing coverage and interpretation quality.
 
+The final implementation CI passed all nine jobs: **680 Python tests plus six subtests on each of Python 3.11, 3.12 and 3.13** (one optional CPU-extra test skipped), six browser scripts, installed-wheel extraction/report generation, **37 Workers emulator tests**, frontend build, static checks and Docker health.
+
+## Actual complete-cohort result
+
+The [clean-runner evidence gate](https://github.com/sargonxg/DOXA-by-TACITUS/actions/runs/44141301077) passed on November 17, 2026. This was a fresh native SQLite workspace on a GitHub-hosted Ubuntu runner, with model and network calls blocked during verification. It is not a production Cloudflare capacity test.
+
+- Restored **5,000 sources**, **204,342 assessments** and **10,759 source units**; checked **3,860,336 exact source references** and all retained payload fields.
+- Repeated the restore with the same logical/object fingerprint; generated the complete persistent XLSX report and independently checked every expected source/assessment identity, all four outcome types, workbook XML rows, ZIP CRCs and absence of formulas/external connections.
+- Confirmed that report generation and its cleanup left the complete restored source/model state unchanged. Made **zero new inference requests or budget debits**.
+- Preserved the original partial analysis: **4,927 complete documents** and **79 unresolved decisions**. None became negative results.
+
+The combined proof took **847.46 seconds**. The report proof, including frozen-input capture, rendering, full-file checks and cleanup, took **534.31 seconds**. Its generated XLSX was **101,686,507 bytes**, with **5,000 document rows and 204,342 finding rows**. The largest worksheet XML member was **2,046,059,167 bytes**; one member used ZIP64 because Python's conservative limit includes a growth margin. No evidence fields were dropped to reduce the file.
+
+The recorded parent and child lifetime peak RSS values were **269.04 MiB each**; these are separate peaks, not a simultaneous combined-memory measurement. Report-owned distinct-inode file lengths peaked at **5.90 GiB**, separately from the restored workspace. Component maxima are sampled and must not be added as an exact allocated-disk peak. This proof includes more work and enriched exact references than the earlier synchronous export, so their timings are not a controlled speed comparison.
+
+Exact CI-generated receipts, recovered without changing their bytes: [complete replay](../benchmarks/v04-evidence-replay.json) · [persistent XLSX proof](../benchmarks/v04-report-job-5000.json). The [software verification record](../benchmarks/v04-software-verification.json) covers the smaller browser, API, installation and Worker checks. Earlier failed disk/ZIP64 diagnostics remain in the benchmark directory; they are not reported as successful exports.
+
 ## Reproducible checks
 
 | Layer | Command / artifact | What it establishes |
@@ -16,7 +33,7 @@ The release preserves the v0.3 source/result baseline and adds the evidence work
 | Published real-source cases | `python -m pytest -q tests/test_v04_publications.py` | Preserved original payloads, exact anchors, explicit origins/limits and publication manifests. |
 | Complete recorded corpus | `python scripts/verify_evidence_release.py --execute --expected-package-sha256 783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827` | Fresh isolated 5,000-source import/restore, all retained references, idempotent replay, unchanged logical state and zero provider/model/network calls. Uses temporary disk and removes only its scratch workspace. |
 
-The full replay is deliberately opt-in locally and runs as a separate release workflow. Apply the `verify-evidence` label to a pull request to request that gate before merging. The combined full replay/XLSX proof requires at least 10 GiB of free temporary disk at startup; general application/report requirements depend on the selection. Its default receipt is `benchmarks/v04-evidence-replay.json`; the immutable older [v0.3 restore proof](../benchmarks/v3-news-restore-verification.json) remains available. The package SHA gate prevents accidentally substituting a different run.
+The full replay is deliberately opt-in locally and runs as a separate release workflow. Apply the `verify-evidence` label to a pull request to request that gate before merging. The combined full replay/XLSX proof requires at least 10 GiB of free temporary disk at startup; general application/report requirements depend on the selection. Its default receipt is [benchmarks/v04-evidence-replay.json](../benchmarks/v04-evidence-replay.json); the immutable older [v0.3 restore proof](../benchmarks/v3-news-restore-verification.json) remains available. The package SHA gate prevents accidentally substituting a different run.
 
 ## Data and methodological checks
 

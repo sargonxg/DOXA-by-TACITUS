@@ -101,12 +101,12 @@ settled unit result retained before the cutoff, not a negative interpretation.
 
 | Licensed source | Words | 2B | 4B |
 |---|---:|---:|---:|
-| gv-740730 — Controversy over an explosion in the Caspian sea | 255 | 1/2, partial | 2/2, complete |
-| gv-706526 — COVID-19 in the Caribbean: ‘Looking out, not going out’ | 313 | 1/2, partial | 0/2, partial peers retained |
-| gv-755578 — Nigerian citizen is prevented from entering Mozambique, reigniting debate on mobility in Africa | 326 | 1/2, partial | 1/2, partial |
-| gv-770760 — LIVE on September 22: Techno-authoritarianism in India | 508 | 2/3, partial | —, interrupted in flight |
-| gv-791816 — China rolls out new patriotic education law to consolidate its single-party regime | 640 | 4/4, complete | — |
-| gv-814580 — New Caledonia cries, ‘Everything is negotiable, except independence’ | 693 | 3/4, partial | — |
+| [gv-740730](../corpus/news/metadata/gv-740730.json) — Controversy over an explosion in the Caspian sea | 255 | 1/2, partial | 2/2, complete |
+| [gv-706526](../corpus/news/metadata/gv-706526.json) — COVID-19 in the Caribbean: ‘Looking out, not going out’ | 313 | 1/2, partial | 0/2, partial peers retained |
+| [gv-755578](../corpus/news/metadata/gv-755578.json) — Nigerian citizen is prevented from entering Mozambique, reigniting debate on mobility in Africa | 326 | 1/2, partial | 1/2, partial |
+| [gv-770760](../corpus/news/metadata/gv-770760.json) — LIVE on September 22: Techno-authoritarianism in India | 508 | 2/3, partial | —, interrupted in flight |
+| [gv-791816](../corpus/news/metadata/gv-791816.json) — China rolls out new patriotic education law to consolidate its single-party regime | 640 | 4/4, complete | — |
+| [gv-814580](../corpus/news/metadata/gv-814580.json) — New Caledonia cries, ‘Everything is negotiable, except independence’ | 693 | 3/4, partial | — |
 
 The frozen results retain source IDs, content hashes, exact anchors, errors,
 model profiles and visible attempt metadata. They contain no private
