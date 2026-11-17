@@ -192,8 +192,27 @@ def main():
         assert created.value.status == 202, created.value.text()
         job = created.value.json()
         page.get_by_role("button", name="Cancel publication", exact=True).wait_for()
-        page.get_by_role("button", name="Cancel publication", exact=True).click()
-        page.get_by_role("button", name="Restart publication", exact=True).click()
+        with page.expect_response(
+            lambda response: response.url.endswith(f"/api/v3/report-jobs/{job['id']}/cancel")
+            and response.request.method == "POST"
+        ) as cancelled:
+            page.get_by_role("button", name="Cancel publication", exact=True).click()
+        assert cancelled.value.status == 200, cancelled.value.text()
+        cancelled_job = cancelled.value.json()
+        assert cancelled_job["id"] == job["id"] and cancelled_job["status"] == "cancelled"
+        assert cancelled_job["cancel_requested"] is True
+        # Clicking the React action does not await its asynchronous HTTP request.
+        # The offline worker must start only after this same durable job's
+        # restart is committed, rather than racing its previous cancelled state.
+        with page.expect_response(
+            lambda response: response.url.endswith(f"/api/v3/report-jobs/{job['id']}/restart")
+            and response.request.method == "POST"
+        ) as restarted:
+            page.get_by_role("button", name="Restart publication", exact=True).click()
+        assert restarted.value.status == 200, restarted.value.text()
+        restarted_job = restarted.value.json()
+        assert restarted_job["id"] == job["id"] and restarted_job["status"] == "queued"
+        assert restarted_job["cancel_requested"] is False
         completed = finish_report(directory, job["id"])
         assert completed["status"] == "completed"
         link = page.get_by_role("link", name="Download PDF", exact=False)
