@@ -36,6 +36,8 @@ The highlighted source is [Dahlia Kholaif's Global Voices report](https://global
 
 **[Company PDF](examples/v05-pilot-demo-company.pdf)** · **[Public PDF](examples/v05-pilot-demo-public.pdf)** · **[Personal PDF](examples/v05-pilot-demo-personal.pdf)**. These new examples use published synthetic TXT inputs, no inference and no human reference labels. [Inspect all formats, inputs and manifests](docs/pilot-reports-v05.md). The real-source model reports below remain separate recorded demonstrations.
 
+The [v0.5 clean-runner qualification](docs/verification-v05.md#completed-5000-source-release-qualification) passed: **5,000 restored sources, 204,342 retained assessments and 3,860,336 checked references**, plus a complete XLSX with unchanged source/model state. [Replay receipt](benchmarks/v05-evidence-replay.json) · [Report receipt](benchmarks/v05-report-job-5000.json). It requested no new inference; interpretation accuracy remains unmeasured.
+
 Native workspaces upgrade to schema 5 with a checked pre-upgrade database backup; older applications must not write the upgraded workspace. Stop the server and back up database **and objects** before upgrading. Cloudflare retains schema 4 and its shared private-workspace profile. OAuth connectors, subscription billing, shared SaaS tenancy and independent interpretation validation remain future work in the commercial roadmap.
 
 ## v0.4 · the evidence workbench

@@ -2,6 +2,12 @@
 
 These artifacts distinguish source integrity, software behavior, model coverage and interpretation quality. **No independent human gold labels, accuracy or F1 scores are supplied.** Read the `status`, `progress`, `unit_states`, model profile and source selection before comparing counts.
 
+## v0.5 release qualification
+
+The [completed clean-runner workflow](https://github.com/sargonxg/DOXA-by-TACITUS/actions/runs/44168398715) restored all 5,000 sources and 204,342 retained assessments, checked 3,860,336 exact references, replayed idempotently and generated a complete persistent XLSX. Whole logical-table/object fingerprints and post-report source/model state remained unchanged. Zero new provider requests, model loads, budget reservations or spend occurred.
+
+[Exact replay receipt](v05-evidence-replay.json) · [exact report receipt](v05-report-job-5000.json) · [tested revision, measurements and limits](../docs/verification-v05.md#completed-5000-source-release-qualification). The combined proof took 554.19 seconds, including 332.16 seconds for report capture/render/verification/cleanup. The underlying inference remains partial with 79 missing decisions and no independent human reference labels; this is a software/provenance qualification.
+
 ## Contextual v3 results
 
 | Artifact | Actual scope and result |
