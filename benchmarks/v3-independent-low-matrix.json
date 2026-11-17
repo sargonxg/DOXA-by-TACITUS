@@ -1,0 +1,611 @@
+{
+  "schema_version": "doxa-independent-model-matrix-1",
+  "generated_at": "2026-11-17T03:15:24.286315+00:00",
+  "source_comparison": {
+    "path": "benchmarks/v3-independent-low-verification.json",
+    "sha256": "8fa307c3a94d0f01eaf2b61dcf75d838fdae4009b3a76c81e427180688f61dd0"
+  },
+  "portable_archives": {
+    "primary": {
+      "manifest": "benchmarks/v3-institutions/showcase.json",
+      "sha256": "c5626fac4374567cab54d99a835e9f92ee35ccf5a662130572bda6846500f232"
+    },
+    "verifier": {
+      "manifest": "benchmarks/v3-independent-low-verification/showcase.json",
+      "sha256": "004d54772ecfe3f84ad3d1429fa4b9a68f3c990ea348da35eadd154f42c0b0cc"
+    }
+  },
+  "models": {
+    "primary": {
+      "run_id": "074539f031e64dc28f03384481563a85",
+      "status": "partial",
+      "provider": "cloudflare",
+      "model": "@cf/google/gemma-4-26b-a4b-it",
+      "config_sha256": "9dbf9d64ff4ee607746f92c0103299846b9479090b0baa8f4ec3ea57b19138bc",
+      "analysis_config_hash": "e0fa88c7717a4cb2bb931299",
+      "model_revision": "unresolved",
+      "prompt_version": "contextual-decisions-3.2.1",
+      "unit_builder_version": "source-units-3.1",
+      "criterion_registry_version": "3.0.0"
+    },
+    "verifier": {
+      "run_id": "ad5046e9849d4392a8160d55de9beacd",
+      "status": "completed",
+      "provider": "cloudflare",
+      "model": "@cf/openai/gpt-oss-120b",
+      "config_sha256": "4945a9b6e1a11941faf59a9b5da918eb024403a6b7cfa2947c4e7d47166d25b4",
+      "analysis_config_hash": "97fa02bb8b1faadcf1b567d4",
+      "model_revision": "unresolved",
+      "prompt_version": "contextual-decisions-3.2.1",
+      "unit_builder_version": "source-units-3.1",
+      "criterion_registry_version": "3.0.0"
+    }
+  },
+  "selection": {
+    "selection_id": "f1ea1f2f65ce0d03df1074e3bc93e545e8ee476ea09fab54f976faf053248807",
+    "counts": {
+      "primary_units_total": 616,
+      "primary_units_accepted": 613,
+      "primary_units_incomplete": 3,
+      "indicator_flagged_units": 50,
+      "indicator_meets_units": 45,
+      "indicator_uncertain_units": 6,
+      "other_accepted_units": 564,
+      "sampled_other_units": 29,
+      "other_documents_eligible": 20,
+      "other_documents_sampled": 13,
+      "selected_units": 79,
+      "documents_selected": 14,
+      "other_sample_fraction_actual": 0.051418439716312055
+    },
+    "seed": 20261116,
+    "other_fraction_requested": 0.05,
+    "scope_notice": "79 selected institutional source units in 14 of 20 real public documents. All 50 primary indicator-flagged units plus 29 document-stratified other accepted units. This is not a representative corpus evaluation or a human-labelled test set."
+  },
+  "coverage": {
+    "primary_total_units": 616,
+    "primary_accepted_units": 613,
+    "primary_status": "partial",
+    "selected_primary_accepted_units": 78,
+    "selected_primary_partial_units": 1,
+    "verifier_selected_units": 79,
+    "verifier_accepted_units": 79,
+    "verifier_raw_decisions": 1501,
+    "paired_decisions": 1500,
+    "unpaired_verifier_decisions": [
+      {
+        "assessment_id": "1ee0c6eea5a66a638d62e5a13ab554be",
+        "document_id": "ce6820253dd6abda147083371c76ee13",
+        "unit_id": "u_581dfa046319abeee367ee1c",
+        "lens_id": "anti-muslim-hostility",
+        "criterion_id": "discrimination_claim",
+        "result": "does_not_meet",
+        "source_title": "Section 12: Religious Discrimination",
+        "source_id": "us05",
+        "reason": "No primary raw decision for this unit-criterion key; excluded from paired matrices, never treated as a negative primary label."
+      }
+    ],
+    "comparison_complete_on_selected_units": false,
+    "comparable_settings": false,
+    "comparability_notices": [
+      "Some verifier criterion decisions have no primary pair"
+    ]
+  },
+  "outcome_order": [
+    "meets_criterion",
+    "does_not_meet",
+    "uncertain",
+    "not_applicable"
+  ],
+  "matrix_orientation": {
+    "rows": "primary Gemma raw result",
+    "columns": "verifier GPT-oss raw result"
+  },
+  "all_criterion_kinds": {
+    "counts": [
+      [
+        250,
+        55,
+        17,
+        16
+      ],
+      [
+        46,
+        179,
+        24,
+        369
+      ],
+      [
+        4,
+        3,
+        0,
+        5
+      ],
+      [
+        10,
+        90,
+        3,
+        429
+      ]
+    ],
+    "row_totals": [
+      338,
+      618,
+      12,
+      532
+    ],
+    "column_totals": [
+      310,
+      327,
+      44,
+      819
+    ],
+    "paired_assessments": 1500,
+    "exact_result_agreements": 858,
+    "result_mismatches": 642,
+    "attribution_mismatches": 289
+  },
+  "by_criterion_kind": {
+    "indicator": {
+      "counts": [
+        [
+          38,
+          31,
+          10,
+          12
+        ],
+        [
+          24,
+          174,
+          22,
+          307
+        ],
+        [
+          0,
+          2,
+          0,
+          5
+        ],
+        [
+          1,
+          74,
+          3,
+          323
+        ]
+      ],
+      "row_totals": [
+        91,
+        527,
+        7,
+        401
+      ],
+      "column_totals": [
+        63,
+        281,
+        35,
+        647
+      ],
+      "paired_assessments": 1026,
+      "exact_result_agreements": 535,
+      "result_mismatches": 491,
+      "attribution_mismatches": 168
+    },
+    "boundary": {
+      "counts": [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          60
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          92
+        ]
+      ],
+      "row_totals": [
+        2,
+        62,
+        0,
+        94
+      ],
+      "column_totals": [
+        1,
+        5,
+        0,
+        152
+      ],
+      "paired_assessments": 158,
+      "exact_result_agreements": 95,
+      "result_mismatches": 63,
+      "attribution_mismatches": 2
+    },
+    "descriptive": {
+      "counts": [
+        [
+          211,
+          23,
+          7,
+          4
+        ],
+        [
+          22,
+          3,
+          2,
+          2
+        ],
+        [
+          4,
+          1,
+          0,
+          0
+        ],
+        [
+          9,
+          14,
+          0,
+          14
+        ]
+      ],
+      "row_totals": [
+        245,
+        29,
+        5,
+        37
+      ],
+      "column_totals": [
+        246,
+        41,
+        9,
+        20
+      ],
+      "paired_assessments": 316,
+      "exact_result_agreements": 228,
+      "result_mismatches": 88,
+      "attribution_mismatches": 119
+    }
+  },
+  "nonpositive_category_changes": {
+    "does_not_meet_to_not_applicable": 369,
+    "not_applicable_to_does_not_meet": 90,
+    "notice": "Neither category is a positive indicator flag. Keep applicability distinctions visible; do not call every literal category mismatch a flag reversal."
+  },
+  "indicator_positive_transitions": {
+    "definition": "Raw result is meets_criterion AND frozen criterion_kind is indicator; not author endorsement.",
+    "paired_indicator_decisions": 1026,
+    "primary_positive": 91,
+    "verifier_positive": 63,
+    "both_positive": 38,
+    "primary_only_positive": 53,
+    "verifier_only_positive": 25,
+    "positive_to_does_not_meet": 31,
+    "does_not_meet_to_positive": 24,
+    "positive_to_not_applicable": 12,
+    "not_applicable_to_positive": 1,
+    "positive_to_uncertain": 10,
+    "uncertain_to_positive": 0,
+    "positive_membership_changes": 78,
+    "determinate_positive_negative_reversals": 55
+  },
+  "attribution": {
+    "order": [
+      "author",
+      "quoted_speaker",
+      "reported_speaker",
+      "unknown"
+    ],
+    "counts": [
+      [
+        151,
+        1,
+        2,
+        59
+      ],
+      [
+        5,
+        4,
+        1,
+        7
+      ],
+      [
+        40,
+        20,
+        42,
+        70
+      ],
+      [
+        51,
+        15,
+        18,
+        1014
+      ]
+    ],
+    "all_paired_mismatches": 289,
+    "indicator_mismatches": 168,
+    "both_positive_indicator_pairs": 38,
+    "both_positive_indicator_attribution_mismatches": 20,
+    "conservative_author_endorsement": {
+      "definition": "indicator + meets_criterion + attribution author + speaker_stance supports + not hypothetical",
+      "unit": "paired unit-criterion decisions, not unique documents or authors",
+      "primary": 3,
+      "verifier": 2,
+      "both": 0,
+      "primary_only": 3,
+      "verifier_only": 2
+    }
+  },
+  "raw_field_mismatches": {
+    "paired_assessments": 1500,
+    "paired_units": 79,
+    "result_mismatches": 642,
+    "attribution_mismatches": 289,
+    "speaker_stance_mismatches": 348,
+    "document_stance_mismatches": 321,
+    "speech_role_mismatches": 289,
+    "hypothetical_mismatches": 13,
+    "any_mismatches": 873,
+    "primary_assessments_in_verifier_ledger": 1500,
+    "unpaired_primary_assessments_in_verifier_ledger": 0
+  },
+  "recorded_verifier_usage": {
+    "usage": {
+      "input_tokens": 991254,
+      "output_tokens": 243735,
+      "cost_usd": 0.5297401499999996,
+      "requests": 277,
+      "estimated": true
+    },
+    "application_accounted_usd": 0.5297401499999997,
+    "active_session_seconds": 1187.505434261002,
+    "sessions": [
+      {
+        "started_at": "2026-11-17T02:52:50.876079+00:00",
+        "budget_usd": 1.5,
+        "concurrency": 8
+      },
+      {
+        "started_at": "2026-11-17T03:14:04.991608+00:00",
+        "budget_usd": 1.5,
+        "concurrency": 8
+      }
+    ],
+    "invoice_notice": "Application-accounted estimates and provider-reported tokens; not an invoice or local-hardware speed benchmark. Requested low reasoning/2048-token allowance was not independently confirmed by the adapter."
+  },
+  "earlier_diagnostic_excluded": {
+    "run_id": "238a60f51efa4decaa2bec245b88f49d",
+    "status": "cancelled",
+    "application_accounted_usd": 0.3188429499999999,
+    "requests": 159,
+    "notice": "Different earlier default-reasoning diagnostic, excluded from every matrix and the low-profile verifier cost above.",
+    "source_comparison": {
+      "path": "benchmarks/v3-independent-verification.json",
+      "sha256": "1618be32ca7e9497395456c4b700c9d9e6256b76a4f8db3db4378fa0da4cd5d3"
+    }
+  },
+  "exact_source_audit": {
+    "scope": "Both raw payloads for all 1,500 paired decisions; one unpaired verifier decision excluded.",
+    "raw_payloads": 3000,
+    "documents": 14,
+    "reference_spans": 67946,
+    "provided_reference_quotes": 1249,
+    "compact_reference_quotes_omitted": 66697,
+    "exact_source_span_checks_passed": true,
+    "frozen_unit_sentence_checks_passed": true,
+    "notice": "Bounds and any provided quotations were checked against persisted Unicode source blocks and rebuilt frozen sentence IDs. Missing compact quotations were checked from offsets; original payloads were not modified. This is provenance verification, not interpretation validation.",
+    "canonical_source_block_checksums_verified": 14
+  },
+  "worked_examples": [
+    {
+      "id": "definition-versus-instance",
+      "source": {
+        "id": "1a82c53d719bc1201c329ddee7c2e4ce",
+        "title": "A Definition of Anti-Muslim Hostility",
+        "author": "Ministry of Housing, Communities and Local Government",
+        "institution": "Ministry of Housing, Communities and Local Government",
+        "published_at": "2026-03-09",
+        "source_url": "https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility",
+        "license": "OGL-UK-3.0",
+        "sha256": "6d38441c34bc7f965f72f381e05ac305c88963677ea832c9b7800e743d1f2222",
+        "source_id": "uk10",
+        "rights_note": "Exclude source images, logos and seals. Retain bibliographic citations and short contextual quotations with attribution; separately credited third-party reproductions require their own rights. No exhaustive legal-clearance claim."
+      },
+      "unit_id": "u_1420730a16082f01c77e36e4",
+      "criterion_key": "anti-muslim-racism/racialization",
+      "primary_assessment_id": "57a24379102d33225e54ecc89a0f444e",
+      "verifier_assessment_id": "ca3e1d917bef47607e80e40a68d62bc1",
+      "primary": {
+        "result": "meets_criterion",
+        "criterion_kind": "indicator",
+        "attribution": "author",
+        "speaker": "Ministry of Housing, Communities and Local Government",
+        "speaker_stance": "neutral",
+        "document_stance": "neutral",
+        "hypothetical": false,
+        "proposition": "Treating Muslims as a collective group defined by fixed and negative characteristics based on ethnic or racial backgrounds is anti-Muslim hostility.",
+        "explanation": "The definition includes treating Muslims as a collective group with fixed negative characteristics based on ethnic or racial backgrounds."
+      },
+      "verifier": {
+        "result": "does_not_meet",
+        "criterion_kind": "indicator",
+        "attribution": "unknown",
+        "speaker": "Unknown",
+        "speaker_stance": "not_applicable",
+        "document_stance": "not_applicable",
+        "hypothetical": false,
+        "proposition": "",
+        "explanation": null
+      },
+      "exact_evidence": [
+        {
+          "sentence_id": "s_a304c6c6120b65f888ca473c",
+          "block_id": "uk10-b00029",
+          "start": 0,
+          "end": 377,
+          "quote": "It is also the prejudicial stereotyping of Muslims, or people perceived to be Muslim including because of their ethnic or racial backgrounds or their appearance, and treating them as a collective group defined by fixed and negative characteristics, with the intention of encouraging hatred against them, irrespective of their actual opinions, beliefs or actions as individuals.",
+          "offset_unit": "unicode_code_points"
+        }
+      ],
+      "evidence_selected_from": "primary",
+      "reading_guidance_authorship": "AI-authored questions, not human adjudication or reference labels",
+      "review_questions": [
+        "Does this passage define prejudicial racialization, enact it, or attribute it to another speaker?",
+        "Under the operational criterion, should discussing a harmful mechanism count as applying that mechanism? Keep this question separate from author endorsement."
+      ]
+    },
+    {
+      "id": "statistical-context-versus-criterion-application",
+      "source": {
+        "id": "de578eab78f7889a36107e13a4e46722",
+        "title": "Hate crime, England and Wales, year ending March 2024",
+        "author": "Home Office",
+        "institution": "Home Office",
+        "published_at": "2024-10-10",
+        "source_url": "https://www.gov.uk/government/statistics/hate-crime-england-and-wales-year-ending-march-2024/hate-crime-england-and-wales-year-ending-march-2024",
+        "license": "OGL-UK-3.0",
+        "sha256": "dc043598fbaf8bd3198fd068da3d7d89cb179a4849850f67635a39268fb7b722",
+        "source_id": "uk04",
+        "rights_note": "Exclude source images, logos and seals. Retain bibliographic citations and short contextual quotations with attribution; separately credited third-party reproductions require their own rights. No exhaustive legal-clearance claim."
+      },
+      "unit_id": "u_740f291b41c921a4ae76822c",
+      "criterion_key": "ihra/israel_related_context",
+      "primary_assessment_id": "4e5d1bc843d1e80f689cbc23df298a6f",
+      "verifier_assessment_id": "e5486663af0fb4685a7036b84f05ef36",
+      "primary": {
+        "result": "not_applicable",
+        "criterion_kind": "indicator",
+        "attribution": "unknown",
+        "speaker": "Unknown",
+        "speaker_stance": "not_applicable",
+        "document_stance": "not_applicable",
+        "hypothetical": false,
+        "proposition": "",
+        "explanation": null
+      },
+      "verifier": {
+        "result": "meets_criterion",
+        "criterion_kind": "indicator",
+        "attribution": "reported_speaker",
+        "speaker": "Home Office statistical bulletin",
+        "speaker_stance": "neutral",
+        "document_stance": "neutral",
+        "hypothetical": false,
+        "proposition": "Hate crimes against Jewish people have increased since the beginning of the Israel‑Hamas conflict.",
+        "explanation": "The passage links a rise in anti‑Jewish hate crimes to the start of the Israel‑Hamas conflict, providing an Israel‑related context for the observed increase."
+      },
+      "exact_evidence": [
+        {
+          "sentence_id": "s_5760991eb47886e637521bad",
+          "block_id": "uk04-b00011",
+          "start": 0,
+          "end": 168,
+          "quote": "this increase was driven by a rise in hate crimes against Jewish people and to a lesser extent Muslims and has occurred since the beginning of the Israel-Hamas conflict",
+          "offset_unit": "unicode_code_points"
+        }
+      ],
+      "evidence_selected_from": "verifier",
+      "reading_guidance_authorship": "AI-authored questions, not human adjudication or reference labels",
+      "review_questions": [
+        "Which words, if any, establish an anti-Jewish trope, discriminatory standard or denial of self-determination beyond naming the conflict?",
+        "Does reported chronology alone support the operational indicator? The verifier label requires review; it is not evidence about the Home Office author’s private beliefs."
+      ]
+    },
+    {
+      "id": "nested-quotation-and-author-attribution",
+      "source": {
+        "id": "8034cbd01d8c663088d89d271ef48dd9",
+        "title": "Independent Review of Prevent",
+        "author": "William Shawcross CVO",
+        "institution": "Home Office",
+        "published_at": "2023-02-08",
+        "source_url": "https://www.gov.uk/government/publications/independent-review-of-prevents-report-and-government-response/independent-review-of-prevent-accessible",
+        "license": "OGL-UK-3.0",
+        "sha256": "4a791b1640104170d7e882c2515128103368e14a87bb5e5220b64da9f828d556",
+        "source_id": "uk01",
+        "rights_note": "Exclude source images, logos and seals. Retain bibliographic citations and short contextual quotations with attribution; separately credited third-party reproductions require their own rights. No exhaustive legal-clearance claim."
+      },
+      "unit_id": "u_7b6ea6ca847efcd7904d7ae0",
+      "criterion_key": "nexus/anti_jewish_tropes",
+      "primary_assessment_id": "7b9c226fb4229c85c248fe974f801493",
+      "verifier_assessment_id": "66ef20dd11e36b743f09674304633182",
+      "primary": {
+        "result": "meets_criterion",
+        "criterion_kind": "indicator",
+        "attribution": "reported_speaker",
+        "speaker": "Unidentified Facebook user (via reportage)",
+        "speaker_stance": "unclear",
+        "document_stance": "neutral",
+        "hypothetical": false,
+        "proposition": "Jews are defiling a religious site and are the most hostile people towards believers.",
+        "explanation": "The quoted social media content uses demonizing language, describing Jews as 'defiling' a site with 'filth' and being 'most hostile'. (s_a7597a148f6fa369ed8482f5, s_88300d52cdac6e71db6d0086)"
+      },
+      "verifier": {
+        "result": "meets_criterion",
+        "criterion_kind": "indicator",
+        "attribution": "author",
+        "speaker": "William Shawcross CVO",
+        "speaker_stance": "unclear",
+        "document_stance": "neutral",
+        "hypothetical": false,
+        "proposition": "Jews are portrayed as defiling sacred sites and hostile to believers.",
+        "explanation": "The post calls Jews “defiling…with their filth” and labels them “the most hostile people towards the believers,” depicting Jews as collectively malevolent."
+      },
+      "exact_evidence": [
+        {
+          "sentence_id": "s_a7597a148f6fa369ed8482f5",
+          "block_id": "uk01-b01422",
+          "start": 156,
+          "end": 261,
+          "quote": "Don’t you care that the Jews are defiling the place of the Prophet’s nocturnal journey with their filth? ",
+          "offset_unit": "unicode_code_points"
+        },
+        {
+          "sentence_id": "s_88300d52cdac6e71db6d0086",
+          "block_id": "uk01-b01422",
+          "start": 261,
+          "end": 323,
+          "quote": "The Jews are the most hostile people towards the believers.” ↩",
+          "offset_unit": "unicode_code_points"
+        }
+      ],
+      "evidence_selected_from": "primary",
+      "reading_guidance_authorship": "AI-authored questions, not human adjudication or reference labels",
+      "review_questions": [
+        "Who voices the proposition: the report author, the person posting, or the speaker in the embedded video?",
+        "Read the preceding footnote before assigning author attribution. Both models set speaker stance to unclear here, so neither reading meets the conservative author-endorsement rule."
+      ],
+      "preceding_source_context": {
+        "block_id": "uk01-b01422",
+        "start": 0,
+        "end": 156,
+        "quote": "Screenshot of this individual’s Facebook post, 19 July 2014. The post shares a video that contains the following call: “Where is the Caliph of the Muslims? ",
+        "offset_unit": "unicode_code_points"
+      }
+    }
+  ],
+  "interpretation_accuracy": null,
+  "f1": null,
+  "independent_reference_labels": false,
+  "automatic_adjudication": false,
+  "notice": "Descriptive comparison of separate model outputs. Counts are unit-criterion decisions unless explicitly stated. Agreement and disagreement are not accuracy/error rates; no source authors’ private beliefs are inferred.",
+  "artifact_checks": {
+    "archive_part_checksums_verified": true,
+    "paired_matrices_recomputed_from_portable_archives": true,
+    "unpaired_verifier_decisions_recomputed": 1,
+    "worked_example_quotes_match_bundled_corpus": true,
+    "relative_document_links_resolve": true
+  }
+}

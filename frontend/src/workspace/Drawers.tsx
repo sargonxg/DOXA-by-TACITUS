@@ -37,6 +37,7 @@ import {
 } from "./ui";
 import type {
   AnalysisRun,
+  Context,
   Drawer as DrawerName,
   Item,
   Lens,
@@ -57,6 +58,7 @@ type Props = {
   progress: string;
   busy: boolean;
   candidate: Observation | null;
+  sourceContext: Context | null;
   onOpenSource: (document: string, block?: string) => void;
   onScope: (patch: Partial<Scope>) => void;
   onImport: (files: FileList | File[]) => Promise<void>;
@@ -526,6 +528,7 @@ function ModelsPanel({
   project,
   query,
   candidate,
+  sourceContext,
   onOpenSource,
   onNotice,
 }: Props) {
@@ -559,6 +562,24 @@ function ModelsPanel({
   );
   const [toolResult, setToolResult] = useState<Item | null>(null);
   const [toolError, setToolError] = useState("");
+  const [passageBlockId, setPassageBlockId] = useState("");
+  const selectedBlock =
+    sourceContext?.blocks.find((block) => block.id === passageBlockId) ||
+    sourceContext?.blocks.find(
+      (block) => block.id === sourceContext.finding?.block_id,
+    ) ||
+    sourceContext?.blocks[0];
+  const scorePassage = sourceContext
+    ? selectedBlock && {
+        document_id: sourceContext.document.id,
+        block_id: selectedBlock.id,
+        text: selectedBlock.text,
+      }
+    : candidate && {
+        document_id: candidate.document_id,
+        block_id: candidate.block_id,
+        text: candidate.quote,
+      };
   async function tool(path: string, body: Item) {
     setOperation(path);
     setToolError("");
@@ -745,9 +766,50 @@ function ModelsPanel({
           <Globe2 size={14} />
           Search indexed passages
         </Button>
+        {sourceContext && (
+          <>
+            <p className="w-footnote">
+              <strong>{sourceContext.document.title}</strong>
+              {" · "}Choose from the passages currently open in the source
+              inspector. A prior model analysis is not required.
+            </p>
+            <label>
+              Selected source passage
+              <select
+                aria-label="Selected source passage"
+                value={selectedBlock?.id || ""}
+                disabled={!sourceContext.blocks.length || !!operation}
+                onChange={(event) => {
+                  setPassageBlockId(event.target.value);
+                  setToolResult(null);
+                  setToolError("");
+                }}
+              >
+                {!sourceContext.blocks.length && (
+                  <option value="">No extracted passage available</option>
+                )}
+                {sourceContext.blocks.map((block, index) => (
+                  <option key={block.id} value={block.id}>
+                    {block.page ? `Page ${block.page} · ` : ""}
+                    Paragraph{" "}
+                    {block.paragraph ?? (sourceContext.start || 0) + index + 1}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </>
+        )}
+        {scorePassage && (
+          <p className="w-footnote">
+            {!sourceContext && "Selected observation’s source passage: "}“
+            {Array.from(scorePassage.text).slice(0, 600).join("")}
+            {Array.from(scorePassage.text).length > 600 ? "…" : ""}”
+          </p>
+        )}
         <label>
           Experimental rubric proposition
           <textarea
+            aria-label="Experimental rubric proposition"
             value={hypothesis}
             onChange={(event) => setHypothesis(event.target.value)}
             rows={2}
@@ -755,11 +817,13 @@ function ModelsPanel({
         </label>
         <Button
           variant="outline"
-          disabled={!!operation || !candidate || !hypothesis.trim()}
+          disabled={
+            !!operation || !scorePassage?.block_id || !hypothesis.trim()
+          }
           onClick={() =>
             void tool("rubric-score", {
-              document_id: candidate?.document_id,
-              block_id: candidate?.block_id,
+              document_id: scorePassage?.document_id,
+              block_id: scorePassage?.block_id,
               hypotheses: [{ id: "explicit-proposition", text: hypothesis }],
             })
           }
@@ -768,7 +832,8 @@ function ModelsPanel({
           Score the selected source passage
         </Button>
         <p className="w-footnote">
-          Select an observation before scoring. Entailment scores are
+          Select a source or observation before scoring. DeBERTa entailment
+          scores test the explicit proposition against that passage; they are
           uncalibrated model outputs, never probabilities of prejudice.
         </p>
         {operation && <Spinner text="Running the explicit CPU task…" />}

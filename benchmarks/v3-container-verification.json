@@ -1,0 +1,56 @@
+{
+  "schema_version": "3.0",
+  "source_commit": "5f68deacc19025a2efb69909e5fa21d10d54f91f",
+  "image": "doxa:v3-release",
+  "inference_requested": false,
+  "inference_credentials_supplied": false,
+  "health": {
+    "ok": true,
+    "version": "0.3.0",
+    "mode": "local",
+    "capabilities": {
+      "multipart_uploads": true,
+      "full_text_search": true,
+      "private_local": true,
+      "semantic_validation": "research_preview"
+    }
+  },
+  "institutional_demo": {
+    "sources": 20,
+    "run_id": "a4a96fb8694a5f7c2c4633e7e7d86b38",
+    "status": "partial",
+    "idempotent_second_import": true
+  },
+  "reports": [
+    {
+      "format": "pdf",
+      "bytes": 227437,
+      "sha256": "4c30f750b2d86ad02bf6233cb983dd12c9af051435baae42f811af33191a6bdf"
+    },
+    {
+      "format": "xlsx",
+      "bytes": 1597119,
+      "sha256": "225e04fb97cdbd0529cfd46ce9ba5e3ca295175fe5241bdaf1ca79c74b85b9d6"
+    }
+  ],
+  "news_import_seconds": 174.188,
+  "news_demo": {
+    "sources": 5000,
+    "saved_results": false,
+    "notice": "No finished contextual package is available; the source collection was imported without inference.",
+    "source_manifest_sha256": "6ea29f063abcdda5425d91277c9137cbb66f461fa2fff26f1f3543c51fb02ff3"
+  },
+  "frontend_and_guide_served": true,
+  "status": "passed",
+  "generated_at": "2026-11-17T03:15:26.415781+00:00",
+  "restart_check": {
+    "documents_preserved": 5020,
+    "new_request_rows": 0,
+    "budget_ledger_rows": 0
+  },
+  "observed_interruption": {
+    "cause": "Validation host disk filled with Docker build cache during initial XLSX export",
+    "recovery": "Freed unused build cache; same frozen workbook export succeeded",
+    "followup": "Application now returns a safe HTTP 507 for storage exhaustion; separate regression tests cover that change."
+  }
+}

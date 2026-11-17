@@ -1025,6 +1025,7 @@ export default function App() {
             progress={progress}
             busy={busy}
             candidate={context?.finding || candidate}
+            sourceContext={context}
             onOpenSource={(document, block) => {
               setDrawer(null);
               void openSource(document, undefined, block);

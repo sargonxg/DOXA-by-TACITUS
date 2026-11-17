@@ -168,6 +168,10 @@ def progress_summary(store, state: dict, run: dict) -> dict:
             "config": run["config"], "model_profile": run.get("model_profile", {}), "progress": run.get("progress", {}),
             "usage": run.get("usage", {}), "budget_accounted_usd": run.get("spent_usd", 0),
             "unit_states": states, "decision_counts": decisions, "elapsed_seconds": state.get("elapsed_seconds", 0),
+            "historical_elapsed_seconds": state.get("historical_elapsed_seconds", 0),
+            "total_active_analysis_seconds": state.get("elapsed_seconds", 0) + state.get("historical_elapsed_seconds", 0),
+            "historical_sessions": state.get("historical_sessions", []),
+            "fork_provenance": state.get("fork_provenance"),
             "sessions": state.get("sessions", []), "parent_provenance_updates": state.get("parent_provenance_updates", []),
             "compatible_extensions": state.get("compatible_extensions", []),
             "error_tasks": store.one("SELECT COUNT(*) count FROM tasks WHERE run_id=? AND error IS NOT NULL", [run["id"]])["count"],
@@ -179,7 +183,7 @@ async def run_benchmark(args) -> int:
     # Import after --env-file is loaded; dotenv and provider initialization must
     # never capture an unintended account before explicit server configuration.
     import httpx
-    from doxa.api import create_app
+    from doxa.api import create_app, task_execution_limits
     from doxa.providers import get_provider
     from doxa.store import utcnow
     from scripts.benchmark import api_json, hardware, run_worker_pool
@@ -229,8 +233,14 @@ async def run_benchmark(args) -> int:
     if previous.get("revision") not in {None, "unresolved"} and readiness.get("revision") != previous["revision"]:
         raise ValueError("Installed model revision changed; do not mix it into a resumed run")
     state["provider_preflight"] = readiness
+    operational = {
+        **task_execution_limits(args.provider),
+        "cpu_threads_requested": readiness.get("num_threads_requested"),
+        "scope": "Scheduling settings; source units, prompts and selected criteria are unchanged.",
+    }
     state["sessions"].append({"started_at": utcnow(), "hardware": hardware(), "provider_preflight": readiness,
-                              "concurrency": args.concurrency, "requested_budget_usd": args.budget_usd})
+                              "concurrency": args.concurrency, "requested_budget_usd": args.budget_usd,
+                              "operational_settings": operational})
     if not readiness.get("ok"):
         state["status"] = "provider_unavailable"
         atomic_json(checkpoint, state)
@@ -310,6 +320,9 @@ async def run_benchmark(args) -> int:
                 archive = package_run(store, run["id"], args.package_dir or args.output.parent,
                                       benchmark={"collection": {key: value for key, value in selection.items() if key != "sources"},
                                                  "sessions": state["sessions"], "elapsed_seconds": state["elapsed_seconds"],
+                                                 "historical_sessions": state.get("historical_sessions", []),
+                                                 "historical_elapsed_seconds": state.get("historical_elapsed_seconds", 0),
+                                                 "total_active_analysis_seconds": state["elapsed_seconds"] + state.get("historical_elapsed_seconds", 0),
                                                  "parent_provenance_updates": state.get("parent_provenance_updates", []),
                                                  "engine_fingerprint": engine_fingerprint})
                 summary["archive"] = {"manifest": str((args.package_dir or args.output.parent) / "showcase.json"), "parts": len(archive["parts"]), "counts": archive["counts"]}

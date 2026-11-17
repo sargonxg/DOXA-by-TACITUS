@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import gzip
+import hashlib
 import json
 from pathlib import Path
 import sys
@@ -13,7 +14,7 @@ sys.path.insert(0, str(ROOT))
 from scripts.build_walkthrough import audit_snapshot  # noqa: E402
 
 
-def prepare(institutional_snapshot: Path, output: Path) -> dict:
+def prepare(institutional_snapshot: Path, output: Path, news_summary: Path | None = None) -> dict:
     with gzip.open(institutional_snapshot, "rt", encoding="utf-8") as stream:
         frozen = json.load(stream)
     audit_snapshot(frozen)
@@ -57,20 +58,25 @@ def prepare(institutional_snapshot: Path, output: Path) -> dict:
             translated += bool(row.get("translators"))
     if actual_count != collection["article_count"] or actual_count != audit["article_count"]:
         raise ValueError("Frozen news manifest count differs from its audited collection")
-    saved_news = json.loads((ROOT / "benchmarks/v3-news/showcase.json").read_text())
-    units_total = sum(saved_news["unit_states"].values())
-    units_done = saved_news["unit_states"].get("accepted", 0)
+    news_summary = news_summary or ROOT / "benchmarks/v3-news-final-summary.json"
+    news_bytes = news_summary.read_bytes()
+    saved_news = json.loads(news_bytes)
+    if saved_news["collection"]["documents"] != actual_count:
+        raise ValueError("News analysis capture must describe the audited source count")
+    units_total = sum(row["count"] for row in saved_news["unit_states"])
+    units_done = sum(row["count"] for row in saved_news["unit_states"] if row["status"] == "accepted")
     news = {"publisher": collection["publisher"], "documents": actual_count, "words": audit["word_count"],
             "credited_author_names": len(authors), "translated_articles": translated, "publication_months": len(collection["monthly_allocation"]),
             "frame_start": collection["frame_start"], "frame_end": collection["frame_end"], "frozen_at": collection["frozen_at"],
             "holdout_groups": collection["holdout_count"], "source_audit_checked": source_audit["checked"],
             "source_audit_matched": source_audit["matched"], "license": "CC BY 3.0", "selection_notice": collection["selection_notice"],
             "source_manifest": "https://github.com/sargonxg/DOXA-by-TACITUS/blob/main/docs/news-corpus.md",
-            "analysis_snapshot": {"generated_at": saved_news["generated_at"], "status": saved_news["run"]["status"],
-                "selected_documents": saved_news["counts"]["documents"], "units_done": units_done, "units_total": units_total,
-                "coverage_percent": round(100 * units_done / units_total, 1), "assessments_retained": saved_news["counts"]["assessments"],
+            "analysis_snapshot": {"generated_at": saved_news["generated_at"], "run_id": saved_news["run_id"], "status": saved_news["status"],
+                "summary_sha256": hashlib.sha256(news_bytes).hexdigest(),
+                "selected_documents": saved_news["collection"]["documents"], "units_done": units_done, "units_total": units_total,
+                "coverage_percent": round(100 * units_done / units_total, 1), "assessments_retained": sum(row["count"] for row in saved_news["decision_counts"]),
                 "independent_human_labels": False, "interpretation_accuracy": None,
-                "source_summary": "https://github.com/sargonxg/DOXA-by-TACITUS/blob/main/benchmarks/v3-news/showcase.json"}}
+                "source_summary": "https://github.com/sargonxg/DOXA-by-TACITUS/blob/main/" + news_summary.resolve().relative_to(ROOT).as_posix()}}
     result = {"schema_version": "3.0", "institutional": institutional, "news": news,
               "legacy_reference": {"method_version": "legacy-v1.2", "findings_retained": 1071, "coverage_percent": 64.3,
                 "source_summary": "https://github.com/sargonxg/DOXA-by-TACITUS/blob/main/benchmarks/cloud-gemma4-summary.json"},
@@ -84,7 +90,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--institutional-snapshot", type=Path, default=ROOT / "examples/institutional-context-commentary.snapshot.json.gz")
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--news-summary", type=Path, default=ROOT / "benchmarks/v3-news-final-summary.json")
     args = parser.parse_args()
-    facts = prepare(args.institutional_snapshot, args.output)
+    facts = prepare(args.institutional_snapshot, args.output, args.news_summary)
     print(json.dumps({"schema": facts["schema_version"], "institutional_units": [facts["institutional"]["units_done"], facts["institutional"]["units_total"]],
                       "news_sources": facts["news"]["documents"], "saved_news_units": [facts["news"]["analysis_snapshot"]["units_done"], facts["news"]["analysis_snapshot"]["units_total"]]}))

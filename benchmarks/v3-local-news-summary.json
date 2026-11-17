@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "benchmark_kind": "real_complete_document_contextual_analysis",
-  "generated_at": "2026-11-17T02:23:07.655471+00:00",
+  "generated_at": "2026-11-17T03:35:36.227188+00:00",
   "collection": {
     "collection": "news-sample",
     "documents": 20,
@@ -174,7 +174,42 @@
         "new_tasks": 115,
         "at": "2026-11-17T02:11:32.646055+00:00"
       }
-    ]
+    ],
+    "budget_changes": [
+      {
+        "previous": 0.0,
+        "new": 0.0,
+        "at": "2026-11-17T03:07:33.535624+00:00"
+      },
+      {
+        "previous": 0.0,
+        "new": 0.0,
+        "at": "2026-11-17T03:23:53.120787+00:00"
+      }
+    ],
+    "operational_priorities": [
+      {
+        "at": "2026-11-17T03:17:05.630307+00:00",
+        "policy": "shortest_remaining_whole_article_first",
+        "reason": "Finite CPU trial; all20 frozen articles remain selected; no unit/prompt/criterion changes",
+        "running_units_unchanged": true,
+        "archive_key": "runs/42a6e0514ef94f959e2dc3b28023ab89/operational-short-first-653403e98369b0bf.json",
+        "pending_tasks": 111
+      }
+    ],
+    "task_timing_history": [
+      {
+        "applied_at": "2026-11-17T03:23:53.150733+00:00",
+        "task_id": "a553a2bb770e0e78eee2eadd13e7adf6",
+        "reason": "worker_claim",
+        "task_timeout_seconds": 1800,
+        "task_lease_seconds": 1920,
+        "task_timeout_source": "server_environment"
+      }
+    ],
+    "task_timeout_seconds": 1800,
+    "task_lease_seconds": 1920,
+    "task_timeout_source": "server_environment"
   },
   "model_profile": {
     "provider": "ollama",
@@ -192,6 +227,7 @@
     "citation_offset_unit": "unicode_code_points",
     "prompt_version": "contextual-decisions-3.2.1",
     "response_schema_version": "source-vectors-3.2",
+    "num_threads_requested": 4,
     "methodology_version": "3.0",
     "unit_builder_version": "source-units-3.1",
     "unit_builder_config": {
@@ -217,39 +253,48 @@
     "learning_snapshot_id": null,
     "approved_example_ids": [],
     "analysis_config_hash": "9302daf7f72f92d11075b01b",
-    "cache_hit_decisions": 19
+    "cache_hit_decisions": 0,
+    "task_timeout_seconds": 1800,
+    "task_lease_seconds": 1920,
+    "task_timeout_source": "server_environment"
   },
   "progress": {
     "documents_total": 20,
-    "documents_done": 0,
+    "documents_done": 1,
+    "documents_complete": 1,
+    "documents_settled": 1,
     "blocks_total": 115,
-    "blocks_done": 2,
+    "blocks_done": 5,
     "tasks_total": 115,
-    "tasks_done": 2,
+    "tasks_done": 5,
     "tasks_failed": 1,
-    "current_document": "Groundbreaking film on Russia's HIV epidemic goes viral",
+    "current_document": "Controversy over an explosion in the Caspian sea",
     "complete": false,
     "analysis_kind": "model_analysis",
     "semantic_analysis_performed": true,
-    "semantic_blocks_done": 2,
+    "semantic_blocks_done": 5,
     "lexical_blocks_done": 0
   },
   "usage": {
-    "input_tokens": 24030,
-    "output_tokens": 517,
+    "input_tokens": 58373,
+    "output_tokens": 7221,
     "cost_usd": null,
-    "requests": 10,
+    "requests": 31,
     "estimated": true
   },
   "budget_accounted_usd": 0.0,
   "unit_states": [
     {
       "status": "accepted",
-      "count": 2
+      "count": 5
+    },
+    {
+      "status": "partial",
+      "count": 1
     },
     {
       "status": "pending",
-      "count": 113
+      "count": 109
     }
   ],
   "decision_counts": [
@@ -269,17 +314,26 @@
       "count": 13
     },
     {
+      "result": "meets_criterion",
+      "criterion_kind": "descriptive",
+      "count": 14
+    },
+    {
       "result": "not_applicable",
       "criterion_kind": "boundary",
-      "count": 6
+      "count": 10
     },
     {
       "result": "not_applicable",
       "criterion_kind": "indicator",
-      "count": 39
+      "count": 65
     }
   ],
-  "elapsed_seconds": 1270.5002426520005,
+  "elapsed_seconds": 2687.1971558450023,
+  "historical_elapsed_seconds": 0,
+  "total_active_analysis_seconds": 2687.1971558450023,
+  "historical_sessions": [],
+  "fork_provenance": null,
   "sessions": [
     {
       "started_at": "2026-11-16T23:01:49.066752+00:00",
@@ -382,6 +436,118 @@
       },
       "concurrency": 1,
       "requested_budget_usd": 0.0
+    },
+    {
+      "started_at": "2026-11-17T03:07:33.493816+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "ollama",
+        "model": "qwen3.5:4b",
+        "mode": "local",
+        "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "quantization": "Q4_K_M",
+        "context_limit": 8192,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 3600,
+        "source_pack_windows": 20,
+        "lens_batch_size": 2,
+        "batching_version": "local-bounded-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "num_threads_requested": 4,
+        "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."
+      },
+      "concurrency": 1,
+      "requested_budget_usd": 0.0,
+      "operational_settings": {
+        "task_timeout_seconds_applied": 480,
+        "cpu_threads_requested": 4,
+        "cpu_threads_observed": 4,
+        "stop_reason": "Restart after the current task settled to apply the local-only 1800-second scheduler deadline.",
+        "ended_at": "2026-11-17T03:21:06.665488+00:00",
+        "interpretation": "Scheduling-only change; the full 20-article selection, source units, selected criteria, prompts and model digest are unchanged."
+      }
+    },
+    {
+      "started_at": "2026-11-17T03:23:53.082368+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "ollama",
+        "model": "qwen3.5:4b",
+        "mode": "local",
+        "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "quantization": "Q4_K_M",
+        "context_limit": 8192,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 3600,
+        "source_pack_windows": 20,
+        "lens_batch_size": 2,
+        "batching_version": "local-bounded-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "num_threads_requested": 4,
+        "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."
+      },
+      "concurrency": 1,
+      "requested_budget_usd": 0.0,
+      "operational_settings": {
+        "task_timeout_seconds": 1800,
+        "task_lease_seconds": 1920,
+        "task_timeout_source": "server_environment",
+        "cpu_threads_requested": 4,
+        "scope": "Scheduling settings; source units, prompts and selected criteria are unchanged."
+      }
+    }
+  ],
+  "parent_provenance_updates": [
+    {
+      "at": "2026-11-17T03:07:33.423579+00:00",
+      "old": {
+        "collection_sha256": "62623ca483c536184bf06c5a5bd32868f0c6e80a1be4fec5efc02ccb1a573c42",
+        "manifest_sha256": "9b6c408b5c8c52e8a435fcd231810bb8f24dc2f9dfe72c10377822cbdab7c6be"
+      },
+      "new": {
+        "collection_sha256": "62623ca483c536184bf06c5a5bd32868f0c6e80a1be4fec5efc02ccb1a573c42",
+        "manifest_sha256": "6ea29f063abcdda5425d91277c9137cbb66f461fa2fff26f1f3543c51fb02ff3"
+      },
+      "selected_sources_sha256": "69b861c1a35e42870efa5a852b92d3f46d265c060ab1c75fc7de2a7a164bb788",
+      "reason": "Parent corpus digests changed; selected news-sample identities, order, content hashes, paths and every other selection setting are unchanged."
+    }
+  ],
+  "compatible_extensions": [
+    {
+      "previous_file_fingerprint": "ddc10dc7ce844716f0cb6ed8889f6ce4eff514e8bc068b6122f6b04ac11086d0",
+      "current_file_fingerprint": "f5ed693d0c4e4b02b7b758f8f84c5b7b3dd87c81f85bb4a0bd53a8c680bbaf46",
+      "selected_components": {
+        "contextual": "eaec9512ed74852e5c2955fdd6e5173229b61461f9a2fb5c22d6dea5ec8aa200",
+        "models": "428691387b1f27964daf55ffeab678e3cc1755c4cdedbfab62d4b0573c11e73d",
+        "selected_lenses": "a17ff806e2006aa387f85a6c84c94e4828a733f0253a2b278ebc68589e38c48f"
+      },
+      "reason": "Unselected lens extension; selected rubric packs, core engine and response contracts are byte-equivalent."
     }
   ],
   "error_tasks": 1,

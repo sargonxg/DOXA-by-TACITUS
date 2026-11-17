@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import asyncio
+import errno
 import hashlib
 import hmac
 import json
@@ -9,6 +10,7 @@ import math
 import mimetypes
 import os
 import re
+import sqlite3
 import subprocess
 import sys
 import tempfile
@@ -33,6 +35,28 @@ load_dotenv(ROOT / ".env")
 MAX_FILE = 500 * 1024 * 1024
 PART_SIZE = 8 * 1024 * 1024
 TERMINAL = {"completed", "partial", "failed", "cancelled"}
+
+
+def task_execution_limits(provider: str, *, cloud_state: bool = False) -> dict:
+    """Operational deadlines; these do not change the analytical method.
+
+    The deployed container retains its shorter commit margin under the cloud
+    HTTP limit. Only native/local-state Ollama work receives the longer budget.
+    """
+    if provider == "ollama" and not cloud_state:
+        supplied = os.environ.get("DOXA_LOCAL_TASK_TIMEOUT_SECONDS")
+        try:
+            timeout = int(supplied) if supplied is not None else 1800
+        except (TypeError, ValueError):
+            raise ValueError("DOXA_LOCAL_TASK_TIMEOUT_SECONDS must be an integer between 480 and 7200") from None
+        if not 480 <= timeout <= 7200:
+            raise ValueError("DOXA_LOCAL_TASK_TIMEOUT_SECONDS must be an integer between 480 and 7200")
+        source = "server_environment" if supplied is not None else "local_default"
+    else:
+        timeout = 420 if cloud_state else 480
+        source = "cloud_container_limit" if cloud_state else "scheduler_default"
+    return {"task_timeout_seconds": timeout, "task_lease_seconds": max(600, timeout + 120),
+            "task_timeout_source": source}
 
 
 def uid() -> str:
@@ -172,7 +196,31 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             origin = request.headers.get("origin")
             if origin and urlsplit(origin).netloc != request.headers.get("host"):
                 return JSONResponse({"detail": "Cross-origin writes are disabled"}, status_code=403)
-        response = await call_next(request)
+        try:
+            response = await call_next(request)
+        except Exception as error:
+            # Export libraries can wrap an underlying ENOSPC in their own
+            # exception. Inspect its cause chain without exposing paths or
+            # translating unrelated filesystem/database failures.
+            cause, seen, exhausted = error, set(), False
+            while cause is not None and id(cause) not in seen:
+                seen.add(id(cause))
+                if isinstance(cause, OSError) and cause.errno == errno.ENOSPC:
+                    exhausted = True
+                    break
+                if isinstance(cause, sqlite3.OperationalError) and (
+                    getattr(cause, "sqlite_errorcode", None) == sqlite3.SQLITE_FULL
+                    or str(cause).casefold().startswith("database or disk is full")
+                ):
+                    exhausted = True
+                    break
+                cause = cause.__cause__ or cause.__context__
+            if not exhausted:
+                raise
+            response = JSONResponse({
+                "code": "storage_exhausted",
+                "detail": "Workspace storage is full. Free space on the data and temporary volumes, then retry. Preserve original documents and checkpoints; review unused build cache and old export copies.",
+            }, status_code=507)
         response.headers["X-Content-Type-Options"] = "nosniff"
         response.headers["Referrer-Policy"] = "same-origin"
         response.headers["X-Frame-Options"] = "DENY"
@@ -649,6 +697,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             return {"pending": False, "run": run}
         if run["cancel_requested"]:
             return {"pending": False, "run": refresh_run(run_id)}
+        limits = task_execution_limits(run["config"].get("provider", "lexical"), cloud_state=bool(db().remote))
         now = time.time()
         expired = db().query("SELECT id FROM tasks WHERE run_id=? AND status='running' AND (lease_until IS NULL OR lease_until<?)", [run_id, now])
         for expired_task in expired:
@@ -660,7 +709,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             running = db().one("SELECT id FROM tasks WHERE run_id=? AND status='running' LIMIT 1", [run_id])
             return {"pending": bool(running), "idle": True, "retry_after": 1, "run": refresh_run(run_id)}
         token = uid()
-        claimed = db().query("UPDATE tasks SET status='running',lease_token=?,lease_until=?,attempts=attempts+1 WHERE id=? AND status='pending' RETURNING id", [token, now+600, task["id"]])
+        claimed = db().query("UPDATE tasks SET status='running',lease_token=?,lease_until=?,attempts=attempts+1 WHERE id=? AND status='pending' RETURNING id", [token, now+limits["task_lease_seconds"], task["id"]])
         if not claimed:
             return {"pending": True, "run": require_run(run_id)}
         document = require_document(task["document_id"], True)
@@ -668,6 +717,17 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         document = {**document, "blocks": document["blocks"][task["start_block"]:task["end_block"]]} if run["config"].get("task_index_basis") != "source_units_v3" else document
         db().execute("UPDATE runs SET status='running',started_at=COALESCE(started_at,?),progress_json=? WHERE id=?", [utcnow(), json.dumps({**run["progress"], "current_document": document["title"]}), run_id])
         config = dict(run["config"])
+        operational_profile = {**run.get("model_profile", {}), **limits}
+        if config.get("provider") == "ollama" and not db().remote:
+            if any(config.get(key) != value for key, value in limits.items()):
+                config.setdefault("task_timing_history", []).append({"applied_at": utcnow(), "task_id": task["id"],
+                                                                     "reason": "worker_claim", **limits})
+            config.update(limits)
+            db().execute("UPDATE runs SET config_json=?,model_profile_json=? WHERE id=? AND cancel_requested=0",
+                         [json.dumps(config), json.dumps(operational_profile), run_id])
+        else:
+            db().execute("UPDATE runs SET model_profile_json=? WHERE id=? AND cancel_requested=0",
+                         [json.dumps(operational_profile), run_id])
         if str(config.get("methodology_version", "1")).startswith("3") and config.get("provider") != "lexical":
             from doxa.contextual import PROMPT_VERSION
             method_changed = bool(config.get("pipeline_version") and config["pipeline_version"] != PROMPT_VERSION)
@@ -805,14 +865,15 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                     # unknown invoice usage but charges its conservative reserve;
                     # it must not masquerade as an exhausted per-task budget.
                     analysis_config = {**config, "budget_usd": None}
-                    result = await asyncio.wait_for(analyze_units(complete_document, config.get("lens_snapshots") or config["lens_ids"], provider, units=units, config=analysis_config, progress=checkpoint), timeout=420 if db().remote else 480)
+                    result = await asyncio.wait_for(analyze_units(complete_document, config.get("lens_snapshots") or config["lens_ids"], provider, units=units, config=analysis_config, progress=checkpoint), timeout=limits["task_timeout_seconds"])
                 finally:
                     flush()
                 # Preserve legacy scheduler block denominators alongside unit coverage.
                 result["coverage"]["total_blocks"] = len(units)
                 result["coverage"]["processed_blocks"] = sum(s["status"] == "accepted" for s in result["unit_statuses"])
             else:
-                result = await asyncio.wait_for(analyze_document(document, config, provider), timeout=420 if db().remote else 480)
+                result = await asyncio.wait_for(analyze_document(document, config, provider), timeout=limits["task_timeout_seconds"])
+            result.setdefault("model_profile", {}).update(limits)
             # Only a current lease may commit. Replayed tasks cannot duplicate dashboard counts.
             lease = db().one("SELECT t.lease_token,r.cancel_requested FROM tasks t JOIN runs r ON r.id=t.run_id WHERE t.id=?", [task["id"]])
             if not lease or lease["lease_token"] != token or lease["cancel_requested"]:
@@ -877,6 +938,13 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     async def create_run(project_id: str, body: RunInput, *, check_health: bool = True) -> dict:
         require_project(project_id)
         config = body.model_dump(exclude_none=True)
+        if body.provider == "ollama" and not db().remote:
+            try:
+                limits = task_execution_limits(body.provider)
+            except ValueError as error:
+                raise HTTPException(422, str(error)) from error
+            config.update(limits)
+            config["task_timing_history"] = [{"applied_at": utcnow(), "reason": "run_created", **limits}]
         modern = str(body.methodology_version).startswith("3") and body.provider != "lexical"
         verification = None
         if body.verification_of:
@@ -1051,8 +1119,9 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         db().execute("UPDATE runs SET config_json=? WHERE id=?", [json.dumps(config), run_id])
         db().execute("UPDATE runs SET status='queued',cancel_requested=0,completed_at=NULL WHERE id=?", [run_id])
         db().execute("UPDATE tasks SET status='pending',error=NULL,lease_token=NULL,lease_until=NULL WHERE run_id=? AND status IN ('failed','cancelled')", [run_id])
+        result = refresh_run(run_id)
         schedule(run_id)
-        return require_run(run_id)
+        return result
 
     def active_run_id(project_id: str) -> str | None:
         row = db().one("SELECT id FROM runs WHERE project_id=? ORDER BY created_at DESC LIMIT 1", [project_id])

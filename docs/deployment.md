@@ -6,6 +6,8 @@ DOXA runs one Python API/worker and a static browser interface. Local state live
 
 Prerequisites: Docker with Compose, at least 6 GB RAM for document processing, and additional RAM/VRAM for your chosen local model. No GPU is required to start the application.
 
+For the full 5,000-article collection together with local model weights, retained analysis history, indexes, report exports and Docker builds, **at least 30 GB of free disk space is recommended before starting**. This is operating headroom, not a storage guarantee: an observed 32 GB execution filesystem filled during builds and export/fork work because images, build cache and SQLite WAL shared the same disk. Larger models, more versions or concurrent exports can require more. Monitor both the data volume and temporary/build storage. Preserve source documents and checkpoints; back up the data volume before removing anything, and review unused build cache or old export copies separately. An API **HTTP 507** response means storage was exhausted before a response could be generated; free space and retry the operation.
+
 ```sh
 cp .env.example .env
 docker compose up --build -d
