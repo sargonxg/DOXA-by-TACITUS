@@ -51,6 +51,36 @@ def _endpoint(value: str) -> str:
     return value.rstrip("/")
 
 
+def configured_endpoint(config: dict) -> str | None:
+    """Resolve the exact adapter destination without a request or credentials.
+
+    Privacy policy and the adapters share this resolver so that a supported
+    legacy environment alias cannot silently change the transport destination.
+    HTTP remains supported by the adapters for local/private deployments;
+    managed-pilot policy separately restricts external transport to HTTPS.
+
+    Cloudflare preserves its historical exception: ``config.base_url`` is not
+    an override; only the operator's DOXA_CLOUDFLARE_BASE_URL is used there.
+    """
+    provider = str(config.get("provider") or "lexical").lower()
+    if provider in {"lexical", "lexical-baseline"}:
+        return None
+    if provider == "ollama":
+        value = config.get("base_url") or _env("DOXA_OLLAMA_BASE_URL", "OLLAMA_BASE_URL") or "http://127.0.0.1:11434"
+    elif provider in {"openai", "openai-compatible", "vllm"}:
+        value = config.get("base_url") or _env("DOXA_OPENAI_BASE_URL", "OPENAI_BASE_URL") or "https://api.openai.com/v1"
+    elif provider == "cloudflare":
+        account = _env("DOXA_CLOUDFLARE_ACCOUNT_ID", "CLOUDFLARE_ACCOUNT_ID", "CF_ACCOUNT_ID")
+        value = _env("DOXA_CLOUDFLARE_BASE_URL") or f"https://api.cloudflare.com/client/v4/accounts/{account or 'unconfigured'}/ai/v1"
+    elif provider == "runpod":
+        endpoint_id = _env("DOXA_RUNPOD_ENDPOINT_ID", "RUNPOD_ENDPOINT_ID")
+        value = (config.get("base_url") or _env("DOXA_RUNPOD_BASE_URL", "RUNPOD_BASE_URL") or
+                 (f"https://api.runpod.ai/v2/{endpoint_id}/openai/v1" if endpoint_id else "https://api.runpod.ai/unconfigured/openai/v1"))
+    else:
+        raise ValueError("Unsupported inference provider for destination resolution")
+    return _endpoint(str(value))
+
+
 def _json_content(value: Any) -> dict:
     if isinstance(value, dict):
         return value
@@ -150,7 +180,7 @@ class OllamaProvider(BaseProvider):
 
     def __init__(self, config: dict):
         super().__init__({**config, "model": config.get("model") or OLLAMA_MODEL})
-        self.base_url = _endpoint(str(config.get("base_url") or _env("DOXA_OLLAMA_BASE_URL", "OLLAMA_BASE_URL") or "http://127.0.0.1:11434"))
+        self.base_url = configured_endpoint({**config, "provider": "ollama"})
         self.profile["quantization"] = config.get("quantization") or "model_package_unresolved"
         try:
             self.num_threads = int(os.environ.get("DOXA_OLLAMA_NUM_THREADS", "4"))
@@ -211,7 +241,7 @@ class OpenAICompatibleProvider(BaseProvider):
 
     def __init__(self, config: dict):
         super().__init__(config)
-        self.base_url = _endpoint(str(config.get("base_url") or _env("DOXA_OPENAI_BASE_URL", "OPENAI_BASE_URL") or "https://api.openai.com/v1"))
+        self.base_url = configured_endpoint({**config, "provider": "openai"})
         self.api_key = _env("DOXA_OPENAI_API_KEY", "OPENAI_API_KEY")
         # A self-hosted vLLM endpoint may deliberately have no key.
         host = urlparse(self.base_url).hostname or ""
@@ -348,7 +378,7 @@ class CloudflareProvider(OpenAICompatibleProvider):
         account = _env("DOXA_CLOUDFLARE_ACCOUNT_ID", "CLOUDFLARE_ACCOUNT_ID", "CF_ACCOUNT_ID")
         self.account_id = account
         self.proxy_base = _env("DOXA_CLOUDFLARE_BASE_URL")
-        base = self.proxy_base or f"https://api.cloudflare.com/client/v4/accounts/{account or 'unconfigured'}/ai/v1"
+        base = configured_endpoint({**config, "provider": "cloudflare"})
         rates = {CLOUDFLARE_MODEL: (0.10, 0.30), "@cf/openai/gpt-oss-120b": (0.35, 0.75), "@cf/openai/gpt-oss-20b": (0.20, 0.30)}
         defaults = {"input_price_per_million": rates[model][0], "output_price_per_million": rates[model][1]} if model in rates else {}
         super().__init__({**defaults, **{key: value for key, value in config.items() if value is not None}, "model": model, "base_url": base, "inference_mode": "remote"})
@@ -381,8 +411,7 @@ class RunpodProvider(OpenAICompatibleProvider):
     name = "runpod"
 
     def __init__(self, config: dict):
-        endpoint_id = _env("DOXA_RUNPOD_ENDPOINT_ID", "RUNPOD_ENDPOINT_ID")
-        base = config.get("base_url") or _env("DOXA_RUNPOD_BASE_URL", "RUNPOD_BASE_URL") or (f"https://api.runpod.ai/v2/{endpoint_id}/openai/v1" if endpoint_id else "https://api.runpod.ai/unconfigured/openai/v1")
+        base = configured_endpoint({**config, "provider": "runpod"})
         super().__init__({**config, "base_url": base, "inference_mode": "remote"})
         self.api_key = _env("DOXA_RUNPOD_API_KEY", "RUNPOD_API_KEY")
         self.profile.update({"provider": self.name, "billing_note": "Token-rate estimates require configured rates. GPU initialization, execution, idle, and storage can be charged separately."})

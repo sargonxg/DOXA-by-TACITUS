@@ -1,0 +1,452 @@
+{
+  "artifact_manifests": {
+    "html": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 6,
+        "wording_observations_total": 6
+      },
+      "brief": {
+        "audience": "Fictional communications team",
+        "company_policy": {
+          "text": "This fictional company asks staff to state the requested action, name the responsible team where appropriate, and give a clear deadline. A direct request can be appropriate; qualification can be appropriate when information is incomplete.\n\nQuoted complaints and reports of discrimination must retain attribution. The policy does not authorize employee rankings, emotional diagnoses or inferences about religious or political beliefs.",
+          "title": "Fictional communications policy",
+          "version": "demo-1"
+        },
+        "comparator": null,
+        "comparator_status": "not_declared",
+        "fingerprint": "dc8c0c57464985710313065f70001f29019dee54101ce44b0990a7cee38f5821",
+        "lens_ids": [
+          "discourse",
+          "language-norms"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Review documented language patterns and declared company policies, preserving context and alternative readings.",
+        "policy_alignment_status": "policy_supplied_unverified",
+        "profile_id": "company",
+        "question": "How does our authorized organizational language vary across channels and time?",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "Scope and permissions",
+          "Organizational patterns",
+          "Policy version and alignment",
+          "Reviewed cases",
+          "Coverage and uncertainty",
+          "Method and evidence annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 9261,
+      "counts": {
+        "authored_eligible_wording_observations": 5,
+        "blocks": 5,
+        "characters": 855,
+        "context_wording_observations": 1,
+        "documents": 2,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 6,
+        "words": 125
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "html",
+      "interpretation_status": "reference_pending",
+      "media_type": "text/html; charset=utf-8",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": null,
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "9039efed8b934857111cbddd857050017b58a4b664bfc7ac56676ab4f215510e",
+      "snapshot_sha256": "d941e1feefcf3d97c1a8eba9f32f74b4bb2ad2bd6c6b45f90614e56311227f5d",
+      "source_records": [
+        {
+          "document_id": "company-policy",
+          "extracted_blocks_sha256": "7c6a179243676df5cf6917e4498d678805ef489926f6214af85eb2008326cfd4",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "cb4795ba3357de71412a11dfed54e69f3a0ab7f500a62c84e0c2328b9350d029",
+          "source_version_id": "company-policy-v1"
+        },
+        {
+          "document_id": "company-message",
+          "extracted_blocks_sha256": "f045da473dd6ee6afbaae5889fe90ba3881f1c2e78f026261f487be7e9bf59a2",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "3f2941babb2447104dbef3255d9cd55ca6fbe982fcb27e8185ae002e42515f4c",
+          "source_version_id": "company-message-v1"
+        }
+      ]
+    },
+    "json": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 6,
+        "wording_observations_total": 6
+      },
+      "brief": {
+        "audience": "Fictional communications team",
+        "company_policy": {
+          "text": "This fictional company asks staff to state the requested action, name the responsible team where appropriate, and give a clear deadline. A direct request can be appropriate; qualification can be appropriate when information is incomplete.\n\nQuoted complaints and reports of discrimination must retain attribution. The policy does not authorize employee rankings, emotional diagnoses or inferences about religious or political beliefs.",
+          "title": "Fictional communications policy",
+          "version": "demo-1"
+        },
+        "comparator": null,
+        "comparator_status": "not_declared",
+        "fingerprint": "dc8c0c57464985710313065f70001f29019dee54101ce44b0990a7cee38f5821",
+        "lens_ids": [
+          "discourse",
+          "language-norms"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Review documented language patterns and declared company policies, preserving context and alternative readings.",
+        "policy_alignment_status": "policy_supplied_unverified",
+        "profile_id": "company",
+        "question": "How does our authorized organizational language vary across channels and time?",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "Scope and permissions",
+          "Organizational patterns",
+          "Policy version and alignment",
+          "Reviewed cases",
+          "Coverage and uncertainty",
+          "Method and evidence annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 11150,
+      "counts": {
+        "authored_eligible_wording_observations": 5,
+        "blocks": 5,
+        "characters": 855,
+        "context_wording_observations": 1,
+        "documents": 2,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 6,
+        "words": 125
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "json",
+      "interpretation_status": "reference_pending",
+      "media_type": "application/json",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": null,
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "d941e1feefcf3d97c1a8eba9f32f74b4bb2ad2bd6c6b45f90614e56311227f5d",
+      "snapshot_sha256": "d941e1feefcf3d97c1a8eba9f32f74b4bb2ad2bd6c6b45f90614e56311227f5d",
+      "source_records": [
+        {
+          "document_id": "company-policy",
+          "extracted_blocks_sha256": "7c6a179243676df5cf6917e4498d678805ef489926f6214af85eb2008326cfd4",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "cb4795ba3357de71412a11dfed54e69f3a0ab7f500a62c84e0c2328b9350d029",
+          "source_version_id": "company-policy-v1"
+        },
+        {
+          "document_id": "company-message",
+          "extracted_blocks_sha256": "f045da473dd6ee6afbaae5889fe90ba3881f1c2e78f026261f487be7e9bf59a2",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "3f2941babb2447104dbef3255d9cd55ca6fbe982fcb27e8185ae002e42515f4c",
+          "source_version_id": "company-message-v1"
+        }
+      ]
+    },
+    "pdf": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 6,
+        "wording_observations_total": 6
+      },
+      "brief": {
+        "audience": "Fictional communications team",
+        "company_policy": {
+          "text": "This fictional company asks staff to state the requested action, name the responsible team where appropriate, and give a clear deadline. A direct request can be appropriate; qualification can be appropriate when information is incomplete.\n\nQuoted complaints and reports of discrimination must retain attribution. The policy does not authorize employee rankings, emotional diagnoses or inferences about religious or political beliefs.",
+          "title": "Fictional communications policy",
+          "version": "demo-1"
+        },
+        "comparator": null,
+        "comparator_status": "not_declared",
+        "fingerprint": "dc8c0c57464985710313065f70001f29019dee54101ce44b0990a7cee38f5821",
+        "lens_ids": [
+          "discourse",
+          "language-norms"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Review documented language patterns and declared company policies, preserving context and alternative readings.",
+        "policy_alignment_status": "policy_supplied_unverified",
+        "profile_id": "company",
+        "question": "How does our authorized organizational language vary across channels and time?",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "Scope and permissions",
+          "Organizational patterns",
+          "Policy version and alignment",
+          "Reviewed cases",
+          "Coverage and uncertainty",
+          "Method and evidence annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 29900,
+      "counts": {
+        "authored_eligible_wording_observations": 5,
+        "blocks": 5,
+        "characters": 855,
+        "context_wording_observations": 1,
+        "documents": 2,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 6,
+        "words": 125
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "pdf",
+      "interpretation_status": "reference_pending",
+      "media_type": "application/pdf",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": {
+        "font_file": "DejaVuSans.ttf",
+        "missing_code_points": []
+      },
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "e9a33b30fe436ce881d5a1eacd023c3a67ced632942292c2b4b2969c283f74c2",
+      "snapshot_sha256": "d941e1feefcf3d97c1a8eba9f32f74b4bb2ad2bd6c6b45f90614e56311227f5d",
+      "source_records": [
+        {
+          "document_id": "company-policy",
+          "extracted_blocks_sha256": "7c6a179243676df5cf6917e4498d678805ef489926f6214af85eb2008326cfd4",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "cb4795ba3357de71412a11dfed54e69f3a0ab7f500a62c84e0c2328b9350d029",
+          "source_version_id": "company-policy-v1"
+        },
+        {
+          "document_id": "company-message",
+          "extracted_blocks_sha256": "f045da473dd6ee6afbaae5889fe90ba3881f1c2e78f026261f487be7e9bf59a2",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "3f2941babb2447104dbef3255d9cd55ca6fbe982fcb27e8185ae002e42515f4c",
+          "source_version_id": "company-message-v1"
+        }
+      ]
+    },
+    "xlsx": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 6,
+        "wording_observations_total": 6
+      },
+      "brief": {
+        "audience": "Fictional communications team",
+        "company_policy": {
+          "text": "This fictional company asks staff to state the requested action, name the responsible team where appropriate, and give a clear deadline. A direct request can be appropriate; qualification can be appropriate when information is incomplete.\n\nQuoted complaints and reports of discrimination must retain attribution. The policy does not authorize employee rankings, emotional diagnoses or inferences about religious or political beliefs.",
+          "title": "Fictional communications policy",
+          "version": "demo-1"
+        },
+        "comparator": null,
+        "comparator_status": "not_declared",
+        "fingerprint": "dc8c0c57464985710313065f70001f29019dee54101ce44b0990a7cee38f5821",
+        "lens_ids": [
+          "discourse",
+          "language-norms"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Review documented language patterns and declared company policies, preserving context and alternative readings.",
+        "policy_alignment_status": "policy_supplied_unverified",
+        "profile_id": "company",
+        "question": "How does our authorized organizational language vary across channels and time?",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "Scope and permissions",
+          "Organizational patterns",
+          "Policy version and alignment",
+          "Reviewed cases",
+          "Coverage and uncertainty",
+          "Method and evidence annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 15732,
+      "counts": {
+        "authored_eligible_wording_observations": 5,
+        "blocks": 5,
+        "characters": 855,
+        "context_wording_observations": 1,
+        "documents": 2,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 6,
+        "words": 125
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "xlsx",
+      "interpretation_status": "reference_pending",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": null,
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "d3a5bb11aca6b813216228c35068e0bf90836120544d8f8b277275132c671492",
+      "snapshot_sha256": "d941e1feefcf3d97c1a8eba9f32f74b4bb2ad2bd6c6b45f90614e56311227f5d",
+      "source_records": [
+        {
+          "document_id": "company-policy",
+          "extracted_blocks_sha256": "7c6a179243676df5cf6917e4498d678805ef489926f6214af85eb2008326cfd4",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "cb4795ba3357de71412a11dfed54e69f3a0ab7f500a62c84e0c2328b9350d029",
+          "source_version_id": "company-policy-v1"
+        },
+        {
+          "document_id": "company-message",
+          "extracted_blocks_sha256": "f045da473dd6ee6afbaae5889fe90ba3881f1c2e78f026261f487be7e9bf59a2",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "3f2941babb2447104dbef3255d9cd55ca6fbe982fcb27e8185ae002e42515f4c",
+          "source_version_id": "company-message-v1"
+        }
+      ]
+    }
+  },
+  "data_origin": "synthetic_demonstration",
+  "description": "Authored fictional sources demonstrate report software; these are not model-quality or prejudice-detection results.",
+  "files": [
+    {
+      "bytes": 4679,
+      "file": "v05-pilot-demo-company.input.json",
+      "sha256": "332e86143935529eda4083552088344ee0a0fa86eca5b5000908179ffa7f94f4"
+    },
+    {
+      "bytes": 29900,
+      "file": "v05-pilot-demo-company.pdf",
+      "sha256": "e9a33b30fe436ce881d5a1eacd023c3a67ced632942292c2b4b2969c283f74c2"
+    },
+    {
+      "bytes": 9261,
+      "file": "v05-pilot-demo-company.html",
+      "sha256": "9039efed8b934857111cbddd857050017b58a4b664bfc7ac56676ab4f215510e"
+    },
+    {
+      "bytes": 15732,
+      "file": "v05-pilot-demo-company.xlsx",
+      "sha256": "d3a5bb11aca6b813216228c35068e0bf90836120544d8f8b277275132c671492"
+    },
+    {
+      "bytes": 11150,
+      "file": "v05-pilot-demo-company.json",
+      "sha256": "d941e1feefcf3d97c1a8eba9f32f74b4bb2ad2bd6c6b45f90614e56311227f5d"
+    },
+    {
+      "bytes": 433,
+      "file": "pilot-v05-inputs/company-policy.txt",
+      "sha256": "cb4795ba3357de71412a11dfed54e69f3a0ab7f500a62c84e0c2328b9350d029"
+    },
+    {
+      "bytes": 428,
+      "file": "pilot-v05-inputs/company-message.txt",
+      "sha256": "3f2941babb2447104dbef3255d9cd55ca6fbe982fcb27e8185ae002e42515f4c"
+    }
+  ],
+  "human_reference_labels": 0,
+  "model_requests": 0,
+  "network_requests": 0,
+  "operator_signed_reviews": 0,
+  "profile": "company",
+  "schema_version": "doxa-synthetic-pilot-demonstration-1.0"
+}

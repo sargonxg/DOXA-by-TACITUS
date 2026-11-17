@@ -56,8 +56,11 @@ def _casebook_child(config_path, output, format, profile):
 
 
 class ReportJobs:
-    def __init__(self, store):
+    def __init__(self, store, *, access_control=None):
+        from .access import AccessControl
         self.store = store
+        self.access_control = access_control or AccessControl.from_environment()
+        self.access_control.ensure_native(store)
         self._stop = threading.Event()
         self._loop_task = None
         self._tasks: dict[str, asyncio.Task] = {}
@@ -102,6 +105,9 @@ class ReportJobs:
         result["progress"] = json.loads(row["progress_json"] or "{}")
         result["error"] = json.loads(row["error_json"]) if row["error_json"] else None
         result["cancel_requested"] = bool(row["cancel_requested"])
+        execution = json.loads(row["state_json"] or "{}")
+        if execution.get("managed_access"):
+            result["execution"] = {"managed_access": True, "actor_id": execution.get("execution_actor_id")}
         result["can_restart"] = row["status"] in {"failed", "cancelled"} and (result["error"] or {}).get("code") != "source_changed"
         result["artifacts"] = [{"format": item["format"], "filename": item["filename"], "bytes": item["bytes"], "sha256": item["sha256"],
                                 "download_url": f'/api/v3/report-jobs/{identity}/artifacts/{item["format"]}'} for item in self.store.query("SELECT * FROM report_job_artifacts WHERE job_id=? ORDER BY format", [identity])] if row["status"] == "completed" else []
@@ -130,6 +136,12 @@ class ReportJobs:
                 "total": self.store.one("SELECT COUNT(*) n FROM report_jobs WHERE project_id=?", [project_id])["n"]}
 
     def create(self, project_id, body):
+        from .privacy_lifecycle import activity
+        with activity(self.store, project_id, "report_submit"):
+            return self._create(project_id, body)
+
+    def _create(self, project_id, body):
+        execution = self._submission_actor(project_id)
         unknown = set(body) - {"query_id", "format", "profile", "publication_type", "casebook_id"}
         if unknown:
             raise ValueError("Unsupported report-job fields: " + ", ".join(sorted(unknown)))
@@ -150,10 +162,13 @@ class ReportJobs:
             config = report_source.source_config(self.store, project_id, str(body.get("query_id", "")), profile)
         identity, now = uuid.uuid4().hex, utcnow()
         key = f"report-jobs/{identity}/config.json"
+        if not self.store.remote:
+            from .privacy_lifecycle import track_artifact
+            track_artifact(self.store, project_id, f"objects/report-jobs/{identity}", "report_job")
         self.store.put_json(key, config)
         self.store.execute("INSERT INTO report_jobs(id,project_id,query_id,casebook_id,casebook_revision,publication_type,format,profile,status,phase,scope_hash,snapshot_version,config_key,state_json,progress_json,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,'queued','queued',?,?,?,?,?,?,?)", [
             identity, project_id, config["query_id"], body.get("casebook_id"), config.get("casebook", {}).get("revision"), publication, format, profile,
-            config["scope_hash"], config["snapshot_version"], key, compact({"stage": 0, "cursor": "", "ordinal": 0}),
+            config["scope_hash"], config["snapshot_version"], key, compact({"stage": 0, "cursor": "", "ordinal": 0, **execution}),
             compact({"phase": "queued", "completed": 0, "total": 0, "percent": 0, "message": "Waiting to freeze report inputs"}), now, now])
         if self.store.remote:
             try:
@@ -172,15 +187,30 @@ class ReportJobs:
         return self.get(identity)
 
     def restart(self, identity):
+        from .privacy_lifecycle import activity
+        row = self._row(identity)
+        with activity(self.store, row["project_id"], "report_restart"):
+            return self._restart(identity)
+
+    def _restart(self, identity):
         if not self.get(identity)["can_restart"]:
             raise HTTPException(409, "This job cannot be restarted; refresh its source query and create a new report")
-        self.store.execute("UPDATE report_jobs SET status='queued',phase='queued',cancel_requested=0,error_json=NULL,lease_token=NULL,lease_until=NULL,completed_at=NULL,updated_at=? WHERE id=? AND status IN ('failed','cancelled')", [utcnow(), identity])
+        row = self._row(identity)
+        state = {**json.loads(row["state_json"] or "{}"), **self._submission_actor(row["project_id"])}
+        self.store.execute("UPDATE report_jobs SET status='queued',phase='queued',cancel_requested=0,error_json=NULL,lease_token=NULL,lease_until=NULL,completed_at=NULL,state_json=?,updated_at=? WHERE id=? AND status IN ('failed','cancelled')", [compact(state), utcnow(), identity])
         if self.store.remote:
             self.store.enqueue_report(identity)
         return self.get(identity)
 
     def _check(self, identity, lease):
         row = self._row(identity)
+        if not self.store.remote:
+            from .privacy_lifecycle import ProjectErasingError, require_active_project
+            try:
+                require_active_project(self.store, row["project_id"])
+            except ProjectErasingError:
+                raise Cancelled() from None
+        self._require_authorized(row)
         if self._stop.is_set():
             raise Stopped()
         if row["cancel_requested"]:
@@ -190,6 +220,59 @@ class ReportJobs:
         self.store.execute("UPDATE report_jobs SET lease_until=?,updated_at=? WHERE id=? AND lease_token=? AND status='running'", [time.time()+480, utcnow(), identity, lease])
 
     def work_once(self, identity, *, deadline_seconds=420):
+        from .access import WorkerAuthorizationError
+        from .privacy_lifecycle import ProjectErasingError, activity
+        row = self._row(identity)
+        if row["status"] in TERMINAL:
+            return {"pending": False, "status": row["status"], "job_id": identity}
+        try:
+            with activity(self.store, row["project_id"], "report_worker"):
+                self._require_authorized(row)
+                return self._work_once(identity, deadline_seconds=deadline_seconds)
+        except WorkerAuthorizationError as error:
+            self._authorization_failed(row, error)
+            current = self._row(identity)
+            return {"pending": current["status"] not in TERMINAL, "status": current["status"], "job_id": identity}
+        except ProjectErasingError:
+            return {"pending": False, "status": "cancelled", "job_id": identity}
+
+    def _submission_actor(self, project_id):
+        from .access import WorkerAuthorizationError, current_principal
+        if not self.store.remote:
+            from .privacy_lifecycle import require_exports
+            try:
+                require_exports(self.store, project_id)
+            except ValueError:
+                raise HTTPException(403, "Exports are disabled by this project's privacy policy") from None
+        if not self.access_control.managed:
+            return {}
+        principal = current_principal()
+        try:
+            if not principal.managed:
+                raise WorkerAuthorizationError("Submit or restart this report through an authenticated project account")
+            self.access_control.require_worker(principal.id, project_id, "export")
+        except WorkerAuthorizationError as error:
+            raise HTTPException(403, str(error)) from None
+        return {"execution_actor_id": principal.id, "managed_access": True}
+
+    def _require_authorized(self, row):
+        from .access import WorkerAuthorizationError
+        if self.access_control.managed:
+            state = json.loads(row["state_json"] or "{}")
+            self.access_control.require_worker(state.get("execution_actor_id"), row["project_id"], "export")
+        if not self.store.remote:
+            from .privacy_lifecycle import require_exports
+            try:
+                require_exports(self.store, row["project_id"])
+            except ValueError:
+                raise WorkerAuthorizationError("Export is no longer permitted by this project's privacy policy") from None
+
+    def _authorization_failed(self, row, error, lease=None):
+        match, value = ("lease_token=?", lease) if lease else ("state_json=?", row["state_json"])
+        self.store.execute("UPDATE report_jobs SET status='failed',phase='failed',error_json=?,lease_token=NULL,lease_until=NULL,completed_at=?,updated_at=? WHERE id=? AND " + match + " AND status IN ('queued','running')",
+                           [compact({"code": "authorization_required", "message": str(error)[:1000]}), utcnow(), utcnow(), row["id"], value])
+
+    def _work_once(self, identity, *, deadline_seconds=420):
         row = self._row(identity)
         if row["status"] in TERMINAL:
             return {"pending": False, "status": row["status"], "job_id": identity}
@@ -273,6 +356,11 @@ class ReportJobs:
         except Stopped:
             self._pause(identity, lease, json.loads(self._row(identity)["state_json"]))
         except Exception as error:
+            from .access import WorkerAuthorizationError
+            if isinstance(error, WorkerAuthorizationError):
+                self._authorization_failed(self._row(identity), error, lease)
+                current = self._row(identity)
+                return {"pending": current["status"] not in TERMINAL, "status": current["status"], "job_id": identity}
             code = "source_changed" if isinstance(error, report_source.SourceChanged) else "render_timeout" if isinstance(error, TimeoutError) else "report_failed"
             self.store.execute("UPDATE report_jobs SET status='failed',phase='failed',error_json=?,lease_token=NULL,lease_until=NULL,completed_at=?,updated_at=? WHERE id=? AND lease_token=?", [compact({"code": code, "message": str(error)[:1000]}), utcnow(), utcnow(), identity, lease])
         finally:

@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.5.0 — 2026-11-17
+
+The guided-pilot foundation adds Company, Public and Personal inquiry profiles to the one-page workbench. Save a versioned question and scope, import authorized messages or selected writing, estimate work, inspect exact wording observations, and generate bounded PDF/HTML/XLSX/JSON briefings. New synthetic examples disclose zero inference and pending human reference labels.
+
+- Dedicated native managed access: individual hashed credentials, private sessions, roles/project grants, trusted review identity, worker-time authorization and credential rotation. Shared Cloudflare SaaS tenancy is not introduced.
+- Native privacy policies, enforced inference/export checks, versioned pseudonymized source copies, AES-256-GCM identity vault and Unicode span mappings. Original sources remain available to authorized project readers; rules do not guarantee anonymity.
+- Durable whole-project live erasure: activity draining through streams and canceled threads, derivative ownership/inventory, resumable deletion, shared-object protection and content-free receipts. Backup/provider/downloaded copies and media wiping are explicitly outside scope.
+- Bounded EML/MBOX intake and mail-aware contextual provenance; quotations/history/signatures remain context and are excluded from mail author-group counts. Unsupported mail-normalized author rates are suppressed.
+- Expanded independent annotation forms for exact spans, targets/propositions, reporting chains, communicative acts and missing context; no labels or accuracy measures fabricated.
+- Native schema 5 with pre-upgrade backup and old-version refusal; existing Cloudflare schema 4 preserved. Original recorded runs and published baseline artifacts are retained.
+
+See [operation](docs/managed-pilots-v05.md), [reports](docs/pilot-reports-v05.md), [verification](docs/verification-v05.md) and the [remaining commercial roadmap](docs/commercial-service-roadmap.md). Independent expert evaluation, real OAuth connectors, payment/subscription integration and multi-customer SaaS are not completed by this release.
+
 ## 0.4.0 — 2026-11-17
 
 The evidence workbench adds a browser casebook composer and persistent report jobs. Curators can pin recorded outcomes or unfinished units, freeze source/framework/model/review inputs, annotate and reorder cases, and download PDF, HTML, XLSX, CSV or JSONL publications. Jobs expose progress, cancellation, restart and checksummed range downloads.

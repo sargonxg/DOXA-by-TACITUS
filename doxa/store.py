@@ -42,6 +42,9 @@ class Store:
     def init(self) -> None:
         from .migrations import migrate
         migrate(self)
+        if not self.remote:
+            from .privacy_lifecycle import ensure_schema
+            ensure_schema(self)
         if self._db:
             self._db.execute("PRAGMA journal_mode=WAL")
         self.execute("INSERT INTO batch_members(batch_id,document_id) SELECT batch_id,id FROM documents WHERE 1 ON CONFLICT(batch_id,document_id) DO NOTHING")

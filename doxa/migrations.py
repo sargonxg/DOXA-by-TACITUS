@@ -10,7 +10,8 @@ import uuid
 
 from .store import utcnow
 
-SCHEMA_VERSION = 4
+SCHEMA_VERSION = 5
+REMOTE_SCHEMA_VERSION = 4
 V4_SQL = """
 CREATE TABLE IF NOT EXISTS import_commits (
  project_id TEXT NOT NULL, source_identity TEXT NOT NULL, sha256 TEXT NOT NULL,
@@ -81,9 +82,10 @@ def _backup(store, version):
 def migrate(store):
     """Never mark a version applied ahead of its schema or modify future data."""
     current = _version(store)
-    if current > SCHEMA_VERSION:
-        raise RuntimeError(f"Workspace schema {current} is newer than supported schema {SCHEMA_VERSION}; use a matching application version")
-    if current == SCHEMA_VERSION:
+    target = REMOTE_SCHEMA_VERSION if store.remote else SCHEMA_VERSION
+    if current > target:
+        raise RuntimeError(f"Workspace schema {current} is newer than supported schema {target}; use a matching application version")
+    if current == target:
         _extensions(store)
         return
     existing = bool(store.one("SELECT name FROM sqlite_master WHERE type='table' AND name='documents'"))
@@ -116,6 +118,9 @@ def _apply(store, current):
         statements.extend(_statements(V4_SQL))
         statements.extend(_extension_statements())
         statements.append({"sql": "INSERT INTO schema_versions(version,applied_at) VALUES(?,?) ON CONFLICT(version) DO NOTHING", "params": [4, utcnow()]})
+    if current < 5 and not store.remote:
+        statements.extend(_native_extension_statements())
+        statements.append({"sql": "INSERT INTO schema_versions(version,applied_at) VALUES(?,?) ON CONFLICT(version) DO NOTHING", "params": [5, utcnow()]})
     store.batch(statements)
 
 
@@ -131,4 +136,11 @@ def _extension_statements():
 def _extensions(store):
     # Additive companion tables are idempotent within this release; this also
     # repairs an initialization interrupted between service registrations.
-    store.batch([*_statements(V4_SQL), *_extension_statements()])
+    store.batch([*_statements(V4_SQL), *_extension_statements(),
+                 *(_native_extension_statements() if not store.remote else [])])
+
+
+def _native_extension_statements():
+    from .pilot_api import SCHEMA_SQL as pilot_schema
+    from .privacy_lifecycle import SCHEMA_SQL as privacy_schema
+    return [*_statements(pilot_schema), *_statements(privacy_schema)]

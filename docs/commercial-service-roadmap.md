@@ -2,6 +2,8 @@
 
 **Research and repository review: 17 November 2026. Status: proposed work, not implemented service capabilities.**
 
+**Implementation update:** [v0.5's native pilot foundation](managed-pilots-v05.md) now implements three inquiry profiles, individual access/project grants, selected writing and mail intake, source pseudonymization with encrypted maps, privacy-policy enforcement, live-project erasure, expanded annotation forms and [guided reports](pilot-reports-v05.md). The audit below records the original v0.4 baseline. The full commercial milestones remain open: independent interpretation evaluation, qualified customer delivery, real OAuth connectors, billing, shared tenancy and production scale/residency qualification are still required.
+
 DOXA's commercial promise is **Bias Detection as a Service: evidence-led analysis of language, framing and change**. Customers should be able to ask a useful question, authorize a bounded collection, understand the method and price, inspect the findings, and receive a report they can substantiate.
 
 The founder confirmed three decisions on 17 November 2026:

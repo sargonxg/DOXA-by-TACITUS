@@ -25,6 +25,8 @@ import { request } from "../api";
 import { VerificationPanel } from "./Verification";
 import { ReportComposer } from "./Casebooks";
 import { ReviewQueue } from "./ReviewQueue";
+import type { PilotBrief } from "./PilotWorkspace";
+import { permits, useAccessSession } from "./AccessGate";
 import { exportQuery, list, message, record } from "./client";
 import {
   Badge,
@@ -77,10 +79,17 @@ type Props = {
   onVerificationStarted: (run: AnalysisRun) => void;
   onRefresh: () => void;
   onNotice: (text: string, error?: boolean) => void;
+  pilotBrief?: PilotBrief | null;
 };
 export function DrawerBody(props: Props) {
   if (props.drawer === "import") return <ImportPanel {...props} />;
-  if (props.drawer === "analyze") return <AnalysisPanel {...props} />;
+  if (props.drawer === "analyze")
+    return (
+      <AnalysisPanel
+        key={`${props.project}:${props.pilotBrief?.revision || 0}`}
+        {...props}
+      />
+    );
   if (props.drawer === "models") return <ModelsPanel {...props} />;
   if (props.drawer === "jobs") return <JobsPanel {...props} />;
   if (props.drawer === "reports")
@@ -166,11 +175,11 @@ function ImportPanel({
       >
         <Upload size={29} strokeWidth={1.4} />
         <strong>Drop documents or a TXT archive</strong>
-        <span>TXT, Markdown, PDF, DOCX, saved HTML, or ZIP</span>
+        <span>TXT, Markdown, PDF, DOCX, saved HTML, EML, MBOX, or ZIP</span>
         <input
           type="file"
           multiple
-          accept=".txt,.md,.pdf,.docx,.html,.htm,.zip"
+          accept=".txt,.md,.pdf,.docx,.html,.htm,.eml,.mbox,.zip"
           disabled={busy}
           onChange={(event) => {
             if (event.target.files) void onImport(event.target.files);
@@ -251,19 +260,25 @@ function AnalysisPanel({
   busy,
   onRun,
   onNotice,
+  pilotBrief,
 }: Props) {
+  const access = useAccessSession();
   const [question, setQuestion] = useState(
-    "Which contextual indicators and competing frames appear in this corpus, and who expresses them?",
+    pilotBrief?.question ||
+      "Which contextual indicators and competing frames appear in this corpus, and who expresses them?",
   );
   const [provider, setProvider] = useState("cloudflare");
   const [model, setModel] = useState("@cf/google/gemma-4-26b-a4b-it");
   const [selected, setSelected] = useState(
-    scope.lens_ids.length ? scope.lens_ids : ["discourse"],
+    scope.lens_ids.length
+      ? scope.lens_ids
+      : pilotBrief?.lens_ids || ["discourse"],
   );
   const [budget, setBudget] = useState("5");
   const [consent, setConsent] = useState(false);
   const [role, setRole] = useState(
-    "Discourse researcher; distinguish author assertions, reported speech, counterspeech, and uncertain context.",
+    pilotBrief?.perspective ||
+      "Discourse researcher; distinguish author assertions, reported speech, counterspeech, and uncertain context.",
   );
   const [custom, setCustom] = useState("");
   const [customName, setCustomName] = useState("");
@@ -359,6 +374,12 @@ function AnalysisPanel({
       persona: role,
       budget_usd: Number(budget),
       allow_remote_text: consent,
+      ...(pilotBrief?.revision
+        ? {
+            service_profile_id: pilotBrief.profile_id,
+            pilot_brief_revision: pilotBrief.revision,
+          }
+        : {}),
       ...tokenPrices(),
     };
     if (memory !== "active") body.learning_snapshot_id = memory || null;
@@ -388,6 +409,13 @@ function AnalysisPanel({
           Analysis freezes this source selection and the declared method.
         </span>
       </div>
+      {pilotBrief?.revision ? (
+        <p className="w-pilot-note">
+          Saved {human(pilotBrief.profile_id)} service brief · revision{" "}
+          {pilotBrief.revision}. This run retains the brief's audience and
+          declared context. Expert report review remains pending.
+        </p>
+      ) : null}
       <label>
         Research question
         <textarea
@@ -676,7 +704,11 @@ function AnalysisPanel({
         </Button>
         <Button
           disabled={
-            busy || !query?.documents.total || !model.trim() || !pricingReady
+            busy ||
+            !query?.documents.total ||
+            !model.trim() ||
+            !pricingReady ||
+            !permits(access, "analyze")
           }
           onClick={() => void submit()}
         >

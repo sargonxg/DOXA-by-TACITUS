@@ -1,0 +1,528 @@
+{
+  "artifact_manifests": {
+    "html": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 5,
+        "wording_observations_total": 5
+      },
+      "brief": {
+        "audience": "Reader learning how a comparison is scoped",
+        "company_policy": null,
+        "comparator": {
+          "date_end": "",
+          "date_start": "",
+          "genres": [
+            "news"
+          ],
+          "inclusion_rules": "Exactly the two supplied fictional hearing reports; no claim of representative media coverage.",
+          "question": "Which positions and attributed voices appear in two fictional reports of the same hearing?",
+          "source_groups": [
+            {
+              "document_ids": [
+                "public-a"
+              ],
+              "label": "Fictional report A"
+            },
+            {
+              "document_ids": [
+                "public-b"
+              ],
+              "label": "Fictional report B"
+            }
+          ],
+          "topic": "Fictional permit reform hearing"
+        },
+        "comparator_status": "declared_unverified",
+        "fingerprint": "0b66c3f45d720c26f470c9b072beb545a7a5b2cd44ca6b2d3bd9e2aff4543185",
+        "lens_ids": [
+          "political-framing",
+          "discourse"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Describe expressed positions, framing and attributed voices under declared comparison rules; preserve alternative readings.",
+        "policy_alignment_status": "not_requested",
+        "profile_id": "public",
+        "question": "How do comparable sources frame the same issue and express positions over time?",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "Question and source selection",
+          "Matched comparison design",
+          "Frames and attributed voices",
+          "Descriptive trajectories",
+          "Reviewed cases and alternatives",
+          "Coverage and reproducibility annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 9500,
+      "counts": {
+        "authored_eligible_wording_observations": 5,
+        "blocks": 4,
+        "characters": 997,
+        "context_wording_observations": 0,
+        "documents": 2,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 5,
+        "words": 144
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "html",
+      "interpretation_status": "reference_pending",
+      "media_type": "text/html; charset=utf-8",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": null,
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "7560852d1ba500463a252880240df1a1c76d5358a64b38b43371aaf6506e8cec",
+      "snapshot_sha256": "5d95172d171e258ec5ab0d602586c9ef2bc2cf8004c8044eb40adc773cdc96aa",
+      "source_records": [
+        {
+          "document_id": "public-a",
+          "extracted_blocks_sha256": "5b8333ab8e894e71958e99dfafd7bb7da3b79124f65fe1dfd153ddaa5711e59e",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "80c645f00712f67d8d3671fe6f4298e502ca4f05834096e71895062e6960d0df",
+          "source_version_id": "public-a-v1"
+        },
+        {
+          "document_id": "public-b",
+          "extracted_blocks_sha256": "399fd05bf2b4b807003c1b1ce5737dcae67265706aaf3de6c57f58f4402ded8b",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "5978e03223e08e0833f888b0dacaa9a427726e865c18fa65871892245c0b7fda",
+          "source_version_id": "public-b-v1"
+        }
+      ]
+    },
+    "json": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 5,
+        "wording_observations_total": 5
+      },
+      "brief": {
+        "audience": "Reader learning how a comparison is scoped",
+        "company_policy": null,
+        "comparator": {
+          "date_end": "",
+          "date_start": "",
+          "genres": [
+            "news"
+          ],
+          "inclusion_rules": "Exactly the two supplied fictional hearing reports; no claim of representative media coverage.",
+          "question": "Which positions and attributed voices appear in two fictional reports of the same hearing?",
+          "source_groups": [
+            {
+              "document_ids": [
+                "public-a"
+              ],
+              "label": "Fictional report A"
+            },
+            {
+              "document_ids": [
+                "public-b"
+              ],
+              "label": "Fictional report B"
+            }
+          ],
+          "topic": "Fictional permit reform hearing"
+        },
+        "comparator_status": "declared_unverified",
+        "fingerprint": "0b66c3f45d720c26f470c9b072beb545a7a5b2cd44ca6b2d3bd9e2aff4543185",
+        "lens_ids": [
+          "political-framing",
+          "discourse"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Describe expressed positions, framing and attributed voices under declared comparison rules; preserve alternative readings.",
+        "policy_alignment_status": "not_requested",
+        "profile_id": "public",
+        "question": "How do comparable sources frame the same issue and express positions over time?",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "Question and source selection",
+          "Matched comparison design",
+          "Frames and attributed voices",
+          "Descriptive trajectories",
+          "Reviewed cases and alternatives",
+          "Coverage and reproducibility annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 10523,
+      "counts": {
+        "authored_eligible_wording_observations": 5,
+        "blocks": 4,
+        "characters": 997,
+        "context_wording_observations": 0,
+        "documents": 2,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 5,
+        "words": 144
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "json",
+      "interpretation_status": "reference_pending",
+      "media_type": "application/json",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": null,
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "5d95172d171e258ec5ab0d602586c9ef2bc2cf8004c8044eb40adc773cdc96aa",
+      "snapshot_sha256": "5d95172d171e258ec5ab0d602586c9ef2bc2cf8004c8044eb40adc773cdc96aa",
+      "source_records": [
+        {
+          "document_id": "public-a",
+          "extracted_blocks_sha256": "5b8333ab8e894e71958e99dfafd7bb7da3b79124f65fe1dfd153ddaa5711e59e",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "80c645f00712f67d8d3671fe6f4298e502ca4f05834096e71895062e6960d0df",
+          "source_version_id": "public-a-v1"
+        },
+        {
+          "document_id": "public-b",
+          "extracted_blocks_sha256": "399fd05bf2b4b807003c1b1ce5737dcae67265706aaf3de6c57f58f4402ded8b",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "5978e03223e08e0833f888b0dacaa9a427726e865c18fa65871892245c0b7fda",
+          "source_version_id": "public-b-v1"
+        }
+      ]
+    },
+    "pdf": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 5,
+        "wording_observations_total": 5
+      },
+      "brief": {
+        "audience": "Reader learning how a comparison is scoped",
+        "company_policy": null,
+        "comparator": {
+          "date_end": "",
+          "date_start": "",
+          "genres": [
+            "news"
+          ],
+          "inclusion_rules": "Exactly the two supplied fictional hearing reports; no claim of representative media coverage.",
+          "question": "Which positions and attributed voices appear in two fictional reports of the same hearing?",
+          "source_groups": [
+            {
+              "document_ids": [
+                "public-a"
+              ],
+              "label": "Fictional report A"
+            },
+            {
+              "document_ids": [
+                "public-b"
+              ],
+              "label": "Fictional report B"
+            }
+          ],
+          "topic": "Fictional permit reform hearing"
+        },
+        "comparator_status": "declared_unverified",
+        "fingerprint": "0b66c3f45d720c26f470c9b072beb545a7a5b2cd44ca6b2d3bd9e2aff4543185",
+        "lens_ids": [
+          "political-framing",
+          "discourse"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Describe expressed positions, framing and attributed voices under declared comparison rules; preserve alternative readings.",
+        "policy_alignment_status": "not_requested",
+        "profile_id": "public",
+        "question": "How do comparable sources frame the same issue and express positions over time?",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "Question and source selection",
+          "Matched comparison design",
+          "Frames and attributed voices",
+          "Descriptive trajectories",
+          "Reviewed cases and alternatives",
+          "Coverage and reproducibility annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 30083,
+      "counts": {
+        "authored_eligible_wording_observations": 5,
+        "blocks": 4,
+        "characters": 997,
+        "context_wording_observations": 0,
+        "documents": 2,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 5,
+        "words": 144
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "pdf",
+      "interpretation_status": "reference_pending",
+      "media_type": "application/pdf",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": {
+        "font_file": "DejaVuSans.ttf",
+        "missing_code_points": []
+      },
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "f7737581d1b09be1fe8f2bd01b69cf72722a632781680178f82f4efb0d7c26c2",
+      "snapshot_sha256": "5d95172d171e258ec5ab0d602586c9ef2bc2cf8004c8044eb40adc773cdc96aa",
+      "source_records": [
+        {
+          "document_id": "public-a",
+          "extracted_blocks_sha256": "5b8333ab8e894e71958e99dfafd7bb7da3b79124f65fe1dfd153ddaa5711e59e",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "80c645f00712f67d8d3671fe6f4298e502ca4f05834096e71895062e6960d0df",
+          "source_version_id": "public-a-v1"
+        },
+        {
+          "document_id": "public-b",
+          "extracted_blocks_sha256": "399fd05bf2b4b807003c1b1ce5737dcae67265706aaf3de6c57f58f4402ded8b",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "5978e03223e08e0833f888b0dacaa9a427726e865c18fa65871892245c0b7fda",
+          "source_version_id": "public-b-v1"
+        }
+      ]
+    },
+    "xlsx": {
+      "appendix": {
+        "contextual_decisions_shown": 0,
+        "contextual_decisions_total": 0,
+        "full_selected_data_formats": [
+          "json",
+          "xlsx"
+        ],
+        "operator_notes_shown": 0,
+        "operator_notes_total": 0,
+        "wording_observations_shown": 5,
+        "wording_observations_total": 5
+      },
+      "brief": {
+        "audience": "Reader learning how a comparison is scoped",
+        "company_policy": null,
+        "comparator": {
+          "date_end": "",
+          "date_start": "",
+          "genres": [
+            "news"
+          ],
+          "inclusion_rules": "Exactly the two supplied fictional hearing reports; no claim of representative media coverage.",
+          "question": "Which positions and attributed voices appear in two fictional reports of the same hearing?",
+          "source_groups": [
+            {
+              "document_ids": [
+                "public-a"
+              ],
+              "label": "Fictional report A"
+            },
+            {
+              "document_ids": [
+                "public-b"
+              ],
+              "label": "Fictional report B"
+            }
+          ],
+          "topic": "Fictional permit reform hearing"
+        },
+        "comparator_status": "declared_unverified",
+        "fingerprint": "0b66c3f45d720c26f470c9b072beb545a7a5b2cd44ca6b2d3bd9e2aff4543185",
+        "lens_ids": [
+          "political-framing",
+          "discourse"
+        ],
+        "method_version": "doxa-service-profiles-1.0",
+        "perspective": "Describe expressed positions, framing and attributed voices under declared comparison rules; preserve alternative readings.",
+        "policy_alignment_status": "not_requested",
+        "profile_id": "public",
+        "question": "How do comparable sources frame the same issue and express positions over time?",
+        "readiness": {
+          "automated_verdicts_enabled": false,
+          "expert_review_required": true,
+          "interpretation_accuracy_measured": false,
+          "mode": "guided_pilot",
+          "reference_status": "reference_pending"
+        },
+        "report_sections": [
+          "Question and source selection",
+          "Matched comparison design",
+          "Frames and attributed voices",
+          "Descriptive trajectories",
+          "Reviewed cases and alternatives",
+          "Coverage and reproducibility annex"
+        ],
+        "schema_version": "doxa-service-brief-1.0"
+      },
+      "bytes": 15818,
+      "counts": {
+        "authored_eligible_wording_observations": 5,
+        "blocks": 4,
+        "characters": 997,
+        "context_wording_observations": 0,
+        "documents": 2,
+        "operator_commentary": 0,
+        "operator_signed_notes": 0,
+        "saved_contextual_decisions": 0,
+        "wording_observations": 5,
+        "words": 144
+      },
+      "data_origin": "synthetic_demonstration",
+      "data_scope": "full bounded selected input; not necessarily the entire project",
+      "delivery": "bounded synchronous artifact; not a durable report job",
+      "expert_qualification": "not_verified_by_application",
+      "format": "xlsx",
+      "interpretation_status": "reference_pending",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "model_inference_performed_by_renderer": false,
+      "observation_method": "doxa-observable-language-1.0",
+      "pdf_font": null,
+      "privacy_disclosure": {
+        "human_review": "No real expert review or independent reference labels were supplied.",
+        "identity_map": "none",
+        "mode": "synthetic originals",
+        "processing": "Local deterministic markers and report rendering only; no model inference.",
+        "source_material": "All documents, names and correspondence are fictional software demonstrations."
+      },
+      "run_provenance": null,
+      "schema_version": "doxa-guided-pilot-report-1.0",
+      "sha256": "d7287d8696b2d5de456c863a950fe385c09b843b582a6d325187d1925375ff78",
+      "snapshot_sha256": "5d95172d171e258ec5ab0d602586c9ef2bc2cf8004c8044eb40adc773cdc96aa",
+      "source_records": [
+        {
+          "document_id": "public-a",
+          "extracted_blocks_sha256": "5b8333ab8e894e71958e99dfafd7bb7da3b79124f65fe1dfd153ddaa5711e59e",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "80c645f00712f67d8d3671fe6f4298e502ca4f05834096e71895062e6960d0df",
+          "source_version_id": "public-a-v1"
+        },
+        {
+          "document_id": "public-b",
+          "extracted_blocks_sha256": "399fd05bf2b4b807003c1b1ce5737dcae67265706aaf3de6c57f58f4402ded8b",
+          "source_hash_origin": "recorded source metadata; original bytes not read by renderer",
+          "source_sha256": "5978e03223e08e0833f888b0dacaa9a427726e865c18fa65871892245c0b7fda",
+          "source_version_id": "public-b-v1"
+        }
+      ]
+    }
+  },
+  "data_origin": "synthetic_demonstration",
+  "description": "Authored fictional sources demonstrate report software; these are not model-quality or prejudice-detection results.",
+  "files": [
+    {
+      "bytes": 4634,
+      "file": "v05-pilot-demo-public.input.json",
+      "sha256": "e7ea32ee055f2c43d5bc3db8918a095f532e694cdb398a1094413cdd3c925f8b"
+    },
+    {
+      "bytes": 30083,
+      "file": "v05-pilot-demo-public.pdf",
+      "sha256": "f7737581d1b09be1fe8f2bd01b69cf72722a632781680178f82f4efb0d7c26c2"
+    },
+    {
+      "bytes": 9500,
+      "file": "v05-pilot-demo-public.html",
+      "sha256": "7560852d1ba500463a252880240df1a1c76d5358a64b38b43371aaf6506e8cec"
+    },
+    {
+      "bytes": 15818,
+      "file": "v05-pilot-demo-public.xlsx",
+      "sha256": "d7287d8696b2d5de456c863a950fe385c09b843b582a6d325187d1925375ff78"
+    },
+    {
+      "bytes": 10523,
+      "file": "v05-pilot-demo-public.json",
+      "sha256": "5d95172d171e258ec5ab0d602586c9ef2bc2cf8004c8044eb40adc773cdc96aa"
+    },
+    {
+      "bytes": 493,
+      "file": "pilot-v05-inputs/public-a.txt",
+      "sha256": "80c645f00712f67d8d3671fe6f4298e502ca4f05834096e71895062e6960d0df"
+    },
+    {
+      "bytes": 508,
+      "file": "pilot-v05-inputs/public-b.txt",
+      "sha256": "5978e03223e08e0833f888b0dacaa9a427726e865c18fa65871892245c0b7fda"
+    }
+  ],
+  "human_reference_labels": 0,
+  "model_requests": 0,
+  "network_requests": 0,
+  "operator_signed_reviews": 0,
+  "profile": "public",
+  "schema_version": "doxa-synthetic-pilot-demonstration-1.0"
+}

@@ -26,6 +26,7 @@ OPERATIONAL_KEYS = frozenset({
     "private_journal_limit_bytes", "profile_wall_limit_seconds",
     "allow_remote_text", "allow_unknown_cost", "document_ids", "unit_ids",
     "verification_of", "verification_selection", "created_at", "updated_at",
+    "execution_actor_id", "managed_access",
 })
 MEMORY_KEYS = frozenset({"learning_snapshot_id", "approved_examples", "approved_example_ids"})
 SECRET_KEYS = frozenset({"api_key", "api_token", "authorization", "headers", "password", "secret", "token", "credentials"})

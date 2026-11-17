@@ -14,6 +14,30 @@ DOXA is a browser research workspace for discourse, political framing and contex
 
 The highlighted source is [Dahlia Kholaif's Global Voices report](https://globalvoices.org/2020/12/29/saudi-court-slams-jail-term-to-iconic-female-activist-despite-global-criticism/), December 29, 2020, CC BY 3.0. Its displayed model reading remains a proposal for review.
 
+## v0.5 · guided pilot foundation
+
+**Choose Company, Public or Personal, save the inquiry, control source transfer, and publish a source-linked report from the same workbench.** Local operation remains available without an account. A dedicated native installation can add individual credentials, project grants and accountable review identities.
+
+![The actual v0.5 workbench with three service profiles, privacy controls and linked source context.](docs/images/workspace-v05-pilot.png)
+
+*Actual browser/API workflow using explicitly synthetic sources. It demonstrates application behavior; interpretation validation remains pending. [Mobile source inspector](docs/images/workspace-v05-mobile.png).*
+
+| New workflow | What is implemented |
+| --- | --- |
+| **Three inquiry profiles** | Versioned question, audience, perspective, frameworks, declared company policy and comparison design; saved briefs are frozen into new runs. Supplied policy/comparator plans remain unverified. |
+| **Selected writing and email** | Paste and explicitly save selected writing; import EML/MBOX with message context, quotations, forwards, signatures and attachment exclusions. English wording markers retain exact spans and distinguish authored text from context. |
+| **Private pilot access** | Operator-provisioned individual credentials, HttpOnly sessions, roles and project grants; requests, downloads and background jobs check authority. Personal review requires a dedicated personal installation in managed mode. |
+| **Privacy and lifecycle** | Destination/export policies, optional pseudonymized source versions, encrypted identity maps, Unicode span mappings, resumable whole-project erasure and receipts. Originals remain accessible to authorized project readers; retention dates require operator review. |
+| **Reviewed publication** | Task-specific PDF/HTML/XLSX/JSON briefings, qualified charts, exact evidence, separately attributed operator notes and integrity manifests. Full existing casebook/report jobs remain available for larger archives. |
+
+**[Operate a private pilot](docs/managed-pilots-v05.md)** · [Report methodology and limits](docs/pilot-reports-v05.md) · [Verification](docs/verification-v05.md) · [Commercial roadmap](docs/commercial-service-roadmap.md).
+
+<a href="examples/v05-pilot-demo-company.pdf"><img src="docs/images/v05-company-report-preview.png" width="215" alt="Open the synthetic company-language pilot report PDF."></a> <a href="examples/v05-pilot-demo-public.pdf"><img src="docs/images/v05-public-report-preview.png" width="215" alt="Open the synthetic public-source comparison pilot report PDF."></a> <a href="examples/v05-pilot-demo-personal.pdf"><img src="docs/images/v05-personal-report-preview.png" width="215" alt="Open the synthetic selected-writing pilot report PDF."></a>
+
+**[Company PDF](examples/v05-pilot-demo-company.pdf)** · **[Public PDF](examples/v05-pilot-demo-public.pdf)** · **[Personal PDF](examples/v05-pilot-demo-personal.pdf)**. These new examples use published synthetic TXT inputs, no inference and no human reference labels. [Inspect all formats, inputs and manifests](docs/pilot-reports-v05.md). The real-source model reports below remain separate recorded demonstrations.
+
+Native workspaces upgrade to schema 5 with a checked pre-upgrade database backup; older applications must not write the upgraded workspace. Stop the server and back up database **and objects** before upgrading. Cloudflare retains schema 4 and its shared private-workspace profile. OAuth connectors, subscription billing, shared SaaS tenancy and independent interpretation validation remain future work in the commercial roadmap.
+
 ## v0.4 · the evidence workbench
 
 **Compose a casebook in the browser, freeze its evidence, and generate a downloadable report in a persistent background job.** Choose a briefing, teaching packet, casebook or complete archive; retain exact source passages, original model readings, framework conditions, review state and your separately attributed editorial notes. Jobs expose progress, cancellation, restart and resumable artifact downloads.
@@ -81,7 +105,7 @@ Open **http://localhost:8000**. In **Import**, load a recorded collection or add
 The release also supplies a self-contained application wheel. Install the downloaded wheel and start it without Node or a source checkout:
 
 ```sh
-python -m pip install ./doxa_by_tacitus-0.4.0-py3-none-any.whl
+python -m pip install ./doxa_by_tacitus-0.5.0-py3-none-any.whl
 doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data
 ```
 

@@ -52,6 +52,9 @@ def restore_showcase(store: Store, project_id: str, documents: list[dict], path:
         if saved.get("sha256") == digest and saved.get("import_complete"):
             return previous["id"]
     run_id = hashlib.sha256(f"{project_id}:{digest}".encode()).hexdigest()[:32]
+    if not store.remote:
+        from .privacy_lifecycle import track_artifact
+        track_artifact(store, project_id, f"objects/runs/{run_id}", "recorded_run")
     config = dict(source_run["config"])
     config["source_snapshot"] = [{"id": d["id"], "sha256": d["sha256"]} for d in documents]
     if config.get("source_manifest_key"):

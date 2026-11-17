@@ -128,6 +128,7 @@ export type Metrics = {
   analysis_kind: string;
   legacy_findings: number;
   not_assessed_lenses?: string[];
+  author_analysis?: Item;
   cost_usd: number;
 };
 export type Facet = {
@@ -171,6 +172,7 @@ export type MatrixCell = {
   documents: number;
   coverage: number;
   coverage_basis?: string;
+  author_grouping?: string;
 };
 export type QueryResult = {
   query_id: string;

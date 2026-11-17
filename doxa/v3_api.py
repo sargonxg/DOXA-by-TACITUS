@@ -4,7 +4,6 @@ from __future__ import annotations
 import asyncio
 import json
 import math
-import os
 import uuid
 from contextlib import nullcontext
 
@@ -38,6 +37,10 @@ def register(app: FastAPI, services: dict) -> None:
     def db():
         return services["db"]()
 
+    async def project_thread(project_id, kind, function, *args, **kwargs):
+        from .privacy_lifecycle import run_activity
+        return await asyncio.to_thread(run_activity, db(), project_id, kind, function, *args, **kwargs)
+
     def workspace():
         return Workspace(db())
 
@@ -45,13 +48,8 @@ def register(app: FastAPI, services: dict) -> None:
         return services["require_project"](identity)
 
     def actor(request: Request) -> dict:
-        # A loopback operator declares their review. It is not independent annotation.
-        # Remote deployments may pin a verified operator identity in server config;
-        # browser-supplied actor_kind/reviewer headers never elevate agent records.
-        identity = os.environ.get("DOXA_REVIEWER_ID")
-        if db().remote and not identity:
-            raise HTTPException(403, "Set a trusted DOXA_REVIEWER_ID on this private workspace before approving reviews")
-        return {"actor_kind": "human", "actor_id": identity or "local-operator (self-declared)"}
+        from .access import trusted_actor
+        return trusted_actor(request, db())
 
     def call(function, *args, **kwargs):
         try:
@@ -134,7 +132,7 @@ def register(app: FastAPI, services: dict) -> None:
                 raise HTTPException(404, "Query does not belong to this project")
             document_ids = workspace().document_ids(saved)
         try:
-            return await asyncio.to_thread(SemanticIndex(db(), cpu_runtime()).build, project_id, document_ids)
+            return await project_thread(project_id, "semantic_index", SemanticIndex(db(), cpu_runtime()).build, project_id, document_ids)
         except (ValueError, RuntimeError, ImportError, OSError) as error:
             raise HTTPException(422, str(error)) from error
 
@@ -152,7 +150,7 @@ def register(app: FastAPI, services: dict) -> None:
                 raise HTTPException(404, "Query does not belong to this project")
             document_ids = workspace().document_ids(saved)
         try:
-            return await asyncio.to_thread(SemanticIndex(db(), cpu_runtime()).search, project_id, text,
+            return await project_thread(project_id, "semantic_search", SemanticIndex(db(), cpu_runtime()).search, project_id, text,
                                            limit=max(1, min(int(body.get("limit", 20)), 50)), document_ids=document_ids)
         except (ValueError, RuntimeError, ImportError, OSError) as error:
             raise HTTPException(422, str(error)) from error
@@ -174,7 +172,7 @@ def register(app: FastAPI, services: dict) -> None:
         try:
             results = []
             for block in blocks:
-                value = await asyncio.to_thread(cpu_runtime().score_rubrics, block["text"], hypotheses)
+                value = await project_thread(project_id, "rubric_score", cpu_runtime().score_rubrics, block["text"], hypotheses)
                 results.append({"block_id": block["id"], **value})
             return {"document_id": document["id"], "results": results, "semantic_coverage": "selected blocks only",
                     "notice": "Experimental uncalibrated entailment scores, not prejudice findings or probabilities."}
@@ -396,8 +394,12 @@ def register(app: FastAPI, services: dict) -> None:
                         "snapshot_version": saved["snapshot_version"], "generated_at": utcnow(), "reviews": reviews}
         identity = uuid.uuid4().hex
         output = db().root / "exports" / identity
+        if not db().remote:
+            from .privacy_lifecycle import track_artifact
+            track_artifact(db(), project_id, f"exports/{identity}", "report_work")
+            track_artifact(db(), project_id, f"objects/reports/{identity}", "report_artifact")
         output.mkdir(parents=True)
-        path = await asyncio.to_thread(build_report, snapshot, fmt, output)
+        path = await project_thread(project_id, "legacy_v3_report_render", build_report, snapshot, fmt, output)
         key, snapshot_key = f"reports/{identity}/{path.name}", f"reports/{identity}/snapshot.json"
         db().put_path(key, path)
         db().put_json(snapshot_key, snapshot)
@@ -415,8 +417,8 @@ def register(app: FastAPI, services: dict) -> None:
             if services.get("use_saved_showcase", True) and package.exists():
                 try:
                     read_manifest(package)
-                    documents, batch = await asyncio.to_thread(import_institution_sources, db(), project_id, services["root"])
-                    run_id = await asyncio.to_thread(restore_showcase_v3, db(), project_id, documents, package)
+                    documents, batch = await project_thread(project_id, "institutional_import", import_institution_sources, db(), project_id, services["root"])
+                    run_id = await project_thread(project_id, "recorded_import", restore_showcase_v3, db(), project_id, documents, package)
                     workspace().touch(project_id)
                     return {"documents": len(documents), "run": {"id": run_id}, "batch": batch, "collection": "institutions", "saved_results": True,
                             "notice": "Real public documents with previously computed contextual results. Exact source anchors were checked again. No inference was requested; inspect coverage and review state."}
@@ -433,7 +435,7 @@ def register(app: FastAPI, services: dict) -> None:
             raise HTTPException(422, "Choose news or institutions")
         from .news import import_news
         try:
-            result = await asyncio.to_thread(import_news, db(), project_id, services["root"], use_saved_showcase=services.get("use_saved_showcase", True))
+            result = await project_thread(project_id, "news_import", import_news, db(), project_id, services["root"], use_saved_showcase=services.get("use_saved_showcase", True))
         except (ValueError, OSError, KeyError, TypeError) as error:
             raise HTTPException(503, str(error)) from error
         workspace().touch(project_id)

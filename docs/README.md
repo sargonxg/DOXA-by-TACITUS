@@ -16,6 +16,7 @@ DOXA is an open-source evidence workbench packaged as **Bias Detection as a Serv
 
 | Task | Documentation |
 | --- | --- |
+| Operate Company, Public and Personal guided pilots | [Native access and privacy guide](managed-pilots-v05.md) · [report guide and three PDFs](pilot-reports-v05.md) · [v0.5 verification](verification-v05.md) |
 | Install, persist, back up and deploy | [Deployment](deployment.md) · [architecture](architecture.md) |
 | Choose local or cloud models | [Model profiles](models-v3.md) · [actual bounded CPU study](local-study-v04.md) · [model/system card](model-card.md) |
 | Understand available data and rights | [Dataset card](dataset-card.md) · [news collection](news-corpus.md) · [institutional collection](corpus.md) · [licences](licenses.md) |

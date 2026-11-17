@@ -281,6 +281,11 @@ def execute(args):
         store = Store(scratch)
         assert not store.remote
         store.init()
+        # Companion privacy tables are part of this release's native workspace.
+        # Initialize them before the all-table fingerprint baseline, rather than
+        # changing schema halfway through the report proof or excluding them.
+        from doxa.privacy_lifecycle import ensure_schema as ensure_privacy_schema
+        ensure_privacy_schema(store)
         connection = store._db
         connection.execute("PRAGMA cache_size=-16384")
         connection.execute("PRAGMA wal_autocheckpoint=1000")

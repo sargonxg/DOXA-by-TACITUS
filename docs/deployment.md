@@ -2,6 +2,8 @@
 
 DOXA runs one Python API/worker and a static browser interface. Local state lives in SQLite and files. The Cloudflare profile uses the same Python analysis code with D1 metadata, R2 originals/checkpoints/reports, and durable Queues dispatch. Inference is a separate, explicitly selected provider. A lexical demonstration works without downloading a model; it does not perform semantic analysis.
 
+v0.5 adds [dedicated native guided-pilot operation](managed-pilots-v05.md), with individual access, privacy policies and live-project erasure. Native schema 5 is an ordered upgrade with a database backup; stop prior servers and back up both database and objects first. The existing Cloudflare profile retains schema 4 and its shared-workspace contract. Managed pilot mode refuses remote persistence, and POSIX is required for the new private provisioning/erasure path. These controls do not implement OAuth connectors, subscriptions or shared SaaS tenancy.
+
 ## Local Docker
 
 Prerequisites: Docker with Compose, at least 6 GB RAM for document processing, and additional RAM/VRAM for your chosen local model. No GPU is required to start the application.

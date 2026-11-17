@@ -35,6 +35,9 @@ def _canonical_hash(value: object) -> str:
 
 def _engine_versions(extractor: str) -> dict[str, str]:
     versions = {"doxa-extraction": EXTRACTOR_VERSION}
+    if extractor == "stdlib-mail-v1":
+        from .mail import MAIL_EXTRACTOR_VERSION
+        versions["doxa-mail"] = MAIL_EXTRACTOR_VERSION
     for package in (["PyMuPDF"] if extractor.startswith("pymupdf") else []) + (["docling"] if "docling" in extractor else []):
         try:
             versions[package] = importlib.metadata.version(package)
@@ -389,8 +392,14 @@ def extract_document(path: Path, filename: str | None = None) -> dict:
     elif extension in {".txt", ".md", ".markdown", ".html", ".htm"}:
         blocks, extra, extractor = _text_blocks(path, extension, warnings)
         metadata.update(extra)
+    elif extension in {".eml", ".mbox"}:
+        from .mail import extract_mail
+        blocks, extra, mail_warnings = extract_mail(path, extension)
+        metadata.update(extra)
+        warnings.extend(mail_warnings)
+        extractor = "stdlib-mail-v1"
     else:
-        raise ValueError("Unsupported document format. Use PDF, DOCX, TXT, Markdown or HTML.")
+        raise ValueError("Unsupported document format. Use PDF, DOCX, TXT, Markdown, HTML, EML or MBOX.")
     if not blocks:
         detail = " A scanned PDF requires local OCR; install and configure the OCR extra." if extension == ".pdf" else ""
         raise ValueError("Document contains no extractable text." + detail)
@@ -406,6 +415,10 @@ def extract_document(path: Path, filename: str | None = None) -> dict:
         settings.update({"mixed_scan_image_fraction": MIXED_SCAN_IMAGE_FRACTION,
                          "mixed_scan_text_characters": MIXED_SCAN_TEXT_CHARACTERS,
                          "ocr_page_limit": 200})
+    elif extension in {".eml", ".mbox"}:
+        from .mail import extraction_settings
+        settings.update(extraction_settings())
+        settings["text_policy"] = "mail-canonical-decoded-roles-v1"
     engine_versions = _engine_versions(extractor)
     page_manifest = metadata.get("page_manifest", [])
     needs_review = any(page["needs_review"] for page in page_manifest) or metadata.get("encoding") == "windows-1252" or bool(metadata.get("needs_review"))

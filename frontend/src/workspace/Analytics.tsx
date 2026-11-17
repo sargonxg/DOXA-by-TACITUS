@@ -46,6 +46,11 @@ export function Analytics({
       : scope;
   return (
     <section className="w-analytics">
+      {typeof result?.metrics.author_analysis?.notice === "string" && (
+        <p className="w-pilot-note w-author-analysis-note">
+          {result.metrics.author_analysis.notice}
+        </p>
+      )}
       <div className="w-section-heading">
         <div>
           <span className="w-eyebrow">PATTERNS, WITH THEIR CONTEXT</span>
@@ -716,18 +721,36 @@ function Matrix({
     [cells],
   );
   const max = Math.max(1, ...cells.map((cell) => cell.count));
+  const unverifiedMailGroups = cells.some(
+    (cell) => cell.author_grouping === "supplied_unverified_document_metadata",
+  );
   return (
     <div className="w-matrix">
       <div className="w-chart-header">
         <strong>Where do the patterns appear?</strong>
-        <span className="w-subtle">Author × criterion · select a cell</span>
+        <span className="w-subtle">
+          {unverifiedMailGroups
+            ? "Supplied document group × criterion"
+            : "Author × criterion"}{" "}
+          · select a cell
+        </span>
       </div>
       {authors.length && criteria.length ? (
         <div className="w-matrix-scroll">
-          <table aria-label="Source authors by analytical criteria">
+          <table
+            aria-label={
+              unverifiedMailGroups
+                ? "Supplied unverified document metadata by analytical criteria"
+                : "Source authors by analytical criteria"
+            }
+          >
             <thead>
               <tr>
-                <th>Author / institution</th>
+                <th>
+                  {unverifiedMailGroups
+                    ? "Supplied document metadata"
+                    : "Author / institution"}
+                </th>
                 {criteria.map((criterion) => (
                   <th
                     key={`${criterion.lens}-${criterion.id}`}

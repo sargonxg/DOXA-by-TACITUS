@@ -219,13 +219,18 @@ class Workspace:
         return {"items": items, "total": total, "next_cursor": next_cursor, "query_hash": snapshot["scope_hash"], "snapshot_version": snapshot["snapshot_version"]}
 
     def aggregate(self, project_id: str, query: dict) -> dict:
+        from .mail import MAIL_AUTHOR_NOTICE, author_eligible_sql, mail_document_sql
         dw, dp = self._document_scope(project_id, query)
         dc = " AND ".join(dw)
         extent = self.store.one("SELECT COUNT(*) documents,COALESCE(SUM(d.word_count),0) total_words,COALESCE(SUM(d.page_count),0) total_pages FROM documents d WHERE " + dc, dp)
+        mail_sources = self.store.one("SELECT COUNT(*) n FROM documents d WHERE " + dc + " AND " + mail_document_sql(), dp)["n"]
+        has_mail = bool(mail_sources)
         clause, params, modern = self._scope(project_id, query)
         table = self._table(modern)
         indicator = "a.criterion_kind='indicator' AND a.result='meets_criterion'" if modern else "0"
         endorsed = indicator + " AND a.attribution='author' AND a.speaker_stance='supports' AND a.hypothetical=0"
+        if has_mail:
+            endorsed += " AND " + author_eligible_sql()
         reported = indicator + " AND (a.attribution IN ('quoted_speaker','reported_speaker') OR a.hypothetical=1)"
         counts = self.store.one("SELECT COUNT(*) findings,COUNT(DISTINCT CASE WHEN " + indicator + " THEN d.id END) indicators,COUNT(DISTINCT CASE WHEN " + reported + " THEN d.id END) reported_indicators,COUNT(DISTINCT CASE WHEN " + endorsed + " THEN d.id END) endorsed_indicators,COALESCE(SUM(a.result='uncertain'),0) uncertain,COALESCE(SUM(a.review_status IN ('confirmed','revised')),0) reviewed FROM " + table + " WHERE " + clause, params)
         unit = self.store.one("SELECT COUNT(*) total,COALESCE(SUM(u.status='accepted'),0) done,COALESCE(SUM(u.characters),0) characters,COALESCE(SUM(CASE WHEN u.status='accepted' THEN u.characters ELSE 0 END),0) processed FROM v3_unit_statuses u JOIN documents d ON d.id=u.document_id WHERE u.run_id=? AND " + dc, [query.get("run_id"), *dp])
@@ -248,6 +253,11 @@ class Workspace:
             coverage = float(progress.get("percent", progress.get("coverage", 0)) or 0)
             detail = {**detail, "legacy": True, "notice": "Historical observations are unclassified under v3; coverage is not interpretation accuracy."}
         metrics = {**extent, **counts, "coverage": coverage, "coverage_detail": detail, "analysis_kind": "contextual_v3" if modern else ("legacy_unclassified" if run else "unassessed_corpus"), "legacy_findings": counts["findings"] if not modern else 0, "cost_usd": (run or {}).get("spent_usd", 0)}
+        if has_mail:
+            excluded = self.store.one("SELECT COUNT(*) n FROM " + table + " WHERE " + clause + " AND NOT " + author_eligible_sql(), params)["n"]
+            metrics["author_analysis"] = {"mail_source_documents": mail_sources, "grouping": "supplied_unverified_document_metadata",
+                                          "mail_count_basis": "explicit_newly_authored_text_only", "excluded_context_assessments": excluded,
+                                          "mail_author_rates_available": False, "notice": MAIL_AUTHOR_NOTICE}
         date = "d.created_at" if query.get("date_basis") == "ingestion" else "d.published_at"
         expr = f"SUBSTR({date},1,7)" if query.get("bin") != "year" else f"SUBSTR({date},1,4)"
         if query.get("bin") == "week":
@@ -311,6 +321,8 @@ class Workspace:
                 numerator_values.append(query["stance"])
             raw_indicator = "b.criterion_kind='indicator' AND b.result='meets_criterion'"
             raw_endorsed = raw_indicator + " AND b.attribution='author' AND b.speaker_stance='supports' AND b.hypothetical=0"
+            if has_mail:
+                raw_endorsed += " AND b.author_eligible=1"
             raw_reported = raw_indicator + " AND (b.attribution IN ('quoted_speaker','reported_speaker') OR b.hypothetical=1)"
             uncertain = "b.criterion_kind='indicator' AND b.result='uncertain'"
             if metric == "endorsed_indicators":
@@ -318,9 +330,9 @@ class Workspace:
             elif metric == "reported_indicators":
                 uncertain = "b.criterion_kind='indicator' AND (b.result='uncertain' OR (b.result='meets_criterion' AND b.hypothetical=0 AND b.attribution='unknown'))"
             cte = (
-                "WITH source_scope AS (SELECT d.id,d.institution,d.source_url,d.document_type,d.word_count," + expr + " AS period FROM documents d WHERE " + dc + "),"
+                "WITH source_scope AS (SELECT d.id,d.institution,d.source_url,d.document_type,d.word_count," + expr + " AS period" + (",CASE WHEN " + mail_document_sql() + " THEN 1 ELSE 0 END AS mail_source" if has_mail else "") + " FROM documents d WHERE " + dc + "),"
                 "unit_doc AS (SELECT u.document_id,COUNT(*) unit_total,SUM(u.status='accepted') unit_done FROM v3_unit_statuses u JOIN source_scope s ON s.id=u.document_id WHERE u.run_id=? GROUP BY u.document_id),"
-                "assessment_scope AS (SELECT a.document_id,a.unit_id,a.criterion_kind,a.result,a.attribution,a.speech_role,a.speaker_stance,a.hypothetical,a.review_status FROM v3_assessments a JOIN source_scope s ON s.id=a.document_id WHERE " + " AND ".join(base_conditions) + ")," +
+                "assessment_scope AS (SELECT a.document_id,a.unit_id,a.criterion_kind,a.result,a.attribution,a.speech_role,a.speaker_stance,a.hypothetical,a.review_status" + (",CASE WHEN s.mail_source=0 OR json_type(CASE WHEN json_valid(a.payload_json) THEN a.payload_json ELSE '{}' END,'$.eligible_for_author_counts')='true' THEN 1 ELSE 0 END AS author_eligible" if has_mail else "") + " FROM v3_assessments a JOIN source_scope s ON s.id=a.document_id WHERE " + " AND ".join(base_conditions) + ")," +
                 ("expected_doc AS (SELECT u.document_id,u.unit_total*" + str(len(frozen_pairs)) + " expected_decisions FROM unit_doc u)," if frozen_pairs is not None else "expected_doc AS (SELECT a.document_id,COUNT(*) expected_decisions FROM assessment_scope a GROUP BY a.document_id),") +
                 "assessment_base AS (SELECT a.* FROM assessment_scope a WHERE " + review_condition + "),"
                 "decision_doc AS (SELECT b.document_id,COUNT(*) selected_decisions,COUNT(DISTINCT b.unit_id) decision_units,MAX(CASE WHEN " + uncertain + " THEN 1 ELSE 0 END) unknown_doc,MAX(b.criterion_kind='indicator') has_indicator FROM assessment_base b GROUP BY b.document_id),"
@@ -364,10 +376,12 @@ class Workspace:
                          "label_coverage": 100 * known_n / complete_n if complete_n else 0,
                          "rate_metric": metric, "composition": composition.get(raw_date, {}), "not_assessed_lenses": not_assessed,
                          "rate_basis": "Distinct completely assessed sources with determinate selected-criterion outcomes; uncertainty remains separate."})
-            enabled = one_lens and data.get("has_indicator") and metric_column is not None
+            enabled = one_lens and data.get("has_indicator") and metric_column is not None and not (has_mail and metric == "endorsed_indicators")
             item["rate"] = item["positive_documents"] / known_n if enabled and known_n else None
             item["lower"], item["upper"] = wilson_interval(item["positive_documents"], known_n) if enabled else (None, None)
             item["spike_candidate"] = False
+            if has_mail and metric == "endorsed_indicators":
+                item["rate_disabled_reason"] = "Mail author-endorsed rates need message-aware authorship denominators; source-level mail rates are suppressed."
             timeline.append(item)
         if modern:
             fully = sum(row.get("complete_doc_n", 0) for row in summary.values())
@@ -385,7 +399,7 @@ class Workspace:
             detail["decision_basis"] = "Unknown: this historical run has no frozen criterion registry"
         if not_assessed:
             metrics["coverage"] = 0
-        if one_lens and metric_column and query.get("bin", "month") == "month" and query.get("date_basis", "publication") == "publication":
+        if one_lens and metric_column and query.get("bin", "month") == "month" and query.get("date_basis", "publication") == "publication" and not (has_mail and metric == "endorsed_indicators"):
             detection = detect_spikes(timeline)
             tests = {row["date"]: row for row in detection["tests"]}
             for item in timeline:
@@ -394,10 +408,11 @@ class Workspace:
                 item["spike_policy"] = detection["policy"]
         else:
             for item in timeline:
-                item["spike_disabled_reason"] = "Choose one assessed indicator lens, a document-rate metric, and publication months."
-        matrix = self.store.query("SELECT d.author author,a.lens_id,a.criterion_id,a.criterion_kind,COUNT(*) count,COUNT(DISTINCT d.id) documents FROM " + table + " WHERE " + clause + " GROUP BY d.author,a.lens_id,a.criterion_id,a.criterion_kind ORDER BY count DESC LIMIT 200", params)
+                item["spike_disabled_reason"] = item.get("rate_disabled_reason") or "Choose one assessed indicator lens, a document-rate metric, and publication months."
+        matrix_counts = ("SUM(CASE WHEN " + author_eligible_sql() + " THEN 1 ELSE 0 END) count,COUNT(*) all_context_assessments,SUM(CASE WHEN NOT " + author_eligible_sql() + " THEN 1 ELSE 0 END) excluded_context_count" if has_mail else "COUNT(*) count")
+        matrix = self.store.query("SELECT d.author author,a.lens_id,a.criterion_id,a.criterion_kind," + matrix_counts + ",COUNT(DISTINCT d.id) documents FROM " + table + " WHERE " + clause + " GROUP BY d.author,a.lens_id,a.criterion_id,a.criterion_kind ORDER BY count DESC LIMIT 200", params)
         author_units = {row["author"]: row for row in self.store.query("SELECT d.author,COUNT(*) total,SUM(u.status='accepted') done FROM v3_unit_statuses u JOIN documents d ON d.id=u.document_id WHERE u.run_id=? AND " + dc + " GROUP BY d.author", [query.get("run_id"), *dp])}
-        author_extent = {row["author"]: row for row in self.store.query("SELECT d.author,SUM(d.word_count) words,COUNT(*) sources FROM documents d WHERE " + dc + " GROUP BY d.author", dp)}
+        author_extent = {row["author"]: row for row in self.store.query("SELECT d.author,SUM(d.word_count) words,COUNT(*) sources" + (",SUM(CASE WHEN " + mail_document_sql() + " THEN 1 ELSE 0 END) mail_sources" if has_mail else "") + " FROM documents d WHERE " + dc + " GROUP BY d.author", dp)}
         for cell in matrix:
             units = author_units.get(cell["author"], {})
             cell["coverage"] = 100 * (units.get("done") or 0) / units["total"] if units.get("total") else 0
@@ -408,6 +423,11 @@ class Workspace:
             cell["sources"] = extent.get("sources", 0)
             cell["coverage_basis"] = "selected author's contextual source units"
             cell["observations_per_10000_words"] = 10000 * cell["count"] / cell["words"] if cell["coverage"] == 100 and cell["words"] else None
+            if extent.get("mail_sources"):
+                cell["observations_per_10000_words"] = None
+                cell["mail_source_documents"] = extent["mail_sources"]
+                cell["coverage_basis"] = "selected source units; mail group counts include only explicit newly authored text"
+                cell["author_grouping"] = "supplied_unverified_document_metadata"
         facets = {}
         for name, column in (("authors", "author"), ("document_types", "document_type")):
             facets[name] = self.store.query("SELECT d." + column + " name,COUNT(*) count FROM documents d WHERE " + dc + " GROUP BY d." + column + " ORDER BY count DESC,name LIMIT 200", dp)

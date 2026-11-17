@@ -10,9 +10,11 @@ def test_method_hash_excludes_execution_but_includes_unknown_analytical_settings
     base = {"provider": "ollama", "model": "qwen3.5:4b", "question": "Which proposition?", "lens_ids": ["ihra"],
             "source_metadata_hash": source_metadata_hash([{"title": "Original", "author": "A"}]), "budget_usd": 1}
     other = {**base, "budget_usd": 4, "concurrency": 8, "source_manifest_key": "runs/other/source.json",
-             "task_timing_history": [{"task_timeout_seconds": 1800}], "provider_preflight": {"checked_at": "later"}}
+             "task_timing_history": [{"task_timeout_seconds": 1800}], "provider_preflight": {"checked_at": "later"},
+             "execution_actor_id": "resuming-analyst", "managed_access": True}
     assert method_fingerprint(base) == method_fingerprint(other)
     assert execution_policy(base).fingerprint != execution_policy(other).fingerprint
+    assert execution_policy(other).as_dict()["settings"]["execution_actor_id"] == "resuming-analyst"
     for change in ({"question": "Different"}, {"novel_analytical_setting": True},
                    {"source_metadata_hash": source_metadata_hash([{"title": "Changed", "author": "A"}])},
                    {"reasoning_effort": "low"}, {"max_output_tokens": 1200}):

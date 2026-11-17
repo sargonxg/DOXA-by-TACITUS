@@ -71,6 +71,8 @@ def verify_report_jobs(store, project_id, run_id, receipt_path, *, isolated=Fals
     """
     if not isolated or store.remote:
         raise ValueError("Report verification requires an explicitly isolated native scratch Store")
+    from doxa.privacy_lifecycle import ensure_schema as ensure_privacy_schema
+    ensure_privacy_schema(store)
     started = time.perf_counter()
     receipt = {"schema_version": "doxa-durable-report-proof-1", "generated_at": utcnow(), "status": "running",
                "scope": "isolated native Store; not a production D1 capacity test", "format": "xlsx", "interpretation_accuracy": None,
@@ -172,6 +174,10 @@ def verify_report_jobs(store, project_id, run_id, receipt_path, *, isolated=Fals
             for table in ("report_job_artifacts", "report_job_parts"):
                 store.execute("DELETE FROM " + table + " WHERE job_id=?", [job_id])
             store.execute("DELETE FROM report_jobs WHERE id=?", [job_id])
+            # This proof removes only the ownership row for its own temporary
+            # output. Source/import and unrelated report ownership stays intact.
+            store.execute("DELETE FROM privacy_artifacts WHERE project_id=? AND path=?",
+                          [project_id, "objects/report-jobs/" + job_id])
             shutil.rmtree(store.root / "report-work" / job_id, ignore_errors=True)
             shutil.rmtree(store.object_path("report-jobs/" + job_id), ignore_errors=True)
         if query_id:
