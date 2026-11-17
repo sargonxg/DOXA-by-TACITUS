@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.4",
+  "amended_at": "2026-11-17T16:37:42.097198+00:00",
+  "amended_at_unix": 1794933462.097211,
+  "original_max_minutes_per_model": 90,
+  "operating_max_minutes_per_model": 30,
+  "applies_to": [
+    "qwen3.5:2b-q4_K_M",
+    "qwen3.5:4b"
+  ],
+  "reason": "Operator-approved symmetric practical CPU feasibility cap within original at-most90-minute budget; preserve all six-source/17-unit denominators and strict validation failures. No quality or model promotion.",
+  "method_changes": false,
+  "source_changes": false,
+  "shared_load_notice": "Concurrent development/shared cgroup, not a clean causal speed comparison.",
+  "first_profile_stop_plan": "Graceful interrupt at30minutes; preserve completed unit results, flag any interrupted in-flight unit/request as unretained observations."
+}

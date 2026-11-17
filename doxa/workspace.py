@@ -10,6 +10,7 @@ import hashlib
 import json
 import re
 import uuid
+from contextlib import nullcontext
 from typing import Literal
 
 from fastapi import HTTPException
@@ -80,7 +81,12 @@ class Workspace:
         return str(row["value_json"]) if row else "0"
 
     def touch(self, project_id: str) -> None:
-        self.store.execute("INSERT INTO settings(key,value_json) VALUES(?,'1') ON CONFLICT(key) DO UPDATE SET value_json=CAST(CAST(value_json AS INTEGER)+1 AS TEXT)", ["workspace_revision:" + project_id])
+        self.store.batch([self.touch_statement(project_id)])
+
+    @staticmethod
+    def touch_statement(project_id: str) -> dict:
+        """Append to the same batch as the visible change, never after it."""
+        return {"sql": "INSERT INTO settings(key,value_json) VALUES(?,'1') ON CONFLICT(key) DO UPDATE SET value_json=CAST(CAST(value_json AS INTEGER)+1 AS TEXT)", "params": ["workspace_revision:" + project_id]}
 
     def require_query(self, query_id: str, *, current: bool = True) -> dict:
         row = self.store.one("SELECT * FROM v3_query_snapshots WHERE id=?", [query_id])
@@ -93,7 +99,7 @@ class Workspace:
         return row
 
     def _document_scope(self, project_id: str, query: dict) -> tuple[list[str], list]:
-        where, params = ["d.project_id=?"], [project_id]
+        where, params = ["d.project_id=?", "d.status!='importing'"], [project_id]
         if query.get("document_ids"):
             where.append("d.id IN (SELECT value FROM json_each(?))")
             params.append(json.dumps(query["document_ids"]))
@@ -183,6 +189,16 @@ class Workspace:
             raise HTTPException(422, "Cursor does not belong to this query") from None
 
     def page(self, snapshot: dict, kind: str, cursor: str | None = None, limit: int = 50) -> dict:
+        transaction = getattr(self.store, "transaction", None)
+        with transaction() if transaction and not self.store.remote else nullcontext():
+            if snapshot["snapshot_version"] != self.revision(snapshot["project_id"]):
+                raise HTTPException(409, "Workspace changed. Refresh the query before paging or exporting.")
+            result = self._page(snapshot, kind, cursor, limit)
+            if snapshot["snapshot_version"] != self.revision(snapshot["project_id"]):
+                raise HTTPException(409, "Workspace changed while reading this page; refresh the query.")
+            return result
+
+    def _page(self, snapshot: dict, kind: str, cursor: str | None = None, limit: int = 50) -> dict:
         limit = max(1, min(int(limit), 200))
         last = self._cursor(cursor, snapshot["id"], kind)
         if kind == "documents":
@@ -236,7 +252,6 @@ class Workspace:
         expr = f"SUBSTR({date},1,7)" if query.get("bin") != "year" else f"SUBSTR({date},1,4)"
         if query.get("bin") == "week":
             expr = f"strftime('%Y-W%W',{date})"
-        from .lenses import get_lens
         from .trajectories import detect_spikes, wilson_interval
 
         if query.get("bin", "month") == "month":
@@ -259,17 +274,16 @@ class Workspace:
                 raise HTTPException(422, "Timeline scope exceeds the D1 parameter budget")
             return self.store.query(output, unique)
 
-        configured = set()
-        for name in (run or {}).get("config", {}).get("lens_ids", []):
-            try:
-                configured.add(get_lens(name)["id"] if name != "custom" else "custom")
-            except ValueError:
-                configured.add(name)
+        frozen_packs = (run or {}).get("config", {}).get("lens_snapshots")
+        configured = {pack["id"] for pack in frozen_packs} if frozen_packs else set((run or {}).get("config", {}).get("lens_ids", []))
         configured.update((run or {}).get("model_profile", {}).get("rubric_versions", {}))
         selected_lenses = set(query.get("lens_ids") or configured)
         not_assessed = sorted(selected_lenses - configured) if modern else sorted(query.get("lens_ids") or [])
         metrics["not_assessed_lenses"] = not_assessed
         metrics["coverage_detail"]["not_assessed_lenses"] = not_assessed
+        frozen_pairs = [(pack["id"], criterion["id"]) for pack in frozen_packs for criterion in pack.get("criteria", [])
+                        if (not query.get("lens_ids") or pack["id"] in query["lens_ids"])
+                        and (not query.get("criterion_ids") or criterion["id"] in query["criterion_ids"])] if frozen_packs else None
 
         timeline_docs = timeline_rows("SELECT " + expr + " date,COUNT(*) documents FROM documents d WHERE " + dc + " GROUP BY date ORDER BY date", dp)
         timeline_a = {r["date"]: r for r in timeline_rows("SELECT " + expr + " date,COUNT(*) findings,COUNT(DISTINCT CASE WHEN " + indicator + " THEN d.id END) indicators,COUNT(DISTINCT CASE WHEN " + reported + " THEN d.id END) reported_indicators,COUNT(DISTINCT CASE WHEN " + endorsed + " THEN d.id END) endorsed_indicators,COUNT(DISTINCT CASE WHEN a.result='uncertain' THEN d.id END) unknown FROM " + table + " WHERE " + clause + " GROUP BY date", params)}
@@ -306,8 +320,8 @@ class Workspace:
             cte = (
                 "WITH source_scope AS (SELECT d.id,d.institution,d.source_url,d.document_type,d.word_count," + expr + " AS period FROM documents d WHERE " + dc + "),"
                 "unit_doc AS (SELECT u.document_id,COUNT(*) unit_total,SUM(u.status='accepted') unit_done FROM v3_unit_statuses u JOIN source_scope s ON s.id=u.document_id WHERE u.run_id=? GROUP BY u.document_id),"
-                "assessment_scope AS (SELECT a.document_id,a.unit_id,a.criterion_kind,a.result,a.attribution,a.speech_role,a.speaker_stance,a.hypothetical,a.review_status FROM v3_assessments a JOIN source_scope s ON s.id=a.document_id WHERE " + " AND ".join(base_conditions) + "),"
-                "expected_doc AS (SELECT a.document_id,COUNT(*) expected_decisions FROM assessment_scope a GROUP BY a.document_id),"
+                "assessment_scope AS (SELECT a.document_id,a.unit_id,a.criterion_kind,a.result,a.attribution,a.speech_role,a.speaker_stance,a.hypothetical,a.review_status FROM v3_assessments a JOIN source_scope s ON s.id=a.document_id WHERE " + " AND ".join(base_conditions) + ")," +
+                ("expected_doc AS (SELECT u.document_id,u.unit_total*" + str(len(frozen_pairs)) + " expected_decisions FROM unit_doc u)," if frozen_pairs is not None else "expected_doc AS (SELECT a.document_id,COUNT(*) expected_decisions FROM assessment_scope a GROUP BY a.document_id),") +
                 "assessment_base AS (SELECT a.* FROM assessment_scope a WHERE " + review_condition + "),"
                 "decision_doc AS (SELECT b.document_id,COUNT(*) selected_decisions,COUNT(DISTINCT b.unit_id) decision_units,MAX(CASE WHEN " + uncertain + " THEN 1 ELSE 0 END) unknown_doc,MAX(b.criterion_kind='indicator') has_indicator FROM assessment_base b GROUP BY b.document_id),"
                 "numerator_doc AS (SELECT b.document_id,MAX(CASE WHEN " + raw_indicator + " THEN 1 ELSE 0 END) indicator_pos,MAX(CASE WHEN " + raw_endorsed + " THEN 1 ELSE 0 END) endorsed_pos,MAX(CASE WHEN " + raw_reported + " THEN 1 ELSE 0 END) reported_pos FROM assessment_base b WHERE " + " AND ".join(numerator_conditions) + " GROUP BY b.document_id) "
@@ -360,6 +374,15 @@ class Workspace:
             metrics["coverage"] = min(metrics["coverage"], 100 * fully / extent["documents"]) if extent["documents"] else 0
             metrics["coverage_detail"]["complete_documents"] = fully
             metrics["coverage_detail"]["selected_lens_scope_complete"] = not not_assessed
+        detail.update({"sources_total": extent["documents"], "sources_done": detail.get("complete_documents") if modern else None,
+                       "decisions_total": None, "decisions_done": None})
+        if modern and frozen_pairs is not None:
+            detail["decisions_total"] = unit["total"] * len(frozen_pairs)
+            decision_scope = "EXISTS(SELECT 1 FROM json_each(?) p WHERE json_extract(p.value,'$[0]')=a.lens_id AND json_extract(p.value,'$[1]')=a.criterion_id)"
+            detail["decisions_done"] = self.store.one("SELECT COUNT(*) n FROM v3_assessments a JOIN documents d ON d.id=a.document_id WHERE a.project_id=? AND a.run_id=? AND " + decision_scope + " AND " + dc, [project_id, query.get("run_id"), json.dumps(frozen_pairs), *dp])["n"]
+            detail["decision_basis"] = "Every accepted explicit outcome for the frozen selected criteria, including negatives and uncertainty"
+        elif modern:
+            detail["decision_basis"] = "Unknown: this historical run has no frozen criterion registry"
         if not_assessed:
             metrics["coverage"] = 0
         if one_lens and metric_column and query.get("bin", "month") == "month" and query.get("date_basis", "publication") == "publication":
@@ -395,6 +418,24 @@ class Workspace:
         return {"metrics": metrics, "facets": facets, "timeline": timeline, "matrix": matrix, "run": run}
 
     def create(self, project_id: str, query: WorkspaceQuery) -> dict:
+        if not getattr(self.store, "remote", False):
+            with self.store.transaction(write=True):
+                return self._create(project_id, query)
+        # D1 compound reads cannot share a transaction across bridge requests.
+        # Atomic revision increments make optimistic verification safe instead.
+        for _ in range(3):
+            revision = self.revision(project_id)
+            try:
+                result = self._create(project_id, query)
+            except HTTPException as error:
+                if error.status_code == 409:
+                    continue
+                raise
+            if revision == self.revision(project_id) == result["snapshot_version"]:
+                return result
+        raise HTTPException(409, "Workspace changed during aggregation; retry the query.")
+
+    def _create(self, project_id: str, query: WorkspaceQuery) -> dict:
         if not self.store.one("SELECT id FROM projects WHERE id=?", [project_id]):
             raise HTTPException(404, "Project not found")
         scope = query.model_dump()

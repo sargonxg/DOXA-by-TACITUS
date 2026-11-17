@@ -1,0 +1,661 @@
+{
+  "schema_version": "doxa-research-map-0.4",
+  "generated_at": "2026-11-17T16:37:41.078508+00:00",
+  "papers": [
+    {
+      "id": "jacobs2021",
+      "type": "paper-conference",
+      "title": "Measurement and Fairness",
+      "author": [
+        {
+          "family": "Jacobs"
+        },
+        {
+          "family": "Wallach"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "URL": "https://arxiv.org/abs/1912.05511",
+      "DOI": "10.1145/3442188.3445901",
+      "container-title": "FAccT",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Declare construct, operationalization, exclusions and population before interpreting counts.",
+      "transfer_limit": "Does not validate DOXA constructs or model predictions.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "entman1993",
+      "type": "article-journal",
+      "title": "Framing: Toward Clarification of a Fractured Paradigm",
+      "author": [
+        {
+          "family": "Entman"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            1993
+          ]
+        ]
+      },
+      "URL": "https://fbaum.unc.edu/teaching/articles/J-Communication-1993-Entman.pdf",
+      "DOI": "10.1111/j.1460-2466.1993.tb01304.x",
+      "container-title": "Journal of Communication",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Separate problem definition, causal interpretation, evaluation and remedy.",
+      "transfer_limit": "A textual frame does not establish unfairness or audience influence.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "mohammad2016",
+      "type": "paper-conference",
+      "title": "SemEval-2016 Task 6: Detecting Stance in Tweets",
+      "author": [
+        {
+          "family": "Mohammad"
+        },
+        {
+          "family": "Kiritchenko"
+        },
+        {
+          "family": "Sobhani"
+        },
+        {
+          "family": "Zhu"
+        },
+        {
+          "family": "Cherry"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2016
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/S16-1003/",
+      "DOI": "10.18653/v1/S16-1003",
+      "container-title": "SemEval",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Specify target/proposition; distinguish sentiment, stance and lack of evidence.",
+      "transfer_limit": "Tweet performance does not transfer to whole policy documents.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "card2015",
+      "type": "paper-conference",
+      "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+      "author": [
+        {
+          "family": "Card"
+        },
+        {
+          "family": "Boydstun"
+        },
+        {
+          "family": "Gross"
+        },
+        {
+          "family": "Resnik"
+        },
+        {
+          "family": "Smith"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2015
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/P15-2072/",
+      "DOI": "10.3115/v1/P15-2072",
+      "container-title": "ACL-IJCNLP",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Use explicit framing dimensions, evidence spans and preserved disagreement.",
+      "transfer_limit": "Three original policy issues; original article redistribution requires source rights.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "recasens2013",
+      "type": "paper-conference",
+      "title": "Linguistic Models for Analyzing and Detecting Biased Language",
+      "author": [
+        {
+          "family": "Recasens"
+        },
+        {
+          "family": "Danescu-Niculescu-Mizil"
+        },
+        {
+          "family": "Jurafsky"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/P13-1162/",
+      "DOI": null,
+      "container-title": "ACL",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Inspect appraisal and qualified presupposition/entailment cues.",
+      "transfer_limit": "Wikipedia neutrality edits do not validate a universal political-bias score.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "fan2019",
+      "type": "paper-conference",
+      "title": "In Plain Sight: Media Bias Through the Lens of Factual Reporting",
+      "author": [
+        {
+          "family": "Fan"
+        },
+        {
+          "family": "White"
+        },
+        {
+          "family": "Sharma"
+        },
+        {
+          "family": "Su"
+        },
+        {
+          "family": "Choubey"
+        },
+        {
+          "family": "Huang"
+        },
+        {
+          "family": "Wang"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2019
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/D19-1664/",
+      "DOI": "10.18653/v1/D19-1664",
+      "container-title": "EMNLP-IJCNLP",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Informational selection needs declared comparable sources and broader context.",
+      "transfer_limit": "An arbitrary corpus absence is not deliberate omission.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "breck2004",
+      "type": "paper-conference",
+      "title": "Playing the Telephone Game: Determining the Hierarchical Structure of Perspective and Speech Expressions",
+      "author": [
+        {
+          "family": "Breck"
+        },
+        {
+          "family": "Cardie"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2004
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/C04-1018/",
+      "DOI": null,
+      "container-title": "COLING",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Preserve hierarchical direct/indirect sources of quoted and reported expression.",
+      "transfer_limit": "Attribution structure is not access to a person's private beliefs.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "sauri2009",
+      "type": "article-journal",
+      "title": "FactBank: a corpus annotated with event factuality",
+      "author": [
+        {
+          "family": "Saurí"
+        },
+        {
+          "family": "Pustejovsky"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2009
+          ]
+        ]
+      },
+      "URL": "https://link.springer.com/article/10.1007/s10579-009-9089-9",
+      "DOI": "10.1007/s10579-009-9089-9",
+      "container-title": "Language Resources and Evaluation",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Record how a source presents factuality rather than assert independent world truth.",
+      "transfer_limit": "Publisher abstract/notes reviewed; a factuality label is not external fact-checking.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "plank2022",
+      "type": "paper-conference",
+      "title": "The ‘Problem’ of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+      "author": [
+        {
+          "family": "Plank"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/2022.emnlp-main.731/",
+      "DOI": "10.18653/v1/2022.emnlp-main.731",
+      "container-title": "EMNLP",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Preserve raw independent labels, plausible disagreement and later adjudication.",
+      "transfer_limit": "A position paper motivates design, not an accuracy guarantee.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "artstein2008",
+      "type": "article-journal",
+      "title": "Inter-Coder Agreement for Computational Linguistics",
+      "author": [
+        {
+          "family": "Artstein"
+        },
+        {
+          "family": "Poesio"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2008
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/J08-4004/",
+      "DOI": "10.1162/coli.07-034-R2",
+      "container-title": "Computational Linguistics",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Choose agreement measures by task and assumptions; report frequencies and uncertainty.",
+      "transfer_limit": "Agreement is not validity; no pooled coefficient substitutes for field-specific evaluation.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "rottger2021",
+      "type": "paper-conference",
+      "title": "HateCheck: Functional Tests for Hate Speech Detection Models",
+      "author": [
+        {
+          "family": "Röttger"
+        },
+        {
+          "family": "Vidgen"
+        },
+        {
+          "family": "Nguyen"
+        },
+        {
+          "family": "Waseem"
+        },
+        {
+          "family": "Margetts"
+        },
+        {
+          "family": "Pierrehumbert"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/2021.acl-long.4/",
+      "DOI": "10.18653/v1/2021.acl-long.4",
+      "container-title": "ACL-IJCNLP",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Test negation, counter-speech, identity references and other specific capabilities.",
+      "transfer_limit": "Original seven target groups omit Jewish people; short functional cases do not validate long-document antisemitism.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "ribeiro2020",
+      "type": "paper-conference",
+      "title": "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList",
+      "author": [
+        {
+          "family": "Ribeiro"
+        },
+        {
+          "family": "Wu"
+        },
+        {
+          "family": "Guestrin"
+        },
+        {
+          "family": "Singh"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/2020.acl-main.442/",
+      "DOI": "10.18653/v1/2020.acl-main.442",
+      "container-title": "ACL",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Use minimum-functionality, invariance and directional test matrices.",
+      "transfer_limit": "Passing engineered tests is not population accuracy.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "deyoung2020",
+      "type": "paper-conference",
+      "title": "ERASER: A Benchmark to Evaluate Rationalized NLP Models",
+      "author": [
+        {
+          "family": "DeYoung"
+        },
+        {
+          "family": "Jain"
+        },
+        {
+          "family": "Rajani"
+        },
+        {
+          "family": "Lehman"
+        },
+        {
+          "family": "Xiong"
+        },
+        {
+          "family": "Socher"
+        },
+        {
+          "family": "Wallace"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2020
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/2020.acl-main.408/",
+      "DOI": "10.18653/v1/2020.acl-main.408",
+      "container-title": "ACL",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Separate rationale plausibility/faithfulness from exact quotation integrity.",
+      "transfer_limit": "DOXA's explanations are editorially inspectable, not proof of causal model reasoning.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "liu2024",
+      "type": "article-journal",
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "author": [
+        {
+          "family": "Liu"
+        },
+        {
+          "family": "Lin"
+        },
+        {
+          "family": "Hewitt"
+        },
+        {
+          "family": "Paranjape"
+        },
+        {
+          "family": "Bevilacqua"
+        },
+        {
+          "family": "Petroni"
+        },
+        {
+          "family": "Liang"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "URL": "https://transacl.org/index.php/tacl/article/view/5757",
+      "DOI": "10.1162/tacl_a_00638",
+      "container-title": "TACL",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Test position/context packing and preserve supplied-context receipts.",
+      "transfer_limit": "Long-context QA/retrieval results do not establish the best DOXA context policy.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "guo2017",
+      "type": "paper-conference",
+      "title": "On Calibration of Modern Neural Networks",
+      "author": [
+        {
+          "family": "Guo"
+        },
+        {
+          "family": "Pleiss"
+        },
+        {
+          "family": "Sun"
+        },
+        {
+          "family": "Weinberger"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "URL": "https://proceedings.mlr.press/v70/guo17a.html",
+      "DOI": null,
+      "container-title": "ICML",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Fit/evaluate confidence calibration on separate labelled data.",
+      "transfer_limit": "Temperature scaling on classifiers is not a calibration certificate for verbal LLM confidence.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "xiong2024",
+      "type": "paper-conference",
+      "title": "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+      "author": [
+        {
+          "family": "Xiong"
+        },
+        {
+          "family": "Hu"
+        },
+        {
+          "family": "Lu"
+        },
+        {
+          "family": "Li"
+        },
+        {
+          "family": "Fu"
+        },
+        {
+          "family": "He"
+        },
+        {
+          "family": "Hooi"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "URL": "https://iclr.cc/virtual/2024/poster/18135",
+      "DOI": null,
+      "container-title": "ICLR",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Evaluate verbal confidence and failure prediction rather than assuming them reliable.",
+      "transfer_limit": "Reported benchmark findings do not establish DOXA correctness probabilities.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "tian2023",
+      "type": "paper-conference",
+      "title": "Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from Language Models Fine-Tuned with Human Feedback",
+      "author": [
+        {
+          "family": "Tian"
+        },
+        {
+          "family": "Mitchell"
+        },
+        {
+          "family": "Zhou"
+        },
+        {
+          "family": "Sharma"
+        },
+        {
+          "family": "Rafailov"
+        },
+        {
+          "family": "Yao"
+        },
+        {
+          "family": "Finn"
+        },
+        {
+          "family": "Manning"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/2023.emnlp-main.330/",
+      "DOI": "10.18653/v1/2023.emnlp-main.330",
+      "container-title": "EMNLP",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Treat confidence-elicitation methods as hypotheses to evaluate on the actual task.",
+      "transfer_limit": "QA improvements do not transfer automatically to prejudice interpretation.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    },
+    {
+      "id": "bender2018",
+      "type": "article-journal",
+      "title": "Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science",
+      "author": [
+        {
+          "family": "Bender"
+        },
+        {
+          "family": "Friedman"
+        }
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2018
+          ]
+        ]
+      },
+      "URL": "https://aclanthology.org/Q18-1041/",
+      "DOI": "10.1162/tacl_a_00041",
+      "container-title": "TACL",
+      "review_scope": "Original publisher/anthology text and relevant sections; no claim of an exhaustive systematic review.",
+      "app_consequence": "Publish source, language, population, sampling and intended-use limits.",
+      "transfer_limit": "A one-publisher corpus is not a representative sample of public discourse.",
+      "actually_tested_here": "Software/source-integrity tests and recorded operational runs only; no independent human interpretation labels."
+    }
+  ],
+  "frameworks": {
+    "ihra": {
+      "title": "IHRA Working Definition of Antisemitism",
+      "url": "https://holocaustremembrance.com/resources/working-definition-antisemitism",
+      "year": 2016,
+      "audit_status": "official_primary_page_access_blocked_in_current_source_audit",
+      "locator": "Definition, contextual introduction and illustrative examples; current official-page retrieval blocked.",
+      "exclusions": "Non-legally binding; examples require overall context; policy criticism similar to other countries is not automatically antisemitic.",
+      "coverage": "DOXA's three criteria are a partial operational summary, not the complete working definition."
+    },
+    "jda": {
+      "title": "Jerusalem Declaration on Antisemitism",
+      "url": "https://jerusalemdeclaration.org/",
+      "year": 2021,
+      "audit_status": "original_definition_guidelines_and_FAQ_read",
+      "locator": "Definition; General guidelines 1–5; Israel/Palestine guidelines 6–15; FAQ on legal use.",
+      "exclusions": "Guidelines must be read together in context; political positions are not inherently antisemitic; not designed as a legal/quasi-legal speech code.",
+      "coverage": "Three operational criteria retain the political-expression boundary but do not replace all fifteen guidelines."
+    },
+    "nexus": {
+      "title": "The Nexus Document",
+      "url": "https://nexusproject.us/nexus-resources/the-nexus-document/",
+      "year": 2024,
+      "audit_status": "original_definition_and_both_numbered_sections_read",
+      "locator": "What Is Antisemitic? 2–4,7–9; What Is Not Antisemitic? 1,3–5; June 2024 update.",
+      "exclusions": "Political opposition and disproportionate attention are not prima facie proof; standards and source context matter.",
+      "coverage": "Three operational criteria; no vote across frameworks and no legal determination."
+    },
+    "anti-muslim-hostility": {
+      "title": "A Definition of Anti-Muslim Hostility",
+      "url": "https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility",
+      "year": 2026,
+      "audit_status": "original_sections_6_7_8_read",
+      "locator": "Section 6 paragraphs 1–3 and protected-expression list; section 8 notes on use.",
+      "exclusions": "England; non-statutory; no change to criminal/equality law; criticism/ridicule of religion protected; required intent/unlawfulness cannot be presumed.",
+      "coverage": "Three textual operational criteria cannot establish every legal/contextual condition from one passage."
+    },
+    "anti-muslim-racism": {
+      "title": "Islamophobia: towards a working definition",
+      "url": "https://www.runnymedetrust.org/publications/islamophobia-towards-a-working-definition",
+      "year": 2025,
+      "pdf_url": "https://cdn.prod.website-files.com/61488f992b58e687f1108c7c/6870ebe3af5932d0c3f20824_Islamophobia_Towards%20a%20working%20definition_Runnymede%20July%202025.pdf",
+      "pdf_sha256": "ccdb6531b43a1f398fcbfa2a88a3aee6da42c73e339517cb88e64728f8ea86fa",
+      "pdf_pages": 19,
+      "audit_status": "original_19_page_briefing_relevant_sections_read",
+      "locator": "PDF p4/printed p3 recommendation; PDF pp5–7 racialization; pp7–10 institutional/structural effects; p12/printed p11 free speech; p14/printed p13 recommendation.",
+      "exclusions": "Protect Muslims/perceived Muslims rather than immunize Islam or governments from criticism; structural effects need not require deliberate intent; a paragraph does not establish a population-level pattern.",
+      "coverage": "Partial operationalization. Intersectionality, policy evidence and comparable outcomes require additional evidence. Full PDF is linked, not redistributed."
+    }
+  },
+  "review_scope": "Decision-oriented source review, not a systematic literature review or independent model validation.",
+  "rights": "Links and brief original summaries; full copyrighted academic papers and briefing PDFs are not redistributed."
+}

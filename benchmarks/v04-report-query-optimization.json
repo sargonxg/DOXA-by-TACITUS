@@ -1,0 +1,57 @@
+{
+  "schema_version": "doxa-report-query-optimization-1",
+  "scope": "disposable restore scratch only; no original data changes",
+  "change": "CREATE INDEX v3_assessments_report_cursor ON v3_assessments(run_id,id)",
+  "create_seconds": 0.9828944330001832,
+  "before": {
+    "candidate100_seconds": 2.3808,
+    "payload25_seconds": 1.2105,
+    "plan": "v3_assessments_criterion run scan + temporary ORDER BY B-tree"
+  },
+  "after": [
+    {
+      "query": "candidate",
+      "rows": 100,
+      "seconds": 0.005526058000214107,
+      "plan": [
+        "SEARCH a USING INDEX v3_assessments_report_cursor (run_id=? AND id>?)",
+        "LIST SUBQUERY 4",
+        "SCAN json_each VIRTUAL TABLE INDEX 1:",
+        "CREATE BLOOM FILTER",
+        "SEARCH d USING INDEX sqlite_autoindex_documents_1 (id=?)",
+        "CORRELATED SCALAR SUBQUERY 1",
+        "SEARCH rs USING COVERING INDEX sqlite_autoindex_v3_run_sources_1 (run_id=? AND document_id=?)",
+        "CORRELATED SCALAR SUBQUERY 2",
+        "SEARCH rt USING COVERING INDEX sqlite_autoindex_tasks_2 (run_id=? AND document_id=?)",
+        "CORRELATED SCALAR SUBQUERY 3",
+        "SEARCH ru USING COVERING INDEX sqlite_autoindex_v3_unit_statuses_1 (run_id=? AND document_id=?)"
+      ]
+    },
+    {
+      "query": "payload",
+      "rows": 25,
+      "seconds": 0.0005246489999990445,
+      "plan": [
+        "SEARCH a USING INDEX v3_assessments_report_cursor (run_id=? AND id=?)",
+        "LIST SUBQUERY 5",
+        "SCAN json_each VIRTUAL TABLE INDEX 1:",
+        "LIST SUBQUERY 4",
+        "SCAN json_each VIRTUAL TABLE INDEX 1:",
+        "CREATE BLOOM FILTER",
+        "SEARCH d USING INDEX sqlite_autoindex_documents_1 (id=?)",
+        "CORRELATED SCALAR SUBQUERY 1",
+        "SEARCH rs USING COVERING INDEX sqlite_autoindex_v3_run_sources_1 (run_id=? AND document_id=?)",
+        "CORRELATED SCALAR SUBQUERY 2",
+        "SEARCH rt USING COVERING INDEX sqlite_autoindex_tasks_2 (run_id=? AND document_id=?)",
+        "CORRELATED SCALAR SUBQUERY 3",
+        "SEARCH ru USING COVERING INDEX sqlite_autoindex_v3_unit_statuses_1 (run_id=? AND document_id=?)"
+      ]
+    }
+  ],
+  "job_phase_at_change": "capture_assessments",
+  "job_cursor_at_change": "03179bb8ae35a5b8d5f611fa6291964a",
+  "logical_rows_changed": false,
+  "generated_at": "2026-11-17T16:53:07.385511+00:00",
+  "sqlite_version": "3.53.1",
+  "measurement_basis": "Same bounded query shapes and active isolated run; cursor advanced between measurements. These are query timings, not whole-job throughput or a production D1 benchmark."
+}

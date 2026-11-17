@@ -77,6 +77,22 @@ export async function contextFor(
     blocks: list(raw.blocks || raw.document?.blocks),
   };
 }
+export async function unitContext(
+  project: string,
+  query: string,
+  document: string,
+  unit: string,
+): Promise<Context> {
+  const params = new URLSearchParams({
+    query_id: query,
+    document_id: document,
+    unit_id: unit,
+  });
+  const value = await request<Context>(
+    `/v3/projects/${encodeURIComponent(project)}/unit-context?${params}`,
+  );
+  return { ...value, blocks: list(value.blocks), unit_id: unit };
+}
 export async function models(): Promise<ModelProfile[]> {
   const result = await request<unknown>("/v3/models");
   return list<ModelProfile>(

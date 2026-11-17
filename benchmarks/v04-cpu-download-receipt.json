@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.4",
+  "reason": "Generic 2B tag resolves Q8_0; removed only task-downloaded unused Q8 package after explicit Q4 pin verified. No Q8 inference performed.",
+  "free_bytes_before": 4168953856,
+  "free_bytes_after": 6181003264,
+  "freed_bytes": 2012049408,
+  "removed_model": "qwen3.5:2b",
+  "retained": [
+    {
+      "model": "qwen3.5:2b-q4_K_M",
+      "digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+      "quantization": "Q4_K_M"
+    },
+    {
+      "model": "qwen3.5:4b",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "quantization": "Q4_K_M"
+    }
+  ],
+  "post_2b_study_cleanup": {
+    "at_unix": 1794933852.4284565,
+    "removed_only_task_downloaded_model": "qwen3.5:2b-q4_K_M",
+    "completed_2b_profile_status": "partial",
+    "results_sha256": "837768208db96d55472e124209ae969270825742d501a8f5babb4ec850c02054",
+    "free_bytes_before": 3480756224,
+    "free_bytes_after": 5426573312,
+    "freed_bytes": 1945817088,
+    "resident_model_verified_before_cleanup": [
+      "qwen3.5:4b"
+    ],
+    "retained_models": [
+      {
+        "model": "qwen3.5:4b",
+        "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04"
+      }
+    ],
+    "redownload_command": "ollama pull qwen3.5:2b-q4_K_M",
+    "disk_guard_required_before_download": "At least2x official fullpackage1,945,781,181bytes plus1,000,000,000bytes headroom; verify registry digest1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7 before inference.",
+    "notice": "Existing4B and CPU model weights untouched; release data/assessments and completed2B artifacts retained."
+  }
+}

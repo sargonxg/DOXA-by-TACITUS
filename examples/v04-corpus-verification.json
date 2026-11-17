@@ -1,0 +1,264 @@
+{
+  "schema_version": "doxa-v04-corpus-audit-1",
+  "generated_at": "2026-11-17T16:14:06.656340+00:00",
+  "status": "passed",
+  "inputs": {
+    "benchmarks/v3-institutions/showcase.json": "c5626fac4374567cab54d99a835e9f92ee35ccf5a662130572bda6846500f232",
+    "benchmarks/v3-institutions/assessments-part-0001.jsonl.gz": "70b5bc89874354d2069b5000bf7fbd69b539748738374e0deb7c7f6a1649eb3b",
+    "benchmarks/v3-institutions/assessments-part-0002.jsonl.gz": "c500b12ca8d7f10b77e7fc12900628f0f2eef96d3fc13927f9663e5dc305bfab",
+    "benchmarks/v3-institutions/assessments-part-0003.jsonl.gz": "adefd84b0cbb269ab8192ab0de61ddc164491a2047bf341b54d1500354492fd6",
+    "benchmarks/v3-news/showcase.json": "783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827",
+    "benchmarks/v3-news/assessments-part-0001.jsonl.gz": "31d76e084ce9cc2118b37d2d23aba5d09d033e91563867887ce44dbce4549c4d",
+    "benchmarks/v3-news/assessments-part-0002.jsonl.gz": "b26c7f021c71e717befb3aab3e109f9b17f3fef593c729c11bf086f28fed6210",
+    "benchmarks/v3-news/assessments-part-0003.jsonl.gz": "d63b2202df6d5e17d32e22af9cc6af2adc515255ab0849d3125ec640e4088c70",
+    "benchmarks/v3-news/assessments-part-0004.jsonl.gz": "65f0a94dc23dad014a459f68fabd8d3bee2cfe0749e5dabf3df1a3ce8bcbbde6",
+    "benchmarks/v3-news/assessments-part-0005.jsonl.gz": "1de450c22d02f2176defff18f3690f901008405f1dcba31203ab19e1b41a0b46",
+    "benchmarks/v3-news/assessments-part-0006.jsonl.gz": "06f17ad1fcf477da247a82b04ea49b3579dfb1164b5da726d59a3cf6429f861f",
+    "benchmarks/v3-news/assessments-part-0007.jsonl.gz": "b2b5d46f10d8f0ffe866470fc1b314d757ff484c0ca9bcd6ea30be0db4870ddb",
+    "benchmarks/v3-news/assessments-part-0008.jsonl.gz": "7ace374cd41c47208353eaa1cd4a28b1cede962cda77649bbc62356f2b1fb289",
+    "benchmarks/v3-news/assessments-part-0009.jsonl.gz": "d4f125d4b95ff742c5e1b7f7501b51c79f91b947d7c2160df3c3e37609bb1873",
+    "benchmarks/v3-news/assessments-part-0010.jsonl.gz": "533cbc417da42ca54305e2a08d91df417b8d42107510bf2401a5fc54da6f5962",
+    "benchmarks/v3-news/assessments-part-0011.jsonl.gz": "76255bb85384ab15a2a9e988b73acd2f32ac111108563c33e719fcf1402b8950",
+    "benchmarks/v3-news/assessments-part-0012.jsonl.gz": "ffa9fff7fe05a9a42008fb91e0ea27f1c240724d409ea14ab99a4460451e3665",
+    "benchmarks/v3-news/assessments-part-0013.jsonl.gz": "fdeeda790855b0d55416c01677c44d1a329e8117574f7bb71af0a66be0737fca",
+    "benchmarks/v3-news/assessments-part-0014.jsonl.gz": "1b4816b48be192670f43d266152dc29b2a4630b850a16f183de7efb2a1b62014",
+    "benchmarks/v3-news/assessments-part-0015.jsonl.gz": "c7a79e66641db0ae0e77b32db9a57f1a56687e478123a3f7c4ea1b02dc38fb64",
+    "benchmarks/v3-news/assessments-part-0016.jsonl.gz": "d5ad0fd0ad23804440e48dc400610728b269f0dd79d959fd0d1db34e5fd02308",
+    "benchmarks/v3-news/assessments-part-0017.jsonl.gz": "9727fcd55add913e53a15c634a39bb92a04ae4f1250371e70a3c7a34be45ba37",
+    "benchmarks/v3-news/assessments-part-0018.jsonl.gz": "772e283e042460d82fa689f1438495c1f7b5d6bad090ff3e8a32bfec0f32be68",
+    "benchmarks/v3-news/assessments-part-0019.jsonl.gz": "cc9bd6bc6936c99e852120f34adb6238809347cde6e0c3bf034f1dc2251af0da",
+    "benchmarks/v3-news/assessments-part-0020.jsonl.gz": "fc56db80ee049a450feffe048b44ec82333a402af40c9774480f2c958062c2d3",
+    "benchmarks/v3-news/assessments-part-0021.jsonl.gz": "5d6104eec62c11a6778de16eddf3dba07432b26b1d3bfb3e9f9490e52a7bf333",
+    "benchmarks/v3-news/assessments-part-0022.jsonl.gz": "a49436b6b1b992becd7bf8302495f6e94445abb137a8e4ed0294c29be16477c4",
+    "benchmarks/v3-news/assessments-part-0023.jsonl.gz": "ce59910e6b48d8cb140bedf6ed9c2bb6da3b295c75f5e6c8bdb28038a1b1a743",
+    "benchmarks/v3-news/assessments-part-0024.jsonl.gz": "f9a9df869b33bd80bf96d119f73b582dd453cdeee391dc693581faf6cf0663a0",
+    "benchmarks/v3-news/assessments-part-0025.jsonl.gz": "c741d7784d4738fab65fb4b35f6ca28634b5173c508417242c8377d2f56475a8",
+    "benchmarks/v3-news/assessments-part-0026.jsonl.gz": "26fa2260a7a7e21a0d852510bd004c2abadf624725bbf40b1a85a667e955f6ba",
+    "benchmarks/v3-news/assessments-part-0027.jsonl.gz": "ae8d255c60f14c25f97fa542600e7fd46c53431b0538e315a513a41e79a3391d",
+    "benchmarks/v3-news/assessments-part-0028.jsonl.gz": "6401ed0b37fe6b275739ec03ef23efb9725e1d252673e8c4081562f4e17b8d71",
+    "benchmarks/v3-news/assessments-part-0029.jsonl.gz": "c4daebe0a1b33e2cfe29a91eb33f0c33b0e8947360d2c667d1b95ae0ddeb11d3",
+    "benchmarks/v3-news/assessments-part-0030.jsonl.gz": "580041d805751cda0db349f9296e18de9b2e94cc5a8ec8796332baf4253aa323",
+    "benchmarks/v3-news/assessments-part-0031.jsonl.gz": "e234d7056b3d1f8cb2aea6cdad56e63d55540ed6248d39bd6087ff933b000c99",
+    "benchmarks/v3-news/assessments-part-0032.jsonl.gz": "e163c7bc21e554a841ecc6645ccd254f428bb983213d0239269b401010fb0268",
+    "benchmarks/v3-news/assessments-part-0033.jsonl.gz": "a491feb87be4c3bf9edbc93587818db7ff07d6aacecfd1cbd8d7c953a9191d4f",
+    "benchmarks/v3-news/assessments-part-0034.jsonl.gz": "36581809bcfa13d0dafe1b91e1b3391bed673048ca859a4f23987cfcc0165b70",
+    "benchmarks/v3-news/assessments-part-0035.jsonl.gz": "ea976ff6a647e905cefeae5e35a16e19b3016803b3023332e3efeca962b54900",
+    "benchmarks/v3-news/assessments-part-0036.jsonl.gz": "08af1035d576a844a1038cc058f8e309a63c9956a23df0a34243ca25369eefce",
+    "benchmarks/v3-news/assessments-part-0037.jsonl.gz": "96be9fc6c48fbd5d38adfdae3ccaffdcd937502b275a2aafba757438069896fb",
+    "benchmarks/v3-news/assessments-part-0038.jsonl.gz": "87d5cc81f0b6124e95758a3441077ba2afbcc7fe980dcd4120bc2a320d704fdf",
+    "benchmarks/v3-news/assessments-part-0039.jsonl.gz": "449278653cd2ae730c116c3dc6337aff85c889c5b79b4e043f2a9994ca9f725e",
+    "benchmarks/v3-news/assessments-part-0040.jsonl.gz": "1f37955f939145c8b2a76626fbe6dc6f7072badc2b5ff3f53b54634accc0d9b0",
+    "benchmarks/v3-news/assessments-part-0041.jsonl.gz": "132b6d0363792b3c5559c4326377a20824a59ac2c3bbc818d1878553fca3e33d",
+    "benchmarks/v3-news/assessments-part-0042.jsonl.gz": "f5c30028ad684af09728cb0b772b6078679d63f7ab086e8b73ebf87d5198a4cd",
+    "benchmarks/v3-news/assessments-part-0043.jsonl.gz": "128b2eef9255b70e559822ea1eeb30bb5e09f383728edd5bdb752b6060b6c89d",
+    "benchmarks/v3-news/assessments-part-0044.jsonl.gz": "1fdf6d6797a1e0539db981eda483113448f9ce3c9b981350207c908a6537dfb4",
+    "benchmarks/v3-news/assessments-part-0045.jsonl.gz": "2d8f675a6ee75946bd449083dd355976b5ae5ab5d98620574339103239c3199b",
+    "benchmarks/v3-news/assessments-part-0046.jsonl.gz": "b6f70db12068fd39d66344addd0e5062eb5b5d78ecfc1ec9224869a4c125c0c2",
+    "benchmarks/v3-news/assessments-part-0047.jsonl.gz": "33d88cfddd50183100756e0017dc004f7a668ff02db12c6fa59c0375ab650207",
+    "benchmarks/v3-news/assessments-part-0048.jsonl.gz": "aebbef7b21ad21488a2f5a92c87cdb945e21f5d574f4af4c23697be40376ed4e",
+    "benchmarks/v3-news/assessments-part-0049.jsonl.gz": "5e86c0887f0199b50acb5bc4aa2b5d2ed00493f48500d446fe774699f6b2b85c",
+    "benchmarks/v3-news/assessments-part-0050.jsonl.gz": "8a39b1a817ef54e716000007ffa4ff0c401431c30663a71e5932a057f730d714",
+    "benchmarks/v3-political/showcase.json": "2d69f2002dfbed7bae2515e79918e57b0530bd863469ec1200b1e2d9c44d4b2e",
+    "benchmarks/v3-political/assessments-part-0001.jsonl.gz": "5f98e0ee98b01f3833f944a7fea8a0419612d45f5200ca407abf0dc717dfba66",
+    "benchmarks/v3-local-news/showcase.json": "68a97ca539a160efe97660f8d0e5162e570114baf23d3a67c220133980110b2a",
+    "benchmarks/v3-local-news/assessments-part-0001.jsonl.gz": "047352d840880203b8ca8d91b2ace79deee9755618d4dcb4c90eac83e3ed0c33",
+    "benchmarks/v3-independent-low-verification/showcase.json": "004d54772ecfe3f84ad3d1429fa4b9a68f3c990ea348da35eadd154f42c0b0cc",
+    "benchmarks/v3-independent-low-verification/assessments-part-0001.jsonl.gz": "0edad3c43de340ae5ce706b1d03cefd5d646939e23a0e0b7c56903e36dd848a9",
+    "source_metadata_tree_sha256": "cc5389a51baf3fa07602f33fa42e9d1caf1aea1e809e868b0888d5eb003d01b4"
+  },
+  "archives": [
+    {
+      "archive": "benchmarks/v3-institutions/showcase.json",
+      "archive_sha256": "c5626fac4374567cab54d99a835e9f92ee35ccf5a662130572bda6846500f232",
+      "run_id": "074539f031e64dc28f03384481563a85",
+      "status": "partial",
+      "model": "@cf/google/gemma-4-26b-a4b-it",
+      "counts": {
+        "audited_references": 308256,
+        "documents": 20,
+        "assessments": 11701,
+        "source_characters": 2349640,
+        "words": 356964
+      },
+      "unit_states": {
+        "accepted": 613,
+        "partial": 3
+      },
+      "outcomes": {
+        "not_applicable": 3579,
+        "meets_criterion": 1774,
+        "does_not_meet": 6329,
+        "uncertain": 19
+      },
+      "selected_units": 616,
+      "requested_decisions": 11704,
+      "retained_decisions": 11701,
+      "unresolved_decisions": 3,
+      "fully_assessed_documents": 18,
+      "usage": {
+        "input_tokens": 6825172,
+        "output_tokens": 751717,
+        "cost_usd": null,
+        "requests": 1640,
+        "estimated": true
+      },
+      "budget_accounted_usd": 0.9186193999999998,
+      "scope_notice": "All selected extracted source text; retained decisions and gaps remain separate."
+    },
+    {
+      "archive": "benchmarks/v3-news/showcase.json",
+      "archive_sha256": "783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827",
+      "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+      "status": "partial",
+      "model": "@cf/google/gemma-4-26b-a4b-it",
+      "counts": {
+        "audited_references": 3860336,
+        "documents": 5000,
+        "assessments": 204342,
+        "source_characters": 32893897,
+        "words": 5251119
+      },
+      "unit_states": {
+        "accepted": 10686,
+        "partial": 73
+      },
+      "outcomes": {
+        "does_not_meet": 94528,
+        "meets_criterion": 35933,
+        "not_applicable": 73721,
+        "uncertain": 160
+      },
+      "selected_units": 10759,
+      "requested_decisions": 204421,
+      "retained_decisions": 204342,
+      "unresolved_decisions": 79,
+      "fully_assessed_documents": 4927,
+      "usage": {
+        "input_tokens": 96099211,
+        "output_tokens": 14371603,
+        "cost_usd": null,
+        "requests": 27084,
+        "estimated": true
+      },
+      "budget_accounted_usd": 14.1058649000001,
+      "scope_notice": "All selected extracted source text; retained decisions and gaps remain separate."
+    },
+    {
+      "archive": "benchmarks/v3-political/showcase.json",
+      "archive_sha256": "2d69f2002dfbed7bae2515e79918e57b0530bd863469ec1200b1e2d9c44d4b2e",
+      "run_id": "8d11a4b04f0c444cab31152c84e7e74e",
+      "status": "partial",
+      "model": "@cf/google/gemma-4-26b-a4b-it",
+      "counts": {
+        "audited_references": 3417,
+        "documents": 4,
+        "assessments": 358,
+        "source_characters": 224358,
+        "words": 33975
+      },
+      "unit_states": {
+        "accepted": 59,
+        "partial": 1
+      },
+      "outcomes": {
+        "meets_criterion": 260,
+        "not_applicable": 91,
+        "does_not_meet": 3,
+        "uncertain": 4
+      },
+      "selected_units": 60,
+      "requested_decisions": 360,
+      "retained_decisions": 358,
+      "unresolved_decisions": 2,
+      "fully_assessed_documents": 3,
+      "usage": {
+        "input_tokens": 705514,
+        "output_tokens": 95567,
+        "cost_usd": 0.09922149999999998,
+        "requests": 179,
+        "estimated": true
+      },
+      "budget_accounted_usd": 0.09922149999999998,
+      "scope_notice": "All selected extracted source text; retained decisions and gaps remain separate."
+    },
+    {
+      "archive": "benchmarks/v3-local-news/showcase.json",
+      "archive_sha256": "68a97ca539a160efe97660f8d0e5162e570114baf23d3a67c220133980110b2a",
+      "run_id": "42a6e0514ef94f959e2dc3b28023ab89",
+      "status": "cancelled",
+      "model": "qwen3.5:4b",
+      "counts": {
+        "audited_references": 1042,
+        "documents": 20,
+        "assessments": 186,
+        "source_characters": 118700,
+        "words": 18709
+      },
+      "unit_states": {
+        "pending": 105,
+        "accepted": 8,
+        "partial": 2
+      },
+      "outcomes": {
+        "does_not_meet": 27,
+        "not_applicable": 123,
+        "meets_criterion": 35,
+        "uncertain": 1
+      },
+      "selected_units": 115,
+      "requested_decisions": 2185,
+      "retained_decisions": 186,
+      "unresolved_decisions": 1999,
+      "fully_assessed_documents": 2,
+      "usage": {
+        "input_tokens": 108605,
+        "output_tokens": 15849,
+        "cost_usd": null,
+        "requests": 56,
+        "estimated": true
+      },
+      "budget_accounted_usd": 0.0,
+      "scope_notice": "All selected extracted source text; retained decisions and gaps remain separate."
+    },
+    {
+      "archive": "benchmarks/v3-independent-low-verification/showcase.json",
+      "archive_sha256": "004d54772ecfe3f84ad3d1429fa4b9a68f3c990ea348da35eadd154f42c0b0cc",
+      "run_id": "ad5046e9849d4392a8160d55de9beacd",
+      "status": "completed",
+      "model": "@cf/openai/gpt-oss-120b",
+      "counts": {
+        "audited_references": 34947,
+        "documents": 14,
+        "assessments": 1501,
+        "source_characters": 2296070,
+        "words": 348941
+      },
+      "unit_states": {
+        "accepted": 79
+      },
+      "outcomes": {
+        "not_applicable": 819,
+        "meets_criterion": 310,
+        "does_not_meet": 328,
+        "uncertain": 44
+      },
+      "selected_units": 79,
+      "requested_decisions": 1501,
+      "retained_decisions": 1501,
+      "unresolved_decisions": 0,
+      "fully_assessed_documents": 14,
+      "usage": {
+        "input_tokens": 991254,
+        "output_tokens": 243735,
+        "cost_usd": 0.5297401499999996,
+        "requests": 277,
+        "estimated": true
+      },
+      "budget_accounted_usd": 0.5297401499999997,
+      "scope_notice": "Verifier coverage is its selected subset, not whole source documents."
+    }
+  ],
+  "interpretation_accuracy": null,
+  "independent_human_labels": false,
+  "notice": "Every archive part, source hash and reference was checked in a bounded streaming pass. This verifies integrity/counts, not semantic correctness."
+}

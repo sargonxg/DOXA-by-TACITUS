@@ -107,6 +107,14 @@ The create commands are examples of explicit provisioning, not steps run by the 
 
 ### Operating and testing
 
+Version 0.4 upgrades a native workspace to schema 4 only after creating and checking a private SQLite backup under its data directory's `backups/`. It rejects an unsupported future schema. Back up object files alongside the database before an operator upgrade; a database backup alone does not contain originals or saved report inputs.
+
+An existing remote D1 workspace requires an operator-created backup before its first schema-4 startup. Export D1 and preserve the matching R2 objects, check the export, then add `DOXA_MIGRATION_BACKUP_RECEIPT` to the Worker's configuration with a meaningful backup identifier or immutable receipt URL. The container forwards this value to the migration guard. This value records the operator's receipt; DOXA does not claim to create or verify a production D1 backup itself. A fresh empty database initializes automatically. Configure `DOXA_REVIEWER_ID` for a trusted operator identity before remote human review; browser-supplied identities cannot elevate review records.
+
+Report jobs persist their queue state, frozen selection, bounded compressed input parts, and verified artifacts in SQLite/files locally or D1/R2 remotely. Native startup recovers unfinished jobs. Cloud Queues dispatch typed report work, and the scheduled recovery finds queued or expired jobs; acknowledgment follows a committed checkpoint, never an acceptance response. A workspace revision change before freezing finishes fails explicitly, while a completely frozen job can restart without fresh inference or reading a changed source. Rendering runs in a cancellable child process with a bounded work deadline. Extremely large selections can exceed that deadline and must be narrowed; no production D1 capacity guarantee follows from emulator tests.
+
+Completed artifact downloads support `HEAD`, strong SHA-256 `ETag`, conditional requests and single byte ranges. The authenticated Cloudflare route streams immutable files directly from R2. The native route streams files from disk. The historical synchronous export remains available for compatibility; the new job path does not make a bounded-memory claim for that older endpoint.
+
 ```sh
 npm --prefix infra/cloudflare run types
 npm --prefix infra/cloudflare run typecheck
@@ -130,3 +138,17 @@ For a vLLM deployment, the operator creates a private GPU instance/container, in
 Runpod bills initialization, inference and idle timeout. Official current Serverless rates include 24 GB L4/A5000/3090 at $0.00019/s and 48 GB A6000/A40 at $0.00034/s. Async results are retained only 30 minutes; DOXA's own committed artifacts remain the source of truth. See [billing](https://docs.runpod.io/serverless/pricing) and [settings/rates](https://docs.runpod.io/serverless/endpoints/endpoint-configurations).
 
 The same Python container can run on GCP Cloud Run. Use Cloud Run Jobs for long processing, durable external metadata/object storage, and the existing bounded task contract; do not store a production SQLite database on its ephemeral filesystem. L4 GPU Jobs need at least 4 CPU/16 GiB memory and offer 24 GB VRAM. At checked `us-central1` ordinary Jobs rates, the minimum L4 configuration is approximately $1.047/hour before CPU/RAM allowances, storage, builds and networking. A GPU job has a 12-hour maximum task timeout and still needs checkpoints. [GPU Jobs](https://docs.cloud.google.com/run/docs/configuring/jobs/gpu) · [pricing](https://cloud.google.com/run/pricing). A native GCP durable-storage/dispatch adapter is a growth path; the supplied deploy script targets Cloudflare only.
+
+## Installed wheel and external demonstration data
+
+The v0.4 release wheel contains the compiled browser application and Python engine. From an empty directory, install the downloaded wheel with `python -m pip install ./doxa_by_tacitus-0.4.0-py3-none-any.whl`, then run `doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data`. Python dependencies still install normally; native PDF rendering can require system libraries, for which Docker supplies the documented environment.
+
+The full corpora and recorded results remain repository/release artifacts rather than inflating the application wheel. To expose those import collections from an installed application, set `DOXA_ASSET_ROOT` to a clone of this repository containing `corpus/` and `benchmarks/`. Keep `--data-dir` separate for your mutable workspace. The installed UI is always loaded from the wheel; external data does not replace it.
+
+## Optional private visible-request capture
+
+Default attempt journals contain operational metadata. To retain visible input/output for **new contextual runs** on a native local workspace, the operator must set `DOXA_ENABLE_PRIVATE_JOURNAL=true` and the run request must explicitly set `request_journal_mode` to `visible_io`. Operator enablement alone does not turn capture on. Remote D1/R2 workspaces reject this mode.
+
+`DOXA_PRIVATE_JOURNAL_MAX_BYTES` limits each run (default 67,108,864 bytes; supported range 4,096–1,073,741,824). Each entry is limited to 4 MiB. The local SQLite quota reservation prevents simultaneous requests exceeding the run limit; interrupted reservations remain conservative. Files are written beneath `DATA_DIR/private-request-journals/RUN_ID/` with private directory/file permissions. They are not served by HTTP or included in reports. The operator chooses retention/deletion.
+
+Capture accepts visible messages, schemas and allowlisted provider settings/responses, excluding credentials, headers and hidden reasoning. A quota/capture failure remains explicit and may leave the run partial. Historical prompts that were never captured stay `not_recorded`; reconstructed templates are not actual request logs.

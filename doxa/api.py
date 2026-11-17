@@ -29,6 +29,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from doxa.store import Store, utcnow
+from doxa import __version__
 
 ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / ".env")
@@ -74,6 +75,23 @@ def parser_environment() -> dict[str, str]:
     return result
 
 
+def extract_path(path: Path, filename: str) -> dict:
+    """One extraction policy for intake and explicit immutable re-extraction."""
+    if Path(filename).suffix.lower() in {".txt", ".md", ".markdown"} and path.stat().st_size <= 20 * 1024 * 1024:
+        from doxa.extraction import extract_text_document
+        return extract_text_document(path, filename)
+    output = path.parent / (uid() + ".json")
+    try:
+        result = subprocess.run([sys.executable, "-m", "doxa.extract_worker", str(path), str(output), filename],
+                                capture_output=True, text=True, timeout=180, cwd=ROOT, env=parser_environment())
+        if result.returncode:
+            lines = [line for line in result.stderr.splitlines() if line.strip()]
+            raise ValueError((lines[-1] if lines else "Parser failed")[:600])
+        return json.loads(output.read_text())
+    finally:
+        output.unlink(missing_ok=True)
+
+
 def unpack(row: dict | None) -> dict | None:
     if row is None:
         return None
@@ -106,6 +124,7 @@ class RunInput(BaseModel):
     reasoning_effort: Literal["low", "medium", "high"] | None = None
     reasoning_token_allowance: int = Field(default=0, ge=0, le=8192)
     verification_of: str | None = None
+    request_journal_mode: Literal["metadata", "visible_io"] = "metadata"
 
 
 class ReviewInput(BaseModel):
@@ -114,17 +133,23 @@ class ReviewInput(BaseModel):
 
 
 def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True, use_saved_showcase: bool = True) -> FastAPI:
+    from doxa.resources import asset_root
+    assets_root = asset_root()
     tasks: dict[str, asyncio.Task] = {}
+    extraction_slots = asyncio.Semaphore(2)
 
     @asynccontextmanager
     async def lifespan(app: FastAPI):
         app.state.store = Store(data_dir)
         app.state.store.init()
+        from doxa.report_jobs import ReportJobs
+        app.state.report_jobs = ReportJobs(app.state.store)
         app.state.tasks = tasks
         if not app.state.store.one("SELECT id FROM projects LIMIT 1"):
             app.state.store.execute("INSERT INTO projects(id,name,description,created_at) VALUES(?,?,?,?)",
                                     [uid(), "My research workspace", "An evidence-centred discourse inquiry", utcnow()])
         if start_workers and not app.state.store.remote:
+            await app.state.report_jobs.start()
             for row in app.state.store.query("SELECT id FROM runs WHERE status IN ('queued','running')"):
                 schedule(row["id"])
         yield
@@ -132,9 +157,10 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             task.cancel()
         if tasks:
             await asyncio.gather(*tasks.values(), return_exceptions=True)
+        await app.state.report_jobs.stop()
         app.state.store.close()
 
-    app = FastAPI(title="DOXA by TACITUS · Bias Detection as a Service", version="0.3.0", lifespan=lifespan)
+    app = FastAPI(title="DOXA by TACITUS · Bias Detection as a Service", version=__version__, lifespan=lifespan)
 
     def db() -> Store:
         return app.state.store
@@ -170,6 +196,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         result["openai_configured"] = bool(os.environ.get("DOXA_OPENAI_BASE_URL") or os.environ.get("OPENAI_BASE_URL"))
         result["runpod_configured"] = bool(any(os.environ.get(key) for key in ["DOXA_RUNPOD_API_KEY", "RUNPOD_API_KEY"]) and any(os.environ.get(key) for key in ["DOXA_RUNPOD_ENDPOINT_ID", "RUNPOD_ENDPOINT_ID", "DOXA_RUNPOD_BASE_URL", "RUNPOD_BASE_URL"]))
         result["local_only"] = not db().remote
+        result["private_request_journal_available"] = not db().remote and os.environ.get("DOXA_ENABLE_PRIVATE_JOURNAL", "").lower() in {"1", "true", "yes"}
         month = utcnow()[:7]
         result["budget"] = db().one("SELECT * FROM budget_ledger WHERE month=?", [month]) or {"month": month, "reserved_usd": 0, "spent_usd": 0}
         return result
@@ -228,7 +255,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
 
     @app.get("/api/health")
     def health():
-        return {"ok": True, "version": "0.3.0", "mode": "cloud" if db().remote else "local",
+        return {"ok": True, "version": __version__, "mode": "cloud" if db().remote else "local",
                 "capabilities": {"multipart_uploads": True, "full_text_search": db().fts,
                                  "private_local": not bool(db().remote), "semantic_validation": "research_preview"}}
 
@@ -277,6 +304,23 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         db().download(doc["object_key"], target)
         return FileResponse(target, filename=doc["filename"], media_type=doc["mime_type"])
 
+    @app.get("/api/documents/{document_id}/extraction")
+    def extraction_details(document_id: str, offset: int = 0, limit: int = 100):
+        if offset < 0 or not 1 <= limit <= 200:
+            raise HTTPException(422, "Invalid extraction page range")
+        doc = require_document(document_id)
+        manifest = doc.get("metadata", {}).get("extraction_manifest")
+        if not manifest:
+            return {"document_id": document_id, "status": "not_recorded", "pages": [], "total_pages": None}
+        if manifest.get("manifest_key"):
+            raw = db().get_bytes(manifest["manifest_key"])
+            if hashlib.sha256(raw).hexdigest() != manifest["manifest_sha256"]:
+                raise HTTPException(409, "Extraction manifest integrity check failed")
+            manifest = json.loads(raw)
+        pages = manifest.get("pages", [])
+        return {**{key: value for key, value in manifest.items() if key != "pages"}, "document_id": document_id,
+                "pages": pages[offset:offset + limit], "total_pages": len(pages), "next_offset": offset + limit if offset + limit < len(pages) else None}
+
     @app.patch("/api/documents/{document_id}")
     def update_document(document_id: str, body: dict):
         document = require_document(document_id)
@@ -285,11 +329,11 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         if any(value is not None and (not isinstance(value, str) or len(value) > 2000) for value in updates.values()):
             raise HTTPException(422, "Metadata must be text of at most 2000 characters")
         if updates:
-            db().execute("UPDATE documents SET " + ",".join(key + "=?" for key in updates) + " WHERE id=?", [*updates.values(), document_id])
+            statements = [{"sql": "UPDATE documents SET " + ",".join(key + "=?" for key in updates) + " WHERE id=?", "params": [*updates.values(), document_id]}]
             if "title" in updates and db().fts:
-                db().execute("UPDATE document_search SET title=? WHERE id=?", [updates["title"], document_id])
+                statements.append({"sql": "UPDATE document_search SET title=? WHERE id=?", "params": [updates["title"], document_id]})
             from doxa.workspace import Workspace
-            Workspace(db()).touch(document["project_id"])
+            db().batch([*statements, Workspace.touch_statement(document["project_id"])])
         return require_document(document_id)
 
     @app.post("/api/projects/{project_id}/metadata/import")
@@ -330,21 +374,21 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         active = db().one("SELECT t.id FROM tasks t JOIN runs r ON r.id=t.run_id WHERE t.document_id=? AND r.status IN ('queued','running') LIMIT 1", [document_id])
         if active:
             raise HTTPException(409, "Cancel active analysis before deleting its source")
-        finding_ids = db().query("SELECT id FROM findings WHERE document_id=?", [document_id])
-        statements = [{"sql": "DELETE FROM reviews WHERE finding_id=?", "params": [row["id"]]} for row in finding_ids]
-        statements += [{"sql": "DELETE FROM findings WHERE document_id=?", "params": [document_id]},
+        statements = [{"sql": "DELETE FROM reviews WHERE finding_id IN (SELECT id FROM findings WHERE document_id=?)", "params": [document_id]},
+                       {"sql": "DELETE FROM findings WHERE document_id=?", "params": [document_id]},
                        {"sql": "DELETE FROM batch_members WHERE document_id=?", "params": [document_id]},
                        {"sql": "DELETE FROM tasks WHERE document_id=?", "params": [document_id]},
+                       {"sql": "DELETE FROM import_commits WHERE document_id=?", "params": [document_id]},
                        {"sql": "DELETE FROM documents WHERE id=?", "params": [document_id]}]
-        for i in range(0, len(statements), 50):
-            db().batch(statements[i:i+50])
         if db().fts:
-            db().execute("DELETE FROM document_search WHERE id=?", [document_id])
+            statements.append({"sql": "DELETE FROM document_search WHERE id=?", "params": [document_id]})
         from doxa.workspace import Workspace
-        Workspace(db()).touch(doc["project_id"])
-        for key in [doc.get("object_key"), doc.get("blocks_key")]:
+        db().batch([*statements, Workspace.touch_statement(doc["project_id"])])
+        for key in [doc.get("object_key"), doc.get("blocks_key"), doc.get("metadata", {}).get("extraction_manifest", {}).get("manifest_key")]:
             if key:
-                db().delete_object(key)
+                shared = db().one("SELECT id FROM documents WHERE object_key=? OR blocks_key=? LIMIT 1", [key, key])
+                if not shared:
+                    db().delete_object(key)
         return {"ok": True, "historical_reports": "Saved report snapshots remain immutable until their project is deleted."}
 
     def new_batch(project_id: str, name: str, batch_id: str | None = None) -> dict:
@@ -352,16 +396,27 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         db().execute("INSERT INTO batches(id,project_id,name,created_at) VALUES(?,?,?,?) ON CONFLICT(id) DO NOTHING", list(batch.values()))
         return db().one("SELECT * FROM batches WHERE id=? AND project_id=?", [batch["id"], project_id])
 
-    def save_document(project_id: str, batch_id: str, data: dict, *, object_key: str | None = None) -> dict:
-        doc_id = uid()
+    def save_document(project_id: str, batch_id: str, data: dict, *, object_key: str | None = None, document_id: str | None = None) -> dict:
+        metadata = dict(data.get("metadata") or {})
+        digest = data.get("sha256") or data.get("content_sha256") or hashlib.sha256(json.dumps(data.get("blocks", []), ensure_ascii=False).encode()).hexdigest()
+        identity = metadata.get("source_identity") or data.get("source_url") or data.get("filename") or data.get("id") or "@content"
+        doc_id = document_id or hashlib.sha256(json.dumps([project_id, identity, digest]).encode()).hexdigest()[:32]
         blocks = data.get("blocks", [])
         blocks_key = f"documents/{doc_id}/blocks.json"
         db().put_json(blocks_key, blocks)
-        digest = data.get("sha256") or data.get("content_sha256") or hashlib.sha256(json.dumps(blocks, ensure_ascii=False).encode()).hexdigest()
-        metadata = dict(data.get("metadata") or {})
-        for key in ["extraction_warnings", "extractor", "extractor_version", "source_sha256", "content_sha256", "rights", "notices", "excluded_blocks", "source_id", "attribution", "license_url", "rights_source_url", "rights_notes", "rights_review", "coverage", "synthetic", "language"]:
+        for key in ["extraction_warnings", "extraction_manifest", "extractor", "extractor_version", "source_sha256", "content_sha256", "rights", "notices", "excluded_blocks", "source_id", "attribution", "license_url", "rights_source_url", "rights_notes", "rights_review", "coverage", "synthetic", "language"]:
             if key in data:
                 metadata[key] = data[key]
+        manifest = metadata.get("extraction_manifest")
+        if isinstance(manifest, dict):
+            encoded_manifest = json.dumps(manifest, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
+            manifest_key = f"documents/{doc_id}/extraction-manifest.json"
+            db().put_bytes(manifest_key, encoded_manifest, "application/json")
+            metadata["extraction_manifest"] = {**{key: value for key, value in manifest.items() if key not in {"pages", "exclusions"}},
+                "pages_count": len(manifest.get("pages", [])), "manifest_key": manifest_key,
+                "exclusions_preview": manifest.get("exclusions", [])[:20], "exclusions_count": len(manifest.get("exclusions", [])),
+                "manifest_sha256": hashlib.sha256(encoded_manifest).hexdigest(), "page_details": "stored_in_manifest_artifact"}
+            metadata.pop("page_manifest", None)
         values = {"id": doc_id, "project_id": project_id, "batch_id": batch_id,
                   "title": data.get("title") or data.get("filename") or "Untitled document",
                   "author": data.get("author") or "Unknown", "institution": data.get("institution") or "",
@@ -371,14 +426,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                   "page_count": data.get("page_count") or 0, "source_url": data.get("source_url", ""),
                   "license": data.get("license", ""), "object_key": object_key, "blocks_key": blocks_key,
                   "created_at": utcnow(), "error": data.get("error"), "metadata_json": json.dumps(metadata, ensure_ascii=False)}
-        db().execute("INSERT INTO documents(" + ",".join(values) + ") VALUES(" + ",".join("?" for _ in values) + ")", list(values.values()))
-        db().execute("INSERT INTO batch_members(batch_id,document_id) VALUES(?,?) ON CONFLICT(batch_id,document_id) DO NOTHING", [batch_id, doc_id])
-        if db().fts and blocks:
-            db().index_document(doc_id, project_id, values["title"], blocks)
-        db().execute("INSERT INTO v3_sources(document_id,project_id,source_identity,content_hash,canonical_url,relative_path,created_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(document_id) DO NOTHING",
-                     [doc_id, project_id, metadata.get("source_identity") or values["source_url"] or values["filename"], digest, values["source_url"], metadata.get("relative_path") or values["filename"], utcnow()])
-        from doxa.workspace import Workspace
-        Workspace(db()).touch(project_id)
+        from doxa.imports import commit_document
+        doc_id = commit_document(db(), values, blocks, identity)
         return require_document(doc_id)
 
     async def ingest(project_id: str, batch: dict, path: Path, filename: str, existing_key: str | None = None, source_identity: str | None = None) -> tuple[dict, bool]:
@@ -388,37 +437,31 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 digest.update(chunk)
         digest_string = digest.hexdigest()
         if source_identity:
-            duplicate = db().one("SELECT d.id,d.object_key FROM documents d JOIN v3_sources s ON s.document_id=d.id WHERE d.project_id=? AND d.sha256=? AND s.source_identity=?", [project_id, digest_string, source_identity])
+            duplicate = db().one("SELECT d.* FROM documents d LEFT JOIN v3_sources s ON s.document_id=d.id WHERE d.project_id=? AND d.sha256=? AND (s.source_identity=? OR json_extract(d.metadata_json,'$.source_identity')=?)", [project_id, digest_string, source_identity, source_identity])
         else:
-            duplicate = db().one("SELECT id,object_key FROM documents WHERE project_id=? AND sha256=?", [project_id, digest_string])
-        if duplicate:
-            db().execute("INSERT INTO batch_members(batch_id,document_id) VALUES(?,?) ON CONFLICT(batch_id,document_id) DO NOTHING", [batch["id"], duplicate["id"]])
+            duplicate = db().one("SELECT * FROM documents WHERE project_id=? AND sha256=?", [project_id, digest_string])
+        commit_identity = source_identity or "@content"
+        commit = db().one("SELECT * FROM import_commits WHERE project_id=? AND source_identity=? AND sha256=?", [project_id, commit_identity, digest_string])
+        if duplicate and duplicate["status"] == "ready":
+            from doxa.imports import commit_document
+            from doxa.workspace import Workspace
+            if not commit or commit["status"] != "ready":
+                # Repair legacy/interrupted derived state using its original
+                # extraction, preserving all historical evidence offsets.
+                commit_document(db(), {**duplicate, "batch_id": batch["id"]}, db().get_json(duplicate["blocks_key"]), commit_identity)
+            else:
+                db().batch([{"sql": "INSERT INTO batch_members(batch_id,document_id) VALUES(?,?) ON CONFLICT(batch_id,document_id) DO NOTHING", "params": [batch["id"], duplicate["id"]]}, Workspace.touch_statement(project_id)])
             if existing_key and existing_key != duplicate.get("object_key"):
                 db().delete_object(existing_key)
             return require_document(duplicate["id"]), True
-        key = existing_key or f"originals/{uid()}/{Path(filename).name}"
+        key = (duplicate or {}).get("object_key") or existing_key or f"originals/{project_id}/{hashlib.sha256((commit_identity + digest_string).encode()).hexdigest()}/{Path(filename).name}"
         if not existing_key:
             await asyncio.to_thread(db().put_path, key, path)
-        output = path.parent / (uid() + ".json")
         extracted: dict = {}
         error = None
-        def parse():
-            if Path(filename).suffix.lower() in {".txt", ".md"} and path.stat().st_size <= 20 * 1024 * 1024:
-                text = path.read_text(encoding="utf-8-sig")
-                blocks = [{"id": f"text-p{number:06}", "text": match.group(), "paragraph": number, "source_char_start": match.start()}
-                          for number, match in enumerate(re.finditer(r".+?(?:\n[ \t]*\n|\Z)", text, re.S), 1) if match.group()]
-                if not blocks:
-                    raise ValueError("Document contains no text")
-                return {"blocks": blocks, "extractor": "doxa-utf8-text-v3", "metadata": {"sha256": digest_string}, "word_count": len(text.split()), "page_count": 0}
-            result = subprocess.run([sys.executable, "-m", "doxa.extract_worker", str(path), str(output), filename],
-                                    capture_output=True, text=True, timeout=180, cwd=ROOT, env=parser_environment())
-            if result.returncode:
-                # No source contents, credentials or full traceback are reflected into the UI.
-                lines = [line for line in result.stderr.splitlines() if line.strip()]
-                raise ValueError((lines[-1] if lines else "Parser failed")[:600])
-            return json.loads(output.read_text())
         try:
-            extracted = await asyncio.to_thread(parse)
+            async with extraction_slots:
+                extracted = await asyncio.to_thread(extract_path, path, filename)
         except subprocess.TimeoutExpired:
             error = "Extraction exceeded the 180-second task limit. Install the OCR extra or split this document into smaller parts."
         except Exception as exc:
@@ -427,9 +470,49 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                           "title": extracted.get("metadata", {}).get("title") or Path(filename).stem,
                           "author": extracted.get("metadata", {}).get("author") or "Unknown",
                           "status": "failed" if error else "ready", "error": error})
-        if source_identity:
-            extracted.setdefault("metadata", {}).update({"source_identity": source_identity, "relative_path": source_identity})
-        return save_document(project_id, batch["id"], extracted, object_key=key), False
+        extracted.setdefault("metadata", {}).update({"source_identity": commit_identity, "relative_path": source_identity or filename})
+        return save_document(project_id, batch["id"], extracted, object_key=key, document_id=(duplicate or {}).get("id")), False
+
+    @app.post("/api/documents/{document_id}/re-extract", status_code=201)
+    async def reextract_document(document_id: str):
+        original = require_document(document_id)
+        if not original.get("object_key"):
+            raise HTTPException(422, "This source has no retained original file; import its original before re-extracting")
+        with tempfile.TemporaryDirectory(dir=db().root) as working:
+            path = Path(working) / ("source" + Path(original["filename"]).suffix)
+            await asyncio.to_thread(db().download, original["object_key"], path)
+            raw_hash = hashlib.sha256()
+            with path.open("rb") as source:
+                while chunk := source.read(1024 * 1024):
+                    raw_hash.update(chunk)
+            raw_sha = raw_hash.hexdigest()
+            metadata = original.get("metadata", {})
+            expected_raw = metadata.get("raw_sha256") or metadata.get("extraction_manifest", {}).get("raw_sha256") or original["sha256"]
+            if raw_sha != expected_raw:
+                raise HTTPException(409, "Retained original failed its source hash check")
+            try:
+                async with extraction_slots:
+                    extracted = await asyncio.to_thread(extract_path, path, original["filename"])
+            except (ValueError, subprocess.TimeoutExpired) as error:
+                raise HTTPException(422, "Re-extraction did not succeed; the original version is unchanged. " + (str(error)[:400] if isinstance(error, ValueError) else "Parser exceeded its time limit.")) from error
+        manifest = extracted["extraction_manifest"]
+        if manifest["raw_sha256"] != raw_sha:
+            raise HTTPException(409, "Extractor manifest does not match the retained original")
+        derived_sha = hashlib.sha256(json.dumps({"raw_sha256": raw_sha, "blocks_sha256": manifest["blocks_sha256"],
+            "extraction_version_id": manifest["extraction_version_id"]}, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+        identity = metadata.get("source_identity") or original.get("source_url") or original["filename"]
+        existing = db().one("SELECT d.id FROM documents d JOIN v3_sources s ON s.document_id=d.id WHERE d.project_id=? AND s.source_identity=? AND d.sha256=? AND d.status='ready'", [original["project_id"], identity, derived_sha])
+        if existing:
+            return {"document": require_document(existing["id"]), "derived_from": original["id"], "duplicate": True, "original_preserved": True}
+        derived_metadata = {**metadata, **extracted.get("metadata", {}), "source_identity": identity, "raw_sha256": raw_sha,
+            "source_sha256": raw_sha, "derived_from_document_id": original["id"], "extraction_version_id": manifest["extraction_version_id"],
+            "change_kind": "extraction_revision", "hash_basis": "raw source plus immutable extraction manifest and block digest"}
+        extracted.update({key: original.get(key) for key in ("title", "author", "institution", "document_type", "published_at", "filename", "mime_type", "source_url", "license")})
+        extracted.update({"sha256": derived_sha, "status": "ready", "metadata": derived_metadata})
+        batch_id = hashlib.sha256(f"reextract:{original['project_id']}:{identity}:{derived_sha}".encode()).hexdigest()[:32]
+        batch = new_batch(original["project_id"], "Re-extracted source version", batch_id)
+        document = save_document(original["project_id"], batch["id"], extracted, object_key=original["object_key"])
+        return {"document": document, "batch": batch, "derived_from": original["id"], "duplicate": False, "original_preserved": True}
 
     @app.post("/api/projects/{project_id}/upload")
     async def upload(project_id: str, files: list[UploadFile] = File(...), import_id: str | None = None):
@@ -465,9 +548,18 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         if not re.fullmatch(r"[a-f0-9]{32}", upload_id):
             raise HTTPException(404, "Upload not found")
         folder = db().root / "uploads" / upload_id
+        saved = db().one("SELECT * FROM upload_sessions WHERE id=?", [upload_id])
+        if saved:
+            if saved["status"] == "aborted":
+                raise HTTPException(404, "Upload not found")
+            return folder, {**json.loads(saved["metadata_json"]), "status": saved["status"]}
         if not (folder / "meta.json").exists():
             raise HTTPException(404, "Upload not found")
-        return folder, json.loads((folder / "meta.json").read_text())
+        # Upgrade an unfinished pre-v0.4 local upload without losing its parts.
+        meta = json.loads((folder / "meta.json").read_text())
+        meta.setdefault("part_size", PART_SIZE)
+        db().execute("INSERT INTO upload_sessions(id,project_id,metadata_json,created_at) VALUES(?,?,?,?) ON CONFLICT(id) DO NOTHING", [upload_id, meta["project_id"], json.dumps(meta), meta["created_at"]])
+        return folder, {**meta, "status": "pending"}
 
     @app.post("/api/projects/{project_id}/uploads/init")
     def init_upload(project_id: str, body: dict):
@@ -476,73 +568,144 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         if import_id and not db().one("SELECT id FROM v3_imports WHERE id=? AND project_id=?", [import_id, project_id]):
             raise HTTPException(404, "Import does not belong to this project")
         size = body.get("size")
-        if not isinstance(size, int) or not 0 < size <= MAX_FILE:
+        if isinstance(size, bool) or not isinstance(size, int) or not 0 < size <= MAX_FILE:
             raise HTTPException(422, "File size must be between 1 byte and 500 MiB")
         upload_id = uid()
         folder = db().root / "uploads" / upload_id
         folder.mkdir(parents=True)
         meta = {"id": upload_id, "project_id": project_id, "filename": Path(str(body.get("filename", "document.txt"))).name,
-                "size": size, "created_at": utcnow(), "import_id": import_id}
+                "size": size, "created_at": utcnow(), "import_id": import_id, "part_size": PART_SIZE,
+                "batch_id": (db().one("SELECT batch_id FROM v3_imports WHERE id=?", [import_id]) or {}).get("batch_id") if import_id else hashlib.sha256(f"upload:{upload_id}".encode()).hexdigest()[:32]}
         (folder / "meta.json").write_text(json.dumps(meta))
+        db().execute("INSERT INTO upload_sessions(id,project_id,metadata_json,created_at) VALUES(?,?,?,?)", [upload_id, project_id, json.dumps(meta), meta["created_at"]])
         return {"id": upload_id, "upload_id": upload_id, "part_size": PART_SIZE}
 
     @app.put("/api/uploads/{upload_id}/parts/{part_number}")
     async def upload_part(upload_id: str, part_number: int, request: Request):
         folder, meta = upload_meta(upload_id)
-        expected_parts = (meta["size"] + PART_SIZE - 1) // PART_SIZE
+        if meta["status"] != "pending":
+            raise HTTPException(409, "Upload has already started completion")
+        part_size = meta["part_size"]
+        expected_parts = (meta["size"] + part_size - 1) // part_size
         if not 1 <= part_number <= expected_parts:
             raise HTTPException(422, "Invalid part number")
         digest = hashlib.sha256()
         size = 0
-        path = folder / f"part-{part_number}.tmp"
-        with path.open("wb") as output:
+        folder.mkdir(parents=True, exist_ok=True)
+        with tempfile.NamedTemporaryFile(dir=folder, prefix=f"part-{part_number}-", delete=False) as output:
+            path = Path(output.name)
             async for chunk in request.stream():
                 size += len(chunk)
-                if size > PART_SIZE:
+                if size > part_size:
                     path.unlink(missing_ok=True)
                     raise HTTPException(413, "Part exceeds 8 MiB")
                 digest.update(chunk)
                 output.write(chunk)
-        expected_size = min(PART_SIZE, meta["size"] - (part_number - 1) * PART_SIZE)
+        expected_size = min(part_size, meta["size"] - (part_number - 1) * part_size)
         if size != expected_size:
             path.unlink(missing_ok=True)
             raise HTTPException(422, "Part size does not match the declared file size")
-        path.replace(folder / f"part-{part_number}")
         etag = digest.hexdigest()
-        (folder / f"etag-{part_number}").write_text(etag)
+        key = f"uploads/{upload_id}/parts/{part_number}/{etag}"
+        try:
+            previous = db().one("SELECT sha256 FROM upload_parts WHERE upload_id=? AND part_number=?", [upload_id, part_number])
+            if previous and previous["sha256"] != etag:
+                raise HTTPException(409, "This part is already committed with different bytes")
+            await asyncio.to_thread(db().put_path, key, path)
+            db().execute("INSERT INTO upload_parts(upload_id,part_number,sha256,object_key,size) SELECT ?,?,?,?,? WHERE EXISTS(SELECT 1 FROM upload_sessions WHERE id=? AND status='pending') ON CONFLICT(upload_id,part_number) DO NOTHING", [upload_id, part_number, etag, key, size, upload_id])
+            saved = db().one("SELECT sha256 FROM upload_parts WHERE upload_id=? AND part_number=?", [upload_id, part_number])
+            if not saved or saved["sha256"] != etag:
+                db().delete_object(key)
+                raise HTTPException(409, "This part is already committed with different bytes or completion has started")
+        finally:
+            path.unlink(missing_ok=True)
         return {"partNumber": part_number, "etag": etag}
 
     @app.post("/api/uploads/{upload_id}/complete")
     async def finish_upload(upload_id: str, body: dict):
         folder, meta = upload_meta(upload_id)
-        count = (meta["size"] + PART_SIZE - 1) // PART_SIZE
+        count = (meta["size"] + meta["part_size"] - 1) // meta["part_size"]
         parts = body.get("parts", [])
         if not isinstance(parts, list) or len(parts) != count:
             raise HTTPException(422, "All parts must be included")
+        if any(not isinstance(part, dict) or isinstance(part.get("partNumber"), bool)
+               or not isinstance(part.get("partNumber"), int) or not isinstance(part.get("etag"), str)
+               or not re.fullmatch(r"[a-f0-9]{64}", part["etag"]) for part in parts):
+            raise HTTPException(422, "Each part requires an integer number and SHA-256 checksum")
         provided = {p.get("partNumber"): p.get("etag") for p in parts if isinstance(p, dict)}
+        if len(provided) != count or set(provided) != set(range(1, count + 1)):
+            raise HTTPException(422, "All distinct parts must be included")
+        parts_digest = hashlib.sha256(json.dumps(provided, sort_keys=True).encode()).hexdigest()
+        terminal = db().one("SELECT result_json FROM upload_sessions WHERE id=? AND status='completed'", [upload_id])
+        if terminal:
+            saved = json.loads(terminal["result_json"])
+            if saved["parts_sha256"] != parts_digest:
+                raise HTTPException(422, "Completed upload has a different part manifest")
+            return saved["result"]
+        committed = []
         for number in range(1, count + 1):
-            if not (folder / f"part-{number}").exists() or provided.get(number) != (folder / f"etag-{number}").read_text():
+            part = db().one("SELECT * FROM upload_parts WHERE upload_id=? AND part_number=?", [upload_id, number])
+            if not part and (folder / f"part-{number}").exists() and (folder / f"etag-{number}").exists():
+                digest = hashlib.sha256((folder / f"part-{number}").read_bytes()).hexdigest()
+                key = f"uploads/{upload_id}/parts/{number}/{digest}"
+                db().put_path(key, folder / f"part-{number}")
+                db().execute("INSERT INTO upload_parts(upload_id,part_number,sha256,object_key,size) VALUES(?,?,?,?,?) ON CONFLICT(upload_id,part_number) DO NOTHING", [upload_id, number, digest, key, (folder / f"part-{number}").stat().st_size])
+                part = db().one("SELECT * FROM upload_parts WHERE upload_id=? AND part_number=?", [upload_id, number])
+            if not part or provided.get(number) != part["sha256"]:
                 raise HTTPException(422, "Missing part or checksum mismatch")
+            committed.append(part)
+        completion_token = uid()
+        claimed = db().query("UPDATE upload_sessions SET status='completing',metadata_json=json_set(metadata_json,'$.completion_lease_until',?,'$.completion_token',?) WHERE id=? AND (status='pending' OR (status='completing' AND COALESCE(json_extract(metadata_json,'$.completion_lease_until'),0)<?)) RETURNING id", [time.time() + 300, completion_token, upload_id, time.time()])
+        if not claimed:
+            raise HTTPException(409, "Upload completion is already in progress; retry after it settles")
+        try:
+            return await assemble_upload(upload_id, folder, meta, committed, parts_digest, completion_token)
+        finally:
+            # A handled error is retryable immediately; process death leaves a
+            # bounded lease instead of allowing concurrent assembly/cleanup.
+            db().execute("UPDATE upload_sessions SET metadata_json=json_set(metadata_json,'$.completion_lease_until',0) WHERE id=? AND status='completing' AND json_extract(metadata_json,'$.completion_token')=?", [upload_id, completion_token])
+
+    async def assemble_upload(upload_id, folder, meta, committed, parts_digest, completion_token):
         import shutil
-        assembled = folder / ("assembled" + Path(meta["filename"]).suffix)
-        with assembled.open("wb") as output:
-            for number in range(1, count + 1):
-                with (folder / f"part-{number}").open("rb") as source:
+        folder.mkdir(parents=True, exist_ok=True)
+        with tempfile.NamedTemporaryFile(dir=folder, suffix=Path(meta["filename"]).suffix, delete=False) as output:
+            assembled = Path(output.name)
+            for part in committed:
+                source_path = folder / f"read-{uid()}"
+                db().download(part["object_key"], source_path)
+                with source_path.open("rb") as source:
                     shutil.copyfileobj(source, output, 1024 * 1024)
+                source_path.unlink()
         session = db().one("SELECT * FROM v3_imports WHERE id=? AND project_id=?", [meta.get("import_id"), meta["project_id"]]) if meta.get("import_id") else None
-        batch = db().one("SELECT * FROM batches WHERE id=?", [session["batch_id"]]) if session else new_batch(meta["project_id"], "Resumable upload")
+        batch = db().one("SELECT * FROM batches WHERE id=?", [session["batch_id"]]) if session else new_batch(meta["project_id"], "Resumable upload", meta.get("batch_id") or hashlib.sha256(f"upload:{upload_id}".encode()).hexdigest()[:32])
         doc, duplicate = await ingest(meta["project_id"], batch, assembled, meta["filename"], source_identity=meta["filename"] if session else None)
         if session:
-            db().execute("INSERT INTO v3_import_files(import_id,relative_path,sha256,document_id,status,error,created_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(import_id,relative_path,sha256) DO NOTHING", [session["id"], meta["filename"], doc["sha256"], doc["id"], doc["status"], doc.get("error"), utcnow()])
+            db().execute("INSERT INTO v3_import_files(import_id,relative_path,sha256,document_id,status,error,created_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(import_id,relative_path,sha256) DO UPDATE SET document_id=excluded.document_id,status=excluded.status,error=excluded.error", [session["id"], meta["filename"], doc["sha256"], doc["id"], doc["status"], doc.get("error"), utcnow()])
             db().execute("UPDATE v3_imports SET completed_files=(SELECT COUNT(*) FROM v3_import_files WHERE import_id=? AND status='ready'),failed_files=(SELECT COUNT(*) FROM v3_import_files WHERE import_id=? AND status='failed'),status=CASE WHEN total_files<=(SELECT COUNT(*) FROM v3_import_files WHERE import_id=?) THEN 'completed' ELSE 'running' END WHERE id=?", [session["id"], session["id"], session["id"], session["id"]])
-        shutil.rmtree(folder)
-        return {"document": doc, "batch": batch, "duplicate": duplicate}
+        result = {"document": doc, "batch": batch, "duplicate": duplicate}
+        db().execute("UPDATE upload_sessions SET status='completed',result_json=? WHERE id=? AND status='completing' AND json_extract(metadata_json,'$.completion_token')=?", [json.dumps({"parts_sha256": parts_digest, "result": result}), upload_id, completion_token])
+        saved = db().one("SELECT result_json FROM upload_sessions WHERE id=?", [upload_id])["result_json"]
+        if not saved:
+            raise HTTPException(409, "Upload completion lease changed; retry the persisted session")
+        result = json.loads(saved)["result"]
+        assembled.unlink(missing_ok=True)
+        # Persisted result survives cleanup, restart and a lost HTTP response.
+        for part in committed:
+            try:
+                db().delete_object(part["object_key"])
+            except OSError:
+                pass  # terminal result is durable; tracked parts can be cleaned later
+        shutil.rmtree(folder, ignore_errors=True)
+        return result
 
     @app.delete("/api/uploads/{upload_id}")
     def abort_upload(upload_id: str):
         import shutil
         folder, _ = upload_meta(upload_id)
-        shutil.rmtree(folder)
+        changed = db().query("UPDATE upload_sessions SET status='aborted' WHERE id=? AND status='pending' RETURNING id", [upload_id])
+        if not changed:
+            raise HTTPException(409, "Upload completion has already started")
+        shutil.rmtree(folder, ignore_errors=True)
         return {"ok": True}
 
     @app.post("/internal/uploads/complete")
@@ -684,9 +847,11 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             status = "cancelled"
         elif not pending and not status.startswith("paused"):
             status = "completed" if complete else "partial"
-        completed_at = utcnow() if status in TERMINAL else None
-        db().execute("UPDATE runs SET progress_json=?,usage_json=?,errors_json=?,status=?,completed_at=? WHERE id=?",
-                     [json.dumps(progress), json.dumps(usage), json.dumps(errors), status, completed_at, run_id])
+        completed_at = (run.get("completed_at") or utcnow()) if status in TERMINAL else None
+        if any([run.get("progress") != progress, run.get("usage") != usage, run.get("errors") != errors,
+                run["status"] != status, run.get("completed_at") != completed_at]):
+            from doxa.workspace import Workspace
+            db().batch([{"sql": "UPDATE runs SET progress_json=?,usage_json=?,errors_json=?,status=?,completed_at=? WHERE id=?", "params": [json.dumps(progress), json.dumps(usage), json.dumps(errors), status, completed_at, run_id]}, Workspace.touch_statement(run["project_id"])])
         return require_run(run_id)
 
     async def work_once(run_id: str) -> dict:
@@ -713,6 +878,13 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         if not claimed:
             return {"pending": True, "run": require_run(run_id)}
         document = require_document(task["document_id"], True)
+        if str(run["config"].get("methodology_version", "1")).startswith("3") and run["config"].get("provider") != "lexical":
+            from doxa.method_config import frozen_source_metadata
+            try:
+                document = {**document, **frozen_source_metadata(db(), run, document["id"])}
+            except (ValueError, OSError) as error:
+                db().execute("UPDATE tasks SET status='failed',error=? WHERE id=? AND lease_token=?", [str(error)[:1000], task["id"], token])
+                return {"pending": True, "run": refresh_run(run_id)}
         complete_document = document
         document = {**document, "blocks": document["blocks"][task["start_block"]:task["end_block"]]} if run["config"].get("task_index_basis") != "source_units_v3" else document
         db().execute("UPDATE runs SET status='running',started_at=COALESCE(started_at,?),progress_json=? WHERE id=?", [utcnow(), json.dumps({**run["progress"], "current_document": document["title"]}), run_id])
@@ -777,6 +949,28 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         config["_record_usage"] = record
         result = None
         try:
+            if config.get("request_journal_mode") == "visible_io":
+                if db().remote or os.environ.get("DOXA_ENABLE_PRIVATE_JOURNAL", "").lower() not in {"1", "true", "yes"}:
+                    raise ValueError("Private request capture is no longer enabled by the local operator")
+                from doxa.lineage import PrivateJournal
+                journal_root = db().root / "private-request-journals"
+                journal_root.mkdir(mode=0o700, exist_ok=True)
+                os.chmod(journal_root, 0o700)
+                private_sink = PrivateJournal(journal_root / run_id)
+                db().execute("INSERT INTO private_journal_usage(run_id,reserved_bytes) VALUES(?,0) ON CONFLICT(run_id) DO NOTHING", [run_id])
+                def record_private_io(value):
+                    size = len(json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False).encode())
+                    if size > 4 * 1024 * 1024:
+                        raise ValueError("One private request entry exceeds the 4 MiB limit")
+                    reserved = db().query("UPDATE private_journal_usage SET reserved_bytes=reserved_bytes+? WHERE run_id=? AND reserved_bytes+?<=? RETURNING run_id", [size, run_id, size, config["private_journal_limit_bytes"]])
+                    if not reserved:
+                        raise ValueError("Private request capture reached this run's local storage quota; no entry was written")
+                    try:
+                        return private_sink(value)
+                    except Exception:
+                        db().execute("UPDATE private_journal_usage SET reserved_bytes=MAX(0,reserved_bytes-?) WHERE run_id=?", [size, run_id])
+                        raise
+                config["_record_private_io"] = record_private_io
             provider = get_provider(config)
             if asyncio.iscoroutine(provider):
                 provider = await provider
@@ -831,12 +1025,16 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 def flush():
                     if buffered:
                         for offset in range(0, len(buffered), 40):
-                            db().batch(buffered[offset:offset + 40])
+                            db().batch([*buffered[offset:offset + 40], Workspace.touch_statement(run["project_id"])])
                         buffered.clear()
-                        Workspace(db()).touch(run["project_id"])
 
                 async def checkpoint(event):
-                    if event.get("stage") == "assessment_accepted":
+                    if event.get("stage") == "request_attempt":
+                        attempt = event["attempt"]
+                        payload = json.dumps(attempt, ensure_ascii=False, sort_keys=True)
+                        identity = hashlib.sha256((run_id + task["id"] + payload).encode()).hexdigest()[:32]
+                        db().execute("INSERT INTO request_attempt_events(id,project_id,run_id,task_id,request_id,status,payload_json,created_at) VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(id) DO NOTHING", [identity, run["project_id"], run_id, task["id"], attempt["request_id"], attempt["status"], payload, utcnow()])
+                    elif event.get("stage") == "assessment_accepted":
                         assessment = dict(event["assessment"])
                         assessment["id"] = hashlib.sha256(f"{run_id}:{assessment['id']}".encode()).hexdigest()[:32]
                         assessment.update({"run_id": run_id, "project_id": run["project_id"], "document_id": document["id"]})
@@ -858,7 +1056,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                         status = dict(event)
                         unit = next(u for u in units if u["id"] == status["unit_id"])
                         status["characters"] = unit.get("source_characters", len(unit["text"]))
-                        db().execute("UPDATE v3_unit_statuses SET status=?,payload_json=?,created_at=? WHERE run_id=? AND document_id=? AND unit_id=? AND EXISTS(SELECT 1 FROM tasks WHERE id=? AND lease_token=? AND status='running')", [status["status"], json.dumps(status), utcnow(), run_id, document["id"], status["unit_id"], task["id"], token])
+                        db().batch([{"sql": "UPDATE v3_unit_statuses SET status=?,payload_json=?,created_at=? WHERE run_id=? AND document_id=? AND unit_id=? AND EXISTS(SELECT 1 FROM tasks WHERE id=? AND lease_token=? AND status='running')", "params": [status["status"], json.dumps(status), utcnow(), run_id, document["id"], status["unit_id"], task["id"], token]}, Workspace.touch_statement(run["project_id"])])
                 try:
                     # This adapter reserves and settles every request against
                     # durable run/monthly ledgers. An interrupted response keeps
@@ -938,6 +1136,18 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     async def create_run(project_id: str, body: RunInput, *, check_health: bool = True) -> dict:
         require_project(project_id)
         config = body.model_dump(exclude_none=True)
+        if body.request_journal_mode == "visible_io":
+            if db().remote or os.environ.get("DOXA_ENABLE_PRIVATE_JOURNAL", "").lower() not in {"1", "true", "yes"}:
+                raise HTTPException(422, "Private visible request capture requires operator-enabled local storage (DOXA_ENABLE_PRIVATE_JOURNAL)")
+            if body.provider == "lexical" or not str(body.methodology_version).startswith("3"):
+                raise HTTPException(422, "Private request capture applies to contextual v3 inference runs")
+            try:
+                limit = int(os.environ.get("DOXA_PRIVATE_JOURNAL_MAX_BYTES", str(64 * 1024 * 1024)))
+                if not 4096 <= limit <= 1024 * 1024 * 1024:
+                    raise ValueError
+            except ValueError as error:
+                raise HTTPException(422, "DOXA_PRIVATE_JOURNAL_MAX_BYTES must be an integer from 4096 through 1073741824") from error
+            config["private_journal_limit_bytes"] = limit
         if body.provider == "cloudflare" and body.model in {"@cf/openai/gpt-oss-120b", "@cf/openai/gpt-oss-20b"}:
             # Apply the verified managed profile only to new runs. Explicit
             # operator choices, historical runs and compatible endpoints retain
@@ -1019,14 +1229,26 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         run_id = uid()
         config["schema_version"] = "3.0" if modern else "1.0"
         manifest_key = f"runs/{run_id}/source-manifest.json"
-        db().put_json(manifest_key, [{key: row.get(key) for key in ["id", "sha256", "title", "author", "institution", "document_type", "published_at"]} for row in rows])
+        source_manifest = [{**{key: row.get(key) for key in ["id", "sha256", "title", "author", "institution", "document_type", "published_at", "source_url", "license"]}, "metadata": json.loads(row.get("metadata_json") or "{}")} for row in rows]
+        frozen_by_id = {item["id"]: item for item in source_manifest}
+        db().put_json(manifest_key, source_manifest)
         config["source_manifest_key"] = manifest_key
         config["source_snapshot"] = [{"id": row["id"], "sha256": row["sha256"]} for row in rows]
-        db().execute("INSERT INTO runs(id,project_id,status,config_json,created_at) VALUES(?,?,'queued',?,?)", [run_id, project_id, json.dumps(config), utcnow()])
+        if modern:
+            from doxa.method_config import method_config, source_metadata_hash
+            config["method_config_version"] = "0.4"
+            config["source_metadata_hash"] = source_metadata_hash(source_manifest)
+            method = method_config(config)
+            config["method_config"] = method.as_dict()
+            config["method_fingerprint"] = method.fingerprint
+        db().execute("INSERT INTO runs(id,project_id,status,config_json,created_at) VALUES(?,?,'creating',?,?)", [run_id, project_id, json.dumps(config), utcnow()])
         statements = []
         ordinal = 0
         for row in rows:
             statements.append({"sql": "INSERT INTO v3_run_sources(run_id,document_id,sha256) VALUES(?,?,?) ON CONFLICT(run_id,document_id) DO NOTHING", "params": [run_id, row["id"], row["sha256"]]})
+            if modern:
+                frozen = frozen_by_id[row["id"]]
+                statements.append({"sql": "INSERT INTO run_source_metadata(run_id,document_id,payload_json,metadata_sha256) VALUES(?,?,?,?)", "params": [run_id, row["id"], json.dumps(frozen), source_metadata_hash(frozen)]})
             blocks = db().get_json(row["blocks_key"])
             if modern:
                 from doxa.contextual import build_units
@@ -1061,9 +1283,9 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 ordinal += 1
         for i in range(0, len(statements), 50):
             db().batch(statements[i:i+50])
-        result = refresh_run(run_id)
         from doxa.workspace import Workspace
-        Workspace(db()).touch(project_id)
+        db().batch([{"sql": "UPDATE runs SET status='queued' WHERE id=? AND status='creating'", "params": [run_id]}, Workspace.touch_statement(project_id)])
+        result = refresh_run(run_id)
         schedule(run_id)
         return result
 
@@ -1085,6 +1307,10 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         result = await work_once(run_id)
         return {"pending": result["pending"], "run_id": run_id, "status": result["run"]["status"],
                 "retry_after": result.get("retry_after", 0)}
+
+    @app.post("/internal/report-work/{job_id}")
+    async def cloud_report_work(job_id: str):
+        return await asyncio.to_thread(app.state.report_jobs.work_once, job_id, deadline_seconds=240)
 
     @app.post("/api/runs/{run_id}/cancel")
     def cancel_run(run_id: str):
@@ -1282,7 +1508,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     @app.post("/api/projects/{project_id}/demo")
     async def load_demo(project_id: str):
         require_project(project_id)
-        source_dir = ROOT / "corpus" / "documents"
+        source_dir = assets_root / "corpus" / "documents"
         source_files = sorted(source_dir.glob("*.json"))
         if len(source_files) != 20:
             raise HTTPException(503, "The 20-document corpus is unavailable. Run scripts/fetch_corpus.py.")
@@ -1299,7 +1525,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 source["source_id"] = source.get("id", file.stem)
                 imported.append(save_document(project_id, batch["id"], source))
             db().execute("INSERT INTO batch_members(batch_id,document_id) VALUES(?,?) ON CONFLICT(batch_id,document_id) DO NOTHING", [batch["id"], imported[-1]["id"]])
-        cached = ROOT / "corpus" / "showcase.json.gz"
+        cached = assets_root / "corpus" / "showcase.json.gz"
         if use_saved_showcase and cached.exists():
             from doxa.showcase import restore_showcase
             try:
@@ -1367,12 +1593,15 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     from doxa.imports import register as register_imports
     services = {"db": db, "require_project": require_project, "require_document": require_document,
                 "require_run": require_run, "create_run": create_run, "new_batch": new_batch,
-                "ingest": ingest, "load_demo": load_demo, "provider_health": provider_health, "root": ROOT,
+                "ingest": ingest, "load_demo": load_demo, "provider_health": provider_health, "root": assets_root,
                 "use_saved_showcase": use_saved_showcase}
+    services["report_jobs"] = lambda: app.state.report_jobs
     register_v3(app, services)
     register_imports(app, services)
 
-    assets = ROOT / "frontend" / "dist" / "assets"
+    from doxa.resources import frontend_distribution
+    distribution = frontend_distribution()
+    assets = distribution / "assets"
     if assets.exists():
         app.mount("/assets", StaticFiles(directory=assets), name="assets")
 
@@ -1380,7 +1609,6 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     def frontend(path: str):
         if path.startswith(("api/", "internal/")):
             raise HTTPException(404, "Endpoint not found")
-        distribution = ROOT / "frontend" / "dist"
         public_file = (distribution / path).resolve()
         if path and public_file.is_relative_to(distribution.resolve()) and public_file.is_file():
             return FileResponse(public_file)

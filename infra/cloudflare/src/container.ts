@@ -31,7 +31,7 @@ export class PythonContainer extends DurableObject<Env> {
         DOXA_CLOUDFLARE_BASE_URL: `${this.env.DOXA_PUBLIC_ORIGIN.replace(/\/$/, "")}/internal/inference/v1`,
         DOXA_CLOUDFLARE_API_TOKEN: this.env.DOXA_SERVICE_TOKEN,
       };
-      for (const key of ["DOXA_OPENAI_API_KEY", "DOXA_RUNPOD_API_KEY", "OPENAI_API_KEY", "RUNPOD_API_KEY"] as const) {
+      for (const key of ["DOXA_OPENAI_API_KEY", "DOXA_RUNPOD_API_KEY", "OPENAI_API_KEY", "RUNPOD_API_KEY", "DOXA_MIGRATION_BACKUP_RECEIPT", "DOXA_REVIEWER_ID"] as const) {
         if (this.env[key]) env[key] = this.env[key];
       }
       container.start({ image: container.images.base, instance: "standard-2", enableInternet: true, env });

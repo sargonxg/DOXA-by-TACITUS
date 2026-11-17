@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "doxa-by-tacitus"
-version = "0.3.0"
+version = "0.4.0"
 description = "An evidence-centred, portable workbench for corpus and discourse research"
 requires-python = ">=3.11"
 dependencies = [
@@ -26,7 +26,7 @@ doxa = "doxa.cli:main"
 include = ["doxa*"]
 
 [tool.setuptools.package-data]
-doxa = ["schema.sql", "v3_schema.sql"]
+doxa = ["*.sql", "static/*", "static/**/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

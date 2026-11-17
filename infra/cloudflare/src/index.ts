@@ -3,7 +3,8 @@ import { boundedJson, HttpError, secured } from "./http";
 import { storageRoute } from "./storage";
 import { uploadRoute } from "./uploads";
 import { inferenceRoute } from "./inference";
-import { consume, enqueue, recoverDispatch, type WorkMessage } from "./queue";
+import { consume, enqueue, enqueueReport, recoverDispatch, type WorkMessage } from "./queue";
+import { reportArtifactRoute } from "./report-artifacts";
 export { PythonContainer } from "./container";
 
 export default {
@@ -16,8 +17,9 @@ export default {
         const inference = await inferenceRoute(request, env, path);
         if (inference) return secured(inference);
         if (path === "/internal/storage/enqueue" && request.method === "POST") {
-          const body = await boundedJson<{ run_id: string }>(request, 4096);
-          await enqueue(env, body.run_id);
+          const body = await boundedJson<{ kind?: string; run_id: string; job_id: string }>(request, 4096);
+          if (body.kind === "report") await enqueueReport(env, body.job_id);
+          else await enqueue(env, body.run_id);
           return secured(Response.json({ queued: true }));
         }
         const response = await storageRoute(request, env, path);
@@ -31,6 +33,8 @@ export default {
       }
       const upload = await uploadRoute(request, env, path);
       if (upload) return secured(upload);
+      const artifact = await reportArtifactRoute(request, env, path);
+      if (artifact) return secured(artifact);
       if (path.startsWith("/api/")) {
         const headers = new Headers(request.headers);
         headers.delete("cf-access-jwt-assertion");

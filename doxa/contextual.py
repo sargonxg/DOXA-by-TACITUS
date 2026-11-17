@@ -11,6 +11,8 @@ import inspect
 import json
 import math
 import re
+import time
+from datetime import datetime, timezone
 from collections import defaultdict
 
 from pydantic import ValidationError
@@ -18,6 +20,8 @@ from pydantic import ValidationError
 from .lenses import CRITERION_REGISTRY_VERSION, get_lens, validate_custom_lens
 from .models import ASSESSMENT_CONTRACT_VERSION, AssessmentDetail, UnitDecision, assessment_schema
 from .providers import ProviderError
+from .lineage import content_sha256
+from .method_config import cache_method_fingerprint, method_fingerprint
 
 UNIT_BUILDER_VERSION = "source-units-3.1"
 PROMPT_VERSION = "contextual-decisions-3.2.1"
@@ -244,9 +248,19 @@ async def analyze_units(document: dict, lenses: list, provider, *, units: list[d
     profile = dict(getattr(provider, "profile", {}))
     output = {"assessments": [], "findings": [], "unit_statuses": [], "coverage": {}, "usage": usage,
               "errors": errors, "model_profile": profile, "methodology_version": ASSESSMENT_CONTRACT_VERSION}
+    journals = []
+    output["attempt_journal"] = journals
+    output["request_capture"] = {"mode": "metadata", "visible_io": "not_recorded", "hidden_reasoning": "never_recorded"}
     try:
         selected = list(units) if units is not None else build_units(document)
         packs, criteria = _criteria(lenses, config)
+        journal_mode = config.get("request_journal_mode", "metadata")
+        if journal_mode not in {"metadata", "visible_io"}:
+            raise ValueError("Request journal mode must be metadata or visible_io")
+        if journal_mode == "visible_io" and not callable(config.get("_record_private_io")):
+            raise ValueError("Visible I/O capture requires an explicitly configured private local sink")
+        output["request_capture"].update({"mode": journal_mode,
+            "visible_io": "private_local_opt_in" if journal_mode == "visible_io" else "not_recorded"})
         if len({unit["id"] for unit in selected}) != len(selected):
             raise ValueError("Selected analysis unit ids must be unique")
         blocks = {block["id"]: block["text"] for block in document["blocks"]}
@@ -287,6 +301,12 @@ async def analyze_units(document: dict, lenses: list, provider, *, units: list[d
                     "approved_example_ids": [example.get("example_id") or example.get("id") for example in examples],
                     "analysis_config_hash": _hash(PROMPT_VERSION, UNIT_BUILDER_VERSION, criteria, stable_profile,
                                                    config.get("question"), config.get("persona"), config.get("learning_snapshot_id"), examples)})
+    # V0.3 hashes and prompts remain byte-equivalent. New runs explicitly opt
+    # into the method identity that also covers frozen source bibliography.
+    if config.get("method_config_version") == "0.4":
+        profile["method_fingerprint"] = method_fingerprint(config)
+        profile["cache_method_fingerprint"] = cache_method_fingerprint(config, document)
+        profile["analysis_config_hash"] = _hash(profile["analysis_config_hash"], "document-cache-0.4", profile["cache_method_fingerprint"])
     unit_by_id = {unit["id"]: unit for unit in selected}
     for cached in config.get("accepted_assessments", []):
         if not isinstance(cached, dict) or cached.get("methodology_version") != ASSESSMENT_CONTRACT_VERSION or cached.get("analysis_config_hash") != profile["analysis_config_hash"]:
@@ -359,29 +379,83 @@ async def analyze_units(document: dict, lenses: list, provider, *, units: list[d
                    "units": [_wire_unit(unit) for unit in batch],
                    "approved_examples": examples}
         messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}]
+        request_id = _hash(document["id"], sorted(expected), attempt, phase, PROMPT_VERSION)
+        attempt_started = time.perf_counter()
+        attempt_base = {"schema_version": "0.4", "origin": "observed_request_metadata",
+            "request_id": request_id, "document_id": document["id"],
+            "source_hash": batch[0].get("source_hash") if batch else document.get("sha256") or document.get("content_sha256"),
+            "source_version_ids": list(dict.fromkeys(unit.get("source_version_id") for unit in batch)),
+            "source_id": metadata.get("source_id") or document.get("source_id") or document["id"],
+            "unit_ids": [unit["id"] for unit in batch], "criterion_keys": list(keys),
+            "phase": phase, "attempt": attempt, "messages_sha256": content_sha256(messages),
+            "schema_sha256": content_sha256(schema), "prompt_version": PROMPT_VERSION,
+            "system_template_sha256": content_sha256(SYSTEM), "criterion_registry_version": CRITERION_REGISTRY_VERSION,
+            "source_metadata_hash": config.get("source_metadata_hash"),
+            "method_fingerprint": profile.get("method_fingerprint"),
+            "started_at": datetime.now(timezone.utc).isoformat(),
+            "max_visible_output_tokens": output_tokens,
+            "elapsed_scope": "request_preflight_provider_and_validation",
+            "origin_model": {key: profile.get(key) for key in ("provider", "model", "revision", "quantization", "system_fingerprint")}}
+
+        async def journal(status, *, observation=None, response=None, error_code=None, validation=None, request_usage=None):
+            observation = dict(observation or {})
+            visible_response = observation.pop("_visible_response", None)
+            visible_request = observation.pop("_visible_request", None)
+            observation = {key: value for key, value in observation.items() if key in {
+                "visible_response_sha256", "visible_response_bytes", "response_origin",
+                "provider_request_sha256", "request_origin", "request_parameters"}}
+            item = {**attempt_base, "status": status, **observation}
+            if status != "started":
+                item.update({"finished_at": datetime.now(timezone.utc).isoformat(),
+                             "elapsed_seconds": round(time.perf_counter() - attempt_started, 6)})
+            if response is not None:
+                item.update({"finish_reason": response.get("finish_reason"), "usage": response.get("usage"),
+                             "response_model": response.get("model_profile", {}).get("response_model")})
+                if "visible_response_sha256" not in item and response.get("content") is not None:
+                    item["structured_response_sha256"] = content_sha256(response["content"])
+                    item["response_origin"] = "observed_adapter_structured_content"
+            if error_code:
+                item["error_code"] = error_code
+            if request_usage is not None:
+                item["usage"] = request_usage
+            if validation is not None:
+                item["validation"] = validation
+            journals.append(item)
+            await _callback(config.get("_record_attempt"), item)
+            await _callback(progress, {"stage": "request_attempt", "attempt": item})
+            if journal_mode == "visible_io" and status in {"completed", "failed"}:
+                await _callback(config["_record_private_io"], {"request_id": request_id,
+                    "messages": messages, "schema": schema, "visible_response": visible_response,
+                    "provider_request": visible_request,
+                    "metadata": item})
         input_tokens = math.ceil((sum(len(message["content"].encode()) for message in messages) + len(json.dumps(schema).encode())) / 3) + 64
         if input_tokens + output_tokens > context_limit:
             reason = {"code": "context_limit", "message": "The source/rubric/context exceeds this profile's context budget."}
             for pair in expected:
                 failures[pair] = reason
+            await journal("not_sent", error_code="context_limit")
             return
         estimate = provider.estimate_cost(input_tokens, output_tokens) if hasattr(provider, "estimate_cost") else None
         if budget is not None and (estimate is None or usage["cost_usd"] is None or usage["cost_usd"] + estimate > budget):
             stopped = True
             errors.append({"code": "pricing_required" if estimate is None else "budget_exhausted", "message": "The next complete request could not be budgeted; unresolved units remain pending."})
+            await journal("not_sent", error_code="pricing_required" if estimate is None else "budget_exhausted")
             return
         if config.get("_reserve_budget") is not None and (estimate is None or not await _callback(config["_reserve_budget"], estimate)):
             stopped = True
             errors.append({"code": "budget_exhausted", "message": "Shared budget could not reserve the next request."})
+            await journal("not_sent", error_code="budget_exhausted")
             return
         try:
+            await journal("started")
             response = await provider.generate(messages, schema, max_tokens=output_tokens,
-                                               request_id=_hash(document["id"], sorted(expected), attempt, phase, PROMPT_VERSION))
+                                               request_id=request_id)
             await record(response.get("usage"), estimate)
         except ProviderError as error:
             await record(error.usage, estimate)
             for pair in expected:
                 failures[pair] = {"code": error.code, "message": str(error)}
+            await journal("failed", observation=error.observation, error_code=error.code, request_usage=error.usage)
             return
         profile.update({key: value for key, value in response.get("model_profile", {}).items() if key not in {"prompt_version", "response_schema_version", "analysis_config_hash"}})
         raw = response.get("content")
@@ -395,6 +469,8 @@ async def analyze_units(document: dict, lenses: list, provider, *, units: list[d
         if not isinstance(raw, dict) or not isinstance(raw.get("decisions"), list) or (phase != "classify" and not isinstance(raw.get("details"), list)):
             for pair in expected:
                 failures[pair] = {"code": "output_limit" if response.get("finish_reason") == "length" else "invalid_response", "message": "The response lacks a complete structured decision envelope."}
+            await journal("completed", observation=response.get("provider_observation"), response=response,
+                          validation={"envelope_valid": False, "accepted_pairs": 0})
             return
         decisions, details, duplicate = {}, {}, set()
         for item in raw["decisions"]:
@@ -459,6 +535,10 @@ async def analyze_units(document: dict, lenses: list, provider, *, units: list[d
             assessment["decision_trace"] = list(decision_traces[pair])
             failures.pop(pair, None)
             await _callback(progress, {"stage": "assessment_accepted", "unit_id": pair[0], "criterion_key": pair[1], "assessment": assessment, "usage": dict(usage)})
+        await journal("completed", observation=response.get("provider_observation"), response=response,
+                      validation={"envelope_valid": True, "requested_pairs": len(expected),
+                                  "accepted_pairs": sum(pair in accepted for pair in expected),
+                                  "unresolved_codes": sorted({failures[pair]["code"] for pair in expected if pair in failures})})
 
     keys = list(criteria)
     groups = defaultdict(list)

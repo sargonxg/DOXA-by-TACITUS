@@ -3340,3 +3340,336 @@ p {
 .w-verification-differences + button {
   margin-top: 12px;
 }
+
+/* v0.4: recorded publications, explicit evidence layers and accessible controls. */
+.w-coverage-measures {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid #dce6d8;
+  border-radius: 9px;
+  background: #fbfdf8;
+  color: #304e3c;
+}
+.w-coverage-measures > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.w-coverage-measures span {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #52664c;
+}
+.w-coverage-measures strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+.w-coverage-measures small {
+  font-size: 11px;
+}
+.w-coverage-measures > p {
+  grid-column: 1/-1;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 3px 0 0;
+}
+.w-coverage-measures.compact {
+  padding: 11px 14px;
+  background: #f8faf4;
+}
+.w-coverage-measures.compact strong {
+  font-size: 13px;
+}
+.w-publication-composer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.w-publication-composer label,
+.w-pinned-case label,
+.w-review-task label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #35503b;
+}
+.w-publication-composer input,
+.w-publication-composer textarea,
+.w-publication-composer select {
+  width: 100%;
+  min-width: 0;
+}
+.w-publication-composer > .w-details {
+  margin: 0;
+}
+.w-publication-composer h4 {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 9px 0;
+  color: #304b37;
+}
+.w-publication-composer p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.w-publication-composer .w-field-heading {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.w-publication-composer .w-field-heading h3 {
+  margin: 0;
+}
+.w-casebook-ledger,
+.w-review-queue-list,
+.w-report-jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.w-pinned-case,
+.w-review-task,
+.w-report-job {
+  padding: 16px;
+  border: 1px solid #dce7d5;
+  border-radius: 9px;
+  background: #fff;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.w-pinned-case > header,
+.w-review-task > header,
+.w-report-job > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.w-pinned-case > header > span:last-child,
+.w-review-task > header > span:last-child {
+  font-size: 11px;
+  color: #53674f;
+}
+.w-review-task h3 {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.w-review-task p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.w-case-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.w-case-actions .w-button {
+  font-size: 11px;
+}
+.w-case-actions .w-button.quiet {
+  padding: 7px 8px;
+}
+.w-case-candidates {
+  max-height: 420px;
+  overflow: auto;
+  border: 1px solid #dce7d5;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+.w-case-candidates article {
+  padding: 15px;
+  border-bottom: 1px solid #e1eadb;
+}
+.w-case-candidates article:last-child {
+  border-bottom: 0;
+}
+.w-case-candidates article > small {
+  display: block;
+  margin-top: 7px;
+}
+.w-case-candidates article p {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.w-origin-layer {
+  padding: 15px;
+  border: 1px solid #d8e3d4;
+  border-left: 3px solid #7a9471;
+  border-radius: 7px;
+  margin: 15px 0;
+  background: #fbfdf8;
+}
+.w-origin-layer > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.w-origin-layer h3 {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 9px 0;
+}
+.w-origin-layer p,
+.w-origin-layer small,
+.w-origin-layer a {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.w-origin-layer a {
+  display: block;
+  margin-top: 7px;
+  color: #315c44;
+  text-decoration: underline;
+}
+.w-origin-summary {
+  padding: 14px;
+  border-radius: 8px;
+  background: #f2f5ec;
+  border: 1px solid #dbe5d3;
+  margin: 12px 0;
+}
+.w-origin-summary p {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0 0 9px;
+}
+.w-origin-summary p:last-child {
+  margin-bottom: 0;
+}
+.w-evidence-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+.w-source-quality {
+  margin: 12px 0 0 !important;
+}
+.w-source-quality > summary {
+  font-size: 11px !important;
+  line-height: 1.6;
+}
+.w-source-quality p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.w-source-quality pre {
+  max-height: 180px;
+  overflow: auto;
+}
+.w-source-meta > .w-case-actions {
+  margin-top: 12px;
+}
+.w-report-job progress {
+  width: 100%;
+  height: 9px;
+  accent-color: #477659;
+}
+.w-report-job small {
+  font-size: 11px;
+  line-height: 1.6;
+}
+.w-report-job > p {
+  margin: 11px 0 6px;
+}
+.w-report-job > header > strong {
+  font-size: 12px;
+}
+.w-artifact-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #bfd0b7;
+  border-radius: 6px;
+  padding: 9px 10px;
+  color: #2f573e;
+  font-size: 11px;
+  text-decoration: none;
+  background: #f8fbf3;
+}
+.w-artifact-download:hover {
+  text-decoration: underline;
+}
+.w-chart-table {
+  margin: 10px 15px 14px;
+}
+.w-chart-table > summary {
+  font-size: 11px;
+}
+.w-chart-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  margin-top: 12px;
+}
+.w-chart-table td,
+.w-chart-table th {
+  padding: 9px 6px;
+  border-bottom: 1px solid #e1e9dc;
+  text-align: left;
+}
+.w-chart-table button {
+  color: #315b43;
+  background: #f4f8ed;
+  border: 1px solid #cbdcbf;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 11px;
+}
+.w-chart-table {
+  overflow: auto;
+}
+.w-chart-table caption,
+.w-trajectory caption {
+  font-size: 11px;
+  text-align: left;
+  line-height: 1.6;
+  padding: 6px 0 10px;
+  color: #51654c;
+}
+.w-virtual:focus-visible {
+  outline: 2px solid #3c7350;
+  outline-offset: -3px;
+}
+@media (max-width: 600px) {
+  .w-coverage-measures {
+    gap: 8px;
+    padding: 11px;
+  }
+  .w-coverage-measures span {
+    font-size: 10px;
+  }
+  .w-coverage-measures strong {
+    font-size: 12px;
+  }
+  .w-coverage-measures small {
+    font-size: 10px;
+  }
+  .w-publication-composer .w-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .w-pinned-case,
+  .w-review-task,
+  .w-report-job {
+    padding: 13px;
+  }
+  .w-case-actions {
+    gap: 6px;
+  }
+  .w-chart-table td,
+  .w-chart-table th {
+    padding: 7px 5px;
+  }
+}

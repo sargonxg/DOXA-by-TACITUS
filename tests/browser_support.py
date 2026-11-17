@@ -15,6 +15,17 @@ from urllib.request import urlopen
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def chromium_launch_options() -> dict:
+    """Use an explicit/system Chromium or Playwright's managed browser in CI."""
+    options = {"headless": True, "args": ["--no-sandbox"]}
+    configured = os.environ.get("DOXA_BROWSER_EXECUTABLE")
+    if configured:
+        options["executable_path"] = configured
+    elif Path("/usr/bin/chromium").is_file():
+        options["executable_path"] = "/usr/bin/chromium"
+    return options
+
+
 @contextmanager
 def local_app(directory: Path | None = None, *, allow_external: bool = False):
     external = os.environ.get("DOXA_BROWSER_URL") if allow_external else None

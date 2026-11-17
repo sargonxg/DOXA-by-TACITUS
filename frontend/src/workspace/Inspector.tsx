@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import {
   ArrowLeft,
   ArrowRight,
@@ -7,12 +7,15 @@ import {
   ChevronDown,
   ExternalLink,
   Layers3,
+  Pin,
   Save,
   ShieldCheck,
   X,
 } from "lucide-react";
 import { request } from "../api";
 import { submitReview } from "./client";
+import { FrameworkCondition, OriginSummary } from "./EvidenceLayers";
+import { ExtractionQuality } from "./ExtractionQuality";
 import {
   Badge,
   Button,
@@ -23,12 +26,24 @@ import {
   IconButton,
   Spinner,
 } from "./ui";
-import type { Block, Context, Item, Lens, Observation } from "./types";
+import type {
+  AnalysisRun,
+  Block,
+  Context,
+  Item,
+  Lens,
+  Observation,
+} from "./types";
 
 export function Inspector({
   context,
   loading,
   lenses,
+  run,
+  pinned,
+  pinning,
+  onPin,
+  onCasebook,
   onClose,
   onReview,
   onCandidate,
@@ -37,12 +52,19 @@ export function Inspector({
   context: Context | null;
   loading: boolean;
   lenses: Lens[];
+  run?: AnalysisRun | null;
+  pinned: boolean;
+  pinning: boolean;
+  onPin: (finding: Observation) => void;
+  onCasebook: () => void;
   onClose: () => void;
   onReview: (finding: Observation) => void;
   onCandidate: (finding: Observation) => void;
   onNavigate: (cursor: number) => void;
 }) {
   const finding = context?.finding;
+  const tabId = useId();
+
   const legacy =
     !!finding && (!finding.result || finding.result === "legacy_unclassified");
   const [tab, setTab] = useState("evidence");
@@ -170,14 +192,77 @@ export function Inspector({
             {context.document.error && (
               <ErrorMessage text={context.document.error} />
             )}
+            {context.unit_id && (
+              <div className="w-origin-summary">
+                <Badge tone="amber">
+                  Unfinished source unit · decisions incomplete
+                </Badge>
+                <p>
+                  This is the actual frozen source context for unit{" "}
+                  {context.unit_id}. Missing decisions remain unresolved; no
+                  positive, negative or uncertain model outcome has been
+                  invented.
+                </p>
+              </div>
+            )}
+            <ExtractionQuality
+              key={context.document.id}
+              document={context.document}
+            />
+            {finding && !legacy && (
+              <div className="w-case-actions">
+                <Button
+                  variant="outline"
+                  disabled={pinning || pinned}
+                  onClick={() => onPin(finding)}
+                >
+                  <Pin size={13} />
+                  {pinned ? "Pinned to casebook" : "Pin this case"}
+                </Button>
+                <Button variant="quiet" onClick={onCasebook}>
+                  <BookOpen size={13} />
+                  Open casebook
+                </Button>
+              </div>
+            )}
           </div>
           <div
             className="w-inspector-tabs"
             role="tablist"
             aria-label="Evidence detail"
+            onKeyDown={(event) => {
+              if (
+                !["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)
+              )
+                return;
+              const buttons = Array.from(
+                event.currentTarget.querySelectorAll<HTMLButtonElement>(
+                  'button[role="tab"]:not(:disabled)',
+                ),
+              );
+              const current = buttons.indexOf(
+                document.activeElement as HTMLButtonElement,
+              );
+              if (current < 0) return;
+              const next =
+                event.key === "Home"
+                  ? 0
+                  : event.key === "End"
+                    ? buttons.length - 1
+                    : (current +
+                        (event.key === "ArrowRight" ? 1 : -1) +
+                        buttons.length) %
+                      buttons.length;
+              event.preventDefault();
+              buttons[next].focus();
+              buttons[next].click();
+            }}
           >
             <button
               role="tab"
+              id={`${tabId}-evidence-tab`}
+              aria-controls={`${tabId}-evidence-panel`}
+              tabIndex={tab === "evidence" ? 0 : -1}
               aria-selected={tab === "evidence"}
               onClick={() => setTab("evidence")}
             >
@@ -185,6 +270,9 @@ export function Inspector({
             </button>
             <button
               role="tab"
+              id={`${tabId}-assessment-tab`}
+              aria-controls={`${tabId}-assessment-panel`}
+              tabIndex={tab === "assessment" ? 0 : -1}
               aria-selected={tab === "assessment"}
               onClick={() => setTab("assessment")}
               disabled={!finding}
@@ -193,6 +281,9 @@ export function Inspector({
             </button>
             <button
               role="tab"
+              id={`${tabId}-review-tab`}
+              aria-controls={`${tabId}-review-panel`}
+              tabIndex={tab === "review" ? 0 : -1}
               aria-selected={tab === "review"}
               onClick={() => setTab("review")}
               disabled={!finding}
@@ -201,14 +292,30 @@ export function Inspector({
             </button>
           </div>
           {tab === "evidence" && (
-            <>
+            <div
+              className="w-evidence-panel"
+              role="tabpanel"
+              id={`${tabId}-evidence-panel`}
+              aria-labelledby={`${tabId}-evidence-tab`}
+            >
               <div className="w-source-passage">
-                {!context.blocks.length && (
-                  <Empty title="Extracted source text is unavailable">
-                    Inspect the extraction issue above or import a readable text
-                    version.
-                  </Empty>
-                )}
+                {!context.blocks.length &&
+                  typeof context.unit?.text !== "string" && (
+                    <Empty title="Extracted source text is unavailable">
+                      Inspect the extraction issue above or import a readable
+                      text version.
+                    </Empty>
+                  )}
+                {!context.blocks.length &&
+                  typeof context.unit?.text === "string" && (
+                    <article>
+                      <small>
+                        Scored source-unit text · full source block exceeds
+                        preview limits
+                      </small>
+                      <p>{context.unit.text}</p>
+                    </article>
+                  )}
                 {context.blocks.map((block) => (
                   <article
                     className={block.id === finding?.block_id ? "active" : ""}
@@ -255,7 +362,11 @@ export function Inspector({
               </div>
               {finding && (
                 <div className="w-passage-assessment">
-                  <span className="w-eyebrow">PROPOSED READING</span>
+                  <span className="w-eyebrow">
+                    {finding.detail_supplied === false
+                      ? "SOFTWARE OUTCOME TEMPLATE · NO RECORDED DETAIL"
+                      : "RECORDED MODEL PROPOSAL · REVIEW PENDING"}
+                  </span>
                   <h3>{finding.title}</h3>
                   <p>{finding.explanation}</p>
                   <Button variant="quiet" onClick={() => setTab("assessment")}>
@@ -264,15 +375,21 @@ export function Inspector({
                   </Button>
                 </div>
               )}
-            </>
+            </div>
           )}
           {tab === "assessment" && finding && (
-            <div className="w-assessment-scroll">
+            <div
+              className="w-assessment-scroll"
+              role="tabpanel"
+              id={`${tabId}-assessment-panel`}
+              aria-labelledby={`${tabId}-assessment-tab`}
+            >
               <div className="w-assessment-title">
                 <Badge>{human(finding.result || finding.certainty)}</Badge>
                 <h3>{finding.title}</h3>
                 <p>{finding.explanation}</p>
               </div>
+              <FrameworkCondition finding={finding} run={run} lenses={lenses} />
               <dl className="w-facts">
                 <div>
                   <dt>Framework</dt>
@@ -314,6 +431,29 @@ export function Inspector({
                   <dd>{finding.proposition || "Unspecified"}</dd>
                 </div>
               </dl>
+              <OriginSummary finding={finding} />
+              {(finding.original ||
+                finding.corrections ||
+                finding.review_event) && (
+                <details className="w-details">
+                  <summary>
+                    Original model record & separate review overlay
+                  </summary>
+                  <pre>
+                    {JSON.stringify(
+                      {
+                        original:
+                          finding.original ||
+                          "Original capture not supplied in this view",
+                        corrections: finding.corrections || {},
+                        review_event: finding.review_event || null,
+                      },
+                      null,
+                      2,
+                    )}
+                  </pre>
+                </details>
+              )}
               <div className="w-alternative">
                 <Layers3 size={16} />
                 <div>
@@ -337,6 +477,9 @@ export function Inspector({
           {tab === "review" && finding && (
             <form
               className="w-review-form"
+              role="tabpanel"
+              id={`${tabId}-review-panel`}
+              aria-labelledby={`${tabId}-review-tab`}
               onSubmit={(event) => {
                 event.preventDefault();
                 void save();

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import {
   ArrowLeft,
@@ -135,13 +135,24 @@ export function Drawer({
   notification?: ReactNode;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
+  const titleId = useId();
   useEffect(() => {
+    const opener =
+      document.activeElement instanceof HTMLElement
+        ? document.activeElement
+        : null;
     ref.current?.showModal();
+    return () => {
+      ref.current?.close();
+      if (opener?.isConnected)
+        requestAnimationFrame(() => opener.focus({ preventScroll: true }));
+    };
   }, []);
   return (
     <dialog
       className={`w-drawer ${wide ? "wide" : ""}`}
       ref={ref}
+      aria-labelledby={titleId}
       onCancel={onClose}
       onClick={(event) => {
         if (event.target === ref.current) onClose();
@@ -150,7 +161,7 @@ export function Drawer({
       <header>
         <div>
           {eyebrow && <span className="w-eyebrow">{eyebrow}</span>}
-          <h2>{title}</h2>
+          <h2 id={titleId}>{title}</h2>
         </div>
         <IconButton label="Close panel" onClick={onClose}>
           <X size={19} />
@@ -175,6 +186,7 @@ export function VirtualList<T>({
   const ref = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(500);
   const [top, setTop] = useState(0);
+  const [focused, setFocused] = useState<number | null>(null);
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
@@ -187,9 +199,19 @@ export function VirtualList<T>({
   useEffect(() => {
     if (ref.current) ref.current.scrollTop = 0;
     setTop(0);
+    setFocused(null);
   }, [items]);
   const start = Math.max(0, Math.floor(top / rowHeight) - 4);
   const end = Math.min(items.length, Math.ceil((top + height) / rowHeight) + 4);
+  const visible = [
+    ...new Set([
+      ...Array.from(
+        { length: Math.max(0, end - start) },
+        (_, index) => start + index,
+      ),
+      ...(focused !== null && focused < items.length ? [focused] : []),
+    ]),
+  ].sort((a, b) => a - b);
   return (
     <div
       className="w-virtual"
@@ -197,20 +219,78 @@ export function VirtualList<T>({
       onScroll={(event) => setTop(event.currentTarget.scrollTop)}
       aria-label={label}
       role="list"
+      aria-description="Use Arrow Up and Arrow Down to move within this loaded page; Home and End select its first and last row. Result-page controls load the next bounded page."
+      tabIndex={0}
+      onFocusCapture={(event) => {
+        const row = (event.target as HTMLElement).closest<HTMLElement>(
+          "[data-virtual-index]",
+        );
+        if (row) setFocused(Number(row.dataset.virtualIndex));
+      }}
+      onBlurCapture={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node | null))
+          setFocused(null);
+      }}
+      onKeyDown={(event) => {
+        if (
+          !["ArrowUp", "ArrowDown", "Home", "End"].includes(event.key) ||
+          (event.target as HTMLElement).matches("input,textarea,select")
+        )
+          return;
+        const current = Number(
+          (event.target as HTMLElement).closest<HTMLElement>(
+            "[data-virtual-index]",
+          )?.dataset.virtualIndex ?? -1,
+        );
+        const next =
+          event.key === "Home"
+            ? 0
+            : event.key === "End"
+              ? items.length - 1
+              : Math.max(
+                  0,
+                  Math.min(
+                    items.length - 1,
+                    current + (event.key === "ArrowDown" ? 1 : -1),
+                  ),
+                );
+        if (next < 0 || !items.length) return;
+        event.preventDefault();
+        setFocused(next);
+        const node = ref.current;
+        if (!node) return;
+        if (
+          next * rowHeight < node.scrollTop ||
+          (next + 1) * rowHeight > node.scrollTop + node.clientHeight
+        ) {
+          node.scrollTop = next * rowHeight;
+          setTop(node.scrollTop);
+        }
+        requestAnimationFrame(() =>
+          ref.current
+            ?.querySelector<HTMLElement>(
+              `[data-virtual-index="${next}"] button,[data-virtual-index="${next}"] a,[data-virtual-index="${next}"] [tabindex]`,
+            )
+            ?.focus({ preventScroll: true }),
+        );
+      }}
     >
       <div style={{ height: items.length * rowHeight, position: "relative" }}>
-        {items.slice(start, end).map((item, offset) => (
+        {visible.map((index) => (
           <div
             role="listitem"
-            key={start + offset}
+            key={index}
+            data-virtual-index={index}
+            aria-posinset={index + 1}
+            aria-setsize={items.length}
             style={{
               position: "absolute",
-              top: (start + offset) * rowHeight,
+              top: index * rowHeight,
               height: rowHeight,
               width: "100%",
             }}
           >
-            {render(item, start + offset)}
+            {render(items[index], index)}
           </div>
         ))}
       </div>

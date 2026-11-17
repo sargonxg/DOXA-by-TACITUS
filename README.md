@@ -12,6 +12,40 @@ DOXA is a browser research workspace for discourse, political framing and contex
 
 The highlighted source is [Dahlia Kholaif's Global Voices report](https://globalvoices.org/2020/12/29/saudi-court-slams-jail-term-to-iconic-female-activist-despite-global-criticism/), December 29, 2020, CC BY 3.0. Its displayed model reading remains a proposal for review.
 
+## v0.4 · the evidence workbench
+
+**Compose a casebook in the browser, freeze its evidence, and generate a downloadable report in a persistent background job.** Choose a briefing, teaching packet, casebook or complete archive; retain exact source passages, original model readings, framework conditions, review state and your separately attributed editorial notes. Jobs expose progress, cancellation, restart and resumable artifact downloads.
+
+<a href="examples/v04-reader-explainer.pdf"><img src="docs/images/v04-reader-explainer-page-01.png" width="215" alt="Read the illustrated 18-page DOXA explainer PDF."></a> <a href="examples/v04-technical-annex.pdf"><img src="docs/images/v04-technical-annex-page-01.png" width="215" alt="Read the technical methodology, data lineage and research annex PDF."></a> <a href="examples/v04-case-atlas.pdf"><img src="docs/images/v04-case-atlas-page-01.png" width="215" alt="Inspect the 15-case atlas with exact real-source passages and retained model readings."></a>
+
+| Start here | What you will find |
+| --- | --- |
+| **[Reader explainer · PDF](examples/v04-reader-explainer.pdf)** | A layered introduction to the biases and descriptive frames examined, attribution, context, trajectories and the review process. [HTML](examples/v04-reader-explainer.html) · [Markdown](docs/v04-reader-explainer.md). |
+| **[Technical annex · PDF](examples/v04-technical-annex.pdf)** | Extraction, frozen methods, decision coverage, exact evidence, candidate overlays, evaluation design and academic sources. [HTML](examples/v04-technical-annex.html) · [Bibliography](docs/v04-bibliography.bib). |
+| **[Real-source case atlas · PDF](examples/v04-case-atlas.pdf)** | Fifteen illustrative cases spanning all four recorded outcomes, missing decisions, reported speech, boundaries and independent-model differences. Commentary is AI-authored; it is not human adjudication. [HTML](examples/v04-case-atlas.html) · [Frozen cases](examples/v04-case-atlas.snapshot.json.gz). |
+| **[Evidence-pack manifest](examples/v04-evidence-pack.manifest.json)** | Checksums, provenance and links to processed flows, source archives and publication inputs. [Download the evidence ZIP](examples/v04-evidence-pack.zip) · [Lineage index](examples/v04-lineage-index.json) · [Source-reference audit](examples/v04-corpus-verification.json). |
+
+![The v0.4 casebook composer in the actual application.](docs/images/workspace-v04-casebook.png)
+
+*Actual browser/API workflow with explicitly synthetic source and model fixtures: mixed outcomes, frozen framework conditions and separate editorial notes. This screenshot demonstrates application behavior, not model quality. [Report-job view](docs/images/workspace-v04-report-jobs.png) · [Mobile layout](docs/images/workspace-v04-mobile.png).*
+
+Ten implemented improvements make the research workflow easier to inspect:
+
+1. **Curated browser casebooks:** pin positive, negative, not-applicable, uncertain and genuinely unfinished cases; reorder and annotate without changing original model output.
+2. **Persistent report jobs:** bounded source capture, immutable report inputs, progress, cancellation, recovery and checksummed downloads.
+3. **Three coverage denominators:** sources, source units and criterion decisions remain separate, including unresolved work.
+4. **Review queues:** uncertainty, literal model disagreement and unfinished work have distinct queues and inspectable source context.
+5. **Evidence layers:** original source, framework, model reading, human review and editorial commentary keep their own authorship.
+6. **Extraction provenance:** shared TXT behavior, page/block manifests, exclusions and explicit re-extraction create new versions while preserving earlier evidence.
+7. **Reliable state:** atomic imports, coherent snapshots, revision guards, migration backups and retry-safe multipart completion.
+8. **Frozen analytical methods:** distinguish a method's identity from execution settings; retain source metadata and opt-in candidate annotations explicitly.
+9. **Independent-evaluation scaffold:** 200 model-blind review cases and 120 authored functional fixtures. Human labels and functional model runs are still pending; no accuracy score is fabricated.
+10. **Portable distribution:** a wheel containing the compiled browser application, Docker, isolated install checks, browser workflows and an opt-in complete 5,000-source evidence-replay gate.
+
+![The processing flow preserves source, method, validation, review and publication lineage.](docs/images/v04-processing-flow.svg)
+
+The existing v0.3 source corpus, recorded results and published reports remain the baseline. v0.4 adds the workbench and evidence record; it does not silently rerun the corpus or turn model agreement into validated accuracy. See the [documentation map](docs/README.md), [casebook and report-job guide](docs/report-jobs.md), [release notes](CHANGELOG.md) and [verification record](docs/verification-v04.md).
+
 ## Open a real, commented report
 
 <a href="examples/political-framing-commentary.pdf"><img src="docs/images/political-framing-report-preview.png" width="240" alt="Open the political framing PDF: real source wording, recorded model readings, and separately labeled AI-authored commentary."></a> <a href="examples/institutional-context-commentary.pdf"><img src="docs/images/institutional-context-report-preview.png" width="240" alt="Open the institutional context PDF: protective language, reported discrimination, framework boundaries and uncertainty."></a> <a href="examples/news-monitoring.pdf"><img src="docs/images/news-monitoring-report-preview.png" width="240" alt="Open the news monitoring PDF: quoted hostility, political-expression boundaries, uncertain discrimination claims and translation credit."></a>
@@ -39,6 +73,15 @@ docker compose up --build
 ```
 
 Open **http://localhost:8000**. In **Import**, load a recorded collection or add your own files. Inspect saved results without an inference key. **Analyze** starts a new inquiry; remote inference requires explicit source-text transfer consent and a budget. The named Docker volume persists your workspace.
+
+The release also supplies a self-contained application wheel. Install the downloaded wheel and start it without Node or a source checkout:
+
+```sh
+python -m pip install ./doxa_by_tacitus-0.4.0-py3-none-any.whl
+doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data
+```
+
+The wheel includes the UI and engine; demonstration corpora and recorded results are distributed in this repository. Model weights are installed separately and explicitly. Download the wheel from [GitHub Releases](https://github.com/sargonxg/DOXA-by-TACITUS/releases). Native PDF rendering may require system libraries; [Docker and installation guidance](docs/deployment.md) cover that setup.
 
 For native development, use Python 3.11+ and Node 22+:
 
@@ -179,7 +222,7 @@ The default **$20/month application variable-spend cap is configurable**. It con
 
 ## Reproduce and inspect
 
-The [v3 verification record](docs/verification-v3.md) lists the actual software, browser, corpus and runtime checks, their artifacts, and what they establish.
+The [v0.4 verification record](docs/verification-v04.md) and [v3 verification record](docs/verification-v3.md) list the actual software, browser, corpus and runtime checks, their artifacts, and what they establish.
 
 ```sh
 pytest -q
@@ -188,6 +231,8 @@ npm --prefix infra/cloudflare ci && npm --prefix infra/cloudflare test
 .venv/bin/python tests/browser_v3.py
 .venv/bin/python tests/browser_import_scope.py
 .venv/bin/python tests/browser_verification.py
+.venv/bin/python tests/browser_publications_v04.py
+.venv/bin/python scripts/verify_repository.py
 ```
 
 Browser contract tests use isolated synthetic fixtures and mocked paid requests; they establish application behavior, not model quality. Separate checks cover actual 11 MiB refresh/reselection recovery, grouped imports and a read-only copy of the real 5,000-source workspace. See [frontend checks](frontend/README.md).
@@ -210,7 +255,7 @@ python scripts/benchmark_v3.py --collection news --provider cloudflare \
 
 The budget does not promise completion. **Resume by repeating the identical command, paths and analytical arguments with `--resume`**. Source/model/method changes require a new run. Coverage, unresolved decisions, resource measurements and token/cost accounting—not merely a finished process—determine what a benchmark establishes.
 
-[Recorded benchmark summaries](benchmarks/README.md) distinguish the actual partial cloud backfill, completed CPU profiles, scoped pilots and historical v1 artifacts. Full-corpus inference coverage is recorded separately from source audits and independently validated interpretation accuracy. For a large recorded workspace, the [streaming export command](docs/v3-recorded-exports.md) writes full JSON/XLSX without materializing every assessment in memory; the browser export endpoint has a separate memory profile. The earlier [v1 institutional PDF](examples/doxa-public-institutions.pdf) remains a historical example.
+[Recorded benchmark summaries](benchmarks/README.md) distinguish the actual partial cloud backfill, completed CPU profiles, scoped pilots and historical v1 artifacts. Full-corpus inference coverage is recorded separately from source audits and independently validated interpretation accuracy. For a large recorded workspace, the [streaming export command](docs/v3-recorded-exports.md) writes full JSON/XLSX without materializing every assessment in memory; the compatibility export endpoint has a separate memory profile. The new persistent report-job service stages bounded chunks and renders outside the API process. The earlier [v1 institutional PDF](examples/doxa-public-institutions.pdf) remains a historical example.
 
 ## Explore the project
 

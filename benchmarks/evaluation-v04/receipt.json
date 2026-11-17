@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.4",
+  "kind": "prepared_reference_scaffold",
+  "cases": 200,
+  "development_cases": 100,
+  "locked_heldout_cases": 100,
+  "independent_labels": 0,
+  "model_calls": 0,
+  "quality_status": "reference_pending",
+  "interpretation_accuracy": null,
+  "story_groups_disjoint": true,
+  "files": [
+    {
+      "file": "benchmarks/evaluation-v04/exposure-ledger.json",
+      "sha256": "ad335ab1698b5942af7e21abe0d0f08e5aca1bc6460971fe69752914f1a2d983",
+      "bytes": 1897
+    },
+    {
+      "file": "benchmarks/evaluation-v04/functional-casebook.json",
+      "sha256": "d0a8065db86e1f7e99e0f696f729a53136cee2ab2e535307267de21440f08849",
+      "bytes": 1077962
+    },
+    {
+      "file": "benchmarks/evaluation-v04/reviewer-A-development.json",
+      "sha256": "a9489bbf1d7d9640561fd8119f4410363f7c8eca66fd437935556a72cb81e06c",
+      "bytes": 4030438
+    },
+    {
+      "file": "benchmarks/evaluation-v04/reviewer-A-heldout.json",
+      "sha256": "0c6f725abbd3481cc570750db874cff34a51b4de9006613e6f657fe3755c71a3",
+      "bytes": 4083922
+    },
+    {
+      "file": "benchmarks/evaluation-v04/reviewer-B-development.json",
+      "sha256": "a9489bbf1d7d9640561fd8119f4410363f7c8eca66fd437935556a72cb81e06c",
+      "bytes": 4030438
+    },
+    {
+      "file": "benchmarks/evaluation-v04/reviewer-B-heldout.json",
+      "sha256": "0c6f725abbd3481cc570750db874cff34a51b4de9006613e6f657fe3755c71a3",
+      "bytes": 4083922
+    },
+    {
+      "file": "benchmarks/evaluation-v04/scaffold.json",
+      "sha256": "42f05070378be8b201f85f98b55ed4ffb6f35b581798c100310a787d853b0def",
+      "bytes": 7997405
+    }
+  ],
+  "reproduce": ".venv/bin/python -B scripts/build_evaluation_v04.py"
+}

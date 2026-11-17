@@ -30,6 +30,8 @@ import { pendingUploadImport, request, uploadInParts } from "./api";
 import { Analytics } from "./workspace/Analytics";
 import { Inspector } from "./workspace/Inspector";
 import { DrawerBody } from "./workspace/Drawers";
+import { useCasebook } from "./workspace/Casebooks";
+import { CoverageSummary } from "./workspace/Coverage";
 import {
   contextFor,
   list,
@@ -38,6 +40,7 @@ import {
   queryPage,
   record,
   restoreQuery,
+  unitContext,
   workspaceQuery,
 } from "./workspace/client";
 import {
@@ -80,6 +83,7 @@ const DRAWER_TITLES: Record<string, string> = {
   reports: "Export this research scope",
   learning: "Reviewed examples & method versions",
   filters: "Refine the research scope",
+  "review-queue": "Review queues · recorded evidence",
 };
 const active = (run?: AnalysisRun | null) =>
   !!run && ["queued", "running"].includes(run.status);
@@ -120,6 +124,13 @@ export default function App() {
     (text: string, isError = false) => setNotice({ text, error: isError }),
     [],
   );
+  const {
+    book: casebook,
+    setBook: setCasebook,
+    pinning,
+    pin,
+    create: createCasebook,
+  } = useCasebook(project, query, notify);
   const refresh = useCallback(() => {
     signature.current = "";
     setRevision((value) => value + 1);
@@ -135,6 +146,7 @@ export default function App() {
     doc?: string,
     finding?: string,
     push = false,
+    unitId?: string,
   ) {
     const url = currentUrl();
     url.hash = "";
@@ -144,6 +156,8 @@ export default function App() {
     else url.searchParams.delete("doc");
     if (finding) url.searchParams.set("finding", finding);
     else url.searchParams.delete("finding");
+    if (unitId) url.searchParams.set("unit", unitId);
+    else url.searchParams.delete("unit");
     if (push) window.history.pushState({}, "", url);
     else window.history.replaceState({}, "", url);
   }
@@ -171,8 +185,34 @@ export default function App() {
     [notify],
   );
 
+  const openUnit = useCallback(
+    async (documentId: string, unitId: string) => {
+      const current = queryRef.current;
+      if (!current) return;
+      const token = ++contextRequest.current;
+      setContextLoading(true);
+      try {
+        const next = await unitContext(
+          projectRef.current,
+          current.query_id,
+          documentId,
+          unitId,
+        );
+        if (token !== contextRequest.current) return;
+        setContext(next);
+        saveUrl(current, documentId, undefined, false, unitId);
+      } catch (reason) {
+        notify(message(reason), true);
+      } finally {
+        if (token === contextRequest.current) setContextLoading(false);
+      }
+    },
+    [notify],
+  );
+
   useEffect(() => {
     let alive = true;
+    // Unit links resolve actual frozen source context without creating a finding.
     void Promise.allSettled([
       request<Project[]>("/projects"),
       request<Lens[]>("/lenses"),
@@ -217,7 +257,12 @@ export default function App() {
             /* An expired saved scope is replaced by a new server query. */
           }
         }
-        if (initial.searchParams.get("doc"))
+        if (initial.searchParams.get("doc") && initial.searchParams.get("unit"))
+          void openUnit(
+            initial.searchParams.get("doc")!,
+            initial.searchParams.get("unit")!,
+          );
+        else if (initial.searchParams.get("doc"))
           void openSource(
             initial.searchParams.get("doc")!,
             initial.searchParams.get("finding")
@@ -250,7 +295,7 @@ export default function App() {
       alive = false;
       window.removeEventListener("resize", resize);
     };
-  }, [openSource]);
+  }, [openSource, openUnit]);
 
   useEffect(() => {
     if (!ready || !project) return;
@@ -270,7 +315,13 @@ export default function App() {
         queryRef.current = result;
         setLoading(false);
         setStale(false);
-        saveUrl(result, context?.document.id, context?.finding?.id);
+        saveUrl(
+          result,
+          context?.document.id,
+          context?.finding?.id,
+          false,
+          context?.unit_id,
+        );
         if (result.run)
           setRuns((previous) =>
             [
@@ -321,7 +372,9 @@ export default function App() {
           setQuery(result);
           queryRef.current = result;
           const doc = currentUrl().searchParams.get("doc");
-          if (doc)
+          if (doc && currentUrl().searchParams.get("unit"))
+            void openUnit(doc, currentUrl().searchParams.get("unit")!);
+          else if (doc)
             void openSource(
               doc,
               currentUrl().searchParams.get("finding")
@@ -336,7 +389,7 @@ export default function App() {
     };
     window.addEventListener("popstate", pop);
     return () => window.removeEventListener("popstate", pop);
-  }, [openSource, refresh]);
+  }, [openSource, openUnit, refresh]);
   useEffect(() => {
     const keyboard = (event: KeyboardEvent) => {
       if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
@@ -560,6 +613,10 @@ export default function App() {
   const unavailable = !runInfo || legacy || unassessed.length > 0;
   const live = runs.find(active);
   const detail = record(metrics.coverage_detail);
+  const inspectorRun = context?.finding?.run_id
+    ? runs.find((item) => item.id === context.finding?.run_id) ||
+      (query?.run?.id === context.finding.run_id ? query.run : null)
+    : query?.run;
   const matching = query?.documents.total || 0;
   const activeFilters = Object.entries(scope).filter(
     ([key, value]) =>
@@ -798,7 +855,7 @@ export default function App() {
               ? "Corpus · not analyzed"
               : legacy
                 ? "Contextual checks unavailable"
-                : `${percentage(metrics.coverage)} source checks`}
+                : `${percentage(metrics.coverage)} fully assessed sources`}
           </strong>
           {!legacy && !!runInfo && (
             <span>
@@ -831,6 +888,10 @@ export default function App() {
           <button onClick={() => setDrawer("learning")}>
             <ShieldCheck size={13} />
             Reviewed learning
+          </button>
+          <button onClick={() => setDrawer("review-queue")}>
+            <BookOpen size={12} />
+            Review queues
           </button>
           {stale && (
             <button className="w-new-results" onClick={refresh}>
@@ -927,6 +988,7 @@ export default function App() {
               detail={`${number(metrics.reviewed)} reviewed · ${number(metrics.uncertain)} uncertain`}
             />
           </div>
+          <CoverageSummary query={query} compact />
           {metrics.coverage < 100 && query?.run && (
             <div className="w-coverage-note">
               <ShieldCheck size={14} />
@@ -964,6 +1026,22 @@ export default function App() {
               context={context}
               loading={contextLoading}
               lenses={lenses}
+              run={inspectorRun}
+              pinned={
+                !!context?.finding &&
+                !!casebook?.cases.some(
+                  (item) => item.assessment_id === context.finding?.id,
+                )
+              }
+              pinning={pinning}
+              onPin={(finding) =>
+                void pin({
+                  assessment_id: finding.id,
+                  document_id: finding.document_id,
+                  unit_id: finding.unit_id,
+                })
+              }
+              onCasebook={() => setDrawer("reports")}
               onClose={() => setContext(null)}
               onReview={review}
               onCandidate={(finding) => {
@@ -1003,7 +1081,7 @@ export default function App() {
           title={DRAWER_TITLES[drawer] || "Workspace"}
           eyebrow="DOXA RESEARCH WORKSPACE"
           onClose={() => setDrawer(null)}
-          wide={drawer === "analyze"}
+          wide={drawer === "analyze" || drawer === "reports"}
           notification={
             notice && (
               <Notification
@@ -1026,9 +1104,32 @@ export default function App() {
             busy={busy}
             candidate={context?.finding || candidate}
             sourceContext={context}
-            onOpenSource={(document, block) => {
+            casebook={casebook}
+            pinning={pinning}
+            onCasebook={setCasebook}
+            onPin={pin}
+            onCreateCasebook={createCasebook}
+            onOpenSource={(document, block, finding) => {
               setDrawer(null);
-              void openSource(document, undefined, block);
+              void openSource(
+                document,
+                finding ? ({ id: finding } as Observation) : undefined,
+                block,
+              );
+            }}
+            onOpenContext={(next, unitId) => {
+              contextRequest.current++;
+              setContext(next);
+              setContextLoading(false);
+              setDrawer(null);
+              if (queryRef.current)
+                saveUrl(
+                  queryRef.current,
+                  next.document.id,
+                  undefined,
+                  true,
+                  unitId,
+                );
             }}
             onScope={patchScope}
             onImport={importFiles}
@@ -1089,7 +1190,7 @@ export default function App() {
           />
         </Drawer>
       )}
-      {narrow && (context || contextLoading) && (
+      {narrow && !drawer && (context || contextLoading) && (
         <Drawer
           title="Context & evidence"
           notification={
@@ -1111,6 +1212,25 @@ export default function App() {
             context={context}
             loading={contextLoading}
             lenses={lenses}
+            run={inspectorRun}
+            pinned={
+              !!context?.finding &&
+              !!casebook?.cases.some(
+                (item) => item.assessment_id === context.finding?.id,
+              )
+            }
+            pinning={pinning}
+            onPin={(finding) =>
+              void pin({
+                assessment_id: finding.id,
+                document_id: finding.document_id,
+                unit_id: finding.unit_id,
+              })
+            }
+            onCasebook={() => {
+              setContext(null);
+              setDrawer("reports");
+            }}
             onClose={() => setContext(null)}
             onReview={review}
             onCandidate={(finding) => {

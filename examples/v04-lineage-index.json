@@ -1,0 +1,4049 @@
+{
+  "schema_version": "doxa-v04-lineage-index-1",
+  "records": [
+    {
+      "id": "benchmarks/v3-institutions/showcase.json",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "c5626fac4374567cab54d99a835e9f92ee35ccf5a662130572bda6846500f232",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.574480+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-institutions/showcase.json"
+      },
+      "lineage_sha256": "8d7d4522f82e045278cda351f906d72a9f276c3f306c1885a06275a131911b11"
+    },
+    {
+      "id": "benchmarks/v3-institutions/assessments-part-0001.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "70b5bc89874354d2069b5000bf7fbd69b539748738374e0deb7c7f6a1649eb3b",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.575728+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-institutions/assessments-part-0001.jsonl.gz"
+      },
+      "lineage_sha256": "29da2c24e619ecb1c4edcfccd3f13b87efe1ed5543560037d20d06da07682662"
+    },
+    {
+      "id": "benchmarks/v3-institutions/assessments-part-0002.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "c500b12ca8d7f10b77e7fc12900628f0f2eef96d3fc13927f9663e5dc305bfab",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.577066+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-institutions/assessments-part-0002.jsonl.gz"
+      },
+      "lineage_sha256": "a3863002c864ebc3d124a589050f5a052498b1949de27e784958bd4964809c42"
+    },
+    {
+      "id": "benchmarks/v3-institutions/assessments-part-0003.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "adefd84b0cbb269ab8192ab0de61ddc164491a2047bf341b54d1500354492fd6",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.578636+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-institutions/assessments-part-0003.jsonl.gz"
+      },
+      "lineage_sha256": "add55128776209e9a5e42b9f29df3324eff2ab7fff3f2d69fd6f8d7fefe6418b"
+    },
+    {
+      "id": "benchmarks/v3-news/showcase.json",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.579588+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/showcase.json"
+      },
+      "lineage_sha256": "488ea6f95b7a8574c7e42bf25b7fbd05c6205187cea8bc59d33b74e999418fd4"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0001.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "31d76e084ce9cc2118b37d2d23aba5d09d033e91563867887ce44dbce4549c4d",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.580535+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0001.jsonl.gz"
+      },
+      "lineage_sha256": "565697d3235d7bd2ce76fabb209c30e5154c99e134a44943f73128ad43cec08a"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0002.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "b26c7f021c71e717befb3aab3e109f9b17f3fef593c729c11bf086f28fed6210",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.582070+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0002.jsonl.gz"
+      },
+      "lineage_sha256": "d7fed7667bc72e6f6f57066c5e08939c7a395211959bb523370b5af836d58d9f"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0003.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "d63b2202df6d5e17d32e22af9cc6af2adc515255ab0849d3125ec640e4088c70",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.583257+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0003.jsonl.gz"
+      },
+      "lineage_sha256": "25cac7682971e4a74032376f79af9ae40118710ceaea0516cc2f3123818670a6"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0004.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "65f0a94dc23dad014a459f68fabd8d3bee2cfe0749e5dabf3df1a3ce8bcbbde6",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.584892+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0004.jsonl.gz"
+      },
+      "lineage_sha256": "58a33dfa8f4c21a21529860893df030505a3ae606b61133c5b1ed41eb2810a7e"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0005.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "1de450c22d02f2176defff18f3690f901008405f1dcba31203ab19e1b41a0b46",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.586232+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0005.jsonl.gz"
+      },
+      "lineage_sha256": "6578e51c8852907a0e9a88370bc307a8c8320a0887c1a3a5fff94af9035f5ef4"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0006.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "06f17ad1fcf477da247a82b04ea49b3579dfb1164b5da726d59a3cf6429f861f",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.588216+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0006.jsonl.gz"
+      },
+      "lineage_sha256": "04de89207db45340e3fdddbc980a52a3b5a94b8a95ecb1b0abab72926d15bd88"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0007.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "b2b5d46f10d8f0ffe866470fc1b314d757ff484c0ca9bcd6ea30be0db4870ddb",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.590393+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0007.jsonl.gz"
+      },
+      "lineage_sha256": "3a90f67659eb0576567d4a26215e6f6ec10903ae8225c5ec98f27c87bb7d8242"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0008.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "7ace374cd41c47208353eaa1cd4a28b1cede962cda77649bbc62356f2b1fb289",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.591814+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0008.jsonl.gz"
+      },
+      "lineage_sha256": "31d39182814bbaf70a9e14ae0e660af7e1e05b5536d40f7de49b3ac80ada49e9"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0009.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "d4f125d4b95ff742c5e1b7f7501b51c79f91b947d7c2160df3c3e37609bb1873",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.593122+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0009.jsonl.gz"
+      },
+      "lineage_sha256": "ce322c727243fe4646548b2570231c8fb231544375cb718558c15ead7c69083d"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0010.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "533cbc417da42ca54305e2a08d91df417b8d42107510bf2401a5fc54da6f5962",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.594454+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0010.jsonl.gz"
+      },
+      "lineage_sha256": "613175697563c8286325209a0c32e1dbfb02213c6a50cebd89ee361f1b220047"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0011.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "76255bb85384ab15a2a9e988b73acd2f32ac111108563c33e719fcf1402b8950",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.595505+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0011.jsonl.gz"
+      },
+      "lineage_sha256": "9068a2871115fd7a2f167d5511178f3b2790b97f5b6115bc0c6a9d93b9f1ab1a"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0012.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "ffa9fff7fe05a9a42008fb91e0ea27f1c240724d409ea14ab99a4460451e3665",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.596647+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0012.jsonl.gz"
+      },
+      "lineage_sha256": "eba7e145ccf806ef6f73748575f64c610b9a9a10f00e655e4fdcf6a09b65609d"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0013.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "fdeeda790855b0d55416c01677c44d1a329e8117574f7bb71af0a66be0737fca",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.597760+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0013.jsonl.gz"
+      },
+      "lineage_sha256": "d77be588b10918c6221eae639379f8e49ec9cf8de5f78a9ff9cfdaaea9f5e876"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0014.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "1b4816b48be192670f43d266152dc29b2a4630b850a16f183de7efb2a1b62014",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.599014+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0014.jsonl.gz"
+      },
+      "lineage_sha256": "3d40ad1ae3fcddc9545c0e19423ede0d265371e11dbb67e807ed952a5d678a5a"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0015.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "c7a79e66641db0ae0e77b32db9a57f1a56687e478123a3f7c4ea1b02dc38fb64",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.600009+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0015.jsonl.gz"
+      },
+      "lineage_sha256": "d72c304a6d8a2752d0fc3951eb5c4dbe0d2222d4b1cae5afedae7d39f7b2e829"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0016.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "d5ad0fd0ad23804440e48dc400610728b269f0dd79d959fd0d1db34e5fd02308",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.601807+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0016.jsonl.gz"
+      },
+      "lineage_sha256": "014577ecb5c81f49ffc81905a8a7bc2b8a3fb56f7b6a602ffdae4fd7ffc770e0"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0017.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "9727fcd55add913e53a15c634a39bb92a04ae4f1250371e70a3c7a34be45ba37",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.603035+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0017.jsonl.gz"
+      },
+      "lineage_sha256": "d3abe9bbdc45894bedf7ece772268e2b1db6c4e5e28f5682675669bb50394c14"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0018.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "772e283e042460d82fa689f1438495c1f7b5d6bad090ff3e8a32bfec0f32be68",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.603919+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0018.jsonl.gz"
+      },
+      "lineage_sha256": "18a1333ed5a90c80185ef96fb071907fb0dfdf249bd4912edc8b8ed4f9ca1eaa"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0019.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "cc9bd6bc6936c99e852120f34adb6238809347cde6e0c3bf034f1dc2251af0da",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.604801+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0019.jsonl.gz"
+      },
+      "lineage_sha256": "8cb986b75e59648d103db6476498638d794b1d7aaab835e1c3c1a7ee15575bd0"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0020.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "fc56db80ee049a450feffe048b44ec82333a402af40c9774480f2c958062c2d3",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.605743+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0020.jsonl.gz"
+      },
+      "lineage_sha256": "30f9bc3b5e4422f067797f88bacc070443c60f6a98cf34d0551386ed123f36d8"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0021.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "5d6104eec62c11a6778de16eddf3dba07432b26b1d3bfb3e9f9490e52a7bf333",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.607007+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0021.jsonl.gz"
+      },
+      "lineage_sha256": "1b02901ef93651d6c460ba3d639b01aea2366be067f1998929dd51cdc69c8543"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0022.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "a49436b6b1b992becd7bf8302495f6e94445abb137a8e4ed0294c29be16477c4",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.608053+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0022.jsonl.gz"
+      },
+      "lineage_sha256": "9407cbc004dab4be4431f59b8c92285ed2fac7f11ca651a461b7afdcd80e51e0"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0023.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "ce59910e6b48d8cb140bedf6ed9c2bb6da3b295c75f5e6c8bdb28038a1b1a743",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.609070+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0023.jsonl.gz"
+      },
+      "lineage_sha256": "b080a9a84702b513bb376f0abbb10413237396d914ab350fd36f1b9aa0f6fd27"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0024.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "f9a9df869b33bd80bf96d119f73b582dd453cdeee391dc693581faf6cf0663a0",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.610180+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0024.jsonl.gz"
+      },
+      "lineage_sha256": "3a448b0f9b8c50afc2f83020ea78da1295d945530fb92680d04111ab01441dfd"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0025.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "c741d7784d4738fab65fb4b35f6ca28634b5173c508417242c8377d2f56475a8",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.611463+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0025.jsonl.gz"
+      },
+      "lineage_sha256": "fe66d03c7cf97f9397a413a685fabcec4a2851ed5903c873ec11e706bb64fe0c"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0026.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "26fa2260a7a7e21a0d852510bd004c2abadf624725bbf40b1a85a667e955f6ba",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.612462+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0026.jsonl.gz"
+      },
+      "lineage_sha256": "b6748181925855870026f8fb0f07a5c394b1d78ace922d93316cbf0db2553271"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0027.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "ae8d255c60f14c25f97fa542600e7fd46c53431b0538e315a513a41e79a3391d",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.613789+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0027.jsonl.gz"
+      },
+      "lineage_sha256": "f3ef102f06c2c37cf342580e0574902060687a9f58ee13ecdd5f7e0c499a0444"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0028.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "6401ed0b37fe6b275739ec03ef23efb9725e1d252673e8c4081562f4e17b8d71",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.614912+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0028.jsonl.gz"
+      },
+      "lineage_sha256": "350abf65111a8d3a5ca456e798ac271cdd0c06c131a9a8b87cebfd4d2ba17bf5"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0029.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "c4daebe0a1b33e2cfe29a91eb33f0c33b0e8947360d2c667d1b95ae0ddeb11d3",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.616485+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0029.jsonl.gz"
+      },
+      "lineage_sha256": "6c8bed62bfa54065314ece9eedc6dfc7581a46c953fc627f5e77c4f2e477f513"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0030.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "580041d805751cda0db349f9296e18de9b2e94cc5a8ec8796332baf4253aa323",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.617717+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0030.jsonl.gz"
+      },
+      "lineage_sha256": "f1f6d71ea3b269deea647c9ec25808b268d31e30635ff6e1799ce03f12ba4c52"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0031.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "e234d7056b3d1f8cb2aea6cdad56e63d55540ed6248d39bd6087ff933b000c99",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.619065+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0031.jsonl.gz"
+      },
+      "lineage_sha256": "485f43adc261c4969181c997ec0c06554941e1aa6eb2568d34786d494a45d749"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0032.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "e163c7bc21e554a841ecc6645ccd254f428bb983213d0239269b401010fb0268",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.620314+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0032.jsonl.gz"
+      },
+      "lineage_sha256": "41701517a9313b66ecf466ed38cca32b1da29de97014246fa896325343072d23"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0033.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "a491feb87be4c3bf9edbc93587818db7ff07d6aacecfd1cbd8d7c953a9191d4f",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.621529+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0033.jsonl.gz"
+      },
+      "lineage_sha256": "f1182b2779d7270a55e294da91a7a2692f89ba28f3b4fda06197dbba0de238df"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0034.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "36581809bcfa13d0dafe1b91e1b3391bed673048ca859a4f23987cfcc0165b70",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.622912+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0034.jsonl.gz"
+      },
+      "lineage_sha256": "05294a5a32033444e38a932e7de3a3f8188e0ef1eff8ba3ae19fdd7cfed7f25b"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0035.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "ea976ff6a647e905cefeae5e35a16e19b3016803b3023332e3efeca962b54900",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.624166+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0035.jsonl.gz"
+      },
+      "lineage_sha256": "174886e73c08a87cc49b60ca7795101dc1d882da2a83eb5bfd7c70f4ab237b2d"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0036.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "08af1035d576a844a1038cc058f8e309a63c9956a23df0a34243ca25369eefce",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.625265+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0036.jsonl.gz"
+      },
+      "lineage_sha256": "91795d306ca0762a669482f3bec02854de9734869fcfc83c124d9b9bb8af617c"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0037.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "96be9fc6c48fbd5d38adfdae3ccaffdcd937502b275a2aafba757438069896fb",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.627127+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0037.jsonl.gz"
+      },
+      "lineage_sha256": "3060a82c51f7f086c2440e5e709607ff85cc41d26d28d0923d36a540fc65283f"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0038.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "87d5cc81f0b6124e95758a3441077ba2afbcc7fe980dcd4120bc2a320d704fdf",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.628523+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0038.jsonl.gz"
+      },
+      "lineage_sha256": "98d264c11e41666e2c61dfb4bc3342bcf0bd44cf1433d3e0810a4ea7e1461aec"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0039.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "449278653cd2ae730c116c3dc6337aff85c889c5b79b4e043f2a9994ca9f725e",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.630033+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0039.jsonl.gz"
+      },
+      "lineage_sha256": "b06250fd0df491e86070d47d4a8354b0a5ab255c8daaaf89ca10fc607392ab8d"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0040.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "1f37955f939145c8b2a76626fbe6dc6f7072badc2b5ff3f53b54634accc0d9b0",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.631110+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0040.jsonl.gz"
+      },
+      "lineage_sha256": "2a428b780d23f36127714deaccaea2904b51a51b50b7725490fee6ebbf53863f"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0041.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "132b6d0363792b3c5559c4326377a20824a59ac2c3bbc818d1878553fca3e33d",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.632468+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0041.jsonl.gz"
+      },
+      "lineage_sha256": "857375566128e6829b9f41620a5974ed464678e60d3f1c04f3428a3e00a4868b"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0042.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "f5c30028ad684af09728cb0b772b6078679d63f7ab086e8b73ebf87d5198a4cd",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.633679+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0042.jsonl.gz"
+      },
+      "lineage_sha256": "9344c2e5b28476b03b4cd0a836a592f85795e43759b205f2c74507545f2389f7"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0043.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "128b2eef9255b70e559822ea1eeb30bb5e09f383728edd5bdb752b6060b6c89d",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.634971+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0043.jsonl.gz"
+      },
+      "lineage_sha256": "ce6a02330226209df9785d4514b6c7f08e5e37044af8e3f15375a77a2d84094e"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0044.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "1fdf6d6797a1e0539db981eda483113448f9ce3c9b981350207c908a6537dfb4",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.636123+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0044.jsonl.gz"
+      },
+      "lineage_sha256": "eb998e9a84b2902d2088ef8e8dd1975520caf4845fa403bf53850a4b681d4d16"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0045.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "2d8f675a6ee75946bd449083dd355976b5ae5ab5d98620574339103239c3199b",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.637331+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0045.jsonl.gz"
+      },
+      "lineage_sha256": "b89331d6316bfeb3de2ae6b863eb61ced255bf8731ccbfebf2bb2d54ff299402"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0046.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "b6f70db12068fd39d66344addd0e5062eb5b5d78ecfc1ec9224869a4c125c0c2",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.638539+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0046.jsonl.gz"
+      },
+      "lineage_sha256": "6dcd7845826ddcbe91136a42a35fedaabdff23fef2ea857087ae9c1e6331bdcc"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0047.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "33d88cfddd50183100756e0017dc004f7a668ff02db12c6fa59c0375ab650207",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.639639+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0047.jsonl.gz"
+      },
+      "lineage_sha256": "7eea901a56e50472b27ac5f7cfb70703e76ccf9d2c951bff1ac4ef3f34deca11"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0048.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "aebbef7b21ad21488a2f5a92c87cdb945e21f5d574f4af4c23697be40376ed4e",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.640850+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0048.jsonl.gz"
+      },
+      "lineage_sha256": "15827673f11cdc4e30c3e4d672bd789970b0d482a1d3a5ef2645e99c81623ea7"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0049.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "5e86c0887f0199b50acb5bc4aa2b5d2ed00493f48500d446fe774699f6b2b85c",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.642189+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0049.jsonl.gz"
+      },
+      "lineage_sha256": "2cb9131392bb42aa607922516468d3f28b8dfa85f2678b19a9a485862c5ae3ea"
+    },
+    {
+      "id": "benchmarks/v3-news/assessments-part-0050.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "8a39b1a817ef54e716000007ffa4ff0c401431c30663a71e5932a057f730d714",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.643625+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-news/assessments-part-0050.jsonl.gz"
+      },
+      "lineage_sha256": "7f7f2f69091a081a828050bb281b6baad0b86ac69f2e10bf67816204188c1f07"
+    },
+    {
+      "id": "benchmarks/v3-political/showcase.json",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "2d69f2002dfbed7bae2515e79918e57b0530bd863469ec1200b1e2d9c44d4b2e",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.643749+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-political/showcase.json"
+      },
+      "lineage_sha256": "437a6392215d3c8b6fd539ec1b05074d29407a40794376083d663af15f1b2b2d"
+    },
+    {
+      "id": "benchmarks/v3-political/assessments-part-0001.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "5f98e0ee98b01f3833f944a7fea8a0419612d45f5200ca407abf0dc717dfba66",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.644027+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-political/assessments-part-0001.jsonl.gz"
+      },
+      "lineage_sha256": "aebc926e035db8e980afadc065c461270fd074a7c937e281753a954fbaf26e73"
+    },
+    {
+      "id": "benchmarks/v3-local-news/showcase.json",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "68a97ca539a160efe97660f8d0e5162e570114baf23d3a67c220133980110b2a",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.644136+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-local-news/showcase.json"
+      },
+      "lineage_sha256": "09bd859eafacf9abf09bfdbcd38cb5191bffd438f43f2b1ad1c7f852efafac88"
+    },
+    {
+      "id": "benchmarks/v3-local-news/assessments-part-0001.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "047352d840880203b8ca8d91b2ace79deee9755618d4dcb4c90eac83e3ed0c33",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.644263+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-local-news/assessments-part-0001.jsonl.gz"
+      },
+      "lineage_sha256": "595b94973ff99ef3df3f5f5f204eb604a0b5f0fe7b3dc7218d0041169f7e554d"
+    },
+    {
+      "id": "benchmarks/v3-independent-low-verification/showcase.json",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "004d54772ecfe3f84ad3d1429fa4b9a68f3c990ea348da35eadd154f42c0b0cc",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.644364+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-independent-low-verification/showcase.json"
+      },
+      "lineage_sha256": "c6e22dbd28192b5b80ec43b783961b07b744ac3f5ac2eec086b63b2d51ba6876"
+    },
+    {
+      "id": "benchmarks/v3-independent-low-verification/assessments-part-0001.jsonl.gz",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "0edad3c43de340ae5ce706b1d03cefd5d646939e23a0e0b7c56903e36dd848a9",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_v03_parent"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.644806+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "benchmarks/v3-independent-low-verification/assessments-part-0001.jsonl.gz"
+      },
+      "lineage_sha256": "b74111aa250c844cd31e67d09e0c606952c443ca9628b30ad90134a58fdb4998"
+    },
+    {
+      "id": "case-atlas-snapshot",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "38c4fe8dda297ac55b86f60c6154a69e78c5f10d6d621536343269f520ff8c55",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "read_only_case_capture_with_separate_editorial_layer"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "benchmarks/v3-institutions/showcase.json",
+          "kind": "source_artifact",
+          "sha256": "8d7d4522f82e045278cda351f906d72a9f276c3f306c1885a06275a131911b11"
+        },
+        {
+          "id": "benchmarks/v3-institutions/assessments-part-0001.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "29da2c24e619ecb1c4edcfccd3f13b87efe1ed5543560037d20d06da07682662"
+        },
+        {
+          "id": "benchmarks/v3-institutions/assessments-part-0002.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "a3863002c864ebc3d124a589050f5a052498b1949de27e784958bd4964809c42"
+        },
+        {
+          "id": "benchmarks/v3-institutions/assessments-part-0003.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "add55128776209e9a5e42b9f29df3324eff2ab7fff3f2d69fd6f8d7fefe6418b"
+        },
+        {
+          "id": "benchmarks/v3-news/showcase.json",
+          "kind": "source_artifact",
+          "sha256": "488ea6f95b7a8574c7e42bf25b7fbd05c6205187cea8bc59d33b74e999418fd4"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0001.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "565697d3235d7bd2ce76fabb209c30e5154c99e134a44943f73128ad43cec08a"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0002.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "d7fed7667bc72e6f6f57066c5e08939c7a395211959bb523370b5af836d58d9f"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0003.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "25cac7682971e4a74032376f79af9ae40118710ceaea0516cc2f3123818670a6"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0004.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "58a33dfa8f4c21a21529860893df030505a3ae606b61133c5b1ed41eb2810a7e"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0005.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "6578e51c8852907a0e9a88370bc307a8c8320a0887c1a3a5fff94af9035f5ef4"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0006.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "04de89207db45340e3fdddbc980a52a3b5a94b8a95ecb1b0abab72926d15bd88"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0007.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "3a90f67659eb0576567d4a26215e6f6ec10903ae8225c5ec98f27c87bb7d8242"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0008.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "31d39182814bbaf70a9e14ae0e660af7e1e05b5536d40f7de49b3ac80ada49e9"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0009.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "ce322c727243fe4646548b2570231c8fb231544375cb718558c15ead7c69083d"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0010.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "613175697563c8286325209a0c32e1dbfb02213c6a50cebd89ee361f1b220047"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0011.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "9068a2871115fd7a2f167d5511178f3b2790b97f5b6115bc0c6a9d93b9f1ab1a"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0012.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "eba7e145ccf806ef6f73748575f64c610b9a9a10f00e655e4fdcf6a09b65609d"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0013.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "d77be588b10918c6221eae639379f8e49ec9cf8de5f78a9ff9cfdaaea9f5e876"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0014.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "3d40ad1ae3fcddc9545c0e19423ede0d265371e11dbb67e807ed952a5d678a5a"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0015.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "d72c304a6d8a2752d0fc3951eb5c4dbe0d2222d4b1cae5afedae7d39f7b2e829"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0016.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "014577ecb5c81f49ffc81905a8a7bc2b8a3fb56f7b6a602ffdae4fd7ffc770e0"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0017.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "d3abe9bbdc45894bedf7ece772268e2b1db6c4e5e28f5682675669bb50394c14"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0018.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "18a1333ed5a90c80185ef96fb071907fb0dfdf249bd4912edc8b8ed4f9ca1eaa"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0019.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "8cb986b75e59648d103db6476498638d794b1d7aaab835e1c3c1a7ee15575bd0"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0020.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "30f9bc3b5e4422f067797f88bacc070443c60f6a98cf34d0551386ed123f36d8"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0021.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "1b02901ef93651d6c460ba3d639b01aea2366be067f1998929dd51cdc69c8543"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0022.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "9407cbc004dab4be4431f59b8c92285ed2fac7f11ca651a461b7afdcd80e51e0"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0023.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "b080a9a84702b513bb376f0abbb10413237396d914ab350fd36f1b9aa0f6fd27"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0024.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "3a448b0f9b8c50afc2f83020ea78da1295d945530fb92680d04111ab01441dfd"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0025.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "fe66d03c7cf97f9397a413a685fabcec4a2851ed5903c873ec11e706bb64fe0c"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0026.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "b6748181925855870026f8fb0f07a5c394b1d78ace922d93316cbf0db2553271"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0027.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "f3ef102f06c2c37cf342580e0574902060687a9f58ee13ecdd5f7e0c499a0444"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0028.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "350abf65111a8d3a5ca456e798ac271cdd0c06c131a9a8b87cebfd4d2ba17bf5"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0029.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "6c8bed62bfa54065314ece9eedc6dfc7581a46c953fc627f5e77c4f2e477f513"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0030.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "f1f6d71ea3b269deea647c9ec25808b268d31e30635ff6e1799ce03f12ba4c52"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0031.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "485f43adc261c4969181c997ec0c06554941e1aa6eb2568d34786d494a45d749"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0032.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "41701517a9313b66ecf466ed38cca32b1da29de97014246fa896325343072d23"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0033.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "f1182b2779d7270a55e294da91a7a2692f89ba28f3b4fda06197dbba0de238df"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0034.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "05294a5a32033444e38a932e7de3a3f8188e0ef1eff8ba3ae19fdd7cfed7f25b"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0035.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "174886e73c08a87cc49b60ca7795101dc1d882da2a83eb5bfd7c70f4ab237b2d"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0036.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "91795d306ca0762a669482f3bec02854de9734869fcfc83c124d9b9bb8af617c"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0037.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "3060a82c51f7f086c2440e5e709607ff85cc41d26d28d0923d36a540fc65283f"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0038.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "98d264c11e41666e2c61dfb4bc3342bcf0bd44cf1433d3e0810a4ea7e1461aec"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0039.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "b06250fd0df491e86070d47d4a8354b0a5ab255c8daaaf89ca10fc607392ab8d"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0040.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "2a428b780d23f36127714deaccaea2904b51a51b50b7725490fee6ebbf53863f"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0041.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "857375566128e6829b9f41620a5974ed464678e60d3f1c04f3428a3e00a4868b"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0042.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "9344c2e5b28476b03b4cd0a836a592f85795e43759b205f2c74507545f2389f7"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0043.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "ce6a02330226209df9785d4514b6c7f08e5e37044af8e3f15375a77a2d84094e"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0044.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "eb998e9a84b2902d2088ef8e8dd1975520caf4845fa403bf53850a4b681d4d16"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0045.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "b89331d6316bfeb3de2ae6b863eb61ced255bf8731ccbfebf2bb2d54ff299402"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0046.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "6dcd7845826ddcbe91136a42a35fedaabdff23fef2ea857087ae9c1e6331bdcc"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0047.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "7eea901a56e50472b27ac5f7cfb70703e76ccf9d2c951bff1ac4ef3f34deca11"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0048.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "15827673f11cdc4e30c3e4d672bd789970b0d482a1d3a5ef2645e99c81623ea7"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0049.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "2cb9131392bb42aa607922516468d3f28b8dfa85f2678b19a9a485862c5ae3ea"
+        },
+        {
+          "id": "benchmarks/v3-news/assessments-part-0050.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "7f7f2f69091a081a828050bb281b6baad0b86ac69f2e10bf67816204188c1f07"
+        },
+        {
+          "id": "benchmarks/v3-political/showcase.json",
+          "kind": "source_artifact",
+          "sha256": "437a6392215d3c8b6fd539ec1b05074d29407a40794376083d663af15f1b2b2d"
+        },
+        {
+          "id": "benchmarks/v3-political/assessments-part-0001.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "aebc926e035db8e980afadc065c461270fd074a7c937e281753a954fbaf26e73"
+        },
+        {
+          "id": "benchmarks/v3-local-news/showcase.json",
+          "kind": "source_artifact",
+          "sha256": "09bd859eafacf9abf09bfdbcd38cb5191bffd438f43f2b1ad1c7f852efafac88"
+        },
+        {
+          "id": "benchmarks/v3-local-news/assessments-part-0001.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "595b94973ff99ef3df3f5f5f204eb604a0b5f0fe7b3dc7218d0041169f7e554d"
+        },
+        {
+          "id": "benchmarks/v3-independent-low-verification/showcase.json",
+          "kind": "source_artifact",
+          "sha256": "c6e22dbd28192b5b80ec43b783961b07b744ac3f5ac2eec086b63b2d51ba6876"
+        },
+        {
+          "id": "benchmarks/v3-independent-low-verification/assessments-part-0001.jsonl.gz",
+          "kind": "source_artifact",
+          "sha256": "b74111aa250c844cd31e67d09e0c606952c443ca9628b30ad90134a58fdb4998"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.708437+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "path": "examples/v04-case-atlas.snapshot.json.gz"
+      },
+      "lineage_sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+    },
+    {
+      "id": "reconstructed-template",
+      "actor": null,
+      "availability": "reconstructed_not_actual_request",
+      "content_sha256": "8a10a177ab92a5ae4b50c9078e77999150bda433fad2e397b1665ee10640ef6c",
+      "kind": "reconstructed_template",
+      "metadata": {
+        "actual_request_capture": "not_recorded"
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1",
+        "source_sha256": "4c350d4028cfa3adf58871a4753652048acdf05b61d11b572b8ce4112485e17d"
+      },
+      "parents": [],
+      "recorded_at": "2026-11-17T16:37:49.709198+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "f3a8ed2b8d823a433ce010abfed681b9ed56eef1551e54df5d4ab5af642591b4"
+    },
+    {
+      "id": "case-01:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "984ac4f06c421f06d60d3288f9d8730ab8fe234a965df99e0a0686c9d2af5300",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.709547+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "Equal Employment Opportunity Commission",
+        "content_hash": "984ac4f06c421f06d60d3288f9d8730ab8fe234a965df99e0a0686c9d2af5300",
+        "id": "0642e61e6553a21f1fbeec28c40540db",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK",
+        "source_id": "us07",
+        "url": "https://www.eeoc.gov/laws/guidance/religious-garb-and-grooming-workplace-rights-and-responsibilities"
+      },
+      "lineage_sha256": "4d34e7f6758c3525bbd6b648ff614a589028ff0e4ff3eae7dc0bfc096c264bff"
+    },
+    {
+      "id": "case-01:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "a4e1dee5ad7da4add434d610d700999c5eeaa31eff1fbd459b19915555c3c447",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "discourse/framing",
+        "origin": "verified_compatible_registry_capture"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.709607+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "221271712fc5d439a1137787dc9ceba8cc338894b18680f0b426896b6b80cacc"
+    },
+    {
+      "id": "case-01:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "430f9a11f0d57630f2421e63c87ac28ff1998ff4985133d7f5f23c8f3d205d47",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "32459e910518c074c51980f089823604",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "verified_compatible_registry_capture",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "074539f031e64dc28f03384481563a85",
+        "stored_payload_bytes_sha256": "3d1aad39103862a4185ba61af789742ff06a150b8637e19bb55d0db5714d0a2f"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-01:source",
+          "kind": "source_artifact",
+          "sha256": "4d34e7f6758c3525bbd6b648ff614a589028ff0e4ff3eae7dc0bfc096c264bff"
+        },
+        {
+          "id": "case-01:rubric",
+          "kind": "source_artifact",
+          "sha256": "221271712fc5d439a1137787dc9ceba8cc338894b18680f0b426896b6b80cacc"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.709643+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "8362b70c5be45ec1dad3494d88f9d32c65d320d2d1238f78ddf2f7c8229a5118"
+    },
+    {
+      "id": "case-01:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "d2f522c4eb7e2c5dbb88353a544cf6e5ec701bf492b10a278b5f31206f14c5c8",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-01:source",
+          "kind": "source_artifact",
+          "sha256": "4d34e7f6758c3525bbd6b648ff614a589028ff0e4ff3eae7dc0bfc096c264bff"
+        },
+        {
+          "id": "case-01:rubric",
+          "kind": "source_artifact",
+          "sha256": "221271712fc5d439a1137787dc9ceba8cc338894b18680f0b426896b6b80cacc"
+        },
+        {
+          "id": "case-01:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "8362b70c5be45ec1dad3494d88f9d32c65d320d2d1238f78ddf2f7c8229a5118"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.709712+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "a12b49c73a9fc7f01422f899e299469a731ad0e5f35019321c2d4c3f1ea38d24"
+    },
+    {
+      "id": "case-02:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "c826adb7813babc836a8456fa9fb7c517710bb481b9548efb36710ee087c8f6e",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.710689+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "Government Equalities Office",
+        "content_hash": "c826adb7813babc836a8456fa9fb7c517710bb481b9548efb36710ee087c8f6e",
+        "id": "4fcdd43fd9cf392ee0c5f68986db1b23",
+        "license": "OGL-UK-3.0",
+        "source_id": "uk07",
+        "url": "https://assets.publishing.service.gov.uk/media/5a800a2b40f0b62305b88cee/58077_Cm9371_WEB.pdf"
+      },
+      "lineage_sha256": "7351e10611db00072462af1dc98ef77f67b963a02b31cb6f950056d35af09412"
+    },
+    {
+      "id": "case-02:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "1aa8b0a17ba4e6f432d2e8959766024ca058788e56fb902d8bc7fb37bb2425c9",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "anti-muslim-hostility/discrimination_claim",
+        "origin": "verified_compatible_registry_capture"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.710774+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "1653fd7c80924ae58a9dc73d2e510d19cbc89b9f169154eb087da87484972689"
+    },
+    {
+      "id": "case-02:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "83b6130e9b5b0c52875e76d89feeb988215b55e2afb8d4efd9eaf5b91883e740",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "57bf8bbb0482381bb196ed6068feabc4",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "verified_compatible_registry_capture",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "074539f031e64dc28f03384481563a85",
+        "stored_payload_bytes_sha256": "e4d033d5f0c7e4b05836c0b3a8fc8ddccb38cccaa5a53f6bb153cd6fe8ec84e6"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-02:source",
+          "kind": "source_artifact",
+          "sha256": "7351e10611db00072462af1dc98ef77f67b963a02b31cb6f950056d35af09412"
+        },
+        {
+          "id": "case-02:rubric",
+          "kind": "source_artifact",
+          "sha256": "1653fd7c80924ae58a9dc73d2e510d19cbc89b9f169154eb087da87484972689"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.710816+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "fa8eae902bc2e5122d9bc1d24f37ce91991b7376a5dff239b39d49dbb27df2d0"
+    },
+    {
+      "id": "case-02:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "8f5b282f4eb8f21bead21344ef5a2e96ca6fe23e1ffa072bf83c8cd789aa4252",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-02:source",
+          "kind": "source_artifact",
+          "sha256": "7351e10611db00072462af1dc98ef77f67b963a02b31cb6f950056d35af09412"
+        },
+        {
+          "id": "case-02:rubric",
+          "kind": "source_artifact",
+          "sha256": "1653fd7c80924ae58a9dc73d2e510d19cbc89b9f169154eb087da87484972689"
+        },
+        {
+          "id": "case-02:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "fa8eae902bc2e5122d9bc1d24f37ce91991b7376a5dff239b39d49dbb27df2d0"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.710885+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "964226d15d08d20fb9d5634bb79c51d39cfc686a56a01b9874f5eb6632c97a60"
+    },
+    {
+      "id": "case-03:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "4a791b1640104170d7e882c2515128103368e14a87bb5e5220b64da9f828d556",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.714125+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "William Shawcross CVO",
+        "content_hash": "4a791b1640104170d7e882c2515128103368e14a87bb5e5220b64da9f828d556",
+        "id": "8034cbd01d8c663088d89d271ef48dd9",
+        "license": "OGL-UK-3.0",
+        "source_id": "uk01",
+        "url": "https://www.gov.uk/government/publications/independent-review-of-prevents-report-and-government-response/independent-review-of-prevent-accessible"
+      },
+      "lineage_sha256": "410b0f2ecce8ecde46e5dce4599b02560074b1f3999e9dd7831d976bda0c9b44"
+    },
+    {
+      "id": "case-03:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "cdf5a8a3ae947cf52fea979d0bc79466fc7d0c9810519bca3c047cb15424874e",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "jda/political_expression_boundary",
+        "origin": "verified_compatible_registry_capture"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.714208+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "ce21c09a6043995cf7592ab625a0925c33813659eedbb30e828a0f2cd1271b01"
+    },
+    {
+      "id": "case-03:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "52d321a721079d15b3c85ff1426a931e4a77bc804658adb4433e3851eb5965da",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "f93394d9d22c28b8127cd3970615b911",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "verified_compatible_registry_capture",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "074539f031e64dc28f03384481563a85",
+        "stored_payload_bytes_sha256": "01e6219c23dff5c950f965487a0fd0e31f07ef93bbb8f95baa2009efbc2a0119"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-03:source",
+          "kind": "source_artifact",
+          "sha256": "410b0f2ecce8ecde46e5dce4599b02560074b1f3999e9dd7831d976bda0c9b44"
+        },
+        {
+          "id": "case-03:rubric",
+          "kind": "source_artifact",
+          "sha256": "ce21c09a6043995cf7592ab625a0925c33813659eedbb30e828a0f2cd1271b01"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.714248+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "347a721baad859f1e1673e285fb05ea9b7005eb51f661cbf34fcf95acd7c86e2"
+    },
+    {
+      "id": "case-03:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "e557a3a66b13236eff5ac7e053e861ba8a78bcf7f8e51f9fb44b8459a20de7d9",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-03:source",
+          "kind": "source_artifact",
+          "sha256": "410b0f2ecce8ecde46e5dce4599b02560074b1f3999e9dd7831d976bda0c9b44"
+        },
+        {
+          "id": "case-03:rubric",
+          "kind": "source_artifact",
+          "sha256": "ce21c09a6043995cf7592ab625a0925c33813659eedbb30e828a0f2cd1271b01"
+        },
+        {
+          "id": "case-03:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "347a721baad859f1e1673e285fb05ea9b7005eb51f661cbf34fcf95acd7c86e2"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.714314+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "92498dedb96126be212a3e2e74e67097cbef79100a437f93858dabb4e73a3d8b"
+    },
+    {
+      "id": "case-04:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "d4b50d024dd09918f75ae46f5b0a5ef2cb612bdd8d69edb043e34010159473fa",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715047+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "Home Office; Department for Communities and Local Government; Ministry of Justice",
+        "content_hash": "d4b50d024dd09918f75ae46f5b0a5ef2cb612bdd8d69edb043e34010159473fa",
+        "id": "7c95c773f8eb909defde516eca31b2a4",
+        "license": "OGL-UK-3.0",
+        "source_id": "uk08",
+        "url": "https://assets.publishing.service.gov.uk/media/5f8db94a8fa8f56ad07d1152/2016_Hate_Crime_Action_Plan.pdf"
+      },
+      "lineage_sha256": "7e6b656a2cd96443ad5586017405e2ac31b0eed8a1f8175a75869595ad4a9f91"
+    },
+    {
+      "id": "case-04:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "77fa7202432a38b85eeedd80e8a783bf5086e2d725fe707665f8b27975015d92",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "anti-muslim-hostility/stereotyping_and_intent",
+        "origin": "verified_compatible_registry_capture"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715108+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "2365698b2b82271b02895080b3a4394578f346f2123a9454b9006e3d5eb5dfc0"
+    },
+    {
+      "id": "case-04:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "de1890f6762817bd1ffa19472095d665c295b5f1dfdbff39731cb121a95eb6d9",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "35a1cdcbaace24ccf9582edf493a8cf6",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "verified_compatible_registry_capture",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "074539f031e64dc28f03384481563a85",
+        "stored_payload_bytes_sha256": "527990bcf3d7319304303294f298f97eecfcd4df2aef57bee59a99e9ad89985c"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-04:source",
+          "kind": "source_artifact",
+          "sha256": "7e6b656a2cd96443ad5586017405e2ac31b0eed8a1f8175a75869595ad4a9f91"
+        },
+        {
+          "id": "case-04:rubric",
+          "kind": "source_artifact",
+          "sha256": "2365698b2b82271b02895080b3a4394578f346f2123a9454b9006e3d5eb5dfc0"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715144+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "738b0dfe528e3bebe2ecbbf164c7987edb1dabf8e9c8443a272f25c23e7d47e9"
+    },
+    {
+      "id": "case-04:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "7439d24b6eb2e4ce9d220b08ba2c01364ef4e36de4398e8ba0a64924ee684195",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-04:source",
+          "kind": "source_artifact",
+          "sha256": "7e6b656a2cd96443ad5586017405e2ac31b0eed8a1f8175a75869595ad4a9f91"
+        },
+        {
+          "id": "case-04:rubric",
+          "kind": "source_artifact",
+          "sha256": "2365698b2b82271b02895080b3a4394578f346f2123a9454b9006e3d5eb5dfc0"
+        },
+        {
+          "id": "case-04:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "738b0dfe528e3bebe2ecbbf164c7987edb1dabf8e9c8443a272f25c23e7d47e9"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715208+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "a7c2413eb2d4a8bfeaa26b67f45dbbadfc1979d9c886bb9afeea18f518db9adb"
+    },
+    {
+      "id": "case-05:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "fc7fe1f1f99c8a8f1b0bc0948c9611307fff901f4c85c4e6f9c62313dfaefa1c",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715293+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "President Donald J. Trump",
+        "content_hash": "fc7fe1f1f99c8a8f1b0bc0948c9611307fff901f4c85c4e6f9c62313dfaefa1c",
+        "id": "85184c52779016c4b5cf07e7668d97a6",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK",
+        "source_id": "us04",
+        "url": "https://www.govinfo.gov/content/pkg/DCPD-202500116/html/DCPD-202500116.htm"
+      },
+      "lineage_sha256": "856b7f0fbb5b9c8592fa33393a490564db2a34de5d78ef2364b5c410cdc417c5"
+    },
+    {
+      "id": "case-05:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "b4bc67eec1d3447c48b3e0de14e5e7dffa947d3ec19f027fdc0b647ab294b397",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "political-framing/evaluative_language",
+        "origin": "verified_compatible_registry_capture"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715340+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "9e8ff1c994d3fbf73319a73c82642d8c57c7105025ce4cad708def5e4a897c10"
+    },
+    {
+      "id": "case-05:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "81edc513ead7e8b22406eae3bfc770228ea22f02e4bfe6bc9aa5d9637138b97f",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "d6a4a1bf97d03d50b05186eeba945dd6",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "verified_compatible_registry_capture",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "8d11a4b04f0c444cab31152c84e7e74e",
+        "stored_payload_bytes_sha256": "6b09292909d6b08a57f6974f81e3f6aefe45ddc3922c11d82a206653458b0a54"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-05:source",
+          "kind": "source_artifact",
+          "sha256": "856b7f0fbb5b9c8592fa33393a490564db2a34de5d78ef2364b5c410cdc417c5"
+        },
+        {
+          "id": "case-05:rubric",
+          "kind": "source_artifact",
+          "sha256": "9e8ff1c994d3fbf73319a73c82642d8c57c7105025ce4cad708def5e4a897c10"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715371+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "03e6ab5124f4b1829419b91f5c4b88cca895e7b0cbbb9286fb796dd73910df24"
+    },
+    {
+      "id": "case-05:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "4a8b9dac13853950638a189ee4594289b21ed0899210d069640d2772ac19c221",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-05:source",
+          "kind": "source_artifact",
+          "sha256": "856b7f0fbb5b9c8592fa33393a490564db2a34de5d78ef2364b5c410cdc417c5"
+        },
+        {
+          "id": "case-05:rubric",
+          "kind": "source_artifact",
+          "sha256": "9e8ff1c994d3fbf73319a73c82642d8c57c7105025ce4cad708def5e4a897c10"
+        },
+        {
+          "id": "case-05:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "03e6ab5124f4b1829419b91f5c4b88cca895e7b0cbbb9286fb796dd73910df24"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715431+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "f9bbfdf50751ae6eb856c14cf4b5e4a50a36e626c93acb519f4a732a0c931456"
+    },
+    {
+      "id": "case-06:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "ec1701f0a98163e0c6739c24142977998dd41a2f9055b32d90bed535851bdcac",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715520+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "President Donald J. Trump",
+        "content_hash": "ec1701f0a98163e0c6739c24142977998dd41a2f9055b32d90bed535851bdcac",
+        "id": "5186886630d8bcc712beda9f26fd497a",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK",
+        "source_id": "us03",
+        "url": "https://www.govinfo.gov/content/pkg/DCPD-202500196/html/DCPD-202500196.htm"
+      },
+      "lineage_sha256": "8dd9d936c3be3530234a29ef18e4c1f637562277c08955af0b99c399b3157f13"
+    },
+    {
+      "id": "case-06:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "d5034e4df211dcf8ae4c8c50530873405424b4097390293f5c58695b4c282540",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "political-framing/expressed_policy_position",
+        "origin": "verified_compatible_registry_capture"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715563+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "106d0c7fbf3a214a98bd50a4974974eb0147af510a651f955b4a70d6ce0b540d"
+    },
+    {
+      "id": "case-06:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "82d57d7072fd883c2f14285809d911b617467e6ba5f2d9f2683b50cbbca30577",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "2d44e6da2e3f70cb876ef6f1bdc4301b",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "verified_compatible_registry_capture",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "8d11a4b04f0c444cab31152c84e7e74e",
+        "stored_payload_bytes_sha256": "990a1caa1fb43c98ebba28a6877070b262ba58b48e29080717ba370e518b98ff"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-06:source",
+          "kind": "source_artifact",
+          "sha256": "8dd9d936c3be3530234a29ef18e4c1f637562277c08955af0b99c399b3157f13"
+        },
+        {
+          "id": "case-06:rubric",
+          "kind": "source_artifact",
+          "sha256": "106d0c7fbf3a214a98bd50a4974974eb0147af510a651f955b4a70d6ce0b540d"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715593+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "1df9d49c2b4784c192704f0969dcfcafb5e4a47ffde9a143d954c0d5feb9b113"
+    },
+    {
+      "id": "case-06:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "2e02f525c62791c6a676b59522cc3e1534b63b0b2b5652ae1d9a6d7e40d70291",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-06:source",
+          "kind": "source_artifact",
+          "sha256": "8dd9d936c3be3530234a29ef18e4c1f637562277c08955af0b99c399b3157f13"
+        },
+        {
+          "id": "case-06:rubric",
+          "kind": "source_artifact",
+          "sha256": "106d0c7fbf3a214a98bd50a4974974eb0147af510a651f955b4a70d6ce0b540d"
+        },
+        {
+          "id": "case-06:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "1df9d49c2b4784c192704f0969dcfcafb5e4a47ffde9a143d954c0d5feb9b113"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715650+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "206a7c95cea51d68b7705985d6305f43038d5bc5eb6d0596a952ac3f15c2398e"
+    },
+    {
+      "id": "case-07:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "6d38441c34bc7f965f72f381e05ac305c88963677ea832c9b7800e743d1f2222",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715817+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "Ministry of Housing, Communities and Local Government",
+        "content_hash": "6d38441c34bc7f965f72f381e05ac305c88963677ea832c9b7800e743d1f2222",
+        "id": "1a82c53d719bc1201c329ddee7c2e4ce",
+        "license": "OGL-UK-3.0",
+        "source_id": "uk10",
+        "url": "https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility"
+      },
+      "lineage_sha256": "b3e95e9043c046990bf1fa6a68e15f0c2fb1400700161a2b8e489e885bee3ac9"
+    },
+    {
+      "id": "case-07:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "5458e04816ac269bbba38bd69358a433bb5bc974653a826089cba020eb103dcf",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "anti-muslim-racism/racialization",
+        "origin": "verified_compatible_registry_capture"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715858+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "04de59f99629467b78fd957a8ca73ccda784db2e8fb06cccede0fe51012ab39b"
+    },
+    {
+      "id": "case-07:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "38580ca703dcd90edaf9ed7537c06ec15128f2a80c02f8a8edc50d5318487a17",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "57a24379102d33225e54ecc89a0f444e",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "verified_compatible_registry_capture",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "074539f031e64dc28f03384481563a85",
+        "stored_payload_bytes_sha256": "3400166588604a1e54436e84b1d1217f00774ba6b0886aad6ae1532ed9b38ee4"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-07:source",
+          "kind": "source_artifact",
+          "sha256": "b3e95e9043c046990bf1fa6a68e15f0c2fb1400700161a2b8e489e885bee3ac9"
+        },
+        {
+          "id": "case-07:rubric",
+          "kind": "source_artifact",
+          "sha256": "04de59f99629467b78fd957a8ca73ccda784db2e8fb06cccede0fe51012ab39b"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715887+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "ac770b56c8e76b7f8e82fd36cd3f1fef7fb97debc05ab254a49976ce597252ea"
+    },
+    {
+      "id": "case-07:comparison-rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "2d2e62cd29c8057c663dab493ff23275ce10f5f7ccfc4c67dd390f372c6eeb23",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_comparison_rubric",
+        "criterion_key": "anti-muslim-racism/racialization",
+        "origin": "frozen_run_lens_snapshot"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.715979+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "aec4a9b7738afeab10e013cd8f067e8f0d3cd241c1930724efce33e4c3a2ffd4"
+    },
+    {
+      "id": "case-07:comparison",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "34da9a37651874612db3b9b4e221cc101aab169d3ecd08de1d62212d29188862",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "ca3e1d917bef47607e80e40a68d62bc1",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "software_attached_unit_anchors",
+          "framework": "frozen_run_lens_snapshot",
+          "model_interpretation": "not_recorded",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "ad5046e9849d4392a8160d55de9beacd"
+      },
+      "origin_model": {
+        "model": "@cf/openai/gpt-oss-120b",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-07:source",
+          "kind": "source_artifact",
+          "sha256": "b3e95e9043c046990bf1fa6a68e15f0c2fb1400700161a2b8e489e885bee3ac9"
+        },
+        {
+          "id": "case-07:comparison-rubric",
+          "kind": "source_artifact",
+          "sha256": "aec4a9b7738afeab10e013cd8f067e8f0d3cd241c1930724efce33e4c3a2ffd4"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.716013+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "da41a52469140dd4213768830ef1c35e81fa1923eba9c930a04c9ee19534bda4"
+    },
+    {
+      "id": "case-07:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "0b9cb4a5e4b9d1a3bb0f3d1abd171d018ec874970e863fb2c924dab3048e1ca9",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-07:source",
+          "kind": "source_artifact",
+          "sha256": "b3e95e9043c046990bf1fa6a68e15f0c2fb1400700161a2b8e489e885bee3ac9"
+        },
+        {
+          "id": "case-07:rubric",
+          "kind": "source_artifact",
+          "sha256": "04de59f99629467b78fd957a8ca73ccda784db2e8fb06cccede0fe51012ab39b"
+        },
+        {
+          "id": "case-07:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "ac770b56c8e76b7f8e82fd36cd3f1fef7fb97debc05ab254a49976ce597252ea"
+        },
+        {
+          "id": "case-07:comparison",
+          "kind": "persisted_assessment",
+          "sha256": "da41a52469140dd4213768830ef1c35e81fa1923eba9c930a04c9ee19534bda4"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.716071+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "b76c35cccb6716cce3b2efd86d4124e9f8dd13b9eccba5186eeff75e28c83111"
+    },
+    {
+      "id": "case-08:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "dc043598fbaf8bd3198fd068da3d7d89cb179a4849850f67635a39268fb7b722",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.716626+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "Home Office",
+        "content_hash": "dc043598fbaf8bd3198fd068da3d7d89cb179a4849850f67635a39268fb7b722",
+        "id": "de578eab78f7889a36107e13a4e46722",
+        "license": "OGL-UK-3.0",
+        "source_id": "uk04",
+        "url": "https://www.gov.uk/government/statistics/hate-crime-england-and-wales-year-ending-march-2024/hate-crime-england-and-wales-year-ending-march-2024"
+      },
+      "lineage_sha256": "de76564ca9dd047aaffb2a7a31b4b99b7fa6d179aba0866bfde65742accde4ac"
+    },
+    {
+      "id": "case-08:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "37d2797bc8aa448ddd43a217d02e9a3413ebfd10fba06db0e4eac63d599e73a9",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "ihra/israel_related_context",
+        "origin": "verified_compatible_registry_capture"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.716689+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "50420856205360a34779eac270e21dc6bef2679f53031143334c9c674f4d7ebf"
+    },
+    {
+      "id": "case-08:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "e047f90ed09cb39ca5acda7790a066642b1983f3529ebcda27e415ef01e7d5ec",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "4e5d1bc843d1e80f689cbc23df298a6f",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "software_attached_unit_anchors",
+          "framework": "verified_compatible_registry_capture",
+          "model_interpretation": "not_recorded",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "074539f031e64dc28f03384481563a85",
+        "stored_payload_bytes_sha256": "b4710feccad796cc6e837bee78237ce69d113c1dbdb9070550a3dad2d8d3e4e7"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-08:source",
+          "kind": "source_artifact",
+          "sha256": "de76564ca9dd047aaffb2a7a31b4b99b7fa6d179aba0866bfde65742accde4ac"
+        },
+        {
+          "id": "case-08:rubric",
+          "kind": "source_artifact",
+          "sha256": "50420856205360a34779eac270e21dc6bef2679f53031143334c9c674f4d7ebf"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.716721+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "5baa47b5c6e7c3b41e6ee7ed8d1ce3f5c729c95cca5bb8a576a969cbfa20cd59"
+    },
+    {
+      "id": "case-08:comparison-rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "ddf6308c3a15fdbaaf4e4c86e54a6f852f9cd221929d263af7ea40e85d3d38b7",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_comparison_rubric",
+        "criterion_key": "ihra/israel_related_context",
+        "origin": "frozen_run_lens_snapshot"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.716796+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "842473ae502d316d7b2e84e62a20754cff8fad6f02da89f41514d4c3bb8760d3"
+    },
+    {
+      "id": "case-08:comparison",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "d92198426476b8740e398c7cd8d83adc4d3b2f99675ca0703fe4f7aff11c7bdd",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "e5486663af0fb4685a7036b84f05ef36",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "frozen_run_lens_snapshot",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "ad5046e9849d4392a8160d55de9beacd"
+      },
+      "origin_model": {
+        "model": "@cf/openai/gpt-oss-120b",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-08:source",
+          "kind": "source_artifact",
+          "sha256": "de76564ca9dd047aaffb2a7a31b4b99b7fa6d179aba0866bfde65742accde4ac"
+        },
+        {
+          "id": "case-08:comparison-rubric",
+          "kind": "source_artifact",
+          "sha256": "842473ae502d316d7b2e84e62a20754cff8fad6f02da89f41514d4c3bb8760d3"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.716826+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "4c193c29b0e2bb165f49d561ba7f7fdc62c24877eeefa464797417528e84f169"
+    },
+    {
+      "id": "case-08:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "4c38b1840b4ea330eb3bae36ae78218dd3a57ecc3a844fccc2a0f7c17d104e93",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-08:source",
+          "kind": "source_artifact",
+          "sha256": "de76564ca9dd047aaffb2a7a31b4b99b7fa6d179aba0866bfde65742accde4ac"
+        },
+        {
+          "id": "case-08:rubric",
+          "kind": "source_artifact",
+          "sha256": "50420856205360a34779eac270e21dc6bef2679f53031143334c9c674f4d7ebf"
+        },
+        {
+          "id": "case-08:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "5baa47b5c6e7c3b41e6ee7ed8d1ce3f5c729c95cca5bb8a576a969cbfa20cd59"
+        },
+        {
+          "id": "case-08:comparison",
+          "kind": "persisted_assessment",
+          "sha256": "4c193c29b0e2bb165f49d561ba7f7fdc62c24877eeefa464797417528e84f169"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.716880+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "67139d63fb5555cf3a31000ff680406f072da73b09fc7a6129373b63eb14c271"
+    },
+    {
+      "id": "case-09:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "4a791b1640104170d7e882c2515128103368e14a87bb5e5220b64da9f828d556",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.720757+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "William Shawcross CVO",
+        "content_hash": "4a791b1640104170d7e882c2515128103368e14a87bb5e5220b64da9f828d556",
+        "id": "8034cbd01d8c663088d89d271ef48dd9",
+        "license": "OGL-UK-3.0",
+        "source_id": "uk01",
+        "url": "https://www.gov.uk/government/publications/independent-review-of-prevents-report-and-government-response/independent-review-of-prevent-accessible"
+      },
+      "lineage_sha256": "e02caa3bbdc8c75808ec346f890f14897fc3721870d1387c96864e273df11268"
+    },
+    {
+      "id": "case-09:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "0f41cc8c71c49dbe3893e80c9746cc3eab8dfcf06fcf66494499adbd8220b4a6",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "nexus/anti_jewish_tropes",
+        "origin": "verified_compatible_registry_capture"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.720842+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "dbd4fe44f53ad1981ccbcc097b31780bdfa80ba75a138d8e0bb02a4a6e86ff3b"
+    },
+    {
+      "id": "case-09:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "a4464cb8d60c0fed4df1891e8aac77c7f3d663cf16681734f86bc722c47886bc",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "7b9c226fb4229c85c248fe974f801493",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "verified_compatible_registry_capture",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "074539f031e64dc28f03384481563a85",
+        "stored_payload_bytes_sha256": "b8bc60d0bb242645c31b362d77b024edb2e05845fffb46751665882150b1362b"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-09:source",
+          "kind": "source_artifact",
+          "sha256": "e02caa3bbdc8c75808ec346f890f14897fc3721870d1387c96864e273df11268"
+        },
+        {
+          "id": "case-09:rubric",
+          "kind": "source_artifact",
+          "sha256": "dbd4fe44f53ad1981ccbcc097b31780bdfa80ba75a138d8e0bb02a4a6e86ff3b"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.720879+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "e1d263b2eb1422422ffc27824e10b890ef3c6888aa9236102b12c046c940673c"
+    },
+    {
+      "id": "case-09:comparison-rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "43357f5f399df2725f311b75884c3603268b992551b8c6efd39cace0b1542dd4",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_comparison_rubric",
+        "criterion_key": "nexus/anti_jewish_tropes",
+        "origin": "frozen_run_lens_snapshot"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.720977+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "344f587bcbfe28e42f1b4c0f39cf3c0008a98c1489d255f45c54cac9c3161ddd"
+    },
+    {
+      "id": "case-09:comparison",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "1a64be40c3b4e7e114cbea7b29ec0650e36dfe14917cfb24abc93f16f28c9604",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "66ef20dd11e36b743f09674304633182",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "frozen_run_lens_snapshot",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "ad5046e9849d4392a8160d55de9beacd"
+      },
+      "origin_model": {
+        "model": "@cf/openai/gpt-oss-120b",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-09:source",
+          "kind": "source_artifact",
+          "sha256": "e02caa3bbdc8c75808ec346f890f14897fc3721870d1387c96864e273df11268"
+        },
+        {
+          "id": "case-09:comparison-rubric",
+          "kind": "source_artifact",
+          "sha256": "344f587bcbfe28e42f1b4c0f39cf3c0008a98c1489d255f45c54cac9c3161ddd"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.721010+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "5702007af60baf059b952a86857d63e712ac26e69ad730b37b1cac71bbcbde51"
+    },
+    {
+      "id": "case-09:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "ef38d545294baa0ad78db01380ec746e427ff4b4c071cd60407496aa58d4fd74",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-09:source",
+          "kind": "source_artifact",
+          "sha256": "e02caa3bbdc8c75808ec346f890f14897fc3721870d1387c96864e273df11268"
+        },
+        {
+          "id": "case-09:rubric",
+          "kind": "source_artifact",
+          "sha256": "dbd4fe44f53ad1981ccbcc097b31780bdfa80ba75a138d8e0bb02a4a6e86ff3b"
+        },
+        {
+          "id": "case-09:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "e1d263b2eb1422422ffc27824e10b890ef3c6888aa9236102b12c046c940673c"
+        },
+        {
+          "id": "case-09:comparison",
+          "kind": "persisted_assessment",
+          "sha256": "5702007af60baf059b952a86857d63e712ac26e69ad730b37b1cac71bbcbde51"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.721068+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "2cb206b158ab8d50058d9679d7ab056b27d7dbe70d3677407ce4ab57bb209270"
+    },
+    {
+      "id": "case-10:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "8cfa27b8836650fc6ee21660f1aa94cf041e83d8f316f86d6347db344dbe5ef2",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.721238+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "Saoussen Ben Cheikh",
+        "content_hash": "8cfa27b8836650fc6ee21660f1aa94cf041e83d8f316f86d6347db344dbe5ef2",
+        "id": "17c50836107d8fa4412e54c31fd6de8c",
+        "license": "CC-BY-3.0",
+        "source_id": "gv-708111",
+        "url": "https://globalvoices.org/2020/06/10/information-warfare-covid-19s-other-battleground-in-the-middle-east/"
+      },
+      "lineage_sha256": "9b10f1ca532e6ed33b4c836be324bcd93b820c7e3b76034a1db8289a9cba704f"
+    },
+    {
+      "id": "case-10:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "c0ea70f2243e0cbbddfc855e940e942fc71acacae4d6b5d783802b67f3b28208",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "ihra/anti_jewish_generalization",
+        "origin": "frozen_run_lens_snapshot"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.721370+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "2820b9119886715266b299fdbc97a46d4b3cf2061b5ce308ff4e7227e952c092"
+    },
+    {
+      "id": "case-10:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "799409716566391622fb7900854f5708f0cee98f83fd7eef483e99ae59b1a38b",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "87cdc2ef04106000a28088428d071791",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "frozen_run_lens_snapshot",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+        "stored_payload_bytes_sha256": "63e03b9d0e6daf636eb63c39fa93eacbf46e6218fcc381bf219c351056e60ef1"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-10:source",
+          "kind": "source_artifact",
+          "sha256": "9b10f1ca532e6ed33b4c836be324bcd93b820c7e3b76034a1db8289a9cba704f"
+        },
+        {
+          "id": "case-10:rubric",
+          "kind": "source_artifact",
+          "sha256": "2820b9119886715266b299fdbc97a46d4b3cf2061b5ce308ff4e7227e952c092"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.721414+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "4ffc9622a1a8824326c312f5d95e12245d520e364b7770566950097cc97b7720"
+    },
+    {
+      "id": "case-10:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "810cd6a889adbfdc5875089caea1b884d7901a2dc47bd3d443a1d7cf46e2aaa4",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-10:source",
+          "kind": "source_artifact",
+          "sha256": "9b10f1ca532e6ed33b4c836be324bcd93b820c7e3b76034a1db8289a9cba704f"
+        },
+        {
+          "id": "case-10:rubric",
+          "kind": "source_artifact",
+          "sha256": "2820b9119886715266b299fdbc97a46d4b3cf2061b5ce308ff4e7227e952c092"
+        },
+        {
+          "id": "case-10:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "4ffc9622a1a8824326c312f5d95e12245d520e364b7770566950097cc97b7720"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.721479+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "abdadbea58368d0ab34187f5e78f906103bcdd291ad1172fdd267264e9c899d7"
+    },
+    {
+      "id": "case-11:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "9a2cafbb3dafc4f4d2f33bf844bdaa45c96e5f36af0eb156a43986e718d3c3c3",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.721659+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "Maxim Edwards",
+        "content_hash": "9a2cafbb3dafc4f4d2f33bf844bdaa45c96e5f36af0eb156a43986e718d3c3c3",
+        "id": "3e369d02d1e9693d475da779a15f9209",
+        "license": "CC-BY-3.0",
+        "source_id": "gv-721811",
+        "url": "https://globalvoices.org/2020/11/12/conflict-nagorno-karabakh-raises-scrutiny-israeli-arms-azerbaijan/"
+      },
+      "lineage_sha256": "407df7cf4bdfd31aea5a9ab21e7ed6084677e08ef0e9751e7d42ae049f8a0426"
+    },
+    {
+      "id": "case-11:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "e7fd34e50773ce3843691a975b0d207e0f5a25d05d227d4a18ee2ce10b3da3b3",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "jda/political_expression_boundary",
+        "origin": "frozen_run_lens_snapshot"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.721704+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "9f354e9f23616e57424f347ba34db4602f59d8e88a56f17d761d633bb18765fc"
+    },
+    {
+      "id": "case-11:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "bb6d3c891fc4c9c2b90ef704328d884a1377de06d2b49f5c2923c11da3ec7eaa",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "7df34e61b1b71262af27473c96b579c3",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "frozen_run_lens_snapshot",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+        "stored_payload_bytes_sha256": "f50077ccf2ca56e9cc2cbc607fc79c057ce3dfd2bb1bf6893832f4c4cbc6aabf"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-11:source",
+          "kind": "source_artifact",
+          "sha256": "407df7cf4bdfd31aea5a9ab21e7ed6084677e08ef0e9751e7d42ae049f8a0426"
+        },
+        {
+          "id": "case-11:rubric",
+          "kind": "source_artifact",
+          "sha256": "9f354e9f23616e57424f347ba34db4602f59d8e88a56f17d761d633bb18765fc"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.721733+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "c5b2f70ec1efadae73d99eae4fc540f730c3db6a02083c7e914c113efb52e41c"
+    },
+    {
+      "id": "case-11:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "d6d5669c921dbbd5dfa1b14c403cdaefc18981fbcdc35fae7d5fbdd33c63c97a",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-11:source",
+          "kind": "source_artifact",
+          "sha256": "407df7cf4bdfd31aea5a9ab21e7ed6084677e08ef0e9751e7d42ae049f8a0426"
+        },
+        {
+          "id": "case-11:rubric",
+          "kind": "source_artifact",
+          "sha256": "9f354e9f23616e57424f347ba34db4602f59d8e88a56f17d761d633bb18765fc"
+        },
+        {
+          "id": "case-11:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "c5b2f70ec1efadae73d99eae4fc540f730c3db6a02083c7e914c113efb52e41c"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.721792+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "ff6f75766f15c12f8f59aff3187ac8d4e7334957f7e034853696e98e3552f137"
+    },
+    {
+      "id": "case-12:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "6c147ac74f215dc8ee22a0b0ae81b1aa129ca7a34a87fd96f67ef865c773f62e",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722115+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "Elmira Lyapina",
+        "content_hash": "6c147ac74f215dc8ee22a0b0ae81b1aa129ca7a34a87fd96f67ef865c773f62e",
+        "id": "b63dc5dad787145a55b94510112462e3",
+        "license": "CC-BY-3.0",
+        "source_id": "gv-736381",
+        "url": "https://globalvoices.org/2021/05/29/czechias-muslim-women-celebrated-ramadan-with-mixed-experiences/"
+      },
+      "lineage_sha256": "6de21fc29bc1035f1684ae15b1f8726ce80392765b4c7b9c0921006d4180fd83"
+    },
+    {
+      "id": "case-12:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "865f7fedd1632aa4947e1d36d1857539802be8a7fd5b3ff12972b22f66891a03",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "anti-muslim-racism/institutional_pattern",
+        "origin": "frozen_run_lens_snapshot"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722183+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "69a0a2fd0d3468aedd96b1b4305642819bd18895ccf41b0c8517bb3362c49ef2"
+    },
+    {
+      "id": "case-12:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "7806157d3cbfa3f17ec5200d9178357b3e9b5e66c8865b63d6a3dc959e1fbb5e",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "09f824e6a4af44ac297dc8ec25fc4c85",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "persisted_detail_sentence_ids",
+          "framework": "frozen_run_lens_snapshot",
+          "model_interpretation": "persisted_model_detail",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+        "stored_payload_bytes_sha256": "aa7bab8ce3765dab68914695df0ba9803718fc73b0630c35777cbd737a552040"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-12:source",
+          "kind": "source_artifact",
+          "sha256": "6de21fc29bc1035f1684ae15b1f8726ce80392765b4c7b9c0921006d4180fd83"
+        },
+        {
+          "id": "case-12:rubric",
+          "kind": "source_artifact",
+          "sha256": "69a0a2fd0d3468aedd96b1b4305642819bd18895ccf41b0c8517bb3362c49ef2"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722216+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "4cc141f0cae300b51780fa7706a58df19ee3c1e944b307fdcaf14eb00c9f2bb6"
+    },
+    {
+      "id": "case-12:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "6910298dff55af09ee3d1361e45ac6251188f052d87a6e170fbee9258407c843",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-12:source",
+          "kind": "source_artifact",
+          "sha256": "6de21fc29bc1035f1684ae15b1f8726ce80392765b4c7b9c0921006d4180fd83"
+        },
+        {
+          "id": "case-12:rubric",
+          "kind": "source_artifact",
+          "sha256": "69a0a2fd0d3468aedd96b1b4305642819bd18895ccf41b0c8517bb3362c49ef2"
+        },
+        {
+          "id": "case-12:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "4cc141f0cae300b51780fa7706a58df19ee3c1e944b307fdcaf14eb00c9f2bb6"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722274+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "55f217f36e22a4a0ecbec0288dfe6bdd005e176690c52970d97ff37acdc97199"
+    },
+    {
+      "id": "case-13:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "9b0f17e8a85d4b3bd943836703f6c9805d438eedb8bf199b9f0c14a0dde04569",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722402+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "Janine Mendes-Franco",
+        "content_hash": "9b0f17e8a85d4b3bd943836703f6c9805d438eedb8bf199b9f0c14a0dde04569",
+        "id": "2a0212d6a0146a9e3af8343af6e5d2df",
+        "license": "CC-BY-3.0",
+        "source_id": "gv-719689",
+        "url": "https://globalvoices.org/2020/09/29/covid-19-causes-trinidad-and-tobago-to-cancel-its-carnival-for-2021/"
+      },
+      "lineage_sha256": "906cbdd515d1a0a589bb70443b897a2e743cd0df240566eee10bed047d65d0bc"
+    },
+    {
+      "id": "case-13:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "fc5015100b9b036a49a6659d405fcc2c4e015a4c81c42c1f33b6872971487e1c",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "jda/jews_as_jews",
+        "origin": "frozen_run_lens_snapshot"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722447+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "cac24fbcdea5cdcffc7c267b0ffec92e6ea4c9c0445ab9080918d4aa588b34ef"
+    },
+    {
+      "id": "case-13:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "67dbd17434023e3b2180e0d2b6c352741165d9939e3a4aa4196c38d3e088573d",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "00005ffc46023612f8d143b4a3bdc641",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "software_attached_unit_anchors",
+          "framework": "frozen_run_lens_snapshot",
+          "model_interpretation": "not_recorded",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+        "stored_payload_bytes_sha256": "cf86f6a328d2c58cd7c3d3978685ea9ab8d0a7ecfd5611262128ef8ccb655be2"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-13:source",
+          "kind": "source_artifact",
+          "sha256": "906cbdd515d1a0a589bb70443b897a2e743cd0df240566eee10bed047d65d0bc"
+        },
+        {
+          "id": "case-13:rubric",
+          "kind": "source_artifact",
+          "sha256": "cac24fbcdea5cdcffc7c267b0ffec92e6ea4c9c0445ab9080918d4aa588b34ef"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722491+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "7692cfb52d29c6d3c3bd2780009641e4e9b39212c81aa07563f630ae4c4874b7"
+    },
+    {
+      "id": "case-13:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "4c8cd8e9239cc2b5b90842ed17ef07db238b71f78b289ceece8321dd7787de1b",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-13:source",
+          "kind": "source_artifact",
+          "sha256": "906cbdd515d1a0a589bb70443b897a2e743cd0df240566eee10bed047d65d0bc"
+        },
+        {
+          "id": "case-13:rubric",
+          "kind": "source_artifact",
+          "sha256": "cac24fbcdea5cdcffc7c267b0ffec92e6ea4c9c0445ab9080918d4aa588b34ef"
+        },
+        {
+          "id": "case-13:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "7692cfb52d29c6d3c3bd2780009641e4e9b39212c81aa07563f630ae4c4874b7"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722551+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "e6eaa6dbdc4c0152fe00487dd48dcb4150639cb9100304fc5fe35e417534fa63"
+    },
+    {
+      "id": "case-14:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "277b9d56bd564525617b44ee178c2d177e61e491c4bbf159e826790940376f03",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722666+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "Amilcar Sanatan",
+        "content_hash": "277b9d56bd564525617b44ee178c2d177e61e491c4bbf159e826790940376f03",
+        "id": "eefd27b93de2e499fdbdc8269f7c3313",
+        "license": "CC-BY-3.0",
+        "source_id": "gv-706103",
+        "url": "https://globalvoices.org/2020/05/08/covid-19-and-trinidad-and-tobago-educations-digital-divide/"
+      },
+      "lineage_sha256": "395f34d777cc9afa69a8ad87214089d9c32fddf5c797d683a422b3a98e4691b5"
+    },
+    {
+      "id": "case-14:rubric",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "865f7fedd1632aa4947e1d36d1857539802be8a7fd5b3ff12972b22f66891a03",
+      "kind": "source_artifact",
+      "metadata": {
+        "artifact_role": "frozen_rubric",
+        "criterion_key": "anti-muslim-racism/institutional_pattern",
+        "origin": "frozen_run_lens_snapshot"
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722708+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "c1ccaec666d54e2765170bcaaf85c1402d11c99c5e56eb28efd5c301113f63de"
+    },
+    {
+      "id": "case-14:assessment",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "5e2ece10f2b2eb82314d407c60943777f1996bea63e3c258202a19e9f9d85e9f",
+      "kind": "persisted_assessment",
+      "metadata": {
+        "assessment_id": "000211f6208aa907d36a22e3b06239f6",
+        "origins": {
+          "editorial": "ai_authored_reading_guidance",
+          "evidence_selection": "software_attached_unit_anchors",
+          "framework": "frozen_run_lens_snapshot",
+          "model_interpretation": "not_recorded",
+          "request_capture": "not_recorded",
+          "review": "no_independent_review",
+          "source_text": "validated_frozen_extraction"
+        },
+        "raw_provider_response": "not_recorded",
+        "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+        "stored_payload_bytes_sha256": "0df2cf1f13153262b96b81975806a9bff4d848decf3464c5e7ffdd9cbefb8d73"
+      },
+      "origin_model": {
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "prompt_version": "contextual-decisions-3.2.1",
+        "provider": "cloudflare",
+        "quantization": "provider_managed",
+        "response_schema_version": "source-vectors-3.2",
+        "revision": "unresolved"
+      },
+      "origin_template": {
+        "actual_request_available": false,
+        "recorded_prompt_version": "contextual-decisions-3.2.1"
+      },
+      "parents": [
+        {
+          "id": "case-14:source",
+          "kind": "source_artifact",
+          "sha256": "395f34d777cc9afa69a8ad87214089d9c32fddf5c797d683a422b3a98e4691b5"
+        },
+        {
+          "id": "case-14:rubric",
+          "kind": "source_artifact",
+          "sha256": "c1ccaec666d54e2765170bcaaf85c1402d11c99c5e56eb28efd5c301113f63de"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722736+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "a473e24439832eb30966526e231a5fea0a169d2b1a3592237100518b314d6d91"
+    },
+    {
+      "id": "case-14:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "05b89a20ade1de1495ae98708683aa0520fc09073a69697c14df307f2133c768",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-14:source",
+          "kind": "source_artifact",
+          "sha256": "395f34d777cc9afa69a8ad87214089d9c32fddf5c797d683a422b3a98e4691b5"
+        },
+        {
+          "id": "case-14:rubric",
+          "kind": "source_artifact",
+          "sha256": "c1ccaec666d54e2765170bcaaf85c1402d11c99c5e56eb28efd5c301113f63de"
+        },
+        {
+          "id": "case-14:assessment",
+          "kind": "persisted_assessment",
+          "sha256": "a473e24439832eb30966526e231a5fea0a169d2b1a3592237100518b314d6d91"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.722789+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "541e9f948de3b3fd322576a40433aa6a32337238670a085fe9cdfbd855c755f9"
+    },
+    {
+      "id": "case-15:source",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "49de1a3734b26231bbdf850c27097435abec1d40100cefd5dfd81fc370c2f368",
+      "kind": "source_artifact",
+      "metadata": {},
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.725453+00:00",
+      "schema_version": "0.4",
+      "source": {
+        "author": "Equal Employment Opportunity Commission",
+        "content_hash": "49de1a3734b26231bbdf850c27097435abec1d40100cefd5dfd81fc370c2f368",
+        "id": "ce6820253dd6abda147083371c76ee13",
+        "license": "US-PUBLIC-DOMAIN-GOVERNMENT-WORK",
+        "source_id": "us05",
+        "url": "https://www.eeoc.gov/laws/guidance/section-12-religious-discrimination"
+      },
+      "lineage_sha256": "3aa9ca1870d8bbc6cf5f45160d4e324eb671ed103c67eb803d46cd552f18c704"
+    },
+    {
+      "id": "case-15:unresolved-unit",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "66d3eaed63b7ad97facc1ccebdd6d1fa2c0cc65860bdb36dffdcb4daf6a995b8",
+      "kind": "source_artifact",
+      "metadata": {
+        "accepted_result": null,
+        "artifact_role": "unresolved_source_unit_with_recorded_status",
+        "missing_criterion_keys": [
+          "anti-muslim-hostility/discrimination_claim"
+        ]
+      },
+      "origin_model": null,
+      "origin_template": null,
+      "parents": [
+        {
+          "id": "case-15:source",
+          "kind": "source_artifact",
+          "sha256": "3aa9ca1870d8bbc6cf5f45160d4e324eb671ed103c67eb803d46cd552f18c704"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.725735+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "6be48bff286bd5b3703642bfb027a195d8a6b95c64a110ed916b16076a09114a"
+    },
+    {
+      "id": "case-15:editorial",
+      "actor": {
+        "identity": "AI-authored publication guidance; exact authoring model identity not captured",
+        "kind": "ai"
+      },
+      "availability": "recorded_artifact",
+      "content_sha256": "7091c1ee6b046551d62b22b6bbb5c3e3e66fa6bb5f4c019029afded18980f687",
+      "kind": "editorial_annotation",
+      "metadata": {
+        "independent_human_review": false
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1"
+      },
+      "parents": [
+        {
+          "id": "case-15:source",
+          "kind": "source_artifact",
+          "sha256": "3aa9ca1870d8bbc6cf5f45160d4e324eb671ed103c67eb803d46cd552f18c704"
+        },
+        {
+          "id": "case-15:unresolved-unit",
+          "kind": "source_artifact",
+          "sha256": "6be48bff286bd5b3703642bfb027a195d8a6b95c64a110ed916b16076a09114a"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.725775+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "b53fd7e7eb9fbb4dc498f0d0d7ae1693d04c1f9b0c99fc8f79b4fdffc817c6a3"
+    },
+    {
+      "id": "examples/v04-reader-explainer.html",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "054f51aefdb5a5c1b9263910a4be8a37a6a76d43e2f35445da784c593e8437ce",
+      "kind": "report_export",
+      "metadata": {
+        "file": "examples/v04-reader-explainer.html",
+        "publication": "Reading public discourse with evidence"
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1",
+        "source_sha256": "4c350d4028cfa3adf58871a4753652048acdf05b61d11b572b8ce4112485e17d"
+      },
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.726083+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "20f97e0d60f954dc02c4df5b36af5788e8f6e4601f80c9ae9a93eb8341d7d075"
+    },
+    {
+      "id": "examples/v04-reader-explainer.pdf",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "f2e64d9503a8150e2643a015a7d4d9bcf24fb9c96c6cc629948425ac4254d7eb",
+      "kind": "report_export",
+      "metadata": {
+        "file": "examples/v04-reader-explainer.pdf",
+        "publication": "Reading public discourse with evidence"
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1",
+        "source_sha256": "4c350d4028cfa3adf58871a4753652048acdf05b61d11b572b8ce4112485e17d"
+      },
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.726250+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "aadf16792bd70cdc91cadaed8cd4152870555c3a81f07e2058ed96022dc1c1aa"
+    },
+    {
+      "id": "docs/v04-reader-explainer.md",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "e03b3d3834b4f3bd266cf8dd39c82c9503a0580a611e2b5592ffd3494e1aec5d",
+      "kind": "report_export",
+      "metadata": {
+        "file": "docs/v04-reader-explainer.md",
+        "publication": "Reading public discourse with evidence"
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1",
+        "source_sha256": "4c350d4028cfa3adf58871a4753652048acdf05b61d11b572b8ce4112485e17d"
+      },
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.726388+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "129893db0707db448e9b3cefe2997d6b13c5192dc520c81a1a2461e01424e001"
+    },
+    {
+      "id": "examples/v04-technical-annex.html",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "bef36522ed48a10b4a3834ddcac01614ebce6b751297d06bd8cf8b54dbe6bd1e",
+      "kind": "report_export",
+      "metadata": {
+        "file": "examples/v04-technical-annex.html",
+        "publication": "Technical annex: evidence, contracts and research"
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1",
+        "source_sha256": "4c350d4028cfa3adf58871a4753652048acdf05b61d11b572b8ce4112485e17d"
+      },
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.726522+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "02ab30724443a75b3b177440858cf92eb425c9b27dbe91457d72ee3d5ad48ff9"
+    },
+    {
+      "id": "examples/v04-technical-annex.pdf",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "49cc1c1f96df348f71312dd405b605b7c15cb028ab02e3139eb470464203339b",
+      "kind": "report_export",
+      "metadata": {
+        "file": "examples/v04-technical-annex.pdf",
+        "publication": "Technical annex: evidence, contracts and research"
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1",
+        "source_sha256": "4c350d4028cfa3adf58871a4753652048acdf05b61d11b572b8ce4112485e17d"
+      },
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.726793+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "b930f17c545ece59ba775fc4a025144081801a6c9e0b492a9173cf36eab65d64"
+    },
+    {
+      "id": "docs/v04-technical-annex.md",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "a6107b929e3803d16eda9e27913cd39b73c83e4702d44de7545600cf861714a4",
+      "kind": "report_export",
+      "metadata": {
+        "file": "docs/v04-technical-annex.md",
+        "publication": "Technical annex: evidence, contracts and research"
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1",
+        "source_sha256": "4c350d4028cfa3adf58871a4753652048acdf05b61d11b572b8ce4112485e17d"
+      },
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.726943+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "9c18a0608ca01d444e34a041df9f2dd87d2a22701e1d7226a498493da25bf017"
+    },
+    {
+      "id": "examples/v04-case-atlas.html",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "6f9f134f0bf5f5fea8a0c05b69cf3de4e151b55d063846acfcd53cbf09ca07cd",
+      "kind": "report_export",
+      "metadata": {
+        "file": "examples/v04-case-atlas.html",
+        "publication": "Fifteen real cases: an evidence atlas"
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1",
+        "source_sha256": "4c350d4028cfa3adf58871a4753652048acdf05b61d11b572b8ce4112485e17d"
+      },
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.727103+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "28e99e1ee4c1a24bf9d657172e9b6d383ee93983a16a667213758be1d49970de"
+    },
+    {
+      "id": "examples/v04-case-atlas.pdf",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "5b114e780d39936797ada21c2d21a41dfe42812140a1cb56ca6afd5bf1b57455",
+      "kind": "report_export",
+      "metadata": {
+        "file": "examples/v04-case-atlas.pdf",
+        "publication": "Fifteen real cases: an evidence atlas"
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1",
+        "source_sha256": "4c350d4028cfa3adf58871a4753652048acdf05b61d11b572b8ce4112485e17d"
+      },
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.727230+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "22237c0b0a063d1c34b87e384f819982b58599929f93e10a8f3af7d93b77dcba"
+    },
+    {
+      "id": "docs/v04-case-atlas.md",
+      "actor": null,
+      "availability": "recorded_artifact",
+      "content_sha256": "3285821065e92b45f24647d8ceb4fda9dc730ac855a143e01393a27bbcc27389",
+      "kind": "report_export",
+      "metadata": {
+        "file": "docs/v04-case-atlas.md",
+        "publication": "Fifteen real cases: an evidence atlas"
+      },
+      "origin_model": null,
+      "origin_template": {
+        "id": "v04-publications-1",
+        "source_sha256": "4c350d4028cfa3adf58871a4753652048acdf05b61d11b572b8ce4112485e17d"
+      },
+      "parents": [
+        {
+          "id": "case-atlas-snapshot",
+          "kind": "source_artifact",
+          "sha256": "26164b238f6fa9f11611f40933eb5151469f80fa8ab09975b60ed61534c70520"
+        }
+      ],
+      "recorded_at": "2026-11-17T16:37:49.727356+00:00",
+      "schema_version": "0.4",
+      "source": null,
+      "lineage_sha256": "f0ae39ac2fd58d096df4222b5911180be69cbf139bf02c9364a1dbe02a855046"
+    }
+  ],
+  "historical_actual_request_capture": {
+    "status": "not_recorded",
+    "actual_request_available": false,
+    "notice": "No contemporaneous request journal exists; a reconstructed template is not the actual request."
+  },
+  "raw_provider_responses": "not_recorded",
+  "notice": "Reconstructed templates, persisted assessments and editorial notes are distinct. No missing historical capture is fabricated."
+}

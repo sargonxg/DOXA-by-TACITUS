@@ -1,0 +1,729 @@
+{
+  "schema_version": "doxa-criterion-source-audit-0.4",
+  "criteria": [
+    {
+      "criterion_key": "discourse/stance",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Identify a position toward a specified proposition, with the speaker and target explicit. Sentiment alone is not stance.",
+      "source_url": "https://aclanthology.org/S16-1003/",
+      "source_locator": "mohammad2016: Task definition: favor/against/neither toward a specified target; stance and sentiment distinction.",
+      "source_summary": "Mohammad2016 task definition: target-specific stance versus sentiment.",
+      "academic_precedents": [
+        {
+          "id": "mohammad2016",
+          "url": "https://aclanthology.org/S16-1003/",
+          "locator": "Task definition: favor/against/neither toward a specified target; stance and sentiment distinction.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "Distinguish the document author from quoted or reported speakers. Absence of a viewpoint is meaningful only against a declared comparator. Do not infer religious or political identities.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "discourse/framing",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Identify how a passage defines a problem, assigns causes or responsibility, invokes a value, or proposes a remedy.",
+      "source_url": "https://fbaum.unc.edu/teaching/articles/J-Communication-1993-Entman.pdf",
+      "source_locator": "entman1993: p52: problem definition, causal interpretation, moral evaluation and treatment recommendation. card2015: Annotation methodology and Table1 framing dimensions; coding disagreement.",
+      "source_summary": "Entman1993 p52 four functions; Card2015 annotation/Table1.",
+      "academic_precedents": [
+        {
+          "id": "entman1993",
+          "url": "https://fbaum.unc.edu/teaching/articles/J-Communication-1993-Entman.pdf",
+          "locator": "p52: problem definition, causal interpretation, moral evaluation and treatment recommendation.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        },
+        {
+          "id": "card2015",
+          "url": "https://aclanthology.org/P15-2072/",
+          "locator": "Annotation methodology and Table1 framing dimensions; coding disagreement.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "Distinguish the document author from quoted or reported speakers. Absence of a viewpoint is meaningful only against a declared comparator. Do not infer religious or political identities.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "discourse/presupposition",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Identify an assumption taken for granted by the wording. Mark it ambiguous where alternative readings exist; do not infer an author's hidden beliefs.",
+      "source_url": "https://aclanthology.org/P13-1162/",
+      "source_locator": "recasens2013: Section2 linguistic indicators; epistemological/framing categories. DOXA's uncertainty requirement is an added operational safeguard.",
+      "source_summary": "Recasens2013 §2.3 epistemological cues; added uncertainty safeguards.",
+      "academic_precedents": [
+        {
+          "id": "recasens2013",
+          "url": "https://aclanthology.org/P13-1162/",
+          "locator": "Section2 linguistic indicators; epistemological/framing categories. DOXA's uncertainty requirement is an added operational safeguard.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "Distinguish the document author from quoted or reported speakers. Absence of a viewpoint is meaningful only against a declared comparator. Do not infer religious or political identities.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "discourse/rhetoric",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Describe an evidenced generalization, contrast, euphemism, moral boundary, metaphor, or appeal to authority; explain its textual function.",
+      "source_url": "https://aclanthology.org/P13-1162/",
+      "source_locator": "recasens2013: Linguistic-feature taxonomy and framing/epistemological distinction; not a complete rhetoric taxonomy. entman1993: pp52–53 salience and framing functions.",
+      "source_summary": "Recasens2013 §2.3 framing/epistemological cues; Entman1993 pp52–53.",
+      "academic_precedents": [
+        {
+          "id": "recasens2013",
+          "url": "https://aclanthology.org/P13-1162/",
+          "locator": "Linguistic-feature taxonomy and framing/epistemological distinction; not a complete rhetoric taxonomy.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        },
+        {
+          "id": "entman1993",
+          "url": "https://fbaum.unc.edu/teaching/articles/J-Communication-1993-Entman.pdf",
+          "locator": "pp52–53 salience and framing functions.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "Distinguish the document author from quoted or reported speakers. Absence of a viewpoint is meaningful only against a declared comparator. Do not infer religious or political identities.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "ihra/anti_jewish_generalization",
+      "frozen_lens_version": "2026-11-operational-1",
+      "kind": "indicator",
+      "operational_description": "Assess hostility, dehumanization, conspiracies, or collective allegations directed at Jews as Jews.",
+      "source_url": "https://holocaustremembrance.com/resources/working-definition-antisemitism",
+      "source_locator": "Definition and examples concerning stereotyping/conspiracies/dehumanization (current-page access limitation retained).",
+      "source_summary": "Definition and examples concerning stereotyping/conspiracies/dehumanization (current-page access limitation retained).",
+      "academic_precedents": [],
+      "source_audit_status": "official_primary_page_access_blocked_in_current_source_audit",
+      "exclusions": "Non-legally binding; examples require overall context; policy criticism similar to other countries is not automatically antisemitic.",
+      "coverage_limit": "DOXA's three criteria are a partial operational summary, not the complete working definition.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "ihra/collective_responsibility",
+      "frozen_lens_version": "2026-11-operational-1",
+      "kind": "indicator",
+      "operational_description": "Assess holding Jewish people collectively responsible for real or alleged acts of another person, group, or Israel.",
+      "source_url": "https://holocaustremembrance.com/resources/working-definition-antisemitism",
+      "source_locator": "Illustrative example holding Jews collectively responsible for Israel (current-page access limitation retained).",
+      "source_summary": "Illustrative example holding Jews collectively responsible for Israel (current-page access limitation retained).",
+      "academic_precedents": [],
+      "source_audit_status": "official_primary_page_access_blocked_in_current_source_audit",
+      "exclusions": "Non-legally binding; examples require overall context; policy criticism similar to other countries is not automatically antisemitic.",
+      "coverage_limit": "DOXA's three criteria are a partial operational summary, not the complete working definition.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "ihra/israel_related_context",
+      "frozen_lens_version": "2026-11-operational-1",
+      "kind": "indicator",
+      "operational_description": "Assess relevant IHRA examples in overall context, including anti-Jewish tropes, discriminatory standards or denial of Jewish self-determination. Do not assume that policy criticism alone satisfies a criterion.",
+      "source_url": "https://holocaustremembrance.com/resources/working-definition-antisemitism",
+      "source_locator": "Context introduction and Israel-related examples; no criterion from Israel mention alone (access limitation retained).",
+      "source_summary": "Context introduction and Israel-related examples; no criterion from Israel mention alone (access limitation retained).",
+      "academic_precedents": [],
+      "source_audit_status": "official_primary_page_access_blocked_in_current_source_audit",
+      "exclusions": "Non-legally binding; examples require overall context; policy criticism similar to other countries is not automatically antisemitic.",
+      "coverage_limit": "DOXA's three criteria are a partial operational summary, not the complete working definition.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "jda/jews_as_jews",
+      "frozen_lens_version": "2021-operational-1",
+      "kind": "indicator",
+      "operational_description": "Assess discrimination, prejudice, hostility, or violence against Jews as Jews or Jewish institutions as Jewish.",
+      "source_url": "https://jerusalemdeclaration.org/",
+      "source_locator": "Definition; General guidelines 1–5.",
+      "source_summary": "Definition; General guidelines 1–5.",
+      "academic_precedents": [],
+      "source_audit_status": "original_definition_guidelines_and_FAQ_read",
+      "exclusions": "Guidelines must be read together in context; political positions are not inherently antisemitic; not designed as a legal/quasi-legal speech code.",
+      "coverage_limit": "Three operational criteria retain the political-expression boundary but do not replace all fifteen guidelines.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "jda/tropes_collective_guilt",
+      "frozen_lens_version": "2021-operational-1",
+      "kind": "indicator",
+      "operational_description": "Assess anti-Jewish conspiracies, essentializing stereotypes, and responsibility assigned to Jews for Israel's conduct.",
+      "source_url": "https://jerusalemdeclaration.org/",
+      "source_locator": "General 2,4; Israel/Palestine 6,7,8.",
+      "source_summary": "General 2,4; Israel/Palestine 6,7,8.",
+      "academic_precedents": [],
+      "source_audit_status": "original_definition_guidelines_and_FAQ_read",
+      "exclusions": "Guidelines must be read together in context; political positions are not inherently antisemitic; not designed as a legal/quasi-legal speech code.",
+      "coverage_limit": "Three operational criteria retain the political-expression boundary but do not replace all fifteen guidelines.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "jda/political_expression_boundary",
+      "frozen_lens_version": "2021-operational-1",
+      "kind": "boundary",
+      "operational_description": "Differentiate anti-Jewish expression from political criticism. BDS, anti-Zionism, constitutional alternatives securing equality, and disproportionate criticism are not inherently antisemitic under this framework.",
+      "source_url": "https://jerusalemdeclaration.org/",
+      "source_locator": "Guidelines 11–15 read together with 6–10; FAQ on free debate/legal use.",
+      "source_summary": "Guidelines 11–15 read together with 6–10; FAQ on free debate/legal use.",
+      "academic_precedents": [],
+      "source_audit_status": "original_definition_guidelines_and_FAQ_read",
+      "exclusions": "Guidelines must be read together in context; political positions are not inherently antisemitic; not designed as a legal/quasi-legal speech code.",
+      "coverage_limit": "Three operational criteria retain the political-expression boundary but do not replace all fifteen guidelines.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "nexus/anti_jewish_tropes",
+      "frozen_lens_version": "2024-06-operational-1",
+      "kind": "indicator",
+      "operational_description": "Assess stereotypical assertions, conspiracies, demonization, or unequal treatment directed at Jews as Jews.",
+      "source_url": "https://nexusproject.us/nexus-resources/the-nexus-document/",
+      "source_locator": "What Is Antisemitic? 2,3; definition.",
+      "source_summary": "What Is Antisemitic? 2,3; definition.",
+      "academic_precedents": [],
+      "source_audit_status": "original_definition_and_both_numbered_sections_read",
+      "exclusions": "Political opposition and disproportionate attention are not prima facie proof; standards and source context matter.",
+      "coverage_limit": "Three operational criteria; no vote across frameworks and no legal determination.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "nexus/collective_guilt",
+      "frozen_lens_version": "2024-06-operational-1",
+      "kind": "indicator",
+      "operational_description": "Assess blaming Jews collectively for Israel or presuming Jewish individuals are agents of Israel.",
+      "source_url": "https://nexusproject.us/nexus-resources/the-nexus-document/",
+      "source_locator": "What Is Antisemitic? 3(c),4.",
+      "source_summary": "What Is Antisemitic? 3(c),4.",
+      "academic_precedents": [],
+      "source_audit_status": "original_definition_and_both_numbered_sections_read",
+      "exclusions": "Political opposition and disproportionate attention are not prima facie proof; standards and source context matter.",
+      "coverage_limit": "Three operational criteria; no vote across frameworks and no legal determination.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "nexus/opposition_boundary",
+      "frozen_lens_version": "2024-06-operational-1",
+      "kind": "boundary",
+      "operational_description": "Distinguish hostility to Jews from criticism of Israel or Zionism. Disproportionate attention to Israel is not prima facie proof of antisemitism.",
+      "source_url": "https://nexusproject.us/nexus-resources/the-nexus-document/",
+      "source_locator": "What Is Not Antisemitic? 1,3,4,5.",
+      "source_summary": "What Is Not Antisemitic? 1,3,4,5.",
+      "academic_precedents": [],
+      "source_audit_status": "original_definition_and_both_numbered_sections_read",
+      "exclusions": "Political opposition and disproportionate attention are not prima facie proof; standards and source context matter.",
+      "coverage_limit": "Three operational criteria; no vote across frameworks and no legal determination.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "anti-muslim-hostility/targeted_hostility",
+      "frozen_lens_version": "2026-03-operational-1",
+      "kind": "indicator",
+      "operational_description": "Identify evidenced threatening, abusive, or hostile expression targeting people because they are Muslim or perceived to be Muslim.",
+      "source_url": "https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility",
+      "source_locator": "Section 6, first definition paragraph; section 8 context and protected-expression conditions.",
+      "source_summary": "Section 6, first definition paragraph; section 8 context and protected-expression conditions.",
+      "academic_precedents": [],
+      "source_audit_status": "original_sections_6_7_8_read",
+      "exclusions": "England; non-statutory; no change to criminal/equality law; criticism/ridicule of religion protected; required intent/unlawfulness cannot be presumed.",
+      "coverage_limit": "Three textual operational criteria cannot establish every legal/contextual condition from one passage.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "anti-muslim-hostility/stereotyping_and_intent",
+      "frozen_lens_version": "2026-03-operational-1",
+      "kind": "indicator",
+      "operational_description": "Assess stereotyping intended to encourage hatred of Muslims. If intent is not established by context, explicitly mark insufficient_context rather than claiming it.",
+      "source_url": "https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility",
+      "source_locator": "Section 6, second definition paragraph; section 8 discussion of intention and non-criminal conduct.",
+      "source_summary": "Section 6, second definition paragraph; section 8 discussion of intention and non-criminal conduct.",
+      "academic_precedents": [],
+      "source_audit_status": "original_sections_6_7_8_read",
+      "exclusions": "England; non-statutory; no change to criminal/equality law; criticism/ridicule of religion protected; required intent/unlawfulness cannot be presumed.",
+      "coverage_limit": "Three textual operational criteria cannot establish every legal/contextual condition from one passage.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "anti-muslim-hostility/discrimination_claim",
+      "frozen_lens_version": "2026-03-operational-1",
+      "kind": "indicator",
+      "operational_description": "Identify stated exclusion or unequal treatment directed at Muslims; do not pronounce legal unlawfulness from a passage.",
+      "source_url": "https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility",
+      "source_locator": "Section 6, third definition paragraph; section 8 deliberately targeted subset of unlawful discrimination.",
+      "source_summary": "Section 6, third definition paragraph; section 8 deliberately targeted subset of unlawful discrimination.",
+      "academic_precedents": [],
+      "source_audit_status": "original_sections_6_7_8_read",
+      "exclusions": "England; non-statutory; no change to criminal/equality law; criticism/ridicule of religion protected; required intent/unlawfulness cannot be presumed.",
+      "coverage_limit": "Three textual operational criteria cannot establish every legal/contextual condition from one passage.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "anti-muslim-racism/racialization",
+      "frozen_lens_version": "2025-operational-1",
+      "kind": "indicator",
+      "operational_description": "Assess treating Muslims or perceived Muslims as a homogeneous, inferior, threatening, or inherently suspect population.",
+      "source_url": "https://www.runnymedetrust.org/publications/islamophobia-towards-a-working-definition",
+      "source_locator": "PDF p4/printed p3 longer definition and examples; PDF pp5–7 racialization discussion.",
+      "source_summary": "PDF p4/printed p3 longer definition and examples; PDF pp5–7 racialization discussion.",
+      "academic_precedents": [],
+      "source_audit_status": "original_19_page_briefing_relevant_sections_read",
+      "exclusions": "Protect Muslims/perceived Muslims rather than immunize Islam or governments from criticism; structural effects need not require deliberate intent; a paragraph does not establish a population-level pattern.",
+      "coverage_limit": "Partial operationalization. Intersectionality, policy evidence and comparable outcomes require additional evidence. Full PDF is linked, not redistributed.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "anti-muslim-racism/exclusion",
+      "frozen_lens_version": "2025-operational-1",
+      "kind": "indicator",
+      "operational_description": "Identify expressed exclusion, discriminatory expectations, or restrictions attached to Muslim identity.",
+      "source_url": "https://www.runnymedetrust.org/publications/islamophobia-towards-a-working-definition",
+      "source_locator": "PDF p4/printed p3 longer definition; PDF pp7–10 institutional and structural forms.",
+      "source_summary": "PDF p4/printed p3 longer definition; PDF pp7–10 institutional and structural forms.",
+      "academic_precedents": [],
+      "source_audit_status": "original_19_page_briefing_relevant_sections_read",
+      "exclusions": "Protect Muslims/perceived Muslims rather than immunize Islam or governments from criticism; structural effects need not require deliberate intent; a paragraph does not establish a population-level pattern.",
+      "coverage_limit": "Partial operationalization. Intersectionality, policy evidence and comparable outcomes require additional evidence. Full PDF is linked, not redistributed.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "anti-muslim-racism/institutional_pattern",
+      "frozen_lens_version": "2025-operational-1",
+      "kind": "indicator",
+      "operational_description": "Identify an evidenced institutional practice or repeated pattern. One passage cannot by itself establish a systemic pattern; mark insufficient context when required.",
+      "source_url": "https://www.runnymedetrust.org/publications/islamophobia-towards-a-working-definition",
+      "source_locator": "PDF pp7–10/printed pp6–9; comparison/evidence must establish a pattern rather than merely assert it.",
+      "source_summary": "PDF pp7–10/printed pp6–9; comparison/evidence must establish a pattern rather than merely assert it.",
+      "academic_precedents": [],
+      "source_audit_status": "original_19_page_briefing_relevant_sections_read",
+      "exclusions": "Protect Muslims/perceived Muslims rather than immunize Islam or governments from criticism; structural effects need not require deliberate intent; a paragraph does not establish a population-level pattern.",
+      "coverage_limit": "Partial operationalization. Intersectionality, policy evidence and comparable outcomes require additional evidence. Full PDF is linked, not redistributed.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-institutional",
+        "v03-news"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "political-framing/expressed_policy_position",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Identify an explicit position toward a named policy proposition, proposed action or remedy. State whose position it is and distinguish the attributed speaker's stance from the document's stance. Sentiment and topic mention alone do not establish stance; missing evidence of support or opposition does not imply neutrality. Do not infer a party, political identity or ideology from the position.",
+      "source_url": "https://aclanthology.org/S16-1003/",
+      "source_locator": "mohammad2016: Task definition and distinction between target-specific stance and sentiment. entman1993: p52 treatment recommendation function.",
+      "source_summary": "Mohammad2016 target-specific stance; Entman1993 p52 remedy.",
+      "academic_precedents": [
+        {
+          "id": "mohammad2016",
+          "url": "https://aclanthology.org/S16-1003/",
+          "locator": "Task definition and distinction between target-specific stance and sentiment.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        },
+        {
+          "id": "entman1993",
+          "url": "https://fbaum.unc.edu/teaching/articles/J-Communication-1993-Entman.pdf",
+          "locator": "p52 treatment recommendation function.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-political"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "political-framing/evaluative_language",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Identify evidenced appraisal, metaphor or legitimizing/delegitimizing wording, its target and textual function. Preserve quotation, negation, counter-speech and the responsible speaker. Apply the same descriptive rule across authors. Strong or emotional wording can be justified: it does not by itself establish falsity, unfairness, deceptive intent or equivalent conduct by compared actors.",
+      "source_url": "https://aclanthology.org/P13-1162/",
+      "source_locator": "recasens2013: Section2 categories of linguistic cues; appraisal is evidence to inspect, not proof of objective unfairness. entman1993: p52 moral evaluation function.",
+      "source_summary": "Recasens2013 §2.3 linguistic cues; Entman1993 p52 evaluation.",
+      "academic_precedents": [
+        {
+          "id": "recasens2013",
+          "url": "https://aclanthology.org/P13-1162/",
+          "locator": "Section2 categories of linguistic cues; appraisal is evidence to inspect, not proof of objective unfairness.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        },
+        {
+          "id": "entman1993",
+          "url": "https://fbaum.unc.edu/teaching/articles/J-Communication-1993-Entman.pdf",
+          "locator": "p52 moral evaluation function.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-political"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "political-framing/agency_causal_responsibility",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Describe how the passage names, backgrounds or leaves unspecified an actor, cause, beneficiary or bearer of responsibility, and whether the source asserts or attributes the relationship. A causal allegation is not verified causation. Do not turn temporal association into causation, passive wording into deliberate concealment, or a framing observation into a finding about hidden motives.",
+      "source_url": "https://fbaum.unc.edu/teaching/articles/J-Communication-1993-Entman.pdf",
+      "source_locator": "entman1993: p52 causal interpretation function. sauri2009: Original publisher abstract/notes: source-relative event factuality. Full paper not audited here.",
+      "source_summary": "Entman1993 p52 causal interpretation; FactBank source-relative factuality.",
+      "academic_precedents": [
+        {
+          "id": "entman1993",
+          "url": "https://fbaum.unc.edu/teaching/articles/J-Communication-1993-Entman.pdf",
+          "locator": "p52 causal interpretation function.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        },
+        {
+          "id": "sauri2009",
+          "url": "https://link.springer.com/article/10.1007/s10579-009-9089-9",
+          "locator": "Original publisher abstract/notes: source-relative event factuality. Full paper not audited here.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-political"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "political-framing/source_voice_foregrounding",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Identify whose claim, testimony, evidence or institutional authority is explicitly foregrounded and how it is attributed. Distinguish the containing document's author from quoted speakers, committee recommendations and reported allegations. A locally prominent voice is observable; claims that other voices were unfairly excluded require a declared comparator and relevant supplied evidence. Equal quotation counts are not a fairness standard.",
+      "source_url": "https://aclanthology.org/C04-1018/",
+      "source_locator": "breck2004: Sections1–3: nested direct/indirect private-state and speech sources; hierarchical source structure. fan2019: Dataset/annotation design: lexical versus informational bias across three sources covering matched events.",
+      "source_summary": "Breck2004 nested sources; Fan2019 matched-event informational bias.",
+      "academic_precedents": [
+        {
+          "id": "breck2004",
+          "url": "https://aclanthology.org/C04-1018/",
+          "locator": "Sections1–3: nested direct/indirect private-state and speech sources; hierarchical source structure.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        },
+        {
+          "id": "fan2019",
+          "url": "https://aclanthology.org/D19-1664/",
+          "locator": "Dataset/annotation design: lexical versus informational bias across three sources covering matched events.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-political"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "political-framing/comparator_dependent_asymmetry",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Assess a difference in evidential standards, appraisal, attribution or relevant coverage only against an explicitly declared comparator with supplied passages, inclusion rules and a shared comparison question. State topic, genre, date and available-evidence matching limits; unequal conduct or evidence may justify unequal treatment. Without this comparator, return uncertain for a relevant comparison inquiry or not_applicable when no comparison is attempted, never does_not_meet as a proxy for no bias. Mere corpus absence, different policy instruments or raw voice counts cannot establish omission, a double standard or deliberate selection.",
+      "source_url": "https://aclanthology.org/D19-1664/",
+      "source_locator": "fan2019: Sections3–4 matched-event, multiple-outlet informational-bias annotation. Comparator guardrails are DOXA operational constraints, not an automatic fairness metric.",
+      "source_summary": "Fan2019 matched-event design; DOXA adds explicit-comparator safeguards.",
+      "academic_precedents": [
+        {
+          "id": "fan2019",
+          "url": "https://aclanthology.org/D19-1664/",
+          "locator": "Sections3–4 matched-event, multiple-outlet informational-bias annotation. Comparator guardrails are DOXA operational constraints, not an automatic fairness metric.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-political"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "political-framing/presupposition_hypothesis",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Identify a specific premise backgrounded or taken for granted by a textual trigger, with the exact proposition, responsible speaker and a plausible alternative reading. Check surrounding explicit assertions: a repeated allegation may be backgrounded without being an uncovered unstated belief. Do not strengthen the wording into an exclusive or universal claim, infer private beliefs, or treat the premise as fact. Preserve uncertainty where readings differ.",
+      "source_url": "https://aclanthology.org/P13-1162/",
+      "source_locator": "recasens2013: Section2 epistemological/framing language cues. The hypothesis and alternative-reading contract is a DOXA operational choice.",
+      "source_summary": "Recasens2013 §2.3 cues; DOXA adds alternative-reading requirements.",
+      "academic_precedents": [
+        {
+          "id": "recasens2013",
+          "url": "https://aclanthology.org/P13-1162/",
+          "locator": "Section2 epistemological/framing language cues. The hypothesis and alternative-reading contract is a DOXA operational choice.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": true,
+      "recorded_model_profiles": [
+        "v03-political"
+      ],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "language-norms/norm_claim",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Identify an explicit claim about acceptable, respectful, inclusive, offensive, or prohibited language and whose norm it represents.",
+      "source_url": "https://aclanthology.org/P15-2072/",
+      "source_locator": "card2015: Table1 morality, cultural identity and public-opinion frames provide descriptive precedent; no validated political-correctness construct.",
+      "source_summary": "Card2015 Table1 morality/cultural identity/public opinion: precedent only.",
+      "academic_precedents": [
+        {
+          "id": "card2015",
+          "url": "https://aclanthology.org/P15-2072/",
+          "locator": "Table1 morality, cultural identity and public-opinion frames provide descriptive precedent; no validated political-correctness construct.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "State the user-selected inquiry and preserve competing interpretations. Never assign a universal PC score or assume a demographic group shares one view.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": false,
+      "recorded_model_profiles": [],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "language-norms/speech_boundary",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Describe a text's stated boundary between expression and harm, or its claim of censorship, without assuming the claim is factually proven.",
+      "source_url": "https://aclanthology.org/P15-2072/",
+      "source_locator": "card2015: Table1 fairness/equality, legality and constitutionality frames; not an official free-expression classification.",
+      "source_summary": "Card2015 Table1 fairness/legality: no validated expression-harm scale.",
+      "academic_precedents": [
+        {
+          "id": "card2015",
+          "url": "https://aclanthology.org/P15-2072/",
+          "locator": "Table1 fairness/equality, legality and constitutionality frames; not an official free-expression classification.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "State the user-selected inquiry and preserve competing interpretations. Never assign a universal PC score or assume a demographic group shares one view.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": false,
+      "recorded_model_profiles": [],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    },
+    {
+      "criterion_key": "language-norms/institutional_expectation",
+      "frozen_lens_version": "1.0.0",
+      "kind": "descriptive",
+      "operational_description": "Identify an expressed institutional language rule, enforcement mechanism, or competing value such as inclusion and freedom of expression.",
+      "source_url": "https://aclanthology.org/P15-2072/",
+      "source_locator": "card2015: Table1 capacity/resources, policy prescription and political frames; institutional-language rule coding is a DOXA research choice.",
+      "source_summary": "Card2015 Table1 policy/capacity/political frames: research precedent.",
+      "academic_precedents": [
+        {
+          "id": "card2015",
+          "url": "https://aclanthology.org/P15-2072/",
+          "locator": "Table1 capacity/resources, policy prescription and political frames; institutional-language rule coding is a DOXA research choice.",
+          "relation": "scholarly_precedent_not_validation_of_exact_operational_criterion"
+        }
+      ],
+      "source_audit_status": "original_academic_precedent_and_author_operational_rubric",
+      "exclusions": "State the user-selected inquiry and preserve competing interpretations. Never assign a universal PC score or assume a demographic group shares one view.",
+      "coverage_limit": "Descriptive research inquiry; no universal ideology, fairness or political-correctness scale.",
+      "recorded_processing_coverage_available": false,
+      "recorded_model_profiles": [],
+      "independent_human_interpretation_validation": false,
+      "semantic_change_to_v03": false
+    }
+  ],
+  "operationalization_notice": "Original source conditions are distinguished from DOXA's partial operational summaries. Fresh IHRA-page access remains blocked; no completeness or official approval is claimed.",
+  "frameworks": {
+    "ihra": {
+      "title": "IHRA Working Definition of Antisemitism",
+      "url": "https://holocaustremembrance.com/resources/working-definition-antisemitism",
+      "year": 2016,
+      "audit_status": "official_primary_page_access_blocked_in_current_source_audit",
+      "locator": "Definition, contextual introduction and illustrative examples; current official-page retrieval blocked.",
+      "exclusions": "Non-legally binding; examples require overall context; policy criticism similar to other countries is not automatically antisemitic.",
+      "coverage": "DOXA's three criteria are a partial operational summary, not the complete working definition."
+    },
+    "jda": {
+      "title": "Jerusalem Declaration on Antisemitism",
+      "url": "https://jerusalemdeclaration.org/",
+      "year": 2021,
+      "audit_status": "original_definition_guidelines_and_FAQ_read",
+      "locator": "Definition; General guidelines 1–5; Israel/Palestine guidelines 6–15; FAQ on legal use.",
+      "exclusions": "Guidelines must be read together in context; political positions are not inherently antisemitic; not designed as a legal/quasi-legal speech code.",
+      "coverage": "Three operational criteria retain the political-expression boundary but do not replace all fifteen guidelines."
+    },
+    "nexus": {
+      "title": "The Nexus Document",
+      "url": "https://nexusproject.us/nexus-resources/the-nexus-document/",
+      "year": 2024,
+      "audit_status": "original_definition_and_both_numbered_sections_read",
+      "locator": "What Is Antisemitic? 2–4,7–9; What Is Not Antisemitic? 1,3–5; June 2024 update.",
+      "exclusions": "Political opposition and disproportionate attention are not prima facie proof; standards and source context matter.",
+      "coverage": "Three operational criteria; no vote across frameworks and no legal determination."
+    },
+    "anti-muslim-hostility": {
+      "title": "A Definition of Anti-Muslim Hostility",
+      "url": "https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility",
+      "year": 2026,
+      "audit_status": "original_sections_6_7_8_read",
+      "locator": "Section 6 paragraphs 1–3 and protected-expression list; section 8 notes on use.",
+      "exclusions": "England; non-statutory; no change to criminal/equality law; criticism/ridicule of religion protected; required intent/unlawfulness cannot be presumed.",
+      "coverage": "Three textual operational criteria cannot establish every legal/contextual condition from one passage."
+    },
+    "anti-muslim-racism": {
+      "title": "Islamophobia: towards a working definition",
+      "url": "https://www.runnymedetrust.org/publications/islamophobia-towards-a-working-definition",
+      "year": 2025,
+      "pdf_url": "https://cdn.prod.website-files.com/61488f992b58e687f1108c7c/6870ebe3af5932d0c3f20824_Islamophobia_Towards%20a%20working%20definition_Runnymede%20July%202025.pdf",
+      "pdf_sha256": "ccdb6531b43a1f398fcbfa2a88a3aee6da42c73e339517cb88e64728f8ea86fa",
+      "pdf_pages": 19,
+      "audit_status": "original_19_page_briefing_relevant_sections_read",
+      "locator": "PDF p4/printed p3 recommendation; PDF pp5–7 racialization; pp7–10 institutional/structural effects; p12/printed p11 free speech; p14/printed p13 recommendation.",
+      "exclusions": "Protect Muslims/perceived Muslims rather than immunize Islam or governments from criticism; structural effects need not require deliberate intent; a paragraph does not establish a population-level pattern.",
+      "coverage": "Partial operationalization. Intersectionality, policy evidence and comparable outcomes require additional evidence. Full PDF is linked, not redistributed."
+    }
+  },
+  "independent_human_interpretation_validation": false
+}

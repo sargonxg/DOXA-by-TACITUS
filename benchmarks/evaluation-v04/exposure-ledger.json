@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.4",
+  "status": "known_exposures_recorded_not_exhaustive",
+  "exposed_story_groups": [
+    "story-0bf1df60756b80c48d17",
+    "story-135763058c41e57ce1eb",
+    "story-21b5060d5324a12c0ff1",
+    "story-2e62ab34a0b2da01c6dc",
+    "story-2fb9bd53f0bebc23c100",
+    "story-359b03c9917fa166b26a",
+    "story-36d774319182571001bf",
+    "story-37e3aa6b98ca22bd2272",
+    "story-3e095d164c789ec12e32",
+    "story-41f358416e257d1b551d",
+    "story-753b494d53184860ce4f",
+    "story-81a0dc155915c1724ef7",
+    "story-8cb7dcc6ee7bbbccade9",
+    "story-96953d260cbb406721bd",
+    "story-a74fca9b28b69482bbc9",
+    "story-bddda9b4be28febd816c",
+    "story-e0020028c41e354d054c",
+    "story-e2bd324ad36eddfba218",
+    "story-ef1924f207366a0102b8",
+    "story-f81be36c20d6e9579746"
+  ],
+  "events": [
+    {
+      "kind": "published_cpu_news_benchmark_and_local_diagnostics",
+      "source_ids": [
+        "gv-697962",
+        "gv-706526",
+        "gv-715188",
+        "gv-722510",
+        "gv-731742",
+        "gv-740730",
+        "gv-748110",
+        "gv-755578",
+        "gv-763234",
+        "gv-770760",
+        "gv-778124",
+        "gv-785109",
+        "gv-791816",
+        "gv-799356",
+        "gv-806971",
+        "gv-814580",
+        "gv-822367",
+        "gv-829479",
+        "gv-836232",
+        "gv-843486"
+      ],
+      "excluded_from_new_locked_holdout": true
+    },
+    {
+      "kind": "public_frozen_5000_model_outputs",
+      "package_sha256": "783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827",
+      "notice": "Parent model outputs are public. Locked means excluded from future development/memory; independent reviewers must avoid outputs before first-pass annotation. No claim of cryptographic secrecy or unseen pretraining."
+    }
+  ],
+  "unknowns": [
+    "Complete historical developer/reviewer exposure",
+    "Managed model pretraining overlap"
+  ]
+}

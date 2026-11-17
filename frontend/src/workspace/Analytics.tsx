@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useId, useMemo, useState } from "react";
 import {
   ArrowDownRight,
   ArrowRight,
@@ -35,6 +35,7 @@ export function Analytics({
   context: Context | null;
 }) {
   const [mode, setMode] = useState("signals");
+  const tabId = useId();
   const legacy =
     !!result?.run && result.metrics.analysis_kind === "legacy_unclassified";
   const unassessed = scope.run_id === "none" || !result?.run;
@@ -54,6 +55,31 @@ export function Analytics({
           className="w-view-switch"
           role="tablist"
           aria-label="Analytical view"
+          onKeyDown={(event) => {
+            if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key))
+              return;
+            const buttons = Array.from(
+              event.currentTarget.querySelectorAll<HTMLButtonElement>(
+                'button[role="tab"]',
+              ),
+            );
+            const current = buttons.indexOf(
+              document.activeElement as HTMLButtonElement,
+            );
+            if (current < 0) return;
+            const next =
+              event.key === "Home"
+                ? 0
+                : event.key === "End"
+                  ? buttons.length - 1
+                  : (current +
+                      (event.key === "ArrowRight" ? 1 : -1) +
+                      buttons.length) %
+                    buttons.length;
+            event.preventDefault();
+            buttons[next].focus();
+            buttons[next].click();
+          }}
         >
           {[
             { id: "signals", label: "Signals", icon: BarChart3 },
@@ -64,6 +90,9 @@ export function Analytics({
             <button
               key={item.id}
               role="tab"
+              id={`${tabId}-${item.id}`}
+              aria-controls={`${tabId}-panel`}
+              tabIndex={mode === item.id ? 0 : -1}
               aria-selected={mode === item.id}
               onClick={() => setMode(item.id)}
               title={
@@ -78,31 +107,39 @@ export function Analytics({
           ))}
         </div>
       </div>
-      {mode === "signals" && (
-        <>
-          <Timeline
-            points={result?.timeline || []}
-            scope={chartScope}
-            onScope={onScope}
-            legacy={legacy}
-            unassessed={unassessed}
+      <div
+        role="tabpanel"
+        id={`${tabId}-panel`}
+        aria-labelledby={`${tabId}-${mode}`}
+      >
+        {mode === "signals" && (
+          <>
+            <Timeline
+              points={result?.timeline || []}
+              scope={chartScope}
+              onScope={onScope}
+              legacy={legacy}
+              unassessed={unassessed}
+            />
+            <Matrix cells={result?.matrix || []} onScope={onScope} />
+          </>
+        )}
+        {mode === "trajectory" && (
+          <Trajectory project={project} result={result} scope={scope} />
+        )}
+        {mode === "history" && (
+          <AssessmentHistory
+            project={project}
+            run={
+              scope.run_id === "none"
+                ? ""
+                : scope.run_id || result?.run?.id || ""
+            }
+            query={result?.query_id}
           />
-          <Matrix cells={result?.matrix || []} onScope={onScope} />
-        </>
-      )}
-      {mode === "trajectory" && (
-        <Trajectory project={project} result={result} scope={scope} />
-      )}
-      {mode === "history" && (
-        <AssessmentHistory
-          project={project}
-          run={
-            scope.run_id === "none" ? "" : scope.run_id || result?.run?.id || ""
-          }
-          query={result?.query_id}
-        />
-      )}
-      {mode === "map" && <EvidenceMap context={context} />}
+        )}
+        {mode === "map" && <EvidenceMap context={context} />}
+      </div>
     </section>
   );
 }
@@ -163,6 +200,8 @@ function Timeline({
 }) {
   const [anchor, setAnchor] = useState<number | null>(null);
   const [hover, setHover] = useState<number | null>(null);
+  const [tablePage, setTablePage] = useState(0);
+  useEffect(() => setTablePage(0), [points]);
   const maxVolume = Math.max(
     1,
     ...points.map((point) =>
@@ -376,6 +415,72 @@ function Timeline({
                 : "Incomplete coverage"}
             </span>
           </div>
+          <details className="w-details w-chart-table">
+            <summary>
+              Read timeline as a data table · {number(points.length)} periods
+            </summary>
+            <table>
+              <caption>
+                Same plotted source scope and metric. Processing coverage is
+                separate from interpretation accuracy.
+              </caption>
+              <thead>
+                <tr>
+                  <th>Period</th>
+                  <th>Sources</th>
+                  <th>{unassessed ? "Analysis" : human(scope.metric)}</th>
+                  <th>Coverage</th>
+                  <th>Filter</th>
+                </tr>
+              </thead>
+              <tbody>
+                {points
+                  .slice(tablePage * 100, (tablePage + 1) * 100)
+                  .map((point, offset) => (
+                    <tr key={point.date}>
+                      <th scope="row">{point.date}</th>
+                      <td>{number(point.documents)}</td>
+                      <td>
+                        {unassessed
+                          ? "Not analyzed"
+                          : number((point as unknown as Item)[scope.metric])}
+                      </td>
+                      <td>
+                        {unassessed
+                          ? "Not analyzed"
+                          : percentage(point.coverage)}
+                      </td>
+                      <td>
+                        <button
+                          disabled={!periodBounds(point.date)}
+                          onClick={() =>
+                            select(tablePage * 100 + offset, false)
+                          }
+                        >
+                          Select period {point.date}
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+            {points.length > 100 && (
+              <div className="w-case-actions">
+                <button
+                  disabled={!tablePage}
+                  onClick={() => setTablePage(tablePage - 1)}
+                >
+                  Previous 100 periods
+                </button>
+                <button
+                  disabled={(tablePage + 1) * 100 >= points.length}
+                  onClick={() => setTablePage(tablePage + 1)}
+                >
+                  Next 100 periods
+                </button>
+              </div>
+            )}
+          </details>
         </>
       ) : (
         <Empty title="A timeline needs dated sources">
@@ -524,6 +629,11 @@ function Trajectory({
               </svg>
               <div className="w-rate-table">
                 <table>
+                  <caption>
+                    Most recent {Math.min(24, rates.length)} of {rates.length}{" "}
+                    periods. Endorsed sources, eligible denominator and
+                    processing coverage remain separate.
+                  </caption>
                   <thead>
                     <tr>
                       <th>Period</th>
@@ -656,6 +766,7 @@ function Matrix({
                               : "#f5f7f4",
                           }}
                           title={`${number(count)} retained observations · ${percentage(coverage)} ${matches[0]?.coverage_basis || "current-scope coverage"}`}
+                          aria-label={`${author}, ${human(criterion.id)}, ${human(criterion.kind)}: ${number(count)} retained observations; ${percentage(coverage)} ${matches[0]?.coverage_basis || "current-scope coverage"}. Select this author and criterion.`}
                           onClick={() =>
                             onScope({
                               authors: [author],
@@ -684,7 +795,10 @@ function Matrix({
         </Empty>
       )}
       <div className="w-chart-footer">
-        <span>Canonical criteria · excerpt of server aggregates</span>
+        <span>
+          Excerpt: {authors.length} author groups × {criteria.length} criteria ·
+          inspect a cell for its source scope
+        </span>
         <span>Source-unit coverage qualifies comparisons</span>
       </div>
     </div>

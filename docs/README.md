@@ -1,0 +1,32 @@
+# DOXA documentation
+
+DOXA is an open-source evidence workbench packaged as **Bias Detection as a Service**: run it locally, deploy a private workspace, or obtain [TACITUS methodology and deployment support](https://tacitus.me/doxa/).
+
+## Read and inspect
+
+| Question | Guide and artifacts |
+| --- | --- |
+| What does the tool do? | [Reader explainer](v04-reader-explainer.md) · [illustrated PDF](../examples/v04-reader-explainer.pdf) · [8-bit Quest](guide.md) |
+| How are claims anchored and qualified? | [Technical annex](v04-technical-annex.md) · [PDF](../examples/v04-technical-annex.pdf) · [interpretation contract](v3-interpretation.md) |
+| Can I inspect real cases? | [15-case atlas](v04-case-atlas.md) · [PDF](../examples/v04-case-atlas.pdf) · [original annotated examples](v3-annotated-examples.md) |
+| What is political bias here? | [Political-framing methodology](political-bias-methodology.md) · [framework methodology](methodology.md) |
+| Which literature and definitions informed it? | [Research map](v04-research-map.json) · [BibTeX](v04-bibliography.bib) · [CSL JSON](v04-bibliography.csl.json) · [criterion/source audit](v04-criterion-source-audit.json) |
+
+## Run and extend
+
+| Task | Documentation |
+| --- | --- |
+| Install, persist, back up and deploy | [Deployment](deployment.md) · [architecture](architecture.md) |
+| Choose local or cloud models | [Model profiles](models-v3.md) · [model/system card](model-card.md) |
+| Understand available data and rights | [Dataset card](dataset-card.md) · [news collection](news-corpus.md) · [institutional collection](corpus.md) · [licences](licenses.md) |
+| Export reproducible evidence | [Casebooks and persistent jobs](report-jobs.md) · [recorded export guide](v3-recorded-exports.md) · [v0.4 verification](verification-v04.md) |
+| Review, compare and learn | [Service toolkit](v3-service-toolkit.md) · [independent model review](v3-independent-review.md) · [staged human evaluation](evaluation-v04.md) |
+| Reproduce recorded benchmarks | [Benchmark index](../benchmarks/README.md) · [benchmark design](benchmarking.md) · [verification baseline](verification-v3.md) |
+
+[Prioritized refinement and evaluation roadmap](refinement-roadmap.md) records the next experiments and their acceptance evidence.
+
+## Publication and development record
+
+[Contributing](../CONTRIBUTING.md) · [Changelog](../CHANGELOG.md) · [citation metadata](../CITATION.cff) · [evidence-pack manifest](../examples/v04-evidence-pack.manifest.json) · [processed lineage index](../examples/v04-lineage-index.json) · [source-reference audit](../examples/v04-corpus-verification.json).
+
+The 5,000-source recorded run is **partial**, with 79 unresolved decisions. Human reference labels are pending. Documentation distinguishes software behavior, source fidelity, processing coverage, model interpretation and independent evaluation.

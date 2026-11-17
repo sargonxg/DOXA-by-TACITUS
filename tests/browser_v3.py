@@ -26,7 +26,7 @@ from doxa.store import utcnow  # noqa: E402
 from doxa.workspace import Workspace  # noqa: E402
 from test_v3_api import CompactProvider, finish, upload  # noqa: E402
 from test_workspace import seed_many_documents  # noqa: E402
-from browser_support import local_app  # noqa: E402
+from browser_support import chromium_launch_options, local_app  # noqa: E402
 
 
 def fixtures(directory: Path) -> tuple[str, str]:
@@ -76,9 +76,7 @@ def main() -> None:
     }
     with local_app(directory) as base:
         with sync_playwright() as p:
-            browser = p.chromium.launch(
-                executable_path="/usr/bin/chromium", headless=True, args=["--no-sandbox"]
-            )
+            browser = p.chromium.launch(**chromium_launch_options())
             context = browser.new_context(viewport={"width": 1600, "height": 1000}, accept_downloads=True)
             page = context.new_page()
             errors = []
@@ -158,6 +156,7 @@ def main() -> None:
             page.locator(".w-source-passage mark").wait_for()
             page.screenshot(path=str(output / "contextual-workspace.png"), full_page=True)
             page.get_by_role("button", name="Export query report", exact=True).click()
+            page.get_by_text("Direct scoped export · compatibility tools", exact=True).click()
             page.get_by_label("Export format", exact=True).select_option("xlsx")
             with page.expect_download(timeout=60000) as download:
                 page.get_by_role("button", name="Download XLSX", exact=True).click()

@@ -12,14 +12,14 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 from playwright.sync_api import sync_playwright
-from browser_support import local_app
+from browser_support import chromium_launch_options, local_app
 
 
 def main() -> None:
     output = Path(os.environ.get("DOXA_BROWSER_OUTPUT", "/tmp/doxa-browser-batches-v3"))
     output.mkdir(parents=True, exist_ok=True)
     with local_app(allow_external=True) as base, sync_playwright() as p:
-        browser = p.chromium.launch(executable_path="/usr/bin/chromium", headless=True, args=["--no-sandbox"])
+        browser = p.chromium.launch(**chromium_launch_options())
         context = browser.new_context(viewport={"width": 1440, "height": 1000})
         response = context.request.post(
             f"{base}/api/projects", data={"name": "Synthetic grouped import verification"}
