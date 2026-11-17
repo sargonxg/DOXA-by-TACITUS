@@ -33,6 +33,10 @@ services:
   ollama:
     image: ollama/ollama:0.40.16
     profiles: ["ollama"]
+    environment:
+      OLLAMA_NUM_PARALLEL: "1"
+      OLLAMA_MAX_LOADED_MODELS: "1"
+      OLLAMA_CONTEXT_LENGTH: "8192"
     ports:
       - "127.0.0.1:11434:11434"
     volumes:

@@ -8,6 +8,8 @@ These commands target the native Python application. The standard Docker image s
 
 The application never downloads weights on startup, health checks or inference. Install PyTorch from its **CPU index first**; PyPI's ordinary Linux torch distribution can pull large CUDA dependencies. The `cpu` extra deliberately omits torch.
 
+The exact wheel command below was tested on Linux x86-64. For another operating system, use the [official PyTorch installation selector](https://pytorch.org/get-started/locally/) to choose its supported CPU build before installing the extra. The runtime explicitly selects CPU; the resource observations here come from the recorded Linux environment.
+
 ```bash
 python -m venv .venv
 . .venv/bin/activate
@@ -88,7 +90,7 @@ An older interrupted local run may contain article-sized tasks that exceed its s
 
 Baseline resource caps are 10,000 ready documents (to accommodate 5,000 news articles plus institutional cases), 250,000 passages and 512MiB of active index data per project. Each document is capped at 20,000 passages, source extraction remains bounded at 40 million characters, and vector/anchor chunks hold at most 256 passages. Oversized scopes fail explicitly. Historical content versions can leave inactive artifact bundles; disk lifecycle/garbage collection is a separate operational task, not silent deletion during live search.
 
-Verification performed offline with both runtimes loaded: a generated 9,294-character functional input produced three NLI windows/six pairs and seven normalized 384D embedding windows, ending at the exact final source character. The cold run took 10.896s and observed peak RSS 1,804,916KiB in this environment. This is a functional/resource observation, not a news quality evaluation or a portable throughput promise.
+Verification performed offline with both runtimes loaded: a generated 9,294-character functional input produced three NLI windows/six pairs and seven normalized 384D embedding windows, ending at the exact final source character. The recorded window smoke phase took 10.896s and observed peak RSS 1,804,916KiB in this environment. This is a functional/resource observation, not a news quality evaluation or a portable throughput promise.
 
 The actual complete 20-document institutional corpus also indexed successfully: 9,249 passages, 18,112,424 index bytes and 99 explicitly nonindexable formatting-only inputs (PDF private-use decorative glyphs), with zero documents lacking passages. A resumed build reused ten completed document bundles and took 85.665s; this is **not a cold 20-document timing**. Three unreviewed example searches returned five exact-source-validated hits each in 0.076s, 0.152s and 0.083s. Observed process peak RSS was 599,844KiB. These results demonstrate functioning persistence/retrieval and resource use, not ranking accuracy or prejudice-classification accuracy.
 
@@ -97,6 +99,30 @@ The complete frozen news corpus has now been indexed: **5,000 articles, 5,251,11
 The final canonical manifest is `6ea29f063abcdda5425d91277c9137cbb66f461fa2fff26f1f3543c51fb02ff3`. One source's link metadata changed after the original cohort finished. Its text and locators were verified unchanged; refreshing the explicit 5,000-document scope reused 4,999 bundles and embedded one new immutable source version. The project retains 5,001 versions for history. `build(..., document_ids=canonical_ids, replace_scope=True)` archives the previous active manifest and prevents that historical version from entering the active scope. Restarting then reused all 5,000 canonical bundles. The original cohort proof remains separate.
 
 Three whole-corpus example queries took approximately 2.34–2.51 seconds each, with every returned quote checked against its exact source block. These are unreviewed functionality checks, with no independent relevance, stance or prejudice labels. Full provenance, numerical-parity checks, resource limits and timing qualifications are recorded in `benchmarks/cpu-semantic-5000-summary.json` and `benchmarks/cpu-embedding-batching-parity.json`.
+
+The finite CPU Qwen trial selected **all 20 original news articles and 115 source units**, applying six lenses with 19 criteria. It stopped with **two complete articles, eight accepted units and two partial units**; the other 105 tasks were cancelled and remain unprocessed in the portable archive. The two complete articles, containing 255 and 326 words, took 8.84 and 19.90 minutes in the final serialized session. All 186 retained assessment quotes and 1,042 sentence references matched their original source blocks. These checks establish source integrity, with no independent interpretation labels. Wrong-unit evidence references and missing details remain explicit failures.
+
+The observed combined process RSS peak ultimately reached **9.238 GiB**, exceeding the earlier interim observation of 5.081 GiB; GPU VRAM remained zero. This includes the tracked benchmark drivers and Ollama server/runner, can double-count shared pages, and excludes browser/OS memory. The dedicated Ollama service used one parallel request and one loaded model. Run heavy embedding, NLI and LLM phases sequentially on the 16 GiB baseline. At the sampled process peak, the shared 16 GiB cgroup used about 15.6 GiB including other jobs and file cache, without an observed out-of-memory event. Actual headroom depends on other running programs and the operating system. Ollama's resident model was unloaded before the separate NLI run; installed weights were retained. Exact receipts, prior interrupted attempts, settings, denominator and timing qualifications are in `benchmarks/v3-local-news-observations.json` and `benchmarks/v3-local-news-resources.json`. The full local interpretation trial is explicitly incomplete and can be resumed from its durable checkpoint.
+
+Run the twenty-article whole-source NLI resource baseline after installing the pinned bundle:
+
+```bash
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 python scripts/benchmark_cpu_nli.py \
+  --model-dir ./data/cpu-models --threads 4 --batch-size 8 \
+  --output ./benchmarks/cpu-nli-20-news-summary.json
+```
+
+It scores every window of each original article against four explicit textual hypotheses: a policy remedy for discrimination, reported hostility toward a religious group, condemnation of that hostility, and support for equal religious rights. Each score retains both logits, the hypothesis and exact source offsets. Hypotheses are independent; the runner produces no winning category, automatic threshold, document prejudice label or judgment of an author's private beliefs. Its summary and complete compressed JSONL scores preserve hashes, full window coverage, resource use and timing that distinguishes initial loading from later weight reuse. Document credits, license notices and original quotation/block metadata travel with the score file. Existing outputs are preserved; choose a new output path for another run.
+
+The actual run completed **all 20 original articles and 18,709 words**, producing **60 source windows and 240 independent pairs in 247.102 seconds** with four CPU threads and batches of eight. Timing includes the first model load in this process; later sources reuse loaded weights, and filesystem caches were uncontrolled. Peak process RSS was **2.038 GiB**, with no GPU, weight download or paid inference call. Source texts contain 119,600 characters after the explicitly recorded double-newline joins. A separate software audit checked all 537 original-block references, complete window coverage, the same original source identities/hashes/order, credits, and the conversion from every raw logit pair to its independent score. This proves functioning source coverage and score serialization, with no independent accuracy labels. Results are in `benchmarks/cpu-nli-20-news-summary.json`, the complete `benchmarks/cpu-nli-20-news-scores.jsonl.gz`, and `benchmarks/cpu-nli-20-news-integrity.json`. These four auxiliary hypotheses remain separate from the 19-criterion interpretation profile.
+
+The [local CPU NLI workbook](../examples/local-cpu-nli-20.xlsx) presents the actual results in six styled sheets: Method, Models, Sources, Windows, Scores and Hypotheses. Filters, frozen headers and internal links connect each numeric result to its complete original source window, exact locators and author/license credits. Scores remain decimals with both raw logits; no ranking, automatic threshold or document prejudice score is added. The [checksum receipt](../examples/local-cpu-nli-20.receipt.json) records all input/output hashes and verification counts. Regeneration uses the frozen summary and score archive, with no model loading or inference:
+
+```bash
+python scripts/export_cpu_nli_workbook.py \
+  --summary benchmarks/cpu-nli-20-news-summary.json \
+  --output examples/local-cpu-nli-20.xlsx --overwrite
+```
 
 New managed Cloudflare API runs selecting GPT-OSS-120B or GPT-OSS-20B default to `reasoning_effort=low` and a separate 2,048-token reasoning allowance in addition to the visible response cap. Explicit settings and historical run configurations are preserved. Direct or generic adapter profiles without reasoning fields keep the provider default. The benchmark gateway uses the provider's Responses interface and normalizes the receipt; a first-party Cloudflare chat-completions probe also accepted low effort and JSON schema, recorded in `benchmarks/gpt-oss-native-compatibility-probe.json`. Reservation estimates include the allowance; actual reported output tokens are charged only once. Requested effort is provenance, not proof of internal reasoning behavior; token receipts and schema-validation outcomes remain separate evidence.
 

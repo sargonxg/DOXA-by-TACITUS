@@ -1,0 +1,197 @@
+{
+  "captured_at": "2026-11-17T04:44:43.100293+00:00",
+  "source_data": "data/v3-news",
+  "project_id": "13780ed307c84dbb937182940febddd0",
+  "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+  "snapshot_notice": "Fixed read-only SQLite transaction of the actual recorded run; workspace query caches are in memory only. Coverage is reported from retained actual checks. No metadata/artifact copy, inference, source or review mutation.",
+  "checks": [
+    "Actual5000-source query,50-record first page and contextual method identity",
+    "Actual retained model observation opens exact quote and separate attribution/stance interpretation",
+    "Actual-news cursor page2 and bounded virtual source rows",
+    "Actual frozen-scope publication trajectory displays rates or explicit unavailable state without invented spikes",
+    "Unassessed framework shows unavailable counts and preselects that framework for a new inquiry",
+    "Actual-news390px source drawer and inspector without horizontal overflow",
+    "Updated Quest guide opens the actual Import drawer"
+  ],
+  "retained_corpus_versions": 5001,
+  "metrics": {
+    "documents": 5000,
+    "total_words": 5251119,
+    "total_pages": 0,
+    "findings": 36093,
+    "indicators": 114,
+    "reported_indicators": 107,
+    "endorsed_indicators": 8,
+    "uncertain": 160,
+    "reviewed": 0,
+    "coverage": 98.54,
+    "coverage_detail": {
+      "units_total": 10759,
+      "units_done": 10686,
+      "characters": 32893897,
+      "processed_characters": 32651673,
+      "basis": "contextual source units",
+      "semantic_analysis_performed": true,
+      "not_assessed_lenses": [],
+      "complete_documents": 4927,
+      "selected_lens_scope_complete": true
+    },
+    "analysis_kind": "contextual_v3",
+    "legacy_findings": 0,
+    "cost_usd": 14.1058649000001,
+    "not_assessed_lenses": []
+  },
+  "run_status": "partial",
+  "model": {
+    "provider": "cloudflare",
+    "model": "@cf/google/gemma-4-26b-a4b-it",
+    "mode": "remote",
+    "revision": "unresolved",
+    "quantization": "provider_managed",
+    "context_limit": 32768,
+    "temperature": 0,
+    "structured_output": true,
+    "source_pack_bytes": 12000,
+    "source_pack_windows": 64,
+    "lens_batch_size": 12,
+    "batching_version": "managed-gemma-2",
+    "citation_offset_unit": "unicode_code_points",
+    "prompt_version": "contextual-decisions-3.2.1",
+    "response_schema_version": "source-vectors-3.2",
+    "pricing_checked_at": "2026-11-16",
+    "reasoning_requested": "disabled",
+    "methodology_version": "3.0",
+    "unit_builder_version": "source-units-3.1",
+    "unit_builder_config": {
+      "max_unit_chars": 4000,
+      "context_sentences": 2
+    },
+    "result_codes": {
+      "0": "does_not_meet",
+      "1": "meets_criterion",
+      "2": "uncertain",
+      "3": "not_applicable"
+    },
+    "wire_budget_version": "3.2.2",
+    "criterion_registry_version": "3.0.0",
+    "rubric_versions": {
+      "discourse": "1.0.0",
+      "ihra": "2026-11-operational-1",
+      "jda": "2021-operational-1",
+      "nexus": "2024-06-operational-1",
+      "anti-muslim-hostility": "2026-03-operational-1",
+      "anti-muslim-racism": "2025-operational-1"
+    },
+    "learning_snapshot_id": null,
+    "approved_example_ids": [],
+    "analysis_config_hash": "e0fa88c7717a4cb2bb931299",
+    "cache_hit_decisions": 74,
+    "response_model": "@cf/google/gemma-4-26b-a4b-it-external",
+    "task_timeout_seconds": 480,
+    "task_lease_seconds": 600,
+    "task_timeout_source": "scheduler_default"
+  },
+  "selected_observation": {
+    "id": "0005984a33c6b8ac60cbdba3d4f8c403",
+    "document_id": "db92457909242e85749532aa1aa7aaf8",
+    "title": "Presupposition hypothesis",
+    "lens_id": "discourse",
+    "criterion_id": "presupposition",
+    "criterion_kind": "descriptive",
+    "result": "meets_criterion",
+    "attribution": "reported_speaker",
+    "speaker_stance": "supports",
+    "document_stance": "neutral"
+  },
+  "selected_source": {
+    "id": "db92457909242e85749532aa1aa7aaf8",
+    "title": "Saudi court slams internationally criticized jail term for iconic female activist",
+    "author": "Dahlia Kholaif",
+    "published_at": "2020-12-29T15:00:27Z",
+    "source_url": "https://globalvoices.org/2020/12/29/saudi-court-slams-jail-term-to-iconic-female-activist-despite-global-criticism/",
+    "license": "CC-BY-3.0",
+    "filename": "gv-725541.txt"
+  },
+  "selected_quote": "According to local press citing the court's ruling, 31-year-old Loujain was found guilty of “committing acts criminalized under Article 43 of the Law on Combating Terrorism Crimes“, including engaging with foreign, hostile entities, and using the internet to serve and support an external agenda inside the kingdom, with the aim of harming public order.",
+  "source_or_artifact_copy_bytes": 0,
+  "preview_workers_enabled": false,
+  "page_errors": [],
+  "api_requests": [
+    {
+      "method": "GET",
+      "path": "/api/projects"
+    },
+    {
+      "method": "GET",
+      "path": "/api/lenses"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/models"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/queries/76ab8f9c42f3409487b13c94c5c74387"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/projects/13780ed307c84dbb937182940febddd0/runs?limit=30"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/documents/db92457909242e85749532aa1aa7aaf8/context?radius=2&finding_id=0005984a33c6b8ac60cbdba3d4f8c403"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/queries/76ab8f9c42f3409487b13c94c5c74387/documents?limit=50&cursor=eyJxdWVyeSI6ICI3NmFiOGY5YzQyZjM0MDk0ODdiMTNjOTRjNWM3NDM4NyIsICJraW5kIjogImRvY3VtZW50cyIsICJsYXN0IjogIjAyODA2NDM1YTg4YjA4YWEwMjdkZGZiOGVjOTVmMTJhIn0"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v3/projects/13780ed307c84dbb937182940febddd0/query"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/projects/13780ed307c84dbb937182940febddd0/trajectories?mode=publication&run_id=b2a2edd4ca7047128a5e433d8a874530&query_id=76ab8f9c42f3409487b13c94c5c74387&lens_id=anti-muslim-hostility"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/projects/13780ed307c84dbb937182940febddd0/trajectories?mode=publication&run_id=b2a2edd4ca7047128a5e433d8a874530&query_id=6a408fc6e10d450e8e03221361f10ac3&lens_id=anti-muslim-hostility"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v3/projects/13780ed307c84dbb937182940febddd0/query"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/projects/13780ed307c84dbb937182940febddd0/learning"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v3/projects/13780ed307c84dbb937182940febddd0/query"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/documents/001897e69421db1628aa57194c390157/context?radius=2"
+    },
+    {
+      "method": "GET",
+      "path": "/api/projects"
+    },
+    {
+      "method": "GET",
+      "path": "/api/lenses"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/models"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v3/projects/13780ed307c84dbb937182940febddd0/query"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v3/projects/13780ed307c84dbb937182940febddd0/runs?limit=30"
+    }
+  ]
+}

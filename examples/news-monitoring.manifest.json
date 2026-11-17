@@ -1,0 +1,83 @@
+{
+  "schema_version": "doxa-annotated-guide-1",
+  "title": "How DOXA reads a 5,000-article collection",
+  "kind": "news-monitoring",
+  "slug": "news-monitoring",
+  "generated_at": "2026-11-17T04:45:08.191668+00:00",
+  "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+  "run_status": "partial",
+  "snapshot_sha256": "e195ea21f89c38af324756d385d9f6e37223678e5f42f7fb22f7aa06e13680fd",
+  "cases": 4,
+  "selected_run_sources": 5000,
+  "run_unit_coverage": {
+    "total": 10759,
+    "done": 10686,
+    "percent": 99.3
+  },
+  "run_coverage": {
+    "selected_documents": 5000,
+    "fully_assessed_documents": 4927,
+    "requested_criterion_decisions": 204421,
+    "retained_criterion_decisions": 204342,
+    "unresolved_criterion_decisions": 79
+  },
+  "commentary_authorship": "AI-authored walkthrough guidance; not independent human adjudication or an interpretation-accuracy benchmark.",
+  "independent_human_labels": false,
+  "interpretation_accuracy": null,
+  "files": [
+    {
+      "file": "news-monitoring.pdf",
+      "bytes": 75112,
+      "sha256": "5aff56ecece11262ffc73b4a4ac919bbe666dfa40cedc018c1f82719858440c5"
+    },
+    {
+      "file": "news-monitoring.html",
+      "bytes": 41138,
+      "sha256": "f73e9895846747a5391559440fc039e89165c95675bbdf1e0c2452d489643b0d"
+    },
+    {
+      "file": "news-monitoring.xlsx",
+      "bytes": 30391,
+      "sha256": "0071b47270a1cabd14e107d83eac2ae70b7d9d3ef4e76a5e6389b41f660d056e"
+    },
+    {
+      "file": "news-monitoring.snapshot.json.gz",
+      "bytes": 41796,
+      "sha256": "215adaf1c8657b4a73040520ba85ade3097f22460963f06fac9fe3bcd446ed60"
+    }
+  ],
+  "source_anchor_audit": {
+    "valid": true,
+    "checked_references_and_primary_spans": 11,
+    "offset_unit": "unicode_code_points",
+    "notice": "Source anchoring is verified. Semantic correctness remains unmeasured."
+  },
+  "preview": [
+    {
+      "id": "87cdc2ef04106000a28088428d071791",
+      "title": "Reported religious hostility",
+      "quote": "Curse be upon the Jews! ",
+      "criterion_kind": "indicator",
+      "result": "meets_criterion",
+      "attribution": "quoted_speaker",
+      "document_stance": "neutral",
+      "source_title": "Information warfare: COVID-19’s other battleground in the Middle East",
+      "source_url": "https://globalvoices.org/2020/06/10/information-warfare-covid-19s-other-battleground-in-the-middle-east/",
+      "model_reading": "The text reports a specific religious curse directed at Jews as part of a quoted sermon by Taha Al-Mutawakkil.",
+      "walkthrough_note": "The indicator records a hostile curse directed at Jews within a quotation attributed to Taha Al-Mutawakkil. The containing article reports the sermon in a discussion of pandemic information warfare; the occurrence of the words is not evidence that the journalist endorses them."
+    },
+    {
+      "id": "7df34e61b1b71262af27473c96b579c3",
+      "title": "Political Criticism",
+      "quote": "“We have set our minds to waking up the nation, whether it's about arms sales to Azerbaijan, Myanmar, South Sudan or Vietnam”, declared Joseph, who emphasised that his was a pro-Israeli and patriotic position.",
+      "criterion_kind": "boundary",
+      "result": "meets_criterion",
+      "attribution": "quoted_speaker",
+      "document_stance": "neutral",
+      "source_title": "Conflict in Nagorno-Karabakh raises scrutiny of Israel's arms sales to Azerbaijan",
+      "source_url": "https://globalvoices.org/2020/11/12/conflict-nagorno-karabakh-raises-scrutiny-israeli-arms-azerbaijan/",
+      "model_reading": "The text reports on an activist's criticism of arms sales, which he explicitly frames as a pro-Israeli and patriotic position rather than anti-Jewish.",
+      "walkthrough_note": "The Jerusalem Declaration boundary is applied to an activist’s criticism of arms sales. It records political expression within that specific framework; a boundary result is not another positive prejudice signal and must not be added to an indicator count."
+    }
+  ]
+}

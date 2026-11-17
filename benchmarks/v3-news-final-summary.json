@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "benchmark_kind": "real_complete_document_contextual_analysis",
-  "generated_at": "2026-11-17T03:37:37.288899+00:00",
+  "generated_at": "2026-11-17T04:44:20.361883+00:00",
   "collection": {
     "collection": "news",
     "documents": 5000,
@@ -17,7 +17,7 @@
   },
   "run_id": "b2a2edd4ca7047128a5e433d8a874530",
   "project_id": "13780ed307c84dbb937182940febddd0",
-  "status": "running",
+  "status": "partial",
   "config": {
     "provider": "cloudflare",
     "model": "@cf/google/gemma-4-26b-a4b-it",
@@ -25283,7 +25283,19 @@
       "historical_budget_accounted_usd": 4.2409457999999844,
       "new_monthly_debit_usd": 0,
       "notice": "Historical request provenance is inherited, not new inference or a second monthly debit. Changed sources have no reused outcomes."
-    }
+    },
+    "budget_changes": [
+      {
+        "previous": 16.0,
+        "new": 16.0,
+        "at": "2026-11-17T04:34:52.042282+00:00"
+      },
+      {
+        "previous": 16.0,
+        "new": 16.0,
+        "at": "2026-11-17T04:41:29.555159+00:00"
+      }
+    ]
   },
   "model_profile": {
     "provider": "cloudflare",
@@ -25328,106 +25340,245 @@
     "learning_snapshot_id": null,
     "approved_example_ids": [],
     "analysis_config_hash": "e0fa88c7717a4cb2bb931299",
-    "cache_hit_decisions": 0,
-    "response_model": "@cf/google/gemma-4-26b-a4b-it-external"
+    "cache_hit_decisions": 74,
+    "response_model": "@cf/google/gemma-4-26b-a4b-it-external",
+    "task_timeout_seconds": 480,
+    "task_lease_seconds": 600,
+    "task_timeout_source": "scheduler_default"
   },
   "progress": {
     "documents_total": 5000,
-    "documents_done": 2831,
-    "documents_complete": 2703,
-    "documents_settled": 2831,
+    "documents_done": 5000,
+    "documents_complete": 4927,
+    "documents_settled": 5000,
     "blocks_total": 10759,
-    "blocks_done": 5607,
+    "blocks_done": 10686,
     "tasks_total": 5031,
-    "tasks_done": 2717,
-    "tasks_failed": 128,
-    "current_document": "Russia, Ukraine, and the reemergence of demonstrative political murders",
+    "tasks_done": 4958,
+    "tasks_failed": 73,
+    "current_document": "‘Femicide does not start on the day of the crime’: A Brazilian researcher’s view on gender violence in her country",
     "complete": false,
     "analysis_kind": "model_analysis",
     "semantic_analysis_performed": true,
-    "semantic_blocks_done": 5607,
+    "semantic_blocks_done": 10686,
     "lexical_blocks_done": 0
   },
   "usage": {
-    "input_tokens": 50331557,
-    "output_tokens": 7423762,
+    "input_tokens": 96099211,
+    "output_tokens": 14371603,
     "cost_usd": null,
-    "requests": 14212,
+    "requests": 27084,
     "estimated": true
   },
-  "budget_accounted_usd": 7.3974011000000575,
+  "budget_accounted_usd": 14.1058649000001,
   "unit_states": [
     {
       "status": "accepted",
-      "count": 5613
+      "count": 10686
     },
     {
       "status": "partial",
-      "count": 129
-    },
-    {
-      "status": "pending",
-      "count": 5017
+      "count": 73
     }
   ],
   "decision_counts": [
     {
       "result": "does_not_meet",
       "criterion_kind": "boundary",
-      "count": 6018
+      "count": 11501
     },
     {
       "result": "does_not_meet",
       "criterion_kind": "descriptive",
-      "count": 2564
+      "count": 4647
     },
     {
       "result": "does_not_meet",
       "criterion_kind": "indicator",
-      "count": 40811
+      "count": 78380
     },
     {
       "result": "meets_criterion",
       "criterion_kind": "boundary",
-      "count": 10
+      "count": 86
     },
     {
       "result": "meets_criterion",
       "criterion_kind": "descriptive",
-      "count": 18894
+      "count": 35491
     },
     {
       "result": "meets_criterion",
       "criterion_kind": "indicator",
-      "count": 210
+      "count": 356
     },
     {
       "result": "not_applicable",
       "criterion_kind": "boundary",
-      "count": 5539
+      "count": 9931
     },
     {
       "result": "not_applicable",
       "criterion_kind": "descriptive",
-      "count": 1385
+      "count": 2710
     },
     {
       "result": "not_applicable",
       "criterion_kind": "indicator",
-      "count": 34102
+      "count": 61080
     },
     {
       "result": "uncertain",
       "criterion_kind": "descriptive",
-      "count": 63
+      "count": 111
     },
     {
       "result": "uncertain",
       "criterion_kind": "indicator",
-      "count": 29
+      "count": 49
     }
   ],
-  "elapsed_seconds": 2054.1589276660015,
+  "elapsed_seconds": 5930.35552631499,
+  "historical_elapsed_seconds": 3573.067791702997,
+  "total_active_analysis_seconds": 9503.423318017987,
+  "historical_sessions": [
+    {
+      "started_at": "2026-11-16T22:59:41.283783+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 16,
+      "requested_budget_usd": 10.0
+    },
+    {
+      "started_at": "2026-11-17T01:58:58.172288+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 16,
+      "requested_budget_usd": 16.0
+    },
+    {
+      "started_at": "2026-11-17T02:07:21.645639+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 32,
+      "requested_budget_usd": 16.0
+    }
+  ],
+  "fork_provenance": {
+    "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+    "project_id": "13780ed307c84dbb937182940febddd0",
+    "schema_version": "3.0",
+    "operation_id": "c56a1516a2d734ea1d5bdd4b0de25363d71692883ae436ad766db041ba5f9c58",
+    "original_run_id": "211bd5b28cf24a38b170497dc5373977",
+    "reason": "Upstream citation-signature cleanup created a new immutable version of the still-unassessed gv-816538. Reuse validated outcomes only for identical frozen source versions; preserve the original run and historical accounting.",
+    "created_at": "2026-11-17T02:59:24.942209+00:00",
+    "changed_source_ids": [
+      "gv-816538"
+    ],
+    "reused": {
+      "assessments": 63802,
+      "accepted_units": 3251,
+      "completed_tasks": 1584,
+      "documents": 4999
+    },
+    "historical_usage": {
+      "input_tokens": 29013991,
+      "output_tokens": 4241917,
+      "cost_usd": null,
+      "requests": 8127,
+      "estimated": true
+    },
+    "historical_budget_accounted_usd": 4.2409457999999844,
+    "new_monthly_debit_usd": 0,
+    "notice": "Historical request provenance is inherited, not new inference or a second monthly debit. Changed sources have no reused outcomes."
+  },
   "sessions": [
     {
       "started_at": "2026-11-17T03:03:23.059524+00:00",
@@ -25464,12 +25615,109 @@
       },
       "concurrency": 48,
       "requested_budget_usd": 16.0
+    },
+    {
+      "started_at": "2026-11-17T04:34:51.931828+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 48,
+      "requested_budget_usd": 16.0,
+      "operational_settings": {
+        "task_timeout_seconds": 480,
+        "task_lease_seconds": 600,
+        "task_timeout_source": "scheduler_default",
+        "cpu_threads_requested": null,
+        "scope": "Scheduling settings; source units, prompts and selected criteria are unchanged."
+      }
+    },
+    {
+      "started_at": "2026-11-17T04:41:29.445734+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 48,
+      "requested_budget_usd": 16.0,
+      "operational_settings": {
+        "task_timeout_seconds": 480,
+        "task_lease_seconds": 600,
+        "task_timeout_source": "scheduler_default",
+        "cpu_threads_requested": null,
+        "scope": "Scheduling settings; source units, prompts and selected criteria are unchanged."
+      }
     }
   ],
   "parent_provenance_updates": [],
   "compatible_extensions": [],
-  "error_tasks": 128,
+  "error_tasks": 73,
   "interpretation_accuracy": null,
   "independent_human_labels": false,
-  "notice": "All text blocks of each selected article/document are selected. Coverage and failures remain explicit. Exact anchors do not establish interpretation accuracy."
+  "notice": "All text blocks of each selected article/document are selected. Coverage and failures remain explicit. Exact anchors do not establish interpretation accuracy.",
+  "archive": {
+    "manifest": "benchmarks/v3-news/showcase.json",
+    "parts": 50,
+    "counts": {
+      "documents": 5000,
+      "assessments": 204342,
+      "audited_references": 3860336,
+      "source_characters": 32893897,
+      "words": 5251119
+    }
+  }
 }

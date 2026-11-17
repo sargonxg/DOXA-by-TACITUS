@@ -1,10 +1,10 @@
 {
   "schema_version": "3.0",
-  "status": "monitoring",
+  "status": "completed",
   "started_at_unix": 1794880708.3330257,
-  "observed_elapsed_seconds": 5947.98,
+  "observed_elapsed_seconds": 7577.57,
   "sampling_interval_seconds": 2,
-  "samples_observed": 2667,
+  "samples_observed": 3473,
   "peak_by_role": {
     "local_driver": {
       "rss_kib": 124564,
@@ -15,7 +15,7 @@
       "pss_kib": 0
     },
     "ollama_runner": {
-      "rss_kib": 6463388,
+      "rss_kib": 9645040,
       "pss_kib": 0
     },
     "semantic_index_driver": {
@@ -23,7 +23,7 @@
       "pss_kib": 0
     },
     "combined": {
-      "rss_kib": 6597656,
+      "rss_kib": 9686892,
       "pss_kib": 0
     }
   },
@@ -35,11 +35,11 @@
     },
     {
       "elapsed_seconds": 4137.49,
-      "note": "Recognize actual Ollama llama-server child; its earlier memory was not captured. Reported sampled peak is a lower bound."
+      "note": "Process memory sampling resumed; accumulated peaks/timeline retained. The actual Ollama llama-server runner remains included."
     },
     {
       "elapsed_seconds": 5124.68,
-      "note": "Recognize actual Ollama llama-server child; its earlier memory was not captured. Reported sampled peak is a lower bound."
+      "note": "Process memory sampling resumed; accumulated peaks/timeline retained. The actual Ollama llama-server runner remains included."
     }
   ],
   "cgroup_memory_limit_bytes": 17179869184,
@@ -5623,6 +5623,1649 @@
         }
       },
       "cgroup_memory_bytes": 13718757376
+    },
+    {
+      "elapsed_seconds": 5978.26,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109696,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24572,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6566308,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6700576,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 13855649792
+    },
+    {
+      "elapsed_seconds": 6008.63,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109660,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24600,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6566308,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6700568,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 13890400256
+    },
+    {
+      "elapsed_seconds": 6038.95,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109660,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24600,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6566308,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6700568,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 13914505216
+    },
+    {
+      "elapsed_seconds": 6069.27,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109660,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24688,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6740736,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6875084,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14130696192
+    },
+    {
+      "elapsed_seconds": 6099.58,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109660,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24596,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6792192,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6926448,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14042976256
+    },
+    {
+      "elapsed_seconds": 6130.05,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109660,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24596,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6792192,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6926448,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14073937920
+    },
+    {
+      "elapsed_seconds": 6160.65,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109660,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24976,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6665632,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6800268,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 13971992576
+    },
+    {
+      "elapsed_seconds": 6191.14,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109660,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 25132,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6736948,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6871740,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14069538816
+    },
+    {
+      "elapsed_seconds": 6221.48,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109656,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 25132,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6788408,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6923196,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14186958848
+    },
+    {
+      "elapsed_seconds": 6251.82,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109656,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 25132,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6788408,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6923196,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14205661184
+    },
+    {
+      "elapsed_seconds": 6282.13,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109656,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24852,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6731952,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6866460,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14167236608
+    },
+    {
+      "elapsed_seconds": 6312.54,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109656,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24852,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6783412,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6917920,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14252269568
+    },
+    {
+      "elapsed_seconds": 6342.86,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109656,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24868,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6783412,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6917936,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14287269888
+    },
+    {
+      "elapsed_seconds": 6373.17,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109656,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24740,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6783412,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 6917808,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14303690752
+    },
+    {
+      "elapsed_seconds": 6403.46,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24816,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6897408,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 7031876,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14447214592
+    },
+    {
+      "elapsed_seconds": 6433.69,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24692,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6897408,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 7031752,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14364463104
+    },
+    {
+      "elapsed_seconds": 6464.03,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24628,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 6948868,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 7083148,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14409236480
+    },
+    {
+      "elapsed_seconds": 6494.27,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24732,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 7198872,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 7333256,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14681817088
+    },
+    {
+      "elapsed_seconds": 6524.66,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24732,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 7301792,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 7436176,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14800617472
+    },
+    {
+      "elapsed_seconds": 6554.9,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24600,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 7398560,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 7532812,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14691627008
+    },
+    {
+      "elapsed_seconds": 6585.25,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24552,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 7525580,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 7659784,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14792073216
+    },
+    {
+      "elapsed_seconds": 6615.53,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24576,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 7525580,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 7659808,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14815907840
+    },
+    {
+      "elapsed_seconds": 6645.94,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24620,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 7648676,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 7782948,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 14962688000
+    },
+    {
+      "elapsed_seconds": 6676.26,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24620,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 7700136,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 7834408,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 15046885376
+    },
+    {
+      "elapsed_seconds": 6706.63,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24404,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 7912636,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 8046692,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 15289233408
+    },
+    {
+      "elapsed_seconds": 6736.94,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24460,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 8072044,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 8206156,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 15467626496
+    },
+    {
+      "elapsed_seconds": 6767.29,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109652,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24460,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 8174964,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 8309076,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 15607029760
+    },
+    {
+      "elapsed_seconds": 6797.69,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109640,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24284,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 8174952,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 8308876,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 15414595584
+    },
+    {
+      "elapsed_seconds": 6827.96,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109640,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24248,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 8342528,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 8476416,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 15590699008
+    },
+    {
+      "elapsed_seconds": 6858.36,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109480,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24108,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 8552944,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 8686532,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 15659237376
+    },
+    {
+      "elapsed_seconds": 6888.63,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109480,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24108,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 8604404,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 8737992,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 15711088640
+    },
+    {
+      "elapsed_seconds": 6918.89,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109480,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24200,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 8721896,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 8855576,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 15869415424
+    },
+    {
+      "elapsed_seconds": 6949.16,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109480,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24200,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 8824816,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 8958496,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16004263936
+    },
+    {
+      "elapsed_seconds": 6979.53,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109480,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24200,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 8824816,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 8958496,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16020852736
+    },
+    {
+      "elapsed_seconds": 7009.84,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109480,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24264,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 8994824,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9128568,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16215228416
+    },
+    {
+      "elapsed_seconds": 7040.09,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109480,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24160,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9046284,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9179924,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16269340672
+    },
+    {
+      "elapsed_seconds": 7070.42,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109480,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24160,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9046284,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9179924,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16299515904
+    },
+    {
+      "elapsed_seconds": 7100.86,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109480,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24160,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9220296,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9353936,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16498200576
+    },
+    {
+      "elapsed_seconds": 7131.13,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109476,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24048,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9271756,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9405280,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16375631872
+    },
+    {
+      "elapsed_seconds": 7161.47,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109476,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24280,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9432752,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9566508,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16568172544
+    },
+    {
+      "elapsed_seconds": 7191.79,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109472,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24280,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9484212,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9617964,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16641421312
+    },
+    {
+      "elapsed_seconds": 7222.08,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109472,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24280,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9484212,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9617964,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16673898496
+    },
+    {
+      "elapsed_seconds": 7252.38,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109472,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24384,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9387728,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9521584,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16597749760
+    },
+    {
+      "elapsed_seconds": 7282.65,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109472,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24392,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9490648,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9624512,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16733851648
+    },
+    {
+      "elapsed_seconds": 7313.04,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109412,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24264,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9490648,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9624324,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16589139968
+    },
+    {
+      "elapsed_seconds": 7343.37,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109412,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24264,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9490648,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9624324,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16625991680
+    },
+    {
+      "elapsed_seconds": 7373.72,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109416,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24624,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9369244,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9503284,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16556625920
+    },
+    {
+      "elapsed_seconds": 7403.98,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109416,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24260,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9501756,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9635432,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16704524288
+    },
+    {
+      "elapsed_seconds": 7434.24,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109416,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24256,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9553216,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9686888,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16765349888
+    },
+    {
+      "elapsed_seconds": 7464.49,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109416,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24256,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9540792,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9674464,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16771170304
+    },
+    {
+      "elapsed_seconds": 7494.82,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109416,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24256,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9540792,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9674464,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16797605888
+    },
+    {
+      "elapsed_seconds": 7525.06,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109416,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24176,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9540792,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9674384,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16821239808
+    },
+    {
+      "elapsed_seconds": 7555.32,
+      "roles": {
+        "local_driver": {
+          "rss_kib": 109416,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_server": {
+          "rss_kib": 24200,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "ollama_runner": {
+          "rss_kib": 9538168,
+          "pss_kib": 0,
+          "processes": 1
+        },
+        "semantic_index_driver": {
+          "rss_kib": 0,
+          "pss_kib": 0,
+          "processes": 0
+        },
+        "combined": {
+          "rss_kib": 9671784,
+          "pss_kib": 0,
+          "processes": 3
+        }
+      },
+      "cgroup_memory_bytes": 16853184512
     }
   ],
   "notes": [
@@ -5647,6 +7290,22 @@
     "gpu_acceleration_observed": false,
     "num_threads_requested": 4,
     "thread_application_evidence": "llama-server log reports n_threads=4 after the serialized local trial resumed",
-    "limitations": "Single runtime observation; no hardware-independent speed or interpretation-accuracy claim."
+    "limitations": "Single runtime observation; no hardware-independent speed or interpretation-accuracy claim.",
+    "service_startup_environment": {
+      "OLLAMA_NUM_PARALLEL": "1",
+      "OLLAMA_MAX_LOADED_MODELS": "1",
+      "OLLAMA_CONTEXT_LENGTH": "8192",
+      "CUDA_VISIBLE_DEVICES": "-1",
+      "ROCR_VISIBLE_DEVICES": "-1",
+      "GGML_VK_VISIBLE_DEVICES": "-1",
+      "OLLAMA_VULKAN": "false"
+    },
+    "service_configuration_evidence": "Whitelisted values parsed from the dedicated service startup log; /proc environment was not readable."
+  },
+  "cleanup_after_finite_trial": {
+    "ollama_model_unloaded": true,
+    "active_models_after_unload": 0,
+    "installed_weights_retained": true,
+    "next_phase": "sequential CPU NLI benchmark; no overlapping model generation"
   }
 }

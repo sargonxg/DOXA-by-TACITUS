@@ -211,3 +211,82 @@ def test_explicit_large_source_scope_fits_d1_bound_parameter_limit(store, monkey
     result = Workspace(store).create("p", WorkspaceQuery(document_ids=selected, duplicate_policy="sources"))
     assert result["metrics"]["documents"] == result["documents"]["total"] == 123
     assert {row["id"] for row in result["documents"]["items"]}.issubset(set(selected))
+
+
+def test_twenty_terms_all_filters_and_content_dedup_fit_d1_for_both_cursor_resources(store, monkeypatch):
+    terms = [f"needle{index}" for index in range(20)]
+    text = " ".join(terms[:10]) + " filler" * 1800 + " " + " ".join(terms[10:])
+    for identity, sha in [("selected-a", "same-content"), ("selected-alias", "same-content"), ("selected-b", "other-content")]:
+        seed_document(store, identity, sha=sha, text=text)
+        store.index_document(identity, "p", "Synthetic long source", [{"id": "b1", "text": text}])
+    missing = " ".join(terms[:-1])
+    seed_document(store, "missing-term", text=missing)
+    store.index_document("missing-term", "p", "Synthetic incomplete match", [{"id": "b1", "text": missing}])
+    seed_document(store, "foreign", project="other", batch="other-batch", text=text)
+    store.index_document("foreign", "other", "Foreign complete match", [{"id": "b1", "text": text}])
+    assert store.one("SELECT COUNT(*) n FROM document_search WHERE id='selected-a'")["n"] > 1
+    seed_run(store)
+    for identity in ("selected-a", "selected-alias", "selected-b", "missing-term"):
+        seed_assessment(store, "finding-" + identity, identity, review="confirmed", unit="unit-" + identity)
+    # Maximum allowed list sizes remain JSON parameters, never thousands of
+    # placeholders. The old per-term predicates exceeded 100 even at size one.
+    query = WorkspaceQuery(
+        run_id="run", q=" ".join(terms), document_ids=["selected-a", "selected-alias", "selected-b", "missing-term", "foreign"] + [f"absent-{n}" for n in range(4995)],
+        authors=["Author A"] + [f"unused-author-{n}" for n in range(99)],
+        document_types=["news"] + [f"unused-type-{n}" for n in range(99)],
+        batch_ids=["batch-a"] + [f"unused-batch-{n}" for n in range(99)],
+        from_date="2024-01-01", to_date="2024-12-31",
+        lens_ids=["ihra"] + [f"unused-lens-{n}" for n in range(11)],
+        criterion_ids=["anti_jewish_generalization"] + [f"unused-criterion-{n}" for n in range(99)],
+        speech_roles=["attributed_quotation"] + [f"unused-role-{n}" for n in range(9)],
+        results=["meets_criterion"] + [f"unused-result-{n}" for n in range(9)],
+        review_status="confirmed", stance="supports", duplicate_policy="exact_content",
+    )
+    original = store.query
+    counts = []
+    def bounded(sql, params=()):
+        counts.append(len(params))
+        assert len(params) <= 100, "Every aggregate/count/page must fit the D1 binding ceiling"
+        return original(sql, params)
+    monkeypatch.setattr(store, "query", bounded)
+    service = Workspace(store)
+    result = service.create("p", query)
+    assert result["documents"]["total"] == result["findings"]["total"] == 2
+    assert result["metrics"]["documents"] == result["metrics"]["findings"] == 2
+    saved = service.require_query(result["query_id"])
+    for resource, expected in [("documents", ["selected-a", "selected-b"]),
+                               ("findings", ["finding-selected-a", "finding-selected-b"])]:
+        first = service.page(saved, resource, limit=1)
+        assert [row["id"] for row in first["items"]] == expected[:1] and first["next_cursor"]
+        last = service.page(saved, resource, cursor=first["next_cursor"], limit=1)
+        assert [row["id"] for row in last["items"]] == expected[1:] and last["next_cursor"] is None
+    assert max(counts) <= 100
+
+
+@pytest.mark.parametrize("query,expected", [
+    ("alpha beta", {"across", "operators"}),
+    ("alpha alpha beta", {"across", "operators"}),
+    ('"alpha" OR beta* -NOT café', {"operators"}),
+    ("CAFÉ", {"operators"}),
+    ("alpha beta " + "alpha " * 18 + "unmatchedtwentyfirst", {"across", "operators"}),
+])
+def test_fts_term_intersection_keeps_fragment_unicode_operator_and_duplicate_semantics(store, query, expected):
+    examples = {"across": "alpha " + "filler " * 1800 + "beta", "operators": "alpha OR beta NOT café", "missing": "alpha"}
+    for identity, text in examples.items():
+        seed_document(store, identity, text=text)
+        store.index_document(identity, "p", "Synthetic query fixture", [{"id": "b1", "text": text}])
+    result = Workspace(store).create("p", WorkspaceQuery(run_id="none", q=query, duplicate_policy="sources"))
+    assert {row["id"] for row in result["documents"]["items"]} == expected
+
+
+def test_non_fts_fallback_keeps_title_or_author_phrase_matching(store, monkeypatch):
+    seed_document(store, "title", author="Other author")
+    store.execute("UPDATE documents SET title='Amber Birch dossier' WHERE id='title'")
+    seed_document(store, "author", author="Amber Birch")
+    seed_document(store, "body-only", author="Other author", text="Amber Birch")
+    monkeypatch.setattr(store, "fts", False)
+    service = Workspace(store)
+    result = service.create("p", WorkspaceQuery(run_id="none", q="Amber Birch", duplicate_policy="sources"))
+    assert {row["id"] for row in result["documents"]["items"]} == {"title", "author"}
+    reversed_phrase = service.create("p", WorkspaceQuery(run_id="none", q="Birch Amber", duplicate_policy="sources"))
+    assert reversed_phrase["documents"]["total"] == 0

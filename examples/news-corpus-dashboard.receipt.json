@@ -1,0 +1,172 @@
+{
+  "schema_version": "doxa-recorded-export-receipt-1",
+  "generated_at": "2026-11-17T04:47:08.451408+00:00",
+  "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+  "run_status": "partial",
+  "counts": {
+    "documents": 5000,
+    "assessments": 204342,
+    "fully_assessed_documents": 4927,
+    "units_total": 10759,
+    "units_done": 10686,
+    "characters": 32893897,
+    "processed_characters": 32651673,
+    "basis": "contextual source units",
+    "semantic_analysis_performed": true,
+    "not_assessed_lenses": [],
+    "complete_documents": 4927,
+    "selected_lens_scope_complete": true,
+    "criterion_decisions_requested": 204421,
+    "criterion_decisions_retained": 204342,
+    "criterion_decisions_unresolved": 79
+  },
+  "typed_counts": [
+    {
+      "criterion_kind": "boundary",
+      "result": "does_not_meet",
+      "count": 11501
+    },
+    {
+      "criterion_kind": "boundary",
+      "result": "meets_criterion",
+      "count": 86
+    },
+    {
+      "criterion_kind": "boundary",
+      "result": "not_applicable",
+      "count": 9931
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "does_not_meet",
+      "count": 4647
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "meets_criterion",
+      "count": 35491
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "not_applicable",
+      "count": 2710
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "uncertain",
+      "count": 111
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "does_not_meet",
+      "count": 78380
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "meets_criterion",
+      "count": 356
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "not_applicable",
+      "count": 61080
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "uncertain",
+      "count": 49
+    }
+  ],
+  "query_id": "3ccff989c541457b97b0199b31f6ea63",
+  "scope_hash": "7643c6e5e9bd2c159a3c39d99e2d46c1003e509d1799fcbb59ea2326ce4af49a",
+  "snapshot_version": "6677",
+  "command": [
+    ".venv/bin/python",
+    "scripts/export_recorded_run.py",
+    "--data-dir",
+    "data/v3-news",
+    "--run-id",
+    "b2a2edd4ca7047128a5e433d8a874530",
+    "--output-prefix",
+    "examples/news-corpus-dashboard"
+  ],
+  "exporter_source_sha256": "304a2d3baf249992dc9a1d54fdc4256b72c5af4d7e055ca5670e9002700d8ed1",
+  "manifest_file": "news-corpus-dashboard.manifest.json",
+  "manifest_sha256": "fce1c9036b8fbb765da972d07ef6f01aaed5b2d7397b9a3b0905648cd2f51388",
+  "measurement": {
+    "wall_seconds": 123.81000539100205,
+    "peak_rss_kib": 231300,
+    "user_cpu_seconds": 103.433938,
+    "system_cpu_seconds": 19.893962,
+    "method": "Fresh Python process; perf_counter wallclock and resource.getrusage(RUSAGE_SELF).ru_maxrss on Linux. /usr/bin/time was unavailable.",
+    "python_version": "3.12.14",
+    "system": "Linux",
+    "architecture": "x86_64"
+  },
+  "source_database_access": "SQLite URI mode=ro plus query_only; no source database writes",
+  "inference_requests_made": 0,
+  "source_ids_sha256": "8493bc84dd68b813849429cb380c6bfbdb7f69c589b4d943a5cc6f3084d537fc",
+  "assessment_ids_sha256": "527c1d709ed41374e74155f2b5d1f6de9eb755b46516e84bce09fb489c98b04d",
+  "assessment_record_order_sha256": "3770b92f43d20767e40065e52bb0f687651c08ae391d1fb0580f9afb0fefe236",
+  "human_appendix": {
+    "profile": "briefing",
+    "assessment_limit": 25,
+    "source_limit": 25,
+    "totals_use_full_selection": true,
+    "order": "indicator matches, uncertainty, boundaries, descriptive matches, other results"
+  },
+  "xlsx": {
+    "logical_rows": {
+      "Documents": 5000,
+      "Findings": 204342,
+      "Typed results": 11,
+      "Authors": 880,
+      "Lenses": 6,
+      "Units": 2,
+      "Runs": 1,
+      "Methodology": 9
+    },
+    "physical_rows": {
+      "Documents": 5000,
+      "Findings": 204342,
+      "Typed results": 11,
+      "Authors": 880,
+      "Lenses": 6,
+      "Units": 2,
+      "Runs": 2,
+      "Methodology": 9
+    },
+    "constant_memory": true,
+    "zip_recompression": {
+      "applied": false,
+      "before_bytes": 92645472,
+      "after_bytes": 92645472,
+      "threshold_bytes": 95000000
+    }
+  },
+  "files": [
+    {
+      "file": "news-corpus-dashboard.snapshot.json.gz",
+      "bytes": 66704212,
+      "sha256": "c11285a0bba90b16e463056abc478cb80fd726e591ca61880f74ac69a03211d7"
+    },
+    {
+      "file": "news-corpus-dashboard.html",
+      "bytes": 130288,
+      "sha256": "9da202d778548425566aa34b18958740c1326248630d46ab5c2671625de39ee6"
+    },
+    {
+      "file": "news-corpus-dashboard.pdf",
+      "bytes": 178349,
+      "sha256": "a8dd995f3aa73a55449f2caefd025a533899dbe3442a638f9427cd80f7ebe268"
+    },
+    {
+      "file": "news-corpus-dashboard.xlsx",
+      "bytes": 92645472,
+      "sha256": "54831b1a9b7ca42e1a66db9281e8f43af115604f1eed51620d9dc5161bfd2647"
+    }
+  ],
+  "interpretation_accuracy": null,
+  "independent_human_labels": false,
+  "notice": "Actual export fidelity/performance receipt. Assessment outcomes and processing coverage do not establish independent interpretation accuracy. All selected sources and all four assessment outcome types are retained."
+}

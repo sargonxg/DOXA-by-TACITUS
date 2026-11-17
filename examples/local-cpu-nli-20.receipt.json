@@ -1,0 +1,32 @@
+{
+  "schema_version": "3.0",
+  "exporter_version": "doxa-cpu-nli-workbook-1",
+  "generated_at": "2026-11-17T04:19:07.333433+00:00",
+  "input_summary": "benchmarks/cpu-nli-20-news-summary.json",
+  "input_summary_sha256": "d84bc581deb616d34b68355616ca0f75b3d3aa923831c264ad0d34c654fe1fc9",
+  "input_scores_sha256": "3990f13ad4c48fe59e9aa48d6c1a2c7fd91a881f4a9e9a0c04b5bea3fd68578f",
+  "workbook": "examples/local-cpu-nli-20.xlsx",
+  "workbook_sha256": "6ccc4adf49a6f741199287897bddd427e2572abfa84a22dce6a39e78c9099b41",
+  "workbook_bytes": 116927,
+  "sheet_data_rows": {
+    "Sources": 20,
+    "Windows": 60,
+    "Scores": 240,
+    "Hypotheses": 4
+  },
+  "models": 1,
+  "source_integrity_checks": {
+    "source_hashes_verified": 20,
+    "exact_windows_verified": 60,
+    "score_logit_pairs_verified": 240,
+    "original_block_references_verified": 537,
+    "summary_sha256": "d84bc581deb616d34b68355616ca0f75b3d3aa923831c264ad0d34c654fe1fc9",
+    "scores_sha256": "3990f13ad4c48fe59e9aa48d6c1a2c7fd91a881f4a9e9a0c04b5bea3fd68578f"
+  },
+  "interpretation_accuracy": null,
+  "model_inference_performed": false,
+  "paid_calls": 0,
+  "xlsxwriter_version": "3.3.1",
+  "exporter_sha256": "1ee430b528bd71d7c1da4039facace71460ea14fbdd52204c557877159a1353b",
+  "reproduce": "python scripts/export_cpu_nli_workbook.py --summary benchmarks/cpu-nli-20-news-summary.json --output examples/local-cpu-nli-20.xlsx --overwrite"
+}
