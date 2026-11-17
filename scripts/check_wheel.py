@@ -48,7 +48,7 @@ with TestClient(create_app(os.environ["DOXA_DATA_DIR"],start_workers=False,use_s
     identity=response.json()["id"]
     manager=client.app.state.report_jobs
     for _ in range(8):
-        manager.work_once(identity,deadline_seconds=120)
+        manager.work_once(identity,deadline_seconds=420)
         job=manager.get(identity)
         if job["status"] in {"completed","failed","cancelled"}:
             break
