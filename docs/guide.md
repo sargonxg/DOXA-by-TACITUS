@@ -121,6 +121,8 @@ snapshot is rejected instead of silently exporting changed totals.
 
 ## Read recorded results with their limits
 
+The current twenty-source contextual run retains **11,701/11,704 criterion assessments**, covering **613/616 source units**, with **18/20 documents** fully assessed. It remains partial. The [commented institutional](../examples/institutional-context-commentary.pdf) and [political-framing](../examples/political-framing-commentary.pdf) PDFs explain actual quotations and model readings with separate AI-authored notes. The [79-unit independent comparison](v3-independent-review.md) preserves both models' disagreements without treating either as a human verdict.
+
 The historical twenty-document cloud showcase contains 1,071 retained
 observations; 5,788 of 8,999 source blocks passed its checks. These are recorded
 v1 facts, not v3 contextual measurements or interpretation-accuracy estimates.

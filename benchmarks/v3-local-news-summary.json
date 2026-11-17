@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0",
   "benchmark_kind": "real_complete_document_contextual_analysis",
-  "generated_at": "2026-11-17T03:35:36.227188+00:00",
+  "generated_at": "2026-11-17T04:05:12.391520+00:00",
   "collection": {
     "collection": "news-sample",
     "documents": 20,
@@ -17,7 +17,7 @@
   },
   "run_id": "42a6e0514ef94f959e2dc3b28023ab89",
   "project_id": "1907d8c11f94413cbd94c79eef805a72",
-  "status": "running",
+  "status": "cancelled",
   "config": {
     "provider": "ollama",
     "model": "qwen3.5:4b",
@@ -260,41 +260,41 @@
   },
   "progress": {
     "documents_total": 20,
-    "documents_done": 1,
-    "documents_complete": 1,
-    "documents_settled": 1,
+    "documents_done": 20,
+    "documents_complete": 2,
+    "documents_settled": 20,
     "blocks_total": 115,
-    "blocks_done": 5,
+    "blocks_done": 8,
     "tasks_total": 115,
-    "tasks_done": 5,
-    "tasks_failed": 1,
-    "current_document": "Controversy over an explosion in the Caspian sea",
+    "tasks_done": 8,
+    "tasks_failed": 2,
+    "current_document": "LIVE on September 22: Techno-authoritarianism in India",
     "complete": false,
     "analysis_kind": "model_analysis",
     "semantic_analysis_performed": true,
-    "semantic_blocks_done": 5,
+    "semantic_blocks_done": 8,
     "lexical_blocks_done": 0
   },
   "usage": {
-    "input_tokens": 58373,
-    "output_tokens": 7221,
+    "input_tokens": 108605,
+    "output_tokens": 15849,
     "cost_usd": null,
-    "requests": 31,
+    "requests": 56,
     "estimated": true
   },
   "budget_accounted_usd": 0.0,
   "unit_states": [
     {
       "status": "accepted",
-      "count": 5
+      "count": 8
     },
     {
       "status": "partial",
-      "count": 1
+      "count": 2
     },
     {
       "status": "pending",
-      "count": 109
+      "count": 105
     }
   ],
   "decision_counts": [
@@ -311,27 +311,42 @@
     {
       "result": "does_not_meet",
       "criterion_kind": "indicator",
-      "count": 13
+      "count": 17
+    },
+    {
+      "result": "meets_criterion",
+      "criterion_kind": "boundary",
+      "count": 2
     },
     {
       "result": "meets_criterion",
       "criterion_kind": "descriptive",
-      "count": 14
+      "count": 28
+    },
+    {
+      "result": "meets_criterion",
+      "criterion_kind": "indicator",
+      "count": 5
     },
     {
       "result": "not_applicable",
       "criterion_kind": "boundary",
-      "count": 10
+      "count": 16
     },
     {
       "result": "not_applicable",
       "criterion_kind": "indicator",
-      "count": 65
+      "count": 107
+    },
+    {
+      "result": "uncertain",
+      "criterion_kind": "indicator",
+      "count": 1
     }
   ],
-  "elapsed_seconds": 2687.1971558450023,
+  "elapsed_seconds": 4435.798490375004,
   "historical_elapsed_seconds": 0,
-  "total_active_analysis_seconds": 2687.1971558450023,
+  "total_active_analysis_seconds": 4435.798490375004,
   "historical_sessions": [],
   "fork_provenance": null,
   "sessions": [
@@ -520,7 +535,9 @@
         "task_timeout_source": "server_environment",
         "cpu_threads_requested": 4,
         "scope": "Scheduling settings; source units, prompts and selected criteria are unchanged."
-      }
+      },
+      "ended_at": "2026-11-17T04:05:12.347935+00:00",
+      "stop_reason": "Finite CPU trial complete; preserve all 20 selected articles and incomplete coverage, then run the independent CPU NLI baseline sequentially."
     }
   ],
   "parent_provenance_updates": [
@@ -550,8 +567,26 @@
       "reason": "Unselected lens extension; selected rubric packs, core engine and response contracts are byte-equivalent."
     }
   ],
-  "error_tasks": 1,
+  "error_tasks": 2,
   "interpretation_accuracy": null,
   "independent_human_labels": false,
-  "notice": "All text blocks of each selected article/document are selected. Coverage and failures remain explicit. Exact anchors do not establish interpretation accuracy."
+  "notice": "All text blocks of each selected article/document are selected. Coverage and failures remain explicit. Exact anchors do not establish interpretation accuracy.",
+  "finite_trial_stop": {
+    "complete_articles": 2,
+    "last_attempted_article": "ed1181f5176e204bcaa8613fffe45fd9",
+    "reason": "current326word_article_settled",
+    "at_unix": 1794888284.8253741,
+    "additional_elapsed_seconds": 1048.2237668037415
+  },
+  "archive": {
+    "manifest": "benchmarks/v3-local-news/showcase.json",
+    "parts": 1,
+    "counts": {
+      "documents": 20,
+      "assessments": 186,
+      "audited_references": 1042,
+      "source_characters": 118700,
+      "words": 18709
+    }
+  }
 }

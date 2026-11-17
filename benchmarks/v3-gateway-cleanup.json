@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-17T04:45:28.646627+00:00",
+  "kind": "temporary_benchmark_gateway_cleanup",
+  "worker": "doxa-v3-verification-20261116",
+  "action": "disabled_workers_dev_and_preview_urls",
+  "before": {
+    "enabled": true,
+    "previews_enabled": false
+  },
+  "verified_after": {
+    "enabled": false,
+    "previews_enabled": false
+  },
+  "pending_or_running_inference_tasks": 0,
+  "open_budget_reservations": 0,
+  "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+  "gateway_source": "scripts/cf_v3_benchmark_proxy.mjs",
+  "gateway_source_sha256": "d34e469ab97675dc092074a0ff7f08791ea160746a226c7f2908d0346351eea8",
+  "notice": "Temporary authenticated inference endpoint is disabled; its script source is retained. No public TACITUS website worker, document store or database was deleted."
+}

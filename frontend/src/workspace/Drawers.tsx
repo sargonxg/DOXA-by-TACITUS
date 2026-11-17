@@ -228,6 +228,9 @@ function AnalysisPanel({
   const [customName, setCustomName] = useState("");
   const [customKind, setCustomKind] = useState("descriptive");
   const [health, setHealth] = useState<Item | null>(null);
+  const [healthSelection, setHealthSelection] = useState("");
+  const [inputPrice, setInputPrice] = useState("");
+  const [outputPrice, setOutputPrice] = useState("");
   const [checking, setChecking] = useState(false);
   const [memory, setMemory] = useState("active");
   const [learning, setLearning] = useState<Item>({});
@@ -236,15 +239,53 @@ function AnalysisPanel({
       .then(setLearning)
       .catch((reason) => onNotice(message(reason), true));
   }, [project]);
+  const endpointPricing = ["openai", "runpod"].includes(provider);
+  const selection = JSON.stringify([provider, model]);
+  const selectedHealth = healthSelection === selection ? health : null;
+  const invalidPrices = [inputPrice, outputPrice].some(
+    (value) =>
+      value.trim() !== "" &&
+      (!Number.isFinite(Number(value)) || Number(value) < 0),
+  );
+  const completePrices =
+    inputPrice.trim() !== "" && outputPrice.trim() !== "" && !invalidPrices;
+  const confirmedLocal =
+    provider === "openai" &&
+    selectedHealth?.ok === true &&
+    selectedHealth.mode === "local";
+  const pricingReady =
+    !endpointPricing || (!invalidPrices && (completePrices || confirmedLocal));
+  function tokenPrices(): Item {
+    if (!endpointPricing) return {};
+    return {
+      ...(inputPrice.trim() !== "" && !invalidPrices
+        ? { input_price_per_million: Number(inputPrice) }
+        : {}),
+      ...(outputPrice.trim() !== "" && !invalidPrices
+        ? { output_price_per_million: Number(outputPrice) }
+        : {}),
+    };
+  }
+  function resetPricing() {
+    setInputPrice("");
+    setOutputPrice("");
+    setHealth(null);
+    setHealthSelection("");
+  }
   async function check() {
+    if (endpointPricing && invalidPrices)
+      return onNotice(
+        "Token rates must be finite, non-negative numbers.",
+        true,
+      );
     setChecking(true);
     try {
-      setHealth(
-        await request("/v3/models/health", {
-          method: "POST",
-          body: JSON.stringify({ provider, model }),
-        }),
-      );
+      const result = await request<Item>("/v3/models/health", {
+        method: "POST",
+        body: JSON.stringify({ provider, model, ...tokenPrices() }),
+      });
+      setHealth(result);
+      setHealthSelection(selection);
     } catch (error) {
       onNotice(message(error), true);
     } finally {
@@ -252,6 +293,11 @@ function AnalysisPanel({
     }
   }
   async function submit() {
+    if (!pricingReady)
+      return onNotice(
+        "Enter finite, non-negative input and output token rates for this endpoint. Blank rates are allowed only after the server confirms local inference.",
+        true,
+      );
     if (!selected.length && !custom.trim())
       return onNotice(
         "Select a framework or supply explicit custom criteria.",
@@ -272,6 +318,7 @@ function AnalysisPanel({
       persona: role,
       budget_usd: Number(budget),
       allow_remote_text: consent,
+      ...tokenPrices(),
     };
     if (memory !== "active") body.learning_snapshot_id = memory || null;
     if (custom.trim())
@@ -412,6 +459,7 @@ function AnalysisPanel({
         <label>
           Provider
           <select
+            aria-label="Provider"
             value={provider}
             onChange={(event) => {
               const value = event.target.value;
@@ -421,9 +469,11 @@ function AnalysisPanel({
                   ? "qwen3.5:4b"
                   : value === "lexical"
                     ? "lexical-baseline-v1"
-                    : "@cf/google/gemma-4-26b-a4b-it",
+                    : value === "cloudflare"
+                      ? "@cf/google/gemma-4-26b-a4b-it"
+                      : "",
               );
-              setHealth(null);
+              resetPricing();
             }}
           >
             <option value="cloudflare">Cloudflare · cloud default</option>
@@ -448,9 +498,18 @@ function AnalysisPanel({
       <label>
         Model
         <input
+          aria-label="Model"
           list="w-model-options"
           value={model}
-          onChange={(event) => setModel(event.target.value)}
+          placeholder={
+            endpointPricing
+              ? "Exact model ID on the configured endpoint"
+              : undefined
+          }
+          onChange={(event) => {
+            setModel(event.target.value);
+            resetPricing();
+          }}
         />
         <datalist id="w-model-options">
           {models
@@ -462,6 +521,67 @@ function AnalysisPanel({
             ))}
         </datalist>
       </label>
+      {endpointPricing && (
+        <details className="w-details" open>
+          <summary>Advanced endpoint token pricing</summary>
+          <p>
+            Enter your endpoint's input and output prices in USD per million
+            tokens. DOXA has no assumed prices for a custom endpoint. These
+            estimates are recorded with the run; they are not provider invoices.
+          </p>
+          <div className="w-form-grid">
+            <label>
+              Input price · USD per million tokens
+              <input
+                aria-label="Input price · USD per million tokens"
+                type="number"
+                min="0"
+                step="any"
+                value={inputPrice}
+                onChange={(event) => setInputPrice(event.target.value)}
+              />
+            </label>
+            <label>
+              Output price · USD per million tokens
+              <input
+                aria-label="Output price · USD per million tokens"
+                type="number"
+                min="0"
+                step="any"
+                value={outputPrice}
+                onChange={(event) => setOutputPrice(event.target.value)}
+              />
+            </label>
+          </div>
+          <p className="w-footnote">
+            Changing provider or model clears these estimates. Credentials and
+            endpoint URLs stay in server configuration.
+          </p>
+          {confirmedLocal ? (
+            <p className="w-footnote">
+              The server explicitly reports local inference: the API token fee
+              is zero, so token rates may stay blank. Machine, electricity and
+              hosting costs are excluded.
+            </p>
+          ) : (
+            <p className="w-footnote">
+              Both rates are required to start remote inference. For a local
+              OpenAI-compatible service, Check provider can confirm the server's
+              explicit local mode before leaving rates blank.
+            </p>
+          )}
+          {invalidPrices && (
+            <ErrorMessage text="Token rates must be finite, non-negative numbers." />
+          )}
+          {provider === "runpod" && (
+            <p className="w-footnote">
+              RunPod GPU initialization, execution, idle time and storage may be
+              billed separately. Those charges are not capped by DOXA's token
+              budget.
+            </p>
+          )}
+        </details>
+      )}
       {!["ollama", "lexical"].includes(provider) && (
         <label className="w-transfer-consent">
           <input
@@ -487,19 +607,23 @@ function AnalysisPanel({
           </p>
         </div>
       )}
-      {health && (
-        <div className={`w-info ${health.ok ? "" : "amber"}`}>
+      {selectedHealth && (
+        <div className={`w-info ${selectedHealth.ok ? "" : "amber"}`}>
           <ShieldCheck size={17} />
           <p>
-            {health.ok ? "Provider is ready." : "Provider needs attention."}{" "}
-            {typeof health.details === "string" ? health.details : ""}
+            {selectedHealth.ok
+              ? "Provider is ready."
+              : "Provider needs attention."}{" "}
+            {typeof selectedHealth.details === "string"
+              ? selectedHealth.details
+              : ""}
           </p>
         </div>
       )}
       <div className="w-drawer-actions">
         <Button
           variant="outline"
-          disabled={checking}
+          disabled={checking || !model.trim()}
           onClick={() => void check()}
         >
           {checking ? (
@@ -510,7 +634,9 @@ function AnalysisPanel({
           Check provider
         </Button>
         <Button
-          disabled={busy || !query?.documents.total}
+          disabled={
+            busy || !query?.documents.total || !model.trim() || !pricingReady
+          }
           onClick={() => void submit()}
         >
           <Play size={14} />

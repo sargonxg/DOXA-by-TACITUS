@@ -75,8 +75,35 @@ def prepare(institutional_snapshot: Path, output: Path, news_summary: Path | Non
                 "summary_sha256": hashlib.sha256(news_bytes).hexdigest(),
                 "selected_documents": saved_news["collection"]["documents"], "units_done": units_done, "units_total": units_total,
                 "coverage_percent": round(100 * units_done / units_total, 1), "assessments_retained": sum(row["count"] for row in saved_news["decision_counts"]),
+                "fully_assessed_documents": saved_news["progress"].get("documents_complete"),
+                "criterion_decisions_requested": units_total * sum(len(pack.get("criteria", [])) for pack in saved_news.get("config", {}).get("lens_snapshots", [])),
+                "budget_accounted_usd": saved_news.get("budget_accounted_usd"),
+                "provider_cost_usd": saved_news.get("usage", {}).get("cost_usd"),
                 "independent_human_labels": False, "interpretation_accuracy": None,
                 "source_summary": "https://github.com/sargonxg/DOXA-by-TACITUS/blob/main/" + news_summary.resolve().relative_to(ROOT).as_posix()}}
+    captured = news["analysis_snapshot"]
+    captured["criterion_decisions_unresolved"] = max(0, captured["criterion_decisions_requested"] - captured["assessments_retained"])
+    dashboard_path = ROOT / "examples/news-corpus-dashboard.manifest.json"
+    if dashboard_path.exists():
+        dashboard = json.loads(dashboard_path.read_text())
+        if dashboard["run_id"] != captured["run_id"] or dashboard["counts"]["documents"] != actual_count or dashboard["counts"]["assessments"] != captured["assessments_retained"]:
+            raise ValueError("The dashboard and dated news summary must describe the same final recorded selection")
+        files = []
+        for row in dashboard["files"]:
+            if Path(row["file"]).name != row["file"]:
+                raise ValueError("Dashboard artifact names must be simple local files")
+            path = dashboard_path.parent / row["file"]
+            value = hashlib.sha256()
+            with path.open("rb") as stream:
+                for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+                    value.update(chunk)
+            if path.stat().st_size != row["bytes"] or value.hexdigest() != row["sha256"]:
+                raise ValueError("Dashboard artifact checksum differs from its manifest")
+            files.append({**row, "url": "https://github.com/sargonxg/DOXA-by-TACITUS/raw/refs/heads/main/examples/" + row["file"]})
+        news["dashboard_exports"] = {"run_id": dashboard["run_id"], "run_status": dashboard["run_status"],
+            "counts": dashboard["counts"], "human_appendix": dashboard["human_appendix"], "files": files,
+            "manifest_url": "https://github.com/sargonxg/DOXA-by-TACITUS/blob/main/examples/news-corpus-dashboard.manifest.json",
+            "receipt_url": "https://github.com/sargonxg/DOXA-by-TACITUS/blob/main/examples/news-corpus-dashboard.receipt.json"}
     result = {"schema_version": "3.0", "institutional": institutional, "news": news,
               "legacy_reference": {"method_version": "legacy-v1.2", "findings_retained": 1071, "coverage_percent": 64.3,
                 "source_summary": "https://github.com/sargonxg/DOXA-by-TACITUS/blob/main/benchmarks/cloud-gemma4-summary.json"},

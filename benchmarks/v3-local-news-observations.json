@@ -1,0 +1,346 @@
+{
+  "schema_version": "3.0",
+  "generated_at": "2026-11-17T04:08:41.299162+00:00",
+  "kind": "actual_cpu_local_interpretation_trial",
+  "run_id": "42a6e0514ef94f959e2dc3b28023ab89",
+  "status": "cancelled",
+  "all_selected_articles": 20,
+  "complete_articles": 2,
+  "full_selection_complete": false,
+  "task_counts": {
+    "cancelled": 105,
+    "completed": 8,
+    "failed": 2
+  },
+  "unit_counts": {
+    "accepted": 8,
+    "partial": 2,
+    "pending": 105
+  },
+  "current_validation_errors": {
+    "invalid_evidence": 3,
+    "missing_evidence": 1
+  },
+  "retained_source_anchor_checks": {
+    "assessment_primary_quotes_checked": 186,
+    "sentence_references_checked": 1042,
+    "all_valid": true,
+    "meaning": "Original block offsets and canonical sentence IDs verified; this does not establish interpretation accuracy."
+  },
+  "completed_article_observations": [
+    {
+      "document_id": "c2c4215c4e3ca50a2fe713305c28f385",
+      "source_id": "gv-740730",
+      "title": "Controversy over an explosion in the Caspian sea",
+      "words": 255,
+      "source_units": 2,
+      "requests_in_final_session": 7,
+      "reported_input_tokens": 15894,
+      "reported_output_tokens": 2679,
+      "request_wall_interval_seconds": 530.678,
+      "sum_request_elapsed_seconds": 530.537,
+      "timing_scope": "Final serialized 4-thread session; prior interrupted reservations excluded from these article timings, retained in cumulative ledger."
+    },
+    {
+      "document_id": "ed1181f5176e204bcaa8613fffe45fd9",
+      "source_id": "gv-755578",
+      "title": "Nigerian citizen is prevented from entering Mozambique, reigniting debate on mobility in Africa",
+      "words": 326,
+      "source_units": 2,
+      "requests_in_final_session": 17,
+      "reported_input_tokens": 33519,
+      "reported_output_tokens": 5826,
+      "request_wall_interval_seconds": 1194.193,
+      "sum_request_elapsed_seconds": 1194.074,
+      "timing_scope": "Final serialized 4-thread session; prior interrupted reservations excluded from these article timings, retained in cumulative ledger."
+    }
+  ],
+  "model_profile": {
+    "provider": "ollama",
+    "model": "qwen3.5:4b",
+    "mode": "local",
+    "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "quantization": "Q4_K_M",
+    "context_limit": 8192,
+    "temperature": 0,
+    "structured_output": true,
+    "source_pack_bytes": 3600,
+    "source_pack_windows": 20,
+    "lens_batch_size": 2,
+    "batching_version": "local-bounded-2",
+    "citation_offset_unit": "unicode_code_points",
+    "prompt_version": "contextual-decisions-3.2.1",
+    "response_schema_version": "source-vectors-3.2",
+    "num_threads_requested": 4,
+    "methodology_version": "3.0",
+    "unit_builder_version": "source-units-3.1",
+    "unit_builder_config": {
+      "max_unit_chars": 1200,
+      "context_sentences": 2
+    },
+    "result_codes": {
+      "0": "does_not_meet",
+      "1": "meets_criterion",
+      "2": "uncertain",
+      "3": "not_applicable"
+    },
+    "wire_budget_version": "3.2.2",
+    "criterion_registry_version": "3.0.0",
+    "rubric_versions": {
+      "discourse": "1.0.0",
+      "ihra": "2026-11-operational-1",
+      "jda": "2021-operational-1",
+      "nexus": "2024-06-operational-1",
+      "anti-muslim-hostility": "2026-03-operational-1",
+      "anti-muslim-racism": "2025-operational-1"
+    },
+    "learning_snapshot_id": null,
+    "approved_example_ids": [],
+    "analysis_config_hash": "9302daf7f72f92d11075b01b",
+    "cache_hit_decisions": 0,
+    "task_timeout_seconds": 1800,
+    "task_lease_seconds": 1920,
+    "task_timeout_source": "server_environment"
+  },
+  "local_runtime_observation": {
+    "observed_at": "2026-11-17T03:20:22.836546+00:00",
+    "runtime": "Ollama",
+    "endpoint": "local_loopback",
+    "models": [
+      {
+        "name": "qwen3.5:4b",
+        "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "size": 3376404232,
+        "size_vram": 0,
+        "context_length": 8192
+      }
+    ],
+    "gpu_acceleration_observed": false,
+    "num_threads_requested": 4,
+    "thread_application_evidence": "llama-server log reports n_threads=4 after the serialized local trial resumed",
+    "limitations": "Single runtime observation; no hardware-independent speed or interpretation-accuracy claim.",
+    "service_startup_environment": {
+      "OLLAMA_NUM_PARALLEL": "1",
+      "OLLAMA_MAX_LOADED_MODELS": "1",
+      "OLLAMA_CONTEXT_LENGTH": "8192",
+      "CUDA_VISIBLE_DEVICES": "-1",
+      "ROCR_VISIBLE_DEVICES": "-1",
+      "GGML_VK_VISIBLE_DEVICES": "-1",
+      "OLLAMA_VULKAN": "false"
+    },
+    "service_configuration_evidence": "Whitelisted values parsed from the dedicated service startup log; /proc environment was not readable."
+  },
+  "operational_sessions": [
+    {
+      "started_at": "2026-11-16T23:01:49.066752+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "ollama",
+        "model": "qwen3.5:4b",
+        "mode": "local",
+        "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "quantization": "Q4_K_M",
+        "context_limit": 8192,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 3600,
+        "source_pack_windows": 20,
+        "lens_batch_size": 2,
+        "batching_version": "local-bounded-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."
+      },
+      "concurrency": 1,
+      "requested_budget_usd": 0.0
+    },
+    {
+      "started_at": "2026-11-17T01:56:43.827966+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "ollama",
+        "model": "qwen3.5:4b",
+        "mode": "local",
+        "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "quantization": "Q4_K_M",
+        "context_limit": 8192,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 3600,
+        "source_pack_windows": 20,
+        "lens_batch_size": 2,
+        "batching_version": "local-bounded-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."
+      },
+      "concurrency": 1,
+      "requested_budget_usd": 0.0
+    },
+    {
+      "started_at": "2026-11-17T02:11:37.648775+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "ollama",
+        "model": "qwen3.5:4b",
+        "mode": "local",
+        "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "quantization": "Q4_K_M",
+        "context_limit": 8192,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 3600,
+        "source_pack_windows": 20,
+        "lens_batch_size": 2,
+        "batching_version": "local-bounded-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."
+      },
+      "concurrency": 1,
+      "requested_budget_usd": 0.0
+    },
+    {
+      "started_at": "2026-11-17T03:07:33.493816+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "ollama",
+        "model": "qwen3.5:4b",
+        "mode": "local",
+        "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "quantization": "Q4_K_M",
+        "context_limit": 8192,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 3600,
+        "source_pack_windows": 20,
+        "lens_batch_size": 2,
+        "batching_version": "local-bounded-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "num_threads_requested": 4,
+        "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."
+      },
+      "concurrency": 1,
+      "requested_budget_usd": 0.0,
+      "operational_settings": {
+        "task_timeout_seconds_applied": 480,
+        "cpu_threads_requested": 4,
+        "cpu_threads_observed": 4,
+        "stop_reason": "Restart after the current task settled to apply the local-only 1800-second scheduler deadline.",
+        "ended_at": "2026-11-17T03:21:06.665488+00:00",
+        "interpretation": "Scheduling-only change; the full 20-article selection, source units, selected criteria, prompts and model digest are unchanged."
+      }
+    },
+    {
+      "started_at": "2026-11-17T03:23:53.082368+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "ollama",
+        "model": "qwen3.5:4b",
+        "mode": "local",
+        "revision": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "quantization": "Q4_K_M",
+        "context_limit": 8192,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 3600,
+        "source_pack_windows": 20,
+        "lens_batch_size": 2,
+        "batching_version": "local-bounded-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "num_threads_requested": 4,
+        "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."
+      },
+      "concurrency": 1,
+      "requested_budget_usd": 0.0,
+      "operational_settings": {
+        "task_timeout_seconds": 1800,
+        "task_lease_seconds": 1920,
+        "task_timeout_source": "server_environment",
+        "cpu_threads_requested": 4,
+        "scope": "Scheduling settings; source units, prompts and selected criteria are unchanged."
+      },
+      "ended_at": "2026-11-17T04:05:12.347935+00:00",
+      "stop_reason": "Finite CPU trial complete; preserve all 20 selected articles and incomplete coverage, then run the independent CPU NLI baseline sequentially."
+    }
+  ],
+  "active_driver_seconds_recorded": 4435.798490375004,
+  "cumulative_request_ledger": {
+    "requests": 56,
+    "reported_input_tokens": 108605,
+    "reported_output_tokens": 15849,
+    "requests_without_complete_token_receipts": 8,
+    "provider_api_fee_accounted_usd": 0.0,
+    "cost_basis": "Local CPU compute, hardware and electricity excluded; interrupted calls can have unknown token counts."
+  },
+  "sampled_peak_combined_process_rss_bytes": 9919377408,
+  "memory_artifact": "benchmarks/v3-local-news-resources.json",
+  "scope_order_policy": "All 20 frozen articles retained. Still-pending tasks were reprioritized by shortest remaining whole article to obtain finite complete examples; original and new order archived in run config. Completed examples are not representative accuracy or throughput samples.",
+  "interpretation_accuracy": null,
+  "independent_human_reference_labels": false,
+  "limitations": [
+    "This is a partial local run unless full_selection_complete is true. The denominator remains all 20 selected articles and 115 source units.",
+    "Earlier 480-second task cutoffs and interrupted CPU-contention phases are retained in history; only the new worker uses 1800 seconds and four requested/observed CPU threads.",
+    "At least one valid unit reused prior accepted decisions; do not treat cumulative or resumed timings as cold throughput.",
+    "Local 1200-character units differ from remote 4000-character units. Compare outcome counts only within their frozen profile/unit scope.",
+    "Observed source-anchor validation is a software integrity check, not independently reviewed interpretation accuracy.",
+    "The process RSS peak includes observed Ollama server/runner and benchmark/index drivers; sums can double-count shared pages and exclude browser/OS. Earlier unavailable monitoring is not reconstructed."
+  ]
+}

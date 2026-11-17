@@ -6,6 +6,7 @@ The annotated guides connect exact source wording to an explicit criterion, repr
 | --- | --- | --- | --- |
 | How DOXA captures political framing | [Political framing, commented](../examples/political-framing-commentary.pdf) | [HTML](../examples/political-framing-commentary.html) | [XLSX](../examples/political-framing-commentary.xlsx) |
 | Institutional voice and reported prejudice | [Institutional context, commented](../examples/institutional-context-commentary.pdf) | [HTML](../examples/institutional-context-commentary.html) | [XLSX](../examples/institutional-context-commentary.xlsx) |
+| Monitoring a real news cohort | [News monitoring, commented](../examples/news-monitoring.pdf) | [HTML](../examples/news-monitoring.html) | [XLSX](../examples/news-monitoring.xlsx) |
 
 Each guide states the original run, frozen source selection, accepted/partial/pending unit coverage, model provenance and review state. The accompanying `*.manifest.json` records actual file checksums and counts. Its `*.snapshot.json.gz` freezes the selected assessments and source blocks so the anchor audit can be repeated. A small selection of illustrative cases is not a representative sample of the source collection.
 
@@ -14,6 +15,10 @@ Each guide states the original run, frozen source selection, accepted/partial/pe
 The political-framing guide follows institutional policy texts using the [operational rubric and worked source packet](political-bias-methodology.md). An explicit policy position, an evaluative descriptor and a causal allegation are different observations. Identifying them does not independently verify the underlying factual claim or establish unfairness, hidden motives, a party identity or a universal left/right score. A stronger comparative-bias claim needs a declared, relevant comparator and supplied evidence.
 
 The institutional-context guide separates reporting about prejudice from quoted hostility and author-endorsed hostility. The same distinction matters when monitoring news. Publication-time comparisons also need compatible source selections, criteria, model settings and assessed denominators. Partial or failed units cannot establish an absence of relevant discourse.
+
+The news-monitoring guide follows four actual cases from the settled 5,000-article run: a quoted slogan, a political-expression boundary, uncertainty in a reported discrimination claim and a descriptive constitutional frame. Author and translator credits remain separate. The underlying run accepted 204,342 of 204,421 requested decisions; 79 remain unresolved. The four selected cases do not supply representative error estimates or independent human labels.
+
+The [full news dashboard PDF](../examples/news-corpus-dashboard.pdf) and [complete workbook](../examples/news-corpus-dashboard.xlsx) serve a different purpose: they retain the entire selected cohort and all four result types. Their [export manifest](../examples/news-corpus-dashboard.manifest.json) identifies the full data and the 25-entry human appendix. See [streaming recorded-run exports](v3-recorded-exports.md) for reproduction without inference.
 
 ![Keep a document’s position separate from its represented speakers.](images/doxa-attribution.svg)
 

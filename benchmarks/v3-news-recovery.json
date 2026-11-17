@@ -1,0 +1,260 @@
+{
+  "schema_version": "3.0",
+  "kind": "same_method_missing_decision_recovery",
+  "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+  "analytical_config_hash": "e0fa88c7717a4cb2bb931299",
+  "source_manifest_sha256": "6ea29f063abcdda5425d91277c9137cbb66f461fa2fff26f1f3543c51fb02ff3",
+  "frozen_cohort_documents": 5000,
+  "before_recovery": {
+    "status": "partial",
+    "progress": {
+      "documents_total": 5000,
+      "documents_done": 5000,
+      "documents_complete": 4663,
+      "documents_settled": 5000,
+      "blocks_total": 10759,
+      "blocks_done": 10387,
+      "tasks_total": 5031,
+      "tasks_done": 4694,
+      "tasks_failed": 337,
+      "current_document": "Azerbaijan ahead of COP29: Price hikes and construction works",
+      "complete": false,
+      "analysis_kind": "model_analysis",
+      "semantic_analysis_performed": true,
+      "semantic_blocks_done": 10387,
+      "lexical_blocks_done": 0
+    },
+    "unit_states": {
+      "accepted": 10387,
+      "partial": 354,
+      "pending": 18
+    },
+    "counts": {
+      "documents": 5000,
+      "assessments": 203534,
+      "audited_references": 3847721,
+      "source_characters": 32893897,
+      "words": 5251119
+    },
+    "usage": {
+      "input_tokens": 93138781,
+      "output_tokens": 13764234,
+      "cost_usd": null,
+      "requests": 25981,
+      "estimated": true
+    },
+    "budget_accounted_usd": 13.624461100000131,
+    "first_pass_manifest_sha256": "8ac23a50502defc432ad0be09dc34ccc943bbf3c69ef7e1f27c8975bae8a99c6"
+  },
+  "recovery_sessions": [
+    {
+      "generated_at": "2026-11-17T04:40:23.441528+00:00",
+      "status": "partial",
+      "progress": {
+        "documents_total": 5000,
+        "documents_done": 5000,
+        "documents_complete": 4887,
+        "documents_settled": 5000,
+        "blocks_total": 10759,
+        "blocks_done": 10645,
+        "tasks_total": 5031,
+        "tasks_done": 4918,
+        "tasks_failed": 113,
+        "current_document": "\u2018Femicide does not start on the day of the crime\u2019: A Brazilian researcher\u2019s view on gender violence in her country",
+        "complete": false,
+        "analysis_kind": "model_analysis",
+        "semantic_analysis_performed": true,
+        "semantic_blocks_done": 10645,
+        "lexical_blocks_done": 0
+      },
+      "unit_states": [
+        {
+          "status": "accepted",
+          "count": 10645
+        },
+        {
+          "status": "partial",
+          "count": 114
+        }
+      ],
+      "decision_counts": [
+        {
+          "result": "does_not_meet",
+          "criterion_kind": "boundary",
+          "count": 11500
+        },
+        {
+          "result": "does_not_meet",
+          "criterion_kind": "descriptive",
+          "count": 4645
+        },
+        {
+          "result": "does_not_meet",
+          "criterion_kind": "indicator",
+          "count": 78375
+        },
+        {
+          "result": "meets_criterion",
+          "criterion_kind": "boundary",
+          "count": 85
+        },
+        {
+          "result": "meets_criterion",
+          "criterion_kind": "descriptive",
+          "count": 35450
+        },
+        {
+          "result": "meets_criterion",
+          "criterion_kind": "indicator",
+          "count": 355
+        },
+        {
+          "result": "not_applicable",
+          "criterion_kind": "boundary",
+          "count": 9931
+        },
+        {
+          "result": "not_applicable",
+          "criterion_kind": "descriptive",
+          "count": 2710
+        },
+        {
+          "result": "not_applicable",
+          "criterion_kind": "indicator",
+          "count": 61078
+        },
+        {
+          "result": "uncertain",
+          "criterion_kind": "descriptive",
+          "count": 111
+        },
+        {
+          "result": "uncertain",
+          "criterion_kind": "indicator",
+          "count": 48
+        }
+      ],
+      "usage": {
+        "input_tokens": 95282148,
+        "output_tokens": 14177011,
+        "cost_usd": null,
+        "requests": 26771,
+        "estimated": true
+      },
+      "budget_accounted_usd": 13.964836800000112,
+      "elapsed_seconds": 5759.50430431799,
+      "historical_elapsed_seconds": 3573.067791702997,
+      "total_active_analysis_seconds": 9332.572096020987,
+      "recovery_pass": 1,
+      "decisions_retained": 204288,
+      "decisions_requested": 204421
+    },
+    {
+      "generated_at": "2026-11-17T04:44:20.361883+00:00",
+      "status": "partial",
+      "progress": {
+        "documents_total": 5000,
+        "documents_done": 5000,
+        "documents_complete": 4927,
+        "documents_settled": 5000,
+        "blocks_total": 10759,
+        "blocks_done": 10686,
+        "tasks_total": 5031,
+        "tasks_done": 4958,
+        "tasks_failed": 73,
+        "current_document": "\u2018Femicide does not start on the day of the crime\u2019: A Brazilian researcher\u2019s view on gender violence in her country",
+        "complete": false,
+        "analysis_kind": "model_analysis",
+        "semantic_analysis_performed": true,
+        "semantic_blocks_done": 10686,
+        "lexical_blocks_done": 0
+      },
+      "unit_states": [
+        {
+          "status": "accepted",
+          "count": 10686
+        },
+        {
+          "status": "partial",
+          "count": 73
+        }
+      ],
+      "decision_counts": [
+        {
+          "result": "does_not_meet",
+          "criterion_kind": "boundary",
+          "count": 11501
+        },
+        {
+          "result": "does_not_meet",
+          "criterion_kind": "descriptive",
+          "count": 4647
+        },
+        {
+          "result": "does_not_meet",
+          "criterion_kind": "indicator",
+          "count": 78380
+        },
+        {
+          "result": "meets_criterion",
+          "criterion_kind": "boundary",
+          "count": 86
+        },
+        {
+          "result": "meets_criterion",
+          "criterion_kind": "descriptive",
+          "count": 35491
+        },
+        {
+          "result": "meets_criterion",
+          "criterion_kind": "indicator",
+          "count": 356
+        },
+        {
+          "result": "not_applicable",
+          "criterion_kind": "boundary",
+          "count": 9931
+        },
+        {
+          "result": "not_applicable",
+          "criterion_kind": "descriptive",
+          "count": 2710
+        },
+        {
+          "result": "not_applicable",
+          "criterion_kind": "indicator",
+          "count": 61080
+        },
+        {
+          "result": "uncertain",
+          "criterion_kind": "descriptive",
+          "count": 111
+        },
+        {
+          "result": "uncertain",
+          "criterion_kind": "indicator",
+          "count": 49
+        }
+      ],
+      "usage": {
+        "input_tokens": 96099211,
+        "output_tokens": 14371603,
+        "cost_usd": null,
+        "requests": 27084,
+        "estimated": true
+      },
+      "budget_accounted_usd": 14.1058649000001,
+      "elapsed_seconds": 5930.35552631499,
+      "historical_elapsed_seconds": 3573.067791702997,
+      "total_active_analysis_seconds": 9503.423318017987,
+      "recovery_pass": 2,
+      "decisions_retained": 204342,
+      "decisions_requested": 204421
+    }
+  ],
+  "notice": "Only unresolved work is retried under the same frozen source versions, units, criteria, model and prompts. Accepted results remain durable. Coverage is operational acceptance, not independently measured interpretation accuracy. Historical source-cohort reuse is included once in cumulative usage and spend.",
+  "recovery_complete": true,
+  "additional_recovery_planned": false,
+  "final_status": "partial",
+  "unresolved_criterion_decisions": 79
+}

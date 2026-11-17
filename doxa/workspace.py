@@ -118,9 +118,13 @@ class Workspace:
         if query.get("q"):
             terms = re.findall(r"\w+", query["q"])[:20]
             if self.store.fts and terms:
-                for term in terms:
-                    where.append("d.id IN (SELECT id FROM document_search WHERE project_id=? AND document_search MATCH ?)")
-                    params.extend([project_id, '"' + term + '"'])
+                # Match each literal term against all index fragments, then
+                # intersect document identities. One MATCH with an AND string
+                # would require every term in the same fragment. Binding the
+                # term list once also keeps exact-content scopes below D1's
+                # parameter limit, even with every other filter present.
+                where.append("d.id IN (SELECT document_search.id FROM json_each(?) AS search_term JOIN document_search ON document_search MATCH search_term.value WHERE document_search.project_id=? GROUP BY document_search.id HAVING COUNT(DISTINCT search_term.key)=?)")
+                params.extend([json.dumps(['"' + term + '"' for term in terms]), project_id, len(terms)])
             else:
                 where.append("(d.title LIKE ? OR d.author LIKE ?)")
                 params.extend(["%" + query["q"] + "%"] * 2)
