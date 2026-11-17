@@ -19,7 +19,7 @@ def main():
     if not (ROOT / "frontend/dist/index.html").is_file():
         parser.error("Run npm --prefix frontend run build first")
     args.output.mkdir(parents=True, exist_ok=True)
-    subprocess.run([sys.executable, "-m", "pip", "wheel", "--no-deps", "--no-build-isolation",
+    subprocess.run([sys.executable, "-m", "pip", "wheel", "--no-deps",
                     "--wheel-dir", str(args.output.resolve()), str(ROOT)],
                    env={**os.environ, "DOXA_REQUIRE_FRONTEND": "1"}, check=True)
     candidates = sorted(args.output.glob("doxa_by_tacitus-*.whl"), key=lambda path: path.stat().st_mtime)
