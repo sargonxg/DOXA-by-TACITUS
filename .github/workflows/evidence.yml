@@ -1,12 +1,15 @@
 name: Replay frozen evidence
 on:
   workflow_dispatch:
+  pull_request:
+    types: [labeled]
   push:
     tags: ['v*']
 permissions:
   contents: read
 jobs:
   full-corpus-replay:
+    if: github.event_name != 'pull_request' || github.event.label.name == 'verify-evidence'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:

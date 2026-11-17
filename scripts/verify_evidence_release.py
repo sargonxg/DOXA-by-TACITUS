@@ -85,7 +85,10 @@ def execute(args):
     raw_bytes = sum(part["uncompressed_bytes"] for part in manifest["parts"])
     estimated_bytes = math.ceil(raw_bytes * 2 + source_bytes * 2 + 512 * 1024**2)
     available = shutil.disk_usage("/tmp").free
-    if estimated_bytes > args.max_temp_gib * GIB or available < estimated_bytes + args.min_free_gib * GIB:
+    required_free = max(estimated_bytes + args.min_free_gib * GIB, 10 * GIB if args.report_job_receipt else 0)
+    if estimated_bytes > args.max_temp_gib * GIB or available < required_free:
+        if args.report_job_receipt and available < 10 * GIB:
+            raise ValueError("The combined 5,000-source replay/XLSX proof needs at least 10 GiB free temporary disk; no import started")
         raise ValueError("Insufficient bounded scratch headroom; no import started")
     receipt.update(
         package_manifest_sha256=args.expected_package_sha256,
@@ -100,6 +103,7 @@ def execute(args):
             "source_metadata_bytes": source_bytes,
             "estimated_temp_bytes": estimated_bytes,
             "free_bytes": available,
+            "required_initial_free_bytes": int(required_free),
             "max_temp_bytes": int(args.max_temp_gib * GIB),
             "minimum_remaining_free_bytes": int(args.min_free_gib * GIB),
         },

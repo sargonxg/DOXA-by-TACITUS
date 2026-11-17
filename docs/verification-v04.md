@@ -16,7 +16,7 @@ The release preserves the v0.3 source/result baseline and adds the evidence work
 | Published real-source cases | `python -m pytest -q tests/test_v04_publications.py` | Preserved original payloads, exact anchors, explicit origins/limits and publication manifests. |
 | Complete recorded corpus | `python scripts/verify_evidence_release.py --execute --expected-package-sha256 783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827` | Fresh isolated 5,000-source import/restore, all retained references, idempotent replay, unchanged logical state and zero provider/model/network calls. Uses temporary disk and removes only its scratch workspace. |
 
-The full replay is deliberately opt-in locally and runs as a separate release workflow. Its default receipt is `benchmarks/v04-evidence-replay.json`; the immutable older [v0.3 restore proof](../benchmarks/v3-news-restore-verification.json) remains available. The package SHA gate prevents accidentally substituting a different run.
+The full replay is deliberately opt-in locally and runs as a separate release workflow. Apply the `verify-evidence` label to a pull request to request that gate before merging. The combined full replay/XLSX proof requires at least 10 GiB of free temporary disk at startup; general application/report requirements depend on the selection. Its default receipt is `benchmarks/v04-evidence-replay.json`; the immutable older [v0.3 restore proof](../benchmarks/v3-news-restore-verification.json) remains available. The package SHA gate prevents accidentally substituting a different run.
 
 ## Data and methodological checks
 
@@ -37,4 +37,4 @@ The [bounded CPU study](../benchmarks/v04-cpu-study.json) records selected artic
 
 ## CI
 
-[Application workflow](../.github/workflows/ci.yml) covers Python 3.11/3.12/3.13, UI build, browser workflows, repository checks, installed wheel, Workers and Docker health. [Evidence workflow](../.github/workflows/evidence.yml) gates complete offline replay on manual dispatch and version tags. Each run produces its own actual logs; planned jobs are not reported as completed checks.
+[Application workflow](../.github/workflows/ci.yml) covers Python 3.11/3.12/3.13, UI build, browser workflows, repository checks, installed wheel, Workers and Docker health. [Evidence workflow](../.github/workflows/evidence.yml) gates complete offline replay on manual dispatch, the explicit pull-request label and version tags. Each run produces its own actual logs; planned jobs are not reported as completed checks.
