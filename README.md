@@ -128,6 +128,8 @@ The actual six-framework cloud run attempted **all 5,000 articles** and settled 
 
 The run conservatively accounted **$14.11** for inference across its inherited and new sessions; the provider invoice remains unknown. Its cumulative active benchmark time was **158.39 minutes**, excluding downtime, across recorded sessions and operational concurrency changes. This is a measured workload, not a speed or price guarantee. The temporary inference endpoint was [disabled after settlement](benchmarks/v3-gateway-cleanup.json).
 
+A [fresh-workspace restore check](benchmarks/v3-news-restore-verification.json) restored all 5,000 sources and 204,342 assessments, checked every retained source reference, then repeated the restore with identical data fingerprints. It made **zero model or network calls** and preserved the partial status. The complete proof took **262.17 seconds** at approximately **259 MiB peak process RSS** in the recorded environment.
+
 ![Publication-time discourse and assessment/review history are different trajectories.](docs/images/doxa-trajectory.svg)
 
 Rates describe the selected imported corpus. Reporting about hostility, quoted hostility and author-endorsed hostility remain separate. Missing analysis is not absence; unknown dates are not invented. The diagram is schematic, not a measured spike or improvement claim.

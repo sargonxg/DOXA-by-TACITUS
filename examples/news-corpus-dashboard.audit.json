@@ -1,0 +1,133 @@
+{
+  "schema_version": "doxa-news-xlsx-audit-1",
+  "status": "pass",
+  "audited_at": "2026-11-17T04:52:53.943913+00:00",
+  "run_id": "b2a2edd4ca7047128a5e433d8a874530",
+  "run_status": "partial",
+  "artifact": "news-corpus-dashboard.xlsx",
+  "artifact_bytes": 92645472,
+  "artifact_sha256": "54831b1a9b7ca42e1a66db9281e8f43af115604f1eed51620d9dc5161bfd2647",
+  "zip_members_crc_verified": 21,
+  "zip_uncompressed_bytes": 1312335897,
+  "external_links_macros_connections": false,
+  "worksheet_formulas": 0,
+  "worksheet_rows": {
+    "Overview": {
+      "logical_rows": 0,
+      "physical_rows": 0
+    },
+    "Documents": {
+      "logical_rows": 5000,
+      "physical_rows": 5000
+    },
+    "Findings": {
+      "logical_rows": 204342,
+      "physical_rows": 204342
+    },
+    "Typed results": {
+      "logical_rows": 11,
+      "physical_rows": 11
+    },
+    "Authors": {
+      "logical_rows": 880,
+      "physical_rows": 880
+    },
+    "Lenses": {
+      "logical_rows": 6,
+      "physical_rows": 6
+    },
+    "Units": {
+      "logical_rows": 2,
+      "physical_rows": 2
+    },
+    "Runs": {
+      "logical_rows": 1,
+      "physical_rows": 2
+    },
+    "Methodology": {
+      "logical_rows": 9,
+      "physical_rows": 9
+    }
+  },
+  "source_metadata_full_json_matches": 5000,
+  "assessment_full_json_matches": 204342,
+  "source_credit_checks": {
+    "sources_with_author_rights_attribution": 5000,
+    "sources_with_translation_credit": 585
+  },
+  "typed_counts": [
+    {
+      "criterion_kind": "boundary",
+      "result": "does_not_meet",
+      "count": 11501
+    },
+    {
+      "criterion_kind": "boundary",
+      "result": "meets_criterion",
+      "count": 86
+    },
+    {
+      "criterion_kind": "boundary",
+      "result": "not_applicable",
+      "count": 9931
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "does_not_meet",
+      "count": 4647
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "meets_criterion",
+      "count": 35491
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "not_applicable",
+      "count": 2710
+    },
+    {
+      "criterion_kind": "descriptive",
+      "result": "uncertain",
+      "count": 111
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "does_not_meet",
+      "count": 78380
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "meets_criterion",
+      "count": 356
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "not_applicable",
+      "count": 61080
+    },
+    {
+      "criterion_kind": "indicator",
+      "result": "uncertain",
+      "count": 49
+    }
+  ],
+  "source_ids_sha256": "8493bc84dd68b813849429cb380c6bfbdb7f69c589b4d943a5cc6f3084d537fc",
+  "assessment_ids_sha256": "527c1d709ed41374e74155f2b5d1f6de9eb755b46516e84bce09fb489c98b04d",
+  "canonical_id_hash_basis": "Sorted database IDs plus exact one-to-one workbook/database grouped sequence equivalence.",
+  "assessment_record_order": [
+    "document_id",
+    "unit_id",
+    "lens_id",
+    "criterion_id",
+    "id"
+  ],
+  "assessment_record_order_sha256": "3770b92f43d20767e40065e52bb0f687651c08ae391d1fb0580f9afb0fefe236",
+  "snapshot_gzip_and_raw_checksums_match_manifest": true,
+  "snapshot_uncompressed_bytes": 980521493,
+  "source_database_mode": "read-only SQLite transaction with query_only=ON; no changes",
+  "interpretation_accuracy": null,
+  "notice": "This audit verifies artifact fidelity and literal cell safety, not semantic accuracy or completeness of the partial model run.",
+  "elapsed_seconds": 58.357,
+  "peak_rss_mib": 49.77
+}
