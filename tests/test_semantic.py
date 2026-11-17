@@ -112,3 +112,21 @@ def test_index_cannot_cross_projects_or_exceed_search_bounds(store):
     index.build("p")
     with pytest.raises(SemanticIndexError, match="between 1 and 100"):
         index.search("p", "threat", 101)
+
+
+def test_explicit_scope_replacement_keeps_history_and_excludes_obsolete_version(store):
+    document(store, "old", "Threats are condemned.")
+    document(store, "unchanged", "School funding increases.")
+    index = SemanticIndex(store, TinyRuntime())
+    original = index.build("p")
+    old_manifest = store.get_json(index._prefix("p") + "/manifest.json")
+    document(store, "new", "Threats are condemned in a new source version.")
+    replaced = index.build("p", ["new", "unchanged"], replace_scope=True)
+    active = store.get_json(index._prefix("p") + "/manifest.json")
+    assert replaced["documents"] == 2 and replaced["cached_documents"] == 1
+    assert {entry["document_id"] for entry in active["documents"]} == {"new", "unchanged"}
+    assert replaced["index_id"] != original["index_id"]
+    assert store.get_json(replaced["history_manifest_key"])["index_id"] == original["index_id"]
+    assert store.get_bytes(old_manifest["documents"][0]["chunks"][0]["vectors_key"])
+    with pytest.raises(SemanticIndexError, match="explicit source ID list"):
+        index.build("p", replace_scope=True)

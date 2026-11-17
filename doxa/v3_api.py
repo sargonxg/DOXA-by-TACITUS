@@ -3,17 +3,37 @@ from __future__ import annotations
 
 import asyncio
 import json
+import math
 import os
 import uuid
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import FileResponse
+from fastapi.encoders import jsonable_encoder
+from fastapi.exceptions import RequestValidationError
+from fastapi.responses import FileResponse, JSONResponse
+from pydantic import BaseModel, Field, StrictBool
 
 from .store import utcnow
 from .workspace import Workspace, WorkspaceQuery, unpack_assessment, unpack_document
 
 
+class VerificationInput(BaseModel):
+    run_id: str = Field(min_length=1, max_length=128)
+    allow_remote_text: StrictBool = False
+    budget_usd: float = Field(default=2, gt=0, le=2, allow_inf_nan=False, strict=True)
+
+
 def register(app: FastAPI, services: dict) -> None:
+    async def validation_error(_request: Request, error: RequestValidationError):
+        # JSON permits exponents whose parsed float overflows. Keep the 422
+        # response serializable without accepting the invalid budget or request.
+        details = jsonable_encoder(error.errors(), custom_encoder={
+            float: lambda value: value if math.isfinite(value) else str(value),
+        })
+        return JSONResponse(status_code=422, content={"detail": details})
+
+    app.add_exception_handler(RequestValidationError, validation_error)
+
     def db():
         return services["db"]()
 
@@ -196,12 +216,13 @@ def register(app: FastAPI, services: dict) -> None:
         return value
 
     @app.post("/api/v3/projects/{project_id}/verification", status_code=201)
-    async def verify_run(project_id: str, body: dict):
+    async def verify_run(project_id: str, body: VerificationInput):
         from .api import RunInput
         project(project_id)
         return await services["create_run"](project_id, RunInput(provider="cloudflare", model="@cf/openai/gpt-oss-120b",
-                         methodology_version="3.0", verification_of=str(body.get("run_id", "")),
-                         allow_remote_text=bool(body.get("allow_remote_text")), budget_usd=min(float(body.get("budget_usd", 2)), 2)))
+                         methodology_version="3.0", verification_of=body.run_id,
+                         reasoning_effort="low", reasoning_token_allowance=2048,
+                         allow_remote_text=body.allow_remote_text, budget_usd=body.budget_usd))
 
     @app.get("/api/v3/projects/{project_id}/verification/{verifier_id}")
     def verification_report(project_id: str, verifier_id: str):
@@ -375,15 +396,32 @@ def register(app: FastAPI, services: dict) -> None:
         project(project_id)
         collection = body.get("collection", "news")
         if collection == "institutions":
+            from .showcase_v3 import ShowcaseNotFinished, import_institution_sources, read_manifest, restore_showcase_v3
+            package = services["root"] / "benchmarks" / "v3-institutions" / "showcase.json"
+            skipped = ""
+            if services.get("use_saved_showcase", True) and package.exists():
+                try:
+                    read_manifest(package)
+                    documents, batch = await asyncio.to_thread(import_institution_sources, db(), project_id, services["root"])
+                    run_id = await asyncio.to_thread(restore_showcase_v3, db(), project_id, documents, package)
+                    workspace().touch(project_id)
+                    return {"documents": len(documents), "run": {"id": run_id}, "batch": batch, "collection": "institutions", "saved_results": True,
+                            "notice": "Real public documents with previously computed contextual results. Exact source anchors were checked again. No inference was requested; inspect coverage and review state."}
+                except ShowcaseNotFinished as error:
+                    skipped = str(error) + ". "
+                except (ValueError, OSError, KeyError, TypeError) as error:
+                    raise HTTPException(503, f"Saved contextual showcase integrity check failed: {error}") from error
             result = await services["load_demo"](project_id)
+            result["collection"] = "institutions"
+            result["notice"] = skipped + "Historical institutional demonstration. " + result.get("notice", "")
             workspace().touch(project_id)
             return result
         if collection != "news":
             raise HTTPException(422, "Choose news or institutions")
         from .news import import_news
         try:
-            result = await asyncio.to_thread(import_news, db(), project_id, services["root"])
-        except (ValueError, OSError) as error:
+            result = await asyncio.to_thread(import_news, db(), project_id, services["root"], use_saved_showcase=services.get("use_saved_showcase", True))
+        except (ValueError, OSError, KeyError, TypeError) as error:
             raise HTTPException(503, str(error)) from error
         workspace().touch(project_id)
         return result

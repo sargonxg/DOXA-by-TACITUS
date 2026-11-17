@@ -202,11 +202,12 @@ class SemanticIndex:
                  "blocks_key": document["blocks_key"], "blocks_digest": blocks_digest,
                  "cache_id": cache_id, "passages": count, "bytes": total_bytes, "chunks": chunks,
                  "nonindexable_inputs": nonindexable,
-                 "embedding_batching_policy": self.profile.get("runtime_settings", {}).get("batching_policy", "source_order")}
+                 "embedding_batching_policy": self.profile.get("runtime_settings", {}).get("batching_policy", "source_order"),
+                 "embedding_runtime_settings": dict(self.profile.get("runtime_settings", {}))}
         self.store.put_json(doc_prefix + "/cache.json", entry)
         return entry, False
 
-    def build(self, project_id: str, document_ids: list[str] | None = None) -> dict:
+    def build(self, project_id: str, document_ids: list[str] | None = None, *, replace_scope: bool = False) -> dict:
         """Explicit indexing; reuse unchanged document bundles after restart."""
         with _BUILD_LOCK:
             started = time.perf_counter()
@@ -222,7 +223,9 @@ class SemanticIndex:
             prefix = self._prefix(project_id)
             existing = self._optional_json(prefix + "/manifest.json")
             entries = {}
-            if existing and document_ids is not None:
+            if replace_scope and document_ids is None:
+                raise SemanticIndexError("Replacing an active index scope requires an explicit source ID list")
+            if existing and document_ids is not None and not replace_scope:
                 self._check_manifest(existing, project_id)
                 entries = {entry["document_id"]: entry for entry in existing["documents"]
                            if entry["document_id"] in available}
@@ -243,19 +246,32 @@ class SemanticIndex:
                     raise SemanticIndexError("Index exceeds 250000 passages or 512MiB; split the project explicitly")
             sorted_entries = [entries[identity] for identity in sorted(entries)]
             policies = {}
+            runtime_policies = {}
             for entry in sorted_entries:
                 policy = entry.get("embedding_batching_policy", "source_order")
                 policies[policy] = policies.get(policy, 0) + 1
+                settings = entry.get("embedding_runtime_settings") or {}
+                label = f"{policy};threads={settings.get('threads', 'unrecorded')};batch_size={settings.get('batch_size', 'unrecorded')}"
+                runtime_policies[label] = runtime_policies.get(label, 0) + 1
             manifest = {"index_version": INDEX_VERSION, "project_id": project_id,
                         "model": self.profile["model"], "model_revision": self.profile["revision"],
                         "dimensions": 384, "max_tokens": 256, "overlap_tokens": 32,
                         "built_at": utcnow(), "documents": sorted_entries,
                         "runtime_settings": self.profile.get("runtime_settings", {}),
                         "vector_batching_policies": policies,
+                        "vector_runtime_policies": runtime_policies,
                         "passages": sum(entry["passages"] for entry in sorted_entries)}
             manifest["index_id"] = _hash({key: value for key, value in manifest.items() if key != "built_at"})
             if _json_size(manifest) > 16 * 1024 * 1024:
                 raise SemanticIndexError("Index manifest exceeds its resource bound")
+            history_key = None
+            if replace_scope and existing:
+                self._check_manifest(existing, project_id)
+                previous_id = str(existing.get("index_id", ""))
+                if len(previous_id) != 64 or any(character not in "0123456789abcdef" for character in previous_id):
+                    raise SemanticIndexError("Previous index has an invalid history identifier")
+                history_key = prefix + "/history/" + previous_id + ".json"
+                self.store.put_json(history_key, existing)
             self.store.put_json(prefix + "/manifest.json", manifest)
             self._cache.clear()
             return {"documents": len(sorted_entries), "processed_documents": len(documents),
@@ -265,7 +281,8 @@ class SemanticIndex:
                     "documents_without_passages": sum(entry["passages"] == 0 for entry in sorted_entries),
                     "model_profile": self.profile, "seconds": round(time.perf_counter() - started, 3),
                     "vector_batching_policies": policies,
-                    "index_id": manifest["index_id"], "automatic_downloads": False}
+                    "vector_runtime_policies": runtime_policies,
+                    "index_id": manifest["index_id"], "history_manifest_key": history_key, "automatic_downloads": False}
 
     def _read_chunk(self, chunk: dict, prefix: str):
         import numpy as np
@@ -379,6 +396,7 @@ class SemanticIndex:
         unindexed = len(set(documents) - indexed_ids)
         return {"hits": hits, "model_profile": self.profile, "index_id": manifest["index_id"],
                 "vector_batching_policies": manifest.get("vector_batching_policies", {"source_order": len(manifest["documents"])}),
+                "vector_runtime_policies": manifest.get("vector_runtime_policies", {"legacy_runtime_unrecorded": len(manifest["documents"])}),
                 "documents_indexed": eligible, "documents_available": len(documents),
                 "passages_indexed": passages, "stale_documents": stale, "unindexed_documents": unindexed,
                 "nonindexable_inputs": nonindexable,

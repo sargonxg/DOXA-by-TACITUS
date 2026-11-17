@@ -36,10 +36,34 @@ export default {
     try {
       const input = JSON.parse(new TextDecoder().decode(data));
       if (!models.includes(input.model) || !Array.isArray(input.messages)) return reply({ error: { message: 'Unsupported model or messages' } }, 422);
+      const responses = input.model.startsWith('@cf/openai/gpt-oss-') && input.reasoning_effort;
+      if (responses && !['low', 'medium', 'high'].includes(input.reasoning_effort)) return reply({ error: { message: 'Unsupported reasoning effort' } }, 422);
+      const max = Math.min(8192, input.max_completion_tokens || input.max_tokens || 2048);
+      if (responses) {
+        const format = input.response_format?.json_schema;
+        if (!format?.schema) return reply({ error: { message: 'Explicit response schema required' } }, 422);
+        const result = await env.AI.run(input.model, {
+          input: input.messages,
+          reasoning: { effort: input.reasoning_effort },
+          max_output_tokens: max,
+          text: { format: { type: 'json_schema', name: format.name || 'doxa_findings', strict: true, schema: format.schema } },
+          store: false,
+          stream: false,
+        });
+        const parts = (result.output || []).filter(item => item.type === 'message').flatMap(item => item.content || []);
+        const content = parts.filter(item => item.type === 'output_text').map(item => item.text || '').join('');
+        const refusal = parts.find(item => item.type === 'refusal')?.refusal;
+        const usage = result.usage;
+        return reply({ id: result.id, object: 'chat.completion', model: result.model || input.model,
+          choices: [{ index: 0, message: { role: 'assistant', content, ...(refusal ? { refusal } : {}) },
+            finish_reason: result.status === 'incomplete' ? 'length' : refusal ? 'refusal' : 'stop' }],
+          ...(usage ? { usage: { prompt_tokens: usage.input_tokens, completion_tokens: usage.output_tokens, total_tokens: usage.total_tokens } } : {}),
+        });
+      }
       const result = await env.AI.run(input.model, {
         messages: input.messages,
         response_format: input.response_format,
-        max_completion_tokens: Math.min(4096, input.max_completion_tokens || input.max_tokens || 2048),
+        max_completion_tokens: Math.min(4096, max),
         temperature: 0,
         chat_template_kwargs: { enable_thinking: false },
         store: false,

@@ -38,7 +38,8 @@ def unpack_run(row: dict) -> dict:
 
 def _record(store: Store, run: dict, document: dict) -> tuple[dict, dict]:
     metadata = json.loads(document.get("metadata_json") or "{}")
-    blocks = {block["id"]: block["text"] for block in store.get_json(document["blocks_key"])}
+    source_blocks = store.get_json(document["blocks_key"])
+    blocks = {block["id"]: block["text"] for block in source_blocks}
     assessments = []
     audited = 0
     for row in store.query("SELECT * FROM v3_assessments WHERE run_id=? AND document_id=? ORDER BY unit_id,lens_id,criterion_id,id", [run["id"], document["id"]]):
@@ -82,7 +83,12 @@ def _record(store: Store, run: dict, document: dict) -> tuple[dict, dict]:
         status.update({"unit_id": row["unit_id"], "status": row["status"], "characters": row["characters"]})
         statuses.append(status)
     source_id = metadata.get("source_id") or document["id"]
-    return {"source_id": source_id, "sha256": document["sha256"], "assessments": assessments, "unit_statuses": statuses}, {
+    identity = metadata.get("source_id") or metadata.get("source_identity") or document.get("source_url") or document["id"]
+    version = hashlib.sha256(f"{identity}:{document['sha256']}".encode()).hexdigest()[:32]
+    blocks_hash = hashlib.sha256(json.dumps(source_blocks, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+    return {"source_id": source_id, "document_id": document["id"], "source_version_id": version,
+            "sha256": document["sha256"], "blocks_sha256": blocks_hash,
+            "assessments": assessments, "unit_statuses": statuses}, {
         "source_characters": sum(len(text) for text in blocks.values()), "words": document.get("word_count", 0),
         "assessments": len(assessments), "audited_references": audited,
         "unit_states": dict(Counter(status["status"] for status in statuses)),

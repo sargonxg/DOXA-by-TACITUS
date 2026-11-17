@@ -5,15 +5,15 @@ The annotated guides connect exact source wording to an explicit criterion, repr
 | Guide | Read the PDF | Offline HTML | Case workbook |
 | --- | --- | --- | --- |
 | How DOXA captures political framing | [Political framing, commented](../examples/political-framing-commentary.pdf) | [HTML](../examples/political-framing-commentary.html) | [XLSX](../examples/political-framing-commentary.xlsx) |
-| Reading a news-monitoring result | [News monitoring, commented](../examples/news-monitoring.pdf) | [HTML](../examples/news-monitoring.html) | [XLSX](../examples/news-monitoring.xlsx) |
+| Institutional voice and reported prejudice | [Institutional context, commented](../examples/institutional-context-commentary.pdf) | [HTML](../examples/institutional-context-commentary.html) | [XLSX](../examples/institutional-context-commentary.xlsx) |
 
 Each guide states the original run, frozen source selection, accepted/partial/pending unit coverage, model provenance and review state. The accompanying `*.manifest.json` records actual file checksums and counts. Its `*.snapshot.json.gz` freezes the selected assessments and source blocks so the anchor audit can be repeated. A small selection of illustrative cases is not a representative sample of the source collection.
 
 ## What was captured?
 
-The political-framing guide follows institutional policy texts. An explicit policy position, an evaluative descriptor and a causal allegation are different observations. Identifying them does not independently verify the underlying factual claim or establish unfairness, hidden motives, a party identity or a universal left/right score. A stronger comparative-bias claim needs a declared, relevant comparator and supplied evidence.
+The political-framing guide follows institutional policy texts using the [operational rubric and worked source packet](political-bias-methodology.md). An explicit policy position, an evaluative descriptor and a causal allegation are different observations. Identifying them does not independently verify the underlying factual claim or establish unfairness, hidden motives, a party identity or a universal left/right score. A stronger comparative-bias claim needs a declared, relevant comparator and supplied evidence.
 
-The news-monitoring guide separates reporting about prejudice from quoted hostility and author-endorsed hostility. Publication-time comparisons also need compatible source selections, criteria, model settings and assessed denominators. Partial or failed units cannot establish an absence of relevant discourse.
+The institutional-context guide separates reporting about prejudice from quoted hostility and author-endorsed hostility. The same distinction matters when monitoring news. Publication-time comparisons also need compatible source selections, criteria, model settings and assessed denominators. Partial or failed units cannot establish an absence of relevant discourse.
 
 ![Keep a document’s position separate from its represented speakers.](images/doxa-attribution.svg)
 

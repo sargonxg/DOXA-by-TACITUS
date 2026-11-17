@@ -117,26 +117,75 @@ def _all_documents(store, project_id):
 
 
 def _validate_evidence(store, assessment, resolved):
-    document = store.one("SELECT blocks_key FROM documents WHERE id=? AND project_id=?",
+    document = store.one("SELECT id,sha256,metadata_json,source_url,blocks_key FROM documents WHERE id=? AND project_id=?",
                          [assessment["document_id"], assessment["project_id"]])
     if not document or not document.get("blocks_key"):
         raise ValueError("Source blocks are required to review evidence")
-    blocks = {block["id"]: block["text"] for block in store.get_json(document["blocks_key"])}
+    source_blocks = store.get_json(document["blocks_key"])
+    blocks = {block["id"]: block["text"] for block in source_blocks}
+    metadata = _metadata(document)
+    if metadata.get("content_sha256") and _hash(source_blocks) != metadata["content_sha256"]:
+        raise ValueError("Review evidence extracted source content hash changed")
+    identity = metadata.get("source_id") or metadata.get("source_identity") or document.get("source_url") or document["id"]
+    version = hashlib.sha256(f"{identity}:{document['sha256']}".encode()).hexdigest()[:32]
+    original = json.loads(assessment["payload_json"])
+    expected = {"document_id": assessment["document_id"], "project_id": assessment["project_id"],
+                "run_id": assessment["run_id"], "unit_id": assessment["unit_id"],
+                "source_hash": document["sha256"], "source_version_id": version}
+    for payload in (original, resolved):
+        if any(key in payload and payload[key] != value for key, value in expected.items()):
+            raise ValueError("Review evidence source identity/hash/version differs from the persisted source")
     refs = resolved.get("evidence_refs") or []
-    if not isinstance(refs, list) or len(refs) > 8:
-        raise ValueError("Evidence references must be a list with no more than eight spans")
-    check = list(refs)
-    if resolved.get("quote"):
-        check.append({"block_id": resolved.get("block_id"), "start": resolved.get("start"),
-                      "end": resolved.get("end"), "quote": resolved["quote"]})
+    original_refs = original.get("evidence_refs") or []
+    if not isinstance(refs, list) or len(refs) > max(8, len(original_refs)) or any(not isinstance(ref, dict) for ref in refs):
+        raise ValueError("Evidence references must be a bounded list of persisted source spans")
+    # Resolve a compact negative row only through its original frozen anchors.
+    # A newly proposed span still needs an explicitly supplied exact quotation.
+    hydrate = any("quote" not in ref and "text" not in ref for ref in refs)
+    available, persisted = {}, set()
+    if hydrate:
+        if any(original.get(key) != expected[key] for key in ("document_id", "unit_id", "source_hash", "source_version_id")):
+            raise ValueError("Compact evidence hydration requires frozen source identity/hash/version")
+        run = store.one("SELECT config_json FROM runs WHERE id=? AND project_id=?", [assessment["run_id"], assessment["project_id"]])
+        config = json.loads(run["config_json"]) if run else {}
+        if not any(item.get("id") == document["id"] and item.get("sha256") == document["sha256"] for item in config.get("source_snapshot", [])):
+            raise ValueError("Compact evidence source is absent from the frozen run selection")
+        from .contextual import UNIT_BUILDER_VERSION, build_units
+        if config.get("unit_builder_version", UNIT_BUILDER_VERSION) != UNIT_BUILDER_VERSION:
+            raise ValueError("Compact evidence uses an unsupported frozen source unit builder")
+        units = build_units({**document, "blocks": source_blocks, "source_version_id": version},
+                            max_unit_chars=config.get("unit_max_chars", 1200), context_sentences=config.get("context_sentences", 2))
+        unit = next((item for item in units if item["id"] == assessment["unit_id"]), None)
+        if unit is None:
+            raise ValueError("Compact evidence does not resolve to its frozen source unit")
+        available = {sentence["id"]: sentence for sentence in [*unit["context_before"], *unit["sentences"], *unit["context_after"]]}
+        persisted = {(ref.get("sentence_id"), ref.get("block_id"), ref.get("start"), ref.get("end")) for ref in original_refs if isinstance(ref, dict)}
+    checked_refs = [dict(ref) for ref in refs]
+    check = list(checked_refs)
+    if "quote" in resolved:
+        check.append({key: resolved.get(key) for key in ("block_id", "start", "end", "quote")})
     for ref in check:
         if ref.get("document_id") not in {None, assessment["document_id"]}:
             raise ValueError("Review evidence must remain in the assessed source document")
+        if ref.get("source_hash", document["sha256"]) != document["sha256"] or ref.get("source_version_id", version) != version:
+            raise ValueError("Review evidence source hash/version changed")
+        if ref.get("source_id", identity) != identity:
+            raise ValueError("Review evidence source identity changed")
         text = blocks.get(ref.get("block_id"))
         start, end = ref.get("start"), ref.get("end")
-        quote = ref.get("quote", ref.get("text"))
-        if not isinstance(text, str) or not isinstance(start, int) or not isinstance(end, int) or not (0 <= start < end <= len(text)) or text[start:end] != quote:
+        if not isinstance(text, str) or type(start) is not int or type(end) is not int or not (0 <= start < end <= len(text)):
             raise ValueError("Review evidence does not match an exact persisted source span")
+        quote = text[start:end]
+        if "quote" not in ref and "text" not in ref:
+            anchor = (ref.get("sentence_id"), ref.get("block_id"), start, end)
+            sentence = available.get(ref.get("sentence_id"))
+            if anchor not in persisted or sentence is None or any(sentence[key] != ref.get(key) for key in ("block_id", "start", "end")) or sentence["text"] != quote:
+                raise ValueError("Compact evidence does not match an exact frozen source sentence")
+            ref["quote"] = quote
+        if any(ref[key] != quote for key in ("quote", "text") if key in ref):
+            raise ValueError("Review evidence does not match an exact persisted source span")
+    if refs:
+        resolved["evidence_refs"] = checked_refs
 
 
 def record_review(store, project_id, assessment_id, corrections, *, actor_kind, actor_id, note="", adjudicated=False):
@@ -222,6 +271,7 @@ def approve_example(store, project_id, review_id, *, actor_kind, actor_id):
     if _holdout(document) or any(_holdout(d) and _group(d) == group for d in _all_documents(store, project_id)):
         raise ValueError("Holdout documents and their story/duplicate groups cannot enter learning memory")
     resolved = json.loads(review["resolved_json"])
+    _validate_evidence(store, assessment, resolved)
     if not resolved.get("quote") and not resolved.get("evidence_refs"):
         raise ValueError("An approved learning example needs an exact reviewed source span")
     criterion = resolved.get("criterion_key") or f"{assessment['lens_id']}/{assessment['criterion_id']}"

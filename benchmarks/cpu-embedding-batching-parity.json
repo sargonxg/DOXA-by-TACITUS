@@ -342,5 +342,17 @@
     "Vector order/window count and exact source ranges are unchanged.",
     "1e-5 is the measured parity acceptance tolerance, not a universal guarantee for every CPU/runtime."
   ],
-  "observed_median_speedup": 2.1349864467907094
+  "observed_median_speedup": 2.1349864467907094,
+  "thread_policy_parity": {
+    "control_threads": 2,
+    "candidate_threads": 4,
+    "batch_size": 16,
+    "batching_policy": "length_ascending",
+    "windows": 32,
+    "maximum_absolute_vector_difference": 0.0,
+    "maximum_pairwise_cosine_difference": 0.0,
+    "acceptance_tolerance": 1e-05,
+    "parity_passed": true,
+    "source_window_order_preserved": true
+  }
 }

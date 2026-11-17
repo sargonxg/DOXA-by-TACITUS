@@ -47,7 +47,15 @@ def main() -> None:
         page = context.new_page()
         errors = []
         run_requests = []
+        trajectory_requests = []
         page.on("pageerror", lambda error: errors.append(str(error)))
+        trajectory_requests = []
+        page.on(
+            "request",
+            lambda request: (
+                trajectory_requests.append(request.url) if "/trajectories?" in request.url else None
+            ),
+        )
         page.goto(f"{base}/?workspace={project}", wait_until="domcontentloaded")
         page.locator(".w-metric").first.get_by_text("5,000", exact=True).wait_for()
         page.get_by_label("Analysis snapshot", exact=True).select_option(run_id)
@@ -77,6 +85,12 @@ def main() -> None:
         page.reload(wait_until="domcontentloaded")
         page.locator(".w-metric").first.get_by_text("5,001", exact=True).wait_for()
         assert page.get_by_label("Analysis snapshot", exact=True).input_value() == "none"
+        page.get_by_role("tab", name="Trajectory", exact=True).click()
+        page.get_by_text("Select a contextual run", exact=True).wait_for()
+        page.get_by_role("tab", name="History", exact=True).click()
+        page.get_by_text("Select an analysis snapshot", exact=True).wait_for()
+        assert not trajectory_requests
+        page.get_by_role("tab", name="Signals", exact=True).click()
         page.get_by_role("button", name="Analyze", exact=True).click()
         page.get_by_text("5,001 matching sources", exact=True).wait_for()
 

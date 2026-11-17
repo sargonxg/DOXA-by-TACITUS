@@ -37,7 +37,12 @@ export function Analytics({
   const [mode, setMode] = useState("signals");
   const legacy =
     !!result?.run && result.metrics.analysis_kind === "legacy_unclassified";
-  const chartScope = legacy ? { ...scope, metric: "findings" } : scope;
+  const unassessed = scope.run_id === "none" || !result?.run;
+  const chartScope = unassessed
+    ? { ...scope, metric: "documents" }
+    : legacy
+      ? { ...scope, metric: "findings" }
+      : scope;
   return (
     <section className="w-analytics">
       <div className="w-section-heading">
@@ -80,6 +85,7 @@ export function Analytics({
             scope={chartScope}
             onScope={onScope}
             legacy={legacy}
+            unassessed={unassessed}
           />
           <Matrix cells={result?.matrix || []} onScope={onScope} />
         </>
@@ -90,7 +96,9 @@ export function Analytics({
       {mode === "history" && (
         <AssessmentHistory
           project={project}
-          run={scope.run_id || result?.run?.id || ""}
+          run={
+            scope.run_id === "none" ? "" : scope.run_id || result?.run?.id || ""
+          }
           query={result?.query_id}
         />
       )}
@@ -144,12 +152,14 @@ function Timeline({
   onScope,
   expanded = false,
   legacy = false,
+  unassessed = false,
 }: {
   points: TimePoint[];
   scope: Scope;
   onScope: (patch: Partial<Scope>) => void;
   expanded?: boolean;
   legacy?: boolean;
+  unassessed?: boolean;
 }) {
   const [anchor, setAnchor] = useState<number | null>(null);
   const [hover, setHover] = useState<number | null>(null);
@@ -190,10 +200,12 @@ function Timeline({
         <select
           aria-label="Timeline measurement"
           value={scope.metric}
-          disabled={legacy}
+          disabled={legacy || unassessed}
           onChange={(event) => onScope({ metric: event.target.value })}
         >
-          {legacy ? (
+          {unassessed ? (
+            <option value="documents">Source volume · not analyzed</option>
+          ) : legacy ? (
             <option value="findings">Legacy observation rows</option>
           ) : (
             <>
@@ -213,12 +225,17 @@ function Timeline({
             <i className="w-legend volume" />
             Source volume
           </span>
-          <span>
-            <i className="w-legend signal" />
-            {legacy
-              ? "Legacy observation rows"
-              : human(scope.metric).replace("indicators", "indicator sources")}
-          </span>
+          {!unassessed && (
+            <span>
+              <i className="w-legend signal" />
+              {legacy
+                ? "Legacy observation rows"
+                : human(scope.metric).replace(
+                    "indicators",
+                    "indicator sources",
+                  )}
+            </span>
+          )}
         </div>
       </div>
       {points.length ? (
@@ -226,7 +243,11 @@ function Timeline({
           <svg
             viewBox={`0 0 ${plotWidth} ${height}`}
             role="img"
-            aria-label="Source volume and retained observations over publication time. Select a time bucket to filter; Shift select extends the range."
+            aria-label={
+              unassessed
+                ? "Imported source volume over time. Corpus view has no model assessment. Select a dated bucket to filter."
+                : "Source volume and retained observations over publication time. Select a time bucket to filter; Shift select extends the range."
+            }
             onPointerLeave={() => setHover(null)}
           >
             {[0, 0.5, 1].map((fraction) => (
@@ -254,7 +275,7 @@ function Timeline({
               const bar = (point.documents / maxVolume) * span;
               const signal =
                 Number((point as unknown as Item)[scope.metric]) || 0;
-              const signalHeight = (signal / maxSignal) * span;
+              const signalHeight = unassessed ? 0 : (signal / maxSignal) * span;
               const incomplete = point.coverage < 100;
               return (
                 <g
@@ -262,7 +283,11 @@ function Timeline({
                   role="button"
                   tabIndex={periodBounds(point.date) ? 0 : -1}
                   aria-disabled={!periodBounds(point.date)}
-                  aria-label={`${point.date}: ${point.documents} sources, ${signal} retained observations, ${percentage(point.coverage)} coverage`}
+                  aria-label={
+                    unassessed
+                      ? `${point.date}: ${point.documents} sources; corpus not analyzed`
+                      : `${point.date}: ${point.documents} sources, ${signal} retained observations, ${percentage(point.coverage)} coverage`
+                  }
                   onFocus={() => setHover(index)}
                   onPointerEnter={() => setHover(index)}
                   onClick={(event) => select(index, event.shiftKey)}
@@ -290,7 +315,7 @@ function Timeline({
                     fill="#447c6e"
                     opacity={incomplete ? 0.5 : 0.9}
                   />
-                  {point.spike_candidate && (
+                  {!unassessed && point.spike_candidate && (
                     <path
                       d={`M${x + column / 2 - 4},${baseline - Math.max(signalHeight, bar) - 9}l4,-5 4,5 -4,5Z`}
                       fill="#bd965f"
@@ -302,7 +327,13 @@ function Timeline({
                     width={Math.max(1, column - 2)}
                     height="3"
                     rx="1"
-                    fill={incomplete ? "#d7b67d" : "#86ad9e"}
+                    fill={
+                      unassessed
+                        ? "#c7d2c7"
+                        : incomplete
+                          ? "#d7b67d"
+                          : "#86ad9e"
+                    }
                   />
                   {(points.length < 13 ||
                     index % Math.ceil(points.length / 8) === 0) && (
@@ -322,7 +353,11 @@ function Timeline({
                     height={height - 5}
                     fill="transparent"
                   >
-                    <title>{`${point.date} · ${point.documents} sources · ${signal} ${legacy ? "Legacy observation rows" : human(scope.metric).replace("indicators", "indicator sources")} · coverage ${percentage(point.coverage)}`}</title>
+                    <title>
+                      {unassessed
+                        ? `${point.date} · ${point.documents} sources · not analyzed`
+                        : `${point.date} · ${point.documents} sources · ${signal} ${legacy ? "Legacy observation rows" : human(scope.metric).replace("indicators", "indicator sources")} · coverage ${percentage(point.coverage)}`}
+                    </title>
                   </rect>
                 </g>
               );
@@ -331,12 +366,14 @@ function Timeline({
           <div className="w-chart-footer">
             <span>
               {hover !== null
-                ? `${points[hover].date} · ${number(points[hover].documents)} sources · ${percentage(points[hover].coverage)} coverage`
+                ? `${points[hover].date} · ${number(points[hover].documents)} sources · ${unassessed ? "not analyzed" : `${percentage(points[hover].coverage)} coverage`}`
                 : "Select a period · Shift select a range"}
             </span>
             <span>
               <i className="w-legend incomplete" />
-              Incomplete coverage
+              {unassessed
+                ? "No analysis in corpus view"
+                : "Incomplete coverage"}
             </span>
           </div>
         </>
@@ -361,7 +398,8 @@ function Trajectory({
 }) {
   const [data, setData] = useState<Item | null>(null);
   const [error, setError] = useState("");
-  const run = scope.run_id || result?.run?.id || "";
+  const run =
+    scope.run_id === "none" ? "" : scope.run_id || result?.run?.id || "";
   const lens = scope.lens_ids[0] || "";
   const criterion = scope.criterion_ids[0] || "";
   useEffect(() => {
@@ -668,6 +706,7 @@ function AssessmentHistory({
     let alive = true;
     setData(null);
     setError("");
+    if (!run) return;
     void request<Item>(
       `/v3/projects/${encodeURIComponent(project)}/trajectories?mode=assessment&run_id=${encodeURIComponent(run)}${query ? `&query_id=${encodeURIComponent(query)}` : ""}`,
     )
@@ -691,7 +730,11 @@ function AssessmentHistory({
           do not imply changes in the original author.
         </span>
       </div>
-      {error ? (
+      {!run ? (
+        <Empty title="Select an analysis snapshot">
+          Corpus view has no model assessment history.
+        </Empty>
+      ) : error ? (
         <ErrorMessage text={error} />
       ) : !data ? (
         <Spinner text="Loading assessment history…" />

@@ -1,0 +1,613 @@
+{
+  "schema_version": "3.0",
+  "status": "completed",
+  "kind": "actual full canonical5000news CPU semantic retrieval benchmark",
+  "generated_at": "2026-11-17T03:02:32.633730+00:00",
+  "synthetic_sources": false,
+  "interpretation_accuracy": null,
+  "independent_reference_labels": false,
+  "corpus": {
+    "documents": 5000,
+    "words": 5251119,
+    "manifest_sha256": "6ea29f063abcdda5425d91277c9137cbb66f461fa2fff26f1f3543c51fb02ff3",
+    "ready_document_versions_in_project": 5001,
+    "active_index_scope": 5000,
+    "source_ids_content_hashes_verified": true
+  },
+  "build": {
+    "documents": 5000,
+    "processed_documents": 5000,
+    "cached_documents": 4999,
+    "passages": 120464,
+    "bytes": 242392007,
+    "nonindexable_inputs": 0,
+    "documents_without_passages": 0,
+    "model_profile": {
+      "id": "minilm",
+      "role": "retrieval",
+      "provider": "huggingface_cpu",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "license": "Apache-2.0",
+      "languages": [
+        "en"
+      ],
+      "parameters": 22713728,
+      "max_input_tokens": 256,
+      "dimensions": 384,
+      "runtime": "transformers_cpu",
+      "experimental": false,
+      "calibration": "not_applicable",
+      "intended_use": "Semantic retrieval and clustering of short source windows; not prejudice classification.",
+      "limitations": [
+        "The sentence-transformer limit is 256 wordpieces, despite the encoder's 512 positions.",
+        "Similarity is not evidence of shared stance, endorsement or prejudice."
+      ],
+      "files": [
+        "README.md",
+        "config.json",
+        "model.safetensors",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "special_tokens_map.json",
+        "vocab.txt",
+        "sentence_bert_config.json",
+        "1_Pooling/config.json",
+        "modules.json"
+      ],
+      "max_download_bytes": 167772160,
+      "registry_version": "doxa-models-3.0",
+      "reviewed_at": "2026-11-16",
+      "model_card": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md",
+      "runtime_settings": {
+        "device": "cpu",
+        "threads": 4,
+        "batch_size": 16,
+        "batching_policy": "length_ascending",
+        "pooling": "attention_mask_mean_then_l2"
+      }
+    },
+    "seconds": 7.923,
+    "vector_batching_policies": {
+      "source_order": 841,
+      "length_ascending": 4159
+    },
+    "vector_runtime_policies": {
+      "source_order;threads=2;batch_size=16": 841,
+      "length_ascending;threads=2;batch_size=16": 277,
+      "length_ascending;threads=4;batch_size=16": 3882
+    },
+    "index_id": "10b5431301af5689ef5954d8d8c8063b2712c156f46f82eb565495a83fb01c7c",
+    "history_manifest_key": "semantic/29e2d9f4f124afd904a7614673631a82/history/05e795cd8419bc6756294fa243de5774d25423cd4ab467a465ae8e0d7c4716fa.json",
+    "automatic_downloads": false
+  },
+  "restart_rebuild": {
+    "documents": 5000,
+    "processed_documents": 5000,
+    "cached_documents": 5000,
+    "passages": 120464,
+    "bytes": 242392007,
+    "nonindexable_inputs": 0,
+    "documents_without_passages": 0,
+    "model_profile": {
+      "id": "minilm",
+      "role": "retrieval",
+      "provider": "huggingface_cpu",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "license": "Apache-2.0",
+      "languages": [
+        "en"
+      ],
+      "parameters": 22713728,
+      "max_input_tokens": 256,
+      "dimensions": 384,
+      "runtime": "transformers_cpu",
+      "experimental": false,
+      "calibration": "not_applicable",
+      "intended_use": "Semantic retrieval and clustering of short source windows; not prejudice classification.",
+      "limitations": [
+        "The sentence-transformer limit is 256 wordpieces, despite the encoder's 512 positions.",
+        "Similarity is not evidence of shared stance, endorsement or prejudice."
+      ],
+      "files": [
+        "README.md",
+        "config.json",
+        "model.safetensors",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "special_tokens_map.json",
+        "vocab.txt",
+        "sentence_bert_config.json",
+        "1_Pooling/config.json",
+        "modules.json"
+      ],
+      "max_download_bytes": 167772160,
+      "registry_version": "doxa-models-3.0",
+      "reviewed_at": "2026-11-16",
+      "model_card": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md",
+      "runtime_settings": {
+        "device": "cpu",
+        "threads": 4,
+        "batch_size": 16,
+        "batching_policy": "length_ascending",
+        "pooling": "attention_mask_mean_then_l2"
+      }
+    },
+    "seconds": 7.161,
+    "vector_batching_policies": {
+      "source_order": 841,
+      "length_ascending": 4159
+    },
+    "vector_runtime_policies": {
+      "source_order;threads=2;batch_size=16": 841,
+      "length_ascending;threads=2;batch_size=16": 277,
+      "length_ascending;threads=4;batch_size=16": 3882
+    },
+    "index_id": "10b5431301af5689ef5954d8d8c8063b2712c156f46f82eb565495a83fb01c7c",
+    "history_manifest_key": "semantic/29e2d9f4f124afd904a7614673631a82/history/10b5431301af5689ef5954d8d8c8063b2712c156f46f82eb565495a83fb01c7c.json",
+    "automatic_downloads": false
+  },
+  "queries": [
+    {
+      "query": "antisemitism in political discourse",
+      "seconds": 2.342,
+      "documents_indexed": 5000,
+      "documents_available": 5000,
+      "stale_documents": 0,
+      "unindexed_documents": 0,
+      "hits_returned": 10,
+      "returned_quotes_validated_against_source": true,
+      "top_hits": [
+        {
+          "document_id": "8541f66446414609eb202c711e7320ad",
+          "block_id": "gv-839816-b00005",
+          "start": 0,
+          "end": 287,
+          "source_sha256": "971243c520057f27e65e60730a3f6f45a0e3024282786c69f841e35d157de394",
+          "score": 0.7711442112922668
+        },
+        {
+          "document_id": "8541f66446414609eb202c711e7320ad",
+          "block_id": "gv-839816-b00015",
+          "start": 0,
+          "end": 180,
+          "source_sha256": "971243c520057f27e65e60730a3f6f45a0e3024282786c69f841e35d157de394",
+          "score": 0.6831563115119934
+        },
+        {
+          "document_id": "8541f66446414609eb202c711e7320ad",
+          "block_id": "gv-839816-b00007",
+          "start": 0,
+          "end": 219,
+          "source_sha256": "971243c520057f27e65e60730a3f6f45a0e3024282786c69f841e35d157de394",
+          "score": 0.6721651554107666
+        },
+        {
+          "document_id": "8541f66446414609eb202c711e7320ad",
+          "block_id": "gv-839816-b00018",
+          "start": 0,
+          "end": 217,
+          "source_sha256": "971243c520057f27e65e60730a3f6f45a0e3024282786c69f841e35d157de394",
+          "score": 0.6593115329742432
+        },
+        {
+          "document_id": "8541f66446414609eb202c711e7320ad",
+          "block_id": "gv-839816-b00024",
+          "start": 0,
+          "end": 113,
+          "source_sha256": "971243c520057f27e65e60730a3f6f45a0e3024282786c69f841e35d157de394",
+          "score": 0.6354007124900818
+        },
+        {
+          "document_id": "ce4fa2c960f09441c014903daa2b238f",
+          "block_id": "gv-801636-b00004",
+          "start": 0,
+          "end": 465,
+          "source_sha256": "c77f80551afbb4a21a881b328575aaffae07aeb3ac312b9f88c5eff10abe6126",
+          "score": 0.6209516525268555
+        },
+        {
+          "document_id": "8541f66446414609eb202c711e7320ad",
+          "block_id": "gv-839816-b00034",
+          "start": 0,
+          "end": 418,
+          "source_sha256": "971243c520057f27e65e60730a3f6f45a0e3024282786c69f841e35d157de394",
+          "score": 0.6199998259544373
+        },
+        {
+          "document_id": "8541f66446414609eb202c711e7320ad",
+          "block_id": "gv-839816-b00004",
+          "start": 0,
+          "end": 127,
+          "source_sha256": "971243c520057f27e65e60730a3f6f45a0e3024282786c69f841e35d157de394",
+          "score": 0.6135427355766296
+        },
+        {
+          "document_id": "debba9cb8da3e0c63ce8c4699ed910b6",
+          "block_id": "gv-835783-b00004",
+          "start": 0,
+          "end": 383,
+          "source_sha256": "0752619bd60c0fa8dc0703dc4d81ace802310cc5818784556954434f2ba4462b",
+          "score": 0.6085725426673889
+        },
+        {
+          "document_id": "8541f66446414609eb202c711e7320ad",
+          "block_id": "gv-839816-b00001",
+          "start": 0,
+          "end": 152,
+          "source_sha256": "971243c520057f27e65e60730a3f6f45a0e3024282786c69f841e35d157de394",
+          "score": 0.6057187914848328
+        }
+      ]
+    },
+    {
+      "query": "anti-Muslim prejudice and discrimination",
+      "seconds": 2.447,
+      "documents_indexed": 5000,
+      "documents_available": 5000,
+      "stale_documents": 0,
+      "unindexed_documents": 0,
+      "hits_returned": 10,
+      "returned_quotes_validated_against_source": true,
+      "top_hits": [
+        {
+          "document_id": "24b7672ada474975b45e8392e94c6fa1",
+          "block_id": "gv-778944-b00015",
+          "start": 0,
+          "end": 16,
+          "source_sha256": "4db12b74ab9492ebe1ddab4f9a383e17a34306150058844680751d00cb52bb03",
+          "score": 0.7805707454681396
+        },
+        {
+          "document_id": "9c07ba2ee85234e280dbd5c15fd7199f",
+          "block_id": "gv-801447-b00016",
+          "start": 0,
+          "end": 41,
+          "source_sha256": "c3541b7df8fe254883102bcce5afe0afba618f2df9b552ea85b4728b73857e31",
+          "score": 0.7054129242897034
+        },
+        {
+          "document_id": "3b50ec0205ef988cd109145d1237a440",
+          "block_id": "gv-806959-b00018",
+          "start": 0,
+          "end": 64,
+          "source_sha256": "ea5172323d9b1620adc59672628d8c23ef03b81f038d2d0790c3c87f9f2e12fd",
+          "score": 0.6768114566802979
+        },
+        {
+          "document_id": "39be7dd3d8cb89771d6e797de47923b8",
+          "block_id": "gv-809519-b00008",
+          "start": 0,
+          "end": 42,
+          "source_sha256": "b717bc9d82154a25eb8757fd09309507384cfeb148f15c5eb89116f429d89d2b",
+          "score": 0.6715842485427856
+        },
+        {
+          "document_id": "d098930db328f6771e9539424584e9c0",
+          "block_id": "gv-761660-b00004",
+          "start": 0,
+          "end": 92,
+          "source_sha256": "468e58c3ef3006480ac423d5ea56575c2fa9cc715a2f4883eb69438a4a43e8fe",
+          "score": 0.6306716203689575
+        },
+        {
+          "document_id": "228d7b2bef212b9c87a4d8fa9085cda6",
+          "block_id": "gv-808360-b00005",
+          "start": 0,
+          "end": 25,
+          "source_sha256": "6d64a11f59a1c7b78ca4851eed13a43047dec25adabf7af85ae2fe36cc0f28f1",
+          "score": 0.6277173757553101
+        },
+        {
+          "document_id": "bfa8cdba78d59d0bae2b8a613c21b257",
+          "block_id": "gv-770262-b00005",
+          "start": 0,
+          "end": 91,
+          "source_sha256": "fb73a5fefb2f729f17893b8c90fb86c5f6ed808d201141220dbdc5cdba73140b",
+          "score": 0.6263641119003296
+        },
+        {
+          "document_id": "3dd8556d3984867acc69c6aa2280e03f",
+          "block_id": "gv-692305-b00016",
+          "start": 0,
+          "end": 9,
+          "source_sha256": "504775ca4884ced456948c9dde4c13ac1fbfbb17e35e5423ded3583968c47ded",
+          "score": 0.6183966398239136
+        },
+        {
+          "document_id": "c0c553ecf98c3924ad246cbba8cda039",
+          "block_id": "gv-816623-b00002",
+          "start": 0,
+          "end": 403,
+          "source_sha256": "bf4b2778b0e0210002696c4211888d2ab8936620a91338da85d6f2de031f32a6",
+          "score": 0.6122338175773621
+        },
+        {
+          "document_id": "70c90f5675b426e4eae9f8613df8077b",
+          "block_id": "gv-723474-b00019",
+          "start": 0,
+          "end": 232,
+          "source_sha256": "6a33457a61e321fd9b34be38b2cf038c483e76d49ea28c98d89c9576bbe91986",
+          "score": 0.6104142069816589
+        }
+      ]
+    },
+    {
+      "query": "freedom of religion and equal rights",
+      "seconds": 2.506,
+      "documents_indexed": 5000,
+      "documents_available": 5000,
+      "stale_documents": 0,
+      "unindexed_documents": 0,
+      "hits_returned": 10,
+      "returned_quotes_validated_against_source": true,
+      "top_hits": [
+        {
+          "document_id": "4ab6712805d8f3dee9dee100cf0e3af1",
+          "block_id": "gv-779458-b00025",
+          "start": 0,
+          "end": 19,
+          "source_sha256": "1e0e5b31f47abd1449e920115ac818f8972c81444dbca636e32c81a3546937f7",
+          "score": 0.6681891679763794
+        },
+        {
+          "document_id": "928de683696fe112af500c93ac570398",
+          "block_id": "gv-824800-b00016",
+          "start": 0,
+          "end": 22,
+          "source_sha256": "270f4dfe1a2022a50d7b6ea27c179d008cfa9881688da9d58c920c9b7b48fa6d",
+          "score": 0.6636872291564941
+        },
+        {
+          "document_id": "c6e701997721043ac47fbe33ea3d0f79",
+          "block_id": "gv-787986-b00007",
+          "start": 0,
+          "end": 28,
+          "source_sha256": "7633d56c0c1cd32fedf7ab9f096ed9c487fb989c8fbb49dd20373b8c515fd72a",
+          "score": 0.6619293689727783
+        },
+        {
+          "document_id": "8c0f2da59a30e8ee52ccde25bbbbfa0a",
+          "block_id": "gv-695885-b00015",
+          "start": 0,
+          "end": 364,
+          "source_sha256": "12b803f25416d43d3c454b50d31391f380c7e913ecfd8e31a5313e287341a595",
+          "score": 0.6273438930511475
+        },
+        {
+          "document_id": "37e69371b24a20b902b31930fdfbf59b",
+          "block_id": "gv-694910-b00017",
+          "start": 0,
+          "end": 38,
+          "source_sha256": "6a102c69c42bd892a67ff4d6755401e61d9e03d41824430bf00dd0f73d9a2763",
+          "score": 0.6192811727523804
+        },
+        {
+          "document_id": "60813a70e11163ebba827d2668604121",
+          "block_id": "gv-722378-b00007",
+          "start": 0,
+          "end": 31,
+          "source_sha256": "cfa3744b0236520905bab92d11979af584326f47aa333ed278e26b9f2da53c34",
+          "score": 0.5807866454124451
+        },
+        {
+          "document_id": "f92a11511cbde9539e90c69b75fbd0b4",
+          "block_id": "gv-720673-b00005",
+          "start": 0,
+          "end": 33,
+          "source_sha256": "0f2f696f3ca2edb41fbbced8acd84bb3a21b3aac5eec2fbbe2db67e1fc4d0e34",
+          "score": 0.5781091451644897
+        },
+        {
+          "document_id": "0e674df1786e061a6d98d9219f842841",
+          "block_id": "gv-809513-b00023",
+          "start": 0,
+          "end": 334,
+          "source_sha256": "fca1f3ba70e74aeb2a348dae6f6a417e1e3c264049821a342545ca78f2d20bb1",
+          "score": 0.5773631930351257
+        },
+        {
+          "document_id": "b6a85d34fdad9ae8460326e2aa56d2f9",
+          "block_id": "gv-812782-b00017",
+          "start": 0,
+          "end": 41,
+          "source_sha256": "b0377d91d1db82ca73734e41881098b3511d512086f6261675b07788aab4369a",
+          "score": 0.576068103313446
+        },
+        {
+          "document_id": "6431e6a346a7dda56afc282ccb4c8fab",
+          "block_id": "gv-752243-b00012",
+          "start": 0,
+          "end": 275,
+          "source_sha256": "75f1376383850c39aa839476224c653909813019a793a46c56119093a143f44a",
+          "score": 0.5760554671287537
+        }
+      ]
+    }
+  ],
+  "restart_search": {
+    "query": "religious discrimination",
+    "seconds": 2.749,
+    "documents_indexed": 5000,
+    "documents_available": 5000,
+    "stale_documents": 0,
+    "unindexed_documents": 0,
+    "hits_returned": 5,
+    "returned_quotes_validated_against_source": true,
+    "top_hits": [
+      {
+        "document_id": "c0c553ecf98c3924ad246cbba8cda039",
+        "block_id": "gv-816623-b00019",
+        "start": 0,
+        "end": 206,
+        "source_sha256": "bf4b2778b0e0210002696c4211888d2ab8936620a91338da85d6f2de031f32a6",
+        "score": 0.7393865585327148
+      },
+      {
+        "document_id": "b3308f48b31a2cff7c93326d7bbfb621",
+        "block_id": "gv-772035-b00010",
+        "start": 0,
+        "end": 22,
+        "source_sha256": "b2e1566fb5aeb55f860637127fe067c7f58f0a908e1b27f528ce0f5201dc6dd1",
+        "score": 0.667748212814331
+      },
+      {
+        "document_id": "c0c553ecf98c3924ad246cbba8cda039",
+        "block_id": "gv-816623-b00002",
+        "start": 0,
+        "end": 403,
+        "source_sha256": "bf4b2778b0e0210002696c4211888d2ab8936620a91338da85d6f2de031f32a6",
+        "score": 0.6569643616676331
+      },
+      {
+        "document_id": "8c0f2da59a30e8ee52ccde25bbbbfa0a",
+        "block_id": "gv-695885-b00008",
+        "start": 0,
+        "end": 42,
+        "source_sha256": "12b803f25416d43d3c454b50d31391f380c7e913ecfd8e31a5313e287341a595",
+        "score": 0.6451006531715393
+      },
+      {
+        "document_id": "0e674df1786e061a6d98d9219f842841",
+        "block_id": "gv-809513-b00012",
+        "start": 0,
+        "end": 48,
+        "source_sha256": "fca1f3ba70e74aeb2a348dae6f6a417e1e3c264049821a342545ca78f2d20bb1",
+        "score": 0.6199579238891602
+      }
+    ]
+  },
+  "initial_full_build": {
+    "stage": "build_complete",
+    "documents": 5000,
+    "processed_documents": 5000,
+    "cached_documents": 1118,
+    "passages": 120464,
+    "bytes": 242392007,
+    "nonindexable_inputs": 0,
+    "documents_without_passages": 0,
+    "seconds": 1548.053,
+    "vector_batching_policies": {
+      "source_order": 841,
+      "length_ascending": 4159
+    },
+    "vector_runtime_policies": {
+      "source_order;threads=2;batch_size=16": 841,
+      "length_ascending;threads=2;batch_size=16": 277,
+      "length_ascending;threads=4;batch_size=16": 3882
+    },
+    "index_id": "05e795cd8419bc6756294fa243de5774d25423cd4ab467a465ae8e0d7c4716fa",
+    "automatic_downloads": false,
+    "model_profile": {
+      "id": "minilm",
+      "role": "retrieval",
+      "provider": "huggingface_cpu",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "license": "Apache-2.0",
+      "languages": [
+        "en"
+      ],
+      "parameters": 22713728,
+      "max_input_tokens": 256,
+      "dimensions": 384,
+      "runtime": "transformers_cpu",
+      "experimental": false,
+      "calibration": "not_applicable",
+      "intended_use": "Semantic retrieval and clustering of short source windows; not prejudice classification.",
+      "limitations": [
+        "The sentence-transformer limit is 256 wordpieces, despite the encoder's 512 positions.",
+        "Similarity is not evidence of shared stance, endorsement or prejudice."
+      ],
+      "files": [
+        "README.md",
+        "config.json",
+        "model.safetensors",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "special_tokens_map.json",
+        "vocab.txt",
+        "sentence_bert_config.json",
+        "1_Pooling/config.json",
+        "modules.json"
+      ],
+      "max_download_bytes": 167772160,
+      "registry_version": "doxa-models-3.0",
+      "reviewed_at": "2026-11-16",
+      "model_card": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md",
+      "runtime_settings": {
+        "device": "cpu",
+        "threads": 4,
+        "batch_size": 16,
+        "batching_policy": "length_ascending",
+        "pooling": "attention_mask_mean_then_l2"
+      }
+    }
+  },
+  "initial_full_cohort_proof": "benchmarks/cpu-semantic-5000-original-cohort-summary.json",
+  "metadata_only_refresh": {
+    "reused_documents": 4999,
+    "newly_embedded_documents": 1,
+    "source_text_and_locator_digest_unchanged": true,
+    "removed_version_ids": [
+      "c0ca9a31ef328af76c2f38599f6c35f8"
+    ],
+    "new_version_ids": [
+      "6d3ece23015208d743a320aff9e29415"
+    ]
+  },
+  "previous_attempts": [
+    {
+      "elapsed_seconds": 950.204,
+      "peak_driver_rss_kib": 602344,
+      "completed_document_caches": 841,
+      "threads": 2,
+      "batching_policy": "source_order",
+      "stop_reason": "Adopt measured length-aware batching after unchanged-model numerical parity passed."
+    },
+    {
+      "elapsed_seconds": 488.467,
+      "peak_driver_rss_kib": 592368,
+      "completed_document_caches": 1118,
+      "threads": 2,
+      "batching_policy": "length_ascending",
+      "stop_reason": "Serialize CPU workloads and adopt4threads after numerical parity check."
+    }
+  ],
+  "active_indexing_seconds": 2994.647,
+  "final_validation_elapsed_seconds": 50.363,
+  "canonical_refresh_and_checks_seconds": 25.235,
+  "peak_index_driver_rss_kib": 617404,
+  "runtime_settings": {
+    "device": "cpu",
+    "threads": 4,
+    "batch_size": 16,
+    "batching_policy": "length_ascending",
+    "pooling": "attention_mask_mean_then_l2"
+  },
+  "software": {
+    "torch": "2.9.1+cpu",
+    "transformers": "4.57.6",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "numpy": "2.5.5"
+  },
+  "limits": {
+    "documents": 10000,
+    "passages": 250000,
+    "document_passages": 20000,
+    "active_index_bytes": 536870912,
+    "chunk_passages": 256
+  },
+  "batching_parity_artifact": "benchmarks/cpu-embedding-batching-parity.json",
+  "combined_memory_artifact": "benchmarks/v3-local-news-resources.json",
+  "limitations": [
+    "All5000canonicalarticles indexed without article/passage sampling; no independent semantic relevance, stance or prejudice accuracy labels.",
+    "The project retains5001source versions for history; the active index and every benchmark query explicitly select the canonical5000.",
+    "A metadata-only revision reused4999document caches and embedded one new immutable source version; original full-cohort evidence remains separate.",
+    "Runtime reflects earlier concurrent2-thread work followed by serialized4-thread work, with operational restart downtime excluded.",
+    "Reported RSS is index-driver memory; separate resource artifact tracks actual Ollama/driver combined sampled RSS.",
+    "All returned citations were checked against unmodified source blocks."
+  ]
+}

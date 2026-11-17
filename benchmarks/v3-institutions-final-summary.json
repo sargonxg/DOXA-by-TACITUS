@@ -1,0 +1,478 @@
+{
+  "schema_version": "3.0",
+  "benchmark_kind": "real_complete_document_contextual_analysis",
+  "generated_at": "2026-11-17T02:36:06.105202+00:00",
+  "collection": {
+    "collection": "institutions",
+    "documents": 20,
+    "sampled_documents": false,
+    "passage_sampling": false,
+    "selection_policy": "Frozen source order; all blocks of each selected source.",
+    "manifest_sha256": "81769b3848a7ff197ca45c01acd77440757d40387cb40918eeff44fb92269df1"
+  },
+  "run_id": "074539f031e64dc28f03384481563a85",
+  "project_id": "7e0eda59c8e54ca58de66698803a856e",
+  "status": "partial",
+  "config": {
+    "provider": "cloudflare",
+    "model": "@cf/google/gemma-4-26b-a4b-it",
+    "lens_ids": [
+      "discourse",
+      "ihra",
+      "jda",
+      "nexus",
+      "anti-muslim-hostility",
+      "anti-muslim-racism"
+    ],
+    "question": "Apply the selected criteria in context, distinguishing attribution, counter-speech, uncertainty and competing frameworks.",
+    "persona": "research",
+    "budget_usd": 1.25,
+    "document_ids": [
+      "8034cbd01d8c663088d89d271ef48dd9",
+      "a22ce6e063e56b385b78291fb7b6e3c6",
+      "5b60013207d07c0129398fe1c3f6e629",
+      "de578eab78f7889a36107e13a4e46722",
+      "6a0d3a41e6c3a7f13b9850def44036f1",
+      "69017a28cd075085db8da2064e341e7b",
+      "4fcdd43fd9cf392ee0c5f68986db1b23",
+      "7c95c773f8eb909defde516eca31b2a4",
+      "46d2ef058075a7dbeab3a7cd5a862647",
+      "1a82c53d719bc1201c329ddee7c2e4ce",
+      "b630a74db61a98d40f68de3f90049e49",
+      "c390de027c4c715c04d2ec2ea9a88c69",
+      "fbdcd9b5cb4b75b1049c5ba4d92211b5",
+      "5980f7de5c7a8305e1fe681166da4ca1",
+      "ce6820253dd6abda147083371c76ee13",
+      "66a0a07c36313ddc73dee3a7fa35362e",
+      "0642e61e6553a21f1fbeec28c40540db",
+      "dff2990c07d0af9cc852284662cfeb8f",
+      "d03475e6d970f85a936c28fe0fe9c3cc",
+      "47884b516317c49de697fa5f282d0053"
+    ],
+    "methodology_version": "3.0",
+    "allow_remote_text": true,
+    "unit_max_chars": 4000,
+    "task_index_basis": "source_units_v3",
+    "context_sentences": 2,
+    "pipeline_version": "contextual-decisions-3.2.1",
+    "unit_builder_version": "source-units-3.1",
+    "quantization": "provider_managed",
+    "provider_preflight": {
+      "ok": true,
+      "provider": "cloudflare",
+      "model": "@cf/google/gemma-4-26b-a4b-it",
+      "mode": "remote",
+      "revision": "unresolved",
+      "quantization": "provider_managed",
+      "context_limit": 32768,
+      "temperature": 0,
+      "structured_output": true,
+      "source_pack_bytes": 12000,
+      "source_pack_windows": 64,
+      "lens_batch_size": 12,
+      "batching_version": "managed-gemma-2",
+      "citation_offset_unit": "unicode_code_points",
+      "prompt_version": "doxa-evidence-1.2",
+      "response_schema_version": "evidence-enums-1",
+      "pricing_checked_at": "2026-11-16",
+      "reasoning_requested": "disabled",
+      "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+    },
+    "schema_version": "3.0",
+    "source_manifest_key": "runs/074539f031e64dc28f03384481563a85/source-manifest.json",
+    "source_snapshot": [
+      {
+        "id": "8034cbd01d8c663088d89d271ef48dd9",
+        "sha256": "4a791b1640104170d7e882c2515128103368e14a87bb5e5220b64da9f828d556"
+      },
+      {
+        "id": "a22ce6e063e56b385b78291fb7b6e3c6",
+        "sha256": "ccc817b6fe4117abe682f01a2f0a53a5ad158203a3644c960f99bd639a52a357"
+      },
+      {
+        "id": "5b60013207d07c0129398fe1c3f6e629",
+        "sha256": "87d43392dfc581c6dcab02e8ff6b6ec2401f7c96adf742d8b75aa71569238b9d"
+      },
+      {
+        "id": "de578eab78f7889a36107e13a4e46722",
+        "sha256": "dc043598fbaf8bd3198fd068da3d7d89cb179a4849850f67635a39268fb7b722"
+      },
+      {
+        "id": "6a0d3a41e6c3a7f13b9850def44036f1",
+        "sha256": "aafc9389ffa8ff41fe2d7eea78ba27cd68e7121a6bbf48056868d0fd002ce459"
+      },
+      {
+        "id": "69017a28cd075085db8da2064e341e7b",
+        "sha256": "8f03151fcb83371d0bfe38ceea4705d9249c45a2e5df51ef7d2edd5633f2e65c"
+      },
+      {
+        "id": "4fcdd43fd9cf392ee0c5f68986db1b23",
+        "sha256": "c826adb7813babc836a8456fa9fb7c517710bb481b9548efb36710ee087c8f6e"
+      },
+      {
+        "id": "7c95c773f8eb909defde516eca31b2a4",
+        "sha256": "d4b50d024dd09918f75ae46f5b0a5ef2cb612bdd8d69edb043e34010159473fa"
+      },
+      {
+        "id": "46d2ef058075a7dbeab3a7cd5a862647",
+        "sha256": "0be3aeeb06c3c8565c6a4d63acc36aeb7bf2fccf3e94e5a403d11f9fb845e5b7"
+      },
+      {
+        "id": "1a82c53d719bc1201c329ddee7c2e4ce",
+        "sha256": "6d38441c34bc7f965f72f381e05ac305c88963677ea832c9b7800e743d1f2222"
+      },
+      {
+        "id": "b630a74db61a98d40f68de3f90049e49",
+        "sha256": "8a74e1bd02e4c0baf897e5b4ecacea5163c7d8118e96751905bc8b40ebe7aaac"
+      },
+      {
+        "id": "c390de027c4c715c04d2ec2ea9a88c69",
+        "sha256": "0ae0b0840fb2bbb5d54069a465cbc9df9a39a1730406656334855e489360cfdf"
+      },
+      {
+        "id": "fbdcd9b5cb4b75b1049c5ba4d92211b5",
+        "sha256": "ec1701f0a98163e0c6739c24142977998dd41a2f9055b32d90bed535851bdcac"
+      },
+      {
+        "id": "5980f7de5c7a8305e1fe681166da4ca1",
+        "sha256": "fc7fe1f1f99c8a8f1b0bc0948c9611307fff901f4c85c4e6f9c62313dfaefa1c"
+      },
+      {
+        "id": "ce6820253dd6abda147083371c76ee13",
+        "sha256": "49de1a3734b26231bbdf850c27097435abec1d40100cefd5dfd81fc370c2f368"
+      },
+      {
+        "id": "66a0a07c36313ddc73dee3a7fa35362e",
+        "sha256": "60298d24ff6f89eb969a3e92a1b9ece05fd9d89ccef18f3631991bccbf3e7828"
+      },
+      {
+        "id": "0642e61e6553a21f1fbeec28c40540db",
+        "sha256": "984ac4f06c421f06d60d3288f9d8730ab8fe234a965df99e0a0686c9d2af5300"
+      },
+      {
+        "id": "dff2990c07d0af9cc852284662cfeb8f",
+        "sha256": "783fe1e4993685d6619c463b21d2cfe5667a7ad006da5bc5bcd9c5886b8e9ee4"
+      },
+      {
+        "id": "d03475e6d970f85a936c28fe0fe9c3cc",
+        "sha256": "d28ae5ac6aaf6c732e4755c3a006e609c557ce97f71eb8dc0e2fc8f0519bb796"
+      },
+      {
+        "id": "47884b516317c49de697fa5f282d0053",
+        "sha256": "f1f34f41f4d152488f5a86b3c6154b82d4b314315cc33e42512314f9cc00ebdd"
+      }
+    ],
+    "budget_changes": [
+      {
+        "previous": 1.0,
+        "new": 1.0,
+        "at": "2026-11-17T02:18:39.025733+00:00"
+      },
+      {
+        "previous": 1.0,
+        "new": 1.25,
+        "at": "2026-11-17T02:34:47.481627+00:00"
+      }
+    ]
+  },
+  "model_profile": {
+    "provider": "cloudflare",
+    "model": "@cf/google/gemma-4-26b-a4b-it",
+    "mode": "remote",
+    "revision": "unresolved",
+    "quantization": "provider_managed",
+    "context_limit": 32768,
+    "temperature": 0,
+    "structured_output": true,
+    "source_pack_bytes": 12000,
+    "source_pack_windows": 64,
+    "lens_batch_size": 12,
+    "batching_version": "managed-gemma-2",
+    "citation_offset_unit": "unicode_code_points",
+    "prompt_version": "contextual-decisions-3.2.1",
+    "response_schema_version": "source-vectors-3.2",
+    "pricing_checked_at": "2026-11-16",
+    "reasoning_requested": "disabled",
+    "methodology_version": "3.0",
+    "unit_builder_version": "source-units-3.1",
+    "unit_builder_config": {
+      "max_unit_chars": 4000,
+      "context_sentences": 2
+    },
+    "result_codes": {
+      "0": "does_not_meet",
+      "1": "meets_criterion",
+      "2": "uncertain",
+      "3": "not_applicable"
+    },
+    "wire_budget_version": "3.2.2",
+    "criterion_registry_version": "3.0.0",
+    "rubric_versions": {
+      "discourse": "1.0.0",
+      "ihra": "2026-11-operational-1",
+      "jda": "2021-operational-1",
+      "nexus": "2024-06-operational-1",
+      "anti-muslim-hostility": "2026-03-operational-1",
+      "anti-muslim-racism": "2025-operational-1"
+    },
+    "learning_snapshot_id": null,
+    "approved_example_ids": [],
+    "analysis_config_hash": "e0fa88c7717a4cb2bb931299",
+    "cache_hit_decisions": 75,
+    "response_model": "@cf/google/gemma-4-26b-a4b-it-external"
+  },
+  "progress": {
+    "documents_total": 20,
+    "documents_done": 20,
+    "documents_complete": 18,
+    "documents_settled": 20,
+    "blocks_total": 616,
+    "blocks_done": 613,
+    "tasks_total": 160,
+    "tasks_done": 157,
+    "tasks_failed": 3,
+    "current_document": "Combating Religious Discrimination Today: Final Report",
+    "complete": false,
+    "analysis_kind": "model_analysis",
+    "semantic_analysis_performed": true,
+    "semantic_blocks_done": 613,
+    "lexical_blocks_done": 0
+  },
+  "usage": {
+    "input_tokens": 6825172,
+    "output_tokens": 751717,
+    "cost_usd": null,
+    "requests": 1640,
+    "estimated": true
+  },
+  "budget_accounted_usd": 0.9186193999999998,
+  "unit_states": [
+    {
+      "status": "accepted",
+      "count": 613
+    },
+    {
+      "status": "partial",
+      "count": 3
+    }
+  ],
+  "decision_counts": [
+    {
+      "result": "does_not_meet",
+      "criterion_kind": "boundary",
+      "count": 725
+    },
+    {
+      "result": "does_not_meet",
+      "criterion_kind": "descriptive",
+      "count": 279
+    },
+    {
+      "result": "does_not_meet",
+      "criterion_kind": "indicator",
+      "count": 5325
+    },
+    {
+      "result": "meets_criterion",
+      "criterion_kind": "boundary",
+      "count": 3
+    },
+    {
+      "result": "meets_criterion",
+      "criterion_kind": "descriptive",
+      "count": 1680
+    },
+    {
+      "result": "meets_criterion",
+      "criterion_kind": "indicator",
+      "count": 91
+    },
+    {
+      "result": "not_applicable",
+      "criterion_kind": "boundary",
+      "count": 504
+    },
+    {
+      "result": "not_applicable",
+      "criterion_kind": "descriptive",
+      "count": 491
+    },
+    {
+      "result": "not_applicable",
+      "criterion_kind": "indicator",
+      "count": 2584
+    },
+    {
+      "result": "uncertain",
+      "criterion_kind": "descriptive",
+      "count": 12
+    },
+    {
+      "result": "uncertain",
+      "criterion_kind": "indicator",
+      "count": 7
+    }
+  ],
+  "elapsed_seconds": 2366.6915228219987,
+  "sessions": [
+    {
+      "started_at": "2026-11-16T23:00:08.973490+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 8,
+      "requested_budget_usd": 1.0
+    },
+    {
+      "started_at": "2026-11-17T01:58:55.909857+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 8,
+      "requested_budget_usd": 1.0
+    },
+    {
+      "started_at": "2026-11-17T02:18:38.858163+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 8,
+      "requested_budget_usd": 1.0
+    },
+    {
+      "started_at": "2026-11-17T02:34:47.420773+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 8,
+      "requested_budget_usd": 1.25
+    }
+  ],
+  "error_tasks": 3,
+  "interpretation_accuracy": null,
+  "independent_human_labels": false,
+  "notice": "All text blocks of each selected article/document are selected. Coverage and failures remain explicit. Exact anchors do not establish interpretation accuracy.",
+  "archive": {
+    "manifest": "benchmarks/v3-institutions/showcase.json",
+    "parts": 3,
+    "counts": {
+      "documents": 20,
+      "assessments": 11701,
+      "audited_references": 308256,
+      "source_characters": 2349640,
+      "words": 356964
+    }
+  }
+}

@@ -17,7 +17,8 @@ import shutil
 import sqlite3
 import sys
 import tempfile
-from urllib.parse import quote, urlsplit
+from urllib.parse import urlsplit
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -74,7 +75,7 @@ def freeze_run(data_dir: Path, run_id: str, *, limit: int = 4, assessment_ids: l
     database = data_dir / "doxa.sqlite3"
     if not database.is_file():
         raise ValueError("The specified local workspace database does not exist")
-    connection = sqlite3.connect("file:" + quote(str(database), safe="/") + "?mode=ro", uri=True)
+    connection = sqlite3.connect(database.as_uri() + "?mode=ro", uri=True)
     connection.row_factory = sqlite3.Row
     try:
         connection.execute("BEGIN")
@@ -114,6 +115,15 @@ def freeze_run(data_dir: Path, run_id: str, *, limit: int = 4, assessment_ids: l
             "SELECT status,COUNT(*) count,COALESCE(SUM(characters),0) characters FROM v3_unit_statuses WHERE run_id=? GROUP BY status", [run_id])]
         decisions = [dict(row) for row in connection.execute(
             "SELECT criterion_kind,result,COUNT(*) count FROM v3_assessments WHERE run_id=? GROUP BY criterion_kind,result", [run_id])]
+        document_units = [dict(row) for row in connection.execute(
+            "SELECT document_id,COUNT(*) total,SUM(status='accepted') done FROM v3_unit_statuses WHERE run_id=? GROUP BY document_id", [run_id])]
+        criteria_per_unit = sum(len(get_lens(identity)["criteria"]) for identity in run["config"].get("lens_ids", []))
+        expected_decisions = sum(row["count"] for row in unit_rows) * criteria_per_unit
+        retained_decisions = sum(row["count"] for row in decisions)
+        run_coverage = {"selected_documents": len(frozen_selection),
+                        "fully_assessed_documents": sum(row["total"] > 0 and row["done"] == row["total"] for row in document_units),
+                        "requested_criterion_decisions": expected_decisions, "retained_criterion_decisions": retained_decisions,
+                        "unresolved_criterion_decisions": max(0, expected_decisions - retained_decisions)}
         project = dict(connection.execute("SELECT * FROM projects WHERE id=?", [run["project_id"]]).fetchone())
         assessments = []
         definitions = {}
@@ -138,7 +148,7 @@ def freeze_run(data_dir: Path, run_id: str, *, limit: int = 4, assessment_ids: l
         public_run["source_selection"] = {"documents": len(frozen_selection), "sha256": digest(run["config"].get("source_snapshot", []))}
         result = {"schema_version": "doxa-annotated-guide-1", "generated_at": datetime.now(timezone.utc).isoformat(),
                   "project": project, "run": public_run, "documents": sources, "assessments": assessments,
-                  "criterion_definitions": definitions, "unit_states": unit_rows, "decision_counts": decisions,
+                  "criterion_definitions": definitions, "unit_states": unit_rows, "decision_counts": decisions, "run_coverage": run_coverage,
                   "selection_notice": "Illustrative recorded cases selected for reading guidance; not a representative sample or a new model run.",
                   "commentary_authorship": AUTHORSHIP, "independent_human_labels": False, "interpretation_accuracy": None}
         if run["config"].get("verification_selection"):
@@ -229,7 +239,10 @@ def inline_diagram(name: str) -> str:
     svg = (ROOT / "docs" / "images" / (name + ".svg")).read_text().replace("<svg ", '<svg class="diagram" ', 1)
     for identity in ("title", "desc", "arrow"):
         svg = svg.replace('id="' + identity + '"', 'id="' + name + '-' + identity + '"')
-    return svg.replace('aria-labelledby="title desc"', f'aria-labelledby="{name}-title {name}-desc"').replace('url(#arrow)', 'url(#' + name + '-arrow)')
+    svg = svg.replace('aria-labelledby="title desc"', f'aria-labelledby="{name}-title {name}-desc"').replace('url(#arrow)', 'url(#' + name + '-arrow)')
+    description = ET.fromstring(svg).find('{http://www.w3.org/2000/svg}desc')
+    caption = e(description.text or "") if description is not None else ""
+    return '<figure class="diagram-frame">' + svg + '<figcaption class="small">Diagram: ' + caption + '</figcaption></figure>'
 
 
 def source_link(value: str, label: str = "Original source ↗") -> str:
@@ -262,13 +275,20 @@ def billing_rows(run: dict) -> list[tuple[str, str]]:
 def render_html(snapshot: dict, title: str, kind: str) -> str:
     audit_snapshot(snapshot)
     run, cov = snapshot["run"], coverage(snapshot)
+    scope = snapshot.get("run_coverage") or {}
+    scope_text = (f'{scope.get("retained_criterion_decisions", 0):,} of {scope.get("requested_criterion_decisions", 0):,} requested criterion assessments retained; '
+                  f'{scope.get("fully_assessed_documents", 0):,} of {scope.get("selected_documents", 0):,} source documents fully assessed. '
+                  f'{scope.get("unresolved_criterion_decisions", 0):,} criterion assessments remain unresolved.')
     documents = {doc["id"]: doc for doc in snapshot["documents"]}
-    css = '''@page{size:A4;margin:18mm 16mm;@bottom-left{content:"DOXA / TACITUS · AI-authored reading guide";font:8px sans-serif;color:#64776a}@bottom-right{content:counter(page);font:9px sans-serif;color:#64776a}}*{box-sizing:border-box}body{margin:0;color:#204b3b;background:#f6f7f0;font:15px/1.7 Arial,Helvetica,sans-serif}.wrap{max-width:1080px;margin:auto;padding:36px}.brand{font-size:14px;letter-spacing:.18em;font-weight:700}.hero{background:#204b3b;color:#f6f7ee;padding:38px;margin:24px 0}h1{font:400 44px/1.13 Georgia,serif;letter-spacing:-.035em;margin:18px 0 24px}h2{font:400 29px/1.2 Georgia,serif;margin:0 0 20px}h3{font-size:17px}.eyebrow{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}.hero p{max-width:760px;color:#dbe5d6}.notice{border-left:3px solid #ad814b;background:#eee8d5;padding:16px 22px;font-size:13px}.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:25px 0}.kpis strong{font:400 34px Georgia,serif;display:block}.kpis span{font-size:12px}.section{padding:30px 0;border-top:1px solid #c7d4c0}.diagram{width:100%;height:auto;display:block;margin:26px 0}.case{padding:28px 0;border-top:2px solid #8fa68d}.quote{font:400 22px/1.5 Georgia,serif;border-left:3px solid #4e788d;padding-left:20px;white-space:pre-wrap}.facts{font-size:12px}.facts>div{display:grid;grid-template-columns:170px 1fr;gap:18px;padding:9px 0;border-top:1px solid #cfdbc8}.facts dt{font-weight:700}.facts dd{margin:0;overflow-wrap:anywhere}.model{background:#edf1e8;padding:18px 22px}.comment{border-left:3px solid #ad814b;padding:15px 23px;background:#faf6e9}.label{font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:700}.small,figcaption{font-size:11px;color:#607464}a{color:#356e5a;text-underline-offset:4px}.hero a{color:#e3eddb}.context{font-size:12px;white-space:pre-wrap;background:#edf1e8;padding:17px}.source{padding:17px 0;border-top:1px solid #c7d4c0}.footer{font-size:11px;border-top:1px solid #c7d4c0;padding-top:20px}.pill{display:inline-block;border:1px solid #90a884;padding:5px 10px;font-size:11px;margin:3px 5px 0 0}@media(max-width:700px){.wrap{padding:20px}.hero{padding:26px}h1{font-size:34px}.kpis{grid-template-columns:1fr}.facts>div{grid-template-columns:1fr;gap:4px}}@media print{body{background:#fff;font-size:11px;line-height:1.5}.wrap{padding:0}.hero{padding:28px;margin-top:20px}h1{font-size:34px}.section{padding:20px 0}.diagram{margin:18px 0}.case{break-before:page;padding-top:20px}.quote{font-size:17px}.facts{font-size:10px}.facts>div{padding:6px 0;grid-template-columns:135px 1fr}.model,.comment{padding:13px 18px}.notice{font-size:11px}.context{font-size:10px}.source{break-inside:avoid}.hero,.kpis{break-inside:avoid}h2,h3,.label{break-after:avoid}}'''
+    css = '''@page{size:A4;margin:18mm 16mm;@bottom-left{content:"DOXA / TACITUS · AI-authored reading guide";font:8px sans-serif;color:#64776a}@bottom-right{content:counter(page);font:9px sans-serif;color:#64776a}}*{box-sizing:border-box}body{margin:0;color:#204b3b;background:#f6f7f0;font:15px/1.7 Arial,Helvetica,sans-serif}.wrap{max-width:1080px;margin:auto;padding:36px}.brand{font-size:14px;letter-spacing:.18em;font-weight:700}.hero{background:#204b3b;color:#f6f7ee;padding:38px;margin:24px 0}h1{font:400 44px/1.13 Georgia,serif;letter-spacing:-.035em;margin:18px 0 24px}h2{font:400 29px/1.2 Georgia,serif;margin:0 0 20px}h3{font-size:17px}.eyebrow{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}.hero p{max-width:760px;color:#dbe5d6}.notice{border-left:3px solid #ad814b;background:#eee8d5;padding:16px 22px;font-size:13px}.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:25px 0}.kpis strong{font:400 34px Georgia,serif;display:block}.kpis span{font-size:12px}.section{padding:30px 0;border-top:1px solid #c7d4c0}.diagram{width:100%;height:auto;display:block;margin:26px 0}.case{padding:28px 0;border-top:2px solid #8fa68d}.quote{font:400 22px/1.5 Georgia,serif;border-left:3px solid #4e788d;padding-left:20px;white-space:pre-wrap}.facts{font-size:12px}.facts>div{display:grid;grid-template-columns:170px 1fr;gap:18px;padding:9px 0;border-top:1px solid #cfdbc8}.facts dt{font-weight:700}.facts dd{margin:0;overflow-wrap:anywhere}.model{background:#edf1e8;padding:18px 22px}.comment{border-left:3px solid #ad814b;padding:15px 23px;background:#faf6e9}.label{font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:700}.small,figcaption{font-size:11px;color:#607464}a{color:#356e5a;text-underline-offset:4px}.hero a{color:#e3eddb}.context{font-size:12px;white-space:pre-wrap;background:#edf1e8;padding:17px}.source{padding:17px 0;border-top:1px solid #c7d4c0}.source .small{overflow-wrap:anywhere}.diagram-frame{max-width:100%;margin:0}.footer{font-size:11px;border-top:1px solid #c7d4c0;padding-top:20px}.pill{display:inline-block;border:1px solid #90a884;padding:5px 10px;font-size:11px;margin:3px 5px 0 0}@media(max-width:700px){.diagram-frame{overflow-x:auto}.diagram-frame .diagram{min-width:640px}.wrap{padding:20px}.hero{padding:26px}h1{font-size:34px}.kpis{grid-template-columns:1fr}.facts>div{grid-template-columns:1fr;gap:4px}}@media print{body{background:#fff;font-size:11px;line-height:1.5}.wrap{padding:0}.hero{padding:28px;margin-top:20px}h1{font-size:34px}.section{padding:20px 0}.diagram{margin:18px 0}.case{break-before:page;padding-top:20px}.quote{font-size:17px}.facts{font-size:10px}.facts>div{padding:6px 0;grid-template-columns:135px 1fr}.model,.comment{padding:13px 18px}.notice{font-size:11px}.context{font-size:10px}.source{break-inside:avoid}.hero,.kpis{break-inside:avoid}h2,h3,.label{break-after:avoid}}'''
     intro = ("Follow real institutional passages through an explicit political-framing rubric. Read what was captured, whose position it represents and what would be needed to support a stronger bias claim."
-             if kind == "political-framing" else "Follow real source-linked assessments into a monitoring workflow. Keep reporting, represented speakers, publication dates, model coverage and human review distinct.")
+             if kind == "political-framing" else
+             "Read how institutional documents represent, report or oppose prejudice. Follow exact source wording, separate voices, explicit criteria and reviewable interpretations." if kind == "institutional-context" else
+             "Follow real source-linked assessments into a monitoring workflow. Keep reporting, represented speakers, publication dates, model coverage and human review distinct.")
     parts = [f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; img-src data:; font-src \'none\'"><title>{e(title)} · DOXA</title><style>{css}</style></head><body><main class="wrap"><p class="brand">DOXA / TACITUS</p><header class="hero"><p class="eyebrow">Recorded evidence · Annotated reading guide</p><h1>{e(title)}</h1><p>{e(intro)}</p><p class="small">Frozen {e(snapshot["generated_at"])} · Run {e(run["id"])} · Status: {e(run["status"])}</p></header>',
              f'<p class="notice"><strong>Read the evidence and the authorship labels.</strong> {e(AUTHORSHIP)} Original model readings remain labeled separately. Exact source anchoring has been checked; interpretation accuracy has not been independently measured.</p>',
              f'<section class="kpis"><div><strong>{len(snapshot["assessments"])}</strong><span>illustrative recorded cases</span></div><div><strong>{run["source_selection"]["documents"]:,}</strong><span>sources selected for the recorded run</span></div><div><strong>{cov["done"]:,}/{cov["total"]:,}</strong><span>run units fully assessed ({cov["percent"]}%)</span></div></section>',
+             f'<p class="notice"><strong>Recorded processing scope.</strong> {e(scope_text)} These are processing results, not an accuracy score.</p>',
              f'<p class="small">{e(snapshot["selection_notice"])} The cases below do not stand for every selected source. Run-wide coverage retains accepted, partial, failed and pending units.</p>',
              '<section class="section"><h2>How to read this guide.</h2><p>Begin with the exact source wording. Check the represented speaker, criterion and proposition. Read the recorded model interpretation, then use the distinctly labeled walkthrough note to question its limits.</p>',
              inline_diagram('doxa-process'), '</section>',
@@ -314,13 +334,15 @@ def render_html(snapshot: dict, title: str, kind: str) -> str:
         for lens, version, url, scope in sorted(references, key=lambda row: str(row[0])):
             parts += [f'<p><strong>{e(lens)} · {e(version)}</strong> · {source_link(url or "", "Rubric reference ↗")}<br>{e(scope)}</p>']
         parts += ['<p class="small">Criteria are operational research choices. A referenced framework does not establish independent endorsement or interpretation accuracy.</p></section>']
+        if kind == "political-framing":
+            parts.append('<p class="small"><a href="https://github.com/sargonxg/DOXA-by-TACITUS/blob/main/docs/political-bias-methodology.md">Political-framing methodology and frozen worked source packet ↗</a></p>')
     parts += ['</section><section class="section"><h2>Recorded method and limits.</h2>', facts([("Run ID", run["id"]), ("Run status at capture", run["status"]),
               ("Provider / model", str(run["config"].get("provider")) + " / " + str(run["config"].get("model"))),
               ("Model revision", run.get("model_profile", {}).get("revision", "unresolved")),
               ("Prompt version", run.get("model_profile", {}).get("prompt_version")),
               ("Research question", run["config"].get("question")), ("Reviewer perspective", run["config"].get("persona")),
               ("Source selection hash", run["source_selection"]["sha256"]), ("Walkthrough snapshot hash", snapshot.get("snapshot_sha256")),
-              ("Fully assessed units", f'{cov["done"]:,} of {cov["total"]:,} ({cov["percent"]}%)'), ("Commentary authorship", AUTHORSHIP), *billing_rows(run)]),
+              ("Fully assessed units", f'{cov["done"]:,} of {cov["total"]:,} ({cov["percent"]}%)'), ("Criterion / document scope", scope_text), ("Recorded method sessions", snapshot.get("benchmark_sessions_count")), ("Commentary authorship", AUTHORSHIP), *billing_rows(run)]),
               '<p>Exact anchors establish where words occur. No independent human labels, calibrated probability or general interpretation-accuracy score is claimed. The documents are a purposive source collection; counts do not represent public opinion. Read source context, methodological alternatives and rights notices before reusing the material.</p></section>',
               f'<footer class="footer">{e(AUTHORSHIP)}<br>DOXA by TACITUS · <a href="https://github.com/sargonxg/DOXA-by-TACITUS">Open-source workbench</a> · <a href="https://tacitus.me/doxa/">Product and methodology</a></footer></main></body></html>']
     return ''.join(parts)
@@ -361,7 +383,7 @@ def render_workbook(snapshot: dict, title: str, target: Path) -> None:
         table("Read me", ["Topic", "Details"], [["Title", title], ["Authorship", AUTHORSHIP], ["Run", snapshot["run"]["id"]],
               ["Run status at capture", snapshot["run"]["status"]], ["Selected run sources", snapshot["run"]["source_selection"]["documents"]],
               ["Run-wide fully assessed units", f'{cov["done"]} / {cov["total"]} ({cov["percent"]}%)'],
-              ["Illustrative cases", len(snapshot["assessments"])], ["Selection", snapshot["selection_notice"]],
+              ["Illustrative cases", len(snapshot["assessments"])], ["Run-wide criterion/document scope", snapshot.get("run_coverage")], ["Recorded method sessions", snapshot.get("benchmark_sessions_count")], ["Selection", snapshot["selection_notice"]],
               ["Snapshot SHA-256", snapshot["snapshot_sha256"]], ["Anchor audit", snapshot["source_anchor_audit"]], *billing_rows(snapshot["run"])])
         rows = []
         for index, item in enumerate(snapshot["assessments"], 1):
@@ -413,7 +435,7 @@ def build(snapshot: dict, prefix: Path, title: str, kind: str) -> dict:
         manifest = {"schema_version": "doxa-annotated-guide-1", "title": title, "kind": kind, "slug": prefix.name,
                     "generated_at": snapshot["generated_at"], "run_id": snapshot["run"]["id"], "run_status": snapshot["run"]["status"],
                     "snapshot_sha256": snapshot["snapshot_sha256"], "cases": len(snapshot["assessments"]),
-                    "selected_run_sources": snapshot["run"]["source_selection"]["documents"], "run_unit_coverage": coverage(snapshot),
+                    "selected_run_sources": snapshot["run"]["source_selection"]["documents"], "run_unit_coverage": coverage(snapshot), "run_coverage": snapshot.get("run_coverage"),
                     "commentary_authorship": AUTHORSHIP, "independent_human_labels": False, "interpretation_accuracy": None,
                     "files": files, "source_anchor_audit": snapshot["source_anchor_audit"],
                     "preview": [{"id": item["id"], "title": item.get("title"), "quote": item["quote"], "criterion_kind": item["criterion_kind"],
@@ -445,9 +467,10 @@ def main() -> int:
     parser.add_argument("--run-id")
     parser.add_argument("--assessment-id", action="append", help="Choose a recorded noteworthy assessment; repeat for each case")
     parser.add_argument("--cases", type=int, default=4)
+    parser.add_argument("--benchmark-summary", type=Path, help="Recorded run summary, used only for matching attempt/source provenance")
     parser.add_argument("--notes", type=Path, help="AI-authored commentary JSON keyed by selected assessment ID; never changes model records")
     parser.add_argument("--capture-unfinished", action="store_true", help="Explicitly freeze an unfinished run with its current status")
-    parser.add_argument("--kind", choices=["political-framing", "news-monitoring"], required=True)
+    parser.add_argument("--kind", choices=["political-framing", "institutional-context", "news-monitoring"], required=True)
     parser.add_argument("--title", required=True)
     parser.add_argument("--output-prefix", type=Path, required=True)
     parser.add_argument("--website-index", type=Path, help="Update the prepared TACITUS site guide index; does not deploy")
@@ -462,6 +485,13 @@ def main() -> int:
         opener = gzip.open if args.snapshot.suffix == ".gz" else open
         with opener(args.snapshot, "rt", encoding="utf-8") as stream:
             snapshot = json.load(stream)
+    if args.benchmark_summary:
+        benchmark = json.loads(args.benchmark_summary.read_text())
+        if benchmark.get("run_id") != snapshot["run"]["id"]:
+            parser.error("Benchmark summary must refer to the same recorded run")
+        snapshot.pop("snapshot_sha256", None)
+        snapshot["benchmark_sessions_count"] = len(benchmark.get("sessions", []))
+        snapshot["benchmark_source_scope"] = benchmark.get("collection", {})
     if args.notes:
         notes = json.loads(args.notes.read_text())
         selected_ids = {item["id"] for item in snapshot["assessments"]}

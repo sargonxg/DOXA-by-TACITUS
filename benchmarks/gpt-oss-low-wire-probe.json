@@ -1,0 +1,42 @@
+{
+  "schema_version": "3.0",
+  "kind": "gpt_oss_low_reasoning_wire_probe",
+  "http_status": 200,
+  "finish_reason": "stop",
+  "seconds": 16.236,
+  "usage": {
+    "prompt_tokens": 5427,
+    "completion_tokens": 589,
+    "total_tokens": 6016
+  },
+  "source_id": "us04",
+  "units": 1,
+  "criteria": 19,
+  "reasoning_effort_requested": "low",
+  "max_output_tokens": 2448,
+  "content_characters": 318,
+  "source_characters": 3727,
+  "interpretation_accuracy": null,
+  "decision_rows": 1,
+  "decision_values": [
+    1,
+    1,
+    1,
+    1,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ]
+}

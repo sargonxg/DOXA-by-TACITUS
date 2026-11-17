@@ -4,6 +4,8 @@ DOXA combines source-grounded model interpretation with optional pretrained CPU 
 
 ## Explicit CPU installation
 
+These commands target the native Python application. The standard Docker image supports Ollama and remote inference; using MiniLM/DeBERTa inside that image requires adding the CPU dependencies and mounting the verified bundles at `DOXA_CPU_MODEL_DIR`. The native profile below is the tested starting point for these optional tools.
+
 The application never downloads weights on startup, health checks or inference. Install PyTorch from its **CPU index first**; PyPI's ordinary Linux torch distribution can pull large CUDA dependencies. The `cpu` extra deliberately omits torch.
 
 ```bash
@@ -79,6 +81,10 @@ python scripts/semantic_index.py search PROJECT_ID --data-dir ./data --text 'rel
 CPU embedding inference groups existing windows by token length, then restores every vector to its original source-window order. This reduces padding; text, source ranges, model revision, attention-mask mean pooling and L2 normalization remain unchanged. `CPUModels(..., embedding_batching="source_order")` retains the original control policy. Runtime profiles record thread/batch settings and policy, while index manifests count the policies used by persisted document bundles; older bundles without an explicit policy were generated in source order.
 
 A warmed, alternating comparison on 32 actual frozen-news source windows measured maximum absolute vector difference `1.12e-7` and pairwise cosine-score difference `3.58e-7`, below the declared `1e-5` acceptance tolerance. All 32 vectors remained in their original order. Median observed latency was 4.215s in source order and 1.974s with length grouping on this shared host. This microbenchmark does not promise a 2.13x full-corpus speedup or establish interpretation accuracy. Source-order cached vectors are retained with their provenance after this parity check; the machine-readable result is `benchmarks/cpu-embedding-batching-parity.json`.
+
+The same 32 windows also passed the two-thread versus four-thread numerical check with zero observed vector/cosine difference. Per-document runtime settings and manifest counts distinguish reused two-thread caches from newly generated four-thread caches. Older unrelated bundles without runtime settings remain explicitly unrecorded. Heavy local LLM generation and embedding ingestion can contend for a CPU quota even when RAM fits; run these phases sequentially when deadlines or latency degrade.
+
+An older interrupted local run may contain article-sized tasks that exceed its scheduler deadline. Stop that workspace's workers, inspect `python scripts/repartition_local_tasks.py --data-dir DATA --run-id RUN`, then use `--apply` to replace unfinished work with one canonical source unit per task before resuming the original benchmark arguments. This local-only maintenance archives original task rows and request history, preserves model outputs/reviews and source-unit IDs, and changes operational scheduling rather than the model or methodology. It refuses changed sources or nonzero paid reservations; it must not run concurrently with workers.
 
 Baseline resource caps are 10,000 ready documents (to accommodate 5,000 news articles plus institutional cases), 250,000 passages and 512MiB of active index data per project. Each document is capped at 20,000 passages, source extraction remains bounded at 40 million characters, and vector/anchor chunks hold at most 256 passages. Oversized scopes fail explicitly. Historical content versions can leave inactive artifact bundles; disk lifecycle/garbage collection is a separate operational task, not silent deletion during live search.
 

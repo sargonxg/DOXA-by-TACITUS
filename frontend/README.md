@@ -13,7 +13,10 @@ The development server proxies `/api` to `127.0.0.1:8000`.
 
 The single workspace links a paginated source collection, timeline, author ×
 criterion matrix, retained observations, and an exact-source evidence inspector.
-Global filters and exports share a server query snapshot. Source and evidence
+Global filters and exports share a server query snapshot. The explicit
+**Corpus · all imported sources** selection has no model measurements; successful
+manual imports select it so new files stay visible. An analysis selection shows
+that run's frozen source cohort. New analysis can freeze the current corpus scope. Source and evidence
 pages request 50 records and render a bounded number of rows; the client does
 not download all 5,000 source bodies. Drawers contain import, analysis, model
 readiness, processing jobs, reports, filters, and reviewed learning.
@@ -38,12 +41,21 @@ text-transfer consent and a run budget. Models exposes server health, the monthl
 cap, and optional explicit CPU experiments; opening it never downloads a model.
 Saved showcase results display historical usage and cannot be resumed.
 
+Independent model verification is available in Processing and Models. It selects
+a completed primary contextual run, requires separate cloud text-transfer consent,
+and caps its visible budget at $2. The GPT-OSS 120B verifier is a separate job;
+primary counts remain pinned. Saved comparison reads show selected-unit coverage,
+paired raw decisions and literal field differences, with at most 200 detail rows
+and 20 initially displayed. Model agreement is not interpretation accuracy.
+
 Run browser checks from the **repository root** after building the interface:
 
 ```sh
 .venv/bin/python tests/browser_v3.py
 .venv/bin/python tests/browser_upload_resume.py
 .venv/bin/python tests/browser_batches.py
+.venv/bin/python tests/browser_import_scope.py
+.venv/bin/python tests/browser_verification.py
 ```
 
 These start isolated local servers and require Playwright plus system Chromium.
@@ -67,6 +79,12 @@ uses a SQLite online backup and copied source artifacts to inspect the actual
 actual paging, source highlights, trajectory availability, unassessed framework
 labels, mobile layout and the guide drawer link, without requesting inference.
 Set `DOXA_BROWSER_PUBLISH_DOCS=1` to copy the captured screenshots to `docs/images`.
+
+The corpus-scope test imports one new source after a frozen 5,000-source run,
+checks 5,001 corpus sources versus 5,000 in that run, restores the literal `none`
+sentinel, and verifies the Analyze query includes the new source. The verifier
+suite mocks every verification request to test consent, the $2 cap, eligible run
+selection, separate counts, partial comparison coverage, and mobile layout.
 
 `tests/browser_smoke.py` forwards to the current v3 suite. The original seven-view
 smoke script is retained in `tests/legacy/browser_smoke_v1.py` as historical

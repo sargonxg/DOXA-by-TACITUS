@@ -1,0 +1,83 @@
+{
+  "schema_version": "doxa-annotated-guide-1",
+  "title": "How DOXA captures political framing",
+  "kind": "political-framing",
+  "slug": "political-framing-commentary",
+  "generated_at": "2026-11-17T02:29:09.008475+00:00",
+  "run_id": "8d11a4b04f0c444cab31152c84e7e74e",
+  "run_status": "partial",
+  "snapshot_sha256": "24e99c10fee0d423add23cbc81096f3a3d974b30b4f01978a487ba44e58e1cb4",
+  "cases": 4,
+  "selected_run_sources": 4,
+  "run_unit_coverage": {
+    "total": 60,
+    "done": 59,
+    "percent": 98.3
+  },
+  "run_coverage": {
+    "fully_assessed_documents": 3,
+    "requested_criterion_decisions": 360,
+    "retained_criterion_decisions": 358,
+    "selected_documents": 4,
+    "unresolved_criterion_decisions": 2
+  },
+  "commentary_authorship": "AI-authored walkthrough guidance; not independent human adjudication or an interpretation-accuracy benchmark.",
+  "independent_human_labels": false,
+  "interpretation_accuracy": null,
+  "files": [
+    {
+      "file": "political-framing-commentary.pdf",
+      "bytes": 73806,
+      "sha256": "c8b699ad8034bdc7f58e774bb096b2ce4ae0e776f2b26c49bfa552b1cfe5ace6"
+    },
+    {
+      "file": "political-framing-commentary.html",
+      "bytes": 42268,
+      "sha256": "5ae54df1bc0f6716b158bc4f89b2fa368a61ba26019485c32d33ea33f37102a9"
+    },
+    {
+      "file": "political-framing-commentary.xlsx",
+      "bytes": 30381,
+      "sha256": "7aac26a922342855f7767ba5764a1d4a30b2c688bd284c80291d906ed4590ce9"
+    },
+    {
+      "file": "political-framing-commentary.snapshot.json.gz",
+      "bytes": 100798,
+      "sha256": "d7105a5e06a68613c991bb06a9751c1555dea6fd138d1e157c341ef12bff4f62"
+    }
+  ],
+  "source_anchor_audit": {
+    "checked_references_and_primary_spans": 12,
+    "notice": "Source anchoring is verified. Semantic correctness remains unmeasured.",
+    "offset_unit": "unicode_code_points",
+    "valid": true
+  },
+  "preview": [
+    {
+      "id": "d6a4a1bf97d03d50b05186eeba945dd6",
+      "title": "Evaluative language",
+      "quote": "Over the last 4 years, the previous administration trampled free speech rights by censoring Americans' speech on online platforms, often by exerting substantial coercive pressure on third parties, such as social media companies, to moderate, deplatform, or otherwise suppress speech that the Federal Government did not approve. ",
+      "criterion_kind": "descriptive",
+      "result": "meets_criterion",
+      "attribution": "unknown",
+      "document_stance": "opposes",
+      "source_title": "Executive Order 14149: Restoring Freedom of Speech and Ending Federal Censorship",
+      "source_url": "https://www.govinfo.gov/content/pkg/DCPD-202500116/html/DCPD-202500116.htm",
+      "model_reading": "The text uses terms like 'trampled' to describe previous administration actions and 'intolerable' to characterize government censorship of speech.",
+      "walkthrough_note": "The verb ‘trampled’ makes an evaluative judgment about a previous administration. The sentence also alleges a mechanism—pressure on online platforms. DOXA captures that rhetorical and political framing; it does not independently verify that the alleged events occurred or that the characterization is fair."
+    },
+    {
+      "id": "2d44e6da2e3f70cb876ef6f1bdc4301b",
+      "title": "Policy Position",
+      "quote": "It shall be the policy of the United States to combat anti-Semitism vigorously, using all available and appropriate legal tools, to prosecute, remove, or otherwise hold to account the perpetrators of unlawful anti-Semitic harassment and violence.",
+      "criterion_kind": "descriptive",
+      "result": "meets_criterion",
+      "attribution": "unknown",
+      "document_stance": "supports",
+      "source_title": "Executive Order 14188: Additional Measures To Combat Anti-Semitism",
+      "source_url": "https://www.govinfo.gov/content/pkg/DCPD-202500196/html/DCPD-202500196.htm",
+      "model_reading": "The document establishes a policy to vigorously combat anti-Semitism using legal tools to hold perpetrators accountable.",
+      "walkthrough_note": "This is an explicit policy proposition: combat antisemitism through specified legal-enforcement tools. Preserve the qualifications ‘available and appropriate’ and the reference to unlawful harassment and violence. The assessment records a policy position, rather than treating the word ‘anti-Semitism’ as evidence of the author endorsing it."
+    }
+  ]
+}

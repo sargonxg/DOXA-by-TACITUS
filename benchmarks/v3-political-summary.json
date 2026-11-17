@@ -1,0 +1,317 @@
+{
+  "schema_version": "3.0",
+  "benchmark_kind": "real_complete_document_contextual_analysis",
+  "generated_at": "2026-11-17T02:19:10.291861+00:00",
+  "collection": {
+    "collection": "political",
+    "documents": 4,
+    "sampled_documents": false,
+    "passage_sampling": false,
+    "selection_policy": "Four purposive political-framing teaching sources; different genres and dates, no matched fairness claim. Full source text.",
+    "manifest_sha256": "1c7f263ee60a992f7f8d638e604a55d01983ae1c28b871d2df3300c8d7e9e551"
+  },
+  "run_id": "8d11a4b04f0c444cab31152c84e7e74e",
+  "project_id": "610ceeecafcb4a86b57b1c0881eba6eb",
+  "status": "partial",
+  "config": {
+    "provider": "cloudflare",
+    "model": "@cf/google/gemma-4-26b-a4b-it",
+    "lens_ids": [
+      "political-framing"
+    ],
+    "question": "Describe expressed policy positions, evaluative language, agency, source voices and presuppositions. These are descriptive textual features, not an objective bias or ideology score. Only assess comparative asymmetry if an explicit comparable reference and paired evidence are actually supplied; otherwise retain uncertainty. Preserve quoted speakers and do not infer private beliefs or verify causal claims from rhetoric alone.",
+    "persona": "research",
+    "budget_usd": 0.5,
+    "document_ids": [
+      "0f29d18cbd5bc17a37750aaf8b8bf326",
+      "de3eb2f18a5c128500631e021ebc2fc2",
+      "5186886630d8bcc712beda9f26fd497a",
+      "85184c52779016c4b5cf07e7668d97a6"
+    ],
+    "methodology_version": "3.0",
+    "allow_remote_text": true,
+    "unit_max_chars": 4000,
+    "task_index_basis": "source_units_v3",
+    "context_sentences": 2,
+    "pipeline_version": "contextual-decisions-3.2.1",
+    "unit_builder_version": "source-units-3.1",
+    "quantization": "provider_managed",
+    "provider_preflight": {
+      "ok": true,
+      "provider": "cloudflare",
+      "model": "@cf/google/gemma-4-26b-a4b-it",
+      "mode": "remote",
+      "revision": "unresolved",
+      "quantization": "provider_managed",
+      "context_limit": 32768,
+      "temperature": 0,
+      "structured_output": true,
+      "source_pack_bytes": 12000,
+      "source_pack_windows": 64,
+      "lens_batch_size": 12,
+      "batching_version": "managed-gemma-2",
+      "citation_offset_unit": "unicode_code_points",
+      "prompt_version": "doxa-evidence-1.2",
+      "response_schema_version": "evidence-enums-1",
+      "pricing_checked_at": "2026-11-16",
+      "reasoning_requested": "disabled",
+      "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+    },
+    "schema_version": "3.0",
+    "source_manifest_key": "runs/8d11a4b04f0c444cab31152c84e7e74e/source-manifest.json",
+    "source_snapshot": [
+      {
+        "id": "0f29d18cbd5bc17a37750aaf8b8bf326",
+        "sha256": "c826adb7813babc836a8456fa9fb7c517710bb481b9548efb36710ee087c8f6e"
+      },
+      {
+        "id": "de3eb2f18a5c128500631e021ebc2fc2",
+        "sha256": "8a74e1bd02e4c0baf897e5b4ecacea5163c7d8118e96751905bc8b40ebe7aaac"
+      },
+      {
+        "id": "5186886630d8bcc712beda9f26fd497a",
+        "sha256": "ec1701f0a98163e0c6739c24142977998dd41a2f9055b32d90bed535851bdcac"
+      },
+      {
+        "id": "85184c52779016c4b5cf07e7668d97a6",
+        "sha256": "fc7fe1f1f99c8a8f1b0bc0948c9611307fff901f4c85c4e6f9c62313dfaefa1c"
+      }
+    ],
+    "budget_changes": [
+      {
+        "previous": 0.5,
+        "new": 0.5,
+        "at": "2026-11-17T02:16:47.985425+00:00"
+      },
+      {
+        "previous": 0.5,
+        "new": 0.5,
+        "at": "2026-11-17T02:18:37.989859+00:00"
+      }
+    ]
+  },
+  "model_profile": {
+    "provider": "cloudflare",
+    "model": "@cf/google/gemma-4-26b-a4b-it",
+    "mode": "remote",
+    "revision": "unresolved",
+    "quantization": "provider_managed",
+    "context_limit": 32768,
+    "temperature": 0,
+    "structured_output": true,
+    "source_pack_bytes": 12000,
+    "source_pack_windows": 64,
+    "lens_batch_size": 12,
+    "batching_version": "managed-gemma-2",
+    "citation_offset_unit": "unicode_code_points",
+    "prompt_version": "contextual-decisions-3.2.1",
+    "response_schema_version": "source-vectors-3.2",
+    "pricing_checked_at": "2026-11-16",
+    "reasoning_requested": "disabled",
+    "methodology_version": "3.0",
+    "unit_builder_version": "source-units-3.1",
+    "unit_builder_config": {
+      "max_unit_chars": 4000,
+      "context_sentences": 2
+    },
+    "result_codes": {
+      "0": "does_not_meet",
+      "1": "meets_criterion",
+      "2": "uncertain",
+      "3": "not_applicable"
+    },
+    "wire_budget_version": "3.2.2",
+    "criterion_registry_version": "3.0.0",
+    "rubric_versions": {
+      "political-framing": "1.0.0"
+    },
+    "learning_snapshot_id": null,
+    "approved_example_ids": [],
+    "analysis_config_hash": "cbfa22143bdd254e42caafb1",
+    "cache_hit_decisions": 22,
+    "response_model": "@cf/google/gemma-4-26b-a4b-it-external"
+  },
+  "progress": {
+    "documents_total": 4,
+    "documents_done": 4,
+    "documents_complete": 3,
+    "documents_settled": 4,
+    "blocks_total": 60,
+    "blocks_done": 59,
+    "tasks_total": 16,
+    "tasks_done": 15,
+    "tasks_failed": 1,
+    "current_document": "The U.S. National Strategy to Counter Antisemitism",
+    "complete": false,
+    "analysis_kind": "model_analysis",
+    "semantic_analysis_performed": true,
+    "semantic_blocks_done": 59,
+    "lexical_blocks_done": 0
+  },
+  "usage": {
+    "input_tokens": 705514,
+    "output_tokens": 95567,
+    "cost_usd": 0.09922149999999998,
+    "requests": 179,
+    "estimated": true
+  },
+  "budget_accounted_usd": 0.09922149999999998,
+  "unit_states": [
+    {
+      "status": "accepted",
+      "count": 59
+    },
+    {
+      "status": "partial",
+      "count": 1
+    }
+  ],
+  "decision_counts": [
+    {
+      "result": "does_not_meet",
+      "criterion_kind": "descriptive",
+      "count": 3
+    },
+    {
+      "result": "meets_criterion",
+      "criterion_kind": "descriptive",
+      "count": 260
+    },
+    {
+      "result": "not_applicable",
+      "criterion_kind": "descriptive",
+      "count": 91
+    },
+    {
+      "result": "uncertain",
+      "criterion_kind": "descriptive",
+      "count": 4
+    }
+  ],
+  "elapsed_seconds": 679.2700574280025,
+  "sessions": [
+    {
+      "started_at": "2026-11-17T02:03:59.665266+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 4,
+      "requested_budget_usd": 0.5
+    },
+    {
+      "started_at": "2026-11-17T02:16:47.857401+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 4,
+      "requested_budget_usd": 0.5
+    },
+    {
+      "started_at": "2026-11-17T02:18:37.885265+00:00",
+      "hardware": {
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "machine": "x86_64",
+        "python": "3.12.14",
+        "cpu": "x86_64",
+        "logical_cpus": 5,
+        "host_ram_bytes": 18882662400,
+        "visible_nvidia_gpus": null,
+        "note": "Host/container observations, not a promise of model acceleration. Provider runtime hardware may be managed remotely."
+      },
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/google/gemma-4-26b-a4b-it",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 32768,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 12000,
+        "source_pack_windows": 64,
+        "lens_batch_size": 12,
+        "batching_version": "managed-gemma-2",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "disabled",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "concurrency": 4,
+      "requested_budget_usd": 0.5
+    }
+  ],
+  "error_tasks": 1,
+  "interpretation_accuracy": null,
+  "independent_human_labels": false,
+  "notice": "All text blocks of each selected article/document are selected. Coverage and failures remain explicit. Exact anchors do not establish interpretation accuracy.",
+  "archive": {
+    "manifest": "benchmarks/v3-political/showcase.json",
+    "parts": 1,
+    "counts": {
+      "documents": 4,
+      "assessments": 358,
+      "audited_references": 3417,
+      "source_characters": 224358,
+      "words": 33975
+    }
+  }
+}

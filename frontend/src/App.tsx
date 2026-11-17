@@ -383,7 +383,14 @@ export default function App() {
     if (!selectedFiles.length || !project) return;
     setBusy(true);
     let imported = false;
-    const showImportedCorpus = () => { if (projectRef.current !== project) return; setScope({ ...EMPTY_SCOPE, run_id: "none" }); setSearch(""); setContext(null); };
+    const showImportedCorpus = () => {
+      if (projectRef.current !== project) return;
+      setScope({ ...EMPTY_SCOPE, run_id: "none" });
+      setSearch("");
+      contextRequest.current++;
+      setContextLoading(false);
+      setContext(null);
+    };
     try {
       const resumedImport =
         selectedFiles.length === 1
@@ -466,11 +473,19 @@ export default function App() {
         body: JSON.stringify({ collection }),
       });
       const run = record(result.run);
-      setSearch(""); setContext(null);
-      patchScope({ ...EMPTY_SCOPE, run_id: String(run.id || "none") });
+      setSearch("");
+      setContext(null);
+      const batch = record(result.batch);
+      patchScope({
+        ...EMPTY_SCOPE,
+        run_id: String(run.id || "none"),
+        batch_ids: typeof batch.id === "string" && batch.id ? [batch.id] : [],
+      });
       refresh();
       notify(
-        "Collection imported. Source counts and coverage come from the recorded data.",
+        typeof result.notice === "string" && result.notice.trim()
+          ? result.notice
+          : "Collection imported. Source counts and coverage come from the recorded data.",
       );
     } catch (reason) {
       notify(message(reason), true);
@@ -779,9 +794,11 @@ export default function App() {
             className={`w-health-dot ${metrics.coverage < 100 ? "amber" : ""}`}
           />
           <strong>
-            {!runInfo ? "Corpus · not analyzed" : legacy
-              ? "Contextual checks unavailable"
-              : `${percentage(metrics.coverage)} source checks`}
+            {!runInfo
+              ? "Corpus · not analyzed"
+              : legacy
+                ? "Contextual checks unavailable"
+                : `${percentage(metrics.coverage)} source checks`}
           </strong>
           {!legacy && !!runInfo && (
             <span>

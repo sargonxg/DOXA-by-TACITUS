@@ -97,7 +97,9 @@ class BaseProvider:
 
     def _usage(self, input_tokens: int, output_tokens: int, *, tokens_estimated: bool = False) -> dict:
         return {"input_tokens": input_tokens, "output_tokens": output_tokens,
-                "cost_usd": self.estimate_cost(input_tokens, output_tokens),
+                # Reservation estimates may include an unconsumed reasoning
+                # allowance. A provider receipt bills its actual token counts once.
+                "cost_usd": BaseProvider.estimate_cost(self, input_tokens, output_tokens),
                 "estimated": self.mode != "local" or tokens_estimated,
                 "cost_basis": "local_compute_excluded" if self.mode == "local" else ("configured_token_rates" if self.input_rate is not None and self.output_rate is not None else "unknown"),
                 "tokens_estimated": tokens_estimated, "requests": 1}
@@ -200,6 +202,32 @@ class OpenAICompatibleProvider(BaseProvider):
             self.profile.update({"context_limit": 32768, "source_pack_bytes": 12000,
                                  "source_pack_windows": 64, "lens_batch_size": 12,
                                  "batching_version": "managed-gemma-2"})
+        self.reasoning_effort = config.get("reasoning_effort")
+        configured_allowance = config.get("reasoning_token_allowance")
+        self.reasoning_token_allowance = 0 if configured_allowance is None else configured_allowance
+        if (not isinstance(self.reasoning_token_allowance, int) or isinstance(self.reasoning_token_allowance, bool)
+                or not 0 <= self.reasoning_token_allowance <= 8192):
+            raise ValueError("reasoning_token_allowance must be an integer between 0 and 8192")
+        self.explicit_reasoning = self.reasoning_effort is not None or self.reasoning_token_allowance > 0
+        if self.explicit_reasoning:
+            if "gpt-oss" not in self.model.lower():
+                raise ValueError("Explicit reasoning allowance currently requires a GPT-OSS model")
+            if self.reasoning_effort not in {None, "low", "medium", "high"}:
+                raise ValueError("GPT-OSS reasoning_effort must be low, medium or high; reasoning cannot be disabled")
+            total_context = 16384 if self.model in {"@cf/openai/gpt-oss-120b", "@cf/openai/gpt-oss-20b"} else int(self.profile["context_limit"])
+            if self.reasoning_token_allowance >= total_context:
+                raise ValueError("Reasoning allowance must leave room for visible output and source context")
+            self.profile.update({"reasoning_effort_requested": self.reasoning_effort or "provider_default",
+                                 "reasoning_effort_applied": "unverified_by_adapter",
+                                 "reasoning_token_allowance": self.reasoning_token_allowance,
+                                 "reasoning_profile_version": "gptoss-reasoning-budget-1",
+                                 "context_window_including_reasoning": total_context,
+                                 "context_limit": total_context - self.reasoning_token_allowance,
+                                 "context_limit_basis": "source_plus_visible_output_budget_after_reasoning_reserve",
+                                 "batching_version": f"gptoss-reasoning-budget-1:{self.reasoning_effort or 'default'}:{self.reasoning_token_allowance}"})
+
+    def estimate_cost(self, input_tokens: int, output_tokens: int) -> float | None:
+        return super().estimate_cost(input_tokens, output_tokens + self.reasoning_token_allowance)
 
     def _headers(self) -> dict:
         return {"Authorization": f"Bearer {self.api_key}"} if self.api_key else {}
@@ -225,8 +253,14 @@ class OpenAICompatibleProvider(BaseProvider):
     async def generate(self, messages: list[dict], schema: dict, *, max_tokens: int = 3000, request_id: str | None = None) -> dict:
         if not self.model:
             raise ProviderError("model_required", "An explicit inference model is required")
-        payload = {"model": self.model, "messages": messages, "max_tokens": max_tokens, "temperature": 0,
+        actual_max_tokens = max_tokens + self.reasoning_token_allowance
+        payload = {"model": self.model, "messages": messages, "max_tokens": actual_max_tokens, "temperature": 0,
                    "response_format": {"type": "json_schema", "json_schema": {"name": "doxa_findings", "strict": True, "schema": schema}}}
+        if self.reasoning_effort is not None:
+            payload["reasoning_effort"] = self.reasoning_effort
+        if self.explicit_reasoning:
+            self.profile.update({"visible_output_tokens_requested": max_tokens,
+                                 "total_output_tokens_requested": actual_max_tokens})
         if "qwen3.5" in self.model.lower() or self.model == CLOUDFLARE_MODEL:
             payload["chat_template_kwargs"] = {"enable_thinking": False}
         try:
@@ -251,6 +285,9 @@ class OpenAICompatibleProvider(BaseProvider):
             returned_content = choices[0].get("message", {}).get("content", "") if choices else ""
             output_tokens = math.ceil(len(str(returned_content).encode("utf-8")) / 3)
         usage = self._usage(input_tokens, output_tokens, tokens_estimated=not bool(raw_usage))
+        details = raw_usage.get("completion_tokens_details") or raw_usage.get("output_tokens_details") or {}
+        if isinstance(details.get("reasoning_tokens"), int) and details["reasoning_tokens"] >= 0:
+            usage["reasoning_tokens_reported"] = details["reasoning_tokens"]
         if not choices:
             raise ProviderError("invalid_response", "Provider returned no choices", usage=usage)
         choice = choices[0]
@@ -287,7 +324,7 @@ class CloudflareProvider(OpenAICompatibleProvider):
         super().__init__({**defaults, **{key: value for key, value in config.items() if value is not None}, "model": model, "base_url": base, "inference_mode": "remote"})
         self.api_key = _env("DOXA_CLOUDFLARE_API_TOKEN", "CLOUDFLARE_API_TOKEN", "CF_API_TOKEN")
         self.profile.update({"provider": self.name, "pricing_checked_at": "2026-11-16"})
-        self.profile["reasoning_requested"] = "disabled" if model == CLOUDFLARE_MODEL else "provider_default"
+        self.profile["reasoning_requested"] = "disabled" if model == CLOUDFLARE_MODEL else (self.reasoning_effort or "provider_default")
 
     async def health(self) -> dict:
         if self.proxy_base:

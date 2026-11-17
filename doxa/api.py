@@ -17,6 +17,7 @@ import uuid
 from collections import Counter, defaultdict
 from contextlib import asynccontextmanager
 from pathlib import Path
+from typing import Literal
 from urllib.parse import urlsplit
 
 from dotenv import load_dotenv
@@ -78,6 +79,8 @@ class RunInput(BaseModel):
     methodology_version: str = "1.0"
     learning_snapshot_id: str | None = None
     allow_remote_text: bool = False
+    reasoning_effort: Literal["low", "medium", "high"] | None = None
+    reasoning_token_allowance: int = Field(default=0, ge=0, le=8192)
     verification_of: str | None = None
 
 
@@ -586,8 +589,10 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             elif usage["cost_usd"] is not None:
                 usage["cost_usd"] += item_usage.get("cost_usd", 0) or 0
             usage["estimated"] = usage["estimated"] or bool(item_usage.get("estimated"))
-            if row["error"]:
-                errors.append({"document_id": row["document_id"], "message": row["error"]})
+            message = (row["error"] or "").strip()
+            if message or row["status"] == "failed":
+                errors.append({"document_id": row["document_id"],
+                               "message": message or "Task failed without a stored error message"})
         reservations = db().query("SELECT status,usage_json FROM budget_reservations WHERE run_id=?", [run_id])
         if reservations:
             # Durable request usage includes earlier attempts and uncertain
@@ -603,7 +608,16 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 elif usage["cost_usd"] is not None:
                     usage["cost_usd"] += item_usage["cost_usd"]
                 usage["estimated"] = usage["estimated"] or bool(item_usage.get("estimated", True))
-        lexical = run.get("config", {}).get("provider") == "lexical"
+        config = run.get("config", {})
+        lexical = config.get("provider") == "lexical"
+        tasks_complete = all(row["status"] == "completed" for row in rows)
+        unit_coverage_complete = True
+        if str(config.get("methodology_version", "1")).startswith("3") and not lexical:
+            units = db().one("SELECT COUNT(*) total,SUM(CASE WHEN status='accepted' THEN 1 ELSE 0 END) accepted FROM v3_unit_statuses WHERE run_id=?", [run_id])
+            unit_coverage_complete = bool(units["total"]) and units["accepted"] == units["total"]
+            if config.get("task_index_basis") == "source_units_v3":
+                unit_coverage_complete = unit_coverage_complete and units["total"] == blocks_total
+        complete = tasks_complete and blocks_done == blocks_total and unit_coverage_complete and not errors
         progress = {"documents_total": len(docs), "documents_done": sum(all(s in {"completed", "failed", "cancelled"} for s in states) for states in docs.values()),
                     "documents_complete": sum(all(s == "completed" for s in states) for states in docs.values()),
                     "documents_settled": sum(all(s in {"completed", "failed", "cancelled"} for s in states) for states in docs.values()),
@@ -611,7 +625,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                     "tasks_total": len(rows), "tasks_done": sum(row["status"] == "completed" for row in rows),
                     "tasks_failed": sum(row["status"] == "failed" for row in rows),
                     "current_document": run.get("progress", {}).get("current_document", ""),
-                    "complete": blocks_done == blocks_total and not errors,
+                    "complete": complete,
                     "analysis_kind": "lexical_scan" if lexical else "model_analysis",
                     "semantic_analysis_performed": not lexical,
                     "semantic_blocks_done": 0 if lexical else blocks_done,
@@ -621,7 +635,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         if run["cancel_requested"]:
             status = "cancelled"
         elif not pending and not status.startswith("paused"):
-            status = "partial" if errors else "completed"
+            status = "completed" if complete else "partial"
         completed_at = utcnow() if status in TERMINAL else None
         db().execute("UPDATE runs SET progress_json=?,usage_json=?,errors_json=?,status=?,completed_at=? WHERE id=?",
                      [json.dumps(progress), json.dumps(usage), json.dumps(errors), status, completed_at, run_id])
@@ -656,7 +670,19 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         config = dict(run["config"])
         if str(config.get("methodology_version", "1")).startswith("3") and config.get("provider") != "lexical":
             from doxa.contextual import PROMPT_VERSION
-            if config.get("pipeline_version") and config["pipeline_version"] != PROMPT_VERSION:
+            method_changed = bool(config.get("pipeline_version") and config["pipeline_version"] != PROMPT_VERSION)
+            snapshots = config.get("lens_snapshots")
+            if snapshots:
+                from doxa.lenses import get_lens, validate_custom_lens
+                try:
+                    current_packs = [validate_custom_lens(config["custom_lens"]) if pack["id"] == "custom" else get_lens(pack["id"])
+                                     for pack in snapshots]
+                    snapshot_hash = hashlib.sha256(json.dumps(snapshots, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+                    method_changed = method_changed or snapshots != current_packs or (
+                        bool(config.get("lens_snapshots_sha256")) and config["lens_snapshots_sha256"] != snapshot_hash)
+                except (KeyError, TypeError, ValueError):
+                    method_changed = True
+            if method_changed:
                 db().execute("UPDATE runs SET status='paused_method_changed' WHERE id=?", [run_id])
                 db().execute("UPDATE tasks SET status='pending',lease_token=NULL,lease_until=NULL WHERE id=? AND lease_token=?", [task["id"], token])
                 return {"pending": False, "run": require_run(run_id)}
@@ -817,7 +843,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         except asyncio.CancelledError:
             raise
         except Exception as exc:
-            db().execute("UPDATE tasks SET status='failed',error=?,lease_until=NULL WHERE id=? AND lease_token=?", [str(exc)[:1200], task["id"], token])
+            message = str(exc).strip() or type(exc).__name__
+            db().execute("UPDATE tasks SET status='failed',error=?,lease_until=NULL WHERE id=? AND lease_token=?", [message[:1200], task["id"], token])
         finally:
             # A failed remote request might still have been billed: preserve its conservative reservation as spend.
             while reservations:
@@ -1263,7 +1290,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     from doxa.imports import register as register_imports
     services = {"db": db, "require_project": require_project, "require_document": require_document,
                 "require_run": require_run, "create_run": create_run, "new_batch": new_batch,
-                "ingest": ingest, "load_demo": load_demo, "provider_health": provider_health, "root": ROOT}
+                "ingest": ingest, "load_demo": load_demo, "provider_health": provider_health, "root": ROOT,
+                "use_saved_showcase": use_saved_showcase}
     register_v3(app, services)
     register_imports(app, services)
 

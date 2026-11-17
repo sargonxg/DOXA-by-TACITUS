@@ -701,6 +701,17 @@ function ModelsPanel({
           Explicit local actions use pinned artifacts already installed on this
           machine. They do not start a download or create analytical findings.
         </p>
+        <p className="w-footnote">
+          A full 5,000-source CPU index can take many minutes. For large
+          collections, run{" "}
+          <code>
+            python scripts/semantic_index.py build PROJECT_ID --data-dir data
+          </code>{" "}
+          where your DOXA data and models are installed, then search the
+          persisted index here. This browser action waits on a single HTTP
+          request and may hit a proxy timeout. Run heavy local generation and
+          indexing sequentially when they compete for CPU.
+        </p>
         <Button
           variant="outline"
           disabled={!!operation || !query?.documents.total}
@@ -822,7 +833,14 @@ function JobsPanel({
 }: Props) {
   const [budget, setBudget] = useState<Record<string, string>>({});
   async function action(run: AnalysisRun, type: "cancel" | "resume") {
-    if (type === "resume" && run.config?.verification_of && Number(budget[run.id] ?? run.config?.budget_usd ?? 1.5) > 2) { onNotice("Independent verification is capped at $2 per run.", true); return; }
+    if (
+      type === "resume" &&
+      run.config?.verification_of &&
+      Number(budget[run.id] ?? run.config?.budget_usd ?? 1.5) > 2
+    ) {
+      onNotice("Independent verification is capped at $2 per run.", true);
+      return;
+    }
     try {
       await request(`/runs/${run.id}/${type}`, {
         method: "POST",

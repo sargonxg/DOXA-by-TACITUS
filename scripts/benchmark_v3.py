@@ -40,6 +40,56 @@ def atomic_json(path: Path, value: dict) -> None:
     temporary.replace(path)
 
 
+def validate_resume_state(state: dict, analytical: dict, selection: dict, engine_fingerprint: str,
+                          data_dir: Path, engine_components: dict, frozen: dict | None = None) -> dict:
+    """Allow only audited parent-digest updates for an unchanged news sample.
+
+The original receipt is checked against its ORIGINAL selection and engine. A
+parent collection's unrelated metadata repair must not silently redefine a
+sample, and cannot authorize a changed source/configuration/selected method.
+"""
+    original = state.get("selection")
+    original_engine = state.get("engine_fingerprint")
+    if not isinstance(original, dict) or not isinstance(original_engine, str):
+        raise ValueError("Checkpoint lacks its original source/method receipt")
+    prior_signature = checksum({"config": analytical, "selection": original, "engine": original_engine})
+    if state.get("signature") != prior_signature:
+        raise ValueError("Original checkpoint signature or analytical configuration changed")
+    if state.get("data_dir") != str(data_dir.resolve()):
+        raise ValueError("Benchmark data-dir changed; start a new run")
+    extension = engine_fingerprint != original_engine
+    if extension and not (frozen and frozen.get("engine_fingerprint") == original_engine
+                          and frozen.get("components") == engine_components):
+        raise ValueError("Selected engine, response contract or rubric changed; start a new run")
+    allowed = {"manifest_sha256", "collection_sha256"}
+    parent_changed = original != selection
+    if parent_changed:
+        unchanged = ({key: value for key, value in original.items() if key not in allowed}
+                     == {key: value for key, value in selection.items() if key not in allowed})
+        if original.get("collection") != "news-sample" or selection.get("collection") != "news-sample" or not unchanged:
+            raise ValueError("Selected sources, their order/hashes/paths or source settings changed; start a new run")
+    # Mutate provenance only after every invariant has passed.
+    if extension:
+        entry = {"previous_file_fingerprint": original_engine, "current_file_fingerprint": engine_fingerprint,
+                 "selected_components": engine_components,
+                 "reason": "Unselected lens extension; selected rubric packs, core engine and response contracts are byte-equivalent."}
+        if not any(item.get("current_file_fingerprint") == engine_fingerprint for item in state.get("compatible_extensions", [])):
+            state.setdefault("compatible_extensions", []).append(entry)
+    appended = False
+    if parent_changed:
+        from doxa.store import utcnow
+        observed = {key: selection.get(key) for key in sorted(allowed)}
+        updates = state.get("parent_provenance_updates", [])
+        previous = updates[-1]["new"] if updates else {key: original.get(key) for key in sorted(allowed)}
+        if previous != observed:
+            state.setdefault("parent_provenance_updates", []).append({"at": utcnow(), "old": previous, "new": observed,
+                "selected_sources_sha256": checksum(original.get("sources", [])),
+                "reason": "Parent corpus digests changed; selected news-sample identities, order, content hashes, paths and every other selection setting are unchanged."})
+            appended = True
+    return {"effective_engine_fingerprint": original_engine, "compatible_extension": extension,
+            "parent_provenance_updated": appended}
+
+
 def source_selection(collection: str, limit: int | None = None, root: Path = ROOT) -> dict:
     """Freeze identities/hashes without loading corpus bodies into memory."""
     if collection in {"institutions", "political"}:
@@ -118,7 +168,9 @@ def progress_summary(store, state: dict, run: dict) -> dict:
             "config": run["config"], "model_profile": run.get("model_profile", {}), "progress": run.get("progress", {}),
             "usage": run.get("usage", {}), "budget_accounted_usd": run.get("spent_usd", 0),
             "unit_states": states, "decision_counts": decisions, "elapsed_seconds": state.get("elapsed_seconds", 0),
-            "sessions": state.get("sessions", []), "error_tasks": store.one("SELECT COUNT(*) count FROM tasks WHERE run_id=? AND error IS NOT NULL", [run["id"]])["count"],
+            "sessions": state.get("sessions", []), "parent_provenance_updates": state.get("parent_provenance_updates", []),
+            "compatible_extensions": state.get("compatible_extensions", []),
+            "error_tasks": store.one("SELECT COUNT(*) count FROM tasks WHERE run_id=? AND error IS NOT NULL", [run["id"]])["count"],
             "interpretation_accuracy": None, "independent_human_labels": False,
             "notice": "All text blocks of each selected article/document are selected. Coverage and failures remain explicit. Exact anchors do not establish interpretation accuracy."}
 
@@ -153,22 +205,14 @@ async def run_benchmark(args) -> int:
         if not checkpoint.exists():
             raise ValueError("Resume requires the original checkpoint and data-dir")
         state = json.loads(checkpoint.read_text())
-        compatible_extension = False
         frozen_path = args.data_dir / "frozen-engine-compatibility.json"
-        if state["signature"] != signature and frozen_path.exists():
-            frozen = json.loads(frozen_path.read_text())
-            prior_signature = checksum({"config": analytical, "selection": selection, "engine": state["engine_fingerprint"]})
-            compatible_extension = (state["signature"] == prior_signature and frozen.get("engine_fingerprint") == state["engine_fingerprint"]
-                                    and frozen.get("components") == engine_components)
-            if compatible_extension:
-                state.setdefault("compatible_extensions", []).append({"previous_file_fingerprint": state["engine_fingerprint"],
-                    "current_file_fingerprint": engine_fingerprint, "selected_components": engine_components,
-                    "reason": "Unselected lens extension; selected rubric packs, core engine and response contracts are byte-equivalent."})
-        if (state["signature"] != signature and not compatible_extension) or state["data_dir"] != str(args.data_dir.resolve()):
-            raise ValueError("Analytical configuration, source manifest, engine version or data-dir changed; start a new run")
-        if compatible_extension:
-            # Keep the original signature: the frozen selected method remains authoritative.
-            engine_fingerprint = state["engine_fingerprint"]
+        frozen = json.loads(frozen_path.read_text()) if frozen_path.exists() else None
+        compatibility = validate_resume_state(state, analytical, selection, engine_fingerprint,
+                                              args.data_dir, engine_components, frozen)
+        engine_fingerprint = compatibility["effective_engine_fingerprint"]
+        if compatibility["parent_provenance_updated"]:
+            print("Selected news-sample articles are unchanged; recorded updated parent corpus digests.", flush=True)
+        atomic_json(checkpoint, state)
     else:
         if args.output.exists() or checkpoint.exists():
             raise ValueError("Output exists; use --resume or choose an isolated output and data-dir")
@@ -266,6 +310,7 @@ async def run_benchmark(args) -> int:
                 archive = package_run(store, run["id"], args.package_dir or args.output.parent,
                                       benchmark={"collection": {key: value for key, value in selection.items() if key != "sources"},
                                                  "sessions": state["sessions"], "elapsed_seconds": state["elapsed_seconds"],
+                                                 "parent_provenance_updates": state.get("parent_provenance_updates", []),
                                                  "engine_fingerprint": engine_fingerprint})
                 summary["archive"] = {"manifest": str((args.package_dir or args.output.parent) / "showcase.json"), "parts": len(archive["parts"]), "counts": archive["counts"]}
                 atomic_json(args.output, summary)
@@ -289,8 +334,8 @@ def parse_args(argv=None):
     parser.add_argument("--question", default="Apply the selected criteria in context, distinguishing attribution, counter-speech, uncertainty and competing frameworks.")
     parser.add_argument("--persona", default="research")
     args = parser.parse_args(argv)
-    if not 1 <= args.concurrency <= 32:
-        parser.error("Concurrency must be between 1 and 8")
+    if not 1 <= args.concurrency <= 48:
+        parser.error("Concurrency must be between 1 and 48")
     if args.provider == "ollama" and args.concurrency != 1:
         parser.error("CPU-only Ollama requires --concurrency 1")
     if not math.isfinite(args.budget_usd) or not 0 <= args.budget_usd <= 10000:

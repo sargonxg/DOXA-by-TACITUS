@@ -1,0 +1,83 @@
+{
+  "schema_version": "doxa-annotated-guide-1",
+  "title": "Institutional voice, reported prejudice and uncertainty",
+  "kind": "institutional-context",
+  "slug": "institutional-context-commentary",
+  "generated_at": "2026-11-17T02:39:31.321558+00:00",
+  "run_id": "074539f031e64dc28f03384481563a85",
+  "run_status": "partial",
+  "snapshot_sha256": "7da456fe38a1b280d45c0d46bf5091b03d4484f9183d524e19627de7d3673ed4",
+  "cases": 4,
+  "selected_run_sources": 20,
+  "run_unit_coverage": {
+    "total": 616,
+    "done": 613,
+    "percent": 99.5
+  },
+  "run_coverage": {
+    "selected_documents": 20,
+    "fully_assessed_documents": 18,
+    "requested_criterion_decisions": 11704,
+    "retained_criterion_decisions": 11701,
+    "unresolved_criterion_decisions": 3
+  },
+  "commentary_authorship": "AI-authored walkthrough guidance; not independent human adjudication or an interpretation-accuracy benchmark.",
+  "independent_human_labels": false,
+  "interpretation_accuracy": null,
+  "files": [
+    {
+      "file": "institutional-context-commentary.pdf",
+      "bytes": 77633,
+      "sha256": "2aa4a8712428fba1decabb6832bc376991818f6ed8743bcf71b9693a29710d61"
+    },
+    {
+      "file": "institutional-context-commentary.html",
+      "bytes": 41321,
+      "sha256": "f7a2f2782b5695abc4a373eda77064073d617444c1821e66d3eec40e8bfb98a4"
+    },
+    {
+      "file": "institutional-context-commentary.xlsx",
+      "bytes": 36909,
+      "sha256": "962ce9807a71906dac2691030b17b88b8adcaa41197827eaf644b9318e43bcb0"
+    },
+    {
+      "file": "institutional-context-commentary.snapshot.json.gz",
+      "bytes": 261490,
+      "sha256": "efb16e2bf7f50acc2c95df379649ec34e54957849d50265c28b6dffc6854cec1"
+    }
+  ],
+  "source_anchor_audit": {
+    "valid": true,
+    "checked_references_and_primary_spans": 11,
+    "offset_unit": "unicode_code_points",
+    "notice": "Source anchoring is verified. Semantic correctness remains unmeasured."
+  },
+  "preview": [
+    {
+      "id": "32459e910518c074c51980f089823604",
+      "title": "Problem framing",
+      "quote": "Moreover, because notions about customer preference (real or perceived) do not establish undue hardship, the client must make an exception to its dress code to let Jon wear his religious garb during front desk duty as a religious accommodation. ",
+      "criterion_kind": "descriptive",
+      "result": "meets_criterion",
+      "attribution": "author",
+      "document_stance": "neutral",
+      "source_title": "Religious Garb and Grooming in the Workplace: Rights and Responsibilities",
+      "source_url": "https://www.eeoc.gov/laws/guidance/religious-garb-and-grooming-workplace-rights-and-responsibilities",
+      "model_reading": "The text frames the conflict as a legal obligation under Title VII, where customer preference or brand image does not constitute undue hardship, necessitating religious accommodation.",
+      "walkthrough_note": "The recorded frame prioritizes religious accommodation over a client's preferred image or dress code. This is a descriptive observation about protective guidance, not an indicator that the EEOC endorses the discriminatory preference."
+    },
+    {
+      "id": "57bf8bbb0482381bb196ed6068feabc4",
+      "title": "Claims of Muslim discrimination",
+      "quote": "Recommendation 16c With strong evidence about the rise of Islamophobia within wider society, and many individual Muslims coming forward with stories of discrimination and the fear of discrimination within the workplace, we believe there is a clear need for the Department for Work and Pensions to carry out research in this area. ",
+      "criterion_kind": "indicator",
+      "result": "meets_criterion",
+      "attribution": "reported_speaker",
+      "document_stance": "supports",
+      "source_title": "Government Response to the Women and Equalities Committee Report on Employment Opportunities for Muslims in the UK",
+      "source_url": "https://assets.publishing.service.gov.uk/media/5a800a2b40f0b62305b88cee/58077_Cm9371_WEB.pdf",
+      "model_reading": "The text reports claims of rising Islamophobia and stories of discrimination/fear of discrimination experienced by Muslims in the workplace.",
+      "walkthrough_note": "The criterion records a reported discrimination claim: a committee recommendation refers to testimony and fear of discrimination in the workplace. This is evidence that the source discusses such claims; it is not evidence that the containing document itself expresses anti-Muslim hostility."
+    }
+  ]
+}

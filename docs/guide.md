@@ -19,7 +19,10 @@ Small files travel in bounded groups under one logical import. Large files use
 resumable parts: after interruption, refresh and select the same file to continue.
 Use **Import metadata CSV** to correct authors, institutions, dates and document
 types by document ID, filename or checksum. The **Sources** pane opens extracted
-text in the evidence inspector.
+text in the evidence inspector. Successful manual imports select **Corpus · all
+imported sources**, where new files remain visible without model measurements.
+Choose a saved analysis to return to its frozen cohort; analyze the corpus scope
+to include newly imported material.
 
 ## Level 2 — Declare the inquiry
 
@@ -54,6 +57,12 @@ CPU retrieval and rubric experiments are explicit optional actions using already
 installed artifacts. Opening the model drawer never downloads weights. Follow
 **Processing record** for progress, costs and issues; cancel or resume eligible
 live jobs there. Historical saved snapshots cannot be resumed.
+
+**Independent model verification**, in Models and Processing, compares a
+completed primary contextual run with a separate GPT-OSS 120B job. It requires
+explicit cloud consent and has a $2 budget cap. Read selected-unit coverage and
+literal output differences in its saved comparison; primary counts stay separate.
+Model agreement does not establish interpretation accuracy.
 
 ## Level 4 — Read and review the evidence
 
