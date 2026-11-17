@@ -1,0 +1,23 @@
+{
+  "schema_version": "3.0",
+  "kind": "live_native_cloudflare_compatibility_probe",
+  "model": "@cf/openai/gpt-oss-120b",
+  "endpoint_family": "/ai/v1/chat/completions",
+  "reasoning_effort_requested": "low",
+  "max_completion_tokens_requested": 2448,
+  "usage": {
+    "prompt_tokens": 96,
+    "completion_tokens": 29,
+    "total_tokens": 125,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "neurons": 5.031799793243408
+  },
+  "finish_reason": "stop",
+  "structured_output": {
+    "evaluative": true
+  },
+  "interpretation_accuracy": null,
+  "notice": "Small protocol probe; no source-corpus accuracy claim. This uses the first-party compatibility endpoint, separately from the application gateway."
+}

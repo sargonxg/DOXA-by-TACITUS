@@ -10,6 +10,8 @@ DOXA is a browser research workspace for discourse, political framing and contex
 
 *Actual interface with 5,000 real news articles. This screenshot records a partial model run; imported sources, completed source checks and correct interpretations are different quantities.*
 
+The highlighted source is [Dahlia Kholaif's Global Voices report](https://globalvoices.org/2020/12/29/saudi-court-slams-jail-term-to-iconic-female-activist-despite-global-criticism/), December 29, 2020, CC BY 3.0. Its displayed model reading remains a proposal for review.
+
 ## Open a real, commented report
 
 <a href="examples/political-framing-commentary.pdf"><img src="docs/images/political-framing-report-preview.png" width="360" alt="Open the political framing PDF: real source wording, recorded model readings, and separately labeled AI-authored commentary."></a> <a href="examples/institutional-context-commentary.pdf"><img src="docs/images/institutional-context-report-preview.png" width="320" alt="Open the institutional context PDF: protective language, reported discrimination, framework boundaries and uncertainty."></a>
@@ -21,6 +23,8 @@ This recorded four-source case packet retains **358 of 360 criterion decisions**
 The **[institutional-context PDF](examples/institutional-context-commentary.pdf)** follows four illustrative cases from the 20-source run: protective language, reported discrimination, a framework boundary and criterion-specific uncertainty. The run retains **11,701 of 11,704 decisions**, **613 of 616 fully assessed units**, and **18 of 20 fully assessed documents**; **three decisions remain unresolved**. Its reading notes are also AI-authored, not human gold. [HTML](examples/institutional-context-commentary.html) · [XLSX](examples/institutional-context-commentary.xlsx) · [Snapshot](examples/institutional-context-commentary.snapshot.json.gz) · [Manifest](examples/institutional-context-commentary.manifest.json).
 
 The [annotated-example guide](docs/v3-annotated-examples.md) explains the source → model reading → commentary → review distinction. Opening these files makes no new inference requests.
+
+The [actual independent-model comparison](docs/v3-independent-review.md) covers **79 source units and 1,500 paired criterion assessments**. It explains which disagreements change an indicator outcome, which distinguish negative from not-applicable, and which concern the represented speaker. Both models' readings remain available; agreement does not establish accuracy.
 
 ## Start locally
 

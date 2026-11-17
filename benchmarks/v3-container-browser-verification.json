@@ -1,0 +1,38 @@
+{
+  "base_url": "http://127.0.0.1:8015",
+  "checks": [
+    "Production Docker: saved 20-source cohort; 613/616 source units, partial coverage, and historical usage visible.",
+    "Actual XLSX report downloaded through the production UI.",
+    "Project selection opens the 5,000-source unassessed corpus with bounded virtual rows and unavailable model measurements.",
+    "390px source drawer and source-context inspector render without horizontal overflow.",
+    "Production Quest guide opens the Import drawer."
+  ],
+  "inference_requests": 0,
+  "institutions": {
+    "project_id": "e32cb44ec9d74affb8483ae3edeeb28e",
+    "documents": 20,
+    "coverage": 90.0,
+    "coverage_detail": {
+      "units_total": 616,
+      "units_done": 613,
+      "characters": 2349640,
+      "processed_characters": 2337972,
+      "basis": "contextual source units",
+      "semantic_analysis_performed": true,
+      "not_assessed_lenses": [],
+      "complete_documents": 18,
+      "selected_lens_scope_complete": true
+    },
+    "retained_observations": 1793,
+    "saved_snapshot": true
+  },
+  "xlsx_bytes": 1597115,
+  "news": {
+    "project_id": "dabfa1385d0c461d9521e9b88402f75b",
+    "documents": 5000,
+    "analysis_kind": "unassessed_corpus"
+  },
+  "page_errors": [],
+  "elapsed_seconds": 4.23,
+  "scope_notice": "Browser flow against the running Docker image and its disposable data. No model downloads or inference requests. Original host datasets were not modified."
+}

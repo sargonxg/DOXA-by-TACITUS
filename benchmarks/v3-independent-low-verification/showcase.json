@@ -1,0 +1,751 @@
+{
+  "schema_version": "3.0",
+  "format": "doxa-contextual-jsonl-parts",
+  "generated_at": "2026-11-17T03:15:24.786675+00:00",
+  "run": {
+    "id": "ad5046e9849d4392a8160d55de9beacd",
+    "project_id": "7e0eda59c8e54ca58de66698803a856e",
+    "status": "completed",
+    "created_at": "2026-11-17T02:52:51.260464+00:00",
+    "started_at": "2026-11-17T02:52:51.547867+00:00",
+    "completed_at": "2026-11-17T03:15:07.509371+00:00",
+    "reserved_usd": 1.734723475976807e-18,
+    "spent_usd": 0.5297401499999997,
+    "cancel_requested": 0,
+    "config": {
+      "provider": "cloudflare",
+      "model": "@cf/openai/gpt-oss-120b",
+      "lens_ids": [
+        "discourse",
+        "ihra",
+        "jda",
+        "nexus",
+        "anti-muslim-hostility",
+        "anti-muslim-racism"
+      ],
+      "question": "Apply the selected criteria in context, distinguishing attribution, counter-speech, uncertainty and competing frameworks.",
+      "persona": "research",
+      "budget_usd": 1.5,
+      "methodology_version": "3.0",
+      "allow_remote_text": true,
+      "reasoning_effort": "low",
+      "reasoning_token_allowance": 2048,
+      "verification_of": "074539f031e64dc28f03384481563a85",
+      "verification_selection": {
+        "selection_version": "indicator-plus-stratified-other-3.0",
+        "primary_run_id": "074539f031e64dc28f03384481563a85",
+        "document_ids": [
+          "0642e61e6553a21f1fbeec28c40540db",
+          "1a82c53d719bc1201c329ddee7c2e4ce",
+          "4fcdd43fd9cf392ee0c5f68986db1b23",
+          "5b60013207d07c0129398fe1c3f6e629",
+          "69017a28cd075085db8da2064e341e7b",
+          "6a0d3a41e6c3a7f13b9850def44036f1",
+          "7c95c773f8eb909defde516eca31b2a4",
+          "8034cbd01d8c663088d89d271ef48dd9",
+          "a22ce6e063e56b385b78291fb7b6e3c6",
+          "b630a74db61a98d40f68de3f90049e49",
+          "c390de027c4c715c04d2ec2ea9a88c69",
+          "ce6820253dd6abda147083371c76ee13",
+          "d03475e6d970f85a936c28fe0fe9c3cc",
+          "de578eab78f7889a36107e13a4e46722"
+        ],
+        "unit_ids": {
+          "0642e61e6553a21f1fbeec28c40540db": [
+            "u_adc862c391c2055ac63b9bfc",
+            "u_e0fc1f3552811475ba68b08b"
+          ],
+          "1a82c53d719bc1201c329ddee7c2e4ce": [
+            "u_1420730a16082f01c77e36e4",
+            "u_ecdafcacf0015383649cb6a7"
+          ],
+          "4fcdd43fd9cf392ee0c5f68986db1b23": [
+            "u_7e60cd9d0bfe160d4485b1fc",
+            "u_9d83151c7f4deac36d1e2fd5",
+            "u_da54bdf703ee9bb732ad4dfe"
+          ],
+          "5b60013207d07c0129398fe1c3f6e629": [
+            "u_32df321af5e67059c8072c80",
+            "u_d835dda251e462d2379712ae"
+          ],
+          "69017a28cd075085db8da2064e341e7b": [
+            "u_2a80e48ddf6f3a8618ad7b13"
+          ],
+          "6a0d3a41e6c3a7f13b9850def44036f1": [
+            "u_004e470bfd734580ca30b149",
+            "u_1c434f427adadda21209ad33",
+            "u_1c99b785adf7bbedd7e15256",
+            "u_201e4d9d28710124de8f0374",
+            "u_2743e9c3a2594caeae474a2f",
+            "u_2887a6c5343b2a4b71eb2627",
+            "u_417a3275c59dc95c1d2b8862",
+            "u_497de7ccfc685f3fd77b2e74",
+            "u_566523de76f7331425fba5a7",
+            "u_5ddfbcce7d3429767f993fa0",
+            "u_7e4e2bbb78034e9188e84b42",
+            "u_93e86b5942c60c6664b1ebfc",
+            "u_95dacdaed40c216cb15a0521",
+            "u_a903d165c109cecf2f805117",
+            "u_b926e19e3c31315371b79654",
+            "u_e0bb2561736937a0351bdf01",
+            "u_e9f249b562d90775c6df937d",
+            "u_f94ce3f68089ef76168a6613"
+          ],
+          "7c95c773f8eb909defde516eca31b2a4": [
+            "u_334ef69c01001eb34077642f",
+            "u_e2cb57d343a9a847bfa41134",
+            "u_e6e390c69fcf969de21bab05"
+          ],
+          "8034cbd01d8c663088d89d271ef48dd9": [
+            "u_238232a7d4149ca902b8787e",
+            "u_29513e3879a8e7e930d8e843",
+            "u_4507effff285ecdf9d28b168",
+            "u_4b5935c52525e3e6b21f5c8f",
+            "u_68afeb0a3dda0a53a52fac5e",
+            "u_6d5e94e56653a9c32e3dfa6f",
+            "u_7ac7d9977a54a5b3449372c6",
+            "u_7b6ea6ca847efcd7904d7ae0",
+            "u_868177503293012ae72f03d5",
+            "u_95d7353cada858a0effe64dd",
+            "u_a9581939432b6c039740837a",
+            "u_ad79da4e29c45c991ebfaee8",
+            "u_d16ed4fd4c71d584270ea2b9",
+            "u_e34aa8f336fe8806eb214dd7",
+            "u_ede9adceb8d8d88a6fb8e162"
+          ],
+          "a22ce6e063e56b385b78291fb7b6e3c6": [
+            "u_1558c472680653bdcc1883e5",
+            "u_63aac00ce9fb11201b3bb806"
+          ],
+          "b630a74db61a98d40f68de3f90049e49": [
+            "u_5a7be6fde1a74e2486ad7f87",
+            "u_c9cc5ecaf1d5d5db8b2ceb66"
+          ],
+          "c390de027c4c715c04d2ec2ea9a88c69": [
+            "u_1141df75fd112765f7b53bd1",
+            "u_135996d3bc68e327b8fadcae",
+            "u_2b36959a74dbf6544a0b9694",
+            "u_3ec58e35170ca72644dd87df",
+            "u_44ab7519b16101c191dbd3a5",
+            "u_4e65fdaf01c41e2e8bd9d6eb",
+            "u_4f5243cc7a8a33598f49d128",
+            "u_4fd27e65a12fe53da7290d7a",
+            "u_626a78da9b95c3c39f15a0b1",
+            "u_8e44fe02721d4039b7eab6e7",
+            "u_9fdd505661ae5a1917f7feee",
+            "u_b1858028128d802ff5321d5d",
+            "u_b841935ee22b06d32f6ce354",
+            "u_c038f6ed476fb454669f8481",
+            "u_eaa5289184f271dcde31a5e6"
+          ],
+          "ce6820253dd6abda147083371c76ee13": [
+            "u_355f05be9ce377a20116e0ab",
+            "u_35e5ff4122afa5b72abb798b",
+            "u_4c02cdd1248b0d7df92a4471",
+            "u_581dfa046319abeee367ee1c",
+            "u_5ce7719bb9d523f2986b9ba4",
+            "u_5f07861e5d65a0dc558c1011",
+            "u_8c3d94e303b4ccf5f17a21b4",
+            "u_ab61b02b74b10ff8f47b4ad1",
+            "u_ec88deacfef2a219f310b410"
+          ],
+          "d03475e6d970f85a936c28fe0fe9c3cc": [
+            "u_11804b1dbd6b1fa2ccfa9e37",
+            "u_871af3548b22392c31e925c0",
+            "u_b112822f098292dcbaa02a69",
+            "u_ff92c283f2226bad1ffc477d"
+          ],
+          "de578eab78f7889a36107e13a4e46722": [
+            "u_740f291b41c921a4ae76822c"
+          ]
+        },
+        "selection_counts": {
+          "primary_units_total": 616,
+          "primary_units_accepted": 613,
+          "primary_units_incomplete": 3,
+          "indicator_flagged_units": 50,
+          "indicator_meets_units": 45,
+          "indicator_uncertain_units": 6,
+          "other_accepted_units": 564,
+          "sampled_other_units": 29,
+          "other_documents_eligible": 20,
+          "other_documents_sampled": 13,
+          "selected_units": 79,
+          "documents_selected": 14,
+          "other_sample_fraction_actual": 0.051418439716312055
+        },
+        "primary_run_profile": {
+          "run_id": "074539f031e64dc28f03384481563a85",
+          "status": "partial",
+          "provider": "cloudflare",
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "model_profile": {
+            "provider": "cloudflare",
+            "model": "@cf/google/gemma-4-26b-a4b-it",
+            "mode": "remote",
+            "revision": "unresolved",
+            "quantization": "provider_managed",
+            "context_limit": 32768,
+            "temperature": 0,
+            "structured_output": true,
+            "source_pack_bytes": 12000,
+            "source_pack_windows": 64,
+            "lens_batch_size": 12,
+            "batching_version": "managed-gemma-2",
+            "citation_offset_unit": "unicode_code_points",
+            "prompt_version": "contextual-decisions-3.2.1",
+            "response_schema_version": "source-vectors-3.2",
+            "pricing_checked_at": "2026-11-16",
+            "reasoning_requested": "disabled",
+            "methodology_version": "3.0",
+            "unit_builder_version": "source-units-3.1",
+            "unit_builder_config": {
+              "max_unit_chars": 4000,
+              "context_sentences": 2
+            },
+            "result_codes": {
+              "0": "does_not_meet",
+              "1": "meets_criterion",
+              "2": "uncertain",
+              "3": "not_applicable"
+            },
+            "wire_budget_version": "3.2.2",
+            "criterion_registry_version": "3.0.0",
+            "rubric_versions": {
+              "discourse": "1.0.0",
+              "ihra": "2026-11-operational-1",
+              "jda": "2021-operational-1",
+              "nexus": "2024-06-operational-1",
+              "anti-muslim-hostility": "2026-03-operational-1",
+              "anti-muslim-racism": "2025-operational-1"
+            },
+            "learning_snapshot_id": null,
+            "approved_example_ids": [],
+            "analysis_config_hash": "e0fa88c7717a4cb2bb931299",
+            "cache_hit_decisions": 75,
+            "response_model": "@cf/google/gemma-4-26b-a4b-it-external"
+          },
+          "config_sha256": "9dbf9d64ff4ee607746f92c0103299846b9479090b0baa8f4ec3ea57b19138bc",
+          "methodology_version": "3.0",
+          "unit_max_chars": 4000,
+          "source_manifest_key": "runs/074539f031e64dc28f03384481563a85/source-manifest.json",
+          "lens_ids": [
+            "discourse",
+            "ihra",
+            "jda",
+            "nexus",
+            "anti-muslim-hostility",
+            "anti-muslim-racism"
+          ],
+          "persona": "research",
+          "inquiry": null,
+          "language": null
+        },
+        "negative_fraction": 0.05,
+        "seed": 20261116,
+        "stratification": "Proportional per-document allocation with seeded largest-remainder ties; seeded within-document selection.",
+        "primary_run_complete": false,
+        "notice": "Frozen selection snapshot. Other accepted units are not human-validated negatives; model agreement is not accuracy.",
+        "selection_id": "f1ea1f2f65ce0d03df1074e3bc93e545e8ee476ea09fab54f976faf053248807",
+        "selectioncounts": {
+          "primary_units_total": 616,
+          "primary_units_accepted": 613,
+          "primary_units_incomplete": 3,
+          "indicator_flagged_units": 50,
+          "indicator_meets_units": 45,
+          "indicator_uncertain_units": 6,
+          "other_accepted_units": 564,
+          "sampled_other_units": 29,
+          "other_documents_eligible": 20,
+          "other_documents_sampled": 13,
+          "selected_units": 79,
+          "documents_selected": 14,
+          "other_sample_fraction_actual": 0.051418439716312055
+        },
+        "primaryrunprofile": {
+          "run_id": "074539f031e64dc28f03384481563a85",
+          "status": "partial",
+          "provider": "cloudflare",
+          "model": "@cf/google/gemma-4-26b-a4b-it",
+          "model_profile": {
+            "provider": "cloudflare",
+            "model": "@cf/google/gemma-4-26b-a4b-it",
+            "mode": "remote",
+            "revision": "unresolved",
+            "quantization": "provider_managed",
+            "context_limit": 32768,
+            "temperature": 0,
+            "structured_output": true,
+            "source_pack_bytes": 12000,
+            "source_pack_windows": 64,
+            "lens_batch_size": 12,
+            "batching_version": "managed-gemma-2",
+            "citation_offset_unit": "unicode_code_points",
+            "prompt_version": "contextual-decisions-3.2.1",
+            "response_schema_version": "source-vectors-3.2",
+            "pricing_checked_at": "2026-11-16",
+            "reasoning_requested": "disabled",
+            "methodology_version": "3.0",
+            "unit_builder_version": "source-units-3.1",
+            "unit_builder_config": {
+              "max_unit_chars": 4000,
+              "context_sentences": 2
+            },
+            "result_codes": {
+              "0": "does_not_meet",
+              "1": "meets_criterion",
+              "2": "uncertain",
+              "3": "not_applicable"
+            },
+            "wire_budget_version": "3.2.2",
+            "criterion_registry_version": "3.0.0",
+            "rubric_versions": {
+              "discourse": "1.0.0",
+              "ihra": "2026-11-operational-1",
+              "jda": "2021-operational-1",
+              "nexus": "2024-06-operational-1",
+              "anti-muslim-hostility": "2026-03-operational-1",
+              "anti-muslim-racism": "2025-operational-1"
+            },
+            "learning_snapshot_id": null,
+            "approved_example_ids": [],
+            "analysis_config_hash": "e0fa88c7717a4cb2bb931299",
+            "cache_hit_decisions": 75,
+            "response_model": "@cf/google/gemma-4-26b-a4b-it-external"
+          },
+          "config_sha256": "9dbf9d64ff4ee607746f92c0103299846b9479090b0baa8f4ec3ea57b19138bc",
+          "methodology_version": "3.0",
+          "unit_max_chars": 4000,
+          "source_manifest_key": "runs/074539f031e64dc28f03384481563a85/source-manifest.json",
+          "lens_ids": [
+            "discourse",
+            "ihra",
+            "jda",
+            "nexus",
+            "anti-muslim-hostility",
+            "anti-muslim-racism"
+          ],
+          "persona": "research",
+          "inquiry": null,
+          "language": null
+        }
+      },
+      "unit_max_chars": 4000,
+      "task_index_basis": "source_units_v3",
+      "context_sentences": 2,
+      "pipeline_version": "contextual-decisions-3.2.1",
+      "unit_builder_version": "source-units-3.1",
+      "lens_snapshots": [
+        {
+          "id": "discourse",
+          "name": "Doxa & discourse",
+          "version": "1.0.0",
+          "description": "Inspect expressed positions, framing, values and reviewable assumptions.",
+          "source_url": "https://aclanthology.org/P15-2072/",
+          "scope": "Descriptive discourse analysis; implicit assumptions are hypotheses, not private beliefs.",
+          "criteria": [
+            {
+              "id": "stance",
+              "label": "Expressed stance",
+              "description": "Identify a position toward a specified proposition, with the speaker and target explicit. Sentiment alone is not stance.",
+              "kind": "descriptive"
+            },
+            {
+              "id": "framing",
+              "label": "Problem framing",
+              "description": "Identify how a passage defines a problem, assigns causes or responsibility, invokes a value, or proposes a remedy.",
+              "kind": "descriptive"
+            },
+            {
+              "id": "presupposition",
+              "label": "Presupposition hypothesis",
+              "description": "Identify an assumption taken for granted by the wording. Mark it ambiguous where alternative readings exist; do not infer an author's hidden beliefs.",
+              "kind": "descriptive"
+            },
+            {
+              "id": "rhetoric",
+              "label": "Rhetorical device",
+              "description": "Describe an evidenced generalization, contrast, euphemism, moral boundary, metaphor, or appeal to authority; explain its textual function.",
+              "kind": "descriptive"
+            }
+          ],
+          "context_rules": "Distinguish the document author from quoted or reported speakers. Absence of a viewpoint is meaningful only against a declared comparator. Do not infer religious or political identities.",
+          "criterion_registry_version": "3.0.0"
+        },
+        {
+          "id": "ihra",
+          "name": "Antisemitism · IHRA",
+          "version": "2026-11-operational-1",
+          "description": "Apply a context-sensitive operational summary of the IHRA working definition.",
+          "source_url": "https://holocaustremembrance.com/resources/working-definition-antisemitism",
+          "scope": "Non-legally-binding framework. Findings concern passages, not whether a person is antisemitic.",
+          "criteria": [
+            {
+              "id": "anti_jewish_generalization",
+              "label": "Anti-Jewish hostility or stereotyping",
+              "description": "Assess hostility, dehumanization, conspiracies, or collective allegations directed at Jews as Jews.",
+              "kind": "indicator"
+            },
+            {
+              "id": "collective_responsibility",
+              "label": "Collective responsibility",
+              "description": "Assess holding Jewish people collectively responsible for real or alleged acts of another person, group, or Israel.",
+              "kind": "indicator"
+            },
+            {
+              "id": "israel_related_context",
+              "label": "Israel-related expression in context",
+              "description": "Assess relevant IHRA examples in overall context, including anti-Jewish tropes, discriminatory standards or denial of Jewish self-determination. Do not assume that policy criticism alone satisfies a criterion.",
+              "kind": "indicator"
+            }
+          ],
+          "context_rules": "The examples require overall context. Criticism of Israel similar to criticism of other countries is not antisemitic under the source text. Distinguish quotation, reporting, opposition to hate, criticism of a government, and endorsement. Indicate insufficient context when evidence does not establish the criterion.",
+          "criterion_registry_version": "3.0.0"
+        },
+        {
+          "id": "jda",
+          "name": "Antisemitism · Jerusalem Declaration",
+          "version": "2021-operational-1",
+          "description": "Read passages through the Jerusalem Declaration's definition and contextual guidelines.",
+          "source_url": "https://jerusalemdeclaration.org/",
+          "scope": "Alternative framework with its own protections for political expression; no legal determination.",
+          "criteria": [
+            {
+              "id": "jews_as_jews",
+              "label": "Discrimination against Jews as Jews",
+              "description": "Assess discrimination, prejudice, hostility, or violence against Jews as Jews or Jewish institutions as Jewish.",
+              "kind": "indicator"
+            },
+            {
+              "id": "tropes_collective_guilt",
+              "label": "Tropes and collective guilt",
+              "description": "Assess anti-Jewish conspiracies, essentializing stereotypes, and responsibility assigned to Jews for Israel's conduct.",
+              "kind": "indicator"
+            },
+            {
+              "id": "political_expression_boundary",
+              "label": "Political-expression boundary",
+              "description": "Differentiate anti-Jewish expression from political criticism. BDS, anti-Zionism, constitutional alternatives securing equality, and disproportionate criticism are not inherently antisemitic under this framework.",
+              "kind": "boundary"
+            }
+          ],
+          "context_rules": "Read all relevant contextual guidelines. Political position by itself does not establish anti-Jewish prejudice. Preserve genuine ambiguity and distinguish a speaker's statements from text quoting or opposing them.",
+          "criterion_registry_version": "3.0.0"
+        },
+        {
+          "id": "nexus",
+          "name": "Antisemitism · Nexus",
+          "version": "2024-06-operational-1",
+          "description": "Apply the Nexus distinction between anti-Jewish prejudice and political opposition.",
+          "source_url": "https://nexusproject.us/nexus-resources/the-nexus-document/",
+          "scope": "Contextual framework; findings do not establish a person's intentions or legal liability.",
+          "criteria": [
+            {
+              "id": "anti_jewish_tropes",
+              "label": "Anti-Jewish tropes",
+              "description": "Assess stereotypical assertions, conspiracies, demonization, or unequal treatment directed at Jews as Jews.",
+              "kind": "indicator"
+            },
+            {
+              "id": "collective_guilt",
+              "label": "Collective guilt",
+              "description": "Assess blaming Jews collectively for Israel or presuming Jewish individuals are agents of Israel.",
+              "kind": "indicator"
+            },
+            {
+              "id": "opposition_boundary",
+              "label": "Political-opposition boundary",
+              "description": "Distinguish hostility to Jews from criticism of Israel or Zionism. Disproportionate attention to Israel is not prima facie proof of antisemitism.",
+              "kind": "boundary"
+            }
+          ],
+          "context_rules": "Do not classify political opposition from keywords alone. Identify the target, source speaker and supporting context. Describe systemic claims only where the supplied corpus supports them.",
+          "criterion_registry_version": "3.0.0"
+        },
+        {
+          "id": "anti-muslim-hostility",
+          "name": "Anti-Muslim hostility · England 2026",
+          "version": "2026-03-operational-1",
+          "description": "A contextual reading of England's non-statutory Anti-Muslim Hostility definition.",
+          "source_url": "https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility",
+          "scope": "England-specific non-statutory definition. Text alone may not establish intention or unlawful discrimination.",
+          "criteria": [
+            {
+              "id": "targeted_hostility",
+              "label": "Hostility toward Muslims",
+              "description": "Identify evidenced threatening, abusive, or hostile expression targeting people because they are Muslim or perceived to be Muslim.",
+              "kind": "indicator"
+            },
+            {
+              "id": "stereotyping_and_intent",
+              "label": "Stereotyping and intent",
+              "description": "Assess stereotyping intended to encourage hatred of Muslims. If intent is not established by context, explicitly mark insufficient_context rather than claiming it.",
+              "kind": "indicator"
+            },
+            {
+              "id": "discrimination_claim",
+              "label": "Targeted discrimination indicators",
+              "description": "Identify stated exclusion or unequal treatment directed at Muslims; do not pronounce legal unlawfulness from a passage.",
+              "kind": "indicator"
+            }
+          ],
+          "context_rules": "The guidance protects criticism, ridicule, and discussion of Islam. Differentiate criticism of doctrines, religious institutions or policy from hostility to people. Do not presume intent from an isolated word or a demographic label.",
+          "criterion_registry_version": "3.0.0"
+        },
+        {
+          "id": "anti-muslim-racism",
+          "name": "Islamophobia · structural racism",
+          "version": "2025-operational-1",
+          "description": "Inspect anti-Muslim racialization and exclusion, including evidenced institutional patterns.",
+          "source_url": "https://www.runnymedetrust.org/publications/islamophobia-towards-a-working-definition",
+          "scope": "Structural analytical lens, distinct from the England conduct-and-intent framework.",
+          "criteria": [
+            {
+              "id": "racialization",
+              "label": "Racialization and essentializing",
+              "description": "Assess treating Muslims or perceived Muslims as a homogeneous, inferior, threatening, or inherently suspect population.",
+              "kind": "indicator"
+            },
+            {
+              "id": "exclusion",
+              "label": "Exclusion and unequal treatment",
+              "description": "Identify expressed exclusion, discriminatory expectations, or restrictions attached to Muslim identity.",
+              "kind": "indicator"
+            },
+            {
+              "id": "institutional_pattern",
+              "label": "Institutional pattern hypothesis",
+              "description": "Identify an evidenced institutional practice or repeated pattern. One passage cannot by itself establish a systemic pattern; mark insufficient context when required.",
+              "kind": "indicator"
+            }
+          ],
+          "context_rules": "Separate critique of beliefs or institutions from racialization of people. A structural claim needs corpus context and an explicit comparator; preserve its evidential limits.",
+          "criterion_registry_version": "3.0.0"
+        }
+      ],
+      "lens_snapshots_sha256": "8e6be107325887a4b0487284f1f784d8317388e38124d5ed95a5546e00bf0acc",
+      "quantization": "provider_managed",
+      "provider_preflight": {
+        "ok": true,
+        "provider": "cloudflare",
+        "model": "@cf/openai/gpt-oss-120b",
+        "mode": "remote",
+        "revision": "unresolved",
+        "quantization": "provider_managed",
+        "context_limit": 14336,
+        "temperature": 0,
+        "structured_output": true,
+        "source_pack_bytes": 3600,
+        "source_pack_windows": 20,
+        "lens_batch_size": 2,
+        "batching_version": "gptoss-reasoning-budget-1:low:2048",
+        "citation_offset_unit": "unicode_code_points",
+        "prompt_version": "doxa-evidence-1.2",
+        "response_schema_version": "evidence-enums-1",
+        "reasoning_effort_requested": "low",
+        "reasoning_effort_applied": "unverified_by_adapter",
+        "reasoning_token_allowance": 2048,
+        "reasoning_profile_version": "gptoss-reasoning-budget-1",
+        "context_window_including_reasoning": 16384,
+        "context_limit_basis": "source_plus_visible_output_budget_after_reasoning_reserve",
+        "pricing_checked_at": "2026-11-16",
+        "reasoning_requested": "low",
+        "details": "Provider reachable; selected model availability checked. Exact structured-output support is checked during analysis."
+      },
+      "schema_version": "3.0",
+      "source_manifest_key": "runs/ad5046e9849d4392a8160d55de9beacd/source-manifest.json",
+      "source_snapshot": [
+        {
+          "id": "8034cbd01d8c663088d89d271ef48dd9",
+          "sha256": "4a791b1640104170d7e882c2515128103368e14a87bb5e5220b64da9f828d556"
+        },
+        {
+          "id": "a22ce6e063e56b385b78291fb7b6e3c6",
+          "sha256": "ccc817b6fe4117abe682f01a2f0a53a5ad158203a3644c960f99bd639a52a357"
+        },
+        {
+          "id": "5b60013207d07c0129398fe1c3f6e629",
+          "sha256": "87d43392dfc581c6dcab02e8ff6b6ec2401f7c96adf742d8b75aa71569238b9d"
+        },
+        {
+          "id": "de578eab78f7889a36107e13a4e46722",
+          "sha256": "dc043598fbaf8bd3198fd068da3d7d89cb179a4849850f67635a39268fb7b722"
+        },
+        {
+          "id": "6a0d3a41e6c3a7f13b9850def44036f1",
+          "sha256": "aafc9389ffa8ff41fe2d7eea78ba27cd68e7121a6bbf48056868d0fd002ce459"
+        },
+        {
+          "id": "69017a28cd075085db8da2064e341e7b",
+          "sha256": "8f03151fcb83371d0bfe38ceea4705d9249c45a2e5df51ef7d2edd5633f2e65c"
+        },
+        {
+          "id": "4fcdd43fd9cf392ee0c5f68986db1b23",
+          "sha256": "c826adb7813babc836a8456fa9fb7c517710bb481b9548efb36710ee087c8f6e"
+        },
+        {
+          "id": "7c95c773f8eb909defde516eca31b2a4",
+          "sha256": "d4b50d024dd09918f75ae46f5b0a5ef2cb612bdd8d69edb043e34010159473fa"
+        },
+        {
+          "id": "1a82c53d719bc1201c329ddee7c2e4ce",
+          "sha256": "6d38441c34bc7f965f72f381e05ac305c88963677ea832c9b7800e743d1f2222"
+        },
+        {
+          "id": "b630a74db61a98d40f68de3f90049e49",
+          "sha256": "8a74e1bd02e4c0baf897e5b4ecacea5163c7d8118e96751905bc8b40ebe7aaac"
+        },
+        {
+          "id": "c390de027c4c715c04d2ec2ea9a88c69",
+          "sha256": "0ae0b0840fb2bbb5d54069a465cbc9df9a39a1730406656334855e489360cfdf"
+        },
+        {
+          "id": "ce6820253dd6abda147083371c76ee13",
+          "sha256": "49de1a3734b26231bbdf850c27097435abec1d40100cefd5dfd81fc370c2f368"
+        },
+        {
+          "id": "0642e61e6553a21f1fbeec28c40540db",
+          "sha256": "984ac4f06c421f06d60d3288f9d8730ab8fe234a965df99e0a0686c9d2af5300"
+        },
+        {
+          "id": "d03475e6d970f85a936c28fe0fe9c3cc",
+          "sha256": "d28ae5ac6aaf6c732e4755c3a006e609c557ce97f71eb8dc0e2fc8f0519bb796"
+        }
+      ],
+      "budget_changes": [
+        {
+          "previous": 1.5,
+          "new": 1.5,
+          "at": "2026-11-17T03:14:05.399788+00:00"
+        }
+      ]
+    },
+    "progress": {
+      "documents_total": 14,
+      "documents_done": 14,
+      "documents_complete": 14,
+      "documents_settled": 14,
+      "blocks_total": 79,
+      "blocks_done": 79,
+      "tasks_total": 26,
+      "tasks_done": 26,
+      "tasks_failed": 0,
+      "current_document": "Combating Religious Discrimination Today: Final Report",
+      "complete": true,
+      "analysis_kind": "model_analysis",
+      "semantic_analysis_performed": true,
+      "semantic_blocks_done": 79,
+      "lexical_blocks_done": 0
+    },
+    "usage": {
+      "input_tokens": 991254,
+      "output_tokens": 243735,
+      "cost_usd": 0.5297401499999996,
+      "requests": 277,
+      "estimated": true
+    },
+    "errors": [],
+    "model_profile": {
+      "provider": "cloudflare",
+      "model": "@cf/openai/gpt-oss-120b",
+      "mode": "remote",
+      "revision": "unresolved",
+      "quantization": "provider_managed",
+      "context_limit": 14336,
+      "temperature": 0,
+      "structured_output": true,
+      "source_pack_bytes": 3600,
+      "source_pack_windows": 20,
+      "lens_batch_size": 2,
+      "batching_version": "gptoss-reasoning-budget-1:low:2048",
+      "citation_offset_unit": "unicode_code_points",
+      "prompt_version": "contextual-decisions-3.2.1",
+      "response_schema_version": "source-vectors-3.2",
+      "reasoning_effort_requested": "low",
+      "reasoning_effort_applied": "unverified_by_adapter",
+      "reasoning_token_allowance": 2048,
+      "reasoning_profile_version": "gptoss-reasoning-budget-1",
+      "context_window_including_reasoning": 16384,
+      "context_limit_basis": "source_plus_visible_output_budget_after_reasoning_reserve",
+      "pricing_checked_at": "2026-11-16",
+      "reasoning_requested": "low",
+      "methodology_version": "3.0",
+      "unit_builder_version": "source-units-3.1",
+      "unit_builder_config": {
+        "max_unit_chars": 4000,
+        "context_sentences": 2
+      },
+      "result_codes": {
+        "0": "does_not_meet",
+        "1": "meets_criterion",
+        "2": "uncertain",
+        "3": "not_applicable"
+      },
+      "wire_budget_version": "3.2.2",
+      "criterion_registry_version": "3.0.0",
+      "rubric_versions": {
+        "discourse": "1.0.0",
+        "ihra": "2026-11-operational-1",
+        "jda": "2021-operational-1",
+        "nexus": "2024-06-operational-1",
+        "anti-muslim-hostility": "2026-03-operational-1",
+        "anti-muslim-racism": "2025-operational-1"
+      },
+      "learning_snapshot_id": null,
+      "approved_example_ids": [],
+      "analysis_config_hash": "97fa02bb8b1faadcf1b567d4",
+      "cache_hit_decisions": 75,
+      "visible_output_tokens_requested": 1600,
+      "total_output_tokens_requested": 3648,
+      "response_model": "@cf/openai/gpt-oss-120b"
+    }
+  },
+  "parts": [
+    {
+      "file": "assessments-part-0001.jsonl.gz",
+      "sha256": "0edad3c43de340ae5ce706b1d03cefd5d646939e23a0e0b7c56903e36dd848a9",
+      "bytes": 579234,
+      "documents": 14,
+      "uncompressed_bytes": 13281741
+    }
+  ],
+  "counts": {
+    "documents": 14,
+    "assessments": 1501,
+    "audited_references": 34947,
+    "source_characters": 2296070,
+    "words": 348941
+  },
+  "unit_states": {
+    "accepted": 79
+  },
+  "outcomes": {
+    "not_applicable": 819,
+    "meets_criterion": 310,
+    "does_not_meet": 328,
+    "uncertain": 44
+  },
+  "benchmark": {
+    "kind": "independent_model_subset",
+    "sessions": [
+      {
+        "started_at": "2026-11-17T02:52:50.876079+00:00",
+        "budget_usd": 1.5,
+        "concurrency": 8
+      },
+      {
+        "started_at": "2026-11-17T03:14:04.991608+00:00",
+        "budget_usd": 1.5,
+        "concurrency": 8
+      }
+    ],
+    "elapsed_seconds": 1187.505434261002
+  },
+  "citation_audit": {
+    "valid": true,
+    "references": 34947
+  },
+  "interpretation_accuracy": null,
+  "independent_human_labels": false,
+  "notice": "Exact source anchoring is a software check, not interpretation accuracy. Run state, failed/pending units, historical usage and selection scope are preserved. Whole selected documents are archived; no passage sampling is performed."
+}
