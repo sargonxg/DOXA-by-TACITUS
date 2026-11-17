@@ -1,0 +1,39 @@
+{
+  "schema_version": "doxa-local-report-headroom-audit-1",
+  "generated_at": "2026-11-17T17:24:52.703094+00:00",
+  "status": "diagnostic_not_full_report_completion",
+  "scope": "Two isolated local attempts; original workspaces unchanged. Local reruns stopped after the measured disk limits; verification moved to a clean runner.",
+  "receipts": [
+    {
+      "file": "v04-report-job-5000-local-headroom-diagnostic.json",
+      "sha256": "60f4fb474751461d0ed1e761f5f4f1cd57b5e2ab1afae68e29d8ab3eb4fc16ca"
+    },
+    {
+      "file": "v04-evidence-replay-local-headroom-diagnostic.json",
+      "sha256": "7686c977eb57e679ee4945a332c76765b0027db2c3b0c7a9925afee49e1dce13"
+    }
+  ],
+  "second_attempt": {
+    "report_elapsed_until_guard_seconds": 369.624471,
+    "sampled_minimum_free_bytes": 488574976,
+    "configured_free_reserve_bytes": 536870912,
+    "sampled_max_report_distinct_inode_file_bytes": 4781655486,
+    "process_lifetime_peak_rss_bytes": 272064512,
+    "child_lifetime_peak_rss_bytes": 272064512,
+    "temporary_report_inputs_and_artifacts_cleaned": true,
+    "restore_sampled_temp_file_bytes": 2256808310
+  },
+  "interpretation": [
+    "The full restore and idempotence assertions ran before the report stage; the combined proof remains failed because report artifact verification did not finish.",
+    "Distinct-inode logical file sizes are sampled, not a measurement of simultaneous allocated disk peak. They exclude the original restored Store and unlinked/library temporary files. Do not add independently sampled component maxima as an exact peak.",
+    "The first diagnostic included a manual index rescue, render-lease pause and hardlink replacement; the second attempt used startup index, automatic render reservation and native hardlinks without intervention.",
+    "Neither failed attempt establishes successful full 5,000-source asynchronous export. A fresh unassisted proof on a roomier CI runner is required."
+  ],
+  "operator_preflight": {
+    "recommended_free_bytes_for_combined_restore_and_full_report_proof": 32212254720,
+    "recommendation_is_conservative_not_a_measured_minimum": true,
+    "preserve_disk_reserve": true,
+    "verify_temporary_volume_not_only_repository_size": true
+  },
+  "interpretation_accuracy": null
+}

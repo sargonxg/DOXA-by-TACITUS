@@ -6,6 +6,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import subprocess
 import sys
 import tomllib
 
@@ -22,6 +23,25 @@ def file_hash(path):
 
 def verify(root=ROOT):
     failures, links, artifacts = [], 0, 0
+    tracked = None
+    try:
+        listing = subprocess.run(["git", "ls-files", "--cached", "-z"], cwd=root,
+                                 capture_output=True, check=True).stdout
+        tracked = {name.decode() for name in listing.split(b"\0") if name}
+    except (OSError, subprocess.CalledProcessError):
+        pass  # Source ZIPs have no Git index; filesystem/hash checks still apply.
+
+    def check_tracked(path):
+        if tracked is None:
+            return
+        try:
+            name = path.resolve().relative_to(root.resolve()).as_posix()
+        except ValueError:
+            failures.append(f"Local publication points outside the repository: {path.name}")
+            return
+        present = any(item.startswith(name.rstrip("/") + "/") for item in tracked) if path.is_dir() else name in tracked
+        if not present:
+            failures.append(f"Linked artifact is not tracked in Git: {name}")
     documents = [root / name for name in ("README.md", "CONTRIBUTING.md", "CHANGELOG.md", "benchmarks/README.md", "frontend/README.md")]
     documents += sorted((root / "docs").glob("*.md"))
     for document in documents:
@@ -33,6 +53,8 @@ def verify(root=ROOT):
             links += 1
             if not (document.parent / target).exists():
                 failures.append(f"Missing link in {document.relative_to(root)}: {target}")
+            else:
+                check_tracked(document.parent / target)
     for manifest in sorted((root / "examples").rglob("*.manifest.json")):
         value = json.loads(manifest.read_text())
         files = value.get("files", [])
@@ -50,6 +72,7 @@ def verify(root=ROOT):
                 failures.append(f"Invalid artifact path in {manifest.relative_to(root)}: {name}")
                 continue
             artifacts += 1
+            check_tracked(candidate)
             if file_hash(candidate) != entry["sha256"]:
                 failures.append(f"Artifact hash mismatch: {candidate.relative_to(root)}")
             expected_bytes = entry.get("bytes")
@@ -64,6 +87,8 @@ def verify(root=ROOT):
             failures.append("Missing or invalid detached evidence ZIP")
         elif file_hash(candidate) != value["sha256"] or candidate.stat().st_size != value["bytes"]:
             failures.append("Detached evidence ZIP hash/size mismatch")
+        else:
+            check_tracked(candidate)
     version = tomllib.loads((root / "pyproject.toml").read_text())["project"]["version"]
     python_version = re.search(r'__version__\s*=\s*"([^"]+)"', (root / "doxa/__init__.py").read_text()).group(1)
     if python_version != version:
@@ -74,6 +99,7 @@ def verify(root=ROOT):
             if value["version"] != version or ("packages" in value and value["packages"][""]["version"] != version):
                 failures.append(f"Version differs: {folder}/{name}")
     return {"version": version, "local_links_checked": links, "artifact_hashes_checked": artifacts,
+            "git_index_checked": tracked is not None,
             "failures": failures, "network_requests": 0, "model_requests": 0}
 
 
