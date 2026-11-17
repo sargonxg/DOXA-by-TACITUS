@@ -559,6 +559,7 @@ def execute(args):
             final_checkpoint=checkpoint,
             peak_process_rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss * 1024,
             storage={
+                "scope": "Restore SQLite and object files; additional report rendering files are measured by the separate report-job receipt when enabled.",
                 "sampled_peak_temp_file_bytes": max_temp,
                 "sampled_peak_wal_bytes": max_wal,
                 "minimum_free_bytes_observed": min_free,
@@ -587,6 +588,8 @@ def execute(args):
                 "status": report["status"], "receipt": str(args.report_job_receipt),
                 "scope": "same fresh isolated restored workspace; original baseline untouched",
             }
+            assert data_fingerprint() == before_digest, "Report preparation changed the restored source/model state"
+            receipt["persistent_report_job"]["source_model_state_fingerprint_unchanged"] = True
             assert not calls and file_hash(package) == args.expected_package_sha256
     except BaseException as error:
         receipt.update(

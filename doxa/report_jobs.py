@@ -206,6 +206,7 @@ class ReportJobs:
             state = json.loads(row["state_json"] or "{}")
             if config.get("casebook"):
                 self._check(identity, lease)
+                self.store.execute("UPDATE report_jobs SET phase='render',progress_json=?,updated_at=? WHERE id=? AND lease_token=?", [compact({"phase": "render", "completed": 0, "total": 1, "percent": 75, "message": "Rendering the submitted frozen casebook revision"}), utcnow(), identity, lease])
                 output = folder / "output"
                 output.mkdir(exist_ok=True)
                 config_path = folder / "casebook.json"
@@ -250,7 +251,14 @@ class ReportJobs:
                 return self._pause(identity, lease, state)
             self._check(identity, lease)
             parts = self.store.query("SELECT * FROM report_job_parts WHERE job_id=? ORDER BY stage,ordinal", [identity])
+            self.store.execute("UPDATE report_jobs SET phase='materialize',progress_json=?,updated_at=? WHERE id=? AND lease_token=?", [compact({"phase": "materialize", "completed": 0, "total": 1, "percent": 70, "message": "Preparing verified frozen inputs"}), utcnow(), identity, lease])
             database, metadata = report_source.materialize(self.store, config, parts, folder / "inputs", lambda: self._check(identity, lease))
+            reserve = 180 if row["format"] == "xlsx" else 90
+            if time.monotonic() > deadline - reserve:
+                if state.get("render_deferred"):
+                    raise TimeoutError("Frozen input preparation leaves insufficient rendering time; narrow the report selection")
+                state["render_deferred"] = True
+                return self._pause(identity, lease, state)
             self.store.execute("UPDATE report_jobs SET phase='render',progress_json=?,updated_at=? WHERE id=? AND lease_token=?", [compact({"phase": "render", "completed": 0, "total": 1, "percent": 75, "message": "Rendering from immutable inputs"}), utcnow(), identity, lease])
             output = folder / "output"
             output.mkdir(exist_ok=True)

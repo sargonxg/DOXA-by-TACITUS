@@ -3,12 +3,14 @@ import gzip
 import hashlib
 import json
 import time
+from types import SimpleNamespace
 
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 import pytest
 
 from doxa.report_jobs import ReportJobs, register
+from doxa import report_jobs, report_source
 from doxa.workspace import Workspace, WorkspaceQuery
 from test_recorded_export import recorded_workspace as recorded_workspace
 
@@ -113,6 +115,32 @@ def test_reclaimed_lease_never_reuses_obsolete_renderer_paths(prepared):
     assert list((manager.store.root / "report-work" / job["id"]).iterdir()) == [obsolete.parent]
     item = manager.store.one("SELECT object_key FROM report_job_artifacts WHERE job_id=? AND format='html'", [job["id"]])
     assert "Obsolete renderer" not in manager.store.get_bytes(item["object_key"]).decode()
+
+
+@pytest.mark.parametrize("always_slow", [False, True])
+def test_render_budget_is_reserved_after_materialization_without_infinite_retry(prepared, monkeypatch, always_slow):
+    manager, job = make_job(prepared, "xlsx")
+    clock = [0]
+    monkeypatch.setattr(report_jobs, "time", SimpleNamespace(time=time.time, monotonic=lambda: clock[0]))
+    original = report_source.materialize
+    calls = [0]
+    def delayed(*args, **kwargs):
+        result = original(*args, **kwargs)
+        if always_slow or calls[0] == 0:
+            clock[0] += 300
+        calls[0] += 1
+        return result
+    monkeypatch.setattr(report_source, "materialize", delayed)
+    assert manager.work_once(job["id"])["status"] == "queued"
+    state = json.loads(manager.store.one("SELECT state_json FROM report_jobs WHERE id=?", [job["id"]])["state_json"])
+    assert state["frozen"] and state["render_deferred"]
+    assert not manager.get(job["id"])["artifacts"]
+    result = manager.work_once(job["id"])
+    if always_slow:
+        assert result["status"] == "failed"
+        assert manager.get(job["id"])["error"]["code"] == "render_timeout"
+    else:
+        assert result["status"] == "completed"
 
 
 def test_remote_queue_delivery_failure_retains_durable_job_and_never_starts_loop(prepared, monkeypatch):

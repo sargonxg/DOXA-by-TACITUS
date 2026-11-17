@@ -1,0 +1,20 @@
+{
+  "schema_version": "doxa-durable-report-proof-1",
+  "generated_at": "2026-11-17T16:46:52.116438+00:00",
+  "status": "failed",
+  "scope": "isolated native Store; not a production D1 capacity test",
+  "format": "xlsx",
+  "interpretation_accuracy": null,
+  "new_inference_requests": 0,
+  "fresh_model_loads": 0,
+  "error_type": "ValueError",
+  "error": "Durable report job failed: {\"code\": \"report_failed\", \"message\": \"Report verification scratch headroom reached\"}",
+  "temporary_report_inputs_and_artifacts_cleaned": true,
+  "elapsed_seconds": 1142.706582,
+  "process_lifetime_peak_rss_bytes": 271831040,
+  "child_lifetime_peak_rss_bytes": 271831040,
+  "storage": {
+    "minimum_free_bytes": 1041481728,
+    "max_owned_report_bytes": 5058290730
+  }
+}

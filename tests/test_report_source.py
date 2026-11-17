@@ -1,10 +1,13 @@
 """Frozen report-source contracts; persistence fixtures are not quality labels."""
 from collections import Counter
+import errno
 import gzip
 import hashlib
 import json
+import os
 from pathlib import Path
 import sqlite3
+import shutil
 
 from fastapi import HTTPException
 import pytest
@@ -146,6 +149,26 @@ def test_assessment_keyset_plan_has_no_per_page_full_run_sort(recorded_workspace
     details = " ".join(row["detail"] for row in plan)
     assert "v3_assessments_report_cursor" in details
     assert "TEMP B-TREE" not in details
+
+
+@pytest.mark.parametrize("fallback", [False, True])
+def test_native_part_cache_deduplicates_read_only_inputs_with_safe_cross_device_fallback(recorded_workspace, tmp_path, monkeypatch, fallback):
+    store, _ = recorded_workspace
+    value = report_source.encode_part("documents", [{"id": "only-frozen-input"}])
+    key = "report-jobs/hardlink-fixture/part.json.gz"
+    store.put_bytes(key, value)
+    part = {"stage": "documents", "ordinal": 0, "object_key": key, "bytes": len(value), "sha256": hashlib.sha256(value).hexdigest()}
+    folder = tmp_path / "attempt-cache"
+    folder.mkdir()
+    if fallback:
+        def unsupported(*_args, **_kwargs):
+            raise OSError(errno.EXDEV, "Synthetic cross-device filesystem")
+        monkeypatch.setattr(report_source.os, "link", unsupported)
+    _, target = report_source._download_part(store, part, folder)
+    assert target.read_bytes() == value
+    assert os.path.samefile(target, store.object_path(key)) is (not fallback)
+    shutil.rmtree(folder)
+    assert store.get_bytes(key) == value
 
 
 def test_assessment_capture_is_byte_bounded_and_pages_without_omissions(recorded_workspace):

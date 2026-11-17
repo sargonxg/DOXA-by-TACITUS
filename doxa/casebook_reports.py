@@ -82,6 +82,7 @@ def _html(book, profile):
     method = book.get("method_provenance") or {}
     recorded_profile = method.get("profile") or {}
     method_fields = [("Recorded run", method.get("run_id") or book.get("run_id")), ("Recorded run status", method.get("run_status")),
+                     ("Declared research question", method.get("question")), ("Declared checking perspective", method.get("persona")),
                      ("Provider / model", " / ".join(str(method.get(key) or "Not recorded") for key in ("provider", "model"))),
                      ("Methodology version", method.get("methodology_version")), ("Prompt version", recorded_profile.get("prompt_version")),
                      ("Model revision", method.get("model_revision") or recorded_profile.get("revision"))]
@@ -135,7 +136,7 @@ def render_casebook(book: dict, output: Path, format: str, profile: str) -> list
         for key in ("title", "selection_rationale", "query_id", "scope_hash", "snapshot_version", "revision"):
             append(overview, [key, book.get(key)])
         method = book.get("method_provenance") or {}
-        for key in ("run_id", "run_status", "methodology_version", "provider", "model", "model_revision", "method_fingerprint"):
+        for key in ("run_id", "run_status", "question", "persona", "methodology_version", "provider", "model", "model_revision", "method_fingerprint"):
             append(overview, [key, method.get(key)])
         append(overview, ["prompt_version", (method.get("profile") or {}).get("prompt_version")])
         append(overview, ["Interpretation accuracy", "Not established; illustrative operator selection"])

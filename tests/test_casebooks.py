@@ -289,3 +289,17 @@ def test_cross_outcome_pins_preserve_frozen_framework_filters(prepared):
         pin_case(store, book["id"], "a", "case-0")
     assert error.value.status_code == 422
     assert not get_casebook(store, book["id"])["cases"]
+
+
+def test_declared_question_and_review_perspective_are_frozen_with_method(prepared):
+    store, query = prepared
+    config = json.loads(store.one("SELECT config_json FROM runs WHERE id='run'")["config_json"])
+    config.update(question="Whose claims are being reported?", persona="Source-critical researcher")
+    store.execute("UPDATE runs SET config_json=? WHERE id='run'", [json.dumps(config)])
+    book = create_casebook(store, "p", query, "Declared inquiry")
+    config.update(question="Later different question", persona="Later different perspective")
+    store.execute("UPDATE runs SET config_json=? WHERE id='run'", [json.dumps(config)])
+    method = get_casebook(store, book["id"])["method_provenance"]
+    assert method["question"] == "Whose claims are being reported?"
+    assert method["persona"] == "Source-critical researcher"
+    assert len(method["analysis_instructions_sha256"]) == 64

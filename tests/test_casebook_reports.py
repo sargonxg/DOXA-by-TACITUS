@@ -115,9 +115,11 @@ def check_artifacts(artifacts):
 
 def test_casebook_exports_name_frozen_analysis_method_without_connection_config(balanced_book, tmp_path):
     _store, _query, book = balanced_book
+    book["method_provenance"].update(question="A frozen research question", persona="A declared reviewer perspective")
     by_kind, manifest = check_artifacts(render_casebook(book, tmp_path / "method", "html", "briefing"))
     html = by_kind["html"].read_text()
     assert "Frozen analysis provenance" in html and "mock-fixed" in html and "fixture-1" in html
+    assert "A frozen research question" in html and "A declared reviewer perspective" in html
     assert manifest["method_provenance"] == book["method_provenance"]
     assert manifest["method_provenance"]["run_id"] == "run"
     assert "base_url" not in manifest["method_provenance"]

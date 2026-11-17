@@ -87,7 +87,15 @@ def verify_report_jobs(store, project_id, run_id, receipt_path, *, isolated=Fals
             raise ValueError("Report verification maximum elapsed time reached")
         if identity:
             roots = [store.root / "report-work" / identity, store.object_path("report-jobs/" + identity)]
-            size = sum(path.stat().st_size for root in roots if root.exists() for path in root.rglob("*") if path.is_file())
+            seen, size = set(), 0
+            for root in roots:
+                for path in root.rglob("*") if root.exists() else []:
+                    if path.is_file():
+                        stat = path.stat()
+                        inode = (stat.st_dev, stat.st_ino)
+                        if inode not in seen:
+                            size += stat.st_size
+                            seen.add(inode)
             samples["max_owned_report_bytes"] = max(samples["max_owned_report_bytes"], size)
     class AuditedJobs(ReportJobs):
         def _check(self, identity, lease):
@@ -165,7 +173,8 @@ def verify_report_jobs(store, project_id, run_id, receipt_path, *, isolated=Fals
             store.execute("DELETE FROM v3_query_snapshots WHERE id=?", [query_id])
         receipt.update(temporary_report_inputs_and_artifacts_cleaned=True, elapsed_seconds=round(time.perf_counter()-started, 6),
                        process_lifetime_peak_rss_bytes=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024,
-                       child_lifetime_peak_rss_bytes=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss*1024, storage=samples)
+                       child_lifetime_peak_rss_bytes=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss*1024, storage=samples,
+                       storage_measurement="Distinct-inode logical file sizes; native hardlinks counted once. Filesystem free space sampled independently.")
         target = Path(receipt_path)
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n")

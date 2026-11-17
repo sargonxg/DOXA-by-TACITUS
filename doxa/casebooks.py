@@ -63,9 +63,10 @@ def get_casebook(store, identity):
         frozen_run = _scope(store, book)["run"]
         config = json.loads(frozen_run.get("config_json") or "{}")
         profile = json.loads(frozen_run.get("model_profile_json") or "{}")
-        method = {key: config.get(key) for key in ("methodology_version", "pipeline_version", "schema_version", "provider", "model", "model_revision", "quantization", "method_fingerprint", "analysis_profile_hash", "source_metadata_hash", "lens_snapshots_sha256", "unit_builder_version", "unit_max_chars", "context_sentences")}
+        method = {key: config.get(key) for key in ("methodology_version", "pipeline_version", "schema_version", "provider", "model", "model_revision", "quantization", "method_fingerprint", "analysis_profile_hash", "source_metadata_hash", "lens_snapshots_sha256", "unit_builder_version", "unit_max_chars", "context_sentences", "question", "persona")}
         method["profile"] = {key: profile.get(key) for key in ("prompt_version", "revision", "response_model", "response_schema_version", "structured_output", "criterion_registry_version", "temperature", "context_limit", "citation_offset_unit", "batching_version")}
         method.update(run_id=frozen_run["id"], run_status=frozen_run.get("status"),
+                      analysis_instructions_sha256=digest({"question": config.get("question"), "persona": config.get("persona")}),
                       source_cohort_count=len(config.get("source_snapshot", [])),
                       source_cohort_sha256=digest(config.get("source_snapshot", [])))
         cases = store.query("SELECT * FROM v4_casebook_cases WHERE casebook_id=? ORDER BY ordinal,id", [identity])

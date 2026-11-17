@@ -53,5 +53,33 @@
   "logical_rows_changed": false,
   "generated_at": "2026-11-17T16:53:07.385511+00:00",
   "sqlite_version": "3.53.1",
-  "measurement_basis": "Same bounded query shapes and active isolated run; cursor advanced between measurements. These are query timings, not whole-job throughput or a production D1 benchmark."
+  "measurement_basis": "Same bounded query shapes and active isolated run; cursor advanced between measurements. These are query timings, not whole-job throughput or a production D1 benchmark.",
+  "operational_interventions": [
+    {
+      "at": "2026-11-17T17:00:29.910194+00:00",
+      "kind": "manual_checkpoint_pause_on_isolated_report_job",
+      "job_id": "6dfbf9aea81c4c1381ae74f041c91ad8",
+      "previous_phase": "render",
+      "immutable_inputs_frozen": true,
+      "reason": "Insufficient remaining bounded-work time for full XLSX rendering after capture/materialization; expire only this report lease so next call receives a fresh work budget. Final code adds an automatic render reservation.",
+      "changed_fields": [
+        "status",
+        "lease_token",
+        "lease_until",
+        "updated_at"
+      ],
+      "original_source_model_review_rows_changed": false
+    },
+    {
+      "at": "2026-11-17T17:05:03.416627+00:00",
+      "kind": "deduplicate_consumed_native_part_copies_with_hardlinks",
+      "job_id": "6dfbf9aea81c4c1381ae74f041c91ad8",
+      "temporary_files_replaced": 10273,
+      "duplicate_temporary_bytes_released": 509036818,
+      "all_store_and_temporary_sha256_verified": true,
+      "source_objects_modified": false,
+      "reason": "Restore headroom during full XLSX rendering; current input ZIP still resolves the same frozen paths.",
+      "byte_measurement": "Sum of verified compressed temporary file lengths; allocator overhead and concurrent worksheet writes are excluded."
+    }
+  ]
 }

@@ -3,7 +3,9 @@ from __future__ import annotations
 
 from contextlib import contextmanager
 import gzip
+import errno
 import json
+import os
 from pathlib import Path
 import sqlite3
 from concurrent.futures import ThreadPoolExecutor
@@ -130,7 +132,21 @@ def encode_part(stage, rows):
 def _download_part(store, part, folder):
     target = folder / (part["stage"] + "-" + str(part["ordinal"]) + ".json.gz")
     if not target.is_file() or file_hash(target) != part["sha256"]:
-        store.download(part["object_key"], target)
+        if not store.remote:
+            source = store.object_path(part["object_key"])
+            if not source.is_file() or source.stat().st_size != part["bytes"] or file_hash(source) != part["sha256"]:
+                raise ValueError("Frozen report input checksum failed")
+            target.unlink(missing_ok=True)
+            try:
+                # Both paths are consumed read-only. Removing an attempt later
+                # removes only its link, never the immutable Store object.
+                os.link(source, target)
+            except OSError as error:
+                if error.errno not in {errno.EXDEV, errno.ENOSYS, errno.EOPNOTSUPP, errno.EPERM, errno.EACCES}:
+                    raise
+                store.download(part["object_key"], target)
+        else:
+            store.download(part["object_key"], target)
     if target.stat().st_size != part["bytes"] or file_hash(target) != part["sha256"]:
         raise ValueError("Frozen report input checksum failed")
     return part, target
