@@ -1,0 +1,69 @@
+# Reading anti-Muslim bias in 60 news articles
+
+**Who is speaking when a news story contains an account of prejudice?** In this sample, DOXA’s recorded model flagged passages in **14 of 60 articles**. Of the **49 flagged decisions**, it attributed 44 to reported speakers, one to a quoted speaker and four to article authors. Reporting that a student experienced discrimination can trigger a flag. A reader has to examine what the writer actually says about that treatment.
+
+**[Open the interactive study](https://doxa-public-study.giuliocatanzariti.workers.dev/)** · [Nine-page PDF](../frontend/public/studies/muslim-coverage/report.pdf) · [Complete evidence workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx) · [60 attributed texts and original decisions](../frontend/public/studies/muslim-coverage/sources.zip) · [Manifest and checksums](../examples/muslim-coverage.manifest.json).
+
+![Study dashboard showing the two frameworks and the article counts for each of six criteria.](images/muslim-coverage-dashboard.png)
+
+## Three readings to try
+
+1. **A concrete condition of access.** In Elmira Lyapina’s article on Ramadan in Czechia, a principal reportedly pressured a student to remove her hijab or face expulsion. The model flagged unequal treatment and marked the institutional-pattern question uncertain. The next paragraph describes how lower courts and the Supreme Court reached different decisions. Evidence for one case and evidence for a repeated practice answer different questions. [Original article](https://globalvoices.org/2021/05/29/czechias-muslim-women-celebrated-ramadan-with-mixed-experiences/).
+2. **A flag worth challenging.** Davi Jacobs describes women being barred from medical care in Afghanistan. The model flagged exclusion linked to Muslim identity. The cited paragraph identifies a gender restriction. It gives no religious condition for the restriction. The count preserves the flag so readers can examine this possible error in context. [Original article](https://globalvoices.org/2025/08/06/withering-roots-the-waning-health-and-resilience-of-the-women-left-behind-in-afghanistan/).
+3. **An apparent absence worth checking.** A report about a Uyghur mother describes how mainstream media portrayed Uyghurs as “motherland separatists” or “terrorists.” The model marked the group-stereotyping criterion unmet for that unit. The reader identifies the exact sentence and preceding group description. An independent reviewer would need to examine the intersection of ethnic and religious targeting. This example illustrates one way a model can miss a passage. [Original article](https://globalvoices.org/2020/12/04/dont-come-back-or-you-will-disappear-uyghur-mother-pleads-with-her-daughter-abroad/).
+
+The walkthroughs are AI-authored editorial readings. The original article, exact quotation, recorded model rationale when available, and alternative interpretation remain separately identifiable. The two possible errors have no independent adjudication.
+
+## What the model counted
+
+| Framework | Reading question | Articles with a flag | Uncertain articles without a flag for this criterion |
+| --- | --- | ---: | ---: |
+| Hostility | Hostility directed at Muslims | 4 / 60 | 0 |
+| Hostility | Stereotyping intended to encourage hatred | 2 / 60 | 2 |
+| Hostility | Reports or statements of unequal treatment | 11 / 60 | 0 |
+| Structural racism | Treating Muslims as a single suspect group | 7 / 60 | 0 |
+| Structural racism | Exclusion linked to Muslim identity | 8 / 60 | 1 |
+| Structural racism | Possible repeated institutional practice | 3 / 60 | 5 |
+
+A row counts an article once even if several passages triggered the same criterion. A story may appear in several rows. Within a row the article states are mutually exclusive. A flag takes priority, followed by missing decisions, an uncertain decision, at least one checked unit without a flag, and all units outside the criterion. The workbook retains uncertainty even when another unit in the article triggered a flag.
+
+Across **137 source units and 822 decisions**, the original model recorded **49 flags, 11 uncertain, 525 criterion unmet and 237 outside the criterion**. The 11 uncertain decisions occurred in eight articles. All 822 expected decisions for the selected six criteria are present. The wider 5,000-article parent run recorded 79 missing decisions. There are no independent human labels for the selected readings.
+
+## How the 60 articles were selected
+
+The starting point was the frozen English-edition Global Voices corpus. Eligibility required genuine CC BY 3.0 articles in the development split. Canonical holdout story groups and locked evaluation cases and story groups were excluded. A case-insensitive whole-word search of **article body blocks** for *Muslim*, *Muslims*, *Islamophobia* or *Islamophobic* yielded **248 candidates** across six years. This rule also admits incidental mentions and can miss relevant articles that use other words.
+
+| Publication year | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Eligible articles | 47 | 39 | 31 | 53 | 43 | 35 |
+| Selected | 10 | 10 | 10 | 10 | 10 | 10 |
+
+Within each year, SHA-256 sorted the seed `doxa-muslim-coverage-1` and source ID joined by a vertical bar. The first ten unique story groups and content hashes were taken in ascending year order **before opening any model results**. Together the articles contain 68,773 words. Equal allocations give every year room in the sample. They cannot establish a rise in hostility over time or an outlet-wide prevalence rate.
+
+DOXA reused the archived Gemma readings from the same source versions. It checked them against the frozen rubric, source-unit identities, Unicode offsets and text. The six selected criteria have **16,855** exact reference occurrences. A sentence can occur in several records. For compact negative or inapplicable decisions the software attached the unit’s sentences. When the reader highlights one of those sentences, it labels that editorial choice. [Original run and part hashes](../benchmarks/v3-news/showcase.json).
+
+## The academic basis
+
+| Source | Design decision |
+| --- | --- |
+| [Bleich, 2011](https://doi.org/10.1177/0002764211409387) | Define what is being measured before counting it. The unit here is a textual reading under an explicit criterion. |
+| [Blodgett et al., 2020](https://aclanthology.org/2020.acl-main.485/) | Specify the harm and the affected group. A broad score would hide differences between a stereotype, a report of discrimination and a policy claim. |
+| [Mohammad et al., 2016](https://aclanthology.org/S16-1003/) | Specify the target of a stance. An author may support the claim that discrimination occurred while opposing the discrimination itself. |
+| [Artstein and Poesio, 2008](https://aclanthology.org/J08-4004/) | Use independent annotations and examine disagreement before claiming reliable classification. |
+| [England’s anti-Muslim hostility guidance](https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility) and [Runnymede Trust](https://www.runnymedetrust.org/publications/islamophobia-towards-a-working-definition) | Keep the two retrospective analytical frameworks and their different evidence requirements visible. Extending either framework across jurisdictions does not establish legal findings. |
+
+## Open it locally or reproduce it
+
+In DOXA v0.6.1, choose **Read the 60-article study** on the main dashboard. Select a criterion to see matching articles, inspect the six annotated cases, or download the data. The example runs without a model, credentials or an upload. The [mobile reader](images/muslim-coverage-mobile.png) supports the same workflow.
+
+For standalone use, unzip the **offline study** from the release and open `index.html` in a browser. Keep the sibling reader script, PDF, workbook and source ZIP together for local downloads. The source ZIP includes 60 original attributed TXT files and `study.json`, with source blocks, the six original rubric criteria, unit statuses, full selected model records, archive locators and editorial notes. Other criteria from the parent run are available in the original archive. [Release downloads](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.6.1).
+
+From a repository checkout with DOXA’s Python dependencies installed, verify the edition against the frozen corpus:
+
+```sh
+python scripts/build_bias_study.py
+```
+
+Use `--write` to regenerate it. The default command reselects the articles, verifies the original analysis, reproduces the dashboard and uncompressed archive contents, and checks the distributed file hashes. PDF rendering depends on installed fonts and library versions. [Study builder](../scripts/build_bias_study.py).
+
+The public reader serves the released HTML, local filtering script, and three downloads from a dedicated Cloudflare Worker. Local DOXA reads its packaged copy. The Worker accepts GET and HEAD for the study and downloads. The deploy configuration and source live next to the main application’s Cloudflare recipe. [Public reader configuration](../infra/cloudflare/wrangler.study.jsonc).

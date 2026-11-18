@@ -157,7 +157,7 @@ Before serving a restored database and its matching objects, startup applies the
 
 ## Installed wheel and external demonstration data
 
-The v0.6 release wheel contains the compiled browser application and Python engine. From an empty directory, install the downloaded wheel with `python -m pip install ./doxa_by_tacitus-0.6.0-py3-none-any.whl`, then run `doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data`. Python dependencies still install normally; native PDF rendering can require system libraries, for which Docker supplies the documented environment.
+The v0.6 release wheel contains the compiled browser application and Python engine. From an empty directory, install the downloaded wheel with `python -m pip install ./doxa_by_tacitus-0.6.1-py3-none-any.whl`, then run `doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data`. Python dependencies still install normally; native PDF rendering can require system libraries, for which Docker supplies the documented environment.
 
 The wheel includes five clearly fictional practice texts and the small read-only recorded starter. The complete corpora and original result packages remain repository/release artifacts rather than inflating the application wheel. To expose those import collections from an installed application, set `DOXA_ASSET_ROOT` to a clone of this repository containing `corpus/` and `benchmarks/`. Keep `--data-dir` separate for your mutable workspace. The installed UI is always loaded from the wheel; external data does not replace it.
 

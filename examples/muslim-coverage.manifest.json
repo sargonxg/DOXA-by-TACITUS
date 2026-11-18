@@ -1,0 +1,185 @@
+{
+  "study_version": "muslim-coverage-1",
+  "selection": {
+    "seed": "doxa-muslim-coverage-1",
+    "body_pattern": "\\b(?:muslims?|islamophobi(?:a|c))\\b",
+    "per_year": 10,
+    "candidates_by_year": {
+      "2020": 47,
+      "2021": 39,
+      "2022": 31,
+      "2023": 53,
+      "2024": 43,
+      "2025": 35
+    },
+    "manifest_sha256": "6ea29f063abcdda5425d91277c9137cbb66f461fa2fff26f1f3543c51fb02ff3",
+    "scaffold_sha256": "42f05070378be8b201f85f98b55ed4ffb6f35b581798c100310a787d853b0def",
+    "holdout_sha256": "affa53e62620d756a7dba208cf32d13c951eb6a32348f03b2a481b1f221aeafb",
+    "selected_ids_sha256": "3fc7a9ba06393b4d909bae118745b83c4fe74a5f3eb20689d79381e0c1ca4295",
+    "uses_model_outcomes": false
+  },
+  "parent": {
+    "id": "b2a2edd4ca7047128a5e433d8a874530",
+    "status": "partial",
+    "archive_sha256": "783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827",
+    "model": "@cf/google/gemma-4-26b-a4b-it",
+    "provider": "cloudflare",
+    "config_sha256": "24be0b1368e4697a1844f7addc6327763420ef60689e704e560149db2954cd35",
+    "question": "Apply the selected criteria in context, distinguishing attribution, counter-speech, uncertainty and competing frameworks.",
+    "persona": "research",
+    "progress": {
+      "documents_total": 5000,
+      "documents_done": 5000,
+      "documents_complete": 4927,
+      "documents_settled": 5000,
+      "blocks_total": 10759,
+      "blocks_done": 10686,
+      "tasks_total": 5031,
+      "tasks_done": 4958,
+      "tasks_failed": 73,
+      "current_document": "‘Femicide does not start on the day of the crime’: A Brazilian researcher’s view on gender violence in her country",
+      "complete": false,
+      "analysis_kind": "model_analysis",
+      "semantic_analysis_performed": true,
+      "semantic_blocks_done": 10686,
+      "lexical_blocks_done": 0
+    }
+  },
+  "counts": {
+    "articles": 60,
+    "flagged_articles": 14,
+    "units": 137,
+    "decisions": 822,
+    "outcomes": {
+      "not_applicable": 237,
+      "does_not_meet": 525,
+      "meets_criterion": 49,
+      "uncertain": 11
+    },
+    "missing": 0,
+    "uncertain_articles": 8,
+    "references": 16855,
+    "flag_voices": {
+      "reported_speaker": 44,
+      "quoted_speaker": 1,
+      "author": 4
+    },
+    "criteria": {
+      "targeted_hostility": {
+        "lens": "anti-muslim-hostility",
+        "label": "Hostility directed at Muslims",
+        "definition": "Identify evidenced threatening, abusive, or hostile expression targeting people because they are Muslim or perceived to be Muslim.",
+        "states": {
+          "flagged": 4,
+          "incomplete": 0,
+          "uncertain": 0,
+          "no_flag": 47,
+          "inapplicable": 9
+        }
+      },
+      "stereotyping_and_intent": {
+        "lens": "anti-muslim-hostility",
+        "label": "Stereotyping intended to encourage hatred",
+        "definition": "Assess stereotyping intended to encourage hatred of Muslims. If intent is not established by context, explicitly mark insufficient_context rather than claiming it.",
+        "states": {
+          "flagged": 2,
+          "incomplete": 0,
+          "uncertain": 2,
+          "no_flag": 47,
+          "inapplicable": 9
+        }
+      },
+      "discrimination_claim": {
+        "lens": "anti-muslim-hostility",
+        "label": "Reports or statements of unequal treatment",
+        "definition": "Identify stated exclusion or unequal treatment directed at Muslims; do not pronounce legal unlawfulness from a passage.",
+        "states": {
+          "flagged": 11,
+          "incomplete": 0,
+          "uncertain": 0,
+          "no_flag": 39,
+          "inapplicable": 10
+        }
+      },
+      "racialization": {
+        "lens": "anti-muslim-racism",
+        "label": "Treating Muslims as a single suspect group",
+        "definition": "Assess treating Muslims or perceived Muslims as a homogeneous, inferior, threatening, or inherently suspect population.",
+        "states": {
+          "flagged": 7,
+          "incomplete": 0,
+          "uncertain": 0,
+          "no_flag": 43,
+          "inapplicable": 10
+        }
+      },
+      "exclusion": {
+        "lens": "anti-muslim-racism",
+        "label": "Exclusion linked to Muslim identity",
+        "definition": "Identify expressed exclusion, discriminatory expectations, or restrictions attached to Muslim identity.",
+        "states": {
+          "flagged": 8,
+          "incomplete": 0,
+          "uncertain": 1,
+          "no_flag": 40,
+          "inapplicable": 11
+        }
+      },
+      "institutional_pattern": {
+        "lens": "anti-muslim-racism",
+        "label": "Possible repeated institutional practice",
+        "definition": "Identify an evidenced institutional practice or repeated pattern. One passage cannot by itself establish a systemic pattern; mark insufficient context when required.",
+        "states": {
+          "flagged": 3,
+          "incomplete": 0,
+          "uncertain": 5,
+          "no_flag": 40,
+          "inapplicable": 12
+        }
+      }
+    }
+  },
+  "article_states_sha256": "7cf0af1c100155863e290118bf51e017c15f455450846f21f60f9bf73fa6fbd4",
+  "case_ids": [
+    "784b899f557a471b1b3f82d58d2a4508",
+    "7e08d3e3122332f76811e3bd9e9cbefb",
+    "04abefed865ec931ee95f8a208ea80cd",
+    "46be81204630ae235741744a93c7f72b",
+    "23f39c04aea7d023d0e5594826b219cd",
+    "d16abe150d9e8bf60df196c3c0e733db"
+  ],
+  "fresh_inference_requests": 0,
+  "independent_human_labels": false,
+  "files": [
+    {
+      "file": "frontend/public/studies/muslim-coverage/index.html",
+      "bytes": 145439,
+      "sha256": "661f6fb3dbf33a5635e2f83bf126cd18bca6c95d4dea41795bf110f09891b743"
+    },
+    {
+      "file": "frontend/public/studies/muslim-coverage/reader.js",
+      "bytes": 2062,
+      "sha256": "81111a91face63e2a3d74c5f6f51ff5c57a4612866f3b9840ab498b2d4662301"
+    },
+    {
+      "file": "frontend/public/studies/muslim-coverage/reader.json",
+      "bytes": 104664,
+      "sha256": "36be53f45ecb6098a348ef3c3bff1e0438582c9c29276401d75cd6c01acf937a"
+    },
+    {
+      "file": "frontend/public/studies/muslim-coverage/report.pdf",
+      "bytes": 66322,
+      "sha256": "9f5b72b015b04be2d81f860840abf63483fa1646506ae5573c3609270496ed08"
+    },
+    {
+      "file": "frontend/public/studies/muslim-coverage/evidence.xlsx",
+      "bytes": 886540,
+      "sha256": "9f52c3df359bff0c239abdfb108e9de332ca3314a5e881f86079650693495afa"
+    },
+    {
+      "file": "frontend/public/studies/muslim-coverage/sources.zip",
+      "bytes": 908901,
+      "sha256": "c0057511241b94bc2f3176c535edd27d23c4025da27160914ec402a3cf057a86"
+    }
+  ]
+}

@@ -13,7 +13,7 @@ Open the [real-source PDF reader](../examples/v06-recorded-example.pdf), [HTML](
 The published wheel contains the compiled interface and the Python engine. From an empty directory, install the wheel you downloaded:
 
 ```sh
-python -m pip install ./doxa_by_tacitus-0.6.0-py3-none-any.whl
+python -m pip install ./doxa_by_tacitus-0.6.1-py3-none-any.whl
 doxa doctor --json --data-dir ./doxa-data
 doxa --local-profile low-memory --data-dir ./doxa-data
 ```

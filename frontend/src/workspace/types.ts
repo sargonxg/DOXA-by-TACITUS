@@ -113,7 +113,18 @@ export type Casebook = {
   revision: number;
   cases: CasebookCase[];
 };
+export type IndicatorReading = {
+  lens_id: string;
+  criterion_id: string;
+  label: string;
+  with_decision: number;
+  flagged: number;
+  uncertain: number;
+  rejected_decisions: number;
+  example?: { assessment_id: string; document_id: string; result: string };
+};
 export type Metrics = {
+  indicator_readings?: IndicatorReading[];
   documents: number;
   total_words: number;
   total_pages: number;

@@ -6,6 +6,7 @@ DOXA is an open-source evidence workbench packaged as **Bias Detection as a Serv
 
 | Question | Guide and artifacts |
 | --- | --- |
+| What did DOXA find in 60 real news articles? | [Illustrated field study and sampling method](reading-muslim-coverage.md) · [PDF](../frontend/public/studies/muslim-coverage/report.pdf) · [data workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx) |
 | What does the tool do? | [Reader explainer](v04-reader-explainer.md) · [illustrated PDF](../examples/v04-reader-explainer.pdf) · [8-bit Quest](guide.md) |
 | How are claims anchored and qualified? | [Technical annex](v04-technical-annex.md) · [PDF](../examples/v04-technical-annex.pdf) · [interpretation contract](v3-interpretation.md) |
 | Open a small offline recorded example | [Twenty-source PDF](../examples/v06-recorded-example.pdf) · [complete XLSX](../examples/v06-recorded-example.xlsx) · [HTML](../examples/v06-recorded-example.html) · [manifest](../examples/v06-recorded-example.manifest.json) |
