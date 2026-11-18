@@ -290,3 +290,37 @@ def test_non_fts_fallback_keeps_title_or_author_phrase_matching(store, monkeypat
     assert {row["id"] for row in result["documents"]["items"]} == {"title", "author"}
     reversed_phrase = service.create("p", WorkspaceQuery(run_id="none", q="Birch Amber", duplicate_policy="sources"))
     assert reversed_phrase["documents"]["total"] == 0
+
+
+def test_indicator_readings_use_all_selected_outcomes_and_distinct_sources(store):
+    for doc in ("seen", "absent", "uncertain", "rejected", "outside"):
+        seed_document(store, doc, author="Elsewhere" if doc == "outside" else "Reading group")
+    seed_run(store)
+    seed_assessment(store, "flag", "seen")
+    seed_assessment(store, "another-flag", "seen", unit="unit-2")
+    seed_assessment(store, "mixed", "seen", unit="unit-3", result="uncertain")
+    seed_assessment(store, "negative", "absent", result="does_not_meet")
+    seed_assessment(store, "unresolved", "uncertain", result="uncertain")
+    seed_assessment(store, "excluded", "rejected", review="rejected")
+    seed_assessment(store, "foreign-author", "outside")
+    seed_assessment(store, "frame", "seen", kind="descriptive", lens="discourse", criterion="stance")
+    service = Workspace(store)
+    result = service.create("p", WorkspaceQuery(run_id="run", authors=["Reading group"]))
+    rows = result["metrics"]["indicator_readings"]
+    assert len(rows) == 1
+    row = rows[0]
+    assert (row["with_decision"], row["flagged"], row["uncertain"], row["rejected_decisions"]) == (4,1,2,1)
+    assert row["example"] == {"assessment_id": "another-flag", "document_id": "seen", "result": "meets_criterion"}
+    legacy = service.require_query(result["query_id"])["aggregates"]
+    del legacy["metrics"]["indicator_readings"]
+    store.execute("UPDATE v3_query_snapshots SET aggregates_json=? WHERE id=?", [json.dumps(legacy), result["query_id"]])
+    refreshed = service.create("p", WorkspaceQuery(run_id="run", authors=["Reading group"]))
+    assert refreshed["query_id"] != result["query_id"] and refreshed["scope_hash"] == result["scope_hash"]
+    assert refreshed["metrics"]["indicator_readings"] == rows
+    assert "indicator_readings" not in service.require_query(result["query_id"])["aggregates"]["metrics"]
+    restricted = service.create("p", WorkspaceQuery(run_id="run", authors=["Reading group"], results=["uncertain"]))
+    row = restricted["metrics"]["indicator_readings"][0]
+    assert (row["with_decision"], row["flagged"], row["uncertain"]) == (2, 0, 2)
+    assert row["example"]["result"] == "uncertain"
+    empty = service.create("p", WorkspaceQuery(run_id="none"))
+    assert "indicator_readings" not in empty["metrics"]

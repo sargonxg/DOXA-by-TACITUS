@@ -289,6 +289,34 @@ class Workspace:
         configured.update((run or {}).get("model_profile", {}).get("rubric_versions", {}))
         selected_lenses = set(query.get("lens_ids") or configured)
         not_assessed = sorted(selected_lenses - configured) if modern else sorted(query.get("lens_ids") or [])
+        if modern:
+            # "With a decision" includes every outcome matching the user's filters, including
+            # explicit negatives. A representative flag may be far beyond the first UI page.
+            full_clause, full_params, _ = self._scope(project_id, query, noteworthy=False)
+            positive = "a.result='meets_criterion' AND a.review_status!='rejected'"
+            uncertain = "a.result='uncertain' AND a.review_status!='rejected'"
+            rows = self.store.query(
+                "SELECT a.lens_id,a.criterion_id,COUNT(DISTINCT d.id) with_decision,"
+                f"COUNT(DISTINCT CASE WHEN {positive} THEN d.id END) flagged,"
+                f"COUNT(DISTINCT CASE WHEN {uncertain} THEN d.id END) uncertain,"
+                "SUM(a.review_status='rejected') rejected_decisions,"
+                f"MIN(CASE WHEN {positive} THEN json_array(a.id,d.id) END) flag_example,"
+                f"MIN(CASE WHEN {uncertain} THEN json_array(a.id,d.id) END) uncertain_example "
+                "FROM " + table + " WHERE " + full_clause + " AND a.criterion_kind='indicator' "
+                "GROUP BY a.lens_id,a.criterion_id ORDER BY flagged DESC,uncertain DESC,a.lens_id,a.criterion_id",
+                full_params)
+            labels = {(pack["id"], c["id"]): c.get("label") for pack in frozen_packs or []
+                      for c in pack.get("criteria", [])}
+            for row in rows:
+                row["label"] = labels.get((row["lens_id"], row["criterion_id"])) or row["criterion_id"].replace("_", " ")
+                flagged_example = row.pop("flag_example")
+                unresolved_example = row.pop("uncertain_example")
+                example = flagged_example or unresolved_example
+                if example:
+                    assessment_id, document_id = json.loads(example)
+                    row["example"] = {"assessment_id": assessment_id, "document_id": document_id,
+                                      "result": "meets_criterion" if flagged_example else "uncertain"}
+            metrics["indicator_readings"] = rows
         metrics["not_assessed_lenses"] = not_assessed
         metrics["coverage_detail"]["not_assessed_lenses"] = not_assessed
         frozen_pairs = [(pack["id"], criterion["id"]) for pack in frozen_packs for criterion in pack.get("criteria", [])
@@ -470,7 +498,13 @@ class Workspace:
             revision = self.revision(project_id)
             cached = self.store.one("SELECT id FROM v3_query_snapshots WHERE project_id=? AND scope_hash=? AND snapshot_version=? ORDER BY created_at DESC LIMIT 1", [project_id, digest, revision])
             if cached:
-                return self.envelope(self.require_query(cached["id"]))
+                saved = self.require_query(cached["id"])
+                metrics = saved["aggregates"]["metrics"]
+                if metrics["analysis_kind"] != "contextual_v3" or "indicator_readings" in metrics:
+                    return self.envelope(saved)
+                # Older saved scopes keep their identity for pinned reports. Build a fresh
+                # display snapshot when their contextual aggregates predate the reader.
+
             aggregates = self.aggregate(project_id, scope)
             snapshot = {"id": uuid.uuid4().hex, "project_id": project_id, "scope_hash": digest, "snapshot_version": revision, "scope": scope, "aggregates": aggregates}
             self.store.execute("INSERT INTO v3_query_snapshots(id,project_id,scope_hash,snapshot_version,query_json,aggregates_json,created_at) VALUES(?,?,?,?,?,?,?)", [snapshot["id"], project_id, digest, revision, json.dumps(scope), json.dumps(aggregates), utcnow()])

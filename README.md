@@ -8,6 +8,18 @@ DOXA is a browser research workspace for discourse, political framing and contex
 
 **[From research workbench to paid service: commercial roadmap](docs/commercial-service-roadmap.md).** The proposed US launch includes company language audits, political/media analysis and personal email review together, starting with guided paid pilots and expert-reviewed reports. The roadmap distinguishes the implemented pilot foundation from remaining independent validation, qualified customer delivery, OAuth connectors, subscriptions, shared tenancy and production qualification.
 
+## Start with a real bias analysis
+
+**In 60 Global Voices articles, whose words triggered the flags?** The model flagged passages in **14 articles**. It attributed **45 of 49 flagged readings** to people the articles quoted or reported. In a story about a Czech student, for example, it flagged the pressure to remove her hijab and recorded uncertainty about whether that case established an institutional pattern.
+
+**[Open the interactive study](https://doxa-public-study.giuliocatanzariti.workers.dev/)** · **[Read the nine-page PDF](frontend/public/studies/muslim-coverage/report.pdf)** · **[Download the evidence workbook](frontend/public/studies/muslim-coverage/evidence.xlsx)** · **[Get all 60 texts and decisions](frontend/public/studies/muslim-coverage/sources.zip)**.
+
+[![Open the field study showing how many articles triggered each criterion.](docs/images/muslim-coverage-dashboard.png)](https://doxa-public-study.giuliocatanzariti.workers.dev/)
+
+Select a bar to open the articles behind it. Six annotated passages include a possible mistaken flag and a possible miss. Ten articles per year were selected before opening the recorded model outcomes. These counts describe the selected news coverage. Independent interpretation accuracy has yet to be measured. [Sampling, limitations and academic references](docs/reading-muslim-coverage.md).
+
+On your own data, the dashboard now opens with the criteria that surfaced, the number of distinct sources with a matching decision, and a direct link to an exact passage. New guided reports start with a plain-language reading of the supplied evidence. [Install v0.6.1](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.6.1).
+
 ## v0.6 · lighter local work, explicit methods, recoverable delivery
 
 **Use the same one-page workbench on a smaller computer, inspect the method behind an observation, and keep long work independent of the browser.** The default local profile targets an **8 GB host** with a **4 GiB application-container limit**. Native Python applies parser/worker limits but does not enforce an aggregate process-tree memory limit. Physical 8 GB hardware usability and performance remain to be measured; separate model servers and the browser use additional memory.
@@ -153,12 +165,12 @@ Open **http://localhost:8000**. In **Import**, load a recorded collection or add
 The release also supplies a self-contained application wheel. Install the downloaded wheel and start it without Node or a source checkout:
 
 ```sh
-python -m pip install ./doxa_by_tacitus-0.6.0-py3-none-any.whl
+python -m pip install ./doxa_by_tacitus-0.6.1-py3-none-any.whl
 doxa doctor --json --data-dir ./doxa-data
 doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data
 ```
 
-The wheel includes the UI, engine, five clearly fictional practice texts and the small read-only twenty-source recorded starter. The full demonstration corpora and original result packages remain repository/release artifacts. Model weights are installed separately and explicitly. Download the wheel from [GitHub Releases](https://github.com/sargonxg/DOXA-by-TACITUS/releases). Native PDF rendering may require system libraries; [Docker and installation guidance](docs/deployment.md) cover that setup.
+The wheel includes the UI, engine, five clearly fictional practice texts and offline readers for the 60-article field study and twenty-source recorded starter. The full demonstration corpora and original result packages remain repository/release artifacts. Model weights are installed separately and explicitly. Download the wheel from [GitHub Releases](https://github.com/sargonxg/DOXA-by-TACITUS/releases). Native PDF rendering may require system libraries; [Docker and installation guidance](docs/deployment.md) cover that setup.
 
 For native development, use Python 3.11+ and Node 24+:
 

@@ -101,3 +101,22 @@ def test_legacy_examples_keep_exact_json_html_bytes_and_all_committed_hashes():
             path = manifest.parent / file["file"]
             assert path.stat().st_size == file["bytes"]
             assert hashlib.sha256(path.read_bytes()).hexdigest() == file["sha256"]
+
+
+def test_modern_reports_lead_with_the_supported_scope_and_distinguish_fixtures():
+    source = sample("public")
+    report = build_pilot_report(source, "html")["content"].decode()
+    assert report.index("What the source evidence shows") < report.index("Observable wording in eligible authored units")
+    assert "no contextual bias-indicator decisions" in report
+    source["brief"] = validate_brief({"profile_id": "public", "lens_ids": ["ihra"]})
+    source["data_origin"] = "synthetic_demonstration"
+    doc = source["documents"][0]
+    block = doc["blocks"][0]
+    source["findings"] = [{"id": "demo-reading", "document_id": doc["id"], "block_id": block["id"], "start":0,
+                           "end":len(block["text"]), "quote":block["text"], "lens_id":"ihra",
+                           "criterion_id":"anti_jewish_generalization", "result":"meets_criterion", "attribution":"quoted_speaker"}]
+    report = build_pilot_report(source, "html")["content"].decode()
+    assert "Of 1 selected source, 1 had at least one illustrative fixture" in report
+    assert "Recorded attribution is quoted speaker." in report
+    with zipfile.ZipFile(BytesIO(build_pilot_report(source, "xlsx")["content"])) as book:
+        assert "Reading the findings" in book.read("xl/workbook.xml").decode()

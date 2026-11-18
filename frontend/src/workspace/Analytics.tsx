@@ -254,10 +254,10 @@ function Timeline({
           ) : (
             <>
               <option value="endorsed_indicators">
-                Author-endorsed indicator sources
+                Author supports the stated proposition
               </option>
               <option value="reported_indicators">
-                Reported indicator sources
+                Reported or hypothetical indicator sources
               </option>
               <option value="indicators">All indicator sources</option>
               <option value="findings">All assessment rows</option>
@@ -563,8 +563,7 @@ function Trajectory({
               <TrendingUp size={16} />
               <p>
                 Select one analytical framework to enable comparable source
-                rates. Reported, hypothetical and author-endorsed expression
-                remain separate.
+                rates. The speaker and the proposition they support both affect how a flag should be read.
               </p>
             </div>
           )}
@@ -574,7 +573,7 @@ function Trajectory({
                 className="w-rate-plot"
                 viewBox="0 0 760 210"
                 role="img"
-                aria-label="Rate of eligible document clusters with author-endorsed non-hypothetical indicators. Vertical intervals show Wilson 95 percent bounds."
+                aria-label="Rate of eligible document clusters with an indicator where the author supports the stated proposition and the speech is non-hypothetical. Vertical intervals show Wilson 95 percent bounds."
               >
                 {[0, 0.5, 1].map((value) => (
                   <g key={value}>

@@ -448,6 +448,41 @@ def _chart_rows(snapshot: dict) -> list[tuple[str, int]]:
     return [(labels.get(label, label.replace("_", " ")), count) for label, count in snapshot["observation_counts"].items()]
 
 
+def _reading_highlights(snapshot: dict) -> list[str]:
+    """Read the frozen, supplied decisions at source level without imputing unassessed text."""
+    cards = snapshot["report_brief"]["brief"].get("method_cards_snapshot", {}).get("cards", [])
+    labels = {(c["lens_id"], c["criterion_id"]): c["label"] for c in cards}
+    rows = [row for row in snapshot["findings"] if row["criterion_kind"] == "indicator"]
+    if not rows:
+        return ["This selection supplies no contextual bias-indicator decisions. Wording markers and descriptive frames answer separate questions."]
+    checked, flagged, uncertain = {}, {}, set()
+    for row in rows:
+        key = row["lens_id"], row["criterion_id"]
+        checked.setdefault(key, set()).add(row["document_id"])
+        if row["result"] == "meets_criterion":
+            flagged.setdefault(key, set()).add(row["document_id"])
+        elif row["result"] == "uncertain":
+            uncertain.add(row["document_id"])
+    affected = set().union(*flagged.values())
+    noun = "illustrative fixture" if snapshot["data_origin"] == "synthetic_demonstration" else "recorded reading"
+    selected = len(snapshot["documents"])
+    lines = [f"Of {selected} selected {'source' if selected == 1 else 'sources'}, {len(affected)} had at least one {noun} flagged under a bias criterion. "
+             f"The supplied decisions include uncertainty in {len(uncertain)} sources."]
+    for key in sorted(checked, key=lambda k: (-len(flagged.get(k, ())), k))[:3]:
+        lines.append(f"{labels.get(key, key[1])} ({key[0]}) appeared as a flag in {len(flagged.get(key, ()))} of "
+                     f"{len(checked[key])} sources with a supplied decision for that criterion.")
+    example = next((r for r in rows if r["result"] == "meets_criterion"), None)
+    if example:
+        document = next(d for d in snapshot["documents"] if d["id"] == example["document_id"])
+        quote = example["quote"]
+        excerpt = quote[:480] + ("…" if len(quote) > 480 else "")
+        lines.append(f"Read the passage in {document['title'] or document['id']}. “{excerpt}”")
+        voice = (example.get("attribution") or "unknown").replace("_", " ")
+        lines.append(f"Recorded attribution is {voice}. Check who is speaking and what proposition they support in the surrounding text.")
+    lines.append("A source may appear under several criteria. These counts cover only supplied decisions. Reporting unequal treatment can itself trigger a flag.")
+    return lines
+
+
 def _task_sections(snapshot: dict) -> list[tuple[str, list[str]]]:
     brief = snapshot["report_brief"]["brief"]
     if brief["profile_id"] == "company":
@@ -535,6 +570,9 @@ def _html(snapshot: dict) -> bytes:
                   f"<p><strong>Perspective:</strong> {escape(brief['brief']['perspective'])}</p>",
                   "<p>Report sections: " + escape(" · ".join(brief["sections"])) + "</p>",
                   "<p>Declared frameworks: " + escape(", ".join(brief["brief"]["lens_ids"])) + "</p>"])
+    if snapshot.get("academic_annex"):
+        parts.append("<h2>What the source evidence shows</h2>")
+        parts.extend("<p>" + escape(line) + "</p>" for line in _reading_highlights(snapshot))
     for title, paragraphs in _task_sections(snapshot):
         parts.append("<h2>" + escape(title) + "</h2>")
         parts.extend("<p>" + escape(paragraph) + "</p>" for paragraph in paragraphs)
@@ -659,6 +697,10 @@ def _pdf(snapshot: dict) -> tuple[bytes, dict]:
         stats.add(String(x + 8, 44, label, fontName=font, fontSize=6.5, fillColor=colors.HexColor("#53635e")))
         stats.add(String(x + 8, 19, f"{snapshot['counts'][key]:,}", fontName=font, fontSize=20, fillColor=colors.HexColor("#173c39")))
     story.append(stats)
+    if snapshot.get("academic_annex"):
+        paragraph("What the source evidence shows", "Heading2")
+        for line in _reading_highlights(snapshot):
+            paragraph(line)
     paragraph("Observable wording in eligible authored units", "Heading2")
     paragraph("Matched wording counts only. These are not quality ratings, bias measurements or calibrated probabilities.")
     paragraph(f"{snapshot['counts']['wording_observations']} total retained markers: {snapshot['counts']['authored_eligible_wording_observations']} eligible under the authorship heuristic; {snapshot['counts']['context_wording_observations']} contextual markers excluded from this chart.")
@@ -838,6 +880,8 @@ def _xlsx(snapshot: dict) -> bytes:
         text = _plain(value)
         provenance_rows.extend((field, offset // 32000 + 1, text[offset:offset + 32000]) for offset in range(0, max(1, len(text)), 32000))
     sheet("Run provenance", ["Field", "Part", "Value"], provenance_rows)
+    if snapshot.get("academic_annex"):
+        sheet("Reading the findings", ["Reading"], [[line] for line in _reading_highlights(snapshot)]).set_column(0, 0, 100)
     book.close()
     return buffer.getvalue()
 

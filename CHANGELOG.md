@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.1 — 2026-11-18
+
+The main dashboard now leads from a bias criterion and its distinct-source count straight to an exact passage. Each row identifies the sources with matching decisions and retains uncertainty. New guided PDF, HTML and XLSX reports explain the supplied findings before introducing wording metrics.
+
+The [60-article field study](docs/reading-muslim-coverage.md) covers two frameworks and six criteria, with a searchable article directory, six worked examples, an illustrated PDF, a complete workbook and an attributed source ZIP. The sampling rule uses article text, year and source identity before examining the original model output.
+
 ## 0.6.0 — 2026-11-17
 
 The next refinement keeps one evidence workbench while making local setup, analytical contracts and long work easier to inspect. The low-memory default targets an 8 GB host; Compose limits the application container and child workers to 4 GiB. This is a configured boundary, not a measured whole-host hardware or model-throughput claim.

@@ -27,6 +27,7 @@ import {
   X,
 } from "lucide-react";
 import { pendingUploadImport, request, uploadInParts } from "./api";
+import { BiasResults, PublishedStudy } from "./workspace/BiasResults";
 import { Analytics } from "./workspace/Analytics";
 import { Inspector } from "./workspace/Inspector";
 import { DrawerBody } from "./workspace/Drawers";
@@ -185,7 +186,7 @@ function Workspace() {
   const openSource = useCallback(
     async (
       document: SourceDocument | string,
-      finding?: Observation,
+      finding?: Observation | string,
       block?: string,
       cursor?: number,
     ) => {
@@ -193,10 +194,11 @@ function Workspace() {
       const token = ++contextRequest.current;
       setContextLoading(true);
       try {
-        const next = await contextFor(id, finding?.id, block, cursor);
+        const findingId = typeof finding === "string" ? finding : finding?.id;
+        const next = await contextFor(id, findingId, block, cursor);
         if (token !== contextRequest.current) return;
-        setContext({ ...next, finding: next.finding || finding });
-        if (queryRef.current) saveUrl(queryRef.current, id, finding?.id, true);
+        setContext({ ...next, finding: next.finding || (typeof finding === "string" ? undefined : finding) });
+        if (queryRef.current) saveUrl(queryRef.current, id, findingId, true);
       } catch (reason) {
         notify(message(reason), true);
       } finally {
@@ -1037,11 +1039,14 @@ function Workspace() {
           <div className="w-workspace-title">
             <div>
               <span className="w-eyebrow">BIAS DETECTION AS A SERVICE</span>
-              <h1>Your evidence. A clearer perspective.</h1>
+              <h1>Bias analysis workspace</h1>
             </div>
             <Badge>Research preview</Badge>
           </div>
           {error && <ErrorMessage text={error} />}
+          {query && !loading && <BiasResults key={query.query_id} query={query} lenses={lenses}
+            onEvidence={(doc, finding) => void openSource(doc, finding)} />}
+          <PublishedStudy />
           {project && <RefinementPanel project={project} runId={query?.run?.id}
             onImport={() => setDrawer("import")} onAnalyze={() => setDrawer("analyze")}
             onReports={() => setDrawer("reports")} onRefresh={refresh}
@@ -1094,24 +1099,24 @@ function Workspace() {
               detail={`${number(metrics.total_words)} words`}
             />
             <Metric
-              label="Sources with indicators"
+              label="Sources with recorded flags"
               value={unavailable ? "—" : number(metrics.indicators)}
               detail={
                 unavailable
                   ? unassessed.length
                     ? "Selected framework not assessed"
                     : "A v3 contextual run is needed"
-                  : "Distinct sources · selected rubric"
+                  : "Includes subsequently rejected readings"
               }
             />
             <Metric
-              label="Sources: reported / endorsed"
+              label="Reported / author supports"
               value={
                 unavailable
                   ? "—"
                   : `${number(metrics.reported_indicators)} / ${number(metrics.endorsed_indicators)}`
               }
-              detail="Source counts can overlap"
+              detail="Reported or hypothetical / author supports the proposition. Source counts can overlap."
             />
             <Metric
               label="Retained observations"

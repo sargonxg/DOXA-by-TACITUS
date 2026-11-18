@@ -33,6 +33,10 @@ with TestClient(create_app(os.environ["DOXA_DATA_DIR"],start_workers=False,use_s
     from doxa.resources import frontend_distribution
     assets=list((frontend_distribution()/"assets").glob("*.js"))
     assert assets and client.get("/assets/"+assets[0].name).status_code==200
+    study="/studies/muslim-coverage/"
+    assert "What the model flagged" in client.get(study+"index.html").text
+    for name, magic in (("report.pdf",b"%PDF"),("evidence.xlsx",b"PK"),("sources.zip",b"PK")):
+        assert client.get(study+name).content.startswith(magic)
     project=client.post("/api/projects",json={"name":"Installed wheel smoke"}).json()["id"]
     assert client.get("/api/projects/"+project+"/documents").status_code==200
     assert client.get("/api/v3/projects/"+project+"/report-jobs").status_code==200
