@@ -2,6 +2,14 @@
 
 These artifacts distinguish source integrity, software behavior, model coverage and interpretation quality. **No independent human gold labels, accuracy or F1 scores are supplied.** Read the `status`, `progress`, `unit_states`, model profile and source selection before comparing counts.
 
+## v0.6 refinement and release qualification
+
+The [full real-source clean-runner qualification](https://github.com/sargonxg/DOXA-by-TACITUS/actions/runs/44219117669) passed with all 5,000 sources, 204,342 retained assessments and 3,860,336 exact references preserved, plus a complete persistent XLSX and unchanged logical/object fingerprints. [Exact replay receipt](v06-evidence-replay.json) · [exact report receipt](v06-report-job-5000.json).
+
+The [constrained-container receipt](v06-low-memory-smoke.json) records real HTTP intake, recorded-source exploration and persistent reports under a 4 GiB/two-CPU bound, with networking disabled and zero OOM events. The separate [10,000-source synthetic proof](v06-scale-10000.json) covers parsing/persistence/replay/export and a 128-source lexical scheduler probe, not contextual inference throughput. [Actual measurement scope](../docs/verification-v06.md).
+
+The [12-check refinement browser receipt](v06-browser-smoke.json) and [11-check guided-report browser receipt](v06-pilot-browser-smoke.json) retain software-workflow evidence. [Method cards](v06-method-cards.json), [study protocol](v06-study-protocol.json), [functional preflight](v06-functional-preflight.json) and [context challenge proposals](v06-context-challenges.json) contain no fabricated human labels or newly measured model-quality results.
+
 ## v0.5 release qualification
 
 The [completed clean-runner workflow](https://github.com/sargonxg/DOXA-by-TACITUS/actions/runs/44168398715) restored all 5,000 sources and 204,342 retained assessments, checked 3,860,336 exact references, replayed idempotently and generated a complete persistent XLSX. Whole logical-table/object fingerprints and post-report source/model state remained unchanged. Zero new provider requests, model loads, budget reservations or spend occurred.

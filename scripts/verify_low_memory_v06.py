@@ -338,6 +338,11 @@ def execute(args):
         memory_max = int(metrics["memory_max"] or metrics["v1_memory_limit"])
         memory_peak = int(metrics["memory_peak"] or metrics["v1_memory_peak"])
         assert memory_max == MEMORY_BYTES and memory_peak < MEMORY_BYTES
+        assert info["HostConfig"]["NanoCpus"] == 2_000_000_000
+        assert info["HostConfig"]["NetworkMode"] == "none"
+        if metrics["cpu_max"]:
+            quota, period = metrics["cpu_max"].split()
+            assert quota != "max" and int(quota) == 2 * int(period)
         if metrics["memory_events"]:
             assert metrics["memory_events"].get("oom", 0) == metrics["memory_events"].get("oom_kill", 0) == 0
         else:
@@ -371,7 +376,7 @@ def execute(args):
                           "profile": readiness["profile"], "effective_execution": readiness["effective_execution"]},
             "recorded_example": {"counts": example_counts, "pdf_bytes": len(recorded_pdf), "pdf_sha256": sha(recorded_pdf)},
             "practice_sources": sources, "downloads": downloads, "metrics": metrics,
-            "storage": {"host_free_before_build_bytes": host_free_before, "minimum_host_free_during_http_smoke_bytes": minimum_free,
+            "storage": {"host_free_at_script_start_bytes": host_free_before, "minimum_host_free_during_http_smoke_bytes": minimum_free,
                         "measurement": "Filesystem free-space observations, separately from distinct-inode logical /data file sizes"},
             "elapsed_seconds": round(time.monotonic() - started, 6),
             "notes": ["Docker network mode none blocks external ingress/egress; real TCP HTTP reaches the API on container loopback through docker exec. Separate browser tests cover the workbench.",
@@ -387,6 +392,7 @@ def execute(args):
                 errors.append(type(error).__name__)
         if errors:
             raise RuntimeError("Owned-resource cleanup failed: " + ",".join(errors))
+    result["elapsed_seconds"] = round(time.monotonic() - started, 6)
     result["cleanup"] = {"own_container_removed": True, "own_volume_removed": True,
                          "network_resource_created": False, "image_retained": True,
                          "other_resources_modified": False}

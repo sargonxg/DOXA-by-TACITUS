@@ -1,0 +1,202 @@
+{
+  "schema_version": "doxa-low-memory-smoke-1",
+  "status": "pass",
+  "source": {
+    "git_head": "6a792a872b91b45c8e8792e55a160345bc150420",
+    "working_tree_fingerprint_sha256": "660e8f88069550140fdaaaafd891025de6138cf35b2c8da8725b8d00e2ba6a52",
+    "files_checked": 123,
+    "fingerprint_scope": "Runtime Python, packaged data, frontend source/assets, Docker recipes and locked Python dependencies; excludes documentation, benchmark receipts and generated caches"
+  },
+  "generated_at": "2026-11-18T01:55:02Z",
+  "scope": "Real HTTP software workflow in a 4 GiB / 2 CPU Docker container; not a physical 8 GB laptop test",
+  "physical_8gb_laptop_validated": false,
+  "interpretation_accuracy": null,
+  "fresh_inference_requests": 0,
+  "independent_human_reference_labels": false,
+  "image": {
+    "tag": "doxa:ci",
+    "id": "sha256:f94ab64c57d249c7d08399aa436c2d675a7752cad7bff5525ca1fc6057cc9dc0",
+    "bytes": 501889929
+  },
+  "build": {
+    "requested": false,
+    "ca_secret_used": false
+  },
+  "container": {
+    "memory_bytes": 4294967296,
+    "memory_swap_bytes": 4294967296,
+    "nano_cpus": 2000000000,
+    "pids_limit": 256,
+    "user": "doxa",
+    "network_mode": "none",
+    "container_loopback_http": true,
+    "host_browser_in_container_tested": false
+  },
+  "host": {
+    "platform": "Linux-7.0.0-1016-aws-x86_64-with-glibc2.43",
+    "python": "3.14.4",
+    "logical_cpus": 4,
+    "physical_memory_bytes": 16463405056
+  },
+  "verification_script_sha256": "9e7a59ecfd5ccfee66550c15cd182cfab46a22e8969be9b6fc1f4759b5efac7b",
+  "checks": [
+    "Compiled browser UI and matching API version",
+    "Actual HTTP readiness without models or downloads",
+    "Twenty real recorded sources and all four retained outcomes validated",
+    "Packaged recorded PDF downloaded and parsed",
+    "Own synthetic TXT and PDF extracted through shared intake",
+    "Four-format durable guided report completed",
+    "Every artifact downloaded with matching size/SHA256/ETag",
+    "Repeated submission retained one activity and four child jobs",
+    "No PyTorch or PyMuPDF installed; no fresh run/provider attempt/reservation/spend",
+    "Cgroup memory peak below 4 GiB and zero OOM events"
+  ],
+  "readiness": {
+    "version": "0.6.0",
+    "frontend_version": "0.6.0",
+    "profile": {
+      "name": "low-memory",
+      "target_host_memory_mib": 8192,
+      "application_budget_mib": 4096,
+      "parser_memory_mib": 1536,
+      "parser_slots": 1,
+      "heavy_job_slots": 1,
+      "cpu_threads": 2,
+      "cpu_batch_size": 2,
+      "automatic_downloads": false,
+      "automatic_cloud_fallback": false,
+      "large_model_required": false,
+      "memory_boundary": "Docker limits the application process tree; native budgets require operator enforcement; separate model servers are outside this budget."
+    },
+    "effective_execution": {
+      "parser_memory_mib": 1536,
+      "parser_slots": 1,
+      "heavy_job_slots": 1,
+      "cpu_threads": 2,
+      "cpu_batch_size": 2,
+      "operator_overrides": [],
+      "profile_defaults_retained": true
+    }
+  },
+  "recorded_example": {
+    "counts": {
+      "documents": 20,
+      "assessments": 645,
+      "exact_references": 11280,
+      "outcomes": {
+        "meets_criterion": 112,
+        "does_not_meet": 359,
+        "uncertain": 2,
+        "not_applicable": 172
+      },
+      "unit_states": {
+        "accepted": 33,
+        "partial": 1
+      }
+    },
+    "pdf_bytes": 52169,
+    "pdf_sha256": "425edc98b6ef4bb09dda566abf8bcce125b5ceb26d3abc1fea3f3e6c98d7c2ea"
+  },
+  "practice_sources": [
+    {
+      "id": "e75f5e67480077f2aae1688285d77194",
+      "filename": "practice.txt",
+      "sha256": "d64fc109ee1abbf2d78856cc8e07a724ddefe2e8013dd0b5c9c10a56585aaf32",
+      "extractor": "utf-text",
+      "word_count": 17
+    },
+    {
+      "id": "41f86ab24e4d400c660844fc5cc47302",
+      "filename": "practice.pdf",
+      "sha256": "091ae9c921ef4292881337c2e7938770e5cf55cbde3bd8d934063571ce68deec",
+      "extractor": "pdfminer-six",
+      "word_count": 19
+    }
+  ],
+  "downloads": [
+    {
+      "format": "pdf",
+      "bytes": 37745,
+      "sha256": "823ead3ab7288bafc52af4edfeff298e082395bf9bbb1e7e4f20084891478694"
+    },
+    {
+      "format": "html",
+      "bytes": 17935,
+      "sha256": "d309cc1ae06e57b46599b529c3820d24ff49495cb915564cfba6503728894393"
+    },
+    {
+      "format": "xlsx",
+      "bytes": 20063,
+      "sha256": "eb0d45834bdb0891f99626c388986d95928028c1f03e187c4824cbac333f0094"
+    },
+    {
+      "format": "json",
+      "bytes": 27325,
+      "sha256": "f4a46056930ea27add738d90785fab74ed717dec8ea6f4570ef2ec433b52ca31"
+    }
+  ],
+  "metrics": {
+    "memory_max": "4294967296",
+    "memory_peak": "136634368",
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0,
+      "sock_throttled": 0
+    },
+    "cpu_max": "200000 100000",
+    "cpu_stat": {
+      "usage_usec": 10951537,
+      "user_usec": 10247472,
+      "system_usec": 704064,
+      "nice_usec": 0,
+      "core_sched.force_idle_usec": 0,
+      "nr_periods": 103,
+      "nr_throttled": 3,
+      "throttled_usec": 224839,
+      "nr_bursts": 0,
+      "burst_usec": 0
+    },
+    "v1_memory_limit": null,
+    "v1_memory_peak": null,
+    "v1_memory_failcnt": null,
+    "torch_installed": false,
+    "pymupdf_installed": false,
+    "data_logical_file_bytes_distinct_inodes": 4299224,
+    "data_filesystem_free_bytes": 92861091840,
+    "database_counts": {
+      "runs": 0,
+      "v3_assessments": 0,
+      "request_attempt_events": 0,
+      "budget_reservations": 0,
+      "report_jobs": 4,
+      "activity_jobs": 1
+    },
+    "inference_spent_usd": 0,
+    "inference_reserved_usd": 0,
+    "container_python": "3.12.16",
+    "container_platform": "Linux-7.0.0-1016-aws-x86_64-with-glibc2.36"
+  },
+  "storage": {
+    "host_free_before_build_bytes": 92865765376,
+    "minimum_host_free_during_http_smoke_bytes": 92861292544,
+    "measurement": "Filesystem free-space observations, separately from distinct-inode logical /data file sizes"
+  },
+  "elapsed_seconds": 10.481987,
+  "notes": [
+    "Docker network mode none blocks external ingress/egress; real TCP HTTP reaches the API on container loopback through docker exec. Separate browser tests cover the workbench.",
+    "Real-source examples contain historical model output, not new inference or independent human labels.",
+    "Practice report uses fictional inputs and wording observations; it does not validate bias judgments.",
+    "No OCR, local contextual model, GPU or full-corpus workload is qualified by this small smoke test."
+  ],
+  "cleanup": {
+    "own_container_removed": true,
+    "own_volume_removed": true,
+    "network_resource_created": false,
+    "image_retained": true,
+    "other_resources_modified": false
+  }
+}
