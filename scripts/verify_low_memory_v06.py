@@ -9,6 +9,7 @@ workspace, volume or container can be selected. Model weights are not installed.
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 from io import BytesIO
 import json
@@ -65,12 +66,25 @@ def inspect_resource(kind, identity):
     return result[0]
 
 
-def request(base, path, *, body=None, headers=None, timeout=30):
+def request(base, path, *, body=None, headers=None, timeout=30, method=None):
     headers = dict(headers or {})
     if isinstance(body, dict):
         body = json.dumps(body).encode()
         headers["Content-Type"] = "application/json"
-    with HTTP.open(Request(base + path, data=body, headers=headers), timeout=timeout) as response:
+    if base.startswith("docker://"):
+        container = base.removeprefix("docker://")
+        payload = json.dumps({"path": path, "body": base64.b64encode(body).decode() if body is not None else None,
+                              "headers": headers, "method": method, "timeout": timeout}).encode()
+        output = subprocess.run(["docker", "exec", "--interactive", container, "python", "-c", DOCKER_HTTP_CODE],
+                                cwd=ROOT, input=payload, capture_output=True, check=True, timeout=max(15, timeout + 5))
+        value = json.loads(output.stdout)
+        if value.get("connection_unavailable"):
+            raise URLError("Container HTTP server is not ready")
+        raw = base64.b64decode(value["body"], validate=True)
+        if value["status"] >= 400:
+            raise RuntimeError(f"HTTP {value['status']} from {path}: " + raw[:800].decode(errors="replace"))
+        return value["status"], value["headers"], raw
+    with HTTP.open(Request(base + path, data=body, headers=headers, method=method), timeout=timeout) as response:
         raw = response.read(24 * 1024 * 1024 + 1)
         if len(raw) > 24 * 1024 * 1024:
             raise AssertionError("Verification HTTP response exceeded its bound")
@@ -120,6 +134,24 @@ def pdf_pages(container, raw):
         "import sys; from io import BytesIO; from pypdf import PdfReader; print(len(PdfReader(BytesIO(sys.stdin.buffer.read())).pages))"],
         cwd=ROOT, input=raw, capture_output=True, check=True, timeout=30)
     return int(result.stdout)
+
+
+DOCKER_HTTP_CODE = r'''
+import base64,json,sys
+from urllib.error import HTTPError,URLError
+from urllib.request import Request,ProxyHandler,build_opener
+value=json.load(sys.stdin)
+body=base64.b64decode(value["body"],validate=True) if value["body"] is not None else None
+request=Request("http://127.0.0.1:8000"+value["path"],data=body,headers=value["headers"],method=value["method"])
+try:
+ try: response=build_opener(ProxyHandler({})).open(request,timeout=value["timeout"])
+ except HTTPError as error: response=error
+ with response:
+  raw=response.read(24*1024*1024+1)
+  if len(raw)>24*1024*1024: raise RuntimeError("Bounded verification response exceeded24MiB")
+  print(json.dumps({"status":response.status,"headers":{k.lower():v for k,v in response.headers.items()},"body":base64.b64encode(raw).decode()}))
+except (URLError,OSError): print(json.dumps({"connection_unavailable":True}))
+'''
 
 
 METRICS_CODE = r'''
@@ -209,21 +241,18 @@ def execute(args):
         image = inspect_resource("image", args.image)
         if source_identity()["working_tree_fingerprint_sha256"] != source["working_tree_fingerprint_sha256"]:
             raise RuntimeError("Runtime source changed during the image build; rerun against a frozen tree")
-        run("docker", "network", "create", "--internal", "--label", f"{LABEL}={nonce}", prefix)
-        created.append(("network", prefix))
         run("docker", "volume", "create", "--label", f"{LABEL}={nonce}", prefix)
         created.append(("volume", prefix))
         # Record ownership before starting: even a failed docker run may leave
         # a labelled stopped container that must be cleaned up.
         created.append(("container", prefix))
         container = run("docker", "run", "--detach", "--name", prefix, "--label", f"{LABEL}={nonce}",
-            "--network", prefix, "--memory", "4g", "--memory-swap", "4g", "--cpus", "2", "--pids-limit", "256",
-            "--publish", "127.0.0.1::8000", "--volume", prefix + ":/data",
+            "--network", "none", "--memory", "4g", "--memory-swap", "4g", "--cpus", "2", "--pids-limit", "256",
+            "--volume", prefix + ":/data",
             "--env", "DOXA_LOCAL_PROFILE=low-memory", "--env", "DOXA_ENABLE_OCR=0",
             "--env", "DOXA_REQUIRE_ACCEPTED_QUOTE=false", "--env", "DOXA_AUTOMATIC_RETENTION=false",
             "--env", "HF_HUB_OFFLINE=1", "--env", "TRANSFORMERS_OFFLINE=1", "--env", "PYTHON_DOTENV_DISABLED=1", args.image)
-        endpoint = run("docker", "port", container, "8000/tcp").splitlines()[0]
-        base = "http://" + endpoint
+        base = "docker://" + container
         print(json.dumps({"stage": "http_smoke", "memory_bytes": MEMORY_BYTES, "cpus": 2}), flush=True)
         for _attempt in range(120):
             try:
@@ -268,11 +297,9 @@ def execute(args):
         _status, brief = json_request(base, f"/api/pilot/projects/{project_id}/brief",
             body=None)
         # The explicit PUT retains the same API used by the browser.
-        body = json.dumps({"profile_id": "personal", "expected_revision": brief["revision"]}).encode()
-        req = Request(base + f"/api/pilot/projects/{project_id}/brief", data=body,
-                      headers={"Content-Type": "application/json"}, method="PUT")
-        with HTTP.open(req, timeout=30) as response:
-            assert response.status == 200
+        status, _brief = json_request(base, f"/api/pilot/projects/{project_id}/brief", method="PUT",
+            body={"profile_id": "personal", "expected_revision": brief["revision"]})
+        assert status == 200
         body = {"kind": "guided_report", "document_ids": [doc["id"] for doc in documents],
                 "formats": ["pdf", "html", "xlsx", "json"], "expert_commentary": [], "review_ack": False}
         headers = {"Idempotency-Key": nonce}
@@ -330,7 +357,8 @@ def execute(args):
             "image": {"tag": args.image, "id": image["Id"], "bytes": image["Size"]}, "build": build,
             "container": {"memory_bytes": info["HostConfig"]["Memory"], "memory_swap_bytes": info["HostConfig"]["MemorySwap"],
                           "nano_cpus": info["HostConfig"]["NanoCpus"], "pids_limit": info["HostConfig"]["PidsLimit"],
-                          "user": info["Config"]["User"], "internal_network": True, "host_loopback_http": True},
+                          "user": info["Config"]["User"], "network_mode": info["HostConfig"]["NetworkMode"],
+                          "container_loopback_http": True, "host_browser_in_container_tested": False},
             "host": {"platform": platform.platform(), "python": platform.python_version(), "logical_cpus": os.cpu_count(),
                      "physical_memory_bytes": os.sysconf("SC_PAGE_SIZE") * os.sysconf("SC_PHYS_PAGES")},
             "verification_script_sha256": sha(Path(__file__).read_bytes()),
@@ -346,7 +374,7 @@ def execute(args):
             "storage": {"host_free_before_build_bytes": host_free_before, "minimum_host_free_during_http_smoke_bytes": minimum_free,
                         "measurement": "Filesystem free-space observations, separately from distinct-inode logical /data file sizes"},
             "elapsed_seconds": round(time.monotonic() - started, 6),
-            "notes": ["Network is isolated from external egress; the browser/API is reached through its loopback published port.",
+            "notes": ["Docker network mode none blocks external ingress/egress; real TCP HTTP reaches the API on container loopback through docker exec. Separate browser tests cover the workbench.",
                       "Real-source examples contain historical model output, not new inference or independent human labels.",
                       "Practice report uses fictional inputs and wording observations; it does not validate bias judgments.",
                       "No OCR, local contextual model, GPU or full-corpus workload is qualified by this small smoke test."]}
@@ -360,7 +388,7 @@ def execute(args):
         if errors:
             raise RuntimeError("Owned-resource cleanup failed: " + ",".join(errors))
     result["cleanup"] = {"own_container_removed": True, "own_volume_removed": True,
-                         "own_network_removed": True, "image_retained": True,
+                         "network_resource_created": False, "image_retained": True,
                          "other_resources_modified": False}
     receipt.parent.mkdir(parents=True, exist_ok=True)
     temporary = receipt.with_name(receipt.name + ".tmp")
@@ -387,7 +415,7 @@ def main():
         print(json.dumps(source_identity(), indent=2))
     elif not args.execute:
         print(json.dumps({"status": "not_executed", "image": args.image, "memory_bytes": MEMORY_BYTES,
-                          "cpus": 2, "network": "disposable internal bridge; no external egress",
+                          "cpus": 2, "network": "none; actual HTTP through container loopback via docker exec",
                           "scope": "Small HTTP software smoke; no model inference or physical 8 GB laptop qualification"}, indent=2))
     else:
         execute(args)
