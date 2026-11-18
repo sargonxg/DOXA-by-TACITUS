@@ -252,6 +252,15 @@ class AccessControl:
 # Every API route has an explicit permission. New routes are unavailable in
 # managed mode until reviewed; a general /projects/* wildcard would be unsafe.
 READ = {
+    "/api/system/recorded-example", "/api/system/recorded-example/artifacts/{format}",
+    "/api/v3/projects/{project_id}/alert-review-campaigns",
+    "/api/v3/projects/{project_id}/alert-review-campaigns/{campaign_id}",
+    "/api/system/readiness", "/api/system/starter-pack", "/api/v3/method-cards",
+    "/api/v3/method-cards/{lens_id}/{criterion_id}", "/api/v3/study-protocol",
+    "/api/v3/projects/{project_id}/activity", "/api/v3/projects/{project_id}/jobs", "/api/v3/jobs/{job_id}",
+    "/api/v3/projects/{project_id}/comparisons", "/api/v3/projects/{project_id}/comparisons/{comparison_id}",
+    "/api/v3/projects/{project_id}/evaluations/{evaluation_id}/readiness",
+    "/api/pilot/projects/{project_id}/quotes", "/api/pilot/projects/{project_id}/usage",
     "/api/lenses", "/api/projects", "/api/projects/{project_id}/documents",
     "/api/documents/{document_id}", "/api/documents/{document_id}/extraction",
     "/api/projects/{project_id}/runs", "/api/runs/{run_id}",
@@ -282,11 +291,15 @@ EXPORT = {
     "/api/pilot/projects/{project_id}/reports/{report_id}/artifacts/{format}",
 }
 POST_READ = {
+    # Each activity endpoint checks the kind's current write/analyze/export
+    # permission inside its manager; the shared envelope alone grants no work.
+    "/api/v3/projects/{project_id}/jobs", "/api/v3/jobs/{job_id}/cancel", "/api/v3/jobs/{job_id}/restart",
     "/api/v3/projects/{project_id}/query", "/api/v3/projects/{project_id}/semantic-search",
     "/api/v3/projects/{project_id}/preflight", "/api/pilot/projects/{project_id}/estimate",
     "/api/pilot/projects/{project_id}/privacy-preview",
 }
 WRITE = {
+    "/api/v3/projects/{project_id}/jobs/import-archive",
     "/api/documents/{document_id}", "/api/documents/{document_id}/re-extract",
     "/api/projects/{project_id}/metadata/import", "/api/projects/{project_id}/upload",
     "/api/projects/{project_id}/uploads/init", "/api/uploads/{upload_id}/parts/{part_number}",
@@ -297,12 +310,18 @@ WRITE = {
     "/api/pilot/projects/{project_id}/drafts",
 }
 ANALYZE = {
+    "/api/v3/projects/{project_id}/alert-review-campaigns/{campaign_id}/snapshots",
+    "/api/v3/projects/{project_id}/comparisons",
     "/api/projects/{project_id}/runs", "/api/runs/{run_id}/cancel", "/api/runs/{run_id}/resume",
     "/api/v3/projects/{project_id}/runs", "/api/v3/projects/{project_id}/verification",
     "/api/v3/projects/{project_id}/semantic-index", "/api/v3/projects/{project_id}/rubric-score",
     "/api/pilot/projects/{project_id}/signals", "/api/pilot/projects/{project_id}/privacy/transforms",
 }
 REVIEW = {
+    "/api/v3/projects/{project_id}/alert-review-campaigns",
+    "/api/v3/projects/{project_id}/alert-review-campaigns/{campaign_id}/reviews",
+    "/api/v3/projects/{project_id}/evaluation-panels",
+    "/api/v3/projects/{project_id}/evaluations/{evaluation_id}/preregistration",
     "/api/findings/{finding_id}/review", "/api/v3/findings/{finding_id}/review",
     "/api/v3/projects/{project_id}/casebooks", "/api/v3/casebooks/{identity}",
     "/api/v3/casebooks/{identity}/cases", "/api/v3/casebooks/{identity}/cases/{case_id}",
@@ -318,6 +337,8 @@ REPORT_WRITE = {
     "/api/pilot/projects/{project_id}/reports",
 }
 ADMIN = {
+    "/api/pilot/projects/{project_id}/quotes/{quote_id}/revoke",
+    "/api/pilot/projects/{project_id}/quotes", "/api/pilot/projects/{project_id}/quotes/{quote_id}/accept",
     "/api/settings", "/api/providers/health", "/api/v3/models/health",
     "/api/v3/projects/{project_id}/learning/examples", "/api/v3/projects/{project_id}/learning/snapshots",
     "/api/v3/projects/{project_id}/learning/candidates",
@@ -378,6 +399,8 @@ def permission_for(path: str, method: str) -> str | None:
 def resolve_project(store, path: str, params: dict, *, strict: bool = True) -> str | None:
     project_id = params.get("project_id")
     resources = {
+        "campaign_id": ("v06_alert_campaigns", "id"),
+        "comparison_id": ("matched_comparisons", "id"), "quote_id": ("pilot_quotes", "id"),
         "document_id": ("documents", "id"), "run_id": ("runs", "id"),
         "query_id": ("v3_query_snapshots", "id"), "job_id": ("report_jobs", "id"),
         "upload_id": ("upload_sessions", "id"), "report_id": ("reports", "id"),
@@ -388,6 +411,8 @@ def resolve_project(store, path: str, params: dict, *, strict: bool = True) -> s
     }
     if "identity" in params and "/casebooks/" in path:
         resources["identity"] = ("v4_casebooks", "id")
+    if "job_id" in params and path.startswith("/api/v3/jobs/"):
+        resources["job_id"] = ("activity_jobs", "id")
     if "report_id" in params and path.startswith("/api/pilot/"):
         resources["report_id"] = ("pilot_reports", "id")
     if "finding_id" in params:

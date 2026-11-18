@@ -1,0 +1,13 @@
+# Copy outside the source checkout and supply real, verified image digests.
+# No secret values belong in Terraform variables or state.
+project_id            = "your-existing-project"
+customer_id           = "pilot-opaque-001"
+domain                = "pilot-opaque-001.doxa.example.com"
+workspace_kind        = "organization"
+access_secret_id      = "doxa-pilot-001-access"
+environment_secret_id = "doxa-pilot-001-environment"
+pricing_secret_id     = "doxa-pilot-001-pricing"
+app_image             = "us-central1-docker.pkg.dev/your-existing-project/doxa/app@sha256:REPLACE_WITH_REAL_DIGEST"
+caddy_image           = "caddy@sha256:REPLACE_WITH_REAL_DIGEST"
+# Set true only for a verified FIRST empty installation. Turn false afterwards.
+initialize_empty_workspace = false

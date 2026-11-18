@@ -33,6 +33,12 @@ export function PilotReportPanel({
   currentProject.current = project;
   const [formats, setFormats] = useState(["pdf", "html", "xlsx", "json"]);
   const [reports, setReports] = useState<Item[]>([]);
+  const [isOpen, setIsOpen] = useState(false);
+  const [quotes, setQuotes] = useState<Item[]>([]);
+  const [quoteId, setQuoteId] = useState("");
+  const [quoteRequired, setQuoteRequired] = useState(false);
+  const hasPending = useRef(false);
+  const submission = useRef<{ body: string; key: string } | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [note, setNote] = useState("");
@@ -48,9 +54,22 @@ export function PilotReportPanel({
   const block = context?.blocks.find((item) => item.id === blockId);
   useEffect(() => {
     setReports([]);
+    setQuotes([]);
+    setQuoteId("");
+    setQuoteRequired(false);
     setError("");
     setBusy(false);
+    hasPending.current = false;
+    submission.current = null;
   }, [project]);
+  useEffect(() => {
+    if (!isOpen) return;
+    void loadHistory();
+    const timer = window.setInterval(() => {
+      if (hasPending.current) void loadHistory();
+    }, 1500);
+    return () => window.clearInterval(timer);
+  }, [project, isOpen]);
   useEffect(() => {
     setIncludeDecisions(false);
   }, [project, runId, briefRevision]);
@@ -63,8 +82,42 @@ export function PilotReportPanel({
   }, [context?.document.id]);
   async function loadHistory() {
     try {
-      const value = await request<Item[]>(`/pilot/projects/${project}/reports`);
-      if (currentProject.current === project) setReports(value);
+      const [previous, activities, offers] = await Promise.all([
+        request<Item[]>(`/pilot/projects/${project}/reports`),
+        request<Item>(`/v3/projects/${project}/jobs`),
+        request<Item>(`/pilot/projects/${project}/quotes`),
+      ]);
+      const queued = list<Item>(activities.items)
+        .filter((job) => job.kind === "guided_report")
+        .map((job) => ({
+          ...((job.summary || {}) as Item),
+          ...((job.result || {}) as Item),
+          id: job.id,
+          created_at: job.created_at,
+          activity_job_id: job.id,
+          activity_status: job.status,
+          progress: job.progress,
+          error: job.error,
+          can_restart: job.can_restart,
+        }));
+      if (currentProject.current === project) {
+        setQuotes(list<Item>(offers.quotes).filter((quote) => quote.status === "accepted"));
+        setQuoteRequired(offers.quote_required === true);
+        hasPending.current = queued.some((job) =>
+          ["queued", "running"].includes(String(job.activity_status)),
+        );
+        setReports([...queued, ...previous].sort((a, b) =>
+          String(b.created_at).localeCompare(String(a.created_at)),
+        ));
+      }
+    } catch (reason) {
+      if (currentProject.current === project) setError(message(reason));
+    }
+  }
+  async function controlJob(identity: string, action: "cancel" | "restart") {
+    try {
+      await request(`/v3/jobs/${encodeURIComponent(identity)}/${action}`, { method: "POST" });
+      await loadHistory();
     } catch (reason) {
       if (currentProject.current === project) setError(message(reason));
     }
@@ -99,21 +152,24 @@ export function PilotReportPanel({
     }
     setBusy(true);
     try {
-      const value = await request<Item>(`/pilot/projects/${project}/reports`, {
-        method: "POST",
-        body: JSON.stringify({
-          document_ids: documentIds,
-          formats,
-          ...(includeDecisions && runId ? { run_id: runId } : {}),
-          expert_commentary: commentary,
-          review_ack: comment && reviewAck,
-        }),
+      const body = JSON.stringify({
+        kind: "guided_report",
+        document_ids: documentIds,
+        formats,
+        ...(includeDecisions && runId ? { run_id: runId } : {}),
+        expert_commentary: commentary,
+        review_ack: comment && reviewAck,
+        ...(quoteId ? { quote_id: quoteId } : {}),
       });
-      if (currentProject.current === project)
-        setReports((previous) => [
-          value,
-          ...previous.filter((item) => item.id !== value.id),
-        ]);
+      if (submission.current?.body !== body)
+        submission.current = { body, key: crypto.randomUUID() };
+      await request<Item>(`/v3/projects/${project}/jobs`, {
+        method: "POST",
+        headers: { "Idempotency-Key": submission.current.key },
+        body,
+      });
+      submission.current = null;
+      await loadHistory();
     } catch (reason) {
       if (currentProject.current === project) setError(message(reason));
     } finally {
@@ -124,7 +180,7 @@ export function PilotReportPanel({
     <details
       className="w-pilot-details w-pilot-service-report"
       onToggle={(event) => {
-        if (event.currentTarget.open && !reports.length) void loadHistory();
+        setIsOpen(event.currentTarget.open);
       }}
     >
       <summary>
@@ -134,7 +190,9 @@ export function PilotReportPanel({
         A task-specific briefing for the first {number(documentIds.length)}{" "}
         sources in this query. It combines the saved brief, actual wording cues
         and optional evidence-linked commentary. Saved contextual decisions are
-        included only when explicitly selected below. It starts as provisional.
+        included only when explicitly selected below. Inputs are frozen when
+        submitted; rendering continues after refresh or browser closure. It
+        starts as provisional.
       </p>
       <label className="w-pilot-check">
         <input
@@ -156,6 +214,23 @@ export function PilotReportPanel({
         Maximum 100 sources, 500,000 extracted characters, 2,000 blocks and
         2,000 saved decisions. For a full corpus, use the persistent evidence
         report jobs.
+      </p>
+      <label>
+        Accepted service quote{quoteRequired ? " · required" : " · optional locally"}
+        <select aria-label="Accepted service quote" value={quoteId}
+          disabled={busy} onChange={(event) => setQuoteId(event.target.value)}>
+          <option value="">{quoteRequired ? "Choose an accepted quote" : "Local research without a service quote"}</option>
+          {quotes.map((quote) => (
+            <option key={String(quote.id)} value={String(quote.id)}>
+              {String(quote.profile_id).toUpperCase()} · USD {(Number(quote.fixed_price_cents) / 100).toFixed(2)} · {String(quote.id).slice(0, 8)}
+            </option>
+          ))}
+        </select>
+      </label>
+      <p>
+        Only explicitly accepted operator-issued quotes appear here. Selecting a
+        quote does not accept its terms or record payment. The server checks the
+        saved profile and source scope again before rendering and publication.
       </p>
       <fieldset className="w-pilot-destinations">
         <legend>Download formats</legend>
@@ -298,11 +373,12 @@ export function PilotReportPanel({
             !briefRevision ||
             !documentIds.length ||
             documentIds.length > 100 ||
-            !formats.length
+            !formats.length ||
+            (quoteRequired && !quoteId)
           }
           onClick={() => void generate()}
         >
-          {busy ? "Building guided report…" : "Generate guided report"}
+          {busy ? "Saving report request…" : "Generate guided report"}
         </Button>
         <Button
           variant="quiet"
@@ -335,9 +411,11 @@ export function PilotReportPanel({
                 {date(String(report.created_at || ""))}
               </strong>
               <Badge tone="amber">
-                {report.review_status === "operator_signed"
-                  ? "Operator commentary signed"
-                  : "Provisional report"}
+                {report.activity_status && report.activity_status !== "completed"
+                  ? `Report ${String(report.activity_status).replaceAll("_", " ")}`
+                  : report.review_status === "operator_signed"
+                    ? "Operator commentary signed"
+                    : "Provisional report"}
               </Badge>
             </header>
             <p>
@@ -345,12 +423,27 @@ export function PilotReportPanel({
               {number(list(report.source_ids).length)} frozen sources ·
               independent interpretation validation pending.
             </p>
+            {Boolean(report.activity_status) && report.activity_status !== "completed" && (
+              <div role="status">
+                <p>{String((report.progress as Item | undefined)?.message || "Report request is saved.")}</p>
+                {Boolean(report.error) && <p role="alert">{String((report.error as Item).message || "Report needs attention")}</p>}
+                <div className="w-pilot-actions">
+                  {["queued", "running"].includes(String(report.activity_status)) && permits(access, "export") && (
+                    <Button variant="quiet" onClick={() => void controlJob(String(report.activity_job_id), "cancel")}>Cancel report</Button>
+                  )}
+                  {Boolean(report.can_restart) && exportsAllowed && permits(access, "export") && (
+                    <Button variant="quiet" onClick={() => void controlJob(String(report.activity_job_id), "restart")}>Restart frozen report</Button>
+                  )}
+                </div>
+              </div>
+            )}
             <div className="w-pilot-artifact-links">
               {list<Item>(report.artifacts).map((artifact) => {
                 const url = String(artifact.download_url || "");
                 return exportsAllowed &&
                   permits(access, "export") &&
-                  url.startsWith(`/api/pilot/projects/${project}/reports/`) ? (
+                  (url.startsWith(`/api/pilot/projects/${project}/reports/`) ||
+                    /^\/api\/v3\/report-jobs\/[a-f0-9]{32}\/artifacts\/(pdf|html|xlsx|json)$/.test(url)) ? (
                   <a key={String(artifact.format)} href={url} download>
                     <ArrowDownToLine size={13} />
                     <span>

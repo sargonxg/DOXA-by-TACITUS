@@ -6,7 +6,7 @@ import json
 import zipfile
 from xml.etree import ElementTree
 
-import fitz
+from doxa.pdf_tools import open_pdf
 import pytest
 
 from doxa.lenses import get_lens
@@ -53,7 +53,7 @@ def test_every_package_builds_real_formats_with_integrity_and_pending_validation
     assert result["manifest"]["counts"]["documents"] == 1
     assert result["manifest"]["source_records"][0]["source_sha256"] == "a" * 64
     if format == "pdf":
-        with fitz.open(stream=result["content"], filetype="pdf") as pdf:
+        with open_pdf(stream=result["content"], filetype="pdf") as pdf:
             text = "".join(page.get_text() for page in pdf)
             assert "DOXA" in text and "REFERENCE LABELS PENDING" in text
             assert "José" in text and "Μαρία" in text
@@ -253,7 +253,7 @@ def test_actual_run_provenance_roundtrips_without_reconstructing_unknown_revisio
         if format == "html":
             text = rendered["content"].decode()
         else:
-            with fitz.open(stream=rendered["content"], filetype="pdf") as pdf:
+            with open_pdf(stream=rendered["content"], filetype="pdf") as pdf:
                 text = "\n".join(page.get_text() for page in pdf)
         assert "actual-run-1" in text and "recorded-model" in text
         assert "Model revision: not recorded" in text

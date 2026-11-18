@@ -9,6 +9,7 @@ from __future__ import annotations
 from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone
 import hashlib
+import hmac
 import json
 import os
 from pathlib import Path
@@ -76,6 +77,19 @@ class ProjectErasingError(ValueError):
 
 def _json(value):
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False)
+
+
+def _erasure_key_digest(value):
+    return "erasure-key-sha256:" + hashlib.sha256(value.encode()).hexdigest()
+
+
+def matches_erasure_key(stored, supplied):
+    """Keep idempotent retries after dropping a completed request's raw key."""
+    if not isinstance(stored, str) or not isinstance(supplied, str):
+        return False
+    if hmac.compare_digest(stored.encode(), supplied.encode()):
+        return True
+    return bool(re.fullmatch(r"erasure-key-sha256:[0-9a-f]{64}", stored)) and hmac.compare_digest(stored.encode(), _erasure_key_digest(supplied).encode())
 
 
 def ensure_schema(store):
@@ -188,12 +202,17 @@ def get_policy(store, project_id):
     _project(store, project_id)
     row = store.one("SELECT * FROM privacy_policies WHERE project_id=?", [project_id])
     policy = json.loads(_json(DEFAULT_POLICY)) if row is None else json.loads(row["policy_json"])
+    from .retention import automatic_retention_enabled
+    automatic = automatic_retention_enabled()
     return {"project_id": project_id, "revision": row["revision"] if row else 0,
             "policy": policy, "policy_configured": row is not None,
             "updated_at": row["updated_at"] if row else None,
-            "enforcement": {"native_only": True, "automatic_retention": False,
+            "enforcement": {"native_only": True, "automatic_retention": automatic,
                 "backup_erasure": "operator_managed", "hardware_secure_wipe": False,
-                "notice": "Saved policies require destination/export checks at execution. Retention due dates are review candidates; no timer silently erases a project."}}
+                "retention_scope": "whole_project_at_earliest_raw_or_derived_deadline",
+                "retention_anchor": "policy_updated_at",
+                "notice": ("Automatic retention is explicitly enabled for this installation. Projects opting into retention are erased at the earliest raw/derived deadline measured from the last saved policy; backup/provider expiry remains separate."
+                           if automatic else "Saved policies require destination/export checks at execution. Retention due dates are review candidates; no timer silently erases a project.")}}
 
 
 def set_policy(store, project_id, payload, actor_id, *, expected_revision=None):
@@ -256,11 +275,36 @@ def retention_due(store, *, now=None):
         if policy.get("retention_enabled"):
             due = datetime.fromisoformat(row["updated_at"]) + timedelta(days=min(policy["raw_retention_days"], policy["derived_retention_days"]))
             if due <= now:
-                result.append({"project_id": row["project_id"], "due_at": due.isoformat(), "automatic_erasure": False})
+                from .retention import automatic_retention_enabled
+                result.append({"project_id": row["project_id"], "due_at": due.isoformat(), "automatic_erasure": automatic_retention_enabled()})
     return result
 
 
 def create_erase_job(store, project_id, actor_id, idempotency_key):
+    """Persist an external recovery obligation before committing a new barrier."""
+    ensure_schema(store)
+    if not isinstance(actor_id, str) or not 1 <= len(actor_id) <= 240:
+        raise ValueError("An identified erasure actor is required")
+    if not isinstance(idempotency_key, str) or not 8 <= len(idempotency_key) <= 128:
+        raise ValueError("An 8–128 character erasure idempotency key is required")
+    previous = store.one("SELECT * FROM privacy_erase_jobs WHERE project_id=? ORDER BY created_at LIMIT 1", [project_id])
+    if previous and not matches_erasure_key(previous["idempotency_key"], idempotency_key):
+        raise ProjectErasingError("This project already has an erasure request")
+    if not previous:
+        _project(store, project_id)
+    # Keep the external-ledger lock ahead of SQLite's writer lock. The ledger
+    # itself checkpoints its sequence to SQLite; reversing this order can
+    # deadlock separate application processes.
+    from .retention import ensure_deletion_request, record_deletion_request
+    if previous:
+        ensure_deletion_request(store, previous)
+    else:
+        record_deletion_request(store, project_id, idempotency_key)
+    return _create_erase_job(store, project_id, actor_id, idempotency_key)
+
+
+def _create_erase_job(store, project_id, actor_id, idempotency_key):
+    """Internal database step; restore replay already has its signed obligation."""
     ensure_schema(store)
     if not isinstance(actor_id, str) or not 1 <= len(actor_id) <= 240:
         raise ValueError("An identified erasure actor is required")
@@ -269,7 +313,7 @@ def create_erase_job(store, project_id, actor_id, idempotency_key):
     with store.transaction(write=True):
         previous = store.one("SELECT id,idempotency_key FROM privacy_erase_jobs WHERE project_id=? ORDER BY created_at LIMIT 1", [project_id])
         if previous:
-            if previous["idempotency_key"] != idempotency_key:
+            if not matches_erasure_key(previous["idempotency_key"], idempotency_key):
                 raise ProjectErasingError("This project already has an erasure request")
             return get_erase_job(store, previous["id"])
         _project(store, project_id)
@@ -279,6 +323,8 @@ def create_erase_job(store, project_id, actor_id, idempotency_key):
         store.execute("UPDATE runs SET cancel_requested=1,status=CASE WHEN status IN ('queued','creating','importing') THEN 'cancelled' ELSE status END WHERE project_id=?", [project_id])
         if _table_exists(store, "report_jobs"):
             store.execute("UPDATE report_jobs SET cancel_requested=1,status=CASE WHEN status='queued' THEN 'cancelled' ELSE status END WHERE project_id=?", [project_id])
+        if _table_exists(store, "activity_jobs"):
+            store.execute("UPDATE activity_jobs SET cancel_requested=1,status=CASE WHEN status IN ('queued','paused_access') THEN 'cancelled' ELSE status END WHERE project_id=?", [project_id])
         if _table_exists(store, "upload_sessions"):
             store.execute("UPDATE upload_sessions SET status='aborted' WHERE project_id=? AND status='pending'", [project_id])
     return get_erase_job(store, identity)
@@ -386,6 +432,8 @@ def _waiting(store, project_id):
         active.append("analysis_lease")
     if _table_exists(store, "report_jobs") and store.one("SELECT id FROM report_jobs WHERE project_id=? AND status='running' AND COALESCE(lease_until,0)>? LIMIT 1", [project_id, now]):
         active.append("report_lease")
+    if _table_exists(store, "activity_jobs") and store.one("SELECT id FROM activity_jobs WHERE project_id=? AND status='running' AND COALESCE(lease_until,0)>? LIMIT 1", [project_id, now]):
+        active.append("activity_job_lease")
     if _table_exists(store, "upload_sessions") and store.one("SELECT id FROM upload_sessions WHERE project_id=? AND status='completing' AND COALESCE(json_extract(metadata_json,'$.completion_lease_until'),0)>? LIMIT 1", [project_id, now]):
         active.append("upload_lease")
     return sorted(set(active))
@@ -516,9 +564,14 @@ def process_erase_job(store, job_id, *, max_objects=100):
     if type(max_objects) is not int or not 1 <= max_objects <= 1000:
         raise ValueError("Process between 1 and 1000 erasure objects per call")
     current = get_erase_job(store, job_id)
-    if current["status"] == "completed":
-        return current
     try:
+        from .retention import ensure_deletion_request, record_deletion_completion
+        ensure_deletion_request(store, store.one("SELECT * FROM privacy_erase_jobs WHERE id=?", [job_id]))
+        if current["phase"] == "completed" and current["receipt"]:
+            record_deletion_completion(store, current["project_id"], current["receipt"])
+            if current["status"] != "completed":
+                store.execute("UPDATE privacy_erase_jobs SET status='completed',error=NULL,updated_at=? WHERE id=?", [utcnow(), job_id])
+            return get_erase_job(store, job_id)
         with store.transaction(write=True):
             row = store.one("SELECT * FROM privacy_erase_jobs WHERE id=?", [job_id])
             waiting = _waiting(store, row["project_id"])
@@ -567,11 +620,14 @@ def process_erase_job(store, job_id, *, max_objects=100):
                        "shared_files_preserved": inventory.get("shared_files_preserved", 0),
                        "backups": {"erased": False, "files_detected": inventory.get("backup_files_detected", 0), "expiry_verified": False},
                        "external_copies_erased": False, "physical_media_secure_wipe": False,
+                       "retained_request_metadata": {"actor_identity": "removed", "idempotency_key": "sha256_digest"},
                        "scope": "live project application records and inventoried artifacts",
                        "notice": "Deletion of database records is logical erasure. Operator-managed backups, inference-provider retention and previously downloaded copies require separate handling."}
             store.execute("DELETE FROM privacy_erasure_items WHERE job_id=?", [job_id])
             store.execute("DELETE FROM privacy_erasure_scope WHERE job_id=?", [job_id])
-            store.execute("UPDATE privacy_erase_jobs SET status='completed',phase='completed',receipt_json=?,error=NULL,updated_at=? WHERE id=?", [_json(receipt), utcnow(), job_id])
+            key = row["idempotency_key"] if re.fullmatch(r"erasure-key-sha256:[0-9a-f]{64}", row["idempotency_key"]) else _erasure_key_digest(row["idempotency_key"])
+            store.execute("UPDATE privacy_erase_jobs SET status='completed',phase='completed',receipt_json=?,actor_id='erased-actor',idempotency_key=?,error=NULL,updated_at=? WHERE id=?", [_json(receipt), key, utcnow(), job_id])
+        record_deletion_completion(store, row["project_id"], receipt)
         return get_erase_job(store, job_id)
     except (OSError, ValueError, sqlite3.Error):
         # Do not persist parser messages, filenames or exception text as a

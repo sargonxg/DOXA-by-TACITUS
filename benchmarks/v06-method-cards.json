@@ -1,0 +1,2321 @@
+{
+  "cards": [
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "ac806a2a9ae940e955d95045adb89227cb92659b6eeb4478d8659b397ef4db33",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "stance",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://aclanthology.org/P15-2072/"
+      },
+      "id": "discourse/stance",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Expressed stance",
+      "lens_id": "discourse",
+      "lens_version": "1.0.0",
+      "operational_rule": "Identify a position toward a specified proposition, with the speaker and target explicit. Sentiment alone is not stance.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Mohammad et al.",
+          "does_not_establish": "Document-level stance accuracy or an author's political identity.",
+          "kind": "task_definition",
+          "supported_claim": "Stance is toward a specified target and is distinct from sentiment; absent evidence is not neutrality.",
+          "title": "SemEval-2016 Task 6: Detecting Stance in Tweets",
+          "url": "https://aclanthology.org/S16-1003/",
+          "year": 2016
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Distinguish the document author from quoted or reported speakers. Absence of a viewpoint is meaningful only against a declared comparator. Do not infer religious or political identities.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Descriptive discourse analysis; implicit assumptions are hypotheses, not private beliefs.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "e005dca9dfe064f6eddc8fb5f97bfc17fa8811cbe45fd490819e94e197579dcc",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "framing",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://aclanthology.org/P15-2072/"
+      },
+      "id": "discourse/framing",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Problem framing",
+      "lens_id": "discourse",
+      "lens_version": "1.0.0",
+      "operational_rule": "Identify how a passage defines a problem, assigns causes or responsibility, invokes a value, or proposes a remedy.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Distinguish the document author from quoted or reported speakers. Absence of a viewpoint is meaningful only against a declared comparator. Do not infer religious or political identities.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Descriptive discourse analysis; implicit assumptions are hypotheses, not private beliefs.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "9c90c1e014a40624399bd810d1659baa8924e3c7735a88e8ca6dcde8403129df",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "presupposition",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://aclanthology.org/P15-2072/"
+      },
+      "id": "discourse/presupposition",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Presupposition hypothesis",
+      "lens_id": "discourse",
+      "lens_version": "1.0.0",
+      "operational_rule": "Identify an assumption taken for granted by the wording. Mark it ambiguous where alternative readings exist; do not infer an author's hidden beliefs.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Distinguish the document author from quoted or reported speakers. Absence of a viewpoint is meaningful only against a declared comparator. Do not infer religious or political identities.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Descriptive discourse analysis; implicit assumptions are hypotheses, not private beliefs.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "977f16da6c2c7fb5193e7e411dde36b44730c981c2783001113eee76233c5f75",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "rhetoric",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://aclanthology.org/P15-2072/"
+      },
+      "id": "discourse/rhetoric",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Rhetorical device",
+      "lens_id": "discourse",
+      "lens_version": "1.0.0",
+      "operational_rule": "Describe an evidenced generalization, contrast, euphemism, moral boundary, metaphor, or appeal to authority; explain its textual function.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Distinguish the document author from quoted or reported speakers. Absence of a viewpoint is meaningful only against a declared comparator. Do not infer religious or political identities.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Descriptive discourse analysis; implicit assumptions are hypotheses, not private beliefs.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "9f5834dad2b93e41efb827f4d0e64baeefe6cfe8997ed5d4a4bcaca5e296b37c",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "anti_jewish_generalization",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://holocaustremembrance.com/resources/working-definition-antisemitism"
+      },
+      "id": "ihra/anti_jewish_generalization",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Anti-Jewish hostility or stereotyping",
+      "lens_id": "ihra",
+      "lens_version": "2026-11-operational-1",
+      "operational_rule": "Assess hostility, dehumanization, conspiracies, or collective allegations directed at Jews as Jews.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "The examples require overall context. Criticism of Israel similar to criticism of other countries is not antisemitic under the source text. Distinguish quotation, reporting, opposition to hate, criticism of a government, and endorsement. Indicate insufficient context when evidence does not establish the criterion.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Non-legally-binding framework. Findings concern passages, not whether a person is antisemitic.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "d99d12361e09163cf3b02194994342c0e52d16b82d1d288474dd3f962aaf59f8",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "collective_responsibility",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://holocaustremembrance.com/resources/working-definition-antisemitism"
+      },
+      "id": "ihra/collective_responsibility",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Collective responsibility",
+      "lens_id": "ihra",
+      "lens_version": "2026-11-operational-1",
+      "operational_rule": "Assess holding Jewish people collectively responsible for real or alleged acts of another person, group, or Israel.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "The examples require overall context. Criticism of Israel similar to criticism of other countries is not antisemitic under the source text. Distinguish quotation, reporting, opposition to hate, criticism of a government, and endorsement. Indicate insufficient context when evidence does not establish the criterion.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Non-legally-binding framework. Findings concern passages, not whether a person is antisemitic.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "7e09e6a88418d74d02a11a6f574eee2760c728c0f7bab2669bc06f61537cc9fd",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "israel_related_context",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://holocaustremembrance.com/resources/working-definition-antisemitism"
+      },
+      "id": "ihra/israel_related_context",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Israel-related expression in context",
+      "lens_id": "ihra",
+      "lens_version": "2026-11-operational-1",
+      "operational_rule": "Assess relevant IHRA examples in overall context, including anti-Jewish tropes, discriminatory standards or denial of Jewish self-determination. Do not assume that policy criticism alone satisfies a criterion.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "The examples require overall context. Criticism of Israel similar to criticism of other countries is not antisemitic under the source text. Distinguish quotation, reporting, opposition to hate, criticism of a government, and endorsement. Indicate insufficient context when evidence does not establish the criterion.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Non-legally-binding framework. Findings concern passages, not whether a person is antisemitic.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "8690a98afc76503164bb7080011df7f1fcd42371828b999f72abfdce80b76ffa",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "jews_as_jews",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://jerusalemdeclaration.org/"
+      },
+      "id": "jda/jews_as_jews",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Discrimination against Jews as Jews",
+      "lens_id": "jda",
+      "lens_version": "2021-operational-1",
+      "operational_rule": "Assess discrimination, prejudice, hostility, or violence against Jews as Jews or Jewish institutions as Jewish.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Read all relevant contextual guidelines. Political position by itself does not establish anti-Jewish prejudice. Preserve genuine ambiguity and distinguish a speaker's statements from text quoting or opposing them.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Alternative framework with its own protections for political expression; no legal determination.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "1a4d1a41af53d86430118754b6d0f0e7d86cc9f62f722a84e11a8ba40d9bfe76",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "tropes_collective_guilt",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://jerusalemdeclaration.org/"
+      },
+      "id": "jda/tropes_collective_guilt",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Tropes and collective guilt",
+      "lens_id": "jda",
+      "lens_version": "2021-operational-1",
+      "operational_rule": "Assess anti-Jewish conspiracies, essentializing stereotypes, and responsibility assigned to Jews for Israel's conduct.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Read all relevant contextual guidelines. Political position by itself does not establish anti-Jewish prejudice. Preserve genuine ambiguity and distinguish a speaker's statements from text quoting or opposing them.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Alternative framework with its own protections for political expression; no legal determination.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "42e03addda58f28380fb9d18bf9ccd3f8e1c0dac64dde169f5ef388724c35ff4",
+      "comparator_required": false,
+      "construct": "framework_boundary",
+      "criterion_id": "political_expression_boundary",
+      "criterion_kind": "boundary",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://jerusalemdeclaration.org/"
+      },
+      "id": "jda/political_expression_boundary",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Political-expression boundary",
+      "lens_id": "jda",
+      "lens_version": "2021-operational-1",
+      "operational_rule": "Differentiate anti-Jewish expression from political criticism. BDS, anti-Zionism, constitutional alternatives securing equality, and disproportionate criticism are not inherently antisemitic under this framework.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Read all relevant contextual guidelines. Political position by itself does not establish anti-Jewish prejudice. Preserve genuine ambiguity and distinguish a speaker's statements from text quoting or opposing them.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Alternative framework with its own protections for political expression; no legal determination.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "4620771ac95a34d2e6b977ec4658c95b13181aab46f9c1ccec0b4d14c281d56f",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "anti_jewish_tropes",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://nexusproject.us/nexus-resources/the-nexus-document/"
+      },
+      "id": "nexus/anti_jewish_tropes",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Anti-Jewish tropes",
+      "lens_id": "nexus",
+      "lens_version": "2024-06-operational-1",
+      "operational_rule": "Assess stereotypical assertions, conspiracies, demonization, or unequal treatment directed at Jews as Jews.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Do not classify political opposition from keywords alone. Identify the target, source speaker and supporting context. Describe systemic claims only where the supplied corpus supports them.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Contextual framework; findings do not establish a person's intentions or legal liability.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "5b1ce221a8b2e23ca737670db9803850ad4427fefe090d288c088345edb362d6",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "collective_guilt",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://nexusproject.us/nexus-resources/the-nexus-document/"
+      },
+      "id": "nexus/collective_guilt",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Collective guilt",
+      "lens_id": "nexus",
+      "lens_version": "2024-06-operational-1",
+      "operational_rule": "Assess blaming Jews collectively for Israel or presuming Jewish individuals are agents of Israel.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Do not classify political opposition from keywords alone. Identify the target, source speaker and supporting context. Describe systemic claims only where the supplied corpus supports them.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Contextual framework; findings do not establish a person's intentions or legal liability.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "f9e2bd11fbc53545083fcee2329c35c1f7b90357f21b65c8d078158d6a9bc0df",
+      "comparator_required": false,
+      "construct": "framework_boundary",
+      "criterion_id": "opposition_boundary",
+      "criterion_kind": "boundary",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://nexusproject.us/nexus-resources/the-nexus-document/"
+      },
+      "id": "nexus/opposition_boundary",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Political-opposition boundary",
+      "lens_id": "nexus",
+      "lens_version": "2024-06-operational-1",
+      "operational_rule": "Distinguish hostility to Jews from criticism of Israel or Zionism. Disproportionate attention to Israel is not prima facie proof of antisemitism.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Do not classify political opposition from keywords alone. Identify the target, source speaker and supporting context. Describe systemic claims only where the supplied corpus supports them.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Contextual framework; findings do not establish a person's intentions or legal liability.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "dd40ee3f737230d34b2faa24c089ef451a048dc6baff9525d4dc342a7324c9a0",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "targeted_hostility",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility"
+      },
+      "id": "anti-muslim-hostility/targeted_hostility",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Hostility toward Muslims",
+      "lens_id": "anti-muslim-hostility",
+      "lens_version": "2026-03-operational-1",
+      "operational_rule": "Identify evidenced threatening, abusive, or hostile expression targeting people because they are Muslim or perceived to be Muslim.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "The guidance protects criticism, ridicule, and discussion of Islam. Differentiate criticism of doctrines, religious institutions or policy from hostility to people. Do not presume intent from an isolated word or a demographic label.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "England-specific non-statutory definition. Text alone may not establish intention or unlawful discrimination.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "8899c9cf640aa1c8e4e6316d6d10fbd776b95136f9e861608dcf3e968a81daff",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "stereotyping_and_intent",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility"
+      },
+      "id": "anti-muslim-hostility/stereotyping_and_intent",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Stereotyping and intent",
+      "lens_id": "anti-muslim-hostility",
+      "lens_version": "2026-03-operational-1",
+      "operational_rule": "Assess stereotyping intended to encourage hatred of Muslims. If intent is not established by context, explicitly mark insufficient_context rather than claiming it.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "The guidance protects criticism, ridicule, and discussion of Islam. Differentiate criticism of doctrines, religious institutions or policy from hostility to people. Do not presume intent from an isolated word or a demographic label.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "England-specific non-statutory definition. Text alone may not establish intention or unlawful discrimination.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "db1fc59a1187d438d508d1dfcde89bcbf5d53f87249c6bb8ccdfe8d38776df04",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "discrimination_claim",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility"
+      },
+      "id": "anti-muslim-hostility/discrimination_claim",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Targeted discrimination indicators",
+      "lens_id": "anti-muslim-hostility",
+      "lens_version": "2026-03-operational-1",
+      "operational_rule": "Identify stated exclusion or unequal treatment directed at Muslims; do not pronounce legal unlawfulness from a passage.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "The guidance protects criticism, ridicule, and discussion of Islam. Differentiate criticism of doctrines, religious institutions or policy from hostility to people. Do not presume intent from an isolated word or a demographic label.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "England-specific non-statutory definition. Text alone may not establish intention or unlawful discrimination.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "3399d7fe24f392efb6bfc3f711047f0f5bc95cdeb9087e38348bfd246ecfae64",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "racialization",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://www.runnymedetrust.org/publications/islamophobia-towards-a-working-definition"
+      },
+      "id": "anti-muslim-racism/racialization",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Racialization and essentializing",
+      "lens_id": "anti-muslim-racism",
+      "lens_version": "2025-operational-1",
+      "operational_rule": "Assess treating Muslims or perceived Muslims as a homogeneous, inferior, threatening, or inherently suspect population.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Separate critique of beliefs or institutions from racialization of people. A structural claim needs corpus context and an explicit comparator; preserve its evidential limits.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Structural analytical lens, distinct from the England conduct-and-intent framework.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "e8e83d67778193f2e26312c92b72270d780d3b874614881507280de4a4fc80cc",
+      "comparator_required": false,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "exclusion",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://www.runnymedetrust.org/publications/islamophobia-towards-a-working-definition"
+      },
+      "id": "anti-muslim-racism/exclusion",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Exclusion and unequal treatment",
+      "lens_id": "anti-muslim-racism",
+      "lens_version": "2025-operational-1",
+      "operational_rule": "Identify expressed exclusion, discriminatory expectations, or restrictions attached to Muslim identity.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Separate critique of beliefs or institutions from racialization of people. A structural claim needs corpus context and an explicit comparator; preserve its evidential limits.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Structural analytical lens, distinct from the England conduct-and-intent framework.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "22607a0f968458cf02c7508ba27c4768f49c3277940103791d2ad2f8825fff5e",
+      "comparator_required": true,
+      "construct": "framework_specific_indicator",
+      "criterion_id": "institutional_pattern",
+      "criterion_kind": "indicator",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://www.runnymedetrust.org/publications/islamophobia-towards-a-working-definition"
+      },
+      "id": "anti-muslim-racism/institutional_pattern",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Institutional pattern hypothesis",
+      "lens_id": "anti-muslim-racism",
+      "lens_version": "2025-operational-1",
+      "operational_rule": "Identify an evidenced institutional practice or repeated pattern. One passage cannot by itself establish a systemic pattern; mark insufficient context when required.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Separate critique of beliefs or institutions from racialization of people. A structural claim needs corpus context and an explicit comparator; preserve its evidential limits.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Structural analytical lens, distinct from the England conduct-and-intent framework.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "6ca6ae620a83531860cbdc2efd6dc939f82ba8809373ed3ef300a256f7fad0d2",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "norm_claim",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://aclanthology.org/P15-2072/"
+      },
+      "id": "language-norms/norm_claim",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Language-norm claim",
+      "lens_id": "language-norms",
+      "lens_version": "1.0.0",
+      "operational_rule": "Identify an explicit claim about acceptable, respectful, inclusive, offensive, or prohibited language and whose norm it represents.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "State the user-selected inquiry and preserve competing interpretations. Never assign a universal PC score or assume a demographic group shares one view.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "A user-defined inquiry, not an objective political-correctness score.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "29ed444493362eb7ff99dbce2f3d4b3336b61d8af2c9c59277f66a5698f29b40",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "speech_boundary",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://aclanthology.org/P15-2072/"
+      },
+      "id": "language-norms/speech_boundary",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Speech boundary and censorship framing",
+      "lens_id": "language-norms",
+      "lens_version": "1.0.0",
+      "operational_rule": "Describe a text's stated boundary between expression and harm, or its claim of censorship, without assuming the claim is factually proven.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "State the user-selected inquiry and preserve competing interpretations. Never assign a universal PC score or assume a demographic group shares one view.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "A user-defined inquiry, not an objective political-correctness score.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "a0d0b8b66d2e4be19c81807e76282a74813485af87b0f4025e843d26d3f083ce",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "institutional_expectation",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://aclanthology.org/P15-2072/"
+      },
+      "id": "language-norms/institutional_expectation",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Institutional expectation",
+      "lens_id": "language-norms",
+      "lens_version": "1.0.0",
+      "operational_rule": "Identify an expressed institutional language rule, enforcement mechanism, or competing value such as inclusion and freedom of expression.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "State the user-selected inquiry and preserve competing interpretations. Never assign a universal PC score or assume a demographic group shares one view.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "A user-defined inquiry, not an objective political-correctness score.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "8e7f528b60a02db5bcd63c9360192d07168325691483f6ac9e2fe8bff1ab9071",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "expressed_policy_position",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x"
+      },
+      "id": "political-framing/expressed_policy_position",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Expressed policy position",
+      "lens_id": "political-framing",
+      "lens_version": "1.0.0",
+      "operational_rule": "Identify an explicit position toward a named policy proposition, proposed action or remedy. State whose position it is and distinguish the attributed speaker's stance from the document's stance. Sentiment and topic mention alone do not establish stance; missing evidence of support or opposition does not imply neutrality. Do not infer a party, political identity or ideology from the position.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Mohammad et al.",
+          "does_not_establish": "Document-level stance accuracy or an author's political identity.",
+          "kind": "task_definition",
+          "supported_claim": "Stance is toward a specified target and is distinct from sentiment; absent evidence is not neutrality.",
+          "title": "SemEval-2016 Task 6: Detecting Stance in Tweets",
+          "url": "https://aclanthology.org/S16-1003/",
+          "year": 2016
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Descriptive textual analysis, not a universal political-bias, truth, fairness or left/right score. A detected pattern is not a verdict about a person or audience influence.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "cd4d895671acc151db3eeddfa7ae352cdb586e5c27c146e5a8c2d4a96dd982bd",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "evaluative_language",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x"
+      },
+      "id": "political-framing/evaluative_language",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Evaluative language",
+      "lens_id": "political-framing",
+      "lens_version": "1.0.0",
+      "operational_rule": "Identify evidenced appraisal, metaphor or legitimizing/delegitimizing wording, its target and textual function. Preserve quotation, negation, counter-speech and the responsible speaker. Apply the same descriptive rule across authors. Strong or emotional wording can be justified: it does not by itself establish falsity, unfairness, deceptive intent or equivalent conduct by compared actors.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        },
+        {
+          "authors": "Fan et al.",
+          "does_not_establish": "Intentional omission or unfairness from an isolated source.",
+          "kind": "comparative_annotation_research",
+          "supported_claim": "Lexical and informational bias are distinct; comparison needs related source material and context.",
+          "title": "In Plain Sight: Media Bias Through the Lens of Factual Reporting",
+          "url": "https://aclanthology.org/D19-1664/",
+          "year": 2019
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Descriptive textual analysis, not a universal political-bias, truth, fairness or left/right score. A detected pattern is not a verdict about a person or audience influence.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "6388aa9cb3b8b76c62c8ba11fa1fea9faed9eca83f18295a870e055a1e7349f3",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "agency_causal_responsibility",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x"
+      },
+      "id": "political-framing/agency_causal_responsibility",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Agency and causal responsibility",
+      "lens_id": "political-framing",
+      "lens_version": "1.0.0",
+      "operational_rule": "Describe how the passage names, backgrounds or leaves unspecified an actor, cause, beneficiary or bearer of responsibility, and whether the source asserts or attributes the relationship. A causal allegation is not verified causation. Do not turn temporal association into causation, passive wording into deliberate concealment, or a framing observation into a finding about hidden motives.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Descriptive textual analysis, not a universal political-bias, truth, fairness or left/right score. A detected pattern is not a verdict about a person or audience influence.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "8eb030ffc7f00e64fb18a44b3299c1b8ff2db7ddbf73582d2307db337dcd8406",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "source_voice_foregrounding",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x"
+      },
+      "id": "political-framing/source_voice_foregrounding",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Source and voice foregrounding",
+      "lens_id": "political-framing",
+      "lens_version": "1.0.0",
+      "operational_rule": "Identify whose claim, testimony, evidence or institutional authority is explicitly foregrounded and how it is attributed. Distinguish the containing document's author from quoted speakers, committee recommendations and reported allegations. A locally prominent voice is observable; claims that other voices were unfairly excluded require a declared comparator and relevant supplied evidence. Equal quotation counts are not a fairness standard.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Descriptive textual analysis, not a universal political-bias, truth, fairness or left/right score. A detected pattern is not a verdict about a person or audience influence.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "0d766616ba127190eed83310625d435b1d2246c609744121324939160304ee9a",
+      "comparator_required": true,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "comparator_dependent_asymmetry",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x"
+      },
+      "id": "political-framing/comparator_dependent_asymmetry",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Comparator-dependent asymmetry",
+      "lens_id": "political-framing",
+      "lens_version": "1.0.0",
+      "operational_rule": "Assess a difference in evidential standards, appraisal, attribution or relevant coverage only against an explicitly declared comparator with supplied passages, inclusion rules and a shared comparison question. State topic, genre, date and available-evidence matching limits; unequal conduct or evidence may justify unequal treatment. Without this comparator, return uncertain for a relevant comparison inquiry or not_applicable when no comparison is attempted, never does_not_meet as a proxy for no bias. Mere corpus absence, different policy instruments or raw voice counts cannot establish omission, a double standard or deliberate selection.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        },
+        {
+          "authors": "Fan et al.",
+          "does_not_establish": "Intentional omission or unfairness from an isolated source.",
+          "kind": "comparative_annotation_research",
+          "supported_claim": "Lexical and informational bias are distinct; comparison needs related source material and context.",
+          "title": "In Plain Sight: Media Bias Through the Lens of Factual Reporting",
+          "url": "https://aclanthology.org/D19-1664/",
+          "year": 2019
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Descriptive textual analysis, not a universal political-bias, truth, fairness or left/right score. A detected pattern is not a verdict about a person or audience influence.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    },
+    {
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "card_sha256": "0edd2f4645b33416862a4336485b0ff841c604e1f2fa96ea25648c739ad27d86",
+      "comparator_required": false,
+      "construct": "descriptive_discourse_pattern",
+      "criterion_id": "presupposition_hypothesis",
+      "criterion_kind": "descriptive",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "framework_source": {
+        "kind": "operational_definition_source",
+        "status": "not_independently_validated_by_DOXA",
+        "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x"
+      },
+      "id": "political-framing/presupposition_hypothesis",
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "label": "Qualified presupposition hypothesis",
+      "lens_id": "political-framing",
+      "lens_version": "1.0.0",
+      "operational_rule": "Identify a specific premise backgrounded or taken for granted by a textual trigger, with the exact proposition, responsible speaker and a plausible alternative reading. Check surrounding explicit assertions: a repeated allegation may be backgrounded without being an uncovered unstated belief. Do not strengthen the wording into an exclusive or universal claim, infer private beliefs, or treat the premise as fact. Preserve uncertainty where readings differ.",
+      "origin": "DOXA_operational_measurement_contract",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "authors": "Jacobs and Wallach",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model.",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "title": "Measurement and Fairness",
+          "url": "https://arxiv.org/abs/1912.05511",
+          "year": 2021
+        },
+        {
+          "authors": "Plank",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth.",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "year": 2022
+        },
+        {
+          "authors": "Entman",
+          "does_not_establish": "That a frame is unfair, false, prejudiced or influential.",
+          "kind": "theoretical_framework",
+          "supported_claim": "Problem definition, causal interpretation, evaluation and remedies are distinct framing functions.",
+          "title": "Framing: Toward Clarification of a Fractured Paradigm",
+          "url": "https://doi.org/10.1111/j.1460-2466.1993.tb01304.x",
+          "year": 1993
+        },
+        {
+          "authors": "Card et al.",
+          "does_not_establish": "Transfer accuracy to DOXA domains, or permission to redistribute underlying licensed news.",
+          "kind": "annotation_research",
+          "supported_claim": "Frames can be operationalized through explicit annotation instructions and contextual text spans.",
+          "title": "The Media Frames Corpus: Annotations of Frames Across Issues",
+          "url": "https://aclanthology.org/P15-2072/",
+          "year": 2015
+        }
+      ],
+      "registry_version": "doxa-measurement-registry-0.6",
+      "required_context": [
+        "Ground each observation in supplied source evidence and context. Separate document and speaker stance, reporting, attributed quotation, hypothetical examples, negation and counter-speech. No automatic left/right label, universal political center, private identity inference, author-character judgment or aggregate bias score. Frame presence does not demonstrate audience effects. Comparative absence, omission, imbalance and evidential asymmetry require a declared matched comparator and supplied relevant evidence; otherwise preserve uncertainty. These are reviewable descriptive hypotheses, not validated accuracy or factual-verification claims.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "schema_version": "doxa-measurement-card-1.0",
+      "scope": "Descriptive textual analysis, not a universal political-bias, truth, fairness or left/right score. A detected pattern is not a verdict about a person or audience influence.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "validation": {
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy.",
+        "status": "reference_pending"
+      }
+    }
+  ],
+  "origin": "frozen_registry_at_brief_creation",
+  "registry_version": "doxa-measurement-registry-0.6",
+  "snapshot_sha256": "b1ae53cba83ccb9c82965905a1a5b56cb4b85bb26f5aab794c8e8b972a44a9d6"
+}

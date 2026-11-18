@@ -39,6 +39,7 @@ import {
   useAccessSession,
 } from "./workspace/AccessGate";
 import { PilotWorkspace } from "./workspace/PilotWorkspace";
+import { RefinementPanel } from "./workspace/RefinementPanel";
 import type { PilotBrief } from "./workspace/PilotWorkspace";
 import {
   contextFor,
@@ -542,10 +543,13 @@ function Workspace() {
           setProgress(`Importing archive ${file.name}…`);
           const form = new FormData();
           form.append("file", file);
-          await request(`/v3/projects/${project}/imports/${importId}/archive`, {
+          form.append("import_id", importId);
+          await request(`/v3/projects/${project}/jobs/import-archive`, {
             method: "POST",
+            headers: { "Idempotency-Key": `archive-${importId}-${file.size}-${file.lastModified}` },
             body: form,
           });
+          notify("Archive accepted for background extraction. The Activity center tracks committed files, failures and recovery.");
           imported = true;
         } else if (file.size > 10 * 1024 * 1024) {
           await flush();
@@ -1038,6 +1042,10 @@ function Workspace() {
             <Badge>Research preview</Badge>
           </div>
           {error && <ErrorMessage text={error} />}
+          {project && <RefinementPanel project={project} runId={query?.run?.id}
+            onImport={() => setDrawer("import")} onAnalyze={() => setDrawer("analyze")}
+            onReports={() => setDrawer("reports")} onRefresh={refresh}
+            onOpenSource={(id) => void openSource(id)} />}
           {project && (
             <PilotWorkspace
               project={project}

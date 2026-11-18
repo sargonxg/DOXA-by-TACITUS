@@ -155,11 +155,11 @@ def _validate_evidence(store, assessment, resolved):
         if config.get("unit_builder_version", UNIT_BUILDER_VERSION) != UNIT_BUILDER_VERSION:
             raise ValueError("Compact evidence uses an unsupported frozen source unit builder")
         units = build_units({**document, "blocks": source_blocks, "source_version_id": version},
-                            max_unit_chars=config.get("unit_max_chars", 1200), context_sentences=config.get("context_sentences", 2))
+                            max_unit_chars=config.get("unit_max_chars", 1200), context_sentences=config.get("context_sentences", 2), context_policy=config.get("context_policy"))
         unit = next((item for item in units if item["id"] == assessment["unit_id"]), None)
         if unit is None:
             raise ValueError("Compact evidence does not resolve to its frozen source unit")
-        available = {sentence["id"]: sentence for sentence in [*unit["context_before"], *unit["sentences"], *unit["context_after"]]}
+        available = {sentence["id"]: sentence for sentence in [*unit.get("structural_context", []), *unit["context_before"], *unit["sentences"], *unit["context_after"]]}
         persisted = {(ref.get("sentence_id"), ref.get("block_id"), ref.get("start"), ref.get("end")) for ref in original_refs if isinstance(ref, dict)}
     checked_refs = [dict(ref) for ref in refs]
     check = list(checked_refs)

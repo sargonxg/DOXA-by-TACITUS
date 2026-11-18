@@ -23,6 +23,7 @@ from .models import ASSESSMENT_CONTRACT_VERSION, AssessmentDetail, UnitDecision,
 from .providers import ProviderError
 from .lineage import content_sha256
 from .method_config import cache_method_fingerprint, method_fingerprint
+from .structure_context import CONTEXT_POLICY, enrich_context
 
 UNIT_BUILDER_VERSION = "source-units-3.1"
 PROMPT_VERSION = "contextual-decisions-3.2.1"
@@ -100,12 +101,14 @@ def _sentence_ranges(text: str, maximum: int):
             start = end
 
 
-def build_units(document: dict, *, max_unit_chars: int = 1200, context_sentences: int = 2) -> list[dict]:
+def build_units(document: dict, *, max_unit_chars: int = 1200, context_sentences: int = 2, context_policy: str | None = None) -> list[dict]:
     """Create immutable paragraph/sentence anchors from the FULL document.
 
     The caller may subsequently slice units into tasks without losing neighbors.
     Offsets refer to the original extracted block, not normalized model text.
     """
+    if context_policy not in (None, CONTEXT_POLICY):
+        raise ValueError("Unknown context policy; use explicit structure-aware-1.0 or the legacy default")
     if not isinstance(document, dict) or not document.get("id"):
         raise ValueError("A source document requires a stable id")
     if not 200 <= max_unit_chars <= 4000 or not 0 <= context_sentences <= 4:
@@ -158,6 +161,8 @@ def build_units(document: dict, *, max_unit_chars: int = 1200, context_sentences
                 segments.append({key: sentence[key] for key in ["block_id", "start", "end", "text"]})
         identity = [(segment["block_id"], segment["start"], segment["end"]) for segment in segments]
         builder_version = UNIT_BUILDER_VERSION + "-mail-context-1.0" if group[0].get("message_key") else UNIT_BUILDER_VERSION
+        if context_policy:
+            builder_version += "-" + CONTEXT_POLICY
         unit_id = "u_" + _hash(builder_version, version_id, source_hash, identity)
         for sentence in group:
             sentence["unit_id"] = unit_id
@@ -184,7 +189,15 @@ def build_units(document: dict, *, max_unit_chars: int = 1200, context_sentences
             # links are provenance, not consent to borrow unrelated mail text.
             for key in ("context_before", "context_after"):
                 unit[key] = [sentence for sentence in unit[key] if sentence.get("message_key") == unit["message_key"]]
+    if context_policy:
+        for unit in units:
+            unit["builder_config"]["context_policy"] = context_policy
+        enrich_context(document, units, all_sentences)
     return units
+
+
+def _all_sentences(unit):
+    return [*unit.get("structural_context", []), *unit.get("context_before", []), *unit["sentences"], *unit.get("context_after", [])]
 
 
 def _criteria(lenses: list, config: dict) -> tuple[list[dict], dict[str, dict]]:
@@ -225,11 +238,16 @@ def _wire_unit(unit: dict) -> dict:
             "context_after": [sentence(value) for value in unit.get("context_after", [])]}
     if unit.get("message_key"):
         result["mail_context"] = _mail_fields(unit)
+    if unit.get("context_manifest"):
+        result["structural_context"] = [{**sentence(value), "relationship": value["context_relationship"]} for value in unit.get("structural_context", [])]
+        result["context_manifest"] = copy.deepcopy(unit["context_manifest"])
+        for value, original in zip(result["scored_sentences"], unit["sentences"]):
+            value["quotation_marker_depth"] = original.get("quotation_marker_depth", 0)
     return result
 
 
 def _make_assessment(document: dict, unit: dict, criterion: dict, result: str, detail: AssessmentDetail | None) -> dict:
-    available = {sentence["id"]: sentence for sentence in [*unit.get("context_before", []), *unit["sentences"], *unit.get("context_after", [])]}
+    available = {sentence["id"]: sentence for sentence in _all_sentences(unit)}
     owned = {sentence["id"] for sentence in unit["sentences"]}
     if detail:
         identifiers = list(dict.fromkeys(detail.evidence_sentence_ids))
@@ -254,7 +272,7 @@ def _make_assessment(document: dict, unit: dict, criterion: dict, result: str, d
         if payload["speaker"].casefold() in {"unknown", "anonymous", ""}:
             payload["attribution"] = "unknown"
     speech_role = {"author": "author_assertion", "quoted_speaker": "attributed_quotation", "reported_speaker": "reported_speech", "unknown": "unknown"}[payload["attribution"]]
-    context = "\n".join(sentence["text"] for sentence in [*unit.get("context_before", []), *unit["sentences"], *unit.get("context_after", [])])
+    context = "\n".join(sentence["text"] for sentence in _all_sentences(unit))
     result_payload = {"id": "a_" + _hash(unit["id"], criterion["key"]), "unit_id": unit["id"], "document_id": document["id"],
             "source_version_id": unit["source_version_id"], "source_hash": unit["source_hash"],
             "lens_id": criterion["lens_id"], "criterion_id": criterion["criterion_id"], "criterion": criterion["criterion_id"],
@@ -269,6 +287,9 @@ def _make_assessment(document: dict, unit: dict, criterion: dict, result: str, d
         result_payload["mail_context"] = _mail_fields(unit)
         result_payload["eligible_for_author_counts"] = bool(unit.get("eligible_for_author_counts"))
         result_payload["locator"].update({key: primary[key] for key in ("message_key", "mail_source_field") if key in primary})
+    if unit.get("context_manifest"):
+        result_payload["context_manifest"] = copy.deepcopy(unit["context_manifest"])
+        result_payload["structural_context_refs"] = copy.deepcopy(unit.get("structural_context", []))
     return result_payload
 
 
@@ -290,7 +311,13 @@ async def analyze_units(document: dict, lenses: list, provider, *, units: list[d
     output["attempt_journal"] = journals
     output["request_capture"] = {"mode": "metadata", "visible_io": "not_recorded", "hidden_reasoning": "never_recorded"}
     try:
-        selected = list(units) if units is not None else build_units(document)
+        selected = list(units) if units is not None else build_units(document, max_unit_chars=config.get("unit_max_chars", 1200), context_sentences=config.get("context_sentences", 2), context_policy=config.get("context_policy"))
+        policy = config.get("context_policy")
+        if policy not in (None, CONTEXT_POLICY):
+            raise ValueError("Unknown context policy")
+        expected_context = {}
+        if policy:
+            expected_context = {unit["id"]: unit for unit in build_units(document, max_unit_chars=config.get("unit_max_chars", 1200), context_sentences=config.get("context_sentences", 2), context_policy=policy)}
         packs, criteria = _criteria(lenses, config)
         journal_mode = config.get("request_journal_mode", "metadata")
         if journal_mode not in {"metadata", "visible_io"}:
@@ -304,6 +331,12 @@ async def analyze_units(document: dict, lenses: list, provider, *, units: list[d
         source_blocks = {block["id"]: block for block in document["blocks"]}
         blocks = {key: block["text"] for key, block in source_blocks.items()}
         for unit in selected:
+            if policy:
+                expected = expected_context.get(unit["id"])
+                if expected is None or any(unit.get(key) != expected.get(key) for key in ("context_before", "context_after", "structural_context", "context_manifest", "builder_config", "builder_version", "sentences")):
+                    raise ValueError("Structure-aware context must match its frozen source-derived policy")
+            elif unit.get("context_manifest") or unit.get("structural_context") or unit.get("builder_config", {}).get("context_policy"):
+                raise ValueError("Structure-aware units require the explicit context policy")
             segments = unit.get("segments") or [{"block_id": unit["block_id"], "start": unit["start"], "end": unit["end"], "text": unit["text"]}]
             if unit["document_id"] != document["id"] or "".join(segment["text"] for segment in segments) != unit["text"] or any(blocks.get(segment["block_id"], "")[segment["start"]:segment["end"]] != segment["text"] for segment in segments):
                 raise ValueError("Analysis units must resolve to the exact supplied source document")
@@ -313,12 +346,12 @@ async def analyze_units(document: dict, lenses: list, provider, *, units: list[d
                     source_blocks[segment["block_id"]].get(key) != primary_source.get(key)
                     for segment in segments for key in ("message_key", "mail_role")):
                     raise ValueError("Mail unit provenance must match the original message and role")
-            for sentence in [*unit.get("context_before", []), *unit["sentences"], *unit.get("context_after", [])]:
+            for sentence in _all_sentences(unit):
                 if sentence["document_id"] != document["id"] or blocks.get(sentence["block_id"], "")[sentence["start"]:sentence["end"]] != sentence["text"]:
                     raise ValueError("Context sentence anchor does not match the source document")
                 source_block = source_blocks[sentence["block_id"]]
                 if source_block.get("message_key") or sentence.get("message_key"):
-                    if _mail_fields(sentence) != _mail_fields(source_block) or sentence.get("message_key") != unit.get("message_key"):
+                    if _mail_fields(sentence) != _mail_fields(source_block) or (not policy and sentence.get("message_key") != unit.get("message_key")):
                         raise ValueError("Mail context provenance must match its source and scored message")
         budget = config.get("budget_usd")
         budget = float(budget) if budget is not None else None
@@ -332,6 +365,10 @@ async def analyze_units(document: dict, lenses: list, provider, *, units: list[d
     prompt_version = PROMPT_VERSION + "-mail-1.0" if mail_mode else PROMPT_VERSION
     builder_version = UNIT_BUILDER_VERSION + "-mail-context-1.0" if mail_mode else UNIT_BUILDER_VERSION
     system = MAIL_SYSTEM if mail_mode else SYSTEM
+    if config.get("context_policy"):
+        prompt_version += "-" + CONTEXT_POLICY
+        builder_version += "-" + CONTEXT_POLICY
+        system += "\nStructural context is separately labeled, exact source material. Parent-message text is not the current sender's speech. Quotation marker depth counts visible > markers, not actual speakers. Respect omitted/missing context; use insufficient_context when an interpretation requires unavailable context.\n"
     profile.update({"methodology_version": ASSESSMENT_CONTRACT_VERSION, "prompt_version": prompt_version,
                     "unit_builder_version": builder_version, "unit_builder_config": selected[0].get("builder_config", {}) if selected else {},
                     "response_schema_version": "source-vectors-3.2", "result_codes": RESULT_CODES,
@@ -370,7 +407,7 @@ async def analyze_units(document: dict, lenses: list, provider, *, units: list[d
         try:
             decision = UnitDecision.model_validate({"unit_id": unit["id"], "criterion_key": criterion["key"], "result": cached.get("result")})
             references = cached.get("evidence_refs") or []
-            available = {sentence["id"]: sentence for sentence in [*unit.get("context_before", []), *unit["sentences"], *unit.get("context_after", [])]}
+            available = {sentence["id"]: sentence for sentence in _all_sentences(unit)}
             if not references or any(reference.get("sentence_id") not in available or
                                      reference.get("block_id") != available[reference["sentence_id"]]["block_id"] or
                                      reference.get("start") != available[reference["sentence_id"]]["start"] or
@@ -421,7 +458,7 @@ async def analyze_units(document: dict, lenses: list, provider, *, units: list[d
         expected = {(unit["id"], key) for unit in batch for key in keys}
         if stopped:
             return
-        sentence_ids = list(dict.fromkeys(sentence["id"] for unit in batch for sentence in [*unit.get("context_before", []), *unit["sentences"], *unit.get("context_after", [])]))
+        sentence_ids = list(dict.fromkeys(sentence["id"] for unit in batch for sentence in _all_sentences(unit)))
         schema = assessment_schema([unit["id"] for unit in batch], keys, sentence_ids, phase=phase)
         output_tokens = min(detail_output_tokens, 800, 256 + len(batch) * (4 * len(keys) + 64)) if phase == "classify" else detail_output_tokens
         payload = {"document": {key: document.get(key) for key in ["id", "title", "author", "institution", "document_type", "published_at"]},

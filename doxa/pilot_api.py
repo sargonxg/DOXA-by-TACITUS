@@ -145,6 +145,130 @@ def freeze_brief(store, project_id, profile_id, revision):
     return brief
 
 
+def select_report_sources(store, project_id, body, services):
+    identities = body.get("document_ids")
+    if (not isinstance(identities, list) or not 1 <= len(identities) <= 100
+            or any(not isinstance(identity, str) for identity in identities)
+            or len(set(identities)) != len(identities)):
+        raise HTTPException(422, "Explicitly select between 1 and 100 distinct sources")
+    documents, total = [], 0
+    for identity in identities:
+        document = services["require_document"](identity, True)
+        if document["project_id"] != project_id:
+            raise HTTPException(404, "Source does not belong to this project")
+        if document["status"] != "ready":
+            raise HTTPException(422, "Select successfully extracted sources")
+        total += sum(len(block["text"]) for block in document.get("blocks", []))
+        if total > 2_000_000:
+            raise HTTPException(413, "This interactive operation accepts at most two million source characters; narrow the selection")
+        documents.append(document)
+    return store, documents
+
+
+def guided_quote_scope(snapshot):
+    """Derive delivery scope from captured sources and the saved inquiry."""
+    from .lenses import get_lens
+    documents = snapshot["documents"]
+    return {"profile_id": snapshot["brief"]["profile_id"], "documents": len(documents),
+            "source_ids": [document["id"] for document in documents],
+            "characters": sum(len(block["text"]) for document in documents for block in document["blocks"]),
+            "criteria": sum(len(get_lens(lens_id)["criteria"]) for lens_id in snapshot["brief"]["lens_ids"]),
+            "ocr_pages": sum(int(document.get("page_count") or 0) for document in documents
+                if "ocr" in str((document.get("metadata") or {}).get("extractor", "")))}
+
+
+def admit_guided_quote(store, project_id, quote_id, snapshot):
+    from .pilot_commerce import CommerceError, admit_quote_work
+    try:
+        return admit_quote_work(store, project_id, quote_id, **guided_quote_scope(snapshot))
+    except CommerceError as error:
+        raise HTTPException(error.status_code, str(error)) from error
+
+
+def capture_guided_report(store, project_id, body, services, *, actor_id, permissions):
+    """Freeze the same evidence contract for legacy and durable publication.
+
+    Actor and permissions are server-owned arguments, never request-body fields.
+    No rendering, model requests or durable writes happen during capture.
+    """
+    def call(function, *args, **kwargs):
+        try:
+            return function(*args, **kwargs)
+        except (ValueError, KeyError, TypeError) as error:
+            raise HTTPException(422, str(error)) from error
+    from .privacy_lifecycle import get_policy
+    from .service_profiles import observe_communication
+    call(enforce_export_policy, store, project_id)
+    formats = body.get("formats", ["pdf", "html", "xlsx", "json"])
+    if (not isinstance(formats, list) or not formats or len(formats) > 4
+            or any(fmt not in {"pdf", "html", "xlsx", "json"} for fmt in formats)
+            or len(set(formats)) != len(formats)):
+        raise HTTPException(422, "Choose distinct pdf, html, xlsx or json formats")
+    commentary = body.get("expert_commentary", [])
+    if not isinstance(commentary, list) or len(commentary) > 200:
+        raise HTTPException(422, "Supply at most 200 evidence-linked comments")
+    acknowledged = body.get("review_ack", False)
+    if type(acknowledged) is not bool:
+        raise HTTPException(422, "Review acknowledgement must be Boolean")
+    if acknowledged and "review" not in permissions:
+        raise HTTPException(403, "A reviewer permission is required to sign commentary")
+    notes = []
+    for item in commentary:
+        if not isinstance(item, dict) or set(item) - {"document_id", "block_id", "start", "end", "quote", "note"}:
+            raise HTTPException(422, "Comments accept source anchors and note text; actor and review authority are assigned by the server")
+        notes.append({**item, "actor_id": actor_id,
+                      "review_status": "operator_reviewed" if acknowledged else "unreviewed"})
+    with store.transaction():
+        _store, documents = select_report_sources(store, project_id, body, services)
+        frozen = stored_brief(store, project_id)
+        observations = [{"document_id": document["id"], **call(observe_communication, document["blocks"], profile_id=frozen["profile_id"])}
+                        for document in documents]
+        findings = []
+        provenance = None
+        run_id = body.get("run_id")
+        if run_id:
+            run = services["require_run"](run_id, project_id)
+            if run["config"].get("service_brief") != frozen:
+                raise HTTPException(409, "The selected run used a different or historical inquiry brief; use its frozen casebook/report workflow or start a run with this saved brief")
+            from .method_config import frozen_source_metadata
+            for document in documents:
+                prior = call(frozen_source_metadata, store, run, document["id"])
+                for key in ("id", "sha256", "title", "author", "institution", "document_type", "published_at"):
+                    if prior.get(key) != document.get(key):
+                        raise HTTPException(409, "Source metadata changed after analysis; use the run's frozen evidence report or a new analysis")
+            selected_ids = [document["id"] for document in documents]
+            marks = ",".join("?" for _identity in selected_ids)
+            values = store.query(f"SELECT payload_json FROM v3_assessments WHERE project_id=? AND run_id=? AND document_id IN({marks}) ORDER BY id LIMIT 2001",
+                                 [project_id, run["id"], *selected_ids])
+            if len(values) > 2000:
+                raise HTTPException(413, "This guided briefing accepts at most 2,000 saved decisions; use a narrower selection or the full evidence report jobs")
+            findings = [json.loads(item["payload_json"]) for item in values]
+            source_coverage = []
+            for document_id in selected_ids:
+                units = store.one("SELECT COUNT(*) total,COALESCE(SUM(CASE WHEN status='accepted' THEN 1 ELSE 0 END),0) accepted FROM v3_unit_statuses WHERE run_id=? AND document_id=?", [run["id"], document_id])
+                source_coverage.append({"document_id": document_id, "units_total": units["total"], "units_accepted": units["accepted"],
+                                        "decisions_retained": sum(item["document_id"] == document_id for item in findings)})
+            provenance = {"run_id": run["id"], "provider": run["config"].get("provider"),
+                "model": run["config"].get("model") or run.get("model_profile", {}).get("model") or None,
+                "model_revision": run["config"].get("model_revision"), "method_fingerprint": run["config"].get("method_fingerprint"),
+                "question": run["config"].get("question"), "perspective": run["config"].get("persona"),
+                "service_brief_fingerprint": frozen["fingerprint"], "selected_document_ids": selected_ids,
+                "selection": "selected_sources_and_declared_lenses", "run_status": run["status"],
+                "coverage": {"original_run": {key: run.get("progress", {})[key]
+                    for key in ("documents_total", "documents_complete", "blocks_total", "blocks_done", "tasks_failed")
+                    if key in run.get("progress", {})}, "selected_sources": source_coverage}}
+        snapshot = {"brief": frozen, "documents": documents, "observations": observations,
+                    "findings": findings, "expert_commentary": notes, "generated_at": utcnow(),
+                    "run_provenance": provenance,
+                    "privacy_disclosure": {"policy": get_policy(store, project_id)["policy"],
+                        "originals_remain_accessible_to_project_readers": True,
+                        "interpretation_reference_status": "reference_pending"}}
+    admit_guided_quote(store, project_id, body.get("quote_id"), snapshot)
+    from .pilot_reports import freeze_snapshot
+    call(freeze_snapshot, snapshot, trusted_reviews=acknowledged)
+    return snapshot, formats, acknowledged
+
+
 def register(app, services):
     def db():
         store = services["db"]()
@@ -411,75 +535,15 @@ def register(app, services):
     @app.post("/api/pilot/projects/{project_id}/reports", status_code=201)
     async def create_report(project_id: str, body: dict, request: Request):
         from .pilot_reports import build_pilot_report
-        from .privacy_lifecycle import get_policy, track_artifact
-        from .service_profiles import observe_communication
+        from .privacy_lifecycle import track_artifact
         from .access import current_principal
         store = project(project_id)
-        call(enforce_export_policy, store, project_id)
-        formats = body.get("formats", ["pdf", "html", "xlsx", "json"])
-        if (not isinstance(formats, list) or not formats or len(formats) > 4
-                or any(fmt not in {"pdf", "html", "xlsx", "json"} for fmt in formats)
-                or len(set(formats)) != len(formats)):
-            raise HTTPException(422, "Choose distinct pdf, html, xlsx or json formats")
-        commentary = body.get("expert_commentary", [])
-        if not isinstance(commentary, list) or len(commentary) > 200:
-            raise HTTPException(422, "Supply at most 200 evidence-linked comments")
-        acknowledged = body.get("review_ack", False)
-        if type(acknowledged) is not bool:
-            raise HTTPException(422, "Review acknowledgement must be Boolean")
-        if acknowledged and "review" not in current_principal().permissions:
-            raise HTTPException(403, "A reviewer permission is required to sign commentary")
-        notes = []
-        for item in commentary:
-            if not isinstance(item, dict) or set(item) - {"document_id", "block_id", "start", "end", "quote", "note"}:
-                raise HTTPException(422, "Comments accept source anchors and note text; actor and review authority are assigned by the server")
-            notes.append({**item, "actor_id": actor(request),
-                          "review_status": "operator_reviewed" if acknowledged else "unreviewed"})
-        with store.transaction():
-            _store, documents = source_selection(project_id, body)
-            frozen = stored_brief(store, project_id)
-            observations = [{"document_id": document["id"], **call(observe_communication, document["blocks"], profile_id=frozen["profile_id"])}
-                            for document in documents]
-            findings = []
-            provenance = None
-            run_id = body.get("run_id")
-            if run_id:
-                run = services["require_run"](run_id, project_id)
-                if run["config"].get("service_brief") != frozen:
-                    raise HTTPException(409, "The selected run used a different or historical inquiry brief; use its frozen casebook/report workflow or start a run with this saved brief")
-                from .method_config import frozen_source_metadata
-                for document in documents:
-                    prior = call(frozen_source_metadata, store, run, document["id"])
-                    for key in ("id", "sha256", "title", "author", "institution", "document_type", "published_at"):
-                        if prior.get(key) != document.get(key):
-                            raise HTTPException(409, "Source metadata changed after analysis; use the run's frozen evidence report or a new analysis")
-                selected_ids = [document["id"] for document in documents]
-                marks = ",".join("?" for _identity in selected_ids)
-                values = store.query(f"SELECT payload_json FROM v3_assessments WHERE project_id=? AND run_id=? AND document_id IN({marks}) ORDER BY id LIMIT 2001",
-                                     [project_id, run["id"], *selected_ids])
-                if len(values) > 2000:
-                    raise HTTPException(413, "This guided briefing accepts at most 2,000 saved decisions; use a narrower selection or the full evidence report jobs")
-                findings = [json.loads(item["payload_json"]) for item in values]
-                source_coverage = []
-                for document_id in selected_ids:
-                    units = store.one("SELECT COUNT(*) total,COALESCE(SUM(CASE WHEN status='accepted' THEN 1 ELSE 0 END),0) accepted FROM v3_unit_statuses WHERE run_id=? AND document_id=?", [run["id"], document_id])
-                    source_coverage.append({"document_id": document_id, "units_total": units["total"], "units_accepted": units["accepted"],
-                                            "decisions_retained": sum(item["document_id"] == document_id for item in findings)})
-                provenance = {"run_id": run["id"], "provider": run["config"].get("provider"),
-                    "model": run["config"].get("model") or run.get("model_profile", {}).get("model") or None,
-                    "model_revision": run["config"].get("model_revision"), "method_fingerprint": run["config"].get("method_fingerprint"),
-                    "question": run["config"].get("question"), "perspective": run["config"].get("persona"),
-                    "service_brief_fingerprint": frozen["fingerprint"], "selected_document_ids": selected_ids,
-                    "selection": "selected_sources_and_declared_lenses", "run_status": run["status"],
-                    "coverage": {"original_run": {key: run.get("progress", {})[key]
-                        for key in ("documents_total", "documents_complete", "blocks_total", "blocks_done", "tasks_failed")
-                        if key in run.get("progress", {})}, "selected_sources": source_coverage}}
-            snapshot = {"brief": frozen, "documents": documents, "observations": observations,
-                        "findings": findings, "expert_commentary": notes, "generated_at": utcnow(),
-                        "run_provenance": provenance,
-                        "privacy_disclosure": {"policy": get_policy(store, project_id)["policy"],
-                            "originals_remain_accessible_to_project_readers": True,
-                            "interpretation_reference_status": "reference_pending"}}
+        snapshot, formats, acknowledged = capture_guided_report(
+            store, project_id, body, services, actor_id=actor(request),
+            permissions=current_principal().permissions)
+        frozen = snapshot["brief"]
+        documents = snapshot["documents"]
+        notes = snapshot["expert_commentary"]
         identity = uuid.uuid4().hex
         prefix = f"pilot-reports/{project_id}/{identity}"
         track_artifact(store, project_id, "objects/" + prefix, "guided_report")
@@ -488,7 +552,10 @@ def register(app, services):
             app.state.pilot_report_slots = asyncio.Semaphore(1)
         async with app.state.pilot_report_slots:
             for fmt in formats:
-                result = await asyncio.to_thread(call, build_pilot_report, snapshot, fmt, trusted_reviews=acknowledged)
+                admit_guided_quote(store, project_id, body.get("quote_id"), snapshot)
+                from .local_profile import run_heavy
+                result = await asyncio.to_thread(run_heavy, call, build_pilot_report, snapshot, fmt, trusted_reviews=acknowledged)
+                admit_guided_quote(store, project_id, body.get("quote_id"), snapshot)
                 filename = f"doxa-{frozen['profile_id']}-{identity[:8]}.{result['extension']}"
                 key = prefix + "/" + filename
                 from .privacy_lifecycle import run_activity
@@ -498,7 +565,8 @@ def register(app, services):
                     "sha256": hashlib.sha256(result["content"]).hexdigest(), "object_key": key,
                     "media_type": result["media_type"], "manifest": result["manifest"],
                     "download_url": f"/api/pilot/projects/{project_id}/reports/{identity}/artifacts/{fmt}"})
-        record = {"id": identity, "project_id": project_id, "profile_id": frozen["profile_id"],
+        admit_guided_quote(store, project_id, body.get("quote_id"), snapshot)
+        record = {"id": identity, "project_id": project_id, "quote_id": body.get("quote_id"), "profile_id": frozen["profile_id"],
                   "review_status": "operator_signed" if acknowledged and notes else "provisional",
                   "reference_status": "reference_pending", "created_at": utcnow(), "artifacts": artifacts,
                   "source_ids": [document["id"] for document in documents], "brief_revision": frozen["revision"]}
@@ -560,11 +628,11 @@ def register(app, services):
 
     @app.post("/api/pilot/projects/{project_id}/erase-jobs", status_code=202)
     async def erase_project(project_id: str, body: dict, request: Request):
-        from .privacy_lifecycle import create_erase_job
+        from .privacy_lifecycle import create_erase_job, matches_erasure_key
         store = db()
         previous = store.one("SELECT id,idempotency_key FROM privacy_erase_jobs WHERE project_id=?", [project_id])
         if previous:
-            if previous["idempotency_key"] != body.get("idempotency_key"):
+            if not matches_erasure_key(previous["idempotency_key"], body.get("idempotency_key")):
                 raise HTTPException(409, "This project already has an erasure request")
             return erase_status(previous["id"])
         row = store.one("SELECT name FROM projects WHERE id=?", [project_id])
@@ -575,7 +643,7 @@ def register(app, services):
         key = body.get("idempotency_key")
         if not isinstance(key, str) or not 8 <= len(key) <= 128:
             raise HTTPException(422, "Supply an idempotency key of 8–128 characters")
-        job = call(create_erase_job, store, project_id, actor(request), key)
+        job = await asyncio.to_thread(call, create_erase_job, store, project_id, actor(request), key)
         app.state.tasks["erase:" + job["id"]] = asyncio.create_task(erase_until_waiting(job["id"]))
         return job
 

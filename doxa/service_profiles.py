@@ -17,8 +17,10 @@ from typing import Any
 from .contextual import UNIT_BUILDER_VERSION, build_units
 from .lenses import get_lens
 
-PROFILE_VERSION = "doxa-service-profiles-1.0"
-BRIEF_VERSION = "doxa-service-brief-1.0"
+PROFILE_VERSION = "doxa-service-profiles-1.1"
+BRIEF_VERSION = "doxa-service-brief-1.1"
+LEGACY_PROFILE_VERSION = "doxa-service-profiles-1.0"
+LEGACY_BRIEF_VERSION = "doxa-service-brief-1.0"
 OBSERVATION_VERSION = "doxa-observable-language-1.0"
 ESTIMATE_VERSION = "doxa-work-estimate-1.0"
 
@@ -93,7 +95,9 @@ def get_profile(profile_id: str) -> dict:
         raise ValueError("Unknown service profile; choose company, public or personal")
     profile = deepcopy(_PROFILES[profile_id])
     profile["construct_definitions"] = [{"id": item, **deepcopy(_CONSTRUCTS[item])} for item in profile["constructs"]]
+    from .method_cards import REGISTRY_VERSION
     return {**profile, "version": PROFILE_VERSION, "readiness": deepcopy(_READINESS),
+            "measurement_registry_version": REGISTRY_VERSION,
             "evaluation_requirements": {"status": "reference_pending", "intended_language": "English",
                                         "domain": profile_id, "independent_reference_labels_required": True,
                                         "review_protocol": "Two independent model-blind reviews and separate adjudication",
@@ -203,6 +207,8 @@ def validate_brief(payload: dict) -> dict:
               "comparator_status": "declared_unverified" if comparator else "not_declared",
               "policy_alignment_status": "policy_supplied_unverified" if policy else "not_requested",
               "readiness": deepcopy(_READINESS), "report_sections": profile["report_sections"]}
+    from .method_cards import freeze_method_cards
+    result["method_cards_snapshot"] = freeze_method_cards(lens_ids)
     result["fingerprint"] = _digest(result)
     return result
 
@@ -306,16 +312,56 @@ def _number(value: Any, field: str) -> float:
 def _normalized_existing_brief(brief: Any) -> dict:
     if not isinstance(brief, dict):
         raise ValueError("brief must be an object")
-    if brief.get("schema_version", BRIEF_VERSION) != BRIEF_VERSION or brief.get("method_version", PROFILE_VERSION) != PROFILE_VERSION:
+    version_pair = (brief.get("schema_version", BRIEF_VERSION), brief.get("method_version", PROFILE_VERSION))
+    legacy = version_pair == (LEGACY_BRIEF_VERSION, LEGACY_PROFILE_VERSION)
+    if not legacy and version_pair != (BRIEF_VERSION, PROFILE_VERSION):
         raise ValueError("Unsupported service brief version; create an explicit new brief")
     normalized = validate_brief({key: brief[key] for key in ("profile_id", "question", "audience", "perspective", "lens_ids", "company_policy", "comparator") if key in brief})
+    if legacy:
+        # Reconstruct the old contract exactly. Never backfill a new academic
+        # card into a previously frozen run or change its fingerprint.
+        normalized.pop("method_cards_snapshot", None)
+        normalized["schema_version"] = LEGACY_BRIEF_VERSION
+        normalized["method_version"] = LEGACY_PROFILE_VERSION
+        normalized["fingerprint"] = _digest({key: value for key, value in normalized.items() if key != "fingerprint"})
+    elif "fingerprint" in brief:
+        from .method_cards import validate_snapshot
+        snapshot = brief.get("method_cards_snapshot")
+        validate_snapshot(snapshot)
+        if {card["lens_id"] for card in snapshot["cards"]} != set(normalized["lens_ids"]):
+            raise ValueError("Frozen method-card scope differs from the declared brief lenses")
+        if len({card["id"] for card in snapshot["cards"]}) != len(snapshot["cards"]):
+            raise ValueError("Frozen method cards contain duplicate criteria")
+        # Registry updates cannot rewrite an already frozen contract. The
+        # stored fingerprint binds the snapshot within that contract.
+        normalized["method_cards_snapshot"] = deepcopy(snapshot)
+        normalized["fingerprint"] = _digest({key: value for key, value in normalized.items() if key != "fingerprint"})
     if "fingerprint" in brief and brief["fingerprint"] != normalized["fingerprint"]:
         raise ValueError("Service brief fingerprint no longer matches its analytical fields")
     return normalized
 
 
+def readiness_from_evaluation(report: dict | None = None) -> dict:
+    """Return scope-specific measured readiness, never a global model badge.
+
+    This consumes a server-generated reference report. HTTP handlers must not
+    accept a browser-supplied report as proof of release evidence.
+    """
+    result = deepcopy(_READINESS)
+    if not report:
+        return result
+    readiness = report.get("release_readiness") or {}
+    result.update({"reference_status": readiness.get("status", "reference_pending"),
+                   "evaluation_id": report.get("evaluation_id"),
+                   "reference_set_sha256": report.get("reference_set_sha256"),
+                   "quantitative_supported_finding_gates_met": readiness.get("quantitative_supported_finding_gates_met") is True,
+                   "automated_verdicts_enabled": False, "expert_review_required": True})
+    return result
+
+
 def estimate_analysis(documents: list[dict], brief: dict, *, prices: dict | None = None,
-                      max_unit_chars: int = 1200, context_sentences: int = 2) -> dict:
+                      max_unit_chars: int = 1200, context_sentences: int = 2,
+                      context_policy: str | None = None) -> dict:
     """Count actual source units where available; model token/cost assumptions.
 
     Token ranges are English-oriented heuristics, not confidence intervals or a
@@ -357,14 +403,15 @@ def estimate_analysis(documents: list[dict], brief: dict, *, prices: dict | None
         if not isinstance(blocks, list):
             raise ValueError("Source blocks must be a list")
         source = {**document, "id": document_id or f"estimate-source-{index}", "blocks": blocks}
-        units = build_units(source, max_unit_chars=max_unit_chars, context_sentences=context_sentences)
+        units = build_units(source, max_unit_chars=max_unit_chars, context_sentences=context_sentences,
+                            **({"context_policy": context_policy} if context_policy else {}))
         actual_units += len(units)
         for block in blocks:
             words += len(block["text"].split())
             characters += len(block["text"])
         blocks_count += len(blocks)
         for unit in units:
-            input_source_chars += len(unit["text"]) + sum(len(item["text"]) for item in unit["context_before"] + unit["context_after"])
+            input_source_chars += len(unit["text"]) + sum(len(item["text"]) for item in [*unit.get("structural_context", []), *unit["context_before"], *unit["context_after"]])
     total_units = actual_units + approximate_units
     # Declared planning assumptions, not a reconstruction of provider requests.
     overhead_chars = len(json.dumps([get_lens(item) for item in normalized["lens_ids"]], ensure_ascii=False)) + 4000

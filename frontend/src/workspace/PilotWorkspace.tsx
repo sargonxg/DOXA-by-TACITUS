@@ -46,6 +46,7 @@ type Profile = {
   report_sections?: string[];
 };
 type PrivacyPolicy = {
+  retention_enabled?: boolean;
   raw_retention_days: number;
   derived_retention_days: number;
   allowed_inference_destinations: string[];
@@ -1057,6 +1058,15 @@ export function PilotWorkspace({
                             their prior settings until a policy is saved.
                           </p>
                         )}
+                      <label className="w-pilot-check">
+                        <input type="checkbox" checked={policy.retention_enabled === true}
+                          disabled={!canAdmin || busyNow}
+                          onChange={(event) => setPolicy({ ...policy, retention_enabled: event.target.checked })} />
+                        Enable this project's retention schedule
+                      </label>
+                      <p className="w-footnote">{policyRecord?.enforcement?.automatic_retention === true
+                        ? "This installation can erase opted-in projects automatically at the earliest raw/derived deadline, measured from the last policy save. The whole project is erased; backup/provider expiry is separate."
+                        : "This installation uses manual retention review. Opting in records a due date; automatic erasure also requires the operator to enable the installation scheduler."}</p>
                       <div className="w-pilot-grid">
                         <label>
                           Raw-source retention target · days

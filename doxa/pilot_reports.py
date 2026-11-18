@@ -15,6 +15,7 @@ import json
 from pathlib import Path
 import re
 import threading
+from urllib.parse import urlsplit
 
 from .lenses import get_lens
 from .service_profiles import OBSERVATION_VERSION, get_profile, observe_communication, report_brief
@@ -32,6 +33,8 @@ MAX_EVIDENCE_REFERENCES = 20000
 MAX_ARTIFACT_BYTES = 16 * 1024 * 1024
 EVIDENCE_APPENDIX_LIMIT = 30
 COMMENTARY_APPENDIX_LIMIT = 30
+METHOD_CARD_APPENDIX_LIMIT = 12
+REFERENCE_APPENDIX_LIMIT = 12
 _RESULTS = {"meets_criterion", "does_not_meet", "not_applicable", "uncertain"}
 _FONT_LOCK = threading.Lock()
 _BLOCK_CONTEXT_FIELDS = ("page", "paragraph", "line_start", "line_end", "source_char_start", "source_char_end",
@@ -346,6 +349,9 @@ def freeze_snapshot(snapshot: dict, *, trusted_reviews: bool = False) -> dict:
                            "operator_notes_shown": min(len(commentary), COMMENTARY_APPENDIX_LIMIT),
                            "operator_notes_total": len(commentary),
                            "full_selected_data_formats": ["json", "xlsx"]}}
+    academic = _academic_summary(result)
+    if academic is not None:
+        result["academic_annex"] = academic
     if len(_json(result)) > MAX_ARTIFACT_BYTES // 2:
         raise ValueError("Frozen pilot report input is too large; narrow the selection")
     return result
@@ -353,6 +359,86 @@ def freeze_snapshot(snapshot: dict, *, trusted_reviews: bool = False) -> dict:
 
 def _plain(value) -> str:
     return json.dumps(value, ensure_ascii=False, sort_keys=True) if isinstance(value, (dict, list)) else str(value or "")
+
+
+def _academic_records(snapshot: dict) -> tuple[list[dict], list[dict]]:
+    """Resolve citations from the frozen brief, never a newer registry."""
+    frozen = snapshot["report_brief"]["brief"].get("method_cards_snapshot")
+    if not frozen:
+        return [], []
+    cards = frozen["cards"]
+    references, known = [], {}
+    for card in cards:
+        for raw in card.get("references", []):
+            key = _sha(_json(raw))
+            if key not in known:
+                reference = {**deepcopy(raw), "reference_id": "R" + str(len(references) + 1), "cited_by_criteria": []}
+                references.append(reference)
+                known[key] = reference
+            if card["id"] not in known[key]["cited_by_criteria"]:
+                known[key]["cited_by_criteria"].append(card["id"])
+    return cards, references
+
+
+def _academic_summary(snapshot):
+    cards, references = _academic_records(snapshot)
+    frozen = snapshot["report_brief"]["brief"].get("method_cards_snapshot")
+    if not frozen:
+        return None
+    return {"snapshot_sha256": frozen["snapshot_sha256"], "registry_version": frozen["registry_version"],
+            "method_cards_shown": min(len(cards), METHOD_CARD_APPENDIX_LIMIT), "method_cards_total": len(cards),
+            "references_shown": min(len(references), REFERENCE_APPENDIX_LIMIT), "references_total": len(references),
+            "full_contract_formats": ["json", "xlsx"],
+            "notice": "Academic references motivate operational choices; they do not establish DOXA interpretation accuracy or certify this report."}
+
+
+def _display_method_text(value, maximum=1400):
+    text = "\n".join(str(item) for item in value) if isinstance(value, list) else _plain(value)
+    return text if len(text) <= maximum else text[:maximum] + " … [complete field retained in JSON/XLSX]"
+
+
+def _reference_url(reference):
+    url = str(reference.get("url") or "")
+    parsed = urlsplit(url)
+    return url if parsed.scheme in {"https", "http"} and parsed.hostname and not parsed.username and not parsed.password else None
+
+
+def _reference_link_label(url):
+    # Retain the full URL as the link target and in structured data. A short
+    # visible label keeps long query strings out of a human report's layout.
+    parsed = urlsplit(url)
+    label = (parsed.hostname or "Reference") + parsed.path
+    return label if len(label) <= 110 else label[:107] + "…"
+
+
+def _card_lines(card):
+    return [("Construct", card.get("construct", "")),
+            ("Operational rule", card.get("operational_rule", "")),
+            ("Required context", card.get("required_context", [])),
+            ("Exclusions", card.get("exclusion_rules", [])),
+            ("Permitted report wording", card.get("permitted_report_wording", ""))]
+
+
+def _readable_privacy_lines(value):
+    if not isinstance(value, dict):
+        return [_plain(value)]
+    labels = {"mode": "Source handling", "destination": "Processing destination", "identity_mapping_included": "Identity mapping included in the report"}
+    lines = []
+    for key, item in list(value.items())[:20]:
+        text = "yes" if item is True else "no" if item is False else _display_method_text(item, 1000)
+        lines.append(labels.get(key, str(key).replace("_", " ").capitalize()) + ": " + text)
+    if len(value) > 20:
+        lines.append(f"Showing 20 of {len(value)} supplied privacy declarations; complete values remain in JSON/XLSX.")
+    return lines
+
+
+def _wording_coverage_lines(snapshot):
+    coverage = snapshot["observation_coverage"]
+    return [f"Selected extracted-text blocks scanned: {coverage.get('blocks_scanned', 'not recorded')}; source characters scanned: {coverage.get('characters_scanned', 'not recorded')}.",
+            f"Blocks eligible for authored-wording counts: {coverage.get('authored_eligible_blocks', 'not recorded')}; context blocks excluded from those counts: {coverage.get('excluded_context_blocks', 'not recorded')}.",
+            f"Wording markers retained: {coverage.get('observations_returned', 'not recorded')}; omitted after the declared limit: {coverage.get('observations_omitted', 'not recorded')}.",
+            "Selected extracted-text scan complete: " + ("yes" if coverage.get("source_complete") else "no") + ". This describes the wording scan, not interpretation accuracy or the completeness of original-document extraction.",
+            "Complete coverage counters and frozen selection remain in JSON/XLSX."]
 
 
 def _chart_rows(snapshot: dict) -> list[tuple[str, int]]:
@@ -482,8 +568,36 @@ def _html(snapshot: dict) -> bytes:
         parts.append(f"<p>{escape(row['note'])}</p><p class='muted'>{escape(row['review_status'])} · {escape(row['actor_id'] or 'Identity not verified')} · {escape(row['review_origin'])}</p>")
     parts.append("<h2>Contextual run provenance</h2>")
     parts.extend("<p>" + escape(line) + "</p>" for line in _provenance_lines(snapshot))
-    parts.append("<h2>Privacy, coverage and limitations</h2><pre>" + escape(_plain(snapshot["privacy_disclosure"])) + "</pre>")
-    parts.append("<pre>" + escape(_plain(snapshot["observation_coverage"])) + "</pre><ul>")
+    academic = snapshot.get("academic_annex")
+    if academic:
+        cards, references = _academic_records(snapshot)
+        parts.append("<section aria-label='Methodology and academic foundations'><h2>Methodology and academic foundations</h2>")
+        parts.append("<p>" + escape(academic["notice"]) + "</p>")
+        parts.append(f"<p>Showing {academic['method_cards_shown']} of {academic['method_cards_total']} frozen method cards and {academic['references_shown']} of {academic['references_total']} unique references. Fields are bounded for readability; complete contracts and references remain in JSON/XLSX.</p>")
+        parts.append("<p>Frozen registry: " + escape(academic["registry_version"]) + " · Snapshot SHA256: " + escape(academic["snapshot_sha256"]) + "</p>")
+        for card in cards[:METHOD_CARD_APPENDIX_LIMIT]:
+            parts.append("<h3>" + escape(card["id"] + " · " + card["label"]) + "</h3>")
+            for name, value in _card_lines(card):
+                parts.append("<p><strong>" + escape(name) + ":</strong> " + escape(_display_method_text(value)) + "</p>")
+            identifiers = [reference["reference_id"] for reference in references if card["id"] in reference["cited_by_criteria"]]
+            parts.append("<p class='muted'>References: " + escape(", ".join(identifiers)) + " · Frozen card SHA256: " + escape(card["card_sha256"]) + "</p>")
+        parts.append("<h3>Primary references and their limited role</h3>")
+        for reference in references[:REFERENCE_APPENDIX_LIMIT]:
+            title = f"{reference['reference_id']}. {reference.get('authors', '')} ({reference.get('year', '')}). {reference.get('title', '')}"
+            parts.append("<p><strong>" + escape(_display_method_text(title, 600)) + "</strong></p>")
+            url = _reference_url(reference)
+            if url:
+                parts.append("<p><a rel='noopener noreferrer' href='" + escape(url, quote=True) + "'>" + escape(_reference_link_label(url)) + "</a></p>")
+            parts.append("<p><strong>Supports this design choice:</strong> " + escape(_display_method_text(reference.get("supported_claim", ""), 700)) + "</p>")
+            parts.append("<p><strong>Does not establish:</strong> " + escape(_display_method_text(reference.get("does_not_establish", ""), 700)) + "</p>")
+        parts.append("</section>")
+    if academic:
+        parts.append("<h2>Privacy, coverage and limitations</h2>")
+        parts.extend("<p>" + escape(line) + "</p>" for line in _readable_privacy_lines(snapshot["privacy_disclosure"]) + _wording_coverage_lines(snapshot))
+        parts.append("<ul>")
+    else:
+        parts.append("<h2>Privacy, coverage and limitations</h2><pre>" + escape(_plain(snapshot["privacy_disclosure"])) + "</pre>")
+        parts.append("<pre>" + escape(_plain(snapshot["observation_coverage"])) + "</pre><ul>")
     parts.extend("<li>" + escape(item) + "</li>" for item in brief["limitations"] + snapshot["observation_limitations"])
     parts.append("</ul><p>Source hashes and the frozen brief are included in the companion manifest; original bytes were not re-read by this renderer. Complete selected blocks, observations and notes are available in JSON/XLSX.</p></body></html>")
     return "".join(parts).encode("utf-8")
@@ -594,9 +708,35 @@ def _pdf(snapshot: dict) -> tuple[bytes, dict]:
     paragraph("Contextual run provenance", "Heading2")
     for line in _provenance_lines(snapshot):
         paragraph(line)
+    academic = snapshot.get("academic_annex")
+    if academic:
+        cards, references = _academic_records(snapshot)
+        paragraph("Methodology and academic foundations", "Heading2")
+        paragraph(academic["notice"])
+        paragraph(f"Showing {academic['method_cards_shown']} of {academic['method_cards_total']} frozen method cards and {academic['references_shown']} of {academic['references_total']} unique references. Fields are bounded for readability; complete contracts and references remain in JSON/XLSX.")
+        paragraph("Frozen registry: " + academic["registry_version"])
+        paragraph("Snapshot SHA256: " + academic["snapshot_sha256"])
+        for card in cards[:METHOD_CARD_APPENDIX_LIMIT]:
+            paragraph(card["id"] + " · " + card["label"], "Heading3")
+            for name, value in _card_lines(card):
+                paragraph(name + ": " + _display_method_text(value))
+            identifiers = [reference["reference_id"] for reference in references if card["id"] in reference["cited_by_criteria"]]
+            paragraph("References: " + ", ".join(identifiers) + " · Frozen card SHA256: " + card["card_sha256"])
+        paragraph("Primary references and their limited role", "Heading3")
+        for reference in references[:REFERENCE_APPENDIX_LIMIT]:
+            paragraph(_display_method_text(f"{reference['reference_id']}. {reference.get('authors', '')} ({reference.get('year', '')}). {reference.get('title', '')}", 600))
+            url = _reference_url(reference)
+            if url:
+                story.append(Paragraph('<link color="#1f7a70" href="' + escape(url, quote=True) + '">' + escape(_reference_link_label(url)) + '</link>', styles["BodyText"]))
+            paragraph("Supports this design choice: " + _display_method_text(reference.get("supported_claim", ""), 700))
+            paragraph("Does not establish: " + _display_method_text(reference.get("does_not_establish", ""), 700))
     paragraph("Privacy, coverage and limitations", "Heading2")
-    paragraph(snapshot["privacy_disclosure"])
-    paragraph(snapshot["observation_coverage"])
+    if academic:
+        for line in _readable_privacy_lines(snapshot["privacy_disclosure"]) + _wording_coverage_lines(snapshot):
+            paragraph(line)
+    else:
+        paragraph(snapshot["privacy_disclosure"])
+        paragraph(snapshot["observation_coverage"])
     for limit in brief["limitations"] + snapshot["observation_limitations"]:
         paragraph(limit)
     paragraph("Original file bytes were not re-read by the renderer. Source hashes are recorded metadata; extracted block hashes, source selection and the frozen brief are retained in the companion manifest and complete selected JSON/XLSX.")
@@ -675,6 +815,21 @@ def _xlsx(snapshot: dict) -> bytes:
     method_text = _plain(snapshot["report_brief"])
     sheet("Method and coverage", ["Field", "Part", "Value"], [("Frozen method", index // 32000 + 1, method_text[index:index + 32000]) for index in range(0, len(method_text), 32000)] +
           [("Counts", 1, snapshot["counts"]), ("Coverage", 1, snapshot["observation_coverage"]), ("Input snapshot SHA256", 1, _sha(_json(snapshot)))])
+    if snapshot.get("academic_annex"):
+        cards, references = _academic_records(snapshot)
+        def complete_rows(rows):
+            # Every long field survives Excel's cell limit with an explicit
+            # part number; no reference or operational rule is silently cut.
+            for row in rows:
+                fragments = [[value] if isinstance(value, (int, float, bool)) else [_plain(value)[offset:offset + 32000] for offset in range(0, max(1, len(_plain(value))), 32000)] for value in row[1:]]
+                for part in range(max([len(values) for values in fragments] + [1])):
+                    yield [row[0], part + 1, *[values[part] if part < len(values) else "" for values in fragments]]
+        sheet("Academic methods", ["Criterion", "Part", "Label", "Construct", "Kind", "Operational rule", "Required context", "Exclusions", "Permitted report wording", "Reference IDs", "Card SHA256"], complete_rows([
+            [card["id"], card["label"], card.get("construct", ""), card.get("criterion_kind", ""), card.get("operational_rule", ""), "\n".join(card.get("required_context", [])), "\n".join(card.get("exclusion_rules", [])), card.get("permitted_report_wording", ""), ", ".join(reference["reference_id"] for reference in references if card["id"] in reference["cited_by_criteria"]), card["card_sha256"]]
+            for card in cards]))
+        sheet("Academic references", ["Reference ID", "Part", "Authors", "Year", "Title", "Source URL", "Supports this design choice", "Does not establish", "Cited by criteria"], complete_rows([
+            [reference["reference_id"], reference.get("authors", ""), reference.get("year", ""), reference.get("title", ""), reference.get("url", ""), reference.get("supported_claim", ""), reference.get("does_not_establish", ""), "\n".join(reference["cited_by_criteria"])]
+            for reference in references]))
     source_fields = ["document_id", "source_sha256", "source_hash_origin", "extracted_blocks_sha256", "source_version_id"]
     sheet("Source provenance", source_fields, [[row[field] for field in source_fields] for row in snapshot["source_records"]])
     provenance_values = list(snapshot["run_provenance"].items()) if snapshot["run_provenance"] is not None else [("Status", "No contextual run provenance supplied; no model identity invented.")]
@@ -721,4 +876,6 @@ def build_pilot_report(snapshot: dict, format: str, *, trusted_reviews: bool = F
                 "appendix": frozen["appendix"], "pdf_font": extras or None,
                 "data_scope": "full bounded selected input; not necessarily the entire project",
                 "delivery": "bounded synchronous artifact; not a durable report job"}
+    if frozen.get("academic_annex"):
+        manifest["academic_annex"] = frozen["academic_annex"]
     return {"content": content, "media_type": formats[format], "extension": format, "manifest": manifest}

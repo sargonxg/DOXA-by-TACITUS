@@ -18,7 +18,11 @@ import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
-import fitz
+from io import BytesIO
+
+from pdfminer.high_level import extract_pages
+from pdfminer.layout import LTImage, LTTextContainer
+from pypdf import PdfReader
 import httpx
 from bs4 import BeautifulSoup
 
@@ -26,7 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "corpus" / "manifest.json"
 DOCUMENTS = ROOT / "corpus" / "documents"
 AUDIT = ROOT / "benchmarks" / "corpus-audit.json"
-EXTRACTOR_VERSION = "doxa-public-corpus-v1"
+EXTRACTOR_VERSION = "doxa-public-corpus-v2"
 
 
 def digest(data: bytes) -> str:
@@ -46,29 +50,30 @@ def extract_pdf(raw: bytes, doc_id: str) -> tuple[list[dict], dict]:
     blocks: list[dict] = []
     images = 0
     page_total = 0
-    with fitz.open(stream=raw, filetype="pdf") as pdf:
-        if pdf.is_encrypted:
-            raise ValueError("Encrypted source PDF")
-        page_total = len(pdf)
-        for page_index, page in enumerate(pdf):
-            images += len(page.get_images())
-            paragraph = 0
-            for block in page.get_text("blocks", sort=True):
-                if len(block) > 6 and block[6] != 0:
-                    continue
-                text = clean(block[4])
-                if not text:
-                    continue
-                paragraph += 1
-                blocks.append({
-                    "id": f"{doc_id}-p{page_index + 1:04d}-b{paragraph:04d}",
-                    "text": text,
-                    "page": page_index + 1,
-                    "paragraph": paragraph,
-                })
+    pdf = PdfReader(BytesIO(raw))
+    if pdf.is_encrypted:
+        raise ValueError("Encrypted source PDF")
+    page_total = len(pdf.pages)
+    def count_images(node):
+        if isinstance(node, LTImage):
+            return 1
+        return sum(count_images(child) for child in node) if hasattr(node, "__iter__") and not isinstance(node, LTTextContainer) else 0
+    for page_index, page in enumerate(extract_pages(BytesIO(raw))):
+        images += count_images(page)
+        paragraph = 0
+        for block in page:
+            if not isinstance(block, LTTextContainer):
+                continue
+            text = clean(block.get_text())
+            if not text:
+                continue
+            paragraph += 1
+            blocks.append({"id": f"{doc_id}-p{page_index + 1:04d}-b{paragraph:04d}",
+                           "text": text, "page": page_index + 1, "paragraph": paragraph})
+    pdf.close()
     return blocks, {
         "page_count": page_total,
-        "extraction_method": "pymupdf-text-blocks",
+        "extraction_method": "pdfminer-six-text-boxes-v1",
         "excluded_material": [
             {"category": "non-text-images", "count": images,
              "reason": "Images, seals and photos are not included in the text snapshot."}

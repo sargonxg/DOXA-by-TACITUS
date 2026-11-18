@@ -81,7 +81,7 @@ def main():
         fixtures(local_data)
         with environment(DOXA_ACCESS_MODE="local", DOXA_ACCESS_CONFIG_FILE=None, DOXA_CLOUD_STATE_URL=None,
                          DOXA_PRIVACY_VAULT_KEY=base64.b64encode(secrets.token_bytes(32)).decode()):
-            with local_app(local_data) as base, sync_playwright() as playwright:
+            with local_app(local_data, start_workers=True) as base, sync_playwright() as playwright:
                 browser = playwright.chromium.launch(**chromium_launch_options())
                 page = browser.new_page(viewport={"width": 1440, "height": 1000})
                 page.on("pageerror", lambda error: errors.append(str(error)))
@@ -142,7 +142,10 @@ def main():
                 page.get_by_role("textbox", name="Unchanged evidence quotation", exact=True).fill("Please review the draft by Friday.")
                 page.get_by_role("textbox", name="Evidence-linked reviewer note", exact=True).fill("Synthetic reviewer note: request wording is observable; politeness needs relationship context.")
                 page.get_by_label("Record my declared operator review of this note", exact=True).check()
-                page.get_by_role("button", name="Generate guided report", exact=True).click()
+                with page.expect_response(lambda response: response.request.method == "POST" and response.url.endswith("/api/v3/projects/pilot/jobs")) as submitted:
+                    page.get_by_role("button", name="Generate guided report", exact=True).click()
+                assert submitted.value.status == 202
+                assert submitted.value.json()["kind"] == "guided_report"
                 report_panel = page.locator(".w-pilot-service-report")
                 expect(report_panel.get_by_text("Operator commentary signed", exact=True)).to_be_visible(timeout=60000)
                 expect(report_panel.get_by_role("link")).to_have_count(4)
@@ -151,7 +154,7 @@ def main():
                 pdf = output / "personal-guided-report.pdf"
                 download.value.save_as(pdf)
                 assert pdf.read_bytes().startswith(b"%PDF")
-                checks.append("Actual guided PDF/HTML/XLSX/JSON artifacts retain an exact Unicode-anchored operator note and pending independent validation")
+                checks.append("A real202 guided job renders PDF/HTML/XLSX/JSON through durable workers, retaining an exact Unicode-anchored operator note and pending independent validation")
                 checks.append("Historical contextual decisions require explicit inclusion and fail the brief-matching gate; wording-only reports remain available")
 
                 page.get_by_role("button", name="Inquiry brief", exact=True).click()

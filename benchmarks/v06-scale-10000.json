@@ -1,0 +1,136 @@
+{
+  "schema_version": "doxa-synthetic-scale-0.6",
+  "application_version": "0.6.0",
+  "benchmark_kind": "synthetic_native_txt_persistence_and_complete_export",
+  "synthetic": true,
+  "documents": 10000,
+  "scheduler_probe_documents": 128,
+  "hardware": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "machine": "x86_64",
+    "logical_cpus": 5,
+    "host_memory_bytes": 18882662400,
+    "cgroup_memory_max": "17179869184",
+    "cgroup_cpu_max": "400000 100000",
+    "note": "Observed host/container, not an 8 GB laptop or cloud service qualification."
+  },
+  "script_sha256": "7e654d2a5d2e20c25b17b50119e7cdc97632ba8caa652801770c2996060fa54d",
+  "interpretation_accuracy": null,
+  "independent_reference_labels": false,
+  "fresh_model_loads": 0,
+  "isolation": "New caller-owned TemporaryDirectory only; no existing source workspace is opened.",
+  "limitations": [
+    "Generated short TXT fixtures exercise native canonical storage, indexing, pagination and export, not multipart upload, binary documents, PDF or OCR throughput.",
+    "Only the explicitly counted lexical scheduler subset is executed; the complete source export covers every generated document.",
+    "Lexical processing is not LLM inference or contextual prejudice analysis; no accuracy, inference throughput or production capacity claim follows.",
+    "Timing and RSS include benchmark verification overhead. Parent and child high-water RSS are separate, not a simultaneous process-tree peak."
+  ],
+  "pagination_pages": 100,
+  "scheduler_tasks": {
+    "total": 128,
+    "completed": 128,
+    "failed": 0
+  },
+  "lexical_usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cost_usd": 0.0,
+    "requests": 0,
+    "estimated": false
+  },
+  "fresh_store_open_after_report_checkpoint": true,
+  "query_id": "8420b362cb114d5ebbe6f51855f43459",
+  "scope_hash": "00621f874295c7f875f3550c5e45e545ed1082bc5d393ae15588de741f27dbaf",
+  "report_job_id": "1961b76776b34f418f59d08b78c5209c",
+  "source_documents_sha256": "63a142a6c919057515db22aa581f69dc0b75b6077adc205fe1497c6a7214011d",
+  "input_text_bytes": 1590000,
+  "input_words": 200000,
+  "workbook": {
+    "Documents": {
+      "physical_rows": 10000,
+      "logical_rows": 10000
+    },
+    "Findings": {
+      "physical_rows": 0,
+      "logical_rows": 0
+    },
+    "zip_members": 17,
+    "uncompressed_bytes": 34940592
+  },
+  "artifacts": [
+    {
+      "format": "inputs",
+      "bytes": 2932320,
+      "sha256": "fb27af15a669178e66accf5610523395bf782c11e06c0fbe734f7caecd52adf8"
+    },
+    {
+      "format": "manifest",
+      "bytes": 1919,
+      "sha256": "e9f75471887fb8020bfe91046864114228230e9ede06dbbc114485da1ee421e1"
+    },
+    {
+      "format": "snapshot",
+      "bytes": 2503131,
+      "sha256": "2015ff796261495c579130f255cfa7180a8e5b072950d159ccb41d2a91f85b20"
+    },
+    {
+      "format": "xlsx",
+      "bytes": 3267994,
+      "sha256": "f63bae6f9f54a016c668459632f724a76354583fc6eef441329e97bcc146f664"
+    }
+  ],
+  "inference_requests": 0,
+  "new_budget_reservations": 0,
+  "network_attempts_blocked": {},
+  "completed_contextual_documents": 0,
+  "contextual_assessments": 0,
+  "retained_workbook": {
+    "file": "examples/v06-scale-10000.xlsx",
+    "bytes": 3267994,
+    "sha256": "f63bae6f9f54a016c668459632f724a76354583fc6eef441329e97bcc146f664"
+  },
+  "storage": {
+    "after_persistence_bytes": 77926727,
+    "before_cleanup_bytes": 88382457
+  },
+  "checks": {
+    "all_source_ids_and_blocks_unchanged_after_replay": true,
+    "exact_document_count_after_replay": true,
+    "canonical_import_commits_complete": true,
+    "http_pagination_exact_membership": true,
+    "fts_exact_probe": true,
+    "lexical_scheduler_subset_complete": true,
+    "expired_analysis_lease_recovered": true,
+    "terminal_analysis_replay_no_new_work": true,
+    "no_lexical_findings_in_fixture": true,
+    "frozen_query_contains_every_source": true,
+    "persistent_report_checkpoint_frozen": true,
+    "expired_report_lease_recovered": true,
+    "terminal_report_redelivery_same_artifacts": true,
+    "workbook_all_source_rows": true,
+    "workbook_no_model_assessments": true,
+    "source_content_unchanged_after_reporting": true,
+    "sqlite_integrity": true,
+    "no_provider_reservations": true,
+    "no_assessments_or_human_reviews": true,
+    "no_model_requests": true,
+    "no_network_or_forbidden_provider_attempts": true,
+    "temporary_workspace_removed": true
+  },
+  "passed": true,
+  "timing_seconds": {
+    "persist_txt": 42.02778618699813,
+    "replay_all_txt": 54.8503228260015,
+    "http_pagination": 1.5190546060039196,
+    "lexical_scheduler_probe": 0.5145737049970194,
+    "persistent_xlsx_capture_render": 13.32916402900446,
+    "total_before_cleanup": 117.42389396199724
+  },
+  "process_peak_rss_bytes": 101564416,
+  "child_lifetime_peak_rss_bytes": 160342016,
+  "torch_imported": false,
+  "transformers_imported": false,
+  "temporary_workspace_removed": true,
+  "elapsed_seconds": 118.48828197800322
+}

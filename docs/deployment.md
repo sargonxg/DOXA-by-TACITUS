@@ -2,11 +2,11 @@
 
 DOXA runs one Python API/worker and a static browser interface. Local state lives in SQLite and files. The Cloudflare profile uses the same Python analysis code with D1 metadata, R2 originals/checkpoints/reports, and durable Queues dispatch. Inference is a separate, explicitly selected provider. A lexical demonstration works without downloading a model; it does not perform semantic analysis.
 
-v0.5 adds [dedicated native guided-pilot operation](managed-pilots-v05.md), with individual access, privacy policies and live-project erasure. Native schema 5 is an ordered upgrade with a database backup; stop prior servers and back up both database and objects first. The existing Cloudflare profile retains schema 4 and its shared-workspace contract. Managed pilot mode refuses remote persistence, and POSIX is required for the new private provisioning/erasure path. These controls do not implement OAuth connectors, subscriptions or shared SaaS tenancy.
+v0.6 extends [dedicated native guided-pilot operation](managed-pilots-v05.md) with [low-memory diagnostics](local-v06.md), [permissive PDF extraction](extraction-v06.md), [persistent activities](activity-jobs-v06.md), and [deletion-safe restore](privacy-lifecycle-v06.md). Native schema 6 is an ordered upgrade with a checked database backup; stop prior servers and back up both database and objects first. The existing Cloudflare profile retains schema 4 and its shared-workspace contract. Managed pilot mode refuses remote persistence, and POSIX is required for the new private provisioning/erasure path. These controls do not implement OAuth connectors, subscriptions or shared SaaS tenancy.
 
 ## Local Docker
 
-Prerequisites: Docker with Compose, at least 6 GB RAM for document processing, and additional RAM/VRAM for your chosen local model. No GPU is required to start the application.
+The default profile targets an **8 GB host** with Docker Compose. Compose enforces a **4 GiB application-container limit**, one heavy operation/parser, a 1,536 MiB parser ceiling and bounded CPU batches. Native Python applies worker/parser controls without enforcing an aggregate process-tree memory limit. The browser, operating system and any separate model server need additional memory. Physical 8 GB usability/performance remains a qualification task; no GPU or generative model is required to start or explore the supplied examples.
 
 For the full 5,000-article collection together with local model weights, retained analysis history, indexes, report exports and Docker builds, **at least 30 GB of free disk space is recommended before starting**. This is operating headroom, not a storage guarantee: an observed 32 GB execution filesystem filled during builds and export/fork work because images, build cache and SQLite WAL shared the same disk. Larger models, more versions or concurrent exports can require more. Monitor both the data volume and temporary/build storage. Preserve source documents and checkpoints; back up the data volume before removing anything, and review unused build cache or old export copies separately. An API **HTTP 507** response means storage was exhausted before a response could be generated; free space and retry the operation.
 
@@ -15,7 +15,7 @@ cp .env.example .env
 docker compose up --build -d
 ```
 
-Open <http://localhost:8000>. Load the bundled 20-document example, inspect its sources, and select a provider before starting an analysis. The app binds to localhost by default. The named `doxa-data` volume persists your documents and work; `docker compose down` preserves it. Back up this volume before upgrades. `docker compose down -v` deletes it.
+Open <http://localhost:8000>. Use **Try five practice sources** for explicitly fictional intake/reporting practice, or explore the recorded twenty-source public example without fresh inference. Inspect the question, source context and processing destination before starting a new analysis. Run `docker compose exec app doxa doctor --json --data-dir /data` for content-free configuration diagnostics. The app binds to localhost by default. The named `doxa-data` volume persists your documents and work; `docker compose down` preserves it. Back up this volume before upgrades. `docker compose down -v` deletes it.
 
 Behind a corporate TLS inspection proxy, supply your organization's CA bundle as a temporary BuildKit secret: `docker build --secret id=doxa_build_ca,src=/path/to/company-ca.pem -t doxa:local .`. The build uses it for npm/pip TLS verification without copying it into the image or disabling certificate checks.
 
@@ -109,7 +109,7 @@ The create commands are examples of explicit provisioning, not steps run by the 
 
 ### Operating and testing
 
-Version 0.5 upgrades a native workspace to schema 5 only after creating and checking a private SQLite backup under its data directory's `backups/`. The Cloudflare profile retains schema 4. Startup rejects an unsupported future schema. Back up object files alongside the database before an operator upgrade; a database backup alone does not contain originals or saved report inputs.
+Version 0.6 upgrades a native workspace to schema 6 only after creating and checking a private SQLite backup under its data directory's `backups/`. The Cloudflare profile retains schema 4. Startup rejects an unsupported future schema. Back up object files alongside the database before an operator upgrade; a database backup alone does not contain originals or saved report inputs.
 
 An existing remote D1 workspace requires an operator-created backup before its first schema-4 startup. Export D1 and preserve the matching R2 objects, check the export, then add `DOXA_MIGRATION_BACKUP_RECEIPT` to the Worker's configuration with a meaningful backup identifier or immutable receipt URL. The container forwards this value to the migration guard. This value records the operator's receipt; DOXA does not claim to create or verify a production D1 backup itself. A fresh empty database initializes automatically. Configure `DOXA_REVIEWER_ID` for a trusted operator identity before remote human review; browser-supplied identities cannot elevate review records.
 
@@ -139,13 +139,27 @@ For a vLLM deployment, the operator creates a private GPU instance/container, in
 
 Runpod bills initialization, inference and idle timeout. Official current Serverless rates include 24 GB L4/A5000/3090 at $0.00019/s and 48 GB A6000/A40 at $0.00034/s. Async results are retained only 30 minutes; DOXA's own committed artifacts remain the source of truth. See [billing](https://docs.runpod.io/serverless/pricing) and [settings/rates](https://docs.runpod.io/serverless/endpoints/endpoint-configurations).
 
-The same Python container can run on GCP Cloud Run. Use Cloud Run Jobs for long processing, durable external metadata/object storage, and the existing bounded task contract; do not store a production SQLite database on its ephemeral filesystem. L4 GPU Jobs need at least 4 CPU/16 GiB memory and offer 24 GB VRAM. At checked `us-central1` ordinary Jobs rates, the minimum L4 configuration is approximately $1.047/hour before CPU/RAM allowances, storage, builds and networking. A GPU job has a 12-hour maximum task timeout and still needs checkpoints. [GPU Jobs](https://docs.cloud.google.com/run/docs/configuring/jobs/gpu) · [pricing](https://cloud.google.com/run/pricing). A native GCP durable-storage/dispatch adapter is a growth path; the supplied deploy script targets Cloudflare only.
+The same Python container can run on GCP Cloud Run. Use Cloud Run Jobs for long processing, durable external metadata/object storage, and the existing bounded task contract; do not store a production SQLite database on its ephemeral filesystem. L4 GPU Jobs need at least 4 CPU/16 GiB memory and offer 24 GB VRAM. At checked `us-central1` ordinary Jobs rates, the minimum L4 configuration is approximately $1.047/hour before CPU/RAM allowances, storage, builds and networking. A GPU job has a 12-hour maximum task timeout and still needs checkpoints. [GPU Jobs](https://docs.cloud.google.com/run/docs/configuring/jobs/gpu) · [pricing](https://cloud.google.com/run/pricing). This is an optional infrastructure alternative, not the dedicated-pilot default. The existing `scripts/deploy-cloudflare.sh` targets the private Cloudflare profile; the new dedicated native GCP recipe is separate and described below.
+
+## Dedicated US hosted pilots
+
+Use the [GCP pilot guide](hosted-pilots-v06.md) and `infra/gcp/` for the dedicated native path: one customer installation per US-region VM, encrypted persistent storage, HTTPS, separate secrets and private backups. Personal and organizational installations remain separate. This recipe does not convert the existing D1/R2 workspace into managed shared SaaS.
+
+`infra/gcp/check.sh` performs formatting/provider-schema and local script checks without provisioning resources. Real deployment requires an existing billed project, reviewed digest-pinned images, DNS and private secret configuration, followed by an explicit operator Terraform apply. Configuration checks do not prove actual TLS, backup recovery, customer isolation under production load or audited end-to-end US residency. No deployment is performed simply by opening the app.
+
+The hosted setup keeps accepted customer scope and internal processing caps separate from provider costs. Quote acceptance records an agreement hash, not a payment; initial invoices and onboarding remain operator-managed. Read [commercial readiness](commercial-service-roadmap.md) for reviewer, legal, support, security, data-rights and capacity gates.
+
+### Retention and restore
+
+Local retention remains manual by default. Automatic erasure needs both `DOXA_AUTOMATIC_RETENTION=true` and an explicitly saved project policy with `retention_enabled=true`, together with the external deletion ledger configuration. The implemented deadline is the earliest raw/derived retention interval **from the latest policy save**, and the operation erases the **whole project**. It is not a promise of separate artifact-tier expiry or a timer beginning thirty days after report delivery.
+
+Before serving a restored database and its matching objects, startup applies the separately retained signed deletion obligations. Missing, stale or invalid configured ledger state blocks readiness. Backup/provider expiry is recorded separately and is not independently verified by a ledger entry. See the [retention and recovery procedure](privacy-lifecycle-v06.md); test a real restore before accepting confidential customer material.
 
 ## Installed wheel and external demonstration data
 
-The v0.5 release wheel contains the compiled browser application and Python engine. From an empty directory, install the downloaded wheel with `python -m pip install ./doxa_by_tacitus-0.5.0-py3-none-any.whl`, then run `doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data`. Python dependencies still install normally; native PDF rendering can require system libraries, for which Docker supplies the documented environment.
+The v0.6 release wheel contains the compiled browser application and Python engine. From an empty directory, install the downloaded wheel with `python -m pip install ./doxa_by_tacitus-0.6.0-py3-none-any.whl`, then run `doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data`. Python dependencies still install normally; native PDF rendering can require system libraries, for which Docker supplies the documented environment.
 
-The full corpora and recorded results remain repository/release artifacts rather than inflating the application wheel. To expose those import collections from an installed application, set `DOXA_ASSET_ROOT` to a clone of this repository containing `corpus/` and `benchmarks/`. Keep `--data-dir` separate for your mutable workspace. The installed UI is always loaded from the wheel; external data does not replace it.
+The wheel includes five clearly fictional practice texts and the small read-only recorded starter. The complete corpora and original result packages remain repository/release artifacts rather than inflating the application wheel. To expose those import collections from an installed application, set `DOXA_ASSET_ROOT` to a clone of this repository containing `corpus/` and `benchmarks/`. Keep `--data-dir` separate for your mutable workspace. The installed UI is always loaded from the wheel; external data does not replace it.
 
 ## Optional private visible-request capture
 

@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.6.0 — 2026-11-17
+
+The next refinement keeps one evidence workbench while making local setup, analytical contracts and long work easier to inspect. The low-memory default targets an 8 GB host; Compose limits the application container and child workers to 4 GiB. This is a configured boundary, not a measured whole-host hardware or model-throughput claim.
+
+- Guided workflow, safe `doxa doctor --json`, UI/API build compatibility checks and five packaged synthetic practice sources and a separate twenty-real-source recorded explorer with PDF/XLSX/HTML/JSON artifacts; optional CPU-lite ONNX adapter remains an unqualified candidate with no automatic weight installation.
+- Default PDF extraction uses pdfminer.six and pypdf. New extraction versions preserve historical source text and offsets; scan/layout/OCR limitations remain visible. PyMuPDF is an explicit legacy extra.
+- Frozen academic measurement cards in new service briefs and report annexes; preregistered reference panels, criterion diagnostics and evidence-based quality gates without invented human labels.
+- Explicit structural-context policy with heading/mail ancestry anchors, missing-context records and additional unexecuted behavioral challenges.
+- Auditable matched cohorts, exclusion reasons and prospective alert-review tools. Existing trajectory statistics are retained; comparison does not establish motive, factuality or causation.
+- Persistent ZIP import, semantic indexing and guided report activities reuse source identities and the report engine, with restart/cancellation, permission rechecks and verified downloads.
+- Optional whole-project retention and signed external deletion obligations applied before serving restored backups. Retention is off by default, anchors at the latest policy save and uses the earliest raw/derived deadline; backup/provider expiry is separately recorded.
+- Dedicated GCP pilot tooling and server-owned fixed-scope quotes, exact-scope acceptance and internal processing caps. Deployment checks do not constitute a live customer deployment, payment integration or shared SaaS qualification.
+- A separately recorded 10,000-short-synthetic-TXT intake/replay/pagination/export proof and 128-task lexical recovery check; this is not contextual-inference throughput or physical 8 GB qualification.
+- Native schema 6 with pre-upgrade backup; Cloudflare's existing private workspace remains schema 4. Historical results and publication artifacts remain unchanged.
+
+The new real-browser refinement flow passed twelve checks with zero mocked routes, page errors or inference requests. See [refinements](docs/refinement-v06.md), [local operation](docs/local-v06.md), [privacy/recovery](docs/privacy-lifecycle-v06.md) and the [verification record](docs/verification-v06.md) for measured scope. Independent human studies, qualified delivery, OAuth connectors, subscriptions and shared SaaS remain commercial milestones.
+
 ## 0.5.0 — 2026-11-17
 
 The guided-pilot foundation adds Company, Public and Personal inquiry profiles to the one-page workbench. Save a versioned question and scope, import authorized messages or selected writing, estimate work, inspect exact wording observations, and generate bounded PDF/HTML/XLSX/JSON briefings. New synthetic examples disclose zero inference and pending human reference labels.

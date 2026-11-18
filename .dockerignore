@@ -10,6 +10,8 @@
 **/.ruff_cache
 .venv
 data
+!doxa/data
+!doxa/data/**
 artifacts
 frontend/dist
 *.egg-info
@@ -17,3 +19,6 @@ dist
 build
 benchmarks/private
 benchmarks/*.checkpoint.json
+infra/gcp/.terraform
+infra/gcp/*.tfstate*
+infra/gcp/*.tfvars

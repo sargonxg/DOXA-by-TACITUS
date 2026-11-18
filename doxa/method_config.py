@@ -14,6 +14,7 @@ import uuid
 
 METHOD_CONFIG_VERSION = "0.4"
 OPERATIONAL_KEYS = frozenset({
+    "quote_id", "commercial_pricing",
     "budget_usd", "monthly_budget_usd", "budget_changes", "budget_history",
     "concurrency", "workers", "worker_count", "task_timeout_seconds", "task_lease_seconds",
     "task_timeout_source", "task_execution_history", "timing_history", "execution_history",

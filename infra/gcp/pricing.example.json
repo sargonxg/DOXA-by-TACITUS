@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "revision": "EXAMPLE_ONLY_REPLACE_WITH_APPROVED_CURRENT_PRICES",
+  "rates": [
+    {
+      "provider": "openai",
+      "model": "REPLACE_WITH_APPROVED_MODEL",
+      "endpoint": "https://api.openai.com/v1",
+      "input_price_per_million": 1.0,
+      "output_price_per_million": 2.0
+    }
+  ]
+}

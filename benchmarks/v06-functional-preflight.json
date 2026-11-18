@@ -1,0 +1,24 @@
+{
+  "available_fixtures": 120,
+  "casebook_sha256": "1d3565767cc1844802157e0e47220d4462b1f6166202886d6d5cb863a687eeb7",
+  "independent_reference_labels": false,
+  "interpretation_accuracy": null,
+  "model_requests": 0,
+  "network_requests": 0,
+  "notice": "Authored expectations are not executed model successes. Dry preparation makes no provider calls.",
+  "required_before_execution": [
+    "explicit execute flag",
+    "human rubric-review record for each fixture",
+    "provider configuration and finite spend cap",
+    "remote-transfer permission for remote endpoints"
+  ],
+  "selected_fixture_ids": [
+    "a4e8d4f32266834ad7b2cf8cdb3451b5",
+    "bdec65c49b26b0cb136a5d09ab615fba",
+    "8473bd19cc41f068cb0eda99eb896b15",
+    "6e2f0cdd96f749cf2c9ee2fea1252112",
+    "e79f41abd1c54a07a278ff56bbb15e00"
+  ],
+  "selected_fixtures": 5,
+  "status": "prepared_not_run"
+}

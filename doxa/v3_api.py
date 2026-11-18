@@ -4,6 +4,7 @@ from __future__ import annotations
 import asyncio
 import json
 import math
+import os
 import uuid
 from contextlib import nullcontext
 
@@ -38,8 +39,13 @@ def register(app: FastAPI, services: dict) -> None:
         return services["db"]()
 
     async def project_thread(project_id, kind, function, *args, **kwargs):
+        from functools import partial
         from .privacy_lifecycle import run_activity
-        return await asyncio.to_thread(run_activity, db(), project_id, kind, function, *args, **kwargs)
+        from .local_profile import run_heavy
+        callback = partial(function, *args, **kwargs)
+        if kind in {"semantic_index", "semantic_search", "rubric_score", "legacy_v3_report_render"}:
+            callback = partial(run_heavy, callback)
+        return await asyncio.to_thread(run_activity, db(), project_id, kind, callback)
 
     def workspace():
         return Workspace(db())
@@ -118,7 +124,10 @@ def register(app: FastAPI, services: dict) -> None:
     def cpu_runtime():
         if not hasattr(app.state, "cpu_runtime"):
             from .cpu_models import CPUModels
-            app.state.cpu_runtime = CPUModels(threads=2)
+            from .local_profile import local_limits
+            limits = local_limits()
+            app.state.cpu_runtime = CPUModels(threads=int(os.environ.get("DOXA_CPU_THREADS", limits["cpu_threads"])),
+                                               batch_size=int(os.environ.get("DOXA_CPU_BATCH_SIZE", limits["cpu_batch_size"])))
         return app.state.cpu_runtime
 
     @app.post("/api/v3/projects/{project_id}/semantic-index")
@@ -132,7 +141,9 @@ def register(app: FastAPI, services: dict) -> None:
                 raise HTTPException(404, "Query does not belong to this project")
             document_ids = workspace().document_ids(saved)
         try:
-            return await project_thread(project_id, "semantic_index", SemanticIndex(db(), cpu_runtime()).build, project_id, document_ids)
+            from .local_profile import run_heavy
+            return await project_thread(project_id, "semantic_index", run_heavy,
+                                        SemanticIndex(db(), cpu_runtime()).build, project_id, document_ids)
         except (ValueError, RuntimeError, ImportError, OSError) as error:
             raise HTTPException(422, str(error)) from error
 

@@ -10,7 +10,7 @@ import json
 import os
 from pathlib import Path
 
-import pymupdf as fitz
+from pdf_fixtures import pdf_bytes
 from playwright.sync_api import sync_playwright
 from browser_support import chromium_launch_options, local_app
 
@@ -19,10 +19,7 @@ def main() -> None:
     output = Path(os.environ.get("DOXA_BROWSER_OUTPUT", "/tmp/doxa-browser-resume-v3"))
     output.mkdir(parents=True, exist_ok=True)
     fixture = output / "upload-resume-smoke.pdf"
-    pdf = fitz.open()
-    pdf.new_page().insert_text((72, 72), "A synthetic source for verifying interrupted browser uploads.")
-    fixture.write_bytes(pdf.tobytes() + b"\n" + b" " * (11 * 1024 * 1024))
-    pdf.close()
+    fixture.write_bytes(pdf_bytes(["A synthetic source for verifying interrupted browser uploads."]) + b"\n" + b" " * (11 * 1024 * 1024))
     with local_app(allow_external=True) as base, sync_playwright() as p:
         browser = p.chromium.launch(**chromium_launch_options())
         context = browser.new_context(viewport={"width": 1440, "height": 1000})

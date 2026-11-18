@@ -913,7 +913,10 @@ def build_lineage(root, atlas, template, publications):
 
 def export_publication(root, slug, title, pages, *, page_range):
     from weasyprint import HTML
-    import pymupdf
+    from doxa.pdf_tools import open_pdf, render_pdf_preview
+    from importlib.util import find_spec
+    if find_spec("pypdfium2") is None:
+        raise ValueError("Publication preview generation requires the optional publication extra: pip install '.[publication]'")
     prefix = root / "examples" / slug
     if not slug.startswith("v04-"):
         raise ValueError("Publication destinations must preserve all original v0.3 artifacts")
@@ -925,7 +928,7 @@ def export_publication(root, slug, title, pages, *, page_range):
     def no_network(*_args, **_kwargs):
         raise ValueError("Publication rendering cannot load remote resources")
     HTML(string=html, url_fetcher=no_network).write_pdf(prefix.with_suffix(".pdf"))
-    with pymupdf.open(prefix.with_suffix(".pdf")) as pdf:
+    with open_pdf(prefix.with_suffix(".pdf")) as pdf:
         count = len(pdf)
         page_text = [page.get_text() for page in pdf]
         if not page_range[0] <= count <= page_range[1]:
@@ -936,7 +939,7 @@ def export_publication(root, slug, title, pages, *, page_range):
         for old_preview in (root / "docs/images").glob(slug + "-page-*.png"):
             old_preview.unlink()
         for number in (0, count // 2, count - 1):
-            pdf[number].get_pixmap(matrix=pymupdf.Matrix(1.15, 1.15)).save(root / "docs/images" / f"{slug}-page-{number + 1:02d}.png")
+            render_pdf_preview(prefix.with_suffix(".pdf"), number, root / "docs/images" / f"{slug}-page-{number + 1:02d}.png")
     files = [{"file": str(path.relative_to(root)), "sha256": sha_file(path), "bytes": path.stat().st_size}
              for path in (prefix.with_suffix(".html"), prefix.with_suffix(".pdf"), doc_path)]
     manifest = {"schema_version": "doxa-v04-publication-1", "title": title, "slug": slug, "generator_version": GENERATOR_VERSION,

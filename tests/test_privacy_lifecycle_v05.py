@@ -29,8 +29,11 @@ def insert(store, table, **values):
         name = column["name"]
         if name in values or column["dflt_value"] is not None or not column["notnull"]:
             continue
+        # Synthetic foreign identities must remain distinct between projects,
+        # including new composite-unique campaign/reviewer relationships.
+        namespace = str(values.get("project_id", values.get("run_id", values.get("id", "fixture"))))
         values[name] = (0 if "INT" in column["type"] or "REAL" in column["type"] else
-                        '{"private":"SECRET ONLY P"}' if name.endswith("_json") else "private-" + name)
+                        '{"private":"SECRET ONLY P"}' if name.endswith("_json") else "private-" + namespace + "-" + name)
     store.execute(f'INSERT INTO "{table}"({",".join(values)}) VALUES({",".join("?" for _ in values)})', list(values.values()))
 
 
