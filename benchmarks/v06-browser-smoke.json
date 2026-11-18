@@ -1,0 +1,37 @@
+{
+  "schema_version": "doxa-browser-refinement-1",
+  "status": "passed",
+  "data_origin": "synthetic_browser_fixtures_with_recorded_real_public_example",
+  "checks": [
+    "The same one-page workbench presents five research steps and an explicit low-memory profile",
+    "Readiness exposes bounded low-memory settings and safe metadata without loading a model",
+    "The read-only explorer preserves twenty real recorded sources, uncertain model readings and exact full text without changing projects or activities",
+    "A real recorded-example PDF download matches its publication SHA-256 and opens as a valid PDF without inference",
+    "All five published synthetic starter texts upload through real intake with verified input hashes and no fabricated model results",
+    "Criterion method cards open real academic references and retain unmeasured interpretation status",
+    "A frozen comparison matches the declared event/date/genre and visibly excludes an unrelated source",
+    "An unmatched selection reports comparison not established instead of inventing an asymmetry",
+    "The customer accepts the exact operator-issued scope hash while price, processing cap and unrecorded payment remain distinct",
+    "The activity center recovers the same committed queued guided-report job after browser refresh; no publication worker or model runs",
+    "Keyboard activation and a visible focus outline work on the refinement controls",
+    "The 390-pixel viewport retains readable controls and the recorded-source reader without horizontal page overflow"
+  ],
+  "check_count": 12,
+  "page_errors": [],
+  "mocked_routes": 0,
+  "analysis_run_submissions": 0,
+  "new_model_inference_requests": 0,
+  "publication_worker_started": false,
+  "cloud_resources_created": false,
+  "payments_created": false,
+  "interpretation_accuracy": null,
+  "independent_human_reference_labels": false,
+  "screenshots": [
+    "workspace-v06-desktop.png",
+    "workspace-v06-mobile.png",
+    "method-card-v06.png",
+    "comparison-v06.png",
+    "recorded-example-v06.png",
+    "recorded-example-v06-mobile.png"
+  ]
+}

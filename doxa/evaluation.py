@@ -10,6 +10,7 @@ import copy
 import json
 import uuid
 import hashlib
+import re
 
 from .lineage import content_sha256
 from .store import utcnow
@@ -43,6 +44,8 @@ ANNOTATION_FIELDS = {"result", "attribution", "speaker_stance", "document_stance
 # additive for newly entered human references, never synthesized model gold.
 EXTENDED_ANNOTATION_FIELDS = {"evidence_spans", "target", "proposition", "reporting_chain",
                               "communicative_act", "perspective", "missing_context_reasons"}
+PERCEPTION_ANNOTATION_FIELDS = {"reader_perception"}
+PERCEPTION_DIMENSIONS = {"clarity", "directness", "perceived_respect", "perceived_hostility"}
 COMMUNICATIVE_ACTS = {"request", "proposal", "commitment", "refusal", "disagreement", "assertion",
                      "question", "acknowledgement", "greeting", "mixed", "other", "uncertain", "not_applicable"}
 REPORTING_ROLES = {"author", "narrator", "message_sender", "quoted_speaker", "reported_speaker", "unknown"}
@@ -52,7 +55,12 @@ MISSING_CONTEXT_REASONS = {"missing_prior_message", "missing_following_message",
 
 
 def annotation_contract():
-    return {"version": "0.5", "optional_fields": sorted(EXTENDED_ANNOTATION_FIELDS),
+    return {"version": "0.5", "optional_fields": sorted(EXTENDED_ANNOTATION_FIELDS | PERCEPTION_ANNOTATION_FIELDS),
+            "reader_perception": {"version": "0.6", "scale_version": "reader-perception-ordinal-1.0",
+                                  "dimensions": sorted(PERCEPTION_DIMENSIONS), "scale": "1=very low, 5=very high, ordinal",
+                                  "fields": ["scale_version", "reader_context", "ratings"],
+                                  "minimum_readers_per_context": 3,
+                                  "identity": "Reader identity comes from the authenticated review envelope, never a submitted list of invented participants."},
             "unannotated_value": None, "coordinate_unit": "unicode_code_points",
             "evidence_spans": {"maximum": 32, "fields": ["document_id", "block_id", "start", "end", "quote"],
                                "scope": "Exact frozen source text within the displayed scored unit or neighbor context; offsets are relative to block text."},
@@ -260,10 +268,14 @@ def create_scaffold(store, project_id, run_id, *, development_count=100, heldout
 def export_review_form(store, project_id, evaluation_id, *, split="development", include_model=False):
     ensure_schema(store)
     evaluation = _require(store, project_id, evaluation_id)
-    if split not in {"development", "heldout"} or type(include_model) is not bool:
+    if split not in {"development", "calibration", "heldout"} or type(include_model) is not bool:
         raise ValueError("Choose a valid review split and explicit Boolean visibility")
     if split == "heldout" and include_model:
         raise ValueError("Locked heldout review forms cannot expose model decisions")
+    if evaluation.get("kind") == "independent_domain_panel" and split == "calibration" and include_model:
+        pending = store.one("SELECT c.id FROM v4_evaluation_cases c LEFT JOIN v4_reference_adjudications a ON a.case_id=c.id AND a.evaluation_id=c.evaluation_id WHERE c.project_id=? AND c.evaluation_id=? AND c.split='calibration' AND a.id IS NULL LIMIT 1", [project_id, evaluation_id])
+        if pending:
+            raise ValueError("Locked calibration forms cannot expose model decisions before independent adjudication is complete")
     cases = []
     for row in store.query("SELECT payload_json FROM v4_evaluation_cases WHERE project_id=? AND evaluation_id=? AND split=? ORDER BY id", [project_id, evaluation_id, split]):
         case = json.loads(row["payload_json"])
@@ -279,14 +291,15 @@ def export_review_form(store, project_id, evaluation_id, *, split="development",
         from .contextual import build_units
         document = {**case["source"], "blocks": blocks,
                     "source_version_id": assessment.get("source_version_id") or case["source"]["id"]}
-        units = build_units(document, max_unit_chars=config.get("unit_max_chars", 1200), context_sentences=config.get("context_sentences", 2))
+        units = build_units(document, max_unit_chars=config.get("unit_max_chars", 1200), context_sentences=config.get("context_sentences", 2),
+                            **({"context_policy": config["context_policy"]} if config.get("context_policy") else {}))
         unit = next((unit for unit in units if unit["id"] == case["unit_id"]), None)
         if unit is None:
             raise ValueError("Review case no longer resolves to its frozen source unit")
         case["scored_unit"] = unit
         if "rubric" not in case or "criterion" not in case:
             case["rubric"] = {"origin": "not_recorded", "notice": "Create a new evaluation with explicitly frozen review instructions."}
-        case["reference_labels"] = {key: None for key in sorted(ANNOTATION_FIELDS | EXTENDED_ANNOTATION_FIELDS)}
+        case["reference_labels"] = {key: None for key in sorted(ANNOTATION_FIELDS | EXTENDED_ANNOTATION_FIELDS | PERCEPTION_ANNOTATION_FIELDS)}
         if include_model:
             case["model_assessment"] = assessment
         cases.append(case)
@@ -300,7 +313,7 @@ def export_review_form(store, project_id, evaluation_id, *, split="development",
 
 
 def _labels(value):
-    if not isinstance(value, dict) or set(value) - (ANNOTATION_FIELDS | EXTENDED_ANNOTATION_FIELDS):
+    if not isinstance(value, dict) or set(value) - (ANNOTATION_FIELDS | EXTENDED_ANNOTATION_FIELDS | PERCEPTION_ANNOTATION_FIELDS):
         raise ValueError("Reference labels contain unknown fields")
     for key, allowed in (("result", RESULTS), ("attribution", ATTRIBUTIONS), ("speaker_stance", STANCES), ("document_stance", STANCES),
                          ("evidence_adequacy", {"adequate", "inadequate", "uncertain"}),
@@ -316,6 +329,19 @@ def _labels(value):
     for key, maximum in (("target", 2000), ("proposition", 4000), ("perspective", 2000)):
         if value.get(key) is not None and (not isinstance(value[key], str) or len(value[key]) > maximum):
             raise ValueError(f"Reference {key} must be bounded text or null")
+    perception = value.get("reader_perception")
+    if perception is not None:
+        if not isinstance(perception, dict) or set(perception) != {"scale_version", "reader_context", "ratings"}:
+            raise ValueError("Reader perception requires a scale version, explicit reading context and ordinal ratings")
+        if perception["scale_version"] != "reader-perception-ordinal-1.0":
+            raise ValueError("Unsupported reader perception scale")
+        if not isinstance(perception["reader_context"], str) or not perception["reader_context"].strip() or len(perception["reader_context"]) > 2000:
+            raise ValueError("Reader perception needs bounded audience/goal/relationship context")
+        ratings = perception["ratings"]
+        if not isinstance(ratings, dict) or not ratings or set(ratings) - PERCEPTION_DIMENSIONS:
+            raise ValueError("Reader perception ratings must use declared dimensions")
+        if any(type(rating) is not int or not 1 <= rating <= 5 for rating in ratings.values()):
+            raise ValueError("Reader perception ratings must be ordinal integers from 1 to 5")
     if value.get("communicative_act") is not None and (not isinstance(value["communicative_act"], str) or value["communicative_act"] not in COMMUNICATIVE_ACTS):
         raise ValueError("Reference communicative act must use the declared enum")
     reasons = value.get("missing_context_reasons")
@@ -355,7 +381,7 @@ def _labels(value):
 
 def _validate_annotation_context(store, project_id, evaluation, case, labels):
     """Validate independent annotations against the exact frozen, visible case."""
-    if not any(labels.get(key) is not None for key in EXTENDED_ANNOTATION_FIELDS):
+    if not any(labels.get(key) is not None for key in EXTENDED_ANNOTATION_FIELDS | PERCEPTION_ANNOTATION_FIELDS):
         return
     source_id = case["source"]["id"]
     source = store.one("SELECT sha256,blocks_key FROM documents WHERE id=? AND project_id=?", [source_id, project_id])
@@ -372,11 +398,12 @@ def _validate_annotation_context(store, project_id, evaluation, case, labels):
     document = {**case["source"], "blocks": blocks,
                 "source_version_id": case["model_assessment"].get("source_version_id") or source_id}
     unit = next((item for item in build_units(document, max_unit_chars=config.get("unit_max_chars", 1200),
-                                             context_sentences=config.get("context_sentences", 2)) if item["id"] == case["unit_id"]), None)
+                                             context_sentences=config.get("context_sentences", 2),
+                                             **({"context_policy": config["context_policy"]} if config.get("context_policy") else {})) if item["id"] == case["unit_id"]), None)
     if unit is None:
         raise ValueError("Reference annotation no longer resolves to the frozen scored unit")
     visible = defaultdict(list)
-    for sentence in [*unit.get("context_before", []), *unit["sentences"], *unit.get("context_after", [])]:
+    for sentence in [*unit.get("structural_context", []), *unit.get("context_before", []), *unit["sentences"], *unit.get("context_after", [])]:
         visible[sentence["block_id"]].append((sentence["start"], sentence["end"]))
     merged = {}
     for block_id, intervals in visible.items():
@@ -399,6 +426,8 @@ def _validate_annotation_context(store, project_id, evaluation, case, labels):
 def import_reviews(store, project_id, evaluation_id, rows, *, reviewer_id, actor_kind="human"):
     ensure_schema(store)
     evaluation = _require(store, project_id, evaluation_id)
+    if evaluation.get("kind") == "independent_domain_panel" and not evaluation.get("preregistration"):
+        raise ValueError("A domain panel must be preregistered before any initial review")
     if actor_kind != "human" or not isinstance(reviewer_id, str) or not reviewer_id.strip():
         raise ValueError("Independent references require an identified human reviewer")
     if not isinstance(rows, list) or not 1 <= len(rows) <= 1000:
@@ -447,6 +476,8 @@ def adjudicate_case(store, project_id, evaluation_id, case_id, labels, *, actor_
     reviews = store.query("SELECT reviewer_id,payload_json FROM v4_reference_reviews WHERE evaluation_id=? AND case_id=? AND project_id=?", [evaluation_id, case_id, project_id])
     if len({row["reviewer_id"] for row in reviews}) < 2:
         raise ValueError("Two distinct independent reviews are required before adjudication")
+    if evaluation.get("preregistration") and actor_id in {row["reviewer_id"] for row in reviews}:
+        raise ValueError("The preregistered protocol requires a separate adjudicator who did not enter an initial review")
     row = store.one("SELECT payload_json FROM v4_evaluation_cases WHERE id=? AND project_id=? AND evaluation_id=?", [case_id, project_id, evaluation_id])
     if not row:
         raise ValueError("Reference case is outside this evaluation")
@@ -468,11 +499,11 @@ def adjudicate_case(store, project_id, evaluation_id, case_id, labels, *, actor_
 def reference_report(store, project_id, evaluation_id):
     ensure_schema(store)
     evaluation = _require(store, project_id, evaluation_id)
-    rows = store.query("SELECT c.id,c.split,c.payload_json,a.payload_json AS reference_json FROM v4_evaluation_cases c LEFT JOIN v4_reference_adjudications a ON a.case_id=c.id AND a.evaluation_id=c.evaluation_id WHERE c.project_id=? AND c.evaluation_id=? ORDER BY c.id", [project_id, evaluation_id])
+    rows = store.query("SELECT c.id,c.split,c.story_group,c.payload_json,a.actor_id AS adjudicator_id,a.payload_json AS reference_json FROM v4_evaluation_cases c LEFT JOIN v4_reference_adjudications a ON a.case_id=c.id AND a.evaluation_id=c.evaluation_id WHERE c.project_id=? AND c.evaluation_id=? ORDER BY c.id", [project_id, evaluation_id])
     reviewed = [row for row in rows if row.get("reference_json")]
     heldout = [row for row in rows if row["split"] == "heldout"]
     heldout_complete = bool(heldout) and all(row.get("reference_json") for row in heldout)
-    measurable = [row for row in reviewed if row["split"] == "development" or heldout_complete]
+    measurable = [row for row in reviewed if row["split"] != "heldout" or heldout_complete]
     counts, reference_hashes = {}, []
     for field in ("result", "attribution", "speaker_stance", "document_stance"):
         pairs = [(json.loads(row["payload_json"])["model_assessment"].get(field), json.loads(row["reference_json"])["labels"][field]) for row in measurable]
@@ -482,18 +513,125 @@ def reference_report(store, project_id, evaluation_id):
         reference_hashes.append([row["id"], content_sha256(json.loads(row["reference_json"]))])
     structured = {field: sum(json.loads(row["reference_json"])["labels"].get(field) is not None for row in reviewed)
                   for field in sorted(EXTENDED_ANNOTATION_FIELDS)}
+    from .evaluation_metrics import criterion_metrics
+    initial = defaultdict(list)
+    for item in store.query("SELECT case_id,reviewer_id,payload_json FROM v4_reference_reviews WHERE project_id=? AND evaluation_id=? ORDER BY reviewer_id", [project_id, evaluation_id]):
+        initial[item["case_id"]].append({"reviewer_id": item["reviewer_id"], "labels": json.loads(item["payload_json"])["labels"]})
+    protocol = (evaluation.get("preregistration") or {}).get("protocol")
+    records = []
+    for row in rows:
+        case = json.loads(row["payload_json"])
+        references = initial[row["id"]]
+        cluster_key = (protocol or {}).get("cluster_key", "story_group")
+        metadata = case["source"].get("metadata") or {}
+        cluster = (case.get("cluster_ids") or {}).get(cluster_key) or (case["story_group"] if cluster_key == "story_group" else metadata.get(cluster_key))
+        records.append({"id": row["id"], "split": row["split"], "cluster": cluster,
+                        "lens_id": case["lens_id"], "criterion_id": case["criterion_id"],
+                        "prediction": case["model_assessment"],
+                        "reference": json.loads(row["reference_json"])["labels"] if row.get("reference_json") else None,
+                        "reviews": references,
+                        "separate_adjudicator": bool(row.get("adjudicator_id")) and row["adjudicator_id"] not in {item["reviewer_id"] for item in references}})
+    development_metrics = criterion_metrics([item for item in records if item["split"] == "development"])
+    calibration_metrics = criterion_metrics([item for item in records if item["split"] == "calibration"])
+    heldout_metrics = criterion_metrics([item for item in records if item["split"] == "heldout"], protocol=protocol,
+                                        heldout_complete=True) if heldout_complete else None
+    perceptions = defaultdict(list)
+    for record in records:
+        if record["split"] == "heldout" and not heldout_complete:
+            continue
+        for review in record["reviews"]:
+            rating = review["labels"].get("reader_perception")
+            if rating:
+                perceptions[(record["id"], rating["scale_version"], rating["reader_context"])].append({"reviewer_id": review["reviewer_id"], "ratings": rating["ratings"]})
+    perception_rows = []
+    for (case_id, scale, context), ratings in sorted(perceptions.items()):
+        dimensions = {}
+        for dimension in sorted(PERCEPTION_DIMENSIONS):
+            observed = [entry["ratings"][dimension] for entry in ratings if dimension in entry["ratings"]]
+            dimensions[dimension] = {"reader_count": len(observed), "ordinal_distribution": {str(point): observed.count(point) for point in range(1, 6)},
+                                     "minimum_reader_count_met": len(observed) >= 3}
+        perception_rows.append({"case_id": case_id, "scale_version": scale, "reader_context": context,
+                                "distinct_authenticated_reader_ids": len({entry["reviewer_id"] for entry in ratings}), "dimensions": dimensions})
+    gates = [item["release_gate"] for item in (heldout_metrics or {}).get("criterion_metrics", [])]
+    numerical_pass = bool(gates) and all(item["supported_finding_thresholds_met"] for item in gates)
     return {"evaluation_id": evaluation_id, "scaffold_sha256": evaluation["scaffold_sha256"],
             "quality_status": "reference_reviewed" if reviewed and len(reviewed) == len(rows) else "review_in_progress" if reviewed else "reference_pending",
             "total_cases": len(rows), "adjudicated_cases": len(reviewed),
             "reference_set_sha256": content_sha256(reference_hashes) if reference_hashes else None,
             "independent_reference_labels": bool(reviewed), "interpretation_accuracy": None,
             "heldout_metrics_locked": not heldout_complete,
-            "adjudicated_by_split": {split: sum(row["split"] == split for row in reviewed) for split in ("development", "heldout")},
+            "adjudicated_by_split": {split: sum(row["split"] == split for row in reviewed) for split in ("development", "calibration", "heldout")},
             "diagnostic_label_agreement": counts,
+            "reference_metrics": {"development": development_metrics, "calibration": calibration_metrics, "heldout": heldout_metrics,
+                                  "heldout_lock": "No heldout reference metrics are exposed until every heldout case is adjudicated."},
+            "reader_perception": {"cases": perception_rows, "status": "not_measured" if not perception_rows else "context_specific_reader_distributions",
+                                  "actual_emotional_state_inferred": False,
+                                  "notice": "Ordinal reader perceptions remain separate by reading context. Distinct authenticated IDs do not prove distinct people, qualifications or representative audiences."},
+            "preregistration": evaluation.get("preregistration"),
+            "release_readiness": {"status": "quantitative_thresholds_met_external_review_required" if numerical_pass else "reference_pending" if not reviewed else "independent_release_gates_not_met",
+                                  "quantitative_supported_finding_gates_met": numerical_pass,
+                                  "automated_verdicts_enabled": False, "expert_review_required": True,
+                                  "notice": "Numerical thresholds never verify reviewer qualifications, sampling rights, independence or customer-delivery sign-off."},
             "structured_annotation_progress": {"contract_version": "0.5", "adjudicated_cases": len(reviewed),
                                                 "cases_with_field_annotated": structured,
                                                 "notice": "Field completion is not annotation quality, independence, calibration or population accuracy."},
-            "notice": "Selected-case agreement with human adjudication is diagnostic, not population accuracy. Sampling is enriched; original reviewer disagreements are retained."}
+            "notice": "Selected-case agreement is diagnostic, not universal accuracy. The collection design is operator-attested and needs external audit; initial disagreements remain visible." if evaluation.get("kind") == "independent_domain_panel" else "Selected-case agreement with human adjudication is diagnostic, not population accuracy. Sampling is enriched; original reviewer disagreements are retained."}
+
+
+def preregister_protocol(store, project_id, evaluation_id, value, *, actor_id):
+    """Freeze the intended inferential design before any initial label is entered.
+
+    A protocol cannot turn the existing outcome-balanced scaffold into a
+    probability sample. Its provenance stays diagnostic even after review.
+    """
+    ensure_schema(store)
+    with store.transaction(write=True):
+        evaluation = _require(store, project_id, evaluation_id)
+        allowed = {"profile_id", "domain", "language", "sampling_design", "population_description", "confidence_method",
+                   "cluster_key", "bootstrap_replicates", "seed", "sampling_frame_sha256", "reviewer_protocol_sha256"}
+        if not isinstance(value, dict) or set(value) - allowed:
+            raise ValueError("Protocol contains unsupported fields")
+        if not isinstance(value.get("profile_id"), str) or value["profile_id"] not in {"company", "public", "personal"}:
+            raise ValueError("Protocol requires a declared Company, Public or Personal profile")
+        for field, maximum in (("domain", 500), ("language", 100), ("population_description", 4000)):
+            if not isinstance(value.get(field), str) or not value[field].strip() or len(value[field]) > maximum:
+                raise ValueError(f"Protocol {field} requires bounded explicit text")
+        for field in ("sampling_frame_sha256", "reviewer_protocol_sha256"):
+            if not isinstance(value.get(field), str) or not re.fullmatch(r"[a-f0-9]{64}", value[field]):
+                raise ValueError(f"Protocol requires an exact {field}")
+        if not isinstance(value.get("sampling_design"), str) or value["sampling_design"] not in {"enriched_diagnostic", "probability_sample"}:
+            raise ValueError("Declare the sampling design")
+        if value["sampling_design"] == "probability_sample" and not evaluation.get("sampling", {}).get("representative_population_sample"):
+            raise ValueError("An outcome-balanced diagnostic scaffold cannot be relabeled as a probability sample")
+        if evaluation.get("kind") == "independent_domain_panel":
+            if (value["profile_id"] != evaluation["profile_id"] or value["domain"] != evaluation["domain"]
+                    or value["sampling_frame_sha256"] != evaluation["sampling"]["sampling_frame_sha256"]
+                    or value.get("cluster_key") != evaluation["sampling"]["inference_cluster_key"]):
+                raise ValueError("Preregistered profile, domain, frame hash and cluster key must match the imported panel")
+        if not isinstance(value.get("confidence_method"), str) or value["confidence_method"] not in {"exact_binomial", "cluster_bootstrap"}:
+            raise ValueError("Preregister exact_binomial or cluster_bootstrap")
+        if not isinstance(value.get("cluster_key"), str) or value["cluster_key"] not in {"story_group", "organization_group", "source_family_group"}:
+            raise ValueError("Preregister an independent story, organization or source-family cluster key")
+        repetitions = value.get("bootstrap_replicates", 1999)
+        seed = value.get("seed", 20261118)
+        if type(repetitions) is not int or not 999 <= repetitions <= 4999 or type(seed) is not int or not 0 <= seed < 2 ** 63:
+            raise ValueError("Preregister 999–4999 bootstrap replicates and a bounded integer seed")
+        protocol = {**copy.deepcopy(value), "bootstrap_replicates": repetitions, "seed": seed,
+                    "version": "doxa-reference-protocol-0.6", "gate_policy_version": "doxa-reference-gates-0.6"}
+        existing = evaluation.get("preregistration")
+        if existing:
+            if existing["protocol"] != protocol:
+                raise ValueError("Preregistration is immutable; create a separate evaluation")
+            return existing
+        if store.one("SELECT id FROM v4_reference_reviews WHERE project_id=? AND evaluation_id=? LIMIT 1", [project_id, evaluation_id]):
+            raise ValueError("Preregistration must precede every initial reference review")
+        record = {"protocol": protocol, "protocol_sha256": content_sha256(protocol), "registered_by": actor_id,
+                  "registered_at": utcnow(), "scaffold_sha256": evaluation["scaffold_sha256"],
+                  "external_independence_verified": False,
+                  "notice": "Registration records the plan and authenticated actor; it does not verify external reviewer qualifications or sampling rights."}
+        evaluation["preregistration"] = record
+        store.execute("UPDATE v4_evaluations SET payload_json=? WHERE id=? AND project_id=?", [_json(evaluation), evaluation_id, project_id])
+        return record
 
 
 def evaluation_overview(store, project_id):
@@ -504,4 +642,4 @@ def evaluation_overview(store, project_id):
 
 def locked_reference_source(store, project_id, document_id, story_group):
     ensure_schema(store)
-    return bool(store.one("SELECT id FROM v4_evaluation_cases WHERE project_id=? AND split='heldout' AND (document_id=? OR story_group=?) LIMIT 1", [project_id, document_id, story_group]))
+    return bool(store.one("SELECT id FROM v4_evaluation_cases WHERE project_id=? AND split IN ('heldout','calibration') AND (document_id=? OR story_group=?) LIMIT 1", [project_id, document_id, story_group]))

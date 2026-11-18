@@ -1,5 +1,7 @@
 # Refinement and evaluation roadmap
 
+[v0.6](refinement-v06.md) now implements local diagnostics, resource profiles, extraction/context refinements, matched-cohort and evaluation interfaces, recoverable activities and dedicated-pilot tooling. The table below remains a research and qualification agenda: shipping the interfaces does not complete human annotation or establish model quality.
+
 v0.4 implements the evidence and publication workflow. The next improvements should be decided by recorded failures and independent evaluation. The gates below are proposals, not completed experiments or promised accuracy.
 
 | Priority | Work | Acceptance evidence |

@@ -25,7 +25,7 @@ def test_upgrade_has_checked_backup_is_idempotent_and_preserves_original(tmp_pat
     legacy_workspace(tmp_path)
     store = Store(tmp_path)
     store.init()
-    assert store.one("SELECT MAX(version) n FROM schema_versions")["n"] == 5
+    assert store.one("SELECT MAX(version) n FROM schema_versions")["n"] == 6
     backups = list((tmp_path / "backups").glob("*.sqlite3"))
     assert len(backups) == 1
     original = sqlite3.connect(backups[0])

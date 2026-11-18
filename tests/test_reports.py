@@ -117,13 +117,13 @@ class ReportTests(unittest.TestCase):
 
     def test_pdf_fallback_is_a_real_pdf_with_source_and_alternative(self):
         try:
-            import fitz
+            from doxa.pdf_tools import open_pdf
         except ImportError:
             self.skipTest("PDF verification dependencies unavailable")
         with patch.dict("sys.modules", {"weasyprint": None}):
             path = build_report(snapshot(), "pdf", self.directory)
         self.assertTrue(path.read_bytes().startswith(b"%PDF-"))
-        with fitz.open(path) as pdf:
+        with open_pdf(path) as pdf:
             text = " ".join(page.get_text() for page in pdf)
         self.assertIn("harmful claim", text)
         self.assertIn("Alternative reading", text)
@@ -156,13 +156,13 @@ class ReportTests(unittest.TestCase):
         with build_report(data, "csv", self.directory).open(encoding="utf-8-sig", newline="") as stream:
             self.assertEqual(len(list(csv.DictReader(stream))), 201)
         try:
-            import fitz
+            from doxa.pdf_tools import open_pdf
         except ImportError:
             return
         data["profile"] = "briefing"
         with patch.dict("sys.modules", {"weasyprint": None}):
             path = build_report(data, "pdf", self.directory)
-        with fitz.open(path) as pdf:
+        with open_pdf(path) as pdf:
             text = " ".join(page.get_text() for page in pdf)
         self.assertIn("Showing 25 of 201 observations", text)
         self.assertIn("Unique observation 024", text)
@@ -190,14 +190,14 @@ class ReportTests(unittest.TestCase):
         records = [json.loads(line) for line in build_report(data, "jsonl", self.directory).read_text().splitlines()]
         self.assertEqual(records[0]["data"]["metrics"]["internal"]["private"], sentinel)
         self.assertEqual(next(r["data"] for r in records if r["record_type"] == "run")["config"]["source_snapshot"][0]["foo"], sentinel)
-        import fitz
+        from doxa.pdf_tools import open_pdf
         for fallback in (False, True):
             if fallback:
                 with patch.dict("sys.modules", {"weasyprint": None}):
                     path = build_report(data, "pdf", self.directory)
             else:
                 path = build_report(data, "pdf", self.directory)
-            with fitz.open(path) as pdf:
+            with open_pdf(path) as pdf:
                 text = " ".join(page.get_text() for page in pdf)
             self.assertNotIn(sentinel, text)
             self.assertIn("Partial coverage", text)
@@ -355,7 +355,7 @@ class V3ReportTests(unittest.TestCase):
         self.assertNotIn("Processing is complete for the stated selection", html)
 
     def test_pdf_engines_bound_5000_source_registers_and_preserve_typed_fields(self):
-        import fitz
+        from doxa.pdf_tools import open_pdf
         data = v3_snapshot(5000)
         data["profile"] = "briefing"
         for fallback in (False, True):
@@ -364,7 +364,7 @@ class V3ReportTests(unittest.TestCase):
                     path = build_report(data, "pdf", self.directory)
             else:
                 path = build_report(data, "pdf", self.directory)
-            with fitz.open(path) as pdf:
+            with open_pdf(path) as pdf:
                 text = " ".join(" ".join(page.get_text() for page in pdf).split())
                 self.assertLess(len(pdf), 30)
             for value in ["Showing 25 of 5,000 source entries", "Unique source title 04999", "Contextual source units assessed",
@@ -389,14 +389,14 @@ def test_unknown_provider_invoice_is_not_replaced_with_budget_accounted_zero(tmp
     assert "Provider inference cost (USD; blank if unknown)" in rows[0].values()
     assert rows[1]["I2"] == "0.417891"
     assert rows[1].get("K2", "") == ""
-    import fitz
+    from doxa.pdf_tools import open_pdf
     for fallback in (False, True):
         if fallback:
             with patch.dict("sys.modules", {"weasyprint": None}):
                 path = build_report(data, "pdf", tmp_path)
         else:
             path = build_report(data, "pdf", tmp_path)
-        with fitz.open(path) as pdf:
+        with open_pdf(path) as pdf:
             text = " ".join(" ".join(page.get_text() for page in pdf).split())
         assert "Provider cost unavailable" in text
         assert "$0.4179 accounted spend" in text

@@ -193,7 +193,7 @@ def unit_context(store, project_id, query_id, document_id, unit_id):
         block_integrity = validate_source_blocks(document, blocks)
         maximum = config.get("unit_max_chars") or (1200 if config.get("provider") == "ollama" else 4000)
         units = build_units({**document, "blocks": blocks}, max_unit_chars=maximum,
-                            context_sentences=config.get("context_sentences", 2))
+                            context_sentences=config.get("context_sentences", 2), context_policy=config.get("context_policy"))
         unit = next((item for item in units if item["id"] == unit_id), None)
         if unit is None:
             raise HTTPException(409, "The recorded unit cannot be rebuilt from the frozen source and builder")

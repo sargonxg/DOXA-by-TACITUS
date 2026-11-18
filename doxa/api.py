@@ -31,13 +31,15 @@ from pydantic import BaseModel, Field
 
 from doxa.store import Store, utcnow
 from doxa import __version__
+from doxa.local_profile import apply_local_environment_defaults, configured_slots, heavy_operation, run_heavy
 
 ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / ".env")
+apply_local_environment_defaults()
 MAX_FILE = 500 * 1024 * 1024
 PART_SIZE = 8 * 1024 * 1024
 TERMINAL = {"completed", "partial", "failed", "cancelled"}
-PARSER_SLOTS = threading.BoundedSemaphore(2)
+PARSER_SLOTS = threading.BoundedSemaphore(configured_slots("parser"))
 
 
 def task_execution_limits(provider: str, *, cloud_state: bool = False) -> dict:
@@ -71,7 +73,7 @@ def parser_environment() -> dict[str, str]:
     allowed = {"PATH", "SYSTEMROOT", "SystemRoot", "WINDIR", "TEMP", "TMP", "TMPDIR", "HOME",
                "LANG", "LC_ALL", "LC_CTYPE", "TZ", "LD_LIBRARY_PATH", "DYLD_LIBRARY_PATH",
                "XDG_CACHE_HOME", "XDG_DATA_HOME", "HF_HOME", "DOXA_ENABLE_OCR",
-               "DOXA_DOCLING_ARTIFACTS", "DOXA_PARSER_MEMORY_MB"}
+               "DOXA_DOCLING_ARTIFACTS", "DOXA_PARSER_MEMORY_MB", "DOXA_PDF_EXTRACTOR"}
     result = {key: value for key, value in os.environ.items() if key in allowed}
     result.update({"HF_HUB_OFFLINE": "1", "TRANSFORMERS_OFFLINE": "1", "OMP_NUM_THREADS": "2"})
     return result
@@ -80,7 +82,7 @@ def parser_environment() -> dict[str, str]:
 def extract_path(path: Path, filename: str) -> dict:
     # An asyncio awaiter can be cancelled while its thread keeps working.
     # Hold the parser limit in the real worker, rather than only in the awaiter.
-    with PARSER_SLOTS:
+    with heavy_operation(), PARSER_SLOTS:
         return _extract_path(path, filename)
 
 
@@ -117,6 +119,8 @@ class ProjectInput(BaseModel):
 
 
 class RunInput(BaseModel):
+    context_policy: Literal["structure-aware-1.0"] | None = None
+    quote_id: str | None = Field(default=None, max_length=128)
     provider: str = "lexical"
     model: str = Field(default="", max_length=300)
     lens_ids: list[str] = Field(default_factory=lambda: ["discourse", "ihra", "jda", "nexus", "anti-muslim-hostility"])
@@ -149,7 +153,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     access = AccessControl.from_environment()
     assets_root = asset_root()
     tasks: dict[str, asyncio.Task] = {}
-    extraction_slots = asyncio.Semaphore(2)
+    extraction_slots = asyncio.Semaphore(configured_slots("parser"))
 
     @asynccontextmanager
     async def lifespan(app: FastAPI):
@@ -159,15 +163,32 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         app.state.store.init()
         from doxa.pilot_api import ensure_schema as ensure_pilot_schema
         ensure_pilot_schema(app.state.store)
+        from doxa.retention import restore_guard
+        restore_guard(app.state.store)
         from doxa.report_jobs import ReportJobs
         app.state.report_jobs = ReportJobs(app.state.store, access_control=access)
+        if not app.state.store.remote:
+            from doxa.activity_jobs import ActivityJobs
+            app.state.activity_jobs = ActivityJobs(app.state.store, app.state.activity_services, access_control=access)
         app.state.tasks = tasks
         if not app.state.store.one("SELECT id FROM projects LIMIT 1"):
             app.state.store.execute("INSERT INTO projects(id,name,description,created_at) VALUES(?,?,?,?)",
                                     [uid(), "My research workspace", "An evidence-centred discourse inquiry", utcnow()])
         if start_workers and not app.state.store.remote:
             await app.state.report_jobs.start()
+            await app.state.activity_jobs.start()
             app.state.resume_pilot_erasure_jobs()
+            async def maintain_retention():
+                from doxa.retention import retention_tick
+                while True:
+                    try:
+                        await asyncio.to_thread(retention_tick, app.state.store)
+                    except Exception:
+                        # Operational diagnostics contain no source text or secrets.
+                        import logging
+                        logging.getLogger("doxa.retention").error("Retention maintenance failed; no success receipt was issued")
+                    await asyncio.sleep(60)
+            tasks["_retention"] = asyncio.create_task(maintain_retention())
             for row in app.state.store.query("SELECT id FROM runs WHERE status IN ('queued','running')"):
                 schedule(row["id"])
         yield
@@ -175,6 +196,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             task.cancel()
         if tasks:
             await asyncio.gather(*tasks.values(), return_exceptions=True)
+        if hasattr(app.state, "activity_jobs"):
+            await app.state.activity_jobs.stop()
         await app.state.report_jobs.stop()
         app.state.store.close()
 
@@ -184,8 +207,12 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         return app.state.store
 
     async def project_thread(project_id, kind, function, *args, **kwargs):
+        from functools import partial
         from doxa.privacy_lifecycle import run_activity
-        return await asyncio.to_thread(run_activity, db(), project_id, kind, function, *args, **kwargs)
+        callback = partial(function, *args, **kwargs)
+        if kind in {"source_extract", "source_reextract", "legacy_report_render"}:
+            callback = partial(run_heavy, callback)
+        return await asyncio.to_thread(run_activity, db(), project_id, kind, callback)
 
     def require_project(project_id: str) -> dict:
         require_project_access(project_id)
@@ -794,6 +821,9 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             # Endpoints and credentials are server configuration. A browser
             # health probe must not turn this server into an arbitrary fetcher.
             safe = RunInput.model_validate(body).model_dump(exclude_none=True)
+            if not db().remote:
+                from doxa.pilot_commerce import apply_server_pricing
+                safe = apply_server_pricing(safe)
             provider = get_provider(safe)
             if asyncio.iscoroutine(provider):
                 provider = await provider
@@ -802,6 +832,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             return {"ok": False, "provider": body.get("provider"), "details": str(exc)[:500]}
 
     def settle_reservation(reservation_id: str, item_usage: dict) -> None:
+        from contextlib import nullcontext
+        from doxa.pilot_commerce import settle_usage, usd_to_microusd
         reservation = db().one("SELECT * FROM budget_reservations WHERE id=? AND status='reserved'", [reservation_id])
         if not reservation:
             return
@@ -812,11 +844,18 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             item_usage = {**item_usage, "cost_usd": None, "estimated": True}
         # One transaction settles both ledgers exactly once. changes() refers
         # to the preceding statement in this SQLite/D1 transaction.
-        db().batch([
-            {"sql": "UPDATE budget_reservations SET status='settled',charged_usd=?,usage_json=?,settled_at=? WHERE id=? AND status='reserved' RETURNING id", "params": [charged, json.dumps(item_usage), utcnow(), reservation_id]},
-            {"sql": "UPDATE budget_ledger SET reserved_usd=MAX(0,reserved_usd-?),spent_usd=spent_usd+? WHERE month=? AND changes()=1 RETURNING month", "params": [reservation["amount"], charged, reservation["month"]]},
-            {"sql": "UPDATE runs SET reserved_usd=MAX(0,reserved_usd-?),spent_usd=spent_usd+? WHERE id=? AND changes()=1", "params": [reservation["amount"], charged, reservation["run_id"]]},
-        ])
+        # Dedicated-pilot usage and the provider ledger commit together locally.
+        # Cloudflare's existing remote profile has no native pilot contracts.
+        with db().transaction(write=True) if not db().remote else nullcontext():
+            db().batch([
+                {"sql": "UPDATE budget_reservations SET status='settled',charged_usd=?,usage_json=?,settled_at=? WHERE id=? AND status='reserved' RETURNING id", "params": [charged, json.dumps(item_usage), utcnow(), reservation_id]},
+                {"sql": "UPDATE budget_ledger SET reserved_usd=MAX(0,reserved_usd-?),spent_usd=spent_usd+? WHERE month=? AND changes()=1 RETURNING month", "params": [reservation["amount"], charged, reservation["month"]]},
+                {"sql": "UPDATE runs SET reserved_usd=MAX(0,reserved_usd-?),spent_usd=spent_usd+? WHERE id=? AND changes()=1", "params": [reservation["amount"], charged, reservation["run_id"]]},
+            ])
+            if not db().remote and db().one("SELECT name FROM sqlite_master WHERE type='table' AND name='pilot_usage_events'"):
+                quote_event = db().one("SELECT event_key,project_id FROM pilot_usage_events WHERE event_key=? AND project_id=(SELECT project_id FROM runs WHERE id=?)", ["budget:" + reservation_id, reservation["run_id"]])
+                if quote_event and not db().one("SELECT id FROM privacy_erase_jobs WHERE project_id=? LIMIT 1", [quote_event["project_id"]]):
+                    settle_usage(db(), quote_event["project_id"], quote_event["event_key"], actual_microusd=usd_to_microusd(charged))
 
     def refresh_run(run_id: str) -> dict:
         run = require_run(run_id)
@@ -928,6 +967,14 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         document = {**document, "blocks": document["blocks"][task["start_block"]:task["end_block"]]} if run["config"].get("task_index_basis") != "source_units_v3" else document
         db().execute("UPDATE runs SET status='running',started_at=COALESCE(started_at,?),progress_json=? WHERE id=?", [utcnow(), json.dumps({**run["progress"], "current_document": document["title"]}), run_id])
         config = dict(run["config"])
+        if not db().remote:
+            from doxa.pilot_commerce import CommerceError, apply_server_pricing
+            try:
+                config = apply_server_pricing(config)
+            except CommerceError as error:
+                db().execute("UPDATE tasks SET status='pending',error=?,lease_token=NULL,lease_until=NULL WHERE id=? AND lease_token=?", [str(error), task["id"], token])
+                db().execute("UPDATE runs SET status='paused_budget' WHERE id=?", [run_id])
+                return {"pending": False, "run": require_run(run_id)}
         operational_profile = {**run.get("model_profile", {}), **limits}
         if config.get("provider") == "ollama" and not db().remote:
             if any(config.get(key) != value for key, value in limits.items()):
@@ -962,8 +1009,10 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         db().execute("INSERT INTO budget_ledger(month,reserved_usd,spent_usd) VALUES(?,0,0) ON CONFLICT(month) DO NOTHING", [month])
 
         async def reserve(amount: float) -> bool:
+            from contextlib import nullcontext
             from doxa.pilot_api import enforce_analysis_policy
             from doxa.access import WorkerAuthorizationError
+            from doxa.pilot_commerce import CommerceError, apply_server_pricing, quote_required, reserve_usage, usd_to_microusd
             try:
                 access.require_worker(config.get("execution_actor_id"), run["project_id"], "analyze")
             except WorkerAuthorizationError:
@@ -974,17 +1023,32 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             except ValueError:
                 db().execute("UPDATE runs SET status='paused_privacy' WHERE id=?", [run_id])
                 raise
+            try:
+                apply_server_pricing(config)
+            except CommerceError:
+                return False
             amount = max(0, float(amount))
             if not math.isfinite(amount):
                 return False
             maximum = float(settings()["monthly_budget_usd"])
             reservation_id = uid()
-            changes = db().batch([
-                {"sql": "UPDATE budget_ledger SET reserved_usd=reserved_usd+? WHERE month=? AND reserved_usd+spent_usd+?<=? AND EXISTS(SELECT 1 FROM runs WHERE id=? AND reserved_usd+spent_usd+?<=? AND cancel_requested=0) AND EXISTS(SELECT 1 FROM tasks WHERE id=? AND lease_token=? AND status='running') RETURNING month",
-                 "params": [amount, month, amount, maximum, run_id, amount, config.get("budget_usd", 2), task["id"], token]},
-                {"sql": "UPDATE runs SET reserved_usd=reserved_usd+? WHERE id=? AND changes()=1 RETURNING id", "params": [amount, run_id]},
-                {"sql": "INSERT INTO budget_reservations(id,run_id,task_id,month,amount,created_at) SELECT ?,?,?,?,?,? WHERE changes()=1 RETURNING id", "params": [reservation_id, run_id, task["id"], month, amount, utcnow()]},
-            ])
+            try:
+                with db().transaction(write=True) if not db().remote else nullcontext():
+                    changes = db().batch([
+                        {"sql": "UPDATE budget_ledger SET reserved_usd=reserved_usd+? WHERE month=? AND reserved_usd+spent_usd+?<=? AND EXISTS(SELECT 1 FROM runs WHERE id=? AND reserved_usd+spent_usd+?<=? AND cancel_requested=0) AND EXISTS(SELECT 1 FROM tasks WHERE id=? AND lease_token=? AND status='running') RETURNING month",
+                         "params": [amount, month, amount, maximum, run_id, amount, config.get("budget_usd", 2), task["id"], token]},
+                        {"sql": "UPDATE runs SET reserved_usd=reserved_usd+? WHERE id=? AND changes()=1 RETURNING id", "params": [amount, run_id]},
+                        {"sql": "INSERT INTO budget_reservations(id,run_id,task_id,month,amount,created_at) SELECT ?,?,?,?,?,? WHERE changes()=1 RETURNING id", "params": [reservation_id, run_id, task["id"], month, amount, utcnow()]},
+                    ])
+                    if changes[2]["rows"] and (config.get("quote_id") or quote_required()):
+                        if db().remote or not config.get("quote_id"):
+                            raise CommerceError("Paid work requires an accepted native pilot quote", 409)
+                        reserve_usage(db(), run["project_id"], config["quote_id"],
+                                      event_key="budget:" + reservation_id, category="inference",
+                                      reserved_microusd=usd_to_microusd(amount), reference_id=task["id"])
+            except CommerceError:
+                # Both native ledgers roll back, before any provider request.
+                return False
             if not changes[2]["rows"]:
                 return False
             reservations.append(reservation_id)
@@ -1036,7 +1100,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 from doxa.contextual import analyze_units, build_units
                 from doxa.learning import select_examples
                 from doxa.workspace import Workspace
-                full_units = build_units(complete_document, max_unit_chars=config.get("unit_max_chars", 1200))
+                full_units = build_units(complete_document, max_unit_chars=config.get("unit_max_chars", 1200),
+                                         context_sentences=config.get("context_sentences", 2), context_policy=config.get("context_policy"))
                 if config.get("verification_selection"):
                     selected_units = set(config["verification_selection"]["unit_ids"].get(document["id"], []))
                     full_units = [unit for unit in full_units if unit["id"] in selected_units]
@@ -1204,6 +1269,12 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     async def create_run(project_id: str, body: RunInput, *, check_health: bool = True) -> dict:
         require_project(project_id)
         config = body.model_dump(exclude_none=True)
+        if not db().remote:
+            from doxa.pilot_commerce import CommerceError, apply_server_pricing
+            try:
+                config = apply_server_pricing(config, submitted_fields=body.model_fields_set)
+            except CommerceError as error:
+                raise HTTPException(error.status_code, str(error)) from error
         if access.managed:
             config["execution_actor_id"] = current_principal().id
             config["managed_access"] = True
@@ -1263,13 +1334,16 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 verification = select_verification_units(db(), project_id, body.verification_of)
             except ValueError as error:
                 raise HTTPException(422, str(error)) from error
-            config.update({key: primary["config"][key] for key in ("lens_ids", "lens_snapshots", "lens_snapshots_sha256", "question", "persona", "custom_lens", "learning_snapshot_id", "service_brief", "service_profile_id", "pilot_brief_revision") if key in primary["config"]})
+            config.update({key: primary["config"][key] for key in ("lens_ids", "lens_snapshots", "lens_snapshots_sha256", "question", "persona", "custom_lens", "learning_snapshot_id", "service_brief", "service_profile_id", "pilot_brief_revision", "context_policy", "method_cards_snapshot") if key in primary["config"]})
             config["verification_selection"] = verification
         if modern:
             from doxa.contextual import PROMPT_VERSION, UNIT_BUILDER_VERSION
             config.update({"unit_max_chars": 1200 if body.provider == "ollama" else 4000,
                            "task_index_basis": "source_units_v3", "context_sentences": 2,
                            "pipeline_version": PROMPT_VERSION, "unit_builder_version": UNIT_BUILDER_VERSION})
+            if not verification:
+                from doxa.method_cards import freeze_method_cards
+                config["method_cards_snapshot"] = freeze_method_cards(config["lens_ids"], custom_lens=config.get("custom_lens"))
             if verification:
                 config["unit_max_chars"] = primary["config"].get("unit_max_chars", 4000)
             if not verification and "learning_snapshot_id" not in body.model_fields_set:
@@ -1317,6 +1391,18 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             rows = [row for row in rows if row["id"] in verification["document_ids"]]
         if not rows:
             raise HTTPException(422, "Import at least one successfully extracted document")
+        if not db().remote:
+            from doxa.pilot_commerce import CommerceError, admit_quote_work
+            try:
+                from doxa.lenses import get_lens
+                criteria = sum(len((config.get("custom_lens") if lens == "custom" else get_lens(lens))["criteria"]) for lens in config["lens_ids"])
+                characters = sum(sum(len(block["text"]) for block in db().get_json(row["blocks_key"])) for row in rows)
+                admit_quote_work(db(), project_id, config.get("quote_id"), profile_id=config.get("service_profile_id", "public"),
+                                 documents=len(rows), characters=characters, criteria=criteria,
+                                 source_ids=[row["id"] for row in rows],
+                                 ocr_pages=sum(row["page_count"] for row in rows if "ocr" in str(json.loads(row.get("metadata_json") or "{}").get("extractor", ""))))
+            except CommerceError as error:
+                raise HTTPException(error.status_code, str(error)) from error
         try:
             enforce_analysis_policy(db(), project_id, config, rows)
         except ValueError as error:
@@ -1355,7 +1441,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             if modern:
                 from doxa.contextual import build_units
                 doc = require_document(row["id"], True)
-                units = build_units(doc, max_unit_chars=config["unit_max_chars"])
+                units = build_units(doc, max_unit_chars=config["unit_max_chars"],
+                                    context_sentences=config.get("context_sentences", 2), context_policy=config.get("context_policy"))
                 if verification:
                     selected_units = set(verification["unit_ids"].get(row["id"], []))
                     units = [unit for unit in units if unit["id"] in selected_units]
@@ -1714,9 +1801,21 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     services["report_jobs"] = lambda: app.state.report_jobs
     register_v3(app, services)
     register_imports(app, services)
-    install_access(app, access)
     from doxa.pilot_api import register as register_pilot
     register_pilot(app, services)
+    from doxa.readiness import register_readiness_api
+    from doxa.comparisons import register_comparison_api
+    from doxa.methodology_api import register_methodology_api
+    from doxa.activity_jobs import register_activity_api
+    from doxa.pilot_commerce import register_commerce_api
+    register_readiness_api(app, db)
+    from doxa.recorded_starter import register_recorded_api
+    register_recorded_api(app)
+    register_comparison_api(app, db)
+    register_methodology_api(app, db)
+    register_activity_api(app, services)
+    register_commerce_api(app, db)
+    install_access(app, access)
 
     from doxa.resources import frontend_distribution
     distribution = frontend_distribution()

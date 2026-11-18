@@ -1,0 +1,28 @@
+{
+  "schema_version": "doxa-low-memory-local-attempt-1",
+  "status": "blocked_before_runtime_verification",
+  "generated_at": "2026-11-18T01:49:49Z",
+  "passed": false,
+  "http_application_checks_executed": false,
+  "fresh_inference_requests": 0,
+  "interpretation_accuracy": null,
+  "physical_8gb_laptop_validated": false,
+  "source_git_head": "c06fee3168f9971716d6beba8f5b5f8527685a25",
+  "source_working_tree_fingerprint_sha256": "e68f4cdfbbfcc187cccc09dc23a9451920f02989949c89c87452920de6bd6411",
+  "docker_storage_driver": "vfs",
+  "workspace_filesystem_total_bytes": 33770192896,
+  "prebuild_free_bytes_observed": 7466954752,
+  "failure_stage": "Docker runtime COPY benchmarks layer",
+  "failure": "Local VFS Docker storage copied full filesystem layers until the bounded workspace exhausted free disk; no application container was started.",
+  "failed_snapshot_removed": "c9deyasg1f40u1keun9f6muun",
+  "additional_own_cache_records_removed": 18,
+  "cleanup_scope": "Only exact IDs created by this failed build, unshared and with one use, were removed; earlier/shared cache records, images, containers, volumes and repository data were preserved.",
+  "disk_free_bytes_observed_after_recovery": 7624036352,
+  "diagnostic_log_gzip_sha256": "69f3636657eadf7901ec5528b0f9a714f7481a89a6e051bbdc977424ffa41486",
+  "cache_inventory_sha256": "6756e03aef2fc0ddcce90688645176aa0d75636870e3c08058ae5eeee7db82b5",
+  "next_verification": "The same actual 4 GiB / 2 CPU HTTP smoke runs on the clean CI container job using its existing doxa:ci image; a pass receipt is written only after all runtime assertions and owned-resource cleanup succeed.",
+  "notes": [
+    "This environment failure is not an application-memory failure or a passed smoke test.",
+    "Reported free-space observations are not a continuous resource peak or attributable entirely to cache cleanup; a separate agent also removed its own completed pytest scratch directories."
+  ]
+}

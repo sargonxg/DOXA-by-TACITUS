@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import zipfile
 
-import pymupdf
+from doxa.pdf_tools import open_pdf
 import pytest
 
 from doxa.lineage import content_sha256
@@ -135,7 +135,7 @@ def test_lineage_graph_hashes_and_missing_capture_are_explicit():
 @pytest.mark.parametrize("slug,low,high", [("v04-reader-explainer", 16, 20), ("v04-technical-annex", 30, 40), ("v04-case-atlas", 35, 45)])
 def test_actual_pdf_page_counts_content_links_and_manuscripts(slug, low, high):
     manifest = json.loads((ROOT / "examples" / (slug + ".manifest.json")).read_text())
-    with pymupdf.open(ROOT / "examples" / (slug + ".pdf")) as pdf:
+    with open_pdf(ROOT / "examples" / (slug + ".pdf")) as pdf:
         assert low <= len(pdf) <= high and len(pdf) == manifest["pdf_pages"]
         assert all(len(page.get_text().strip()) > 100 for page in pdf)
         assert sum(len(page.get_links()) for page in pdf) > 0

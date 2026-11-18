@@ -86,7 +86,7 @@ def test_foreign_assessment_selection_or_cross_source_evidence_is_rejected(recor
 
 
 def test_annotated_pdf_html_xlsx_keep_quote_commentary_and_clickable_source_separate(recorded, tmp_path):
-    import fitz
+    from doxa.pdf_tools import open_pdf
     store, original = recorded
     store.execute("UPDATE documents SET source_url='https://example.org/source' WHERE id='source'")
     frozen = freeze_run(store.root, "run")
@@ -99,7 +99,7 @@ def test_annotated_pdf_html_xlsx_keep_quote_commentary_and_clickable_source_sepa
     assert "https://example.org/source" in html
     assert '<script' not in html
     assert html.count('class="diagram"') == 3
-    with fitz.open(tmp_path / "guide.pdf") as pdf:
+    with open_pdf(tmp_path / "guide.pdf") as pdf:
         text = " ".join(page.get_text() for page in pdf)
         links = [link for page in pdf for link in page.get_links()]
     assert "disputed claim" in text and "recorded model interpretation" in text.casefold()

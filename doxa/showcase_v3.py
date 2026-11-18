@@ -161,7 +161,7 @@ def _validate_record(store, record, document, frozen, run, criteria):
     if record.get("source_version_id", version) != version:
         raise ValueError("Saved source version identity is invalid")
     old_document = {**document, "id": old_id, "source_version_id": version, "blocks": blocks}
-    units = build_units(old_document, max_unit_chars=config.get("unit_max_chars", 1200), context_sentences=config.get("context_sentences", 2))
+    units = build_units(old_document, max_unit_chars=config.get("unit_max_chars", 1200), context_sentences=config.get("context_sentences", 2), context_policy=config.get("context_policy"))
     selection = config.get("verification_selection")
     if selection:
         selected = set(selection.get("unit_ids", {}).get(old_id, []))
@@ -189,7 +189,7 @@ def _validate_record(store, record, document, frozen, run, criteria):
         if attribution not in ATTRIBUTIONS or item.get("speech_role", ATTRIBUTIONS[attribution]) != ATTRIBUTIONS[attribution] or any(item.get(field, "unclear") not in STANCES for field in ("speaker_stance", "document_stance")) or not isinstance(item.get("hypothetical", False), bool):
             raise ValueError("Saved assessment attribution/stance fields are invalid")
         unit = by_unit[unit_id]
-        available = {sentence["id"]: sentence for sentence in [*unit["context_before"], *unit["sentences"], *unit["context_after"]]}
+        available = {sentence["id"]: sentence for sentence in [*unit.get("structural_context", []), *unit["context_before"], *unit["sentences"], *unit["context_after"]]}
         owned = {sentence["id"] for sentence in unit["sentences"]}
         refs = item.get("evidence_refs")
         if not isinstance(refs, list) or not refs or any(not isinstance(ref, dict) for ref in refs) or not owned.intersection(ref.get("sentence_id") for ref in refs):

@@ -1,0 +1,67 @@
+{
+  "schema_version": "doxa-recorded-example-publication-1",
+  "files": [
+    {
+      "file": "v06-recorded-example.html",
+      "packaged_file": "recorded-example.html",
+      "bytes": 29148,
+      "sha256": "053c033153eb061c94f926a9962ec4056934be1a3bef284c937bcc70e40ae77f"
+    },
+    {
+      "file": "v06-recorded-example.pdf",
+      "packaged_file": "recorded-example.pdf",
+      "bytes": 52169,
+      "sha256": "425edc98b6ef4bb09dda566abf8bcce125b5ceb26d3abc1fea3f3e6c98d7c2ea"
+    },
+    {
+      "file": "v06-recorded-example.xlsx",
+      "packaged_file": "recorded-example.xlsx",
+      "bytes": 604733,
+      "sha256": "437ec68809bfbb21559021d89153384ec3182b29e27e0c3581b8c0ae74841ba6"
+    },
+    {
+      "file": "v06-recorded-example.json.gz",
+      "packaged_file": "recorded-starter.json.gz",
+      "bytes": 295564,
+      "sha256": "e2ec6b65d8e375a8dd64b14b31b29a217bd94f83edf1b9f7a162387d7d815bc8"
+    }
+  ],
+  "snapshot_sha256": "286dafcc9b3ba2b326ac8b48d1e6086ccf0eaef86648891f0af012571f6bfbce",
+  "parent_package_sha256": "783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827",
+  "counts": {
+    "assessments": 645,
+    "documents": 20,
+    "exact_references": 11280,
+    "outcomes": {
+      "does_not_meet": 359,
+      "meets_criterion": 112,
+      "not_applicable": 172,
+      "uncertain": 2
+    },
+    "source_characters": 93206,
+    "unit_states": {
+      "accepted": 33,
+      "partial": 1
+    },
+    "words": 14976
+  },
+  "pdf_html_case_appendix": 8,
+  "shown_assessment_ids": [
+    "2c2fa427669d801d1b9d2a28c9764f41",
+    "5d88ca9ca254be27e7abe6dff1a2bf7c",
+    "161403df508d7fc3539b4940442f3c4b",
+    "70e2d057b550fbef1a0b80c47fe9d5f1",
+    "08d2e8e88b4997ee632f022ea7a70975",
+    "6a421b0451840453f5f94433e6e65834",
+    "567be91e78668f7a1f53ebb61098a5e2",
+    "6fb0b42b46df6f84f9152d937507a283"
+  ],
+  "pdf_font": {
+    "font_file": "DejaVuSans.ttf",
+    "missing_code_points": []
+  },
+  "model_requests": 0,
+  "independent_human_labels": false,
+  "interpretation_accuracy": null,
+  "commentary_authorship": "application/AI-authored reading guidance; not human adjudication"
+}

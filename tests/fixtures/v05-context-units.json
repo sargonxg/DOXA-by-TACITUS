@@ -1,0 +1,1553 @@
+{
+  "source_commit": "c06fee3168f9971716d6beba8f5b5f8527685a25",
+  "source_file_sha256": "d9219c0dc7f005c4df383082b50bcacaea71e726ef4fb03a27a6a7d8c3d83735",
+  "fixture_origin": "Actual released v0.5 source-unit builder over synthetic source fixtures; no model calls or reference labels",
+  "config": {
+    "max_unit_chars": 200,
+    "context_sentences": 2
+  },
+  "cases": [
+    {
+      "document": {
+        "id": "source",
+        "sha256": "source-version-hash",
+        "author": "Named writer",
+        "blocks": [
+          {
+            "id": "heading",
+            "text": "# Examples of claims rejected by this report\n",
+            "heading_level": 1
+          },
+          {
+            "id": "padding",
+            "text": "Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. "
+          },
+          {
+            "id": "claim",
+            "text": "The document quotes a hostile claim and rejects it.\nFurther context is present. Further context is present. Further context is present. Further context is present. Further context is present. Further context is present. Further context is present. Further context is present. "
+          }
+        ]
+      },
+      "units": [
+        {
+          "id": "u_0b32db9055325004d635c07e",
+          "unit_id": "u_0b32db9055325004d635c07e",
+          "document_id": "source",
+          "source_version_id": "source",
+          "source_hash": "source-version-hash",
+          "paragraph_id": "p_487fcb6c4358e4726063b7ff",
+          "paragraph_ids": [
+            "p_487fcb6c4358e4726063b7ff",
+            "p_b1fa684e5b6ba9ca7b5c428b"
+          ],
+          "block_id": "heading",
+          "block_ids": [
+            "heading",
+            "padding"
+          ],
+          "start": 0,
+          "end": 45,
+          "segments": [
+            {
+              "block_id": "heading",
+              "start": 0,
+              "end": 45,
+              "text": "# Examples of claims rejected by this report\n"
+            },
+            {
+              "block_id": "padding",
+              "start": 0,
+              "end": 152,
+              "text": "Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. "
+            }
+          ],
+          "text": "# Examples of claims rejected by this report\nContext kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. ",
+          "source_characters": 197,
+          "sentences": [
+            {
+              "id": "s_95a832f8b80df2ec63034ab3",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_487fcb6c4358e4726063b7ff",
+              "block_id": "heading",
+              "start": 0,
+              "end": 45,
+              "text": "# Examples of claims rejected by this report\n",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0b32db9055325004d635c07e"
+            },
+            {
+              "id": "s_9f1234e0923aaa1859708690",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 0,
+              "end": 38,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0b32db9055325004d635c07e"
+            },
+            {
+              "id": "s_956997438c4317a4f5436c22",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 38,
+              "end": 76,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0b32db9055325004d635c07e"
+            },
+            {
+              "id": "s_c3f885f58d13b9c7de1270b0",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 76,
+              "end": 114,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0b32db9055325004d635c07e"
+            },
+            {
+              "id": "s_8e4089815e7cb688715934e8",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 114,
+              "end": 152,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0b32db9055325004d635c07e"
+            }
+          ],
+          "page": null,
+          "paragraph": null,
+          "builder_version": "source-units-3.1",
+          "builder_config": {
+            "max_unit_chars": 200,
+            "context_sentences": 2
+          },
+          "offset_unit": "unicode_code_points",
+          "context_before": [],
+          "context_after": [
+            {
+              "id": "s_637f9c7991bee775649b708e",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 152,
+              "end": 190,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_7b521b4d65dc0496acfa33a6"
+            },
+            {
+              "id": "s_edf6e350b285dd44186abff2",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 190,
+              "end": 228,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_7b521b4d65dc0496acfa33a6"
+            }
+          ]
+        },
+        {
+          "id": "u_7b521b4d65dc0496acfa33a6",
+          "unit_id": "u_7b521b4d65dc0496acfa33a6",
+          "document_id": "source",
+          "source_version_id": "source",
+          "source_hash": "source-version-hash",
+          "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+          "paragraph_ids": [
+            "p_b1fa684e5b6ba9ca7b5c428b"
+          ],
+          "block_id": "padding",
+          "block_ids": [
+            "padding"
+          ],
+          "start": 152,
+          "end": 342,
+          "segments": [
+            {
+              "block_id": "padding",
+              "start": 152,
+              "end": 342,
+              "text": "Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. "
+            }
+          ],
+          "text": "Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. ",
+          "source_characters": 190,
+          "sentences": [
+            {
+              "id": "s_637f9c7991bee775649b708e",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 152,
+              "end": 190,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_7b521b4d65dc0496acfa33a6"
+            },
+            {
+              "id": "s_edf6e350b285dd44186abff2",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 190,
+              "end": 228,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_7b521b4d65dc0496acfa33a6"
+            },
+            {
+              "id": "s_2a73a9bb277c50f571fbde7f",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 228,
+              "end": 266,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_7b521b4d65dc0496acfa33a6"
+            },
+            {
+              "id": "s_348082ab13e406dccd19ce51",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 266,
+              "end": 304,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_7b521b4d65dc0496acfa33a6"
+            },
+            {
+              "id": "s_fc68d5132559c850b0984d63",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 304,
+              "end": 342,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_7b521b4d65dc0496acfa33a6"
+            }
+          ],
+          "page": null,
+          "paragraph": null,
+          "builder_version": "source-units-3.1",
+          "builder_config": {
+            "max_unit_chars": 200,
+            "context_sentences": 2
+          },
+          "offset_unit": "unicode_code_points",
+          "context_before": [
+            {
+              "id": "s_c3f885f58d13b9c7de1270b0",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 76,
+              "end": 114,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0b32db9055325004d635c07e"
+            },
+            {
+              "id": "s_8e4089815e7cb688715934e8",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 114,
+              "end": 152,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0b32db9055325004d635c07e"
+            }
+          ],
+          "context_after": [
+            {
+              "id": "s_e5933a2ccef1300eed8a8ee3",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 342,
+              "end": 380,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0267a4f7f1ec5eab6a21970e"
+            },
+            {
+              "id": "s_6224cec50dd9c9b977b3d61a",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 380,
+              "end": 418,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0267a4f7f1ec5eab6a21970e"
+            }
+          ]
+        },
+        {
+          "id": "u_0267a4f7f1ec5eab6a21970e",
+          "unit_id": "u_0267a4f7f1ec5eab6a21970e",
+          "document_id": "source",
+          "source_version_id": "source",
+          "source_hash": "source-version-hash",
+          "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+          "paragraph_ids": [
+            "p_b1fa684e5b6ba9ca7b5c428b"
+          ],
+          "block_id": "padding",
+          "block_ids": [
+            "padding"
+          ],
+          "start": 342,
+          "end": 532,
+          "segments": [
+            {
+              "block_id": "padding",
+              "start": 342,
+              "end": 532,
+              "text": "Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. "
+            }
+          ],
+          "text": "Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. ",
+          "source_characters": 190,
+          "sentences": [
+            {
+              "id": "s_e5933a2ccef1300eed8a8ee3",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 342,
+              "end": 380,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0267a4f7f1ec5eab6a21970e"
+            },
+            {
+              "id": "s_6224cec50dd9c9b977b3d61a",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 380,
+              "end": 418,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0267a4f7f1ec5eab6a21970e"
+            },
+            {
+              "id": "s_55997e55f6a59dcb28a63f08",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 418,
+              "end": 456,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0267a4f7f1ec5eab6a21970e"
+            },
+            {
+              "id": "s_bdb32c423d16f67c9eed7791",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 456,
+              "end": 494,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0267a4f7f1ec5eab6a21970e"
+            },
+            {
+              "id": "s_9a6a96a15422be20d846d636",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 494,
+              "end": 532,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0267a4f7f1ec5eab6a21970e"
+            }
+          ],
+          "page": null,
+          "paragraph": null,
+          "builder_version": "source-units-3.1",
+          "builder_config": {
+            "max_unit_chars": 200,
+            "context_sentences": 2
+          },
+          "offset_unit": "unicode_code_points",
+          "context_before": [
+            {
+              "id": "s_348082ab13e406dccd19ce51",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 266,
+              "end": 304,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_7b521b4d65dc0496acfa33a6"
+            },
+            {
+              "id": "s_fc68d5132559c850b0984d63",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 304,
+              "end": 342,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_7b521b4d65dc0496acfa33a6"
+            }
+          ],
+          "context_after": [
+            {
+              "id": "s_0717a99570bf5c0759a2a1ed",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 532,
+              "end": 570,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_707e76b1144aa97f8a3f3d29"
+            },
+            {
+              "id": "s_d4f51d7931bfe3afe3473002",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 570,
+              "end": 608,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_707e76b1144aa97f8a3f3d29"
+            }
+          ]
+        },
+        {
+          "id": "u_707e76b1144aa97f8a3f3d29",
+          "unit_id": "u_707e76b1144aa97f8a3f3d29",
+          "document_id": "source",
+          "source_version_id": "source",
+          "source_hash": "source-version-hash",
+          "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+          "paragraph_ids": [
+            "p_b1fa684e5b6ba9ca7b5c428b"
+          ],
+          "block_id": "padding",
+          "block_ids": [
+            "padding"
+          ],
+          "start": 532,
+          "end": 722,
+          "segments": [
+            {
+              "block_id": "padding",
+              "start": 532,
+              "end": 722,
+              "text": "Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. "
+            }
+          ],
+          "text": "Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. ",
+          "source_characters": 190,
+          "sentences": [
+            {
+              "id": "s_0717a99570bf5c0759a2a1ed",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 532,
+              "end": 570,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_707e76b1144aa97f8a3f3d29"
+            },
+            {
+              "id": "s_d4f51d7931bfe3afe3473002",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 570,
+              "end": 608,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_707e76b1144aa97f8a3f3d29"
+            },
+            {
+              "id": "s_f2bbb227c1cfd0f05f53f280",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 608,
+              "end": 646,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_707e76b1144aa97f8a3f3d29"
+            },
+            {
+              "id": "s_540a7202f0886f54cdfe9a63",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 646,
+              "end": 684,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_707e76b1144aa97f8a3f3d29"
+            },
+            {
+              "id": "s_1375260316f449b0742e23e4",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 684,
+              "end": 722,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_707e76b1144aa97f8a3f3d29"
+            }
+          ],
+          "page": null,
+          "paragraph": null,
+          "builder_version": "source-units-3.1",
+          "builder_config": {
+            "max_unit_chars": 200,
+            "context_sentences": 2
+          },
+          "offset_unit": "unicode_code_points",
+          "context_before": [
+            {
+              "id": "s_bdb32c423d16f67c9eed7791",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 456,
+              "end": 494,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0267a4f7f1ec5eab6a21970e"
+            },
+            {
+              "id": "s_9a6a96a15422be20d846d636",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 494,
+              "end": 532,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_0267a4f7f1ec5eab6a21970e"
+            }
+          ],
+          "context_after": [
+            {
+              "id": "s_bfa466a91f49de67f708d4a2",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 722,
+              "end": 760,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_314e0d0e931534350077ca53"
+            },
+            {
+              "id": "s_de249bb4988069f39d4cd124",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 760,
+              "end": 798,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_314e0d0e931534350077ca53"
+            }
+          ]
+        },
+        {
+          "id": "u_314e0d0e931534350077ca53",
+          "unit_id": "u_314e0d0e931534350077ca53",
+          "document_id": "source",
+          "source_version_id": "source",
+          "source_hash": "source-version-hash",
+          "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+          "paragraph_ids": [
+            "p_b1fa684e5b6ba9ca7b5c428b"
+          ],
+          "block_id": "padding",
+          "block_ids": [
+            "padding"
+          ],
+          "start": 722,
+          "end": 912,
+          "segments": [
+            {
+              "block_id": "padding",
+              "start": 722,
+              "end": 912,
+              "text": "Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. "
+            }
+          ],
+          "text": "Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. Context kept in the original section. ",
+          "source_characters": 190,
+          "sentences": [
+            {
+              "id": "s_bfa466a91f49de67f708d4a2",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 722,
+              "end": 760,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_314e0d0e931534350077ca53"
+            },
+            {
+              "id": "s_de249bb4988069f39d4cd124",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 760,
+              "end": 798,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_314e0d0e931534350077ca53"
+            },
+            {
+              "id": "s_078135c3ff80c283dadc3717",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 798,
+              "end": 836,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_314e0d0e931534350077ca53"
+            },
+            {
+              "id": "s_f6d8fad293f049e4c362160d",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 836,
+              "end": 874,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_314e0d0e931534350077ca53"
+            },
+            {
+              "id": "s_38c9ade8e717295184111133",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 874,
+              "end": 912,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_314e0d0e931534350077ca53"
+            }
+          ],
+          "page": null,
+          "paragraph": null,
+          "builder_version": "source-units-3.1",
+          "builder_config": {
+            "max_unit_chars": 200,
+            "context_sentences": 2
+          },
+          "offset_unit": "unicode_code_points",
+          "context_before": [
+            {
+              "id": "s_540a7202f0886f54cdfe9a63",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 646,
+              "end": 684,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_707e76b1144aa97f8a3f3d29"
+            },
+            {
+              "id": "s_1375260316f449b0742e23e4",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 684,
+              "end": 722,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_707e76b1144aa97f8a3f3d29"
+            }
+          ],
+          "context_after": [
+            {
+              "id": "s_2379976f2fa0cd3a1104057e",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 912,
+              "end": 950,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_3f7c9eb7ba35fad7b7f09457"
+            },
+            {
+              "id": "s_da1791419951ea8fae97635f",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 0,
+              "end": 52,
+              "text": "The document quotes a hostile claim and rejects it.\n",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_3f7c9eb7ba35fad7b7f09457"
+            }
+          ]
+        },
+        {
+          "id": "u_3f7c9eb7ba35fad7b7f09457",
+          "unit_id": "u_3f7c9eb7ba35fad7b7f09457",
+          "document_id": "source",
+          "source_version_id": "source",
+          "source_hash": "source-version-hash",
+          "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+          "paragraph_ids": [
+            "p_b1fa684e5b6ba9ca7b5c428b",
+            "p_b087d5a286603b7aeda0cae0"
+          ],
+          "block_id": "padding",
+          "block_ids": [
+            "padding",
+            "claim"
+          ],
+          "start": 912,
+          "end": 950,
+          "segments": [
+            {
+              "block_id": "padding",
+              "start": 912,
+              "end": 950,
+              "text": "Context kept in the original section. "
+            },
+            {
+              "block_id": "claim",
+              "start": 0,
+              "end": 136,
+              "text": "The document quotes a hostile claim and rejects it.\nFurther context is present. Further context is present. Further context is present. "
+            }
+          ],
+          "text": "Context kept in the original section. The document quotes a hostile claim and rejects it.\nFurther context is present. Further context is present. Further context is present. ",
+          "source_characters": 174,
+          "sentences": [
+            {
+              "id": "s_2379976f2fa0cd3a1104057e",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 912,
+              "end": 950,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_3f7c9eb7ba35fad7b7f09457"
+            },
+            {
+              "id": "s_da1791419951ea8fae97635f",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 0,
+              "end": 52,
+              "text": "The document quotes a hostile claim and rejects it.\n",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_3f7c9eb7ba35fad7b7f09457"
+            },
+            {
+              "id": "s_be90c4315769f12ad34991f7",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 52,
+              "end": 80,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_3f7c9eb7ba35fad7b7f09457"
+            },
+            {
+              "id": "s_cc1f7eafddbd188d692eb0b1",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 80,
+              "end": 108,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_3f7c9eb7ba35fad7b7f09457"
+            },
+            {
+              "id": "s_b01f025db275b00fd27b4322",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 108,
+              "end": 136,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_3f7c9eb7ba35fad7b7f09457"
+            }
+          ],
+          "page": null,
+          "paragraph": null,
+          "builder_version": "source-units-3.1",
+          "builder_config": {
+            "max_unit_chars": 200,
+            "context_sentences": 2
+          },
+          "offset_unit": "unicode_code_points",
+          "context_before": [
+            {
+              "id": "s_f6d8fad293f049e4c362160d",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 836,
+              "end": 874,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_314e0d0e931534350077ca53"
+            },
+            {
+              "id": "s_38c9ade8e717295184111133",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b1fa684e5b6ba9ca7b5c428b",
+              "block_id": "padding",
+              "start": 874,
+              "end": 912,
+              "text": "Context kept in the original section. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_314e0d0e931534350077ca53"
+            }
+          ],
+          "context_after": [
+            {
+              "id": "s_e6c17a1e91b39c72f454c1a9",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 136,
+              "end": 164,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_6c44106cc55c6b44dae45b0c"
+            },
+            {
+              "id": "s_46bd141da310520821f7c04a",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 164,
+              "end": 192,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_6c44106cc55c6b44dae45b0c"
+            }
+          ]
+        },
+        {
+          "id": "u_6c44106cc55c6b44dae45b0c",
+          "unit_id": "u_6c44106cc55c6b44dae45b0c",
+          "document_id": "source",
+          "source_version_id": "source",
+          "source_hash": "source-version-hash",
+          "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+          "paragraph_ids": [
+            "p_b087d5a286603b7aeda0cae0"
+          ],
+          "block_id": "claim",
+          "block_ids": [
+            "claim"
+          ],
+          "start": 136,
+          "end": 276,
+          "segments": [
+            {
+              "block_id": "claim",
+              "start": 136,
+              "end": 276,
+              "text": "Further context is present. Further context is present. Further context is present. Further context is present. Further context is present. "
+            }
+          ],
+          "text": "Further context is present. Further context is present. Further context is present. Further context is present. Further context is present. ",
+          "source_characters": 140,
+          "sentences": [
+            {
+              "id": "s_e6c17a1e91b39c72f454c1a9",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 136,
+              "end": 164,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_6c44106cc55c6b44dae45b0c"
+            },
+            {
+              "id": "s_46bd141da310520821f7c04a",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 164,
+              "end": 192,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_6c44106cc55c6b44dae45b0c"
+            },
+            {
+              "id": "s_2b5f0cdd500e1a881aad98ef",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 192,
+              "end": 220,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_6c44106cc55c6b44dae45b0c"
+            },
+            {
+              "id": "s_0ffb6c7e7b20facb9a95e2fa",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 220,
+              "end": 248,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_6c44106cc55c6b44dae45b0c"
+            },
+            {
+              "id": "s_5e691bdb095a5b6aae6d53cb",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 248,
+              "end": 276,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_6c44106cc55c6b44dae45b0c"
+            }
+          ],
+          "page": null,
+          "paragraph": null,
+          "builder_version": "source-units-3.1",
+          "builder_config": {
+            "max_unit_chars": 200,
+            "context_sentences": 2
+          },
+          "offset_unit": "unicode_code_points",
+          "context_before": [
+            {
+              "id": "s_cc1f7eafddbd188d692eb0b1",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 80,
+              "end": 108,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_3f7c9eb7ba35fad7b7f09457"
+            },
+            {
+              "id": "s_b01f025db275b00fd27b4322",
+              "document_id": "source",
+              "source_version_id": "source",
+              "source_hash": "source-version-hash",
+              "paragraph_id": "p_b087d5a286603b7aeda0cae0",
+              "block_id": "claim",
+              "start": 108,
+              "end": 136,
+              "text": "Further context is present. ",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "unit_id": "u_3f7c9eb7ba35fad7b7f09457"
+            }
+          ],
+          "context_after": []
+        }
+      ]
+    },
+    {
+      "document": {
+        "id": "mail",
+        "blocks": [
+          {
+            "id": "parent",
+            "text": "An earlier proposal needs revision.",
+            "message_key": "parent-key",
+            "message_id": "<parent>",
+            "mail_role": "authored",
+            "mail_sender": "Prior sender",
+            "thread_key": "thread",
+            "mail_source_field": "canonical_body",
+            "eligible_for_author_counts": true
+          },
+          {
+            "id": "reply",
+            "text": ">> Earlier quoted claim.\nI disagree with the proposal.",
+            "message_key": "reply-key",
+            "message_id": "<reply>",
+            "mail_role": "authored",
+            "mail_sender": "Current sender",
+            "thread_key": "thread",
+            "mail_source_field": "canonical_body",
+            "eligible_for_author_counts": true
+          }
+        ],
+        "metadata": {
+          "messages": [
+            {
+              "message_key": "parent-key",
+              "message_id": "<parent>",
+              "thread_key": "thread",
+              "references": []
+            },
+            {
+              "message_key": "reply-key",
+              "message_id": "<reply>",
+              "thread_key": "thread",
+              "references": [
+                "<missing>",
+                "<parent>"
+              ]
+            }
+          ]
+        }
+      },
+      "units": [
+        {
+          "id": "u_5f689c96b3bf8a8ec3065714",
+          "unit_id": "u_5f689c96b3bf8a8ec3065714",
+          "document_id": "mail",
+          "source_version_id": "mail",
+          "source_hash": "782ca6a2ec0e5ed6cff24f0d",
+          "paragraph_id": "p_4d0bd7af62a7dad1295370b1",
+          "paragraph_ids": [
+            "p_4d0bd7af62a7dad1295370b1"
+          ],
+          "block_id": "parent",
+          "block_ids": [
+            "parent"
+          ],
+          "start": 0,
+          "end": 35,
+          "segments": [
+            {
+              "block_id": "parent",
+              "start": 0,
+              "end": 35,
+              "text": "An earlier proposal needs revision."
+            }
+          ],
+          "text": "An earlier proposal needs revision.",
+          "source_characters": 35,
+          "sentences": [
+            {
+              "id": "s_e5f6e38b78d8a45d988d944b",
+              "document_id": "mail",
+              "source_version_id": "mail",
+              "source_hash": "782ca6a2ec0e5ed6cff24f0d",
+              "paragraph_id": "p_4d0bd7af62a7dad1295370b1",
+              "block_id": "parent",
+              "start": 0,
+              "end": 35,
+              "text": "An earlier proposal needs revision.",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 1,
+              "offset_unit": "unicode_code_points",
+              "message_key": "parent-key",
+              "message_id": "<parent>",
+              "thread_key": "thread",
+              "mail_role": "authored",
+              "mail_sender": "Prior sender",
+              "mail_source_field": "canonical_body",
+              "eligible_for_author_counts": true,
+              "unit_id": "u_5f689c96b3bf8a8ec3065714"
+            }
+          ],
+          "page": null,
+          "paragraph": null,
+          "builder_version": "source-units-3.1-mail-context-1.0",
+          "builder_config": {
+            "max_unit_chars": 200,
+            "context_sentences": 2
+          },
+          "offset_unit": "unicode_code_points",
+          "message_key": "parent-key",
+          "message_id": "<parent>",
+          "thread_key": "thread",
+          "mail_role": "authored",
+          "mail_sender": "Prior sender",
+          "mail_source_field": "canonical_body",
+          "eligible_for_author_counts": true,
+          "context_before": [],
+          "context_after": []
+        },
+        {
+          "id": "u_eb9b0443c46d890bb8d5e971",
+          "unit_id": "u_eb9b0443c46d890bb8d5e971",
+          "document_id": "mail",
+          "source_version_id": "mail",
+          "source_hash": "782ca6a2ec0e5ed6cff24f0d",
+          "paragraph_id": "p_9ec1359ea06081e971cb1961",
+          "paragraph_ids": [
+            "p_9ec1359ea06081e971cb1961"
+          ],
+          "block_id": "reply",
+          "block_ids": [
+            "reply"
+          ],
+          "start": 0,
+          "end": 54,
+          "segments": [
+            {
+              "block_id": "reply",
+              "start": 0,
+              "end": 54,
+              "text": ">> Earlier quoted claim.\nI disagree with the proposal."
+            }
+          ],
+          "text": ">> Earlier quoted claim.\nI disagree with the proposal.",
+          "source_characters": 54,
+          "sentences": [
+            {
+              "id": "s_9ab19b69c61793a8a929e22f",
+              "document_id": "mail",
+              "source_version_id": "mail",
+              "source_hash": "782ca6a2ec0e5ed6cff24f0d",
+              "paragraph_id": "p_9ec1359ea06081e971cb1961",
+              "block_id": "reply",
+              "start": 0,
+              "end": 25,
+              "text": ">> Earlier quoted claim.\n",
+              "page": null,
+              "paragraph": null,
+              "line_start": 1,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "message_key": "reply-key",
+              "message_id": "<reply>",
+              "thread_key": "thread",
+              "mail_role": "authored",
+              "mail_sender": "Current sender",
+              "mail_source_field": "canonical_body",
+              "eligible_for_author_counts": true,
+              "unit_id": "u_eb9b0443c46d890bb8d5e971"
+            },
+            {
+              "id": "s_c2479d67eae0914cdbfbec6f",
+              "document_id": "mail",
+              "source_version_id": "mail",
+              "source_hash": "782ca6a2ec0e5ed6cff24f0d",
+              "paragraph_id": "p_9ec1359ea06081e971cb1961",
+              "block_id": "reply",
+              "start": 25,
+              "end": 54,
+              "text": "I disagree with the proposal.",
+              "page": null,
+              "paragraph": null,
+              "line_start": 2,
+              "line_end": 2,
+              "offset_unit": "unicode_code_points",
+              "message_key": "reply-key",
+              "message_id": "<reply>",
+              "thread_key": "thread",
+              "mail_role": "authored",
+              "mail_sender": "Current sender",
+              "mail_source_field": "canonical_body",
+              "eligible_for_author_counts": true,
+              "unit_id": "u_eb9b0443c46d890bb8d5e971"
+            }
+          ],
+          "page": null,
+          "paragraph": null,
+          "builder_version": "source-units-3.1-mail-context-1.0",
+          "builder_config": {
+            "max_unit_chars": 200,
+            "context_sentences": 2
+          },
+          "offset_unit": "unicode_code_points",
+          "message_key": "reply-key",
+          "message_id": "<reply>",
+          "thread_key": "thread",
+          "mail_role": "authored",
+          "mail_sender": "Current sender",
+          "mail_source_field": "canonical_body",
+          "eligible_for_author_counts": true,
+          "context_before": [],
+          "context_after": []
+        }
+      ]
+    }
+  ]
+}

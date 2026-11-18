@@ -1,0 +1,112 @@
+{
+  "schema_version": "doxa-hosted-local-validation-1",
+  "generated_at": "2026-11-18T01:49:32.750208+00:00",
+  "status": "passed",
+  "scope": "Local infrastructure schema, generated configuration and isolated software checks; not a cloud deployment or customer-readiness certification",
+  "terraform": {
+    "version": "1.13.5",
+    "google_provider": "6.50.0",
+    "provider_lockfile_committed": true,
+    "init_backend": false,
+    "fmt_check": "passed",
+    "validate": "passed"
+  },
+  "generated_configuration": {
+    "identifiers": "synthetic",
+    "startup_shell_parse": "passed",
+    "docker_compose_config": "passed",
+    "app_image_started": false,
+    "caddy_config": "passed",
+    "caddy_image": "caddy@sha256:4c6e91c6ed0e2fa03efd5b44747b625fec79bc9cd06ac5235a779726618e530d",
+    "caddy_tag_used_for_initial_validation": "2.10.2-alpine",
+    "certificate_requests": 0
+  },
+  "targeted_tests": {
+    "files": [
+      "tests/test_pilot_commerce_v06.py",
+      "tests/test_hosted_pilots_v06.py"
+    ],
+    "passed": 40,
+    "fixtures": "Synthetic contracts and in-memory cloud objects; mocked inference provider for budget transport tests",
+    "new_model_requests": 0
+  },
+  "cloud_resources_created": 0,
+  "cloud_plan_or_apply_executed": false,
+  "actual_gcp_staging_tested": false,
+  "payment_processing_tested": false,
+  "interpretation_accuracy": null,
+  "remaining_external_gates": [
+    "Actual two-organization and separate Personal staging deployments",
+    "TLS and private secrets/IAM verification",
+    "Real database/object restore with authoritative deletion-ledger replay",
+    "Observed backup expiry and complete operating costs",
+    "Qualified human review, data rights and independent interpretation evaluation"
+  ],
+  "input_files": [
+    {
+      "path": "infra/gcp/.terraform.lock.hcl",
+      "bytes": 1185,
+      "sha256": "405ff275929a3faa277577fb38718bac4561d8544bbff6f44f8bb50ee0a5d5b9"
+    },
+    {
+      "path": "infra/gcp/backup.sh",
+      "bytes": 999,
+      "sha256": "a44e9889a200720fd634c88a1e6289d5d5179f24503dc418621b083ba68797fa"
+    },
+    {
+      "path": "infra/gcp/check.sh",
+      "bytes": 363,
+      "sha256": "20ed4b4cf6cd983518311bab2fcad24002d60f8eaa1c6fd37d85dad707814651"
+    },
+    {
+      "path": "infra/gcp/cloud_store.py",
+      "bytes": 17011,
+      "sha256": "3931bcf1cce0619a8a344de482a72ffaf1f0e668c64d0ab5c25825025c658898"
+    },
+    {
+      "path": "infra/gcp/main.tf",
+      "bytes": 7918,
+      "sha256": "2c78fbedd4e44a79b2e1a4e6dbaa91f1d7ab18a4b9afb7bae801424959566993"
+    },
+    {
+      "path": "infra/gcp/outputs.tf",
+      "bytes": 491,
+      "sha256": "4215fb64b654fe16154875e5a1009279c8ae320b55b6bfccc5a5989b11c75aab"
+    },
+    {
+      "path": "infra/gcp/prepare_secrets.py",
+      "bytes": 7710,
+      "sha256": "c4e59921a16d4f52e7ae9c098d9c26e766b78243c48096f7b8ab67c9313f9f76"
+    },
+    {
+      "path": "infra/gcp/pricing.example.json",
+      "bytes": 313,
+      "sha256": "8fbe0a4cf35ca0a62f61337e068eb1f838897c7f960d2f91c8be542d9a195a5f"
+    },
+    {
+      "path": "infra/gcp/restore.sh",
+      "bytes": 3058,
+      "sha256": "f0eac9c214a9d2e0bd1e6142548053fc335e4b414b4839b3fbf6585274493c9c"
+    },
+    {
+      "path": "infra/gcp/startup.sh.tftpl",
+      "bytes": 7433,
+      "sha256": "1d81a02e0ad66439d9ff0f5150a3cd2c6d88669b4da2994afe61591ba432fff3"
+    },
+    {
+      "path": "infra/gcp/terraform.tfvars.example",
+      "bytes": 770,
+      "sha256": "8262c801ca57b94490be6bc8540052e41ff2a4f9008466a71a076150208f0770"
+    },
+    {
+      "path": "infra/gcp/variables.tf",
+      "bytes": 3694,
+      "sha256": "88a1ae262c83aa77d2c05b6821964de71891ddc761aba4b01524ddcc2c6b974c"
+    },
+    {
+      "path": "infra/gcp/versions.tf",
+      "bytes": 253,
+      "sha256": "431b72fc2308c4594e9997a3af2f19152c77f275823bb100946bdae7d0df88ca"
+    }
+  ]
+}

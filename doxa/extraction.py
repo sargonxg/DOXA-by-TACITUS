@@ -21,7 +21,7 @@ MAX_TEXT_CHARS = 40_000_000
 MAX_PAGES = 10_000
 MAX_ZIP_BYTES = 200 * 1024 * 1024
 MAX_XML_BYTES = 24 * 1024 * 1024
-EXTRACTOR_VERSION = "0.4.0"
+EXTRACTOR_VERSION = "0.6.0"
 EXTRACTION_MANIFEST_VERSION = "1.0"
 MIXED_SCAN_IMAGE_FRACTION = 0.35
 MIXED_SCAN_TEXT_CHARACTERS = 800
@@ -38,7 +38,7 @@ def _engine_versions(extractor: str) -> dict[str, str]:
     if extractor == "stdlib-mail-v1":
         from .mail import MAIL_EXTRACTOR_VERSION
         versions["doxa-mail"] = MAIL_EXTRACTOR_VERSION
-    for package in (["PyMuPDF"] if extractor.startswith("pymupdf") else []) + (["docling"] if "docling" in extractor else []):
+    for package in (["PyMuPDF"] if extractor.startswith("pymupdf") else ["pdfminer.six", "pypdf"] if extractor.startswith("pdfminer-six") else []) + (["docling"] if "docling" in extractor else []):
         try:
             versions[package] = importlib.metadata.version(package)
         except importlib.metadata.PackageNotFoundError:
@@ -70,6 +70,8 @@ class _VisibleHTML(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.parts: list[str] = []
         self.blocks: list[str] = []
+        self.heading_levels: list[int | None] = []
+        self.current_heading = None
         self.skip: list[str] = []
         self.hidden: list[str] = []
         self.total_chars = 0
@@ -79,6 +81,7 @@ class _VisibleHTML(HTMLParser):
         self.parts.clear()
         if text.strip():
             self.blocks.append(text)
+            self.heading_levels.append(self.current_heading)
 
     def handle_starttag(self, tag, attrs):
         attributes = dict(attrs)
@@ -102,6 +105,7 @@ class _VisibleHTML(HTMLParser):
             return
         if tag in self.boundaries:
             self.flush()
+            self.current_heading = int(tag[1]) if re.fullmatch(r"h[1-6]", tag) else None
         elif tag == "br":
             self.parts.append("\n")
 
@@ -116,6 +120,8 @@ class _VisibleHTML(HTMLParser):
             return
         if tag in self.boundaries:
             self.flush()
+            if re.fullmatch(r"h[1-6]", tag):
+                self.current_heading = None
 
     def handle_data(self, data):
         if self.skip or self.hidden:
@@ -156,7 +162,7 @@ def _text_blocks(path: Path, extension: str, warnings: list[str]) -> tuple[list[
         parser.feed(text)
         parser.close()
         parser.flush()
-        blocks = [{"text": value, "paragraph": index} for index, value in enumerate(parser.blocks, 1)]
+        blocks = [{"text": value, "paragraph": index, **({"heading_level": parser.heading_levels[index - 1]} if parser.heading_levels[index - 1] else {})} for index, value in enumerate(parser.blocks, 1)]
         warnings.append("HTML scripts, styles, embedded objects and hidden text are excluded; no external resources were loaded.")
         metadata["exclusions"] = ["HTML scripts, styles, embedded objects, head and hidden text"]
         return blocks, metadata, "stdlib-html-visible-text"
@@ -204,7 +210,10 @@ def _docx(path: Path, warnings: list[str]) -> tuple[list[dict], dict]:
                         pieces.append("\n")
                 text = "".join(pieces)
                 if text.strip():
-                    blocks.append({"text": text, "paragraph": index})
+                    style = paragraph.find(f"{_W}pPr/{_W}pStyle")
+                    name = style.get(f"{_W}val", "") if style is not None else ""
+                    heading = re.fullmatch(r"Heading([1-6])", name, re.I)
+                    blocks.append({"text": text, "paragraph": index, **({"heading_level": int(heading.group(1))} if heading else {})})
             metadata = {}
             omitted_parts = sorted(part for part in archive.namelist()
                                    if re.fullmatch(r"word/(?:header\d+|footer\d+|footnotes|endnotes|comments)\.xml", part))
@@ -230,10 +239,103 @@ def _docx(path: Path, warnings: list[str]) -> tuple[list[dict], dict]:
 
 
 def _pdf(path: Path, warnings: list[str]) -> tuple[list[dict], int, dict, str]:
+    """Read text with permissive libraries; never run embedded document code.
+
+    Layout text is stored exactly as returned by pdfminer. No existing source
+    version is rewritten when this extractor is selected for a new import.
+    """
+    backend = os.environ.get("DOXA_PDF_EXTRACTOR", "pdfminer").strip()
+    if backend == "pymupdf-legacy":
+        return _pdf_legacy(path, warnings)
+    if backend != "pdfminer":
+        raise ValueError("DOXA_PDF_EXTRACTOR must be pdfminer or explicit pymupdf-legacy")
+    try:
+        from pypdf import PdfReader
+        from pdfminer.high_level import extract_pages
+        from pdfminer.layout import LAParams, LTImage, LTTextContainer
+    except ImportError as exc:
+        raise ValueError("PDF support requires pdfminer.six and pypdf. Install the project's base dependencies.") from exc
+    blocks, empty_pages, mixed_pages, page_manifest = [], [], [], []
+    total_chars = 0
+    try:
+        with path.open("rb") as stream:
+            reader = PdfReader(stream, strict=False)
+            if reader.is_encrypted:
+                raise ValueError("PDF is encrypted; upload an unlocked copy.")
+            pages = len(reader.pages)
+            if pages > MAX_PAGES:
+                raise ValueError(f"PDF exceeds the {MAX_PAGES:,}-page extraction limit; split it into volumes.")
+            info = reader.metadata or {}
+            names = {"/Title": "title", "/Author": "author", "/Subject": "subject", "/Creator": "creator", "/Producer": "producer", "/CreationDate": "creationDate", "/ModDate": "modDate"}
+            metadata = {target: str(info[key]) for key, target in names.items() if info.get(key)}
+        def images(node):
+            if isinstance(node, LTImage):
+                yield node
+            elif hasattr(node, "__iter__") and not isinstance(node, LTTextContainer):
+                for child in node:
+                    yield from images(child)
+        layouts = extract_pages(str(path), laparams=LAParams(boxes_flow=0.5))
+        observed_pages = 0
+        for page_number, layout in enumerate(layouts, start=1):
+            observed_pages += 1
+            if page_number > pages:
+                raise ValueError("PDF page parsers disagree; review or export a repaired copy.")
+            containers = [item for item in layout if isinstance(item, LTTextContainer) and item.get_text().strip()]
+            texts = [item.get_text() for item in containers]
+            characters = sum(map(len, texts))
+            unmapped_glyphs = sum(len(re.findall(r"\(cid:\d+\)", text)) + text.count("\ufffd") for text in texts)
+            x0, y0, x1, y1 = layout.bbox
+            page_area = max(1.0, (x1 - x0) * (y1 - y0))
+            raster_area = sum(max(0.0, min(image.x1, x1) - max(image.x0, x0)) * max(0.0, min(image.y1, y1) - max(image.y0, y0)) for image in images(layout))
+            image_fraction = min(1.0, raster_area / page_area)
+            mixed_scan = bool(texts) and characters < MIXED_SCAN_TEXT_CHARACTERS and image_fraction >= MIXED_SCAN_IMAGE_FRACTION
+            # Overlapping vertical text boxes separated horizontally are a
+            # review signal, not a claim that column order is wrong or correct.
+            columns = any(min(a.y1, b.y1) > max(a.y0, b.y0) + 12 and
+                          (a.x1 + 12 < b.x0 or b.x1 + 12 < a.x0)
+                          for index, a in enumerate(containers[:256]) for b in containers[index + 1:256])
+            page_warnings = []
+            if not texts:
+                empty_pages.append(page_number)
+                page_warnings.append("No selectable text: this page is blank or requires OCR.")
+            if mixed_scan:
+                mixed_pages.append(page_number)
+                page_warnings.append("Large raster content with little selectable text may contain an unextracted scanned body; review the original page or run explicit OCR.")
+            if columns:
+                page_warnings.append("Possible columns or side-by-side content: verify reading order against the original page.")
+            if unmapped_glyphs:
+                page_warnings.append("Possible unmapped font glyphs or replacement characters require source-image review; no original wording was reconstructed.")
+            if len(containers) > 256:
+                page_warnings.append("Reading-order review signal sampled the first 256 text boxes; all extracted text is retained.")
+            review = not texts or mixed_scan or columns or len(containers) > 256 or bool(unmapped_glyphs)
+            page_manifest.append({"page": page_number, "method": "text" if texts else "unavailable",
+                                  "characters": characters, "image_area_fraction": round(image_fraction, 6),
+                                  "needs_review": review,
+                                  "completeness": "unavailable" if not texts else "needs_review" if review else "extracted_text",
+                                  "reading_order_review": columns, "unmapped_glyph_count": unmapped_glyphs, "warnings": page_warnings})
+            for paragraph, (text, container) in enumerate(zip(texts, containers), start=1):
+                total_chars += len(text)
+                if total_chars > MAX_TEXT_CHARS:
+                    raise ValueError("PDF text exceeds the extraction limit; split it into volumes.")
+                blocks.append({"text": text, "page": page_number, "paragraph": paragraph,
+                               "bbox": [round(value, 6) for value in container.bbox]})
+        if observed_pages != pages:
+            raise ValueError("PDF page extraction was incomplete; review or export a repaired copy.")
+    except ValueError:
+        raise
+    except Exception as exc:
+        raise ValueError("PDF is damaged or could not be opened safely.") from exc
+    metadata["reading_order_policy"] = "pdfminer-layout-box-order-1.0"
+    if any(page.get("reading_order_review") for page in page_manifest):
+        warnings.append("Possible columns or side-by-side content require reading-order review; extracted text order is not independently validated.")
+    return _complete_pdf(blocks, pages, metadata, warnings, empty_pages, mixed_pages, page_manifest, total_chars, "pdfminer-six", path)
+
+
+def _pdf_legacy(path: Path, warnings: list[str]) -> tuple[list[dict], int, dict, str]:
     try:
         import fitz
     except ImportError as exc:
-        raise ValueError("PDF support requires PyMuPDF. Install the project's PDF dependencies.") from exc
+        raise ValueError("Explicit legacy PDF extraction requires the legacy-pdf extra; install it or select the default pdfminer backend.") from exc
     blocks: list[dict] = []
     empty_pages = []
     mixed_pages = []
@@ -284,6 +386,10 @@ def _pdf(path: Path, warnings: list[str]) -> tuple[list[dict], int, dict, str]:
         raise
     except Exception as exc:
         raise ValueError("PDF is damaged or could not be opened safely.") from exc
+    return _complete_pdf(blocks, pages, metadata, warnings, empty_pages, mixed_pages, page_manifest, total_chars, "pymupdf", path)
+
+
+def _complete_pdf(blocks, pages, metadata, warnings, empty_pages, mixed_pages, page_manifest, total_chars, extractor, path):
     ocr_pages = sorted(set(empty_pages + mixed_pages))
     used_ocr = False
     if ocr_pages:
@@ -355,7 +461,7 @@ def _pdf(path: Path, warnings: list[str]) -> tuple[list[dict], int, dict, str]:
     metadata.update({"page_manifest": page_manifest, "pages_needing_ocr": ocr_pages,
                      "mixed_scan_pages": mixed_pages,
                      "exclusions": ["Images, diagrams and other non-text material are not interpreted by text extraction"]})
-    return blocks, pages, metadata, "pymupdf+docling-ocr" if used_ocr else "pymupdf"
+    return blocks, pages, metadata, extractor + "+docling-ocr" if used_ocr else extractor
 
 
 def extract_document(path: Path, filename: str | None = None) -> dict:
@@ -414,7 +520,8 @@ def extract_document(path: Path, filename: str | None = None) -> dict:
     if extension == ".pdf":
         settings.update({"mixed_scan_image_fraction": MIXED_SCAN_IMAGE_FRACTION,
                          "mixed_scan_text_characters": MIXED_SCAN_TEXT_CHARACTERS,
-                         "ocr_page_limit": 200})
+                         "ocr_page_limit": 200, "pdf_backend": os.environ.get("DOXA_PDF_EXTRACTOR", "pdfminer"),
+                         "reading_order_policy": metadata.get("reading_order_policy", "legacy-pymupdf-sort")})
     elif extension in {".eml", ".mbox"}:
         from .mail import extraction_settings
         settings.update(extraction_settings())

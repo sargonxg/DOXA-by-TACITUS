@@ -113,17 +113,9 @@ def test_docx_declares_unextracted_additional_text_parts(tmp_path):
 
 
 def mixed_pdf(tmp_path):
-    fitz = pytest.importorskip("fitz")
+    from pdf_fixtures import mixed_pdf_bytes
     path = tmp_path / "mixed.pdf"
-    with fitz.open() as raster_source:
-        raster_page = raster_source.new_page(width=500, height=620)
-        raster_page.insert_text((35, 45), "The body is rasterized source evidence.")
-        pixmap = raster_page.get_pixmap()
-        with fitz.open() as document:
-            page = document.new_page()
-            page.insert_text((72, 65), "Selectable header")
-            page.insert_image(fitz.Rect(35, 110, 560, 760), pixmap=pixmap)
-            document.save(path)
+    path.write_bytes(mixed_pdf_bytes())
     return path
 
 
@@ -143,13 +135,10 @@ def test_mixed_selectable_header_and_raster_body_is_not_complete_text_coverage(t
 
 
 def test_pdf_blank_page_remains_explicitly_unavailable(tmp_path, monkeypatch):
-    fitz = pytest.importorskip("fitz")
+    from pdf_fixtures import pdf_bytes
     monkeypatch.delenv("DOXA_ENABLE_OCR", raising=False)
     path = tmp_path / "partial.pdf"
-    with fitz.open() as document:
-        document.new_page().insert_text((72, 72), "Selectable text on page one.")
-        document.new_page()
-        document.save(path)
+    path.write_bytes(pdf_bytes(["Selectable text on page one.", None]))
     manifest = extract_document(path)["extraction_manifest"]
     assert manifest["pages"][0]["method"] == "text"
     assert manifest["pages"][1]["method"] == "unavailable"
@@ -166,7 +155,7 @@ def test_mixed_scan_ocr_requires_explicit_prefetched_artifacts(tmp_path, monkeyp
     monkeypatch.setitem(sys.modules, "docling.document_converter", None)
     result = extract_document(path)
     assert "no models were downloaded" in " ".join(result["extraction_warnings"])
-    assert result["extractor"] == "pymupdf"
+    assert result["extractor"] == "pdfminer-six"
     assert result["extraction_manifest"]["pages"][0]["needs_review"]
 
 
@@ -218,4 +207,4 @@ def test_explicit_ocr_preserves_selectable_header_and_declares_recognition_uncer
     assert manifest["pages"][0]["method"] == "ocr"
     assert manifest["pages"][0]["characters"] == sum(map(len, texts))
     assert manifest["needs_review"] and not manifest["source_coverage_complete"]
-    assert result["extractor"] == "pymupdf+docling-ocr"
+    assert result["extractor"] == "pdfminer-six+docling-ocr"

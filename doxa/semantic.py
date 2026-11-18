@@ -130,7 +130,7 @@ class SemanticIndex:
                 "anchors_sha256": hashlib.sha256(anchor_bytes).hexdigest(),
                 "bytes": len(vector_bytes) + len(anchor_bytes)}
 
-    def _build_document(self, prefix: str, document: dict, blocks: list[dict], blocks_digest: str) -> tuple[dict, bool]:
+    def _build_document(self, prefix: str, document: dict, blocks: list[dict], blocks_digest: str, *, checkpoint=None) -> tuple[dict, bool]:
         cache_id = _hash({"source_sha256": document["sha256"], "blocks_digest": blocks_digest,
                           "revision": self.profile["revision"], "version": INDEX_VERSION, "overlap": 32})
         doc_prefix = prefix + "/documents/" + hashlib.sha256(document["id"].encode()).hexdigest()[:32]
@@ -154,7 +154,11 @@ class SemanticIndex:
             nonlocal anchors, vectors, count, total_bytes, piece_chars
             if not pieces:
                 return
+            if checkpoint:
+                checkpoint()
             result = self.runtime.embed_windows([piece["text"] for piece in pieces])
+            if checkpoint:
+                checkpoint()
             for skipped in result.get("nonindexable_inputs", []):
                 piece = pieces[skipped["input_index"]]
                 nonindexable.append({"block_id": piece["block"]["id"], "start": piece["start"],
@@ -207,7 +211,8 @@ class SemanticIndex:
         self.store.put_json(doc_prefix + "/cache.json", entry)
         return entry, False
 
-    def build(self, project_id: str, document_ids: list[str] | None = None, *, replace_scope: bool = False) -> dict:
+    def build(self, project_id: str, document_ids: list[str] | None = None, *, replace_scope: bool = False,
+              checkpoint=None, progress=None, validate_document=None) -> dict:
         """Explicit indexing; reuse unchanged document bundles after restart."""
         with _BUILD_LOCK:
             started = time.perf_counter()
@@ -230,17 +235,23 @@ class SemanticIndex:
                 entries = {entry["document_id"]: entry for entry in existing["documents"]
                            if entry["document_id"] in available}
             cached = 0
-            for document in documents:
+            for ordinal, document in enumerate(documents):
+                if checkpoint:
+                    checkpoint()
                 blocks = self.store.get_json(document["blocks_key"])
                 if (not isinstance(blocks, list) or len(blocks) > 100_000
                         or any(not isinstance(block, dict) or not isinstance(block.get("id"), str)
                                or not isinstance(block.get("text"), str) for block in blocks)):
                     raise SemanticIndexError("Source blocks are missing or malformed")
+                if validate_document:
+                    validate_document(document, blocks)
                 if sum(len(block["text"]) for block in blocks) > 40_000_000:
                     raise SemanticIndexError("Source text exceeds the 40-million-character extraction bound")
-                entry, was_cached = self._build_document(prefix, document, blocks, self._blocks_digest(blocks))
+                entry, was_cached = self._build_document(prefix, document, blocks, self._blocks_digest(blocks), checkpoint=checkpoint)
                 entries[document["id"]] = entry
                 cached += int(was_cached)
+                if progress:
+                    progress(ordinal + 1, len(documents), cached)
                 if (sum(entry["passages"] for entry in entries.values()) > MAX_PASSAGES
                         or sum(entry["bytes"] for entry in entries.values()) > MAX_INDEX_BYTES):
                     raise SemanticIndexError("Index exceeds 250000 passages or 512MiB; split the project explicitly")
@@ -272,6 +283,8 @@ class SemanticIndex:
                     raise SemanticIndexError("Previous index has an invalid history identifier")
                 history_key = prefix + "/history/" + previous_id + ".json"
                 self.store.put_json(history_key, existing)
+            if checkpoint:
+                checkpoint()
             self.store.put_json(prefix + "/manifest.json", manifest)
             self._cache.clear()
             return {"documents": len(sorted_entries), "processed_documents": len(documents),

@@ -1,4 +1,5 @@
 import argparse
+import json
 import os
 from pathlib import Path
 import stat
@@ -16,22 +17,54 @@ def load_private_environment(filename):
     load_dotenv(path, override=True)
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description="DOXA by TACITUS research workbench")
+    parser.add_argument("command", nargs="?", choices=["serve", "doctor"], default="serve")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", default=8000, type=int)
     parser.add_argument("--data-dir", default="data")
     parser.add_argument("--env-file", help="Explicit private pilot.env file; never served to the browser")
-    args = parser.parse_args()
+    parser.add_argument("--local-profile", choices=["low-memory", "standard", "server"],
+                        help="Explicit operational profile; no model selection or download")
+    parser.add_argument("--json", action="store_true", help="Machine-readable doctor output")
+    args = parser.parse_args(argv)
     if args.env_file:
         try:
             load_private_environment(args.env_file)
         except (OSError, ValueError) as error:
             parser.error(str(error))
+    if args.command == "doctor":
+        from .readiness import readiness
+        environment = dict(os.environ)
+        if args.local_profile:
+            environment["DOXA_LOCAL_PROFILE"] = args.local_profile
+        try:
+            report = readiness(args.data_dir, environ=environment)
+        except ValueError as error:
+            parser.error(str(error))
+        if args.json:
+            print(json.dumps(report, indent=2))
+        else:
+            print(f"DOXA {report['version']} · {report['profile']['name']} · configuration check")
+            for check in report["checks"]:
+                print(f"{check['status'].upper()}: {check['message']}")
+                if check.get("action"):
+                    print(f"  {check['action']}")
+            print(report["notice"])
+        return 0 if report["ok"] else 1
+    if args.json:
+        parser.error("--json is available with doxa doctor")
+    if args.local_profile:
+        os.environ["DOXA_LOCAL_PROFILE"] = args.local_profile
+    from .local_profile import apply_local_environment_defaults
+    try:
+        apply_local_environment_defaults()
+    except ValueError as error:
+        parser.error(str(error))
     os.environ["DOXA_DATA_DIR"] = args.data_dir
     import uvicorn
     uvicorn.run("doxa.api:app", host=args.host, port=args.port)
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

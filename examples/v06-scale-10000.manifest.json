@@ -1,0 +1,19 @@
+{
+  "schema_version": "doxa-synthetic-scale-export-0.6",
+  "synthetic": true,
+  "description": "Complete metadata/source-text fixture record XLSX, zero model assessments; not a bias-analysis result.",
+  "script": "scripts/benchmark_scale_v06.py",
+  "script_sha256": "7e654d2a5d2e20c25b17b50119e7cdc97632ba8caa652801770c2996060fa54d",
+  "documents": 10000,
+  "contextual_assessments": 0,
+  "model_requests": 0,
+  "query_id": "8420b362cb114d5ebbe6f51855f43459",
+  "scope_hash": "00621f874295c7f875f3550c5e45e545ed1082bc5d393ae15588de741f27dbaf",
+  "files": [
+    {
+      "file": "v06-scale-10000.xlsx",
+      "bytes": 3267994,
+      "sha256": "f63bae6f9f54a016c668459632f724a76354583fc6eef441329e97bcc146f664"
+    }
+  ]
+}

@@ -16,6 +16,7 @@ from fastapi import HTTPException, Request, Response
 from fastapi.responses import FileResponse
 
 from . import report_source
+from .access import WorkerAuthorizationError
 from .recorded_export import compact, file_hash
 from .store import utcnow
 
@@ -29,6 +30,10 @@ class Cancelled(Exception):
 
 class Stopped(Exception):
     pass
+
+
+class DeliveryAuthorityError(WorkerAuthorizationError):
+    """A frozen publication needs a new accepted service agreement."""
 
 
 def _render_child(database, metadata, output, format):
@@ -48,6 +53,32 @@ def _casebook_child(config_path, output, format, profile):
     try:
         config = json.loads(Path(config_path).read_text())
         artifacts = render_casebook(config["casebook"], path, format, profile)
+        (path / "result.json").write_text(compact({"artifacts": artifacts}))
+    except BaseException as error:
+        path.mkdir(parents=True, exist_ok=True)
+        (path / "result.json").write_text(compact({"error": str(error)[:1000]}))
+        raise
+
+
+def _guided_child(config_path, output, format):
+    """Render a bounded guided snapshot in the existing cancellable child."""
+    from .pilot_reports import build_pilot_report
+    path = Path(output)
+    try:
+        config = json.loads(Path(config_path).read_text())
+        result = build_pilot_report(config["guided_pilot"], format,
+                                    trusted_reviews=config.get("trusted_reviews", False))
+        filename = "doxa-guided-report." + result["extension"]
+        artifact = path / filename
+        artifact.write_bytes(result["content"])
+        manifest = path / "manifest.json"
+        manifest.write_text(compact(result["manifest"]), encoding="utf-8")
+        artifacts = [{"format": format, "filename": filename, "path": str(artifact),
+                      "bytes": artifact.stat().st_size, "sha256": file_hash(artifact),
+                      "content_type": result["media_type"]},
+                     {"format": "manifest", "filename": manifest.name, "path": str(manifest),
+                      "bytes": manifest.stat().st_size, "sha256": file_hash(manifest),
+                      "content_type": "application/json"}]
         (path / "result.json").write_text(compact({"artifacts": artifacts}))
     except BaseException as error:
         path.mkdir(parents=True, exist_ok=True)
@@ -108,7 +139,7 @@ class ReportJobs:
         execution = json.loads(row["state_json"] or "{}")
         if execution.get("managed_access"):
             result["execution"] = {"managed_access": True, "actor_id": execution.get("execution_actor_id")}
-        result["can_restart"] = row["status"] in {"failed", "cancelled"} and (result["error"] or {}).get("code") != "source_changed"
+        result["can_restart"] = row["status"] in {"failed", "cancelled"} and (result["error"] or {}).get("code") not in {"source_changed", "delivery_authority_changed"}
         result["artifacts"] = [{"format": item["format"], "filename": item["filename"], "bytes": item["bytes"], "sha256": item["sha256"],
                                 "download_url": f'/api/v3/report-jobs/{identity}/artifacts/{item["format"]}'} for item in self.store.query("SELECT * FROM report_job_artifacts WHERE job_id=? ORDER BY format", [identity])] if row["status"] == "completed" else []
         return result
@@ -178,6 +209,52 @@ class ReportJobs:
                 pass
         return self.get(identity)
 
+    def create_guided(self, project_id, snapshot, format, *, identity, actor_id=None,
+                      managed_access=False, trusted_reviews=False, quote_id=None):
+        """Idempotently submit a frozen guided snapshot to this report engine.
+
+        Only trusted server code calls this; actor authority is independently
+        revalidated here and on every worker/render/publication checkpoint.
+        """
+        from .privacy_lifecycle import activity, require_exports, track_artifact
+        if self.store.remote:
+            raise ValueError("Guided publication requires dedicated native storage")
+        if format not in {"pdf", "html", "xlsx", "json"}:
+            raise ValueError("Unsupported guided report format")
+        if len(identity) != 32 or any(char not in "0123456789abcdef" for char in identity):
+            raise ValueError("Invalid deterministic guided report identity")
+        with activity(self.store, project_id, "guided_report_submit"):
+            require_exports(self.store, project_id)
+            if self.access_control.managed:
+                self.access_control.require_worker(actor_id, project_id, "export")
+                if not managed_access:
+                    raise ValueError("Managed report execution requires an authenticated owner")
+            from .pilot_api import admit_guided_quote, guided_quote_scope
+            admit_guided_quote(self.store, project_id, quote_id, snapshot)
+            delivery_quote = {"quote_id": quote_id, "scope": guided_quote_scope(snapshot)}
+            config = {"project_id": project_id, "guided_pilot": snapshot,
+                      "trusted_reviews": bool(trusted_reviews), "delivery_quote": delivery_quote}
+            encoded = compact(config)
+            if len(encoded.encode()) > 16 * 1024 * 1024:
+                raise ValueError("Frozen guided report exceeds its 16 MiB input limit")
+            scope = hashlib.sha256(encoded.encode()).hexdigest()
+            existing = self.store.one("SELECT * FROM report_jobs WHERE id=?", [identity])
+            if existing:
+                if existing["project_id"] != project_id or existing["scope_hash"] != scope or existing["format"] != format:
+                    raise ValueError("Guided report identity conflicts with immutable inputs")
+                return self.get(identity)
+            key = f"report-jobs/{identity}/config.json"
+            track_artifact(self.store, project_id, f"objects/report-jobs/{identity}", "guided_report_job")
+            self.store.put_json(key, config)
+            now = utcnow()
+            state = {"stage": 0, "execution_actor_id": actor_id,
+                     "managed_access": bool(managed_access), "delivery_quote": delivery_quote}
+            self.store.execute("INSERT INTO report_jobs(id,project_id,query_id,publication_type,format,profile,status,phase,scope_hash,snapshot_version,config_key,state_json,progress_json,created_at,updated_at) VALUES(?,?,?,'guided',?,'briefing','queued','queued',?,'guided-pilot-0.6',?,?,?,?,?) ON CONFLICT(id) DO NOTHING", [
+                identity, project_id, "guided:" + identity, format, scope, key,
+                compact(state), compact({"phase": "queued", "completed": 0, "total": 1,
+                                        "percent": 0, "message": "Frozen guided inputs are ready for rendering"}), now, now])
+            return self.get(identity)
+
     def cancel(self, identity):
         row = self._row(identity)
         if row["status"] in TERMINAL:
@@ -226,7 +303,8 @@ class ReportJobs:
         if row["status"] in TERMINAL:
             return {"pending": False, "status": row["status"], "job_id": identity}
         try:
-            with activity(self.store, row["project_id"], "report_worker"):
+            from .local_profile import heavy_operation
+            with heavy_operation(), activity(self.store, row["project_id"], "report_worker"):
                 self._require_authorized(row)
                 return self._work_once(identity, deadline_seconds=deadline_seconds)
         except WorkerAuthorizationError as error:
@@ -266,11 +344,18 @@ class ReportJobs:
                 require_exports(self.store, row["project_id"])
             except ValueError:
                 raise WorkerAuthorizationError("Export is no longer permitted by this project's privacy policy") from None
+            if row["publication_type"] == "guided":
+                from .pilot_commerce import CommerceError, admit_quote_work
+                delivery = json.loads(row["state_json"] or "{}").get("delivery_quote", {})
+                try:
+                    admit_quote_work(self.store, row["project_id"], delivery.get("quote_id"), **delivery["scope"])
+                except (CommerceError, KeyError):
+                    raise DeliveryAuthorityError("The accepted quote no longer permits this frozen report; submit a new report under a new accepted quote") from None
 
     def _authorization_failed(self, row, error, lease=None):
         match, value = ("lease_token=?", lease) if lease else ("state_json=?", row["state_json"])
         self.store.execute("UPDATE report_jobs SET status='failed',phase='failed',error_json=?,lease_token=NULL,lease_until=NULL,completed_at=?,updated_at=? WHERE id=? AND " + match + " AND status IN ('queued','running')",
-                           [compact({"code": "authorization_required", "message": str(error)[:1000]}), utcnow(), utcnow(), row["id"], value])
+                           [compact({"code": "delivery_authority_changed" if isinstance(error, DeliveryAuthorityError) else "authorization_required", "message": str(error)[:1000]}), utcnow(), utcnow(), row["id"], value])
 
     def _work_once(self, identity, *, deadline_seconds=420):
         row = self._row(identity)
@@ -288,6 +373,18 @@ class ReportJobs:
         try:
             config = self.store.get_json(row["config_key"])
             state = json.loads(row["state_json"] or "{}")
+            if config.get("guided_pilot"):
+                if hashlib.sha256(compact(config).encode()).hexdigest() != row["scope_hash"]:
+                    raise report_source.SourceChanged("Frozen guided inputs changed after submission")
+                self._check(identity, lease)
+                self.store.execute("UPDATE report_jobs SET phase='render',progress_json=?,updated_at=? WHERE id=? AND lease_token=?", [compact({"phase": "render", "completed": 0, "total": 1, "percent": 75, "message": "Rendering the frozen guided briefing"}), utcnow(), identity, lease])
+                output = folder / "output"
+                output.mkdir(exist_ok=True)
+                config_path = folder / "guided.json"
+                config_path.write_text(compact(config), encoding="utf-8")
+                result = self._run_renderer(identity, lease, deadline, output, _guided_child,
+                                            (str(config_path), str(output), row["format"]))
+                return self._publish(identity, lease, result["artifacts"])
             if config.get("casebook"):
                 self._check(identity, lease)
                 self.store.execute("UPDATE report_jobs SET phase='render',progress_json=?,updated_at=? WHERE id=? AND lease_token=?", [compact({"phase": "render", "completed": 0, "total": 1, "percent": 75, "message": "Rendering the submitted frozen casebook revision"}), utcnow(), identity, lease])

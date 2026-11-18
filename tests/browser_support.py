@@ -27,7 +27,7 @@ def chromium_launch_options() -> dict:
 
 
 @contextmanager
-def local_app(directory: Path | None = None, *, allow_external: bool = False):
+def local_app(directory: Path | None = None, *, allow_external: bool = False, start_workers: bool = False):
     external = os.environ.get("DOXA_BROWSER_URL") if allow_external else None
     if external:
         yield external.rstrip("/")
@@ -38,11 +38,11 @@ def local_app(directory: Path | None = None, *, allow_external: bool = False):
         sock.bind(("127.0.0.1", 0))
         port = sock.getsockname()[1]
     base = f"http://127.0.0.1:{port}"
-    server_code = 'import os, uvicorn; from doxa.api import create_app; uvicorn.run(create_app(start_workers=False), host="127.0.0.1", port=int(os.environ["DOXA_BROWSER_PORT"]))'
+    server_code = 'import os, uvicorn; from doxa.api import create_app; uvicorn.run(create_app(start_workers=bool(int(os.environ["DOXA_BROWSER_WORKERS"]))), host="127.0.0.1", port=int(os.environ["DOXA_BROWSER_PORT"]))'
     process = subprocess.Popen(
         [sys.executable, "-c", server_code],
         cwd=ROOT,
-        env={**os.environ, "DOXA_DATA_DIR": str(data), "DOXA_BROWSER_PORT": str(port)},
+        env={**os.environ, "DOXA_DATA_DIR": str(data), "DOXA_BROWSER_PORT": str(port), "DOXA_BROWSER_WORKERS": str(int(start_workers))},
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
     )

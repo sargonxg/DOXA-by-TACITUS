@@ -74,17 +74,9 @@ class ExtractionTests(unittest.TestCase):
             extract_document(path)
 
     def test_pdf_text_locations_and_partial_extraction_warning(self):
-        try:
-            import fitz
-        except ImportError:
-            self.skipTest("PyMuPDF unavailable")
+        from pdf_fixtures import pdf_bytes
         path = self.directory / "source.pdf"
-        document = fitz.open()
-        page = document.new_page()
-        page.insert_text((72, 72), "Source evidence on page one.")
-        document.new_page()
-        document.save(path)
-        document.close()
+        path.write_bytes(pdf_bytes(["Source evidence on page one.", None]))
         result = extract_document(path)
         self.assertEqual(result["page_count"], 2)
         self.assertEqual(result["blocks"][0]["page"], 1)
@@ -92,19 +84,13 @@ class ExtractionTests(unittest.TestCase):
         self.assertIn("require OCR or are blank", " ".join(result["extraction_warnings"]))
 
     def test_encrypted_and_image_only_pdf_fail_actionably(self):
-        try:
-            import fitz
-        except ImportError:
-            self.skipTest("PyMuPDF unavailable")
-        empty = fitz.open()
-        empty.new_page()
+        from pdf_fixtures import pdf_bytes
         blank_path = self.directory / "blank.pdf"
-        empty.save(blank_path)
+        blank_path.write_bytes(pdf_bytes([None]))
         with self.assertRaisesRegex(ValueError, "OCR"):
             extract_document(blank_path)
         protected_path = self.directory / "protected.pdf"
-        empty.save(protected_path, encryption=fitz.PDF_ENCRYPT_AES_256, owner_pw="owner", user_pw="password")
-        empty.close()
+        protected_path.write_bytes(pdf_bytes(["Protected source"], password="password"))
         with self.assertRaisesRegex(ValueError, "encrypted"):
             extract_document(protected_path)
 

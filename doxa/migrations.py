@@ -10,7 +10,7 @@ import uuid
 
 from .store import utcnow
 
-SCHEMA_VERSION = 5
+SCHEMA_VERSION = 6
 REMOTE_SCHEMA_VERSION = 4
 V4_SQL = """
 CREATE TABLE IF NOT EXISTS import_commits (
@@ -121,6 +121,9 @@ def _apply(store, current):
     if current < 5 and not store.remote:
         statements.extend(_native_extension_statements())
         statements.append({"sql": "INSERT INTO schema_versions(version,applied_at) VALUES(?,?) ON CONFLICT(version) DO NOTHING", "params": [5, utcnow()]})
+    if current < 6 and not store.remote:
+        statements.extend(_v06_extension_statements())
+        statements.append({"sql": "INSERT INTO schema_versions(version,applied_at) VALUES(?,?) ON CONFLICT(version) DO NOTHING", "params": [6, utcnow()]})
     store.batch(statements)
 
 
@@ -137,10 +140,18 @@ def _extensions(store):
     # Additive companion tables are idempotent within this release; this also
     # repairs an initialization interrupted between service registrations.
     store.batch([*_statements(V4_SQL), *_extension_statements(),
-                 *(_native_extension_statements() if not store.remote else [])])
+                 *([*_native_extension_statements(), *_v06_extension_statements()] if not store.remote else [])])
 
 
 def _native_extension_statements():
     from .pilot_api import SCHEMA_SQL as pilot_schema
     from .privacy_lifecycle import SCHEMA_SQL as privacy_schema
     return [*_statements(pilot_schema), *_statements(privacy_schema)]
+
+
+def _v06_extension_statements():
+    from .activity_jobs import SCHEMA_SQL as activity_schema
+    from .comparisons import SCHEMA_SQL as comparison_schema
+    from .pilot_commerce import SCHEMA_SQL as commerce_schema
+    from .alert_evaluation import SCHEMA_SQL as alert_schema
+    return [*_statements(activity_schema), *_statements(comparison_schema), *_statements(commerce_schema), *_statements(alert_schema)]

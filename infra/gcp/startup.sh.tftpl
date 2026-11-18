@@ -1,0 +1,193 @@
+#!/bin/bash
+# Deliberate GCE provisioning only. No secrets are embedded in Terraform state.
+set -euo pipefail
+umask 077
+export DEBIAN_FRONTEND=noninteractive
+apt-get update -qq
+apt-get install -y -qq ca-certificates curl docker.io docker-compose-v2 python3 zstd
+systemctl enable --now docker
+install -d -m 0755 /opt/doxa
+install -d -m 0700 /run/doxa-secrets /run/doxa-docker-auth
+printf '%s' '${cloud_store}' | base64 --decode > /opt/doxa/cloud_store.py
+printf '%s' '${backup_script}' | base64 --decode > /opt/doxa/backup.sh
+printf '%s' '${restore_script}' | base64 --decode > /opt/doxa/restore.sh
+chmod 0755 /opt/doxa/cloud_store.py /opt/doxa/backup.sh /opt/doxa/restore.sh
+python3 /opt/doxa/cloud_store.py secret '${project_id}' '${access_secret}' /run/doxa-secrets/access.json
+python3 /opt/doxa/cloud_store.py secret '${project_id}' '${env_secret}' /run/doxa-secrets/pilot.env
+python3 /opt/doxa/cloud_store.py secret '${project_id}' '${pricing_secret}' /run/doxa-secrets/pricing.json
+installation=$(python3 /opt/doxa/cloud_store.py installation-id /run/doxa-secrets/pilot.env)
+remote_ledger=false
+if python3 /opt/doxa/cloud_store.py latest-ledger '${control_bucket}' "$installation" /run/doxa-latest-ledger.json; then
+  remote_ledger=true
+else
+  result=$?
+  if [ "$result" -ne 3 ]; then exit "$result"; fi
+fi
+mount_disk() {
+  device=$1
+  target=$2
+  for attempt in $(seq 1 30); do
+    if [ -b "$device" ]; then break; fi
+    sleep 1
+  done
+  fs=$(blkid -o value -s TYPE "$device" || true)
+  if [ -z "$fs" ]; then
+    if [ '${initialize_empty}' != true ] || [ "$remote_ledger" = true ]; then
+      echo 'Unformatted storage requires explicit first-install preparation; existing customer storage is never reformatted.' >&2
+      exit 1
+    fi
+    mkfs.ext4 -F "$device" >/dev/null
+  elif [ "$fs" != ext4 ]; then
+    echo 'Unexpected filesystem; operator recovery required.' >&2
+    exit 1
+  fi
+  install -d -m 0755 "$target"
+  if ! mountpoint -q "$target"; then mount -o defaults,nodev,nosuid "$device" "$target"; fi
+  actual=$(findmnt -n -o SOURCE "$target")
+  if [ "$(readlink -f "$actual")" != "$(readlink -f "$device")" ]; then
+    echo 'Unexpected mounted disk identity.' >&2
+    exit 1
+  fi
+}
+mount_disk /dev/disk/by-id/google-doxa-data /srv/doxa-data
+mount_disk /dev/disk/by-id/google-doxa-control /var/lib/doxa-control
+install -d -m 0700 -o 10001 -g 10001 /srv/doxa-data/data /var/lib/doxa-control/deletions
+install -d -m 0700 /var/lib/doxa-control/caddy /var/lib/doxa-control/caddy-config /srv/doxa-data/scratch
+if [ "$remote_ledger" = true ]; then
+  # Never discard a newer local write whose synchronous upload needs retry.
+  python3 /opt/doxa/cloud_store.py merge-ledger /run/doxa-latest-ledger.json /var/lib/doxa-control/deletions/ledger.json "$installation"
+  chown 10001:10001 /var/lib/doxa-control/deletions/ledger.json
+fi
+chown -R 10001:10001 /run/doxa-secrets
+cat > /opt/doxa/compose.yaml <<'YAML'
+services:
+  app:
+    image: '${app_image}'
+    command: ['uvicorn', 'doxa.api:app', '--host', '0.0.0.0', '--port', '8000', '--workers', '1', '--proxy-headers', '--forwarded-allow-ips', '172.30.0.2', '--no-access-log']
+    env_file: /run/doxa-secrets/pilot.env
+    environment:
+      DOXA_DATA_DIR: /data
+      DOXA_CLOUD_STATE_URL: ''
+      DOXA_ACCESS_MODE: managed
+      DOXA_ACCESS_CONFIG_FILE: /run/secrets/access.json
+      DOXA_PUBLIC_ORIGIN: 'https://${domain}'
+      DOXA_PILOT_WORKSPACE_KIND: '${kind}'
+      DOXA_REQUIRE_ACCEPTED_QUOTE: 'true'
+      DOXA_COMMERCE_RATES_FILE: /run/secrets/pricing.json
+      DOXA_LOCAL_PROFILE: low-memory
+      DOXA_PARSER_MEMORY_MB: '1536'
+      DOXA_PARSER_SLOTS: '1'
+      DOXA_LOCAL_HEAVY_SLOTS: '1'
+      DOXA_CPU_THREADS: '2'
+      DOXA_CPU_BATCH_SIZE: '2'
+      DOXA_ENABLE_OCR: '0'
+      DOXA_DELETION_LEDGER_PATH: /control/deletions/ledger.json
+      DOXA_DELETION_LEDGER_PUBLISH_ARGV: '["/usr/local/bin/python","/opt/doxa/cloud_store.py","publish-ledger"]'
+      DOXA_LEDGER_BUCKET: '${control_bucket}'
+    volumes:
+      - /srv/doxa-data/data:/data
+      - /run/doxa-secrets:/run/secrets:ro
+      - /var/lib/doxa-control/deletions:/control/deletions
+      - /opt/doxa/cloud_store.py:/opt/doxa/cloud_store.py:ro
+    mem_limit: 4g
+    cpus: 2
+    pids_limit: 256
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 45s
+    logging:
+      options: {max-size: '10m', max-file: '3'}
+    networks:
+      pilot: {ipv4_address: 172.30.0.3}
+  proxy:
+    image: '${caddy_image}'
+    ports: ['80:80', '443:443']
+    volumes:
+      - /opt/doxa/Caddyfile:/etc/caddy/Caddyfile:ro
+      - /var/lib/doxa-control/caddy:/data
+      - /var/lib/doxa-control/caddy-config:/config
+    depends_on:
+      app: {condition: service_healthy}
+    restart: unless-stopped
+    logging:
+      options: {max-size: '10m', max-file: '3'}
+    networks:
+      pilot: {ipv4_address: 172.30.0.2}
+networks:
+  pilot:
+    ipam:
+      config: [{subnet: 172.30.0.0/24}]
+YAML
+cat > /opt/doxa/Caddyfile <<'CADDY'
+{
+	admin off
+}
+${domain} {
+	header Strict-Transport-Security "max-age=31536000"
+	request_body {
+		max_size 512MB
+	}
+	reverse_proxy app:8000
+}
+CADDY
+cat > /opt/doxa/operator.json <<'JSON'
+{"backup_bucket":"${backup_bucket}","control_bucket":"${control_bucket}"}
+JSON
+export DOCKER_CONFIG=/run/doxa-docker-auth
+python3 - '${registry_host}' <<'PY'
+import importlib.util,subprocess,sys
+spec=importlib.util.spec_from_file_location('cloud_store','/opt/doxa/cloud_store.py')
+module=importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+subprocess.run(['docker','login','--username','oauth2accesstoken','--password-stdin',sys.argv[1]],input=module.token().encode(),stdout=subprocess.DEVNULL,check=True)
+PY
+docker compose -f /opt/doxa/compose.yaml pull
+docker logout '${registry_host}' >/dev/null
+ledger=/var/lib/doxa-control/deletions/ledger.json
+if [ ! -f "$ledger" ]; then
+  if [ '${initialize_empty}' != true ] || [ "$remote_ledger" = true ] || [ -n "$(find /srv/doxa-data/data -mindepth 1 -maxdepth 1 -print -quit)" ]; then
+    echo 'Authoritative deletion ledger required before customer data can be served.' >&2
+    exit 1
+  fi
+  docker compose -f /opt/doxa/compose.yaml run --rm --no-deps app python /app/scripts/privacy_lifecycle_v06.py init-ledger --data-dir /data
+fi
+# A separate process applies deletion obligations before the HTTP server starts.
+docker compose -f /opt/doxa/compose.yaml run --rm --no-deps app python /app/scripts/privacy_lifecycle_v06.py restore-check --data-dir /data
+cat > /etc/systemd/system/doxa-pilot.service <<'UNIT'
+[Unit]
+Description=DOXA dedicated pilot
+After=docker.service network-online.target
+Requires=docker.service
+Wants=network-online.target
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/opt/doxa
+ExecStart=/usr/bin/docker compose -f /opt/doxa/compose.yaml up -d
+ExecStop=/usr/bin/docker compose -f /opt/doxa/compose.yaml stop
+TimeoutStartSec=900
+TimeoutStopSec=120
+[Install]
+WantedBy=multi-user.target
+UNIT
+cat > /etc/systemd/system/doxa-backup.service <<'UNIT'
+[Unit]
+Description=Quiesced DOXA data and object backup
+After=doxa-pilot.service
+[Service]
+Type=oneshot
+ExecStart=/opt/doxa/backup.sh
+TimeoutStartSec=3600
+UNIT
+cat > /etc/systemd/system/doxa-backup.timer <<'UNIT'
+[Unit]
+Description=Daily DOXA backup
+[Timer]
+OnCalendar=*-*-* 06:00:00 UTC
+Persistent=true
+RandomizedDelaySec=300
+[Install]
+WantedBy=timers.target
+UNIT
+systemctl daemon-reload
+systemctl enable --now doxa-pilot.service doxa-backup.timer

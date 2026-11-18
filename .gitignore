@@ -12,6 +12,8 @@ infra/cloudflare/.wrangler/
 !.env.example
 .dev.vars
 data/
+!doxa/data/
+!doxa/data/*
 *.sqlite*
 test-results/
 playwright-report/

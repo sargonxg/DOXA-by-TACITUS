@@ -4,6 +4,8 @@
 
 **Implementation update:** [v0.5's native pilot foundation](managed-pilots-v05.md) now implements three inquiry profiles, individual access/project grants, selected writing and mail intake, source pseudonymization with encrypted maps, privacy-policy enforcement, live-project erasure, expanded annotation forms and [guided reports](pilot-reports-v05.md). The audit below records the original v0.4 baseline. The full commercial milestones remain open: independent interpretation evaluation, qualified customer delivery, real OAuth connectors, billing, shared tenancy and production scale/residency qualification are still required.
 
+**Further implementation:** [v0.6 refinements](refinement-v06.md) add low-memory operation and offline recorded examples, permissive PDF extraction, frozen measurement cards, independent-panel and prospective-alert protocols, matched cohorts, recoverable activities, external erasure/restore safeguards, trusted pilot pricing and a validated dedicated-GCP deployment recipe. These are software and operating controls; actual independent human evaluation, customer delivery and production deployment qualification remain external launch gates.
+
 DOXA's commercial promise is **Bias Detection as a Service: evidence-led analysis of language, framing and change**. Customers should be able to ask a useful question, authorize a bounded collection, understand the method and price, inspect the findings, and receive a report they can substantiate.
 
 The founder confirmed three decisions on 17 November 2026:

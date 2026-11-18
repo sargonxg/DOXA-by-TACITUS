@@ -6,7 +6,53 @@ DOXA is a browser research workspace for discourse, political framing and contex
 
 **Bias Detection as a Service** means an open-source toolkit you run on your computer or in your own cloud, with optional [TACITUS methodology and deployment support](https://tacitus.me/doxa/). This repository does not provision a hosted SaaS account. The software is a **research preview**: source anchoring and processing coverage are checked; interpretation accuracy requires independent human reference labels.
 
-**[From research workbench to paid service: commercial roadmap](docs/commercial-service-roadmap.md).** The proposed US launch includes company language audits, political/media analysis and personal email review together, starting with guided paid pilots and expert-reviewed reports. The roadmap identifies the methodology, privacy, customer isolation, connector, billing and scale work still required; it does not claim those service capabilities are already implemented.
+**[From research workbench to paid service: commercial roadmap](docs/commercial-service-roadmap.md).** The proposed US launch includes company language audits, political/media analysis and personal email review together, starting with guided paid pilots and expert-reviewed reports. The roadmap distinguishes the implemented pilot foundation from remaining independent validation, qualified customer delivery, OAuth connectors, subscriptions, shared tenancy and production qualification.
+
+## v0.6 · lighter local work, explicit methods, recoverable delivery
+
+**Use the same one-page workbench on a smaller computer, inspect the method behind an observation, and keep long work independent of the browser.** The default local profile targets an **8 GB host** with a **4 GiB application-container limit**. Native Python applies parser/worker limits but does not enforce an aggregate process-tree memory limit. Physical 8 GB hardware usability and performance remain to be measured; separate model servers and the browser use additional memory.
+
+![The actual v0.6 interface with workflow steps, low-memory controls and the original evidence workbench.](docs/images/workspace-v06-desktop.png)
+
+*Actual browser/API workflow with explicitly synthetic practice sources, no mocked HTTP routes and no inference. [Mobile view](docs/images/workspace-v06-mobile.png). Screenshots demonstrate software behavior, not interpretation quality.*
+
+| Refinement | Implemented behavior |
+| --- | --- |
+| **1. Guided first use** | Five research steps, safe `doxa doctor --json`, twenty real recorded-source readings and five separate fictional practice texts. No fresh inference is required to explore either. |
+| **2. Low-memory execution** | One parser/heavy operation, a 1,536 MiB parser ceiling and bounded CPU batches; optional ONNX retrieval remains an unqualified candidate. No automatic model downloads or cloud fallback. |
+| **3. Permissive PDF defaults** | pdfminer.six text extraction and pypdf inspection, visible scan/layout warnings and immutable new extraction versions. Legacy stored text and quotation offsets are retained. |
+| **4. Measurement cards** | Frozen criterion rules, scholarly sources, required context, exclusions and permitted conclusions, available in the interface and new report annexes. |
+| **5. Independent evaluation tools** | Preregistration, rights/group-aware reference panels and criterion-level diagnostics/gates. Human annotations, reviewer independence and interpretation validation remain actual external work. |
+| **6. Structural context** | Optional versioned headings, supplied mail ancestors and quotation markers with exact anchors and explicit missing-context records. |
+| **7. Matched comparisons** | Declared event/topic/genre/date matching, frozen source cohorts and inspectable exclusions. Unmatched selections return “comparison not established”; prospective alert-review tools retain their separate evidence gates. |
+| **8. Durable activity** | Recoverable ZIP intake, indexing and guided publication, persistent status, cancellation/restart and verified downloads through the existing report engine. |
+| **9. Deletion-safe recovery** | Explicitly enabled whole-project retention, a signed external deletion ledger and a startup restore guard. Backup/provider expiry remains separate from live erasure. |
+| **10. Dedicated online pilots** | GCP deployment/backup/restore tooling and server-owned quotes, accepted scopes and internal usage caps. No live deployment, payment processing or shared SaaS is claimed. |
+
+```mermaid
+flowchart LR
+  A[Authorized sources] --> B[Extraction quality and exact text]
+  B --> C[Declared question and frozen method]
+  C --> D[Explicit processing destination]
+  D --> E[Persistent work and visible coverage]
+  E --> F[Evidence, alternatives and review]
+  F --> G[Dashboard and frozen report]
+  G --> H[Retention and deletion-safe recovery]
+```
+
+**[What changed and why](docs/refinement-v06.md)** · **[Local setup](docs/local-v06.md)** · [Extraction and context](docs/extraction-v06.md) · [Persistent activities](docs/activity-jobs-v06.md) · [Privacy and recovery](docs/privacy-lifecycle-v06.md) · [Hosted pilot recipe](docs/hosted-pilots-v06.md).
+
+<a href="docs/images/comparison-v06.png"><img src="docs/images/comparison-v06.png" width="440" alt="Actual matched-cohort result: one eligible pair and one explicitly excluded synthetic source."></a> <a href="docs/images/method-card-v06.png"><img src="docs/images/method-card-v06.png" width="300" alt="Actual criterion method card with an operational rule, limits and academic source links."></a>
+
+<a href="examples/v06-recorded-example.pdf"><img src="docs/images/v06-recorded-example-preview.png" width="250" alt="Open the actual twenty-real-source recorded report PDF with eight commented cases and explicit interpretation limits."></a>
+
+**Open a real recorded example:** [PDF](examples/v06-recorded-example.pdf) · [HTML](examples/v06-recorded-example.html) · [complete XLSX](examples/v06-recorded-example.xlsx) · [frozen source/results JSON](examples/v06-recorded-example.json.gz) · [manifest](examples/v06-recorded-example.manifest.json). This small pack retains **20 licensed Global Voices development articles, 645 original model decisions and 11,280 exact references**. Its deliberately selected cases illustrate outcomes and incomplete work; they do not estimate prevalence or accuracy. PDF/HTML show eight commented cases, while XLSX/JSON retain the complete selected data. Commentary is application/AI-authored, not human adjudication. No new inference was requested; the original 5,000-source parent remains partial with 79 missing decisions.
+
+The [twelve-check browser workflow](tests/browser_refinement_v06.py) passed on isolated synthetic fixtures with zero page errors, mocked routes or inference requests. See the [release verification record](docs/verification-v06.md) for the completed checks and their actual scope. Academic citations motivate the methods; they do not establish model accuracy.
+
+The [10,000-source software exercise](docs/scale-v06.md) passed 22 checks over short synthetic TXT intake, replay, pagination and a complete [XLSX](examples/v06-scale-10000.xlsx). Its separate scheduler test recovered 128 lexical tasks; it performed zero model assessments. The recorded runner had a 16 GiB cgroup limit, so this does not qualify 8 GB hardware or fresh contextual-inference throughput. [Receipt](benchmarks/v06-scale-10000.json).
+
+Native workspaces now upgrade to **schema 6** with a checked pre-upgrade database backup. Stop previous servers and back up database **and objects** first. Cloudflare's existing private-workspace profile remains at schema 4; the new managed-pilot activities use dedicated native storage. The [8-bit Quest](docs/guide.md) remains an optional illustrated introduction.
 
 ![The actual v3 workspace: source collection, linked timeline and criterion matrix, retained observations, and evidence inspector.](docs/images/workspace-v3-news.png)
 
@@ -38,7 +84,7 @@ The highlighted source is [Dahlia Kholaif's Global Voices report](https://global
 
 The [v0.5 clean-runner qualification](docs/verification-v05.md#completed-5000-source-release-qualification) passed: **5,000 restored sources, 204,342 retained assessments and 3,860,336 checked references**, plus a complete XLSX with unchanged source/model state. [Replay receipt](benchmarks/v05-evidence-replay.json) · [Report receipt](benchmarks/v05-report-job-5000.json). It requested no new inference; interpretation accuracy remains unmeasured.
 
-Native workspaces upgrade to schema 5 with a checked pre-upgrade database backup; older applications must not write the upgraded workspace. Stop the server and back up database **and objects** before upgrading. Cloudflare retains schema 4 and its shared private-workspace profile. OAuth connectors, subscription billing, shared SaaS tenancy and independent interpretation validation remain future work in the commercial roadmap.
+v0.5 introduced native schema 5; the current application upgrades to schema 6 with a checked pre-upgrade database backup. Older applications must not write the upgraded workspace. Stop the server and back up database **and objects** before upgrading. Cloudflare retains schema 4 and its shared private-workspace profile. OAuth connectors, subscription billing, shared SaaS tenancy and independent interpretation validation remain future work in the commercial roadmap.
 
 ## v0.4 · the evidence workbench
 
@@ -107,13 +153,14 @@ Open **http://localhost:8000**. In **Import**, load a recorded collection or add
 The release also supplies a self-contained application wheel. Install the downloaded wheel and start it without Node or a source checkout:
 
 ```sh
-python -m pip install ./doxa_by_tacitus-0.5.0-py3-none-any.whl
+python -m pip install ./doxa_by_tacitus-0.6.0-py3-none-any.whl
+doxa doctor --json --data-dir ./doxa-data
 doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data
 ```
 
-The wheel includes the UI and engine; demonstration corpora and recorded results are distributed in this repository. Model weights are installed separately and explicitly. Download the wheel from [GitHub Releases](https://github.com/sargonxg/DOXA-by-TACITUS/releases). Native PDF rendering may require system libraries; [Docker and installation guidance](docs/deployment.md) cover that setup.
+The wheel includes the UI, engine, five clearly fictional practice texts and the small read-only twenty-source recorded starter. The full demonstration corpora and original result packages remain repository/release artifacts. Model weights are installed separately and explicitly. Download the wheel from [GitHub Releases](https://github.com/sargonxg/DOXA-by-TACITUS/releases). Native PDF rendering may require system libraries; [Docker and installation guidance](docs/deployment.md) cover that setup.
 
-For native development, use Python 3.11+ and Node 22+:
+For native development, use Python 3.11+ and Node 24+:
 
 ```sh
 python -m venv .venv
@@ -131,7 +178,7 @@ For a fully local inference fallback, install [Ollama](https://ollama.com/downlo
 ollama pull qwen3.5:4b
 ```
 
-The conservative profile targets a **16 GB computer**, **Q4 weights**, an **8K context** and **one concurrent request**, with CPU-only operation supported. This is a resource target, not a full-corpus speed guarantee. Native Ollama uses Metal on Apple silicon; [Compose also supplies an optional CPU Ollama service](docs/deployment.md#local-models). The app never downloads weights automatically.
+The separate, optional contextual-generation profile targets a **16 GB computer**, **Q4 weights**, an **8K context** and **one concurrent request**, with CPU-only operation supported. This is a resource target, not a full-corpus speed guarantee. Native Ollama uses Metal on Apple silicon; [Compose also supplies an optional CPU Ollama service](docs/deployment.md#local-models). The app never downloads weights automatically.
 
 ## One linked workspace, ten capabilities
 

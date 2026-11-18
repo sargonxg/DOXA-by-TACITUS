@@ -1,0 +1,58 @@
+{
+  "collection_rules": [
+    "Obtain source rights and private-data permissions before collection.",
+    "Use multiple organizations or source families; record sampling probabilities and exclusions.",
+    "Assign company, thread/story and near-duplicate groups wholly to one split.",
+    "Keep probability samples separate from enriched diagnostic cases.",
+    "Use two qualified, model-blind independent reviewers and a separate adjudicator.",
+    "Use at least three context-specific reader ratings for perception claims; retain the distribution.",
+    "Preregister methods and stopping rules before reviews; never train or tune on locked test cases."
+  ],
+  "domain_panels": [
+    {
+      "calibration": 200,
+      "collected_clusters": 0,
+      "development": 400,
+      "independent_reference_labels": 0,
+      "locked_test": 400,
+      "profile_id": "company",
+      "target_independent_clusters": 1000
+    },
+    {
+      "calibration": 200,
+      "collected_clusters": 0,
+      "development": 400,
+      "independent_reference_labels": 0,
+      "locked_test": 400,
+      "profile_id": "public",
+      "target_independent_clusters": 1000
+    },
+    {
+      "calibration": 200,
+      "collected_clusters": 0,
+      "development": 400,
+      "independent_reference_labels": 0,
+      "locked_test": 400,
+      "profile_id": "personal",
+      "target_independent_clusters": 1000
+    }
+  ],
+  "external_requirements": [
+    "qualified compensated reviewers",
+    "independent adjudication",
+    "authorized representative source collection",
+    "exposure and rights records"
+  ],
+  "fabricated_reviewers_or_labels": false,
+  "interpretation_accuracy": null,
+  "news_protocol": {
+    "parent_outputs_public": true,
+    "population_accuracy_claim": false,
+    "prepared_cases": 200,
+    "reviewer_exposure_must_be_recorded": true,
+    "selection": "enriched diagnostic"
+  },
+  "status": "requires_external_human_work",
+  "template_not_live_project_counters": true,
+  "version": "doxa-independent-study-0.6"
+}

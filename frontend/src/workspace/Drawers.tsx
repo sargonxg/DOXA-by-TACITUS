@@ -289,11 +289,24 @@ function AnalysisPanel({
   const [outputPrice, setOutputPrice] = useState("");
   const [checking, setChecking] = useState(false);
   const [memory, setMemory] = useState("active");
+  const [structureContext, setStructureContext] = useState(false);
+  const [quotes, setQuotes] = useState<Item[]>([]);
+  const [quoteId, setQuoteId] = useState("");
   const [learning, setLearning] = useState<Item>({});
   useEffect(() => {
     void request<Item>(`/v3/projects/${project}/learning`)
       .then(setLearning)
       .catch((reason) => onNotice(message(reason), true));
+  }, [project]);
+  useEffect(() => {
+    const controller = new AbortController();
+    setQuoteId(""); setQuotes([]);
+    void request<Item>("/health", { signal: controller.signal }).then(async (health) => {
+      if (health.mode !== "local") return;
+      const response = await request<Item>(`/pilot/projects/${project}/quotes`, { signal: controller.signal });
+      if (!controller.signal.aborted) setQuotes(list<Item>(response.quotes));
+    }).catch(() => { /* The optional hosted scope remains enforced by the server. */ });
+    return () => controller.abort();
   }, [project]);
   const endpointPricing = ["openai", "runpod"].includes(provider);
   const selection = JSON.stringify([provider, model]);
@@ -374,6 +387,8 @@ function AnalysisPanel({
       persona: role,
       budget_usd: Number(budget),
       allow_remote_text: consent,
+      ...(structureContext ? { context_policy: "structure-aware-1.0" } : {}),
+      ...(quoteId ? { quote_id: quoteId } : {}),
       ...(pilotBrief?.revision
         ? {
             service_profile_id: pilotBrief.profile_id,
@@ -416,6 +431,16 @@ function AnalysisPanel({
           declared context. Expert report review remains pending.
         </p>
       ) : null}
+      <label className="w-pilot-check"><input type="checkbox" checked={structureContext} onChange={(event) => setStructureContext(event.target.checked)} />
+        Include structure-aware context: headings, relevant message ancestry and bounded source context
+      </label>
+      <p className="w-footnote">This opt-in policy creates a new method version. Missing context remains explicit; reported speech is not automatically author endorsement.</p>
+      {quotes.some((quote) => quote.status === "accepted") && <label>Accepted pilot scope
+        <select value={quoteId} onChange={(event) => setQuoteId(event.target.value)}>
+          <option value="">Local research / no quote selected</option>
+          {quotes.filter((quote) => quote.status === "accepted" && quote.profile_id === (pilotBrief?.profile_id || "public")).map((quote) => <option key={String(quote.id)} value={String(quote.id)}>{human(quote.profile_id)} · {String(quote.id).slice(0, 10)} · ${(Number(quote.fixed_price_cents) / 100).toFixed(2)} fixed scope</option>)}
+        </select>
+      </label>}
       <label>
         Research question
         <textarea
@@ -545,8 +570,8 @@ function AnalysisPanel({
               resetPricing();
             }}
           >
-            <option value="cloudflare">Cloudflare · cloud default</option>
-            <option value="ollama">Ollama · local fallback</option>
+            <option value="cloudflare">Cloudflare · remote inference</option>
+            <option value="ollama">Ollama · configured local model</option>
             <option value="openai">Configured OpenAI-compatible</option>
             <option value="runpod">Configured RunPod GPU</option>
             <option value="lexical">Lexical navigation only</option>
@@ -785,9 +810,10 @@ function ModelsPanel({
     setToolResult(null);
     try {
       setToolResult(
-        await request<Item>(`/v3/projects/${project}/${path}`, {
+        await request<Item>(`/v3/projects/${project}/${path === "semantic-index" ? "jobs" : path}`, {
           method: "POST",
-          body: JSON.stringify(body),
+          ...(path === "semantic-index" ? { headers: { "Idempotency-Key": crypto.randomUUID() } } : {}),
+          body: JSON.stringify(path === "semantic-index" ? { kind: "index", ...body } : body),
         }),
       );
     } catch (reason) {
@@ -821,8 +847,10 @@ function ModelsPanel({
   return (
     <>
       <p className="w-intro">
-        Choose cloud inference for larger workloads, or a conservative local
-        profile for a 16 GB computer. Provider credentials remain on the server.
+        Start with the lightweight workbench on an 8 GB computer. Contextual
+        models have separate memory and processing requirements; choose remote
+        inference explicitly for larger workloads. Provider credentials remain
+        on the server.
       </p>
       <VerificationPanel
         project={project}
@@ -922,15 +950,11 @@ function ModelsPanel({
           machine. They do not start a download or create analytical findings.
         </p>
         <p className="w-footnote">
-          A full 5,000-source CPU index can take many minutes. For large
-          collections, run{" "}
-          <code>
-            python scripts/semantic_index.py build PROJECT_ID --data-dir data
-          </code>{" "}
-          where your DOXA data and models are installed, then search the
-          persisted index here. This browser action waits on a single HTTP
-          request and may hit a proxy timeout. Run heavy local generation and
-          indexing sequentially when they compete for CPU.
+          A full 5,000-source CPU index can take many minutes. The selected
+          sources are frozen into a persistent job, and accepted document
+          bundles survive refresh or restart. Follow progress in the activity
+          center, then search the committed index here. The local scheduler
+          serializes heavy operations; indexing does not create bias judgments.
         </p>
         <Button
           variant="outline"

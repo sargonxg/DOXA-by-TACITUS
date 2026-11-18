@@ -207,7 +207,7 @@ def _freeze_case(store, book, document_id, assessment_id=None, unit_id=None):
         from .contextual import build_units
         char_limit = config.get("unit_max_chars") or (1200 if config.get("provider") == "ollama" else 4000)
         rebuilt = build_units({**source, "blocks": blocks}, max_unit_chars=char_limit,
-                              context_sentences=config.get("context_sentences", 2))
+                              context_sentences=config.get("context_sentences", 2), context_policy=config.get("context_policy"))
         match = next((item for item in rebuilt if item["id"] == unit_id), None)
         if match is None:
             raise HTTPException(409, "Recorded source unit cannot be rebuilt from its frozen source")
