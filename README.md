@@ -1,86 +1,99 @@
 # DOXA by TACITUS
 
-**Read what a corpus says, who says it, and how the interpretation was reached.**
+**Analyze political framing and bias in documents and speeches on your laptop.** Import PDFs, documents, transcripts or timed captions. Choose a research question and rubric. DOXA returns a scorecard, a source-by-criterion matrix, a timeline, matched comparisons, and the evidence behind each finding.
 
-DOXA is an open-source research workbench for antisemitism, anti-Muslim bias, and political framing. Import documents, choose a framework, and trace model readings to exact passages and frozen criteria. Compare readings and export the evidence for review.
-
-[Antisemitism case](https://doxa-public-study.giuliocatanzariti.workers.dev/antisemitism/) · [Anti-Muslim bias study](https://doxa-public-study.giuliocatanzariti.workers.dev/) · [Run DOXA locally](#start-locally) · [TACITUS](https://tacitus.me/doxa/) · [Download v0.8.0](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.8.0)
+[Install the app](#start-locally) · [Worked scorecard](#worked-scorecard) · [Read the PDF](frontend/public/studies/scorecard/doxa-scorecard.pdf) · [Choose a methodology](#what-doxa-measures) · [Download the wheel](https://github.com/sargonxg/DOXA-by-TACITUS/releases/latest)
 
 [![Verify DOXA](https://github.com/sargonxg/DOXA-by-TACITUS/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sargonxg/DOXA-by-TACITUS/actions/workflows/ci.yml)
 
-## Antisemitism case · Whose accusation is it?
-
-A Global Voices report quotes a poster in Plzeň that directed a religious accusation at Jews. The archived model flagged an IHRA hostility criterion. It returned compact outcomes of criterion unmet for the Jerusalem Declaration and Nexus trope criteria on the same unit. Read the passage, assign the voice, and compare the rules before opening the saved result.
-
-[![Pixel-art evidence desk with an open folio, quote bubble, and three criterion cards.](frontend/public/studies/antisemitism/evidence-desk.png)](https://doxa-public-study.giuliocatanzariti.workers.dev/antisemitism/)
-
-The four-article set retains **81 decisions**. Three contrasts cover political expression, a Holocaust analogy, and survivor remembrance. Nine research red flags each come with a follow-up question and a source. [Read the case and methods](docs/antisemitism-case.md) · [PDF](frontend/public/studies/antisemitism/antisemitism-case.pdf) · [JSON-LD graph](frontend/public/studies/antisemitism/evidence.jsonld) · [Publication plan](docs/antisemitism-case-plan.md)
-
-## Anti-Muslim bias study
-
-In a selection of **60 Global Voices articles** published from 2020 to 2025, the recorded model flagged passages in **14 articles**. It attributed **45 of 49 flags** to people the articles quoted or reported. The six walkthroughs let you assess how speaker attribution, context and criterion wording affect a reading. Independent reviewers have yet to assess those readings.
-
-[![The field study presents source counts, the school case and six criterion bars.](docs/images/muslim-coverage-dashboard.png)](https://doxa-public-study.giuliocatanzariti.workers.dev/)
-
-| Read or reproduce | Start here |
-| --- | --- |
-| **Follow one flag** | A student was reportedly pressured to remove her hijab. Compare the unequal-treatment flag with the uncertain reading about repeated institutional practice. [Open the case](https://doxa-public-study.giuliocatanzariti.workers.dev/#case-school-hijab) |
-| **Challenge a reading** | Check a possible false flag and a possible miss against the text and the frozen criteria. [Flag to challenge](https://doxa-public-study.giuliocatanzariti.workers.dev/#case-challenge-a-flag) · [Possible miss](https://doxa-public-study.giuliocatanzariti.workers.dev/#case-possible-miss) |
-| **Read or share the study** | Open the briefing and take the results with you. [PDF](frontend/public/studies/muslim-coverage/report.pdf) · [Workbook](frontend/public/studies/muslim-coverage/evidence.xlsx) · [Attributed source texts and decisions](frontend/public/studies/muslim-coverage/sources.zip) |
-| **Check the methodology** | See the selection rule, decision denominators, unresolved-reading scenarios and what happens when each year is omitted. [Study methods](docs/reading-muslim-coverage.md) · [Sensitivity table](https://doxa-public-study.giuliocatanzariti.workers.dev/#sensitivity) |
-| **Explore a different topic** | Read how a four-source political framing example treats appraisal, attribution and two unresolved decisions. [Annotated PDF](examples/political-framing-commentary.pdf) · [More examples](docs/v3-annotated-examples.md) |
-
-## Follow the evidence graph
-
-The study graph connects every retained decision to a frozen criterion, the archived analysis run and exact passages in versioned sources. The standalone and local readers use that graph to show the evidence path for each walkthrough. The graph distinguishes model-selected evidence, software-attached context and editorial review questions.
-
-```mermaid
-flowchart LR
-  N[Editorial question] --> D[Recorded decision]
-  D --> C[Frozen criterion]
-  D --> R[Archived run]
-  D --> P[Exact passage]
-  P --> S[Versioned source]
-```
-
-From a clone, follow the school case or list decisions under one criterion with Python 3.11+.
-
-```sh
-python scripts/query_study_graph.py --case school-hijab
-python scripts/query_study_graph.py --criterion discrimination_claim
-```
-
-[Graph vocabulary and examples](docs/evidence-graph.md) · [JSON-LD export](frontend/public/studies/muslim-coverage/evidence.jsonld) · [Artifact checksums](examples/muslim-coverage.manifest.json)
+| Import | Analyze | Compare |
+| --- | --- | --- |
+| ![Pixel-art documents beside a timed transcript](docs/images/scorecard-intake.png) | ![Pixel-art monitor with three criterion bars](docs/images/scorecard-analysis.png) | ![Pixel-art paired documents with highlighted evidence](docs/images/scorecard-comparison.png) |
+| Check extracted text and caption timestamps. | Inspect each rate, its denominator, and unresolved cases. | Open the evidence for each scored criterion and export the result. |
 
 ## Start locally
 
-Use Docker from a clone of this repository.
+**Install the wheel** in a Python 3.11+ virtual environment. The wheel contains the interface and worked studies. For your own documents, install [Ollama](https://ollama.com/) and ensure its local service is running.
 
 ```sh
-docker compose up --build
-```
-
-Open **http://localhost:8000** and choose either published study. You can inspect the existing results and practice with fictional texts without a model, key or upload. To use your own documents, open **Import**, review extraction quality, then open **Analyze** to choose a question, framework and processing destination.
-
-To run without Docker, download the application wheel from the release and install it in a Python 3.11+ environment.
-
-```sh
-python -m pip install ./doxa_by_tacitus-0.8.0-py3-none-any.whl
+python -m pip install ./doxa_by_tacitus-0.9.0-py3-none-any.whl
 doxa doctor --json --data-dir ./doxa-data
 doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data
 ```
 
-The wheel includes the browser interface and recorded readers. New analyses use a configured local or remote inference provider. Remote processing requires explicit source-text transfer consent and a budget. [Release files](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.8.0) · [System dependencies and deployment](docs/deployment.md)
+Open **http://127.0.0.1:8000**. Select **Open worked example** to inspect the bundled scorecard immediately. To run a fresh analysis, explicitly install the quantized weights once.
 
-## Use DOXA in a review
+```sh
+ollama pull qwen3.5:2b-q4_K_M
+```
 
-1. **Declare what counts.** Choose the research question, unit of analysis, framework and exclusions. The same passage may support different readings under different criteria. [Measurement cards and independent evaluation](docs/methodology-v06.md)
-2. **Read the source in context.** Inspect the passage, speaker, target and stance. A source anchor verifies where the wording occurs. Assessing the interpretation requires judgment. [A worked review protocol](docs/reading-muslim-coverage.md#review-a-reading)
-3. **Report the coverage.** Publish the cohort and retained decisions with their denominators. Keep uncertainty, missing decisions and human corrections visible in the review record. [Casebooks and reports](docs/report-jobs.md)
+1. **Import** PDF, DOCX, TXT, Markdown, saved HTML, EML, MBOX, SRT, WebVTT, or a ZIP of sources. Check missing PDF text, OCR, and rejected caption cues before scoring.
+2. **Analyze** with the bounded laptop preset. Enter a question and choose one or more frameworks within the displayed limit. Check the workload and provider. Jobs can pause between tasks and resume from saved decisions.
+3. **Save a scorecard** once results arrive. Inspect the matrix, timeline, and exact passages. Export PDF, offline HTML, XLSX, CSV, or JSONL together with the evidence graph.
 
-DOXA is a research preview. The two publications use different selection designs. The antisemitism case is a purposive teaching set and the anti-Muslim bias study uses a topic-selected cohort. Claims about prevalence, cross-publisher differences or model accuracy require an appropriate collection and model-blind human review.
+The native laptop preset uses a Q4 model, 4,096-token context, two CPU threads and a single request at a time. It starts with a limit of eight sources, 24 text units and six criteria. Run inputs and results are stored in the workspace, with inference sent to Ollama on loopback. The worked examples open without a model. A real Q4 run on a managed Linux VM retained 15 of 16 decisions and exported the scorecard. The physical 8 GB laptop check remains pending. Use `docker compose up --build` from a source checkout for the Docker installation path. [Local requirements and PDF dependencies](docs/deployment.md) · [Measured run and methodology](docs/research-scorecards.md)
+
+## What DOXA measures
+
+A **criterion** defines an observable pattern and the context needed to assess it. A source can meet a criterion in one passage and contain competing evidence elsewhere. Choose the lens that matches the research question and inspect the underlying text when interpreting the scorecard.
+
+| Lens | What to look for | What qualifies the reading |
+| --- | --- | --- |
+| **Political positions and framing** | Policy stance, appraisal, responsibility, prominence, comparisons, and backgrounded assumptions. | Declare the proposition or issue. A claim of unequal standards needs comparable evidence from both sides. |
+| **Discourse and rhetoric** | How language defines problems, assigns causes, appeals to values, and uses devices such as stereotypes, metaphors, and contrasts. | Describe the device in its local context and consider an alternative reading. |
+| **Antisemitism · IHRA** | Anti-Jewish hostility or stereotyping, collective blame, and Israel-related examples. | Read the examples in context and examine the specific basis for the criterion. [IHRA working definition](https://holocaustremembrance.com/resources/working-definition-antisemitism) |
+| **Antisemitism · Jerusalem Declaration** | Discrimination or hostility toward Jews as Jews, essentializing tropes, collective guilt, and boundaries for political expression. | Apply the declaration's contextual guidelines to the passage. [Jerusalem Declaration](https://jerusalemdeclaration.org/) |
+| **Antisemitism · Nexus** | Anti-Jewish tropes, discrimination or collective blame, including in discourse about Israel or Zionism. | Apply the Nexus boundary for political opposition alongside its antisemitism criteria. [Nexus Document](https://nexusproject.us/the-nexus-document/) |
+| **Anti-Muslim hostility · England** | Hostile expression directed at Muslims or perceived Muslims, relevant stereotyping, and unequal treatment. | Identify the target and supporting context. Claims about intent require their own evidence. [England guidance](https://www.gov.uk/guidance/a-definition-of-anti-muslim-hostility) |
+| **Anti-Muslim racism · structural lens** | Racialization, exclusion, and repeated institutional practices affecting Muslims or people perceived to be Muslim. | An institutional-pattern finding requires evidence of a practice or recurrence. [Runnymede Trust framework](https://www.runnymedetrust.org/publications/islamophobia-towards-a-working-definition) |
+| **Language norms** | Arguments over acceptable language, labels, norms of respect, and institutional restrictions on expression. | State whose norm applies in the chosen setting and record competing interpretations. |
+| **Custom rubrics** | A project-specific construct, such as evidence standards in municipal policy briefings. | Write an observable inclusion rule and a counterexample for each criterion before analysis. |
+
+### Six questions for political analysis
+
+| Question | Evidence to look for |
+| --- | --- |
+| **What policy does the text support or oppose?** | A stance toward a specific proposal, such as narrowing an exclusion zone. |
+| **How does it evaluate the policy or people affected?** | A phrase such as “proportionate safeguard” or “burden on assembly,” with its target. |
+| **What cause or responsibility does it assign?** | An explicit claim linking a policy, actor, or condition to an outcome. |
+| **Which evidence does it foreground?** | A dispatch log, cost estimate, testimony, or other source given prominence in the text. |
+| **Does it apply different standards in comparable cases?** | Evidence on both sides of a declared match. An omission question also needs an inventory of relevant information available at the time. |
+| **What assumption does the wording take for granted?** | A phrase such as “restore order,” alongside the premise it may imply and a plausible alternative interpretation. |
+
+The scorecard distinguishes **matches**, **assessed non-matches**, **uncertain readings**, **inapplicable criteria**, and **incomplete sources**. It reports both retained decisions per planned decision and determinate sources per eligible source. Each prejudice framework retains its own results and political-expression boundaries. [Political methodology and real-source walkthrough](docs/political-bias-methodology.md) · [Measurement cards and evaluation](docs/methodology-v06.md)
+
+## Worked scorecard
+
+Two briefings and two captioned speeches discuss the same proposed restriction on demonstrations. Both issuer groups address emergency access, yet they recommend different responses. Three weighted measures give the fictional corpus a **60.0 / 100 public-order justification score**.
+
+| Criterion | Positive / determinate | Weight | Contribution |
+| --- | ---: | ---: | ---: |
+| Documented safety risk | 3 / 4 | 40% | 30.0 |
+| Favorable appraisal of restrictions | 2 / 4 | 25% | 12.5 |
+| Restriction as remedy | 2 / 4 | 35% | 17.5 |
+
+The unweighted premise criterion identifies a passage where “restore order” could describe traffic or behavior at the demonstration. The comparison counts two matched pairs and shows a **50 percentage-point** difference in the documented-risk measure. The labels were authored for teaching. Weight choices and the corpus define what the index measures. Each weighted criterion needs at least 80% determinate coverage. [Walkthrough and reproduction](docs/research-scorecards.md) · [Inputs](frontend/public/studies/scorecard/starter.zip) · [PDF](frontend/public/studies/scorecard/doxa-scorecard.pdf) · [Workbook](frontend/public/studies/scorecard/doxa-scorecard.xlsx) · [JSONL](frontend/public/studies/scorecard/doxa-scorecard.jsonl)
+
+## Worked studies
+
+| Research question | Evidence and downloads |
+| --- | --- |
+| **Antisemitism. What distinguishes a religious accusation, political criticism, and Holocaust remembrance?** Compare three frameworks across the four-source Plzeň teaching set, with 81 retained decisions and nine research red flags. | [Case and red flags](docs/antisemitism-case.md) · [PDF](frontend/public/studies/antisemitism/antisemitism-case.pdf) · [Graph](frontend/public/studies/antisemitism/evidence.jsonld) |
+| **Anti-Muslim bias. What evidence supports an unequal-treatment flag or a repeated institutional pattern?** A topic-selected set of 60 Global Voices articles lets you compare these readings and see how results change under different assumptions about unresolved articles. | [Study and sensitivity analysis](docs/reading-muslim-coverage.md) · [PDF](frontend/public/studies/muslim-coverage/report.pdf) · [Evidence workbook](frontend/public/studies/muslim-coverage/evidence.xlsx) |
+| **Political framing. How do institutional texts justify remedies, assign responsibility and set boundaries on political expression?** Read four licensed sources with exact anchors and declared comparability limits. | [Real-source walkthrough](docs/political-bias-methodology.md#reproducible-real-source-case-packet) · [Annotated PDF](examples/political-framing-commentary.pdf) |
+
+These collections support worked interpretations under declared rubrics. Independent human labels are pending for the archived model decisions. Population-level and accuracy claims require their own sampling and evaluation. [Evaluation protocol](docs/methodology-v06.md)
+
+## Evidence graph
+
+The scorecard graph links each source-level result to its criterion, run, and representative passage. The passage stores exact text and a source locator. The example graph contains enough information to recompute the documented-risk bar as **3 ÷ 4 = 75%**.
+
+```sh
+python -m doxa.scorecard_graph frontend/public/studies/scorecard/scorecard-evidence.jsonld custom/custom-1
+```
+
+[Graph data](frontend/public/studies/scorecard/scorecard-evidence.jsonld) · [Vocabulary and offline query](docs/evidence-graph.md)
 
 ## Documentation
 
-- [Documentation index](docs/README.md) · [Workbench and release reference](docs/workbench-reference.md) · [Changelog](CHANGELOG.md)
-- [Contributing](CONTRIBUTING.md) · [0.7 delivery plan](docs/release-plan-v07.md) · [Citation](CITATION.cff) · [Apache 2.0 software license](LICENSE)
+[Documentation index](docs/README.md) · [Workbench reference](docs/workbench-reference.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [Citation](CITATION.cff) · [Apache 2.0 license](LICENSE) · [TACITUS](https://tacitus.me/#doxa)

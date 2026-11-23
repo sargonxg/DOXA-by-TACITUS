@@ -498,6 +498,21 @@ def extract_document(path: Path, filename: str | None = None) -> dict:
     elif extension in {".txt", ".md", ".markdown", ".html", ".htm"}:
         blocks, extra, extractor = _text_blocks(path, extension, warnings)
         metadata.update(extra)
+    elif extension in {".srt", ".vtt"}:
+        from .captions import extract_captions
+        if size > MAX_TEXT_CHARS * 4:
+            raise ValueError("Caption file exceeds the extraction limit; split the transcript.")
+        text = _decode(path.read_bytes(), warnings)
+        if any(ord(character) < 32 and character not in "\t\n\r" for character in text):
+            raise ValueError("Caption file contains control data; export it as UTF-8.")
+        blocks, lines, malformed = extract_captions(text, extension)
+        extractor = "timed-captions"
+        metadata.update({"document_type": "speech transcript", "caption_format": extension[1:],
+                         "cue_count": len(blocks), "malformed_cues": malformed, "needs_review": bool(malformed or warnings),
+                         "page_count_basis": "Unavailable: caption cues use timestamps",
+                         "exclusions": ["Caption headers, metadata, timing lines and any malformed cues"]})
+        if malformed:
+            warnings.append(f"{malformed} malformed caption cue(s) were excluded. Check source lines {', '.join(map(str, lines))}.")
     elif extension in {".eml", ".mbox"}:
         from .mail import extract_mail
         blocks, extra, mail_warnings = extract_mail(path, extension)
@@ -505,7 +520,7 @@ def extract_document(path: Path, filename: str | None = None) -> dict:
         warnings.extend(mail_warnings)
         extractor = "stdlib-mail-v1"
     else:
-        raise ValueError("Unsupported document format. Use PDF, DOCX, TXT, Markdown, HTML, EML or MBOX.")
+        raise ValueError("Unsupported document format. Use PDF, DOCX, TXT, Markdown, HTML, SRT, VTT, EML or MBOX.")
     if not blocks:
         detail = " A scanned PDF requires local OCR; install and configure the OCR extra." if extension == ".pdf" else ""
         raise ValueError("Document contains no extractable text." + detail)
@@ -526,6 +541,8 @@ def extract_document(path: Path, filename: str | None = None) -> dict:
         from .mail import extraction_settings
         settings.update(extraction_settings())
         settings["text_policy"] = "mail-canonical-decoded-roles-v1"
+    elif extension in {".srt", ".vtt"}:
+        settings["text_policy"] = "caption-cues-exact-v1"
     engine_versions = _engine_versions(extractor)
     page_manifest = metadata.get("page_manifest", [])
     needs_review = any(page["needs_review"] for page in page_manifest) or metadata.get("encoding") == "windows-1252" or bool(metadata.get("needs_review"))

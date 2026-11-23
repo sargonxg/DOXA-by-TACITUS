@@ -1,11 +1,12 @@
 # DOXA documentation
 
-DOXA is an open-source evidence workbench packaged as **Bias Detection as a Service**: run it locally, deploy a private workspace, or obtain [TACITUS methodology and deployment support](https://tacitus.me/doxa/).
+DOXA is an open-source workbench for political framing and bias analysis. Run it locally or deploy a private workspace. [TACITUS](https://tacitus.me/#doxa)
 
 ## Read and inspect
 
 | Question | Guide and artifacts |
 | --- | --- |
+| Can I analyze a document or speech on a laptop? | [Research scorecards](research-scorecards.md) · [Civic Square example](../README.md#worked-scorecard) |
 | Can I inspect a worked antisemitism case? | [Plzeň case, red flags, and methods](antisemitism-case.md) · [PDF](../frontend/public/studies/antisemitism/antisemitism-case.pdf) · [Decision ledger](../frontend/public/studies/antisemitism/decisions.csv) |
 | What did DOXA find in 60 real news articles? | [Illustrated field study and sampling method](reading-muslim-coverage.md) · [PDF](../frontend/public/studies/muslim-coverage/report.pdf) · [data workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx) |
 | How do I trace a recorded decision? | [Evidence graph and offline queries](evidence-graph.md) · [JSON-LD](../frontend/public/studies/muslim-coverage/evidence.jsonld) |

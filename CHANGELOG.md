@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.0 — 2026-11-22
+
+- Run bounded contextual analysis through a local Qwen3.5 2B Q4 Ollama preset. Check workload, preserve caption timings, and pause and resume with saved decisions.
+- Save source-level scorecards with distinct uncertainty and coverage measures, preregistered weights and sensitivity scenarios, matched contrasts, and linked evidence.
+- Export the frozen scorecard as PDF, HTML, XLSX, CSV, or JSONL with a JSON-LD evidence graph. Try the fictional Civic Square example or inspect the archived research cases locally.
+- The GitHub repository contains the public documentation and downloads. The standalone public study host redirects to GitHub.
+
 ## 0.8.0 — 2026-11-22
 
 - [The antisemitism case](docs/antisemitism-case.md) compares the saved IHRA, Jerusalem Declaration, and Nexus readings of a quotation reported in Plzeň. Four source readings, nine research cues, and a JSON-LD graph trace the evidence.

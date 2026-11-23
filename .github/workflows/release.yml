@@ -47,12 +47,17 @@ jobs:
         run: |
           test "$RELEASE_TAG" = "v$(python -c 'from doxa import __version__; print(__version__)')"
           python scripts/verify_repository.py
+          python scripts/build_scorecard_example.py
           mkdir release
           python scripts/build_bias_study.py --offline-zip "release/doxa-${RELEASE_TAG#v}-offline-study.zip"
           python scripts/build_wheel.py --output release
           python scripts/check_wheel.py release/*.whl
           cp frontend/public/studies/muslim-coverage/{report.pdf,evidence.xlsx,evidence.jsonld,sources.zip} release/
           cp examples/muslim-coverage.manifest.json release/
+          scorecard=frontend/public/studies/scorecard
+          cp "$scorecard"/{doxa-scorecard.pdf,doxa-scorecard.xlsx,doxa-scorecard.csv,doxa-scorecard.jsonl,scorecard-evidence.jsonld} release/
+          cp "$scorecard/starter.zip" "release/doxa-${RELEASE_TAG#v}-civic-square-inputs.zip"
+          cp examples/scorecard.manifest.json release/
           if [[ -f scripts/build_antisemitism_case.py ]]; then
             python scripts/build_antisemitism_case.py --offline-zip "release/doxa-${RELEASE_TAG#v}-antisemitism-case.zip"
             case_assets=frontend/public/studies/antisemitism

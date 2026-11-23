@@ -223,11 +223,11 @@ def frozen_view(database: Path, metadata: dict):
         connection.close()
 
 
-def _offline_pdf(html: str, path: Path):
+def _offline_pdf(html: str, path: Path, *, tagged: bool = False):
     from weasyprint import HTML
     def no_network(*_args, **_kwargs):
         raise ValueError("Report rendering never fetches external resources")
-    HTML(string=html, url_fetcher=no_network).write_pdf(path)
+    HTML(string=html, url_fetcher=no_network).write_pdf(path, pdf_tags=tagged)
 
 
 def render(database: Path, metadata_path: Path, output: Path, format: str) -> list[dict]:

@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-22",
+  "input": "Civic Square fictional starter pack",
+  "environment": {
+    "kind": "managed development VM",
+    "platform": "Linux 6.18.57 x86_64",
+    "cpu": "Intel Xeon Platinum 8573C",
+    "cpu_quota_equivalents": 4,
+    "cgroup_memory_limit_bytes": 17179869184,
+    "ollama_version": "0.40.17",
+    "physical_laptop_qualified": false
+  },
+  "profile": "laptop-8gb-v1",
+  "model": "qwen3.5:2b-q4_K_M",
+  "model_digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+  "quantization": "Q4_K_M",
+  "status": "partial",
+  "source_units": 4,
+  "planned_decisions": 16,
+  "retained_decisions": 15,
+  "index": {
+    "version": "doxa-scorecard-1.0",
+    "name": "Public-order justification index",
+    "weights": {
+      "custom/custom-1": 40,
+      "custom/custom-2": 25,
+      "custom/custom-3": 35
+    },
+    "minimum_coverage": 0.8,
+    "status": "scored",
+    "components": [
+      {
+        "key": "custom/custom-1",
+        "weight": 40,
+        "contribution": 13.333333333333332,
+        "coverage": 1.0
+      },
+      {
+        "key": "custom/custom-2",
+        "weight": 25,
+        "contribution": 12.5,
+        "coverage": 1.0
+      },
+      {
+        "key": "custom/custom-3",
+        "weight": 35,
+        "contribution": 26.25,
+        "coverage": 1.0
+      }
+    ],
+    "value": 52.08333333333333,
+    "range": [
+      52.083333333333336,
+      52.083333333333336
+    ],
+    "equal_weight": 52.77777777777777
+  },
+  "matched_pairs": 2,
+  "paused_and_resumed": true,
+  "seconds": 638.93,
+  "criterion_counts": [
+    {
+      "key": "custom/custom-1",
+      "label": "Documented safety risk",
+      "positive": 1,
+      "negative": 2,
+      "uncertain": 0,
+      "incomplete": 0,
+      "inapplicable": 1,
+      "determinate": 3,
+      "retained": 4,
+      "planned": 4
+    },
+    {
+      "key": "custom/custom-2",
+      "label": "Favorable appraisal of restrictions",
+      "positive": 2,
+      "negative": 2,
+      "uncertain": 0,
+      "incomplete": 0,
+      "inapplicable": 0,
+      "determinate": 4,
+      "retained": 4,
+      "planned": 4
+    },
+    {
+      "key": "custom/custom-3",
+      "label": "Restriction as remedy",
+      "positive": 3,
+      "negative": 1,
+      "uncertain": 0,
+      "incomplete": 0,
+      "inapplicable": 0,
+      "determinate": 4,
+      "retained": 4,
+      "planned": 4
+    },
+    {
+      "key": "custom/custom-4",
+      "label": "Prior controls presumed ineffective",
+      "positive": 2,
+      "negative": 1,
+      "uncertain": 0,
+      "incomplete": 1,
+      "inapplicable": 0,
+      "determinate": 3,
+      "retained": 3,
+      "planned": 4
+    }
+  ],
+  "peak_rss_kib": {
+    "doxa_process": 66880,
+    "ollama_server": 57760,
+    "ollama_model_runner": 3151752
+  },
+  "memory_measurement": "Per-process Linux VmHWM, excluding browser, short-lived child tasks, and system memory.",
+  "artifact_formats_verified": [
+    "pdf",
+    "xlsx",
+    "jsonld"
+  ],
+  "unresolved": [
+    {
+      "criterion": "custom/custom-4",
+      "reason": "missing_evidence",
+      "decisions": 1
+    }
+  ],
+  "authored_example_index": 60
+}

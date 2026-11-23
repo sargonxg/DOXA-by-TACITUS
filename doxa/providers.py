@@ -66,7 +66,9 @@ def configured_endpoint(config: dict) -> str | None:
     if provider in {"lexical", "lexical-baseline"}:
         return None
     if provider == "ollama":
-        value = config.get("base_url") or _env("DOXA_OLLAMA_BASE_URL", "OLLAMA_BASE_URL") or "http://127.0.0.1:11434"
+        from .laptop import ENDPOINT, PROFILE
+        value = ENDPOINT if config.get("execution_profile") == PROFILE else (
+            config.get("base_url") or _env("DOXA_OLLAMA_BASE_URL", "OLLAMA_BASE_URL") or ENDPOINT)
     elif provider in {"openai", "openai-compatible", "vllm"}:
         value = config.get("base_url") or _env("DOXA_OPENAI_BASE_URL", "OPENAI_BASE_URL") or "https://api.openai.com/v1"
     elif provider == "cloudflare":
@@ -180,19 +182,24 @@ class OllamaProvider(BaseProvider):
 
     def __init__(self, config: dict):
         super().__init__({**config, "model": config.get("model") or OLLAMA_MODEL})
+        from .laptop import CONTEXT, PROFILE
+        self.laptop = config.get("execution_profile") == PROFILE
         self.base_url = configured_endpoint({**config, "provider": "ollama"})
         self.profile["quantization"] = config.get("quantization") or "model_package_unresolved"
         try:
-            self.num_threads = int(os.environ.get("DOXA_OLLAMA_NUM_THREADS", "4"))
+            self.num_threads = 2 if self.laptop else int(os.environ.get("DOXA_OLLAMA_NUM_THREADS", "4"))
         except ValueError:
             raise ValueError("DOXA_OLLAMA_NUM_THREADS must be an integer between 1 and 32") from None
         if not 1 <= self.num_threads <= 32:
             raise ValueError("DOXA_OLLAMA_NUM_THREADS must be between 1 and 32")
         self.profile["num_threads_requested"] = self.num_threads
+        if self.laptop:
+            self.profile.update({"context_limit": CONTEXT, "source_pack_bytes": 2100,
+                                 "batching_version": PROFILE, "num_gpu_requested": 0})
 
     async def health(self) -> dict:
         try:
-            async with httpx.AsyncClient(timeout=15) as client:
+            async with httpx.AsyncClient(timeout=15, **({"trust_env": False} if self.laptop else {})) as client:
                 response = await client.get(f"{self.base_url}/api/tags")
                 response.raise_for_status()
                 models = response.json().get("models", [])
@@ -202,16 +209,22 @@ class OllamaProvider(BaseProvider):
                     return {"ok": False, **self.profile, "details": f"Model {self.model} is not installed. Install the selected model in Ollama; DOXA will not pull it automatically."}
                 self.profile["revision"] = match.get("digest") or "unresolved"
                 self.profile["quantization"] = match.get("details", {}).get("quantization_level", self.profile["quantization"])
+                if self.laptop and (self.profile["revision"] == "unresolved"
+                                    or not str(self.profile["quantization"]).upper().startswith("Q4")):
+                    return {"ok": False, **self.profile, "details": "Install the Q4 Ollama model with a resolved digest for this preset."}
                 return {"ok": True, **self.profile, "details": "Ollama reachable; selected model installed. Structured-output capability is verified on the analysis request."}
         except (httpx.HTTPError, ValueError, TypeError):
             return {"ok": False, **self.profile, "details": "Ollama is unavailable at the configured endpoint. Start Ollama and verify the model installation."}
 
     async def generate(self, messages: list[dict], schema: dict, *, max_tokens: int = 3000, request_id: str | None = None) -> dict:
         payload = {"model": self.model, "messages": messages, "stream": False, "format": schema,
-                   "think": False, "options": {"temperature": 0, "num_ctx": 8192, "num_predict": max_tokens, "num_thread": self.num_threads}}
+                   "think": False, "options": {"temperature": 0, "num_ctx": self.profile["context_limit"],
+                                              "num_predict": max_tokens, "num_thread": self.num_threads}}
+        if self.laptop:
+            payload["options"]["num_gpu"] = 0
         request_observation = self._request_observation(payload)
         try:
-            async with httpx.AsyncClient(timeout=httpx.Timeout(600, connect=10)) as client:
+            async with httpx.AsyncClient(timeout=httpx.Timeout(600, connect=10), **({"trust_env": False} if self.laptop else {})) as client:
                 response = await client.post(f"{self.base_url}/api/chat", json=payload)
                 if response.status_code >= 400:
                     raise ProviderError("provider_http_error", f"Ollama returned HTTP {response.status_code}; check selected model and runtime support", observation=request_observation)

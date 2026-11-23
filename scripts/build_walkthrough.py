@@ -450,7 +450,7 @@ def render_html(snapshot: dict, title: str, kind: str) -> str:
               ("Source selection hash", run["source_selection"]["sha256"]), ("Walkthrough snapshot hash", snapshot.get("snapshot_sha256")),
               ("Fully assessed units", f'{cov["done"]:,} of {cov["total"]:,} ({cov["percent"]}%)'), ("Criterion / document scope", scope_text), ("Recorded method sessions", snapshot.get("benchmark_sessions_count")), ("Commentary authorship", AUTHORSHIP), *billing_rows(run)]),
               f'<p>Exact anchors establish where words occur. No independent human labels, calibrated probability or general interpretation-accuracy score is claimed. {e(collection_limit)} Read source context, methodological alternatives and rights notices before reusing the material.</p></section>',
-              f'<footer class="footer">{e(AUTHORSHIP)}<br>DOXA by TACITUS · <a href="https://github.com/sargonxg/DOXA-by-TACITUS">Open-source workbench</a> · <a href="https://tacitus.me/doxa/">Product and methodology</a></footer></main></body></html>']
+              f'<footer class="footer">{e(AUTHORSHIP)}<br>DOXA by TACITUS · <a href="https://github.com/sargonxg/DOXA-by-TACITUS">Open-source workbench</a> · <a href="https://tacitus.me/#doxa">Product and methodology</a></footer></main></body></html>']
     return ''.join(parts)
 
 

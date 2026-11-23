@@ -19,6 +19,7 @@ import { ExtractionQuality } from "./ExtractionQuality";
 import {
   Badge,
   Button,
+  cueTime,
   date,
   Empty,
   ErrorMessage,
@@ -322,9 +323,9 @@ export function Inspector({
                     key={block.id}
                   >
                     <small>
-                      {block.page
-                        ? `Page ${block.page}`
-                        : `¶ ${block.paragraph || block.id}`}
+                      {block.cue_start_ms !== undefined && block.cue_end_ms !== undefined
+                        ? cueTime(block.cue_start_ms) + "–" + cueTime(block.cue_end_ms)
+                        : block.page ? `Page ${block.page}` : `¶ ${block.paragraph || block.id}`}
                     </small>
                     <p>
                       <QuoteText block={block} finding={finding} />

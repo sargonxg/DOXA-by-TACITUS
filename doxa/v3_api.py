@@ -15,6 +15,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, Field, StrictBool
 
 from .store import utcnow
+from .scorecards import ScorecardInput
 from .workspace import Workspace, WorkspaceQuery, unpack_assessment, unpack_document
 
 
@@ -263,6 +264,21 @@ def register(app: FastAPI, services: dict) -> None:
             metrics = saved["aggregates"]["metrics"]
         else:
             metrics = service.create(project_id, WorkspaceQuery())["metrics"]
+            saved = None
+        from .laptop import PROFILE, workload
+        if body.get("execution_profile") == PROFILE:
+            if db().remote:
+                raise HTTPException(422, "The laptop preset requires native workspace storage.")
+            try:
+                from .api import RunInput
+                options = RunInput.model_validate(body)
+                ids = service.document_ids(saved) if saved else options.document_ids
+                ready = db().query("SELECT id FROM documents WHERE project_id=? AND status='ready'", [project_id])
+                allowed = set(ids) if ids is not None else {row["id"] for row in ready}
+                return workload([row["id"] for row in ready if row["id"] in allowed],
+                                services["require_document"], options.lens_ids, options.custom_lens)
+            except ValueError as error:
+                raise HTTPException(422, str(error)) from error
         words, documents = metrics["total_words"], metrics["documents"]
         # Declared conservative planning assumptions, superseded by measured usage.
         calls = max(documents, (words + 1199) // 1200)
@@ -278,6 +294,30 @@ def register(app: FastAPI, services: dict) -> None:
                 "source_text_destination": "local Ollama" if local else body.get("model") or "configured cloud model",
                 "basis": "Planning estimate at Gemma rates with 2,000 output tokens/request; not an invoice or speed guarantee.",
                 "full_scope": True, "automatic_sampling": False}
+
+    @app.post("/api/v3/projects/{project_id}/scorecards", status_code=201)
+    def scorecard(project_id: str, body: ScorecardInput):
+        from .scorecards import create_scorecard
+        project(project_id)
+        try:
+            return create_scorecard(db(), project_id, body)
+        except ValueError as error:
+            raise HTTPException(422, str(error)) from error
+
+    @app.get("/api/v3/projects/{project_id}/scorecards/{scorecard_id}")
+    def saved_scorecard(project_id: str, scorecard_id: str):
+        from .scorecards import get_scorecard
+        project(project_id)
+        return get_scorecard(db(), project_id, scorecard_id)
+
+    @app.get("/api/v3/projects/{project_id}/scorecards")
+    def list_scorecards(project_id: str):
+        project(project_id)
+        if db().remote:
+            return {"items": []}
+        return {"items": db().query(
+            "SELECT id,created_at,json_extract(payload_json,'$.question') question,json_extract(payload_json,'$.basis') basis "
+            "FROM v3_scorecards WHERE project_id=? ORDER BY created_at DESC,id DESC LIMIT 20", [project_id])}
 
     @app.patch("/api/v3/findings/{finding_id}/review")
     def review(finding_id: str, body: dict, request: Request):

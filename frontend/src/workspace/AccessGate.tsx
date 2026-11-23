@@ -87,7 +87,7 @@ export function AccessGate({ children }: { children: ReactNode }) {
   return (
     <main className="w-access-gate">
       <div className="w-access-card">
-        <a href="https://tacitus.me/doxa/" className="w-access-brand">
+        <a href="https://github.com/sargonxg/DOXA-by-TACITUS" className="w-access-brand">
           DOXA <span>BY TACITUS</span>
         </a>
         <LockKeyhole size={30} strokeWidth={1.4} />

@@ -288,7 +288,7 @@ def html(study, summary, cases, traces, diagnostics, *, printing=False):
         + link("Study files and reproduction guide", REPO + "/blob/main/docs/reading-muslim-coverage.md")
         + ("." if printing else " · " + link(
             "Read the companion antisemitism case",
-            "https://doxa-public-study.giuliocatanzariti.workers.dev/antisemitism/",
+            "https://github.com/sargonxg/DOXA-by-TACITUS/blob/main/docs/antisemitism-case.md",
         ))
         + "</footer>",
     ]

@@ -29,6 +29,12 @@ export const percentage = (value?: number) =>
   `${Math.max(0, Math.min(100, value || 0))
     .toFixed(1)
     .replace(".0", "")}%`;
+export function cueTime(milliseconds: number): string {
+  const whole = Math.floor(milliseconds / 1000);
+  return [Math.floor(whole / 3600), Math.floor(whole / 60) % 60, whole % 60]
+    .map((part) => String(part).padStart(2, "0")).join(":") +
+    "." + String(milliseconds % 1000).padStart(3, "0");
+}
 export function Button({
   children,
   onClick,

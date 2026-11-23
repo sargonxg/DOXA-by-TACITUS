@@ -8,6 +8,8 @@ import json
 from urllib.parse import urlsplit
 import uuid
 
+from fastapi import HTTPException
+
 from .store import utcnow
 
 VERSION = "matched-cohorts-1.0"
@@ -164,9 +166,18 @@ def _build_comparison(store, project_id, body, *, actor_id):
     return record
 
 
-def register_comparison_api(app, store_factory):
-    from fastapi import HTTPException
+def get_comparison(store, project_id, comparison_id):
+    row = store.one("SELECT payload_json FROM matched_comparisons WHERE id=? AND project_id=?", [comparison_id, project_id])
+    if not row:
+        raise HTTPException(404, "Comparison not found")
+    record = json.loads(row["payload_json"])
+    actual = _hash({key: value for key, value in record.items() if key != "snapshot_sha256"})
+    if actual != record["snapshot_sha256"]:
+        raise HTTPException(409, "Comparison snapshot integrity check failed")
+    return record
 
+
+def register_comparison_api(app, store_factory):
     def db(project_id):
         from .access import require_project_access
         require_project_access(project_id)
@@ -191,11 +202,4 @@ def register_comparison_api(app, store_factory):
 
     @app.get("/api/v3/projects/{project_id}/comparisons/{comparison_id}")
     def get(project_id: str, comparison_id: str):
-        row = db(project_id).one("SELECT payload_json FROM matched_comparisons WHERE id=? AND project_id=?", [comparison_id, project_id])
-        if not row:
-            raise HTTPException(404, "Comparison not found")
-        record = json.loads(row["payload_json"])
-        actual = _hash({k: v for k, v in record.items() if k != "snapshot_sha256"})
-        if actual != record["snapshot_sha256"]:
-            raise HTTPException(409, "Comparison snapshot integrity check failed")
-        return record
+        return get_comparison(db(project_id), project_id, comparison_id)

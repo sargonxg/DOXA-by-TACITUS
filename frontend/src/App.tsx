@@ -29,6 +29,7 @@ import {
 import { pendingUploadImport, request, uploadInParts } from "./api";
 import { BiasResults, PublishedStudy } from "./workspace/BiasResults";
 import { Analytics } from "./workspace/Analytics";
+import { ScorecardPanel } from "./workspace/Scorecard";
 import { Inspector } from "./workspace/Inspector";
 import { DrawerBody } from "./workspace/Drawers";
 import { useCasebook } from "./workspace/Casebooks";
@@ -1038,12 +1039,14 @@ function Workspace() {
         <div className="w-center">
           <div className="w-workspace-title">
             <div>
-              <span className="w-eyebrow">BIAS DETECTION AS A SERVICE</span>
+              <span className="w-eyebrow">DOCUMENT AND SPEECH ANALYSIS</span>
               <h1>Bias analysis workspace</h1>
             </div>
             <Badge>Research preview</Badge>
           </div>
           {error && <ErrorMessage text={error} />}
+          {project && <ScorecardPanel key={project + "/" + (query?.run?.id || "")} project={project}
+            query={query} onRefresh={refresh} onOpen={(source, block, finding) => void openSource(source, finding, block)} />}
           {query && !loading && <BiasResults key={query.query_id} query={query} lenses={lenses}
             onEvidence={(doc, finding) => void openSource(doc, finding)} />}
           <PublishedStudy />

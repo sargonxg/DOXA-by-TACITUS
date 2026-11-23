@@ -259,6 +259,7 @@ READ = {
     "/api/v3/method-cards/{lens_id}/{criterion_id}", "/api/v3/study-protocol",
     "/api/v3/projects/{project_id}/activity", "/api/v3/projects/{project_id}/jobs", "/api/v3/jobs/{job_id}",
     "/api/v3/projects/{project_id}/comparisons", "/api/v3/projects/{project_id}/comparisons/{comparison_id}",
+    "/api/v3/projects/{project_id}/scorecards", "/api/v3/projects/{project_id}/scorecards/{scorecard_id}",
     "/api/v3/projects/{project_id}/evaluations/{evaluation_id}/readiness",
     "/api/pilot/projects/{project_id}/quotes", "/api/pilot/projects/{project_id}/usage",
     "/api/lenses", "/api/projects", "/api/projects/{project_id}/documents",
@@ -310,9 +311,10 @@ WRITE = {
     "/api/pilot/projects/{project_id}/drafts",
 }
 ANALYZE = {
+    "/api/v3/projects/{project_id}/scorecards",
     "/api/v3/projects/{project_id}/alert-review-campaigns/{campaign_id}/snapshots",
     "/api/v3/projects/{project_id}/comparisons",
-    "/api/projects/{project_id}/runs", "/api/runs/{run_id}/cancel", "/api/runs/{run_id}/resume",
+    "/api/projects/{project_id}/runs", "/api/runs/{run_id}/cancel", "/api/runs/{run_id}/pause", "/api/runs/{run_id}/resume",
     "/api/v3/projects/{project_id}/runs", "/api/v3/projects/{project_id}/verification",
     "/api/v3/projects/{project_id}/semantic-index", "/api/v3/projects/{project_id}/rubric-score",
     "/api/pilot/projects/{project_id}/signals", "/api/pilot/projects/{project_id}/privacy/transforms",
@@ -401,6 +403,7 @@ def resolve_project(store, path: str, params: dict, *, strict: bool = True) -> s
     resources = {
         "campaign_id": ("v06_alert_campaigns", "id"),
         "comparison_id": ("matched_comparisons", "id"), "quote_id": ("pilot_quotes", "id"),
+        "scorecard_id": ("v3_scorecards", "id"),
         "document_id": ("documents", "id"), "run_id": ("runs", "id"),
         "query_id": ("v3_query_snapshots", "id"), "job_id": ("report_jobs", "id"),
         "upload_id": ("upload_sessions", "id"), "report_id": ("reports", "id"),
