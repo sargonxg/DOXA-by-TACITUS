@@ -9,6 +9,7 @@ import uuid
 from fastapi import HTTPException
 from pydantic import BaseModel, Field
 
+from .lenses import SOURCE_SCOPE
 from .method_cards import freeze_method_cards
 from .method_config import canonical_json, content_hash
 from .store import utcnow
@@ -80,14 +81,16 @@ def _decision(row, blocks, basis, comparison_required):
     return result, witness
 
 
-def _source_outcome(planned, counts, complete):
+def _source_outcome(planned, counts, complete, *, source_scope=False):
     if not complete or planned == 0 or sum(counts.values()) != planned:
         return "incomplete"
     if counts["meets_criterion"]:
         return "positive"
     if counts["uncertain"]:
         return "uncertain"
-    return "negative" if counts["does_not_meet"] else "inapplicable"
+    if counts["does_not_meet"]:
+        return "negative"
+    return "uncertain" if source_scope else "inapplicable"
 
 
 def _summary(cells):
@@ -100,6 +103,7 @@ def _summary(cells):
             "eligible": eligible, "planned": planned, "retained": retained,
             "rate": counts["positive"] / determinate if determinate else None,
             "coverage": determinate / eligible if eligible else None,
+            "unresolved_range": [counts["positive"] / eligible, (eligible - counts["negative"]) / eligible] if eligible else None,
             "processing_coverage": retained / planned if planned else None}
 
 
@@ -118,8 +122,7 @@ def _index(spec, summaries, whole_scope, settled):
     if status == "scored":
         weighted = [(weight, by_key[key]) for key, weight in weights.items()]
         result.update(value=sum(item["contribution"] for item in components),
-                      range=[sum(weight * row["positive"] / row["eligible"] for weight, row in weighted),
-                             sum(weight * (row["eligible"] - row["negative"]) / row["eligible"] for weight, row in weighted)],
+                      range=[sum(weight * row["unresolved_range"][bound] for weight, row in weighted) for bound in (0, 1)],
                       equal_weight=100 * sum(row["rate"] for _, row in weighted) / len(weights))
     return result
 
@@ -275,11 +278,16 @@ def _populate(store, project_id, scoped_ids, run_id, basis, cards):
                 counts[result] += 1
                 if witness and result not in evidence:
                     evidence[result] = witness
-            status = _source_outcome(len(planned_units), counts, unchanged and source["extraction_complete"])
+            source_scope = card.get("applicability") == SOURCE_SCOPE
+            status = _source_outcome(len(planned_units), counts, unchanged and source["extraction_complete"],
+                                     source_scope=source_scope)
             preferred = {"positive": "meets_criterion", "negative": "does_not_meet", "uncertain": "uncertain"}.get(status)
             witness = evidence.get(preferred) or next(iter(evidence.values()), None)
-            cells.append({"document_id": source_id, "criterion": key, "status": status, "planned": len(planned_units),
-                          "retained": len(accepted), "evidence": witness, "decisions": dict(counts)})
+            cell = {"document_id": source_id, "criterion": key, "status": status, "planned": len(planned_units),
+                    "retained": len(accepted), "evidence": witness, "decisions": dict(counts)}
+            if source_scope and status == "uncertain" and counts["not_applicable"] == len(planned_units):
+                cell["scope_note"] = "Every selected source is eligible. Review the unit decisions that marked this source inapplicable."
+            cells.append(cell)
     active = {row["id"] for row in run_sources}
     excluded.extend({"document_id": value, "reason": "source_without_frozen_run_input"} for value in scoped_ids if value not in active)
     return sources, excluded, cells

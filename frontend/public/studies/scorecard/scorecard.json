@@ -1,5 +1,5 @@
 {
-  "id": "civic-square-scorecard-v1",
+  "id": "civic-square-scorecard-v2",
   "version": "doxa-scorecard-1.0",
   "project_id": "civic-square-teaching",
   "query_id": "civic-square-four-sources",
@@ -8,12 +8,12 @@
   "basis": "authored teaching labels",
   "question": "How strongly do the selected texts justify restrictions on demonstrations on public-order grounds?",
   "run": {
-    "id": "authored-civic-square-v1",
+    "id": "authored-civic-square-v2",
     "status": "completed",
     "model": null,
     "model_revision": null,
     "provider": "authored teaching fixture",
-    "method_fingerprint": "5e3e3cd795d8f5cfa98da05b1aaa65a0f6d61f73ec4e273af5a3018e04a9d7ea",
+    "method_fingerprint": "b33538f44d60f72da68d5a6e9d25a5021303d0676806169e4d646d6a885a8915",
     "execution_profile": null
   },
   "sources": [
@@ -81,7 +81,7 @@
       "registry_version": "doxa-measurement-registry-0.6",
       "id": "custom/custom-1",
       "lens_id": "custom",
-      "lens_version": "1.0",
+      "lens_version": "1.1",
       "criterion_id": "custom-1",
       "criterion_kind": "descriptive",
       "label": "Documented safety risk",
@@ -92,7 +92,8 @@
       "required_context": [
         "Ground every finding in exact source evidence. Preserve quotation, attribution, counter-speech and alternative interpretations.",
         "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
-        "Retain heading, message and source-version lineage; record unavailable context."
+        "Retain heading, message and source-version lineage; record unavailable context.",
+        "Every selected source is eligible for this criterion. A source with only inapplicable units stays uncertain."
       ],
       "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
       "exclusion_rules": [
@@ -147,14 +148,15 @@
         "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy."
       },
       "origin": "user_authored_operational_contract",
-      "card_sha256": "06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8"
+      "applicability": "source_scope",
+      "card_sha256": "74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d"
     },
     {
       "schema_version": "doxa-measurement-card-1.0",
       "registry_version": "doxa-measurement-registry-0.6",
       "id": "custom/custom-2",
       "lens_id": "custom",
-      "lens_version": "1.0",
+      "lens_version": "1.1",
       "criterion_id": "custom-2",
       "criterion_kind": "descriptive",
       "label": "Favorable appraisal of restrictions",
@@ -165,7 +167,8 @@
       "required_context": [
         "Ground every finding in exact source evidence. Preserve quotation, attribution, counter-speech and alternative interpretations.",
         "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
-        "Retain heading, message and source-version lineage; record unavailable context."
+        "Retain heading, message and source-version lineage; record unavailable context.",
+        "Every selected source is eligible for this criterion. A source with only inapplicable units stays uncertain."
       ],
       "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
       "exclusion_rules": [
@@ -220,14 +223,15 @@
         "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy."
       },
       "origin": "user_authored_operational_contract",
-      "card_sha256": "b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056"
+      "applicability": "source_scope",
+      "card_sha256": "1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7"
     },
     {
       "schema_version": "doxa-measurement-card-1.0",
       "registry_version": "doxa-measurement-registry-0.6",
       "id": "custom/custom-3",
       "lens_id": "custom",
-      "lens_version": "1.0",
+      "lens_version": "1.1",
       "criterion_id": "custom-3",
       "criterion_kind": "descriptive",
       "label": "Restriction as remedy",
@@ -238,7 +242,8 @@
       "required_context": [
         "Ground every finding in exact source evidence. Preserve quotation, attribution, counter-speech and alternative interpretations.",
         "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
-        "Retain heading, message and source-version lineage; record unavailable context."
+        "Retain heading, message and source-version lineage; record unavailable context.",
+        "Every selected source is eligible for this criterion. A source with only inapplicable units stays uncertain."
       ],
       "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
       "exclusion_rules": [
@@ -293,14 +298,15 @@
         "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy."
       },
       "origin": "user_authored_operational_contract",
-      "card_sha256": "15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e"
+      "applicability": "source_scope",
+      "card_sha256": "bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1"
     },
     {
       "schema_version": "doxa-measurement-card-1.0",
       "registry_version": "doxa-measurement-registry-0.6",
       "id": "custom/custom-4",
       "lens_id": "custom",
-      "lens_version": "1.0",
+      "lens_version": "1.1",
       "criterion_id": "custom-4",
       "criterion_kind": "descriptive",
       "label": "Prior controls presumed ineffective",
@@ -366,7 +372,7 @@
         "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy."
       },
       "origin": "user_authored_operational_contract",
-      "card_sha256": "b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521"
+      "card_sha256": "70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b"
     }
   ],
   "matrix": [
@@ -792,7 +798,7 @@
       "key": "custom/custom-1",
       "label": "Documented safety risk",
       "kind": "descriptive",
-      "card_sha256": "06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8",
+      "card_sha256": "74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d",
       "positive": 3,
       "negative": 1,
       "uncertain": 0,
@@ -804,13 +810,17 @@
       "retained": 4,
       "rate": 0.75,
       "coverage": 1.0,
+      "unresolved_range": [
+        0.75,
+        0.75
+      ],
       "processing_coverage": 1.0
     },
     {
       "key": "custom/custom-2",
       "label": "Favorable appraisal of restrictions",
       "kind": "descriptive",
-      "card_sha256": "b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056",
+      "card_sha256": "1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7",
       "positive": 2,
       "negative": 2,
       "uncertain": 0,
@@ -822,13 +832,17 @@
       "retained": 4,
       "rate": 0.5,
       "coverage": 1.0,
+      "unresolved_range": [
+        0.5,
+        0.5
+      ],
       "processing_coverage": 1.0
     },
     {
       "key": "custom/custom-3",
       "label": "Restriction as remedy",
       "kind": "descriptive",
-      "card_sha256": "15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e",
+      "card_sha256": "bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1",
       "positive": 2,
       "negative": 2,
       "uncertain": 0,
@@ -840,13 +854,17 @@
       "retained": 4,
       "rate": 0.5,
       "coverage": 1.0,
+      "unresolved_range": [
+        0.5,
+        0.5
+      ],
       "processing_coverage": 1.0
     },
     {
       "key": "custom/custom-4",
       "label": "Prior controls presumed ineffective",
       "kind": "descriptive",
-      "card_sha256": "b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521",
+      "card_sha256": "70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b",
       "positive": 0,
       "negative": 3,
       "uncertain": 1,
@@ -858,6 +876,10 @@
       "retained": 4,
       "rate": 0.0,
       "coverage": 0.75,
+      "unresolved_range": [
+        0.0,
+        0.25
+      ],
       "processing_coverage": 1.0
     }
   ],
@@ -876,6 +898,10 @@
       "retained": 4,
       "rate": 0.75,
       "coverage": 1.0,
+      "unresolved_range": [
+        0.75,
+        0.75
+      ],
       "processing_coverage": 1.0
     },
     {
@@ -892,6 +918,10 @@
       "retained": 4,
       "rate": 0.5,
       "coverage": 1.0,
+      "unresolved_range": [
+        0.5,
+        0.5
+      ],
       "processing_coverage": 1.0
     },
     {
@@ -908,6 +938,10 @@
       "retained": 4,
       "rate": 0.5,
       "coverage": 1.0,
+      "unresolved_range": [
+        0.5,
+        0.5
+      ],
       "processing_coverage": 1.0
     },
     {
@@ -924,6 +958,10 @@
       "retained": 4,
       "rate": 0.0,
       "coverage": 0.75,
+      "unresolved_range": [
+        0.0,
+        0.25
+      ],
       "processing_coverage": 1.0
     }
   ],
@@ -1087,5 +1125,5 @@
     "coverage": "determinate sources / (selected sources minus fully inapplicable sources)",
     "processing": "retained explicit decisions / planned source-unit decisions"
   },
-  "snapshot_sha256": "efaf16f9606c99addeb3e06d9495ac49617043ff869e2cfac6c98eeab496c5f8"
+  "snapshot_sha256": "34867c572209ceda1789c38d00f3d4858352598a92630ffd4bad9d8db4ecab26"
 }

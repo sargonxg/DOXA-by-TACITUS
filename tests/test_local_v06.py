@@ -142,6 +142,24 @@ def test_cli_doctor_json_works_without_api_or_uvicorn_start(tmp_path, monkeypatc
     assert not report["automatic_downloads"]
 
 
+def test_cli_laptop_probe_is_explicit_and_uses_the_fixed_loopback_endpoint(tmp_path, monkeypatch, capsys):
+    from doxa.laptop import ENDPOINT, MODEL
+    from doxa.providers import OllamaProvider
+
+    async def installed(provider):
+        assert provider.model == MODEL and provider.base_url == ENDPOINT
+        return {"ok": True, "details": "Model installed", "quantization": "Q4_K_M", "revision": "example"}
+
+    monkeypatch.delenv("DOXA_CLOUD_STATE_URL", raising=False)
+    monkeypatch.setenv("DOXA_OLLAMA_BASE_URL", "https://external.example")
+    monkeypatch.setattr(OllamaProvider, "health", installed)
+    main(["doctor", "--json", "--laptop", "--data-dir", str(tmp_path)])
+    report = json.loads(capsys.readouterr().out)
+    assert report["laptop"] == {"endpoint": ENDPOINT, "model": MODEL, "ok": True,
+                                "revision": "example", "quantization": "Q4_K_M"}
+    assert report["provider_probe_performed"] and report["network_requests"] == 1 and report["model_requests"] == 0
+
+
 def test_existing_cli_serve_flags_remain_valid_and_apply_low_memory_defaults(tmp_path, monkeypatch):
     import os
     monkeypatch.setattr(os, "environ", dict(os.environ))

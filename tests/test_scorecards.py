@@ -1,4 +1,5 @@
 import csv
+from copy import deepcopy
 import io
 import json
 from pathlib import Path
@@ -10,7 +11,7 @@ from fastapi.testclient import TestClient
 from doxa.api import create_app
 from doxa.extraction import extract_document
 from doxa.laptop import MODEL, PROFILE
-from doxa.scorecard_graph import criterion_rate
+from doxa.scorecard_graph import criterion_rate, verify_projection
 from doxa.scorecards import _index, _source_outcome, _summary
 
 
@@ -60,7 +61,8 @@ def test_native_caption_scorecard_job_and_review(tmp_path, monkeypatch):
         assert {item["document_type"] for item in docs} == {"speech transcript"}
         options = {"execution_profile": PROFILE, "lens_ids": ["custom"],
                    "question": "How is this policy justified?",
-                   "custom_lens": {"criteria": [{"id": "risk", "label": "Risk", "description": "Cites a documented safety risk."},
+                   "custom_lens": {"criteria": [{"id": "risk", "label": "Risk", "applicability": "source_scope",
+                                                 "description": "Cites a documented safety risk."},
                                                 {"id": "remedy", "label": "Remedy", "description": "Proposes a specific remedy."}]},
                    "index_spec": {"name": "Justification", "weights": {"custom/risk": 60, "custom/remedy": 40}}}
         preflight = client.post(root + "/preflight", json=options).json()
@@ -116,6 +118,25 @@ def test_native_caption_scorecard_job_and_review(tmp_path, monkeypatch):
         assert rows[0]["index_value"] == "50.0"
         graph = client.get(artifacts + "jsonld").json()
         assert criterion_rate(graph, "custom/risk")["rate"] == 0.5
+        assert verify_projection(graph, base)["criteria_checked"] == 2
+        modified = deepcopy(graph)
+        next(node for node in modified["@graph"] if node["@type"] == "doxa:SourceCriterion")["status"] = "uncertain"
+        with pytest.raises(ValueError, match="nodes or links differ"):
+            verify_projection(modified, base)
+        with pytest.raises(ValueError, match="checksum mismatch"):
+            verify_projection(graph, {**base, "question": "Changed question"})
+
+        store = client.app.state.store
+        store.execute("""UPDATE v3_assessments
+                         SET result='not_applicable', payload_json=json_set(payload_json,'$.result','not_applicable')
+                         WHERE run_id=? AND document_id=? AND criterion_id='risk'""", [run["id"], right])
+        uncertain = snapshot()
+        risk = next(item for item in uncertain["criteria"] if item["key"] == "custom/risk")
+        assert (risk["eligible"], risk["determinate"], risk["uncertain"], risk["inapplicable"]) == (2, 1, 1, 0)
+        assert risk["unresolved_range"] == [0.5, 1.0]
+        assert uncertain["index"]["status"] == "insufficient_coverage"
+        cell = next(item for item in uncertain["matrix"] if (item["document_id"], item["criterion"]) == (right, "custom/risk"))
+        assert cell["decisions"] == {"not_applicable": 1} and cell["scope_note"]
 
 
 @pytest.mark.parametrize("filename,content", [
@@ -138,6 +159,7 @@ def test_scorecard_sensitivity_and_reliable_coverage():
              for status in ("positive", "positive", "negative", "negative", "uncertain", "inapplicable")]
     row = _summary(cells)
     assert (row["rate"], row["coverage"], row["eligible"]) == (0.5, 0.8, 5)
+    assert row["unresolved_range"] == [0.4, 0.6]
     spec = {"weights": {"a": 60, "b": 40}, "minimum_coverage": 0.8}
     value = _index(spec, [{"key": "a", **row}, {"key": "b", **row}], True, True)
     assert (value["value"], value["range"], value["equal_weight"]) == (50, [40, 60], 50)

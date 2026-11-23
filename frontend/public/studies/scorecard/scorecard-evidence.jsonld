@@ -30,50 +30,50 @@
   },
   "@graph": [
     {
-      "@id": "urn:doxa:run:authored-civic-square-v1",
+      "@id": "urn:doxa:run:authored-civic-square-v2",
       "@type": [
         "doxa:AnalysisRun",
         "prov:Activity"
       ],
-      "id": "authored-civic-square-v1",
+      "id": "authored-civic-square-v2",
       "status": "completed",
       "model": null,
       "model_revision": null,
       "provider": "authored teaching fixture",
-      "method_fingerprint": "5e3e3cd795d8f5cfa98da05b1aaa65a0f6d61f73ec4e273af5a3018e04a9d7ea",
+      "method_fingerprint": "b33538f44d60f72da68d5a6e9d25a5021303d0676806169e4d646d6a885a8915",
       "execution_profile": null
     },
     {
-      "@id": "urn:doxa:method-card:06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8",
+      "@id": "urn:doxa:method-card:74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d",
       "@type": "doxa:Criterion",
       "key": "custom/custom-1",
-      "version": "1.0",
+      "version": "1.1",
       "label": "Documented safety risk",
-      "sha256": "06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8"
+      "sha256": "74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d"
     },
     {
-      "@id": "urn:doxa:method-card:b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056",
+      "@id": "urn:doxa:method-card:1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7",
       "@type": "doxa:Criterion",
       "key": "custom/custom-2",
-      "version": "1.0",
+      "version": "1.1",
       "label": "Favorable appraisal of restrictions",
-      "sha256": "b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056"
+      "sha256": "1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7"
     },
     {
-      "@id": "urn:doxa:method-card:15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e",
+      "@id": "urn:doxa:method-card:bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1",
       "@type": "doxa:Criterion",
       "key": "custom/custom-3",
-      "version": "1.0",
+      "version": "1.1",
       "label": "Restriction as remedy",
-      "sha256": "15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e"
+      "sha256": "bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1"
     },
     {
-      "@id": "urn:doxa:method-card:b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521",
+      "@id": "urn:doxa:method-card:70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b",
       "@type": "doxa:Criterion",
       "key": "custom/custom-4",
-      "version": "1.0",
+      "version": "1.1",
       "label": "Prior controls presumed ineffective",
-      "sha256": "b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521"
+      "sha256": "70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b"
     },
     {
       "@id": "urn:doxa:source-version:bf80acbd3004f0f7d21238f509581a8b1659113054e8c7170dbfce27b614baa6",
@@ -151,22 +151,22 @@
       "cue_end_ms": null
     },
     {
-      "@id": "urn:doxa:decision:094902efa264a3fa6df1df9903b2cf4fe9afb7cceae3115bb3c8d8edf76ddbb7",
+      "@id": "urn:doxa:decision:6b4498847ab80f96f1cbe2f1a1cbf3fb01e4ab7b714f43274ad7fba0e83d61a4",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8",
+      "criterion": "urn:doxa:method-card:74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d",
       "passage": "urn:doxa:passage:c1ff0928743ed10bcd256bcba49d08b80cf2c0834e242496f6dfa7c96984a898",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "5ba657a63675754f2bdcfe6babcf3c8efe7081315f9de84501f38828e01d4a05"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:bc3035c4d527d15d111798f405ad0eb71ee52d6453ecb9c43ae270fc24b9e6f3",
+      "@id": "urn:doxa:scorecard-cell:f217acf3cf64c4c37fcd07ebde4d3728ed85152289ba3a4eea1e7ae0164e7d56",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:bf80acbd3004f0f7d21238f509581a8b1659113054e8c7170dbfce27b614baa6",
-      "criterion": "urn:doxa:method-card:06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8",
+      "criterion": "urn:doxa:method-card:74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d",
       "status": "positive",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:094902efa264a3fa6df1df9903b2cf4fe9afb7cceae3115bb3c8d8edf76ddbb7"
+      "decision": "urn:doxa:decision:6b4498847ab80f96f1cbe2f1a1cbf3fb01e4ab7b714f43274ad7fba0e83d61a4"
     },
     {
       "@id": "urn:doxa:passage:93bec40b72500020f9117b21b0672f90d4d8a2696288aae9afa41b3fed001e8c",
@@ -180,58 +180,58 @@
       "cue_end_ms": null
     },
     {
-      "@id": "urn:doxa:decision:14fc9c95fb512aebf994beaf2aa73bd23cdb0d09f0bb99221c87530de1f40344",
+      "@id": "urn:doxa:decision:b6311885b6b4d4bbf615d710cd1f4eee9797086d108aefb9376c69c7826fd173",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056",
+      "criterion": "urn:doxa:method-card:1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7",
       "passage": "urn:doxa:passage:93bec40b72500020f9117b21b0672f90d4d8a2696288aae9afa41b3fed001e8c",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "6d9692d0c81f0785af41d0e770dd1551846f7a64ebc1a66a55f1c55e50464c63"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:eb265bc032b8ddb3202a3f9c0914437decb4a86b993ae348f5ad780be1b54eec",
+      "@id": "urn:doxa:scorecard-cell:a44ace834373bb6de03da706032050d19621ce2aef661ff364c4167a9fac3181",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:bf80acbd3004f0f7d21238f509581a8b1659113054e8c7170dbfce27b614baa6",
-      "criterion": "urn:doxa:method-card:b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056",
+      "criterion": "urn:doxa:method-card:1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7",
       "status": "positive",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:14fc9c95fb512aebf994beaf2aa73bd23cdb0d09f0bb99221c87530de1f40344"
+      "decision": "urn:doxa:decision:b6311885b6b4d4bbf615d710cd1f4eee9797086d108aefb9376c69c7826fd173"
     },
     {
-      "@id": "urn:doxa:decision:d5586a41268b47096c5772c6f111b72b4d19563fd21e0c69a75262d94dacfd03",
+      "@id": "urn:doxa:decision:d0c4704a2940ec384f88c827b9a5b1cdab411dedc52e5f777745f226fb76fd4f",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e",
+      "criterion": "urn:doxa:method-card:bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1",
       "passage": "urn:doxa:passage:93bec40b72500020f9117b21b0672f90d4d8a2696288aae9afa41b3fed001e8c",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "dfb589ebd665f6b01996d62499764664a1a904831a4935e440409013062906c7"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:217b1b6d139a3d0dc29af441e13470271c8c18b8888167f041fd2e925ac4815d",
+      "@id": "urn:doxa:scorecard-cell:5ae8cf3a2f692fab4a3cb94acd140d3b59ed7119b1d066c2cf8d4d89f7c14eb0",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:bf80acbd3004f0f7d21238f509581a8b1659113054e8c7170dbfce27b614baa6",
-      "criterion": "urn:doxa:method-card:15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e",
+      "criterion": "urn:doxa:method-card:bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1",
       "status": "positive",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:d5586a41268b47096c5772c6f111b72b4d19563fd21e0c69a75262d94dacfd03"
+      "decision": "urn:doxa:decision:d0c4704a2940ec384f88c827b9a5b1cdab411dedc52e5f777745f226fb76fd4f"
     },
     {
-      "@id": "urn:doxa:decision:cfca1da68fab84b64442c115f5086aa6de5528647f2c14e2bdc188f3c4fbc61f",
+      "@id": "urn:doxa:decision:1b4f84b9336291b7ae1325871d8bbb4113d2feb168bbc27973145253119aa843",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521",
+      "criterion": "urn:doxa:method-card:70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b",
       "passage": "urn:doxa:passage:c1ff0928743ed10bcd256bcba49d08b80cf2c0834e242496f6dfa7c96984a898",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "054397dbd504ae055e532c9b1462799ecebdbc6f7d80f93ac37a9b2db29ada09"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:7be7db2cb4d94a8b9879c4df8474c254d9cb441c937371704f2c5a8fa0475dd4",
+      "@id": "urn:doxa:scorecard-cell:db6942b63020ba079110c0d749335e1bd3918dd648cd276846a2b19489eaeecb",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:bf80acbd3004f0f7d21238f509581a8b1659113054e8c7170dbfce27b614baa6",
-      "criterion": "urn:doxa:method-card:b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521",
+      "criterion": "urn:doxa:method-card:70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b",
       "status": "negative",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:cfca1da68fab84b64442c115f5086aa6de5528647f2c14e2bdc188f3c4fbc61f"
+      "decision": "urn:doxa:decision:1b4f84b9336291b7ae1325871d8bbb4113d2feb168bbc27973145253119aa843"
     },
     {
       "@id": "urn:doxa:passage:4b301db2a432aabf0ecaf676f75fa3765e2d369dfa6fa4884847443de9d94615",
@@ -245,22 +245,22 @@
       "cue_end_ms": null
     },
     {
-      "@id": "urn:doxa:decision:3ab761e194b87faf566c5a37da3354b51e64276343f160c406ba7477a3767ee1",
+      "@id": "urn:doxa:decision:16abf4a33072de347918097be59ff73aafedc605811af17b36d1d376ee8750f4",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8",
+      "criterion": "urn:doxa:method-card:74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d",
       "passage": "urn:doxa:passage:4b301db2a432aabf0ecaf676f75fa3765e2d369dfa6fa4884847443de9d94615",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "1980ff085314fab979afecb7be0f59667836005b91d39e7a2a7e32e766255064"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:8ae0db63177dbc05c3c441d98a185d7d10146196a0eb3e37f70d8e579ec5a5b4",
+      "@id": "urn:doxa:scorecard-cell:0a28089706f969882cd7f9cf2f38f310f73ee60d2d22a0c3ca5e6d832ef5846b",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:c12375f4bcfaa070cb7326b6b284014ace360628d6cbef690dbb84eada9dc340",
-      "criterion": "urn:doxa:method-card:06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8",
+      "criterion": "urn:doxa:method-card:74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d",
       "status": "negative",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:3ab761e194b87faf566c5a37da3354b51e64276343f160c406ba7477a3767ee1"
+      "decision": "urn:doxa:decision:16abf4a33072de347918097be59ff73aafedc605811af17b36d1d376ee8750f4"
     },
     {
       "@id": "urn:doxa:passage:43c5da032c18200e37a776c04d25a712ca424511ec42d9bc3a20d2ca8496eccd",
@@ -274,58 +274,58 @@
       "cue_end_ms": null
     },
     {
-      "@id": "urn:doxa:decision:aef7ca27c31325babcb8bd183fd515b714542e4fa1c4de475b468223103d1558",
+      "@id": "urn:doxa:decision:7b673d61a7d760c1157e5e4cd200e6cc3f16c6f19973fef764342698530c605b",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056",
+      "criterion": "urn:doxa:method-card:1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7",
       "passage": "urn:doxa:passage:43c5da032c18200e37a776c04d25a712ca424511ec42d9bc3a20d2ca8496eccd",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "41228c6d0a4a24be85ed42b7a446f53ffd5361da87ba7bdebfa28b42cf739cfa"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:2290f1189b2ffb8b71600815bbdcf4ef65f95cee4083b7fb4370abd8d196fd10",
+      "@id": "urn:doxa:scorecard-cell:e926533239bf8f6cbe4592e3491460ca519719302bde259188a1ae8b55f881c7",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:c12375f4bcfaa070cb7326b6b284014ace360628d6cbef690dbb84eada9dc340",
-      "criterion": "urn:doxa:method-card:b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056",
+      "criterion": "urn:doxa:method-card:1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7",
       "status": "negative",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:aef7ca27c31325babcb8bd183fd515b714542e4fa1c4de475b468223103d1558"
+      "decision": "urn:doxa:decision:7b673d61a7d760c1157e5e4cd200e6cc3f16c6f19973fef764342698530c605b"
     },
     {
-      "@id": "urn:doxa:decision:af73ba184ddfc2f45292bd055ffe8c73436b7090ab47adc78b33ff2ff3394109",
+      "@id": "urn:doxa:decision:547450326c177d56fcbd7abdee05fa6654f9a0c0f6eecd2ddc2ca1749ec06cbe",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e",
+      "criterion": "urn:doxa:method-card:bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1",
       "passage": "urn:doxa:passage:43c5da032c18200e37a776c04d25a712ca424511ec42d9bc3a20d2ca8496eccd",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "6ba1c3a5c9c079420574549fd4a6a78f2e8df1466017198f87ba1bd03bb6dc59"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:8864e10afc9f2956f841eecd08826a17123683352c70e5cc9e69ddfa349366c8",
+      "@id": "urn:doxa:scorecard-cell:9ee228d19d2808cc4375cff79a3202bda36cac6e0eb07c2c84ff0c7a450362d9",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:c12375f4bcfaa070cb7326b6b284014ace360628d6cbef690dbb84eada9dc340",
-      "criterion": "urn:doxa:method-card:15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e",
+      "criterion": "urn:doxa:method-card:bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1",
       "status": "negative",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:af73ba184ddfc2f45292bd055ffe8c73436b7090ab47adc78b33ff2ff3394109"
+      "decision": "urn:doxa:decision:547450326c177d56fcbd7abdee05fa6654f9a0c0f6eecd2ddc2ca1749ec06cbe"
     },
     {
-      "@id": "urn:doxa:decision:b5c13309871f8c4aa2f6751d7c8c2e301a229a3996cd3ba3eb9a7653e8cc112f",
+      "@id": "urn:doxa:decision:9e516f669aa64bb555066cff1f6a2cf9fef2f48cff9922f208e211633b313ccd",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521",
+      "criterion": "urn:doxa:method-card:70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b",
       "passage": "urn:doxa:passage:4b301db2a432aabf0ecaf676f75fa3765e2d369dfa6fa4884847443de9d94615",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "4bf3da69b935762d47aeedec4846b3d0c7944de8b651b82d036dbefa83888763"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:65c0f901f3e96a0161ba2c8846eee8e239826e26601cc511cd89414b79ae2c2f",
+      "@id": "urn:doxa:scorecard-cell:009ed540669c997f750312871025763a01fc8fa8cb784d7fb991c27b206ef66f",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:c12375f4bcfaa070cb7326b6b284014ace360628d6cbef690dbb84eada9dc340",
-      "criterion": "urn:doxa:method-card:b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521",
+      "criterion": "urn:doxa:method-card:70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b",
       "status": "negative",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:b5c13309871f8c4aa2f6751d7c8c2e301a229a3996cd3ba3eb9a7653e8cc112f"
+      "decision": "urn:doxa:decision:9e516f669aa64bb555066cff1f6a2cf9fef2f48cff9922f208e211633b313ccd"
     },
     {
       "@id": "urn:doxa:passage:2a0fd0029de17e990c48469c9786887fb88bb95ac532913c7b207953e474935e",
@@ -339,22 +339,22 @@
       "cue_end_ms": 11000
     },
     {
-      "@id": "urn:doxa:decision:0b1d8777973a3a55070312e38066a30f1e68eb7aeafa989af54e7e2fd88f595d",
+      "@id": "urn:doxa:decision:23a9c5dc1676ff084487750fe669b040b4282ad6e466a5265d173586a7602034",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8",
+      "criterion": "urn:doxa:method-card:74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d",
       "passage": "urn:doxa:passage:2a0fd0029de17e990c48469c9786887fb88bb95ac532913c7b207953e474935e",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "11da706f6ddb37c08bac7ed473b5a87a02127d1cd156dfc92d3b24fa000012eb"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:8ef1b4197944dabc8b79941a326ad02fcef167823caf2ffb305970af3409ffdc",
+      "@id": "urn:doxa:scorecard-cell:1e9ae70a52a637a29a2c6f1a57ad780850519d72f3cc505973d86d9c66196060",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:8c5ac08974b03a4d17207b3623cc072446e3e22c6241974144567fd330ab9ddb",
-      "criterion": "urn:doxa:method-card:06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8",
+      "criterion": "urn:doxa:method-card:74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d",
       "status": "positive",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:0b1d8777973a3a55070312e38066a30f1e68eb7aeafa989af54e7e2fd88f595d"
+      "decision": "urn:doxa:decision:23a9c5dc1676ff084487750fe669b040b4282ad6e466a5265d173586a7602034"
     },
     {
       "@id": "urn:doxa:passage:f8e0fcb3bcefcec86e874efd36b3cec3c32d02b02fbb27b7885f003a99b03cd4",
@@ -368,58 +368,58 @@
       "cue_end_ms": 20000
     },
     {
-      "@id": "urn:doxa:decision:58f3b4b223d245a21c6ba2aef61ebe91de1c82f19a664ab9ebd698a0bbfa7c59",
+      "@id": "urn:doxa:decision:5aed98cb94e82dd50a8c1170ae1558c0c1052b799597ce24efc8e1903db9e07a",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056",
+      "criterion": "urn:doxa:method-card:1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7",
       "passage": "urn:doxa:passage:f8e0fcb3bcefcec86e874efd36b3cec3c32d02b02fbb27b7885f003a99b03cd4",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "5a8a24ff12cb474b5e11e8077c9e4ee290ffc0a58fcec32b76c20745bb9bb552"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:3e16a711b7d1caecdb3d72c3a7f048efdbe0c45a4454f416a65f5bf2b32e14e3",
+      "@id": "urn:doxa:scorecard-cell:5b2e743be85edadcca098110b5ef5abada24ed0c38d3d571747186dd6eec5b69",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:8c5ac08974b03a4d17207b3623cc072446e3e22c6241974144567fd330ab9ddb",
-      "criterion": "urn:doxa:method-card:b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056",
+      "criterion": "urn:doxa:method-card:1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7",
       "status": "positive",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:58f3b4b223d245a21c6ba2aef61ebe91de1c82f19a664ab9ebd698a0bbfa7c59"
+      "decision": "urn:doxa:decision:5aed98cb94e82dd50a8c1170ae1558c0c1052b799597ce24efc8e1903db9e07a"
     },
     {
-      "@id": "urn:doxa:decision:f48d1b4a2b0be105ca49f7933764a0c5b789415f06c712ac6e7040d4651e325a",
+      "@id": "urn:doxa:decision:948f344e974d74984c0c4ca548259309b71f855011615967606e1fc5408bc717",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e",
+      "criterion": "urn:doxa:method-card:bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1",
       "passage": "urn:doxa:passage:f8e0fcb3bcefcec86e874efd36b3cec3c32d02b02fbb27b7885f003a99b03cd4",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "68bd738fc5ca2b1760a7c9ecff0a4ee0742c1173a4fa60a4e3321574539657b5"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:ab0d5ed83ea028c1e85e0ab914004ad8310cbb4985e5d339119754e007ae55a1",
+      "@id": "urn:doxa:scorecard-cell:b70f1f50a62e507961b094f8c93017efc43ff79e90f284c924bfc0c714c1bce8",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:8c5ac08974b03a4d17207b3623cc072446e3e22c6241974144567fd330ab9ddb",
-      "criterion": "urn:doxa:method-card:15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e",
+      "criterion": "urn:doxa:method-card:bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1",
       "status": "positive",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:f48d1b4a2b0be105ca49f7933764a0c5b789415f06c712ac6e7040d4651e325a"
+      "decision": "urn:doxa:decision:948f344e974d74984c0c4ca548259309b71f855011615967606e1fc5408bc717"
     },
     {
-      "@id": "urn:doxa:decision:f619c38b323defccb772c4fb8bbba351558c66633730af63034d3af0062dd271",
+      "@id": "urn:doxa:decision:d28352341dc2bf682ccd1d610f2de6226cdebd296b792bb2d0321ed27679d897",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521",
+      "criterion": "urn:doxa:method-card:70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b",
       "passage": "urn:doxa:passage:2a0fd0029de17e990c48469c9786887fb88bb95ac532913c7b207953e474935e",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "af87bf5a155b691c7db5bd80b37e68d037d2c49a0bda2de84647bf8eda97cded"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:e16a996c96b46279a895ae1aa2d091dfc71afb9d6d74d4016691a49c4435a4d2",
+      "@id": "urn:doxa:scorecard-cell:e4fc274d00a810ad322b2d03c3a1b423e76c35e3baa34223283b5e818de31844",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:8c5ac08974b03a4d17207b3623cc072446e3e22c6241974144567fd330ab9ddb",
-      "criterion": "urn:doxa:method-card:b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521",
+      "criterion": "urn:doxa:method-card:70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b",
       "status": "negative",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:f619c38b323defccb772c4fb8bbba351558c66633730af63034d3af0062dd271"
+      "decision": "urn:doxa:decision:d28352341dc2bf682ccd1d610f2de6226cdebd296b792bb2d0321ed27679d897"
     },
     {
       "@id": "urn:doxa:passage:5712473f0568594bab6fd23dcf4c4d1c14f3f2e2c9b848293e8120d158016415",
@@ -433,22 +433,22 @@
       "cue_end_ms": 12000
     },
     {
-      "@id": "urn:doxa:decision:a4ad931068b8b7308be978c4392e1620c859e36f10c58d9d7ce2d7850b97a415",
+      "@id": "urn:doxa:decision:9af96ec8115288154103ecbdeb6954c02db2da7087a39febb2c057d51ed3c95a",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8",
+      "criterion": "urn:doxa:method-card:74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d",
       "passage": "urn:doxa:passage:5712473f0568594bab6fd23dcf4c4d1c14f3f2e2c9b848293e8120d158016415",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "2e67948d4401fec737356f5d1c73d6b7b9704f3c855868af0d24fd13aa1b1c00"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:fc266939fb16ea8beadb98219f9bb864a0b222bedd86d9a14a1bd09c308ae24f",
+      "@id": "urn:doxa:scorecard-cell:b011096bc2bd97ccab3690bb66855ac21fbb14ff0faf520794c364d97cdec5e8",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:b89a0860d1fff059d54f4b5925468c106a2d194be3e58d446357f676016312c8",
-      "criterion": "urn:doxa:method-card:06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8",
+      "criterion": "urn:doxa:method-card:74ce89953c5bce110c35833993c239160d58098e8c681e996620ec31d4b5b46d",
       "status": "positive",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:a4ad931068b8b7308be978c4392e1620c859e36f10c58d9d7ce2d7850b97a415"
+      "decision": "urn:doxa:decision:9af96ec8115288154103ecbdeb6954c02db2da7087a39febb2c057d51ed3c95a"
     },
     {
       "@id": "urn:doxa:passage:68c0c57278633fad788f8a741549795af36717692071ca97f919ce9307beb813",
@@ -462,83 +462,83 @@
       "cue_end_ms": 22500
     },
     {
-      "@id": "urn:doxa:decision:f382575b2b76de5d7e8bf06c0ca1ab22150d24207682871e4be08897789ed0cc",
+      "@id": "urn:doxa:decision:df90e77b41e7b29cc0077c98a30f29b8dd38ce01648ae222c3e02c96f4498de7",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056",
+      "criterion": "urn:doxa:method-card:1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7",
       "passage": "urn:doxa:passage:68c0c57278633fad788f8a741549795af36717692071ca97f919ce9307beb813",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "2ac2099983b71ff8678b07164874ac200f4278555ea176ddf9a3847a54e40e3f"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:9e6ea3dfacf88fecbfc68281a5f6689f24e5df9adb1e648ba8cadfa76fee0ac3",
+      "@id": "urn:doxa:scorecard-cell:f2947bea2cf077b4649c579149db9949e8d1f28b75125606b84ed60aa004aba2",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:b89a0860d1fff059d54f4b5925468c106a2d194be3e58d446357f676016312c8",
-      "criterion": "urn:doxa:method-card:b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056",
+      "criterion": "urn:doxa:method-card:1eabdde31eeb3b7f9360feabf739c1e52893730969822d34b778ea608eacffd7",
       "status": "negative",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:f382575b2b76de5d7e8bf06c0ca1ab22150d24207682871e4be08897789ed0cc"
+      "decision": "urn:doxa:decision:df90e77b41e7b29cc0077c98a30f29b8dd38ce01648ae222c3e02c96f4498de7"
     },
     {
-      "@id": "urn:doxa:decision:d19d17e749e0da22ae486b086d60363bb0bbad76e8857475b662458b9e46b38b",
+      "@id": "urn:doxa:decision:a7ab744a8aa42c58dc333a0583aec3b4170880cb2b2e0d381f6054c74c2a5a9f",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e",
+      "criterion": "urn:doxa:method-card:bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1",
       "passage": "urn:doxa:passage:5712473f0568594bab6fd23dcf4c4d1c14f3f2e2c9b848293e8120d158016415",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "ee176cc181ca5ba138d2f4ed627a9f6882feecf87f0736c6967200759ff053af"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:fb67653d976d95b955d87250161d64d6852774b8783c36aa72fd5a8f9913e1f0",
+      "@id": "urn:doxa:scorecard-cell:c5ead93f2c4f6b80e01099f2c0fbb00e34c534129bb1c1467a614b85c5940aa5",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:b89a0860d1fff059d54f4b5925468c106a2d194be3e58d446357f676016312c8",
-      "criterion": "urn:doxa:method-card:15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e",
+      "criterion": "urn:doxa:method-card:bee03bfb3577f87feaf0b519d797097d6b4ed45b1c60cf512198ba51de0559f1",
       "status": "negative",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:d19d17e749e0da22ae486b086d60363bb0bbad76e8857475b662458b9e46b38b"
+      "decision": "urn:doxa:decision:a7ab744a8aa42c58dc333a0583aec3b4170880cb2b2e0d381f6054c74c2a5a9f"
     },
     {
-      "@id": "urn:doxa:decision:488c493a93169aed66dfa1fc754c44a3fa3bca3c7350f6f03a51bacb15cf9344",
+      "@id": "urn:doxa:decision:38dbc271e7fc42e4815ac1d451a37623acd3fb5632a2567abcb2ab7542864950",
       "@type": "doxa:Decision",
-      "criterion": "urn:doxa:method-card:b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521",
+      "criterion": "urn:doxa:method-card:70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b",
       "passage": "urn:doxa:passage:68c0c57278633fad788f8a741549795af36717692071ca97f919ce9307beb813",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "assessmentId": "78e4d92292d001b8cc15315fb481fd782f61733b3873a2b04bbb4ea12adce4e8"
     },
     {
-      "@id": "urn:doxa:scorecard-cell:4dd4c1c76f188496bc4bd1c783683a85d58663c64f6009c34a95e73da2ec592f",
+      "@id": "urn:doxa:scorecard-cell:c9ac06cbac2852f22c0b1fe9feaf2c9ff50ef5bd19bb45c277cb3b833c757d95",
       "@type": "doxa:SourceCriterion",
       "source": "urn:doxa:source-version:b89a0860d1fff059d54f4b5925468c106a2d194be3e58d446357f676016312c8",
-      "criterion": "urn:doxa:method-card:b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521",
+      "criterion": "urn:doxa:method-card:70a67740a8409d171e01553c2a8f3e32f95818b12c76a358a9aba80a75a7184b",
       "status": "uncertain",
       "planned": 1,
       "retained": 1,
-      "decision": "urn:doxa:decision:488c493a93169aed66dfa1fc754c44a3fa3bca3c7350f6f03a51bacb15cf9344"
+      "decision": "urn:doxa:decision:38dbc271e7fc42e4815ac1d451a37623acd3fb5632a2567abcb2ab7542864950"
     },
     {
-      "@id": "urn:doxa:scorecard:civic-square-scorecard-v1",
+      "@id": "urn:doxa:scorecard:civic-square-scorecard-v2",
       "@type": "doxa:Scorecard",
-      "run": "urn:doxa:run:authored-civic-square-v1",
+      "run": "urn:doxa:run:authored-civic-square-v2",
       "member": [
-        "urn:doxa:scorecard-cell:bc3035c4d527d15d111798f405ad0eb71ee52d6453ecb9c43ae270fc24b9e6f3",
-        "urn:doxa:scorecard-cell:eb265bc032b8ddb3202a3f9c0914437decb4a86b993ae348f5ad780be1b54eec",
-        "urn:doxa:scorecard-cell:217b1b6d139a3d0dc29af441e13470271c8c18b8888167f041fd2e925ac4815d",
-        "urn:doxa:scorecard-cell:7be7db2cb4d94a8b9879c4df8474c254d9cb441c937371704f2c5a8fa0475dd4",
-        "urn:doxa:scorecard-cell:8ae0db63177dbc05c3c441d98a185d7d10146196a0eb3e37f70d8e579ec5a5b4",
-        "urn:doxa:scorecard-cell:2290f1189b2ffb8b71600815bbdcf4ef65f95cee4083b7fb4370abd8d196fd10",
-        "urn:doxa:scorecard-cell:8864e10afc9f2956f841eecd08826a17123683352c70e5cc9e69ddfa349366c8",
-        "urn:doxa:scorecard-cell:65c0f901f3e96a0161ba2c8846eee8e239826e26601cc511cd89414b79ae2c2f",
-        "urn:doxa:scorecard-cell:8ef1b4197944dabc8b79941a326ad02fcef167823caf2ffb305970af3409ffdc",
-        "urn:doxa:scorecard-cell:3e16a711b7d1caecdb3d72c3a7f048efdbe0c45a4454f416a65f5bf2b32e14e3",
-        "urn:doxa:scorecard-cell:ab0d5ed83ea028c1e85e0ab914004ad8310cbb4985e5d339119754e007ae55a1",
-        "urn:doxa:scorecard-cell:e16a996c96b46279a895ae1aa2d091dfc71afb9d6d74d4016691a49c4435a4d2",
-        "urn:doxa:scorecard-cell:fc266939fb16ea8beadb98219f9bb864a0b222bedd86d9a14a1bd09c308ae24f",
-        "urn:doxa:scorecard-cell:9e6ea3dfacf88fecbfc68281a5f6689f24e5df9adb1e648ba8cadfa76fee0ac3",
-        "urn:doxa:scorecard-cell:fb67653d976d95b955d87250161d64d6852774b8783c36aa72fd5a8f9913e1f0",
-        "urn:doxa:scorecard-cell:4dd4c1c76f188496bc4bd1c783683a85d58663c64f6009c34a95e73da2ec592f"
+        "urn:doxa:scorecard-cell:f217acf3cf64c4c37fcd07ebde4d3728ed85152289ba3a4eea1e7ae0164e7d56",
+        "urn:doxa:scorecard-cell:a44ace834373bb6de03da706032050d19621ce2aef661ff364c4167a9fac3181",
+        "urn:doxa:scorecard-cell:5ae8cf3a2f692fab4a3cb94acd140d3b59ed7119b1d066c2cf8d4d89f7c14eb0",
+        "urn:doxa:scorecard-cell:db6942b63020ba079110c0d749335e1bd3918dd648cd276846a2b19489eaeecb",
+        "urn:doxa:scorecard-cell:0a28089706f969882cd7f9cf2f38f310f73ee60d2d22a0c3ca5e6d832ef5846b",
+        "urn:doxa:scorecard-cell:e926533239bf8f6cbe4592e3491460ca519719302bde259188a1ae8b55f881c7",
+        "urn:doxa:scorecard-cell:9ee228d19d2808cc4375cff79a3202bda36cac6e0eb07c2c84ff0c7a450362d9",
+        "urn:doxa:scorecard-cell:009ed540669c997f750312871025763a01fc8fa8cb784d7fb991c27b206ef66f",
+        "urn:doxa:scorecard-cell:1e9ae70a52a637a29a2c6f1a57ad780850519d72f3cc505973d86d9c66196060",
+        "urn:doxa:scorecard-cell:5b2e743be85edadcca098110b5ef5abada24ed0c38d3d571747186dd6eec5b69",
+        "urn:doxa:scorecard-cell:b70f1f50a62e507961b094f8c93017efc43ff79e90f284c924bfc0c714c1bce8",
+        "urn:doxa:scorecard-cell:e4fc274d00a810ad322b2d03c3a1b423e76c35e3baa34223283b5e818de31844",
+        "urn:doxa:scorecard-cell:b011096bc2bd97ccab3690bb66855ac21fbb14ff0faf520794c364d97cdec5e8",
+        "urn:doxa:scorecard-cell:f2947bea2cf077b4649c579149db9949e8d1f28b75125606b84ed60aa004aba2",
+        "urn:doxa:scorecard-cell:c5ead93f2c4f6b80e01099f2c0fbb00e34c534129bb1c1467a614b85c5940aa5",
+        "urn:doxa:scorecard-cell:c9ac06cbac2852f22c0b1fe9feaf2c9ff50ef5bd19bb45c277cb3b833c757d95"
       ],
       "question": "How strongly do the selected texts justify restrictions on demonstrations on public-order grounds?",
-      "sha256": "efaf16f9606c99addeb3e06d9495ac49617043ff869e2cfac6c98eeab496c5f8",
+      "sha256": "34867c572209ceda1789c38d00f3d4858352598a92630ffd4bad9d8db4ecab26",
       "basis": "authored teaching labels"
     }
   ]

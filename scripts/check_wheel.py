@@ -23,6 +23,7 @@ def main():
 from pathlib import Path
 import doxa
 from doxa.api import create_app
+from doxa.scorecard_graph import verify_projection
 from fastapi.testclient import TestClient
 assert Path(doxa.__file__).resolve().is_relative_to(Path(os.environ["DOXA_WHEEL_TARGET"]).resolve())
 with TestClient(create_app(os.environ["DOXA_DATA_DIR"],start_workers=False,use_saved_showcase=False)) as client:
@@ -48,18 +49,35 @@ with TestClient(create_app(os.environ["DOXA_DATA_DIR"],start_workers=False,use_s
     assert client.get(case+"antisemitism-case.pdf").content.startswith(b"%PDF")
     assert sum("doxa:Decision" in row["@type"] for row in client.get(case+"evidence.jsonld").json()["@graph"])==81
     scorecard="/studies/scorecard/"
-    assert client.get(scorecard+"scorecard.json").json()["index"]["value"] == 60
+    example=client.get(scorecard+"scorecard.json").json()
+    assert example["index"]["value"] == 60
+    assert verify_projection(client.get(scorecard+"scorecard-evidence.jsonld").json(),example)["criteria_checked"]==4
     assert client.get(scorecard+"doxa-scorecard.pdf").content.startswith(b"%PDF")
     assert client.get(scorecard+"starter.zip").content.startswith(b"PK")
     project=client.post("/api/projects",json={"name":"Installed wheel smoke"}).json()["id"]
     assert client.get("/api/projects/"+project+"/documents").status_code==200
     assert client.get("/api/v3/projects/"+project+"/report-jobs").status_code==200
-    uploaded=client.post("/api/projects/"+project+"/upload",files=[("files",("wheel-source.txt",b"A local installed-wheel extraction fixture.","text/plain"))])
-    assert uploaded.status_code==200, uploaded.text
+    root="/api/v3/projects/"+project
+    archive=client.get(scorecard+"civic-square-sources.zip")
+    assert archive.status_code==200 and archive.content.startswith(b"PK")
+    intake=client.post(root+"/imports",json={"name":"Civic Square","total_files":4})
+    assert intake.status_code in {200,201}, intake.text
+    uploaded=client.post(root+"/imports/"+intake.json()["id"]+"/archive",
+                         files={"file":("civic-square-sources.zip",archive.content,"application/zip")})
+    assert uploaded.is_success, uploaded.text
     documents=client.get("/api/projects/"+project+"/documents").json()
-    assert len(documents)==1 and documents[0]["status"]=="ready", documents
-    detail=client.get("/api/documents/"+documents[0]["id"]).json()
-    assert any(block["text"]=="A local installed-wheel extraction fixture." for block in detail["blocks"])
+    assert len(documents)==4 and all(row["status"]=="ready" for row in documents), documents
+    transcript=next(row for row in documents if row["filename"]=="committee-speech.srt")
+    detail=client.get("/api/documents/"+transcript["id"]).json()
+    assert detail["blocks"][0]["cue_start_ms"]==5000
+    caption="The councillor said, “la reunión seguirá.”"
+    cue=("WEBVTT\\n\\n00:01.000 --> 00:03.000\\n"+caption+"\\n").encode("utf-8")
+    uploaded=client.post("/api/projects/"+project+"/upload",
+                         files={"files":("unicode.vtt",cue,"text/vtt")})
+    assert uploaded.is_success, uploaded.text
+    document=uploaded.json()[0]
+    assert document["status"]=="ready", document
+    assert client.get("/api/documents/"+document["id"]).json()["blocks"][0]["text"]==caption
     query=client.post("/api/v3/projects/"+project+"/query",json={}).json()
     response=client.post("/api/v3/projects/"+project+"/report-jobs",json={"query_id":query["query_id"],"format":"xlsx","publication_type":"archive"})
     assert response.status_code==202, response.text
@@ -73,7 +91,7 @@ with TestClient(create_app(os.environ["DOXA_DATA_DIR"],start_workers=False,use_s
     assert job["status"]=="completed", job
     artifact=client.get("/api/v3/report-jobs/"+identity+"/artifacts/xlsx")
     assert artifact.status_code==200 and artifact.content.startswith(b"PK")
-print("Installed wheel API, compiled UI, TXT extraction subprocess and actual XLSX report worker passed without checkout assets or model calls.")
+print("Installed wheel UI, evidence-graph verification, ZIP and caption intake, and XLSX report worker passed without checkout assets or model calls.")
 '''
         env = {key: value for key, value in os.environ.items() if not key.startswith(("DOXA_", "CLOUDFLARE_", "OPENAI_", "RUNPOD_"))}
         env.update({"PYTHONPATH": str(target), "DOXA_WHEEL_TARGET": str(target), "DOXA_DATA_DIR": str(Path(temporary) / "data")})

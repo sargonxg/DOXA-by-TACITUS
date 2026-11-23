@@ -93,7 +93,7 @@ The explicit functional runner can prepare a bounded execution without model cal
 
 ## Compare only what the evidence permits
 
-Matching snapshots retain the question, source versions, declared event/topic/genre metadata, date gap and exclusions. Sources need distinct source families/content hashes; matching is deterministic nearest-date greedy one-to-one selection. Relevant metadata is a user/source declaration, not independently verified fact. A related date or event does not establish causal comparability.
+Matching snapshots retain the question, source versions, declared event/topic/genre metadata, date gap and exclusions. The v0.9.1 matcher maximizes eligible one-to-one pairs with deterministic date-gap ordering. Earlier frozen packets retain their original nearest-date pairs. Relevant metadata is declared by the operator or source and remains open to review. [Current matching method](research-scorecards.md#read-the-measurements)
 
 ![Actual synthetic comparison: one matching pair and one explicitly excluded unrelated source.](images/comparison-v06.png)
 

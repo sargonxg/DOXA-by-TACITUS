@@ -1,46 +1,51 @@
 {
-  "id": "civic-square-scorecard-v1",
+  "id": "civic-square-scorecard-v2",
   "origin": "authored fictional labels",
   "files": [
     {
+      "file": "frontend/public/studies/scorecard/civic-square-sources.zip",
+      "bytes": 1328,
+      "sha256": "516d1b1ba0a6f89345db4f9b4893723b203a641902bf21476facba28f4afd7e7"
+    },
+    {
       "file": "frontend/public/studies/scorecard/doxa-scorecard.csv",
-      "bytes": 12874,
-      "sha256": "f4c421ef11f2ac5e882446e393ed7ac3ae891b37e328726c34aace1f625eb665"
+      "bytes": 13103,
+      "sha256": "26b6336c536bc820eb3367d84c26907eb9eb80cd3d2bae56fbbce612448702d9"
     },
     {
       "file": "frontend/public/studies/scorecard/doxa-scorecard.html",
-      "bytes": 7623,
-      "sha256": "87fcadeb107e1b85cf88ea6031d1dd44cf2dd47ffeced452e83603ac46780130"
+      "bytes": 7671,
+      "sha256": "23af3db5cde72282f46481dd5be11726750a015eef50dfe46575850e413a12d6"
     },
     {
       "file": "frontend/public/studies/scorecard/doxa-scorecard.jsonl",
-      "bytes": 33770,
-      "sha256": "8eda78af691a3ea1a6fdacb803663ef330497bc6a87a4ef40dbce532b28e8338"
+      "bytes": 34467,
+      "sha256": "85fe28a08d991cca8e5122e08fc4f6d280880658316e6ff58447097183234381"
     },
     {
       "file": "frontend/public/studies/scorecard/doxa-scorecard.pdf",
-      "bytes": 23621,
-      "sha256": "5017adf26e2e7b69f129161a27b4340e90561d63cfd64b4c7be4d19320228960"
+      "bytes": 23786,
+      "sha256": "85d5eb3f8a0424428ebf2a65bcfabafab5f098a9e27027841d59d51065753513"
     },
     {
       "file": "frontend/public/studies/scorecard/doxa-scorecard.xlsx",
-      "bytes": 15698,
-      "sha256": "cccb9ae40563e88a262b01e7625c9a1f3e0134f423a7ea1f2ac86f9d14e57a43"
+      "bytes": 15815,
+      "sha256": "c95603a145ec580ddf7d2c4739975919347039b97b250098d87d2d09798e8c3b"
     },
     {
       "file": "frontend/public/studies/scorecard/scorecard-evidence.jsonld",
       "bytes": 28119,
-      "sha256": "c5a60bb3b5c7604ff991887aeafcd2871688944261c911668fd888c9961ce11e"
+      "sha256": "32d22ae9841920762c7a31b59ba612d6f9c1533add19a149ea0c9d1ed697d093"
     },
     {
       "file": "frontend/public/studies/scorecard/scorecard.json",
-      "bytes": 40972,
-      "sha256": "18e9a82c2508247c2e04e672a400e6b4362bc55cfa5a3306c9d923d876ac6c5c"
+      "bytes": 41951,
+      "sha256": "b848c7c87b89dc3b2010f4482ae01fdfb1e25a94093e9e16d997dd207051164f"
     },
     {
       "file": "frontend/public/studies/scorecard/starter.zip",
-      "bytes": 2490,
-      "sha256": "d0a202099ff66e823acc6415fb9712071f68f2408f4c33e5bc47350561daf652"
+      "bytes": 2515,
+      "sha256": "f1182e3c9303dff460c8c1e718df8a8e8798b4b0492ea0a9da3dfb6a594c2f6e"
     }
   ]
 }

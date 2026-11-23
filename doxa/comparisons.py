@@ -12,7 +12,7 @@ from fastapi import HTTPException
 
 from .store import utcnow
 
-VERSION = "matched-cohorts-1.0"
+VERSION = "matched-cohorts-1.1"
 SCHEMA_SQL = """
 CREATE TABLE IF NOT EXISTS matched_comparisons (
  id TEXT PRIMARY KEY, project_id TEXT NOT NULL, payload_json TEXT NOT NULL,
@@ -40,6 +40,34 @@ def _selection(value):
             or len(set(value)) != len(value)):
         raise ValueError("Each cohort needs 1–500 distinct document IDs")
     return value
+
+
+def _maximum_pairs(candidates):
+    """Start with nearest dates, then augment until no more sources can pair."""
+    neighbors = defaultdict(list)
+    by_left, by_right = {}, {}
+    for distance, left, right in sorted(candidates):
+        neighbors[left].append((distance, right))
+        if left not in by_left and right not in by_right:
+            by_left[left] = (distance, right)
+            by_right[right] = left
+
+    def augment(left, seen):
+        for distance, right in neighbors[left]:
+            if right in seen:
+                continue
+            seen.add(right)
+            previous = by_right.get(right)
+            if previous is None or augment(previous, seen):
+                by_left[left] = (distance, right)
+                by_right[right] = left
+                return True
+        return False
+
+    for left in sorted(neighbors):
+        if left not in by_left:
+            augment(left, set())
+    return sorted((distance, left, right) for left, (distance, right) in by_left.items())
 
 
 def build_comparison(store, project_id, body, *, actor_id="local-operator (self-declared)"):
@@ -101,6 +129,16 @@ def _build_comparison(store, project_id, body, *, actor_id):
                                "matching_metadata": values, "metadata_origin": "operator_declared_or_source_metadata",
                                "original_metadata_sha256": _hash({k: row[k] for k in row if k != "status"}),
                                "day": day}
+    left_set = set(left)
+    by_digest = defaultdict(list)
+    for identity in sorted(metadata):
+        by_digest[metadata[identity]["source_sha256"]].append(identity)
+    for identities in by_digest.values():
+        both_sides = any(identity in left_set for identity in identities) and any(identity not in left_set for identity in identities)
+        for identity in identities if both_sides else identities[1:]:
+            excluded.append({"document_id": identity, "reason": "content_in_both_cohorts" if both_sides else "duplicate_content",
+                             "missing_fields": []})
+            del metadata[identity]
     candidates = []
     for a in left:
         for b in right:
@@ -110,13 +148,10 @@ def _build_comparison(store, project_id, body, *, actor_id):
             va, vb = ma["matching_metadata"], mb["matching_metadata"]
             distance = abs((ma["day"] - mb["day"]).days)
             if (all(va[key].casefold() == vb[key].casefold() for key in fields)
-                    and distance <= gap and va["source_family"].casefold() != vb["source_family"].casefold()
-                    and ma["source_sha256"] != mb["source_sha256"]):
+                    and distance <= gap and va["source_family"].casefold() != vb["source_family"].casefold()):
                 candidates.append((distance, a, b))
     pairs, used = [], set()
-    for distance, a, b in sorted(candidates):
-        if a in used or b in used:
-            continue
+    for distance, a, b in _maximum_pairs(candidates):
         used.update((a, b))
         pairs.append({"left_document_id": a, "right_document_id": b, "date_gap_days": distance,
                       "matched_on": {key: metadata[a]["matching_metadata"][key] for key in fields}})
@@ -134,7 +169,7 @@ def _build_comparison(store, project_id, body, *, actor_id):
                                   [project_id, run_id, json.dumps(sorted(used))])
         counts, assessed = defaultdict(lambda: {"left": Counter(), "right": Counter()}), {"left": set(), "right": set()}
         for item in assessments:
-            side = "left" if item["document_id"] in left else "right"
+            side = "left" if item["document_id"] in left_set else "right"
             counts[item["lens_id"] + "/" + item["criterion_id"]][side][item["result"]] += 1
             assessed[side].add(item["document_id"])
         analysis = {"run_id": run_id, "run_status": run["status"], "frozen_config_sha256": _hash(json.loads(run["config_json"])),
@@ -146,13 +181,14 @@ def _build_comparison(store, project_id, body, *, actor_id):
                     "notice": "Counts describe retained model decisions, not population prevalence or adjudicated truth. Partial sources and missing decisions remain unresolved."}
     record = {"id": uuid.uuid4().hex, "project_id": project_id, "version": VERSION, "created_at": utcnow(), "created_by": actor_id,
               "question": question.strip(), "status": "matched_descriptive" if pairs else "comparison_not_established",
-              "specification": {"matching_fields": fields, "max_date_gap_days": gap, "left_document_ids": left, "right_document_ids": right},
+              "specification": {"matching_fields": fields, "max_date_gap_days": gap, "left_document_ids": left, "right_document_ids": right,
+                                "pairing": "maximum_cardinality_date_ordered_augmentation"},
               "pairs": pairs, "sources": [metadata[key] for key in sorted(metadata)], "excluded": excluded,
               "summary": {"left_selected": len(left), "right_selected": len(right), "matched_pairs": len(pairs), "excluded_sources": len(excluded)},
               "analysis": analysis, "inference_statistics_enabled": False, "independence_status": "not_established",
               "limitations": ["Matching metadata and relevance are operator declarations, not independently established facts.",
-                              "Matching is deterministic nearest-date greedy one-to-one selection, not optimal or causal matching.",
-                              "Duplicates with identical content hashes are excluded; semantic duplicates and source dependence require review.",
+                              "Pair count is maximized over eligible links using deterministic date-gap ordering. Review the achieved gaps and cohort composition.",
+                              "Exact duplicates contribute one representative per cohort. Content shared across cohorts is excluded. Semantic duplicates and source dependence require review.",
                               "No unmatched-source omission, motive, factuality or individual political-identity verdict follows from this comparison."]}
     record["snapshot_sha256"] = _hash(record)
     encoded = json.dumps(record, ensure_ascii=False, allow_nan=False)

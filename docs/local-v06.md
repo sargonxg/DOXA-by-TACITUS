@@ -31,7 +31,7 @@ Compose enforces a **4 GiB limit over the application container and its worker c
 
 The local profile can be selected with `DOXA_LOCAL_PROFILE=low-memory|standard|server` or the explicit CLI flag. Native standard mode targets a larger 16 GB environment. Compose's explicit environment variables and memory limit remain authoritative: changing its profile label alone does not raise the container limit or parser settings. Resource overrides are reported by the doctor and need a service restart. They are not qualified as the default 8 GB profile.
 
-Windows users should use Docker Desktop/WSL2 for the documented bounded profile. Private managed-pilot provisioning and hardened erasure require POSIX; they are not represented as native Windows guarantees. Linux and macOS host resources, Docker allocation and other running applications affect available memory. Hardware qualification receipts must identify the actual machine and workload before speed or whole-host memory claims are made.
+Native macOS and Windows use the parser subprocess timeout, concurrency limits and format-specific extraction limits. The Linux worker also applies the parser address-space ceiling. Windows users can use Docker Desktop with WSL2 for the documented container memory boundary. Private managed-pilot provisioning and hardened erasure require POSIX. Hardware qualification receipts identify the actual machine and workload before making speed or whole-host memory claims.
 
 ## What the doctor establishes
 
@@ -62,7 +62,7 @@ An `error` produces command exit status 1. Optional capabilities, unknown teleme
 
 No action automatically pulls weights, silently substitutes a smaller model, changes the requested criteria or sends text to a cloud provider. The [bounded local study](local-study-v04.md) found incomplete CPU generation and substantial model disagreement. It does not justify recommending a small generative model as an effective universal bias detector. More demanding analysis remains an explicit, independently evaluated addition.
 
-For a missing Ollama/model, use the existing provider health check and follow its specific installation/configuration result; the doctor itself makes no provider probe. For a scanned document, either configure OCR deliberately or supply text-readable material. For low storage, preserve source/checkpoint data, inspect the scoped workload and free space before resuming. The full corpus, model weights, indexes, retained histories, builds and complete exports can need **30 GB or more** of disk headroom; that figure is separate from the small starter workflow.
+For an Ollama startup or model problem, run `doxa doctor --laptop` to check the expected model through loopback metadata. The default doctor works offline. For a scanned document, either configure OCR deliberately or supply text-readable material. For low storage, preserve source and checkpoint data, inspect the scoped workload and check free space before resuming. The full corpus, model weights, indexes, retained histories, builds and complete exports can need **30 GB or more** of disk headroom. The starter workflow uses a smaller selection.
 
 ## Optional ONNX candidate, not a promoted default
 

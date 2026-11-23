@@ -18,7 +18,7 @@ from collections import defaultdict
 
 from pydantic import ValidationError
 
-from .lenses import CRITERION_REGISTRY_VERSION, get_lens, validate_custom_lens
+from .lenses import CRITERION_REGISTRY_VERSION, SOURCE_SCOPE, get_lens, validate_custom_lens
 from .models import ASSESSMENT_CONTRACT_VERSION, AssessmentDetail, UnitDecision, assessment_schema
 from .providers import ProviderError
 from .lineage import content_sha256
@@ -224,6 +224,12 @@ def _criteria(lenses: list, config: dict) -> tuple[list[dict], dict[str, dict]]:
                              "kind": criterion["kind"], "label": criterion["label"], "description": criterion["description"],
                              "lens_version": pack["version"], "scope": pack.get("scope", ""),
                              "context_rules": pack.get("context_rules", "")}
+            if criterion.get("applicability") == SOURCE_SCOPE:
+                criteria[key]["context_rules"] += (
+                    " This criterion applies to all selected sources. Use does_not_meet for assessable text without"
+                    " the declared signal, and uncertain when the available context is insufficient. Only an"
+                    " unrelated source unit should be not_applicable."
+                )
     if not criteria or len(criteria) > 60:
         raise ValueError("Choose between 1 and 60 explicit criteria")
     return packs, criteria

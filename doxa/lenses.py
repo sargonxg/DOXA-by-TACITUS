@@ -112,6 +112,7 @@ LENSES = [
 ]
 
 CRITERION_REGISTRY_VERSION = "3.0.0"
+SOURCE_SCOPE = "source_scope"
 _BOUNDARIES = {("jda", "political_expression_boundary"), ("nexus", "opposition_boundary")}
 for _lens in LENSES:
     _lens["criterion_registry_version"] = CRITERION_REGISTRY_VERSION
@@ -159,5 +160,11 @@ def validate_custom_lens(value: dict) -> dict:
         kind = criterion.get("kind", "descriptive")
         if kind not in {"indicator", "boundary", "descriptive"}:
             raise ValueError("Criterion kind must be indicator, boundary, or descriptive")
-        normalized.append({"id": cid, "label": label, "description": text, "kind": kind})
+        applicability = criterion.get("applicability")
+        if applicability not in (None, SOURCE_SCOPE):
+            raise ValueError("Use source_scope applicability or leave applicability unspecified")
+        entry = {"id": cid, "label": label, "description": text, "kind": kind}
+        if applicability:
+            entry["applicability"] = applicability
+        normalized.append(entry)
     return {"id": "custom", "name": name, "description": description, "version": str(value.get("version", "1.0"))[:80], "criterion_registry_version": CRITERION_REGISTRY_VERSION, "source_url": "", "scope": "User-authored analytical rubric, not an established or validated scientific definition.", "criteria": normalized, "context_rules": "Ground every finding in exact source evidence. Preserve quotation, attribution, counter-speech and alternative interpretations."}

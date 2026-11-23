@@ -45,8 +45,11 @@ def verify(root=ROOT):
     documents = [root / name for name in ("README.md", "CONTRIBUTING.md", "CHANGELOG.md", "benchmarks/README.md", "frontend/README.md")]
     documents += sorted((root / "docs").glob("*.md"))
     for document in documents:
-        for match in re.finditer(r'!?\[[^\]]*\]\(([^\s)]+)(?:\s+[^)]*)?\)', document.read_text()):
-            target = match.group(1).strip("<>").split("#")[0]
+        markdown = document.read_text(encoding="utf-8")
+        targets = re.findall(r'!?\[[^\]]*\]\(([^\s)]+)(?:\s+[^)]*)?\)', markdown)
+        targets.extend(re.findall(r'<img\b[^>]*\bsrc="([^"]+)"', markdown))
+        for target in targets:
+            target = target.strip("<>").split("#")[0]
             if not target or "://" in target or target.startswith(("mailto:", "/")):
                 continue
             target = target.split("?")[0]

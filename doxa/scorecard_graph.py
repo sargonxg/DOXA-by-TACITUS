@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from collections import defaultdict
 import json
 from pathlib import Path
 from urllib.parse import quote
@@ -41,6 +42,8 @@ def to_graph(snapshot):
         criterion = cards[cell["criterion"]]
         node = {"@id": identity, "@type": "doxa:SourceCriterion", "source": source_id, "criterion": criterion,
                 "status": cell["status"], "planned": cell["planned"], "retained": cell["retained"]}
+        if cell.get("scope_note"):
+            node["scopeNote"] = cell["scope_note"]
         evidence = cell.get("evidence")
         if evidence:
             passage = _id("passage", content_hash([source_id, evidence["block_id"], evidence["start"], evidence["end"]]))
@@ -70,13 +73,51 @@ def criterion_rate(graph, key):
             "rate": positive / determinate if determinate else None}
 
 
+def verify_projection(graph, snapshot):
+    """Check a graph against its frozen scorecard and recalculate the chart totals."""
+    expected_hash = content_hash({field: value for field, value in snapshot.items() if field != "snapshot_sha256"})
+    if snapshot.get("snapshot_sha256") != expected_hash:
+        raise ValueError("Scorecard checksum mismatch")
+    expected = to_graph(snapshot)
+    nodes = {node["@id"]: node for node in graph["@graph"]}
+    if (len(nodes) != len(graph["@graph"]) or graph.get("@context") != expected["@context"]
+            or nodes != {node["@id"]: node for node in expected["@graph"]}):
+        raise ValueError("Graph nodes or links differ from the frozen scorecard")
+    from .scorecards import _summary
+    cells = defaultdict(list)
+    for cell in snapshot["matrix"]:
+        cells[cell["criterion"]].append(cell)
+    keys = [row["key"] for row in snapshot["criteria"]]
+    if len(keys) != len(set(keys)) or set(keys) != set(cells):
+        raise ValueError("Scorecard criteria differ from the frozen source matrix")
+    for criterion in snapshot["criteria"]:
+        key = criterion["key"]
+        computed = _summary(cells[key])
+        if any(field not in criterion or criterion[field] != value
+               for field, value in computed.items() if field != "unresolved_range" or field in criterion):
+            raise ValueError(f"Scorecard totals differ from the frozen observations for {key}")
+    return {"verified": True, "snapshot_sha256": expected_hash, "nodes": len(nodes),
+            "criteria_checked": len(snapshot["criteria"])}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("graph", type=Path)
-    parser.add_argument("criterion")
+    parser.add_argument("criterion", nargs="?")
+    parser.add_argument("--verify", type=Path, metavar="SCORECARD", help="Check the graph against the saved scorecard")
     args = parser.parse_args()
+    if not args.criterion and not args.verify:
+        parser.error("Supply a criterion ID or --verify SCORECARD")
     try:
-        print(json.dumps(criterion_rate(json.loads(args.graph.read_text(encoding="utf-8")), args.criterion), indent=2))
+        graph = json.loads(args.graph.read_text(encoding="utf-8"))
+        result = {}
+        if args.verify:
+            result.update(verify_projection(graph, json.loads(args.verify.read_text(encoding="utf-8"))))
+        if args.criterion:
+            result.update(criterion_rate(graph, args.criterion))
+        print(json.dumps(result, indent=2))
+    except (OSError, ValueError) as error:
+        parser.error(str(error))
     except (StopIteration, KeyError):
         parser.error("The graph does not contain this scorecard criterion.")
 

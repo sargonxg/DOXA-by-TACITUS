@@ -157,7 +157,11 @@ Before serving a restored database and its matching objects, startup applies the
 
 ## Installed wheel and external demonstration data
 
-The release wheel contains the compiled browser app, Python engine and local study examples. From an empty directory, install the downloaded wheel with `python -m pip install ./doxa_by_tacitus-0.9.0-py3-none-any.whl`, then run `doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data`. Python dependencies install with the wheel. Docker supplies the system libraries for PDF rendering. [Release files](https://github.com/sargonxg/DOXA-by-TACITUS/releases/latest)
+The release wheel contains the compiled browser app, Python engine and local study examples. The quickstart gives native installation commands for macOS, Linux and Windows PowerShell. The isolated wheel checks on these operating systems cover starting the app, importing the Civic Square archive, preserving caption cue times, verifying the evidence graph, and producing an XLSX report. [Native quickstart](../README.md#start-locally) · [Release files](https://github.com/sargonxg/DOXA-by-TACITUS/releases/latest)
+
+Run `doxa doctor --json --data-dir ./doxa-data` to check the local app. Add `--laptop` after installing and starting Ollama to check the required Q4 model and its digest via loopback metadata. The option sends no documents and performs no inference. It returns a failing exit status when the local Ollama service or the required model is unavailable.
+
+Generating a fresh scorecard PDF requires WeasyPrint's native dependencies. Follow the operating-system installation guide, then use `python -c "import weasyprint; print(weasyprint.__version__)"` in the same virtual environment to check that its native libraries load. You can browse bundled PDFs and export offline HTML or XLSX without installing those native PDF libraries. Docker supplies the PDF libraries in its image. [WeasyPrint setup for macOS, Linux and Windows](https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation)
 
 The wheel includes five clearly fictional practice texts and the small read-only recorded starter. The complete corpora and original result packages remain repository/release artifacts rather than inflating the application wheel. To expose those import collections from an installed application, set `DOXA_ASSET_ROOT` to a clone of this repository containing `corpus/` and `benchmarks/`. Keep `--data-dir` separate for your mutable workspace. The installed UI is always loaded from the wheel; external data does not replace it.
 

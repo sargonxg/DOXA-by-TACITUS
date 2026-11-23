@@ -35,6 +35,25 @@ def test_nearest_date_pairs_and_missing_eligibility_are_explicit(store):
     assert result["summary"]["excluded_sources"] == 2
 
 
+def test_matching_recovers_a_pair_that_nearest_dates_alone_miss(store):
+    for identity, day in (("a", 10), ("b", 8), ("c", 10), ("d", 12)):
+        source(store, identity, day=f"2026-02-{day:02d}")
+    result = build_comparison(store, "p", {"left_document_ids": ["a", "b"],
+                                           "right_document_ids": ["c", "d"], "max_date_gap_days": 2})
+    assert [(pair["left_document_id"], pair["right_document_id"]) for pair in result["pairs"]] == [("a", "d"), ("b", "c")]
+    assert not result["excluded"]
+
+
+def test_duplicate_content_does_not_add_cohort_votes(store):
+    for identity, digest in (("a", "one"), ("a-copy", "one"), ("b", "two"), ("c", "three"), ("c-copy", "three")):
+        source(store, identity, digest=digest)
+    result = build_comparison(store, "p", {"left_document_ids": ["a-copy", "c", "a"],
+                                           "right_document_ids": ["b", "c-copy"]})
+    assert [(pair["left_document_id"], pair["right_document_id"]) for pair in result["pairs"]] == [("a", "b")]
+    assert {item["document_id"]: item["reason"] for item in result["excluded"]} == {
+        "a-copy": "duplicate_content", "c": "content_in_both_cohorts", "c-copy": "content_in_both_cohorts"}
+
+
 @pytest.mark.parametrize("change", [{"event": "other event"}, {"day": None}, {"family": "a"}, {"digest": "a"}])
 def test_unmatched_dates_events_same_family_and_duplicates_are_not_comparisons(store, change):
     source(store, "a")

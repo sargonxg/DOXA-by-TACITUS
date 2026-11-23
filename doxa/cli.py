@@ -27,7 +27,10 @@ def main(argv=None):
     parser.add_argument("--local-profile", choices=["low-memory", "standard", "server"],
                         help="Explicit operational profile; no model selection or download")
     parser.add_argument("--json", action="store_true", help="Machine-readable doctor output")
+    parser.add_argument("--laptop", action="store_true", help="Check the local Ollama model with doxa doctor")
     args = parser.parse_args(argv)
+    if args.command != "doctor" and args.laptop:
+        parser.error("--laptop is available with doxa doctor")
     if args.env_file:
         try:
             load_private_environment(args.env_file)
@@ -42,6 +45,24 @@ def main(argv=None):
             report = readiness(args.data_dir, environ=environment)
         except ValueError as error:
             parser.error(str(error))
+        if args.laptop:
+            import asyncio
+            from .laptop import ENDPOINT, MODEL, PROFILE
+            from .providers import OllamaProvider
+            if environment.get("DOXA_CLOUD_STATE_URL"):
+                health = {"ok": False, "details": "The laptop preset needs native workspace storage."}
+            else:
+                health = asyncio.run(OllamaProvider({"model": MODEL, "execution_profile": PROFILE}).health())
+                report.update(provider_probe_performed=True, network_requests=1)
+            report["laptop"] = {"endpoint": ENDPOINT, "model": MODEL, "ok": health["ok"],
+                                "revision": health.get("revision"), "quantization": health.get("quantization")}
+            model_check = {"status": "ok" if health["ok"] else "error", "message": health["details"], "id": "laptop_model"}
+            if not health["ok"] and report["provider_probe_performed"]:
+                model_check["action"] = f"Start Ollama locally and run ollama pull {MODEL}."
+            report["checks"].append(model_check)
+            report["ok"] = report["ok"] and health["ok"]
+            report["notice"] = ("The laptop check queries local model metadata on loopback. "
+                                "It performs no inference or model download.")
         if args.json:
             print(json.dumps(report, indent=2))
         else:
