@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.9.2 — 2026-11-23
+
+- Introduce DOXA's pixel reader owl in the workbench header, empty states, explanation pages and GitHub README.
+- Bundle the canonical transparent WebP in the installed application and document its use across the TACITUS product family.
+
 ## 0.9.1 — 2026-11-23
 
 - Add a native Ollama readiness check and an import-ready Civic Square archive with timed caption sources.

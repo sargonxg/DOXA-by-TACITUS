@@ -4,10 +4,10 @@ import {
   ArrowLeft,
   ArrowRight,
   CircleHelp,
-  FileSearch,
   LoaderCircle,
   X,
 } from "lucide-react";
+import { DoxaCompanion } from "./DoxaCompanion";
 export const number = (value: unknown) =>
   new Intl.NumberFormat("en", { maximumFractionDigits: 0 }).format(
     Number(value) || 0,
@@ -103,7 +103,7 @@ export function Empty({
 }) {
   return (
     <div className="w-empty">
-      <FileSearch size={26} strokeWidth={1.3} />
+      <DoxaCompanion className="doxa-companion--empty" />
       <strong>{title}</strong>
       <div className="w-empty-copy">{children}</div>
     </div>
