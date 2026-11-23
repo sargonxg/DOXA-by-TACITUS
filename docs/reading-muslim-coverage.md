@@ -2,7 +2,7 @@
 
 **Who is speaking when a news story contains an account of prejudice?** In this sample, DOXA’s recorded model flagged passages in **14 of 60 articles**. Of the **49 flagged decisions**, it attributed 44 to reported speakers, one to a quoted speaker and four to article authors. Reporting that a student experienced discrimination can trigger a flag. A reader has to examine what the writer actually says about that treatment.
 
-**[Open the interactive study](https://doxa-public-study.giuliocatanzariti.workers.dev/)** · [Nine-page PDF](../frontend/public/studies/muslim-coverage/report.pdf) · [Complete evidence workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx) · [60 attributed texts and original decisions](../frontend/public/studies/muslim-coverage/sources.zip) · [Manifest and checksums](../examples/muslim-coverage.manifest.json).
+**[Open the interactive study](https://doxa-public-study.giuliocatanzariti.workers.dev/)** · [Study PDF](../frontend/public/studies/muslim-coverage/report.pdf) · [Complete evidence workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx) · [60 attributed texts and original decisions](../frontend/public/studies/muslim-coverage/sources.zip) · [Manifest and checksums](../examples/muslim-coverage.manifest.json).
 
 ![Study dashboard showing the two frameworks and the article counts for each of six criteria.](images/muslim-coverage-dashboard.png)
 
@@ -13,6 +13,13 @@
 3. **An apparent absence worth checking.** A report about a Uyghur mother describes how mainstream media portrayed Uyghurs as “motherland separatists” or “terrorists.” The model marked the group-stereotyping criterion unmet for that unit. The reader identifies the exact sentence and preceding group description. An independent reviewer would need to examine the intersection of ethnic and religious targeting. This example illustrates one way a model can miss a passage. [Original article](https://globalvoices.org/2020/12/04/dont-come-back-or-you-will-disappear-uyghur-mother-pleads-with-her-daughter-abroad/).
 
 The walkthroughs are AI-authored editorial readings. The original article, exact quotation, recorded model rationale when available, and alternative interpretation remain separately identifiable. The two possible errors have no independent adjudication.
+
+## Review a reading
+
+1. **State the criterion before opening the outcome.** In the school case, write down what would satisfy an unequal-treatment reading and what would support an institutional pattern. The second question needs evidence about a pattern of decisions or practices. [School case](https://doxa-public-study.giuliocatanzariti.workers.dev/#case-school-hijab)
+2. **Read the full paragraph and the adjacent context.** Identify the person who reportedly imposed the condition and how the author represented it. Record whether the surrounding account changes the target, the author's position or the evidence for repetition.
+3. **Write an independent outcome with a passage.** Save the original words and the location. Identify what additional evidence would resolve uncertainty. Once you have written your reading, compare it with the archived decision and the editorial question. [Graph record and offline query](evidence-graph.md)
+4. **Compare independent readings at the article or story level.** For a validation study, preregister the frame and required evidence, recruit qualified independent reviewers, record first-pass outcomes before showing model outputs, and retain adjudication and disagreements. Report results by criterion with the number of independent groups, unresolved cases and coverage. [Reference panels and evaluation gates](methodology-v06.md)
 
 ## What the model counted
 
@@ -28,6 +35,22 @@ The walkthroughs are AI-authored editorial readings. The original article, exact
 A row counts an article once even if several passages triggered the same criterion. A story may appear in several rows. Within a row the article states are mutually exclusive. A flag takes priority, followed by missing decisions, an uncertain decision, at least one checked unit without a flag, and all units outside the criterion. The workbook retains uncertainty even when another unit in the article triggered a flag.
 
 Across **137 source units and 822 decisions**, the original model recorded **49 flags, 11 uncertain, 525 criterion unmet and 237 outside the criterion**. The 11 uncertain decisions occurred in eight articles. All 822 expected decisions for the selected six criteria are present. The wider 5,000-article parent run recorded 79 missing decisions. There are no independent human labels for the selected readings.
+
+## Sensitivity within the selected articles
+
+Two checks clarify how the design affects each criterion count. First, add every
+as-yet unflagged article whose criterion is uncertain or has missing decisions.
+This is the maximum if those unresolved rows all became flags. Already-flagged
+articles contribute once. For institutional practice, the observed count is
+**3 of 60** and that scenario gives **8 of 60**.
+
+Second, rerun the observed count six times, dropping one publication year each
+time. Compare the resulting fractions against the retained 50 articles. This
+shows whether one year's ten articles drive the count in this selection. The
+workbook records all six exclusions for each criterion so readers can inspect
+which year changes the count. Both checks retain the saved model decisions and
+make no inference about a wider population or the frequency of model error.
+[Interactive table](https://doxa-public-study.giuliocatanzariti.workers.dev/#sensitivity)
 
 ## How the 60 articles were selected
 
@@ -54,9 +77,9 @@ DOXA reused the archived Gemma readings from the same source versions. It checke
 
 ## Open it locally or reproduce it
 
-In DOXA v0.6.1, choose **Read the 60-article study** on the main dashboard. Select a criterion to see matching articles, inspect the six annotated cases, or download the data. The example runs without a model, credentials or an upload. The [mobile reader](images/muslim-coverage-mobile.png) supports the same workflow.
+In DOXA v0.7.0, choose **Read the 60-article study** on the main dashboard. Select a criterion, filter by publication year and follow a case to its frozen method and exact passage. The reader opens without a model, credentials or an upload. [Mobile reader](images/muslim-coverage-mobile.png)
 
-For standalone use, unzip the **offline study** from the release and open `index.html` in a browser. Keep the sibling reader script, PDF, workbook and source ZIP together for local downloads. The source ZIP includes 60 original attributed TXT files and `study.json`, with source blocks, the six original rubric criteria, unit statuses, full selected model records, archive locators and editorial notes. Other criteria from the parent run are available in the original archive. [Release downloads](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.6.1).
+For standalone use, unzip the **offline study** from the release and open `index.html` in a browser. Keep the sibling reader script, PDF, workbook, source ZIP and JSON-LD graph together for local downloads. The source ZIP includes 60 original attributed TXT files and `study.json`, with source blocks, the six original rubric criteria, unit statuses, full selected model records, archive locators and editorial notes. Other criteria from the parent run are available in the original archive. [Release downloads](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.7.0)
 
 From a repository checkout with DOXA’s Python dependencies installed, verify the edition against the frozen corpus:
 
@@ -64,6 +87,6 @@ From a repository checkout with DOXA’s Python dependencies installed, verify t
 python scripts/build_bias_study.py
 ```
 
-Use `--write` to regenerate it. The default command reselects the articles, verifies the original analysis, reproduces the dashboard and uncompressed archive contents, and checks the distributed file hashes. PDF rendering depends on installed fonts and library versions. [Study builder](../scripts/build_bias_study.py).
+Use `--write` to regenerate it or `--offline-zip /tmp/doxa-study.zip` to package the verified edition. The default command reselects the articles, verifies the original analysis, reproduces the graph, dashboard and uncompressed archive contents, and checks the distributed file hashes. PDF rendering depends on installed fonts and library versions. [Study builder](../scripts/build_bias_study.py)
 
-The public reader serves the released HTML, local filtering script, and three downloads from a dedicated Cloudflare Worker. Local DOXA reads its packaged copy. The Worker accepts GET and HEAD for the study and downloads. The deploy configuration and source live next to the main application’s Cloudflare recipe. [Public reader configuration](../infra/cloudflare/wrangler.study.jsonc).
+The public reader serves the released HTML, filtering script and four downloads from a dedicated Cloudflare Worker. Local DOXA reads its packaged copy. The Worker accepts GET and HEAD for the study and downloads. [Public reader configuration](../infra/cloudflare/wrangler.study.jsonc)

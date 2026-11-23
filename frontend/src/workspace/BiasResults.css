@@ -332,6 +332,26 @@
   margin-top: 20px;
   font-size: 14px;
 }
+.w-study-trace {
+  overflow-wrap: anywhere;
+  font-size: 0.85rem;
+}
+.w-study-table {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+.w-study-table table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.875rem;
+}
+.w-study-table th,
+.w-study-table td {
+  padding: 0.45rem;
+  border-bottom: 1px solid #c5d4cc;
+  text-align: left;
+  vertical-align: top;
+}
 @media (max-width: 650px) {
   .w-study-charts {
     grid-template-columns: minmax(0, 1fr);

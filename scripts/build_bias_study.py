@@ -15,6 +15,8 @@ sys.path.insert(0, str(ROOT))
 
 from doxa.recorded_starter import canonical_hash  # noqa: E402
 from scripts.bias_study.cohort import freeze, summarize, STATE_LABELS  # noqa: E402
+from scripts.bias_study.diagnostics import sensitivity  # noqa: E402
+from scripts.bias_study.graph import build_graph, case_trace, graph_counts, graph_index  # noqa: E402
 from scripts.bias_study.publication import html, reader_data  # noqa: E402
 from scripts.bias_study.readings import cases, REFERENCES  # noqa: E402
 
@@ -22,7 +24,7 @@ PUBLIC = ROOT / "frontend/public/studies/muslim-coverage"
 MANIFEST = ROOT / "examples/muslim-coverage.manifest.json"
 
 
-def workbook(study, summary, readings):
+def workbook(study, summary, readings, diagnostics):
     import xlsxwriter
 
     buff = io.BytesIO()
@@ -51,12 +53,13 @@ def workbook(study, summary, readings):
 
     metrics = sheet(
         "Findings",
-        ["Criterion", "Framework", *STATE_LABELS.values(), "All articles"],
-        [52, 27, 15, 21, 22, 30, 24, 15],
+        ["Criterion", "Framework", *STATE_LABELS.values(), "All articles", "Frozen rule"],
+        [52, 27, 15, 21, 22, 30, 24, 15, 95],
     )
     for i, (key, row) in enumerate(summary["criteria"].items(), 1):
         metrics.write_row(
-            i, 0, [row["label"], row["lens"], *[row["states"][k] for k in STATE_LABELS], summary["articles"]]
+            i, 0, [row["label"], row["lens"], *[row["states"][k] for k in STATE_LABELS],
+                   summary["articles"], row["definition"]]
         )
     metrics.write(9, 0, "Article counts overlap across criteria.")
     metrics.write(
@@ -251,6 +254,27 @@ def workbook(study, summary, readings):
     research.write(
         12, 1, "Recorded model readings. The six AI-authored walkthroughs are editorial interpretations."
     )
+    coverage = sheet(
+        "Sensitivity",
+        ["Criterion", "Articles", "Observed flags", "Uncertain without flag", "Incomplete without flag",
+         "If all unresolved were flagged"],
+        [55, 14, 17, 26, 27, 34],
+    )
+    omissions = sheet("Year omissions", ["Criterion", "Year omitted", "Flags", "Articles", "Fraction"],
+                      [55, 17, 12, 14, 14])
+    ratio = book.add_format({"num_format": "0.0%"})
+    omission_row = 1
+    for i, (key, record) in enumerate(diagnostics.items(), 1):
+        label = summary["criteria"][key]["label"]
+        coverage.write_row(i, 0, [label, record["articles"], record["observed_flags"],
+                                  record["uncertain_without_flag"], record["incomplete_without_flag"],
+                                  record["if_all_unresolved_flagged"]])
+        for row in record["year_omissions"]:
+            omissions.write_row(omission_row, 0, [label, int(row["excluded_year"]), row["flagged"], row["articles"]])
+            omissions.write_number(omission_row, 4, row["flagged"] / row["articles"], ratio)
+            omission_row += 1
+    coverage.write(len(diagnostics) + 2, 0, "Scenarios describe this cohort. They are not accuracy estimates.")
+    omissions.autofilter(0, 0, omission_row - 1, 4)
     book.close()
     return buff.getvalue()
 
@@ -265,7 +289,7 @@ def evidence_zip(study, readings):
         archive.writestr(info, content)
 
     notes = [
-        {k: c[k] for k in ("heading", "reading", "followup", "anchor_origin")}
+        {k: c[k] for k in ("slug", "heading", "reading", "followup", "anchor_origin")}
         | {
             "document": c["doc"]["id"],
             "assessment": c["decision"]["id"],
@@ -299,30 +323,44 @@ def main():
         action="store_true",
         help="Replace the published artifacts. Default verifies the checked-in study.",
     )
+    parser.add_argument("--offline-zip", type=Path, help="Package the verified study for offline reading.")
     args = parser.parse_args()
     study = freeze(ROOT)
     summary = summarize(study)
     readings = cases(study)
-    screen = html(study, summary, readings).encode()
+    diagnostics = sensitivity(study, summary)
+    graph = build_graph(study, readings)
+    index = graph_index(graph)
+    traces = {
+        node["recordId"]: case_trace(node, index)
+        for node in index.values() if "doxa:EditorialNote" in node["@type"]
+    }
+    counts = graph_counts(graph)
+    if (counts["Decision"], counts["SourceVersion"], counts["EvidenceReference"]) != (
+        summary["decisions"], summary["articles"], summary["references"],
+    ):
+        raise ValueError("Evidence graph does not account for the frozen record counts")
+    screen = html(study, summary, readings, traces, diagnostics).encode()
     evidence = evidence_zip(study, readings)
     reader = json.dumps(
-        reader_data(study, summary, readings), ensure_ascii=False, separators=(",", ":")
+        reader_data(study, summary, readings, traces, diagnostics), ensure_ascii=False, separators=(",", ":")
     ).encode()
-    public_names = ["index.html", "reader.js", "reader.json", "report.pdf", "evidence.xlsx", "sources.zip"]
+    graph_bytes = json.dumps(graph, ensure_ascii=False, separators=(",", ":")).encode() + b"\n"
+    generated = {"reader.json": reader, "index.html": screen, "evidence.jsonld": graph_bytes}
+    public_names = ["index.html", "reader.js", "reader.json", "report.pdf", "evidence.xlsx", "sources.zip", "evidence.jsonld"]
     if args.write:
         from weasyprint import HTML
 
         PUBLIC.mkdir(parents=True, exist_ok=True)
-        (PUBLIC / "reader.json").write_bytes(reader)
-        (PUBLIC / "index.html").write_bytes(screen)
-        (PUBLIC / "report.pdf").write_bytes(
-            HTML(string=html(study, summary, readings, printing=True)).write_pdf()
-        )
-        (PUBLIC / "evidence.xlsx").write_bytes(workbook(study, summary, readings))
-        (PUBLIC / "sources.zip").write_bytes(evidence)
+        print_html = html(study, summary, readings, traces, diagnostics, printing=True)
+        pdf = HTML(string=print_html).write_pdf(pdf_tags=True)
+        sheets = workbook(study, summary, readings, diagnostics)
+        for name, data in {**generated, "report.pdf": pdf, "evidence.xlsx": sheets, "sources.zip": evidence}.items():
+            (PUBLIC / name).write_bytes(data)
     else:
-        if (PUBLIC / "reader.json").read_bytes() != reader or (PUBLIC / "index.html").read_bytes() != screen:
-            raise ValueError("Published dashboard no longer matches the corpus and commentary")
+        for name, expected in generated.items():
+            if (PUBLIC / name).read_bytes() != expected:
+                raise ValueError(f"{name} no longer matches the frozen corpus and commentary")
         # Decompressed member equality is portable across zlib versions.
         with ZipFile(io.BytesIO(evidence)) as expected, ZipFile(PUBLIC / "sources.zip") as actual:
             if actual.namelist() != expected.namelist() or any(
@@ -335,6 +373,8 @@ def main():
         "parent": study["parent"],
         "counts": {k: v for k, v in summary.items() if k != "article_states"},
         "article_states_sha256": canonical_hash(summary["article_states"]),
+        "graph_counts": counts,
+        "sensitivity": diagnostics,
         "case_ids": [c["decision"]["id"] for c in readings],
         "fresh_inference_requests": 0,
         "independent_human_labels": False,
@@ -354,6 +394,22 @@ def main():
         MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     elif json.loads(MANIFEST.read_text()) != manifest:
         raise ValueError("Published artifact checksums or metrics differ from the checked-in manifest")
+    if args.offline_zip:
+        with ZipFile(args.offline_zip, "w", ZIP_DEFLATED) as package:
+            package.writestr(
+                "START-HERE.txt",
+                "Open index.html in a browser with all sibling files in the same folder.\n"
+                "Choose Follow the evidence to inspect a worked example. The report, workbook,\n"
+                "source ZIP and JSON-LD graph can be opened without a DOXA installation.\n"
+                "The archive contains recorded model readings and six AI-authored notes.\n"
+                "Independent reference labels are unavailable.\n",
+            )
+            package.writestr(
+                "SHA256SUMS.txt",
+                "".join(f"{row['sha256']}  {Path(row['file']).name}\n" for row in manifest["files"]),
+            )
+            for name in public_names:
+                package.write(PUBLIC / name, name)
     print(
         json.dumps(
             {

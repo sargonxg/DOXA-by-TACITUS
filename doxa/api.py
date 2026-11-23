@@ -1823,6 +1823,15 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     if assets.exists():
         app.mount("/assets", StaticFiles(directory=assets), name="assets")
 
+    @app.api_route("/studies/{path:path}", methods=["GET", "HEAD"], include_in_schema=False)
+    def study_artifact(path: str):
+        root = (distribution / "studies").resolve()
+        artifact = (root / path).resolve()
+        if not artifact.is_relative_to(root) or not artifact.is_file():
+            raise HTTPException(404, "Study artifact not found")
+        media_type = "application/ld+json" if artifact.suffix == ".jsonld" else None
+        return FileResponse(artifact, media_type=media_type)
+
     @app.get("/{path:path}")
     def frontend(path: str):
         if path.startswith(("api/", "internal/")):

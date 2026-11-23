@@ -36,12 +36,36 @@ def credit(doc):
     return f"{escape(doc['author'])}{translation} · Global Voices · {doc['published_at'][:10]} · {link('CC BY 3.0', doc['license_url'])}"
 
 
-def case_html(case, printing):
+def trace_data(trace):
+    node, rule, source, passage = (
+        trace["decision"], trace["criterion"], trace["source"], trace["passage"],
+    )
+    return {
+        "decision": node["recordId"],
+        "criterion": rule["recordId"],
+        "rule": rule["rule"],
+        "framework": trace["framework"]["title"],
+        "version": trace["framework"]["version"],
+        "source": source["recordId"],
+        "source_hash": source["contentSha256"],
+        "run": trace["run"]["recordId"],
+        "model": trace["run"]["model"],
+        "passage": passage["@id"],
+    }
+
+
+def case_html(case, graph_trace, printing):
     row, ref, doc = case["decision"], case["ref"], case["doc"]
+    trace = trace_data(graph_trace)
     extra = ""
     if peer := case["peer"]:
-        extra = f"<p><b>Second reading on this passage.</b> {escape(TITLES[peer['criterion_id']])} — {escape(RESULT_LABELS[peer['result']].lower())}.</p>"
-    technical = ""
+        extra = f"<p><b>Second decision for this unit.</b> {escape(TITLES[peer['criterion_id']])} · {escape(RESULT_LABELS[peer['result']].lower())}.</p>"
+    rule = escape(trace["rule"])
+    position = f"{escape(ref['block_id'])} · characters {ref['start']}–{ref['end']}"
+    technical = (
+        f"<p class='case-provenance'><b>Frozen criterion.</b> {rule}<br>"
+        f"<small>{escape(trace['framework'])} {escape(trace['version'])} · {position}</small></p>"
+    )
     if not printing:
         rationale = (
             row.get("explanation")
@@ -49,17 +73,22 @@ def case_html(case, printing):
         )
         alternative = row.get("alternative")
         technical = (
-            "<details><summary>Source paragraph and original model record</summary>"
+            "<details><summary>Evidence path and original model record</summary>"
+            + technical
+            + f"<p class='meta'>Decision {escape(trace['decision'])} · run {escape(trace['run'])} · "
+            f"{escape(trace['model'])}. Source version SHA-256 {escape(trace['source_hash'])}.</p>"
             f"<blockquote>{escape(case['context'])}</blockquote><p><b>Saved explanation.</b> {escape(rationale)}</p>"
             + (f"<p><b>Model’s alternative.</b> {escape(alternative)}</p>" if alternative else "")
-            + f"<p class='meta'>Assessment {row['id']} · {ref['block_id']} · characters {ref['start']}–{ref['end']}.</p></details>"
+            + "</details>"
         )
     return (
-        f"<article class='case'><div class='case-label'>{escape(case['result_label'])} · {escape(TITLES[row['criterion_id']])}</div>"
+        f"<article class='case' id='case-{case['slug']}'><div class='case-label'>Recorded model outcome · "
+        f"{escape(case['result_label'])} · {escape(TITLES[row['criterion_id']])}</div>"
         f"<h3>{escape(case['heading'])}</h3><p>{link(doc['title'], doc['source_url'])}<br><small>{credit(doc)}</small></p>"
-        f"<blockquote>{escape(ref['quote'])}</blockquote><small>{escape(case['anchor_origin'])}. "
+        f"<blockquote>{escape(graph_trace['passage']['exact'])}</blockquote><small>{escape(case['anchor_origin'])}. "
         f"Recorded voice · {escape(VOICE.get(row['attribution'], row['attribution']))}.</small>"
-        f"<p>{escape(case['reading'])}</p>{extra}<p><b>Review question.</b> {escape(case['followup'])}</p>{technical}</article>"
+        f"<p><b>Editorial reading.</b> {escape(case['reading'])}</p>{extra}"
+        f"<p><b>Review question.</b> {escape(case['followup'])}</p>{technical}</article>"
     )
 
 
@@ -84,6 +113,33 @@ def chart(summary, printing):
             )
         parts.append("</div>")
     return "".join(parts)
+
+
+def sensitivity_table(diagnostics):
+    rows = []
+    for criterion, record in diagnostics.items():
+        omissions = record["year_omissions"]
+        leave_out = "—"
+        if omissions:
+            low, high = omissions[0], omissions[-1]
+            leave_out = f"{low['flagged']}/{low['articles']} to {high['flagged']}/{high['articles']}"
+        rows.append(
+            f"<tr><th scope='row'>{escape(TITLES[criterion])}</th>"
+            f"<td>{record['observed_flags']}/{record['articles']}</td>"
+            f"<td>{record['if_all_unresolved_flagged']}/{record['articles']}</td>"
+            f"<td>{leave_out}</td></tr>"
+        )
+    return (
+        "<h2 id='sensitivity-title'>How much do unresolved readings matter?</h2>"
+        "<p>The maximum counts each as-yet unflagged article with missing or uncertain decisions as a flag. "
+        "The last column drops one publication year at a time and compares the observed fractions.</p>"
+        "<div class='table-scroll' tabindex='0' role='region' aria-labelledby='sensitivity-title'><table>"
+        "<thead><tr><th scope='col'>Criterion</th><th scope='col'>Observed flags</th>"
+        "<th scope='col'>All unresolved flagged</th><th scope='col'>One year omitted</th>"
+        "</tr></thead><tbody>" + "".join(rows) + "</tbody></table></div>"
+        "<p class='caption'>These calculations describe the selected articles and keep the recorded readings fixed. "
+        "They give no error rate or interval for a broader population.</p>"
+    )
 
 
 def methods(study, summary):
@@ -125,7 +181,7 @@ def directory(study, summary, printing):
             "<h2>Source register</h2><p>All 60 texts were analysed. Each title opens its original article. Source paragraphs were extracted from the English edition. "
             "The workbook and source archive retain the complete credits and article-level results.</p>"
             + "".join(
-                f"<div class='print-reg'>{link(d['title'], d['source_url'])}<small>{credit(d)}</small></div>"
+                f"<div class='print-reg'>{link(d['title'], d['source_url'])}<small>{credit(d)} · {d['id']}</small></div>"
                 for d in study["documents"]
             )
         )
@@ -133,17 +189,22 @@ def directory(study, summary, printing):
     crit_options = "".join(f"<option value='{k}'>{escape(v)}</option>" for k, v in TITLES.items())
     parts = [
         f"<h2>Explore all {summary['articles']} articles</h2><p>Open a title to see how the model read each criterion. The source archive includes all the attributed texts.</p>",
-        "<div class='controls js-only'><label>Find a title or author<input id='search' type='search'></label>"
+        "<div class='controls js-only'><label>Find a title or credit<input id='search' type='search'></label>"
         f"<label>Criterion<select id='criterion'><option value=''>Any criterion</option>{crit_options}</select></label>"
         f"<label>Article reading<select id='outcome'><option value=''>Any reading</option>{state_options}</select></label>"
+        "<label>Publication year<select id='year'><option value=''>Any year</option>"
+        + "".join(f"<option>{year}</option>" for year in sorted({d["published_at"][:4] for d in study["documents"]}))
+        + "</select></label>"
         "<button id='reset' class='more' type='button'>Clear filters</button></div><p class='meta' id='shown' role='status'></p>",
     ]
     for d in study["documents"]:
         states = summary["article_states"][d["id"]]
         flags = sum(v == "flagged" for v in states.values())
+        search = " ".join([d["title"], d["author"], *[t["name"] for t in d["translators"]]])
         parts.append(
             f"<details class='register-item' data-states='{escape(json.dumps(states), quote=True)}' "
-            f"data-search='{escape(d['title'] + ' ' + d['author'], quote=True)}'><summary>{escape(d['title'])}</summary>"
+            f"data-year='{d['published_at'][:4]}' data-search='{escape(search, quote=True)}'>"
+            f"<summary>{escape(d['title'])}</summary>"
             f"<small>{credit(d)}</small><p>{flags} of six criteria flagged at least once in this article. {link('Read the original article', d['source_url'])}.</p>"
         )
         for k, state in states.items():
@@ -166,7 +227,7 @@ def directory(study, summary, printing):
     return "".join(parts)
 
 
-def html(study, summary, cases, *, printing=False):
+def html(study, summary, cases, traces, diagnostics, *, printing=False):
     css = (HERE / "reader.css").read_text()
     n = summary["articles"]
     voice = summary["flag_voices"]
@@ -179,20 +240,28 @@ def html(study, summary, cases, *, printing=False):
     )
     downloads = (
         "<div class='downloads'><a href='report.pdf' download>Download PDF</a>"
-        "<a href='evidence.xlsx' download>Download workbook</a><a href='sources.zip' download>Download 60 texts and decisions</a></div>"
+        "<a href='evidence.xlsx' download>Download workbook</a><a href='sources.zip' download>Download 60 texts and decisions</a>"
+        "<a href='evidence.jsonld' download>Download evidence graph</a></div>"
     )
     parts = [
         "<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>",
         "<meta http-equiv='Content-Security-Policy' content=\"default-src 'none'; style-src 'unsafe-inline'; script-src 'self'; base-uri 'none'; form-action 'none'\">",
         f"<title>{TITLE} | DOXA by TACITUS</title><meta name='author' content='DOXA by TACITUS'><style>{css}</style></head><body>",
         "<header><div class='brand'>DOXA by TACITUS <span>Field study · Global Voices · 2020–2025</span></div>",
-        "<nav aria-label='Study sections'><a href='#signals'>Findings</a><a href='#cases'>Read the passages</a><a href='#articles'>All articles</a><a href='#method'>Method &amp; references</a></nav></header><main>",
+        "<nav aria-label='Study sections'><a href='#signals'>Findings</a><a href='#cases'>Read the passages</a>"
+        "<a href='#sensitivity'>Sensitivity</a><a href='#articles'>All articles</a>"
+        "<a href='#method'>Method &amp; references</a></nav></header><main>",
         f"<h1>{TITLE}</h1><p class='lead'>{intro}</p>",
         "<div class='measure'><strong>What counted as unequal treatment?</strong> In one Czech report, a student faced a choice between removing her headscarf and risking expulsion. "
-        "The model flagged that account of treatment. It recorded uncertainty about whether the case established an institutional pattern.</div>",
+        "The model flagged that account of treatment. It recorded uncertainty about whether the case established an institutional pattern. "
+        "<a href='#case-school-hijab'>Follow the evidence</a>.</div>",
+        "<dl class='scope-metrics' aria-label='Study coverage'>"
+        f"<div><dt>Selected articles</dt><dd>{n}</dd></div>"
+        f"<div><dt>Source units</dt><dd>{summary['units']}</dd></div>"
+        f"<div><dt>Retained decisions</dt><dd>{summary['decisions']}/{summary['decisions'] + summary['missing']}</dd></div></dl>",
         "" if printing else downloads,
         "<section class='chapter' id='signals'><h2>What the model flagged</h2>",
-        "<p>Each bar counts distinct articles with at least one flagged passage under the named criterion. The full width is 60 articles. A single article can contribute to several rows.</p>",
+        f"<p>Each bar counts distinct articles with at least one flagged passage under the named criterion. The full width is {n} articles. A single article can contribute to several rows.</p>",
         f"<div class='chart-grid'>{chart(summary, printing)}</div>",
         f"<p class='caption'>Of {positives} flagged decisions, {voice.get('reported_speaker', 0)} were attributed to reported speakers, {voice.get('quoted_speaker', 0)} to quoted speakers and {voice.get('author', 0)} to article authors. "
         f"The model also recorded {summary['outcomes'].get('uncertain', 0)} uncertain decisions in {summary['uncertain_articles']} articles. Speaker labels are provisional.</p></section>",
@@ -203,9 +272,12 @@ def html(study, summary, cases, *, printing=False):
             parts.append(
                 "<h2>Read the passages</h2><p>Six examples trace a count back to the text. Each pairs a recorded model outcome with an editorial reading and a question for review.</p>"
             )
-        parts.extend(case_html(c, printing) for c in cases[i : i + 2])
+        parts.extend(case_html(c, traces[c["slug"]], printing) for c in cases[i : i + 2])
         parts.append("</section>")
     parts += [
+        "<section class='chapter print-page' id='sensitivity'>",
+        sensitivity_table(diagnostics),
+        "</section>",
         "<section class='methods chapter print-page' id='method'>",
         methods(study, summary),
         "</section>",
@@ -221,13 +293,15 @@ def html(study, summary, cases, *, printing=False):
     return "".join(parts) + "</body></html>"
 
 
-def reader_data(study, summary, readings):
+def reader_data(study, summary, readings, traces, diagnostics):
     """Lean, escaped-by-React display model. Full source and raw decisions live in the ZIP."""
     evidence = []
     for c in readings:
         d, a = c["doc"], c["decision"]
         evidence.append(
             {
+                "slug": c["slug"],
+                "trace": trace_data(traces[c["slug"]]),
                 "heading": c["heading"],
                 "reading": c["reading"],
                 "followup": c["followup"],
@@ -284,6 +358,7 @@ def reader_data(study, summary, readings):
         "missing": summary["missing"],
         "candidates": sum(study["selection"]["candidates_by_year"].values()),
         "criteria": summary["criteria"],
+        "sensitivity": diagnostics,
         "frameworks": FRAME_NAMES,
         "state_names": STATE_LABELS,
         "cases": evidence,

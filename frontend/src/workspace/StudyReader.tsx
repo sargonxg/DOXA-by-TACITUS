@@ -3,6 +3,12 @@ import { ExternalLink } from "lucide-react";
 
 export const studyRoot = "/studies/muslim-coverage";
 type Ref = { quote: string; block_id: string; start: number; end: number };
+type Sensitivity = {
+  articles: number;
+  observed_flags: number;
+  if_all_unresolved_flagged: number;
+  year_omissions: { flagged: number; articles: number }[];
+};
 type Article = {
   id: string;
   title: string;
@@ -42,7 +48,18 @@ type Study = {
   >;
   frameworks: Record<string, string>;
   state_names: Record<string, string>;
+  sensitivity: Record<string, Sensitivity>;
   cases: {
+    slug: string;
+    trace: {
+      decision: string;
+      framework: string;
+      version: string;
+      rule: string;
+      model: string;
+      run: string;
+      source_hash: string;
+    };
     heading: string;
     reading: string;
     followup: string;
@@ -59,6 +76,10 @@ type Study = {
   articles: Article[];
   references: [string, string, string, string][];
 };
+
+function searchText(value: string) {
+  return value.normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
+}
 
 function Credit({ article }: { article: Article }) {
   return (
@@ -90,6 +111,7 @@ export function StudyReader() {
   const [criterion, setCriterion] = useState("");
   const [outcome, setOutcome] = useState("");
   const [search, setSearch] = useState("");
+  const [year, setYear] = useState("");
   const [limit, setLimit] = useState(8);
   useEffect(() => {
     const controller = new AbortController();
@@ -100,7 +122,12 @@ export function StudyReader() {
         const study: Study = await response.json();
         if (
           !Array.isArray(study.articles) ||
-          study.articles.length !== study.article_count
+          study.articles.length !== study.article_count ||
+          !Array.isArray(study.cases) ||
+          !study.sensitivity ||
+          !study.cases.every(
+            (item) => item.slug && item.trace && study.articles.some((a) => a.id === item.document),
+          )
         )
           throw new Error("Incomplete study");
         if (!controller.signal.aborted) setData(study);
@@ -125,21 +152,23 @@ export function StudyReader() {
     );
   const quoted = data.voices.quoted_speaker || 0;
   const reported = data.voices.reported_speaker || 0;
-  function setFilters(key: string, state: string, term: string) {
+  function setFilters(key: string, state: string, term: string, publicationYear: string) {
     setCriterion(key);
     setOutcome(state);
     setSearch(term);
+    setYear(publicationYear);
     setLimit(8);
   }
+  const years = [...new Set(data.articles.map((article) => article.date.slice(0, 4)))].sort();
+  const needle = searchText(search.trim());
   const filtered = data.articles.filter((article) => {
     const outcomes = criterion
       ? [article.states[criterion]]
       : Object.values(article.states);
     return (
+      (!year || article.date.startsWith(year)) &&
       (!outcome || outcomes.includes(outcome)) &&
-      (article.title + " " + article.author)
-        .toLowerCase()
-        .includes(search.trim().toLowerCase())
+      searchText([article.title, article.author, ...article.translators].join(" ")).includes(needle)
     );
   });
   return (
@@ -200,7 +229,7 @@ export function StudyReader() {
                       className="w-study-chart-row"
                       key={key}
                       onClick={() => {
-                        setFilters(key, "flagged", "");
+                        setFilters(key, "flagged", "", "");
                         setView("All articles");
                       }}
                     >
@@ -239,9 +268,9 @@ export function StudyReader() {
             invite closer review of a possible error.
           </p>
           {data.cases.map((item) => (
-            <article className="w-study-case" key={item.document}>
+            <article className="w-study-case" key={item.slug} id={"doxa-case-" + item.slug}>
               <small>
-                {item.result} · {item.criterion}
+                Recorded model outcome · {item.result} · {item.criterion}
               </small>
               <h4>{item.heading}</h4>
               <Credit
@@ -251,7 +280,7 @@ export function StudyReader() {
               <small>
                 {item.origin}. Recorded voice · {item.voice}.
               </small>
-              <p>{item.reading}</p>
+              <p><b>Editorial reading.</b> {item.reading}</p>
               {item.peer && (
                 <p>
                   <b>Second reading.</b> {item.peer}.
@@ -261,7 +290,9 @@ export function StudyReader() {
                 <b>Review question.</b> {item.followup}
               </p>
               <details>
-                <summary>Source paragraph and model explanation</summary>
+                <summary>Evidence path and original model record</summary>
+                <p><b>Frozen criterion.</b> {item.trace.rule}</p>
+                <p>{item.trace.framework} · {item.trace.version}</p>
                 <blockquote>{item.context}</blockquote>
                 <p>
                   {item.explanation ||
@@ -271,6 +302,11 @@ export function StudyReader() {
                   {item.ref.block_id} · characters {item.ref.start}–
                   {item.ref.end}
                 </small>
+                <p className="w-study-trace">
+                  Decision {item.trace.decision} · run {item.trace.run} · {item.trace.model}.
+                  Source version SHA-256 {item.trace.source_hash}.
+                </p>
+                <a href={studyRoot + "/index.html#case-" + item.slug}>Open this case in the standalone reader</a>
               </details>
             </article>
           ))}
@@ -281,18 +317,18 @@ export function StudyReader() {
           <h3>Explore all {data.article_count} articles</h3>
           <div className="w-study-controls">
             <label>
-              Find a title or author
+              Find a title or credit
               <input
                 type="search"
                 value={search}
-                onChange={(e) => setFilters(criterion, outcome, e.target.value)}
+                onChange={(e) => setFilters(criterion, outcome, e.target.value, year)}
               />
             </label>
             <label>
               Criterion
               <select
                 value={criterion}
-                onChange={(e) => setFilters(e.target.value, outcome, search)}
+                onChange={(e) => setFilters(e.target.value, outcome, search, year)}
               >
                 <option value="">Any criterion</option>
                 {Object.entries(data.criteria).map(([id, r]) => (
@@ -306,7 +342,7 @@ export function StudyReader() {
               Article reading
               <select
                 value={outcome}
-                onChange={(e) => setFilters(criterion, e.target.value, search)}
+                onChange={(e) => setFilters(criterion, e.target.value, search, year)}
               >
                 <option value="">Any reading</option>
                 {Object.entries(data.state_names).map(([id, label]) => (
@@ -316,7 +352,14 @@ export function StudyReader() {
                 ))}
               </select>
             </label>
-            <button onClick={() => setFilters("", "", "")}>
+            <label>
+              Publication year
+              <select value={year} onChange={(e) => setFilters(criterion, outcome, search, e.target.value)}>
+                <option value="">Any year</option>
+                {years.map((value) => <option key={value}>{value}</option>)}
+              </select>
+            </label>
+            <button onClick={() => setFilters("", "", "", "")}>
               Clear filters
             </button>
           </div>
@@ -374,8 +417,8 @@ export function StudyReader() {
           </p>
           <p>
             The original Gemma run assessed {data.units} source units against
-            six criteria. All {data.decisions} decisions for these criteria are
-            present. For each criterion, an article with any flag counts once.
+            six criteria. The archive retains {data.decisions} of {data.decisions + data.missing} expected
+            decisions. For each criterion, an article with any flag counts once.
             For other articles the order is missing decision, uncertainty,
             checked without a flag, then all units outside the criterion.
           </p>
@@ -385,6 +428,33 @@ export function StudyReader() {
             accuracy requires a different sample and independent human
             annotations.
           </p>
+          <h3 id="doxa-study-sensitivity">How much do unresolved readings matter?</h3>
+          <p>Compare observed flags with the maximum if every unresolved article were flagged.
+            The last column shows the range obtained by omitting one publication year at a time.</p>
+          <div className="w-study-table" role="region" aria-labelledby="doxa-study-sensitivity" tabIndex={0}>
+            <table>
+              <thead><tr>
+                <th scope="col">Criterion</th>
+                <th scope="col">Observed</th>
+                <th scope="col">All unresolved flagged</th>
+                <th scope="col">One year omitted</th>
+              </tr></thead>
+              <tbody>
+                {Object.entries(data.sensitivity).map(([key, record]) => {
+                  const low = record.year_omissions[0];
+                  const high = record.year_omissions.at(-1);
+                  return (
+                    <tr key={key}>
+                      <th scope="row">{data.criteria[key].label}</th>
+                      <td>{record.observed_flags}/{record.articles}</td>
+                      <td>{record.if_all_unresolved_flagged}/{record.articles}</td>
+                      <td>{low && high ? `${low.flagged}/${low.articles} to ${high.flagged}/${high.articles}` : "—"}</td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
           {data.references.map(([kind, title, meaning, url]) => (
             <p key={url}>
               <b>{kind}.</b> {meaning}{" "}
@@ -404,6 +474,9 @@ export function StudyReader() {
         </a>
         <a href={studyRoot + "/sources.zip"} download>
           Download 60 texts and decisions
+        </a>
+        <a href={studyRoot + "/evidence.jsonld"} download>
+          Download evidence graph
         </a>
       </div>
     </div>
