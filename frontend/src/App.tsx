@@ -31,6 +31,7 @@ import { BiasResults, PublishedStudy } from "./workspace/BiasResults";
 import { Analytics } from "./workspace/Analytics";
 import { ScorecardPanel } from "./workspace/Scorecard";
 import { Inspector } from "./workspace/Inspector";
+import { DoxaCompanion } from "./workspace/DoxaCompanion";
 import { DrawerBody } from "./workspace/Drawers";
 import { useCasebook } from "./workspace/Casebooks";
 import { CoverageSummary } from "./workspace/Coverage";
@@ -700,7 +701,7 @@ function Workspace() {
       </a>
       <header className="w-commandbar">
         <a className="w-brand" href="/" aria-label="DOXA research workspace">
-          <span>D</span>
+          <DoxaCompanion />
           <strong>
             DOXA<span>.</span>
           </strong>

@@ -1,10 +1,14 @@
 # DOXA by TACITUS
 
+<img src="frontend/public/brand/doxa-analyst.v1.webp" width="85" height="88" align="right" alt="DOXA’s pixel owl, reading two passages with brass spectacles">
+
 **Compare political framing and evidence of prejudice in documents and speech transcripts.** Run DOXA on your laptop, then trace each result to a named criterion, an exact passage, and the sources behind the rate.
 
 [Install locally](#start-locally) · [See the worked scorecard](#worked-scorecard) · [Read the technical method](docs/bias-detection-method.md) · [Release downloads](https://github.com/sargonxg/DOXA-by-TACITUS/releases/latest)
 
 [![DOXA verification](https://github.com/sargonxg/DOXA-by-TACITUS/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sargonxg/DOXA-by-TACITUS/actions/workflows/ci.yml)
+
+The reader owl identifies DOXA across the local workbench, [TACITUS website](https://tacitus.me/) and [GitHub organization](https://github.com/TACITUS-me). [Character use and accessibility](docs/product-character.md)
 
 <img src="docs/images/doxa-research-desk.webp" alt="An 8-bit research desk with a document and speech transcript, a criterion chart, and two paired passages" width="850">
 
@@ -12,14 +16,14 @@ A scorecard shows criterion rates, source coverage, uncertain readings, and matc
 
 ## Start locally
 
-Download the **Python wheel** from the release and put it in your current directory. Install Python 3.11 or newer, then run the commands for your OS. [Download the wheel](https://github.com/sargonxg/DOXA-by-TACITUS/releases/download/v0.9.1/doxa_by_tacitus-0.9.1-py3-none-any.whl)
+Download the **Python wheel** from the release and put it in your current directory. Install Python 3.11 or newer, then run the commands for your OS. [Download the wheel](https://github.com/sargonxg/DOXA-by-TACITUS/releases/download/v0.9.2/doxa_by_tacitus-0.9.2-py3-none-any.whl)
 
 **macOS or Linux**
 
 ```sh
 python3 -m venv .venv
 . .venv/bin/activate
-python -m pip install ./doxa_by_tacitus-0.9.1-py3-none-any.whl
+python -m pip install ./doxa_by_tacitus-0.9.2-py3-none-any.whl
 doxa --data-dir ./doxa-data
 ```
 
@@ -28,7 +32,7 @@ doxa --data-dir ./doxa-data
 
 ```powershell
 py -m venv .venv
-.\.venv\Scripts\python.exe -m pip install .\doxa_by_tacitus-0.9.1-py3-none-any.whl
+.\.venv\Scripts\python.exe -m pip install .\doxa_by_tacitus-0.9.2-py3-none-any.whl
 .\.venv\Scripts\python.exe -m doxa.cli --data-dir .\doxa-data
 ```
 

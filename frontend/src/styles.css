@@ -5,6 +5,21 @@
   src: url("/fonts/dm-sans.ttf");
 }
 
+/* DOXA's reader is decorative; actual research and review state stay in text. */
+.doxa-companion {
+  display: block;
+  width: 34px;
+  height: 36px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+.doxa-companion--empty {
+  width: 70px;
+  height: 74px;
+  margin-bottom: 5px;
+}
+
 /* Guided service profiles share the existing evidence workbench. */
 .w-pilot {
   margin: 0 0 18px;
