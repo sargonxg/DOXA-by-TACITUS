@@ -102,6 +102,18 @@ def main():
             assert dialog.locator(".w-study-body").evaluate("el => el.scrollWidth <= el.clientWidth")
             page.keyboard.press("Escape")
             expect(dialog).not_to_be_visible()
+            case_url = base + "/studies/antisemitism/index.html"
+            page.get_by_role("link", name="Read the antisemitism case").click()
+            page.wait_for_url(case_url)
+            expect(page.get_by_role("heading", name="Whose accusation is it?")).to_be_visible()
+            assert page.locator("img").evaluate_all("(images) => images.every(img => img.complete && img.naturalWidth)")
+            panel = page.locator("#plzen-poster")
+            panel.get_by_text("Reveal the passage and archived result").click()
+            expect(panel.get_by_text("Frozen criterion.", exact=True)).to_be_visible()
+            expect(panel.locator("blockquote")).to_contain_text("God cursed them")
+            assert page.locator("#three-frameworks tbody tr").count() == 9
+            assert page.locator("#red-flags article").count() == 9
+            assert page.locator("body").evaluate("el => el.scrollWidth <= el.clientWidth")
             standalone = browser.new_page(viewport={"width": 320, "height": 844})
             standalone.goto(base + "/studies/muslim-coverage/index.html")
             standalone.get_by_role("link", name="Follow the evidence").click()
@@ -128,7 +140,7 @@ def main():
             assert not errors and not transfers, (errors, transfers)
             browser.close()
     print(
-        "Live indicator drill-down, 60-article reader, case paths, filters, four downloads, keyboard return and mobile viewport passed offline."
+        "Indicator drill-down, both research readers, downloads, keyboard return and mobile viewport passed offline."
     )
 
 

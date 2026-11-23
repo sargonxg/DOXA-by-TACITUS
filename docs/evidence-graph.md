@@ -7,6 +7,11 @@ The standalone HTML, PDF and local reader take their case paths from this graph.
 [Download JSON-LD](../frontend/public/studies/muslim-coverage/evidence.jsonld) ·
 [Study manifest](../examples/muslim-coverage.manifest.json)
 
+The companion antisemitism case uses the same graph vocabulary for four sources,
+nine scored units, and 81 decisions across IHRA, Jerusalem Declaration, and Nexus.
+Its published reader resolves the Plzeň excerpt and comparison table directly
+from these graph records. [Case graph](../frontend/public/studies/antisemitism/evidence.jsonld) · [Case methods](antisemitism-case.md)
+
 ## Follow one case
 
 Run these commands from a clone with Python 3.11 or later.

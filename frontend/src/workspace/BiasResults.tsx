@@ -10,15 +10,15 @@ export function PublishedStudy() {
   const dialog = useRef<HTMLDialogElement>(null);
   const [opened, setOpened] = useState(false);
   return (
-    <section className="w-study-entry" aria-label="Published bias study">
+    <section className="w-study-entry" aria-label="Published bias studies">
       <div>
         <span className="w-eyebrow">
-          FIELD STUDY · GLOBAL VOICES · 2020–2025
+          WORKED STUDIES · GLOBAL VOICES
         </span>
-        <h2>When the news reports anti-Muslim bias, whose words are they?</h2>
+        <h2>Whose words are they?</h2>
         <p>
-          Explore 60 real articles, six reading criteria, and the passages
-          behind the counts.
+          Explore a 60-article anti-Muslim bias study and a four-article
+          antisemitism case. Follow recorded readings to their source passages.
         </p>
       </div>
       <div className="w-study-actions">
@@ -32,7 +32,10 @@ export function PublishedStudy() {
           <BookOpen size={15} /> Read the 60-article study
         </button>
         <a href={studyRoot + "/report.pdf"} download>
-          <Download size={14} /> Study PDF
+          <Download size={14} /> Anti-Muslim study PDF
+        </a>
+        <a href="/studies/antisemitism/index.html">
+          <BookOpen size={15} /> Read the antisemitism case
         </a>
       </div>
       <dialog

@@ -286,7 +286,11 @@ def html(study, summary, cases, traces, diagnostics, *, printing=False):
         "</section></main>",
         "<footer>Original texts and excerpts are credited to their authors and translators at Global Voices under CC BY 3.0. DOXA added counts, formatting and editorial commentary. "
         + link("Study files and reproduction guide", REPO + "/blob/main/docs/reading-muslim-coverage.md")
-        + ".</footer>",
+        + ("." if printing else " · " + link(
+            "Read the companion antisemitism case",
+            "https://doxa-public-study.giuliocatanzariti.workers.dev/antisemitism/",
+        ))
+        + "</footer>",
     ]
     if not printing:
         parts.append('<script src="reader.js"></script>')

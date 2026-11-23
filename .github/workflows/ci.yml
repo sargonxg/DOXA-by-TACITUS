@@ -51,6 +51,7 @@ jobs:
       - run: python -m ruff check doxa scripts tests setup.py
       - run: python scripts/verify_repository.py
       - run: python scripts/build_bias_study.py
+      - run: python scripts/build_antisemitism_case.py
   browser:
     runs-on: ubuntu-latest
     needs: frontend
