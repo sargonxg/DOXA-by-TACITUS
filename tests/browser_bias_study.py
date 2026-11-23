@@ -45,7 +45,7 @@ def main():
             scorecard = page.get_by_role("region", name="Analysis scorecard")
             scorecard.get_by_role("button", name="Open worked example").click()
             expect(scorecard.get_by_text("60.0 / 100")).to_be_visible()
-            expect(scorecard.get_by_text("75.0% · 3/4")).to_be_visible()
+            expect(scorecard.get_by_role("table").first.get_by_text("75.0% · 3/4")).to_be_visible()
             expect(scorecard.get_by_text("50.0 pp")).to_be_visible()
             page.set_viewport_size({"width": 390, "height": 844})
             assert page.locator("body").evaluate("el => el.scrollWidth <= el.clientWidth")
