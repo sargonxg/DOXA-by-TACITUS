@@ -44,7 +44,7 @@ with TestClient(create_app(os.environ["DOXA_DATA_DIR"],start_workers=False,use_s
     assert client.get(study+"missing.pdf").status_code==404
     case="/studies/antisemitism/"
     assert "Whose accusation is it?" in client.get(case+"index.html").text
-    assert client.get(case+"evidence-desk.png").content.startswith(b"\x89PNG")
+    assert client.get(case+"evidence-desk.png").content.startswith(bytes.fromhex("89504e47"))
     assert client.get(case+"antisemitism-case.pdf").content.startswith(b"%PDF")
     assert sum("doxa:Decision" in row["@type"] for row in client.get(case+"evidence.jsonld").json()["@graph"])==81
     project=client.post("/api/projects",json={"name":"Installed wheel smoke"}).json()["id"]
