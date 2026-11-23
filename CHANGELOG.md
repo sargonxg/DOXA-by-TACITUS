@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.1 — 2026-11-22
+
+The study filters now fit the reader at a 320-pixel viewport. Browser coverage
+checks the criterion and year filters at that width. The published graph and
+recorded study remain the same edition.
+
 ## 0.7.0 — 2026-11-22
 
 - The [60-article field study](docs/reading-muslim-coverage.md) now traces model readings through a versioned [JSON-LD evidence graph](docs/evidence-graph.md). It links 822 decisions to their archived run, frozen criteria and 3,064 distinct source passages. The original outcomes and source selection are preserved.

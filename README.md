@@ -4,7 +4,7 @@
 
 DOXA is an open-source research workbench for discourse, political framing and contextual prejudice analysis. Import documents, declare a framework, and inspect recorded readings next to the exact source passages. Compare readings and export the evidence for review.
 
-[Open the field study](https://doxa-public-study.giuliocatanzariti.workers.dev/) · [Run DOXA locally](#start-locally) · [Visit DOXA on TACITUS](https://tacitus.me/doxa/) · [Download v0.7.0](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.7.0)
+[Open the field study](https://doxa-public-study.giuliocatanzariti.workers.dev/) · [Run DOXA locally](#start-locally) · [Visit DOXA on TACITUS](https://tacitus.me/doxa/) · [Download v0.7.1](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.7.1)
 
 [![Verify DOXA](https://github.com/sargonxg/DOXA-by-TACITUS/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sargonxg/DOXA-by-TACITUS/actions/workflows/ci.yml)
 
@@ -57,12 +57,12 @@ Open **http://localhost:8000** and choose **Read the 60-article study**. You can
 To run without Docker, download the application wheel from the release and install it in a Python 3.11+ environment.
 
 ```sh
-python -m pip install ./doxa_by_tacitus-0.7.0-py3-none-any.whl
+python -m pip install ./doxa_by_tacitus-0.7.1-py3-none-any.whl
 doxa doctor --json --data-dir ./doxa-data
 doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data
 ```
 
-The wheel includes the browser interface and recorded readers. New analyses use a configured local or remote inference provider. Remote processing requires explicit source-text transfer consent and a budget. [Release files](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.7.0) · [System dependencies and deployment](docs/deployment.md)
+The wheel includes the browser interface and recorded readers. New analyses use a configured local or remote inference provider. Remote processing requires explicit source-text transfer consent and a budget. [Release files](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.7.1) · [System dependencies and deployment](docs/deployment.md)
 
 ## Use DOXA in a review
 
