@@ -70,6 +70,14 @@ with TestClient(create_app(os.environ["DOXA_DATA_DIR"],start_workers=False,use_s
     transcript=next(row for row in documents if row["filename"]=="committee-speech.srt")
     detail=client.get("/api/documents/"+transcript["id"]).json()
     assert detail["blocks"][0]["cue_start_ms"]==5000
+    caption="The councillor said, “la reunión seguirá.”"
+    cue=("WEBVTT\\n\\n00:01.000 --> 00:03.000\\n"+caption+"\\n").encode("utf-8")
+    uploaded=client.post("/api/projects/"+project+"/upload",
+                         files={"files":("unicode.vtt",cue,"text/vtt")})
+    assert uploaded.is_success, uploaded.text
+    document=uploaded.json()[0]
+    assert document["status"]=="ready", document
+    assert client.get("/api/documents/"+document["id"]).json()["blocks"][0]["text"]==caption
     query=client.post("/api/v3/projects/"+project+"/query",json={}).json()
     response=client.post("/api/v3/projects/"+project+"/report-jobs",json={"query_id":query["query_id"],"format":"xlsx","publication_type":"archive"})
     assert response.status_code==202, response.text

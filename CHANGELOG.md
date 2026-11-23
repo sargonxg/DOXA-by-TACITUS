@@ -5,6 +5,7 @@
 - Add a native Ollama readiness check and an import-ready Civic Square archive with timed caption sources.
 - Preserve declared source eligibility, expose per-criterion missing-data ranges, and find the maximum number of eligible one-to-one matches after removing exact duplicates.
 - Verify graph exports against the frozen scorecard and test isolated wheel workflows on Linux, macOS, and Windows.
+- Fix native macOS parser startup and preserve Unicode text from the extractor on all three operating systems.
 - Refresh the GitHub landing page and document the technical method for political framing and prejudice lenses.
 
 ## 0.9.0 — 2026-11-22

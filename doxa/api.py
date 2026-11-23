@@ -98,7 +98,7 @@ def _extract_path(path: Path, filename: str) -> dict:
         if result.returncode:
             lines = [line for line in result.stderr.splitlines() if line.strip()]
             raise ValueError((lines[-1] if lines else "Parser failed")[:600])
-        return json.loads(output.read_text())
+        return json.loads(output.read_text(encoding="utf-8"))
     finally:
         output.unlink(missing_ok=True)
 
