@@ -60,6 +60,19 @@ def _casebook_child(config_path, output, format, profile):
         raise
 
 
+def _scorecard_child(config_path, output, format):
+    from .scorecard_reports import render_scorecard
+    path = Path(output)
+    try:
+        config = json.loads(Path(config_path).read_text(encoding="utf-8"))
+        artifacts = render_scorecard(config["scorecard"], path, format)
+        (path / "result.json").write_text(compact({"artifacts": artifacts}), encoding="utf-8")
+    except BaseException as error:
+        path.mkdir(parents=True, exist_ok=True)
+        (path / "result.json").write_text(compact({"error": str(error)[:1000]}), encoding="utf-8")
+        raise
+
+
 def _guided_child(config_path, output, format):
     """Render a bounded guided snapshot in the existing cancellable child."""
     from .pilot_reports import build_pilot_report
@@ -173,14 +186,21 @@ class ReportJobs:
 
     def _create(self, project_id, body):
         execution = self._submission_actor(project_id)
-        unknown = set(body) - {"query_id", "format", "profile", "publication_type", "casebook_id"}
+        unknown = set(body) - {"query_id", "format", "profile", "publication_type", "casebook_id", "scorecard_id"}
         if unknown:
             raise ValueError("Unsupported report-job fields: " + ", ".join(sorted(unknown)))
         format, profile = body.get("format", "pdf"), body.get("profile", "briefing")
         publication = body.get("publication_type", "briefing")
         if format not in FORMATS or profile not in {"research", "briefing", "teaching"} or publication not in {"briefing", "casebook", "teaching", "archive"}:
             raise ValueError("Unsupported report format, profile or publication type")
-        if body.get("casebook_id"):
+        if body.get("scorecard_id"):
+            from .scorecards import get_scorecard
+            if body.get("casebook_id") or body.get("query_id") or publication == "casebook":
+                raise ValueError("Choose only the saved scorecard for this publication.")
+            scorecard = get_scorecard(self.store, project_id, str(body["scorecard_id"]))
+            config = {"project_id": project_id, "query_id": scorecard["query_id"], "scope_hash": scorecard["snapshot_sha256"],
+                      "snapshot_version": scorecard["snapshot_version"], "scorecard": scorecard}
+        elif body.get("casebook_id"):
             from .casebooks import get_casebook
             book = get_casebook(self.store, str(body["casebook_id"]))
             if book["project_id"] != project_id:
@@ -373,6 +393,20 @@ class ReportJobs:
         try:
             config = self.store.get_json(row["config_key"])
             state = json.loads(row["state_json"] or "{}")
+            if config.get("scorecard"):
+                from .method_config import content_hash
+                snapshot = config["scorecard"]
+                if (content_hash({key: value for key, value in snapshot.items() if key != "snapshot_sha256"}) != row["scope_hash"]
+                        or snapshot["snapshot_sha256"] != row["scope_hash"] or snapshot["project_id"] != row["project_id"]):
+                    raise report_source.SourceChanged("Frozen scorecard changed after submission")
+                self._check(identity, lease)
+                output = folder / "output"
+                output.mkdir(exist_ok=True)
+                config_path = folder / "scorecard.json"
+                config_path.write_text(compact(config), encoding="utf-8")
+                result = self._run_renderer(identity, lease, deadline, output, _scorecard_child,
+                                            (str(config_path), str(output), row["format"]))
+                return self._publish(identity, lease, result["artifacts"])
             if config.get("guided_pilot"):
                 if hashlib.sha256(compact(config).encode()).hexdigest() != row["scope_hash"]:
                     raise report_source.SourceChanged("Frozen guided inputs changed after submission")

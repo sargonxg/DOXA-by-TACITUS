@@ -139,6 +139,8 @@ def build_units(document: dict, *, max_unit_chars: int = 1200, context_sentences
                 sentence.update({"source_char_start": source_start + start, "source_char_end": source_start + end})
             if block.get("message_key"):
                 sentence.update(_mail_fields(block))
+            if "cue_start_ms" in block and "cue_end_ms" in block:
+                sentence.update({key: block[key] for key in ("cue_start_ms", "cue_end_ms")})
             all_sentences.append(sentence)
     groups, current, characters = [], [], 0
     for sentence in all_sentences:
@@ -280,7 +282,8 @@ def _make_assessment(document: dict, unit: dict, criterion: dict, result: str, d
             "criterion_registry_version": CRITERION_REGISTRY_VERSION, "result": result, "category": criterion["key"],
             "is_indicator": criterion["kind"] == "indicator" and result == "meets_criterion",
             "quote": primary["text"], "block_id": primary["block_id"], "start": primary["start"], "end": primary["end"],
-            "locator": {key: primary.get(key) for key in ["block_id", "start", "end", "page", "paragraph", "line_start", "line_end", "source_char_start", "source_char_end", "offset_unit"]},
+            "locator": {**{key: primary.get(key) for key in ("block_id", "start", "end", "page", "paragraph", "line_start", "line_end", "source_char_start", "source_char_end", "offset_unit")},
+                        **{key: primary[key] for key in ("cue_start_ms", "cue_end_ms") if key in primary}},
             "evidence_refs": evidence, "context": context, "speech_role": speech_role, "stance": payload["document_stance"],
             "detail_supplied": detail is not None, "review_status": "unreviewed", "evidence_kind": "contextual_assessment", "methodology_version": ASSESSMENT_CONTRACT_VERSION, **payload}
     if unit.get("message_key"):

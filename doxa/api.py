@@ -119,6 +119,8 @@ class ProjectInput(BaseModel):
 
 
 class RunInput(BaseModel):
+    execution_profile: Literal["laptop-8gb-v1"] | None = None
+    index_spec: dict | None = None
     context_policy: Literal["structure-aware-1.0"] | None = None
     quote_id: str | None = Field(default=None, max_length=128)
     provider: str = "lexical"
@@ -154,6 +156,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     assets_root = asset_root()
     tasks: dict[str, asyncio.Task] = {}
     extraction_slots = asyncio.Semaphore(configured_slots("parser"))
+    laptop_slot = asyncio.Lock()
 
     @asynccontextmanager
     async def lifespan(app: FastAPI):
@@ -532,6 +535,7 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
         extracted.update({"filename": filename, "sha256": digest_string, "mime_type": mimetypes.guess_type(filename)[0] or "application/octet-stream",
                           "title": extracted.get("metadata", {}).get("title") or Path(filename).stem,
                           "author": extracted.get("metadata", {}).get("author") or "Unknown",
+                          "document_type": extracted.get("metadata", {}).get("document_type") or "document",
                           "status": "failed" if error else "ready", "error": error})
         extracted.setdefault("metadata", {}).update({"source_identity": commit_identity, "relative_path": source_identity or filename})
         return save_document(project_id, batch["id"], extracted, object_key=key, document_id=(duplicate or {}).get("id")), False
@@ -821,6 +825,9 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             # Endpoints and credentials are server configuration. A browser
             # health probe must not turn this server into an arbitrary fetcher.
             safe = RunInput.model_validate(body).model_dump(exclude_none=True)
+            if safe.get("execution_profile"):
+                from doxa.laptop import configure
+                safe = configure(safe, remote=db().remote)
             if not db().remote:
                 from doxa.pilot_commerce import apply_server_pricing
                 safe = apply_server_pricing(safe)
@@ -1241,6 +1248,9 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             return {"pending": False, "run": require_run(run_id)}
         try:
             with activity(db(), run["project_id"], "analysis_worker"):
+                if run["config"].get("execution_profile"):
+                    async with laptop_slot:
+                        return await _work_once(run_id)
                 return await _work_once(run_id)
         except ProjectErasingError:
             return {"pending": False, "run": {"id": run_id, "status": "cancelled", "reason": "project_erasure"}}
@@ -1269,6 +1279,14 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
     async def create_run(project_id: str, body: RunInput, *, check_health: bool = True) -> dict:
         require_project(project_id)
         config = body.model_dump(exclude_none=True)
+        if body.execution_profile:
+            from doxa.laptop import configure
+            try:
+                config = configure(config, remote=db().remote)
+                body = body.model_copy(update={key: config[key] for key in ("provider", "model", "methodology_version",
+                    "budget_usd", "allow_remote_text", "context_policy", "learning_snapshot_id")})
+            except ValueError as error:
+                raise HTTPException(422, str(error)) from error
         if not db().remote:
             from doxa.pilot_commerce import CommerceError, apply_server_pricing
             try:
@@ -1338,8 +1356,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             config["verification_selection"] = verification
         if modern:
             from doxa.contextual import PROMPT_VERSION, UNIT_BUILDER_VERSION
-            config.update({"unit_max_chars": 1200 if body.provider == "ollama" else 4000,
-                           "task_index_basis": "source_units_v3", "context_sentences": 2,
+            config.update({"unit_max_chars": config.get("unit_max_chars", 1200 if body.provider == "ollama" else 4000),
+                           "task_index_basis": "source_units_v3", "context_sentences": config.get("context_sentences", 2),
                            "pipeline_version": PROMPT_VERSION, "unit_builder_version": UNIT_BUILDER_VERSION})
             if not verification:
                 from doxa.method_cards import freeze_method_cards
@@ -1375,14 +1393,14 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             raise HTTPException(422, str(exc)) from exc
         if not body.lens_ids and not body.custom_lens:
             raise HTTPException(422, "Select at least one analytical lens")
-        if check_health:
-            readiness = await provider_health(config)
-            if not readiness.get("ok"):
-                raise HTTPException(422, {"message": "Provider is not ready. Choose the lexical baseline or configure inference.", "health": readiness})
-            for source, target in [("revision", "model_revision"), ("quantization", "quantization")]:
-                if readiness.get(source) and readiness[source] != "unresolved":
-                    config[target] = readiness[source]
-            config["provider_preflight"] = readiness
+        if body.index_spec is not None:
+            from doxa.scorecards import freeze_index
+            try:
+                if not modern or db().remote or verification:
+                    raise ValueError("A weighted index requires a new native contextual run.")
+                config["index_spec"] = freeze_index(body.index_spec, config)
+            except ValueError as error:
+                raise HTTPException(422, str(error)) from error
         rows = db().query("SELECT * FROM documents WHERE project_id=? AND status='ready' ORDER BY created_at,id", [project_id])
         if body.document_ids is not None:
             selected_source_ids = set(body.document_ids)
@@ -1391,6 +1409,24 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             rows = [row for row in rows if row["id"] in verification["document_ids"]]
         if not rows:
             raise HTTPException(422, "Import at least one successfully extracted document")
+        if body.execution_profile:
+            from doxa.laptop import workload
+            try:
+                checked = workload([row["id"] for row in rows], require_document, config["lens_ids"], config.get("custom_lens"))
+            except ValueError as error:
+                raise HTTPException(422, str(error)) from error
+            if not checked["fits"]:
+                raise HTTPException(422, f"Select a smaller workload for the laptop preset. Detected {checked['documents']} sources, "
+                                    f"{checked['units'] if checked['units'] is not None else 'unmeasured'} units, and {checked['criteria']} criteria. "
+                                    "The preset accepts up to 8 sources, 24 units and 6 criteria.")
+        if check_health:
+            readiness = await provider_health(config)
+            if not readiness.get("ok"):
+                raise HTTPException(422, {"message": "Provider is not ready. Choose the lexical baseline or configure inference.", "health": readiness})
+            for source, target in [("revision", "model_revision"), ("quantization", "quantization")]:
+                if readiness.get(source) and readiness[source] != "unresolved":
+                    config[target] = readiness[source]
+            config["provider_preflight"] = readiness
         if not db().remote:
             from doxa.pilot_commerce import CommerceError, admit_quote_work
             try:
@@ -1512,10 +1548,20 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
             settle_reservation(reservation["id"], {"cost_usd": None, "estimated": True, "cancelled_inflight_request": True})
         return refresh_run(run_id)
 
+    @app.post("/api/runs/{run_id}/pause")
+    async def pause_run(run_id: str):
+        run = require_run(run_id)
+        if run["status"] not in {"queued", "running", "paused_operator"}:
+            raise HTTPException(409, "Only a queued or running analysis can be paused")
+        from doxa.workspace import Workspace
+        db().batch([{"sql": "UPDATE runs SET status='paused_operator' WHERE id=? AND status IN ('queued','running')",
+                     "params": [run_id]}, Workspace.touch_statement(run["project_id"])])
+        return refresh_run(run_id)
+
     @app.post("/api/runs/{run_id}/resume")
     async def resume_run(run_id: str, body: dict | None = None):
         run = require_run(run_id)
-        if run["status"] not in {"paused_budget", "paused_access", "paused_privacy", "failed", "partial", "cancelled"}:
+        if run["status"] not in {"paused_operator", "paused_budget", "paused_access", "paused_privacy", "failed", "partial", "cancelled"}:
             raise HTTPException(409, "Only a paused, partial, failed or cancelled run can be resumed")
         config = run["config"]
         if access.managed:
@@ -1538,6 +1584,8 @@ def create_app(data_dir: str | Path | None = None, *, start_workers: bool = True
                 raise HTTPException(422, "Run budget must be between $0 and $10,000")
             if config.get("verification_of") and cap > 2:
                 raise HTTPException(422, "Independent verification has a $2 total run cap")
+            if config.get("execution_profile") and cap:
+                raise HTTPException(422, "The laptop preset uses a zero-dollar budget.")
             config.setdefault("budget_changes", []).append({"previous": config.get("budget_usd"), "new": cap, "at": utcnow()})
             config["budget_usd"] = cap
         readiness = await provider_health(config)

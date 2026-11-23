@@ -1,0 +1,14 @@
+{
+  "question": "How strongly do the selected texts justify restrictions on demonstrations on public-order grounds?",
+  "lens_ids": ["custom"],
+  "custom_lens": {
+    "name": "Public-order framing in the Civic Square hearing",
+    "criteria": [
+      {"id": "custom-1", "label": "Documented safety risk", "description": "The source explicitly cites a record or measurement of concrete emergency-access harm, such as a documented ambulance delay. A proposed risk, a reference to an available traffic plan, or a call for future measurements by itself does not meet this criterion."},
+      {"id": "custom-2", "label": "Favorable appraisal of restrictions", "description": "The source favorably characterizes the proposed two-block exclusion zone as a safety or public-order measure. A negative appraisal, neutral mention, or quoting an opponent's language without endorsement does not meet this criterion."},
+      {"id": "custom-3", "label": "Restriction as remedy", "description": "The source recommends adopting the proposed two-block exclusion zone to address a safety or public-order problem. Recommendations limited to emergency lanes, stewards, or data collection do not meet this criterion."},
+      {"id": "custom-4", "label": "Prior controls presumed ineffective", "description": "The text presents failure of existing controls as a taken-for-granted premise of the proposed measure. If wording such as restore order lacks a clear connection to a specific prior control or is explicitly questioned, preserve uncertainty."}
+    ]
+  },
+  "index_spec": {"name": "Public-order justification index", "weights": {"custom/custom-1": 40, "custom/custom-2": 25, "custom/custom-3": 35}}
+}

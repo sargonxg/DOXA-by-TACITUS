@@ -1,0 +1,1091 @@
+{
+  "id": "civic-square-scorecard-v1",
+  "version": "doxa-scorecard-1.0",
+  "project_id": "civic-square-teaching",
+  "query_id": "civic-square-four-sources",
+  "snapshot_version": "1",
+  "created_at": "2026-11-22T00:00:00Z",
+  "basis": "authored teaching labels",
+  "question": "How strongly do the selected texts justify restrictions on demonstrations on public-order grounds?",
+  "run": {
+    "id": "authored-civic-square-v1",
+    "status": "completed",
+    "model": null,
+    "model_revision": null,
+    "provider": "authored teaching fixture",
+    "method_fingerprint": "5e3e3cd795d8f5cfa98da05b1aaa65a0f6d61f73ec4e273af5a3018e04a9d7ea",
+    "execution_profile": null
+  },
+  "sources": [
+    {
+      "id": "committee-briefing",
+      "filename": "committee-briefing.txt",
+      "title": "Committee briefing",
+      "institution": "Transport Committee",
+      "document_type": "policy briefing",
+      "published_at": "2026-09-10",
+      "license": "CC0-1.0",
+      "sha256": "e1c774b6c5ca11836f864560cee3c6de9237bf1805d7c4ac70819a23bb30064f",
+      "source_url": "",
+      "extraction_version": "f62ed2fc6cad6cc0e24643fbfa162ffa0bb3e7a376759076b38428e480767185",
+      "extraction_complete": true,
+      "extraction_warnings": []
+    },
+    {
+      "id": "rights-briefing",
+      "filename": "rights-briefing.txt",
+      "title": "Rights council briefing",
+      "institution": "Civic Rights Council",
+      "document_type": "policy briefing",
+      "published_at": "2026-09-11",
+      "license": "CC0-1.0",
+      "sha256": "f966facc0ae3a1d0fb74d6341849315e43879b92bc62efb5ea0de9e3432e7211",
+      "source_url": "",
+      "extraction_version": "7ed500de65d42924045339c54ad593ef2635e136ff848601819eb2a3f3902e0e",
+      "extraction_complete": true,
+      "extraction_warnings": []
+    },
+    {
+      "id": "committee-speech",
+      "filename": "committee-speech.srt",
+      "title": "Committee hearing statement",
+      "institution": "Transport Committee",
+      "document_type": "speech transcript",
+      "published_at": "2026-09-12",
+      "license": "CC0-1.0",
+      "sha256": "1b1930e81fe1f7bbed8577dad04d380f884f19330033e434570eb499e2ab2c90",
+      "source_url": "",
+      "extraction_version": "905bc9b99aa9f00b7c4e33d7366fde6b7761ab34c181aa1391da566d35193348",
+      "extraction_complete": true,
+      "extraction_warnings": []
+    },
+    {
+      "id": "rights-speech",
+      "filename": "rights-speech.vtt",
+      "title": "Rights council hearing statement",
+      "institution": "Civic Rights Council",
+      "document_type": "speech transcript",
+      "published_at": "2026-09-12",
+      "license": "CC0-1.0",
+      "sha256": "0abaab2739257ef882802de81fd17ace1b0012ac928c4f55e6e2c436c2af5f17",
+      "source_url": "",
+      "extraction_version": "2c7dfe2d4c024bab1daa787e6794db1b9537f223073cce7021eeef5746a204d3",
+      "extraction_complete": true,
+      "extraction_warnings": []
+    }
+  ],
+  "excluded": [],
+  "method_cards": [
+    {
+      "schema_version": "doxa-measurement-card-1.0",
+      "registry_version": "doxa-measurement-registry-0.6",
+      "id": "custom/custom-1",
+      "lens_id": "custom",
+      "lens_version": "1.0",
+      "criterion_id": "custom-1",
+      "criterion_kind": "descriptive",
+      "label": "Documented safety risk",
+      "construct": "descriptive_discourse_pattern",
+      "operational_rule": "The source explicitly cites a record or measurement of concrete emergency-access harm, such as a documented ambulance delay. A proposed risk, a reference to an available traffic plan, or a call for future measurements by itself does not meet this criterion.",
+      "scope": "User-authored analytical rubric, not an established or validated scientific definition.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "required_context": [
+        "Ground every finding in exact source evidence. Preserve quotation, attribution, counter-speech and alternative interpretations.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "comparator_required": false,
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "title": "Measurement and Fairness",
+          "authors": "Jacobs and Wallach",
+          "year": 2021,
+          "url": "https://arxiv.org/abs/1912.05511",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model."
+        },
+        {
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "authors": "Plank",
+          "year": 2022,
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth."
+        }
+      ],
+      "framework_source": {
+        "url": "",
+        "kind": "user_authored_rubric",
+        "status": "not_independently_validated_by_DOXA"
+      },
+      "validation": {
+        "status": "reference_pending",
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy."
+      },
+      "origin": "user_authored_operational_contract",
+      "card_sha256": "06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8"
+    },
+    {
+      "schema_version": "doxa-measurement-card-1.0",
+      "registry_version": "doxa-measurement-registry-0.6",
+      "id": "custom/custom-2",
+      "lens_id": "custom",
+      "lens_version": "1.0",
+      "criterion_id": "custom-2",
+      "criterion_kind": "descriptive",
+      "label": "Favorable appraisal of restrictions",
+      "construct": "descriptive_discourse_pattern",
+      "operational_rule": "The source favorably characterizes the proposed two-block exclusion zone as a safety or public-order measure. A negative appraisal, neutral mention, or quoting an opponent's language without endorsement does not meet this criterion.",
+      "scope": "User-authored analytical rubric, not an established or validated scientific definition.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "required_context": [
+        "Ground every finding in exact source evidence. Preserve quotation, attribution, counter-speech and alternative interpretations.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "comparator_required": false,
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "title": "Measurement and Fairness",
+          "authors": "Jacobs and Wallach",
+          "year": 2021,
+          "url": "https://arxiv.org/abs/1912.05511",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model."
+        },
+        {
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "authors": "Plank",
+          "year": 2022,
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth."
+        }
+      ],
+      "framework_source": {
+        "url": "",
+        "kind": "user_authored_rubric",
+        "status": "not_independently_validated_by_DOXA"
+      },
+      "validation": {
+        "status": "reference_pending",
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy."
+      },
+      "origin": "user_authored_operational_contract",
+      "card_sha256": "b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056"
+    },
+    {
+      "schema_version": "doxa-measurement-card-1.0",
+      "registry_version": "doxa-measurement-registry-0.6",
+      "id": "custom/custom-3",
+      "lens_id": "custom",
+      "lens_version": "1.0",
+      "criterion_id": "custom-3",
+      "criterion_kind": "descriptive",
+      "label": "Restriction as remedy",
+      "construct": "descriptive_discourse_pattern",
+      "operational_rule": "The source recommends adopting the proposed two-block exclusion zone to address a safety or public-order problem. Recommendations limited to emergency lanes, stewards, or data collection do not meet this criterion.",
+      "scope": "User-authored analytical rubric, not an established or validated scientific definition.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "required_context": [
+        "Ground every finding in exact source evidence. Preserve quotation, attribution, counter-speech and alternative interpretations.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "comparator_required": false,
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "title": "Measurement and Fairness",
+          "authors": "Jacobs and Wallach",
+          "year": 2021,
+          "url": "https://arxiv.org/abs/1912.05511",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model."
+        },
+        {
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "authors": "Plank",
+          "year": 2022,
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth."
+        }
+      ],
+      "framework_source": {
+        "url": "",
+        "kind": "user_authored_rubric",
+        "status": "not_independently_validated_by_DOXA"
+      },
+      "validation": {
+        "status": "reference_pending",
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy."
+      },
+      "origin": "user_authored_operational_contract",
+      "card_sha256": "15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e"
+    },
+    {
+      "schema_version": "doxa-measurement-card-1.0",
+      "registry_version": "doxa-measurement-registry-0.6",
+      "id": "custom/custom-4",
+      "lens_id": "custom",
+      "lens_version": "1.0",
+      "criterion_id": "custom-4",
+      "criterion_kind": "descriptive",
+      "label": "Prior controls presumed ineffective",
+      "construct": "descriptive_discourse_pattern",
+      "operational_rule": "The text presents failure of existing controls as a taken-for-granted premise of the proposed measure. If wording such as restore order lacks a clear connection to a specific prior control or is explicitly questioned, preserve uncertainty.",
+      "scope": "User-authored analytical rubric, not an established or validated scientific definition.",
+      "unit_of_analysis": "An exact contextual passage and explicitly attributed speaker, target or proposition.",
+      "required_context": [
+        "Ground every finding in exact source evidence. Preserve quotation, attribution, counter-speech and alternative interpretations.",
+        "Resolve quotation, reporting, negation and counter-speech before attributing endorsement.",
+        "Retain heading, message and source-version lineage; record unavailable context."
+      ],
+      "inclusion_rule": "The supplied passage supports the operational criterion under the declared framework and context.",
+      "exclusion_rules": [
+        "Topic or identity-term mention alone is not sufficient.",
+        "Quoted or condemned expression is not automatically author endorsement.",
+        "Unprocessed material is not a negative result.",
+        "Insufficient context remains uncertain; no private beliefs, identity or intent are inferred."
+      ],
+      "comparator_required": false,
+      "alternative_readings": "Preserve defensible context- or framework-dependent alternatives and reviewer disagreements.",
+      "output_contract": [
+        "meets_criterion",
+        "does_not_meet",
+        "not_applicable",
+        "uncertain"
+      ],
+      "permitted_report_wording": "The passage was read as meeting this named operational criterion, with stated evidence and review status.",
+      "prohibited_conclusions": [
+        "Universal bias score",
+        "Character or private-belief verdict",
+        "Legal liability",
+        "Established causal or audience effect"
+      ],
+      "references": [
+        {
+          "title": "Measurement and Fairness",
+          "authors": "Jacobs and Wallach",
+          "year": 2021,
+          "url": "https://arxiv.org/abs/1912.05511",
+          "kind": "measurement_framework",
+          "supported_claim": "An operational measure needs an explicit construct, assumptions and validity argument.",
+          "does_not_establish": "Validity or accuracy of any DOXA criterion or model."
+        },
+        {
+          "title": "The Problem of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+          "authors": "Plank",
+          "year": 2022,
+          "url": "https://aclanthology.org/2022.emnlp-main.731/",
+          "kind": "evaluation_methodology",
+          "supported_claim": "Meaningful differences in human interpretation should be retained rather than treated automatically as noise.",
+          "does_not_establish": "That model agreement or one adjudication is universal ground truth."
+        }
+      ],
+      "framework_source": {
+        "url": "",
+        "kind": "user_authored_rubric",
+        "status": "not_independently_validated_by_DOXA"
+      },
+      "validation": {
+        "status": "reference_pending",
+        "independent_interpretation_accuracy": null,
+        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy."
+      },
+      "origin": "user_authored_operational_contract",
+      "card_sha256": "b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521"
+    }
+  ],
+  "matrix": [
+    {
+      "document_id": "committee-briefing",
+      "criterion": "custom/custom-1",
+      "status": "positive",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "meets_criterion": 1
+      },
+      "evidence": {
+        "assessment_id": "5ba657a63675754f2bdcfe6babcf3c8efe7081315f9de84501f38828e01d4a05",
+        "unit_id": "teaching-committee-briefing",
+        "quote": "Last September, dispatch logs recorded two ambulance delays while access lanes to Civic Square were blocked.",
+        "block_id": "b000001",
+        "start": 0,
+        "end": 108,
+        "page": null,
+        "paragraph": 1,
+        "cue_start_ms": null,
+        "cue_end_ms": null,
+        "explanation": "Cites two recorded ambulance delays.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "committee-briefing",
+      "criterion": "custom/custom-2",
+      "status": "positive",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "meets_criterion": 1
+      },
+      "evidence": {
+        "assessment_id": "6d9692d0c81f0785af41d0e770dd1551846f7a64ebc1a66a55f1c55e50464c63",
+        "unit_id": "teaching-committee-briefing",
+        "quote": "The committee recommends keeping demonstrators outside two blocks of the square between six and ten in the evening. The exclusion zone is a proportionate safety measure that would keep the emergency route open.\n",
+        "block_id": "b000002",
+        "start": 0,
+        "end": 211,
+        "page": null,
+        "paragraph": 2,
+        "cue_start_ms": null,
+        "cue_end_ms": null,
+        "explanation": "Calls the exclusion zone a proportionate safety measure.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "committee-briefing",
+      "criterion": "custom/custom-3",
+      "status": "positive",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "meets_criterion": 1
+      },
+      "evidence": {
+        "assessment_id": "dfb589ebd665f6b01996d62499764664a1a904831a4935e440409013062906c7",
+        "unit_id": "teaching-committee-briefing",
+        "quote": "The committee recommends keeping demonstrators outside two blocks of the square between six and ten in the evening. The exclusion zone is a proportionate safety measure that would keep the emergency route open.\n",
+        "block_id": "b000002",
+        "start": 0,
+        "end": 211,
+        "page": null,
+        "paragraph": 2,
+        "cue_start_ms": null,
+        "cue_end_ms": null,
+        "explanation": "Recommends adopting the two-block exclusion zone.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "committee-briefing",
+      "criterion": "custom/custom-4",
+      "status": "negative",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "does_not_meet": 1
+      },
+      "evidence": {
+        "assessment_id": "054397dbd504ae055e532c9b1462799ecebdbc6f7d80f93ac37a9b2db29ada09",
+        "unit_id": "teaching-committee-briefing",
+        "quote": "Last September, dispatch logs recorded two ambulance delays while access lanes to Civic Square were blocked.",
+        "block_id": "b000001",
+        "start": 0,
+        "end": 108,
+        "page": null,
+        "paragraph": 1,
+        "cue_start_ms": null,
+        "cue_end_ms": null,
+        "explanation": "States evidence of delays directly.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "rights-briefing",
+      "criterion": "custom/custom-1",
+      "status": "negative",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "does_not_meet": 1
+      },
+      "evidence": {
+        "assessment_id": "1980ff085314fab979afecb7be0f59667836005b91d39e7a2a7e32e766255064",
+        "unit_id": "teaching-rights-briefing",
+        "quote": "The hearing record contains a traffic plan that already routes ambulances around Civic Square. The file contains no analysis of whether that plan fails on demonstration nights.",
+        "block_id": "b000001",
+        "start": 0,
+        "end": 176,
+        "page": null,
+        "paragraph": 1,
+        "cue_start_ms": null,
+        "cue_end_ms": null,
+        "explanation": "Discusses an existing plan and a gap in analysis.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "rights-briefing",
+      "criterion": "custom/custom-2",
+      "status": "negative",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "does_not_meet": 1
+      },
+      "evidence": {
+        "assessment_id": "41228c6d0a4a24be85ed42b7a446f53ffd5361da87ba7bdebfa28b42cf739cfa",
+        "unit_id": "teaching-rights-briefing",
+        "quote": "The exclusion zone would cover a block beyond the emergency route and limit public assembly. The council recommends assigning stewards to intersections and publishing response times.\n",
+        "block_id": "b000002",
+        "start": 0,
+        "end": 183,
+        "page": null,
+        "paragraph": 2,
+        "cue_start_ms": null,
+        "cue_end_ms": null,
+        "explanation": "Characterizes the zone as a burden on assembly.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "rights-briefing",
+      "criterion": "custom/custom-3",
+      "status": "negative",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "does_not_meet": 1
+      },
+      "evidence": {
+        "assessment_id": "6ba1c3a5c9c079420574549fd4a6a78f2e8df1466017198f87ba1bd03bb6dc59",
+        "unit_id": "teaching-rights-briefing",
+        "quote": "The exclusion zone would cover a block beyond the emergency route and limit public assembly. The council recommends assigning stewards to intersections and publishing response times.\n",
+        "block_id": "b000002",
+        "start": 0,
+        "end": 183,
+        "page": null,
+        "paragraph": 2,
+        "cue_start_ms": null,
+        "cue_end_ms": null,
+        "explanation": "Recommends stewards and measurement.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "rights-briefing",
+      "criterion": "custom/custom-4",
+      "status": "negative",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "does_not_meet": 1
+      },
+      "evidence": {
+        "assessment_id": "4bf3da69b935762d47aeedec4846b3d0c7944de8b651b82d036dbefa83888763",
+        "unit_id": "teaching-rights-briefing",
+        "quote": "The hearing record contains a traffic plan that already routes ambulances around Civic Square. The file contains no analysis of whether that plan fails on demonstration nights.",
+        "block_id": "b000001",
+        "start": 0,
+        "end": 176,
+        "page": null,
+        "paragraph": 1,
+        "cue_start_ms": null,
+        "cue_end_ms": null,
+        "explanation": "Questions whether the current plan fails.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "committee-speech",
+      "criterion": "custom/custom-1",
+      "status": "positive",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "meets_criterion": 1
+      },
+      "evidence": {
+        "assessment_id": "11da706f6ddb37c08bac7ed473b5a87a02127d1cd156dfc92d3b24fa000012eb",
+        "unit_id": "teaching-committee-speech",
+        "quote": "We reviewed two dispatch logs. Both describe an ambulance delayed by a blocked road next to Civic Square.",
+        "block_id": "b000001",
+        "start": 0,
+        "end": 105,
+        "page": null,
+        "paragraph": 1,
+        "cue_start_ms": 5000,
+        "cue_end_ms": 11000,
+        "explanation": "Cites dispatch logs documenting emergency delays.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "committee-speech",
+      "criterion": "custom/custom-2",
+      "status": "positive",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "meets_criterion": 1
+      },
+      "evidence": {
+        "assessment_id": "5a8a24ff12cb474b5e11e8077c9e4ee290ffc0a58fcec32b76c20745bb9bb552",
+        "unit_id": "teaching-committee-speech",
+        "quote": "Keep a two-block exclusion zone during these events. It's a practical safeguard for emergency access.",
+        "block_id": "b000002",
+        "start": 0,
+        "end": 101,
+        "page": null,
+        "paragraph": 2,
+        "cue_start_ms": 12500,
+        "cue_end_ms": 20000,
+        "explanation": "Calls the zone a practical safeguard.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "committee-speech",
+      "criterion": "custom/custom-3",
+      "status": "positive",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "meets_criterion": 1
+      },
+      "evidence": {
+        "assessment_id": "68bd738fc5ca2b1760a7c9ecff0a4ee0742c1173a4fa60a4e3321574539657b5",
+        "unit_id": "teaching-committee-speech",
+        "quote": "Keep a two-block exclusion zone during these events. It's a practical safeguard for emergency access.",
+        "block_id": "b000002",
+        "start": 0,
+        "end": 101,
+        "page": null,
+        "paragraph": 2,
+        "cue_start_ms": 12500,
+        "cue_end_ms": 20000,
+        "explanation": "Recommends keeping the two-block exclusion zone.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "committee-speech",
+      "criterion": "custom/custom-4",
+      "status": "negative",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "does_not_meet": 1
+      },
+      "evidence": {
+        "assessment_id": "af87bf5a155b691c7db5bd80b37e68d037d2c49a0bda2de84647bf8eda97cded",
+        "unit_id": "teaching-committee-speech",
+        "quote": "We reviewed two dispatch logs. Both describe an ambulance delayed by a blocked road next to Civic Square.",
+        "block_id": "b000001",
+        "start": 0,
+        "end": 105,
+        "page": null,
+        "paragraph": 1,
+        "cue_start_ms": 5000,
+        "cue_end_ms": 11000,
+        "explanation": "Presents the recorded delay explicitly.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "rights-speech",
+      "criterion": "custom/custom-1",
+      "status": "positive",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "meets_criterion": 1
+      },
+      "evidence": {
+        "assessment_id": "2e67948d4401fec737356f5d1c73d6b7b9704f3c855868af0d24fd13aa1b1c00",
+        "unit_id": "teaching-rights-speech",
+        "quote": "One dispatch log records a delay. That calls for a staffed emergency lane with real-time monitoring.",
+        "block_id": "b000001",
+        "start": 0,
+        "end": 100,
+        "page": null,
+        "paragraph": 1,
+        "cue_start_ms": 5000,
+        "cue_end_ms": 12000,
+        "explanation": "Cites one documented ambulance delay.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "rights-speech",
+      "criterion": "custom/custom-2",
+      "status": "negative",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "does_not_meet": 1
+      },
+      "evidence": {
+        "assessment_id": "2ac2099983b71ff8678b07164874ac200f4278555ea176ddf9a3847a54e40e3f",
+        "unit_id": "teaching-rights-speech",
+        "quote": "The committee says we need to restore order. What kind of order? Measure whether traffic clears and keep the square accessible for demonstrations.",
+        "block_id": "b000002",
+        "start": 0,
+        "end": 146,
+        "page": null,
+        "paragraph": 2,
+        "cue_start_ms": 13000,
+        "cue_end_ms": 22500,
+        "explanation": "Questions the committee's characterization.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "rights-speech",
+      "criterion": "custom/custom-3",
+      "status": "negative",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "does_not_meet": 1
+      },
+      "evidence": {
+        "assessment_id": "ee176cc181ca5ba138d2f4ed627a9f6882feecf87f0736c6967200759ff053af",
+        "unit_id": "teaching-rights-speech",
+        "quote": "One dispatch log records a delay. That calls for a staffed emergency lane with real-time monitoring.",
+        "block_id": "b000001",
+        "start": 0,
+        "end": 100,
+        "page": null,
+        "paragraph": 1,
+        "cue_start_ms": 5000,
+        "cue_end_ms": 12000,
+        "explanation": "Recommends a staffed emergency lane.",
+        "alternative": "",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    },
+    {
+      "document_id": "rights-speech",
+      "criterion": "custom/custom-4",
+      "status": "uncertain",
+      "planned": 1,
+      "retained": 1,
+      "decisions": {
+        "uncertain": 1
+      },
+      "evidence": {
+        "assessment_id": "78e4d92292d001b8cc15315fb481fd782f61733b3873a2b04bbb4ea12adce4e8",
+        "unit_id": "teaching-rights-speech",
+        "quote": "The committee says we need to restore order. What kind of order? Measure whether traffic clears and keep the square accessible for demonstrations.",
+        "block_id": "b000002",
+        "start": 0,
+        "end": 146,
+        "page": null,
+        "paragraph": 2,
+        "cue_start_ms": 13000,
+        "cue_end_ms": 22500,
+        "explanation": "Restore order can imply an earlier failure, but the text questions what order means.",
+        "alternative": "Consider whether the key phrase describes traffic or the demonstrators.",
+        "review_state": "authored teaching label",
+        "review_event_id": null
+      }
+    }
+  ],
+  "criteria": [
+    {
+      "key": "custom/custom-1",
+      "label": "Documented safety risk",
+      "kind": "descriptive",
+      "card_sha256": "06480baf98f423d1ced1dfdb299feba4b2218ce500b712b807eafdb8cb05afb8",
+      "positive": 3,
+      "negative": 1,
+      "uncertain": 0,
+      "inapplicable": 0,
+      "incomplete": 0,
+      "determinate": 4,
+      "eligible": 4,
+      "planned": 4,
+      "retained": 4,
+      "rate": 0.75,
+      "coverage": 1.0,
+      "processing_coverage": 1.0
+    },
+    {
+      "key": "custom/custom-2",
+      "label": "Favorable appraisal of restrictions",
+      "kind": "descriptive",
+      "card_sha256": "b89c12dce3d02aea6a6935b7d933281630c85449fa04e7216a65dc975bad4056",
+      "positive": 2,
+      "negative": 2,
+      "uncertain": 0,
+      "inapplicable": 0,
+      "incomplete": 0,
+      "determinate": 4,
+      "eligible": 4,
+      "planned": 4,
+      "retained": 4,
+      "rate": 0.5,
+      "coverage": 1.0,
+      "processing_coverage": 1.0
+    },
+    {
+      "key": "custom/custom-3",
+      "label": "Restriction as remedy",
+      "kind": "descriptive",
+      "card_sha256": "15e7a47ce17b82d7154d61d7a1543828218f3f13d1800f23f50982f93f1bca1e",
+      "positive": 2,
+      "negative": 2,
+      "uncertain": 0,
+      "inapplicable": 0,
+      "incomplete": 0,
+      "determinate": 4,
+      "eligible": 4,
+      "planned": 4,
+      "retained": 4,
+      "rate": 0.5,
+      "coverage": 1.0,
+      "processing_coverage": 1.0
+    },
+    {
+      "key": "custom/custom-4",
+      "label": "Prior controls presumed ineffective",
+      "kind": "descriptive",
+      "card_sha256": "b562efad97e610d6e7b40b1ad20dd4705888226aca10e41088021a9076cca521",
+      "positive": 0,
+      "negative": 3,
+      "uncertain": 1,
+      "inapplicable": 0,
+      "incomplete": 0,
+      "determinate": 3,
+      "eligible": 4,
+      "planned": 4,
+      "retained": 4,
+      "rate": 0.0,
+      "coverage": 0.75,
+      "processing_coverage": 1.0
+    }
+  ],
+  "timeline": [
+    {
+      "period": "2026-09",
+      "criterion": "custom/custom-1",
+      "positive": 3,
+      "negative": 1,
+      "uncertain": 0,
+      "inapplicable": 0,
+      "incomplete": 0,
+      "determinate": 4,
+      "eligible": 4,
+      "planned": 4,
+      "retained": 4,
+      "rate": 0.75,
+      "coverage": 1.0,
+      "processing_coverage": 1.0
+    },
+    {
+      "period": "2026-09",
+      "criterion": "custom/custom-2",
+      "positive": 2,
+      "negative": 2,
+      "uncertain": 0,
+      "inapplicable": 0,
+      "incomplete": 0,
+      "determinate": 4,
+      "eligible": 4,
+      "planned": 4,
+      "retained": 4,
+      "rate": 0.5,
+      "coverage": 1.0,
+      "processing_coverage": 1.0
+    },
+    {
+      "period": "2026-09",
+      "criterion": "custom/custom-3",
+      "positive": 2,
+      "negative": 2,
+      "uncertain": 0,
+      "inapplicable": 0,
+      "incomplete": 0,
+      "determinate": 4,
+      "eligible": 4,
+      "planned": 4,
+      "retained": 4,
+      "rate": 0.5,
+      "coverage": 1.0,
+      "processing_coverage": 1.0
+    },
+    {
+      "period": "2026-09",
+      "criterion": "custom/custom-4",
+      "positive": 0,
+      "negative": 3,
+      "uncertain": 1,
+      "inapplicable": 0,
+      "incomplete": 0,
+      "determinate": 3,
+      "eligible": 4,
+      "planned": 4,
+      "retained": 4,
+      "rate": 0.0,
+      "coverage": 0.75,
+      "processing_coverage": 1.0
+    }
+  ],
+  "comparison": {
+    "id": "civic-square-comparison",
+    "question": "How do the committee and the rights council frame the same proposal?",
+    "packet_sha256": "19bdd7d94b7c8fdf40f1524584993e2a2ff5c76ed04adad9cac95737d05f8e91",
+    "matching": {
+      "matching_fields": [
+        "event",
+        "topic",
+        "genre"
+      ],
+      "max_date_gap_days": 7
+    },
+    "pairs": [
+      {
+        "left_document_id": "committee-briefing",
+        "right_document_id": "rights-briefing",
+        "date_gap_days": 1,
+        "matched_on": {
+          "event": "Civic Square hearing",
+          "topic": "exclusion zone",
+          "genre": "policy briefing"
+        }
+      },
+      {
+        "left_document_id": "committee-speech",
+        "right_document_id": "rights-speech",
+        "date_gap_days": 0,
+        "matched_on": {
+          "event": "Civic Square hearing",
+          "topic": "exclusion zone",
+          "genre": "speech transcript"
+        }
+      }
+    ],
+    "excluded": [],
+    "criteria": [
+      {
+        "key": "custom/custom-1",
+        "label": "Documented safety risk",
+        "resolved": 2,
+        "total": 2,
+        "difference_pp": 50.0,
+        "pairs": [
+          {
+            "left_document_id": "committee-briefing",
+            "right_document_id": "rights-briefing",
+            "left_status": "positive",
+            "right_status": "negative"
+          },
+          {
+            "left_document_id": "committee-speech",
+            "right_document_id": "rights-speech",
+            "left_status": "positive",
+            "right_status": "positive"
+          }
+        ]
+      },
+      {
+        "key": "custom/custom-2",
+        "label": "Favorable appraisal of restrictions",
+        "resolved": 2,
+        "total": 2,
+        "difference_pp": 100.0,
+        "pairs": [
+          {
+            "left_document_id": "committee-briefing",
+            "right_document_id": "rights-briefing",
+            "left_status": "positive",
+            "right_status": "negative"
+          },
+          {
+            "left_document_id": "committee-speech",
+            "right_document_id": "rights-speech",
+            "left_status": "positive",
+            "right_status": "negative"
+          }
+        ]
+      },
+      {
+        "key": "custom/custom-3",
+        "label": "Restriction as remedy",
+        "resolved": 2,
+        "total": 2,
+        "difference_pp": 100.0,
+        "pairs": [
+          {
+            "left_document_id": "committee-briefing",
+            "right_document_id": "rights-briefing",
+            "left_status": "positive",
+            "right_status": "negative"
+          },
+          {
+            "left_document_id": "committee-speech",
+            "right_document_id": "rights-speech",
+            "left_status": "positive",
+            "right_status": "negative"
+          }
+        ]
+      },
+      {
+        "key": "custom/custom-4",
+        "label": "Prior controls presumed ineffective",
+        "resolved": 1,
+        "total": 2,
+        "difference_pp": 0.0,
+        "pairs": [
+          {
+            "left_document_id": "committee-briefing",
+            "right_document_id": "rights-briefing",
+            "left_status": "negative",
+            "right_status": "negative"
+          }
+        ]
+      }
+    ],
+    "interpretation": "The difference describes these two fictional matched pairs."
+  },
+  "index": {
+    "version": "doxa-scorecard-1.0",
+    "name": "Public-order justification index",
+    "weights": {
+      "custom/custom-1": 40,
+      "custom/custom-2": 25,
+      "custom/custom-3": 35
+    },
+    "minimum_coverage": 0.8,
+    "status": "scored",
+    "components": [
+      {
+        "key": "custom/custom-1",
+        "weight": 40,
+        "contribution": 30.0,
+        "coverage": 1.0
+      },
+      {
+        "key": "custom/custom-2",
+        "weight": 25,
+        "contribution": 12.5,
+        "coverage": 1.0
+      },
+      {
+        "key": "custom/custom-3",
+        "weight": 35,
+        "contribution": 17.5,
+        "coverage": 1.0
+      }
+    ],
+    "value": 60.0,
+    "range": [
+      60.0,
+      60.0
+    ],
+    "equal_weight": 58.333333333333336
+  },
+  "method": {
+    "unit": "one deduplicated source per criterion",
+    "rate": "positive sources / determinate sources",
+    "coverage": "determinate sources / (selected sources minus fully inapplicable sources)",
+    "processing": "retained explicit decisions / planned source-unit decisions"
+  },
+  "snapshot_sha256": "efaf16f9606c99addeb3e06d9495ac49617043ff869e2cfac6c98eeab496c5f8"
+}

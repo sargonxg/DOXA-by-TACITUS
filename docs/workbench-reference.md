@@ -4,7 +4,7 @@ This reference preserves the research, operation and release notes through 0.6.1
 
 DOXA is a browser research workspace for discourse, political framing and contextual prejudice analysis. Import sources, declare an analytical framework, inspect exact passages, compare patterns and download a reproducible research record.
 
-**Bias Detection as a Service** means an open-source toolkit you run on your computer or in your own cloud, with optional [TACITUS methodology and deployment support](https://tacitus.me/doxa/). This repository does not provision a hosted SaaS account. The software is a **research preview**: source anchoring and processing coverage are checked; interpretation accuracy requires independent human reference labels.
+**Bias Detection as a Service** means an open-source toolkit you run on your computer or in your own cloud, with optional [TACITUS methodology and deployment support](https://tacitus.me/#doxa). This repository does not provision a hosted SaaS account. The software is a **research preview**: source anchoring and processing coverage are checked; interpretation accuracy requires independent human reference labels.
 
 **[From research workbench to paid service: commercial roadmap](../docs/commercial-service-roadmap.md).** The proposed US launch includes company language audits, political/media analysis and personal email review together, starting with guided paid pilots and expert-reviewed reports. The roadmap distinguishes the implemented pilot foundation from remaining independent validation, qualified customer delivery, OAuth connectors, subscriptions, shared tenancy and production qualification.
 
@@ -12,9 +12,9 @@ DOXA is a browser research workspace for discourse, political framing and contex
 
 **In 60 Global Voices articles, whose words triggered the flags?** The model flagged passages in **14 articles**. It attributed **45 of 49 flagged readings** to people the articles quoted or reported. In a story about a Czech student, for example, it flagged the pressure to remove her hijab and recorded uncertainty about whether that case established an institutional pattern.
 
-**[Open the interactive study](https://doxa-public-study.giuliocatanzariti.workers.dev/)** · **[Read the nine-page PDF](../frontend/public/studies/muslim-coverage/report.pdf)** · **[Download the evidence workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx)** · **[Get all 60 texts and decisions](../frontend/public/studies/muslim-coverage/sources.zip)**.
+**[Read the study](reading-muslim-coverage.md)** · **[Read the nine-page PDF](../frontend/public/studies/muslim-coverage/report.pdf)** · **[Download the evidence workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx)** · **[Get all 60 texts and decisions](../frontend/public/studies/muslim-coverage/sources.zip)**.
 
-[![Open the field study showing how many articles triggered each criterion.](../docs/images/muslim-coverage-dashboard.png)](https://doxa-public-study.giuliocatanzariti.workers.dev/)
+[![Open the field study showing how many articles triggered each criterion.](../docs/images/muslim-coverage-dashboard.png)](reading-muslim-coverage.md)
 
 Select a bar to open the articles behind it. Six annotated passages include a possible mistaken flag and a possible miss. Ten articles per year were selected before opening the recorded model outcomes. These counts describe the selected news coverage. Independent interpretation accuracy has yet to be measured. [Sampling, limitations and academic references](../docs/reading-muslim-coverage.md).
 

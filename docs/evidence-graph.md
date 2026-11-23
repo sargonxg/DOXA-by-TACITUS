@@ -1,5 +1,15 @@
 # The DOXA study evidence graph
 
+## Scorecard graph
+
+The scorecard export adds one `doxa:SourceCriterion` node for every selected source and criterion. The node records the outcome, retained and planned decisions, and a link to a representative decision when one has exact evidence. Each decision links to its run, criterion, and passage. Passages retain Unicode offsets and caption cue times where available. The graph stores the saved scorecard's checksum. [Example graph](../frontend/public/studies/scorecard/scorecard-evidence.jsonld)
+
+Count `positive` and `negative` source nodes for a criterion to reproduce its denominator. Keep `uncertain`, `incomplete`, and `inapplicable` nodes visible when assessing coverage. For the Civic Square example, this query returns three positives, four determinate sources, and a rate of 0.75.
+
+```sh
+python -m doxa.scorecard_graph frontend/public/studies/scorecard/scorecard-evidence.jsonld custom/custom-1
+```
+
 The published graph connects **60 source versions, 137 scored units, 822 decisions
 and six frozen criteria**. The 16,855 decision-to-passage links resolve to 3,064
 distinct passages. Six editorial notes lead readers through selected cases.
@@ -27,7 +37,7 @@ decision, its criterion, the original run and the exact passage in the credited
 article. The linked second decision is uncertain about a repeated institutional
 practice. Both use the same scored unit. The second command returns every recorded
 decision for the criterion, including outcomes summarized as unflagged. [Open the
-school case](https://doxa-public-study.giuliocatanzariti.workers.dev/#case-school-hijab)
+school case](reading-muslim-coverage.md#review-a-reading)
 
 ## Read the vocabulary
 

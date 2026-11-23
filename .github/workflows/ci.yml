@@ -52,6 +52,7 @@ jobs:
       - run: python scripts/verify_repository.py
       - run: python scripts/build_bias_study.py
       - run: python scripts/build_antisemitism_case.py
+      - run: python scripts/build_scorecard_example.py
   browser:
     runs-on: ubuntu-latest
     needs: frontend

@@ -29,5 +29,5 @@ are teaching material for that process. [Evaluation protocol](methodology-v06.md
 | Field | Copy |
 | --- | --- |
 | Description | Open-source research workbench for antisemitism, anti-Muslim bias, and political framing. Trace model readings to exact passages and frozen criteria. |
-| Website | [tacitus.me/doxa](https://tacitus.me/doxa/) |
+| Website | [TACITUS homepage](https://tacitus.me/#doxa) |
 | Topics | `antisemitism` `bias-analysis` `discourse-analysis` `knowledge-graph` `political-framing` `provenance` `research-tools` |

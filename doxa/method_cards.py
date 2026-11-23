@@ -60,7 +60,7 @@ def _reference_keys(lens_id, criterion_id):
         keys.append("stance")
     if lens_id in {"discourse", "political-framing", "language-norms"}:
         keys.extend(["framing", "frames_corpus"])
-    if criterion_id in {"evaluative_language", "source_voice_selection", "comparator_dependent_asymmetry"}:
+    if criterion_id in {"evaluative_language", "source_voice_foregrounding", "comparator_dependent_asymmetry"}:
         keys.append("basil")
     return list(dict.fromkeys(keys))
 

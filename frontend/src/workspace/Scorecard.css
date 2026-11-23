@@ -1,0 +1,21 @@
+.w-scorecard { padding: 1.1rem; border: 1px solid var(--line, #ccd8d8); border-radius: .75rem; }
+.w-scorecard > h2 { display: flex; gap: .5rem; align-items: center; font-size: 1.15rem; margin: 0 0 .6rem; }
+.w-score-actions { display: flex; align-items: end; flex-wrap: wrap; gap: .65rem; margin: .65rem 0; }
+.w-score-actions label, .w-scorecard details > label { display: grid; gap: .2rem; font-size: .85rem; }
+.w-scorecard select { color: inherit; background: var(--surface, #fff); border: 1px solid var(--line, #c9d6d6); padding: .4rem; border-radius: .3rem; max-width: 100%; }
+.w-score-question { font-size: 1.05rem; font-weight: 650; }
+.w-score-index { padding: .7rem .9rem; border-inline-start: 4px solid #23917f; background: rgba(35,145,127,.1); }
+.w-score-index h3 { margin: 0 0 .3rem; font-size: 1rem; }
+.w-score-index strong { font-size: 1.45rem; }
+.w-score-scroll { overflow-x: auto; }
+.w-score-table { width: 100%; border-collapse: collapse; font-size: .85rem; margin: .6rem 0; }
+.w-score-table caption { text-align: start; font-weight: 650; padding: .45rem 0; }
+.w-score-table th, .w-score-table td { padding: .45rem; min-width: 7rem; text-align: start; vertical-align: top; border-block-end: 1px solid var(--line, #ccd8d8); }
+.w-score-table small { display: block; font-size: .75rem; font-weight: 400; }
+.w-score-table meter { width: 5rem; height: .75rem; display: block; margin: 0 0 .25rem; }
+.w-score-table [data-outcome="positive"] { background-color: rgba(35,145,127,.16); }
+.w-score-table [data-outcome="uncertain"], .w-score-table [data-outcome="incomplete"] { background-color: rgba(191,134,47,.12); }
+.w-score-table blockquote { margin: .4rem 0; border-inline-start: 2px solid #23917f; padding-inline-start: .45rem; }
+.w-score-table details[open] { min-width: min(16rem, 70vw); }
+.w-score-example { border-block-start: 1px solid var(--line, #ccd8d8); margin-top: .9rem; padding-top: .5rem; }
+.w-score-link { text-decoration: underline; margin-inline-end: .7rem; display: inline-block; }

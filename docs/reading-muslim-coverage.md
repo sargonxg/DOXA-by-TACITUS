@@ -2,7 +2,7 @@
 
 **Who is speaking when a news story contains an account of prejudice?** In this sample, DOXA’s recorded model flagged passages in **14 of 60 articles**. Of the **49 flagged decisions**, it attributed 44 to reported speakers, one to a quoted speaker and four to article authors. Reporting that a student experienced discrimination can trigger a flag. A reader has to examine what the writer actually says about that treatment.
 
-**[Open the interactive study](https://doxa-public-study.giuliocatanzariti.workers.dev/)** · [Study PDF](../frontend/public/studies/muslim-coverage/report.pdf) · [Complete evidence workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx) · [60 attributed texts and original decisions](../frontend/public/studies/muslim-coverage/sources.zip) · [Manifest and checksums](../examples/muslim-coverage.manifest.json).
+[Study PDF](../frontend/public/studies/muslim-coverage/report.pdf) · [Complete evidence workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx) · [60 attributed texts and original decisions](../frontend/public/studies/muslim-coverage/sources.zip) · [Manifest and checksums](../examples/muslim-coverage.manifest.json).
 
 ![Study dashboard showing the two frameworks and the article counts for each of six criteria.](images/muslim-coverage-dashboard.png)
 
@@ -16,7 +16,7 @@ The walkthroughs are AI-authored editorial readings. The original article, exact
 
 ## Review a reading
 
-1. **State the criterion before opening the outcome.** In the school case, write down what would satisfy an unequal-treatment reading and what would support an institutional pattern. The second question needs evidence about a pattern of decisions or practices. [School case](https://doxa-public-study.giuliocatanzariti.workers.dev/#case-school-hijab)
+1. **State the criterion before opening the outcome.** In the school case, write down what would satisfy an unequal-treatment reading and what would support an institutional pattern. The second question needs evidence about a pattern of decisions or practices. [School case](../frontend/public/studies/muslim-coverage/report.pdf)
 2. **Read the full paragraph and the adjacent context.** Identify the person who reportedly imposed the condition and how the author represented it. Record whether the surrounding account changes the target, the author's position or the evidence for repetition.
 3. **Write an independent outcome with a passage.** Save the original words and the location. Identify what additional evidence would resolve uncertainty. Once you have written your reading, compare it with the archived decision and the editorial question. [Graph record and offline query](evidence-graph.md)
 4. **Compare independent readings at the article or story level.** For a validation study, preregister the frame and required evidence, recruit qualified independent reviewers, record first-pass outcomes before showing model outputs, and retain adjudication and disagreements. Report results by criterion with the number of independent groups, unresolved cases and coverage. [Reference panels and evaluation gates](methodology-v06.md)
@@ -50,7 +50,7 @@ shows whether one year's ten articles drive the count in this selection. The
 workbook records all six exclusions for each criterion so readers can inspect
 which year changes the count. Both checks retain the saved model decisions and
 make no inference about a wider population or the frequency of model error.
-[Interactive table](https://doxa-public-study.giuliocatanzariti.workers.dev/#sensitivity)
+[Get the complete study workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx)
 
 ## How the 60 articles were selected
 
@@ -77,9 +77,9 @@ DOXA reused the archived Gemma readings from the same source versions. It checke
 
 ## Open it locally or reproduce it
 
-In DOXA v0.8.0, choose **Read the 60-article study** on the main dashboard. Select a criterion, filter by publication year and follow a case to its frozen method and exact passage. The reader opens without a model, credentials or an upload. [Mobile reader](images/muslim-coverage-mobile.png)
+In the local DOXA app, choose **Read the 60-article study** on the main dashboard. Select a criterion, filter by publication year and follow a case to its frozen method and exact passage. The reader opens without a model, credentials or an upload. [Mobile reader](images/muslim-coverage-mobile.png)
 
-For standalone use, unzip the **offline study** from the release and open `index.html` in a browser. Keep the sibling reader script, PDF, workbook, source ZIP and JSON-LD graph together for local downloads. The source ZIP includes 60 original attributed TXT files and `study.json`, with source blocks, the six original rubric criteria, unit statuses, full selected model records, archive locators and editorial notes. Other criteria from the parent run are available in the original archive. [Release downloads](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.8.0)
+For standalone use, unzip the **offline study** from the release and open `index.html` in a browser. Keep the sibling reader script, PDF, workbook, source ZIP and JSON-LD graph together for local downloads. The source ZIP includes 60 original attributed TXT files and `study.json`, with source blocks, the six original rubric criteria, unit statuses, full selected model records, archive locators and editorial notes. Other criteria from the parent run are available in the original archive. [Release downloads](https://github.com/sargonxg/DOXA-by-TACITUS/releases/latest)
 
 From a repository checkout with DOXA’s Python dependencies installed, verify the edition against the frozen corpus:
 

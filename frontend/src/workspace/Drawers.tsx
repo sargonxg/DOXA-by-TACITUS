@@ -13,6 +13,7 @@ import {
   Layers3,
   LoaderCircle,
   Microscope,
+  Pause,
   Play,
   Plus,
   RefreshCw,
@@ -174,12 +175,12 @@ function ImportPanel({
         }}
       >
         <Upload size={29} strokeWidth={1.4} />
-        <strong>Drop documents or a TXT archive</strong>
-        <span>TXT, Markdown, PDF, DOCX, saved HTML, EML, MBOX, or ZIP</span>
+        <strong>Drop documents, transcripts, or an archive</strong>
+        <span>TXT, Markdown, PDF, DOCX, saved HTML, SRT, WebVTT, EML, MBOX, or ZIP</span>
         <input
           type="file"
           multiple
-          accept=".txt,.md,.pdf,.docx,.html,.htm,.eml,.mbox,.zip"
+          accept=".txt,.md,.markdown,.pdf,.docx,.html,.htm,.srt,.vtt,.eml,.mbox,.zip"
           disabled={busy}
           onChange={(event) => {
             if (event.target.files) void onImport(event.target.files);
@@ -265,7 +266,7 @@ function AnalysisPanel({
   const access = useAccessSession();
   const [question, setQuestion] = useState(
     pilotBrief?.question ||
-      "Which contextual indicators and competing frames appear in this corpus, and who expresses them?",
+      "What political frames, evidence standards, and competing interpretations appear in these sources?",
   );
   const [provider, setProvider] = useState("cloudflare");
   const [model, setModel] = useState("@cf/google/gemma-4-26b-a4b-it");
@@ -293,6 +294,25 @@ function AnalysisPanel({
   const [quotes, setQuotes] = useState<Item[]>([]);
   const [quoteId, setQuoteId] = useState("");
   const [learning, setLearning] = useState<Item>({});
+  const [laptop, setLaptop] = useState(false);
+  const [laptopWork, setLaptopWork] = useState<Item | null>(null);
+  const [indexEnabled, setIndexEnabled] = useState(false);
+  const [indexName, setIndexName] = useState("Project framing index");
+  const [weights, setWeights] = useState<Record<string, string>>({});
+  const customLines = custom.split("\n").filter((line) => line.trim());
+  const indexOptions = [
+    ...(selected.includes("political-framing") ? lenses.find((lens) => lens.id === "political-framing")?.criteria || [] : [])
+      .filter((criterion) => criterion.id !== "comparator_dependent_asymmetry")
+      .map((criterion) => ({ key: "political-framing/" + criterion.id, label: criterion.label })),
+    ...(customKind === "descriptive" ? customLines : [])
+      .map((line, index) => ({ key: "custom/custom-" + (index + 1), label: line.slice(0, 100) })),
+  ];
+  const indexWeights = Object.fromEntries(indexOptions
+    .map(({ key }) => [key, Number(weights[key] || 0)] as const)
+    .filter(([, value]) => value !== 0));
+  const indexWeightTotal = Object.values(indexWeights).reduce((a, b) => a + b, 0);
+  const validIndex = !indexEnabled || (indexName.trim() && Object.keys(indexWeights).length >= 2 &&
+    indexWeightTotal === 100 && Object.values(indexWeights).every((value) => Number.isInteger(value) && value > 0));
   useEffect(() => {
     void request<Item>(`/v3/projects/${project}/learning`)
       .then(setLearning)
@@ -351,7 +371,7 @@ function AnalysisPanel({
     try {
       const result = await request<Item>("/v3/models/health", {
         method: "POST",
-        body: JSON.stringify({ provider, model, ...tokenPrices() }),
+        body: JSON.stringify({ provider, model, ...tokenPrices(), ...(laptop ? { execution_profile: "laptop-8gb-v1" } : {}) }),
       });
       setHealth(result);
       setHealthSelection(selection);
@@ -361,22 +381,7 @@ function AnalysisPanel({
       setChecking(false);
     }
   }
-  async function submit() {
-    if (!pricingReady)
-      return onNotice(
-        "Enter finite, non-negative input and output token rates for this endpoint. Blank rates are allowed only after the server confirms local inference.",
-        true,
-      );
-    if (!selected.length && !custom.trim())
-      return onNotice(
-        "Select a framework or supply explicit custom criteria.",
-        true,
-      );
-    if (!["ollama", "lexical"].includes(provider) && !consent)
-      return onNotice(
-        "Explicitly enable text transfer to start remote inference.",
-        true,
-      );
+  function analysisBody(): Item {
     const body: Item = {
       query_id: query?.query_id,
       methodology_version: "3.0",
@@ -396,6 +401,8 @@ function AnalysisPanel({
           }
         : {}),
       ...tokenPrices(),
+      ...(laptop ? { execution_profile: "laptop-8gb-v1" } : {}),
+      ...(indexEnabled ? { index_spec: { name: indexName, weights: indexWeights } } : {}),
     };
     if (memory !== "active") body.learning_snapshot_id = memory || null;
     if (custom.trim())
@@ -403,17 +410,35 @@ function AnalysisPanel({
         id: "custom",
         name: customName || "Custom inquiry",
         description: question.slice(0, 2000),
-        criteria: custom
-          .split("\n")
-          .filter((line) => line.trim())
-          .map((line, index) => ({
+        criteria: customLines.map((line, index) => ({
             id: `custom-${index + 1}`,
             label: line.slice(0, 100),
             description: line,
             kind: customKind,
           })),
       };
-    await onRun(body);
+    return body;
+  }
+  async function preflight(): Promise<boolean> {
+    try {
+      const result = await request<Item>("/v3/projects/" + encodeURIComponent(project) + "/preflight", {
+        method: "POST", body: JSON.stringify(analysisBody()),
+      });
+      setLaptopWork(result);
+      return result.fits === true;
+    } catch (reason) {
+      onNotice(message(reason), true);
+      return false;
+    }
+  }
+  async function submit() {
+    if (!pricingReady) return onNotice("Set finite input and output token rates for the selected endpoint.", true);
+    if (!selected.length && !custom.trim()) return onNotice("Select a framework or supply explicit custom criteria.", true);
+    if (!["ollama", "lexical"].includes(provider) && !consent)
+      return onNotice("Explicitly enable text transfer to start remote inference.", true);
+    if (!validIndex) return onNotice("Give at least two eligible criteria positive whole weights totaling 100%.", true);
+    if (laptop && !await preflight()) return;
+    await onRun(analysisBody());
   }
   return (
     <>
@@ -431,7 +456,22 @@ function AnalysisPanel({
           declared context. Expert report review remains pending.
         </p>
       ) : null}
-      <label className="w-pilot-check"><input type="checkbox" checked={structureContext} onChange={(event) => setStructureContext(event.target.checked)} />
+      {access?.mode === "local" && !pilotBrief?.revision && <div className="w-info">
+        <HardDrive size={17} />
+        <div><label className="w-pilot-check"><input type="checkbox" checked={laptop} onChange={(event) => {
+          const enabled = event.target.checked;
+          setLaptop(enabled); setLaptopWork(null); resetPricing(); setConsent(false);
+          setProvider(enabled ? "ollama" : "cloudflare");
+          setModel(enabled ? "qwen3.5:2b-q4_K_M" : "@cf/google/gemma-4-26b-a4b-it");
+          setBudget(enabled ? "0" : "5");
+          if (enabled && !custom.trim()) setSelected(["political-framing"]);
+        }} /> Use the bounded laptop preset</label>
+        <p>Run Qwen3.5 2B Q4 through local Ollama. Up to 8 sources, 24 source units, and 6 criteria.</p>
+        {laptop && <Button variant="outline" onClick={() => void preflight()}>Check laptop workload</Button>}
+        {laptop && laptopWork && <p role="status">{number(laptopWork.documents)} sources · {String(laptopWork.units ?? "unmeasured")} units · {number(laptopWork.criteria)} criteria.
+          {laptopWork.fits === true ? " This selection fits the preset." : " Select fewer sources or criteria."}</p>}</div>
+      </div>}
+      <label className="w-pilot-check"><input type="checkbox" checked={structureContext && !laptop} disabled={laptop} onChange={(event) => setStructureContext(event.target.checked)} />
         Include structure-aware context: headings, relevant message ancestry and bounded source context
       </label>
       <p className="w-footnote">This opt-in policy creates a new method version. Missing context remains explicit; reported speech is not automatically author endorsement.</p>
@@ -515,7 +555,8 @@ function AnalysisPanel({
         Reviewed example memory
         <select
           aria-label="Reviewed example memory"
-          value={memory}
+          value={laptop ? "" : memory}
+          disabled={laptop}
           onChange={(event) => setMemory(event.target.value)}
         >
           <option value="active">
@@ -532,6 +573,19 @@ function AnalysisPanel({
           ))}
         </select>
       </label>
+      {access?.mode === "local" && (indexOptions.length >= 2 || indexEnabled) && <details className="w-details">
+        <summary>Project-specific weighted index</summary>
+        <label className="w-pilot-check"><input type="checkbox" checked={indexEnabled}
+          onChange={(event) => setIndexEnabled(event.target.checked)} /> Freeze weights before analysis</label>
+        {indexEnabled && <>
+          <label>Index name <input value={indexName} maxLength={160} onChange={(event) => setIndexName(event.target.value)} /></label>
+          {indexOptions.map(({ key, label }) => <label key={key}>{label} · weight %
+            <input type="number" min={0} max={99} step={1} value={weights[key] || ""}
+              onChange={(event) => setWeights({ ...weights, [key]: event.target.value })} />
+          </label>)}
+          <p>{indexWeightTotal}% allocated. Weight at least two criteria and total 100%.</p>
+        </>}
+      </details>}
       <p className="w-footnote">
         A draft snapshot can be selected for a candidate evaluation run.
         Activation remains separately gated and affects future runs only.
@@ -555,6 +609,7 @@ function AnalysisPanel({
           <select
             aria-label="Provider"
             value={provider}
+            disabled={laptop}
             onChange={(event) => {
               const value = event.target.value;
               setProvider(value);
@@ -582,6 +637,7 @@ function AnalysisPanel({
           <input
             type="number"
             value={budget}
+            disabled={laptop}
             min="0"
             max="10000"
             step="0.1"
@@ -595,6 +651,7 @@ function AnalysisPanel({
           aria-label="Model"
           list="w-model-options"
           value={model}
+          disabled={laptop}
           placeholder={
             endpointPricing
               ? "Exact model ID on the configured endpoint"
@@ -1120,7 +1177,7 @@ function JobsPanel({
   onRefresh,
 }: Props) {
   const [budget, setBudget] = useState<Record<string, string>>({});
-  async function action(run: AnalysisRun, type: "cancel" | "resume") {
+  async function action(run: AnalysisRun, type: "pause" | "cancel" | "resume") {
     if (
       type === "resume" &&
       run.config?.verification_of &&
@@ -1146,7 +1203,7 @@ function JobsPanel({
       onNotice(
         type === "cancel"
           ? "Cancellation requested; committed work stays available."
-          : "Run resumed from saved checkpoints.",
+          : type === "pause" ? "Analysis will pause after its current task settles." : "Run resumed from saved checkpoints.",
       );
     } catch (error) {
       onNotice(message(error), true);
@@ -1204,6 +1261,8 @@ function JobsPanel({
                   </span>
                 </div>
                 <div className="w-job-actions">
+                  {["running", "queued"].includes(run.status) && <Button variant="outline"
+                    onClick={() => void action(run, "pause")}><Pause size={12} /> Pause</Button>}
                   {["running", "queued"].includes(run.status) && (
                     <Button
                       variant="outline"
@@ -1218,6 +1277,7 @@ function JobsPanel({
                       "partial",
                       "failed",
                       "paused_budget",
+                      "paused_operator",
                       "cancelled",
                     ].includes(run.status) && (
                       <>
@@ -1226,9 +1286,10 @@ function JobsPanel({
                           type="number"
                           min="0"
                           max={run.config?.verification_of ? 2 : 10000}
+                          disabled={!!run.config?.execution_profile}
                           value={
                             budget[run.id] ??
-                            String(run.config?.budget_usd || 5)
+                            String(run.config?.budget_usd ?? 5)
                           }
                           onChange={(event) =>
                             setBudget((previous) => ({

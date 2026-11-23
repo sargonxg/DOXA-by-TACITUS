@@ -1,11 +1,11 @@
-# Whose accusation is it? An antisemitism case study
+# Reading antisemitism across three frameworks
 
 An article about Czech coverage of Israel’s war in Gaza quotes a poster in
 Plzeň that accused Jews collectively. The model flagged the reported wording
 under IHRA’s hostility or stereotyping criterion. The same scored unit has
 compact outcomes of criterion unmet under the Jerusalem Declaration and Nexus
 trope criteria. The case invites a reader to explain that divergence with the
-source and the three frozen rules in view. [Open the worked case](https://doxa-public-study.giuliocatanzariti.workers.dev/antisemitism/)
+source and the three frozen rules in view. [Open the case PDF](../frontend/public/studies/antisemitism/antisemitism-case.pdf)
 
 [Tagged PDF](../frontend/public/studies/antisemitism/antisemitism-case.pdf) ·
 [81-row decision ledger](../frontend/public/studies/antisemitism/decisions.csv) ·
@@ -20,7 +20,7 @@ source and the three frozen rules in view. [Open the worked case](https://doxa-p
    and a collective curse. For this reading, the textual cue is an accusation
    directed at Jews as a group. The Global Voices extraction establishes what the
    article says. Verify the original poster and translation before making claims
-   about the original item. [Plzeň reading](https://doxa-public-study.giuliocatanzariti.workers.dev/antisemitism/#plzen-poster)
+   about the original item. [Plzeň reading](#read-the-evidence-in-layers)
 2. **The voice.** The article attributes the poster to a shop owner. The journalistic
    frame, the quoted accusation, and the prosecutor’s reported disposition each
    have their own speaker and evidentiary status. Model metadata records the
@@ -31,7 +31,7 @@ source and the three frozen rules in view. [Open the worked case](https://doxa-p
    Declaration and Nexus trope decisions have no written rationale. A reviewer
    should read each rule, state their interpretation, and investigate the model
    divergence before drawing conclusions about the framework or the classifier.
-   [Compare all nine decisions](https://doxa-public-study.giuliocatanzariti.workers.dev/antisemitism/#three-frameworks)
+   [Compare all nine decisions](../frontend/public/studies/antisemitism/decisions.csv)
 
 The report says the prosecutor canceled the prosecution. Legal disposition,
 original wording, and interpretation are separate questions. Record precisely
@@ -45,7 +45,7 @@ dehumanization or threats, blood libel, Holocaust denial or distortion, a shift
 from a political target to Jews as Jews, and a misassigned speaker. The cue
 about blood libel has a specific historical meaning. It refers to a false
 ritual-murder allegation. The quoted Plzeň wording contains a different
-religious accusation. [Red flags and follow-up questions](https://doxa-public-study.giuliocatanzariti.workers.dev/antisemitism/#red-flags) · [US Holocaust Memorial Museum on blood libel](https://encyclopedia.ushmm.org/content/en/article/blood-libel)
+religious accusation. [Red flags and follow-up questions](#research-red-flags) · [US Holocaust Memorial Museum on blood libel](https://encyclopedia.ushmm.org/content/en/article/blood-libel)
 
 The three frameworks call for context, with different operational criteria
 for Israel-related speech. The IHRA working definition uses contextual
@@ -64,7 +64,7 @@ frameworks. [IHRA](https://holocaustremembrance.com/resources/working-definition
 | **Holocaust analogy in Ukrainian diplomacy** | Does the text quote a denial, describe an analogy, or report that someone objected to it? Identify what the original speech would need to show before coding denial or distortion. |
 | **Remembering Moshe Ha Elion** | What is the function of the word *Holocaust* in this obituary? The reference identifies a survivor. A keyword retrieves the passage while the surrounding language determines the reading. |
 
-[Open the three contrast cases](https://doxa-public-study.giuliocatanzariti.workers.dev/antisemitism/#contrast)
+[Open the three contrast cases](#three-contrast-readings)
 
 ## Selection and reproduction
 

@@ -8,8 +8,8 @@ from scripts.antisemitism_case.evidence import FLAGS, FRAMEWORKS, OUTCOMES, REFE
 from scripts.bias_study.graph import case_trace, graph_index
 from scripts.bias_study.publication import credit, link
 
-CASE_TITLE = "Whose accusation is it?"
-PUBLIC_STUDY = "https://doxa-public-study.giuliocatanzariti.workers.dev/"
+CASE_TITLE = "Reading antisemitism across three frameworks"
+PUBLIC_STUDY = "https://github.com/sargonxg/DOXA-by-TACITUS/blob/main/docs/reading-muslim-coverage.md"
 REPO = "https://github.com/sargonxg/DOXA-by-TACITUS"
 
 
@@ -130,7 +130,7 @@ def render(study, graph, notes, counts, graphics, *, printing=False):
 <meta name="description" content="Read an archived antisemitism case with exact passages, three frozen frameworks, and questions for independent review.">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
 <title>{title} | DOXA by TACITUS</title><style>{css}</style></head>
-<body><header class="site-head"><a href="https://tacitus.me/doxa/">DOXA BY TACITUS</a>
+<body><header class="site-head"><a href="https://github.com/sargonxg/DOXA-by-TACITUS">DOXA BY TACITUS</a>
 <nav class="screen-only" aria-label="Case sections"><a href="#plzen-poster">Plzeň</a><a href="#three-frameworks">Compare frameworks</a>
 <a href="#red-flags">Red flags</a><a href="#method">Method</a></nav></header>
 <main>
@@ -170,6 +170,6 @@ def render(study, graph, notes, counts, graphics, *, printing=False):
 <a href="decisions.csv" download>Download all {counts["retained"]} decision rows</a></div>
 <p>{link("Case notes, source credits, and reproduction", REPO + "/blob/main/docs/antisemitism-case.md")}</p>
 </section>
-</main><footer>Published by <a href="https://tacitus.me/doxa/">TACITUS</a> ·
+</main><footer>Published by <a href="https://tacitus.me/#doxa">TACITUS</a> ·
 <a href="{PUBLIC_STUDY}">Companion study on anti-Muslim bias</a></footer></body></html>
 """

@@ -154,4 +154,6 @@ def _v06_extension_statements():
     from .comparisons import SCHEMA_SQL as comparison_schema
     from .pilot_commerce import SCHEMA_SQL as commerce_schema
     from .alert_evaluation import SCHEMA_SQL as alert_schema
-    return [*_statements(activity_schema), *_statements(comparison_schema), *_statements(commerce_schema), *_statements(alert_schema)]
+    from .scorecards import SCHEMA_SQL as scorecard_schema
+    return [*_statements(activity_schema), *_statements(comparison_schema), *_statements(commerce_schema),
+            *_statements(alert_schema), *_statements(scorecard_schema)]

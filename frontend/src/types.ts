@@ -9,6 +9,8 @@ export type Block = {
   text: string;
   page?: number;
   paragraph?: number;
+  cue_start_ms?: number;
+  cue_end_ms?: number;
 };
 export type SourceDocument = {
   id: string;
