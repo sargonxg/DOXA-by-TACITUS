@@ -127,6 +127,11 @@ class FrozenBlocks:
 
 def freeze(root):
     selected, selection = choose_sources(root)
+    return freeze_selected(root, selected, selection, LENSES, "muslim-coverage-1")
+
+
+def freeze_selected(root, selected, selection, lens_ids, edition, *, wanted_parts=None):
+    """Validate frozen source versions and project only the declared rubric."""
     parent, path, digest = read_manifest(root / "benchmarks/v3-news/showcase.json")
     if digest != EXPECTED_PARENT_SHA256:
         raise ValueError("Recorded parent changed")
@@ -134,9 +139,11 @@ def freeze(root):
     run = parent["run"]
     config = run["config"]
     _, criteria = _criteria(config["lens_snapshots"], config)
-    lenses = [lens for lens in config["lens_snapshots"] if lens["id"] in LENSES]
+    lenses = [lens for lens in config["lens_snapshots"] if lens["id"] in lens_ids]
+    if {lens["id"] for lens in lenses} != set(lens_ids):
+        raise ValueError("Frozen rubric does not cover every requested lens")
     documents = []
-    for record, location in archive_records(parent, path):
+    for record, location in archive_records(parent, path, wanted_parts=wanted_parts):
         source_id = record["source_id"]
         row = selected.get(source_id)
         if not row:
@@ -164,7 +171,7 @@ def freeze(root):
             run,
             criteria,
         )
-        decisions = [a for a in record["assessments"] if a["lens_id"] in LENSES]
+        decisions = [a for a in record["assessments"] if a["lens_id"] in lens_ids]
         documents.append(
             {
                 **{
@@ -199,7 +206,7 @@ def freeze(root):
         raise ValueError("The archive did not account for the entire frozen topic cohort")
     documents.sort(key=lambda d: (d["published_at"], d["id"]))
     return {
-        "study_version": "muslim-coverage-1",
+        "study_version": edition,
         "selection": selection,
         "lenses": lenses,
         "parent": {

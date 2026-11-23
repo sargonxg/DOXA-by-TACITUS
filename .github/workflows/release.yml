@@ -53,6 +53,13 @@ jobs:
           python scripts/check_wheel.py release/*.whl
           cp frontend/public/studies/muslim-coverage/{report.pdf,evidence.xlsx,evidence.jsonld,sources.zip} release/
           cp examples/muslim-coverage.manifest.json release/
+          if [[ -f scripts/build_antisemitism_case.py ]]; then
+            python scripts/build_antisemitism_case.py --offline-zip "release/doxa-${RELEASE_TAG#v}-antisemitism-case.zip"
+            case_assets=frontend/public/studies/antisemitism
+            cp "$case_assets/antisemitism-case.pdf" examples/antisemitism-case.manifest.json release/
+            cp "$case_assets/decisions.csv" release/antisemitism-decisions.csv
+            cp "$case_assets/evidence.jsonld" release/antisemitism-evidence.jsonld
+          fi
           cd release
           sha256sum * > SHA256SUMS.txt
           sha256sum -c SHA256SUMS.txt

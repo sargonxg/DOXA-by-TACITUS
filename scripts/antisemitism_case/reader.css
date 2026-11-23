@@ -1,0 +1,108 @@
+:root {
+  color-scheme: light;
+  --ink: #183629;
+  --muted: #4e6155;
+  --paper: #fbf8ee;
+  --accent: #94602e;
+  --border: #c7d0c0;
+  --wash: #edf2e8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 system-ui, sans-serif; }
+a { color: #245740; text-underline-offset: .22em; overflow-wrap: anywhere; }
+a:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 3px solid #95602a; outline-offset: 4px; }
+h1, h2, h3, p, figure, dl { margin: 0; }
+h1, h2, h3 { font-family: Georgia, "DejaVu Serif", serif; text-wrap: balance; }
+h1 { font-size: clamp(2.2rem, 6.6vw, 4.25rem); line-height: 1.02; letter-spacing: -.035em; }
+h2 { font-size: clamp(1.65rem, 4vw, 2.45rem); line-height: 1.13; }
+h3 { font-size: 1.28rem; line-height: 1.2; }
+img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+main, .site-head, footer { width: min(1080px, 100%); margin: 0 auto; padding-inline: clamp(16px, 5vw, 50px); }
+.site-head, .actions, nav { display: flex; flex-wrap: wrap; align-items: center; gap: 9px 18px; }
+.site-head { padding-block: 17px; justify-content: space-between; border-bottom: 1px solid var(--border); }
+.site-head > a { font-weight: 800; letter-spacing: .07em; text-decoration: none; }
+nav, .credit, .note, figcaption { font-size: .875rem; color: var(--muted); }
+.hero { display: grid; grid-template-columns: 1fr .92fr; align-items: center; gap: clamp(20px, 5vw, 52px); padding-block: clamp(35px, 6vw, 68px) 26px; }
+.hero p { margin: 12px 0 17px; max-width: 49ch; }
+.kicker { color: #346047; font-size: .82rem; font-weight: 750; letter-spacing: .09em; text-transform: uppercase; }
+.hero .kicker { margin: 0 0 9px; }
+.action { display: inline-block; background: var(--ink); color: white; text-decoration: none; padding: 8px 13px; font-weight: 650; }
+.hero figure img { border: 1px solid var(--ink); }
+.facts { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; margin: 0 0 24px; }
+.facts div { border-top: 1px solid var(--border); padding-top: 8px; }
+.facts dt { font-size: .88rem; color: var(--muted); }
+.facts dd { margin: 0; font: 650 1.42rem/1.3 Georgia, "DejaVu Serif", serif; font-variant-numeric: tabular-nums; }
+.chapter { padding-block: 24px; border-top: 1px solid var(--border); scroll-margin-top: 16px; }
+.chapter > p, .case > p, .record p, .flags p { margin: 8px 0; max-width: 78ch; }
+.steps { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; margin: 15px 0 3px; }
+.steps figure { border: 1px solid var(--border); padding: 9px; background: #fffdf6; }
+.steps img { max-height: 114px; object-fit: contain; background: var(--ink); }
+.steps figcaption { padding: 8px 2px 0; }
+.steps b { display: block; color: var(--ink); }
+.case { border: 1px solid var(--border); border-left: 4px solid #63856c; padding: clamp(14px, 3vw, 24px); margin: 14px 0; background: #fffdf7; overflow-wrap: anywhere; }
+.case:target { border-left-color: var(--accent); }
+.case h3 { font-size: clamp(1.28rem, 3vw, 1.85rem); }
+.prompt { color: #3f4b35; }
+details { margin-top: 10px; }
+summary { font-weight: 650; cursor: pointer; color: #245740; }
+.record { margin-top: 8px; }
+.record blockquote { margin: 12px 0 6px; padding: 10px 14px; background: var(--wash); border-left: 3px solid var(--accent); font: 1.05rem/1.55 Georgia, "DejaVu Serif", serif; }
+.record .model { padding: 8px 12px; border-left: 3px solid #63856c; background: #f3f5ed; }
+.matrix { overflow-x: auto; margin: 8px 0; }
+table { width: 100%; border-collapse: collapse; font-size: .875rem; }
+th, td { padding: 6px 9px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--border); }
+thead { background: var(--wash); }
+.comparison-met { color: #754520; font-weight: 700; }
+.flags { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; margin-top: 12px; }
+.flags article { border-top: 2px solid #b78b54; padding: 11px 13px; background: #fffdf6; }
+.flags h3 { text-wrap: wrap; }
+.flags a { font-size: .83rem; }
+.sources li, .protocol li { margin-block: 7px; }
+.breakable { overflow-wrap: anywhere; }
+footer { padding-block: 15px 26px; border-top: 1px solid var(--border); color: var(--muted); font-size: .875rem; }
+.print-only { display: none; }
+@media (max-width: 675px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero figure { max-width: 430px; }
+  .steps { gap: 7px; }
+  .steps figure { padding: 5px; }
+  .steps figcaption { font-size: .78rem; }
+}
+@media (max-width: 490px) {
+  .flags { grid-template-columns: 1fr; }
+  table { min-width: 350px; }
+}
+@page {
+  size: A4;
+  margin: 15mm 16mm 17mm;
+  @bottom-left { content: "DOXA BY TACITUS · ANTISEMITISM CASE"; font: 7.5pt sans-serif; color: #4e6155; }
+  @bottom-right { content: counter(page); font: 8pt sans-serif; color: #4e6155; }
+}
+@media print {
+  body { background: white; font: 9.4pt/1.36 "DejaVu Sans", sans-serif; }
+  main, .site-head, footer { padding-inline: 0; width: auto; }
+  .site-head { padding-block: 0 2mm; }
+  h1 { font-size: 30pt; } h2 { font-size: 19pt; } h3 { font-size: 13pt; }
+  .hero { padding-block: 6mm 4mm; gap: 5mm; grid-template-columns: 1.2fr .8fr; }
+  .hero p, .chapter > p, .case > p, .record p, .flags p { margin: 2mm 0; }
+  .facts { margin-bottom: 4mm; }
+  .facts dd { font-size: 15pt; }
+  .chapter { padding-block: 4mm; }
+  .new-page { break-before: page; }
+  .screen-only { display: none; }
+  .print-only { display: block; margin-top: 5mm; }
+  .print-only p { margin-top: 2mm; }
+  .case { break-inside: avoid; padding: 3mm; margin: 3mm 0; }
+  .case h3 { font-size: 15pt; }
+  .record blockquote { padding: 2mm 3mm; margin-block: 2mm; font-size: 11pt; }
+  .steps figure { padding: 1.6mm; }
+  .steps img { max-height: 19mm; }
+  .steps figcaption, .credit, .note { font-size: 8pt; }
+  .matrix { overflow: visible; }
+  table { min-width: 0; }
+  th, td { padding-block: 1.4mm; }
+  .flags { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2.5mm; font-size: 8.5pt; }
+  .flags article { break-inside: avoid; padding: 2mm 3mm; }
+  .flags h3 { font-size: 11.2pt; }
+  .flags a { font-size: 7.8pt; }
+}

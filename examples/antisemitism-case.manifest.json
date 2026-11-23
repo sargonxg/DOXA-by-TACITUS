@@ -1,0 +1,146 @@
+{
+  "study_version": "antisemitism-case-1",
+  "selection": {
+    "design": "purposive teaching cases selected after reading archived outcomes",
+    "uses_model_outcomes": true,
+    "sources": [
+      "gv-774621",
+      "gv-780962",
+      "gv-801447",
+      "gv-839816"
+    ],
+    "manifest_sha256": "6ea29f063abcdda5425d91277c9137cbb66f461fa2fff26f1f3543c51fb02ff3",
+    "holdout_sha256": "affa53e62620d756a7dba208cf32d13c951eb6a32348f03b2a481b1f221aeafb",
+    "scaffold_sha256": "42f05070378be8b201f85f98b55ed4ffb6f35b581798c100310a787d853b0def",
+    "selection_sha256": "491e613fb3208110a5235243eb7762048d37b743f0a56dd26af087bc79aadb96"
+  },
+  "parent": {
+    "id": "b2a2edd4ca7047128a5e433d8a874530",
+    "status": "partial",
+    "archive_sha256": "783432b8430aeadc0bcce665e897bba33d8b9a14f718f70f0c5a988c1e884827",
+    "model": "@cf/google/gemma-4-26b-a4b-it",
+    "provider": "cloudflare",
+    "config_sha256": "24be0b1368e4697a1844f7addc6327763420ef60689e704e560149db2954cd35",
+    "question": "Apply the selected criteria in context, distinguishing attribution, counter-speech, uncertainty and competing frameworks.",
+    "persona": "research",
+    "progress": {
+      "documents_total": 5000,
+      "documents_done": 5000,
+      "documents_complete": 4927,
+      "documents_settled": 5000,
+      "blocks_total": 10759,
+      "blocks_done": 10686,
+      "tasks_total": 5031,
+      "tasks_done": 4958,
+      "tasks_failed": 73,
+      "current_document": "‘Femicide does not start on the day of the crime’: A Brazilian researcher’s view on gender violence in her country",
+      "complete": false,
+      "analysis_kind": "model_analysis",
+      "semantic_analysis_performed": true,
+      "semantic_blocks_done": 10686,
+      "lexical_blocks_done": 0
+    }
+  },
+  "coverage": {
+    "articles": 4,
+    "units": 9,
+    "retained": 81,
+    "expected": 81,
+    "indicators_met": 1,
+    "boundaries_met": 1,
+    "outcomes": {
+      "meets_criterion": 2,
+      "does_not_meet": 75,
+      "not_applicable": 4,
+      "uncertain": 0
+    }
+  },
+  "graph_counts": {
+    "AnalysisRun": 1,
+    "Criterion": 9,
+    "Decision": 81,
+    "EditorialNote": 4,
+    "EvidenceReference": 1630,
+    "Framework": 3,
+    "Passage": 187,
+    "SourceUnit": 9,
+    "SourceVersion": 4,
+    "Study": 1
+  },
+  "sources": {
+    "gv-774621": {
+      "part": "assessments-part-0026.jsonl.gz",
+      "line": 23,
+      "part_sha256": "26fa2260a7a7e21a0d852510bd004c2abadf624725bbf40b1a85a667e955f6ba",
+      "raw_line_sha256": "39419644e273e329a67ddd247616c8b1f3263e72c954a502562fb2f524515f42"
+    },
+    "gv-780962": {
+      "part": "assessments-part-0028.jsonl.gz",
+      "line": 27,
+      "part_sha256": "6401ed0b37fe6b275739ec03ef23efb9725e1d252673e8c4081562f4e17b8d71",
+      "raw_line_sha256": "1c3ebe7d254b4247fcf0ac31b5b5b80a9081c80f3118b09417bf31255576c3c9"
+    },
+    "gv-801447": {
+      "part": "assessments-part-0035.jsonl.gz",
+      "line": 81,
+      "part_sha256": "ea976ff6a647e905cefeae5e35a16e19b3016803b3023332e3efeca962b54900",
+      "raw_line_sha256": "f288758292ee8017584ac90323577a8dc9d3d8e8cbdb3c4c9f917bb288f7d5b9"
+    },
+    "gv-839816": {
+      "part": "assessments-part-0048.jsonl.gz",
+      "line": 39,
+      "part_sha256": "aebbef7b21ad21488a2f5a92c87cdb945e21f5d574f4af4c23697be40376ed4e",
+      "raw_line_sha256": "189533449c6972675e761d51bbf95da80f1d87fddc12bd2ce22205ab61902536"
+    }
+  },
+  "case_ids": {
+    "plzen-poster": "95f0ecd347b4a8348d80017aa7a32a29",
+    "australia-policy": "a520caaf0bb90677eda4fdfc27278d76",
+    "holocaust-analogy": "3fb5c699c85c3fa16d618e555a3f8ffb",
+    "survivor-remembrance": "d03c68bcca7ed9899c97c1bfefd7097a"
+  },
+  "fresh_inference_requests": 0,
+  "independent_human_labels": false,
+  "files": [
+    {
+      "file": "frontend/public/studies/antisemitism/antisemitism-case.pdf",
+      "bytes": 72973,
+      "sha256": "0fccd053a00759edae5d84339b42bfe1afde7294f39f4f9d59092db576c0c430"
+    },
+    {
+      "file": "frontend/public/studies/antisemitism/criterion.png",
+      "bytes": 1795,
+      "sha256": "101964925514630e959aaf1d74e347c0f351f9601a64cb6bbaa02950085826c4"
+    },
+    {
+      "file": "frontend/public/studies/antisemitism/decisions.csv",
+      "bytes": 14638,
+      "sha256": "c116b5ad26209a3c9394f7fe3f9acb1eee6fa7d3eb3a8ac5b1a7cfa56e56d395"
+    },
+    {
+      "file": "frontend/public/studies/antisemitism/evidence-desk.png",
+      "bytes": 3210,
+      "sha256": "d997afdb94f46370dd1a3bf063ee11375aeaf9a925e437580cd87a23e6c3b3c5"
+    },
+    {
+      "file": "frontend/public/studies/antisemitism/evidence.jsonld",
+      "bytes": 282414,
+      "sha256": "a6b5459e097c1e6b74183c7aeefd8e7a0ed1901d6d2a42fc303895124a86c39d"
+    },
+    {
+      "file": "frontend/public/studies/antisemitism/index.html",
+      "bytes": 32139,
+      "sha256": "4ab77be05ec396dd1badc1faf1708bef07bd3d237ea801922526c2c4f12eac20"
+    },
+    {
+      "file": "frontend/public/studies/antisemitism/source.png",
+      "bytes": 2075,
+      "sha256": "b320960f75d5667f863480e2fda61bf1e36435b47fdd853b420e5a5fd1afaedc"
+    },
+    {
+      "file": "frontend/public/studies/antisemitism/voice.png",
+      "bytes": 1776,
+      "sha256": "e69df0c2d0510cf596647a24b94a04d3405d2d43d364e640a2ff3049daa18c97"
+    }
+  ]
+}

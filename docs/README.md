@@ -6,6 +6,7 @@ DOXA is an open-source evidence workbench packaged as **Bias Detection as a Serv
 
 | Question | Guide and artifacts |
 | --- | --- |
+| Can I inspect a worked antisemitism case? | [Plzeň case, red flags, and methods](antisemitism-case.md) · [PDF](../frontend/public/studies/antisemitism/antisemitism-case.pdf) · [Decision ledger](../frontend/public/studies/antisemitism/decisions.csv) |
 | What did DOXA find in 60 real news articles? | [Illustrated field study and sampling method](reading-muslim-coverage.md) · [PDF](../frontend/public/studies/muslim-coverage/report.pdf) · [data workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx) |
 | How do I trace a recorded decision? | [Evidence graph and offline queries](evidence-graph.md) · [JSON-LD](../frontend/public/studies/muslim-coverage/evidence.jsonld) |
 | What does the tool do? | [Reader explainer](v04-reader-explainer.md) · [illustrated PDF](../examples/v04-reader-explainer.pdf) · [8-bit Quest](guide.md) |

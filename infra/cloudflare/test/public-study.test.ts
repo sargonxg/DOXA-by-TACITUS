@@ -10,10 +10,28 @@ it("serves only published study files and keeps caller inputs out of the origin 
   expect(result.status).toBe(200);
   expect(result.headers.get("content-type")).toBe("application/pdf");
   expect(new TextDecoder().decode(await result.arrayBuffer())).toBe("public PDF");
-  expect(origin.mock.calls[0][0]).toBe("https://raw.githubusercontent.com/sargonxg/DOXA-by-TACITUS/v0.7.1/frontend/public/studies/muslim-coverage/report.pdf");
+  expect(origin.mock.calls[0][0]).toBe("https://raw.githubusercontent.com/sargonxg/DOXA-by-TACITUS/v0.8.0/frontend/public/studies/muslim-coverage/report.pdf");
   expect((await study.fetch(new Request("https://study.example/missing"))).status).toBe(404);
   expect((await study.fetch(new Request("https://study.example/", {method:"POST"}))).status).toBe(405);
   expect(origin).toHaveBeenCalledTimes(1);
+});
+
+it("routes the case, its pixel art and ledger to the pinned antisemitism edition", async () => {
+  const origin = vi.fn().mockImplementation(() => Promise.resolve(new Response(null)));
+  vi.stubGlobal("fetch", origin);
+  const redirect = await study.fetch(new Request("https://study.example/antisemitism"));
+  expect(redirect.status).toBe(308);
+  expect(redirect.headers.get("location")).toBe("/antisemitism/");
+  for (const [path, type] of [["", "text/html; charset=utf-8"], ["evidence-desk.png", "image/png"], ["decisions.csv", "text/csv; charset=utf-8"]]) {
+    const response = await study.fetch(new Request("https://study.example/antisemitism/" + path));
+    expect(response.status).toBe(200);
+    expect(response.headers.get("content-type")).toBe(type);
+    expect(origin.mock.calls.at(-1)?.[0]).toBe(
+      "https://raw.githubusercontent.com/sargonxg/DOXA-by-TACITUS/v0.8.0/frontend/public/studies/antisemitism/" + (path || "index.html"),
+    );
+  }
+  expect((await study.fetch(new Request("https://study.example/antisemitism/reader.js"))).status).toBe(404);
+  expect(origin).toHaveBeenCalledTimes(3);
 });
 
 it("serves a download type and no body for a HEAD request for the graph", async () => {

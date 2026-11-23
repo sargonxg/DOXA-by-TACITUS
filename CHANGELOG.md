@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.0 — 2026-11-22
+
+- [The antisemitism case](docs/antisemitism-case.md) compares the saved IHRA, Jerusalem Declaration, and Nexus readings of a quotation reported in Plzeň. Four source readings, nine research cues, and a JSON-LD graph trace the evidence.
+- Four original 8-bit illustrations guide the reader through source, speaker, and criterion. The new study includes a tagged PDF, a decision ledger, and an offline edition.
+- The GitHub overview, local workbench, and public DOXA reader link both studies.
+
 ## 0.7.1 — 2026-11-22
 
 The study filters now fit the reader at a 320-pixel viewport. Browser coverage

@@ -77,9 +77,9 @@ DOXA reused the archived Gemma readings from the same source versions. It checke
 
 ## Open it locally or reproduce it
 
-In DOXA v0.7.1, choose **Read the 60-article study** on the main dashboard. Select a criterion, filter by publication year and follow a case to its frozen method and exact passage. The reader opens without a model, credentials or an upload. [Mobile reader](images/muslim-coverage-mobile.png)
+In DOXA v0.8.0, choose **Read the 60-article study** on the main dashboard. Select a criterion, filter by publication year and follow a case to its frozen method and exact passage. The reader opens without a model, credentials or an upload. [Mobile reader](images/muslim-coverage-mobile.png)
 
-For standalone use, unzip the **offline study** from the release and open `index.html` in a browser. Keep the sibling reader script, PDF, workbook, source ZIP and JSON-LD graph together for local downloads. The source ZIP includes 60 original attributed TXT files and `study.json`, with source blocks, the six original rubric criteria, unit statuses, full selected model records, archive locators and editorial notes. Other criteria from the parent run are available in the original archive. [Release downloads](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.7.1)
+For standalone use, unzip the **offline study** from the release and open `index.html` in a browser. Keep the sibling reader script, PDF, workbook, source ZIP and JSON-LD graph together for local downloads. The source ZIP includes 60 original attributed TXT files and `study.json`, with source blocks, the six original rubric criteria, unit statuses, full selected model records, archive locators and editorial notes. Other criteria from the parent run are available in the original archive. [Release downloads](https://github.com/sargonxg/DOXA-by-TACITUS/releases/tag/v0.8.0)
 
 From a repository checkout with DOXA’s Python dependencies installed, verify the edition against the frozen corpus:
 
