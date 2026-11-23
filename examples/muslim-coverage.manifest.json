@@ -140,6 +140,254 @@
     }
   },
   "article_states_sha256": "7cf0af1c100155863e290118bf51e017c15f455450846f21f60f9bf73fa6fbd4",
+  "graph_counts": {
+    "AnalysisRun": 1,
+    "Criterion": 6,
+    "Decision": 822,
+    "EditorialNote": 6,
+    "EvidenceReference": 16855,
+    "Framework": 2,
+    "Passage": 3064,
+    "SourceUnit": 137,
+    "SourceVersion": 60,
+    "Study": 1
+  },
+  "sensitivity": {
+    "targeted_hostility": {
+      "articles": 60,
+      "observed_flags": 4,
+      "uncertain_without_flag": 0,
+      "incomplete_without_flag": 0,
+      "if_all_unresolved_flagged": 4,
+      "year_omissions": [
+        {
+          "excluded_year": "2022",
+          "flagged": 2,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2024",
+          "flagged": 2,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2020",
+          "flagged": 4,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2021",
+          "flagged": 4,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2023",
+          "flagged": 4,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2025",
+          "flagged": 4,
+          "articles": 50
+        }
+      ]
+    },
+    "stereotyping_and_intent": {
+      "articles": 60,
+      "observed_flags": 2,
+      "uncertain_without_flag": 2,
+      "incomplete_without_flag": 0,
+      "if_all_unresolved_flagged": 4,
+      "year_omissions": [
+        {
+          "excluded_year": "2022",
+          "flagged": 1,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2024",
+          "flagged": 1,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2020",
+          "flagged": 2,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2021",
+          "flagged": 2,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2023",
+          "flagged": 2,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2025",
+          "flagged": 2,
+          "articles": 50
+        }
+      ]
+    },
+    "discrimination_claim": {
+      "articles": 60,
+      "observed_flags": 11,
+      "uncertain_without_flag": 0,
+      "incomplete_without_flag": 0,
+      "if_all_unresolved_flagged": 11,
+      "year_omissions": [
+        {
+          "excluded_year": "2020",
+          "flagged": 8,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2022",
+          "flagged": 8,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2024",
+          "flagged": 8,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2021",
+          "flagged": 10,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2025",
+          "flagged": 10,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2023",
+          "flagged": 11,
+          "articles": 50
+        }
+      ]
+    },
+    "racialization": {
+      "articles": 60,
+      "observed_flags": 7,
+      "uncertain_without_flag": 0,
+      "incomplete_without_flag": 0,
+      "if_all_unresolved_flagged": 7,
+      "year_omissions": [
+        {
+          "excluded_year": "2024",
+          "flagged": 4,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2020",
+          "flagged": 5,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2022",
+          "flagged": 5,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2021",
+          "flagged": 7,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2023",
+          "flagged": 7,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2025",
+          "flagged": 7,
+          "articles": 50
+        }
+      ]
+    },
+    "exclusion": {
+      "articles": 60,
+      "observed_flags": 8,
+      "uncertain_without_flag": 1,
+      "incomplete_without_flag": 0,
+      "if_all_unresolved_flagged": 9,
+      "year_omissions": [
+        {
+          "excluded_year": "2024",
+          "flagged": 5,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2022",
+          "flagged": 6,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2020",
+          "flagged": 7,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2021",
+          "flagged": 7,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2025",
+          "flagged": 7,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2023",
+          "flagged": 8,
+          "articles": 50
+        }
+      ]
+    },
+    "institutional_pattern": {
+      "articles": 60,
+      "observed_flags": 3,
+      "uncertain_without_flag": 5,
+      "incomplete_without_flag": 0,
+      "if_all_unresolved_flagged": 8,
+      "year_omissions": [
+        {
+          "excluded_year": "2022",
+          "flagged": 1,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2024",
+          "flagged": 2,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2020",
+          "flagged": 3,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2021",
+          "flagged": 3,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2023",
+          "flagged": 3,
+          "articles": 50
+        },
+        {
+          "excluded_year": "2025",
+          "flagged": 3,
+          "articles": 50
+        }
+      ]
+    }
+  },
   "case_ids": [
     "784b899f557a471b1b3f82d58d2a4508",
     "7e08d3e3122332f76811e3bd9e9cbefb",
@@ -153,33 +401,38 @@
   "files": [
     {
       "file": "frontend/public/studies/muslim-coverage/index.html",
-      "bytes": 145439,
-      "sha256": "661f6fb3dbf33a5635e2f83bf126cd18bca6c95d4dea41795bf110f09891b743"
+      "bytes": 152567,
+      "sha256": "fa43112bf0a21f7792a32f37e9316b17133ce3f24156682cbea9fe2605379963"
     },
     {
       "file": "frontend/public/studies/muslim-coverage/reader.js",
-      "bytes": 2062,
-      "sha256": "81111a91face63e2a3d74c5f6f51ff5c57a4612866f3b9840ab498b2d4662301"
+      "bytes": 2431,
+      "sha256": "7abf627a7b09e6cec46c899a69c686186c9abcf578b2fb8003c010c330c6e7b3"
     },
     {
       "file": "frontend/public/studies/muslim-coverage/reader.json",
-      "bytes": 104664,
-      "sha256": "36be53f45ecb6098a348ef3c3bff1e0438582c9c29276401d75cd6c01acf937a"
+      "bytes": 111073,
+      "sha256": "cb0caf0205143e6c2c10b35a8f1f6ce422ecd3fd5fb3bdb606bba2b2a902f7c7"
     },
     {
       "file": "frontend/public/studies/muslim-coverage/report.pdf",
-      "bytes": 66322,
-      "sha256": "9f5b72b015b04be2d81f860840abf63483fa1646506ae5573c3609270496ed08"
+      "bytes": 95267,
+      "sha256": "23b96a07e89546f15f3fb1870afb0cc83eabbdcf9b3d343a0047367b7a8b65da"
     },
     {
       "file": "frontend/public/studies/muslim-coverage/evidence.xlsx",
-      "bytes": 886540,
-      "sha256": "9f52c3df359bff0c239abdfb108e9de332ca3314a5e881f86079650693495afa"
+      "bytes": 888973,
+      "sha256": "79fe24620aacd250804f9b4e0331ca2c1336f16132cad7c4e1ed8e3d0adb5a11"
     },
     {
       "file": "frontend/public/studies/muslim-coverage/sources.zip",
-      "bytes": 908901,
-      "sha256": "c0057511241b94bc2f3176c535edd27d23c4025da27160914ec402a3cf057a86"
+      "bytes": 908955,
+      "sha256": "cd3778c69bccebd82596330ffcd2caadeb2c45e351cd8fd64e86ff34728763d0"
+    },
+    {
+      "file": "frontend/public/studies/muslim-coverage/evidence.jsonld",
+      "bytes": 3290413,
+      "sha256": "92e285dc5f6f38055c40ac61b7944a1897b67bdcee683509023046534b12b833"
     }
   ]
 }

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.0 — 2026-11-22
+
+- The [60-article field study](docs/reading-muslim-coverage.md) now traces model readings through a versioned [JSON-LD evidence graph](docs/evidence-graph.md). It links 822 decisions to their archived run, frozen criteria and 3,064 distinct source passages. The original outcomes and source selection are preserved.
+- Both readers show the evidence path and support publication-year and contributor filters. The tagged PDF, workbook and offline edition include new sensitivity checks within the selected sample.
+- Study downloads use a versioned release, explicit content types and HTTP status checks. The installed wheel verifies graph access alongside the workspace API, file extraction and background report export.
+- The [GitHub overview](README.md) leads with a worked case and installation. [Historical research and operating details](docs/workbench-reference.md) remain available.
+
 ## 0.6.1 — 2026-11-18
 
 The main dashboard now leads from a bias criterion and its distinct-source count straight to an exact passage. Each row identifies the sources with matching decisions and retains uncertainty. New guided PDF, HTML and XLSX reports explain the supplied findings before introducing wording metrics.

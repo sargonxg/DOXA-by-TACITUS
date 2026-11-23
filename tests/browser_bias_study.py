@@ -57,15 +57,17 @@ def main():
             expect(dialog.get_by_role("status")).to_have_text("Showing 8 of 11 matching articles.")
             dialog.get_by_role("button", name="Show more articles").click()
             expect(dialog.get_by_role("status")).to_have_text("Showing 11 of 11 matching articles.")
-            dialog.get_by_label("Find a title or author").fill("Ramadan")
+            dialog.get_by_label("Find a title or credit").fill("Ramadan")
             expect(dialog.get_by_role("status")).to_have_text("Showing 1 of 1 matching articles.")
             dialog.locator(".w-study-register:visible summary").click()
             expect(dialog.locator(".w-study-register:visible")).to_contain_text("expulsion")
-            dialog.get_by_label("Find a title or author").fill("ZZZ-no-source")
+            dialog.get_by_label("Find a title or credit").fill("ZZZ-no-source")
             expect(dialog.get_by_role("status")).to_have_text("No articles match these filters.")
             dialog.get_by_role("button", name="Clear filters").click()
             expect(dialog.get_by_role("status")).to_have_text("Showing 8 of 60 matching articles.")
-            for name in ("report.pdf", "evidence.xlsx", "sources.zip"):
+            dialog.get_by_label("Publication year").select_option("2024")
+            expect(dialog.get_by_role("status")).to_have_text("Showing 8 of 10 matching articles.")
+            for name in ("report.pdf", "evidence.xlsx", "sources.zip", "evidence.jsonld"):
                 label = dialog.locator(f"a[download][href$='/{name}']")
                 with page.expect_download() as capture:
                     label.click()
@@ -80,8 +82,10 @@ def main():
             expect(dialog.get_by_role("heading", name="A flag to challenge")).to_be_visible()
             dialog.locator(".w-study-case").first.locator("summary").click()
             expect(dialog.locator(".w-study-case").first).to_contain_text("gv-721315-b00004")
+            expect(dialog.locator(".w-study-case").first).to_contain_text("Frozen criterion")
             dialog.get_by_role("button", name="Method", exact=True).click()
             expect(dialog.get_by_text("248 eligible", exact=False)).to_be_visible()
+            expect(dialog.get_by_role("table")).to_contain_text("All unresolved flagged")
             dialog.get_by_role("button", name="Back to workspace").click()
             expect(dialog).not_to_be_visible()
             expect(opener).to_be_focused()
@@ -96,6 +100,9 @@ def main():
             expect(dialog).not_to_be_visible()
             standalone = browser.new_page()
             standalone.goto(base + "/studies/muslim-coverage/index.html")
+            standalone.get_by_role("link", name="Follow the evidence").click()
+            assert standalone.url.endswith("#case-school-hijab")
+            expect(standalone.locator("#case-school-hijab")).to_contain_text("One school decision")
             standalone.get_by_role("button", name="Exclusion linked to Muslim identity").click()
             expect(standalone.get_by_role("status")).to_have_text("Showing 8 of 8 matching articles.")
             standalone.get_by_label("Article reading").select_option("uncertain")
@@ -116,7 +123,7 @@ def main():
             assert not errors and not transfers, (errors, transfers)
             browser.close()
     print(
-        "Live indicator drill-down, 60-article reader, filters, three downloads, keyboard return and mobile viewport passed offline."
+        "Live indicator drill-down, 60-article reader, case paths, filters, four downloads, keyboard return and mobile viewport passed offline."
     )
 
 

@@ -7,6 +7,7 @@ DOXA is an open-source evidence workbench packaged as **Bias Detection as a Serv
 | Question | Guide and artifacts |
 | --- | --- |
 | What did DOXA find in 60 real news articles? | [Illustrated field study and sampling method](reading-muslim-coverage.md) · [PDF](../frontend/public/studies/muslim-coverage/report.pdf) · [data workbook](../frontend/public/studies/muslim-coverage/evidence.xlsx) |
+| How do I trace a recorded decision? | [Evidence graph and offline queries](evidence-graph.md) · [JSON-LD](../frontend/public/studies/muslim-coverage/evidence.jsonld) |
 | What does the tool do? | [Reader explainer](v04-reader-explainer.md) · [illustrated PDF](../examples/v04-reader-explainer.pdf) · [8-bit Quest](guide.md) |
 | How are claims anchored and qualified? | [Technical annex](v04-technical-annex.md) · [PDF](../examples/v04-technical-annex.pdf) · [interpretation contract](v3-interpretation.md) |
 | Open a small offline recorded example | [Twenty-source PDF](../examples/v06-recorded-example.pdf) · [complete XLSX](../examples/v06-recorded-example.xlsx) · [HTML](../examples/v06-recorded-example.html) · [manifest](../examples/v06-recorded-example.manifest.json) |
@@ -18,7 +19,8 @@ DOXA is an open-source evidence workbench packaged as **Bias Detection as a Serv
 
 | Task | Documentation |
 | --- | --- |
-| Start with the current refinements | [Ten implemented improvements](refinement-v06.md) · [8 GB local profile and doctor](local-v06.md) · [v0.6 verification](verification-v06.md) |
+| Start with the current release | [Quickstart](../README.md#start-locally) · [0.7 delivery plan](release-plan-v07.md) · [Workbench reference](workbench-reference.md) |
+| Use the lightweight local profile | [v0.6 refinements](refinement-v06.md) · [8 GB local profile and doctor](local-v06.md) · [v0.6 verification](verification-v06.md) |
 | Inspect extraction and context | [Permissive PDF defaults, immutable versions and structural context](extraction-v06.md) |
 | Recover long work | [Persistent import/indexing/guided report activities](activity-jobs-v06.md) |
 | Enable retention and deletion-safe restore | [External deletion ledger and recovery guard](privacy-lifecycle-v06.md) |

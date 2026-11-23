@@ -37,6 +37,11 @@ with TestClient(create_app(os.environ["DOXA_DATA_DIR"],start_workers=False,use_s
     assert "What the model flagged" in client.get(study+"index.html").text
     for name, magic in (("report.pdf",b"%PDF"),("evidence.xlsx",b"PK"),("sources.zip",b"PK")):
         assert client.get(study+name).content.startswith(magic)
+    graph=client.get(study+"evidence.jsonld")
+    assert graph.headers["content-type"]=="application/ld+json"
+    assert sum("doxa:Decision" in row["@type"] for row in graph.json()["@graph"])==822
+    assert client.head(study+"evidence.jsonld").status_code==200
+    assert client.get(study+"missing.pdf").status_code==404
     project=client.post("/api/projects",json={"name":"Installed wheel smoke"}).json()["id"]
     assert client.get("/api/projects/"+project+"/documents").status_code==200
     assert client.get("/api/v3/projects/"+project+"/report-jobs").status_code==200

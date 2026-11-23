@@ -5,6 +5,7 @@ from .cohort import RESULT_LABELS
 # One reading per teaching question. The six cases are purposive after selection of the cohort.
 NOTES = [
     (
+        "quoted-stereotype",
         "784b899f557a471b1b3f82d58d2a4508",
         None,
         "Whose stereotype is this?",
@@ -13,6 +14,7 @@ NOTES = [
         None,
     ),
     (
+        "school-hijab",
         "7e08d3e3122332f76811e3bd9e9cbefb",
         None,
         "One school decision, two different questions",
@@ -21,6 +23,7 @@ NOTES = [
         "09f824e6a4af44ac297dc8ec25fc4c85",
     ),
     (
+        "author-stance",
         "04abefed865ec931ee95f8a208ea80cd",
         None,
         "What does the author actually support?",
@@ -29,6 +32,7 @@ NOTES = [
         None,
     ),
     (
+        "challenge-a-flag",
         "46be81204630ae235741744a93c7f72b",
         None,
         "A flag to challenge",
@@ -37,6 +41,7 @@ NOTES = [
         None,
     ),
     (
+        "possible-miss",
         "23f39c04aea7d023d0e5594826b219cd",
         "s_0878c4ddc5514fc511916aa0",
         "A possible miss in an unflagged article",
@@ -45,6 +50,7 @@ NOTES = [
         None,
     ),
     (
+        "biographical-mention",
         "d16abe150d9e8bf60df196c3c0e733db",
         "s_48062527feb0c63a8958537c",
         "A religious reference can be biographical",
@@ -97,7 +103,7 @@ REFERENCES = [
 def cases(study):
     index = {a["id"]: (d, a) for d in study["documents"] for a in d["decisions"]}
     output = []
-    for identity, sentence, heading, reading, followup, peer_id in NOTES:
+    for slug, identity, sentence, heading, reading, followup, peer_id in NOTES:
         doc, row = index[identity]
         refs = row["evidence_refs"]
         ref = next(r for r in refs if r["sentence_id"] == sentence) if sentence else refs[0]
@@ -109,6 +115,7 @@ def cases(study):
             raise ValueError("Paired readings must refer to the same scored unit")
         output.append(
             {
+                "slug": slug,
                 "doc": doc,
                 "decision": row,
                 "ref": ref,
