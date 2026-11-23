@@ -284,6 +284,7 @@ function AnalysisPanel({
   const [custom, setCustom] = useState("");
   const [customName, setCustomName] = useState("");
   const [customKind, setCustomKind] = useState("descriptive");
+  const [sourceScope, setSourceScope] = useState(false);
   const [health, setHealth] = useState<Item | null>(null);
   const [healthSelection, setHealthSelection] = useState("");
   const [inputPrice, setInputPrice] = useState("");
@@ -415,6 +416,7 @@ function AnalysisPanel({
             label: line.slice(0, 100),
             description: line,
             kind: customKind,
+            ...(sourceScope ? { applicability: "source_scope" } : {}),
           })),
       };
     return body;
@@ -550,6 +552,11 @@ function AnalysisPanel({
             placeholder="State observable criteria, context requirements, and exclusions."
           />
         </label>
+        <label className="w-pilot-check">
+          <input type="checkbox" checked={sourceScope} onChange={(event) => setSourceScope(event.target.checked)} />
+          Apply each custom criterion to every selected source
+        </label>
+        {sourceScope && <p className="w-footnote">A source with only inapplicable unit decisions stays uncertain in the scorecard.</p>}
       </details>
       <label>
         Reviewed example memory

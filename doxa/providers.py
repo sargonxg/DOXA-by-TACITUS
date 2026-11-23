@@ -202,13 +202,18 @@ class OllamaProvider(BaseProvider):
             async with httpx.AsyncClient(timeout=15, **({"trust_env": False} if self.laptop else {})) as client:
                 response = await client.get(f"{self.base_url}/api/tags")
                 response.raise_for_status()
-                models = response.json().get("models", [])
+                payload = response.json()
+                if not isinstance(payload, dict) or not isinstance(payload.get("models"), list):
+                    raise ValueError("Expected an Ollama model list")
+                models = [model for model in payload["models"] if isinstance(model, dict)]
                 requested = self.model if ":" in self.model else f"{self.model}:latest"
                 match = next((m for m in models if m.get("name") in {self.model, requested} or m.get("model") in {self.model, requested}), None)
                 if match is None:
                     return {"ok": False, **self.profile, "details": f"Model {self.model} is not installed. Install the selected model in Ollama; DOXA will not pull it automatically."}
                 self.profile["revision"] = match.get("digest") or "unresolved"
-                self.profile["quantization"] = match.get("details", {}).get("quantization_level", self.profile["quantization"])
+                details = match.get("details")
+                if isinstance(details, dict):
+                    self.profile["quantization"] = details.get("quantization_level", self.profile["quantization"])
                 if self.laptop and (self.profile["revision"] == "unresolved"
                                     or not str(self.profile["quantization"]).upper().startswith("Q4")):
                     return {"ok": False, **self.profile, "details": "Install the Q4 Ollama model with a resolved digest for this preset."}

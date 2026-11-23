@@ -10,6 +10,14 @@ Count `positive` and `negative` source nodes for a criterion to reproduce its de
 python -m doxa.scorecard_graph frontend/public/studies/scorecard/scorecard-evidence.jsonld custom/custom-1
 ```
 
+To verify the saved checksum, graph nodes and links, and criterion totals, provide the companion frozen JSON file.
+
+```sh
+python -m doxa.scorecard_graph frontend/public/studies/scorecard/scorecard-evidence.jsonld --verify frontend/public/studies/scorecard/scorecard.json
+```
+
+The verifier works offline. Pair the graph and JSON from the same run or release when checking their provenance. [Example scorecard JSON](../frontend/public/studies/scorecard/scorecard.json)
+
 The published graph connects **60 source versions, 137 scored units, 822 decisions
 and six frozen criteria**. The 16,855 decision-to-passage links resolve to 3,064
 distinct passages. Six editorial notes lead readers through selected cases.

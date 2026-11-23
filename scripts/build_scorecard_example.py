@@ -12,6 +12,7 @@ from doxa.extraction import extract_document
 from doxa.method_cards import freeze_method_cards
 from doxa.method_config import content_hash
 from doxa.recorded_export import file_hash
+from doxa.scorecard_graph import verify_projection
 from doxa.scorecard_reports import render_scorecard
 from doxa.scorecards import build_snapshot, freeze_index, summarize_pairs
 
@@ -75,10 +76,10 @@ def build_example():
                   "pairs": pairs, "excluded": [], "criteria": summarize_pairs(pairs, cells, method_rows(method)),
                   "interpretation": "The difference describes these two fictional matched pairs."}
     return build_snapshot(project_id="civic-square-teaching", query_id="civic-square-four-sources", snapshot_version="1",
-                          run={"id": "authored-civic-square-v1", "status": "completed", "config_json": json.dumps(config)},
+                          run={"id": "authored-civic-square-v2", "status": "completed", "config_json": json.dumps(config)},
                           basis="authored teaching labels", sources=sources, exclusions=[], cards=method["cards"],
                           cells=cells, whole_scope=True, now="2026-11-22T00:00:00Z", comparison=comparison,
-                          identity="civic-square-scorecard-v1")
+                          identity="civic-square-scorecard-v2")
 
 
 def method_rows(method):
@@ -93,19 +94,27 @@ def main():
     if snapshot["index"]["value"] != 60 or snapshot["comparison"]["criteria"][0]["difference_pp"] != 50:
         raise ValueError("The teaching contrast changed")
     encoded = json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n"
+    archives = {"starter.zip": sorted(INPUTS.iterdir()),
+                "civic-square-sources.zip": sorted(INPUTS / source["filename"] for source in snapshot["sources"])}
     if args.write:
         OUTPUT.mkdir(parents=True, exist_ok=True)
         (OUTPUT / "scorecard.json").write_text(encoded, encoding="utf-8")
         for format in ("pdf", "html", "xlsx", "csv", "jsonl"):
             render_scorecard(snapshot, OUTPUT, format)
-        with ZipFile(OUTPUT / "starter.zip", "w", compression=ZIP_DEFLATED) as archive:
-            for path in sorted(INPUTS.iterdir()):
-                archive.writestr(ZipInfo(path.name, (2026, 11, 22, 0, 0, 0)), path.read_bytes(), compress_type=ZIP_DEFLATED)
+        for name, paths in archives.items():
+            with ZipFile(OUTPUT / name, "w", compression=ZIP_DEFLATED) as archive:
+                for path in paths:
+                    archive.writestr(ZipInfo(path.name, (2026, 11, 22, 0, 0, 0)), path.read_bytes(), compress_type=ZIP_DEFLATED)
         files = [{"file": path.relative_to(ROOT).as_posix(), "bytes": path.stat().st_size, "sha256": file_hash(path)}
                  for path in sorted(OUTPUT.iterdir())]
         MANIFEST.write_text(json.dumps({"id": snapshot["id"], "origin": "authored fictional labels", "files": files}, indent=2) + "\n")
     elif encoded != (OUTPUT / "scorecard.json").read_text(encoding="utf-8"):
         raise ValueError("The checked-in scorecard differs from the authored fixture")
+    for name, paths in archives.items():
+        with ZipFile(OUTPUT / name) as archive:
+            if archive.namelist() != [path.name for path in paths] or any(archive.read(path.name) != path.read_bytes() for path in paths):
+                raise ValueError(f"The checked-in {name} differs from the authored inputs")
+    verify_projection(json.loads((OUTPUT / "scorecard-evidence.jsonld").read_text(encoding="utf-8")), snapshot)
     print(f"{len(snapshot['sources'])} sources, {len(snapshot['matrix'])} cells, score {snapshot['index']['value']:.1f}")
 
 

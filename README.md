@@ -1,41 +1,58 @@
 # DOXA by TACITUS
 
-**Analyze political framing and bias in documents and speeches on your laptop.** Import PDFs, documents, transcripts or timed captions. Choose a research question and rubric. DOXA returns a scorecard, a source-by-criterion matrix, a timeline, matched comparisons, and the evidence behind each finding.
+**Compare political framing and evidence of prejudice in documents and speech transcripts.** Run DOXA on your laptop, then trace each result to a named criterion, an exact passage, and the sources behind the rate.
 
-[Install the app](#start-locally) · [Worked scorecard](#worked-scorecard) · [Read the PDF](frontend/public/studies/scorecard/doxa-scorecard.pdf) · [Choose a methodology](#what-doxa-measures) · [Download the wheel](https://github.com/sargonxg/DOXA-by-TACITUS/releases/latest)
+[Install locally](#start-locally) · [See the worked scorecard](#worked-scorecard) · [Read the technical method](docs/bias-detection-method.md) · [Release downloads](https://github.com/sargonxg/DOXA-by-TACITUS/releases/latest)
 
-[![Verify DOXA](https://github.com/sargonxg/DOXA-by-TACITUS/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sargonxg/DOXA-by-TACITUS/actions/workflows/ci.yml)
+[![DOXA verification](https://github.com/sargonxg/DOXA-by-TACITUS/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sargonxg/DOXA-by-TACITUS/actions/workflows/ci.yml)
 
-| Import | Analyze | Compare |
-| --- | --- | --- |
-| ![Pixel-art documents beside a timed transcript](docs/images/scorecard-intake.png) | ![Pixel-art monitor with three criterion bars](docs/images/scorecard-analysis.png) | ![Pixel-art paired documents with highlighted evidence](docs/images/scorecard-comparison.png) |
-| Check extracted text and caption timestamps. | Inspect each rate, its denominator, and unresolved cases. | Open the evidence for each scored criterion and export the result. |
+<img src="docs/images/doxa-research-desk.webp" alt="An 8-bit research desk with a document and speech transcript, a criterion chart, and two paired passages" width="850">
+
+A scorecard shows criterion rates, source coverage, uncertain readings, and matched comparisons. Drill down to the original wording or caption time and export the same saved result as PDF, HTML, XLSX, CSV, JSONL, or a JSON-LD evidence graph. [Example PDF](frontend/public/studies/scorecard/doxa-scorecard.pdf) · [Antisemitism and anti-Muslim bias studies](#worked-studies)
 
 ## Start locally
 
-**Install the wheel** in a Python 3.11+ virtual environment. The wheel contains the interface and worked studies. For your own documents, install [Ollama](https://ollama.com/) and ensure its local service is running.
+Download the **Python wheel** from the release and put it in your current directory. Install Python 3.11 or newer, then run the commands for your OS. [Download the wheel](https://github.com/sargonxg/DOXA-by-TACITUS/releases/download/v0.9.1/doxa_by_tacitus-0.9.1-py3-none-any.whl)
+
+**macOS or Linux**
 
 ```sh
-python -m pip install ./doxa_by_tacitus-0.9.0-py3-none-any.whl
-doxa doctor --json --data-dir ./doxa-data
-doxa --host 127.0.0.1 --port 8000 --data-dir ./doxa-data
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install ./doxa_by_tacitus-0.9.1-py3-none-any.whl
+doxa --data-dir ./doxa-data
 ```
 
-Open **http://127.0.0.1:8000**. Select **Open worked example** to inspect the bundled scorecard immediately. To run a fresh analysis, explicitly install the quantized weights once.
+<details>
+<summary>Windows PowerShell</summary>
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install .\doxa_by_tacitus-0.9.1-py3-none-any.whl
+.\.venv\Scripts\python.exe -m doxa.cli --data-dir .\doxa-data
+```
+
+</details>
+
+Open **http://127.0.0.1:8000** and select **Open worked example**. The bundled instance contains authored labels and downloadable results, so you can try the interface before setting up a model.
+
+### Analyze your own sources
+
+1. Install and start Ollama. In a second terminal, run the commands below. The doctor checks local configuration and the installed model's identity.
+2. In DOXA, **Import** your sources. You can start with one file or drop in the four-source Civic Square ZIP. Check the extraction preview before continuing. [Import-ready Civic Square sources](frontend/public/studies/scorecard/civic-square-sources.zip)
+3. Select **Analyze**, enable the bounded laptop preset, then set your question and rubric. Check the model and workload before starting.
+4. Select **Save scorecard** when results arrive. Open a criterion in the source matrix, review its evidence, then choose an export.
 
 ```sh
 ollama pull qwen3.5:2b-q4_K_M
+doxa doctor --laptop --data-dir ./doxa-data
 ```
 
-1. **Import** PDF, DOCX, TXT, Markdown, saved HTML, EML, MBOX, SRT, WebVTT, or a ZIP of sources. Check missing PDF text, OCR, and rejected caption cues before scoring.
-2. **Analyze** with the bounded laptop preset. Enter a question and choose one or more frameworks within the displayed limit. Check the workload and provider. Jobs can pause between tasks and resume from saved decisions.
-3. **Save a scorecard** once results arrive. Inspect the matrix, timeline, and exact passages. Export PDF, offline HTML, XLSX, CSV, or JSONL together with the evidence graph.
-
-The native laptop preset uses a Q4 model, 4,096-token context, two CPU threads and a single request at a time. It starts with a limit of eight sources, 24 text units and six criteria. Run inputs and results are stored in the workspace, with inference sent to Ollama on loopback. The worked examples open without a model. A real Q4 run on a managed Linux VM retained 15 of 16 decisions and exported the scorecard. The physical 8 GB laptop check remains pending. Use `docker compose up --build` from a source checkout for the Docker installation path. [Local requirements and PDF dependencies](docs/deployment.md) · [Measured run and methodology](docs/research-scorecards.md)
+On Windows, use `.\.venv\Scripts\python.exe -m doxa.cli` in place of `doxa`. The laptop preset sends source text to Ollama on your machine. It has a bounded workload of eight sources, 24 units and six criteria. Input includes PDF, DOCX, TXT, Markdown, saved HTML, email archives, SRT and WebVTT. The PDF renderer requires WeasyPrint system libraries. [Setup and PDF dependencies](docs/deployment.md#installed-wheel-and-external-demonstration-data) · [Measured laptop-profile run](docs/research-scorecards.md#evaluation-and-hardware-verification)
 
 ## What DOXA measures
 
-A **criterion** defines an observable pattern and the context needed to assess it. A source can meet a criterion in one passage and contain competing evidence elsewhere. Choose the lens that matches the research question and inspect the underlying text when interpreting the scorecard.
+A **lens** supplies criteria for a research question. A **criterion** specifies an observable signal and the context required to count it. A **finding** records the result and its evidence for review. Apply each prejudice framework on its own terms. [Technical workflow and boundary checks](docs/bias-detection-method.md)
 
 | Lens | What to look for | What qualifies the reading |
 | --- | --- | --- |
@@ -72,7 +89,9 @@ Two briefings and two captioned speeches discuss the same proposed restriction o
 | Favorable appraisal of restrictions | 2 / 4 | 25% | 12.5 |
 | Restriction as remedy | 2 / 4 | 35% | 17.5 |
 
-The unweighted premise criterion identifies a passage where “restore order” could describe traffic or behavior at the demonstration. The comparison counts two matched pairs and shows a **50 percentage-point** difference in the documented-risk measure. The labels were authored for teaching. Weight choices and the corpus define what the index measures. Each weighted criterion needs at least 80% determinate coverage. [Walkthrough and reproduction](docs/research-scorecards.md) · [Inputs](frontend/public/studies/scorecard/starter.zip) · [PDF](frontend/public/studies/scorecard/doxa-scorecard.pdf) · [Workbook](frontend/public/studies/scorecard/doxa-scorecard.xlsx) · [JSONL](frontend/public/studies/scorecard/doxa-scorecard.jsonl)
+The unweighted premise criterion identifies a passage where “restore order” could describe traffic or behavior at the demonstration. The comparison counts two matched pairs and shows a **50 percentage-point** difference in the documented-risk measure. The labels were authored for teaching. Weight choices and the corpus define what the index measures. Each weighted criterion needs at least 80% determinate coverage. The unweighted premise rate is 0/3 with one unresolved source, yielding a range of 0%–25% under alternative readings. [Walkthrough and reproduction](docs/research-scorecards.md) · [Source ZIP](frontend/public/studies/scorecard/civic-square-sources.zip) · [Rubric and metadata](frontend/public/studies/scorecard/starter.zip) · [PDF](frontend/public/studies/scorecard/doxa-scorecard.pdf) · [Workbook](frontend/public/studies/scorecard/doxa-scorecard.xlsx) · [JSONL](frontend/public/studies/scorecard/doxa-scorecard.jsonl)
+
+<img src="docs/images/civic-square-profile.png" alt="DOXA’s local scorecard for Civic Square showing four criterion rates, coverage and a 0% to 25% unresolved range for the premise criterion" width="850">
 
 ## Worked studies
 
@@ -86,10 +105,10 @@ These collections support worked interpretations under declared rubrics. Indepen
 
 ## Evidence graph
 
-The scorecard graph links each source-level result to its criterion, run, and representative passage. The passage stores exact text and a source locator. The example graph contains enough information to recompute the documented-risk bar as **3 ÷ 4 = 75%**.
+The scorecard graph links each source-level result to its criterion, run, and representative passage. The passage stores exact text and a source locator. The example graph contains enough information to recompute the documented-risk bar as **3 ÷ 4 = 75%**. The verifier checks the saved checksum, graph links, and criterion totals offline.
 
 ```sh
-python -m doxa.scorecard_graph frontend/public/studies/scorecard/scorecard-evidence.jsonld custom/custom-1
+python -m doxa.scorecard_graph frontend/public/studies/scorecard/scorecard-evidence.jsonld custom/custom-1 --verify frontend/public/studies/scorecard/scorecard.json
 ```
 
 [Graph data](frontend/public/studies/scorecard/scorecard-evidence.jsonld) · [Vocabulary and offline query](docs/evidence-graph.md)

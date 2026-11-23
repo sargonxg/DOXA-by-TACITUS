@@ -9,7 +9,7 @@ from __future__ import annotations
 from copy import deepcopy
 
 from .lineage import content_sha256
-from .lenses import LENSES, get_lens, validate_custom_lens
+from .lenses import LENSES, SOURCE_SCOPE, get_lens, validate_custom_lens
 
 METHOD_CARD_VERSION = "doxa-measurement-card-1.0"
 REGISTRY_VERSION = "doxa-measurement-registry-0.6"
@@ -98,6 +98,11 @@ def card_from_pack(pack: dict, criterion_id: str) -> dict:
                        "notice": "Citations motivate the method; they do not certify DOXA or establish transfer accuracy."},
         "origin": "user_authored_operational_contract" if custom else "DOXA_operational_measurement_contract",
     }
+    if criterion.get("applicability") == SOURCE_SCOPE:
+        card["applicability"] = SOURCE_SCOPE
+        card["required_context"].append(
+            "Every selected source is eligible for this criterion. A source with only inapplicable units stays uncertain."
+        )
     card["card_sha256"] = content_sha256(card)
     return card
 

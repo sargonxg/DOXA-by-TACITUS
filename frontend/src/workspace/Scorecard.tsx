@@ -11,6 +11,7 @@ type Totals = {
   positive: number; negative: number; uncertain: number; incomplete: number;
   inapplicable: number; determinate: number; eligible: number; retained: number;
   planned: number; rate: number | null; coverage: number | null;
+  unresolved_range?: [number, number] | null;
 };
 type Criterion = Totals & { key: string; label: string; kind: string };
 type Witness = {
@@ -18,7 +19,7 @@ type Witness = {
   cue_start_ms: number | null; cue_end_ms: number | null;
   explanation: string; alternative: string; review_state: string;
 };
-type Cell = { document_id: string; criterion: string; status: string; evidence: Witness | null };
+type Cell = { document_id: string; criterion: string; status: string; evidence: Witness | null; scope_note?: string };
 type Snapshot = {
   id: string; question: string; basis: string; created_at: string; snapshot_version: string;
   run: { model: string; status: string };
@@ -46,12 +47,13 @@ const percent = (value: number | null) => value === null ? "—" : (value * 100)
 
 function Evidence({ cell, onOpen }: { cell: Cell; onOpen?: OpenSource }) {
   const evidence = cell.evidence;
-  if (!evidence) return <span>{human(cell.status)}</span>;
+  if (!evidence) return <span>{human(cell.status)}{cell.scope_note && <small>{cell.scope_note}</small>}</span>;
   const where = evidence.cue_start_ms !== null && evidence.cue_end_ms !== null
     ? cueTime(evidence.cue_start_ms) + "–" + cueTime(evidence.cue_end_ms)
     : evidence.page !== null ? "Page " + evidence.page : "Block " + evidence.block_id;
   return <details>
     <summary>{human(cell.status)}</summary>
+    {cell.scope_note && <p>{cell.scope_note}</p>}
     <p><small>{where} · {human(evidence.review_state)}</small></p>
     <blockquote>{evidence.quote}</blockquote>
     <p>{evidence.explanation}</p>
@@ -87,7 +89,9 @@ function ScorecardView({ value, onOpen }: { value: Snapshot; onOpen?: OpenSource
         <tbody>{value.criteria.map((item) => <tr key={item.key}>
           <th scope="row">{item.label}<small>{human(item.kind)}</small></th>
           <td>{item.rate !== null && <meter aria-label={item.label + " positive rate"} min={0} max={1} value={item.rate} />}
-            {percent(item.rate)} · {item.positive}/{item.determinate}</td>
+            {percent(item.rate)} · {item.positive}/{item.determinate}
+            {item.unresolved_range && (item.uncertain > 0 || item.incomplete > 0) &&
+              <small>Unresolved range {item.unresolved_range.map(percent).join("–")}</small>}</td>
           <td>{item.uncertain} / {item.incomplete} / {item.inapplicable}</td>
           <td>{percent(item.coverage)}<small>{item.retained}/{item.planned} decisions retained</small></td>
         </tr>)}</tbody>
@@ -258,7 +262,8 @@ export function ScorecardPanel({ project, query, onOpen, onRefresh }: {
       <h3>Fictional teaching corpus</h3>
       <p>Compare two briefings and two captioned speeches about a proposed restriction on public demonstrations. The saved labels were authored for this exercise.</p>
       <ScorecardView key={example.id} value={example} />
-      <p><a className="w-score-link" href={examplePath + "starter.zip"} download>Download the inputs</a>
+      <p><a className="w-score-link" href={examplePath + "civic-square-sources.zip"} download>Download the import-ready sources</a>
+        <a className="w-score-link" href={examplePath + "starter.zip"} download>Download sources, rubric, and metadata</a>
         <a className="w-score-link" href={examplePath + "doxa-scorecard.pdf"} download>Read the PDF</a>
         <a className="w-score-link" href={examplePath + "scorecard-evidence.jsonld"} download>Download JSON-LD</a></p>
     </div>}

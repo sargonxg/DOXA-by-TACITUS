@@ -53,9 +53,12 @@ def _render_criteria(snapshot):
     index = snapshot.get("index") or {}
     for item in snapshot["criteria"]:
         weight = index.get("weights", {}).get(item["key"])
+        bounds = item.get("unresolved_range")
+        uncertainty = f'<br><small>Unresolved range {_percent(bounds[0])}–{_percent(bounds[1])}</small>' if (
+            bounds and (item["uncertain"] or item["incomplete"])) else ""
         rows.append(f'<tr><th scope="row">{_text(item["label"])}</th>'
                     f'<td><div class="track" aria-hidden="true"><i style="width:{100 * (item["rate"] or 0):.1f}%"></i></div>'
-                    f'{_percent(item["rate"])} · {item["positive"]}/{item["determinate"]}</td>'
+                    f'{_percent(item["rate"])} · {item["positive"]}/{item["determinate"]}{uncertainty}</td>'
                     f'<td>{item["uncertain"]} / {item["incomplete"]} / {item["inapplicable"]}</td>'
                     f'<td>{_percent(item["coverage"])}<br>{item["retained"]}/{item["planned"]} decisions</td>'
                     f'<td>{f"{weight}%" if weight else "—"}</td></tr>')
@@ -147,9 +150,10 @@ def _tables(snapshot):
         source = sources[cell["document_id"]]
         evidence = cell["evidence"] or {}
         cells.append({"document_id": cell["document_id"], "title": source["title"], "criterion": cell["criterion"],
-                      "status": cell["status"], "planned": cell["planned"], "retained": cell["retained"], **evidence})
+                      "status": cell["status"], "planned": cell["planned"], "retained": cell["retained"],
+                      "scope_note": cell.get("scope_note"), **evidence})
     components = {item["key"]: item for item in index.get("components", [])}
-    criteria = [{**row, "weight": components.get(row["key"], {}).get("weight"),
+    criteria = [{**_interval_columns(row), "weight": components.get(row["key"], {}).get("weight"),
                  "contribution": components.get(row["key"], {}).get("contribution")} for row in snapshot["criteria"]]
     comparators, pairs, comparison_exclusions = [], [], []
     if snapshot["comparison"]:
@@ -162,8 +166,14 @@ def _tables(snapshot):
                        "index_status": index.get("status"), "index_value": index.get("value"),
                        "index_range": index.get("range"), "equal_weight": index.get("equal_weight")}],
             "Criteria": criteria, "Source matrix": cells, "Sources": snapshot["sources"],
-            "Timeline": snapshot["timeline"], "Matched comparison": comparators, "Resolved pairs": pairs,
+            "Timeline": [_interval_columns(row) for row in snapshot["timeline"]], "Matched comparison": comparators, "Resolved pairs": pairs,
             "Comparison exclusions": comparison_exclusions, "Source exclusions": snapshot["excluded"]}
+
+
+def _interval_columns(row):
+    lower, upper = row.get("unresolved_range") or (None, None)
+    return {**{key: value for key, value in row.items() if key != "unresolved_range"},
+            "unresolved_lower_rate": lower, "unresolved_upper_rate": upper}
 
 
 def _scalar(value):
