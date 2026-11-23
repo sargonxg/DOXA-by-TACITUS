@@ -96,9 +96,13 @@ def main():
             assert dialog.locator(".w-study-body").evaluate("el => el.scrollWidth <= el.clientWidth")
             if output:
                 dialog.screenshot(path=str(output / "muslim-coverage-mobile.png"))
+            page.set_viewport_size({"width": 320, "height": 844})
+            dialog.get_by_role("button", name="All articles", exact=True).click()
+            expect(dialog.get_by_label("Publication year")).to_be_visible()
+            assert dialog.locator(".w-study-body").evaluate("el => el.scrollWidth <= el.clientWidth")
             page.keyboard.press("Escape")
             expect(dialog).not_to_be_visible()
-            standalone = browser.new_page()
+            standalone = browser.new_page(viewport={"width": 320, "height": 844})
             standalone.goto(base + "/studies/muslim-coverage/index.html")
             standalone.get_by_role("link", name="Follow the evidence").click()
             assert standalone.url.endswith("#case-school-hijab")
@@ -107,6 +111,7 @@ def main():
             expect(standalone.get_by_role("status")).to_have_text("Showing 8 of 8 matching articles.")
             standalone.get_by_label("Article reading").select_option("uncertain")
             expect(standalone.get_by_role("status")).to_have_text("Showing 1 of 1 matching articles.")
+            assert standalone.locator("body").evaluate("el => el.scrollWidth <= el.clientWidth")
             # Some managed Chromium installations disallow all file:// navigation.
             # The CI browser must exercise the unzipped edition directly.
             try:

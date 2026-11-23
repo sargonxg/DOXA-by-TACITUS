@@ -306,6 +306,8 @@
 }
 .w-study-controls label {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
   gap: 3px;
   font-size: 13px;
   max-width: 100%;

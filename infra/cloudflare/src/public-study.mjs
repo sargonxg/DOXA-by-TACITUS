@@ -1,6 +1,6 @@
 // Only the published edition is served here. The research API runs separately.
 const base =
-  "https://raw.githubusercontent.com/sargonxg/DOXA-by-TACITUS/v0.7.0/frontend/public/studies/muslim-coverage/";
+  "https://raw.githubusercontent.com/sargonxg/DOXA-by-TACITUS/v0.7.1/frontend/public/studies/muslim-coverage/";
 const files = new Map([
   ["/", ["index.html", "text/html; charset=utf-8"]],
   ["/index.html", ["index.html", "text/html; charset=utf-8"]],
