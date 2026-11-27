@@ -16,11 +16,11 @@ A scorecard shows criterion rates, source coverage, uncertain readings, and matc
 
 ## Browser corpus audit
 
-Drop in a single paper or a batch of up to twelve selectable-text PDFs, text or Markdown files. Add author or organization labels to switch between document and author comparisons. The browser shows political language flags and academic research cues, with per-criterion denominators, resolution coverage and exact excerpts. Open a retained causal sentence to check its textual support in the paper’s Methods and Results with the Hugging Face Evidence Verifier. Source files stay in the browser.
+Drop in a single paper or a batch of up to twelve selectable-text PDFs, text or Markdown files. Add author or organization labels to switch between document and author comparisons. The browser shows political language flags and academic research cues, with per-criterion denominators, resolution coverage and exact excerpts. Open a retained causal sentence to check its textual support in the paper’s Methods and Results with the Hugging Face Evidence Verifier. Source files stay in the browser. Record a decision and note on any retained excerpt, then download an offline case file with source fingerprints, reviewer decisions and exact evidence. The JSON audit preserves counts and unresolved checks.
 
 The built-in example screens **143 passages across 41 PDF pages** from two published PLOS ONE studies. In the news-outlet paper, the evidential-overclaim screen raised seven flags among 12 resolved checks, with another 60 checks unresolved. The comparison marks that low coverage, and every displayed finding provides its source location. Use it to prioritize human review of the passage and its context.
 
-[Open DOXA](https://doxa.tacitus.me/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.7.1/DOCUMENT_REVIEW.md) · [See the interface](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.7.1/document-desk.png)
+[Open DOXA](https://doxa.tacitus.me/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.8.0/DOCUMENT_REVIEW.md) · [See the interface](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.8.0/document-desk.png)
 
 ## Open evidence research
 
