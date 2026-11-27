@@ -20,7 +20,10 @@ Drop in a single paper or a batch of up to twelve selectable-text PDFs, text or 
 
 The built-in example screens **143 passages across 41 PDF pages** from two published PLOS ONE studies. In the news-outlet paper, the evidential-overclaim screen raised seven flags among 12 resolved checks, with another 60 checks unresolved. The comparison marks that low coverage, and every displayed finding provides its source location. Use it to prioritize human review of the passage and its context.
 
-[Open DOXA](https://doxa.tacitus.me/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.8.0/DOCUMENT_REVIEW.md) · [See the interface](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.8.0/document-desk.png)
+
+The worked corpus now guides three investigations, with complete decision distributions and exact counts by detected section. Hover or open a criterion to read its definition, boundary cases and sources. Reviewer-authored mitigation drafts preserve the original wording and record checks for scope, evidence and political meaning. The draft feature is in development.
+
+[Open DOXA](https://doxa.tacitus.me/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.9.0/DOCUMENT_REVIEW.md) · [See the interface](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.9.0/document-desk.png)
 
 ## Open evidence research
 
