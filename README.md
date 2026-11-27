@@ -14,6 +14,14 @@ The reader owl identifies DOXA across the local workbench, [TACITUS website](htt
 
 A scorecard shows criterion rates, source coverage, uncertain readings, and matched comparisons. Drill down to the original wording or caption time and export the same saved result as PDF, HTML, XLSX, CSV, JSONL, or a JSON-LD evidence graph. [Example PDF](frontend/public/studies/scorecard/doxa-scorecard.pdf) · [Antisemitism and anti-Muslim bias studies](#worked-studies)
 
+## Browser corpus audit
+
+Drop in a single paper or a batch of up to twelve selectable-text PDFs, text or Markdown files. Add author or organization labels to switch between document and author comparisons. The browser shows political language flags and academic research cues, with per-criterion denominators, resolution coverage and exact excerpts. Open a retained causal sentence to check its textual support in the paper’s Methods and Results with the Hugging Face Evidence Verifier. Source files stay in the browser.
+
+The built-in example screens **143 passages across 41 PDF pages** from two published PLOS ONE studies. In the news-outlet paper, the evidential-overclaim screen raised seven flags among 12 resolved checks, with another 60 checks unresolved. The comparison marks that low coverage, and every displayed finding provides its source location. Use it to prioritize human review of the passage and its context.
+
+[Open DOXA](https://doxa.tacitus.me/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.7.1/DOCUMENT_REVIEW.md) · [See the interface](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.7.1/document-desk.png)
+
 ## Open evidence research
 
 DOXA’s Hugging Face benchmark tests whether a supplied passage supports a claim, contradicts it, or leaves it unresolved. It contains 1,348 judgments across government speeches and statutes, political and public-policy papers, and SciFact. The 132 DOXA-authored annotations remain provisional.
