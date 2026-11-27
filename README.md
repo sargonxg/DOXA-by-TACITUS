@@ -14,6 +14,14 @@ The reader owl identifies DOXA across the local workbench, [TACITUS website](htt
 
 A scorecard shows criterion rates, source coverage, uncertain readings, and matched comparisons. Drill down to the original wording or caption time and export the same saved result as PDF, HTML, XLSX, CSV, JSONL, or a JSON-LD evidence graph. [Example PDF](frontend/public/studies/scorecard/doxa-scorecard.pdf) · [Antisemitism and anti-Muslim bias studies](#worked-studies)
 
+## Open evidence research
+
+DOXA’s Hugging Face benchmark tests whether a supplied passage supports a claim, contradicts it, or leaves it unresolved. It contains 1,348 judgments across government speeches and statutes, political and public-policy papers, and SciFact. The 132 DOXA-authored annotations remain provisional.
+
+The CPU-trained Evidence Verifier scored **0.685 macro-F1** on 274 held-out judgments, compared with **0.604** for the frozen DeBERTa baseline. The improvement came from government texts and SciFact. The PLOS ONE slice matched the baseline. This evaluation concerns claim–passage evidence support within its benchmark scope.
+
+[Benchmark](https://huggingface.co/datasets/Giuliocc/doxa-evidence-benchmark/tree/v0.1.0) · [CPU model](https://huggingface.co/Giuliocc/doxa-evidence-verifier/tree/v0.1.0) · [Methods and errors](https://huggingface.co/datasets/Giuliocc/doxa-evidence-benchmark/blob/v0.1.0/EVALUATION.md) · [Browser Evidence Lab](https://giuliocc-doxa-lab.static.hf.space/#documents) · [TACITUS DOXA](https://tacitus.me/doxa/)
+
 ## Start locally
 
 Download the **Python wheel** from the release and put it in your current directory. Install Python 3.11 or newer, then run the commands for your OS. [Download the wheel](https://github.com/sargonxg/DOXA-by-TACITUS/releases/download/v0.9.2/doxa_by_tacitus-0.9.2-py3-none-any.whl)
