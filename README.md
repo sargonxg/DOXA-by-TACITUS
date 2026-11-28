@@ -16,7 +16,7 @@ A scorecard shows criterion rates, source coverage, uncertain readings, and matc
 
 ## Browser corpus audit
 
-Upload PDFs, text or Markdown to [DOXA Lab](https://doxa.tacitus.me/). The browser screens political language and academic research cues, with per-criterion denominators, unresolved checks and exact source excerpts. Add author labels for descriptive summaries or declare event, topic, genre and period for a matched comparison. The workflow supports twelve files, 32 MiB each and 128 MiB total.
+Upload PDFs, text or Markdown to [DOXA Lab](https://giuliocc-doxa-lab.static.hf.space/). The browser screens political language and academic research cues, with per-criterion denominators, unresolved checks and exact source excerpts. Add author labels for descriptive summaries or declare event, topic, genre and period for a matched comparison. The workflow supports twelve files, 32 MiB each and 128 MiB total.
 
 PDF reading records expose detected columns, repeated-margin exclusions, table/footnote cues and source coordinates. Optional English OCR runs locally for scans, with a 200-page attempt budget per file. Original PDFs and physical page links stay available. Source files and inference remain in the browser.
 
@@ -26,11 +26,13 @@ Record speaker attribution, exact supporting or countervailing selections, a dis
 
 The worked example screens **143 passages across 41 PDF pages** from two CC BY PLOS ONE studies. The updated parser changes the earlier segmentation. In the news-outlet paper, the unchanged evidential-overclaim screen raises eight flags among 15 resolved checks, with 57 unresolved. Guided tasks open measurement questions, the influencer paper’s explicit causal limitation and a caption false alarm. These outputs support contextual review and provide no independent ruling that the papers contain research defects.
 
-[Open DOXA](https://doxa.tacitus.me/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.12.0/DOCUMENT_REVIEW.md) · [Ten improvements and measured limits](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.12.0/REVIEW_RELEASE.md) · [Reproducible browser source](https://huggingface.co/spaces/Giuliocc/doxa-lab/resolve/v0.12.0/source.zip)
+[Open DOXA](https://giuliocc-doxa-lab.static.hf.space/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.12.0/DOCUMENT_REVIEW.md) · [Ten improvements and measured limits](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.12.0/REVIEW_RELEASE.md) · [Reproducible browser source](https://huggingface.co/spaces/Giuliocc/doxa-lab/resolve/v0.12.0/source.zip)
 
 ## Hosted workspace access
 
-[Sign in to DOXA](https://doxa.tacitus.me/) to review documents and use the evidence scorecard. Email verification protects product entry and assets. Files and saved projects remain in the browser, with separate account namespaces; this is not encrypted cloud storage or a synchronized team workspace. The [browser source, build and access checks](browser-workspace/README.md) are in this repository. [Hugging Face](https://huggingface.co/spaces/Giuliocc/doxa-lab) publishes research, models and source releases.
+[Sign in to DOXA](https://giuliocc-doxa-lab.static.hf.space/) to review documents and use the evidence scorecard. Email verification protects product entry and assets. Files and saved projects remain in the browser, with separate account namespaces; this is not encrypted cloud storage or a synchronized team workspace. The [browser source, build and access checks](browser-workspace/README.md) are in this repository. [Hugging Face](https://huggingface.co/spaces/Giuliocc/doxa-lab) publishes research, models and source releases.
+
+The [public Hugging Face demo](https://giuliocc-doxa-lab.static.hf.space/) opens without a TACITUS sign-in. The [custom DOXA address](https://doxa.tacitus.me/) currently requires Cloudflare Access; its protection is preserved.
 
 ## Human wording benchmark and trained encoder
 
@@ -53,7 +55,7 @@ The expanded [DOXA Research Atlas](https://huggingface.co/datasets/Giuliocc/doxa
 
 Political reading candidates have null gold labels and zero new independent human reviews. The views overlap and cannot be counted as separate independent sources. The fixed biomedical slot reranker improved human-span hit@5 from 68.53% to 77.66%; it requires human-specified clinical fields and does not qualify political entailment. The Wind Tunnel known-item update made a small historical half-Brier improvement; failed encoder and unqualified temporal replacements remain withheld.
 
-Open **Bias guide → Find research and source passages** in [DOXA Lab](https://doxa.tacitus.me/) to inspect a licensed paragraph and run the local review. The JSON report retains original source-byte identity. [The research foundation guide](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.12.0/RESEARCH_FOUNDATION.md) explains exact source spans, local model use, annotation provenance and the remaining human/evaluation dependencies. This browser/SDK research distribution is separate from the repository's installed local workbench described below.
+Open **Bias guide → Find research and source passages** in [DOXA Lab](https://giuliocc-doxa-lab.static.hf.space/) to inspect a licensed paragraph and run the local review. The JSON report retains original source-byte identity. [The research foundation guide](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.12.0/RESEARCH_FOUNDATION.md) explains exact source spans, local model use, annotation provenance and the remaining human/evaluation dependencies. This browser/SDK research distribution is separate from the repository's installed local workbench described below.
 
 
 ## Open evidence research
@@ -62,7 +64,7 @@ DOXA’s Hugging Face benchmark tests whether a supplied passage supports a clai
 
 The CPU-trained Evidence Verifier scored **0.685 macro-F1** on 274 held-out judgments, compared with **0.604** for the frozen DeBERTa baseline. The improvement came from government texts and SciFact. The PLOS ONE slice matched the baseline. This evaluation concerns claim–passage evidence support within its benchmark scope.
 
-[Benchmark](https://huggingface.co/datasets/Giuliocc/doxa-evidence-benchmark/tree/v0.1.0) · [CPU model](https://huggingface.co/Giuliocc/doxa-evidence-verifier/tree/v0.1.0) · [Methods and errors](https://huggingface.co/datasets/Giuliocc/doxa-evidence-benchmark/blob/v0.1.0/EVALUATION.md) · [Signed-in document review](https://doxa.tacitus.me/#documents) · [TACITUS DOXA](https://tacitus.me/doxa/)
+[Benchmark](https://huggingface.co/datasets/Giuliocc/doxa-evidence-benchmark/tree/v0.1.0) · [CPU model](https://huggingface.co/Giuliocc/doxa-evidence-verifier/tree/v0.1.0) · [Methods and errors](https://huggingface.co/datasets/Giuliocc/doxa-evidence-benchmark/blob/v0.1.0/EVALUATION.md) · [Signed-in document review](https://giuliocc-doxa-lab.static.hf.space/#documents) · [TACITUS DOXA](https://tacitus.me/doxa/)
 
 ## Start locally
 
