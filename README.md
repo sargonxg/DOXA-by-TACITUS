@@ -26,7 +26,7 @@ Record speaker attribution, exact supporting or countervailing selections, a dis
 
 The worked example screens **143 passages across 41 PDF pages** from two CC BY PLOS ONE studies. The updated parser changes the earlier segmentation. In the news-outlet paper, the unchanged evidential-overclaim screen raises eight flags among 15 resolved checks, with 57 unresolved. Guided tasks open measurement questions, the influencer paper’s explicit causal limitation and a caption false alarm. These outputs support contextual review and provide no independent ruling that the papers contain research defects.
 
-[Open DOXA](https://doxa.tacitus.me/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.11.0/DOCUMENT_REVIEW.md) · [Ten improvements and measured limits](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.11.0/REVIEW_RELEASE.md) · [Reproducible browser source](https://huggingface.co/spaces/Giuliocc/doxa-lab/resolve/v0.11.0/source.zip)
+[Open DOXA](https://doxa.tacitus.me/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.12.0/DOCUMENT_REVIEW.md) · [Ten improvements and measured limits](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.12.0/REVIEW_RELEASE.md) · [Reproducible browser source](https://huggingface.co/spaces/Giuliocc/doxa-lab/resolve/v0.12.0/source.zip)
 
 ## Hosted workspace access
 
@@ -40,17 +40,21 @@ The [CPU-trained contextual encoder](https://huggingface.co/Giuliocc/doxa-wordin
 
 In a retained passage, open **Check wording with the contextual model** to run the pinned encoder locally. The result records task, revision, class score, resolution status and token budget. Input beyond 256 tokens returns unresolved. This is an English news-wording model. Academic text, antisemitism, other prejudice tasks and whole-document political-bias conclusions require their own validation. Its wording output remains distinct from the six-head provisional screen and the claim-evidence verifier.
 
-The [political consistency diagnostic](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.11.0/POLITICAL_CONSISTENCY.md) publishes actual actor-substitution errors and authored-fixture limitations. It supplies no political-neutrality certificate. The [professional review protocol](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.11.0/PROFESSIONAL_VALUE_PROTOCOL.md) defines quality-qualified reviewer/time comparisons. Human savings, pricing and buyer interest remain unmeasured. This release uses local CPU training, Static hosting and zero new spend.
+The [political consistency diagnostic](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.12.0/POLITICAL_CONSISTENCY.md) publishes actual actor-substitution errors and authored-fixture limitations. It supplies no political-neutrality certificate. The [professional review protocol](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.12.0/PROFESSIONAL_VALUE_PROTOCOL.md) defines quality-qualified reviewer/time comparisons. Human savings, pricing and buyer interest remain unmeasured. This release uses local CPU training, Static hosting and zero new spend.
 
-## Research and annotation sources
+## Research foundation on Hugging Face
 
-The [DOXA Research Atlas](https://huggingface.co/datasets/Giuliocc/doxa-research-atlas/tree/v0.1.0) contains **2,039 distinct research records**, including **187 articles with cleared extracted text**, **11,076 source paragraphs** and **3,711 unannotated review nominations**. Every released paragraph retains its source, license, XML location and text hash. Metadata-only records are identified separately.
+The expanded [DOXA Research Atlas](https://huggingface.co/datasets/Giuliocc/doxa-research-atlas/tree/v0.2.0) supplies **27,613 distinct discovery records**, **2,032 licensed full-text records** and **113,899 exact source paragraphs**. Original sections, adjacent context, bibliography, source locations, rights, source-family grouping and duplicate exclusions are inspectable. Query topics are discovery candidates, not judgments that an author or paper is biased.
 
-The operational map covers 34 research questions across political language, coverage, conflict, group prejudice, study methods and model evaluation. Six dimensions correspond to the published screening heads. Each remaining task states its present capability and evidence requirements. Nomination labels are unassigned, and the reserved source groups support later annotation and qualification.
+- [Context Bias](https://huggingface.co/datasets/Giuliocc/doxa-context-bias): 11,072 source paragraph/context packets and 34 operational measurement cards.
+- [Matched Coverage](https://huggingface.co/datasets/Giuliocc/doxa-matched-coverage): 300 upstream source/reference dossiers: 100 BASIL matched events plus 200 original WCEP editor-reference groups, with metadata for 750 articles and exact source-restoration identities. Publisher text and labels are not redistributed.
+- [Study Evidence](https://huggingface.co/datasets/Giuliocc/doxa-study-evidence): 8,749 verbatim claim/context packets from 320 licensed papers, with numerical/causal review prompts and separate human-reference biomedical retrieval results.
+- [Methods v0.2](https://huggingface.co/datasets/Giuliocc/doxa-methods/tree/v0.2.0): a checked local model SDK, common task-specific contracts, source/evidence schemas, reviewer admission and the forty-deliverable evidence matrix.
 
-Open **Bias guide → Find research and source passages** in the [browser audit](https://doxa.tacitus.me/). Select a research question, inspect a licensed original paragraph and run the local review. The JSON audit and HTML case file retain the research source lineage.
+Political reading candidates have null gold labels and zero new independent human reviews. The views overlap and cannot be counted as separate independent sources. The fixed biomedical slot reranker improved human-span hit@5 from 68.53% to 77.66%; it requires human-specified clinical fields and does not qualify political entailment. The Wind Tunnel known-item update made a small historical half-Brier improvement; failed encoder and unqualified temporal replacements remain withheld.
 
-[Taxonomy](https://huggingface.co/datasets/Giuliocc/doxa-research-atlas/blob/v0.1.0/TAXONOMY.md) · [Annotation protocol](https://huggingface.co/datasets/Giuliocc/doxa-research-atlas/blob/v0.1.0/ANNOTATION_PROTOCOL.md) · [Selection audit](https://huggingface.co/datasets/Giuliocc/doxa-research-atlas/blob/v0.1.0/RELEVANCE_AUDIT.md) · [TACITUS DOXA](https://tacitus.me/doxa/)
+Open **Bias guide → Find research and source passages** in [DOXA Lab](https://doxa.tacitus.me/) to inspect a licensed paragraph and run the local review. The JSON report retains original source-byte identity. [The research foundation guide](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.12.0/RESEARCH_FOUNDATION.md) explains exact source spans, local model use, annotation provenance and the remaining human/evaluation dependencies. This browser/SDK research distribution is separate from the repository's installed local workbench described below.
+
 
 ## Open evidence research
 
@@ -166,3 +170,4 @@ python -m doxa.scorecard_graph frontend/public/studies/scorecard/scorecard-evide
 ## Documentation
 
 [Documentation index](docs/README.md) · [Workbench reference](docs/workbench-reference.md) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [Citation](CITATION.cff) · [Apache 2.0 license](LICENSE) · [TACITUS](https://tacitus.me/#doxa)
+
