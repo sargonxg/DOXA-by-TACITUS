@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Audit political framing, evidence and academic methods across long documents with DOXA by TACITUS.">
+  <title>DOXA · Political bias audit</title>
+  <link rel="icon" href="./doxa.svg" type="image/svg+xml">
+  <script type="module" crossorigin src="./assets/index-DTcyoEG3.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-2oC06pNq.css">
+</head>
+<body>
+  <a class="skip-link" href="#audit-main">Skip to document audit</a>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="brand" href="https://tacitus.me/doxa/">DOXA <span>by TACITUS</span></a>
+      <div class="header-links">
+        <button id="guide-open" class="link-button" type="button">Bias guide</button>
+        <a class="methods" href="https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.11.0/DOCUMENT_REVIEW.md">Methods &amp; data</a>
+      </div>
+    </div>
+  </header>
+  <main class="wrap" id="audit-main">
+    <section class="intro" aria-labelledby="audit-title">
+      <div>
+        <h1 id="audit-title">Audit political bias in documents.</h1>
+        <p>Find political framing, group-directed language and evidence overclaim. Compare documents and authors, then open the passages behind the numbers.</p>
+      </div>
+      <img src="./brand/doxa-reader.webp" width="78" height="81" alt="">
+    </section>
+    <details id="project-controls" class="project-controls">
+      <summary>Open, import or back up a review project</summary>
+      <p class="muted">Browser projects retain original files, recorded analysis, decisions and drafts. A downloaded .doxa project can move the review to another browser.</p>
+      <label for="project-name">Project name</label>
+      <input id="project-name" maxlength="120" placeholder="Use the source filename">
+      <div class="actions">
+        <button id="project-copy" type="button" class="outline" disabled>Save as a new project</button>
+        <button id="project-portable" type="button" class="outline" disabled>Download project (.doxa)</button>
+        <button id="project-rerun" type="button" class="outline" disabled>Audit these source files again</button>
+      </div>
+      <label for="project-import">Open a project file</label>
+      <input id="project-import" type="file" accept=".doxa,application/vnd.tacitus.doxa-project">
+      <div id="project-list"></div>
+      <button id="project-cancel" class="outline" type="button" hidden>Cancel project operation</button>
+    </details>
+    <p id="project-status" class="status" role="status"></p>
+    <form id="document-form">
+      <label for="document-file">Source documents</label>
+      <input type="file" id="document-file" multiple accept=".pdf,.txt,.md,application/pdf,text/plain,text/markdown" aria-describedby="source-limits">
+      <p class="muted" id="source-limits">PDF, TXT or Markdown · optional English OCR for scans · 12 files, 32 MiB each, 128 MiB total · files stay in this browser</p>
+      <label class="ocr-option"><input id="document-ocr" type="checkbox"> Recognize scanned pages locally with English OCR</label>
+      <p class="muted">OCR downloads its engine and English data on first use. Check recognized text against the original image.</p>
+      <details id="source-authors" hidden>
+        <summary>Label authors (optional)</summary>
+        <div id="source-author-fields"></div>
+      </details>
+      <div class="actions">
+        <button id="document-run" type="submit" disabled>Run audit</button>
+        <button id="document-example" type="button" class="outline">Try a research corpus</button>
+        <button id="document-cancel" type="button" class="outline" hidden>Cancel</button>
+      </div>
+      <progress id="document-progress" aria-label="Document audit progress" hidden></progress>
+      <p class="status" id="document-status" role="status"></p>
+    </form>
+    <section id="document-results" aria-labelledby="document-result-title" hidden>
+      <header class="result-header">
+        <h2 id="document-result-title">Audit report</h2>
+        <div class="actions">
+          <button id="project-save" type="button">Save project on this browser</button>
+          <button id="document-export" type="button" class="outline">Export audit data (JSON)</button>
+        </div>
+      </header>
+      <section id="run-analysis" class="run-analysis" aria-labelledby="run-analysis-title"></section>
+      <section id="worked-guide" aria-labelledby="worked-guide-title" hidden></section>
+      <section id="corpus-overview" aria-label="Corpus comparison" hidden>
+        <label for="comparison-scope">Comparison scope</label>
+        <select id="comparison-scope"></select>
+        <p id="comparison-scope-note" class="muted"></p>
+        <div class="comparison-header">
+          <h3>Compare flags</h3>
+          <div role="group" aria-label="Group comparison by">
+            <button id="compare-documents" type="button" class="outline" aria-pressed="true">Documents</button>
+            <button id="compare-authors" type="button" class="outline" aria-pressed="false">Authors</button>
+          </div>
+        </div>
+        <div id="corpus-matrix"></div>
+        <div class="distribution-legend" aria-label="Chart legend"><span class="present">Flagged</span><span class="absent">No flag</span><span class="uncertain">Needs context</span><span class="abstained">Abstained / unsupported</span></div>
+        <p class="muted">Each bar spans every assessed passage for one criterion. Counts show flags over assessed passages, followed by resolution coverage. Select a document count to inspect the evidence.</p>
+        <label for="corpus-document">Inspect document</label>
+        <select id="corpus-document"></select>
+      </section>
+      <div id="document-coverage" class="coverage"></div>
+      <details id="source-quality" hidden>
+        <summary>PDF reading coverage and layout</summary>
+        <div id="source-quality-content"></div>
+      </details>
+      <details id="comparison-setup" hidden>
+        <summary>Set the comparison context</summary>
+        <p class="muted">Enter the event, topic, genre and period you intend to compare. Exact shared values define a cohort. Missing context stays visible.</p>
+        <div id="comparison-fields"></div>
+        <div class="actions"><button id="comparison-save" type="button" class="outline">Apply to this document</button><button id="comparison-all" type="button" class="outline">Apply to all documents</button></div>
+        <div id="comparison-cohorts"></div>
+      </details>
+      <h2>Political language flags</h2>
+      <div id="document-rates"></div>
+      <section id="section-analysis" aria-labelledby="section-analysis-title"></section>
+      <details id="academic-details">
+        <summary>Academic methods and causal claims</summary>
+        <div id="document-academic"></div>
+        <div id="document-claims"></div>
+      </details>
+      <section class="passages" aria-labelledby="passage-title">
+        <h2 id="passage-title">Inspect passages</h2>
+        <label for="document-filter">Criterion or research cue</label>
+        <select id="document-filter"></select>
+        <p id="section-filter-note" class="muted" hidden></p>
+        <div id="criterion-reading" class="criterion-reading"></div>
+        <p class="muted" id="document-sample-note"></p>
+        <div id="document-findings"></div>
+      </section>
+      <section id="review-handoff" aria-labelledby="review-title" hidden>
+        <header class="result-header">
+          <h2 id="review-title">Review decisions</h2>
+          <button id="review-export" type="button">Download case file (HTML)</button>
+        </header>
+        <p class="muted">Save the project to retain your recorded decisions and drafts, or download the case file to share reviewed evidence.</p>
+        <ol id="review-list"></ol>
+        <p id="review-status" class="status" role="status"></p>
+      </section>
+    </section>
+  </main>
+  <dialog id="bias-guide" aria-labelledby="bias-guide-title">
+    <header class="result-header">
+      <h2 id="bias-guide-title">Read the criteria</h2>
+      <button id="guide-close" class="outline" type="button">Close guide</button>
+    </header>
+    <p>The six language criteria are DOXA’s operational screening tasks. The academic cues locate research issues mentioned in the text. Each finding needs its speaker, target, evidence and scope.</p>
+    <p>Political criticism and advocacy can be justified. An interpretation of antisemitism or other group prejudice requires contextual review. Frameworks such as <a href="https://holocaustremembrance.com/resources/working-definition-antisemitism">IHRA</a>, <a href="https://jerusalemdeclaration.org/">JDA</a> and <a href="https://nexusproject.us/nexus-resources/the-nexus-document/">Nexus</a> have distinct boundaries.</p>
+    <details id="research-panel">
+      <summary>Find research and source passages</summary>
+      <p id="research-status" role="status"></p>
+      <div id="research-controls" hidden>
+        <label for="research-dimension">Research question</label>
+        <select id="research-dimension"></select>
+        <div id="research-definition"></div>
+        <label for="research-search">Search titles and authors</label>
+        <input id="research-search" type="search" placeholder="For example, conflict framing or antisemitism">
+        <label class="research-toggle"><input id="research-text-only" type="checkbox"> Sources with a licensed example</label>
+        <p class="muted" id="research-count"></p>
+        <div id="research-results"></div>
+        <button id="research-more" class="outline" type="button" hidden>Show more sources</button>
+      </div>
+    </details>
+    <div id="guide-contents"></div>
+    <section>
+      <h3>Omission and double standards</h3>
+      <p>These questions need a defined comparison set, shared event and evidence conditions, and source-selection rules. The audit records the material you supplied. A missing viewpoint alone leaves the reasons for its absence open.</p>
+    </section>
+  </dialog>
+<footer class="wrap private-product-footer"><p>DOXA by TACITUS · Experimental software.</p><nav aria-label="DOXA code and research"><a href="https://github.com/sargonxg/DOXA-by-TACITUS"><img src="./brand/github.svg" width="18" height="18" alt=""> GitHub</a> <a href="https://huggingface.co/Giuliocc/doxa-wording-encoder"><img src="./brand/hugging-face.svg" width="18" height="18" alt=""> Hugging Face</a></nav></footer>
+</body>
+</html>

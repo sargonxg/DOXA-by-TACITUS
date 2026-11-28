@@ -1,0 +1,33 @@
+name: Signed-in browser product
+on:
+  push:
+    paths: ['browser-workspace/**', 'infra/cloudflare/src/browser-*.mjs', 'scripts/build-browser-workspace.mjs', 'scripts/prepare-browser-fixtures.py', 'tests/browser-workspace-auth.test.mjs', 'tests/browser_product_auth.py', 'tests/serve_browser_workspace.mjs', '.github/workflows/browser-product.yml']
+  pull_request:
+    paths: ['browser-workspace/**', 'infra/cloudflare/src/browser-*.mjs', 'scripts/build-browser-workspace.mjs', 'scripts/prepare-browser-fixtures.py', 'tests/browser-workspace-auth.test.mjs', 'tests/browser_product_auth.py', 'tests/serve_browser_workspace.mjs', '.github/workflows/browser-product.yml']
+permissions:
+  contents: read
+jobs:
+  authenticated-client:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci --ignore-scripts && npm run build
+        working-directory: browser-workspace/web
+      - run: node scripts/build-browser-workspace.mjs
+        env:
+          DOXA_CLIENT_REVISION: ${{ github.sha }}
+      - run: node --test --test-isolation=none tests/browser-workspace-auth.test.mjs
+      - run: python scripts/prepare-browser-fixtures.py /tmp/doxa-qa-assets
+      - run: python -m pip install playwright && python -m playwright install --with-deps chromium
+      - run: |
+          DOXA_QA_ASSETS=/tmp/doxa-qa-assets node tests/serve_browser_workspace.mjs &
+          doxa_preview_pid=$!
+          trap 'kill "$doxa_preview_pid"' EXIT
+          python tests/browser_product_auth.py

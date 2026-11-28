@@ -26,3 +26,8 @@ corpus/originals/
 .DS_Store
 /build/
 /dist/
+
+# Reproducible authenticated browser bundle
+browser-workspace/web/dist/
+browser-workspace/release_staging/
+infra/cloudflare/src/browser-assets.mjs
