@@ -23,7 +23,17 @@ The built-in example screens **145 passages across 41 PDF pages** from two publi
 
 The worked corpus guides three investigations, including the influencer paper’s own causal limitation. Decision distributions show the complete screening outcomes, with exact counts by detected section. PDF reading preserves wrapped sentence context and spaced citation markers. Hover or open a criterion to read its definition, boundary cases and sources. Reviewer-authored mitigation drafts preserve the original wording and record checks for scope, evidence and political meaning. The draft feature is in development.
 
-[Open DOXA](https://doxa.tacitus.me/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.9.1/DOCUMENT_REVIEW.md) · [See the interface](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.9.1/document-desk.png)
+[Open DOXA](https://doxa.tacitus.me/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.10.0/DOCUMENT_REVIEW.md) · [See the interface](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.10.0/document-desk.png)
+
+## Research and annotation sources
+
+The [DOXA Research Atlas](https://huggingface.co/datasets/Giuliocc/doxa-research-atlas/tree/v0.1.0) contains **2,039 distinct research records**, including **187 articles with cleared extracted text**, **11,076 source paragraphs** and **3,711 unannotated review nominations**. Every released paragraph retains its source, license, XML location and text hash. Metadata-only records are identified separately.
+
+The operational map covers 34 research questions across political language, coverage, conflict, group prejudice, study methods and model evaluation. Six dimensions correspond to the published screening heads. Each remaining task states its present capability and evidence requirements. Nomination labels are unassigned, and the reserved source groups support later annotation and qualification.
+
+Open **Bias guide → Find research and source passages** in the [browser audit](https://doxa.tacitus.me/). Select a research question, inspect a licensed original paragraph and run the local review. The JSON audit and HTML case file retain the research source lineage.
+
+[Taxonomy](https://huggingface.co/datasets/Giuliocc/doxa-research-atlas/blob/v0.1.0/TAXONOMY.md) · [Annotation protocol](https://huggingface.co/datasets/Giuliocc/doxa-research-atlas/blob/v0.1.0/ANNOTATION_PROTOCOL.md) · [Selection audit](https://huggingface.co/datasets/Giuliocc/doxa-research-atlas/blob/v0.1.0/RELEVANCE_AUDIT.md) · [TACITUS DOXA](https://tacitus.me/doxa/)
 
 ## Open evidence research
 
