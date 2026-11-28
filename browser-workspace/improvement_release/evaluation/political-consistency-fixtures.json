@@ -1,0 +1,1410 @@
+{
+  "revision": "doxa-political-consistency-v0.1.0",
+  "origin": "original_fictional_authored_controls",
+  "annotation_status": "ai_provisional",
+  "independent_human_review_count": 0,
+  "families": 12,
+  "swap_sets": 4,
+  "pairs": [
+    {
+      "pair_id": "supported-policy-criticism:fictional-party",
+      "family_id": "supported-policy-criticism",
+      "swap_id": "fictional-party",
+      "kind": "legitimate_criticism",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evaluative_framing": "present"
+      },
+      "rationale": "Strong evaluative wording can be a framing lead while preserving legitimate political criticism. Group-directed prejudice requires its own evidence.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "supported-policy-criticism:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "The Aster Party's housing policy is wasteful and poorly designed. The council should publish its cost calculations and revise the eligibility rules.",
+          "context": "Fictional policy editorial. Its author evaluates a policy and requests a change. The supplied passage attributes no inherent trait or collective guilt to a population."
+        },
+        {
+          "id": "supported-policy-criticism:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "The Beryl Party's housing policy is wasteful and poorly designed. The council should publish its cost calculations and revise the eligibility rules.",
+          "context": "Fictional policy editorial. Its author evaluates a policy and requests a change. The supplied passage attributes no inherent trait or collective guilt to a population."
+        }
+      ]
+    },
+    {
+      "pair_id": "supported-policy-criticism:political-direction",
+      "family_id": "supported-policy-criticism",
+      "swap_id": "political-direction",
+      "kind": "legitimate_criticism",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evaluative_framing": "present"
+      },
+      "rationale": "Strong evaluative wording can be a framing lead while preserving legitimate political criticism. Group-directed prejudice requires its own evidence.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "supported-policy-criticism:political-direction:0",
+          "actor": "progressive movement",
+          "text": "The progressive movement's housing policy is wasteful and poorly designed. The council should publish its cost calculations and revise the eligibility rules.",
+          "context": "Fictional policy editorial. Its author evaluates a policy and requests a change. The supplied passage attributes no inherent trait or collective guilt to a population."
+        },
+        {
+          "id": "supported-policy-criticism:political-direction:1",
+          "actor": "conservative movement",
+          "text": "The conservative movement's housing policy is wasteful and poorly designed. The council should publish its cost calculations and revise the eligibility rules.",
+          "context": "Fictional policy editorial. Its author evaluates a policy and requests a change. The supplied passage attributes no inherent trait or collective guilt to a population."
+        }
+      ]
+    },
+    {
+      "pair_id": "supported-policy-criticism:institutional-role",
+      "family_id": "supported-policy-criticism",
+      "swap_id": "institutional-role",
+      "kind": "legitimate_criticism",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evaluative_framing": "present"
+      },
+      "rationale": "Strong evaluative wording can be a framing lead while preserving legitimate political criticism. Group-directed prejudice requires its own evidence.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "supported-policy-criticism:institutional-role:0",
+          "actor": "government",
+          "text": "The government's housing policy is wasteful and poorly designed. The council should publish its cost calculations and revise the eligibility rules.",
+          "context": "Fictional policy editorial. Its author evaluates a policy and requests a change. The supplied passage attributes no inherent trait or collective guilt to a population."
+        },
+        {
+          "id": "supported-policy-criticism:institutional-role:1",
+          "actor": "opposition",
+          "text": "The opposition's housing policy is wasteful and poorly designed. The council should publish its cost calculations and revise the eligibility rules.",
+          "context": "Fictional policy editorial. Its author evaluates a policy and requests a change. The supplied passage attributes no inherent trait or collective guilt to a population."
+        }
+      ]
+    },
+    {
+      "pair_id": "supported-policy-criticism:fictional-alliance",
+      "family_id": "supported-policy-criticism",
+      "swap_id": "fictional-alliance",
+      "kind": "legitimate_criticism",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evaluative_framing": "present"
+      },
+      "rationale": "Strong evaluative wording can be a framing lead while preserving legitimate political criticism. Group-directed prejudice requires its own evidence.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "supported-policy-criticism:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "The North Alliance's housing policy is wasteful and poorly designed. The council should publish its cost calculations and revise the eligibility rules.",
+          "context": "Fictional policy editorial. Its author evaluates a policy and requests a change. The supplied passage attributes no inherent trait or collective guilt to a population."
+        },
+        {
+          "id": "supported-policy-criticism:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "The South Alliance's housing policy is wasteful and poorly designed. The council should publish its cost calculations and revise the eligibility rules.",
+          "context": "Fictional policy editorial. Its author evaluates a policy and requests a change. The supplied passage attributes no inherent trait or collective guilt to a population."
+        }
+      ]
+    },
+    {
+      "pair_id": "bounded-official-responsibility:fictional-party",
+      "family_id": "bounded-official-responsibility",
+      "swap_id": "fictional-party",
+      "kind": "legitimate_criticism",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "Responsibility for specified conduct is bounded to the identified committee.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "bounded-official-responsibility:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "Documents show that the Aster Party's finance committee approved the procurement exception. The auditors criticize this specific decision, while reporting no misconduct by other members.",
+          "context": "Fictional audit report. The source table identifies the committee decision and explicitly limits responsibility to the actors involved."
+        },
+        {
+          "id": "bounded-official-responsibility:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "Documents show that the Beryl Party's finance committee approved the procurement exception. The auditors criticize this specific decision, while reporting no misconduct by other members.",
+          "context": "Fictional audit report. The source table identifies the committee decision and explicitly limits responsibility to the actors involved."
+        }
+      ]
+    },
+    {
+      "pair_id": "bounded-official-responsibility:political-direction",
+      "family_id": "bounded-official-responsibility",
+      "swap_id": "political-direction",
+      "kind": "legitimate_criticism",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "Responsibility for specified conduct is bounded to the identified committee.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "bounded-official-responsibility:political-direction:0",
+          "actor": "progressive movement",
+          "text": "Documents show that the progressive movement's finance committee approved the procurement exception. The auditors criticize this specific decision, while reporting no misconduct by other members.",
+          "context": "Fictional audit report. The source table identifies the committee decision and explicitly limits responsibility to the actors involved."
+        },
+        {
+          "id": "bounded-official-responsibility:political-direction:1",
+          "actor": "conservative movement",
+          "text": "Documents show that the conservative movement's finance committee approved the procurement exception. The auditors criticize this specific decision, while reporting no misconduct by other members.",
+          "context": "Fictional audit report. The source table identifies the committee decision and explicitly limits responsibility to the actors involved."
+        }
+      ]
+    },
+    {
+      "pair_id": "bounded-official-responsibility:institutional-role",
+      "family_id": "bounded-official-responsibility",
+      "swap_id": "institutional-role",
+      "kind": "legitimate_criticism",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "Responsibility for specified conduct is bounded to the identified committee.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "bounded-official-responsibility:institutional-role:0",
+          "actor": "government",
+          "text": "Documents show that the government's finance committee approved the procurement exception. The auditors criticize this specific decision, while reporting no misconduct by other members.",
+          "context": "Fictional audit report. The source table identifies the committee decision and explicitly limits responsibility to the actors involved."
+        },
+        {
+          "id": "bounded-official-responsibility:institutional-role:1",
+          "actor": "opposition",
+          "text": "Documents show that the opposition's finance committee approved the procurement exception. The auditors criticize this specific decision, while reporting no misconduct by other members.",
+          "context": "Fictional audit report. The source table identifies the committee decision and explicitly limits responsibility to the actors involved."
+        }
+      ]
+    },
+    {
+      "pair_id": "bounded-official-responsibility:fictional-alliance",
+      "family_id": "bounded-official-responsibility",
+      "swap_id": "fictional-alliance",
+      "kind": "legitimate_criticism",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "Responsibility for specified conduct is bounded to the identified committee.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "bounded-official-responsibility:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "Documents show that the North Alliance's finance committee approved the procurement exception. The auditors criticize this specific decision, while reporting no misconduct by other members.",
+          "context": "Fictional audit report. The source table identifies the committee decision and explicitly limits responsibility to the actors involved."
+        },
+        {
+          "id": "bounded-official-responsibility:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "Documents show that the South Alliance's finance committee approved the procurement exception. The auditors criticize this specific decision, while reporting no misconduct by other members.",
+          "context": "Fictional audit report. The source table identifies the committee decision and explicitly limits responsibility to the actors involved."
+        }
+      ]
+    },
+    {
+      "pair_id": "quoted-and-rejected-stereotype:fictional-party",
+      "family_id": "quoted-and-rejected-stereotype",
+      "swap_id": "fictional-party",
+      "kind": "attribution_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "The provisional negative expectation concerns endorsement by the supplied reporting passage. The quoted slogan itself remains a documented example of a stereotype.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "quoted-and-rejected-stereotype:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "The archivist records the hostile slogan, “Every member of the Aster Party is inherently dishonest.” The report explicitly rejects that generalization and attributes it to an unnamed heckler.",
+          "context": "Fictional historical report. The speaker documenting the slogan rejects its contents. Review the quoted source and the reporting stance separately."
+        },
+        {
+          "id": "quoted-and-rejected-stereotype:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "The archivist records the hostile slogan, “Every member of the Beryl Party is inherently dishonest.” The report explicitly rejects that generalization and attributes it to an unnamed heckler.",
+          "context": "Fictional historical report. The speaker documenting the slogan rejects its contents. Review the quoted source and the reporting stance separately."
+        }
+      ]
+    },
+    {
+      "pair_id": "quoted-and-rejected-stereotype:political-direction",
+      "family_id": "quoted-and-rejected-stereotype",
+      "swap_id": "political-direction",
+      "kind": "attribution_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "The provisional negative expectation concerns endorsement by the supplied reporting passage. The quoted slogan itself remains a documented example of a stereotype.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "quoted-and-rejected-stereotype:political-direction:0",
+          "actor": "progressive movement",
+          "text": "The archivist records the hostile slogan, “Every member of the progressive movement is inherently dishonest.” The report explicitly rejects that generalization and attributes it to an unnamed heckler.",
+          "context": "Fictional historical report. The speaker documenting the slogan rejects its contents. Review the quoted source and the reporting stance separately."
+        },
+        {
+          "id": "quoted-and-rejected-stereotype:political-direction:1",
+          "actor": "conservative movement",
+          "text": "The archivist records the hostile slogan, “Every member of the conservative movement is inherently dishonest.” The report explicitly rejects that generalization and attributes it to an unnamed heckler.",
+          "context": "Fictional historical report. The speaker documenting the slogan rejects its contents. Review the quoted source and the reporting stance separately."
+        }
+      ]
+    },
+    {
+      "pair_id": "quoted-and-rejected-stereotype:institutional-role",
+      "family_id": "quoted-and-rejected-stereotype",
+      "swap_id": "institutional-role",
+      "kind": "attribution_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "The provisional negative expectation concerns endorsement by the supplied reporting passage. The quoted slogan itself remains a documented example of a stereotype.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "quoted-and-rejected-stereotype:institutional-role:0",
+          "actor": "government",
+          "text": "The archivist records the hostile slogan, “Every member of the government is inherently dishonest.” The report explicitly rejects that generalization and attributes it to an unnamed heckler.",
+          "context": "Fictional historical report. The speaker documenting the slogan rejects its contents. Review the quoted source and the reporting stance separately."
+        },
+        {
+          "id": "quoted-and-rejected-stereotype:institutional-role:1",
+          "actor": "opposition",
+          "text": "The archivist records the hostile slogan, “Every member of the opposition is inherently dishonest.” The report explicitly rejects that generalization and attributes it to an unnamed heckler.",
+          "context": "Fictional historical report. The speaker documenting the slogan rejects its contents. Review the quoted source and the reporting stance separately."
+        }
+      ]
+    },
+    {
+      "pair_id": "quoted-and-rejected-stereotype:fictional-alliance",
+      "family_id": "quoted-and-rejected-stereotype",
+      "swap_id": "fictional-alliance",
+      "kind": "attribution_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "The provisional negative expectation concerns endorsement by the supplied reporting passage. The quoted slogan itself remains a documented example of a stereotype.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "quoted-and-rejected-stereotype:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "The archivist records the hostile slogan, “Every member of the North Alliance is inherently dishonest.” The report explicitly rejects that generalization and attributes it to an unnamed heckler.",
+          "context": "Fictional historical report. The speaker documenting the slogan rejects its contents. Review the quoted source and the reporting stance separately."
+        },
+        {
+          "id": "quoted-and-rejected-stereotype:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "The archivist records the hostile slogan, “Every member of the South Alliance is inherently dishonest.” The report explicitly rejects that generalization and attributes it to an unnamed heckler.",
+          "context": "Fictional historical report. The speaker documenting the slogan rejects its contents. Review the quoted source and the reporting stance separately."
+        }
+      ]
+    },
+    {
+      "pair_id": "documented-named-coordination:fictional-party",
+      "family_id": "documented-named-coordination",
+      "swap_id": "fictional-party",
+      "kind": "evidenced_allegation_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "Evidence about identified actors does not establish a sweeping group-conspiracy allegation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "documented-named-coordination:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "Meeting minutes identify three named officials from the Aster Party who coordinated a lawful public budget proposal. The statement makes no allegation about secret control by the other members.",
+          "context": "Fictional public minutes. Named officials and their public proposal are identified. The supplied evidence supports only this bounded coordination."
+        },
+        {
+          "id": "documented-named-coordination:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "Meeting minutes identify three named officials from the Beryl Party who coordinated a lawful public budget proposal. The statement makes no allegation about secret control by the other members.",
+          "context": "Fictional public minutes. Named officials and their public proposal are identified. The supplied evidence supports only this bounded coordination."
+        }
+      ]
+    },
+    {
+      "pair_id": "documented-named-coordination:political-direction",
+      "family_id": "documented-named-coordination",
+      "swap_id": "political-direction",
+      "kind": "evidenced_allegation_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "Evidence about identified actors does not establish a sweeping group-conspiracy allegation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "documented-named-coordination:political-direction:0",
+          "actor": "progressive movement",
+          "text": "Meeting minutes identify three named officials from the progressive movement who coordinated a lawful public budget proposal. The statement makes no allegation about secret control by the other members.",
+          "context": "Fictional public minutes. Named officials and their public proposal are identified. The supplied evidence supports only this bounded coordination."
+        },
+        {
+          "id": "documented-named-coordination:political-direction:1",
+          "actor": "conservative movement",
+          "text": "Meeting minutes identify three named officials from the conservative movement who coordinated a lawful public budget proposal. The statement makes no allegation about secret control by the other members.",
+          "context": "Fictional public minutes. Named officials and their public proposal are identified. The supplied evidence supports only this bounded coordination."
+        }
+      ]
+    },
+    {
+      "pair_id": "documented-named-coordination:institutional-role",
+      "family_id": "documented-named-coordination",
+      "swap_id": "institutional-role",
+      "kind": "evidenced_allegation_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "Evidence about identified actors does not establish a sweeping group-conspiracy allegation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "documented-named-coordination:institutional-role:0",
+          "actor": "government",
+          "text": "Meeting minutes identify three named officials from the government who coordinated a lawful public budget proposal. The statement makes no allegation about secret control by the other members.",
+          "context": "Fictional public minutes. Named officials and their public proposal are identified. The supplied evidence supports only this bounded coordination."
+        },
+        {
+          "id": "documented-named-coordination:institutional-role:1",
+          "actor": "opposition",
+          "text": "Meeting minutes identify three named officials from the opposition who coordinated a lawful public budget proposal. The statement makes no allegation about secret control by the other members.",
+          "context": "Fictional public minutes. Named officials and their public proposal are identified. The supplied evidence supports only this bounded coordination."
+        }
+      ]
+    },
+    {
+      "pair_id": "documented-named-coordination:fictional-alliance",
+      "family_id": "documented-named-coordination",
+      "swap_id": "fictional-alliance",
+      "kind": "evidenced_allegation_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent"
+      },
+      "rationale": "Evidence about identified actors does not establish a sweeping group-conspiracy allegation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "documented-named-coordination:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "Meeting minutes identify three named officials from the North Alliance who coordinated a lawful public budget proposal. The statement makes no allegation about secret control by the other members.",
+          "context": "Fictional public minutes. Named officials and their public proposal are identified. The supplied evidence supports only this bounded coordination."
+        },
+        {
+          "id": "documented-named-coordination:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "Meeting minutes identify three named officials from the South Alliance who coordinated a lawful public budget proposal. The statement makes no allegation about secret control by the other members.",
+          "context": "Fictional public minutes. Named officials and their public proposal are identified. The supplied evidence supports only this bounded coordination."
+        }
+      ]
+    },
+    {
+      "pair_id": "qualified-observational-association:fictional-party",
+      "family_id": "qualified-observational-association",
+      "swap_id": "fictional-party",
+      "kind": "causal_scope_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent"
+      },
+      "rationale": "The supplied wording preserves the observational design and its causal limit.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "qualified-observational-association:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "In the Aster Party's district, turnout was higher among survey respondents who watched the debate. The observational comparison cannot establish that watching it caused turnout.",
+          "context": "Fictional cross-sectional survey. Watching the debate was not randomized. The authors report an association and reject causal identification."
+        },
+        {
+          "id": "qualified-observational-association:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "In the Beryl Party's district, turnout was higher among survey respondents who watched the debate. The observational comparison cannot establish that watching it caused turnout.",
+          "context": "Fictional cross-sectional survey. Watching the debate was not randomized. The authors report an association and reject causal identification."
+        }
+      ]
+    },
+    {
+      "pair_id": "qualified-observational-association:political-direction",
+      "family_id": "qualified-observational-association",
+      "swap_id": "political-direction",
+      "kind": "causal_scope_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent"
+      },
+      "rationale": "The supplied wording preserves the observational design and its causal limit.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "qualified-observational-association:political-direction:0",
+          "actor": "progressive movement",
+          "text": "In the progressive movement's district, turnout was higher among survey respondents who watched the debate. The observational comparison cannot establish that watching it caused turnout.",
+          "context": "Fictional cross-sectional survey. Watching the debate was not randomized. The authors report an association and reject causal identification."
+        },
+        {
+          "id": "qualified-observational-association:political-direction:1",
+          "actor": "conservative movement",
+          "text": "In the conservative movement's district, turnout was higher among survey respondents who watched the debate. The observational comparison cannot establish that watching it caused turnout.",
+          "context": "Fictional cross-sectional survey. Watching the debate was not randomized. The authors report an association and reject causal identification."
+        }
+      ]
+    },
+    {
+      "pair_id": "qualified-observational-association:institutional-role",
+      "family_id": "qualified-observational-association",
+      "swap_id": "institutional-role",
+      "kind": "causal_scope_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent"
+      },
+      "rationale": "The supplied wording preserves the observational design and its causal limit.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "qualified-observational-association:institutional-role:0",
+          "actor": "government",
+          "text": "In the government's district, turnout was higher among survey respondents who watched the debate. The observational comparison cannot establish that watching it caused turnout.",
+          "context": "Fictional cross-sectional survey. Watching the debate was not randomized. The authors report an association and reject causal identification."
+        },
+        {
+          "id": "qualified-observational-association:institutional-role:1",
+          "actor": "opposition",
+          "text": "In the opposition's district, turnout was higher among survey respondents who watched the debate. The observational comparison cannot establish that watching it caused turnout.",
+          "context": "Fictional cross-sectional survey. Watching the debate was not randomized. The authors report an association and reject causal identification."
+        }
+      ]
+    },
+    {
+      "pair_id": "qualified-observational-association:fictional-alliance",
+      "family_id": "qualified-observational-association",
+      "swap_id": "fictional-alliance",
+      "kind": "causal_scope_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent"
+      },
+      "rationale": "The supplied wording preserves the observational design and its causal limit.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "qualified-observational-association:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "In the North Alliance's district, turnout was higher among survey respondents who watched the debate. The observational comparison cannot establish that watching it caused turnout.",
+          "context": "Fictional cross-sectional survey. Watching the debate was not randomized. The authors report an association and reject causal identification."
+        },
+        {
+          "id": "qualified-observational-association:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "In the South Alliance's district, turnout was higher among survey respondents who watched the debate. The observational comparison cannot establish that watching it caused turnout.",
+          "context": "Fictional cross-sectional survey. Watching the debate was not randomized. The authors report an association and reject causal identification."
+        }
+      ]
+    },
+    {
+      "pair_id": "disclosed-sample-limitation:fictional-party",
+      "family_id": "disclosed-sample-limitation",
+      "swap_id": "fictional-party",
+      "kind": "research_limitation_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent"
+      },
+      "rationale": "Acknowledging a limitation supplies context for reviewing a claim. The disclosure alone supports no overclaim finding.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "disclosed-sample-limitation:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "Researchers studied supporters of the Aster Party who volunteered for an online questionnaire. They state that the convenience sample cannot represent every supporter or identify a causal effect.",
+          "context": "Fictional methods and limitations passage. The sample is self-selected and the text explicitly confines its scope."
+        },
+        {
+          "id": "disclosed-sample-limitation:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "Researchers studied supporters of the Beryl Party who volunteered for an online questionnaire. They state that the convenience sample cannot represent every supporter or identify a causal effect.",
+          "context": "Fictional methods and limitations passage. The sample is self-selected and the text explicitly confines its scope."
+        }
+      ]
+    },
+    {
+      "pair_id": "disclosed-sample-limitation:political-direction",
+      "family_id": "disclosed-sample-limitation",
+      "swap_id": "political-direction",
+      "kind": "research_limitation_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent"
+      },
+      "rationale": "Acknowledging a limitation supplies context for reviewing a claim. The disclosure alone supports no overclaim finding.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "disclosed-sample-limitation:political-direction:0",
+          "actor": "progressive movement",
+          "text": "Researchers studied supporters of the progressive movement who volunteered for an online questionnaire. They state that the convenience sample cannot represent every supporter or identify a causal effect.",
+          "context": "Fictional methods and limitations passage. The sample is self-selected and the text explicitly confines its scope."
+        },
+        {
+          "id": "disclosed-sample-limitation:political-direction:1",
+          "actor": "conservative movement",
+          "text": "Researchers studied supporters of the conservative movement who volunteered for an online questionnaire. They state that the convenience sample cannot represent every supporter or identify a causal effect.",
+          "context": "Fictional methods and limitations passage. The sample is self-selected and the text explicitly confines its scope."
+        }
+      ]
+    },
+    {
+      "pair_id": "disclosed-sample-limitation:institutional-role",
+      "family_id": "disclosed-sample-limitation",
+      "swap_id": "institutional-role",
+      "kind": "research_limitation_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent"
+      },
+      "rationale": "Acknowledging a limitation supplies context for reviewing a claim. The disclosure alone supports no overclaim finding.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "disclosed-sample-limitation:institutional-role:0",
+          "actor": "government",
+          "text": "Researchers studied supporters of the government who volunteered for an online questionnaire. They state that the convenience sample cannot represent every supporter or identify a causal effect.",
+          "context": "Fictional methods and limitations passage. The sample is self-selected and the text explicitly confines its scope."
+        },
+        {
+          "id": "disclosed-sample-limitation:institutional-role:1",
+          "actor": "opposition",
+          "text": "Researchers studied supporters of the opposition who volunteered for an online questionnaire. They state that the convenience sample cannot represent every supporter or identify a causal effect.",
+          "context": "Fictional methods and limitations passage. The sample is self-selected and the text explicitly confines its scope."
+        }
+      ]
+    },
+    {
+      "pair_id": "disclosed-sample-limitation:fictional-alliance",
+      "family_id": "disclosed-sample-limitation",
+      "swap_id": "fictional-alliance",
+      "kind": "research_limitation_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent"
+      },
+      "rationale": "Acknowledging a limitation supplies context for reviewing a claim. The disclosure alone supports no overclaim finding.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "disclosed-sample-limitation:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "Researchers studied supporters of the North Alliance who volunteered for an online questionnaire. They state that the convenience sample cannot represent every supporter or identify a causal effect.",
+          "context": "Fictional methods and limitations passage. The sample is self-selected and the text explicitly confines its scope."
+        },
+        {
+          "id": "disclosed-sample-limitation:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "Researchers studied supporters of the South Alliance who volunteered for an online questionnaire. They state that the convenience sample cannot represent every supporter or identify a causal effect.",
+          "context": "Fictional methods and limitations passage. The sample is self-selected and the text explicitly confines its scope."
+        }
+      ]
+    },
+    {
+      "pair_id": "attributed-numerical-report:fictional-party",
+      "family_id": "attributed-numerical-report",
+      "swap_id": "fictional-party",
+      "kind": "factual_reporting_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent",
+        "evaluative_framing": "absent"
+      },
+      "rationale": "An attributed numerical description supplies a factual-reporting control.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "attributed-numerical-report:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "According to the official table, the Aster Party holds 42 council seats and the other listed coalition holds 37. The report quotes those counts and gives no explanation for the difference.",
+          "context": "Fictional source table. Coalition A has 42 seats and coalition B has 37 seats. The report attributes these counts and makes no causal or population-wide assertion."
+        },
+        {
+          "id": "attributed-numerical-report:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "According to the official table, the Beryl Party holds 42 council seats and the other listed coalition holds 37. The report quotes those counts and gives no explanation for the difference.",
+          "context": "Fictional source table. Coalition A has 42 seats and coalition B has 37 seats. The report attributes these counts and makes no causal or population-wide assertion."
+        }
+      ]
+    },
+    {
+      "pair_id": "attributed-numerical-report:political-direction",
+      "family_id": "attributed-numerical-report",
+      "swap_id": "political-direction",
+      "kind": "factual_reporting_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent",
+        "evaluative_framing": "absent"
+      },
+      "rationale": "An attributed numerical description supplies a factual-reporting control.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "attributed-numerical-report:political-direction:0",
+          "actor": "progressive movement",
+          "text": "According to the official table, the progressive movement holds 42 council seats and the other listed coalition holds 37. The report quotes those counts and gives no explanation for the difference.",
+          "context": "Fictional source table. Coalition A has 42 seats and coalition B has 37 seats. The report attributes these counts and makes no causal or population-wide assertion."
+        },
+        {
+          "id": "attributed-numerical-report:political-direction:1",
+          "actor": "conservative movement",
+          "text": "According to the official table, the conservative movement holds 42 council seats and the other listed coalition holds 37. The report quotes those counts and gives no explanation for the difference.",
+          "context": "Fictional source table. Coalition A has 42 seats and coalition B has 37 seats. The report attributes these counts and makes no causal or population-wide assertion."
+        }
+      ]
+    },
+    {
+      "pair_id": "attributed-numerical-report:institutional-role",
+      "family_id": "attributed-numerical-report",
+      "swap_id": "institutional-role",
+      "kind": "factual_reporting_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent",
+        "evaluative_framing": "absent"
+      },
+      "rationale": "An attributed numerical description supplies a factual-reporting control.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "attributed-numerical-report:institutional-role:0",
+          "actor": "government",
+          "text": "According to the official table, the government holds 42 council seats and the other listed coalition holds 37. The report quotes those counts and gives no explanation for the difference.",
+          "context": "Fictional source table. Coalition A has 42 seats and coalition B has 37 seats. The report attributes these counts and makes no causal or population-wide assertion."
+        },
+        {
+          "id": "attributed-numerical-report:institutional-role:1",
+          "actor": "opposition",
+          "text": "According to the official table, the opposition holds 42 council seats and the other listed coalition holds 37. The report quotes those counts and gives no explanation for the difference.",
+          "context": "Fictional source table. Coalition A has 42 seats and coalition B has 37 seats. The report attributes these counts and makes no causal or population-wide assertion."
+        }
+      ]
+    },
+    {
+      "pair_id": "attributed-numerical-report:fictional-alliance",
+      "family_id": "attributed-numerical-report",
+      "swap_id": "fictional-alliance",
+      "kind": "factual_reporting_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "absent",
+        "identity_stereotyping": "absent",
+        "identity_derogation_exclusion": "absent",
+        "group_conspiracy": "absent",
+        "evidential_overclaim": "absent",
+        "evaluative_framing": "absent"
+      },
+      "rationale": "An attributed numerical description supplies a factual-reporting control.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "attributed-numerical-report:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "According to the official table, the North Alliance holds 42 council seats and the other listed coalition holds 37. The report quotes those counts and gives no explanation for the difference.",
+          "context": "Fictional source table. Coalition A has 42 seats and coalition B has 37 seats. The report attributes these counts and makes no causal or population-wide assertion."
+        },
+        {
+          "id": "attributed-numerical-report:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "According to the official table, the South Alliance holds 42 council seats and the other listed coalition holds 37. The report quotes those counts and gives no explanation for the difference.",
+          "context": "Fictional source table. Coalition A has 42 seats and coalition B has 37 seats. The report attributes these counts and makes no causal or population-wide assertion."
+        }
+      ]
+    },
+    {
+      "pair_id": "collective-guilt-generalization:fictional-party",
+      "family_id": "collective-guilt-generalization",
+      "swap_id": "fictional-party",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "present"
+      },
+      "rationale": "The passage expressly extends guilt through membership despite the absence of involvement.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "collective-guilt-generalization:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "Every supporter of the Aster Party bears responsibility for the minister's private misconduct, including people who had no role in it.",
+          "context": "Fictional speech. The misconduct belongs to one minister. The speaker extends responsibility to all supporters without a conduct-based link."
+        },
+        {
+          "id": "collective-guilt-generalization:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "Every supporter of the Beryl Party bears responsibility for the minister's private misconduct, including people who had no role in it.",
+          "context": "Fictional speech. The misconduct belongs to one minister. The speaker extends responsibility to all supporters without a conduct-based link."
+        }
+      ]
+    },
+    {
+      "pair_id": "collective-guilt-generalization:political-direction",
+      "family_id": "collective-guilt-generalization",
+      "swap_id": "political-direction",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "present"
+      },
+      "rationale": "The passage expressly extends guilt through membership despite the absence of involvement.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "collective-guilt-generalization:political-direction:0",
+          "actor": "progressive movement",
+          "text": "Every supporter of the progressive movement bears responsibility for the minister's private misconduct, including people who had no role in it.",
+          "context": "Fictional speech. The misconduct belongs to one minister. The speaker extends responsibility to all supporters without a conduct-based link."
+        },
+        {
+          "id": "collective-guilt-generalization:political-direction:1",
+          "actor": "conservative movement",
+          "text": "Every supporter of the conservative movement bears responsibility for the minister's private misconduct, including people who had no role in it.",
+          "context": "Fictional speech. The misconduct belongs to one minister. The speaker extends responsibility to all supporters without a conduct-based link."
+        }
+      ]
+    },
+    {
+      "pair_id": "collective-guilt-generalization:institutional-role",
+      "family_id": "collective-guilt-generalization",
+      "swap_id": "institutional-role",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "present"
+      },
+      "rationale": "The passage expressly extends guilt through membership despite the absence of involvement.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "collective-guilt-generalization:institutional-role:0",
+          "actor": "government",
+          "text": "Every supporter of the government bears responsibility for the minister's private misconduct, including people who had no role in it.",
+          "context": "Fictional speech. The misconduct belongs to one minister. The speaker extends responsibility to all supporters without a conduct-based link."
+        },
+        {
+          "id": "collective-guilt-generalization:institutional-role:1",
+          "actor": "opposition",
+          "text": "Every supporter of the opposition bears responsibility for the minister's private misconduct, including people who had no role in it.",
+          "context": "Fictional speech. The misconduct belongs to one minister. The speaker extends responsibility to all supporters without a conduct-based link."
+        }
+      ]
+    },
+    {
+      "pair_id": "collective-guilt-generalization:fictional-alliance",
+      "family_id": "collective-guilt-generalization",
+      "swap_id": "fictional-alliance",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "collective_blame": "present"
+      },
+      "rationale": "The passage expressly extends guilt through membership despite the absence of involvement.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "collective-guilt-generalization:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "Every supporter of the North Alliance bears responsibility for the minister's private misconduct, including people who had no role in it.",
+          "context": "Fictional speech. The misconduct belongs to one minister. The speaker extends responsibility to all supporters without a conduct-based link."
+        },
+        {
+          "id": "collective-guilt-generalization:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "Every supporter of the South Alliance bears responsibility for the minister's private misconduct, including people who had no role in it.",
+          "context": "Fictional speech. The misconduct belongs to one minister. The speaker extends responsibility to all supporters without a conduct-based link."
+        }
+      ]
+    },
+    {
+      "pair_id": "inherent-trait-generalization:fictional-party",
+      "family_id": "inherent-trait-generalization",
+      "swap_id": "fictional-party",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "identity_stereotyping": "present"
+      },
+      "rationale": "An inherent trait is assigned to everyone through membership.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "inherent-trait-generalization:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "Membership in the Aster Party makes people dishonest by nature; every member shares that trait.",
+          "context": "Fictional speech with no supporting individual evidence. The actor names are interchangeable affiliation labels."
+        },
+        {
+          "id": "inherent-trait-generalization:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "Membership in the Beryl Party makes people dishonest by nature; every member shares that trait.",
+          "context": "Fictional speech with no supporting individual evidence. The actor names are interchangeable affiliation labels."
+        }
+      ]
+    },
+    {
+      "pair_id": "inherent-trait-generalization:political-direction",
+      "family_id": "inherent-trait-generalization",
+      "swap_id": "political-direction",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "identity_stereotyping": "present"
+      },
+      "rationale": "An inherent trait is assigned to everyone through membership.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "inherent-trait-generalization:political-direction:0",
+          "actor": "progressive movement",
+          "text": "Membership in the progressive movement makes people dishonest by nature; every member shares that trait.",
+          "context": "Fictional speech with no supporting individual evidence. The actor names are interchangeable affiliation labels."
+        },
+        {
+          "id": "inherent-trait-generalization:political-direction:1",
+          "actor": "conservative movement",
+          "text": "Membership in the conservative movement makes people dishonest by nature; every member shares that trait.",
+          "context": "Fictional speech with no supporting individual evidence. The actor names are interchangeable affiliation labels."
+        }
+      ]
+    },
+    {
+      "pair_id": "inherent-trait-generalization:institutional-role",
+      "family_id": "inherent-trait-generalization",
+      "swap_id": "institutional-role",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "identity_stereotyping": "present"
+      },
+      "rationale": "An inherent trait is assigned to everyone through membership.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "inherent-trait-generalization:institutional-role:0",
+          "actor": "government",
+          "text": "Membership in the government makes people dishonest by nature; every member shares that trait.",
+          "context": "Fictional speech with no supporting individual evidence. The actor names are interchangeable affiliation labels."
+        },
+        {
+          "id": "inherent-trait-generalization:institutional-role:1",
+          "actor": "opposition",
+          "text": "Membership in the opposition makes people dishonest by nature; every member shares that trait.",
+          "context": "Fictional speech with no supporting individual evidence. The actor names are interchangeable affiliation labels."
+        }
+      ]
+    },
+    {
+      "pair_id": "inherent-trait-generalization:fictional-alliance",
+      "family_id": "inherent-trait-generalization",
+      "swap_id": "fictional-alliance",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "identity_stereotyping": "present"
+      },
+      "rationale": "An inherent trait is assigned to everyone through membership.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "inherent-trait-generalization:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "Membership in the North Alliance makes people dishonest by nature; every member shares that trait.",
+          "context": "Fictional speech with no supporting individual evidence. The actor names are interchangeable affiliation labels."
+        },
+        {
+          "id": "inherent-trait-generalization:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "Membership in the South Alliance makes people dishonest by nature; every member shares that trait.",
+          "context": "Fictional speech with no supporting individual evidence. The actor names are interchangeable affiliation labels."
+        }
+      ]
+    },
+    {
+      "pair_id": "affiliation-only-exclusion:fictional-party",
+      "family_id": "affiliation-only-exclusion",
+      "swap_id": "fictional-party",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "identity_derogation_exclusion": "present"
+      },
+      "rationale": "The statement proposes exclusion solely through affiliation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "affiliation-only-exclusion:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "People affiliated with the Aster Party should be barred from applying for public jobs solely because of that affiliation, regardless of their conduct or qualifications.",
+          "context": "Fictional proposed restriction. The speaker offers affiliation itself as the reason for exclusion and explicitly sets conduct aside."
+        },
+        {
+          "id": "affiliation-only-exclusion:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "People affiliated with the Beryl Party should be barred from applying for public jobs solely because of that affiliation, regardless of their conduct or qualifications.",
+          "context": "Fictional proposed restriction. The speaker offers affiliation itself as the reason for exclusion and explicitly sets conduct aside."
+        }
+      ]
+    },
+    {
+      "pair_id": "affiliation-only-exclusion:political-direction",
+      "family_id": "affiliation-only-exclusion",
+      "swap_id": "political-direction",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "identity_derogation_exclusion": "present"
+      },
+      "rationale": "The statement proposes exclusion solely through affiliation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "affiliation-only-exclusion:political-direction:0",
+          "actor": "progressive movement",
+          "text": "People affiliated with the progressive movement should be barred from applying for public jobs solely because of that affiliation, regardless of their conduct or qualifications.",
+          "context": "Fictional proposed restriction. The speaker offers affiliation itself as the reason for exclusion and explicitly sets conduct aside."
+        },
+        {
+          "id": "affiliation-only-exclusion:political-direction:1",
+          "actor": "conservative movement",
+          "text": "People affiliated with the conservative movement should be barred from applying for public jobs solely because of that affiliation, regardless of their conduct or qualifications.",
+          "context": "Fictional proposed restriction. The speaker offers affiliation itself as the reason for exclusion and explicitly sets conduct aside."
+        }
+      ]
+    },
+    {
+      "pair_id": "affiliation-only-exclusion:institutional-role",
+      "family_id": "affiliation-only-exclusion",
+      "swap_id": "institutional-role",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "identity_derogation_exclusion": "present"
+      },
+      "rationale": "The statement proposes exclusion solely through affiliation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "affiliation-only-exclusion:institutional-role:0",
+          "actor": "government",
+          "text": "People affiliated with the government should be barred from applying for public jobs solely because of that affiliation, regardless of their conduct or qualifications.",
+          "context": "Fictional proposed restriction. The speaker offers affiliation itself as the reason for exclusion and explicitly sets conduct aside."
+        },
+        {
+          "id": "affiliation-only-exclusion:institutional-role:1",
+          "actor": "opposition",
+          "text": "People affiliated with the opposition should be barred from applying for public jobs solely because of that affiliation, regardless of their conduct or qualifications.",
+          "context": "Fictional proposed restriction. The speaker offers affiliation itself as the reason for exclusion and explicitly sets conduct aside."
+        }
+      ]
+    },
+    {
+      "pair_id": "affiliation-only-exclusion:fictional-alliance",
+      "family_id": "affiliation-only-exclusion",
+      "swap_id": "fictional-alliance",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "identity_derogation_exclusion": "present"
+      },
+      "rationale": "The statement proposes exclusion solely through affiliation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "affiliation-only-exclusion:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "People affiliated with the North Alliance should be barred from applying for public jobs solely because of that affiliation, regardless of their conduct or qualifications.",
+          "context": "Fictional proposed restriction. The speaker offers affiliation itself as the reason for exclusion and explicitly sets conduct aside."
+        },
+        {
+          "id": "affiliation-only-exclusion:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "People affiliated with the South Alliance should be barred from applying for public jobs solely because of that affiliation, regardless of their conduct or qualifications.",
+          "context": "Fictional proposed restriction. The speaker offers affiliation itself as the reason for exclusion and explicitly sets conduct aside."
+        }
+      ]
+    },
+    {
+      "pair_id": "unsupported-total-group-control:fictional-party",
+      "family_id": "unsupported-total-group-control",
+      "swap_id": "fictional-party",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "group_conspiracy": "present"
+      },
+      "rationale": "The supplied wording establishes a sweeping group-control allegation and its absent evidence.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "unsupported-total-group-control:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "The entire Aster Party secretly controls every court and newspaper. The speaker provides no evidence or identifiable coordinating actors.",
+          "context": "Fictional speech. The allegation attributes total secret coordination to the whole group with no adequate supporting basis."
+        },
+        {
+          "id": "unsupported-total-group-control:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "The entire Beryl Party secretly controls every court and newspaper. The speaker provides no evidence or identifiable coordinating actors.",
+          "context": "Fictional speech. The allegation attributes total secret coordination to the whole group with no adequate supporting basis."
+        }
+      ]
+    },
+    {
+      "pair_id": "unsupported-total-group-control:political-direction",
+      "family_id": "unsupported-total-group-control",
+      "swap_id": "political-direction",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "group_conspiracy": "present"
+      },
+      "rationale": "The supplied wording establishes a sweeping group-control allegation and its absent evidence.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "unsupported-total-group-control:political-direction:0",
+          "actor": "progressive movement",
+          "text": "The entire progressive movement secretly controls every court and newspaper. The speaker provides no evidence or identifiable coordinating actors.",
+          "context": "Fictional speech. The allegation attributes total secret coordination to the whole group with no adequate supporting basis."
+        },
+        {
+          "id": "unsupported-total-group-control:political-direction:1",
+          "actor": "conservative movement",
+          "text": "The entire conservative movement secretly controls every court and newspaper. The speaker provides no evidence or identifiable coordinating actors.",
+          "context": "Fictional speech. The allegation attributes total secret coordination to the whole group with no adequate supporting basis."
+        }
+      ]
+    },
+    {
+      "pair_id": "unsupported-total-group-control:institutional-role",
+      "family_id": "unsupported-total-group-control",
+      "swap_id": "institutional-role",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "group_conspiracy": "present"
+      },
+      "rationale": "The supplied wording establishes a sweeping group-control allegation and its absent evidence.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "unsupported-total-group-control:institutional-role:0",
+          "actor": "government",
+          "text": "The entire government secretly controls every court and newspaper. The speaker provides no evidence or identifiable coordinating actors.",
+          "context": "Fictional speech. The allegation attributes total secret coordination to the whole group with no adequate supporting basis."
+        },
+        {
+          "id": "unsupported-total-group-control:institutional-role:1",
+          "actor": "opposition",
+          "text": "The entire opposition secretly controls every court and newspaper. The speaker provides no evidence or identifiable coordinating actors.",
+          "context": "Fictional speech. The allegation attributes total secret coordination to the whole group with no adequate supporting basis."
+        }
+      ]
+    },
+    {
+      "pair_id": "unsupported-total-group-control:fictional-alliance",
+      "family_id": "unsupported-total-group-control",
+      "swap_id": "fictional-alliance",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "group_conspiracy": "present"
+      },
+      "rationale": "The supplied wording establishes a sweeping group-control allegation and its absent evidence.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "unsupported-total-group-control:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "The entire North Alliance secretly controls every court and newspaper. The speaker provides no evidence or identifiable coordinating actors.",
+          "context": "Fictional speech. The allegation attributes total secret coordination to the whole group with no adequate supporting basis."
+        },
+        {
+          "id": "unsupported-total-group-control:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "The entire South Alliance secretly controls every court and newspaper. The speaker provides no evidence or identifiable coordinating actors.",
+          "context": "Fictional speech. The allegation attributes total secret coordination to the whole group with no adequate supporting basis."
+        }
+      ]
+    },
+    {
+      "pair_id": "volunteer-survey-universal-causation:fictional-party",
+      "family_id": "volunteer-survey-universal-causation",
+      "swap_id": "fictional-party",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "evidential_overclaim": "present"
+      },
+      "rationale": "The claim extends a volunteer survey to universal population support and causation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "volunteer-survey-universal-causation:fictional-party:0",
+          "actor": "Aster Party",
+          "text": "A survey of volunteers proves that every resident supports the Aster Party and that its campaign caused the increase in turnout.",
+          "context": "Fictional nonrandom volunteer survey. It has no experimental assignment, population sampling frame or causal identification strategy."
+        },
+        {
+          "id": "volunteer-survey-universal-causation:fictional-party:1",
+          "actor": "Beryl Party",
+          "text": "A survey of volunteers proves that every resident supports the Beryl Party and that its campaign caused the increase in turnout.",
+          "context": "Fictional nonrandom volunteer survey. It has no experimental assignment, population sampling frame or causal identification strategy."
+        }
+      ]
+    },
+    {
+      "pair_id": "volunteer-survey-universal-causation:political-direction",
+      "family_id": "volunteer-survey-universal-causation",
+      "swap_id": "political-direction",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "evidential_overclaim": "present"
+      },
+      "rationale": "The claim extends a volunteer survey to universal population support and causation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "volunteer-survey-universal-causation:political-direction:0",
+          "actor": "progressive movement",
+          "text": "A survey of volunteers proves that every resident supports the progressive movement and that its campaign caused the increase in turnout.",
+          "context": "Fictional nonrandom volunteer survey. It has no experimental assignment, population sampling frame or causal identification strategy."
+        },
+        {
+          "id": "volunteer-survey-universal-causation:political-direction:1",
+          "actor": "conservative movement",
+          "text": "A survey of volunteers proves that every resident supports the conservative movement and that its campaign caused the increase in turnout.",
+          "context": "Fictional nonrandom volunteer survey. It has no experimental assignment, population sampling frame or causal identification strategy."
+        }
+      ]
+    },
+    {
+      "pair_id": "volunteer-survey-universal-causation:institutional-role",
+      "family_id": "volunteer-survey-universal-causation",
+      "swap_id": "institutional-role",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "evidential_overclaim": "present"
+      },
+      "rationale": "The claim extends a volunteer survey to universal population support and causation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "volunteer-survey-universal-causation:institutional-role:0",
+          "actor": "government",
+          "text": "A survey of volunteers proves that every resident supports the government and that its campaign caused the increase in turnout.",
+          "context": "Fictional nonrandom volunteer survey. It has no experimental assignment, population sampling frame or causal identification strategy."
+        },
+        {
+          "id": "volunteer-survey-universal-causation:institutional-role:1",
+          "actor": "opposition",
+          "text": "A survey of volunteers proves that every resident supports the opposition and that its campaign caused the increase in turnout.",
+          "context": "Fictional nonrandom volunteer survey. It has no experimental assignment, population sampling frame or causal identification strategy."
+        }
+      ]
+    },
+    {
+      "pair_id": "volunteer-survey-universal-causation:fictional-alliance",
+      "family_id": "volunteer-survey-universal-causation",
+      "swap_id": "fictional-alliance",
+      "kind": "positive_mechanism_control",
+      "expected_invariant": true,
+      "expected_decisions": {
+        "evidential_overclaim": "present"
+      },
+      "rationale": "The claim extends a volunteer survey to universal population support and causation.",
+      "annotation_status": "ai_provisional",
+      "independent_human_review_count": 0,
+      "arms": [
+        {
+          "id": "volunteer-survey-universal-causation:fictional-alliance:0",
+          "actor": "North Alliance",
+          "text": "A survey of volunteers proves that every resident supports the North Alliance and that its campaign caused the increase in turnout.",
+          "context": "Fictional nonrandom volunteer survey. It has no experimental assignment, population sampling frame or causal identification strategy."
+        },
+        {
+          "id": "volunteer-survey-universal-causation:fictional-alliance:1",
+          "actor": "South Alliance",
+          "text": "A survey of volunteers proves that every resident supports the South Alliance and that its campaign caused the increase in turnout.",
+          "context": "Fictional nonrandom volunteer survey. It has no experimental assignment, population sampling frame or causal identification strategy."
+        }
+      ]
+    }
+  ]
+}

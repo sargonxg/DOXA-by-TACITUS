@@ -1,0 +1,30 @@
+{
+  "name": "doxa-browser-workspace",
+  "main": "src/browser-workspace.mjs",
+  "compatibility_date": "2026-11-28",
+  "account_id": "bd765cd976fa44d36d65ea7a1600d2e8",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "doxa.tacitus.me/*",
+      "zone_name": "tacitus.me"
+    }
+  ],
+  "vars": {
+    "CF_ACCESS_TEAM_DOMAIN": "giuliocatanzariti.cloudflareaccess.com",
+    "CF_ACCESS_AUD": "a483751ac4f8db498944e8d1e70f9ed3f1d52770db42517a6ac8796e0a4edfeb"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1,
+    "redact_query_string": true,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": false
+    }
+  },
+  "limits": {
+    "cpu_ms": 50
+  }
+}

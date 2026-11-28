@@ -1,0 +1,28 @@
+{
+  "name": "@tacitus/doxa-browser-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "build": "tsc --noEmit && vite build",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "typescript": "7.0.2",
+    "vite": "8.4.0"
+  },
+  "dependencies": {
+    "@huggingface/tokenizers": "0.2.0",
+    "@tesseract.js-data/eng": "1.0.0",
+    "onnxruntime-web": "1.24.3",
+    "pdfjs-dist": "6.5.438",
+    "tesseract.js": "6.0.1"
+  },
+  "private": true
+}

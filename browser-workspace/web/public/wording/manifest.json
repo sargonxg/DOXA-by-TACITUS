@@ -1,0 +1,23 @@
+{
+  "method": "doxa-wording-minilm-v1",
+  "task": "biased_wording",
+  "model_id": "Giuliocc/doxa-wording-encoder",
+  "revision": "b6e07f2cc0ea82c0c46b89aac65fee8b74660db5",
+  "maximum_tokens": 256,
+  "selected_pipeline": "fine_tuned_encoder",
+  "temperature": 1.0,
+  "threshold": 0.7,
+  "score_calibration": "temperature_scaled_on_validation",
+  "files": {
+    "tokenizer": {
+      "path": "tokenizer.json",
+      "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+    },
+    "weights": {
+      "path": "onnx/model_quantized.onnx",
+      "sha256": "cb6dd5d63b6ed2f28c142141c263e3a29deb88289ad4dab50f7584a7c7b27d48",
+      "bytes": 23157564
+    }
+  },
+  "scope": "A provisional screen trained on English news sentences labeled for wording bias. Academic and other genres require separate validation. Read the surrounding context."
+}

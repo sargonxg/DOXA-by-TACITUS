@@ -1,0 +1,24 @@
+{
+  "revision": "doxa-political-consistency-protocol-v0.1.0",
+  "frozen_before_prediction": true,
+  "fixtures_sha256": "33ada94215897ac2a6c561d5fba4f4990659321f06ad26a325d5627cdbd480bc",
+  "families": 12,
+  "matched_pairs": 48,
+  "passages": 96,
+  "primary_measures": [
+    "per-criterion paired decision changes",
+    "maximum per-class score difference across paired arms",
+    "provisional hard-negative flag rate for each named control criterion"
+  ],
+  "secondary_measures": [
+    "positive-mechanism sensitivity on authored targets",
+    "invalid/abstained/unsupported output counts",
+    "local feature-and-prediction wall time and peak process memory"
+  ],
+  "expected_invariance_scope": "Only the actor label changes. Supplied conduct, speaker attribution, evidence and claim scope remain the same.",
+  "label_scope": "Expectations are authored diagnostic references. They supply no independent human benchmark, fairness certification or estimate of political neutrality.",
+  "statistical_scope": "Template families and substitutions are dependent. Counts are descriptive; no significance or population confidence interval will be asserted.",
+  "use_in_model_selection": "This fixture set is a diagnostic stress set. It is excluded from training and held-out qualification claims. Preserve failures without changing expectations after prediction.",
+  "reporting": "Report all criteria and all cases, including invariant wrong outputs. Lower score differences alone do not establish correctness.",
+  "thresholds": "No new release threshold is introduced by this diagnostic. A model release follows its separately registered, source-disjoint task gate."
+}

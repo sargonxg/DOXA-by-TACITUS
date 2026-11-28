@@ -28,6 +28,10 @@ The worked example screens **143 passages across 41 PDF pages** from two CC BY P
 
 [Open DOXA](https://doxa.tacitus.me/) · [Methods and worked results](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.11.0/DOCUMENT_REVIEW.md) · [Ten improvements and measured limits](https://huggingface.co/spaces/Giuliocc/doxa-lab/blob/v0.11.0/REVIEW_RELEASE.md) · [Reproducible browser source](https://huggingface.co/spaces/Giuliocc/doxa-lab/resolve/v0.11.0/source.zip)
 
+## Hosted workspace access
+
+[Sign in to DOXA](https://doxa.tacitus.me/) to review documents and use the evidence scorecard. Email verification protects product entry and assets. Files and saved projects remain in the browser, with separate account namespaces; this is not encrypted cloud storage or a synchronized team workspace. The [browser source, build and access checks](browser-workspace/README.md) are in this repository. [Hugging Face](https://huggingface.co/spaces/Giuliocc/doxa-lab) publishes research, models and source releases.
+
 ## Human wording benchmark and trained encoder
 
 The [DOXA human wording benchmark](https://huggingface.co/datasets/Giuliocc/doxa-wording-benchmark/tree/v0.1.0) freezes **3,639 upstream BABE expert-majority judgments and 18,153 votes**, with train/validation/test source groups, disagreements, source hashes and annotation admission tooling. DOXA created zero new human annotations. Public files contain labels and provenance. News sentences are restored locally from the pinned source because third-party article redistribution rights remain unresolved.
@@ -54,7 +58,7 @@ DOXA’s Hugging Face benchmark tests whether a supplied passage supports a clai
 
 The CPU-trained Evidence Verifier scored **0.685 macro-F1** on 274 held-out judgments, compared with **0.604** for the frozen DeBERTa baseline. The improvement came from government texts and SciFact. The PLOS ONE slice matched the baseline. This evaluation concerns claim–passage evidence support within its benchmark scope.
 
-[Benchmark](https://huggingface.co/datasets/Giuliocc/doxa-evidence-benchmark/tree/v0.1.0) · [CPU model](https://huggingface.co/Giuliocc/doxa-evidence-verifier/tree/v0.1.0) · [Methods and errors](https://huggingface.co/datasets/Giuliocc/doxa-evidence-benchmark/blob/v0.1.0/EVALUATION.md) · [Browser Evidence Lab](https://giuliocc-doxa-lab.static.hf.space/#documents) · [TACITUS DOXA](https://tacitus.me/doxa/)
+[Benchmark](https://huggingface.co/datasets/Giuliocc/doxa-evidence-benchmark/tree/v0.1.0) · [CPU model](https://huggingface.co/Giuliocc/doxa-evidence-verifier/tree/v0.1.0) · [Methods and errors](https://huggingface.co/datasets/Giuliocc/doxa-evidence-benchmark/blob/v0.1.0/EVALUATION.md) · [Signed-in document review](https://doxa.tacitus.me/#documents) · [TACITUS DOXA](https://tacitus.me/doxa/)
 
 ## Start locally
 
